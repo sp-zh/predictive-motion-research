@@ -1,0 +1,20 @@
+{
+  "declared_utc": "2026-10-07T23:36:22.527862+00:00",
+  "seed": 91013,
+  "start_ticks": [
+    100,
+    500,
+    690,
+    920,
+    2400,
+    2500
+  ],
+  "substeps": [
+    1,
+    2,
+    20,
+    400
+  ],
+  "selection": "Fixed warmup, first motion, motion-to-brake, brake-to-hold, hold-to-new-stop, new-stop boundaries; chosen before root reads fresh raw/metrics. All incomplete trailing windows retained as unscorable, never truncated.",
+  "scope": "Independent selected conditional recomputation with cyclic-coordinate friction solver and six single-step active-set enumeration checks; no refit, plant rollout, future-state reset, full-window reproduction or Phase5 acceptance."
+}

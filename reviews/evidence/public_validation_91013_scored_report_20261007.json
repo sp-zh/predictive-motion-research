@@ -1,0 +1,356 @@
+{
+  "seed": 91013,
+  "gate": "PASS_FRESH_CURATED_CONDITIONAL_TRACE_ONLY",
+  "scope": "Fresh known curated conditional development trace only; no task, controller, uniform-domain, 250Hz or Phase5 acceptance",
+  "acceptance_limitations": [
+    "Exact geometry tail-row count and per-solve solver options are not exported; continuous recorded indices and source-defined base rows cannot detect a missing final geometry row.",
+    "H/g are frozen source/reference-defined, not captured per accepted solve.",
+    "Hashes bind the supplied capture to its execution record; they do not authenticate a dishonest producer or certify unlogged forces/nonlinear guard evaluations."
+  ],
+  "synthetic_gate_model": false,
+  "no_calibration": true,
+  "protocol_sha256": "0325135b001c9f54b1747993eb6af6364e5c05deb3ee9b37f81b434e253a5739",
+  "frozen_sha256": "190b05049892a27923778475e8287a7814854455d1fa55d722d14094245b814d",
+  "summary": {
+    "scope": "Curated seen-input development fixture with prospective tighter solver precision and isolated command velocity continuation; not an untouched holdout or online research trial",
+    "seed": 91013,
+    "fixture": "servo_validation",
+    "primary_failure": "",
+    "stop_failure": "",
+    "completed_stop": true,
+    "min_clearance_m": 0.015563429721572567,
+    "max_physical_velocity_rad_s": 0.02992691786578948
+  },
+  "capture_integrity": {
+    "consumed_sidecars_sha256": {
+      "raw.csv": "ea70d9e8b01bc6e44387e2f4701779243bb1b202020a61aef18312fac1c054e8",
+      "summary.yaml": "582bff118412149838621f9ca53a80661505b1f39df5ce92311ca50d215845fd",
+      "cycles.csv": "8c6c1358cdec75a52325fc0b1a6076b880d0a06479c4bd50e2d0bd197f32775e",
+      "all_qp_solves.csv": "e6fbdb980688f4d0cc7a4c51dc2a76c656bd9f18b28ffdbe7011d7e5c7ebd9d0",
+      "all_qp_rows.csv": "9653571b29ce53190c09d9e5fa2b14819da1fc062d0693c85769f76f4cc7af0c"
+    },
+    "cycles": 2501,
+    "attempts": 2002,
+    "source_defined_base_rows": 119,
+    "row_counts": {
+      "132": 222,
+      "131": 1779,
+      "143": 1
+    },
+    "max_command_age_s": 0.018382032,
+    "full4ms_deadline_misses": 1996,
+    "actual_original_row_max_SI_violation": 1.1662493193398404e-10,
+    "superseded_tracking_attempts_not_applied": 1,
+    "phase_rows": {
+      "warmup": 1000,
+      "reference_motion": 390,
+      "reference_recorded_stop": 466,
+      "hold": 3144,
+      "new_shared_stop": 2
+    }
+  },
+  "metrics": [
+    {
+      "scope": "active",
+      "duration_s": 0.002,
+      "windows": 2001,
+      "completed_windows": 2001,
+      "failed_windows": 0,
+      "max_q_error_rad": 8.881784197001252e-16,
+      "max_v_error_rad_s": 3.408731630294426e-15,
+      "rmse_q_rad": 3.638104075493907e-17,
+      "rmse_v_rad_s": 1.7585699435143915e-16,
+      "q_worst": {
+        "start_tick": 2222,
+        "joint_index": 5,
+        "phase": "hold"
+      },
+      "v_worst": {
+        "start_tick": 675,
+        "joint_index": 5,
+        "phase": "reference_motion"
+      },
+      "q_limit_rad": 1e-06,
+      "v_limit_rad_s": 0.0001,
+      "accuracy_gate_applies": true,
+      "start_phase_counts": {
+        "reference_motion": 195,
+        "reference_recorded_stop": 233,
+        "hold": 1572,
+        "new_shared_stop": 1
+      },
+      "windows_intersecting_phase": {
+        "reference_motion": 195,
+        "reference_recorded_stop": 233,
+        "hold": 1572,
+        "new_shared_stop": 1
+      },
+      "hold_only_windows": 1572,
+      "passed": true
+    },
+    {
+      "scope": "warmup",
+      "duration_s": 0.002,
+      "windows": 500,
+      "completed_windows": 500,
+      "failed_windows": 0,
+      "max_q_error_rad": 0.0,
+      "max_v_error_rad_s": 3.1719418758235918e-15,
+      "rmse_q_rad": 0.0,
+      "rmse_v_rad_s": 1.4967190252701018e-16,
+      "q_worst": null,
+      "v_worst": {
+        "start_tick": 2,
+        "joint_index": 5,
+        "phase": "warmup"
+      },
+      "q_limit_rad": 1e-06,
+      "v_limit_rad_s": 0.0001,
+      "accuracy_gate_applies": false,
+      "start_phase_counts": {
+        "warmup": 500
+      },
+      "windows_intersecting_phase": {
+        "reference_motion": 0,
+        "reference_recorded_stop": 0,
+        "hold": 0,
+        "new_shared_stop": 0
+      },
+      "hold_only_windows": 0,
+      "passed": true
+    },
+    {
+      "scope": "active",
+      "duration_s": 0.004,
+      "windows": 2001,
+      "completed_windows": 2001,
+      "failed_windows": 0,
+      "max_q_error_rad": 8.881784197001252e-16,
+      "max_v_error_rad_s": 3.763482581131683e-15,
+      "rmse_q_rad": 5.578393494392137e-17,
+      "rmse_v_rad_s": 1.9782071495942898e-16,
+      "q_worst": {
+        "start_tick": 1203,
+        "joint_index": 5,
+        "phase": "hold"
+      },
+      "v_worst": {
+        "start_tick": 689,
+        "joint_index": 5,
+        "phase": "reference_motion"
+      },
+      "q_limit_rad": 1e-06,
+      "v_limit_rad_s": 0.0001,
+      "accuracy_gate_applies": true,
+      "start_phase_counts": {
+        "reference_motion": 195,
+        "reference_recorded_stop": 233,
+        "hold": 1572,
+        "new_shared_stop": 1
+      },
+      "windows_intersecting_phase": {
+        "reference_motion": 195,
+        "reference_recorded_stop": 233,
+        "hold": 1572,
+        "new_shared_stop": 1
+      },
+      "hold_only_windows": 1572,
+      "passed": true
+    },
+    {
+      "scope": "warmup",
+      "duration_s": 0.004,
+      "windows": 500,
+      "completed_windows": 500,
+      "failed_windows": 0,
+      "max_q_error_rad": 1.3877787807814457e-17,
+      "max_v_error_rad_s": 2.6211671722009555e-15,
+      "rmse_q_rad": 3.317425804434375e-19,
+      "rmse_v_rad_s": 1.7220145969969074e-16,
+      "q_worst": {
+        "start_tick": 64,
+        "joint_index": 1,
+        "phase": "warmup"
+      },
+      "v_worst": {
+        "start_tick": 5,
+        "joint_index": 5,
+        "phase": "warmup"
+      },
+      "q_limit_rad": 1e-06,
+      "v_limit_rad_s": 0.0001,
+      "accuracy_gate_applies": false,
+      "start_phase_counts": {
+        "warmup": 500
+      },
+      "windows_intersecting_phase": {
+        "reference_motion": 0,
+        "reference_recorded_stop": 0,
+        "hold": 0,
+        "new_shared_stop": 0
+      },
+      "hold_only_windows": 0,
+      "passed": true
+    },
+    {
+      "scope": "active",
+      "duration_s": 0.04,
+      "windows": 1992,
+      "completed_windows": 1992,
+      "failed_windows": 0,
+      "max_q_error_rad": 1.7763568394002505e-15,
+      "max_v_error_rad_s": 6.095289611593311e-15,
+      "rmse_q_rad": 1.102266088287376e-16,
+      "rmse_v_rad_s": 3.9415394254242433e-16,
+      "q_worst": {
+        "start_tick": 2224,
+        "joint_index": 5,
+        "phase": "hold"
+      },
+      "v_worst": {
+        "start_tick": 2391,
+        "joint_index": 5,
+        "phase": "hold"
+      },
+      "q_limit_rad": 0.0001,
+      "v_limit_rad_s": 0.001,
+      "accuracy_gate_applies": true,
+      "start_phase_counts": {
+        "reference_motion": 195,
+        "reference_recorded_stop": 233,
+        "hold": 1564
+      },
+      "windows_intersecting_phase": {
+        "reference_motion": 195,
+        "reference_recorded_stop": 242,
+        "hold": 1573,
+        "new_shared_stop": 1
+      },
+      "hold_only_windows": 1563,
+      "passed": true
+    },
+    {
+      "scope": "warmup",
+      "duration_s": 0.04,
+      "windows": 500,
+      "completed_windows": 500,
+      "failed_windows": 0,
+      "max_q_error_rad": 4.440892098500626e-16,
+      "max_v_error_rad_s": 2.392617354241011e-15,
+      "rmse_q_rad": 2.5256048732552217e-17,
+      "rmse_v_rad_s": 2.2688574485759873e-16,
+      "q_worst": {
+        "start_tick": 116,
+        "joint_index": 3,
+        "phase": "warmup"
+      },
+      "v_worst": {
+        "start_tick": 124,
+        "joint_index": 3,
+        "phase": "warmup"
+      },
+      "q_limit_rad": 0.0001,
+      "v_limit_rad_s": 0.001,
+      "accuracy_gate_applies": false,
+      "start_phase_counts": {
+        "warmup": 500
+      },
+      "windows_intersecting_phase": {
+        "reference_motion": 9,
+        "reference_recorded_stop": 0,
+        "hold": 0,
+        "new_shared_stop": 0
+      },
+      "hold_only_windows": 0,
+      "passed": true
+    },
+    {
+      "scope": "active",
+      "duration_s": 0.8,
+      "windows": 1802,
+      "completed_windows": 1802,
+      "failed_windows": 0,
+      "max_q_error_rad": 1.7763568394002505e-15,
+      "max_v_error_rad_s": 6.654229152425867e-15,
+      "rmse_q_rad": 1.528668062241405e-16,
+      "rmse_v_rad_s": 7.557866673419976e-16,
+      "q_worst": {
+        "start_tick": 2034,
+        "joint_index": 5,
+        "phase": "hold"
+      },
+      "v_worst": {
+        "start_tick": 1084,
+        "joint_index": 5,
+        "phase": "hold"
+      },
+      "q_limit_rad": 0.0001,
+      "v_limit_rad_s": 0.001,
+      "accuracy_gate_applies": true,
+      "start_phase_counts": {
+        "reference_motion": 195,
+        "reference_recorded_stop": 233,
+        "hold": 1374
+      },
+      "windows_intersecting_phase": {
+        "reference_motion": 195,
+        "reference_recorded_stop": 428,
+        "hold": 1573,
+        "new_shared_stop": 1
+      },
+      "hold_only_windows": 1373,
+      "passed": true
+    },
+    {
+      "scope": "warmup",
+      "duration_s": 0.8,
+      "windows": 500,
+      "completed_windows": 500,
+      "failed_windows": 0,
+      "max_q_error_rad": 4.440892098500626e-16,
+      "max_v_error_rad_s": 3.562254657918373e-15,
+      "rmse_q_rad": 6.166665378044698e-17,
+      "rmse_v_rad_s": 4.507039035223375e-16,
+      "q_worst": {
+        "start_tick": 0,
+        "joint_index": 3,
+        "phase": "warmup"
+      },
+      "v_worst": {
+        "start_tick": 490,
+        "joint_index": 5,
+        "phase": "warmup"
+      },
+      "q_limit_rad": 0.0001,
+      "v_limit_rad_s": 0.001,
+      "accuracy_gate_applies": false,
+      "start_phase_counts": {
+        "warmup": 500
+      },
+      "windows_intersecting_phase": {
+        "reference_motion": 199,
+        "reference_recorded_stop": 4,
+        "hold": 0,
+        "new_shared_stop": 0
+      },
+      "hold_only_windows": 0,
+      "passed": true
+    }
+  ],
+  "failures": [],
+  "max_force_QP_KKT": 2.220446049250313e-15,
+  "max_force_QP_iterations": 3,
+  "repeated_prediction_branches": {
+    "0": 6732293,
+    "-1": 69729,
+    "1": 44979
+  },
+  "prediction_clamps": {
+    "controls": 0,
+    "forces": 0
+  },
+  "all_full_windows_including_hold_stop_retained": true,
+  "overlapping_windows_not_independent_trials": true,
+  "uniform_accuracy_box_claim": false,
+  "main_MPC_integrated": false
+}

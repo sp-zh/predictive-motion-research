@@ -225,8 +225,21 @@ performance result. [Rejection and required revision](../reviews/evidence/public
 Three complete synthetic controls pass and25 corrupted/failing controls are rejected.
 Root's separate eight capture-only checks have their expected outcomes. These are
 scorer checks, not new robot or model accuracy results. The timeline is declared,
-with1..1250 possible stop cycles; seed91013 has not yet run.
+with1..1250 possible stop cycles. This image preserves the pre-run protocol; the
+approved actual run is shown below.
 [Independent replacement review](../reviews/evidence/public_validation_91013_protocol_v2_root_review_20261007.md).
+
+![Actual seed91013 conditional prediction and recorded guards](../figures/phase5/phase5_public_validation_91013_actual.png)
+
+![Actual recorded seed91013 final state](../figures/phase5/phase5_public_validation_91013_recorded_final_state.png)
+
+The frozen conditional predictor passes all9796 complete windows on this known
+curated development input. Root independently checks the full capture and21
+predeclared forecasts. The actual final state is rendered at10.004s; it follows
+a long hold, not a moving-stop challenge or complete inspection task. All1996
+4ms deadline misses remain visible. Geometry is metres and joint angles radians;
+provenance includes actual raw/model/renderer/asset hashes. No Phase5 or250Hz
+acceptance follows. [Independent executed review](../reviews/evidence/public_coupled_validation_91013_root_review_20261007.md).
 
 ## Downloadable 3D models
 

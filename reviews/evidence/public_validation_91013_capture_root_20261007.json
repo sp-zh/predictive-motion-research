@@ -1,0 +1,165 @@
+{
+  "decision": "PASS_INDEPENDENT_RECORDED_CAPTURE_QP_HISTORY_AND_ROSTER",
+  "scope": "Complete recorded audit and window roster, not numerical full-window forecasts; no new plant or Phase5 acceptance. Exact geometry tail count/options and per-solve H/g remain unverified.",
+  "source_sha256": "3584f26eff0b1e8dc09d80a208f6afdddcbfdf0cfe7536bb3a1e755c1aa38417",
+  "capture_sha256": {
+    "raw.csv": "ea70d9e8b01bc6e44387e2f4701779243bb1b202020a61aef18312fac1c054e8",
+    "cycles.csv": "8c6c1358cdec75a52325fc0b1a6076b880d0a06479c4bd50e2d0bd197f32775e",
+    "summary.yaml": "582bff118412149838621f9ca53a80661505b1f39df5ce92311ca50d215845fd",
+    "all_qp_solves.csv": "e6fbdb980688f4d0cc7a4c51dc2a76c656bd9f18b28ffdbe7011d7e5c7ebd9d0",
+    "all_qp_rows.csv": "9653571b29ce53190c09d9e5fa2b14819da1fc062d0693c85769f76f4cc7af0c"
+  },
+  "rows": 5002,
+  "cycles": 2501,
+  "actual_qp_attempts": 2002,
+  "actual_qp_rows": 262496,
+  "phase_rows": {
+    "warmup": 1000,
+    "reference_motion": 390,
+    "reference_recorded_stop": 466,
+    "hold": 3144,
+    "new_shared_stop": 2
+  },
+  "actual_original_SI_max": 1.1662493193398404e-10,
+  "minimum_signed_recovery_margin": 0.04440002730585545,
+  "minimum_clearance_m": 0.015563429721572567,
+  "max_physical_velocity_rad_s": 0.02992691786578948,
+  "max_active_physical_acceleration_rad_s2": 0.24641320700711025,
+  "max_active_physical_jerk_rad_s3": 50.43731805710644,
+  "terminal_physical_speed_rad_s": 4.900408379181322e-12,
+  "terminal_command_speed_rad_s": 0.0,
+  "max_cycle_wall_s": 0.020849226,
+  "full4ms_deadline_misses": 1996,
+  "window_roster": [
+    {
+      "scope": "active",
+      "duration_s": 0.002,
+      "windows": 2001,
+      "start_phase_counts": {
+        "reference_motion": 195,
+        "reference_recorded_stop": 233,
+        "hold": 1572,
+        "new_shared_stop": 1
+      },
+      "windows_intersecting_phase": {
+        "reference_motion": 195,
+        "reference_recorded_stop": 233,
+        "hold": 1572,
+        "new_shared_stop": 1
+      },
+      "hold_only_windows": 1572
+    },
+    {
+      "scope": "warmup",
+      "duration_s": 0.002,
+      "windows": 500,
+      "start_phase_counts": {
+        "warmup": 500
+      },
+      "windows_intersecting_phase": {
+        "reference_motion": 0,
+        "reference_recorded_stop": 0,
+        "hold": 0,
+        "new_shared_stop": 0
+      },
+      "hold_only_windows": 0
+    },
+    {
+      "scope": "active",
+      "duration_s": 0.004,
+      "windows": 2001,
+      "start_phase_counts": {
+        "reference_motion": 195,
+        "reference_recorded_stop": 233,
+        "hold": 1572,
+        "new_shared_stop": 1
+      },
+      "windows_intersecting_phase": {
+        "reference_motion": 195,
+        "reference_recorded_stop": 233,
+        "hold": 1572,
+        "new_shared_stop": 1
+      },
+      "hold_only_windows": 1572
+    },
+    {
+      "scope": "warmup",
+      "duration_s": 0.004,
+      "windows": 500,
+      "start_phase_counts": {
+        "warmup": 500
+      },
+      "windows_intersecting_phase": {
+        "reference_motion": 0,
+        "reference_recorded_stop": 0,
+        "hold": 0,
+        "new_shared_stop": 0
+      },
+      "hold_only_windows": 0
+    },
+    {
+      "scope": "active",
+      "duration_s": 0.04,
+      "windows": 1992,
+      "start_phase_counts": {
+        "reference_motion": 195,
+        "reference_recorded_stop": 233,
+        "hold": 1564
+      },
+      "windows_intersecting_phase": {
+        "reference_motion": 195,
+        "reference_recorded_stop": 242,
+        "hold": 1573,
+        "new_shared_stop": 1
+      },
+      "hold_only_windows": 1563
+    },
+    {
+      "scope": "warmup",
+      "duration_s": 0.04,
+      "windows": 500,
+      "start_phase_counts": {
+        "warmup": 500
+      },
+      "windows_intersecting_phase": {
+        "reference_motion": 9,
+        "reference_recorded_stop": 0,
+        "hold": 0,
+        "new_shared_stop": 0
+      },
+      "hold_only_windows": 0
+    },
+    {
+      "scope": "active",
+      "duration_s": 0.8,
+      "windows": 1802,
+      "start_phase_counts": {
+        "reference_motion": 195,
+        "reference_recorded_stop": 233,
+        "hold": 1374
+      },
+      "windows_intersecting_phase": {
+        "reference_motion": 195,
+        "reference_recorded_stop": 428,
+        "hold": 1573,
+        "new_shared_stop": 1
+      },
+      "hold_only_windows": 1373
+    },
+    {
+      "scope": "warmup",
+      "duration_s": 0.8,
+      "windows": 500,
+      "start_phase_counts": {
+        "warmup": 500
+      },
+      "windows_intersecting_phase": {
+        "reference_motion": 199,
+        "reference_recorded_stop": 4,
+        "hold": 0,
+        "new_shared_stop": 0
+      },
+      "hold_only_windows": 0
+    }
+  ]
+}

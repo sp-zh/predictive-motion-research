@@ -1,0 +1,74 @@
+{
+  "date": "2026-10-07",
+  "decision": "PASS_CONDITIONAL_RECORDED_INPUT_PREDICTION",
+  "phase5": "PENDING_NOT_ACCEPTED",
+  "single_prospective_simulation_run": true,
+  "previous_protocol_remote_checkpoint": "3d41fdd5b274ac7931af8f03dbc1ea95c2b19571",
+  "producer_archive": {
+    "sha256": "a7f9e97d30166fccb7e74289fe5a7c2ed0224d0ac276b44bc3d4da5f2270631d",
+    "bytes": 5536067,
+    "regular_members": 24,
+    "payloads": 22,
+    "Mac": "/Users/uot/Documents/ChatGPT/ros/results/phase5-executor-checkpoints-01a114d9/public-coupled-validation-91013/public-coupled-v2-validation-91013.tar.gz",
+    "Dell": "/mnt/d/CodexTransfer/projects/predictive_motion/checkpoints/public-coupled-v2-validation-91013-20261007/public-coupled-v2-validation-91013.tar.gz",
+    "all_payloads_root_verified_on_both": true,
+    "source_manifest_sha256": "652df1f70a0d2d61c101538be39180ec5549675aafa9f03454e6f7b998359d71"
+  },
+  "root_archive": {
+    "sha256": "741ea0db4802d6ecec3a516f19031c3e9a39f65650f51a84f3c5274e28d2845c",
+    "bytes": 43832,
+    "regular_members": 19,
+    "payloads": 18,
+    "Mac": "/Users/uot/Documents/ChatGPT/ros/transfer/incoming/root-public-validation-91013-results-20261007/evidence.tar.gz",
+    "Dell": "/mnt/d/CodexTransfer/projects/predictive_motion/checkpoints/root-public-validation-91013-results-20261007/evidence.tar.gz",
+    "all_payloads_verified_on_both": true,
+    "initial_reader_shape_failure_retained": true
+  },
+  "postrun_frozen_source_closure": {
+    "verified_utc": "2026-10-07T23:46:41.652474+00:00",
+    "archive_sha256": "a7f9e97d30166fccb7e74289fe5a7c2ed0224d0ac276b44bc3d4da5f2270631d",
+    "regular_members": 24,
+    "all22_payloads_root_verified_on_Dell": true,
+    "all256_live_and_immutable_Dcache_inputs_root_read_verified_after_run": true,
+    "referenced_bytes": 230237437,
+    "frozen_sha256": "190b05049892a27923778475e8287a7814854455d1fa55d722d14094245b814d",
+    "scope": "Post-run preservation/source closure; conditional development result only, not Phase5 acceptance"
+  },
+  "root_selected_recomputation": {
+    "predeclared": 24,
+    "complete": 21,
+    "incomplete_retained": 3,
+    "failed": 0,
+    "force_QPs_enumerated": 6,
+    "scope": "Independent cyclic-coordinate friction solver, same public Pino/MJCF parameters; no full-window numerical replication"
+  },
+  "root_complete_capture": {
+    "physical_rows": 5002,
+    "cycles": 2501,
+    "native_attempts": 2002,
+    "exported_QP_rows": 262496,
+    "all_original_rows_math_fsum_verified": true,
+    "window_roster_exactly_matches_scorer": true,
+    "4ms_deadline_misses": 1996
+  },
+  "model_scoring": {
+    "complete_windows": 9796,
+    "failed_windows": 0,
+    "active_windows": [
+      2001,
+      2001,
+      1992,
+      1802
+    ],
+    "warmup_windows_each_horizon": 500,
+    "hold_only_windows_active": [
+      1572,
+      1572,
+      1563,
+      1373
+    ]
+  },
+  "visuals": "Root inspected actual-data plot and recorded-state render; metres/radians; hashes/provenance verified; no task-success video",
+  "large_evidence_in_Git": false,
+  "limits": "Known curated conditional-input development only; hold-end stop, not moving-stop/full task/main-MPC/uniform-domain/250Hz/Phase5 acceptance. Geometry tail count/options and per-solve H/g remain absent."
+}

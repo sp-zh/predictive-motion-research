@@ -1,0 +1,48 @@
+{
+  "scope": "Actual recorded simulation and conditional model validation; saved-state geometry only; not hardware, new plant run, task success or Phase5 acceptance",
+  "seed": 91013,
+  "model_length_units": "metres; q radians, v rad/s; plotted clearance mm and timing ms",
+  "camera": {
+    "lookat_m": [
+      0.49,
+      -0.01,
+      0.49
+    ],
+    "distance_m": 1.5,
+    "azimuth_deg": 135,
+    "elevation_deg": -23
+  },
+  "source_hashes": {
+    "/mnt/d/CodexTransfer/projects/predictive_motion/phase5/raw/public-coupled-v2-development-validation-91013/raw.csv": "ea70d9e8b01bc6e44387e2f4701779243bb1b202020a61aef18312fac1c054e8",
+    "/mnt/d/CodexTransfer/projects/predictive_motion/phase5/raw/public-coupled-v2-development-validation-91013/cycles.csv": "8c6c1358cdec75a52325fc0b1a6076b880d0a06479c4bd50e2d0bd197f32775e",
+    "/home/codextransfer/predictive_motion/results/phase5/development/public-coupled-v2-development-validation-91013/execution.json": "1cde033bddfef8da1e015dd3b5b3302dbcdfbd0136ca055aa33325093d725a25",
+    "/home/codextransfer/predictive_motion/results/phase5/development/public-coupled-v2-development-validation-91013/scored/validation_report.json": "7a68770e10c5124cb0b82977a6bfdf8f5cf6435a0897ff1cdc9438606d16ca35",
+    "/home/codextransfer/predictive_motion/results/phase5/development/public-coupled-v2-development-validation-91013/recorded_final_state.ppm": "92683e62d616fd151af5ec14a5925ecdb3bff5f4a9909481ccbf55873075ba7b",
+    "/home/codextransfer/predictive_motion/experiments/generated/inspection/scene.xml": "fdbb460120c287785dceafe2f320e8b79865203a09aebb5027ec8fd53f4628a5",
+    "/home/codextransfer/predictive_motion/experiments/generated/inspection/inspection_fr3.xml": "0231a374b6173f38ff63a214932dfca624594d23daf5f4b0c4a0e8e02016ebae",
+    "/home/codextransfer/predictive_motion/tools/phase5_servo_diagnostics/render_servo_recorded_pose.cpp": "fc580f93f478eca9b49045e973f9c8a80a9ef783a2c89a006775e1479e47385a",
+    "/home/codextransfer/predictive_motion/build-servo-qp-reconstruct-v1/render_servo_recorded_pose": "2f1c00d113aaf5e12143610ad81fd76061ac634a04bfd00eb9ba414fcb91d7d4",
+    "/home/codextransfer/predictive_motion/scripts/phase5/plot_public_coupled_validation_91013.py": "ee0005df6ee2b80ea8e14b7aa8a02c9f0f43acf1caa92e1a2a4b5afedaaae397"
+  },
+  "upstream_asset_manifest_sha256": "f3a72b9e0f72c56fa0a6a653a7e32fa5b235781e9cd2ce8fcf65fae243867c16",
+  "outputs": {
+    "phase5_public_validation_91013_actual.png": "171a9c8f2283d3e74a30b0e295c78caf88a4377aa11151008fdf50ec1791b7a8",
+    "phase5_public_validation_91013_recorded_final_state.png": "29f9f409066681ad2d9d70c7a93e2cc05822cf5e7e0940157b02899e13795247"
+  },
+  "recorded_terminal": {
+    "tick": 2500,
+    "time_s": 10.00400000000001,
+    "q_post_rad": [
+      -1.244492596874517,
+      0.09791478923517288,
+      1.1555949410777835,
+      -2.7783677082464773,
+      -0.09637973187764305,
+      4.382205886929212,
+      -1.6288265959775166
+    ]
+  },
+  "visualization_tools_created_after_run": true,
+  "predictor_frozen_before_run": true,
+  "task_success_video_created": false
+}
