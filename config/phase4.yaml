@@ -1,0 +1,46 @@
+schema: 1
+purpose: integrated diagnostic; no final research or hardware guarantee
+period_s: 0.004
+physics_substep_s: 0.002
+warmup_s: 2.0
+path_s: 20.0
+settle_s: 2.0
+feedback_gain_per_s: 4.0
+rotation_length_m: 0.3
+ridge: 0.000009
+fixed_dls_damping: 0.003
+adaptive_dls_max_damping: 0.01
+adaptive_sigma_threshold: 0.05
+position_margin_rad: 0.005
+velocity_rad_s: [2.62, 2.62, 2.62, 2.62, 5.26, 4.18, 5.26]
+command_acceleration_rad_s2: 1.0
+command_jerk_rad_s3: 20.0
+executed_acceleration_rad_s2: 5.0
+executed_jerk_rad_s3: 500.0
+acceleration_jerk_provenance: declared simulation monitoring assumptions; not manufacturer limits
+collision_safe_m: 0.005
+collision_activation_m: 0.03
+collision_damper_eta_per_s: 2.0
+cover_cell_m: 0.004
+max_state_age_s: 0.05
+kinematic_trust_step_rad: 0.00025
+nonlinear_subdivisions: 4
+solver_max_iterations: 4000
+solver_time_limit_s: 0.05
+max_linear_request_m_s: 0.4
+max_angular_request_rad_s: 0.8
+completion_position_m: 0.01
+completion_rotation_rad: 0.05
+development_seeds: [71011, 71012]
+evaluation_seeds: [81011, 81012]
+methods: [mp, fixed_dls, adaptive_dls, reactive_qp, moveit_servo]
+tuning_budget: zero integrated-result parameter search; declared common protocol and prior frozen DLS parameters
+servo_singularity_lower: 17.0
+servo_singularity_halt: 30.0
+servo_smoothing: online_signal_smoothing::ButterworthFilterPlugin
+servo_collision_self_m: 0.01
+servo_collision_scene_m: 0.02
+servo_collision_rate_hz: 250.0
+stop_policy: constrained minimum-velocity QP with command bounds and collision dampers; explicit stop infeasibility terminates simulation without issuing a command
+baseline_policy: native request plus common constrained velocity projection; requested and accepted commands both retained; supervised baseline, not unmodified native controller
+observer: independent scratch mj_copyData plus mj_forward after every 2ms physics step; no mutation of integration state

@@ -1,0 +1,68 @@
+{
+  "recorded_utc": "2026-10-05T00:37:54.961949+00:00",
+  "platform": "Linux-6.18.33.1-microsoft-standard-WSL2-x86_64-with-glibc2.39",
+  "machine": "x86_64",
+  "python": "3.12.3",
+  "python_packages": {
+    "numpy": "1.26.4",
+    "pandas": "2.1.4+dfsg",
+    "matplotlib": "3.6.3",
+    "pytest": "7.4.4",
+    "mujoco": null,
+    "pin": null,
+    "toppra": null
+  },
+  "tools": {
+    "c++": "/usr/bin/c++",
+    "cmake": "/usr/bin/cmake",
+    "ninja": null,
+    "git": "/usr/bin/git",
+    "colcon": "/usr/bin/colcon",
+    "ros2": "/opt/ros/jazzy/bin/ros2",
+    "docker": null,
+    "FreeCADCmd": null
+  },
+  "commands": [
+    {
+      "command": [
+        "c++",
+        "--version"
+      ],
+      "exit_code": 0,
+      "stdout": "c++ (Ubuntu 13.3.0-6ubuntu2~24.04.1) 13.3.0\nCopyright (C) 2023 Free Software Foundation, Inc.\nThis is free software; see the source for copying conditions.  There is NO\nwarranty; not even for MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.",
+      "stderr": ""
+    },
+    {
+      "command": [
+        "cmake",
+        "--version"
+      ],
+      "exit_code": 0,
+      "stdout": "cmake version 3.28.3\n\nCMake suite maintained and supported by Kitware (kitware.com/cmake).",
+      "stderr": ""
+    },
+    {
+      "command": [
+        "git",
+        "--version"
+      ],
+      "exit_code": 0,
+      "stdout": "git version 2.43.0",
+      "stderr": ""
+    },
+    {
+      "command": [
+        "dpkg-query",
+        "-W",
+        "ros-jazzy-rclcpp",
+        "ros-jazzy-pinocchio",
+        "ros-jazzy-moveit-servo",
+        "libeigen3-dev",
+        "libgtest-dev"
+      ],
+      "exit_code": 1,
+      "stdout": "libeigen3-dev\t3.4.0-4build0.1\nlibgtest-dev:amd64\t1.14.0-1\nros-jazzy-pinocchio\t4.1.0-1noble.20260826.071113\nros-jazzy-rclcpp\t28.1.18-1noble.20260412.041931",
+      "stderr": "dpkg-query: no packages found matching ros-jazzy-moveit-servo"
+    }
+  ]
+}

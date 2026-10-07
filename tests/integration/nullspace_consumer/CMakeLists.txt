@@ -1,0 +1,6 @@
+cmake_minimum_required(VERSION 3.22)
+project(nullspace_installed_consumer LANGUAGES CXX)
+set(CMAKE_CXX_STANDARD 17)
+find_package(predictive_motion_control REQUIRED)
+add_executable(nullspace_consumer main.cpp)
+target_link_libraries(nullspace_consumer predictive_motion_control::differential_ik)

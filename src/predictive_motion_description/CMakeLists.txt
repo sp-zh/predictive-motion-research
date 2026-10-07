@@ -1,0 +1,5 @@
+cmake_minimum_required(VERSION 3.22)
+project(predictive_motion_description)
+find_package(ament_cmake REQUIRED)
+install(DIRECTORY manifests DESTINATION share/${PROJECT_NAME})
+ament_package()

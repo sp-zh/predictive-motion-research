@@ -1,0 +1,6 @@
+cmake_minimum_required(VERSION 3.22)
+project(standalone_plant_consumer LANGUAGES CXX)
+set(CMAKE_CXX_STANDARD 17)
+find_package(predictive_motion_sim REQUIRED)
+add_executable(plant_consumer main.cpp)
+target_link_libraries(plant_consumer predictive_motion_sim::plant)

@@ -1,0 +1,8 @@
+urdf: ../../../models/fr3/fr3_with_hand.urdf
+joint_names: [fr3_joint1, fr3_joint2, fr3_joint3, fr3_joint4, fr3_joint5, fr3_joint6, fr3_joint7]
+fixed_joint_positions: {fr3_finger_joint1: 0.02, fr3_finger_joint2: 0.02}
+tcp_parent_frame: fr3_link8
+tcp_translation: [0.0, 0.0, 0.32]
+tcp_quaternion_xyzw: [0.0, 0.0, 0.0, 1.0]
+base_translation: [0.0, 0.0, 0.0]
+base_quaternion_xyzw: [0.0, 0.0, 0.0, 1.0]

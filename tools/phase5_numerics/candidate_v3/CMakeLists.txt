@@ -1,0 +1,7 @@
+cmake_minimum_required(VERSION 3.22)
+project(root_qp_replay LANGUAGES CXX)
+set(CMAKE_CXX_STANDARD 17)
+find_package(Eigen3 REQUIRED)
+find_package(osqp REQUIRED)
+add_executable(root_qp_replay replay.cpp)
+target_link_libraries(root_qp_replay Eigen3::Eigen osqp::osqpstatic)

@@ -1,0 +1,25 @@
+.transfer-private/
+transfer/mnt/
+transfer/inbox/
+transfer/outbox/
+transfer/manifests/
+__pycache__/
+*.pyc
+*.FCBak
+.vendor/
+.cache/
+build/
+install/
+log/
+experiments/generated/
+results/run_*/
+cad/step/
+cad/meshes/
+
+# Large local evidence archives and transfer copies remain on Mac/Dell.
+results/
+transfer/
+.DS_Store
+.env
+.env.*
+!.env.example

@@ -1,0 +1,24 @@
+{
+  "scope": "mechanical schedule transcription for posthoc analysis of completed component diagnostics; not a new research freeze",
+  "source": "config/phase3.yaml",
+  "source_sha256": "d83bdea5698d28aafbf056b5370e2ee6c996a1fbbc6a82e7eb143c5cea7137b7",
+  "evaluation_seeds": [
+    51011,
+    51012
+  ],
+  "cases": [
+    "joint_limit",
+    "singularity"
+  ],
+  "references": [
+    "hold",
+    "path"
+  ],
+  "methods": [
+    "none",
+    "joint",
+    "sigma_min",
+    "log_volume",
+    "combined"
+  ]
+}

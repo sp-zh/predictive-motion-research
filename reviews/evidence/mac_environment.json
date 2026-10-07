@@ -1,0 +1,66 @@
+{
+  "recorded_utc": "2026-10-05T00:37:51.634692+00:00",
+  "platform": "macOS-26.6.2-arm64-arm-64bit-Mach-O",
+  "machine": "arm64",
+  "python": "3.14.5",
+  "python_packages": {
+    "numpy": null,
+    "pandas": null,
+    "matplotlib": null,
+    "pytest": null,
+    "mujoco": null,
+    "pin": null,
+    "toppra": null
+  },
+  "tools": {
+    "c++": "/usr/bin/c++",
+    "cmake": "/opt/homebrew/bin/cmake",
+    "ninja": "/opt/homebrew/bin/ninja",
+    "git": "/opt/homebrew/bin/git",
+    "colcon": null,
+    "ros2": null,
+    "docker": null,
+    "FreeCADCmd": null
+  },
+  "commands": [
+    {
+      "command": [
+        "c++",
+        "--version"
+      ],
+      "exit_code": 0,
+      "stdout": "Apple clang version 21.0.0 (clang-2100.1.1.101)\nTarget: arm64-apple-darwin25.6.0\nThread model: posix\nInstalledDir: /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin",
+      "stderr": "2026-10-04 20:37:52.604 xcodebuild[5054:28351599]  DVTFilePathFSEvents: Failed to start fs event stream."
+    },
+    {
+      "command": [
+        "cmake",
+        "--version"
+      ],
+      "exit_code": 0,
+      "stdout": "cmake version 4.4.0\n\nCMake suite maintained and supported by Kitware (kitware.com/cmake).",
+      "stderr": ""
+    },
+    {
+      "command": [
+        "git",
+        "--version"
+      ],
+      "exit_code": 0,
+      "stdout": "git version 2.54.0",
+      "stderr": ""
+    },
+    {
+      "command": [
+        "dpkg-query",
+        "-W",
+        "ros-jazzy-rclcpp",
+        "ros-jazzy-pinocchio",
+        "ros-jazzy-moveit-servo",
+        "libeigen3-dev",
+        "libgtest-dev"
+      ],
+      "error": "[Errno 2] No such file or directory: 'dpkg-query'"
+    }
+  ]
+}

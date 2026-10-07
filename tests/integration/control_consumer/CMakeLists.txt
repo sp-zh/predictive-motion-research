@@ -1,0 +1,6 @@
+cmake_minimum_required(VERSION 3.22)
+project(control_consumer LANGUAGES CXX)
+find_package(predictive_motion_control REQUIRED)
+add_executable(control_consumer main.cpp)
+target_link_libraries(control_consumer predictive_motion_control::differential_ik)
+target_compile_features(control_consumer PRIVATE cxx_std_17)

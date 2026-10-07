@@ -1,0 +1,10 @@
+{
+  "name": "Predictive Motion Ubuntu 24.04 / ROS Jazzy",
+  "build": {"dockerfile": "../docker/Dockerfile", "context": "..", "options": ["--platform=linux/amd64"]},
+  "runArgs": ["--platform=linux/amd64"],
+  "remoteUser": "root",
+  "workspaceMount": "source=${localWorkspaceFolder},target=/workspaces/predictive_motion,type=bind",
+  "workspaceFolder": "/workspaces/predictive_motion",
+  "postCreateCommand": "bash scripts/ci.sh",
+  "customizations": {"vscode": {"extensions": ["ms-vscode.cpptools", "ms-python.python"]}}
+}

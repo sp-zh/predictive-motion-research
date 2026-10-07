@@ -1,0 +1,78 @@
+{
+  "freecad_version": [
+    "1",
+    "1",
+    "4",
+    "20260928 (Git shallow)",
+    "Unknown",
+    "2026/09/28 13:46:34",
+    "(HEAD detached at 4fd3bf320)",
+    "4fd3bf320d9566a27e60069fc8387448aaa3a094"
+  ],
+  "input_sha256": "57994e13cadafecd0a58d390186f9ad701224d4391399a01c345ae17d2ed6d55",
+  "cad_units": "mm",
+  "mesh_units": "m",
+  "objects": {
+    "tool": {
+      "volume_mm3": 357141.4033980472,
+      "visual": {
+        "facets": 3564,
+        "bounds_m": [
+          -0.034956492483615875,
+          -0.0349891223013401,
+          0.0,
+          0.05249999836087227,
+          0.0349891223013401,
+          0.328000009059906
+        ]
+      },
+      "collision": {
+        "facets": 904,
+        "bounds_m": [
+          -0.03500000014901161,
+          -0.03499981388449669,
+          0.0,
+          0.05249999836087227,
+          0.03499981388449669,
+          0.328000009059906
+        ]
+      }
+    },
+    "fixture": {
+      "volume_mm3": 5200000.000000002,
+      "visual": {
+        "facets": 48,
+        "bounds_m": [
+          0.699999988079071,
+          -0.18000000715255737,
+          0.25,
+          0.9399999976158142,
+          0.14499999582767487,
+          0.4749999940395355
+        ]
+      },
+      "collision": {
+        "facets": 48,
+        "bounds_m": [
+          0.699999988079071,
+          -0.18000000715255737,
+          0.25,
+          0.9399999976158142,
+          0.14499999582767487,
+          0.4749999940395355
+        ]
+      }
+    }
+  },
+  "parametric_recompute_test": true,
+  "exports": {
+    "fixture.step": "fd0e16ae58ba0b2e9582631bfef37a16d88126fdb10ffd130fed10ba7b15bcac",
+    "tool.step": "5b501cccfa8c3ab4450ed7e31f31ee67812b0ca26a8acc74c49d8e290479861c",
+    "inspection.FCStd": "ccdc02f5ce0ac1514c74e45bb08e29e9be0c79d3e616cf98c3664fb4cbb5603b",
+    "inspection_path.json": "d2784191ce0a78f8f92c727317ece0b7a2addd7df004e542dcbf923986e713f1",
+    "fixture_visual.stl": "d8e0e8d5083a67cce184725418189cb7c65772679128c09800a365c1becfd78b",
+    "fixture_collision.stl": "d8e0e8d5083a67cce184725418189cb7c65772679128c09800a365c1becfd78b",
+    "tool_visual.stl": "ab03c2aa740426b3d2286d065a72ad5e25e7aef357f917225476caff24a4315a",
+    "tool_collision.stl": "b688304d3e9139cc8804ea60047eb93453aa1703e677d025cbe756212b198766"
+  }
+}

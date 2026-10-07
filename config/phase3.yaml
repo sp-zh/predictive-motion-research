@@ -1,0 +1,45 @@
+# Frozen component protocol; never a final research advantage claim.
+schema: 1
+period: 0.004
+rotation_length_scale: 0.3
+primary_method: mp
+# Only used if explicitly selecting a DLS primary; projector still exact MP.
+primary_damping: 0.003
+primary_damping_source: Phase2 development-selected fixed DLS
+rank_relative_tolerance: 1.0e-10
+gradient_h: 1.0e-6
+directional_check_h: 3.0e-6
+singular_gap_relative_tolerance: 1.0e-5
+log_volume_regularization: 0.01
+numerical_samples: 2000
+numerical_seed: 34042
+projector_comparison_damping: 0.003
+secondary_gain_candidates: [0.25, 1.0, 4.0]
+joint_objective_weight: 1.0
+sigma_objective_weight: 20.0
+log_volume_objective_weight: 0.05
+development_seeds: [41011, 41012]
+evaluation_seeds: [51011, 51012]
+search_samples: 20000
+search_margin: 0.02
+joint_objective_quantile: 0.99
+near_quantile: 0.001
+plant_flange_site: attachment_site
+feedback_gain: 4.0
+warmup_seconds: 1.0
+path_seconds: 4.0
+settle_seconds: 2.0
+reference_joint_amplitude: 0.02
+velocity_limits: [2.62, 2.62, 2.62, 2.62, 5.26, 4.18, 5.26]
+velocity_source: official fr3_with_hand.urdf@7aeeddc449edf8d62b594f9e36a81da53e7796f9
+completion_position_tolerance: 0.01
+completion_rotation_tolerance: 0.05
+peak_position_tolerance: 0.05
+peak_rotation_tolerance: 0.2
+# Common objective for selecting the scalar gain for each secondary method, all eight scenarios.
+score_pose_weight: 10.0
+score_joint_cost_weight: 1.0
+score_sigma_weight: 1.0
+score_speed_weight: 0.001
+score_intervention_weight: 0.01
+score_failure_penalty: 100.0

@@ -1,0 +1,26 @@
+name: Linux simulation, kinematics and control tests
+on:
+  push:
+  pull_request:
+permissions:
+  contents: read
+jobs:
+  validation:
+    runs-on: ubuntu-24.04
+    timeout-minutes: 25
+    container:
+      image: ros:jazzy-ros-base-noble@sha256:066420e07f60aa18262f2479981def87ebcfcec42eefb0c0c57c4a46098348ca
+    steps:
+      - uses: actions/checkout@11d5960a326750d5838078e36cf38b85af677262
+      - name: Install selected dependencies
+        shell: bash
+        run: bash scripts/phase0/setup_linux.sh
+      - name: Fetch locked models, compile and execute tests
+        shell: bash
+        run: bash scripts/ci.sh
+      - name: Record environment
+        if: always()
+        shell: bash
+        run: |
+          source /opt/ros/jazzy/setup.bash
+          python3 scripts/collect_environment.py --output results/phase0/environment.json

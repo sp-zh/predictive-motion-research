@@ -1,0 +1,6 @@
+cmake_minimum_required(VERSION 3.22)
+project(standalone_kinematics_consumer LANGUAGES CXX)
+set(CMAKE_CXX_STANDARD 17)
+find_package(predictive_motion_kinematics REQUIRED)
+add_executable(kinematics_consumer main.cpp)
+target_link_libraries(kinematics_consumer predictive_motion_kinematics::robot_kinematics)

@@ -1,0 +1,6 @@
+cmake_minimum_required(VERSION 3.22)
+project(root_progress_stop LANGUAGES CXX)
+set(CMAKE_CXX_STANDARD 17)
+find_package(predictive_motion_control REQUIRED)
+add_executable(root_progress_stop main.cpp)
+target_link_libraries(root_progress_stop predictive_motion_control::predictive_controller)

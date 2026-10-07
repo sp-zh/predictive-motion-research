@@ -1,0 +1,17 @@
+cmake_minimum_required(VERSION 3.22)
+project(phase4_actual_servo LANGUAGES CXX)
+set(CMAKE_CXX_STANDARD 17)
+set(Boost_USE_DEBUG_RUNTIME OFF)
+find_package(ament_cmake REQUIRED)
+find_package(moveit_servo 2.12.4 EXACT REQUIRED)
+find_package(moveit_ros_planning REQUIRED)
+find_package(rclcpp REQUIRED)
+find_package(sensor_msgs REQUIRED)
+find_package(moveit_msgs REQUIRED)
+find_package(shape_msgs REQUIRED)
+find_package(yaml-cpp REQUIRED)
+add_executable(servo_sidecar servo_sidecar.cpp)
+ament_target_dependencies(servo_sidecar moveit_servo moveit_ros_planning rclcpp sensor_msgs moveit_msgs shape_msgs)
+target_link_libraries(servo_sidecar yaml-cpp)
+# OSQP vendor 0.6 may be a transitive external dependency. No OSQP 1.x target or
+# find_package is present in this build. The controller's build is independent.

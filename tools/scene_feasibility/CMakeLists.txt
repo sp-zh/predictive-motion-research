@@ -1,0 +1,8 @@
+cmake_minimum_required(VERSION 3.22)
+project(scene_feasibility LANGUAGES CXX)
+set(CMAKE_CXX_STANDARD 17)
+find_package(predictive_motion_sim REQUIRED)
+find_package(predictive_motion_kinematics REQUIRED)
+find_package(predictive_motion_control REQUIRED)
+add_executable(scene_feasibility main.cpp)
+target_link_libraries(scene_feasibility predictive_motion_sim::plant predictive_motion_kinematics::robot_kinematics predictive_motion_control::differential_ik)

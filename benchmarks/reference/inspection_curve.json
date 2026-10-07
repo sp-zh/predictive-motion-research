@@ -1,0 +1,21 @@
+{
+  "schema_version": 1,
+  "units": "m",
+  "frame": "world",
+  "start": [0.72, -0.03, 0.395],
+  "end": [0.92, -0.03, 0.395],
+  "lateral_amplitude": 0.007,
+  "vertical_amplitude": 0.010,
+  "quaternion_xyzw": [0.5, 0.5, 0.5, 0.5],
+  "orientation_definition": "tool local Z points along world +X; local X along world +Y",
+  "samples": 81,
+  "seed": 401,
+  "max_initial_guesses": 50,
+  "max_ik_iterations": 250,
+  "ik_damping": 0.003,
+  "ik_rotation_length_scale": 0.3,
+  "ik_step_cap_rad": 0.12,
+  "ik_error_tolerance": 0.00001,
+  "tool_fixture_clearance_m": 0.005,
+  "status": "candidate; discrete FK/contact screening pending; no controller benchmark results"
+}

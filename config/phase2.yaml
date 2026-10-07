@@ -1,0 +1,32 @@
+# Frozen before running development or held-out benchmarks.
+schema: 1
+plant_flange_site: attachment_site
+period: 0.004
+search_samples: 20000
+search_margin: 0.02
+near_quantile: 0.001
+nominal_quantile: 0.5
+development_seeds: [1101, 1102]
+evaluation_seeds: [2101, 2102]
+rank_relative_tolerance: 1.0e-10
+rotation_length_scale: 0.3
+feedback_gain: 4.0
+damping_candidates: [0.001, 0.003, 0.01, 0.03, 0.1]
+adaptive_sigma_threshold: 0.05
+warmup_seconds: 1.0
+path_seconds: 4.0
+settle_seconds: 2.0
+nominal_joint_amplitude: 0.04
+near_joint_amplitude: 0.01
+sweep_points: 101
+sweep_twist_norm: 0.01
+# Matches generated official fr3_with_hand.urdf joint limit velocity attributes.
+velocity_limits: [2.62, 2.62, 2.62, 2.62, 5.26, 4.18, 5.26]
+velocity_source: models/fr3/fr3_with_hand.urdf@7aeeddc449edf8d62b594f9e36a81da53e7796f9
+objective_speed_weight: 0.001
+objective_intervention_weight: 0.01
+objective_failure_penalty: 100.0
+completion_position_tolerance: 0.01
+completion_rotation_tolerance: 0.05
+peak_position_tolerance: 0.05
+peak_rotation_tolerance: 0.2

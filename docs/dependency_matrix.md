@@ -1,0 +1,29 @@
+# Dependency selection and verification
+
+Inspected 2026-10-04, America/Toronto. Target Linux is the existing Dell WSL2 Ubuntu 24.04.4 x86_64. Exact installed package versions are recorded by the build evidence, not inferred from distribution names. Updating a major version requires an explicit matrix change and compatibility re-test.
+
+| Dependency | Selected version / selection status | Reason and compatibility | Source | Limitation / verification |
+|---|---|---|---|---|
+| Ubuntu | 24.04.4 LTS, Noble x86_64 | existing environment; ROS Jazzy target | [ROS REP-2000](https://www.ros.org/reps/rep-2000.html) | WSL kernel differs from bare-metal Linux |
+| ROS 2 | Jazzy; existing rclcpp 28.1.18 | stable distribution for Noble | [ROS Jazzy install](https://docs.ros.org/en/jazzy/Installation/Ubuntu-Install-Debs.html) | docs web fetch access-denied; installed package inspected directly |
+| GCC / C++ | GCC 13.3.0; C++17 initially | installed Noble toolchain; mature ROS ABI | installed c++ --version | no real-time guarantee from compiler choice |
+| CMake | 3.28.3 | installed toolchain; package minimum defined in code | installed cmake --version | build generators recorded in evidence |
+| Eigen | 3.4.0, deb 3.4.0-4build0.1 | installed; common Pinocchio/ROS compatible version | installed dpkg/apt-cache | numeric frame/SVD tests still required |
+| GTest | 1.14.0, deb 1.14.0-1 | installed; C++ test runner | installed dpkg/apt-cache | passing compilation is not algorithm validation |
+| Pinocchio | 4.1.0; candidate 4.1.0-1noble.20260826.071113 | official Jazzy binary avoids mixing pip/cmeel ABI; collision dependency still requires validation | [official install](https://github.com/stack-of-tasks/pinocchio), [release](https://github.com/stack-of-tasks/pinocchio/releases/tag/v4.1.0) | installed; C++ link and Phase 1 numerical/independent consumer checks passed |
+| Coal | 3.0.3; deb 3.0.3-2noble.20260825.051040 | installed Pinocchio dependency; directly linked C++ primitive audit | [Jazzy distance API](https://docs.ros.org/en/jazzy/p/coal/generated/structcoal_1_1DistanceResult.html) | 3000 analytic cases and 1620 perturbed primitive gradients passed; parallel-face nonsmoothness, meshes, self-collision and controller adapter remain open |
+| MuJoCo | 3.3.7 | fixed stable release; FR3 model requires >=3.1.3 | [release](https://github.com/google-deepmind/mujoco/releases/tag/3.3.7), [FR3 requirement](https://github.com/google-deepmind/mujoco_menagerie/tree/main/franka_fr3) | installed archive SHA pinned; plant tests and actual render passed |
+| FR3 plant model | Menagerie franka_fr3; commit 4d038b3feae26ec82b46a4d586379114012a8ac7 | professional model derived from Franka URDF | [Menagerie FR3](https://github.com/google-deepmind/mujoco_menagerie/tree/main/franka_fr3) | model files hash checked against checked-in manifest |
+| Controller URDF | official franka_description; commit 7aeeddc449edf8d62b594f9e36a81da53e7796f9 | official frame/limit/mesh source | [Franka description](https://github.com/frankarobotics/franka_description) | generated URDF hashes pinned; 2000-sample FK/axis consistency passed |
+| MoveIt / Servo | Jazzy 2.12.4; candidate deb revision inspected | strong external baseline with matching ROS distro | [Servo design](https://moveit.picknik.ai/main/doc/examples/realtime_servo/realtime_servo_tutorial.html), apt-cache on Dell | not installed yet; rolling docs are conceptual guidance, Jazzy API must be checked against installed headers |
+| OSQP | proposed 1.0.0, pending C++ integration gate | explicit C API version; own adapter avoids ambiguous wrapper ABI | [release](https://github.com/osqp/osqp/releases/tag/v1.0.0) | do not mix 0.6 and 1.x APIs; selection final before Phase 4 |
+| Ruckig | pending fixed release before smoothing experiments | state-to-state jerk-limited comparison, not equivalent to path retiming | [official repo](https://github.com/pantor/ruckig) | no installed/runtime claim yet |
+| TOPPRA | pending fixed release before fixed-path comparison | offline retiming baseline | [official repo](https://github.com/hungpham2511/toppra) | comparison restricted to matched known-path information |
+| FreeCAD | 1.1.4 official AppImage, archive SHA pinned | parametric STEP/mesh tool and fixture export | [FreeCAD](https://www.freecad.org/) | executed CAD generation, STEP/STL exports and fresh-process parametric persistence passed |
+| Python / NumPy | 3.12.3 / 1.26.4 installed | analysis/orchestration; system ROS stays isolated from pip changes | installed versions | use project venv for optional analysis tools |
+| Pandas / Matplotlib / pytest | 2.1.4+dfsg / 3.6.3 / 7.4.4 installed | analysis and Python tests | installed package inventory | exact project lock recorded once pipeline installed |
+| Podman / container recipe | Podman 4.9.3, deb 4.9.3+ds1-1ubuntu0.2; rootless verified | clean dependency environment using the pinned ROS-base recipe | docker/Dockerfile; scripts/clean_component_audit.py | uncached Phase0–3 source-only build passed after CI prefix-refresh fix; 24 actual cases and installed consumers. Docker/editor devcontainer/hosted Actions unexecuted; ENV-003 final research audit open |
+
+No dependency marked pending is a completed integration. Phase 0 review records actual installations, binary/model hashes and successful commands. Later baseline dependencies are intentionally installed at their integration gate rather than inflating Phase 0 with untested software.
+
+Phase4 integration uses OSQP and QDLDL under their supplied Apache-2.0 license texts in docs/licenses, and the actual MoveIt Servo package declares BSD-3-Clause. The separate imported-target contexts prevent the ROS vendor0.6 namespace from substituting for the controller1.0 build. The observed old-prefix consumer failure and fresh explicit-prefix success are retained.

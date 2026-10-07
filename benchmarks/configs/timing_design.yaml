@@ -1,0 +1,11 @@
+# Design defaults; this is not an executable benchmark configuration yet.
+control:
+  frequency_hz: 250
+  period_seconds: 0.004
+prediction:
+  horizon_steps: 20
+  interval_seconds: 0.04
+  horizon_seconds: 0.8
+validation:
+  jacobian_random_samples: 2000
+  jacobian_seed: 42
