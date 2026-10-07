@@ -220,6 +220,14 @@ this first protocol's scorer after synthetic false-PASS counterexamples; no
 new physical run has occurred. The diagram supplies no measured motion or
 performance result. [Rejection and required revision](../reviews/evidence/public_validation_91013_protocol_v1_root_review_20261007.md).
 
+![Executed scorer v2 integrity checks and prospective timeline](../figures/phase5/phase5_public_validation_91013_protocol_v2.png)
+
+Three complete synthetic controls pass and25 corrupted/failing controls are rejected.
+Root's separate eight capture-only checks have their expected outcomes. These are
+scorer checks, not new robot or model accuracy results. The timeline is declared,
+with1..1250 possible stop cycles; seed91013 has not yet run.
+[Independent replacement review](../reviews/evidence/public_validation_91013_protocol_v2_root_review_20261007.md).
+
 ## Downloadable 3D models
 
 | Asset | Format / units | Purpose |

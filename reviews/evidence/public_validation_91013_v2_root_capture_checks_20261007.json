@@ -1,0 +1,82 @@
+{
+  "scope": "Root independent synthetic capture-integrity execution only. No forecast/model/plant/approval; no Phase5 acceptance. Metadata rebuilt and hashes re-signed after disclosed corruptions so structural checks, rather than hash mismatch alone, are exercised.",
+  "source_sha256": "14f5dd6889ef723c49895d82fea524351f2b51c61ebd76dfe58a9c6c30b41d6a",
+  "scorer_sha256": "1a93e3710a2c1fe470c4b64b12d1e5498c5729e7908d420739ea5a8f70fa17fe",
+  "input_fixture": "/home/codextransfer/predictive_motion/results/phase5/development/public-validation-91013-gating-v2-attempt1/complete_positive_control",
+  "cases": [
+    {
+      "name": "complete_positive_control",
+      "accepted": true,
+      "audit": {
+        "consumed_sidecars_sha256": {
+          "raw.csv": "578fde1458516ff95bfc11bbca5ab7ca74d74dbb8298d98e387bad2451e51575",
+          "summary.yaml": "01b7e147206519d4dd59d47edd8b30df1fe42b960f57ba51efa0bedefd883636",
+          "cycles.csv": "112c420148a857a362eee494a0f11cc27a06a47c02c263cf481c7fc15be1ce20",
+          "all_qp_solves.csv": "db5b2023043afaff834d64b5258064445662bd65fe253863fc34481b9d639aef",
+          "all_qp_rows.csv": "103cdccfe3abdcd3b4d64cf6e5575ea487f6f2aa313b05526276ade2b2b8b21e"
+        },
+        "cycles": 2501,
+        "attempts": 2002,
+        "source_defined_base_rows": 119,
+        "row_counts": {
+          "120": 2002
+        },
+        "max_command_age_s": 0.0005,
+        "full4ms_deadline_misses": 0,
+        "actual_original_row_max_SI_violation": 0.0,
+        "superseded_tracking_attempts_not_applied": 1,
+        "phase_rows": {
+          "warmup": 1000,
+          "reference_motion": 390,
+          "reference_recorded_stop": 466,
+          "hold": 3144,
+          "new_shared_stop": 2
+        }
+      },
+      "rows": 5002
+    },
+    {
+      "name": "base_bound_relaxed",
+      "accepted": false,
+      "failure_type": "IntegrityError",
+      "reason": "base row history bounds"
+    },
+    {
+      "name": "base_coefficient_erased",
+      "accepted": false,
+      "failure_type": "IntegrityError",
+      "reason": "base row coefficient"
+    },
+    {
+      "name": "interior_clock_shift",
+      "accepted": false,
+      "failure_type": "IntegrityError",
+      "reason": "raw time continuity"
+    },
+    {
+      "name": "unapplied_API_error",
+      "accepted": false,
+      "failure_type": "IntegrityError",
+      "reason": "native/API/candidate rejection"
+    },
+    {
+      "name": "geometry_lower_positive_infinity",
+      "accepted": false,
+      "failure_type": "IntegrityError",
+      "reason": "illegal QP bound infinity/order"
+    },
+    {
+      "name": "summary_velocity_disagrees",
+      "accepted": false,
+      "failure_type": "IntegrityError",
+      "reason": "summary velocity consistency"
+    },
+    {
+      "name": "deadline_flag_disagrees",
+      "accepted": false,
+      "failure_type": "IntegrityError",
+      "reason": "cycle wall/age/deadline"
+    }
+  ],
+  "all_expected_outcomes": true
+}

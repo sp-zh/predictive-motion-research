@@ -1,0 +1,358 @@
+{
+  "scope": "Synthetic CSV/identity stub gate execution; no plant, no physical model accuracy claim, no approval",
+  "scorer_sha256": "1a93e3710a2c1fe470c4b64b12d1e5498c5729e7908d420739ea5a8f70fa17fe",
+  "audit_source_sha256": "2b8e4ee38088294f74de0a8b62c3e49f9280a0713d1b3c1603be719baa65e7cf",
+  "cases": [
+    {
+      "name": "complete_positive_control",
+      "expected_pass": true,
+      "exit_code": 0,
+      "gate": "PASS_SYNTHETIC_GATE_CONTROL_ONLY",
+      "failure": null,
+      "window_failures": 0,
+      "windows": 9796,
+      "scope": "Synthetic NoPlant gate regression only"
+    },
+    {
+      "name": "truncated_42row_control",
+      "expected_pass": false,
+      "exit_code": 1,
+      "gate": "FAIL_CAPTURE_INTEGRITY",
+      "failure": {
+        "type": "IntegrityError",
+        "reason": "complete phase/cycle/raw roster"
+      },
+      "window_failures": 0,
+      "windows": 0,
+      "scope": "Synthetic NoPlant gate regression only"
+    },
+    {
+      "name": "empty_trace",
+      "expected_pass": false,
+      "exit_code": 1,
+      "gate": "FAIL_CAPTURE_INTEGRITY",
+      "failure": {
+        "type": "IntegrityError",
+        "reason": "complete phase/cycle/raw roster"
+      },
+      "window_failures": 0,
+      "windows": 0,
+      "scope": "Synthetic NoPlant gate regression only"
+    },
+    {
+      "name": "warmup_only",
+      "expected_pass": false,
+      "exit_code": 1,
+      "gate": "FAIL_CAPTURE_INTEGRITY",
+      "failure": {
+        "type": "IntegrityError",
+        "reason": "raw clock/phase roster"
+      },
+      "window_failures": 0,
+      "windows": 0,
+      "scope": "Synthetic NoPlant gate regression only"
+    },
+    {
+      "name": "future_endpoint_NaN",
+      "expected_pass": false,
+      "exit_code": 1,
+      "gate": "FAIL_CAPTURE_INTEGRITY",
+      "failure": {
+        "type": "IntegrityError",
+        "reason": "nonfinite/NaN q_post_0"
+      },
+      "window_failures": 0,
+      "windows": 0,
+      "scope": "Synthetic NoPlant gate regression only"
+    },
+    {
+      "name": "warmup_failure",
+      "expected_pass": false,
+      "exit_code": 1,
+      "gate": "FAIL_CAPTURE_INTEGRITY",
+      "failure": {
+        "type": "IntegrityError",
+        "reason": "nonfinite/NaN q_before_0"
+      },
+      "window_failures": 0,
+      "windows": 0,
+      "scope": "Synthetic NoPlant gate regression only"
+    },
+    {
+      "name": "QP_row_NaN_after_capture_hash",
+      "expected_pass": false,
+      "exit_code": 1,
+      "gate": "FAIL_CAPTURE_INTEGRITY",
+      "failure": {
+        "type": "IntegrityError",
+        "reason": "capture SHA all_qp_rows.csv"
+      },
+      "window_failures": 0,
+      "windows": 0,
+      "scope": "Synthetic NoPlant gate regression only"
+    },
+    {
+      "name": "API_error_nonzero",
+      "expected_pass": false,
+      "exit_code": 1,
+      "gate": "FAIL_CAPTURE_INTEGRITY",
+      "failure": {
+        "type": "IntegrityError",
+        "reason": "native/API/candidate rejection"
+      },
+      "window_failures": 0,
+      "windows": 0,
+      "scope": "Synthetic NoPlant gate regression only"
+    },
+    {
+      "name": "failed_attempt_missing_row_group",
+      "expected_pass": false,
+      "exit_code": 1,
+      "gate": "FAIL_CAPTURE_INTEGRITY",
+      "failure": {
+        "type": "IntegrityError",
+        "reason": "attempt roster length"
+      },
+      "window_failures": 0,
+      "windows": 0,
+      "scope": "Synthetic NoPlant gate regression only"
+    },
+    {
+      "name": "duplicate_attempt_overwritten",
+      "expected_pass": false,
+      "exit_code": 1,
+      "gate": "FAIL_CAPTURE_INTEGRITY",
+      "failure": {
+        "type": "IntegrityError",
+        "reason": "attempt roster length"
+      },
+      "window_failures": 0,
+      "windows": 0,
+      "scope": "Synthetic NoPlant gate regression only"
+    },
+    {
+      "name": "schema_field_missing",
+      "expected_pass": false,
+      "exit_code": 1,
+      "gate": "FAIL_CAPTURE_INTEGRITY",
+      "failure": {
+        "type": "IntegrityError",
+        "reason": "CSV schema raw.csv"
+      },
+      "window_failures": 0,
+      "windows": 0,
+      "scope": "Synthetic NoPlant gate regression only"
+    },
+    {
+      "name": "time_discontinuity",
+      "expected_pass": false,
+      "exit_code": 1,
+      "gate": "FAIL_CAPTURE_INTEGRITY",
+      "failure": {
+        "type": "IntegrityError",
+        "reason": "raw time continuity"
+      },
+      "window_failures": 0,
+      "windows": 0,
+      "scope": "Synthetic NoPlant gate regression only"
+    },
+    {
+      "name": "state_discontinuity",
+      "expected_pass": false,
+      "exit_code": 1,
+      "gate": "FAIL_CAPTURE_INTEGRITY",
+      "failure": {
+        "type": "IntegrityError",
+        "reason": "q state continuity"
+      },
+      "window_failures": 0,
+      "windows": 0,
+      "scope": "Synthetic NoPlant gate regression only"
+    },
+    {
+      "name": "applied_candidate_mismatch",
+      "expected_pass": false,
+      "exit_code": 1,
+      "gate": "FAIL_CAPTURE_INTEGRITY",
+      "failure": {
+        "type": "IntegrityError",
+        "reason": "applied candidate vs accepted raw"
+      },
+      "window_failures": 0,
+      "windows": 0,
+      "scope": "Synthetic NoPlant gate regression only"
+    },
+    {
+      "name": "base_row_missing",
+      "expected_pass": false,
+      "exit_code": 1,
+      "gate": "FAIL_CAPTURE_INTEGRITY",
+      "failure": {
+        "type": "IntegrityError",
+        "reason": "row duplicate/gap/order"
+      },
+      "window_failures": 0,
+      "windows": 0,
+      "scope": "Synthetic NoPlant gate regression only"
+    },
+    {
+      "name": "base_row_wrong_coefficient",
+      "expected_pass": false,
+      "exit_code": 1,
+      "gate": "FAIL_CAPTURE_INTEGRITY",
+      "failure": {
+        "type": "IntegrityError",
+        "reason": "base row coefficient"
+      },
+      "window_failures": 0,
+      "windows": 0,
+      "scope": "Synthetic NoPlant gate regression only"
+    },
+    {
+      "name": "base_row_wrong_history_bound",
+      "expected_pass": false,
+      "exit_code": 1,
+      "gate": "FAIL_CAPTURE_INTEGRITY",
+      "failure": {
+        "type": "IntegrityError",
+        "reason": "base row history bounds"
+      },
+      "window_failures": 0,
+      "windows": 0,
+      "scope": "Synthetic NoPlant gate regression only"
+    },
+    {
+      "name": "geometry_wrong_inf",
+      "expected_pass": false,
+      "exit_code": 1,
+      "gate": "FAIL_CAPTURE_INTEGRITY",
+      "failure": {
+        "type": "IntegrityError",
+        "reason": "illegal QP bound infinity/order"
+      },
+      "window_failures": 0,
+      "windows": 0,
+      "scope": "Synthetic NoPlant gate regression only"
+    },
+    {
+      "name": "sidecar_hash_missing",
+      "expected_pass": false,
+      "exit_code": 1,
+      "gate": "FAIL_CAPTURE_INTEGRITY",
+      "failure": {
+        "type": "IntegrityError",
+        "reason": "capture SHA all_qp_rows.csv"
+      },
+      "window_failures": 0,
+      "windows": 0,
+      "scope": "Synthetic NoPlant gate regression only"
+    },
+    {
+      "name": "cycle_missing",
+      "expected_pass": false,
+      "exit_code": 1,
+      "gate": "FAIL_CAPTURE_INTEGRITY",
+      "failure": {
+        "type": "IntegrityError",
+        "reason": "complete phase/cycle/raw roster"
+      },
+      "window_failures": 0,
+      "windows": 0,
+      "scope": "Synthetic NoPlant gate regression only"
+    },
+    {
+      "name": "terminal_velocity_not_stopped",
+      "expected_pass": false,
+      "exit_code": 1,
+      "gate": "FAIL_CAPTURE_INTEGRITY",
+      "failure": {
+        "type": "IntegrityError",
+        "reason": "physical acceleration consistency"
+      },
+      "window_failures": 0,
+      "windows": 0,
+      "scope": "Synthetic NoPlant gate regression only"
+    },
+    {
+      "name": "summary_false_stop",
+      "expected_pass": false,
+      "exit_code": 1,
+      "gate": "FAIL_CAPTURE_INTEGRITY",
+      "failure": {
+        "type": "IntegrityError",
+        "reason": "summary incomplete/failure/seed"
+      },
+      "window_failures": 0,
+      "windows": 0,
+      "scope": "Synthetic NoPlant gate regression only"
+    },
+    {
+      "name": "physical_jerk_forged",
+      "expected_pass": false,
+      "exit_code": 1,
+      "gate": "FAIL_CAPTURE_INTEGRITY",
+      "failure": {
+        "type": "IntegrityError",
+        "reason": "physical jerk consistency"
+      },
+      "window_failures": 0,
+      "windows": 0,
+      "scope": "Synthetic NoPlant gate regression only"
+    },
+    {
+      "name": "nonfinite_prediction",
+      "expected_pass": false,
+      "exit_code": 1,
+      "gate": "FAIL_FRESH_CURATED_CONDITIONAL_TRACE",
+      "failure": null,
+      "window_failures": 9796,
+      "windows": 9796,
+      "scope": "Synthetic NoPlant gate regression only"
+    },
+    {
+      "name": "warmup_model_failure",
+      "expected_pass": false,
+      "exit_code": 1,
+      "gate": "FAIL_FRESH_CURATED_CONDITIONAL_TRACE",
+      "failure": null,
+      "window_failures": 1,
+      "windows": 9796,
+      "scope": "Synthetic NoPlant gate regression only"
+    },
+    {
+      "name": "superseding_stop_positive",
+      "expected_pass": true,
+      "exit_code": 0,
+      "gate": "PASS_SYNTHETIC_GATE_CONTROL_ONLY",
+      "failure": null,
+      "window_failures": 0,
+      "windows": 9796,
+      "scope": "Synthetic NoPlant gate regression only"
+    },
+    {
+      "name": "boundary_history_positive",
+      "expected_pass": true,
+      "exit_code": 0,
+      "gate": "PASS_SYNTHETIC_GATE_CONTROL_ONLY",
+      "failure": null,
+      "window_failures": 0,
+      "windows": 10396,
+      "scope": "Synthetic NoPlant gate regression only"
+    },
+    {
+      "name": "superseded_tracking_continuation_invalid",
+      "expected_pass": false,
+      "exit_code": 1,
+      "gate": "FAIL_CAPTURE_INTEGRITY",
+      "failure": {
+        "type": "IntegrityError",
+        "reason": "all-attempt candidate continuation"
+      },
+      "window_failures": 0,
+      "windows": 0,
+      "scope": "Synthetic NoPlant gate regression only"
+    }
+  ],
+  "all_expected_outcomes": true,
+  "old_v1_untouched": true
+}

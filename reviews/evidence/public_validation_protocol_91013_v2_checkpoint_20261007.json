@@ -1,0 +1,58 @@
+{
+  "date": "2026-10-07",
+  "decision": "PASS_SCOPED_REPLACEMENT_SCORER_PROTOCOL_REVIEW",
+  "phase5": "PENDING_NOT_ACCEPTED",
+  "seed91013": "NOT_EXECUTED_APPROVAL_AFTER_REMOTE_CHECKPOINT",
+  "scorer_sha256": "1a93e3710a2c1fe470c4b64b12d1e5498c5729e7908d420739ea5a8f70fa17fe",
+  "protocol_sha256": "0325135b001c9f54b1747993eb6af6364e5c05deb3ee9b37f81b434e253a5739",
+  "frozen_sha256": "190b05049892a27923778475e8287a7814854455d1fa55d722d14094245b814d",
+  "producer_archive": {
+    "sha256": "149604bfff4edc1a1b83731950b07c8b3e3880cf16db31569252e75a02f4ef7b",
+    "bytes": 48986264,
+    "regular_members": 608,
+    "payloads": 606,
+    "Mac": "/Users/uot/Documents/ChatGPT/ros/results/phase5-executor-checkpoints-01a114d9/public-validation-protocol-91013-v2/public-validation-91013-protocol-v2.tar.gz",
+    "Dell": "/mnt/d/CodexTransfer/projects/predictive_motion/checkpoints/public-validation-91013-protocol-v2-20261007/public-validation-91013-protocol-v2.tar.gz",
+    "all_payloads_root_verified_on_both": true,
+    "source_manifest_sha256": "86b39a3fcc7aaf239d808104a2fda60b4d8f7b1f4b3ec20155f1cc53cbbf38e2"
+  },
+  "root_archive": {
+    "sha256": "368c25cff0c8e8bfbe2b8138e9eeddd208d04c4a441b93502808759dd0389ddc",
+    "bytes": 11723178,
+    "regular_members": 139,
+    "payloads": 138,
+    "Mac": "/Users/uot/Documents/ChatGPT/ros/transfer/incoming/root-validation-91013-v2-capture-20261007/evidence.tar.gz",
+    "Dell": "/mnt/d/CodexTransfer/projects/predictive_motion/checkpoints/root-validation-91013-v2-capture-20261007/evidence.tar.gz",
+    "all_payloads_verified_on_both": true,
+    "includes_draft_source_changed_NOT_READY": true
+  },
+  "frozen_dependency_closure": {
+    "verified_time_utc": "2026-10-07T23:30:09.171141+00:00",
+    "frozen_sha256": "190b05049892a27923778475e8287a7814854455d1fa55d722d14094245b814d",
+    "protocol_sha256": "0325135b001c9f54b1747993eb6af6364e5c05deb3ee9b37f81b434e253a5739",
+    "scorer_sha256": "1a93e3710a2c1fe470c4b64b12d1e5498c5729e7908d420739ea5a8f70fa17fe",
+    "all256_live_inputs_and_immutable_Dcache_blobs_root_read_verified": true,
+    "referenced_bytes": 230237437,
+    "no_physical_run_or_raw_exists": true,
+    "run_approval": "NOT_YET_ISSUED_PENDING_BACKUP",
+    "scope": "Prospective replacement protocol dependency closure, not model accuracy or phase acceptance"
+  },
+  "external_input_storage_scope": "All256 live and immutable blobs were re-read on Dell; this does not claim all256 external runtime/model files were copied into the Mac QA archive. Prior immutable archives remain retained.",
+  "synthetic_cases": {
+    "producer": 28,
+    "producer_positive": 3,
+    "producer_negative": 25,
+    "root": 8,
+    "root_positive": 1,
+    "root_negative": 7
+  },
+  "old91012": "Retrospective capture integrity only; original five hashes preserved, copied synthetic summary changed; no new model/plant run",
+  "visual": "Root inspected synthetic counts/declared timeline and source hashes; not physical performance",
+  "large_evidence_in_Git": false,
+  "v1_preserved": true,
+  "logging_limitations": [
+    "Exact geometry tail count/options absent",
+    "Per-solve H/g not directly captured",
+    "Hashes not producer authentication or proof of unlogged nonlinear checks/unknown forces"
+  ]
+}

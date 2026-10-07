@@ -1,0 +1,20 @@
+{
+  "state": "RESUMED_BY_USER",
+  "user_instructions": [
+    "继续任务",
+    "保存后恢复 Phase5",
+    "允许项目聊天之间协调"
+  ],
+  "effective_utc": "2026-10-07T23:28:39.193436+00:00",
+  "prior_checkpoint_remote_verified": "779173a37f4b0a516d85c56e7014e07603befdc4",
+  "authoritative_writer_thread": "01a114d9-3a3a-7071-b94f-624581000992",
+  "phase5": "NOT_ACCEPTED",
+  "phase6": "NOT_STARTED",
+  "current_scope": "strict scorer v2 / replacement protocol / QA and archive only; no plant run or approval",
+  "state_and_preserved_pause_sha256": {
+    "PHASE5_WRITER_STATE_20261007.json": "bb117db75f2047793c81ffbbff6a7a4280d5c3b0fe0f1e3826da2a71a418dab8",
+    "PROJECT_PAUSED.json": "e9d4a0803bb1b24d6324b2702b2ea4c105434a67f032f61acc7bf998316b471d",
+    "reviews/evidence/PHASE5_WRITER_STATE_20261007_paused_before_resumption_20261007.json": "08cd5f686597b2147537c78133353ad5e44fa63b7d40625f44b48a0e79a514f4",
+    "reviews/evidence/PROJECT_PAUSED_paused_before_resumption_20261007.json": "e00837053e7766035508db630e8588d7cd16daea94da6fa1dabfa0ee56f5e7e9"
+  }
+}
