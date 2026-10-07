@@ -1,0 +1,33 @@
+{
+  "date": "2026-10-07",
+  "milestone": "Independent retrospective fixed soft-v2 forecast on already observed v19 full raw",
+  "phase5_acceptance": "PENDING",
+  "decision": "UNVALIDATED_RETROSPECTIVE_STRESS_NOT_ACCURACY_PASS",
+  "source_sha256": "05030fdeecd7342203f0fccab3d1f5e57d42bf5c4026082f7298fa7660c195cc",
+  "root_rerun": "Exact byte equality of full diagnosticJSON andMD; no refit/producer predictor/physical plant call",
+  "archive": {
+    "sha256": "1397e2a8f01c740627a483522dc037e61a9bb571ba9e1a7f6ab227357dfb466d",
+    "bytes": 1328825,
+    "members": 9,
+    "scope": "Retrospective conditional stress on already observed v19; no accuracy PASS or model/domain change",
+    "mac_archive_verified": true,
+    "member_sha_verified": true,
+    "Mac": "/Users/uot/Documents/ChatGPT/ros/transfer/outgoing/phase5-retrospective-soft-v19-20261007",
+    "Dell": "/mnt/d/CodexTransfer/projects/predictive_motion/checkpoints/root-retrospective-soft-v19-20261007",
+    "verified": "Both archives, allmemberSHA, READY"
+  },
+  "review": "servo_soft_v2_v19_retrospective_20261007.md/json",
+  "all_full_windows_2_4_40_800ms": [
+    900,
+    900,
+    891,
+    701
+  ],
+  "limits": [
+    "Warmup, stopping, crossing and out-of-domain windows preserved",
+    "Tick0 prephysicalvelocity absent from originalschema; no invented initialization",
+    "Main path lasts.556s; all139path-start800mswindows crossstop and are out-of-domain",
+    "No new holdout/independent trial/domain authorization or mainMPC integration",
+    "Global short-horizon velocity errors exceed old1e-3 limit; no accuracy gate credit"
+  ]
+}

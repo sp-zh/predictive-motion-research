@@ -96,6 +96,9 @@ The independent root reproduces these errors without future-state resets.
 Overlapping forecast windows are diagnostics, not independent trials.
 [Independent audit](../reviews/evidence/servo_model_v1_math_audit_20261007.md)
 and [figure provenance](../figures/phase5/phase5_servo_model_v1_failed.json).
+[Separate soft-v2 stress on observed v19](../reviews/evidence/servo_soft_v2_v19_retrospective_20261007.md)
+retains motion/stopping and domain violations. It is a retrospective diagnostic
+and supplies no new validation credit.
 
 ![Local soft-friction model validation](../figures/phase5/phase5_servo_soft_friction_v2.png)
 

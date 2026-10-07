@@ -1,0 +1,646 @@
+{
+  "scope": "Retrospective recorded-target MODEL forecast only; not holdout, fitting, domain expansion or plant.",
+  "classification": "RETROSPECTIVE_UNVALIDATED_STRESS_DIAGNOSTIC_NO_ACCURACY_PASS",
+  "source_sha256": "05030fdeecd7342203f0fccab3d1f5e57d42bf5c4026082f7298fa7660c195cc",
+  "model_sha256": "984ee85d086aeba7da8260a20b21b301e23dfd2c698a6c61ace0ff956bbec1bb",
+  "raw_sha256": "113a5a1c82e97d6a624656b78fc6383363a76bccf8cc149406071fc57216ee2a",
+  "numpy_version": "2.3.5",
+  "physical_rows": 1802,
+  "phase_substeps": {
+    "warmup": 1000,
+    "path": 278,
+    "stopping": 524
+  },
+  "path_duration_s": 0.556,
+  "unscored_initial_boundary": {
+    "tick": 0,
+    "reason": "raw has no recorded pre-first-row physical velocity; no setup/teacher-forced reconstruction used"
+  },
+  "actual_domain_by_phase": {
+    "warmup": {
+      "recorded_substeps_with_known_prestate": 999,
+      "bad_any_pre_or_post_substeps": 97,
+      "prestate_bad_by_joint": {
+        "q": [
+          0,
+          0,
+          0,
+          23,
+          0,
+          0,
+          0
+        ],
+        "v": [
+          0,
+          64,
+          0,
+          94,
+          0,
+          9,
+          0
+        ],
+        "target_minus_q": [
+          0,
+          62,
+          0,
+          97,
+          0,
+          4,
+          0
+        ]
+      },
+      "poststate_bad_by_joint": {
+        "q": [
+          0,
+          0,
+          0,
+          22,
+          0,
+          0,
+          0
+        ],
+        "v": [
+          0,
+          63,
+          0,
+          93,
+          0,
+          9,
+          0
+        ],
+        "target_minus_q": [
+          0,
+          61,
+          0,
+          96,
+          0,
+          3,
+          0
+        ]
+      }
+    },
+    "path": {
+      "recorded_substeps_with_known_prestate": 278,
+      "bad_any_pre_or_post_substeps": 155,
+      "prestate_bad_by_joint": {
+        "q": [
+          0,
+          0,
+          0,
+          21,
+          0,
+          0,
+          0
+        ],
+        "v": [
+          47,
+          77,
+          73,
+          142,
+          0,
+          0,
+          0
+        ],
+        "target_minus_q": [
+          77,
+          79,
+          98,
+          155,
+          0,
+          0,
+          0
+        ]
+      },
+      "poststate_bad_by_joint": {
+        "q": [
+          0,
+          0,
+          0,
+          22,
+          0,
+          0,
+          0
+        ],
+        "v": [
+          48,
+          78,
+          74,
+          143,
+          0,
+          0,
+          0
+        ],
+        "target_minus_q": [
+          76,
+          77,
+          97,
+          153,
+          0,
+          0,
+          0
+        ]
+      }
+    },
+    "stopping": {
+      "recorded_substeps_with_known_prestate": 524,
+      "bad_any_pre_or_post_substeps": 524,
+      "prestate_bad_by_joint": {
+        "q": [
+          0,
+          364,
+          441,
+          524,
+          0,
+          0,
+          0
+        ],
+        "v": [
+          27,
+          25,
+          34,
+          30,
+          0,
+          0,
+          0
+        ],
+        "target_minus_q": [
+          27,
+          22,
+          31,
+          31,
+          0,
+          0,
+          0
+        ]
+      },
+      "poststate_bad_by_joint": {
+        "q": [
+          0,
+          365,
+          442,
+          524,
+          0,
+          0,
+          0
+        ],
+        "v": [
+          26,
+          24,
+          33,
+          29,
+          0,
+          0,
+          0
+        ],
+        "target_minus_q": [
+          26,
+          21,
+          30,
+          30,
+          0,
+          0,
+          0
+        ]
+      }
+    }
+  },
+  "domain_count_policy": "Known recorded pre-state and post-state are checked against unchanged q/v/target\u2212q bounds. Forecast counts each window/substep once if either pre/post model state is outside; both raw pre/post and model pre/post counts remain visible. Overlapping window counts are not independent rows or trials.",
+  "forecasts": [
+    {
+      "substeps": 1,
+      "duration_s": 0.002,
+      "summaries": {
+        "all_complete_windows": {
+          "windows": 900,
+          "max_q_error_rad": 5.054480187283161e-06,
+          "max_v_error_rad_s": 0.0025272400936265996,
+          "rmse_q_rad": 8.42249607157165e-08,
+          "rmse_v_rad_s": 4.2112480356873506e-05,
+          "actual_domain_bad_windows": 388,
+          "forecast_domain_bad_windows": 388,
+          "actual_domain_bad_window_substeps": 388,
+          "forecast_domain_bad_window_substeps": 388
+        },
+        "by_start_phase": {
+          "warmup": {
+            "windows": 499,
+            "max_q_error_rad": 5.054480187283161e-06,
+            "max_v_error_rad_s": 0.0025272400936265996,
+            "rmse_q_rad": 1.0544156750020945e-07,
+            "rmse_v_rad_s": 5.2720783748799215e-05,
+            "actual_domain_bad_windows": 48,
+            "forecast_domain_bad_windows": 48,
+            "actual_domain_bad_window_substeps": 48,
+            "forecast_domain_bad_window_substeps": 48
+          },
+          "path": {
+            "windows": 139,
+            "max_q_error_rad": 2.6068051894867494e-07,
+            "max_v_error_rad_s": 0.00013034025940063254,
+            "rmse_q_rad": 6.499862951455468e-08,
+            "rmse_v_rad_s": 3.249931475649787e-05,
+            "actual_domain_bad_windows": 78,
+            "forecast_domain_bad_windows": 78,
+            "actual_domain_bad_window_substeps": 78,
+            "forecast_domain_bad_window_substeps": 78
+          },
+          "stopping": {
+            "windows": 262,
+            "max_q_error_rad": 2.580189613077266e-07,
+            "max_v_error_rad_s": 0.0001290094805832388,
+            "rmse_q_rad": 3.085086120544384e-08,
+            "rmse_v_rad_s": 1.5425430602856224e-05,
+            "actual_domain_bad_windows": 262,
+            "forecast_domain_bad_windows": 262,
+            "actual_domain_bad_window_substeps": 262,
+            "forecast_domain_bad_window_substeps": 262
+          }
+        },
+        "by_phase_sequence": {
+          "path": {
+            "windows": 139,
+            "max_q_error_rad": 2.6068051894867494e-07,
+            "max_v_error_rad_s": 0.00013034025940063254,
+            "rmse_q_rad": 6.499862951455468e-08,
+            "rmse_v_rad_s": 3.249931475649787e-05,
+            "actual_domain_bad_windows": 78,
+            "forecast_domain_bad_windows": 78,
+            "actual_domain_bad_window_substeps": 78,
+            "forecast_domain_bad_window_substeps": 78
+          },
+          "stopping": {
+            "windows": 262,
+            "max_q_error_rad": 2.580189613077266e-07,
+            "max_v_error_rad_s": 0.0001290094805832388,
+            "rmse_q_rad": 3.085086120544384e-08,
+            "rmse_v_rad_s": 1.5425430602856224e-05,
+            "actual_domain_bad_windows": 262,
+            "forecast_domain_bad_windows": 262,
+            "actual_domain_bad_window_substeps": 262,
+            "forecast_domain_bad_window_substeps": 262
+          },
+          "warmup": {
+            "windows": 499,
+            "max_q_error_rad": 5.054480187283161e-06,
+            "max_v_error_rad_s": 0.0025272400936265996,
+            "rmse_q_rad": 1.0544156750020945e-07,
+            "rmse_v_rad_s": 5.2720783748799215e-05,
+            "actual_domain_bad_windows": 48,
+            "forecast_domain_bad_windows": 48,
+            "actual_domain_bad_window_substeps": 48,
+            "forecast_domain_bad_window_substeps": 48
+          }
+        },
+        "fully_in_domain_retrospective_subset": {
+          "windows": 512,
+          "max_q_error_rad": 1.4139275306135346e-07,
+          "max_v_error_rad_s": 7.0696376370946e-05,
+          "rmse_q_rad": 8.214181326362413e-09,
+          "rmse_v_rad_s": 4.107090664033988e-06,
+          "actual_domain_bad_windows": 0,
+          "forecast_domain_bad_windows": 0,
+          "actual_domain_bad_window_substeps": 0,
+          "forecast_domain_bad_window_substeps": 0
+        }
+      }
+    },
+    {
+      "substeps": 2,
+      "duration_s": 0.004,
+      "summaries": {
+        "all_complete_windows": {
+          "windows": 900,
+          "max_q_error_rad": 9.429714774800146e-06,
+          "max_v_error_rad_s": 0.002187617293692712,
+          "rmse_q_rad": 1.6924190163326784e-07,
+          "rmse_v_rad_s": 4.323272168063595e-05,
+          "actual_domain_bad_windows": 388,
+          "forecast_domain_bad_windows": 388,
+          "actual_domain_bad_window_substeps": 775,
+          "forecast_domain_bad_window_substeps": 775
+        },
+        "by_start_phase": {
+          "warmup": {
+            "windows": 499,
+            "max_q_error_rad": 9.429714774800146e-06,
+            "max_v_error_rad_s": 0.002187617293692712,
+            "rmse_q_rad": 2.1138792672277857e-07,
+            "rmse_v_rad_s": 5.372442027620944e-05,
+            "actual_domain_bad_windows": 48,
+            "forecast_domain_bad_windows": 48,
+            "actual_domain_bad_window_substeps": 96,
+            "forecast_domain_bad_window_substeps": 96
+          },
+          "path": {
+            "windows": 139,
+            "max_q_error_rad": 4.773840678318209e-07,
+            "max_v_error_rad_s": 0.0001083517745978594,
+            "rmse_q_rad": 1.188677836642583e-07,
+            "rmse_v_rad_s": 2.7394011605601973e-05,
+            "actual_domain_bad_windows": 78,
+            "forecast_domain_bad_windows": 78,
+            "actual_domain_bad_window_substeps": 155,
+            "forecast_domain_bad_window_substeps": 155
+          },
+          "stopping": {
+            "windows": 262,
+            "max_q_error_rad": 5.600296133501104e-07,
+            "max_v_error_rad_s": 0.00015100532616106567,
+            "rmse_q_rad": 7.608725319875488e-08,
+            "rmse_v_rad_s": 2.2915461767742824e-05,
+            "actual_domain_bad_windows": 262,
+            "forecast_domain_bad_windows": 262,
+            "actual_domain_bad_window_substeps": 524,
+            "forecast_domain_bad_window_substeps": 524
+          }
+        },
+        "by_phase_sequence": {
+          "path": {
+            "windows": 139,
+            "max_q_error_rad": 4.773840678318209e-07,
+            "max_v_error_rad_s": 0.0001083517745978594,
+            "rmse_q_rad": 1.188677836642583e-07,
+            "rmse_v_rad_s": 2.7394011605601973e-05,
+            "actual_domain_bad_windows": 78,
+            "forecast_domain_bad_windows": 78,
+            "actual_domain_bad_window_substeps": 155,
+            "forecast_domain_bad_window_substeps": 155
+          },
+          "stopping": {
+            "windows": 262,
+            "max_q_error_rad": 5.600296133501104e-07,
+            "max_v_error_rad_s": 0.00015100532616106567,
+            "rmse_q_rad": 7.608725319875488e-08,
+            "rmse_v_rad_s": 2.2915461767742824e-05,
+            "actual_domain_bad_windows": 262,
+            "forecast_domain_bad_windows": 262,
+            "actual_domain_bad_window_substeps": 524,
+            "forecast_domain_bad_window_substeps": 524
+          },
+          "warmup": {
+            "windows": 499,
+            "max_q_error_rad": 9.429714774800146e-06,
+            "max_v_error_rad_s": 0.002187617293692712,
+            "rmse_q_rad": 2.1138792672277857e-07,
+            "rmse_v_rad_s": 5.372442027620944e-05,
+            "actual_domain_bad_windows": 48,
+            "forecast_domain_bad_windows": 48,
+            "actual_domain_bad_window_substeps": 96,
+            "forecast_domain_bad_window_substeps": 96
+          }
+        },
+        "fully_in_domain_retrospective_subset": {
+          "windows": 512,
+          "max_q_error_rad": 2.46615110111037e-07,
+          "max_v_error_rad_s": 5.261117834409919e-05,
+          "rmse_q_rad": 1.642485277970886e-08,
+          "rmse_v_rad_s": 4.264741293085122e-06,
+          "actual_domain_bad_windows": 0,
+          "forecast_domain_bad_windows": 0,
+          "actual_domain_bad_window_substeps": 0,
+          "forecast_domain_bad_window_substeps": 0
+        }
+      }
+    },
+    {
+      "substeps": 20,
+      "duration_s": 0.04,
+      "summaries": {
+        "all_complete_windows": {
+          "windows": 891,
+          "max_q_error_rad": 1.920196746452163e-05,
+          "max_v_error_rad_s": 0.0005383537095900587,
+          "rmse_q_rad": 1.5595481191371834e-06,
+          "rmse_v_rad_s": 4.060781692869442e-05,
+          "actual_domain_bad_windows": 388,
+          "forecast_domain_bad_windows": 388,
+          "actual_domain_bad_window_substeps": 7570,
+          "forecast_domain_bad_window_substeps": 7570
+        },
+        "by_start_phase": {
+          "warmup": {
+            "windows": 499,
+            "max_q_error_rad": 1.920196746452163e-05,
+            "max_v_error_rad_s": 0.0005383537095900587,
+            "rmse_q_rad": 1.3845699798525455e-06,
+            "rmse_v_rad_s": 2.854207559651993e-05,
+            "actual_domain_bad_windows": 48,
+            "forecast_domain_bad_windows": 48,
+            "actual_domain_bad_window_substeps": 870,
+            "forecast_domain_bad_window_substeps": 870
+          },
+          "path": {
+            "windows": 139,
+            "max_q_error_rad": 4.808355954732946e-06,
+            "max_v_error_rad_s": 0.00012121465758294005,
+            "rmse_q_rad": 1.435944812274389e-06,
+            "rmse_v_rad_s": 3.174985283041997e-05,
+            "actual_domain_bad_windows": 87,
+            "forecast_domain_bad_windows": 87,
+            "actual_domain_bad_window_substeps": 1640,
+            "forecast_domain_bad_window_substeps": 1640
+          },
+          "stopping": {
+            "windows": 253,
+            "max_q_error_rad": 1.1121706456673763e-05,
+            "max_v_error_rad_s": 0.00036482025859535007,
+            "rmse_q_rad": 1.9109341048445035e-06,
+            "rmse_v_rad_s": 6.0388223103601266e-05,
+            "actual_domain_bad_windows": 253,
+            "forecast_domain_bad_windows": 253,
+            "actual_domain_bad_window_substeps": 5060,
+            "forecast_domain_bad_window_substeps": 5060
+          }
+        },
+        "by_phase_sequence": {
+          "path": {
+            "windows": 130,
+            "max_q_error_rad": 4.7863931076364e-06,
+            "max_v_error_rad_s": 8.085526138278988e-05,
+            "rmse_q_rad": 1.365671007512155e-06,
+            "rmse_v_rad_s": 3.0264261238230948e-05,
+            "actual_domain_bad_windows": 78,
+            "forecast_domain_bad_windows": 78,
+            "actual_domain_bad_window_substeps": 1460,
+            "forecast_domain_bad_window_substeps": 1460
+          },
+          "path->stopping": {
+            "windows": 9,
+            "max_q_error_rad": 4.808355954732946e-06,
+            "max_v_error_rad_s": 0.00012121465758294005,
+            "rmse_q_rad": 2.21489563192992e-06,
+            "rmse_v_rad_s": 4.836099488022574e-05,
+            "actual_domain_bad_windows": 9,
+            "forecast_domain_bad_windows": 9,
+            "actual_domain_bad_window_substeps": 180,
+            "forecast_domain_bad_window_substeps": 180
+          },
+          "stopping": {
+            "windows": 253,
+            "max_q_error_rad": 1.1121706456673763e-05,
+            "max_v_error_rad_s": 0.00036482025859535007,
+            "rmse_q_rad": 1.9109341048445035e-06,
+            "rmse_v_rad_s": 6.0388223103601266e-05,
+            "actual_domain_bad_windows": 253,
+            "forecast_domain_bad_windows": 253,
+            "actual_domain_bad_window_substeps": 5060,
+            "forecast_domain_bad_window_substeps": 5060
+          },
+          "warmup": {
+            "windows": 490,
+            "max_q_error_rad": 1.920196746452163e-05,
+            "max_v_error_rad_s": 0.0005383537095900587,
+            "rmse_q_rad": 1.3971857216334948e-06,
+            "rmse_v_rad_s": 2.8789726017359995e-05,
+            "actual_domain_bad_windows": 48,
+            "forecast_domain_bad_windows": 48,
+            "actual_domain_bad_window_substeps": 870,
+            "forecast_domain_bad_window_substeps": 870
+          },
+          "warmup->path": {
+            "windows": 9,
+            "max_q_error_rad": 4.192608362707517e-07,
+            "max_v_error_rad_s": 2.9181868185465363e-05,
+            "rmse_q_rad": 7.97841284971364e-08,
+            "rmse_v_rad_s": 6.452482412828963e-06,
+            "actual_domain_bad_windows": 0,
+            "forecast_domain_bad_windows": 0,
+            "actual_domain_bad_window_substeps": 0,
+            "forecast_domain_bad_window_substeps": 0
+          }
+        },
+        "fully_in_domain_retrospective_subset": {
+          "windows": 503,
+          "max_q_error_rad": 2.8274685681672906e-06,
+          "max_v_error_rad_s": 8.506697850960577e-05,
+          "rmse_q_rad": 3.1843496850522587e-07,
+          "rmse_v_rad_s": 1.0099250132665105e-05,
+          "actual_domain_bad_windows": 0,
+          "forecast_domain_bad_windows": 0,
+          "actual_domain_bad_window_substeps": 0,
+          "forecast_domain_bad_window_substeps": 0
+        }
+      }
+    },
+    {
+      "substeps": 400,
+      "duration_s": 0.8,
+      "summaries": {
+        "all_complete_windows": {
+          "windows": 701,
+          "max_q_error_rad": 2.652911259071189e-05,
+          "max_v_error_rad_s": 0.000316742384078176,
+          "rmse_q_rad": 7.206809617685929e-06,
+          "rmse_v_rad_s": 2.1950705158050825e-05,
+          "actual_domain_bad_windows": 388,
+          "forecast_domain_bad_windows": 388,
+          "actual_domain_bad_window_substeps": 98352,
+          "forecast_domain_bad_window_substeps": 98402
+        },
+        "by_start_phase": {
+          "warmup": {
+            "windows": 499,
+            "max_q_error_rad": 2.541183230508892e-05,
+            "max_v_error_rad_s": 0.000316742384078176,
+            "rmse_q_rad": 3.7633894520022456e-06,
+            "rmse_v_rad_s": 2.5637045498813327e-05,
+            "actual_domain_bad_windows": 186,
+            "forecast_domain_bad_windows": 186,
+            "actual_domain_bad_window_substeps": 21396,
+            "forecast_domain_bad_window_substeps": 21446
+          },
+          "path": {
+            "windows": 139,
+            "max_q_error_rad": 2.652911259071189e-05,
+            "max_v_error_rad_s": 2.5417336604425557e-05,
+            "rmse_q_rad": 1.2219755095804307e-05,
+            "rmse_v_rad_s": 8.205757822452052e-06,
+            "actual_domain_bad_windows": 139,
+            "forecast_domain_bad_windows": 139,
+            "actual_domain_bad_window_substeps": 51756,
+            "forecast_domain_bad_window_substeps": 51756
+          },
+          "stopping": {
+            "windows": 63,
+            "max_q_error_rad": 2.3321235457007816e-05,
+            "max_v_error_rad_s": 7.137628605606637e-06,
+            "rmse_q_rad": 1.1673745401889037e-05,
+            "rmse_v_rad_s": 2.624579541368595e-06,
+            "actual_domain_bad_windows": 63,
+            "forecast_domain_bad_windows": 63,
+            "actual_domain_bad_window_substeps": 25200,
+            "forecast_domain_bad_window_substeps": 25200
+          }
+        },
+        "by_phase_sequence": {
+          "path->stopping": {
+            "windows": 139,
+            "max_q_error_rad": 2.652911259071189e-05,
+            "max_v_error_rad_s": 2.5417336604425557e-05,
+            "rmse_q_rad": 1.2219755095804307e-05,
+            "rmse_v_rad_s": 8.205757822452052e-06,
+            "actual_domain_bad_windows": 139,
+            "forecast_domain_bad_windows": 139,
+            "actual_domain_bad_window_substeps": 51756,
+            "forecast_domain_bad_window_substeps": 51756
+          },
+          "stopping": {
+            "windows": 63,
+            "max_q_error_rad": 2.3321235457007816e-05,
+            "max_v_error_rad_s": 7.137628605606637e-06,
+            "rmse_q_rad": 1.1673745401889037e-05,
+            "rmse_v_rad_s": 2.624579541368595e-06,
+            "actual_domain_bad_windows": 63,
+            "forecast_domain_bad_windows": 63,
+            "actual_domain_bad_window_substeps": 25200,
+            "forecast_domain_bad_window_substeps": 25200
+          },
+          "warmup": {
+            "windows": 300,
+            "max_q_error_rad": 1.5485959397876226e-06,
+            "max_v_error_rad_s": 4.548115124589086e-06,
+            "rmse_q_rad": 3.0699307068951096e-07,
+            "rmse_v_rad_s": 1.0715284262218682e-06,
+            "actual_domain_bad_windows": 48,
+            "forecast_domain_bad_windows": 48,
+            "actual_domain_bad_window_substeps": 2352,
+            "forecast_domain_bad_window_substeps": 2402
+          },
+          "warmup->path": {
+            "windows": 139,
+            "max_q_error_rad": 1.2264370575998385e-05,
+            "max_v_error_rad_s": 0.00011780797449978788,
+            "rmse_q_rad": 3.1654479646686056e-06,
+            "rmse_v_rad_s": 2.5219680911087e-05,
+            "actual_domain_bad_windows": 78,
+            "forecast_domain_bad_windows": 78,
+            "actual_domain_bad_window_substeps": 6084,
+            "forecast_domain_bad_window_substeps": 6084
+          },
+          "warmup->path->stopping": {
+            "windows": 60,
+            "max_q_error_rad": 2.541183230508892e-05,
+            "max_v_error_rad_s": 0.000316742384078176,
+            "rmse_q_rad": 9.7007947323502e-06,
+            "rmse_v_rad_s": 6.314254382889218e-05,
+            "actual_domain_bad_windows": 60,
+            "forecast_domain_bad_windows": 60,
+            "actual_domain_bad_window_substeps": 12960,
+            "forecast_domain_bad_window_substeps": 12960
+          }
+        },
+        "fully_in_domain_retrospective_subset": {
+          "windows": 313,
+          "max_q_error_rad": 8.087007844270744e-06,
+          "max_v_error_rad_s": 0.00011780797449978788,
+          "rmse_q_rad": 9.076948977564886e-07,
+          "rmse_v_rad_s": 1.1373506758408229e-05,
+          "actual_domain_bad_windows": 0,
+          "forecast_domain_bad_windows": 0,
+          "actual_domain_bad_window_substeps": 0,
+          "forecast_domain_bad_window_substeps": 0
+        }
+      }
+    }
+  ]
+}
