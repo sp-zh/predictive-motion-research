@@ -1,6 +1,6 @@
 # Project resumed by the user
 
-The human explicitly instructed on 2026-10-07: “继续任务”, resuming the project after the saved pause. Finish and verify the interrupted checkpoint backup, then continue Phase5 development and independent review. Preserve all pause history, accepted Phase4 evidence and failures. Phase5 remains unaccepted. The rejected seed91013 protocol v1 must not be run; repair the scorer in a separate version, freeze and independently review the protocol, and verify its checkpoint backup before issuing a scoped simulation-run approval. Later phases require the applicable independent gate. PROJECT_PAUSED.json records the current resumed state; historical pause records remain under reviews/evidence/.
+The user explicitly resumed this project on 2026-10-06: “可以继续项目”. The prior Phase4 pause is lifted. Continue Phase5 and subsequent authorized project work, while preserving all accepted Phase4 evidence and retained failures. Phase5 remains unaccepted until its independent root gate. PROJECT_PAUSED.json records the resumed state; reviews/evidence/project_pause_20261005.json preserves the earlier pause.
 
 # Required milestone backups
 

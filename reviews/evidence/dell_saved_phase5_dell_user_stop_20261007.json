@@ -1,0 +1,22 @@
+{
+  "effective_utc": "2026-10-07T13:08:26.569596+00:00",
+  "user_instruction": "先保存目前进度 并停止任务",
+  "owner_thread_id": "01a114d9-3a3a-7071-b94f-624581000992",
+  "state": "PAUSED_BY_USER",
+  "phase5": "NOT_ACCEPTED",
+  "phase6": "NOT_STARTED",
+  "running_project_processes": [],
+  "seed_91013_raw_exists": false,
+  "seed_91013_run_exists": false,
+  "last_verified_backup_commit": "86aa782fd9ba07d61085658836e0d0ec54ba0174",
+  "pending_root_backup": "protocol v1 rejection and nine retained synthetic false-PASS counterexamples, frozen unexecuted protocol, current pause records",
+  "preserved_previous_state_sha256": {
+    "reviews/evidence/PHASE5_WRITER_STATE_20261007_before_user_stop_20261007.json": "ca3d96b962512b63020a73aeff1d9e1e60e42793f0a4e66fc2c8ea42161dd730",
+    "reviews/evidence/PROJECT_PAUSED_before_user_stop_20261007.json": "08f3fbc722a1ff33f87f7dc623811aede256377385b91aa72693a986514a9df8"
+  },
+  "archive_91013_protocol_sha256": "7e400d750fe45b61b05b45b7be304f02fe4a37fb1677f94beb49ee98598ac9fc",
+  "mac_archive_copy": "results/phase5-executor-checkpoints-01a114d9/public-validation-protocol-91013",
+  "archive_copy_verification": "previously SHA-256 and READY payload verified on Dell and Mac",
+  "process_check_utc": "2026-10-07T13:08:41.042877+00:00",
+  "process_check_scope": "Executable and first arguments; SSH inspection shell excluded"
+}

@@ -1,0 +1,34 @@
+{
+  "date": "2026-10-07",
+  "decision": "DO_NOT_APPROVE_PREPARED_PROTOCOL_V1",
+  "phase5_acceptance": "PENDING",
+  "physical_run": "NOT_EXECUTED_NO_APPROVAL_FILE",
+  "producer_protocol_archive": {
+    "sha256": "7e400d750fe45b61b05b45b7be304f02fe4a37fb1677f94beb49ee98598ac9fc",
+    "bytes": 88709,
+    "members": 16,
+    "Mac": "/Users/uot/Documents/ChatGPT/ros/results/phase5-executor-checkpoints-01a114d9/public-validation-protocol-91013/public-validation-91013-protocol.tar.gz",
+    "Dell": "/mnt/d/CodexTransfer/projects/predictive_motion/checkpoints/public-validation-91013-protocol-20261007/public-validation-91013-protocol.tar.gz",
+    "all14payloads_root_verified_on_both": true
+  },
+  "root_archive": {
+    "sha256": "dd5af71b0eb866c5e7afdcb45a2226417cdbaefe1c90089182f8d892f0098ef8",
+    "bytes": 63667,
+    "members": 127,
+    "all_payload_hashes_root_verified": true,
+    "scope": "Nine synthetic NoPlant scorer-gate falsePASS counterexamples and rejected unexecuted protocol; no physical/model trial",
+    "Mac": "/Users/uot/Documents/ChatGPT/ros/transfer/outgoing/phase5-protocol-91013-v1-root-rejection-20261007",
+    "Dell": "/mnt/d/CodexTransfer/projects/predictive_motion/checkpoints/root-protocol-91013-v1-rejection-20261007",
+    "verified_copies": "Mac and Dell; all126payloadSHA; D .part renamed after verification; READY last"
+  },
+  "protocol_sha256": "66e3ea6665f573ef729c0d1504499f0773e2f8d6de6157c3d5f6132bb075eb40",
+  "frozen_sha256": "ef9d824fb7fff4218cf24e3c22f8eb8f7d15977c35ea2ef91fb340aef34a8227",
+  "small_source_manifest_sha256": "c4689e19fdb4a42d2af08da322581a57fdf6c4924a28b1d2dea6fd6ae115c071",
+  "all248live_and_immutable_Dcache_inputs_root_verified": true,
+  "referenced_bytes": 230134244,
+  "visual_root_inspected": "Protocol-only planned timeline, not actual run",
+  "synthetic_cases": 9,
+  "source_and_protocol_retained_unchanged": true,
+  "large_evidence_not_in_Git": true,
+  "project_status": "PAUSED_BY_USER_2026-10-07"
+}

@@ -213,6 +213,13 @@ stay unchanged. The19 existing TRAIN windows match v1 exactly. This does not add
 physical prediction accuracy or unseen validation evidence.
 [Independent contract checks](../reviews/evidence/public_coupled_v2_reference_root_review_20261007.md).
 
+![Unexecuted seed91013 protocol plan](../figures/phase5/phase5_public_validation_91013_protocol.png)
+
+This is a planned timeline, with an unknown final stop duration. Root rejected
+this first protocol's scorer after synthetic false-PASS counterexamples; no
+new physical run has occurred. The diagram supplies no measured motion or
+performance result. [Rejection and required revision](../reviews/evidence/public_validation_91013_protocol_v1_root_review_20261007.md).
+
 ## Downloadable 3D models
 
 | Asset | Format / units | Purpose |

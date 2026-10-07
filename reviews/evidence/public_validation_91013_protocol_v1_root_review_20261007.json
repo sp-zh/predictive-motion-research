@@ -1,0 +1,188 @@
+{
+  "decision": "DO_NOT_APPROVE_PREPARED_PROTOCOL_V1",
+  "scope": "Execution of unchanged scorer on synthetic gate CSVs with a declared no-plant identity stub; not actual collector output or predictor accuracy evidence",
+  "source_sha256": "4a44013e71fc2c97387aefa3cdd889c76d75a1e4b3b770581b1babf0882598d4",
+  "scorer_sha256": "2f409c6f0682412a0f6c07a4a9678a9e82bbe79824ba78f4ec56882b64c2cce3",
+  "runner_sha256": "67b3f38ac5813d40d2a60c00eabcebb25ff5e5e47097edeb2f26f92e2262799c",
+  "protocol_sha256": "66e3ea6665f573ef729c0d1504499f0773e2f8d6de6157c3d5f6132bb075eb40",
+  "original_prepared_frozen_sha256": "ef9d824fb7fff4218cf24e3c22f8eb8f7d15977c35ea2ef91fb340aef34a8227",
+  "original_prelisted_inputs": 248,
+  "cases": [
+    {
+      "name": "synthetic_control",
+      "exit_code": 0,
+      "gate": "PASS_FRESH_CURATED_CONDITIONAL_TRACE_ONLY",
+      "phase_rows": {
+        "reference_motion": 42
+      },
+      "active_windows": [
+        21,
+        21,
+        12,
+        0
+      ],
+      "warmup_failed_windows": 0,
+      "reported_failures": 0,
+      "max_SI": 0.0,
+      "nonfinite_RMSE": false,
+      "sidecar_hash_mismatches": []
+    },
+    {
+      "name": "empty_trace",
+      "exit_code": 0,
+      "gate": "PASS_FRESH_CURATED_CONDITIONAL_TRACE_ONLY",
+      "phase_rows": {},
+      "active_windows": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "warmup_failed_windows": 0,
+      "reported_failures": 0,
+      "max_SI": 0.0,
+      "nonfinite_RMSE": false,
+      "sidecar_hash_mismatches": []
+    },
+    {
+      "name": "warmup_only",
+      "exit_code": 0,
+      "gate": "PASS_FRESH_CURATED_CONDITIONAL_TRACE_ONLY",
+      "phase_rows": {
+        "warmup": 42
+      },
+      "active_windows": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "warmup_failed_windows": 0,
+      "reported_failures": 0,
+      "max_SI": 0.0,
+      "nonfinite_RMSE": false,
+      "sidecar_hash_mismatches": []
+    },
+    {
+      "name": "future_endpoint_NaN",
+      "exit_code": 0,
+      "gate": "PASS_FRESH_CURATED_CONDITIONAL_TRACE_ONLY",
+      "phase_rows": {
+        "reference_motion": 42
+      },
+      "active_windows": [
+        21,
+        21,
+        12,
+        0
+      ],
+      "warmup_failed_windows": 0,
+      "reported_failures": 0,
+      "max_SI": 0.0,
+      "nonfinite_RMSE": true,
+      "sidecar_hash_mismatches": []
+    },
+    {
+      "name": "warmup_failure",
+      "exit_code": 0,
+      "gate": "PASS_FRESH_CURATED_CONDITIONAL_TRACE_ONLY",
+      "phase_rows": {
+        "warmup": 2,
+        "reference_motion": 40
+      },
+      "active_windows": [
+        20,
+        20,
+        11,
+        0
+      ],
+      "warmup_failed_windows": 3,
+      "reported_failures": 3,
+      "max_SI": 0.0,
+      "nonfinite_RMSE": false,
+      "sidecar_hash_mismatches": []
+    },
+    {
+      "name": "QP_row_NaN_after_capture_hash",
+      "exit_code": 0,
+      "gate": "PASS_FRESH_CURATED_CONDITIONAL_TRACE_ONLY",
+      "phase_rows": {
+        "reference_motion": 42
+      },
+      "active_windows": [
+        21,
+        21,
+        12,
+        0
+      ],
+      "warmup_failed_windows": 0,
+      "reported_failures": 0,
+      "max_SI": 0.0,
+      "nonfinite_RMSE": false,
+      "sidecar_hash_mismatches": [
+        "all_qp_rows.csv"
+      ]
+    },
+    {
+      "name": "API_error_nonzero",
+      "exit_code": 0,
+      "gate": "PASS_FRESH_CURATED_CONDITIONAL_TRACE_ONLY",
+      "phase_rows": {
+        "reference_motion": 42
+      },
+      "active_windows": [
+        21,
+        21,
+        12,
+        0
+      ],
+      "warmup_failed_windows": 0,
+      "reported_failures": 0,
+      "max_SI": 0.0,
+      "nonfinite_RMSE": false,
+      "sidecar_hash_mismatches": []
+    },
+    {
+      "name": "failed_attempt_missing_row_group",
+      "exit_code": 0,
+      "gate": "PASS_FRESH_CURATED_CONDITIONAL_TRACE_ONLY",
+      "phase_rows": {
+        "reference_motion": 42
+      },
+      "active_windows": [
+        21,
+        21,
+        12,
+        0
+      ],
+      "warmup_failed_windows": 0,
+      "reported_failures": 0,
+      "max_SI": 0.0,
+      "nonfinite_RMSE": false,
+      "sidecar_hash_mismatches": []
+    },
+    {
+      "name": "duplicate_attempt_overwritten",
+      "exit_code": 0,
+      "gate": "PASS_FRESH_CURATED_CONDITIONAL_TRACE_ONLY",
+      "phase_rows": {
+        "reference_motion": 42
+      },
+      "active_windows": [
+        21,
+        21,
+        12,
+        0
+      ],
+      "warmup_failed_windows": 0,
+      "reported_failures": 0,
+      "max_SI": 0.0,
+      "nonfinite_RMSE": false,
+      "sidecar_hash_mismatches": []
+    }
+  ],
+  "no_root_approval_file_created": true,
+  "no_collector_executed": true,
+  "unchanged_scorer_source_executed": true,
+  "frozen_scorer_model_was_stubbed_for_gate_isolation": true
+}

@@ -1,0 +1,42 @@
+#!/usr/bin/env python3
+"""Prepare a locked development protocol or execute one explicitly root-approved run."""
+import argparse,datetime,hashlib,importlib,json,os,subprocess,sys,time
+from pathlib import Path
+import yaml
+
+p=Path('/home/codextransfer/predictive_motion');epoch='public-coupled-v2-development-validation-91013';packet=p/'results/phase5/development/public-coupled-validation-91013-protocol-v1';run=p/'results/phase5/development'/epoch;raw=Path('/mnt/d/CodexTransfer/projects/predictive_motion/phase5/raw')/epoch;sha=lambda f:hashlib.sha256(Path(f).read_bytes()).hexdigest()
+parser=argparse.ArgumentParser(description=__doc__);parser.add_argument('mode',choices=['prepare','run']);parser.add_argument('--root-approval-file',type=Path);a=parser.parse_args()
+cfg=p/'config/phase5_development/public_coupled_validation_91013.yaml';collector=p/'build-servo-safe-reference-v1/servo_safe_reference_cone_fixture';model=p/'scripts/phase5/public_coupled_servo_v2.py';constants=p/'results/phase5/development/public-coupled-servo-v1-training/public_constants.json';scorer=p/'scripts/phase5/score_public_coupled_validation_91013.py'
+if a.mode=='prepare':
+ if packet.exists() or run.exists() or raw.exists():raise ValueError('refuse protocol/evidence overwrite')
+ packet.mkdir()
+ oldcfg=yaml.safe_load((p/'config/phase5_development/servo_validation_safe_reference_v3.yaml').read_text())
+ consumed=['control_dt_s','physics_substep_s','collision_safe_m','rotation_length_m','validation_frequency_base_hz','validation_frequency_step_hz','validation_phase_step_rad','accepted_reference_csv','identification_duration_s','identification_amplitude_rad','command_velocity_rad_s','command_acceleration_rad_s2','command_jerk_rad_s3','position_margin_rad','qp_stopping_tolerance']
+ current=yaml.safe_load(cfg.read_text());assert all(current[k]==oldcfg[k] for k in consumed)
+ legacy=p/'results/phase5/development/servo-safe-reference-v3-validation/frozen.json';public=p/'results/phase5/development/public-coupled-servo-v2-reference-contract/frozen.json';files={};lineage={}
+ for name,f in [('verified_collector',legacy),('public_v2',public)]:
+  d=json.loads(f.read_text());lineage[name]={'path':str(f),'sha256':sha(f),'listed_input_count':len(d['files'])}
+  for path,h in d['files'].items():assert sha(path)==h;files[path]=h
+  files[str(f)]=sha(f)
+ for f in [Path(__file__),cfg,scorer,model,constants,collector,p/'results/phase5/development/servo-safe-reference-v1/reference_identity.json']:
+  files[str(f)]=sha(f)
+ deps=subprocess.check_output(['ldd',str(collector)],text=True);(packet/'collector_native_dependencies.txt').write_text(deps)
+ if 'not found' in deps:raise ValueError('collector native dependency missing')
+ for line in deps.splitlines():
+  f=next((Path(x) for x in line.split() if x.startswith('/') and Path(x).is_file()),None)
+  if f:files[str(f)]=sha(f)
+ protocol={'status':'PREPARED_NOT_RUN_REQUIRES_INDEPENDENT_ROOT_APPROVAL','seed':91013,'purpose':'One fresh development reset/run of known curated accepted-velocity reference; not new waveform, untouched final holdout, full task success or250Hz claim','collector':str(collector),'collector_legacy_method_argument':'predictive (fixture CLI compatibility only, not main MPC)','collector_scenario':'servo_validation','collector_configuration':str(cfg),'public_model_source':str(model),'public_model_constants':str(constants),'calibration':False,'new_physical_model_parameters':False,'reference_input':current['accepted_reference_csv'],'reference_scope':'Previously seen moving-stop accepted inputs; physical states are not reference inputs. New seed/reset; guarded w integrates new c, no position catch-up or rejected-point reuse.','expected_cycles_if_success':{'warmup':500,'reference_motion':195,'reference_recorded_stop':233,'hold':1572,'new_shared_stop':1},'movement_and_reference_braking_s':1.712,'stop_scope':'Shared stop after long hold, not moving-state stop challenge','original_solver_policy':{'absolute_relative_tolerance':1e-12,'native_SOLVED_only':True,'original_SI_tolerance':1e-7,'max_iterations':4000,'solver_age_stop_budget_s':.05},'original_command_limits':{'velocity_rad_s':.0625,'acceleration_rad_s2':1.,'jerk_rad_s3':20.,'position_margin_rad':.005},'original_physical_guards':'Frozen phase4 mapped velocity/joint bounds; actual acceleration5rad/s² and jerk500rad/s³; contacts/trueclearance checks from same collector; no changed robot/plant/geometry','collision_safe_m':.005,'candidate_guard':'Both tracking and stop coupled original QP/nonlinear measured-and-accepted target checks and actual candidate/history signed-speed continuation; no blind clipping; failed native/wrapper point never used','all_raw_retained':True,'matrix_capture':'Actual allA/l/u and native/API status,candidate,maxSI,row,timing; unchangedH/g are source+reference-defined, not directly exported per accepted solve; failure fullH/g snapshots remain.','window_contract':'Every complete4ms-aligned nonwarmup start scored at2/4/40/800ms; initial physical measurement once, futureacceptedtargets are conditional inputs only; futurephysicalq/v only endpoint scores. Warmup separately retained; any failure/regime violation prevents PASS.','horizons':[{'substeps':n,'q_limit_rad':1e-6 if n<3 else 1e-4,'v_limit_rad_s':1e-4 if n<3 else 1e-3} for n in [1,2,20,400]],'strata':'Motion/referencebraking/hold/sharedstop start and intersecting phase window counts explicit; no hold-only sample interpreted as broad excitation','regime':'Fixed FR3 public_v2 supported reference profile and constants; contacts/limits/equalities/unknown/applied forces outside assumptions are errors/ineligible, not silently deleted; actual parameter identity and fixture source must match frozen inputs','acceptance':'Complete collector/guards+sharedstop AND allactive modelgates; independent root gate still required; no uniform accuracy-domain/controller/Phase5 orPhase6 claim','input_lineage':lineage}
+ (packet/'protocol.json').write_text(json.dumps(protocol,indent=2)+'\n');files[str(packet/'protocol.json')]=sha(packet/'protocol.json')
+ freeze={'prepared_before_any_physical_run_utc':datetime.datetime.now(datetime.timezone.utc).isoformat(),'seed':91013,'files':files,'phase5_status':'PENDING','no_physical_execution':True};(packet/'frozen.json').write_text(json.dumps(freeze,indent=2)+'\n')
+ sys.path.insert(0,str(p/'scripts/phase5'));from materialize_identity import materialize
+ materialize(packet/'frozen.json')
+ readiness={'status':'READY_FOR_ROOT_PROTOCOL_REVIEW_ONLY','no_new_raw_exists':not raw.exists(),'no_run_dir_exists':not run.exists(),'source_params_consumed_equal_verified_v3':True,'inputs_verified':len(files),'frozen_sha256':sha(packet/'frozen.json'),'protocol_sha256':sha(packet/'protocol.json'),'collector_sha256':sha(collector),'scorer_sha256':sha(scorer),'phase5_accepted':False};(packet/'readiness.json').write_text(json.dumps(readiness,indent=2)+'\n');print(json.dumps(readiness,indent=2));raise SystemExit(0)
+if a.root_approval_file is None:raise ValueError('explicit independent root approval file required before physical execution')
+freeze=json.loads((packet/'frozen.json').read_text());approval=json.loads(a.root_approval_file.read_text())
+if approval.get('decision')!='APPROVED_SINGLE_PROSPECTIVE_RUN' or approval.get('seed')!=91013 or approval.get('frozen_sha256')!=sha(packet/'frozen.json'):raise ValueError('root approval does not authorize this exact prepared protocol')
+assert all(sha(f)==h for f,h in freeze['files'].items())
+if run.exists() or raw.exists():raise ValueError('refuse physical evidence overwrite/rerun')
+run.mkdir();env=dict(os.environ);env['LD_LIBRARY_PATH']=str(p/'.vendor/mujoco-3.3.7/lib')+':'+env.get('LD_LIBRARY_PATH','');argv=[str(collector),str(p),str(cfg),'predictive','servo_validation','91013',str(raw)];start=time.monotonic()
+with (run/'stdout.log').open('x') as out,(run/'stderr.log').open('x') as err:code=subprocess.call(argv,cwd=p,env=env,stdout=out,stderr=err)
+execution={'argv':argv,'return_code':code,'wall_s':time.monotonic()-start,'prepared_frozen_sha256':sha(packet/'frozen.json'),'root_approval_path':str(a.root_approval_file),'root_approval_sha256':sha(a.root_approval_file),'source_unchanged':all(sha(f)==h for f,h in freeze['files'].items()),'raw_files':{f.name:sha(f) for f in raw.rglob('*') if f.is_file()}}
+(run/'execution.json').write_text(json.dumps(execution,indent=2)+'\n');print(json.dumps(execution,indent=2));raise SystemExit(code)

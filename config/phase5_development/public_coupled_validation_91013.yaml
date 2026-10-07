@@ -1,0 +1,45 @@
+control_dt_s: 0.004
+physics_substep_s: 0.002
+collision_safe_m: 0.005
+rotation_length_m: 0.3
+validation_frequency_base_hz: 0.5
+validation_frequency_step_hz: 0.067
+validation_phase_step_rad: 0.19
+accepted_reference_csv: /home/codextransfer/predictive_motion/results/phase5/development/servo-safe-reference-v1/accepted_target_increments.csv
+identification_duration_s: 8.0
+identification_amplitude_rad: 0.008
+command_velocity_rad_s: 0.0625
+command_acceleration_rad_s2: 1.0
+command_jerk_rad_s3: 20.0
+position_margin_rad: 0.005
+qp_stopping_tolerance: 1.0e-12
+schema: 1
+scope: Prepared single fresh development seed91013; known curated velocity reference
+  and fixed public_v2 conditional scorer, no mainMPC/calibration/untouchedfinalholdout
+validation_seed: 91013
+execution_mode: development_reference_fixture
+root_review_required_before_run: true
+solver_acceptance_tolerance: 1.0e-07
+solver_max_iterations: 4000
+solver_wall_limit_s: 0.05
+max_state_age_s: 0.05
+executed_acceleration_rad_s2: 5.0
+executed_jerk_rad_s3: 500.0
+collector_physical_limit_source: Frozen config/phase4.yaml + robot/MJCF; fixture actual
+  guards unchanged
+reference_request_mode: Direct known w_reference; c integrates actual guarded w; no
+  position-error catchup; retained failed point never used
+phase_roster:
+  warmup_cycles: 500
+  reference_motion_cycles: 195
+  reference_recorded_stop_cycles: 233
+  hold_until_cycle: 2500
+  new_shared_stop_after_cycle: 2500
+legacy_unused_wave_parameters: Frequency/phase/amplitude/rotation_length are constructor
+  compatibility fields, not the executed input waveform or model accuracy certificate
+predictor_source: /home/codextransfer/predictive_motion/scripts/phase5/public_coupled_servo_v2.py
+predictor_constants: /home/codextransfer/predictive_motion/results/phase5/development/public-coupled-servo-v1-training/public_constants.json
+criterion: Collector/recordedguards+hold-end sharedstop and allfull2/4/40/800ms activewindows;
+  original short1e-6rad/1e-4rad_s,long1e-4rad/1e-3rad_s; allhold/stop/failures retained
+nonclaims: No moving-stop challenge, complete task, uniformaccuracybox,250Hz,mainMPC,Phase5acceptance
+  orPhase6
