@@ -5,6 +5,42 @@ Phase 0–4 component gates have passed; Phase 5 awaits independent acceptance.
 These assets illustrate the stated scope and do not establish final research
 performance or physical hardware safety.
 
+## Task-completion videos
+
+Three curated successful Phase 4 inspection trials, rendered from saved measured
+joint states using MuJoCo 3.3.7 and the pinned scene assets. Each clip is 24 seconds
+at 720p/30 fps and 1x simulated-time speed. It includes warmup, path following and
+settling; the mint curve is the reference-path overlay. These are recorded-state
+replays, not fresh experiments or wall-clock real-time demonstrations.
+
+| Method | Video | Recorded final position error |
+|---|---|---:|
+| Reactive QP | [Watch / download](../videos/phase4-reactive-qp-81011.mp4) | 0.00471 mm |
+| Fixed DLS with common constraint projection | [Watch / download](../videos/phase4-fixed-dls-81011.mp4) | 0.00514 mm |
+| Adaptive DLS with common constraint projection | [Watch / download](../videos/phase4-adaptive-dls-81011.mp4) | 0.00514 mm |
+
+![Reactive QP task replay](../videos/phase4-reactive-qp-81011-middle.jpg)
+
+![Fixed DLS task replay](../videos/phase4-fixed-dls-81011-middle.jpg)
+
+![Adaptive DLS task replay](../videos/phase4-adaptive-dls-81011-middle.jpg)
+
+Selection: completed evaluation seed 81011 from each of these methods. Both DLS
+methods had lower peak position error on 81011 than on 81012; the QP 81012 trial
+failed. All failures remain retained, including Servo halts. These curated clips
+do not imply superiority or replace the [full Phase 4 review](../reviews/phase_4_review.md).
+Clearance overlays report the shared controller model rather than a physical
+safety certificate. Replay uses the original frozen records, which precede the
+separately verified online position-monitor repair.
+
+Provenance and hashes:
+[QP](../videos/phase4-reactive-qp-81011.json),
+[fixed DLS](../videos/phase4-fixed-dls-81011.json),
+[adaptive DLS](../videos/phase4-adaptive-dls-81011.json).
+The [renderer](../scripts/render_task_video.py) samples nearest saved post-step
+states and runs forward geometry only; it does not simulate new motion. Raw
+recordings remain in the verified local Phase 4 evidence archive.
+
 ## Inspection assembly
 
 ![Generated inspection tool and fixture](../figures/inspection_cad.png)

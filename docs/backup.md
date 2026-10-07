@@ -37,3 +37,7 @@ each milestone. Keep the gallery and model index in [showcase.md](showcase.md)
 current, with units and evidence scope. Existing images in `figures/` and models
 in `cad/generated/` are already committed. Host-specific generated simulation
 XML and upstream dependency caches remain excluded.
+
+Small task-completion MP4s, thumbnails and provenance under `videos/` are also
+part of milestone backups. Select successful accurate/smooth runs for display,
+record the selection criteria, and preserve the complete research outcomes.

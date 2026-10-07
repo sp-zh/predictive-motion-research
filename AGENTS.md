@@ -34,3 +34,12 @@ and distinguish development diagnostics from accepted research results.
 Rendered or illustrative assets do not establish controller performance.
 Large assets require a suitable storage plan rather than silently omitting them
 or committing build caches. Preserve upstream model attribution and licenses.
+
+The user also requests several videos of the arm completing its task, favoring
+successful, accurate and smooth runs for presentation. Select a few verified
+successful cases using declared criteria, render actual recorded motion or
+capture actual execution, and back up small MP4s, thumbnails and provenance in
+videos/. Label replay, method, seed, playback speed and acceptance scope. Keep
+all failures in the research evidence and disclose showcase selection; curated
+clips do not establish a research ranking. Add accepted Phase 5 task videos when
+successful complete trajectories become available.

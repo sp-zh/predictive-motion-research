@@ -1,0 +1,210 @@
+{
+  "scope": "Curated successful Phase 4 diagnostic replay; not a new trial or Phase 5 result",
+  "selection": "Three methods; completed evaluation seed 81011 selected for lower peak position error than seed 81012. QP seed 81012 failed and remains retained.",
+  "method": "reactive_qp",
+  "seed": 81011,
+  "summary": {
+    "method": "reactive_qp",
+    "seed": "81011",
+    "split": "evaluation",
+    "completed": "true",
+    "failure": "",
+    "rows": "12000",
+    "final_position_m": "4.7095088151478037e-06",
+    "final_rotation_rad": "7.0408309966259902e-06",
+    "minimum_true_clearance_m": "0.015411071507714692",
+    "peak_position_m": "0.0031975065177317925",
+    "interventions": "5486",
+    "max_state_age_s": "0.035336063000000001",
+    "max_fk_error": "1.9669176664723072e-15",
+    "max_frame_error": "1.5148475549927675e-15"
+  },
+  "source_csv": "results/phase4-export/predictive_motion/results/phase4/raw/frozen-v4/evaluation/reactive_qp_81011.csv",
+  "source_csv_sha256": "c9465ac68217b24cf6b710044fe4840866981042bc6829afb824b882e358ff8e",
+  "source_summary_sha256": "411ce530816cf927020b51e07780e577cf53ada2976aa43b0406e333134c598b",
+  "original_evidence_archive_sha256": "1e3ec6da7a8fb60a090aafa5d78405643624be6e4067c029af197d8dd5f17303",
+  "upstream_commit": "4d038b3feae26ec82b46a4d586379114012a8ac7",
+  "upstream_asset_manifest_sha256": "f3a72b9e0f72c56fa0a6a653a7e32fa5b235781e9cd2ce8fcf65fae243867c16",
+  "render_script_sha256": "62373ca15f1bce94c4a56ce2cf84095cd88f55d9d3b8181680aee6a99fb02767",
+  "scene_manifest": {
+    "units": "m",
+    "status": "scene generated; load/TCP/contact checks pending",
+    "robot_commit": "4d038b3feae26ec82b46a4d586379114012a8ac7",
+    "simulation_assumptions": {
+      "schema_version": 1,
+      "tool_mount_parent": "fr3_link7",
+      "tool_mount_translation": [
+        0.0,
+        0.0,
+        0.107
+      ],
+      "tool_mass_kg": 0.45,
+      "tool_com_m": [
+        0.0,
+        0.0,
+        0.12
+      ],
+      "tool_diagonal_inertia_kg_m2": [
+        0.003,
+        0.003,
+        0.00015
+      ],
+      "inertia_provenance": "declared simulation assumption; not measured hardware or calibrated from overlapping CAD compounds"
+    },
+    "collision_primitives": [
+      {
+        "name": "tool_adapter",
+        "body": "inspection_tool",
+        "type": "cylinder",
+        "local_position_m": [
+          0,
+          0,
+          0.006
+        ],
+        "size_m": [
+          0.035,
+          0.006
+        ]
+      },
+      {
+        "name": "tool_shaft",
+        "body": "inspection_tool",
+        "type": "cylinder",
+        "local_position_m": [
+          0,
+          0,
+          0.162
+        ],
+        "size_m": [
+          0.015,
+          0.15
+        ]
+      },
+      {
+        "name": "tool_sensor",
+        "body": "inspection_tool",
+        "type": "box",
+        "local_position_m": [
+          0,
+          0,
+          0.037000000000000005
+        ],
+        "size_m": [
+          0.0225,
+          0.02,
+          0.025
+        ]
+      },
+      {
+        "name": "tool_tip",
+        "body": "inspection_tool",
+        "type": "sphere",
+        "local_position_m": [
+          0.0,
+          0.0,
+          0.32
+        ],
+        "size_m": [
+          0.008
+        ]
+      },
+      {
+        "name": "tool_bracket",
+        "body": "inspection_tool",
+        "type": "box",
+        "local_position_m": [
+          0.0375,
+          0,
+          0.029500000000000002
+        ],
+        "size_m": [
+          0.015,
+          0.004,
+          0.0175
+        ]
+      },
+      {
+        "name": "fixture_base",
+        "body": "inspection_fixture",
+        "type": "box",
+        "local_position_m": [
+          0.82,
+          -0.03,
+          0.2625
+        ],
+        "size_m": [
+          0.12,
+          0.15,
+          0.0125
+        ]
+      },
+      {
+        "name": "fixture_left",
+        "body": "inspection_fixture",
+        "type": "box",
+        "local_position_m": [
+          0.82,
+          -0.08,
+          0.375
+        ],
+        "size_m": [
+          0.12,
+          0.0125,
+          0.1
+        ]
+      },
+      {
+        "name": "fixture_right",
+        "body": "inspection_fixture",
+        "type": "box",
+        "local_position_m": [
+          0.82,
+          0.020000000000000007,
+          0.375
+        ],
+        "size_m": [
+          0.12,
+          0.0125,
+          0.1
+        ]
+      },
+      {
+        "name": "fixture_rear",
+        "body": "inspection_fixture",
+        "type": "box",
+        "local_position_m": [
+          0.84,
+          0.1325,
+          0.375
+        ],
+        "size_m": [
+          0.1,
+          0.0125,
+          0.1
+        ]
+      }
+    ],
+    "inputs": {
+      ".vendor/menagerie/franka_fr3/fr3.xml": "8f33d865ea6fb9596bea5cc242c8de43dbf3dd372e323b44e229e7840fecd47d",
+      ".vendor/menagerie/franka_fr3/scene.xml": "8f17f883872d6c95b63239bd82ca4374771deca9949b8fc9577356209f662ebe",
+      "cad/source/inspection.json": "57994e13cadafecd0a58d390186f9ad701224d4391399a01c345ae17d2ed6d55",
+      "cad/source/simulation.json": "82853b43747678228fce3c036e5a0f0e841f29ae48aa7ab94b55e6daf6ffcd8f",
+      "cad/generated/tool_visual.stl": "ab03c2aa740426b3d2286d065a72ad5e25e7aef357f917225476caff24a4315a",
+      "cad/generated/fixture_visual.stl": "d8e0e8d5083a67cce184725418189cb7c65772679128c09800a365c1becfd78b"
+    }
+  },
+  "mujoco_version": "3.3.7",
+  "fps": 30,
+  "frames": 720,
+  "duration_s": 24.0,
+  "speed": 1,
+  "render_state": "nearest saved q_post at each frame, mj_forward only; no control or physics stepping",
+  "max_sampling_time_error_s": 0.002,
+  "camera": {
+    "azimuth": 135,
+    "distance": 1.5,
+    "elevation": -23
+  },
+  "video_sha256": "96b1257cc44ce372aed4258ad1f5e07685601eae33b4b77084640c57df5e015a",
+  "video_bytes": 986766
+}
