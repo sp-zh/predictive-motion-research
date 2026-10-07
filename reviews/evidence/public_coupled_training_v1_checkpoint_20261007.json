@@ -1,0 +1,36 @@
+{
+  "date": "2026-10-07",
+  "phase5_acceptance": "PENDING",
+  "work_unit": "Uncalibrated public coupled TRAIN-only prototype and root audit",
+  "producer_archive": {
+    "sha256": "a3ac77be5be01f4bc3482ceb0422a940bcabaebc5c76de5d00bfcfb55b0315b4",
+    "bytes": 31994740,
+    "members": 80,
+    "all78declared_members_root_verified_on_Mac_and_D": true,
+    "Mac": "/Users/uot/Documents/ChatGPT/ros/results/phase5-executor-checkpoints-01a114d9/public-coupled-training-v1/final/public-coupled-servo-v1-training-final.tar.gz",
+    "Dell": "/mnt/d/CodexTransfer/projects/predictive_motion/checkpoints/public-coupled-servo-v1-training-final-20261007/public-coupled-servo-v1-training-final.tar.gz"
+  },
+  "root_archive": {
+    "sha256": "f1d32bfc2179dc8c89480ac42db854dff2bc1f534f8a03f2c891fa2138ea5ab9",
+    "bytes": 47655,
+    "members": 23,
+    "scope": "Selected independent public coupled TRAIN forecasts, whole-window roster and post-run source/asset closure; no fresh validation/maincontroller/Phase5 acceptance",
+    "all_member_hashes_root_verified": true,
+    "Mac": "/Users/uot/Documents/ChatGPT/ros/transfer/outgoing/phase5-public-coupled-training-root-20261007",
+    "Dell": "/mnt/d/CodexTransfer/projects/predictive_motion/checkpoints/root-public-coupled-training-20261007",
+    "verified_copies": "Mac/D all22payloadSHA; D verified .part renamed, READY last"
+  },
+  "small_source_manifest_FINAL_sha256": "fa5fb637d9fa1a5821a915fc1a550d454bdb84d4b3342b10fae425cd80206496",
+  "model_source_sha256": "3e21e46ffc65e9ba4150b21ea26a8c63fb415d2e86c07b6465040e08cc494080",
+  "fixed_TRAIN_raw_sha256": "ab9d14efa1a5886c0683db25345f24d5cacd55343e2768eb60536fa180a11dce",
+  "limits": [
+    "No calibration or fresh holdout/controller accuracy claim.",
+    "Independent numeric recomputation covers19fixedwindows; full roster/gates counted independently.",
+    "Currentratio1 numerically valid; genericBfactor defect retained for separate correction.",
+    "Original40pre-scan was incomplete;40post-run asset identities match original176TRAIN freeze/cache, root re-read canonical/cache bytes. NumPy/BLAS post identity is not backdated.",
+    "Failed symlink publication e0b6... retained NOT_READY, verified SHA/member types but not extracted.",
+    "Large archives are local/D backups, not uploaded toGit."
+  ],
+  "visual_root_inspected": true,
+  "failed_publication_dell_sha_root_verified": true
+}

@@ -193,6 +193,18 @@ Root reruns the full oracle with exact JSON equality. The chart is public-model
 algebra; its synthetic forces are not physical actuator commands or prediction
 accuracy evidence. [Oracle, derivatives and threshold scope](../reviews/evidence/coupled_friction_box_root_oracle_20261007.md).
 
+![Public coupled model training checks](../figures/phase5/phase5_public_coupled_training_v1.png)
+
+The uncalibrated public coupled model passes every complete active TRAIN91011
+forecast window under the recorded accepted targets. Original limits and
+stopping/crossing windows are retained. Root independently recomputes19 fixed
+windows and verifies the full window roster; most reported errors are near
+roundoff. This is training-side prediction evidence, with all frozen damping
+ratios equal1. Fresh validation, transition derivatives and main-controller
+integration remain pending.
+[Independent mathematics and causal scope](../reviews/evidence/public_coupled_training_v1_math_audit_20261007.md)
+and [subsequent asset preservation verification](../reviews/evidence/public_coupled_training_v1_post_closure_20261007.json).
+
 ## Downloadable 3D models
 
 | Asset | Format / units | Purpose |

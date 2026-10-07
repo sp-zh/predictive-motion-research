@@ -22,6 +22,14 @@ The public soft-friction local surrogate passes the same error limits on a prosp
 
 Evidence and scope:
 
+The uncalibrated public coupled prototype now passes the original 2/4/40/800ms limits on every complete active TRAIN91011 window: 2190/2190/2181/1991 windows, plus500 warmup-start windows at each horizon. All stopping/crossing windows remain; there are no solver or scoring-regime failures. Reported maxima are near floating-point roundoff. Root independently reconstructs19 fixed windows with a separate coordinate friction solver, checks five actual force QPs by exhaustive active-set enumeration, and independently counts the complete raw-window roster. These are training-side conditional-input checks, not fresh validation, uniform model accuracy, an exact-engine claim or main-controller acceptance.
+
+The v1 prototype's generic positive-solref B expression has an extra damping-ratio factor. All currently frozen ratios equal1, so the tested baseline values are unchanged; other ratios remain unsupported by this evidence and require a subsequent correction. The original source stays frozen. Root verifies the final80-regular-member archive and its78 declared payload hashes; all40 post-run XML/asset identities match the earlier original TRAIN freeze and immutable Dell cache. This closes preservation of that transitive asset set after the run, without pretending the original40-file pre-scan already included it. NumPy/BLAS identity is also recorded after the run. The earlier publication with four library symlinks remains NOT_READY and is preserved without extraction.
+
+- [Selected independent public-model recomputation](../reviews/evidence/public_coupled_training_v1_math_audit_20261007.md)
+- [Independent post-run preservation closure](../reviews/evidence/public_coupled_training_v1_post_closure_20261007.json)
+- [Fixed baseline and publication limits](../reviews/phase_5_public_coupled_servo_training_v1_scope_20261007.md)
+
 Six further development units are preserved with verified Mac/Dell archives and source checkpoint records. A position-catchup reference fails after its signed command-speed history becomes nonviable; an independent exact audit retains that empty intersection. Direct velocity replay avoids the catchup debt but fails original SI-row acceptance. Independent cold solves with tighter solver accuracy show that this captured QP is feasible, without reconstructing the missing original rejected point. Its fresh shared stop completes; this remains a failed primary trial.
 
 The isolated signed command-velocity continuation cone passes independent exact recovery checks and C++/Python parity. It preserves both speed limits under bounded acceleration/jerk; it establishes no position or collision stopping guarantee. Actual accepted-history postchecks are required because floating-point rows and SI acceptance alone are not strict continuation certificates. The main predictive controller has not adopted this module.

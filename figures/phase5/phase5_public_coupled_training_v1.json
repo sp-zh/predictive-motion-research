@@ -1,0 +1,10 @@
+{
+  "image_sha256": "4e1074edc8899ca24a18193ca984a505bd060bc7964d6cf064826d21c7b2f220",
+  "report_sha256": "d695307c46f1b68312a7e0d7a2b6954c3de815a8402c3d2cd622607f32d6a07d",
+  "training_raw_sha256": "ab9d14efa1a5886c0683db25345f24d5cacd55343e2768eb60536fa180a11dce",
+  "source": "scripts/phase5/plot_public_coupled_servo_training_v1.py",
+  "units": "Dimensionless error/original-limit ratios; q radians,v radians/s; horizons milliseconds",
+  "scope": "Uncalibrated public-only surrogate; TRAIN91011, not holdout/controller/Phase5 acceptance. Original scalar failures untouched.",
+  "zero_q_v_error_claim": false,
+  "geometry_changed": false
+}

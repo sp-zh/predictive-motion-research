@@ -1,0 +1,11 @@
+# Public coupled v1 scope and publication supplement
+
+Original v1model/solver/runner/static-reader source and40-input freeze remain unchanged. Recorded training results are limited to this fixed public compiled baseline and original91011 conditional windows. No calibration or new candidate was created during packaging repair.
+
+Root review found v1B code includes a factor solref damping ratio; the standard positive-solref friction B formula excludes that factor. All seven currently frozen damping ratios are exactly1, so current coefficient B=105.2631579 and recorded TRAIN results are unchanged. This is a generic-parameter formula defect, not a generic-model PASS. After this workunit backup, a separate version must correct/restrict supported parameters before new prospective validation. Do not repair the old frozen source or relabel it exact engine.
+
+Original40pre-scan files omitted transitive XML/mesh assets. post_run_transitive_asset_closure.json records40current XML/asset files from38asset references. Each file matches the original176-input TRAIN freeze SHA and immutable Dell-cache bytes. This is explicitly post-run closure verification; no backdated prefreeze claim. Reuse old cache identities rather than republishing all mesh bytes. NumPy/BLAS supplemental identity is also post-run only, with its previously stated provenance limitation.
+
+Initial main archive retained at checkpoints/public-coupled-servo-v1-training-20261007: SHAe0b6d0110561e90682df85db65af6bc3df82fc8b43cf5199255693a02838f79b,26924907bytes. Its verification failed on four runtime library symlink members; it has FAILURE.json and no READY, must not be extracted as a verified payload. This was a publication failure, not a predictor/experimental failure. Exact initial manifest/source/failed archive retained. Final archive dereferences each library to regular bytes, checks every member against the SHA/size manifest and safe relative names, then publishes separate READY. No initial archive is overwritten.
+
+The final successful checkpoint remains the same training-only workunit; original scalar/expanded/native-stop/API failures remain retained. Root independently reviews mathematics/causality/closure, updates showcase and owns private Git backup. Phase5 remains unaccepted; no new physical validation or main-MPC integration is authorized by training accuracy alone.

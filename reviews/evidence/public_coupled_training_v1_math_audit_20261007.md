@@ -1,0 +1,31 @@
+# Independent review: frozen public coupled baseline v1
+
+Verdict: **SELECTED_FROZEN_TRAIN_RECOMPUTATION_PASS; TRANSITIVE_ARCHIVE_CLOSURE_PENDING**. This reviews an uncalibrated public-model FR3 prototype and 19 predeclared TRAIN91011 windows. It is not a full-training gate, fresh holdout, validated accuracy domain, controller result or Phase5 acceptance. No fitting, plant commands, `mjData`, `mj_forward`, `mj_step`, evaluation/91012/v3 raw, or authoritative source mutation occurred.
+
+The [audit source](../../scripts/phase5/audit_public_coupled_training_v1.py) reads only the frozen early packet, checks its five root-verified source/static/protocol identities, and checks the scene/XML/training raw against producer freeze before and after calculation. Training raw is SHA `ab9d14efa1a5886c0683db25345f24d5cacd55343e2768eb60536fa180a11dce`. The producer functions are copied into the unique independent workspace, not imported from live project scripts. Pinocchio Data is a legal public-model computation workspace, not MuJoCo plant state.
+
+## Equations, mapping and causal score
+
+The current constants match seven fixed-base hinge joints, instantaneous affine direct-gear actuators, no equality constraints, zero fluid/spring/gravity-compensation terms and implicitfast at 2 ms. The independent import checks each named joint's q/v index equals its recorded axis; armature matches public constants and is already included by CRBA. Payload remains the inspection MJCF's explicit fixed tool inertia. The prototype does not silently reuse the arm URDF, omit payload or add armature twice.
+
+Force/control clipping is applied before subtracting passive damping and full Pinocchio rigid-body bias. The friction QP uses current `H=M(q)^-1+diag(R)`, `ell=M(q)^-1*tau_smooth+B*v` and frozen torque bounds. `R` uses static compiled `dof_invweight0`. The subsequent update uses `v_next=v+.002*(M+.002*D)^-1*(tau_smooth+f)` and `q_next=q+.002*v_next`; the integrator's full affine velocity-bias D remains present even at force clamps. The physics model and friction QP matrices have distinct roles. Strict q-range checks do not establish future collision/geometry safety or absence of unmodeled forces.
+
+One source limitation is explicit: prototype `B=2*solref[1]/(dmax*timeconst)` includes dampratio, whereas the fixed 3.3.7 standard reference formula is `2/(dmax*timeconst)`. All current frozen dampratios equal one, so this baseline's B is exactly correct. Correct that expression or explicitly reject non-one dampratio before any future parameter generalization; this hardcoded FR3 prototype is not a robot-agnostic library.
+
+The frozen runner initializes physical q/v once at every window's start. Its inner loop reads only known accepted targets and predicts its own q/v through public dynamics. Future measured physical q/v appear only as endpoint scoring references. Contact/regime/QP failures are retained and still counted in total windows; a phase/horizon pass requires zero failures. Complete stopping windows are not removed. Overlapping windows are not independent experimental trials.
+
+## Fixed independent recomputation
+
+Before forecasting, start ticks were declared as `100,500,1250,2400,2500`, with durations `2,4,40,800` ms. They cover warmup, excitation and stopping. Nineteen complete windows were recomputed. Tick 2500 has only 380 remaining substeps; its 400-step request is explicitly retained as incomplete/unscorable, not shortened. Tick 2400's 800 ms window retains 200 excitation plus 200 stopping substeps. Raw target pairs and q/v continuity were independently checked.
+
+The independent full transition uses the same public Pinocchio M/bias but an independently written cyclic exact-coordinate friction solver, not producer's active-face algorithm. The five fixed start-state QPs were additionally solved by exhaustive `3^7` free/lower/upper enumeration. All five H matrices were SPD. Producer forces differ from enumerated optima by at most `2.220446049250313e-16` N·m; independent coordinate forces differ by at most `5.928035839986023e-13` N·m. All original force-QP KKT residuals in the independent model rollout are at most `9.995337890700284e-13`, with at most 37 coordinate iterations.
+
+All 19 complete windows finished with zero failure. Across these selected windows, endpoint prediction errors are at most `4.440892098500626e-16` rad and `3.0225917560142927e-15` rad/s. Independent-versus-frozen-producer full-window differences are at most `4.440892098500626e-16` rad and `2.9641706230927427e-15` rad/s. These near-roundoff figures apply to the selected old training record under recorded target inputs; they neither certify unseen behavior nor replace root's complete-window count/report audit.
+
+## Reproduction closure and retained limits
+
+The early freeze lists scene/XML and compiled public constants, but none of the inspection XML's **38 mesh assets**. Their current paths, sizes and hashes are recorded in [JSON](public_coupled_training_v1_math_audit_20261007.json), along with `scene.xml`'s include. This is an unresolved source-to-compiled-model reproduction closure item until the complete archive manifests are checked. The constants output is already frozen; the omission does not demonstrate a change in those constants or imply mesh data was read in each Pinocchio dynamics calculation. Runtime/stdlib hashes were not expanded indiscriminately. Public model XML, required transitive assets and prior CAD/model checkpoints should be linked by verified identities in the final preservation record.
+
+No transition Jacobians, hardware model, unknown-force estimator, future contact/limit handling or safety/stop controller are established here. Existing scalar failures and their accuracy boxes remain unchanged. Future coefficients/protocols must be frozen before fresh prospective evaluation; previously seen outputs cannot be renamed holdout.
+
+Unique Mac output `results/phase5-reference/root-public-coupled-training-independent-20261007-v1` has audit/source snapshots and READY. Independent Dell workspace is `/home/codextransfer/clean-audits/public-coupled-training-independent-20261007-v1`. Final source SHA is `326649dcf0faa9e3103b9821033bc9d742c892a14433976aed0c92485697838b`. Root coordinates full archive comparison and checkpoint backup.
