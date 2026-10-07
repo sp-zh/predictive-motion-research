@@ -37,6 +37,7 @@ The causal C++ model modules reproduce the frozen augmented transition, Jacobian
 - [Public coupled dynamics design review](../reviews/evidence/public_coupled_servo_design_review_20261007.md)
 - [Independent nominal coupled friction-box oracle](../reviews/evidence/coupled_friction_box_root_oracle_20261007.md): seven fixed mathematical fixtures, original KKT checks and fixed-active-set sensitivities; root rerun produces exact JSON bytes. This supplies no physical prediction accuracy.
 - [Causal C++ API/branch development review](../reviews/phase_5_causal_servo_api_v2_20261007.md)
+- [Causal scalar v3 arithmetic hardening](../reviews/phase_5_causal_servo_finite_v3_20261007.md): a separate clone rejects nonfinite intermediate and returned transition/sensitivity arithmetic. The original finite-parameter counterexample is retained, old versions remain unchanged, and frozen scalar prediction accuracy is unchanged.
 
 - [Preliminary implementation review](../reviews/evidence/phase5_implementation_review_20261006.md)
 - [Independent moving-stop review](../reviews/evidence/phase5_moving_stop_root_review_20261007.md)

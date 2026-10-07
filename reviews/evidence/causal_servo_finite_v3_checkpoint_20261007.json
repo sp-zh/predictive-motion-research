@@ -1,0 +1,32 @@
+{
+  "archive": "/mnt/d/CodexTransfer/projects/predictive_motion/checkpoints/causal-soft-servo-cpp-v3-20261007/causal-soft-servo-cpp-v3.tar.gz",
+  "sha256": "9b0e4eb125ce5dddc33780f3d4074970ac83241452d527795ec9448b811a9abb",
+  "bytes": 634430,
+  "members": 51,
+  "archive_members_verified": true,
+  "v2_all_frozen_inputs_unchanged_verified": true,
+  "mac_copy_verified": true,
+  "source_manifest": "/home/codextransfer/predictive_motion/results/phase5/development/causal-soft-servo-cpp-v3/BACKUP_SOURCE_MANIFEST.json",
+  "source_manifest_sha256": "a78f50701c06768f3ca5af817dea51e8c2f163459a593a47f81878c7cda58f72",
+  "scope": "Isolated scalar arithmetic rejection/root counterexample and unchanged nominal regression only; no model accuracy expansion/plant/controller/Phase5 acceptance",
+  "date": "2026-10-07",
+  "phase5_acceptance": "PENDING",
+  "Mac": "/Users/uot/Documents/ChatGPT/ros/results/phase5-executor-checkpoints-01a114d9/causal-soft-servo-cpp-v3/causal-soft-servo-cpp-v3.tar.gz",
+  "Dell": "/mnt/d/CodexTransfer/projects/predictive_motion/checkpoints/causal-soft-servo-cpp-v3-20261007/causal-soft-servo-cpp-v3.tar.gz",
+  "root_verified_copies": "Both archive SHA, all49 declared member hashes; all16 source-manifest entries",
+  "restored": "/Users/uot/Documents/ChatGPT/ros/results/phase5-causal-soft-servo-cpp-v3-root-checkpoint/restored",
+  "visual_root_inspected": true,
+  "Git_import_scope": "12 source/review files; two result figure files mapped to figures/phase5; remaining small result payloads stay in immutable excluded archive",
+  "independent_review": "causal_servo_finite_v3_root_review_20261007.md/json: PASS_ISOLATED_SCALAR_FINITE_OUTPUT_V3",
+  "large_evidence_not_in_git": true,
+  "root_review_archive": {
+    "sha256": "9715bb220c1836eec926fd03a3cb534e4e27ef8923d5bde4a7591ab1a45d61d2",
+    "bytes": 179482,
+    "members": 10,
+    "scope": "Independent fresh scalar-v3 derived-finite rejection and frozen nominal regression; no physical accuracy/Phase5 acceptance",
+    "all_members_root_verified": true,
+    "Mac": "/Users/uot/Documents/ChatGPT/ros/transfer/outgoing/phase5-causal-finite-v3-root-20261007",
+    "Dell": "/mnt/d/CodexTransfer/projects/predictive_motion/checkpoints/root-causal-finite-v3-20261007",
+    "verified_copies": "Mac and D archives; all9 payload hashes; READY published last"
+  }
+}

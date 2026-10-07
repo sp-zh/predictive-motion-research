@@ -176,6 +176,14 @@ and declared threshold branches; they are not physical trajectories or expanded
 model validation. The original local domain and failed expanded accuracy gate
 remain unchanged. [API and branch scope](../reviews/phase_5_causal_servo_api_v2_20261007.md).
 
+![Scalar model arithmetic rejection and unchanged regressions](../figures/phase5/phase5_causal_servo_finite_v3.png)
+
+A separate v3 clone rejects overflow in transition and horizon sensitivity
+arithmetic, while preserving frozen model/branch regressions. Counts overlap
+across API entry points and are fixed tests, not independent research trials.
+The earlier physical prediction failures remain.
+[Arithmetic scope and retained counterexamples](../reviews/phase_5_causal_servo_finite_v3_20261007.md).
+
 ![Independent coupled friction-box solution](../figures/phase5/phase5_coupled_friction_box_oracle.png)
 
 For this declared synthetic drive and public nominal matrix, coordinatewise

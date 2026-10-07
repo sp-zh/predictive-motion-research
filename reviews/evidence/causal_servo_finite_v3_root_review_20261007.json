@@ -1,0 +1,360 @@
+{
+  "verdict": "PASS_ISOLATED_SCALAR_FINITE_OUTPUT_V3",
+  "audit_source_sha256": "0414b39cbcf83d46e4bb73cce69234b82b991df9451966006a72eff423e7e4a5",
+  "frozen_identity_checks": {
+    "build-causal-soft-servo-v3/causal_soft_servo_overflow_probe": "5f26e4a68283ecb32ad259111575f988a5c8d8e30c8647bc2977c871bb50eb6c",
+    "build-causal-soft-servo-v3/root_edge_probe": "71a45038e0050f861ac82e9ef79402efaffff0f04c94134b705446610e9ac95f",
+    "results/phase5/development/causal-soft-servo-cpp-v3/horizon_control.yaml": "23d037f58391919c0a01a5efa5f2e8bf746d233cdbd01ae36edae68ad17f842f",
+    "results/phase5/development/causal-soft-servo-cpp-v3/horizon_initial.yaml": "10e668ee78c3e4e5387992d593ce8613466613a006d2cc49ad78c04ca7cd23c0",
+    "tools/phase5_causal_servo_v3/causal_soft_servo_probe.cpp": "783e84eac747da5cc8720b3477bf9b01844ca400c700a646ab606959a8e70423",
+    "tools/phase5_causal_servo_v3/causal_soft_servo.hpp": "87d1b7599cd5fd870017028fa2ffa6535ec08de7cfffb698e0ab5d2fb2cc2e6b",
+    "tools/phase5_causal_servo_v3/root_edge_probe.cpp": "a0f676ad9e993b3da6eebfb8841b6e84c038c2122deaef6b6325984f96845a66",
+    "tools/phase5_causal_servo_v3/CMakeLists.txt": "175ef98f437e5846bff99b1c66f00c50d42b7173bc97b11cb42db67b7f94a6a7",
+    "tools/phase5_causal_servo_v3/causal_soft_servo_api_probe.cpp": "98fc0eafacbd4726036ca0cda774edb2b2cedc13c6ff93035c4be2ad91dc3a70",
+    "tools/phase5_causal_servo_v3/causal_soft_servo_overflow_probe.cpp": "a8cb6e8fc5923984f96fd1c2c877ff2dea4221294822d8264addd69c5adba270",
+    "scripts/phase5/run_causal_servo_finite_v3.py": "baa27c34d451d049e454fd2751ff9f94c087583029296d556f4219eedf3b9744",
+    "scripts/phase5/prepare_causal_servo_finite_v3.py": "b559c2731a23e7ef75ac9bf2f0860f60e63dcd8adf8df08d43bc9391c2bbb867",
+    "build-causal-soft-servo-v3/CMakeCache.txt": "f019ecc9ddba644d457e42f31f8cd5556a0dcc61af45d4e0cef9e834a73d1ec3",
+    "build-causal-soft-servo-v3/causal_soft_servo_probe": "c9bd4cbbbda4e969a62464d175c14885fcf99fee49ec84b3da45f01cf056a0bc",
+    "build-causal-soft-servo-v3/causal_soft_servo_api_probe": "1ca97c78c611c8594ad7466c486e435f3680e279f2baafc66fd0b14735c45ef8",
+    "results/phase5/development/causal-soft-servo-cpp-v3/branch_input.yaml": "ca9660e3c0c8fd8c57152ed6d305d5291a25cc18e19331576bc63126786e7e8a",
+    "results/phase5/development/causal-soft-servo-cpp-v3/root_branch_packet.json": "8f09f79a23a6be6f3785dc76612c9a1f43b90b038e1fb248d616116dcb1276f7",
+    "results/phase5/development/causal-soft-servo-cpp-v3/root_branch_READY.json": "039fba0c68a970334c14a9f42eac70fa379c0a59299eec16702031a6557b56e3",
+    "results/phase5/development/causal-soft-servo-cpp-v1/input.yaml": "7c540ddf2c26ffc11febbf09ec1b138a983b2c5dfc50bd6868737c4a896513d0",
+    "results/phase5/development/causal-soft-servo-cpp-reference-v1/oracle.json": "363d077546c92fb0eed6d43e0cd4826a9d322628a5cd7c7b1d2f67e03bf5ebab"
+  },
+  "root_branch_packet_sha256": "8f09f79a23a6be6f3785dc76612c9a1f43b90b038e1fb248d616116dcb1276f7",
+  "frozen_model_sha256": "984ee85d086aeba7da8260a20b21b301e23dfd2c698a6c61ace0ff956bbec1bb",
+  "fixed_root_oracle_sha256": "c63f524d2002323ca635574addcf8ef04a498154ea171ac5a58deda088853710",
+  "fresh_remote": "/home/codextransfer/clean-audits/causal-servo-finite-v3-independent-20261007-v1",
+  "branch_tests": [
+    {
+      "name": "n1_synthetic_level_0.0",
+      "errors": {
+        "state": 0.0,
+        "A": 4.336808689942018e-19,
+        "B": 0.0,
+        "defect": 0.0
+      },
+      "branches_2ms": [
+        [
+          0
+        ],
+        [
+          0
+        ]
+      ],
+      "clip_equalities": 0
+    },
+    {
+      "name": "n1_synthetic_level_1.5",
+      "errors": {
+        "state": 8.470329472543003e-22,
+        "A": 3.469446951953614e-18,
+        "B": 0.0,
+        "defect": 8.470329472543003e-22
+      },
+      "branches_2ms": [
+        [
+          1
+        ],
+        [
+          1
+        ]
+      ],
+      "clip_equalities": 0
+    },
+    {
+      "name": "n1_synthetic_level_-1.5",
+      "errors": {
+        "state": 8.470329472543003e-22,
+        "A": 3.469446951953614e-18,
+        "B": 0.0,
+        "defect": 1.6940658945086007e-21
+      },
+      "branches_2ms": [
+        [
+          -1
+        ],
+        [
+          -1
+        ]
+      ],
+      "clip_equalities": 0
+    },
+    {
+      "name": "n7_frozen_level_0.0",
+      "errors": {
+        "state": 1.232595164407831e-32,
+        "A": 2.220446049250313e-16,
+        "B": 3.3881317890172014e-21,
+        "defect": 2.8796409701215e-16
+      },
+      "branches_2ms": [
+        [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ]
+      ],
+      "clip_equalities": 0
+    },
+    {
+      "name": "n7_frozen_level_1.5",
+      "errors": {
+        "state": 0.0,
+        "A": 1.7763568394002505e-15,
+        "B": 2.710505431213761e-20,
+        "defect": 2.4771851236948805e-15
+      },
+      "branches_2ms": [
+        [
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1
+        ],
+        [
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1
+        ]
+      ],
+      "clip_equalities": 0
+    },
+    {
+      "name": "n7_frozen_level_-1.5",
+      "errors": {
+        "state": 4.336808689942018e-19,
+        "A": 1.7763568394002505e-15,
+        "B": 2.710505431213761e-20,
+        "defect": 5.825201432330118e-15
+      },
+      "branches_2ms": [
+        [
+          -1,
+          -1,
+          -1,
+          -1,
+          -1,
+          -1,
+          -1
+        ],
+        [
+          -1,
+          -1,
+          -1,
+          -1,
+          -1,
+          -1,
+          -1
+        ]
+      ],
+      "clip_equalities": 0
+    },
+    {
+      "name": "n1_exact_threshold_1.0",
+      "errors": {
+        "state": 4.336808689942018e-19,
+        "A": 0.0,
+        "B": 6.617444900424222e-24,
+        "defect": 4.336808689942018e-19
+      },
+      "branches_2ms": [
+        [
+          1
+        ],
+        [
+          0
+        ]
+      ],
+      "clip_equalities": 1
+    },
+    {
+      "name": "n1_exact_threshold_-1.0",
+      "errors": {
+        "state": 4.336808689942018e-19,
+        "A": 0.0,
+        "B": 6.617444900424222e-24,
+        "defect": 4.336808689942018e-19
+      },
+      "branches_2ms": [
+        [
+          -1
+        ],
+        [
+          0
+        ]
+      ],
+      "clip_equalities": 1
+    }
+  ],
+  "nominal_tests": [
+    {
+      "name": "n1_synthetic_nonuniform",
+      "errors_vs_root_oracle": {
+        "states": 3.3881317890172014e-21,
+        "cell_A": 8.881784197001252e-16,
+        "cell_B": 4.336808689942018e-19,
+        "cell_defect": 6.776263578034403e-21,
+        "condensed_offsets": 6.776263578034403e-21,
+        "control_sensitivities": 5.204170427930421e-18,
+        "initial_sensitivities": 4.440892098500626e-16
+      },
+      "max_vs_recorded_CPP": 0.0,
+      "history_length": 50
+    },
+    {
+      "name": "n7_frozen_soft_v2_nonuniform20",
+      "errors_vs_root_oracle": {
+        "states": 6.776263578034403e-21,
+        "cell_A": 1.7763568394002505e-15,
+        "cell_B": 8.673617379884035e-19,
+        "cell_defect": 8.065596801554165e-15,
+        "condensed_offsets": 2.2709265024012382e-14,
+        "control_sensitivities": 7.632783294297951e-17,
+        "initial_sensitivities": 4.440892098500626e-15
+      },
+      "max_vs_recorded_CPP": 0.0,
+      "history_length": 200
+    }
+  ],
+  "invalid_entry_rejections": 78,
+  "domain_mesh_rejections": 10,
+  "root_v2_counterexample_now_rejected": {
+    "model_validated": 1,
+    "threw": true
+  },
+  "overflow_regression_rows": [
+    {
+      "case": "0",
+      "entry": "cycle",
+      "model_validated": "1",
+      "overflow_rejected": "1",
+      "reason": "nonfinite physical derivative"
+    },
+    {
+      "case": "0",
+      "entry": "cell",
+      "model_validated": "1",
+      "overflow_rejected": "1",
+      "reason": "nonfinite physical derivative"
+    },
+    {
+      "case": "1",
+      "entry": "cycle",
+      "model_validated": "1",
+      "overflow_rejected": "1",
+      "reason": "nonfinite physical gain/force"
+    },
+    {
+      "case": "1",
+      "entry": "cell",
+      "model_validated": "1",
+      "overflow_rejected": "1",
+      "reason": "nonfinite physical gain/force"
+    },
+    {
+      "case": "composed",
+      "entry": "cycle_finite",
+      "model_validated": "1",
+      "overflow_rejected": "0",
+      "reason": "finite_one_cycle_expected"
+    },
+    {
+      "case": "2",
+      "entry": "cell",
+      "model_validated": "1",
+      "overflow_rejected": "1",
+      "reason": "nonfinite cell A propagation"
+    },
+    {
+      "case": "3",
+      "entry": "cycle",
+      "model_validated": "1",
+      "overflow_rejected": "1",
+      "reason": "nonfinite implicit denominator"
+    },
+    {
+      "case": "3",
+      "entry": "cell",
+      "model_validated": "1",
+      "overflow_rejected": "1",
+      "reason": "nonfinite implicit denominator"
+    }
+  ],
+  "horizon_overflow_rejections": [
+    {
+      "code": 3,
+      "stdout": "",
+      "stderr": "nonfinite horizon control sensitivity product\n",
+      "case": "horizon_control"
+    },
+    {
+      "code": 3,
+      "stdout": "",
+      "stderr": "nonfinite horizon initial sensitivity\n",
+      "case": "horizon_initial"
+    }
+  ],
+  "compile_commands": [
+    {
+      "directory": "/home/codextransfer/clean-audits/causal-servo-finite-v3-independent-20261007-v1/build",
+      "command": "/usr/bin/c++  -isystem /usr/include/eigen3 -O3 -DNDEBUG -Wall -Wextra -Werror -o CMakeFiles/causal_soft_servo_probe.dir/causal_soft_servo_probe.cpp.o -c /home/codextransfer/clean-audits/causal-servo-finite-v3-independent-20261007-v1/causal_soft_servo_probe.cpp",
+      "file": "/home/codextransfer/clean-audits/causal-servo-finite-v3-independent-20261007-v1/causal_soft_servo_probe.cpp",
+      "output": "CMakeFiles/causal_soft_servo_probe.dir/causal_soft_servo_probe.cpp.o"
+    },
+    {
+      "directory": "/home/codextransfer/clean-audits/causal-servo-finite-v3-independent-20261007-v1/build",
+      "command": "/usr/bin/c++  -isystem /usr/include/eigen3 -O3 -DNDEBUG -Wall -Wextra -Werror -o CMakeFiles/causal_soft_servo_api_probe.dir/causal_soft_servo_api_probe.cpp.o -c /home/codextransfer/clean-audits/causal-servo-finite-v3-independent-20261007-v1/causal_soft_servo_api_probe.cpp",
+      "file": "/home/codextransfer/clean-audits/causal-servo-finite-v3-independent-20261007-v1/causal_soft_servo_api_probe.cpp",
+      "output": "CMakeFiles/causal_soft_servo_api_probe.dir/causal_soft_servo_api_probe.cpp.o"
+    },
+    {
+      "directory": "/home/codextransfer/clean-audits/causal-servo-finite-v3-independent-20261007-v1/build",
+      "command": "/usr/bin/c++  -isystem /usr/include/eigen3 -O3 -DNDEBUG -Wall -Wextra -Werror -o CMakeFiles/causal_soft_servo_overflow_probe.dir/causal_soft_servo_overflow_probe.cpp.o -c /home/codextransfer/clean-audits/causal-servo-finite-v3-independent-20261007-v1/causal_soft_servo_overflow_probe.cpp",
+      "file": "/home/codextransfer/clean-audits/causal-servo-finite-v3-independent-20261007-v1/causal_soft_servo_overflow_probe.cpp",
+      "output": "CMakeFiles/causal_soft_servo_overflow_probe.dir/causal_soft_servo_overflow_probe.cpp.o"
+    },
+    {
+      "directory": "/home/codextransfer/clean-audits/causal-servo-finite-v3-independent-20261007-v1/build",
+      "command": "/usr/bin/c++  -isystem /usr/include/eigen3 -O3 -DNDEBUG -Wall -Wextra -Werror -o CMakeFiles/root_edge_probe.dir/root_edge_probe.cpp.o -c /home/codextransfer/clean-audits/causal-servo-finite-v3-independent-20261007-v1/root_edge_probe.cpp",
+      "file": "/home/codextransfer/clean-audits/causal-servo-finite-v3-independent-20261007-v1/root_edge_probe.cpp",
+      "output": "CMakeFiles/root_edge_probe.dir/root_edge_probe.cpp.o"
+    }
+  ],
+  "fresh_binary_sha256": {
+    "causal_soft_servo_api_probe": "1ca97c78c611c8594ad7466c486e435f3680e279f2baafc66fd0b14735c45ef8",
+    "root_edge_probe": "71a45038e0050f861ac82e9ef79402efaffff0f04c94134b705446610e9ac95f",
+    "causal_soft_servo_overflow_probe": "5f26e4a68283ecb32ad259111575f988a5c8d8e30c8647bc2977c871bb50eb6c",
+    "causal_soft_servo_probe": "c9bd4cbbbda4e969a62464d175c14885fcf99fee49ec84b3da45f01cf056a0bc"
+  },
+  "fix_scope": "Reject derived nonfinite arithmetic in cycle/cell and horizon propagation/serialization; original frozen scalar-model coefficients/domain, equations and branch convention unchanged.",
+  "limits": [
+    "Scalar empirical model only, not coupled dynamics or exact MuJoCo",
+    "No model domain extension or fresh holdout",
+    "No real-time guarantee, control guards, position/geometry/stop guarantee, main MPC integration, CTRL001 closure or Phase5 acceptance",
+    "At exact clip thresholds saturated-side Jacobian is convention; unique ordinary derivative does not exist",
+    "Same original n7 branch-vector fixtures are uniform across joints; mixed branch combinations are not exhaustively tested"
+  ]
+}
