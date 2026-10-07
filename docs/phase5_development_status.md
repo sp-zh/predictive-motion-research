@@ -4,6 +4,8 @@ Updated 2026-10-07, America/Toronto. **Phase 5 acceptance is pending.** The proj
 
 Independent installed consumers verify the coupled horizon, nonuniform meshes, full objective, nonzero state/nominal coordinates and separated command/model histories. The dimension-amplified PSD certificate bug is repaired and independently regression-tested. Actual-state condensed/lifted matrices match through a closed-form embedding; signed-row compression preserves every original constraint. These mathematical checks are separate from robot results.
 
+The v24 frozen installed-library consumer repeats 1,200 state-map checks, 120 full-cost checks and eight analytic solver/history checks successfully. Root also reruns the independent augmented-servo reference exactly: synthetic n=1/n=3 transitions, nonuniform meshes, initial/control sensitivities, lifted state elimination and full quadratic cost substitution agree. These references do not validate an FR3 servo fit. They also expose why zero terminal physical/command velocity alone does not guarantee stationary physical rest when the held target differs from equilibrium.
+
 The paused-simulation reference-v14 produces 195 predictive commands and advances to s=.060296. It fails with native INACCURATE; the original greedy progress stop then becomes infeasible. The dataset remains failed. Its maximum measured position error is 12.076 mm, and 138 substeps exceed its prefrozen declared 10 mm envelope. Model-versus-actual 4 ms velocity discrepancy reaches .00378529 rad/s. It does not establish Cartesian accuracy or online control.
 
 The progress stop now preserves discrete speed continuation under bounded jerk. Root independently verifies five analytic cases and 1,000 sampled states. A focused test exactly replays all 1,390 original pre-stop physical records and applies the new shared stop. It completes in .932 s virtual time, with zero accepted speed, physical speed below 1e-4 rad/s, zero progress speed within numerical precision and zero progress acceleration. All recorded stop checks pass. This closes RET-002 only in its documented speed-continuation and moving-replay envelope. All 233 complete stop cycles still miss 4 ms.
@@ -17,6 +19,7 @@ Evidence and scope:
 - [Preliminary implementation review](../reviews/evidence/phase5_implementation_review_20261006.md)
 - [Independent moving-stop review](../reviews/evidence/phase5_moving_stop_root_review_20261007.md)
 - [Independent command/servo mathematical review](../reviews/evidence/predictive_math_specialist_20261007.md)
+- [Independent augmented-servo transition oracle](../reviews/evidence/augmented_servo_reference_20261007.md)
 - [Issue register](../reviews/issue_register.md)
 - `results/phase5-early-review/reference-v14`: original failed motion and independent observations
 - `results/phase5-early-review/moving-stop-v1`: immutable identities, exact replay/stop data and independent reviews

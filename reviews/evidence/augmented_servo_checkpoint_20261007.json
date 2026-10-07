@@ -1,0 +1,29 @@
+{
+  "date": "2026-10-07",
+  "milestone": "Independent augmented-servo transition oracle and v24 installed-library regressions",
+  "phase5_acceptance": "PENDING",
+  "archive_sha256": "0b26235a074252d7980b6a65f53889fa2e42c39dd2e0979f964485ee51220964",
+  "archive_bytes": 44573,
+  "archive_members": 12,
+  "manifest_sha256": "db3bf50d60a56f1aa6335aaa826fda40caf9cc43de4978ba3b2011f2b934408d",
+  "verified_copies": {
+    "Mac": "/Users/uot/Documents/ChatGPT/ros/transfer/outgoing/phase5-augmented-servo-checkpoint-20261007",
+    "Dell": "/mnt/d/CodexTransfer/projects/predictive_motion/checkpoints/augmented-servo-20261007"
+  },
+  "verification": "Both complete archives, every member hash and READY verified; independent root oracle rerun equals immutable v3 oracle and summary bytes.",
+  "oracle_source_sha256": "f0253f4e03d9a5fc0c350fa4ff3fbf6b4a235d9bb7b95556d07bfc13949d1685",
+  "v24_consumers": {
+    "assembly": "PASS:1200state/120cost; state1.94e-16,cost5.80e-16,bridge3.47e-18,dynamics1.54e-16,Gram0",
+    "solver": "PASS:8analytic fixtures; nonzero control optimum error1.09e-10",
+    "predictive_static_library_sha256": "9235171048abd320aa6877424ec35263533bfdecfe1b0abd7fe3129c605a6a83",
+    "qp_static_library_sha256": "aa6c9db6460923c1c386f9011a52e923a17b9b1b74f854042a45ccdffc999c68",
+    "effective_input_scope": "Four predictive/QP libraries and matching source headers restored from v24 pre-run identity-cache. CMake imports inherited earlier snapshot; not full system closure."
+  },
+  "limitations": [
+    "No fitted FR3 model or new robot trial.",
+    "No liveness, executed tracking, hardware, timing or Phase5 gate claim.",
+    "Synthetic fractional command grid requires an explicit runtime policy; it is not automatically the fixed4ms command grid.",
+    "Terminal v=w=0 counterexample is synthetic; no attribution of actual .8s solver failures.",
+    "Retained original failures and accepted Phase4 evidence unchanged."
+  ]
+}
