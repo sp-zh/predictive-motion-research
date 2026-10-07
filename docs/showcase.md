@@ -107,6 +107,10 @@ original command constraints. This is local recorded-input prediction evidence,
 not main-controller or Phase5 acceptance.
 [Independent local scope](../reviews/evidence/servo_soft_v2_math_audit_20261007.md)
 and [figure hashes](../figures/phase5/phase5_servo_soft_friction_v2.json).
+The separate [augmented transition oracle](../reviews/evidence/augmented_soft_servo_reference_20261007.md)
+checks command/physical state propagation and horizon derivatives for the frozen
+local model. Its numerical trajectories are model calculations; the plot above
+continues to identify the actual recorded validation input.
 
 ![Retained expanded validation failure](../figures/phase5/phase5_servo_expanded_guard_failure.png)
 

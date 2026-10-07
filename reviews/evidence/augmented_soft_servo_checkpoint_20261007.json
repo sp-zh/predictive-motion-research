@@ -1,0 +1,31 @@
+{
+  "date": "2026-10-07",
+  "milestone": "Independent fixed-source augmented soft-servo model transition/sensitivity/cost oracle",
+  "phase5_acceptance": "PENDING",
+  "decision": "PASS_MODEL_ALGEBRA_ONLY",
+  "final_source_sha256": "c63f524d2002323ca635574addcf8ef04a498154ea171ac5a58deda088853710",
+  "frozen_model_sha256": "984ee85d086aeba7da8260a20b21b301e23dfd2c698a6c61ace0ff956bbec1bb",
+  "final_output": "results/phase5-reference/root-augmented-soft-servo-20261007-final-v2",
+  "root_rerun": "results/phase5-reference/root-augmented-soft-servo-20261007-root-final-rerun",
+  "verification": "All six files byte-equal in root rerun; five payload fileSHA verified via READY; frozen model and fixed source snapshot match; earlier mixed-source READY retained and excluded from acceptance.",
+  "archive": {
+    "sha256": "16be7b6679a6bd849533ce432da77728d72f4c50c7e8b01420f64b4e450165c5",
+    "bytes": 987697,
+    "members": 24,
+    "scope": "Fixed augmented soft-servo model-algebra oracle and retained source-race/intermediate output; no physical plant or Phase5 acceptance",
+    "mac_archive_verified": true,
+    "member_sha_verified": true,
+    "Mac": "/Users/uot/Documents/ChatGPT/ros/transfer/outgoing/phase5-augmented-soft-servo-root-20261007",
+    "Dell": "/mnt/d/CodexTransfer/projects/predictive_motion/checkpoints/root-augmented-soft-servo-20261007",
+    "verified": "Both archiveSHA, allmemberSHA and READY"
+  },
+  "review": "augmented_soft_servo_reference_20261007.md/json",
+  "limits": [
+    "Pure model rollout, no actual physical prediction validation or C++ adoption",
+    "Recorded local model accuracy does not certify entire declared box",
+    "Nonuniform mesh must be integer4ms periods; no fractional policy assumed",
+    "Control-jump denominator is actual4ms, not coarse-cell duration",
+    "Test quadratic objective is algebraic, not tuned research objective",
+    "No CTRL001 closure, future-stop/hardware/timing/Phase5 acceptance"
+  ]
+}

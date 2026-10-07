@@ -1,0 +1,225 @@
+{
+  "scope": "Independent augmented soft-servo MODEL oracle; no fitting or physical plant evidence.",
+  "status": "MODEL_ALGEBRA_ORACLE_PASS_NOT_CTRL001_OR_PHASE5",
+  "numpy_version": "2.3.5",
+  "frozen_model_path": "results/phase5-servo-soft-v2-checkpoint/restored/project/results/phase5/development/servo-model-soft-friction-v2-frozen/model.json",
+  "frozen_model_sha256": "984ee85d086aeba7da8260a20b21b301e23dfd2c698a6c61ace0ff956bbec1bb",
+  "source_sha256": "c63f524d2002323ca635574addcf8ef04a498154ea171ac5a58deda088853710",
+  "full_augmented_cycle_branch_checks": {
+    "n1": [
+      {
+        "drive_relative_to_bound": 0.0,
+        "branches_2ms": [
+          [
+            0
+          ],
+          [
+            0
+          ]
+        ],
+        "max_full_augmented_state_control_fd_error": 8.537215032133894e-11,
+        "affine_defect_identity_error": 3.308722450212111e-24,
+        "fixture_domain_checks_pass": true
+      },
+      {
+        "drive_relative_to_bound": 1.5,
+        "branches_2ms": [
+          [
+            1
+          ],
+          [
+            1
+          ]
+        ],
+        "max_full_augmented_state_control_fd_error": 8.537215032133894e-11,
+        "affine_defect_identity_error": 0.0,
+        "fixture_domain_checks_pass": true
+      },
+      {
+        "drive_relative_to_bound": -1.5,
+        "branches_2ms": [
+          [
+            -1
+          ],
+          [
+            -1
+          ]
+        ],
+        "max_full_augmented_state_control_fd_error": 8.537215032133894e-11,
+        "affine_defect_identity_error": 1.6940658945086007e-21,
+        "fixture_domain_checks_pass": true
+      }
+    ],
+    "n7": [
+      {
+        "drive_relative_to_bound": 0.0,
+        "branches_2ms": [
+          [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ]
+        ],
+        "max_full_augmented_state_control_fd_error": 7.506973428995212e-09,
+        "affine_defect_identity_error": 1.360456886034811e-15,
+        "fixture_domain_checks_pass": true
+      },
+      {
+        "drive_relative_to_bound": 1.5,
+        "branches_2ms": [
+          [
+            1,
+            1,
+            1,
+            1,
+            1,
+            1,
+            1
+          ],
+          [
+            1,
+            1,
+            1,
+            1,
+            1,
+            1,
+            1
+          ]
+        ],
+        "max_full_augmented_state_control_fd_error": 3.8871695782994806e-08,
+        "affine_defect_identity_error": 2.976785484776201e-15,
+        "fixture_domain_checks_pass": true
+      },
+      {
+        "drive_relative_to_bound": -1.5,
+        "branches_2ms": [
+          [
+            -1,
+            -1,
+            -1,
+            -1,
+            -1,
+            -1,
+            -1
+          ],
+          [
+            -1,
+            -1,
+            -1,
+            -1,
+            -1,
+            -1,
+            -1
+          ]
+        ],
+        "max_full_augmented_state_control_fd_error": 3.887277998516729e-08,
+        "affine_defect_identity_error": 5.3828469459560324e-15,
+        "fixture_domain_checks_pass": true
+      }
+    ]
+  },
+  "rejection_and_threshold_checks": {
+    "undefined_mesh_rejections": [
+      0.041,
+      0.0,
+      -0.004
+    ],
+    "initial_domain_rejections": [
+      "q",
+      "v",
+      "target_error",
+      "progress"
+    ],
+    "forecast_domain_rejections": [
+      "next_target_error",
+      "next_progress_speed"
+    ],
+    "exact_positive_clip_threshold_branch": [
+      1
+    ],
+    "one_sided_v_derivatives": {
+      "left": 0.0009980039919477157,
+      "right": 0.0019960079838954314
+    },
+    "derivative_not_unique": true,
+    "branch_convention": "At equality abs(drive)>=eta choose saturated branch derivative; ordinary Jacobian is undefined there.",
+    "box_is_not_accuracy_certificate": true
+  },
+  "state_order": "physical q/v, accepted c/w, progress s/r",
+  "input_order": "command acceleration alpha, progress acceleration b",
+  "clock_contract": "At each4ms update w+=\u0394alpha,c+=\u0394w_next; holdc across two2msphysicalsoftsteps; progress s+=\u0394r+.5\u0394\u00b2b,r+=\u0394b. Fortyms=tenreal4msupdates; onlypositiveinteger4msmesh supported.",
+  "cases": [
+    {
+      "name": "n1_synthetic_nonuniform",
+      "n": 1,
+      "mesh_s": [
+        0.04,
+        0.036,
+        0.044,
+        0.032,
+        0.048
+      ],
+      "duration_s": 0.2,
+      "checks": {
+        "nonlinear_nominal_affine": 1.1102230246251565e-16,
+        "control_fd": 1.3479297756094355e-11,
+        "initial_fd": 4.489397742446499e-11,
+        "lifted_elimination": 3.469446951953614e-18,
+        "lifted_dynamics": 7.711282072684743e-17,
+        "full_quadratic_substitution": 8.673617379884035e-19,
+        "all_measurement_and_forecast_domain_checks_pass": true,
+        "finite_difference_branch_sequences_unchanged": true
+      }
+    },
+    {
+      "name": "n7_frozen_soft_v2_nonuniform20",
+      "n": 7,
+      "mesh_s": [
+        0.032,
+        0.048,
+        0.036000000000000004,
+        0.044,
+        0.04,
+        0.04,
+        0.032,
+        0.048,
+        0.036000000000000004,
+        0.044,
+        0.04,
+        0.04,
+        0.032,
+        0.048,
+        0.036000000000000004,
+        0.044,
+        0.04,
+        0.04,
+        0.032,
+        0.048
+      ],
+      "duration_s": 0.8,
+      "checks": {
+        "nonlinear_nominal_affine": 3.784591319803618e-14,
+        "control_fd": 2.5118321769768137e-08,
+        "initial_fd": 2.0846190219771937e-08,
+        "lifted_elimination": 2.0327652321822098e-14,
+        "lifted_dynamics": 1.680947048221526e-14,
+        "full_quadratic_substitution": 3.0357660829594124e-18,
+        "all_measurement_and_forecast_domain_checks_pass": true,
+        "finite_difference_branch_sequences_unchanged": true
+      }
+    }
+  ]
+}
