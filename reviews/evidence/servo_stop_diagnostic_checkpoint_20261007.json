@@ -1,0 +1,52 @@
+{
+  "date": "2026-10-07",
+  "milestone": "Complete producer negative command-QP reconstruction/full physical replay/actual first-stop capture and recorded-state render",
+  "phase5_acceptance": "PENDING",
+  "decision": "VERIFIED_NEGATIVE_DIAGNOSTIC_NOT_STOP_PASS",
+  "executor_archive": {
+    "archive": "/mnt/d/CodexTransfer/projects/predictive_motion/checkpoints/servo-stop-diagnostic-20261007/servo-stop-diagnostic.tar.gz",
+    "sha256": "8cf4e77c187031b0d8ce4b99289fa8d5ae5f307cc7f090c817a9e980b690e9ca",
+    "bytes": 2401304,
+    "members": 63,
+    "archive_members_verified": true,
+    "input_cache_verified_on_dell": {
+      "reconstruction": 193,
+      "replay_stop": 193
+    },
+    "mac_copy_verified": false,
+    "scope": "explicit reconstruction and actual matched-prefix stop failure; no completed stop/expanded model/Phase5 acceptance",
+    "source_manifest": "/home/codextransfer/predictive_motion/results/phase5/development/servo-expanded-failure-stop-replay-v1/BACKUP_SOURCE_MANIFEST.json",
+    "source_manifest_sha256": "9a3b6c39f8589f400af5c784b7853184b22a5ccc3de9adcaa23ca51a49f763fb"
+  },
+  "root_verified_Mac_archive": "/Users/uot/Documents/ChatGPT/ros/results/phase5-servo-stop-diagnostic-checkpoint/servo-stop-diagnostic.tar.gz",
+  "archive_verification": "ArchiveSHA/bytes/63 safe regular members;61 declared memberSHA, small sourceManifestSHA and allimported sourceSHA checked.",
+  "independent_full_frozen_closure_verification": {
+    "servo-expanded-qp-reconstruction-v1": {
+      "effective_files": 193,
+      "bytes_read": 172508991,
+      "all_content_store_sha_pass": true,
+      "scope": "frozen effective-input content cache, not active changed source or complete OS/package environment"
+    },
+    "servo-expanded-failure-stop-replay-v1": {
+      "effective_files": 193,
+      "bytes_read": 172806260,
+      "all_content_store_sha_pass": true,
+      "scope": "frozen effective-input content cache, not active changed source or complete OS/package environment"
+    }
+  },
+  "source_integration": "Separate diagnostics source/CMake/render and analysis/run/publish scripts importedMac; no main-core/old adapter source change",
+  "independent_mathematics": "servo_expanded_failure_stop_math_audit_20261007.md/json",
+  "visual_inspection": {
+    "root": "Inspected final next-candidate-command-box plot and recorded-state render; unit labels/failure scope clear; allfigure/source/output identities verified via archive manifests.",
+    "plot_sha256": "9b407a6a06127391c291aec268231aed1b1761b0400c914e0160882a2855a5a4",
+    "render_sha256": "1d535c3b1349e34a0a9f395c9eb0eccf2aeabee557f1e26743892c70a8368647"
+  },
+  "related_root_review_archive": "servo_expanded_failure_root_checkpoint_20261007.json",
+  "limits": [
+    "No feasible stop command accepted; simulator termination is not physical standstill",
+    "29x7 reconstruction differs from actual captured67x7 first-stopQP",
+    "Renderer restores past recordedstate and computes geometry only; no new physics trajectory",
+    "Input-cache193 closure matches frozen effective files, not full OS/all runtime package closure",
+    "Expanded accuracy/model box not accepted, mainMPC integration remains pending"
+  ]
+}

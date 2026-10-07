@@ -29,6 +29,7 @@ Evidence and scope:
 - [Independent failed causal-model audit](../reviews/evidence/servo_model_v1_math_audit_20261007.md)
 - [Independent local soft-friction model review](../reviews/evidence/servo_soft_v2_math_audit_20261007.md)
 - [Independent expanded failure and actual-stop audit](../reviews/evidence/servo_expanded_failure_stop_math_audit_20261007.md)
+- [Complete producer negative diagnostic and render](../reviews/phase_5_servo_failure_stop_diagnostic_20261007.md)
 - [Issue register](../reviews/issue_register.md)
 - `results/phase5-early-review/reference-v14`: original failed motion and independent observations
 - `results/phase5-early-review/moving-stop-v1`: immutable identities, exact replay/stop data and independent reviews

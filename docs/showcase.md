@@ -121,6 +121,16 @@ A subsequent full replay confirms the first shared-stop QP is also infeasible.
 [Original failed trial](../reviews/phase_5_servo_expanded_validation_failure_20261007.md)
 and [independent constraint proof](../reviews/evidence/servo_expanded_failure_stop_math_audit_20261007.md).
 
+![Shared stop constraint conflict](../figures/phase5/phase5_servo_no_feasible_stop.png)
+
+![Recorded failure-state model render](../figures/phase5/phase5_servo_guard_failure_state.png)
+
+The next-command range excludes three required geometry bounds. The recorded
+pose render uses forward geometry with saved state; it adds no new physical
+trajectory. Both views identify a verified failure with no accepted stop command.
+[Producer diagnostic](../reviews/phase_5_servo_failure_stop_diagnostic_20261007.md)
+and [archive/closure identities](../reviews/evidence/servo_stop_diagnostic_checkpoint_20261007.json).
+
 ## Downloadable 3D models
 
 | Asset | Format / units | Purpose |

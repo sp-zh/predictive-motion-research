@@ -1,0 +1,42 @@
+{
+  "scope": "Annotate a new recorded-state MuJoCo render, not a new control/physics trajectory.",
+  "source_hashes": {
+    "/mnt/d/CodexTransfer/projects/predictive_motion/phase5/raw/servo-soft-friction-v2-expanded-validation/raw.csv": "b913b712590be96eeec031a0b62a88e42d462ed2ac13d87ddf6b8a5d648a29e2",
+    "/home/codextransfer/predictive_motion/results/phase5/development/servo-expanded-failure-stop-replay-v1/figures/recorded_failure_state.ppm": "cff833269337c864007f8907a362c7c089c818481d01a934abf0bc562261949d",
+    "/home/codextransfer/predictive_motion/experiments/generated/inspection/scene.xml": "fdbb460120c287785dceafe2f320e8b79865203a09aebb5027ec8fd53f4628a5",
+    "/home/codextransfer/predictive_motion/experiments/generated/inspection/inspection_fr3.xml": "0231a374b6173f38ff63a214932dfca624594d23daf5f4b0c4a0e8e02016ebae",
+    "/home/codextransfer/predictive_motion/tools/phase5_servo_diagnostics/render_servo_recorded_pose.cpp": "fc580f93f478eca9b49045e973f9c8a80a9ef783a2c89a006775e1479e47385a",
+    "/home/codextransfer/predictive_motion/build-servo-qp-reconstruct-v1/render_servo_recorded_pose": "2f1c00d113aaf5e12143610ad81fd76061ac634a04bfd00eb9ba414fcb91d7d4",
+    "/home/codextransfer/predictive_motion/scripts/phase5/annotate_servo_failure_render.py": "3624dc79fc8de26bf0adc5ad7300d6e7080cda8046854a7c45fb3a0be6523870"
+  },
+  "upstream_asset_manifest_sha256": "f3a72b9e0f72c56fa0a6a653a7e32fa5b235781e9cd2ce8fcf65fae243867c16",
+  "camera": {
+    "lookat_m": [
+      0.49,
+      -0.01,
+      0.49
+    ],
+    "distance_m": 1.5,
+    "azimuth_deg": 135,
+    "elevation_deg": -23
+  },
+  "model_length_units": "metres; joint q in radians; no CAD geometry or model units modified",
+  "record": {
+    "tick": 853,
+    "substep": 2,
+    "virtual_time_s": 3.4159999999998454,
+    "q_post_rad": [
+      -1.2515726380426937,
+      0.09142951165354389,
+      1.1498587137457685,
+      -2.785253593203723,
+      -0.09269051648051135,
+      4.391369671946548,
+      -1.6232750698991465
+    ]
+  },
+  "mujoco_version": "3.3.7",
+  "renderer": "existing OSMesa software OpenGL; mj_forward geometry only; no mj_step",
+  "output_sha256": "1d535c3b1349e34a0a9f395c9eb0eccf2aeabee557f1e26743892c70a8368647",
+  "completed_stop": false
+}
