@@ -1,0 +1,128 @@
+{
+  "scope": "Read-only independent observations; failed development data, no phase acceptance",
+  "inputs": {
+    "predictive.cpp": {
+      "sha256": "6ed79cb0859220aec8b85633ebbbe723ddb87f2ca92a8418e70a1f30c17adc7d",
+      "bytes": 38254,
+      "read_copy": "/private/tmp/phase5-math-specialist-20261007/predictive.cpp"
+    },
+    "predictive.hpp": {
+      "sha256": "78a42b67848c02a8b39572f2cc9194cf6a704c46db00c2a3a1be5e0cfbbb2bbc",
+      "bytes": 7731,
+      "read_copy": "/private/tmp/phase5-math-specialist-20261007/predictive.hpp"
+    },
+    "phase5_benchmark.cpp": {
+      "sha256": "24f5253a6d74556c85088eb3cea70a289047d7fd7725c66b74baf4714732c578",
+      "bytes": 42268,
+      "read_copy": "/private/tmp/phase5-math-specialist-20261007/phase5_benchmark.cpp"
+    },
+    "q10000_raw.csv": {
+      "sha256": "113a5a1c82e97d6a624656b78fc6383363a76bccf8cc149406071fc57216ee2a",
+      "bytes": 2833074,
+      "read_copy": "/private/tmp/phase5-math-specialist-20261007/q10000_raw.csv"
+    },
+    "q10000_preview.csv": {
+      "sha256": "1422365f4a04c8cf70018588bc95018549e8bcbe57ce6577e679002cb2a02753",
+      "bytes": 3219767,
+      "read_copy": "/private/tmp/phase5-math-specialist-20261007/q10000_preview.csv"
+    },
+    "q10000_cycles.csv": {
+      "sha256": "2fac17e0e151073d92d4a4ca1e1e4816e417965cb266716fdc899b3ea629085e",
+      "bytes": 123678,
+      "read_copy": "/private/tmp/phase5-math-specialist-20261007/q10000_cycles.csv"
+    },
+    "inspection_fr3.xml": {
+      "sha256": "0231a374b6173f38ff63a214932dfca624594d23daf5f4b0c4a0e8e02016ebae",
+      "bytes": 11239,
+      "read_copy": "/private/tmp/phase5-math-specialist-20261007/inspection_fr3.xml"
+    }
+  },
+  "observations": {
+    "reference-v14-Q100": {
+      "raw_sha256": "5bcbe19652084694b61d8de1903f92f21788c85e55947e751e82083df2fd7fb1",
+      "path_substeps": 390,
+      "commits": 195,
+      "first_tcp_error_m": 0.0032157144376458863,
+      "last_tcp_error_m": 0.011847808370013611,
+      "max_tcp_error_m": 0.012076000088711406,
+      "s_at_last_path_substep": 0.06029618753193305,
+      "max_measured_joint_travel_rad": 0.005231633321553186,
+      "max_abs_requested_model_acc": 0.9851730972394649,
+      "max_abs_applied_model_acc": 0.9851731253410508,
+      "max_abs_command_acc": 0.0413364811273219,
+      "max_abs_physical_acc": 0.07185231161313618,
+      "max_acceleration_identity_residual": 1.1102230246251565e-16,
+      "max_previous_command_vs_measured_v_gap": 0.0037852902935823687
+    },
+    "reference-tracking-v19-full-Q10000": {
+      "raw_sha256": "113a5a1c82e97d6a624656b78fc6383363a76bccf8cc149406071fc57216ee2a",
+      "path_substeps": 278,
+      "commits": 139,
+      "first_tcp_error_m": 0.0032157119500657457,
+      "last_tcp_error_m": 0.00033733772134242795,
+      "max_tcp_error_m": 0.0032157123525268843,
+      "s_at_last_path_substep": 3.8213979419726614e-08,
+      "max_measured_joint_travel_rad": 0.0028229662734999827,
+      "max_abs_requested_model_acc": 0.9270207880003334,
+      "max_abs_applied_model_acc": 0.927020813638981,
+      "max_abs_command_acc": 0.08381133267408233,
+      "max_abs_physical_acc": 0.07894457395852227,
+      "max_acceleration_identity_residual": 1.1102230246251565e-16,
+      "max_previous_command_vs_measured_v_gap": 0.003637355036678455
+    }
+  },
+  "highQ_selected_accepted_previews": [
+    {
+      "tick": 500,
+      "s_initial": 0.0,
+      "s_terminal": 0.00010781180312655758,
+      "tcp_error_initial_m": 0.0032157093225693213,
+      "tcp_error_terminal_m": 0.0006407617931563863
+    },
+    {
+      "tick": 550,
+      "s_initial": 7.931762498392124e-15,
+      "s_terminal": 1.2253809941253462e-15,
+      "tcp_error_initial_m": 0.002945412644313157,
+      "tcp_error_terminal_m": 0.010620524409473819
+    },
+    {
+      "tick": 570,
+      "s_initial": 9.417375038561127e-15,
+      "s_terminal": -5.791750133866553e-13,
+      "tcp_error_initial_m": 0.0026043976101531754,
+      "tcp_error_terminal_m": 0.011595306154210394
+    },
+    {
+      "tick": 638,
+      "s_initial": 1.0310676155539689e-08,
+      "s_terminal": 0.02497118450296971,
+      "tcp_error_initial_m": 0.00037147941151804547,
+      "tcp_error_terminal_m": 0.0006299436134651493
+    }
+  ],
+  "synthetic_reference": {
+    "dt_s": 0.004,
+    "duration_s": 0.4,
+    "position_servo_pole_per_s": 10.0,
+    "input_acceleration": 1.0,
+    "kinematic_prediction": {
+      "q": 0.08000000000000002,
+      "v": 0.4
+    },
+    "measured_state_adapter_servo": {
+      "q": 0.0030883009613142543,
+      "v": 0.014794670608221277,
+      "position_target": 0.004567768022136382
+    },
+    "command_acceleration_with_servo_model": {
+      "q": 0.0510253289875623,
+      "v": 0.29774671012437753,
+      "position_target": 0.08080000000000005,
+      "command_velocity": 0.4000000000000003,
+      "closed_form_target_error": 4.163336342344337e-17
+    },
+    "scope": "Synthetic scalar lag fixture only. The pole is a declared example, not identified FR3 dynamics; no MuJoCo or robot run."
+  },
+  "synthetic_reference_source_sha256": "bca98584ddc2d5e4bd4a0ba86fe9112d68780973aa3b1068d295ee3e58261d82"
+}

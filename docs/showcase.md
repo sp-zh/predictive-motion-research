@@ -34,6 +34,15 @@ Kinematics validation figure; provenance is recorded in
 screening. These are offline pose checks, not a continuous executed trajectory.
 [Figure manifest](../figures/offline_inspection_figure_manifest.json).
 
+![Phase 5 position-servo contract diagnostic](../figures/phase5/phase5_servo_contract_v19.png)
+
+The retained failed high-tracking-weight development run corrects the initial
+pose while path progress remains negligible. Model input, command acceleration
+and measured physical acceleration have different meanings under the existing
+position servo. This is a paused-simulation development diagnostic, not Phase 5
+acceptance. [Independent mathematical audit](../reviews/evidence/predictive_math_specialist_20261007.md)
+and [source/output hashes](../figures/phase5/phase5_servo_contract_v19.json).
+
 ## Downloadable 3D models
 
 | Asset | Format / units | Purpose |

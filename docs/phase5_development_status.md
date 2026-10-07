@@ -8,12 +8,15 @@ The paused-simulation reference-v14 produces 195 predictive commands and advance
 
 The progress stop now preserves discrete speed continuation under bounded jerk. Root independently verifies five analytic cases and 1,000 sampled states. A focused test exactly replays all 1,390 original pre-stop physical records and applies the new shared stop. It completes in .932 s virtual time, with zero accepted speed, physical speed below 1e-4 rad/s, zero progress speed within numerical precision and zero progress acceleration. All recorded stop checks pass. This closes RET-002 only in its documented speed-continuation and moving-replay envelope. All 233 complete stop cycles still miss 4 ms.
 
-The Dell worker continues development comparisons of higher tracking weights and numerical behavior, followed by a complete 3-second functional diagnostic. The 10 mm accuracy requirement, physical/command limits, original SI-row validation and native SOLVED-only policy remain. Paused reference budgets are distinct from the unchanged 50 ms online planner budget. No held-out evaluation tuning or final research claim is authorized from these development records.
+The high-tracking-weight v19 run genuinely prepares the initial pose: measured position error falls from 3.216 to .337 mm over 139 predictive commits, while progress remains negligible before native INACCURATE. It does not establish indefinite progress starvation. Independent mathematical review identifies a more fundamental command/plant contract mismatch: the optimizer's acceleration input is converted from measured velocity into an accumulated position target, while the preview treats that input as physical double-integrator acceleration. The recorded acceleration identity is independently checked; a synthetic known-servo counterexample demonstrates the mismatch without claiming FR3 dynamics.
+
+The Dell worker is addressing this contract with separate measured physical and accepted command states and a validated, robot-model/state-estimator-accessible servo prediction. A model may not use privileged simulation state or plant rollouts. An optional discounted progress objective passes its mathematical checks, but the first full diagnostic stops after three predictive commits on original SI-row CONSTRAINT_VIOLATION; this failed epoch is retained. Neither a cost change nor initial preparation repairs the actuator contract by itself. A complete 3-second functional diagnostic remains required. The 10 mm accuracy requirement, physical/command limits, original SI-row validation and native SOLVED-only policy remain. Paused reference budgets are distinct from the unchanged 50 ms online planner budget. No held-out evaluation tuning or final research claim follows from these development records.
 
 Evidence and scope:
 
 - [Preliminary implementation review](../reviews/evidence/phase5_implementation_review_20261006.md)
 - [Independent moving-stop review](../reviews/evidence/phase5_moving_stop_root_review_20261007.md)
+- [Independent command/servo mathematical review](../reviews/evidence/predictive_math_specialist_20261007.md)
 - [Issue register](../reviews/issue_register.md)
 - `results/phase5-early-review/reference-v14`: original failed motion and independent observations
 - `results/phase5-early-review/moving-stop-v1`: immutable identities, exact replay/stop data and independent reviews
