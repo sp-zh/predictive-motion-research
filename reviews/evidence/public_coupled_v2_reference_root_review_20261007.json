@@ -1,0 +1,479 @@
+{
+  "status": "PASS_FIXED_FR3_REFERENCE_CONTRACT_V2_INDEPENDENT",
+  "prelisted_input_count": 88,
+  "input_hashes_unchanged": true,
+  "checked_input_hashes": {
+    "/home/codextransfer/predictive_motion/scripts/phase5/run_public_coupled_servo_training_v1.py": "c66b5dafc4e03a1d495d7e1fa34d83d2f289d6d222aeb27f255e3f09d8d7d9c6",
+    "/home/codextransfer/predictive_motion/scripts/phase5/public_coupled_servo_v1.py": "3e21e46ffc65e9ba4150b21ea26a8c63fb415d2e86c07b6465040e08cc494080",
+    "/home/codextransfer/predictive_motion/scripts/phase5/coupled_friction_box_v1.py": "9a5dfdc3eb8a0355e9e8b8088beca775992b9c86bb269f4d64b8ffb8ff035ed7",
+    "/home/codextransfer/predictive_motion/tools/phase5_public_servo_constants/public_servo_constants.cpp": "0ae464efe88ef9f216cc21df0440215faef7101a75d747ccc06d628cc2cd45df",
+    "/home/codextransfer/predictive_motion/build-public-coupled-servo-v1/public_servo_constants": "659c7f559b98b372da260d0d64f2f53ab5498b11cf19e409e0b18d4397d8393b",
+    "/home/codextransfer/predictive_motion/experiments/generated/inspection/scene.xml": "fdbb460120c287785dceafe2f320e8b79865203a09aebb5027ec8fd53f4628a5",
+    "/home/codextransfer/predictive_motion/experiments/generated/inspection/inspection_fr3.xml": "0231a374b6173f38ff63a214932dfca624594d23daf5f4b0c4a0e8e02016ebae",
+    "/mnt/d/CodexTransfer/projects/predictive_motion/phase5/raw/servo-identification-v1-training/raw.csv": "ab9d14efa1a5886c0683db25345f24d5cacd55343e2768eb60536fa180a11dce",
+    "/home/codextransfer/predictive_motion/results/phase5/development/public-coupled-servo-v1-training/public_constants.json": "d37c9a12539345fd1dbb6718cd273584140359ca2bd9834442bf2228e50f6bdd",
+    "/home/codextransfer/predictive_motion/results/phase5/development/public-coupled-servo-v1-training/protocol.json": "2dbfe72288635e735a4e3d41c148dca61bcae0606896cacf8f114413b3e3cdfe",
+    "/home/codextransfer/predictive_motion/results/phase5/development/public-coupled-servo-v1-reference/oracle.json": "54fffcd5332425530d3110d9cd6db44bb520c64eeca381a30e59c0544cde2e18",
+    "/home/codextransfer/predictive_motion/results/phase5/development/public-coupled-servo-v1-reference/READY.json": "29dc692251697ad19943504408f7528e7f54b180dccb9109b08b5e56cff46935",
+    "/opt/ros/jazzy/lib/python3.12/site-packages/pinocchio/pinocchio_pywrap_default.cpython-312-x86_64-linux-gnu.so": "a115d70ec5df135773965456048ed60ab7af5880729fb7cb93007c8d87d0aeea",
+    "/opt/ros/jazzy/lib/python3.12/site-packages/pinocchio/__init__.py": "143596c0a5d7aacdc1643d2247ed1ed7817c858b0970510ae5e90e2bb9804034",
+    "/home/codextransfer/predictive_motion/.vendor/mujoco-3.3.7/lib/libmujoco.so.3.3.7": "23841520ecf60ad648405674a757f260949f7cf6b44deb284398b9851b3f061d",
+    "/opt/ros/jazzy/include/pinocchio/src/algorithm/crba.hxx": "f3be63677ac61e7bb44be43d988496388616b9c2c59b2ec246469b487a60b428",
+    "/opt/ros/jazzy/lib/x86_64-linux-gnu/libeigenpy.so": "fbe3d9febb285aa6a3a26fa3b983be4942d66bba07f0288f13d7ca8b936ba13a",
+    "/lib/x86_64-linux-gnu/libboost_python312.so.1.83.0": "13cb4c3c2db1fb3b110addbf58484bafdbb4ed53eada134748ab8ebbad59a69f",
+    "/opt/ros/jazzy/lib/x86_64-linux-gnu/libpinocchio_parsers.so.4.1.0": "2215f45357dd0368f16e4b6590d5814f107467abe605e7727dcec5ce37b99fbc",
+    "/opt/ros/jazzy/lib/x86_64-linux-gnu/liburdfdom_world.so.4.0": "a566125174caa5bafb544f59b9c727fc3b505eeeae1fc0e8c9ca8fc52dc2accc",
+    "/lib/x86_64-linux-gnu/libconsole_bridge.so.1.0": "bb9ced68ce1209c48b55ddcebe913542197dc745c71febd65205ff0a4d833651",
+    "/opt/ros/jazzy/lib/x86_64-linux-gnu/libpinocchio_collision.so.4.1.0": "7b89b3c51c9e3c15b55ea51745af62e60c2647c2ae9cf21a05ecc7b65802750c",
+    "/opt/ros/jazzy/lib/x86_64-linux-gnu/libpinocchio_default.so.4.1.0": "74ba8a3355cb0b3a1a93d3f985e9e772d055fc3c96d22bac1575ed641773ed7e",
+    "/opt/ros/jazzy/lib/x86_64-linux-gnu/libcoal.so.3.0.3": "ece35aac64696a666159e711a2480f797261fc7e6fc39e3797719a3e01b8721a",
+    "/lib/x86_64-linux-gnu/libboost_serialization.so.1.83.0": "cb6b870f1c1278453f38b01f5e0c3e7feff8f23fcd533c8969cf08e6364b890c",
+    "/lib/x86_64-linux-gnu/libstdc++.so.6": "1fd75fe70354a416d75aef22bcae68c47bd25d20e2d0568c30b1a9838cf62f11",
+    "/lib/x86_64-linux-gnu/libm.so.6": "fce00b6f25f459cf4ae0b7fae4257909a1a8a86f9149e7c029a5d617baf1ccd0",
+    "/lib/x86_64-linux-gnu/libgcc_s.so.1": "d93224d2b0dab4247598be683adca02f5cf00586f99c187579cd7e92058fb7cb",
+    "/lib/x86_64-linux-gnu/libc.so.6": "3a15d66867d83762c7f2f1e37359cb8f6c5743edb369c65285cb0b1c4f7498bf",
+    "/lib/x86_64-linux-gnu/libboost_filesystem.so.1.83.0": "2c137b29a3740fb6d12a4c18823bc2b15215646c3ba3bb208b89782df28559f0",
+    "/opt/ros/jazzy/lib/x86_64-linux-gnu/liburdfdom_model.so.4.0": "868a29c0cbdf3e0f9de00f78f4f422d4fbe87c372c01ebe9a9e92e0baacb824a",
+    "/lib/x86_64-linux-gnu/libtinyxml2.so.10": "f9e01d87fb78af744a426af8c992e94abf8cd3810a256e117bcc94cd84d2be6d",
+    "/lib/x86_64-linux-gnu/libassimp.so.5": "f5524225032201d129cac2adf305af9c7ffcf612d8662f3c87a2d891d5cd3d18",
+    "/lib/x86_64-linux-gnu/liboctomap.so.1.9": "ec8bfd6cce31e7fd3dced8d5489109f6bca3d066c8ac3035b032940a8eb9ef50",
+    "/lib/x86_64-linux-gnu/liboctomath.so.1.9": "efd1dcfc111d271e13173f02153c0a950bbce9ccd53d1319990a5e6ff56c8dca",
+    "/lib64/ld-linux-x86-64.so.2": "c20a2dc8917c755f02b94049356320fe1f62ac7d9f8994731f807d9df39302da",
+    "/lib/x86_64-linux-gnu/libz.so.1": "86200da370f20476a2507e9097a789b5ef97269b4ca8d5e164ad82dab9d99892",
+    "/lib/x86_64-linux-gnu/libdraco.so.8": "b368d354f2778606b2553037fc8a3212719ee76a82711c60f7c72de49818e781",
+    "/lib/x86_64-linux-gnu/libminizip.so.1": "e4b1f563e4e92c4df7b816726211724c1e24884a260ac3885218191951a174da",
+    "/lib/x86_64-linux-gnu/libpugixml.so.1": "b5493d9c8c6e36e3b72e38564b7e287ad925ab717577ded997465f9ac9da1c9e",
+    "/home/codextransfer/predictive_motion/.vendor/menagerie/franka_fr3/assets/link0.stl": "dfc6d94330de8ddb005b311bfdba9f3b8e1aa7c256b71592ee7ff32cb9a9a5aa",
+    "/home/codextransfer/predictive_motion/.vendor/menagerie/franka_fr3/assets/link0_0.obj": "c830c25874a8a5736580cfce6f247fd145782d0b050fa424b00dd8194d8b2872",
+    "/home/codextransfer/predictive_motion/.vendor/menagerie/franka_fr3/assets/link0_1.obj": "12f0affb9b540574f28ddf579413455a4728a093498457c9408539c31e2efcb8",
+    "/home/codextransfer/predictive_motion/.vendor/menagerie/franka_fr3/assets/link0_2.obj": "19a4d2fd6fef4fa09e109349bdaa315a00a00b17c814392902665bd92217f94c",
+    "/home/codextransfer/predictive_motion/.vendor/menagerie/franka_fr3/assets/link0_3.obj": "ed22c0de7adbc10618321715e047d1d9a36acca3260bc9497acd3ebda998e4e0",
+    "/home/codextransfer/predictive_motion/.vendor/menagerie/franka_fr3/assets/link0_4.obj": "bc99c6e6b4752daa010ec2ac4ab38457eca0a1b75fcb4a60139b8200e186454d",
+    "/home/codextransfer/predictive_motion/.vendor/menagerie/franka_fr3/assets/link0_5.obj": "dbccb46d8a3bfd602cd110a0bf69036e42661ec89c0074f18dc10dbdd2c0325e",
+    "/home/codextransfer/predictive_motion/.vendor/menagerie/franka_fr3/assets/link0_6.obj": "9205596427463353249ab5acc7c7b4f5eb8be358527cd9e229b656b16f5bd1fe",
+    "/home/codextransfer/predictive_motion/.vendor/menagerie/franka_fr3/assets/link1.obj": "a9e73987b774f3fb76ec640c2f6e172b128736363792f1697a13d7795f745663",
+    "/home/codextransfer/predictive_motion/.vendor/menagerie/franka_fr3/assets/link1.stl": "e41a39a94108fcf56aacff603fc91ec80541f4c1af17b51a0de5617f5566e6d2",
+    "/home/codextransfer/predictive_motion/.vendor/menagerie/franka_fr3/assets/link2.obj": "1818f1eed57552d006a3e9353a670a39c271ac67833274efcee2403db7e4fa92",
+    "/home/codextransfer/predictive_motion/.vendor/menagerie/franka_fr3/assets/link2.stl": "370f7605a0fae3529db169ded50f52f171024aa792d4d773bc84197301f6a039",
+    "/home/codextransfer/predictive_motion/.vendor/menagerie/franka_fr3/assets/link3.stl": "0a8d638b9349c6c0eefc4e888636ac4838c4b27170f18a51699321118af709c1",
+    "/home/codextransfer/predictive_motion/.vendor/menagerie/franka_fr3/assets/link3_0.obj": "d15c6360be859d55ed1e0d5b08317c4c26d5b3a2a4743c04faf4cc07080f5c9a",
+    "/home/codextransfer/predictive_motion/.vendor/menagerie/franka_fr3/assets/link3_1.obj": "89c2c02bdb1c5175d42c5181b4dcc0bb282fab1c5a0c2f99183c156ad45c2f6d",
+    "/home/codextransfer/predictive_motion/.vendor/menagerie/franka_fr3/assets/link4.stl": "0180ebb5772ec9840cb049750cffb29a9ddc90311752a16ea34757782ef9e48d",
+    "/home/codextransfer/predictive_motion/.vendor/menagerie/franka_fr3/assets/link4_0.obj": "8da93d2b65258890be3dfaa39f3cef5acd3d85e7e4e515eb6eb7e1284c3af795",
+    "/home/codextransfer/predictive_motion/.vendor/menagerie/franka_fr3/assets/link4_1.obj": "0428a185f74edb3a23c81d71adc9269c8b63f73805f9d210960a5d425fee060d",
+    "/home/codextransfer/predictive_motion/.vendor/menagerie/franka_fr3/assets/link5.stl": "dd17e688c7870e722283525879643d53a74c0024d328b0e14b034b54c8b6c31a",
+    "/home/codextransfer/predictive_motion/.vendor/menagerie/franka_fr3/assets/link5_0.obj": "bcc32346b6558d8a1c42594b6988d4f6f68ece2e0a769c28b0242d5b398e1f86",
+    "/home/codextransfer/predictive_motion/.vendor/menagerie/franka_fr3/assets/link5_1.obj": "d2ef3af3be96ebb7c3f78cf3cedbdfb36b375db8dc32068c5dca613d9086e5e5",
+    "/home/codextransfer/predictive_motion/.vendor/menagerie/franka_fr3/assets/link5_2.obj": "a897831482eed642e5d441d1a1abf0ede89d37672f8168ce2cd40d620e25daca",
+    "/home/codextransfer/predictive_motion/.vendor/menagerie/franka_fr3/assets/link6.stl": "20b768e99a0e0440b5754dcca108016434e57937cc356acd9c352ccd3cb27f77",
+    "/home/codextransfer/predictive_motion/.vendor/menagerie/franka_fr3/assets/link6_0.obj": "f2a77f8890b3c24de62c6f23c2c63e59cb95b0e3986741d00ac12ec733156635",
+    "/home/codextransfer/predictive_motion/.vendor/menagerie/franka_fr3/assets/link6_1.obj": "4165ccedf27ec576c8fe3ec86702a43cbdacfb2a25328f6762721a92d22ca8fc",
+    "/home/codextransfer/predictive_motion/.vendor/menagerie/franka_fr3/assets/link6_2.obj": "1111395c7a1c4a1c803e35969fb4cdd5a183a21292a0da5f0519f6d684083445",
+    "/home/codextransfer/predictive_motion/.vendor/menagerie/franka_fr3/assets/link6_3.obj": "86fc49381273ccc0079b1f7ce5a77ce363e85ef4df5ebcf2b07c1ae6173043e6",
+    "/home/codextransfer/predictive_motion/.vendor/menagerie/franka_fr3/assets/link6_4.obj": "ed3f2d2a05b7d7704f4d04f38b99ce59792a8ef79e2f989567a0319a9f029599",
+    "/home/codextransfer/predictive_motion/.vendor/menagerie/franka_fr3/assets/link6_5.obj": "435abeff7bded0c6e9af1e3f98857413fd3964a65c138efc9d99703d9dfffbbb",
+    "/home/codextransfer/predictive_motion/.vendor/menagerie/franka_fr3/assets/link6_6.obj": "b76323550be892e32482f5dee5ca0631b080cf6543404495961834de19f89e71",
+    "/home/codextransfer/predictive_motion/.vendor/menagerie/franka_fr3/assets/link6_7.obj": "5189566a36197a91792e8704f9dd0097e63a1141c5aca72427fb977d4389c72a",
+    "/home/codextransfer/predictive_motion/.vendor/menagerie/franka_fr3/assets/link7.stl": "92ac6afcf7574c034d3170d8a68e95ac9048ab9d0dd5bbd8311b86e551b9ab1c",
+    "/home/codextransfer/predictive_motion/.vendor/menagerie/franka_fr3/assets/link7_0.obj": "bc0953056e78a063c0de7c81f7ba320b74f7957ee5e7da0786e678be64769ab2",
+    "/home/codextransfer/predictive_motion/.vendor/menagerie/franka_fr3/assets/link7_1.obj": "bab975d59b724a0fac020d80c4483b77d29b9217485f0aae0b866a1b70b56fad",
+    "/home/codextransfer/predictive_motion/.vendor/menagerie/franka_fr3/assets/link7_2.obj": "7f7b27bab891757731d78c0b717a1da3fc48cebb6db5d3cd37994d768ce9b509",
+    "/home/codextransfer/predictive_motion/.vendor/menagerie/franka_fr3/assets/link7_3.obj": "3ccfdcf6043602577da37969244a660ebd72bc4bd172b7fbeb542809b62dccff",
+    "/home/codextransfer/predictive_motion/cad/generated/fixture_visual.stl": "d8e0e8d5083a67cce184725418189cb7c65772679128c09800a365c1becfd78b",
+    "/home/codextransfer/predictive_motion/cad/generated/tool_visual.stl": "ab03c2aa740426b3d2286d065a72ad5e25e7aef357f917225476caff24a4315a",
+    "/home/codextransfer/predictive_motion/scripts/phase5/run_public_coupled_reference_v2.py": "b65ad2856f2035b4edc5a83263a02bd9adb32ea8d02258480b89d08e907eeacd",
+    "/home/codextransfer/predictive_motion/scripts/phase5/public_coupled_servo_v2.py": "89a0ce2122aaa709afe3195d1cca269debca3e70710462cbdbeea37bd48e480a",
+    "/home/codextransfer/predictive_motion/scripts/phase5/prepare_public_coupled_servo_v2.py": "76d4ee2f1ea97f65d2a861474f97aeef2bb3889f8b2422b8394abffaf035af11",
+    "/home/codextransfer/predictive_motion/results/phase5/development/public-coupled-servo-v2-reference-contract/protocol.json": "0fee007e120496da392a29cf4e89a11ff449e2e9e2f76a28d944849039863ff5",
+    "/usr/lib/python3/dist-packages/numpy/__init__.py": "22cd1535fa14d74ef6f457cca149ffdc80875f460be313b8f895273f78bc402e",
+    "/usr/lib/python3/dist-packages/numpy/linalg/_umath_linalg.cpython-312-x86_64-linux-gnu.so": "7774486b2cea0a7ffbe5212043b38a5851511b90b250b153fd4a3f8d113545f0",
+    "/lib/x86_64-linux-gnu/libblas.so.3": "e748efcae5753fe4a652877fccdb5895ac6f7605668a2db878b19c914e78e3a8",
+    "/lib/x86_64-linux-gnu/liblapack.so.3": "851bb1fc5833ede9ed704b4417a251a899976d5e0915de40452615187a65278f",
+    "/lib/x86_64-linux-gnu/libgfortran.so.5": "342618ccfebe840446e4ef2b7893f4161b2084845e570f42d68a70bfde58a58d",
+    "/usr/lib/python3/dist-packages/numpy/core/_multiarray_umath.cpython-312-x86_64-linux-gnu.so": "ade966a58746fa5bc8e937a6c7d2d0a3b1e49adbb9890c3a3267157131f22313"
+  },
+  "original_v1_freeze_unchanged": true,
+  "root_oracle_sha256": "54fffcd5332425530d3110d9cd6db44bb520c64eeca381a30e59c0544cde2e18",
+  "root_box_fixtures": [
+    {
+      "name": "zero_drive",
+      "force_error": 0.0,
+      "original_KKT": 0.0,
+      "branches": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "name": "all_lower",
+      "force_error": 0.0,
+      "original_KKT": 0.0,
+      "branches": [
+        -1,
+        -1,
+        -1,
+        -1,
+        -1,
+        -1,
+        -1
+      ]
+    },
+    {
+      "name": "all_upper",
+      "force_error": 0.0,
+      "original_KKT": 0.0,
+      "branches": [
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1
+      ]
+    },
+    {
+      "name": "strict_mixed_active_set",
+      "force_error": 8.326672684688674e-17,
+      "original_KKT": 3.469446951953614e-17,
+      "branches": [
+        -1,
+        0,
+        1,
+        0,
+        -1,
+        1,
+        0
+      ]
+    },
+    {
+      "name": "axis_clip_counterexample",
+      "force_error": 2.220446049250313e-16,
+      "original_KKT": 7.771561172376096e-16,
+      "branches": [
+        1,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "name": "threshold_lower",
+      "force_error": 0.0,
+      "original_KKT": 2.7755575615628914e-16,
+      "branches": [
+        -1,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "name": "threshold_upper",
+      "force_error": 0.0,
+      "original_KKT": 2.7755575615628914e-16,
+      "branches": [
+        1,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ]
+    }
+  ],
+  "synthetic_ratios": [
+    {
+      "ratio": 0.5,
+      "B_s_inv": [
+        105.26315789473685,
+        105.26315789473685,
+        105.26315789473685,
+        105.26315789473685,
+        105.26315789473685,
+        105.26315789473685,
+        105.26315789473685
+      ],
+      "standard_formula_max_error": 0.0
+    },
+    {
+      "ratio": 2.0,
+      "B_s_inv": [
+        105.26315789473685,
+        105.26315789473685,
+        105.26315789473685,
+        105.26315789473685,
+        105.26315789473685,
+        105.26315789473685,
+        105.26315789473685
+      ],
+      "standard_formula_max_error": 0.0
+    }
+  ],
+  "negative_parameter_cases": [
+    {
+      "name": "timeconst0.003",
+      "rejected": true,
+      "reason": "unsupported reference timeconst below2*physics_dt"
+    },
+    {
+      "name": "ratio0",
+      "rejected": true,
+      "reason": "unsupported/nonfinite soft friction parameters"
+    },
+    {
+      "name": "negative_timeconst",
+      "rejected": true,
+      "reason": "unsupported/nonfinite soft friction parameters"
+    },
+    {
+      "name": "nonfinite_ratio",
+      "rejected": true,
+      "reason": "unsupported/nonfinite soft friction parameters"
+    },
+    {
+      "name": "different_solimp_profile",
+      "rejected": true,
+      "reason": "unsupported impedance profile; fixed FR3 baseline only"
+    }
+  ],
+  "selected_training_windows": [
+    {
+      "start_tick": 100,
+      "substeps": 1,
+      "scorable": true,
+      "start_phase": "warmup",
+      "stopping_substeps": 0,
+      "v1_v2_q_difference": 0.0,
+      "v1_v2_v_difference": 0.0,
+      "q_error_rad": 0.0,
+      "v_error_rad_s": 1.3698894449354349e-16
+    },
+    {
+      "start_tick": 100,
+      "substeps": 2,
+      "scorable": true,
+      "start_phase": "warmup",
+      "stopping_substeps": 0,
+      "v1_v2_q_difference": 0.0,
+      "v1_v2_v_difference": 0.0,
+      "q_error_rad": 0.0,
+      "v_error_rad_s": 1.4674676404591303e-16
+    },
+    {
+      "start_tick": 100,
+      "substeps": 20,
+      "scorable": true,
+      "start_phase": "warmup",
+      "stopping_substeps": 0,
+      "v1_v2_q_difference": 0.0,
+      "v1_v2_v_difference": 0.0,
+      "q_error_rad": 0.0,
+      "v_error_rad_s": 2.404760418572849e-16
+    },
+    {
+      "start_tick": 100,
+      "substeps": 400,
+      "scorable": true,
+      "start_phase": "warmup",
+      "stopping_substeps": 0,
+      "v1_v2_q_difference": 0.0,
+      "v1_v2_v_difference": 0.0,
+      "q_error_rad": 4.440892098500626e-16,
+      "v_error_rad_s": 1.7453994792440003e-15
+    },
+    {
+      "start_tick": 500,
+      "substeps": 1,
+      "scorable": true,
+      "start_phase": "excitation",
+      "stopping_substeps": 0,
+      "v1_v2_q_difference": 0.0,
+      "v1_v2_v_difference": 0.0,
+      "q_error_rad": 0.0,
+      "v_error_rad_s": 2.316780694528321e-16
+    },
+    {
+      "start_tick": 500,
+      "substeps": 2,
+      "scorable": true,
+      "start_phase": "excitation",
+      "stopping_substeps": 0,
+      "v1_v2_q_difference": 0.0,
+      "v1_v2_v_difference": 0.0,
+      "q_error_rad": 0.0,
+      "v_error_rad_s": 1.3997055340743783e-16
+    },
+    {
+      "start_tick": 500,
+      "substeps": 20,
+      "scorable": true,
+      "start_phase": "excitation",
+      "stopping_substeps": 0,
+      "v1_v2_q_difference": 0.0,
+      "v1_v2_v_difference": 0.0,
+      "q_error_rad": 0.0,
+      "v_error_rad_s": 5.38108199399175e-16
+    },
+    {
+      "start_tick": 500,
+      "substeps": 400,
+      "scorable": true,
+      "start_phase": "excitation",
+      "stopping_substeps": 0,
+      "v1_v2_q_difference": 0.0,
+      "v1_v2_v_difference": 0.0,
+      "q_error_rad": 1.3877787807814457e-17,
+      "v_error_rad_s": 1.1011157263762783e-15
+    },
+    {
+      "start_tick": 1250,
+      "substeps": 1,
+      "scorable": true,
+      "start_phase": "excitation",
+      "stopping_substeps": 0,
+      "v1_v2_q_difference": 0.0,
+      "v1_v2_v_difference": 0.0,
+      "q_error_rad": 0.0,
+      "v_error_rad_s": 6.591949208711867e-17
+    },
+    {
+      "start_tick": 1250,
+      "substeps": 2,
+      "scorable": true,
+      "start_phase": "excitation",
+      "stopping_substeps": 0,
+      "v1_v2_q_difference": 0.0,
+      "v1_v2_v_difference": 0.0,
+      "q_error_rad": 0.0,
+      "v_error_rad_s": 3.2959746043559335e-16
+    },
+    {
+      "start_tick": 1250,
+      "substeps": 20,
+      "scorable": true,
+      "start_phase": "excitation",
+      "stopping_substeps": 0,
+      "v1_v2_q_difference": 0.0,
+      "v1_v2_v_difference": 0.0,
+      "q_error_rad": 0.0,
+      "v_error_rad_s": 1.938553484404082e-16
+    },
+    {
+      "start_tick": 1250,
+      "substeps": 400,
+      "scorable": true,
+      "start_phase": "excitation",
+      "stopping_substeps": 0,
+      "v1_v2_q_difference": 0.0,
+      "v1_v2_v_difference": 0.0,
+      "q_error_rad": 2.220446049250313e-16,
+      "v_error_rad_s": 2.288967626551397e-15
+    },
+    {
+      "start_tick": 2400,
+      "substeps": 1,
+      "scorable": true,
+      "start_phase": "excitation",
+      "stopping_substeps": 0,
+      "v1_v2_q_difference": 0.0,
+      "v1_v2_v_difference": 0.0,
+      "q_error_rad": 0.0,
+      "v_error_rad_s": 2.6725583551767684e-16
+    },
+    {
+      "start_tick": 2400,
+      "substeps": 2,
+      "scorable": true,
+      "start_phase": "excitation",
+      "stopping_substeps": 0,
+      "v1_v2_q_difference": 0.0,
+      "v1_v2_v_difference": 0.0,
+      "q_error_rad": 0.0,
+      "v_error_rad_s": 1.5070410197548512e-16
+    },
+    {
+      "start_tick": 2400,
+      "substeps": 20,
+      "scorable": true,
+      "start_phase": "excitation",
+      "stopping_substeps": 0,
+      "v1_v2_q_difference": 0.0,
+      "v1_v2_v_difference": 0.0,
+      "q_error_rad": 1.3877787807814457e-17,
+      "v_error_rad_s": 2.3288662664988635e-16
+    },
+    {
+      "start_tick": 2400,
+      "substeps": 400,
+      "scorable": true,
+      "start_phase": "excitation",
+      "stopping_substeps": 200,
+      "v1_v2_q_difference": 0.0,
+      "v1_v2_v_difference": 0.0,
+      "q_error_rad": 2.220446049250313e-16,
+      "v_error_rad_s": 1.869598226234004e-15
+    },
+    {
+      "start_tick": 2500,
+      "substeps": 1,
+      "scorable": true,
+      "start_phase": "stopping",
+      "stopping_substeps": 1,
+      "v1_v2_q_difference": 0.0,
+      "v1_v2_v_difference": 0.0,
+      "q_error_rad": 0.0,
+      "v_error_rad_s": 2.40692882291782e-16
+    },
+    {
+      "start_tick": 2500,
+      "substeps": 2,
+      "scorable": true,
+      "start_phase": "stopping",
+      "stopping_substeps": 2,
+      "v1_v2_q_difference": 0.0,
+      "v1_v2_v_difference": 0.0,
+      "q_error_rad": 0.0,
+      "v_error_rad_s": 1.9147010366094008e-16
+    },
+    {
+      "start_tick": 2500,
+      "substeps": 20,
+      "scorable": true,
+      "start_phase": "stopping",
+      "stopping_substeps": 20,
+      "v1_v2_q_difference": 0.0,
+      "v1_v2_v_difference": 0.0,
+      "q_error_rad": 0.0,
+      "v_error_rad_s": 2.8124204354273985e-16
+    },
+    {
+      "start_tick": 2500,
+      "substeps": 400,
+      "scorable": false,
+      "available_substeps": 380
+    }
+  ],
+  "physical_future_state_resets": false,
+  "new_fits_or_plant": false,
+  "limits": [
+    "Reference coefficient/rejection and selected old TRAIN compatibility only",
+    "Seven-coordinate FR3 prototype, not robot-agnostic library or whole Python environment freeze",
+    "Synthetic ratio changes are coefficient tests; no parameter-generalized prediction accuracy",
+    "No new holdout, accuracy/domain expansion, main MPC, stopping certificate or Phase5 acceptance"
+  ],
+  "source_sha256": "b512b50f2f70264c02261ac3e4e7f60944c15ade2e484dcf76b8233ab101d5ae",
+  "remote_clean_audit": "/home/codextransfer/clean-audits/public-coupled-reference-v2-independent-20261007-v1"
+}

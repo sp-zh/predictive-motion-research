@@ -1,0 +1,35 @@
+{
+  "date": "2026-10-07",
+  "phase5_acceptance": "PENDING",
+  "producer_archive": {
+    "sha256": "c8c48441f0fb6369e37d335ce7df871b87a42440db7d1ddced13d552259af802",
+    "bytes": 36446136,
+    "members": 103,
+    "Mac": "/Users/uot/Documents/ChatGPT/ros/results/phase5-executor-checkpoints-01a114d9/public-coupled-reference-v2/public-coupled-servo-v2-reference-contract.tar.gz",
+    "Dell": "/mnt/d/CodexTransfer/projects/predictive_motion/checkpoints/public-coupled-servo-v2-reference-contract-20261007/public-coupled-servo-v2-reference-contract.tar.gz",
+    "all101payloads_root_verified_on_Mac_and_D": true
+  },
+  "root_archive": {
+    "sha256": "52b319ff9b1adf88f63cd10586a2d99ef046f25c00590f3df6c27037a1fb682a",
+    "bytes": 36338,
+    "members": 12,
+    "all_payload_hashes_root_verified": true,
+    "scope": "Independent fixed FR3 positive reference coefficient and parameter rejection/oldTRAIN compatibility; no new physical validation/Phase5 acceptance",
+    "Mac": "/Users/uot/Documents/ChatGPT/ros/transfer/outgoing/phase5-public-reference-v2-root-20261007",
+    "Dell": "/mnt/d/CodexTransfer/projects/predictive_motion/checkpoints/root-public-reference-v2-20261007",
+    "verified_copies": "Mac and D; all11payloadSHA; D .part renamed after validation; READY last"
+  },
+  "small_source_manifest_sha256": "67193d3c9e4ff712b254cf85f7c7d5792c6387265f314502b313eaf3a02cd135",
+  "root_live_and_D_cache_closure": {
+    "archive_sha256": "c8c48441f0fb6369e37d335ce7df871b87a42440db7d1ddced13d552259af802",
+    "regular_members": 103,
+    "all101declared_payload_hashes_verified": true,
+    "all88prelisted_live_and_D_cache_bytes_root_verified": true,
+    "referenced_bytes": 128446027,
+    "scope": "Fixed FR3 reference coefficient/parameter contract only; no whole Python environment claim"
+  },
+  "scope": "NUM006 corrected for fixedFR3reference contract only.19existing TRAIN window results unchanged; no fresh model accuracy/holdout/maincontroller/wholePythonENV gate.",
+  "old_v1_evidence_preserved": true,
+  "visual_root_inspected": true,
+  "large_evidence_not_in_Git": true
+}

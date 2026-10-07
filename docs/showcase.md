@@ -205,6 +205,14 @@ integration remain pending.
 [Independent mathematics and causal scope](../reviews/evidence/public_coupled_training_v1_math_audit_20261007.md)
 and [subsequent asset preservation verification](../reviews/evidence/public_coupled_training_v1_post_closure_20261007.json).
 
+![Positive reference coefficient and scoped parameter correction](../figures/phase5/phase5_public_coupled_reference_v2.png)
+
+V2 uses the standard positive-solref friction coefficient and rejects unsupported
+parameters. Changed ratios are synthetic metadata tests; actual robot parameters
+stay unchanged. The19 existing TRAIN windows match v1 exactly. This does not add
+physical prediction accuracy or unseen validation evidence.
+[Independent contract checks](../reviews/evidence/public_coupled_v2_reference_root_review_20261007.md).
+
 ## Downloadable 3D models
 
 | Asset | Format / units | Purpose |
