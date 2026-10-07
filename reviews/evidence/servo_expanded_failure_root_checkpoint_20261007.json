@@ -1,0 +1,51 @@
+{
+  "date": "2026-10-07",
+  "milestone": "Retained expanded collection failure and independently verified actual first-stop infeasibility",
+  "phase5_acceptance": "PENDING",
+  "decision": "VERIFIED_RETAINED_FAILURE_AND_COMMAND_GEOMETRY_CONFLICT; NOT_STOPPING_PASS",
+  "original_failed_unit": {
+    "archive": "/mnt/d/CodexTransfer/projects/predictive_motion/checkpoints/servo-expanded-failure-20261007/servo-expanded-failure.tar.gz",
+    "sha256": "a2a525984cb22ee97b2e3073ac2877d00fe0e89181c40408e6c41831fe9342a2",
+    "bytes": 882726,
+    "members": 22,
+    "archive_members_verified": true,
+    "input_cache_verified_on_dell": 187,
+    "mac_copy_verified": false,
+    "scope": "retained incomplete expanded validation/command guard failure; no enlarged model domain/stop/Phase5 acceptance",
+    "source_manifest": "/home/codextransfer/predictive_motion/results/phase5/development/servo-soft-friction-v2-expanded-validation/BACKUP_SOURCE_MANIFEST.json",
+    "source_manifest_sha256": "c33fd225dd4951dbda399bd01b53c13f684e261eeb453aef0fe2da39ecec1540"
+  },
+  "root_verified_Mac_failed_unit": "/Users/uot/Documents/ChatGPT/ros/results/phase5-executor-checkpoints-01a114d9/expanded-failure/servo-expanded-failure.tar.gz",
+  "failed_unit_verification": "SHA/bytes/22 safe file members;20 declared memberSHA plus sourceManifestSHA;smallsource imported. Producer187 input-cache closure not independently reverified here.",
+  "independent_inputs": {
+    "archive": "/home/codextransfer/clean-audits/root-expanded-failure-review-20261007/audit-inputs.tar.gz",
+    "sha256": "bdb4c137376b8a103028582bea4b18b88766f3d456edfad727259b4d11d2fd49",
+    "bytes": 924222,
+    "members": 37,
+    "verified": "36 independent review input SHA; no complete193-input closure claim",
+    "Mac": "/Users/uot/Documents/ChatGPT/ros/results/phase5-servo-expanded-stop-root-inputs",
+    "root_verification": "36 input hashes match independent audit, both Mac/Dell archive/memberSHA verified"
+  },
+  "root_review_archive": {
+    "sha256": "53067a2c4e6846722ff2933582ac6bcfcdbd63f56557c0e0a32193f6a7d7ecd5",
+    "bytes": 2053343,
+    "members": 11,
+    "scope": "Original failed expanded trial and independent constraint/full-replay/first-stop negative audit; no stopping pass",
+    "mac_archive_verified": true,
+    "member_sha_verified": true,
+    "Mac": "/Users/uot/Documents/ChatGPT/ros/transfer/outgoing/phase5-expanded-failure-root-review-20261007",
+    "Dell": "/mnt/d/CodexTransfer/projects/predictive_motion/checkpoints/root-expanded-failure-review-20261007",
+    "verified": "Both archives, allmemberSHA, READY"
+  },
+  "review": "servo_expanded_failure_stop_math_audit_20261007.md/json",
+  "visual": "Root inspected three-panel original failed trajectory figure; retained raw/source/output hashes verified.",
+  "outcome": "NO_FEASIBLE_STOP_NO_COMMAND_SIMULATION_TERMINATED",
+  "accepted_stop_commands": 0,
+  "limits": [
+    "No completed stop, safe hold, continued physical trajectory or hardware certificate",
+    "OriginaltrackingQP reconstructed offline; distinct actualcaptured67x7 sharedstopQP",
+    "Replay exports comparison maxima; root independently checks recorded differences and frozen comparison source, not a second plant replay",
+    "Expanded model domain not accepted; no main MPC integration",
+    "Developer full reconstruction/replay presentation unit export still pending; this checkpoint independently preserves 36 exact review inputs and original failed unit"
+  ]
+}

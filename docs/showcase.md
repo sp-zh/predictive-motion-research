@@ -108,6 +108,15 @@ not main-controller or Phase5 acceptance.
 [Independent local scope](../reviews/evidence/servo_soft_v2_math_audit_20261007.md)
 and [figure hashes](../figures/phase5/phase5_servo_soft_friction_v2.json).
 
+![Retained expanded validation failure](../figures/phase5/phase5_servo_expanded_guard_failure.png)
+
+The larger waveform ends after 1.416 seconds of excitation when the command
+QP is infeasible. The plot shows accepted targets, physical motion and recorded
+clearance; it does not establish a feasible next command or a completed stop.
+A subsequent full replay confirms the first shared-stop QP is also infeasible.
+[Original failed trial](../reviews/phase_5_servo_expanded_validation_failure_20261007.md)
+and [independent constraint proof](../reviews/evidence/servo_expanded_failure_stop_math_audit_20261007.md).
+
 ## Downloadable 3D models
 
 | Asset | Format / units | Purpose |

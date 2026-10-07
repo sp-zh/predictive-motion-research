@@ -1,0 +1,698 @@
+{
+  "scope": "Read-only expanded command/geometry conflict and captured-stop audit; no plant execution.",
+  "verdict": "VERIFIED_RETAINED_FAILURE_AND_COMMAND_GEOMETRY_CONFLICT; NOT_STOPPING_PASS",
+  "raw_sha256": "b913b712590be96eeec031a0b62a88e42d462ed2ac13d87ddf6b8a5d648a29e2",
+  "original_rows": 1708,
+  "checks": {
+    "history_interval_error": 3.469446951953614e-18,
+    "original_si_derivative_rows_history_error": 4.547473508864641e-13,
+    "matrix_shapes": {
+      "reconstruction": [
+        29,
+        7
+      ],
+      "actual_stop": [
+        67,
+        7
+      ]
+    },
+    "command_rows_equal": true,
+    "reconstruction_rows_exact_subset_of_actual_stop": true,
+    "hessian_difference": 0.0,
+    "tracking_gradient_equals_negative_request": 0.0,
+    "command_only_candidate_original_si_violation": 0.0,
+    "reconstructed_LP": {
+      "success": false,
+      "status": 2,
+      "message": "The problem is infeasible. (HiGHS Status 8: model_status is Infeasible; primal_status is At lower/fixed bound)"
+    },
+    "actual_stop_LP": {
+      "success": false,
+      "status": 2,
+      "message": "The problem is infeasible. (HiGHS Status 8: model_status is Infeasible; primal_status is At lower/fixed bound)"
+    }
+  },
+  "box_intervals": [
+    {
+      "joint": 0,
+      "lower_row": 8,
+      "upper_row": 8,
+      "lower_exact_decimal": "-0.01960811748740166512",
+      "upper_exact_decimal": "-0.01896811748740166512"
+    },
+    {
+      "joint": 1,
+      "lower_row": 10,
+      "upper_row": 10,
+      "lower_exact_decimal": "0.013722134007116734208",
+      "upper_exact_decimal": "0.014362134007116734208"
+    },
+    {
+      "joint": 2,
+      "lower_row": 12,
+      "upper_row": 2,
+      "lower_exact_decimal": "0.02191460948649267088",
+      "upper_exact_decimal": "0.0225546094864926688"
+    },
+    {
+      "joint": 3,
+      "lower_row": 14,
+      "upper_row": 14,
+      "lower_exact_decimal": "0.04264676280026777392",
+      "upper_exact_decimal": "0.04328676280026777392"
+    },
+    {
+      "joint": 4,
+      "lower_row": 16,
+      "upper_row": 4,
+      "lower_exact_decimal": "0.04611994224282244976",
+      "upper_exact_decimal": "0.0467599422428224484"
+    },
+    {
+      "joint": 5,
+      "lower_row": 18,
+      "upper_row": 18,
+      "lower_exact_decimal": "-0.02098307891501750784",
+      "upper_exact_decimal": "-0.02034307891501750784"
+    },
+    {
+      "joint": 6,
+      "lower_row": 20,
+      "upper_row": 20,
+      "lower_exact_decimal": "-0.04402577413831400192",
+      "upper_exact_decimal": "-0.04338577413831400192"
+    }
+  ],
+  "reconstruction_support_proofs": [
+    {
+      "row": 25,
+      "label": "tool_shaft/fixture_left/cover/37",
+      "lower_m_s": -0.019226403622487273,
+      "exact_support_max_m_s": -0.0228560981445817,
+      "exact_positive_gap_m_s": 0.003629694522094427,
+      "rational_gap_positive": true,
+      "gap_decimal_60digits": "0.003629694522094426670026808893274080258943636842322944",
+      "maximizing_corner_rad_s": [
+        -0.018968117487401664,
+        0.013722134007116735,
+        0.02255460948649267,
+        0.04264676280026777,
+        0.04611994224282245,
+        -0.020343078915017507,
+        -0.044025774138314
+      ]
+    },
+    {
+      "row": 26,
+      "label": "tool_shaft/fixture_left/cover/38",
+      "lower_m_s": -0.015978487818587003,
+      "exact_support_max_m_s": -0.020990613967262307,
+      "exact_positive_gap_m_s": 0.005012126148675302,
+      "rational_gap_positive": true,
+      "gap_decimal_60digits": "0.005012126148675301895244994960611016881152687898916096",
+      "maximizing_corner_rad_s": [
+        -0.018968117487401664,
+        0.013722134007116735,
+        0.02255460948649267,
+        0.04264676280026777,
+        0.04611994224282245,
+        -0.02098307891501751,
+        -0.044025774138314
+      ]
+    },
+    {
+      "row": 27,
+      "label": "tool_shaft/fixture_left/cover/39",
+      "lower_m_s": -0.015640955717845552,
+      "exact_support_max_m_s": -0.02064762680050451,
+      "exact_positive_gap_m_s": 0.005006671082658957,
+      "rational_gap_positive": true,
+      "gap_decimal_60digits": "0.00500667108265895648659122924380069474981087756072064",
+      "maximizing_corner_rad_s": [
+        -0.018968117487401664,
+        0.013722134007116735,
+        0.02255460948649267,
+        0.04264676280026777,
+        0.04611994224282245,
+        -0.02098307891501751,
+        -0.044025774138314
+      ]
+    }
+  ],
+  "original_si_1e7_acceptance_tolerance_support_proofs": [
+    {
+      "row": 25,
+      "label": "tool_shaft/fixture_left/cover/37",
+      "lower_m_s": -0.019226503622487272,
+      "exact_support_max_m_s": -0.02285609814156123,
+      "exact_positive_gap_m_s": 0.003629594519073955,
+      "rational_gap_positive": true,
+      "gap_decimal_60digits": "0.003629594519073955061173191343624880704924905962322944",
+      "maximizing_corner_rad_s": [
+        -0.018968117485801666,
+        0.013722134005516735,
+        0.02255460948809267,
+        0.042646762798667776,
+        0.04611994224122245,
+        -0.02034307891341751,
+        -0.044025774139914
+      ]
+    },
+    {
+      "row": 26,
+      "label": "tool_shaft/fixture_left/cover/38",
+      "lower_m_s": -0.015978587818587003,
+      "exact_support_max_m_s": -0.020990613964118675,
+      "exact_positive_gap_m_s": 0.005012026145531674,
+      "rational_gap_positive": true,
+      "gap_decimal_60digits": "0.005012026145531673756075990632728253692586617978916096",
+      "maximizing_corner_rad_s": [
+        -0.018968117485801666,
+        0.013722134005516735,
+        0.02255460948809267,
+        0.042646762798667776,
+        0.04611994224122245,
+        -0.020983078916617506,
+        -0.044025774139914
+      ]
+    },
+    {
+      "row": 27,
+      "label": "tool_shaft/fixture_left/cover/39",
+      "lower_m_s": -0.01564105571784555,
+      "exact_support_max_m_s": -0.020647626797325652,
+      "exact_positive_gap_m_s": 0.005006571079480098,
+      "rational_gap_positive": true,
+      "gap_decimal_60digits": "0.00500657107948009858473610389606984847522564476072064",
+      "maximizing_corner_rad_s": [
+        -0.018968117485801666,
+        0.013722134005516735,
+        0.02255460948809267,
+        0.042646762798667776,
+        0.04611994224122245,
+        -0.020983078916617506,
+        -0.044025774139914
+      ]
+    }
+  ],
+  "actual_stop_support_proofs": [
+    {
+      "row": 59,
+      "label": "tool_shaft/fixture_left/cover/37",
+      "lower_m_s": -0.019226403622487273,
+      "exact_support_max_m_s": -0.0228560981445817,
+      "exact_positive_gap_m_s": 0.003629694522094427,
+      "rational_gap_positive": true,
+      "gap_decimal_60digits": "0.003629694522094426670026808893274080258943636842322944",
+      "maximizing_corner_rad_s": [
+        -0.018968117487401664,
+        0.013722134007116735,
+        0.02255460948649267,
+        0.04264676280026777,
+        0.04611994224282245,
+        -0.020343078915017507,
+        -0.044025774138314
+      ]
+    },
+    {
+      "row": 61,
+      "label": "tool_shaft/fixture_left/cover/38",
+      "lower_m_s": -0.015978487818587003,
+      "exact_support_max_m_s": -0.020990613967262307,
+      "exact_positive_gap_m_s": 0.005012126148675302,
+      "rational_gap_positive": true,
+      "gap_decimal_60digits": "0.005012126148675301895244994960611016881152687898916096",
+      "maximizing_corner_rad_s": [
+        -0.018968117487401664,
+        0.013722134007116735,
+        0.02255460948649267,
+        0.04264676280026777,
+        0.04611994224282245,
+        -0.02098307891501751,
+        -0.044025774138314
+      ]
+    },
+    {
+      "row": 63,
+      "label": "tool_shaft/fixture_left/cover/39",
+      "lower_m_s": -0.015640955717845552,
+      "exact_support_max_m_s": -0.02064762680050451,
+      "exact_positive_gap_m_s": 0.005006671082658957,
+      "rational_gap_positive": true,
+      "gap_decimal_60digits": "0.00500667108265895648659122924380069474981087756072064",
+      "maximizing_corner_rad_s": [
+        -0.018968117487401664,
+        0.013722134007116735,
+        0.02255460948649267,
+        0.04264676280026777,
+        0.04611994224282245,
+        -0.02098307891501751,
+        -0.044025774138314
+      ]
+    }
+  ],
+  "row_mapping": [
+    {
+      "reconstruction_row": 0,
+      "stop_row": 0,
+      "label": "command_box/0"
+    },
+    {
+      "reconstruction_row": 1,
+      "stop_row": 1,
+      "label": "command_box/1"
+    },
+    {
+      "reconstruction_row": 2,
+      "stop_row": 2,
+      "label": "command_box/2"
+    },
+    {
+      "reconstruction_row": 3,
+      "stop_row": 3,
+      "label": "command_box/3"
+    },
+    {
+      "reconstruction_row": 4,
+      "stop_row": 4,
+      "label": "command_box/4"
+    },
+    {
+      "reconstruction_row": 5,
+      "stop_row": 5,
+      "label": "command_box/5"
+    },
+    {
+      "reconstruction_row": 6,
+      "stop_row": 6,
+      "label": "command_box/6"
+    },
+    {
+      "reconstruction_row": 7,
+      "stop_row": 7,
+      "label": "command_acceleration/0"
+    },
+    {
+      "reconstruction_row": 8,
+      "stop_row": 8,
+      "label": "command_jerk/0"
+    },
+    {
+      "reconstruction_row": 9,
+      "stop_row": 9,
+      "label": "command_acceleration/1"
+    },
+    {
+      "reconstruction_row": 10,
+      "stop_row": 10,
+      "label": "command_jerk/1"
+    },
+    {
+      "reconstruction_row": 11,
+      "stop_row": 11,
+      "label": "command_acceleration/2"
+    },
+    {
+      "reconstruction_row": 12,
+      "stop_row": 12,
+      "label": "command_jerk/2"
+    },
+    {
+      "reconstruction_row": 13,
+      "stop_row": 13,
+      "label": "command_acceleration/3"
+    },
+    {
+      "reconstruction_row": 14,
+      "stop_row": 14,
+      "label": "command_jerk/3"
+    },
+    {
+      "reconstruction_row": 15,
+      "stop_row": 15,
+      "label": "command_acceleration/4"
+    },
+    {
+      "reconstruction_row": 16,
+      "stop_row": 16,
+      "label": "command_jerk/4"
+    },
+    {
+      "reconstruction_row": 17,
+      "stop_row": 17,
+      "label": "command_acceleration/5"
+    },
+    {
+      "reconstruction_row": 18,
+      "stop_row": 18,
+      "label": "command_jerk/5"
+    },
+    {
+      "reconstruction_row": 19,
+      "stop_row": 19,
+      "label": "command_acceleration/6"
+    },
+    {
+      "reconstruction_row": 20,
+      "stop_row": 20,
+      "label": "command_jerk/6"
+    },
+    {
+      "reconstruction_row": 21,
+      "stop_row": 25,
+      "label": "fr3_link5/fr3_link7/true/-1"
+    },
+    {
+      "reconstruction_row": 22,
+      "stop_row": 53,
+      "label": "tool_shaft/fixture_left/cover/34"
+    },
+    {
+      "reconstruction_row": 23,
+      "stop_row": 55,
+      "label": "tool_shaft/fixture_left/cover/35"
+    },
+    {
+      "reconstruction_row": 24,
+      "stop_row": 57,
+      "label": "tool_shaft/fixture_left/cover/36"
+    },
+    {
+      "reconstruction_row": 25,
+      "stop_row": 59,
+      "label": "tool_shaft/fixture_left/cover/37"
+    },
+    {
+      "reconstruction_row": 26,
+      "stop_row": 61,
+      "label": "tool_shaft/fixture_left/cover/38"
+    },
+    {
+      "reconstruction_row": 27,
+      "stop_row": 63,
+      "label": "tool_shaft/fixture_left/cover/39"
+    },
+    {
+      "reconstruction_row": 28,
+      "stop_row": 65,
+      "label": "tool_tip/fixture_left/cover/250"
+    }
+  ],
+  "replay_logged_difference_checks": {
+    "q_before_error": 0.0,
+    "v_before_error": 0.0,
+    "q_post_error": 0.0,
+    "v_post_error": 0.0,
+    "target_error": 0.0,
+    "time_error": 0.0
+  },
+  "replay_evidence_scope": "Independently aligned replay diagnostic differences to original1708records and inspected frozen comparison code; no new physical replay executed by auditor. Replay exports per-record error maxima rather than all actual physical vectors.",
+  "stop_cycle": {
+    "cycle": "0",
+    "status": "PRIMAL_INFEASIBLE",
+    "accepted": "0",
+    "age_s": "0.001375708",
+    "wall_s": "0.001427212"
+  },
+  "stop_raw_data_rows": 0,
+  "stop_summary": {
+    "scope": "Full past accepted-target physical replay including warmup; matched prefix then shared guarded stop attempt. Not a predictor/future-state input or generic stop certificate.",
+    "prefix_records": 1708,
+    "max_replay_q_error": 0,
+    "max_replay_v_error": 0,
+    "max_replay_target_error": 0,
+    "max_replay_time_error": 0,
+    "outcome": "NO_FEASIBLE_STOP_NO_COMMAND_SIMULATION_TERMINATED",
+    "native_stop_status": "PRIMAL_INFEASIBLE",
+    "accepted_stop_commands": 0,
+    "completed_stop": false,
+    "final_virtual_time_s": 3.4159999999998454,
+    "final_physical_speed_rad_s": 0.034510320667977795,
+    "final_command_speed_rad_s": 0.043397104496745165
+  },
+  "final_record": {
+    "time_s": 3.4159999999998454,
+    "physical_velocity_max": 0.034510320667977795,
+    "accepted_velocity_max": 0.043397104496745165,
+    "contacts": 0,
+    "true_clearance_m": 0.013272332053148525
+  },
+  "barrier_physical_command_comparison": [
+    {
+      "row": 21,
+      "label": "fr3_link5/fr3_link7/true/-1",
+      "lower_m_s": -0.020780689172566494,
+      "gradient_times_physical_velocity_m_s": -6.807172357552725e-05,
+      "gradient_times_last_accepted_command_velocity_m_s": 0.0005668931829596626
+    },
+    {
+      "row": 22,
+      "label": "tool_shaft/fixture_left/cover/34",
+      "lower_m_s": -0.047091445675285386,
+      "gradient_times_physical_velocity_m_s": -0.0064231632374441485,
+      "gradient_times_last_accepted_command_velocity_m_s": -0.01858050010665169
+    },
+    {
+      "row": 23,
+      "label": "tool_shaft/fixture_left/cover/35",
+      "lower_m_s": -0.035706958732145654,
+      "gradient_times_physical_velocity_m_s": -0.0056221876434509955,
+      "gradient_times_last_accepted_command_velocity_m_s": -0.018883816362554463
+    },
+    {
+      "row": 24,
+      "label": "tool_shaft/fixture_left/cover/36",
+      "lower_m_s": -0.026129294607138247,
+      "gradient_times_physical_velocity_m_s": -0.004420439963328282,
+      "gradient_times_last_accepted_command_velocity_m_s": -0.0187739816937926
+    },
+    {
+      "row": 25,
+      "label": "tool_shaft/fixture_left/cover/37",
+      "lower_m_s": -0.019226403622487273,
+      "gradient_times_physical_velocity_m_s": -0.0026943113520519427,
+      "gradient_times_last_accepted_command_velocity_m_s": -0.017800910518111925
+    },
+    {
+      "row": 26,
+      "label": "tool_shaft/fixture_left/cover/38",
+      "lower_m_s": -0.015978487818587003,
+      "gradient_times_physical_velocity_m_s": -0.0004886573184893189,
+      "gradient_times_last_accepted_command_velocity_m_s": -0.015513430234111267
+    },
+    {
+      "row": 27,
+      "label": "tool_shaft/fixture_left/cover/39",
+      "lower_m_s": -0.015640955717845552,
+      "gradient_times_physical_velocity_m_s": -4.905316366382468e-05,
+      "gradient_times_last_accepted_command_velocity_m_s": -0.015074184953698663
+    },
+    {
+      "row": 28,
+      "label": "tool_tip/fixture_left/cover/250",
+      "lower_m_s": -0.030295450210470178,
+      "gradient_times_physical_velocity_m_s": -0.0001486897191588442,
+      "gradient_times_last_accepted_command_velocity_m_s": -0.015477646858832883
+    }
+  ],
+  "margin_LP_nonexecutable": {
+    "worst_row": 8,
+    "label": "command_jerk/0",
+    "original_SI_violation": 103.2693874187571,
+    "row_units": "rad/s^3 for this command_jerk row"
+  },
+  "source_identity": {
+    "tools/phase5_adapter/reconstruct_servo_failure_qp.cpp": {
+      "actual_sha256": "7d40b32c876e4164d9aeab5b270d08c5d9101e2b9c2a3c5a316f447692d3b19e",
+      "frozen_sha256": [
+        "7d40b32c876e4164d9aeab5b270d08c5d9101e2b9c2a3c5a316f447692d3b19e",
+        null
+      ]
+    },
+    "tools/phase5_adapter/replay_servo_expanded_failure_stop.cpp": {
+      "actual_sha256": "9dd36c703721791494bb45d8e475f2510a15bfe522981695aa35d0cecf2665de",
+      "frozen_sha256": [
+        null,
+        "9dd36c703721791494bb45d8e475f2510a15bfe522981695aa35d0cecf2665de"
+      ]
+    },
+    "src/predictive_motion_control/src/reactive_qp.cpp": {
+      "actual_sha256": "7f0b10b09c66c078e2342ebd1cc44ba636f76a59c5d908b0a15392ea6d589507",
+      "frozen_sha256": [
+        "7f0b10b09c66c078e2342ebd1cc44ba636f76a59c5d908b0a15392ea6d589507",
+        "7f0b10b09c66c078e2342ebd1cc44ba636f76a59c5d908b0a15392ea6d589507"
+      ]
+    },
+    "src/predictive_motion_control/src/predictive.cpp": {
+      "actual_sha256": "4ad70dcf75500e956141557a6b17eaa2bdb9a7f670abb7f380da5c699efb1df5",
+      "frozen_sha256": [
+        "4ad70dcf75500e956141557a6b17eaa2bdb9a7f670abb7f380da5c699efb1df5",
+        "4ad70dcf75500e956141557a6b17eaa2bdb9a7f670abb7f380da5c699efb1df5"
+      ]
+    },
+    "tools/phase5_adapter/phase5_benchmark.cpp": {
+      "actual_sha256": "72d59b1a4921b37a9ead7ab59602d75238927cb89224673574cfcd7a9a1147d1",
+      "frozen_sha256": [
+        "72d59b1a4921b37a9ead7ab59602d75238927cb89224673574cfcd7a9a1147d1",
+        "72d59b1a4921b37a9ead7ab59602d75238927cb89224673574cfcd7a9a1147d1"
+      ]
+    }
+  },
+  "shared_frozen_inputs": 190,
+  "same_hash_shared_inputs": 188,
+  "changed_shared_input_paths": [
+    "/home/codextransfer/predictive_motion/tools/phase5_servo_diagnostics/CMakeLists.txt",
+    "/home/codextransfer/predictive_motion/build-servo-qp-reconstruct-v1/CMakeCache.txt"
+  ],
+  "cache_changed_keys": [
+    "_Python3_Interpreter_REASON_FAILURE"
+  ],
+  "cache_blob_hashes_verified": true,
+  "effective_inputs": {
+    "/mnt/d/CodexTransfer/projects/predictive_motion/phase5/raw/servo-soft-friction-v2-expanded-validation/raw.csv": {
+      "sha256": "b913b712590be96eeec031a0b62a88e42d462ed2ac13d87ddf6b8a5d648a29e2",
+      "bytes": 2236279
+    },
+    "/home/codextransfer/predictive_motion/results/phase5/development/servo-expanded-qp-reconstruction-v1/reconstruction/A.csv": {
+      "sha256": "ef8f44ce85e77a652d3ef90bfa3f5b6dc25f960bdb381f7d7013d12e9b7861f4",
+      "bytes": 4905
+    },
+    "/home/codextransfer/predictive_motion/results/phase5/development/servo-expanded-qp-reconstruction-v1/reconstruction/upper.csv": {
+      "sha256": "18a1385cbe04fb4d6d1d0198c9a85792b88bfc3ffb519882d37787c1feb514a4",
+      "bytes": 545
+    },
+    "/home/codextransfer/predictive_motion/results/phase5/development/servo-expanded-qp-reconstruction-v1/reconstruction/rows.csv": {
+      "sha256": "21d9f2387f98c63d074177ace7f8cdcdd2d449d5ec838f5a6c7fd129184f4566",
+      "bytes": 709
+    },
+    "/home/codextransfer/predictive_motion/results/phase5/development/servo-expanded-qp-reconstruction-v1/reconstruction/reconstruction.yaml": {
+      "sha256": "6199c1443a240927dea8b07a9ca689875599ff72e46c20a8594306c4d890e576",
+      "bytes": 2105
+    },
+    "/home/codextransfer/predictive_motion/results/phase5/development/servo-expanded-qp-reconstruction-v1/reconstruction/H.csv": {
+      "sha256": "9631f66099ba560dec4fd1d0b571b9715dde4bd3f235d764cbc5a029f603d878",
+      "bytes": 1176
+    },
+    "/home/codextransfer/predictive_motion/results/phase5/development/servo-expanded-qp-reconstruction-v1/reconstruction/lower.csv": {
+      "sha256": "fcc80a746ac1835ed8243b33dd18c576184f1bde81c7afb61894c74b7dc6c9a8",
+      "bytes": 713
+    },
+    "/home/codextransfer/predictive_motion/results/phase5/development/servo-expanded-qp-reconstruction-v1/reconstruction/g.csv": {
+      "sha256": "ae1d2e876799843a473e373afb44cb1021cd7905df4b00fcf09f33fcb458d872",
+      "bytes": 169
+    },
+    "/home/codextransfer/predictive_motion/results/phase5/development/servo-expanded-qp-reconstruction-v1/reconstruction/box_candidate.csv": {
+      "sha256": "52542fce91a0b741959c2a5ce797c9fd20dc4b6de1603b50d60795e9b2505ecc",
+      "bytes": 171
+    },
+    "/home/codextransfer/predictive_motion/results/phase5/development/servo-expanded-qp-reconstruction-v1/frozen.json": {
+      "sha256": "b5974c6450a16fffd6d29e29de4d0941689b759d2e0cff0d15235201aaf812ad",
+      "bytes": 30061
+    },
+    "/home/codextransfer/predictive_motion/results/phase5/development/servo-expanded-qp-reconstruction-v1/execution.json": {
+      "sha256": "c71a57bdd1f25cbe0cf464d8f2a93f5ca8405da71a7a179e6ed66ea218c27eef",
+      "bytes": 1408
+    },
+    "/home/codextransfer/predictive_motion/results/phase5/development/servo-expanded-failure-stop-replay-v1/replay-stop/stop_upper.csv": {
+      "sha256": "126af3d0d44ae8f2d335572cd9e76a28ed303319c9965d76f80cd3b9eeda7ba6",
+      "bytes": 697
+    },
+    "/home/codextransfer/predictive_motion/results/phase5/development/servo-expanded-failure-stop-replay-v1/replay-stop/replay.csv": {
+      "sha256": "6c3acb97a738dccd2935f3c704c4ad655c0c7712d6cdc9a0f0274f9bf4ebae8c",
+      "bytes": 70799
+    },
+    "/home/codextransfer/predictive_motion/results/phase5/development/servo-expanded-failure-stop-replay-v1/replay-stop/stop_A.csv": {
+      "sha256": "d4991b07f0d22874e138921ba105221d79d9dd046c38b60cfa4bc7079ac952ff",
+      "bytes": 11408
+    },
+    "/home/codextransfer/predictive_motion/results/phase5/development/servo-expanded-failure-stop-replay-v1/replay-stop/stop_raw.csv": {
+      "sha256": "45b657e82853d956972370731c7631a71831ee55038f05e59bc8cb6076a6bb0d",
+      "bytes": 740
+    },
+    "/home/codextransfer/predictive_motion/results/phase5/development/servo-expanded-failure-stop-replay-v1/replay-stop/stop_cycles.csv": {
+      "sha256": "a1e01d036857b53e4a51d354da1c07171fa76551bb8a0c017f26d40b113df3dd",
+      "bytes": 81
+    },
+    "/home/codextransfer/predictive_motion/results/phase5/development/servo-expanded-failure-stop-replay-v1/replay-stop/stop_lower.csv": {
+      "sha256": "202c35018c6dca285671d4cb896930ed2d9a5c82d71923d3cf6c51bfc848983b",
+      "bytes": 1663
+    },
+    "/home/codextransfer/predictive_motion/results/phase5/development/servo-expanded-failure-stop-replay-v1/replay-stop/stop_g.csv": {
+      "sha256": "15e3b9745ed73f381c489e9b976fd69a592f9912304ab408bbe37352f2ab687f",
+      "bytes": 168
+    },
+    "/home/codextransfer/predictive_motion/results/phase5/development/servo-expanded-failure-stop-replay-v1/replay-stop/summary.yaml": {
+      "sha256": "ffdb21043740be949889c7a5f34178bcf223a4b6848b6d1e43ad83d4a74419d3",
+      "bytes": 580
+    },
+    "/home/codextransfer/predictive_motion/results/phase5/development/servo-expanded-failure-stop-replay-v1/replay-stop/stop_rows.csv": {
+      "sha256": "24a60c6da0d276325190bf735dff578bae01fdd7bbb120426e4aadf65b006b25",
+      "bytes": 2050
+    },
+    "/home/codextransfer/predictive_motion/results/phase5/development/servo-expanded-failure-stop-replay-v1/replay-stop/stop_H.csv": {
+      "sha256": "9631f66099ba560dec4fd1d0b571b9715dde4bd3f235d764cbc5a029f603d878",
+      "bytes": 1176
+    },
+    "/home/codextransfer/predictive_motion/results/phase5/development/servo-expanded-failure-stop-replay-v1/frozen.json": {
+      "sha256": "b23eedee6d501f33f9870075c5f29f60f50e50d8c30e22145fd003a270ad2578",
+      "bytes": 30093
+    },
+    "/home/codextransfer/predictive_motion/results/phase5/development/servo-expanded-failure-stop-replay-v1/execution.json": {
+      "sha256": "c77ae774ca842dbdcdd9b1e4943fb7d36d830c974dcb8dab0b0bc13199fa0475",
+      "bytes": 1608
+    },
+    "/home/codextransfer/predictive_motion/config/phase5_development/servo_validation_soft_friction_v2_expanded.yaml": {
+      "sha256": "0c03fb12d2a5f69de54c42a8c62225799af57c97265a11fe3cc215cf6dc3d585",
+      "bytes": 5470
+    },
+    "/home/codextransfer/predictive_motion/tools/phase5_adapter/reconstruct_servo_failure_qp.cpp": {
+      "sha256": "7d40b32c876e4164d9aeab5b270d08c5d9101e2b9c2a3c5a316f447692d3b19e",
+      "bytes": 8527
+    },
+    "/home/codextransfer/predictive_motion/tools/phase5_adapter/replay_servo_expanded_failure_stop.cpp": {
+      "sha256": "9dd36c703721791494bb45d8e475f2510a15bfe522981695aa35d0cecf2665de",
+      "bytes": 10900
+    },
+    "/home/codextransfer/predictive_motion/src/predictive_motion_control/src/reactive_qp.cpp": {
+      "sha256": "7f0b10b09c66c078e2342ebd1cc44ba636f76a59c5d908b0a15392ea6d589507",
+      "bytes": 23205
+    },
+    "/home/codextransfer/predictive_motion/src/predictive_motion_control/src/predictive.cpp": {
+      "sha256": "4ad70dcf75500e956141557a6b17eaa2bdb9a7f670abb7f380da5c699efb1df5",
+      "bytes": 38633
+    },
+    "/home/codextransfer/predictive_motion/tools/phase5_adapter/phase5_benchmark.cpp": {
+      "sha256": "72d59b1a4921b37a9ead7ab59602d75238927cb89224673574cfcd7a9a1147d1",
+      "bytes": 44584
+    },
+    "/home/codextransfer/predictive_motion/install-phase5-math/predictive_motion_control/lib/libreactive_qp.a": {
+      "sha256": "aa6c9db6460923c1c386f9011a52e923a17b9b1b74f854042a45ccdffc999c68",
+      "bytes": 333608
+    },
+    "/home/codextransfer/predictive_motion/install-phase5-math/predictive_motion_control/lib/libpredictive_controller.a": {
+      "sha256": "9235171048abd320aa6877424ec35263533bfdecfe1b0abd7fe3129c605a6a83",
+      "bytes": 349246
+    },
+    "/mnt/d/CodexTransfer/projects/predictive_motion/phase5/identity-cache/8bb2140a01afd2925dae29250eb88c61c93589cebd2f25dcc8cff87eecaabb0a": {
+      "sha256": "8bb2140a01afd2925dae29250eb88c61c93589cebd2f25dcc8cff87eecaabb0a",
+      "bytes": 20689
+    },
+    "/mnt/d/CodexTransfer/projects/predictive_motion/phase5/identity-cache/80051eef3cea2abcf5750f7ff1907966add76bc8f718bcf0690c4f94b716432b": {
+      "sha256": "80051eef3cea2abcf5750f7ff1907966add76bc8f718bcf0690c4f94b716432b",
+      "bytes": 20764
+    },
+    "/home/codextransfer/predictive_motion/results/phase5/development/servo-expanded-qp-reconstruction-v1/feasibility_analysis.json": {
+      "sha256": "ab44b94b62eb47d487347be2519aef967f7ae905d41361edb8153efe7a8190a4",
+      "bytes": 5094
+    },
+    "/home/codextransfer/predictive_motion/results/phase5/development/servo-expanded-qp-reconstruction-v1/materialized-identity.json": {
+      "sha256": "9cbefb7acb6a138d6a02e780d3d2e28f8fe9e1dc4025fa2197308dc5425311c3",
+      "bytes": 1817
+    },
+    "/home/codextransfer/predictive_motion/results/phase5/development/servo-expanded-failure-stop-replay-v1/materialized-identity.json": {
+      "sha256": "e1d91e18135cd691243777d13711b2d89c89964d972f8c9281ffd1e08c6bd690",
+      "bytes": 1571
+    }
+  },
+  "oracle_source_sha256": "8abfdde7ffd8a4b9c63fe6c5751d45a70963a7ac59758874d991830a6d5bbabc"
+}
