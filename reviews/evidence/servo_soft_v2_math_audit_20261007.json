@@ -1,0 +1,491 @@
+{
+  "scope": "Independent scalar box-QP servo replay; no fitting, plant stepping, or production predictor.",
+  "verdict": "PASS_LOCAL_RECORDED_INPUT_PREDICTION",
+  "model_sha256_before": "984ee85d086aeba7da8260a20b21b301e23dfd2c698a6c61ace0ff956bbec1bb",
+  "created_utc": "2026-10-07T05:54:21.973828+00:00",
+  "validation_frozen_utc": "2026-10-07T05:55:50.377993+00:00",
+  "replay": {
+    "metrics": [
+      {
+        "substeps": 1,
+        "windows": 2223,
+        "max_q_error_rad": 4.041457730974418e-08,
+        "max_v_error_rad_s": 2.0207288655731863e-05,
+        "rmse_q_rad": 9.514911387302891e-09,
+        "rmse_v_rad_s": 4.757455692771068e-06,
+        "passed": true
+      },
+      {
+        "substeps": 2,
+        "windows": 2223,
+        "max_q_error_rad": 8.539359430681515e-08,
+        "max_v_error_rad_s": 2.3499779629152428e-05,
+        "rmse_q_rad": 2.492812019527388e-08,
+        "rmse_v_rad_s": 7.778204962046217e-06,
+        "passed": true
+      },
+      {
+        "substeps": 20,
+        "windows": 2214,
+        "max_q_error_rad": 2.5273695110072936e-06,
+        "max_v_error_rad_s": 8.023324342749743e-05,
+        "rmse_q_rad": 8.121839509499459e-07,
+        "rmse_v_rad_s": 2.6148171171018702e-05,
+        "passed": true
+      },
+      {
+        "substeps": 400,
+        "windows": 2024,
+        "max_q_error_rad": 1.1901388519142131e-05,
+        "max_v_error_rad_s": 8.436850223954095e-05,
+        "rmse_q_rad": 4.0003384003602524e-06,
+        "rmse_v_rad_s": 2.4437122699170916e-05,
+        "passed": true
+      }
+    ],
+    "max_metric_discrepancy": 1.0842021724855044e-19,
+    "max_box_kkt_residual": 4.440892098500626e-16,
+    "measured_active_domain_bad_rows": 0,
+    "forecast_domain_bad_window_substeps_800ms": 0,
+    "forecast_branch_counts_lower_interior_upper_800ms": [
+      [
+        0,
+        809600,
+        0
+      ],
+      [
+        181006,
+        430411,
+        198183
+      ],
+      [
+        0,
+        809600,
+        0
+      ],
+      [
+        0,
+        809600,
+        0
+      ],
+      [
+        0,
+        809600,
+        0
+      ],
+      [
+        0,
+        809600,
+        0
+      ],
+      [
+        54868,
+        697932,
+        56800
+      ]
+    ],
+    "active_ranges": {
+      "q": {
+        "min": [
+          -1.2462166418879077,
+          0.09824127641598403,
+          1.1537736053645822,
+          -2.786090630156657,
+          -0.09805785596609452,
+          4.384006733378981,
+          -1.6287104260380232
+        ],
+        "max": [
+          -1.2452034520406612,
+          0.09912823670993351,
+          1.154676681891149,
+          -2.7853461295925848,
+          -0.097066403742888,
+          4.384919694581673,
+          -1.6278562433220394
+        ],
+        "span": [
+          0.0010131898472465206,
+          0.000886960293949482,
+          0.0009030765265667373,
+          0.0007445005640720481,
+          0.0009914522232065265,
+          0.0009129612026921308,
+          0.0008541827159838089
+        ]
+      },
+      "v": {
+        "min": [
+          -0.0023379166278452513,
+          -0.002271518867799277,
+          -0.0026373677332218524,
+          -0.0024275215866360234,
+          -0.003080974176676566,
+          -0.0030869579511947362,
+          -0.0035892363299725645
+        ],
+        "max": [
+          0.0023282378517652234,
+          0.0022769334400214655,
+          0.0026453574754904453,
+          0.002428715761918063,
+          0.0030808067648464,
+          0.0030656560451782795,
+          0.003579804124038644
+        ],
+        "span": [
+          0.004666154479610475,
+          0.0045484523078207426,
+          0.005282725208712298,
+          0.004856237348554086,
+          0.006161780941522966,
+          0.006152613996373016,
+          0.007169040454011209
+        ]
+      },
+      "accepted_target": {
+        "min": [
+          -1.2463097991302519,
+          0.09615978783548913,
+          1.1541678806385862,
+          -2.782716069164302,
+          -0.09815505075149362,
+          4.384620901706019,
+          -1.62887185929107
+        ],
+        "max": [
+          -1.245109801443814,
+          0.0973597801019975,
+          1.1553678798075042,
+          -2.781516069932816,
+          -0.09695505124424231,
+          4.385820898945201,
+          -1.6276718615802446
+        ],
+        "span": [
+          0.0011999976864378592,
+          0.0011999922665083679,
+          0.0011999991689179978,
+          0.0011999992314861707,
+          0.0011999995072513175,
+          0.0011999972391816272,
+          0.0011999977108254622
+        ]
+      },
+      "target_minus_q": {
+        "min": [
+          -0.0003767968342296424,
+          -0.0025024245060702444,
+          8.909921578936775e-05,
+          0.003102764654909773,
+          -0.00040412986576267296,
+          0.00031106612816866885,
+          -0.00046962415534945734
+        ],
+        "max": [
+          0.00037827003789314695,
+          -0.001538026205587767,
+          0.0009936624679527384,
+          0.004102051458740874,
+          0.0005486773388448801,
+          0.0013295186823736316,
+          0.0004963858428497225
+        ],
+        "span": [
+          0.0007550668721227893,
+          0.0009643983004824774,
+          0.0009045632521633706,
+          0.000999286803831101,
+          0.0009528072046075531,
+          0.0010184525542049627,
+          0.0009660099981991799
+        ]
+      }
+    },
+    "worst_800ms_windows": [
+      {
+        "quantity": "position",
+        "joint": 2,
+        "start_tick": 1159,
+        "signed_error": 1.1901388519142131e-05
+      },
+      {
+        "quantity": "velocity",
+        "joint": 0,
+        "start_tick": 2310,
+        "signed_error": -8.436850223954095e-05
+      }
+    ],
+    "phase_counts": {
+      "excitation": 4000,
+      "stopping": 446,
+      "warmup": 1000
+    }
+  },
+  "derivatives": {
+    "synthetic_algebra_scope": true,
+    "cases": [
+      {
+        "drive_relative_to_bound": 0.0,
+        "second_step_target_unchanged": true
+      },
+      {
+        "drive_relative_to_bound": 2.0,
+        "second_step_target_unchanged": true
+      },
+      {
+        "drive_relative_to_bound": -2.0,
+        "second_step_target_unchanged": true
+      }
+    ],
+    "max_2ms_jacobian_fd_error": 8.65272298256059e-11,
+    "max_4ms_composed_jacobian_fd_error": 2.487698935738081e-10,
+    "max_box_kkt_error": 0.0,
+    "threshold_derivative_policy": "No unique derivative at either exact clip threshold; saturated-side convention is one branch choice only."
+  },
+  "oracle_source_sha256": "444ced64962e073bfb5d88c2809ddeaf6d8100bcbdbbcf2e3193059e70a001dd",
+  "public_sources": [
+    "https://github.com/google-deepmind/mujoco/blob/3.3.7/src/engine/engine_core_constraint.c",
+    "https://mujoco.readthedocs.io/en/3.3.7/computation/index.html"
+  ],
+  "local_box": {
+    "q_min": [
+      -1.2483063215722907,
+      0.09628504027872317,
+      1.1516033458966048,
+      -2.7880028289288723,
+      -0.10008485150671034,
+      4.382003948653241,
+      -1.6305867793471773
+    ],
+    "q_max": [
+      -1.2432246521633463,
+      0.10105347321419247,
+      1.1565758603967078,
+      -2.7831715924867737,
+      -0.09516502682914536,
+      4.386845949305742,
+      -1.6256940674444005
+    ],
+    "v_abs_max": 0.005,
+    "target_error_min": [
+      -0.000605300353112603,
+      -0.002772079206271599,
+      -0.0001614863384498452,
+      0.0028376303581849286,
+      -0.0006665962186576998,
+      3.944874787561477e-05,
+      -0.000746709297175607
+    ],
+    "target_error_max": [
+      0.0006060391363312042,
+      -0.0012699588370860496,
+      0.0012419468410825082,
+      0.004371767668397896,
+      0.0008128724675876744,
+      0.0016008774005420775,
+      0.0007743419543411508
+    ]
+  },
+  "training_ranges": {
+    "q_min": [
+      -1.2463063215722907,
+      0.09828504027872317,
+      1.1536033458966048,
+      -2.7860028289288725,
+      -0.09808485150671034,
+      4.384003948653241,
+      -1.6285867793471773
+    ],
+    "q_max": [
+      -1.2452246521633463,
+      0.09905347321419247,
+      1.1545758603967078,
+      -2.7851715924867735,
+      -0.09716502682914537,
+      4.384845949305742,
+      -1.6276940674444005
+    ],
+    "v_min": [
+      -0.0018826110888522378,
+      -0.001959620335760566,
+      -0.002336091905955328,
+      -0.0022638683309750165,
+      -0.0028457945445234277,
+      -0.002903794007324294,
+      -0.0033698669519086396
+    ],
+    "v_max": [
+      0.0018878986138829296,
+      0.0019643232613789042,
+      0.002341701839600611,
+      0.0022616467749381904,
+      0.002848217694758948,
+      0.00290179508598316,
+      0.003369300158151879
+    ],
+    "accepted_target_min": [
+      -1.2463657489136952,
+      0.096047807077222,
+      1.1540321301730032,
+      -2.7825779775035766,
+      -0.09815087615836153,
+      4.384646703649871,
+      -1.6287268330519327
+    ],
+    "accepted_target_max": [
+      -1.2451657508019607,
+      0.09724780609135161,
+      1.1552321267437393,
+      -2.781377980080299,
+      -0.09695088237739519,
+      4.3858467036498405,
+      -1.6275268343405078
+    ],
+    "target_error_min": [
+      -0.00030530035311260306,
+      -0.002472079206271599,
+      0.00013851366155015477,
+      0.0031376303581849285,
+      -0.00036659621865769987,
+      0.00033944874787561474,
+      -0.00044670929717560703
+    ],
+    "target_error_max": [
+      0.0003060391363312043,
+      -0.0015699588370860496,
+      0.0009419468410825083,
+      0.0040717676683978965,
+      0.0005128724675876745,
+      0.0013008774005420776,
+      0.0004743419543411509
+    ]
+  },
+  "effective_inertia_not_true_multibody_inertia": true,
+  "public_xml_checks": {
+    "parameter_discrepancies": {
+      "kp_Nm_rad": 0.0,
+      "damping_Nm_s_rad": 0.0,
+      "friction_bound_Nm": 0.0,
+      "impedance": 0.0,
+      "reference_decay_s_inv": 0.0
+    },
+    "integrator": "implicitfast",
+    "compiler_angle": "radian",
+    "scalar_surrogate_caveat": "Full MuJoCo DOF regularizer uses dof_invweight0 and coupled inverse inertia; equating its scalar approximation to 1/effective_m is a fitted surrogate assumption."
+  },
+  "frozen_waveform": {
+    "validation_frequency_base_hz": 0.73,
+    "validation_frequency_step_hz": 0.103,
+    "validation_phase_step_rad": 0.27,
+    "identification_amplitude_rad": 0.0006,
+    "identification_duration_s": 8.0,
+    "validation_waveform_id": "soft-friction-v2-new-waveform-91012"
+  },
+  "old_v1_validation_sha256": "3331840951457d0219cc0c461ea1339cead478211727c3ffc8579a7e2f847912",
+  "previous_preparation_domain_comparison": {
+    "raw_sha256": "113a5a1c82e97d6a624656b78fc6383363a76bccf8cc149406071fc57216ee2a",
+    "scope": "Retained v19-full preparation coverage comparison only; no new model performance evaluation or fit",
+    "path_substeps": 278,
+    "domain_bad_substeps_by_joint": {
+      "q": [
+        0,
+        0,
+        0,
+        21,
+        0,
+        0,
+        0
+      ],
+      "v": [
+        47,
+        77,
+        73,
+        142,
+        0,
+        0,
+        0
+      ],
+      "target_error": [
+        77,
+        79,
+        98,
+        155,
+        0,
+        0,
+        0
+      ]
+    }
+  },
+  "effective_inputs": {
+    "/home/codextransfer/predictive_motion/results/phase5/development/servo-model-soft-friction-v2-frozen/model.json": {
+      "sha256": "984ee85d086aeba7da8260a20b21b301e23dfd2c698a6c61ace0ff956bbec1bb",
+      "bytes": 9507
+    },
+    "/mnt/d/CodexTransfer/projects/predictive_motion/phase5/raw/servo-soft-friction-v2-validation/raw.csv": {
+      "sha256": "c435bea765c9a12e73bc12d12e2dfa7b6cbb6ddf877f1d519d9056810b21f03c",
+      "bytes": 7888094
+    },
+    "/home/codextransfer/predictive_motion/results/phase5/development/servo-soft-friction-v2-validation/frozen.json": {
+      "sha256": "97567f300b6654e8774c6cedd12a6509d517d598138f2518054bcc713805eefe",
+      "bytes": 31271
+    },
+    "/home/codextransfer/predictive_motion/results/phase5/development/servo-soft-friction-v2-validation/execution.json": {
+      "sha256": "8e116714f4404d82f481f3a95858b4bad3b11b212c0ede60644a47dcc80e5671",
+      "bytes": 936
+    },
+    "/home/codextransfer/predictive_motion/results/phase5/development/servo-model-soft-friction-v2-frozen/heldout-validation/validation_report.json": {
+      "sha256": "994b9f7347145bcd690bfa210dcc9407f495f38049ae787d3ba558771b665ef1",
+      "bytes": 2598
+    },
+    "/home/codextransfer/predictive_motion/results/phase5/development/servo-model-soft-friction-v2-frozen/training_report.json": {
+      "sha256": "85fb7ab275d294442b0da2bb363d80b32cf4a59ae2affaecdf619122382829c0",
+      "bytes": 2228
+    },
+    "/home/codextransfer/predictive_motion/scripts/phase5/servo_model_soft_friction_v2.py": {
+      "sha256": "89037fc27341ba9d2d9c7c27f044fd88fc2b2c7c743ae1a13f4eb041c02c4bc7",
+      "bytes": 11816
+    },
+    "/home/codextransfer/predictive_motion/scripts/phase5/servo_model_soft_friction_v2_test.py": {
+      "sha256": "4d0bae2c4263844abfa59043544e766dd1b44e94a7f8393f0060c3fc31c082b2",
+      "bytes": 3694
+    },
+    "/home/codextransfer/predictive_motion/scripts/phase5/run_servo_soft_validation_v2.py": {
+      "sha256": "d3be4c9dec6d7f5186c7488ed0f8dd9b26d74f85f305a7bdd0a6a5407df3729e",
+      "bytes": 3795
+    },
+    "/home/codextransfer/predictive_motion/scripts/phase5/validate_servo_soft_friction_v2.py": {
+      "sha256": "0155ba1b4d44eb797c1d8ca0f444e70c4588dc2c6bae02f2ee7348de35eebca3",
+      "bytes": 1566
+    },
+    "/home/codextransfer/predictive_motion/scripts/phase5/servo_model_v1.py": {
+      "sha256": "aa43289cc1986edc9ed2ab8603fc3247071ead61c4acc228123045b6445f3547",
+      "bytes": 10916
+    },
+    "/home/codextransfer/predictive_motion/tools/phase5_adapter/servo_validation_v2.cpp": {
+      "sha256": "29f928904b5bfbfa9a01473d659ba1efc230cba40a6e3f9a424de2a94556b996",
+      "bytes": 10778
+    },
+    "/home/codextransfer/predictive_motion/config/phase5_development/servo_validation_soft_friction_v2.yaml": {
+      "sha256": "5a7e50e8e12ef1cdd6ceac5fec90f7b6109b792aa80997816269cd0fab135721",
+      "bytes": 4555
+    },
+    "/home/codextransfer/predictive_motion/experiments/generated/inspection/inspection_fr3.xml": {
+      "sha256": "0231a374b6173f38ff63a214932dfca624594d23daf5f4b0c4a0e8e02016ebae",
+      "bytes": 11239
+    },
+    "/home/codextransfer/predictive_motion/experiments/generated/phase4/robot.yaml": {
+      "sha256": "38bc8c200850bb3353f147b3b69eefdbb04916de7942da8002d99a9893fa3330",
+      "bytes": 363
+    },
+    "/mnt/d/CodexTransfer/projects/predictive_motion/phase5/raw/servo-identification-v1-validation/raw.csv": {
+      "sha256": "3331840951457d0219cc0c461ea1339cead478211727c3ffc8579a7e2f847912",
+      "bytes": 7883507
+    },
+    "/mnt/d/CodexTransfer/projects/predictive_motion/phase5/raw/reference-tracking-v19-full/predictive_inspection_91011/raw.csv": {
+      "sha256": "113a5a1c82e97d6a624656b78fc6383363a76bccf8cc149406071fc57216ee2a",
+      "bytes": 2833074
+    }
+  },
+  "model_sha256_after": "984ee85d086aeba7da8260a20b21b301e23dfd2c698a6c61ace0ff956bbec1bb"
+}

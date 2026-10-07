@@ -1,0 +1,22 @@
+{
+  "scope": "Local soft-friction servo model validation; independent new development waveform.",
+  "source_files": {
+    "/mnt/d/CodexTransfer/projects/predictive_motion/phase5/raw/servo-soft-friction-v2-validation/raw.csv": "c435bea765c9a12e73bc12d12e2dfa7b6cbb6ddf877f1d519d9056810b21f03c",
+    "/home/codextransfer/predictive_motion/results/phase5/development/servo-model-soft-friction-v2-frozen/model.json": "984ee85d086aeba7da8260a20b21b301e23dfd2c698a6c61ace0ff956bbec1bb",
+    "/home/codextransfer/predictive_motion/results/phase5/development/servo-model-soft-friction-v2-frozen/training_report.json": "85fb7ab275d294442b0da2bb363d80b32cf4a59ae2affaecdf619122382829c0",
+    "/home/codextransfer/predictive_motion/results/phase5/development/servo-model-soft-friction-v2-frozen/heldout-validation/validation_report.json": "994b9f7347145bcd690bfa210dcc9407f495f38049ae787d3ba558771b665ef1",
+    "/home/codextransfer/predictive_motion/scripts/phase5/plot_servo_soft_friction_v2.py": "f21ec73b1e036116f684296c1cd35b36613b9994e8f7230c4d6376460c6dddf6",
+    "/home/codextransfer/predictive_motion/scripts/phase5/servo_model_soft_friction_v2.py": "89037fc27341ba9d2d9c7c27f044fd88fc2b2c7c743ae1a13f4eb041c02c4bc7"
+  },
+  "output_sha256": "9eb93f4577603da601bcc7415e9e94c860db5da41a210297a3428e184332ddb1",
+  "joint_index_zero_based": 2,
+  "window_start_tick": 1159,
+  "window_duration_s": 0.8,
+  "units": {
+    "position": "mrad",
+    "velocity": "mrad/s",
+    "time": "s"
+  },
+  "inspection": "pending visual inspection",
+  "gate": "PASS_LOCAL_EMPIRICAL"
+}

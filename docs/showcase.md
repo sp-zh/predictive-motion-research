@@ -97,6 +97,17 @@ Overlapping forecast windows are diagnostics, not independent trials.
 [Independent audit](../reviews/evidence/servo_model_v1_math_audit_20261007.md)
 and [figure provenance](../figures/phase5/phase5_servo_model_v1_failed.json).
 
+![Local soft-friction model validation](../figures/phase5/phase5_servo_soft_friction_v2.png)
+
+The frozen local soft-friction model passes the stated short and 800 ms checks
+on a new development waveform. Root independently recomputes its scalar
+transition, derivatives and all forecast windows. Earlier preparation motion
+exceeds this model's declared domain; an expanded waveform is rejected by the
+original command constraints. This is local recorded-input prediction evidence,
+not main-controller or Phase5 acceptance.
+[Independent local scope](../reviews/evidence/servo_soft_v2_math_audit_20261007.md)
+and [figure hashes](../figures/phase5/phase5_servo_soft_friction_v2.json).
+
 ## Downloadable 3D models
 
 | Asset | Format / units | Purpose |

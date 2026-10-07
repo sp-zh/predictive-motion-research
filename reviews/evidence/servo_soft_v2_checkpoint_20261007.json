@@ -1,0 +1,41 @@
+{
+  "date": "2026-10-07",
+  "milestone": "Local frozen soft-friction servo v2 and failed configuration/hard-sign alternatives",
+  "phase5_acceptance": "PENDING",
+  "decision": "PASS_LOCAL_RECORDED_INPUT_PREDICTION",
+  "model_sha256": "984ee85d086aeba7da8260a20b21b301e23dfd2c698a6c61ace0ff956bbec1bb",
+  "executor_archive": {
+    "archive": "/mnt/d/CodexTransfer/projects/predictive_motion/checkpoints/servo-model-v2-20261007/servo-model-v2-local.tar.gz",
+    "sha256": "c3ad682ce2b5032127aa447087a32b9ecafc8c843cb466fc16ddeb117bf910db",
+    "bytes": 4730514,
+    "members": 48,
+    "archive_members_verified": true,
+    "input_cache_verified_on_dell": 187,
+    "mac_copy_verified": false,
+    "scope": "local soft-friction model; failed alternatives retained; Phase5 unaccepted",
+    "source_manifest": "/home/codextransfer/predictive_motion/results/phase5/development/servo-model-soft-friction-v2-frozen/BACKUP_SOURCE_MANIFEST.json",
+    "source_manifest_sha256": "09f9085dbde7a2dfb4686577ebfc04f2b045c6a0564df3c90920f326f207da22"
+  },
+  "root_mac_verified_executor_copy": "/Users/uot/Documents/ChatGPT/ros/results/phase5-executor-checkpoints-01a114d9/v2/servo-model-v2-local.tar.gz",
+  "executor_verification": "ArchiveSHA/bytes/48 safe file members,46 declared memberSHA plus sourceManifest SHA. Frozen sources integrated Mac. Dell input-cache closure producer-verified187; root mathematics independently hashes17 effective inputs.",
+  "root_review_archive": {
+    "sha256": "8a034dc1723a0f1e40ad6502b077f5ba2c14b8884fc2d878f886ab30c03b5669",
+    "bytes": 4746902,
+    "members": 6,
+    "scope": "local soft-friction v2 unit and independent root mathematics, not Phase5 acceptance",
+    "mac_archive_verified": true,
+    "member_sha_verified": true,
+    "Mac": "/Users/uot/Documents/ChatGPT/ros/transfer/outgoing/phase5-servo-v2-root-review-20261007",
+    "Dell": "/mnt/d/CodexTransfer/projects/predictive_motion/checkpoints/root-servo-v2-review-20261007",
+    "verified": "Both archives, memberSHA, READY"
+  },
+  "independent_review": "servo_soft_v2_math_audit_20261007.md/json",
+  "visual": "Root inspected local v2 four-panel plot; figure/source/model/raw/report identities verified.",
+  "limits": [
+    "Recorded small input range only; full declared box not certified",
+    "Empirical scalar effective inertia, no full coupled dynamics identification",
+    "Earlier v19 preparation outside declared model domain",
+    "No main MPC integration, task completion, hardware or real-time acceptance",
+    "Rejected alternatives and original v1 remain unchanged"
+  ]
+}

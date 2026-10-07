@@ -1,0 +1,346 @@
+{
+  "schema": 2,
+  "status": "FROZEN_CANDIDATE_NOT_ACCEPTED",
+  "training_seed": 91011,
+  "created_utc": "2026-10-07T05:54:21.973828+00:00",
+  "policy": {
+    "model_class": "positive diagonal local inertia plus published soft box friction and implicit damping",
+    "equations": [
+      "s=kp*(c-q)-D*v+g",
+      "f=-clip(imp*(s+m*B*v),-eta,eta)",
+      "v_next=v+.002/(m+.002*D)*(s+f)",
+      "q_next=q+.002*v_next"
+    ],
+    "state_order": "q[7],v[7]; SI radians and radians/second",
+    "fit_rows": "91011 excitation only; warmup/stopping excluded",
+    "solver": "seven independent bounded least-squares fits of log effective inertia and constant bias; no 91012 reads",
+    "horizons_substeps": [
+      1,
+      2,
+      20,
+      400
+    ],
+    "position_error_limits_rad": [
+      1e-06,
+      1e-06,
+      0.0001,
+      0.0001
+    ],
+    "velocity_error_limits_rad_s": [
+      0.0001,
+      0.0001,
+      0.001,
+      0.001
+    ],
+    "rollout_start_policy": "each 4ms command boundary in excitation/stopping; no warmup; window cannot extend beyond recorded data",
+    "conditioning": "offline predictions initialized from measured q/v once; use recorded accepted targets for subsequent held intervals; never reinitialize within a window",
+    "hold_transition": "4ms transition is exactly two 2ms physical steps at the same already accepted target; only integer 2ms durations supported",
+    "local_position_box": "training excitation min/max physical q expanded by 0.002 rad per side",
+    "local_velocity_abs_max_rad_s": 0.005,
+    "gate": "all frozen horizon maxima and local q/v/target-error domain coverage; finite positive parameters, fit rank2 and no parameter bound active; observed training or holdout errors are not robust bounds",
+    "scope": "local empirical development model only; training is not independent validation; no robust uncertainty/terminal/task/online/Phase5 certificate",
+    "fit_parameter_bounds": {
+      "log_inertia": [
+        -6.9,
+        3.9
+      ],
+      "bias_Nm": [
+        -50,
+        50
+      ]
+    },
+    "coupling": "physical coupling omitted; effective fitted parameters are not measured physical body inertia",
+    "nonsmooth_boundary": "exact clip forward transition; tangent exists away from clip thresholds; no smoothness claim at thresholds"
+  },
+  "training_raw_sha256": "ab9d14efa1a5886c0683db25345f24d5cacd55343e2768eb60536fa180a11dce",
+  "training_execution_sha256": "dcd035918fa4ae1cd6ba673f1314569f8b646d8d8533da32c9c2e9391c5c29a6",
+  "script_sha256": "89037fc27341ba9d2d9c7c27f044fd88fc2b2c7c743ae1a13f4eb041c02c4bc7",
+  "trace_reader_sha256": "aa43289cc1986edc9ed2ab8603fc3247071ead61c4acc228123045b6445f3547",
+  "public_parameters": {
+    "joint_names": [
+      "fr3_joint1",
+      "fr3_joint2",
+      "fr3_joint3",
+      "fr3_joint4",
+      "fr3_joint5",
+      "fr3_joint6",
+      "fr3_joint7"
+    ],
+    "kp_Nm_rad": [
+      4500.0,
+      4500.0,
+      3500.0,
+      3500.0,
+      2000.0,
+      2000.0,
+      2000.0
+    ],
+    "damping_Nm_s_rad": [
+      450.21,
+      450.21,
+      350.21,
+      350.21,
+      200.21,
+      200.21,
+      200.21
+    ],
+    "friction_bound_Nm": [
+      1.137,
+      1.137,
+      1.137,
+      1.137,
+      0.763,
+      0.44,
+      0.248
+    ],
+    "impedance": [
+      0.9,
+      0.9,
+      0.9,
+      0.9,
+      0.9,
+      0.9,
+      0.9
+    ],
+    "reference_decay_s_inv": [
+      105.26315789473685,
+      105.26315789473685,
+      105.26315789473685,
+      105.26315789473685,
+      105.26315789473685,
+      105.26315789473685,
+      105.26315789473685
+    ],
+    "source_xml_sha256": "0231a374b6173f38ff63a214932dfca624594d23daf5f4b0c4a0e8e02016ebae",
+    "source_robot_config_sha256": "38bc8c200850bb3353f147b3b69eefdbb04916de7942da8002d99a9893fa3330",
+    "default_parameter_basis": "MuJoCo 3.3.7 solimpfriction=.9 .95 .001 .5 2 and solreffriction=.02 1 unless explicitly overridden",
+    "public_sources": [
+      "https://mujoco.readthedocs.io/en/3.3.7/computation/index.html",
+      "https://github.com/google-deepmind/mujoco/blob/3.3.7/src/engine/engine_core_constraint.c"
+    ]
+  },
+  "mass_effective_kg_m2": [
+    0.2881462378117561,
+    1.3664404469072484,
+    0.25513412007602093,
+    0.3860392782434194,
+    0.11094036706587258,
+    0.13402572357513362,
+    0.07426312147529038
+  ],
+  "bias_Nm": [
+    0.0006989477489180209,
+    9.093529617049024,
+    -1.891816458178708,
+    -12.6097892275561,
+    -0.14537166902978216,
+    -1.6413864379461711,
+    -0.027708775542053393
+  ],
+  "fit_diagnostics": [
+    {
+      "success": true,
+      "status": 2,
+      "evaluations": 8,
+      "optimality": 1.5153727550109393e-08,
+      "response_jacobian_rank": 2,
+      "response_jacobian_condition": 2.919424418102492,
+      "scaled_response_rmse": 0.004041893541712008,
+      "bound_active": [
+        0,
+        0
+      ]
+    },
+    {
+      "success": true,
+      "status": 2,
+      "evaluations": 9,
+      "optimality": 1.6719902886300397e-08,
+      "response_jacobian_rank": 2,
+      "response_jacobian_condition": 12.443810828469777,
+      "scaled_response_rmse": 0.005473569549844067,
+      "bound_active": [
+        0,
+        0
+      ]
+    },
+    {
+      "success": true,
+      "status": 2,
+      "evaluations": 6,
+      "optimality": 8.613220878232066e-08,
+      "response_jacobian_rank": 2,
+      "response_jacobian_condition": 2.6127375036780816,
+      "scaled_response_rmse": 0.0038071778379325178,
+      "bound_active": [
+        0,
+        0
+      ]
+    },
+    {
+      "success": true,
+      "status": 2,
+      "evaluations": 6,
+      "optimality": 4.3797090053441445e-07,
+      "response_jacobian_rank": 2,
+      "response_jacobian_condition": 1.795953464169456,
+      "scaled_response_rmse": 0.005678978301945921,
+      "bound_active": [
+        0,
+        0
+      ]
+    },
+    {
+      "success": true,
+      "status": 2,
+      "evaluations": 7,
+      "optimality": 1.2049342562030257e-08,
+      "response_jacobian_rank": 2,
+      "response_jacobian_condition": 4.943310403638128,
+      "scaled_response_rmse": 0.001872576833029762,
+      "bound_active": [
+        0,
+        0
+      ]
+    },
+    {
+      "success": true,
+      "status": 2,
+      "evaluations": 9,
+      "optimality": 2.1189794066673342e-08,
+      "response_jacobian_rank": 2,
+      "response_jacobian_condition": 3.969808044963714,
+      "scaled_response_rmse": 0.0008888390201102525,
+      "bound_active": [
+        0,
+        0
+      ]
+    },
+    {
+      "success": true,
+      "status": 3,
+      "evaluations": 9,
+      "optimality": 4.021631114079135e-09,
+      "response_jacobian_rank": 2,
+      "response_jacobian_condition": 22.526290022350473,
+      "scaled_response_rmse": 4.96805517412565e-05,
+      "bound_active": [
+        0,
+        0
+      ]
+    }
+  ],
+  "training_ranges": {
+    "q_min": [
+      -1.2463063215722907,
+      0.09828504027872317,
+      1.1536033458966048,
+      -2.7860028289288725,
+      -0.09808485150671034,
+      4.384003948653241,
+      -1.6285867793471773
+    ],
+    "q_max": [
+      -1.2452246521633463,
+      0.09905347321419247,
+      1.1545758603967078,
+      -2.7851715924867735,
+      -0.09716502682914537,
+      4.384845949305742,
+      -1.6276940674444005
+    ],
+    "v_min": [
+      -0.0018826110888522378,
+      -0.001959620335760566,
+      -0.002336091905955328,
+      -0.0022638683309750165,
+      -0.0028457945445234277,
+      -0.002903794007324294,
+      -0.0033698669519086396
+    ],
+    "v_max": [
+      0.0018878986138829296,
+      0.0019643232613789042,
+      0.002341701839600611,
+      0.0022616467749381904,
+      0.002848217694758948,
+      0.00290179508598316,
+      0.003369300158151879
+    ],
+    "accepted_target_min": [
+      -1.2463657489136952,
+      0.096047807077222,
+      1.1540321301730032,
+      -2.7825779775035766,
+      -0.09815087615836153,
+      4.384646703649871,
+      -1.6287268330519327
+    ],
+    "accepted_target_max": [
+      -1.2451657508019607,
+      0.09724780609135161,
+      1.1552321267437393,
+      -2.781377980080299,
+      -0.09695088237739519,
+      4.3858467036498405,
+      -1.6275268343405078
+    ],
+    "target_error_min": [
+      -0.00030530035311260306,
+      -0.002472079206271599,
+      0.00013851366155015477,
+      0.0031376303581849285,
+      -0.00036659621865769987,
+      0.00033944874787561474,
+      -0.00044670929717560703
+    ],
+    "target_error_max": [
+      0.0003060391363312043,
+      -0.0015699588370860496,
+      0.0009419468410825083,
+      0.0040717676683978965,
+      0.0005128724675876745,
+      0.0013008774005420776,
+      0.0004743419543411509
+    ]
+  },
+  "local_box": {
+    "q_min": [
+      -1.2483063215722907,
+      0.09628504027872317,
+      1.1516033458966048,
+      -2.7880028289288723,
+      -0.10008485150671034,
+      4.382003948653241,
+      -1.6305867793471773
+    ],
+    "q_max": [
+      -1.2432246521633463,
+      0.10105347321419247,
+      1.1565758603967078,
+      -2.7831715924867737,
+      -0.09516502682914536,
+      4.386845949305742,
+      -1.6256940674444005
+    ],
+    "v_abs_max": 0.005,
+    "target_error_min": [
+      -0.000605300353112603,
+      -0.002772079206271599,
+      -0.0001614863384498452,
+      0.0028376303581849286,
+      -0.0006665962186576998,
+      3.944874787561477e-05,
+      -0.000746709297175607
+    ],
+    "target_error_max": [
+      0.0006060391363312042,
+      -0.0012699588370860496,
+      0.0012419468410825082,
+      0.004371767668397896,
+      0.0008128724675876744,
+      0.0016008774005420775,
+      0.0007743419543411508
+    ]
+  }
+}

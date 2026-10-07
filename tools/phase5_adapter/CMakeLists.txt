@@ -26,3 +26,7 @@ target_link_libraries(moving_stop_replay predictive_motion_kinematics::robot_kin
 add_executable(servo_identification servo_identification.cpp)
 target_include_directories(servo_identification PRIVATE ../phase4_adapters)
 target_link_libraries(servo_identification predictive_motion_kinematics::robot_kinematics predictive_motion_sim::plant predictive_motion_control::predictive_controller coal::coal yaml-cpp)
+
+add_executable(servo_validation_v2 servo_validation_v2.cpp)
+target_include_directories(servo_validation_v2 PRIVATE ../phase4_adapters)
+target_link_libraries(servo_validation_v2 predictive_motion_kinematics::robot_kinematics predictive_motion_sim::plant predictive_motion_control::predictive_controller coal::coal yaml-cpp)
