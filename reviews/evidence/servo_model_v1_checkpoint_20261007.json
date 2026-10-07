@@ -1,0 +1,88 @@
+{
+  "date": "2026-10-07",
+  "milestone": "Failed frozen affine servo v1: source/unit and independently reproduced model+recorded fixture review",
+  "phase5_acceptance": "PENDING",
+  "decision": "FAIL_MODEL_INELIGIBLE",
+  "model_sha256": "904460b19cd1014b624e15a6e2dd8827f07a590db08c3d60f86ce896e8a19200",
+  "executor_archive": {
+    "archive": "/mnt/d/CodexTransfer/projects/predictive_motion/checkpoints/servo-model-v1-20261007/servo-model-v1-failed.tar.gz",
+    "sha256": "e36b05b4ce88d70dbcd32a59e1dcffb27b7574b0e679150845b2df32a9a81e24",
+    "bytes": 4786420,
+    "members": 39,
+    "archive_members_verified": true,
+    "input_cache_verified_on_dell": 180,
+    "mac_copy_verified": false,
+    "scope": "failed model v1 unit; no Phase5 acceptance",
+    "source_manifest": "/home/codextransfer/predictive_motion/results/phase5/development/servo-model-v1/BACKUP_SOURCE_MANIFEST.json",
+    "source_manifest_sha256": "77c343b2d647cb30792832af57037710e0ab217d8e5aaf0f9fc9ec7848cc2bf9"
+  },
+  "executor_Mac_verified": "/Users/uot/Documents/ChatGPT/ros/results/phase5-servo-model-v1-checkpoint/servo-model-v1-failed.tar.gz",
+  "verification": "ArchiveSHA/bytes/39safe members;37declared member hashes plusBACKUP_SOURCE_MANIFEST SHA and selfmanifest underverified archive; smallsource hashes checked;source/scripts integratedMac",
+  "root_review_archive": {
+    "sha256": "62bd622e5789ca448d38d368bb41e776d7f5481ad4397575dd03ffe5523377d5",
+    "bytes": 5041678,
+    "members": 10,
+    "Mac": "/Users/uot/Documents/ChatGPT/ros/transfer/outgoing/phase5-servo-v1-root-review-20261007",
+    "Dell": "/mnt/d/CodexTransfer/projects/predictive_motion/checkpoints/root-servo-v1-review-20261007",
+    "verified": "Both archives, allmemberSHA, READY"
+  },
+  "independent_model_audit": "servo_model_v1_math_audit_20261007.md/json",
+  "recorded_validation_audit": {
+    "scope": "Independent recorded identification fixture checks only. No model fit, holdout accuracy, task/retiming, full MJCF limit intersection, hardware or real-time claim. URDF bounds and frozen protocol only.",
+    "status": "PASS",
+    "rows": 5438,
+    "active_substeps": 4438,
+    "raw_sha256": "3331840951457d0219cc0c461ea1339cead478211727c3ffc8579a7e2f847912",
+    "protocol_sha256": "b852b6fc9236eccaf3a682b5f7a0d977ec0e9e0020d329559d6cf56f66c90a31",
+    "urdf_sha256": "b66fe057eef414021df731932851604b5eef175610fd679338994e920aff157d",
+    "violations": {
+      "nonfinite": 0,
+      "URDF_position": 0,
+      "URDF_velocity": 0,
+      "command_target_URDF_margin": 0,
+      "command_velocity": 0,
+      "command_acceleration": 0,
+      "command_jerk": 0,
+      "physical_acceleration": 0,
+      "physical_jerk": 0,
+      "contact": 0,
+      "clearance": 0,
+      "command_age": 0,
+      "solver_status": 0
+    },
+    "recomputed_history_errors": {
+      "time": 6.590283874174929e-13,
+      "state_chain": 0.0,
+      "physical_acceleration": 0.0,
+      "physical_jerk": 0.0,
+      "target_integrator": 0.0,
+      "command_acceleration": 0.0,
+      "command_jerk": 0.0,
+      "same_cycle_command": 0.0
+    },
+    "active_peaks": {
+      "command_velocity": 0.0047574283111997216,
+      "command_acceleration": 0.33938610945409703,
+      "command_jerk": 20.000000000000018,
+      "physical_velocity": 0.003449205424126459,
+      "physical_acceleration": 0.03226312312190182,
+      "physical_jerk": 11.711459256609057
+    },
+    "final": {
+      "physical_velocity_max": 9.999511844848565e-05,
+      "command_velocity_max": 0.0,
+      "command_acceleration_max": 0.0
+    },
+    "min_recorded_clearance_m": 0.015567031409405479,
+    "active_full_cycle_4ms_misses": 11,
+    "active_full_cycle_max_s": 0.015721517,
+    "script_sha256": "88bf2dcabc0d62d101c4cd9c8ff6fee26885ac134c9e78df0322524578f8320d"
+  },
+  "visual": "Root inspectedfigures/phase5/phase5_servo_model_v1_failed.png; raw/model/report/script/output SHAverified; originalproducer metadata inspectionpending retained, separate root inspection recordedhere.",
+  "limits": [
+    "No maincontroller adoption or Phase5gate",
+    "Overlappingwindows notindependent trials",
+    "Old91012seen afterfixedv1 validation; cannot reuseasuntouched nextmodel-selectionholdout",
+    "Fullruntime/Pythonpackage closure remainsresearchreproductionwork"
+  ]
+}

@@ -1,0 +1,22 @@
+{
+  "scope": "Evidence-backed failed affine servo preview validation figure.",
+  "source_files": {
+    "/mnt/d/CodexTransfer/projects/predictive_motion/phase5/raw/servo-identification-v1-validation/raw.csv": "3331840951457d0219cc0c461ea1339cead478211727c3ffc8579a7e2f847912",
+    "/home/codextransfer/predictive_motion/results/phase5/development/servo-model-v1/model.json": "904460b19cd1014b624e15a6e2dd8827f07a590db08c3d60f86ce896e8a19200",
+    "/home/codextransfer/predictive_motion/results/phase5/development/servo-model-v1/training_report.json": "3486288a5a44f5122f921015fa2e0057926c48c9757586a86a84c47748db4cf1",
+    "/home/codextransfer/predictive_motion/results/phase5/development/servo-model-v1/heldout-validation/validation_report.json": "8ce9ce3dedf792d283dcc9bbd72049a46feafb7e9f3d5f9841ad62ff21f8e57d",
+    "/home/codextransfer/predictive_motion/scripts/phase5/plot_servo_model_v1.py": "b67364aa139bc3fe47c7ed679c8948f6fcd1c6906886d584694fea008b22c6d3",
+    "/home/codextransfer/predictive_motion/scripts/phase5/servo_model_v1.py": "aa43289cc1986edc9ed2ab8603fc3247071ead61c4acc228123045b6445f3547"
+  },
+  "output_sha256": "a349ca80e2bad8c207c190bd921b34e084ee979d57d29593d6348abd76027388",
+  "joint_index_zero_based": 1,
+  "window_start_tick": 839,
+  "window_duration_s": 0.8,
+  "units": {
+    "position": "mrad",
+    "velocity": "mrad/s",
+    "time": "s"
+  },
+  "inspection": "pending visual inspection",
+  "gate": "FAIL_MODEL_INELIGIBLE"
+}

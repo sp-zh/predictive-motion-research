@@ -88,6 +88,15 @@ has not yet been fitted or validated on the separate development trace.
 This is a calibration fixture, not predictive-task or online acceptance.
 [Figure hashes](../figures/phase5/phase5_servo_training_v1.json).
 
+![Rejected affine servo forecast](../figures/phase5/phase5_servo_model_v1_failed.png)
+
+The frozen first affine model passes short-duration checks but exceeds its
+prefrozen 800 ms limits on both training and separate development validation.
+The independent root reproduces these errors without future-state resets.
+Overlapping forecast windows are diagnostics, not independent trials.
+[Independent audit](../reviews/evidence/servo_model_v1_math_audit_20261007.md)
+and [figure provenance](../figures/phase5/phase5_servo_model_v1_failed.json).
+
 ## Downloadable 3D models
 
 | Asset | Format / units | Purpose |
