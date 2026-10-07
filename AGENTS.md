@@ -20,3 +20,17 @@ Coordinate Dell-produced changes into the Mac backup checkout before declaring
 a milestone backed up. A backup does not imply that a phase gate has passed.
 If a push or evidence copy fails, retain the local checkpoint and report the
 backup as incomplete until the failure is resolved. See docs/backup.md.
+
+# Demonstrable visual deliverables
+
+The user requires presentation-ready images and permits uploading project 3D
+models to the private Git repository. For each completed part or phase, create
+or update relevant actual simulation/CAD renders and evidence-backed plots,
+and maintain docs/showcase.md as the visual entry point. Include useful small
+STL/STEP/FreeCAD models in cad/generated/ and figures in figures/ in milestone
+commits. Inspect newly produced visuals and model units before delivery; record
+their source parameters/data, hashes and validation scope. Preserve failures
+and distinguish development diagnostics from accepted research results.
+Rendered or illustrative assets do not establish controller performance.
+Large assets require a suitable storage plan rather than silently omitting them
+or committing build caches. Preserve upstream model attribution and licenses.

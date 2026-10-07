@@ -28,3 +28,12 @@ Integrate completed Dell changes into the Mac checkout for backup. Do not claim
 large data is backed up to GitHub: the committed record identifies local archives.
 Report unsuccessful uploads or evidence copies as incomplete backups and retry
 when the connection is restored. Never overwrite accepted historical evidence.
+
+## Presentation assets
+
+The user requests demonstrable images and permits project 3D model uploads.
+Back up useful renders, plots and small STL/STEP/FreeCAD artifacts alongside
+each milestone. Keep the gallery and model index in [showcase.md](showcase.md)
+current, with units and evidence scope. Existing images in `figures/` and models
+in `cad/generated/` are already committed. Host-specific generated simulation
+XML and upstream dependency caches remain excluded.

@@ -7,6 +7,7 @@ A research project investigating finite-horizon posture selection and online pat
 Primary platform: Ubuntu 24.04 / ROS 2 Jazzy on Dell WSL2. Primary robot: Franka FR3; planned cross-validation: KUKA iiwa 14. C++ owns runtime math/control/simulation; Python owns experiments and analysis.
 
 - [Project specification](docs/project_spec.md)
+- [Visual showcase and downloadable 3D models](docs/showcase.md)
 - [Architecture](docs/architecture.md)
 - [Dependency matrix](docs/dependency_matrix.md)
 - [Mathematical conventions](docs/mathematics.md)
