@@ -1,0 +1,119 @@
+schema: 1
+scope: development tracking-preservation and numerical diagnostic; no held-out tuning
+control_dt_s: 0.004
+physics_substep_s: 0.002
+prediction_mesh_s:
+- 0.04
+- 0.04
+- 0.04
+- 0.04
+- 0.04
+- 0.04
+- 0.04
+- 0.04
+- 0.04
+- 0.04
+- 0.04
+- 0.04
+- 0.04
+- 0.04
+- 0.04
+- 0.04
+- 0.04
+- 0.04
+- 0.04
+- 0.04
+warmup_s: 2.0
+diagnostic_s: 3.0
+rotation_length_m: 0.3
+joint_trust_rad: 0.002
+progress_trust: 0.02
+scp_iterations: 1
+scp_step_tolerance: 1.0e-05
+scp_min_trust_rad: 1.0e-06
+scp_shrink: 0.5
+nonlinear_tolerance: 1.0e-06
+solver_absolute_tolerance: 1.0e-09
+solver_relative_tolerance: 1.0e-09
+solver_acceptance_tolerance: 1.0e-07
+solver_max_iterations: 50000
+solver_wall_limit_s: 5.0
+max_state_age_s: 5.0
+command_velocity_rad_s: 0.0625
+command_acceleration_rad_s2: 1.0
+command_jerk_rad_s3: 20.0
+executed_acceleration_rad_s2: 5.0
+executed_jerk_rad_s3: 500.0
+position_margin_rad: 0.005
+progress_speed: 0.2
+progress_acceleration: 0.5
+progress_jerk: 5.0
+collision_safe_m: 0.005
+collision_activation_m: 0.03
+collision_damper_eta_per_s: 2.0
+geometry_roundoff_margin_m: 1.0e-06
+geometry_max_subdivisions: 32
+command_subdivisions: 4
+singularity_safe_sigma: 1.0e-06
+singularity_target_sigma: 0.02
+singularity_penalty: 0.1
+tracking_weight: 10000
+velocity_weight: 0.01
+acceleration_weight: 0.001
+jerk_weight: 1.0e-05
+posture_weight: 0.001
+progress_reward: 0.1
+terminal_progress_weight: 0.1
+terminal_stop: true
+joint_trap_controller_margin_rad: 0.025
+joint_path_target_increment_rad: 0.2
+development_seeds:
+- 91011
+- 91012
+evaluation_seeds:
+- 101011
+- 101012
+scenarios:
+- inspection
+- joint_trap
+- singularity_probe
+development_policy: correct mathematical/interface/implementation failures before
+  freeze; preserve every epoch; no evaluation tuning
+heldout_policy: final research seeds 0-9 and 100-119 remain unused
+methods:
+- predictive
+- reactive_qp
+comparison_scope: component diagnostic with shared speed cap and scene; adaptive predictive
+  versus bounded reactive progress; no final research superiority claim
+execution_mode: paused_simulation_reference
+reference_guard: Planner computation occurs with the local simulator paused; independently
+  re-read unchanged initial q/v, then enforce unchanged 50ms current-command/fallback
+  guard. Not a hardware/online result.
+precision_policy: Explicit1e-9 solver stopping, with unchanged original-SI1e-7 hard-row
+  acceptance. No global worst-scale overconstraint; nativeSolved that fails any original
+  row remains rejected. Online protocol solver/budget unchanged.
+qp_formulation: condensed
+qp_variable_scaling: true
+reference_budget_policy: Paused functional reference5s/50000 with nativeSolved-only
+  and unchanged originalSI/hard/nonlinear checks. Online50ms/4000 unchanged. Earlieriteration/inaccurate
+  outcomes retained.
+tracking_model_tolerance_m: 0.0001
+sigma_model_tolerance: 1.0e-06
+scp_convergence: Feasible iterate acceptance by local scaled-SE3 model agreement at100micrometres,
+  small control step, or max iteration ceiling; not nonlinear convergence or stationarity.
+completion_position_m: 0.01
+completion_rotation_rad: 0.05
+model_accuracy_policy: Optimization-model termination precision is1% of declared10mm
+  task position tolerance (100micrometres in scaled SE3 residual), independently from
+  unchanged original-QP1e-7 and nonlinear hard-bound1e-6 acceptance. Active sigma
+  model tolerance remains1e-6. Earlier10micrometre convergence failures retained.
+reference_iteration_policy: Single convexified coupled horizon solve plus all original-bound/nonlinear
+  checks; not claimed nonlinear convergence. This independent reference isolates receding-horizon/warmstart
+  behavior.3pass old references retained.
+dual_feedback_policy: Approximate same-node semantic dual seed across4ms feedback,
+  no exact fractional costate shift claimed. Primal controls still shift/reconstruct
+  by actual4ms; full new QP/true nonlinear validation mandatory. Solver/stale/nonlinear
+  rejection/projected intervention/invalid seed resets workspace.
+diagnostic_protocol: Same physical plant, limits, native-SOLVED-only, SI1e-7 acceptance,
+  and 50ms current-command guard. Only declared development objective tracking weight
+  and mathematically equivalent QP formulation change.

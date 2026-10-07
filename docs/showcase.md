@@ -43,6 +43,15 @@ position servo. This is a paused-simulation development diagnostic, not Phase 5
 acceptance. [Independent mathematical audit](../reviews/evidence/predictive_math_specialist_20261007.md)
 and [source/output hashes](../figures/phase5/phase5_servo_contract_v19.json).
 
+![Phase 5 servo training](../figures/phase5/phase5_servo_training_v1.png)
+
+Actual MuJoCo training data shows position-servo lag and bounded stopping.
+Root independently checks recorded state continuity, command integration and
+derivatives, frozen URDF/protocol limits and recorded command age. The model
+has not yet been fitted or validated on the separate development trace.
+This is a calibration fixture, not predictive-task or online acceptance.
+[Figure hashes](../figures/phase5/phase5_servo_training_v1.json).
+
 ## Downloadable 3D models
 
 | Asset | Format / units | Purpose |

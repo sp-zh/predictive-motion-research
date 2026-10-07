@@ -1,0 +1,96 @@
+{
+  "date": "2026-10-07",
+  "milestone": "Completed independent servo training audit and visual; stable source and clean-conversation handoff backup",
+  "phase5_acceptance": "PENDING",
+  "training_audit": {
+    "scope": "Independent recorded identification fixture checks only. No model fit, holdout accuracy, task/retiming, full MJCF limit intersection, hardware or real-time claim. URDF bounds and frozen protocol only.",
+    "status": "PASS",
+    "rows": 5380,
+    "active_substeps": 4380,
+    "raw_sha256": "ab9d14efa1a5886c0683db25345f24d5cacd55343e2768eb60536fa180a11dce",
+    "protocol_sha256": "b852b6fc9236eccaf3a682b5f7a0d977ec0e9e0020d329559d6cf56f66c90a31",
+    "urdf_sha256": "b66fe057eef414021df731932851604b5eef175610fd679338994e920aff157d",
+    "violations": {
+      "nonfinite": 0,
+      "URDF_position": 0,
+      "URDF_velocity": 0,
+      "command_target_URDF_margin": 0,
+      "command_velocity": 0,
+      "command_acceleration": 0,
+      "command_jerk": 0,
+      "physical_acceleration": 0,
+      "physical_jerk": 0,
+      "contact": 0,
+      "clearance": 0,
+      "command_age": 0,
+      "solver_status": 0
+    },
+    "recomputed_history_errors": {
+      "time": 6.590283874174929e-13,
+      "state_chain": 0.0,
+      "physical_acceleration": 0.0,
+      "physical_jerk": 0.0,
+      "target_integrator": 0.0,
+      "command_acceleration": 0.0,
+      "command_jerk": 0.0,
+      "same_cycle_command": 0.0
+    },
+    "active_peaks": {
+      "command_velocity": 0.00456141672462577,
+      "command_acceleration": 0.31839225504077845,
+      "command_jerk": 20.00000000000001,
+      "physical_velocity": 0.0033698669519086396,
+      "physical_acceleration": 0.02757186017891128,
+      "physical_jerk": 9.452235637955319
+    },
+    "final": {
+      "physical_velocity_max": 9.992339177768112e-05,
+      "command_velocity_max": 0.0,
+      "command_acceleration_max": 0.0
+    },
+    "min_recorded_clearance_m": 0.015566343416054946,
+    "active_full_cycle_4ms_misses": 9,
+    "active_full_cycle_max_s": 0.013921748,
+    "script_sha256": "88bf2dcabc0d62d101c4cd9c8ff6fee26885ac134c9e78df0322524578f8320d"
+  },
+  "root_archive": {
+    "sha256": "c21107694a33044c935d2c9f8a853f877474d6c3769161b9b8ed5904e1ea38c5",
+    "bytes": 2777994,
+    "members": 22,
+    "Mac": "/Users/uot/Documents/ChatGPT/ros/transfer/outgoing/phase5-training-handoff-checkpoint-20261007",
+    "Dell": "/mnt/d/CodexTransfer/projects/predictive_motion/checkpoints/root-training-handoff-20261007",
+    "verified": "Both complete archives, all member hashes and READY"
+  },
+  "executor_handoff": {
+    "scope": "clean handoff stable current source+recorded state; no phase gate",
+    "archive": "/mnt/d/CodexTransfer/projects/predictive_motion/checkpoints/executor-handoff-20261007/executor-handoff-source.tar.gz",
+    "archive_sha256": "0c244ceb055478c32927d17be9786bf9fa32fb312a6e5db49e61eca68f08bf34",
+    "bytes": 129741,
+    "members": 72,
+    "handoff_sha256": "65644b1a75876a0595f925a49b8361abf2e5889b9ac87c2c32b3daa791a6d839",
+    "state_sha256": "ac2baf87d122f132495f19569f2d3b4cda296470a4a8fca967abdaefd69e922a",
+    "source_manifest_sha256": "fc3eaba4ef0c07df06991b19c9dbfb76ea3eee6d3bbfd8807035af1b367a5ca8",
+    "latest_inputs": 176,
+    "old_writer_released": true,
+    "active_processes": [],
+    "phase5_accepted": false
+  },
+  "executor_source_manifest_verified_members": 68,
+  "effective_input_closure_independently_reverified_on_Dell": {
+    "inputs": 176,
+    "bytes": 133441565,
+    "missing": [],
+    "store": "/mnt/d/CodexTransfer/projects/predictive_motion/phase5/identity-cache",
+    "Mac": "manifest only; complete runtime bytes not copied"
+  },
+  "new_single_writer_thread": "01a114d9-3a3a-7071-b94f-624581000992",
+  "new_thread_host": "local; operates sameDell WSL through existingUSB4SSH",
+  "retired_writer_thread": "01a0a7f2-cc0b-77d0-8ed7-15abe948879a",
+  "source_backup": "Integrated58 executor source/config/review entries intoMac. Historical nativeAGENTS/PROJECT_PAUSED remain archive only; root rules retained. Root added current contract qualification to docs/predictive_controller.md. No active fit/validation changes copied.",
+  "limitations": [
+    "Training is a calibration fixture, not predictive task success.",
+    "No accepted fitted servo model, no hardware/real-time claim.",
+    "Original failures and acceptedPhase4 archive unchanged.",
+    "Model selection, frozen development validation, mainMPC correction and formalPhase5 gate pending."
+  ]
+}
