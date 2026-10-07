@@ -1,0 +1,40 @@
+{
+  "output_sha256": "934b2b91cad13025661d0f8ad3ad6b353c87e58cbbba6feef886572cac5be9a6",
+  "source_hashes": {
+    "/mnt/d/CodexTransfer/projects/predictive_motion/phase5/raw/servo-safe-reference-v3-validation/raw.csv": "5e5e2e5cde6170d548278007d6be80ac0703e832e6d1e8fb4ccbd64bfe4baa94",
+    "/home/codextransfer/predictive_motion/results/phase5/development/servo-safe-reference-v3-validation/recorded_v3_final_state.ppm": "c90e2ee21ae38b717a9336a84e36e40a1daebaf6c0cd5548e795c4f7a90cf3e7",
+    "/home/codextransfer/predictive_motion/experiments/generated/inspection/scene.xml": "fdbb460120c287785dceafe2f320e8b79865203a09aebb5027ec8fd53f4628a5",
+    "/home/codextransfer/predictive_motion/experiments/generated/inspection/inspection_fr3.xml": "0231a374b6173f38ff63a214932dfca624594d23daf5f4b0c4a0e8e02016ebae",
+    "/home/codextransfer/predictive_motion/tools/phase5_servo_diagnostics/render_servo_recorded_pose.cpp": "fc580f93f478eca9b49045e973f9c8a80a9ef783a2c89a006775e1479e47385a",
+    "/home/codextransfer/predictive_motion/build-servo-qp-reconstruct-v1/render_servo_recorded_pose": "2f1c00d113aaf5e12143610ad81fd76061ac634a04bfd00eb9ba414fcb91d7d4",
+    "/home/codextransfer/predictive_motion/scripts/phase5/annotate_servo_safe_reference_v3_render.py": "07c600db7a29ca343cb84ab4c5b167d74377a4c1c386310c117f9854526b5a7a"
+  },
+  "upstream_asset_manifest_sha256": "f3a72b9e0f72c56fa0a6a653a7e32fa5b235781e9cd2ce8fcf65fae243867c16",
+  "model_length_units": "metres;joint q radians;unchanged model/CAD",
+  "camera": {
+    "lookat_m": [
+      0.49,
+      -0.01,
+      0.49
+    ],
+    "distance_m": 1.5,
+    "azimuth_deg": 135,
+    "elevation_deg": -23
+  },
+  "record": {
+    "tick": 2500,
+    "time_s": 10.00400000000001,
+    "q_post_rad": [
+      -1.2445575104347464,
+      0.09798166424327394,
+      1.1556794118903626,
+      -2.7784889247551035,
+      -0.09634522592917318,
+      4.3820806106249,
+      -1.6288205820201551
+    ]
+  },
+  "scope": "Actual recorded end pose, forward geometry only; no new physics/control or predictor/controller acceptance; shared stop follows hold",
+  "renderer": "Existing OSMesa/MuJoCo3.3.7",
+  "completed_stop": true
+}

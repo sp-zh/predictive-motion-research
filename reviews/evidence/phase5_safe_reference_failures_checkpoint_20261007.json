@@ -1,0 +1,19 @@
+{
+  "date": "2026-10-07",
+  "work_unit": "safe-reference-failures",
+  "phase5_acceptance": "PENDING",
+  "scope": "Retained two curated-reference failures; v2 fresh shared stop completed; no model expansion, online success or Phase5 acceptance",
+  "archive": {
+    "sha256": "e0702c404c1b65eff61b8859b5945b009db2578f4d14f09619f0c931e54bbf8d",
+    "bytes": 9694791,
+    "members": 69,
+    "Mac": "/Users/uot/Documents/ChatGPT/ros/results/phase5-executor-checkpoints-01a114d9/safe-reference-failures/servo-safe-reference-failures.tar.gz",
+    "Dell": "/mnt/d/CodexTransfer/projects/predictive_motion/checkpoints/servo-safe-reference-failures-20261007/servo-safe-reference-failures.tar.gz",
+    "mac_sha_and_all_declared_members_root_verified": true,
+    "dell_sha_and_members_verified": true,
+    "restored": "/Users/uot/Documents/ChatGPT/ros/results/phase5-safe-reference-failures-root-checkpoint/restored"
+  },
+  "small_source_manifest_sha256": "a9de0fab0ac785fcd6d281be3e752671ea9a27616339f8dc7d7c008297c93a23",
+  "large_evidence_not_in_git": true,
+  "input_cache_verification": "Root independent full immutable-cache reread recorded separately for physical v1/v2/v3; producer verified closure before publication."
+}

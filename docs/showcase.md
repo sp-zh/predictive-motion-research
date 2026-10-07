@@ -134,6 +134,48 @@ trajectory. Both views identify a verified failure with no accepted stop command
 [Producer diagnostic](../reviews/phase_5_servo_failure_stop_diagnostic_20261007.md)
 and [archive/closure identities](../reviews/evidence/servo_stop_diagnostic_checkpoint_20261007.json).
 
+## Further Phase 5 development evidence
+
+![Retained reference failures with corrected guard label](../figures/phase5/phase5_servo_reference_failures_corrected.png)
+
+The first reference reaches a signed command-speed dead end and cannot stop;
+the second primary run fails SI acceptance but completes its fresh shared stop.
+The displayed guard is the frozen **5mm** bound. The original producer plot
+mistakenly labels it10mm; its bytes remain in the original archive and historical
+figure, while this separate correction leaves data and actual guards unchanged.
+Joint4 means zero-based index3.
+[Independent empty-box proof](../reviews/evidence/servo_safe_reference_v1_emptybox_20261007.md)
+and [precision diagnosis](../reviews/evidence/servo_safe_reference_v2_precision_20261007.md).
+
+![Signed speed continuation](../figures/phase5/phase5_signed_velocity_continuation.png)
+
+![Isolated C++ continuation parity](../figures/phase5/phase5_signed_cone_cpp_parity.png)
+
+These mathematical views establish discrete signed speed continuation under
+the stated acceleration/jerk limits. They do not establish position, collision
+or physical stopping. “Joint3” in the original plot denotes index3, vendor joint4.
+[Independent scope](../reviews/evidence/signed_command_cone_math_audit_20261007.md).
+
+![Completed reference fixture with failed short-step prediction](../figures/phase5/phase5_servo_safe_reference_v3.png)
+
+![Recorded final state after long hold](../figures/phase5/phase5_servo_safe_reference_v3_final_state.png)
+
+V3 passes the recorded guard and final hold-end stop, while its frozen predictor
+fails the2/4ms limits. The shaded hold is not excitation; the final new stop is
+not a moving-stop challenge. The render uses saved measured state and geometry.
+The plot's joint3 label denotes index3, vendor joint4.
+[Independent complete-window/QP/history audit](../reviews/evidence/servo_safe_reference_v3_root_audit_20261007.md).
+
+![Local causal C++ transition parity](../figures/phase5/phase5_causal_soft_servo_cpp_parity.png)
+
+![Frozen friction branch and API checks](../figures/phase5/phase5_causal_servo_api_v2_branches.png)
+
+These are calculations of the frozen local model, with separate accepted target
+and measured-state coordinates. They reproduce an independent transition oracle
+and declared threshold branches; they are not physical trajectories or expanded
+model validation. The original local domain and failed expanded accuracy gate
+remain unchanged. [API and branch scope](../reviews/phase_5_causal_servo_api_v2_20261007.md).
+
 ## Downloadable 3D models
 
 | Asset | Format / units | Purpose |

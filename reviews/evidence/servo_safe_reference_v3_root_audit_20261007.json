@@ -1,0 +1,96 @@
+{
+  "classification": "PASS_RECORDED_QP_AND_SIGNED_HISTORY_MODEL_EXPANSION_FAIL",
+  "phase5_accepted": false,
+  "source_sha256": "0c287c37cb32193b299010d1ff2749afab002aedfe02435c3bd5a183e52309da",
+  "raw_sha256": "5e5e2e5cde6170d548278007d6be80ac0703e832e6d1e8fb4ccbd64bfe4baa94",
+  "model_sha256": "984ee85d086aeba7da8260a20b21b301e23dfd2c698a6c61ace0ff956bbec1bb",
+  "producer_report_sha256": "6ecbabbb0cead2fa4fc67307298d9cf1a22a77030579a912c0c55d4c00039962",
+  "forecast_metric_agreement": 8.673617379884035e-19,
+  "horizons": [
+    {
+      "substeps": 1,
+      "windows": 2001,
+      "max_q_error_rad": 5.392823152483572e-07,
+      "max_v_error_rad_s": 0.0002696411576707568,
+      "rmse_q_rad": 3.392220676256814e-08,
+      "rmse_v_rad_s": 1.6961103383441763e-05,
+      "passed": false,
+      "q_limit_rad": 1e-06,
+      "v_limit_rad_s": 0.0001,
+      "q_worst_start_tick_joint": [
+        730,
+        3
+      ],
+      "hold_only_windows": 1572
+    },
+    {
+      "substeps": 2,
+      "windows": 2001,
+      "max_q_error_rad": 1.1625050619912258e-06,
+      "max_v_error_rad_s": 0.000311611373310611,
+      "rmse_q_rad": 7.315880865559611e-08,
+      "rmse_v_rad_s": 2.0283068543430506e-05,
+      "passed": false,
+      "q_limit_rad": 1e-06,
+      "v_limit_rad_s": 0.0001,
+      "q_worst_start_tick_joint": [
+        730,
+        3
+      ],
+      "hold_only_windows": 1572
+    },
+    {
+      "substeps": 20,
+      "windows": 1992,
+      "max_q_error_rad": 1.621974296295292e-05,
+      "max_v_error_rad_s": 0.0005295642594978457,
+      "rmse_q_rad": 1.7459900584637906e-06,
+      "rmse_v_rad_s": 5.4789412302300625e-05,
+      "passed": true,
+      "q_limit_rad": 0.0001,
+      "v_limit_rad_s": 0.001,
+      "q_worst_start_tick_joint": [
+        714,
+        3
+      ],
+      "hold_only_windows": 1563
+    },
+    {
+      "substeps": 400,
+      "windows": 1802,
+      "max_q_error_rad": 3.822768857464354e-05,
+      "max_v_error_rad_s": 0.0004554748255206683,
+      "rmse_q_rad": 1.2600834508895702e-05,
+      "rmse_v_rad_s": 1.4630490249290264e-05,
+      "passed": true,
+      "q_limit_rad": 0.0001,
+      "v_limit_rad_s": 0.001,
+      "q_worst_start_tick_joint": [
+        556,
+        3
+      ],
+      "hold_only_windows": 1373
+    }
+  ],
+  "actual_qp_solves": 2002,
+  "actual_qp_rows": 262495,
+  "maximum_actual_SI_violation": 1.6399326341343112e-10,
+  "accepted_candidate_match": 0.0,
+  "accepted_histories": 2001,
+  "minimum_signed_speed_recovery_margin": 0.04440002730585592,
+  "physical_phase_substeps": {
+    "hold": 3144,
+    "new_shared_stop": 2,
+    "reference_motion": 390,
+    "reference_recorded_stop": 466,
+    "warmup": 1000
+  },
+  "limits": [
+    "Conditional known accepted targets only; no future plant state resets or refit.",
+    "Overlapping windows and long holds are not independent motion trials.",
+    "Actual A/l/u and candidates are audited; per-solve H/g were not directly exported.",
+    "Signed speed continuation alone proves no position, collision, or physical-stop feasibility.",
+    "Stop occurs after a long hold, not a fresh moving-stop challenge.",
+    "No main predictive-controller acceptance or online 250 Hz certificate."
+  ]
+}

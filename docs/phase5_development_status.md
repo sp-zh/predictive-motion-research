@@ -22,6 +22,21 @@ The public soft-friction local surrogate passes the same error limits on a prosp
 
 Evidence and scope:
 
+Six further development units are preserved with verified Mac/Dell archives and source checkpoint records. A position-catchup reference fails after its signed command-speed history becomes nonviable; an independent exact audit retains that empty intersection. Direct velocity replay avoids the catchup debt but fails original SI-row acceptance. Independent cold solves with tighter solver accuracy show that this captured QP is feasible, without reconstructing the missing original rejected point. Its fresh shared stop completes; this remains a failed primary trial.
+
+The isolated signed command-velocity continuation cone passes independent exact recovery checks and C++/Python parity. It preserves both speed limits under bounded acceleration/jerk; it establishes no position or collision stopping guarantee. Actual accepted-history postchecks are required because floating-point rows and SI acceptance alone are not strict continuation certificates. The main predictive controller has not adopted this module.
+
+A prospective v3 reference fixture combines direct recorded velocity, the signed cone, tighter solver accuracy and unchanged safety acceptance. Root independently verifies all 2,002 actual solved candidates against 262,495 exported original A/l/u rows, with maximum violation 1.640e-10, and all 2,001 applied command histories. The complete 5,002-row recorded audit also passes its stated bounds. However, the fixed scalar predictor still fails the original 2/4ms accuracy limits: maximum velocity errors are 2.696e-4/3.116e-4rad/s, against 1e-4; the 4ms position error is 1.163e-6rad, against 1e-6. Root reproduces all forecast metrics to 8.674e-19. The 40/800ms checks pass on this trace, but its long hold supplies most windows, and the final new stop begins already near rest. This does not establish a moving-stop challenge, domain-wide prediction, online250Hz execution, or main predictive-controller acceptance.
+
+The causal C++ model modules reproduce the frozen augmented transition, Jacobians and nonuniform mesh sensitivities. Version2 adds malformed-input rejection and eight fixed-root friction branch cases, including explicitly declared one-sided behavior at exact clip thresholds. These are isolated algebra/API checks on the same limited local model; they confer no expanded physical accuracy. Read-only public-model review identifies a coupled dynamics route including tool mass and motor armature, with explicit friction-force and implicit integration contracts. Prediction accuracy for that route is still unvalidated. Any subsequent correction must use training data only and freeze before fresh validation.
+
+- [Independent reference-v1 empty-box proof](../reviews/evidence/servo_safe_reference_v1_emptybox_20261007.md)
+- [Independent reference-v2 precision diagnosis](../reviews/evidence/servo_safe_reference_v2_precision_20261007.md)
+- [Independent signed continuation review](../reviews/evidence/signed_command_cone_math_audit_20261007.md)
+- [Independent v3 model/QP/history audit](../reviews/evidence/servo_safe_reference_v3_root_audit_20261007.md)
+- [Public coupled dynamics design review](../reviews/evidence/public_coupled_servo_design_review_20261007.md)
+- [Causal C++ API/branch development review](../reviews/phase_5_causal_servo_api_v2_20261007.md)
+
 - [Preliminary implementation review](../reviews/evidence/phase5_implementation_review_20261006.md)
 - [Independent moving-stop review](../reviews/evidence/phase5_moving_stop_root_review_20261007.md)
 - [Independent command/servo mathematical review](../reviews/evidence/predictive_math_specialist_20261007.md)

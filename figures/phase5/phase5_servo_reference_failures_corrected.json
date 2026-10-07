@@ -1,0 +1,23 @@
+{
+  "scope": "Correct archived plot labels from frozen configuration; no experimental change.",
+  "source_hashes": {
+    "/home/codextransfer/predictive_motion/config/phase5_development/servo_validation_safe_reference_v1.yaml": "131db119a842f5709509c675d3a6d54b2987c87be09113e5e5cd169381c5056a",
+    "/mnt/d/CodexTransfer/projects/predictive_motion/phase5/raw/servo-safe-reference-v1-validation/summary.yaml": "3d5271bb1044c2c81bdf46b9f161c7df4ff2dd45e3227dc040609640761fe43e",
+    "/mnt/d/CodexTransfer/projects/predictive_motion/phase5/raw/servo-safe-reference-v1-validation/raw.csv": "561d63684b3acc591acf2f287e6f7f264a340207cebe8767887b5107dadc661c",
+    "/home/codextransfer/predictive_motion/config/phase5_development/servo_validation_safe_reference_v2.yaml": "ac91307979ebc6290674b090493542f02759136b5550a1c30bcd5ae73c4956a4",
+    "/mnt/d/CodexTransfer/projects/predictive_motion/phase5/raw/servo-safe-reference-v2-validation/summary.yaml": "32136080039f4b57cab4efc4ad25ad2d5191248ea26dd0eee8855952aecb507b",
+    "/mnt/d/CodexTransfer/projects/predictive_motion/phase5/raw/servo-safe-reference-v2-validation/raw.csv": "504cceabcad9ef2fd12e8b73017f7b3b8ebaf05ac180fc96df7fdc8b6a726715"
+  },
+  "source_sha256": "dc835abfe66252313d1f102bf4302f285da502103ad0737de53a6c9e6ef5096b",
+  "output_sha256": "d8cd4af64e2a80649c0ea1d2c6a7190d293ce9afd5c6451573c4064ae2a3f561",
+  "joint_index_zero_based": 3,
+  "vendor_joint_number": 4,
+  "guard_source": "Each unchanged frozen case YAML collision_safe_m=.005",
+  "correction": "Archived producer figure incorrectly displayed a hardcoded 10 mm guard. Retained unchanged in original unit archive; this plot corrects labels only.",
+  "units": {
+    "distance": "mm",
+    "velocity": "rad/s",
+    "time": "s"
+  },
+  "phase5_acceptance": "PENDING"
+}

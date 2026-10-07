@@ -1,0 +1,298 @@
+{
+  "scope": "Read-only captured safe-reference v1 empty-box diagnostic; no plant, fit or guard change.",
+  "verdict": "VERIFIED_CAPTURED_EMPTY_COMMAND_BOX_NOT_STOPPING_PASS",
+  "source_sha256": "671e88078606b3f819196620b09a5a22d71d428b36704ab70a68aca316554054",
+  "original_raw_sha256": "561d63684b3acc591acf2f287e6f7f264a340207cebe8767887b5107dadc661c",
+  "rows": 1586,
+  "last_accepted_tick": 792,
+  "rejected_tick": 793,
+  "final_time_s": 3.1719999999998723,
+  "empty_captured_rows": [
+    3
+  ],
+  "axis3": {
+    "last_accepted_w_rad_s": -0.061980006326262695,
+    "last_accepted_alpha_rad_s2": -0.5199999999999909,
+    "permitted_next_alpha_rad_s2": [
+      -0.5999999999999909,
+      -0.4399999999999909
+    ],
+    "permitted_next_w_from_acceleration_jerk_rad_s": [
+      -0.06438000632626266,
+      -0.06374000632626266
+    ],
+    "speed_cap_rad_s": 0.0625,
+    "captured_lower_rad_s": -0.0625,
+    "captured_upper_rad_s": -0.06374000632626266,
+    "exact_decimal_gap_rad_s": 0.0012400063262626576,
+    "exact_gap_positive": true,
+    "gap_after_both_row_1e7_allowances_rad_s": 0.0012398063262626575,
+    "reference_w_at_reject_rad_s": 0.0,
+    "deadbeat_position_request_at_reject_rad_s": 0.29814419064977393,
+    "reference_position_debt_before_reject_rad": 0.0011925767625990957,
+    "signed_lower_cone": {
+      "side": "lower",
+      "shifted_speed_rad_s": 0.0005199936737373054,
+      "fastest_recovery_future_acceleration_rad_s2": [
+        -0.4399999999999909,
+        -0.3599999999999909,
+        -0.2799999999999909,
+        -0.1999999999999909,
+        -0.11999999999999089,
+        -0.03999999999999093
+      ],
+      "required_speed_reserve_rad_s": 0.005759999999999783,
+      "necessary_continuation_margin_rad_s": -0.005240006326262477
+    }
+  },
+  "first_accepted_state_outside_necessary_signed_speed_cone": {
+    "tick": 785,
+    "joint": 3,
+    "accepted_w_rad_s": -0.040700006326262854,
+    "accepted_alpha_rad_s2": -0.9999999999999991,
+    "side": "lower",
+    "shifted_speed_rad_s": 0.021799993673737146,
+    "fastest_recovery_future_acceleration_rad_s2": [
+      -0.9199999999999992,
+      -0.8399999999999991,
+      -0.7599999999999991,
+      -0.679999999999999,
+      -0.5999999999999991,
+      -0.5199999999999991,
+      -0.43999999999999906,
+      -0.3599999999999991,
+      -0.27999999999999914,
+      -0.19999999999999907,
+      -0.11999999999999911,
+      -0.03999999999999915
+    ],
+    "required_speed_reserve_rad_s": 0.023039999999999956,
+    "necessary_continuation_margin_rad_s": -0.0012400063262628103
+  },
+  "recorded_reference_catchup_samples": [
+    {
+      "tick": 695,
+      "axis3_reference_delta_rad": 0.007216539705464875,
+      "axis3_accepted_delta_rad": 0.007216539705464875,
+      "axis3_reference_position_debt_rad": 0.0,
+      "axis3_reference_velocity_rad_s": 0.01786798406078614,
+      "axis3_accepted_velocity_rad_s": 0.017867984142494464,
+      "axis3_accepted_acceleration_rad_s2": -0.057997137172050364
+    },
+    {
+      "tick": 725,
+      "axis3_reference_delta_rad": 0.0070851872962687246,
+      "axis3_accepted_delta_rad": 0.0070852185527638945,
+      "axis3_reference_position_debt_rad": -3.12564951698846e-08,
+      "axis3_reference_velocity_rad_s": 0.005771161223547634,
+      "axis3_accepted_velocity_rad_s": 0.005774664683056527,
+      "axis3_accepted_acceleration_rad_s2": 0.401154759609018
+    },
+    {
+      "tick": 750,
+      "axis3_reference_delta_rad": 0.00716752326314829,
+      "axis3_accepted_delta_rad": 0.007120300845988581,
+      "axis3_reference_position_debt_rad": 4.7222417159709096e-05,
+      "axis3_reference_velocity_rad_s": 0.0,
+      "axis3_accepted_velocity_rad_s": -0.0016266066792280558,
+      "axis3_accepted_acceleration_rad_s2": 0.4473711572400492
+    },
+    {
+      "tick": 775,
+      "axis3_reference_delta_rad": 0.00726286652812691,
+      "axis3_accepted_delta_rad": 0.008494210195713947,
+      "axis3_reference_position_debt_rad": -0.001231343667587037,
+      "axis3_reference_velocity_rad_s": 0.0,
+      "axis3_accepted_velocity_rad_s": -0.0007294909552230993,
+      "axis3_accepted_acceleration_rad_s2": -0.9126288427599499
+    },
+    {
+      "tick": 780,
+      "axis3_reference_delta_rad": 0.00726286652812691,
+      "axis3_accepted_delta_rad": 0.008240210069188958,
+      "axis3_reference_position_debt_rad": -0.000977343541062048,
+      "axis3_reference_velocity_rad_s": 0.0,
+      "axis3_accepted_velocity_rad_s": -0.020700006326262885,
+      "axis3_accepted_acceleration_rad_s2": -0.9999999999999982
+    },
+    {
+      "tick": 785,
+      "axis3_reference_delta_rad": 0.00726286652812691,
+      "axis3_accepted_delta_rad": 0.007586209942663569,
+      "axis3_reference_position_debt_rad": -0.0003233434145366587,
+      "axis3_reference_velocity_rad_s": 0.0,
+      "axis3_accepted_velocity_rad_s": -0.040700006326262854,
+      "axis3_accepted_acceleration_rad_s2": -0.9999999999999991
+    },
+    {
+      "tick": 790,
+      "axis3_reference_delta_rad": 0.00726286652812691,
+      "axis3_accepted_delta_rad": 0.006557809816138072,
+      "axis3_reference_position_debt_rad": 0.0007050567119888385,
+      "axis3_reference_velocity_rad_s": 0.0,
+      "axis3_accepted_velocity_rad_s": -0.05750000632626276,
+      "axis3_accepted_acceleration_rad_s2": -0.679999999999993
+    },
+    {
+      "tick": 792,
+      "axis3_reference_delta_rad": 0.00726286652812691,
+      "axis3_accepted_delta_rad": 0.006070289765527814,
+      "axis3_reference_position_debt_rad": 0.0011925767625990957,
+      "axis3_reference_velocity_rad_s": 0.0,
+      "axis3_accepted_velocity_rad_s": -0.061980006326262695,
+      "axis3_accepted_acceleration_rad_s2": -0.5199999999999909
+    }
+  ],
+  "max_recorded_velocity_difference_from_command_only_clamped_request_rad_s": 5.402041086102673e-09,
+  "primary_stop_first21rows_identical": true,
+  "primary_stop_shapes": [
+    [
+      33,
+      7
+    ],
+    [
+      42,
+      7
+    ]
+  ],
+  "stop_objective_zero_gradient": true,
+  "no_post_rejection_physical_substeps_or_accepted_stop_commands": true,
+  "final_recorded_physical_speed_rad_s": 0.009817975972278228,
+  "final_cycle": {
+    "tick": "793",
+    "full_cycle_wall_s": "0.037580877999999998",
+    "command_age_s": "0.0087970919999999994",
+    "status": "INFEASIBLE_BOUNDS_NO_FEASIBLE_STOP_NO_COMMAND_SIMULATION_TERMINATED",
+    "deadline_miss": "1"
+  },
+  "producer_summary": {
+    "scope": "Local servo identification/held-out development validation fixture; not a motion research trial",
+    "seed": 91012,
+    "fixture": "servo_validation",
+    "primary_failure": "INFEASIBLE_BOUNDS",
+    "stop_failure": "INFEASIBLE_BOUNDS_NO_FEASIBLE_STOP_NO_COMMAND_SIMULATION_TERMINATED",
+    "completed_stop": false,
+    "min_clearance_m": 0.015567031409405479,
+    "max_physical_velocity_rad_s": 0.029922237716583734
+  },
+  "frozen_actor_source": {
+    "original_path": "/home/codextransfer/predictive_motion/tools/phase5_servo_reference/servo_safe_reference_fixture.cpp",
+    "sha256": "20206e77d72b5eeaf3cc6fbecb776116ee949cbcc9fe1794e0d2ead7e714e59e",
+    "cache_original_path": "/home/codextransfer/predictive_motion/build-servo-safe-reference-v1/CMakeCache.txt",
+    "cache_sha256": "65dd63d6ac3c9ca0687e0de1dc1e95cb6737f449ff90a5577778ebfad00f35ff",
+    "identity_basis": "Read immutable frozen blobs, not currently edited developer files/CMake"
+  },
+  "reference_identity": {
+    "scope": "Curated previously seen moving-stop accepted inputs only; original physical states never exported to controller; not untouched old holdout",
+    "source_raw_sha256": "cdd840c3ab68a02ad4e22c8e7fe7fb8991257aab2133e57ff88fc343768f3481",
+    "reference_sha256": "3fcd90116c0c1bb5aa93c0cb78945a4a7334f64cfe146f82d0b70835810967bd",
+    "cycles": 928,
+    "control_dt_s": 0.004,
+    "relative_offset": "new initial accepted target + original accepted target - original initial accepted target",
+    "initial_500_cycles": "original warmup target constant; new run also warms 2s",
+    "tail": "hold last accepted target through tick2499; then shared bounded stop",
+    "source_selected_before_new_run": true,
+    "precheck": {
+      "max_delta_rad_per_joint": [
+        0.0011641373932711474,
+        0.0008442902038698907,
+        0.0015049548589700645,
+        0.007606829177639884,
+        0.001303644971953441,
+        0.002386366815311902,
+        0.0005348275815912906
+      ],
+      "max_w_rad_s": 0.018099972694195197,
+      "max_alpha_rad_s2": 0.7779971583522641,
+      "max_jerk_rad_s3": 20.000000000000156,
+      "target_integrator_error": 4.431202041584037e-16
+    },
+    "geometry_and_stop": "source had observed bounded stop; new initialization geometry/command/physical guards and fresh stop must independently pass"
+  },
+  "effective_inputs": {
+    "/home/codextransfer/predictive_motion/results/phase5/development/servo-safe-reference-v1-validation/frozen.json": {
+      "sha256": "051671e7fcac549a5ea494f5fa9420b2d4e538027c4d7c9af7cbee1c37b623d3",
+      "bytes": 32182
+    },
+    "/home/codextransfer/predictive_motion/results/phase5/development/servo-safe-reference-v1-validation/execution.json": {
+      "sha256": "d133892c9ded822f31d4220e6b0abd6fa0eeee294a70a13b3892b0580c99661a",
+      "bytes": 1883
+    },
+    "/home/codextransfer/predictive_motion/results/phase5/development/servo-safe-reference-v1-validation/materialized-identity.json": {
+      "sha256": "6ad42e72ff1ae5f94f8749fb69752d2bfe61489683c53cd812ea5a1bf4c6ae02",
+      "bytes": 2842
+    },
+    "/mnt/d/CodexTransfer/projects/predictive_motion/phase5/raw/servo-safe-reference-v1-validation/cycles.csv": {
+      "sha256": "e58895cc527cb883fc387dc188537f05235df4042455e47cfb59947f58b99167",
+      "bytes": 30581
+    },
+    "/mnt/d/CodexTransfer/projects/predictive_motion/phase5/raw/servo-safe-reference-v1-validation/first_rejected_A.csv": {
+      "sha256": "65b2a3d9a356f79b977347339f3ddd1e83c8b5728fdbd5e09bd4ad4d586660cc",
+      "bytes": 5584
+    },
+    "/mnt/d/CodexTransfer/projects/predictive_motion/phase5/raw/servo-safe-reference-v1-validation/first_rejected_g.csv": {
+      "sha256": "8c1c8935ef68674eed112e092919b5a989ca3e5a66d3d1b0ff15f2ab105dcb25",
+      "bytes": 169
+    },
+    "/mnt/d/CodexTransfer/projects/predictive_motion/phase5/raw/servo-safe-reference-v1-validation/first_rejected_H.csv": {
+      "sha256": "9631f66099ba560dec4fd1d0b571b9715dde4bd3f235d764cbc5a029f603d878",
+      "bytes": 1176
+    },
+    "/mnt/d/CodexTransfer/projects/predictive_motion/phase5/raw/servo-safe-reference-v1-validation/first_rejected_lower.csv": {
+      "sha256": "5ec5b5bbb3446e14d7ae70970b5cf07e58ea1f7ecf4281defbbc585fd3e9ef31",
+      "bytes": 825
+    },
+    "/mnt/d/CodexTransfer/projects/predictive_motion/phase5/raw/servo-safe-reference-v1-validation/first_rejected_upper.csv": {
+      "sha256": "3220cf5bfe036e896e5fab1e16c6b84d94f94312c3ec88c671e4ce06e15f52dc",
+      "bytes": 555
+    },
+    "/mnt/d/CodexTransfer/projects/predictive_motion/phase5/raw/servo-safe-reference-v1-validation/raw.csv": {
+      "sha256": "561d63684b3acc591acf2f287e6f7f264a340207cebe8767887b5107dadc661c",
+      "bytes": 2030611
+    },
+    "/mnt/d/CodexTransfer/projects/predictive_motion/phase5/raw/servo-safe-reference-v1-validation/stop_A.csv": {
+      "sha256": "466dce6205fc8f4b62c8c5a00fdceafa7e7d9a75f466827282d6c600eaefacff",
+      "bytes": 7129
+    },
+    "/mnt/d/CodexTransfer/projects/predictive_motion/phase5/raw/servo-safe-reference-v1-validation/stop_g.csv": {
+      "sha256": "15e3b9745ed73f381c489e9b976fd69a592f9912304ab408bbe37352f2ab687f",
+      "bytes": 168
+    },
+    "/mnt/d/CodexTransfer/projects/predictive_motion/phase5/raw/servo-safe-reference-v1-validation/stop_H.csv": {
+      "sha256": "9631f66099ba560dec4fd1d0b571b9715dde4bd3f235d764cbc5a029f603d878",
+      "bytes": 1176
+    },
+    "/mnt/d/CodexTransfer/projects/predictive_motion/phase5/raw/servo-safe-reference-v1-validation/stop_lower.csv": {
+      "sha256": "50658571954d2a3a1f48d2c297046cd936546e68edf2e8b267110c2b3b5eb488",
+      "bytes": 1050
+    },
+    "/mnt/d/CodexTransfer/projects/predictive_motion/phase5/raw/servo-safe-reference-v1-validation/stop_upper.csv": {
+      "sha256": "27b870d0170b93dc78c21879853454b7a02348d94d9003c5e8a15b834ca350e5",
+      "bytes": 591
+    },
+    "/mnt/d/CodexTransfer/projects/predictive_motion/phase5/raw/servo-safe-reference-v1-validation/summary.yaml": {
+      "sha256": "3d5271bb1044c2c81bdf46b9f161c7df4ff2dd45e3227dc040609640761fe43e",
+      "bytes": 368
+    },
+    "/mnt/d/CodexTransfer/projects/predictive_motion/phase5/identity-cache/20206e77d72b5eeaf3cc6fbecb776116ee949cbcc9fe1794e0d2ead7e714e59e": {
+      "sha256": "20206e77d72b5eeaf3cc6fbecb776116ee949cbcc9fe1794e0d2ead7e714e59e",
+      "bytes": 13441
+    },
+    "/mnt/d/CodexTransfer/projects/predictive_motion/phase5/identity-cache/131db119a842f5709509c675d3a6d54b2987c87be09113e5e5cd169381c5056a": {
+      "sha256": "131db119a842f5709509c675d3a6d54b2987c87be09113e5e5cd169381c5056a",
+      "bytes": 5641
+    },
+    "/mnt/d/CodexTransfer/projects/predictive_motion/phase5/identity-cache/3fcd90116c0c1bb5aa93c0cb78945a4a7334f64cfe146f82d0b70835810967bd": {
+      "sha256": "3fcd90116c0c1bb5aa93c0cb78945a4a7334f64cfe146f82d0b70835810967bd",
+      "bytes": 123361
+    },
+    "/mnt/d/CodexTransfer/projects/predictive_motion/phase5/identity-cache/30dd5261fe60b36e0f663133a9d2b282ce7c13897f2ae488e73b24c9e6d293d6": {
+      "sha256": "30dd5261fe60b36e0f663133a9d2b282ce7c13897f2ae488e73b24c9e6d293d6",
+      "bytes": 1291
+    },
+    "/mnt/d/CodexTransfer/projects/predictive_motion/phase5/identity-cache/65dd63d6ac3c9ca0687e0de1dc1e95cb6737f449ff90a5577778ebfad00f35ff": {
+      "sha256": "65dd63d6ac3c9ca0687e0de1dc1e95cb6737f449ff90a5577778ebfad00f35ff",
+      "bytes": 20677
+    }
+  }
+}

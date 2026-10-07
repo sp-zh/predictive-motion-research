@@ -1,0 +1,5 @@
+cmake_minimum_required(VERSION 3.16)
+project(phase5_signed_command_cone LANGUAGES CXX)
+add_executable(signed_velocity_cone_probe signed_velocity_cone_probe.cpp)
+target_compile_features(signed_velocity_cone_probe PRIVATE cxx_std_17)
+target_compile_options(signed_velocity_cone_probe PRIVATE -Wall -Wextra -Werror)

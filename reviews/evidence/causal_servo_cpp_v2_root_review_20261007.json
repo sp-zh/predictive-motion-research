@@ -1,0 +1,254 @@
+{
+  "verdict": "PASS_FROZEN_SCALAR_MODEL_COMPONENT_WITH_GENERIC_API_HARDENING_DEFECT",
+  "audit_source_sha256": "cd0a9b2314af5bf5759d244b78c1aef52fa1d8b3ac6dbd12b94adfb75f77aa7c",
+  "frozen_identity_checks": {
+    "tools/phase5_causal_servo_v2/causal_soft_servo_probe.cpp": "70cdf2135b6b6a25c79741d5876837bae5e7a152871c409cc7f226910fea5da9",
+    "tools/phase5_causal_servo_v2/causal_soft_servo.hpp": "848e921aac73702583aff740f3f3f7bff96f6503a75fcdda5d5de94982e85239",
+    "tools/phase5_causal_servo_v2/CMakeLists.txt": "6e9f4989278fad171f776d198192a0c0cbb9d93a37d4fa5f78e899eb89d62f2b",
+    "tools/phase5_causal_servo_v2/causal_soft_servo_api_probe.cpp": "98fc0eafacbd4726036ca0cda774edb2b2cedc13c6ff93035c4be2ad91dc3a70",
+    "scripts/phase5/run_causal_servo_api_v2.py": "7e774521bf71da24938428433f221d633c01a93a4bfdde9bc0600de4b0ae1b6d",
+    "scripts/phase5/prepare_causal_servo_api_v2.py": "0ea9d0e6cc475d197c962d6b474664b06eb93a47a380d6fd688eb94ced59b5c6",
+    "build-causal-soft-servo-v2/CMakeCache.txt": "8e1ad4cbac4a12ecc07a45219440cc8936d396bfbddf5ece81341c7feec6ede2",
+    "build-causal-soft-servo-v2/causal_soft_servo_probe": "c69e062ef0fc0c725655f55dbb55da5eda7a0f83df78c3a051ced1ee24737099",
+    "build-causal-soft-servo-v2/causal_soft_servo_api_probe": "6dc9d690257437a66b50390aaf7beb10cdefbd2f03fdd860420996903a6b7ac7",
+    "results/phase5/development/causal-soft-servo-cpp-v2/branch_input.yaml": "ca9660e3c0c8fd8c57152ed6d305d5291a25cc18e19331576bc63126786e7e8a",
+    "results/phase5/development/causal-soft-servo-cpp-v2/root_branch_packet.json": "8f09f79a23a6be6f3785dc76612c9a1f43b90b038e1fb248d616116dcb1276f7",
+    "results/phase5/development/causal-soft-servo-cpp-v2/root_branch_READY.json": "039fba0c68a970334c14a9f42eac70fa379c0a59299eec16702031a6557b56e3",
+    "results/phase5/development/causal-soft-servo-cpp-v1/input.yaml": "7c540ddf2c26ffc11febbf09ec1b138a983b2c5dfc50bd6868737c4a896513d0",
+    "results/phase5/development/causal-soft-servo-cpp-reference-v1/oracle.json": "363d077546c92fb0eed6d43e0cd4826a9d322628a5cd7c7b1d2f67e03bf5ebab"
+  },
+  "root_branch_packet_sha256": "8f09f79a23a6be6f3785dc76612c9a1f43b90b038e1fb248d616116dcb1276f7",
+  "frozen_model_sha256": "984ee85d086aeba7da8260a20b21b301e23dfd2c698a6c61ace0ff956bbec1bb",
+  "fixed_root_oracle_sha256": "c63f524d2002323ca635574addcf8ef04a498154ea171ac5a58deda088853710",
+  "fresh_remote": "/home/codextransfer/clean-audits/causal-servo-cpp-v2-independent-20261007-v1",
+  "branch_tests": [
+    {
+      "name": "n1_synthetic_level_0.0",
+      "errors": {
+        "state": 0.0,
+        "A": 4.336808689942018e-19,
+        "B": 0.0,
+        "defect": 0.0
+      },
+      "branches_2ms": [
+        [
+          0
+        ],
+        [
+          0
+        ]
+      ],
+      "clip_equalities": 0
+    },
+    {
+      "name": "n1_synthetic_level_1.5",
+      "errors": {
+        "state": 8.470329472543003e-22,
+        "A": 3.469446951953614e-18,
+        "B": 0.0,
+        "defect": 8.470329472543003e-22
+      },
+      "branches_2ms": [
+        [
+          1
+        ],
+        [
+          1
+        ]
+      ],
+      "clip_equalities": 0
+    },
+    {
+      "name": "n1_synthetic_level_-1.5",
+      "errors": {
+        "state": 8.470329472543003e-22,
+        "A": 3.469446951953614e-18,
+        "B": 0.0,
+        "defect": 1.6940658945086007e-21
+      },
+      "branches_2ms": [
+        [
+          -1
+        ],
+        [
+          -1
+        ]
+      ],
+      "clip_equalities": 0
+    },
+    {
+      "name": "n7_frozen_level_0.0",
+      "errors": {
+        "state": 1.232595164407831e-32,
+        "A": 2.220446049250313e-16,
+        "B": 3.3881317890172014e-21,
+        "defect": 2.8796409701215e-16
+      },
+      "branches_2ms": [
+        [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ]
+      ],
+      "clip_equalities": 0
+    },
+    {
+      "name": "n7_frozen_level_1.5",
+      "errors": {
+        "state": 0.0,
+        "A": 1.7763568394002505e-15,
+        "B": 2.710505431213761e-20,
+        "defect": 2.4771851236948805e-15
+      },
+      "branches_2ms": [
+        [
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1
+        ],
+        [
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1
+        ]
+      ],
+      "clip_equalities": 0
+    },
+    {
+      "name": "n7_frozen_level_-1.5",
+      "errors": {
+        "state": 4.336808689942018e-19,
+        "A": 1.7763568394002505e-15,
+        "B": 2.710505431213761e-20,
+        "defect": 5.825201432330118e-15
+      },
+      "branches_2ms": [
+        [
+          -1,
+          -1,
+          -1,
+          -1,
+          -1,
+          -1,
+          -1
+        ],
+        [
+          -1,
+          -1,
+          -1,
+          -1,
+          -1,
+          -1,
+          -1
+        ]
+      ],
+      "clip_equalities": 0
+    },
+    {
+      "name": "n1_exact_threshold_1.0",
+      "errors": {
+        "state": 4.336808689942018e-19,
+        "A": 0.0,
+        "B": 6.617444900424222e-24,
+        "defect": 4.336808689942018e-19
+      },
+      "branches_2ms": [
+        [
+          1
+        ],
+        [
+          0
+        ]
+      ],
+      "clip_equalities": 1
+    },
+    {
+      "name": "n1_exact_threshold_-1.0",
+      "errors": {
+        "state": 4.336808689942018e-19,
+        "A": 0.0,
+        "B": 6.617444900424222e-24,
+        "defect": 4.336808689942018e-19
+      },
+      "branches_2ms": [
+        [
+          -1
+        ],
+        [
+          0
+        ]
+      ],
+      "clip_equalities": 1
+    }
+  ],
+  "nominal_tests": [
+    {
+      "name": "n1_synthetic_nonuniform",
+      "errors_vs_root_oracle": {
+        "states": 3.3881317890172014e-21,
+        "cell_A": 8.881784197001252e-16,
+        "cell_B": 4.336808689942018e-19,
+        "cell_defect": 6.776263578034403e-21,
+        "condensed_offsets": 6.776263578034403e-21,
+        "control_sensitivities": 5.204170427930421e-18,
+        "initial_sensitivities": 4.440892098500626e-16
+      },
+      "max_vs_recorded_CPP": 0.0,
+      "history_length": 50
+    },
+    {
+      "name": "n7_frozen_soft_v2_nonuniform20",
+      "errors_vs_root_oracle": {
+        "states": 6.776263578034403e-21,
+        "cell_A": 1.7763568394002505e-15,
+        "cell_B": 8.673617379884035e-19,
+        "cell_defect": 8.065596801554165e-15,
+        "condensed_offsets": 2.2709265024012382e-14,
+        "control_sensitivities": 7.632783294297951e-17,
+        "initial_sensitivities": 4.440892098500626e-15
+      },
+      "max_vs_recorded_CPP": 0.0,
+      "history_length": 200
+    }
+  ],
+  "invalid_entry_rejections": 78,
+  "domain_mesh_rejections": 10,
+  "derived_nonfinite_counterexample": {
+    "model_validated": 1,
+    "threw": false,
+    "state_finite": 1,
+    "A_finite": 0,
+    "B_finite": 0,
+    "defect_finite": 0
+  },
+  "defect_scope": "Generic finite-positive parameter API accepts mass=1e-300,kp=1e308,D=0,eta=0; physical zero state remains finite but transition A/B/defect contain nonfinite values and no exception. Outside the frozen FR3 coefficients; does not invalidate fixed-model parity. Check derived outputs before returning or document enforceable arithmetic envelope.",
+  "limits": [
+    "Scalar empirical model only, not coupled dynamics or exact MuJoCo",
+    "No model domain extension or fresh holdout",
+    "No real-time guarantee, control guards, position/geometry/stop guarantee, main MPC integration, CTRL001 closure or Phase5 acceptance",
+    "At exact clip thresholds saturated-side Jacobian is convention; unique ordinary derivative does not exist",
+    "Same original n7 branch-vector fixtures are uniform across joints; mixed branch combinations are not exhaustively tested"
+  ]
+}

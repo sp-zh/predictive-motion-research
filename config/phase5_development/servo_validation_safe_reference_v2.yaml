@@ -1,0 +1,164 @@
+schema: 1
+scope: Independent causal servo model identification and separate development validation;
+  no future plant information in predictor
+control_dt_s: 0.004
+physics_substep_s: 0.002
+prediction_mesh_s:
+- 0.04
+- 0.04
+- 0.04
+- 0.04
+- 0.04
+- 0.04
+- 0.04
+- 0.04
+- 0.04
+- 0.04
+- 0.04
+- 0.04
+- 0.04
+- 0.04
+- 0.04
+- 0.04
+- 0.04
+- 0.04
+- 0.04
+- 0.04
+warmup_s: 2.0
+diagnostic_s: 3.0
+rotation_length_m: 0.3
+joint_trust_rad: 0.002
+progress_trust: 0.02
+scp_iterations: 1
+scp_step_tolerance: 1.0e-05
+scp_min_trust_rad: 1.0e-06
+scp_shrink: 0.5
+nonlinear_tolerance: 1.0e-06
+solver_absolute_tolerance: 1.0e-09
+solver_relative_tolerance: 1.0e-09
+solver_acceptance_tolerance: 1.0e-07
+solver_max_iterations: 50000
+solver_wall_limit_s: 5.0
+max_state_age_s: 5.0
+command_velocity_rad_s: 0.0625
+command_acceleration_rad_s2: 1.0
+command_jerk_rad_s3: 20.0
+executed_acceleration_rad_s2: 5.0
+executed_jerk_rad_s3: 500.0
+position_margin_rad: 0.005
+progress_speed: 0.2
+progress_acceleration: 0.5
+progress_jerk: 5.0
+collision_safe_m: 0.005
+collision_activation_m: 0.03
+collision_damper_eta_per_s: 2.0
+geometry_roundoff_margin_m: 1.0e-06
+geometry_max_subdivisions: 32
+command_subdivisions: 4
+singularity_safe_sigma: 1.0e-06
+singularity_target_sigma: 0.02
+singularity_penalty: 0.1
+tracking_weight: 100.0
+velocity_weight: 0.01
+acceleration_weight: 0.001
+jerk_weight: 1.0e-05
+posture_weight: 0.001
+progress_reward: 0.1
+terminal_progress_weight: 0.1
+terminal_stop: true
+joint_trap_controller_margin_rad: 0.025
+joint_path_target_increment_rad: 0.2
+development_seeds:
+- 91011
+- 91012
+evaluation_seeds:
+- 101011
+- 101012
+scenarios:
+- inspection
+- joint_trap
+- singularity_probe
+development_policy: correct mathematical/interface/implementation failures before
+  freeze; preserve every epoch; no evaluation tuning
+heldout_policy: final research seeds 0-9 and 100-119 remain unused
+methods:
+- predictive
+- reactive_qp
+comparison_scope: component diagnostic with shared speed cap and scene; adaptive predictive
+  versus bounded reactive progress; no final research superiority claim
+execution_mode: paused_simulation_reference
+reference_guard: Planner computation occurs with the local simulator paused; independently
+  re-read unchanged initial q/v, then enforce unchanged 50ms current-command/fallback
+  guard. Not a hardware/online result.
+precision_policy: Explicit1e-9 solver stopping, with unchanged original-SI1e-7 hard-row
+  acceptance. No global worst-scale overconstraint; nativeSolved that fails any original
+  row remains rejected. Online protocol solver/budget unchanged.
+qp_formulation: lifted
+qp_variable_scaling: true
+reference_budget_policy: Paused functional reference5s/50000 with nativeSolved-only
+  and unchanged originalSI/hard/nonlinear checks. Online50ms/4000 unchanged. Earlieriteration/inaccurate
+  outcomes retained.
+tracking_model_tolerance_m: 0.0001
+sigma_model_tolerance: 1.0e-06
+scp_convergence: Validated feasible candidate and scaled-SE3 model consistency within10micrometres;
+  active sigma penalty value consistency1e-6; otherwise retain control-step or max-SCP
+  termination. Geometry feasibility remains mandatory.
+completion_position_m: 0.01
+completion_rotation_rad: 0.05
+model_accuracy_policy: Optimization-model termination precision is1% of declared10mm
+  task position tolerance (100micrometres in scaled SE3 residual), independently from
+  unchanged original-QP1e-7 and nonlinear hard-bound1e-6 acceptance. Active sigma
+  model tolerance remains1e-6. Earlier10micrometre convergence failures retained.
+reference_iteration_policy: Single convexified coupled horizon solve plus all original-bound/nonlinear
+  checks; not claimed nonlinear convergence. This independent reference isolates receding-horizon/warmstart
+  behavior.3pass old references retained.
+dual_feedback_policy: Approximate same-node semantic dual seed across4ms feedback,
+  no exact fractional costate shift claimed. Primal controls still shift/reconstruct
+  by actual4ms; full new QP/true nonlinear validation mandatory. Solver/stale/nonlinear
+  rejection/projected intervention/invalid seed resets workspace.
+identification_duration_s: 8.0
+identification_amplitude_rad: 0.008
+training_seed: 91011
+validation_seed: 91012
+validation_policy: Fresh91012 execution of curated previously observed accepted-target
+  increments with explicit new-initial-target offset; frozen coefficients/thresholds;
+  no original physical states as predictor input or new holdout evidence.
+validation_frequency_base_hz: 0.5
+validation_frequency_step_hz: 0.067
+validation_phase_step_rad: 0.19
+validation_waveform_id: safe-accepted-velocity-reference-v2-91012
+prospective_model_domain:
+  q_center_rad:
+  - -1.2457654868678185
+  - 0.09866925674645782
+  - 1.1540896031466563
+  - -2.7855872107078232
+  - -0.09762493916792786
+  - 4.3844249489794915
+  - -1.6281404233957888
+  q_radius_rad: 0.012
+  v_abs_max_rad_s: 0.05
+  target_error_center_rad:
+  - -1.5532172198178243e-07
+  - -0.0020207843593442274
+  - 0.0005405189880510594
+  - 0.0036027969221588854
+  - 7.268583451489108e-05
+  - 0.0008206932189730856
+  - 1.3854387771026697e-05
+  target_error_radius_rad: 0.022
+  error_radius_basis: prospective 0.012 physical-position radius + 0.008 target excitation
+    + 0.002 reserve; centered at -frozen_bias/kp; declared diagnostic box, not a robust
+    bound
+expanded_scope: The original model domain is unchanged; passing this waveform can
+  only support a separately reviewed recorded-input extension, not arbitrary combinations
+  throughout the prospective box.
+accepted_reference_csv: /home/codextransfer/predictive_motion/results/phase5/development/servo-safe-reference-v1/accepted_target_increments.csv
+reference_request_mode: original accepted w-reference increment only; new c integrates
+  actual guarded accepted velocity; no position-error catch-up
+phase_roster:
+  warmup_cycles: 500
+  reference_motion_cycles: 195
+  reference_recorded_stop_cycles: 233
+  hold_until_cycle: 2500
+  new_shared_stop_after_cycle: 2500

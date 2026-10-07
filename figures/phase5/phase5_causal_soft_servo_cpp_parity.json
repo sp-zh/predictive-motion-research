@@ -1,0 +1,13 @@
+{
+  "image_sha256": "da074b1414da47a3d19391fee89090ba9d02496b14659b97bdbbbf1acd07c91a",
+  "actual_sha256": "e9fc420335d0a666b94e5913c19e7c6dbf9d7fc8ddfc08b85d83a0689b0b84ec",
+  "root_oracle_sha256": "363d077546c92fb0eed6d43e0cd4826a9d322628a5cd7c7b1d2f67e03bf5ebab",
+  "model_sha256": "984ee85d086aeba7da8260a20b21b301e23dfd2c698a6c61ace0ff956bbec1bb",
+  "source": "scripts/phase5/plot_causal_soft_servo_parity.py",
+  "units": {
+    "q_c": "microradians relative to initial physical q",
+    "s": "dimensionless",
+    "time": "seconds"
+  },
+  "scope": "Model algebra only, not actual plant or controller performance; no geometry change"
+}

@@ -1,0 +1,8 @@
+cmake_minimum_required(VERSION 3.16)
+project(phase5_causal_soft_servo LANGUAGES CXX)
+find_package(Eigen3 REQUIRED)
+find_package(yaml-cpp REQUIRED)
+add_executable(causal_soft_servo_probe causal_soft_servo_probe.cpp)
+target_compile_features(causal_soft_servo_probe PRIVATE cxx_std_17)
+target_compile_options(causal_soft_servo_probe PRIVATE -Wall -Wextra -Werror)
+target_link_libraries(causal_soft_servo_probe PRIVATE Eigen3::Eigen yaml-cpp)

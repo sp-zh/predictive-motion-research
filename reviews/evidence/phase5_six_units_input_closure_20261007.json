@@ -1,0 +1,23 @@
+{
+  "root_independent_read_of_each_immutable_blob": true,
+  "checks": [
+    {
+      "unit": "safe-reference-failures",
+      "manifest": "/Users/uot/Documents/ChatGPT/ros/results/phase5-safe-reference-failures-root-checkpoint/restored/project/results/phase5/development/servo-safe-reference-v1-validation/frozen.json",
+      "references_verified": 192,
+      "referenced_bytes": 152176089
+    },
+    {
+      "unit": "safe-reference-failures",
+      "manifest": "/Users/uot/Documents/ChatGPT/ros/results/phase5-safe-reference-failures-root-checkpoint/restored/project/results/phase5/development/servo-safe-reference-v2-validation/frozen.json",
+      "references_verified": 192,
+      "referenced_bytes": 152177126
+    },
+    {
+      "unit": "safe-reference-v3",
+      "manifest": "/Users/uot/Documents/ChatGPT/ros/results/phase5-safe-reference-v3-root-checkpoint/restored/project/results/phase5/development/servo-safe-reference-v3-validation/frozen.json",
+      "references_verified": 197,
+      "referenced_bytes": 152220035
+    }
+  ]
+}

@@ -4,16 +4,19 @@ import argparse,csv,hashlib,json,math,re
 from pathlib import Path
 import xml.etree.ElementTree as ET
 
-def audit(case,urdf):
+def audit(case,urdf,protocol_name='servo_identification.yaml'):
     execution=json.loads((case/'execution.json').read_text())
     frozen=json.loads((case/'frozen.json').read_text())['files']
     sha=lambda p:hashlib.sha256(p.read_bytes()).hexdigest()
     for name,h in execution['raw_files'].items():
         if sha(case/'raw'/name)!=h:raise ValueError('raw identity changed')
-    for p,suffix in [(urdf,'/models/fr3/fr3_arm.urdf'),(case/'servo_identification.yaml','/config/phase5_development/servo_identification.yaml')]:
+    if Path(protocol_name).name != protocol_name:
+        raise ValueError('protocol name must be a basename')
+    protocol=case/protocol_name
+    for p,suffix in [(urdf,'/models/fr3/fr3_arm.urdf'),(protocol,'/config/phase5_development/'+protocol_name)]:
         matches=[h for n,h in frozen.items() if n.endswith(suffix)]
         if len(matches)!=1 or sha(p)!=matches[0]:raise ValueError('protocol/URDF identity mismatch')
-    text=(case/'servo_identification.yaml').read_text()
+    text=protocol.read_text()
     def scalar(key):
         matches=re.findall(r'^'+re.escape(key)+r':\s*([^\n]+)$',text,re.M)
         if len(matches)!=1:raise ValueError('missing scalar '+key)
@@ -66,12 +69,12 @@ def audit(case,urdf):
             violations['command_age']+=not 0<=float(c['command_age_s'])<=.05
             violations['solver_status']+=c['status']!='SOLVED'
     if len(cycles)*2!=len(rows):raise ValueError('cycle/substep mismatch')
-    result={'scope':'Independent recorded identification fixture checks only. No model fit, holdout accuracy, task/retiming, full MJCF limit intersection, hardware or real-time claim. URDF bounds and frozen protocol only.','status':'PASS' if not any(violations.values()) and max(errors.values())<1e-8 else 'FAIL','rows':len(rows),'active_substeps':sum(int(r['tick'])>=warmup for r in rows),'raw_sha256':sha(case/'raw/raw.csv'),'protocol_sha256':sha(case/'servo_identification.yaml'),'urdf_sha256':sha(urdf),'violations':violations,'recomputed_history_errors':errors,'active_peaks':peaks,'final':{'physical_velocity_max':max(abs(x) for x in vector(rows[-1],'v_post_')),'command_velocity_max':max(abs(x) for x in vector(rows[-1],'command_velocity_')),'command_acceleration_max':max(abs(x) for x in vector(rows[-1],'command_acceleration_'))},'min_recorded_clearance_m':min(float(r['true_clearance_m']) for r in rows),'active_full_cycle_4ms_misses':sum(float(c['full_cycle_wall_s'])>dt for c in cycles if int(c['tick'])>=warmup),'active_full_cycle_max_s':max(float(c['full_cycle_wall_s']) for c in cycles if int(c['tick'])>=warmup),'script_sha256':sha(Path(__file__))}
+    result={'scope':'Independent recorded identification fixture checks only. No model fit, holdout accuracy, task/retiming, full MJCF limit intersection, hardware or real-time claim. URDF bounds and frozen protocol only.','status':'PASS' if not any(violations.values()) and max(errors.values())<1e-8 else 'FAIL','rows':len(rows),'active_substeps':sum(int(r['tick'])>=warmup for r in rows),'raw_sha256':sha(case/'raw/raw.csv'),'protocol_sha256':sha(protocol),'urdf_sha256':sha(urdf),'violations':violations,'recomputed_history_errors':errors,'active_peaks':peaks,'final':{'physical_velocity_max':max(abs(x) for x in vector(rows[-1],'v_post_')),'command_velocity_max':max(abs(x) for x in vector(rows[-1],'command_velocity_')),'command_acceleration_max':max(abs(x) for x in vector(rows[-1],'command_acceleration_'))},'min_recorded_clearance_m':min(float(r['true_clearance_m']) for r in rows),'active_full_cycle_4ms_misses':sum(float(c['full_cycle_wall_s'])>dt for c in cycles if int(c['tick'])>=warmup),'active_full_cycle_max_s':max(float(c['full_cycle_wall_s']) for c in cycles if int(c['tick'])>=warmup),'script_sha256':sha(Path(__file__))}
     return result
 
 def main():
-    p=argparse.ArgumentParser(description=__doc__);p.add_argument('--case',type=Path,required=True);p.add_argument('--urdf',type=Path,required=True);p.add_argument('--output',type=Path,required=True);a=p.parse_args()
+    p=argparse.ArgumentParser(description=__doc__);p.add_argument('--case',type=Path,required=True);p.add_argument('--urdf',type=Path,required=True);p.add_argument('--output',type=Path,required=True);p.add_argument('--protocol-name',default='servo_identification.yaml');a=p.parse_args()
     if a.output.exists():p.error('Refuse overwrite')
-    result=audit(a.case,a.urdf);a.output.write_text(json.dumps(result,indent=2)+'\n');print(json.dumps(result,indent=2))
+    result=audit(a.case,a.urdf,a.protocol_name);a.output.write_text(json.dumps(result,indent=2)+'\n');print(json.dumps(result,indent=2))
     if result['status']!='PASS':raise SystemExit(1)
 if __name__=='__main__':main()

@@ -1,0 +1,281 @@
+{
+  "verdict": "PASS_ISOLATED_SIGNED_COMMAND_CONTINUATION",
+  "source_sha256": "04ec34ab52eaa0ee34ee439cdc89ddba5070d860315c0588152b069a5275d74e",
+  "inputs": {
+    "results/phase5-executor-checkpoints-01a114d9/signed-command-cone-cpp/signed-command-cone-cpp-v1.tar.gz": {
+      "sha256": "b13fee314f7b1717725424bdf564b478b3add9ad025da177ff54c941c2340d47",
+      "bytes": 2315413
+    },
+    "results/phase5-executor-checkpoints-01a114d9/signed-command-cone/signed-command-cone-v1.tar.gz": {
+      "sha256": "263126c58e090ea7f9bb5f44b41000fb3b894f1f4ff4121872cbd643afb6a62d",
+      "bytes": 669985
+    },
+    "results/phase5-reference/root-signed-command-cone-audit-20261007-v1/frozen/project/results/phase5/development/signed-command-cone-cpp-v1/BACKUP_SOURCE_MANIFEST.json": {
+      "sha256": "f8b05db4cbc501e261a29b39349420e0ad023b5fc03e9538a31f073474d0e183"
+    },
+    "results/phase5-reference/root-signed-command-cone-audit-20261007-v1/python_frozen/project/results/phase5/development/signed-command-cone-v1/BACKUP_SOURCE_MANIFEST.json": {
+      "sha256": "72f47c5254ac9a2f3c8846b5cf06293521fda96f0cd8cdf9735d337cbdde2ab3"
+    },
+    "results/phase5-reference/root-signed-command-cone-audit-20261007-v1/frozen/project/tools/phase5_command_cone/signed_velocity_cone.hpp": {
+      "sha256": "4e514fe97b0298361e81b5bdfb22793eb22cc0237aaef012c90cc8c23c3cbc97"
+    },
+    "results/phase5-reference/root-signed-command-cone-audit-20261007-v1/frozen/project/scripts/phase5/signed_command_velocity_cone.py": {
+      "sha256": "d765998f96a10a1745cd8b61e15272c66e40e52230aaa312092a615ec783d18e"
+    },
+    "results/phase5-reference/root-signed-command-cone-audit-20261007-v1/frozen/raw/retained-v1/raw.csv": {
+      "sha256": "561d63684b3acc591acf2f287e6f7f264a340207cebe8767887b5107dadc661c"
+    }
+  },
+  "consumer_sha256": "3307c67435cc600741868846e69538e4a9e9d09fe425983a27109c1a4183907c",
+  "remote_clean_audit": "/home/codextransfer/clean-audits/signed-command-cone-independent-20261007-v1",
+  "long_double_runtime": "long_double_digits=64",
+  "cases": 119,
+  "valid_cases": 117,
+  "interval_corners_checked": 333,
+  "rows_checked": 1779,
+  "max_interval_absolute_difference_exact_binary_input": 1.3211653993039363e-14,
+  "max_exact_endpoint_speed_excess": 0.0,
+  "max_exact_endpoint_jerk_excess": 0.0,
+  "max_QP_row_outward_roundoff": 7.816680636096862e-16,
+  "actual_history": [
+    {
+      "name": "actual_tick_785",
+      "w": -0.040700006326262854,
+      "alpha": -0.9999999999999991,
+      "immediate_alpha_interval": [
+        -1.0,
+        -0.9199999999999992
+      ],
+      "most_favorable_recovery_speed_excess": 0.0006000063262628202,
+      "continuation_feasible": false,
+      "fastest_recovery": [
+        [
+          -0.04438000632626285,
+          -0.9199999999999992
+        ],
+        [
+          -0.047740006326262845,
+          -0.8399999999999992
+        ],
+        [
+          -0.050780006326262846,
+          -0.7599999999999991
+        ],
+        [
+          -0.05350000632626284,
+          -0.6799999999999992
+        ],
+        [
+          -0.05590000632626284,
+          -0.5999999999999992
+        ],
+        [
+          -0.05798000632626284,
+          -0.5199999999999991
+        ],
+        [
+          -0.05974000632626283,
+          -0.43999999999999917
+        ],
+        [
+          -0.061180006326262824,
+          -0.35999999999999915
+        ],
+        [
+          -0.06230000632626282,
+          -0.27999999999999914
+        ],
+        [
+          -0.06310000632626282,
+          -0.19999999999999912
+        ]
+      ]
+    },
+    {
+      "name": "actual_tick_792",
+      "w": -0.061980006326262695,
+      "alpha": -0.5199999999999909,
+      "immediate_alpha_interval": [
+        -0.5999999999999909,
+        -0.4399999999999909
+      ],
+      "most_favorable_recovery_speed_excess": 0.0012400063262626583,
+      "continuation_feasible": false,
+      "fastest_recovery": [
+        [
+          -0.06374000632626266,
+          -0.4399999999999909
+        ]
+      ]
+    }
+  ],
+  "greedy_valid_histories": 111,
+  "max_greedy_steps": 123,
+  "zero_velocity_nonzero_acceleration_fixture": [
+    {
+      "case": "edge_6",
+      "steps": 8,
+      "history": [
+        {
+          "kind": "greedy",
+          "id": "6",
+          "k": "0",
+          "w": "-0.00080000000000000004",
+          "alpha": "0.20000000000000001",
+          "lower": "0.12000000000000001",
+          "upper": "0.27999999999999997",
+          "feasible": "1"
+        },
+        {
+          "kind": "greedy",
+          "id": "6",
+          "k": "1",
+          "w": "0",
+          "alpha": "0.20000000000000001",
+          "lower": "0.12000000000000001",
+          "upper": "0.27999999999999997",
+          "feasible": "1"
+        },
+        {
+          "kind": "greedy",
+          "id": "6",
+          "k": "2",
+          "w": "0.00048000000000000007",
+          "alpha": "0.12000000000000001",
+          "lower": "0.040000000000000008",
+          "upper": "0.20000000000000001",
+          "feasible": "1"
+        },
+        {
+          "kind": "greedy",
+          "id": "6",
+          "k": "3",
+          "w": "0.00064000000000000016",
+          "alpha": "0.040000000000000008",
+          "lower": "-0.039999999999999994",
+          "upper": "0.12000000000000001",
+          "feasible": "1"
+        },
+        {
+          "kind": "greedy",
+          "id": "6",
+          "k": "4",
+          "w": "0.00048000000000000017",
+          "alpha": "-0.039999999999999994",
+          "lower": "-0.12",
+          "upper": "0.040000000000000008",
+          "feasible": "1"
+        },
+        {
+          "kind": "greedy",
+          "id": "6",
+          "k": "5",
+          "w": "1.6263032587282567e-19",
+          "alpha": "-0.12",
+          "lower": "-0.19999999999999998",
+          "upper": "-0.039999999999999994",
+          "feasible": "1"
+        },
+        {
+          "kind": "greedy",
+          "id": "6",
+          "k": "6",
+          "w": "-0.00015999999999999982",
+          "alpha": "-0.039999999999999994",
+          "lower": "-0.12",
+          "upper": "0.040000000000000008",
+          "feasible": "1"
+        },
+        {
+          "kind": "greedy",
+          "id": "6",
+          "k": "7",
+          "w": "0",
+          "alpha": "0.039999999999999952",
+          "lower": "-0.040000000000000049",
+          "upper": "0.11999999999999995",
+          "feasible": "1"
+        }
+      ]
+    }
+  ],
+  "failures": [],
+  "scope": "Command speed, command acceleration and jerk continuation only. Not joint position, geometry, physical stopping, full MPC, or Phase5 acceptance. Floating point QP row bounds are not inward-rounded; retain SI guards and independently validate candidate continuation after solving. No production Python predictor used.",
+  "frozen_identity_checks": [
+    {
+      "archive": "signed-command-cone-cpp",
+      "member": "project/scripts/phase5/signed_command_velocity_cone.py",
+      "sha256": "d765998f96a10a1745cd8b61e15272c66e40e52230aaa312092a615ec783d18e"
+    },
+    {
+      "archive": "signed-command-cone-cpp",
+      "member": "project/scripts/phase5/run_signed_cone_cpp_parity.py",
+      "sha256": "f5271716386072615d726b44cb30a8dccc456f0c0f26af3a57cef2b3455e4968"
+    },
+    {
+      "archive": "signed-command-cone-cpp",
+      "member": "project/tools/phase5_command_cone/signed_velocity_cone.hpp",
+      "sha256": "4e514fe97b0298361e81b5bdfb22793eb22cc0237aaef012c90cc8c23c3cbc97"
+    },
+    {
+      "archive": "signed-command-cone-cpp",
+      "member": "project/tools/phase5_command_cone/signed_velocity_cone_probe.cpp",
+      "sha256": "63f22bbcb9de42115f191f78f89533cf3e469a7842fb16236fdaadbc14a3f7ab"
+    },
+    {
+      "archive": "signed-command-cone-cpp",
+      "member": "project/tools/phase5_command_cone/CMakeLists.txt",
+      "sha256": "cd1829552abd2e1a9b0d627ea123fda05af36405e8804349d3f6591495093acb"
+    },
+    {
+      "archive": "signed-command-cone-cpp",
+      "member": "project/build-signed-command-cone-v1/CMakeCache.txt",
+      "sha256": "9d3bae151a60395628ebab16c0a25e6776b884a38dc319cf201cc044a2477205"
+    },
+    {
+      "archive": "signed-command-cone-cpp",
+      "member": "project/build-signed-command-cone-v1/signed_velocity_cone_probe",
+      "sha256": "008e86825067420f6a3b988a0f7cbc2af41d35c150c0ddc5d41c8c5f8cdae75a"
+    },
+    {
+      "archive": "signed-command-cone-cpp",
+      "member": "project/results/phase5/development/signed-command-cone-cpp-v1/cases.csv",
+      "sha256": "36146537f1f32338613f2731e108d8623f4be955ae986c55ea46ba729cbf1ce6"
+    },
+    {
+      "archive": "signed-command-cone-cpp",
+      "member": "project/results/phase5/development/signed-command-cone-cpp-v1/expected.json",
+      "sha256": "f3e50cc25e66e7448276f6dea1193f4f911d37e439b862783b1e3094b29a5ef6"
+    },
+    {
+      "archive": "signed-command-cone-cpp",
+      "member": "raw/retained-v1/raw.csv",
+      "sha256": "561d63684b3acc591acf2f287e6f7f264a340207cebe8767887b5107dadc661c"
+    },
+    {
+      "archive": "signed-command-cone",
+      "member": "project/scripts/phase5/signed_command_velocity_cone.py",
+      "sha256": "d765998f96a10a1745cd8b61e15272c66e40e52230aaa312092a615ec783d18e"
+    },
+    {
+      "archive": "signed-command-cone",
+      "member": "project/scripts/phase5/signed_command_velocity_cone_test.py",
+      "sha256": "df9f481f5fc614f1fa4523a90648f4a0f3bd9fe4ebd0dee495b9e57795590884"
+    },
+    {
+      "archive": "signed-command-cone",
+      "member": "project/scripts/phase5/run_signed_cone_analysis.py",
+      "sha256": "9c93ab28422ab3dae1b48d37d5957770dbaf83b635f5c489b1e452334c9cadf6"
+    },
+    {
+      "archive": "signed-command-cone",
+      "member": "project/src/predictive_motion_control/src/predictive.cpp",
+      "sha256": "4ad70dcf75500e956141557a6b17eaa2bdb9a7f670abb7f380da5c699efb1df5"
+    },
+    {
+      "archive": "signed-command-cone",
+      "member": "raw/retained-v1/raw.csv",
+      "sha256": "561d63684b3acc591acf2f287e6f7f264a340207cebe8767887b5107dadc661c"
+    }
+  ]
+}

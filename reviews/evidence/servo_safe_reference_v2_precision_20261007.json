@@ -1,0 +1,281 @@
+{
+  "scope": "Offline captured-QP feasibility and fresh frozen-wrapper precision audit; not original candidate recovery.",
+  "verdict": "CAPTURED_QP_FEASIBLE; OFFLINE_TIGHTER_PRECISION_NATIVE_SOLVED_ONLY_POINTS_PASS_ORIGINAL_SI",
+  "source_sha256": "aaacd9e4df64a948f86cd5d4cc591a388ec7401b4815d996521605084ef3b6ed",
+  "original_candidate_saved": false,
+  "original_raw_status_saved": false,
+  "original_maximum_violation_row_saved": false,
+  "original_trial_primary_failure": "CONSTRAINT_VIOLATION",
+  "original_trial_completed_shared_stop": true,
+  "box_bounds_rad_s": {
+    "lower": [
+      -0.0016430311598233942,
+      0.0017963904484114418,
+      -0.002400744077035822,
+      0.009756052750708085,
+      -0.0019282766026250651,
+      8.199345352714704e-05,
+      -0.00032
+    ],
+    "upper": [
+      -0.0010030311598233943,
+      0.0024363904484114417,
+      -0.001760744077035822,
+      0.010396052750708085,
+      -0.0012882766026250652,
+      0.000721993453527147,
+      0.00032
+    ],
+    "nonempty": true
+  },
+  "LP": {
+    "method": "independent SciPy HiGHS pure feasibility, no geometry/model modification",
+    "status": 0,
+    "success": true,
+    "original_SI_violation": 1.1368683772161603e-13,
+    "feasible_point": [
+      -0.0010030311598233943,
+      0.0017963904484114418,
+      -0.001760744077035822,
+      0.009756052750708084,
+      -0.0012882766026250652,
+      8.199345352714703e-05,
+      0.00032
+    ]
+  },
+  "fixed_policy": {
+    "max_iterations": 4000,
+    "time_limit_s": 0.05,
+    "original_SI_acceptance": 1e-07,
+    "offline_state_age_s": 0,
+    "initial_rho": 0.1,
+    "settings": "fresh solveQp for every setting; no primal seed or retained workspace"
+  },
+  "offline_solves": [
+    {
+      "case": 0,
+      "tolerance": 1e-09,
+      "status": "CONSTRAINT_VIOLATION",
+      "raw_status": 1,
+      "api_error": 0,
+      "iterations": 142,
+      "violation": 1.1615975381573662e-07,
+      "maximum_violation_row": 16,
+      "primal_residual": 5.966219601694078e-07,
+      "dual_residual": 5.180883623337978e-12,
+      "setup_seconds": 2.727e-05,
+      "solve_seconds": 0.00017452,
+      "wall_seconds": 0.000222482,
+      "solver_absolute_tolerance": 1e-09,
+      "solver_relative_tolerance": 1e-09,
+      "velocity_entries": 0,
+      "workspace_reused": 0,
+      "solver_version": "1.0.0",
+      "candidate_classification": "new offline fresh solve only; original failed candidate unavailable",
+      "offline_violation_row_interpretation": "command_jerk/4"
+    },
+    {
+      "case": 1,
+      "tolerance": 1e-11,
+      "status": "SOLVED",
+      "raw_status": 1,
+      "api_error": 0,
+      "iterations": 156,
+      "violation": 3.610111320995202e-09,
+      "maximum_violation_row": 8,
+      "primal_residual": 4.609562731516803e-09,
+      "dual_residual": 1.5045130749831427e-13,
+      "setup_seconds": 1.8586e-05,
+      "solve_seconds": 0.00017499300000000002,
+      "wall_seconds": 0.000203538,
+      "solver_absolute_tolerance": 1e-11,
+      "solver_relative_tolerance": 1e-11,
+      "velocity_entries": 7,
+      "workspace_reused": 0,
+      "solver_version": "1.0.0",
+      "candidate_classification": "new offline fresh solve only; original failed candidate unavailable",
+      "independent_original_SI_violation": 3.610111320995202e-09,
+      "point": [
+        -0.0010030311597656325,
+        0.0017963904484066017,
+        -0.001760744076978717,
+        0.00975605275070163,
+        -0.0012882766026988182,
+        8.199348541401808e-05,
+        1.6106714092522765e-18
+      ],
+      "point_sha256": "a00c34664773892b0d52d11bc3c917eb41eb5286ef8a78179d2b1431788fce3b",
+      "offline_violation_row_interpretation": "command_jerk/0"
+    },
+    {
+      "case": 2,
+      "tolerance": 1e-12,
+      "status": "SOLVED",
+      "raw_status": 1,
+      "api_error": 0,
+      "iterations": 166,
+      "violation": 1.5215562143566785e-10,
+      "maximum_violation_row": 16,
+      "primal_residual": 4.237304951359988e-10,
+      "dual_residual": 1.0897662954085955e-14,
+      "setup_seconds": 1.5032e-05,
+      "solve_seconds": 0.00017609399999999998,
+      "wall_seconds": 0.000197932,
+      "solver_absolute_tolerance": 1e-12,
+      "solver_relative_tolerance": 1e-12,
+      "velocity_entries": 7,
+      "workspace_reused": 0,
+      "solver_version": "1.0.0",
+      "candidate_classification": "new offline fresh solve only; original failed candidate unavailable",
+      "independent_original_SI_violation": 1.5215562143566785e-10,
+      "point": [
+        -0.001003031159830174,
+        0.001796390448412013,
+        -0.0017607440770425592,
+        0.009756052750708845,
+        -0.0012882766026226307,
+        8.199348541974589e-05,
+        -9.899914258022567e-20
+      ],
+      "point_sha256": "6d8aafa9c5748fa9dfe7d7142c77c560bf0e18024329f7af3fb13f46e735a9f3",
+      "offline_violation_row_interpretation": "command_jerk/4"
+    },
+    {
+      "case": 3,
+      "tolerance": 1e-13,
+      "status": "SOLVED",
+      "raw_status": 1,
+      "api_error": 0,
+      "iterations": 176,
+      "violation": 3.380762336746557e-11,
+      "maximum_violation_row": 8,
+      "primal_residual": 3.3806291099836017e-11,
+      "dual_residual": 7.7322286187024075e-16,
+      "setup_seconds": 1.4853e-05,
+      "solve_seconds": 0.000186165,
+      "wall_seconds": 0.000208674,
+      "solver_absolute_tolerance": 1e-13,
+      "solver_relative_tolerance": 1e-13,
+      "velocity_entries": 7,
+      "workspace_reused": 0,
+      "solver_version": "1.0.0",
+      "candidate_classification": "new offline fresh solve only; original failed candidate unavailable",
+      "independent_original_SI_violation": 3.380762336746557e-11,
+      "point": [
+        -0.0010030311598228535,
+        0.0017963904484113956,
+        -0.0017607440770352877,
+        0.009756052750708016,
+        -0.0012882766026254423,
+        8.19934854193383e-05,
+        5.7495962070131924e-21
+      ],
+      "point_sha256": "632a7afb8951c0ec75d7031e49042db12da9fbc5031fada30c0e289bf41c9070",
+      "offline_violation_row_interpretation": "command_jerk/0"
+    }
+  ],
+  "baseline_status_reproduced_in_one_fresh_offline_call": true,
+  "linked_identity": {
+    "/home/codextransfer/clean-audits/root-installed-v24/include/predictive_motion_control/reactive_qp.hpp": {
+      "sha256": "75efe6117b7d833497a05d766eb9d7d0a4299a12af68e67dbb578b0f1095c784",
+      "frozen_original": {
+        "/home/codextransfer/predictive_motion/src/predictive_motion_control/include/predictive_motion_control/reactive_qp.hpp": "75efe6117b7d833497a05d766eb9d7d0a4299a12af68e67dbb578b0f1095c784"
+      }
+    },
+    "/home/codextransfer/clean-audits/root-installed-v24/lib/libreactive_qp.a": {
+      "sha256": "aa6c9db6460923c1c386f9011a52e923a17b9b1b74f854042a45ccdffc999c68",
+      "frozen_original": {
+        "/home/codextransfer/predictive_motion/install-phase5-math/predictive_motion_control/lib/libreactive_qp.a": "aa6c9db6460923c1c386f9011a52e923a17b9b1b74f854042a45ccdffc999c68"
+      }
+    },
+    "/home/codextransfer/predictive_motion/.vendor/osqp-1.0.0-install/lib/libosqpstatic.a": {
+      "sha256": "60d945ac1414cb9cdae7b3a5495a2a91947ffb5110e42d5b71ac777878f0376f",
+      "frozen_original": {
+        "/home/codextransfer/predictive_motion/.vendor/osqp-1.0.0-install/lib/libosqpstatic.a": "60d945ac1414cb9cdae7b3a5495a2a91947ffb5110e42d5b71ac777878f0376f"
+      }
+    }
+  },
+  "effective_inputs": {
+    "/mnt/d/CodexTransfer/projects/predictive_motion/phase5/raw/servo-safe-reference-v2-validation/cycles.csv": {
+      "sha256": "a13ce546d4fc814cd8dcd5e32ea45d38d8a105dd3fd175b03326e57d34811700",
+      "bytes": 37279
+    },
+    "/mnt/d/CodexTransfer/projects/predictive_motion/phase5/raw/servo-safe-reference-v2-validation/first_rejected_A.csv": {
+      "sha256": "a51d96ab643afa9ec9aba19b2b51ef780d5c98c00b616565635b277e0394b374",
+      "bytes": 5757
+    },
+    "/mnt/d/CodexTransfer/projects/predictive_motion/phase5/raw/servo-safe-reference-v2-validation/first_rejected_g.csv": {
+      "sha256": "e4a6cae36a007665d9b17ca4841c09c2ba109d2d85c51d686eebd27826b5f7b2",
+      "bytes": 171
+    },
+    "/mnt/d/CodexTransfer/projects/predictive_motion/phase5/raw/servo-safe-reference-v2-validation/first_rejected_H.csv": {
+      "sha256": "9631f66099ba560dec4fd1d0b571b9715dde4bd3f235d764cbc5a029f603d878",
+      "bytes": 1176
+    },
+    "/mnt/d/CodexTransfer/projects/predictive_motion/phase5/raw/servo-safe-reference-v2-validation/first_rejected_lower.csv": {
+      "sha256": "66237de7984c384a0de3a6010481f74f4c797ac5c924f39f54298702628874c3",
+      "bytes": 843
+    },
+    "/mnt/d/CodexTransfer/projects/predictive_motion/phase5/raw/servo-safe-reference-v2-validation/first_rejected_upper.csv": {
+      "sha256": "f944277e4dab3331374b8925f407f54b5161622d8a7b8ed1880ce8d93eece853",
+      "bytes": 562
+    },
+    "/mnt/d/CodexTransfer/projects/predictive_motion/phase5/raw/servo-safe-reference-v2-validation/raw.csv": {
+      "sha256": "504cceabcad9ef2fd12e8b73017f7b3b8ebaf05ac180fc96df7fdc8b6a726715",
+      "bytes": 2340576
+    },
+    "/mnt/d/CodexTransfer/projects/predictive_motion/phase5/raw/servo-safe-reference-v2-validation/summary.yaml": {
+      "sha256": "32136080039f4b57cab4efc4ad25ad2d5191248ea26dd0eee8855952aecb507b",
+      "bytes": 305
+    },
+    "/home/codextransfer/predictive_motion/results/phase5/development/servo-safe-reference-v2-validation/frozen.json": {
+      "sha256": "a31772c63970afde3d332d0402bcbbb9e79793e0c04a3af64fe09d4a9fc84e53",
+      "bytes": 32206
+    },
+    "/home/codextransfer/predictive_motion/results/phase5/development/servo-safe-reference-v2-validation/execution.json": {
+      "sha256": "ada4d8ac4823cc12149c3292251a481c8d0bccbdea4e412e736e9c4f3ea4cf99",
+      "bytes": 1453
+    },
+    "/home/codextransfer/predictive_motion/results/phase5/development/servo-safe-reference-v2-validation/materialized-identity.json": {
+      "sha256": "eb6cac128660ed9fe8edeb4f8bf1c6ef0212ef67d1b5fc0e10bf1b6b40d683ee",
+      "bytes": 2086
+    },
+    "/home/codextransfer/clean-audits/root-installed-v24/include/predictive_motion_control/reactive_qp.hpp": {
+      "sha256": "75efe6117b7d833497a05d766eb9d7d0a4299a12af68e67dbb578b0f1095c784",
+      "bytes": 5277
+    },
+    "/home/codextransfer/clean-audits/root-installed-v24/lib/libreactive_qp.a": {
+      "sha256": "aa6c9db6460923c1c386f9011a52e923a17b9b1b74f854042a45ccdffc999c68",
+      "bytes": 333608
+    },
+    "/home/codextransfer/predictive_motion/.vendor/osqp-1.0.0-install/lib/libosqpstatic.a": {
+      "sha256": "60d945ac1414cb9cdae7b3a5495a2a91947ffb5110e42d5b71ac777878f0376f",
+      "bytes": 192602
+    },
+    "/home/codextransfer/clean-audits/safe-reference-v2-precision-20261007/consumer": {
+      "sha256": "68fa46e330003934c76cc3b4cf1f4d561fb88473b7838ac08c464f915d23bfa3",
+      "bytes": 368944
+    },
+    "/home/codextransfer/clean-audits/safe-reference-v2-precision-20261007/consumer.cpp": {
+      "sha256": "7a3b868d33e4ce78b98d324fb2f56fe9216ee0654df7625a32baddffd2d7d0d5",
+      "bytes": 2941
+    },
+    "/home/codextransfer/clean-audits/safe-reference-v2-precision-20261007/solves-v1/solves.csv": {
+      "sha256": "3592b740ecb4590aa9766444e923da7e5d60e7aa42c65b74b5920cf091f1d652",
+      "bytes": 1110
+    },
+    "/home/codextransfer/clean-audits/safe-reference-v2-precision-20261007/solves-v1/case1_solved_x.csv": {
+      "sha256": "a00c34664773892b0d52d11bc3c917eb41eb5286ef8a78179d2b1431788fce3b",
+      "bytes": 159
+    },
+    "/home/codextransfer/clean-audits/safe-reference-v2-precision-20261007/solves-v1/case2_solved_x.csv": {
+      "sha256": "6d8aafa9c5748fa9dfe7d7142c77c560bf0e18024329f7af3fb13f46e735a9f3",
+      "bytes": 158
+    },
+    "/home/codextransfer/clean-audits/safe-reference-v2-precision-20261007/solves-v1/case3_solved_x.csv": {
+      "sha256": "632a7afb8951c0ec75d7031e49042db12da9fbc5031fada30c0e289bf41c9070",
+      "bytes": 158
+    }
+  },
+  "baseline_row_scope": "Even when the new baseline rejects row16, original row/candidate are unknown and are not reconstructed. Single snapshot/cold solves are not plant/horizon timing or performance distributions."
+}
