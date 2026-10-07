@@ -13,5 +13,18 @@ Mac/Dell locations with their original hashes. This Git repository alone cannot
 restore the complete experimental dataset. Review links into excluded evidence
 require those local archives.
 
-To save subsequent reviewed source changes, inspect `git status` and the diff,
-commit the intended files, then run `git push origin HEAD`.
+## Required checkpoints
+
+Back up every completed work unit and every phase, including work still awaiting
+independent acceptance. Inspect `git status` and the intended diff, commit the
+completed files, then run `git push origin HEAD`. Verify the remote branch commit
+identity. Milestone backups are authorized by the user; no repeated confirmation
+is needed. This is a work-completion policy, not a timed background job.
+
+For evidence excluded from Git, preserve immutable archives and failures, verify
+their SHA-256 and READY manifests, and save a small checkpoint record under
+`reviews/evidence/` with archive hashes, storage locations and verified copies.
+Integrate completed Dell changes into the Mac checkout for backup. Do not claim
+large data is backed up to GitHub: the committed record identifies local archives.
+Report unsuccessful uploads or evidence copies as incomplete backups and retry
+when the connection is restored. Never overwrite accepted historical evidence.
