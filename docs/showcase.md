@@ -176,6 +176,15 @@ and declared threshold branches; they are not physical trajectories or expanded
 model validation. The original local domain and failed expanded accuracy gate
 remain unchanged. [API and branch scope](../reviews/phase_5_causal_servo_api_v2_20261007.md).
 
+![Independent coupled friction-box solution](../figures/phase5/phase5_coupled_friction_box_oracle.png)
+
+For this declared synthetic drive and public nominal matrix, coordinatewise
+clipping leaves a free-joint KKT residual of2.48309rad/s². Exhaustive coupled
+active-set solving satisfies the original box/KKT conditions to8.88e-16.
+Root reruns the full oracle with exact JSON equality. The chart is public-model
+algebra; its synthetic forces are not physical actuator commands or prediction
+accuracy evidence. [Oracle, derivatives and threshold scope](../reviews/evidence/coupled_friction_box_root_oracle_20261007.md).
+
 ## Downloadable 3D models
 
 | Asset | Format / units | Purpose |
