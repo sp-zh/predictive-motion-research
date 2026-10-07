@@ -1,0 +1,210 @@
+{
+  "date": "2026-10-07",
+  "milestone": "Dell Phase5 coupled preview, workspace/scaling, progress continuation, discounted objective and failed-QP diagnostics stable source backup",
+  "phase5_acceptance": "PENDING",
+  "frozen_epoch": "reference-discount-v24-capture",
+  "native_source_archive": {
+    "scope": "Stable executed Phase5 development source frozen for failed reference-discount-v24-capture; not acceptance or complete runtime closure. Recovered by original pre-run content hashes, not live-source snapshot.",
+    "frozen": "/home/codextransfer/predictive_motion/results/phase5/development/reference-discount-v24-capture/frozen.json",
+    "frozen_sha256": "249d5459c1130f59142f336a86f4c03d0933267247b4e58d386ed8d0dce46767",
+    "archive_sha256": "070194cafa3621bc65569744ea2aa6512babb7c17b46f2a6c7c51d2760d0b3d6",
+    "archive_bytes": 83275,
+    "files": [
+      {
+        "path": "config/phase5.yaml",
+        "sha256": "3e845009aecd612952b495f224bc6ef460e5fffb15e2c133986d16c312c0817f",
+        "bytes": 2743
+      },
+      {
+        "path": "config/phase5_development/tracking-10000-discount-rho1-capture.yaml",
+        "sha256": "3a0d9492c5c728ce91db0f274728b6ee77a5c1e3e8e596abc5bfead7111147df",
+        "bytes": 5636
+      },
+      {
+        "path": "scripts/phase5/make_moving_stop_replay.py",
+        "sha256": "06784807d536e4ead715a9d10f3acd0a02e87a494ee40d15b9a9cf12f8bf3d27",
+        "bytes": 5636
+      },
+      {
+        "path": "scripts/phase5/materialize_identity.py",
+        "sha256": "a2ef012325666e515af68e014a47157115fa9dd19cc06e0038ff890aef63cbe5",
+        "bytes": 1824
+      },
+      {
+        "path": "scripts/phase5/publish_moving_stop_review.py",
+        "sha256": "05b3c1e58e33efbd0a8055c9a2e98eda23ec01237202d40b26cba1e47e27f5e2",
+        "bytes": 6173
+      },
+      {
+        "path": "scripts/phase5/run_development.py",
+        "sha256": "e6a7bf1bd861705fdc5722e73ed53e8a9a91edc7f7f3e3d0750ab8fcc6e8d348",
+        "bytes": 3498
+      },
+      {
+        "path": "scripts/phase5/run_moving_stop.py",
+        "sha256": "e2026b7e398586a9a8e12a7aa0168b48931a4287ba69457724d34aeb09e0a9a8",
+        "bytes": 4165
+      },
+      {
+        "path": "src/predictive_motion_control/CMakeLists.txt",
+        "sha256": "1720a351fa3601de11054093cddb31c87610082a4ae0d104eb8a7c6843fafdd9",
+        "bytes": 3945
+      },
+      {
+        "path": "src/predictive_motion_control/benchmark/observation_contract.cpp",
+        "sha256": "b1d79ba66a0d72620bf95783dbc7c96e799d246f59e5342091bbe65364350019",
+        "bytes": 3303
+      },
+      {
+        "path": "src/predictive_motion_control/benchmark/observation_snapshot.hpp",
+        "sha256": "eb83e27ece24dcb9b99f45b77ef3db45661931664ca892cefe6185992a00c205",
+        "bytes": 1135
+      },
+      {
+        "path": "src/predictive_motion_control/benchmark/phase2_benchmark.cpp",
+        "sha256": "045bd22284c2aef9a9a14338c1e7bde9e38d56513d332f5dbfd6729158995cb3",
+        "bytes": 27720
+      },
+      {
+        "path": "src/predictive_motion_control/benchmark/phase3_benchmark.cpp",
+        "sha256": "1e016f73b6390d40e0edf23b2c3bef2dbbc81edb308a0aa42054393bd7ad5f76",
+        "bytes": 28002
+      },
+      {
+        "path": "src/predictive_motion_control/benchmark/phase3_numerical.cpp",
+        "sha256": "360db437c9320042325bcde0fc9244b08a93ae1db0992ddaff4af80a406e0bc2",
+        "bytes": 8745
+      },
+      {
+        "path": "src/predictive_motion_control/include/predictive_motion_control/ik.hpp",
+        "sha256": "065ccea84c690ec35ef56770e7408dab158e680c3fbb1eb411df5d603aaf1ede",
+        "bytes": 709
+      },
+      {
+        "path": "src/predictive_motion_control/include/predictive_motion_control/nullspace.hpp",
+        "sha256": "52d7e0827c29e3507107c22629d40f17ba182ef3786ebff909d95d76f7149a82",
+        "bytes": 2118
+      },
+      {
+        "path": "src/predictive_motion_control/include/predictive_motion_control/predictive.hpp",
+        "sha256": "c5ff72290709ad694c61686bd495abbfe4223b3bb532f434a5d25af55c784652",
+        "bytes": 8010
+      },
+      {
+        "path": "src/predictive_motion_control/include/predictive_motion_control/reactive_qp.hpp",
+        "sha256": "75efe6117b7d833497a05d766eb9d7d0a4299a12af68e67dbb578b0f1095c784",
+        "bytes": 5277
+      },
+      {
+        "path": "src/predictive_motion_control/package.xml",
+        "sha256": "d7d1b910630604941f29a6de83c3deff1e373844226fcde2131a4f2c636ecd8e",
+        "bytes": 578
+      },
+      {
+        "path": "src/predictive_motion_control/src/ik.cpp",
+        "sha256": "4c43eac55f79fdd85f55f8ea67c853cc69bbc16d197daa05c33668e473d6abef",
+        "bytes": 3125
+      },
+      {
+        "path": "src/predictive_motion_control/src/nullspace.cpp",
+        "sha256": "a8f75b6fa793be1939a00707ca2440cc73139bd90f152ea2f18026bbaa3bb83b",
+        "bytes": 7954
+      },
+      {
+        "path": "src/predictive_motion_control/src/predictive.cpp",
+        "sha256": "4ad70dcf75500e956141557a6b17eaa2bdb9a7f670abb7f380da5c699efb1df5",
+        "bytes": 38633
+      },
+      {
+        "path": "src/predictive_motion_control/src/reactive_qp.cpp",
+        "sha256": "7f0b10b09c66c078e2342ebd1cc44ba636f76a59c5d908b0a15392ea6d589507",
+        "bytes": 23205
+      },
+      {
+        "path": "src/predictive_motion_control/test/ik_test.cpp",
+        "sha256": "f22d019113aca209bd79ae1e39ffc0c5857e1d1edebb0ea874f6743703f24055",
+        "bytes": 4294
+      },
+      {
+        "path": "src/predictive_motion_control/test/nullspace_test.cpp",
+        "sha256": "df1f119d96158002477785ea09851bb736e1b1074f77f13371472973408fc7d7",
+        "bytes": 4877
+      },
+      {
+        "path": "src/predictive_motion_control/test/predictive_test.cpp",
+        "sha256": "2c4b75a9f81d186dd2bd6af40548651ce036e086336b0479dc838972e754d253",
+        "bytes": 39208
+      },
+      {
+        "path": "src/predictive_motion_control/test/reactive_qp_test.cpp",
+        "sha256": "cfdef9408497e475e639767cd958f4a398cee989222b19aefc428c5850d5b8c5",
+        "bytes": 6710
+      },
+      {
+        "path": "tools/phase5_adapter/CMakeLists.txt",
+        "sha256": "816fd14108cc4ad10ff59d619584833d31f2d5739eb1d8bbd5454566ee4136c3",
+        "bytes": 1679
+      },
+      {
+        "path": "tools/phase5_adapter/adapter_derivatives.cpp",
+        "sha256": "dec7ab01b7c607f02dcf00005c97433361ea353d3c6b0f4cd8c8c1cb4a990462",
+        "bytes": 2848
+      },
+      {
+        "path": "tools/phase5_adapter/dump_first_qp.cpp",
+        "sha256": "0089d83a096f95752f6d612e1d97112319e4949a587f230d5b9d169a388db33b",
+        "bytes": 7605
+      },
+      {
+        "path": "tools/phase5_adapter/frozen_qp_probe.cpp",
+        "sha256": "73e221d79f842a991f6c923174d02f78a7bf6f7a0f52c59f12d134192191b922",
+        "bytes": 5130
+      },
+      {
+        "path": "tools/phase5_adapter/generate_geometry.py",
+        "sha256": "9ca72ec867a97b06f96a09a25c88990b73fd2990107460d76f81051565b46862",
+        "bytes": 3128
+      },
+      {
+        "path": "tools/phase5_adapter/linearization.hpp",
+        "sha256": "50366f34c7ebcf53da527b8b6ef7a56e5cc3335665ac97c0374ef6e183c81148",
+        "bytes": 2064
+      },
+      {
+        "path": "tools/phase5_adapter/moving_stop_replay.cpp",
+        "sha256": "424576cbdec20c4975e617439126611d34b70b07e6b644030f634f1a7be5a4d4",
+        "bytes": 40703
+      },
+      {
+        "path": "tools/phase5_adapter/observation.hpp",
+        "sha256": "ace63b23dc3b0831a4c62b543d908f22ab4942d830a17709c1ada82c4f9235f6",
+        "bytes": 2570
+      },
+      {
+        "path": "tools/phase5_adapter/path_adapter.hpp",
+        "sha256": "faffd6ae74b7f77554b1e1aec68a7cda52c640d8ba819a7928caa072a4058aec",
+        "bytes": 2858
+      },
+      {
+        "path": "tools/phase5_adapter/phase5_benchmark.cpp",
+        "sha256": "72d59b1a4921b37a9ead7ab59602d75238927cb89224673574cfcd7a9a1147d1",
+        "bytes": 44584
+      }
+    ]
+  },
+  "Mac_archive": "/Users/uot/Documents/ChatGPT/ros/transfer/inbox/root-source-checkpoint-v24-20261007",
+  "Dell_archive": "/mnt/d/CodexTransfer/projects/predictive_motion/checkpoints/source-v24-20261007",
+  "verified": "Original pre-run cache identities, both archive copies and all36 source members; source integrated into Mac backup checkout",
+  "limitations": [
+    "This is source backup of failed development epoch, not acceptance.",
+    "Command/plant contract issue CTRL-001 remains open.",
+    "No system dependencies, binaries, raw trials or caches are committed.",
+    "Current ongoing servo correction is outside this checkpoint.",
+    "Pinned ROS/OSQP build and50 predictive Gtests passed onDell before this frozen epoch; Mac has not built Linux/ROS source."
+  ],
+  "additional_existing_helper": {
+    "path": "tools/phase4_adapters/geometry.hpp",
+    "sha256": "65150b6e7d1b83cb0e3ec81fd2f6331216e6bfa19460aa329335c96fd1cb2e00",
+    "source": "Same v24 pre-run identity-cache; only adds stable sphere cover_index to row identity; all other7 Phase4 helper hashes equal existing Mac checkout."
+  }
+}

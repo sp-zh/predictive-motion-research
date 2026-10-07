@@ -28,6 +28,7 @@ struct Query {
   V witness_a, witness_b, normal;
   Eigen::RowVectorXd gradient;
   bool covered_tool_environment=false;
+  int cover_index=-1;
 };
 struct Snapshot {
   std::vector<Query> queries;
@@ -161,7 +162,8 @@ class Scene {
     if(!cover_queries)return out;
     const Pose flange=robot.framePose(q,tool_frame);
     const Jacobian fj=gradients ? robot.frameJacobian(q,tool_frame,Reference::LocalWorldAligned) : Jacobian::Zero(6,q.size());
-    for(const auto& sphere:cover) {
+    int cover_index=0;for(const auto& sphere:cover) {
+      const int current_index=cover_index++;
       const V center=flange.act(sphere.center);
       for(size_t b=0;b<objects.size();++b) {
         if(objects[b].category!="fixture" && objects[b].category!="floor")continue;
@@ -190,6 +192,7 @@ class Scene {
         if(distance>=keep_cover_below)continue;
         Query r{sphere.primitive,objects[b].name,"cover",distance,
                 center+sphere.radius*normal,closest,normal,Eigen::RowVectorXd::Zero(q.size())};
+        r.cover_index=current_index;
         if(gradients)r.gradient=-normal.transpose()*pointJacobian(flange,fj,center);
         if(!std::isfinite(distance) || !r.gradient.allFinite())throw std::runtime_error("nonfinite cover query");
         out.queries.push_back(std::move(r));
