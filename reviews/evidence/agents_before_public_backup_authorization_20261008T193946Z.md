@@ -7,9 +7,10 @@ The human explicitly instructed on 2026-10-08: “继续”, resuming after the 
 The user requires a backup after every completed work unit and every phase.
 Inspect the intended diff, exclude credentials and local caches, commit the
 completed source/configuration/tests/reviews/documentation, and push to the
-public repository https://github.com/sp-zh/predictive-motion-research.
+private repository https://github.com/sp-zh/predictive-motion-research.
 Verify that the remote branch contains the committed checkpoint before reporting
-the backup complete. The human explicitly approved on 2026-10-08: “批准本次及后续同范围公开备份”. This covers fcbb266 and later same-scope project source, verification reports, documentation and diagnostic/showcase figures. Do not request permission again for these routine public milestone backups. Credentials, large raw results and dependency/local caches remain excluded. This publication approval does not expand model/plant/main/scorer run permissions or phase gates. The verified direct-human authorization is recorded in reviews/evidence/public_backup_authorization_20261008.json; prior private rules and all pause history are preserved.
+the backup complete. Existing user authorization covers these milestone pushes;
+do not request permission again for routine backups to this private repository.
 
 For large experimental evidence excluded from Git, preserve immutable archives
 and retained failures, verify SHA-256 and READY manifests, and commit a small
@@ -23,7 +24,7 @@ backup as incomplete until the failure is resolved. See docs/backup.md.
 # Demonstrable visual deliverables
 
 The user requires presentation-ready images and permits uploading project 3D
-models to the project Git repository. For each completed part or phase, create
+models to the private Git repository. For each completed part or phase, create
 or update relevant actual simulation/CAD renders and evidence-backed plots,
 and maintain docs/showcase.md as the visual entry point. Include useful small
 STL/STEP/FreeCAD models in cad/generated/ and figures in figures/ in milestone

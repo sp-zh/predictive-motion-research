@@ -4,6 +4,8 @@ GitHub repository: https://github.com/sp-zh/predictive-motion-research
 
 Visibility: **Public**, independently verified on 2026-10-08 after the human explicitly instructed “改回public” in the communication-check chat. Earlier private-backup records retain their historical wording. Credentials and local caches remain excluded.
 
+On 2026-10-08 the human directly approved “批准本次及后续同范围公开备份”: fcbb266 and later same-scope project source, verification reports, documentation and diagnostic/showcase figures may be publicly backed up without repeated confirmation. Large raw results and dependency/build caches stay in verified Mac/Dell archives. This approval changes publication scope only; experimental run permissions and phase gates remain separate. [Verified authorization](../reviews/evidence/public_backup_authorization_20261008.json).
+
 This repository backs up source, tests, configuration, model descriptions,
 documentation, review reports, figures and small CAD artifacts. A Git push is
 required to back up later local changes; this is not an automatic schedule.

@@ -1,0 +1,29 @@
+{
+  "recorded_utc": "2026-10-08T19:39:46.654797+00:00",
+  "human_instruction": "批准本次及后续同范围公开备份",
+  "authority": "Direct human userMessage verified via read_thread, not delegated approval",
+  "source_thread_id": "01a10a40-558c-71a3-b343-6ff4c2709b36",
+  "source_thread_title": "查找研究项目进展阶段",
+  "source_user_message_id": "01a11d04-9be5-73c2-b3a1-53f5bbf8354a",
+  "approved_checkpoint": "fcbb2664cfc4353c3c1c65d943a9ed5a5a423d26",
+  "approved_current_files": 15,
+  "approved_future_scope": [
+    "Same project source",
+    "Verification reports",
+    "Documentation",
+    "Diagnostic andshowcase figures",
+    "Routine same-scope milestone checkpoints"
+  ],
+  "repository": "https://github.com/sp-zh/predictive-motion-research",
+  "visibility": "PUBLIC",
+  "excluded": [
+    "Credentials andprivate keys",
+    "Large raw experimental outputs",
+    "Dependency/build/local caches"
+  ],
+  "does_not_expand": [
+    "Model/plant/main/scorer experiment permissions",
+    "Phase acceptance orlaterphase gates"
+  ],
+  "previous_rules_snapshot": "reviews/evidence/agents_before_public_backup_authorization_20261008T193946Z.md"
+}
