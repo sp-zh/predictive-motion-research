@@ -1,0 +1,182 @@
+{
+  "scope": "SOURCE_DESIGN_ONLY_NO_BUILD_KERNEL_MODEL_PLANT_SOLVER_SCORER",
+  "backup_prerequisite": "3f98f69fbe040802f0887d6a80ea5005a2fc1ad9",
+  "prompt_sha256": "8cd8379077ecfc27ad8097f48da76bd47f27d9e495e08e65390ca17f8109116e",
+  "prompt_sections": [
+    "16 configurableN20/.5-1s",
+    "36 N20/.8s example",
+    "41 later1.5s horizonstudy"
+  ],
+  "sources": {
+    "tools/phase5_public_coupled_augmented_extension_cpp/public_coupled_augmented_extension.hpp": {
+      "sha256": "d97d4f5fbbd837317bdf488291f3aca0c822c512a7e3f6c079e196d3641b104f",
+      "bytes": 2171
+    },
+    "tools/phase5_public_coupled_augmented_extension_cpp/public_coupled_augmented_extension.cpp": {
+      "sha256": "74b3d8eccdd4a1373d39bc46cf122564a5101259c2212cb45d98f81678f882fa",
+      "bytes": 7073
+    },
+    "tools/phase5_public_coupled_augmented_cpp/public_coupled_augmented_model.hpp": {
+      "sha256": "24350b7680f65c2ea667628e8e80e0830e2a471b501bf77acd51d699b9d44b8d",
+      "bytes": 1818
+    },
+    "tools/phase5_public_coupled_augmented_cpp/public_coupled_augmented_model.cpp": {
+      "sha256": "add6e9d0ef578ed3adcd7e715d2844fb60c063afa24bfb6dd233cdd5f04eac1b",
+      "bytes": 4305
+    },
+    "tools/phase5_public_affine_horizon_cpp/public_affine_horizon.hpp": {
+      "sha256": "049e7cb3a0b8f46cf3bbba57743384ccf631c31ace3a1ff7cf99bcd645dbb0f4",
+      "bytes": 5637
+    },
+    "tools/phase5_public_affine_horizon_cpp/public_affine_horizon.cpp": {
+      "sha256": "bc4ead2f085216c40da6be34b6c3d037b3f90df83757b94464f7f6ed97cef953",
+      "bytes": 13867
+    },
+    "tools/phase5_public_affine_horizon_cpp/public_affine_horizon_native.cpp": {
+      "sha256": "5804cb4dfb0a43f99bb24bb81d07ccc0e1af24c559ec58902b0d47c4b3d3f487",
+      "bytes": 5536
+    },
+    "src/predictive_motion_control/include/predictive_motion_control/predictive.hpp": {
+      "sha256": "c5ff72290709ad694c61686bd495abbfe4223b3bb532f434a5d25af55c784652",
+      "bytes": 8010
+    },
+    "src/predictive_motion_control/src/predictive.cpp": {
+      "sha256": "4ad70dcf75500e956141557a6b17eaa2bdb9a7f670abb7f380da5c699efb1df5",
+      "bytes": 38633
+    },
+    "tools/phase5_adapter/phase5_benchmark.cpp": {
+      "sha256": "72d59b1a4921b37a9ead7ab59602d75238927cb89224673574cfcd7a9a1147d1",
+      "bytes": 44584
+    },
+    "docs/predictive_controller.md": {
+      "sha256": "037e041875a4a24b91966dbc921ee17ce0c0ba84be4bfcdc8344b6c640938828",
+      "bytes": 10530
+    },
+    "src/predictive_motion_sim/include/predictive_motion_sim/plant.hpp": {
+      "sha256": "2bfac5f02ccee8be8807470fdd95f8de594d69d8f74f602aaa55408263fd1508",
+      "bytes": 994
+    },
+    "src/predictive_motion_sim/src/state_bridge.cpp": {
+      "sha256": "d907eccee9502b70ee8f146b90e48a7f5d798c36d55282aea36efd7e420fc56f",
+      "bytes": 2975
+    },
+    "reviews/evidence/public_live_affine_source_requirements_20261008.json": {
+      "sha256": "8ed64e87c6b07938b6edc56adea4be4f19b2058226db3a23d4d7f01fcc8864eb",
+      "bytes": 3565
+    }
+  },
+  "proposal_sha256": "4bfcd9d5ce0efacce2ccbdb3b02ff097660c6d4e4b1c26bbb1aba48888afdb84",
+  "proposal_bytes": 16724,
+  "preserved_draft1_sha256": "f269b17cc6b35d6b1c31e533d78b215682b2561ee7e282542c27067381df862a",
+  "phase5": "NOT_ACCEPTED",
+  "phase6": "NOT_STARTED",
+  "ec1_or_old_model_files_changed": false,
+  "validation": "Read-only source identity audit; stdlib integer shape accounting only. No model/matrix/build/kernel calls.",
+  "limited_read_failure": "Initial guessed attachment slice didnotcontain horizonsection; targeted rg/read corrected; no artifacts/source changed",
+  "artifacts": {
+    "public_live_affine_v2_source_contract_20261008.md": {
+      "sha256": "4bfcd9d5ce0efacce2ccbdb3b02ff097660c6d4e4b1c26bbb1aba48888afdb84",
+      "bytes": 16724
+    },
+    "public_live_affine_v2_compact_schema_20261008.md": {
+      "sha256": "8f1b6822a9b9eb4ba6f96e28ee4f708eae2bbc6061397ab44297bb6e2ea783c3",
+      "bytes": 5561
+    },
+    "public_live_affine_v2_resource_shape_plan.py": {
+      "sha256": "ee71dc67896b3862f41bdd8d9010ac480a0c4b3ad7f0af275301322e1f8fd1c1",
+      "bytes": 4488
+    },
+    "public_live_affine_v2_resource_counts_20261008.json": {
+      "sha256": "c9d70c84a5c385674eaae07ac51c6df8953bfaa6c0cdc1b399bfc289e67ea43b",
+      "bytes": 8280
+    },
+    "public_live_affine_v2_resource_table_20261008.md": {
+      "sha256": "54fad094cbaaaf1a6235c197d29efd78225f08cc3b6468783821fbd81032dd2e",
+      "bytes": 4284
+    },
+    "public_live_affine_v2_interface.hpp": {
+      "sha256": "bc0676374e105457b4d5deca8dc33979c1a53c9983eab00b4638a261e885d957",
+      "bytes": 4193
+    }
+  },
+  "revision_history": {
+    "/private/tmp/public_live_affine_v2_pre_final_review": {
+      "public_live_affine_v2_compact_schema_20261008.md": {
+        "sha256": "c2240cc91e9be48ab4dfe0020291668b62634e7915fa25e1fe252a8727c364c1",
+        "bytes": 4635
+      },
+      "public_live_affine_v2_interface.hpp": {
+        "sha256": "2a16040e5d810343616e4347d3042d4e55f32e1fbb562559d11e87ef9d0d1ce2",
+        "bytes": 3483
+      },
+      "public_live_affine_v2_resource_counts_20261008.json": {
+        "sha256": "7d187e0376719ccd1637155e9b885fab0c3e8fd5f02a1928ccc50d438956b3af",
+        "bytes": 8270
+      },
+      "public_live_affine_v2_resource_shape_plan.py": {
+        "sha256": "a16f4e0b28f9f8901571e5a18f1e044e87017bb58497698e273cd12c112d24bf",
+        "bytes": 4267
+      },
+      "public_live_affine_v2_resource_table_20261008.md": {
+        "sha256": "ca655fafceed217cc0781e8668cf734dc821248a1329385ff918163dec2f1af1",
+        "bytes": 3268
+      },
+      "public_live_affine_v2_source_contract_20261008.md": {
+        "sha256": "bfb08481045ec4eae4ff3ec64873fe4afcbdaa43c1456dd9cce2b7a253a62696",
+        "bytes": 11309
+      },
+      "public_live_affine_v2_source_provenance_20261008.json": {
+        "sha256": "36b259376006f0348d42dcaae308f173df6b573115f3ee70ca2590e744dce49e",
+        "bytes": 3544
+      }
+    },
+    "/private/tmp/public_live_affine_v2_before_sum_eval_fix": {
+      "public_live_affine_v2_compact_schema_20261008.md": {
+        "sha256": "fcc037ee2add2944864f89e450268281ef1b4015018ee5bb2e1025866ff62a38",
+        "bytes": 5301
+      },
+      "public_live_affine_v2_interface.hpp": {
+        "sha256": "bc0676374e105457b4d5deca8dc33979c1a53c9983eab00b4638a261e885d957",
+        "bytes": 4193
+      },
+      "public_live_affine_v2_resource_counts_20261008.json": {
+        "sha256": "49211c37cf874d0c0ca70aa93762d0f6c1bb8fe62fd3b67eafa6db56fe42d448",
+        "bytes": 8240
+      },
+      "public_live_affine_v2_resource_shape_plan.py": {
+        "sha256": "0d96331ea2263e3c71a515d2e415542643bc560a3c1b57292694c6a7da6ee210",
+        "bytes": 4288
+      },
+      "public_live_affine_v2_resource_table_20261008.md": {
+        "sha256": "ca655fafceed217cc0781e8668cf734dc821248a1329385ff918163dec2f1af1",
+        "bytes": 3268
+      },
+      "public_live_affine_v2_source_contract_20261008.md": {
+        "sha256": "170223237c2ae2324ac54c153190873185becdb7601dbb735faba8c875d22ace",
+        "bytes": 15936
+      },
+      "public_live_affine_v2_source_contract_20261008_draft1.md": {
+        "sha256": "f269b17cc6b35d6b1c31e533d78b215682b2561ee7e282542c27067381df862a",
+        "bytes": 10823
+      },
+      "public_live_affine_v2_source_provenance_20261008.json": {
+        "sha256": "36b259376006f0348d42dcaae308f173df6b573115f3ee70ca2590e744dce49e",
+        "bytes": 3544
+      }
+    },
+    "/private/tmp/public_live_affine_v2_before_contract_name_cleanup.md": {
+      "sha256": "b6ce0337185064036f18dddb171dc8762fcb2c05ee5fb27878c5cc1258a96b6c",
+      "bytes": 16596
+    }
+  },
+  "review_fixes": [
+    "Raw Map 2441 including3 topology integers",
+    "Normalized topology3/5 indices plus independently8MiB bounded metadata",
+    "K+1 complete evaluation blocks and summed workspace charges",
+    "Half-first symmetric Hessian without modifying rawH",
+    "SDK planning allowance explicitly not allocator/RSS proof",
+    "Strict live anchor/currentactual boundary match; AlgebraTest cannot propose command",
+    "Private genuine-result ownership; permission required for actual constructor/rollout"
+  ],
+  "recorded_utc": "2026-10-08T20:48:40.515801+00:00"
+}

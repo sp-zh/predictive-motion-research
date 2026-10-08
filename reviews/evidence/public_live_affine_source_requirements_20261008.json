@@ -1,0 +1,46 @@
+{
+  "scope": "Read-only next-unit requirements grounded inmasterprompt andcurrent published APIs; no new Model/build/kernel/plant/solver calls",
+  "recorded_utc": "2026-10-08T19:49:28.772841+00:00",
+  "prerequisite_completed_unit": "fcbb2664cfc4353c3c1c65d943a9ed5a5a423d26",
+  "verified_backup": "3f98f69fbe040802f0887d6a80ea5005a2fc1ad9",
+  "master_prompt_sha256": "8cd8379077ecfc27ad8097f48da76bd47f27d9e495e08e65390ca17f8109116e",
+  "prompt_requirements": {
+    "phase5_section16": "Explicit prediction, initial nominalN20 withapproximately0.5-1.0s preview; configurable ratherthan hardcoded",
+    "section36_example": "horizon_steps20,horizon_seconds0.8,control250Hz",
+    "section41": "1.5s is later horizon-study example, not a new phase5 performance-run authorization"
+  },
+  "current_mismatch": {
+    "affine_v1_max_cells": 16,
+    "affine_v1_max_samples": 512,
+    "public_source_validated_meshes": "N1/N4 only",
+    "model_cycle_s": 0.004,
+    "model_substep_s": 0.002,
+    "N20_0_8s_cycles": 200,
+    "N20_0_8s_samples": 400,
+    "N20_1_5s_cycles": 375,
+    "N20_1_5s_samples": 750,
+    "interpretation": "N20 doesnotfit v1cellcap;1.5s alsoexceeds samplecap. Do not silently change the alreadyfrozen v1profile.",
+    "native_v1_source_binary_pin": "normalize_public_native explicitly requires f1b7e6c7e4219fec2beb310540c725b448dcf021b3a95ddafc2922e8849bf1d6; a new realModel producer must not impersonate this archived producer"
+  },
+  "native_API_contract": {
+    "state": "q7/v7 measuredphysical plusC7/w7 acceptedcommand history plusprogresss/r",
+    "input": "alpha7 acceptedcommand acceleration andsignedprogressb; do notlabelalpha asphysicalqdd",
+    "cell": "positive integer4ms cycles; actual nonlinear result has2ms samples pluscycle/cell endpoints",
+    "map": "cycle-localA/B/defect/origin aredistinct fromcumulativecell_A/cell_B/cell_defect/cell_origin",
+    "source_scope": "Model rollout preserves original values andstrict physicalbranch derivatives; no finite admissible perturbationball orcontroller/readiness guarantee",
+    "exact_command_update": "w_next=w+.004*alpha; C_next=C+.004*w_next (semiimplicit, not .5h^2). Same newC/w held in both2ms physical halves.",
+    "progress_update": "Separate s/r polynomial references percycle/half; must not substitute command law forprogress law."
+  },
+  "next_source_review_must_resolve": [
+    "Versioned configurable profile plus checked dimensions/counts/cumulative allocation and output budgets, withold profiles andlimits keptunchanged",
+    "Explicit new live-native provenance/identity contract: actual new producer ELF plus xml/constants/modelsource/metadata, never fake oldF1/fileSHA merely to pass archived v1 guards",
+    "Real typed ModelResult adapter andfrozenxml/constants/ModelMetadata provenance; current archived-carrier proofdoesnotverify realconstruction/rollout",
+    "Measuredactual initialphysical state andacceptedC/whistory remain separate fromnominal point; no future reset/privilegedplant state",
+    "Ifcell0 spansmultiple4ms cycles, first acceptedcommand usesfirst4ms endpoint, not wholecell endpoint",
+    "Requested preview lattice:0.25/0.75s examples arenotinteger4ms cycles; explicit rejection ordeclared policy required, never silentrounding",
+    "Unsupported/failed Model prefix maynot become acomplete horizon; native branch/cert/value diagnostics preserved",
+    "Fixed independent reference andfirst-attempt/refusal tests mustbe predeclared, frozen andbackedup beforeany newnumeric dispatch"
+  ],
+  "phase5": "NOT_ACCEPTED",
+  "phase6": "NOT_STARTED"
+}
