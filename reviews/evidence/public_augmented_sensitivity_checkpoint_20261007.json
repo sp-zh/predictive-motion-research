@@ -1,0 +1,159 @@
+{
+  "date": "2026-10-07",
+  "timezone": "America/Toronto",
+  "decision": "PASS_SELECTED_AUGMENTED_CYCLE_CELL_SENSITIVITIES",
+  "phase5": "NOT_ACCEPTED",
+  "phase6": "NOT_STARTED",
+  "producer_archive": {
+    "sha256": "e61a9f23b1673afeb4cdf26c3529364eec07145dfd2518a6601adee1f9bf9ebc",
+    "bytes": 117544130,
+    "regular_members": 3269,
+    "payloads": 3267,
+    "Mac": "/Users/uot/Documents/ChatGPT/ros/results/phase5-executor-checkpoints-01a114d9/public-coupled-augmented-sensitivity-cpp-v1-20261007/public-coupled-augmented-sensitivity-cpp-v1.tar.gz",
+    "Dell": "/mnt/d/CodexTransfer/projects/predictive_motion/checkpoints/public-coupled-augmented-sensitivity-cpp-v1-20261007/public-coupled-augmented-sensitivity-cpp-v1.tar.gz",
+    "source_manifest_sha256": "c214063923c42eae1cdd8f4633881921507b48b35472aba6363be5c325e9acae",
+    "all_payloads_root_verified_on_both": true
+  },
+  "root_native_archive": {
+    "sha256": "8de8d50dd16029eb9752442b5862b00dd106066bd59372487cc7d3fde5b69456",
+    "bytes": 13333050,
+    "regular_members": 487,
+    "payloads": 486,
+    "all_payloads_verified": true,
+    "scope": "Independent root selected augmented sensitivities/strict diagnostics; retained failures; no new plant/main/Phase5 acceptance.",
+    "Mac_all_payloads_root_verified": true,
+    "Mac": "/Users/uot/Documents/ChatGPT/ros/transfer/incoming/root-public-augmented-sensitivity-20261007/evidence.tar.gz",
+    "Dell": "/mnt/d/CodexTransfer/projects/predictive_motion/checkpoints/root-public-augmented-sensitivity-20261007/evidence.tar.gz",
+    "all_payloads_root_verified_on_both": true
+  },
+  "closure_operations_archive": {
+    "sha256": "580ea43a3a12c3c6c31078560a8156611f3cbaa957666c92af7551542abd6d80",
+    "bytes": 3372,
+    "regular_members": 7,
+    "payloads": 6,
+    "all_payloads_verified": true,
+    "scope": "Read-only augmented checkpoint closure operations: original multi-manifest rejection, explicit current-manifest repair, final2611-file closure; no numerical model or plant calls.",
+    "all_payloads_root_verified_Mac": true,
+    "Mac": "/Users/uot/Documents/ChatGPT/ros/transfer/incoming/root-public-augmented-sensitivity-closure-20261007/evidence.tar.gz",
+    "Dell": "/mnt/d/CodexTransfer/projects/predictive_motion/checkpoints/root-public-augmented-sensitivity-closure-20261007/evidence.tar.gz",
+    "all_payloads_root_verified_on_both": true
+  },
+  "dependency_closure": {
+    "verified_utc": "2026-10-08T03:48:17.163023+00:00",
+    "source_sha256": "deee39ba85b025cac4b35af6e782378d0c25e809eef76c9249c0f9ac0d43a648",
+    "freeze_sha256": "51f3111381ac6a5e338452e533340c04ef810a0521082579bfb43c3bde489ecc",
+    "archive_sha256": "e61a9f23b1673afeb4cdf26c3529364eec07145dfd2518a6601adee1f9bf9ebc",
+    "live_and_immutable_Dell_files_verified": 2611,
+    "input_bytes": 181342804,
+    "regular_members_verified": 3269,
+    "all_archive_payloads_verified": 3267,
+    "all_embedded_immutable_inputs_verified": 2611,
+    "manifest_name": "project/results/phase5/development/public-coupled-augmented-sensitivity-cpp-v1/CHECKPOINT_FILE_MANIFEST.json",
+    "scope": "Read-only live/cache/archive closure with an explicit current manifest identity.\n\nNo physics/model/plant execution. Archive membership is read in stream order.\n",
+    "phase5": "NOT_ACCEPTED",
+    "all2611_embedded_immutable_dependencies_root_verified_Mac": true,
+    "all3267_producer_payloads_root_verified_Mac": true
+  },
+  "freeze_sha256": "51f3111381ac6a5e338452e533340c04ef810a0521082579bfb43c3bde489ecc",
+  "binary_sha256": "a29ccdb1b6bdc82ca16e8743d892f7801d15fd778c421d319e49052e6d571d54",
+  "producer_cases": {
+    "certified": 6,
+    "valid_uncertified": 12,
+    "invalid": 10,
+    "future_failure": 1,
+    "old_value_FD_calls": 918,
+    "original_physical_diagnostics": 10098,
+    "independent_physical_J_calls": 66,
+    "synthetic_output_positive": 1,
+    "synthetic_output_negative": 25
+  },
+  "root_cases": {
+    "positive": 4,
+    "valid_uncertified_initial": 3,
+    "future_failure": 1,
+    "invalid": 1,
+    "old_value_FD_calls": 555,
+    "original_physical_diagnostics": 8346,
+    "nonuniform_distinct_columns": 62,
+    "all_requested_two_epsilon_halfstep_gates": true
+  },
+  "root_metrics": [
+    {
+      "name": "root_single_cycle",
+      "columns": 38,
+      "epsilons": [
+        {
+          "epsilon": 1e-06,
+          "max_absolute": 6.426850157643254e-10,
+          "max_gate_ratio": 0.0012850811998778224
+        },
+        {
+          "epsilon": 3e-07,
+          "max_absolute": 2.143808686128068e-09,
+          "max_gate_ratio": 0.0032192248155443813
+        }
+      ]
+    },
+    {
+      "name": "root_held10",
+      "columns": 38,
+      "epsilons": [
+        {
+          "epsilon": 1e-06,
+          "max_absolute": 8.389604211347191e-09,
+          "max_gate_ratio": 0.01677435587818878
+        },
+        {
+          "epsilon": 3e-07,
+          "max_absolute": 2.4128253493273244e-08,
+          "max_gate_ratio": 0.04687246126229111
+        }
+      ]
+    },
+    {
+      "name": "root_nonuniform_cell_chain",
+      "columns": 62,
+      "epsilons": [
+        {
+          "epsilon": 1e-06,
+          "max_absolute": 8.094886091731396e-09,
+          "max_gate_ratio": 0.015788048489222502
+        },
+        {
+          "epsilon": 3e-07,
+          "max_absolute": 2.4377509430436495e-08,
+          "max_gate_ratio": 0.04875293505246781
+        }
+      ]
+    }
+  ],
+  "producer_metrics": [
+    {
+      "epsilon": 1e-06,
+      "max_absolute": 8.27490781452056e-09,
+      "max_gate_ratio": 0.015788048489222502
+    },
+    {
+      "epsilon": 3e-07,
+      "max_absolute": 2.6914537293309948e-08,
+      "max_gate_ratio": 0.03845917175556494
+    }
+  ],
+  "structural_checks": "Independent physical J1/J2, exact h\u00b2Q/hQ, rational command/progress, semiimplicit q sensitivities, own origins/defects and cell composition; separate62-column root chain.",
+  "visuals": {
+    "matrix": {
+      "sha256": "2891613783f583d38b8047f6395608f15a87e94c3b0194bf66398b335df04df2",
+      "provenance_sha256": "f83b44e97346f35336a58a6c78315ab17cf08e1cf745ceed8c6a6ae3b041dd45",
+      "root_viewed": true
+    },
+    "verification": {
+      "sha256": "2cd77162fc57417799fb46593f787fad3902efb5a0b73df2e0b1ad33dd295158",
+      "provenance_sha256": "91bae7b210d57009db2deb444685623dd70305e8cb89bb46fcdbcb62a1be6259",
+      "root_viewed": true
+    }
+  },
+  "retained_failures": "Prefreeze invocation refused before predictions; static parser-value output completion and first successful build preserved; visual-record syntax and layout failures; untouched incomplete first publication archive2fb772b5849c3f4efa842bb26cb8c1efb8ce034fd238de1225067f0091d95565 embedded in final packet; original suffix-only root closure selector rejects duplicate historical manifest, separate exact-selector v2 closes all files. No numerical repair/refit/new plant.",
+  "common_task_start": "s=0/r=0 and terminal/domain bounds outside current central-support certificate; do not move actual history to epsilon. Canonical-extension/boundary semantics need independent validation before main use.",
+  "large_evidence_in_Git": false,
+  "scope": "Selected interior augmented cycle/cell derivatives; no horizon planner/cost/main integration, command/progress continuity, stopping/geometry, task/timing or Phase5 acceptance."
+}

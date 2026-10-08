@@ -59,6 +59,20 @@ integration remain pending.
 [Independent physical derivative review](../reviews/evidence/public_physical_derivative_root_review_20261007.md).
 
 
+The separate augmented cycle/cell sensitivity reference now passes6 supported
+producer cases,12 valid but uncertified cases and11 forward failures. Root
+independently checks4 positives/4 non-certifications/1 invalid input,555 old-value
+FD calls and8,346 strict physical substep diagnostics. The nonuniform mesh
+covers30 initial plus32 distinct cell-control coordinates, not tied inputs.
+Both fixed epsilons and exact command/progress, h²Q, semiimplicit integration,
+cell composition and matched-origin defects pass. Uncertified paths retain
+original values and certified prefixes. The common actual start s=0/r=0 and
+terminal bounds remain outside this interior prototype's support; do not move
+history to epsilon. Boundary policy, horizon/cost and main integration, stopping,
+task and timing gates remain pending. No new plant or numerical retuning occurred.
+[Independent augmented sensitivity review](../reviews/evidence/public_augmented_sensitivity_root_review_20261007.md).
+
+
 The one approved seed91013 simulation completes with the frozen public-v2 predictor and strict scorer. All9796 complete windows have zero failures; active2/4/40/800ms maxima are below original limits and near roundoff. Root independently verifies all5002 state records/2002attempts/262496captured QP rows and the exact window roster, plus21 predeclared forecasts and six enumerated force QPs. Source/model/parameters remain unchanged, with no fitting or rerun. There are1996full-cycle4ms misses, and the final new stop starts after a long hold. This is PASS_CONDITIONAL_RECORDED_INPUT_PREDICTION for known curated development input; main-controller integration, full task, moving-stop, uniform-domain,250Hz and Phase5 acceptance remain pending.
 [Independent actual-run review](../reviews/evidence/public_coupled_validation_91013_root_review_20261007.md).
 

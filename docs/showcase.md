@@ -314,3 +314,18 @@ Add inspected simulation renders, executed trajectory and constraint plots,
 and updated useful models as work is completed. Each addition must identify
 its data or parameter source and whether it is a development diagnostic or an
 accepted result. Commit and push these assets with the milestone backup.
+
+
+![Augmented cycle/cell sensitivity blocks](../figures/phase5/phase5_public_coupled_augmented_sensitivity_matrix.png)
+
+![Both fixed-epsilon sensitivity gates and the complete support roster](../figures/phase5/phase5_public_coupled_augmented_sensitivity_verification.png)
+
+These numerical-output plots show the final16ms cell of a nonuniform mesh and
+the full producer6/12/11case roster. Matrix blocks have output/input SI units;
+FD gate ratios are dimensionless. Root separately verifies all62 initial and
+distinct cell-input directions at both epsilons. All2611 dependencies and both
+host copies of the complete evidence are verified; failed workflow publications
+are retained. The current interior API does not certify actual s=0/r=0 starts.
+Boundary support, horizon cost/main integration, task and timing gates remain
+pending; Phase5 is unaccepted.
+[Independent augmented sensitivity review](../reviews/evidence/public_augmented_sensitivity_root_review_20261007.md).

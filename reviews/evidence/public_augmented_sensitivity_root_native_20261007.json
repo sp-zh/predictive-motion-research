@@ -1,0 +1,66 @@
+{
+  "decision": "PASS_SELECTED_AUGMENTED_CYCLE_CELL_SENSITIVITIES",
+  "scope": "Independent augmented cycle/cell sensitivity audit; no plant or main controller.\n\nOld frozen value FD, every perturbed physical substep's original diagnostics,\nclosed-form command/progress coefficients and exact semiimplicit identities.\n",
+  "source_sha256": "eaef92bbaf4134153c08cc74b7997a03f064047c2e2984dc2a5e15aa12d632b5",
+  "binary_sha256": "a29ccdb1b6bdc82ca16e8743d892f7801d15fd778c421d319e49052e6d571d54",
+  "freeze_sha256": "51f3111381ac6a5e338452e533340c04ef810a0521082579bfb43c3bde489ecc",
+  "value_binary_sha256": "2fa952127cdd37ceb56396231e2972d50d36c94e9a19c341c9c17169442acf57",
+  "base_binary_sha256": "fa1a00344e73d8fe2266541ba4e2b34c362351b30a4f21dfa34c04867f585a04",
+  "FD_value_calls": 555,
+  "strict_physical_diagnostic_calls": 8346,
+  "positive_cases": 4,
+  "unsupported_cases": 4,
+  "invalid_cases": 1,
+  "cases": [
+    {
+      "name": "root_single_cycle",
+      "columns": 38,
+      "epsilons": [
+        {
+          "epsilon": 1e-06,
+          "max_absolute": 6.426850157643254e-10,
+          "max_gate_ratio": 0.0012850811998778224
+        },
+        {
+          "epsilon": 3e-07,
+          "max_absolute": 2.143808686128068e-09,
+          "max_gate_ratio": 0.0032192248155443813
+        }
+      ]
+    },
+    {
+      "name": "root_held10",
+      "columns": 38,
+      "epsilons": [
+        {
+          "epsilon": 1e-06,
+          "max_absolute": 8.389604211347191e-09,
+          "max_gate_ratio": 0.01677435587818878
+        },
+        {
+          "epsilon": 3e-07,
+          "max_absolute": 2.4128253493273244e-08,
+          "max_gate_ratio": 0.04687246126229111
+        }
+      ]
+    },
+    {
+      "name": "root_nonuniform_cell_chain",
+      "columns": 62,
+      "epsilons": [
+        {
+          "epsilon": 1e-06,
+          "max_absolute": 8.094886091731396e-09,
+          "max_gate_ratio": 0.015788048489222502
+        },
+        {
+          "epsilon": 3e-07,
+          "max_absolute": 2.4377509430436495e-08,
+          "max_gate_ratio": 0.04875293505246781
+        }
+      ]
+    }
+  ],
+  "phase5": "NOT_ACCEPTED",
+  "new_plant": false
+}

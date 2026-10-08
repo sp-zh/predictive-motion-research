@@ -1,0 +1,539 @@
+{
+  "status": "PASS_BOUNDED_AUGMENTED_CYCLE_CELL_SENSITIVITIES_ONLY",
+  "phase5": "NOT_ACCEPTED",
+  "phase6": "NOT_STARTED",
+  "freeze_sha256": "51f3111381ac6a5e338452e533340c04ef810a0521082579bfb43c3bde489ecc",
+  "binary_sha256": "a29ccdb1b6bdc82ca16e8743d892f7801d15fd778c421d319e49052e6d571d54",
+  "records": [
+    {
+      "name": "all_free_cycle1",
+      "value_success": true,
+      "sensitivity_success": true,
+      "certified_substeps": 2,
+      "certified_cycles": 1,
+      "certified_cells": 1,
+      "max_structural": 2.220446049250313e-16,
+      "max_defect": 0.0,
+      "epsilons": [
+        {
+          "epsilon": 1e-06,
+          "max_absolute": 6.426850157643254e-10,
+          "max_gate_ratio": 0.0012850811998778224
+        },
+        {
+          "epsilon": 3e-07,
+          "max_absolute": 2.143808686128068e-09,
+          "max_gate_ratio": 0.0032192248155443813
+        }
+      ],
+      "pass_check": true
+    },
+    {
+      "name": "held10",
+      "value_success": true,
+      "sensitivity_success": true,
+      "certified_substeps": 20,
+      "certified_cycles": 10,
+      "certified_cells": 1,
+      "max_structural": 4.440892098500626e-16,
+      "max_defect": 0.0,
+      "epsilons": [
+        {
+          "epsilon": 1e-06,
+          "max_absolute": 8.274907786764985e-09,
+          "max_gate_ratio": 0.010859734232283974
+        },
+        {
+          "epsilon": 3e-07,
+          "max_absolute": 2.6914537293309948e-08,
+          "max_gate_ratio": 0.029852458949174616
+        }
+      ],
+      "pass_check": true
+    },
+    {
+      "name": "split10",
+      "value_success": true,
+      "sensitivity_success": true,
+      "certified_substeps": 20,
+      "certified_cycles": 10,
+      "certified_cells": 4,
+      "max_structural": 4.440892098500626e-16,
+      "max_defect": 0.0,
+      "epsilons": [
+        {
+          "epsilon": 1e-06,
+          "max_absolute": 8.27490781452056e-09,
+          "max_gate_ratio": 0.010859734232287362
+        },
+        {
+          "epsilon": 3e-07,
+          "max_absolute": 2.6914537265554372e-08,
+          "max_gate_ratio": 0.02985245894831928
+        }
+      ],
+      "pass_check": true
+    },
+    {
+      "name": "nonuniform_mixed",
+      "value_success": true,
+      "sensitivity_success": true,
+      "certified_substeps": 20,
+      "certified_cycles": 10,
+      "certified_cells": 4,
+      "max_structural": 6.661338147750939e-16,
+      "max_defect": 0.0,
+      "epsilons": [
+        {
+          "epsilon": 1e-06,
+          "max_absolute": 8.094886091731396e-09,
+          "max_gate_ratio": 0.015788048489222502
+        },
+        {
+          "epsilon": 3e-07,
+          "max_absolute": 2.1003164775088012e-08,
+          "max_gate_ratio": 0.03845917175556494
+        }
+      ],
+      "pass_check": true
+    },
+    {
+      "name": "strong_joint_force_cycle1",
+      "value_success": true,
+      "sensitivity_success": true,
+      "certified_substeps": 2,
+      "certified_cycles": 1,
+      "certified_cells": 1,
+      "max_structural": 2.220446049250313e-16,
+      "max_defect": 0.0,
+      "epsilons": [
+        {
+          "epsilon": 1e-06,
+          "max_absolute": 4.2725278102009167e-10,
+          "max_gate_ratio": 0.0008545055011800475
+        },
+        {
+          "epsilon": 3e-07,
+          "max_absolute": 1.7678895179039393e-09,
+          "max_gate_ratio": 0.003535779025639256
+        }
+      ],
+      "pass_check": true
+    },
+    {
+      "name": "seen91013_actual_history_cycle1",
+      "value_success": true,
+      "sensitivity_success": true,
+      "certified_substeps": 2,
+      "certified_cycles": 1,
+      "certified_cells": 1,
+      "max_structural": 2.220446049250313e-16,
+      "max_defect": 0.0,
+      "epsilons": [
+        {
+          "epsilon": 1e-06,
+          "max_absolute": 4.6641072196242734e-09,
+          "max_gate_ratio": 0.009317071487631366
+        },
+        {
+          "epsilon": 3e-07,
+          "max_absolute": 1.1980580839898725e-08,
+          "max_gate_ratio": 0.023436174116869393
+        }
+      ],
+      "pass_check": true
+    },
+    {
+      "name": "initial_s_0.0",
+      "value_success": true,
+      "sensitivity_success": false,
+      "certified_substeps": 0,
+      "certified_cycles": 0,
+      "certified_cells": 0,
+      "max_structural": 0.0,
+      "max_defect": 0.0,
+      "error": "progress s/r domain boundary not certified for central support",
+      "first_uncertified_substep": 0
+    },
+    {
+      "name": "initial_r_0.0",
+      "value_success": true,
+      "sensitivity_success": false,
+      "certified_substeps": 0,
+      "certified_cycles": 0,
+      "certified_cells": 0,
+      "max_structural": 0.0,
+      "max_defect": 0.0,
+      "error": "progress s/r domain boundary not certified for central support",
+      "first_uncertified_substep": 0
+    },
+    {
+      "name": "initial_r_0.2",
+      "value_success": true,
+      "sensitivity_success": false,
+      "certified_substeps": 0,
+      "certified_cycles": 0,
+      "certified_cells": 0,
+      "max_structural": 0.0,
+      "max_defect": 0.0,
+      "error": "progress s/r domain boundary not certified for central support",
+      "first_uncertified_substep": 0
+    },
+    {
+      "name": "terminal_s1_r0",
+      "value_success": true,
+      "sensitivity_success": false,
+      "certified_substeps": 0,
+      "certified_cycles": 0,
+      "certified_cells": 0,
+      "max_structural": 0.0,
+      "max_defect": 0.0,
+      "error": "progress s/r domain boundary not certified for central support",
+      "first_uncertified_substep": 0
+    },
+    {
+      "name": "initial_command_w_boundary",
+      "value_success": true,
+      "sensitivity_success": false,
+      "certified_substeps": 0,
+      "certified_cycles": 0,
+      "certified_cells": 0,
+      "max_structural": 0.0,
+      "max_defect": 0.0,
+      "error": "accepted w domain boundary not certified for central support",
+      "first_uncertified_substep": 0
+    },
+    {
+      "name": "alpha_boundary",
+      "value_success": true,
+      "sensitivity_success": false,
+      "certified_substeps": 0,
+      "certified_cycles": 0,
+      "certified_cells": 0,
+      "max_structural": 0.0,
+      "max_defect": 0.0,
+      "error": "alpha domain boundary not certified for central support",
+      "first_uncertified_substep": 0
+    },
+    {
+      "name": "generated_w_boundary",
+      "value_success": true,
+      "sensitivity_success": false,
+      "certified_substeps": 0,
+      "certified_cycles": 0,
+      "certified_cells": 0,
+      "max_structural": 0.0,
+      "max_defect": 0.0,
+      "error": "accepted w domain boundary not certified for central support",
+      "first_uncertified_substep": 0
+    },
+    {
+      "name": "generated_s_boundary_half_prefix",
+      "value_success": true,
+      "sensitivity_success": false,
+      "certified_substeps": 1,
+      "certified_cycles": 0,
+      "certified_cells": 0,
+      "max_structural": 3.308722450212111e-24,
+      "max_defect": 0.0,
+      "error": "progress s/r domain boundary not certified for central support",
+      "first_uncertified_substep": 1
+    },
+    {
+      "name": "generated_r_boundary_half_prefix",
+      "value_success": true,
+      "sensitivity_success": false,
+      "certified_substeps": 1,
+      "certified_cycles": 0,
+      "certified_cells": 0,
+      "max_structural": 3.308722450212111e-24,
+      "max_defect": 0.0,
+      "error": "progress s/r domain boundary not certified for central support",
+      "first_uncertified_substep": 1
+    },
+    {
+      "name": "later_cell_alpha_boundary",
+      "value_success": true,
+      "sensitivity_success": false,
+      "certified_substeps": 2,
+      "certified_cycles": 1,
+      "certified_cells": 1,
+      "max_structural": 3.3306690738754696e-16,
+      "max_defect": 0.0,
+      "error": "alpha domain boundary not certified for central support",
+      "first_uncertified_substep": 2
+    },
+    {
+      "name": "physical_weak_lower_zero_gradient",
+      "value_success": true,
+      "sensitivity_success": false,
+      "certified_substeps": 0,
+      "certified_cycles": 0,
+      "certified_cells": 0,
+      "max_structural": 0.0,
+      "max_defect": 0.0,
+      "error": "unsupported weak/near friction or nested clamp threshold; value retained, no unique Jacobian",
+      "first_uncertified_substep": 0
+    },
+    {
+      "name": "physical_joint_force_upper_exact",
+      "value_success": true,
+      "sensitivity_success": false,
+      "certified_substeps": 0,
+      "certified_cycles": 0,
+      "certified_cells": 0,
+      "max_structural": 0.0,
+      "max_defect": 0.0,
+      "error": "unsupported weak/near friction or nested clamp threshold; value retained, no unique Jacobian",
+      "first_uncertified_substep": 0
+    },
+    {
+      "name": "forward_second_cycle_w_failure",
+      "value_success": false,
+      "sensitivity_success": false,
+      "certified_substeps": 2,
+      "certified_cycles": 1,
+      "certified_cells": 0,
+      "max_structural": 1.1102230246251565e-16,
+      "max_defect": 0.0,
+      "error": "declared accepted command velocity domain",
+      "first_uncertified_substep": 2
+    },
+    {
+      "name": "q_dimension",
+      "value_success": false,
+      "sensitivity_success": false,
+      "certified_substeps": 0,
+      "certified_cycles": 0,
+      "certified_cells": 0,
+      "max_structural": 0.0,
+      "max_defect": 0.0,
+      "error": "packed augmented dimensions",
+      "first_uncertified_substep": 0
+    },
+    {
+      "name": "v_inf",
+      "value_success": false,
+      "sensitivity_success": false,
+      "certified_substeps": 0,
+      "certified_cycles": 0,
+      "certified_cells": 0,
+      "max_structural": 0.0,
+      "max_defect": 0.0,
+      "error": "finite packed augmented state",
+      "first_uncertified_substep": 0
+    },
+    {
+      "name": "C_nan",
+      "value_success": false,
+      "sensitivity_success": false,
+      "certified_substeps": 0,
+      "certified_cycles": 0,
+      "certified_cells": 0,
+      "max_structural": 0.0,
+      "max_defect": 0.0,
+      "error": "finite packed augmented state",
+      "first_uncertified_substep": 0
+    },
+    {
+      "name": "w_dimension",
+      "value_success": false,
+      "sensitivity_success": false,
+      "certified_substeps": 0,
+      "certified_cycles": 0,
+      "certified_cells": 0,
+      "max_structural": 0.0,
+      "max_defect": 0.0,
+      "error": "packed augmented dimensions",
+      "first_uncertified_substep": 0
+    },
+    {
+      "name": "alpha_outside",
+      "value_success": false,
+      "sensitivity_success": false,
+      "certified_substeps": 0,
+      "certified_cycles": 0,
+      "certified_cells": 0,
+      "max_structural": 0.0,
+      "max_defect": 0.0,
+      "error": "declared command acceleration domain",
+      "first_uncertified_substep": 0
+    },
+    {
+      "name": "mesh_zero",
+      "value_success": false,
+      "sensitivity_success": false,
+      "certified_substeps": 0,
+      "certified_cycles": 0,
+      "certified_cells": 0,
+      "max_structural": 0.0,
+      "max_defect": 0.0,
+      "error": "positive integer4ms mesh cycles within total cap",
+      "first_uncertified_substep": 0
+    },
+    {
+      "name": "mesh_quoted",
+      "value_success": false,
+      "sensitivity_success": false,
+      "certified_substeps": 0,
+      "certified_cycles": 0,
+      "certified_cells": 0,
+      "max_structural": 0.0,
+      "max_defect": 0.0,
+      "error": "cycles must be unquoted canonical integer; no remainder or rounding",
+      "first_uncertified_substep": 0
+    },
+    {
+      "name": "mesh_bool",
+      "value_success": false,
+      "sensitivity_success": false,
+      "certified_substeps": 0,
+      "certified_cycles": 0,
+      "certified_cells": 0,
+      "max_structural": 0.0,
+      "max_defect": 0.0,
+      "error": "cycles must be unquoted canonical integer; no remainder or rounding",
+      "first_uncertified_substep": 0
+    },
+    {
+      "name": "progress_outside",
+      "value_success": false,
+      "sensitivity_success": false,
+      "certified_substeps": 0,
+      "certified_cycles": 0,
+      "certified_cells": 0,
+      "max_structural": 0.0,
+      "max_defect": 0.0,
+      "error": "progress s/r domain boundary not certified for central support",
+      "first_uncertified_substep": 0
+    },
+    {
+      "name": "finite_preclamp_overflow",
+      "value_success": false,
+      "sensitivity_success": false,
+      "certified_substeps": 0,
+      "certified_cycles": 0,
+      "certified_cells": 0,
+      "max_structural": 0.0,
+      "max_defect": 0.0,
+      "error": "nonfinite pre-clamp affine actuator",
+      "first_uncertified_substep": 0
+    }
+  ],
+  "synthetic_output_gates": {
+    "positive_controls": 1,
+    "negative_controls": [
+      {
+        "name": "empty",
+        "rejected": true
+      },
+      {
+        "name": "drop",
+        "rejected": true
+      },
+      {
+        "name": "reorder",
+        "rejected": true
+      },
+      {
+        "name": "duplicate",
+        "rejected": true
+      },
+      {
+        "name": "model_string",
+        "rejected": true
+      },
+      {
+        "name": "success_string",
+        "rejected": true
+      },
+      {
+        "name": "success_int",
+        "rejected": true
+      },
+      {
+        "name": "index_bool",
+        "rejected": true
+      },
+      {
+        "name": "drop_half",
+        "rejected": true
+      },
+      {
+        "name": "drop_cycle",
+        "rejected": true
+      },
+      {
+        "name": "drop_cell",
+        "rejected": true
+      },
+      {
+        "name": "A_row",
+        "rejected": true
+      },
+      {
+        "name": "A_col",
+        "rejected": true
+      },
+      {
+        "name": "B_col",
+        "rejected": true
+      },
+      {
+        "name": "defect_short",
+        "rejected": true
+      },
+      {
+        "name": "nan",
+        "rejected": true
+      },
+      {
+        "name": "string",
+        "rejected": true
+      },
+      {
+        "name": "bool",
+        "rejected": true
+      },
+      {
+        "name": "huge",
+        "rejected": true
+      },
+      {
+        "name": "state_dimension",
+        "rejected": true
+      },
+      {
+        "name": "cell_A_dimension",
+        "rejected": true
+      },
+      {
+        "name": "cell_B_dimension",
+        "rejected": true
+      },
+      {
+        "name": "wrong_policy",
+        "rejected": true
+      },
+      {
+        "name": "uncertified_error_missing",
+        "rejected": true
+      },
+      {
+        "name": "fabricated_uncertified_cell",
+        "rejected": true
+      }
+    ],
+    "scope": "Synthetic altered-output controls; not native execution failures."
+  },
+  "fd_augmented_cases": 918,
+  "fd_original_physical_diagnostics": 10098,
+  "independent_nominal_physical_derivatives": 66,
+  "epsilons": [
+    1e-06,
+    3e-07
+  ],
+  "absolute_per_entry": 5e-07,
+  "relative_per_entry": 5e-06,
+  "scope": "Selected central-domain cycle/cell sensitivities; exact frozen forward values, rational command/progress, independent J1/J2, all half/cycle/cell endpoints all38 directions both epsilons, strict branch and SPD checks at every perturbation. Initial/terminal progress bounds unsupported. No main-startup readiness, global planner/controller/plant/task/timing or Phase5 acceptance."
+}
