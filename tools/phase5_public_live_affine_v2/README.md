@@ -25,3 +25,5 @@ The accepted source plan is under `docs/design/public_live_affine_v2/`.
 Old APIs, sources, profiles, checkers, input fixtures, original failures and the
 d3d4/ec1 freezes are unchanged. Main/solver/geometry/terminal/stopping/deadline
 integration is outside this foundational stage.
+
+The separate [Model boundary source stage2A](model_boundary/SOURCE_REVIEW.md) adds a future reviewed-release gate, actual full metadata checks and genuine move-only raw-result ownership. It remains uncompiled/unexecuted; foundation-only compilation has no Model dependency. No runtime permission follows from these source files. Normalization and full affine/cost/capture remain pending.

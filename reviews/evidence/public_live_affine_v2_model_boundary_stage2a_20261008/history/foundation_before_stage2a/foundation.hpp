@@ -76,9 +76,7 @@ class ResourcePlan final {
 ResourcePlan planResources(const CycleMesh&, const FactorShape&,
                            CaptureMode, NumericEncoding);
 
-namespace detail {
-struct BatchState; struct CaseState; struct ForecastFactory; struct ForecastReleaseState;
-}
+namespace detail { struct BatchState; struct CaseState; struct ForecastFactory; }
 class OwnedReservation final {
  public:
   OwnedReservation(const OwnedReservation&) = delete;
@@ -176,8 +174,7 @@ class ReviewedForecastPermission final {
   ReviewedForecastPermission(ReviewedForecastPermission&&) noexcept = default;
  private:
   ReviewedForecastPermission() = default;
-  std::shared_ptr<detail::ForecastReleaseState> release_;
-  friend struct detail::ForecastFactory; // Defined only in the separately gated target.
+  friend struct detail::ForecastFactory; // Not defined/instantiable in stage 1.
 };
 // No permission factory, Model handle, constructor, metadata or rollout in stage 1.
 
@@ -213,8 +210,6 @@ class LiveActualContext final {
   const JointVector& previousAlpha() const noexcept { return previous_alpha_; }
   double previousB() const noexcept { return previous_b_; }
   BoundaryId boundary() const noexcept { return boundary_; }
-  const std::string& observationId() const noexcept { return observation_id_; }
-  const std::string& transactionId() const noexcept { return transaction_id_; }
   const StaticDomainRanges& ranges() const noexcept { return ranges_; }
  private:
   LiveActualContext() = default;

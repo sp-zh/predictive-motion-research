@@ -1,0 +1,65 @@
+{
+  "decision": "PASS_SOURCE_MODEL_BOUNDARY_FOR_NEXT_SOURCE_NORMALIZATION",
+  "recorded_utc": "2026-10-08T21:48:15.612470+00:00",
+  "prerequisite_commit": "45371dde26eb6ecfa036163a490976b00429e0e3",
+  "packet_READY_sha256": "9baf9377361e5dbae411f1f9640f5ad8ea98a31af4440a7c838d8e517025c8f7",
+  "all_17_payloads_verified": true,
+  "canonical_19_preimport_guards_verified": true,
+  "existing_source_extension": "Only foundation.hpp extended: opaque shared permission state and read-only validated IDs; original full3080b34 header retained in history. Foundation cpp/CMake and old model/checker sources unchanged.",
+  "criteria": "ROOT_REVIEW_CRITERIA.json",
+  "review_scope": "Independent static C++/CMake/schema/ownership and source hash review only. No configure/build/kernel/Model/plant/solver run.",
+  "reviewed_fixes": [
+    {
+      "id": "MB001",
+      "issue": "Literal false and numeric schema fields accepted strings; YAML coercion too broad",
+      "resolution": "SHA-verified parsed bytes require strict JSON grammar and decoded-key uniqueness/depth64; strings quoted, numeric and unsigned count fields exact lexical/tag checks, all seven scope bits literal false; prior source/schema/manifest retained."
+    },
+    {
+      "id": "MB005",
+      "issue": "Outcome reported a live model after move-only handle extraction",
+      "resolution": "hasLiveModel checks actual storage/model/profile/observed metadata; outcome.hasModel returns false after extraction or move; model accessor refuses."
+    },
+    {
+      "id": "MB007",
+      "issue": "3x SDK transient allowance widened returned-raw shape admission",
+      "resolution": "Actual complete raw slot inventory checks both declared raw base envelope and lifetime reservation; full original result remains on structural refusal."
+    }
+  ],
+  "source_findings": [
+    "External trusted review digest is a prerequisite, not an authority created by source. Source-only decisions cannot satisfy required future runtime decision. Actual current ELF, loaded DSO canonical/mapped inode identities and file byte hashes bind the reviewed release.",
+    "Model constructor follows fresh identity checks, quota reservation, expected complete metadata parsing and exclusive retained FIRST claim. At-most-once entry latches include failures. These are wrapper top-level attempt counters, not a count of internal SDK/base-model calls within those operations.",
+    "Expected complete ModelMetadata is finite and exact; actual getter fields and all numeric arrays/rosters compared without gate relaxation; observed metadata retained on mismatch. Units are checked declared conventions, not independently reported by SDK.",
+    "Actual completed physical/accepted/progress history and immutable context IDs exactly match frozen invocation and constants witness; native input/cell cycle/control histories retained. Algebra/archived carriers cannot create genuine ownership.",
+    "Private move-only handles/forecasts retain shared input/profile/raw ticket lifetimes. Destruction order frees Model and complete raw arrays before associated tickets. SDK3raw+1m admission is logically partitioned, not allocator/RSS telemetry.",
+    "Complete native nominal/derivative failures, prefixes, flags/errors/friction/clip/raw fields stay unmodified. Transport absence and structural refusal separate from genuine returned failure. No full normalized maps or cost/problem is produced."
+  ],
+  "remaining_obligations": [
+    "Review actual compiler/build/entrypoint/header/XML include/source/SDK closure completeness and stable immutable input files in a new freeze; file hashes alone are not compiler attestation or race locking.",
+    "Future runtime needs a separately approved protocol and trusted review SHA with full first-process stdout/stderr/exit/arguments/READY evidence; exclusive claim is not a substitute. No runtime release exists now.",
+    "Normalization must validate complete success/certificate/index/timing/input/origin/value/defect roster and genuine provenance, charge all map/work copies and preserve original result on every refusal.",
+    "Lossless capture/readers must enforce aggregate actual metadata/output quotas and complete provenance/payload retention. Individual bounded input parsing is not all-process memory certification.",
+    "Source input contexts do not prove real observer clocks/contact facts or current scheduler freshness; supervisor command application, full algebra/cost, controller/geometry/stopping/timing and Phase6 remain separate."
+  ],
+  "executions": {
+    "configure": 0,
+    "compile": 0,
+    "empty_kernel": 0,
+    "numeric_checks": 0,
+    "Model_constructor": 0,
+    "Model_metadata": 0,
+    "Model_rollout": 0,
+    "plant": 0,
+    "solver": 0,
+    "main": 0,
+    "scorer": 0
+  },
+  "storage": {
+    "Mac_source_packet": "/private/tmp/public_live_affine_v2_model_boundary_stage2a",
+    "canonical_source": "tools/phase5_public_live_affine_v2/model_boundary",
+    "history_in_git": "reviews/evidence/public_live_affine_v2_model_boundary_stage2a_20261008/history",
+    "Dell_copy_verified": false,
+    "Git_backup": "Record written before checkpoint commit; post-push verification recorded separately"
+  },
+  "phase5": "NOT_ACCEPTED",
+  "phase6": "NOT_STARTED"
+}
