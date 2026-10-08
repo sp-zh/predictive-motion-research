@@ -365,3 +365,8 @@ Neither plot establishes a connecting segment, perturbation ball, execution,
 safety or controller readiness. The original extension FD gate remains failed.
 No new plant/task video is available; Phase5 remains unaccepted.
 [Independent finite-trial review](../reviews/evidence/public_finite_trial_root_review_20261008.md).
+
+The next adapter's [source integration contract](../reviews/evidence/public_affine_horizon_integration_contract_20261008.md)
+connects these existing sampled diagnostics to a planned general-affine horizon
+algebra layer. It is a reviewed design, with no new rendered trajectory or
+numerical result; the actual diagnostic figures above retain their stated scope.

@@ -149,3 +149,10 @@ result and substantial residual remain recorded. No residual acceptance
 threshold or finite trust radius is inferred. The earlier extension FD failure
 remains failed. Main integration, candidate admission, task/timing and Phase5
 acceptance remain open. See [independent review](../reviews/evidence/public_finite_trial_root_review_20261008.md).
+
+Read-only source review confirms the installed preview is still a physical
+double-integrator and has no external general-affine A/B/d interface. A separate
+actual-coordinate30state/8input horizon adapter is specified, with explicit
+fullcell native cumulative fields, lifted elimination, full objective constants
+and failed-prefix refusal. Source review is complete; implementation/numerical
+verification remain pending. See the [integration contract](../reviews/evidence/public_affine_horizon_integration_contract_20261008.md).

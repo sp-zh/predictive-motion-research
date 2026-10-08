@@ -1,0 +1,37 @@
+{
+  "scope": "Read-only source integration contract; no build/model/forecast/plant calls",
+  "prerequisite_private_checkpoint": "d756b8ee662b190010c73637ec05db22b42649e1",
+  "phase5": "NOT_ACCEPTED",
+  "sources": {
+    "src/predictive_motion_control/include/predictive_motion_control/predictive.hpp": {
+      "sha256": "c5ff72290709ad694c61686bd495abbfe4223b3bb532f434a5d25af55c784652",
+      "bytes": 8010
+    },
+    "src/predictive_motion_control/src/predictive.cpp": {
+      "sha256": "4ad70dcf75500e956141557a6b17eaa2bdb9a7f670abb7f380da5c699efb1df5",
+      "bytes": 38633
+    },
+    "tools/phase5_public_coupled_augmented_extension_cpp/public_coupled_augmented_extension.hpp": {
+      "sha256": "d97d4f5fbbd837317bdf488291f3aca0c822c512a7e3f6c079e196d3641b104f",
+      "bytes": 2171
+    },
+    "tools/phase5_public_coupled_augmented_extension_cpp/public_coupled_augmented_extension.cpp": {
+      "sha256": "74b3d8eccdd4a1373d39bc46cf122564a5101259c2212cb45d98f81678f882fa",
+      "bytes": 7073
+    },
+    "tools/phase5_public_coupled_augmented_extension_cpp/public_coupled_augmented_extension_probe.cpp": {
+      "sha256": "bcdc5ed68e0774c662fd3a38b392f02ac9f1a68eb96aa140bd14a0f80e886d38",
+      "bytes": 10054
+    },
+    "scripts/phase5/augmented_soft_servo_reference.py": {
+      "sha256": "c63f524d2002323ca635574addcf8ef04a498154ea171ac5a58deda088853710",
+      "bytes": 19759
+    },
+    "scripts/phase5/augmented_servo_reference.py": {
+      "sha256": "f0253f4e03d9a5fc0c350fa4ff3fbf6b4a235d9bb7b95556d07bfc13949d1685",
+      "bytes": 16089
+    }
+  },
+  "independent_reviewer": "/root/predictive_math_audit",
+  "key_finding": "Native extension cell_maps .A/B/defect/origin are last-cycle-local; use .cell_A/cell_B/cell_defect/cell_origin. Serialized JSON cellmaps already normalize cumulative fields."
+}
