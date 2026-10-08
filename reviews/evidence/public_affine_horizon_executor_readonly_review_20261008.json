@@ -1,0 +1,77 @@
+{
+  "decision": "READ_ONLY_SOURCE_CONTRACT_CONSISTENT_WITH_CONCRETE_CLARIFICATIONS",
+  "prerequisite_backup": "d756b8ee662b190010c73637ec05db22b42649e1",
+  "no_builds": true,
+  "no_model_or_binary_calls": true,
+  "no_numerical_forecasts": true,
+  "existing_sources_unchanged": true,
+  "implementation": "PENDING_ROOT_DISPATCH",
+  "phase5": "NOT_ACCEPTED",
+  "earlier_FD_gate": "FAIL_RETAINED_IMMUTABLE",
+  "source_files": {
+    "src/predictive_motion_control/include/predictive_motion_control/predictive.hpp": {
+      "sha256": "c5ff72290709ad694c61686bd495abbfe4223b3bb532f434a5d25af55c784652",
+      "bytes": 8010
+    },
+    "src/predictive_motion_control/src/predictive.cpp": {
+      "sha256": "4ad70dcf75500e956141557a6b17eaa2bdb9a7f670abb7f380da5c699efb1df5",
+      "bytes": 38633
+    },
+    "src/predictive_motion_control/include/predictive_motion_control/reactive_qp.hpp": {
+      "sha256": "75efe6117b7d833497a05d766eb9d7d0a4299a12af68e67dbb578b0f1095c784",
+      "bytes": 5277
+    },
+    "scripts/phase5/augmented_servo_reference.py": {
+      "sha256": "f0253f4e03d9a5fc0c350fa4ff3fbf6b4a235d9bb7b95556d07bfc13949d1685",
+      "bytes": 16089
+    },
+    "scripts/phase5/augmented_soft_servo_reference.py": {
+      "sha256": "c63f524d2002323ca635574addcf8ef04a498154ea171ac5a58deda088853710",
+      "bytes": 19759
+    },
+    "tools/phase5_public_coupled_augmented_extension_cpp/public_coupled_augmented_extension.hpp": {
+      "sha256": "d97d4f5fbbd837317bdf488291f3aca0c822c512a7e3f6c079e196d3641b104f",
+      "bytes": 2171
+    },
+    "tools/phase5_public_coupled_augmented_extension_cpp/public_coupled_augmented_extension.cpp": {
+      "sha256": "74b3d8eccdd4a1373d39bc46cf122564a5101259c2212cb45d98f81678f882fa",
+      "bytes": 7073
+    },
+    "tools/phase5_public_coupled_augmented_extension_cpp/public_coupled_augmented_extension_probe.cpp": {
+      "sha256": "bcdc5ed68e0774c662fd3a38b392f02ac9f1a68eb96aa140bd14a0f80e886d38",
+      "bytes": 10054
+    },
+    "reviews/evidence/public_affine_horizon_integration_contract_20261008.md": {
+      "sha256": "7893e43c65780eb574bdb0b9d39d7acdb3d9cc30905756591e1f345e754900b2",
+      "bytes": 7500
+    },
+    "reviews/evidence/public_affine_horizon_source_contract_20261008.json": {
+      "sha256": "5541221084d755ef88ef46430edfdac8d4bb9c3693f7dd5a7cee54d951cedd00",
+      "bytes": 2447
+    }
+  },
+  "findings": [
+    "Production assemblePreview hardcodes nx=2n+2,nu=n+1,physical double-integrator and measured-v first-command bridge; no external A/B/d override. n14 gives wrong15controls despite30state length.",
+    "Native Result.cell_maps retains final-cycle local A/B/defect/origin; cumulative fields are cell_A/cell_B/cell_defect/cell_origin. Serialized mapNode(m,true) normalizes cumulative fields to JSON A/B/defect/origin.",
+    "2ms half2 local map already composes first+second halves from cycle origin; global samples use cell-prefix fields once from own literal cell origin, not consecutive-half chaining.",
+    "General recurrence/lifted embedding/rectangular-factor full objective in reviewed contract is consistent. Existing augmented reference scripts supply algebra examples, not a production public-model adapter."
+  ],
+  "clarifications": [
+    "Explicit P_sample=A_prefix*P_cellOrigin for independent initial sensitivities at every sampled half.",
+    "Keep saved nominal origins/defects/certificate provenance fixed when algebra fixture x0 is perturbed; no physical certificate for shifted actual initial or finite radius.",
+    "Old PreviewAssembly::Term.factor=m is unweighted for w||m*z+c||^2. Any fixture conversion to .5||F*y+f0||^2 needs sqrt(2w) on BOTH factor and offset; keep linear reward and constants separately. No production cost preference imported.",
+    "Command-alpha jump history uses acceptedalpha/b, never previous_model_acceleration; the actual4ms boundary lattice remains distinct from held-cell duration."
+  ],
+  "retained_read_failures": [
+    {
+      "action": "rg top-level include source paths",
+      "error": "include directory absent; actual package include paths located under src/predictive_motion_control/include",
+      "numerical_effect": false
+    },
+    {
+      "action": "cat guessed public_affine_horizon_integration_provenance_20261008.json",
+      "error": "missing path; root supplied actual public_affine_horizon_source_contract_20261008.json, then read successfully",
+      "numerical_effect": false
+    }
+  ]
+}
