@@ -33,5 +33,33 @@
   "sole_project_writer": "01a114d9-3a3a-7071-b94f-624581000992",
   "writer_notified": true,
   "run_permissions": "Unchanged; no plant/main/scorer approval added",
-  "phase5": "NOT_ACCEPTED"
+  "phase5": "NOT_ACCEPTED",
+  "retained_transfer_manifests": {
+    "transfer/manifests/push-connectivity-check-20261008-1756.json": {
+      "direction": "push",
+      "remote": "/mnt/d/CodexTransfer/inbox/connectivity-check-20261008-1756",
+      "verified": {
+        "probe.bin": {
+          "bytes": 1048576,
+          "sha256": "7f72ec652af2c1b7ef15aef220a64f87e44584793cd9d79c017fcef1b038abc2"
+        }
+      }
+    },
+    "transfer/manifests/pull-connectivity-check-20261008-1756.json": {
+      "direction": "pull",
+      "remote": "/mnt/d/CodexTransfer/outbox/connectivity-check-20261008-1756",
+      "verified": {
+        "probe.bin": {
+          "bytes": 1048576,
+          "sha256": "7f72ec652af2c1b7ef15aef220a64f87e44584793cd9d79c017fcef1b038abc2"
+        }
+      }
+    }
+  },
+  "root_independent_SSH_verification": {
+    "status": "PASS",
+    "verified_utc": "2026-10-08T18:00:34.559038+00:00",
+    "scope": "Read-only authenticated SSH with fixed hostkey; Dell project pause metadata was not yet synchronized at this check; source writer handles synchronization",
+    "project_development_calls": 0
+  }
 }
