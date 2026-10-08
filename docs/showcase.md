@@ -241,6 +241,15 @@ a long hold, not a moving-stop challenge or complete inspection task. All1996
 provenance includes actual raw/model/renderer/asset hashes. No Phase5 or250Hz
 acceptance follows. [Independent executed review](../reviews/evidence/public_coupled_validation_91013_root_review_20261007.md).
 
+![Executed isolated C++ public transition parity](../figures/phase5/phase5_public_coupled_cpp_parity.png)
+
+Forty complete selected TRAIN91011/development91013 windows match the frozen
+Python model; four EOF windows remain incomplete. Root separately checks10
+state and14 QP cases. This is seen-input engineering parity, without a new
+plant run, derivative, main-controller or timing certificate. A generic tiny
+friction-bound false rejection is retained; the fixed FR3 bounds avoid it.
+[Independent C++ review](../reviews/evidence/public_coupled_cpp_v1_root_review_20261007.md).
+
 ## Downloadable 3D models
 
 | Asset | Format / units | Purpose |

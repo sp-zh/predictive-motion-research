@@ -22,6 +22,9 @@ The public soft-friction local surrogate passes the same error limits on a prosp
 
 Evidence and scope:
 
+The separate public C++ physical transition now passes40 complete previously seen recorded windows,4 synthetic transition cases,8 state rejections,14 QP cases and20 constant rejections;4 EOF requests remain incomplete. Root independently calls the frozen binary on10 state/14 QP cases. The model contains the tool and armature exactly once, owns PinoData, and never receives plant state. No augmentation/Jacobian/main-MPC integration occurs. A tiny-positive-eta labeling false rejection is shared with old Python and reproduced independently; fixed FR3 eta>=.248 is unaffected, while generic support remains open as NUM-007.
+[Independent isolated C++ review](../reviews/evidence/public_coupled_cpp_v1_root_review_20261007.md).
+
 The one approved seed91013 simulation completes with the frozen public-v2 predictor and strict scorer. All9796 complete windows have zero failures; active2/4/40/800ms maxima are below original limits and near roundoff. Root independently verifies all5002 state records/2002attempts/262496captured QP rows and the exact window roster, plus21 predeclared forecasts and six enumerated force QPs. Source/model/parameters remain unchanged, with no fitting or rerun. There are1996full-cycle4ms misses, and the final new stop starts after a long hold. This is PASS_CONDITIONAL_RECORDED_INPUT_PREDICTION for known curated development input; main-controller integration, full task, moving-stop, uniform-domain,250Hz and Phase5 acceptance remain pending.
 [Independent actual-run review](../reviews/evidence/public_coupled_validation_91013_root_review_20261007.md).
 

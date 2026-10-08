@@ -1,0 +1,15 @@
+{
+  "status": "DEVELOPMENT_DIAGNOSTIC_ONLY",
+  "phase5": "NOT_ACCEPTED",
+  "report": "/home/codextransfer/predictive_motion/results/phase5/development/public-coupled-cpp-v1/parity-attempt1/report.json",
+  "report_sha256": "e83fbe57c26c9cf362d7d35118f4620120bf8284f323806543c6d880414d6238",
+  "source": "/home/codextransfer/predictive_motion/scripts/phase5/plot_public_coupled_cpp.py",
+  "source_sha256": "84ea8f4a78157495dbcd95d653705053b50bfbf6714e6204befaded3d422a0a2",
+  "figure_sha256": "40db659261fbd2a2eaa0dd26dbd51c00fa6e9a497ae7a3fd0ce21bbcbb65c405",
+  "units": "q rad; v rad/s; window ms",
+  "zero_display_floor": 1e-18,
+  "selection": "Fixed predeclared tick windows, no selection by performance; four incomplete EOF windows retained in report.",
+  "forecast_substeps": 3437,
+  "frozen_source_sha256": "bb5fe7c0e8e5d68c1dc9c41b8946e99694eeb7d3e260f44ee283d1b413da98aa",
+  "data_acceptance": "Selected fixed recorded conditional windows only; does not establish task or controller performance."
+}

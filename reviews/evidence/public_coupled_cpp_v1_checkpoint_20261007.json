@@ -1,0 +1,59 @@
+{
+  "date": "2026-10-07",
+  "timezone": "America/Toronto",
+  "decision": "PASS_FIXED_FR3_NATIVE_TRANSITION",
+  "phase5": "NOT_ACCEPTED",
+  "producer_archive": {
+    "sha256": "6d481308a2044cca87bbc98550e8d5bc90a71980c942d747fbdc2a5391f5097a",
+    "bytes": 36449969,
+    "regular_members": 2712,
+    "payloads": 2710,
+    "Mac": "/Users/uot/Documents/ChatGPT/ros/results/phase5-executor-checkpoints-01a114d9/public-coupled-cpp-v1/scope-correction/public-coupled-cpp-v1.tar.gz",
+    "Dell": "/mnt/d/CodexTransfer/projects/predictive_motion/checkpoints/public-coupled-cpp-v1-scope-correction-20261007/public-coupled-cpp-v1.tar.gz",
+    "all_payloads_root_verified_on_both": true,
+    "source_manifest_sha256": "c21cdbfa3ede92d14e21e34af2dce2e295dfca2a3b524d908df219d8c27a1706",
+    "prior_publication_retained": true
+  },
+  "root_archive": {
+    "sha256": "3933a5dc846d370ab57ea24dc0bf4b2617f1dcfd9dc0ac3cd2cd32c4662bdf0f",
+    "bytes": 102620,
+    "regular_members": 10,
+    "payloads": 9,
+    "Mac": "/Users/uot/Documents/ChatGPT/ros/transfer/incoming/root-public-coupled-cpp-v1-20261007/evidence.tar.gz",
+    "Dell": "/mnt/d/CodexTransfer/projects/predictive_motion/checkpoints/root-public-coupled-cpp-v1-20261007/evidence.tar.gz",
+    "all_payloads_verified_on_both": true
+  },
+  "dependency_closure": {
+    "verified_utc": "2026-10-08T00:24:35.447144+00:00",
+    "frozen_manifest_sha256": "bb5fe7c0e8e5d68c1dc9c41b8946e99694eeb7d3e260f44ee283d1b413da98aa",
+    "all2548_live_and_immutable_Dell_inputs_root_read_verified": true,
+    "input_bytes": 137413507,
+    "archive_sha256": "6d481308a2044cca87bbc98550e8d5bc90a71980c942d747fbdc2a5391f5097a",
+    "regular_members": 2712,
+    "all2710_payloads_root_verified_on_Dell": true,
+    "scope": "Fixed FR3 C++ transition/parity and preservation only; generic tiny-positive-eta false rejection remains; no main-controller or Phase5 acceptance"
+  },
+  "all2548_embedded_immutable_dependency_blobs_root_read_verified_on_Mac": true,
+  "frozen_manifest_sha256": "bb5fe7c0e8e5d68c1dc9c41b8946e99694eeb7d3e260f44ee283d1b413da98aa",
+  "producer_cases": {
+    "state": 52,
+    "complete_recorded_windows": 40,
+    "synthetic_transition_positive": 4,
+    "state_rejections": 8,
+    "QP": 14,
+    "constant_rejections": 20,
+    "incomplete_EOF_retained": 4,
+    "forecast_substeps": 3437
+  },
+  "root_cases": {
+    "state": 10,
+    "QP": 14,
+    "tiny_positive_eta_false_rejection_reproduced": true
+  },
+  "model_scope": "Fixed FR3 physical transition only; more restrictive constructor contract than Python; no augmentation/Jac/main-controller/newplant/domain/timing/task/Phase5 acceptance",
+  "open_issue": "NUM-007: tiny-positive eta overlapping labels; actual FR3 eta>=.248 unaffected",
+  "large_evidence_in_Git": false,
+  "visual_root_inspected": true,
+  "importer_count_schema_failure": "KeyError members before source/payload import; adapted to regular_members without modifying READY/archive/source",
+  "open_verifier_limitation": "SCI-003: source-level zip missing exact roster/type checks; actual52/14/20 results independently confirmed complete"
+}

@@ -1,0 +1,1102 @@
+{
+  "status": "PASS_FIXED_RECORDED_CPP_PROTOTYPE_ONLY",
+  "phase5": "NOT_ACCEPTED",
+  "phase6": "NOT_STARTED",
+  "source_freeze_sha256": "bb5fe7c0e8e5d68c1dc9c41b8946e99694eeb7d3e260f44ee283d1b413da98aa",
+  "forecast_substeps": 3437,
+  "observed_branches": [
+    -1,
+    0,
+    1
+  ],
+  "incomplete_retained": [
+    {
+      "name": "train91011_tick2500_steps400",
+      "available": 380,
+      "requested": 400
+    },
+    {
+      "name": "seen91013_tick2400_steps400",
+      "available": 202,
+      "requested": 400
+    },
+    {
+      "name": "seen91013_tick2500_steps20",
+      "available": 2,
+      "requested": 20
+    },
+    {
+      "name": "seen91013_tick2500_steps400",
+      "available": 2,
+      "requested": 400
+    }
+  ],
+  "metadata": {
+    "units": "mass kg; armature kg*m^2; q rad; v rad/s; target rad; h seconds; own Pinocchio model contains tool mass",
+    "pinocchio_version": "4.1.0",
+    "nq": 7,
+    "nv": 7,
+    "joint_names": [
+      "fr3_joint1",
+      "fr3_joint2",
+      "fr3_joint3",
+      "fr3_joint4",
+      "fr3_joint5",
+      "fr3_joint6",
+      "fr3_joint7"
+    ],
+    "frame_names": [
+      "universe",
+      "base",
+      "fr3_link0_fixed",
+      "fr3_link0",
+      "fr3_joint1",
+      "fr3_link1",
+      "fr3_joint2",
+      "fr3_link2",
+      "fr3_joint3",
+      "fr3_link3",
+      "fr3_joint4",
+      "fr3_link4",
+      "fr3_joint5",
+      "fr3_link5",
+      "fr3_joint6",
+      "fr3_link6",
+      "fr3_joint7",
+      "fr3_link7",
+      "attachment_site",
+      "inspection_tool_fixed",
+      "inspection_tool",
+      "inspection_tcp"
+    ],
+    "idx_q": [
+      0,
+      1,
+      2,
+      3,
+      4,
+      5,
+      6
+    ],
+    "idx_v": [
+      0,
+      1,
+      2,
+      3,
+      4,
+      5,
+      6
+    ],
+    "joint_nq": [
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1
+    ],
+    "joint_nv": [
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1
+    ],
+    "masses": [
+      1,
+      2.92747,
+      2.93554,
+      2.2449,
+      2.6156,
+      2.32712,
+      1.81704,
+      1.077143
+    ],
+    "armature": [
+      0.195,
+      0.195,
+      0.195,
+      0.195,
+      0.074,
+      0.074,
+      0.074
+    ],
+    "gravity": [
+      0,
+      0,
+      -9.81
+    ],
+    "R": [
+      0.3876906608381666,
+      0.0812362043341259,
+      0.4331862156261861,
+      0.2873660249915066,
+      1.0025599181193177,
+      0.8294841910688778,
+      1.4962574210970128
+    ],
+    "B": [
+      105.26315789473685,
+      105.26315789473685,
+      105.26315789473685,
+      105.26315789473685,
+      105.26315789473685,
+      105.26315789473685,
+      105.26315789473685
+    ],
+    "D": [
+      450.21,
+      450.21,
+      350.21,
+      350.21,
+      200.21,
+      200.21,
+      200.21
+    ]
+  },
+  "limitations": [
+    "Fixed FR3 public profile only; stricter constructor rejection scope than Python.",
+    "Selected complete recorded windows, conditional on recorded targets, previously seen data.",
+    "No plant rerun, controller integration, Jacobian, task completion, generalization or online timing claim."
+  ],
+  "records": [
+    {
+      "name": "train91011_tick100_steps1",
+      "expected_success": true,
+      "cpp_success": true,
+      "max_parity_q": 0.0,
+      "max_parity_v": 2.168404344971009e-19,
+      "branch_equal": true,
+      "max_original_kkt": 2.220446049250313e-16,
+      "steps": 1,
+      "pass": true,
+      "max_physical_q": 0.0,
+      "max_physical_v": 1.3704315460216776e-16,
+      "q_gate": 1e-06,
+      "v_gate": 0.0001
+    },
+    {
+      "name": "train91011_tick100_steps2",
+      "expected_success": true,
+      "cpp_success": true,
+      "max_parity_q": 0.0,
+      "max_parity_v": 2.168404344971009e-19,
+      "branch_equal": true,
+      "max_original_kkt": 2.220446049250313e-16,
+      "steps": 2,
+      "pass": true,
+      "max_physical_q": 0.0,
+      "max_physical_v": 1.4669255393728875e-16,
+      "q_gate": 1e-06,
+      "v_gate": 0.0001
+    },
+    {
+      "name": "train91011_tick100_steps20",
+      "expected_success": true,
+      "cpp_success": true,
+      "max_parity_q": 0.0,
+      "max_parity_v": 5.421010862427522e-19,
+      "branch_equal": true,
+      "max_original_kkt": 4.440892098500626e-16,
+      "steps": 20,
+      "pass": true,
+      "max_physical_q": 0.0,
+      "max_physical_v": 6.345293214471415e-16,
+      "q_gate": 0.0001,
+      "v_gate": 0.001
+    },
+    {
+      "name": "train91011_tick100_steps400",
+      "expected_success": true,
+      "cpp_success": true,
+      "max_parity_q": 0.0,
+      "max_parity_v": 8.131516293641283e-19,
+      "branch_equal": true,
+      "max_original_kkt": 4.440892098500626e-16,
+      "steps": 400,
+      "pass": true,
+      "max_physical_q": 4.440892098500626e-16,
+      "max_physical_v": 2.5130518868134166e-15,
+      "q_gate": 0.0001,
+      "v_gate": 0.001
+    },
+    {
+      "name": "train91011_tick500_steps1",
+      "expected_success": true,
+      "cpp_success": true,
+      "max_parity_q": 0.0,
+      "max_parity_v": 8.470329472543003e-22,
+      "branch_equal": true,
+      "max_original_kkt": 6.938893903907228e-18,
+      "steps": 1,
+      "pass": true,
+      "max_physical_q": 0.0,
+      "max_physical_v": 2.3167891648577933e-16,
+      "q_gate": 1e-06,
+      "v_gate": 0.0001
+    },
+    {
+      "name": "train91011_tick500_steps2",
+      "expected_success": true,
+      "cpp_success": true,
+      "max_parity_q": 0.0,
+      "max_parity_v": 1.6940658945086007e-21,
+      "branch_equal": true,
+      "max_original_kkt": 6.938893903907228e-18,
+      "steps": 2,
+      "pass": true,
+      "max_physical_q": 0.0,
+      "max_physical_v": 2.3167891648577933e-16,
+      "q_gate": 1e-06,
+      "v_gate": 0.0001
+    },
+    {
+      "name": "train91011_tick500_steps20",
+      "expected_success": true,
+      "cpp_success": true,
+      "max_parity_q": 0.0,
+      "max_parity_v": 6.776263578034403e-21,
+      "branch_equal": true,
+      "max_original_kkt": 6.938893903907228e-18,
+      "steps": 20,
+      "pass": true,
+      "max_physical_q": 0.0,
+      "max_physical_v": 6.883169723889736e-16,
+      "q_gate": 0.0001,
+      "v_gate": 0.001
+    },
+    {
+      "name": "train91011_tick500_steps400",
+      "expected_success": true,
+      "cpp_success": true,
+      "max_parity_q": 0.0,
+      "max_parity_v": 1.734723475976807e-18,
+      "branch_equal": true,
+      "max_original_kkt": 1.7763568394002505e-15,
+      "steps": 400,
+      "pass": true,
+      "max_physical_q": 2.220446049250313e-16,
+      "max_physical_v": 1.6449515360950073e-15,
+      "q_gate": 0.0001,
+      "v_gate": 0.001
+    },
+    {
+      "name": "train91011_tick1250_steps1",
+      "expected_success": true,
+      "cpp_success": true,
+      "max_parity_q": 0.0,
+      "max_parity_v": 3.2526065174565133e-19,
+      "branch_equal": true,
+      "max_original_kkt": 4.440892098500626e-16,
+      "steps": 1,
+      "pass": true,
+      "max_physical_q": 0.0,
+      "max_physical_v": 6.591949208711867e-17,
+      "q_gate": 1e-06,
+      "v_gate": 0.0001
+    },
+    {
+      "name": "train91011_tick1250_steps2",
+      "expected_success": true,
+      "cpp_success": true,
+      "max_parity_q": 0.0,
+      "max_parity_v": 5.421010862427522e-19,
+      "branch_equal": true,
+      "max_original_kkt": 8.881784197001252e-16,
+      "steps": 2,
+      "pass": true,
+      "max_physical_q": 0.0,
+      "max_physical_v": 3.2916377956659915e-16,
+      "q_gate": 1e-06,
+      "v_gate": 0.0001
+    },
+    {
+      "name": "train91011_tick1250_steps20",
+      "expected_success": true,
+      "cpp_success": true,
+      "max_parity_q": 0.0,
+      "max_parity_v": 1.4094628242311558e-18,
+      "branch_equal": true,
+      "max_original_kkt": 8.881784197001252e-16,
+      "steps": 20,
+      "pass": true,
+      "max_physical_q": 0.0,
+      "max_physical_v": 6.054184931159057e-16,
+      "q_gate": 0.0001,
+      "v_gate": 0.001
+    },
+    {
+      "name": "train91011_tick1250_steps400",
+      "expected_success": true,
+      "cpp_success": true,
+      "max_parity_q": 0.0,
+      "max_parity_v": 2.6020852139652106e-18,
+      "branch_equal": true,
+      "max_original_kkt": 1.7763568394002505e-15,
+      "steps": 400,
+      "pass": true,
+      "max_physical_q": 2.220446049250313e-16,
+      "max_physical_v": 3.101251894177537e-15,
+      "q_gate": 0.0001,
+      "v_gate": 0.001
+    },
+    {
+      "name": "train91011_tick2400_steps1",
+      "expected_success": true,
+      "cpp_success": true,
+      "max_parity_q": 0.0,
+      "max_parity_v": 4.336808689942018e-19,
+      "branch_equal": true,
+      "max_original_kkt": 4.440892098500626e-16,
+      "steps": 1,
+      "pass": true,
+      "max_physical_q": 0.0,
+      "max_physical_v": 2.6725583551767684e-16,
+      "q_gate": 1e-06,
+      "v_gate": 0.0001
+    },
+    {
+      "name": "train91011_tick2400_steps2",
+      "expected_success": true,
+      "cpp_success": true,
+      "max_parity_q": 0.0,
+      "max_parity_v": 4.336808689942018e-19,
+      "branch_equal": true,
+      "max_original_kkt": 8.881784197001252e-16,
+      "steps": 2,
+      "pass": true,
+      "max_physical_q": 0.0,
+      "max_physical_v": 2.6725583551767684e-16,
+      "q_gate": 1e-06,
+      "v_gate": 0.0001
+    },
+    {
+      "name": "train91011_tick2400_steps20",
+      "expected_success": true,
+      "cpp_success": true,
+      "max_parity_q": 0.0,
+      "max_parity_v": 1.3010426069826053e-18,
+      "branch_equal": true,
+      "max_original_kkt": 1.3322676295501878e-15,
+      "steps": 20,
+      "pass": true,
+      "max_physical_q": 1.3877787807814457e-17,
+      "max_physical_v": 1.0121569381238427e-15,
+      "q_gate": 0.0001,
+      "v_gate": 0.001
+    },
+    {
+      "name": "train91011_tick2400_steps400",
+      "expected_success": true,
+      "cpp_success": true,
+      "max_parity_q": 0.0,
+      "max_parity_v": 1.734723475976807e-18,
+      "branch_equal": true,
+      "max_original_kkt": 1.3322676295501878e-15,
+      "steps": 400,
+      "pass": true,
+      "max_physical_q": 2.220446049250313e-16,
+      "max_physical_v": 1.9799700073930282e-15,
+      "q_gate": 0.0001,
+      "v_gate": 0.001
+    },
+    {
+      "name": "train91011_tick2500_steps1",
+      "expected_success": true,
+      "cpp_success": true,
+      "max_parity_q": 0.0,
+      "max_parity_v": 1.0842021724855044e-19,
+      "branch_equal": true,
+      "max_original_kkt": 6.661338147750939e-16,
+      "steps": 1,
+      "pass": true,
+      "max_physical_q": 0.0,
+      "max_physical_v": 2.40692882291782e-16,
+      "q_gate": 1e-06,
+      "v_gate": 0.0001
+    },
+    {
+      "name": "train91011_tick2500_steps2",
+      "expected_success": true,
+      "cpp_success": true,
+      "max_parity_q": 0.0,
+      "max_parity_v": 5.421010862427522e-19,
+      "branch_equal": true,
+      "max_original_kkt": 6.661338147750939e-16,
+      "steps": 2,
+      "pass": true,
+      "max_physical_q": 0.0,
+      "max_physical_v": 2.40692882291782e-16,
+      "q_gate": 1e-06,
+      "v_gate": 0.0001
+    },
+    {
+      "name": "train91011_tick2500_steps20",
+      "expected_success": true,
+      "cpp_success": true,
+      "max_parity_q": 0.0,
+      "max_parity_v": 8.673617379884035e-19,
+      "branch_equal": true,
+      "max_original_kkt": 8.881784197001252e-16,
+      "steps": 20,
+      "pass": true,
+      "max_physical_q": 0.0,
+      "max_physical_v": 6.524728674017766e-16,
+      "q_gate": 0.0001,
+      "v_gate": 0.001
+    },
+    {
+      "name": "seen91013_tick100_steps1",
+      "expected_success": true,
+      "cpp_success": true,
+      "max_parity_q": 0.0,
+      "max_parity_v": 2.168404344971009e-19,
+      "branch_equal": true,
+      "max_original_kkt": 2.220446049250313e-16,
+      "steps": 1,
+      "pass": true,
+      "max_physical_q": 0.0,
+      "max_physical_v": 1.730386667286865e-16,
+      "q_gate": 1e-06,
+      "v_gate": 0.0001
+    },
+    {
+      "name": "seen91013_tick100_steps2",
+      "expected_success": true,
+      "cpp_success": true,
+      "max_parity_q": 0.0,
+      "max_parity_v": 2.168404344971009e-19,
+      "branch_equal": true,
+      "max_original_kkt": 2.220446049250313e-16,
+      "steps": 2,
+      "pass": true,
+      "max_physical_q": 0.0,
+      "max_physical_v": 1.730386667286865e-16,
+      "q_gate": 1e-06,
+      "v_gate": 0.0001
+    },
+    {
+      "name": "seen91013_tick100_steps20",
+      "expected_success": true,
+      "cpp_success": true,
+      "max_parity_q": 0.0,
+      "max_parity_v": 5.421010862427522e-19,
+      "branch_equal": true,
+      "max_original_kkt": 4.440892098500626e-16,
+      "steps": 20,
+      "pass": true,
+      "max_physical_q": 0.0,
+      "max_physical_v": 6.060148043107727e-16,
+      "q_gate": 0.0001,
+      "v_gate": 0.001
+    },
+    {
+      "name": "seen91013_tick100_steps400",
+      "expected_success": true,
+      "cpp_success": true,
+      "max_parity_q": 0.0,
+      "max_parity_v": 6.505213034913027e-19,
+      "branch_equal": true,
+      "max_original_kkt": 4.440892098500626e-16,
+      "steps": 400,
+      "pass": true,
+      "max_physical_q": 4.440892098500626e-16,
+      "max_physical_v": 2.7797317399269605e-15,
+      "q_gate": 0.0001,
+      "v_gate": 0.001
+    },
+    {
+      "name": "seen91013_tick500_steps1",
+      "expected_success": true,
+      "cpp_success": true,
+      "max_parity_q": 0.0,
+      "max_parity_v": 3.3881317890172014e-21,
+      "branch_equal": true,
+      "max_original_kkt": 3.469446951953614e-18,
+      "steps": 1,
+      "pass": true,
+      "max_physical_q": 0.0,
+      "max_physical_v": 1.5898468283295336e-16,
+      "q_gate": 1e-06,
+      "v_gate": 0.0001
+    },
+    {
+      "name": "seen91013_tick500_steps2",
+      "expected_success": true,
+      "cpp_success": true,
+      "max_parity_q": 0.0,
+      "max_parity_v": 3.3881317890172014e-21,
+      "branch_equal": true,
+      "max_original_kkt": 3.469446951953614e-18,
+      "steps": 2,
+      "pass": true,
+      "max_physical_q": 0.0,
+      "max_physical_v": 4.63740930091734e-16,
+      "q_gate": 1e-06,
+      "v_gate": 0.0001
+    },
+    {
+      "name": "seen91013_tick500_steps20",
+      "expected_success": true,
+      "cpp_success": true,
+      "max_parity_q": 0.0,
+      "max_parity_v": 5.823351512373315e-20,
+      "branch_equal": true,
+      "max_original_kkt": 6.938893903907228e-18,
+      "steps": 20,
+      "pass": true,
+      "max_physical_q": 0.0,
+      "max_physical_v": 7.79855611240509e-16,
+      "q_gate": 0.0001,
+      "v_gate": 0.001
+    },
+    {
+      "name": "seen91013_tick500_steps400",
+      "expected_success": true,
+      "cpp_success": true,
+      "max_parity_q": 0.0,
+      "max_parity_v": 2.168404344971009e-18,
+      "branch_equal": true,
+      "max_original_kkt": 1.7763568394002505e-15,
+      "steps": 400,
+      "pass": true,
+      "max_physical_q": 1.3877787807814457e-17,
+      "max_physical_v": 3.9603736956550506e-15,
+      "q_gate": 0.0001,
+      "v_gate": 0.001
+    },
+    {
+      "name": "seen91013_tick690_steps1",
+      "expected_success": true,
+      "cpp_success": true,
+      "max_parity_q": 0.0,
+      "max_parity_v": 4.336808689942018e-19,
+      "branch_equal": true,
+      "max_original_kkt": 8.881784197001252e-16,
+      "steps": 1,
+      "pass": true,
+      "max_physical_q": 0.0,
+      "max_physical_v": 3.3089850304257595e-15,
+      "q_gate": 1e-06,
+      "v_gate": 0.0001
+    },
+    {
+      "name": "seen91013_tick690_steps2",
+      "expected_success": true,
+      "cpp_success": true,
+      "max_parity_q": 0.0,
+      "max_parity_v": 4.336808689942018e-19,
+      "branch_equal": true,
+      "max_original_kkt": 8.881784197001252e-16,
+      "steps": 2,
+      "pass": true,
+      "max_physical_q": 0.0,
+      "max_physical_v": 3.3089850304257595e-15,
+      "q_gate": 1e-06,
+      "v_gate": 0.0001
+    },
+    {
+      "name": "seen91013_tick690_steps20",
+      "expected_success": true,
+      "cpp_success": true,
+      "max_parity_q": 0.0,
+      "max_parity_v": 1.734723475976807e-18,
+      "branch_equal": true,
+      "max_original_kkt": 1.7763568394002505e-15,
+      "steps": 20,
+      "pass": true,
+      "max_physical_q": 0.0,
+      "max_physical_v": 3.3089850304257595e-15,
+      "q_gate": 0.0001,
+      "v_gate": 0.001
+    },
+    {
+      "name": "seen91013_tick690_steps400",
+      "expected_success": true,
+      "cpp_success": true,
+      "max_parity_q": 0.0,
+      "max_parity_v": 1.734723475976807e-18,
+      "branch_equal": true,
+      "max_original_kkt": 1.7763568394002505e-15,
+      "steps": 400,
+      "pass": true,
+      "max_physical_q": 4.163336342344337e-17,
+      "max_physical_v": 3.3089850304257595e-15,
+      "q_gate": 0.0001,
+      "v_gate": 0.001
+    },
+    {
+      "name": "seen91013_tick920_steps1",
+      "expected_success": true,
+      "cpp_success": true,
+      "max_parity_q": 0.0,
+      "max_parity_v": 5.082197683525802e-21,
+      "branch_equal": true,
+      "max_original_kkt": 1.0408340855860843e-17,
+      "steps": 1,
+      "pass": true,
+      "max_physical_q": 0.0,
+      "max_physical_v": 9.478637492954523e-17,
+      "q_gate": 1e-06,
+      "v_gate": 0.0001
+    },
+    {
+      "name": "seen91013_tick920_steps2",
+      "expected_success": true,
+      "cpp_success": true,
+      "max_parity_q": 0.0,
+      "max_parity_v": 5.421010862427522e-20,
+      "branch_equal": true,
+      "max_original_kkt": 5.551115123125783e-17,
+      "steps": 2,
+      "pass": true,
+      "max_physical_q": 0.0,
+      "max_physical_v": 1.981311707581479e-16,
+      "q_gate": 1e-06,
+      "v_gate": 0.0001
+    },
+    {
+      "name": "seen91013_tick920_steps20",
+      "expected_success": true,
+      "cpp_success": true,
+      "max_parity_q": 0.0,
+      "max_parity_v": 1.0842021724855044e-19,
+      "branch_equal": true,
+      "max_original_kkt": 1.1102230246251565e-16,
+      "steps": 20,
+      "pass": true,
+      "max_physical_q": 0.0,
+      "max_physical_v": 7.170133898507652e-16,
+      "q_gate": 0.0001,
+      "v_gate": 0.001
+    },
+    {
+      "name": "seen91013_tick920_steps400",
+      "expected_success": true,
+      "cpp_success": true,
+      "max_parity_q": 0.0,
+      "max_parity_v": 1.3552527156068805e-19,
+      "branch_equal": true,
+      "max_original_kkt": 1.1102230246251565e-16,
+      "steps": 400,
+      "pass": true,
+      "max_physical_q": 2.220446049250313e-16,
+      "max_physical_v": 1.903766158897703e-15,
+      "q_gate": 0.0001,
+      "v_gate": 0.001
+    },
+    {
+      "name": "seen91013_tick2400_steps1",
+      "expected_success": true,
+      "cpp_success": true,
+      "max_parity_q": 0.0,
+      "max_parity_v": 3.2311742677852644e-27,
+      "branch_equal": true,
+      "max_original_kkt": 9.926167350636332e-24,
+      "steps": 1,
+      "pass": true,
+      "max_physical_q": 0.0,
+      "max_physical_v": 2.3128043726227953e-16,
+      "q_gate": 1e-06,
+      "v_gate": 0.0001
+    },
+    {
+      "name": "seen91013_tick2400_steps2",
+      "expected_success": true,
+      "cpp_success": true,
+      "max_parity_q": 0.0,
+      "max_parity_v": 4.8467614016778965e-27,
+      "branch_equal": true,
+      "max_original_kkt": 9.926167350636332e-24,
+      "steps": 2,
+      "pass": true,
+      "max_physical_q": 0.0,
+      "max_physical_v": 4.30735584561359e-16,
+      "q_gate": 1e-06,
+      "v_gate": 0.0001
+    },
+    {
+      "name": "seen91013_tick2400_steps20",
+      "expected_success": true,
+      "cpp_success": true,
+      "max_parity_q": 0.0,
+      "max_parity_v": 2.7464981276174747e-26,
+      "branch_equal": true,
+      "max_original_kkt": 9.926167350636332e-24,
+      "steps": 20,
+      "pass": true,
+      "max_physical_q": 4.440892098500626e-16,
+      "max_physical_v": 1.2914200926449196e-15,
+      "q_gate": 0.0001,
+      "v_gate": 0.001
+    },
+    {
+      "name": "seen91013_tick2500_steps1",
+      "expected_success": true,
+      "cpp_success": true,
+      "max_parity_q": 0.0,
+      "max_parity_v": 8.077935669463161e-28,
+      "branch_equal": true,
+      "max_original_kkt": 1.6543612251060553e-24,
+      "steps": 1,
+      "pass": true,
+      "max_physical_q": 0.0,
+      "max_physical_v": 6.603277212251497e-17,
+      "q_gate": 1e-06,
+      "v_gate": 0.0001
+    },
+    {
+      "name": "seen91013_tick2500_steps2",
+      "expected_success": true,
+      "cpp_success": true,
+      "max_parity_q": 0.0,
+      "max_parity_v": 1.6155871338926322e-27,
+      "branch_equal": true,
+      "max_original_kkt": 1.6543612251060553e-24,
+      "steps": 2,
+      "pass": true,
+      "max_physical_q": 0.0,
+      "max_physical_v": 1.2927076612814336e-16,
+      "q_gate": 1e-06,
+      "v_gate": 0.0001
+    },
+    {
+      "name": "nominal_zero",
+      "expected_success": true,
+      "cpp_success": true,
+      "max_parity_q": 0.0,
+      "max_parity_v": 3.469446951953614e-18,
+      "branch_equal": true,
+      "max_original_kkt": 4.440892098500626e-16,
+      "steps": 1,
+      "pass": true
+    },
+    {
+      "name": "mixed_velocity",
+      "expected_success": true,
+      "cpp_success": true,
+      "max_parity_q": 0.0,
+      "max_parity_v": 6.938893903907228e-18,
+      "branch_equal": true,
+      "max_original_kkt": 0,
+      "steps": 1,
+      "pass": true
+    },
+    {
+      "name": "force_clamp",
+      "expected_success": true,
+      "cpp_success": true,
+      "max_parity_q": 0.0,
+      "max_parity_v": 5.551115123125783e-17,
+      "branch_equal": true,
+      "max_original_kkt": 0,
+      "steps": 1,
+      "pass": true
+    },
+    {
+      "name": "control_and_force_clamp",
+      "expected_success": true,
+      "cpp_success": true,
+      "max_parity_q": 0.0,
+      "max_parity_v": 5.551115123125783e-17,
+      "branch_equal": true,
+      "max_original_kkt": 0,
+      "steps": 1,
+      "pass": true
+    },
+    {
+      "name": "q_nan",
+      "expected_success": false,
+      "cpp_success": false,
+      "pass": true,
+      "error": "finite state dimension7"
+    },
+    {
+      "name": "v_inf",
+      "expected_success": false,
+      "cpp_success": false,
+      "pass": true,
+      "error": "finite state dimension7"
+    },
+    {
+      "name": "target_nan",
+      "expected_success": false,
+      "cpp_success": false,
+      "pass": true,
+      "error": "finite target dimension7"
+    },
+    {
+      "name": "q_wrong_dimension",
+      "expected_success": false,
+      "cpp_success": false,
+      "pass": true,
+      "error": "finite state dimension7"
+    },
+    {
+      "name": "v_wrong_dimension",
+      "expected_success": false,
+      "cpp_success": false,
+      "pass": true,
+      "error": "finite state dimension7"
+    },
+    {
+      "name": "target_wrong_dimension",
+      "expected_success": false,
+      "cpp_success": false,
+      "pass": true,
+      "error": "finite target dimension7"
+    },
+    {
+      "name": "preclamp_finite_overflow",
+      "expected_success": false,
+      "cpp_success": false,
+      "pass": true,
+      "error": "nonfinite pre-clamp affine actuator"
+    },
+    {
+      "name": "joint_boundary",
+      "expected_success": false,
+      "cpp_success": false,
+      "pass": true,
+      "error": "joint-limit-free regime"
+    }
+  ],
+  "boxes": [
+    {
+      "name": "free",
+      "cpp_success": true,
+      "expected_success": true,
+      "max_force_difference": 1.3877787807814457e-17,
+      "branch_equal": true,
+      "kkt": 1.3877787807814457e-17,
+      "pass": true
+    },
+    {
+      "name": "coupled_bounds",
+      "cpp_success": true,
+      "expected_success": true,
+      "max_force_difference": 0.0,
+      "branch_equal": true,
+      "kkt": 0,
+      "pass": true
+    },
+    {
+      "name": "zero_eta",
+      "cpp_success": true,
+      "expected_success": true,
+      "max_force_difference": 2.220446049250313e-16,
+      "branch_equal": true,
+      "kkt": 2.220446049250313e-16,
+      "pass": true
+    },
+    {
+      "name": "mixed_seven",
+      "cpp_success": true,
+      "expected_success": true,
+      "max_force_difference": 0.0,
+      "branch_equal": true,
+      "kkt": 0,
+      "pass": true
+    },
+    {
+      "name": "threshold",
+      "cpp_success": true,
+      "expected_success": true,
+      "max_force_difference": 0.0,
+      "branch_equal": true,
+      "kkt": 0,
+      "pass": true
+    },
+    {
+      "name": "negative_eta",
+      "cpp_success": false,
+      "expected_success": false,
+      "pass": true,
+      "error": "box finite input/nonnegative bound"
+    },
+    {
+      "name": "dimension",
+      "cpp_success": false,
+      "expected_success": false,
+      "pass": true,
+      "error": "box dimension (supported n1..7)"
+    },
+    {
+      "name": "asymmetric",
+      "cpp_success": false,
+      "expected_success": false,
+      "pass": true,
+      "error": "asymmetric box Hessian"
+    },
+    {
+      "name": "non_spd",
+      "cpp_success": false,
+      "expected_success": false,
+      "pass": true,
+      "error": "box Hessian not finite SPD"
+    },
+    {
+      "name": "nan_hessian",
+      "cpp_success": false,
+      "expected_success": false,
+      "pass": true,
+      "error": "box finite input/nonnegative bound"
+    },
+    {
+      "name": "inf_ell",
+      "cpp_success": false,
+      "expected_success": false,
+      "pass": true,
+      "error": "box finite input/nonnegative bound"
+    },
+    {
+      "name": "nan_eta",
+      "cpp_success": false,
+      "expected_success": false,
+      "pass": true,
+      "error": "box finite input/nonnegative bound"
+    },
+    {
+      "name": "finite_solve_overflow",
+      "cpp_success": false,
+      "expected_success": false,
+      "pass": true,
+      "error": "nonfinite box linear solve"
+    },
+    {
+      "name": "empty",
+      "cpp_success": false,
+      "expected_success": false,
+      "pass": true,
+      "error": "input matrix sequence"
+    }
+  ],
+  "constants_rejections": [
+    {
+      "name": "version",
+      "returncode": 1,
+      "pass_check": true,
+      "error": "pinned model versions"
+    },
+    {
+      "name": "integrator",
+      "returncode": 1,
+      "pass_check": true,
+      "error": "model clock/constraints/integrator"
+    },
+    {
+      "name": "dt",
+      "returncode": 1,
+      "pass_check": true,
+      "error": "model clock/constraints/integrator"
+    },
+    {
+      "name": "wind",
+      "returncode": 1,
+      "pass_check": true,
+      "error": "unsupported public force wind"
+    },
+    {
+      "name": "gravity_comp",
+      "returncode": 1,
+      "pass_check": true,
+      "error": "unsupported public force body_gravity_compensation"
+    },
+    {
+      "name": "body_count",
+      "returncode": 1,
+      "pass_check": true,
+      "error": "constant dimension body_gravity_compensation"
+    },
+    {
+      "name": "stiffness",
+      "returncode": 1,
+      "pass_check": true,
+      "error": "unsupported public force joint_stiffness"
+    },
+    {
+      "name": "dyntype",
+      "returncode": 1,
+      "pass_check": true,
+      "error": "unsupported affine actuator type"
+    },
+    {
+      "name": "gear",
+      "returncode": 1,
+      "pass_check": true,
+      "error": "unsupported affine gain/gear"
+    },
+    {
+      "name": "mapping",
+      "returncode": 1,
+      "pass_check": true,
+      "error": "actuator mapping"
+    },
+    {
+      "name": "armature",
+      "returncode": 1,
+      "pass_check": true,
+      "error": "parsed armature identity (no duplicate addition)"
+    },
+    {
+      "name": "negative_eta",
+      "returncode": 1,
+      "pass_check": true,
+      "error": "nonnegative finite damping/friction"
+    },
+    {
+      "name": "negative_passive",
+      "returncode": 1,
+      "pass_check": true,
+      "error": "nonnegative finite damping/friction"
+    },
+    {
+      "name": "zero_invweight",
+      "returncode": 1,
+      "pass_check": true,
+      "error": "positive regularizer constants"
+    },
+    {
+      "name": "solref_short",
+      "returncode": 1,
+      "pass_check": true,
+      "error": "unsupported reference positivity/timeconst below2h"
+    },
+    {
+      "name": "solimp",
+      "returncode": 1,
+      "pass_check": true,
+      "error": "unsupported impedance profile"
+    },
+    {
+      "name": "nan_gain",
+      "returncode": 1,
+      "pass_check": true,
+      "error": "nonfinite constant gainprm"
+    },
+    {
+      "name": "inf_gravity",
+      "returncode": 1,
+      "pass_check": true,
+      "error": "nonfinite constant gravity"
+    },
+    {
+      "name": "unordered_range",
+      "returncode": 1,
+      "pass_check": true,
+      "error": "ordered actuator/joint ranges"
+    },
+    {
+      "name": "nonbinary_flag",
+      "returncode": 1,
+      "pass_check": true,
+      "error": "binary public limit flags"
+    }
+  ],
+  "full_report_sha256": "e83fbe57c26c9cf362d7d35118f4620120bf8284f323806543c6d880414d6238",
+  "full_report_stored_in_verified_archive": true,
+  "all2548_immutable_inputs_root_read_verified_on_Mac": true
+}
