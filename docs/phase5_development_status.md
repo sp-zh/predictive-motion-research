@@ -227,3 +227,7 @@ Independent static review passes complete owned raw-result normalization with cu
 ## Affine boundary/sample source3A — 2026-10-08
 
 Independent static review passes compact boundary o/M/P, complete T/t/structured initial selector, typed actual/algebra initial and callback sample maps, plus optional independent quota-bound lifted elimination and full sample audit. Whole mode refuses without fallback; stream errors poison complete state and retain first reason/raw provenance. [Source review](../tools/phase5_public_live_affine_v2/affine/SOURCE_REVIEW.md); [root review](../reviews/evidence/public_live_affine_v2_affine_stage3a_20261008/ROOT_SOURCE_REVIEW.json). All13 source/history payloads and25 preimport guards match. No configure/build/numerical/Model check occurred; complete costs/capture and separate frozen runtime protocol remain pending.
+
+## Cost source3B independent review — repairs pending
+
+The cost draft has consistent factor/linear/constant formulas and ordered canonical sums in static inspection. Review identified caller-aliasable layout/identity and an over-budget repeated canonical-evaluation capture schedule; canonical caching is drafted and sealed metadata repairs are underway. [Review findings and integer counterexample](../reviews/evidence/public_live_affine_v2_cost_review_pending_20261008/ROOT_REVIEW_PENDING.json). Cost source is not imported/accepted and no capture layer or runtime is released. Accepted source remains3A; Phase5 NOT_ACCEPTED and Phase6 NOT_STARTED.

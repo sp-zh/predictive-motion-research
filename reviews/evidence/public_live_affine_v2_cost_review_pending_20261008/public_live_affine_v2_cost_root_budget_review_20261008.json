@@ -1,0 +1,22 @@
+{
+  "scope": "SOURCE_DESIGN_INTEGER_ACCOUNTING_ONLY_NO_CPP_MATRIX_MODEL_EXECUTION",
+  "recorded_utc": "2026-10-08T23:35:38.928476+00:00",
+  "shape": {
+    "N": 20,
+    "T": 200,
+    "K": 8,
+    "R": 1024,
+    "largest_term_rows": 256,
+    "addition_coefficients": 199980,
+    "records": 1000
+  },
+  "reusable_factor_work": 1328000,
+  "actual_base_plus_normalizer_charges": 9552591,
+  "planned_case_ceiling": 34203791,
+  "old_build_term_and_canonical_callback_work_count": 26,
+  "old_total_charge": 44080591,
+  "canonical_cached_callback_work_count": 18,
+  "canonical_cached_total_without_extra_sample_stream": 33456591,
+  "old_schedule_exceeds_plan": true,
+  "note": "Counterexample to assumed complete-capture replay admission; future capture must have a declared viable schedule with original evaluation streaming/cached canonical data, not cap growth."
+}
