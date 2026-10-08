@@ -1,0 +1,221 @@
+{
+  "scope": "Independent general-affine algebra plan; no new numerical output/model/plant calls. Final API-specific input/source/binary/dependency freezing precedes numerical verification.",
+  "prerequisite_private_checkpoint": "d4b6caa2400b7c6c9e843473445c4e1fd554d753",
+  "phase5": "NOT_ACCEPTED",
+  "earlier_FD_gate": "FAIL_RETAINED_IMMUTABLE",
+  "source_public_maps": {
+    "root_archive_sha256": "61caea19ed702138a26d58438f2129e22bf6efead2e2830fa0e35d8e113f6c5a",
+    "maps_sha256": "7d4768b136f869d519e3dd01eb5dec404e98e1549ff67fd3654a9a5509d670a8",
+    "cases": [
+      "root_trial_identity_start",
+      "root_trial_nonuniform_finite_state_controls"
+    ],
+    "native_source_binary_sha256": "f1b7e6c7e4219fec2beb310540c725b448dcf021b3a95ddafc2922e8849bf1d6"
+  },
+  "authentic_rejected_sources": {
+    "producer_archive_sha256": "fed0f984ace115b89bfbda0ac729cdb4e00818381492ef2d82c787ba9fe53d3c",
+    "native_sha256": "15b1c7ca33762a7d3edb378c0093ce9e15831a6b664786e389eb197df6030e20",
+    "cases": [
+      "future_nominal_original_prefix.nominal",
+      "initial_C_boundary_both.nominal"
+    ]
+  },
+  "positive_public_fixtures": [
+    {
+      "name": "root_affine_public_startup",
+      "source_case": "root_trial_identity_start",
+      "cycles": [
+        1
+      ],
+      "initial_shift": null
+    },
+    {
+      "name": "root_affine_public_nonuniform_shifted",
+      "source_case": "root_trial_nonuniform_finite_state_controls",
+      "cycles": [
+        1,
+        3,
+        2,
+        4
+      ],
+      "initial_shift_zero_based": {
+        "q[0]": 0.0002,
+        "v[2]": -3e-05,
+        "C[4]": -1e-05,
+        "w[3]": 2e-05,
+        "s": 4e-05,
+        "r": -2e-06
+      }
+    }
+  ],
+  "public_control_fixture_formula_zero_based": {
+    "alpha": "U_c[j]=1e-4*(-1)^(c+j)*(c+1)*(j+1),j=0..6",
+    "b": "U_c[7]=.002*(c+1)",
+    "meaning": "Only affine coefficient substitution; no nonlinear closed-forward or actual-command admission claimed."
+  },
+  "rectangular_full_factor_fixture": {
+    "rows": 19,
+    "columns": "dim(y),y=[z0..zN;U]",
+    "F_zero_based": "F[i,j]=(((3*i+5*j+2*i*j)%17)-8)/100",
+    "offset": "f0[i]=.003*(-1)^i*(i+1)",
+    "linear": "ell[j]=.001*(-1)^j/(j+1)",
+    "constant": 0.17,
+    "meaning": "Dimensioned algebra test coefficients; no imported/tuned production research weights."
+  },
+  "generic_synthetic": {
+    "nx": 3,
+    "nu": 2,
+    "N": 3,
+    "actual_initial": [
+      0.21,
+      -0.12,
+      0.08
+    ],
+    "nominal_initial": [
+      0.2,
+      -0.1,
+      0.07
+    ],
+    "A": [
+      [
+        [
+          1,
+          0.1,
+          0
+        ],
+        [
+          0,
+          0.9,
+          0.2
+        ],
+        [
+          0.03,
+          0,
+          1.1
+        ]
+      ],
+      [
+        [
+          0.8,
+          0,
+          0.1
+        ],
+        [
+          0.2,
+          1,
+          0
+        ],
+        [
+          0,
+          0.1,
+          0.7
+        ]
+      ],
+      [
+        [
+          1.05,
+          -0.02,
+          0
+        ],
+        [
+          0.03,
+          0.95,
+          0.04
+        ],
+        [
+          0.01,
+          0,
+          1
+        ]
+      ]
+    ],
+    "B": [
+      [
+        [
+          0.1,
+          0.02
+        ],
+        [
+          -0.03,
+          0.2
+        ],
+        [
+          0.04,
+          0.05
+        ]
+      ],
+      [
+        [
+          0.2,
+          -0.01
+        ],
+        [
+          0.07,
+          0.11
+        ],
+        [
+          -0.09,
+          0.08
+        ]
+      ],
+      [
+        [
+          0.12,
+          0.04
+        ],
+        [
+          0.02,
+          -0.08
+        ],
+        [
+          0.06,
+          0.15
+        ]
+      ]
+    ],
+    "defect": [
+      [
+        0.003,
+        -0.002,
+        0.001
+      ],
+      [
+        -0.001,
+        0.004,
+        0.002
+      ],
+      [
+        0.002,
+        0.001,
+        -0.003
+      ]
+    ],
+    "meaning": "Explicit synthetic affine coefficients only; no public physical certificate."
+  },
+  "checks": [
+    "Independent pivoted lifted L solve vs recursive offsets/controlM/initialP",
+    "Every2ms cell-prefix sample embedding including Psample=A_prefix*P_cellOrigin",
+    "Literal source nominal provenance fixed under actual initial shift",
+    "Full factor/offset/linear/constant vs condensed factor/H/g/constant/direct value/gradient",
+    "All distinct input columns and physical/command/progress components retained",
+    "Native cumulative fields vs normalized JSON fullcell mapping",
+    "Authentic failed/unsupported sources refuse full assembly; no fabricated tail or fallback",
+    "Exact rosters/types/finite arithmetic/source immutability"
+  ],
+  "negative_controls": [
+    "last-cycle-local fields substituted for cumulative fullcell",
+    "tied percell controls",
+    "nominal future state reset",
+    "missing initial P/sample P",
+    "half-square weight conversion wrong",
+    "omitted linear/constant/cross terms",
+    "failed/unsupported prefix relabeled full assembly",
+    "missing/truncated/fabricated outputs",
+    "shape/nonfinite/overflow/wrong integer mesh/false claims"
+  ],
+  "non_claims": [
+    "No finite trust radius/segment/ball/admissibility/execution/safety/uniform bound",
+    "No solver optimum, nonlinear forecast accuracy, new plant/main/task/timing/Phase5 acceptance"
+  ],
+  "tolerance_status": "API-specific source/fixture preparation will freeze scale-aware arithmetic gates before any numerical output; no outcome/epsilon tuning."
+}

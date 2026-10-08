@@ -156,3 +156,12 @@ actual-coordinate30state/8input horizon adapter is specified, with explicit
 fullcell native cumulative fields, lifted elimination, full objective constants
 and failed-prefix refusal. Source review is complete; implementation/numerical
 verification remain pending. See the [integration contract](../reviews/evidence/public_affine_horizon_integration_contract_20261008.md).
+
+The source-only affine horizon interface is now independently reviewed after
+three retained static revisions. Literal quadratic derivatives, cumulative
+numeric quotas, complete sum fields and canonical accumulation are explicit.
+Root oracle definitions pass syntax compilation only and are not evaluated.
+This v1 prototype has a fixed N1/N4 diagnostic envelope; the project's
+configurable N20/.8s and1.5s profiles still require a larger reviewed version.
+All interface drafts and exact prepared source inputs are preserved on both
+hosts. See the [source checkpoint](../reviews/evidence/public_affine_horizon_source_checkpoint_20261008.json).

@@ -1,0 +1,18 @@
+{
+  "revision": 2,
+  "scope": "SOURCE_ONLY_STATIC_REVISION_NO_BUILD_OR_NUMERICAL_OUTPUT",
+  "previous": {
+    "public_affine_horizon.hpp": "8d76bb90e8c7f9176da1429aa3d6b394ce45e96dd2e9ac3ca62b6f94cb271b89",
+    "INTERFACE_SCHEMA.md": "7bbcc43eb23757b4995b97f7abdae62350b5927959c80b6a6af93c762e6975ed"
+  },
+  "files": {
+    "public_affine_horizon.hpp": "8b90f49a222277b2737c072b87d86ffd891d2766b1f8ff6a5ae3ca77f7c86c29",
+    "INTERFACE_SCHEMA.md": "bba22f394006763021f21a80c4770c8622abb8da2097fd3694acb93abf6f5d61"
+  },
+  "changes": [
+    "Literal polynomial derivatives use symmetric part; raw H retained",
+    "Per-problem and shared CLI cumulative numeric budget; preallocation overflow checks"
+  ],
+  "implementation": "HELD_FOR_ROOT_MATH_STATIC_REVIEW",
+  "backup": "PENDING_ROOT_CHECKPOINT"
+}

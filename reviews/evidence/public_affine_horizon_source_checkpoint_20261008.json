@@ -1,0 +1,45 @@
+{
+  "date": "2026-10-08",
+  "decision": "PASS_SOURCE_ONLY_PREVIOUS_THREE_ISSUES_RESOLVED",
+  "phase5": "NOT_ACCEPTED",
+  "phase6": "NOT_STARTED",
+  "numerical_verification": "NOT_RUN",
+  "implementation": "PENDING_SEPARATE_SOURCE_DISPATCH",
+  "new_model_calls": 0,
+  "new_builds": 0,
+  "new_binary_outputs": 0,
+  "source_prerequisite_backup": "d4b6caa2400b7c6c9e843473445c4e1fd554d753",
+  "archive": {
+    "sha256": "e42af2a0ca5a85047e371660f9fc565cdc0a28ace450235a1f3d6acb13d9de83",
+    "bytes": 567578,
+    "regular_members": 17,
+    "payloads": 16,
+    "all_payloads_verified": true,
+    "scope": "Source-only general-affine interface v1 and independent oracle definitions, all three static drafts/fixes, archived original-source fixture preparation. No new matrix evaluation, model, build, binary or plant call; Phase5 NOT_ACCEPTED; N20/configurable/full horizons pending.",
+    "Mac": "/Users/uot/Documents/ChatGPT/ros/transfer/incoming/root-public-affine-horizon-source-contract-20261008/evidence.tar.gz",
+    "Dell": "/mnt/d/CodexTransfer/projects/predictive_motion/checkpoints/root-public-affine-horizon-source-contract-20261008/evidence.tar.gz",
+    "all_payloads_verified_on_both": true
+  },
+  "accepted_header_schema": {
+    "public_affine_horizon.hpp": "8a2a3d775d9c45afc1fbd9d55dbb20a7425cdea3fccf483e2cf7880360ab12b4",
+    "INTERFACE_SCHEMA.md": "33204e9b73a4524d92568f71c159312a548632bdd547a9fa80967981e020b4ed"
+  },
+  "root_oracle_sha256": "4b8f0328125e8e797ddafcc4ae0e6e0572f65ca2fc5f0336a25b3d25b00b4e84",
+  "oracle_validation": "syntax compile only; not imported/evaluated",
+  "root_plan_sha256": "514bcc31b1bce001853c61e714b53802f2515a831762338baf0619f41bdc6518",
+  "prepared_archived_sources": {
+    "sha256": "ce5731c49d4c4815d2e30d8079054310d1f73816d7906c607a1e76a4cf0c0a0c",
+    "bytes": 3187065,
+    "Mac": "/Users/uot/Documents/ChatGPT/ros/results/phase5-reference/root-affine-horizon-predeclaration-20261008/archived_sources.json",
+    "Dell": "/home/codextransfer/clean-audits/root-affine-horizon-20261008/archived_sources.json",
+    "both_verified": true,
+    "immutable_copy_in_archive": true
+  },
+  "independent_static_reviewer": "/root/predictive_math_audit",
+  "retained_static_issues": [
+    "rawH literal derivative convention fixed before implementation",
+    "perallocation bounds insufficient without cumulative quotas; wholeproblem/sharedCLI ledger specified",
+    "complete sum.used fields/zero shapes/canonical accumulation sequence specified"
+  ],
+  "scope": "Interface/provenance/fixture-preparation only. Fixed v1N1/N4 development envelope does not replace configurable projectN20/.8sec/1.5sec horizons. Numerical, main/task/timing/Phase5 gates remain pending. Original FDFAIL immutable."
+}

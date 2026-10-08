@@ -370,3 +370,9 @@ The next adapter's [source integration contract](../reviews/evidence/public_affi
 connects these existing sampled diagnostics to a planned general-affine horizon
 algebra layer. It is a reviewed design, with no new rendered trajectory or
 numerical result; the actual diagnostic figures above retain their stated scope.
+
+The [reviewed source interface](../tools/phase5_public_affine_horizon_cpp/INTERFACE_SCHEMA.md)
+and independent oracle definitions are preserved without evaluation. There is
+no new simulated motion, matrix result or cost figure for this source-only
+checkpoint. Its fixed small diagnostic envelope is separate from the pending
+full project horizon and Phase5 task/timing results.
