@@ -35,12 +35,16 @@ remain preserved. Exact bound labels do not certify a unique Jacobian. Both
 hosts' immutable evidence and private source checkpoint b1d5c2f are verified.
 [Independent v2 review](../reviews/evidence/public_coupled_cpp_v2_root_review_20261007.md).
 
-The next isolated unit extends the public model with persistent accepted C/w
-and progress s/r alongside physical q/v. Its command clock must compose real
-4ms cycles with two held-target2ms physical steps, including nonuniform cells.
-No new plant run or main-controller integration is authorized by component
-parity alone; derivative validation remains a separate prerequisite.
-
+The isolated coupled wrapper now passes34 positive/35 negative component cases,
+including29 complete conditional recorded windows;4 EOF requests remain incomplete.
+Root separately checks6 positive/21 negative cases,138 positive2ms points,
+independent rational command/progress sums, exact held-input mesh subdivision,
+and two mid-rollout failures with retained complete states. Accepted C/w remain
+separate from physical q/v. All2551 dependencies and both immutable archives
+are verified on both hosts. No derivative, main-controller, new plant,
+physical-stop, task or timing acceptance follows. The next unit validates
+physical/augmented derivatives before main integration.
+[Independent augmented review](../reviews/evidence/public_coupled_augmented_root_review_20261007.md).
 
 The one approved seed91013 simulation completes with the frozen public-v2 predictor and strict scorer. All9796 complete windows have zero failures; active2/4/40/800ms maxima are below original limits and near roundoff. Root independently verifies all5002 state records/2002attempts/262496captured QP rows and the exact window roster, plus21 predeclared forecasts and six enumerated force QPs. Source/model/parameters remain unchanged, with no fitting or rerun. There are1996full-cycle4ms misses, and the final new stop starts after a long hold. This is PASS_CONDITIONAL_RECORDED_INPUT_PREDICTION for known curated development input; main-controller integration, full task, moving-stop, uniform-domain,250Hz and Phase5 acceptance remain pending.
 [Independent actual-run review](../reviews/evidence/public_coupled_validation_91013_root_review_20261007.md).

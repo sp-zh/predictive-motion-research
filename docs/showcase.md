@@ -262,6 +262,18 @@ four EOF windows remain incomplete. Root separately checks10 native states,
 main-controller, timing and Phase5 acceptance remain pending.
 [Independent v2 review](../reviews/evidence/public_coupled_cpp_v2_root_review_20261007.md).
 
+![Coupled command and physical state transition](../figures/phase5/phase5_public_coupled_augmented_cpp_transition.png)
+
+![Coupled augmented component verification](../figures/phase5/phase5_public_coupled_augmented_cpp_verification.png)
+
+The separate wrapper preserves4ms accepted command updates and paired2ms
+physical propagation over nonuniform cells. Figures show executed native-model
+telemetry and known-input regression scope; progress is virtual. Root separately
+checks6 positive/21 negative cases, rational command/progress references, exact
+held-input subdivision and retained future-failure prefixes. These are component
+checks, with main-controller, derivatives, task and timing acceptance pending.
+[Independent augmented review](../reviews/evidence/public_coupled_augmented_root_review_20261007.md).
+
 ## Downloadable 3D models
 
 | Asset | Format / units | Purpose |

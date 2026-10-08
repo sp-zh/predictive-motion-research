@@ -1,0 +1,844 @@
+{
+  "status": "PASS_BOUNDED_AUGMENTED_COMPONENT_ONLY",
+  "phase5": "NOT_ACCEPTED",
+  "phase6": "NOT_STARTED",
+  "freeze_sha256": "390bf2bf426ea5fa2fc369e224b1fd3532799ac110b296e921d5868561b27626",
+  "records": [
+    {
+      "name": "train91011_tick100_cycles1",
+      "success": true,
+      "maxima": {
+        "command": 0.0,
+        "progress": 0.0,
+        "paired_q": 0.0,
+        "paired_v": 0.0,
+        "physical_q": 0.0,
+        "physical_v": 1.4669255393728875e-16
+      },
+      "substeps": 2,
+      "pass_check": true
+    },
+    {
+      "name": "train91011_tick100_cycles10",
+      "success": true,
+      "maxima": {
+        "command": 0.0,
+        "progress": 8.326672684688674e-17,
+        "paired_q": 0.0,
+        "paired_v": 0.0,
+        "physical_q": 0.0,
+        "physical_v": 6.345293214471415e-16
+      },
+      "substeps": 20,
+      "pass_check": true
+    },
+    {
+      "name": "train91011_tick100_cycles200",
+      "success": true,
+      "maxima": {
+        "command": 0.0,
+        "progress": 1.8041124150158794e-15,
+        "paired_q": 0.0,
+        "paired_v": 0.0,
+        "physical_q": 4.440892098500626e-16,
+        "physical_v": 2.5130518868134166e-15
+      },
+      "substeps": 400,
+      "pass_check": true
+    },
+    {
+      "name": "train91011_tick500_cycles1",
+      "success": true,
+      "maxima": {
+        "command": 0.0,
+        "progress": 0.0,
+        "paired_q": 0.0,
+        "paired_v": 0.0,
+        "physical_q": 0.0,
+        "physical_v": 2.3167891648577933e-16
+      },
+      "substeps": 2,
+      "pass_check": true
+    },
+    {
+      "name": "train91011_tick500_cycles10",
+      "success": true,
+      "maxima": {
+        "command": 8.881784197001252e-16,
+        "progress": 8.326672684688674e-17,
+        "paired_q": 0.0,
+        "paired_v": 2.5331292146413037e-15,
+        "physical_q": 0.0,
+        "physical_v": 6.883169723889736e-16
+      },
+      "substeps": 20,
+      "pass_check": true
+    },
+    {
+      "name": "train91011_tick500_cycles200",
+      "success": true,
+      "maxima": {
+        "command": 3.552713678800501e-15,
+        "progress": 1.8041124150158794e-15,
+        "paired_q": 2.6645352591003757e-15,
+        "paired_v": 1.7218214701242296e-14,
+        "physical_q": 2.220446049250313e-16,
+        "physical_v": 1.6449515360950073e-15
+      },
+      "substeps": 400,
+      "pass_check": true
+    },
+    {
+      "name": "train91011_tick1250_cycles1",
+      "success": true,
+      "maxima": {
+        "command": 0.0,
+        "progress": 0.0,
+        "paired_q": 0.0,
+        "paired_v": 0.0,
+        "physical_q": 0.0,
+        "physical_v": 3.2916377956659915e-16
+      },
+      "substeps": 2,
+      "pass_check": true
+    },
+    {
+      "name": "train91011_tick1250_cycles10",
+      "success": true,
+      "maxima": {
+        "command": 8.881784197001252e-16,
+        "progress": 8.326672684688674e-17,
+        "paired_q": 0.0,
+        "paired_v": 4.095573706563993e-15,
+        "physical_q": 0.0,
+        "physical_v": 6.054184931159057e-16
+      },
+      "substeps": 20,
+      "pass_check": true
+    },
+    {
+      "name": "train91011_tick1250_cycles200",
+      "success": true,
+      "maxima": {
+        "command": 2.6645352591003757e-15,
+        "progress": 1.8041124150158794e-15,
+        "paired_q": 1.9984014443252818e-15,
+        "paired_v": 1.6248287437736764e-14,
+        "physical_q": 2.220446049250313e-16,
+        "physical_v": 3.101251894177537e-15
+      },
+      "substeps": 400,
+      "pass_check": true
+    },
+    {
+      "name": "train91011_tick2400_cycles1",
+      "success": true,
+      "maxima": {
+        "command": 0.0,
+        "progress": 0.0,
+        "paired_q": 0.0,
+        "paired_v": 0.0,
+        "physical_q": 0.0,
+        "physical_v": 2.6725583551767684e-16
+      },
+      "substeps": 2,
+      "pass_check": true
+    },
+    {
+      "name": "train91011_tick2400_cycles10",
+      "success": true,
+      "maxima": {
+        "command": 8.881784197001252e-16,
+        "progress": 8.326672684688674e-17,
+        "paired_q": 8.881784197001252e-16,
+        "paired_v": 1.8019440106709084e-15,
+        "physical_q": 1.3877787807814457e-17,
+        "physical_v": 1.0121569381238427e-15
+      },
+      "substeps": 20,
+      "pass_check": true
+    },
+    {
+      "name": "train91011_tick2400_cycles200",
+      "success": true,
+      "maxima": {
+        "command": 3.552713678800501e-15,
+        "progress": 1.8041124150158794e-15,
+        "paired_q": 3.1086244689504383e-15,
+        "paired_v": 1.0547552414807981e-14,
+        "physical_q": 2.220446049250313e-16,
+        "physical_v": 1.9799700073930282e-15
+      },
+      "substeps": 400,
+      "pass_check": true
+    },
+    {
+      "name": "train91011_tick2500_cycles1",
+      "success": true,
+      "maxima": {
+        "command": 0.0,
+        "progress": 0.0,
+        "paired_q": 0.0,
+        "paired_v": 0.0,
+        "physical_q": 0.0,
+        "physical_v": 2.40692882291782e-16
+      },
+      "substeps": 2,
+      "pass_check": true
+    },
+    {
+      "name": "train91011_tick2500_cycles10",
+      "success": true,
+      "maxima": {
+        "command": 8.881784197001252e-16,
+        "progress": 8.326672684688674e-17,
+        "paired_q": 0.0,
+        "paired_v": 5.0565020920378956e-15,
+        "physical_q": 0.0,
+        "physical_v": 6.524728674017766e-16
+      },
+      "substeps": 20,
+      "pass_check": true
+    },
+    {
+      "name": "seen91013_tick100_cycles1",
+      "success": true,
+      "maxima": {
+        "command": 0.0,
+        "progress": 0.0,
+        "paired_q": 0.0,
+        "paired_v": 0.0,
+        "physical_q": 0.0,
+        "physical_v": 1.730386667286865e-16
+      },
+      "substeps": 2,
+      "pass_check": true
+    },
+    {
+      "name": "seen91013_tick100_cycles10",
+      "success": true,
+      "maxima": {
+        "command": 0.0,
+        "progress": 8.326672684688674e-17,
+        "paired_q": 0.0,
+        "paired_v": 0.0,
+        "physical_q": 0.0,
+        "physical_v": 6.060148043107727e-16
+      },
+      "substeps": 20,
+      "pass_check": true
+    },
+    {
+      "name": "seen91013_tick100_cycles200",
+      "success": true,
+      "maxima": {
+        "command": 0.0,
+        "progress": 1.8041124150158794e-15,
+        "paired_q": 0.0,
+        "paired_v": 0.0,
+        "physical_q": 4.440892098500626e-16,
+        "physical_v": 2.7797317399269605e-15
+      },
+      "substeps": 400,
+      "pass_check": true
+    },
+    {
+      "name": "seen91013_tick500_cycles1",
+      "success": true,
+      "maxima": {
+        "command": 0.0,
+        "progress": 0.0,
+        "paired_q": 0.0,
+        "paired_v": 0.0,
+        "physical_q": 0.0,
+        "physical_v": 4.63740930091734e-16
+      },
+      "substeps": 2,
+      "pass_check": true
+    },
+    {
+      "name": "seen91013_tick500_cycles10",
+      "success": true,
+      "maxima": {
+        "command": 8.881784197001252e-16,
+        "progress": 8.326672684688674e-17,
+        "paired_q": 0.0,
+        "paired_v": 3.924501003305884e-15,
+        "physical_q": 0.0,
+        "physical_v": 7.79855611240509e-16
+      },
+      "substeps": 20,
+      "pass_check": true
+    },
+    {
+      "name": "seen91013_tick500_cycles200",
+      "success": true,
+      "maxima": {
+        "command": 4.440892098500626e-15,
+        "progress": 1.8041124150158794e-15,
+        "paired_q": 3.1086244689504383e-15,
+        "paired_v": 1.8286587522009512e-14,
+        "physical_q": 1.3877787807814457e-17,
+        "physical_v": 3.9603736956550506e-15
+      },
+      "substeps": 400,
+      "pass_check": true
+    },
+    {
+      "name": "seen91013_tick690_cycles1",
+      "success": true,
+      "maxima": {
+        "command": 0.0,
+        "progress": 0.0,
+        "paired_q": 0.0,
+        "paired_v": 0.0,
+        "physical_q": 0.0,
+        "physical_v": 3.3089850304257595e-15
+      },
+      "substeps": 2,
+      "pass_check": true
+    },
+    {
+      "name": "seen91013_tick690_cycles10",
+      "success": true,
+      "maxima": {
+        "command": 8.881784197001252e-16,
+        "progress": 8.326672684688674e-17,
+        "paired_q": 0.0,
+        "paired_v": 9.00841901074756e-15,
+        "physical_q": 0.0,
+        "physical_v": 3.3089850304257595e-15
+      },
+      "substeps": 20,
+      "pass_check": true
+    },
+    {
+      "name": "seen91013_tick690_cycles200",
+      "success": true,
+      "maxima": {
+        "command": 2.6645352591003757e-15,
+        "progress": 1.8041124150158794e-15,
+        "paired_q": 3.552713678800501e-15,
+        "paired_v": 1.603838589714357e-14,
+        "physical_q": 4.163336342344337e-17,
+        "physical_v": 3.3089850304257595e-15
+      },
+      "substeps": 400,
+      "pass_check": true
+    },
+    {
+      "name": "seen91013_tick920_cycles1",
+      "success": true,
+      "maxima": {
+        "command": 0.0,
+        "progress": 0.0,
+        "paired_q": 0.0,
+        "paired_v": 0.0,
+        "physical_q": 0.0,
+        "physical_v": 1.981311707581479e-16
+      },
+      "substeps": 2,
+      "pass_check": true
+    },
+    {
+      "name": "seen91013_tick920_cycles10",
+      "success": true,
+      "maxima": {
+        "command": 0.0,
+        "progress": 8.326672684688674e-17,
+        "paired_q": 0.0,
+        "paired_v": 0.0,
+        "physical_q": 0.0,
+        "physical_v": 7.170133898507652e-16
+      },
+      "substeps": 20,
+      "pass_check": true
+    },
+    {
+      "name": "seen91013_tick920_cycles200",
+      "success": true,
+      "maxima": {
+        "command": 0.0,
+        "progress": 1.8041124150158794e-15,
+        "paired_q": 0.0,
+        "paired_v": 0.0,
+        "physical_q": 2.220446049250313e-16,
+        "physical_v": 1.903766158897703e-15
+      },
+      "substeps": 400,
+      "pass_check": true
+    },
+    {
+      "name": "seen91013_tick2400_cycles1",
+      "success": true,
+      "maxima": {
+        "command": 0.0,
+        "progress": 0.0,
+        "paired_q": 0.0,
+        "paired_v": 0.0,
+        "physical_q": 0.0,
+        "physical_v": 4.30735584561359e-16
+      },
+      "substeps": 2,
+      "pass_check": true
+    },
+    {
+      "name": "seen91013_tick2400_cycles10",
+      "success": true,
+      "maxima": {
+        "command": 0.0,
+        "progress": 8.326672684688674e-17,
+        "paired_q": 0.0,
+        "paired_v": 0.0,
+        "physical_q": 4.440892098500626e-16,
+        "physical_v": 1.2914200926449196e-15
+      },
+      "substeps": 20,
+      "pass_check": true
+    },
+    {
+      "name": "seen91013_tick2500_cycles1",
+      "success": true,
+      "maxima": {
+        "command": 0.0,
+        "progress": 0.0,
+        "paired_q": 0.0,
+        "paired_v": 0.0,
+        "physical_q": 0.0,
+        "physical_v": 1.2927076612814336e-16
+      },
+      "substeps": 2,
+      "pass_check": true
+    },
+    {
+      "name": "nonuniform_mixed",
+      "success": true,
+      "maxima": {
+        "command": 8.881784197001252e-16,
+        "progress": 1.942890293094024e-16,
+        "paired_q": 0.0,
+        "paired_v": 4.801714581503802e-15,
+        "physical_q": 0.0,
+        "physical_v": 0.0
+      },
+      "substeps": 32,
+      "pass_check": true
+    },
+    {
+      "name": "held10",
+      "success": true,
+      "maxima": {
+        "command": 8.881784197001252e-16,
+        "progress": 2.7755575615628914e-17,
+        "paired_q": 1.3877787807814457e-17,
+        "paired_v": 3.5180192092809648e-15,
+        "physical_q": 0.0,
+        "physical_v": 0.0
+      },
+      "substeps": 20,
+      "pass_check": true
+    },
+    {
+      "name": "split10",
+      "success": true,
+      "maxima": {
+        "command": 8.881784197001252e-16,
+        "progress": 5.551115123125783e-17,
+        "paired_q": 1.3877787807814457e-17,
+        "paired_v": 3.5180192092809648e-15,
+        "physical_q": 0.0,
+        "physical_v": 0.0
+      },
+      "substeps": 20,
+      "pass_check": true
+    },
+    {
+      "name": "negative_b",
+      "success": true,
+      "maxima": {
+        "command": 3.552713678800501e-15,
+        "progress": 2.7755575615628914e-17,
+        "paired_q": 8.881784197001252e-16,
+        "paired_v": 1.848868280696081e-14,
+        "physical_q": 0.0,
+        "physical_v": 0.0
+      },
+      "substeps": 20,
+      "pass_check": true
+    },
+    {
+      "name": "zero_control",
+      "success": true,
+      "maxima": {
+        "command": 8.881784197001252e-16,
+        "progress": 0.0,
+        "paired_q": 8.881784197001252e-16,
+        "paired_v": 8.890024133512142e-15,
+        "physical_q": 0.0,
+        "physical_v": 0.0
+      },
+      "substeps": 6,
+      "pass_check": true
+    },
+    {
+      "name": "q_short",
+      "success": false,
+      "error": "augmented q/v/C/w dimension7",
+      "retained_substeps": 0,
+      "retained_complete_cycles": 0
+    },
+    {
+      "name": "q_nan",
+      "success": false,
+      "error": "finite augmented q/v/C/w",
+      "retained_substeps": 0,
+      "retained_complete_cycles": 0
+    },
+    {
+      "name": "v_short",
+      "success": false,
+      "error": "augmented q/v/C/w dimension7",
+      "retained_substeps": 0,
+      "retained_complete_cycles": 0
+    },
+    {
+      "name": "v_nan",
+      "success": false,
+      "error": "finite augmented q/v/C/w",
+      "retained_substeps": 0,
+      "retained_complete_cycles": 0
+    },
+    {
+      "name": "C_short",
+      "success": false,
+      "error": "augmented q/v/C/w dimension7",
+      "retained_substeps": 0,
+      "retained_complete_cycles": 0
+    },
+    {
+      "name": "C_nan",
+      "success": false,
+      "error": "finite augmented q/v/C/w",
+      "retained_substeps": 0,
+      "retained_complete_cycles": 0
+    },
+    {
+      "name": "w_short",
+      "success": false,
+      "error": "augmented q/v/C/w dimension7",
+      "retained_substeps": 0,
+      "retained_complete_cycles": 0
+    },
+    {
+      "name": "w_nan",
+      "success": false,
+      "error": "finite augmented q/v/C/w",
+      "retained_substeps": 0,
+      "retained_complete_cycles": 0
+    },
+    {
+      "name": "s_invalid_-0.1",
+      "success": false,
+      "error": "declared progress state/reference domain",
+      "retained_substeps": 0,
+      "retained_complete_cycles": 0
+    },
+    {
+      "name": "s_invalid_1.1",
+      "success": false,
+      "error": "declared progress state/reference domain",
+      "retained_substeps": 0,
+      "retained_complete_cycles": 0
+    },
+    {
+      "name": "r_invalid_-0.01",
+      "success": false,
+      "error": "declared progress state/reference domain",
+      "retained_substeps": 0,
+      "retained_complete_cycles": 0
+    },
+    {
+      "name": "r_invalid_0.21",
+      "success": false,
+      "error": "declared progress state/reference domain",
+      "retained_substeps": 0,
+      "retained_complete_cycles": 0
+    },
+    {
+      "name": "s_invalid_.inf",
+      "success": false,
+      "error": "finite progress state/reference",
+      "retained_substeps": 0,
+      "retained_complete_cycles": 0
+    },
+    {
+      "name": "r_invalid_.nan",
+      "success": false,
+      "error": "finite progress state/reference",
+      "retained_substeps": 0,
+      "retained_complete_cycles": 0
+    },
+    {
+      "name": "C_outside",
+      "success": false,
+      "error": "accepted C within public control domain; no clipping",
+      "retained_substeps": 0,
+      "retained_complete_cycles": 0
+    },
+    {
+      "name": "q_boundary",
+      "success": false,
+      "error": "strict physical joint-limit-free domain",
+      "retained_substeps": 0,
+      "retained_complete_cycles": 0
+    },
+    {
+      "name": "w_outside",
+      "success": false,
+      "error": "declared accepted command velocity domain",
+      "retained_substeps": 0,
+      "retained_complete_cycles": 0
+    },
+    {
+      "name": "physical_finite_overflow",
+      "success": false,
+      "error": "nonfinite pre-clamp affine actuator",
+      "retained_substeps": 0,
+      "retained_complete_cycles": 0
+    },
+    {
+      "name": "cycles_0",
+      "success": false,
+      "error": "positive integer4ms mesh cycles within total cap",
+      "retained_substeps": 0,
+      "retained_complete_cycles": 0
+    },
+    {
+      "name": "cycles_-1",
+      "success": false,
+      "error": "cycles must be unquoted canonical integer; no remainder or rounding",
+      "retained_substeps": 0,
+      "retained_complete_cycles": 0
+    },
+    {
+      "name": "cycles_0.5",
+      "success": false,
+      "error": "cycles must be unquoted canonical integer; no remainder or rounding",
+      "retained_substeps": 0,
+      "retained_complete_cycles": 0
+    },
+    {
+      "name": "cycles_True",
+      "success": false,
+      "error": "cycles must be unquoted canonical integer; no remainder or rounding",
+      "retained_substeps": 0,
+      "retained_complete_cycles": 0
+    },
+    {
+      "name": "cycles_1",
+      "success": false,
+      "error": "cycles must be unquoted canonical integer; no remainder or rounding",
+      "retained_substeps": 0,
+      "retained_complete_cycles": 0
+    },
+    {
+      "name": "cycles_.nan",
+      "success": false,
+      "error": "cycles must be unquoted canonical integer; no remainder or rounding",
+      "retained_substeps": 0,
+      "retained_complete_cycles": 0
+    },
+    {
+      "name": "cycles_5001",
+      "success": false,
+      "error": "mesh cycle count cap",
+      "retained_substeps": 0,
+      "retained_complete_cycles": 0
+    },
+    {
+      "name": "cycles_10000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000",
+      "success": false,
+      "error": "stoull",
+      "retained_substeps": 0,
+      "retained_complete_cycles": 0
+    },
+    {
+      "name": "empty_mesh",
+      "success": false,
+      "error": "positive bounded mesh cell roster",
+      "retained_substeps": 0,
+      "retained_complete_cycles": 0
+    },
+    {
+      "name": "too_many_cells",
+      "success": false,
+      "error": "mesh cell count cap",
+      "retained_substeps": 0,
+      "retained_complete_cycles": 0
+    },
+    {
+      "name": "total_cycle_cap",
+      "success": false,
+      "error": "positive integer4ms mesh cycles within total cap",
+      "retained_substeps": 0,
+      "retained_complete_cycles": 0
+    },
+    {
+      "name": "alpha_dimension",
+      "success": false,
+      "error": "finite alpha7/b input",
+      "retained_substeps": 0,
+      "retained_complete_cycles": 0
+    },
+    {
+      "name": "alpha_outside",
+      "success": false,
+      "error": "declared command acceleration domain",
+      "retained_substeps": 0,
+      "retained_complete_cycles": 0
+    },
+    {
+      "name": "alpha_inf",
+      "success": false,
+      "error": "finite alpha7/b input",
+      "retained_substeps": 0,
+      "retained_complete_cycles": 0
+    },
+    {
+      "name": "b_nan",
+      "success": false,
+      "error": "finite alpha7/b input",
+      "retained_substeps": 0,
+      "retained_complete_cycles": 0
+    },
+    {
+      "name": "second_cycle_w_failure",
+      "success": false,
+      "error": "declared accepted command velocity domain",
+      "retained_substeps": 2,
+      "retained_complete_cycles": 1
+    },
+    {
+      "name": "second_cycle_r_failure",
+      "success": false,
+      "error": "declared progress state/reference domain",
+      "retained_substeps": 2,
+      "retained_complete_cycles": 1
+    }
+  ],
+  "synthetic_output_gates": {
+    "positive_controls": 1,
+    "negative_controls": [
+      {
+        "name": "empty_roster",
+        "rejected": true
+      },
+      {
+        "name": "drop_tail",
+        "rejected": true
+      },
+      {
+        "name": "reverse",
+        "rejected": true
+      },
+      {
+        "name": "duplicate_name",
+        "rejected": true
+      },
+      {
+        "name": "string_success",
+        "rejected": true
+      },
+      {
+        "name": "int_success",
+        "rejected": true
+      },
+      {
+        "name": "model_string",
+        "rejected": true
+      },
+      {
+        "name": "short_trace",
+        "rejected": true
+      },
+      {
+        "name": "short_cycle",
+        "rejected": true
+      },
+      {
+        "name": "short_cells",
+        "rejected": true
+      },
+      {
+        "name": "missing_final",
+        "rejected": true
+      },
+      {
+        "name": "final_bool",
+        "rejected": true
+      },
+      {
+        "name": "short_q",
+        "rejected": true
+      },
+      {
+        "name": "nan_v",
+        "rejected": true
+      },
+      {
+        "name": "string_C",
+        "rejected": true
+      },
+      {
+        "name": "bool_w",
+        "rejected": true
+      },
+      {
+        "name": "huge_s",
+        "rejected": true
+      },
+      {
+        "name": "wrong_half",
+        "rejected": true
+      },
+      {
+        "name": "bad_KKT",
+        "rejected": true
+      },
+      {
+        "name": "clip",
+        "rejected": true
+      },
+      {
+        "name": "final_mismatch",
+        "rejected": true
+      }
+    ],
+    "scope": "Synthetic mutated-output controls only, not actual C++ failures."
+  },
+  "incomplete_retained": [
+    {
+      "name": "train91011_tick2500_cycles200",
+      "requested_cycles": 200,
+      "available_cycles": 190
+    },
+    {
+      "name": "seen91013_tick2400_cycles200",
+      "requested_cycles": 200,
+      "available_cycles": 101
+    },
+    {
+      "name": "seen91013_tick2500_cycles10",
+      "requested_cycles": 10,
+      "available_cycles": 1
+    },
+    {
+      "name": "seen91013_tick2500_cycles200",
+      "requested_cycles": 200,
+      "available_cycles": 1
+    }
+  ],
+  "forecast_substeps": 3524,
+  "scope": "Independent rational command/progress and frozen native base physical composition, conditional seen records. Component only, no plant/task/controller/timing acceptance.",
+  "report_sha256": "f8b8265718913f50d2fa0051982396d4bac203be30fefb1bc16b703711cf26ae"
+}
