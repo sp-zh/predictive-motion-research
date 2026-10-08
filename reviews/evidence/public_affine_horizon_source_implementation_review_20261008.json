@@ -1,0 +1,67 @@
+{
+  "decision": "PASS_BOUNDED_SOURCE_SEMANTICS_AND_PLAN_CEILING_FIX",
+  "phase5": "NOT_ACCEPTED",
+  "numerical_verification": "NOT_RUN",
+  "builds": 0,
+  "model_calls": 0,
+  "reviewer": "/root/predictive_math_audit",
+  "producer_manifest_sha256": "af52d0c908266f6b9462047309b2c73fb91b40a24a9461ded9475afaf307ec2c",
+  "reviewed_current_core": {
+    "sha256": "b071ba6c260060c2f06630873252c24d8552bb9fcefe6384d8460b175ec394fc",
+    "bytes": 13861
+  },
+  "reviewed_current_native": {
+    "sha256": "5804cb4dfb0a43f99bb24bb81d07ccc0e1af24c559ec58902b0d47c4b3d3f487",
+    "bytes": 5536
+  },
+  "reviewed_current_probe": {
+    "sha256": "1a4a6f0b3ab8093cd4403b381881630a5967bc79bcc127bba288cf08cfe12e6d",
+    "bytes": 34558
+  },
+  "schema": {
+    "sha256": "a8be304e1a3bc8d5090826f81a4bd5f6a9686621c15cfbc73441cfde7a5859a9",
+    "bytes": 18256
+  },
+  "bounds": "N1/N4 fixed diagnostic interface only; no claim N20/fullhorizon/timing/physical admissibility",
+  "semantic_scope": [
+    "Actual offset/M/P and independent lifted elimination",
+    "Cell-prefix sample/initial propagation and actual native cumulative normalization",
+    "Full rectangular factor+linear+constant and ordered complete sum",
+    "Raw H preserved; literal polynomial derivatives use symmetricpart",
+    "Failure original_output retained; no failed matrices/proof",
+    "Preallocation planned ceiling now enforced also on failure, hard8m/16m quotas retained"
+  ],
+  "retained_static_corrections": [
+    "Before-source/shape/policy/copy/container/native-scope/planned-budget revisions all preserved",
+    "Explicit carrier/vector copies charged; known rosters reserve capacity",
+    "Source integer policy fields and cstdint portability clarified"
+  ],
+  "numerical_and_runtime_budget_coverage": "Pending first frozen execution; static bounded review is not total RAM/allocator proof",
+  "transfer_failures": "All failed SSHmkdir/copy/verify attempt retained in originaltransferrecord; successful retry45payloadcurrentmanifest independentlychecked",
+  "archive": {
+    "sha256": "00438285be2623b965976c2eaf6b8b75077729639368e7ed34cf029956b37bdf",
+    "bytes": 183469,
+    "regular_members": 53,
+    "payloads": 52,
+    "all_payloads_verified": true,
+    "scope": "Read-only/source-only C++ affine horizon implementation and root prep/audit definitions, retained static drafts and SSH transfer failure. Bounded source semantics/plan-ceiling review only, not built or numerically executed. No Model/plant/main/Phase5 acceptance.",
+    "Mac": "/Users/uot/Documents/ChatGPT/ros/transfer/incoming/root-public-affine-horizon-source-implementation-20261008/evidence.tar.gz",
+    "Dell": "/mnt/d/CodexTransfer/projects/predictive_motion/checkpoints/root-public-affine-horizon-source-implementation-20261008/evidence.tar.gz",
+    "all52_payloads_verified_on_both": true
+  },
+  "root_prepare_source_sha256": "91ca2ba5efee9267f42afbebce3c6ef888dfb92a520d3ca354315d302edb173a",
+  "root_audit_source_sha256": "77789bf1289ce1cf9874f5255fb240d17b1911826f4cc892b353afea2480785d",
+  "retained_earlier_FD_gate": "FAIL_RETAINED_IMMUTABLE",
+  "doc_addendum": "Guarantee is perarray scalar/fullshape validation beforeits allocation pluswholecase count/dimension/scope/conservativeplan beforematerialization; all code unchanged.",
+  "doc_addendum_archive": {
+    "sha256": "9977eeab5ad2759e69ef679424a21f4ba2d2e59ea6ef71713d876d5fdcde08fb",
+    "bytes": 25480,
+    "regular_members": 8,
+    "payloads": 7,
+    "all_payloads_verified": true,
+    "scope": "DOC-only perarray guarantee clarification; original sourceimplementation archive004382... unchanged; all code hashes unchanged, no execution.",
+    "Mac": "/Users/uot/Documents/ChatGPT/ros/transfer/incoming/root-public-affine-horizon-source-doc-addendum-20261008/evidence.tar.gz",
+    "Dell": "/mnt/d/CodexTransfer/projects/predictive_motion/checkpoints/root-public-affine-horizon-source-doc-addendum-20261008/evidence.tar.gz",
+    "all7_payloads_verified_on_both": true
+  }
+}

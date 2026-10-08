@@ -165,3 +165,12 @@ This v1 prototype has a fixed N1/N4 diagnostic envelope; the project's
 configurable N20/.8s and1.5s profiles still require a larger reviewed version.
 All interface drafts and exact prepared source inputs are preserved on both
 hosts. See the [source checkpoint](../reviews/evidence/public_affine_horizon_source_checkpoint_20261008.json).
+
+The separate affine horizon core/CLI/native adapter now has a bounded source
+semantic review. Ordered full-cost fields, literal raw-H polynomial derivatives,
+archived relevant map/state native normalization and failure-path preallocation
+ceilings are explicit. Root12-case/23-output-control and producer10-case/14-control
+verification scripts are prepared as source only. No new build or numerical
+execution has occurred. All static revisions and the temporary SSH transfer
+failure are preserved, with52 source-preparation payloads verified on Mac/Dell.
+See [source implementation checkpoint](../reviews/evidence/public_affine_horizon_source_implementation_review_20261008.json).

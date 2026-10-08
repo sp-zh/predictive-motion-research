@@ -169,9 +169,10 @@ Limits additionally fix max_problem_numeric_elements=8000000 and
 max_cli_numeric_elements=16000000, counting input matrices/vectors, retained
 assembly/objective/evaluation arrays, planned dense scratch matrices and numeric
 serialization arrays. max_matrix_elements=2000000 still limits any single array.
-Before Eigen allocations, the loader inspects scalar types and exact shapes,
-uses overflow-checked size_t addition/multiplication, and computes a conservative
-whole-problem plan covering all cells, sample views, factors, term evaluations,
+Before each numeric array allocation, its vector/matrix loader inspects that
+array's scalar types and complete shape. Separately, before Eigen materialization,
+the loader uses overflow-checked size_t addition/multiplication and computes a
+conservative whole-problem plan covering all cells, sample views, factors, term evaluations,
 sum factors and elimination workspace. Before loading all cases, it also checks
 the aggregate declared plan against the CLI budget. A shared CliBudget survives
 case failures; each ProblemBudget consumes its own and shared remaining budget
@@ -210,3 +211,64 @@ resource checks may still refuse a dense case. Public source samples require
 2*sum(cycles)<=512, so this version also does not guarantee every long duration
 allowed by another module. Larger resource envelopes or configurable limits
 require a separate reviewed version and freeze. No silent N20 support claim.
+
+## Source implementation revision 4 loader/bridge pinning
+
+Dependency implementation choice: yaml-cpp with an independent strict JSON
+grammar, duplicate decoded-key and depth checks; no nlohmann header was installed
+on Dell. OpenSSL EVP checks artifact bytes BEFORE any source JSON parse.
+No dependency install, build or numerical call has been performed.
+
+Failure.source_diagnostic is exactly selectedrow.original_output, preserving all
+original flags/value/errors/maps/prefixes. For generic or absence of a selected
+public row it is {}. No wrapper or fabricated tail is inserted. No failure has
+assembly/objective/evaluation/native_bridge fields.
+
+Successful RESULT additionally has native_bridge with typed bools
+used_native_normalization, matched_json_cumulative_fields,
+multicycle_local_cumulative_distinct, and source_file_sha256,
+source_binary_sha256,cell_count,sample_count. Public cases MUST reconstruct the
+archived Result carrier, keeping lastcycle Map.A/B/defect/origin from the last
+saved cycle map while assigning cell_* from fullcell JSON; they call the actual
+normalize_public_native function, compare its cumulative cell and sample fields
+to independently parsed JSON, and refuse mismatch. The first two booleans are
+true; distinct is true when a multicycle cell has different saved local/cumulative
+A/B/defect (required for N4 fixture). Hashes match source identity; counts match
+complete roster. Generic success has all three bools false, hashes empty and
+counts zero. A helper declaration alone cannot produce this evidence. No Model
+constructor or new original forward call is linked or made.
+
+The conservative preallocation plan is checked per-case and across CLI before
+Eigen materialization; actual numeric charges including serialization remain
+bounded and must not exceed that plan. Failed-case charges are never released.
+All allocations retain individual caps, and arithmetic product/addition bounds
+reject even cancellation-dependent extreme values that risk intermediate overflow.
+The output file uses exclusive creation after complete finite JSON serialization.
+I/O failures retain any partial output as failure evidence, never success.
+
+Native bridge validation scope is explicitly "archived relevant map/state carrier
+normalization". Reconstructed Result materializes the maps, state, timing and
+forward-certificate fields consumed by normalize_public_native. Unused friction,
+clip and other auxiliary Substep fields remain defaults. The proof neither claims
+a complete byte-identical original native Result nor revalidates physical/friction
+auxiliary fields. Full original JSON remains byte-pinned; refused diagnostic
+objects retain every original field exactly. No extra physical calls are made.
+This is a scope clarification only; proof field names and executable code unchanged.
+
+Per-case precomputed plan is now bound to ProblemBudget.planned_numeric_elements
+BEFORE materialization. Every reserve checks the new cumulative problem charge
+against that plan as well as fixed problem/CLI hard caps before modifying either
+counter or allocating. Direct C++ callers default to the fixed problem hard cap;
+CLI uses its precomputed planned[j], including zero for authentic refusals.
+A failure cannot skip the planned ceiling, and no failed-case charge is refunded.
+The final success-end inequality remains an additional check only. An
+underestimated plan is a retained resource refusal, never a post-result retuning.
+
+Final documentation guarantee: whole-case dimension/count/scope planning and
+conservative cumulative numeric budget precede Eigen materialization. Individual
+vector/matrix routines validate each complete array's shape and scalar types
+before allocating THAT array. Additional preflight scans are useful but do not
+constitute a guarantee that every malformed field in the complete case is
+rejected before ANY Eigen allocation. Later refusal remains bounded by the
+prebound case/CLI budgets and preserves failure evidence. This documentation
+clarification makes no code, numerical gate or fixture change.

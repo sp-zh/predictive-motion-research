@@ -29,6 +29,9 @@ struct ProblemBudget {
   CliBudget& cli;
   std::size_t charged_numeric_elements=0;
   const Limits& limits;
+  // Direct C++ callers default to the fixed hard problem bound. CLI supplies
+  // its exact conservative precomputed case ceiling, including failure cases.
+  std::size_t planned_numeric_elements=Limits{}.max_problem_numeric_elements;
   void reserve(std::size_t numeric_elements);
 };
 struct Scope {

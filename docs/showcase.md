@@ -376,3 +376,8 @@ and independent oracle definitions are preserved without evaluation. There is
 no new simulated motion, matrix result or cost figure for this source-only
 checkpoint. Its fixed small diagnostic envelope is separate from the pending
 full project horizon and Phase5 task/timing results.
+
+The [source implementation checkpoint](../reviews/evidence/public_affine_horizon_source_implementation_review_20261008.json)
+preserves the separate algebra kernel and its review before any build or new
+numerical output. Actual matrix/cost figures will follow frozen numerical
+verification; existing physical renders and diagnostic plots retain their scope.
