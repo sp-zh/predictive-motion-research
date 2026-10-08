@@ -1,0 +1,55 @@
+{
+  "decision": "PASS_FIXED_AFFINE_HORIZON_COST_ALGEBRA_COMPONENT",
+  "recorded_utc": "2026-10-08T19:19:47.912768+00:00",
+  "phase5": "NOT_ACCEPTED",
+  "phase6": "NOT_STARTED",
+  "accepted_through": "Phase4",
+  "producer": {
+    "first_attempt_exit": 0,
+    "cases": 10,
+    "positive": 4,
+    "expected_refusals": 6,
+    "output_mutations_rejected": 14,
+    "original_atol_rtol": 2e-12,
+    "native_json_sha256": "1d10bca870b6b6e504a0d92bfa1b5d0b6104aab5c83bb4f1e54439f41e051679",
+    "verification_sha256": "b3acfd628a7eb99bb8b23d0c44bcfbb7967c02cc2e67a5fbf48b12094b361873",
+    "malformed_documents_exit": [
+      1,
+      1,
+      1
+    ],
+    "malformed_output_files_created": 0
+  },
+  "root": {
+    "first_attempt_exit": 0,
+    "cases": 12,
+    "positive": 4,
+    "expected_refusals": 8,
+    "output_mutations_rejected": 23,
+    "output_abs": 1e-11,
+    "output_rel": 1e-10,
+    "native_json_sha256": "c086df27196037e5ee0e066d7dc769464ba924cf122f06ba26ffc4bf98f15cde",
+    "audit_sha256": "4655996e509d8399461961afc867e0ac91263d179ad3e2cdc874c1b0ba5bfee8"
+  },
+  "kernel_processes_total": 5,
+  "nonempty_batches_total": 2,
+  "original_model_plant_main_solver_scorer_calls": 0,
+  "verified_behavior": [
+    "Full30-state physical/accepted-command/progress affine coefficient assembly; independent8-controls percell",
+    "Recursive offsets/M/P versus independently pivoted lifted L/E/f/initialselector elimination",
+    "All2ms prefix samples and cumulative actual-coordinate propagation without nominal reset",
+    "Full rectangular factor/offset/linear/constant substitution, rawH/g/constant, separate gradients and symmetric derivativeHessian",
+    "Canonical perterm ordered sum and zero-term behavior",
+    "Archived carrier last-cycle-local versus wholecell-cumulative native normalization matches cached JSON",
+    "Authentic original failed/unsupported source diagnostics retained without a fabricated future tail",
+    "Fixed invalid input/document and altered output controls rejected"
+  ],
+  "acceptance_limits": [
+    "Only fixed N1/N4 public-source fixtures and generic N2/N3 algebra fixtures; not project20cell/.8s/1.5s horizon acceptance",
+    "Native bridge covers cached state/map carrier normalization, not a real Model construction or fresh nonlinear forecast",
+    "Shifted initial values are algebra coordinates; no closed-domain/admissibility/finite trust radius/safety/uniform error/controller-readiness certificate",
+    "Earlier friction-branch FD gate failure remains retained; this result does not replace it",
+    "No main-MPC integration, solver optimum, plant motion, stopping/task/accuracy/timing or Phase5 acceptance"
+  ],
+  "figures": "Three root-data diagnostic figures; final PNG/SVG inspected, units/source and numericalscope recorded; original crowded-tick QA retained. No new arm-task video because no motion was executed."
+}

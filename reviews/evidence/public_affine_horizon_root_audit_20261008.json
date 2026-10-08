@@ -1,0 +1,204 @@
+{
+  "decision": "PASS_PREDECLARED_AFFINE_KERNEL_CLI_ALGEBRA",
+  "cases": [
+    {
+      "name": "root_affine_public_startup",
+      "success": true,
+      "samples": 2,
+      "terms": 2
+    },
+    {
+      "name": "root_affine_public_nonuniform_shifted",
+      "success": true,
+      "samples": 20,
+      "terms": 3
+    },
+    {
+      "name": "root_affine_generic_nonsymmetric",
+      "success": true,
+      "samples": 6,
+      "terms": 2
+    },
+    {
+      "name": "root_affine_public_empty_terms",
+      "success": true,
+      "samples": 2,
+      "terms": 0
+    },
+    {
+      "name": "root_refuse_future_nominal_original_prefix",
+      "success": false,
+      "refusal_code": "SOURCE_INCOMPLETE_OR_UNSUPPORTED"
+    },
+    {
+      "name": "root_refuse_initial_C_boundary_both",
+      "success": false,
+      "refusal_code": "SOURCE_INCOMPLETE_OR_UNSUPPORTED"
+    },
+    {
+      "name": "root_refuse_initial_shape",
+      "success": false,
+      "refusal_code": "INVALID_SOURCE_SHAPE_OR_RESOURCE"
+    },
+    {
+      "name": "root_refuse_boolean_scalar",
+      "success": false,
+      "refusal_code": "INVALID_SOURCE_SHAPE_OR_RESOURCE"
+    },
+    {
+      "name": "root_refuse_true_scope",
+      "success": false,
+      "refusal_code": "INVALID_SOURCE_SHAPE_OR_RESOURCE"
+    },
+    {
+      "name": "root_refuse_missing_scope",
+      "success": false,
+      "refusal_code": "INVALID_SOURCE_SHAPE_OR_RESOURCE"
+    },
+    {
+      "name": "root_refuse_noninteger_mesh",
+      "success": false,
+      "refusal_code": "INVALID_SOURCE_SHAPE_OR_RESOURCE"
+    },
+    {
+      "name": "root_refuse_derived_H_overflow",
+      "success": false,
+      "refusal_code": "INVALID_SOURCE_SHAPE_OR_RESOURCE"
+    }
+  ],
+  "mutation_controls": [
+    {
+      "name": "last_cycle_local_not_wholecell",
+      "rejected": true,
+      "error": "independent pivoted lifted L"
+    },
+    {
+      "name": "tied_distinct_cell_controls",
+      "rejected": true,
+      "error": "independent pivoted lifted X_control"
+    },
+    {
+      "name": "nominal_future_reset",
+      "rejected": true,
+      "error": "state offset"
+    },
+    {
+      "name": "missing_initial_P",
+      "rejected": true,
+      "error": "state initial"
+    },
+    {
+      "name": "missing_sample_P",
+      "rejected": true,
+      "error": "sample eliminated initial"
+    },
+    {
+      "name": "half_square_factor_error",
+      "rejected": true,
+      "error": "complete objective H"
+    },
+    {
+      "name": "missing_control_cross",
+      "rejected": true,
+      "error": "complete objective H"
+    },
+    {
+      "name": "missing_nonzero_progress_linear",
+      "rejected": true,
+      "error": "complete objective g"
+    },
+    {
+      "name": "missing_explicit_constant",
+      "rejected": true,
+      "error": "complete objective used_constant"
+    },
+    {
+      "name": "missing_condensed_constant",
+      "rejected": true,
+      "error": "complete objective constant"
+    },
+    {
+      "name": "missing_sample_addition",
+      "rejected": true,
+      "error": "complete objective used_F"
+    },
+    {
+      "name": "missing_tail",
+      "rejected": true,
+      "error": "all sample views"
+    },
+    {
+      "name": "fabricated_extra_case",
+      "rejected": true,
+      "error": "complete ordered output roster"
+    },
+    {
+      "name": "false_scope",
+      "rejected": true,
+      "error": "no unsupported scope claims"
+    },
+    {
+      "name": "missing_scope",
+      "rejected": true,
+      "error": "exact scope roster"
+    },
+    {
+      "name": "bad_shape",
+      "rejected": true,
+      "error": "shape (150, 30)"
+    },
+    {
+      "name": "boolean_matrix_entry",
+      "rejected": true,
+      "error": "typed numeric array"
+    },
+    {
+      "name": "nonfinite_matrix_entry",
+      "rejected": true,
+      "error": "finite JSON number"
+    },
+    {
+      "name": "failed_packet_fake_assembly",
+      "rejected": true,
+      "error": "no partial/fabricated failure matrices/proof"
+    },
+    {
+      "name": "missing_native_normalization_proof",
+      "rejected": true,
+      "error": "actual archived-carrier native normalization/cumulative distinction proof"
+    },
+    {
+      "name": "missing_multicycle_native_distinction",
+      "rejected": true,
+      "error": "actual archived-carrier native normalization/cumulative distinction proof"
+    },
+    {
+      "name": "wrong_native_source_hash",
+      "rejected": true,
+      "error": "actual archived-carrier native normalization/cumulative distinction proof"
+    },
+    {
+      "name": "generic_false_native_claim",
+      "rejected": true,
+      "error": "generic has no native public bridge proof"
+    }
+  ],
+  "source_sha256": "77789bf1289ce1cf9874f5255fb240d17b1911826f4cc892b353afea2480785d",
+  "helper_sha256": "4b8f0328125e8e797ddafcc4ae0e6e0572f65ca2fc5f0336a25b3d25b00b4e84",
+  "binary_sha256": "6d08f9d00ccc939770efc9bd0c704745eba972a80f2511e0441691761eff7b4d",
+  "freeze_sha256": "ec1b76a234e63c3dd6e3cb576d60ba1ef99c9130985690a4ba9313882071994f",
+  "input_sha256": "56083746e96958292f9d9c17649238794a8979f313037e42a4809a0cc0ed4991",
+  "policy_sha256": "cb8b7a3ea9da471815ffdfaac62641dc5934bacbeab7773e5a1b4396d4c376c9",
+  "output_abs": 1e-11,
+  "output_rel": 1e-10,
+  "kernel_calls": 1,
+  "schema_sha256": "a8be304e1a3bc8d5090826f81a4bd5f6a9686621c15cfbc73441cfde7a5859a9",
+  "original_model_calls": 0,
+  "native_bridge_validated": true,
+  "native_bridge_public_success_cases": 3,
+  "native_bridge_scope": "archived Result carrier normalization only; no real Model constructor/forward call",
+  "refusal_codes_static_freeze": "SOURCE_INCOMPLETE_OR_UNSUPPORTED; INVALID_SOURCE_SHAPE_OR_RESOURCE",
+  "retained_FD_gate": "FAIL_RETAINED_IMMUTABLE",
+  "phase5": "NOT_ACCEPTED",
+  "scope": "Independent bounded affine-kernel CLI audit, source-only until authorization.\n\nOne kernel batch, no original model/physical binary calls. The frozen root helper\nindependently assembles and pivots L. Retained source nominal values never reset\nactual-coordinate propagation. Output mutation controls make no binary calls.\nNative proof covers archived Result carrier normalization only, no real Model\nconstruction/forward call. No model accuracy, admissibility or Phase5 claim.\n"
+}

@@ -1,0 +1,75 @@
+{
+  "scope": "Render already validated affine algebra data; no kernel/model/plant calls.",
+  "kernel_output_sha256": "c086df27196037e5ee0e066d7dc769464ba924cf122f06ba26ffc4bf98f15cde",
+  "audit_report_sha256": "4655996e509d8399461961afc867e0ac91263d179ad3e2cdc874c1b0ba5bfee8",
+  "renderer_sha256": "1a8856d1145666802dd5e4bc0d947e90ca4e2dfaf7039b24ac24661dd3741314",
+  "assets": [
+    {
+      "file": "public_affine_horizon_root_outcomes.png",
+      "sha256": "f7020f1d058e4b2aa76f5e13cfa3a1d00d8c38e4ef19390e74e7b410a02556f5",
+      "bytes": 88332,
+      "caption": "Root12-case first attempt and23 output-mutation controls."
+    },
+    {
+      "file": "public_affine_horizon_root_outcomes.svg",
+      "sha256": "37869d4452ef0e6669db9119b759de33aa98382945d171e6b4c6cf4c14cd3041",
+      "bytes": 48627,
+      "caption": "Root12-case first attempt and23 output-mutation controls."
+    },
+    {
+      "file": "public_affine_horizon_distinct_progress_inputs.png",
+      "sha256": "b3120a4aaeaec288dd19d5e54c14a6545765746282b4e73a81738ff928dfdeca",
+      "bytes": 135787,
+      "caption": "Serialized cumulative sample sensitivities; final own-cell b columns .004/.012/.008/.016s."
+    },
+    {
+      "file": "public_affine_horizon_distinct_progress_inputs.svg",
+      "sha256": "c1ed8d371759090512cc840f97ea77f0c9c0f6b548d3e96a9d254d8031be21c5",
+      "bytes": 69521,
+      "caption": "Serialized cumulative sample sensitivities; final own-cell b columns .004/.012/.008/.016s."
+    },
+    {
+      "file": "public_affine_horizon_objective_agreement.png",
+      "sha256": "544c166bf6837a9db9f3e83408f215c7655608b49def46d1fd1baa17f586f96c",
+      "bytes": 100794,
+      "caption": "Differences between serialized full and condensed evaluations, independently audited against the root reference."
+    },
+    {
+      "file": "public_affine_horizon_objective_agreement.svg",
+      "sha256": "0362ca8b18845f4c8c27a25f39a1016336c2a11ea0e17059591dd6fc64be7250",
+      "bytes": 76527,
+      "caption": "Differences between serialized full and condensed evaluations, independently audited against the root reference."
+    }
+  ],
+  "own_cell_b_sensitivity_s": [
+    0.004,
+    0.012,
+    0.008,
+    0.016
+  ],
+  "normalized_objective_difference": [
+    [
+      4.962821074769971e-06,
+      5.898768819150848e-06,
+      9.818293938577956e-07
+    ],
+    [
+      1.8891339056056755e-06,
+      8.305868685305386e-06,
+      2.8739013620020754e-06
+    ],
+    [
+      0.0,
+      6.284059725514541e-07,
+      1.1644940083592706e-06
+    ],
+    [
+      0.0,
+      0.0,
+      0.0
+    ]
+  ],
+  "kernel_calls_in_rendering": 0,
+  "original_model_calls": 0,
+  "phase5": "NOT_ACCEPTED"
+}

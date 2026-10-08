@@ -1,0 +1,40 @@
+{
+  "scope": "Completed first-attempt cached affine algebra unit and inspected diagnostic plots",
+  "review": "reviews/evidence/public_affine_horizon_algebra_root_review_20261008.json",
+  "freeze_sha256": "ec1b76a234e63c3dd6e3cb576d60ba1ef99c9130985690a4ba9313882071994f",
+  "dependency_archive_sha256": "3ebbfea538f12a2c4ad426768c8424e1ab5c03978d38bab968e34aaa4a0c923b",
+  "producer_archive": {
+    "sha256": "8f66d069d1f1d052b469832dae23ac0add828b8fe2ab2df9fee40541c0a648bb",
+    "bytes": 961782,
+    "regular_members": 32,
+    "payloads": 31,
+    "Mac": "/Users/uot/Documents/ChatGPT/ros/results/phase5-executor-checkpoints-01a114d9/public-affine-horizon-producer-v2-numerical-20261008/evidence.tar.gz",
+    "Dell": "/mnt/d/CodexTransfer/projects/predictive_motion/checkpoints/public-affine-horizon-producer-v2-numerical-20261008/evidence.tar.gz",
+    "verified_copies": [
+      "Dellpublisher allmembers plus before/after2921 frozenclosure",
+      "Mac independent all32members and31payloads",
+      "MAC verification reportcopiedD withSHA confirmation"
+    ]
+  },
+  "root_archive": {
+    "sha256": "cdad58b2531276969c2ce2060cd3de2ad0023c78a4e992a1eb10a5eb645bfa92",
+    "bytes": 1700787,
+    "regular_members": 42,
+    "payloads": 41,
+    "Mac": "/Users/uot/Documents/ChatGPT/ros/transfer/incoming/root-public-affine-algebra-v2-first-20261008/evidence.tar.gz",
+    "Dell": "/mnt/d/CodexTransfer/projects/predictive_motion/checkpoints/root-public-affine-algebra-v2-first-20261008/evidence.tar.gz",
+    "verified_copies": [
+      "Mac allmembers/payloads",
+      "Dell all42members and41payloads verified beforefinalarchive/READY"
+    ]
+  },
+  "kernel_calls": 5,
+  "original_model_calls": 0,
+  "phase5": "NOT_ACCEPTED",
+  "retained_failures": [
+    "old firstcompile exit2, earlierFDbranchfailure, two connection/report-copy failures and external publication history; no rerun or gate tuning",
+    "Initial figure tick crowding retained under visualQA; final layout fixes only ticks, no numerical rerun"
+  ],
+  "publication": "New completed numeric-unit source/reviews/figures/docs awaiting specific public upload authorization; prior7file2277262 retention approved. Large evidence/runtime archives stay Mac/Dell, never part of this Git payload.",
+  "milestone_backup": "Local archives verified; prepare small source/review/docs/figure checkpoint then request explicit public payload approval beforepush"
+}

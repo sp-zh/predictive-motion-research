@@ -391,3 +391,16 @@ Checkpoint 365bcf6 preserves the pause after the affine-horizon build/empty-pref
 ## Affine verification freeze — 2026-10-08
 
 The versioned verification sources and full dependencies are preserved and hash verified on both hosts. This unit contains no new numerical result or executed motion, so it adds no performance plot or task clip. Existing renders and diagnostics remain available above. [Checkpoint and validation scope](../reviews/evidence/public_affine_horizon_checker_v2_checkpoint_20261008.json).
+
+
+## Fixed affine algebra diagnostics — 2026-10-08
+
+These three figures use the first independently validated 12-case output. They demonstrate the cached coefficient algebra component; no motion, accuracy, safety or Phase5 acceptance is claimed. Units, source hashes, fixed cases and rendering QA are recorded in [provenance](../reviews/evidence/public_affine_horizon_root_figures_20261008.json). No new task video exists because this unit executes no trajectory.
+
+![Root algebra outcomes](../figures/public_affine_horizon_root_outcomes.png)
+
+![Distinct progress-input columns](../figures/public_affine_horizon_distinct_progress_inputs.png)
+
+![Full and condensed objective agreement](../figures/public_affine_horizon_objective_agreement.png)
+
+[Independent component review](../reviews/phase_5_public_affine_horizon_algebra_20261008.md); [verified evidence archives](../reviews/evidence/public_affine_horizon_algebra_checkpoint_20261008.json).

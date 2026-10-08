@@ -199,3 +199,10 @@ USB4 SSH recovered after the stopped Ubuntu/WSL instance and missing keeper were
 
 
 Before numerical release, the Mac USB4 bridge became inactive and lost its link-local IP. The extra root verification-report copy and second Dell archive read timed out (exit 255); they remain unconfirmed. Already verified immutable archive copies remain preserved on both hosts. The source checkpoint is saved while reconnection is pending; no numerical run has started. Repository visibility is now Public at the human’s explicit instruction in the communication-check chat; historical private wording is retained in immutable evidence.
+
+
+## First fixed affine algebra verification — 2026-10-08
+
+Both frozen first attempts pass: producer 10 cases (4 positive / 6 expected refusals), root 12 cases (4 / 8), all 37 output mutations rejected. Three malformed-document calls reject with exit 1 / no output. Recursive/lifted state and sample maps, full factor/offset/linear/constant objectives, actual initial shifts, native cumulative normalization and preserved source failures agree with the independent references. Original model/plant/solver/main/scorer calls remain zero.
+
+Three inspected root-data diagnostic plots and full provenance are saved. Complete producer/root immutable archives are verified on both Mac and Dell. The earlier FD branch failure remains unchanged; public-source validation is limited to fixed N1/N4 algebra, not full project horizon or robot performance. [Independent review](../reviews/phase_5_public_affine_horizon_algebra_20261008.md); [checkpoint identities](../reviews/evidence/public_affine_horizon_algebra_checkpoint_20261008.json). New numerical-unit public publication remains a separate pending authorization; no new main controller or motion run is released.
