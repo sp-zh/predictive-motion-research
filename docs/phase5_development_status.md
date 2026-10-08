@@ -25,6 +25,23 @@ Evidence and scope:
 The separate public C++ physical transition now passes40 complete previously seen recorded windows,4 synthetic transition cases,8 state rejections,14 QP cases and20 constant rejections;4 EOF requests remain incomplete. Root independently calls the frozen binary on10 state/14 QP cases. The model contains the tool and armature exactly once, owns PinoData, and never receives plant state. No augmentation/Jacobian/main-MPC integration occurs. A tiny-positive-eta labeling false rejection is shared with old Python and reproduced independently; fixed FR3 eta>=.248 is unaffected, while generic support remains open as NUM-007.
 [Independent isolated C++ review](../reviews/evidence/public_coupled_cpp_v1_root_review_20261007.md).
 
+Separate C++ v2 now corrects true-bound classification, including declared tiny
+and subnormal force fixtures. All52 state/30 QP/20 constant results have their
+expected outcomes;40 complete seen-input windows remain within original gates.
+Root independently checks10 states/16 QPs and11 schema controls. The strict
+v2 output verifier requires complete ordered unique rosters, typed statuses and
+finite full traces. NUM-007/SCI-003 close only for v2; original Python/v1 limits
+remain preserved. Exact bound labels do not certify a unique Jacobian. Both
+hosts' immutable evidence and private source checkpoint b1d5c2f are verified.
+[Independent v2 review](../reviews/evidence/public_coupled_cpp_v2_root_review_20261007.md).
+
+The next isolated unit extends the public model with persistent accepted C/w
+and progress s/r alongside physical q/v. Its command clock must compose real
+4ms cycles with two held-target2ms physical steps, including nonuniform cells.
+No new plant run or main-controller integration is authorized by component
+parity alone; derivative validation remains a separate prerequisite.
+
+
 The one approved seed91013 simulation completes with the frozen public-v2 predictor and strict scorer. All9796 complete windows have zero failures; active2/4/40/800ms maxima are below original limits and near roundoff. Root independently verifies all5002 state records/2002attempts/262496captured QP rows and the exact window roster, plus21 predeclared forecasts and six enumerated force QPs. Source/model/parameters remain unchanged, with no fitting or rerun. There are1996full-cycle4ms misses, and the final new stop starts after a long hold. This is PASS_CONDITIONAL_RECORDED_INPUT_PREDICTION for known curated development input; main-controller integration, full task, moving-stop, uniform-domain,250Hz and Phase5 acceptance remain pending.
 [Independent actual-run review](../reviews/evidence/public_coupled_validation_91013_root_review_20261007.md).
 
