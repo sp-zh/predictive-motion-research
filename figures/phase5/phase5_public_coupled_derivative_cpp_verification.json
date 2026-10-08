@@ -1,0 +1,12 @@
+{
+  "figure_sha256": "4c3c08ccb833f27e48e542b0282d448afc93ed0be0b33ddfa1921a122e4e6d5b",
+  "script_sha256": "0ab74e6b371dae60834bbe1dc4ff52d4b5ea300fa8c523f754f2dedd44b63436",
+  "report_sha256": "d0a8d0199fbebdbf6d28b43609a24a7b36bf0214cdd7674ce9b079e80dfbf73a",
+  "native_output_sha256": "ced96372da9e9f3f1d229a2264c9a20d4fbd6f021470fba45304a61d4d4cf5f5",
+  "input_sha256": "a0ac9f64d383077da2153a8239a030f77d0baab535796fa2051369d10714bff0",
+  "freeze_sha256": "44113654ee0e16ed4c44ddf691a74213f68ff9b0f1deedc9b84c01a88673ff40",
+  "units": "Jacobian panel units by block; normalized verification ratio dimensionless; epsilon pertains q(rad),v(rad/s),C(rad).",
+  "data_source": "Actual frozen analytic native outputs and original-base central finite differences; all21columns at both predeclared epsilon values.",
+  "scope": "Bounded physical2ms derivative development reference. Phase5 NOT_ACCEPTED; no timing/controller/task ranking.",
+  "verification_zero_floor": 1e-12
+}

@@ -1,0 +1,2103 @@
+{
+  "status": "PASS_BOUNDED_PHYSICAL_DERIVATIVE_REFERENCE_ONLY",
+  "phase5": "NOT_ACCEPTED",
+  "phase6": "NOT_STARTED",
+  "records": [
+    {
+      "name": "train91011_tick100",
+      "value_success": true,
+      "jacobian_success": true,
+      "branches": {
+        "control": [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        "actuator": [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        "joint_force": [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        "friction": [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ]
+      },
+      "epsilons": [
+        {
+          "epsilon": 1e-06,
+          "transition": {
+            "max_absolute": 2.2713264602458594e-10,
+            "max_gate_ratio": 0.00038675411949248226
+          },
+          "nq": {
+            "max_absolute": 2.7176945138762676e-09,
+            "max_gate_ratio": 0.0007994240279245918
+          },
+          "nv": {
+            "max_absolute": 1.8944416237554745e-09,
+            "max_gate_ratio": 0.003784958201729437
+          },
+          "mass_q": [
+            {
+              "max_absolute": 0.0,
+              "max_gate_ratio": 0.0
+            },
+            {
+              "max_absolute": 1.949995720451625e-11,
+              "max_gate_ratio": 3.204871102161461e-05
+            },
+            {
+              "max_absolute": 6.490452619800635e-11,
+              "max_gate_ratio": 9.430289807860257e-05
+            },
+            {
+              "max_absolute": 1.6769341470990184e-10,
+              "max_gate_ratio": 7.465783019866505e-05
+            },
+            {
+              "max_absolute": 5.8860472051947e-11,
+              "max_gate_ratio": 7.933779351642927e-05
+            },
+            {
+              "max_absolute": 8.523182160047327e-11,
+              "max_gate_ratio": 0.00015090402691248948
+            },
+            {
+              "max_absolute": 1.185318510010802e-10,
+              "max_gate_ratio": 0.00023667135320546166
+            }
+          ]
+        },
+        {
+          "epsilon": 3e-07,
+          "transition": {
+            "max_absolute": 7.557757752962857e-10,
+            "max_gate_ratio": 0.001321237894278701
+          },
+          "nq": {
+            "max_absolute": 1.2271731852919743e-08,
+            "max_gate_ratio": 0.002557939192035592
+          },
+          "nv": {
+            "max_absolute": 7.019649990051618e-09,
+            "max_gate_ratio": 0.014020157579580635
+          },
+          "mass_q": [
+            {
+              "max_absolute": 0.0,
+              "max_gate_ratio": 0.0
+            },
+            {
+              "max_absolute": 2.049418412752857e-10,
+              "max_gate_ratio": 0.00012835808236563376
+            },
+            {
+              "max_absolute": 4.3953463091384037e-10,
+              "max_gate_ratio": 0.00036315227879579195
+            },
+            {
+              "max_absolute": 3.1580571491218734e-10,
+              "max_gate_ratio": 0.00014264167336947256
+            },
+            {
+              "max_absolute": 4.289348182195951e-10,
+              "max_gate_ratio": 0.0005597888004118128
+            },
+            {
+              "max_absolute": 2.478350857870737e-10,
+              "max_gate_ratio": 0.0004387951794669145
+            },
+            {
+              "max_absolute": 5.15434245848892e-10,
+              "max_gate_ratio": 0.0010168752913645746
+            }
+          ]
+        }
+      ],
+      "pass_check": true
+    },
+    {
+      "name": "train91011_tick500",
+      "value_success": true,
+      "jacobian_success": true,
+      "branches": {
+        "control": [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        "actuator": [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        "joint_force": [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        "friction": [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ]
+      },
+      "epsilons": [
+        {
+          "epsilon": 1e-06,
+          "transition": {
+            "max_absolute": 2.5064688670937973e-10,
+            "max_gate_ratio": 0.0004938949994409338
+          },
+          "nq": {
+            "max_absolute": 1.465600085737151e-09,
+            "max_gate_ratio": 0.0006768672288962395
+          },
+          "nv": {
+            "max_absolute": 2.136581069264402e-09,
+            "max_gate_ratio": 0.004273161850295357
+          },
+          "mass_q": [
+            {
+              "max_absolute": 0.0,
+              "max_gate_ratio": 0.0
+            },
+            {
+              "max_absolute": 9.041656312547275e-12,
+              "max_gate_ratio": 8.558303935290117e-06
+            },
+            {
+              "max_absolute": 7.054268280626275e-11,
+              "max_gate_ratio": 4.073317684031581e-05
+            },
+            {
+              "max_absolute": 2.7571966931816405e-10,
+              "max_gate_ratio": 5.45494894603711e-05
+            },
+            {
+              "max_absolute": 1.9890844527026275e-10,
+              "max_gate_ratio": 0.00025957914199065693
+            },
+            {
+              "max_absolute": 8.21318568711149e-11,
+              "max_gate_ratio": 0.0001454376322039128
+            },
+            {
+              "max_absolute": 1.1082779138860133e-10,
+              "max_gate_ratio": 0.00022128727610237542
+            }
+          ]
+        },
+        {
+          "epsilon": 3e-07,
+          "transition": {
+            "max_absolute": 7.557139358738141e-10,
+            "max_gate_ratio": 0.0013406375788015592
+          },
+          "nq": {
+            "max_absolute": 8.60453575057818e-09,
+            "max_gate_ratio": 0.0038148415589349684
+          },
+          "nv": {
+            "max_absolute": 7.562748079730906e-09,
+            "max_gate_ratio": 0.015124888313479527
+          },
+          "mass_q": [
+            {
+              "max_absolute": 0.0,
+              "max_gate_ratio": 0.0
+            },
+            {
+              "max_absolute": 2.3108626123757858e-10,
+              "max_gate_ratio": 0.00016720865112095857
+            },
+            {
+              "max_absolute": 2.2551682743454649e-10,
+              "max_gate_ratio": 0.0002242490213182209
+            },
+            {
+              "max_absolute": 2.872830862088449e-10,
+              "max_gate_ratio": 0.00012981058067112935
+            },
+            {
+              "max_absolute": 6.15255110747448e-10,
+              "max_gate_ratio": 0.0008029191195788094
+            },
+            {
+              "max_absolute": 6.181499756507947e-10,
+              "max_gate_ratio": 0.0007352265913399488
+            },
+            {
+              "max_absolute": 3.646558610626016e-10,
+              "max_gate_ratio": 0.0007275948775001809
+            }
+          ]
+        }
+      ],
+      "pass_check": true
+    },
+    {
+      "name": "train91011_tick1250",
+      "value_success": true,
+      "jacobian_success": true,
+      "branches": {
+        "control": [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        "actuator": [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        "joint_force": [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        "friction": [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ]
+      },
+      "epsilons": [
+        {
+          "epsilon": 1e-06,
+          "transition": {
+            "max_absolute": 3.423797091676569e-10,
+            "max_gate_ratio": 0.0006847475460044313
+          },
+          "nq": {
+            "max_absolute": 3.036788598365092e-09,
+            "max_gate_ratio": 0.0009150541551049261
+          },
+          "nv": {
+            "max_absolute": 2.755534724008246e-09,
+            "max_gate_ratio": 0.005495203438879664
+          },
+          "mass_q": [
+            {
+              "max_absolute": 0.0,
+              "max_gate_ratio": 0.0
+            },
+            {
+              "max_absolute": 9.85878045867139e-12,
+              "max_gate_ratio": 1.8705919666484898e-05
+            },
+            {
+              "max_absolute": 8.632472514591427e-11,
+              "max_gate_ratio": 0.00012546107135619135
+            },
+            {
+              "max_absolute": 1.3572526436078647e-10,
+              "max_gate_ratio": 5.064682935102164e-05
+            },
+            {
+              "max_absolute": 1.333075871912115e-10,
+              "max_gate_ratio": 0.00017394664114872883
+            },
+            {
+              "max_absolute": 1.283000372609422e-10,
+              "max_gate_ratio": 8.680176556065221e-05
+            },
+            {
+              "max_absolute": 8.919846805621745e-11,
+              "max_gate_ratio": 0.00017575892228256136
+            }
+          ]
+        },
+        {
+          "epsilon": 3e-07,
+          "transition": {
+            "max_absolute": 1.1120152264287864e-09,
+            "max_gate_ratio": 0.0021912044292673846
+          },
+          "nq": {
+            "max_absolute": 7.522860556719024e-09,
+            "max_gate_ratio": 0.003310386017453586
+          },
+          "nv": {
+            "max_absolute": 6.898276393060539e-09,
+            "max_gate_ratio": 0.013779789691189422
+          },
+          "mass_q": [
+            {
+              "max_absolute": 0.0,
+              "max_gate_ratio": 0.0
+            },
+            {
+              "max_absolute": 1.38170955579775e-10,
+              "max_gate_ratio": 0.00026216374389830335
+            },
+            {
+              "max_absolute": 3.582449892292061e-10,
+              "max_gate_ratio": 0.00014692878059536021
+            },
+            {
+              "max_absolute": 2.539211063634639e-10,
+              "max_gate_ratio": 5.229328116970372e-05
+            },
+            {
+              "max_absolute": 3.847964863412656e-10,
+              "max_gate_ratio": 0.0005126589102095473
+            },
+            {
+              "max_absolute": 3.5796893227413307e-10,
+              "max_gate_ratio": 0.000273249819150526
+            },
+            {
+              "max_absolute": 5.248071473923366e-10,
+              "max_gate_ratio": 0.001048625363782731
+            }
+          ]
+        }
+      ],
+      "pass_check": true
+    },
+    {
+      "name": "train91011_tick2400",
+      "value_success": true,
+      "jacobian_success": true,
+      "branches": {
+        "control": [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        "actuator": [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        "joint_force": [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        "friction": [
+          0,
+          -1,
+          0,
+          0,
+          0,
+          0,
+          0
+        ]
+      },
+      "epsilons": [
+        {
+          "epsilon": 1e-06,
+          "transition": {
+            "max_absolute": 2.449629780738752e-10,
+            "max_gate_ratio": 0.0004899120092789692
+          },
+          "nq": {
+            "max_absolute": 1.634006707718072e-09,
+            "max_gate_ratio": 0.0005000258193296858
+          },
+          "nv": {
+            "max_absolute": 1.1719220926261105e-09,
+            "max_gate_ratio": 0.002340995907199123
+          },
+          "mass_q": [
+            {
+              "max_absolute": 0.0,
+              "max_gate_ratio": 0.0
+            },
+            {
+              "max_absolute": 8.668621376273222e-11,
+              "max_gate_ratio": 5.428979120788795e-05
+            },
+            {
+              "max_absolute": 7.828493409078874e-11,
+              "max_gate_ratio": 0.00011378994785451133
+            },
+            {
+              "max_absolute": 1.5700329925039114e-10,
+              "max_gate_ratio": 7.090446041159112e-05
+            },
+            {
+              "max_absolute": 1.7542961527894363e-10,
+              "max_gate_ratio": 0.00023786010418452974
+            },
+            {
+              "max_absolute": 1.6084478193789664e-10,
+              "max_gate_ratio": 0.00012806589221047988
+            },
+            {
+              "max_absolute": 1.8696789255701063e-10,
+              "max_gate_ratio": 0.00036840145640101624
+            }
+          ]
+        },
+        {
+          "epsilon": 3e-07,
+          "transition": {
+            "max_absolute": 7.728510214137789e-10,
+            "max_gate_ratio": 0.0015454137613451025
+          },
+          "nq": {
+            "max_absolute": 7.091192522068468e-09,
+            "max_gate_ratio": 0.005009645275573069
+          },
+          "nv": {
+            "max_absolute": 9.029191453324356e-09,
+            "max_gate_ratio": 0.01782426795866207
+          },
+          "mass_q": [
+            {
+              "max_absolute": 0.0,
+              "max_gate_ratio": 0.0
+            },
+            {
+              "max_absolute": 1.3535839116229909e-10,
+              "max_gate_ratio": 8.477217397625127e-05
+            },
+            {
+              "max_absolute": 1.8076710961434372e-10,
+              "max_gate_ratio": 0.000262751450400048
+            },
+            {
+              "max_absolute": 4.3794656789941655e-10,
+              "max_gate_ratio": 0.00010073595850602548
+            },
+            {
+              "max_absolute": 3.268265658107339e-10,
+              "max_gate_ratio": 0.00042665408306299355
+            },
+            {
+              "max_absolute": 3.3346289618485514e-10,
+              "max_gate_ratio": 0.000263344641040257
+            },
+            {
+              "max_absolute": 3.53946376114439e-10,
+              "max_gate_ratio": 0.0006982815855504068
+            }
+          ]
+        }
+      ],
+      "pass_check": true
+    },
+    {
+      "name": "seen91013_tick100",
+      "value_success": true,
+      "jacobian_success": true,
+      "branches": {
+        "control": [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        "actuator": [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        "joint_force": [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        "friction": [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ]
+      },
+      "epsilons": [
+        {
+          "epsilon": 1e-06,
+          "transition": {
+            "max_absolute": 3.1850240717404277e-10,
+            "max_gate_ratio": 0.0006278716149494171
+          },
+          "nq": {
+            "max_absolute": 2.861940018306086e-09,
+            "max_gate_ratio": 0.0012088113296160909
+          },
+          "nv": {
+            "max_absolute": 2.6079622116384482e-09,
+            "max_gate_ratio": 0.00521052156982956
+          },
+          "mass_q": [
+            {
+              "max_absolute": 0.0,
+              "max_gate_ratio": 0.0
+            },
+            {
+              "max_absolute": 7.09370340246096e-11,
+              "max_gate_ratio": 4.442741736916027e-05
+            },
+            {
+              "max_absolute": 7.907985377642035e-11,
+              "max_gate_ratio": 7.906635274633863e-05
+            },
+            {
+              "max_absolute": 7.517386713118412e-11,
+              "max_gate_ratio": 2.4791387473913042e-05
+            },
+            {
+              "max_absolute": 8.202061252404746e-11,
+              "max_gate_ratio": 0.0001253436027571982
+            },
+            {
+              "max_absolute": 9.199307982044047e-11,
+              "max_gate_ratio": 7.131465800907339e-05
+            },
+            {
+              "max_absolute": 1.1495712715081652e-10,
+              "max_gate_ratio": 0.00022651178282970453
+            }
+          ]
+        },
+        {
+          "epsilon": 3e-07,
+          "transition": {
+            "max_absolute": 1.0554413639602274e-09,
+            "max_gate_ratio": 0.002110685053472511
+          },
+          "nq": {
+            "max_absolute": 8.846234855752755e-09,
+            "max_gate_ratio": 0.002787984403583916
+          },
+          "nv": {
+            "max_absolute": 8.233092203068057e-09,
+            "max_gate_ratio": 0.016449128104325805
+          },
+          "mass_q": [
+            {
+              "max_absolute": 0.0,
+              "max_gate_ratio": 0.0
+            },
+            {
+              "max_absolute": 7.09370340246096e-11,
+              "max_gate_ratio": 4.442741736916027e-05
+            },
+            {
+              "max_absolute": 1.9526465167007956e-10,
+              "max_gate_ratio": 0.00018302104312406818
+            },
+            {
+              "max_absolute": 4.822555688122065e-10,
+              "max_gate_ratio": 9.93150771604893e-05
+            },
+            {
+              "max_absolute": 2.1971462149661392e-10,
+              "max_gate_ratio": 0.00029199743138877204
+            },
+            {
+              "max_absolute": 3.891035549319355e-10,
+              "max_gate_ratio": 0.0004671445457828187
+            },
+            {
+              "max_absolute": 3.4584527833247426e-10,
+              "max_gate_ratio": 0.0006900680555572799
+            }
+          ]
+        }
+      ],
+      "pass_check": true
+    },
+    {
+      "name": "seen91013_tick500",
+      "value_success": true,
+      "jacobian_success": true,
+      "branches": {
+        "control": [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        "actuator": [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        "joint_force": [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        "friction": [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ]
+      },
+      "epsilons": [
+        {
+          "epsilon": 1e-06,
+          "transition": {
+            "max_absolute": 2.7438595839868185e-10,
+            "max_gate_ratio": 0.0003997422142430388
+          },
+          "nq": {
+            "max_absolute": 2.8252244987925224e-09,
+            "max_gate_ratio": 0.0024847682101017225
+          },
+          "nv": {
+            "max_absolute": 2.2124130828530765e-09,
+            "max_gate_ratio": 0.004424825713396717
+          },
+          "mass_q": [
+            {
+              "max_absolute": 0.0,
+              "max_gate_ratio": 0.0
+            },
+            {
+              "max_absolute": 6.846079259048565e-11,
+              "max_gate_ratio": 9.001160038418078e-05
+            },
+            {
+              "max_absolute": 6.157918619464908e-11,
+              "max_gate_ratio": 8.456761164321133e-05
+            },
+            {
+              "max_absolute": 2.0631030217543866e-10,
+              "max_gate_ratio": 4.182777154023005e-05
+            },
+            {
+              "max_absolute": 1.2156142759067734e-10,
+              "max_gate_ratio": 0.00014661028271542806
+            },
+            {
+              "max_absolute": 9.408118728515547e-11,
+              "max_gate_ratio": 0.00015733620782448895
+            },
+            {
+              "max_absolute": 1.6717427442358712e-10,
+              "max_gate_ratio": 0.0003335615855213245
+            }
+          ]
+        },
+        {
+          "epsilon": 3e-07,
+          "transition": {
+            "max_absolute": 7.557149350745362e-10,
+            "max_gate_ratio": 0.0013940649254279385
+          },
+          "nq": {
+            "max_absolute": 8.012756236297491e-09,
+            "max_gate_ratio": 0.008120546144971043
+          },
+          "nv": {
+            "max_absolute": 8.628878932472577e-09,
+            "max_gate_ratio": 0.017257635709351443
+          },
+          "mass_q": [
+            {
+              "max_absolute": 0.0,
+              "max_gate_ratio": 0.0
+            },
+            {
+              "max_absolute": 1.028723772833473e-10,
+              "max_gate_ratio": 0.00019551240722558987
+            },
+            {
+              "max_absolute": 1.1685408196626668e-10,
+              "max_gate_ratio": 0.000127879116826257
+            },
+            {
+              "max_absolute": 1.5369810979493082e-10,
+              "max_gate_ratio": 7.467014002077094e-05
+            },
+            {
+              "max_absolute": 2.973846377485323e-10,
+              "max_gate_ratio": 0.0003880785912317384
+            },
+            {
+              "max_absolute": 5.692863402906312e-10,
+              "max_gate_ratio": 0.0009436732245021373
+            },
+            {
+              "max_absolute": 2.6270284331133403e-10,
+              "max_gate_ratio": 0.0005220457475302128
+            }
+          ]
+        }
+      ],
+      "pass_check": true
+    },
+    {
+      "name": "seen91013_tick690",
+      "value_success": true,
+      "jacobian_success": true,
+      "branches": {
+        "control": [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        "actuator": [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        "joint_force": [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        "friction": [
+          0,
+          1,
+          0,
+          -1,
+          0,
+          1,
+          0
+        ]
+      },
+      "epsilons": [
+        {
+          "epsilon": 1e-06,
+          "transition": {
+            "max_absolute": 1.5230172678570852e-09,
+            "max_gate_ratio": 0.0005340793530358329
+          },
+          "nq": {
+            "max_absolute": 2.7710349570497783e-09,
+            "max_gate_ratio": 0.0009169360402540365
+          },
+          "nv": {
+            "max_absolute": 2.6090272902193345e-09,
+            "max_gate_ratio": 0.005105358911268232
+          },
+          "mass_q": [
+            {
+              "max_absolute": 0.0,
+              "max_gate_ratio": 0.0
+            },
+            {
+              "max_absolute": 8.066436407716537e-11,
+              "max_gate_ratio": 5.0262890458208045e-05
+            },
+            {
+              "max_absolute": 8.359890557585459e-11,
+              "max_gate_ratio": 9.690233937699594e-05
+            },
+            {
+              "max_absolute": 1.939883809143339e-10,
+              "max_gate_ratio": 3.838136070644121e-05
+            },
+            {
+              "max_absolute": 1.6648371570227027e-10,
+              "max_gate_ratio": 0.00021715670834551178
+            },
+            {
+              "max_absolute": 9.0829732624087e-11,
+              "max_gate_ratio": 6.906211346973027e-05
+            },
+            {
+              "max_absolute": 1.3697221135089421e-10,
+              "max_gate_ratio": 0.00027246040079703925
+            }
+          ]
+        },
+        {
+          "epsilon": 3e-07,
+          "transition": {
+            "max_absolute": 3.791239322481488e-09,
+            "max_gate_ratio": 0.0018827494429330867
+          },
+          "nq": {
+            "max_absolute": 5.297127070313934e-09,
+            "max_gate_ratio": 0.0037374264608659013
+          },
+          "nv": {
+            "max_absolute": 1.114885590444703e-08,
+            "max_gate_ratio": 0.021201549351557464
+          },
+          "mass_q": [
+            {
+              "max_absolute": 0.0,
+              "max_gate_ratio": 0.0
+            },
+            {
+              "max_absolute": 2.8940999596827055e-10,
+              "max_gate_ratio": 0.0003422471192330677
+            },
+            {
+              "max_absolute": 4.5991251085286677e-10,
+              "max_gate_ratio": 0.0006661795500324922
+            },
+            {
+              "max_absolute": 2.1206741918078365e-10,
+              "max_gate_ratio": 9.510903821358586e-05
+            },
+            {
+              "max_absolute": 3.885283206273016e-10,
+              "max_gate_ratio": 0.0005229877751634752
+            },
+            {
+              "max_absolute": 3.250149593903018e-10,
+              "max_gate_ratio": 0.0002992488344247021
+            },
+            {
+              "max_absolute": 5.649101926801132e-10,
+              "max_gate_ratio": 0.001127235861759102
+            }
+          ]
+        }
+      ],
+      "pass_check": true
+    },
+    {
+      "name": "seen91013_tick920",
+      "value_success": true,
+      "jacobian_success": true,
+      "branches": {
+        "control": [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        "actuator": [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        "joint_force": [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        "friction": [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ]
+      },
+      "epsilons": [
+        {
+          "epsilon": 1e-06,
+          "transition": {
+            "max_absolute": 3.7951691542900353e-10,
+            "max_gate_ratio": 0.000758955819123005
+          },
+          "nq": {
+            "max_absolute": 3.98677357793531e-09,
+            "max_gate_ratio": 0.001017482963503262
+          },
+          "nv": {
+            "max_absolute": 3.1222093682217495e-09,
+            "max_gate_ratio": 0.006242184018008473
+          },
+          "mass_q": [
+            {
+              "max_absolute": 0.0,
+              "max_gate_ratio": 0.0
+            },
+            {
+              "max_absolute": 7.041123240014713e-11,
+              "max_gate_ratio": 4.416298445926494e-05
+            },
+            {
+              "max_absolute": 1.1352341289239121e-10,
+              "max_gate_ratio": 9.620613603396486e-05
+            },
+            {
+              "max_absolute": 2.0412649348600098e-10,
+              "max_gate_ratio": 4.039296070691351e-05
+            },
+            {
+              "max_absolute": 9.659706368125853e-11,
+              "max_gate_ratio": 0.0001309484203922699
+            },
+            {
+              "max_absolute": 1.2647272118471165e-10,
+              "max_gate_ratio": 0.00017418807582191576
+            },
+            {
+              "max_absolute": 4.041010516660226e-11,
+              "max_gate_ratio": 8.075318807164892e-05
+            }
+          ]
+        },
+        {
+          "epsilon": 3e-07,
+          "transition": {
+            "max_absolute": 1.5145813492267735e-09,
+            "max_gate_ratio": 0.0026899212054847348
+          },
+          "nq": {
+            "max_absolute": 6.9834422689041276e-09,
+            "max_gate_ratio": 0.00601757923942287
+          },
+          "nv": {
+            "max_absolute": 5.661978952866049e-09,
+            "max_gate_ratio": 0.011311428133727597
+          },
+          "mass_q": [
+            {
+              "max_absolute": 0.0,
+              "max_gate_ratio": 0.0
+            },
+            {
+              "max_absolute": 1.8143353486266278e-10,
+              "max_gate_ratio": 0.0002694470589474983
+            },
+            {
+              "max_absolute": 1.0712022935344123e-10,
+              "max_gate_ratio": 0.00014979976070478136
+            },
+            {
+              "max_absolute": 5.360221155825684e-10,
+              "max_gate_ratio": 0.00012939953536736905
+            },
+            {
+              "max_absolute": 4.744711290527448e-10,
+              "max_gate_ratio": 0.000829615929026772
+            },
+            {
+              "max_absolute": 4.2253217591436965e-10,
+              "max_gate_ratio": 0.00032564805233648985
+            },
+            {
+              "max_absolute": 4.264367379179512e-10,
+              "max_gate_ratio": 0.0008401561393296811
+            }
+          ]
+        }
+      ],
+      "pass_check": true
+    },
+    {
+      "name": "seen91013_tick2400",
+      "value_success": true,
+      "jacobian_success": true,
+      "branches": {
+        "control": [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        "actuator": [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        "joint_force": [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        "friction": [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ]
+      },
+      "epsilons": [
+        {
+          "epsilon": 1e-06,
+          "transition": {
+            "max_absolute": 4.303652271792774e-10,
+            "max_gate_ratio": 0.0008480271587323231
+          },
+          "nq": {
+            "max_absolute": 1.3328886883101632e-09,
+            "max_gate_ratio": 0.0006661320384182487
+          },
+          "nv": {
+            "max_absolute": 1.2562395266768238e-11,
+            "max_gate_ratio": 2.5124790530380203e-05
+          },
+          "mass_q": [
+            {
+              "max_absolute": 0.0,
+              "max_gate_ratio": 0.0
+            },
+            {
+              "max_absolute": 1.3358203432289883e-11,
+              "max_gate_ratio": 8.315670008570671e-06
+            },
+            {
+              "max_absolute": 1.1265877120081313e-10,
+              "max_gate_ratio": 0.00016316575781563406
+            },
+            {
+              "max_absolute": 2.9364588538527414e-10,
+              "max_gate_ratio": 5.9548886900481075e-05
+            },
+            {
+              "max_absolute": 8.569722709239613e-11,
+              "max_gate_ratio": 0.00010673081837585198
+            },
+            {
+              "max_absolute": 1.265972882080746e-10,
+              "max_gate_ratio": 0.00016925165340248057
+            },
+            {
+              "max_absolute": 1.3989710605233352e-10,
+              "max_gate_ratio": 0.00027599713679327505
+            }
+          ]
+        },
+        {
+          "epsilon": 3e-07,
+          "transition": {
+            "max_absolute": 1.4008163804271612e-09,
+            "max_gate_ratio": 0.0027973734208222483
+          },
+          "nq": {
+            "max_absolute": 7.749370922738308e-09,
+            "max_gate_ratio": 0.001762410983607769
+          },
+          "nv": {
+            "max_absolute": 1.2562395266768238e-11,
+            "max_gate_ratio": 2.5124790530380203e-05
+          },
+          "mass_q": [
+            {
+              "max_absolute": 0.0,
+              "max_gate_ratio": 0.0
+            },
+            {
+              "max_absolute": 9.766409903022577e-11,
+              "max_gate_ratio": 9.779997758540883e-05
+            },
+            {
+              "max_absolute": 3.717108149059456e-10,
+              "max_gate_ratio": 0.0005383555683763551
+            },
+            {
+              "max_absolute": 3.597104836217113e-10,
+              "max_gate_ratio": 0.00010791452222545804
+            },
+            {
+              "max_absolute": 4.694142852201821e-10,
+              "max_gate_ratio": 0.0004965294933371411
+            },
+            {
+              "max_absolute": 2.1405183181499865e-10,
+              "max_gate_ratio": 0.0002110169927578212
+            },
+            {
+              "max_absolute": 3.989491449869764e-10,
+              "max_gate_ratio": 0.0007870700463334853
+            }
+          ]
+        }
+      ],
+      "pass_check": true
+    },
+    {
+      "name": "all_free",
+      "value_success": true,
+      "jacobian_success": true,
+      "branches": {
+        "control": [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        "actuator": [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        "joint_force": [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        "friction": [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ]
+      },
+      "epsilons": [
+        {
+          "epsilon": 1e-06,
+          "transition": {
+            "max_absolute": 4.267952337534907e-10,
+            "max_gate_ratio": 0.0008535753392264046
+          },
+          "nq": {
+            "max_absolute": 1.4854568686217817e-09,
+            "max_gate_ratio": 0.000888176643343278
+          },
+          "nv": {
+            "max_absolute": 0.0,
+            "max_gate_ratio": 0.0
+          },
+          "mass_q": [
+            {
+              "max_absolute": 0.0,
+              "max_gate_ratio": 0.0
+            },
+            {
+              "max_absolute": 9.041656312547275e-12,
+              "max_gate_ratio": 8.558303935290117e-06
+            },
+            {
+              "max_absolute": 7.054623551994155e-11,
+              "max_gate_ratio": 4.073299332447129e-05
+            },
+            {
+              "max_absolute": 2.7572055749658375e-10,
+              "max_gate_ratio": 5.454966518116562e-05
+            },
+            {
+              "max_absolute": 1.9891022162710215e-10,
+              "max_gate_ratio": 0.00025958146016866597
+            },
+            {
+              "max_absolute": 8.21318568711149e-11,
+              "max_gate_ratio": 0.0001454376322039128
+            },
+            {
+              "max_absolute": 1.1082734729939148e-10,
+              "max_gate_ratio": 0.0002212863893997671
+            }
+          ]
+        },
+        {
+          "epsilon": 3e-07,
+          "transition": {
+            "max_absolute": 1.3552486281987833e-09,
+            "max_gate_ratio": 0.0027104499483222508
+          },
+          "nq": {
+            "max_absolute": 6.178435540959981e-09,
+            "max_gate_ratio": 0.003815007484291322
+          },
+          "nv": {
+            "max_absolute": 0.0,
+            "max_gate_ratio": 0.0
+          },
+          "mass_q": [
+            {
+              "max_absolute": 0.0,
+              "max_gate_ratio": 0.0
+            },
+            {
+              "max_absolute": 2.3108626123757858e-10,
+              "max_gate_ratio": 0.00016720865112095857
+            },
+            {
+              "max_absolute": 2.2551327472086768e-10,
+              "max_gate_ratio": 0.0002242488378023762
+            },
+            {
+              "max_absolute": 2.872777571383267e-10,
+              "max_gate_ratio": 0.00012980817269874235
+            },
+            {
+              "max_absolute": 6.152533343906086e-10,
+              "max_gate_ratio": 0.000802916801400788
+            },
+            {
+              "max_absolute": 6.181499756507947e-10,
+              "max_gate_ratio": 0.0007352265913399488
+            },
+            {
+              "max_absolute": 3.6465630515181147e-10,
+              "max_gate_ratio": 0.0007275957635877707
+            }
+          ]
+        }
+      ],
+      "pass_check": true
+    },
+    {
+      "name": "mixed_strict_lower_upper_free",
+      "value_success": true,
+      "jacobian_success": true,
+      "branches": {
+        "control": [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        "actuator": [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        "joint_force": [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        "friction": [
+          -1,
+          1,
+          0,
+          0,
+          0,
+          0,
+          0
+        ]
+      },
+      "epsilons": [
+        {
+          "epsilon": 1e-06,
+          "transition": {
+            "max_absolute": 4.3148151718241934e-10,
+            "max_gate_ratio": 0.0006915962047908094
+          },
+          "nq": {
+            "max_absolute": 1.4854568686217817e-09,
+            "max_gate_ratio": 0.000888176643343278
+          },
+          "nv": {
+            "max_absolute": 0.0,
+            "max_gate_ratio": 0.0
+          },
+          "mass_q": [
+            {
+              "max_absolute": 0.0,
+              "max_gate_ratio": 0.0
+            },
+            {
+              "max_absolute": 9.041656312547275e-12,
+              "max_gate_ratio": 8.558303935290117e-06
+            },
+            {
+              "max_absolute": 7.054623551994155e-11,
+              "max_gate_ratio": 4.073299332447129e-05
+            },
+            {
+              "max_absolute": 2.7572055749658375e-10,
+              "max_gate_ratio": 5.454966518116562e-05
+            },
+            {
+              "max_absolute": 1.9891022162710215e-10,
+              "max_gate_ratio": 0.00025958146016866597
+            },
+            {
+              "max_absolute": 8.21318568711149e-11,
+              "max_gate_ratio": 0.0001454376322039128
+            },
+            {
+              "max_absolute": 1.1082734729939148e-10,
+              "max_gate_ratio": 0.0002212863893997671
+            }
+          ]
+        },
+        {
+          "epsilon": 3e-07,
+          "transition": {
+            "max_absolute": 1.45473322277212e-09,
+            "max_gate_ratio": 0.0022932012156014984
+          },
+          "nq": {
+            "max_absolute": 6.178435540959981e-09,
+            "max_gate_ratio": 0.003815007484291322
+          },
+          "nv": {
+            "max_absolute": 0.0,
+            "max_gate_ratio": 0.0
+          },
+          "mass_q": [
+            {
+              "max_absolute": 0.0,
+              "max_gate_ratio": 0.0
+            },
+            {
+              "max_absolute": 2.3108626123757858e-10,
+              "max_gate_ratio": 0.00016720865112095857
+            },
+            {
+              "max_absolute": 2.2551327472086768e-10,
+              "max_gate_ratio": 0.0002242488378023762
+            },
+            {
+              "max_absolute": 2.872777571383267e-10,
+              "max_gate_ratio": 0.00012980817269874235
+            },
+            {
+              "max_absolute": 6.152533343906086e-10,
+              "max_gate_ratio": 0.000802916801400788
+            },
+            {
+              "max_absolute": 6.181499756507947e-10,
+              "max_gate_ratio": 0.0007352265913399488
+            },
+            {
+              "max_absolute": 3.6465630515181147e-10,
+              "max_gate_ratio": 0.0007275957635877707
+            }
+          ]
+        }
+      ],
+      "pass_check": true
+    },
+    {
+      "name": "all_strict_friction_bounds",
+      "value_success": true,
+      "jacobian_success": true,
+      "branches": {
+        "control": [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        "actuator": [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        "joint_force": [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        "friction": [
+          -1,
+          1,
+          -1,
+          1,
+          -1,
+          1,
+          -1
+        ]
+      },
+      "epsilons": [
+        {
+          "epsilon": 1e-06,
+          "transition": {
+            "max_absolute": 1.5237304751281044e-09,
+            "max_gate_ratio": 0.0005719082081642753
+          },
+          "nq": {
+            "max_absolute": 1.4854568686217817e-09,
+            "max_gate_ratio": 0.000888176643343278
+          },
+          "nv": {
+            "max_absolute": 0.0,
+            "max_gate_ratio": 0.0
+          },
+          "mass_q": [
+            {
+              "max_absolute": 0.0,
+              "max_gate_ratio": 0.0
+            },
+            {
+              "max_absolute": 9.041656312547275e-12,
+              "max_gate_ratio": 8.558303935290117e-06
+            },
+            {
+              "max_absolute": 7.054623551994155e-11,
+              "max_gate_ratio": 4.073299332447129e-05
+            },
+            {
+              "max_absolute": 2.7572055749658375e-10,
+              "max_gate_ratio": 5.454966518116562e-05
+            },
+            {
+              "max_absolute": 1.9891022162710215e-10,
+              "max_gate_ratio": 0.00025958146016866597
+            },
+            {
+              "max_absolute": 8.21318568711149e-11,
+              "max_gate_ratio": 0.0001454376322039128
+            },
+            {
+              "max_absolute": 1.1082734729939148e-10,
+              "max_gate_ratio": 0.0002212863893997671
+            }
+          ]
+        },
+        {
+          "epsilon": 3e-07,
+          "transition": {
+            "max_absolute": 7.545964741950684e-09,
+            "max_gate_ratio": 0.0020956180387340117
+          },
+          "nq": {
+            "max_absolute": 6.178435540959981e-09,
+            "max_gate_ratio": 0.003815007484291322
+          },
+          "nv": {
+            "max_absolute": 0.0,
+            "max_gate_ratio": 0.0
+          },
+          "mass_q": [
+            {
+              "max_absolute": 0.0,
+              "max_gate_ratio": 0.0
+            },
+            {
+              "max_absolute": 2.3108626123757858e-10,
+              "max_gate_ratio": 0.00016720865112095857
+            },
+            {
+              "max_absolute": 2.2551327472086768e-10,
+              "max_gate_ratio": 0.0002242488378023762
+            },
+            {
+              "max_absolute": 2.872777571383267e-10,
+              "max_gate_ratio": 0.00012980817269874235
+            },
+            {
+              "max_absolute": 6.152533343906086e-10,
+              "max_gate_ratio": 0.000802916801400788
+            },
+            {
+              "max_absolute": 6.181499756507947e-10,
+              "max_gate_ratio": 0.0007352265913399488
+            },
+            {
+              "max_absolute": 3.6465630515181147e-10,
+              "max_gate_ratio": 0.0007275957635877707
+            }
+          ]
+        }
+      ],
+      "pass_check": true
+    },
+    {
+      "name": "strict_joint_force_saturation",
+      "value_success": true,
+      "jacobian_success": true,
+      "branches": {
+        "control": [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        "actuator": [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        "joint_force": [
+          1,
+          -1,
+          1,
+          -1,
+          1,
+          -1,
+          1
+        ],
+        "friction": [
+          -1,
+          1,
+          -1,
+          1,
+          -1,
+          1,
+          -1
+        ]
+      },
+      "epsilons": [
+        {
+          "epsilon": 1e-06,
+          "transition": {
+            "max_absolute": 4.2725278102009167e-10,
+            "max_gate_ratio": 0.0008545055011800475
+          },
+          "nq": {
+            "max_absolute": 1.4854568686217817e-09,
+            "max_gate_ratio": 0.000888176643343278
+          },
+          "nv": {
+            "max_absolute": 0.0,
+            "max_gate_ratio": 0.0
+          },
+          "mass_q": [
+            {
+              "max_absolute": 0.0,
+              "max_gate_ratio": 0.0
+            },
+            {
+              "max_absolute": 9.041656312547275e-12,
+              "max_gate_ratio": 8.558303935290117e-06
+            },
+            {
+              "max_absolute": 7.054623551994155e-11,
+              "max_gate_ratio": 4.073299332447129e-05
+            },
+            {
+              "max_absolute": 2.7572055749658375e-10,
+              "max_gate_ratio": 5.454966518116562e-05
+            },
+            {
+              "max_absolute": 1.9891022162710215e-10,
+              "max_gate_ratio": 0.00025958146016866597
+            },
+            {
+              "max_absolute": 8.21318568711149e-11,
+              "max_gate_ratio": 0.0001454376322039128
+            },
+            {
+              "max_absolute": 1.1082734729939148e-10,
+              "max_gate_ratio": 0.0002212863893997671
+            }
+          ]
+        },
+        {
+          "epsilon": 3e-07,
+          "transition": {
+            "max_absolute": 1.4430358712060198e-09,
+            "max_gate_ratio": 0.002886070117884689
+          },
+          "nq": {
+            "max_absolute": 6.178435540959981e-09,
+            "max_gate_ratio": 0.003815007484291322
+          },
+          "nv": {
+            "max_absolute": 0.0,
+            "max_gate_ratio": 0.0
+          },
+          "mass_q": [
+            {
+              "max_absolute": 0.0,
+              "max_gate_ratio": 0.0
+            },
+            {
+              "max_absolute": 2.3108626123757858e-10,
+              "max_gate_ratio": 0.00016720865112095857
+            },
+            {
+              "max_absolute": 2.2551327472086768e-10,
+              "max_gate_ratio": 0.0002242488378023762
+            },
+            {
+              "max_absolute": 2.872777571383267e-10,
+              "max_gate_ratio": 0.00012980817269874235
+            },
+            {
+              "max_absolute": 6.152533343906086e-10,
+              "max_gate_ratio": 0.000802916801400788
+            },
+            {
+              "max_absolute": 6.181499756507947e-10,
+              "max_gate_ratio": 0.0007352265913399488
+            },
+            {
+              "max_absolute": 3.6465630515181147e-10,
+              "max_gate_ratio": 0.0007275957635877707
+            }
+          ]
+        }
+      ],
+      "pass_check": true
+    },
+    {
+      "name": "strict_control_saturation",
+      "value_success": true,
+      "jacobian_success": true,
+      "branches": {
+        "control": [
+          -1,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        "actuator": [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        "joint_force": [
+          -1,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        "friction": [
+          1,
+          1,
+          -1,
+          1,
+          1,
+          1,
+          0
+        ]
+      },
+      "epsilons": [
+        {
+          "epsilon": 1e-06,
+          "transition": {
+            "max_absolute": 1.5237295869496847e-09,
+            "max_gate_ratio": 0.0008253354564541448
+          },
+          "nq": {
+            "max_absolute": 1.4854568686217817e-09,
+            "max_gate_ratio": 0.000888176643343278
+          },
+          "nv": {
+            "max_absolute": 0.0,
+            "max_gate_ratio": 0.0
+          },
+          "mass_q": [
+            {
+              "max_absolute": 0.0,
+              "max_gate_ratio": 0.0
+            },
+            {
+              "max_absolute": 9.041656312547275e-12,
+              "max_gate_ratio": 8.558303935290117e-06
+            },
+            {
+              "max_absolute": 7.054623551994155e-11,
+              "max_gate_ratio": 4.073299332447129e-05
+            },
+            {
+              "max_absolute": 2.7572055749658375e-10,
+              "max_gate_ratio": 5.454966518116562e-05
+            },
+            {
+              "max_absolute": 1.9891022162710215e-10,
+              "max_gate_ratio": 0.00025958146016866597
+            },
+            {
+              "max_absolute": 8.21318568711149e-11,
+              "max_gate_ratio": 0.0001454376322039128
+            },
+            {
+              "max_absolute": 1.1082734729939148e-10,
+              "max_gate_ratio": 0.0002212863893997671
+            }
+          ]
+        },
+        {
+          "epsilon": 3e-07,
+          "transition": {
+            "max_absolute": 7.546127278601489e-09,
+            "max_gate_ratio": 0.0023940595298073326
+          },
+          "nq": {
+            "max_absolute": 6.178435540959981e-09,
+            "max_gate_ratio": 0.003815007484291322
+          },
+          "nv": {
+            "max_absolute": 0.0,
+            "max_gate_ratio": 0.0
+          },
+          "mass_q": [
+            {
+              "max_absolute": 0.0,
+              "max_gate_ratio": 0.0
+            },
+            {
+              "max_absolute": 2.3108626123757858e-10,
+              "max_gate_ratio": 0.00016720865112095857
+            },
+            {
+              "max_absolute": 2.2551327472086768e-10,
+              "max_gate_ratio": 0.0002242488378023762
+            },
+            {
+              "max_absolute": 2.872777571383267e-10,
+              "max_gate_ratio": 0.00012980817269874235
+            },
+            {
+              "max_absolute": 6.152533343906086e-10,
+              "max_gate_ratio": 0.000802916801400788
+            },
+            {
+              "max_absolute": 6.181499756507947e-10,
+              "max_gate_ratio": 0.0007352265913399488
+            },
+            {
+              "max_absolute": 3.6465630515181147e-10,
+              "max_gate_ratio": 0.0007275957635877707
+            }
+          ]
+        }
+      ],
+      "pass_check": true
+    },
+    {
+      "name": "weak_lower_zero_gradient",
+      "value_success": true,
+      "jacobian_success": false,
+      "error": "unsupported weak/near friction or nested clamp threshold; value retained, no unique Jacobian"
+    },
+    {
+      "name": "weak_upper_zero_gradient",
+      "value_success": true,
+      "jacobian_success": false,
+      "error": "unsupported weak/near friction or nested clamp threshold; value retained, no unique Jacobian"
+    },
+    {
+      "name": "near_free_lower_slack",
+      "value_success": true,
+      "jacobian_success": false,
+      "error": "unsupported weak/near friction or nested clamp threshold; value retained, no unique Jacobian"
+    },
+    {
+      "name": "control_lower_exact",
+      "value_success": true,
+      "jacobian_success": false,
+      "error": "unsupported weak/near friction or nested clamp threshold; value retained, no unique Jacobian"
+    },
+    {
+      "name": "control_lower_inside",
+      "value_success": true,
+      "jacobian_success": false,
+      "error": "unsupported weak/near friction or nested clamp threshold; value retained, no unique Jacobian"
+    },
+    {
+      "name": "control_lower_outside",
+      "value_success": true,
+      "jacobian_success": false,
+      "error": "unsupported weak/near friction or nested clamp threshold; value retained, no unique Jacobian"
+    },
+    {
+      "name": "joint_force_upper_exact",
+      "value_success": true,
+      "jacobian_success": false,
+      "error": "unsupported weak/near friction or nested clamp threshold; value retained, no unique Jacobian"
+    },
+    {
+      "name": "joint_force_upper_near_inside",
+      "value_success": true,
+      "jacobian_success": false,
+      "error": "unsupported weak/near friction or nested clamp threshold; value retained, no unique Jacobian"
+    },
+    {
+      "name": "q_dimension",
+      "value_success": false,
+      "jacobian_success": false,
+      "error": "finite state dimension7"
+    },
+    {
+      "name": "v_dimension",
+      "value_success": false,
+      "jacobian_success": false,
+      "error": "finite state dimension7"
+    },
+    {
+      "name": "C_dimension",
+      "value_success": false,
+      "jacobian_success": false,
+      "error": "finite target dimension7"
+    },
+    {
+      "name": "q_nan",
+      "value_success": false,
+      "jacobian_success": false,
+      "error": "finite state dimension7"
+    },
+    {
+      "name": "v_inf",
+      "value_success": false,
+      "jacobian_success": false,
+      "error": "finite state dimension7"
+    },
+    {
+      "name": "C_nan",
+      "value_success": false,
+      "jacobian_success": false,
+      "error": "finite target dimension7"
+    },
+    {
+      "name": "finite_preclamp_overflow",
+      "value_success": false,
+      "jacobian_success": false,
+      "error": "nonfinite pre-clamp affine actuator"
+    },
+    {
+      "name": "physical_joint_boundary",
+      "value_success": false,
+      "jacobian_success": false,
+      "error": "joint-limit-free regime"
+    }
+  ],
+  "synthetic_output_gates": {
+    "positive_controls": 1,
+    "negative_controls": [
+      {
+        "name": "empty",
+        "rejected": true
+      },
+      {
+        "name": "drop",
+        "rejected": true
+      },
+      {
+        "name": "reverse",
+        "rejected": true
+      },
+      {
+        "name": "model_string",
+        "rejected": true
+      },
+      {
+        "name": "value_bool_string",
+        "rejected": true
+      },
+      {
+        "name": "jac_bool_int",
+        "rejected": true
+      },
+      {
+        "name": "missing_jac",
+        "rejected": true
+      },
+      {
+        "name": "jac_short_row",
+        "rejected": true
+      },
+      {
+        "name": "jac_short_col",
+        "rejected": true
+      },
+      {
+        "name": "jac_nan",
+        "rejected": true
+      },
+      {
+        "name": "jac_string",
+        "rejected": true
+      },
+      {
+        "name": "jac_bool",
+        "rejected": true
+      },
+      {
+        "name": "mass_tensor_short",
+        "rejected": true
+      },
+      {
+        "name": "mass_tensor_nan",
+        "rejected": true
+      },
+      {
+        "name": "bad_condition",
+        "rejected": true
+      },
+      {
+        "name": "bad_residual",
+        "rejected": true
+      },
+      {
+        "name": "missing_clip",
+        "rejected": true
+      },
+      {
+        "name": "value_nan",
+        "rejected": true
+      },
+      {
+        "name": "huge_integer",
+        "rejected": true
+      },
+      {
+        "name": "fabricated_unsupported_J",
+        "rejected": true
+      }
+    ],
+    "scope": "Modified-output QA controls only, not native failures."
+  },
+  "freeze_sha256": "44113654ee0e16ed4c44ddf691a74213f68ff9b0f1deedc9b84c01a88673ff40",
+  "epsilons": [
+    1e-06,
+    3e-07
+  ],
+  "absolute_per_entry": 5e-07,
+  "relative_per_entry": 5e-06,
+  "fd_native_cases": 1190,
+  "scope": "Analytic SDK fullM/nle derivative, strict selected branches, two independent native finite-difference epsilon comparisons. No plant/fitting/augmented/controller/task/timing claim.",
+  "report_sha256": "d0a8d0199fbebdbf6d28b43609a24a7b36bf0214cdd7674ce9b079e80dfbf73a"
+}

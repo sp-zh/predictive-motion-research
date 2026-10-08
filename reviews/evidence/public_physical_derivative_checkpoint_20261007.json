@@ -1,0 +1,82 @@
+{
+  "date": "2026-10-07",
+  "timezone": "America/Toronto",
+  "decision": "PASS_SELECTED_ANALYTIC_PHYSICAL_DERIVATIVE_REFERENCE",
+  "phase5": "NOT_ACCEPTED",
+  "phase6": "NOT_STARTED",
+  "producer_archive": {
+    "sha256": "15c35cc38cf4e7f01aa63c24710df522d1d6751a0fa413110d64f2b30c0f4d07",
+    "bytes": 43129106,
+    "regular_members": 2646,
+    "payloads": 2644,
+    "Mac": "/Users/uot/Documents/ChatGPT/ros/results/phase5-executor-checkpoints-01a114d9/public-coupled-derivative-cpp-v1/public-coupled-derivative-cpp-v1.tar.gz",
+    "Dell": "/mnt/d/CodexTransfer/projects/predictive_motion/checkpoints/public-coupled-derivative-cpp-v1-20261007/public-coupled-derivative-cpp-v1.tar.gz",
+    "source_manifest_sha256": "15d997af3e9fd23790a7e288f7304a583e1e5f56631c5c542d5a9767a9ca7c6a",
+    "all_payloads_root_verified_on_both": true
+  },
+  "root_native_predeclaration_archive": {
+    "sha256": "61ed935014aa2a93e6f2cebe3c59c20a49cd1e0cc7b27ba78144156a49e327a9",
+    "bytes": 321692,
+    "regular_members": 22,
+    "payloads": 21,
+    "Mac": "/Users/uot/Documents/ChatGPT/ros/transfer/incoming/root-public-physical-derivative-20261007/evidence.tar.gz",
+    "Dell": "/mnt/d/CodexTransfer/projects/predictive_motion/checkpoints/root-public-physical-derivative-20261007/evidence.tar.gz",
+    "all_payloads_root_verified_on_both": true
+  },
+  "dependency_closure": {
+    "verified_utc": "2026-10-08T02:45:05.413038+00:00",
+    "source_sha256": "1aad76eea5c60ac35f8426f521b6b85507edb018600c51d0f4c79996b5f60591",
+    "freeze_sha256": "44113654ee0e16ed4c44ddf691a74213f68ff9b0f1deedc9b84c01a88673ff40",
+    "archive_sha256": "15c35cc38cf4e7f01aa63c24710df522d1d6751a0fa413110d64f2b30c0f4d07",
+    "live_and_immutable_Dell_files_verified": 2590,
+    "input_bytes": 177702805,
+    "regular_members_verified": 2646,
+    "all_archive_payloads_verified": 2644,
+    "all_embedded_immutable_inputs_verified": 2590,
+    "scope": "Read-only live/cache/archive closure for a pinned augmented checkpoint.\n\nNo physics/model/plant execution. Archive membership is read in stream order.\n",
+    "phase5": "NOT_ACCEPTED",
+    "all2590_embedded_immutable_dependencies_root_verified_Mac": true,
+    "all2644_producer_archive_payloads_root_verified_Mac": true
+  },
+  "closure_checker_reuse": "Unchanged generic argument-driven augmented closure checker applied to derivative archive/freeze; no model execution. Its recorded docstring retains previous unit wording.",
+  "freeze_sha256": "44113654ee0e16ed4c44ddf691a74213f68ff9b0f1deedc9b84c01a88673ff40",
+  "producer_cases": {
+    "supported": 14,
+    "uncertified_threshold": 8,
+    "invalid": 8,
+    "independent_base_FD_calls": 1190,
+    "synthetic_output_controls_positive": 1,
+    "synthetic_output_controls_negative": 20
+  },
+  "root_cases": {
+    "supported": 6,
+    "uncertified_threshold": 3,
+    "invalid": 2,
+    "independent_base_FD_calls": 510,
+    "current_diagnostic_base_calls": 2,
+    "epsilons": [
+      1e-06,
+      3e-07
+    ],
+    "all21_columns_transition_and_full_bias_mass_checked": true,
+    "nonzero_motion_nv_max_abs": 0.014953691585629071
+  },
+  "root_transition_metrics": [
+    {
+      "epsilon": 1e-06,
+      "transition_max_absolute": 1.5237295869496847e-09,
+      "transition_max_gate_ratio": 0.0008545055011800475
+    },
+    {
+      "epsilon": 3e-07,
+      "transition_max_absolute": 7.546127278601489e-09,
+      "transition_max_gate_ratio": 0.002886070117884689
+    }
+  ],
+  "binary_sha256": "e2c75c09001ba354ca5371cbfc594a9765c62098d4cdb52e6a1442adc055c6a4",
+  "base_probe_sha256": "fa1a00344e73d8fe2266541ba4e2b34c362351b30a4f21dfa34c04867f585a04",
+  "visuals_root_inspected": true,
+  "retained_failures": "First configure missing parent-scope Pin target; successful build2 source/binary before metadata D/units completion; first crowded/zero-floor-hidden figures; all original logs preserved. No numerical repair/refit.",
+  "large_evidence_in_Git": false,
+  "scope": "Fixed public physical2ms derivative reference at selected strict branches. Conservative uncertified-threshold API does not prove mathematical nondifferentiability; no generalized/one-sided map. No augmented sensitivity/horizon/main-controller/newplant/task/timing/Phase5 acceptance."
+}

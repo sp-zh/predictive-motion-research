@@ -1,0 +1,863 @@
+{
+  "decision": "PASS_SELECTED_PHYSICAL_DERIVATIVE_REFERENCE",
+  "scope": "Independent selected physical-step derivative audit against frozen base FD.\n\nPreset mathematical forces and current-state diagnostics only. No fitting,\nplant, augmented-controller, timing or uniform-domain claim.\n",
+  "source_sha256": "7059d8a3b73812736d99aa59a57776a0f90186d5666a626cf59225a797a62775",
+  "binary_sha256": "e2c75c09001ba354ca5371cbfc594a9765c62098d4cdb52e6a1442adc055c6a4",
+  "freeze_sha256": "44113654ee0e16ed4c44ddf691a74213f68ff9b0f1deedc9b84c01a88673ff40",
+  "base_sha256": "fa1a00344e73d8fe2266541ba4e2b34c362351b30a4f21dfa34c04867f585a04",
+  "epsilons": [
+    1e-06,
+    3e-07
+  ],
+  "absolute_per_entry": 5e-07,
+  "relative_per_entry": 5e-06,
+  "supported_cases": 6,
+  "unsupported_threshold_cases": 3,
+  "invalid_cases": 2,
+  "independent_FD_base_calls": 510,
+  "current_diagnostic_base_calls": 2,
+  "cases": [
+    {
+      "name": "root_all_free_stationary",
+      "epsilons": [
+        {
+          "epsilon": 1e-06,
+          "transition": {
+            "max_absolute": 4.267952337534907e-10,
+            "max_gate_ratio": 0.0008535753392264046
+          },
+          "nq": {
+            "max_absolute": 1.4854568686217817e-09,
+            "max_gate_ratio": 0.000888176643343278
+          },
+          "nv": {
+            "max_absolute": 0.0,
+            "max_gate_ratio": 0.0
+          },
+          "mass_q": [
+            {
+              "max_absolute": 0.0,
+              "max_gate_ratio": 0.0
+            },
+            {
+              "max_absolute": 9.041656312547275e-12,
+              "max_gate_ratio": 8.558303935290117e-06
+            },
+            {
+              "max_absolute": 7.054623551994155e-11,
+              "max_gate_ratio": 4.073299332447129e-05
+            },
+            {
+              "max_absolute": 2.7572055749658375e-10,
+              "max_gate_ratio": 5.454966518116562e-05
+            },
+            {
+              "max_absolute": 1.9891022162710215e-10,
+              "max_gate_ratio": 0.00025958146016866597
+            },
+            {
+              "max_absolute": 8.21318568711149e-11,
+              "max_gate_ratio": 0.0001454376322039128
+            },
+            {
+              "max_absolute": 1.1082734729939148e-10,
+              "max_gate_ratio": 0.0002212863893997671
+            }
+          ]
+        },
+        {
+          "epsilon": 3e-07,
+          "transition": {
+            "max_absolute": 1.3552486281987833e-09,
+            "max_gate_ratio": 0.0027104499483222508
+          },
+          "nq": {
+            "max_absolute": 6.178435540959981e-09,
+            "max_gate_ratio": 0.003815007484291322
+          },
+          "nv": {
+            "max_absolute": 0.0,
+            "max_gate_ratio": 0.0
+          },
+          "mass_q": [
+            {
+              "max_absolute": 0.0,
+              "max_gate_ratio": 0.0
+            },
+            {
+              "max_absolute": 2.3108626123757858e-10,
+              "max_gate_ratio": 0.00016720865112095857
+            },
+            {
+              "max_absolute": 2.2551327472086768e-10,
+              "max_gate_ratio": 0.0002242488378023762
+            },
+            {
+              "max_absolute": 2.872777571383267e-10,
+              "max_gate_ratio": 0.00012980817269874235
+            },
+            {
+              "max_absolute": 6.152533343906086e-10,
+              "max_gate_ratio": 0.000802916801400788
+            },
+            {
+              "max_absolute": 6.181499756507947e-10,
+              "max_gate_ratio": 0.0007352265913399488
+            },
+            {
+              "max_absolute": 3.6465630515181147e-10,
+              "max_gate_ratio": 0.0007275957635877707
+            }
+          ]
+        }
+      ],
+      "branch_signature": [
+        [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ]
+      ],
+      "nv_max_abs": 0.0,
+      "pass": true
+    },
+    {
+      "name": "root_mixed_stationary",
+      "epsilons": [
+        {
+          "epsilon": 1e-06,
+          "transition": {
+            "max_absolute": 4.3148151718241934e-10,
+            "max_gate_ratio": 0.0006915962047908094
+          },
+          "nq": {
+            "max_absolute": 1.4854568686217817e-09,
+            "max_gate_ratio": 0.000888176643343278
+          },
+          "nv": {
+            "max_absolute": 0.0,
+            "max_gate_ratio": 0.0
+          },
+          "mass_q": [
+            {
+              "max_absolute": 0.0,
+              "max_gate_ratio": 0.0
+            },
+            {
+              "max_absolute": 9.041656312547275e-12,
+              "max_gate_ratio": 8.558303935290117e-06
+            },
+            {
+              "max_absolute": 7.054623551994155e-11,
+              "max_gate_ratio": 4.073299332447129e-05
+            },
+            {
+              "max_absolute": 2.7572055749658375e-10,
+              "max_gate_ratio": 5.454966518116562e-05
+            },
+            {
+              "max_absolute": 1.9891022162710215e-10,
+              "max_gate_ratio": 0.00025958146016866597
+            },
+            {
+              "max_absolute": 8.21318568711149e-11,
+              "max_gate_ratio": 0.0001454376322039128
+            },
+            {
+              "max_absolute": 1.1082734729939148e-10,
+              "max_gate_ratio": 0.0002212863893997671
+            }
+          ]
+        },
+        {
+          "epsilon": 3e-07,
+          "transition": {
+            "max_absolute": 1.45473322277212e-09,
+            "max_gate_ratio": 0.0022932012156014984
+          },
+          "nq": {
+            "max_absolute": 6.178435540959981e-09,
+            "max_gate_ratio": 0.003815007484291322
+          },
+          "nv": {
+            "max_absolute": 0.0,
+            "max_gate_ratio": 0.0
+          },
+          "mass_q": [
+            {
+              "max_absolute": 0.0,
+              "max_gate_ratio": 0.0
+            },
+            {
+              "max_absolute": 2.3108626123757858e-10,
+              "max_gate_ratio": 0.00016720865112095857
+            },
+            {
+              "max_absolute": 2.2551327472086768e-10,
+              "max_gate_ratio": 0.0002242488378023762
+            },
+            {
+              "max_absolute": 2.872777571383267e-10,
+              "max_gate_ratio": 0.00012980817269874235
+            },
+            {
+              "max_absolute": 6.152533343906086e-10,
+              "max_gate_ratio": 0.000802916801400788
+            },
+            {
+              "max_absolute": 6.181499756507947e-10,
+              "max_gate_ratio": 0.0007352265913399488
+            },
+            {
+              "max_absolute": 3.6465630515181147e-10,
+              "max_gate_ratio": 0.0007275957635877707
+            }
+          ]
+        }
+      ],
+      "branch_signature": [
+        [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        [
+          -1,
+          1,
+          0,
+          0,
+          0,
+          0,
+          0
+        ]
+      ],
+      "nv_max_abs": 0.0,
+      "pass": true
+    },
+    {
+      "name": "root_mixed_nonzero_motion",
+      "epsilons": [
+        {
+          "epsilon": 1e-06,
+          "transition": {
+            "max_absolute": 4.313731594152159e-10,
+            "max_gate_ratio": 0.0006115447880111261
+          },
+          "nq": {
+            "max_absolute": 3.0857429944575188e-09,
+            "max_gate_ratio": 0.001921039477596102
+          },
+          "nv": {
+            "max_absolute": 3.3721635189082333e-09,
+            "max_gate_ratio": 0.006323210727382107
+          },
+          "mass_q": [
+            {
+              "max_absolute": 0.0,
+              "max_gate_ratio": 0.0
+            },
+            {
+              "max_absolute": 9.038103598868474e-12,
+              "max_gate_ratio": 8.565053386342895e-06
+            },
+            {
+              "max_absolute": 7.054978823362035e-11,
+              "max_gate_ratio": 4.073299332447129e-05
+            },
+            {
+              "max_absolute": 2.7571944727355913e-10,
+              "max_gate_ratio": 5.454944553017247e-05
+            },
+            {
+              "max_absolute": 1.9890755709184305e-10,
+              "max_gate_ratio": 0.0002595779829016524
+            },
+            {
+              "max_absolute": 8.213119073730013e-11,
+              "max_gate_ratio": 0.0001454364526259937
+            },
+            {
+              "max_absolute": 1.1082956774544073e-10,
+              "max_gate_ratio": 0.00022129082291280885
+            }
+          ]
+        },
+        {
+          "epsilon": 3e-07,
+          "transition": {
+            "max_absolute": 1.4550041171901285e-09,
+            "max_gate_ratio": 0.0020204425214471527
+          },
+          "nq": {
+            "max_absolute": 8.308905563580993e-09,
+            "max_gate_ratio": 0.013338856030315187
+          },
+          "nv": {
+            "max_absolute": 1.1430810143049641e-08,
+            "max_gate_ratio": 0.021434138918210218
+          },
+          "mass_q": [
+            {
+              "max_absolute": 0.0,
+              "max_gate_ratio": 0.0
+            },
+            {
+              "max_absolute": 2.3108270852389978e-10,
+              "max_gate_ratio": 0.00016720190166989986
+            },
+            {
+              "max_absolute": 2.2550972200718888e-10,
+              "max_gate_ratio": 0.0002242488378023762
+            },
+            {
+              "max_absolute": 2.872813098520055e-10,
+              "max_gate_ratio": 0.00012980977801366702
+            },
+            {
+              "max_absolute": 6.152559989258677e-10,
+              "max_gate_ratio": 0.0008029202786678201
+            },
+            {
+              "max_absolute": 6.181501976953996e-10,
+              "max_gate_ratio": 0.0007352254117620262
+            },
+            {
+              "max_absolute": 3.6465452879497207e-10,
+              "max_gate_ratio": 0.0007275922192374113
+            }
+          ]
+        }
+      ],
+      "branch_signature": [
+        [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        [
+          -1,
+          1,
+          0,
+          0,
+          0,
+          0,
+          0
+        ]
+      ],
+      "nv_max_abs": 0.014953691585629071,
+      "pass": true
+    },
+    {
+      "name": "root_all_strict_bounds",
+      "epsilons": [
+        {
+          "epsilon": 1e-06,
+          "transition": {
+            "max_absolute": 1.5237029415970937e-09,
+            "max_gate_ratio": 0.0005576685459000734
+          },
+          "nq": {
+            "max_absolute": 1.4854568686217817e-09,
+            "max_gate_ratio": 0.000888176643343278
+          },
+          "nv": {
+            "max_absolute": 0.0,
+            "max_gate_ratio": 0.0
+          },
+          "mass_q": [
+            {
+              "max_absolute": 0.0,
+              "max_gate_ratio": 0.0
+            },
+            {
+              "max_absolute": 9.041656312547275e-12,
+              "max_gate_ratio": 8.558303935290117e-06
+            },
+            {
+              "max_absolute": 7.054623551994155e-11,
+              "max_gate_ratio": 4.073299332447129e-05
+            },
+            {
+              "max_absolute": 2.7572055749658375e-10,
+              "max_gate_ratio": 5.454966518116562e-05
+            },
+            {
+              "max_absolute": 1.9891022162710215e-10,
+              "max_gate_ratio": 0.00025958146016866597
+            },
+            {
+              "max_absolute": 8.21318568711149e-11,
+              "max_gate_ratio": 0.0001454376322039128
+            },
+            {
+              "max_absolute": 1.1082734729939148e-10,
+              "max_gate_ratio": 0.0002212863893997671
+            }
+          ]
+        },
+        {
+          "epsilon": 3e-07,
+          "transition": {
+            "max_absolute": 7.546054447971073e-09,
+            "max_gate_ratio": 0.0019387416837881534
+          },
+          "nq": {
+            "max_absolute": 6.178435540959981e-09,
+            "max_gate_ratio": 0.003815007484291322
+          },
+          "nv": {
+            "max_absolute": 0.0,
+            "max_gate_ratio": 0.0
+          },
+          "mass_q": [
+            {
+              "max_absolute": 0.0,
+              "max_gate_ratio": 0.0
+            },
+            {
+              "max_absolute": 2.3108626123757858e-10,
+              "max_gate_ratio": 0.00016720865112095857
+            },
+            {
+              "max_absolute": 2.2551327472086768e-10,
+              "max_gate_ratio": 0.0002242488378023762
+            },
+            {
+              "max_absolute": 2.872777571383267e-10,
+              "max_gate_ratio": 0.00012980817269874235
+            },
+            {
+              "max_absolute": 6.152533343906086e-10,
+              "max_gate_ratio": 0.000802916801400788
+            },
+            {
+              "max_absolute": 6.181499756507947e-10,
+              "max_gate_ratio": 0.0007352265913399488
+            },
+            {
+              "max_absolute": 3.6465630515181147e-10,
+              "max_gate_ratio": 0.0007275957635877707
+            }
+          ]
+        }
+      ],
+      "branch_signature": [
+        [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        [
+          -1,
+          1,
+          -1,
+          1,
+          -1,
+          1,
+          -1
+        ]
+      ],
+      "nv_max_abs": 0.0,
+      "pass": true
+    },
+    {
+      "name": "root_strong_joint_force",
+      "epsilons": [
+        {
+          "epsilon": 1e-06,
+          "transition": {
+            "max_absolute": 4.2725278102009167e-10,
+            "max_gate_ratio": 0.0008545055011800475
+          },
+          "nq": {
+            "max_absolute": 1.4854568686217817e-09,
+            "max_gate_ratio": 0.000888176643343278
+          },
+          "nv": {
+            "max_absolute": 0.0,
+            "max_gate_ratio": 0.0
+          },
+          "mass_q": [
+            {
+              "max_absolute": 0.0,
+              "max_gate_ratio": 0.0
+            },
+            {
+              "max_absolute": 9.041656312547275e-12,
+              "max_gate_ratio": 8.558303935290117e-06
+            },
+            {
+              "max_absolute": 7.054623551994155e-11,
+              "max_gate_ratio": 4.073299332447129e-05
+            },
+            {
+              "max_absolute": 2.7572055749658375e-10,
+              "max_gate_ratio": 5.454966518116562e-05
+            },
+            {
+              "max_absolute": 1.9891022162710215e-10,
+              "max_gate_ratio": 0.00025958146016866597
+            },
+            {
+              "max_absolute": 8.21318568711149e-11,
+              "max_gate_ratio": 0.0001454376322039128
+            },
+            {
+              "max_absolute": 1.1082734729939148e-10,
+              "max_gate_ratio": 0.0002212863893997671
+            }
+          ]
+        },
+        {
+          "epsilon": 3e-07,
+          "transition": {
+            "max_absolute": 1.4430358712060198e-09,
+            "max_gate_ratio": 0.002886070117884689
+          },
+          "nq": {
+            "max_absolute": 6.178435540959981e-09,
+            "max_gate_ratio": 0.003815007484291322
+          },
+          "nv": {
+            "max_absolute": 0.0,
+            "max_gate_ratio": 0.0
+          },
+          "mass_q": [
+            {
+              "max_absolute": 0.0,
+              "max_gate_ratio": 0.0
+            },
+            {
+              "max_absolute": 2.3108626123757858e-10,
+              "max_gate_ratio": 0.00016720865112095857
+            },
+            {
+              "max_absolute": 2.2551327472086768e-10,
+              "max_gate_ratio": 0.0002242488378023762
+            },
+            {
+              "max_absolute": 2.872777571383267e-10,
+              "max_gate_ratio": 0.00012980817269874235
+            },
+            {
+              "max_absolute": 6.152533343906086e-10,
+              "max_gate_ratio": 0.000802916801400788
+            },
+            {
+              "max_absolute": 6.181499756507947e-10,
+              "max_gate_ratio": 0.0007352265913399488
+            },
+            {
+              "max_absolute": 3.6465630515181147e-10,
+              "max_gate_ratio": 0.0007275957635877707
+            }
+          ]
+        }
+      ],
+      "branch_signature": [
+        [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        [
+          1,
+          -1,
+          1,
+          -1,
+          1,
+          -1,
+          1
+        ],
+        [
+          -1,
+          1,
+          -1,
+          1,
+          -1,
+          1,
+          -1
+        ]
+      ],
+      "nv_max_abs": 0.0,
+      "pass": true
+    },
+    {
+      "name": "root_strong_control",
+      "epsilons": [
+        {
+          "epsilon": 1e-06,
+          "transition": {
+            "max_absolute": 1.5237295869496847e-09,
+            "max_gate_ratio": 0.0008253354564541448
+          },
+          "nq": {
+            "max_absolute": 1.4854568686217817e-09,
+            "max_gate_ratio": 0.000888176643343278
+          },
+          "nv": {
+            "max_absolute": 0.0,
+            "max_gate_ratio": 0.0
+          },
+          "mass_q": [
+            {
+              "max_absolute": 0.0,
+              "max_gate_ratio": 0.0
+            },
+            {
+              "max_absolute": 9.041656312547275e-12,
+              "max_gate_ratio": 8.558303935290117e-06
+            },
+            {
+              "max_absolute": 7.054623551994155e-11,
+              "max_gate_ratio": 4.073299332447129e-05
+            },
+            {
+              "max_absolute": 2.7572055749658375e-10,
+              "max_gate_ratio": 5.454966518116562e-05
+            },
+            {
+              "max_absolute": 1.9891022162710215e-10,
+              "max_gate_ratio": 0.00025958146016866597
+            },
+            {
+              "max_absolute": 8.21318568711149e-11,
+              "max_gate_ratio": 0.0001454376322039128
+            },
+            {
+              "max_absolute": 1.1082734729939148e-10,
+              "max_gate_ratio": 0.0002212863893997671
+            }
+          ]
+        },
+        {
+          "epsilon": 3e-07,
+          "transition": {
+            "max_absolute": 7.546127278601489e-09,
+            "max_gate_ratio": 0.0023940595298073326
+          },
+          "nq": {
+            "max_absolute": 6.178435540959981e-09,
+            "max_gate_ratio": 0.003815007484291322
+          },
+          "nv": {
+            "max_absolute": 0.0,
+            "max_gate_ratio": 0.0
+          },
+          "mass_q": [
+            {
+              "max_absolute": 0.0,
+              "max_gate_ratio": 0.0
+            },
+            {
+              "max_absolute": 2.3108626123757858e-10,
+              "max_gate_ratio": 0.00016720865112095857
+            },
+            {
+              "max_absolute": 2.2551327472086768e-10,
+              "max_gate_ratio": 0.0002242488378023762
+            },
+            {
+              "max_absolute": 2.872777571383267e-10,
+              "max_gate_ratio": 0.00012980817269874235
+            },
+            {
+              "max_absolute": 6.152533343906086e-10,
+              "max_gate_ratio": 0.000802916801400788
+            },
+            {
+              "max_absolute": 6.181499756507947e-10,
+              "max_gate_ratio": 0.0007352265913399488
+            },
+            {
+              "max_absolute": 3.6465630515181147e-10,
+              "max_gate_ratio": 0.0007275957635877707
+            }
+          ]
+        }
+      ],
+      "branch_signature": [
+        [
+          -1,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        [
+          -1,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        [
+          1,
+          1,
+          -1,
+          1,
+          1,
+          1,
+          0
+        ]
+      ],
+      "nv_max_abs": 0.0,
+      "pass": true
+    },
+    {
+      "name": "root_weak_lower",
+      "value_success": true,
+      "jacobian_success": false,
+      "error": "unsupported weak/near friction or nested clamp threshold; value retained, no unique Jacobian"
+    },
+    {
+      "name": "root_joint_force_threshold",
+      "value_success": true,
+      "jacobian_success": false,
+      "error": "unsupported weak/near friction or nested clamp threshold; value retained, no unique Jacobian"
+    },
+    {
+      "name": "root_control_threshold_conservative",
+      "value_success": true,
+      "jacobian_success": false,
+      "error": "unsupported weak/near friction or nested clamp threshold; value retained, no unique Jacobian"
+    },
+    {
+      "name": "root_q_dimension6",
+      "value_success": false,
+      "jacobian_success": false,
+      "error": "finite state dimension7"
+    },
+    {
+      "name": "root_v_nonfinite",
+      "value_success": false,
+      "jacobian_success": false,
+      "error": "finite state dimension7"
+    }
+  ],
+  "phase5": "NOT_ACCEPTED",
+  "new_plant": false
+}

@@ -274,6 +274,18 @@ held-input subdivision and retained future-failure prefixes. These are component
 checks, with main-controller, derivatives, task and timing acceptance pending.
 [Independent augmented review](../reviews/evidence/public_coupled_augmented_root_review_20261007.md).
 
+![Physical2ms analytic derivative blocks](../figures/phase5/phase5_public_coupled_derivative_cpp_matrix.png)
+
+![Physical derivative verification at both finite-difference steps](../figures/phase5/phase5_public_coupled_derivative_cpp_verification.png)
+
+Each Jacobian block has explicit units. Both fixed FD steps check every21 input
+column plus full bias/mass partials on selected strict branches. Root separately
+checks6 supported,3 uncertified and2 invalid cases, including nonzero-motion
+bias. Threshold outputs omit a matrix conservatively; this does not prove
+nondifferentiability of the composite map. These are local analytic component
+checks, with augmented/horizon, controller, task and timing gates pending.
+[Independent physical derivative review](../reviews/evidence/public_physical_derivative_root_review_20261007.md).
+
 ## Downloadable 3D models
 
 | Asset | Format / units | Purpose |
