@@ -1,0 +1,60 @@
+{
+  "source": "actual frozen parity-attempt1/native.json and report.json",
+  "script_sha256": "b42998ec5073fd49d6a6a0b46368f1e5259a8f1555ebfba64f976fe777a4bb6a",
+  "report_sha256": "cdb000aef2d46958b5774c8e8b747b7fc658ef71674bbaba0866afd7042c59aa",
+  "native_sha256": "15b1c7ca33762a7d3edb378c0093ce9e15831a6b664786e389eb197df6030e20",
+  "inputs_sha256": "f33bcb56aad88ca31b689628a555117f14b4a6d538e5d7c3bdd95ae86cce627c",
+  "freeze_sha256": "9697ce1c547b7db2d5159e44685f6a02bc009fdd61efffa350f2706ad68c270f",
+  "binary_sha256": "1dee8c5ac587bb361835a7d8c78fd12c7a15fe5b8a9ace4dfc0742c9135a137f",
+  "figure_sha256": "570f0a16a064a5816e12db56755e30a1dec0ce352a0945d5f85b6e1a13bda993",
+  "figure_bytes": 159547,
+  "scope": "Development finite sampled closed-model diagnostics only. GLOBAL nominal cell chain. No connecting segment/ball/admissibility/execution/safety/uniform error bound/main/task/timing or Phase5 acceptance. Earlier independent FD gate FAIL retained.",
+  "phase5": "NOT_ACCEPTED",
+  "new_model_or_plant_calls": false,
+  "plot_data": {
+    "labels": [
+      "Nominal",
+      "q[1]+1e-6",
+      "q[1]+3e-7",
+      "C[1]\u22121e-6",
+      "C[1]\u22123e-7"
+    ],
+    "cases": [
+      "known_w_bound_q1_e0",
+      "known_w_bound_q1_e1",
+      "known_w_bound_C1_e0",
+      "known_w_bound_C1_e1"
+    ],
+    "joint_zero_based": 1,
+    "friction_force_Nm": [
+      -1.137,
+      -1.1353588526545577,
+      -1.137,
+      -1.1353428923460955,
+      -1.137
+    ],
+    "force_above_lower_mNm": [
+      0.0,
+      1.6411473454422953,
+      0.0,
+      1.6571076539044771,
+      0.0
+    ],
+    "original_H_gradient_rad_per_s2": [
+      0.0032122965091645472,
+      6.661338147750939e-16,
+      0.0016289786130736505,
+      -2.220446049250313e-16,
+      0.0016229526752515877
+    ],
+    "exact_branches": [
+      -1,
+      0,
+      -1,
+      0,
+      -1
+    ],
+    "lower_bound_Nm": -1.137,
+    "scope": "Known retained earlier FD counterexamples/diagnostics; correctly classified finite samples, no repair/replacement of old FD FAIL. No segment/radius certificate."
+  }
+}

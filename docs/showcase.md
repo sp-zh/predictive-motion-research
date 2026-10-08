@@ -348,3 +348,20 @@ and452 root payloads are verified on Mac/Dell. These extension derivatives
 provide no finite perturbation radius, actual command admission, continuation
 or main/task/timing certificate. Phase5 remains unaccepted.
 [Independent extension review and retained failure](../reviews/evidence/public_augmented_extension_root_review_20261008.md).
+
+
+![All42 sampled diagnostic outcomes and retained actual prefixes](../figures/phase5/phase5_public_coupled_finite_trial_outcomes.png)
+
+![GLOBAL residuals for the declared producer nonuniform candidate](../figures/phase5/phase5_public_coupled_finite_trial_global_residuals.png)
+
+![Retained finite friction-branch counterexamples](../figures/phase5/phase5_public_coupled_finite_trial_known_branches.png)
+
+These actual predictor-output plots retain all42 outcomes and disclose the
+selected illustrative prefixes. Residual blocks use their individual SI units
+and have no quality acceptance threshold. The shown producer nonuniform case
+has unchanged sampled branches; the independent root's different prospective
+finite case changes branches, with q/v residuals0.000173rad/0.005716rad/s.
+Neither plot establishes a connecting segment, perturbation ball, execution,
+safety or controller readiness. The original extension FD gate remains failed.
+No new plant/task video is available; Phase5 remains unaccepted.
+[Independent finite-trial review](../reviews/evidence/public_finite_trial_root_review_20261008.md).

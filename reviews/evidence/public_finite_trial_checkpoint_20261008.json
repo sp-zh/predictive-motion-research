@@ -1,0 +1,623 @@
+{
+  "date": "2026-10-08",
+  "timezone": "America/Toronto",
+  "decision": "PASS_SELECTED_FINITE_TRIAL_DIAGNOSTIC_ARITHMETIC",
+  "phase5": "NOT_ACCEPTED",
+  "phase6": "NOT_STARTED",
+  "earlier_extension_FD_gate": "FAIL_RETAINED_IMMUTABLE",
+  "producer_archive": {
+    "sha256": "fed0f984ace115b89bfbda0ac729cdb4e00818381492ef2d82c787ba9fe53d3c",
+    "bytes": 50029369,
+    "regular_members": 2807,
+    "payloads": 2805,
+    "Mac": "/Users/uot/Documents/ChatGPT/ros/results/phase5-executor-checkpoints-01a114d9/public-coupled-finite-trial-cpp-v1-20261008/public-coupled-finite-trial-cpp-v1.tar.gz",
+    "Dell": "/mnt/d/CodexTransfer/projects/predictive_motion/checkpoints/public-coupled-finite-trial-cpp-v1-20261008/public-coupled-finite-trial-cpp-v1.tar.gz",
+    "source_manifest_sha256": "d802bd5f402d3deadd4b29ab9803645a8e947d28319324b6ed0412391aa40e8a",
+    "all_payloads_root_verified_on_both": true,
+    "immutable_READY_Mac_copy_verified": "false reflects publicationtime; later root closure proves both copies"
+  },
+  "root_archive": {
+    "sha256": "61caea19ed702138a26d58438f2129e22bf6efead2e2830fa0e35d8e113f6c5a",
+    "bytes": 3132359,
+    "regular_members": 39,
+    "payloads": 38,
+    "all_payloads_verified": true,
+    "scope": "Independent frozen13-pair finite trial numerical diagnostics; all originals/prefixes, signed branches and GLOBAL/LOCAL arithmetic retained. No residual performance gate, new plant, main, safety or Phase5 acceptance.",
+    "all_payloads_root_verified_Mac": true,
+    "Mac": "/Users/uot/Documents/ChatGPT/ros/transfer/incoming/root-public-finite-trial-20261008/evidence.tar.gz",
+    "Dell": "/mnt/d/CodexTransfer/projects/predictive_motion/checkpoints/root-public-finite-trial-20261008/evidence.tar.gz",
+    "all_payloads_root_verified_on_both": true
+  },
+  "dependency_closure": {
+    "verified_utc": "2026-10-08T05:39:09.961554+00:00",
+    "source_sha256": "deee39ba85b025cac4b35af6e782378d0c25e809eef76c9249c0f9ac0d43a648",
+    "freeze_sha256": "9697ce1c547b7db2d5159e44685f6a02bc009fdd61efffa350f2706ad68c270f",
+    "archive_sha256": "fed0f984ace115b89bfbda0ac729cdb4e00818381492ef2d82c787ba9fe53d3c",
+    "live_and_immutable_Dell_files_verified": 2703,
+    "input_bytes": 194507583,
+    "regular_members_verified": 2807,
+    "all_archive_payloads_verified": 2805,
+    "all_embedded_immutable_inputs_verified": 2703,
+    "manifest_name": "project/results/phase5/development/public-coupled-finite-trial-cpp-v1/CHECKPOINT_FILE_MANIFEST.json",
+    "scope": "Read-only live/cache/archive closure with an explicit current manifest identity.\n\nNo physics/model/plant execution. Archive membership is read in stream order.\n",
+    "phase5": "NOT_ACCEPTED",
+    "all2703_embedded_immutable_dependencies_root_verified_Mac": true,
+    "all2805_producer_archive_payloads_root_verified_Mac": true
+  },
+  "binary_sha256": "1dee8c5ac587bb361835a7d8c78fd12c7a15fe5b8a9ace4dfc0742c9135a137f",
+  "freeze_sha256": "9697ce1c547b7db2d5159e44685f6a02bc009fdd61efffa350f2706ad68c270f",
+  "root_source_sha256": "c1a4d4620e8da07b44676e9e3faf52b924d7500fc6344e39b689d5e14a1ccc69",
+  "predeclared_sha256": "008af2b68152f7e611ed107a2d7a80b0d596ef752da082bdbd6db616733ea672",
+  "producer_cases": {
+    "pairs": 42,
+    "outcomes": {
+      "sampled_strict_branches_unchanged": 11,
+      "forward_failed": 21,
+      "sampled_branch_changed": 2,
+      "mesh_mismatch": 2,
+      "unsupported": 6
+    },
+    "closed_rollouts": 84,
+    "nominal_map_rollouts": 42,
+    "actual_input_point_diagnostics": 298,
+    "synthetic_negative_controls": 14
+  },
+  "root_cases": {
+    "pairs": 13,
+    "outcomes": {
+      "sampled_strict_branches_unchanged": 5,
+      "sampled_branch_changed": 4,
+      "mesh_mismatch": 1,
+      "unsupported": 1,
+      "forward_failed": 2
+    },
+    "closed_rollouts": 26,
+    "nominal_map_rollouts": 13,
+    "actual_input_point_diagnostics": 130,
+    "first_attempt_exit": 0,
+    "no_repairs_or_repeated_numeric_attempt": true
+  },
+  "root_metrics": [
+    {
+      "name": "root_trial_identity_start",
+      "outcome": "sampled_strict_branches_unchanged",
+      "nominal_forward_complete": true,
+      "trial_forward_complete": true,
+      "nominal_half_count": 2,
+      "trial_half_count": 2,
+      "nominal_certified_prefix": 2,
+      "comparison_count": 2,
+      "residual_count": 4,
+      "global_residual_mixed_units_max_diagnostic_only": 0.0,
+      "global_residual_SI_blocks": {
+        "q": {
+          "units": "rad",
+          "max_absolute": 0.0
+        },
+        "v": {
+          "units": "rad/s",
+          "max_absolute": 0.0
+        },
+        "C": {
+          "units": "rad",
+          "max_absolute": 0.0
+        },
+        "w": {
+          "units": "rad/s",
+          "max_absolute": 0.0
+        },
+        "s": {
+          "units": "dimensionless",
+          "max_absolute": 0.0
+        },
+        "r": {
+          "units": "1/s",
+          "max_absolute": 0.0
+        }
+      },
+      "local_global_identity_max": 0.0
+    },
+    {
+      "name": "root_trial_start_progress_feasible",
+      "outcome": "sampled_strict_branches_unchanged",
+      "nominal_forward_complete": true,
+      "trial_forward_complete": true,
+      "nominal_half_count": 2,
+      "trial_half_count": 2,
+      "nominal_certified_prefix": 2,
+      "comparison_count": 2,
+      "residual_count": 4,
+      "global_residual_mixed_units_max_diagnostic_only": 0.0,
+      "global_residual_SI_blocks": {
+        "q": {
+          "units": "rad",
+          "max_absolute": 0.0
+        },
+        "v": {
+          "units": "rad/s",
+          "max_absolute": 0.0
+        },
+        "C": {
+          "units": "rad",
+          "max_absolute": 0.0
+        },
+        "w": {
+          "units": "rad/s",
+          "max_absolute": 0.0
+        },
+        "s": {
+          "units": "dimensionless",
+          "max_absolute": 0.0
+        },
+        "r": {
+          "units": "1/s",
+          "max_absolute": 0.0
+        }
+      },
+      "local_global_identity_max": 6.007399198666363e-23
+    },
+    {
+      "name": "root_trial_seen_q_1e-06",
+      "outcome": "sampled_branch_changed",
+      "nominal_forward_complete": true,
+      "trial_forward_complete": true,
+      "nominal_half_count": 2,
+      "trial_half_count": 2,
+      "nominal_certified_prefix": 2,
+      "comparison_count": 2,
+      "residual_count": 4,
+      "global_residual_mixed_units_max_diagnostic_only": 1.822312994180826e-06,
+      "global_residual_SI_blocks": {
+        "q": {
+          "units": "rad",
+          "max_absolute": 6.824533604898875e-09
+        },
+        "v": {
+          "units": "rad/s",
+          "max_absolute": 1.822312994180826e-06
+        },
+        "C": {
+          "units": "rad",
+          "max_absolute": 0.0
+        },
+        "w": {
+          "units": "rad/s",
+          "max_absolute": 0.0
+        },
+        "s": {
+          "units": "dimensionless",
+          "max_absolute": 0.0
+        },
+        "r": {
+          "units": "1/s",
+          "max_absolute": 0.0
+        }
+      },
+      "local_global_identity_max": 3.772381824224555e-16
+    },
+    {
+      "name": "root_trial_seen_q_3e-07",
+      "outcome": "sampled_strict_branches_unchanged",
+      "nominal_forward_complete": true,
+      "trial_forward_complete": true,
+      "nominal_half_count": 2,
+      "trial_half_count": 2,
+      "nominal_certified_prefix": 2,
+      "comparison_count": 2,
+      "residual_count": 4,
+      "global_residual_mixed_units_max_diagnostic_only": 4.012122665347784e-14,
+      "global_residual_SI_blocks": {
+        "q": {
+          "units": "rad",
+          "max_absolute": 8.881784197001252e-16
+        },
+        "v": {
+          "units": "rad/s",
+          "max_absolute": 4.012122665347784e-14
+        },
+        "C": {
+          "units": "rad",
+          "max_absolute": 0.0
+        },
+        "w": {
+          "units": "rad/s",
+          "max_absolute": 0.0
+        },
+        "s": {
+          "units": "dimensionless",
+          "max_absolute": 0.0
+        },
+        "r": {
+          "units": "1/s",
+          "max_absolute": 0.0
+        }
+      },
+      "local_global_identity_max": 3.796219193033657e-16
+    },
+    {
+      "name": "root_trial_seen_C_1e-06",
+      "outcome": "sampled_branch_changed",
+      "nominal_forward_complete": true,
+      "trial_forward_complete": true,
+      "nominal_half_count": 2,
+      "trial_half_count": 2,
+      "nominal_certified_prefix": 2,
+      "comparison_count": 2,
+      "residual_count": 4,
+      "global_residual_mixed_units_max_diagnostic_only": 1.8400351619430519e-06,
+      "global_residual_SI_blocks": {
+        "q": {
+          "units": "rad",
+          "max_absolute": 6.890902834455481e-09
+        },
+        "v": {
+          "units": "rad/s",
+          "max_absolute": 1.8400351619430519e-06
+        },
+        "C": {
+          "units": "rad",
+          "max_absolute": 0.0
+        },
+        "w": {
+          "units": "rad/s",
+          "max_absolute": 0.0
+        },
+        "s": {
+          "units": "dimensionless",
+          "max_absolute": 0.0
+        },
+        "r": {
+          "units": "1/s",
+          "max_absolute": 0.0
+        }
+      },
+      "local_global_identity_max": 4.228373299099106e-16
+    },
+    {
+      "name": "root_trial_seen_C_3e-07",
+      "outcome": "sampled_strict_branches_unchanged",
+      "nominal_forward_complete": true,
+      "trial_forward_complete": true,
+      "nominal_half_count": 2,
+      "trial_half_count": 2,
+      "nominal_certified_prefix": 2,
+      "comparison_count": 2,
+      "residual_count": 4,
+      "global_residual_mixed_units_max_diagnostic_only": 1.2921521491682242e-15,
+      "global_residual_SI_blocks": {
+        "q": {
+          "units": "rad",
+          "max_absolute": 4.440892098500626e-16
+        },
+        "v": {
+          "units": "rad/s",
+          "max_absolute": 1.2921521491682242e-15
+        },
+        "C": {
+          "units": "rad",
+          "max_absolute": 0.0
+        },
+        "w": {
+          "units": "rad/s",
+          "max_absolute": 0.0
+        },
+        "s": {
+          "units": "dimensionless",
+          "max_absolute": 0.0
+        },
+        "r": {
+          "units": "1/s",
+          "max_absolute": 0.0
+        }
+      },
+      "local_global_identity_max": 1.550081081461521e-16
+    },
+    {
+      "name": "root_trial_prospective_combined_small_q_C",
+      "outcome": "sampled_strict_branches_unchanged",
+      "nominal_forward_complete": true,
+      "trial_forward_complete": true,
+      "nominal_half_count": 2,
+      "trial_half_count": 2,
+      "nominal_certified_prefix": 2,
+      "comparison_count": 2,
+      "residual_count": 4,
+      "global_residual_mixed_units_max_diagnostic_only": 8.043771811822031e-14,
+      "global_residual_SI_blocks": {
+        "q": {
+          "units": "rad",
+          "max_absolute": 4.440892098500626e-16
+        },
+        "v": {
+          "units": "rad/s",
+          "max_absolute": 8.043771811822031e-14
+        },
+        "C": {
+          "units": "rad",
+          "max_absolute": 0.0
+        },
+        "w": {
+          "units": "rad/s",
+          "max_absolute": 0.0
+        },
+        "s": {
+          "units": "dimensionless",
+          "max_absolute": 0.0
+        },
+        "r": {
+          "units": "1/s",
+          "max_absolute": 0.0
+        }
+      },
+      "local_global_identity_max": 3.8170837729489413e-16
+    },
+    {
+      "name": "root_trial_nonuniform_finite_state_controls",
+      "outcome": "sampled_branch_changed",
+      "nominal_forward_complete": true,
+      "trial_forward_complete": true,
+      "nominal_half_count": 20,
+      "trial_half_count": 20,
+      "nominal_certified_prefix": 20,
+      "comparison_count": 20,
+      "residual_count": 34,
+      "global_residual_mixed_units_max_diagnostic_only": 0.005715840043967698,
+      "global_residual_SI_blocks": {
+        "q": {
+          "units": "rad",
+          "max_absolute": 0.00017300321260783902
+        },
+        "v": {
+          "units": "rad/s",
+          "max_absolute": 0.005715840043967698
+        },
+        "C": {
+          "units": "rad",
+          "max_absolute": 8.881784197001252e-16
+        },
+        "w": {
+          "units": "rad/s",
+          "max_absolute": 3.8116482626443515e-21
+        },
+        "s": {
+          "units": "dimensionless",
+          "max_absolute": 5.421010862427522e-20
+        },
+        "r": {
+          "units": "1/s",
+          "max_absolute": 5.421010862427522e-20
+        }
+      },
+      "local_global_identity_max": 4.3566746273306787e-16
+    },
+    {
+      "name": "root_trial_same_total_different_mesh",
+      "outcome": "mesh_mismatch",
+      "nominal_forward_complete": true,
+      "trial_forward_complete": true,
+      "nominal_half_count": 20,
+      "trial_half_count": 20,
+      "nominal_certified_prefix": 20,
+      "comparison_count": 0,
+      "residual_count": 0,
+      "global_residual_mixed_units_max_diagnostic_only": 0.0,
+      "global_residual_SI_blocks": {
+        "q": {
+          "units": "rad",
+          "max_absolute": 0.0
+        },
+        "v": {
+          "units": "rad/s",
+          "max_absolute": 0.0
+        },
+        "C": {
+          "units": "rad",
+          "max_absolute": 0.0
+        },
+        "w": {
+          "units": "rad/s",
+          "max_absolute": 0.0
+        },
+        "s": {
+          "units": "dimensionless",
+          "max_absolute": 0.0
+        },
+        "r": {
+          "units": "1/s",
+          "max_absolute": 0.0
+        }
+      },
+      "local_global_identity_max": 0.0
+    },
+    {
+      "name": "root_trial_C_boundary_uncertified",
+      "outcome": "unsupported",
+      "nominal_forward_complete": true,
+      "trial_forward_complete": true,
+      "nominal_half_count": 2,
+      "trial_half_count": 2,
+      "nominal_certified_prefix": 2,
+      "comparison_count": 2,
+      "residual_count": 4,
+      "global_residual_mixed_units_max_diagnostic_only": 2.435483029535008,
+      "global_residual_SI_blocks": {
+        "q": {
+          "units": "rad",
+          "max_absolute": 0.007553968920231746
+        },
+        "v": {
+          "units": "rad/s",
+          "max_absolute": 2.435483029535008
+        },
+        "C": {
+          "units": "rad",
+          "max_absolute": 0.0
+        },
+        "w": {
+          "units": "rad/s",
+          "max_absolute": 0.0
+        },
+        "s": {
+          "units": "dimensionless",
+          "max_absolute": 0.0
+        },
+        "r": {
+          "units": "1/s",
+          "max_absolute": 0.0
+        }
+      },
+      "local_global_identity_max": 2.220446049250313e-16
+    },
+    {
+      "name": "root_trial_invalid_progress",
+      "outcome": "forward_failed",
+      "nominal_forward_complete": true,
+      "trial_forward_complete": false,
+      "nominal_half_count": 2,
+      "trial_half_count": 0,
+      "nominal_certified_prefix": 2,
+      "comparison_count": 0,
+      "residual_count": 0,
+      "global_residual_mixed_units_max_diagnostic_only": 0.0,
+      "global_residual_SI_blocks": {
+        "q": {
+          "units": "rad",
+          "max_absolute": 0.0
+        },
+        "v": {
+          "units": "rad/s",
+          "max_absolute": 0.0
+        },
+        "C": {
+          "units": "rad",
+          "max_absolute": 0.0
+        },
+        "w": {
+          "units": "rad/s",
+          "max_absolute": 0.0
+        },
+        "s": {
+          "units": "dimensionless",
+          "max_absolute": 0.0
+        },
+        "r": {
+          "units": "1/s",
+          "max_absolute": 0.0
+        }
+      },
+      "local_global_identity_max": 0.0
+    },
+    {
+      "name": "root_trial_future_progress_precheck_failure",
+      "outcome": "forward_failed",
+      "nominal_forward_complete": true,
+      "trial_forward_complete": false,
+      "nominal_half_count": 8,
+      "trial_half_count": 4,
+      "nominal_certified_prefix": 8,
+      "comparison_count": 4,
+      "residual_count": 6,
+      "global_residual_mixed_units_max_diagnostic_only": 2.7755575615628914e-17,
+      "global_residual_SI_blocks": {
+        "q": {
+          "units": "rad",
+          "max_absolute": 0.0
+        },
+        "v": {
+          "units": "rad/s",
+          "max_absolute": 0.0
+        },
+        "C": {
+          "units": "rad",
+          "max_absolute": 0.0
+        },
+        "w": {
+          "units": "rad/s",
+          "max_absolute": 0.0
+        },
+        "s": {
+          "units": "dimensionless",
+          "max_absolute": 0.0
+        },
+        "r": {
+          "units": "1/s",
+          "max_absolute": 2.7755575615628914e-17
+        }
+      },
+      "local_global_identity_max": 1.1438332919722072e-17
+    },
+    {
+      "name": "root_trial_equal_clip_counts_changed_sides",
+      "outcome": "sampled_branch_changed",
+      "nominal_forward_complete": true,
+      "trial_forward_complete": true,
+      "nominal_half_count": 2,
+      "trial_half_count": 2,
+      "nominal_certified_prefix": 2,
+      "comparison_count": 2,
+      "residual_count": 4,
+      "global_residual_mixed_units_max_diagnostic_only": 0.5088428149961455,
+      "global_residual_SI_blocks": {
+        "q": {
+          "units": "rad",
+          "max_absolute": 0.001526602001811747
+        },
+        "v": {
+          "units": "rad/s",
+          "max_absolute": 0.5088428149961455
+        },
+        "C": {
+          "units": "rad",
+          "max_absolute": 1.3877787807814457e-17
+        },
+        "w": {
+          "units": "rad/s",
+          "max_absolute": 0.0
+        },
+        "s": {
+          "units": "dimensionless",
+          "max_absolute": 0.0
+        },
+        "r": {
+          "units": "1/s",
+          "max_absolute": 0.0
+        }
+      },
+      "local_global_identity_max": 1.3877787807814457e-17
+    }
+  ],
+  "figures": {
+    "figures/phase5/phase5_public_coupled_finite_trial_outcomes.png": {
+      "sha256": "17fa6d8766bd693a2b03ca310916ab7822a9371554510bed38b147fb961a6904",
+      "bytes": 351189
+    },
+    "figures/phase5/phase5_public_coupled_finite_trial_outcomes.json": {
+      "sha256": "ada8587eb78fd2824d678bcefdb75cb5787242dfeaa14a1d2e29d1a9ce4c6370",
+      "bytes": 3530
+    },
+    "figures/phase5/phase5_public_coupled_finite_trial_global_residuals.png": {
+      "sha256": "1b33be0a73945a701e4cdbe3da9d56e5fbdbbddb791a5f72818e4c1e27da8f48",
+      "bytes": 311935
+    },
+    "figures/phase5/phase5_public_coupled_finite_trial_global_residuals.json": {
+      "sha256": "301709e77a78b80d93abce8dd261207b66629e3730a6bdfe8e9bd16c92f7c134",
+      "bytes": 5266
+    },
+    "figures/phase5/phase5_public_coupled_finite_trial_known_branches.png": {
+      "sha256": "570f0a16a064a5816e12db56755e30a1dec0ce352a0945d5f85b6e1a13bda993",
+      "bytes": 159547
+    },
+    "figures/phase5/phase5_public_coupled_finite_trial_known_branches.json": {
+      "sha256": "5b735071275b1c26ad44cef84901686a07f245aa6ffb8f2ee939a11da06b995c",
+      "bytes": 2073
+    }
+  },
+  "root_visual_inspection": {
+    "viewed_all_three_on_Mac": true,
+    "hashes_match_archived_manifest": true,
+    "units_and_selection_scope_readable": true
+  },
+  "retained_failures": "original extension FD gate/counterexamples, all original forward failures and unsupported prefixes, static drafts/client/preflight failures, root closure dispatch missing script-path failure (zero modelcalls)",
+  "scope": "Isolated finite sampled branch/value/prefix/GLOBAL affine arithmetic diagnostic; no residual quality gate, segment/ball, admission/execution/safety/uniform bound/main/controller/task/timing/Phase5 acceptance.",
+  "new_plant": false
+}

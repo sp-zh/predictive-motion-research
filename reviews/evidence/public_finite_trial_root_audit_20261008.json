@@ -1,0 +1,524 @@
+{
+  "decision": "PASS_SELECTED_FINITE_TRIAL_DIAGNOSTIC_ARITHMETIC",
+  "scope": "Independent fixed-roster finite-trial diagnostic audit, never a plant gate.\n\nReferences are frozen original closed2fa self-rollouts, f1 nominal maps and\ne2c point certificates. No producer verifier/diagnostic reconstruction import.\nGLOBAL affine deviations never reset to actual trial cell origins. Separately\nnamed LOCAL residuals verify the exact arithmetic relation to GLOBAL residuals.\nOnly syntax compilation is authorized at preparation; running requires the\nroot's frozen-input forecast authorization. No residual performance threshold.\n",
+  "source_sha256": "c1a4d4620e8da07b44676e9e3faf52b924d7500fc6344e39b689d5e14a1ccc69",
+  "binary_sha256": "1dee8c5ac587bb361835a7d8c78fd12c7a15fe5b8a9ace4dfc0742c9135a137f",
+  "freeze_sha256": "9697ce1c547b7db2d5159e44685f6a02bc009fdd61efffa350f2706ad68c270f",
+  "predeclared_sha256": "008af2b68152f7e611ed107a2d7a80b0d596ef752da082bdbd6db616733ea672",
+  "original_closed_sha256": "2fa952127cdd37ceb56396231e2972d50d36c94e9a19c341c9c17169442acf57",
+  "nominal_map_sha256": "f1b7e6c7e4219fec2beb310540c725b448dcf021b3a95ddafc2922e8849bf1d6",
+  "physical_certificate_sha256": "e2c75c09001ba354ca5371cbfc594a9765c62098d4cdb52e6a1442adc055c6a4",
+  "pairs": [
+    {
+      "name": "root_trial_identity_start",
+      "outcome": "sampled_strict_branches_unchanged",
+      "nominal_forward_complete": true,
+      "trial_forward_complete": true,
+      "nominal_half_count": 2,
+      "trial_half_count": 2,
+      "nominal_certified_prefix": 2,
+      "comparison_count": 2,
+      "residual_count": 4,
+      "global_residual_mixed_units_max_diagnostic_only": 0.0,
+      "global_residual_SI_blocks": {
+        "q": {
+          "units": "rad",
+          "max_absolute": 0.0
+        },
+        "v": {
+          "units": "rad/s",
+          "max_absolute": 0.0
+        },
+        "C": {
+          "units": "rad",
+          "max_absolute": 0.0
+        },
+        "w": {
+          "units": "rad/s",
+          "max_absolute": 0.0
+        },
+        "s": {
+          "units": "dimensionless",
+          "max_absolute": 0.0
+        },
+        "r": {
+          "units": "1/s",
+          "max_absolute": 0.0
+        }
+      },
+      "local_global_identity_max": 0.0
+    },
+    {
+      "name": "root_trial_start_progress_feasible",
+      "outcome": "sampled_strict_branches_unchanged",
+      "nominal_forward_complete": true,
+      "trial_forward_complete": true,
+      "nominal_half_count": 2,
+      "trial_half_count": 2,
+      "nominal_certified_prefix": 2,
+      "comparison_count": 2,
+      "residual_count": 4,
+      "global_residual_mixed_units_max_diagnostic_only": 0.0,
+      "global_residual_SI_blocks": {
+        "q": {
+          "units": "rad",
+          "max_absolute": 0.0
+        },
+        "v": {
+          "units": "rad/s",
+          "max_absolute": 0.0
+        },
+        "C": {
+          "units": "rad",
+          "max_absolute": 0.0
+        },
+        "w": {
+          "units": "rad/s",
+          "max_absolute": 0.0
+        },
+        "s": {
+          "units": "dimensionless",
+          "max_absolute": 0.0
+        },
+        "r": {
+          "units": "1/s",
+          "max_absolute": 0.0
+        }
+      },
+      "local_global_identity_max": 6.007399198666363e-23
+    },
+    {
+      "name": "root_trial_seen_q_1e-06",
+      "outcome": "sampled_branch_changed",
+      "nominal_forward_complete": true,
+      "trial_forward_complete": true,
+      "nominal_half_count": 2,
+      "trial_half_count": 2,
+      "nominal_certified_prefix": 2,
+      "comparison_count": 2,
+      "residual_count": 4,
+      "global_residual_mixed_units_max_diagnostic_only": 1.822312994180826e-06,
+      "global_residual_SI_blocks": {
+        "q": {
+          "units": "rad",
+          "max_absolute": 6.824533604898875e-09
+        },
+        "v": {
+          "units": "rad/s",
+          "max_absolute": 1.822312994180826e-06
+        },
+        "C": {
+          "units": "rad",
+          "max_absolute": 0.0
+        },
+        "w": {
+          "units": "rad/s",
+          "max_absolute": 0.0
+        },
+        "s": {
+          "units": "dimensionless",
+          "max_absolute": 0.0
+        },
+        "r": {
+          "units": "1/s",
+          "max_absolute": 0.0
+        }
+      },
+      "local_global_identity_max": 3.772381824224555e-16
+    },
+    {
+      "name": "root_trial_seen_q_3e-07",
+      "outcome": "sampled_strict_branches_unchanged",
+      "nominal_forward_complete": true,
+      "trial_forward_complete": true,
+      "nominal_half_count": 2,
+      "trial_half_count": 2,
+      "nominal_certified_prefix": 2,
+      "comparison_count": 2,
+      "residual_count": 4,
+      "global_residual_mixed_units_max_diagnostic_only": 4.012122665347784e-14,
+      "global_residual_SI_blocks": {
+        "q": {
+          "units": "rad",
+          "max_absolute": 8.881784197001252e-16
+        },
+        "v": {
+          "units": "rad/s",
+          "max_absolute": 4.012122665347784e-14
+        },
+        "C": {
+          "units": "rad",
+          "max_absolute": 0.0
+        },
+        "w": {
+          "units": "rad/s",
+          "max_absolute": 0.0
+        },
+        "s": {
+          "units": "dimensionless",
+          "max_absolute": 0.0
+        },
+        "r": {
+          "units": "1/s",
+          "max_absolute": 0.0
+        }
+      },
+      "local_global_identity_max": 3.796219193033657e-16
+    },
+    {
+      "name": "root_trial_seen_C_1e-06",
+      "outcome": "sampled_branch_changed",
+      "nominal_forward_complete": true,
+      "trial_forward_complete": true,
+      "nominal_half_count": 2,
+      "trial_half_count": 2,
+      "nominal_certified_prefix": 2,
+      "comparison_count": 2,
+      "residual_count": 4,
+      "global_residual_mixed_units_max_diagnostic_only": 1.8400351619430519e-06,
+      "global_residual_SI_blocks": {
+        "q": {
+          "units": "rad",
+          "max_absolute": 6.890902834455481e-09
+        },
+        "v": {
+          "units": "rad/s",
+          "max_absolute": 1.8400351619430519e-06
+        },
+        "C": {
+          "units": "rad",
+          "max_absolute": 0.0
+        },
+        "w": {
+          "units": "rad/s",
+          "max_absolute": 0.0
+        },
+        "s": {
+          "units": "dimensionless",
+          "max_absolute": 0.0
+        },
+        "r": {
+          "units": "1/s",
+          "max_absolute": 0.0
+        }
+      },
+      "local_global_identity_max": 4.228373299099106e-16
+    },
+    {
+      "name": "root_trial_seen_C_3e-07",
+      "outcome": "sampled_strict_branches_unchanged",
+      "nominal_forward_complete": true,
+      "trial_forward_complete": true,
+      "nominal_half_count": 2,
+      "trial_half_count": 2,
+      "nominal_certified_prefix": 2,
+      "comparison_count": 2,
+      "residual_count": 4,
+      "global_residual_mixed_units_max_diagnostic_only": 1.2921521491682242e-15,
+      "global_residual_SI_blocks": {
+        "q": {
+          "units": "rad",
+          "max_absolute": 4.440892098500626e-16
+        },
+        "v": {
+          "units": "rad/s",
+          "max_absolute": 1.2921521491682242e-15
+        },
+        "C": {
+          "units": "rad",
+          "max_absolute": 0.0
+        },
+        "w": {
+          "units": "rad/s",
+          "max_absolute": 0.0
+        },
+        "s": {
+          "units": "dimensionless",
+          "max_absolute": 0.0
+        },
+        "r": {
+          "units": "1/s",
+          "max_absolute": 0.0
+        }
+      },
+      "local_global_identity_max": 1.550081081461521e-16
+    },
+    {
+      "name": "root_trial_prospective_combined_small_q_C",
+      "outcome": "sampled_strict_branches_unchanged",
+      "nominal_forward_complete": true,
+      "trial_forward_complete": true,
+      "nominal_half_count": 2,
+      "trial_half_count": 2,
+      "nominal_certified_prefix": 2,
+      "comparison_count": 2,
+      "residual_count": 4,
+      "global_residual_mixed_units_max_diagnostic_only": 8.043771811822031e-14,
+      "global_residual_SI_blocks": {
+        "q": {
+          "units": "rad",
+          "max_absolute": 4.440892098500626e-16
+        },
+        "v": {
+          "units": "rad/s",
+          "max_absolute": 8.043771811822031e-14
+        },
+        "C": {
+          "units": "rad",
+          "max_absolute": 0.0
+        },
+        "w": {
+          "units": "rad/s",
+          "max_absolute": 0.0
+        },
+        "s": {
+          "units": "dimensionless",
+          "max_absolute": 0.0
+        },
+        "r": {
+          "units": "1/s",
+          "max_absolute": 0.0
+        }
+      },
+      "local_global_identity_max": 3.8170837729489413e-16
+    },
+    {
+      "name": "root_trial_nonuniform_finite_state_controls",
+      "outcome": "sampled_branch_changed",
+      "nominal_forward_complete": true,
+      "trial_forward_complete": true,
+      "nominal_half_count": 20,
+      "trial_half_count": 20,
+      "nominal_certified_prefix": 20,
+      "comparison_count": 20,
+      "residual_count": 34,
+      "global_residual_mixed_units_max_diagnostic_only": 0.005715840043967698,
+      "global_residual_SI_blocks": {
+        "q": {
+          "units": "rad",
+          "max_absolute": 0.00017300321260783902
+        },
+        "v": {
+          "units": "rad/s",
+          "max_absolute": 0.005715840043967698
+        },
+        "C": {
+          "units": "rad",
+          "max_absolute": 8.881784197001252e-16
+        },
+        "w": {
+          "units": "rad/s",
+          "max_absolute": 3.8116482626443515e-21
+        },
+        "s": {
+          "units": "dimensionless",
+          "max_absolute": 5.421010862427522e-20
+        },
+        "r": {
+          "units": "1/s",
+          "max_absolute": 5.421010862427522e-20
+        }
+      },
+      "local_global_identity_max": 4.3566746273306787e-16
+    },
+    {
+      "name": "root_trial_same_total_different_mesh",
+      "outcome": "mesh_mismatch",
+      "nominal_forward_complete": true,
+      "trial_forward_complete": true,
+      "nominal_half_count": 20,
+      "trial_half_count": 20,
+      "nominal_certified_prefix": 20,
+      "comparison_count": 0,
+      "residual_count": 0,
+      "global_residual_mixed_units_max_diagnostic_only": 0.0,
+      "global_residual_SI_blocks": {
+        "q": {
+          "units": "rad",
+          "max_absolute": 0.0
+        },
+        "v": {
+          "units": "rad/s",
+          "max_absolute": 0.0
+        },
+        "C": {
+          "units": "rad",
+          "max_absolute": 0.0
+        },
+        "w": {
+          "units": "rad/s",
+          "max_absolute": 0.0
+        },
+        "s": {
+          "units": "dimensionless",
+          "max_absolute": 0.0
+        },
+        "r": {
+          "units": "1/s",
+          "max_absolute": 0.0
+        }
+      },
+      "local_global_identity_max": 0.0
+    },
+    {
+      "name": "root_trial_C_boundary_uncertified",
+      "outcome": "unsupported",
+      "nominal_forward_complete": true,
+      "trial_forward_complete": true,
+      "nominal_half_count": 2,
+      "trial_half_count": 2,
+      "nominal_certified_prefix": 2,
+      "comparison_count": 2,
+      "residual_count": 4,
+      "global_residual_mixed_units_max_diagnostic_only": 2.435483029535008,
+      "global_residual_SI_blocks": {
+        "q": {
+          "units": "rad",
+          "max_absolute": 0.007553968920231746
+        },
+        "v": {
+          "units": "rad/s",
+          "max_absolute": 2.435483029535008
+        },
+        "C": {
+          "units": "rad",
+          "max_absolute": 0.0
+        },
+        "w": {
+          "units": "rad/s",
+          "max_absolute": 0.0
+        },
+        "s": {
+          "units": "dimensionless",
+          "max_absolute": 0.0
+        },
+        "r": {
+          "units": "1/s",
+          "max_absolute": 0.0
+        }
+      },
+      "local_global_identity_max": 2.220446049250313e-16
+    },
+    {
+      "name": "root_trial_invalid_progress",
+      "outcome": "forward_failed",
+      "nominal_forward_complete": true,
+      "trial_forward_complete": false,
+      "nominal_half_count": 2,
+      "trial_half_count": 0,
+      "nominal_certified_prefix": 2,
+      "comparison_count": 0,
+      "residual_count": 0,
+      "global_residual_mixed_units_max_diagnostic_only": 0.0,
+      "global_residual_SI_blocks": {
+        "q": {
+          "units": "rad",
+          "max_absolute": 0.0
+        },
+        "v": {
+          "units": "rad/s",
+          "max_absolute": 0.0
+        },
+        "C": {
+          "units": "rad",
+          "max_absolute": 0.0
+        },
+        "w": {
+          "units": "rad/s",
+          "max_absolute": 0.0
+        },
+        "s": {
+          "units": "dimensionless",
+          "max_absolute": 0.0
+        },
+        "r": {
+          "units": "1/s",
+          "max_absolute": 0.0
+        }
+      },
+      "local_global_identity_max": 0.0
+    },
+    {
+      "name": "root_trial_future_progress_precheck_failure",
+      "outcome": "forward_failed",
+      "nominal_forward_complete": true,
+      "trial_forward_complete": false,
+      "nominal_half_count": 8,
+      "trial_half_count": 4,
+      "nominal_certified_prefix": 8,
+      "comparison_count": 4,
+      "residual_count": 6,
+      "global_residual_mixed_units_max_diagnostic_only": 2.7755575615628914e-17,
+      "global_residual_SI_blocks": {
+        "q": {
+          "units": "rad",
+          "max_absolute": 0.0
+        },
+        "v": {
+          "units": "rad/s",
+          "max_absolute": 0.0
+        },
+        "C": {
+          "units": "rad",
+          "max_absolute": 0.0
+        },
+        "w": {
+          "units": "rad/s",
+          "max_absolute": 0.0
+        },
+        "s": {
+          "units": "dimensionless",
+          "max_absolute": 0.0
+        },
+        "r": {
+          "units": "1/s",
+          "max_absolute": 2.7755575615628914e-17
+        }
+      },
+      "local_global_identity_max": 1.1438332919722072e-17
+    },
+    {
+      "name": "root_trial_equal_clip_counts_changed_sides",
+      "outcome": "sampled_branch_changed",
+      "nominal_forward_complete": true,
+      "trial_forward_complete": true,
+      "nominal_half_count": 2,
+      "trial_half_count": 2,
+      "nominal_certified_prefix": 2,
+      "comparison_count": 2,
+      "residual_count": 4,
+      "global_residual_mixed_units_max_diagnostic_only": 0.5088428149961455,
+      "global_residual_SI_blocks": {
+        "q": {
+          "units": "rad",
+          "max_absolute": 0.001526602001811747
+        },
+        "v": {
+          "units": "rad/s",
+          "max_absolute": 0.5088428149961455
+        },
+        "C": {
+          "units": "rad",
+          "max_absolute": 1.3877787807814457e-17
+        },
+        "w": {
+          "units": "rad/s",
+          "max_absolute": 0.0
+        },
+        "s": {
+          "units": "dimensionless",
+          "max_absolute": 0.0
+        },
+        "r": {
+          "units": "1/s",
+          "max_absolute": 0.0
+        }
+      },
+      "local_global_identity_max": 1.3877787807814457e-17
+    }
+  ],
+  "physical_point_calls": 130,
+  "residual_performance_gate": false,
+  "new_plant": false,
+  "phase5": "NOT_ACCEPTED"
+}

@@ -1,0 +1,7 @@
+{
+  "event": "root closure dispatch used nonexistent copied-script path",
+  "exit": 2,
+  "stderr": "python3: can\u2019t open file /home/codextransfer/clean-audits/audit_public_coupled_checkpoint_closure_v2_root.py: No such file or directory",
+  "model_calls": 0,
+  "repair": "copied unchanged existing checker into root-finite-trial-20261008; correct path used; no model, policy or frozen inputs modified"
+}

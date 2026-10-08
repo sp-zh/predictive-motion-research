@@ -1,6 +1,6 @@
 # Phase 5 development status
 
-Updated 2026-10-07, America/Toronto. **Phase 5 acceptance is pending.** The human explicitly resumed the project on 2026-10-07 with “继续任务”. The interrupted checkpoint backup is remotely verified; scorer-v2 integrity repair and replacement protocol review are complete in their stated scope. Component acceptance through Phase4 remains intact; Phase5 is unaccepted and later phases have not started. The approved single seed91013 simulation passes its conditional prediction gate; the rejected v1 remains unexecuted.
+Updated 2026-10-08, America/Toronto. **Phase 5 acceptance is pending.** The human explicitly resumed the project on 2026-10-07 with “继续任务”. The interrupted checkpoint backup is remotely verified; scorer-v2 integrity repair and replacement protocol review are complete in their stated scope. Component acceptance through Phase4 remains intact; Phase5 is unaccepted and later phases have not started. The approved single seed91013 simulation passes its conditional prediction gate; the rejected v1 remains unexecuted.
 
 Independent installed consumers verify the coupled horizon, nonuniform meshes, full objective, nonzero state/nominal coordinates and separated command/model histories. The dimension-amplified PSD certificate bug is repaired and independently regression-tested. Actual-state condensed/lifted matrices match through a closed-form embedding; signed-row compression preserves every original constraint. These mathematical checks are separate from robot results.
 
@@ -141,3 +141,11 @@ The causal C++ model modules reproduce the frozen augmented transition, Jacobian
 - `results/phase5-early-review/root-progress-continuation-fixed`: independent installed-library cone consumer
 
 Complete predictive diagnostics, accuracy/retiming/early-intervention evidence, timing optimization, frozen evaluation and immutable export remain before the Phase 5 gate. Full research trials, retiming-package comparisons, scenario families, ablations, iiwa validation and final clean reproduction remain later work.
+
+The isolated finite nominal/trial diagnostic now passes producer42-pair and
+independent root13-pair value/branch/GLOBAL residual arithmetic checks. Root's
+prospective finite nonuniform candidate changes friction branches; the actual
+result and substantial residual remain recorded. No residual acceptance
+threshold or finite trust radius is inferred. The earlier extension FD failure
+remains failed. Main integration, candidate admission, task/timing and Phase5
+acceptance remain open. See [independent review](../reviews/evidence/public_finite_trial_root_review_20261008.md).

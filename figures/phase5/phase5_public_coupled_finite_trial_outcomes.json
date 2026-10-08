@@ -1,0 +1,98 @@
+{
+  "source": "actual frozen parity-attempt1/native.json and report.json",
+  "script_sha256": "b42998ec5073fd49d6a6a0b46368f1e5259a8f1555ebfba64f976fe777a4bb6a",
+  "report_sha256": "cdb000aef2d46958b5774c8e8b747b7fc658ef71674bbaba0866afd7042c59aa",
+  "native_sha256": "15b1c7ca33762a7d3edb378c0093ce9e15831a6b664786e389eb197df6030e20",
+  "inputs_sha256": "f33bcb56aad88ca31b689628a555117f14b4a6d538e5d7c3bdd95ae86cce627c",
+  "freeze_sha256": "9697ce1c547b7db2d5159e44685f6a02bc009fdd61efffa350f2706ad68c270f",
+  "binary_sha256": "1dee8c5ac587bb361835a7d8c78fd12c7a15fe5b8a9ace4dfc0742c9135a137f",
+  "figure_sha256": "17fa6d8766bd693a2b03ca310916ab7822a9371554510bed38b147fb961a6904",
+  "figure_bytes": 351189,
+  "scope": "Development finite sampled closed-model diagnostics only. GLOBAL nominal cell chain. No connecting segment/ball/admissibility/execution/safety/uniform error bound/main/task/timing or Phase5 acceptance. Earlier independent FD gate FAIL retained.",
+  "phase5": "NOT_ACCEPTED",
+  "new_model_or_plant_calls": false,
+  "plot_data": {
+    "outcome_counts": {
+      "sampled_strict_branches_unchanged": 11,
+      "sampled_branch_changed": 2,
+      "unsupported": 6,
+      "forward_failed": 21,
+      "mesh_mismatch": 2
+    },
+    "prefix_selected": [
+      {
+        "name": "known_w_bound_q1_e0",
+        "label": "Known q[1]+1e-6 branch change",
+        "nominal_steps": 2,
+        "trial_steps": 2
+      },
+      {
+        "name": "known_w_bound_C1_e1",
+        "label": "Known C[1]\u22123e-7 diagnostic",
+        "nominal_steps": 2,
+        "trial_steps": 2
+      },
+      {
+        "name": "finite_distinct_nonuniform_global_chain",
+        "label": "Distinct controls, mesh [1,3,2,4]",
+        "nominal_steps": 20,
+        "trial_steps": 20
+      },
+      {
+        "name": "same_total_different_integer_mesh",
+        "label": "Same duration, different per-cell mesh",
+        "nominal_steps": 20,
+        "trial_steps": 20
+      },
+      {
+        "name": "physical_weak_lower_zero_gradient_trial",
+        "label": "Weak physical point",
+        "nominal_steps": 2,
+        "trial_steps": 2
+      },
+      {
+        "name": "initial_C_boundary_trial",
+        "label": "Closed C boundary",
+        "nominal_steps": 2,
+        "trial_steps": 2
+      },
+      {
+        "name": "future_trial_original_prefix",
+        "label": "Future trial progress failure",
+        "nominal_steps": 6,
+        "trial_steps": 4
+      },
+      {
+        "name": "future_nominal_original_prefix",
+        "label": "Future nominal progress failure",
+        "nominal_steps": 4,
+        "trial_steps": 6
+      },
+      {
+        "name": "later_generated_command_domain_prefix",
+        "label": "Later command-domain failure",
+        "nominal_steps": 6,
+        "trial_steps": 4
+      },
+      {
+        "name": "later_invalid_alpha_original_global_precheck",
+        "label": "Invalid later alpha: global precheck",
+        "nominal_steps": 6,
+        "trial_steps": 0
+      },
+      {
+        "name": "trial_q_dimension_no_outputs",
+        "label": "Invalid initial q dimension",
+        "nominal_steps": 2,
+        "trial_steps": 0
+      },
+      {
+        "name": "empty_topology_only",
+        "label": "Empty equal topology: failed forward",
+        "nominal_steps": 0,
+        "trial_steps": 0
+      }
+    ],
+    "selection": "All outcomes shown. Prefix detail fixed categories: known changed/unchanged, nonuniform, mismesh, unsupported, future/initial/global-precheck failures. No success curation or ranking."
+  }
+}
