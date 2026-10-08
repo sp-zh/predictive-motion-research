@@ -61,5 +61,14 @@
     "verified_utc": "2026-10-08T18:00:34.559038+00:00",
     "scope": "Read-only authenticated SSH with fixed hostkey; Dell project pause metadata was not yet synchronized at this check; source writer handles synchronization",
     "project_development_calls": 0
+  },
+  "Dell_evidence": {
+    "directory": "reviews/evidence/connection-repair-20261008",
+    "manifest_sha256": "89a988567eed878a00b94113d11381f3130860702d9baf89d2b02d58e95b9451",
+    "verified_payloads": 8,
+    "Windows_keeper_pid": 27144,
+    "Windows_keeper_start_time_utc": "2026-10-08T17:57:23.7428152Z",
+    "repair_script_fix": "PowerShell JSON DateTime startup identity compared using UTC ticks; repeated restoration preserves PID",
+    "verified_copies": "Mac/Dell, 10 transferred files hashed; 8 manifest payloads and READY manifest hash checked"
   }
 }

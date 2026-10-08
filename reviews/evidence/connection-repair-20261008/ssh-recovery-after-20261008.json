@@ -1,0 +1,22 @@
+{
+  "banner_checks": {
+    "status": "fulfilled",
+    "value": {
+      "chunk_id": "6710ca",
+      "wall_time_seconds": 0.3039975,
+      "exit_code": 0,
+      "original_token_count": 74,
+      "output": "[\r\n  {\r\n    \"Address\": \"172.29.211.53\",\r\n    \"Port\": 2222,\r\n    \"Banner\": \"SSH-2.0-OpenSSH_9.6p1 Ubuntu-3ubuntu13.19\",\r\n    \"Status\": \"PASS\"\r\n  },\r\n  {\r\n    \"Address\": \"169.254.118.3\",\r\n    \"Port\": 2222,\r\n    \"Banner\": \"SSH-2.0-OpenSSH_9.6p1 Ubuntu-3ubuntu13.19\",\r\n    \"Status\": \"PASS\"\r\n  }\r\n]\r\n"
+    }
+  },
+  "service_authentication_and_keeper": {
+    "status": "fulfilled",
+    "value": {
+      "chunk_id": "c51e11",
+      "wall_time_seconds": 0.6116159,
+      "exit_code": 0,
+      "original_token_count": 97,
+      "output": "172.29.211.53 \nactive\nenabled\nState  Recv-Q Send-Q Local Address:Port Peer Address:PortProcess\nLISTEN 0      128    172.29.211.53:2222      0.0.0.0:*    users:((\"sshd\",pid=296,fd=3))\nport 2222\nlistenaddress 172.29.211.53:2222\npermitrootlogin no\npubkeyauthentication yes\npasswordauthentication no\nallowusers codextransfer\nauthenticationmethods publickey\n    409       00:28 sleep infinity\n"
+    }
+  }
+}

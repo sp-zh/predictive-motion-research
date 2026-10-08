@@ -1,0 +1,7 @@
+{
+  "chunk_id": "716266",
+  "wall_time_seconds": 2.9436815,
+  "exit_code": 0,
+  "original_token_count": 268,
+  "output": "{\r\n  \"Hostname\": \"ZH2022\",\r\n  \"CodexCommandExecution\": \"PASS: Windows and WSL commands succeeded\",\r\n  \"Keeper\": {\r\n    \"IdentityMatches\": true,\r\n    \"StartTimeUtc\": \"2026-10-08T17:57:23.7428152Z\",\r\n    \"Id\": 27144,\r\n    \"ProcessName\": \"wsl\"\r\n  },\r\n  \"IpHelper\": {\r\n    \"StartType\": \"Automatic\",\r\n    \"Status\": \"Running\"\r\n  },\r\n  \"Firewall\": {\r\n    \"Action\": \"Allow\",\r\n    \"Name\": \"CodexTransfer-USB4-2222\",\r\n    \"Enabled\": \"True\",\r\n    \"Direction\": \"Inbound\"\r\n  },\r\n  \"AddressFilter\": {\r\n    \"LocalAddress\": \"169.254.118.3\",\r\n    \"RemoteAddress\": \"169.254.142.85\"\r\n  },\r\n  \"PortFilter\": {\r\n    \"Protocol\": \"TCP\",\r\n    \"LocalPort\": \"2222\"\r\n  },\r\n  \"InterfaceFilter\": {\r\n    \"InterfaceAlias\": \"以太网 4\"\r\n  },\r\n  \"PortProxy\": \"\\r\\nListen on ipv4:             Connect to ipv4:\\r\\n\\r\\nAddress         Port        Address         Port\\r\\n--------------- ----------  --------------- ----------\\r\\n169.254.118.3   2222        172.29.211.53   2222\\r\\n\\r\\n\",\r\n  \"WslList\": \"  NAME            STATE           VERSION\\r\\n\\r\\n* Ubuntu-24.04    Running         2\\r\\n\\r\\n\\r\\n\"\r\n}\r\n"
+}
