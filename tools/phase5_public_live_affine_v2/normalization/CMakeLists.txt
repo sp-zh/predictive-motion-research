@@ -1,0 +1,9 @@
+cmake_minimum_required(VERSION 3.16)
+project(phase5_public_live_affine_v2_normalization LANGUAGES CXX)
+add_subdirectory(../model_boundary model-boundary EXCLUDE_FROM_ALL)
+add_library(public_live_affine_v2_normalization STATIC normalization.cpp)
+target_compile_features(public_live_affine_v2_normalization PUBLIC cxx_std_17)
+target_include_directories(public_live_affine_v2_normalization PUBLIC ${CMAKE_CURRENT_SOURCE_DIR})
+target_link_libraries(public_live_affine_v2_normalization PUBLIC public_live_affine_v2_model_boundary)
+target_compile_options(public_live_affine_v2_normalization PRIVATE -Wall -Wextra -Wpedantic)
+# Source-only checkpoint. No executable, automatic check or runtime release.

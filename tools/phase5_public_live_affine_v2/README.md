@@ -27,3 +27,5 @@ d3d4/ec1 freezes are unchanged. Main/solver/geometry/terminal/stopping/deadline
 integration is outside this foundational stage.
 
 The separate [Model boundary source stage2A](model_boundary/SOURCE_REVIEW.md) adds a future reviewed-release gate, actual full metadata checks and genuine move-only raw-result ownership. It remains uncompiled/unexecuted; foundation-only compilation has no Model dependency. No runtime permission follows from these source files. Normalization and full affine/cost/capture remain pending.
+
+[Genuine cumulative normalization source2B](normalization/SOURCE_REVIEW.md) now supplies full/refusal ownership and checked cumulative coefficient views, keeping half2 sample and recursive cycle progress separate. It adds zero Model calls and remains uncompiled/unexecuted. Complete affine/cost/capture/readers remain pending.

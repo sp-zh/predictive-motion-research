@@ -14,7 +14,7 @@ struct ReviewPins { std::string review_record_path, review_record_sha256; };
 struct NominalControl { JointVector alpha{}; double b = 0; };
 namespace detail {
 struct InvocationStorage; struct HandleStorage; struct ForecastStorage;
-struct OpenStorage; struct NormalizationFactory;
+struct OpenStorage;
 }
 class OwnedLiveInvocation final {
  public:
@@ -89,13 +89,9 @@ class OwnedPublicForecast final {
   const FileIdentity& reviewRecordIdentity() const;
   const FileIdentity& protocolIdentity() const;
  private:
-  CaseBudget& normalizationBudget();
-  const ResourcePlan& normalizationPlan() const;
-  const char* normalizationCertificate() const;
   explicit OwnedPublicForecast(std::unique_ptr<detail::ForecastStorage>);
   std::unique_ptr<detail::ForecastStorage> storage_;
   friend struct detail::ForecastFactory;
-  friend struct detail::NormalizationFactory;
 };
 
 // Hash/parse preflight only. These source functions do NOT release a run; future
@@ -107,5 +103,5 @@ OwnedLiveInvocation prepareFrozenLiveInvocation(ReviewedForecastPermission&,
 ModelOpenOutcome openPinnedModel(ReviewedForecastPermission&, OwnedLiveInvocation&);
 OwnedPublicForecast forecastPublic(PinnedModelHandle&, OwnedLiveInvocation&&);
 // No archived/native-carrier or AlgebraTest factory can create these witnesses.
-// Normalization is a separate target; complete capture/readers remain later.
+// Normalization and complete capture/readers are deliberately a later stage.
 } // namespace phase5_public_live_affine_v2

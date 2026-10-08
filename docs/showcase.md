@@ -408,3 +408,5 @@ These three figures use the first independently validated 12-case output. They d
 The [live typed v2 source plan](design/public_live_affine_v2/README.md) and [foundation source review](../reviews/evidence/public_live_affine_v2_foundation_stage1_20261008/ROOT_SOURCE_REVIEW.json) extend configurable-horizon and history/ownership design. They add no executed motion or numerical result. The actual diagnostic plots above retain their original data and acceptance limits; Phase5 task videos await complete verified trajectories.
 
 The [Model boundary ownership/source review](../reviews/evidence/public_live_affine_v2_model_boundary_stage2a_20261008/ROOT_SOURCE_REVIEW.json) adds no executed model or motion result. Existing diagnostic figures remain the visual evidence; full Phase5 task clips await successful complete recorded trajectories.
+
+The [genuine cumulative normalization source checkpoint](../reviews/evidence/public_live_affine_v2_normalization_stage2b_20261008/ROOT_SOURCE_REVIEW.json) produces no new motion or matrix result; its checks are unexecuted source. Existing diagnostic plots retain their original scope, and Phase5 task videos remain pending.

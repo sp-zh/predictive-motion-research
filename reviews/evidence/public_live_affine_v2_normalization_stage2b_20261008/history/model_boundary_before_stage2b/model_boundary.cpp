@@ -338,7 +338,6 @@ struct ForecastFactory {
       text(build["sdk_manifest_sha256"])==by_role.at("sdk_manifest").sha256,"build/source/SDK binding mismatch");
     const std::set<std::string> required_sources={"foundation.hpp","foundation_context.cpp","foundation_identity.cpp","foundation_resources.cpp",
       "model_boundary.hpp","model_boundary.cpp","model_boundary_CMakeLists","foundation_CMakeLists",
-      "normalization.hpp","normalization.cpp","normalization_CMakeLists",
       "augmented_extension.hpp","augmented_extension.cpp","augmented_extension_CMakeLists",
       "augmented_value.hpp","augmented_value.cpp","physical_derivative.hpp","physical_derivative.cpp","physical_derivative_CMakeLists",
       "physical_value.hpp","physical_value.cpp","physical_value_CMakeLists","coupled_friction_box.cpp"};
@@ -572,9 +571,6 @@ const std::vector<FileIdentity>& OwnedPublicForecast::verifiedFiles() const{retu
 const FileIdentity& OwnedPublicForecast::currentProducerIdentity() const{return present(storage_).profile->release->producer;}
 const FileIdentity& OwnedPublicForecast::reviewRecordIdentity() const{return present(storage_).profile->release->review;}
 const FileIdentity& OwnedPublicForecast::protocolIdentity() const{return present(storage_).profile->release->protocol;}
-CaseBudget& OwnedPublicForecast::normalizationBudget(){return present(storage_).invocation->budget;}
-const ResourcePlan& OwnedPublicForecast::normalizationPlan() const{return present(storage_).invocation->plan;}
-const char* OwnedPublicForecast::normalizationCertificate() const{(void)present(storage_);return NativeModel::certificate_name;}
 ReviewedForecastPermission loadReviewedForecastPermission(const ReviewPins& pins){return detail::ForecastFactory::permission(pins);}
 OwnedLiveInvocation prepareFrozenLiveInvocation(ReviewedForecastPermission& p,const LiveActualContext& c,BatchBudget& b){return detail::ForecastFactory::prepare(p,c,b);}
 ModelOpenOutcome openPinnedModel(ReviewedForecastPermission& p,OwnedLiveInvocation& i){return detail::ForecastFactory::open(p,i);}
