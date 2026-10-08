@@ -1,6 +1,6 @@
 # Mac 与 Dell 项目协作
 
-更新：2026-10-07，多伦多时间。
+更新：2026-10-08，多伦多时间。
 
 ## 实测环境
 
@@ -25,6 +25,17 @@ Dell 原协作聊天：`01a0a7f2-cc0b-77d0-8ed7-15abe948879a`（检查接电时�
 新协作聊天：`01a114d9-3a3a-7071-b94f-624581000992`（Phase5：通过数据线继续 Dell 项目），hostId=`local`。新聊天运行在 Mac，通过现有 USB4 SSH 操作同一个 Dell WSL 项目，不复制或初始化项目。已核对原始用户交接授权、旧写入者释放状态和归档；新聊天在 Dell 的 `PHASE5_WRITER_STATE_20261007.json` 登记唯一开发写入，Mac 根只做独立审查和统一 Git 备份。原 WSL 项目和大型 D 盘证据保持原位置。旧状态文件与历史交接快照保留。
 
 ## 当前传输状态
+
+2026-10-08 通讯恢复实测：Windows 2222 转发仍监听，但 Ubuntu-24.04
+已停止、原保活进程消失，导致 TCP 可连接而 SSH banner 超时。Dell 的
+Codex 远程聊天能执行本机命令，应用控制通道正常。已启动原 WSL，确认
+专用 sshd 自动恢复，重建原 `sleep infinity` 保活；防火墙、公钥认证和
+固定主机密钥策略保持原限定范围。Mac 实测 SSH 登录及 1 MiB 双向 rsync
+均通过 SHA-256 校验。保活进程为何退出尚无确定证据；Windows/WSL 重启
+后仍需运行既有 Prepare.ps1，不能把本次恢复当作永久稳定性保证。
+[故障与实测记录](reviews/evidence/connection_repair_20261008.json)。
+项目唯一开发写入者已收到连接恢复通知；此次仅恢复通讯，没有追加实验
+或阶段验收权限。
 
 备用 SMB 共享：`smb://169.254.118.3/CableTransfer`，映射到 Dell 的 `C:\Users\SYSUR\Documents\Codex\CableTransfer`。权限为 `ZH2022\sp` 可修改。Mac 自动挂载因缺少认证失败，目前没有挂载，SMB 通道没有传输实测。当前使用已验证的 USB4 地址 SSH 通道。
 

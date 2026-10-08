@@ -1,0 +1,37 @@
+{
+  "scope": "USB4 SSH recovery only; no project experiment or code changes on Dell",
+  "date": "2026-10-08",
+  "timezone": "America/Toronto",
+  "observed_failure": "TCP to169.254.118.3:2222 established; SSH banner timed out before authentication",
+  "Dell_observations": {
+    "Ubuntu-24.04": "Stopped before repair",
+    "old_keeper_process": "Missing",
+    "Windows_portproxy": "Listening; forwarded to172.29.211.53:2222",
+    "Codex": "Remote diagnostic chat executed Windows and WSL commands successfully",
+    "firewall": "Restricted to original Mac169.254.142.85"
+  },
+  "repair": {
+    "WSL": "Started original Ubuntu-24.04; no shutdown/reboot",
+    "dedicated_sshd": "active; original publickey-only configuration",
+    "keeper": "Restored original sleep infinity; Mac observed PID409",
+    "WSL_address": "172.29.211.53",
+    "root_cause_of_keeper_exit": "Unknown; no causal event established"
+  },
+  "verification": {
+    "fixed_host_key_SSH": "PASS",
+    "rsync_push_sha256": "PASS",
+    "rsync_pull_sha256": "PASS",
+    "test_bytes": 1048576,
+    "test_sha256": "7f72ec652af2c1b7ef15aef220a64f87e44584793cd9d79c017fcef1b038abc2",
+    "manifests": [
+      "transfer/manifests/push-connectivity-check-20261008-1756.json",
+      "transfer/manifests/pull-connectivity-check-20261008-1756.json"
+    ],
+    "first_transfer_probe": "Connection reset during recovery; subsequent push/pull passed"
+  },
+  "diagnostic_chat": "01a0a7f2-cc0b-77d0-8ed7-15abe948879a",
+  "sole_project_writer": "01a114d9-3a3a-7071-b94f-624581000992",
+  "writer_notified": true,
+  "run_permissions": "Unchanged; no plant/main/scorer approval added",
+  "phase5": "NOT_ACCEPTED"
+}
