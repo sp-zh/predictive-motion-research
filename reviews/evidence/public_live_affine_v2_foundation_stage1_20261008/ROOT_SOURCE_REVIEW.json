@@ -1,0 +1,100 @@
+{
+  "decision": "PASS_SOURCE_FOUNDATION_FOR_NEXT_SOURCE_STAGE",
+  "recorded_utc": "2026-10-08T21:15:32.413386+00:00",
+  "prerequisite_commit": "a6eb59a2a3f7f4d4e5ebbcee59907c8bf5e544d1",
+  "packet_READY_sha256": "1a7e329f25fa7141841ca85be44730ab79d5701bbbc6362207a273e1c661a2cc",
+  "all_17_payloads_verified": true,
+  "original_14_source_identities_unchanged": true,
+  "scope": "Independent static source and manifest review; no configure/build or runtime invocation",
+  "reviewed_files": [
+    {
+      "path": "tools/phase5_public_live_affine_v2/CMakeLists.txt",
+      "sha256": "3cfa0c53c9f9245ef1d1a109e1f25750ab863e37fdb19075a561aa50a62fcbd2",
+      "bytes": 723
+    },
+    {
+      "path": "tools/phase5_public_live_affine_v2/DEFERRED_VERIFICATION.md",
+      "sha256": "cc123f2356aa499ac985494efcaae00e1fbcc9a86363fc30aca8917f25a1227f",
+      "bytes": 2898
+    },
+    {
+      "path": "tools/phase5_public_live_affine_v2/README.md",
+      "sha256": "3827a849b201743d32c4aaf9f8df19961283ecf8f80b1b8bcef82b43f5923b3f",
+      "bytes": 1579
+    },
+    {
+      "path": "tools/phase5_public_live_affine_v2/SOURCE_REVIEW.md",
+      "sha256": "de24a1833d66e9f5ebeff8dcceee77dbc8291907d060b52e5bfadab5b84f3fa9",
+      "bytes": 7262
+    },
+    {
+      "path": "tools/phase5_public_live_affine_v2/foundation.hpp",
+      "sha256": "3080b34f7645bd85467d1b5d4bd98548f58dbc00a9f2d34adf46bc80576c1965",
+      "bytes": 10859
+    },
+    {
+      "path": "tools/phase5_public_live_affine_v2/foundation_context.cpp",
+      "sha256": "d935a2bf0d4f431307af6a9a4e4ed35b199fff15577c5323d42dd3eb3de2bd78",
+      "bytes": 7090
+    },
+    {
+      "path": "tools/phase5_public_live_affine_v2/foundation_identity.cpp",
+      "sha256": "62cc67313abb6a07651778f78a65e95fb63a80cc2c61b67b7d3865de29bd8cb5",
+      "bytes": 6852
+    },
+    {
+      "path": "tools/phase5_public_live_affine_v2/foundation_resources.cpp",
+      "sha256": "23f80fa3b46ad1951ac68511753c6faa600672e2476cc31ecb6fe95c01772c04",
+      "bytes": 13471
+    }
+  ],
+  "review_findings": [
+    {
+      "id": "FND007",
+      "initial": "Candidate alpha used directly as preview command jerk acceleration",
+      "resolved": "Candidate alpha retained; implied alpha reconstructed from literal w difference; conditional jerk uses previous accepted alpha. Pre-fix exact preceding patch text retained, not represented as executed evidence."
+    },
+    {
+      "id": "FND004",
+      "initial": "Case-only live count permitted simultaneous retained-case tickets to bypass batch64m ceiling",
+      "resolved": "reserve prechecks case/batch live and cumulative ceilings before committing; shared tickets release both live counters once and never decrement cumulative. Pre-fix source and manifest preserved."
+    }
+  ],
+  "reviewed_criteria": "ROOT_REVIEW_CRITERIA.json",
+  "criteria_outcome": "All10 source criteria resolved or explicit integration obligation for following stages; no runtime test is claimed",
+  "source_observations": [
+    "Private checked mesh/resource factories; exact integer decimal policy; fixed caps; complete output mode refuses over-cap shapes. Dense output plan conservatively includes audit work buffers.",
+    "Move-only owned buffers reserve before allocating; data destruction precedes tickets; failed allocation releases live lifetime counts but retains already charged cumulative counts. Shared state survives case/batch wrapper lifetime.",
+    "Static hashes describe actual file facts, not permission; constants parsed from same hashed byte string, root duplicate keys/finite ranges rejected. Running ELF identity separately reads kernel binding and refuses archivedF1.",
+    "Copy-only actual/range witness; completed boundary, observation/transaction and <=4ms age; exact nominal anchor; physical q/v independent from command C/w; algebra initial cannot produce live request.",
+    "Pure first4ms command/progress arithmetic, both2ms reference checks, reconstructed conditional acceleration/jerk; no command application or physical q/v forecast."
+  ],
+  "remaining_obligations": [
+    "No VerifiedModelProfile/actual SDK metadata/model handle or permission factory implemented; genuine raw results and normalization remain separate source stage.",
+    "Future wrappers must bind plan to actual shapes and retain correct lifetime tickets for raw SDK reservation, all owned matrices/copies/work and retained failures. SDK allowance is not allocator/RSS certification.",
+    "Actual observer clock/contact/history correctness and later supervisor accepted-command reconstruction remain integration gates.",
+    "Complete algebra/cost/capture/readers and a preregistered frozen build/runtime protocol remain required; no phase acceptance."
+  ],
+  "executions": {
+    "configure": 0,
+    "compile": 0,
+    "empty_kernel": 0,
+    "numeric_checks": 0,
+    "Model_constructor": 0,
+    "Model_metadata": 0,
+    "Model_rollout": 0,
+    "plant": 0,
+    "solver": 0,
+    "main": 0,
+    "scorer": 0
+  },
+  "storage": {
+    "Mac_source_packet": "/private/tmp/public_live_affine_v2_foundation_stage1",
+    "canonical_source": "tools/phase5_public_live_affine_v2",
+    "history_in_git": "reviews/evidence/public_live_affine_v2_foundation_stage1_20261008/history",
+    "Dell_copy_verified": false,
+    "Git_backup": "PENDING_PUSH_REMOTE_VERIFICATION"
+  },
+  "phase5": "NOT_ACCEPTED",
+  "phase6": "NOT_STARTED"
+}

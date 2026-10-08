@@ -404,3 +404,5 @@ These three figures use the first independently validated 12-case output. They d
 ![Full and condensed objective agreement](../figures/public_affine_horizon_objective_agreement.png)
 
 [Independent component review](../reviews/phase_5_public_affine_horizon_algebra_20261008.md); [verified evidence archives](../reviews/evidence/public_affine_horizon_algebra_checkpoint_20261008.json).
+
+The [live typed v2 source plan](design/public_live_affine_v2/README.md) and [foundation source review](../reviews/evidence/public_live_affine_v2_foundation_stage1_20261008/ROOT_SOURCE_REVIEW.json) extend configurable-horizon and history/ownership design. They add no executed motion or numerical result. The actual diagnostic plots above retain their original data and acceptance limits; Phase5 task videos await complete verified trajectories.

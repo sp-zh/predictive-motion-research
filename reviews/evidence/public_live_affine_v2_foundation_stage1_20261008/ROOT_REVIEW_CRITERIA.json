@@ -1,0 +1,65 @@
+{
+  "status": "PREREGISTERED_SOURCE_REVIEW_CRITERIA_ONLY_NO_RUN_RELEASE",
+  "recorded_utc": "2026-10-08T21:05:12.611239+00:00",
+  "contract_commit": "a6eb59a2a3f7f4d4e5ebbcee59907c8bf5e544d1",
+  "stage": "Versioned foundation; runtime cases must later bind actual source/API and frozen binary",
+  "scope": {
+    "model_calls": 0,
+    "build_calls": 0,
+    "matrix_or_kernel_calls": 0,
+    "phase5": "NOT_ACCEPTED",
+    "phase6": "NOT_STARTED"
+  },
+  "criteria": [
+    {
+      "id": "FND001",
+      "area": "mesh",
+      "required": "Positive bounded canonical integer steps/cycles, checked products/sums before allocation. N20,T200 uniform20x10; N20,T375 balanced [18,19,19,19]x5. Explicit preserves order and sum. Unknown enum/zero cycles/extraneous incompatible policy fields refuse."
+    },
+    {
+      "id": "FND002",
+      "area": "mesh lattice",
+      "required": "Exact decimal/rational seconds conversion, if exposed, refuses .25/.75s. Do not silently round; no CoverAtLeast enabled. Overflow and over-max requests refuse before loops/allocation."
+    },
+    {
+      "id": "FND003",
+      "area": "quota policy",
+      "required": "New immutable hard envelope; custom policies may tighten but cannot grow caps. All current/future allocation/output admission binds case plan and cumulative batch ledger. Preflight hash or empty identity does not construct Model."
+    },
+    {
+      "id": "FND004",
+      "area": "ownership",
+      "required": "Numeric live slots released once, transfers are move-only. Strong failure behavior: overflow/failed reserve does not refund earlier cumulative charges or leak live ownership; failed operations and case changes cannot bypass batch cap. Resizing charges old+new while both exist, capacity reuse no artificial new charge. Lifetime of outstanding owners is valid after wrapper move/destruction. Enforce the hard tracked-live cap across all outstanding reservations in one batch, including tickets whose original case wrapper has been destroyed; shared ownership must not allow overlapping cases to bypass it."
+    },
+    {
+      "id": "FND005",
+      "area": "initial context",
+      "required": "q/v/C/w length7 finite, independent physical and accepted histories; q strict original joint range, C original control domain, w closed +/- .0625, progress s[0,1],r[0,.2]. No clipping or C=q/w=v replacement. Preserve separate previous alpha/b, finite histories; original alpha envelope applies to candidate inputs."
+    },
+    {
+      "id": "FND006",
+      "area": "boundary binding",
+      "required": "Same completed tick and command sequence plus observer association, explicit completed/inflight status and finite bounded age. Snapshot and nominal anchor exact packed equality and boundary. Mismatch, stale, unknown tags or invalid dimensions refuse before any usable request."
+    },
+    {
+      "id": "FND007",
+      "area": "first4ms",
+      "required": "Pure preview from current accepted history using w_next=w+.004*alpha; C_next=C+.004*w_next, s_next=s+.004*r+.5*.004*.004*b and r_next=r+.004*b. Controls finite/original domains; complete next command/progress domain checked. No coarse-cell-duration substitution, measured-v substitution, physical prediction or supervisor application. Preserve candidate alpha separately from preview acceleration reconstructed through the literal rounded w difference; preview jerk uses reconstructed preview acceleration and previous accepted alpha, not candidate substitution."
+    },
+    {
+      "id": "FND008",
+      "area": "algebra separation",
+      "required": "Finite explicitly shifted algebra state can include negative r. It carries no LiveActualContext or usable command API; cannot forge live context by aggregate/default construction. Prior FD/model failures remain unaffected."
+    },
+    {
+      "id": "FND009",
+      "area": "identity boundary",
+      "required": "Source/build/XML/constants/SDK identity truthful and verified against actual file bytes; hash strings only are not a genuine live Model witness or runtime permission. Unreviewed arbitrary path/content cannot masquerade as pinned model. Do not impersonate oldF1 binary. Original Model construction/metadata/rollout separately gated."
+    },
+    {
+      "id": "FND010",
+      "area": "integration and evidence",
+      "required": "New target independent, old frozen sources/profile limits unchanged. No accidental link-time/global/static Model construction. Complete source manifest plus all revisions, exact no-run scope, no controller readiness or phase acceptance. Reviewer records source-only limits and prerequisite remaining factory/normalization/algebra/capture work."
+    }
+  ]
+}

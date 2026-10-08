@@ -1,0 +1,1 @@
+Pre-fix source recovered exactly from the immediately preceding apply_patch text after the correction was written. This preserves the initially written candidate-alpha jerk expression; it is not the active stage1 source. No compilation or numeric execution occurred.

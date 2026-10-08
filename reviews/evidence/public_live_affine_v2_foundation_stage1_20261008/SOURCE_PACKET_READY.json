@@ -1,0 +1,188 @@
+{
+  "stage": "FOUNDATION_SOURCE_IMPLEMENTATION_1",
+  "recorded_utc": "2026-10-08T21:14:01.878226+00:00",
+  "prerequisite_backup": "a6eb59a2a3f7f4d4e5ebbcee59907c8bf5e544d1",
+  "reviewed_contract_sha256": "4bfcd9d5ce0efacce2ccbdb3b02ff097660c6d4e4b1c26bbb1aba48888afdb84",
+  "phase5": "NOT_ACCEPTED",
+  "phase6": "NOT_STARTED",
+  "files": [
+    {
+      "path": "history/pre_batch_live_fix/DEFERRED_VERIFICATION.md",
+      "sha256": "34fefbd7e3a820fa8b36c4d83b0975a227aacd6d26e1501585689dcd8c365765",
+      "bytes": 2806
+    },
+    {
+      "path": "history/pre_batch_live_fix/HISTORY.md",
+      "sha256": "f82f66abf38bdc34b9b3b8ff9de1e172467aaec3bc970f00de87641fc12c7af7",
+      "bytes": 262
+    },
+    {
+      "path": "history/pre_batch_live_fix/SOURCE_PACKET_READY.json",
+      "sha256": "83fb72edd5c7aea374dd2c91c808c0c721dc2cc5c16f4ad0461fbfc9c14cbe5f",
+      "bytes": 6343
+    },
+    {
+      "path": "history/pre_batch_live_fix/SOURCE_REVIEW.md",
+      "sha256": "62557835025e1f2538d0c41bea6db7bf4772d59fcd44668dce030b4aba8b2c3e",
+      "bytes": 6622
+    },
+    {
+      "path": "history/pre_batch_live_fix/foundation.hpp",
+      "sha256": "320ca566074176935507f14c552baf1436728cd3db51d4ee1d2d747f767b6661",
+      "bytes": 10832
+    },
+    {
+      "path": "history/pre_batch_live_fix/foundation_resources.cpp",
+      "sha256": "a550845a24dff72a59cb48cb78226c9d0924e24481d9402ab1ae7745583193ea",
+      "bytes": 13105
+    },
+    {
+      "path": "history/pre_command_preview_fix/HISTORY.md",
+      "sha256": "7e13368215b5fd93cf36e6e4aedc13bed7a5e43ad99137b1f260922cb9071447",
+      "bytes": 267
+    },
+    {
+      "path": "history/pre_command_preview_fix/foundation.hpp",
+      "sha256": "619da92159a633fef50c619fa62264cb9677ab98ede9163eb53048c3b2e8c9a0",
+      "bytes": 10406
+    },
+    {
+      "path": "history/pre_command_preview_fix/foundation_context.cpp",
+      "sha256": "d538426c1da99b6d8ccdd9b2629bf374b31175d3dd113f8cd21989972d4adb7d",
+      "bytes": 6411
+    },
+    {
+      "path": "tools/phase5_public_live_affine_v2/CMakeLists.txt",
+      "sha256": "3cfa0c53c9f9245ef1d1a109e1f25750ab863e37fdb19075a561aa50a62fcbd2",
+      "bytes": 723
+    },
+    {
+      "path": "tools/phase5_public_live_affine_v2/DEFERRED_VERIFICATION.md",
+      "sha256": "cc123f2356aa499ac985494efcaae00e1fbcc9a86363fc30aca8917f25a1227f",
+      "bytes": 2898
+    },
+    {
+      "path": "tools/phase5_public_live_affine_v2/README.md",
+      "sha256": "3827a849b201743d32c4aaf9f8df19961283ecf8f80b1b8bcef82b43f5923b3f",
+      "bytes": 1579
+    },
+    {
+      "path": "tools/phase5_public_live_affine_v2/SOURCE_REVIEW.md",
+      "sha256": "de24a1833d66e9f5ebeff8dcceee77dbc8291907d060b52e5bfadab5b84f3fa9",
+      "bytes": 7262
+    },
+    {
+      "path": "tools/phase5_public_live_affine_v2/foundation.hpp",
+      "sha256": "3080b34f7645bd85467d1b5d4bd98548f58dbc00a9f2d34adf46bc80576c1965",
+      "bytes": 10859
+    },
+    {
+      "path": "tools/phase5_public_live_affine_v2/foundation_context.cpp",
+      "sha256": "d935a2bf0d4f431307af6a9a4e4ed35b199fff15577c5323d42dd3eb3de2bd78",
+      "bytes": 7090
+    },
+    {
+      "path": "tools/phase5_public_live_affine_v2/foundation_identity.cpp",
+      "sha256": "62cc67313abb6a07651778f78a65e95fb63a80cc2c61b67b7d3865de29bd8cb5",
+      "bytes": 6852
+    },
+    {
+      "path": "tools/phase5_public_live_affine_v2/foundation_resources.cpp",
+      "sha256": "23f80fa3b46ad1951ac68511753c6faa600672e2476cc31ecb6fe95c01772c04",
+      "bytes": 13471
+    }
+  ],
+  "source_dependencies_verified_unchanged": {
+    "tools/phase5_public_coupled_augmented_extension_cpp/public_coupled_augmented_extension.hpp": {
+      "sha256": "d97d4f5fbbd837317bdf488291f3aca0c822c512a7e3f6c079e196d3641b104f",
+      "bytes": 2171
+    },
+    "tools/phase5_public_coupled_augmented_extension_cpp/public_coupled_augmented_extension.cpp": {
+      "sha256": "74b3d8eccdd4a1373d39bc46cf122564a5101259c2212cb45d98f81678f882fa",
+      "bytes": 7073
+    },
+    "tools/phase5_public_coupled_augmented_cpp/public_coupled_augmented_model.hpp": {
+      "sha256": "24350b7680f65c2ea667628e8e80e0830e2a471b501bf77acd51d699b9d44b8d",
+      "bytes": 1818
+    },
+    "tools/phase5_public_coupled_augmented_cpp/public_coupled_augmented_model.cpp": {
+      "sha256": "add6e9d0ef578ed3adcd7e715d2844fb60c063afa24bfb6dd233cdd5f04eac1b",
+      "bytes": 4305
+    },
+    "tools/phase5_public_affine_horizon_cpp/public_affine_horizon.hpp": {
+      "sha256": "049e7cb3a0b8f46cf3bbba57743384ccf631c31ace3a1ff7cf99bcd645dbb0f4",
+      "bytes": 5637
+    },
+    "tools/phase5_public_affine_horizon_cpp/public_affine_horizon.cpp": {
+      "sha256": "bc4ead2f085216c40da6be34b6c3d037b3f90df83757b94464f7f6ed97cef953",
+      "bytes": 13867
+    },
+    "tools/phase5_public_affine_horizon_cpp/public_affine_horizon_native.cpp": {
+      "sha256": "5804cb4dfb0a43f99bb24bb81d07ccc0e1af24c559ec58902b0d47c4b3d3f487",
+      "bytes": 5536
+    },
+    "src/predictive_motion_control/include/predictive_motion_control/predictive.hpp": {
+      "sha256": "c5ff72290709ad694c61686bd495abbfe4223b3bb532f434a5d25af55c784652",
+      "bytes": 8010
+    },
+    "src/predictive_motion_control/src/predictive.cpp": {
+      "sha256": "4ad70dcf75500e956141557a6b17eaa2bdb9a7f670abb7f380da5c699efb1df5",
+      "bytes": 38633
+    },
+    "tools/phase5_adapter/phase5_benchmark.cpp": {
+      "sha256": "72d59b1a4921b37a9ead7ab59602d75238927cb89224673574cfcd7a9a1147d1",
+      "bytes": 44584
+    },
+    "docs/predictive_controller.md": {
+      "sha256": "037e041875a4a24b91966dbc921ee17ce0c0ba84be4bfcdc8344b6c640938828",
+      "bytes": 10530
+    },
+    "src/predictive_motion_sim/include/predictive_motion_sim/plant.hpp": {
+      "sha256": "2bfac5f02ccee8be8807470fdd95f8de594d69d8f74f602aaa55408263fd1508",
+      "bytes": 994
+    },
+    "src/predictive_motion_sim/src/state_bridge.cpp": {
+      "sha256": "d907eccee9502b70ee8f146b90e48a7f5d798c36d55282aea36efd7e420fc56f",
+      "bytes": 2975
+    },
+    "reviews/evidence/public_live_affine_source_requirements_20261008.json": {
+      "sha256": "8ed64e87c6b07938b6edc56adea4be4f19b2058226db3a23d4d7f01fcc8864eb",
+      "bytes": 3565
+    }
+  },
+  "implemented": [
+    "Checked integer mesh/profile quotas",
+    "Move-only owned budget ledger and numeric storage",
+    "Hash-only identity and private static-range witness",
+    "Explicit current-boundary LiveActualContext versus AlgebraTestInitial",
+    "Literal first4ms pure preview and conditional reconstructed command acceleration/jerk"
+  ],
+  "not_implemented": [
+    "Full VerifiedModelProfile/runtime permission factory and pinned Model handle",
+    "Genuine rawModel result ownership/normalization",
+    "Affine/cost/capture/readers",
+    "Main/solver/plant/geometry/stopping/timing integration"
+  ],
+  "executions": {
+    "configure": 0,
+    "compile": 0,
+    "empty_kernel": 0,
+    "numeric_checks": 0,
+    "Model_constructor": 0,
+    "Model_metadata": 0,
+    "Model_rollout": 0,
+    "plant": 0,
+    "solver": 0,
+    "main": 0,
+    "scorer": 0
+  },
+  "validation": "Static text/source dependency hash inspection only; no new build or numeric evidence",
+  "history": "Pre-command fix recovered exact precedingpatch text; pre-batch-live source/manifest exact snapshot retained",
+  "Mac_canonical_or_Git_changed_by_executor": false,
+  "Dell_source_or_old_frozen_metadata_changed": false,
+  "backup": "Pending root independent static review/import/commit/push/remoteverification",
+  "review_corrections": [
+    "Preview acceleration reconstructed from literal w difference; candidatealpha remains separate",
+    "Shared batch-live tracking across surviving/overlapping case tickets; fixed64m cap unchanged"
+  ]
+}

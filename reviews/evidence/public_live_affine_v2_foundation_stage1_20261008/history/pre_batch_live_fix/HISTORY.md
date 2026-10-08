@@ -1,0 +1,1 @@
+Snapshot before independent root review correction for cross-case simultaneous live tracking. BatchState originally tracked only cumulative charges. Active source adds shared batch-live tracking; no compilation/numeric invocation or evidence result was changed.
