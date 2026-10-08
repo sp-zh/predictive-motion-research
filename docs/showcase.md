@@ -385,4 +385,4 @@ verification; existing physical renders and diagnostic plots retain their scope.
 
 ## Saved pause — 2026-10-08
 
-The project is paused after the affine-horizon build/empty-preflight checkpoint. No nonempty numerical run or complete task motion was produced in this unit, so no new motion clip or performance figure is claimed. Existing accepted Phase4 visuals and prior diagnostic figures remain preserved. [Saved checkpoint](../reviews/evidence/public_affine_horizon_build_freeze_checkpoint_20261008.json); [pause status](../PROJECT_PAUSED.json).
+Checkpoint 365bcf6 preserves the pause after the affine-horizon build/empty-preflight checkpoint. The human resumed the project on 2026-10-08; versioned verification preparation is now in progress. No nonempty numerical run or complete task motion was produced in this unit, so no new motion clip or performance figure is claimed. Existing accepted Phase4 visuals and prior diagnostic figures remain preserved. [Saved checkpoint](../reviews/evidence/public_affine_horizon_build_freeze_checkpoint_20261008.json); [pause status](../PROJECT_PAUSED.json).

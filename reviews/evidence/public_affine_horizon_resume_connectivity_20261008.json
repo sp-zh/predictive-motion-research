@@ -1,0 +1,38 @@
+{
+  "recorded_utc": "2026-10-08T17:45:11.179038+00:00",
+  "scope": "Read-only USB4 SSH diagnosis after human resume; no network/account/service edits",
+  "Mac_USB4": "bridge0 active, en2 active,169.254.142.85; route to169.254.118.3 usesbridge0",
+  "attempts": [
+    {
+      "operation": "Pause metadata scp to Dell",
+      "exit": 255,
+      "error": "Connection timed out during banner exchange",
+      "Dell_update": "NOT_CONFIRMED"
+    },
+    {
+      "operation": "Read-only SSH default sandbox ConnectTimeout8",
+      "exit": 255,
+      "error": "Connection timed out during banner exchange"
+    },
+    {
+      "operation": "Read-only SSH escalated ConnectTimeout8",
+      "exit": 255,
+      "error": "Connection timed out during banner exchange"
+    },
+    {
+      "operation": "Default sandbox route/networksetup read",
+      "error": "route socket Operation not permitted; AuthorizationCreate failed -60008"
+    },
+    {
+      "operation": "Escalated read-only route andifconfig",
+      "exit": 0,
+      "result": "USB4 bridge/link active"
+    }
+  ],
+  "interpretation": "Link active and route points toUSB4; SSH service/backend not yet accessible. Service/WSL failure is only a hypothesis, not established. Human asked to openDell Ubuntu.",
+  "new_v2_checker_installed_on_Mac": true,
+  "Dell_source_installation": "PENDING_CONNECTION",
+  "old_freeze_and_checker": "PRESERVED",
+  "nonempty_calls": 0,
+  "phase5": "NOT_ACCEPTED"
+}

@@ -1,0 +1,24 @@
+{
+  "status": "SOURCE_ONLY_PROPOSAL_PENDING_ROOT_STATIC_REVIEW",
+  "parent_private_checkpoint": "365bcf6e56667bf97a948dd942afd66d9c123748",
+  "old_checker_sha256": "8694688fc94eaacbdab72b64658b3c8f46ed51e90329cfbd38a8536c1f03baa6",
+  "old_freeze_sha256": "d3d4253c0173aae4ad3072eea37268713bd3710b68cfa05720e79f906bf97429",
+  "unchanged_binary_sha256": "6d08f9d00ccc939770efc9bd0c704745eba972a80f2511e0441691761eff7b4d",
+  "new_checker_sha256": "12f0df058083fb751e4a3ea0f5600e418900f42fe46939b3c15f97c18a6acc3d",
+  "changes": [
+    "nominal_state_reset: shifted N4 initial offset[29] set to archived nominal initial r (declared shift +3e-5)",
+    "tied_cell_input_columns: N4 final control[29][15]=control[29][7], declared sensitivities .012 vs .004 seconds",
+    "lost_linear_gradient: term0 used_linear[0] set zero; frozen declared coefficient .00035 rather than cancelling summed linear contribution"
+  ],
+  "retained_control_names_and_count": 14,
+  "unchanged": [
+    "C++/binary/model/source archived maps",
+    "Input/policy/cases/expected roster",
+    "Reference formulas/atol/rtol",
+    "14 negative control names"
+  ],
+  "validation": "Python ast.parse syntax only; no import/matrix/kernel/checker/model execution",
+  "requires_new_freeze_before_any_nonempty_output": true,
+  "Dell_read_attempt": "SSH timeout once; no source installed",
+  "phase5": "NOT_ACCEPTED"
+}

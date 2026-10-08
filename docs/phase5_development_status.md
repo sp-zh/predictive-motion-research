@@ -181,3 +181,10 @@ See [source implementation checkpoint](../reviews/evidence/public_affine_horizon
 The affine-horizon module retains its first failed build (exit2), receives only the reviewed yaml-cpp iterator compatibility/bracing fix, and completes the second build and first empty-input preflight (exit0). Producer/root inputs are prepared without numerical evaluation. All 2,912 frozen dependencies and the 80,494,096-byte archive are hash verified; both Mac and Dell copies are retained. No nonempty kernel or checker was run, and no controller, motion, safety or Phase5 acceptance follows. Producer checker robustness concerns remain deferred. Historical pending/release fields in immutable evidence are superseded by the human pause.
 
 [Checkpoint identities and verified copies](../reviews/evidence/public_affine_horizon_build_freeze_checkpoint_20261008.json); [pause record](../PROJECT_PAUSED.json). Private Git backs up small sources and these records; the large archive remains on both hosts.
+
+
+## Resumed verification preparation — 2026-10-08
+
+The versioned producer checker repairs three prospectively degenerate output controls without changing the reference formulas, input roster or tolerances. Static review and AST syntax validation pass; no numerical checker/kernel invocation has occurred. The old checker 8694 and freeze d3d4 remain preserved. New verification requires a separately reviewed full freeze with the root consumer’s explicit files schema. The USB4 bridge is active, but Dell SSH banner exchange times out; remote source installation and new freezing remain pending connection recovery.
+
+[Versioned source review](../reviews/evidence/public_affine_horizon_checker_v2_source_review_20261008.json); [connection diagnostics](../reviews/evidence/public_affine_horizon_resume_connectivity_20261008.json). No new performance, motion, safety or phase result is claimed.

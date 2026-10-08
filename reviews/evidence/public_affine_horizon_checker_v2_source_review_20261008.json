@@ -1,0 +1,13 @@
+{
+  "decision": "PASS_SOURCE_ONLY_VERSIONED_CHECKER_NEGATIVE_CONTROLS",
+  "old_checker_sha256": "8694688fc94eaacbdab72b64658b3c8f46ed51e90329cfbd38a8536c1f03baa6",
+  "new_checker_sha256": "12f0df058083fb751e4a3ea0f5600e418900f42fe46939b3c15f97c18a6acc3d",
+  "binary_unchanged": "6d08f9d00ccc939770efc9bd0c704745eba972a80f2511e0441691761eff7b4d",
+  "old_freeze_preserved": "d3d4253c0173aae4ad3072eea37268713bd3710b68cfa05720e79f906bf97429",
+  "review": "Diff changes only fixture guards and3 negative output mutations; reference, tolerances, prepared inputs and14 control names unchanged. N4 r initial reset delta3e-5, independent b columns .004 vs .012, explicit perterm linear .00035 are prospectively nonzero and exceed2e-12 tolerances. No claimed numerical acceptance.",
+  "syntax": "ast.parse PASS; module not imported",
+  "root_freeze_contract": "Root audit7778 expects files array; new freeze must explicitly include files[{path,sha256,bytes,immutable_copy}] and preserve all2912 dependencies from old freeze. Keep same binary/source/prepared inputs/helper/gates. No need modify root checker or old freeze.",
+  "next_scope": "Versioned verification source backup, new full closure freeze before any numerical release. No model/plant/main/scorer calls.",
+  "phase5": "NOT_ACCEPTED",
+  "nonempty_calls": 0
+}
