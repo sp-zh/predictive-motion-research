@@ -1,0 +1,25 @@
+{
+  "status": "PAUSED_BY_USER",
+  "instruction": "完成当前最小工作后就保存，上传git，不要继续了",
+  "effective_date": "2026-10-08",
+  "recorded_time_utc": "2026-10-08T07:38:49.406408+00:00",
+  "recorded_time_local": "2026-10-08T03:38:49.406408-04:00",
+  "timezone": "America/Toronto",
+  "accepted_through": "Phase4",
+  "phase5": "NOT_ACCEPTED",
+  "phase6": "NOT_STARTED",
+  "previous_state_record": "reviews/evidence/project_resumption_before_pause_20261008.json",
+  "checkpoint_record": "reviews/evidence/public_affine_horizon_build_freeze_checkpoint_20261008.json",
+  "preserve_existing_files_and_failures": true,
+  "current_minimal_unit": "Build compatibility fix, successful second build, first empty check, input preparation, full immutable dependency/archive preservation; private Git backup then STOP",
+  "nonempty_kernel_or_checker_calls": 0,
+  "continued_work_authorized": false,
+  "all_project_workers_stop": true,
+  "prohibited_until_explicit_human_resume": [
+    "Research, implementation, repairs, builds and experiments",
+    "Nonempty affine kernel/checker or model/plant runs",
+    "New scorer/seed91013 physical run approvals",
+    "Phase5/later continuation"
+  ],
+  "backup_verification": "Commit this checkpoint, push private master and verify remote HEAD before reporting complete"
+}

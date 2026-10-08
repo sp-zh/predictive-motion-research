@@ -1,6 +1,6 @@
-# Project paused by the user
+# Project resumed by the user
 
-The human explicitly instructed on 2026-10-08: “完成当前最小工作后就保存，上传git，不要继续了”. Finish only the current minimal checkpoint preservation and private Git push/remote verification, then stop all project research, implementation, repairs, builds and experiments. Do not run a nonempty affine kernel/checker, original model/plant, scorer or seed91013 physical run; do not issue a run approval or continue Phase5/later phases until the human explicitly resumes. Prior continuation and dispatch instructions are revoked. Preserve accepted Phase4 evidence and all existing files/failures. Phase5 remains NOT_ACCEPTED; Phase6 is NOT_STARTED. PROJECT_PAUSED.json records this pause; prior resumption and pause history remain under reviews/evidence/.
+The human explicitly instructed on 2026-10-08: “继续”, resuming after the verified 365bcf6 checkpoint. Preserve all pause history, accepted Phase4 evidence and existing files/failures. Continue Phase5 development and independent review within scoped dispatches. Phase5 remains NOT_ACCEPTED; Phase6 is NOT_STARTED. Preserve the original affine checker and immutable d3d4 freeze; review and freeze versioned verification repairs before nonempty algebra runs. The rejected seed91013 protocol v1 must not run; plant/main/scorer runs require their separately reviewed protocols and phase gates. PROJECT_PAUSED.json records the resumed state; historical pause/resumption records remain under reviews/evidence/.
 
 # Required milestone backups
 

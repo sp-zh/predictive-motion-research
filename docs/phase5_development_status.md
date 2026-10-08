@@ -1,6 +1,6 @@
 # Phase 5 development status
 
-Updated 2026-10-08, America/Toronto. **Project paused by the human: “完成当前最小工作后就保存，上传git，不要继续了”.** Accepted through Phase4; Phase5 remains unaccepted and Phase6 has not started. Only the current minimal preservation and verified private Git backup are authorized. No further nonempty kernel/checker, model/plant, research, implementation, build or experiment may start until explicit human resumption.
+Updated 2026-10-08, America/Toronto. **Project resumed by the human: “继续”.** The saved pause/checkpoint 365bcf6 remains preserved. Accepted through Phase4; Phase5 remains unaccepted and Phase6 has not started. Current work is the versioned affine-horizon verification repair and independently reviewed algebra checks. No new plant/main/scorer protocol or phase acceptance follows from resumption.
 
 Independent installed consumers verify the coupled horizon, nonuniform meshes, full objective, nonzero state/nominal coordinates and separated command/model histories. The dimension-amplified PSD certificate bug is repaired and independently regression-tested. Actual-state condensed/lifted matrices match through a closed-form embedding; signed-row compression preserves every original constraint. These mathematical checks are separate from robot results.
 
