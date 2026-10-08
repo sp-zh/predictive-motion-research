@@ -1,0 +1,214 @@
+{
+  "decision": "PARTIAL_SELECTED_EXTENSION_VALIDATION_WITH_RETAINED_FD_BRANCH_FAILURE",
+  "scope": "Complete fixed-roster saved-output review after a retained FD branch failure.\n\nNo new extension predictor call, fitting or changed FD input/epsilon/gate.\nComplete12 originally declared2fa domain controls and2 frozen-e2c nominal\ncomponent diagnostics for the failed case; no plant or new protocol execution.\n",
+  "source_sha256": "a91e2099bf45ea5cbbfe6111b9283fb6b7a522cb0a269794351d9536d614216a",
+  "original_failed_audit_source_sha256": "31aaa8a11cd7a625406c64361fae96813b3318af543a1c97ccd21a212deb71c1",
+  "prefix_expectation_repair": "Initial saved-review incorrectly expected5halfsteps; original2fa prechecks fullcycle endpoint beforeanyhalf, so correct4halves/2cycles/firstuncertified4. Failed original source/output preserved, no model/gate/epsilon change.",
+  "first_audit_outcome": "FAIL_DECLARED_SAME_BRANCH_FD_GATE; never relabeledPASS",
+  "all_original_cases_retained": true,
+  "changed_probe_count": 2,
+  "changed_cases": [
+    "root_boundary_initial_w_plusV"
+  ],
+  "all_case_structure_and_prefix_checks_pass": true,
+  "cases": [
+    {
+      "name": "root_boundary_start_zero",
+      "columns": 38,
+      "all_structural_checks_pass": true,
+      "all_requested_two_epsilon_gates_pass": true,
+      "epsilons": [
+        {
+          "epsilon": 1e-06,
+          "max_absolute": 6.613243942944118e-10,
+          "max_gate_ratio": 0.001322144065779535,
+          "entry_gate_pass": true,
+          "failed_entry_comparisons": 0,
+          "changed_branch_probes": [],
+          "same_branch_gate_pass": true
+        },
+        {
+          "epsilon": 3e-07,
+          "max_absolute": 3.004064021563062e-09,
+          "max_gate_ratio": 0.006006777974664536,
+          "entry_gate_pass": true,
+          "failed_entry_comparisons": 0,
+          "changed_branch_probes": [],
+          "same_branch_gate_pass": true
+        }
+      ]
+    },
+    {
+      "name": "root_boundary_terminal_zero",
+      "columns": 38,
+      "all_structural_checks_pass": true,
+      "all_requested_two_epsilon_gates_pass": true,
+      "epsilons": [
+        {
+          "epsilon": 1e-06,
+          "max_absolute": 6.613243942944118e-10,
+          "max_gate_ratio": 0.001322144065779535,
+          "entry_gate_pass": true,
+          "failed_entry_comparisons": 0,
+          "changed_branch_probes": [],
+          "same_branch_gate_pass": true
+        },
+        {
+          "epsilon": 3e-07,
+          "max_absolute": 3.004064021563062e-09,
+          "max_gate_ratio": 0.006006777974664536,
+          "entry_gate_pass": true,
+          "failed_entry_comparisons": 0,
+          "changed_branch_probes": [],
+          "same_branch_gate_pass": true
+        }
+      ]
+    },
+    {
+      "name": "root_boundary_alpha_plus1",
+      "columns": 38,
+      "all_structural_checks_pass": true,
+      "all_requested_two_epsilon_gates_pass": true,
+      "epsilons": [
+        {
+          "epsilon": 1e-06,
+          "max_absolute": 6.47322338703034e-10,
+          "max_gate_ratio": 0.0012943537616774824,
+          "entry_gate_pass": true,
+          "failed_entry_comparisons": 0,
+          "changed_branch_probes": [],
+          "same_branch_gate_pass": true
+        },
+        {
+          "epsilon": 3e-07,
+          "max_absolute": 2.6255497992882593e-09,
+          "max_gate_ratio": 0.00524973073581829,
+          "entry_gate_pass": true,
+          "failed_entry_comparisons": 0,
+          "changed_branch_probes": [],
+          "same_branch_gate_pass": true
+        }
+      ]
+    },
+    {
+      "name": "root_boundary_initial_w_plusV",
+      "columns": 38,
+      "all_structural_checks_pass": true,
+      "all_requested_two_epsilon_gates_pass": false,
+      "epsilons": [
+        {
+          "epsilon": 1e-06,
+          "max_absolute": 0.9200175809649709,
+          "max_gate_ratio": 36102.10331702078,
+          "entry_gate_pass": false,
+          "failed_entry_comparisons": 56,
+          "changed_branch_probes": [
+            "root_boundary_initial_w_plusV_0_15_-1",
+            "root_boundary_initial_w_plusV_0_1_1"
+          ],
+          "same_branch_gate_pass": false
+        },
+        {
+          "epsilon": 3e-07,
+          "max_absolute": 4.419812071887463e-09,
+          "max_gate_ratio": 0.006160816650820899,
+          "entry_gate_pass": true,
+          "failed_entry_comparisons": 0,
+          "changed_branch_probes": [],
+          "same_branch_gate_pass": true
+        }
+      ]
+    },
+    {
+      "name": "root_boundary_generated_w_plusV",
+      "columns": 38,
+      "all_structural_checks_pass": true,
+      "all_requested_two_epsilon_gates_pass": true,
+      "epsilons": [
+        {
+          "epsilon": 1e-06,
+          "max_absolute": 3.469837781683305e-09,
+          "max_gate_ratio": 0.005344059290733932,
+          "entry_gate_pass": true,
+          "failed_entry_comparisons": 0,
+          "changed_branch_probes": [],
+          "same_branch_gate_pass": true
+        },
+        {
+          "epsilon": 3e-07,
+          "max_absolute": 1.2940259273841459e-08,
+          "max_gate_ratio": 0.020039125794395662,
+          "entry_gate_pass": true,
+          "failed_entry_comparisons": 0,
+          "changed_branch_probes": [],
+          "same_branch_gate_pass": true
+        }
+      ]
+    },
+    {
+      "name": "root_boundary_nonuniform_distinct_controls",
+      "columns": 62,
+      "all_structural_checks_pass": true,
+      "all_requested_two_epsilon_gates_pass": true,
+      "epsilons": [
+        {
+          "epsilon": 1e-06,
+          "max_absolute": 1.0141303191093728e-08,
+          "max_gate_ratio": 0.01999482178816096,
+          "entry_gate_pass": true,
+          "failed_entry_comparisons": 0,
+          "changed_branch_probes": [],
+          "same_branch_gate_pass": true
+        },
+        {
+          "epsilon": 3e-07,
+          "max_absolute": 3.2730291563556007e-08,
+          "max_gate_ratio": 0.06545894814479995,
+          "entry_gate_pass": true,
+          "failed_entry_comparisons": 0,
+          "changed_branch_probes": [],
+          "same_branch_gate_pass": true
+        }
+      ]
+    }
+  ],
+  "all_two_epsilon_pass_cases": 5,
+  "original_closed_direction_calls": 12,
+  "selected_original_model_admissible_one_sided": [
+    {
+      "epsilon": 1e-06,
+      "direction_column": 28,
+      "max_gate_ratio": 0.0
+    },
+    {
+      "epsilon": 1e-06,
+      "direction_column": 29,
+      "max_gate_ratio": 0.0
+    },
+    {
+      "epsilon": 1e-06,
+      "direction_column": 37,
+      "max_gate_ratio": 0.0
+    },
+    {
+      "epsilon": 3e-07,
+      "direction_column": 28,
+      "max_gate_ratio": 0.0
+    },
+    {
+      "epsilon": 3e-07,
+      "direction_column": 29,
+      "max_gate_ratio": 0.0
+    },
+    {
+      "epsilon": 3e-07,
+      "direction_column": 37,
+      "max_gate_ratio": 0.0
+    }
+  ],
+  "extra_original_nominal_physical_derivative_calls": 2,
+  "failed_case_nominal_chain_exact": true,
+  "mathematical_interpretation": "Nominal strict certificate is infinitesimal; neither its margins nor a successful smaller epsilon guarantee a finite branch-preserving radius. Original two-epsilon samebranch/entry gates remain failed for this predeclaredfixture. No safety/main/task or uniform-domain claim.",
+  "phase5": "NOT_ACCEPTED",
+  "new_plant": false
+}

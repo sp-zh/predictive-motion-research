@@ -329,3 +329,22 @@ are retained. The current interior API does not certify actual s=0/r=0 starts.
 Boundary support, horizon cost/main integration, task and timing gates remain
 pending; Phase5 is unaccepted.
 [Independent augmented sensitivity review](../reviews/evidence/public_augmented_sensitivity_root_review_20261007.md).
+
+
+![Declared zero-progress startup extension Jacobian](../figures/phase5/phase5_public_coupled_augmented_extension_matrix.png)
+
+![Producer boundary-extension component checks](../figures/phase5/phase5_public_coupled_augmented_extension_verification.png)
+
+![Independent finite-step friction-branch counterexample](../figures/phase5/phase5_public_coupled_augmented_extension_failure.png)
+
+These actual numerical-output figures distinguish producer17fixture passes
+from the independent fixed6case review:5pass both fixed steps,1retains a
+friction-branch/derivative-entry failure. Nominal0/0startup and nonuniform
+initial/distinct-input derivatives pass their stated component checks. The
+original smaller-step result does not replace the failedtwo-step gate.
+Matrix blocks have mixed output/input SI units; counterexample force distance
+is mN*m and gradient rad/s². All2682 dependencies,3676 producer payloads
+and452 root payloads are verified on Mac/Dell. These extension derivatives
+provide no finite perturbation radius, actual command admission, continuation
+or main/task/timing certificate. Phase5 remains unaccepted.
+[Independent extension review and retained failure](../reviews/evidence/public_augmented_extension_root_review_20261008.md).

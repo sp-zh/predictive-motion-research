@@ -1,0 +1,22 @@
+{
+  "decision": "PASS_VISUAL_SOURCE_SCOPE_REVIEW",
+  "phase5": "NOT_ACCEPTED",
+  "figures": {
+    "matrix": {
+      "sha256": "6362814bc030eb08970e56ba94f323ab458f0b71ec8bc4f9df63ac42be3c50cb",
+      "bytes": 203534,
+      "root_viewed": true
+    },
+    "verification": {
+      "sha256": "582636d45e54d7847408f56c831fadd2d7dc3fb11edcc4911f0c6b312b929822",
+      "bytes": 295128,
+      "root_viewed": true
+    },
+    "failure": {
+      "sha256": "81f28fbe234ed49cfe186303a4d62a32cb7bc148caff56d9bdbd33656846e1bd",
+      "bytes": 243263,
+      "root_viewed": true
+    }
+  },
+  "scope": "Declared0/0 nonlinear composite extension matrix; producer17/3/8scope and2eps; root branch counterexample f\u2212lower in mN*m and KKTgradient rad/s^2. Explicit mixed matrix units, retained fullgatefailure, no task/main/safetyclaim."
+}

@@ -1,0 +1,298 @@
+{
+  "date": "2026-10-08",
+  "timezone": "America/Toronto",
+  "decision": "PARTIAL_SELECTED_EXTENSION_VALIDATION_WITH_RETAINED_FD_BRANCH_FAILURE",
+  "original_independent_root_gate": "FAIL_DECLARED_SAME_BRANCH_FD_GATE_RETAINED",
+  "phase5": "NOT_ACCEPTED",
+  "phase6": "NOT_STARTED",
+  "producer_archive": {
+    "sha256": "e0baac3d6f775adc9b5cca60fe1782fb4685c4823374e11237e7100f5237a941",
+    "bytes": 64272249,
+    "regular_members": 3678,
+    "payloads": 3676,
+    "Mac": "/Users/uot/Documents/ChatGPT/ros/results/phase5-executor-checkpoints-01a114d9/public-coupled-augmented-extension-cpp-v1-20261008/public-coupled-augmented-extension-cpp-v1.tar.gz",
+    "Dell": "/mnt/d/CodexTransfer/projects/predictive_motion/checkpoints/public-coupled-augmented-extension-cpp-v1-20261008/public-coupled-augmented-extension-cpp-v1.tar.gz",
+    "source_manifest_sha256": "2170a6085dd3487ae302f19ef6ccfc29a3055fe80dd2bf81f55e814634a9c419",
+    "all_payloads_root_verified_on_both": true,
+    "immutable_READY_Mac_copy_verified": "false reflects publicationtime; finalMAC_VERIFIED androotclosure provebothcopies",
+    "MAC_VERIFIED_sha256": "a6ec0cd88dd659ed5697091269df963377810791ec5d3ae694f192e414dad747"
+  },
+  "root_archive": {
+    "sha256": "f627d27041367294cbe828805fb6eb81dc10e97da3ea28e85cb76359cdc36ffe",
+    "bytes": 10874482,
+    "regular_members": 453,
+    "payloads": 452,
+    "all_payloads_verified": true,
+    "scope": "Independent fixed-roster extension review: original branch/entry FD failure retained;5of6cases passboth fixedsteps; preserved verifier-prefix error/correction and originalcomponent/domaincontrols. No plant/main/Phase5 acceptance.",
+    "all_payloads_root_verified_Mac": true,
+    "Mac": "/Users/uot/Documents/ChatGPT/ros/transfer/incoming/root-public-augmented-extension-20261008/evidence.tar.gz",
+    "Dell": "/mnt/d/CodexTransfer/projects/predictive_motion/checkpoints/root-public-augmented-extension-20261008/evidence.tar.gz",
+    "all_payloads_root_verified_on_both": true
+  },
+  "dependency_closure": {
+    "verified_utc": "2026-10-08T04:39:12.715587+00:00",
+    "source_sha256": "deee39ba85b025cac4b35af6e782378d0c25e809eef76c9249c0f9ac0d43a648",
+    "freeze_sha256": "7300ba4b8b78e333f96c005096324a1d17e0a275b1c34cd14c271c582a360dbb",
+    "archive_sha256": "e0baac3d6f775adc9b5cca60fe1782fb4685c4823374e11237e7100f5237a941",
+    "live_and_immutable_Dell_files_verified": 2682,
+    "input_bytes": 191923249,
+    "regular_members_verified": 3678,
+    "all_archive_payloads_verified": 3676,
+    "all_embedded_immutable_inputs_verified": 2682,
+    "manifest_name": "project/results/phase5/development/public-coupled-augmented-extension-cpp-v1/CHECKPOINT_FILE_MANIFEST.json",
+    "scope": "Read-only live/cache/archive closure with an explicit current manifest identity.\n\nNo physics/model/plant execution. Archive membership is read in stream order.\n",
+    "phase5": "NOT_ACCEPTED",
+    "all2682_embedded_immutable_dependencies_root_verified_Mac": true,
+    "all3676_producer_archive_payloads_root_verified_Mac": true
+  },
+  "certificate_name": "COMMAND_PROGRESS_EXTENSION_JACOBIAN_STRICT_PHYSICAL_V1",
+  "certifies_two_sided_admissible_neighborhood": false,
+  "freeze_sha256": "7300ba4b8b78e333f96c005096324a1d17e0a275b1c34cd14c271c582a360dbb",
+  "binary_sha256": "f1b7e6c7e4219fec2beb310540c725b448dcf021b3a95ddafc2922e8849bf1d6",
+  "producer_cases": {
+    "extension_certified": 17,
+    "physical_or_C_uncertified": 3,
+    "invalid": 6,
+    "future_failed": 2,
+    "extension_value_oracles": 2601,
+    "original_physical_diagnostics": 13464,
+    "original_nominal_J_calls": 88,
+    "synthetic_output_positive": 1,
+    "synthetic_output_negative": 26
+  },
+  "root_cases": {
+    "predeclared": 6,
+    "all_two_epsilon_pass": 5,
+    "original_case_failed_gate": 1,
+    "original_cases_retained": true,
+    "C_or_physical_uncertified": 2,
+    "future_failed": 1,
+    "invalid": 2,
+    "extension_value_oracles": 1014,
+    "original_physical_diagnostics": 6510,
+    "closed_nominal_calls": 11,
+    "completed_original_domain_controls": 12,
+    "additional_original_nominal_J_calls": 2,
+    "nonuniform_distinct_columns": 62
+  },
+  "root_metrics": [
+    {
+      "name": "root_boundary_start_zero",
+      "columns": 38,
+      "all_structural_checks_pass": true,
+      "all_requested_two_epsilon_gates_pass": true,
+      "epsilons": [
+        {
+          "epsilon": 1e-06,
+          "max_absolute": 6.613243942944118e-10,
+          "max_gate_ratio": 0.001322144065779535,
+          "entry_gate_pass": true,
+          "failed_entry_comparisons": 0,
+          "changed_branch_probes": [],
+          "same_branch_gate_pass": true
+        },
+        {
+          "epsilon": 3e-07,
+          "max_absolute": 3.004064021563062e-09,
+          "max_gate_ratio": 0.006006777974664536,
+          "entry_gate_pass": true,
+          "failed_entry_comparisons": 0,
+          "changed_branch_probes": [],
+          "same_branch_gate_pass": true
+        }
+      ]
+    },
+    {
+      "name": "root_boundary_terminal_zero",
+      "columns": 38,
+      "all_structural_checks_pass": true,
+      "all_requested_two_epsilon_gates_pass": true,
+      "epsilons": [
+        {
+          "epsilon": 1e-06,
+          "max_absolute": 6.613243942944118e-10,
+          "max_gate_ratio": 0.001322144065779535,
+          "entry_gate_pass": true,
+          "failed_entry_comparisons": 0,
+          "changed_branch_probes": [],
+          "same_branch_gate_pass": true
+        },
+        {
+          "epsilon": 3e-07,
+          "max_absolute": 3.004064021563062e-09,
+          "max_gate_ratio": 0.006006777974664536,
+          "entry_gate_pass": true,
+          "failed_entry_comparisons": 0,
+          "changed_branch_probes": [],
+          "same_branch_gate_pass": true
+        }
+      ]
+    },
+    {
+      "name": "root_boundary_alpha_plus1",
+      "columns": 38,
+      "all_structural_checks_pass": true,
+      "all_requested_two_epsilon_gates_pass": true,
+      "epsilons": [
+        {
+          "epsilon": 1e-06,
+          "max_absolute": 6.47322338703034e-10,
+          "max_gate_ratio": 0.0012943537616774824,
+          "entry_gate_pass": true,
+          "failed_entry_comparisons": 0,
+          "changed_branch_probes": [],
+          "same_branch_gate_pass": true
+        },
+        {
+          "epsilon": 3e-07,
+          "max_absolute": 2.6255497992882593e-09,
+          "max_gate_ratio": 0.00524973073581829,
+          "entry_gate_pass": true,
+          "failed_entry_comparisons": 0,
+          "changed_branch_probes": [],
+          "same_branch_gate_pass": true
+        }
+      ]
+    },
+    {
+      "name": "root_boundary_initial_w_plusV",
+      "columns": 38,
+      "all_structural_checks_pass": true,
+      "all_requested_two_epsilon_gates_pass": false,
+      "epsilons": [
+        {
+          "epsilon": 1e-06,
+          "max_absolute": 0.9200175809649709,
+          "max_gate_ratio": 36102.10331702078,
+          "entry_gate_pass": false,
+          "failed_entry_comparisons": 56,
+          "changed_branch_probes": [
+            "root_boundary_initial_w_plusV_0_15_-1",
+            "root_boundary_initial_w_plusV_0_1_1"
+          ],
+          "same_branch_gate_pass": false
+        },
+        {
+          "epsilon": 3e-07,
+          "max_absolute": 4.419812071887463e-09,
+          "max_gate_ratio": 0.006160816650820899,
+          "entry_gate_pass": true,
+          "failed_entry_comparisons": 0,
+          "changed_branch_probes": [],
+          "same_branch_gate_pass": true
+        }
+      ]
+    },
+    {
+      "name": "root_boundary_generated_w_plusV",
+      "columns": 38,
+      "all_structural_checks_pass": true,
+      "all_requested_two_epsilon_gates_pass": true,
+      "epsilons": [
+        {
+          "epsilon": 1e-06,
+          "max_absolute": 3.469837781683305e-09,
+          "max_gate_ratio": 0.005344059290733932,
+          "entry_gate_pass": true,
+          "failed_entry_comparisons": 0,
+          "changed_branch_probes": [],
+          "same_branch_gate_pass": true
+        },
+        {
+          "epsilon": 3e-07,
+          "max_absolute": 1.2940259273841459e-08,
+          "max_gate_ratio": 0.020039125794395662,
+          "entry_gate_pass": true,
+          "failed_entry_comparisons": 0,
+          "changed_branch_probes": [],
+          "same_branch_gate_pass": true
+        }
+      ]
+    },
+    {
+      "name": "root_boundary_nonuniform_distinct_controls",
+      "columns": 62,
+      "all_structural_checks_pass": true,
+      "all_requested_two_epsilon_gates_pass": true,
+      "epsilons": [
+        {
+          "epsilon": 1e-06,
+          "max_absolute": 1.0141303191093728e-08,
+          "max_gate_ratio": 0.01999482178816096,
+          "entry_gate_pass": true,
+          "failed_entry_comparisons": 0,
+          "changed_branch_probes": [],
+          "same_branch_gate_pass": true
+        },
+        {
+          "epsilon": 3e-07,
+          "max_absolute": 3.2730291563556007e-08,
+          "max_gate_ratio": 0.06545894814479995,
+          "entry_gate_pass": true,
+          "failed_entry_comparisons": 0,
+          "changed_branch_probes": [],
+          "same_branch_gate_pass": true
+        }
+      ]
+    }
+  ],
+  "producer_metrics": [
+    {
+      "epsilon": 1e-06,
+      "max_absolute": 8.253183933839097e-09,
+      "max_gate_ratio": 0.016504033982967906
+    },
+    {
+      "epsilon": 3e-07,
+      "max_absolute": 2.9446354881789566e-08,
+      "max_gate_ratio": 0.05760315872522703
+    }
+  ],
+  "root_counterexample": {
+    "case": "root_boundary_initial_w_plusV",
+    "epsilon": 1e-06,
+    "changed_probes": [
+      "q[1]+epsilon",
+      "C[1]-epsilon"
+    ],
+    "half": 1,
+    "friction_joint_zero_based": 1,
+    "nominal_branch": -1,
+    "perturbed_branch": 0,
+    "max_coefficient_discrepancy_mixed_units": 0.9200175809649709,
+    "max_dimensionless_gate_ratio": 36102.10331702078,
+    "failed_entry_comparisons": 56,
+    "smaller_epsilon_result": "3e-7 passes; originaltwoepsilon gate remainsfailed; no epsilonselection",
+    "nominal_J1_J2_chain_exact": true,
+    "finite_branch_radius_claim": false
+  },
+  "root_audit_source_hashes": {
+    "original_failed_source": "31aaa8a11cd7a625406c64361fae96813b3318af543a1c97ccd21a212deb71c1",
+    "current_primary_source": "01ec58b106f7cac3bd5470ed3decd4a2f67b9c5e1ee5be114e5903c57fbb7b2b",
+    "saved_data_review2_source": "a91e2099bf45ea5cbbfe6111b9283fb6b7a522cb0a269794351d9536d614216a",
+    "map_check_helper": "e399bb1fe9e33df6530351cab96268ebd39c50f7749bdad6c60714d915d337a2"
+  },
+  "retained_failures": "Original root samebranch/entry FD failure; saved-review1 erroneous5-half expectation corrected to4 fromoriginalfullcycleprecheck; originalfailed sources/logs andcomplete roster retained. Initial static naming draft/figures/counterexample layout retained byproducer. No newextensionbinary repeat, model/input/physicalgate/epsilon tuning orplant.",
+  "visuals": {
+    "matrix": {
+      "sha256": "6362814bc030eb08970e56ba94f323ab458f0b71ec8bc4f9df63ac42be3c50cb",
+      "bytes": 203534,
+      "root_viewed": true,
+      "provenance_sha256": "23ccad71787abc91d211374fb96987ebe95185958f0d0fa23efc3afeefe5af3b"
+    },
+    "verification": {
+      "sha256": "582636d45e54d7847408f56c831fadd2d7dc3fb11edcc4911f0c6b312b929822",
+      "bytes": 295128,
+      "root_viewed": true,
+      "provenance_sha256": "864868731004e978f17f335b53f5e51f884dd1dbb03f4ccb8ccfa572629e81c1"
+    },
+    "failure": {
+      "sha256": "81f28fbe234ed49cfe186303a4d62a32cb7bc148caff56d9bdbd33656846e1bd",
+      "bytes": 243263,
+      "root_viewed": true,
+      "provenance_sha256": "96e28b418bdc75f9efc04d4f7a37f38236300a16e9c970fd280b779786d9dd4b"
+    }
+  },
+  "large_evidence_in_Git": false,
+  "scope": "Partial command/progress boundary-extension component; zero-start selected checks pass, originalindependent fullgatefailed. No finite radius/admissibility/continuation/safety/horizon/main/task/timing orPhase5 acceptance."
+}

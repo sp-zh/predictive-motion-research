@@ -73,6 +73,22 @@ task and timing gates remain pending. No new plant or numerical retuning occurre
 [Independent augmented sensitivity review](../reviews/evidence/public_augmented_sensitivity_root_review_20261007.md).
 
 
+A separate command/progress extension API now preserves original closed-domain
+values while providing composite Jacobians at nominal0/0startup and other
+command/progress bounds. Producer17fixtures pass both fixedepsilons; root retains
+all6 prospective fixtures, with5passing and1failed originalgate. The equilibrium-C
+initialw+.0625/inwardalpha-.5 fixture changes friction branches for2epsilon1e-6
+probes, with56 failed derivative entry comparisons; the smaller epsilon passes
+but does not replace this failure. Every nominal map/prefix structure passes;
+the failed case's nominal chain exactly matches original physical derivatives.
+12 selected old-domain directional controls preserve actual closed-domain
+rejection/acceptance. This is partial component validation, no finite branch
+radius, admissible-neighborhood, safety or main-controller certificate. Full
+horizon/cost/main integration, geometry/stopping/task and timing gates remain
+pending. Source, cases, physical gates and both FDsteps remain unchanged.
+[Independent boundary-extension review](../reviews/evidence/public_augmented_extension_root_review_20261008.md).
+
+
 The one approved seed91013 simulation completes with the frozen public-v2 predictor and strict scorer. All9796 complete windows have zero failures; active2/4/40/800ms maxima are below original limits and near roundoff. Root independently verifies all5002 state records/2002attempts/262496captured QP rows and the exact window roster, plus21 predeclared forecasts and six enumerated force QPs. Source/model/parameters remain unchanged, with no fitting or rerun. There are1996full-cycle4ms misses, and the final new stop starts after a long hold. This is PASS_CONDITIONAL_RECORDED_INPUT_PREDICTION for known curated development input; main-controller integration, full task, moving-stop, uniform-domain,250Hz and Phase5 acceptance remain pending.
 [Independent actual-run review](../reviews/evidence/public_coupled_validation_91013_root_review_20261007.md).
 

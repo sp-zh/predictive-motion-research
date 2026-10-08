@@ -1,6 +1,6 @@
 {
   "status": "RESUMED_BY_USER",
-  "instruction": "\u7ee7\u7eed\u4efb\u52a1",
+  "instruction": "继续任务",
   "effective_date": "2026-10-07",
   "recorded_time_utc": "2026-10-07T23:12:31.575451+00:00",
   "recorded_time_local": "2026-10-07T19:12:31.575451-04:00",
@@ -9,7 +9,7 @@
   "phase5": "independent acceptance pending; development resumed",
   "previous_pause_record": "reviews/evidence/project_pause_20261007.json",
   "preserve_existing_files": true,
-  "next_work": "Resolve and independently validate augmented derivative boundary semantics for actual s=0/r=0 and terminal/domain boundaries, then horizon/cost and main-controller integration gates. Preserve component versions/failures; Phase5 remains unaccepted.",
+  "next_work": "Preserve/back up the partial boundary-extension unit and its finite-step friction-branch counterexample; validate finite candidate branch/trial behavior before horizon/cost and main-controller integration. No uniform perturbation radius or Phase5 acceptance.",
   "later_phases": "require independent phase gates",
-  "latest_review": "reviews/evidence/public_augmented_sensitivity_root_review_20261007.md"
+  "latest_review": "reviews/evidence/public_augmented_extension_root_review_20261008.md"
 }
