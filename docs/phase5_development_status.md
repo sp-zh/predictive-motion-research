@@ -178,7 +178,7 @@ See [source implementation checkpoint](../reviews/evidence/public_affine_horizon
 
 ## Final minimal checkpoint before pause — 2026-10-08
 
-The affine-horizon module retains its first failed build (exit2), receives only the reviewed yaml-cpp iterator compatibility/bracing fix, and completes the second build and first empty-input preflight (exit0). Producer/root inputs are prepared without numerical evaluation. All 2,912 frozen dependencies and the 80,494,096-byte archive are hash verified; both Mac and Dell copies are retained. No nonempty kernel or checker was run, and no controller, motion, safety or Phase5 acceptance follows. Producer checker robustness concerns remain deferred. Historical pending/release fields in immutable evidence are superseded by the human pause.
+The affine-horizon module retains its first failed build (exit2), receives only the reviewed yaml-cpp iterator compatibility/bracing fix, and completes the second build and first empty-input preflight (exit 0). Producer/root inputs are prepared without numerical evaluation. All 2,912 frozen dependencies and the 80,494,096-byte archive are hash verified; both Mac and Dell copies are retained. No nonempty kernel or checker was run, and no controller, motion, safety or Phase5 acceptance follows. Producer checker robustness concerns remain deferred. Historical pending/release fields in immutable evidence are superseded by the human pause.
 
 [Checkpoint identities and verified copies](../reviews/evidence/public_affine_horizon_build_freeze_checkpoint_20261008.json); [pause record](../PROJECT_PAUSED.json). Private Git backs up small sources and these records; the large archive remains on both hosts.
 
@@ -191,3 +191,11 @@ The versioned producer checker repairs three prospectively degenerate output con
 
 
 The separate v2 freezing helper passes source review: it preserves every old live/cache identity, writes fresh immutable copies, and emits the exact files schema required by the independent root audit. The fixed numerical execution plan is recorded prospectively. Neither the new freeze nor the numerical checks has run; Dell SSH recovery is still required. [Freeze source review](../reviews/evidence/public_affine_horizon_checker_v2_freeze_source_review_20261008.json); [prospective algebra plan](../reviews/evidence/public_affine_horizon_algebra_execution_plan_v2_20261008.json).
+
+
+## Verification freeze completed — 2026-10-08
+
+USB4 SSH recovered after the stopped Ubuntu/WSL instance and missing keeper were restored. Independent authenticated SSH and retained bidirectional transfer checks pass. The first v2 freeze completes with exit 0; all 2,921 live/cache inputs retain the original 2,912 identities and exact new checker/helper/review/plan/resumption sources. The 80,521,728-byte archive is fully verified on Mac and Dell, including all 2,723 payloads and embedded frozen inputs. Input coefficients, source model/binary and arithmetic gates remain unchanged; no nonempty numerical call has occurred. [Verified checkpoint](../reviews/evidence/public_affine_horizon_checker_v2_checkpoint_20261008.json). Numerical release follows remote backup verification; this preservation unit does not accept Phase5.
+
+
+Before numerical release, the Mac USB4 bridge became inactive and lost its link-local IP. The extra root verification-report copy and second Dell archive read timed out (exit 255); they remain unconfirmed. Already verified immutable archive copies remain preserved on both hosts. The source checkpoint is saved while reconnection is pending; no numerical run has started. Repository visibility is now Public at the human’s explicit instruction in the communication-check chat; historical private wording is retained in immutable evidence.

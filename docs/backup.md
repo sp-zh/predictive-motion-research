@@ -1,6 +1,8 @@
 # Project backup
 
-Private GitHub repository: https://github.com/sp-zh/predictive-motion-research
+GitHub repository: https://github.com/sp-zh/predictive-motion-research
+
+Visibility: **Public**, independently verified on 2026-10-08 after the human explicitly instructed “改回public” in the communication-check chat. Earlier private-backup records retain their historical wording. Credentials and local caches remain excluded.
 
 This repository backs up source, tests, configuration, model descriptions,
 documentation, review reports, figures and small CAD artifacts. A Git push is

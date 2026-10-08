@@ -1,0 +1,22 @@
+{
+  "decision": "PASS_INDEPENDENT_FROZEN_VERIFICATION_INPUT_CLOSURE",
+  "verified_utc": "2026-10-08T18:02:48.666581+00:00",
+  "freeze_sha256": "ec1b76a234e63c3dd6e3cb576d60ba1ef99c9130985690a4ba9313882071994f",
+  "file_count": 2921,
+  "legacy_paths_hashes_sizes_preserved": 2912,
+  "all_Dell_live_and_immutable_SHA_verified": 2921,
+  "new_entries": 9,
+  "new_entries_match_Mac_reviewed_sources": true,
+  "root_consumer_files_schema": "PASS",
+  "prerequisite_private_source_checkpoint": "281d1f304ef99b9675d7e3ab6bdf0ae95ea7c59d",
+  "source_binary_sha256": "6d08f9d00ccc939770efc9bd0c704745eba972a80f2511e0441691761eff7b4d",
+  "source_checker_v2_sha256": "12f0df058083fb751e4a3ea0f5600e418900f42fe46939b3c15f97c18a6acc3d",
+  "old_freeze": "d3d4253c0173aae4ad3072eea37268713bd3710b68cfa05720e79f906bf97429",
+  "prepared_inputs_and_gates": "UNCHANGED",
+  "scope": "Static schema/source review and read-only hashes, no numerical execution",
+  "nonempty_calls": 0,
+  "archive_and_backup": "PENDING",
+  "numerical_run_release": "NOT_GRANTED_UNTIL_ARCHIVE_AND_BACKUP_VERIFIED",
+  "phase5": "NOT_ACCEPTED",
+  "phase6": "NOT_STARTED"
+}
