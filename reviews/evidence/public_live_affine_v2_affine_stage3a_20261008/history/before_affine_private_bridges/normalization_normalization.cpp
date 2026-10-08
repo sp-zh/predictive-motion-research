@@ -156,8 +156,6 @@ struct NormalizedInventory {
     :ticket(std::move(reserved)),anchor(std::move(source)){}
 };
 struct NormalizationFactory {
-  static CaseBudget& budget(OwnedPublicForecast& source){return source.normalizationBudget();}
-  static const ResourcePlan& plan(const OwnedPublicForecast& source){return source.normalizationPlan();}
   static NormalizationOutcome normalize(OwnedPublicForecast&& source){
     NormalizationOutcome out(std::move(source));
     try {
@@ -297,8 +295,6 @@ const NativeState& NormalizedNominalMaps::cycleOrigin(Count k) const{return cycl
 const NativeState& NormalizedNominalMaps::cycleEndpoint(Count k) const{return cycle(present(storage_),k).state;}
 Count NormalizedNominalMaps::cycleCell(Count k) const{return static_cast<Count>(cycle(present(storage_),k).cell);}
 const OwnedPublicForecast& NormalizedNominalMaps::originalForecast() const{return present(storage_).anchor->forecast;}
-CaseBudget& NormalizedNominalMaps::affineBudget() const{return detail::NormalizationFactory::budget(present(storage_).anchor->forecast);}
-const ResourcePlan& NormalizedNominalMaps::affinePlan() const{return detail::NormalizationFactory::plan(present(storage_).anchor->forecast);}
 const std::array<bool,7>& NormalizedNominalMaps::scopeClaims() noexcept{static const std::array<bool,7> flags{};return flags;}
 NormalizationOutcome::NormalizationOutcome(OwnedPublicForecast&& s) noexcept:original_(std::move(s)){}
 NormalizationOutcome::NormalizationOutcome(NormalizationOutcome&&) noexcept=default;

@@ -6,7 +6,7 @@
 #include <vector>
 
 namespace phase5_public_live_affine_v2 {
-namespace detail { struct RawAnchor; struct NormalizedInventory; struct NormalizationFactory; struct AffineFactory; }
+namespace detail { struct RawAnchor; struct NormalizedInventory; struct NormalizationFactory; }
 // Native cumulative nominal coefficient view, not a finite-neighborhood or
 // execution certificate. Every reference keeps the genuine raw owner alive.
 class NormalizedBlockView final {
@@ -53,12 +53,9 @@ class NormalizedNominalMaps final {
   const OwnedPublicForecast& originalForecast() const;
   static const std::array<bool,7>& scopeClaims() noexcept; // Fixed all false.
  private:
-  CaseBudget& affineBudget() const;
-  const ResourcePlan& affinePlan() const;
   explicit NormalizedNominalMaps(std::unique_ptr<detail::NormalizedInventory>);
   std::unique_ptr<detail::NormalizedInventory> storage_;
   friend struct detail::NormalizationFactory;
-  friend struct detail::AffineFactory;
 };
 class NormalizationOutcome final {
  public:
