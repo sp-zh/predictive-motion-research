@@ -1,0 +1,12 @@
+{
+  "scope": "DEVELOPMENT_API_AND_SCHEMA_GATE_DIAGNOSTIC_ONLY",
+  "report_sha256": "fc0c4161da65e791d3091f688fc8c5dee9b870b16b79ee62b99f433eea636080",
+  "source_sha256": "64a04f398e14dac6f2b85e46875d1d59d337efca6f5a9bc3aba6f67a52675d07",
+  "figure_sha256": "1630a4b6df6ab6181c252f77bbc2a4b7a454d3503eb5323e8cf1ae54db3e97e7",
+  "units": "force/eta dimensionless; eta same force unit as ell/H",
+  "cases": "All ten predeclared 1D tiny-bound cases, no performance selection; input rejections and synthetic-output controls shown separately.",
+  "supported_serialization_observed": "Tested numeric JSON includes min normal,1e-310,min subnormal; none rejected or rounded to zero.",
+  "synthetic_controls_not_core_failures": true,
+  "phase5": "NOT_ACCEPTED",
+  "frozen_repeat_sha256": "3593ef671e31d6bee9a2b93a2642ebe8a50fb9a39cc5dccff3a788264c8b4a1f"
+}

@@ -1,0 +1,64 @@
+{
+  "scope": "Final structural gate isolation on copied old native output; deterministic in-memory corruptions, no v2 native/physics/model execution. Actual source implementation and captured data remain unchanged.",
+  "gate_source_sha256": "70b79c6c4d2d9a78a47e8f4e1c02c6587bf4df94f6303350fd4128db87cd6437",
+  "source_sha256": "da771a89a4c41b556840908a5eb321efa247226b7e7e87344aeea9e708447e6e",
+  "control_archive_sha256": "3933a5dc846d370ab57ea24dc0bf4b2617f1dcfd9dc0ac3cd2cd32c4662bdf0f",
+  "cases": [
+    {
+      "name": "valid_control",
+      "accepted": true,
+      "reason": null
+    },
+    {
+      "name": "empty_state",
+      "accepted": false,
+      "reason": "NativeOutputError: exact roster length state"
+    },
+    {
+      "name": "drop_state_tail",
+      "accepted": false,
+      "reason": "NativeOutputError: exact roster length state"
+    },
+    {
+      "name": "drop_box_tail",
+      "accepted": false,
+      "reason": "NativeOutputError: exact roster length box"
+    },
+    {
+      "name": "duplicate_state",
+      "accepted": false,
+      "reason": "NativeOutputError: unique roster names state"
+    },
+    {
+      "name": "string_success",
+      "accepted": false,
+      "reason": "NativeOutputError: typed state success"
+    },
+    {
+      "name": "short_trace",
+      "accepted": false,
+      "reason": "NativeOutputError: complete trace length"
+    },
+    {
+      "name": "NaN_state",
+      "accepted": false,
+      "reason": "NativeOutputError: finite numeric all native numeric values"
+    },
+    {
+      "name": "bool_q",
+      "accepted": false,
+      "reason": "NativeOutputError: numeric type state q"
+    },
+    {
+      "name": "float_iterations",
+      "accepted": false,
+      "reason": "NativeOutputError: integer friction iterations"
+    },
+    {
+      "name": "huge_integer_q",
+      "accepted": false,
+      "reason": "NativeOutputError: outside finite double range all native numeric values"
+    }
+  ],
+  "all_expected_outcomes": true
+}

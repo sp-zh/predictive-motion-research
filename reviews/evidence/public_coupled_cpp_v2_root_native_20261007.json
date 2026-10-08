@@ -1,0 +1,316 @@
+{
+  "decision": "PASS_V2_NATIVE_TRANSITION_AND_TINY_BOUND_ANALYTIC_REGRESSIONS",
+  "scope": "Independent native caller for corrected C++ v2 transition and force-box API.\n\nExisting development inputs and mathematical fixtures only. No new plant,\nparameter fitting, main-controller or derivative validation. Tiny-bound analytic optima and exact-side labels are checked independently.\n",
+  "source_sha256": "68e6837b2895ddc2b643c1e40a2203a0cc95e6c3d8b7bca0cb8012868f22fda2",
+  "binary_sha256": "fa1a00344e73d8fe2266541ba4e2b34c362351b30a4f21dfa34c04867f585a04",
+  "freeze_sha256": "3593ef671e31d6bee9a2b93a2642ebe8a50fb9a39cc5dccff3a788264c8b4a1f",
+  "oracle_sha256": "54fffcd5332425530d3110d9cd6db44bb520c64eeca381a30e59c0544cde2e18",
+  "metadata": {
+    "units": "mass kg; armature kg*m^2; q rad; v rad/s; target rad; h seconds; own Pinocchio model contains tool mass",
+    "pinocchio_version": "4.1.0",
+    "nq": 7,
+    "nv": 7,
+    "joint_names": [
+      "fr3_joint1",
+      "fr3_joint2",
+      "fr3_joint3",
+      "fr3_joint4",
+      "fr3_joint5",
+      "fr3_joint6",
+      "fr3_joint7"
+    ],
+    "frame_names": [
+      "universe",
+      "base",
+      "fr3_link0_fixed",
+      "fr3_link0",
+      "fr3_joint1",
+      "fr3_link1",
+      "fr3_joint2",
+      "fr3_link2",
+      "fr3_joint3",
+      "fr3_link3",
+      "fr3_joint4",
+      "fr3_link4",
+      "fr3_joint5",
+      "fr3_link5",
+      "fr3_joint6",
+      "fr3_link6",
+      "fr3_joint7",
+      "fr3_link7",
+      "attachment_site",
+      "inspection_tool_fixed",
+      "inspection_tool",
+      "inspection_tcp"
+    ],
+    "idx_q": [
+      0,
+      1,
+      2,
+      3,
+      4,
+      5,
+      6
+    ],
+    "idx_v": [
+      0,
+      1,
+      2,
+      3,
+      4,
+      5,
+      6
+    ],
+    "joint_nq": [
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1
+    ],
+    "joint_nv": [
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1
+    ],
+    "masses": [
+      1,
+      2.92747,
+      2.93554,
+      2.2449,
+      2.6156,
+      2.32712,
+      1.81704,
+      1.077143
+    ],
+    "armature": [
+      0.195,
+      0.195,
+      0.195,
+      0.195,
+      0.074,
+      0.074,
+      0.074
+    ],
+    "gravity": [
+      0,
+      0,
+      -9.81
+    ],
+    "R": [
+      0.3876906608381666,
+      0.0812362043341259,
+      0.4331862156261861,
+      0.2873660249915066,
+      1.0025599181193177,
+      0.8294841910688778,
+      1.4962574210970128
+    ],
+    "B": [
+      105.26315789473685,
+      105.26315789473685,
+      105.26315789473685,
+      105.26315789473685,
+      105.26315789473685,
+      105.26315789473685,
+      105.26315789473685
+    ],
+    "D": [
+      450.21,
+      450.21,
+      350.21,
+      350.21,
+      200.21,
+      200.21,
+      200.21
+    ]
+  },
+  "state_cases": [
+    {
+      "name": "recorded_510_1",
+      "success": true,
+      "error": null,
+      "substeps": 1,
+      "maximum_q_parity_rad": 0.0,
+      "maximum_v_parity_rad_s": 3.3881317890172014e-21
+    },
+    {
+      "name": "recorded_710_2",
+      "success": true,
+      "error": null,
+      "substeps": 2,
+      "maximum_q_parity_rad": 0.0,
+      "maximum_v_parity_rad_s": 4.336808689942018e-19
+    },
+    {
+      "name": "recorded_690_20",
+      "success": true,
+      "error": null,
+      "substeps": 20,
+      "maximum_q_parity_rad": 0.0,
+      "maximum_v_parity_rad_s": 1.734723475976807e-18
+    },
+    {
+      "name": "recorded_920_400",
+      "success": true,
+      "error": null,
+      "substeps": 400,
+      "maximum_q_parity_rad": 0.0,
+      "maximum_v_parity_rad_s": 1.3552527156068805e-19
+    },
+    {
+      "name": "finite_huge_target_clamps",
+      "success": true,
+      "error": null,
+      "substeps": 1,
+      "maximum_q_parity_rad": 0.0,
+      "maximum_v_parity_rad_s": 5.551115123125783e-17
+    },
+    {
+      "name": "finite_velocity_overflow",
+      "success": false,
+      "error": "nonfinite pre-clamp affine actuator"
+    },
+    {
+      "name": "q_dimension6",
+      "success": false,
+      "error": "finite state dimension7"
+    },
+    {
+      "name": "target_dimension6",
+      "success": false,
+      "error": "finite target dimension7"
+    },
+    {
+      "name": "nonfinite_target",
+      "success": false,
+      "error": "finite target dimension7"
+    },
+    {
+      "name": "joint_boundary",
+      "success": false,
+      "error": "joint-limit-free regime"
+    }
+  ],
+  "box_cases": [
+    {
+      "name": "oracle_zero_drive",
+      "success": true,
+      "error": null,
+      "independent_KKT": 0.0,
+      "independent_force_difference": 0.0
+    },
+    {
+      "name": "oracle_all_lower",
+      "success": true,
+      "error": null,
+      "independent_KKT": 0.0,
+      "independent_force_difference": 0.0
+    },
+    {
+      "name": "oracle_all_upper",
+      "success": true,
+      "error": null,
+      "independent_KKT": 0.0,
+      "independent_force_difference": 0.0
+    },
+    {
+      "name": "oracle_strict_mixed_active_set",
+      "success": true,
+      "error": null,
+      "independent_KKT": 1.1102230246251565e-16,
+      "independent_force_difference": 1.942890293094024e-16
+    },
+    {
+      "name": "oracle_axis_clip_counterexample",
+      "success": true,
+      "error": null,
+      "independent_KKT": 6.661338147750939e-16,
+      "independent_force_difference": 2.220446049250313e-16
+    },
+    {
+      "name": "oracle_threshold_lower",
+      "success": true,
+      "error": null,
+      "independent_KKT": 2.7755575615628914e-16,
+      "independent_force_difference": 0.0
+    },
+    {
+      "name": "oracle_threshold_upper",
+      "success": true,
+      "error": null,
+      "independent_KKT": 2.7755575615628914e-16,
+      "independent_force_difference": 0.0
+    },
+    {
+      "name": "zero_bound",
+      "success": true,
+      "error": null,
+      "independent_KKT": 0.0,
+      "independent_force_difference": 0.0
+    },
+    {
+      "name": "tiny_lower",
+      "success": true,
+      "error": null,
+      "independent_KKT": 0.0,
+      "independent_force_difference": 0.0,
+      "exact_analytic_optimum": true,
+      "exact_side_label": -1
+    },
+    {
+      "name": "negative_eta",
+      "success": false,
+      "error": "box finite input/nonnegative bound"
+    },
+    {
+      "name": "nonSPD",
+      "success": false,
+      "error": "box Hessian not finite SPD"
+    },
+    {
+      "name": "asymmetry",
+      "success": false,
+      "error": "asymmetric box Hessian"
+    },
+    {
+      "name": "nonfinite_H",
+      "success": false,
+      "error": "box finite input/nonnegative bound"
+    },
+    {
+      "name": "dimension8",
+      "success": false,
+      "error": "box dimension (supported n1..7)"
+    },
+    {
+      "name": "tiny_upper",
+      "success": true,
+      "error": null,
+      "independent_KKT": 0.0,
+      "independent_force_difference": 0.0,
+      "exact_analytic_optimum": true,
+      "exact_side_label": 1
+    },
+    {
+      "name": "tiny_lower_1e100",
+      "success": true,
+      "error": null,
+      "independent_KKT": 0.0,
+      "independent_force_difference": 0.0,
+      "exact_analytic_optimum": true,
+      "exact_side_label": -1
+    }
+  ],
+  "maximum_q_parity_rad": 0.0,
+  "maximum_v_parity_rad_s": 5.551115123125783e-17,
+  "tiny_positive_eta_regressions_passed": true,
+  "new_plant_run": false,
+  "phase5_accepted": false
+}

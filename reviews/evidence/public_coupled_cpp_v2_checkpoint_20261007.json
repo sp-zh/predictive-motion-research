@@ -1,0 +1,74 @@
+{
+  "date": "2026-10-07",
+  "timezone": "America/Toronto",
+  "decision": "PASS_V2_SCOPED_API_AND_OUTPUT_GATE",
+  "phase5": "NOT_ACCEPTED",
+  "phase6": "NOT_STARTED",
+  "producer_archive": {
+    "sha256": "0c3d897b721405621dc6947a3cfbfcae92505c32b7168413a3e355b613f786f9",
+    "bytes": 39523311,
+    "regular_members": 2789,
+    "payloads": 2787,
+    "Mac": "/Users/uot/Documents/ChatGPT/ros/results/phase5-executor-checkpoints-01a114d9/public-coupled-cpp-v2/public-coupled-cpp-v2.tar.gz",
+    "Dell": "/mnt/d/CodexTransfer/projects/predictive_motion/checkpoints/public-coupled-cpp-v2-20261007/public-coupled-cpp-v2.tar.gz",
+    "source_manifest_sha256": "a577afc86abb66a4e39153989b0a38c2e1048358760fcf1bca6902d44c5f48a8",
+    "all_payloads_root_verified_on_both": true
+  },
+  "root_native_archive": {
+    "sha256": "1e10b3230a9a52e26538d6848ada9a87222e0936768653da19f358df9ef8b498",
+    "bytes": 101082,
+    "regular_members": 8,
+    "payloads": 7,
+    "Mac": "/Users/uot/Documents/ChatGPT/ros/transfer/incoming/root-public-coupled-cpp-v2-native-20261007/evidence.tar.gz",
+    "Dell": "/mnt/d/CodexTransfer/projects/predictive_motion/checkpoints/root-public-coupled-cpp-v2-native-20261007/evidence.tar.gz",
+    "all_payloads_root_verified_on_both": true
+  },
+  "root_schema_archive": {
+    "sha256": "e02ef9b684a6ef12f13a4e3457c43d35adbfa3614e5b09ad777b0dd394eb98dd",
+    "bytes": 4059,
+    "regular_members": 5,
+    "payloads": 4,
+    "Mac": "/Users/uot/Documents/ChatGPT/ros/transfer/incoming/root-public-coupled-native-schema-v2-20261007/evidence.tar.gz",
+    "Dell": "/mnt/d/CodexTransfer/projects/predictive_motion/checkpoints/root-public-coupled-native-schema-v2-20261007/evidence.tar.gz",
+    "all_payloads_root_verified_on_both": true
+  },
+  "dependency_closure": {
+    "verified_utc": "2026-10-08T01:17:13.056223+00:00",
+    "frozen_manifest_sha256": "3593ef671e31d6bee9a2b93a2642ebe8a50fb9a39cc5dccff3a788264c8b4a1f",
+    "all2540_live_and_immutable_Dell_inputs_root_read_verified": true,
+    "input_bytes": 152965847,
+    "archive_sha256": "0c3d897b721405621dc6947a3cfbfcae92505c32b7168413a3e355b613f786f9",
+    "regular_members": 2789,
+    "all2787_payloads_root_verified_on_Dell": true,
+    "scope": "Fixed FR3 C++ transition/parity and preservation only; v2 exact-face tiny-bound correction and schema gate verified; no main-controller or Phase5 acceptance",
+    "all2540_embedded_immutable_dependencies_root_verified_Mac": true,
+    "producer_archive_all2787_payloads_root_verified_Mac": true
+  },
+  "original_before_first_forecast_freeze_sha256": "cdac053a941da1eec0754e266da4447a56f3511a3e08922c55cf4b0120897181",
+  "final_before_repeat_forecast_freeze_sha256": "3593ef671e31d6bee9a2b93a2642ebe8a50fb9a39cc5dccff3a788264c8b4a1f",
+  "producer_cases": {
+    "state": 52,
+    "complete_recorded_windows": 40,
+    "positive_synthetic_transitions": 4,
+    "state_rejections": 8,
+    "QP": 30,
+    "QP_positive": 21,
+    "QP_negative": 9,
+    "constant_rejections": 20,
+    "substeps": 3437,
+    "incomplete_EOF_retained": 4,
+    "synthetic_schema_positive": 2,
+    "synthetic_schema_negative": 33
+  },
+  "root_cases": {
+    "native_state": 10,
+    "native_QP": 16,
+    "synthetic_schema_positive": 1,
+    "synthetic_schema_negative": 10
+  },
+  "numerical_scope": "Frozen FR3 physical transition and declared tiny/mixed force-box fixtures. No arbitrary SPD/scale/termination/Jacobian/augmentation/main-controller/timing/task acceptance. Python near-bound label equivalence not claimed.",
+  "failures_retained": true,
+  "large_evidence_in_Git": false,
+  "figures_root_inspected": true,
+  "root_closure_output_path_failure": "First closure checker passed verification but write failed for nonexistent directory. Original script retained on Dell; corrected only output path, repeated verification succeeded."
+}

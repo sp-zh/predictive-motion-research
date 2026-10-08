@@ -250,6 +250,18 @@ plant run, derivative, main-controller or timing certificate. A generic tiny
 friction-bound false rejection is retained; the fixed FR3 bounds avoid it.
 [Independent C++ review](../reviews/evidence/public_coupled_cpp_v1_root_review_20261007.md).
 
+![C++ v2 tiny-bound API and output validation](../figures/phase5/phase5_public_coupled_cpp_v2_api.png)
+
+![C++ v2 recorded-state regression](../figures/phase5/phase5_public_coupled_cpp_v2_parity.png)
+
+All ten tiny-bound scalar cases through the minimum subnormal return exact
+floating bounds and correct side labels. Purple bars are disclosed synthetic
+output corruptions. Forty complete seen-input windows retain numerical parity;
+four EOF windows remain incomplete. Root separately checks10 native states,
+16 QPs and11 schema controls. This corrects the v2 API/gate only; derivative,
+main-controller, timing and Phase5 acceptance remain pending.
+[Independent v2 review](../reviews/evidence/public_coupled_cpp_v2_root_review_20261007.md).
+
 ## Downloadable 3D models
 
 | Asset | Format / units | Purpose |
