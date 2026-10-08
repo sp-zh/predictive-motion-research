@@ -105,3 +105,17 @@ admission, geometry rows, physical feasibility, plant run, untouched holdout,
 main integration, task video or timing result. All connecting-segment/ball,
 admissibility/execution/safety/uniform-error/controller claims remain false.
 The earlier finite-step FD failure remains immutable.
+
+## Producer cross-review clarifications
+
+The independent source writer agrees with this contract. Each sampled initial
+sensitivity must also be explicit: P_sample=A_prefix*P_cell_origin. Algebraic
+initial shifts leave saved nominal origins/defects and certificate provenance
+fixed; a shifted initial is never relabeled physically certified.
+
+If an existing PreviewAssembly::Term is ever imported, its square convention
+is w*||m*z+c||² and its stored factor m is unweighted. The new half-square
+convention uses F=sqrt(2*w)*m, f0=sqrt(2*w)*c, with linear rewards separate.
+No production weights are imported or tuned in this isolated algebra unit.
+Command alpha/b boundary history must be the previously accepted alpha/b,
+not the old previous_model_acceleration field.

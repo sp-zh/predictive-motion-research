@@ -33,5 +33,16 @@
     }
   },
   "independent_reviewer": "/root/predictive_math_audit",
-  "key_finding": "Native extension cell_maps .A/B/defect/origin are last-cycle-local; use .cell_A/cell_B/cell_defect/cell_origin. Serialized JSON cellmaps already normalize cumulative fields."
+  "key_finding": "Native extension cell_maps .A/B/defect/origin are last-cycle-local; use .cell_A/cell_B/cell_defect/cell_origin. Serialized JSON cellmaps already normalize cumulative fields.",
+  "producer_cross_review": {
+    "chat": "01a114d9-3a3a-7071-b94f-624581000992",
+    "verdict": "consistent; three clarifications accepted and saved",
+    "numerical_calls": 0,
+    "clarifications": [
+      "sample initial sensitivities and fixed saved nominal provenance",
+      "old unweighted factor needs sqrt(2w) under new half-square convention",
+      "command-alpha/b history separate from old model-acceleration history"
+    ],
+    "read_lookup_failure": "one alternate nonexistent integration_provenance filename lookup failed; correct source_contract file then reviewed; no model/build call or frozen source change"
+  }
 }
