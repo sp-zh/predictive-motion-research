@@ -1,0 +1,17 @@
+{
+  "recorded_utc": "2026-10-08T18:15:52.765301+00:00",
+  "scope": "Read-only recurrence diagnosis; no service/network/route/account/project modification",
+  "previous_repair": "reviews/evidence/connection_repair_20261008.json",
+  "observed": {
+    "bridge0": "inactive; original169.254.142.85 absent",
+    "en1": "inactive",
+    "en2": "inactive",
+    "SSH": "TCP connection timeout before establishment",
+    "TCP_probe": "169.254.118.3:2222 timeout",
+    "Dell_Codex_remote_tool": "read_thread unavailable; message dispatch returned Codex app-server is not available; repair dispatch not confirmed"
+  },
+  "interpretation": "Different from prior WSL stopped/banner timeout; current evidence supports physical USB4 link interruption, does not establish another WSL/keeper failure. Dell sleep or cable cause remains unverified.",
+  "action": "Requested human to wake Dell and reconnect/check USB4 cable; hold remote retries and service edits until physical link returns",
+  "preservation": "Previous80MB archive transfer reportedly verified by writer; no overwritten archives or new project executions",
+  "phase5": "NOT_ACCEPTED"
+}
