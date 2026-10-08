@@ -1,0 +1,27 @@
+{
+  "recorded_utc": "2026-10-08T18:52:49.027274+00:00",
+  "scope": "Existing dedicated USB4 SSH route restoration only",
+  "Mac": "bridge0/en2 active;169.254.142.85 present;route/ARP confirmed bridge0",
+  "Dell_Codex": "Original remote diagnostic chat executes commands normally",
+  "observed_issue": "Windows2222listener missing despite existing portproxy configuration; dedicated WSLsshd listening;old keeper missing",
+  "repair": "Restored keeper and administrator-refreshed only original169.254.118.3:2222 to172.29.211.53:2222",
+  "elevation": "Unelevated netsh attempt refused and made no proxy deletion; RunAs minimal script started successfully; SSH then verified",
+  "verification": {
+    "fixed_hostkey_SSH": "PASS",
+    "sshd": "active",
+    "Linux_keeper_pid": 501,
+    "actual_rsync_push": "PASS",
+    "actual_rsync_pull": "PASS",
+    "SHA256_match": "32ae8e05148ded16fe36423ff76aab570ac7c79b71e3b7d0079f022d72faa2df",
+    "bytes": 1048576,
+    "manifests": [
+      "transfer/manifests/push-connectivity-recheck-20261008-1853.json",
+      "transfer/manifests/pull-connectivity-recheck-20261008-1853.json"
+    ]
+  },
+  "network_scope": "Original account/key/firewall/listenaddress retained",
+  "project_writer_notified": true,
+  "project_execution_authorization": "Unchanged; no new model/plant/main/scorer approval",
+  "long_term_stability": "Not established; original keeper/listener disappearance cause unknown",
+  "previous_link_loss": "reviews/evidence/connection_recurrence_20261008.json"
+}

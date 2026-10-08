@@ -44,6 +44,13 @@ Codex 远程聊天能执行本机命令，应用控制通道正常。已启动�
 保留已核验的归档和上次成功传输记录。当前传输不可用。
 [再次断连记录](reviews/evidence/connection_recurrence_20261008.json)。
 
+随后链路和原 IP 已恢复，但 Windows 的原 2222 转发监听缺失；WSL 内
+专用 sshd 正常，旧 keeper 又不存在。恢复保活并以管理员身份仅刷新原
+地址的转发后，Mac 再次实测固定主机密钥 SSH、1 MiB 实际双向 rsync
+及 SHA-256 均通过，Linux 保活 PID501。当前恢复可用，项目 writer 已
+获通知；长期稳定性和 keeper/监听消失原因仍未确定。
+[恢复复测记录](reviews/evidence/connection_recheck_restored_20261008.json)。
+
 备用 SMB 共享：`smb://169.254.118.3/CableTransfer`，映射到 Dell 的 `C:\Users\SYSUR\Documents\Codex\CableTransfer`。权限为 `ZH2022\sp` 可修改。Mac 自动挂载因缺少认证失败，目前没有挂载，SMB 通道没有传输实测。当前使用已验证的 USB4 地址 SSH 通道。
 
 Dell 已创建 `C:\Users\SYSUR\Documents\Codex\2026-09-16\zh\CodexTransfer\inbox`、`outbox`、`manifests`，该目录没有新增共享。当前主要传输目录已配置为 D:\CodexTransfer，下述 SMB 路径仅作备用。
