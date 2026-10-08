@@ -1,0 +1,51 @@
+{
+  "status": "PROSPECTIVE_PLAN_NOT_RUN_RELEASE",
+  "recorded_utc": "2026-10-08T17:47:26.256917+00:00",
+  "prerequisite_source_backup_commit": "78452f83a801b44ee4b7326ac55fe3e2e330ae21",
+  "binary_sha256": "6d08f9d00ccc939770efc9bd0c704745eba972a80f2511e0441691761eff7b4d",
+  "producer_checker_v2_sha256": "12f0df058083fb751e4a3ea0f5600e418900f42fe46939b3c15f97c18a6acc3d",
+  "root_audit_sha256": "77789bf1289ce1cf9874f5255fb240d17b1911826f4cc892b353afea2480785d",
+  "root_helper_sha256": "4b8f0328125e8e797ddafcc4ae0e6e0572f65ca2fc5f0336a25b3d25b00b4e84",
+  "original_freeze_sha256": "d3d4253c0173aae4ad3072eea37268713bd3710b68cfa05720e79f906bf97429",
+  "new_freeze_requirement": "Exact full files schema for root consumer, old2912 closure plus new verification sources/SDK, verified live/immutable/Mac/Dell archives and private source checkpoint before dispatch",
+  "prepared_inputs": "Reuse original producer500224d1 cases and root56083746 inputs unchanged; producer gates2e-12 abs/rel, root1e-11 abs/1e-10 rel unchanged",
+  "intended_first_calls": [
+    {
+      "kernel": "producer batch",
+      "calls": 1,
+      "cases": 10,
+      "prospective_expected_successes": 4,
+      "prospective_expected_refusals": 6,
+      "checker": "v2 producer with14 output mutation controls"
+    },
+    {
+      "kernel": "root independently prepared batch",
+      "calls": 1,
+      "cases": 12,
+      "prospective_expected_successes": 4,
+      "prospective_expected_refusals": 8,
+      "checker": "root audit with23 output mutation controls"
+    },
+    {
+      "kernel": "malformed process grammar controls",
+      "calls": 3,
+      "documents": [
+        "duplicate_keys.json",
+        "yaml_refused.json",
+        "nonfinite_refused.json"
+      ],
+      "expected_exit": 1,
+      "expected_output": "No output file; retain stdout/stderr/exit"
+    }
+  ],
+  "scope": "Only cached source affine coefficient assembly, lifted elimination, objective substitution, finite output and authentic refusal preservation. No original model/plant/solver/main/scorer/seed run.",
+  "failure_policy": "Keep all first attempts/source/exits/output. No epsilon/weights/tolerances/inputs/outcome tuning. Any repair is a new version/review/freeze/checkpoint; no repeated-call evidence substitution.",
+  "post_execution": "Independent review, provenance/data-backed diagnostic plots if numerical evidence becomes available, all failures retained, immutable archives verified Mac/Dell and private Git checkpoint. No new complete motion video without actual successful task trajectory.",
+  "non_claims": [
+    "No nonlinear forecast quality",
+    "No trust radius/segment/ball/admissibility/execution/safety/uniform error/controller readiness",
+    "No timing/whole-task/Phase5 acceptance"
+  ],
+  "phase5": "NOT_ACCEPTED",
+  "phase6": "NOT_STARTED"
+}

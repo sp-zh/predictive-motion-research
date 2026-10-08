@@ -1,0 +1,28 @@
+{
+  "decision": "PASS_SOURCE_ONLY_NEW_FREEZE_SCHEMA_AND_CLOSURE",
+  "recorded_utc": "2026-10-08T17:53:35.938665+00:00",
+  "source_sha256": "589872b80bc0a58b4d01c6b5a3ba5f7de90f0f3837ae450f058617eac7fedb2f",
+  "source_file": "tools/phase5_public_affine_horizon_cpp/freeze_public_affine_horizon_checker_v2.py",
+  "root_audit_consumer_sha256": "77789bf1289ce1cf9874f5255fb240d17b1911826f4cc892b353afea2480785d",
+  "reviewed_contract": [
+    "Reads and hash pins old d3d4 freeze, retained8694 checker, binary6d08 and all2912 live/cache identities",
+    "Preserves legacy paths and adds versioned checker12f0 plus self/review/resumption metadata without replacing old outputs",
+    "Fresh exclusive output directory, content-addressed immutable copies, final all-live/cache hash pass before FREEZE_READY",
+    "Explicit files array with path/sha256/bytes/immutable_copy satisfies original root consumer schema",
+    "Unchanged prepared manifests/root helper/audit paths verified against legacy closure; read-only cache identity on Mac confirms all required legacy paths exist",
+    "Failures retained separately; no import NumPy, subprocess, network, kernel, model, plant or compile execution"
+  ],
+  "syntax_validation": "ast.parse PASS; helper not imported or executed",
+  "execution_preconditions": [
+    "Dell USB4 SSH recovers; synchronize identical resumed AGENTS/PROJECT_PAUSED and new small sources",
+    "Private source checkpoint containing this helper/plan/review remotely verified before freeze",
+    "Pass exact self,checker-review,state,agents SHA arguments and fresh reviewed output under results/phase5/development/public-affine-horizon-checker-v2",
+    "Additional-pinned must include execution plan6023d3362fbdf5b0d7523e05c3e602bcce4ca5e9d640d94f22fdbd9df042ee0c and this freeze source review; include producer source change record",
+    "Full new freeze live/immutable/archive identities independently verified and backed up before separately scoped numerical release"
+  ],
+  "scope": "Source-only acceptance of preservation helper; not proof that freeze has executed",
+  "freeze_execution": "NOT_RUN_PENDING_DELL_CONNECTION",
+  "nonempty_calls": 0,
+  "phase5": "NOT_ACCEPTED",
+  "phase6": "NOT_STARTED"
+}
