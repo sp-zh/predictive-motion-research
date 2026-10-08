@@ -1,0 +1,20 @@
+{
+  "status":"SOURCE_ONLY_NOT_PREPARED_NOT_EXECUTED",
+  "prerequisite_private_checkpoint":"8eb397f35131071c7e13a5aacaf5fae0e3acccfd",
+  "producer_cases":["producer_public_startup","producer_public_nonuniform_shifted","producer_generic_noncommuting","producer_generic_zero_terms","producer_refused_future_nominal_original_prefix","producer_refused_initial_C_boundary_both","producer_quoted_cycle_refused","producer_false_safety_refused","producer_ragged_matrix_refused","producer_overflow_refused"],
+  "public_nominal_mesh":[[1],[1,3,2,4]],
+  "synthetic_shape":{"nx":4,"nu":3,"N":2},
+  "factors":{"rows":[11,7],"half_square":true,"nonzero_offsets_linear_constants":true,"sample_additions":["first","last"]},
+  "native_bridge":"Actual normalize_public_native call on reconstructed archived carrier; compare normalized cumulative fields before assembly",
+  "comparison_policy":{"abs":2e-12,"rel":2e-12,"source_affine_identity_abs":2e-13,"source_affine_identity_rel":2e-13},
+  "process_controls":["duplicate_keys","yaml_refused","nonfinite_refused"],
+  "negative_output_controls":14,
+  "resource_scope":"Fixed v1 N1/N4 development diagnostic; no N20/.8s/1.5s guarantee",
+  "source_binary_sha256":"f1b7e6c7e4219fec2beb310540c725b448dcf021b3a95ddafc2922e8849bf1d6",
+  "archived_source_sha256":"ce5731c49d4c4815d2e30d8079054310d1f73816d7906c607a1e76a4cf0c0a0c",
+  "source_archive_sha256":"e42af2a0ca5a85047e371660f9fc565cdc0a28ace450235a1f3d6acb13d9de83",
+  "phase5":"NOT_ACCEPTED",
+  "earlier_fd_gate":"FAIL_RETAINED_IMMUTABLE",
+  "all_seven_claims_false":true,
+  "no_build_or_preparation_execution_or_numerical_output":true
+}

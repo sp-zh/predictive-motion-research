@@ -83,7 +83,7 @@ struct Artifact {Document doc;std::string id,binary,archive;};
 struct Selected {const Artifact* artifact=nullptr;YAML::Node row;std::string roster,name;};
 Selected select(const YAML::Node& src,const std::map<std::string,Artifact>& artifacts){
  auto id=str(src["artifact_id"]);auto found=artifacts.find(id);require(found!=artifacts.end(),"artifact id not pinned");auto roster=str(src["roster"]);require(roster=="complete"||roster=="refused","source roster");auto name=str(src["row_name"]);auto rows=found->second.doc.node[roster];require(rows.IsSequence(),"artifact roster");
- std::set<std::string> names;YAML::Node result;for(const auto& row:rows){auto nm=str(row["name"]);require(names.insert(nm).second,"duplicate source row");if(nm==name)result=row;}
+ std::set<std::string> names;YAML::Node result;for(std::size_t j=0;j<rows.size();++j){const YAML::Node row=rows[j];auto nm=str(row["name"]);require(names.insert(nm).second,"duplicate source row");if(nm==name)result=row;}
  require(result.IsMap(),"pinned source row missing");return {&found->second,result,roster,name};
 }
 bool supported(const Selected& s){auto o=s.row["original_output"];return s.roster=="complete"&&boolean(o["value"]["success"])&&boolean(o["value"]["has_final_state"])&&boolean(o["extension_jacobian_success"]);}
@@ -124,9 +124,11 @@ YAML::Node nativeBridge(const Selected& sel,const ah::Problem& json,const ah::Li
  // Reconstruct archived carrier with deliberately DISTINCT local/cumulative
  // fields in multicycle cells. No Model constructor/rollout is available here.
  phase5_public_coupled_augmented_extension::Result r;auto o=sel.row["original_output"],v=o["value"];r.value.success=boolean(v["success"]);r.value.has_final_state=boolean(v["has_final_state"]);r.value.final_state=nativeState(v["final_state"],b);r.extension_jacobian_success=boolean(o["extension_jacobian_success"]);r.first_uncertified_substep=-1;r.value.cell_end_states.reserve(v["cell_end_states"].size());r.value.cycle_end_states.reserve(v["cycle_end_states"].size());r.value.substeps.reserve(v["substeps"].size());r.cycle_maps.reserve(o["cycle_maps"].size());r.substep_maps.reserve(o["substep_maps"].size());r.cell_maps.reserve(json.cells.size());
- for(const auto& z:v["cell_end_states"])r.value.cell_end_states.push_back(nativeState(z,b));for(const auto& z:v["cycle_end_states"])r.value.cycle_end_states.push_back(nativeState(z,b));
+ for(const auto& z:v["cell_end_states"]){r.value.cell_end_states.push_back(nativeState(z,b));}
+ for(const auto& z:v["cycle_end_states"]){r.value.cycle_end_states.push_back(nativeState(z,b));}
  for(const auto& z:v["substeps"]){phase5_public_coupled_augmented::Substep s;s.cell=integer(z["cell"]);s.cycle=integer(z["cycle"]);s.half=integer(z["half"]);s.elapsed_s=number(z["elapsed_s"]);s.s_reference=number(z["s_reference"]);s.r_reference=number(z["r_reference"]);s.q=vector(z["q"],7,b);s.v=vector(z["v"],7,b);s.C=vector(z["C"],7,b);s.w=vector(z["w"],7,b);r.value.substeps.push_back(std::move(s));}
- for(const auto& m:o["cycle_maps"])r.cycle_maps.push_back(nativeMap(m,b));for(const auto& m:o["substep_maps"])r.substep_maps.push_back(nativeMap(m,b));
+ for(const auto& m:o["cycle_maps"]){r.cycle_maps.push_back(nativeMap(m,b));}
+ for(const auto& m:o["substep_maps"]){r.substep_maps.push_back(nativeMap(m,b));}
  std::size_t idx=0;for(std::size_t c=0;c<json.cells.size();++c){idx+=json.cells[c].cycles;auto m=nativeMap(o["cycle_maps"][idx-1],b);auto full=o["cell_maps"][c];
   // Last cycle local fields above stay local. Replace only cumulative fields.
   m.cell_origin=nativeState(full["origin"],b);m.cell_A=matrix(full["A"],30,30,b);m.cell_B=matrix(full["B"],30,8,b);m.cell_defect=vector(full["defect"],30,b);m.state=nativeState(full["state"],b);r.cell_maps.push_back(std::move(m));}
@@ -164,7 +166,10 @@ std::size_t plan(const YAML::Node& c,const std::map<std::string,Artifact>& artif
    inspectM(map["A"],30,30);inspectM(map["B"],30,8);inspectV(map["defect"],30);inspectV(map["input"],8);inspectState(map["origin"]);inspectState(map["state"]);
    if(std::string(group)!="cell_maps"){inspectM(map["cell_A"],30,30);inspectM(map["cell_B"],30,8);inspectV(map["cell_defect"],30);inspectState(map["cell_origin"]);}
   }}
-  for(const auto& z:out["value"]["substeps"])inspectState(z,true);for(const auto& z:out["value"]["cycle_end_states"])inspectState(z);for(const auto& z:out["value"]["cell_end_states"])inspectState(z);inspectState(out["value"]["final_state"]);
+  for(const auto& z:out["value"]["substeps"]){inspectState(z,true);}
+  for(const auto& z:out["value"]["cycle_end_states"]){inspectState(z);}
+  for(const auto& z:out["value"]["cell_end_states"]){inspectState(z);}
+  inspectState(out["value"]["final_state"]);
  }
  auto terms=c["terms"];require(terms.IsSequence()&&terms.size()<=l.max_terms,"planned terms cap");std::size_t rows=0,additions=0;for(const auto& t:terms){require(t["F"].IsSequence()&&t["F"].size()>0&&t["F"].size()<=l.max_factor_rows,"planned factor rows");rows=add(rows,t["F"].size());str(t["name"]);str(t["units"]);inspectM(t["F"],t["F"].size(),dy);inspectV(t["f0"],t["F"].size());inspectV(t["linear"],dy);number(t["constant"]);require(t["sample_additions"].IsSequence()&&t["sample_additions"].size()<=l.max_samples,"planned sample additions");additions=add(additions,t["sample_additions"].size());for(const auto& s:t["sample_additions"]){auto index=integer(s["sample_index"]);require(index<samples,"preflight sample addition index");inspectM(s["coefficient"],t["F"].size(),nx);}}
  // Conservative cumulative arithmetic/storage/serialization upper envelope,

@@ -162,7 +162,8 @@ Evaluation evaluate(const Assembly& a,const CondensedTerm& t,const Vector& U,con
  e.lifted_chain_gradient=product(tt,plus(product(ft,residual,b),t.used_linear,b),b);
  auto ht=transposed(t.H,b);auto hs=zeros(t.H.rows(),t.H.cols(),b);
  // Half first avoids artificial overflow in H+H^T. Stored t.H is untouched.
- for(Eigen::Index i=0;i<hs.rows();++i)for(Eigen::Index j=0;j<hs.cols();++j)hs(i,j)=scalarAdd(.5*t.H(i,j),.5*ht(i,j));finite(hs);
+ for(Eigen::Index i=0;i<hs.rows();++i){for(Eigen::Index j=0;j<hs.cols();++j){hs(i,j)=scalarAdd(.5*t.H(i,j),.5*ht(i,j));}}
+ finite(hs);
  e.condensed_gradient=plus(product(hs,U,b),t.g,b);e.condensed_hessian=std::move(hs);
  e.lifted_chain_hessian=product(product(product(tt,ft,b),t.used_F,b),a.T,b);return e;
 }

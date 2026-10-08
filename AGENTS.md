@@ -1,6 +1,6 @@
-# Project resumed by the user
+# Project paused by the user
 
-The human explicitly instructed on 2026-10-07: “继续任务”, resuming the project after the saved pause. Finish and verify the interrupted checkpoint backup, then continue Phase5 development and independent review. Preserve all pause history, accepted Phase4 evidence and failures. Phase5 remains unaccepted. The rejected seed91013 protocol v1 must not be run; repair the scorer in a separate version, freeze and independently review the protocol, and verify its checkpoint backup before issuing a scoped simulation-run approval. Later phases require the applicable independent gate. PROJECT_PAUSED.json records the current resumed state; historical pause records remain under reviews/evidence/.
+The human explicitly instructed on 2026-10-08: “完成当前最小工作后就保存，上传git，不要继续了”. Finish only the current minimal checkpoint preservation and private Git push/remote verification, then stop all project research, implementation, repairs, builds and experiments. Do not run a nonempty affine kernel/checker, original model/plant, scorer or seed91013 physical run; do not issue a run approval or continue Phase5/later phases until the human explicitly resumes. Prior continuation and dispatch instructions are revoked. Preserve accepted Phase4 evidence and all existing files/failures. Phase5 remains NOT_ACCEPTED; Phase6 is NOT_STARTED. PROJECT_PAUSED.json records this pause; prior resumption and pause history remain under reviews/evidence/.
 
 # Required milestone backups
 

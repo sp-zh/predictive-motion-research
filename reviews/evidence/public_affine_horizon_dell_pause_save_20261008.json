@@ -1,0 +1,12 @@
+{
+  "human_instruction": "完成当前最小工作后就保存，上传git，不要继续了",
+  "scope": "SAVE_CURRENT_MINIMAL_BUILD_EMPTY_PREFLIGHT_FREEZE_AND_PRIVATE_GIT_BACKUP_THEN_STOP",
+  "phase5": "NOT_ACCEPTED",
+  "phase6": "NOT_STARTED",
+  "nonempty_calls": 0,
+  "no_future_run_release": true,
+  "freeze_sha256": "d3d4253c0173aae4ad3072eea37268713bd3710b68cfa05720e79f906bf97429",
+  "binary_sha256": "6d08f9d00ccc939770efc9bd0c704745eba972a80f2511e0441691761eff7b4d",
+  "accepted_phase4_and_all_failures_preserved": true,
+  "private_git_backup": "PENDING_ROOT_IMPORT_PUSH_REMOTE_VERIFICATION"
+}

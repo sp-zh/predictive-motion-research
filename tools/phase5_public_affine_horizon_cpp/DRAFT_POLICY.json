@@ -1,0 +1,6 @@
+{
+  "schema_version": 1,
+  "scope": {"connecting_segment":false,"ball":false,"admissibility":false,"execution":false,"safety":false,"uniform_error_bound":false,"controller_readiness":false},
+  "limits": {"max_cases":32,"max_cells":16,"max_samples":512,"max_nx":64,"max_nu":16,"max_terms":32,"max_factor_rows":256,"max_matrix_elements":2000000,"max_document_bytes":67108864,"max_problem_numeric_elements":8000000,"max_cli_numeric_elements":16000000,"arithmetic_abs":2e-13,"arithmetic_rel":2e-13},
+  "artifacts": [{"id":"archived_f1_v1","path":"/home/codextransfer/clean-audits/root-affine-horizon-20261008/archived_sources.json","sha256":"ce5731c49d4c4815d2e30d8079054310d1f73816d7906c607a1e76a4cf0c0a0c","source_binary_sha256":"f1b7e6c7e4219fec2beb310540c725b448dcf021b3a95ddafc2922e8849bf1d6","certificate_name":"COMMAND_PROGRESS_EXTENSION_JACOBIAN_STRICT_PHYSICAL_V1","archive_sha256":"e42af2a0ca5a85047e371660f9fc565cdc0a28ace450235a1f3d6acb13d9de83"}]
+}

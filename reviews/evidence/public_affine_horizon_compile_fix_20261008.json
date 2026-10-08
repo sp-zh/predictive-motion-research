@@ -1,0 +1,17 @@
+{
+  "scope": "STATIC_COMPATIBILITY_FIX_AFTER_RETAINED_FIRST_BUILD_FAILURE_BEFORE_ANY_BINARY_CALL",
+  "first_configure_exit": 0,
+  "first_build_exit": 2,
+  "producer_preparation_exit": 0,
+  "first_error": "YAML::detail::iterator_value cannot Assign to YAML::Node via template convert",
+  "fix": "Use indexed const YAML::Node row=rows[j]; preserve traversal and aliases. Add braces/separate loops without changing numerical order.",
+  "patches": {
+    "public_affine_horizon.cpp": "bc4ead2f085216c40da6be34b6c3d037b3f90df83757b94464f7f6ed97cef953",
+    "public_affine_horizon_probe.cpp": "7e991b0118c67989826e0c10a703c6114d4f408834ce6bda73a94018f1e6afa4"
+  },
+  "empty_and_nonempty_binary_calls_before_fix": 0,
+  "model_calls": 0,
+  "math_input_policy_gates_changed": false,
+  "static_patch_review": "Exactdiff inspected byroot",
+  "phase5": "NOT_ACCEPTED"
+}

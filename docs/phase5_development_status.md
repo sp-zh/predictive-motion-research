@@ -1,6 +1,6 @@
 # Phase 5 development status
 
-Updated 2026-10-08, America/Toronto. **Phase 5 acceptance is pending.** The human explicitly resumed the project on 2026-10-07 with “继续任务”. The interrupted checkpoint backup is remotely verified; scorer-v2 integrity repair and replacement protocol review are complete in their stated scope. Component acceptance through Phase4 remains intact; Phase5 is unaccepted and later phases have not started. The approved single seed91013 simulation passes its conditional prediction gate; the rejected v1 remains unexecuted.
+Updated 2026-10-08, America/Toronto. **Project paused by the human: “完成当前最小工作后就保存，上传git，不要继续了”.** Accepted through Phase4; Phase5 remains unaccepted and Phase6 has not started. Only the current minimal preservation and verified private Git backup are authorized. No further nonempty kernel/checker, model/plant, research, implementation, build or experiment may start until explicit human resumption.
 
 Independent installed consumers verify the coupled horizon, nonuniform meshes, full objective, nonzero state/nominal coordinates and separated command/model histories. The dimension-amplified PSD certificate bug is repaired and independently regression-tested. Actual-state condensed/lifted matrices match through a closed-form embedding; signed-row compression preserves every original constraint. These mathematical checks are separate from robot results.
 
@@ -174,3 +174,10 @@ verification scripts are prepared as source only. No new build or numerical
 execution has occurred. All static revisions and the temporary SSH transfer
 failure are preserved, with52 source-preparation payloads verified on Mac/Dell.
 See [source implementation checkpoint](../reviews/evidence/public_affine_horizon_source_implementation_review_20261008.json).
+
+
+## Final minimal checkpoint before pause — 2026-10-08
+
+The affine-horizon module retains its first failed build (exit2), receives only the reviewed yaml-cpp iterator compatibility/bracing fix, and completes the second build and first empty-input preflight (exit0). Producer/root inputs are prepared without numerical evaluation. All 2,912 frozen dependencies and the 80,494,096-byte archive are hash verified; both Mac and Dell copies are retained. No nonempty kernel or checker was run, and no controller, motion, safety or Phase5 acceptance follows. Producer checker robustness concerns remain deferred. Historical pending/release fields in immutable evidence are superseded by the human pause.
+
+[Checkpoint identities and verified copies](../reviews/evidence/public_affine_horizon_build_freeze_checkpoint_20261008.json); [pause record](../PROJECT_PAUSED.json). Private Git backs up small sources and these records; the large archive remains on both hosts.

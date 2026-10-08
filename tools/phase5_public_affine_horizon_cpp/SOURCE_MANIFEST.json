@@ -1,0 +1,203 @@
+{
+  "schema_version": 1,
+  "scope": "SOURCE_IMPLEMENTATION_ONLY_NO_BUILD_PREPARATION_EXECUTION_OR_NUMERICAL_OUTPUT",
+  "prerequisite_private_checkpoint": "8eb397f35131071c7e13a5aacaf5fae0e3acccfd",
+  "files": {
+    "CMakeLists.txt": {
+      "sha256": "7f861ece7a8a5b00fffb073ea64681555d283fd1b02314d509116664a844ce62",
+      "bytes": 1200
+    },
+    "DRAFT_FIXTURE_PLAN.json": {
+      "sha256": "891ee7f8d9678408e83a74e8369d74dcd0a1f54c1d4a99b6d2fc3afc2de0940e",
+      "bytes": 1621
+    },
+    "DRAFT_POLICY.json": {
+      "sha256": "91ccecf106299a819af2785638513abe57eace851bad8d9d4eb550beb17485a8",
+      "bytes": 958
+    },
+    "INTERFACE_SCHEMA.md": {
+      "sha256": "a8be304e1a3bc8d5090826f81a4bd5f6a9686621c15cfbc73441cfde7a5859a9",
+      "bytes": 18256
+    },
+    "SOURCE_REVIEW.md": {
+      "sha256": "79b04e39d817b11a746a39ce155d54a483d3464c60c42d31fdabb370e590da3c",
+      "bytes": 7401
+    },
+    "prepare_public_affine_horizon.py": {
+      "sha256": "41caf8a85aadd0f4eb01c38f94fd1bf9a75e05d30e334eeaaf3649afa238683e",
+      "bytes": 7493
+    },
+    "public_affine_horizon.cpp": {
+      "sha256": "b071ba6c260060c2f06630873252c24d8552bb9fcefe6384d8460b175ec394fc",
+      "bytes": 13861
+    },
+    "public_affine_horizon.hpp": {
+      "sha256": "049e7cb3a0b8f46cf3bbba57743384ccf631c31ace3a1ff7cf99bcd645dbb0f4",
+      "bytes": 5637
+    },
+    "public_affine_horizon_internal.hpp": {
+      "sha256": "fde88dfdcfa5648568ad7208491a897180bf9e705b205c9fa13f6b1b5c532433",
+      "bytes": 1128
+    },
+    "public_affine_horizon_native.cpp": {
+      "sha256": "5804cb4dfb0a43f99bb24bb81d07ccc0e1af24c559ec58902b0d47c4b3d3f487",
+      "bytes": 5536
+    },
+    "public_affine_horizon_probe.cpp": {
+      "sha256": "1a4a6f0b3ab8093cd4403b381881630a5967bc79bcc127bba288cf08cfe12e6d",
+      "bytes": 34558
+    },
+    "static-drafts/before-budget-copy-review/public_affine_horizon_probe.cpp": {
+      "sha256": "740a68516a52bbc2cc5981473ec342c727d56e673a0bf425716e9eaa2d8f3711",
+      "bytes": 33785
+    },
+    "static-drafts/before-container-capacity-review/SOURCE_MANIFEST.json": {
+      "sha256": "1a24021eeb9ba44a8c369f01927714e9524d9c9ba251251a715220b545af54df",
+      "bytes": 5904
+    },
+    "static-drafts/before-container-capacity-review/public_affine_horizon.cpp": {
+      "sha256": "46cab072457d8d8f58892269195b2675381cfd0db857b44d1ebbf1f7d5dbd52e",
+      "bytes": 13552
+    },
+    "static-drafts/before-container-capacity-review/public_affine_horizon_native.cpp": {
+      "sha256": "d4dc3ef58848c5c75b8884f86aeab15d813064ad02ea3bc578bf6b5cdb78a7cd",
+      "bytes": 5428
+    },
+    "static-drafts/before-container-capacity-review/public_affine_horizon_probe.cpp": {
+      "sha256": "de49dd4fadc04f5ed04271eca315d4ffcab95b6914dcd33f87835e548b95242b",
+      "bytes": 33989
+    },
+    "static-drafts/before-native-scope-clarification/INTERFACE_SCHEMA.md": {
+      "sha256": "ecbc6fc8b054528ebe4c031c0348c660d80f6596e4ddb0903e5016e38024461a",
+      "bytes": 16278
+    },
+    "static-drafts/before-native-scope-clarification/SOURCE_MANIFEST.json": {
+      "sha256": "a93d1bc1aa1d2719aaac5b837ee8efdf2d4aa202161a85d76588ffe4e8e9808b",
+      "bytes": 6686
+    },
+    "static-drafts/before-native-scope-clarification/SOURCE_REVIEW.md": {
+      "sha256": "d8606fd174ddb2d58916a8ca0a75e3a9e13f06eac2015f9a4b68c690e886602b",
+      "bytes": 5826
+    },
+    "static-drafts/before-per-array-guarantee-clarification/INTERFACE_SCHEMA.md": {
+      "sha256": "fa3c7e31107f240cb4ef0366eaa8b718bd4860ea172de57f333753859358d6c9",
+      "bytes": 17559
+    },
+    "static-drafts/before-per-array-guarantee-clarification/SOURCE_MANIFEST.json": {
+      "sha256": "5fe91d6baaf91304bf84bc3504f6e78e4ff8aa0a36aeec787d2c5ecd170ee8b2",
+      "bytes": 8378
+    },
+    "static-drafts/before-per-array-guarantee-clarification/SOURCE_REVIEW.md": {
+      "sha256": "86ac3a0b717d195d3a8c12e4a4d6a04fb36cdefea304378ffabb6d0a9d833d9d",
+      "bytes": 6840
+    },
+    "static-drafts/before-planned-budget-binding/INTERFACE_SCHEMA.md": {
+      "sha256": "94376857dbbf8a5e3c5c18cbf597e112a56cf9022182612f2b34430c2e144366",
+      "bytes": 16926
+    },
+    "static-drafts/before-planned-budget-binding/SOURCE_MANIFEST.json": {
+      "sha256": "b26e502b73a29789ad2900c39b30c3813358ced0967571ea26e3f96481549226",
+      "bytes": 7249
+    },
+    "static-drafts/before-planned-budget-binding/SOURCE_REVIEW.md": {
+      "sha256": "c02f6f4f411fec8f7921e532c759e4887e795f0c2c5f0a81aff41499d313ca0f",
+      "bytes": 6303
+    },
+    "static-drafts/before-planned-budget-binding/public_affine_horizon.cpp": {
+      "sha256": "169f8e6f25d54810d7bd972f616fba364a80bdd45fc0ee54bd52e44453d6699c",
+      "bytes": 13650
+    },
+    "static-drafts/before-planned-budget-binding/public_affine_horizon.hpp": {
+      "sha256": "8a2a3d775d9c45afc1fbd9d55dbb20a7425cdea3fccf483e2cf7880360ab12b4",
+      "bytes": 5402
+    },
+    "static-drafts/before-planned-budget-binding/public_affine_horizon_probe.cpp": {
+      "sha256": "ab0f9acdaf1a22bd2801bb69c8548aa9f5ef86e17fac8e5c6a9dbfbf7048ffe2",
+      "bytes": 34547
+    },
+    "static-drafts/before-policy-integer-review/SOURCE_MANIFEST.json": {
+      "sha256": "013f6ff0c7e37aa2fab09e1312ef92ab1d01df237af8e9eea02b3dde9b0ff32f",
+      "bytes": 5524
+    },
+    "static-drafts/before-policy-integer-review/public_affine_horizon_probe.cpp": {
+      "sha256": "e4aff0b8b916a51e54d0c66c7fcad4581e7e8457496993ee5cac0ec0c5688a7b",
+      "bytes": 33813
+    },
+    "static-drafts/before-source-self-review/CMakeLists.txt": {
+      "sha256": "7f861ece7a8a5b00fffb073ea64681555d283fd1b02314d509116664a844ce62",
+      "bytes": 1200
+    },
+    "static-drafts/before-source-self-review/INTERFACE_SCHEMA.md": {
+      "sha256": "33204e9b73a4524d92568f71c159312a548632bdd547a9fa80967981e020b4ed",
+      "bytes": 14109
+    },
+    "static-drafts/before-source-self-review/public_affine_horizon.cpp": {
+      "sha256": "46cab072457d8d8f58892269195b2675381cfd0db857b44d1ebbf1f7d5dbd52e",
+      "bytes": 13552
+    },
+    "static-drafts/before-source-self-review/public_affine_horizon.hpp": {
+      "sha256": "8a2a3d775d9c45afc1fbd9d55dbb20a7425cdea3fccf483e2cf7880360ab12b4",
+      "bytes": 5402
+    },
+    "static-drafts/before-source-self-review/public_affine_horizon_internal.hpp": {
+      "sha256": "bc481315b2628f80fd221aa0ce0c28e9a914c49094854cea43e76365dda3376f",
+      "bytes": 1109
+    },
+    "static-drafts/before-source-self-review/public_affine_horizon_native.cpp": {
+      "sha256": "fbdf6aa76846626c7ac1636cfc0df11703afdf5131ca504550b0740bdbf2e516",
+      "bytes": 5506
+    },
+    "static-drafts/before-source-self-review/public_affine_horizon_probe.cpp": {
+      "sha256": "1100c50858a9b63c69f2b1ae3e1f4bcfaf67d0c88c2bf6e4398d0d25559bdb41",
+      "bytes": 30153
+    },
+    "static-drafts/before-whole-shape-review/CMakeLists.txt": {
+      "sha256": "7f861ece7a8a5b00fffb073ea64681555d283fd1b02314d509116664a844ce62",
+      "bytes": 1200
+    },
+    "static-drafts/before-whole-shape-review/DRAFT_POLICY.json": {
+      "sha256": "91ccecf106299a819af2785638513abe57eace851bad8d9d4eb550beb17485a8",
+      "bytes": 958
+    },
+    "static-drafts/before-whole-shape-review/INTERFACE_SCHEMA.md": {
+      "sha256": "ecbc6fc8b054528ebe4c031c0348c660d80f6596e4ddb0903e5016e38024461a",
+      "bytes": 16278
+    },
+    "static-drafts/before-whole-shape-review/prepare_public_affine_horizon.py": {
+      "sha256": "41caf8a85aadd0f4eb01c38f94fd1bf9a75e05d30e334eeaaf3649afa238683e",
+      "bytes": 7493
+    },
+    "static-drafts/before-whole-shape-review/public_affine_horizon.cpp": {
+      "sha256": "46cab072457d8d8f58892269195b2675381cfd0db857b44d1ebbf1f7d5dbd52e",
+      "bytes": 13552
+    },
+    "static-drafts/before-whole-shape-review/public_affine_horizon.hpp": {
+      "sha256": "8a2a3d775d9c45afc1fbd9d55dbb20a7425cdea3fccf483e2cf7880360ab12b4",
+      "bytes": 5402
+    },
+    "static-drafts/before-whole-shape-review/public_affine_horizon_internal.hpp": {
+      "sha256": "fde88dfdcfa5648568ad7208491a897180bf9e705b205c9fa13f6b1b5c532433",
+      "bytes": 1128
+    },
+    "static-drafts/before-whole-shape-review/public_affine_horizon_native.cpp": {
+      "sha256": "d4dc3ef58848c5c75b8884f86aeab15d813064ad02ea3bc578bf6b5cdb78a7cd",
+      "bytes": 5428
+    },
+    "static-drafts/before-whole-shape-review/public_affine_horizon_probe.cpp": {
+      "sha256": "4014b26d0958ae9f85a3f39789a82c398cd2a24da42b3be80585d3d860ef31d9",
+      "bytes": 31399
+    },
+    "static-drafts/before-whole-shape-review/verify_public_affine_horizon.py": {
+      "sha256": "5f44d189f1faf622ef3ffe84ae7c8b249d8661d1eb504c1d7ebc4eca605f51f6",
+      "bytes": 13319
+    },
+    "verify_public_affine_horizon.py": {
+      "sha256": "8694688fc94eaacbdab72b64658b3c8f46ed51e90329cfbd38a8536c1f03baa6",
+      "bytes": 14098
+    }
+  },
+  "phase5": "NOT_ACCEPTED",
+  "earlier_fd_gate": "FAIL_RETAINED_IMMUTABLE",
+  "root_owned_files_modified": false,
+  "remote_backup": "PENDING_ROOT_STATIC_REVIEW_AND_CHECKPOINT"
+}

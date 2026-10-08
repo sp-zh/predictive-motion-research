@@ -1,0 +1,120 @@
+{
+  "scope": "REVIEWED_COMPATIBILITY_FIX_FIRST_EMPTY_ONLY",
+  "preserved_failed_build": "/home/codextransfer/predictive_motion/build-public-affine-horizon-cpp-v1",
+  "source_files": {
+    "SOURCE_REVIEW.md": {
+      "sha256": "79b04e39d817b11a746a39ce155d54a483d3464c60c42d31fdabb370e590da3c",
+      "bytes": 7401
+    },
+    "public_affine_horizon_probe.cpp": {
+      "sha256": "7e991b0118c67989826e0c10a703c6114d4f408834ce6bda73a94018f1e6afa4",
+      "bytes": 34627
+    },
+    "public_affine_horizon.hpp": {
+      "sha256": "049e7cb3a0b8f46cf3bbba57743384ccf631c31ace3a1ff7cf99bcd645dbb0f4",
+      "bytes": 5637
+    },
+    "public_affine_horizon.cpp": {
+      "sha256": "bc4ead2f085216c40da6be34b6c3d037b3f90df83757b94464f7f6ed97cef953",
+      "bytes": 13867
+    },
+    "stage_public_affine_horizon_build2.py": {
+      "sha256": "1c26cc397206136917536d74d5da464b6851e98b4c19593c80dbc714768a73bf",
+      "bytes": 2640
+    },
+    "CMakeLists.txt": {
+      "sha256": "7f861ece7a8a5b00fffb073ea64681555d283fd1b02314d509116664a844ce62",
+      "bytes": 1200
+    },
+    "DRAFT_POLICY.json": {
+      "sha256": "91ccecf106299a819af2785638513abe57eace851bad8d9d4eb550beb17485a8",
+      "bytes": 958
+    },
+    "INTERFACE_SCHEMA.md": {
+      "sha256": "a8be304e1a3bc8d5090826f81a4bd5f6a9686621c15cfbc73441cfde7a5859a9",
+      "bytes": 18256
+    },
+    "verify_public_affine_horizon.py": {
+      "sha256": "8694688fc94eaacbdab72b64658b3c8f46ed51e90329cfbd38a8536c1f03baa6",
+      "bytes": 14098
+    },
+    "public_affine_horizon_native.cpp": {
+      "sha256": "5804cb4dfb0a43f99bb24bb81d07ccc0e1af24c559ec58902b0d47c4b3d3f487",
+      "bytes": 5536
+    },
+    "draft4_transfer_record.json": {
+      "sha256": "f06a4ba29414fe524d78553b9bfd832b426836de67abe856768f91f90a2e829d",
+      "bytes": 873
+    },
+    "prepare_public_affine_horizon.py": {
+      "sha256": "41caf8a85aadd0f4eb01c38f94fd1bf9a75e05d30e334eeaaf3649afa238683e",
+      "bytes": 7493
+    },
+    "stage_public_affine_horizon_first_build.py": {
+      "sha256": "98ed3f7c35de30bffd3c745e41f5882d05472d5d472d360d69bc8321499b1f2a",
+      "bytes": 3405
+    },
+    "public_affine_horizon_internal.hpp": {
+      "sha256": "fde88dfdcfa5648568ad7208491a897180bf9e705b205c9fa13f6b1b5c532433",
+      "bytes": 1128
+    },
+    "DRAFT_FIXTURE_PLAN.json": {
+      "sha256": "891ee7f8d9678408e83a74e8369d74dcd0a1f54c1d4a99b6d2fc3afc2de0940e",
+      "bytes": 1621
+    },
+    "SOURCE_MANIFEST.json": {
+      "sha256": "af52d0c908266f6b9462047309b2c73fb91b40a24a9461ded9475afaf307ec2c",
+      "bytes": 8962
+    }
+  },
+  "commands": [
+    {
+      "label": "configure_attempt2",
+      "argv": [
+        "cmake",
+        "-S",
+        "/home/codextransfer/predictive_motion/tools/phase5_public_affine_horizon_cpp",
+        "-B",
+        "/home/codextransfer/predictive_motion/build-public-affine-horizon-cpp-v1-attempt2",
+        "-DCMAKE_BUILD_TYPE=Release",
+        "-DCMAKE_EXPORT_COMPILE_COMMANDS=ON"
+      ],
+      "exit": 0
+    },
+    {
+      "label": "build_attempt2",
+      "argv": [
+        "cmake",
+        "--build",
+        "/home/codextransfer/predictive_motion/build-public-affine-horizon-cpp-v1-attempt2",
+        "-j",
+        "2"
+      ],
+      "exit": 0
+    },
+    {
+      "label": "binary_runtime_dependencies",
+      "argv": [
+        "ldd",
+        "/home/codextransfer/predictive_motion/build-public-affine-horizon-cpp-v1-attempt2/public_affine_horizon_probe"
+      ],
+      "exit": 0
+    },
+    {
+      "label": "empty_attempt1",
+      "argv": [
+        "/home/codextransfer/predictive_motion/build-public-affine-horizon-cpp-v1-attempt2/public_affine_horizon_probe",
+        "--policy",
+        "/home/codextransfer/predictive_motion/results/phase5/development/public-affine-horizon-cpp-v1/prepared-inputs/policy.json",
+        "/home/codextransfer/predictive_motion/results/phase5/development/public-affine-horizon-cpp-v1/prepared-inputs/empty.json",
+        "/home/codextransfer/predictive_motion/results/phase5/development/public-affine-horizon-cpp-v1/empty_attempt1.json"
+      ],
+      "exit": 0
+    }
+  ],
+  "nonempty_calls": 0,
+  "root_review_approved": true,
+  "binary_sha256": "6d08f9d00ccc939770efc9bd0c704745eba972a80f2511e0441691761eff7b4d",
+  "phase5": "NOT_ACCEPTED",
+  "full_freeze": "PENDING"
+}

@@ -1,0 +1,23 @@
+{
+  "scope": "SOURCE_TRANSFER_ONLY_NO_NUMERICAL_EXECUTION",
+  "attempt1": {
+    "mkdir_exit": 255,
+    "error": "ssh 169.254.118.3:2222 temporary operation timed out",
+    "recursive_copy_exit": 1,
+    "error2": "draft4 directory absent after mkdir timeout",
+    "active_top_level_copy_exit": 0,
+    "verify_exit": 1,
+    "error3": "draft4 manifest absent"
+  },
+  "attempt2": {
+    "mkdir_exit": 0,
+    "recursive_copy_exit": 0,
+    "verified_payloads": 32,
+    "manifest_sha256": "1a24021eeb9ba44a8c369f01927714e9524d9c9ba251251a715220b545af54df",
+    "active_new_module_matches": true
+  },
+  "mac_source_path": "/private/tmp/phase5_affine_horizon_draft4",
+  "dell_source_path": "/home/codextransfer/predictive_motion/tools/phase5_public_affine_horizon_cpp/draft4",
+  "preserve_failed_transfer_attempt": true,
+  "remote_git_backup": "PENDING_ROOT_REVIEW_AND_CHECKPOINT"
+}
