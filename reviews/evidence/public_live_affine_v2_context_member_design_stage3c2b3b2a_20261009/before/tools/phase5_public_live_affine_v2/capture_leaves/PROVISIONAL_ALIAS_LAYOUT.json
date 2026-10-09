@@ -1,0 +1,571 @@
+{
+  "schema": "PUBLIC_LIVE_AFFINE_V2_PROVISIONAL_MANIFEST_COLUMNS_2",
+  "validation": "Static mapping of exact B3A code fields to actual private row properties only; no emitter/writer/parser or fixture execution",
+  "attempt_columns": [
+    "original_sequence",
+    "role",
+    "primary",
+    "secondary",
+    "generation",
+    "computed_state",
+    "storage_traversal",
+    "assignment_traversal",
+    "source_matches",
+    "cost_matches",
+    "partition_matches",
+    "original_scope",
+    "canonical_scope",
+    "sample_scope",
+    "cell",
+    "tick",
+    "cycle",
+    "half",
+    "dimensions",
+    "kind",
+    "classification",
+    "encoding",
+    "root",
+    "name",
+    "role_label",
+    "sha256",
+    "count",
+    "bytes",
+    "device",
+    "inode",
+    "directory_device",
+    "directory_inode",
+    "closed_fsynced",
+    "writer_observation",
+    "comparison_attempted",
+    "expected_valid",
+    "mismatch",
+    "comparison_index",
+    "expected_kind",
+    "actual_kind",
+    "expected_bits",
+    "actual_bits",
+    "readback"
+  ],
+  "projected_fields": {
+    "attempt.actual_bits": {
+      "source_expression": "row[41]; restore original U64/IEEE/Missing kind using scalar-kind column38/39 plus expected_valid35/comparison_attempted34",
+      "allowed_original_metadata_kind_mask": 82,
+      "index": "key-sorted attempt row index",
+      "subindex": "dimension coordinate only for attempt.dimension; otherwise0"
+    },
+    "attempt.actual_kind": {
+      "source_expression": "row[39]",
+      "allowed_original_metadata_kind_mask": 4,
+      "index": "key-sorted attempt row index",
+      "subindex": "dimension coordinate only for attempt.dimension; otherwise0"
+    },
+    "attempt.assignment_traversal": {
+      "source_expression": "row[7]",
+      "allowed_original_metadata_kind_mask": 1,
+      "index": "key-sorted attempt row index",
+      "subindex": "dimension coordinate only for attempt.dimension; otherwise0"
+    },
+    "attempt.bytes": {
+      "source_expression": "row[27]",
+      "allowed_original_metadata_kind_mask": 2,
+      "index": "key-sorted attempt row index",
+      "subindex": "dimension coordinate only for attempt.dimension; otherwise0"
+    },
+    "attempt.canonical_scope": {
+      "source_expression": "row[12]",
+      "allowed_original_metadata_kind_mask": 8,
+      "index": "key-sorted attempt row index",
+      "subindex": "dimension coordinate only for attempt.dimension; otherwise0"
+    },
+    "attempt.cell": {
+      "source_expression": "row[14]",
+      "allowed_original_metadata_kind_mask": 2,
+      "index": "key-sorted attempt row index",
+      "subindex": "dimension coordinate only for attempt.dimension; otherwise0"
+    },
+    "attempt.classification": {
+      "source_expression": "row[20]",
+      "allowed_original_metadata_kind_mask": 4,
+      "index": "key-sorted attempt row index",
+      "subindex": "dimension coordinate only for attempt.dimension; otherwise0"
+    },
+    "attempt.closed_fsynced": {
+      "source_expression": "row[32]",
+      "allowed_original_metadata_kind_mask": 8,
+      "index": "key-sorted attempt row index",
+      "subindex": "dimension coordinate only for attempt.dimension; otherwise0"
+    },
+    "attempt.comparison_attempted": {
+      "source_expression": "row[34]",
+      "allowed_original_metadata_kind_mask": 8,
+      "index": "key-sorted attempt row index",
+      "subindex": "dimension coordinate only for attempt.dimension; otherwise0"
+    },
+    "attempt.comparison_index": {
+      "source_expression": "row[37]",
+      "allowed_original_metadata_kind_mask": 2,
+      "index": "key-sorted attempt row index",
+      "subindex": "dimension coordinate only for attempt.dimension; otherwise0"
+    },
+    "attempt.computed_state": {
+      "source_expression": "row[5]",
+      "allowed_original_metadata_kind_mask": 4,
+      "index": "key-sorted attempt row index",
+      "subindex": "dimension coordinate only for attempt.dimension; otherwise0"
+    },
+    "attempt.cost_matches": {
+      "source_expression": "row[9]",
+      "allowed_original_metadata_kind_mask": 8,
+      "index": "key-sorted attempt row index",
+      "subindex": "dimension coordinate only for attempt.dimension; otherwise0"
+    },
+    "attempt.count": {
+      "source_expression": "row[26]",
+      "allowed_original_metadata_kind_mask": 2,
+      "index": "key-sorted attempt row index",
+      "subindex": "dimension coordinate only for attempt.dimension; otherwise0"
+    },
+    "attempt.cycle": {
+      "source_expression": "row[16]",
+      "allowed_original_metadata_kind_mask": 2,
+      "index": "key-sorted attempt row index",
+      "subindex": "dimension coordinate only for attempt.dimension; otherwise0"
+    },
+    "attempt.device": {
+      "source_expression": "row[28]",
+      "allowed_original_metadata_kind_mask": 2,
+      "index": "key-sorted attempt row index",
+      "subindex": "dimension coordinate only for attempt.dimension; otherwise0"
+    },
+    "attempt.dimension": {
+      "source_expression": "row[18][subindex]",
+      "allowed_original_metadata_kind_mask": 2,
+      "index": "key-sorted attempt row index",
+      "subindex": "dimension coordinate only for attempt.dimension; otherwise0"
+    },
+    "attempt.directory_device": {
+      "source_expression": "row[30]",
+      "allowed_original_metadata_kind_mask": 2,
+      "index": "key-sorted attempt row index",
+      "subindex": "dimension coordinate only for attempt.dimension; otherwise0"
+    },
+    "attempt.directory_inode": {
+      "source_expression": "row[31]",
+      "allowed_original_metadata_kind_mask": 2,
+      "index": "key-sorted attempt row index",
+      "subindex": "dimension coordinate only for attempt.dimension; otherwise0"
+    },
+    "attempt.encoding": {
+      "source_expression": "row[21]",
+      "allowed_original_metadata_kind_mask": 4,
+      "index": "key-sorted attempt row index",
+      "subindex": "dimension coordinate only for attempt.dimension; otherwise0"
+    },
+    "attempt.expected_bits": {
+      "source_expression": "row[40]; restore original U64/IEEE/Missing kind using scalar-kind column38/39 plus expected_valid35/comparison_attempted34",
+      "allowed_original_metadata_kind_mask": 82,
+      "index": "key-sorted attempt row index",
+      "subindex": "dimension coordinate only for attempt.dimension; otherwise0"
+    },
+    "attempt.expected_kind": {
+      "source_expression": "row[38]",
+      "allowed_original_metadata_kind_mask": 4,
+      "index": "key-sorted attempt row index",
+      "subindex": "dimension coordinate only for attempt.dimension; otherwise0"
+    },
+    "attempt.expected_valid": {
+      "source_expression": "row[35]",
+      "allowed_original_metadata_kind_mask": 8,
+      "index": "key-sorted attempt row index",
+      "subindex": "dimension coordinate only for attempt.dimension; otherwise0"
+    },
+    "attempt.generation": {
+      "source_expression": "row[4]",
+      "allowed_original_metadata_kind_mask": 2,
+      "index": "key-sorted attempt row index",
+      "subindex": "dimension coordinate only for attempt.dimension; otherwise0"
+    },
+    "attempt.half": {
+      "source_expression": "row[17]",
+      "allowed_original_metadata_kind_mask": 2,
+      "index": "key-sorted attempt row index",
+      "subindex": "dimension coordinate only for attempt.dimension; otherwise0"
+    },
+    "attempt.inode": {
+      "source_expression": "row[29]",
+      "allowed_original_metadata_kind_mask": 2,
+      "index": "key-sorted attempt row index",
+      "subindex": "dimension coordinate only for attempt.dimension; otherwise0"
+    },
+    "attempt.kind": {
+      "source_expression": "row[19]",
+      "allowed_original_metadata_kind_mask": 4,
+      "index": "key-sorted attempt row index",
+      "subindex": "dimension coordinate only for attempt.dimension; otherwise0"
+    },
+    "attempt.mismatch": {
+      "source_expression": "row[36]",
+      "allowed_original_metadata_kind_mask": 8,
+      "index": "key-sorted attempt row index",
+      "subindex": "dimension coordinate only for attempt.dimension; otherwise0"
+    },
+    "attempt.name": {
+      "source_expression": "row[23]",
+      "allowed_original_metadata_kind_mask": 1,
+      "index": "key-sorted attempt row index",
+      "subindex": "dimension coordinate only for attempt.dimension; otherwise0"
+    },
+    "attempt.original_scope": {
+      "source_expression": "row[11]",
+      "allowed_original_metadata_kind_mask": 8,
+      "index": "key-sorted attempt row index",
+      "subindex": "dimension coordinate only for attempt.dimension; otherwise0"
+    },
+    "attempt.original_sequence": {
+      "source_expression": "row[0]",
+      "allowed_original_metadata_kind_mask": 2,
+      "index": "key-sorted attempt row index",
+      "subindex": "dimension coordinate only for attempt.dimension; otherwise0"
+    },
+    "attempt.partition_matches": {
+      "source_expression": "row[10]",
+      "allowed_original_metadata_kind_mask": 8,
+      "index": "key-sorted attempt row index",
+      "subindex": "dimension coordinate only for attempt.dimension; otherwise0"
+    },
+    "attempt.primary": {
+      "source_expression": "row[2]",
+      "allowed_original_metadata_kind_mask": 2,
+      "index": "key-sorted attempt row index",
+      "subindex": "dimension coordinate only for attempt.dimension; otherwise0"
+    },
+    "attempt.rank": {
+      "source_expression": "length(row[18])",
+      "allowed_original_metadata_kind_mask": 2,
+      "index": "key-sorted attempt row index",
+      "subindex": "dimension coordinate only for attempt.dimension; otherwise0"
+    },
+    "attempt.role": {
+      "source_expression": "row[1]",
+      "allowed_original_metadata_kind_mask": 2,
+      "index": "key-sorted attempt row index",
+      "subindex": "dimension coordinate only for attempt.dimension; otherwise0"
+    },
+    "attempt.role_label": {
+      "source_expression": "row[24]",
+      "allowed_original_metadata_kind_mask": 1,
+      "index": "key-sorted attempt row index",
+      "subindex": "dimension coordinate only for attempt.dimension; otherwise0"
+    },
+    "attempt.root": {
+      "source_expression": "row[22]",
+      "allowed_original_metadata_kind_mask": 1,
+      "index": "key-sorted attempt row index",
+      "subindex": "dimension coordinate only for attempt.dimension; otherwise0"
+    },
+    "attempt.sample_scope": {
+      "source_expression": "row[13]",
+      "allowed_original_metadata_kind_mask": 8,
+      "index": "key-sorted attempt row index",
+      "subindex": "dimension coordinate only for attempt.dimension; otherwise0"
+    },
+    "attempt.secondary": {
+      "source_expression": "row[3]",
+      "allowed_original_metadata_kind_mask": 2,
+      "index": "key-sorted attempt row index",
+      "subindex": "dimension coordinate only for attempt.dimension; otherwise0"
+    },
+    "attempt.sha256": {
+      "source_expression": "row[25]",
+      "allowed_original_metadata_kind_mask": 1,
+      "index": "key-sorted attempt row index",
+      "subindex": "dimension coordinate only for attempt.dimension; otherwise0"
+    },
+    "attempt.source_matches": {
+      "source_expression": "row[8]",
+      "allowed_original_metadata_kind_mask": 8,
+      "index": "key-sorted attempt row index",
+      "subindex": "dimension coordinate only for attempt.dimension; otherwise0"
+    },
+    "attempt.storage_traversal": {
+      "source_expression": "row[6]",
+      "allowed_original_metadata_kind_mask": 1,
+      "index": "key-sorted attempt row index",
+      "subindex": "dimension coordinate only for attempt.dimension; otherwise0"
+    },
+    "attempt.tick": {
+      "source_expression": "row[15]",
+      "allowed_original_metadata_kind_mask": 2,
+      "index": "key-sorted attempt row index",
+      "subindex": "dimension coordinate only for attempt.dimension; otherwise0"
+    },
+    "attempt_read.consumed_bytes": {
+      "source_expression": "expand_IO(row[42][2])[4] ONLY_IF_READ_OUTCOME_PRESENT",
+      "allowed_original_metadata_kind_mask": 2,
+      "index": "key-sorted attempt row index",
+      "subindex": "dimension coordinate only for attempt.dimension; otherwise0"
+    },
+    "attempt_read.exact_readback": {
+      "source_expression": "row[42][0] ONLY_IF_READ_OUTCOME_PRESENT",
+      "allowed_original_metadata_kind_mask": 8,
+      "index": "key-sorted attempt row index",
+      "subindex": "dimension coordinate only for attempt.dimension; otherwise0"
+    },
+    "attempt_read.first_error": {
+      "source_expression": "expand_IO(row[42][2])[10] ONLY_IF_READ_OUTCOME_PRESENT",
+      "allowed_original_metadata_kind_mask": 1,
+      "index": "key-sorted attempt row index",
+      "subindex": "dimension coordinate only for attempt.dimension; otherwise0"
+    },
+    "attempt_read.outcome": {
+      "source_expression": "Missing(NO_INDEPENDENT_READBACK_OUTCOME) ONLY_IF_READ_OUTCOME_ABSENT",
+      "allowed_original_metadata_kind_mask": 64,
+      "index": "key-sorted attempt row index",
+      "subindex": "dimension coordinate only for attempt.dimension; otherwise0"
+    },
+    "attempt_read.refused": {
+      "source_expression": "expand_IO(row[42][2])[9] ONLY_IF_READ_OUTCOME_PRESENT",
+      "allowed_original_metadata_kind_mask": 8,
+      "index": "key-sorted attempt row index",
+      "subindex": "dimension coordinate only for attempt.dimension; otherwise0"
+    },
+    "attempt_read.sha256": {
+      "source_expression": "row[42][1] ONLY_IF_READ_OUTCOME_PRESENT",
+      "allowed_original_metadata_kind_mask": 1,
+      "index": "key-sorted attempt row index",
+      "subindex": "dimension coordinate only for attempt.dimension; otherwise0"
+    },
+    "attempt_read.stage": {
+      "source_expression": "expand_IO(row[42][2])[0] ONLY_IF_READ_OUTCOME_PRESENT",
+      "allowed_original_metadata_kind_mask": 1,
+      "index": "key-sorted attempt row index",
+      "subindex": "dimension coordinate only for attempt.dimension; otherwise0"
+    },
+    "attempt_read_frontier.attempted_index": {
+      "source_expression": "expand_IO(row[42][2])[1] ONLY_IF_READ_OUTCOME_PRESENT",
+      "allowed_original_metadata_kind_mask": 2,
+      "index": "key-sorted attempt row index",
+      "subindex": "dimension coordinate only for attempt.dimension; otherwise0"
+    },
+    "attempt_read_frontier.consumed_bytes": {
+      "source_expression": "expand_IO(row[42][2])[4] ONLY_IF_READ_OUTCOME_PRESENT",
+      "allowed_original_metadata_kind_mask": 2,
+      "index": "key-sorted attempt row index",
+      "subindex": "dimension coordinate only for attempt.dimension; otherwise0"
+    },
+    "attempt_read_frontier.encoded_or_decoded": {
+      "source_expression": "expand_IO(row[42][2])[2] ONLY_IF_READ_OUTCOME_PRESENT",
+      "allowed_original_metadata_kind_mask": 2,
+      "index": "key-sorted attempt row index",
+      "subindex": "dimension coordinate only for attempt.dimension; otherwise0"
+    },
+    "attempt_read_frontier.first_error": {
+      "source_expression": "expand_IO(row[42][2])[10] ONLY_IF_READ_OUTCOME_PRESENT",
+      "allowed_original_metadata_kind_mask": 1,
+      "index": "key-sorted attempt row index",
+      "subindex": "dimension coordinate only for attempt.dimension; otherwise0"
+    },
+    "attempt_read_frontier.hash_valid": {
+      "source_expression": "expand_IO(row[42][2])[8] ONLY_IF_READ_OUTCOME_PRESENT",
+      "allowed_original_metadata_kind_mask": 8,
+      "index": "key-sorted attempt row index",
+      "subindex": "dimension coordinate only for attempt.dimension; otherwise0"
+    },
+    "attempt_read_frontier.last_bits_valid": {
+      "source_expression": "expand_IO(row[42][2])[7] ONLY_IF_READ_OUTCOME_PRESENT",
+      "allowed_original_metadata_kind_mask": 8,
+      "index": "key-sorted attempt row index",
+      "subindex": "dimension coordinate only for attempt.dimension; otherwise0"
+    },
+    "attempt_read_frontier.last_scalar_bits": {
+      "source_expression": "expand_IO(row[42][2])[6] ONLY_IF_READ_OUTCOME_PRESENT; original U64 event emitted ONLY_IF last_bits_valid",
+      "allowed_original_metadata_kind_mask": 2,
+      "index": "key-sorted attempt row index",
+      "subindex": "dimension coordinate only for attempt.dimension; otherwise0"
+    },
+    "attempt_read_frontier.pending_bytes": {
+      "source_expression": "expand_IO(row[42][2])[5] ONLY_IF_READ_OUTCOME_PRESENT",
+      "allowed_original_metadata_kind_mask": 2,
+      "index": "key-sorted attempt row index",
+      "subindex": "dimension coordinate only for attempt.dimension; otherwise0"
+    },
+    "attempt_read_frontier.physical_bytes": {
+      "source_expression": "expand_IO(row[42][2])[3] ONLY_IF_READ_OUTCOME_PRESENT",
+      "allowed_original_metadata_kind_mask": 2,
+      "index": "key-sorted attempt row index",
+      "subindex": "dimension coordinate only for attempt.dimension; otherwise0"
+    },
+    "attempt_read_frontier.physical_prefix_sha256": {
+      "source_expression": "expand_IO(row[42][2])[11] ONLY_IF_READ_OUTCOME_PRESENT",
+      "allowed_original_metadata_kind_mask": 1,
+      "index": "key-sorted attempt row index",
+      "subindex": "dimension coordinate only for attempt.dimension; otherwise0"
+    },
+    "attempt_read_frontier.refused": {
+      "source_expression": "expand_IO(row[42][2])[9] ONLY_IF_READ_OUTCOME_PRESENT",
+      "allowed_original_metadata_kind_mask": 8,
+      "index": "key-sorted attempt row index",
+      "subindex": "dimension coordinate only for attempt.dimension; otherwise0"
+    },
+    "attempt_read_frontier.stage": {
+      "source_expression": "expand_IO(row[42][2])[0] ONLY_IF_READ_OUTCOME_PRESENT",
+      "allowed_original_metadata_kind_mask": 1,
+      "index": "key-sorted attempt row index",
+      "subindex": "dimension coordinate only for attempt.dimension; otherwise0"
+    },
+    "attempt_write.encoded": {
+      "source_expression": "expand_IO(row[33])[2]",
+      "allowed_original_metadata_kind_mask": 2,
+      "index": "key-sorted attempt row index",
+      "subindex": "dimension coordinate only for attempt.dimension; otherwise0"
+    },
+    "attempt_write.first_error": {
+      "source_expression": "expand_IO(row[33])[10]",
+      "allowed_original_metadata_kind_mask": 1,
+      "index": "key-sorted attempt row index",
+      "subindex": "dimension coordinate only for attempt.dimension; otherwise0"
+    },
+    "attempt_write.physical_bytes": {
+      "source_expression": "expand_IO(row[33])[3]",
+      "allowed_original_metadata_kind_mask": 2,
+      "index": "key-sorted attempt row index",
+      "subindex": "dimension coordinate only for attempt.dimension; otherwise0"
+    },
+    "attempt_write.prefix_sha256": {
+      "source_expression": "expand_IO(row[33])[11]",
+      "allowed_original_metadata_kind_mask": 1,
+      "index": "key-sorted attempt row index",
+      "subindex": "dimension coordinate only for attempt.dimension; otherwise0"
+    },
+    "attempt_write.refused": {
+      "source_expression": "expand_IO(row[33])[9]",
+      "allowed_original_metadata_kind_mask": 8,
+      "index": "key-sorted attempt row index",
+      "subindex": "dimension coordinate only for attempt.dimension; otherwise0"
+    },
+    "attempt_write.stage": {
+      "source_expression": "expand_IO(row[33])[0]",
+      "allowed_original_metadata_kind_mask": 1,
+      "index": "key-sorted attempt row index",
+      "subindex": "dimension coordinate only for attempt.dimension; otherwise0"
+    },
+    "attempt_write_frontier.attempted_index": {
+      "source_expression": "expand_IO(row[33])[1]",
+      "allowed_original_metadata_kind_mask": 2,
+      "index": "key-sorted attempt row index",
+      "subindex": "dimension coordinate only for attempt.dimension; otherwise0"
+    },
+    "attempt_write_frontier.consumed_bytes": {
+      "source_expression": "expand_IO(row[33])[4]",
+      "allowed_original_metadata_kind_mask": 2,
+      "index": "key-sorted attempt row index",
+      "subindex": "dimension coordinate only for attempt.dimension; otherwise0"
+    },
+    "attempt_write_frontier.encoded_or_decoded": {
+      "source_expression": "expand_IO(row[33])[2]",
+      "allowed_original_metadata_kind_mask": 2,
+      "index": "key-sorted attempt row index",
+      "subindex": "dimension coordinate only for attempt.dimension; otherwise0"
+    },
+    "attempt_write_frontier.first_error": {
+      "source_expression": "expand_IO(row[33])[10]",
+      "allowed_original_metadata_kind_mask": 1,
+      "index": "key-sorted attempt row index",
+      "subindex": "dimension coordinate only for attempt.dimension; otherwise0"
+    },
+    "attempt_write_frontier.hash_valid": {
+      "source_expression": "expand_IO(row[33])[8]",
+      "allowed_original_metadata_kind_mask": 8,
+      "index": "key-sorted attempt row index",
+      "subindex": "dimension coordinate only for attempt.dimension; otherwise0"
+    },
+    "attempt_write_frontier.last_bits_valid": {
+      "source_expression": "expand_IO(row[33])[7]",
+      "allowed_original_metadata_kind_mask": 8,
+      "index": "key-sorted attempt row index",
+      "subindex": "dimension coordinate only for attempt.dimension; otherwise0"
+    },
+    "attempt_write_frontier.last_scalar_bits": {
+      "source_expression": "expand_IO(row[33])[6]; original U64 event emitted ONLY_IF last_bits_valid",
+      "allowed_original_metadata_kind_mask": 2,
+      "index": "key-sorted attempt row index",
+      "subindex": "dimension coordinate only for attempt.dimension; otherwise0"
+    },
+    "attempt_write_frontier.pending_bytes": {
+      "source_expression": "expand_IO(row[33])[5]",
+      "allowed_original_metadata_kind_mask": 2,
+      "index": "key-sorted attempt row index",
+      "subindex": "dimension coordinate only for attempt.dimension; otherwise0"
+    },
+    "attempt_write_frontier.physical_bytes": {
+      "source_expression": "expand_IO(row[33])[3]",
+      "allowed_original_metadata_kind_mask": 2,
+      "index": "key-sorted attempt row index",
+      "subindex": "dimension coordinate only for attempt.dimension; otherwise0"
+    },
+    "attempt_write_frontier.physical_prefix_sha256": {
+      "source_expression": "expand_IO(row[33])[11]",
+      "allowed_original_metadata_kind_mask": 1,
+      "index": "key-sorted attempt row index",
+      "subindex": "dimension coordinate only for attempt.dimension; otherwise0"
+    },
+    "attempt_write_frontier.refused": {
+      "source_expression": "expand_IO(row[33])[9]",
+      "allowed_original_metadata_kind_mask": 8,
+      "index": "key-sorted attempt row index",
+      "subindex": "dimension coordinate only for attempt.dimension; otherwise0"
+    },
+    "attempt_write_frontier.stage": {
+      "source_expression": "expand_IO(row[33])[0]",
+      "allowed_original_metadata_kind_mask": 1,
+      "index": "key-sorted attempt row index",
+      "subindex": "dimension coordinate only for attempt.dimension; otherwise0"
+    }
+  },
+  "original_event_order_template": [
+    "attempt.role",
+    "attempt.primary",
+    "attempt.secondary",
+    "attempt.generation",
+    "attempt.original_sequence",
+    "attempt.computed_state",
+    "attempt.storage_traversal",
+    "attempt.assignment_traversal",
+    "attempt.source_matches",
+    "attempt.cost_matches",
+    "attempt.partition_matches",
+    "attempt.original_scope",
+    "attempt.canonical_scope",
+    "attempt.sample_scope",
+    "attempt.cell",
+    "attempt.tick",
+    "attempt.cycle",
+    "attempt.half",
+    "attempt.rank",
+    "attempt.dimension(each coordinate)",
+    "attempt.kind",
+    "attempt.classification",
+    "attempt.encoding",
+    "attempt.root",
+    "attempt.name",
+    "attempt.role_label",
+    "attempt.sha256",
+    "attempt.count",
+    "attempt.bytes",
+    "attempt.device",
+    "attempt.inode",
+    "attempt.directory_device",
+    "attempt.directory_inode",
+    "attempt.closed_fsynced",
+    "attempt_write.stage/first_error/refused/physical_bytes/encoded/prefix_sha256",
+    "attempt.comparison_attempted/expected_valid/mismatch/comparison_index/expected_kind/actual_kind/expected_bits/actual_bits",
+    "attempt_write_frontier.stage/attempted_index/encoded_or_decoded/physical_bytes/consumed_bytes/pending_bytes/last_bits_valid/(conditional last_scalar_bits)/hash_valid/refused/first_error/physical_prefix_sha256",
+    "IF_READ_PRESENT attempt_read_frontier same order THEN attempt_read.exact_readback/sha256/stage/first_error/refused/consumed_bytes ELSE attempt_read.outcome Missing"
+  ],
+  "runtime_validation_scope": [
+    "All actual43 columns and both observation laws are independently parsed and compared directly to SAME private BoundLeafAttempt/storage/identity fields by the reader.",
+    "Projected original metadata facts get runtime existence/type-mask checks only. Their old individual values are NOT independently compared in a second event pass.",
+    "Lossless old event reconstruction is a static schema/source correspondence plus runtime exact actual-row validation; extra/inconsistent future source changes require new review/freeze.",
+    "Indices/rank/conditional lastbits/read presence/missing/type derivations are explicit; no source hash/count alone grants authority or fullCapture."
+  ]
+}

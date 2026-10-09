@@ -1,0 +1,58 @@
+{
+  "validation": "Python stdlib integer bookkeeping only, no plan/cost/serializer/parser/IO/C++ function executed",
+  "policy": "CAPTURE_WORKSPACE_PARTITION_2_PROVISIONAL_MANIFEST",
+  "original_caps_unchanged": true,
+  "retained_manifest_snapshot_slots": 16,
+  "transient_credit": 160,
+  "credit_expression": "160+16+4*receipt_limit",
+  "actual_work_expression": "W-Q-16-credit; must >=original exact required_actual_work before allocation",
+  "actual_overlap_slots": {
+    "writer_metadata_plus_snapshot": 152,
+    "reader_metadata_plus_snapshot": 152,
+    "reader_or_writer_coverage_catalogue_snapshot": 152,
+    "sort_before_IO_before_snapshot": 40
+  },
+  "V2_available_transient_plus_snapshot": 176,
+  "buffer_layout96": {
+    "byte_cache128": 16,
+    "integer_token32_or_magnitude_parser": 4,
+    "escape_unicode_buffers": 8,
+    "SHA_digest64": 8,
+    "bounded_control_cursor_typed_compare": 60
+  },
+  "default_source_integer_example": {
+    "N": 20,
+    "T": 200,
+    "S": 400,
+    "K": 0,
+    "J": 0,
+    "C": 0,
+    "DU": 160,
+    "DX": 630,
+    "DY": 790,
+    "receipt_limit": 12004,
+    "W": 355200,
+    "Q": 0,
+    "V2_credit": 48192,
+    "remaining_actual_work": 306992,
+    "required_actual_work": 179822,
+    "V1_credit": 48064
+  },
+  "remaining": [
+    "No full aggregate metadata/output/cumulative/RSS or empirical proof.",
+    "Actual SharedCaseBudget reserve/charges and successful physical bytes are mandatory and can refuse.",
+    "The isolated layout does not authorize any function or Phase5 gate."
+  ],
+  "executions": {
+    "plan": 0,
+    "allocation": 0,
+    "serializer": 0,
+    "reader": 0,
+    "metadata": 0,
+    "sort": 0,
+    "reference": 0,
+    "coverage": 0,
+    "IO": 0,
+    "Model": 0
+  }
+}

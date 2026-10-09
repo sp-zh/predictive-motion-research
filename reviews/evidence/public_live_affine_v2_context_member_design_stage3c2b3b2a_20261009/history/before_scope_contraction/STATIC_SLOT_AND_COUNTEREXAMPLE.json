@@ -1,0 +1,40 @@
+{
+  "validation": "Source text and stdlib integer counts only; no modeled or feature execution",
+  "current_role_mismatch": {
+    "top_roles": 8,
+    "minimum_source_members": 1,
+    "minimum_sdk_members": 1,
+    "minimum_files_before_prepare": 10,
+    "minimum_files_after_cost_binding": 11,
+    "first_invalid_role_index": 8,
+    "existing_nested_file_identity_retained": true,
+    "no_runtime_failure_claim": true
+  },
+  "context_input_slots": {
+    "observed": 19,
+    "command": 24,
+    "progress": 6,
+    "nominal": 32,
+    "current": 4,
+    "sum": 85,
+    "proposed_status_cursor_fields": 8,
+    "proposed_owned_ticket": 96
+  },
+  "proposed_other_slots": {
+    "source_sdk_roster_counts": 2,
+    "claim_held": 16,
+    "claim_IO_transient": 48,
+    "candidate_total_new_held": 114
+  },
+  "authority": "Private source lifecycle and SAME actual budget required; proposed quantities not current tickets/spare quota",
+  "missing": "Process parent envelope, early-failure bridge and legacy context facts cannot be supplied by caller certificate or defaults",
+  "executions": {
+    "CPP_implementation": 0,
+    "compile": 0,
+    "IO": 0,
+    "parser": 0,
+    "metadata": 0,
+    "Model": 0,
+    "numerical": 0
+  }
+}

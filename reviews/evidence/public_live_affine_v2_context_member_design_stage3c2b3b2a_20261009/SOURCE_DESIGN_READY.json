@@ -1,0 +1,182 @@
+{
+  "stage": "SOURCE_STATIC_MINIMUM_MEMBER_AND_PREVALIDATION_CONTEXT_RETENTION_DESIGN_3C2B3B2A",
+  "recorded_utc": "2026-10-09T05:04:56.944760+00:00",
+  "source_baseline": "e5dd7335c2f7f24622712e3b81935ed016324e29",
+  "allowed_document_review_ancestor": "84609ccc465e62b00e6466b4c1fa88ae3ac678d2",
+  "files": [
+    {
+      "path": "BEFORE_GUARDS.json",
+      "bytes": 2251,
+      "sha256": "e75895e5f8ae67677291b510143f79c3ef64afa33d85a9261953354af36b0a12"
+    },
+    {
+      "path": "FILE_PLAN.json",
+      "bytes": 2146,
+      "sha256": "52cafc64d37e838c2c889a7ca0e99a8c0c9492bebe8a3d404ec6ae0520f98af5"
+    },
+    {
+      "path": "STATIC_DESIGN.md",
+      "bytes": 8642,
+      "sha256": "315e2cf6a290079cdce75f447cfc97e020474f699071f1268c9fac118cc78abc"
+    },
+    {
+      "path": "STATIC_SLOT_AND_COUNTEREXAMPLE.json",
+      "bytes": 1798,
+      "sha256": "86e1442bcfaac21f472d5c8d281b4539c98c3b75cf7f80046ed0ee194fd5a922"
+    },
+    {
+      "path": "before/tools/phase5_public_live_affine_v2/capture_leaves/PROVISIONAL_ALIAS_LAYOUT.json",
+      "bytes": 24886,
+      "sha256": "aea864dcb10b4b279e335329b1d00aeca644ec18b6ba14f8524789e21f8b27d0"
+    },
+    {
+      "path": "before/tools/phase5_public_live_affine_v2/capture_leaves/PROVISIONAL_MANIFEST_CONTRACT.md",
+      "bytes": 14586,
+      "sha256": "4e807aee6fa108eff7c7a8bd2cb04bea622e24710d667cbe25b4563744941dd8"
+    },
+    {
+      "path": "before/tools/phase5_public_live_affine_v2/capture_leaves/PROVISIONAL_RESOURCE.json",
+      "bytes": 1727,
+      "sha256": "b87ce38e62243c09d85a07acfe80f9baed8aec5c276b7f8e785c11b5135b9eff"
+    },
+    {
+      "path": "before/tools/phase5_public_live_affine_v2/capture_leaves/capture_metadata_internal.inc",
+      "bytes": 41793,
+      "sha256": "c1590922a5e27ae7d7349c52e1a37983f5c335ceeb9ca90b1d2703f42fe91692"
+    },
+    {
+      "path": "before/tools/phase5_public_live_affine_v2/foundation.hpp",
+      "bytes": 12638,
+      "sha256": "4cdb0b0e78b5a464f1b0d6f0b93c758b993f2bee59cccde816a8af61e315e955"
+    },
+    {
+      "path": "before/tools/phase5_public_live_affine_v2/foundation_context.cpp",
+      "bytes": 7090,
+      "sha256": "d935a2bf0d4f431307af6a9a4e4ed35b199fff15577c5323d42dd3eb3de2bd78"
+    },
+    {
+      "path": "before/tools/phase5_public_live_affine_v2/foundation_identity.cpp",
+      "bytes": 6852,
+      "sha256": "62cc67313abb6a07651778f78a65e95fb63a80cc2c61b67b7d3865de29bd8cb5"
+    },
+    {
+      "path": "before/tools/phase5_public_live_affine_v2/foundation_resources.cpp",
+      "bytes": 15813,
+      "sha256": "b15c1b0d52af680cbd8ee21bebfcbabae04c66882d033b4d284bb36b8a375f22"
+    },
+    {
+      "path": "before/tools/phase5_public_live_affine_v2/model_boundary/FUTURE_PROTOCOL_SCHEMA.md",
+      "bytes": 7940,
+      "sha256": "4344900051f94b077b30c73a08688263692e8fad343bb6fdabcf55cf96fbd983"
+    },
+    {
+      "path": "before/tools/phase5_public_live_affine_v2/model_boundary/model_boundary.cpp",
+      "bytes": 43128,
+      "sha256": "e9eb810fb725fe2f9ba3d05da69dca06f8868a6cce69433044312a9c16173190"
+    },
+    {
+      "path": "before/tools/phase5_public_live_affine_v2/model_boundary/model_boundary.hpp",
+      "bytes": 5753,
+      "sha256": "8bb49e7559acf6a12308aea1d108b6d5eaab79b67a005c41b2938b082b4ee863"
+    },
+    {
+      "path": "history/before_scope_contraction/FILE_PLAN.json",
+      "bytes": 1607,
+      "sha256": "829840fdbd6182ae07582c2ed75436093558f67833b35c973270687d4553d88f"
+    },
+    {
+      "path": "history/before_scope_contraction/SOURCE_DESIGN_READY.json",
+      "bytes": 6373,
+      "sha256": "3157e2d8ae2136378cb2fa6aa90285154ec5a57bce936c409897295707434ef0"
+    },
+    {
+      "path": "history/before_scope_contraction/STATIC_DESIGN.md",
+      "bytes": 13731,
+      "sha256": "8556b75c184a11f4ce5968a8c86239a8f6f13be5f6c6beb04df953f6b2a11860"
+    },
+    {
+      "path": "history/before_scope_contraction/STATIC_SLOT_AND_COUNTEREXAMPLE.json",
+      "bytes": 1215,
+      "sha256": "2682126fda81427ab74591b8f330a56cb8df9afb5fff2cbbba8082277f0ca011"
+    },
+    {
+      "path": "history/before_scope_contraction/TOOL_FAILURE_RETAINED.json",
+      "bytes": 386,
+      "sha256": "c625670f82a8c325bfedee45d3dc0b6be108642b9e7aeddfdb6b1b8d517c1f60"
+    }
+  ],
+  "canonical_before_guards": {
+    "tools/phase5_public_live_affine_v2/foundation.hpp": {
+      "bytes": 12638,
+      "sha256": "4cdb0b0e78b5a464f1b0d6f0b93c758b993f2bee59cccde816a8af61e315e955"
+    },
+    "tools/phase5_public_live_affine_v2/foundation_context.cpp": {
+      "bytes": 7090,
+      "sha256": "d935a2bf0d4f431307af6a9a4e4ed35b199fff15577c5323d42dd3eb3de2bd78"
+    },
+    "tools/phase5_public_live_affine_v2/foundation_identity.cpp": {
+      "bytes": 6852,
+      "sha256": "62cc67313abb6a07651778f78a65e95fb63a80cc2c61b67b7d3865de29bd8cb5"
+    },
+    "tools/phase5_public_live_affine_v2/foundation_resources.cpp": {
+      "bytes": 15813,
+      "sha256": "b15c1b0d52af680cbd8ee21bebfcbabae04c66882d033b4d284bb36b8a375f22"
+    },
+    "tools/phase5_public_live_affine_v2/model_boundary/model_boundary.hpp": {
+      "bytes": 5753,
+      "sha256": "8bb49e7559acf6a12308aea1d108b6d5eaab79b67a005c41b2938b082b4ee863"
+    },
+    "tools/phase5_public_live_affine_v2/model_boundary/model_boundary.cpp": {
+      "bytes": 43128,
+      "sha256": "e9eb810fb725fe2f9ba3d05da69dca06f8868a6cce69433044312a9c16173190"
+    },
+    "tools/phase5_public_live_affine_v2/model_boundary/FUTURE_PROTOCOL_SCHEMA.md": {
+      "bytes": 7940,
+      "sha256": "4344900051f94b077b30c73a08688263692e8fad343bb6fdabcf55cf96fbd983"
+    },
+    "tools/phase5_public_live_affine_v2/capture_leaves/capture_metadata_internal.inc": {
+      "bytes": 41793,
+      "sha256": "c1590922a5e27ae7d7349c52e1a37983f5c335ceeb9ca90b1d2703f42fe91692"
+    },
+    "tools/phase5_public_live_affine_v2/capture_leaves/PROVISIONAL_MANIFEST_CONTRACT.md": {
+      "bytes": 14586,
+      "sha256": "4e807aee6fa108eff7c7a8bd2cb04bea622e24710d667cbe25b4563744941dd8"
+    },
+    "tools/phase5_public_live_affine_v2/capture_leaves/PROVISIONAL_RESOURCE.json": {
+      "bytes": 1727,
+      "sha256": "b87ce38e62243c09d85a07acfe80f9baed8aec5c276b7f8e785c11b5135b9eff"
+    },
+    "tools/phase5_public_live_affine_v2/capture_leaves/PROVISIONAL_ALIAS_LAYOUT.json": {
+      "bytes": 24886,
+      "sha256": "aea864dcb10b4b279e335329b1d00aeca644ec18b6ba14f8524789e21f8b27d0"
+    }
+  },
+  "scope": "Static design/docs/before copies only. No implementation, source feature invocation or canonical/Git edits. Wait for root exact next implementation scope.",
+  "retention": "Original11 before copies and broader initial draft retained. Actual file identities already held, associations missing; independent nominal signed-zero bits and declared-versus-actual-loader-order distinction explicit. History-copy directory failure recorded; original design recovered from exact recorded command before final contraction.",
+  "executions": {
+    "CPP_implementation": 0,
+    "compiler": 0,
+    "IO": 0,
+    "parser_fixture": 0,
+    "snapshot": 0,
+    "metadata": 0,
+    "Model_constructor": 0,
+    "Model_query": 0,
+    "Model_rollout": 0,
+    "numeric": 0,
+    "plant": 0,
+    "solver": 0,
+    "main": 0,
+    "scorer": 0
+  },
+  "backup": {
+    "packet_sha_verified": true,
+    "Mac_canonical_modified_by_executor": false,
+    "Dell_copy_verified": false,
+    "Git_backup_verified": false
+  },
+  "full_capture_complete": false,
+  "full_flow_accepted": false,
+  "phase5": "NOT_ACCEPTED",
+  "phase6": "NOT_STARTED"
+}
