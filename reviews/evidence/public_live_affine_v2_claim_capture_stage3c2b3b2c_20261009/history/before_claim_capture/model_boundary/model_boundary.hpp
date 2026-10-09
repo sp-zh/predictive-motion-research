@@ -80,28 +80,6 @@ struct VerifiedMemberRelation {
 enum class MemberIdentityTargetKind {NotCaptured,Review,Protocol,Producer,MemberFile,DeclaredLibrary,CostInput};
 struct MemberLoaderObservationV1 {const char* stage="NOT_ATTEMPTED";Count libraries_checked=0,current_library_index=0,lines=0,inode=0,major_id=0,minor_id=0;bool current_library_known=false,parsed=false,mapped=false,refused=false;};
 struct MemberCaptureStatus {Count expected_files=0,actual_files=0,declared_libraries=0,verified_loader_checks=0,active_file_index=0,active_native_ordinal=0,active_parent_index=0;VerifiedMemberGroup active_group=VerifiedMemberGroup::Protocol;bool active_member_known=false;MemberIdentityTargetKind identity_target_kind=MemberIdentityTargetKind::NotCaptured;Count identity_target_index=0;bool identity_target_known=false;bool admitted=false,complete=false,refused=false;std::string first_error;};
-enum class ClaimStatTargetV1 {None,Parent,CreatedWriter,FinalWriter,ReaderInitial,ReaderFinal,NameRecheck};
-// Readonly history; construction authority remains in the private V4 factory.
-struct ClaimCaptureFactsV1 {
-  Count last_result_io_attempt=0,expected_bytes=324,written_bytes=0,read_bytes=0,attempted_write_bytes=0,attempted_read_bytes=0;
-  Count io_attempts=0,write_attempts=0,read_attempts=0,directory_components=0;
-  Count parent_device=0,parent_inode=0,created_device=0,created_inode=0,created_size=0;
-  Count read_device=0,read_inode=0,read_size=0,writer_digest_bytes=0,reader_digest_bytes=0;
-  Count close_attempts=0,close_successes=0,create_attempts=0,read_open_attempts=0,output_charged_bytes=0;
-  Count writer_final_size=0,read_final_size=0,last_stat_device=0,last_stat_inode=0,last_stat_mode=0,last_stat_links=0;
-  std::int64_t last_return=0,last_stat_size=0,last_close_return=0;int last_errno=0,cleanup_errno=0;ClaimStatTargetV1 last_stat_target=ClaimStatTargetV1::None;
-  bool last_return_known=false,attempted=false,expected_ready=false,path_copied=false,created=false,created_identity_known=false,parent_identity_known=false;
-  bool write_complete=false,writer_hash_state_valid=false,writer_digest_known=false;
-  bool file_fsync_attempted=false,file_fsynced=false,dir_fsync_attempted=false,dir_fsynced=false;
-  bool write_close_attempted=false,write_closed=false,read_opened=false,read_identity_known=false;
-  bool physical_eof=false,read_complete=false,reader_hash_state_valid=false,reader_digest_known=false,expected_digest_known=false;
-  bool read_matches_expected=false,identity_stable=false,read_close_attempted=false,read_closed=false;
-  bool parent_close_attempted=false,parent_closed=false,complete=false,historical_complete=false,refused=false,first_error_known=false,cleanup_close_failed=false;
-  bool writer_final_identity_known=false,read_final_identity_known=false,last_stat_known=false,comparison_started=false,byte_prefix_equal=false;
-  const char* stage="NO_CLAIM_IO_STARTED";const char* first_refusal_stage="NONE";const char* last_result_stage="NO_ACTUAL_RESULT";
-  std::string path,first_error;
-  std::array<char,64> expected_sha{},writer_prefix_sha{},reader_prefix_sha{};
-};
 class OwnedPublicForecast final {
  public:
   OwnedPublicForecast(const OwnedPublicForecast&) = delete;
@@ -129,7 +107,6 @@ class OwnedPublicForecast final {
   const MemberIdentityObservationV1* memberIdentityObservation() const;
   const MemberLoaderObservationV1* memberLoaderObservation() const;
   const CapturedLiveActualContextV1* capturedActualContextInputs() const;
-  const ClaimCaptureFactsV1* capturedClaimFacts() const;
   Count retainedMemberCount() const;
   std::string_view retainedMemberRole(Count) const;
   const VerifiedMemberRelation& retainedMemberRelation(Count) const;
@@ -158,7 +135,6 @@ class OwnedPublicForecast final {
 ReviewedForecastPermission loadReviewedForecastPermission(const ReviewPins&);
 ReviewedForecastPermission loadReviewedForecastPermissionWithMemberCaptureV2(const ReviewPins&,BatchBudget&);
 ReviewedForecastPermission loadReviewedForecastPermissionWithMemberContextCaptureV3(const ReviewPins&,BatchBudget&);
-ReviewedForecastPermission loadReviewedForecastPermissionWithMemberContextClaimCaptureV4(const ReviewPins&,BatchBudget&);
 CapturedLiveActualContextV1 validateFrozenLiveActualWithSnapshotV3(ReviewedForecastPermission&,const ObservedActual&,const AcceptedCommandHistory&,const ProgressHistory&,const NominalAnchor&,const CurrentBoundaryExpectation&,const StaticDomainRanges&);
 OwnedLiveInvocation prepareFrozenLiveInvocationWithContextSnapshotV3(ReviewedForecastPermission&,const CapturedLiveActualContextV1&,BatchBudget&);
 OwnedLiveInvocation prepareFrozenLiveInvocation(ReviewedForecastPermission&,

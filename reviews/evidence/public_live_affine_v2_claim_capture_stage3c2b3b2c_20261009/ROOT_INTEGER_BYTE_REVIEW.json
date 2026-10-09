@@ -1,0 +1,20 @@
+{
+  "validation": "Independent static source field/legacy body/record byte and integer comparisons only; no source function invoked",
+  "held_field_counts": {
+    "Count": 31,
+    "bool": 39,
+    "std::int64_t": 3,
+    "int": 2,
+    "ClaimStatTargetV1": 1
+  },
+  "payload_slots": 184,
+  "added_live": 448,
+  "actual_record_bytes": 324,
+  "conditional_declared_work": 235404,
+  "added_charges": 524288,
+  "metadata_fact_count_declared": 93,
+  "legacy_claim_body_byte_identical": true,
+  "legacy_resource_function_bodies_byte_identical": true,
+  "source_function_executions": 0,
+  "scope": "Declared bounded logical schedule, not actual runtime or full provider/RSS/manifest theorem"
+}

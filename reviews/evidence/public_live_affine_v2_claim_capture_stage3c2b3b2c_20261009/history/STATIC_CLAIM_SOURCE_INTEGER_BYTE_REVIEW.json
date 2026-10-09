@@ -1,0 +1,25 @@
+{
+  "validation": "Python stdlib source-field/byte comparisons, declared integers and file SHA only; no feature/compiler invocation",
+  "held_counts": {
+    "Count": 31,
+    "bool": 39,
+    "std::int64_t": 3,
+    "int": 2,
+    "ClaimStatTargetV1": 1
+  },
+  "actual_selected_slots": 184,
+  "reserved_live_sum": 448,
+  "exact_private_record_bytes": 324,
+  "conditional_declared_work": 235404,
+  "declared_added_charges": 524288,
+  "extra_metadata_facts": 93,
+  "legacy_claim_body_byte_identical": true,
+  "legacy_resource_function_bodies_byte_identical": true,
+  "new_source_no_unlink_rename_truncate_chmod": true,
+  "no_reverse_output_chunks_dependency": true,
+  "source_whitespace_check": "PASS",
+  "provider_RSS_verified": false,
+  "project_feature_calls": 0,
+  "phase5": "NOT_ACCEPTED",
+  "phase6": "NOT_STARTED"
+}

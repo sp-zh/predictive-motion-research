@@ -140,35 +140,3 @@ assertions. Only original-input copying and consistency/domain-validation histor
 are captured. No physical sensor/clock/contact attestation, process envelope,
 early public failure publisher, reference reconstruction or rootREADY is added.
 This document and the source checkpoint authorize zero function executions.
-
-## Actual claim capture version4 — separate future freeze
-
-loadReviewedForecastPermissionWithMemberContextClaimCaptureV4 requires
-PUBLIC_LIVE_AFFINE_V2_FROZEN_PROTOCOL_MEMBERS_CONTEXT_CLAIM_4, the exact V3 keys
-and additional claim_capture_policy=
-FIRST_NOFOLLOW_INDEPENDENT_READBACK_SAME_CASE_1. Source closure additionally binds
-claim_capture_contract to CLAIM_CAPTURE_CONTRACT.md. V1/V2/V3 reject this version
-and extra policy; V4 rejects prior schemas. The original claim() body is unchanged
-and remains the legacy path. Only V4 calls private claimCaptured before Model.
-Existing external review, exact ELF/build/source/SDK/input and phase gates remain.
-
-V4 adds448 logical live slots,524288 cumulative charges and324 output bytes to
-its actual reviewed invocation-derived member+context plan BEFORE Case creation.
-The same Batch/Case and private context source token persist into invocation and
-claim. All original hard caps remain; no existing V3 Case is expanded, and no
-SDK/W/cache/manifest allowance funds this new payload.
-
-The exact324-byte record derives from private verified review/protocol/producer/
-invocation SHA values. Actual directory descriptors and nofollow path components
-lead to FIRST O_EXCL0600 creation, successful short-write prefix accounting,
-actual file+directory fsync, checked close, independent nonblocking nofollow
-reopen, physical bounded read/hash/EOF, FD/name identity checks and checked close.
-Any claim error retains the created file, poisons claim/member authority and
-prevents Model. There is no unlink, overwrite, truncate, replacement-name or
-retry factory. EINTR on the same read/write FD is bounded by the same1024-attempt
-schedule; all other failure remains first refusal. Close is never retried.
-
-Successful forecast metadata can borrow actual claim history. Legacy sources
-retain Missing. This adds no public early-failure owner/publisher, process/PID/
-argv/stdout/stderr/exit attestation, reference reconstruction or rootREADY. All
-configure/compiler/planner/helper/claim/IO/Model/numerical executions remain0.

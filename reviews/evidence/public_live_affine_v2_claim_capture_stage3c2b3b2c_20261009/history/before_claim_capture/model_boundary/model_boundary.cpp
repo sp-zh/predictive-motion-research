@@ -279,50 +279,6 @@ void verifyLoadedLibraries(const std::vector<FileIdentity>& libraries) {
 } // namespace
 
 namespace detail {
-struct ClaimCaptureData {
-  SharedCaseBudget budget;OwnedReservation ticket;std::shared_ptr<const void> source;
-  std::array<unsigned char,324> expected{};std::array<unsigned char,325> readback{};
-  ClaimCaptureFactsV1 facts;
-  ClaimCaptureData(SharedCaseBudget b,std::shared_ptr<const void> tag):budget(std::move(b)),ticket(budget.reserve(184)),source(std::move(tag)){}
-  // Payload/metadata arrays and source die before ticket; no owner cycle.
-};
-// Private primitives; no output_chunks dependency and no caller IO callback.
-#if defined(__linux__)
-struct ClaimIOV1 {
-  static void attempt(ClaimCaptureData& d,const char* stage,Count extra=0){
-    auto& h=d.facts;h.stage=stage;need(h.io_attempts<1024,"claim syscall-attempt cap; retained no retry");
-    d.budget.chargeScratchOrCopy(checkedAdd(128,extra));++h.io_attempts;
-  }
-  static std::int64_t result(ClaimCaptureFactsV1& h,std::int64_t n){h.last_return=n;h.last_errno=n<0?errno:0;h.last_return_known=true;h.last_result_io_attempt=h.io_attempts;h.last_result_stage=h.stage;return n;}
-  static void statFacts(ClaimCaptureFactsV1& h,const struct stat& st){
-    h.last_stat_device=st.st_dev;h.last_stat_inode=st.st_ino;h.last_stat_size=st.st_size;
-    h.last_stat_mode=st.st_mode;h.last_stat_links=st.st_nlink;h.last_stat_known=true;
-  }
-  static void fdStat(ClaimCaptureData& d,int fd,struct stat& st,ClaimStatTargetV1 target,const char* stage){
-    auto& h=d.facts;h.last_stat_target=target;h.last_stat_known=false;attempt(d,stage);
-    need(result(h,::fstat(fd,&st))==0,"claim actual FD stat failed");statFacts(h,st);
-  }
-  static bool regular(const struct stat& st){return S_ISREG(st.st_mode)&&st.st_nlink==1&&st.st_size>=0&&(st.st_mode&07777)==0600;}
-  static void digest(ClaimCaptureData& d,EVP_MD_CTX* md,std::array<char,64>& held,bool& known,const char* stage,Count* count=nullptr,Count bytes=0){
-    d.facts.stage=stage;d.budget.chargeScratchOrCopy(72);d.budget.chargeMetadataBytes(64);
-    using Ptr=std::unique_ptr<EVP_MD_CTX,decltype(&EVP_MD_CTX_free)>;
-    Ptr clone(EVP_MD_CTX_new(),EVP_MD_CTX_free);need(clone&&EVP_MD_CTX_copy_ex(clone.get(),md)==1,"claim actual digest clone failed");
-    std::array<unsigned char,32> raw{};unsigned length=0;
-    need(EVP_DigestFinal_ex(clone.get(),raw.data(),&length)==1&&length==32,"claim actual prefix digest final failed");
-    constexpr char hex[]="0123456789abcdef";for(unsigned i=0;i<32;++i){held[2*i]=hex[raw[i]>>4];held[2*i+1]=hex[raw[i]&15];}
-    if(count)*count=bytes;known=true;
-  }
-};
-struct ClaimFDV1 {
-  enum class Kind {Other,Writer,Reader,Parent};ClaimCaptureFactsV1& h;int fd=-1;Kind kind=Kind::Other;
-  explicit ClaimFDV1(ClaimCaptureFactsV1& status,Kind k=Kind::Other):h(status),kind(k){}
-  ClaimFDV1(const ClaimFDV1&)=delete;ClaimFDV1& operator=(const ClaimFDV1&)=delete;
-  void flags(bool ok){if(kind==Kind::Writer){h.write_close_attempted=true;h.write_closed=ok;}if(kind==Kind::Reader){h.read_close_attempted=true;h.read_closed=ok;}if(kind==Kind::Parent){h.parent_close_attempted=true;h.parent_closed=ok;}}
-  bool closeNow(){if(fd<0)return true;const int value=fd;fd=-1;++h.close_attempts;const int code=::close(value);h.last_close_return=code;flags(code==0);if(code==0)++h.close_successes;else {h.cleanup_close_failed=true;h.cleanup_errno=errno;}return code==0;}
-  void closeChecked(ClaimCaptureData& d,const char* stage){ClaimIOV1::attempt(d,stage);need(closeNow(),"claim descriptor close failed; never close-retried");}
-  ~ClaimFDV1(){closeNow();} // Cleanup work prepaid64; never retries, unlinks or overwrites.
-};
-#endif
 struct ContextCaptureControl {
   SharedCaseBudget budget;OwnedReservation ticket;
   bool enabled=true,attempted=false;std::shared_ptr<const void> origin;
@@ -335,11 +291,10 @@ struct ContextCaptureControl {
 struct MemberCaptureStorage {
   SharedCaseBudget budget;OwnedReservation ticket;ResourcePlan plan;
   std::unique_ptr<CaseBudget> pending_case;FileIdentity planned_invocation;std::vector<VerifiedMemberRelation> relations;
-  std::shared_ptr<ContextCaptureControl> context;std::shared_ptr<ClaimCaptureData> claim;
+  std::shared_ptr<ContextCaptureControl> context;
   MemberCaptureStatus status;MemberIdentityObservationV1 latest_identity;MemberLoaderObservationV1 latest_loader;bool copy_scope_active=false;
   MemberCaptureStorage(std::unique_ptr<CaseBudget> c,const ResourcePlan& p,Count slots):budget(c->share()),ticket(budget.reserve(slots)),plan(p),pending_case(std::move(c)){}
   void reject(const char* why) noexcept{if(status.refused)return;status.refused=true;status.complete=false;try{std::string_view s=why?why:"MEMBER_CAPTURE_REFUSAL";need(s.size()<=512,"member refusal detail cap");budget.chargeMetadataBytes(s.size());status.first_error.assign(s);}catch(...){}}
-  void rejectClaim(const char* why) noexcept{if(status.refused)return;status.refused=true;status.complete=false;try{std::string_view text=why?why:"ACTUAL_CLAIM_REFUSAL";need(text.size()<=512,"claim member detail cap");budget.chargeMetadataBytes(text.size());budget.chargeScratchOrCopy((text.size()+7)/8);status.first_error.assign(text);}catch(...){}}
 };
 struct ForecastReleaseState {
   std::shared_ptr<MemberCaptureStorage> members; // Dies AFTER the actual identity/string lists.
@@ -411,8 +366,8 @@ struct ForecastFactory {
     const auto mode=text(n["capture_mode"]),encoding=text(n["encoding"]);need(mode=="CompactComplete"||mode=="DenseAuditComplete","member mode");need(encoding=="LosslessBinary"||encoding=="FullNumericJson","member encoding");const auto cm=mode=="CompactComplete"?CaptureMode::CompactComplete:CaptureMode::DenseAuditComplete;const auto enc=encoding=="LosslessBinary"?NumericEncoding::LosslessBinary:NumericEncoding::FullNumericJson;
     return {mesh,shape,cm,enc,planResources(mesh,shape,cm,enc)};
   }
-  static ResourcePlan memberPlan(const MemberPlanDescriptor& d,Count slots,Count charges,bool claim=false){return claim?planResourcesWithMemberClaimCaptureV2(d.mesh,d.factors,d.mode,d.encoding,slots,charges):planResourcesWithMemberCaptureV1(d.mesh,d.factors,d.mode,d.encoding,slots,charges);}
-  static bool sameBasePlan(const ResourcePlan& base,const ResourcePlan& added,bool claim=false){return base.dx()==added.dx()&&base.du()==added.du()&&base.dy()==added.dy()&&base.captureMode()==added.captureMode()&&base.numericEncoding()==added.numericEncoding()&&base.rawResultShapeSlots()==added.rawResultShapeSlots()&&base.sdkPlanningAllowance()==added.sdkPlanningAllowance()&&checkedAdd(base.liveCeiling(),added.memberCaptureSlots())==added.liveCeiling()&&checkedAdd(base.chargeCeiling(),added.memberCaptureCharges())==added.chargeCeiling()&&checkedAdd(base.outputCeiling(),claim?324:0)==added.outputCeiling();}
+  static ResourcePlan memberPlan(const MemberPlanDescriptor& d,Count slots,Count charges){return planResourcesWithMemberCaptureV1(d.mesh,d.factors,d.mode,d.encoding,slots,charges);}
+  static bool sameBasePlan(const ResourcePlan& base,const ResourcePlan& added){return base.dx()==added.dx()&&base.du()==added.du()&&base.dy()==added.dy()&&base.captureMode()==added.captureMode()&&base.numericEncoding()==added.numericEncoding()&&base.rawResultShapeSlots()==added.rawResultShapeSlots()&&base.sdkPlanningAllowance()==added.sdkPlanningAllowance()&&checkedAdd(base.liveCeiling(),added.memberCaptureSlots())==added.liveCeiling()&&checkedAdd(base.chargeCeiling(),added.memberCaptureCharges())==added.chargeCeiling()&&base.outputCeiling()==added.outputCeiling();}
   struct MemberFrame {MemberCaptureStorage& m;std::optional<OwnedReservation> ticket;bool acquired=false;MemberFrame(MemberCaptureStorage& state):m(state){need(!m.status.refused,"member first refusal retained");if(!m.copy_scope_active){ticket.emplace(m.budget.reserve(40));m.copy_scope_active=true;acquired=true;}m.budget.chargeScratchOrCopy(40);}~MemberFrame(){if(acquired)m.copy_scope_active=false;}};
   static void memberKeys(const YAML::Node& node,MemberCaptureStorage& m,std::initializer_list<const char*> names){need(node.IsMap()&&node.size()==names.size(),"member exact key count before copies");for(const auto& field:node){need(stringScalar(field.first),"member quoted key");const auto& name=field.first.Scalar();bounded(name,128,"member key before copy");m.budget.chargeMetadataBytes(name.size());m.budget.chargeScratchOrCopy((name.size()+7)/8);}keys(node,names);}
   static Count memberInteger(const YAML::Node& n,MemberCaptureStorage& m){need(plainScalar(n),"member literal unsigned integer");const std::string& value=n.Scalar();need(!value.empty()&&value.size()<=20&&(value.size()==1||value[0]!='0'),"member canonical integer token cap");m.budget.chargeScratchOrCopy(4);Count out=0;for(char c:value){need(c>='0'&&c<='9',"member unsigned token");out=checkedAdd(checkedMultiply(out,10),c-'0');}return out;}
@@ -423,7 +378,7 @@ struct ForecastFactory {
     MemberFrame frame(m);m.budget.chargeMetadataBytes(checkedAdd(role.size(),checkedAdd(file.path.size(),file.sha256.size())));m.budget.chargeScratchOrCopy(checkedAdd(9,(role.size()+file.path.size()+file.sha256.size()+7)/8));
     const Count index=r.files.size();VerifiedMemberRelation relation{index,parent,ordinal,0,group,protocol_parent,false,true};r.files.push_back(file);r.file_roles.push_back(role);m.relations.push_back(relation);m.status.actual_files=r.files.size();
     }catch(const std::exception& e){m.reject(e.what());throw;}catch(...){m.reject("NONSTANDARD_MEMBER_APPEND");throw;}}
-  static ReviewedForecastPermission permission(const ReviewPins& pins,BatchBudget* member_batch=nullptr,bool context=false,bool claim_capture=false) {
+  static ReviewedForecastPermission permission(const ReviewPins& pins,BatchBudget* member_batch=nullptr,bool context=false) {
     // The external dispatch supplies the trusted review digest. Merely creating
     // a protocol file or choosing a digest does not authorize its execution.
     auto review_id=observePinnedFile(pins.review_record_path,pins.review_record_sha256);
@@ -435,14 +390,12 @@ struct ForecastFactory {
       text(review["phase5"])=="NOT_ACCEPTED"&&text(review["phase6"])=="NOT_STARTED","wrong reviewed release scope");
     auto protocol_artifact=artifact(review["protocol"]);need(protocol_artifact.role=="protocol","protocol role mismatch");
     auto p=readDocument(protocol_artifact.identity);
-    if(claim_capture)keys(p,{"schema","source_kind","producer_sha256","constructor_attempts","metadata_attempts","rollout_attempts","scope_claims","artifacts","attempt_claim_path","member_capture_policy","context_capture_policy","claim_capture_policy"});
-    else if(context)keys(p,{"schema","source_kind","producer_sha256","constructor_attempts","metadata_attempts","rollout_attempts","scope_claims","artifacts","attempt_claim_path","member_capture_policy","context_capture_policy"});
+    if(context)keys(p,{"schema","source_kind","producer_sha256","constructor_attempts","metadata_attempts","rollout_attempts","scope_claims","artifacts","attempt_claim_path","member_capture_policy","context_capture_policy"});
     else if(member_batch)keys(p,{"schema","source_kind","producer_sha256","constructor_attempts","metadata_attempts","rollout_attempts","scope_claims","artifacts","attempt_claim_path","member_capture_policy"});
     else keys(p,{"schema","source_kind","producer_sha256","constructor_attempts","metadata_attempts","rollout_attempts","scope_claims","artifacts","attempt_claim_path"});
-    if(claim_capture)need(context&&member_batch&&text(p["claim_capture_policy"])=="FIRST_NOFOLLOW_INDEPENDENT_READBACK_SAME_CASE_1","wrong actual claim capture policy");
     if(context)need(member_batch&&text(p["context_capture_policy"])=="PREVALIDATION_INPUT_SNAPSHOT_SAME_CASE_1","wrong captured context policy");
     if(member_batch)need(text(p["member_capture_policy"])=="VERIFIED_MEMBER_CAPTURE_SAME_CASE_1","wrong member capture policy");
-    need(text(p["schema"])==(claim_capture?"PUBLIC_LIVE_AFFINE_V2_FROZEN_PROTOCOL_MEMBERS_CONTEXT_CLAIM_4":context?"PUBLIC_LIVE_AFFINE_V2_FROZEN_PROTOCOL_MEMBERS_CONTEXT_3":member_batch?"PUBLIC_LIVE_AFFINE_V2_FROZEN_PROTOCOL_MEMBERS_2":"PUBLIC_LIVE_AFFINE_V2_FROZEN_PROTOCOL_1")&&text(p["source_kind"])=="LiveActual"&&
+    need(text(p["schema"])==(context?"PUBLIC_LIVE_AFFINE_V2_FROZEN_PROTOCOL_MEMBERS_CONTEXT_3":member_batch?"PUBLIC_LIVE_AFFINE_V2_FROZEN_PROTOCOL_MEMBERS_2":"PUBLIC_LIVE_AFFINE_V2_FROZEN_PROTOCOL_1")&&text(p["source_kind"])=="LiveActual"&&
       integer(p["constructor_attempts"])==1&&integer(p["metadata_attempts"])==1&&integer(p["rollout_attempts"])==1,
       "wrong single-attempt live protocol");
     auto claims=p["scope_claims"];
@@ -473,8 +426,8 @@ struct ForecastFactory {
       const Count hash_charges=checkedAdd(checkedMultiply(bytes,2),checkedMultiply(checkedAdd(total,loaded_count),262144));
       const Count copies=checkedAdd(checkedMultiply(total,576),checkedMultiply(loaded_count,536));
       const Count added=checkedAdd(checkedAdd(held,8264),checkedAdd(hash_charges,checkedAdd(copies,checkedMultiply(total,64))));
-      const Count context_live=context?294:0,context_charges=context?16384:0,claim_live=claim_capture?448:0,claim_charges=claim_capture?524288:0;auto plan=memberPlan(base,checkedAdd(checkedAdd(checkedAdd(held,8264),context_live),claim_live),checkedAdd(checkedAdd(added,context_charges),claim_charges),claim_capture);auto budget=std::make_unique<CaseBudget>(*member_batch,plan);
-      r->members=std::make_shared<MemberCaptureStorage>(std::move(budget),plan,held);auto& m=*r->members;m.status.expected_files=total;m.status.declared_libraries=loaded_count;m.status.admitted=true;if(context)m.context=std::make_shared<ContextCaptureControl>(m.budget);if(claim_capture){need(m.context&&m.context->origin,"claim source context absent");m.claim=std::make_shared<ClaimCaptureData>(m.budget,m.context->origin);}m.budget.chargeMetadataBytes(checkedAdd(by_role.at("invocation").path.size(),64));m.budget.chargeScratchOrCopy(checkedAdd(1,(by_role.at("invocation").path.size()+71)/8));m.planned_invocation=by_role.at("invocation");
+      const Count context_live=context?294:0,context_charges=context?16384:0;auto plan=memberPlan(base,checkedAdd(checkedAdd(held,8264),context_live),checkedAdd(added,context_charges));auto budget=std::make_unique<CaseBudget>(*member_batch,plan);
+      r->members=std::make_shared<MemberCaptureStorage>(std::move(budget),plan,held);auto& m=*r->members;m.status.expected_files=total;m.status.declared_libraries=loaded_count;m.status.admitted=true;if(context)m.context=std::make_shared<ContextCaptureControl>(m.budget);m.budget.chargeMetadataBytes(checkedAdd(by_role.at("invocation").path.size(),64));m.budget.chargeScratchOrCopy(checkedAdd(1,(by_role.at("invocation").path.size()+71)/8));m.planned_invocation=by_role.at("invocation");
       // Freeze vector capacities once under the real ownership ticket. No
       // push may grow an admitted vector beyond its exact closed bound.
       try{m.budget.chargeScratchOrCopy(32);r->files.reserve(total);r->file_roles.reserve(total);m.relations.reserve(total);r->libraries.reserve(loaded_count);need(r->files.capacity()==total&&r->file_roles.capacity()==total&&m.relations.capacity()==total&&r->libraries.capacity()==loaded_count,"member allocator capacity differs from exact admitted bound");}catch(const std::exception& e){m.reject(e.what());}catch(...){m.reject("NONSTANDARD_MEMBER_CAPACITY_ADMISSION");}
@@ -513,7 +466,7 @@ struct ForecastFactory {
       Count ordinal=0;for(const auto& item:files){std::optional<MemberFrame> member_frame;if(r->members)member_frame.emplace(*r->members);auto a=r->members?memberArtifact(item,*r->members):artifact(item);if(r->members){r->members->budget.chargeMetadataBytes(checkedAdd(a.role.size(),a.identity.path.size()));r->members->budget.chargeScratchOrCopy((a.role.size()+a.identity.path.size()+7)/8);}need(roles.insert(a.role).second&&paths.insert(a.identity.path).second,"duplicate closure role/path");
         FileIdentity f;if(r->members){auto& active=r->members->status;r->members->budget.chargeScratchOrCopy(6);active.active_file_index=r->files.size();active.active_native_ordinal=ordinal;active.active_parent_index=parentIndex(*r,manifest_role);active.active_group=std::string(manifest_role)=="source_closure"?VerifiedMemberGroup::SourceClosure:VerifiedMemberGroup::SDKClosure;active.active_member_known=true;active.identity_target_kind=MemberIdentityTargetKind::MemberFile;active.identity_target_index=active.active_file_index;active.identity_target_known=true;r->members->budget.chargeScratchOrCopy(20);r->members->latest_identity=MemberIdentityObservationV1{};f=observePinnedFileWithMemberBudgetV1(r->members->budget,a.identity,r->members->latest_identity);appendMember(*r,a.role,f,std::string(manifest_role)=="source_closure"?VerifiedMemberGroup::SourceClosure:VerifiedMemberGroup::SDKClosure,parentIndex(*r,manifest_role),false,ordinal);}else {f=verify(a.identity);r->files.push_back(f);}if(r->members){r->members->budget.chargeMetadataBytes(checkedAdd(checkedMultiply(2,f.path.size()),f.sha256.size()));r->members->budget.chargeScratchOrCopy(checkedAdd(1,(2*f.path.size()+f.sha256.size()+7)/8));}verified.emplace(f.path,f);++ordinal;}
       if(std::string(manifest_role)=="source_closure") {
-        for(const auto& role:required_sources)need(roles.count(role)==1,"source closure omitted required compiled source/target");if(r->members)need(roles.count("member_capture_contract")==1,"versioned member closure omitted actual capture contract");if(context)need(roles.count("context_snapshot_contract")==1,"versioned context closure omitted actual capture contract");if(claim_capture)need(roles.count("claim_capture_contract")==1,"versioned claim closure omitted actual capture contract");
+        for(const auto& role:required_sources)need(roles.count(role)==1,"source closure omitted required compiled source/target");if(r->members)need(roles.count("member_capture_contract")==1,"versioned member closure omitted actual capture contract");if(context)need(roles.count("context_snapshot_contract")==1,"versioned context closure omitted actual capture contract");
       } else {
         auto libs=closure["loaded_libraries"];need(libs.IsSequence()&&libs.size()>0&&libs.size()<=512,"full loaded SDK library roster required");
         std::set<std::string> unique;
@@ -590,7 +543,7 @@ struct ForecastFactory {
                            encoding=="LosslessBinary"?NumericEncoding::LosslessBinary:NumericEncoding::FullNumericJson);
     const auto controls=n["controls"];need(controls.IsSequence()&&controls.size()==mesh.cycles().size(),"nominal control roster mismatch");
     std::shared_ptr<InvocationStorage> data;if(r->members){auto& m=*r->members;need(m.pending_case&&m.pending_case->sameBatch(batch),"member capture uses a different Batch or Case already moved");
-      need(m.planned_invocation.path==r->invocation.path&&m.planned_invocation.sha256==r->invocation.sha256&&m.planned_invocation.bytes==r->invocation.bytes&&sameBasePlan(plan,m.plan,static_cast<bool>(m.claim)),"prepared actual invocation identity/plan differs from admission");plan=m.plan;if(m.context){m.budget.chargeScratchOrCopy(69);for(const auto* value:{&actual.observationId(),&actual.transactionId(),&actual.ranges().constantsIdentity().path,&actual.ranges().constantsIdentity().sha256}){m.budget.chargeMetadataBytes(value->size());m.budget.chargeScratchOrCopy((value->size()+7)/8);}}data=std::make_shared<InvocationStorage>(std::move(*m.pending_case),plan,actual,mesh,r);m.pending_case.reset();need(m.budget.sameCase(data->budget.share()),"moved member Case mismatch");}
+      need(m.planned_invocation.path==r->invocation.path&&m.planned_invocation.sha256==r->invocation.sha256&&m.planned_invocation.bytes==r->invocation.bytes&&sameBasePlan(plan,m.plan),"prepared actual invocation identity/plan differs from admission");plan=m.plan;if(m.context){m.budget.chargeScratchOrCopy(69);for(const auto* value:{&actual.observationId(),&actual.transactionId(),&actual.ranges().constantsIdentity().path,&actual.ranges().constantsIdentity().sha256}){m.budget.chargeMetadataBytes(value->size());m.budget.chargeScratchOrCopy((value->size()+7)/8);}}data=std::make_shared<InvocationStorage>(std::move(*m.pending_case),plan,actual,mesh,r);m.pending_case.reset();need(m.budget.sameCase(data->budget.share()),"moved member Case mismatch");}
     else data=std::make_shared<InvocationStorage>(batch,plan,actual,mesh,r);
     if(r->members){r->members->budget.chargeMetadataBytes(checkedAdd(cost_identity.path.size(),checkedAdd(cost_identity.sha256.size(),semantic.size())));r->members->budget.chargeScratchOrCopy(checkedAdd(6,(cost_identity.path.size()+cost_identity.sha256.size()+semantic.size()+7)/8));}
     data->factors=fs;data->cost_input=cost_identity;data->cost_semantic_sha256=semantic;if(r->members){try{appendMember(*r,"cost_input",cost_identity,VerifiedMemberGroup::InvocationCost,parentIndex(*r,"invocation"),false,0);auto& m=*r->members;need(r->files.size()==m.status.expected_files&&r->files.size()==r->file_roles.size()&&r->files.size()==m.relations.size(),"final actual member count mismatch");m.status.complete=true;}catch(const std::exception& e){r->members->reject(e.what());throw;}catch(...){r->members->reject("NONSTANDARD_COST_MEMBER_APPEND");throw;}}else r->files.push_back(cost_identity);
@@ -627,86 +580,6 @@ struct ForecastFactory {
     if(::close(value)!=0)good=false;
     need(good,"attempt claim incomplete; retained and never retried");
   }
-  static void claimCaptured(ForecastReleaseState& r){
-    need(r.members&&r.members->claim,"private claim owner absent");auto& m=*r.members;auto& d=*m.claim;auto& h=d.facts;
-    const bool attempted=h.attempted;h.attempted=true;
-    try{
-      need(!attempted&&!h.refused&&!m.status.refused&&m.context&&d.source==m.context->origin&&d.budget.sameCase(m.budget),"claim source/case/refusal/reentry mismatch");
-      d.budget.chargeScratchOrCopy(64); // Prepaid cleanup and bounded history transitions.
-      auto work=d.budget.reserve(256); // Before component/stat/hash/descriptor workspace.
-#if defined(__linux__)
-      static_assert(sizeof(struct stat)<=512,"review platform stat workspace exceeds claim schedule");
-      static_assert(sizeof(decltype(std::declval<struct stat>().st_dev))<=8&&sizeof(decltype(std::declval<struct stat>().st_ino))<=8&&sizeof(decltype(std::declval<struct stat>().st_size))<=8,"claim native identity wider than retained fields");
-      static_assert(std::numeric_limits<decltype(std::declval<struct stat>().st_size)>::is_signed,"claim native size must have signed retained semantics");
-      std::array<char,256> component{};struct stat st{},other{};
-      ClaimFDV1 parent(h),writer(h,ClaimFDV1::Kind::Writer),reader(h,ClaimFDV1::Kind::Reader);
-      using Ptr=std::unique_ptr<EVP_MD_CTX,decltype(&EVP_MD_CTX_free)>;
-      h.stage="CAPTURE_PRIVATE_CLAIM_PATH_AND_CONTENT";
-      const auto& path=r.attempt_claim_path;
-      need(path.size()>1&&path.size()<=4096&&path.front()=='/'&&path.back()!='/'&&path.find('\0')==std::string::npos,"claim requires bounded absolute component path");
-      d.budget.chargeMetadataBytes(path.size());d.budget.chargeScratchOrCopy(checkedAdd(checkedMultiply(path.size(),2),(path.size()+7)/8));h.path=path;h.path_copied=true;
-      Count components=0;for(std::size_t start=1;start<path.size();){const auto slash=path.find('/',start);const auto end=slash==std::string::npos?path.size():slash;const auto n=end-start;
-        need(n>0&&n<=255&&!(n==1&&path[start]=='.')&&!(n==2&&path[start]=='.'&&path[start+1]=='.'),"claim unsafe/empty/dot/oversized component");need(++components<=64,"claim component cap");start=end+1;}
-      Count position=0;auto append=[&](std::string_view bytes){need(bytes.size()<=d.expected.size()-position,"claim fixed record overflow");d.budget.chargeScratchOrCopy((bytes.size()+7)/8);for(unsigned char c:bytes)d.expected[position++]=c;};
-      d.budget.chargeMetadataBytes(324);for(const auto* sha:{&r.review.sha256,&r.protocol.sha256,&r.producer.sha256,&r.invocation.sha256}){need(sha->size()==64,"claim private SHA length");for(char c:*sha)need((c>='0'&&c<='9')||(c>='a'&&c<='f'),"claim private SHA syntax");}
-      append("review_sha256=");append(r.review.sha256);append("\nprotocol_sha256=");append(r.protocol.sha256);append("\nproducer_sha256=");append(r.producer.sha256);append("\ninvocation_sha256=");append(r.invocation.sha256);append("\n");
-      need(position==324,"claim fixed private record shape");h.expected_ready=true;
-      h.stage="INITIALIZE_PRIVATE_EXPECTED_HASH";d.budget.chargeScratchOrCopy(128);Ptr expected_hash(EVP_MD_CTX_new(),EVP_MD_CTX_free);
-      need(expected_hash&&EVP_DigestInit_ex(expected_hash.get(),EVP_sha256(),nullptr)==1&&EVP_DigestUpdate(expected_hash.get(),d.expected.data(),324)==1,"claim private expected SHA failed");
-      ClaimIOV1::digest(d,expected_hash.get(),h.expected_sha,h.expected_digest_known,"RETAIN_PRIVATE_EXPECTED_SHA");expected_hash.reset();
-      need(d.budget.outputBytes()<=d.budget.outputCeiling()&&324<=d.budget.outputCeiling()-d.budget.outputBytes(),"claim output quota before creation");
-      ClaimIOV1::attempt(d,"OPEN_NOFOLLOW_DIRECTORY_ROOT");parent.fd=static_cast<int>(ClaimIOV1::result(h,::open("/",O_RDONLY|O_DIRECTORY|O_NOFOLLOW|O_CLOEXEC)));need(parent.fd>=0,"claim root directory open failed");
-      for(std::size_t start=1;start<path.size();){const auto slash=path.find('/',start);const auto end=slash==std::string::npos?path.size():slash;const auto n=end-start;
-        d.budget.chargeScratchOrCopy((n+8)/8);std::memcpy(component.data(),path.data()+start,n);component[n]='\0';
-        if(end==path.size())break;
-        ClaimFDV1 next(h);ClaimIOV1::attempt(d,"OPEN_NOFOLLOW_DIRECTORY_COMPONENT");next.fd=static_cast<int>(ClaimIOV1::result(h,::openat(parent.fd,component.data(),O_RDONLY|O_DIRECTORY|O_NOFOLLOW|O_CLOEXEC)));need(next.fd>=0,"claim nofollow parent component refused");
-        parent.closeChecked(d,"CLOSE_PREVIOUS_DIRECTORY");parent.fd=next.fd;next.fd=-1;++h.directory_components;start=end+1;
-      }
-      parent.kind=ClaimFDV1::Kind::Parent;ClaimIOV1::fdStat(d,parent.fd,st,ClaimStatTargetV1::Parent,"STAT_CLAIM_PARENT");h.parent_device=st.st_dev;h.parent_inode=st.st_ino;h.parent_identity_known=true;need(S_ISDIR(st.st_mode),"claim actual parent is not directory");
-      ClaimIOV1::attempt(d,"CREATE_FIRST_NOFOLLOW_CLAIM");++h.create_attempts;writer.fd=static_cast<int>(ClaimIOV1::result(h,::openat(parent.fd,component.data(),O_WRONLY|O_CREAT|O_EXCL|O_NOFOLLOW|O_CLOEXEC,0600)));need(writer.fd>=0,"claim FIRST exists/unsafe/create failed; never retry");h.created=true;
-      ClaimIOV1::fdStat(d,writer.fd,st,ClaimStatTargetV1::CreatedWriter,"STAT_CREATED_CLAIM");h.created_device=st.st_dev;h.created_inode=st.st_ino;h.created_size=st.st_size>=0?static_cast<Count>(st.st_size):0;h.created_identity_known=st.st_size>=0;
-      need(ClaimIOV1::regular(st)&&st.st_size==0,"created claim must be empty regular single-link0600");
-      h.stage="INITIALIZE_ACTUAL_WRITER_HASH";d.budget.chargeScratchOrCopy(128);Ptr write_hash(EVP_MD_CTX_new(),EVP_MD_CTX_free);need(write_hash&&EVP_DigestInit_ex(write_hash.get(),EVP_sha256(),nullptr)==1,"claim writer SHA init failed");h.writer_hash_state_valid=true;
-      while(h.written_bytes<324){const Count remaining=324-h.written_bytes;ClaimIOV1::attempt(d,"WRITE_ACTUAL_CLAIM_PREFIX",(remaining+7)/8);++h.write_attempts;h.attempted_write_bytes=checkedAdd(h.attempted_write_bytes,remaining);
-        const auto got=ClaimIOV1::result(h,::write(writer.fd,d.expected.data()+h.written_bytes,static_cast<std::size_t>(remaining)));
-        if(got<0&&h.last_errno==EINTR)continue;need(got>0&&static_cast<Count>(got)<=remaining,"claim zero/failed/impossible short write");
-        const Count start=h.written_bytes;h.written_bytes=checkedAdd(start,static_cast<Count>(got));h.write_complete=h.written_bytes==324;d.budget.chargeUniqueOutputBytes(static_cast<Count>(got));h.output_charged_bytes=checkedAdd(h.output_charged_bytes,static_cast<Count>(got));
-        h.stage="HASH_ACTUAL_WRITTEN_PREFIX";h.writer_hash_state_valid=false;need(EVP_DigestUpdate(write_hash.get(),d.expected.data()+start,static_cast<std::size_t>(got))==1,"claim writer prefix SHA update failed");h.writer_hash_state_valid=true;
-        ClaimIOV1::digest(d,write_hash.get(),h.writer_prefix_sha,h.writer_digest_known,"RETAIN_ACTUAL_WRITER_PREFIX_SHA",&h.writer_digest_bytes,h.written_bytes);
-      }
-      h.write_complete=true;ClaimIOV1::fdStat(d,writer.fd,st,ClaimStatTargetV1::FinalWriter,"STAT_FINAL_WRITER_CLAIM");h.writer_final_size=st.st_size>=0?static_cast<Count>(st.st_size):0;h.writer_final_identity_known=st.st_size>=0;
-      need(ClaimIOV1::regular(st)&&static_cast<Count>(st.st_dev)==h.created_device&&static_cast<Count>(st.st_ino)==h.created_inode&&st.st_size==324,"claim writer identity/size changed");
-      ClaimIOV1::attempt(d,"FSYNC_CLAIM_FILE");h.file_fsync_attempted=true;need(ClaimIOV1::result(h,::fsync(writer.fd))==0,"claim actual file fsync failed");h.file_fsynced=true;
-      ClaimIOV1::attempt(d,"FSYNC_CLAIM_DIRECTORY");h.dir_fsync_attempted=true;need(ClaimIOV1::result(h,::fsync(parent.fd))==0,"claim actual directory fsync failed");h.dir_fsynced=true;
-      writer.closeChecked(d,"CLOSE_WRITTEN_CLAIM");write_hash.reset();
-      ClaimIOV1::attempt(d,"OPEN_INDEPENDENT_NOFOLLOW_READBACK");++h.read_open_attempts;reader.fd=static_cast<int>(ClaimIOV1::result(h,::openat(parent.fd,component.data(),O_RDONLY|O_NONBLOCK|O_NOFOLLOW|O_CLOEXEC)));need(reader.fd>=0,"claim independent reader open failed");h.read_opened=true;
-      ClaimIOV1::fdStat(d,reader.fd,st,ClaimStatTargetV1::ReaderInitial,"STAT_INDEPENDENT_CLAIM_READER");h.read_device=st.st_dev;h.read_inode=st.st_ino;h.read_size=st.st_size>=0?static_cast<Count>(st.st_size):0;h.read_identity_known=st.st_size>=0;
-      need(ClaimIOV1::regular(st)&&static_cast<Count>(st.st_dev)==h.created_device&&static_cast<Count>(st.st_ino)==h.created_inode&&st.st_size==324,"claim independent read FD identity/size mismatch");
-      h.stage="INITIALIZE_INDEPENDENT_READER_HASH";d.budget.chargeScratchOrCopy(128);Ptr read_hash(EVP_MD_CTX_new(),EVP_MD_CTX_free);need(read_hash&&EVP_DigestInit_ex(read_hash.get(),EVP_sha256(),nullptr)==1,"claim reader SHA init failed");h.reader_hash_state_valid=true;h.comparison_started=true;h.byte_prefix_equal=true;
-      for(;;){need(h.read_bytes<=324,"claim read prefix cap");const Count request=h.read_bytes==324?1:324-h.read_bytes;
-        ClaimIOV1::attempt(d,"READ_INDEPENDENT_PHYSICAL_CLAIM",(request+7)/8);++h.read_attempts;h.attempted_read_bytes=checkedAdd(h.attempted_read_bytes,request);
-        const auto got=ClaimIOV1::result(h,::read(reader.fd,d.readback.data()+h.read_bytes,static_cast<std::size_t>(request)));
-        if(got<0&&h.last_errno==EINTR)continue;need(got>=0&&static_cast<Count>(got)<=request,"claim independent read failed/impossible count");if(got==0){h.physical_eof=true;break;}
-        const Count start=h.read_bytes;h.read_bytes=checkedAdd(start,static_cast<Count>(got));for(Count i=start;i<h.read_bytes;++i)if(i>=324||d.readback[i]!=d.expected[i])h.byte_prefix_equal=false;
-        h.stage="HASH_INDEPENDENT_READ_PREFIX";h.reader_hash_state_valid=false;need(EVP_DigestUpdate(read_hash.get(),d.readback.data()+start,static_cast<std::size_t>(got))==1,"claim physical reader prefix SHA update failed");h.reader_hash_state_valid=true;
-        ClaimIOV1::digest(d,read_hash.get(),h.reader_prefix_sha,h.reader_digest_known,"RETAIN_INDEPENDENT_READER_PREFIX_SHA",&h.reader_digest_bytes,h.read_bytes);
-        need(h.read_bytes<=324,"claim grew beyond exact record; actual extra byte retained");
-      }
-      h.read_complete=h.physical_eof&&h.read_bytes==324;ClaimIOV1::fdStat(d,reader.fd,st,ClaimStatTargetV1::ReaderFinal,"STAT_FINAL_PHYSICAL_CLAIM_READER");h.read_final_size=st.st_size>=0?static_cast<Count>(st.st_size):0;h.read_final_identity_known=st.st_size>=0;
-      need(ClaimIOV1::regular(st)&&static_cast<Count>(st.st_dev)==h.created_device&&static_cast<Count>(st.st_ino)==h.created_inode&&st.st_size==324,"claim read FD changed during read");
-      h.last_stat_target=ClaimStatTargetV1::NameRecheck;h.last_stat_known=false;ClaimIOV1::attempt(d,"STAT_NOFOLLOW_CLAIM_NAME");need(ClaimIOV1::result(h,::fstatat(parent.fd,component.data(),&other,AT_SYMLINK_NOFOLLOW))==0,"claim name recheck failed");ClaimIOV1::statFacts(h,other);
-      need(ClaimIOV1::regular(other)&&static_cast<Count>(other.st_dev)==h.created_device&&static_cast<Count>(other.st_ino)==h.created_inode&&other.st_size==324,"claim name replaced after independent read");h.identity_stable=true;
-      h.read_matches_expected=h.read_complete&&h.byte_prefix_equal&&h.expected_digest_known&&h.writer_digest_known&&h.writer_digest_bytes==324&&h.reader_digest_known&&h.reader_digest_bytes==324&&h.expected_sha==h.writer_prefix_sha&&h.expected_sha==h.reader_prefix_sha;
-      need(h.read_matches_expected&&h.output_charged_bytes==324,"actual claim bytes/SHA/unique-output mismatch");reader.closeChecked(d,"CLOSE_INDEPENDENT_CLAIM_READER");parent.closeChecked(d,"CLOSE_FINAL_CLAIM_PARENT");
-      need(!h.cleanup_close_failed&&h.write_closed&&h.read_closed&&h.parent_closed,"claim close failure retained");h.historical_complete=true;h.complete=true;h.stage="COMPLETE_ACTUAL_FIRST_CLAIM_READBACK";
-#else
-      throw std::invalid_argument("versioned claim capture requires reviewed Linux descriptor semantics");
-#endif
-    }catch(const std::exception& e){const bool first=!h.refused;if(first)h.first_refusal_stage=h.stage;h.refused=true;h.complete=false;
-      if(first&&!h.first_error_known)try{std::string_view why=e.what();need(why.size()<=512,"claim refusal detail cap");d.budget.chargeMetadataBytes(why.size());d.budget.chargeScratchOrCopy((why.size()+7)/8);h.first_error.assign(why);h.first_error_known=true;}catch(...){}
-      m.rejectClaim(e.what());throw;
-    }catch(...){if(!h.refused)h.first_refusal_stage=h.stage;h.refused=true;h.complete=false;m.rejectClaim("NONSTANDARD_ACTUAL_CLAIM_REFUSAL");throw;}
-  }
   static ModelOpenOutcome open(ReviewedForecastPermission& permission,OwnedLiveInvocation& invocation) {
     auto record=std::make_unique<OpenStorage>();
     try {
@@ -719,7 +592,7 @@ struct ForecastFactory {
       record->profile=std::make_shared<ProfileStorage>(*invocation.storage_);
       record->profile->expected=metadata(r->expected_metadata); // After planning reservation; still no Model.
       need(!r->members||(r->members->status.complete&&!r->members->status.refused&&r->files.size()==r->file_roles.size()&&r->files.size()==r->members->relations.size()),"complete actual member capture required before Model");
-      if(r->members&&r->members->claim)claimCaptured(*r);else claim(*r); // Must precede actual constructor.
+      claim(*r); // Must precede actual constructor; failures retain immutable claim.
       auto handle=std::make_unique<HandleStorage>();handle->profile=record->profile;handle->invocation=invocation.storage_;
       ++r->constructor_attempts;record->constructor_attempted=true;
       handle->model=std::make_unique<NativeModel>(r->xml.path,r->constants.path);
@@ -850,7 +723,6 @@ bool OwnedPublicForecast::hasVerifiedMemberCapture() const noexcept{return stora
 std::string_view OwnedPublicForecast::verifiedArtifactRole(Count k) const{need(hasVerifiedMemberCapture(),"legacy/incomplete member relationships are missing; no prefix zip");return present(storage_).profile->release->file_roles.at(k);}
 const VerifiedMemberRelation& OwnedPublicForecast::verifiedMemberRelation(Count k) const{need(hasVerifiedMemberCapture(),"member relationship source absent/refused");const auto& r=*present(storage_).profile->release;const auto& relation=r.members->relations.at(k);need(relation.file_index==k&&relation.verified&&(relation.parent_is_protocol||relation.parent_index<r.files.size()),"actual relation index/parent invalid");return relation;}
 const FileIdentity& OwnedPublicForecast::verifiedMemberParent(Count k) const{const auto& relation=verifiedMemberRelation(k);const auto& r=*present(storage_).profile->release;return relation.parent_is_protocol?r.protocol:r.files.at(relation.parent_index);}
-const ClaimCaptureFactsV1* OwnedPublicForecast::capturedClaimFacts() const{const auto& release=*present(storage_).invocation->release;if(!release.members||!release.members->claim)return nullptr;const auto& m=*release.members;need(m.context&&m.claim->source==m.context->origin&&m.claim->budget.sameCase(m.budget),"claim metadata source/Case mismatch");return &m.claim->facts;}
 Count OwnedPublicForecast::retainedMemberCount() const{const auto& r=*present(storage_).profile->release;return r.members?r.members->status.actual_files:0;}
 const VerifiedMemberRelation& OwnedPublicForecast::retainedMemberRelation(Count k) const{const auto& r=*present(storage_).profile->release;need(r.members&&k<r.members->status.actual_files&&k<r.members->relations.size()&&k<r.files.size()&&k<r.file_roles.size(),"member committed prefix absent");const auto& relation=r.members->relations[k];need(relation.file_index==k&&relation.verified&&(relation.parent_is_protocol||relation.parent_index<k),"member committed identity/parent invalid");return relation;}
 std::string_view OwnedPublicForecast::retainedMemberRole(Count k) const{retainedMemberRelation(k);return present(storage_).profile->release->file_roles[k];}
@@ -869,7 +741,6 @@ const FactorShape& OwnedPublicForecast::costShape() const{return present(storage
 const FileIdentity& OwnedPublicForecast::costInputIdentity() const{return present(storage_).invocation->cost_input;}
 const std::string& OwnedPublicForecast::costSemanticSha256() const{return present(storage_).invocation->cost_semantic_sha256;}
 ReviewedForecastPermission loadReviewedForecastPermissionWithMemberContextCaptureV3(const ReviewPins& pins,BatchBudget& batch){return detail::ForecastFactory::permission(pins,&batch,true);}
-ReviewedForecastPermission loadReviewedForecastPermissionWithMemberContextClaimCaptureV4(const ReviewPins& pins,BatchBudget& batch){return detail::ForecastFactory::permission(pins,&batch,true,true);}
 CapturedLiveActualContextV1 validateFrozenLiveActualWithSnapshotV3(ReviewedForecastPermission& permission,const ObservedActual& observed,const AcceptedCommandHistory& command,const ProgressHistory& progress,const NominalAnchor& nominal,const CurrentBoundaryExpectation& current,const StaticDomainRanges& ranges){return detail::ForecastFactory::validateContext(permission,observed,command,progress,nominal,current,ranges);}
 OwnedLiveInvocation prepareFrozenLiveInvocationWithContextSnapshotV3(ReviewedForecastPermission& permission,const CapturedLiveActualContextV1& context,BatchBudget& batch){return detail::ForecastFactory::prepareCaptured(permission,context,batch);}
 ReviewedForecastPermission loadReviewedForecastPermissionWithMemberCaptureV2(const ReviewPins& pins,BatchBudget& batch){return detail::ForecastFactory::permission(pins,&batch);}

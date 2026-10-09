@@ -283,7 +283,7 @@ struct ClaimCaptureData {
   SharedCaseBudget budget;OwnedReservation ticket;std::shared_ptr<const void> source;
   std::array<unsigned char,324> expected{};std::array<unsigned char,325> readback{};
   ClaimCaptureFactsV1 facts;
-  ClaimCaptureData(SharedCaseBudget b,std::shared_ptr<const void> tag):budget(std::move(b)),ticket(budget.reserve(184)),source(std::move(tag)){}
+  ClaimCaptureData(SharedCaseBudget b,std::shared_ptr<const void> tag):budget(std::move(b)),ticket(budget.reserve(182)),source(std::move(tag)){}
   // Payload/metadata arrays and source die before ticket; no owner cycle.
 };
 // Private primitives; no output_chunks dependency and no caller IO callback.
@@ -291,9 +291,9 @@ struct ClaimCaptureData {
 struct ClaimIOV1 {
   static void attempt(ClaimCaptureData& d,const char* stage,Count extra=0){
     auto& h=d.facts;h.stage=stage;need(h.io_attempts<1024,"claim syscall-attempt cap; retained no retry");
-    d.budget.chargeScratchOrCopy(checkedAdd(128,extra));++h.io_attempts;
+    d.budget.chargeScratchOrCopy(checkedAdd(128,extra));++h.io_attempts;h.last_errno=0;h.last_return=0;
   }
-  static std::int64_t result(ClaimCaptureFactsV1& h,std::int64_t n){h.last_return=n;h.last_errno=n<0?errno:0;h.last_return_known=true;h.last_result_io_attempt=h.io_attempts;h.last_result_stage=h.stage;return n;}
+  static std::int64_t result(ClaimCaptureFactsV1& h,std::int64_t n){h.last_return=n;h.last_errno=n<0?errno:0;return n;}
   static void statFacts(ClaimCaptureFactsV1& h,const struct stat& st){
     h.last_stat_device=st.st_dev;h.last_stat_inode=st.st_ino;h.last_stat_size=st.st_size;
     h.last_stat_mode=st.st_mode;h.last_stat_links=st.st_nlink;h.last_stat_known=true;
@@ -303,8 +303,8 @@ struct ClaimIOV1 {
     need(result(h,::fstat(fd,&st))==0,"claim actual FD stat failed");statFacts(h,st);
   }
   static bool regular(const struct stat& st){return S_ISREG(st.st_mode)&&st.st_nlink==1&&st.st_size>=0&&(st.st_mode&07777)==0600;}
-  static void digest(ClaimCaptureData& d,EVP_MD_CTX* md,std::array<char,64>& held,bool& known,const char* stage,Count* count=nullptr,Count bytes=0){
-    d.facts.stage=stage;d.budget.chargeScratchOrCopy(72);d.budget.chargeMetadataBytes(64);
+  static void digest(ClaimCaptureData& d,EVP_MD_CTX* md,std::array<char,64>& held,bool& known,Count* count=nullptr,Count bytes=0){
+    d.budget.chargeScratchOrCopy(72);d.budget.chargeMetadataBytes(64);
     using Ptr=std::unique_ptr<EVP_MD_CTX,decltype(&EVP_MD_CTX_free)>;
     Ptr clone(EVP_MD_CTX_new(),EVP_MD_CTX_free);need(clone&&EVP_MD_CTX_copy_ex(clone.get(),md)==1,"claim actual digest clone failed");
     std::array<unsigned char,32> raw{};unsigned length=0;
@@ -473,7 +473,7 @@ struct ForecastFactory {
       const Count hash_charges=checkedAdd(checkedMultiply(bytes,2),checkedMultiply(checkedAdd(total,loaded_count),262144));
       const Count copies=checkedAdd(checkedMultiply(total,576),checkedMultiply(loaded_count,536));
       const Count added=checkedAdd(checkedAdd(held,8264),checkedAdd(hash_charges,checkedAdd(copies,checkedMultiply(total,64))));
-      const Count context_live=context?294:0,context_charges=context?16384:0,claim_live=claim_capture?448:0,claim_charges=claim_capture?524288:0;auto plan=memberPlan(base,checkedAdd(checkedAdd(checkedAdd(held,8264),context_live),claim_live),checkedAdd(checkedAdd(added,context_charges),claim_charges),claim_capture);auto budget=std::make_unique<CaseBudget>(*member_batch,plan);
+      const Count context_live=context?294:0,context_charges=context?16384:0,claim_live=claim_capture?446:0,claim_charges=claim_capture?524288:0;auto plan=memberPlan(base,checkedAdd(checkedAdd(checkedAdd(held,8264),context_live),claim_live),checkedAdd(checkedAdd(added,context_charges),claim_charges),claim_capture);auto budget=std::make_unique<CaseBudget>(*member_batch,plan);
       r->members=std::make_shared<MemberCaptureStorage>(std::move(budget),plan,held);auto& m=*r->members;m.status.expected_files=total;m.status.declared_libraries=loaded_count;m.status.admitted=true;if(context)m.context=std::make_shared<ContextCaptureControl>(m.budget);if(claim_capture){need(m.context&&m.context->origin,"claim source context absent");m.claim=std::make_shared<ClaimCaptureData>(m.budget,m.context->origin);}m.budget.chargeMetadataBytes(checkedAdd(by_role.at("invocation").path.size(),64));m.budget.chargeScratchOrCopy(checkedAdd(1,(by_role.at("invocation").path.size()+71)/8));m.planned_invocation=by_role.at("invocation");
       // Freeze vector capacities once under the real ownership ticket. No
       // push may grow an admitted vector beyond its exact closed bound.
@@ -637,7 +637,6 @@ struct ForecastFactory {
 #if defined(__linux__)
       static_assert(sizeof(struct stat)<=512,"review platform stat workspace exceeds claim schedule");
       static_assert(sizeof(decltype(std::declval<struct stat>().st_dev))<=8&&sizeof(decltype(std::declval<struct stat>().st_ino))<=8&&sizeof(decltype(std::declval<struct stat>().st_size))<=8,"claim native identity wider than retained fields");
-      static_assert(std::numeric_limits<decltype(std::declval<struct stat>().st_size)>::is_signed,"claim native size must have signed retained semantics");
       std::array<char,256> component{};struct stat st{},other{};
       ClaimFDV1 parent(h),writer(h,ClaimFDV1::Kind::Writer),reader(h,ClaimFDV1::Kind::Reader);
       using Ptr=std::unique_ptr<EVP_MD_CTX,decltype(&EVP_MD_CTX_free)>;
@@ -651,9 +650,9 @@ struct ForecastFactory {
       d.budget.chargeMetadataBytes(324);for(const auto* sha:{&r.review.sha256,&r.protocol.sha256,&r.producer.sha256,&r.invocation.sha256}){need(sha->size()==64,"claim private SHA length");for(char c:*sha)need((c>='0'&&c<='9')||(c>='a'&&c<='f'),"claim private SHA syntax");}
       append("review_sha256=");append(r.review.sha256);append("\nprotocol_sha256=");append(r.protocol.sha256);append("\nproducer_sha256=");append(r.producer.sha256);append("\ninvocation_sha256=");append(r.invocation.sha256);append("\n");
       need(position==324,"claim fixed private record shape");h.expected_ready=true;
-      h.stage="INITIALIZE_PRIVATE_EXPECTED_HASH";d.budget.chargeScratchOrCopy(128);Ptr expected_hash(EVP_MD_CTX_new(),EVP_MD_CTX_free);
+      d.budget.chargeScratchOrCopy(128);Ptr expected_hash(EVP_MD_CTX_new(),EVP_MD_CTX_free);
       need(expected_hash&&EVP_DigestInit_ex(expected_hash.get(),EVP_sha256(),nullptr)==1&&EVP_DigestUpdate(expected_hash.get(),d.expected.data(),324)==1,"claim private expected SHA failed");
-      ClaimIOV1::digest(d,expected_hash.get(),h.expected_sha,h.expected_digest_known,"RETAIN_PRIVATE_EXPECTED_SHA");expected_hash.reset();
+      ClaimIOV1::digest(d,expected_hash.get(),h.expected_sha,h.expected_digest_known);expected_hash.reset();
       need(d.budget.outputBytes()<=d.budget.outputCeiling()&&324<=d.budget.outputCeiling()-d.budget.outputBytes(),"claim output quota before creation");
       ClaimIOV1::attempt(d,"OPEN_NOFOLLOW_DIRECTORY_ROOT");parent.fd=static_cast<int>(ClaimIOV1::result(h,::open("/",O_RDONLY|O_DIRECTORY|O_NOFOLLOW|O_CLOEXEC)));need(parent.fd>=0,"claim root directory open failed");
       for(std::size_t start=1;start<path.size();){const auto slash=path.find('/',start);const auto end=slash==std::string::npos?path.size():slash;const auto n=end-start;
@@ -666,13 +665,13 @@ struct ForecastFactory {
       ClaimIOV1::attempt(d,"CREATE_FIRST_NOFOLLOW_CLAIM");++h.create_attempts;writer.fd=static_cast<int>(ClaimIOV1::result(h,::openat(parent.fd,component.data(),O_WRONLY|O_CREAT|O_EXCL|O_NOFOLLOW|O_CLOEXEC,0600)));need(writer.fd>=0,"claim FIRST exists/unsafe/create failed; never retry");h.created=true;
       ClaimIOV1::fdStat(d,writer.fd,st,ClaimStatTargetV1::CreatedWriter,"STAT_CREATED_CLAIM");h.created_device=st.st_dev;h.created_inode=st.st_ino;h.created_size=st.st_size>=0?static_cast<Count>(st.st_size):0;h.created_identity_known=st.st_size>=0;
       need(ClaimIOV1::regular(st)&&st.st_size==0,"created claim must be empty regular single-link0600");
-      h.stage="INITIALIZE_ACTUAL_WRITER_HASH";d.budget.chargeScratchOrCopy(128);Ptr write_hash(EVP_MD_CTX_new(),EVP_MD_CTX_free);need(write_hash&&EVP_DigestInit_ex(write_hash.get(),EVP_sha256(),nullptr)==1,"claim writer SHA init failed");h.writer_hash_state_valid=true;
+      d.budget.chargeScratchOrCopy(128);Ptr write_hash(EVP_MD_CTX_new(),EVP_MD_CTX_free);need(write_hash&&EVP_DigestInit_ex(write_hash.get(),EVP_sha256(),nullptr)==1,"claim writer SHA init failed");h.writer_hash_state_valid=true;
       while(h.written_bytes<324){const Count remaining=324-h.written_bytes;ClaimIOV1::attempt(d,"WRITE_ACTUAL_CLAIM_PREFIX",(remaining+7)/8);++h.write_attempts;h.attempted_write_bytes=checkedAdd(h.attempted_write_bytes,remaining);
         const auto got=ClaimIOV1::result(h,::write(writer.fd,d.expected.data()+h.written_bytes,static_cast<std::size_t>(remaining)));
         if(got<0&&h.last_errno==EINTR)continue;need(got>0&&static_cast<Count>(got)<=remaining,"claim zero/failed/impossible short write");
         const Count start=h.written_bytes;h.written_bytes=checkedAdd(start,static_cast<Count>(got));h.write_complete=h.written_bytes==324;d.budget.chargeUniqueOutputBytes(static_cast<Count>(got));h.output_charged_bytes=checkedAdd(h.output_charged_bytes,static_cast<Count>(got));
-        h.stage="HASH_ACTUAL_WRITTEN_PREFIX";h.writer_hash_state_valid=false;need(EVP_DigestUpdate(write_hash.get(),d.expected.data()+start,static_cast<std::size_t>(got))==1,"claim writer prefix SHA update failed");h.writer_hash_state_valid=true;
-        ClaimIOV1::digest(d,write_hash.get(),h.writer_prefix_sha,h.writer_digest_known,"RETAIN_ACTUAL_WRITER_PREFIX_SHA",&h.writer_digest_bytes,h.written_bytes);
+        h.writer_hash_state_valid=false;need(EVP_DigestUpdate(write_hash.get(),d.expected.data()+start,static_cast<std::size_t>(got))==1,"claim writer prefix SHA update failed");h.writer_hash_state_valid=true;
+        ClaimIOV1::digest(d,write_hash.get(),h.writer_prefix_sha,h.writer_digest_known,&h.writer_digest_bytes,h.written_bytes);
       }
       h.write_complete=true;ClaimIOV1::fdStat(d,writer.fd,st,ClaimStatTargetV1::FinalWriter,"STAT_FINAL_WRITER_CLAIM");h.writer_final_size=st.st_size>=0?static_cast<Count>(st.st_size):0;h.writer_final_identity_known=st.st_size>=0;
       need(ClaimIOV1::regular(st)&&static_cast<Count>(st.st_dev)==h.created_device&&static_cast<Count>(st.st_ino)==h.created_inode&&st.st_size==324,"claim writer identity/size changed");
@@ -682,14 +681,14 @@ struct ForecastFactory {
       ClaimIOV1::attempt(d,"OPEN_INDEPENDENT_NOFOLLOW_READBACK");++h.read_open_attempts;reader.fd=static_cast<int>(ClaimIOV1::result(h,::openat(parent.fd,component.data(),O_RDONLY|O_NONBLOCK|O_NOFOLLOW|O_CLOEXEC)));need(reader.fd>=0,"claim independent reader open failed");h.read_opened=true;
       ClaimIOV1::fdStat(d,reader.fd,st,ClaimStatTargetV1::ReaderInitial,"STAT_INDEPENDENT_CLAIM_READER");h.read_device=st.st_dev;h.read_inode=st.st_ino;h.read_size=st.st_size>=0?static_cast<Count>(st.st_size):0;h.read_identity_known=st.st_size>=0;
       need(ClaimIOV1::regular(st)&&static_cast<Count>(st.st_dev)==h.created_device&&static_cast<Count>(st.st_ino)==h.created_inode&&st.st_size==324,"claim independent read FD identity/size mismatch");
-      h.stage="INITIALIZE_INDEPENDENT_READER_HASH";d.budget.chargeScratchOrCopy(128);Ptr read_hash(EVP_MD_CTX_new(),EVP_MD_CTX_free);need(read_hash&&EVP_DigestInit_ex(read_hash.get(),EVP_sha256(),nullptr)==1,"claim reader SHA init failed");h.reader_hash_state_valid=true;h.comparison_started=true;h.byte_prefix_equal=true;
+      d.budget.chargeScratchOrCopy(128);Ptr read_hash(EVP_MD_CTX_new(),EVP_MD_CTX_free);need(read_hash&&EVP_DigestInit_ex(read_hash.get(),EVP_sha256(),nullptr)==1,"claim reader SHA init failed");h.reader_hash_state_valid=true;h.comparison_started=true;h.byte_prefix_equal=true;
       for(;;){need(h.read_bytes<=324,"claim read prefix cap");const Count request=h.read_bytes==324?1:324-h.read_bytes;
         ClaimIOV1::attempt(d,"READ_INDEPENDENT_PHYSICAL_CLAIM",(request+7)/8);++h.read_attempts;h.attempted_read_bytes=checkedAdd(h.attempted_read_bytes,request);
         const auto got=ClaimIOV1::result(h,::read(reader.fd,d.readback.data()+h.read_bytes,static_cast<std::size_t>(request)));
         if(got<0&&h.last_errno==EINTR)continue;need(got>=0&&static_cast<Count>(got)<=request,"claim independent read failed/impossible count");if(got==0){h.physical_eof=true;break;}
         const Count start=h.read_bytes;h.read_bytes=checkedAdd(start,static_cast<Count>(got));for(Count i=start;i<h.read_bytes;++i)if(i>=324||d.readback[i]!=d.expected[i])h.byte_prefix_equal=false;
-        h.stage="HASH_INDEPENDENT_READ_PREFIX";h.reader_hash_state_valid=false;need(EVP_DigestUpdate(read_hash.get(),d.readback.data()+start,static_cast<std::size_t>(got))==1,"claim physical reader prefix SHA update failed");h.reader_hash_state_valid=true;
-        ClaimIOV1::digest(d,read_hash.get(),h.reader_prefix_sha,h.reader_digest_known,"RETAIN_INDEPENDENT_READER_PREFIX_SHA",&h.reader_digest_bytes,h.read_bytes);
+        h.reader_hash_state_valid=false;need(EVP_DigestUpdate(read_hash.get(),d.readback.data()+start,static_cast<std::size_t>(got))==1,"claim physical reader prefix SHA update failed");h.reader_hash_state_valid=true;
+        ClaimIOV1::digest(d,read_hash.get(),h.reader_prefix_sha,h.reader_digest_known,&h.reader_digest_bytes,h.read_bytes);
         need(h.read_bytes<=324,"claim grew beyond exact record; actual extra byte retained");
       }
       h.read_complete=h.physical_eof&&h.read_bytes==324;ClaimIOV1::fdStat(d,reader.fd,st,ClaimStatTargetV1::ReaderFinal,"STAT_FINAL_PHYSICAL_CLAIM_READER");h.read_final_size=st.st_size>=0?static_cast<Count>(st.st_size):0;h.read_final_identity_known=st.st_size>=0;

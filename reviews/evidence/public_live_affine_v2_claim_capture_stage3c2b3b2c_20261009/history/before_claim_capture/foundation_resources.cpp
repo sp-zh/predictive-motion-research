@@ -173,12 +173,6 @@ ResourcePlan planResourcesWithMemberCaptureV1(const CycleMesh& mesh,const Factor
   need(plan.live_<=ResourcePolicyV2::live_slots&&plan.charges_<=ResourcePolicyV2::case_charges,"member evidence exceeds unchanged hard resource cap");return plan;
 }
 
-ResourcePlan planResourcesWithMemberClaimCaptureV2(const CycleMesh& mesh,const FactorShape& shape,CaptureMode mode,NumericEncoding encoding,Count slots,Count charges){
-  auto plan=planResourcesWithMemberCaptureV1(mesh,shape,mode,encoding,slots,charges);
-  plan.output_=checkedAdd(plan.output_,324);
-  need(plan.output_<=ResourcePolicyV2::output_bytes,"actual claim exceeds unchanged output cap");return plan;
-}
-
 namespace detail {
 struct BatchState { Count live = 0, cumulative = 0; };
 struct CaseState {

@@ -76,7 +76,6 @@ class ResourcePlan final {
   CaptureMode mode_ = CaptureMode::CompactComplete;
   NumericEncoding encoding_ = NumericEncoding::LosslessBinary;
   friend ResourcePlan planResourcesWithMemberCaptureV1(const CycleMesh&,const FactorShape&,CaptureMode,NumericEncoding,Count,Count);
-  friend ResourcePlan planResourcesWithMemberClaimCaptureV2(const CycleMesh&,const FactorShape&,CaptureMode,NumericEncoding,Count,Count);
   friend ResourcePlan planResources(const CycleMesh&, const FactorShape&,
                                      CaptureMode, NumericEncoding);
 };
@@ -86,8 +85,6 @@ ResourcePlan planResources(const CycleMesh&, const FactorShape&,
 // Private source factories derive these quantities from actual frozen rosters.
 // This plan alone is NOT a genuine source or execution witness.
 ResourcePlan planResourcesWithMemberCaptureV1(const CycleMesh&,const FactorShape&,CaptureMode,NumericEncoding,Count owned_slots,Count added_charges);
-
-ResourcePlan planResourcesWithMemberClaimCaptureV2(const CycleMesh&,const FactorShape&,CaptureMode,NumericEncoding,Count owned_slots,Count added_charges);
 
 namespace detail {
 struct BatchState; struct CaseState; struct ForecastFactory; struct ForecastReleaseState;

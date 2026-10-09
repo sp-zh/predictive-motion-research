@@ -83,14 +83,14 @@ struct MemberCaptureStatus {Count expected_files=0,actual_files=0,declared_libra
 enum class ClaimStatTargetV1 {None,Parent,CreatedWriter,FinalWriter,ReaderInitial,ReaderFinal,NameRecheck};
 // Readonly history; construction authority remains in the private V4 factory.
 struct ClaimCaptureFactsV1 {
-  Count last_result_io_attempt=0,expected_bytes=324,written_bytes=0,read_bytes=0,attempted_write_bytes=0,attempted_read_bytes=0;
+  Count expected_bytes=324,written_bytes=0,read_bytes=0,attempted_write_bytes=0,attempted_read_bytes=0;
   Count io_attempts=0,write_attempts=0,read_attempts=0,directory_components=0;
   Count parent_device=0,parent_inode=0,created_device=0,created_inode=0,created_size=0;
   Count read_device=0,read_inode=0,read_size=0,writer_digest_bytes=0,reader_digest_bytes=0;
   Count close_attempts=0,close_successes=0,create_attempts=0,read_open_attempts=0,output_charged_bytes=0;
   Count writer_final_size=0,read_final_size=0,last_stat_device=0,last_stat_inode=0,last_stat_mode=0,last_stat_links=0;
   std::int64_t last_return=0,last_stat_size=0,last_close_return=0;int last_errno=0,cleanup_errno=0;ClaimStatTargetV1 last_stat_target=ClaimStatTargetV1::None;
-  bool last_return_known=false,attempted=false,expected_ready=false,path_copied=false,created=false,created_identity_known=false,parent_identity_known=false;
+  bool attempted=false,expected_ready=false,path_copied=false,created=false,created_identity_known=false,parent_identity_known=false;
   bool write_complete=false,writer_hash_state_valid=false,writer_digest_known=false;
   bool file_fsync_attempted=false,file_fsynced=false,dir_fsync_attempted=false,dir_fsynced=false;
   bool write_close_attempted=false,write_closed=false,read_opened=false,read_identity_known=false;
@@ -98,7 +98,7 @@ struct ClaimCaptureFactsV1 {
   bool read_matches_expected=false,identity_stable=false,read_close_attempted=false,read_closed=false;
   bool parent_close_attempted=false,parent_closed=false,complete=false,historical_complete=false,refused=false,first_error_known=false,cleanup_close_failed=false;
   bool writer_final_identity_known=false,read_final_identity_known=false,last_stat_known=false,comparison_started=false,byte_prefix_equal=false;
-  const char* stage="NO_CLAIM_IO_STARTED";const char* first_refusal_stage="NONE";const char* last_result_stage="NO_ACTUAL_RESULT";
+  const char* stage="NOT_ATTEMPTED";const char* first_refusal_stage="NONE";
   std::string path,first_error;
   std::array<char,64> expected_sha{},writer_prefix_sha{},reader_prefix_sha{};
 };
