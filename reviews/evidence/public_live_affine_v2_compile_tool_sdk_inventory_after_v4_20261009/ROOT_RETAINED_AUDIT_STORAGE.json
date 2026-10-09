@@ -1,0 +1,30 @@
+{
+  "scope": "Retained current read-only tool/SDK config audit; not a complete immutable build dependency freeze",
+  "Mac_directory": "/Users/uot/Documents/ChatGPT/ros/results/phase5-reference/compile-tool-sdk-inventory-after-v4-20261009/root-retained-audit-attempt1",
+  "Dell_directory": "/mnt/d/CodexTransfer/projects/predictive_motion/checkpoints/compile-tool-sdk-inventory-after-v4-20261009/root-retained-audit-attempt1",
+  "files": [
+    {
+      "path": "step2.stdout.json",
+      "bytes": 1407136,
+      "sha256": "8febb7d802b3c4fed6107112df02093bfe37151776914444852b45394891b055"
+    },
+    {
+      "path": "CURRENT_CONFIG_MODULE_RAW.json.gz",
+      "bytes": 185645,
+      "sha256": "00bd2808b6c83821e0d4d21dcea678a5473f8cb701ce6342ac6cba7f2097afc5"
+    }
+  ],
+  "audit_ready_sha256": "a4b7b0cb9bcd38d8478f813dc535f4e22d99a55bf98e09c66026ef1954d39fb7",
+  "Mac_copy_verified": true,
+  "Dell_copy_verified": true,
+  "Dell_verification": {
+    "files_verified": 2,
+    "ready_sha256": "a4b7b0cb9bcd38d8478f813dc535f4e22d99a55bf98e09c66026ef1954d39fb7",
+    "gzip_readback_verified": true
+  },
+  "whole_build_dependency_freeze": false,
+  "source_packet_sha256": "a0626c46447d2ef9fd18c0f0c00b8db0d4f0b711905c1256a063a760324b23b5",
+  "recorded_utc": "2026-10-09T20:05:50.718214+00:00",
+  "phase5": "NOT_ACCEPTED",
+  "phase6": "NOT_STARTED"
+}

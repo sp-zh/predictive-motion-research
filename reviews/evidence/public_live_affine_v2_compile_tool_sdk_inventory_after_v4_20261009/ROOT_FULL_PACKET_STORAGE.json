@@ -1,0 +1,24 @@
+{
+  "scope": "Full current inventory including dependency config text retained outside public Git; no credentials; not full immutable build dependency freeze",
+  "archive": {
+    "file": "current-inventory.tar.gz",
+    "bytes": 473118,
+    "sha256": "655e9b5e46be223918bc376ac7c3c494f30616590c8486e0796d0055d9b18666",
+    "regular_file_count": 52,
+    "payload_file_count": 51,
+    "inner_ready_sha256": "6b3f680be1235049fc757b5c5e5e27bb37f0dce2df1c4d96315b42756de8f63b"
+  },
+  "Mac_archive": "/Users/uot/Documents/ChatGPT/ros/results/phase5-reference/compile-tool-sdk-inventory-after-v4-20261009/root-full-inventory-attempt1/current-inventory.tar.gz",
+  "Dell_archive": "/mnt/d/CodexTransfer/projects/predictive_motion/checkpoints/compile-tool-sdk-inventory-after-v4-20261009/root-full-inventory-attempt1/current-inventory.tar.gz",
+  "Mac_payloads_verified": true,
+  "Dell_payloads_verified": true,
+  "Dell_verification": {
+    "archive_sha256": "655e9b5e46be223918bc376ac7c3c494f30616590c8486e0796d0055d9b18666",
+    "payloads_verified": 51,
+    "all_members_regular": true
+  },
+  "raw_audit_copy_record": "ROOT_RETAINED_AUDIT_STORAGE.json",
+  "publication": "Only compact authored review and archive/storage record may enter Git; full inventory, environment identity indexes, logs and dependency config text excluded after automatic approval rejection",
+  "phase5": "NOT_ACCEPTED",
+  "phase6": "NOT_STARTED"
+}

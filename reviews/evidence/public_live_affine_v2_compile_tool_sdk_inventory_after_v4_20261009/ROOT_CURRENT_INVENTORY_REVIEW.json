@@ -1,0 +1,37 @@
+{
+  "decision": "PASS_CURRENT_OBSERVATION_AND_CONFIG_EFFECT_REVIEW_ONLY_NOT_CONFIGURE_OR_BUILD_ADMISSION",
+  "baseline": "7846d08ab275b90b83043b0a2ec0cbb9dee0e658",
+  "ready_sha256": "a0626c46447d2ef9fd18c0f0c00b8db0d4f0b711905c1256a063a760324b23b5",
+  "small_payloads_verified": 46,
+  "unchanged_source_guards_verified": 116,
+  "captured_actual_CMake_texts_independently_rehashed": 251,
+  "unique_captured_identity_metadata_crosschecked": 309,
+  "selected_configs_match_actual_captured_bytes": 6,
+  "review_findings": [
+    "Pinned existing DellTransfer alias authenticated Linux x86_64; initial direct-IP strict host-key refusal remains preserved",
+    "Permitted tool version observations only: Dell GCC13.3/CMake3.28.3/make4.3/binutils2.42; observed Mac unsupported version flags retained",
+    "Read cxx-standard helper actual conditional write_file/try_run and eigenpy NumPy discovery imports; CXX_STANDARD17 and STATIC try_compile do not suppress arbitrary try_run",
+    "Reachable external config definitions/conditional commands are distinct from observed execution; no config branch was executed here",
+    "Mac missing packages limited to checked paths; no global absence or Linux runtime inference",
+    "Read-only current observations are not an immutable full build dependency freeze; compiler include closure/sysroot/conditional effects remain unverified"
+  ],
+  "authoritative_storage_record": "ROOT_RETAINED_AUDIT_STORAGE.json",
+  "excluded_raw_audit_Mac_and_Dell_verified": true,
+  "whole_build_dependency_freeze_verified": false,
+  "actual_compile_admitted": false,
+  "source_code_changes": 0,
+  "project_configure_compile_or_function_calls": 0,
+  "failures_preserved": [
+    "first SSH host-key refusal",
+    "Mac ar/ranlib/ld unsupported --version",
+    "local summary NameError before corrected local processing"
+  ],
+  "next_unit": "Bounded static full-stack build configuration effect recipe; independently freeze permitted metadata tools/inputs before any configure or generated standard-probe run",
+  "phase5": "NOT_ACCEPTED",
+  "phase6": "NOT_STARTED",
+  "original_checkers_archives_failure_evidence_preserved": true,
+  "publication_scope": "Compact authored review only. Full46-payload observation packet and raw text are retained in verified dual-host excluded archive, not public Git.",
+  "full_packet_storage_record": "ROOT_FULL_PACKET_STORAGE.json",
+  "automatic_approval_rejection": "Initial commit/push rejected before execution because public environment identity indexes and dependency configs were not specifically authorized. Safer summary-only public backup selected.",
+  "git_payloads": "This review, two small storage records, and showcase update only; no environment index or dependency source text."
+}
