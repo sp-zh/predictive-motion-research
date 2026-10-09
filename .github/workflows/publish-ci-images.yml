@@ -134,7 +134,12 @@ jobs:
             # The pushed registry manifest, never the local config/image ID.
             # shellcheck disable=SC2016 # Go template, not Bash expansion
             docker buildx imagetools inspect "$target" --format '{{json .Manifest}}' > "$RUNNER_TEMP/manifest.json"
-            digest=$(jq -er '.digest' "$RUNNER_TEMP/manifest.json")
+            registry_digest=$(jq -er '.digest' "$RUNNER_TEMP/manifest.json")
+            # A builder may publish an index with an attestation. Select only
+            # its real Linux amd64 image manifest; never a config/image ID.
+            digest=$(jq -er 'if has("manifests") then [.manifests[] | select(.platform.os == "linux" and .platform.architecture == "amd64")] | if length == 1 then .[0].digest else error("ambiguous/missing amd64 manifest") end else .digest end' "$RUNNER_TEMP/manifest.json")
+            # shellcheck disable=SC2016 # backticks are Markdown in the summary
+            printf 'Registry top-level digest: `%s`\nSelected amd64 manifest: `%s`\n' "$registry_digest" "$digest" >> "$GITHUB_STEP_SUMMARY"
             image="${target%:*}@$digest"
           fi
           [[ "$digest" =~ ^sha256:[0-9a-f]{64}$ ]]

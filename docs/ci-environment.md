@@ -232,3 +232,17 @@ No Docker CLI is available in this Mac session, so no local image build,
 GHCR publication, private-image access test or GHCR full run is claimed.
 These remain bootstrap deployment gates; the workflow uses `GITHUB_TOKEN`
 instead of asking for a broad PAT.
+
+Bootstrap branch `sp/ghcr-ci-infrastructure`, [PR #1](https://github.com/sp-zh/predictive-motion-research/pull/1):
+implementation checkpoint `d65afa6` passed actual
+[push run 38004515213](https://github.com/sp-zh/predictive-motion-research/actions/runs/38004515213)
+and [PR run 38004546043](https://github.com/sp-zh/predictive-motion-research/actions/runs/38004546043).
+Downloaded native XML and full logs were audited: 24 GTest cases, 8 statistics
+cases, no skips, numerical/consumer pass markers. The first artifact exposed
+Git's checkout-ownership rejection in environment recording; later code
+explicitly trusts only that exact checkout path for `git rev-parse`, and final
+head validation is reported on the PR. Later publication code distinguishes a
+registry index (including possible attestations) from its selected amd64 image
+manifest; all four manifest-selection fixtures (single, index, missing,
+ambiguous) passed. These hosted tests still use the original ROS image; they
+prove preparation compatibility and **do not** prove GHCR deployment.
