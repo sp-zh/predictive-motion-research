@@ -1,0 +1,46 @@
+{
+  "decision": "PASS_BOUNDED_TEST_SOURCE_PROPOSAL_ONLY_NOT_COMPILE_LINK_RUN_OR_PHASE_ACCEPTANCE",
+  "baseline": "c6403b629c27c4f09898744703a6dc03ef2a74c9",
+  "original_sealed_ready_sha256": "df9d9ee5ac2be331b86a3cba7b21a487b559b73ed4cc6f24eadb2e2616a0fc5b",
+  "original_payloads_verified": 7,
+  "canonical_guards_verified": 116,
+  "public_source_protocol_files_imported_exactly": 6,
+  "fixed_case_groups": 66,
+  "independent_reference_checks": [
+    "Integer success and overflow literals recomputed with arbitrary precision",
+    "Decimal successes independently evaluated as rational seconds times250;off-lattice quarter/three-quarter refusals confirmed",
+    "Ordered balanced mesh boundary differences independently recalculated",
+    "Two zero-factor prerequisite fixture ceilings independently recalculated;full resource shape/mode validation remains deferred",
+    "Batch live/cumulative exact boundary arithmetic independently checked",
+    "66 unique roster IDs matched test tables and explicit case bodies;explicit require and refusal checks remain active under NDEBUG"
+  ],
+  "static_code_review": [
+    "Reservation move assignment releases destination live slots and preserves cumulative counts;surviving shared state/tickets test owner lifetimes",
+    "Same-case and same-batch identity checks include distinct ledgers;failure checks compare unchanged case/batch counters",
+    "Small planned-case limits and exact shared64million live/1.024billion cumulative caps covered with at most6 tickets and36 sequential cases;no numeric array materialization",
+    "Metadata/output aggregate and overflow refusal atomicity covered;pure ChunkIOLease reentry/move/reset behavior checked",
+    "All future configure/compile/link/run effects absent from this preparation;exact host candidates retained outside public Git"
+  ],
+  "erratum": {
+    "original_file": "SOURCE_ONLY_REVIEW_V1.json",
+    "original_text": "64MiB/512MiB case global limits",
+    "correct_units": "64000000 logical live slots /512000000 cumulative slot charges",
+    "source_packet_preserved_exactly": true,
+    "test_literals_unchanged": true,
+    "scope": "Those global per-case cap checks remain deferred;current small planned-case and shared-batch boundaries are separate"
+  },
+  "limitations": [
+    "No passing test evidence;source proposal has not been compiled,linked or executed",
+    "Checks cover grouped finite cases,not exhaustive API or full ResourcePlan formulas",
+    "Ticket counters establish no physical RAM or RSS bound;actual buffer allocation/data lifetime behavior remains deferred",
+    "Final linker extraction/native loader dependencies and runtime harness/limits need separate review and freeze"
+  ],
+  "source_prepare_project_function_calls": 0,
+  "next_admitted_scope": "Preparation only:freeze two test-source files and current compile inputs,then submit one compile-only harness/argv proposal;no compilation/link/runtime in preparation",
+  "compiled": false,
+  "linked": false,
+  "run": false,
+  "phase5": "NOT_ACCEPTED",
+  "phase6": "NOT_STARTED",
+  "old_checker_freezes_and_all_failures_preserved": true
+}

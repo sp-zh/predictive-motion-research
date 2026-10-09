@@ -1,0 +1,29 @@
+{
+  "decision": "PROPOSED_SOURCE_PROTOCOL_ONLY_PENDING_ROOT_INDEPENDENT_REVIEW",
+  "compiled": false,
+  "linked": false,
+  "run": false,
+  "project_function_invocations_during_preparation": 0,
+  "fixed_case_count": 66,
+  "baseline": "c6403b629c27c4f09898744703a6dc03ef2a74c9",
+  "source_units": 2,
+  "maximum_mesh_cells": 32,
+  "maximum_simultaneous_tickets": 6,
+  "maximum_sequential_cases": 36,
+  "NDEBUG_safe": "require() throws; expected exception checks explicitly require a catch; first unexpected exception returns1; argc mismatch returns2; fixed case_count checked.",
+  "independence": "All numeric expectations are immutable literals independently calculated using integer arithmetic without producer execution; ordered balanced cells are literal boundaries differences; no output-derived expected data.",
+  "setup_only_extension": "planResources with zero FactorShape is necessary to construct private ResourcePlan. Only two literal setup ceilings checked; no factory manufacturing member evidence or execution permission.",
+  "retained_failure_policy": "Future unexpected failure/timeout/output excess ends one attempt; retain logs/status/partial objects; no automatic retry, source fix, profile change or phase upgrade.",
+  "deferred": [
+    "All ResourcePlan shape/mode/encoding formula validation outside two fixture ceilings",
+    "OwnedNumericBuffer allocation failure, data-before-ticket and actual numeric storage moves",
+    "64MiB/512MiB case global limits separately from lower planned fixture ceilings; tests hit planned case ceilings and exact shared64m/1.024b caps",
+    "Thread safety (API is single threaded)",
+    "Full OS/native/loader/RSS accounting",
+    "Identity/file/binding/preview, Model/SDK/nonempty controller algebra, Parent/plant/main/scorer",
+    "Simulation/motion/video: no complete accepted trajectory exists in this unit"
+  ],
+  "phase5": "NOT_ACCEPTED",
+  "phase6": "NOT_STARTED",
+  "existing_figures_and_all_failures_preserved": true
+}

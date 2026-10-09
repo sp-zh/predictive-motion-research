@@ -1,0 +1,337 @@
+{
+  "fixed_case_count": 66,
+  "first_unexpected_failure_stops": true,
+  "cases": [
+    {
+      "id": "add_zero_max",
+      "expected": "explicit literal/state checks",
+      "source": "expected_v1.hpp literal tables or named explicit case body in foundation_mesh_ledger_v1.cpp"
+    },
+    {
+      "id": "add_exact_max",
+      "expected": "explicit literal/state checks",
+      "source": "expected_v1.hpp literal tables or named explicit case body in foundation_mesh_ledger_v1.cpp"
+    },
+    {
+      "id": "add_small",
+      "expected": "explicit literal/state checks",
+      "source": "expected_v1.hpp literal tables or named explicit case body in foundation_mesh_ledger_v1.cpp"
+    },
+    {
+      "id": "multiply_zero_max",
+      "expected": "explicit literal/state checks",
+      "source": "expected_v1.hpp literal tables or named explicit case body in foundation_mesh_ledger_v1.cpp"
+    },
+    {
+      "id": "multiply_max_one",
+      "expected": "explicit literal/state checks",
+      "source": "expected_v1.hpp literal tables or named explicit case body in foundation_mesh_ledger_v1.cpp"
+    },
+    {
+      "id": "multiply_square_below_overflow",
+      "expected": "explicit literal/state checks",
+      "source": "expected_v1.hpp literal tables or named explicit case body in foundation_mesh_ledger_v1.cpp"
+    },
+    {
+      "id": "add_overflow",
+      "expected": "overflow_error",
+      "source": "expected_v1.hpp literal tables or named explicit case body in foundation_mesh_ledger_v1.cpp"
+    },
+    {
+      "id": "multiply_overflow",
+      "expected": "overflow_error",
+      "source": "expected_v1.hpp literal tables or named explicit case body in foundation_mesh_ledger_v1.cpp"
+    },
+    {
+      "id": "multiply_square_overflow",
+      "expected": "overflow_error",
+      "source": "expected_v1.hpp literal tables or named explicit case body in foundation_mesh_ledger_v1.cpp"
+    },
+    {
+      "id": "decimal_one_cycle",
+      "expected": "explicit literal/state checks",
+      "source": "expected_v1.hpp literal tables or named explicit case body in foundation_mesh_ledger_v1.cpp"
+    },
+    {
+      "id": "decimal_leading_dot",
+      "expected": "explicit literal/state checks",
+      "source": "expected_v1.hpp literal tables or named explicit case body in foundation_mesh_ledger_v1.cpp"
+    },
+    {
+      "id": "decimal_200",
+      "expected": "explicit literal/state checks",
+      "source": "expected_v1.hpp literal tables or named explicit case body in foundation_mesh_ledger_v1.cpp"
+    },
+    {
+      "id": "decimal_375",
+      "expected": "explicit literal/state checks",
+      "source": "expected_v1.hpp literal tables or named explicit case body in foundation_mesh_ledger_v1.cpp"
+    },
+    {
+      "id": "decimal_one_second",
+      "expected": "explicit literal/state checks",
+      "source": "expected_v1.hpp literal tables or named explicit case body in foundation_mesh_ledger_v1.cpp"
+    },
+    {
+      "id": "decimal_leading_trailing_zeros",
+      "expected": "explicit literal/state checks",
+      "source": "expected_v1.hpp literal tables or named explicit case body in foundation_mesh_ledger_v1.cpp"
+    },
+    {
+      "id": "decimal_374",
+      "expected": "explicit literal/state checks",
+      "source": "expected_v1.hpp literal tables or named explicit case body in foundation_mesh_ledger_v1.cpp"
+    },
+    {
+      "id": "decimal_empty",
+      "expected": "invalid_argument",
+      "source": "expected_v1.hpp literal tables or named explicit case body in foundation_mesh_ledger_v1.cpp"
+    },
+    {
+      "id": "decimal_zero",
+      "expected": "invalid_argument",
+      "source": "expected_v1.hpp literal tables or named explicit case body in foundation_mesh_ledger_v1.cpp"
+    },
+    {
+      "id": "decimal_off_lattice",
+      "expected": "invalid_argument",
+      "source": "expected_v1.hpp literal tables or named explicit case body in foundation_mesh_ledger_v1.cpp"
+    },
+    {
+      "id": "decimal_quarter",
+      "expected": "invalid_argument",
+      "source": "expected_v1.hpp literal tables or named explicit case body in foundation_mesh_ledger_v1.cpp"
+    },
+    {
+      "id": "decimal_three_quarters",
+      "expected": "invalid_argument",
+      "source": "expected_v1.hpp literal tables or named explicit case body in foundation_mesh_ledger_v1.cpp"
+    },
+    {
+      "id": "decimal_fraction_over_cap",
+      "expected": "invalid_argument",
+      "source": "expected_v1.hpp literal tables or named explicit case body in foundation_mesh_ledger_v1.cpp"
+    },
+    {
+      "id": "decimal_over_cap",
+      "expected": "invalid_argument",
+      "source": "expected_v1.hpp literal tables or named explicit case body in foundation_mesh_ledger_v1.cpp"
+    },
+    {
+      "id": "decimal_negative",
+      "expected": "invalid_argument",
+      "source": "expected_v1.hpp literal tables or named explicit case body in foundation_mesh_ledger_v1.cpp"
+    },
+    {
+      "id": "decimal_plus",
+      "expected": "invalid_argument",
+      "source": "expected_v1.hpp literal tables or named explicit case body in foundation_mesh_ledger_v1.cpp"
+    },
+    {
+      "id": "decimal_exponent",
+      "expected": "invalid_argument",
+      "source": "expected_v1.hpp literal tables or named explicit case body in foundation_mesh_ledger_v1.cpp"
+    },
+    {
+      "id": "decimal_space",
+      "expected": "invalid_argument",
+      "source": "expected_v1.hpp literal tables or named explicit case body in foundation_mesh_ledger_v1.cpp"
+    },
+    {
+      "id": "decimal_two_dots",
+      "expected": "invalid_argument",
+      "source": "expected_v1.hpp literal tables or named explicit case body in foundation_mesh_ledger_v1.cpp"
+    },
+    {
+      "id": "decimal_final_dot",
+      "expected": "invalid_argument",
+      "source": "expected_v1.hpp literal tables or named explicit case body in foundation_mesh_ledger_v1.cpp"
+    },
+    {
+      "id": "decimal_only_dot",
+      "expected": "invalid_argument",
+      "source": "expected_v1.hpp literal tables or named explicit case body in foundation_mesh_ledger_v1.cpp"
+    },
+    {
+      "id": "decimal_letters",
+      "expected": "invalid_argument",
+      "source": "expected_v1.hpp literal tables or named explicit case body in foundation_mesh_ledger_v1.cpp"
+    },
+    {
+      "id": "decimal_length33",
+      "expected": "invalid_argument",
+      "source": "expected_v1.hpp literal tables or named explicit case body in foundation_mesh_ledger_v1.cpp"
+    },
+    {
+      "id": "decimal_numerator_overflow",
+      "expected": "overflow_error",
+      "source": "expected_v1.hpp literal tables or named explicit case body in foundation_mesh_ledger_v1.cpp"
+    },
+    {
+      "id": "decimal_scaled_overflow",
+      "expected": "overflow_error",
+      "source": "expected_v1.hpp literal tables or named explicit case body in foundation_mesh_ledger_v1.cpp"
+    },
+    {
+      "id": "decimal_denominator_overflow",
+      "expected": "overflow_error",
+      "source": "expected_v1.hpp literal tables or named explicit case body in foundation_mesh_ledger_v1.cpp"
+    },
+    {
+      "id": "mesh_uniform_20_200",
+      "expected": "explicit literal/state checks",
+      "source": "expected_v1.hpp literal tables or named explicit case body in foundation_mesh_ledger_v1.cpp"
+    },
+    {
+      "id": "mesh_balanced_20_375",
+      "expected": "explicit literal/state checks",
+      "source": "expected_v1.hpp literal tables or named explicit case body in foundation_mesh_ledger_v1.cpp"
+    },
+    {
+      "id": "mesh_explicit_4_10",
+      "expected": "explicit literal/state checks",
+      "source": "expected_v1.hpp literal tables or named explicit case body in foundation_mesh_ledger_v1.cpp"
+    },
+    {
+      "id": "mesh_explicit_1_375",
+      "expected": "explicit literal/state checks",
+      "source": "expected_v1.hpp literal tables or named explicit case body in foundation_mesh_ledger_v1.cpp"
+    },
+    {
+      "id": "mesh_zero_n",
+      "expected": "invalid_argument",
+      "source": "expected_v1.hpp literal tables or named explicit case body in foundation_mesh_ledger_v1.cpp"
+    },
+    {
+      "id": "mesh_n_over_cap",
+      "expected": "invalid_argument",
+      "source": "expected_v1.hpp literal tables or named explicit case body in foundation_mesh_ledger_v1.cpp"
+    },
+    {
+      "id": "mesh_zero_total",
+      "expected": "invalid_argument",
+      "source": "expected_v1.hpp literal tables or named explicit case body in foundation_mesh_ledger_v1.cpp"
+    },
+    {
+      "id": "mesh_total_below_n",
+      "expected": "invalid_argument",
+      "source": "expected_v1.hpp literal tables or named explicit case body in foundation_mesh_ledger_v1.cpp"
+    },
+    {
+      "id": "mesh_total_over_cap",
+      "expected": "invalid_argument",
+      "source": "expected_v1.hpp literal tables or named explicit case body in foundation_mesh_ledger_v1.cpp"
+    },
+    {
+      "id": "mesh_uniform_remainder",
+      "expected": "invalid_argument",
+      "source": "expected_v1.hpp literal tables or named explicit case body in foundation_mesh_ledger_v1.cpp"
+    },
+    {
+      "id": "mesh_uniform_extra",
+      "expected": "invalid_argument",
+      "source": "expected_v1.hpp literal tables or named explicit case body in foundation_mesh_ledger_v1.cpp"
+    },
+    {
+      "id": "mesh_balanced_extra",
+      "expected": "invalid_argument",
+      "source": "expected_v1.hpp literal tables or named explicit case body in foundation_mesh_ledger_v1.cpp"
+    },
+    {
+      "id": "mesh_explicit_empty",
+      "expected": "invalid_argument",
+      "source": "expected_v1.hpp literal tables or named explicit case body in foundation_mesh_ledger_v1.cpp"
+    },
+    {
+      "id": "mesh_explicit_wrong_size",
+      "expected": "invalid_argument",
+      "source": "expected_v1.hpp literal tables or named explicit case body in foundation_mesh_ledger_v1.cpp"
+    },
+    {
+      "id": "mesh_explicit_zero",
+      "expected": "invalid_argument",
+      "source": "expected_v1.hpp literal tables or named explicit case body in foundation_mesh_ledger_v1.cpp"
+    },
+    {
+      "id": "mesh_explicit_wrong_sum",
+      "expected": "invalid_argument",
+      "source": "expected_v1.hpp literal tables or named explicit case body in foundation_mesh_ledger_v1.cpp"
+    },
+    {
+      "id": "mesh_explicit_cell_over_cap",
+      "expected": "invalid_argument",
+      "source": "expected_v1.hpp literal tables or named explicit case body in foundation_mesh_ledger_v1.cpp"
+    },
+    {
+      "id": "mesh_bad_enum",
+      "expected": "invalid_argument",
+      "source": "expected_v1.hpp literal tables or named explicit case body in foundation_mesh_ledger_v1.cpp"
+    },
+    {
+      "id": "ledger_ticket_move_and_release",
+      "expected": "explicit literal/state checks",
+      "source": "expected_v1.hpp literal tables or named explicit case body in foundation_mesh_ledger_v1.cpp"
+    },
+    {
+      "id": "ledger_owner_lifetime",
+      "expected": "explicit literal/state checks",
+      "source": "expected_v1.hpp literal tables or named explicit case body in foundation_mesh_ledger_v1.cpp"
+    },
+    {
+      "id": "ledger_share_and_distinct_case",
+      "expected": "explicit literal/state checks",
+      "source": "expected_v1.hpp literal tables or named explicit case body in foundation_mesh_ledger_v1.cpp"
+    },
+    {
+      "id": "ledger_case_live_boundary",
+      "expected": "explicit literal/state checks",
+      "source": "expected_v1.hpp literal tables or named explicit case body in foundation_mesh_ledger_v1.cpp"
+    },
+    {
+      "id": "ledger_case_cumulative_boundary",
+      "expected": "explicit literal/state checks",
+      "source": "expected_v1.hpp literal tables or named explicit case body in foundation_mesh_ledger_v1.cpp"
+    },
+    {
+      "id": "ledger_batch_live_boundary",
+      "expected": "explicit literal/state checks",
+      "source": "expected_v1.hpp literal tables or named explicit case body in foundation_mesh_ledger_v1.cpp"
+    },
+    {
+      "id": "ledger_batch_cumulative_boundary",
+      "expected": "explicit literal/state checks",
+      "source": "expected_v1.hpp literal tables or named explicit case body in foundation_mesh_ledger_v1.cpp"
+    },
+    {
+      "id": "ledger_metadata_output_boundary",
+      "expected": "explicit literal/state checks",
+      "source": "expected_v1.hpp literal tables or named explicit case body in foundation_mesh_ledger_v1.cpp"
+    },
+    {
+      "id": "ledger_checked_overflow_atomic",
+      "expected": "overflow_error",
+      "source": "expected_v1.hpp literal tables or named explicit case body in foundation_mesh_ledger_v1.cpp"
+    },
+    {
+      "id": "ledger_moved_from_batch",
+      "expected": "explicit literal/state checks",
+      "source": "expected_v1.hpp literal tables or named explicit case body in foundation_mesh_ledger_v1.cpp"
+    },
+    {
+      "id": "ledger_moved_from_case",
+      "expected": "explicit literal/state checks",
+      "source": "expected_v1.hpp literal tables or named explicit case body in foundation_mesh_ledger_v1.cpp"
+    },
+    {
+      "id": "ledger_moved_from_shared",
+      "expected": "explicit literal/state checks",
+      "source": "expected_v1.hpp literal tables or named explicit case body in foundation_mesh_ledger_v1.cpp"
+    },
+    {
+      "id": "ledger_chunk_reentry_poison",
+      "expected": "explicit literal/state checks",
+      "source": "expected_v1.hpp literal tables or named explicit case body in foundation_mesh_ledger_v1.cpp"
+    }
+  ],
+  "ledger_group_note": "Ledger bodies contain additional expected invalid_argument/overflow_error refusals and post-refusal literal state checks; exact calls/order are frozen in source, not merely these group summaries."
+}

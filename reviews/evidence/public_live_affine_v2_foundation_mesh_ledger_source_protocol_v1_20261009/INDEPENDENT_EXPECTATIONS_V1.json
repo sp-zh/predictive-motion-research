@@ -1,0 +1,357 @@
+{
+  "status": "INDEPENDENT_SOURCE_CONTRACT_WORKSHEET_NOT_LIBRARY_OUTPUT",
+  "reference_method": "Python arbitrary precision integers used only for literal worksheet preparation; no project function called; C++ test compares frozen literals, never library-derived expected values.",
+  "arithmetic_success": [
+    [
+      "add_zero_max",
+      false,
+      0,
+      18446744073709551615,
+      18446744073709551615
+    ],
+    [
+      "add_exact_max",
+      false,
+      18446744073709551614,
+      1,
+      18446744073709551615
+    ],
+    [
+      "add_small",
+      false,
+      17,
+      25,
+      42
+    ],
+    [
+      "multiply_zero_max",
+      true,
+      18446744073709551615,
+      0,
+      0
+    ],
+    [
+      "multiply_max_one",
+      true,
+      18446744073709551615,
+      1,
+      18446744073709551615
+    ],
+    [
+      "multiply_square_below_overflow",
+      true,
+      4294967295,
+      4294967295,
+      18446744065119617025
+    ]
+  ],
+  "arithmetic_overflow": [
+    [
+      "add_overflow",
+      false,
+      18446744073709551615,
+      1
+    ],
+    [
+      "multiply_overflow",
+      true,
+      18446744073709551615,
+      2
+    ],
+    [
+      "multiply_square_overflow",
+      true,
+      4294967296,
+      4294967296
+    ]
+  ],
+  "decimal_success": [
+    [
+      "decimal_one_cycle",
+      "0.004",
+      1
+    ],
+    [
+      "decimal_leading_dot",
+      ".004",
+      1
+    ],
+    [
+      "decimal_200",
+      "0.8",
+      200
+    ],
+    [
+      "decimal_375",
+      "1.5",
+      375
+    ],
+    [
+      "decimal_one_second",
+      "1",
+      250
+    ],
+    [
+      "decimal_leading_trailing_zeros",
+      "00.0040",
+      1
+    ],
+    [
+      "decimal_374",
+      "1.496",
+      374
+    ]
+  ],
+  "decimal_invalid": [
+    [
+      "decimal_empty",
+      ""
+    ],
+    [
+      "decimal_zero",
+      "0"
+    ],
+    [
+      "decimal_off_lattice",
+      "0.002"
+    ],
+    [
+      "decimal_quarter",
+      ".25"
+    ],
+    [
+      "decimal_three_quarters",
+      ".75"
+    ],
+    [
+      "decimal_fraction_over_cap",
+      "1.501"
+    ],
+    [
+      "decimal_over_cap",
+      "1.504"
+    ],
+    [
+      "decimal_negative",
+      "-0.004"
+    ],
+    [
+      "decimal_plus",
+      "+0.004"
+    ],
+    [
+      "decimal_exponent",
+      "4e-3"
+    ],
+    [
+      "decimal_space",
+      " 0.004"
+    ],
+    [
+      "decimal_two_dots",
+      "0..004"
+    ],
+    [
+      "decimal_final_dot",
+      "1."
+    ],
+    [
+      "decimal_only_dot",
+      "."
+    ],
+    [
+      "decimal_letters",
+      "nan"
+    ],
+    [
+      "decimal_length33",
+      "111111111111111111111111111111111"
+    ]
+  ],
+  "decimal_overflow": [
+    [
+      "decimal_numerator_overflow",
+      "18446744073709551616"
+    ],
+    [
+      "decimal_scaled_overflow",
+      "18446744073709551615"
+    ],
+    [
+      "decimal_denominator_overflow",
+      ".00000000000000000000"
+    ]
+  ],
+  "decimal_basis": "1 s = 250 cycles exactly; positive duration <=375 cycles; no rounding; .25*250=62.5 and .75*250=187.5 are not integers.",
+  "mesh_basis": {
+    "uniform": "200/20=10 exactly",
+    "balanced_boundaries": [
+      0,
+      18,
+      37,
+      56,
+      75,
+      93,
+      112,
+      131,
+      150,
+      168,
+      187,
+      206,
+      225,
+      243,
+      262,
+      281,
+      300,
+      318,
+      337,
+      356,
+      375
+    ],
+    "balanced_cells": [
+      18,
+      19,
+      19,
+      19,
+      18,
+      19,
+      19,
+      19,
+      18,
+      19,
+      19,
+      19,
+      18,
+      19,
+      19,
+      19,
+      18,
+      19,
+      19,
+      19
+    ],
+    "explicit": [
+      1,
+      4,
+      2,
+      3
+    ],
+    "explicit_sum": 10
+  },
+  "setup_scope": "Two empty-cost CompactComplete/LosslessBinary plans are fixture prerequisites only. This checks their three literal ceilings, not every ResourcePlan buffer/formula, other mode, nonempty shape, member factory, or SDK storage. No member capture/permission factory used.",
+  "plan_fixture_worksheets": [
+    {
+      "n": 1,
+      "t": 1,
+      "s": 2,
+      "dx": 60,
+      "du": 8,
+      "dy": 68,
+      "raw": 9967,
+      "sdk": 1029901,
+      "normalized": 3727,
+      "boundary": 2340,
+      "embedding": 612,
+      "factor_work": 1344,
+      "sample_work": 4620,
+      "condensed": 141,
+      "live": 1042685,
+      "charge": 1053269,
+      "output_slots": 18663,
+      "output": 8537912
+    },
+    {
+      "n": 20,
+      "t": 375,
+      "s": 750,
+      "dx": 630,
+      "du": 160,
+      "dy": 790,
+      "raw": 2846005,
+      "sdk": 9538015,
+      "normalized": 957070,
+      "boundary": 120330,
+      "embedding": 127190,
+      "factor_work": 355200,
+      "sample_work": 22860,
+      "condensed": 26551,
+      "live": 11147216,
+      "charge": 28647416,
+      "output_slots": 4121810,
+      "output": 41363088
+    }
+  ],
+  "batch_arithmetic": {
+    "live": "5*11147216+8263920=64000000",
+    "charge": "35*28647416=1002659560; +21340440=1024000000"
+  },
+  "all_cases_ordered": [
+    "add_zero_max",
+    "add_exact_max",
+    "add_small",
+    "multiply_zero_max",
+    "multiply_max_one",
+    "multiply_square_below_overflow",
+    "add_overflow",
+    "multiply_overflow",
+    "multiply_square_overflow",
+    "decimal_one_cycle",
+    "decimal_leading_dot",
+    "decimal_200",
+    "decimal_375",
+    "decimal_one_second",
+    "decimal_leading_trailing_zeros",
+    "decimal_374",
+    "decimal_empty",
+    "decimal_zero",
+    "decimal_off_lattice",
+    "decimal_quarter",
+    "decimal_three_quarters",
+    "decimal_fraction_over_cap",
+    "decimal_over_cap",
+    "decimal_negative",
+    "decimal_plus",
+    "decimal_exponent",
+    "decimal_space",
+    "decimal_two_dots",
+    "decimal_final_dot",
+    "decimal_only_dot",
+    "decimal_letters",
+    "decimal_length33",
+    "decimal_numerator_overflow",
+    "decimal_scaled_overflow",
+    "decimal_denominator_overflow",
+    "mesh_uniform_20_200",
+    "mesh_balanced_20_375",
+    "mesh_explicit_4_10",
+    "mesh_explicit_1_375",
+    "mesh_zero_n",
+    "mesh_n_over_cap",
+    "mesh_zero_total",
+    "mesh_total_below_n",
+    "mesh_total_over_cap",
+    "mesh_uniform_remainder",
+    "mesh_uniform_extra",
+    "mesh_balanced_extra",
+    "mesh_explicit_empty",
+    "mesh_explicit_wrong_size",
+    "mesh_explicit_zero",
+    "mesh_explicit_wrong_sum",
+    "mesh_explicit_cell_over_cap",
+    "mesh_bad_enum",
+    "ledger_ticket_move_and_release",
+    "ledger_owner_lifetime",
+    "ledger_share_and_distinct_case",
+    "ledger_case_live_boundary",
+    "ledger_case_cumulative_boundary",
+    "ledger_batch_live_boundary",
+    "ledger_batch_cumulative_boundary",
+    "ledger_metadata_output_boundary",
+    "ledger_checked_overflow_atomic",
+    "ledger_moved_from_batch",
+    "ledger_moved_from_case",
+    "ledger_moved_from_shared",
+    "ledger_chunk_reentry_poison"
+  ],
+  "fixed_case_count": 66
+}
