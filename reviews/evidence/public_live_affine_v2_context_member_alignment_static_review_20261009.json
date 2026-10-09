@@ -1,0 +1,102 @@
+{
+  "validation": "Independent static source inspection only. No reviewed permission loader, metadata traversal, parser fixture, compiler or Model executed.",
+  "checkpoint": "e5dd7335c2f7f24622712e3b81935ed016324e29",
+  "finding": "VERIFIED_FILE_AND_ROLE_ROSTERS_NOT_ALIGNED",
+  "classification": "Source defect; predicted runtime refusal, not an observed executed failure",
+  "source_locations": [
+    {
+      "path": "tools/phase5_public_live_affine_v2/model_boundary/model_boundary.cpp",
+      "line": 332,
+      "fact": "Exactly eight verified protocol artifacts append both role and FileIdentity."
+    },
+    {
+      "path": "tools/phase5_public_live_affine_v2/model_boundary/model_boundary.cpp",
+      "line": 362,
+      "fact": "Each verified source/SDK closure member appends FileIdentity but no role or parent linkage."
+    },
+    {
+      "path": "tools/phase5_public_live_affine_v2/model_boundary/model_boundary.cpp",
+      "line": 423,
+      "fact": "Verified invocation cost input appends FileIdentity but no role."
+    },
+    {
+      "path": "tools/phase5_public_live_affine_v2/model_boundary/model_boundary.cpp",
+      "line": 592,
+      "fact": "verifiedArtifactRole(k) uses file_roles.at(k)."
+    },
+    {
+      "path": "tools/phase5_public_live_affine_v2/capture_leaves/capture_metadata_internal.inc",
+      "line": 105,
+      "fact": "Metadata iterates verifiedFiles.size and fetches role at the same index."
+    },
+    {
+      "path": "tools/phase5_public_live_affine_v2/capture_leaves/capture_metadata_internal.inc",
+      "line": 111,
+      "fact": "Blanket NOT_RETAINED for member lists does not distinguish already-retained identities from discarded semantic roster relationships."
+    }
+  ],
+  "counterexample": {
+    "file_roles_after_permission": 8,
+    "verified_files_after_nonempty_source_and_sdk_rosters_minimum": 10,
+    "verified_files_after_successful_prepare_minimum": 11,
+    "first_invalid_zero_based_index": 8,
+    "explanation": "Both closure rosters require nonempty files. Thus any successful permission+prepare has more files than role slots; metadata at k=8 invokes vector.at outside its eight-element role roster. Actual required compiled-source roster makes the bound larger. No synthetic runtime artifact emitted.",
+    "required_source_roles_count": 59,
+    "files_after_complete_required_sources_minimal_sdk_and_successful_prepare_lower_bound": 69
+  },
+  "retained_facts": "Nested member FileIdentity path, SHA and bytes already reside in release.files; loaded SDK subset identities reside in release.libraries. No fresh member IO is needed merely to preserve the discarded role/parent/ordinal relationships at their existing verification point.",
+  "required_design_constraints": [
+    "Use one private admitted paired record or exception-safe append with enforceable length invariant; nested role names alone are ambiguous without parent identity and native roster ordinal.",
+    "Capture exact verified identities at existing verification points; do not promote declared caller certificates or re-observed changed files into historical verification facts.",
+    "Keep protocol artifacts, source members, SDK members, loaded relations and invocation cost input distinct; preserve the exact parent profile/manifest provenance.",
+    "Correct missing metadata wording without claiming complete member reconstruction or complete capture.",
+    "Reserve/account any new retained metadata, relationships and transient source frames before materialization; unchanged caps and all existing first-attempt/refusal gates.",
+    "Actual process argv/cwd/environment/stdout/stderr/exit are not recoverable from YAML invocation; actual claim bytes/FD closure differ from reviewed claim path. Unavailable facts remain explicit missing.",
+    "Preserve prevalidation age/max-age/contact/completed/no-inflight/nominal inputs at validateLiveActual if implemented later, labeled as accepted caller/observer inputs, not independently measured physical contact or clocks.",
+    "Early Model/pre-affine failure ownership, new execution envelope, reconstruction, root READY and all runtime tests remain separately scoped.",
+    "Existing sameState is numeric double equality and permits different signed-zero bits; retain nominal point input independently if exact original bits are claimed, without changing the current equality predicate.",
+    "Retained SDK loaded subset order comes from the reviewed manifest; actual loader path set and mapped inode comparison do not preserve actual loader order. Keep declaration, actual verification and unretained order distinct."
+  ],
+  "source_function_executions": 0,
+  "implementation": "NOT_STARTED_BY_THIS_REVIEW",
+  "full_capture_complete": false,
+  "full_flow_accepted": false,
+  "phase5": "NOT_ACCEPTED",
+  "phase6": "NOT_STARTED",
+  "source_sha256": {
+    "tools/phase5_public_live_affine_v2/model_boundary/model_boundary.cpp": "e9eb810fb725fe2f9ba3d05da69dca06f8868a6cce69433044312a9c16173190",
+    "tools/phase5_public_live_affine_v2/capture_leaves/capture_metadata_internal.inc": "c1590922a5e27ae7d7349c52e1a37983f5c335ceeb9ca90b1d2703f42fe91692",
+    "tools/phase5_public_live_affine_v2/foundation_context.cpp": "d935a2bf0d4f431307af6a9a4e4ed35b199fff15577c5323d42dd3eb3de2bd78",
+    "tools/phase5_public_live_affine_v2/foundation.hpp": "4cdb0b0e78b5a464f1b0d6f0b93c758b993f2bee59cccde816a8af61e315e955"
+  },
+  "context_source_locations": [
+    {
+      "path": "tools/phase5_public_live_affine_v2/foundation_context.cpp",
+      "line": 44,
+      "fact": "Three completed flags and no_command_in_flight checked before context creation"
+    },
+    {
+      "path": "tools/phase5_public_live_affine_v2/foundation_context.cpp",
+      "line": 57,
+      "fact": "Caller freshness policy/age checked against macro_dt and each other"
+    },
+    {
+      "path": "tools/phase5_public_live_affine_v2/foundation_context.cpp",
+      "line": 61,
+      "fact": "Supplied observer contact-free fact required"
+    },
+    {
+      "path": "tools/phase5_public_live_affine_v2/foundation_context.cpp",
+      "line": 77,
+      "fact": "Full supplied nominal anchor equals current actual initial"
+    },
+    {
+      "path": "tools/phase5_public_live_affine_v2/foundation.hpp",
+      "line": 264,
+      "fact": "Returned witness lacks separate age/max/contact/completion/no-inflight/nominal prevalidation snapshots"
+    }
+  ],
+  "recorded_utc": "2026-10-09T04:56:30.876644+00:00",
+  "decision": "OPEN_SOURCE_BLOCKER_REPAIR_REQUIRED_BEFORE_COMPLETE_METADATA_USE",
+  "preservation": "Historical source reviews/checkers/freezes/failures and checkpoint e5dd733 remain immutable; this record adds a newly discovered source blocker without claiming runtime failure."
+}
