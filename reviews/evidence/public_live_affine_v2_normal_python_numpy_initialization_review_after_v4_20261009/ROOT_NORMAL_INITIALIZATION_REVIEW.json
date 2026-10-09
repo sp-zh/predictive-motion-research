@@ -1,0 +1,31 @@
+{
+  "decision": "PASS_STATIC_NORMAL_STARTUP_AND_NUMPY_INITIALIZATION_REVIEW_ONLY",
+  "baseline": "4406110b5f1a2b685b689301aa9b3aed3db4f394",
+  "ready_sha256": "c3b62595686d91b30bbf026a17ee64fbee2ca8afdbe70b78fae8412152c8ce92",
+  "payloads_verified": 18,
+  "unchanged_source_guards_verified": 116,
+  "actual_file_identity_records_crosschecked": 134,
+  "Python_source_AST_parsed_independently": 54,
+  "exact_source_excerpts_independently_checked": 23,
+  "extension_candidates_statically_inventoried": 19,
+  "independent_findings": [
+    "System .pth files execute import lines; candidate controlled environment disables selected coverage/distutils branches while namespace startup remains a real effect",
+    "Actual system sitecustomize installs Apport exception hook; enabled config and imports before packaged-path refusal prevent treating failure initialization as a no-op",
+    "NumPy import initializes dtype limits, polynomial arrays and masked singleton plus unconditional two-element float32 BLAS dot sanity check",
+    "Darwin polyfit/LAPACK check is platform conditional; Dell candidate is Linux, but native/random/library initialization remains a separate effect",
+    "Existing pycache file identities do not prove executed source; proposed fresh pycache prefix with -B changes cache selection and must remain explicit",
+    "Selected missing distributor-local candidates are limited path observations; static DT_NEEDED and AST syntax do not prove complete runtime closure",
+    "Seven normal metadata queries remain candidates; no normal Python startup, SDK import, configure/build or project function was executed"
+  ],
+  "normal_startup_or_NumPy_import_admitted": false,
+  "configuration_or_project_build_admitted": false,
+  "runtime_dependency_closure_verified": false,
+  "source_changes": 0,
+  "actual_candidate_commands_executed": 0,
+  "project_functions_executed": 0,
+  "next_unit": "Bounded read-only completion of Apport exception-path imports and native/provider initialization identities; then review exact normal metadata execution scope",
+  "publication": "Compact authored review/storage only; full dependency sources, identities, AST and raw packet excluded",
+  "phase5": "NOT_ACCEPTED",
+  "phase6": "NOT_STARTED",
+  "old_checker_archives_and_failures_preserved": true
+}
