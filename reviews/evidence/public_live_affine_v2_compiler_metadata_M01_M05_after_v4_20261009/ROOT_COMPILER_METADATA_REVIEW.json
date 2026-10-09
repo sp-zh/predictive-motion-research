@@ -1,0 +1,41 @@
+{
+  "decision": "PASS_FIVE_BOUNDED_COMPILER_METADATA_OBSERVATIONS_ONLY",
+  "baseline": "e10427ff96fcfdf3cadf4262f48394ab76f129f7",
+  "ready_sha256": "8b280748298c84b513dd7743f677e0015244af3cd1569839b949658a9286d63c",
+  "payloads_verified": 28,
+  "unchanged_source_guards_verified": 116,
+  "queries_completed_once": 5,
+  "queries_exit_zero": 5,
+  "queries_timed_out": 0,
+  "before_after_tool_and_representative_input_identities_unchanged": 11,
+  "actual_default_standard_macro": {
+    "literal": "201703L",
+    "integer": 201703
+  },
+  "actual_explicit_CXX17_standard_macro": {
+    "literal": "201703L",
+    "integer": 201703
+  },
+  "actual_sysroot_query_output_bytes": 0,
+  "sysroot_interpretation": "Actual empty configured string; no filesystem root inferred",
+  "actual_include_search_directory_count": 7,
+  "independent_review": [
+    "Checked actual per-command argv against exact M01-M05 recipe; controlled environment and each raw stdout/stderr SHA matched execution record",
+    "Parsed default and explicit-profile macro literals independently from actual separate outputs",
+    "Parsed seven include paths from original verbose output; this is not a complete include/header closure",
+    "Reviewed isolated stdlib harness and transport source; only five compiler metadata commands, with first-error stop and before/after identity checks",
+    "M03 names cc1plus in verbose output; no complete subprocess/loader/RSS trace was collected",
+    "Full identities, helper argv, harness and raw outputs remain in excluded archive; public Git receives compact authored review/storage only"
+  ],
+  "project_translation_units_compiled": 0,
+  "project_objects_libraries_or_executables_created": 0,
+  "project_functions_or_SDK_imports_executed": 0,
+  "configuration_or_project_build_admitted": false,
+  "macro_preseed_applied": false,
+  "full_dependency_loader_header_RSS_closure_verified": false,
+  "source_changes": 0,
+  "remaining": "Python/pkg-config/CMake conditional configuration effects require separate reviewed scopes before full library configure/build",
+  "phase5": "NOT_ACCEPTED",
+  "phase6": "NOT_STARTED",
+  "old_checker_archives_and_failures_preserved": true
+}
