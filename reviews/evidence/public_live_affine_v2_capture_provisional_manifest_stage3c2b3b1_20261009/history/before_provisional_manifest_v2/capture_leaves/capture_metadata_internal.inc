@@ -14,11 +14,11 @@
     try{need(p&&p->evidence_active&&p->evidence_generation==generation,"evidence view outside borrowed generation");p->evidenceHealthy();}
     catch(const std::exception& e){if(p)evidencePoison(*p,e.what());throw;}catch(...){if(p)evidencePoison(*p,"NONSTANDARD_EVIDENCE_VIEW_FAILURE");throw;}
   }
-  static OwnedReservation evidenceFrame(CaptureLeafState& p,Count slots){p.evidenceHealthy();need((!p.manifest_active||p.manifest_internal)&&p.owner&&p.status.attached&&!p.evidence_active&&!p.string_active&&!p.original_active&&!p.sample_active&&!p.leaf_active&&!p.forensic_active,"evidence owner absent/reentry");return p.budget.reserve(slots);}
+  static OwnedReservation evidenceFrame(CaptureLeafState& p,Count slots){p.evidenceHealthy();need(p.owner&&p.status.attached&&!p.evidence_active&&!p.string_active&&!p.original_active&&!p.sample_active&&!p.leaf_active&&!p.forensic_active,"evidence owner absent/reentry");return p.budget.reserve(slots);}
   struct EvidenceGuard {
     CaptureLeafState& p;OwnedReservation frame;
     EvidenceGuard(CaptureLeafState& owner,Count slots):p(owner),frame(evidenceFrame(p,slots)){
-      p.evidenceHealthy();need((!p.manifest_active||p.manifest_internal)&&p.owner&&p.status.attached&&!p.evidence_active&&!p.string_active&&!p.original_active&&!p.sample_active&&!p.leaf_active&&!p.forensic_active,"evidence owner absent/reentry");p.budget.chargeScratchOrCopy(slots);p.evidence_active=true;
+      p.evidenceHealthy();need(p.owner&&p.status.attached&&!p.evidence_active&&!p.string_active&&!p.original_active&&!p.sample_active&&!p.leaf_active&&!p.forensic_active,"evidence owner absent/reentry");p.budget.chargeScratchOrCopy(slots);p.evidence_active=true;
     }
     ~EvidenceGuard(){p.string_active=false;p.evidence_active=false;}
   };
@@ -81,10 +81,7 @@
       auto emit=[&](MetadataFact f){p->evidenceHealthy();p->budget.chargeScratchOrCopy(40);utf8(f.text);utf8(f.family);utf8(f.field);
         MetadataBinding b{p,std::move(f),++p->evidence_generation};const MetadataLeafView view(&b);sink(view);p->evidenceHealthy();};
       auto text=[&](const char* family,const char* field,std::string_view s,Count i=0,Count j=0){MetadataFact f;f.family=family;f.field=field;f.index=i;f.subindex=j;f.kind=MetadataKind::Utf8;f.text=s;emit(f);};
-      auto u=[&](const char* family,const char* field,Count value,Count i=0,Count j=0){MetadataFact f;f.family=family;f.field=field;f.index=i;f.subindex=j;f.kind=MetadataKind::U64;f.unsigned_value=value;
-        if(p->manifest_active&&p->manifest_internal&&p->manifest&&std::string_view(family)=="quota"){const auto& q=p->manifest->snapshot_;
-          const std::string_view key=field;if(key=="current_live_slots")f.unsigned_value=q.live;else if(key=="current_cumulative_charges")f.unsigned_value=q.charges;else if(key=="actual_metadata_bytes_so_far")f.unsigned_value=q.metadata_bytes;else if(key=="actual_unique_output_bytes_so_far")f.unsigned_value=q.output_bytes;else if(key=="live_ceiling")f.unsigned_value=q.live_ceiling;else if(key=="charge_ceiling")f.unsigned_value=q.charge_ceiling;else if(key=="output_ceiling")f.unsigned_value=q.output_ceiling;else if(key=="metadata_ceiling")f.unsigned_value=q.metadata_ceiling;
-        }emit(f);};
+      auto u=[&](const char* family,const char* field,Count value,Count i=0,Count j=0){MetadataFact f;f.family=family;f.field=field;f.index=i;f.subindex=j;f.kind=MetadataKind::U64;f.unsigned_value=value;emit(f);};
       auto integer=[&](const char* family,const char* field,std::int64_t value,Count i=0){MetadataFact f;f.family=family;f.field=field;f.index=i;f.kind=MetadataKind::I64;f.signed_value=value;emit(f);};
       auto boolean=[&](const char* family,const char* field,bool value,Count i=0){MetadataFact f;f.family=family;f.field=field;f.index=i;f.kind=MetadataKind::Boolean;f.boolean_value=value;emit(f);};
       auto missing=[&](const char* family,const char* field,const char* why,Count i=0,Count j=0){MetadataFact f;f.family=family;f.field=field;f.index=i;f.subindex=j;f.kind=MetadataKind::Missing;f.text=why;emit(f);};

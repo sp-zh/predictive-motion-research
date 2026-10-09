@@ -260,8 +260,7 @@ struct CostFactory {
         partition->status.cost_consumed=true;
         need(partition->source_origin==out.anchor_->assembly.assembly().captureOriginToken()&&partition->budget.sameCase(budget.share()),"cost partition source/case mismatch");
         need(cache==16&&out.anchor_->recipe.owned_input_,"capture path requires owned complete decoder cache receipt");
-        const auto& o=partition->status;need((o.workspace_version==1&&o.transient_slots==48&&o.manifest_retained_slots==0)||(o.workspace_version==2&&o.transient_slots==160&&o.manifest_retained_slots==16),"unknown capture workspace policy");
-        need(o.credit_slots==sum({o.transient_slots,o.manifest_retained_slots,mul(4,o.receipt_limit)}),"actual capture workspace credit formula mismatch");capture_credit=o.credit_slots;
+        capture_credit=partition->status.credit_slots;
       }
       data=std::make_unique<CostStorage>(out.anchor_,budget,plan,f,identity,cache,capture_credit);
       if(partition){partition->status.allocated_work=data->work_capacity;

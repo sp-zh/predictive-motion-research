@@ -48,7 +48,6 @@ class CostDecodeOutcome final {
 class CaptureWorkspaceGrant;
 CostDecodeOutcome decodeAndBuildCostWithCaptureWorkspaceV1(AffineAssemblyOutcome&&,CaptureWorkspaceGrant&&,
                                                          const InitialCostConsumer& consumer={});
-CostDecodeOutcome decodeAndBuildCostWithCaptureWorkspaceV2ProvisionalManifest(AffineAssemblyOutcome&&,CaptureWorkspaceGrant&&,const InitialCostConsumer& consumer={});
 CostDecodeOutcome decodeAndBuildCost(AffineAssemblyOutcome&&,
                                     const InitialCostConsumer& consumer={});
 // No CLI or output publisher. This function is source, not an execution release.

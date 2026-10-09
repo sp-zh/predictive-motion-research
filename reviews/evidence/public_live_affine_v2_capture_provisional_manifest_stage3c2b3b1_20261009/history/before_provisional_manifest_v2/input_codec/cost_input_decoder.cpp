@@ -182,14 +182,13 @@ struct CostDecoderState {
   }catch(const std::exception& e){fail(e.what());throw;}catch(...){fail("NONSTANDARD_EOF_FAILURE");throw;}}
 };
 struct CostInputFactory {
-  static CostDecodeOutcome withPartition(AffineAssemblyOutcome&& a,CaptureWorkspaceGrant&& grant,const InitialCostConsumer& c,Count version=1){return construct(std::move(a),c,std::move(grant.state_),version);}
+  static CostDecodeOutcome withPartition(AffineAssemblyOutcome&& a,CaptureWorkspaceGrant&& grant,const InitialCostConsumer& c){return construct(std::move(a),c,std::move(grant.state_),true);}
   static CostDecodeOutcome construct(AffineAssemblyOutcome&& source,const InitialCostConsumer& consumer,
-                                    std::shared_ptr<CapturePartitionState> partition={},Count required_version=0){
-    const bool require_partition=required_version!=0;
+                                    std::shared_ptr<CapturePartitionState> partition={},bool require_partition=false){
     CostDecodeOutcome out(std::move(source));out.capture_partition_=std::move(partition);try{
       need(!require_partition||out.capture_partition_,"capture path requires a genuine nonmoved partition");
       if(out.capture_partition_){auto& st=*out.capture_partition_;const bool used=st.status.attempted;st.status.attempted=true;
-        need(!used,"capture partition admission already attempted");need(st.status.workspace_version==required_version,"versioned capture decoder/grant mismatch");need(st.status.prepared&&!st.status.refused,"capture partition preparation refused");}
+        need(!used,"capture partition admission already attempted");need(st.status.prepared&&!st.status.refused,"capture partition preparation refused");}
       need(out.original_.hasCompleteAssembly(),"complete owned assembly required for cost decode");auto& a=out.original_.assembly();
       out.requested_=a.boundCostInputIdentity();const auto& plan=a.costPlan();auto& budget=a.costBudget();const auto shape=a.boundCostShape();
       if(out.capture_partition_){auto& st=*out.capture_partition_;
@@ -236,6 +235,5 @@ void CostDecodeOutcome::refuse(const char* why) noexcept{if(refused_)return;refu
 CostDecodeOutcome decodeAndBuildCostWithCaptureWorkspaceV1(AffineAssemblyOutcome&& a,CaptureWorkspaceGrant&& grant,const InitialCostConsumer& c){
   return detail::CostInputFactory::withPartition(std::move(a),std::move(grant),c);
 }
-CostDecodeOutcome decodeAndBuildCostWithCaptureWorkspaceV2ProvisionalManifest(AffineAssemblyOutcome&& a,CaptureWorkspaceGrant&& grant,const InitialCostConsumer& c){return detail::CostInputFactory::withPartition(std::move(a),std::move(grant),c,2);}
 CostDecodeOutcome decodeAndBuildCost(AffineAssemblyOutcome&& a,const InitialCostConsumer& c){return detail::CostInputFactory::construct(std::move(a),c);}
 }

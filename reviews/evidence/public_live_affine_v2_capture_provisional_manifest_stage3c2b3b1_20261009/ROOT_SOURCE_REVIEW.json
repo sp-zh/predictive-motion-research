@@ -1,0 +1,88 @@
+{
+  "decision": "PASS_SOURCE_PROVISIONAL_MANIFEST_AND_INDEPENDENT_READER_ONLY",
+  "prerequisite_backup": "a27cdd8c5b779b88e2e92287b6e7ae665b263036",
+  "validation": "Independent static source, field alias correspondence, private source authority, V2 actual allocation, ticket lifetime, typed reader grammar, actual FD/hash/byte closure and integer accounting review. No compile, writer, reader, parser fixture, metadata/reference/coverage, sort, numerical or Model function executed.",
+  "criteria": "ROOT_REVIEW_CRITERIA.json",
+  "resolved_findings": [
+    {
+      "id": "SNAPSHOT_TICKET_MOVE_LIFETIME",
+      "resolution": "Custom move assignment transfers complete old state to a local whose snapshot is destroyed before its 16-slot ticket."
+    },
+    {
+      "id": "TYPED_READER_DIAGNOSTICS",
+      "resolution": "Current numeric attempt clears old validity before parse/quote; validated I64 stores actual modulo-2^64 bits, invalid/overflow tokens stay invalid. Strings clear previous numeric validity."
+    },
+    {
+      "id": "NONSTANDARD_FACTORY_FAILURE",
+      "resolution": "Retained attempt receives standard/nonstandard first refusal with bounded charged error copy or explicit fallback; source and partial provisional artifact remain retained."
+    },
+    {
+      "id": "OBJECT_FORMAT_METADATA_CAP",
+      "resolution": "Obsolete 16-field lower bound 15979020 exceeds 8388608. Fixed 43-column private attempts, explicit complete observation/string aliases, 24-column references and 20-column coverage preserve all data. Declared conditional byte upper 8136962 includes first-root increment123; not measured file or total admission."
+    },
+    {
+      "id": "COLUMN_FAILURE_CURSOR",
+      "resolution": "Column cursor and invalid numeric state are set before any comma/value operation; nested dimensions/observations have parent-column granularity only."
+    },
+    {
+      "id": "STALE_CONTRACT",
+      "resolution": "COLUMNS_2 contract and complete 79-field static alias map replace stale MANIFEST_1 description; prior versions retained."
+    }
+  ],
+  "observations": [
+    "V2 credit is actual transient160 + retained16 +4*receipt_limit, reduces actual CostStorage allocation before use, retains original active-work checks and all caps. V1/generic remain separate and cannot mint V2 authority.",
+    "Private same owner/source/cost/Case/partition admission, single-use latch, actual held reduced allocation and explicit live versus retained-failure diagnostic modes deny caller record/hash/count authority, retry and restored capture acceptance.",
+    "Writer-time ledger snapshot and section availability remain frozen through exclusive private event traversal. Writer96 and reader96 lifetimes never overlap; producer40 + snapshot16 yield isolated152 peak. No resident DOM/numeric/index/dictionary array is introduced; logical tickets are not allocator/RSS proof.",
+    "43 private row columns and typed reference/coverage fields match writer and independent strict reader. Dictionary/root/mainSHA and CW1/CR1 aliases require exact actual-source equality, flags/cursors/bits/stages/errors/hashes; expanded variants retain failures. Original projected event values are statically mapped from the same private rows, not individually re-compared as runtime MetadataFact values.",
+    "Safe nofollow O_EXCL provisional file, regular single-link FD identity, actual successful short-write byte charges and physical stream hash, file/directory fsync, independent read FD grammar/size/inode/EOF/SHA closure remain source requirements. Reader never calls writer formatter/parser logic and does not charge the emitted metadata twice.",
+    "First refusal, physical versus consumed cursor, hash validity and pending bytes remain distinct. No rename, unlink, accepted root READY, COMPLETE_COMPONENT, reconstruction or phase acceptance is produced, including exact provisional readback. All mandatory unavailable execution/context/source-member/early-failure data stay missing."
+  ],
+  "remaining_obligations": [
+    "Reviewed actual process/argv/stdout/stderr/exit/claim/source/SDK-member and prevalidation-context snapshots, genuine early Model/pre-affine failure owners and opaque-invalid-UTF8 publication policy.",
+    "Independent reference reconstruction, complete unique-file/inverse-extra/missing/overlap and aggregate lifetime/cumulative/output/metadata admission, immutable failure publication and atomic root READY with independent whole reader.",
+    "Exact source/build/SDK/FP/protocol freeze and deferred grammar/mutation/failure/numeric/Model tests before separately authorized runs."
+  ],
+  "executions": {
+    "configure": 0,
+    "compile": 0,
+    "empty_kernel": 0,
+    "writer": 0,
+    "reader": 0,
+    "IO": 0,
+    "parser_fixture": 0,
+    "metadata": 0,
+    "reference": 0,
+    "coverage": 0,
+    "sort": 0,
+    "numeric": 0,
+    "matrix": 0,
+    "Model_constructor": 0,
+    "Model_metadata": 0,
+    "Model_rollout": 0,
+    "plant": 0,
+    "solver": 0,
+    "main": 0,
+    "scorer": 0
+  },
+  "storage": {
+    "Mac_packet": "/private/tmp/public_live_affine_v2_capture_provisional_manifest_stage3c2b3b1",
+    "Dell_copy_verified": false,
+    "Git_backup": "Pending commit and remote verification"
+  },
+  "original_checkers_freezes_and_failures_preserved": true,
+  "reference_reconstruction_verified": false,
+  "full_capture_complete": false,
+  "full_flow_accepted": false,
+  "phase5": "NOT_ACCEPTED",
+  "phase6": "NOT_STARTED",
+  "recorded_utc": "2026-10-09T04:46:57.746664+00:00",
+  "packet_READY_sha256": "9e04c33e5e6b60d367c1cb69c5228396742461d75408a68711d98a67d2d13909",
+  "verified_payload_count": 57,
+  "verified_preimport_guard_count": 83,
+  "source_contract": {
+    "role": "provisional_manifest_contract",
+    "path": "tools/phase5_public_live_affine_v2/capture_leaves/PROVISIONAL_MANIFEST_CONTRACT.md",
+    "bytes": 14586,
+    "sha256": "4e807aee6fa108eff7c7a8bd2cb04bea622e24710d667cbe25b4563744941dd8"
+  }
+}

@@ -1,6 +1,5 @@
 #include "capture_leaves.hpp"
 #include "capture_metadata.hpp"
-#include "provisional_manifest_io.hpp"
 #include "../capture_workspace/partition_internal.hpp"
 #include <algorithm>
 #include <initializer_list>
@@ -22,11 +21,10 @@ struct CaptureLeafState {
   const UsedTermView* term=nullptr;const CostEvaluationView* canonical=nullptr;const AffineAssemblyOutcome* original_source=nullptr;
   CaptureLeafObservation status;ForensicBorrowObservation forensic;bool forensic_active=false;bool original_active=false,leaf_active=false;Count generation=0,metadata_payload=0;bool evidence_active=false,evidence_refused=false,string_active=false;Count evidence_generation=0;std::string evidence_error;
   std::vector<BoundLeafAttempt> attempts;bool attempts_sorted=false;
-  bool manifest_active=false,manifest_internal=false,manifest_attempted=false;std::optional<ProvisionalManifestAttempt> manifest;
   CaptureLeafState(std::shared_ptr<const void> origin,std::shared_ptr<CapturePartitionState> p,SharedCaseBudget b)
     :source_origin(std::move(origin)),partition(std::move(p)),budget(std::move(b)){}
-  void reject(const char* why) noexcept{if(evidence_active||manifest_active)rejectEvidence(why);if(status.refused)return;status.refused=true;try{status.first_error=why?why:"LEAF_CAPTURE_REFUSAL";}catch(...){}}
-  void rejectForensic(const char* why) noexcept{if(evidence_active||manifest_active)rejectEvidence(why);if(forensic.refused)return;forensic.refused=true;try{forensic.first_error=why?why:"FORENSIC_BORROW_REFUSAL";}catch(...){}}
+  void reject(const char* why) noexcept{if(evidence_active)rejectEvidence(why);if(status.refused)return;status.refused=true;try{status.first_error=why?why:"LEAF_CAPTURE_REFUSAL";}catch(...){}}
+  void rejectForensic(const char* why) noexcept{if(evidence_active)rejectEvidence(why);if(forensic.refused)return;forensic.refused=true;try{forensic.first_error=why?why:"FORENSIC_BORROW_REFUSAL";}catch(...){}}
   void rejectEvidence(const char* why) noexcept{if(evidence_refused)return;evidence_refused=true;try{evidence_error=why?why:"EVIDENCE_BORROW_REFUSAL";}catch(...){}}
   void evidenceHealthy() const{need(!evidence_refused,evidence_error.empty()?"evidence first refusal retained":evidence_error.c_str());}
   void forensicHealthy() const{need(!forensic.refused,forensic.first_error.empty()?"forensic first refusal retained":forensic.first_error.c_str());}
@@ -41,7 +39,6 @@ struct ReferenceBinding {std::shared_ptr<CaptureLeafState> owner;ReferenceFact f
 struct ObligationBinding {std::shared_ptr<CaptureLeafState> owner;CoverageObligation fact;Count generation;};
 struct CaptureLeafFactory {
 #include "capture_metadata_internal.inc"
-#include "provisional_manifest_internal.inc"
   static CaptureLeafSession prepare(const AffineAssemblyOutcome& source,const CaptureWorkspaceGrant& grant){
     need(source.hasCompleteAssembly()&&grant.state_&&grant.readyForOneAdmission(),"genuine live source/ready private partition required");
     need(source.captureOriginToken()==grant.state_->source_origin&&source.captureBudget().sameCase(grant.state_->budget),"leaf session foreign source/case");
@@ -55,7 +52,7 @@ struct CaptureLeafFactory {
   }
   static ChunkScalar floating(double x,bool forensic){const auto s=ChunkScalar::f64(x);return forensic?ChunkScalar::failureF64Bits(s.bits):s;}
   static void visit(std::shared_ptr<CaptureLeafState> p,NumericLeafInfo metadata,ChunkScalarSource getter,const NumericLeafConsumer& consumer,const MathCaptureTrace* frontier=nullptr,bool forensic_only=false){
-    try{if(forensic_only){p->forensicHealthy();need(p->forensic_active,"forensic scope absent");}else p->healthy();need(!p->manifest_active&&!p->evidence_active&&!p->leaf_active&&consumer,"leaf reentry/empty consumer");
+    try{if(forensic_only){p->forensicHealthy();need(p->forensic_active,"forensic scope absent");}else p->healthy();need(!p->evidence_active&&!p->leaf_active&&consumer,"leaf reentry/empty consumer");
       p->leaf_active=true;const Count generation=++p->generation;LeafBinding binding{p,metadata,std::move(getter),generation,frontier,forensic_only};const NumericLeafView view(&binding);
       try{consumer(view);p->leaf_active=false;}catch(...){p->leaf_active=false;throw;}if(forensic_only)p->forensicHealthy();else p->healthy();
     }catch(const std::exception& e){if(forensic_only)p->rejectForensic(e.what());else p->reject(e.what());throw;}catch(...){if(forensic_only)p->rejectForensic("NONSTANDARD_FORENSIC_LEAF_FAILURE");else p->reject("NONSTANDARD_LEAF_BORROW_FAILURE");throw;}
@@ -98,7 +95,7 @@ struct CaptureLeafFactory {
     }catch(const std::exception& e){p->reject(e.what());throw;}catch(...){p->reject("NONSTANDARD_BOUND_LEAF_EXPORT_FAILURE");throw;}
   }
   static void originalEnter(std::shared_ptr<CaptureLeafState> p,const UsedTermView* term,const CostEvaluationView* canonical,const std::function<void(const OriginalLeafBatch&)>& sink){
-    try{p->healthy();need(!p->manifest_active&&!p->evidence_active&&!p->original_active&&!p->leaf_active,"original leaf reentry");
+    try{p->healthy();need(!p->evidence_active&&!p->original_active&&!p->leaf_active,"original leaf reentry");
       const auto origin=term?term->captureOriginToken():canonical->captureOriginToken();const auto cost=term?term->captureCostToken():canonical->captureCostToken();
       const auto partition=term?term->capturePartition():canonical->capturePartition();need(origin==p->source_origin&&partition==p->partition,"original leaf source/partition mismatch");
       need(term?term->originalConsumerScope():canonical->originalConsumerScope(),"later numerical replay cannot become original leaf");
@@ -135,7 +132,7 @@ struct CaptureLeafFactory {
     }catch(const std::exception& e){p->reject(e.what());throw;}catch(...){p->reject("NONSTANDARD_ORIGINAL_LEAF_BIND_FAILURE");throw;}
   }
   static void stored(std::shared_ptr<CaptureLeafState> p,R role,Count first,Count second,const NumericLeafConsumer& consumer){
-    try{p->healthy();need(p->owner&&p->status.attached&&!p->original_active&&!p->sample_active&&!p->manifest_active&&!p->evidence_active&&!p->leaf_active,"stored leaf owner absent/reentry/original phase");
+    try{p->healthy();need(p->owner&&p->status.attached&&!p->original_active&&!p->sample_active&&!p->evidence_active&&!p->leaf_active,"stored leaf owner absent/reentry/original phase");
       switch(role){
         case R::RawFinalState:case R::EmbeddingControl:case R::EmbeddingOffset:case R::ChosenInitial:case R::ChosenInitialKind:case R::EvaluationControl:
         case R::CachedMetadataDimensions:case R::ActualContextInitial:case R::PreviousControlHistory:case R::ActualBoundaryCounters:case R::RawSubstepValueIndicesAggregate:
@@ -247,7 +244,7 @@ struct CaptureLeafFactory {
     }catch(const std::exception& e){p->reject(e.what());throw;}catch(...){p->reject("NONSTANDARD_STORED_LEAF_FAILURE");throw;}
   }
   static void attach(std::shared_ptr<CaptureLeafState> state,CostDecodeOutcome&& source){
-  need(static_cast<bool>(state),"moved leaf session");auto& p=*state;try{need(!p.status.attached&&!p.original_active&&!p.sample_active&&!p.manifest_active&&!p.evidence_active&&!p.leaf_active&&p.gate,"leaf source already attached/active/gate absent");
+  need(static_cast<bool>(state),"moved leaf session");auto& p=*state;try{need(!p.status.attached&&!p.original_active&&!p.sample_active&&!p.evidence_active&&!p.leaf_active&&p.gate,"leaf source already attached/active/gate absent");
     // Transfer before matching so failed binding retains genuine return as well.
     p.owner.emplace(bindCaptureInventory(std::move(source),std::move(*p.gate)));p.status.attached=true;
     const auto& actual=p.owner->genuineSource();need(actual.originalAssembly().captureOriginToken()==p.source_origin&&actual.capture_partition_==p.partition,"returned leaf source/partition mismatch");
@@ -258,7 +255,7 @@ struct CaptureLeafFactory {
   }
 
   static void sampleHealthy(const std::shared_ptr<CaptureLeafState>& p){
-    try{p->healthy();need(p->sample_active&&p->sample&&!p->original_active&&!p->manifest_active&&!p->evidence_active,"sample leaf outside actual callback");}
+    try{p->healthy();need(p->sample_active&&p->sample&&!p->original_active&&!p->evidence_active,"sample leaf outside actual callback");}
     catch(const std::exception& e){p->reject(e.what());throw;}catch(...){p->reject("NONSTANDARD_SAMPLE_SCOPE_FAILURE");throw;}
   }
   static void sampleLeaf(std::shared_ptr<CaptureLeafState> p,R role,const NumericLeafConsumer& consumer){
@@ -273,7 +270,7 @@ struct CaptureLeafFactory {
     }catch(const std::exception& e){p->reject(e.what());throw;}catch(...){p->reject("NONSTANDARD_SAMPLE_LEAF_BIND_FAILURE");throw;}
   }
   static void streamSamples(std::shared_ptr<CaptureLeafState> p,const std::function<void(const SampleLeafBatch&)>& sink){
-    try{need(!p->manifest_active&&!p->evidence_active,"sample sequence inside evidence borrow");const bool attempted=p->status.samples_attempted;p->status.samples_attempted=true;
+    try{need(!p->evidence_active,"sample sequence inside evidence borrow");const bool attempted=p->status.samples_attempted;p->status.samples_attempted=true;
       p->healthy();need(!attempted&&p->owner&&p->status.attached&&!p->original_active&&!p->sample_active&&!p->leaf_active&&!p->forensic_active&&!p->evidence_active&&sink,"sample sequence missing/reused/reentrant");
       const auto frozen_sink=sink;p->healthy();need(static_cast<bool>(frozen_sink),"frozen sample callback empty");
       applied(*p);const auto& a=p->owner->genuineSource().originalAssembly();const auto& samples=a.originalNormalization().maps().samples();
@@ -315,7 +312,7 @@ void SampleLeafBatch::exportLeaf(R role,const std::string& root,const std::strin
 CaptureLeafSession::CaptureLeafSession(std::shared_ptr<detail::CaptureLeafState> s):state_(std::move(s)){}
 CaptureLeafSession::CaptureLeafSession(CaptureLeafSession&&) noexcept=default;CaptureLeafSession& CaptureLeafSession::operator=(CaptureLeafSession&&) noexcept=default;CaptureLeafSession::~CaptureLeafSession()=default;
 InitialCostConsumer CaptureLeafSession::originalConsumer(const std::function<void(const OriginalLeafBatch&)>& term,const std::function<void(const OriginalLeafBatch&)>& canonical){
-  need(static_cast<bool>(state_),"moved leaf session");try{need(static_cast<bool>(state_->gate),"leaf original gate absent");state_->healthy();need(!state_->manifest_active&&!state_->evidence_active,"original consumer issuance inside evidence scope");const auto state=state_;
+  need(static_cast<bool>(state_),"moved leaf session");try{need(static_cast<bool>(state_->gate),"leaf original gate absent");state_->healthy();need(!state_->evidence_active,"original consumer issuance inside evidence scope");const auto state=state_;
     return state_->gate->consumer([state,term](const UsedTermView& v){detail::CaptureLeafFactory::originalEnter(state,&v,nullptr,term);},[state,canonical](const CostEvaluationView& v){detail::CaptureLeafFactory::originalEnter(state,nullptr,&v,canonical);});
   }catch(const std::exception& e){state_->reject(e.what());throw;}catch(...){state_->reject("NONSTANDARD_LEAF_CONSUMER_ISSUANCE_FAILURE");throw;}
 }
@@ -324,7 +321,7 @@ void CaptureLeafSession::withStoredLeaf(R r,Count first,Count second,const Numer
 void CaptureLeafSession::exportStoredLeaf(R r,Count first,Count second,const std::string& root,const std::string& name){withStoredLeaf(r,first,second,[&](const NumericLeafView& leaf){detail::CaptureLeafFactory::exportBound(state_,leaf,root,name);});}
 void CaptureLeafSession::streamSamplesOnce(const std::function<void(const SampleLeafBatch&)>& sink){need(static_cast<bool>(state_),"moved leaf session");detail::CaptureLeafFactory::streamSamples(state_,sink);}
 void CaptureLeafSession::withDefinedRegions(Count layer,const NumericLeafConsumer& visitor) const{
-  need(static_cast<bool>(state_),"moved leaf session");auto p=state_;try{need(p->owner&&p->status.attached,"defined region owner absent");p->forensicHealthy();need(!p->manifest_active&&!p->evidence_active&&!p->leaf_active&&!p->original_active&&!p->sample_active&&!p->forensic_active,"defined region reentry");
+  need(static_cast<bool>(state_),"moved leaf session");auto p=state_;try{need(p->owner&&p->status.attached,"defined region owner absent");p->forensicHealthy();need(!p->evidence_active&&!p->leaf_active&&!p->original_active&&!p->sample_active&&!p->forensic_active,"defined region reentry");
   p->forensic_active=true;struct Guard{bool& flag;Guard(bool& f):flag(f){}~Guard(){flag=false;}} guard(p->forensic_active);++p->forensic.generations;const auto& decoded=p->owner->genuineSource();Count ordinal=0;
   auto observe=[&](const RetainedNumericRegionView& region){auto frame=p->budget.reserve(20);p->budget.chargeScratchOrCopy(20);auto meta=detail::CaptureLeafFactory::info(R::FailureDefinedRegions,layer,ordinal++,{region.definedCount()},true);meta.has_composite_frontier=true;meta.state=DefinedComputedState::DefinedNotComputed;meta.assigned_prefix_known=false;meta.traversal="actual-defined-range-with-strided-write-frontiers";
     detail::CaptureLeafFactory::visit(p,meta,[&region](Count i){const auto value=ChunkScalar::f64(region.value(i));return ChunkScalar::failureF64Bits(value.bits);},visitor,&region.trace(),true);};
@@ -337,7 +334,7 @@ void CaptureLeafSession::withDefinedRegions(Count layer,const NumericLeafConsume
 CaptureLeafObservation CaptureLeafSession::observation() const{need(static_cast<bool>(state_),"moved leaf session");return state_->status;}
 ForensicBorrowObservation CaptureLeafSession::forensicObservation() const{need(static_cast<bool>(state_),"moved leaf session");return state_->forensic;}
 const std::vector<BoundLeafAttempt>& CaptureLeafSession::retainedAttempts() const{need(static_cast<bool>(state_),"moved leaf session");return state_->attempts;}
-void CaptureLeafSession::close(){need(static_cast<bool>(state_),"moved leaf session");try{state_->healthy();need(!state_->original_active&&!state_->sample_active&&!state_->manifest_active&&!state_->evidence_active&&!state_->leaf_active,"leaf close inside callback");state_->status.closed=true;}catch(const std::exception& e){state_->reject(e.what());throw;}catch(...){state_->reject("NONSTANDARD_LEAF_CLOSE_FAILURE");throw;}}
+void CaptureLeafSession::close(){need(static_cast<bool>(state_),"moved leaf session");try{state_->healthy();need(!state_->original_active&&!state_->sample_active&&!state_->evidence_active&&!state_->leaf_active,"leaf close inside callback");state_->status.closed=true;}catch(const std::exception& e){state_->reject(e.what());throw;}catch(...){state_->reject("NONSTANDARD_LEAF_CLOSE_FAILURE");throw;}}
 MetadataLeafView::MetadataLeafView(detail::MetadataBinding* b):binding_(b){}
 const MetadataFact& MetadataLeafView::fact() const{need(binding_,"absent metadata binding");detail::CaptureLeafFactory::evidenceCheck(binding_->owner,binding_->generation);return binding_->fact;}
 void MetadataLeafView::withJsonString(const std::function<void(std::string_view)>& caller) const{
@@ -360,11 +357,5 @@ const CoverageObligation& CoverageObligationView::obligation() const{need(bindin
 void CaptureLeafSession::withMetadata(const std::function<void(const MetadataLeafView&)>& sink) const{need(static_cast<bool>(state_),"moved leaf session");detail::CaptureLeafFactory::metadata(state_,sink);}
 void CaptureLeafSession::withReferences(const std::function<void(const ReferenceLeafView&)>& sink) const{need(static_cast<bool>(state_),"moved leaf session");detail::CaptureLeafFactory::references(state_,sink);}
 void CaptureLeafSession::withCoverageObligations(const std::function<void(const CoverageObligationView&)>& sink) const{need(static_cast<bool>(state_),"moved leaf session");detail::CaptureLeafFactory::coverage(state_,sink);}
-ProvisionalManifestAttempt& ProvisionalManifestAttempt::operator=(ProvisionalManifestAttempt&& other) noexcept{
-  if(this!=&other){ProvisionalManifestAttempt old(std::move(other));std::swap(snapshot_ticket_,old.snapshot_ticket_);std::swap(source_origin_,old.source_origin_);std::swap(cost_origin_,old.cost_origin_);std::swap(partition_,old.partition_);std::swap(snapshot_,old.snapshot_);std::swap(mode_,old.mode_);root_.swap(old.root_);name_.swap(old.name_);sha256_.swap(old.sha256_);std::swap(bytes_,old.bytes_);std::swap(device_,old.device_);std::swap(inode_,old.inode_);std::swap(directory_device_,old.directory_device_);std::swap(directory_inode_,old.directory_inode_);std::swap(metadata_events_,old.metadata_events_);std::swap(reference_events_,old.reference_events_);std::swap(coverage_events_,old.coverage_events_);std::swap(writer_,old.writer_);std::swap(reader_,old.reader_);std::swap(closed_,old.closed_);std::swap(exact_,old.exact_);}
-  return *this;
-}
-void CaptureLeafSession::captureProvisionalManifest(const std::string& root,const std::string& name,ProvisionalManifestMode mode){need(static_cast<bool>(state_),"moved leaf session");detail::CaptureLeafFactory::manifestCapture(state_,root,name,mode);}
-const ProvisionalManifestAttempt* CaptureLeafSession::retainedProvisionalManifest() const{need(static_cast<bool>(state_),"moved leaf session");return state_->manifest?&*state_->manifest:nullptr;}
 CaptureLeafSession prepareCaptureLeaves(const AffineAssemblyOutcome& source,const CaptureWorkspaceGrant& grant){return detail::CaptureLeafFactory::prepare(source,grant);}
 }

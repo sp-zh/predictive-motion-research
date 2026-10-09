@@ -3,9 +3,8 @@
 #include "capture_workspace.hpp"
 #include "numeric_chunks.hpp"
 namespace phase5_public_live_affine_v2 {
-enum class ProvisionalManifestMode;class ProvisionalManifestAttempt;
 class MetadataLeafView;class ReferenceLeafView;class CoverageObligationView;
-namespace detail {struct CaptureLeafState;struct CaptureLeafFactory;struct LeafBinding;struct ManifestWriter;struct ManifestReader;}
+namespace detail {struct CaptureLeafState;struct CaptureLeafFactory;struct LeafBinding;}
 struct NumericLeafInfo {
   RequiredRole role;Count primary=0,secondary=0,count=0,rank=0;
   std::array<Count,4> dimensions{};
@@ -70,7 +69,7 @@ class BoundLeafAttempt final {
   RequiredRole role_;Count primary_=0,secondary_=0;bool original_scope_=false,canonical_scope_=false,sample_scope_=false;Count sample_cell_=0,sample_tick_=0,sample_cycle_=0,sample_half_=0;
   ChunkWriteOutcome write_;std::optional<ChunkReadOutcome> readback_;
   bool comparison_attempted_=false,expected_valid_=false,mismatch_=false;Count mismatch_index_=0;ChunkScalar expected_,actual_;
-  friend struct detail::CaptureLeafFactory;friend struct detail::ManifestWriter;friend struct detail::ManifestReader;
+  friend struct detail::CaptureLeafFactory;
 };
 class CaptureLeafSession final {
  public:
@@ -89,8 +88,6 @@ class CaptureLeafSession final {
   void withMetadata(const std::function<void(const MetadataLeafView&)>&) const;
   void withReferences(const std::function<void(const ReferenceLeafView&)>&) const;
   void withCoverageObligations(const std::function<void(const CoverageObligationView&)>&) const;
-  void captureProvisionalManifest(const std::string& root,const std::string& name,ProvisionalManifestMode);
-  const ProvisionalManifestAttempt* retainedProvisionalManifest() const;
   void close();
   bool fullCaptureComplete() const noexcept{return false;}
  private:

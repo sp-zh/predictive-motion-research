@@ -101,7 +101,6 @@ CaptureInventoryOwner& CaptureInventoryOwner::operator=(CaptureInventoryOwner&&)
 CaptureInventoryOwner::~CaptureInventoryOwner()=default;
 const CostDecodeOutcome& CaptureInventoryOwner::genuineSource() const{return storage_?storage_->source:original_;}
 const CaptureFlowEnvelope& CaptureInventoryOwner::integerEnvelope() const{need(static_cast<bool>(storage_),"inventory source/plan binding refused");return storage_->envelope;}
-bool CaptureInventoryOwner::captureRequirementsAvailable() const noexcept{return storage_&&storage_->budget&&storage_->plan&&!refused_&&!storage_->catalogue_poisoned&&!storage_->catalogue_active;}
 const OriginalCaptureObservation* CaptureInventoryOwner::captureOriginalObservation() const noexcept{const auto gate=storage_?storage_->gate:original_gate_;return gate?&gate->observation:nullptr;}
 bool CaptureInventoryOwner::sourceComponentComplete() const noexcept{return storage_?storage_->source.hasCompleteCost():original_.hasCompleteCost();}
 std::string_view CaptureInventoryOwner::admissionRefusal() const noexcept{

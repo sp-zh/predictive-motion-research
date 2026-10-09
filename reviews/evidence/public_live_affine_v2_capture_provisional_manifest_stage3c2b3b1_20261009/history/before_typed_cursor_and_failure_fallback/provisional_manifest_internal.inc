@@ -1,0 +1,25 @@
+  static void manifestCapture(std::shared_ptr<CaptureLeafState> p,const std::string& root,const std::string& name,ProvisionalManifestMode mode){
+    try{need(!p->manifest_active&&!p->evidence_active&&!p->string_active&&!p->original_active&&!p->sample_active&&!p->leaf_active&&!p->forensic_active,"manifest reentry or active capture");const bool used=p->manifest_attempted;p->manifest_attempted=true;need(!used,"provisional manifest one attempt already consumed");p->evidenceHealthy();
+      need(mode==ProvisionalManifestMode::LiveUnacceptedDiagnostics||mode==ProvisionalManifestMode::RetainedFailureDiagnostics,"unknown provisional diagnostic mode");p->manifest.emplace(ProvisionalManifestAttempt{});auto& out=*p->manifest;out.mode_=mode;
+      need(p->owner&&p->status.attached&&p->partition,"actual attached source/partition absent");const auto& decoded=p->owner->genuineSource();const auto& a=decoded.originalAssembly();out.source_origin_=p->source_origin;out.cost_origin_=p->actual_cost_origin;out.partition_=p->partition;
+      const auto& st=p->partition->status;need(st.workspace_version==2&&st.transient_slots==160&&st.manifest_retained_slots==16&&std::string_view(st.policy)=="CAPTURE_WORKSPACE_PARTITION_2_PROVISIONAL_MANIFEST","manifest refuses V1/generic/unknown prepartition");
+      need(st.credit_slots==add(176,mul(4,st.receipt_limit))&&st.applied&&st.cost_consumed&&st.validated&&st.allocated_work==st.remaining_actual_work&&st.required_actual_work<=st.allocated_work,"actual V2 work allocation missing/mismatched");
+      need(p->partition->source_origin==p->source_origin&&a.captureOriginToken()==p->source_origin&&decoded.capture_partition_==p->partition&&p->budget.sameCase(p->partition->budget),"manifest foreign genuine source/case/partition");
+      need(decoded.cost_&&decoded.cost_->hasRetainedRegions(),"actual allocated reduced cost owner must still be retained");
+      if(mode==ProvisionalManifestMode::LiveUnacceptedDiagnostics){p->healthy();need(decoded.hasCompleteCost()&&!st.refused,"normal provisional diagnostic requires actual complete unrefused source");}
+      else need(p->status.closed||p->status.refused||!decoded.hasCompleteCost()||st.refused,"retained-failure mode requires actual closed/refused source; never a normal retry");
+      need(!root.empty()&&root.front()=='/'&&root.size()<=4096&&root.find('\0')==std::string::npos&&name.size()<=128,"bounded manifest paths before copy");
+      // Sorting has separate40 lifetime before IO96; ticket never double-counted.
+      orderedAttempts(p);out.snapshot_ticket_=std::make_shared<OwnedReservation>(p->budget.reserve(16));p->budget.chargeScratchOrCopy(16);
+      p->budget.chargeMetadataBytes(add(add(root.size(),name.size()),512));out.root_=root;out.name_=name;
+      out.snapshot_={p->budget.liveSlots(),p->budget.cumulativeCharges(),p->budget.metadataBytes(),p->budget.outputBytes(),p->budget.liveCeiling(),p->budget.chargeCeiling(),p->budget.outputCeiling(),ResourcePolicyV2::metadata_bytes,
+        decoded.hasCompleteCost()&&a.hasCompleteAssembly()&&a.originalNormalization().hasFullNominalMaps(),p->owner->captureRequirementsAvailable()};
+      p->manifest_active=true;struct ManifestGuard{CaptureLeafState& p;~ManifestGuard(){p.manifest_internal=false;p.manifest_active=false;}} guard{*p};
+      auto enter=[&](const auto& visit){p->evidenceHealthy();need(p->manifest_active&&!p->manifest_internal,"private manifest event source reentry");p->manifest_internal=true;struct InternalGuard{bool& active;~InternalGuard(){active=false;}} internal{p->manifest_internal};visit();p->evidenceHealthy();};
+      ManifestEventSource source;source.metadata=[&](const MetadataConsumer& sink){enter([&]{metadata(p,sink);});};source.references=[&](const ReferenceConsumer& sink){enter([&]{references(p,sink);});};source.coverage=[&](const CoverageConsumer& sink){enter([&]{coverage(p,sink);});};
+      ProvisionalManifestIO::write(p->budget,out,source);need(out.closed_&&!out.writer_.refused,out.writer_.first_error.empty()?"PROVISIONAL_WRITE_REFUSAL_DETAIL_RETAINED_IN_SOURCE":out.writer_.first_error.c_str());p->evidenceHealthy();
+      // Writer's96 ticket/FD/cache/lease are dead before independent reader96.
+      ProvisionalManifestIO::read(p->budget,out,source);need(out.exact_&&!out.reader_.refused,out.reader_.first_error.empty()?"PROVISIONAL_READ_REFUSAL_DETAIL_RETAINED_IN_SOURCE":out.reader_.first_error.c_str());p->evidenceHealthy();
+      // No rename/unlink/READY/COMPLETE_COMPONENT/full gate, even on exact readback.
+    }catch(const std::exception& e){if(p->manifest){auto& out=*p->manifest;auto* status=!out.closed_?&out.writer_:!out.exact_?&out.reader_:nullptr;if(status&&!status->refused){status->refused=true;status->stage="PRIVATE_ADMISSION_OR_CAPTURE_REFUSAL";try{const std::string_view why=e.what();need(why.size()<=512,"manifest exception metadata cap");p->budget.chargeMetadataBytes(why.size());status->first_error.assign(why);}catch(...){}}}evidencePoison(*p,e.what());throw;}catch(...){evidencePoison(*p,"NONSTANDARD_PROVISIONAL_MANIFEST_CAPTURE_FAILURE");throw;}
+  }

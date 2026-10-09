@@ -1,0 +1,32 @@
+{
+  "scope": "Static string-length/integer lower bound only; no writer/reader/parser/Model execution",
+  "N": 20,
+  "T": 200,
+  "S": 400,
+  "K": 0,
+  "J": 0,
+  "numeric_attempts": 11579,
+  "mandatory_attempt_fields_subset": [
+    "role",
+    "primary",
+    "secondary",
+    "generation",
+    "computed_state",
+    "original_scope",
+    "canonical_scope",
+    "sample_scope",
+    "cell",
+    "tick",
+    "cycle",
+    "half",
+    "rank",
+    "kind",
+    "classification",
+    "encoding"
+  ],
+  "subset_per_attempt_bytes_lower": 1380,
+  "subset_total_bytes_lower": 15979020,
+  "metadata_cap": 8388608,
+  "excluded_fields": "All actual dimensions/paths/SHA/frontiers/compare/other metadata/references/coverage",
+  "conclusion": "Original verbose repeated event object format cannot complete default full primitive attempt set within metadata cap. Compact lossless typed layout required; no cap growth/field omission."
+}
