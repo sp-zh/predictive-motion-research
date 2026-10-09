@@ -1,0 +1,402 @@
+{
+  "stage": "SOURCE_COMPLETE_COST_INPUT_CODEC_CAPTURE_CONTRACT_INITIALIZATION_3C1",
+  "recorded_utc": "2026-10-09T00:57:35.068246+00:00",
+  "prerequisite_backup": "d1f8cf24fb72af4605d0d0ca55571a7574c8cc3f",
+  "files": [
+    {
+      "path": "history/before_codec_and_initialization/affine/affine_assembly.cpp",
+      "bytes": 22705,
+      "sha256": "02c8bcedd0d00b996ac79882e1e286f791690198916e78dcc487f1f60161bd2f"
+    },
+    {
+      "path": "history/before_codec_and_initialization/affine/affine_assembly.hpp",
+      "bytes": 5002,
+      "sha256": "f92c7f552f755e2a9d834643c1a5725c369fbbe5557457fd515275d03b0a9a73"
+    },
+    {
+      "path": "history/before_codec_and_initialization/cost/INPUT_CONTRACT.md",
+      "bytes": 4491,
+      "sha256": "db6e0bd3d000bcd0e515483a8d164a272df3bef0639c50333f6809420a18c669"
+    },
+    {
+      "path": "history/before_codec_and_initialization/cost/SOURCE_REVIEW.md",
+      "bytes": 7228,
+      "sha256": "a920d5f85a747020ee9067d30f21e79dc4a21ee955070396809b605f575e9c5a"
+    },
+    {
+      "path": "history/before_codec_and_initialization/cost/quadratic_cost.cpp",
+      "bytes": 29925,
+      "sha256": "871392f90acce5fbd66d7b2b03527b0478760cc161b4a2ddebf85170934530a4"
+    },
+    {
+      "path": "history/before_codec_and_initialization/cost/quadratic_cost.hpp",
+      "bytes": 6047,
+      "sha256": "e90f0a8ae48fefb3f7fb097078351402b8f9da10769aa47e58a79b3e9d96a6ca"
+    },
+    {
+      "path": "history/before_codec_and_initialization/foundation.hpp",
+      "bytes": 11114,
+      "sha256": "eb08c98c14a3d46bfe20c008b833405e717fa6978fb9ceec981d818a767ca395"
+    },
+    {
+      "path": "history/before_codec_and_initialization/foundation_resources.cpp",
+      "bytes": 13471,
+      "sha256": "23f80fa3b46ad1951ac68511753c6faa600672e2476cc31ecb6fe95c01772c04"
+    },
+    {
+      "path": "history/before_codec_and_initialization/model_boundary/FUTURE_PROTOCOL_SCHEMA.md",
+      "bytes": 7295,
+      "sha256": "202ec59a2d8f9e2ebb357d62a38eda2365215d0991abb1dd4f82a64fb3cef6ed"
+    },
+    {
+      "path": "history/before_codec_and_initialization/model_boundary/model_boundary.cpp",
+      "bytes": 41263,
+      "sha256": "77e6a78342afe4ec3eb8ebbbf0905f088584abee9d4cbbd011c8083eab0eaa7e"
+    },
+    {
+      "path": "history/before_codec_and_initialization/normalization/normalization.cpp",
+      "bytes": 22532,
+      "sha256": "3c527759dad0fcc54b5a45da20c9cb806641963498abb1e3abef1768c0ee4415"
+    },
+    {
+      "path": "history/before_codec_and_initialization/normalization/normalization.hpp",
+      "bytes": 4157,
+      "sha256": "5735d28aa99a4102fd721b90388752e92d76da527140cd31da13b547a94c8734"
+    },
+    {
+      "path": "history/before_root_lifetime_and_current_status_fix/affine/affine_assembly.cpp",
+      "bytes": 26666,
+      "sha256": "be757fb746b28767b05db2e8a76ce4be75b205ba66bb2986edbe16c587600a02"
+    },
+    {
+      "path": "history/before_root_lifetime_and_current_status_fix/capture_state.hpp",
+      "bytes": 1688,
+      "sha256": "5ab528db369e8622c70189a8b0c8c5ad6088d0cb0c231886558a38eab85d5e7d"
+    },
+    {
+      "path": "history/before_root_lifetime_and_current_status_fix/cost/quadratic_cost.cpp",
+      "bytes": 34121,
+      "sha256": "e376d2025f4e4eae2d782562418d358a137f7aca4e6cf8d7267a4edbf295343d"
+    },
+    {
+      "path": "history/before_root_lifetime_and_current_status_fix/input_codec/CAPTURE_CONTRACT.md",
+      "bytes": 10781,
+      "sha256": "13fcfe003514f83f37f1361ab3a72e8a8972731c8e03d9cd3d3ffc0d80cc6cee"
+    },
+    {
+      "path": "history/before_root_lifetime_and_current_status_fix/input_codec/SOURCE_REVIEW.md",
+      "bytes": 3526,
+      "sha256": "5a16aaed50c498ff1c245d2b833824298bb1ff506c48d78e784093189241d020"
+    },
+    {
+      "path": "history/before_root_lifetime_and_current_status_fix/input_codec/cost_input_decoder.cpp",
+      "bytes": 20442,
+      "sha256": "f72c62a21d6f8fc7cd9aad18de57e5a1aa13dce36f73b1a5bb66720595490078"
+    },
+    {
+      "path": "history/before_root_lifetime_and_current_status_fix/input_codec/cost_input_decoder.hpp",
+      "bytes": 2407,
+      "sha256": "a07c36f7d89a6c67ebd974f7718cee84ed297f36167be8a1de52effe44c29221"
+    },
+    {
+      "path": "history/before_root_lifetime_and_current_status_fix/normalization/normalization.cpp",
+      "bytes": 24199,
+      "sha256": "a913e3b6087307d859fc0ac033d1fb75e369a254eff8a24e9d82ae534a99f892"
+    },
+    {
+      "path": "history/before_scalar_attempt_diagnostics_fix/CAPTURE_CONTRACT.md",
+      "bytes": 11725,
+      "sha256": "6769a4e7483f1397946a05ec479d11561836ea143384af43682677b2c46516c1"
+    },
+    {
+      "path": "history/before_scalar_attempt_diagnostics_fix/cost_input_decoder.cpp",
+      "bytes": 20663,
+      "sha256": "2ed3c1f59c1852a2b8608f073f9540ddf98565138a2fd86da9fbb91d0c3d1372"
+    },
+    {
+      "path": "history/before_scalar_attempt_diagnostics_fix/cost_input_decoder.hpp",
+      "bytes": 2407,
+      "sha256": "a07c36f7d89a6c67ebd974f7718cee84ed297f36167be8a1de52effe44c29221"
+    },
+    {
+      "path": "history/source_ready_guard_baseline_refusal.json",
+      "bytes": 459,
+      "sha256": "3d99a47f623e11228b1ba6b92cdfe9531cd350b84328dfec47827a1282461894"
+    },
+    {
+      "path": "tools/phase5_public_live_affine_v2/affine/affine_assembly.cpp",
+      "bytes": 27871,
+      "sha256": "28d2ec8ad2bdd6d67356ff2996ad40bed1c0d7df123496875d5b849ed8ac2c08"
+    },
+    {
+      "path": "tools/phase5_public_live_affine_v2/affine/affine_assembly.hpp",
+      "bytes": 5298,
+      "sha256": "3f18734e214da491cd686ccb2f46ffa5f500f1340f4196154e2357f592fbd273"
+    },
+    {
+      "path": "tools/phase5_public_live_affine_v2/capture_state.hpp",
+      "bytes": 1717,
+      "sha256": "d37cad8fa22cc7793612b16e87125e6e6b4169ac650de0af8fe3b309baa805e0"
+    },
+    {
+      "path": "tools/phase5_public_live_affine_v2/cost/INPUT_CONTRACT.md",
+      "bytes": 5131,
+      "sha256": "64ac34ac3f383f506d4aaf27d7a873853ff7b7ae6113a587093c236516f267b9"
+    },
+    {
+      "path": "tools/phase5_public_live_affine_v2/cost/SOURCE_REVIEW.md",
+      "bytes": 7554,
+      "sha256": "017c336dc8271b362a28ae48a05240a863a6203c54cd8dbe53979278819a9906"
+    },
+    {
+      "path": "tools/phase5_public_live_affine_v2/cost/quadratic_cost.cpp",
+      "bytes": 34537,
+      "sha256": "5178e57b6e83626c0828a691844844369d495863fe81e0c7877aa3dacd2bc494"
+    },
+    {
+      "path": "tools/phase5_public_live_affine_v2/cost/quadratic_cost.hpp",
+      "bytes": 7096,
+      "sha256": "56e35f750a35c8629b9c67c5a4b4f2f8522c2bdcf161188abd4bfc42f2d7d5ae"
+    },
+    {
+      "path": "tools/phase5_public_live_affine_v2/foundation.hpp",
+      "bytes": 11250,
+      "sha256": "cafe79569219a4a75e784bdfc8d38d0e05a6155bf6f4581fc0dce07ec322104b"
+    },
+    {
+      "path": "tools/phase5_public_live_affine_v2/foundation_resources.cpp",
+      "bytes": 13497,
+      "sha256": "29af35746f0aef689a79f9ab706c4a55e576db08af3d2839ef230591fd147109"
+    },
+    {
+      "path": "tools/phase5_public_live_affine_v2/input_codec/CAPTURE_CONTRACT.md",
+      "bytes": 11725,
+      "sha256": "6769a4e7483f1397946a05ec479d11561836ea143384af43682677b2c46516c1"
+    },
+    {
+      "path": "tools/phase5_public_live_affine_v2/input_codec/CMakeLists.txt",
+      "bytes": 718,
+      "sha256": "8a0486ad87705fbc2b66a662cc509cfdd074d8a954ad3590111d23076191933f"
+    },
+    {
+      "path": "tools/phase5_public_live_affine_v2/input_codec/DEFERRED_VERIFICATION.md",
+      "bytes": 3617,
+      "sha256": "b065734a455e207de700648f6ed70e491ce52243672ebebe24c9c0df19e69e6b"
+    },
+    {
+      "path": "tools/phase5_public_live_affine_v2/input_codec/INPUT_FORMAT.md",
+      "bytes": 7439,
+      "sha256": "31fc29afbeba39c21c2a20a551abf05333c854acc316f30713e8b4b77ba8f988"
+    },
+    {
+      "path": "tools/phase5_public_live_affine_v2/input_codec/SOURCE_REVIEW.md",
+      "bytes": 4393,
+      "sha256": "bb53eed7af023d81323153018c09ec138fb9af6a767869c6c50847482e3cd1dc"
+    },
+    {
+      "path": "tools/phase5_public_live_affine_v2/input_codec/cost_input_decoder.cpp",
+      "bytes": 20838,
+      "sha256": "b23cff943c54e54f3aee882059ce9513570f4c817280f29226c3cbaa3a10dc08"
+    },
+    {
+      "path": "tools/phase5_public_live_affine_v2/input_codec/cost_input_decoder.hpp",
+      "bytes": 2407,
+      "sha256": "a07c36f7d89a6c67ebd974f7718cee84ed297f36167be8a1de52effe44c29221"
+    },
+    {
+      "path": "tools/phase5_public_live_affine_v2/model_boundary/FUTURE_PROTOCOL_SCHEMA.md",
+      "bytes": 7940,
+      "sha256": "4344900051f94b077b30c73a08688263692e8fad343bb6fdabcf55cf96fbd983"
+    },
+    {
+      "path": "tools/phase5_public_live_affine_v2/model_boundary/model_boundary.cpp",
+      "bytes": 41365,
+      "sha256": "94def858feeca79d7209e7c92eae6526573e2138d375c1b0543e2114ab02d4fb"
+    },
+    {
+      "path": "tools/phase5_public_live_affine_v2/normalization/normalization.cpp",
+      "bytes": 25146,
+      "sha256": "0ca10f29fcd8c516c54b2825ae066a98b2b2d49171486bd69a7622b60d48d695"
+    },
+    {
+      "path": "tools/phase5_public_live_affine_v2/normalization/normalization.hpp",
+      "bytes": 4447,
+      "sha256": "92813ab26886a215544f7d66a27d452d9cedcd5742afe813e9cc61db2aae8dbf"
+    }
+  ],
+  "canonical_preimport_guards": {
+    "tools/phase5_public_coupled_augmented_extension_cpp/public_coupled_augmented_extension.hpp": {
+      "sha256": "d97d4f5fbbd837317bdf488291f3aca0c822c512a7e3f6c079e196d3641b104f",
+      "bytes": 2171
+    },
+    "tools/phase5_public_coupled_augmented_extension_cpp/public_coupled_augmented_extension.cpp": {
+      "sha256": "74b3d8eccdd4a1373d39bc46cf122564a5101259c2212cb45d98f81678f882fa",
+      "bytes": 7073
+    },
+    "tools/phase5_public_coupled_augmented_cpp/public_coupled_augmented_model.hpp": {
+      "sha256": "24350b7680f65c2ea667628e8e80e0830e2a471b501bf77acd51d699b9d44b8d",
+      "bytes": 1818
+    },
+    "tools/phase5_public_coupled_augmented_cpp/public_coupled_augmented_model.cpp": {
+      "sha256": "add6e9d0ef578ed3adcd7e715d2844fb60c063afa24bfb6dd233cdd5f04eac1b",
+      "bytes": 4305
+    },
+    "tools/phase5_public_affine_horizon_cpp/public_affine_horizon.hpp": {
+      "sha256": "049e7cb3a0b8f46cf3bbba57743384ccf631c31ace3a1ff7cf99bcd645dbb0f4",
+      "bytes": 5637
+    },
+    "tools/phase5_public_affine_horizon_cpp/public_affine_horizon.cpp": {
+      "sha256": "bc4ead2f085216c40da6be34b6c3d037b3f90df83757b94464f7f6ed97cef953",
+      "bytes": 13867
+    },
+    "tools/phase5_public_affine_horizon_cpp/public_affine_horizon_native.cpp": {
+      "sha256": "5804cb4dfb0a43f99bb24bb81d07ccc0e1af24c559ec58902b0d47c4b3d3f487",
+      "bytes": 5536
+    },
+    "src/predictive_motion_control/include/predictive_motion_control/predictive.hpp": {
+      "sha256": "c5ff72290709ad694c61686bd495abbfe4223b3bb532f434a5d25af55c784652",
+      "bytes": 8010
+    },
+    "src/predictive_motion_control/src/predictive.cpp": {
+      "sha256": "4ad70dcf75500e956141557a6b17eaa2bdb9a7f670abb7f380da5c699efb1df5",
+      "bytes": 38633
+    },
+    "tools/phase5_adapter/phase5_benchmark.cpp": {
+      "sha256": "72d59b1a4921b37a9ead7ab59602d75238927cb89224673574cfcd7a9a1147d1",
+      "bytes": 44584
+    },
+    "docs/predictive_controller.md": {
+      "sha256": "037e041875a4a24b91966dbc921ee17ce0c0ba84be4bfcdc8344b6c640938828",
+      "bytes": 10530
+    },
+    "src/predictive_motion_sim/include/predictive_motion_sim/plant.hpp": {
+      "sha256": "2bfac5f02ccee8be8807470fdd95f8de594d69d8f74f602aaa55408263fd1508",
+      "bytes": 994
+    },
+    "src/predictive_motion_sim/src/state_bridge.cpp": {
+      "sha256": "d907eccee9502b70ee8f146b90e48a7f5d798c36d55282aea36efd7e420fc56f",
+      "bytes": 2975
+    },
+    "reviews/evidence/public_live_affine_source_requirements_20261008.json": {
+      "sha256": "8ed64e87c6b07938b6edc56adea4be4f19b2058226db3a23d4d7f01fcc8864eb",
+      "bytes": 3565
+    },
+    "tools/phase5_public_live_affine_v2/CMakeLists.txt": {
+      "sha256": "3cfa0c53c9f9245ef1d1a109e1f25750ab863e37fdb19075a561aa50a62fcbd2",
+      "bytes": 723
+    },
+    "tools/phase5_public_live_affine_v2/foundation.hpp": {
+      "sha256": "eb08c98c14a3d46bfe20c008b833405e717fa6978fb9ceec981d818a767ca395",
+      "bytes": 11114
+    },
+    "tools/phase5_public_live_affine_v2/foundation_context.cpp": {
+      "sha256": "d935a2bf0d4f431307af6a9a4e4ed35b199fff15577c5323d42dd3eb3de2bd78",
+      "bytes": 7090
+    },
+    "tools/phase5_public_live_affine_v2/foundation_identity.cpp": {
+      "sha256": "62cc67313abb6a07651778f78a65e95fb63a80cc2c61b67b7d3865de29bd8cb5",
+      "bytes": 6852
+    },
+    "tools/phase5_public_live_affine_v2/foundation_resources.cpp": {
+      "sha256": "23f80fa3b46ad1951ac68511753c6faa600672e2476cc31ecb6fe95c01772c04",
+      "bytes": 13471
+    },
+    "tools/phase5_public_live_affine_v2/model_boundary/CMakeLists.txt": {
+      "sha256": "dde35979aa269b1e65bff7a71769a9e5e1964e3d0483150148e2ec1027845554",
+      "bytes": 948
+    },
+    "tools/phase5_public_live_affine_v2/model_boundary/model_boundary.cpp": {
+      "sha256": "77e6a78342afe4ec3eb8ebbbf0905f088584abee9d4cbbd011c8083eab0eaa7e",
+      "bytes": 41263
+    },
+    "tools/phase5_public_live_affine_v2/model_boundary/model_boundary.hpp": {
+      "sha256": "4089d8f0de95866111e41cd0598fb5f69b6c9d6b74d47588b198fd026f0553e8",
+      "bytes": 5326
+    },
+    "tools/phase5_public_live_affine_v2/normalization/CMakeLists.txt": {
+      "sha256": "bdf2542cca5d4f1dc61f6a630a455c947600310ef7bc11cee317ecd9f9de924e",
+      "bytes": 696
+    },
+    "tools/phase5_public_live_affine_v2/normalization/normalization.cpp": {
+      "sha256": "3c527759dad0fcc54b5a45da20c9cb806641963498abb1e3abef1768c0ee4415",
+      "bytes": 22532
+    },
+    "tools/phase5_public_live_affine_v2/normalization/normalization.hpp": {
+      "sha256": "5735d28aa99a4102fd721b90388752e92d76da527140cd31da13b547a94c8734",
+      "bytes": 4157
+    },
+    "tools/phase5_public_live_affine_v2/affine/CMakeLists.txt": {
+      "sha256": "4ffe3bd3d1c82687a81959494386d62f11dd40fada69e39263f324ae0b7a9af0",
+      "bytes": 655
+    },
+    "tools/phase5_public_live_affine_v2/affine/affine_assembly.cpp": {
+      "sha256": "02c8bcedd0d00b996ac79882e1e286f791690198916e78dcc487f1f60161bd2f",
+      "bytes": 22705
+    },
+    "tools/phase5_public_live_affine_v2/affine/affine_assembly.hpp": {
+      "sha256": "f92c7f552f755e2a9d834643c1a5725c369fbbe5557457fd515275d03b0a9a73",
+      "bytes": 5002
+    },
+    "tools/phase5_public_live_affine_v2/model_boundary/FUTURE_PROTOCOL_SCHEMA.md": {
+      "sha256": "202ec59a2d8f9e2ebb357d62a38eda2365215d0991abb1dd4f82a64fb3cef6ed",
+      "bytes": 7295
+    },
+    "tools/phase5_public_live_affine_v2/cost/CMakeLists.txt": {
+      "sha256": "610a4bf08ce8fdb6d01e9593bc1c5a391402238d04d7dc27ce29cad1cf1d0078",
+      "bytes": 672
+    },
+    "tools/phase5_public_live_affine_v2/cost/DEFERRED_VERIFICATION.md": {
+      "sha256": "44c38f97d53be45de660f9ec8f64e1fa592f07d1fe03e2bb2d9196b91087bd9d",
+      "bytes": 3380
+    },
+    "tools/phase5_public_live_affine_v2/cost/INPUT_CONTRACT.md": {
+      "sha256": "db6e0bd3d000bcd0e515483a8d164a272df3bef0639c50333f6809420a18c669",
+      "bytes": 4491
+    },
+    "tools/phase5_public_live_affine_v2/cost/SOURCE_REVIEW.md": {
+      "sha256": "a920d5f85a747020ee9067d30f21e79dc4a21ee955070396809b605f575e9c5a",
+      "bytes": 7228
+    },
+    "tools/phase5_public_live_affine_v2/cost/quadratic_cost.cpp": {
+      "sha256": "871392f90acce5fbd66d7b2b03527b0478760cc161b4a2ddebf85170934530a4",
+      "bytes": 29925
+    },
+    "tools/phase5_public_live_affine_v2/cost/quadratic_cost.hpp": {
+      "sha256": "e90f0a8ae48fefb3f7fb097078351402b8f9da10769aa47e58a79b3e9d96a6ca",
+      "bytes": 6047
+    }
+  },
+  "executions": {
+    "configure": 0,
+    "compile": 0,
+    "empty_kernel": 0,
+    "decoder": 0,
+    "numeric_checks": 0,
+    "Model_constructor": 0,
+    "Model_metadata": 0,
+    "Model_rollout": 0,
+    "plant": 0,
+    "solver": 0,
+    "main": 0,
+    "scorer": 0
+  },
+  "validation": "Static source/ownership/text review and SHA checks only; no decoder/C++/numeric expression executed",
+  "input_envelope": "Complete binaryf64le/u64le/i64le and strict fullnumericJSON streaming; actual input identity distinct from requested output; matchedpairs only, mismatches refuse",
+  "ownership": "Original topology+128-bytecache shared private receipt transferred, sealed topology separate; unchanged I+V+W numeric total, retained normalizer640 redeployed from unused affine work; existing caps and cumulative IO charges enforced",
+  "failures": "Initialized owned arrays preserved onfailure, precise assignedfieldfrontiers andDense substages, currentcomplete vs explicit constructionhistory, first decoder/upstream latches and copiedcallback guard, no undefined/unused capacity capture",
+  "remaining": [
+    "Independent static review/import/remote milestone backup",
+    "Full output publisher/readback and actual aggregate byte/metadata/chunk/READY closure3C2",
+    "Independent fullcapture integer resource accounting and byte/mutation/failure/lifetime references",
+    "Frozen source/build/SDK/FP/runtime one-attempt protocol",
+    "Controller/solver/plant/scorer/geometry/stopping/timing and phase6 gates"
+  ],
+  "storage": {
+    "Mac_packet_verified": true,
+    "Mac_canonical_or_Git_modified_by_executor": false,
+    "Dell_copy_verified": false,
+    "Git_backup_verified": false
+  },
+  "phase5": "NOT_ACCEPTED",
+  "phase6": "NOT_STARTED"
+}

@@ -151,8 +151,7 @@ void commandAndProgress(const NativeState& before,const NativeState& after,const
 
 namespace detail {
 struct NormalizationDiagnostics {
-  OwnedNumericBuffer scratch;MathCaptureTrace trace;bool capture_active=false,poisoned=false;std::string capture_error;
-  void reject(const char* why) noexcept{if(poisoned)return;poisoned=true;trace.complete=false;try{capture_error=why?why:"NORMALIZATION_CAPTURE_REFUSAL";}catch(...){}}
+  OwnedNumericBuffer scratch;MathCaptureTrace trace;bool capture_active=false;
   explicit NormalizationDiagnostics(CaseBudget& b):scratch(b,scratch_slots){std::fill_n(scratch.data(),120,0.);trace.stage="NORMALIZE_DEFINED_PLACEHOLDERS";}
 };
 struct RawAnchor {OwnedPublicForecast forecast;explicit RawAnchor(OwnedPublicForecast&& s) noexcept:forecast(std::move(s)){} };
@@ -257,7 +256,7 @@ struct NormalizationFactory {
       inventory->cells.reserve(static_cast<std::size_t>(n));inventory->samples.reserve(static_cast<std::size_t>(s));
       for(Count k=0;k<n;++k){inventory->cells.push_back(NormalizedBlockView(out.anchor_,false,k));++diagnostics.trace.written[4];}
       for(Count k=0;k<s;++k){inventory->samples.push_back(NormalizedBlockView(out.anchor_,true,k));++diagnostics.trace.written[5];}
-      out.maps_.reset(new NormalizedNominalMaps(std::move(inventory)));diagnostics.trace.stage="COMPLETE_NORMALIZATION";diagnostics.trace.complete=true;diagnostics.trace.construction_completed=true;
+      out.maps_.reset(new NormalizedNominalMaps(std::move(inventory)));diagnostics.trace.stage="COMPLETE_NORMALIZATION";diagnostics.trace.complete=true;
     }catch(const std::exception& e){out.recordRefusal(e.what());}
     catch(...){out.recordRefusal("NONSTANDARD_NORMALIZATION_FAILURE");}
     return out;
@@ -319,24 +318,20 @@ NormalizationOutcome::NormalizationOutcome(OwnedPublicForecast&& s) noexcept:ori
 NormalizationOutcome::NormalizationOutcome(NormalizationOutcome&&) noexcept=default;
 NormalizationOutcome& NormalizationOutcome::operator=(NormalizationOutcome&&) noexcept=default;
 NormalizationOutcome::~NormalizationOutcome()=default;
-bool NormalizationOutcome::hasFullNominalMaps() const noexcept{return !refused_&&static_cast<bool>(maps_)&&(!diagnostics_||!diagnostics_->poisoned);}
+bool NormalizationOutcome::hasFullNominalMaps() const noexcept{return !refused_&&static_cast<bool>(maps_);}
 const NormalizedNominalMaps& NormalizationOutcome::maps() const{need(hasFullNominalMaps(),"full nominal normalization refused/moved");return *maps_;}
 const OwnedPublicForecast& NormalizationOutcome::originalForecast() const{return anchor_?anchor_->forecast:original_;}
 std::string_view NormalizationOutcome::refusal() const noexcept{
-  if(!refused_&&diagnostics_&&diagnostics_->poisoned)return diagnostics_->capture_error.empty()?std::string_view("NORMALIZATION_CAPTURE_REFUSAL_UNRECORDED_DETAIL"):std::string_view(diagnostics_->capture_error);
   if(!refused_)return {};return refusal_detail_.empty()?std::string_view("NORMALIZATION_REFUSAL_UNRECORDED_DETAIL"):std::string_view(refusal_detail_);
 }
 Count NormalizationOutcome::retainedDiagnosticSlots() const noexcept{return diagnostics_?scratch_slots:0;}
-bool NormalizationOutcome::hasRetainedRegions() const noexcept{return static_cast<bool>(diagnostics_);}
 void NormalizationOutcome::withRetainedRegions(const RetainedRegionConsumer& callback) const{
-  need(static_cast<bool>(diagnostics_),"normalization diagnostic absent");
-  if(!callback||diagnostics_->capture_active){diagnostics_->reject("normalization capture reentry/empty callback");throw std::invalid_argument("normalization capture reentry/empty callback");}
+  need(diagnostics_&&callback&&!diagnostics_->capture_active,"normalization diagnostic absent/reentry/empty callback");
   auto& p=*diagnostics_;struct Guard{bool& flag;Guard(bool& b):flag(b){flag=true;}~Guard(){flag=false;}} guard(p.capture_active);
-  const RetainedNumericRegionView view("normalization.current_nominal_subtractions",p.scratch.data(),120,p.trace,p.capture_active);
-  try{callback(view);}catch(const std::exception& e){p.reject(e.what());throw;}catch(...){p.reject("NONSTANDARD_NORMALIZATION_CAPTURE_FAILURE");throw;}
+  const RetainedNumericRegionView view("normalization.current_nominal_subtractions",p.scratch.data(),120,p.trace,p.capture_active);callback(view);
 }
 void NormalizationOutcome::recordRefusal(const char* reason) noexcept{
-  maps_.reset();refused_=true;if(diagnostics_)diagnostics_->trace.complete=false;try{refusal_detail_=reason?reason:"NORMALIZATION_REFUSAL";}catch(...){refusal_detail_.clear();}
+  maps_.reset();refused_=true;try{refusal_detail_=reason?reason:"NORMALIZATION_REFUSAL";}catch(...){refusal_detail_.clear();}
 }
 NormalizationOutcome normalizePublic(OwnedPublicForecast&& s){return detail::NormalizationFactory::normalize(std::move(s));}
 } // namespace phase5_public_live_affine_v2

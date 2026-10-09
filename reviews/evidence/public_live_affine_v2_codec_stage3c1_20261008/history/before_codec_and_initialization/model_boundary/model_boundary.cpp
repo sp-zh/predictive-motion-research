@@ -342,7 +342,6 @@ struct ForecastFactory {
       "normalization.hpp","normalization.cpp","normalization_CMakeLists",
       "affine_assembly.hpp","affine_assembly.cpp","affine_CMakeLists",
       "quadratic_cost.hpp","quadratic_cost.cpp","cost_CMakeLists",
-      "capture_state.hpp","cost_input_decoder.hpp","cost_input_decoder.cpp","input_codec_CMakeLists",
       "augmented_extension.hpp","augmented_extension.cpp","augmented_extension_CMakeLists",
       "augmented_value.hpp","augmented_value.cpp","physical_derivative.hpp","physical_derivative.cpp","physical_derivative_CMakeLists",
       "physical_value.hpp","physical_value.cpp","physical_value_CMakeLists","coupled_friction_box.cpp"};

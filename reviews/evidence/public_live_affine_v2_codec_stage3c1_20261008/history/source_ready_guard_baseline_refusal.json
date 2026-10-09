@@ -1,0 +1,7 @@
+{
+  "scope": "SOURCE_BOOKKEEPING_ONLY",
+  "failure": "Prior3B preimport guards reused against accepted3B canonical source; model_boundary.cpp mismatch stopped initial manifest generation",
+  "correction": "Baseline updated to exact accepted3B active payload identities from verified82c9a095 READY; original untouched14 and other guards preserved",
+  "no_runtime_or_decoder_executions": true,
+  "prior_checkpoint": "d1f8cf24fb72af4605d0d0ca55571a7574c8cc3f"
+}

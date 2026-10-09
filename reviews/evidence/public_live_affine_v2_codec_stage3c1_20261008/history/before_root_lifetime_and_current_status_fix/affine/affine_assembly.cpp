@@ -84,7 +84,7 @@ struct AffineStorage {
     return dense->samples()[mul(static_cast<Count>(eliminated)*sample_count+sample,blockStride(du))+30+mul(row,du)+col];}
   double& sP(bool eliminated,Count sample,Count row,Count col){
     return dense->samples()[mul(static_cast<Count>(eliminated)*sample_count+sample,blockStride(du))+30+mul(30,du)+mul(row,30)+col];}
-  void reject(const char* reason) noexcept{if(poisoned)return;poisoned=true;trace.complete=false;try{error=reason?reason:"AFFINE_REFUSAL";}catch(...){error.clear();}}
+  void reject(const char* reason) noexcept{if(poisoned)return;poisoned=true;try{error=reason?reason:"AFFINE_REFUSAL";}catch(...){error.clear();}}
 };
 struct AffineFactory {
   static const FactorShape& shape(const NormalizedNominalMaps& m){return m.boundCostShape();}
@@ -158,26 +158,25 @@ struct AffineFactory {
     // allocations/copies and no Eigen solver/work temporary is used.
     for(Count row=0;row<p.dx;++row){for(Count col=0;col<p.dx;++col){LU[mul(row,p.dx)+col]=p.L(row,col);++p.trace.written[14];}
       for(Count col=0;col<rhs;++col){R[mul(row,rhs)+col]=col<p.du?p.E(row,col):col==p.du?p.f(row):p.I(row,col-p.du-1);++p.trace.written[15];}}
-    p.trace.stage="DENSE_ELIMINATION_IN_PLACE";for(Count pivot=0;pivot<p.dx;++pivot){p.trace.item=pivot;p.trace.row=pivot;p.trace.column=pivot;p.trace.stage="DENSE_PIVOT_SELECT";
+    p.trace.stage="DENSE_ELIMINATION_IN_PLACE";for(Count pivot=0;pivot<p.dx;++pivot){p.trace.item=pivot;
       Count selected=pivot;double largest=std::abs(LU[mul(pivot,p.dx)+pivot]);finite(largest);
-      for(Count row=pivot+1;row<p.dx;++row){p.trace.row=row;const double v=std::abs(LU[mul(row,p.dx)+pivot]);finite(v);
+      for(Count row=pivot+1;row<p.dx;++row){const double v=std::abs(LU[mul(row,p.dx)+pivot]);finite(v);
         if(v>largest){largest=v;selected=row;}}
       need(largest>0,"singular independent lifted audit");
-      if(selected!=pivot){p.trace.stage="DENSE_SWAP_LU";for(Count col=0;col<p.dx;++col){p.trace.column=col;std::swap(LU[mul(selected,p.dx)+col],LU[mul(pivot,p.dx)+col]);}
-        p.trace.stage="DENSE_SWAP_RHS";for(Count col=0;col<rhs;++col){p.trace.column=col;std::swap(R[mul(selected,rhs)+col],R[mul(pivot,rhs)+col]);}}
+      if(selected!=pivot){for(Count col=0;col<p.dx;++col)std::swap(LU[mul(selected,p.dx)+col],LU[mul(pivot,p.dx)+col]);
+        for(Count col=0;col<rhs;++col)std::swap(R[mul(selected,rhs)+col],R[mul(pivot,rhs)+col]);}
       const double diagonal=LU[mul(pivot,p.dx)+pivot];finite(diagonal);need(diagonal!=0,"zero pivot in lifted audit");
-      for(Count row=pivot+1;row<p.dx;++row){p.trace.row=row;p.trace.column=pivot;p.trace.stage="DENSE_LU_SCALE";const double scale=LU[mul(row,p.dx)+pivot]/diagonal;finite(scale);LU[mul(row,p.dx)+pivot]=scale;
-        for(Count col=pivot+1;col<p.dx;++col){p.trace.column=col;p.trace.stage="DENSE_LU_UPDATE";const double q=scale*LU[mul(pivot,p.dx)+col];finite(q);LU[mul(row,p.dx)+col]-=q;finite(LU[mul(row,p.dx)+col]);}
-        for(Count col=0;col<rhs;++col){p.trace.column=col;p.trace.stage="DENSE_RHS_UPDATE";const double q=scale*R[mul(pivot,rhs)+col];finite(q);R[mul(row,rhs)+col]-=q;finite(R[mul(row,rhs)+col]);}}
+      for(Count row=pivot+1;row<p.dx;++row){p.trace.row=row;const double scale=LU[mul(row,p.dx)+pivot]/diagonal;finite(scale);LU[mul(row,p.dx)+pivot]=scale;
+        for(Count col=pivot+1;col<p.dx;++col){p.trace.column=col;const double q=scale*LU[mul(pivot,p.dx)+col];finite(q);LU[mul(row,p.dx)+col]-=q;finite(LU[mul(row,p.dx)+col]);}
+        for(Count col=0;col<rhs;++col){p.trace.column=col;const double q=scale*R[mul(pivot,rhs)+col];finite(q);R[mul(row,rhs)+col]-=q;finite(R[mul(row,rhs)+col]);}}
     }
     p.trace.stage="DENSE_BACK_SUBSTITUTION";for(Count col=0;col<rhs;++col)for(Count remaining=p.dx;remaining>0;--remaining){const Count row=remaining-1;p.trace.column=col;p.trace.row=row;
-      double v=R[mul(row,rhs)+col];for(Count k=row+1;k<p.dx;++k){p.trace.stage="DENSE_BACKSUB_PRODUCT";p.trace.addition=k;const double q=LU[mul(row,p.dx)+k]*p.X(k,col);finite(q);v-=q;finite(v);}
-      p.trace.stage="DENSE_BACKSUB_DIVIDE";v/=LU[mul(row,p.dx)+row];finite(v);p.X(row,col)=v;++p.trace.written[16];}
+      double v=R[mul(row,rhs)+col];for(Count k=row+1;k<p.dx;++k){const double q=LU[mul(row,p.dx)+k]*p.X(k,col);finite(q);v-=q;finite(v);}
+      v/=LU[mul(row,p.dx)+row];finite(v);p.X(row,col)=v;++p.trace.written[16];}
     p.trace.stage="DENSE_RESIDUAL_AUDIT";for(Count row=0;row<p.dx;++row)for(Count col=0;col<rhs;++col){p.trace.row=row;p.trace.column=col;double residual=0;
-      p.trace.stage="DENSE_RESIDUAL_PRODUCT";for(Count k=0;k<p.dx;++k){p.trace.addition=k;product(p.L(row,k),p.X(k,col),residual);}
-      p.trace.stage="DENSE_RESIDUAL_COMPARE";
+      for(Count k=0;k<p.dx;++k)product(p.L(row,k),p.X(k,col),residual);
       near(residual,col<p.du?p.E(row,col):col==p.du?p.f(row):p.I(row,col-p.du-1));
-      p.trace.stage="DENSE_SOLUTION_COMPARE";near(p.X(row,col),col<p.du?p.M(row/30,row%30,col):col==p.du?p.o(row/30,row%30):p.P(row/30,row%30,col-p.du-1));}
+      near(p.X(row,col),col<p.du?p.M(row/30,row%30,col):col==p.du?p.o(row/30,row%30):p.P(row/30,row%30,col-p.du-1));}
     p.trace.stage="DENSE_SAMPLE_AUDIT";for(Count index=0;index<p.sample_count;++index){p.trace.item=index;const auto& v=source.samples().at(index);const Count cell=v.cell();
       for(Count row=0;row<30;++row){
         for(Count col=0;col<p.dy;++col){double value=0;
@@ -214,7 +213,7 @@ struct AffineFactory {
       data=std::make_unique<AffineStorage>(out.anchor_,budget,plan,kind,request);
       compact(*data,initial);
       if(request==CaptureMode::DenseAuditComplete)denseAudit(*data);
-      data->trace.stage="COMPLETE_AFFINE";data->trace.complete=true;data->trace.construction_completed=true;out.assembly_.reset(new CompactAffineAssembly(std::move(data)));
+      data->trace.stage="COMPLETE_AFFINE";data->trace.complete=true;out.assembly_.reset(new CompactAffineAssembly(std::move(data)));
     }catch(const std::exception& e){if(data)data->reject(e.what());out.failed_=std::move(data);out.recordRefusal(e.what());}
     catch(...){if(data)data->reject("NONSTANDARD_AFFINE_BUILD_FAILURE");out.failed_=std::move(data);out.recordRefusal("NONSTANDARD_AFFINE_BUILD_FAILURE");}
     return out;
@@ -234,7 +233,7 @@ struct AffineFactory {
 } // namespace detail
 
 namespace {
-detail::AffineStorage& present(const std::unique_ptr<detail::AffineStorage>& p){need(p&&!p->poisoned&&p->anchor->normalization.hasFullNominalMaps(),"affine assembly/source missing/refused/moved");return *p;}
+detail::AffineStorage& present(const std::unique_ptr<detail::AffineStorage>& p){need(p&&!p->poisoned,"affine assembly missing/refused/moved");return *p;}
 detail::AffineStorage& dense(const std::unique_ptr<detail::AffineStorage>& p){auto& s=present(p);need(s.mode==CaptureMode::DenseAuditComplete&&s.dense,"DenseAudit data not requested/completed");return s;}
 void row(Count r){need(r<30,"state row outside30");}
 void bounds(Count a,Count cap){need(a<cap,"affine index outside declared shape");}
@@ -248,7 +247,7 @@ CompactAffineAssembly::CompactAffineAssembly(std::unique_ptr<detail::AffineStora
 CompactAffineAssembly::CompactAffineAssembly(CompactAffineAssembly&&) noexcept=default;
 CompactAffineAssembly& CompactAffineAssembly::operator=(CompactAffineAssembly&&) noexcept=default;
 CompactAffineAssembly::~CompactAffineAssembly()=default;
-bool CompactAffineAssembly::complete() const noexcept{return storage_&&!storage_->poisoned&&storage_->anchor->normalization.hasFullNominalMaps();}
+bool CompactAffineAssembly::complete() const noexcept{return storage_&&!storage_->poisoned;}
 Count CompactAffineAssembly::cells() const{return present(storage_).n;}
 Count CompactAffineAssembly::dx() const{return present(storage_).dx;}
 Count CompactAffineAssembly::du() const{return present(storage_).du;}
@@ -263,10 +262,7 @@ double CompactAffineAssembly::embeddingControl(Count r,Count c) const{auto& s=pr
 double CompactAffineAssembly::embeddingOffset(Count r) const{auto& s=present(storage_);bounds(r,s.dy);return s.t(r);}
 double CompactAffineAssembly::embeddingInitial(Count r,Count c) const{auto& s=present(storage_);bounds(r,s.dy);bounds(c,30);return r<s.dx?s.P(r/30,r%30,c):0;}
 void CompactAffineAssembly::withSample(Count k,const std::function<void(const SampleAffineView&)>& callback){detail::AffineFactory::stream(present(storage_),k,callback);}
-std::string_view CompactAffineAssembly::refusal() const noexcept{
-  if(storage_&&storage_->poisoned)return storage_->error.empty()?std::string_view("AFFINE_REFUSAL_UNRECORDED_DETAIL"):std::string_view(storage_->error);
-  if(storage_&&!storage_->anchor->normalization.hasFullNominalMaps())return storage_->anchor->normalization.refusal();return {};
-}
+std::string_view CompactAffineAssembly::refusal() const noexcept{return storage_&&storage_->poisoned?(storage_->error.empty()?std::string_view("AFFINE_REFUSAL_UNRECORDED_DETAIL"):std::string_view(storage_->error)):std::string_view{};}
 double CompactAffineAssembly::liftedL(Count r,Count c) const{auto& s=dense(storage_);bounds(r,s.dx);bounds(c,s.dx);return s.L(r,c);}
 double CompactAffineAssembly::liftedE(Count r,Count c) const{auto& s=dense(storage_);bounds(r,s.dx);bounds(c,s.du);return s.E(r,c);}
 double CompactAffineAssembly::liftedOffset(Count r) const{auto& s=dense(storage_);bounds(r,s.dx);return s.f(r);}
@@ -295,11 +291,8 @@ const NormalizationOutcome& AffineAssemblyOutcome::originalNormalization() const
 std::optional<CaptureMode> AffineAssemblyOutcome::actualMode() const noexcept{return hasCompleteAssembly()?std::optional<CaptureMode>(requested_):std::nullopt;}
 std::string_view AffineAssemblyOutcome::refusal() const noexcept{if(assembly_&&!assembly_->complete())return assembly_->refusal();
   return refused_?(refusal_detail_.empty()?std::string_view("AFFINE_REFUSAL_UNRECORDED_DETAIL"):std::string_view(refusal_detail_)):std::string_view{};}
-bool AffineAssemblyOutcome::hasRetainedRegions() const noexcept{return (assembly_&&assembly_->storage_)||static_cast<bool>(failed_);}
 void AffineAssemblyOutcome::withRetainedRegions(const RetainedRegionConsumer& callback) const{
-  auto* p=assembly_?assembly_->storage_.get():failed_.get();need(p,"retained affine regions absent");
-  if(!callback||p->streaming){p->reject("retained affine callback reentry/empty callback");throw std::invalid_argument("retained affine callback reentry/empty callback");}
-  p->trace.complete=!p->poisoned&&p->anchor->normalization.hasFullNominalMaps()&&p->trace.construction_completed;
+  auto* p=assembly_?assembly_->storage_.get():failed_.get();need(p&&callback&&!p->streaming,"retained affine regions absent/reentry/empty callback");
   struct Guard{bool& active;Guard(bool& b):active(b){active=true;}~Guard(){active=false;}} guard(p->streaming);
   auto emit=[&](const char* role,const double* data,Count n){const RetainedNumericRegionView v(role,data,n,p->trace,p->streaming);callback(v);};
   try{emit("affine.boundary",p->boundaries(),p->boundary_slots);emit("affine.embedding",p->embedding(),p->embedding_slots);

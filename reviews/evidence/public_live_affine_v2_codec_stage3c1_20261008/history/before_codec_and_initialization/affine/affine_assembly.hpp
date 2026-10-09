@@ -1,6 +1,5 @@
 #pragma once
 #include "normalization.hpp"
-#include "../capture_state.hpp"
 #include <functional>
 #include <memory>
 #include <optional>
@@ -8,7 +7,7 @@
 
 namespace phase5_public_live_affine_v2 {
 enum class AssemblyInitialKind { LiveActual, AlgebraTest };
-namespace detail { struct AffineStorage; struct AffineAnchor; struct AffineFactory; struct CostFactory; struct CostInputFactory; }
+namespace detail { struct AffineStorage; struct AffineAnchor; struct AffineFactory; struct CostFactory; }
 class SampleAffineView final {
  public:
   SampleAffineView(const SampleAffineView&) = delete;
@@ -74,8 +73,6 @@ class CompactAffineAssembly final {
   std::unique_ptr<detail::AffineStorage> storage_;
   friend struct detail::AffineFactory;
   friend struct detail::CostFactory;
-  friend struct detail::CostInputFactory;
-  friend class AffineAssemblyOutcome;
 };
 class AffineAssemblyOutcome final {
  public:
@@ -91,14 +88,11 @@ class AffineAssemblyOutcome final {
   std::optional<CaptureMode> actualMode() const noexcept;
   AssemblyInitialKind initialKind() const noexcept {return kind_;}
   std::string_view refusal() const noexcept;
-  bool hasRetainedRegions() const noexcept;
-  void withRetainedRegions(const RetainedRegionConsumer&) const;
  private:
   AffineAssemblyOutcome(NormalizationOutcome&&,CaptureMode,AssemblyInitialKind) noexcept;
   void recordRefusal(const char*) noexcept;
   NormalizationOutcome original_;std::shared_ptr<detail::AffineAnchor> anchor_;
   std::unique_ptr<CompactAffineAssembly> assembly_;
-  std::unique_ptr<detail::AffineStorage> failed_;
   CaptureMode requested_;AssemblyInitialKind kind_;std::string refusal_detail_;bool refused_=false;
   friend struct detail::AffineFactory;
 };

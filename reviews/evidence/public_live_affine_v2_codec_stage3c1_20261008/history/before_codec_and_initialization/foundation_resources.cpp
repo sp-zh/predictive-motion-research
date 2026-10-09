@@ -160,7 +160,7 @@ ResourcePlan planResources(const CycleMesh& mesh, const FactorShape& f,
   // Dense capture includes the additional audit arrays in the actual artifact.
   out.output_ = checkedAdd(mul(bytes_per_slot, checkedAdd(output_slots, dense_extra)),
                            ResourcePolicyV2::metadata_bytes);
-  out.mode_ = mode; out.encoding_ = encoding;
+  out.mode_ = mode;
   need(out.live_ <= ResourcePolicyV2::live_slots, "whole-request live quota exceeded");
   need(out.charges_ <= ResourcePolicyV2::case_charges, "whole-request cumulative quota exceeded");
   need(out.output_ <= ResourcePolicyV2::output_bytes, "whole-request output quota exceeded");

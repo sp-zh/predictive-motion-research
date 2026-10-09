@@ -65,13 +65,11 @@ class ResourcePlan final {
   Count du() const noexcept { return du_; }
   Count dy() const noexcept { return dy_; }
   CaptureMode captureMode() const noexcept { return mode_; }
-  NumericEncoding numericEncoding() const noexcept { return encoding_; }
  private:
   ResourcePlan() = default;
   Count live_ = 0, charges_ = 0, output_ = 0, sdk_allowance_ = 0, raw_ = 0;
   Count dx_ = 0, du_ = 0, dy_ = 0;
   CaptureMode mode_ = CaptureMode::CompactComplete;
-  NumericEncoding encoding_ = NumericEncoding::LosslessBinary;
   friend ResourcePlan planResources(const CycleMesh&, const FactorShape&,
                                      CaptureMode, NumericEncoding);
 };

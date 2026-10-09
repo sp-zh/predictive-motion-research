@@ -100,5 +100,3 @@ Each reused work operation still charges the full original W, conservatively.
 Each topology logical ticket includes ordered parent indices and four fields per
 record; sealed/forensic integers are not relabeled untracked STL overhead. This
 counts logical elements, not vector capacity/allocator/all-process RAM.
-
-Current extension: SOURCE3C1 implements bounded complete INPUT codecs and retained initialized-region diagnostics; see [current codec source review](../input_codec/SOURCE_REVIEW.md). The statements above describe the accepted3B prerequisite; full OUTPUT publisher/readback remains3C2 and all runtime gates remain unexecuted.

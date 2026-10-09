@@ -1,0 +1,63 @@
+{
+  "decision": "PASS_SOURCE_BOUNDED_COST_INPUT_AND_RETAINED_FAILURE_FOR_NEXT_SOURCE_OUTPUT_CAPTURE",
+  "recorded_utc": "2026-10-09T00:59:16.407601+00:00",
+  "prerequisite_backup": "d1f8cf24fb72af4605d0d0ca55571a7574c8cc3f",
+  "packet_READY_sha256": "74f15b3c9982c36e4ac8de2287add4531e28183781c34c17da55853beeeee894",
+  "verified_payload_count": 44,
+  "verified_preimport_guard_count": 35,
+  "criteria": "ROOT_REVIEW_CRITERIA.json",
+  "validation": "Independent static source/layout/ownership/failure/contract review and file SHA checks only; no compile, parser fixture, numerical or Model invocation",
+  "resolved_findings": [
+    {
+      "id": "CODEC_LIFETIME",
+      "resolution": "Every upstream refusal latches shared decoder status before return. Copied scalar/finish closures refuse before raw CaseBudget/FD access; first refusal bool remains reliable if text allocation fails."
+    },
+    {
+      "id": "CURRENT_STATUS",
+      "resolution": "construction_completed preserves history; complete records current status. Rejection clears current flag; normalization poison propagates through affine and cost gates/refusals; retained readers refresh current validity."
+    },
+    {
+      "id": "DENSE_FAILURE_STAGE",
+      "resolution": "Separate LU/RHS select/swap/scale/update/backsub/residual stages and coordinates retain interpretable partially transformed audit arrays."
+    },
+    {
+      "id": "SCALAR_GENERATION",
+      "resolution": "Reset current bit validity, pending u64 fields and token prefix before JSON separator; failed current attempt cannot inherit prior scalar validity."
+    }
+  ],
+  "observations": [
+    "Streaming fixed-order strict JSON and little-endian binary identify actual input separately from requested output; only matched pairs accepted, no fallback.",
+    "Scalar sequence, shape/initial bits, finite payload, actual byte/EOF/inode/size/hash closure and sealed semantic SHA are required. Physical read-ahead SHA is separate from consumed parser cursor.",
+    "Shared original topology/cache Q+16 receipt, separate sealed Q and numeric (I-Q)+V+(W-Q-16) retain total I+V+W; actual workspace and refill cumulative quota remain enforced.",
+    "Normalization120 defined entries with retained640 ticket; affine capacity redeployed by640. Cost/affine/Dense defined regions and write frontiers exclude unused workspace capacity. Placeholder/assigned-but-unvalidated data remain forensic.",
+    "Original InitialCostConsumer K+1 evaluation schedule is preserved. Full output contract is documentation; no publisher/readback exists in this unit."
+  ],
+  "remaining_obligations": [
+    "SOURCE3C2 bounded full lossless publisher and independent readback, real metadata/output/chunk/READY closure, actual flow integer accounting and failure retention.",
+    "Freeze/build/protocol review before configure/compiler/empty/parser/numerical/Model execution. Deferred mutation/lifetime/grammar/floating behavior checks have not run.",
+    "No source-only change establishes numerical correctness, controller performance, safety, timing, trajectories or Phase5 acceptance. Existing FD failure and all immutable freezes remain."
+  ],
+  "executions": {
+    "configure": 0,
+    "compile": 0,
+    "empty_kernel": 0,
+    "decoder": 0,
+    "numeric_checks": 0,
+    "Model_constructor": 0,
+    "Model_metadata": 0,
+    "Model_rollout": 0,
+    "plant": 0,
+    "solver": 0,
+    "main": 0,
+    "scorer": 0
+  },
+  "storage": {
+    "Mac_source_packet": "/private/tmp/public_live_affine_v2_codec_stage3c1",
+    "canonical_source": "tools/phase5_public_live_affine_v2",
+    "history": "reviews/evidence/public_live_affine_v2_codec_stage3c1_20261008/history",
+    "Dell_copy_verified": false,
+    "Git_backup": "Pending commit and independent remote verification"
+  },
+  "phase5": "NOT_ACCEPTED",
+  "phase6": "NOT_STARTED"
+}

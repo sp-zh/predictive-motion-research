@@ -2,7 +2,6 @@
 #include "affine_assembly.hpp"
 #include <functional>
 #include <memory>
-#include <utility>
 #include <string_view>
 #include <vector>
 
@@ -15,25 +14,9 @@ struct CostTermLayout {
 // Reader contract: bounded scalar access to the reviewed opaque input; no
 // retained unbudgeted numerical arrays. Complete codecs belong to SOURCE3C.
 // Scalar order is specified in INPUT_CONTRACT.md. Read exactly once on ingest.
-namespace detail {struct CostInputFactory;struct CostFactory;}
 struct CostInputRecipe {
- private:
-  std::shared_ptr<OwnedReservation> owned_input_; // Dies after public metadata/cache callbacks.
-  CaseBudget* owned_budget_=nullptr;Count owned_topology_=0,owned_cache_=0;
-  void admitOwnedInput(CaseBudget&,Count topology,Count byte_cache_slots);
-  friend struct detail::CostInputFactory;
-  friend struct detail::CostFactory;
- public:
-  CostInputRecipe()=default;
-  CostInputRecipe(FileIdentity f,std::vector<CostTermLayout> t,std::function<double(Count)> r)
-    :file(std::move(f)),terms(std::move(t)),read_scalar(std::move(r)){}
-  CostInputRecipe(const CostInputRecipe&)=delete;
-  CostInputRecipe& operator=(const CostInputRecipe&)=delete;
-  CostInputRecipe(CostInputRecipe&&) noexcept=default;
-  CostInputRecipe& operator=(CostInputRecipe&&) noexcept;
   FileIdentity file;std::vector<CostTermLayout> terms;
   std::function<double(Count scalar_index)> read_scalar;
-  std::function<void()> finish_read; // Exact decoder EOF/SHA closure before complete cost.
 };
 namespace detail {struct CostStorage;struct CostAnchor;struct CostFactory;}
 class CostEvaluationView final {
@@ -133,8 +116,6 @@ class QuadraticCostOutcome final {
   // Forensic moved request, potentially still caller-aliased; never authority.
   const CostInputRecipe& forensicInputRecipe() const;
   std::string_view refusal() const noexcept;
-  bool hasRetainedRegions() const noexcept;
-  void withRetainedRegions(const RetainedRegionConsumer&) const;
  private:
   QuadraticCostOutcome(AffineAssemblyOutcome&&,CostInputRecipe&&) noexcept;
   void recordRefusal(const char*) noexcept;

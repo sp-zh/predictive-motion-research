@@ -1,13 +1,12 @@
 #pragma once
 #include "model_boundary.hpp"
-#include "../capture_state.hpp"
 #include <array>
 #include <memory>
 #include <string_view>
 #include <vector>
 
 namespace phase5_public_live_affine_v2 {
-namespace detail { struct NormalizationDiagnostics; struct RawAnchor; struct NormalizedInventory; struct NormalizationFactory; struct AffineFactory; }
+namespace detail { struct RawAnchor; struct NormalizedInventory; struct NormalizationFactory; struct AffineFactory; }
 // Native cumulative nominal coefficient view, not a finite-neighborhood or
 // execution certificate. Every reference keeps the genuine raw owner alive.
 class NormalizedBlockView final {
@@ -75,16 +74,12 @@ class NormalizationOutcome final {
   const NormalizedNominalMaps& maps() const;
   const OwnedPublicForecast& originalForecast() const;
   std::string_view refusal() const noexcept;
-  bool hasRetainedRegions() const noexcept;
-  void withRetainedRegions(const RetainedRegionConsumer&) const;
-  Count retainedDiagnosticSlots() const noexcept;
  private:
   explicit NormalizationOutcome(OwnedPublicForecast&&) noexcept;
   void recordRefusal(const char*) noexcept;
   OwnedPublicForecast original_; // Refusal outcome requires no new heap wrapper.
   std::shared_ptr<detail::RawAnchor> anchor_;
   std::unique_ptr<NormalizedNominalMaps> maps_;
-  std::unique_ptr<detail::NormalizationDiagnostics> diagnostics_;
   std::string refusal_detail_;bool refused_=false;
   friend struct detail::NormalizationFactory;
 };

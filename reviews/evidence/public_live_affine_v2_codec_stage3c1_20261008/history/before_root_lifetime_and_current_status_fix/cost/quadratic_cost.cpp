@@ -104,7 +104,7 @@ struct CostStorage {
   double& sumg(Count c){return capture()[sumBase()+mul(du,du)+c];}
   double& suml(Count c){return capture()[sumBase()+mul(du,du)+du+c];}
   double& sumc(){return capture()[sumBase()+mul(du,du)+du+dy];}
-  void reject(const char* why) noexcept{if(poisoned)return;poisoned=true;trace.complete=false;try{error=why?why:"COST_REFUSAL";}catch(...){error.clear();}}
+  void reject(const char* why) noexcept{if(poisoned)return;poisoned=true;try{error=why?why:"COST_REFUSAL";}catch(...){error.clear();}}
 };
 struct CostFactory {
   static FactorShape shape(const CostInputRecipe& input,CompactAffineAssembly& assembly){
@@ -253,7 +253,7 @@ struct CostFactory {
       else generic.emplace(budget.reserve(topology));
       out.anchor_=std::make_shared<CostAnchor>(std::move(generic),std::move(out.original_),std::move(out.input_));
       data=std::make_unique<CostStorage>(out.anchor_,budget,plan,f,identity,cache);ingest(*data);build(*data,callbacks);
-      data->trace.stage="COMPLETE_QUADRATIC_COST";data->trace.complete=true;data->trace.construction_completed=true;out.cost_.reset(new CompleteQuadraticCost(std::move(data)));
+      data->trace.stage="COMPLETE_QUADRATIC_COST";data->trace.complete=true;out.cost_.reset(new CompleteQuadraticCost(std::move(data)));
     }catch(const std::exception& e){if(data)data->reject(e.what());out.failed_=std::move(data);out.recordRefusal(e.what());}
     catch(...){if(data)data->reject("NONSTANDARD_COST_INPUT_FAILURE");out.failed_=std::move(data);out.recordRefusal("NONSTANDARD_COST_INPUT_FAILURE");}
     return out;
@@ -356,11 +356,8 @@ const CostInputRecipe& QuadraticCostOutcome::originalInputRecipe() const{
 }
 const CostInputRecipe& QuadraticCostOutcome::forensicInputRecipe() const{return anchor_?anchor_->recipe:input_;}
 std::string_view QuadraticCostOutcome::refusal() const noexcept{if(cost_&&!cost_->complete())return cost_->refusal();return refused_?(reason_.empty()?std::string_view("COST_REFUSAL_UNRECORDED_DETAIL"):std::string_view(reason_)):std::string_view{};}
-bool QuadraticCostOutcome::hasRetainedRegions() const noexcept{return (cost_&&cost_->storage_)||static_cast<bool>(failed_);}
 void QuadraticCostOutcome::withRetainedRegions(const RetainedRegionConsumer& callback) const{
-  auto* p=cost_?cost_->storage_.get():failed_.get();need(p,"retained cost buffers absent");
-  if(!callback||p->callback_active){p->reject("retained cost callback reentry/empty callback");throw std::invalid_argument("retained cost callback reentry/empty callback");}
-  p->trace.complete=!p->poisoned&&p->anchor->assembly.hasCompleteAssembly()&&p->trace.construction_completed;
+  auto* p=cost_?cost_->storage_.get():failed_.get();need(p&&callback&&!p->callback_active,"retained cost buffers absent/reentry/empty callback");
   struct Guard{bool& active;Guard(bool& b):active(b){active=true;}~Guard(){active=false;}} guard(p->callback_active);
   auto emit=[&](const char* role,const double* data,Count count){const RetainedNumericRegionView v(role,data,count,p->trace,p->callback_active);callback(v);};
   try{emit("cost.input",p->input(),p->allocated_input_slots);emit("cost.coefficients",p->capture(),p->capture_slots);

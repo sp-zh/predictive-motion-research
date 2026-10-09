@@ -85,12 +85,3 @@ or unresolvable/deleted library paths, omitted DSOs and changed mapped file
 inodes. It verifies the declared file/mapping identity, not a cryptographic dump
 of all relocated process memory or a dynamic-loader race lock. The separately
 reviewed runtime requires immutable files and a stable loaded closure.
-
-SOURCE3C1 retains requested output NumericEncoding as ResourcePlan::numericEncoding().
-The cost artifact declares its INPUT format in its SHA-bound magic/schema. This
-version supports matched Binary/Binary and Json/Json pairs only; mismatches refuse
-explicitly, with actual_input and requested_output recorded separately. No JSON
-byte refusal selects binary. Source closure now also requires capture_state.hpp,
-cost_input_decoder.hpp/cpp and input_codec_CMakeLists. The current input schema
-and complete failure/output contract are in ../input_codec/; the output publisher
-is not implemented and no source record constitutes a runtime release.

@@ -66,12 +66,3 @@ whole outcome succeeds; hook/finite/quota failures preserve prior failures and
 must not produce a complete READY. Optional later withTerm callbacks replay a
 term and charge W; canonical callback uses cached direct results and charges W
 once. Arbitrary repeated export is not promised within one case budget.
-
-SOURCE3C1 adds the complete bounded INPUT codec in ../input_codec/. The generic
-reader API remains available for separately reviewed source components; it does
-not automatically acquire the complete-codec claim. Decoder recipes additionally
-have a private shared topology/cache ownership receipt and finish_read closure.
-The cost factory validates receipt case/shape, retains it without reserving the
-original topology again, and requires complete scalar/EOF/consumed-file SHA closure
-before complete semantic acceptance. The decoder consumes the exact declared
-scalar stream once; metadata/chosen initial are a separately decoded prefix.

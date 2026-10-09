@@ -414,3 +414,5 @@ The [genuine cumulative normalization source checkpoint](../reviews/evidence/pub
 The [affine boundary/sample source checkpoint](../reviews/evidence/public_live_affine_v2_affine_stage3a_20261008/ROOT_SOURCE_REVIEW.json) adds no executed matrix or motion result. Existing diagnostic plots retain their original scope; Phase5 task videos remain pending.
 
 The [complete quadratic cost source checkpoint](../reviews/evidence/public_live_affine_v2_cost_stage3b_20261008/ROOT_SOURCE_REVIEW.json) adds no executed cost/matrix or motion result. Existing diagnostic visuals retain original scope; Phase5 task clips await complete verified trajectories.
+
+The [bounded input codec and retained failure source checkpoint](../reviews/evidence/public_live_affine_v2_codec_stage3c1_20261008/ROOT_SOURCE_REVIEW.json) adds no executed matrix or motion result. Existing diagnostic visuals retain their recorded scope; complete output publication/readback and Phase5 task clips remain pending.

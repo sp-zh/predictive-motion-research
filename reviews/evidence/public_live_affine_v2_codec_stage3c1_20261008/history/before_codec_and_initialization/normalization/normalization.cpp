@@ -101,10 +101,8 @@ void canonicalLocal(const NativeMap& m,Count half){
 }
 void mapping(const NativeMap& m,Count cell,Count cycle,Count half,const NativeCell& input,
     const NativeState& origin,const NativeState& cell_origin,const NativeState& endpoint,
-    const NativeMap* prior,double* scratch,CaseBudget& budget,MathCaptureTrace& trace){
-  budget.chargeScratchOrCopy(scratch_slots);
-  trace.memory_item=trace.item;trace.memory_stage=trace.stage;
-  for(Count j=0;j<4;++j)trace.written[j]=0;std::fill_n(scratch,120,0.); // Reused fixed work charged before every map check.
+    const NativeMap* prior,double* scratch,CaseBudget& budget){
+  budget.chargeScratchOrCopy(scratch_slots); // Reused fixed work charged before every map check.
   mapShape(m);
   canonicalLocal(m,half);
   need(m.cell==static_cast<int>(cell)&&m.cycle==static_cast<int>(cycle)&&m.half==static_cast<int>(half),
@@ -115,15 +113,15 @@ void mapping(const NativeMap& m,Count cell,Count cycle,Count half,const NativeCe
   need(m.input(7)==input.b,"independent cell progress input mismatch");
   // Preserve the native defects. Check their defining subtraction order, and
   // independently check cumulative composition against previous complete cycle.
-  for(Count row=0;row<30;++row){trace.row=row;
+  for(Count row=0;row<30;++row){
     double a=0,b=0,ca=0,cb=0;
     for(Count j=0;j<30;++j){finiteProduct(m.A(row,j),coordinate(origin,j),a);
       finiteProduct(m.cell_A(row,j),coordinate(cell_origin,j),ca);}
     for(Count j=0;j<8;++j){finiteProduct(m.B(row,j),m.input(j),b);finiteProduct(m.cell_B(row,j),m.input(j),cb);}
-    scratch[row]=coordinate(endpoint,row)-a;++trace.written[0];need(std::isfinite(scratch[row]),"local nominal subtraction overflow");
-    scratch[30+row]=scratch[row]-b;++trace.written[1];near(scratch[30+row],m.defect(row));
-    scratch[60+row]=coordinate(endpoint,row)-ca;++trace.written[2];need(std::isfinite(scratch[60+row]),"cumulative nominal subtraction overflow");
-    scratch[90+row]=scratch[60+row]-cb;++trace.written[3];near(scratch[90+row],m.cell_defect(row));
+    scratch[row]=coordinate(endpoint,row)-a;need(std::isfinite(scratch[row]),"local nominal subtraction overflow");
+    scratch[30+row]=scratch[row]-b;near(scratch[30+row],m.defect(row));
+    scratch[60+row]=coordinate(endpoint,row)-ca;need(std::isfinite(scratch[60+row]),"cumulative nominal subtraction overflow");
+    scratch[90+row]=scratch[60+row]-cb;near(scratch[90+row],m.cell_defect(row));
     for(Count col=0;col<30;++col){
       double value=0;
       if(prior)for(Count j=0;j<30;++j)finiteProduct(m.A(row,j),prior->cell_A(j,col),value);
@@ -150,11 +148,6 @@ void commandAndProgress(const NativeState& before,const NativeState& after,const
 } // namespace
 
 namespace detail {
-struct NormalizationDiagnostics {
-  OwnedNumericBuffer scratch;MathCaptureTrace trace;bool capture_active=false,poisoned=false;std::string capture_error;
-  void reject(const char* why) noexcept{if(poisoned)return;poisoned=true;trace.complete=false;try{capture_error=why?why:"NORMALIZATION_CAPTURE_REFUSAL";}catch(...){}}
-  explicit NormalizationDiagnostics(CaseBudget& b):scratch(b,scratch_slots){std::fill_n(scratch.data(),120,0.);trace.stage="NORMALIZE_DEFINED_PLACEHOLDERS";}
-};
 struct RawAnchor {OwnedPublicForecast forecast;explicit RawAnchor(OwnedPublicForecast&& s) noexcept:forecast(std::move(s)){} };
 struct NormalizedInventory {
   OwnedReservation ticket;std::shared_ptr<RawAnchor> anchor;
@@ -193,8 +186,7 @@ struct NormalizationFactory {
            "unchanged native nominal certificate policy required");
       // Whole inventory and reused work are reserved before normalization loops.
       auto inventory_ticket=budget.reserve(checkedAdd(checkedMultiply(n,1241),checkedMultiply(s,1243)));
-      out.diagnostics_=std::make_unique<NormalizationDiagnostics>(budget);
-      auto& diagnostics=*out.diagnostics_;auto& scratch=diagnostics.scratch;
+      OwnedNumericBuffer scratch(budget,scratch_slots);
       // Raw ownership does not move again until all complete-record checks pass.
       Count global_cycle=0,step=0;
       const NativeState* before=&raw.substep_maps.front().origin;
@@ -208,7 +200,7 @@ struct NormalizationFactory {
         for(Count cycle=1;cycle<=mesh.cycles()[cell];++cycle){
           const auto& end=raw.value.cycle_end_states.at(global_cycle);domain(end,ranges);
           commandAndProgress(*before,end,input);
-          for(Count half=1;half<=2;++half){diagnostics.trace.stage="VALIDATE_SUBSTEP";diagnostics.trace.item=step;
+          for(Count half=1;half<=2;++half){
             const auto& point=raw.value.substeps.at(step);const auto& sm=raw.substep_maps.at(step);
             need(point.cell==static_cast<int>(cell)&&point.cycle==static_cast<int>(cycle)&&point.half==static_cast<int>(half)&&
               point.elapsed_s==physical_dt*static_cast<double>(2*global_cycle+half),"literal value tick/cycle/half/time roster mismatch");
@@ -228,7 +220,7 @@ struct NormalizationFactory {
               sm.state.C(j)==point.C(j)&&sm.state.w(j)==point.w(j)&&point.C(j)==end.C(j)&&point.w(j)==end.w(j),
               "literal halfstep physical/held-command source parity mismatch");
             need(sm.state.s==point.s_reference&&sm.state.r==point.r_reference,"sample map must retain own polynomial progress");
-            diagnostics.trace.stage="NORMALIZE_SUBSTEP";mapping(sm,cell,cycle,half,input,*before,*cell_origin,sm.state,prior,scratch.data(),budget,diagnostics.trace);
+            mapping(sm,cell,cycle,half,input,*before,*cell_origin,sm.state,prior,scratch.data(),budget);
             if(half==2){
               for(int j=0;j<7;++j)need(point.q(j)==end.q(j)&&point.v(j)==end.v(j),"half2 physical/cycle value parity mismatch");
               // Do NOT compare half2 sample s/r with recursive cycle-end s/r.
@@ -236,7 +228,7 @@ struct NormalizationFactory {
             ++step;
           }
           const auto& cm=raw.cycle_maps.at(global_cycle);
-          diagnostics.trace.stage="NORMALIZE_CYCLE";diagnostics.trace.item=global_cycle;mapping(cm,cell,cycle,2,input,*before,*cell_origin,end,prior,scratch.data(),budget,diagnostics.trace);
+          mapping(cm,cell,cycle,2,input,*before,*cell_origin,end,prior,scratch.data(),budget);
           const auto& second_half=raw.substep_maps.at(step-1);
           // Same local/cumulative derivative matrices, distinct literal progress
           // endpoints/defects. Do not compare or overwrite their s/r defects.
@@ -255,11 +247,10 @@ struct NormalizationFactory {
       out.anchor_=std::make_shared<RawAnchor>(std::move(out.original_));
       auto inventory=std::make_unique<NormalizedInventory>(std::move(inventory_ticket),out.anchor_);
       inventory->cells.reserve(static_cast<std::size_t>(n));inventory->samples.reserve(static_cast<std::size_t>(s));
-      for(Count k=0;k<n;++k){inventory->cells.push_back(NormalizedBlockView(out.anchor_,false,k));++diagnostics.trace.written[4];}
-      for(Count k=0;k<s;++k){inventory->samples.push_back(NormalizedBlockView(out.anchor_,true,k));++diagnostics.trace.written[5];}
-      out.maps_.reset(new NormalizedNominalMaps(std::move(inventory)));diagnostics.trace.stage="COMPLETE_NORMALIZATION";diagnostics.trace.complete=true;diagnostics.trace.construction_completed=true;
+      for(Count k=0;k<n;++k)inventory->cells.push_back(NormalizedBlockView(out.anchor_,false,k));
+      for(Count k=0;k<s;++k)inventory->samples.push_back(NormalizedBlockView(out.anchor_,true,k));
+      out.maps_.reset(new NormalizedNominalMaps(std::move(inventory)));
     }catch(const std::exception& e){out.recordRefusal(e.what());}
-    catch(...){out.recordRefusal("NONSTANDARD_NORMALIZATION_FAILURE");}
     return out;
   }
 };
@@ -319,24 +310,14 @@ NormalizationOutcome::NormalizationOutcome(OwnedPublicForecast&& s) noexcept:ori
 NormalizationOutcome::NormalizationOutcome(NormalizationOutcome&&) noexcept=default;
 NormalizationOutcome& NormalizationOutcome::operator=(NormalizationOutcome&&) noexcept=default;
 NormalizationOutcome::~NormalizationOutcome()=default;
-bool NormalizationOutcome::hasFullNominalMaps() const noexcept{return !refused_&&static_cast<bool>(maps_)&&(!diagnostics_||!diagnostics_->poisoned);}
+bool NormalizationOutcome::hasFullNominalMaps() const noexcept{return !refused_&&static_cast<bool>(maps_);}
 const NormalizedNominalMaps& NormalizationOutcome::maps() const{need(hasFullNominalMaps(),"full nominal normalization refused/moved");return *maps_;}
 const OwnedPublicForecast& NormalizationOutcome::originalForecast() const{return anchor_?anchor_->forecast:original_;}
 std::string_view NormalizationOutcome::refusal() const noexcept{
-  if(!refused_&&diagnostics_&&diagnostics_->poisoned)return diagnostics_->capture_error.empty()?std::string_view("NORMALIZATION_CAPTURE_REFUSAL_UNRECORDED_DETAIL"):std::string_view(diagnostics_->capture_error);
   if(!refused_)return {};return refusal_detail_.empty()?std::string_view("NORMALIZATION_REFUSAL_UNRECORDED_DETAIL"):std::string_view(refusal_detail_);
 }
-Count NormalizationOutcome::retainedDiagnosticSlots() const noexcept{return diagnostics_?scratch_slots:0;}
-bool NormalizationOutcome::hasRetainedRegions() const noexcept{return static_cast<bool>(diagnostics_);}
-void NormalizationOutcome::withRetainedRegions(const RetainedRegionConsumer& callback) const{
-  need(static_cast<bool>(diagnostics_),"normalization diagnostic absent");
-  if(!callback||diagnostics_->capture_active){diagnostics_->reject("normalization capture reentry/empty callback");throw std::invalid_argument("normalization capture reentry/empty callback");}
-  auto& p=*diagnostics_;struct Guard{bool& flag;Guard(bool& b):flag(b){flag=true;}~Guard(){flag=false;}} guard(p.capture_active);
-  const RetainedNumericRegionView view("normalization.current_nominal_subtractions",p.scratch.data(),120,p.trace,p.capture_active);
-  try{callback(view);}catch(const std::exception& e){p.reject(e.what());throw;}catch(...){p.reject("NONSTANDARD_NORMALIZATION_CAPTURE_FAILURE");throw;}
-}
 void NormalizationOutcome::recordRefusal(const char* reason) noexcept{
-  maps_.reset();refused_=true;if(diagnostics_)diagnostics_->trace.complete=false;try{refusal_detail_=reason?reason:"NORMALIZATION_REFUSAL";}catch(...){refusal_detail_.clear();}
+  maps_.reset();refused_=true;try{refusal_detail_=reason?reason:"NORMALIZATION_REFUSAL";}catch(...){refusal_detail_.clear();}
 }
 NormalizationOutcome normalizePublic(OwnedPublicForecast&& s){return detail::NormalizationFactory::normalize(std::move(s));}
 } // namespace phase5_public_live_affine_v2
