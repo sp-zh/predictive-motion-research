@@ -106,7 +106,6 @@ class OwnedPublicForecast final {
   const MemberCaptureStatus* memberCaptureStatus() const;
   const MemberIdentityObservationV1* memberIdentityObservation() const;
   const MemberLoaderObservationV1* memberLoaderObservation() const;
-  const CapturedLiveActualContextV1* capturedActualContextInputs() const;
   Count retainedMemberCount() const;
   std::string_view retainedMemberRole(Count) const;
   const VerifiedMemberRelation& retainedMemberRelation(Count) const;
@@ -134,9 +133,6 @@ class OwnedPublicForecast final {
 // execution also requires the external reviewed protocol/dispatch and new freeze.
 ReviewedForecastPermission loadReviewedForecastPermission(const ReviewPins&);
 ReviewedForecastPermission loadReviewedForecastPermissionWithMemberCaptureV2(const ReviewPins&,BatchBudget&);
-ReviewedForecastPermission loadReviewedForecastPermissionWithMemberContextCaptureV3(const ReviewPins&,BatchBudget&);
-CapturedLiveActualContextV1 validateFrozenLiveActualWithSnapshotV3(ReviewedForecastPermission&,const ObservedActual&,const AcceptedCommandHistory&,const ProgressHistory&,const NominalAnchor&,const CurrentBoundaryExpectation&,const StaticDomainRanges&);
-OwnedLiveInvocation prepareFrozenLiveInvocationWithContextSnapshotV3(ReviewedForecastPermission&,const CapturedLiveActualContextV1&,BatchBudget&);
 OwnedLiveInvocation prepareFrozenLiveInvocation(ReviewedForecastPermission&,
                                                 const LiveActualContext&, BatchBudget&);
 // Actual ctor/query/rollout appear only behind a validated, single-use release.

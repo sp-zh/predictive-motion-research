@@ -107,36 +107,3 @@ this extra-key/version2 protocol, and the new loader rejects protocol1. Existing
 immutable freezes remain historical; new source/ELF/SDK/protocol needs independent
 review before every compiler/IO/budget/helper/Model/numeric invocation. No actual
 context/process/claim snapshot/rootREADY/phase acceptance follows.
-
-## Context snapshot version3 — separate future freeze
-
-loadReviewedForecastPermissionWithMemberContextCaptureV3 requires
-PUBLIC_LIVE_AFFINE_V2_FROZEN_PROTOCOL_MEMBERS_CONTEXT_3. In addition to the exact
-version2 fields, it requires context_capture_policy=
-PREVALIDATION_INPUT_SNAPSHOT_SAME_CASE_1. Its source closure must bind role
-context_snapshot_contract to CONTEXT_SNAPSHOT_CONTRACT.md, as well as the actual
-compiled foundation_context.cpp, foundation.hpp, model_boundary sources and
-capture_metadata_internal.inc under their existing roles. The V1/V2 loaders reject
-V3 keys/schema; V3 rejects V1/V2. Existing external review decision and exact
-producer/build/source/SDK/input/one-attempt gates remain mandatory.
-
-Before creating the single real Case, the V3 plan adds294 logical live slots and
-16384 cumulative slots to the independently derived member-only plan. These are
-an explicit conservative schedule for the new owned snapshot/control/temporary
-fields and charged copies, not a measured whole-process admission or metadata
-byte theorem. Original hard caps remain; no already-created V2 Case is expanded.
-
-validateFrozenLiveActualWithSnapshotV3 takes the five original typed input groups
-and ranges, captures bounded originals, and runs unchanged validateLiveActual
-against that same owned data. prepareFrozenLiveInvocationWithContextSnapshotV3
-accepts only its successful private immutable witness from the same permission,
-Case, token and exact payload object. Reentry, foreign witness and failed context
-poison member authority before Model. Old prepare cannot use a V3 permission
-without this witness. The wrapper copies share data/ticket; legacy LiveActualContext
-value semantics and numeric equality, including +/-0, remain unchanged.
-
-All supplied observations/history/contact/age flags are caller/observer
-assertions. Only original-input copying and consistency/domain-validation history
-are captured. No physical sensor/clock/contact attestation, process envelope,
-early public failure publisher, reference reconstruction or rootREADY is added.
-This document and the source checkpoint authorize zero function executions.

@@ -282,35 +282,6 @@ class LiveActualContext final {
 LiveActualContext validateLiveActual(const ObservedActual&,
   const AcceptedCommandHistory&, const ProgressHistory&, const NominalAnchor&,
   const CurrentBoundaryExpectation&, const StaticDomainRanges&);
-enum class ContextInputSourceKindV1 {CallerObserverAssertions};
-struct ContextValidationHistoryV1 {
-  Count owned_scalar_slots=198,copied_scalar_slots=0,completed_input_groups=0;
-  bool attempted=false,inputs_copied=false,validation_started=false,validation_returned=false;
-  bool validated_copy_complete=false,complete=false,refused=false,ranges_copied=false,first_error_known=false;
-  const char* stage="NOT_ATTEMPTED";std::string first_error;
-};
-namespace detail {struct ContextSnapshotData;struct ContextSnapshotFactory;}
-class CapturedLiveActualContextV1 final {
- public:
-  CapturedLiveActualContextV1(const CapturedLiveActualContextV1&)=default;CapturedLiveActualContextV1& operator=(const CapturedLiveActualContextV1&)=default;
-  const ObservedActual& observedInput() const;const AcceptedCommandHistory& commandInput() const;const ProgressHistory& progressInput() const;
-  const NominalAnchor& nominalInput() const;const CurrentBoundaryExpectation& currentInput() const;const StaticDomainRanges& inputRanges() const;
-  const ContextValidationHistoryV1& history() const;ContextInputSourceKindV1 sourceKind() const;
- private:
-  explicit CapturedLiveActualContextV1(std::shared_ptr<const detail::ContextSnapshotData>);
-  const LiveActualContext& validatedContext() const;
-  bool sameSource(const std::shared_ptr<const void>&,const SharedCaseBudget&) const;
-  bool sameWitness(const CapturedLiveActualContextV1&) const;
-  std::shared_ptr<const detail::ContextSnapshotData> data_;
-  friend struct detail::ContextSnapshotFactory;friend struct detail::ForecastFactory;
-};
-namespace detail {
-struct ContextSnapshotFactory {
- private:
-  static CapturedLiveActualContextV1 captureAndValidate(SharedCaseBudget,std::shared_ptr<const void>,const ObservedActual&,const AcceptedCommandHistory&,const ProgressHistory&,const NominalAnchor&,const CurrentBoundaryExpectation&,const StaticDomainRanges&);
-  friend struct ForecastFactory;
-};
-}
 class AlgebraTestInitial final {
  public:
   const State30& point() const noexcept { return point_; }

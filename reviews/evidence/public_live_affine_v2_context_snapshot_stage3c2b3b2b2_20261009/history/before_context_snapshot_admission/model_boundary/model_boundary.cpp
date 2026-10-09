@@ -279,19 +279,9 @@ void verifyLoadedLibraries(const std::vector<FileIdentity>& libraries) {
 } // namespace
 
 namespace detail {
-struct ContextCaptureControl {
-  SharedCaseBudget budget;OwnedReservation ticket;
-  bool enabled=true,attempted=false;std::shared_ptr<const void> origin;
-  std::optional<CapturedLiveActualContextV1> snapshot;
-  explicit ContextCaptureControl(SharedCaseBudget b):budget(std::move(b)),ticket(budget.reserve(8)){
-    budget.chargeScratchOrCopy(8);struct ActualContextOrigin {};origin=std::make_shared<ActualContextOrigin>();
-  }
-  // Actual context fields/source/wrapper identities are materialized after ticket.
-};
 struct MemberCaptureStorage {
   SharedCaseBudget budget;OwnedReservation ticket;ResourcePlan plan;
   std::unique_ptr<CaseBudget> pending_case;FileIdentity planned_invocation;std::vector<VerifiedMemberRelation> relations;
-  std::shared_ptr<ContextCaptureControl> context;
   MemberCaptureStatus status;MemberIdentityObservationV1 latest_identity;MemberLoaderObservationV1 latest_loader;bool copy_scope_active=false;
   MemberCaptureStorage(std::unique_ptr<CaseBudget> c,const ResourcePlan& p,Count slots):budget(c->share()),ticket(budget.reserve(slots)),plan(p),pending_case(std::move(c)){}
   void reject(const char* why) noexcept{if(status.refused)return;status.refused=true;status.complete=false;try{std::string_view s=why?why:"MEMBER_CAPTURE_REFUSAL";need(s.size()<=512,"member refusal detail cap");budget.chargeMetadataBytes(s.size());status.first_error.assign(s);}catch(...){}}
@@ -309,7 +299,7 @@ struct InvocationStorage {
   CaseBudget budget;OwnedReservation ticket;ResourcePlan plan;LiveActualContext context;
   CycleMesh mesh;NativeState initial;std::vector<NativeCell> cells;
   std::shared_ptr<ForecastReleaseState> release;
-  FactorShape factors;FileIdentity cost_input;std::string cost_semantic_sha256;std::optional<CapturedLiveActualContextV1> captured_context;
+  FactorShape factors;FileIdentity cost_input;std::string cost_semantic_sha256;
   InvocationStorage(BatchBudget& batch,const ResourcePlan& p,const LiveActualContext& c,const CycleMesh& m,
                     std::shared_ptr<ForecastReleaseState> r)
     :budget(batch,p),ticket(budget.reserve(checkedAdd(128,checkedMultiply(10,m.cycles().size())))),
@@ -378,7 +368,7 @@ struct ForecastFactory {
     MemberFrame frame(m);m.budget.chargeMetadataBytes(checkedAdd(role.size(),checkedAdd(file.path.size(),file.sha256.size())));m.budget.chargeScratchOrCopy(checkedAdd(9,(role.size()+file.path.size()+file.sha256.size()+7)/8));
     const Count index=r.files.size();VerifiedMemberRelation relation{index,parent,ordinal,0,group,protocol_parent,false,true};r.files.push_back(file);r.file_roles.push_back(role);m.relations.push_back(relation);m.status.actual_files=r.files.size();
     }catch(const std::exception& e){m.reject(e.what());throw;}catch(...){m.reject("NONSTANDARD_MEMBER_APPEND");throw;}}
-  static ReviewedForecastPermission permission(const ReviewPins& pins,BatchBudget* member_batch=nullptr,bool context=false) {
+  static ReviewedForecastPermission permission(const ReviewPins& pins,BatchBudget* member_batch=nullptr) {
     // The external dispatch supplies the trusted review digest. Merely creating
     // a protocol file or choosing a digest does not authorize its execution.
     auto review_id=observePinnedFile(pins.review_record_path,pins.review_record_sha256);
@@ -390,12 +380,10 @@ struct ForecastFactory {
       text(review["phase5"])=="NOT_ACCEPTED"&&text(review["phase6"])=="NOT_STARTED","wrong reviewed release scope");
     auto protocol_artifact=artifact(review["protocol"]);need(protocol_artifact.role=="protocol","protocol role mismatch");
     auto p=readDocument(protocol_artifact.identity);
-    if(context)keys(p,{"schema","source_kind","producer_sha256","constructor_attempts","metadata_attempts","rollout_attempts","scope_claims","artifacts","attempt_claim_path","member_capture_policy","context_capture_policy"});
-    else if(member_batch)keys(p,{"schema","source_kind","producer_sha256","constructor_attempts","metadata_attempts","rollout_attempts","scope_claims","artifacts","attempt_claim_path","member_capture_policy"});
+    if(member_batch)keys(p,{"schema","source_kind","producer_sha256","constructor_attempts","metadata_attempts","rollout_attempts","scope_claims","artifacts","attempt_claim_path","member_capture_policy"});
     else keys(p,{"schema","source_kind","producer_sha256","constructor_attempts","metadata_attempts","rollout_attempts","scope_claims","artifacts","attempt_claim_path"});
-    if(context)need(member_batch&&text(p["context_capture_policy"])=="PREVALIDATION_INPUT_SNAPSHOT_SAME_CASE_1","wrong captured context policy");
     if(member_batch)need(text(p["member_capture_policy"])=="VERIFIED_MEMBER_CAPTURE_SAME_CASE_1","wrong member capture policy");
-    need(text(p["schema"])==(context?"PUBLIC_LIVE_AFFINE_V2_FROZEN_PROTOCOL_MEMBERS_CONTEXT_3":member_batch?"PUBLIC_LIVE_AFFINE_V2_FROZEN_PROTOCOL_MEMBERS_2":"PUBLIC_LIVE_AFFINE_V2_FROZEN_PROTOCOL_1")&&text(p["source_kind"])=="LiveActual"&&
+    need(text(p["schema"])==(member_batch?"PUBLIC_LIVE_AFFINE_V2_FROZEN_PROTOCOL_MEMBERS_2":"PUBLIC_LIVE_AFFINE_V2_FROZEN_PROTOCOL_1")&&text(p["source_kind"])=="LiveActual"&&
       integer(p["constructor_attempts"])==1&&integer(p["metadata_attempts"])==1&&integer(p["rollout_attempts"])==1,
       "wrong single-attempt live protocol");
     auto claims=p["scope_claims"];
@@ -426,8 +414,8 @@ struct ForecastFactory {
       const Count hash_charges=checkedAdd(checkedMultiply(bytes,2),checkedMultiply(checkedAdd(total,loaded_count),262144));
       const Count copies=checkedAdd(checkedMultiply(total,576),checkedMultiply(loaded_count,536));
       const Count added=checkedAdd(checkedAdd(held,8264),checkedAdd(hash_charges,checkedAdd(copies,checkedMultiply(total,64))));
-      const Count context_live=context?294:0,context_charges=context?16384:0;auto plan=memberPlan(base,checkedAdd(checkedAdd(held,8264),context_live),checkedAdd(added,context_charges));auto budget=std::make_unique<CaseBudget>(*member_batch,plan);
-      r->members=std::make_shared<MemberCaptureStorage>(std::move(budget),plan,held);auto& m=*r->members;m.status.expected_files=total;m.status.declared_libraries=loaded_count;m.status.admitted=true;if(context)m.context=std::make_shared<ContextCaptureControl>(m.budget);m.budget.chargeMetadataBytes(checkedAdd(by_role.at("invocation").path.size(),64));m.budget.chargeScratchOrCopy(checkedAdd(1,(by_role.at("invocation").path.size()+71)/8));m.planned_invocation=by_role.at("invocation");
+      auto plan=memberPlan(base,checkedAdd(held,8264),added);auto budget=std::make_unique<CaseBudget>(*member_batch,plan);
+      r->members=std::make_shared<MemberCaptureStorage>(std::move(budget),plan,held);auto& m=*r->members;m.status.expected_files=total;m.status.declared_libraries=loaded_count;m.status.admitted=true;m.budget.chargeMetadataBytes(checkedAdd(by_role.at("invocation").path.size(),64));m.budget.chargeScratchOrCopy(checkedAdd(1,(by_role.at("invocation").path.size()+71)/8));m.planned_invocation=by_role.at("invocation");
       // Freeze vector capacities once under the real ownership ticket. No
       // push may grow an admitted vector beyond its exact closed bound.
       try{m.budget.chargeScratchOrCopy(32);r->files.reserve(total);r->file_roles.reserve(total);m.relations.reserve(total);r->libraries.reserve(loaded_count);need(r->files.capacity()==total&&r->file_roles.capacity()==total&&m.relations.capacity()==total&&r->libraries.capacity()==loaded_count,"member allocator capacity differs from exact admitted bound");}catch(const std::exception& e){m.reject(e.what());}catch(...){m.reject("NONSTANDARD_MEMBER_CAPACITY_ADMISSION");}
@@ -466,7 +454,7 @@ struct ForecastFactory {
       Count ordinal=0;for(const auto& item:files){std::optional<MemberFrame> member_frame;if(r->members)member_frame.emplace(*r->members);auto a=r->members?memberArtifact(item,*r->members):artifact(item);if(r->members){r->members->budget.chargeMetadataBytes(checkedAdd(a.role.size(),a.identity.path.size()));r->members->budget.chargeScratchOrCopy((a.role.size()+a.identity.path.size()+7)/8);}need(roles.insert(a.role).second&&paths.insert(a.identity.path).second,"duplicate closure role/path");
         FileIdentity f;if(r->members){auto& active=r->members->status;r->members->budget.chargeScratchOrCopy(6);active.active_file_index=r->files.size();active.active_native_ordinal=ordinal;active.active_parent_index=parentIndex(*r,manifest_role);active.active_group=std::string(manifest_role)=="source_closure"?VerifiedMemberGroup::SourceClosure:VerifiedMemberGroup::SDKClosure;active.active_member_known=true;active.identity_target_kind=MemberIdentityTargetKind::MemberFile;active.identity_target_index=active.active_file_index;active.identity_target_known=true;r->members->budget.chargeScratchOrCopy(20);r->members->latest_identity=MemberIdentityObservationV1{};f=observePinnedFileWithMemberBudgetV1(r->members->budget,a.identity,r->members->latest_identity);appendMember(*r,a.role,f,std::string(manifest_role)=="source_closure"?VerifiedMemberGroup::SourceClosure:VerifiedMemberGroup::SDKClosure,parentIndex(*r,manifest_role),false,ordinal);}else {f=verify(a.identity);r->files.push_back(f);}if(r->members){r->members->budget.chargeMetadataBytes(checkedAdd(checkedMultiply(2,f.path.size()),f.sha256.size()));r->members->budget.chargeScratchOrCopy(checkedAdd(1,(2*f.path.size()+f.sha256.size()+7)/8));}verified.emplace(f.path,f);++ordinal;}
       if(std::string(manifest_role)=="source_closure") {
-        for(const auto& role:required_sources)need(roles.count(role)==1,"source closure omitted required compiled source/target");if(r->members)need(roles.count("member_capture_contract")==1,"versioned member closure omitted actual capture contract");if(context)need(roles.count("context_snapshot_contract")==1,"versioned context closure omitted actual capture contract");
+        for(const auto& role:required_sources)need(roles.count(role)==1,"source closure omitted required compiled source/target");if(r->members)need(roles.count("member_capture_contract")==1,"versioned member closure omitted actual capture contract");
       } else {
         auto libs=closure["loaded_libraries"];need(libs.IsSequence()&&libs.size()>0&&libs.size()<=512,"full loaded SDK library roster required");
         std::set<std::string> unique;
@@ -491,19 +479,10 @@ struct ForecastFactory {
     }catch(const std::exception& e){if(!r->members)throw;r->members->reject(e.what());}catch(...){if(!r->members)throw;r->members->reject("NONSTANDARD_MEMBER_PERMISSION_CAPTURE");}
     ReviewedForecastPermission out;out.release_=std::move(r);return out;
   }
-  static CapturedLiveActualContextV1 validateContext(ReviewedForecastPermission& permission,const ObservedActual& observed,const AcceptedCommandHistory& command,const ProgressHistory& progress,const NominalAnchor& nominal,const CurrentBoundaryExpectation& current,const StaticDomainRanges& ranges){
-    auto r=valid(permission);need(static_cast<bool>(r->members),"captured context requires member+context protocol");auto& m=*r->members;try{need(m.context&&m.pending_case&&r->prepare_attempts==0,"captured context budget/source absent or preparation consumed");const bool attempted=m.context->attempted;m.context->attempted=true;m.budget.chargeScratchOrCopy(1);need(!attempted,"context validation already attempted; no retry");m.budget.chargeScratchOrCopy(3);
-      auto captured=ContextSnapshotFactory::captureAndValidate(m.budget,m.context->origin,observed,command,progress,nominal,current,ranges);m.context->snapshot=captured;
-      need(captured.history().complete&&!captured.history().refused,captured.history().first_error.empty()?"CONTEXT_VALIDATION_REFUSED_DETAIL_UNAVAILABLE":captured.history().first_error.c_str());return captured;
-    }catch(const std::exception& e){m.reject(e.what());throw;}catch(...){m.reject("NONSTANDARD_CAPTURED_CONTEXT_ENTRY");throw;}
-  }
   static OwnedLiveInvocation prepare(ReviewedForecastPermission& permission,const LiveActualContext& actual,
-                                     BatchBudget& batch,const CapturedLiveActualContextV1* captured=nullptr) {
-    auto r=valid(permission);if(r->members&&r->members->context&&r->prepare_attempts!=0){r->members->reject("CONTEXT_INVOCATION_PREPARATION_REENTRY");throw std::invalid_argument("invocation preparation already attempted");}need(r->prepare_attempts==0,"invocation preparation already attempted");
-    ++r->prepare_attempts;try{
-    need(!r->members||!r->members->context||captured,"context-enabled permission requires private captured witness");
-    need(!captured||(r->members&&r->members->context&&captured->sameSource(r->members->context->origin,r->members->budget)&&r->members->context->snapshot&&captured->sameWitness(*r->members->context->snapshot)),"captured witness foreign source/case/object");
-    recheck(*r);
+                                     BatchBudget& batch) {
+    auto r=valid(permission);need(r->prepare_attempts==0,"invocation preparation already attempted");
+    ++r->prepare_attempts;try{recheck(*r);
     const auto n=readDocument(r->invocation);
     keys(n,{"schema","source_kind","units","boundary","initial","previous_alpha","previous_b",
             "mesh","controls","factor_shape","capture_mode","encoding","cost_input"});
@@ -543,11 +522,10 @@ struct ForecastFactory {
                            encoding=="LosslessBinary"?NumericEncoding::LosslessBinary:NumericEncoding::FullNumericJson);
     const auto controls=n["controls"];need(controls.IsSequence()&&controls.size()==mesh.cycles().size(),"nominal control roster mismatch");
     std::shared_ptr<InvocationStorage> data;if(r->members){auto& m=*r->members;need(m.pending_case&&m.pending_case->sameBatch(batch),"member capture uses a different Batch or Case already moved");
-      need(m.planned_invocation.path==r->invocation.path&&m.planned_invocation.sha256==r->invocation.sha256&&m.planned_invocation.bytes==r->invocation.bytes&&sameBasePlan(plan,m.plan),"prepared actual invocation identity/plan differs from admission");plan=m.plan;if(m.context){m.budget.chargeScratchOrCopy(69);for(const auto* value:{&actual.observationId(),&actual.transactionId(),&actual.ranges().constantsIdentity().path,&actual.ranges().constantsIdentity().sha256}){m.budget.chargeMetadataBytes(value->size());m.budget.chargeScratchOrCopy((value->size()+7)/8);}}data=std::make_shared<InvocationStorage>(std::move(*m.pending_case),plan,actual,mesh,r);m.pending_case.reset();need(m.budget.sameCase(data->budget.share()),"moved member Case mismatch");}
+      need(m.planned_invocation.path==r->invocation.path&&m.planned_invocation.sha256==r->invocation.sha256&&m.planned_invocation.bytes==r->invocation.bytes&&sameBasePlan(plan,m.plan),"prepared actual invocation identity/plan differs from admission");plan=m.plan;data=std::make_shared<InvocationStorage>(std::move(*m.pending_case),plan,actual,mesh,r);m.pending_case.reset();need(m.budget.sameCase(data->budget.share()),"moved member Case mismatch");}
     else data=std::make_shared<InvocationStorage>(batch,plan,actual,mesh,r);
     if(r->members){r->members->budget.chargeMetadataBytes(checkedAdd(cost_identity.path.size(),checkedAdd(cost_identity.sha256.size(),semantic.size())));r->members->budget.chargeScratchOrCopy(checkedAdd(6,(cost_identity.path.size()+cost_identity.sha256.size()+semantic.size()+7)/8));}
     data->factors=fs;data->cost_input=cost_identity;data->cost_semantic_sha256=semantic;if(r->members){try{appendMember(*r,"cost_input",cost_identity,VerifiedMemberGroup::InvocationCost,parentIndex(*r,"invocation"),false,0);auto& m=*r->members;need(r->files.size()==m.status.expected_files&&r->files.size()==r->file_roles.size()&&r->files.size()==m.relations.size(),"final actual member count mismatch");m.status.complete=true;}catch(const std::exception& e){r->members->reject(e.what());throw;}catch(...){r->members->reject("NONSTANDARD_COST_MEMBER_APPEND");throw;}}else r->files.push_back(cost_identity);
-    if(captured){r->members->budget.chargeScratchOrCopy(2);data->captured_context=*captured;}
     data->initial=nativeState(actual.actualInitial());data->cells.reserve(mesh.cycles().size());
     for(std::size_t k=0;k<controls.size();++k) {
       auto item=controls[k];keys(item,{"alpha","b"});const auto alpha=joints(item["alpha"]);
@@ -558,7 +536,6 @@ struct ForecastFactory {
     return OwnedLiveInvocation(std::move(data));
     }catch(const std::exception& e){if(r->members)r->members->reject(e.what());throw;}catch(...){if(r->members)r->members->reject("NONSTANDARD_MEMBER_PREPARE_REFUSAL");throw;}
   }
-  static OwnedLiveInvocation prepareCaptured(ReviewedForecastPermission& permission,const CapturedLiveActualContextV1& context,BatchBudget& batch){auto r=valid(permission);try{return prepare(permission,context.validatedContext(),batch,&context);}catch(const std::exception& e){if(r->members)r->members->reject(e.what());throw;}catch(...){if(r->members)r->members->reject("NONSTANDARD_CAPTURED_PREPARE_REFUSAL");throw;}}
   static void claim(const ForecastReleaseState& r) {
     // This reviewed output is FIRST-only across process restarts. No deletion,
     // overwrite, retry token or automatic replacement is implemented.
@@ -727,7 +704,6 @@ Count OwnedPublicForecast::retainedMemberCount() const{const auto& r=*present(st
 const VerifiedMemberRelation& OwnedPublicForecast::retainedMemberRelation(Count k) const{const auto& r=*present(storage_).profile->release;need(r.members&&k<r.members->status.actual_files&&k<r.members->relations.size()&&k<r.files.size()&&k<r.file_roles.size(),"member committed prefix absent");const auto& relation=r.members->relations[k];need(relation.file_index==k&&relation.verified&&(relation.parent_is_protocol||relation.parent_index<k),"member committed identity/parent invalid");return relation;}
 std::string_view OwnedPublicForecast::retainedMemberRole(Count k) const{retainedMemberRelation(k);return present(storage_).profile->release->file_roles[k];}
 const FileIdentity& OwnedPublicForecast::retainedMemberParent(Count k) const{const auto& relation=retainedMemberRelation(k);const auto& r=*present(storage_).profile->release;return relation.parent_is_protocol?r.protocol:r.files[relation.parent_index];}
-const CapturedLiveActualContextV1* OwnedPublicForecast::capturedActualContextInputs() const{const auto& inv=*present(storage_).invocation;return inv.captured_context?&*inv.captured_context:nullptr;}
 const MemberLoaderObservationV1* OwnedPublicForecast::memberLoaderObservation() const{const auto& r=*present(storage_).profile->release;return r.members?&r.members->latest_loader:nullptr;}
 const MemberIdentityObservationV1* OwnedPublicForecast::memberIdentityObservation() const{const auto& r=*present(storage_).profile->release;return r.members?&r.members->latest_identity:nullptr;}
 const MemberCaptureStatus* OwnedPublicForecast::memberCaptureStatus() const{const auto& r=*present(storage_).profile->release;return r.members?&r.members->status:nullptr;}
@@ -740,9 +716,6 @@ const char* OwnedPublicForecast::normalizationCertificate() const{(void)present(
 const FactorShape& OwnedPublicForecast::costShape() const{return present(storage_).invocation->factors;}
 const FileIdentity& OwnedPublicForecast::costInputIdentity() const{return present(storage_).invocation->cost_input;}
 const std::string& OwnedPublicForecast::costSemanticSha256() const{return present(storage_).invocation->cost_semantic_sha256;}
-ReviewedForecastPermission loadReviewedForecastPermissionWithMemberContextCaptureV3(const ReviewPins& pins,BatchBudget& batch){return detail::ForecastFactory::permission(pins,&batch,true);}
-CapturedLiveActualContextV1 validateFrozenLiveActualWithSnapshotV3(ReviewedForecastPermission& permission,const ObservedActual& observed,const AcceptedCommandHistory& command,const ProgressHistory& progress,const NominalAnchor& nominal,const CurrentBoundaryExpectation& current,const StaticDomainRanges& ranges){return detail::ForecastFactory::validateContext(permission,observed,command,progress,nominal,current,ranges);}
-OwnedLiveInvocation prepareFrozenLiveInvocationWithContextSnapshotV3(ReviewedForecastPermission& permission,const CapturedLiveActualContextV1& context,BatchBudget& batch){return detail::ForecastFactory::prepareCaptured(permission,context,batch);}
 ReviewedForecastPermission loadReviewedForecastPermissionWithMemberCaptureV2(const ReviewPins& pins,BatchBudget& batch){return detail::ForecastFactory::permission(pins,&batch);}
 ReviewedForecastPermission loadReviewedForecastPermission(const ReviewPins& pins){return detail::ForecastFactory::permission(pins);}
 OwnedLiveInvocation prepareFrozenLiveInvocation(ReviewedForecastPermission& p,const LiveActualContext& c,BatchBudget& b){return detail::ForecastFactory::prepare(p,c,b);}

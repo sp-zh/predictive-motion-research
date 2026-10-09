@@ -1,0 +1,62 @@
+{
+  "scope": "Declared logical source payload/copy schedule, static integer audit only; no feature executed",
+  "prerequisite_backup": "3741fad3cae3530bdbd9011c7d4182123cff5638",
+  "original_groups": {
+    "observed": 19,
+    "command": 24,
+    "progress": 6,
+    "nominal": 32,
+    "current": 4
+  },
+  "owned_breakdown": {
+    "original_groups": 85,
+    "original_ranges_with_identity_bytes": 29,
+    "validated_context_with_identity_bytes": 69,
+    "history_three_counts_nine_flags": 12,
+    "source_kind": 1,
+    "validated_optional_presence": 1,
+    "retained_source_token_identity": 1
+  },
+  "snapshot_ticket": 198,
+  "control_ticket": 8,
+  "validator_temporary_ticket": 80,
+  "metadata_temporary_ticket": 8,
+  "added_live": 294,
+  "added_charges": 16384,
+  "strings": {
+    "original_ID_count": 8,
+    "each_ID_max_bytes": 256,
+    "range_path_max_bytes": 4096,
+    "range_sha_max_bytes": 64,
+    "error_detail_max_bytes": 512,
+    "rule": "Actual metadata bytes plus per-string ceil(bytes/8) before each copy"
+  },
+  "bounded_schedule": {
+    "reservation_charges": 294,
+    "raw_scalar_copy_charges": 321,
+    "input_ID_copy_max": 256,
+    "original_range_text_copy_max": 520,
+    "three_validated_text_copies_max": 1752,
+    "error_text_copy_max": 64,
+    "control_initial_copy": 8,
+    "validation_entry_latch": 1,
+    "wrapper_copy_work": 5,
+    "prepaid_history_work": 32,
+    "complete_metadata_facts": 141,
+    "complete_metadata_ieee64_facts": 98,
+    "metadata_per_fact": 40,
+    "metadata_per_ieee64": 3,
+    "metadata_temporary_copy": 8
+  },
+  "original_caps": "Unchanged; added schedule checked before actual Case construction, failures remain authoritative",
+  "limitations": [
+    "Logical tickets exclude allocator/refcount/ledger engine RSS",
+    "Before-Case review/protocol/YAML remains prior bootstrap preflight",
+    "One complete metadata traversal schedule is conditional, repeated traversals can exhaust actual case/batch/metadata quotas",
+    "No inherited provisional8MiB manifest upper bound/full-flow theorem"
+  ],
+  "feature_executions": 0,
+  "phase5": "NOT_ACCEPTED",
+  "phase6": "NOT_STARTED",
+  "conditional_bounded_work_sum": 9195
+}

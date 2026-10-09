@@ -1,0 +1,20 @@
+{
+  "validation": "Python stdlib integers and source-byte comparison only; no compiler/feature execution",
+  "snapshot_breakdown_sum": 198,
+  "input_groups_sum": 85,
+  "added_live_sum": 294,
+  "conditional_copy_and_one_metadata_work": 9195,
+  "added_charge_allowance": 16384,
+  "new_complete_metadata_facts": 141,
+  "new_complete_ieee64_facts": 98,
+  "metadata_work": 5942,
+  "legacy_validator_body_byte_identical": true,
+  "legacy_context_structure_byte_identical": true,
+  "foundation_resources_cpp_unchanged": true,
+  "whitespace_diff_check": "PASS",
+  "feature_function_calls": 0,
+  "limitations": [
+    "No compilation/static type checker/CPP execution",
+    "No runtime admission or whole byte-layout/RSS/phase theorem"
+  ]
+}

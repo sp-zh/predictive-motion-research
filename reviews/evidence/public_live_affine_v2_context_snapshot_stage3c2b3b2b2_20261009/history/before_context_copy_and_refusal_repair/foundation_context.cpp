@@ -123,57 +123,34 @@ CommandProposal first4msRequest(const LiveActualContext& context,
 namespace detail {
 struct ContextSnapshotData {
   SharedCaseBudget budget;OwnedReservation ticket;std::shared_ptr<const void> source;
-  ObservedActual observed;AcceptedCommandHistory command;ProgressHistory progress;
-  NominalAnchor nominal;CurrentBoundaryExpectation current;StaticDomainRanges ranges;
-  std::optional<LiveActualContext> validated;ContextValidationHistoryV1 history;
-  ContextInputSourceKindV1 kind=ContextInputSourceKindV1::CallerObserverAssertions;
-  ContextSnapshotData(SharedCaseBudget b,std::shared_ptr<const void> s,const StaticDomainRanges& r)
-    :budget(std::move(b)),ticket(budget.reserve(198)),source(std::move(s)),ranges(r){history.ranges_copied=true;}
-  // Numeric payload183 + history12 + source-kind1 + optional validated presence1 + source-token identity1.
-  // Strings use bounded metadata/copy charges; all payload dies before ticket.
+  ObservedActual observed;AcceptedCommandHistory command;ProgressHistory progress;NominalAnchor nominal;CurrentBoundaryExpectation current;
+  StaticDomainRanges ranges;std::optional<LiveActualContext> validated;ContextValidationHistoryV1 history;ContextInputSourceKindV1 kind=ContextInputSourceKindV1::CallerObserverAssertions;
+  ContextSnapshotData(SharedCaseBudget b,std::shared_ptr<const void> s,const StaticDomainRanges& r):budget(std::move(b)),ticket(budget.reserve(200)),source(std::move(s)),ranges(r){}
 };
 CapturedLiveActualContextV1 ContextSnapshotFactory::captureAndValidate(SharedCaseBudget budget,std::shared_ptr<const void> source,const ObservedActual& observed,const AcceptedCommandHistory& command,const ProgressHistory& progress,const NominalAnchor& nominal,const CurrentBoundaryExpectation& current,const StaticDomainRanges& ranges){
-  need(static_cast<bool>(source),"actual context source token absent");
-  const auto& id=ranges.constantsIdentity();
-  need(id.path.size()<=4096&&id.sha256.size()<=64,"snapshot ranges identity cap before copy");
-  auto payString=[&](std::string_view value){budget.chargeMetadataBytes(value.size());budget.chargeScratchOrCopy((value.size()+7)/8);};
-  payString(id.path);payString(id.sha256);budget.chargeScratchOrCopy(29);budget.chargeScratchOrCopy(32);
-  auto data=std::make_shared<ContextSnapshotData>(budget,std::move(source),ranges);
-  data->history.attempted=true;data->history.stage="CAPTURE_ORIGINAL_CONTEXT_INPUTS";
-  try{
-    auto guard=budget.reserve(80); // Original validator return69 + <=11 bounded control workspace.
-    auto bounded=[&](const std::string& value){need(value.size()<=256,"context original ID cap before copy");payString(value);};
-    for(const auto* value:{&observed.observation_id,&observed.transaction_id,&command.observation_id,&command.transaction_id,&progress.observation_id,&progress.transaction_id,&current.observation_id,&current.transaction_id})bounded(*value);
-    budget.chargeScratchOrCopy(85);
-    data->observed=observed;data->history.completed_input_groups=1;data->history.copied_scalar_slots=19;
-    data->command=command;data->history.completed_input_groups=2;data->history.copied_scalar_slots=43;
-    data->progress=progress;data->history.completed_input_groups=3;data->history.copied_scalar_slots=49;
-    data->nominal=nominal;data->history.completed_input_groups=4;data->history.copied_scalar_slots=81;
-    data->current=current;data->history.completed_input_groups=5;data->history.copied_scalar_slots=85;data->history.inputs_copied=true;
-    // Pay both legacy validator's actual return copy and the later retained copy.
-    // No validation equations or numeric equality/signed-zero rules are changed.
-    auto payValidatedCopy=[&](){budget.chargeScratchOrCopy(69);payString(data->current.observation_id);payString(data->current.transaction_id);payString(data->ranges.constantsIdentity().path);payString(data->ranges.constantsIdentity().sha256);};
-    payValidatedCopy();data->history.stage="VALIDATE_SAME_OWNED_ORIGINAL_INPUTS";data->history.validation_started=true;
-    auto actual=validateLiveActual(data->observed,data->command,data->progress,data->nominal,data->current,data->ranges);
-    data->history.validation_returned=true;payValidatedCopy();data->validated.emplace(actual);
-    data->history.validated_copy_complete=true;data->history.complete=true;data->history.stage="VALIDATED_ORIGINAL_CONTEXT_SNAPSHOT";
-  }catch(const std::exception& e){
-    data->history.refused=true;data->history.complete=false;data->history.stage="CONTEXT_INPUT_OR_VALIDATION_REFUSED";
-    try{const std::string_view why=e.what();need(why.size()<=512,"context error detail cap");payString(why);data->history.first_error.assign(why);data->history.first_error_known=true;}catch(...){}
-  }catch(...){data->history.refused=true;data->history.complete=false;data->history.stage="NONSTANDARD_CONTEXT_SNAPSHOT_REFUSAL";}
-  return CapturedLiveActualContextV1(std::move(data)); // Only private caller retains failures.
+  need(static_cast<bool>(source),"actual context source token absent");need(ranges.constantsIdentity().path.size()<=4096&&ranges.constantsIdentity().sha256.size()<=64,"snapshot ranges identity cap before copy");budget.chargeMetadataBytes(checkedAdd(ranges.constantsIdentity().path.size(),ranges.constantsIdentity().sha256.size()));budget.chargeScratchOrCopy(checkedAdd(28,(ranges.constantsIdentity().path.size()+ranges.constantsIdentity().sha256.size()+7)/8));auto data=std::make_shared<ContextSnapshotData>(budget,std::move(source),ranges);data->history.attempted=true;data->history.stage="CAPTURE_ORIGINAL_CONTEXT_INPUTS";
+  try{auto guard=budget.reserve(80); // Existing validator's actual return/context temporary, not future W.
+    auto bounded=[&](const std::string& s){need(s.size()<=256,"context original ID cap before copy");budget.chargeMetadataBytes(s.size());budget.chargeScratchOrCopy((s.size()+7)/8);};
+    for(const auto* s:{&observed.observation_id,&observed.transaction_id,&command.observation_id,&command.transaction_id,&progress.observation_id,&progress.transaction_id,&current.observation_id,&current.transaction_id})bounded(*s);
+    budget.chargeScratchOrCopy(85);data->observed=observed;data->command=command;data->progress=progress;data->nominal=nominal;data->current=current;data->history.copied_scalar_slots=85;data->history.inputs_copied=true;
+    data->history.stage="VALIDATE_SAME_OWNED_ORIGINAL_INPUTS";budget.chargeScratchOrCopy(68);auto actual=validateLiveActual(data->observed,data->command,data->progress,data->nominal,data->current,data->ranges);data->history.validation_returned=true;
+    // Same source strings/ranges in immutable snapshot; copy returned legacy
+    // context once, with actual scalar/identity copies charged before materialization.
+    budget.chargeScratchOrCopy(68);budget.chargeMetadataBytes(checkedAdd(actual.observationId().size(),checkedAdd(actual.transactionId().size(),checkedAdd(actual.ranges().constantsIdentity().path.size(),actual.ranges().constantsIdentity().sha256.size()))));
+    data->validated.emplace(actual);data->history.complete=true;data->history.stage="VALIDATED_ORIGINAL_CONTEXT_SNAPSHOT";
+  }catch(const std::exception& e){try{const std::string_view why=e.what();need(why.size()<=512,"context error detail cap");budget.chargeMetadataBytes(why.size());data->history.first_error.assign(why);}catch(...){}data->history.refused=true;data->history.complete=false;data->history.stage="CONTEXT_INPUT_OR_VALIDATION_REFUSED";}catch(...){data->history.refused=true;data->history.complete=false;data->history.stage="NONSTANDARD_CONTEXT_SNAPSHOT_REFUSAL";}
+  return CapturedLiveActualContextV1(std::move(data)); // Private caller retains failure before refusing public witness.
 }
 }
 CapturedLiveActualContextV1::CapturedLiveActualContextV1(std::shared_ptr<const detail::ContextSnapshotData> d):data_(std::move(d)){}
-const ObservedActual& CapturedLiveActualContextV1::observedInput() const{need(data_&&data_->history.completed_input_groups>=1,"context original inputs not copied");return data_->observed;}
-const AcceptedCommandHistory& CapturedLiveActualContextV1::commandInput() const{need(data_&&data_->history.completed_input_groups>=2,"context original command not copied");return data_->command;}
-const ProgressHistory& CapturedLiveActualContextV1::progressInput() const{need(data_&&data_->history.completed_input_groups>=3,"context progress not copied");return data_->progress;}
-const NominalAnchor& CapturedLiveActualContextV1::nominalInput() const{need(data_&&data_->history.completed_input_groups>=4,"context original nominal not copied");return data_->nominal;}
-const CurrentBoundaryExpectation& CapturedLiveActualContextV1::currentInput() const{need(data_&&data_->history.completed_input_groups>=5,"context original current expectation not copied");return data_->current;}
-const StaticDomainRanges& CapturedLiveActualContextV1::inputRanges() const{need(data_&&data_->history.ranges_copied,"context snapshot ranges absent");return data_->ranges;}
-const ContextValidationHistoryV1& CapturedLiveActualContextV1::history() const{need(data_&&data_->history.ranges_copied,"context snapshot ranges absent");return data_->history;}
+const ObservedActual& CapturedLiveActualContextV1::observedInput() const{need(data_&&data_->history.inputs_copied,"context original inputs not copied");return data_->observed;}
+const AcceptedCommandHistory& CapturedLiveActualContextV1::commandInput() const{need(data_&&data_->history.inputs_copied,"context original command not copied");return data_->command;}
+const ProgressHistory& CapturedLiveActualContextV1::progressInput() const{need(data_&&data_->history.inputs_copied,"context progress not copied");return data_->progress;}
+const NominalAnchor& CapturedLiveActualContextV1::nominalInput() const{need(data_&&data_->history.inputs_copied,"context original nominal not copied");return data_->nominal;}
+const CurrentBoundaryExpectation& CapturedLiveActualContextV1::currentInput() const{need(data_&&data_->history.inputs_copied,"context original current expectation not copied");return data_->current;}
+const StaticDomainRanges& CapturedLiveActualContextV1::inputRanges() const{need(static_cast<bool>(data_),"context snapshot moved/absent");return data_->ranges;}
+const ContextValidationHistoryV1& CapturedLiveActualContextV1::history() const{need(static_cast<bool>(data_),"context snapshot moved/absent");return data_->history;}
 ContextInputSourceKindV1 CapturedLiveActualContextV1::sourceKind() const{need(static_cast<bool>(data_),"context source-kind absent");return data_->kind;}
 const LiveActualContext& CapturedLiveActualContextV1::validatedContext() const{need(data_&&data_->history.complete&&!data_->history.refused&&data_->validated,"genuine complete validated context required");return *data_->validated;}
 bool CapturedLiveActualContextV1::sameSource(const std::shared_ptr<const void>& source,const SharedCaseBudget& budget) const{return data_&&data_->source==source&&data_->budget.sameCase(budget);}
-bool CapturedLiveActualContextV1::sameWitness(const CapturedLiveActualContextV1& other) const{return data_&&data_==other.data_;}
 } // namespace phase5_public_live_affine_v2
