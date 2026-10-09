@@ -1,0 +1,30 @@
+{
+  "scope": "Full original single test TU compilation evidence retained immutably",
+  "archive": {
+    "bytes": 264049,
+    "sha256": "50215d720b509503a5184022da1ee06bc674e8c9c43ea0705df462d70054ac0f",
+    "file": "foundation-test-tu-compile-only-success.tar.gz",
+    "regular_file_count": 32,
+    "payload_file_count": 31,
+    "inner_ready_sha256": "14ea16acf28ae366705c9ceb8e3701fe008aea0d2bf67d707b3f77e5d790d14b"
+  },
+  "Mac_archive": "/Users/uot/Documents/ChatGPT/ros/results/phase5-reference/foundation-test-tu-compile-only-once-v1-20261009/root-retained-attempt1/foundation-test-tu-compile-only-success.tar.gz",
+  "Dell_archive": "/mnt/d/CodexTransfer/projects/predictive_motion/checkpoints/foundation-test-tu-compile-only-once-v1-20261009/root-retained-attempt1/foundation-test-tu-compile-only-success.tar.gz",
+  "Mac_payloads_verified": true,
+  "Dell_payloads_verified": true,
+  "Mac_verification": {
+    "archive_sha256": "50215d720b509503a5184022da1ee06bc674e8c9c43ea0705df462d70054ac0f",
+    "payloads_verified": 31
+  },
+  "Dell_verification": {
+    "archive_sha256": "50215d720b509503a5184022da1ee06bc674e8c9c43ea0705df462d70054ac0f",
+    "payloads_verified": 31
+  },
+  "original_source_ready_sha256": "d394b612f58d99bf6f2a8a1788f02eaac45429a9bede9f01e4ea55f592c01656",
+  "publication": "Compact authored root review/storage only;raw object,depfile,host inputs and control scripts excluded",
+  "compiled_test_TUs": 1,
+  "linked": false,
+  "run": false,
+  "phase5": "NOT_ACCEPTED",
+  "phase6": "NOT_STARTED"
+}
