@@ -4,7 +4,7 @@
 #include <optional>
 #include <string_view>
 namespace phase5_public_live_affine_v2 {
-namespace detail {struct CostDecoderState;struct CostInputFactory;class CapturePartitionState;}
+namespace detail {struct CostDecoderState;struct CostInputFactory;}
 struct CostDecodeObservation {
   NumericEncoding requested_output=NumericEncoding::LosslessBinary;
   std::optional<NumericEncoding> actual_input;
@@ -37,14 +37,10 @@ class CostDecodeOutcome final {
   explicit CostDecodeOutcome(AffineAssemblyOutcome&&) noexcept;
   AffineAssemblyOutcome original_;FileIdentity requested_;
   std::shared_ptr<detail::CostDecoderState> state_;
-  std::shared_ptr<detail::CapturePartitionState> capture_partition_;
   std::optional<QuadraticCostOutcome> cost_;std::string failure_;bool refused_=false;
   void refuse(const char*) noexcept;
   friend struct detail::CostInputFactory;
 };
-class CaptureWorkspaceGrant;
-CostDecodeOutcome decodeAndBuildCostWithCaptureWorkspaceV1(AffineAssemblyOutcome&&,CaptureWorkspaceGrant&&,
-                                                         const InitialCostConsumer& consumer={});
 CostDecodeOutcome decodeAndBuildCost(AffineAssemblyOutcome&&,
                                     const InitialCostConsumer& consumer={});
 // No CLI or output publisher. This function is source, not an execution release.

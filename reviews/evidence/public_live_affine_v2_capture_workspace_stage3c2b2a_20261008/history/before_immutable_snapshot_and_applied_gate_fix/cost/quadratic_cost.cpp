@@ -262,8 +262,8 @@ struct CostFactory {
         capture_credit=partition->status.credit_slots;
       }
       data=std::make_unique<CostStorage>(out.anchor_,budget,plan,f,identity,cache,capture_credit);
-      if(partition){partition->status.allocated_work=data->work_capacity;
-        need(partition->status.allocated_work==partition->status.remaining_actual_work,"actual reduced cost allocation differs from partition");partition->status.applied=true;}
+      if(partition){partition->status.applied=true;partition->status.allocated_work=data->work_capacity;
+        need(partition->status.allocated_work==partition->status.remaining_actual_work,"actual reduced cost allocation differs from partition");}
       ingest(*data);build(*data,callbacks);
       data->trace.stage="COMPLETE_QUADRATIC_COST";data->trace.complete=true;data->trace.construction_completed=true;out.cost_.reset(new CompleteQuadraticCost(std::move(data)));
     }catch(const std::exception& e){const auto partition=out.anchor_?out.anchor_->recipe.capture_partition_:out.input_.capture_partition_;if(partition)partition->reject(e.what());if(data)data->reject(e.what());out.failed_=std::move(data);out.recordRefusal(e.what());}

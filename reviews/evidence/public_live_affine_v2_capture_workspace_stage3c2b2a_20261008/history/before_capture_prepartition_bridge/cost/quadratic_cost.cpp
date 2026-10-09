@@ -1,5 +1,4 @@
 #include "quadratic_cost.hpp"
-#include "../capture_workspace/partition_internal.hpp"
 #include <openssl/evp.h>
 #include <algorithm>
 #include <array>
@@ -58,14 +57,14 @@ struct CostStorage {
   std::string semantic,error;bool poisoned=false,callback_active=false,input_complete=false;
   Count input_initialized=0,active_term=0,active_addition=0;
   bool original_consumer=false;bool canonical_evaluation=false;double direct_value=0,condensed_value=0;MathCaptureTrace trace;
-  CostStorage(std::shared_ptr<CostAnchor> a,CaseBudget& b,const ResourcePlan& p,const FactorShape& f,const FileIdentity& identity,Count decoder_cache,Count capture_credit)
+  CostStorage(std::shared_ptr<CostAnchor> a,CaseBudget& b,const ResourcePlan& p,const FactorShape& f,const FileIdentity& identity,Count decoder_cache)
     :anchor(std::move(a)),budget(&b),plan(p),shape(f),du(p.du()),dy(p.dy()),dx(p.dx()),
      input_slots(sum({mul(f.rows,dy),f.rows,mul(f.terms,dy),f.terms,f.addition_coefficients,f.addition_coefficients/30,mul(f.addition_records,4)})),
      capture_slots(sum({mul(f.rows,du+1),mul(f.terms,sum({mul(du,du),du,1})),mul(du,du),du,dy,1})),
      work_slots(sum({mul(4,mul(f.largest_term_rows,dy)),mul(4,mul(f.largest_term_rows,du)),mul(4,mul(du,du)),mul(2,mul(dy,du))})),
      topology_slots(sum({f.addition_coefficients/30,mul(f.addition_records,4)})),
      allocated_input_slots(subtract(input_slots,topology_slots)),
-     work_capacity(workCapacity(work_slots,sum({topology_slots,decoder_cache,capture_credit}),f.largest_term_rows,dy,du)),
+     work_capacity(workCapacity(work_slots,add(topology_slots,decoder_cache),f.largest_term_rows,dy,du)),
      topology_owner(b.reserve(topology_slots)),
      data(b,sum({allocated_input_slots,capture_slots,work_capacity})),
      sealed_recipe{identity,anchor->recipe.terms,{}}{
@@ -254,20 +253,10 @@ struct CostFactory {
           "decoder ownership receipt differs from bound case/topology");cache=out.input_.owned_cache_;}
       else generic.emplace(budget.reserve(topology));
       out.anchor_=std::make_shared<CostAnchor>(std::move(generic),std::move(out.original_),std::move(out.input_));
-      Count capture_credit=0;auto partition=out.anchor_->recipe.capture_partition_;
-      if(partition){need(partition->status.attempted&&partition->status.validated&&!partition->status.cost_consumed&&!partition->status.refused,"capture partition not validated/already consumed/refused");
-        partition->status.cost_consumed=true;
-        need(partition->source_origin==out.anchor_->assembly.assembly().captureOriginToken()&&partition->budget.sameCase(budget.share()),"cost partition source/case mismatch");
-        need(cache==16&&out.anchor_->recipe.owned_input_,"capture path requires owned complete decoder cache receipt");
-        capture_credit=partition->status.credit_slots;
-      }
-      data=std::make_unique<CostStorage>(out.anchor_,budget,plan,f,identity,cache,capture_credit);
-      if(partition){partition->status.allocated_work=data->work_capacity;
-        need(partition->status.allocated_work==partition->status.remaining_actual_work,"actual reduced cost allocation differs from partition");partition->status.applied=true;}
-      ingest(*data);build(*data,callbacks);
+      data=std::make_unique<CostStorage>(out.anchor_,budget,plan,f,identity,cache);ingest(*data);build(*data,callbacks);
       data->trace.stage="COMPLETE_QUADRATIC_COST";data->trace.complete=true;data->trace.construction_completed=true;out.cost_.reset(new CompleteQuadraticCost(std::move(data)));
-    }catch(const std::exception& e){const auto partition=out.anchor_?out.anchor_->recipe.capture_partition_:out.input_.capture_partition_;if(partition)partition->reject(e.what());if(data)data->reject(e.what());out.failed_=std::move(data);out.recordRefusal(e.what());}
-    catch(...){const auto partition=out.anchor_?out.anchor_->recipe.capture_partition_:out.input_.capture_partition_;if(partition)partition->reject("NONSTANDARD_COST_INPUT_FAILURE");if(data)data->reject("NONSTANDARD_COST_INPUT_FAILURE");out.failed_=std::move(data);out.recordRefusal("NONSTANDARD_COST_INPUT_FAILURE");}
+    }catch(const std::exception& e){if(data)data->reject(e.what());out.failed_=std::move(data);out.recordRefusal(e.what());}
+    catch(...){if(data)data->reject("NONSTANDARD_COST_INPUT_FAILURE");out.failed_=std::move(data);out.recordRefusal("NONSTANDARD_COST_INPUT_FAILURE");}
     return out;
   }
   static void term(CostStorage& p,Count k,const std::function<void(const UsedTermView&)>& callback){
@@ -351,7 +340,7 @@ const AffineAssemblyOutcome& CompleteQuadraticCost::originalAssembly() const{nee
 const std::array<bool,7>& CompleteQuadraticCost::scopeClaims() noexcept{static const std::array<bool,7> flags{};return flags;}
 CostInputRecipe& CostInputRecipe::operator=(CostInputRecipe&& other) noexcept{
   if(this!=&other){CostInputRecipe old(std::move(other));
-    std::swap(capture_partition_,old.capture_partition_);std::swap(owned_input_,old.owned_input_);std::swap(owned_budget_,old.owned_budget_);
+    std::swap(owned_input_,old.owned_input_);std::swap(owned_budget_,old.owned_budget_);
     std::swap(owned_topology_,old.owned_topology_);std::swap(owned_cache_,old.owned_cache_);
     std::swap(file,old.file);terms.swap(old.terms);read_scalar.swap(old.read_scalar);finish_read.swap(old.finish_read);
   }return *this;

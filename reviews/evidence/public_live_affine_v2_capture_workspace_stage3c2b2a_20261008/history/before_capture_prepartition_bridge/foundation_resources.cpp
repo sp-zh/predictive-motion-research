@@ -242,7 +242,6 @@ NumericEncoding SharedCaseBudget::numericEncoding() const{return valid(state_).e
 Count SharedCaseBudget::liveSlots() const{return valid(state_).live;}
 Count SharedCaseBudget::liveCeiling() const{return valid(state_).live_ceiling;}
 Count SharedCaseBudget::cumulativeCharges() const{return valid(state_).cumulative;}
-bool SharedCaseBudget::sameCase(const SharedCaseBudget& other) const noexcept{return state_&&state_==other.state_;}
 Count SharedCaseBudget::chargeCeiling() const{return valid(state_).charge_ceiling;}
 ChunkIOLease SharedCaseBudget::beginChunkIO(){
   auto& s=valid(state_);if(s.chunk_io_active){s.chunk_io_reentry=true;throw std::invalid_argument("CHUNK_IO_REENTRY");}

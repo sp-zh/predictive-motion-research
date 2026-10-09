@@ -15,10 +15,9 @@ struct CostTermLayout {
 // Reader contract: bounded scalar access to the reviewed opaque input; no
 // retained unbudgeted numerical arrays. Complete codecs belong to SOURCE3C.
 // Scalar order is specified in INPUT_CONTRACT.md. Read exactly once on ingest.
-namespace detail {struct CostInputFactory;struct CostFactory;struct CaptureInventoryFactory;class CapturePartitionState;}
+namespace detail {struct CostInputFactory;struct CostFactory;struct CaptureInventoryFactory;}
 struct CostInputRecipe {
  private:
-  std::shared_ptr<detail::CapturePartitionState> capture_partition_;
   std::shared_ptr<OwnedReservation> owned_input_; // Dies after public metadata/cache callbacks.
   CaseBudget* owned_budget_=nullptr;Count owned_topology_=0,owned_cache_=0;
   void admitOwnedInput(CaseBudget&,Count topology,Count byte_cache_slots);

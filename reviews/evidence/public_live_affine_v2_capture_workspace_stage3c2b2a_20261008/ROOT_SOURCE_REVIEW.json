@@ -1,0 +1,57 @@
+{
+  "decision": "PASS_SOURCE_SAME_CASE_REAL_PREPARTITION_ADMISSION_BRIDGE_ONLY",
+  "recorded_utc": "2026-10-09T02:28:52.740620+00:00",
+  "prerequisite_backup": "02ef774a5709af5958ee493af76f902438cb56ab",
+  "packet_READY_sha256": "046d0bfe7872081969e7e31032fe621ea1d3d263240516f26759eb545b101ec4",
+  "verified_payload_count": 27,
+  "verified_preimport_guard_count": 59,
+  "criteria": "ROOT_REVIEW_CRITERIA.json",
+  "integer_role_formula_audit": "ROOT_ROLE_FORMULA_AUDIT.json",
+  "validation": "Independent static identity/single-use/allocation-layout/lifetime/role-count integer review and SHA checks only; no C++/parser/matrix/Model execution",
+  "observations": [
+    "Private immutable partition state binds actual affine origin, same shared CaseState, original plan/shape/file and semantic SHA; bounded identities checked before snapshot. Generic decode/build path retains zero credit.",
+    "New capture path rejects missing/moved/reused/foreign/refused grant before admission. Claim, validation, actual cost consumption and applied allocation are separate states, with first failures retained in outcome and observer.",
+    "CostStorage actually allocates W-Q-cache16-credit, preserving all existing input/capture/sealed/original topology accounting. Existing exact active-work requirement is checked before allocation; applied marked only after successful actual allocation and exact capacity equality.",
+    "Grant owns no numeric pool/buffer/ticket or aliased slice. Real unallocated headroom remains in unchanged live ceiling; later actual IO/receipt owners need their normal live/cumulative reservations once. This is not a promised complete-flow allowance.",
+    "Independent static role grouping confirms32+16N+12T+23S+20K+3records and optionalDense7+7S; extra typed cell-control split N plus bounded ancillary32. Credit20+max20/28+4*receiptLimit. Ancillary expansion/count excess must refuse without omitted fields.",
+    "Observer records historical applied/allocated capacity but does not hold actual CostStorage or mint current IO authority. Later capture requires same live nonrefused genuine source, actual reservations and full identity/coverage closure."
+  ],
+  "remaining_obligations": [
+    "SOURCE3C2B2B actual bounded genuine leaf binding/export and original consumer capture, exact descriptor/receipt counts, complete full-flow peak/cumulative/metadata/output accounting and enforcement.",
+    "Complete manifest/READY publisher and independent closure reader; preserve actual raw/substep indices separately where failures disagree with map indices; no field omission to fit bounded policy.",
+    "No full_flow_accepted/fullCaptureComplete or Model/controller permission from prepartition. Ancillary supported policy and all real byte/buffer lifetimes must be implemented and reviewed before complete capture.",
+    "Independent source/build/runtime freeze and deferred lifecycle/allocation/foreign/reentry/mutation/numerical tests remain unrun. Original checker/freezes/FD failure/phase gates unchanged."
+  ],
+  "executions": {
+    "configure": 0,
+    "compile": 0,
+    "empty_kernel": 0,
+    "prepare_grant": 0,
+    "decoder": 0,
+    "cost": 0,
+    "original_consumer": 0,
+    "catalogue": 0,
+    "driver": 0,
+    "writer": 0,
+    "readback": 0,
+    "parser_fixture": 0,
+    "numeric_checks": 0,
+    "matrix_checks": 0,
+    "Model_constructor": 0,
+    "Model_metadata": 0,
+    "Model_rollout": 0,
+    "plant": 0,
+    "solver": 0,
+    "main": 0,
+    "scorer": 0
+  },
+  "storage": {
+    "Mac_packet": "/private/tmp/public_live_affine_v2_capture_workspace_stage3c2b2a",
+    "canonical_source": "tools/phase5_public_live_affine_v2/capture_workspace",
+    "history": "reviews/evidence/public_live_affine_v2_capture_workspace_stage3c2b2a_20261008/history",
+    "Dell_copy_verified": false,
+    "Git_backup": "Pending commit and remote verification"
+  },
+  "phase5": "NOT_ACCEPTED",
+  "phase6": "NOT_STARTED"
+}

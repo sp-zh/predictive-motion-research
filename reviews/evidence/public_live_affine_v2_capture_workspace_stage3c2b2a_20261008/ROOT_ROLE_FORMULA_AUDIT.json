@@ -1,0 +1,67 @@
+{
+  "scope": "Static source role-count bookkeeping only; no catalogue/C++/parser/matrix/Model execution",
+  "catalogue_checkpoint": "02ef774a5709af5958ee493af76f902438cb56ab",
+  "contributions": {
+    "fixed_metadata_raw_final": {
+      "constant": 4
+    },
+    "cell_control_state": {
+      "N": 2
+    },
+    "cycle_state": {
+      "T": 1
+    },
+    "substep_values_friction_clips": {
+      "S": 7
+    },
+    "all_raw_map_groups_11_fields": {
+      "N": 11,
+      "T": 11,
+      "S": 11
+    },
+    "normalized_reference": {
+      "constant": 1
+    },
+    "boundaries": {
+      "N": 3,
+      "constant": 3
+    },
+    "embedding_selector_chosen": {
+      "constant": 5
+    },
+    "sample_recipe_and_four_values": {
+      "S": 5
+    },
+    "cost_topology_and_evalU": {
+      "constant": 2
+    },
+    "all_term_roles": {
+      "K": 20
+    },
+    "addition_coeff_rows_sampleindex": {
+      "J": 3
+    },
+    "canonical_concat_coeffs_evaluations": {
+      "constant": 15
+    },
+    "failure_and_decoder": {
+      "constant": 2
+    }
+  },
+  "compact_upper_coefficients": {
+    "constant": 32,
+    "N": 16,
+    "T": 12,
+    "S": 23,
+    "K": 20,
+    "J": 3
+  },
+  "dense_extra": {
+    "constant": 7,
+    "S": 7
+  },
+  "cell_control_split_extra": "N",
+  "ancillary_numeric_limit": 32,
+  "credit_formula": "20+max(20,28)+4*(catalogue_upper+N+32)",
+  "acceptance_scope": "Source prepartition only; actual receipt count and full metadata/byte closure remain B2B; excess may refuse but must not omit fields"
+}

@@ -164,7 +164,6 @@ class SharedCaseBudget final {
   Count liveCeiling() const;
   Count cumulativeCharges() const;
   Count chargeCeiling() const;
-  bool sameCase(const SharedCaseBudget&) const noexcept;
  private:
   explicit SharedCaseBudget(std::shared_ptr<detail::CaseState>);
   std::shared_ptr<detail::CaseState> state_;

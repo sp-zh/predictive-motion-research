@@ -420,3 +420,5 @@ The [bounded input codec and retained failure source checkpoint](../reviews/evid
 The [bounded typed numeric chunk source checkpoint](../reviews/evidence/public_live_affine_v2_output_chunks_stage3c2a_20261008/ROOT_SOURCE_REVIEW.json) adds no executed numerical or motion result. Independent complete inventory publication/readback and actual task clips remain pending; existing diagnostic figures keep their original acceptance scope.
 
 The [genuine inventory owner and catalogue source checkpoint](../reviews/evidence/public_live_affine_v2_capture_inventory_stage3c2b1_20261008/ROOT_SOURCE_REVIEW.json) adds no executed numerical or motion result. Complete leaf capture/manifest/readback and actual Phase5 task videos remain pending; existing diagnostic figures retain their original scope.
+
+The [same-case capture prepartition source checkpoint](../reviews/evidence/public_live_affine_v2_capture_workspace_stage3c2b2a_20261008/ROOT_SOURCE_REVIEW.json) adds no executed numerical or motion result. Actual leaf capture, complete publication/readback and Phase5 task clips remain pending; existing diagnostic figures retain their recorded scope.

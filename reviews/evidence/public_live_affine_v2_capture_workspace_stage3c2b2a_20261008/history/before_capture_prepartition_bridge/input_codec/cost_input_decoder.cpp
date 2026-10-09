@@ -1,5 +1,4 @@
 #include "cost_input_decoder.hpp"
-#include "../capture_workspace/partition_internal.hpp"
 #include <openssl/evp.h>
 #include <algorithm>
 #include <array>
@@ -182,37 +181,24 @@ struct CostDecoderState {
   }catch(const std::exception& e){fail(e.what());throw;}catch(...){fail("NONSTANDARD_EOF_FAILURE");throw;}}
 };
 struct CostInputFactory {
-  static CostDecodeOutcome withPartition(AffineAssemblyOutcome&& a,CaptureWorkspaceGrant&& grant,const InitialCostConsumer& c){return construct(std::move(a),c,std::move(grant.state_),true);}
-  static CostDecodeOutcome construct(AffineAssemblyOutcome&& source,const InitialCostConsumer& consumer,
-                                    std::shared_ptr<CapturePartitionState> partition={},bool require_partition=false){
-    CostDecodeOutcome out(std::move(source));out.capture_partition_=std::move(partition);try{
-      need(!require_partition||out.capture_partition_,"capture path requires a genuine nonmoved partition");
-      if(out.capture_partition_){auto& st=*out.capture_partition_;const bool used=st.status.attempted;st.status.attempted=true;
-        need(!used,"capture partition admission already attempted");need(st.status.prepared&&!st.status.refused,"capture partition preparation refused");}
+  static CostDecodeOutcome construct(AffineAssemblyOutcome&& source,const InitialCostConsumer& consumer){
+    CostDecodeOutcome out(std::move(source));try{
       need(out.original_.hasCompleteAssembly(),"complete owned assembly required for cost decode");auto& a=out.original_.assembly();
       out.requested_=a.boundCostInputIdentity();const auto& plan=a.costPlan();auto& budget=a.costBudget();const auto shape=a.boundCostShape();
-      if(out.capture_partition_){auto& st=*out.capture_partition_;
-        need(st.source_origin==a.captureOriginToken()&&st.budget.sameCase(budget.share()),"capture partition foreign source/case");
-        need(st.plan.dx()==plan.dx()&&st.plan.du()==plan.du()&&st.plan.dy()==plan.dy()&&st.plan.captureMode()==plan.captureMode()&&st.plan.numericEncoding()==plan.numericEncoding()&&
-          st.plan.liveCeiling()==plan.liveCeiling()&&st.plan.chargeCeiling()==plan.chargeCeiling()&&st.plan.outputCeiling()==plan.outputCeiling(),"capture partition plan identity mismatch");
-        need(st.shape.terms==shape.terms&&st.shape.rows==shape.rows&&st.shape.largest_term_rows==shape.largest_term_rows&&st.shape.addition_coefficients==shape.addition_coefficients&&st.shape.addition_records==shape.addition_records,"capture partition factor shape mismatch");
-        need(st.input.path==out.requested_.path&&st.input.sha256==out.requested_.sha256&&st.input.bytes==out.requested_.bytes&&st.semantic_sha==a.boundCostSemanticSha256(),"capture partition complete input identity mismatch");
-        st.status.validated=true;
-      }
       auto state=std::make_shared<CostDecoderState>();out.state_=state;state->expected=out.requested_;state->partial.file=out.requested_;
       state->budget=&budget;state->dy=plan.dy();state->du=plan.du();state->shape=shape;state->samples=a.originalNormalization().maps().samples().size();
       state->metadata_cap=plan.metadataCeiling();state->artifact_cap=std::min(plan.outputCeiling(),ResourcePolicyV2::output_bytes);state->status.requested_output=plan.numericEncoding();
       need(state->status.requested_output==NumericEncoding::LosslessBinary||state->status.requested_output==NumericEncoding::FullNumericJson,"unknown requested codec; no fallback");
       const Count topology=add(shape.addition_coefficients/30,mul(shape.addition_records,4));state->partial.admitOwnedInput(budget,topology,16);
       state->input_owner=state->partial.owned_input_;state->cache=std::make_unique<std::array<unsigned char,128>>();state->open();state->metadata(a);
-      CostInputRecipe recipe(std::move(state->partial));recipe.capture_partition_=out.capture_partition_;recipe.read_scalar=[state](Count i){return state->scalar(i);};recipe.finish_read=[state](){state->finish();};
+      CostInputRecipe recipe(std::move(state->partial));recipe.read_scalar=[state](Count i){return state->scalar(i);};recipe.finish_read=[state](){state->finish();};
       out.cost_.emplace(buildQuadraticCost(std::move(out.original_),std::move(recipe),consumer));
       if(!out.cost_->hasCompleteCost()){
         const auto reason=out.cost_->refusal();const char* why=reason.empty()?"UPSTREAM_COST_REFUSAL":reason.data();
-        if(out.capture_partition_)out.capture_partition_->reject(why);state->fail(why);out.refuse(why); // Copied callbacks now refuse before budget/FD access.
+        state->fail(why);out.refuse(why); // Copied callbacks now refuse before budget/FD access.
       }
-    }catch(const std::exception& e){if(out.capture_partition_)out.capture_partition_->reject(e.what());if(out.state_)out.state_->fail(e.what());out.refuse(e.what());}
-    catch(...){if(out.capture_partition_)out.capture_partition_->reject("NONSTANDARD_DECODER_FAILURE");if(out.state_)out.state_->fail("NONSTANDARD_DECODER_FAILURE");out.refuse("NONSTANDARD_DECODER_FAILURE");}return out;
+    }catch(const std::exception& e){if(out.state_)out.state_->fail(e.what());out.refuse(e.what());}
+    catch(...){if(out.state_)out.state_->fail("NONSTANDARD_DECODER_FAILURE");out.refuse("NONSTANDARD_DECODER_FAILURE");}return out;
   }
 };
 }
@@ -230,8 +216,5 @@ CostDecodeObservation CostDecodeOutcome::observation() const{if(!state_)return {
   if(state_->hash&&state_->status.hash_valid)out.physical_prefix_sha256=state_->digest();return out;}
 std::string_view CostDecodeOutcome::refusal() const noexcept{if(cost_&&!cost_->hasCompleteCost())return cost_->refusal();return refused_?(failure_.empty()?std::string_view("DECODER_REFUSAL_UNRECORDED_DETAIL"):std::string_view(failure_)):std::string_view{};}
 void CostDecodeOutcome::refuse(const char* why) noexcept{if(refused_)return;refused_=true;try{failure_=why?why:"DECODER_REFUSAL";}catch(...){failure_.clear();}}
-CostDecodeOutcome decodeAndBuildCostWithCaptureWorkspaceV1(AffineAssemblyOutcome&& a,CaptureWorkspaceGrant&& grant,const InitialCostConsumer& c){
-  return detail::CostInputFactory::withPartition(std::move(a),std::move(grant),c);
-}
 CostDecodeOutcome decodeAndBuildCost(AffineAssemblyOutcome&& a,const InitialCostConsumer& c){return detail::CostInputFactory::construct(std::move(a),c);}
 }

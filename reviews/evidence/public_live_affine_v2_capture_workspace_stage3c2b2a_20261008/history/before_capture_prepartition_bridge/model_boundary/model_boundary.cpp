@@ -345,7 +345,6 @@ struct ForecastFactory {
       "capture_state.hpp","cost_input_decoder.hpp","cost_input_decoder.cpp","input_codec_CMakeLists",
       "numeric_chunks.hpp","chunk_io.hpp","chunk_writer.cpp","chunk_reader.cpp","output_chunks_CMakeLists",
       "capture_inventory.hpp","capture_inventory.cpp","capture_inventory_CMakeLists",
-      "capture_workspace.hpp","partition_internal.hpp","capture_workspace.cpp","capture_workspace_CMakeLists",
       "augmented_extension.hpp","augmented_extension.cpp","augmented_extension_CMakeLists",
       "augmented_value.hpp","augmented_value.cpp","physical_derivative.hpp","physical_derivative.cpp","physical_derivative_CMakeLists",
       "physical_value.hpp","physical_value.cpp","physical_value_CMakeLists","coupled_friction_box.cpp"};
