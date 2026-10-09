@@ -1,0 +1,23 @@
+{
+  "decision": "PASS_SEVEN_IDENTIFIER_TOKEN_SOURCE_REPAIR_ONLY_NOT_BUILD_OR_RUNTIME_VALIDATION",
+  "baseline": "7e3dda0d53c6f0643bd6229695d66f50d57d5e5c",
+  "ready_sha256": "2ff7dadb01b57a1b8bfb781539c67e0259c1865663caa6dab865d9ff4d301fba",
+  "payloads_verified": 8,
+  "preimport_source_guards_verified": 116,
+  "source_file": "tools/phase5_public_live_affine_v2/output_chunks/chunk_reader.cpp",
+  "changed_line": 84,
+  "identifier_tokens_changed": 7,
+  "declaration_count": 1,
+  "reference_count": 6,
+  "before_sha256": "4039e50a6ab193a43343fdb5cf1ad26cd134a78be2f59f746252b2de0473e562",
+  "after_sha256": "a2c4b6c187c8d2fff9cae845b98a9cda145fc48d20cf7c5b4bfa8b9e8a867ac0",
+  "independent_proof": "Only line84 differs;exact token substitution and inverse byte restoration verified. No other byte/whitespace/condition/formula/interface change.",
+  "source_code_changes": 1,
+  "compiler_or_project_functions_executed_this_unit": 0,
+  "compiled_validation": false,
+  "remaining": "New readonly61source snapshot and separately reviewed new configure/build outputs;old failure objects not reused as fresh evidence",
+  "protected_source_guards_after_import": "115 unchanged plus this one reviewed after-SHA;old before-SHA retained in historical packet and failed archives",
+  "old_checker_legacy_validator_freezes_all_failures_and_phase_history_preserved": true,
+  "phase5": "NOT_ACCEPTED",
+  "phase6": "NOT_STARTED"
+}

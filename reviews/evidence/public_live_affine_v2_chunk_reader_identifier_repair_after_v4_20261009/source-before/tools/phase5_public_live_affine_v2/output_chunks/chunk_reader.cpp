@@ -81,7 +81,7 @@ struct Reader {
     if(expected.encoding==NumericEncoding::FullNumericJson){punctuation(']');punctuation('}');ws();}
     need(out.observation.consumed_bytes==expected.bytes&&next==available,"extra/missing/trailing chunk bytes");
     unsigned char extra=0;ssize_t n;do{n=::read(file.value,&extra,1);}while(n<0&&errno==EINTR);need(n==0,"chunk physical EOF/read error");
-    struct stat after_stat{};need(::fstat(file.value,&after_stat)==0&&S_ISREG(after_stat.st_mode)&&after_stat.st_nlink==1&&after_stat.st_dev==opened.st_dev&&after_stat.st_ino==opened.st_ino&&after_stat.st_size==opened.st_size,"chunk FD inode/size changed");
+    struct stat final{};need(::fstat(file.value,&final)==0&&S_ISREG(final.st_mode)&&final.st_nlink==1&&final.st_dev==opened.st_dev&&final.st_ino==opened.st_ino&&final.st_size==opened.st_size,"chunk FD inode/size changed");
     out.observed_sha256=hash.digest();need(out.observed_sha256==expected.sha256,"complete actual chunk SHA mismatch");
     out.observation.physical_prefix_sha256=out.observed_sha256;out.observation.stage="EXACT_CHUNK_READBACK";out.exact_readback=true;
   }

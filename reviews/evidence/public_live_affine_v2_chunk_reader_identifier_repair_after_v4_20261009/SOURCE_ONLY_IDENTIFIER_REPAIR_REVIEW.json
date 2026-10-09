@@ -1,0 +1,36 @@
+{
+  "scope": "SOURCE_IDENTIFIER_REPAIR_CHUNK_READER_AFTER_V4",
+  "baseline": "7e3dda0d53c6f0643bd6229695d66f50d57d5e5c",
+  "source_file": "tools/phase5_public_live_affine_v2/output_chunks/chunk_reader.cpp",
+  "function": "Reader::finish",
+  "changed_line": 84,
+  "identifier_before": "final",
+  "identifier_after": "after_stat",
+  "identifier_tokens_replaced": 7,
+  "declaration_tokens": 1,
+  "same_variable_reference_tokens": 6,
+  "dispatch_count_clarification": "Actual line has seven total identifier occurrences: one declaration plus six uses. All seven are renamed; no synthetic eighth occurrence.",
+  "before": {
+    "bytes": 12178,
+    "sha256": "4039e50a6ab193a43343fdb5cf1ad26cd134a78be2f59f746252b2de0473e562"
+  },
+  "after": {
+    "bytes": 12213,
+    "sha256": "a2c4b6c187c8d2fff9cae845b98a9cda145fc48d20cf7c5b4bfa8b9e8a867ac0"
+  },
+  "exact_reverse_rename_restores_before_bytes": true,
+  "same_namespace_match_count": 1,
+  "additional_similar_declarations_found": 0,
+  "fd_regularity_linkcount_device_inode_size_SHA_EOF_EINTR_predicates_unchanged": true,
+  "failure_messages_budget_math_ABI_interfaces_and_whitespace_unchanged": true,
+  "canonical_Dell_readonly_sources_old_builds_archives_unchanged": true,
+  "compiler_syntax_probe_compile_configure_build_or_project_function_executions": 0,
+  "compiled_or_behavioral_validation_claimed": false,
+  "root_sole_importer_review_required": true,
+  "prospective_next_step": "After root independently reviews/imports/public source milestone, freeze a new versioned61-source native snapshot and review new configure/build output scope. Do not patch old readonly source or reuse old failure objects as fresh evidence.",
+  "post_build_header_roster_limit": "2481 actual dependency records retained earlier;2469 were first post-build observations and are not claimed prefrozen.",
+  "full_dependency_or_RSS_closure_claimed": false,
+  "phase5": "NOT_ACCEPTED",
+  "phase6": "NOT_STARTED",
+  "old_checker_freezes_all_failures_and_phase_history_preserved": true
+}

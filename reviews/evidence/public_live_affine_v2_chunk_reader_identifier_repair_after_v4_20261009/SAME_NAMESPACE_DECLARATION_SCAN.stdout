@@ -1,0 +1,1 @@
+tools/phase5_public_live_affine_v2/output_chunks/chunk_reader.cpp:84:    struct stat final{};need(::fstat(file.value,&final)==0&&S_ISREG(final.st_mode)&&final.st_nlink==1&&final.st_dev==opened.st_dev&&final.st_ino==opened.st_ino&&final.st_size==opened.st_size,"chunk FD inode/size changed");
