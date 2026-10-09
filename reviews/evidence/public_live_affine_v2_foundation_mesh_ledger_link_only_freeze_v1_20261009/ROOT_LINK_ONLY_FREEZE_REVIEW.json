@@ -1,0 +1,63 @@
+{
+  "decision": "PASS_SINGLE_LINK_INPUT_PREPARATION_ONLY_NOT_LINK_OR_RUNTIME",
+  "baseline": "ce7376ba3d6007562abc91c87ea8881ad5f800e2",
+  "ready_sha256": "0473d8a215c189fec11e127df7319a1ee034cd833e0704964bc485c0ed921607",
+  "original_payloads_verified": 15,
+  "canonical_and_prior_checkpoint_guards_verified": 129,
+  "readonly_frozen_link_input_files": 2,
+  "independent_file_byte_symbol_checks": {
+    "foundation_archive_members_matched_original": 3,
+    "project_undefined_symbols_in_test_object": 39,
+    "all39_defined_by_resources_member": true,
+    "resources_member_project_undefined_symbols": 0,
+    "only_a_prediction_not_actual_link_selection": true
+  },
+  "current_named_inputs": 33,
+  "origin_counts": {
+    "FULL_BUILD_PREFROZEN_2949": 11,
+    "LINK_PREPARATION_FIRST_OBSERVATION_NOT_PRIOR_PREFROZEN": 20,
+    "LINK_PREPARATION_FIRST_OBSERVATION_NAMED_ALIAS_NOT_PRIOR_PREFROZEN": 2
+  },
+  "root_independent_remote_recheck": {
+    "current_file_identities_verified": 37,
+    "named_absences_verified": 2,
+    "frozen_input_files0444": 2,
+    "input_directory0555": true,
+    "link_attempt_absent": true,
+    "link_calls": 0,
+    "program_runs": 0
+  },
+  "independent_static_review": [
+    "Exact test object and foundation archive bytes match previously accepted compile artifacts;all3 archive members rehashed",
+    "Independent ELF symbol parser verifies39 unresolved project symbols are defined by resources member;actual archive extraction remains pending link map",
+    "Readonly copies/original file modes,33 named current inputs and2 specs absences independently rechecked over strict USB4 SSH",
+    "Candidate one-link argv/profile/four-field replaced environment/fresh output reviewed;sealed harness has one exact dispatch-gated driver invocation and no binary execution path",
+    "Harness stops first failure,timeout60s or combined output1MiB;pre/post identities,raw logs and partial outputs retained",
+    "Successful future link requires pure ELF/map inspection:only resources archive member,declared standard-library DT_NEEDED and observed interpreter alias",
+    "Original pending alias observations,history-label correction and local preparation SyntaxError remain retained;no research/link failure was hidden"
+  ],
+  "harness_limits_reviewed": {
+    "wall_seconds": 60,
+    "combined_output_bytes": 1048576,
+    "CPU_seconds": 55,
+    "address_space_bytes": 4294967296,
+    "file_size_bytes": 134217728,
+    "core_bytes": 0,
+    "file_descriptors": 64
+  },
+  "compiler_source_compilation_calls": 0,
+  "link_calls": 0,
+  "project_program_runs": 0,
+  "project_function_calls": 0,
+  "runtime_case_groups_executed": 0,
+  "next_unit_admitted": "Separate exact reviewed link-only harness invocation after verified milestone backup;one link only;no compiled output execution,SDK,ldd or probes",
+  "limits": [
+    "33 named inputs and2 specs absences are finite evidence,not complete driver search/defaults/native/OS/readset/RSS closure",
+    "Actual CRT/default library selections await emitted linker map;OpenSSL/yaml target declarations are distinct from actual input extraction",
+    "No final link,ABI or66-case runtime validation yet;successful linking never authorizes runtime"
+  ],
+  "publication": "Compact authored root review/storage only;raw symbols,objects/archive,tool/native/configuration identities and controls excluded",
+  "phase5": "NOT_ACCEPTED",
+  "phase6": "NOT_STARTED",
+  "all_previous_failures_checker_freezes_and_sources_preserved": true
+}
