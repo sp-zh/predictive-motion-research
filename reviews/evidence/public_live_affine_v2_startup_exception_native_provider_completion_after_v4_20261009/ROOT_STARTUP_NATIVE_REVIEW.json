@@ -1,0 +1,31 @@
+{
+  "decision": "PASS_STATIC_COMPLETION_AND_BOUNDED_METADATA_EFFECT_SCOPE_ONLY",
+  "baseline": "fc8d240116d76c47aa1437454910bc4aff87adea",
+  "ready_sha256": "fbe9dfb243c5def92f654c5399a560fb4db2d5188433d517e3c0aa21f159cc43",
+  "payloads_verified": 25,
+  "unchanged_source_guards_verified": 116,
+  "file_records_independently_crosschecked": 77,
+  "Python_source_AST_parsed_independently": 34,
+  "exact_source_excerpts_independently_checked": 12,
+  "native_soname_provider_pairs_checked": 7,
+  "independent_findings": [
+    "Apport imports APT before the negative packaged-path filter; import-time configuration/system initialization is a real conditional effect",
+    "For fixed fresh task cwd and -c, source path predicate rejects the captured task path before Report construction, collection or write",
+    "Reviewed source prefix does not call package operations, external utilities or report writing; native initializer internals remain unproved",
+    "Known namespace .pth module_from_spec sequence does not itself call exec_module on package init sources",
+    "Nineteen extension candidates and seven paired soname providers are static observations; actual loader cache/hwcap selection remains unobserved",
+    "Original seven query argv/code unchanged; V2 adds empty cwd and task-local failure-path output locations",
+    "Ordinary startup and NumPy small-array/limits/BLAS/random/native initialization are disclosed separately from project algebra and Model calls"
+  ],
+  "admitted_next_unit": "Separately dispatched seven V2 metadata queries, each once under exact controlled environment and fresh paths, including normal system site hooks, NumPy known numerical/native initialization and conditional Apport prefilter APT initialization. This admits no package operation, external utility, process/user crash collection, network action or system report write.",
+  "next_unit_conditions": "Verify named current identities before/after, exact fresh empty cwd/cache and controlled env; retain first nonzero/timeout and stop remaining queries. No repeats or automatic preseed/configure.",
+  "actual_metadata_or_SDK_imports_this_unit": 0,
+  "project_functions_this_unit": 0,
+  "configuration_or_project_build_admitted": false,
+  "full_native_loader_RSS_closure_verified": false,
+  "source_changes": 0,
+  "publication": "Only compact authored review and archive/storage record enter public Git; full sources/internal identities remain excluded",
+  "phase5": "NOT_ACCEPTED",
+  "phase6": "NOT_STARTED",
+  "old_checker_archives_failure_and_pause_history_preserved": true
+}
