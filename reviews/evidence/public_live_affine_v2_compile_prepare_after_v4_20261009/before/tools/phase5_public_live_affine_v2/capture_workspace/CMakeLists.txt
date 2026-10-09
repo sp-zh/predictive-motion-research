@@ -1,0 +1,11 @@
+cmake_minimum_required(VERSION 3.16)
+project(phase5_public_live_affine_v2_capture_workspace LANGUAGES CXX)
+if(NOT TARGET public_live_affine_v2_input_codec)
+  add_subdirectory(../input_codec input-source EXCLUDE_FROM_ALL)
+endif()
+add_library(public_live_affine_v2_capture_workspace STATIC capture_workspace.cpp)
+target_compile_features(public_live_affine_v2_capture_workspace PUBLIC cxx_std_17)
+target_include_directories(public_live_affine_v2_capture_workspace PUBLIC ${CMAKE_CURRENT_SOURCE_DIR})
+target_link_libraries(public_live_affine_v2_capture_workspace PUBLIC public_live_affine_v2_input_codec)
+target_compile_options(public_live_affine_v2_capture_workspace PRIVATE -Wall -Wextra -Wpedantic)
+# Source prepartition/admission only. No driver, leaf export or root READY.

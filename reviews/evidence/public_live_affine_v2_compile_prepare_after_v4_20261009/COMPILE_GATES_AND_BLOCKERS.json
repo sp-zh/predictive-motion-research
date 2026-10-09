@@ -1,0 +1,51 @@
+{
+  "scope": "Compile-only preparation, not admission",
+  "source_changes": 0,
+  "fresh_current_tool_and_SDK_read_verified": false,
+  "known_source_boundaries": [
+    {
+      "path": "tools/phase5_public_coupled_augmented_extension_cpp/CMakeLists.txt",
+      "lines": [
+        9,
+        14,
+        18
+      ],
+      "issue": "Two implicit-type libraries and an existing probe executable; force/review STATIC and select named library target only"
+    },
+    {
+      "path": "tools/phase5_public_coupled_derivative_cpp/CMakeLists.txt",
+      "lines": [
+        7,
+        12
+      ],
+      "issue": "Implicit-type library and probe; same named-target/no-runtime rule"
+    },
+    {
+      "path": "tools/phase5_public_coupled_cpp_v2/CMakeLists.txt",
+      "lines": [
+        6,
+        11
+      ],
+      "issue": "Implicit-type library and probe; no default ALL target"
+    }
+  ],
+  "blocking_missing_inputs": [
+    "Fresh Mac and Dell compiler/CMake/make/ar/ranlib/ld/helper+sysroot/stdlib identities",
+    "Fresh OpenSSL/yaml-cpp/Eigen3/Pinocchio4.1.0 and recursive imported package/module/target closure",
+    "Audit whether external configs/toolchain/modules execute try_run/SDK/Python imports/generators or write outside reviewed outputs",
+    "Independent compile-only source/FP/tool-command/output freeze and exclusive fresh per-platform paths"
+  ],
+  "not_a_compile_blocker_by_itself": [
+    "Parent experimental envp/stdin/pipe/exit pipeline is unimplemented; no Parent runner is compiled or executed here",
+    "Runtime full capture/reference/metadata/RSS gates remain unclosed without granting any function call"
+  ],
+  "compile_success_would_not_prove": [
+    "Complete final executable symbol/link/ABI closure",
+    "Linux claim IO tested by a Mac build",
+    "Lossless numeric or callback/lifetime/resource/runtime correctness",
+    "Model/plant/main/scorer permission or Phase5 acceptance"
+  ],
+  "all_runtime_feature_executions": 0,
+  "phase5": "NOT_ACCEPTED",
+  "phase6": "NOT_STARTED"
+}

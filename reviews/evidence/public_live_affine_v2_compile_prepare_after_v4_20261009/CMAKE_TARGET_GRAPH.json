@@ -1,0 +1,279 @@
+{
+  "scope": "Static actual local CMake graph, not configure/type/link/run verification",
+  "entry_source_directory": "tools/phase5_public_live_affine_v2/capture_leaves",
+  "named_compile_target": "public_live_affine_v2_capture_leaves",
+  "transitive_project_library_targets": {
+    "public_live_affine_v2_foundation": [
+      "OpenSSL::Crypto",
+      "yaml-cpp"
+    ],
+    "public_live_affine_v2_model_boundary": [
+      "public_live_affine_v2_foundation",
+      "public_coupled_augmented_extension",
+      "yaml-cpp",
+      "OpenSSL::Crypto",
+      "CMAKE_DL_LIBS"
+    ],
+    "public_live_affine_v2_normalization": [
+      "public_live_affine_v2_model_boundary"
+    ],
+    "public_live_affine_v2_affine": [
+      "public_live_affine_v2_normalization"
+    ],
+    "public_live_affine_v2_cost": [
+      "public_live_affine_v2_affine",
+      "OpenSSL::Crypto"
+    ],
+    "public_live_affine_v2_input_codec": [
+      "public_live_affine_v2_cost",
+      "OpenSSL::Crypto"
+    ],
+    "public_live_affine_v2_capture_inventory": [
+      "public_live_affine_v2_input_codec"
+    ],
+    "public_live_affine_v2_capture_workspace": [
+      "public_live_affine_v2_input_codec"
+    ],
+    "public_live_affine_v2_output_chunks": [
+      "public_live_affine_v2_foundation",
+      "OpenSSL::Crypto"
+    ],
+    "public_live_affine_v2_capture_leaves": [
+      "public_live_affine_v2_capture_inventory",
+      "public_live_affine_v2_capture_workspace",
+      "public_live_affine_v2_output_chunks"
+    ],
+    "public_coupled_model_v2": [
+      "Eigen3::Eigen",
+      "yaml-cpp",
+      "pinocchio::pinocchio"
+    ],
+    "public_coupled_derivative_model": [
+      "public_coupled_model_v2",
+      "yaml-cpp",
+      "pinocchio::pinocchio"
+    ],
+    "frozen_augmented_extension_value": [
+      "public_coupled_model_v2",
+      "yaml-cpp"
+    ],
+    "public_coupled_augmented_extension": [
+      "frozen_augmented_extension_value",
+      "public_coupled_derivative_model",
+      "yaml-cpp"
+    ]
+  },
+  "four_targets_requiring_BUILD_SHARED_LIBS_OFF": [
+    "public_coupled_model_v2",
+    "public_coupled_derivative_model",
+    "frozen_augmented_extension_value",
+    "public_coupled_augmented_extension"
+  ],
+  "registered_project_executables_NOT_allowed_to_build_or_run": [
+    "public_coupled_probe_v2",
+    "public_coupled_derivative_probe",
+    "public_coupled_augmented_extension_probe"
+  ],
+  "project_CMake_files": {
+    "tools/phase5_public_live_affine_v2/CMakeLists.txt": {
+      "bytes": 723,
+      "sha256": "3cfa0c53c9f9245ef1d1a109e1f25750ab863e37fdb19075a561aa50a62fcbd2"
+    },
+    "tools/phase5_public_live_affine_v2/affine/CMakeLists.txt": {
+      "bytes": 655,
+      "sha256": "4ffe3bd3d1c82687a81959494386d62f11dd40fada69e39263f324ae0b7a9af0"
+    },
+    "tools/phase5_public_live_affine_v2/capture_inventory/CMakeLists.txt": {
+      "bytes": 777,
+      "sha256": "2a124eeb709d5d4644a8510a4661fd994565c3f9ae02c808dc96411c59d8c04d"
+    },
+    "tools/phase5_public_live_affine_v2/capture_leaves/CMakeLists.txt": {
+      "bytes": 1214,
+      "sha256": "c70e38037ac44e245ccb4e1b30d6782e6d7a0fe6e6cb4e66451191ddae1c60e7"
+    },
+    "tools/phase5_public_live_affine_v2/capture_workspace/CMakeLists.txt": {
+      "bytes": 774,
+      "sha256": "412dc95c3d4bc24dc66f33dde1cceda69aa081a742ae8c0578fda844bd2242ce"
+    },
+    "tools/phase5_public_live_affine_v2/cost/CMakeLists.txt": {
+      "bytes": 672,
+      "sha256": "610a4bf08ce8fdb6d01e9593bc1c5a391402238d04d7dc27ce29cad1cf1d0078"
+    },
+    "tools/phase5_public_live_affine_v2/input_codec/CMakeLists.txt": {
+      "bytes": 718,
+      "sha256": "8a0486ad87705fbc2b66a662cc509cfdd074d8a954ad3590111d23076191933f"
+    },
+    "tools/phase5_public_live_affine_v2/model_boundary/CMakeLists.txt": {
+      "bytes": 948,
+      "sha256": "dde35979aa269b1e65bff7a71769a9e5e1964e3d0483150148e2ec1027845554"
+    },
+    "tools/phase5_public_live_affine_v2/normalization/CMakeLists.txt": {
+      "bytes": 696,
+      "sha256": "bdf2542cca5d4f1dc61f6a630a455c947600310ef7bc11cee317ecd9f9de924e"
+    },
+    "tools/phase5_public_live_affine_v2/output_chunks/CMakeLists.txt": {
+      "bytes": 811,
+      "sha256": "d0e3a906ba2d31f897fdf7b34505056867ee0ca3cf593f26fc79e71a3eb7987e"
+    },
+    "tools/phase5_public_coupled_augmented_extension_cpp/CMakeLists.txt": {
+      "bytes": 1837,
+      "sha256": "9c59603677ab8c35869773dc4efb0cc732be5f8016d1fd631d2b3301ae79af49"
+    },
+    "tools/phase5_public_coupled_derivative_cpp/CMakeLists.txt": {
+      "bytes": 1080,
+      "sha256": "8a1c9e05445ee68792614d2ef58319a3402616cb1581a56d74db3dfceff259d9"
+    },
+    "tools/phase5_public_coupled_cpp_v2/CMakeLists.txt": {
+      "bytes": 927,
+      "sha256": "a282e82782250b449b912dde01cf6318e7a2897fd2c16540151018941b9c051f"
+    }
+  },
+  "project_CMake_text_hook_scan": {
+    "tools/phase5_public_live_affine_v2/CMakeLists.txt": {
+      "registered_executables": [],
+      "source_hook_lines": []
+    },
+    "tools/phase5_public_live_affine_v2/affine/CMakeLists.txt": {
+      "registered_executables": [],
+      "source_hook_lines": []
+    },
+    "tools/phase5_public_live_affine_v2/capture_inventory/CMakeLists.txt": {
+      "registered_executables": [],
+      "source_hook_lines": []
+    },
+    "tools/phase5_public_live_affine_v2/capture_leaves/CMakeLists.txt": {
+      "registered_executables": [],
+      "source_hook_lines": []
+    },
+    "tools/phase5_public_live_affine_v2/capture_workspace/CMakeLists.txt": {
+      "registered_executables": [],
+      "source_hook_lines": []
+    },
+    "tools/phase5_public_live_affine_v2/cost/CMakeLists.txt": {
+      "registered_executables": [],
+      "source_hook_lines": []
+    },
+    "tools/phase5_public_live_affine_v2/input_codec/CMakeLists.txt": {
+      "registered_executables": [],
+      "source_hook_lines": []
+    },
+    "tools/phase5_public_live_affine_v2/model_boundary/CMakeLists.txt": {
+      "registered_executables": [],
+      "source_hook_lines": []
+    },
+    "tools/phase5_public_live_affine_v2/normalization/CMakeLists.txt": {
+      "registered_executables": [],
+      "source_hook_lines": []
+    },
+    "tools/phase5_public_live_affine_v2/output_chunks/CMakeLists.txt": {
+      "registered_executables": [],
+      "source_hook_lines": []
+    },
+    "tools/phase5_public_coupled_augmented_extension_cpp/CMakeLists.txt": {
+      "registered_executables": [
+        "public_coupled_augmented_extension_probe"
+      ],
+      "source_hook_lines": []
+    },
+    "tools/phase5_public_coupled_derivative_cpp/CMakeLists.txt": {
+      "registered_executables": [
+        "public_coupled_derivative_probe"
+      ],
+      "source_hook_lines": []
+    },
+    "tools/phase5_public_coupled_cpp_v2/CMakeLists.txt": {
+      "registered_executables": [
+        "public_coupled_probe_v2"
+      ],
+      "source_hook_lines": []
+    }
+  },
+  "external_config_hook_audit_complete": false,
+  "note": "10 live libraries declare STATIC;4 inherited physical libraries need global BUILD_SHARED_LIBS=OFF and generated type review. Archive build is not final executable link or runtime validation.",
+  "project_target_include_directories": {
+    "public_live_affine_v2_foundation": {
+      "visibility": "PUBLIC",
+      "repo_directories": [
+        "tools/phase5_public_live_affine_v2"
+      ]
+    },
+    "public_live_affine_v2_affine": {
+      "visibility": "PUBLIC",
+      "repo_directories": [
+        "tools/phase5_public_live_affine_v2/affine"
+      ]
+    },
+    "public_live_affine_v2_capture_inventory": {
+      "visibility": "PUBLIC",
+      "repo_directories": [
+        "tools/phase5_public_live_affine_v2/capture_inventory"
+      ]
+    },
+    "public_live_affine_v2_capture_leaves": {
+      "visibility": "PUBLIC",
+      "repo_directories": [
+        "tools/phase5_public_live_affine_v2/capture_leaves"
+      ]
+    },
+    "public_live_affine_v2_capture_workspace": {
+      "visibility": "PUBLIC",
+      "repo_directories": [
+        "tools/phase5_public_live_affine_v2/capture_workspace"
+      ]
+    },
+    "public_live_affine_v2_cost": {
+      "visibility": "PUBLIC",
+      "repo_directories": [
+        "tools/phase5_public_live_affine_v2/cost"
+      ]
+    },
+    "public_live_affine_v2_input_codec": {
+      "visibility": "PUBLIC",
+      "repo_directories": [
+        "tools/phase5_public_live_affine_v2/input_codec"
+      ]
+    },
+    "public_live_affine_v2_model_boundary": {
+      "visibility": "PUBLIC",
+      "repo_directories": [
+        "tools/phase5_public_live_affine_v2/model_boundary"
+      ]
+    },
+    "public_live_affine_v2_normalization": {
+      "visibility": "PUBLIC",
+      "repo_directories": [
+        "tools/phase5_public_live_affine_v2/normalization"
+      ]
+    },
+    "public_live_affine_v2_output_chunks": {
+      "visibility": "PUBLIC",
+      "repo_directories": [
+        "tools/phase5_public_live_affine_v2/output_chunks"
+      ]
+    },
+    "frozen_augmented_extension_value": {
+      "visibility": "PUBLIC",
+      "repo_directories": [
+        "tools/phase5_public_coupled_augmented_cpp"
+      ]
+    },
+    "public_coupled_augmented_extension": {
+      "visibility": "PUBLIC",
+      "repo_directories": [
+        "tools/phase5_public_coupled_augmented_extension_cpp"
+      ]
+    },
+    "public_coupled_derivative_model": {
+      "visibility": "PUBLIC",
+      "repo_directories": [
+        "tools/phase5_public_coupled_derivative_cpp"
+      ]
+    },
+    "public_coupled_model_v2": {
+      "visibility": "PUBLIC",
+      "repo_directories": [
+        "tools/phase5_public_coupled_cpp_v2"
+      ]
+    }
+  }
+}

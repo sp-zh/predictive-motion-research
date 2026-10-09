@@ -1,0 +1,252 @@
+{
+  "baseline": "440889b0cc66395303971d5e9e87a95293b83c4f",
+  "files": {
+    "tools/phase5_public_live_affine_v2/CMakeLists.txt": {
+      "bytes": 723,
+      "sha256": "3cfa0c53c9f9245ef1d1a109e1f25750ab863e37fdb19075a561aa50a62fcbd2"
+    },
+    "tools/phase5_public_live_affine_v2/affine/CMakeLists.txt": {
+      "bytes": 655,
+      "sha256": "4ffe3bd3d1c82687a81959494386d62f11dd40fada69e39263f324ae0b7a9af0"
+    },
+    "tools/phase5_public_live_affine_v2/affine/affine_assembly.cpp": {
+      "bytes": 30014,
+      "sha256": "516da52ba0dd801b04e4a5c3fd1b229e644f782fc9ddc26092fdf759cdea6ce4"
+    },
+    "tools/phase5_public_live_affine_v2/affine/affine_assembly.hpp": {
+      "bytes": 6228,
+      "sha256": "3c595ff9ef8995ac77459d5a88228f78593132834684ef305408c4713986d2fa"
+    },
+    "tools/phase5_public_live_affine_v2/capture_inventory/CMakeLists.txt": {
+      "bytes": 777,
+      "sha256": "2a124eeb709d5d4644a8510a4661fd994565c3f9ae02c808dc96411c59d8c04d"
+    },
+    "tools/phase5_public_live_affine_v2/capture_inventory/capture_inventory.cpp": {
+      "bytes": 23519,
+      "sha256": "0f84da2000146b7324580fcb0d71bc886cf3a7b6ccb92b52892138487ac6ea91"
+    },
+    "tools/phase5_public_live_affine_v2/capture_inventory/capture_inventory.hpp": {
+      "bytes": 6229,
+      "sha256": "4811103031e574fa86003579928d1a6bd976631033191dab3c87ac1785ac3e8b"
+    },
+    "tools/phase5_public_live_affine_v2/capture_leaves/CMakeLists.txt": {
+      "bytes": 1214,
+      "sha256": "c70e38037ac44e245ccb4e1b30d6782e6d7a0fe6e6cb4e66451191ddae1c60e7"
+    },
+    "tools/phase5_public_live_affine_v2/capture_leaves/capture_leaves.cpp": {
+      "bytes": 52949,
+      "sha256": "d90c6dedfe826e32891e3139d00d2aafba2e1f868013222934e48c219b6f5db6"
+    },
+    "tools/phase5_public_live_affine_v2/capture_leaves/capture_leaves.hpp": {
+      "bytes": 7174,
+      "sha256": "80b8ed93b9110607553a4178984bd7386673883df5848982afee8f3419c075aa"
+    },
+    "tools/phase5_public_live_affine_v2/capture_leaves/capture_metadata.hpp": {
+      "bytes": 3229,
+      "sha256": "b4020903af3b5acde4bf23f81693c20971e1a9da16418e691876e39d3a1dccdf"
+    },
+    "tools/phase5_public_live_affine_v2/capture_leaves/capture_metadata_internal.inc": {
+      "bytes": 61207,
+      "sha256": "5b5bbc67a88bcd6d6721391bdf6ea9089ae2e0850db987b78ae95308f53cc0a1"
+    },
+    "tools/phase5_public_live_affine_v2/capture_leaves/provisional_manifest.hpp": {
+      "bytes": 2405,
+      "sha256": "dfc25b3b55508a375254055da0354d5946750507737a35064327fa870ac5cbda"
+    },
+    "tools/phase5_public_live_affine_v2/capture_leaves/provisional_manifest_internal.inc": {
+      "bytes": 6070,
+      "sha256": "21aaa6d795e18ee738001597f21c740329d2c7ed687dc31b9f39fc0dd5a56043"
+    },
+    "tools/phase5_public_live_affine_v2/capture_leaves/provisional_manifest_io.hpp": {
+      "bytes": 1403,
+      "sha256": "27f1c7dacb0fc1717ed9c15bdd780006c343f62711e3839ff352cde91943d67f"
+    },
+    "tools/phase5_public_live_affine_v2/capture_leaves/provisional_manifest_reader.cpp": {
+      "bytes": 22591,
+      "sha256": "2fb6bdd6e74d81264893104570eb830c6b60f256a530e2c906298ebd21cfa050"
+    },
+    "tools/phase5_public_live_affine_v2/capture_leaves/provisional_manifest_schema.hpp": {
+      "bytes": 3604,
+      "sha256": "baff6e5eedd9e5b3db59d6f762b4188b2274c7e14c4cefc69c843543012269d7"
+    },
+    "tools/phase5_public_live_affine_v2/capture_leaves/provisional_manifest_writer.cpp": {
+      "bytes": 16291,
+      "sha256": "f1e8302f8b387529deae6360ad0e9b80214eae58bd326958a8bcbafc98b7b1e3"
+    },
+    "tools/phase5_public_live_affine_v2/capture_state.hpp": {
+      "bytes": 1717,
+      "sha256": "d37cad8fa22cc7793612b16e87125e6e6b4169ac650de0af8fe3b309baa805e0"
+    },
+    "tools/phase5_public_live_affine_v2/capture_workspace/CMakeLists.txt": {
+      "bytes": 774,
+      "sha256": "412dc95c3d4bc24dc66f33dde1cceda69aa081a742ae8c0578fda844bd2242ce"
+    },
+    "tools/phase5_public_live_affine_v2/capture_workspace/capture_workspace.cpp": {
+      "bytes": 4829,
+      "sha256": "6285c2f66ad90c6166be4201784e1814854d4336151888d14496e306473d1cdb"
+    },
+    "tools/phase5_public_live_affine_v2/capture_workspace/capture_workspace.hpp": {
+      "bytes": 2141,
+      "sha256": "216bf8c40abe540254c97659290264bacd7082b4d8d31109df2798076de257cd"
+    },
+    "tools/phase5_public_live_affine_v2/capture_workspace/partition_internal.hpp": {
+      "bytes": 1131,
+      "sha256": "d384e896cf6363a95dc4a8c8dd18bdc100399e976bddb76d4ec2c2debf4ecd29"
+    },
+    "tools/phase5_public_live_affine_v2/cost/CMakeLists.txt": {
+      "bytes": 672,
+      "sha256": "610a4bf08ce8fdb6d01e9593bc1c5a391402238d04d7dc27ce29cad1cf1d0078"
+    },
+    "tools/phase5_public_live_affine_v2/cost/quadratic_cost.cpp": {
+      "bytes": 39246,
+      "sha256": "0c177e1079f5b38733f24ac2d2455636fbfa598bae5f0876a027aa5de2041882"
+    },
+    "tools/phase5_public_live_affine_v2/cost/quadratic_cost.hpp": {
+      "bytes": 8513,
+      "sha256": "f5bdfcd920750f1b94b3e5917f886300ae5276111b4b7990c4baba5f2e166784"
+    },
+    "tools/phase5_public_live_affine_v2/foundation.hpp": {
+      "bytes": 16063,
+      "sha256": "ee673d71ea3824aa41647ff2254ebcee477a091c817d1b3e21d398ace11cd8e2"
+    },
+    "tools/phase5_public_live_affine_v2/foundation_context.cpp": {
+      "bytes": 13656,
+      "sha256": "d0537f8c88b641df526d24971504b7813c5c88e4734f1b668f7f5cdae8acfed7"
+    },
+    "tools/phase5_public_live_affine_v2/foundation_identity.cpp": {
+      "bytes": 11667,
+      "sha256": "92fcc1065c465cdd84329a6e765ad10e739bfaec7d3f84fe5b09cc163aef3b49"
+    },
+    "tools/phase5_public_live_affine_v2/foundation_resources.cpp": {
+      "bytes": 16952,
+      "sha256": "3a83eddf893b77e1fe67c03de32292431cd0ce273934e479f9c238a25113ca49"
+    },
+    "tools/phase5_public_live_affine_v2/input_codec/CMakeLists.txt": {
+      "bytes": 718,
+      "sha256": "8a0486ad87705fbc2b66a662cc509cfdd074d8a954ad3590111d23076191933f"
+    },
+    "tools/phase5_public_live_affine_v2/input_codec/cost_input_decoder.cpp": {
+      "bytes": 23938,
+      "sha256": "8e595aea56152b08dbd6dff089fbe3471368f43c5d6af961b984930bb7f58876"
+    },
+    "tools/phase5_public_live_affine_v2/input_codec/cost_input_decoder.hpp": {
+      "bytes": 3145,
+      "sha256": "9cfc61732e68ad5a503a14e4b34e8b60c968d8765ab0a37bea7ca59f01fe8e5e"
+    },
+    "tools/phase5_public_live_affine_v2/model_boundary/CMakeLists.txt": {
+      "bytes": 948,
+      "sha256": "dde35979aa269b1e65bff7a71769a9e5e1964e3d0483150148e2ec1027845554"
+    },
+    "tools/phase5_public_live_affine_v2/model_boundary/model_boundary.cpp": {
+      "bytes": 95323,
+      "sha256": "ae62ad6b02bc18a9d2971c493f280a4bed3464379c1a70581f24923337ed6080"
+    },
+    "tools/phase5_public_live_affine_v2/model_boundary/model_boundary.hpp": {
+      "bytes": 10693,
+      "sha256": "759440cb94d75e0aaca5759176ac9dd290aef12b7b562fc0433b859ecf21db6d"
+    },
+    "tools/phase5_public_live_affine_v2/normalization/CMakeLists.txt": {
+      "bytes": 696,
+      "sha256": "bdf2542cca5d4f1dc61f6a630a455c947600310ef7bc11cee317ecd9f9de924e"
+    },
+    "tools/phase5_public_live_affine_v2/normalization/normalization.cpp": {
+      "bytes": 25146,
+      "sha256": "0ca10f29fcd8c516c54b2825ae066a98b2b2d49171486bd69a7622b60d48d695"
+    },
+    "tools/phase5_public_live_affine_v2/normalization/normalization.hpp": {
+      "bytes": 4447,
+      "sha256": "92813ab26886a215544f7d66a27d452d9cedcd5742afe813e9cc61db2aae8dbf"
+    },
+    "tools/phase5_public_live_affine_v2/output_chunks/CMakeLists.txt": {
+      "bytes": 811,
+      "sha256": "d0e3a906ba2d31f897fdf7b34505056867ee0ca3cf593f26fc79e71a3eb7987e"
+    },
+    "tools/phase5_public_live_affine_v2/output_chunks/chunk_io.hpp": {
+      "bytes": 4337,
+      "sha256": "e3e8d7747efd3f0d12ebc091c682c9fe969e004ac1d9c0f37b6a1085fe1b0f03"
+    },
+    "tools/phase5_public_live_affine_v2/output_chunks/chunk_reader.cpp": {
+      "bytes": 12178,
+      "sha256": "4039e50a6ab193a43343fdb5cf1ad26cd134a78be2f59f746252b2de0473e562"
+    },
+    "tools/phase5_public_live_affine_v2/output_chunks/chunk_writer.cpp": {
+      "bytes": 9143,
+      "sha256": "b2e258ee1f5ce2fbf8fe06402dd29d32c8900ce1624d1cf2a06a924944f3dad5"
+    },
+    "tools/phase5_public_live_affine_v2/output_chunks/numeric_chunks.hpp": {
+      "bytes": 2871,
+      "sha256": "81dd5eabe624fe16c11db41e64403ee95ecca5a5adbbac30be892f68eb10e6e4"
+    },
+    "tools/phase5_public_coupled_augmented_extension_cpp/CMakeLists.txt": {
+      "bytes": 1837,
+      "sha256": "9c59603677ab8c35869773dc4efb0cc732be5f8016d1fd631d2b3301ae79af49"
+    },
+    "tools/phase5_public_coupled_augmented_extension_cpp/public_coupled_augmented_extension.cpp": {
+      "bytes": 7073,
+      "sha256": "74b3d8eccdd4a1373d39bc46cf122564a5101259c2212cb45d98f81678f882fa"
+    },
+    "tools/phase5_public_coupled_augmented_extension_cpp/public_coupled_augmented_extension.hpp": {
+      "bytes": 2171,
+      "sha256": "d97d4f5fbbd837317bdf488291f3aca0c822c512a7e3f6c079e196d3641b104f"
+    },
+    "tools/phase5_public_coupled_augmented_extension_cpp/public_coupled_augmented_extension_probe.cpp": {
+      "bytes": 10054,
+      "sha256": "bcdc5ed68e0774c662fd3a38b392f02ac9f1a68eb96aa140bd14a0f80e886d38"
+    },
+    "tools/phase5_public_coupled_derivative_cpp/CMakeLists.txt": {
+      "bytes": 1080,
+      "sha256": "8a1c9e05445ee68792614d2ef58319a3402616cb1581a56d74db3dfceff259d9"
+    },
+    "tools/phase5_public_coupled_derivative_cpp/public_coupled_derivative_model.cpp": {
+      "bytes": 10204,
+      "sha256": "9f66b1b84edd7370657f9a026f51305bee9f678f0246a2e911da8e9ccc9cb942"
+    },
+    "tools/phase5_public_coupled_derivative_cpp/public_coupled_derivative_model.hpp": {
+      "bytes": 1456,
+      "sha256": "e78ffd5d4deecac20b8c856abf49d0063f1f9d10107e71b619421ed8a5ac09fd"
+    },
+    "tools/phase5_public_coupled_derivative_cpp/public_coupled_derivative_probe.cpp": {
+      "bytes": 7063,
+      "sha256": "db84e59d31a09178348daefe313978fd4c679af1a0952bbfa08fed1122d13660"
+    },
+    "tools/phase5_public_coupled_cpp_v2/CMakeLists.txt": {
+      "bytes": 927,
+      "sha256": "a282e82782250b449b912dde01cf6318e7a2897fd2c16540151018941b9c051f"
+    },
+    "tools/phase5_public_coupled_cpp_v2/coupled_friction_box.cpp": {
+      "bytes": 5244,
+      "sha256": "bc3f9fc50a8437b5a60d787e50fff3125c30b4440614d24196a4351cff7256e2"
+    },
+    "tools/phase5_public_coupled_cpp_v2/public_coupled_model.cpp": {
+      "bytes": 9934,
+      "sha256": "a66fa3974807a1ec168325b19fc9feecd2353e4b7f0586c59ef5f93af6136f91"
+    },
+    "tools/phase5_public_coupled_cpp_v2/public_coupled_model.hpp": {
+      "bytes": 2045,
+      "sha256": "ece9a40be87eaacc9489de383db0c4c171dcb095cfcfdcd967c580af753040d9"
+    },
+    "tools/phase5_public_coupled_cpp_v2/public_coupled_probe.cpp": {
+      "bytes": 5641,
+      "sha256": "c7377efc973d6341f4d11a825d274760d422152de3ae04959b40ba1618ec3e03"
+    },
+    "tools/phase5_public_coupled_augmented_cpp/CMakeLists.txt": {
+      "bytes": 932,
+      "sha256": "e53ec61d502c4a61193af3010ab628b584328755e309f523db5574d641acfd3d"
+    },
+    "tools/phase5_public_coupled_augmented_cpp/public_coupled_augmented_model.cpp": {
+      "bytes": 4305,
+      "sha256": "add6e9d0ef578ed3adcd7e715d2844fb60c063afa24bfb6dd233cdd5f04eac1b"
+    },
+    "tools/phase5_public_coupled_augmented_cpp/public_coupled_augmented_model.hpp": {
+      "bytes": 1818,
+      "sha256": "24350b7680f65c2ea667628e8e80e0830e2a471b501bf77acd51d699b9d44b8d"
+    },
+    "tools/phase5_public_coupled_augmented_cpp/public_coupled_augmented_probe.cpp": {
+      "bytes": 7140,
+      "sha256": "afb60f2fcc3a77611ff5632d448fa65deb0b4728a5188bd990f25139c45baa63"
+    }
+  },
+  "source_files_sha_verified": true,
+  "actual_dependency_headers_package_configs_tool_modules_not_frozen_yet": true,
+  "scope": "Current repo source/CMake candidate; real compiler-generated dep closure and tool/SDK identities require new separate review"
+}

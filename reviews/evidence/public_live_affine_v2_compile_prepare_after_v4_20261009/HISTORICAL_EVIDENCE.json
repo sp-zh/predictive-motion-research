@@ -1,0 +1,198 @@
+{
+  "scope": "Historical archived text/SHA evidence only, no live SDK/tool equality or execution inferred",
+  "d3d4": {
+    "path": "/Users/uot/Documents/ChatGPT/ros/results/phase5-executor-checkpoints-01a114d9/public-affine-horizon-cpp-v1-20261008/root-verified-restored/project/results/phase5/development/public-affine-horizon-cpp-v1/frozen_before_predictions.json",
+    "bytes": 864330,
+    "sha256": "d3d4253c0173aae4ad3072eea37268713bd3710b68cfa05720e79f906bf97429",
+    "dependency_count": 2912,
+    "pinocchio_rows_in_this_manifest": 0
+  },
+  "ec1": {
+    "path": "/Users/uot/Documents/ChatGPT/ros/results/phase5-executor-checkpoints-01a114d9/public-affine-horizon-checker-v2-20261008/root-restored/project/results/phase5/development/public-affine-horizon-checker-v2/frozen_before_predictions_v2.json",
+    "bytes": 1261753,
+    "sha256": "ec1b76a234e63c3dd6e3cb576d60ba1ef99c9130985690a4ba9313882071994f",
+    "file_count": 2921,
+    "binary_sha256": "6d08f9d00ccc939770efc9bd0c704745eba972a80f2511e0441691761eff7b4d"
+  },
+  "historical_compiler_tools": [
+    {
+      "tool": "c++",
+      "historical_path": "/usr/bin/x86_64-linux-gnu-g++-13",
+      "historical_manifest_entry": {
+        "path": "/usr/bin/x86_64-linux-gnu-g++-13",
+        "sha256": "1353e9bdd29a7295c7226bf6c63abccce056d8cac31f112e5cdbecc3f28c2769",
+        "bytes": 1027128,
+        "cache": "dependency-snapshot/1353e9bdd29a7295c7226bf6c63abccce056d8cac31f112e5cdbecc3f28c2769"
+      },
+      "fresh_live_verified": false
+    },
+    {
+      "tool": "cmake",
+      "historical_path": "/usr/bin/cmake",
+      "historical_manifest_entry": {
+        "path": "/usr/bin/cmake",
+        "sha256": "1c5227af4edd22d8d689def545e18ee458260c0fd579eba2187967f38817e638",
+        "bytes": 11796472,
+        "cache": "dependency-snapshot/1c5227af4edd22d8d689def545e18ee458260c0fd579eba2187967f38817e638"
+      },
+      "fresh_live_verified": false
+    },
+    {
+      "tool": "python3",
+      "historical_path": "/usr/bin/python3.12",
+      "historical_manifest_entry": {
+        "path": "/usr/bin/python3.12",
+        "sha256": "e50d468e8b0adfb05733f5b87b3cff34829c4a8c1aea50c865aa8bdfe4bb150f",
+        "bytes": 8020928,
+        "cache": "dependency-snapshot/e50d468e8b0adfb05733f5b87b3cff34829c4a8c1aea50c865aa8bdfe4bb150f"
+      },
+      "fresh_live_verified": false
+    },
+    {
+      "tool": "as",
+      "historical_path": "/usr/bin/x86_64-linux-gnu-as",
+      "historical_manifest_entry": {
+        "path": "/usr/bin/x86_64-linux-gnu-as",
+        "sha256": "21aff249b692b5c31a44007491f922dcb49f41323e362c57d2ada3f52eddb7f0",
+        "bytes": 745768,
+        "cache": "dependency-snapshot/21aff249b692b5c31a44007491f922dcb49f41323e362c57d2ada3f52eddb7f0"
+      },
+      "fresh_live_verified": false
+    },
+    {
+      "tool": "ld",
+      "historical_path": "/usr/bin/x86_64-linux-gnu-ld.bfd",
+      "historical_manifest_entry": {
+        "path": "/usr/bin/x86_64-linux-gnu-ld.bfd",
+        "sha256": "e9ceb054c12207970f2726dfc07e9a66b411602748628baf27399f02a9bbb31b",
+        "bytes": 1359128,
+        "cache": "dependency-snapshot/e9ceb054c12207970f2726dfc07e9a66b411602748628baf27399f02a9bbb31b"
+      },
+      "fresh_live_verified": false
+    },
+    {
+      "tool": "ar",
+      "historical_path": "/usr/bin/x86_64-linux-gnu-ar",
+      "historical_manifest_entry": {
+        "path": "/usr/bin/x86_64-linux-gnu-ar",
+        "sha256": "6452af2eea333b8c65e1adb92964fc8f97863ab003fa13f9d12bff5345cd7dbe",
+        "bytes": 55792,
+        "cache": "dependency-snapshot/6452af2eea333b8c65e1adb92964fc8f97863ab003fa13f9d12bff5345cd7dbe"
+      },
+      "fresh_live_verified": false
+    },
+    {
+      "tool": "ranlib",
+      "historical_path": "/usr/bin/x86_64-linux-gnu-ranlib",
+      "historical_manifest_entry": {
+        "path": "/usr/bin/x86_64-linux-gnu-ranlib",
+        "sha256": "60254978b8ee2c1b21b41d16a18a621dbbcc72e43eb2fa9f916818256c77e9ee",
+        "bytes": 55792,
+        "cache": "dependency-snapshot/60254978b8ee2c1b21b41d16a18a621dbbcc72e43eb2fa9f916818256c77e9ee"
+      },
+      "fresh_live_verified": false
+    },
+    {
+      "tool": "make",
+      "historical_path": "/usr/bin/make",
+      "historical_manifest_entry": {
+        "path": "/usr/bin/make",
+        "sha256": "d78b8f1d099fbcfb6f2f49ab87223b9b68fb3956642f92d6ec6de812e8afa965",
+        "bytes": 259808,
+        "cache": "dependency-snapshot/d78b8f1d099fbcfb6f2f49ab87223b9b68fb3956642f92d6ec6de812e8afa965"
+      },
+      "fresh_live_verified": false
+    },
+    {
+      "tool": "cc1plus",
+      "historical_path": "/usr/libexec/gcc/x86_64-linux-gnu/13/cc1plus",
+      "historical_manifest_entry": {
+        "path": "/usr/libexec/gcc/x86_64-linux-gnu/13/cc1plus",
+        "sha256": "840b332fb62ec6f694ac77d91fe69ef7f80b0d69512ed89374af0ee7a506255d",
+        "bytes": 32675168,
+        "cache": "dependency-snapshot/840b332fb62ec6f694ac77d91fe69ef7f80b0d69512ed89374af0ee7a506255d"
+      },
+      "fresh_live_verified": false
+    },
+    {
+      "tool": "collect2",
+      "historical_path": "/usr/libexec/gcc/x86_64-linux-gnu/13/collect2",
+      "historical_manifest_entry": {
+        "path": "/usr/libexec/gcc/x86_64-linux-gnu/13/collect2",
+        "sha256": "4d1f341ae5b763b513258ee2812422a45e063c30a2f1924a0cf63d3699f3a158",
+        "bytes": 336056,
+        "cache": "dependency-snapshot/4d1f341ae5b763b513258ee2812422a45e063c30a2f1924a0cf63d3699f3a158"
+      },
+      "fresh_live_verified": false
+    },
+    {
+      "tool": "libstdc++.so",
+      "historical_path": "/usr/lib/x86_64-linux-gnu/libstdc++.so.6.0.33",
+      "historical_manifest_entry": {
+        "path": "/usr/lib/x86_64-linux-gnu/libstdc++.so.6.0.33",
+        "sha256": "1fd75fe70354a416d75aef22bcae68c47bd25d20e2d0568c30b1a9838cf62f11",
+        "bytes": 2592224,
+        "cache": "dependency-snapshot/1fd75fe70354a416d75aef22bcae68c47bd25d20e2d0568c30b1a9838cf62f11"
+      },
+      "fresh_live_verified": false
+    },
+    {
+      "tool": "libgcc_s.so.1",
+      "historical_path": "/usr/lib/x86_64-linux-gnu/libgcc_s.so.1",
+      "historical_manifest_entry": {
+        "path": "/usr/lib/x86_64-linux-gnu/libgcc_s.so.1",
+        "sha256": "d93224d2b0dab4247598be683adca02f5cf00586f99c187579cd7e92058fb7cb",
+        "bytes": 183024,
+        "cache": "dependency-snapshot/d93224d2b0dab4247598be683adca02f5cf00586f99c187579cd7e92058fb7cb"
+      },
+      "fresh_live_verified": false
+    }
+  ],
+  "historical_cache_flags": [
+    "CMAKE_BUILD_TYPE:STRING=Release",
+    "CMAKE_CXX_COMPILER:FILEPATH=/usr/bin/c++",
+    "CMAKE_CXX_FLAGS:STRING=",
+    "CMAKE_CXX_FLAGS_RELEASE:STRING=-O3 -DNDEBUG",
+    "Eigen3_DIR:PATH=/usr/share/eigen3/cmake",
+    "yaml-cpp_DIR:PATH=/usr/lib/x86_64-linux-gnu/cmake/yaml-cpp",
+    "CMAKE_GENERATOR:INTERNAL=Unix Makefiles"
+  ],
+  "historical_Model_SDK": {
+    "archive_path": "/Users/uot/Documents/ChatGPT/ros/results/phase5-executor-checkpoints-01a114d9/public-coupled-augmented-extension-cpp-v1-20261008/public-coupled-augmented-extension-cpp-v1.tar.gz",
+    "archive_identity_from_existing_READY": {
+      "sha256": "e0baac3d6f775adc9b5cca60fe1782fb4685c4823374e11237e7100f5237a941",
+      "bytes": 64272249,
+      "frozen_manifest_sha256": "7300ba4b8b78e333f96c005096324a1d17e0a275b1c34cd14c271c582a360dbb"
+    },
+    "archive_SHA_reverified_this_unit": false,
+    "selected_inner_manifest_SHA_verified": "7300ba4b8b78e333f96c005096324a1d17e0a275b1c34cd14c271c582a360dbb",
+    "dependency_rows": 2682,
+    "pinocchioConfig_entry": {
+      "path": "/opt/ros/jazzy/lib/x86_64-linux-gnu/cmake/pinocchio/pinocchioConfig.cmake",
+      "bytes": 7475,
+      "sha256": "65262ca906586dac097b57efb743ca9311583632f4836611b566e57db6f327c3",
+      "immutable_copy": "/mnt/d/CodexTransfer/projects/predictive_motion/phase5/dependency-cache/public-coupled-augmented-extension-cpp-v1/65262ca906586dac097b57efb743ca9311583632f4836611b566e57db6f327c3"
+    },
+    "selected_config_payload_SHA_verified": true,
+    "historical_config_find_dependencies": [
+      "Eigen3 REQUIRED)",
+      "urdfdom_headers REQUIRED)",
+      "urdfdom REQUIRED)",
+      "Boost REQUIRED COMPONENTS filesystem serialization)",
+      "eigenpy 2.7.10 REQUIRED)",
+      "console_bridge REQUIRED)",
+      "coal REQUIRED)",
+      "Eigen3 REQUIRED)",
+      "urdfdom_headers REQUIRED)",
+      "urdfdom REQUIRED)",
+      "Boost REQUIRED COMPONENTS filesystem serialization)",
+      "eigenpy 2.7.10 REQUIRED)",
+      "console_bridge REQUIRED)",
+      "coal REQUIRED)"
+    ],
+    "live_current_SDK_verified": false
+  },
+  "fresh_Mac_compiler_CMake_stdlib_SDK": null,
+  "fresh_Dell_compiler_CMake_stdlib_SDK": null,
+  "no_compiler_version_SDK_probe_or_remote_calls": true
+}
