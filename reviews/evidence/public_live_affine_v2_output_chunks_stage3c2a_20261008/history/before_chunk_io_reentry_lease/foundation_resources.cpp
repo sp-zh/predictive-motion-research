@@ -174,7 +174,6 @@ struct CaseState {
   Count live = 0, cumulative = 0, metadata = 0, output = 0;
   Count live_ceiling = 0, charge_ceiling = 0, output_ceiling = 0;
   NumericEncoding encoding = NumericEncoding::LosslessBinary;
-  bool chunk_io_active=false,chunk_io_reentry=false;
 };
 }
 namespace {
@@ -239,14 +238,6 @@ Count SharedCaseBudget::outputBytes() const{return valid(state_).output;}
 Count SharedCaseBudget::metadataBytes() const{return valid(state_).metadata;}
 Count SharedCaseBudget::outputCeiling() const{return valid(state_).output_ceiling;}
 NumericEncoding SharedCaseBudget::numericEncoding() const{return valid(state_).encoding;}
-ChunkIOLease SharedCaseBudget::beginChunkIO(){
-  auto& s=valid(state_);if(s.chunk_io_active){s.chunk_io_reentry=true;throw std::invalid_argument("CHUNK_IO_REENTRY");}
-  s.chunk_io_active=true;s.chunk_io_reentry=false;return ChunkIOLease(state_);
-}
-ChunkIOLease::ChunkIOLease(std::shared_ptr<detail::CaseState> s):state_(std::move(s)){}
-ChunkIOLease::~ChunkIOLease(){if(state_)state_->chunk_io_active=false;}
-void ChunkIOLease::requireHealthy() const {auto& s=valid(state_);need(s.chunk_io_active&&!s.chunk_io_reentry,"CHUNK_IO_REENTRY_OR_CLOSED_LEASE");}
-const char* ChunkIOLease::firstReentryReason() const noexcept{return state_&&state_->chunk_io_reentry?"CHUNK_IO_REENTRY":nullptr;}
 Count CaseBudget::liveSlots() const { return valid(state_).live; }
 Count CaseBudget::cumulativeCharges() const { return valid(state_).cumulative; }
 Count CaseBudget::outputBytes() const { return valid(state_).output; }

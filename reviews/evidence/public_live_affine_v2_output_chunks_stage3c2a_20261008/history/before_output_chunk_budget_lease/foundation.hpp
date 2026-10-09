@@ -127,7 +127,6 @@ class BatchBudget final {
   friend class CaseBudget;
 };
 // Single-threaded per batch; charges are never refunded, including failures.
-class SharedCaseBudget;class ChunkIOLease;
 class CaseBudget final {
  public:
   CaseBudget(BatchBudget&, const ResourcePlan&);
@@ -143,42 +142,8 @@ class CaseBudget final {
   Count cumulativeCharges() const;
   Count outputBytes() const;
   Count metadataBytes() const;
-  SharedCaseBudget share() const; // Same ledger; lifetime-safe IO lease, no new plan.
  private:
-  explicit CaseBudget(std::shared_ptr<detail::CaseState>);
   std::shared_ptr<detail::CaseState> state_;
-  friend class SharedCaseBudget;
-};
-class SharedCaseBudget final {
- public:
-  OwnedReservation reserve(Count);
-  void chargeScratchOrCopy(Count);
-  void chargeMetadataBytes(Count);
-  void chargeUniqueOutputBytes(Count);
-  Count outputBytes() const;
-  Count metadataBytes() const;
-  Count outputCeiling() const;
-  NumericEncoding numericEncoding() const;
-  ChunkIOLease beginChunkIO();
- private:
-  explicit SharedCaseBudget(std::shared_ptr<detail::CaseState>);
-  std::shared_ptr<detail::CaseState> state_;
-  friend class CaseBudget;
-};
-
-class ChunkIOLease final {
- public:
-  ChunkIOLease(const ChunkIOLease&)=delete;
-  ChunkIOLease& operator=(const ChunkIOLease&)=delete;
-  ChunkIOLease(ChunkIOLease&&) noexcept=default;
-  ChunkIOLease& operator=(ChunkIOLease&&)=delete;
-  ~ChunkIOLease();
-  void requireHealthy() const;
-  const char* firstReentryReason() const noexcept;
- private:
-  explicit ChunkIOLease(std::shared_ptr<detail::CaseState>);
-  std::shared_ptr<detail::CaseState> state_;
-  friend class SharedCaseBudget;
 };
 
 // These are observed file facts, not a Model/derivative/permission certificate.

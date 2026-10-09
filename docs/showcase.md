@@ -416,3 +416,5 @@ The [affine boundary/sample source checkpoint](../reviews/evidence/public_live_a
 The [complete quadratic cost source checkpoint](../reviews/evidence/public_live_affine_v2_cost_stage3b_20261008/ROOT_SOURCE_REVIEW.json) adds no executed cost/matrix or motion result. Existing diagnostic visuals retain original scope; Phase5 task clips await complete verified trajectories.
 
 The [bounded input codec and retained failure source checkpoint](../reviews/evidence/public_live_affine_v2_codec_stage3c1_20261008/ROOT_SOURCE_REVIEW.json) adds no executed matrix or motion result. Existing diagnostic visuals retain their recorded scope; complete output publication/readback and Phase5 task clips remain pending.
+
+The [bounded typed numeric chunk source checkpoint](../reviews/evidence/public_live_affine_v2_output_chunks_stage3c2a_20261008/ROOT_SOURCE_REVIEW.json) adds no executed numerical or motion result. Independent complete inventory publication/readback and actual task clips remain pending; existing diagnostic figures keep their original acceptance scope.

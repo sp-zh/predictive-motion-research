@@ -1,0 +1,67 @@
+{
+  "decision": "PASS_SOURCE_BOUNDED_TYPED_CHUNKS_FOR_NEXT_SOURCE_INVENTORY_MANIFEST",
+  "recorded_utc": "2026-10-09T01:22:37.060961+00:00",
+  "prerequisite_backup": "c4e62fb2eff2c83620d8f71a240769cfde6c6f85",
+  "packet_READY_sha256": "db0e21b8d4c1934ab4a130de447cdfde8e83ac8ada4392f867878628256015b3",
+  "verified_payload_count": 29,
+  "verified_preimport_guard_count": 43,
+  "criteria": "ROOT_REVIEW_CRITERIA.json",
+  "validation": "Independent static source, IO layout/parser/ownership/quota/failure review and file SHA checks only; no configure/compiler/parser fixture/numeric/Model invocation",
+  "resolved_findings": [
+    {
+      "id": "CHUNK_METADATA_ADMISSION",
+      "resolution": "Validate caller spec dimensions/names/enum/count and expected record encoding/SHA/byte/root bounds before deep owned copies. Noninstrumented callback/STL allocation limitations explicit."
+    },
+    {
+      "id": "CHUNK_CACHE_ADMISSION",
+      "resolution": "Writer charges16 scratch slots at pending==0 before first byte assignment of every generation; flush no longer double charges. Reader charges before filling cache. Writer IO20=cache16+token4, plus returned-record4; reader IO28=cache16+privateaxes4+token8. Tickets precede materialization and token reuse is charged. Move-only record owns axes ticket until spec destruction and custom assignment preserves old lifetime."
+    },
+    {
+      "id": "CHUNK_RECEIPT_AND_TOKEN_LIFETIME",
+      "resolution": "Writer token4 and reader token8 allowances are owned and charged before use; move-only returned NumericChunkRecord holds4-axis private receipt until spec destruction. Reader snapshots copy bounded fields under its private axes ticket. Record remains caller metadata, not a genuine source/math certificate."
+    },
+    {
+      "id": "CHUNK_HASH_SCOPE",
+      "resolution": "Writer SHA labels actual successful write stream, not independent final FD attestation. closed_fsynced does not replace exact independent readback, full inventory closure or root READY."
+    }
+  ],
+  "observations": [
+    "SharedCaseBudget retains same private CaseState/BatchState and frozen encoding/output caps. Scoped ChunkIOLease rejects reentry and poisons outer IO even if callback swallows nested refusal.",
+    "Directory path components opened without symlinks; safe single provisional filename, O_EXCL write, regular/single-link and dev/inode checks, file+directory fsync. Read opens nonblocking before fstat, matches directory/file identities.",
+    "Only successful short-written bytes are charged once and included in write stream SHA; pending frontier updated before hash failure. Capacity preflight through write/charge has no caller callbacks under single-thread ledger contract.",
+    "Separate strict reader validates schema/type/endian/count, bounded complete numeric JSON or16-hex failure IEEE bits, full consumed physical bytes/EOF/FD size/inode/SHA. Finite F64 paths preserve signed-zero bits and refuse nonfinite; rounding and environment behavior remain untested.",
+    "Errors retain first refusal, observed frontiers and O_EXCL files; source/observer closures are local and no raw budget pointer escapes. Low-level outcomes and public caller records are not genuine model, math or inventory certificates."
+  ],
+  "remaining_obligations": [
+    "SOURCE3C2B complete raw/normalized/affine/sample/cost/Dense inventory, classification/traversal/coverage, exact manifests/chunk references/aggregate metadata/output quotas and atomic root READY plus independent closure reader.",
+    "Full flow integer accounting: Writer IO20 + persistent4 per returned record; reader IO28 plus retained writer records; per-cache16 and token4/8 charges can exceed an already-full math plan. Explicitly redeploy existing unused storage or refuse; no increased caps or assumed admission.",
+    "Independent deferred grammar/shortwrite/reentry/lifetime/filesystem/mutation/floating cases after exact source/build/protocol freeze. No compiler or source fixture run in this review.",
+    "Source-only backup does not accept controller/physical motion/safety/timing or Phase5. Original checker/freeze and prior failures remain."
+  ],
+  "executions": {
+    "configure": 0,
+    "compile": 0,
+    "empty_kernel": 0,
+    "writer": 0,
+    "readback": 0,
+    "parser_fixture": 0,
+    "numeric_checks": 0,
+    "matrix_checks": 0,
+    "Model_constructor": 0,
+    "Model_metadata": 0,
+    "Model_rollout": 0,
+    "plant": 0,
+    "solver": 0,
+    "main": 0,
+    "scorer": 0
+  },
+  "storage": {
+    "Mac_packet": "/private/tmp/public_live_affine_v2_output_chunks_stage3c2a",
+    "canonical_source": "tools/phase5_public_live_affine_v2/output_chunks",
+    "history": "reviews/evidence/public_live_affine_v2_output_chunks_stage3c2a_20261008/history",
+    "Dell_copy_verified": false,
+    "Git_backup": "Pending commit and remote verification"
+  },
+  "phase5": "NOT_ACCEPTED",
+  "phase6": "NOT_STARTED"
+}

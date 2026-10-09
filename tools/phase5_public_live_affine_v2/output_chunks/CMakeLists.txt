@@ -1,0 +1,10 @@
+cmake_minimum_required(VERSION 3.16)
+project(phase5_public_live_affine_v2_output_chunks LANGUAGES CXX)
+find_package(OpenSSL REQUIRED)
+add_subdirectory(.. foundation-source EXCLUDE_FROM_ALL)
+add_library(public_live_affine_v2_output_chunks STATIC chunk_writer.cpp chunk_reader.cpp)
+target_compile_features(public_live_affine_v2_output_chunks PUBLIC cxx_std_17)
+target_include_directories(public_live_affine_v2_output_chunks PUBLIC ${CMAKE_CURRENT_SOURCE_DIR})
+target_link_libraries(public_live_affine_v2_output_chunks PUBLIC public_live_affine_v2_foundation PRIVATE OpenSSL::Crypto)
+target_compile_options(public_live_affine_v2_output_chunks PRIVATE -Wall -Wextra -Wpedantic)
+# Low-level source only; no entrypoint, inventory driver, root READY or Model.

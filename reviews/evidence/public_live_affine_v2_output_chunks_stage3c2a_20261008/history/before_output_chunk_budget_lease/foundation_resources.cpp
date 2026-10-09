@@ -173,8 +173,6 @@ struct CaseState {
   std::shared_ptr<BatchState> batch;
   Count live = 0, cumulative = 0, metadata = 0, output = 0;
   Count live_ceiling = 0, charge_ceiling = 0, output_ceiling = 0;
-  NumericEncoding encoding = NumericEncoding::LosslessBinary;
-  bool chunk_io_active=false,chunk_io_reentry=false;
 };
 }
 namespace {
@@ -202,7 +200,7 @@ CaseBudget::CaseBudget(BatchBudget& batch, const ResourcePlan& plan)
     : state_(std::make_shared<detail::CaseState>()) {
   need(static_cast<bool>(batch.state_), "moved-from batch budget");
   state_->batch = batch.state_; state_->live_ceiling = plan.liveCeiling();
-  state_->charge_ceiling = plan.chargeCeiling(); state_->output_ceiling = plan.outputCeiling();state_->encoding=plan.numericEncoding();
+  state_->charge_ceiling = plan.chargeCeiling(); state_->output_ceiling = plan.outputCeiling();
   // This reservation prices prospective SDK result growth only. It does not
   // instrument SDK allocations; stage 2 must retain its ticket for result lifetime.
 }
@@ -228,25 +226,6 @@ void CaseBudget::chargeUniqueOutputBytes(Count bytes) {
        "actual unique output bytes exceeded");
   state.output = next;
 }
-CaseBudget::CaseBudget(std::shared_ptr<detail::CaseState> state):state_(std::move(state)){}
-SharedCaseBudget CaseBudget::share() const {valid(state_);return SharedCaseBudget(state_);}
-SharedCaseBudget::SharedCaseBudget(std::shared_ptr<detail::CaseState> state):state_(std::move(state)){}
-OwnedReservation SharedCaseBudget::reserve(Count n){CaseBudget view(state_);return view.reserve(n);}
-void SharedCaseBudget::chargeScratchOrCopy(Count n){CaseBudget view(state_);view.chargeScratchOrCopy(n);}
-void SharedCaseBudget::chargeMetadataBytes(Count n){CaseBudget view(state_);view.chargeMetadataBytes(n);}
-void SharedCaseBudget::chargeUniqueOutputBytes(Count n){CaseBudget view(state_);view.chargeUniqueOutputBytes(n);}
-Count SharedCaseBudget::outputBytes() const{return valid(state_).output;}
-Count SharedCaseBudget::metadataBytes() const{return valid(state_).metadata;}
-Count SharedCaseBudget::outputCeiling() const{return valid(state_).output_ceiling;}
-NumericEncoding SharedCaseBudget::numericEncoding() const{return valid(state_).encoding;}
-ChunkIOLease SharedCaseBudget::beginChunkIO(){
-  auto& s=valid(state_);if(s.chunk_io_active){s.chunk_io_reentry=true;throw std::invalid_argument("CHUNK_IO_REENTRY");}
-  s.chunk_io_active=true;s.chunk_io_reentry=false;return ChunkIOLease(state_);
-}
-ChunkIOLease::ChunkIOLease(std::shared_ptr<detail::CaseState> s):state_(std::move(s)){}
-ChunkIOLease::~ChunkIOLease(){if(state_)state_->chunk_io_active=false;}
-void ChunkIOLease::requireHealthy() const {auto& s=valid(state_);need(s.chunk_io_active&&!s.chunk_io_reentry,"CHUNK_IO_REENTRY_OR_CLOSED_LEASE");}
-const char* ChunkIOLease::firstReentryReason() const noexcept{return state_&&state_->chunk_io_reentry?"CHUNK_IO_REENTRY":nullptr;}
 Count CaseBudget::liveSlots() const { return valid(state_).live; }
 Count CaseBudget::cumulativeCharges() const { return valid(state_).cumulative; }
 Count CaseBudget::outputBytes() const { return valid(state_).output; }
