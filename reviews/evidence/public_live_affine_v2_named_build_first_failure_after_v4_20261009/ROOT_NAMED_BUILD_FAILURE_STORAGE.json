@@ -1,0 +1,23 @@
+{
+  "scope": "First named-library build failure retained outside public Git",
+  "archive": {
+    "file": "named-build-first-failure.tar.gz",
+    "bytes": 2152742,
+    "sha256": "4653a7c181eef339cfa16fd76217faece175f24b72e4d66359eddbda368d29dd",
+    "regular_file_count": 330,
+    "payload_file_count": 329,
+    "inner_ready_sha256": "7d9abdf8f5b2db3ffb225d761a542ec3570620f921669505ed484d3413d80315"
+  },
+  "Mac_archive": "/Users/uot/Documents/ChatGPT/ros/results/phase5-reference/named-static-library-build-first-after-v4-20261009/root-retained-failure-attempt1/named-build-first-failure.tar.gz",
+  "Dell_archive": "/mnt/d/CodexTransfer/projects/predictive_motion/checkpoints/named-static-library-build-first-after-v4-20261009/root-retained-failure-attempt1/named-build-first-failure.tar.gz",
+  "Mac_payloads_verified": true,
+  "Dell_payloads_verified": true,
+  "Dell_verification": {
+    "archive_sha256": "4653a7c181eef339cfa16fd76217faece175f24b72e4d66359eddbda368d29dd",
+    "payloads_verified": 329
+  },
+  "source_ready_sha256": "ce546869deb22de9eb280400cb3623af3ae69c198e5f42316008ba14743eb3ab",
+  "publication": "Compact authored failure review/storage only;full raw dependencies and build products excluded",
+  "phase5": "NOT_ACCEPTED",
+  "phase6": "NOT_STARTED"
+}
