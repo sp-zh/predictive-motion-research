@@ -31,11 +31,12 @@ retain their original purpose.
    Do not reuse a name of unknown origin. Dispatch requires this attestation;
    the API also refuses existing packages linked elsewhere or API errors other
    than 404. A 404 alone cannot establish absence of an inaccessible package.
-3. On `master`, run **Publish and validate CI environment**, stage `base`:
+3. On `master`, the repository owner reviews the exact SHA, then runs **Publish and validate CI environment**, stage `base`:
 
    ```bash
    gh workflow run publish-ci-images.yml --ref master \
-     -f stage=base -F package_names_confirmed=true
+     -f stage=base -F package_names_confirmed=true \
+     -f reviewed_sha="${REVIEWED_SHA:?set the full reviewed source commit}"
    ```
 
    This authenticates GHCR with the job's `GITHUB_TOKEN` on the host runner,
@@ -66,12 +67,13 @@ retain their original purpose.
    : "${BASE_RUN:?set the successful base run ID}"
    gh workflow run publish-ci-images.yml --ref master \
      -f stage=ci -F package_names_confirmed=true \
-     -f base_ref="$BASE_REF" -f base_run="$BASE_RUN"
+     -f base_ref="$BASE_REF" -f base_run="$BASE_RUN" \
+     -f reviewed_sha="${REVIEWED_SHA:?set the full reviewed source commit}"
    ```
 
    Stage B checks the base run's successful conclusion, workflow, `master`
    branch, **same source commit**, digest, complete tests and anonymous access.
-   If master changed, revalidate stage A at the new commit first. It builds
+   If the selected ref changed, revalidate stage A at the new commit first. It builds
    with the built-in Docker builder (no separate builder image), publishes a
    uniquely tagged dependency image, resolves its registry manifest digest and
    pulls it. No project sources, build results, models or credentials enter
@@ -124,13 +126,25 @@ create a circular rebuild. Source labels also record repository, revision,
 base reference and target platform. Candidate publication tags include source
 SHA, run ID and attempt; daily CI must never follow tags automatically.
 
-Ordinary pushes/PRs only test. Publish dispatch is limited to this repository's
-`refs/heads/master`, and `packages: write` exists only on its publishing job.
-No fork PR or `pull_request_target` gets publishing capability. For dependency
-updates, prepare reviewed definitions, merge them, publish/validate candidates
-and update the accepted digest by a second PR. An environment-definition PR
-against a previously accepted image should fail clearly until its candidate
-is approved; use a reviewed staged maintenance change, never suppress drift.
+Ordinary pushes/PRs only test. Only the repository owner can publish manually,
+only from this repository's `master` or the fixed maintenance branch
+`sp/ci-environment-candidate`. Dispatch must supply the full **reviewed** commit
+SHA, which must equal the selected ref; do not blindly attest to an unreviewed
+moving HEAD. `packages: write` exists only on the publishing job. No fork PR or
+`pull_request_target` gets publishing capability.
+
+For later dependency changes, create `sp/ci-environment-candidate` from current
+master and open an environment-update PR. Review the definitions and exact
+commit first. After the workflow is registered on master, the owner dispatches
+A then B on that candidate ref with its reviewed SHA (substitute that ref in the
+commands above). Both runs must bind the same branch, commit and base digest.
+The old daily image's drift gate should be red until the owner validates the
+candidate, then adds its real digest to **the same PR**. The digest switch is
+not hashed as an environment definition, so the completed PR can run full CI
+green before protected-branch merging, without bypassing required checks.
+Revalidate A/B if environment definitions or tested code changed after review;
+only a workflow digest/validation-documentation update can use the already
+verified candidate. Initial bootstrap remains the two-PR process above.
 Do not relax the exact Pinocchio version if apt stops carrying it: retain the
 build failure and report the package/version and log before changing policy.
 

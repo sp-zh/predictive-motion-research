@@ -33,7 +33,8 @@ def main():
         'ci': {name: os.environ.get(name) for name in [
             'GITHUB_RUN_ID', 'GITHUB_RUN_ATTEMPT', 'CI_IMAGE_REF',
         ]},
-        'checkout': command(['git', 'rev-parse', 'HEAD']),
+        # Host-runner checkout ownership differs from root inside docker run.
+        'checkout': command(['git', '-c', f'safe.directory={Path.cwd()}', 'rev-parse', 'HEAD']),
         'os_release': Path('/etc/os-release').read_text() if Path('/etc/os-release').exists() else None,
         'ros_distro': os.environ.get('ROS_DISTRO'),
         'image_metadata': json.loads(Path('/usr/local/share/predictive-motion-ci/environment.json').read_text())

@@ -12,6 +12,10 @@ on:
         type: boolean
         required: true
         default: false
+      reviewed_sha:
+        description: 'Full 40-character source commit reviewed for publishing (must equal selected ref)'
+        type: string
+        required: true
       base_ref:
         description: 'For B: verified GHCR base manifest reference (with sha256 digest)'
         type: string
@@ -25,7 +29,11 @@ concurrency:
   cancel-in-progress: false
 jobs:
   publish:
-    if: github.repository == 'sp-zh/predictive-motion-research' && github.ref == 'refs/heads/master' && inputs.package_names_confirmed
+    if: >-
+      github.repository == 'sp-zh/predictive-motion-research' &&
+      github.actor == github.repository_owner &&
+      (github.ref == 'refs/heads/master' || github.ref == 'refs/heads/sp/ci-environment-candidate') &&
+      inputs.package_names_confirmed && inputs.reviewed_sha == github.sha
     runs-on: ubuntu-24.04
     timeout-minutes: 30
     permissions:
@@ -63,7 +71,7 @@ jobs:
             [[ "$BASE_RUN" =~ ^[0-9]+$ ]]
             gh api "repos/$GITHUB_REPOSITORY/actions/runs/$BASE_RUN" > "$RUNNER_TEMP/base-run.json"
             # shellcheck disable=SC2016 # jq parses its own variables
-            jq -e --arg sha "$GITHUB_SHA" '.conclusion == "success" and .head_sha == $sha and .head_branch == "master" and .path == ".github/workflows/publish-ci-images.yml"' "$RUNNER_TEMP/base-run.json"
+            jq -e --arg sha "$GITHUB_SHA" --arg branch "$GITHUB_REF_NAME" '.conclusion == "success" and .head_sha == $sha and .head_branch == $branch and .path == ".github/workflows/publish-ci-images.yml"' "$RUNNER_TEMP/base-run.json"
             base_attempt=$(jq -r .run_attempt "$RUNNER_TEMP/base-run.json")
             gh run download "$BASE_RUN" --name "ci-image-validation-$BASE_RUN-$base_attempt" --dir "$RUNNER_TEMP/base-validation"
             # shellcheck disable=SC2016 # jq parses its own variables
@@ -171,6 +179,14 @@ jobs:
         run: |
           set -euo pipefail
           mkdir -p results/ci-image
+          # shellcheck disable=SC2016 # Go template, not Bash expansion
+          docker image inspect "$CI_IMAGE_REF" --format '{{json .Config.Labels}}' > results/ci-image/image-labels.json
+          if [[ "$CI_IMAGE_STAGE" == ci ]]; then
+            # Inspect the image before mounting the checkout over its workdir.
+            # shellcheck disable=SC2016 # expanded inside the candidate container
+            docker run --rm --platform linux/amd64 "$CI_IMAGE_REF" bash -c 'test ! -e /opt/ci-definition && test -z "$(ls -A /workspaces/predictive_motion)"'
+            docker run --rm --platform linux/amd64 "$CI_IMAGE_REF" cat /usr/local/share/predictive-motion-ci/environment.json > results/ci-image/image-metadata.json
+          fi
           docker run --rm --platform linux/amd64 --network host \
             -v "$GITHUB_WORKSPACE:/workspaces/predictive_motion" -w /workspaces/predictive_motion \
             -e CI_IMAGE_REF -e CI_IMAGE_STAGE -e GITHUB_RUN_ID -e GITHUB_RUN_ATTEMPT \
