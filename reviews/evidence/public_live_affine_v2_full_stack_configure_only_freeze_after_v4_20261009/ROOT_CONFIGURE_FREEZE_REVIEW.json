@@ -1,0 +1,43 @@
+{
+  "decision": "PASS_CONFIGURE_ONLY_FREEZE_WITH_ROOT_TOOL_INPUT_SUPPLEMENT",
+  "baseline": "7cebef18b69f6ed1956d6f3ec3bd626ad6c07bb1",
+  "ready_sha256": "65dbf02af6a6bf9a46b4f04b3359b09a9d44b62b0d9a46d0f54868b376acf2cb",
+  "packet_payloads_verified": 728,
+  "unchanged_source_guards_verified": 116,
+  "current_named_input_records_verified": 472,
+  "root_additional_uname_input_read_verified": true,
+  "actual_current_source_snapshot_files": 61,
+  "entered_project_CMake_files": 13,
+  "expected_static_project_libraries": 14,
+  "registered_probes_unbuilt_expected": 3,
+  "source_derived_effect_statements_checked": 95,
+  "exact_Python_query_variants_syntax_and_SHA_checked": 35,
+  "selected_conditional_CPython_records": 28,
+  "exact_OpenSSL_pkg_config_variants": 20,
+  "final_private_plan": "root-supplement/ROOT_FINAL_CONFIGURE_ONLY_PLAN.json",
+  "final_private_plan_sha256": "adf933c91387119163b2c0d772d7664ba5ca9e188dc7820f2ee8ca57efe0e26f",
+  "root_amendment": "Pin freshly read uname and already frozen GNU linker paths. Original snapshot, FP flags, metadata hints, controlled cache/env and effect boundaries unchanged.",
+  "additional_native_stock_metadata_effects": [
+    "uname -r and -m from frozen GNU/Linux system module",
+    "compiler -print-sysroot and source-conditioned compiler version/ID metadata",
+    "GNU compiler -Wl,--help and frozen linker --help for capability metadata"
+  ],
+  "independent_findings": [
+    "All728 payload bytes/SHA and116 canonical guards checked;61 source snapshot bytes match actual current Git/canonical sources and native0444 proof",
+    "Current config source texts independently hashed;95 raw effect callsites and35 exact Python code hashes/AST matched frozen source",
+    "Only selected native CPython code variants and20 OpenSSL pkg-config argv are eligible; no arbitrary Python code, SciPy or shell-config fallback",
+    "Genuine observed default201703 hint bypasses SDK standard try_run; no invented FOUND/already-called flags supplied",
+    "Native snapshot location correction retains real mounted-path chmod failure and partial tree; original files/archives preserved",
+    "Compiler ID/ABI/feature source-bound compile/link artifacts are tool metadata and must never run; no project target is built by this scope",
+    "CMake ERROR_QUIET may suppress child stderr; no complete raw child process trace, loader or RSS proof claimed"
+  ],
+  "admitted_next_unit": "One separately dispatched exact final-plan CMake configure only, with stock source-bound GNU/Linux compiler metadata and selected frozen Python/NumPy/pkg-config queries; no project TU/target build, generated program execution or runtime function permission.",
+  "next_unit_checks": "Verify473 named inputs and61 native source files/modes before/after; exclusive output paths; retain first configure failure without repeat or system/source repair. Independently inspect14 STATIC target types,3 unbuilt probes, actual effects/flags and artifacts before any build dispatch.",
+  "actual_configure_compiler_queries_or_SDK_imports_this_unit": 0,
+  "source_changes": 0,
+  "full_OS_native_loader_RSS_closure_verified": false,
+  "phase5": "NOT_ACCEPTED",
+  "phase6": "NOT_STARTED",
+  "publication": "Only compact authored review/storage public; full dependency/source/config/identity packet excluded",
+  "old_checker_archives_failure_and_pause_history_preserved": true
+}
