@@ -239,10 +239,6 @@ Count SharedCaseBudget::outputBytes() const{return valid(state_).output;}
 Count SharedCaseBudget::metadataBytes() const{return valid(state_).metadata;}
 Count SharedCaseBudget::outputCeiling() const{return valid(state_).output_ceiling;}
 NumericEncoding SharedCaseBudget::numericEncoding() const{return valid(state_).encoding;}
-Count SharedCaseBudget::liveSlots() const{return valid(state_).live;}
-Count SharedCaseBudget::liveCeiling() const{return valid(state_).live_ceiling;}
-Count SharedCaseBudget::cumulativeCharges() const{return valid(state_).cumulative;}
-Count SharedCaseBudget::chargeCeiling() const{return valid(state_).charge_ceiling;}
 ChunkIOLease SharedCaseBudget::beginChunkIO(){
   auto& s=valid(state_);if(s.chunk_io_active){s.chunk_io_reentry=true;throw std::invalid_argument("CHUNK_IO_REENTRY");}
   s.chunk_io_active=true;s.chunk_io_reentry=false;return ChunkIOLease(state_);

@@ -87,9 +87,6 @@ struct AffineStorage {
   void reject(const char* reason) noexcept{if(poisoned)return;poisoned=true;trace.complete=false;try{error=reason?reason:"AFFINE_REFUSAL";}catch(...){error.clear();}}
 };
 struct AffineFactory {
-  static const ResourcePlan& originalPlan(const NormalizationOutcome& n){return n.maps().affinePlan();}
-  static SharedCaseBudget originalBudget(const NormalizationOutcome& n){return n.maps().affineBudget().share();}
-  static const FactorShape& originalShape(const NormalizationOutcome& n){return n.maps().boundCostShape();}
   static const FactorShape& shape(const NormalizedNominalMaps& m){return m.boundCostShape();}
   static const FileIdentity& identity(const NormalizedNominalMaps& m){return m.boundCostInputIdentity();}
   static const std::string& semantic(const NormalizedNominalMaps& m){return m.boundCostSemanticSha256();}
@@ -282,7 +279,6 @@ double CompactAffineAssembly::auditSampleControl(bool e,Count k,Count r,Count c)
 double CompactAffineAssembly::auditSampleOffset(bool e,Count k,Count r) const{auto& s=dense(storage_);bounds(k,s.sample_count);row(r);return s.so(e,k,r);}
 double CompactAffineAssembly::auditSampleInitial(bool e,Count k,Count r,Count c) const{auto& s=dense(storage_);bounds(k,s.sample_count);row(r);bounds(c,30);return s.sP(e,k,r,c);}
 const NormalizationOutcome& CompactAffineAssembly::originalNormalization() const{need(static_cast<bool>(storage_),"moved affine owner");return storage_->anchor->normalization;}
-std::shared_ptr<const void> CompactAffineAssembly::captureOriginToken() const{return std::static_pointer_cast<const void>(present(storage_).anchor);}
 CaseBudget& CompactAffineAssembly::costBudget() const{return *present(storage_).budget;}
 const ResourcePlan& CompactAffineAssembly::costPlan() const{return present(storage_).plan;}
 const FactorShape& CompactAffineAssembly::boundCostShape() const{return detail::AffineFactory::shape(present(storage_).anchor->normalization.maps());}
@@ -295,17 +291,6 @@ AffineAssemblyOutcome& AffineAssemblyOutcome::operator=(AffineAssemblyOutcome&&)
 AffineAssemblyOutcome::~AffineAssemblyOutcome()=default;
 bool AffineAssemblyOutcome::hasCompleteAssembly() const noexcept{return !refused_&&assembly_&&assembly_->complete();}
 CompactAffineAssembly& AffineAssemblyOutcome::assembly(){need(hasCompleteAssembly(),"complete affine assembly refused/moved");return *assembly_;}
-const CompactAffineAssembly& AffineAssemblyOutcome::assembly() const{need(hasCompleteAssembly(),"complete affine assembly refused/moved");return *assembly_;}
-std::shared_ptr<const void> AffineAssemblyOutcome::captureOriginToken() const{return std::static_pointer_cast<const void>(anchor_);}
-const ResourcePlan& AffineAssemblyOutcome::capturePlan() const{
-  if(assembly_&&assembly_->storage_)return assembly_->storage_->plan;if(failed_)return failed_->plan;
-  return detail::AffineFactory::originalPlan(originalNormalization());
-}
-const FactorShape& AffineAssemblyOutcome::captureShape() const{return detail::AffineFactory::originalShape(originalNormalization());}
-SharedCaseBudget AffineAssemblyOutcome::captureBudget() const{
-  if(assembly_&&assembly_->storage_)return assembly_->storage_->budget->share();if(failed_)return failed_->budget->share();
-  return detail::AffineFactory::originalBudget(originalNormalization());
-}
 const NormalizationOutcome& AffineAssemblyOutcome::originalNormalization() const{return anchor_?anchor_->normalization:original_;}
 std::optional<CaptureMode> AffineAssemblyOutcome::actualMode() const noexcept{return hasCompleteAssembly()?std::optional<CaptureMode>(requested_):std::nullopt;}
 std::string_view AffineAssemblyOutcome::refusal() const noexcept{if(assembly_&&!assembly_->complete())return assembly_->refusal();

@@ -1,0 +1,70 @@
+{
+  "decision": "PASS_SOURCE_INVENTORY_OWNER_OBSERVATION_AND_CATALOGUE_CORE_ONLY",
+  "recorded_utc": "2026-10-09T02:03:36.150300+00:00",
+  "prerequisite_backup": "fb016b568184a286808f1338ba09b278555cfc31",
+  "packet_READY_sha256": "00728b56e1d5bf1cfadec81f84555d6d55a19a5e3f2f702379ed0df3be590248",
+  "verified_payload_count": 27,
+  "verified_preimport_guard_count": 52,
+  "criteria": "ROOT_REVIEW_CRITERIA.json",
+  "validation": "Independent static source/private identity/lifetime/catalogue/checked integer accounting review and SHA checks only; no compiler/parser/numeric/Model execution",
+  "resolved_findings": [
+    {
+      "id": "INVENTORY_FIRST_FAILURE",
+      "resolution": "Catalogue visitor/quota/reentry poison preserves first refusal and swallowed nested failure stops outer traversal. Owner receives source and observer state before later origin/plan checks; failures retain both."
+    },
+    {
+      "id": "COMPLETE_COST_REFERENCES",
+      "resolution": "Explicit addition sample index and ordered parent rows; canonical references distinguish full usedF/usedf0/Fc/fc shapes and traversal, while actual ordered sums remain separate."
+    },
+    {
+      "id": "UNKNOWN_TERM_SHAPE",
+      "resolution": "Unknown missing/unadmitted descriptor dimensions are marked unknown/pending, distinct from actual legal zero-row terms; forensic parsed metadata is not authoritative success."
+    },
+    {
+      "id": "SHORT_READ_ACCOUNTING",
+      "resolution": "Full128-byte refill estimate is nominal, not worst bound; separate byte-at-a-time upper/actual hard-quota refusal scope. Planned source live upper is not an observed peak."
+    }
+  ],
+  "review_correction": "Root briefly inferred extra per-addition affine sample calls, then directly inspected cost::used153-177 and corrected this before implementation: additions use held native A/B/defect within each term W; original cost K+1 work schedule unchanged. Future once-per-sample affine export is separate.",
+  "observations": [
+    "Private inventory factory consumes genuine CostDecodeOutcome/source tree and private actual affine/cost origin tokens. Public chunk/hash/count records cannot establish genuine source completeness.",
+    "Original consumer gate accepts ordered original term/canonical scope only, after successful sink return; later term/canonical replays do not count. Observed callbacks do not prove stored bytes.",
+    "Mandatory finite role catalogue identifies expected source availability, dimensions, classification, index/traversal and Dense versus Compact scope. All actual leaf-bound/captured/readback flags remain false; fullCaptureComplete always false.",
+    "Integer envelope describes old SDK/raw/normalizer640/affine/cost I/V/W/cache16/K+1/sample plus writer20/records4/reader28/frame20/token/cache schedules. No complete capture admission or valid workspace partition certificate is minted."
+  ],
+  "remaining_obligations": [
+    "SOURCE3C2B2 genuine leaf value/export binding, actual original consumer chunks and complete full manifest/coverage/metadata/output/READY writer and independent reader.",
+    "Actual preplanned storage partition/redeployment with exact required-work and lifetime accounting, complete peak/cumulative/metadata/byte schedule and failure records; no extra IO added atop full allocated plan.",
+    "Independent frozen protocol/source/build/runtime checks before compile/parser/numerical/Model/plant/main/scorer; all deferred cases remain unrun.",
+    "No source-only checkpoint establishes controller, physical motion, safety, timing or Phase5 acceptance; original checker/freezes/failures remain."
+  ],
+  "executions": {
+    "configure": 0,
+    "compile": 0,
+    "empty_kernel": 0,
+    "catalogue": 0,
+    "original_consumer": 0,
+    "driver": 0,
+    "writer": 0,
+    "readback": 0,
+    "parser_fixture": 0,
+    "numeric_checks": 0,
+    "matrix_checks": 0,
+    "Model_constructor": 0,
+    "Model_metadata": 0,
+    "Model_rollout": 0,
+    "plant": 0,
+    "solver": 0,
+    "main": 0,
+    "scorer": 0
+  },
+  "storage": {
+    "Mac_packet": "/private/tmp/public_live_affine_v2_capture_inventory_stage3c2b1",
+    "canonical_source": "tools/phase5_public_live_affine_v2/capture_inventory",
+    "history": "reviews/evidence/public_live_affine_v2_capture_inventory_stage3c2b1_20261008/history",
+    "Dell_copy_verified": false,
+    "Git_backup": "Pending commit and remote verification"
+  },
+  "phase5": "NOT_ACCEPTED",
+  "phase6": "NOT_STARTED"
+}

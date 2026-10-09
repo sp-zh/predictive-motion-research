@@ -160,10 +160,6 @@ class SharedCaseBudget final {
   Count outputCeiling() const;
   NumericEncoding numericEncoding() const;
   ChunkIOLease beginChunkIO();
-  Count liveSlots() const;
-  Count liveCeiling() const;
-  Count cumulativeCharges() const;
-  Count chargeCeiling() const;
  private:
   explicit SharedCaseBudget(std::shared_ptr<detail::CaseState>);
   std::shared_ptr<detail::CaseState> state_;

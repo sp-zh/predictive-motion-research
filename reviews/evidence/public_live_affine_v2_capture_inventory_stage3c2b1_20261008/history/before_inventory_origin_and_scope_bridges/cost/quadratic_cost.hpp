@@ -15,7 +15,7 @@ struct CostTermLayout {
 // Reader contract: bounded scalar access to the reviewed opaque input; no
 // retained unbudgeted numerical arrays. Complete codecs belong to SOURCE3C.
 // Scalar order is specified in INPUT_CONTRACT.md. Read exactly once on ingest.
-namespace detail {struct CostInputFactory;struct CostFactory;struct CaptureInventoryFactory;}
+namespace detail {struct CostInputFactory;struct CostFactory;}
 struct CostInputRecipe {
  private:
   std::shared_ptr<OwnedReservation> owned_input_; // Dies after public metadata/cache callbacks.
@@ -47,14 +47,10 @@ class CostEvaluationView final {
   double directHessian(Count,Count) const;
   double condensedHessian(Count,Count) const;
  private:
-  std::shared_ptr<const void> captureOriginToken() const;
-  bool originalConsumerScope() const;
-  std::shared_ptr<const void> captureCostToken() const;
   explicit CostEvaluationView(detail::CostStorage*);
   detail::CostStorage* storage_=nullptr;
   friend struct detail::CostFactory;
   friend class UsedTermView;
-  friend struct detail::CaptureInventoryFactory;
 };
 class UsedTermView final {
  public:
@@ -73,13 +69,9 @@ class UsedTermView final {
   double constantCoefficient() const;
   const CostEvaluationView& evaluation() const noexcept{return evaluation_;}
  private:
-  std::shared_ptr<const void> captureOriginToken() const;
-  bool originalConsumerScope() const;
-  std::shared_ptr<const void> captureCostToken() const;
   UsedTermView(detail::CostStorage*,Count);
   detail::CostStorage* storage_=nullptr;Count term_=0;CostEvaluationView evaluation_;
   friend struct detail::CostFactory;
-  friend struct detail::CaptureInventoryFactory;
 };
 // Borrow complete fields during their original calculation, with no replay.
 // No files/codecs are implemented here. Throwing refuses the whole outcome.
@@ -144,7 +136,6 @@ class QuadraticCostOutcome final {
   bool hasRetainedRegions() const noexcept;
   void withRetainedRegions(const RetainedRegionConsumer&) const;
  private:
-  std::shared_ptr<const void> captureCostToken() const;
   QuadraticCostOutcome(AffineAssemblyOutcome&&,CostInputRecipe&&) noexcept;
   void recordRefusal(const char*) noexcept;
   AffineAssemblyOutcome original_;CostInputRecipe input_;
@@ -152,7 +143,6 @@ class QuadraticCostOutcome final {
   std::unique_ptr<detail::CostStorage> failed_; // Initialized partial data retained for future capture.
   std::string reason_;bool refused_=false;
   friend struct detail::CostFactory;
-  friend struct detail::CaptureInventoryFactory;
 };
 QuadraticCostOutcome buildQuadraticCost(AffineAssemblyOutcome&&,CostInputRecipe&&);
 QuadraticCostOutcome buildQuadraticCost(AffineAssemblyOutcome&&,CostInputRecipe&&,

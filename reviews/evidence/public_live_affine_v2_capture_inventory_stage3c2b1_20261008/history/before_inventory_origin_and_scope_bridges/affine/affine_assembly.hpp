@@ -8,7 +8,7 @@
 
 namespace phase5_public_live_affine_v2 {
 enum class AssemblyInitialKind { LiveActual, AlgebraTest };
-namespace detail { struct AffineStorage; struct AffineAnchor; struct AffineFactory; struct CostFactory; struct CostInputFactory; struct CaptureInventoryFactory; }
+namespace detail { struct AffineStorage; struct AffineAnchor; struct AffineFactory; struct CostFactory; struct CostInputFactory; }
 class SampleAffineView final {
  public:
   SampleAffineView(const SampleAffineView&) = delete;
@@ -70,13 +70,11 @@ class CompactAffineAssembly final {
   const FactorShape& boundCostShape() const;
   const FileIdentity& boundCostInputIdentity() const;
   const std::string& boundCostSemanticSha256() const;
-  std::shared_ptr<const void> captureOriginToken() const;
   explicit CompactAffineAssembly(std::unique_ptr<detail::AffineStorage>);
   std::unique_ptr<detail::AffineStorage> storage_;
   friend struct detail::AffineFactory;
   friend struct detail::CostFactory;
   friend struct detail::CostInputFactory;
-  friend struct detail::CaptureInventoryFactory;
   friend class AffineAssemblyOutcome;
 };
 class AffineAssemblyOutcome final {
@@ -88,7 +86,6 @@ class AffineAssemblyOutcome final {
   ~AffineAssemblyOutcome();
   bool hasCompleteAssembly() const noexcept;
   CompactAffineAssembly& assembly();
-  const CompactAffineAssembly& assembly() const;
   const NormalizationOutcome& originalNormalization() const;
   CaptureMode requestedMode() const noexcept {return requested_;}
   std::optional<CaptureMode> actualMode() const noexcept;
@@ -97,10 +94,6 @@ class AffineAssemblyOutcome final {
   bool hasRetainedRegions() const noexcept;
   void withRetainedRegions(const RetainedRegionConsumer&) const;
  private:
-  std::shared_ptr<const void> captureOriginToken() const;
-  const ResourcePlan& capturePlan() const;
-  const FactorShape& captureShape() const;
-  SharedCaseBudget captureBudget() const;
   AffineAssemblyOutcome(NormalizationOutcome&&,CaptureMode,AssemblyInitialKind) noexcept;
   void recordRefusal(const char*) noexcept;
   NormalizationOutcome original_;std::shared_ptr<detail::AffineAnchor> anchor_;
@@ -108,7 +101,6 @@ class AffineAssemblyOutcome final {
   std::unique_ptr<detail::AffineStorage> failed_;
   CaptureMode requested_;AssemblyInitialKind kind_;std::string refusal_detail_;bool refused_=false;
   friend struct detail::AffineFactory;
-  friend struct detail::CaptureInventoryFactory;
 };
 AffineAssemblyOutcome assembleLiveAffine(NormalizationOutcome&&,CaptureMode requested);
 AffineAssemblyOutcome assembleAlgebraAffine(NormalizationOutcome&&,const AlgebraTestInitial&,CaptureMode requested);
