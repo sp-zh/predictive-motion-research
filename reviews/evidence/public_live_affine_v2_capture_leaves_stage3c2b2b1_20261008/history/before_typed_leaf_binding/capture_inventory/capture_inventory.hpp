@@ -2,7 +2,7 @@
 #include "cost_input_decoder.hpp"
 #include <array>
 namespace phase5_public_live_affine_v2 {
-namespace detail {struct OriginalCaptureState;struct CaptureInventoryStorage;struct CaptureInventoryFactory;struct CaptureLeafFactory;}
+namespace detail {struct OriginalCaptureState;struct CaptureInventoryStorage;struct CaptureInventoryFactory;}
 enum class RequiredRole {
   ProvenanceAndMetadata,InvocationAndExecution,RawFlagsAndErrors,RawFinalState,RawCellControl,
   RawCellState,RawCycleState,RawSubstepPhysical,RawSubstepProgress,RawFrictionForce,
@@ -52,7 +52,7 @@ class OriginalCaptureGate final {
   OriginalCaptureObservation observation() const;
  private:
   explicit OriginalCaptureGate(std::shared_ptr<detail::OriginalCaptureState>);
-  std::shared_ptr<detail::OriginalCaptureState> state_;friend struct detail::CaptureInventoryFactory;friend struct detail::CaptureLeafFactory;
+  std::shared_ptr<detail::OriginalCaptureState> state_;friend struct detail::CaptureInventoryFactory;
 };
 struct CaptureFlowEnvelope {
   Count raw_shape_slots=0,sdk_allowance=0,normalized_slots=0,normalizer_held=0;
@@ -76,7 +76,7 @@ class CaptureInventoryOwner final {
  private:
   explicit CaptureInventoryOwner(CostDecodeOutcome&&);
   CostDecodeOutcome original_;std::shared_ptr<detail::OriginalCaptureState> original_gate_;std::unique_ptr<detail::CaptureInventoryStorage> storage_;
-  std::string reason_;bool refused_=false;friend struct detail::CaptureInventoryFactory;friend struct detail::CaptureLeafFactory;
+  std::string reason_;bool refused_=false;friend struct detail::CaptureInventoryFactory;
 };
 OriginalCaptureGate prepareOriginalCaptureGate(const AffineAssemblyOutcome&);
 CaptureInventoryOwner bindCaptureInventory(CostDecodeOutcome&&,OriginalCaptureGate&&);

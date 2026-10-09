@@ -4,7 +4,7 @@
 #include <optional>
 #include <string_view>
 namespace phase5_public_live_affine_v2 {
-namespace detail {struct CostDecoderState;struct CostInputFactory;class CapturePartitionState;struct CaptureLeafFactory;}
+namespace detail {struct CostDecoderState;struct CostInputFactory;class CapturePartitionState;}
 struct CostDecodeObservation {
   NumericEncoding requested_output=NumericEncoding::LosslessBinary;
   std::optional<NumericEncoding> actual_input;
@@ -26,7 +26,6 @@ class CostDecodeOutcome final {
   ~CostDecodeOutcome();
   bool hasCompleteCost() const noexcept;
   QuadraticCostOutcome& costOutcome();
-  const QuadraticCostOutcome& costOutcome() const;
   const AffineAssemblyOutcome& originalAssembly() const;
   const FileIdentity& requestedArtifact() const noexcept{return requested_;}
   // After transfer, complete/private descriptors live in the cost outcome.
@@ -42,7 +41,6 @@ class CostDecodeOutcome final {
   std::optional<QuadraticCostOutcome> cost_;std::string failure_;bool refused_=false;
   void refuse(const char*) noexcept;
   friend struct detail::CostInputFactory;
-  friend struct detail::CaptureLeafFactory;
 };
 class CaptureWorkspaceGrant;
 CostDecodeOutcome decodeAndBuildCostWithCaptureWorkspaceV1(AffineAssemblyOutcome&&,CaptureWorkspaceGrant&&,

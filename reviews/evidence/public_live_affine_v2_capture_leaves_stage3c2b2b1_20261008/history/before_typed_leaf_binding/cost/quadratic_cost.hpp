@@ -15,7 +15,7 @@ struct CostTermLayout {
 // Reader contract: bounded scalar access to the reviewed opaque input; no
 // retained unbudgeted numerical arrays. Complete codecs belong to SOURCE3C.
 // Scalar order is specified in INPUT_CONTRACT.md. Read exactly once on ingest.
-namespace detail {struct CostInputFactory;struct CostFactory;struct CaptureInventoryFactory;class CapturePartitionState;struct CaptureLeafFactory;}
+namespace detail {struct CostInputFactory;struct CostFactory;struct CaptureInventoryFactory;class CapturePartitionState;}
 struct CostInputRecipe {
  private:
   std::shared_ptr<detail::CapturePartitionState> capture_partition_;
@@ -51,14 +51,11 @@ class CostEvaluationView final {
   std::shared_ptr<const void> captureOriginToken() const;
   bool originalConsumerScope() const;
   std::shared_ptr<const void> captureCostToken() const;
-  const AffineAssemblyOutcome& captureSource() const;
-  std::shared_ptr<detail::CapturePartitionState> capturePartition() const;
   explicit CostEvaluationView(detail::CostStorage*);
   detail::CostStorage* storage_=nullptr;
   friend struct detail::CostFactory;
   friend class UsedTermView;
   friend struct detail::CaptureInventoryFactory;
-  friend struct detail::CaptureLeafFactory;
 };
 class UsedTermView final {
  public:
@@ -80,13 +77,10 @@ class UsedTermView final {
   std::shared_ptr<const void> captureOriginToken() const;
   bool originalConsumerScope() const;
   std::shared_ptr<const void> captureCostToken() const;
-  const AffineAssemblyOutcome& captureSource() const;
-  std::shared_ptr<detail::CapturePartitionState> capturePartition() const;
   UsedTermView(detail::CostStorage*,Count);
   detail::CostStorage* storage_=nullptr;Count term_=0;CostEvaluationView evaluation_;
   friend struct detail::CostFactory;
   friend struct detail::CaptureInventoryFactory;
-  friend struct detail::CaptureLeafFactory;
 };
 // Borrow complete fields during their original calculation, with no replay.
 // No files/codecs are implemented here. Throwing refuses the whole outcome.
@@ -112,11 +106,6 @@ class CompleteQuadraticCost final {
   double inputConstant(Count term) const;
   double inputAdditionCoefficient(Count term,Count addition,Count row,Count column) const;
   double evaluationControl(Count column) const;
-  double retainedFactorControl(Count term,Count row,Count column) const;
-  double retainedFactorOffset(Count term,Count row) const;
-  double retainedRawH(Count term,Count row,Count column) const;
-  double retainedGradientCoefficient(Count term,Count column) const;
-  double retainedConstantCoefficient(Count term) const;
   double sumRawH(Count,Count) const;
   double sumGradientCoefficient(Count) const;
   double sumConstantCoefficient() const;
@@ -146,7 +135,6 @@ class QuadraticCostOutcome final {
   ~QuadraticCostOutcome();
   bool hasCompleteCost() const noexcept;
   CompleteQuadraticCost& cost();
-  const CompleteQuadraticCost& cost() const;
   const AffineAssemblyOutcome& originalAssembly() const;
   // Authoritative sealed descriptor; read_scalar is deliberately empty.
   // Refuses if construction failed before a snapshot was admitted.
@@ -166,7 +154,6 @@ class QuadraticCostOutcome final {
   std::string reason_;bool refused_=false;
   friend struct detail::CostFactory;
   friend struct detail::CaptureInventoryFactory;
-  friend struct detail::CaptureLeafFactory;
 };
 QuadraticCostOutcome buildQuadraticCost(AffineAssemblyOutcome&&,CostInputRecipe&&);
 QuadraticCostOutcome buildQuadraticCost(AffineAssemblyOutcome&&,CostInputRecipe&&,

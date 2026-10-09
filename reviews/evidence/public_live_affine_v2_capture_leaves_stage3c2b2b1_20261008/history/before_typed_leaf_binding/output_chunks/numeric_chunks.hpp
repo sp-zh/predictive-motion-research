@@ -19,11 +19,9 @@ struct NumericChunkSpec {
   ChunkClassification classification=ChunkClassification::FiniteFields;
   std::vector<Count> dimensions; // At most4; empty means one scalar.
 };
-namespace detail {struct CaptureLeafFactory;}
 struct ChunkWriteOutcome;
 struct NumericChunkRecord {
  private:
-  friend struct detail::CaptureLeafFactory;
   std::shared_ptr<OwnedReservation> axes_owner_; // Dies after returned spec indices.
   friend ChunkWriteOutcome writeProvisionalNumericChunk(SharedCaseBudget,const std::string&,const NumericChunkSpec&,const std::function<ChunkScalar(Count)>&);
  public:

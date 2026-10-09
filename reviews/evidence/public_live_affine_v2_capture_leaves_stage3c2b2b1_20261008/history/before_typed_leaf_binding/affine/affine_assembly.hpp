@@ -8,7 +8,7 @@
 
 namespace phase5_public_live_affine_v2 {
 enum class AssemblyInitialKind { LiveActual, AlgebraTest };
-namespace detail { struct AffineStorage; struct AffineAnchor; struct AffineFactory; struct CostFactory; struct CostInputFactory; struct CaptureInventoryFactory; struct CaptureWorkspaceFactory; struct CaptureLeafFactory; }
+namespace detail { struct AffineStorage; struct AffineAnchor; struct AffineFactory; struct CostFactory; struct CostInputFactory; struct CaptureInventoryFactory; struct CaptureWorkspaceFactory; }
 class SampleAffineView final {
  public:
   SampleAffineView(const SampleAffineView&) = delete;
@@ -78,7 +78,6 @@ class CompactAffineAssembly final {
   friend struct detail::CostInputFactory;
   friend struct detail::CaptureInventoryFactory;
   friend struct detail::CaptureWorkspaceFactory;
-  friend struct detail::CaptureLeafFactory;
   friend class AffineAssemblyOutcome;
 };
 class AffineAssemblyOutcome final {
@@ -112,7 +111,6 @@ class AffineAssemblyOutcome final {
   friend struct detail::AffineFactory;
   friend struct detail::CaptureInventoryFactory;
   friend struct detail::CaptureWorkspaceFactory;
-  friend struct detail::CaptureLeafFactory;
 };
 AffineAssemblyOutcome assembleLiveAffine(NormalizationOutcome&&,CaptureMode requested);
 AffineAssemblyOutcome assembleAlgebraAffine(NormalizationOutcome&&,const AlgebraTestInitial&,CaptureMode requested);

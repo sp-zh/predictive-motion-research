@@ -1,0 +1,541 @@
+{
+  "stage": "SOURCE_LIMITED_GENUINE_TYPED_LEAF_ORIGINAL_CALLBACK_PAIRED_READBACK_AND_READONLY_FAILURE_CORE_3C2B2B1",
+  "recorded_utc": "2026-10-09T03:08:15.696349+00:00",
+  "prerequisite_backup": "ba1ce53855605ad1118a4a551a8f9f4fa56bb752",
+  "files": [
+    {
+      "path": "history/before_canonical_keys_and_full_first_latch_fix/capture_leaves.cpp",
+      "bytes": 30917,
+      "sha256": "f0bcb4fc980b22fd9eb245fbcf6a10819f59704de58083835ba2200255a23de7"
+    },
+    {
+      "path": "history/before_canonical_keys_and_full_first_latch_fix/capture_leaves.hpp",
+      "bytes": 4617,
+      "sha256": "4e68fa13064f74b9973597423fc42c4d5e7784a7f844b1b8b60b03b9fc0c8e1a"
+    },
+    {
+      "path": "history/before_failed_attachment_and_paired_attempt_fix/capture_leaves/LIFETIME_AND_EXPORT.md",
+      "bytes": 3170,
+      "sha256": "cbcdc656dbf40fbec0e5a3e7d03bb0c2b22c4a0e8e4395459e265000dfebab9d"
+    },
+    {
+      "path": "history/before_failed_attachment_and_paired_attempt_fix/capture_leaves/SUPPORTED_LEAVES.md",
+      "bytes": 4521,
+      "sha256": "9a602dacd4e26b93f3593c207c55ddfbcc65418142f35b13e1f03fca2e28685e"
+    },
+    {
+      "path": "history/before_failed_attachment_and_paired_attempt_fix/capture_leaves/capture_leaves.cpp",
+      "bytes": 29254,
+      "sha256": "00bd2f4e3ea116f88a61e86e8b04661ed08f7ddca9671d174771dc8bb3e25824"
+    },
+    {
+      "path": "history/before_failed_attachment_and_paired_attempt_fix/capture_leaves/capture_leaves.hpp",
+      "bytes": 3340,
+      "sha256": "961473008d0d21c3b02187fe975bbb117827eb45ebfba59caba78815e031e508"
+    },
+    {
+      "path": "history/before_live_borrow_contract_clarification/LIFETIME_AND_EXPORT.md",
+      "bytes": 6144,
+      "sha256": "911c2db91e627d65bf16db491f855fc3e2e5561b41f8b81f2e3db9e715673e3f"
+    },
+    {
+      "path": "history/before_live_borrow_contract_clarification/SOURCE_PACKET_READY.json",
+      "bytes": 23448,
+      "sha256": "fb82bb645af353fe2a2c76a07fe628d10b458d09871236be55438c16363d5168"
+    },
+    {
+      "path": "history/before_readonly_failed_source_forensics_fix/LIFETIME_AND_EXPORT.md",
+      "bytes": 5056,
+      "sha256": "49fc79371d3d4ea70e5a350b37b83ed05842413c3a787485abffe52ea51e7c5e"
+    },
+    {
+      "path": "history/before_readonly_failed_source_forensics_fix/capture_leaves.cpp",
+      "bytes": 33456,
+      "sha256": "5a24d994bfeecb33aab32803cdc3204852c3f65ba13cd3bea9d401ebb722f6b7"
+    },
+    {
+      "path": "history/before_readonly_failed_source_forensics_fix/capture_leaves.hpp",
+      "bytes": 4808,
+      "sha256": "d9024c4cd3d45ac81acecd80254092734459b764d157ad660af84354de8b7402"
+    },
+    {
+      "path": "history/before_typed_leaf_binding/affine/affine_assembly.hpp",
+      "bytes": 5851,
+      "sha256": "7eb3b76584b603cc562d896b6a11ea8467456ee9afd577b156fb2005576d7748"
+    },
+    {
+      "path": "history/before_typed_leaf_binding/capture_inventory/CMakeLists.txt",
+      "bytes": 718,
+      "sha256": "6c844587a3739edc51b6f2c612fe611237a4637e56061aef10be0d941e4d72ef"
+    },
+    {
+      "path": "history/before_typed_leaf_binding/capture_inventory/capture_inventory.hpp",
+      "bytes": 5801,
+      "sha256": "b8ade24df81adebeb30f61df9771e7d87ae7165f2061083893f8e6f0024efe68"
+    },
+    {
+      "path": "history/before_typed_leaf_binding/capture_workspace/CMakeLists.txt",
+      "bytes": 715,
+      "sha256": "7a8526c1720d470da598f3ccaeeb7d76b133d8371593a893ddb4d54acb140a49"
+    },
+    {
+      "path": "history/before_typed_leaf_binding/capture_workspace/capture_workspace.hpp",
+      "bytes": 1902,
+      "sha256": "7249b965fb15d06ae1043a97991f299393e90424b6d36850ace516621431ce98"
+    },
+    {
+      "path": "history/before_typed_leaf_binding/capture_workspace/partition_internal.hpp",
+      "bytes": 1098,
+      "sha256": "e71900e66b27ddc2d585f51833e2104a944978ae9ab979a0603fc04ce40009b6"
+    },
+    {
+      "path": "history/before_typed_leaf_binding/cost/quadratic_cost.cpp",
+      "bytes": 37191,
+      "sha256": "211afd7596e05d676d53578c6ce5180c684219b2e448cb7dfa0416445ec10152"
+    },
+    {
+      "path": "history/before_typed_leaf_binding/cost/quadratic_cost.hpp",
+      "bytes": 7731,
+      "sha256": "99671a7af58f2f514462850fd2ae4adf382a5837849405e4ede6376c97f1b92f"
+    },
+    {
+      "path": "history/before_typed_leaf_binding/input_codec/cost_input_decoder.cpp",
+      "bytes": 23254,
+      "sha256": "8359a69ec832641d9e2bafc8626b31634e098384bf279a6e6411437a35ee874f"
+    },
+    {
+      "path": "history/before_typed_leaf_binding/input_codec/cost_input_decoder.hpp",
+      "bytes": 2739,
+      "sha256": "542fcf0d67690cff214e11fd9e8fe0d866ff0ed5a656336dd2e8b7d9a07ce4c8"
+    },
+    {
+      "path": "history/before_typed_leaf_binding/model_boundary/model_boundary.cpp",
+      "bytes": 41670,
+      "sha256": "67e406d1e196a12d760d961e810d70e16703a0d994cf487328c797a15c07bf68"
+    },
+    {
+      "path": "history/before_typed_leaf_binding/output_chunks/CMakeLists.txt",
+      "bytes": 753,
+      "sha256": "4c99e8c7efe2d3a0883beedd727e26e600065395a578b41f2907711f7ee9900d"
+    },
+    {
+      "path": "history/before_typed_leaf_binding/output_chunks/numeric_chunks.hpp",
+      "bytes": 2781,
+      "sha256": "67b5e17ae460001d5b9d59f0f0474edf6dcc6fefa483ed09b0fdbe030a964367"
+    },
+    {
+      "path": "tools/phase5_public_live_affine_v2/affine/affine_assembly.hpp",
+      "bytes": 5966,
+      "sha256": "1c65fd172b57be655d7b116918fc7d87afa7d9ce41494a7c537a626a945f1f03"
+    },
+    {
+      "path": "tools/phase5_public_live_affine_v2/capture_inventory/CMakeLists.txt",
+      "bytes": 777,
+      "sha256": "2a124eeb709d5d4644a8510a4661fd994565c3f9ae02c808dc96411c59d8c04d"
+    },
+    {
+      "path": "tools/phase5_public_live_affine_v2/capture_inventory/capture_inventory.hpp",
+      "bytes": 5909,
+      "sha256": "c28501371c5714813d8a20035a0ba00f6c9f3c94ef357763f6c90771cb275b07"
+    },
+    {
+      "path": "tools/phase5_public_live_affine_v2/capture_leaves/CMakeLists.txt",
+      "bytes": 1119,
+      "sha256": "2d852c9b46394bebe6455a93bb3569d64a0b90488d899c05e9e4469c4e1ccf22"
+    },
+    {
+      "path": "tools/phase5_public_live_affine_v2/capture_leaves/DEFERRED_VERIFICATION.md",
+      "bytes": 3114,
+      "sha256": "80f0b9d07d8b7f376bdbc9defc4bf55c71b5306deac4ae1315c941e55c9fc805"
+    },
+    {
+      "path": "tools/phase5_public_live_affine_v2/capture_leaves/LIFETIME_AND_EXPORT.md",
+      "bytes": 6474,
+      "sha256": "9d2d575f967d674b46a7c60011dc9ea13eccacc82ee01046f5bfc7d9e7a2ac24"
+    },
+    {
+      "path": "tools/phase5_public_live_affine_v2/capture_leaves/SOURCE_REVIEW.md",
+      "bytes": 2918,
+      "sha256": "4ef6dfe7b4689b72d1baadaa6a065578fc75539f67a28423a81674041aa0cb40"
+    },
+    {
+      "path": "tools/phase5_public_live_affine_v2/capture_leaves/SUPPORTED_LEAVES.md",
+      "bytes": 4521,
+      "sha256": "9a602dacd4e26b93f3593c207c55ddfbcc65418142f35b13e1f03fca2e28685e"
+    },
+    {
+      "path": "tools/phase5_public_live_affine_v2/capture_leaves/capture_leaves.cpp",
+      "bytes": 35172,
+      "sha256": "176b366bfd8f8b2bd27e47c373df8834cbc40a8df29e106ca1d103326da75dcf"
+    },
+    {
+      "path": "tools/phase5_public_live_affine_v2/capture_leaves/capture_leaves.hpp",
+      "bytes": 4998,
+      "sha256": "99b95b5c2d3256572d320a0d4f9da13180547140264622e9c01cbab34395c5ea"
+    },
+    {
+      "path": "tools/phase5_public_live_affine_v2/capture_workspace/CMakeLists.txt",
+      "bytes": 774,
+      "sha256": "412dc95c3d4bc24dc66f33dde1cceda69aa081a742ae8c0578fda844bd2242ce"
+    },
+    {
+      "path": "tools/phase5_public_live_affine_v2/capture_workspace/capture_workspace.hpp",
+      "bytes": 1969,
+      "sha256": "f8cb3b5b9acf63351ae33225190670cec4dd9a9319748b68569156b6ee173c2f"
+    },
+    {
+      "path": "tools/phase5_public_live_affine_v2/capture_workspace/partition_internal.hpp",
+      "bytes": 1131,
+      "sha256": "d384e896cf6363a95dc4a8c8dd18bdc100399e976bddb76d4ec2c2debf4ecd29"
+    },
+    {
+      "path": "tools/phase5_public_live_affine_v2/cost/quadratic_cost.cpp",
+      "bytes": 38874,
+      "sha256": "f4bf6bba83b61b9f63df625c96e67cb228314155b0fe051aa538d8b53464c383"
+    },
+    {
+      "path": "tools/phase5_public_live_affine_v2/cost/quadratic_cost.hpp",
+      "bytes": 8513,
+      "sha256": "f5bdfcd920750f1b94b3e5917f886300ae5276111b4b7990c4baba5f2e166784"
+    },
+    {
+      "path": "tools/phase5_public_live_affine_v2/input_codec/cost_input_decoder.cpp",
+      "bytes": 23402,
+      "sha256": "f426f018b9556c15a9a2ddf008ba43bcfdb68c111036253c71718b8670a6b812"
+    },
+    {
+      "path": "tools/phase5_public_live_affine_v2/input_codec/cost_input_decoder.hpp",
+      "bytes": 2860,
+      "sha256": "d7cdf99186f2244c6e83b72742108f28d9eddd2decad287dafe6e25c1cb39857"
+    },
+    {
+      "path": "tools/phase5_public_live_affine_v2/model_boundary/model_boundary.cpp",
+      "bytes": 41747,
+      "sha256": "734b1757ae21f0aedd559f88a7d30911bed104a8640a16d7ff854e1b69d7fc68"
+    },
+    {
+      "path": "tools/phase5_public_live_affine_v2/output_chunks/CMakeLists.txt",
+      "bytes": 811,
+      "sha256": "d0e3a906ba2d31f897fdf7b34505056867ee0ca3cf593f26fc79e71a3eb7987e"
+    },
+    {
+      "path": "tools/phase5_public_live_affine_v2/output_chunks/numeric_chunks.hpp",
+      "bytes": 2871,
+      "sha256": "81dd5eabe624fe16c11db41e64403ee95ecca5a5adbbac30be892f68eb10e6e4"
+    }
+  ],
+  "canonical_preimport_guards": {
+    "tools/phase5_public_coupled_augmented_extension_cpp/public_coupled_augmented_extension.hpp": {
+      "sha256": "d97d4f5fbbd837317bdf488291f3aca0c822c512a7e3f6c079e196d3641b104f",
+      "bytes": 2171
+    },
+    "tools/phase5_public_coupled_augmented_extension_cpp/public_coupled_augmented_extension.cpp": {
+      "sha256": "74b3d8eccdd4a1373d39bc46cf122564a5101259c2212cb45d98f81678f882fa",
+      "bytes": 7073
+    },
+    "tools/phase5_public_coupled_augmented_cpp/public_coupled_augmented_model.hpp": {
+      "sha256": "24350b7680f65c2ea667628e8e80e0830e2a471b501bf77acd51d699b9d44b8d",
+      "bytes": 1818
+    },
+    "tools/phase5_public_coupled_augmented_cpp/public_coupled_augmented_model.cpp": {
+      "sha256": "add6e9d0ef578ed3adcd7e715d2844fb60c063afa24bfb6dd233cdd5f04eac1b",
+      "bytes": 4305
+    },
+    "tools/phase5_public_affine_horizon_cpp/public_affine_horizon.hpp": {
+      "sha256": "049e7cb3a0b8f46cf3bbba57743384ccf631c31ace3a1ff7cf99bcd645dbb0f4",
+      "bytes": 5637
+    },
+    "tools/phase5_public_affine_horizon_cpp/public_affine_horizon.cpp": {
+      "sha256": "bc4ead2f085216c40da6be34b6c3d037b3f90df83757b94464f7f6ed97cef953",
+      "bytes": 13867
+    },
+    "tools/phase5_public_affine_horizon_cpp/public_affine_horizon_native.cpp": {
+      "sha256": "5804cb4dfb0a43f99bb24bb81d07ccc0e1af24c559ec58902b0d47c4b3d3f487",
+      "bytes": 5536
+    },
+    "src/predictive_motion_control/include/predictive_motion_control/predictive.hpp": {
+      "sha256": "c5ff72290709ad694c61686bd495abbfe4223b3bb532f434a5d25af55c784652",
+      "bytes": 8010
+    },
+    "src/predictive_motion_control/src/predictive.cpp": {
+      "sha256": "4ad70dcf75500e956141557a6b17eaa2bdb9a7f670abb7f380da5c699efb1df5",
+      "bytes": 38633
+    },
+    "tools/phase5_adapter/phase5_benchmark.cpp": {
+      "sha256": "72d59b1a4921b37a9ead7ab59602d75238927cb89224673574cfcd7a9a1147d1",
+      "bytes": 44584
+    },
+    "docs/predictive_controller.md": {
+      "sha256": "037e041875a4a24b91966dbc921ee17ce0c0ba84be4bfcdc8344b6c640938828",
+      "bytes": 10530
+    },
+    "src/predictive_motion_sim/include/predictive_motion_sim/plant.hpp": {
+      "sha256": "2bfac5f02ccee8be8807470fdd95f8de594d69d8f74f602aaa55408263fd1508",
+      "bytes": 994
+    },
+    "src/predictive_motion_sim/src/state_bridge.cpp": {
+      "sha256": "d907eccee9502b70ee8f146b90e48a7f5d798c36d55282aea36efd7e420fc56f",
+      "bytes": 2975
+    },
+    "reviews/evidence/public_live_affine_source_requirements_20261008.json": {
+      "sha256": "8ed64e87c6b07938b6edc56adea4be4f19b2058226db3a23d4d7f01fcc8864eb",
+      "bytes": 3565
+    },
+    "tools/phase5_public_live_affine_v2/CMakeLists.txt": {
+      "sha256": "3cfa0c53c9f9245ef1d1a109e1f25750ab863e37fdb19075a561aa50a62fcbd2",
+      "bytes": 723
+    },
+    "tools/phase5_public_live_affine_v2/foundation.hpp": {
+      "sha256": "4cdb0b0e78b5a464f1b0d6f0b93c758b993f2bee59cccde816a8af61e315e955",
+      "bytes": 12638
+    },
+    "tools/phase5_public_live_affine_v2/foundation_context.cpp": {
+      "sha256": "d935a2bf0d4f431307af6a9a4e4ed35b199fff15577c5323d42dd3eb3de2bd78",
+      "bytes": 7090
+    },
+    "tools/phase5_public_live_affine_v2/foundation_identity.cpp": {
+      "sha256": "62cc67313abb6a07651778f78a65e95fb63a80cc2c61b67b7d3865de29bd8cb5",
+      "bytes": 6852
+    },
+    "tools/phase5_public_live_affine_v2/foundation_resources.cpp": {
+      "sha256": "b15c1b0d52af680cbd8ee21bebfcbabae04c66882d033b4d284bb36b8a375f22",
+      "bytes": 15813
+    },
+    "tools/phase5_public_live_affine_v2/model_boundary/CMakeLists.txt": {
+      "sha256": "dde35979aa269b1e65bff7a71769a9e5e1964e3d0483150148e2ec1027845554",
+      "bytes": 948
+    },
+    "tools/phase5_public_live_affine_v2/model_boundary/model_boundary.cpp": {
+      "sha256": "67e406d1e196a12d760d961e810d70e16703a0d994cf487328c797a15c07bf68",
+      "bytes": 41670
+    },
+    "tools/phase5_public_live_affine_v2/model_boundary/model_boundary.hpp": {
+      "sha256": "4089d8f0de95866111e41cd0598fb5f69b6c9d6b74d47588b198fd026f0553e8",
+      "bytes": 5326
+    },
+    "tools/phase5_public_live_affine_v2/normalization/CMakeLists.txt": {
+      "sha256": "bdf2542cca5d4f1dc61f6a630a455c947600310ef7bc11cee317ecd9f9de924e",
+      "bytes": 696
+    },
+    "tools/phase5_public_live_affine_v2/normalization/normalization.cpp": {
+      "sha256": "0ca10f29fcd8c516c54b2825ae066a98b2b2d49171486bd69a7622b60d48d695",
+      "bytes": 25146
+    },
+    "tools/phase5_public_live_affine_v2/normalization/normalization.hpp": {
+      "sha256": "92813ab26886a215544f7d66a27d452d9cedcd5742afe813e9cc61db2aae8dbf",
+      "bytes": 4447
+    },
+    "tools/phase5_public_live_affine_v2/affine/CMakeLists.txt": {
+      "sha256": "4ffe3bd3d1c82687a81959494386d62f11dd40fada69e39263f324ae0b7a9af0",
+      "bytes": 655
+    },
+    "tools/phase5_public_live_affine_v2/affine/affine_assembly.cpp": {
+      "sha256": "46de99fe22f76356832868972d582236000027b6a577924d7ab1732ad52d626c",
+      "bytes": 29272
+    },
+    "tools/phase5_public_live_affine_v2/affine/affine_assembly.hpp": {
+      "sha256": "7eb3b76584b603cc562d896b6a11ea8467456ee9afd577b156fb2005576d7748",
+      "bytes": 5851
+    },
+    "tools/phase5_public_live_affine_v2/model_boundary/FUTURE_PROTOCOL_SCHEMA.md": {
+      "sha256": "4344900051f94b077b30c73a08688263692e8fad343bb6fdabcf55cf96fbd983",
+      "bytes": 7940
+    },
+    "tools/phase5_public_live_affine_v2/cost/CMakeLists.txt": {
+      "sha256": "610a4bf08ce8fdb6d01e9593bc1c5a391402238d04d7dc27ce29cad1cf1d0078",
+      "bytes": 672
+    },
+    "tools/phase5_public_live_affine_v2/cost/DEFERRED_VERIFICATION.md": {
+      "sha256": "44c38f97d53be45de660f9ec8f64e1fa592f07d1fe03e2bb2d9196b91087bd9d",
+      "bytes": 3380
+    },
+    "tools/phase5_public_live_affine_v2/cost/INPUT_CONTRACT.md": {
+      "sha256": "64ac34ac3f383f506d4aaf27d7a873853ff7b7ae6113a587093c236516f267b9",
+      "bytes": 5131
+    },
+    "tools/phase5_public_live_affine_v2/cost/SOURCE_REVIEW.md": {
+      "sha256": "017c336dc8271b362a28ae48a05240a863a6203c54cd8dbe53979278819a9906",
+      "bytes": 7554
+    },
+    "tools/phase5_public_live_affine_v2/cost/quadratic_cost.cpp": {
+      "sha256": "211afd7596e05d676d53578c6ce5180c684219b2e448cb7dfa0416445ec10152",
+      "bytes": 37191
+    },
+    "tools/phase5_public_live_affine_v2/cost/quadratic_cost.hpp": {
+      "sha256": "99671a7af58f2f514462850fd2ae4adf382a5837849405e4ede6376c97f1b92f",
+      "bytes": 7731
+    },
+    "tools/phase5_public_live_affine_v2/capture_state.hpp": {
+      "sha256": "d37cad8fa22cc7793612b16e87125e6e6b4169ac650de0af8fe3b309baa805e0",
+      "bytes": 1717
+    },
+    "tools/phase5_public_live_affine_v2/input_codec/CAPTURE_CONTRACT.md": {
+      "sha256": "6769a4e7483f1397946a05ec479d11561836ea143384af43682677b2c46516c1",
+      "bytes": 11725
+    },
+    "tools/phase5_public_live_affine_v2/input_codec/CMakeLists.txt": {
+      "sha256": "8a0486ad87705fbc2b66a662cc509cfdd074d8a954ad3590111d23076191933f",
+      "bytes": 718
+    },
+    "tools/phase5_public_live_affine_v2/input_codec/DEFERRED_VERIFICATION.md": {
+      "sha256": "b065734a455e207de700648f6ed70e491ce52243672ebebe24c9c0df19e69e6b",
+      "bytes": 3617
+    },
+    "tools/phase5_public_live_affine_v2/input_codec/INPUT_FORMAT.md": {
+      "sha256": "31fc29afbeba39c21c2a20a551abf05333c854acc316f30713e8b4b77ba8f988",
+      "bytes": 7439
+    },
+    "tools/phase5_public_live_affine_v2/input_codec/SOURCE_REVIEW.md": {
+      "sha256": "bb53eed7af023d81323153018c09ec138fb9af6a767869c6c50847482e3cd1dc",
+      "bytes": 4393
+    },
+    "tools/phase5_public_live_affine_v2/input_codec/cost_input_decoder.cpp": {
+      "sha256": "8359a69ec832641d9e2bafc8626b31634e098384bf279a6e6411437a35ee874f",
+      "bytes": 23254
+    },
+    "tools/phase5_public_live_affine_v2/input_codec/cost_input_decoder.hpp": {
+      "sha256": "542fcf0d67690cff214e11fd9e8fe0d866ff0ed5a656336dd2e8b7d9a07ce4c8",
+      "bytes": 2739
+    },
+    "tools/phase5_public_live_affine_v2/output_chunks/CMakeLists.txt": {
+      "sha256": "4c99e8c7efe2d3a0883beedd727e26e600065395a578b41f2907711f7ee9900d",
+      "bytes": 753
+    },
+    "tools/phase5_public_live_affine_v2/output_chunks/DEFERRED_VERIFICATION.md": {
+      "sha256": "36de7134acf054bf1686518a08b99ad7e53518c4f0f040b084cc23ba154cc1f3",
+      "bytes": 2774
+    },
+    "tools/phase5_public_live_affine_v2/output_chunks/FORMAT_AND_SCOPE.md": {
+      "sha256": "4bdbae4ac2c23a5e501c36a720dfa4c70e1ce77c5d253ab21c6d6f9458d10dd7",
+      "bytes": 8925
+    },
+    "tools/phase5_public_live_affine_v2/output_chunks/INTEGRATION_CONTRACT.md": {
+      "sha256": "f2a913ccd6d46cb58b8abd205c364cf9686615604a83f8bfdca4502e3257a9fd",
+      "bytes": 4082
+    },
+    "tools/phase5_public_live_affine_v2/output_chunks/SOURCE_REVIEW.md": {
+      "sha256": "150acb18430b9f41e2cde7b4d995db9bf4ff6041bfde637698ebff85c4d709cc",
+      "bytes": 3354
+    },
+    "tools/phase5_public_live_affine_v2/output_chunks/chunk_io.hpp": {
+      "sha256": "e3e8d7747efd3f0d12ebc091c682c9fe969e004ac1d9c0f37b6a1085fe1b0f03",
+      "bytes": 4337
+    },
+    "tools/phase5_public_live_affine_v2/output_chunks/chunk_reader.cpp": {
+      "sha256": "4039e50a6ab193a43343fdb5cf1ad26cd134a78be2f59f746252b2de0473e562",
+      "bytes": 12178
+    },
+    "tools/phase5_public_live_affine_v2/output_chunks/chunk_writer.cpp": {
+      "sha256": "b2e258ee1f5ce2fbf8fe06402dd29d32c8900ce1624d1cf2a06a924944f3dad5",
+      "bytes": 9143
+    },
+    "tools/phase5_public_live_affine_v2/output_chunks/numeric_chunks.hpp": {
+      "sha256": "67b5e17ae460001d5b9d59f0f0474edf6dcc6fefa483ed09b0fdbe030a964367",
+      "bytes": 2781
+    },
+    "tools/phase5_public_live_affine_v2/capture_inventory/CMakeLists.txt": {
+      "sha256": "6c844587a3739edc51b6f2c612fe611237a4637e56061aef10be0d941e4d72ef",
+      "bytes": 718
+    },
+    "tools/phase5_public_live_affine_v2/capture_inventory/DEFERRED_VERIFICATION.md": {
+      "sha256": "57b4e3966ba192cadef824a61d2099efd0bfa5ea008f8270e4808bef89af2884",
+      "bytes": 2686
+    },
+    "tools/phase5_public_live_affine_v2/capture_inventory/INTEGER_LEDGER_GATE.md": {
+      "sha256": "0b4ab7bdbac243c8bf476f64a8634b2bf27f5f53401e172d0ead2dc675c356a8",
+      "bytes": 5122
+    },
+    "tools/phase5_public_live_affine_v2/capture_inventory/SCHEMA_AND_BINDING.md": {
+      "sha256": "000d7ee825dcac4b8f499e4e1de11120ab1c59df6e8dc6bf8770d2733a36f63b",
+      "bytes": 9244
+    },
+    "tools/phase5_public_live_affine_v2/capture_inventory/SOURCE_REVIEW.md": {
+      "sha256": "da66a0996b253de58f0e02dd413157af2f3044c848ec2f0456e18113c5df19eb",
+      "bytes": 2884
+    },
+    "tools/phase5_public_live_affine_v2/capture_inventory/capture_inventory.cpp": {
+      "sha256": "de52a97fd4dc6a9e389bee6defa7a0ff76587f6af29cc26e57508c98622ea342",
+      "bytes": 23125
+    },
+    "tools/phase5_public_live_affine_v2/capture_inventory/capture_inventory.hpp": {
+      "sha256": "b8ade24df81adebeb30f61df9771e7d87ae7165f2061083893f8e6f0024efe68",
+      "bytes": 5801
+    },
+    "tools/phase5_public_live_affine_v2/capture_workspace/CMakeLists.txt": {
+      "sha256": "7a8526c1720d470da598f3ccaeeb7d76b133d8371593a893ddb4d54acb140a49",
+      "bytes": 715
+    },
+    "tools/phase5_public_live_affine_v2/capture_workspace/DEFERRED_VERIFICATION.md": {
+      "sha256": "3b48f090c34ecd9d1ce249357a3b360606677bd62e6c0001f2a0531a5b20c7a8",
+      "bytes": 2247
+    },
+    "tools/phase5_public_live_affine_v2/capture_workspace/INTEGRATION_SCOPE.md": {
+      "sha256": "14466b5b9de8d4cb3fbd7edae35967c91b47638de485a0ae5f47fd95b581d4e9",
+      "bytes": 2676
+    },
+    "tools/phase5_public_live_affine_v2/capture_workspace/PREPARTITION_CONTRACT.md": {
+      "sha256": "42a85ff3523dec78ec3aaa58135d1a8f7ff78cc62e2165dcd387bc34941bc702",
+      "bytes": 7546
+    },
+    "tools/phase5_public_live_affine_v2/capture_workspace/SOURCE_REVIEW.md": {
+      "sha256": "6842f350b4573e40c9e3064591027e35a97a7bed843d1f044e1975378b140beb",
+      "bytes": 2378
+    },
+    "tools/phase5_public_live_affine_v2/capture_workspace/capture_workspace.cpp": {
+      "sha256": "43a6e412cdfdaf2c318e362fe178b997cc8bfa9984467e0d1d4f197581bad8fe",
+      "bytes": 4475
+    },
+    "tools/phase5_public_live_affine_v2/capture_workspace/capture_workspace.hpp": {
+      "sha256": "7249b965fb15d06ae1043a97991f299393e90424b6d36850ace516621431ce98",
+      "bytes": 1902
+    },
+    "tools/phase5_public_live_affine_v2/capture_workspace/partition_internal.hpp": {
+      "sha256": "e71900e66b27ddc2d585f51833e2104a944978ae9ab979a0603fc04ce40009b6",
+      "bytes": 1098
+    }
+  },
+  "executions": {
+    "configure": 0,
+    "compile": 0,
+    "empty_kernel": 0,
+    "leaf": 0,
+    "original_consumer": 0,
+    "cost": 0,
+    "decoder": 0,
+    "catalogue": 0,
+    "driver": 0,
+    "writer": 0,
+    "readback": 0,
+    "forensic": 0,
+    "parser_fixture": 0,
+    "numeric_checks": 0,
+    "matrix_checks": 0,
+    "Model_constructor": 0,
+    "Model_metadata": 0,
+    "Model_rollout": 0,
+    "plant": 0,
+    "solver": 0,
+    "main": 0,
+    "scorer": 0
+  },
+  "validation": "Static genuineowner/generation/canonicalkeys/lifetime/failure/pairedsemantic/targetcomposition and SHA review only",
+  "implemented_scope": "Finite raw/compact/sealedretainedcost/originalcallback scalarbindings, optionalprivate perleafactualwrite+semanticreadback, readonly actualfaileddefinedspan inspector; no fullmetadata/sample/Dense/manifest/READY/driver",
+  "authority": "Privategenuine source/cost/partition/samecase plus actualliveappliedstatus, scalargetter generation, originalscope only; no callerrecord/SHA/count completeness; fullCapturefalse",
+  "retention": "Firstfailedcapture source attach retains partialbuffers evenalreadyrefused; independent readonlyforensic latch; private moveonly paired actualrole/key/shape/scope/origins/Write+Readoutcomes and limitedpervaluediagnostics; onepersistentaxis4ticket, beforefilecountlimit",
+  "remaining": [
+    "Independent static review/import/remote milestone backup",
+    "B2B2 remainingactualnumeric/metadata/sample/Dense/earlyfailure/coverage/manifest/rootREADY/completeflow",
+    "Independent source/build/SDK/FP/protocol/lifetime/mutation/grammar/fullnumeric and phase checks"
+  ],
+  "storage": {
+    "Mac_packet_verified": true,
+    "Mac_canonical_or_Git_modified_by_executor": false,
+    "Dell_copy_verified": false,
+    "Git_backup_verified": false,
+    "executor_write_scope": "Only requested /private/tmp/public_live_affine_v2_capture_leaves_stage3c2b2b1 source/doc/READY paths"
+  },
+  "full_capture_complete": false,
+  "full_flow_accepted": false,
+  "phase5": "NOT_ACCEPTED",
+  "phase6": "NOT_STARTED"
+}

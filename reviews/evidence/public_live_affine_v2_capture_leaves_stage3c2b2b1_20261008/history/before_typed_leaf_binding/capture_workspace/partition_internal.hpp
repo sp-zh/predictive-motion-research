@@ -10,7 +10,7 @@ class CapturePartitionState final {
   const std::shared_ptr<const void> source_origin;const SharedCaseBudget budget;const ResourcePlan plan;const FactorShape shape;
   const FileIdentity input;const std::string semantic_sha;CaptureWorkspaceObservation status;
   void reject(const char* why) noexcept{if(status.refused)return;status.refused=true;try{status.first_error=why?why:"CAPTURE_PARTITION_REFUSAL";}catch(...){}}
-  friend struct CaptureWorkspaceFactory;friend struct CaptureLeafFactory;friend struct CostInputFactory;friend struct CostFactory;
+  friend struct CaptureWorkspaceFactory;friend struct CostInputFactory;friend struct CostFactory;
   friend class phase5_public_live_affine_v2::CaptureWorkspaceGrant;
   friend class phase5_public_live_affine_v2::CaptureWorkspaceObserver;
 };

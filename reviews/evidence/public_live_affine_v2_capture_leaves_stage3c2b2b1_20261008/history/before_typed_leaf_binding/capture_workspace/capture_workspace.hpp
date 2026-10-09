@@ -1,7 +1,7 @@
 #pragma once
 #include "affine_assembly.hpp"
 namespace phase5_public_live_affine_v2 {
-namespace detail {class CapturePartitionState;struct CaptureWorkspaceFactory;struct CostInputFactory;struct CaptureLeafFactory;}
+namespace detail {class CapturePartitionState;struct CaptureWorkspaceFactory;struct CostInputFactory;}
 struct CaptureWorkspaceObservation {
   const char* policy="CAPTURE_WORKSPACE_PARTITION_1";
   Count catalogue_role_upper=0,ancillary_numeric_limit=32,cell_control_split_extra=0;
@@ -28,7 +28,7 @@ class CaptureWorkspaceGrant final {
  private:
   explicit CaptureWorkspaceGrant(std::shared_ptr<detail::CapturePartitionState>);
   std::shared_ptr<detail::CapturePartitionState> state_;
-  friend struct detail::CaptureWorkspaceFactory;friend struct detail::CostInputFactory;friend struct detail::CaptureLeafFactory;
+  friend struct detail::CaptureWorkspaceFactory;friend struct detail::CostInputFactory;
 };
 CaptureWorkspaceGrant prepareCaptureWorkspaceV1(const AffineAssemblyOutcome&);
 // A private source/case-bound precondition, no idlepool, buffer, slice or READY.

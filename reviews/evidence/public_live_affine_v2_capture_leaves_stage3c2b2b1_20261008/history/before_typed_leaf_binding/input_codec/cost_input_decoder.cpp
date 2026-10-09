@@ -222,7 +222,6 @@ CostDecodeOutcome& CostDecodeOutcome::operator=(CostDecodeOutcome&&) noexcept=de
 CostDecodeOutcome::~CostDecodeOutcome()=default;
 bool CostDecodeOutcome::hasCompleteCost() const noexcept{return !refused_&&state_&&state_->status.artifact_closed&&cost_&&cost_->hasCompleteCost();}
 QuadraticCostOutcome& CostDecodeOutcome::costOutcome(){need(static_cast<bool>(cost_),"cost ingest outcome not reached");return *cost_;}
-const QuadraticCostOutcome& CostDecodeOutcome::costOutcome() const{need(static_cast<bool>(cost_),"cost ingest outcome not reached");return *cost_;}
 const AffineAssemblyOutcome& CostDecodeOutcome::originalAssembly() const{return cost_?cost_->originalAssembly():original_;}
 const std::vector<CostTermLayout>& CostDecodeOutcome::parsedMetadataPrefix() const{
   if(cost_)return cost_->forensicInputRecipe().terms;need(static_cast<bool>(state_),"decoder absent");return state_->partial.terms;

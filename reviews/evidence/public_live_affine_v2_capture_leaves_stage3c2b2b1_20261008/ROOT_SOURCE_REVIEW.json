@@ -1,0 +1,78 @@
+{
+  "decision": "PASS_SOURCE_LIMITED_GENUINE_NUMERIC_LEAF_AND_ORIGINAL_CAPTURE_CORE_ONLY",
+  "recorded_utc": "2026-10-09T03:08:57.928693+00:00",
+  "prerequisite_backup": "ba1ce53855605ad1118a4a551a8f9f4fa56bb752",
+  "packet_READY_sha256": "726148f21be0b4423496dd499549b2ac68d5dc279a7a34fe371a8eea8d1afb69",
+  "verified_payload_count": 44,
+  "verified_preimport_guard_count": 67,
+  "criteria": "ROOT_REVIEW_CRITERIA.json",
+  "validation": "Independent static source/borrowed-view/private identities/key/lifetime/first-failure/paired readback and CMake composition review plus SHA checks only; no source callbacks/compiler/parser/IO/matrix/Model execution",
+  "resolved_findings": [
+    {
+      "id": "FAILED_SOURCE_TRANSFER",
+      "resolution": "First nonactive returned outcome is retained even after session capture refusal; original refusal remains and partial cost buffers are not lost with a temporary. Existing owner is not replaced."
+    },
+    {
+      "id": "ALL_SESSION_REFUSALS",
+      "resolution": "Original role/quota/guard, defined-region guard, close, issuance and view access failures latch session first error; swallowed nested refusal cannot leave outer success."
+    },
+    {
+      "id": "PAIRED_ATTEMPT_EVIDENCE",
+      "resolution": "Private move-only actual role/key/scope/origin/partition attempt retains write plus optional readback outcome and bounded expected/actual kind/bits/index diagnostics. Expected shape snapshot ticket persists until a successful low-level receipt replaces it; failures and provisional files retained."
+    },
+    {
+      "id": "CANONICAL_ROLE_KEYS",
+      "resolution": "Explicit supported family key table rejects invalid global/indexed/map/control/term/addition keys instead of accepting invented indices or silently resetting them."
+    },
+    {
+      "id": "REFUSED_FORENSIC_ACCESS",
+      "resolution": "Read-only retained-source/defined-region inspection remains possible after failure without restoring normal capture/export validity, changing first error or minting IO authority."
+    }
+  ],
+  "observations": [
+    "Genuine session prepares against same actual affine origin and private workspace grant; original callbacks require actual original scope/source/cost anchor/partition, and attached returned owner retains actual CostDecodeOutcome tree.",
+    "Supported primitive raw/native/state/friction/indices/controls, held affine fields and sealed cost/coefficient fields use actual stored source getters. Original used/evaluation fields borrow live original callback; no term/canonical replay or Model query. Derivative half-first scalar Hsym is explicit, raw H remains separate.",
+    "Noncopy leaf binds callback generation and actual type/shape/traversal/classification. Defined regions expose only C1 defined spans and individual strided write-frontier counters; placeholders/nonfinite data are forensic typed IEEE bits, unused capacity excluded.",
+    "Optional single-leaf write/readback requires actual same live applied nonrefused partition, actual normal budget reservations and receipt check before file creation. Semantic readback compares scalar kind and exact IEEE/integer bits, not merely SHA/count.",
+    "Shared target dependency guards allow composed source targets without duplicate input/foundation creation; standalone/configuration behavior is deferred, not compiler-verified."
+  ],
+  "remaining_obligations": [
+    "Complete required role coverage, metadata/profile/rosters/early-failure variants, once-per-sample composition, full actual Dense/selector/frontier leaf semantics and canonical concatenation coverage remain unbound/deferred where declared.",
+    "Full manifest/READY writer and independent whole closure reader, duplicate/missing/overlap checks, source semantic/provenance and exact actual aggregate metadata/byte/resource-flow enforcement are not provided by single-leaf success.",
+    "Full capture remains false; source/callback availability and verified chunk counters do not establish complete evidence or accepted research. Trusted callbacks must not save destroyed borrowed objects or unbudgeted arrays.",
+    "Independent exact source/build/runtime freeze and deferred lifetime/reentry/shortwrite/mutation/signed-zero/failure/grammar tests remain unrun; original checker/freezes/failures and phase gates preserved."
+  ],
+  "executions": {
+    "configure": 0,
+    "compile": 0,
+    "empty_kernel": 0,
+    "leaf": 0,
+    "original_consumer": 0,
+    "cost": 0,
+    "decoder": 0,
+    "catalogue": 0,
+    "driver": 0,
+    "writer": 0,
+    "readback": 0,
+    "forensic": 0,
+    "parser_fixture": 0,
+    "numeric_checks": 0,
+    "matrix_checks": 0,
+    "Model_constructor": 0,
+    "Model_metadata": 0,
+    "Model_rollout": 0,
+    "plant": 0,
+    "solver": 0,
+    "main": 0,
+    "scorer": 0
+  },
+  "storage": {
+    "Mac_packet": "/private/tmp/public_live_affine_v2_capture_leaves_stage3c2b2b1",
+    "canonical_source": "tools/phase5_public_live_affine_v2/capture_leaves",
+    "history": "reviews/evidence/public_live_affine_v2_capture_leaves_stage3c2b2b1_20261008/history",
+    "Dell_copy_verified": false,
+    "Git_backup": "Pending commit and remote verification"
+  },
+  "phase5": "NOT_ACCEPTED",
+  "phase6": "NOT_STARTED"
+}

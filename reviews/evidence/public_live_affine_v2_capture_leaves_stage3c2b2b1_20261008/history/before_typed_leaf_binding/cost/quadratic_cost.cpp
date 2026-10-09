@@ -108,7 +108,6 @@ struct CostStorage {
   void reject(const char* why) noexcept{if(poisoned)return;poisoned=true;trace.complete=false;try{error=why?why:"COST_REFUSAL";}catch(...){error.clear();}}
 };
 struct CostFactory {
-  static std::shared_ptr<CapturePartitionState> partition(const CostStorage& p){return p.anchor->recipe.capture_partition_;}
   static std::shared_ptr<const void> origin(const CostStorage& p){return p.anchor->assembly.assembly().captureOriginToken();}
   static FactorShape shape(const CostInputRecipe& input,CompactAffineAssembly& assembly){
     FactorShape f;f.terms=input.terms.size();need(f.terms<=32,"term roster cap");
@@ -298,8 +297,6 @@ detail::CostStorage& view(detail::CostStorage* p){need(p&&!p->poisoned&&p->callb
 CostEvaluationView::CostEvaluationView(detail::CostStorage* p):storage_(p){}
 std::shared_ptr<const void> CostEvaluationView::captureOriginToken() const{return detail::CostFactory::origin(view(storage_));}
 std::shared_ptr<const void> CostEvaluationView::captureCostToken() const{return std::static_pointer_cast<const void>(view(storage_).anchor);}
-const AffineAssemblyOutcome& CostEvaluationView::captureSource() const{return view(storage_).anchor->assembly;}
-std::shared_ptr<detail::CapturePartitionState> CostEvaluationView::capturePartition() const{return detail::CostFactory::partition(view(storage_));}
 bool CostEvaluationView::originalConsumerScope() const{return view(storage_).original_consumer&&view(storage_).canonical_evaluation;}
 double CostEvaluationView::directValue() const{return view(storage_).direct_value;}
 double CostEvaluationView::condensedValue() const{return view(storage_).condensed_value;}
@@ -310,8 +307,6 @@ double CostEvaluationView::condensedHessian(Count r,Count c) const{auto& p=view(
 UsedTermView::UsedTermView(detail::CostStorage* p,Count k):storage_(p),term_(k),evaluation_(p){}
 std::shared_ptr<const void> UsedTermView::captureOriginToken() const{return detail::CostFactory::origin(view(storage_));}
 std::shared_ptr<const void> UsedTermView::captureCostToken() const{return std::static_pointer_cast<const void>(view(storage_).anchor);}
-const AffineAssemblyOutcome& UsedTermView::captureSource() const{return view(storage_).anchor->assembly;}
-std::shared_ptr<detail::CapturePartitionState> UsedTermView::capturePartition() const{return detail::CostFactory::partition(view(storage_));}
 bool UsedTermView::originalConsumerScope() const{return view(storage_).original_consumer&&!view(storage_).canonical_evaluation;}
 Count UsedTermView::rows() const{auto& p=view(storage_);return p.sealed_recipe.terms.at(term_).rows;}
 double UsedTermView::usedFactor(Count r,Count c) const{auto& p=view(storage_);bounds(r,rows());bounds(c,p.dy);return p.usedF(r,c);}
@@ -338,11 +333,6 @@ double CompleteQuadraticCost::inputLinear(Count k,Count c) const{auto& p=present
 double CompleteQuadraticCost::inputConstant(Count k) const{auto& p=present(storage_);bounds(k,p.shape.terms);return p.input()[p.offsets[k].c0];}
 double CompleteQuadraticCost::inputAdditionCoefficient(Count k,Count a,Count r,Count c) const{auto& p=present(storage_);bounds(k,p.shape.terms);bounds(a,p.offsets[k].additions.size());bounds(r,p.sealed_recipe.terms[k].additions[a].parent_rows.size());bounds(c,30);return p.input()[p.offsets[k].additions[a]+mul(r,30)+c];}
 double CompleteQuadraticCost::evaluationControl(Count c) const{auto& p=present(storage_);bounds(c,p.du);return p.work()[c];}
-double CompleteQuadraticCost::retainedFactorControl(Count k,Count r,Count c) const{auto& p=present(storage_);bounds(k,p.shape.terms);bounds(r,p.sealed_recipe.terms[k].rows);bounds(c,p.du);return p.Fc(p.offsets[k].row_base+r,c);}
-double CompleteQuadraticCost::retainedFactorOffset(Count k,Count r) const{auto& p=present(storage_);bounds(k,p.shape.terms);bounds(r,p.sealed_recipe.terms[k].rows);return p.fc(p.offsets[k].row_base+r);}
-double CompleteQuadraticCost::retainedRawH(Count k,Count r,Count c) const{auto& p=present(storage_);bounds(k,p.shape.terms);bounds(r,p.du);bounds(c,p.du);return p.H(k,r,c);}
-double CompleteQuadraticCost::retainedGradientCoefficient(Count k,Count c) const{auto& p=present(storage_);bounds(k,p.shape.terms);bounds(c,p.du);return p.g(k,c);}
-double CompleteQuadraticCost::retainedConstantCoefficient(Count k) const{auto& p=present(storage_);bounds(k,p.shape.terms);return p.constant(k);}
 double CompleteQuadraticCost::sumRawH(Count r,Count c) const{auto& p=present(storage_);bounds(r,p.du);bounds(c,p.du);return p.sumH(r,c);}
 double CompleteQuadraticCost::sumGradientCoefficient(Count c) const{auto& p=present(storage_);bounds(c,p.du);return p.sumg(c);}
 double CompleteQuadraticCost::sumConstantCoefficient() const{return present(storage_).sumc();}
@@ -378,7 +368,6 @@ QuadraticCostOutcome::~QuadraticCostOutcome()=default;
 std::shared_ptr<const void> QuadraticCostOutcome::captureCostToken() const{return std::static_pointer_cast<const void>(anchor_);}
 bool QuadraticCostOutcome::hasCompleteCost() const noexcept{return !refused_&&cost_&&cost_->complete();}
 CompleteQuadraticCost& QuadraticCostOutcome::cost(){need(hasCompleteCost(),"complete cost refused/moved");return *cost_;}
-const CompleteQuadraticCost& QuadraticCostOutcome::cost() const{need(hasCompleteCost(),"complete cost refused/moved");return *cost_;}
 const AffineAssemblyOutcome& QuadraticCostOutcome::originalAssembly() const{return anchor_?anchor_->assembly:original_;}
 const CostInputRecipe& QuadraticCostOutcome::originalInputRecipe() const{
   if(cost_&&cost_->storage_)return cost_->storage_->sealed_recipe;
