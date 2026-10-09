@@ -1,0 +1,68 @@
+{
+  "decision": "PASS_ONE_FOUNDATION_TEST_LINK_ONLY_NOT_RUNTIME_OR_PHASE_ACCEPTANCE",
+  "baseline": "6d5d4fc0d0173e3b0f025b599128e43c747f66a6",
+  "ready_sha256": "e530a0ed26fdd6750fff7f2d55b42198977747394baf0efd646f70e0bdeca844",
+  "original_payloads_verified": 30,
+  "production_and_prior_checkpoint_guards_verified": 131,
+  "link_invocations": 1,
+  "exit_code": 0,
+  "timeout_or_output_stop": false,
+  "elapsed_seconds": 0.07990515499841422,
+  "raw_stdout_bytes": 0,
+  "raw_stderr_bytes": 0,
+  "binary": {
+    "bytes": 138040,
+    "sha256": "4089ac4be17271437cd7969d866ac6ced20362ae2b49f538968e9f6aef70060f",
+    "ELF64_type": "ET_DYN",
+    "machine": "x86-64",
+    "DF_1_PIE_flag": true,
+    "entry": 44816,
+    "program_headers": 13,
+    "sections": 33,
+    "DT_NEEDED": [
+      "libstdc++.so.6",
+      "libgcc_s.so.1",
+      "libc.so.6"
+    ],
+    "PT_INTERP": [
+      "/lib64/ld-linux-x86-64.so.2"
+    ],
+    "RPATH_RUNPATH": [],
+    "unresolved_project_symbols": 0
+  },
+  "map": {
+    "bytes": 2580943,
+    "sha256": "345a2da8a84c269014e5643249d30254f1638c9aea08ddcaa20b9bb7d42d7684",
+    "actual_foundation_archive_members": [
+      "foundation_resources.cpp.o"
+    ],
+    "actual_LOAD_lines": 23,
+    "distinct_LOAD_paths": 18,
+    "first_observed_requested_alias_paths": 6,
+    "all_resolved_targets_match_prefrozen_identities": true
+  },
+  "prepost_file_identities_matched": 37,
+  "named_specs_absence_guards_checked": 2,
+  "independent_review": [
+    "All sealed controls and actual link plan match the reviewed source;single successful invocation,empty raw streams",
+    "Original15-file raw archive and14 payloads verified against retained copies",
+    "Independent ELF byte parser confirms default PIE x86-64,exact3 standard DT_NEEDED,observed interpreter,no RPATH/RUNPATH or unresolved project symbols",
+    "Actual2.58MB map independently parsed:only resources archive member extracted;18 LOAD identities match current records or exact resolved aliases",
+    "Six lexical paths first observed after link keep post-observation labels;no retrospective prefreeze claim",
+    "37 input records identical before/after;originals/readonly inputs preserved;no executable/library probe ran"
+  ],
+  "compiler_source_compilation_calls": 0,
+  "test_case_groups_executed": 0,
+  "project_program_runs": 0,
+  "project_function_calls": 0,
+  "next_scope": "Preparation only:freeze successful binary and bounded66-case run protocol/native file identities;no runtime before separate review,backup and dispatch",
+  "limits": [
+    "Final linking does not validate testcase values,exceptions,ownership or runtime/native ABI",
+    "Finite map/ELF/file records do not prove full loader/OS/process/readset/RSS closure",
+    "Only foundation test binary was linked;Model/controller/plant/main/scorer gates remain closed"
+  ],
+  "publication": "Compact authored root review/storage only;binary,map,raw control/native identities excluded",
+  "phase5": "NOT_ACCEPTED",
+  "phase6": "NOT_STARTED",
+  "all_previous_sources_failures_and_immutable_checkers_preserved": true
+}
