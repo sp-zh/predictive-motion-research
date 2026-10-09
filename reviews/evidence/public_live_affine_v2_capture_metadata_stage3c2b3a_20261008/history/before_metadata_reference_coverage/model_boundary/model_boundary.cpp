@@ -252,7 +252,7 @@ void verifyLoadedLibraries(const std::vector<FileIdentity>& libraries) {
 namespace detail {
 struct ForecastReleaseState {
   FileIdentity review,protocol,producer,xml,constants,policy,expected_metadata,invocation;
-  std::vector<FileIdentity> files,libraries;std::vector<std::string> file_roles;
+  std::vector<FileIdentity> files,libraries;
   std::string attempt_claim_path;
   Count prepare_attempts=0,open_attempts=0,forecast_attempts=0;
   Count constructor_attempts=0,metadata_attempts=0,rollout_attempts=0;
@@ -329,7 +329,7 @@ struct ForecastFactory {
     for(const auto& item:entries) {auto a=artifact(item);need(by_role.emplace(a.role,verify(a.identity)).second,"duplicate artifact role");}
     for(const char* role:{"build_manifest","source_closure","xml","constants","sdk_manifest","derivative_policy","expected_metadata","invocation"})
       need(by_role.count(role)==1,"missing complete profile artifact");
-    for(const auto& pair:by_role){need(pair.first.size()<=128,"bounded retained artifact role");r->file_roles.push_back(pair.first);r->files.push_back(pair.second);}
+    for(const auto& pair:by_role)r->files.push_back(pair.second);
     r->xml=by_role.at("xml");r->constants=by_role.at("constants");r->policy=by_role.at("derivative_policy");
     r->expected_metadata=by_role.at("expected_metadata");r->invocation=by_role.at("invocation");
     auto build=readDocument(by_role.at("build_manifest"));
@@ -347,7 +347,7 @@ struct ForecastFactory {
       "capture_inventory.hpp","capture_inventory.cpp","capture_inventory_CMakeLists",
       "capture_workspace.hpp","partition_internal.hpp","capture_workspace.cpp","capture_workspace_CMakeLists",
       "capture_leaves.hpp","capture_leaves.cpp","capture_leaves_CMakeLists",
-      "remaining_numeric_support_contract","capture_metadata.hpp","capture_metadata_internal.inc","capture_metadata_contract",
+      "remaining_numeric_support_contract",
       "augmented_extension.hpp","augmented_extension.cpp","augmented_extension_CMakeLists",
       "augmented_value.hpp","augmented_value.cpp","physical_derivative.hpp","physical_derivative.cpp","physical_derivative_CMakeLists",
       "physical_value.hpp","physical_value.cpp","physical_value_CMakeLists","coupled_friction_box.cpp"};
@@ -589,12 +589,6 @@ const FileIdentity& OwnedPublicForecast::reviewRecordIdentity() const{return pre
 const FileIdentity& OwnedPublicForecast::protocolIdentity() const{return present(storage_).profile->release->protocol;}
 CaseBudget& OwnedPublicForecast::normalizationBudget(){return present(storage_).invocation->budget;}
 const ResourcePlan& OwnedPublicForecast::normalizationPlan() const{return present(storage_).invocation->plan;}
-std::string_view OwnedPublicForecast::verifiedArtifactRole(Count k) const{return present(storage_).profile->release->file_roles.at(k);}
-const std::vector<FileIdentity>& OwnedPublicForecast::verifiedLoadedLibraries() const{return present(storage_).profile->release->libraries;}
-std::string_view OwnedPublicForecast::reviewedAttemptClaimPath() const{return present(storage_).profile->release->attempt_claim_path;}
-ReleaseAttemptFacts OwnedPublicForecast::releaseAttemptFacts() const{const auto& r=*present(storage_).profile->release;return {r.prepare_attempts,r.open_attempts,r.forecast_attempts,r.constructor_attempts,r.metadata_attempts,r.rollout_attempts};}
-std::string_view OwnedPublicForecast::verifiedUnits() const{(void)present(storage_);return units;}
-std::string_view OwnedPublicForecast::verifiedCertificateName() const{(void)present(storage_);return NativeModel::certificate_name;}
 const char* OwnedPublicForecast::normalizationCertificate() const{(void)present(storage_);return NativeModel::certificate_name;}
 const FactorShape& OwnedPublicForecast::costShape() const{return present(storage_).invocation->factors;}
 const FileIdentity& OwnedPublicForecast::costInputIdentity() const{return present(storage_).invocation->cost_input;}

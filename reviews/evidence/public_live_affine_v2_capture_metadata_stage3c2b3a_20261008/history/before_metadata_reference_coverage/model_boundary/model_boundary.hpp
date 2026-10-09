@@ -69,7 +69,6 @@ class ModelOpenOutcome final {
   std::unique_ptr<detail::OpenStorage> storage_;
   friend struct detail::ForecastFactory;
 };
-struct ReleaseAttemptFacts {Count prepare=0,open=0,forecast=0,constructor=0,metadata=0,rollout=0;};
 class OwnedPublicForecast final {
  public:
   OwnedPublicForecast(const OwnedPublicForecast&) = delete;
@@ -89,13 +88,6 @@ class OwnedPublicForecast final {
   const FileIdentity& currentProducerIdentity() const;
   const FileIdentity& reviewRecordIdentity() const;
   const FileIdentity& protocolIdentity() const;
-  std::string_view verifiedArtifactRole(Count index) const;
-  const std::vector<FileIdentity>& verifiedLoadedLibraries() const;
-  std::string_view reviewedAttemptClaimPath() const;
-  ReleaseAttemptFacts releaseAttemptFacts() const;
-  std::string_view verifiedUnits() const;
-  std::string_view verifiedCertificateName() const;
-
  private:
   CaseBudget& normalizationBudget();
   const ResourcePlan& normalizationPlan() const;

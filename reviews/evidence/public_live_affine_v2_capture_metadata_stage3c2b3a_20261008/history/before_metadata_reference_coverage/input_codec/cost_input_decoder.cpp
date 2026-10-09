@@ -227,7 +227,6 @@ const AffineAssemblyOutcome& CostDecodeOutcome::originalAssembly() const{return 
 const std::vector<CostTermLayout>& CostDecodeOutcome::parsedMetadataPrefix() const{
   if(cost_)return cost_->forensicInputRecipe().terms;need(static_cast<bool>(state_),"decoder absent");return state_->partial.terms;
 }
-const CostDecodeObservation* CostDecodeOutcome::captureObservation() const noexcept{return state_?&state_->status:nullptr;}
 CostDecodeObservation CostDecodeOutcome::observation() const{if(!state_)return {};auto out=state_->status;
   if(state_->hash&&state_->status.hash_valid)out.physical_prefix_sha256=state_->digest();return out;}
 std::string_view CostDecodeOutcome::refusal() const noexcept{if(cost_&&!cost_->hasCompleteCost())return cost_->refusal();return refused_?(failure_.empty()?std::string_view("DECODER_REFUSAL_UNRECORDED_DETAIL"):std::string_view(failure_)):std::string_view{};}

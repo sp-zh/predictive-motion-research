@@ -1,0 +1,17 @@
+{
+  "scope": "Static integer source-work counterexample, no C++/coverage/matrix/Model execution",
+  "draft": "capture_metadata_internal.inc all-pairs duplicate pass",
+  "N": 20,
+  "T": 200,
+  "S": 400,
+  "K": 0,
+  "J": 0,
+  "mode": "Compact",
+  "actual_numeric_key_count": 11579,
+  "key_count_expression": "1+2N+T+7S+11(S+T+N)+3(N+1)+4+4S+1+11+N+19",
+  "duplicate_comparisons": 67030831,
+  "charged_slots_per_comparison": 20,
+  "duplicate_pass_charges": 1340616620,
+  "hard_case_charges": 512000000,
+  "conclusion": "Duplicate pass alone exceeds case cap before any other capture charges or full-key lookup; replace with bounded actual sorted/indexed checking or explicitly unsupported policy, no cap growth."
+}

@@ -1,0 +1,51 @@
+{
+  "validation": "Python stdlib integer expressions only; no heapsort/lookup/metadata/reference/coverage/C++/numeric matrix execution",
+  "default_counterexample": {
+    "N": 20,
+    "T": 200,
+    "S": 400,
+    "K": 0,
+    "J": 0,
+    "mode": "Compact",
+    "actual_numeric_attempts": 11579,
+    "obsolete_all_pairs": 67030831,
+    "obsolete_duplicate_charges": 1340616620,
+    "case_hard_cap": 512000000
+  },
+  "repaired_schedule": {
+    "algorithm": "iterative in-place heapsort, adjacent duplicate and shared lower-bound binary lookup",
+    "persistent_new_numeric_or_index_arrays": 0,
+    "moves": "existing record axis ticket travels with move-only actual record; immutable original attempt_sequence retained",
+    "transient_slots": {
+      "sort": 40,
+      "metadata": 40,
+      "metadata_plus_string_token": 41,
+      "coverage_plus_existing_catalogue": 40
+    },
+    "sort_upper_expression": "20*4*n*(h+1) + 120*2*n*(h+1) + 20*(n-1) + 40; h=n.bit_length(); conservative bounds include extraction swaps",
+    "lookup_upper_expression": "20*(h+1) + 20; no scan of entire attempt vector",
+    "default_h": 14,
+    "default_sort_charge_upper": 55810800,
+    "default_one_lookup_charge_upper": 320,
+    "default_n_lookups_upper": 3705280,
+    "max_closed_receipt_limit": 52831,
+    "max_h": 16,
+    "max_sort_charge_upper": 288457280,
+    "max_n_lookups_upper": 19019160
+  },
+  "limitations": [
+    "These are conservative isolated metadata lookup/sort logical-work bounds, not full cost/decoder/sample/IO/serialization/RSS admission.",
+    "No extra arrays, cap increases or prepaid fictional pool. Sort ticket dies before new metadata/coverage frame; all real ledger reserve/charge may refuse.",
+    "Each new actual export dirties ordering; further inspection may re-sort, spending additional actual charges.",
+    "Whole pipeline cumulative/live/output/metadata proof remains mandatory; no FullFlow acceptance."
+  ],
+  "executions": {
+    "sort": 0,
+    "lookup": 0,
+    "metadata": 0,
+    "reference": 0,
+    "coverage": 0,
+    "C++": 0,
+    "Model": 0
+  }
+}

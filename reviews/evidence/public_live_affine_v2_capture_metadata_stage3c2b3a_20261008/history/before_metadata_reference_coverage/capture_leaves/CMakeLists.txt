@@ -14,4 +14,4 @@ target_compile_features(public_live_affine_v2_capture_leaves PUBLIC cxx_std_17)
 target_include_directories(public_live_affine_v2_capture_leaves PUBLIC ${CMAKE_CURRENT_SOURCE_DIR})
 target_link_libraries(public_live_affine_v2_capture_leaves PUBLIC public_live_affine_v2_capture_inventory public_live_affine_v2_capture_workspace public_live_affine_v2_output_chunks)
 target_compile_options(public_live_affine_v2_capture_leaves PRIVATE -Wall -Wextra -Wpedantic)
-# Limited genuine leaves and borrowed metadata/reference/obligation core only. No driver/root manifest/READY.
+# Limited actual leaves/original callback only. No driver/root manifest/READY.

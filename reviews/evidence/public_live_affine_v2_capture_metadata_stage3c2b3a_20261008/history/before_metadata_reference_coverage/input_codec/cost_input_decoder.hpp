@@ -35,7 +35,6 @@ class CostDecodeOutcome final {
   CostDecodeObservation observation() const; // Bounded metadata only, no numeric array copy.
   std::string_view refusal() const noexcept;
  private:
-  const CostDecodeObservation* captureObservation() const noexcept; // Borrow held raw status, no digest/string copy.
   explicit CostDecodeOutcome(AffineAssemblyOutcome&&) noexcept;
   AffineAssemblyOutcome original_;FileIdentity requested_;
   std::shared_ptr<detail::CostDecoderState> state_;

@@ -74,7 +74,6 @@ class CaptureInventoryOwner final {
   void withRequirements(const std::function<void(const RequiredField&)>&) const;
   std::string_view admissionRefusal() const noexcept;
  private:
-  const OriginalCaptureObservation* captureOriginalObservation() const noexcept;
   explicit CaptureInventoryOwner(CostDecodeOutcome&&);
   CostDecodeOutcome original_;std::shared_ptr<detail::OriginalCaptureState> original_gate_;std::unique_ptr<detail::CaptureInventoryStorage> storage_;
   std::string reason_;bool refused_=false;friend struct detail::CaptureInventoryFactory;friend struct detail::CaptureLeafFactory;

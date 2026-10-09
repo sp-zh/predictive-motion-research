@@ -23,8 +23,8 @@ struct CaptureLeafState {
   std::vector<BoundLeafAttempt> attempts;bool attempts_sorted=false;
   CaptureLeafState(std::shared_ptr<const void> origin,std::shared_ptr<CapturePartitionState> p,SharedCaseBudget b)
     :source_origin(std::move(origin)),partition(std::move(p)),budget(std::move(b)){}
-  void reject(const char* why) noexcept{if(evidence_active)rejectEvidence(why);if(status.refused)return;status.refused=true;try{status.first_error=why?why:"LEAF_CAPTURE_REFUSAL";}catch(...){}}
-  void rejectForensic(const char* why) noexcept{if(evidence_active)rejectEvidence(why);if(forensic.refused)return;forensic.refused=true;try{forensic.first_error=why?why:"FORENSIC_BORROW_REFUSAL";}catch(...){}}
+  void reject(const char* why) noexcept{if(status.refused)return;status.refused=true;try{status.first_error=why?why:"LEAF_CAPTURE_REFUSAL";}catch(...){}}
+  void rejectForensic(const char* why) noexcept{if(forensic.refused)return;forensic.refused=true;try{forensic.first_error=why?why:"FORENSIC_BORROW_REFUSAL";}catch(...){}}
   void rejectEvidence(const char* why) noexcept{if(evidence_refused)return;evidence_refused=true;try{evidence_error=why?why:"EVIDENCE_BORROW_REFUSAL";}catch(...){}}
   void evidenceHealthy() const{need(!evidence_refused,evidence_error.empty()?"evidence first refusal retained":evidence_error.c_str());}
   void forensicHealthy() const{need(!forensic.refused,forensic.first_error.empty()?"forensic first refusal retained":forensic.first_error.c_str());}
@@ -270,7 +270,7 @@ struct CaptureLeafFactory {
     }catch(const std::exception& e){p->reject(e.what());throw;}catch(...){p->reject("NONSTANDARD_SAMPLE_LEAF_BIND_FAILURE");throw;}
   }
   static void streamSamples(std::shared_ptr<CaptureLeafState> p,const std::function<void(const SampleLeafBatch&)>& sink){
-    try{need(!p->evidence_active,"sample sequence inside evidence borrow");const bool attempted=p->status.samples_attempted;p->status.samples_attempted=true;
+    try{const bool attempted=p->status.samples_attempted;p->status.samples_attempted=true;
       p->healthy();need(!attempted&&p->owner&&p->status.attached&&!p->original_active&&!p->sample_active&&!p->leaf_active&&!p->forensic_active&&!p->evidence_active&&sink,"sample sequence missing/reused/reentrant");
       const auto frozen_sink=sink;p->healthy();need(static_cast<bool>(frozen_sink),"frozen sample callback empty");
       applied(*p);const auto& a=p->owner->genuineSource().originalAssembly();const auto& samples=a.originalNormalization().maps().samples();

@@ -20,11 +20,11 @@ struct CaptureLeafState {
   const SampleAffineView* sample=nullptr;bool sample_active=false;Count current_sample=0,sample_cell=0,sample_tick=0,sample_cycle=0,sample_half=0;
   const UsedTermView* term=nullptr;const CostEvaluationView* canonical=nullptr;const AffineAssemblyOutcome* original_source=nullptr;
   CaptureLeafObservation status;ForensicBorrowObservation forensic;bool forensic_active=false;bool original_active=false,leaf_active=false;Count generation=0,metadata_payload=0;bool evidence_active=false,evidence_refused=false,string_active=false;Count evidence_generation=0;std::string evidence_error;
-  std::vector<BoundLeafAttempt> attempts;bool attempts_sorted=false;
+  std::vector<BoundLeafAttempt> attempts;
   CaptureLeafState(std::shared_ptr<const void> origin,std::shared_ptr<CapturePartitionState> p,SharedCaseBudget b)
     :source_origin(std::move(origin)),partition(std::move(p)),budget(std::move(b)){}
-  void reject(const char* why) noexcept{if(evidence_active)rejectEvidence(why);if(status.refused)return;status.refused=true;try{status.first_error=why?why:"LEAF_CAPTURE_REFUSAL";}catch(...){}}
-  void rejectForensic(const char* why) noexcept{if(evidence_active)rejectEvidence(why);if(forensic.refused)return;forensic.refused=true;try{forensic.first_error=why?why:"FORENSIC_BORROW_REFUSAL";}catch(...){}}
+  void reject(const char* why) noexcept{if(status.refused)return;status.refused=true;try{status.first_error=why?why:"LEAF_CAPTURE_REFUSAL";}catch(...){}}
+  void rejectForensic(const char* why) noexcept{if(forensic.refused)return;forensic.refused=true;try{forensic.first_error=why?why:"FORENSIC_BORROW_REFUSAL";}catch(...){}}
   void rejectEvidence(const char* why) noexcept{if(evidence_refused)return;evidence_refused=true;try{evidence_error=why?why:"EVIDENCE_BORROW_REFUSAL";}catch(...){}}
   void evidenceHealthy() const{need(!evidence_refused,evidence_error.empty()?"evidence first refusal retained":evidence_error.c_str());}
   void forensicHealthy() const{need(!forensic.refused,forensic.first_error.empty()?"forensic first refusal retained":forensic.first_error.c_str());}
@@ -72,7 +72,7 @@ struct CaptureLeafFactory {
       need(root.size()<=4096&&name.size()<=128,"bounded leaf export metadata");
       p->metadata_payload=add(p->metadata_payload,add(add(root.size(),name.size()),256));need(p->metadata_payload<=ResourcePolicyV2::metadata_bytes,"retained receipt metadata payload cap");
       BoundLeafAttempt pending;pending.source_origin_=p->source_origin;pending.cost_origin_=p->actual_cost_origin;pending.partition_=p->partition;
-      pending.attempt_sequence_=p->status.receipt_attempts;pending.storage_traversal_=leaf.info().traversal;pending.assignment_traversal_=leaf.info().assignment_traversal;pending.computed_state_=leaf.info().state;pending.generation_=leaf.binding_->generation;
+      pending.storage_traversal_=leaf.info().traversal;pending.assignment_traversal_=leaf.info().assignment_traversal;pending.computed_state_=leaf.info().state;pending.generation_=leaf.binding_->generation;
       pending.role_=leaf.info().role;pending.primary_=leaf.info().primary;pending.secondary_=leaf.info().secondary;
       pending.original_scope_=p->original_active;pending.canonical_scope_=p->canonical!=nullptr;pending.sample_scope_=p->sample_active;pending.sample_cell_=p->sample_cell;pending.sample_tick_=p->sample_tick;pending.sample_cycle_=p->sample_cycle;pending.sample_half_=p->sample_half;
       // Persist ONE actual shape snapshot/ticket even if low-level admission fails.
@@ -82,7 +82,7 @@ struct CaptureLeafFactory {
       spec.kind=leaf.info().kind;spec.classification=leaf.info().classification;
       spec.dimensions.assign(leaf.info().dimensions.begin(),leaf.info().dimensions.begin()+leaf.info().rank);
       pending.write_.record.count=leaf.info().count;pending.write_.record.root_path=root;pending.write_.record.encoding=p->budget.numericEncoding();
-      p->attempts_sorted=false;p->attempts.push_back(std::move(pending));const auto slot=p->attempts.size()-1;++p->status.receipt_attempts;if(ancillary)++p->status.ancillary_receipt_attempts;auto& attempt=p->attempts[slot];
+      p->attempts.push_back(std::move(pending));const auto slot=p->attempts.size()-1;++p->status.receipt_attempts;if(ancillary)++p->status.ancillary_receipt_attempts;auto& attempt=p->attempts[slot];
       auto written=writeProvisionalNumericChunk(p->budget,root,attempt.write_.record.spec,[&leaf](Count i){return leaf.scalar(i);});
       if(written.record.axes_owner_)attempt.write_=std::move(written); // Existing expected shape dies before its old ticket.
       else {attempt.write_.observation=std::move(written.observation);attempt.write_.record.bytes=written.record.bytes;attempt.write_.record.sha256=std::move(written.record.sha256);}
@@ -270,7 +270,7 @@ struct CaptureLeafFactory {
     }catch(const std::exception& e){p->reject(e.what());throw;}catch(...){p->reject("NONSTANDARD_SAMPLE_LEAF_BIND_FAILURE");throw;}
   }
   static void streamSamples(std::shared_ptr<CaptureLeafState> p,const std::function<void(const SampleLeafBatch&)>& sink){
-    try{need(!p->evidence_active,"sample sequence inside evidence borrow");const bool attempted=p->status.samples_attempted;p->status.samples_attempted=true;
+    try{const bool attempted=p->status.samples_attempted;p->status.samples_attempted=true;
       p->healthy();need(!attempted&&p->owner&&p->status.attached&&!p->original_active&&!p->sample_active&&!p->leaf_active&&!p->forensic_active&&!p->evidence_active&&sink,"sample sequence missing/reused/reentrant");
       const auto frozen_sink=sink;p->healthy();need(static_cast<bool>(frozen_sink),"frozen sample callback empty");
       applied(*p);const auto& a=p->owner->genuineSource().originalAssembly();const auto& samples=a.originalNormalization().maps().samples();
