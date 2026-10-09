@@ -55,9 +55,6 @@ class NormalizedNominalMaps final {
  private:
   CaseBudget& affineBudget() const;
   const ResourcePlan& affinePlan() const;
-  const FactorShape& boundCostShape() const;
-  const FileIdentity& boundCostInputIdentity() const;
-  const std::string& boundCostSemanticSha256() const;
   explicit NormalizedNominalMaps(std::unique_ptr<detail::NormalizedInventory>);
   std::unique_ptr<detail::NormalizedInventory> storage_;
   friend struct detail::NormalizationFactory;

@@ -1,0 +1,65 @@
+{
+  "decision": "PASS_SOURCE_COMPLETE_QUADRATIC_COST_FOR_NEXT_SOURCE_CODEC_CAPTURE",
+  "recorded_utc": "2026-10-09T00:30:06.523378+00:00",
+  "implementation_prerequisite": "46bbb2439b5bc2dd89c5357c815e3d2f3b7f9902",
+  "prior_review_checkpoint": "23ca1a60210be320de1df7d996768bdf01395ccb",
+  "packet_READY_sha256": "82c9a09599911f11a35781ba961ce01f5c92ac0051b637dd5b87c8000385c5cb",
+  "all_38_payloads_verified": true,
+  "canonical_29_preimport_guards_verified": true,
+  "criteria": "ROOT_REVIEW_CRITERIA.json",
+  "scope": "Independent static cost formulas, layout/provenance, budget/lifetime, callback/capture schedule and source SHA review; no C++ matrix or Model expression executed",
+  "resolved_findings": [
+    {
+      "id": "QC005",
+      "resolution": "Private deep sealed recipe uses bound file identity, complete descriptors, empty reader and copied numerical values. All operations/bounds/authoritative getters use sealed snapshot. Retained potentially caller-aliased request explicitly forensic and never computation authority."
+    },
+    {
+      "id": "QC006",
+      "resolution": "Canonical direct value/gradient/raw Hessian cached from exact ordered construction; canonical callback charges one reused-work evaluation, not K extra term replays. InitialCostConsumer exposes each original term/evaluation and canonical evaluation during K+1 original charged operations; future capture can avoid numerical replays."
+    },
+    {
+      "id": "QC005_QC006_INDEX_ACCOUNTING",
+      "resolution": "Original and sealed numeric topology each have Q ownership tickets. Numeric capacity redeployed to (I-Q)+V+(W-Q), preserving original whole I+V+W; required workspace checked before scalar callbacks. Offset/sealed/forensic arrays destroy before associated tickets."
+    },
+    {
+      "id": "QC008",
+      "resolution": "Active protocol docs now mandate INVOCATION_COST_BOUND_2 opaque costfile and complete semantic SHA; old protocol/schema/bridge versions preserved in history."
+    }
+  ],
+  "formula_observations": [
+    "Arbitrary full F/f0/linear/c0 plus ordered sample parent-row additions retain independent native boundary/control slices and defects, without Compact dense selectors.",
+    "Fc=usedF*T,fc=usedF*t+usedf0;Hraw=Fc^T Fc;g=Fc^T fc+T^T ell;c=.5fc^T fc+ell^T t+c0. Canonical H/g/linear/constants accumulate term-by-term in input order; concatenation is only representation.",
+    "Every term/canonical direct and condensed value/gradient/Hessian is exposed; raw H kept, derivatives use half-first symmetrization. Retained coefficients and original consumer data are distinguished from later bounded reconstructions.",
+    "Finite/standard/nonstandard/reader/callback/quota/reentry failure poisons completed cost and preserves first error, raw/normalized/affine/input provenance and partial allocated storage."
+  ],
+  "remaining_obligations": [
+    "Complete lossless codecs and full metadata/chunk/byte/READY/input identity guards remain3C; no runtime reader/writer implemented yet.",
+    "Precise defined-initialization region manifests for all partial input/evaluation/coefficient/work failures and retained provisional capture chunks required before any run; never emit unused capacity.",
+    "Actual 3C capture schedule must use original-evaluation consumer or another independently validated plan; arbitrary replay/extra sample operations remain quota-bound.",
+    "Floating/compiler/environment behavior, complete source/build/SDK/input/protocol freeze and independent first-attempt numerical/mutation/lifetime cases not verified by source review.",
+    "Generic nonsymmetric serialized H, empty/zero-row/linear-only/initial shift/cancellation cases need frozen independent references; factor construction mathematically gives symmetric PSD H but not controller acceptance.",
+    "Model/plant/solver/main/geometry/stopping/timing/physical trajectory/scorer and Phase6 gates remain separate; original FD failure unchanged."
+  ],
+  "executions": {
+    "configure": 0,
+    "compile": 0,
+    "empty_kernel": 0,
+    "numeric_checks": 0,
+    "Model_constructor": 0,
+    "Model_metadata": 0,
+    "Model_rollout": 0,
+    "plant": 0,
+    "solver": 0,
+    "main": 0,
+    "scorer": 0
+  },
+  "storage": {
+    "Mac_source_packet": "/private/tmp/public_live_affine_v2_cost_stage3b",
+    "canonical_source": "tools/phase5_public_live_affine_v2/cost",
+    "history_in_git": "reviews/evidence/public_live_affine_v2_cost_stage3b_20261008/history",
+    "Dell_copy_verified": false,
+    "Git_backup": "Written before commit; remote verification reported separately"
+  },
+  "phase5": "NOT_ACCEPTED",
+  "phase6": "NOT_STARTED"
+}

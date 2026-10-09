@@ -31,3 +31,5 @@ The separate [Model boundary source stage2A](model_boundary/SOURCE_REVIEW.md) ad
 [Genuine cumulative normalization source2B](normalization/SOURCE_REVIEW.md) now supplies full/refusal ownership and checked cumulative coefficient views, keeping half2 sample and recursive cycle progress separate. It adds zero Model calls and remains uncompiled/unexecuted. Complete affine/cost/capture/readers remain pending.
 
 [Affine boundary/sample source3A](affine/SOURCE_REVIEW.md) adds compact o/M/P and T/t/structuredinitialselector, callback sample views and optional quota-bound independent DenseAudit. It remains source-only. Cost/capture and numerical validation are pending.
+
+[Complete quadratic cost source3B](cost/SOURCE_REVIEW.md) adds full factors/linear/constants, ordered sample additions and canonical term/sum evaluations with sealed input identity/topology and original-evaluation consumers. It remains uncompiled/unexecuted. Complete codecs/capture/readers and numerical verification are pending.

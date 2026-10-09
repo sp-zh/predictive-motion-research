@@ -158,9 +158,6 @@ struct NormalizedInventory {
 struct NormalizationFactory {
   static CaseBudget& budget(OwnedPublicForecast& source){return source.normalizationBudget();}
   static const ResourcePlan& plan(const OwnedPublicForecast& source){return source.normalizationPlan();}
-  static const FactorShape& costShape(const OwnedPublicForecast& source){return source.costShape();}
-  static const FileIdentity& costIdentity(const OwnedPublicForecast& source){return source.costInputIdentity();}
-  static const std::string& costSemantic(const OwnedPublicForecast& source){return source.costSemanticSha256();}
   static NormalizationOutcome normalize(OwnedPublicForecast&& source){
     NormalizationOutcome out(std::move(source));
     try {
@@ -302,9 +299,6 @@ Count NormalizedNominalMaps::cycleCell(Count k) const{return static_cast<Count>(
 const OwnedPublicForecast& NormalizedNominalMaps::originalForecast() const{return present(storage_).anchor->forecast;}
 CaseBudget& NormalizedNominalMaps::affineBudget() const{return detail::NormalizationFactory::budget(present(storage_).anchor->forecast);}
 const ResourcePlan& NormalizedNominalMaps::affinePlan() const{return detail::NormalizationFactory::plan(present(storage_).anchor->forecast);}
-const FactorShape& NormalizedNominalMaps::boundCostShape() const{return detail::NormalizationFactory::costShape(present(storage_).anchor->forecast);}
-const FileIdentity& NormalizedNominalMaps::boundCostInputIdentity() const{return detail::NormalizationFactory::costIdentity(present(storage_).anchor->forecast);}
-const std::string& NormalizedNominalMaps::boundCostSemanticSha256() const{return detail::NormalizationFactory::costSemantic(present(storage_).anchor->forecast);}
 const std::array<bool,7>& NormalizedNominalMaps::scopeClaims() noexcept{static const std::array<bool,7> flags{};return flags;}
 NormalizationOutcome::NormalizationOutcome(OwnedPublicForecast&& s) noexcept:original_(std::move(s)){}
 NormalizationOutcome::NormalizationOutcome(NormalizationOutcome&&) noexcept=default;

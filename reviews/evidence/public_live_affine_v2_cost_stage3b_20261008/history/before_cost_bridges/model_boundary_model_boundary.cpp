@@ -261,7 +261,6 @@ struct InvocationStorage {
   CaseBudget budget;OwnedReservation ticket;ResourcePlan plan;LiveActualContext context;
   CycleMesh mesh;NativeState initial;std::vector<NativeCell> cells;
   std::shared_ptr<ForecastReleaseState> release;
-  FactorShape factors;FileIdentity cost_input;std::string cost_semantic_sha256;
   InvocationStorage(BatchBudget& batch,const ResourcePlan& p,const LiveActualContext& c,const CycleMesh& m,
                     std::shared_ptr<ForecastReleaseState> r)
     :budget(batch,p),ticket(budget.reserve(checkedAdd(128,checkedMultiply(10,m.cycles().size())))),
@@ -341,7 +340,6 @@ struct ForecastFactory {
       "model_boundary.hpp","model_boundary.cpp","model_boundary_CMakeLists","foundation_CMakeLists",
       "normalization.hpp","normalization.cpp","normalization_CMakeLists",
       "affine_assembly.hpp","affine_assembly.cpp","affine_CMakeLists",
-      "quadratic_cost.hpp","quadratic_cost.cpp","cost_CMakeLists",
       "augmented_extension.hpp","augmented_extension.cpp","augmented_extension_CMakeLists",
       "augmented_value.hpp","augmented_value.cpp","physical_derivative.hpp","physical_derivative.cpp","physical_derivative_CMakeLists",
       "physical_value.hpp","physical_value.cpp","physical_value_CMakeLists","coupled_friction_box.cpp"};
@@ -377,8 +375,8 @@ struct ForecastFactory {
     ++r->prepare_attempts;recheck(*r);
     const auto n=readDocument(r->invocation);
     keys(n,{"schema","source_kind","units","boundary","initial","previous_alpha","previous_b",
-            "mesh","controls","factor_shape","capture_mode","encoding","cost_input"});
-    need(text(n["schema"])=="PUBLIC_LIVE_AFFINE_V2_INVOCATION_COST_BOUND_2"&&text(n["source_kind"])=="LiveActual"&&
+            "mesh","controls","factor_shape","capture_mode","encoding"});
+    need(text(n["schema"])=="PUBLIC_LIVE_AFFINE_V2_INVOCATION_1"&&text(n["source_kind"])=="LiveActual"&&
          text(n["units"])==units,"only frozen live actual invocation is supported");
     auto b=n["boundary"];keys(b,{"completed_tick","completed_command_sequence","observation_id","transaction_id"});
     need(integer(b["completed_tick"])==actual.boundary().completed_tick&&
@@ -402,11 +400,6 @@ struct ForecastFactory {
     auto f=n["factor_shape"];keys(f,{"terms","rows","largest_term_rows","addition_coefficients","addition_records"});
     const FactorShape fs{integer(f["terms"]),integer(f["rows"]),integer(f["largest_term_rows"]),
                          integer(f["addition_coefficients"]),integer(f["addition_records"])};
-    const auto binding=n["cost_input"];keys(binding,{"artifact","semantic_sha256"});
-    auto cost_artifact=artifact(binding["artifact"]);need(cost_artifact.role=="cost_input","cost input role mismatch");
-    const auto cost_identity=verify(cost_artifact.identity);const auto semantic=text(binding["semantic_sha256"],64);
-    need(semantic.size()==64,"cost semantic SHA256 length");
-    for(char ch:semantic)need((ch>='0'&&ch<='9')||(ch>='a'&&ch<='f'),"cost semantic SHA256 hex");
     const auto capture=text(n["capture_mode"]),encoding=text(n["encoding"]);
     need(capture=="CompactComplete"||capture=="DenseAuditComplete","unknown frozen capture mode");
     need(encoding=="LosslessBinary"||encoding=="FullNumericJson","unknown frozen numeric encoding");
@@ -414,7 +407,6 @@ struct ForecastFactory {
                            encoding=="LosslessBinary"?NumericEncoding::LosslessBinary:NumericEncoding::FullNumericJson);
     const auto controls=n["controls"];need(controls.IsSequence()&&controls.size()==mesh.cycles().size(),"nominal control roster mismatch");
     auto data=std::make_shared<InvocationStorage>(batch,plan,actual,mesh,r);
-    data->factors=fs;data->cost_input=cost_identity;data->cost_semantic_sha256=semantic;r->files.push_back(cost_identity);
     data->initial=nativeState(actual.actualInitial());data->cells.reserve(mesh.cycles().size());
     for(std::size_t k=0;k<controls.size();++k) {
       auto item=controls[k];keys(item,{"alpha","b"});const auto alpha=joints(item["alpha"]);
@@ -584,9 +576,6 @@ const FileIdentity& OwnedPublicForecast::protocolIdentity() const{return present
 CaseBudget& OwnedPublicForecast::normalizationBudget(){return present(storage_).invocation->budget;}
 const ResourcePlan& OwnedPublicForecast::normalizationPlan() const{return present(storage_).invocation->plan;}
 const char* OwnedPublicForecast::normalizationCertificate() const{(void)present(storage_);return NativeModel::certificate_name;}
-const FactorShape& OwnedPublicForecast::costShape() const{return present(storage_).invocation->factors;}
-const FileIdentity& OwnedPublicForecast::costInputIdentity() const{return present(storage_).invocation->cost_input;}
-const std::string& OwnedPublicForecast::costSemanticSha256() const{return present(storage_).invocation->cost_semantic_sha256;}
 ReviewedForecastPermission loadReviewedForecastPermission(const ReviewPins& pins){return detail::ForecastFactory::permission(pins);}
 OwnedLiveInvocation prepareFrozenLiveInvocation(ReviewedForecastPermission& p,const LiveActualContext& c,BatchBudget& b){return detail::ForecastFactory::prepare(p,c,b);}
 ModelOpenOutcome openPinnedModel(ReviewedForecastPermission& p,OwnedLiveInvocation& i){return detail::ForecastFactory::open(p,i);}

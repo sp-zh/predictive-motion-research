@@ -20,9 +20,15 @@ class SampleAffineView final {
   double control(Count row,Count column) const;
   double initial(Count row,Count column) const;
  private:
+  CaseBudget& costBudget() const;
+  const ResourcePlan& costPlan() const;
+  const FactorShape& boundCostShape() const;
+  const FileIdentity& boundCostInputIdentity() const;
+  const std::string& boundCostSemanticSha256() const;
   SampleAffineView(Count,Count,Count,const double*);
   Count cell_=0,tick_=0,du_=0;const double* work_=nullptr;
   friend struct detail::AffineFactory;
+  friend struct detail::CostFactory;
 };
 class CompactAffineAssembly final {
  public:
@@ -64,15 +70,9 @@ class CompactAffineAssembly final {
   const NormalizationOutcome& originalNormalization() const;
   static const std::array<bool,7>& scopeClaims() noexcept;
  private:
-  CaseBudget& costBudget() const;
-  const ResourcePlan& costPlan() const;
-  const FactorShape& boundCostShape() const;
-  const FileIdentity& boundCostInputIdentity() const;
-  const std::string& boundCostSemanticSha256() const;
   explicit CompactAffineAssembly(std::unique_ptr<detail::AffineStorage>);
   std::unique_ptr<detail::AffineStorage> storage_;
   friend struct detail::AffineFactory;
-  friend struct detail::CostFactory;
 };
 class AffineAssemblyOutcome final {
  public:

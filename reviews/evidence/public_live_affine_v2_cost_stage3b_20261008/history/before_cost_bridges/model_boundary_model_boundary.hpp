@@ -92,9 +92,6 @@ class OwnedPublicForecast final {
   CaseBudget& normalizationBudget();
   const ResourcePlan& normalizationPlan() const;
   const char* normalizationCertificate() const;
-  const FactorShape& costShape() const;
-  const FileIdentity& costInputIdentity() const;
-  const std::string& costSemanticSha256() const;
   explicit OwnedPublicForecast(std::unique_ptr<detail::ForecastStorage>);
   std::unique_ptr<detail::ForecastStorage> storage_;
   friend struct detail::ForecastFactory;

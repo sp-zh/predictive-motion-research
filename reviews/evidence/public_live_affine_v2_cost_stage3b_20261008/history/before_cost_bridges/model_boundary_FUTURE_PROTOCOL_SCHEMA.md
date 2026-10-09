@@ -46,9 +46,9 @@ losslessly round-trippable; changing gates to accommodate rounded metadata is
 not permitted. A future independent protocol may choose an explicit exact binary
 metadata representation through a separately reviewed source version.
 
-Invocation root keys are schema=`PUBLIC_LIVE_AFFINE_V2_INVOCATION_COST_BOUND_2`, source_kind=
+Invocation root keys are schema=`PUBLIC_LIVE_AFFINE_V2_INVOCATION_1`, source_kind=
 `LiveActual`, units, boundary, initial, previous_alpha, previous_b, mesh, controls,
-factor_shape, cost_input, capture_mode, encoding. Boundary has completed_tick,
+factor_shape, capture_mode, encoding. Boundary has completed_tick,
 completed_command_sequence, observation_id, transaction_id. Initial has q/v/C/w/s/r.
 The first live nominal anchor is exactly this actual initial. The file's state,
 prior histories and all boundary identities must match the validated current
@@ -57,17 +57,8 @@ LiveActualContext; its constants identity must match the released profile.
 Mesh has steps, total_macro_cycles, policy, explicit_cycles. Controls has one
 `{alpha,b}` per cell and inherits that mesh's literal cycles. Factor shape has
 terms, rows, largest_term_rows, addition_coefficients, addition_records. This
-boundary stage uses those counts for the prospective whole-case resource
-plan and retains them for exact comparison with actual cost topology.
-`cost_input` has exactly `artifact` and `semantic_sha256`; artifact has exactly
-`{role:"cost_input",path,sha256,bytes}`. Its real file SHA/length is checked during
-preparation before Model construction and included in later pinned rechecks.
-The separately reviewed semantic SHA binds complete ordered cost values, names,
-units, sample additions, chosen initial kind/shift and evaluation U; see
-[cost input contract](../cost/INPUT_CONTRACT.md). No weights, cost codec or
-runtime authorization are supplied by this source checkpoint. The old
-`PUBLIC_LIVE_AFFINE_V2_INVOCATION_1` schema is superseded and preserved verbatim
-in source history; it must not be used with the current boundary. Capture mode and
+forecast-only stage uses those counts for the prospective whole-case resource
+plan, and does not accept or execute any cost/task weighting. Capture mode and
 encoding choose the reviewed foundation quota plan; actual capture is not yet
 implemented. No AlgebraTest or archived carrier can enter this factory.
 

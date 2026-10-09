@@ -76,9 +76,6 @@ struct AffineStorage {
   void reject(const char* reason) noexcept{if(poisoned)return;poisoned=true;try{error=reason?reason:"AFFINE_REFUSAL";}catch(...){error.clear();}}
 };
 struct AffineFactory {
-  static const FactorShape& shape(const NormalizedNominalMaps& m){return m.boundCostShape();}
-  static const FileIdentity& identity(const NormalizedNominalMaps& m){return m.boundCostInputIdentity();}
-  static const std::string& semantic(const NormalizedNominalMaps& m){return m.boundCostSemanticSha256();}
   static void compact(AffineStorage& p,const State30& initial){
     matrixShape(p.dx,p.du);matrixShape(p.dx,30);matrixShape(p.dy,p.du);
     // Every buffer is reserved before this first materialization. No raw arrays
@@ -256,11 +253,6 @@ double CompactAffineAssembly::auditSampleControl(bool e,Count k,Count r,Count c)
 double CompactAffineAssembly::auditSampleOffset(bool e,Count k,Count r) const{auto& s=dense(storage_);bounds(k,s.sample_count);row(r);return s.so(e,k,r);}
 double CompactAffineAssembly::auditSampleInitial(bool e,Count k,Count r,Count c) const{auto& s=dense(storage_);bounds(k,s.sample_count);row(r);bounds(c,30);return s.sP(e,k,r,c);}
 const NormalizationOutcome& CompactAffineAssembly::originalNormalization() const{need(static_cast<bool>(storage_),"moved affine owner");return storage_->anchor->normalization;}
-CaseBudget& CompactAffineAssembly::costBudget() const{return *present(storage_).budget;}
-const ResourcePlan& CompactAffineAssembly::costPlan() const{return present(storage_).plan;}
-const FactorShape& CompactAffineAssembly::boundCostShape() const{return detail::AffineFactory::shape(present(storage_).anchor->normalization.maps());}
-const FileIdentity& CompactAffineAssembly::boundCostInputIdentity() const{return detail::AffineFactory::identity(present(storage_).anchor->normalization.maps());}
-const std::string& CompactAffineAssembly::boundCostSemanticSha256() const{return detail::AffineFactory::semantic(present(storage_).anchor->normalization.maps());}
 const std::array<bool,7>& CompactAffineAssembly::scopeClaims() noexcept{static const std::array<bool,7> flags{};return flags;}
 AffineAssemblyOutcome::AffineAssemblyOutcome(NormalizationOutcome&& n,CaptureMode m,AssemblyInitialKind k) noexcept:original_(std::move(n)),requested_(m),kind_(k){}
 AffineAssemblyOutcome::AffineAssemblyOutcome(AffineAssemblyOutcome&&) noexcept=default;
