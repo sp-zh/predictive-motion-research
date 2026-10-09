@@ -1,0 +1,52 @@
+{
+  "decision": "PASS_SINGLE_TU_COMPILE_ONLY_FREEZE_PREPARATION_NOT_COMPILE_LINK_RUN",
+  "baseline": "ba6246264405087276980e90599a7e4842ab27ee",
+  "ready_sha256": "f51c9dda50e0de0667930ab90dfb8fc2d2ba045376586d36f67b6f4055d7a376",
+  "original_payloads_verified": 8,
+  "canonical_guards_verified": 116,
+  "source_proposal_public_guards_verified": 9,
+  "test_source_files_readonly_verified": 2,
+  "current_input_identities": 356,
+  "prior_origin_labels": {
+    "prefrozen_in_previous_full_build": 337,
+    "first_observed_after_previous_full_build": 19
+  },
+  "root_independent_remote_file_recheck": {
+    "current_records_verified": 358,
+    "test_sources0444": 2,
+    "source_directory0555": true,
+    "parent_only_source": true,
+    "compile_calls": 0
+  },
+  "independent_static_review": [
+    "Exact source bytes match public proposal;Linux readonly modes and source-only parent independently rechecked",
+    "Plan matches previous single-TU GCC compile candidate with only distinct output directory;full profile retained",
+    "Harness pins exact plan/current-input SHA;one explicit -c invocation under replaced4-field environment,exclusive fresh output/cwd,identity pre/post checks",
+    "Compiler process group timeout120s,combined raw output1MiB and child resource limits;first failure stops and retained objects/depfiles/logs remain available",
+    "No CMake,link,final executable or project program/function invocation path;harness parsed/reviewed as source only",
+    "New dependency paths recorded as postcompile observations;finite manifest does not claim complete include/OS/native/RSS closure"
+  ],
+  "harness_limits_reviewed": {
+    "wall_seconds": 120,
+    "combined_output_bytes": 1048576,
+    "CPU_seconds": 110,
+    "address_space_bytes": 4294967296,
+    "file_size_bytes": 134217728,
+    "core_bytes": 0,
+    "file_descriptors": 64
+  },
+  "compile_calls": 0,
+  "link_calls": 0,
+  "project_program_runs": 0,
+  "project_function_calls": 0,
+  "next_unit_admitted": "Separate exact reviewed compile-only harness dispatch after verified milestone backup;one test TU -c only;no link/runtime/retry",
+  "limitations": [
+    "Actual test compilation and emitted object/depfile remain unvalidated",
+    "Full include/native/OS/process readset and RSS not established",
+    "Final linking and runtime require separately reviewed frozen protocols"
+  ],
+  "publication": "Compact authored root review/storage only;full host plan,control,harness,raw freeze output and dependency identities excluded",
+  "phase5": "NOT_ACCEPTED",
+  "phase6": "NOT_STARTED",
+  "all_source_failures_and_immutable_freezes_preserved": true
+}
