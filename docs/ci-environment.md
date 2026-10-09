@@ -190,8 +190,9 @@ access. If that policy changes, a separate review must cover package/repository
 access, `packages: read`, startup `container.credentials`, and fork behavior.
 A later in-container login cannot fix private job-container initialization.
 
-New Action: official `actions/upload-artifact` v4.6.2, verified release and
-commit `ea165f8d65b6e75b540449e92b4886f43607fa02`; all Action references are full
+New Action: official `actions/upload-artifact` v7.0.2, verified release and
+commit `cf430e030ddbb5b0abf93d22962f4752f3646cd9` (Node 24, released
+2026-10-07); all Action references are full
 commit SHAs. Existing checkout SHA is preserved.
 
 References: [manual workflow registration](https://docs.github.com/en/actions/how-tos/manage-workflow-runs/manually-run-a-workflow),
@@ -227,7 +228,7 @@ no secret values were read/exported. The existing CLI OAuth lacks
 `read:packages`/`write:packages`; package listing returned HTTP 403. Anonymous
 registry checks for both proposed names also returned 403, which cannot
 establish absence versus private visibility. No existing package was overwritten.
-No Docker daemon/tools are installed on this Mac, so no local image build,
+No Docker CLI is available in this Mac session, so no local image build,
 GHCR publication, private-image access test or GHCR full run is claimed.
 These remain bootstrap deployment gates; the workflow uses `GITHUB_TOKEN`
 instead of asking for a broad PAT.
