@@ -1,0 +1,66 @@
+{
+  "decision": "PASS_SOURCE_DENSE_CACHED_ANCILLARY_AND_ONCE_SAMPLE_LEAF_EXTENSION_ONLY",
+  "recorded_utc": "2026-10-09T03:31:49.443697+00:00",
+  "prerequisite_backup": "b548d37d750b45e8d016702d96f63534e39228c9",
+  "packet_READY_sha256": "78ceefd1a7333864c7bdcaabfd2f2b29402e2fafc021b4382108536405938126",
+  "verified_payload_count": 25,
+  "verified_preimport_guard_count": 74,
+  "criteria": "ROOT_REVIEW_CRITERIA.json",
+  "validation": "Independent static held-getter/layout/types/source identity/once-sequence/callback lifetime/limits/target review and SHA checks only; no samples/metadata/leaf/IO/compiler/parser/matrix/Model execution",
+  "resolved_findings": [
+    {
+      "id": "FROZEN_SAMPLE_CALLBACK",
+      "resolution": "Sample sequence single-use attempt latches before local const callback copy; health/nonempty checks after copy, every sample uses only frozen copy. Copy/standard/nonstandard/reentry failures preserve first refusal."
+    }
+  ],
+  "observations": [
+    "Dense full requested/complete mode binds held L/E/f/I, active LU/R, stored full solution, selectors and both actual sample map sets. Storage is row-major; solution assignment frontier column/reverse-row separately labeled.",
+    "Cached verified metadata6 vectors/4 integer-index arrays/nqnv2, actual initial30/history8/boundary counters2/static ranges4 and ORIGINAL SubstepValue indices[S,3] are literal held getters, not new Model queries. Value indices never substitute map indices.",
+    "Exactly19 named ancillary keys (6+4+1+1+1+1+4+1) spend closed ancillary32 before file creation, also under total receipt limit. They expand base metadata roles; old base catalogue formula is not mislabeled the enlarged current total or counted twice.",
+    "Private once-only ordered sample sequence uses existing affine.withSample and actual S*prefixWork charges; current index/cell/tick/cycle/half plus four o/actual-offset/M/P fields exist only in synchronous actual callback. Each paired sample attempt carries that provenance. Sequence completion is not full role/byte/readback completion.",
+    "Failed/duplicate/reentry/source/refused/closed paths preserve capture refusal and source/attempt evidence; current sample pointer clears on every callback exit. No withTerm/canonical replay or new numeric matrix snapshot."
+  ],
+  "remaining_obligations": [
+    "Complete nonnumeric metadata/profile names/rosters/errors/identities and early Model/pre-affine failure owner variants; full manifest/READY writer and independent full closure reader.",
+    "Exact all-role completeness, canonical ordered concat references, duplicate/missing/overlap checks, failure publication, actual aggregate metadata/unique bytes/full peak/cumulative flow admission remain required; no fullFlow/fullCapture acceptance from this extension.",
+    "Independent exact source/build/SDK/FP/protocol freeze and deferred sampling/reentry/callback replacement/cap/mutation/grammar/numerical/Model tests remain unrun.",
+    "Original checker/freezes/FD failure and all phase/controller/physical trajectory/safety/timing gates remain unchanged."
+  ],
+  "executions": {
+    "configure": 0,
+    "compile": 0,
+    "empty_kernel": 0,
+    "leaf": 0,
+    "original_consumer": 0,
+    "cost": 0,
+    "decoder": 0,
+    "catalogue": 0,
+    "driver": 0,
+    "writer": 0,
+    "readback": 0,
+    "forensic": 0,
+    "parser_fixture": 0,
+    "numeric_checks": 0,
+    "matrix_checks": 0,
+    "Model_constructor": 0,
+    "Model_metadata": 0,
+    "Model_rollout": 0,
+    "plant": 0,
+    "solver": 0,
+    "main": 0,
+    "scorer": 0,
+    "sample_sequence": 0,
+    "sample_callback": 0,
+    "Dense_capture": 0,
+    "cached_metadata_capture": 0
+  },
+  "storage": {
+    "Mac_packet": "/private/tmp/public_live_affine_v2_capture_remaining_leaves_stage3c2b2b2",
+    "canonical_source": "tools/phase5_public_live_affine_v2/capture_leaves",
+    "history": "reviews/evidence/public_live_affine_v2_capture_remaining_leaves_stage3c2b2b2_20261008/history",
+    "Dell_copy_verified": false,
+    "Git_backup": "Pending commit and remote verification"
+  },
+  "phase5": "NOT_ACCEPTED",
+  "phase6": "NOT_STARTED"
+}

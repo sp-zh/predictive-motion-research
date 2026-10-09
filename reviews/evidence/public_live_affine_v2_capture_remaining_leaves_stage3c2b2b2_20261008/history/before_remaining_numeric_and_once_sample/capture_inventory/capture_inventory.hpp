@@ -23,7 +23,7 @@ enum class RequiredRole {
   CanonicalCondensedConstant,DenseLiftedL,DenseLiftedE,DenseLiftedOffset,
   DenseInitialSelector,DenseActiveLU,DenseActiveRhs,DenseSolution,DenseSampleSelector,
   DenseSampleOffset,DenseSampleControl,DenseSampleInitial,FailureDefinedRegions,
-  DecoderFrontiers,CachedMetadataVector,CachedMetadataIndices,CachedMetadataDimensions,ActualContextInitial,PreviousControlHistory,ActualBoundaryCounters,StaticDomainRange,RawSubstepValueIndicesAggregate,CountRoles
+  DecoderFrontiers,CountRoles
 };
 enum class FieldAvailability {OwnedSourceReference,OriginalObservedNotStored,
   RecipeNotEvaluated,PendingLeafBinding,AbsentUpstream,ForensicSourceOnly};

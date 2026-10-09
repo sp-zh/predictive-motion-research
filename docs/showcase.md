@@ -424,3 +424,5 @@ The [genuine inventory owner and catalogue source checkpoint](../reviews/evidenc
 The [same-case capture prepartition source checkpoint](../reviews/evidence/public_live_affine_v2_capture_workspace_stage3c2b2a_20261008/ROOT_SOURCE_REVIEW.json) adds no executed numerical or motion result. Actual leaf capture, complete publication/readback and Phase5 task clips remain pending; existing diagnostic figures retain their recorded scope.
 
 The [limited genuine numeric leaf source checkpoint](../reviews/evidence/public_live_affine_v2_capture_leaves_stage3c2b2b1_20261008/ROOT_SOURCE_REVIEW.json) adds no executed numerical or motion result. Complete evidence publication/readback and Phase5 task videos remain pending; existing diagnostic figures retain their original scope.
+
+The [Dense, cached ancillary and once-sample leaf source checkpoint](../reviews/evidence/public_live_affine_v2_capture_remaining_leaves_stage3c2b2b2_20261008/ROOT_SOURCE_REVIEW.json) adds no executed numerical or motion result. Full evidence publication/readback and Phase5 task clips remain pending; existing diagnostics keep their original scope.

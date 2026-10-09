@@ -11,7 +11,6 @@ struct NumericLeafInfo {
   DefinedComputedState state=DefinedComputedState::UnknownUntilLeafBinding;
   Count defined_count=0,assigned_prefix=0;bool assigned_prefix_known=false;
   bool has_composite_frontier=false;
-  const char* assignment_traversal="same-as-storage";
   const char* traversal="row-major";
 };
 class NumericLeafView final {
@@ -28,7 +27,7 @@ class NumericLeafView final {
 };
 using NumericLeafConsumer=std::function<void(const NumericLeafView&)>;
 struct ForensicBorrowObservation {bool refused=false;Count generations=0;std::string first_error;};
-struct CaptureLeafObservation {Count receipt_attempts=0,verified_chunks=0,ancillary_receipt_attempts=0,samples_completed=0;bool samples_attempted=false;bool attached=false,closed=false,refused=false;std::string first_error;};
+struct CaptureLeafObservation {Count receipt_attempts=0,verified_chunks=0;bool attached=false,closed=false,refused=false;std::string first_error;};
 class OriginalLeafBatch final {
  public:
   OriginalLeafBatch(const OriginalLeafBatch&)=delete;OriginalLeafBatch& operator=(const OriginalLeafBatch&)=delete;
@@ -36,16 +35,6 @@ class OriginalLeafBatch final {
   void exportLeaf(RequiredRole,const std::string& absolute_root,const std::string& provisional_name) const;
  private:
   explicit OriginalLeafBatch(std::shared_ptr<detail::CaptureLeafState>);
-  std::shared_ptr<detail::CaptureLeafState> state_;friend struct detail::CaptureLeafFactory;
-};
-class SampleLeafBatch final {
- public:
-  SampleLeafBatch(const SampleLeafBatch&)=delete;SampleLeafBatch& operator=(const SampleLeafBatch&)=delete;
-  Count sampleIndex() const;Count cell() const;Count tick() const;Count cycle() const;Count half() const;
-  void withLeaf(RequiredRole,const NumericLeafConsumer&) const;
-  void exportLeaf(RequiredRole,const std::string& root,const std::string& provisional_name) const;
- private:
-  explicit SampleLeafBatch(std::shared_ptr<detail::CaptureLeafState>);
   std::shared_ptr<detail::CaptureLeafState> state_;friend struct detail::CaptureLeafFactory;
 };
 class BoundLeafAttempt final {
@@ -56,13 +45,12 @@ class BoundLeafAttempt final {
   const ChunkWriteOutcome& write() const noexcept{return write_;}
   const std::optional<ChunkReadOutcome>& readback() const noexcept{return readback_;}
   bool comparisonAttempted() const noexcept{return comparison_attempted_;}bool expectedScalarValid() const noexcept{return expected_valid_;}
-  bool sampleScope() const noexcept{return sample_scope_;}Count sampleCell() const noexcept{return sample_cell_;}Count sampleTick() const noexcept{return sample_tick_;}Count sampleCycle() const noexcept{return sample_cycle_;}Count sampleHalf() const noexcept{return sample_half_;}
   bool semanticMismatch() const noexcept{return mismatch_;}Count mismatchIndex() const noexcept{return mismatch_index_;}
   ChunkScalar expectedScalar() const noexcept{return expected_;}ChunkScalar actualScalar() const noexcept{return actual_;}
  private:
   BoundLeafAttempt()=default;
   std::shared_ptr<const void> source_origin_,cost_origin_;std::shared_ptr<detail::CapturePartitionState> partition_;
-  RequiredRole role_;Count primary_=0,secondary_=0;bool original_scope_=false,canonical_scope_=false,sample_scope_=false;Count sample_cell_=0,sample_tick_=0,sample_cycle_=0,sample_half_=0;
+  RequiredRole role_;Count primary_=0,secondary_=0;bool original_scope_=false,canonical_scope_=false;
   ChunkWriteOutcome write_;std::optional<ChunkReadOutcome> readback_;
   bool comparison_attempted_=false,expected_valid_=false,mismatch_=false;Count mismatch_index_=0;ChunkScalar expected_,actual_;
   friend struct detail::CaptureLeafFactory;
@@ -76,7 +64,6 @@ class CaptureLeafSession final {
   void attachReturnedSource(CostDecodeOutcome&&);
   void withStoredLeaf(RequiredRole,Count primary,Count secondary,const NumericLeafConsumer&) const;
   void exportStoredLeaf(RequiredRole,Count primary,Count secondary,const std::string& absolute_root,const std::string& provisional_name);
-  void streamSamplesOnce(const std::function<void(const SampleLeafBatch&)>&);
   void withDefinedRegions(Count layer,const NumericLeafConsumer&) const; //0 normalizer/1 affine/2 cost.
   CaptureLeafObservation observation() const;
   ForensicBorrowObservation forensicObservation() const;

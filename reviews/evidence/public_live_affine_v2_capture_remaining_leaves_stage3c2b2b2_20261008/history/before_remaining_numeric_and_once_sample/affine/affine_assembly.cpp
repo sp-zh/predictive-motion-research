@@ -274,9 +274,6 @@ double CompactAffineAssembly::liftedL(Count r,Count c) const{auto& s=dense(stora
 double CompactAffineAssembly::liftedE(Count r,Count c) const{auto& s=dense(storage_);bounds(r,s.dx);bounds(c,s.du);return s.E(r,c);}
 double CompactAffineAssembly::liftedOffset(Count r) const{auto& s=dense(storage_);bounds(r,s.dx);return s.f(r);}
 double CompactAffineAssembly::liftedInitialSelector(Count r,Count c) const{auto& s=dense(storage_);bounds(r,s.dx);bounds(c,30);return s.I(r,c);}
-double CompactAffineAssembly::activeAuditLU(Count r,Count c) const{auto& p=dense(storage_);bounds(r,p.dx);bounds(c,p.dx);return p.dense->workspace()[mul(r,p.dx)+c];}
-double CompactAffineAssembly::activeAuditRhs(Count r,Count c) const{auto& p=dense(storage_);bounds(r,p.dx);bounds(c,p.du+31);return p.dense->workspace()[mul(p.dx,p.dx)+mul(r,p.du+31)+c];}
-double CompactAffineAssembly::eliminatedStoredEntry(Count r,Count c) const{auto& p=dense(storage_);bounds(r,p.dx);bounds(c,p.du+31);return p.X(r,c);}
 double CompactAffineAssembly::eliminatedControl(Count r,Count c) const{auto& s=dense(storage_);bounds(r,s.dx);bounds(c,s.du);return s.X(r,c);}
 double CompactAffineAssembly::eliminatedOffset(Count r) const{auto& s=dense(storage_);bounds(r,s.dx);return s.X(r,s.du);}
 double CompactAffineAssembly::eliminatedInitial(Count r,Count c) const{auto& s=dense(storage_);bounds(r,s.dx);bounds(c,30);return s.X(r,s.du+1+c);}
@@ -309,7 +306,6 @@ SharedCaseBudget AffineAssemblyOutcome::captureBudget() const{
   if(assembly_&&assembly_->storage_)return assembly_->storage_->budget->share();if(failed_)return failed_->budget->share();
   return detail::AffineFactory::originalBudget(originalNormalization());
 }
-void AffineAssemblyOutcome::captureOnceSample(Count index,const std::function<void(const SampleAffineView&)>& consumer) const{need(hasCompleteAssembly(),"actual affine sample source refused/moved");assembly_->withSample(index,consumer);}
 const NormalizationOutcome& AffineAssemblyOutcome::originalNormalization() const{return anchor_?anchor_->normalization:original_;}
 std::optional<CaptureMode> AffineAssemblyOutcome::actualMode() const noexcept{return hasCompleteAssembly()?std::optional<CaptureMode>(requested_):std::nullopt;}
 std::string_view AffineAssemblyOutcome::refusal() const noexcept{if(assembly_&&!assembly_->complete())return assembly_->refusal();

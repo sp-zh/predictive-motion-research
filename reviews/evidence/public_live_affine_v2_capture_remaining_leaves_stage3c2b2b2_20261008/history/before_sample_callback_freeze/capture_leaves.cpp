@@ -264,13 +264,12 @@ struct CaptureLeafFactory {
   static void streamSamples(std::shared_ptr<CaptureLeafState> p,const std::function<void(const SampleLeafBatch&)>& sink){
     try{const bool attempted=p->status.samples_attempted;p->status.samples_attempted=true;
       p->healthy();need(!attempted&&p->owner&&p->status.attached&&!p->original_active&&!p->sample_active&&!p->leaf_active&&!p->forensic_active&&sink,"sample sequence missing/reused/reentrant");
-      const auto frozen_sink=sink;p->healthy();need(static_cast<bool>(frozen_sink),"frozen sample callback empty");
       applied(*p);const auto& a=p->owner->genuineSource().originalAssembly();const auto& samples=a.originalNormalization().maps().samples();
       for(Count index=0;index<samples.size();++index){p->healthy();need(p->status.samples_completed==index,"sample original order/replay");
         a.captureOnceSample(index,[&](const SampleAffineView& view){
           p->healthy();const auto& native=samples.at(index);need(view.cell()==native.cell()&&view.tick()==native.physicalTick(),"actual sample provenance mismatch");
           p->sample=&view;p->sample_active=true;p->current_sample=index;p->sample_cell=view.cell();p->sample_tick=view.tick();p->sample_cycle=native.cycle();p->sample_half=native.half();
-          try{const SampleLeafBatch batch(p);frozen_sink(batch);p->sample_active=false;p->sample=nullptr;p->healthy();++p->status.samples_completed;}
+          try{const SampleLeafBatch batch(p);sink(batch);p->sample_active=false;p->sample=nullptr;p->healthy();++p->status.samples_completed;}
           catch(...){p->sample_active=false;p->sample=nullptr;throw;}
         });
       }

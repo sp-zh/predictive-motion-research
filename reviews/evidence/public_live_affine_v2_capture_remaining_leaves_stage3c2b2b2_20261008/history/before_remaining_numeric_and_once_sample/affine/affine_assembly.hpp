@@ -55,9 +55,6 @@ class CompactAffineAssembly final {
   double liftedE(Count row,Count column) const;
   double liftedOffset(Count row) const;
   double liftedInitialSelector(Count row,Count column) const;
-  double activeAuditLU(Count row,Count column) const;
-  double activeAuditRhs(Count row,Count column) const;
-  double eliminatedStoredEntry(Count row,Count column) const;
   double eliminatedControl(Count row,Count column) const;
   double eliminatedOffset(Count row) const;
   double eliminatedInitial(Count row,Count column) const;
@@ -106,7 +103,6 @@ class AffineAssemblyOutcome final {
   const ResourcePlan& capturePlan() const;
   const FactorShape& captureShape() const;
   SharedCaseBudget captureBudget() const;
-  void captureOnceSample(Count,const std::function<void(const SampleAffineView&)>&) const;
   AffineAssemblyOutcome(NormalizationOutcome&&,CaptureMode,AssemblyInitialKind) noexcept;
   void recordRefusal(const char*) noexcept;
   NormalizationOutcome original_;std::shared_ptr<detail::AffineAnchor> anchor_;

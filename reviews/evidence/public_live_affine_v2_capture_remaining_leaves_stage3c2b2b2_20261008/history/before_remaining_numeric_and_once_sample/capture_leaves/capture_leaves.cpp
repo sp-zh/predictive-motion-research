@@ -16,7 +16,6 @@ namespace detail {
 struct CaptureLeafState {
   std::shared_ptr<const void> source_origin,actual_cost_origin;std::shared_ptr<CapturePartitionState> partition;
   SharedCaseBudget budget;std::optional<OriginalCaptureGate> gate;std::optional<CaptureInventoryOwner> owner;
-  const SampleAffineView* sample=nullptr;bool sample_active=false;Count current_sample=0,sample_cell=0,sample_tick=0,sample_cycle=0,sample_half=0;
   const UsedTermView* term=nullptr;const CostEvaluationView* canonical=nullptr;const AffineAssemblyOutcome* original_source=nullptr;
   CaptureLeafObservation status;ForensicBorrowObservation forensic;bool forensic_active=false;bool original_active=false,leaf_active=false;Count generation=0,metadata_payload=0;
   std::vector<BoundLeafAttempt> attempts;
@@ -58,15 +57,12 @@ struct CaptureLeafFactory {
     else {need(p.owner->genuineSource().hasCompleteCost()&&p.owner->genuineSource().capture_partition_==p.partition,"live cost owner/partition mismatch");}
   }
   static void exportBound(std::shared_ptr<CaptureLeafState> p,const NumericLeafView& leaf,const std::string& root,const std::string& name){
-    try{need(!leaf.binding_->forensic_only,"readonly forensic leaf cannot export");applied(*p);
-      const auto role=leaf.info().role;const bool ancillary=role>=R::CachedMetadataVector&&role<=R::RawSubstepValueIndicesAggregate;
-      if(ancillary)need(p->status.ancillary_receipt_attempts<p->partition->status.ancillary_numeric_limit,"ancillary32 expansion limit before file creation");
-      need(p->status.receipt_attempts<p->partition->status.receipt_limit,"private receipt limit before file creation");
+    try{need(!leaf.binding_->forensic_only,"readonly forensic leaf cannot export");applied(*p);need(p->status.receipt_attempts<p->partition->status.receipt_limit,"private receipt limit before file creation");
       need(root.size()<=4096&&name.size()<=128,"bounded leaf export metadata");
       p->metadata_payload=add(p->metadata_payload,add(add(root.size(),name.size()),256));need(p->metadata_payload<=ResourcePolicyV2::metadata_bytes,"retained receipt metadata payload cap");
       BoundLeafAttempt pending;pending.source_origin_=p->source_origin;pending.cost_origin_=p->actual_cost_origin;pending.partition_=p->partition;
       pending.role_=leaf.info().role;pending.primary_=leaf.info().primary;pending.secondary_=leaf.info().secondary;
-      pending.original_scope_=p->original_active;pending.canonical_scope_=p->canonical!=nullptr;pending.sample_scope_=p->sample_active;pending.sample_cell_=p->sample_cell;pending.sample_tick_=p->sample_tick;pending.sample_cycle_=p->sample_cycle;pending.sample_half_=p->sample_half;
+      pending.original_scope_=p->original_active;pending.canonical_scope_=p->canonical!=nullptr;
       // Persist ONE actual shape snapshot/ticket even if low-level admission fails.
       pending.write_.record.axes_owner_=std::make_shared<OwnedReservation>(p->budget.reserve(4));
       auto& spec=pending.write_.record.spec;spec.relative_name=name;p->budget.chargeScratchOrCopy(12);
@@ -74,7 +70,7 @@ struct CaptureLeafFactory {
       spec.kind=leaf.info().kind;spec.classification=leaf.info().classification;
       spec.dimensions.assign(leaf.info().dimensions.begin(),leaf.info().dimensions.begin()+leaf.info().rank);
       pending.write_.record.count=leaf.info().count;pending.write_.record.root_path=root;pending.write_.record.encoding=p->budget.numericEncoding();
-      p->attempts.push_back(std::move(pending));const auto slot=p->attempts.size()-1;++p->status.receipt_attempts;if(ancillary)++p->status.ancillary_receipt_attempts;auto& attempt=p->attempts[slot];
+      p->attempts.push_back(std::move(pending));const auto slot=p->attempts.size()-1;++p->status.receipt_attempts;auto& attempt=p->attempts[slot];
       auto written=writeProvisionalNumericChunk(p->budget,root,attempt.write_.record.spec,[&leaf](Count i){return leaf.scalar(i);});
       if(written.record.axes_owner_)attempt.write_=std::move(written); // Existing expected shape dies before its old ticket.
       else {attempt.write_.observation=std::move(written.observation);attempt.write_.record.bytes=written.record.bytes;attempt.write_.record.sha256=std::move(written.record.sha256);}
@@ -124,22 +120,15 @@ struct CaptureLeafFactory {
     }catch(const std::exception& e){p->reject(e.what());throw;}catch(...){p->reject("NONSTANDARD_ORIGINAL_LEAF_BIND_FAILURE");throw;}
   }
   static void stored(std::shared_ptr<CaptureLeafState> p,R role,Count first,Count second,const NumericLeafConsumer& consumer){
-    try{p->healthy();need(p->owner&&p->status.attached&&!p->original_active&&!p->sample_active&&!p->leaf_active,"stored leaf owner absent/reentry/original phase");
+    try{p->healthy();need(p->owner&&p->status.attached&&!p->original_active&&!p->leaf_active,"stored leaf owner absent/reentry/original phase");
       switch(role){
         case R::RawFinalState:case R::EmbeddingControl:case R::EmbeddingOffset:case R::ChosenInitial:case R::ChosenInitialKind:case R::EvaluationControl:
-        case R::CachedMetadataDimensions:case R::ActualContextInitial:case R::PreviousControlHistory:case R::ActualBoundaryCounters:case R::RawSubstepValueIndicesAggregate:
         case R::CanonicalRawH:case R::CanonicalGradientCoefficient:case R::CanonicalLinear:case R::CanonicalInputConstant:case R::CanonicalCondensedConstant:
           need(first==0&&second==0,"global actual leaf key must be0/0");break;
         case R::RawCellState:case R::RawCycleState:case R::RawSubstepPhysical:case R::RawSubstepProgress:case R::RawFrictionForce:case R::RawFrictionBranches:
         case R::RawFrictionIterations:case R::RawFrictionKkt:case R::RawClips:case R::BoundaryOffset:case R::BoundaryControl:case R::BoundaryInitial:
         case R::CostInputFactor:case R::CostInputOffset:case R::CostInputLinear:case R::CostInputConstant:case R::TermCondensedFactor:case R::TermCondensedOffset:
         case R::TermRawH:case R::TermGradientCoefficient:case R::TermConstantCoefficient:need(second==0,"indexed actual leaf secondary must be0");break;
-        case R::CachedMetadataVector:need(first<6&&second==0,"cached metadata vector key");break;
-        case R::CachedMetadataIndices:need(first<4&&second==0,"cached metadata indices key");break;
-        case R::StaticDomainRange:need(first<4&&second==0,"static range key");break;
-        case R::DenseLiftedL:case R::DenseLiftedE:case R::DenseLiftedOffset:case R::DenseInitialSelector:case R::DenseActiveLU:case R::DenseActiveRhs:case R::DenseSolution:need(first==0&&second==0,"global Dense key0/0");break;
-        case R::DenseSampleSelector:need(second==0,"Dense selector secondary0");break;
-        case R::DenseSampleOffset:case R::DenseSampleControl:case R::DenseSampleInitial:need(second<2,"Dense map method0/1");break;
         case R::RawCellControl:need(second<2,"control leaf split0/1");break;
         case R::RawMapLocalA:case R::RawMapLocalB:case R::RawMapLocalDefect:case R::RawMapCellA:case R::RawMapCellB:case R::RawMapCellDefect:
         case R::RawMapOrigin:case R::RawMapCellOrigin:case R::RawMapEndpoint:case R::RawMapInput:case R::RawMapIndices:need(first<3,"actual native map group0/1/2");break;
@@ -181,33 +170,6 @@ struct CaptureLeafFactory {
           case R::ChosenInitial:meta=info(role,0,0,{30});read=[affine](Count i){return ChunkScalar::f64(affine->chosenInitial(i));};break;
           case R::ChosenInitialKind:meta=info(role,0,0,{1});meta.kind=ChunkScalarKind::I64;read=[affine](Count){return ChunkScalar::i64(static_cast<std::int64_t>(affine->initialKind()));};break;
           default:throw std::invalid_argument("recipe is not an actual stored affine leaf");}}
-      if(!read&&role>=R::CachedMetadataVector&&role<=R::RawSubstepValueIndicesAggregate){const auto* metadata=&forecast.verifiedMetadata();const auto* context=&forecast.actualContext();
-        switch(role){case R::CachedMetadataVector:{const Eigen::VectorXd* data=first==0?&metadata->masses:first==1?&metadata->armature:first==2?&metadata->gravity:first==3?&metadata->R:first==4?&metadata->B:&metadata->damping;
-          meta=info(role,first,0,{size(data->size())});read=[data](Count i){return ChunkScalar::f64((*data)(static_cast<Eigen::Index>(i)));};break;}
-          case R::CachedMetadataIndices:{const auto* data=first==0?&metadata->idx_q:first==1?&metadata->idx_v:first==2?&metadata->joint_nq:&metadata->joint_nv;
-            meta=info(role,first,0,{data->size()});meta.kind=ChunkScalarKind::I64;read=[data](Count i){return ChunkScalar::i64(data->at(i));};break;}
-          case R::CachedMetadataDimensions:meta=info(role,0,0,{2});meta.kind=ChunkScalarKind::I64;read=[metadata](Count i){return ChunkScalar::i64(i==0?metadata->nq:metadata->nv);};break;
-          case R::ActualContextInitial:meta=info(role,0,0,{30});read=[context](Count i){const auto& x=context->actualInitial();return ChunkScalar::f64(i<7?x.q[i]:i<14?x.v[i-7]:i<21?x.C[i-14]:i<28?x.w[i-21]:i==28?x.s:x.r);};break;
-          case R::PreviousControlHistory:meta=info(role,0,0,{8});read=[context](Count i){return ChunkScalar::f64(i<7?context->previousAlpha()[i]:context->previousB());};break;
-          case R::ActualBoundaryCounters:meta=info(role,0,0,{2});meta.kind=ChunkScalarKind::U64;read=[context](Count i){const auto x=context->boundary();return ChunkScalar::u64(i==0?x.completed_tick:x.completed_command_sequence);};break;
-          case R::StaticDomainRange:{const auto* range=first==0?&context->ranges().qLower():first==1?&context->ranges().qUpper():first==2?&context->ranges().cLower():&context->ranges().cUpper();meta=info(role,first,0,{7});read=[range](Count i){return ChunkScalar::f64((*range)[i]);};break;}
-          case R::RawSubstepValueIndicesAggregate:need(raw,"actual original substep values absent");meta=info(role,0,0,{raw->value.substeps.size(),3},forensic);meta.kind=ChunkScalarKind::I64;meta.traversal="actual-value-substep/cell-cycle-half-separate-from-map-indices";
-            read=[raw](Count i){const auto& point=raw->value.substeps.at(i/3);return ChunkScalar::i64(i%3==0?point.cell:i%3==1?point.cycle:point.half);};break;
-          default:break;}}
-      if(!read&&role>=R::DenseLiftedL&&role<=R::DenseSampleInitial){need(a.hasCompleteAssembly()&&a.actualMode()==CaptureMode::DenseAuditComplete,"actual complete Dense storage required; partial audit uses readonly defined regions");
-        const auto* affine=&a.assembly();const Count dx=affine->dx(),du=affine->du(),dy=affine->dy(),samples=norm.maps().samples().size();
-        switch(role){case R::DenseLiftedL:meta=info(role,0,0,{dx,dx});read=[affine,dx](Count i){return ChunkScalar::f64(affine->liftedL(i/dx,i%dx));};break;
-          case R::DenseLiftedE:meta=info(role,0,0,{dx,du});read=[affine,du](Count i){return ChunkScalar::f64(affine->liftedE(i/du,i%du));};break;
-          case R::DenseLiftedOffset:meta=info(role,0,0,{dx});read=[affine](Count i){return ChunkScalar::f64(affine->liftedOffset(i));};break;
-          case R::DenseInitialSelector:meta=info(role,0,0,{dx,30});read=[affine](Count i){return ChunkScalar::f64(affine->liftedInitialSelector(i/30,i%30));};break;
-          case R::DenseActiveLU:meta=info(role,0,0,{dx,dx});read=[affine,dx](Count i){return ChunkScalar::f64(affine->activeAuditLU(i/dx,i%dx));};break;
-          case R::DenseActiveRhs:meta=info(role,0,0,{dx,du+31});read=[affine,du](Count i){return ChunkScalar::f64(affine->activeAuditRhs(i/(du+31),i%(du+31)));};break;
-          case R::DenseSolution:meta=info(role,0,0,{dx,du+31});meta.assignment_traversal="column-then-reverse-row";read=[affine,du](Count i){return ChunkScalar::f64(affine->eliminatedStoredEntry(i/(du+31),i%(du+31)));};break;
-          case R::DenseSampleSelector:need(first<samples,"actual Dense sample index");meta=info(role,first,0,{30,dy});read=[affine,first,dy](Count i){return ChunkScalar::f64(affine->sampleDenseSelector(first,i/dy,i%dy));};break;
-          case R::DenseSampleOffset:need(first<samples,"actual Dense sample index");meta=info(role,first,second,{30});read=[affine,first,second](Count i){return ChunkScalar::f64(affine->auditSampleOffset(second!=0,first,i));};break;
-          case R::DenseSampleControl:need(first<samples,"actual Dense sample index");meta=info(role,first,second,{30,du});read=[affine,first,second,du](Count i){return ChunkScalar::f64(affine->auditSampleControl(second!=0,first,i/du,i%du));};break;
-          case R::DenseSampleInitial:need(first<samples,"actual Dense sample index");meta=info(role,first,second,{30,30});read=[affine,first,second](Count i){return ChunkScalar::f64(affine->auditSampleInitial(second!=0,first,i/30,i%30));};break;
-          default:break;}}
       if(!read){need(decoded.hasCompleteCost(),"complete cost required; failed partial fields use defined-region API");const auto* cost=&decoded.costOutcome().cost();const auto& layouts=cost->inputLayouts();const Count du=a.assembly().du(),dy=a.assembly().dy();
         if(role>=R::CostInputFactor&&role<=R::CostAdditionSampleIndex){need(first<layouts.size(),"sealed cost term index");const auto& t=layouts[first];
           switch(role){case R::CostInputFactor:meta=info(role,first,0,{t.rows,dy});read=[cost,first,dy](Count i){return ChunkScalar::f64(cost->inputFactor(first,i/dy,i%dy));};break;
@@ -236,7 +198,7 @@ struct CaptureLeafFactory {
     }catch(const std::exception& e){p->reject(e.what());throw;}catch(...){p->reject("NONSTANDARD_STORED_LEAF_FAILURE");throw;}
   }
   static void attach(std::shared_ptr<CaptureLeafState> state,CostDecodeOutcome&& source){
-  need(static_cast<bool>(state),"moved leaf session");auto& p=*state;try{need(!p.status.attached&&!p.original_active&&!p.sample_active&&!p.leaf_active&&p.gate,"leaf source already attached/active/gate absent");
+  need(static_cast<bool>(state),"moved leaf session");auto& p=*state;try{need(!p.status.attached&&!p.original_active&&!p.leaf_active&&p.gate,"leaf source already attached/active/gate absent");
     // Transfer before matching so failed binding retains genuine return as well.
     p.owner.emplace(bindCaptureInventory(std::move(source),std::move(*p.gate)));p.status.attached=true;
     const auto& actual=p.owner->genuineSource();need(actual.originalAssembly().captureOriginToken()==p.source_origin&&actual.capture_partition_==p.partition,"returned leaf source/partition mismatch");
@@ -244,38 +206,6 @@ struct CaptureLeafFactory {
     // Already refused capture MUST still retain failed source, without restoring success.
     if(!actual.hasCompleteCost())p.reject(actual.refusal().empty()?"returned source refused":actual.refusal().data());
   }catch(const std::exception& e){p.reject(e.what());throw;}catch(...){p.reject("NONSTANDARD_LEAF_ATTACHMENT_FAILURE");throw;}
-  }
-
-  static void sampleHealthy(const std::shared_ptr<CaptureLeafState>& p){
-    try{p->healthy();need(p->sample_active&&p->sample&&!p->original_active,"sample leaf outside actual callback");}
-    catch(const std::exception& e){p->reject(e.what());throw;}catch(...){p->reject("NONSTANDARD_SAMPLE_SCOPE_FAILURE");throw;}
-  }
-  static void sampleLeaf(std::shared_ptr<CaptureLeafState> p,R role,const NumericLeafConsumer& consumer){
-    try{sampleHealthy(p);need(!p->leaf_active,"sample leaf reentry");auto frame=p->budget.reserve(20);p->budget.chargeScratchOrCopy(20);
-      const auto* view=p->sample;const Count du=view->controlCount();NumericLeafInfo meta;ChunkScalarSource read;
-      switch(role){case R::SampleEvaluatedOffset:meta=info(role,p->current_sample,0,{30});read=[view](Count i){return ChunkScalar::f64(view->offset(i));};break;
-        case R::SampleEvaluatedActualOffset:meta=info(role,p->current_sample,0,{30});read=[view](Count i){return ChunkScalar::f64(view->actualOffset(i));};break;
-        case R::SampleEvaluatedControl:meta=info(role,p->current_sample,0,{30,du});read=[view,du](Count i){return ChunkScalar::f64(view->control(i/du,i%du));};break;
-        case R::SampleEvaluatedInitial:meta=info(role,p->current_sample,0,{30,30});read=[view](Count i){return ChunkScalar::f64(view->initial(i/30,i%30));};break;
-        default:throw std::invalid_argument("not an actual current sample numeric role");}
-      visit(p,meta,std::move(read),consumer);
-    }catch(const std::exception& e){p->reject(e.what());throw;}catch(...){p->reject("NONSTANDARD_SAMPLE_LEAF_BIND_FAILURE");throw;}
-  }
-  static void streamSamples(std::shared_ptr<CaptureLeafState> p,const std::function<void(const SampleLeafBatch&)>& sink){
-    try{const bool attempted=p->status.samples_attempted;p->status.samples_attempted=true;
-      p->healthy();need(!attempted&&p->owner&&p->status.attached&&!p->original_active&&!p->sample_active&&!p->leaf_active&&!p->forensic_active&&sink,"sample sequence missing/reused/reentrant");
-      const auto frozen_sink=sink;p->healthy();need(static_cast<bool>(frozen_sink),"frozen sample callback empty");
-      applied(*p);const auto& a=p->owner->genuineSource().originalAssembly();const auto& samples=a.originalNormalization().maps().samples();
-      for(Count index=0;index<samples.size();++index){p->healthy();need(p->status.samples_completed==index,"sample original order/replay");
-        a.captureOnceSample(index,[&](const SampleAffineView& view){
-          p->healthy();const auto& native=samples.at(index);need(view.cell()==native.cell()&&view.tick()==native.physicalTick(),"actual sample provenance mismatch");
-          p->sample=&view;p->sample_active=true;p->current_sample=index;p->sample_cell=view.cell();p->sample_tick=view.tick();p->sample_cycle=native.cycle();p->sample_half=native.half();
-          try{const SampleLeafBatch batch(p);frozen_sink(batch);p->sample_active=false;p->sample=nullptr;p->healthy();++p->status.samples_completed;}
-          catch(...){p->sample_active=false;p->sample=nullptr;throw;}
-        });
-      }
-    }catch(const std::exception& e){p->sample_active=false;p->sample=nullptr;p->reject(e.what());throw;}
-    catch(...){p->sample_active=false;p->sample=nullptr;p->reject("NONSTANDARD_ONCE_SAMPLE_SEQUENCE_FAILURE");throw;}
   }
 
 };
@@ -293,14 +223,6 @@ std::string_view NumericLeafView::frontierStage() const{try{info();need(binding_
 OriginalLeafBatch::OriginalLeafBatch(std::shared_ptr<detail::CaptureLeafState> s):state_(std::move(s)){}
 void OriginalLeafBatch::withLeaf(R r,const NumericLeafConsumer& visitor) const{detail::CaptureLeafFactory::originalLeaf(state_,r,visitor);}
 void OriginalLeafBatch::exportLeaf(R r,const std::string& root,const std::string& name) const{detail::CaptureLeafFactory::originalLeaf(state_,r,[&](const NumericLeafView& leaf){detail::CaptureLeafFactory::exportBound(state_,leaf,root,name);});}
-SampleLeafBatch::SampleLeafBatch(std::shared_ptr<detail::CaptureLeafState> state):state_(std::move(state)){}
-Count SampleLeafBatch::sampleIndex() const{detail::CaptureLeafFactory::sampleHealthy(state_);return state_->current_sample;}
-Count SampleLeafBatch::cell() const{detail::CaptureLeafFactory::sampleHealthy(state_);return state_->sample_cell;}
-Count SampleLeafBatch::tick() const{detail::CaptureLeafFactory::sampleHealthy(state_);return state_->sample_tick;}
-Count SampleLeafBatch::cycle() const{detail::CaptureLeafFactory::sampleHealthy(state_);return state_->sample_cycle;}
-Count SampleLeafBatch::half() const{detail::CaptureLeafFactory::sampleHealthy(state_);return state_->sample_half;}
-void SampleLeafBatch::withLeaf(R role,const NumericLeafConsumer& visitor) const{detail::CaptureLeafFactory::sampleLeaf(state_,role,visitor);}
-void SampleLeafBatch::exportLeaf(R role,const std::string& root,const std::string& name) const{detail::CaptureLeafFactory::sampleLeaf(state_,role,[&](const NumericLeafView& leaf){detail::CaptureLeafFactory::exportBound(state_,leaf,root,name);});}
 CaptureLeafSession::CaptureLeafSession(std::shared_ptr<detail::CaptureLeafState> s):state_(std::move(s)){}
 CaptureLeafSession::CaptureLeafSession(CaptureLeafSession&&) noexcept=default;CaptureLeafSession& CaptureLeafSession::operator=(CaptureLeafSession&&) noexcept=default;CaptureLeafSession::~CaptureLeafSession()=default;
 InitialCostConsumer CaptureLeafSession::originalConsumer(const std::function<void(const OriginalLeafBatch&)>& term,const std::function<void(const OriginalLeafBatch&)>& canonical){
@@ -311,9 +233,8 @@ InitialCostConsumer CaptureLeafSession::originalConsumer(const std::function<voi
 void CaptureLeafSession::attachReturnedSource(CostDecodeOutcome&& source){detail::CaptureLeafFactory::attach(state_,std::move(source));}
 void CaptureLeafSession::withStoredLeaf(R r,Count first,Count second,const NumericLeafConsumer& visitor) const{need(static_cast<bool>(state_),"moved leaf session");detail::CaptureLeafFactory::stored(state_,r,first,second,visitor);}
 void CaptureLeafSession::exportStoredLeaf(R r,Count first,Count second,const std::string& root,const std::string& name){withStoredLeaf(r,first,second,[&](const NumericLeafView& leaf){detail::CaptureLeafFactory::exportBound(state_,leaf,root,name);});}
-void CaptureLeafSession::streamSamplesOnce(const std::function<void(const SampleLeafBatch&)>& sink){need(static_cast<bool>(state_),"moved leaf session");detail::CaptureLeafFactory::streamSamples(state_,sink);}
 void CaptureLeafSession::withDefinedRegions(Count layer,const NumericLeafConsumer& visitor) const{
-  need(static_cast<bool>(state_),"moved leaf session");auto p=state_;try{need(p->owner&&p->status.attached,"defined region owner absent");p->forensicHealthy();need(!p->leaf_active&&!p->original_active&&!p->sample_active&&!p->forensic_active,"defined region reentry");
+  need(static_cast<bool>(state_),"moved leaf session");auto p=state_;try{need(p->owner&&p->status.attached,"defined region owner absent");p->forensicHealthy();need(!p->leaf_active&&!p->original_active&&!p->forensic_active,"defined region reentry");
   p->forensic_active=true;struct Guard{bool& flag;Guard(bool& f):flag(f){}~Guard(){flag=false;}} guard(p->forensic_active);++p->forensic.generations;const auto& decoded=p->owner->genuineSource();Count ordinal=0;
   auto observe=[&](const RetainedNumericRegionView& region){auto frame=p->budget.reserve(20);p->budget.chargeScratchOrCopy(20);auto meta=detail::CaptureLeafFactory::info(R::FailureDefinedRegions,layer,ordinal++,{region.definedCount()},true);meta.has_composite_frontier=true;meta.state=DefinedComputedState::DefinedNotComputed;meta.assigned_prefix_known=false;meta.traversal="actual-defined-range-with-strided-write-frontiers";
     detail::CaptureLeafFactory::visit(p,meta,[&region](Count i){const auto value=ChunkScalar::f64(region.value(i));return ChunkScalar::failureF64Bits(value.bits);},visitor,&region.trace(),true);};
@@ -326,6 +247,6 @@ void CaptureLeafSession::withDefinedRegions(Count layer,const NumericLeafConsume
 CaptureLeafObservation CaptureLeafSession::observation() const{need(static_cast<bool>(state_),"moved leaf session");return state_->status;}
 ForensicBorrowObservation CaptureLeafSession::forensicObservation() const{need(static_cast<bool>(state_),"moved leaf session");return state_->forensic;}
 const std::vector<BoundLeafAttempt>& CaptureLeafSession::retainedAttempts() const{need(static_cast<bool>(state_),"moved leaf session");return state_->attempts;}
-void CaptureLeafSession::close(){need(static_cast<bool>(state_),"moved leaf session");try{state_->healthy();need(!state_->original_active&&!state_->sample_active&&!state_->leaf_active,"leaf close inside callback");state_->status.closed=true;}catch(const std::exception& e){state_->reject(e.what());throw;}catch(...){state_->reject("NONSTANDARD_LEAF_CLOSE_FAILURE");throw;}}
+void CaptureLeafSession::close(){need(static_cast<bool>(state_),"moved leaf session");try{state_->healthy();need(!state_->original_active&&!state_->leaf_active,"leaf close inside callback");state_->status.closed=true;}catch(const std::exception& e){state_->reject(e.what());throw;}catch(...){state_->reject("NONSTANDARD_LEAF_CLOSE_FAILURE");throw;}}
 CaptureLeafSession prepareCaptureLeaves(const AffineAssemblyOutcome& source,const CaptureWorkspaceGrant& grant){return detail::CaptureLeafFactory::prepare(source,grant);}
 }
