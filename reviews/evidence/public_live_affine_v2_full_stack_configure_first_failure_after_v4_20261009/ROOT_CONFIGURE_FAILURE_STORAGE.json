@@ -1,0 +1,23 @@
+{
+  "scope": "First failed configure evidence retained outside public Git",
+  "archive": {
+    "file": "configure-first-failure.tar.gz",
+    "bytes": 792866,
+    "sha256": "a3fbe6c2cdcadd6facaa009bdd826466ba22732b487416d40ca1dd0970b21649",
+    "regular_file_count": 59,
+    "payload_file_count": 58,
+    "inner_ready_sha256": "0c6d77ad907c03d51d589a67bb1758c12fabe5c9e8c140088a5c8d792ddfdfa4"
+  },
+  "Mac_archive": "/Users/uot/Documents/ChatGPT/ros/results/phase5-reference/full-stack-configure-only-once-after-v4-20261009/root-retained-failure-attempt1/configure-first-failure.tar.gz",
+  "Dell_archive": "/mnt/d/CodexTransfer/projects/predictive_motion/checkpoints/full-stack-configure-only-once-after-v4-20261009/root-retained-failure-attempt1/configure-first-failure.tar.gz",
+  "Mac_payloads_verified": true,
+  "Dell_payloads_verified": true,
+  "Dell_verification": {
+    "archive_sha256": "a3fbe6c2cdcadd6facaa009bdd826466ba22732b487416d40ca1dd0970b21649",
+    "payloads_verified": 58
+  },
+  "source_ready_sha256": "dd72edb89f00506a51cec85e44fe8f530a85c1abaeacec192bf2a55689ad070b",
+  "publication": "Compact authored failure review/storage only; raw cache/trace/identity and tool outputs excluded",
+  "phase5": "NOT_ACCEPTED",
+  "phase6": "NOT_STARTED"
+}
