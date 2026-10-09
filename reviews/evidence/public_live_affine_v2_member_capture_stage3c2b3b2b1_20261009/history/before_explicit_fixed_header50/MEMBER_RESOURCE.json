@@ -1,0 +1,48 @@
+{
+  "validation": "Python stdlib static integer formulas only. No planner/budget/identity/loader or source function executed.",
+  "fields": {
+    "per_file_identity_scalar": 1,
+    "per_relation_fields": 8,
+    "per_library_identity_scalar": 1,
+    "fixed_status_targets_hash_loader_and_scalar_cache_header": 48
+  },
+  "stored_expression": "9*F+L+48",
+  "transient": {
+    "hash": 8224,
+    "source_recheck_or_copy": 40,
+    "canonical_buffer4097_rounded": 513,
+    "canonical_total": 528,
+    "maps_line16384": 2048,
+    "maps_cache128": 16,
+    "maps_control": 24,
+    "maps_total": 2088,
+    "source_hash_peak": 8264
+  },
+  "plan": {
+    "added_live": "S+8264",
+    "added_charges": "S+8264+2*B+262144*(F+L)+576*F+536*L+64*F",
+    "caps_unchanged": true,
+    "short_EINTR_extra_maps_reuse": "Actual before-reuse charge may refuse; planning formula is not a full-flow completion proof"
+  },
+  "conditional_arithmetic_example": {
+    "F": 70,
+    "L": 1,
+    "B": 1048576,
+    "S": 679,
+    "added_live": 8943,
+    "added_charges": 20763655,
+    "declared_example_not_observed_pipeline": true
+  },
+  "scope": "All new fields/tickets actual admission before materialization; old bounded YAML/legacy hash/SDK bootstrap RSS not retroactively claimed metered",
+  "phase5": "NOT_ACCEPTED",
+  "phase6": "NOT_STARTED",
+  "executions": {
+    "CPP": 0,
+    "budget": 0,
+    "IO": 0,
+    "identity": 0,
+    "loader": 0,
+    "Model": 0,
+    "numeric": 0
+  }
+}

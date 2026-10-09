@@ -167,12 +167,6 @@ ResourcePlan planResources(const CycleMesh& mesh, const FactorShape& f,
   return out;
 }
 
-ResourcePlan planResourcesWithMemberCaptureV1(const CycleMesh& mesh,const FactorShape& shape,CaptureMode mode,NumericEncoding encoding,Count slots,Count charges){
-  auto plan=planResources(mesh,shape,mode,encoding);need(slots>0&&charges>=slots,"actual member capture storage/charge envelope required");
-  plan.member_slots_=slots;plan.member_charges_=charges;plan.live_=checkedAdd(plan.live_,slots);plan.charges_=checkedAdd(plan.charges_,charges);
-  need(plan.live_<=ResourcePolicyV2::live_slots&&plan.charges_<=ResourcePolicyV2::case_charges,"member evidence exceeds unchanged hard resource cap");return plan;
-}
-
 namespace detail {
 struct BatchState { Count live = 0, cumulative = 0; };
 struct CaseState {
@@ -258,7 +252,6 @@ ChunkIOLease::ChunkIOLease(std::shared_ptr<detail::CaseState> s):state_(std::mov
 ChunkIOLease::~ChunkIOLease(){if(state_)state_->chunk_io_active=false;}
 void ChunkIOLease::requireHealthy() const {auto& s=valid(state_);need(s.chunk_io_active&&!s.chunk_io_reentry,"CHUNK_IO_REENTRY_OR_CLOSED_LEASE");}
 const char* ChunkIOLease::firstReentryReason() const noexcept{return state_&&state_->chunk_io_reentry?"CHUNK_IO_REENTRY":nullptr;}
-bool CaseBudget::sameBatch(const BatchBudget& batch) const noexcept{return state_&&state_->batch==batch.state_;}
 Count CaseBudget::liveSlots() const { return valid(state_).live; }
 Count CaseBudget::cumulativeCharges() const { return valid(state_).cumulative; }
 Count CaseBudget::outputBytes() const { return valid(state_).output; }

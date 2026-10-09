@@ -199,7 +199,7 @@ class ChunkIOLease final {
 struct FileIdentity { std::string path, sha256; Count bytes = 0; };
 FileIdentity observePinnedFile(const std::string& path,
                               const std::string& expected_sha256);
-struct MemberIdentityObservationV1 {const char* stage="NOT_ATTEMPTED";Count bytes_read=0,attempted_read_bytes=0,device=0,inode=0,size=0;bool physical_eof=false,hash_state_valid=false,hash_valid=false,refused=false;std::string physical_sha256,first_error;};
+struct MemberIdentityObservationV1 {const char* stage="NOT_ATTEMPTED";Count bytes_read=0,attempted_read_bytes=0,device=0,inode=0,size=0;bool physical_eof=false,hash_valid=false,refused=false;std::string physical_sha256,first_error;};
 FileIdentity observePinnedFileWithMemberBudgetV1(SharedCaseBudget,const FileIdentity&,MemberIdentityObservationV1&);
 FileIdentity observeCurrentProducerElfWithMemberBudgetV1(SharedCaseBudget,const std::string& expected_sha,Count expected_bytes,MemberIdentityObservationV1&);
 FileIdentity observeCurrentProducerElf(const std::string& expected_sha256);

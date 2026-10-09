@@ -1,0 +1,58 @@
+{
+  "scope": "First independent static review of unfrozen B3B2B1 draft; no source functions or compiler executed",
+  "source_baseline": "b807c2f1fbce7cc9d8785dec6f6c199ddbd553c2",
+  "draft_identity": "Unfrozen text inspected in tool output; exact preserved before/final payload identity must be established by the final packet, not this record",
+  "findings": [
+    {
+      "id": "ACTUAL_CAPACITY_NOT_FUNDED",
+      "fact": "Draft held ticket9*F+L+32 but appends into relations/files/file_roles/libraries without actual reserve/capacity checks. Vector growth can allocate more numeric slots than admitted F/L; size accounting alone cannot prove capacity accounting.",
+      "required": "Reserve actual admitted bounded containers before append, validate exact capacity or use exact fixed storage, and charge all actual allocation/materialization/copy work with retained failure prefix."
+    },
+    {
+      "id": "SDK_HASH_FAILURE_OBSERVATION_DROPPED",
+      "fact": "Budgeted verifyLoadedLibraries uses a local observation, which dies on hash failure, while private owner retains an earlier observation.",
+      "required": "Route actual SDK hash observation directly to the private current owner with bounded charged reset and exact active-file provenance; preserve first failure."
+    },
+    {
+      "id": "PREFIX_DIGEST_VALIDITY_AMBIGUOUS",
+      "fact": "Draft sets hash_valid on stream initialization/update but physical_sha256 remains empty on read/EOF/fstat failure.",
+      "required": "Separate stream-state validity from retained digest validity; actual prefix finalization needs real lifetime/charges, otherwise mark digest missing/invalid without reread or fabricated SHA."
+    },
+    {
+      "id": "RECHECK_FRAME_AND_LOADER_ACCOUNTING",
+      "fact": "Draft V2 recheck charges scalar scratch without reserving its declared40 source frame; legacy loader path sets/maps/string/stream parsing also require an explicit accounting boundary.",
+      "required": "Reserve actual planned source frame and document/fund actual V2 work. Old bootstrap or unaccounted loader work cannot be certified as covered by SDK allowance or fake prepay; unresolved pre-Model budget gaps must remain blockers."
+    },
+    {
+      "id": "LOADER_PATH_SILENT_SKIP",
+      "fact": "memberLoaded condition skipped a nonempty dlpi_name exceeding4096 instead of refusing the supposedly complete census.",
+      "required": "Every nonempty non-vdso loader entry must satisfy bounded name before canonicalization; overflow refuses."
+    },
+    {
+      "id": "LOADER_CURRENT_RECORD_STALE",
+      "fact": "Per-library loader result reset only at overall entry; later library canonical/hash failure could expose prior library mapped/parsed/inode flags at a new index.",
+      "required": "Clear and charge current-library record before any attempt; separate active provenance/index/known from completed-library count and last actual hash target."
+    },
+    {
+      "id": "CANONICAL_BUFFER_ROUNDING",
+      "fact": "4097-byte zero-initialized buffer charged512 double slots, one short of ceil4097/8.",
+      "required": "Charge513 initialization and declare actual temporary layout within real reservation."
+    }
+  ],
+  "status": "Awaiting preserved repairs and stable source packet review",
+  "source_function_executions": 0,
+  "full_capture_complete": false,
+  "full_flow_accepted": false,
+  "phase5": "NOT_ACCEPTED",
+  "phase6": "NOT_STARTED",
+  "preliminary_repairs_observed": [
+    "V2 exact capacity reserve/check and guarded pushes",
+    "Private SDK latest identity observation retained with declared-library target",
+    "Live stream-state history and retained digest validity separated",
+    "Actual recheck40 reservation and separate bounded V2 loader path",
+    "Loader overlong nonempty name refuses",
+    "Each current library clears map result before canonical/hash and has separate successful-count/active-index",
+    "Canonical4097 initialization charged513"
+  ],
+  "acceptance": "Pending final frozen payload/source-contract/resource review; no execution or complete budget/phase admission"
+}

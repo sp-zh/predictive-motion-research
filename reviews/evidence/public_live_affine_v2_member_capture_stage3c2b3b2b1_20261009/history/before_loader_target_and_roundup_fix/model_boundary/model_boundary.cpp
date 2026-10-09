@@ -11,9 +11,6 @@
 #include <limits>
 #include <locale>
 #include <map>
-#include <optional>
-#include <cstring>
-#include <string_view>
 #include <set>
 #include <regex>
 #include <sstream>
@@ -237,7 +234,7 @@ void mappedIdentity(const std::string& path) {
   need(found,"reviewed library absent from actual process mappings");
 }
 // V2-specific bounded loader observation. Legacy helpers above are unchanged.
-std::string memberCanonical(const char* path,SharedCaseBudget budget){need(path,"member loaded path absent");const auto length=::strnlen(path,4097);need(length>0&&length<=4096,"member actual loader path cap before copy");auto ticket=budget.reserve(528);budget.chargeScratchOrCopy(513);std::array<char,4097> buffer{};need(::realpath(path,buffer.data()),"member canonical loader path unavailable");const auto bytes=::strnlen(buffer.data(),buffer.size());need(bytes>0&&bytes<=4096,"member canonical result cap");budget.chargeMetadataBytes(bytes);budget.chargeScratchOrCopy((bytes+7)/8);return std::string(buffer.data(),bytes);}
+std::string memberCanonical(const char* path,SharedCaseBudget budget){need(path,"member loaded path absent");const auto length=::strnlen(path,4097);need(length>0&&length<=4096,"member actual loader path cap before copy");auto ticket=budget.reserve(528);budget.chargeScratchOrCopy(512);std::array<char,4097> buffer{};need(::realpath(path,buffer.data()),"member canonical loader path unavailable");const auto bytes=::strnlen(buffer.data(),buffer.size());need(bytes>0&&bytes<=4096,"member canonical result cap");budget.chargeMetadataBytes(bytes);budget.chargeScratchOrCopy((bytes+7)/8);return std::string(buffer.data(),bytes);}
 struct MemberLoaderNames {SharedCaseBudget budget;MemberLoaderObservationV1& observation;std::set<std::string> paths;std::exception_ptr error;};
 int memberLoaded(struct dl_phdr_info* info,std::size_t,void* data){auto& result=*static_cast<MemberLoaderNames*>(data);try{result.budget.chargeScratchOrCopy(4);const char* name=info->dlpi_name;if(name&&*name){const auto length=::strnlen(name,4097);need(length<=4096,"actual loader path length overflow");if(std::string_view(name,length)!="linux-vdso.so.1"){need(result.paths.size()<512,"member actual loader set cap");auto path=memberCanonical(name,result.budget);result.paths.insert(std::move(path));}}}catch(...){result.observation.refused=true;result.error=std::current_exception();return 1;}return 0;}
 void memberMapped(const std::string& path,SharedCaseBudget budget,const MemberIdentityObservationV1& identity,MemberLoaderObservationV1& observation){
@@ -256,9 +253,9 @@ void memberMapped(const std::string& path,SharedCaseBudget budget,const MemberId
   observation.stage="READ_ACTUAL_MEMBER_MAPS";budget.chargeScratchOrCopy(2048);for(;;){const int ch=get();if(ch==-2)continue;if(ch<0){if(length)parse();break;}if(ch=='\n'){parse();length=0;budget.chargeScratchOrCopy(2048);}else{need(length<line.size(),"member map line byte cap");line[length++]=static_cast<char>(ch);}}
   need(found,"actual member library absent from process maps");observation.mapped=true;
 }
-void verifyMemberLoadedLibraries(const std::vector<FileIdentity>& libraries,SharedCaseBudget budget,MemberIdentityObservationV1& identity,MemberLoaderObservationV1& observation,MemberCaptureStatus& status){
+void verifyMemberLoadedLibraries(const std::vector<FileIdentity>& libraries,SharedCaseBudget budget,MemberIdentityObservationV1& identity,MemberLoaderObservationV1& observation){
   try{budget.chargeScratchOrCopy(16);observation=MemberLoaderObservationV1{};observation.stage="ACTUAL_MEMBER_LOADER_SET";MemberLoaderNames names{budget,observation,{},nullptr};::dl_iterate_phdr(memberLoaded,&names);if(names.error)std::rethrow_exception(names.error);
-    std::set<std::string> expected;for(Count index=0;index<libraries.size();++index){budget.chargeScratchOrCopy(12);observation.current_library_index=index;observation.current_library_known=true;observation.lines=0;observation.inode=0;observation.major_id=0;observation.minor_id=0;observation.parsed=false;observation.mapped=false;observation.stage="CANONICAL_CURRENT_DECLARED_LIBRARY";const auto& file=libraries[index];auto canonical_path=memberCanonical(file.path.c_str(),budget);need(canonical_path==file.path&&expected.insert(std::move(canonical_path)).second,"member canonical SDK declaration duplicate/differs");budget.chargeScratchOrCopy(20);identity=MemberIdentityObservationV1{};status.identity_target_kind=MemberIdentityTargetKind::DeclaredLibrary;status.identity_target_index=index;status.identity_target_known=true;status.active_member_known=false;observePinnedFileWithMemberBudgetV1(budget,file,identity);memberMapped(file.path,budget,identity,observation);observation.libraries_checked=index+1;}
+    std::set<std::string> expected;for(Count index=0;index<libraries.size();++index){observation.libraries_checked=index;const auto& file=libraries[index];auto canonical_path=memberCanonical(file.path.c_str(),budget);need(canonical_path==file.path&&expected.insert(std::move(canonical_path)).second,"member canonical SDK declaration duplicate/differs");budget.chargeScratchOrCopy(16);identity=MemberIdentityObservationV1{};observePinnedFileWithMemberBudgetV1(budget,file,identity);memberMapped(file.path,budget,identity,observation);}
     need(names.paths==expected,"actual member loader set differs from complete SDK declaration");observation.libraries_checked=libraries.size();observation.stage="VERIFIED_ACTUAL_MEMBER_LOADER_SET";
   }catch(...){observation.refused=true;throw;}
 }
@@ -338,10 +335,10 @@ struct ForecastFactory {
   static void recheck(ForecastReleaseState& r){
     if(!r.members){verify(r.review);verify(r.protocol);observeCurrentProducerElf(r.producer.sha256);for(const auto& f:r.files)verify(f);verifyLoadedLibraries(r.libraries);return;}
     auto& m=*r.members;try{auto frame=m.budget.reserve(40);m.budget.chargeScratchOrCopy(40);need(!m.status.refused&&m.status.admitted,"member source not admitted/first refusal retained");
-      auto check=[&](const FileIdentity& f,MemberIdentityTargetKind kind,Count index=0){m.budget.chargeScratchOrCopy(20);m.status.identity_target_kind=kind;m.status.identity_target_index=index;m.status.identity_target_known=true;m.status.active_member_known=false;m.latest_identity=MemberIdentityObservationV1{};observePinnedFileWithMemberBudgetV1(m.budget,f,m.latest_identity);};
-      check(r.review,MemberIdentityTargetKind::Review);check(r.protocol,MemberIdentityTargetKind::Protocol);{m.budget.chargeScratchOrCopy(20);m.status.identity_target_kind=MemberIdentityTargetKind::Producer;m.status.identity_target_index=0;m.status.identity_target_known=true;m.status.active_member_known=false;m.latest_identity=MemberIdentityObservationV1{};observeCurrentProducerElfWithMemberBudgetV1(m.budget,r.producer.sha256,r.producer.bytes,m.latest_identity);}for(Count i=0;i<r.files.size();++i)check(r.files[i],MemberIdentityTargetKind::MemberFile,i);
+      auto check=[&](const FileIdentity& f){m.budget.chargeScratchOrCopy(16);m.latest_identity=MemberIdentityObservationV1{};observePinnedFileWithMemberBudgetV1(m.budget,f,m.latest_identity);};
+      check(r.review);check(r.protocol);{m.budget.chargeScratchOrCopy(16);m.latest_identity=MemberIdentityObservationV1{};observeCurrentProducerElfWithMemberBudgetV1(m.budget,r.producer.sha256,r.producer.bytes,m.latest_identity);}for(const auto& f:r.files)check(f);
       #if defined(__linux__)
-      verifyMemberLoadedLibraries(r.libraries,m.budget,m.latest_identity,m.latest_loader,m.status);
+      verifyMemberLoadedLibraries(r.libraries,m.budget,m.latest_identity,m.latest_loader);
 #else
       throw std::invalid_argument("member loaded verifier requires Linux");
 #endif
@@ -405,7 +402,7 @@ struct ForecastFactory {
       need(text(source_node["schema"])=="PUBLIC_LIVE_AFFINE_V2_SOURCE_CLOSURE_1"&&text(sdk_node["schema"])=="PUBLIC_LIVE_AFFINE_V2_SDK_CLOSURE_1","wrong member parent schema");
       for(const auto& node:{source_node,sdk_node})need(node["files"].IsSequence()&&node["files"].size()>0&&node["files"].size()<=4096,"bounded actual member roster");need(sdk_node["loaded_libraries"].IsSequence()&&sdk_node["loaded_libraries"].size()>0&&sdk_node["loaded_libraries"].size()<=512,"bounded declared loaded roster");
       source_count=source_node["files"].size();sdk_count=sdk_node["files"].size();loaded_count=sdk_node["loaded_libraries"].size();
-      auto base=memberBasePlan(invocation_node);const Count total=checkedAdd(9,checkedAdd(source_count,sdk_count));const Count held=checkedAdd(50,checkedAdd(checkedMultiply(9,total),loaded_count));
+      auto base=memberBasePlan(invocation_node);const Count total=checkedAdd(9,checkedAdd(source_count,sdk_count));const Count held=checkedAdd(48,checkedAdd(checkedMultiply(9,total),loaded_count));
       Count bytes=checkedAdd(r->review.bytes,checkedAdd(r->protocol.bytes,r->producer.bytes));for(const auto& pair:by_role)bytes=checkedAdd(bytes,pair.second.bytes);
       for(const auto& node:{source_node,sdk_node})for(const auto& item:node["files"]){keys(item,{"role","path","sha256","bytes"});bytes=checkedAdd(bytes,integer(item["bytes"]));}
       const auto cost=artifact(invocation_node["cost_input"]["artifact"]);bytes=checkedAdd(bytes,cost.identity.bytes);
@@ -430,7 +427,7 @@ struct ForecastFactory {
     need(text(build["schema"])=="PUBLIC_LIVE_AFFINE_V2_BUILD_BINDING_1"&&text(build["target"])=="public_live_affine_v2_model_boundary"&&
       text(build["producer_sha256"])==r->producer.sha256&&text(build["source_closure_sha256"])==by_role.at("source_closure").sha256&&
       text(build["sdk_manifest_sha256"])==by_role.at("sdk_manifest").sha256,"build/source/SDK binding mismatch");
-    const std::set<std::string> required_sources={"foundation.hpp","foundation_context.cpp","foundation_identity.cpp","foundation_resources.cpp",
+    const std::set<std::string> required_sources={"foundation.hpp","foundation_context.cpp","foundation_identity.cpp","foundation_resources.cpp","member_capture_contract",
       "model_boundary.hpp","model_boundary.cpp","model_boundary_CMakeLists","foundation_CMakeLists",
       "normalization.hpp","normalization.cpp","normalization_CMakeLists",
       "affine_assembly.hpp","affine_assembly.cpp","affine_CMakeLists",
@@ -452,9 +449,9 @@ struct ForecastFactory {
       const auto files=closure["files"];need(files.IsSequence()&&files.size()>0&&files.size()<=4096,"bounded complete closure required");
       std::set<std::string> roles,paths;std::map<std::string,FileIdentity> verified;
       Count ordinal=0;for(const auto& item:files){std::optional<MemberFrame> member_frame;if(r->members)member_frame.emplace(*r->members);auto a=r->members?memberArtifact(item,*r->members):artifact(item);if(r->members){r->members->budget.chargeMetadataBytes(checkedAdd(a.role.size(),a.identity.path.size()));r->members->budget.chargeScratchOrCopy((a.role.size()+a.identity.path.size()+7)/8);}need(roles.insert(a.role).second&&paths.insert(a.identity.path).second,"duplicate closure role/path");
-        FileIdentity f;if(r->members){auto& active=r->members->status;r->members->budget.chargeScratchOrCopy(6);active.active_file_index=r->files.size();active.active_native_ordinal=ordinal;active.active_parent_index=parentIndex(*r,manifest_role);active.active_group=std::string(manifest_role)=="source_closure"?VerifiedMemberGroup::SourceClosure:VerifiedMemberGroup::SDKClosure;active.active_member_known=true;active.identity_target_kind=MemberIdentityTargetKind::MemberFile;active.identity_target_index=active.active_file_index;active.identity_target_known=true;r->members->budget.chargeScratchOrCopy(20);r->members->latest_identity=MemberIdentityObservationV1{};f=observePinnedFileWithMemberBudgetV1(r->members->budget,a.identity,r->members->latest_identity);appendMember(*r,a.role,f,std::string(manifest_role)=="source_closure"?VerifiedMemberGroup::SourceClosure:VerifiedMemberGroup::SDKClosure,parentIndex(*r,manifest_role),false,ordinal);}else {f=verify(a.identity);r->files.push_back(f);}if(r->members){r->members->budget.chargeMetadataBytes(checkedAdd(checkedMultiply(2,f.path.size()),f.sha256.size()));r->members->budget.chargeScratchOrCopy(checkedAdd(1,(2*f.path.size()+f.sha256.size()+7)/8));}verified.emplace(f.path,f);++ordinal;}
+        FileIdentity f;if(r->members){auto& active=r->members->status;r->members->budget.chargeScratchOrCopy(6);active.active_file_index=r->files.size();active.active_native_ordinal=ordinal;active.active_parent_index=parentIndex(*r,manifest_role);active.active_group=std::string(manifest_role)=="source_closure"?VerifiedMemberGroup::SourceClosure:VerifiedMemberGroup::SDKClosure;active.active_member_known=true;r->members->budget.chargeScratchOrCopy(16);r->members->latest_identity=MemberIdentityObservationV1{};f=observePinnedFileWithMemberBudgetV1(r->members->budget,a.identity,r->members->latest_identity);appendMember(*r,a.role,f,std::string(manifest_role)=="source_closure"?VerifiedMemberGroup::SourceClosure:VerifiedMemberGroup::SDKClosure,parentIndex(*r,manifest_role),false,ordinal);}else {f=verify(a.identity);r->files.push_back(f);}if(r->members){r->members->budget.chargeMetadataBytes(checkedAdd(checkedMultiply(2,f.path.size()),f.sha256.size()));r->members->budget.chargeScratchOrCopy(checkedAdd(1,(2*f.path.size()+f.sha256.size()+7)/8));}verified.emplace(f.path,f);++ordinal;}
       if(std::string(manifest_role)=="source_closure") {
-        for(const auto& role:required_sources)need(roles.count(role)==1,"source closure omitted required compiled source/target");if(r->members)need(roles.count("member_capture_contract")==1,"versioned member closure omitted actual capture contract");
+        for(const auto& role:required_sources)need(roles.count(role)==1,"source closure omitted required compiled source/target");
       } else {
         auto libs=closure["loaded_libraries"];need(libs.IsSequence()&&libs.size()>0&&libs.size()<=512,"full loaded SDK library roster required");
         std::set<std::string> unique;
@@ -471,7 +468,7 @@ struct ForecastFactory {
       "unchanged derivative policy/versioned envelope mismatch");
     if(r->members){
 #if defined(__linux__)
-      auto loader_frame=r->members->budget.reserve(40);r->members->budget.chargeScratchOrCopy(40);verifyMemberLoadedLibraries(r->libraries,r->members->budget,r->members->latest_identity,r->members->latest_loader,r->members->status);
+      auto loader_frame=r->members->budget.reserve(40);r->members->budget.chargeScratchOrCopy(40);verifyMemberLoadedLibraries(r->libraries,r->members->budget,r->members->latest_identity,r->members->latest_loader);
 #else
       throw std::invalid_argument("member loaded verifier requires Linux");
 #endif
@@ -512,7 +509,7 @@ struct ForecastFactory {
                          integer(f["addition_coefficients"]),integer(f["addition_records"])};
     const auto binding=n["cost_input"];keys(binding,{"artifact","semantic_sha256"});
     auto cost_artifact=r->members?memberArtifact(binding["artifact"],*r->members):artifact(binding["artifact"]);need(cost_artifact.role=="cost_input","cost input role mismatch");
-    FileIdentity cost_identity;if(r->members){r->members->budget.chargeScratchOrCopy(20);r->members->status.identity_target_kind=MemberIdentityTargetKind::CostInput;r->members->status.identity_target_index=0;r->members->status.identity_target_known=true;r->members->status.active_member_known=false;r->members->latest_identity=MemberIdentityObservationV1{};cost_identity=observePinnedFileWithMemberBudgetV1(r->members->budget,cost_artifact.identity,r->members->latest_identity);}else cost_identity=verify(cost_artifact.identity);const auto semantic=r->members?memberText(binding["semantic_sha256"],*r->members,64):text(binding["semantic_sha256"],64);
+    FileIdentity cost_identity;if(r->members){r->members->budget.chargeScratchOrCopy(16);r->members->latest_identity=MemberIdentityObservationV1{};cost_identity=observePinnedFileWithMemberBudgetV1(r->members->budget,cost_artifact.identity,r->members->latest_identity);}else cost_identity=verify(cost_artifact.identity);const auto semantic=r->members?memberText(binding["semantic_sha256"],*r->members,64):text(binding["semantic_sha256"],64);
     need(semantic.size()==64,"cost semantic SHA256 length");
     for(char ch:semantic)need((ch>='0'&&ch<='9')||(ch>='a'&&ch<='f'),"cost semantic SHA256 hex");
     const auto capture=text(n["capture_mode"]),encoding=text(n["encoding"]);

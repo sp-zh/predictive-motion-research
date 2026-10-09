@@ -405,7 +405,7 @@ struct ForecastFactory {
       need(text(source_node["schema"])=="PUBLIC_LIVE_AFFINE_V2_SOURCE_CLOSURE_1"&&text(sdk_node["schema"])=="PUBLIC_LIVE_AFFINE_V2_SDK_CLOSURE_1","wrong member parent schema");
       for(const auto& node:{source_node,sdk_node})need(node["files"].IsSequence()&&node["files"].size()>0&&node["files"].size()<=4096,"bounded actual member roster");need(sdk_node["loaded_libraries"].IsSequence()&&sdk_node["loaded_libraries"].size()>0&&sdk_node["loaded_libraries"].size()<=512,"bounded declared loaded roster");
       source_count=source_node["files"].size();sdk_count=sdk_node["files"].size();loaded_count=sdk_node["loaded_libraries"].size();
-      auto base=memberBasePlan(invocation_node);const Count total=checkedAdd(9,checkedAdd(source_count,sdk_count));const Count held=checkedAdd(50,checkedAdd(checkedMultiply(9,total),loaded_count));
+      auto base=memberBasePlan(invocation_node);const Count total=checkedAdd(9,checkedAdd(source_count,sdk_count));const Count held=checkedAdd(48,checkedAdd(checkedMultiply(9,total),loaded_count));
       Count bytes=checkedAdd(r->review.bytes,checkedAdd(r->protocol.bytes,r->producer.bytes));for(const auto& pair:by_role)bytes=checkedAdd(bytes,pair.second.bytes);
       for(const auto& node:{source_node,sdk_node})for(const auto& item:node["files"]){keys(item,{"role","path","sha256","bytes"});bytes=checkedAdd(bytes,integer(item["bytes"]));}
       const auto cost=artifact(invocation_node["cost_input"]["artifact"]);bytes=checkedAdd(bytes,cost.identity.bytes);

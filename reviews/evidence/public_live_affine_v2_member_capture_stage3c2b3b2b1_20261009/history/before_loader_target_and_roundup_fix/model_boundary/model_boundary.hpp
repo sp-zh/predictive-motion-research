@@ -3,7 +3,6 @@
 #include "public_coupled_augmented_extension.hpp"
 #include <memory>
 #include <string>
-#include <string_view>
 #include <vector>
 
 namespace phase5_public_live_affine_v2 {
@@ -77,9 +76,8 @@ struct VerifiedMemberRelation {
   VerifiedMemberGroup group=VerifiedMemberGroup::Protocol;
   bool parent_is_protocol=false,declared_loaded=false,verified=false;
 }; //8 real logical fields; FileIdentity.bytes adds1 per actual file.
-enum class MemberIdentityTargetKind {NotCaptured,Review,Protocol,Producer,MemberFile,DeclaredLibrary,CostInput};
-struct MemberLoaderObservationV1 {const char* stage="NOT_ATTEMPTED";Count libraries_checked=0,current_library_index=0,lines=0,inode=0,major_id=0,minor_id=0;bool current_library_known=false,parsed=false,mapped=false,refused=false;};
-struct MemberCaptureStatus {Count expected_files=0,actual_files=0,declared_libraries=0,verified_loader_checks=0,active_file_index=0,active_native_ordinal=0,active_parent_index=0;VerifiedMemberGroup active_group=VerifiedMemberGroup::Protocol;bool active_member_known=false;MemberIdentityTargetKind identity_target_kind=MemberIdentityTargetKind::NotCaptured;Count identity_target_index=0;bool identity_target_known=false;bool admitted=false,complete=false,refused=false;std::string first_error;};
+struct MemberLoaderObservationV1 {const char* stage="NOT_ATTEMPTED";Count libraries_checked=0,lines=0,inode=0,major_id=0,minor_id=0;bool parsed=false,mapped=false,refused=false;};
+struct MemberCaptureStatus {Count expected_files=0,actual_files=0,declared_libraries=0,verified_loader_checks=0,active_file_index=0,active_native_ordinal=0,active_parent_index=0;VerifiedMemberGroup active_group=VerifiedMemberGroup::Protocol;bool active_member_known=false;bool admitted=false,complete=false,refused=false;std::string first_error;};
 class OwnedPublicForecast final {
  public:
   OwnedPublicForecast(const OwnedPublicForecast&) = delete;

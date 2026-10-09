@@ -11,9 +11,6 @@
 #include <limits>
 #include <locale>
 #include <map>
-#include <optional>
-#include <cstring>
-#include <string_view>
 #include <set>
 #include <regex>
 #include <sstream>
@@ -236,44 +233,18 @@ void mappedIdentity(const std::string& path) {
   }
   need(found,"reviewed library absent from actual process mappings");
 }
-// V2-specific bounded loader observation. Legacy helpers above are unchanged.
-std::string memberCanonical(const char* path,SharedCaseBudget budget){need(path,"member loaded path absent");const auto length=::strnlen(path,4097);need(length>0&&length<=4096,"member actual loader path cap before copy");auto ticket=budget.reserve(528);budget.chargeScratchOrCopy(513);std::array<char,4097> buffer{};need(::realpath(path,buffer.data()),"member canonical loader path unavailable");const auto bytes=::strnlen(buffer.data(),buffer.size());need(bytes>0&&bytes<=4096,"member canonical result cap");budget.chargeMetadataBytes(bytes);budget.chargeScratchOrCopy((bytes+7)/8);return std::string(buffer.data(),bytes);}
-struct MemberLoaderNames {SharedCaseBudget budget;MemberLoaderObservationV1& observation;std::set<std::string> paths;std::exception_ptr error;};
-int memberLoaded(struct dl_phdr_info* info,std::size_t,void* data){auto& result=*static_cast<MemberLoaderNames*>(data);try{result.budget.chargeScratchOrCopy(4);const char* name=info->dlpi_name;if(name&&*name){const auto length=::strnlen(name,4097);need(length<=4096,"actual loader path length overflow");if(std::string_view(name,length)!="linux-vdso.so.1"){need(result.paths.size()<512,"member actual loader set cap");auto path=memberCanonical(name,result.budget);result.paths.insert(std::move(path));}}}catch(...){result.observation.refused=true;result.error=std::current_exception();return 1;}return 0;}
-void memberMapped(const std::string& path,SharedCaseBudget budget,const MemberIdentityObservationV1& identity,MemberLoaderObservationV1& observation){
-  auto ticket=budget.reserve(2088); // line16384=2048/cache128=16/control24.
-  struct FD{int value=-1;~FD(){if(value>=0)::close(value);}} fd{::open("/proc/self/maps",O_RDONLY|O_CLOEXEC)};need(fd.value>=0,"actual member process maps unavailable");
-  std::array<char,16384> line;std::array<unsigned char,128> cache;Count available=0,next=0,length=0,lines=0;bool found=false;
-  auto get=[&](){if(next==available){budget.chargeScratchOrCopy(16);const auto n=::read(fd.value,cache.data(),cache.size());if(n<0&&errno==EINTR)return -2;need(n>=0,"member maps read error");if(n==0)return -1;available=n;next=0;}return static_cast<int>(cache[next++]);};
-  auto parse=[&](){budget.chargeScratchOrCopy(24);observation.lines=++lines;need(lines<=262144,"member map line count cap");Count at=0;
-    auto token=[&](){while(at<length&&line[at]==' ')++at;const Count start=at;while(at<length&&line[at]!=' ')++at;return std::string_view(line.data()+start,at-start);};
-    const auto address=token(),permissions=token(),offset=token(),device=token(),inodeText=token();(void)address;(void)permissions;(void)offset;if(inodeText.empty())return;
-    while(at<length&&line[at]==' ')++at;const std::string_view actual_path(line.data()+at,length-at);if(actual_path!=path)return;
-    auto integer=[&](std::string_view value,Count base){need(!value.empty()&&value.size()<=20,"member map integer token bound");Count out=0;for(char c:value){Count digit=c>='0'&&c<='9'?c-'0':c>='a'&&c<='f'?c-'a'+10:c>='A'&&c<='F'?c-'A'+10:base;need(digit<base,"member map device/inode token");out=checkedAdd(checkedMultiply(out,base),digit);}return out;};
-    const auto colon=device.find(':');need(colon!=std::string_view::npos,"member map device separator");observation.inode=integer(inodeText,10);observation.major_id=integer(device.substr(0,colon),16);observation.minor_id=integer(device.substr(colon+1),16);observation.parsed=true;
-    need(observation.inode==identity.inode&&observation.major_id==major(static_cast<dev_t>(identity.device))&&observation.minor_id==minor(static_cast<dev_t>(identity.device)),"actual member mapping inode/device mismatch");found=true;
-  };
-  observation.stage="READ_ACTUAL_MEMBER_MAPS";budget.chargeScratchOrCopy(2048);for(;;){const int ch=get();if(ch==-2)continue;if(ch<0){if(length)parse();break;}if(ch=='\n'){parse();length=0;budget.chargeScratchOrCopy(2048);}else{need(length<line.size(),"member map line byte cap");line[length++]=static_cast<char>(ch);}}
-  need(found,"actual member library absent from process maps");observation.mapped=true;
-}
-void verifyMemberLoadedLibraries(const std::vector<FileIdentity>& libraries,SharedCaseBudget budget,MemberIdentityObservationV1& identity,MemberLoaderObservationV1& observation,MemberCaptureStatus& status){
-  try{budget.chargeScratchOrCopy(16);observation=MemberLoaderObservationV1{};observation.stage="ACTUAL_MEMBER_LOADER_SET";MemberLoaderNames names{budget,observation,{},nullptr};::dl_iterate_phdr(memberLoaded,&names);if(names.error)std::rethrow_exception(names.error);
-    std::set<std::string> expected;for(Count index=0;index<libraries.size();++index){budget.chargeScratchOrCopy(12);observation.current_library_index=index;observation.current_library_known=true;observation.lines=0;observation.inode=0;observation.major_id=0;observation.minor_id=0;observation.parsed=false;observation.mapped=false;observation.stage="CANONICAL_CURRENT_DECLARED_LIBRARY";const auto& file=libraries[index];auto canonical_path=memberCanonical(file.path.c_str(),budget);need(canonical_path==file.path&&expected.insert(std::move(canonical_path)).second,"member canonical SDK declaration duplicate/differs");budget.chargeScratchOrCopy(20);identity=MemberIdentityObservationV1{};status.identity_target_kind=MemberIdentityTargetKind::DeclaredLibrary;status.identity_target_index=index;status.identity_target_known=true;status.active_member_known=false;observePinnedFileWithMemberBudgetV1(budget,file,identity);memberMapped(file.path,budget,identity,observation);observation.libraries_checked=index+1;}
-    need(names.paths==expected,"actual member loader set differs from complete SDK declaration");observation.libraries_checked=libraries.size();observation.stage="VERIFIED_ACTUAL_MEMBER_LOADER_SET";
-  }catch(...){observation.refused=true;throw;}
-}
 #endif
-void verifyLoadedLibraries(const std::vector<FileIdentity>& libraries) {
+void verifyLoadedLibraries(const std::vector<FileIdentity>& libraries,const SharedCaseBudget* member_budget=nullptr,MemberIdentityObservationV1* actual_observation=nullptr) {
 #if defined(__linux__)
   LoaderNames names;::dl_iterate_phdr(loaded,&names);if(names.error)std::rethrow_exception(names.error);
   std::set<std::string> expected;
   for(const auto& file:libraries) {
     need(canonical(file.path)==file.path&&expected.insert(file.path).second,"canonical unique SDK library path required");
-    verify(file);mappedIdentity(file.path);
+    if(member_budget){need(actual_observation,"member loader observation owner absent");member_budget->chargeScratchOrCopy(16);*actual_observation=MemberIdentityObservationV1{};observePinnedFileWithMemberBudgetV1(*member_budget,file,*actual_observation);}else verify(file);mappedIdentity(file.path);
   }
   need(names.paths==expected,"complete actual loaded DSO inventory differs from reviewed SDK closure");
 #else
-  (void)libraries;throw std::invalid_argument("live SDK identity requires Linux loader/map inventory");
+  (void)libraries;(void)member_budget;(void)actual_observation;throw std::invalid_argument("live SDK identity requires Linux loader/map inventory");
 #endif
 }
 } // namespace
@@ -281,8 +252,8 @@ void verifyLoadedLibraries(const std::vector<FileIdentity>& libraries) {
 namespace detail {
 struct MemberCaptureStorage {
   SharedCaseBudget budget;OwnedReservation ticket;ResourcePlan plan;
-  std::unique_ptr<CaseBudget> pending_case;FileIdentity planned_invocation;std::vector<VerifiedMemberRelation> relations;
-  MemberCaptureStatus status;MemberIdentityObservationV1 latest_identity;MemberLoaderObservationV1 latest_loader;bool copy_scope_active=false;
+  std::unique_ptr<CaseBudget> pending_case;std::vector<VerifiedMemberRelation> relations;
+  MemberCaptureStatus status;MemberIdentityObservationV1 latest_identity;bool copy_scope_active=false;
   MemberCaptureStorage(std::unique_ptr<CaseBudget> c,const ResourcePlan& p,Count slots):budget(c->share()),ticket(budget.reserve(slots)),plan(p),pending_case(std::move(c)){}
   void reject(const char* why) noexcept{if(status.refused)return;status.refused=true;status.complete=false;try{std::string_view s=why?why:"MEMBER_CAPTURE_REFUSAL";need(s.size()<=512,"member refusal detail cap");budget.chargeMetadataBytes(s.size());status.first_error.assign(s);}catch(...){}}
 };
@@ -337,15 +308,10 @@ struct ForecastFactory {
   }
   static void recheck(ForecastReleaseState& r){
     if(!r.members){verify(r.review);verify(r.protocol);observeCurrentProducerElf(r.producer.sha256);for(const auto& f:r.files)verify(f);verifyLoadedLibraries(r.libraries);return;}
-    auto& m=*r.members;try{auto frame=m.budget.reserve(40);m.budget.chargeScratchOrCopy(40);need(!m.status.refused&&m.status.admitted,"member source not admitted/first refusal retained");
-      auto check=[&](const FileIdentity& f,MemberIdentityTargetKind kind,Count index=0){m.budget.chargeScratchOrCopy(20);m.status.identity_target_kind=kind;m.status.identity_target_index=index;m.status.identity_target_known=true;m.status.active_member_known=false;m.latest_identity=MemberIdentityObservationV1{};observePinnedFileWithMemberBudgetV1(m.budget,f,m.latest_identity);};
-      check(r.review,MemberIdentityTargetKind::Review);check(r.protocol,MemberIdentityTargetKind::Protocol);{m.budget.chargeScratchOrCopy(20);m.status.identity_target_kind=MemberIdentityTargetKind::Producer;m.status.identity_target_index=0;m.status.identity_target_known=true;m.status.active_member_known=false;m.latest_identity=MemberIdentityObservationV1{};observeCurrentProducerElfWithMemberBudgetV1(m.budget,r.producer.sha256,r.producer.bytes,m.latest_identity);}for(Count i=0;i<r.files.size();++i)check(r.files[i],MemberIdentityTargetKind::MemberFile,i);
-      #if defined(__linux__)
-      verifyMemberLoadedLibraries(r.libraries,m.budget,m.latest_identity,m.latest_loader,m.status);
-#else
-      throw std::invalid_argument("member loaded verifier requires Linux");
-#endif
-      m.budget.chargeScratchOrCopy(1);++m.status.verified_loader_checks;
+    auto& m=*r.members;try{need(!m.status.refused&&m.status.admitted,"member source not admitted/first refusal retained");
+      auto check=[&](const FileIdentity& f){m.budget.chargeScratchOrCopy(16);m.latest_identity=MemberIdentityObservationV1{};observePinnedFileWithMemberBudgetV1(m.budget,f,m.latest_identity);};
+      check(r.review);check(r.protocol);{m.budget.chargeScratchOrCopy(16);m.latest_identity=MemberIdentityObservationV1{};observeCurrentProducerElfWithMemberBudgetV1(m.budget,r.producer.sha256,r.producer.bytes,m.latest_identity);}for(const auto& f:r.files)check(f);
+      verifyLoadedLibraries(r.libraries,&m.budget,&m.latest_identity);m.budget.chargeScratchOrCopy(1);++m.status.verified_loader_checks;
     }catch(const std::exception& e){m.reject(e.what());throw;}catch(...){m.reject("NONSTANDARD_MEMBER_RECHECK");throw;}
   }
   struct MemberPlanDescriptor {CycleMesh mesh;FactorShape factors;CaptureMode mode;NumericEncoding encoding;ResourcePlan base;};
@@ -405,7 +371,7 @@ struct ForecastFactory {
       need(text(source_node["schema"])=="PUBLIC_LIVE_AFFINE_V2_SOURCE_CLOSURE_1"&&text(sdk_node["schema"])=="PUBLIC_LIVE_AFFINE_V2_SDK_CLOSURE_1","wrong member parent schema");
       for(const auto& node:{source_node,sdk_node})need(node["files"].IsSequence()&&node["files"].size()>0&&node["files"].size()<=4096,"bounded actual member roster");need(sdk_node["loaded_libraries"].IsSequence()&&sdk_node["loaded_libraries"].size()>0&&sdk_node["loaded_libraries"].size()<=512,"bounded declared loaded roster");
       source_count=source_node["files"].size();sdk_count=sdk_node["files"].size();loaded_count=sdk_node["loaded_libraries"].size();
-      auto base=memberBasePlan(invocation_node);const Count total=checkedAdd(9,checkedAdd(source_count,sdk_count));const Count held=checkedAdd(50,checkedAdd(checkedMultiply(9,total),loaded_count));
+      auto base=memberBasePlan(invocation_node);const Count total=checkedAdd(9,checkedAdd(source_count,sdk_count));const Count held=checkedAdd(32,checkedAdd(checkedMultiply(9,total),loaded_count));
       Count bytes=checkedAdd(r->review.bytes,checkedAdd(r->protocol.bytes,r->producer.bytes));for(const auto& pair:by_role)bytes=checkedAdd(bytes,pair.second.bytes);
       for(const auto& node:{source_node,sdk_node})for(const auto& item:node["files"]){keys(item,{"role","path","sha256","bytes"});bytes=checkedAdd(bytes,integer(item["bytes"]));}
       const auto cost=artifact(invocation_node["cost_input"]["artifact"]);bytes=checkedAdd(bytes,cost.identity.bytes);
@@ -415,7 +381,7 @@ struct ForecastFactory {
       const Count copies=checkedAdd(checkedMultiply(total,576),checkedMultiply(loaded_count,536));
       const Count added=checkedAdd(checkedAdd(held,8264),checkedAdd(hash_charges,checkedAdd(copies,checkedMultiply(total,64))));
       auto plan=memberPlan(base,checkedAdd(held,8264),added);auto budget=std::make_unique<CaseBudget>(*member_batch,plan);
-      r->members=std::make_shared<MemberCaptureStorage>(std::move(budget),plan,held);auto& m=*r->members;m.status.expected_files=total;m.status.declared_libraries=loaded_count;m.status.admitted=true;m.budget.chargeMetadataBytes(checkedAdd(by_role.at("invocation").path.size(),64));m.budget.chargeScratchOrCopy(checkedAdd(1,(by_role.at("invocation").path.size()+71)/8));m.planned_invocation=by_role.at("invocation");
+      r->members=std::make_shared<MemberCaptureStorage>(std::move(budget),plan,held);auto& m=*r->members;m.status.expected_files=total;m.status.declared_libraries=loaded_count;m.status.admitted=true;
       // Freeze vector capacities once under the real ownership ticket. No
       // push may grow an admitted vector beyond its exact closed bound.
       try{m.budget.chargeScratchOrCopy(32);r->files.reserve(total);r->file_roles.reserve(total);m.relations.reserve(total);r->libraries.reserve(loaded_count);need(r->files.capacity()==total&&r->file_roles.capacity()==total&&m.relations.capacity()==total&&r->libraries.capacity()==loaded_count,"member allocator capacity differs from exact admitted bound");}catch(const std::exception& e){m.reject(e.what());}catch(...){m.reject("NONSTANDARD_MEMBER_CAPACITY_ADMISSION");}
@@ -430,7 +396,7 @@ struct ForecastFactory {
     need(text(build["schema"])=="PUBLIC_LIVE_AFFINE_V2_BUILD_BINDING_1"&&text(build["target"])=="public_live_affine_v2_model_boundary"&&
       text(build["producer_sha256"])==r->producer.sha256&&text(build["source_closure_sha256"])==by_role.at("source_closure").sha256&&
       text(build["sdk_manifest_sha256"])==by_role.at("sdk_manifest").sha256,"build/source/SDK binding mismatch");
-    const std::set<std::string> required_sources={"foundation.hpp","foundation_context.cpp","foundation_identity.cpp","foundation_resources.cpp",
+    const std::set<std::string> required_sources={"foundation.hpp","foundation_context.cpp","foundation_identity.cpp","foundation_resources.cpp","member_capture_contract",
       "model_boundary.hpp","model_boundary.cpp","model_boundary_CMakeLists","foundation_CMakeLists",
       "normalization.hpp","normalization.cpp","normalization_CMakeLists",
       "affine_assembly.hpp","affine_assembly.cpp","affine_CMakeLists",
@@ -452,14 +418,14 @@ struct ForecastFactory {
       const auto files=closure["files"];need(files.IsSequence()&&files.size()>0&&files.size()<=4096,"bounded complete closure required");
       std::set<std::string> roles,paths;std::map<std::string,FileIdentity> verified;
       Count ordinal=0;for(const auto& item:files){std::optional<MemberFrame> member_frame;if(r->members)member_frame.emplace(*r->members);auto a=r->members?memberArtifact(item,*r->members):artifact(item);if(r->members){r->members->budget.chargeMetadataBytes(checkedAdd(a.role.size(),a.identity.path.size()));r->members->budget.chargeScratchOrCopy((a.role.size()+a.identity.path.size()+7)/8);}need(roles.insert(a.role).second&&paths.insert(a.identity.path).second,"duplicate closure role/path");
-        FileIdentity f;if(r->members){auto& active=r->members->status;r->members->budget.chargeScratchOrCopy(6);active.active_file_index=r->files.size();active.active_native_ordinal=ordinal;active.active_parent_index=parentIndex(*r,manifest_role);active.active_group=std::string(manifest_role)=="source_closure"?VerifiedMemberGroup::SourceClosure:VerifiedMemberGroup::SDKClosure;active.active_member_known=true;active.identity_target_kind=MemberIdentityTargetKind::MemberFile;active.identity_target_index=active.active_file_index;active.identity_target_known=true;r->members->budget.chargeScratchOrCopy(20);r->members->latest_identity=MemberIdentityObservationV1{};f=observePinnedFileWithMemberBudgetV1(r->members->budget,a.identity,r->members->latest_identity);appendMember(*r,a.role,f,std::string(manifest_role)=="source_closure"?VerifiedMemberGroup::SourceClosure:VerifiedMemberGroup::SDKClosure,parentIndex(*r,manifest_role),false,ordinal);}else {f=verify(a.identity);r->files.push_back(f);}if(r->members){r->members->budget.chargeMetadataBytes(checkedAdd(checkedMultiply(2,f.path.size()),f.sha256.size()));r->members->budget.chargeScratchOrCopy(checkedAdd(1,(2*f.path.size()+f.sha256.size()+7)/8));}verified.emplace(f.path,f);++ordinal;}
+        FileIdentity f;if(r->members){auto& active=r->members->status;r->members->budget.chargeScratchOrCopy(6);active.active_file_index=r->files.size();active.active_native_ordinal=ordinal;active.active_parent_index=parentIndex(*r,manifest_role);active.active_group=std::string(manifest_role)=="source_closure"?VerifiedMemberGroup::SourceClosure:VerifiedMemberGroup::SDKClosure;active.active_member_known=true;r->members->budget.chargeScratchOrCopy(16);r->members->latest_identity=MemberIdentityObservationV1{};f=observePinnedFileWithMemberBudgetV1(r->members->budget,a.identity,r->members->latest_identity);appendMember(*r,a.role,f,std::string(manifest_role)=="source_closure"?VerifiedMemberGroup::SourceClosure:VerifiedMemberGroup::SDKClosure,parentIndex(*r,manifest_role),false,ordinal);}else {f=verify(a.identity);r->files.push_back(f);}if(r->members){r->members->budget.chargeMetadataBytes(checkedAdd(checkedMultiply(2,f.path.size()),f.sha256.size()));r->members->budget.chargeScratchOrCopy(checkedAdd(1,(2*f.path.size()+f.sha256.size()+7)/8));}verified.emplace(f.path,f);++ordinal;}
       if(std::string(manifest_role)=="source_closure") {
-        for(const auto& role:required_sources)need(roles.count(role)==1,"source closure omitted required compiled source/target");if(r->members)need(roles.count("member_capture_contract")==1,"versioned member closure omitted actual capture contract");
+        for(const auto& role:required_sources)need(roles.count(role)==1,"source closure omitted required compiled source/target");
       } else {
         auto libs=closure["loaded_libraries"];need(libs.IsSequence()&&libs.size()>0&&libs.size()<=512,"full loaded SDK library roster required");
         std::set<std::string> unique;
         Count loaded_ordinal=0;for(const auto& item:libs){auto name=r->members?memberText(item,*r->members,4096):text(item);if(r->members){r->members->budget.chargeMetadataBytes(name.size());r->members->budget.chargeScratchOrCopy((name.size()+7)/8);}need(unique.insert(name).second&&verified.count(name)==1,"loaded library missing from verified SDK closure");
-          if(r->members){auto& m=*r->members;m.budget.chargeMetadataBytes(checkedAdd(verified.at(name).path.size(),64));m.budget.chargeScratchOrCopy(checkedAdd((verified.at(name).path.size()+71)/8,1));Count linked=0;for(auto& relation:m.relations){m.budget.chargeScratchOrCopy(1);if(relation.group==VerifiedMemberGroup::SDKClosure&&r->files[relation.file_index].path==name){m.budget.chargeScratchOrCopy(2);relation.declared_loaded=true;relation.declared_loaded_ordinal=loaded_ordinal;++linked;}}need(linked==1,"declared SDK loaded member link not unique");}
+          if(r->members){auto& m=*r->members;m.budget.chargeMetadataBytes(checkedAdd(verified.at(name).path.size(),64));m.budget.chargeScratchOrCopy(checkedAdd((verified.at(name).path.size()+71)/8,1));for(auto& relation:m.relations){m.budget.chargeScratchOrCopy(1);if(relation.group==VerifiedMemberGroup::SDKClosure&&r->files[relation.file_index].path==name){m.budget.chargeScratchOrCopy(2);relation.declared_loaded=true;relation.declared_loaded_ordinal=loaded_ordinal;}}}
           if(r->members)need(r->libraries.size()<r->libraries.capacity()&&r->libraries.capacity()==r->members->status.declared_libraries,"declared library capacity exceeded");r->libraries.push_back(verified.at(name));++loaded_ordinal;}
       }
     }
@@ -469,13 +435,7 @@ struct ForecastFactory {
       number(policy["cycle_dt"])==macro_dt&&number(policy["substep_dt"])==physical_dt&&number(policy["control_margin"])==NativeModel::control_margin&&
       integer(policy["nx"])==30&&integer(policy["nu"])==8&&integer(policy["max_cells"])==32&&integer(policy["max_cycles"])==375&&integer(policy["max_samples"])==750,
       "unchanged derivative policy/versioned envelope mismatch");
-    if(r->members){
-#if defined(__linux__)
-      auto loader_frame=r->members->budget.reserve(40);r->members->budget.chargeScratchOrCopy(40);verifyMemberLoadedLibraries(r->libraries,r->members->budget,r->members->latest_identity,r->members->latest_loader,r->members->status);
-#else
-      throw std::invalid_argument("member loaded verifier requires Linux");
-#endif
-    }else verifyLoadedLibraries(r->libraries);if(r->members){r->members->budget.chargeScratchOrCopy(1);++r->members->status.verified_loader_checks;need(r->files.size()==r->file_roles.size()&&r->files.size()==r->members->relations.size(),"complete member vectors mismatch");}
+    verifyLoadedLibraries(r->libraries,r->members?&r->members->budget:nullptr,r->members?&r->members->latest_identity:nullptr);if(r->members){r->members->budget.chargeScratchOrCopy(1);++r->members->status.verified_loader_checks;need(r->files.size()==r->file_roles.size()&&r->files.size()==r->members->relations.size(),"complete member vectors mismatch");}
     }catch(const std::exception& e){if(!r->members)throw;r->members->reject(e.what());}catch(...){if(!r->members)throw;r->members->reject("NONSTANDARD_MEMBER_PERMISSION_CAPTURE");}
     ReviewedForecastPermission out;out.release_=std::move(r);return out;
   }
@@ -512,7 +472,7 @@ struct ForecastFactory {
                          integer(f["addition_coefficients"]),integer(f["addition_records"])};
     const auto binding=n["cost_input"];keys(binding,{"artifact","semantic_sha256"});
     auto cost_artifact=r->members?memberArtifact(binding["artifact"],*r->members):artifact(binding["artifact"]);need(cost_artifact.role=="cost_input","cost input role mismatch");
-    FileIdentity cost_identity;if(r->members){r->members->budget.chargeScratchOrCopy(20);r->members->status.identity_target_kind=MemberIdentityTargetKind::CostInput;r->members->status.identity_target_index=0;r->members->status.identity_target_known=true;r->members->status.active_member_known=false;r->members->latest_identity=MemberIdentityObservationV1{};cost_identity=observePinnedFileWithMemberBudgetV1(r->members->budget,cost_artifact.identity,r->members->latest_identity);}else cost_identity=verify(cost_artifact.identity);const auto semantic=r->members?memberText(binding["semantic_sha256"],*r->members,64):text(binding["semantic_sha256"],64);
+    FileIdentity cost_identity;if(r->members){r->members->budget.chargeScratchOrCopy(16);r->members->latest_identity=MemberIdentityObservationV1{};cost_identity=observePinnedFileWithMemberBudgetV1(r->members->budget,cost_artifact.identity,r->members->latest_identity);}else cost_identity=verify(cost_artifact.identity);const auto semantic=r->members?memberText(binding["semantic_sha256"],*r->members,64):text(binding["semantic_sha256"],64);
     need(semantic.size()==64,"cost semantic SHA256 length");
     for(char ch:semantic)need((ch>='0'&&ch<='9')||(ch>='a'&&ch<='f'),"cost semantic SHA256 hex");
     const auto capture=text(n["capture_mode"]),encoding=text(n["encoding"]);
@@ -522,7 +482,7 @@ struct ForecastFactory {
                            encoding=="LosslessBinary"?NumericEncoding::LosslessBinary:NumericEncoding::FullNumericJson);
     const auto controls=n["controls"];need(controls.IsSequence()&&controls.size()==mesh.cycles().size(),"nominal control roster mismatch");
     std::shared_ptr<InvocationStorage> data;if(r->members){auto& m=*r->members;need(m.pending_case&&m.pending_case->sameBatch(batch),"member capture uses a different Batch or Case already moved");
-      need(m.planned_invocation.path==r->invocation.path&&m.planned_invocation.sha256==r->invocation.sha256&&m.planned_invocation.bytes==r->invocation.bytes&&sameBasePlan(plan,m.plan),"prepared actual invocation identity/plan differs from admission");plan=m.plan;data=std::make_shared<InvocationStorage>(std::move(*m.pending_case),plan,actual,mesh,r);m.pending_case.reset();need(m.budget.sameCase(data->budget.share()),"moved member Case mismatch");}
+      need(sameBasePlan(plan,m.plan),"prepared invocation differs from admitted member plan");plan=m.plan;data=std::make_shared<InvocationStorage>(std::move(*m.pending_case),plan,actual,mesh,r);m.pending_case.reset();need(m.budget.sameCase(data->budget.share()),"moved member Case mismatch");}
     else data=std::make_shared<InvocationStorage>(batch,plan,actual,mesh,r);
     if(r->members){r->members->budget.chargeMetadataBytes(checkedAdd(cost_identity.path.size(),checkedAdd(cost_identity.sha256.size(),semantic.size())));r->members->budget.chargeScratchOrCopy(checkedAdd(6,(cost_identity.path.size()+cost_identity.sha256.size()+semantic.size()+7)/8));}
     data->factors=fs;data->cost_input=cost_identity;data->cost_semantic_sha256=semantic;if(r->members){try{appendMember(*r,"cost_input",cost_identity,VerifiedMemberGroup::InvocationCost,parentIndex(*r,"invocation"),false,0);auto& m=*r->members;need(r->files.size()==m.status.expected_files&&r->files.size()==r->file_roles.size()&&r->files.size()==m.relations.size(),"final actual member count mismatch");m.status.complete=true;}catch(const std::exception& e){r->members->reject(e.what());throw;}catch(...){r->members->reject("NONSTANDARD_COST_MEMBER_APPEND");throw;}}else r->files.push_back(cost_identity);
@@ -704,7 +664,6 @@ Count OwnedPublicForecast::retainedMemberCount() const{const auto& r=*present(st
 const VerifiedMemberRelation& OwnedPublicForecast::retainedMemberRelation(Count k) const{const auto& r=*present(storage_).profile->release;need(r.members&&k<r.members->status.actual_files&&k<r.members->relations.size()&&k<r.files.size()&&k<r.file_roles.size(),"member committed prefix absent");const auto& relation=r.members->relations[k];need(relation.file_index==k&&relation.verified&&(relation.parent_is_protocol||relation.parent_index<k),"member committed identity/parent invalid");return relation;}
 std::string_view OwnedPublicForecast::retainedMemberRole(Count k) const{retainedMemberRelation(k);return present(storage_).profile->release->file_roles[k];}
 const FileIdentity& OwnedPublicForecast::retainedMemberParent(Count k) const{const auto& relation=retainedMemberRelation(k);const auto& r=*present(storage_).profile->release;return relation.parent_is_protocol?r.protocol:r.files[relation.parent_index];}
-const MemberLoaderObservationV1* OwnedPublicForecast::memberLoaderObservation() const{const auto& r=*present(storage_).profile->release;return r.members?&r.members->latest_loader:nullptr;}
 const MemberIdentityObservationV1* OwnedPublicForecast::memberIdentityObservation() const{const auto& r=*present(storage_).profile->release;return r.members?&r.members->latest_identity:nullptr;}
 const MemberCaptureStatus* OwnedPublicForecast::memberCaptureStatus() const{const auto& r=*present(storage_).profile->release;return r.members?&r.members->status:nullptr;}
 const std::vector<FileIdentity>& OwnedPublicForecast::verifiedLoadedLibraries() const{return present(storage_).profile->release->libraries;}

@@ -94,16 +94,3 @@ byte refusal selects binary. Source closure now also requires capture_state.hpp,
 cost_input_decoder.hpp/cpp and input_codec_CMakeLists. The current input schema
 and complete failure/output contract are in ../input_codec/; the output publisher
 is not implemented and no source record constitutes a runtime release.
-
-## Source member capture version2 — separate future freeze
-
-Member-only loader loadReviewedForecastPermissionWithMemberCaptureV2 requires
-PUBLIC_LIVE_AFFINE_V2_FROZEN_PROTOCOL_MEMBERS_2 and exact additional field
-member_capture_policy=VERIFIED_MEMBER_CAPTURE_SAME_CASE_1, with the same trusted
-external review/real ELF/build/source/SDK/XML/constants/invocation identities and
-one-attempt Model scope. Its source closure additionally binds member_capture_contract
-to MEMBER_CAPTURE_CONTRACT.md exact path/SHA. The unchanged legacy loader rejects
-this extra-key/version2 protocol, and the new loader rejects protocol1. Existing
-immutable freezes remain historical; new source/ELF/SDK/protocol needs independent
-review before every compiler/IO/budget/helper/Model/numeric invocation. No actual
-context/process/claim snapshot/rootREADY/phase acceptance follows.

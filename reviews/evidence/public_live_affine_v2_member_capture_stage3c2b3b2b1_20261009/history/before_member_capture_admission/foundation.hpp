@@ -66,25 +66,17 @@ class ResourcePlan final {
   Count dy() const noexcept { return dy_; }
   CaptureMode captureMode() const noexcept { return mode_; }
   NumericEncoding numericEncoding() const noexcept { return encoding_; }
-  Count memberCaptureSlots() const noexcept { return member_slots_; }
-  Count memberCaptureCharges() const noexcept { return member_charges_; }
  private:
   ResourcePlan() = default;
   Count live_ = 0, charges_ = 0, output_ = 0, sdk_allowance_ = 0, raw_ = 0;
   Count dx_ = 0, du_ = 0, dy_ = 0;
-  Count member_slots_=0,member_charges_=0;
   CaptureMode mode_ = CaptureMode::CompactComplete;
   NumericEncoding encoding_ = NumericEncoding::LosslessBinary;
-  friend ResourcePlan planResourcesWithMemberCaptureV1(const CycleMesh&,const FactorShape&,CaptureMode,NumericEncoding,Count,Count);
   friend ResourcePlan planResources(const CycleMesh&, const FactorShape&,
                                      CaptureMode, NumericEncoding);
 };
 ResourcePlan planResources(const CycleMesh&, const FactorShape&,
                            CaptureMode, NumericEncoding);
-
-// Private source factories derive these quantities from actual frozen rosters.
-// This plan alone is NOT a genuine source or execution witness.
-ResourcePlan planResourcesWithMemberCaptureV1(const CycleMesh&,const FactorShape&,CaptureMode,NumericEncoding,Count owned_slots,Count added_charges);
 
 namespace detail {
 struct BatchState; struct CaseState; struct ForecastFactory; struct ForecastReleaseState;
@@ -148,7 +140,6 @@ class CaseBudget final {
   void chargeMetadataBytes(Count bytes); // Actual encoded aggregate, no refund.
   void chargeUniqueOutputBytes(Count bytes); // Writer counts each unique blob once.
   Count liveSlots() const;
-  bool sameBatch(const BatchBudget&) const noexcept;
   Count cumulativeCharges() const;
   Count outputBytes() const;
   Count metadataBytes() const;
@@ -199,9 +190,6 @@ class ChunkIOLease final {
 struct FileIdentity { std::string path, sha256; Count bytes = 0; };
 FileIdentity observePinnedFile(const std::string& path,
                               const std::string& expected_sha256);
-struct MemberIdentityObservationV1 {const char* stage="NOT_ATTEMPTED";Count bytes_read=0,attempted_read_bytes=0,device=0,inode=0,size=0;bool physical_eof=false,hash_state_valid=false,hash_valid=false,refused=false;std::string physical_sha256,first_error;};
-FileIdentity observePinnedFileWithMemberBudgetV1(SharedCaseBudget,const FileIdentity&,MemberIdentityObservationV1&);
-FileIdentity observeCurrentProducerElfWithMemberBudgetV1(SharedCaseBudget,const std::string& expected_sha,Count expected_bytes,MemberIdentityObservationV1&);
 FileIdentity observeCurrentProducerElf(const std::string& expected_sha256);
 class StaticDomainRanges final {
  public:
