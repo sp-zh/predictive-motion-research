@@ -1,0 +1,58 @@
+{
+  "decision": "PASS_BOUNDED66_FOUNDATION_RUNTIME_PREPARATION_ONLY_NOT_EXECUTED",
+  "baseline": "b45c0f1cd66f15f99879f091e84bb68dc9c9c9dd",
+  "ready_sha256": "64666eb742471e5142ed2d7a4177a39e5baa122cf116636654ddbb469993daf0",
+  "original_payloads_verified": 12,
+  "production_and_prior_checkpoint_guards_verified": 133,
+  "frozen_binary": {
+    "bytes": 138040,
+    "sha256": "4089ac4be17271437cd7969d866ac6ced20362ae2b49f538968e9f6aef70060f",
+    "mode": "0555"
+  },
+  "fixed_case_groups": 66,
+  "independent_expected_stdout": {
+    "bytes": 1743,
+    "sha256": "f5ab2101e8aec6b189dc2f8ee9fdaaebcd7d5fd933851d59890831b032e21f55",
+    "derived_from_original_roster_and_source_literals": true
+  },
+  "finite_native_config_records": 13,
+  "prepost_identity_records": 56,
+  "unique_requested_paths": 54,
+  "original_artifact_guard_records": 42,
+  "root_independent_remote_recheck": {
+    "identity_records_verified": 56,
+    "unique_paths_verified": 54,
+    "ELF_graph_records_independently_verified": 12,
+    "all_native_graph_RPATH_RUNPATH_absent": true,
+    "frozen_binary0555": true,
+    "readonly_directories_verified": 3,
+    "named_preload_absence_verified": true,
+    "run_attempt_absent": true,
+    "program_runs": 0
+  },
+  "independent_review": [
+    "Binary bytes match successful separately reviewed link output;fresh readonly executable copy and original0775 preserved",
+    "Expected stdout independently regenerated from original66 ordered IDs and original PASS/COMPLETE source strings;exact fixture/plan SHA matches,not actual-output-derived",
+    "Root rehashed56 records/54unique paths,42original artifact guards,readonly directories and named preload absence over strict USB4 SSH",
+    "Independent ELF byte parsing rechecks12 named native graph records and absence of RPATH/RUNPATH;loader cache opaque bytes/hash retained excluded",
+    "Sealed plan/manifest,harness single explicit dispatch flag,exact direct argv,no args/DEVNULL/replaced4-field environment reviewed",
+    "15s wall/10sCPU/256MiBvirtual address/128KiBcombined output and other limits clamp down to stricter inherited constraints;first failure stops with rawprefix/status and no rerun",
+    "Exact success requires exit0,empty stderr,66 ordered PASS lines and COMPLETE plus unchanged identities/empty cwd"
+  ],
+  "allowed_future_project_effects": "Frozen integer/decimal/mesh/two zero-factor setup plans/reservation/shared-ledger/ChunkIOLease cases and small STL allocations;native C++ startup and captured text only",
+  "forbidden_future_project_effects": "File/network/spawn/materialized numeric buffers/identity/context/preview/SDK/Model/controller algebra/Parent/plant/main/scorer",
+  "program_runs": 0,
+  "compiler_calls": 0,
+  "link_calls": 0,
+  "project_function_calls": 0,
+  "next_unit_admitted": "Separate one frozen bounded66 foundation test invocation via exact reviewed harness after verified backup;no other project functions or experiments",
+  "limits": [
+    "Finite named native graph/cache records do not establish actual full loader selection/OS/readset/RSS closure",
+    "Resource limits are constraints,not measured physical RAM/performance/deadline evidence",
+    "Any future passing run covers these66 grouped foundation seams only;full shape pricing/buffer lifetime/Model/algebra/phase acceptance remain deferred"
+  ],
+  "publication": "Compact authored root review/storage and host-free protocol summary only;binary,raw native/configuration/control identities excluded",
+  "phase5": "NOT_ACCEPTED",
+  "phase6": "NOT_STARTED",
+  "all_previous_failures_sources_and_checker_freezes_preserved": true
+}
