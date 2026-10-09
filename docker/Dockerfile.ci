@@ -1,0 +1,22 @@
+# Environment only; build with the dedicated allowlist context.
+# ROS_BASE must be a published, verified linux/amd64 GHCR manifest digest.
+ARG ROS_BASE
+FROM ${ROS_BASE}
+ARG ROS_BASE
+ARG SOURCE_COMMIT
+LABEL org.opencontainers.image.source="https://github.com/sp-zh/predictive-motion-research" \
+      org.opencontainers.image.revision="${SOURCE_COMMIT}" \
+      org.opencontainers.image.base.name="${ROS_BASE}" \
+      io.predictive-motion.platform="linux/amd64"
+ENV DEBIAN_FRONTEND=noninteractive
+# Keep the existing CI build flags and ROS entrypoint from the base image.
+WORKDIR /opt/ci-definition
+COPY docker/Dockerfile.ci docker/ros-base-source.txt docker/Dockerfile.ci.dockerignore docker/
+COPY scripts/phase0/setup_linux.sh scripts/phase0/setup_linux.sh
+COPY scripts/ci/check_environment.py scripts/ci/check_environment.py
+RUN python3 scripts/ci/check_environment.py --base-ref "$ROS_BASE" --base-only \
+    && bash scripts/phase0/setup_linux.sh \
+    && python3 scripts/ci/check_environment.py --write --base-ref "$ROS_BASE" --source-commit "$SOURCE_COMMIT" \
+    && rm -rf /var/lib/apt/lists/* /opt/ci-definition
+WORKDIR /workspaces/predictive_motion
+CMD ["bash"]

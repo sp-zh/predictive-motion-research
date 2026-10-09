@@ -5,6 +5,17 @@ on:
 permissions:
   contents: read
 jobs:
+  ci_environment:
+    name: CI environment definition checks
+    runs-on: ubuntu-24.04
+    timeout-minutes: 5
+    steps:
+      - uses: actions/checkout@11d5960a326750d5838078e36cf38b85af677262
+        with:
+          persist-credentials: false
+      - name: Check environment drift and failure propagation
+        shell: bash
+        run: python3 tests/ci/test_environment.py
   validation:
     runs-on: ubuntu-24.04
     timeout-minutes: 25
@@ -12,6 +23,7 @@ jobs:
       image: ros:jazzy-ros-base-noble@sha256:066420e07f60aa18262f2479981def87ebcfcec42eefb0c0c57c4a46098348ca
     steps:
       - uses: actions/checkout@11d5960a326750d5838078e36cf38b85af677262
+        id: checkout
       - name: Install selected dependencies
         shell: bash
         run: bash scripts/phase0/setup_linux.sh
@@ -19,8 +31,26 @@ jobs:
         shell: bash
         run: bash scripts/ci.sh
       - name: Record environment
-        if: always()
+        if: ${{ !cancelled() && steps.checkout.outcome == 'success' }}
         shell: bash
         run: |
           source /opt/ros/jazzy/setup.bash
+          # The static container reference above is the single CI authority.
+          CI_IMAGE_REF=$(python3 -c 'import yaml; print(yaml.safe_load(open(".github/workflows/ci.yml"))["jobs"]["validation"]["container"]["image"])')
+          export CI_IMAGE_REF
           python3 scripts/collect_environment.py --output results/phase0/environment.json
+      - name: Retain test and environment diagnostics
+        if: ${{ !cancelled() && steps.checkout.outcome == 'success' }}
+        uses: actions/upload-artifact@ea165f8d65b6e75b540449e92b4886f43607fa02 # v4.6.2
+        with:
+          name: ci-diagnostics-${{ github.run_id }}-${{ github.run_attempt }}
+          retention-days: 30
+          path: |
+            results/phase0/*.log
+            results/phase0/environment.json
+            results/phase1/*.log
+            results/phase1/numerical/
+            build/**/test_results/**/*.xml
+            build/**/ament_cmake_gtest/*.txt
+            log/latest_build/**
+            log/latest_test/**

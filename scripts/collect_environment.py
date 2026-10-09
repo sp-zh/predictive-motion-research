@@ -4,6 +4,7 @@ import argparse
 import datetime
 import importlib.metadata
 import json
+import os
 import platform
 import shutil
 import subprocess
@@ -29,6 +30,14 @@ def main():
         except importlib.metadata.PackageNotFoundError:
             packages[name] = None
     inventory = {
+        'ci': {name: os.environ.get(name) for name in [
+            'GITHUB_RUN_ID', 'GITHUB_RUN_ATTEMPT', 'CI_IMAGE_REF',
+        ]},
+        'checkout': command(['git', 'rev-parse', 'HEAD']),
+        'os_release': Path('/etc/os-release').read_text() if Path('/etc/os-release').exists() else None,
+        'ros_distro': os.environ.get('ROS_DISTRO'),
+        'image_metadata': json.loads(Path('/usr/local/share/predictive-motion-ci/environment.json').read_text())
+            if Path('/usr/local/share/predictive-motion-ci/environment.json').exists() else None,
         'recorded_utc': datetime.datetime.now(datetime.timezone.utc).isoformat(),
         'platform': platform.platform(), 'machine': platform.machine(),
         'python': platform.python_version(), 'python_packages': packages,

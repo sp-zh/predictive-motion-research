@@ -1,0 +1,219 @@
+name: Publish and validate CI environment
+on:
+  workflow_dispatch:
+    inputs:
+      stage:
+        description: 'A: mirror base; B: build dependencies after A passes'
+        type: choice
+        options: [base, ci]
+        required: true
+      package_names_confirmed:
+        description: 'I checked both package names are unused or linked to this repository'
+        type: boolean
+        required: true
+        default: false
+      base_ref:
+        description: 'For B: verified GHCR base manifest reference (with sha256 digest)'
+        type: string
+      base_run:
+        description: 'For B: successful base-stage run ID at this same source commit'
+        type: string
+permissions:
+  contents: read
+concurrency:
+  group: ci-environment-publish
+  cancel-in-progress: false
+jobs:
+  publish:
+    if: github.repository == 'sp-zh/predictive-motion-research' && github.ref == 'refs/heads/master' && inputs.package_names_confirmed
+    runs-on: ubuntu-24.04
+    timeout-minutes: 30
+    permissions:
+      contents: read
+      actions: read
+      packages: write
+    outputs:
+      image: ${{ steps.publish.outputs.image }}
+    steps:
+      - uses: actions/checkout@11d5960a326750d5838078e36cf38b85af677262 # releases-v4 verified commit
+        with:
+          persist-credentials: false
+      - name: Check package ownership and prior base validation
+        env:
+          GH_TOKEN: ${{ github.token }}
+          STAGE: ${{ inputs.stage }}
+          BASE_REF: ${{ inputs.base_ref }}
+          BASE_RUN: ${{ inputs.base_run }}
+        shell: bash
+        run: |
+          set -euo pipefail
+          repo_id=$(gh api repos/sp-zh/predictive-motion-research --jq .id)
+          for name in predictive-motion-research-ros-base predictive-motion-research-ci; do
+            if gh api "users/sp-zh/packages/container/$name" > "$RUNNER_TEMP/package.json" 2> "$RUNNER_TEMP/package-error"; then
+              test "$(jq -r '.repository.id' "$RUNNER_TEMP/package.json")" = "$repo_id" || { echo 'Package belongs to another/unknown source'; exit 1; }
+            else
+              cat "$RUNNER_TEMP/package-error"
+              grep -q 'HTTP 404' "$RUNNER_TEMP/package-error" || exit 1
+              # 404 can also mean inaccessible: the explicit dispatch attestation
+              # must establish these names are unused or owned by this project.
+            fi
+          done
+          if [[ "$STAGE" == ci ]]; then
+            [[ "$BASE_REF" =~ ^ghcr\.io/sp-zh/predictive-motion-research-ros-base@sha256:[0-9a-f]{64}$ ]]
+            [[ "$BASE_RUN" =~ ^[0-9]+$ ]]
+            gh api "repos/$GITHUB_REPOSITORY/actions/runs/$BASE_RUN" > "$RUNNER_TEMP/base-run.json"
+            # shellcheck disable=SC2016 # jq parses its own variables
+            jq -e --arg sha "$GITHUB_SHA" '.conclusion == "success" and .head_sha == $sha and .head_branch == "master" and .path == ".github/workflows/publish-ci-images.yml"' "$RUNNER_TEMP/base-run.json"
+            base_attempt=$(jq -r .run_attempt "$RUNNER_TEMP/base-run.json")
+            gh run download "$BASE_RUN" --name "ci-image-validation-$BASE_RUN-$base_attempt" --dir "$RUNNER_TEMP/base-validation"
+            # shellcheck disable=SC2016 # jq parses its own variables
+            jq -e --arg ref "$BASE_REF" --arg sha "$GITHUB_SHA" '.stage == "base" and .image == $ref and .source_commit == $sha and .anonymous_pull == true and .full_tests == true' "$RUNNER_TEMP/base-validation/validation.json"
+          fi
+      - name: Authenticate GHCR before pulling
+        env:
+          REGISTRY_TOKEN: ${{ github.token }}
+        shell: bash
+        run: printf '%s' "$REGISTRY_TOKEN" | docker login ghcr.io -u "$GITHUB_ACTOR" --password-stdin
+      - name: Optional Docker Hub credentials for initial mirror
+        if: inputs.stage == 'base'
+        env:
+          HUB_USER: ${{ secrets.DOCKERHUB_USERNAME }}
+          HUB_TOKEN: ${{ secrets.DOCKERHUB_TOKEN }}
+        shell: bash
+        run: |
+          set -euo pipefail
+          if [[ -n "$HUB_USER" && -n "$HUB_TOKEN" ]]; then
+            printf '%s' "$HUB_TOKEN" | docker login docker.io -u "$HUB_USER" --password-stdin
+          elif [[ -n "$HUB_USER" || -n "$HUB_TOKEN" ]]; then
+            echo 'Configure both DOCKERHUB_USERNAME and DOCKERHUB_TOKEN'; exit 1
+          fi
+      - name: Publish unique candidate and verify registry digest
+        id: publish
+        env:
+          STAGE: ${{ inputs.stage }}
+          BASE_REF: ${{ inputs.base_ref }}
+        shell: bash
+        run: |
+          set -euo pipefail
+          tag="${GITHUB_SHA}-${GITHUB_RUN_ID}-${GITHUB_RUN_ATTEMPT}"
+          if [[ "$STAGE" == base ]]; then
+            sudo apt-get update
+            sudo apt-get install -y --no-install-recommends skopeo
+            source_ref=$(cat docker/ros-base-source.txt)
+            [[ "$source_ref" =~ ^docker\.io/library/ros:jazzy-ros-base-noble@sha256:[0-9a-f]{64}$ ]]
+            authfile="$HOME/.docker/config.json"
+            # No retry loop: an actual Hub limit/timeout blocks the mirror visibly.
+            skopeo inspect --authfile "$authfile" --raw "docker://$source_ref" > "$RUNNER_TEMP/source-index.json"
+            # shellcheck disable=SC2016 # jq parses its own variables
+            manifest=$(jq -er '[.manifests[] | select(.platform.os == "linux" and .platform.architecture == "amd64")] | if length == 1 then .[0].digest else error("ambiguous/missing amd64 manifest") end' "$RUNNER_TEMP/source-index.json")
+            platform_source="docker.io/library/ros@$manifest"
+            target="ghcr.io/sp-zh/predictive-motion-research-ros-base:$tag"
+            skopeo copy --authfile "$authfile" --preserve-digests "docker://$platform_source" "docker://$target"
+            # shellcheck disable=SC2016 # Go template, not Bash expansion
+            digest=$(skopeo inspect --authfile "$authfile" --format '{{.Digest}}' "docker://$target")
+            image="${target%:*}@$digest"
+            skopeo inspect --authfile "$authfile" --raw "docker://$platform_source" > "$RUNNER_TEMP/source-manifest.json"
+            skopeo inspect --authfile "$authfile" --raw "docker://$image" > "$RUNNER_TEMP/target-manifest.json"
+            cmp "$RUNNER_TEMP/source-manifest.json" "$RUNNER_TEMP/target-manifest.json"
+            # shellcheck disable=SC2016 # backticks are Markdown in the summary
+            printf 'Source index: `%s`\nSource amd64 manifest: `%s`\nTarget manifest: `%s`\nManifest bytes (config + layers) identical.\n' "$source_ref" "$platform_source" "$image" >> "$GITHUB_STEP_SUMMARY"
+          else
+            target="ghcr.io/sp-zh/predictive-motion-research-ci:$tag"
+            # Docker's built-in builder; no docker-container/buildkit image pull.
+            docker build --builder default --platform linux/amd64 --file docker/Dockerfile.ci \
+              --build-arg "ROS_BASE=$BASE_REF" --build-arg "SOURCE_COMMIT=$GITHUB_SHA" --tag "$target" .
+            docker push "$target"
+            # The pushed registry manifest, never the local config/image ID.
+            # shellcheck disable=SC2016 # Go template, not Bash expansion
+            docker buildx imagetools inspect "$target" --format '{{json .Manifest}}' > "$RUNNER_TEMP/manifest.json"
+            digest=$(jq -er '.digest' "$RUNNER_TEMP/manifest.json")
+            image="${target%:*}@$digest"
+          fi
+          [[ "$digest" =~ ^sha256:[0-9a-f]{64}$ ]]
+          docker pull --platform linux/amd64 "$image"
+          test "$(docker image inspect "$image" --format '{{.Os}}/{{.Architecture}}')" = linux/amd64
+          echo "image=$image" >> "$GITHUB_OUTPUT"
+          # shellcheck disable=SC2016 # backticks are Markdown in the summary
+          printf '\nPublished (validation still pending): `%s`\nPlatform: linux/amd64\nSource: `%s`\n' "$image" "$GITHUB_SHA" >> "$GITHUB_STEP_SUMMARY"
+      - name: Log out
+        if: always()
+        shell: bash
+        run: |
+          docker logout ghcr.io
+          docker logout docker.io
+  validate:
+    needs: publish
+    runs-on: ubuntu-24.04
+    timeout-minutes: 25
+    permissions:
+      contents: read
+      packages: read
+    env:
+      CI_IMAGE_REF: ${{ needs.publish.outputs.image }}
+      CI_IMAGE_STAGE: ${{ inputs.stage }}
+    steps:
+      - uses: actions/checkout@11d5960a326750d5838078e36cf38b85af677262 # releases-v4 verified commit
+        id: checkout
+        with:
+          persist-credentials: false
+      - name: Pull by digest on fresh runner
+        env:
+          REGISTRY_TOKEN: ${{ github.token }}
+        shell: bash
+        run: |
+          set -euo pipefail
+          printf '%s' "$REGISTRY_TOKEN" | docker login ghcr.io -u "$GITHUB_ACTOR" --password-stdin
+          docker pull --platform linux/amd64 "$CI_IMAGE_REF"
+          test "$(docker image inspect "$CI_IMAGE_REF" --format '{{.Os}}/{{.Architecture}}')" = linux/amd64
+      - name: Execute unchanged full test entrypoint
+        id: tests
+        shell: bash
+        run: |
+          set -euo pipefail
+          mkdir -p results/ci-image
+          docker run --rm --platform linux/amd64 --network host \
+            -v "$GITHUB_WORKSPACE:/workspaces/predictive_motion" -w /workspaces/predictive_motion \
+            -e CI_IMAGE_REF -e CI_IMAGE_STAGE -e GITHUB_RUN_ID -e GITHUB_RUN_ATTEMPT \
+            "$CI_IMAGE_REF" bash scripts/ci/run_candidate.sh 2>&1 | tee results/ci-image/full-test.log
+          python3 scripts/ci/verify_test_results.py
+      - name: Require anonymous registry access for public/fork PRs
+        shell: bash
+        run: |
+          set -euo pipefail
+          anon=$(mktemp -d)
+          trap 'rm -rf "$anon"' EXIT
+          docker --config "$anon" pull --platform linux/amd64 "$CI_IMAGE_REF"
+          # Empty client config forces registry authentication without user credentials,
+          # even if content layers already exist in the daemon cache.
+      - name: Record successful validation
+        env:
+          SOURCE_COMMIT: ${{ github.sha }}
+        shell: bash
+        run: |
+          set -euo pipefail
+          # shellcheck disable=SC2016 # jq parses its own variables
+          jq -n --arg image "$CI_IMAGE_REF" --arg stage "$CI_IMAGE_STAGE" --arg sha "$SOURCE_COMMIT" \
+            --arg run "$GITHUB_RUN_ID" --arg attempt "$GITHUB_RUN_ATTEMPT" \
+            '{image:$image,stage:$stage,source_commit:$sha,run_id:$run,attempt:$attempt,platform:"linux/amd64",anonymous_pull:true,full_tests:true}' > results/ci-image/validation.json
+          # shellcheck disable=SC2016 # backticks are Markdown in the summary
+          printf 'Validated full tests + anonymous pull: `%s`\nSource: `%s`\n' "$CI_IMAGE_REF" "$SOURCE_COMMIT" >> "$GITHUB_STEP_SUMMARY"
+      - name: Retain explicit diagnostics, including failed tests
+        if: ${{ !cancelled() && steps.checkout.outcome == 'success' }}
+        uses: actions/upload-artifact@ea165f8d65b6e75b540449e92b4886f43607fa02 # v4.6.2
+        with:
+          name: ci-image-validation-${{ github.run_id }}-${{ github.run_attempt }}
+          retention-days: 30
+          path: |
+            results/ci-image/
+            results/phase0/*.log
+            results/phase0/environment.json
+            results/phase1/*.log
+            results/phase1/numerical/
+            build/**/test_results/**/*.xml
+            build/**/ament_cmake_gtest/*.txt
+            log/latest_build/**
+            log/latest_test/**
+      - name: Log out
+        if: always()
+        shell: bash
+        run: docker logout ghcr.io

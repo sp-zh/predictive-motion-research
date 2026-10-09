@@ -1,0 +1,11 @@
+# This overrides the root .dockerignore only for Dockerfile.ci.
+**
+!docker/
+!docker/Dockerfile.ci
+!docker/Dockerfile.ci.dockerignore
+!docker/ros-base-source.txt
+!scripts/
+!scripts/phase0/
+!scripts/phase0/setup_linux.sh
+!scripts/ci/
+!scripts/ci/check_environment.py
