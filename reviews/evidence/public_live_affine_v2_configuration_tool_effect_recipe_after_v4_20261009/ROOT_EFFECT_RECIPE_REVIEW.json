@@ -1,0 +1,22 @@
+{
+  "decision": "PASS_STATIC_CONFIGURATION_TOOL_EFFECT_RECIPE_ONLY",
+  "baseline": "9da3f121fd24c538400103dae5124d6bf4e3b8f2",
+  "recipe_ready_sha256": "534e8b15bd43b38fc491e8b6ca7cc905f98654f63f7579f84a13d689006ef01e",
+  "payloads_verified": 9,
+  "unchanged_source_guards_verified": 116,
+  "independent_findings": [
+    "M01-M05 are exact driver metadata and empty-input preprocessing commands, no project translation unit or executable",
+    "Actual default macro and explicit C++17 macro must remain distinct observed values; no default/sysroot/Python success values invented",
+    "The current full-stack configure candidate does not yet admit CMake effects; Python system-site hooks and remaining query commands remain unknown",
+    "Python stdlib metadata, NumPy initialization, generated standard tool program and project Model runtime are distinct effect classes",
+    "Full identity/source/config/startup text retained only outside public Git; no repetition of refused full publication"
+  ],
+  "configuration_or_compile_admitted": false,
+  "new_tool_metadata_executed": 0,
+  "SDK_imports_or_project_functions_executed": 0,
+  "source_changes": 0,
+  "next_unit": "Execute only reviewed M01-M05 compiler information queries in fresh controlled output scope; preserve exact argv/stdout/stderr/exit and actual identity. No configure/build or Python/NumPy discovery follows.",
+  "phase5": "NOT_ACCEPTED",
+  "phase6": "NOT_STARTED",
+  "old_checkers_frozen_archives_and_failures_preserved": true
+}
