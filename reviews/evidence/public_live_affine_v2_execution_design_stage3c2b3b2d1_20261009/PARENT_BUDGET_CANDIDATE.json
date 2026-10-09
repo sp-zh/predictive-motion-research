@@ -1,0 +1,69 @@
+{
+  "scope": "Unaccepted static core candidate EXCLUDING envp/stdin; not an actual planner/ledger/allocation result",
+  "baseline": "56eea83f4f7ebd979347737b08b68a3b5f428b9c",
+  "Parent": {
+    "max_argv_count": 64,
+    "max_argv_total_bytes_including_NUL": 65536,
+    "max_argument_bytes_including_NUL": 4096,
+    "path_bytes": 4096,
+    "each_stdout_stderr_bytes": 16777216,
+    "each_userspace_ring_bytes": 65536,
+    "max_each_kernel_pipe_bytes": 65536,
+    "kernel_pipes": 5,
+    "control_message_buffer_bytes": 4096,
+    "max_metered_IO_attempts": 262144,
+    "metadata_bytes": 1048576,
+    "unique_output_bytes": 34603008,
+    "held_slots_candidate": {
+      "argv_bytes_with_terminators": 8192,
+      "argv_pointer_roster65": 65,
+      "cwd_path": 512,
+      "exec_path": 512,
+      "stdout_userspace_ring": 8192,
+      "stderr_userspace_ring": 8192,
+      "stdout_kernel_pipe_allowance": 8192,
+      "stderr_kernel_pipe_allowance": 8192,
+      "control_userspace_buffer": 512,
+      "three_control_kernel_pipes": 24576,
+      "private_owner_and_work": 1024,
+      "close_error_workspace": 1024
+    },
+    "live_slots_candidate": 69185,
+    "charges_formula": "8*total_log_bytes +128*IO_attempt_cap +3*argv_total_bytes +8192",
+    "charges_candidate": 302194688
+  },
+  "Child": {
+    "preexec_inherited_parent_userspace_slots_candidate": 28225,
+    "postexec_bootstrap_slots_candidate": 9216,
+    "actual_component_plan": "Must be rederived/frozen from the actual reviewed child inputs before its own Case; current source/run gates still apply",
+    "ledger_identity": "Fresh child-local authority, never inherited Parent SharedCaseBudget pointer",
+    "whole_bootstrap_provider_RSS_verified": false
+  },
+  "aggregate_admission_before_spawn": [
+    "max(P.live+C.preexec_transient,P.live+C.bootstrap+C.actual_component_live)<=64000000",
+    "P.charges+C.preexec_charges+C.bootstrap_charges+C.actual_component_charges<=512000000; batch total<=1024000000",
+    "P.metadata_bound+C.proven_metadata_bound<=8388608",
+    "P.unique_output_bound+C.actual_output_bound<=268435456; each unique physical artifact charged once to its owning process"
+  ],
+  "capture_fees": "Actual bounded copies/metadata/refills/hash coverage/fsync/close/error work paid before materialization; real returned bytes tracked separately; failed prefix never relabeled complete",
+  "limitations": [
+    "No Parent/Child real ledger or platform pipe capacity measured",
+    "No existing already-created Case expanded, no SDK/W/manifest slack credited",
+    "No child full metadata/RSS/output/cumulative closure proved; a missing bound blocks spawn admission",
+    "Fragmentation/EINTR/caps/deadlines can refuse; candidate is no OS completion theorem",
+    "All current numbers exclude envp/stdin; actual before-fork/child-transition/close/metadata/output fees unknown, so not admitted",
+    "Post-creation pipe capacity observation is a check, not a pre-creation allocation bound"
+  ],
+  "project_function_executions": 0,
+  "phase5": "NOT_ACCEPTED",
+  "phase6": "NOT_STARTED",
+  "execution_ABI_inputs": {
+    "envp_reviewed_recipe_and_bytes_bound": null,
+    "envp_pointer_and_copy_budget": null,
+    "stdin_reviewed_source_and_FD_budget": null,
+    "kernel_pipe_precreation_platform_allocation_bound_verified": false,
+    "admission": "BLOCKED_PENDING_REVIEWED_ENVP_STDIN_AND_PRECREATION_PIPE_BOUNDS",
+    "current_environment_or_credentials_collected": false,
+    "core_numbers_include_envp_or_stdin": false
+  }
+}

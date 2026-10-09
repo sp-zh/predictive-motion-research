@@ -1,0 +1,68 @@
+{
+  "scope": "Static declared new claim payload/work/output schedule, no feature run",
+  "prerequisite_backup": "9820b0d78a61e78f0be002f969ee307458fef494",
+  "held_breakdown": {
+    "Count_fields": 31,
+    "Boolean_fields": 39,
+    "signed_int_errno_enum_fields": 6,
+    "retained_SHA_arrays": 24,
+    "expected_324_rounded": 41,
+    "readback_325_rounded": 41,
+    "source_and_member_owner_identities": 2
+  },
+  "payload_ticket": 184,
+  "workspace_ticket": 256,
+  "metadata_frame_ticket": 8,
+  "added_live": 448,
+  "added_charges": 524288,
+  "added_output_bytes": 324,
+  "record_line_bytes": [
+    79,
+    81,
+    81,
+    83
+  ],
+  "limits": {
+    "path_bytes": 4096,
+    "components": 64,
+    "component_bytes": 255,
+    "claim_bytes": 324,
+    "read_prefix_and_extra_byte_max": 325,
+    "metered_IO_attempts": 1024,
+    "cleanup_descriptors": 4,
+    "error_detail_bytes": 512
+  },
+  "bounded_declared_schedule": {
+    "reservation_charges": 448,
+    "IO_control_and_request_rounded_max": 173056,
+    "prefix_digest_retention_max": 46800,
+    "hash_initialization": 384,
+    "path_scan_and_copy_max": 8704,
+    "component_copy_max": 2048,
+    "record_piece_copy": 44,
+    "prepaid_cleanup_and_history": 64,
+    "claim_and_member_error_copy_max": 128,
+    "metadata_facts": 93,
+    "metadata_fact_work": 3720,
+    "metadata_frame_copy": 8
+  },
+  "workspace_scope": {
+    "conditional_two_stat_slots": 128,
+    "component_slots": 32,
+    "raw_digest_slots": 4,
+    "remaining_conservative_small_workspace_capacity": 92,
+    "stat_size_source_assert_max_bytes": 512,
+    "native_identity_source_assert_max_bits": 64,
+    "provider_allocator_refcount_RSS_verified": false
+  },
+  "limitations": [
+    "Logical evidence/work schedule does not inspect full provider/allocator/compiler-stack/RSS",
+    "Actual ledger caps can refuse even within this declared envelope due preceding work or OS failures",
+    "Old provisional8MiB/full cumulative/metadata/output/RSS acceptance not inherited",
+    "No process/early-publication/rootREADY/reference/controller authority"
+  ],
+  "feature_executions": 0,
+  "phase5": "NOT_ACCEPTED",
+  "phase6": "NOT_STARTED",
+  "conditional_declared_work_sum": 235404
+}

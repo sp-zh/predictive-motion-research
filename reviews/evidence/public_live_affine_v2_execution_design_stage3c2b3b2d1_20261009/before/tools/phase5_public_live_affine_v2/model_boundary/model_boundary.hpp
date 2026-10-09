@@ -1,0 +1,171 @@
+#pragma once
+#include "foundation.hpp"
+#include "public_coupled_augmented_extension.hpp"
+#include <memory>
+#include <string>
+#include <string_view>
+#include <vector>
+
+namespace phase5_public_live_affine_v2 {
+using RawResult = phase5_public_coupled_augmented_extension::Result;
+using NativeMetadata = phase5_public_coupled_v2::ModelMetadata;
+// The expected review digest must come from the separately reviewed dispatch.
+// A caller-chosen digest is not evidence of human/reviewer authorization.
+struct ReviewPins { std::string review_record_path, review_record_sha256; };
+struct NominalControl { JointVector alpha{}; double b = 0; };
+namespace detail {
+struct InvocationStorage; struct HandleStorage; struct ForecastStorage;
+struct OpenStorage; struct NormalizationFactory;
+}
+class OwnedLiveInvocation final {
+ public:
+  OwnedLiveInvocation(const OwnedLiveInvocation&) = delete;
+  OwnedLiveInvocation& operator=(const OwnedLiveInvocation&) = delete;
+  OwnedLiveInvocation(OwnedLiveInvocation&&) noexcept;
+  OwnedLiveInvocation& operator=(OwnedLiveInvocation&&) noexcept;
+  ~OwnedLiveInvocation();
+  const LiveActualContext& actualContext() const;
+  const CycleMesh& mesh() const;
+  const std::vector<phase5_public_coupled_augmented::Cell>& nativeCells() const;
+  const std::string& invocationSha256() const;
+  const ResourcePlan& resourcePlan() const;
+ private:
+  explicit OwnedLiveInvocation(std::shared_ptr<detail::InvocationStorage>);
+  std::shared_ptr<detail::InvocationStorage> storage_;
+  friend struct detail::ForecastFactory;
+};
+class PinnedModelHandle final {
+ public:
+  PinnedModelHandle(const PinnedModelHandle&) = delete;
+  PinnedModelHandle& operator=(const PinnedModelHandle&) = delete;
+  PinnedModelHandle(PinnedModelHandle&&) noexcept;
+  PinnedModelHandle& operator=(PinnedModelHandle&&) noexcept;
+  ~PinnedModelHandle();
+  bool hasLiveModel() const noexcept;
+  const NativeMetadata& verifiedMetadata() const;
+  const std::vector<FileIdentity>& verifiedFiles() const;
+  const FileIdentity& currentProducerIdentity() const;
+  const FileIdentity& reviewRecordIdentity() const;
+  const FileIdentity& protocolIdentity() const;
+ private:
+  explicit PinnedModelHandle(std::unique_ptr<detail::HandleStorage>);
+  std::unique_ptr<detail::HandleStorage> storage_;
+  friend struct detail::ForecastFactory;
+};
+class ModelOpenOutcome final {
+ public:
+  ModelOpenOutcome(const ModelOpenOutcome&) = delete;
+  ModelOpenOutcome& operator=(const ModelOpenOutcome&) = delete;
+  ModelOpenOutcome(ModelOpenOutcome&&) noexcept;
+  ModelOpenOutcome& operator=(ModelOpenOutcome&&) noexcept;
+  ~ModelOpenOutcome();
+  bool hasModel() const;
+  PinnedModelHandle& model();
+  const std::string& refusal() const;
+  bool constructorAttempted() const;
+  bool metadataAttempted() const;
+  const NativeMetadata* observedMetadata() const; // Complete, including mismatch.
+ private:
+  explicit ModelOpenOutcome(std::unique_ptr<detail::OpenStorage>);
+  std::unique_ptr<detail::OpenStorage> storage_;
+  friend struct detail::ForecastFactory;
+};
+struct ReleaseAttemptFacts {Count prepare=0,open=0,forecast=0,constructor=0,metadata=0,rollout=0;};
+enum class VerifiedMemberGroup {Protocol,SourceClosure,SDKClosure,InvocationCost};
+struct VerifiedMemberRelation {
+  Count file_index=0,parent_index=0,native_ordinal=0,declared_loaded_ordinal=0;
+  VerifiedMemberGroup group=VerifiedMemberGroup::Protocol;
+  bool parent_is_protocol=false,declared_loaded=false,verified=false;
+}; //8 real logical fields; FileIdentity.bytes adds1 per actual file.
+enum class MemberIdentityTargetKind {NotCaptured,Review,Protocol,Producer,MemberFile,DeclaredLibrary,CostInput};
+struct MemberLoaderObservationV1 {const char* stage="NOT_ATTEMPTED";Count libraries_checked=0,current_library_index=0,lines=0,inode=0,major_id=0,minor_id=0;bool current_library_known=false,parsed=false,mapped=false,refused=false;};
+struct MemberCaptureStatus {Count expected_files=0,actual_files=0,declared_libraries=0,verified_loader_checks=0,active_file_index=0,active_native_ordinal=0,active_parent_index=0;VerifiedMemberGroup active_group=VerifiedMemberGroup::Protocol;bool active_member_known=false;MemberIdentityTargetKind identity_target_kind=MemberIdentityTargetKind::NotCaptured;Count identity_target_index=0;bool identity_target_known=false;bool admitted=false,complete=false,refused=false;std::string first_error;};
+enum class ClaimStatTargetV1 {None,Parent,CreatedWriter,FinalWriter,ReaderInitial,ReaderFinal,NameRecheck};
+// Readonly history; construction authority remains in the private V4 factory.
+struct ClaimCaptureFactsV1 {
+  Count last_result_io_attempt=0,expected_bytes=324,written_bytes=0,read_bytes=0,attempted_write_bytes=0,attempted_read_bytes=0;
+  Count io_attempts=0,write_attempts=0,read_attempts=0,directory_components=0;
+  Count parent_device=0,parent_inode=0,created_device=0,created_inode=0,created_size=0;
+  Count read_device=0,read_inode=0,read_size=0,writer_digest_bytes=0,reader_digest_bytes=0;
+  Count close_attempts=0,close_successes=0,create_attempts=0,read_open_attempts=0,output_charged_bytes=0;
+  Count writer_final_size=0,read_final_size=0,last_stat_device=0,last_stat_inode=0,last_stat_mode=0,last_stat_links=0;
+  std::int64_t last_return=0,last_stat_size=0,last_close_return=0;int last_errno=0,cleanup_errno=0;ClaimStatTargetV1 last_stat_target=ClaimStatTargetV1::None;
+  bool last_return_known=false,attempted=false,expected_ready=false,path_copied=false,created=false,created_identity_known=false,parent_identity_known=false;
+  bool write_complete=false,writer_hash_state_valid=false,writer_digest_known=false;
+  bool file_fsync_attempted=false,file_fsynced=false,dir_fsync_attempted=false,dir_fsynced=false;
+  bool write_close_attempted=false,write_closed=false,read_opened=false,read_identity_known=false;
+  bool physical_eof=false,read_complete=false,reader_hash_state_valid=false,reader_digest_known=false,expected_digest_known=false;
+  bool read_matches_expected=false,identity_stable=false,read_close_attempted=false,read_closed=false;
+  bool parent_close_attempted=false,parent_closed=false,complete=false,historical_complete=false,refused=false,first_error_known=false,cleanup_close_failed=false;
+  bool writer_final_identity_known=false,read_final_identity_known=false,last_stat_known=false,comparison_started=false,byte_prefix_equal=false;
+  const char* stage="NO_CLAIM_IO_STARTED";const char* first_refusal_stage="NONE";const char* last_result_stage="NO_ACTUAL_RESULT";
+  std::string path,first_error;
+  std::array<char,64> expected_sha{},writer_prefix_sha{},reader_prefix_sha{};
+};
+class OwnedPublicForecast final {
+ public:
+  OwnedPublicForecast(const OwnedPublicForecast&) = delete;
+  OwnedPublicForecast& operator=(const OwnedPublicForecast&) = delete;
+  OwnedPublicForecast(OwnedPublicForecast&&) noexcept;
+  OwnedPublicForecast& operator=(OwnedPublicForecast&&) noexcept;
+  ~OwnedPublicForecast();
+  const RawResult* originalResult() const; // Never a fabricated empty success.
+  const std::string& transportFailure() const;
+  const std::string& structuralRefusal() const;
+  const LiveActualContext& actualContext() const;
+  const CycleMesh& mesh() const;
+  const std::vector<phase5_public_coupled_augmented::Cell>& nativeCells() const;
+  const std::string& invocationSha256() const;
+  const NativeMetadata& verifiedMetadata() const;
+  const std::vector<FileIdentity>& verifiedFiles() const;
+  const FileIdentity& currentProducerIdentity() const;
+  const FileIdentity& reviewRecordIdentity() const;
+  const FileIdentity& protocolIdentity() const;
+  std::string_view verifiedArtifactRole(Count index) const;
+  bool hasVerifiedMemberCapture() const noexcept;
+  const VerifiedMemberRelation& verifiedMemberRelation(Count) const;
+  const FileIdentity& verifiedMemberParent(Count) const;
+  const MemberCaptureStatus* memberCaptureStatus() const;
+  const MemberIdentityObservationV1* memberIdentityObservation() const;
+  const MemberLoaderObservationV1* memberLoaderObservation() const;
+  const CapturedLiveActualContextV1* capturedActualContextInputs() const;
+  const ClaimCaptureFactsV1* capturedClaimFacts() const;
+  Count retainedMemberCount() const;
+  std::string_view retainedMemberRole(Count) const;
+  const VerifiedMemberRelation& retainedMemberRelation(Count) const;
+  const FileIdentity& retainedMemberParent(Count) const;
+  const std::vector<FileIdentity>& verifiedLoadedLibraries() const;
+  std::string_view reviewedAttemptClaimPath() const;
+  ReleaseAttemptFacts releaseAttemptFacts() const;
+  std::string_view verifiedUnits() const;
+  std::string_view verifiedCertificateName() const;
+
+ private:
+  CaseBudget& normalizationBudget();
+  const ResourcePlan& normalizationPlan() const;
+  const char* normalizationCertificate() const;
+  const FactorShape& costShape() const;
+  const FileIdentity& costInputIdentity() const;
+  const std::string& costSemanticSha256() const;
+  explicit OwnedPublicForecast(std::unique_ptr<detail::ForecastStorage>);
+  std::unique_ptr<detail::ForecastStorage> storage_;
+  friend struct detail::ForecastFactory;
+  friend struct detail::NormalizationFactory;
+};
+
+// Hash/parse preflight only. These source functions do NOT release a run; future
+// execution also requires the external reviewed protocol/dispatch and new freeze.
+ReviewedForecastPermission loadReviewedForecastPermission(const ReviewPins&);
+ReviewedForecastPermission loadReviewedForecastPermissionWithMemberCaptureV2(const ReviewPins&,BatchBudget&);
+ReviewedForecastPermission loadReviewedForecastPermissionWithMemberContextCaptureV3(const ReviewPins&,BatchBudget&);
+ReviewedForecastPermission loadReviewedForecastPermissionWithMemberContextClaimCaptureV4(const ReviewPins&,BatchBudget&);
+CapturedLiveActualContextV1 validateFrozenLiveActualWithSnapshotV3(ReviewedForecastPermission&,const ObservedActual&,const AcceptedCommandHistory&,const ProgressHistory&,const NominalAnchor&,const CurrentBoundaryExpectation&,const StaticDomainRanges&);
+OwnedLiveInvocation prepareFrozenLiveInvocationWithContextSnapshotV3(ReviewedForecastPermission&,const CapturedLiveActualContextV1&,BatchBudget&);
+OwnedLiveInvocation prepareFrozenLiveInvocation(ReviewedForecastPermission&,
+                                                const LiveActualContext&, BatchBudget&);
+// Actual ctor/query/rollout appear only behind a validated, single-use release.
+ModelOpenOutcome openPinnedModel(ReviewedForecastPermission&, OwnedLiveInvocation&);
+OwnedPublicForecast forecastPublic(PinnedModelHandle&, OwnedLiveInvocation&&);
+// No archived/native-carrier or AlgebraTest factory can create these witnesses.
+// Normalization is a separate target; complete capture/readers remain later.
+} // namespace phase5_public_live_affine_v2
