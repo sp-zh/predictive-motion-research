@@ -1,0 +1,42 @@
+{
+  "decision": "PASS_FULL_NAMED_STATIC_LIBRARY_COMPILATION_ONLY_NOT_RUNTIME_OR_PHASE_ACCEPTANCE",
+  "baseline": "0b110d500d95a325194b947104897467cb758220",
+  "ready_sha256": "70f82d9a9730ce3103c0d421b9fe0a60dadb98cd4a0ef22b439bc7f20bdbe180",
+  "payloads_verified": 356,
+  "current_source_guards_verified": 116,
+  "build_invocations": 1,
+  "build_exit": 0,
+  "timed_out": false,
+  "elapsed_seconds": 67.19416333599656,
+  "actual_compiler_commands_independently_matched": 20,
+  "actual_objects_rehashed": 20,
+  "actual_static_archives_rehashed": 14,
+  "archive_object_members_byte_SHA_matched": 20,
+  "current_input_prepost_records_matched": 2949,
+  "readonly_source_files_preserved": 61,
+  "prebuild_configured_artifacts_verified": 273,
+  "registered_probes_unbuilt": 3,
+  "identifier_repair_compiled_validation": true,
+  "identifier_repair_runtime_validation": false,
+  "reader_source_sha256": "a2c4b6c187c8d2fff9cae845b98a9cda145fc48d20cf7c5b4bfa8b9e8a867ac0",
+  "actual_project_compile_flags_verified": true,
+  "post_observed_dependency_identities": 2563,
+  "dependencies_first_observed_after_this_build": 81,
+  "independent_review": [
+    "Exact build argv/fixed17-field environment/cwd/raw stream bytes and SHA checked against retained plan;one exit0 invocation",
+    "All20 raw compiler commands matched generated specifications and pinned GCC profile;no probe or extra translation unit",
+    "All20 object files and14 STATIC archives rehashed;independent GNU-ar byte parser matched all20 object members to compiled object bytes",
+    "2949 named inputs and61 readonly sources match before/after records;273 configured artifacts verified before build;task cache/cwd/crash/core empty",
+    "Original source/build/config failures and all warnings preserved;no old object/cache copy applied"
+  ],
+  "limits": [
+    "Static compilation does not validate final executable linkage,SDK/runtime ABI,numerics,controller behavior or full evidence publication",
+    "81 dependencies first observed after build are not retroactively prefrozen;full OS readset/native-loader/RSS closure remains unverified"
+  ],
+  "project_program_Model_algebra_test_ALL_install_finalexe_plant_main_scorer_runs": 0,
+  "next_scope": "Source/fixture/protocol planning for a bounded foundation verification unit;no compile/link/run until separately reviewed and frozen",
+  "phase5": "NOT_ACCEPTED",
+  "phase6": "NOT_STARTED",
+  "publication": "Compact authored review/storage only;raw objects,archives,dependency identities,environment/configuration and tool caches excluded",
+  "old_checker_archives_all_failures_and_pause_history_preserved": true
+}
