@@ -14,6 +14,9 @@ ROOT = Path(__file__).resolve().parents[2]
 spec = importlib.util.spec_from_file_location("checker", ROOT / "scripts/check_ci_environment.py")
 checker = importlib.util.module_from_spec(spec)
 spec.loader.exec_module(checker)
+spec_audit = importlib.util.spec_from_file_location("audit", ROOT / "scripts/ci/verify_test_results.py")
+audit = importlib.util.module_from_spec(spec_audit)
+spec_audit.loader.exec_module(audit)
 
 
 class EnvironmentCheck(unittest.TestCase):
@@ -109,6 +112,41 @@ class WorkflowReference(unittest.TestCase):
         recorded = re.search(r"^          CI_IMAGE_REFERENCE: (\S+)$", text, re.MULTILINE).group(1)
         self.assertEqual(image, recorded)
         self.assertRegex(image, r"@sha256:[0-9a-f]{64}$")
+
+
+class TestInventory(unittest.TestCase):
+    def setUp(self):
+        self.tmp = tempfile.TemporaryDirectory()
+        self.addCleanup(self.tmp.cleanup)
+        self.root = Path(self.tmp.name)
+        self.folder = self.root / "build/example/test_results/example"
+        self.folder.mkdir(parents=True)
+        for name, count in (("plant_test", 4), ("kinematics_test", 7), ("ik_test", 7), ("nullspace_test", 6)):
+            cases = "".join(f'<testcase classname="{name}" name="case{i}" status="run"/>' for i in range(count))
+            (self.folder / (name + ".gtest.xml")).write_text("<testsuites><testsuite>" + cases + "</testsuite></testsuites>")
+        (self.folder / "CTest.xml").write_text('<testsuite tests="9999"/>')
+        self.log = self.root / "results/ci-images/full-ci.log"
+        self.log.parent.mkdir(parents=True)
+        self.log.write_text("Ran 8 tests in 0.039s\n\nOK\nNUMERICAL_PASS samples=2000 seed=42 h=1e-6\nINSTALLED_EIGEN_ONLY_CONSUMER_PASS\nINSTALLED_EIGEN_ONLY_NULLSPACE_CONSUMER_PASS\n")
+
+    def test_native_reports_counted_once(self):
+        self.assertEqual(audit.audit(self.root)["native_gtest_count"], 24)
+
+    def test_skipped_native_report_fails(self):
+        path = self.folder / "plant_test.gtest.xml"
+        path.write_text(path.read_text().replace('status="run"/>', 'status="notrun"><skipped/></testcase>', 1))
+        with self.assertRaisesRegex(ValueError, "failed/skipped"):
+            audit.audit(self.root)
+
+    def test_missing_report_fails(self):
+        (self.folder / "plant_test.gtest.xml").unlink()
+        with self.assertRaisesRegex(ValueError, "inventory changed"):
+            audit.audit(self.root)
+
+    def test_statistics_skip_fails(self):
+        self.log.write_text(self.log.read_text().replace("OK\n", "OK (skipped=1)\n"))
+        with self.assertRaisesRegex(ValueError, "statistics"):
+            audit.audit(self.root)
 
 
 if __name__ == "__main__":

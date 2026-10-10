@@ -20,7 +20,13 @@ ContainerId-null error. Project compilation/tests did not run in that failure.
 Recent successful master runs do not eliminate this supply failure mode.
 
 Initial audit found only `ci.yml`, no open PR, only remote master, and no existing
-migration workflow. GitHub auth permits repository/workflow operations but lacks
+migration workflow on master. A later historical check found closed, unmerged
+[bootstrap PR #1](https://github.com/sp-zh/predictive-motion-research/pull/1),
+checkpoint `ee0c708c7c915d3fc458fb152cce5be075d5eb53`; no closure explanation was
+available in its comments. Its native XML/test inventory verifier was reused as
+`scripts/ci/verify_test_results.py`, with current log paths and stricter statistics
+skip rejection; no second active migration was found. Its earlier hosted green
+runs are historical preparation evidence, not GHCR publication proof. GitHub auth permits repository/workflow operations but lacks
 Packages scopes; listing Packages returns HTTP 403. Repository Secrets listing
 was empty. No Docker runtime/copy tool is installed on this Mac. Existing package
 names and visibility cannot be conclusively checked with this desktop token;
@@ -39,7 +45,7 @@ reviewed in the complete diff.
 
 Static/host-free checks: actionlint v1.7.12 (official release archive verified
 against upstream checksums), ShellCheck, Bash parse, Python source compile,
-11 infrastructure tests, and whitespace/diff review. Tests include real subprocess
+15 infrastructure tests, and whitespace/diff review. Tests include real subprocess
 install/test nonzero exits and failed diagnostics, plus dependency-drift controls.
 They do not establish a Linux Docker build, GHCR access or full new-image tests.
 

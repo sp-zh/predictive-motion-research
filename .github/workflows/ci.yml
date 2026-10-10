@@ -23,7 +23,12 @@ jobs:
         run: python3 tests/ci/test_environment_check.py
       - name: Fetch locked models, compile and execute tests
         shell: bash
-        run: bash scripts/ci.sh
+        run: |
+          mkdir -p results/ci-images
+          bash scripts/ci.sh 2>&1 | tee results/ci-images/full-ci.log
+      - name: Verify complete original test inventory
+        shell: bash
+        run: python3 scripts/ci/verify_test_results.py
       - name: Record environment
         if: always() && steps.checkout.outcome == 'success'
         shell: bash
@@ -38,6 +43,8 @@ jobs:
         with:
           name: ci-diagnostics-${{ github.run_id }}-${{ github.run_attempt }}
           path: |
+            results/ci-images/full-ci.log
+            results/ci-images/test-inventory.json
             results/phase0/*.log
             results/phase0/environment.json
             results/phase1/*.log
