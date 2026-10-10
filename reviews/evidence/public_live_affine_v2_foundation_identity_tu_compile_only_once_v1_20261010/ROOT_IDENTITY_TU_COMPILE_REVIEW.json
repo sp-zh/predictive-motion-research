@@ -1,0 +1,106 @@
+{
+  "decision": "PASS_ONE_IDENTITY_STATIC_RANGE_TU_COMPILE_ONLY_NOT_LINK_OR_RUNTIME",
+  "execution_baseline": "de7d570512ee554e263f6712f48063c428f770b5",
+  "original_ready_sha256": "80ad5f86ab0013ce6caf24a1d1ccd25a3a70eed5ed045e313299a1f1ea3ec558",
+  "packet_payloads_verified": 47,
+  "execution_baseline_production_and_prior_guards_verified_before_CI_sync": 305,
+  "sealed_controls_byte_identical_to_reviewed_freeze": true,
+  "compile_invocations": 1,
+  "exit_code": 0,
+  "signal_number": null,
+  "timeout_or_cap_stop": false,
+  "automatic_compiler_retries": 0,
+  "raw_stdout_bytes": 0,
+  "raw_stderr_bytes": 0,
+  "object": {
+    "class": "ELF64",
+    "type": "ET_REL",
+    "machine": "AMD64",
+    "entry": 0,
+    "program_headers": 0,
+    "sections": 50,
+    "bytes": 54912,
+    "sha256": "0cd9907c587cc14251ca66c399317a09a7bc536d36306317416c4dfffb276464",
+    "compiled_fixed_fixture_root_literal_found": true
+  },
+  "actual_depfile_paths_verified": 225,
+  "all_actual_dependency_paths_match_prelisted_inputs": true,
+  "new_post_compile_dependency_records": 0,
+  "primary_prepost_input_records_matched": 387,
+  "separate_prepost_artifact_header_records_matched": 79,
+  "readonly_directory_modes_rosters_unchanged": 14,
+  "parent_actual_mode_preserved": "0775",
+  "actual_parent_after_roster": [
+    "compile-attempt1",
+    "source-version1"
+  ],
+  "serialized_directory_records_scope": "15originalguardtemplates,notclaimthatparentactualrosterunchanged;onlyreviewedexclusivecompile-attempt1added",
+  "named_absences": 4,
+  "root_independent_remote_recheck": {
+    "records_rechecked": 468,
+    "primary_inputs": 387,
+    "separate_artifacts_and_headers": 79,
+    "actual_artifacts": 2,
+    "readonly_modes_rosters_preserved": 14,
+    "parent_mode": "0o775",
+    "actual_parent_after_roster": [
+      "compile-attempt1",
+      "source-version1"
+    ],
+    "named_absences": 4,
+    "compile_cwd_empty": true,
+    "compiler_or_program_invocations": 0
+  },
+  "original_remote_archive_verified": {
+    "regular_files": 16,
+    "payloads": 15
+  },
+  "depfile_scope": "225 actualdep paths subsetof387primaryguardroles;17fixturebytes notcompilerincludes,3conditionalYAMLheaders separatetextguards. No fullOS/include/readset/RSSclaim.",
+  "compiler_profile": "ReviewedGCC13/O2/NDEBUG/no-fast-math/ffp-contract=off/C++17/warnings;one-cTU/fixed4env/120s/parallel1/cap1MiB/frozenfixturemacro",
+  "limits": {
+    "CPU_seconds": [
+      110,
+      110
+    ],
+    "AS_bytes": [
+      4294967296,
+      4294967296
+    ],
+    "CORE_bytes": [
+      0,
+      0
+    ],
+    "FSIZE_bytes": [
+      134217728,
+      134217728
+    ],
+    "NOFILE": [
+      64,
+      64
+    ]
+  },
+  "retained_metadata_and_infrastructure_history": [
+    "Remoteadvancedtohuman-authorizedCImergecontainingcheckpoint;ancestor-qualifiedbackupverification corrected twoexact-headassertions",
+    "MacENOSPCbeforemetadatascriptcreation;exclusivefsync/readprobeandwritesrecoveredbeforecompiler;nohistoricaldata deletion",
+    "CollectorV1 localsyntaxfailure beforeSSH;V2 readonlydepjoinassertion beforearchivewrites;RootreviewedV3single-readonlycollector succeeded",
+    "Onlydepfilejoinmetadataexpression repaired;compiler/harness/source/fixtures/oracle/profile unchanged;actualcompileronce"
+  ],
+  "target_APIs_and_test_groups_executed": 0,
+  "planned_groups_unexecuted": 24,
+  "planned_target_entries_unexecuted": 29,
+  "expected714byte_stdout_still_future": true,
+  "link_calls": 0,
+  "program_runs": 0,
+  "production_CPP_API_calls": 0,
+  "scope_limits": [
+    "CompileandELF/depfile evidence notidentityhash/YAML/parser/staticrangegetter/runtimebehaviorproof",
+    "Compiledmacro literalbinding verified butno realfixtureCPPread executed",
+    "Nativeheadertextnotlinkedlibrary/version/ABI/runtimebinding;needslaterlink/nativeprotocolreview",
+    "NoCurrentproducer/memberbudget/LiveActual/first4ms/Model/SDK/affine/cost/capture/Parent/plant/main/scorer"
+  ],
+  "publication": "Compactrootreview/storage andCI-syncqualification only;rawobjects/depfiles/controls/header-nativeindices/failuresexcluded",
+  "phase5": "NOT_ACCEPTED",
+  "phase6": "NOT_STARTED",
+  "next_unit": "Separate reviewedlink preparation;pureobject/archive recursive symbol analysis andfiniteOpenSSL/yaml-cppdependency inputs only,no link/runtime yet",
+  "all_prior_actual_results_figures_checkerfreezes_and_failures_preserved": true
+}
