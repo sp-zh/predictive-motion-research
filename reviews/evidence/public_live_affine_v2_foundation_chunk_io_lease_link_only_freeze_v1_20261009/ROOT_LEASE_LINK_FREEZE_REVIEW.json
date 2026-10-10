@@ -1,0 +1,80 @@
+{
+  "decision": "PASS_CHUNK_IO_LEASE_SINGLE_LINK_INPUT_FREEZE_ONLY_NOT_LINK_OR_RUNTIME",
+  "baseline": "01bada3da08b90e6e097aba8dba1e1f930e87701",
+  "ready_sha256": "c0ce90ae91c4feaba344e92cfe56430be7c526d3e0e73065235aa290a95975db",
+  "original_payloads_verified": 11,
+  "production_and_prior_guards_verified": 223,
+  "readonly_link_files": 2,
+  "prior_project_artifact_source_guards": 62,
+  "current_native_link_identities": 33,
+  "historical_native_origin_labels_preserved": true,
+  "future_harness_prepost_role_records": 97,
+  "unique_requested_paths": 97,
+  "unique_resolved_files": 90,
+  "root_independent_remote_recheck": {
+    "records_verified": 97,
+    "named_absences_verified": 2,
+    "source_directory_guards_verified": 5,
+    "readonly_link_inputs": 2,
+    "link_attempt_absent": true,
+    "link_and_program_calls": 0
+  },
+  "independent_file_byte_symbols": {
+    "archive_members_matched_original": 3,
+    "lease_project_undefined_symbols": 16,
+    "all_defined_by_resources_member": true,
+    "resources_member_project_undefined_symbols": 0,
+    "extraction_prediction_only_actual_map_required": true
+  },
+  "harness_review": "Exact reviewed owned-buffer link pattern after control/file/pinned digest changes and correctly sorted object-first roster; AST parsed only; one dispatch-gated Popen and no output execution",
+  "limits": {
+    "CPU_seconds": [
+      110,
+      110
+    ],
+    "AS_bytes": [
+      4294967296,
+      4294967296
+    ],
+    "CORE_bytes": [
+      0,
+      0
+    ],
+    "FSIZE_bytes": [
+      134217728,
+      134217728
+    ],
+    "NOFILE": [
+      64,
+      64
+    ]
+  },
+  "wall_timeout_seconds": 120,
+  "combined_output_cap_bytes": 1048576,
+  "fixed_replaced_environment": {
+    "PATH": "/usr/bin:/bin",
+    "LANG": "C",
+    "LC_ALL": "C",
+    "TZ": "UTC"
+  },
+  "diagnostic_retention": "Actual raw bytes/hashes retained including warnings; no empty-stderr assumption or suppression; nonzero/signal/timeout/cap/drift stops without retry",
+  "compiler_queries": 0,
+  "compiler_calls": 0,
+  "link_calls": 0,
+  "program_runs": 0,
+  "production_CPP_function_calls": 0,
+  "lease_groups_executed": 0,
+  "actual_lease_constructions": 0,
+  "actual_numeric_buffer_allocations": 0,
+  "scope_limits": [
+    "Finite33 native/default-link identities and two named specs absences do not establish full OS/search/readset/native/RSS closure",
+    "All62 prior artifacts/source originals are included in future97 harness prepost records; no separately omitted guard subset",
+    "Pure symbol coverage predicts one resources member; actual extraction requires future emitted map",
+    "Four type contracts passed compilation; successful link cannot validate10lease health/poison/reset/move/lifetime/refusal groups or authorize a test run",
+    "Private active state/thread safety/actualIO/allocator/RSS remain outside runtime claims; prior66/85/13 results/figures/all failures preserved"
+  ],
+  "next_admitted_unit": "Separate exact one-link-only invocation after verified milestone backup; no binary execution/retry/repair",
+  "publication": "Compact root review/storage only; raw object/archive/symbols/controls/native indexes excluded",
+  "phase5": "NOT_ACCEPTED",
+  "phase6": "NOT_STARTED"
+}
