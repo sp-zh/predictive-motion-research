@@ -1,0 +1,19 @@
+{
+  "scope": "Root independent source finding; V2 preexecution repair only",
+  "V1_READY": {
+    "bytes": 372197,
+    "sha256": "43541d24229943c903013a097c4067a3e5491c52cf0fec23297b6654730769f9"
+  },
+  "finding": "Overall wall/observational thresholds were first checked after Popen; preflight could already have exceeded them before native entry",
+  "required_repair": "After BEFORE_SINGLE_POPEN/resultprefix, immediately before Popen check original started clock against unchanged180s wall and observed_output_refusal() is None. No timestamp reset/cap enlargement. Existing no-child failure path retains refusal and performs no Popen.",
+  "native_execution": 0,
+  "research_case_failure_or_retry": false,
+  "V1_retained_archive": {
+    "file": "COMPLETE_SEALED_RUNTIME_PREPARATION_V1_EXCLUDED.tar.gz",
+    "bytes": 1462548,
+    "sha256": "47f1dadd98c991ff9c7defd52e228909d0bb23e6aece296cdbd5fa425d94e1f2",
+    "regular_members": 77,
+    "payloads": 76,
+    "inner_ready_sha256": "acdb20617d181a9c1708bc0ddcefcf986e021e2d4ea0150f7a74114e0debbad0"
+  }
+}

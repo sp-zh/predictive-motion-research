@@ -1,0 +1,30 @@
+{
+  "scope": "Reviewed source and prospective runtime gates; no target execution",
+  "review_sha256": "ae50d56d93a3db545981b6d1081c72f23d21cf42fec7b568368e0a4f3f28a035",
+  "selection": "Existing build checkpoint, remaining release prerequisites and single proposed diagnostic",
+  "renderer": {
+    "script": "render_runtime_preparation.py",
+    "sha256": "cde3be3427984ea9a48ba4e33e9254b59321174f8d06e51752d97b456b8eda1c",
+    "matplotlib": "3.10.3",
+    "font": "DejaVu Sans",
+    "dpi": 180,
+    "figure_inches": [
+      13,
+      7.5
+    ]
+  },
+  "outputs": [
+    {
+      "file": "first_cycle_runtime_preparation.png",
+      "bytes": 225377,
+      "sha256": "f2dbc9e0f3c7fcb7135d27df74a4c0078aeccea145e34608590f9ff6123fb6c2"
+    },
+    {
+      "file": "first_cycle_runtime_preparation.svg",
+      "bytes": 7683,
+      "sha256": "ecd4d1176b834af2a799d8c02f7546c893fec118444a8c59c375e07503d7aaa4"
+    }
+  ],
+  "phase5": "NOT_ACCEPTED",
+  "phase6": "NOT_STARTED"
+}

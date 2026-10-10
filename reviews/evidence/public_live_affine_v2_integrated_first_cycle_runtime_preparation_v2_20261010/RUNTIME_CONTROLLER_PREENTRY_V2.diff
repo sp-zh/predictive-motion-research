@@ -1,0 +1,11 @@
+--- sealedV1/runtime_controller_source.py
++++ V2/runtime_controller_source.py
+@@ -82,6 +82,8 @@
+  result={'argv':plan['argv'],'entry':'UNKNOWN_BEFORE_POPEN','exit':None,'first_error':None}
+  dump('PROGRAM_RESULT_PREFIX.json',result)
+  try:
++  assert time.monotonic()-started<=plan['wall_seconds'],'PREENTRY_WALL_REFUSAL_NO_PROGRAM_ENTRY'
++  assert observed_output_refusal() is None,'PREENTRY_OUTPUT_THRESHOLD_REFUSAL_NO_PROGRAM_ENTRY'
+   child=subprocess.Popen(plan['argv'],cwd=attempt,env=plan['env'],stdout=subprocess.PIPE,stderr=subprocess.PIPE,start_new_session=True);current=child;result['entry']='POPEN_STARTED';event('PROGRAM_CHILD_STARTED',pid=child.pid)
+   sel=selectors.DefaultSelector()
+   with (controls/'program.stdout').open('xb') as stdout,(controls/'program.stderr').open('xb') as stderr:

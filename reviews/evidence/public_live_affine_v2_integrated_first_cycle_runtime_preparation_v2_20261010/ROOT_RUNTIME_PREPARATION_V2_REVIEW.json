@@ -1,0 +1,45 @@
+{
+  "decision": "PASS_RUNTIME_PREPARATION_V2_SOURCE_ONLY_PROFILE_STAGE_AND_EXECUTION_CLOSED",
+  "baseline": "3650b42b9b47905ee64e4d2c2b0d8de3d6d0ba7d",
+  "ready_sha256": "084e062b3441de8872556aaf349484e829407ff2dd6e4b5e986854c138b9aaf1",
+  "payloads_verified": 80,
+  "original_V1_full_archive_verified": {
+    "regular_members": 77,
+    "payloads": 76,
+    "sha256": "47f1dadd98c991ff9c7defd52e228909d0bb23e6aece296cdbd5fa425d94e1f2"
+  },
+  "canonical_unchanged_guards": 1711,
+  "narrow_repair": "Two assertions immediately before the sole Popen enforce the original totalwall clock and observational output thresholds; exact four affected payloads rebound; no timestamp reset or cap/option enlargement.",
+  "future_profile_files": 21,
+  "future_readonly_rosters": 3,
+  "original_required_source_roles": 59,
+  "source_closure_unique_roles": 1605,
+  "original_V1_artifact_roles": 8,
+  "SDK_library_expectations": 25,
+  "SDK_scope": "Static possible canonical loader expectations, not current loaded-inode evidence",
+  "independent_current_remote_recheck": {
+    "status": "PASS_READONLY_CURRENT_INPUTS",
+    "files": 1597,
+    "rosters": 15,
+    "prospective_paths_absent": 2,
+    "CPP_Model_runtime_calls": 0
+  },
+  "old_XML_constants_reference_URDF_K0_state_history_options_exact": true,
+  "robot_config_rebinding": "Only URDF line changes to identical future immutable URDF snapshot, independently byte-compared to actual current config",
+  "all_three_future_contract_copies_exact_Mac_sources": true,
+  "original_expected_metadata_unchanged": true,
+  "all_decisions_NOT_RELEASED": true,
+  "source_only_AST_and_JSON_validation": true,
+  "limitations": [
+    "Profiles, 3 absent-Dell contract copies, modes and rosters remain prospective until separately installed and observed.",
+    "Final trusted inner/outer runtime reviews and exact released plan need a fresh independent authoring/freeze; proposals cannot be overwritten to authorize runtime.",
+    "Actual native loader/inode set, ABI/metadata/bootstrap/contact/freshness/nominal/inline/QP outcomes remain actual runtime gates.",
+    "Declared deliberate API maxima are not all native/SDK/helper calls or a wholeParent/RSS/readset theorem.",
+    "128MiB binary cap is separate from explicitly observational metadata/claim/attempt thresholds, which may overshoot before termination.",
+    "Hard process death and native child escape are not a fully implemented Parent supervisor; any runtime dispatch needs its bounded external transport/controller retention and cleanup scope.",
+    "No candidate forward, plant step/commit, main/scorer, whole task trajectory, online4ms result or phase acceptance."
+  ],
+  "native_project_calls": 0,
+  "phase5": "NOT_ACCEPTED",
+  "phase6": "NOT_STARTED"
+}

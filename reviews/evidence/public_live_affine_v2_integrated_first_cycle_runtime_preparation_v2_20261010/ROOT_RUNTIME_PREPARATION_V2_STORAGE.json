@@ -1,0 +1,29 @@
+{
+  "scope": "Independently reviewed unexecuted runtime preparation V2; no profile staging or program execution",
+  "archive": {
+    "bytes": 3373627,
+    "sha256": "81c21cab1335b17bfb4bcde617319d383db38b1c1b023070ccb33a067f6e0bd9",
+    "file": "first-cycle-runtime-preparation-v2.tar.gz",
+    "regular_file_count": 107,
+    "payload_file_count": 106,
+    "inner_ready_sha256": "42db8af158e33729e6b6ce1f0444bfe6a387b8c4c2a461f9f1d0c88d9d4d3642"
+  },
+  "Mac_archive": "/Users/uot/Documents/ChatGPT/ros/results/phase5-reference/integrated-first-cycle-runtime-preparation-v2-20261010/root-retained-preparation1/first-cycle-runtime-preparation-v2.tar.gz",
+  "Dell_archive": "/mnt/d/CodexTransfer/projects/predictive_motion/checkpoints/integrated-first-cycle-runtime-preparation-v2-20261010/root-retained-preparation1/first-cycle-runtime-preparation-v2.tar.gz",
+  "Mac_verification": {
+    "status": "PASS_ALL_ARCHIVE_PAYLOADS",
+    "archive_sha256": "81c21cab1335b17bfb4bcde617319d383db38b1c1b023070ccb33a067f6e0bd9",
+    "payloads_verified": 106
+  },
+  "Dell_verification": {
+    "status": "PASS_ALL_ARCHIVE_PAYLOADS",
+    "archive_sha256": "81c21cab1335b17bfb4bcde617319d383db38b1c1b023070ccb33a067f6e0bd9",
+    "payloads_verified": 106
+  },
+  "original_ready_sha256": "084e062b3441de8872556aaf349484e829407ff2dd6e4b5e986854c138b9aaf1",
+  "all80_V2_sealed_payloads_fullV1_and_retained_failures_preserved": true,
+  "publication": "Small proposal/controller/installer source, Root finding and diff, independent review, provenance/figures/renderer. Full host/SDK/profile/protocol indexes, drafts and V1 archive remain excluded.",
+  "program_runtime": 0,
+  "phase5": "NOT_ACCEPTED",
+  "phase6": "NOT_STARTED"
+}
