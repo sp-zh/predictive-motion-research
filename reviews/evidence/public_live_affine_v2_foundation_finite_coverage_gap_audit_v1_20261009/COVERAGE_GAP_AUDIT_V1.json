@@ -1,0 +1,797 @@
+{
+  "scope": "FINITE_VERIFICATION_COVERAGE_GAP_AUDIT_ONLY_V1",
+  "baseline": "1258b5ecffee6f2b6ee7cf1e907250b55798c639",
+  "grain": "Public API plus particular property and finiteinputscope;casegroup counts notassertions/uniqueproperties/trajectories/ranking",
+  "status_vocabulary": [
+    "RUNTIME_FIXED_CASES",
+    "COMPILE_ONLY",
+    "SOURCE_ONLY",
+    "STATIC_BOUND_DEFERRED",
+    "NOT_EXERCISED"
+  ],
+  "current_units": {
+    "mesh66": {
+      "source": "reviews/evidence/public_live_affine_v2_foundation_mesh_ledger_source_protocol_v1_20261009/foundation_mesh_ledger_v1.cpp",
+      "review": "reviews/evidence/public_live_affine_v2_foundation_bounded66_runtime_once_v1_20261009/ROOT_BOUNDED66_RUNTIME_REVIEW.json",
+      "stdout": "reviews/evidence/public_live_affine_v2_foundation_bounded66_runtime_once_v1_20261009/FOUNDATION_BOUNDED66_STDOUT.txt",
+      "groups": "reviews/evidence/public_live_affine_v2_foundation_bounded66_runtime_once_v1_20261009/FOUNDATION_BOUNDED66_GROUP_RESULTS.json",
+      "count": 66,
+      "passed_group_ids": [
+        "add_zero_max",
+        "add_exact_max",
+        "add_small",
+        "multiply_zero_max",
+        "multiply_max_one",
+        "multiply_square_below_overflow",
+        "add_overflow",
+        "multiply_overflow",
+        "multiply_square_overflow",
+        "decimal_one_cycle",
+        "decimal_leading_dot",
+        "decimal_200",
+        "decimal_375",
+        "decimal_one_second",
+        "decimal_leading_trailing_zeros",
+        "decimal_374",
+        "decimal_empty",
+        "decimal_zero",
+        "decimal_off_lattice",
+        "decimal_quarter",
+        "decimal_three_quarters",
+        "decimal_fraction_over_cap",
+        "decimal_over_cap",
+        "decimal_negative",
+        "decimal_plus",
+        "decimal_exponent",
+        "decimal_space",
+        "decimal_two_dots",
+        "decimal_final_dot",
+        "decimal_only_dot",
+        "decimal_letters",
+        "decimal_length33",
+        "decimal_numerator_overflow",
+        "decimal_scaled_overflow",
+        "decimal_denominator_overflow",
+        "mesh_uniform_20_200",
+        "mesh_balanced_20_375",
+        "mesh_explicit_4_10",
+        "mesh_explicit_1_375",
+        "mesh_zero_n",
+        "mesh_n_over_cap",
+        "mesh_zero_total",
+        "mesh_total_below_n",
+        "mesh_total_over_cap",
+        "mesh_uniform_remainder",
+        "mesh_uniform_extra",
+        "mesh_balanced_extra",
+        "mesh_explicit_empty",
+        "mesh_explicit_wrong_size",
+        "mesh_explicit_zero",
+        "mesh_explicit_wrong_sum",
+        "mesh_explicit_cell_over_cap",
+        "mesh_bad_enum",
+        "ledger_ticket_move_and_release",
+        "ledger_owner_lifetime",
+        "ledger_share_and_distinct_case",
+        "ledger_case_live_boundary",
+        "ledger_case_cumulative_boundary",
+        "ledger_batch_live_boundary",
+        "ledger_batch_cumulative_boundary",
+        "ledger_metadata_output_boundary",
+        "ledger_checked_overflow_atomic",
+        "ledger_moved_from_batch",
+        "ledger_moved_from_case",
+        "ledger_moved_from_shared",
+        "ledger_chunk_reentry_poison"
+      ]
+    },
+    "pricing85": {
+      "source": "reviews/evidence/public_live_affine_v2_foundation_resource_pricing_source_protocol_v1_20261009/resource_pricing_v1.cpp",
+      "review": "reviews/evidence/public_live_affine_v2_resource_pricing_bounded85_runtime_once_v1_20261009/ROOT_PRICING_RUNTIME85_REVIEW.json",
+      "stdout": "reviews/evidence/public_live_affine_v2_resource_pricing_bounded85_runtime_once_v1_20261009/PRICING_BOUNDED85_STDOUT.txt",
+      "groups": "reviews/evidence/public_live_affine_v2_resource_pricing_bounded85_runtime_once_v1_20261009/PRICING_BOUNDED85_GROUP_RESULTS.json",
+      "count": 85,
+      "passed_group_ids": [
+        "empty_n1_t200_m0_e0",
+        "empty_n1_t200_m0_e1",
+        "empty_n1_t200_m1_e0",
+        "empty_n1_t200_m1_e1",
+        "empty_n1_t375_m0_e0",
+        "empty_n1_t375_m0_e1",
+        "empty_n1_t375_m1_e0",
+        "empty_n1_t375_m1_e1",
+        "empty_n4_t200_m0_e0",
+        "empty_n4_t200_m0_e1",
+        "empty_n4_t200_m1_e0",
+        "empty_n4_t200_m1_e1",
+        "empty_n4_t375_m0_e0",
+        "empty_n4_t375_m0_e1",
+        "empty_n4_t375_m1_e0",
+        "empty_n4_t375_m1_e1",
+        "empty_n20_t200_m0_e0",
+        "empty_n20_t200_m0_e1",
+        "empty_n20_t200_m1_e0",
+        "empty_n20_t200_m1_e1",
+        "empty_n20_t375_m0_e0",
+        "empty_n20_t375_m0_e1",
+        "empty_n20_t375_m1_e0",
+        "empty_n20_t375_m1_e1",
+        "empty_n32_t200_m0_e0",
+        "empty_n32_t200_m0_e1",
+        "empty_n32_t200_m1_e0",
+        "empty_n32_t200_m1_e1",
+        "empty_n32_t375_m0_e0",
+        "empty_n32_t375_m0_e1",
+        "empty_n32_t375_m1_e0",
+        "empty_n32_t375_m1_e1",
+        "zero_row_linear1_m0_e0",
+        "zero_row_linear1_m0_e1",
+        "zero_row_linear1_m1_e0",
+        "zero_row_linear1_m1_e1",
+        "zero_row_linear32_m0_e0",
+        "zero_row_linear32_m0_e1",
+        "zero_row_linear32_m1_e0",
+        "zero_row_linear32_m1_e1",
+        "one_factor_row_m0_e0",
+        "one_factor_row_m0_e1",
+        "one_factor_row_m1_e0",
+        "one_factor_row_m1_e1",
+        "mixed_rows9_r4_m0_e0",
+        "mixed_rows9_r4_m0_e1",
+        "mixed_rows9_r4_m1_e0",
+        "mixed_rows9_r4_m1_e1",
+        "one_largest256_m0_e0",
+        "one_largest256_m0_e1",
+        "one_largest256_m1_e0",
+        "one_largest256_m1_e1",
+        "ordered_addition_envelope_m0_e0",
+        "ordered_addition_envelope_m0_e1",
+        "ordered_addition_envelope_m1_e0",
+        "ordered_addition_envelope_m1_e1",
+        "max_addition_multiple_records_m0_e0",
+        "max_addition_multiple_records_m0_e1",
+        "max_addition_multiple_records_m1_e0",
+        "max_addition_multiple_records_m1_e1",
+        "max_rows_n20_m0_e0",
+        "max_rows_n20_m0_e1",
+        "max_rows_n20_m1_e0",
+        "max_rows_n20_m1_e1",
+        "reject_terms33",
+        "reject_rows8193",
+        "reject_rmax257",
+        "reject_rows_exceed_term_envelope",
+        "reject_rmax_exceeds_total",
+        "reject_zero_terms_coefficients",
+        "reject_zero_terms_records",
+        "reject_coefficients_over_cap",
+        "reject_records_over_cap",
+        "reject_coefficients_at_cap_not_multiple30",
+        "reject_coefficient29",
+        "reject_coefficient31",
+        "reject_coefficients_without_records",
+        "reject_records_without_coefficients",
+        "reject_selected_rows_below_records",
+        "reject_selected_rows_above_record_rmax",
+        "reject_zero_row_term_with_addition",
+        "reject_uint64_terms_domain_refusal",
+        "reject_capture_enum",
+        "reject_encoding_enum",
+        "reject_both_enums_capture_first"
+      ]
+    },
+    "buffer13": {
+      "source": "reviews/evidence/public_live_affine_v2_foundation_owned_numeric_buffer_source_protocol_v2_20261009/owned_buffer_v1.cpp",
+      "review": "reviews/evidence/public_live_affine_v2_foundation_owned_buffer_bounded13_runtime_once_v1_20261009/ROOT_BUFFER_RUNTIME13_REVIEW.json",
+      "stdout": "reviews/evidence/public_live_affine_v2_foundation_owned_buffer_bounded13_runtime_once_v1_20261009/BUFFER_BOUNDED13_STDOUT.txt",
+      "groups": "reviews/evidence/public_live_affine_v2_foundation_owned_buffer_bounded13_runtime_once_v1_20261009/BUFFER_BOUNDED13_GROUP_RESULTS.json",
+      "count": 13,
+      "passed_group_ids": [
+        "buffer_zero_null",
+        "buffer_initialized_mutable_const",
+        "buffer_initialized64",
+        "buffer_move_constructor",
+        "buffer_assign_same_case",
+        "buffer_assign_different_case_same_batch",
+        "buffer_assign_different_batch",
+        "buffer_self_move",
+        "buffer_assign_zero_into_occupied",
+        "buffer_assign_occupied_into_zero",
+        "buffer_outlives_case_batch_wrappers",
+        "buffer_two64_overlap128",
+        "buffer_constructor_moved_case_refusal"
+      ]
+    },
+    "lease10": {
+      "source": "reviews/evidence/public_live_affine_v2_foundation_chunk_io_lease_source_protocol_v1_20261009/chunk_lease_v1.cpp",
+      "review": "reviews/evidence/public_live_affine_v2_foundation_chunk_io_lease_bounded10_runtime_once_v1_20261009/ROOT_LEASE_RUNTIME10_REVIEW.json",
+      "stdout": "reviews/evidence/public_live_affine_v2_foundation_chunk_io_lease_bounded10_runtime_once_v1_20261009/LEASE_BOUNDED10_STDOUT.txt",
+      "groups": "reviews/evidence/public_live_affine_v2_foundation_chunk_io_lease_bounded10_runtime_once_v1_20261009/LEASE_BOUNDED10_GROUP_RESULTS.json",
+      "count": 10,
+      "passed_group_ids": [
+        "lease_open_close_reopen",
+        "lease_shared_alias_reentry",
+        "lease_repeat_reentry_poison",
+        "lease_close_reset_poison",
+        "lease_different_case_isolation",
+        "lease_different_batch_isolation",
+        "lease_move_healthy_moved_source",
+        "lease_moved_source_dies_first",
+        "lease_move_poisoned_state",
+        "lease_outlives_case_batch_wrappers"
+      ]
+    }
+  },
+  "properties": [
+    {
+      "property": "Checked Count arithmetic / exactdecimal parser / ordered cyclemesh",
+      "status": "RUNTIME_FIXED_CASES",
+      "production_sources": [
+        "tools/phase5_public_live_affine_v2/foundation_resources.cpp"
+      ],
+      "runtime_evidence": [
+        {
+          "unit": "mesh66",
+          "source": "reviews/evidence/public_live_affine_v2_foundation_mesh_ledger_source_protocol_v1_20261009/foundation_mesh_ledger_v1.cpp",
+          "review": "reviews/evidence/public_live_affine_v2_foundation_bounded66_runtime_once_v1_20261009/ROOT_BOUNDED66_RUNTIME_REVIEW.json",
+          "actual_stdout": "reviews/evidence/public_live_affine_v2_foundation_bounded66_runtime_once_v1_20261009/FOUNDATION_BOUNDED66_STDOUT.txt",
+          "groups_file": "reviews/evidence/public_live_affine_v2_foundation_bounded66_runtime_once_v1_20261009/FOUNDATION_BOUNDED66_GROUP_RESULTS.json",
+          "case_group_ids": [
+            "add_zero_max",
+            "add_exact_max",
+            "add_small",
+            "multiply_zero_max",
+            "multiply_max_one",
+            "multiply_square_below_overflow",
+            "add_overflow",
+            "multiply_overflow",
+            "multiply_square_overflow",
+            "decimal_one_cycle",
+            "decimal_leading_dot",
+            "decimal_200",
+            "decimal_375",
+            "decimal_one_second",
+            "decimal_leading_trailing_zeros",
+            "decimal_374",
+            "decimal_empty",
+            "decimal_zero",
+            "decimal_off_lattice",
+            "decimal_quarter",
+            "decimal_three_quarters",
+            "decimal_fraction_over_cap",
+            "decimal_over_cap",
+            "decimal_negative",
+            "decimal_plus",
+            "decimal_exponent",
+            "decimal_space",
+            "decimal_two_dots",
+            "decimal_final_dot",
+            "decimal_only_dot",
+            "decimal_letters",
+            "decimal_length33",
+            "decimal_numerator_overflow",
+            "decimal_scaled_overflow",
+            "decimal_denominator_overflow",
+            "mesh_uniform_20_200",
+            "mesh_balanced_20_375",
+            "mesh_explicit_4_10",
+            "mesh_explicit_1_375",
+            "mesh_zero_n",
+            "mesh_n_over_cap",
+            "mesh_zero_total",
+            "mesh_total_below_n",
+            "mesh_total_over_cap",
+            "mesh_uniform_remainder",
+            "mesh_uniform_extra",
+            "mesh_balanced_extra",
+            "mesh_explicit_empty",
+            "mesh_explicit_wrong_size",
+            "mesh_explicit_zero",
+            "mesh_explicit_wrong_sum",
+            "mesh_explicit_cell_over_cap",
+            "mesh_bad_enum"
+          ]
+        }
+      ],
+      "limits": [
+        "9integer/26decimal/18mesh grouped checks,not arbitrary parser proof or physicaltiming"
+      ]
+    },
+    {
+      "property": "Reservation/live/cumulative case and batch cap atomicity / ticket moves",
+      "status": "RUNTIME_FIXED_CASES",
+      "production_sources": [
+        "tools/phase5_public_live_affine_v2/foundation_resources.cpp"
+      ],
+      "runtime_evidence": [
+        {
+          "unit": "mesh66",
+          "source": "reviews/evidence/public_live_affine_v2_foundation_mesh_ledger_source_protocol_v1_20261009/foundation_mesh_ledger_v1.cpp",
+          "review": "reviews/evidence/public_live_affine_v2_foundation_bounded66_runtime_once_v1_20261009/ROOT_BOUNDED66_RUNTIME_REVIEW.json",
+          "actual_stdout": "reviews/evidence/public_live_affine_v2_foundation_bounded66_runtime_once_v1_20261009/FOUNDATION_BOUNDED66_STDOUT.txt",
+          "groups_file": "reviews/evidence/public_live_affine_v2_foundation_bounded66_runtime_once_v1_20261009/FOUNDATION_BOUNDED66_GROUP_RESULTS.json",
+          "case_group_ids": [
+            "ledger_ticket_move_and_release",
+            "ledger_case_live_boundary",
+            "ledger_case_cumulative_boundary",
+            "ledger_batch_live_boundary",
+            "ledger_batch_cumulative_boundary",
+            "ledger_checked_overflow_atomic"
+          ]
+        }
+      ],
+      "limits": [
+        "Logical slots and retained cumulative charges are not allocator/RSS telemetry"
+      ]
+    },
+    {
+      "property": "SharedCaseBudget reserve/scratch/metadata/output/sameCase/moved-source public behavior",
+      "status": "RUNTIME_FIXED_CASES",
+      "production_sources": [
+        "tools/phase5_public_live_affine_v2/foundation_resources.cpp"
+      ],
+      "runtime_evidence": [
+        {
+          "unit": "mesh66",
+          "source": "reviews/evidence/public_live_affine_v2_foundation_mesh_ledger_source_protocol_v1_20261009/foundation_mesh_ledger_v1.cpp",
+          "review": "reviews/evidence/public_live_affine_v2_foundation_bounded66_runtime_once_v1_20261009/ROOT_BOUNDED66_RUNTIME_REVIEW.json",
+          "actual_stdout": "reviews/evidence/public_live_affine_v2_foundation_bounded66_runtime_once_v1_20261009/FOUNDATION_BOUNDED66_STDOUT.txt",
+          "groups_file": "reviews/evidence/public_live_affine_v2_foundation_bounded66_runtime_once_v1_20261009/FOUNDATION_BOUNDED66_GROUP_RESULTS.json",
+          "case_group_ids": [
+            "ledger_owner_lifetime",
+            "ledger_share_and_distinct_case",
+            "ledger_metadata_output_boundary",
+            "ledger_moved_from_batch",
+            "ledger_moved_from_case",
+            "ledger_moved_from_shared"
+          ]
+        }
+      ],
+      "limits": [
+        "These APIs were already exercised in66;no new10 novelcoverage claim for entireAPIclass",
+        "Old66 refusal helperchecks exceptiontype;newlease10 adds exact reason checks at its declared sites"
+      ]
+    },
+    {
+      "property": "Basic ChunkIOLease healthy/alias reentry/poison/move/reopen",
+      "status": "RUNTIME_FIXED_CASES",
+      "production_sources": [
+        "tools/phase5_public_live_affine_v2/foundation_resources.cpp"
+      ],
+      "runtime_evidence": [
+        {
+          "unit": "mesh66",
+          "source": "reviews/evidence/public_live_affine_v2_foundation_mesh_ledger_source_protocol_v1_20261009/foundation_mesh_ledger_v1.cpp",
+          "review": "reviews/evidence/public_live_affine_v2_foundation_bounded66_runtime_once_v1_20261009/ROOT_BOUNDED66_RUNTIME_REVIEW.json",
+          "actual_stdout": "reviews/evidence/public_live_affine_v2_foundation_bounded66_runtime_once_v1_20261009/FOUNDATION_BOUNDED66_STDOUT.txt",
+          "groups_file": "reviews/evidence/public_live_affine_v2_foundation_bounded66_runtime_once_v1_20261009/FOUNDATION_BOUNDED66_GROUP_RESULTS.json",
+          "case_group_ids": [
+            "ledger_chunk_reentry_poison"
+          ]
+        }
+      ],
+      "limits": [
+        "Old66 alreadyincludes reason content and poisoned target/movedsource/newlease behavior"
+      ]
+    },
+    {
+      "property": "Detailed lease repeatedpoison/reset/two-case and two-batch isolation/moved-source diesfirst/wrapperlifetime",
+      "status": "RUNTIME_FIXED_CASES",
+      "production_sources": [
+        "tools/phase5_public_live_affine_v2/foundation_resources.cpp"
+      ],
+      "runtime_evidence": [
+        {
+          "unit": "lease10",
+          "source": "reviews/evidence/public_live_affine_v2_foundation_chunk_io_lease_source_protocol_v1_20261009/chunk_lease_v1.cpp",
+          "review": "reviews/evidence/public_live_affine_v2_foundation_chunk_io_lease_bounded10_runtime_once_v1_20261009/ROOT_LEASE_RUNTIME10_REVIEW.json",
+          "actual_stdout": "reviews/evidence/public_live_affine_v2_foundation_chunk_io_lease_bounded10_runtime_once_v1_20261009/LEASE_BOUNDED10_STDOUT.txt",
+          "groups_file": "reviews/evidence/public_live_affine_v2_foundation_chunk_io_lease_bounded10_runtime_once_v1_20261009/LEASE_BOUNDED10_GROUP_RESULTS.json",
+          "case_group_ids": [
+            "lease_open_close_reopen",
+            "lease_shared_alias_reentry",
+            "lease_repeat_reentry_poison",
+            "lease_close_reset_poison",
+            "lease_different_case_isolation",
+            "lease_different_batch_isolation",
+            "lease_move_healthy_moved_source",
+            "lease_moved_source_dies_first",
+            "lease_move_poisoned_state",
+            "lease_outlives_case_batch_wrappers"
+          ]
+        }
+      ],
+      "limits": [
+        "Extension overlapsbasic66;10groupobservations are not allnewproperties",
+        "No realfile/streamIO/privateactivebool/threadsafe/concurrency proof"
+      ]
+    },
+    {
+      "property": "ResourcePlan public11Count+2enum getters/51accept34firstrefusals",
+      "status": "RUNTIME_FIXED_CASES",
+      "production_sources": [
+        "tools/phase5_public_live_affine_v2/foundation_resources.cpp"
+      ],
+      "runtime_evidence": [
+        {
+          "unit": "pricing85",
+          "source": "reviews/evidence/public_live_affine_v2_foundation_resource_pricing_source_protocol_v1_20261009/resource_pricing_v1.cpp",
+          "review": "reviews/evidence/public_live_affine_v2_resource_pricing_bounded85_runtime_once_v1_20261009/ROOT_PRICING_RUNTIME85_REVIEW.json",
+          "actual_stdout": "reviews/evidence/public_live_affine_v2_resource_pricing_bounded85_runtime_once_v1_20261009/PRICING_BOUNDED85_STDOUT.txt",
+          "groups_file": "reviews/evidence/public_live_affine_v2_resource_pricing_bounded85_runtime_once_v1_20261009/PRICING_BOUNDED85_GROUP_RESULTS.json",
+          "case_group_ids": [
+            "empty_n1_t200_m0_e0",
+            "empty_n1_t200_m0_e1",
+            "empty_n1_t200_m1_e0",
+            "empty_n1_t200_m1_e1",
+            "empty_n1_t375_m0_e0",
+            "empty_n1_t375_m0_e1",
+            "empty_n1_t375_m1_e0",
+            "empty_n1_t375_m1_e1",
+            "empty_n4_t200_m0_e0",
+            "empty_n4_t200_m0_e1",
+            "empty_n4_t200_m1_e0",
+            "empty_n4_t200_m1_e1",
+            "empty_n4_t375_m0_e0",
+            "empty_n4_t375_m0_e1",
+            "empty_n4_t375_m1_e0",
+            "empty_n4_t375_m1_e1",
+            "empty_n20_t200_m0_e0",
+            "empty_n20_t200_m0_e1",
+            "empty_n20_t200_m1_e0",
+            "empty_n20_t200_m1_e1",
+            "empty_n20_t375_m0_e0",
+            "empty_n20_t375_m0_e1",
+            "empty_n20_t375_m1_e0",
+            "empty_n20_t375_m1_e1",
+            "empty_n32_t200_m0_e0",
+            "empty_n32_t200_m0_e1",
+            "empty_n32_t200_m1_e0",
+            "empty_n32_t200_m1_e1",
+            "empty_n32_t375_m0_e0",
+            "empty_n32_t375_m0_e1",
+            "empty_n32_t375_m1_e0",
+            "empty_n32_t375_m1_e1",
+            "zero_row_linear1_m0_e0",
+            "zero_row_linear1_m0_e1",
+            "zero_row_linear1_m1_e0",
+            "zero_row_linear1_m1_e1",
+            "zero_row_linear32_m0_e0",
+            "zero_row_linear32_m0_e1",
+            "zero_row_linear32_m1_e0",
+            "zero_row_linear32_m1_e1",
+            "one_factor_row_m0_e0",
+            "one_factor_row_m0_e1",
+            "one_factor_row_m1_e0",
+            "one_factor_row_m1_e1",
+            "mixed_rows9_r4_m0_e0",
+            "mixed_rows9_r4_m0_e1",
+            "mixed_rows9_r4_m1_e0",
+            "mixed_rows9_r4_m1_e1",
+            "one_largest256_m0_e0",
+            "one_largest256_m0_e1",
+            "one_largest256_m1_e0",
+            "one_largest256_m1_e1",
+            "ordered_addition_envelope_m0_e0",
+            "ordered_addition_envelope_m0_e1",
+            "ordered_addition_envelope_m1_e0",
+            "ordered_addition_envelope_m1_e1",
+            "max_addition_multiple_records_m0_e0",
+            "max_addition_multiple_records_m0_e1",
+            "max_addition_multiple_records_m1_e0",
+            "max_addition_multiple_records_m1_e1",
+            "max_rows_n20_m0_e0",
+            "max_rows_n20_m0_e1",
+            "max_rows_n20_m1_e0",
+            "max_rows_n20_m1_e1",
+            "reject_terms33",
+            "reject_rows8193",
+            "reject_rmax257",
+            "reject_rows_exceed_term_envelope",
+            "reject_rmax_exceeds_total",
+            "reject_zero_terms_coefficients",
+            "reject_zero_terms_records",
+            "reject_coefficients_over_cap",
+            "reject_records_over_cap",
+            "reject_coefficients_at_cap_not_multiple30",
+            "reject_coefficient29",
+            "reject_coefficient31",
+            "reject_coefficients_without_records",
+            "reject_records_without_coefficients",
+            "reject_selected_rows_below_records",
+            "reject_selected_rows_above_record_rmax",
+            "reject_zero_row_term_with_addition",
+            "reject_uint64_terms_domain_refusal",
+            "reject_capture_enum",
+            "reject_encoding_enum",
+            "reject_both_enums_capture_first"
+          ]
+        }
+      ],
+      "limits": [
+        "2wholelive/11wholeoutput/21shape-enumrefusalgroups;privatebankcomponents remain independent source/integer derivationpremises",
+        "Conservative outputscalar reservationallowance not exact writerbytes"
+      ]
+    },
+    {
+      "property": "Independentmatrix12m and basecase512m cumulative pricing refusal",
+      "status": "STATIC_BOUND_DEFERRED",
+      "production_sources": [
+        "tools/phase5_public_live_affine_v2/foundation_resources.cpp"
+      ],
+      "runtime_evidence": [],
+      "limits": [
+        "Inaccessible independently under reviewed basicshape caps;85PASS cannot replace these unavailable independent paths"
+      ],
+      "supporting_review": "reviews/evidence/public_live_affine_v2_resource_pricing_bounded85_runtime_once_v1_20261009/ROOT_PRICING_RUNTIME85_REVIEW.json"
+    },
+    {
+      "property": "OwnedNumericBuffer initializedvalues/moves/selfmove/zero/overlap/sharedlifetimes",
+      "status": "RUNTIME_FIXED_CASES",
+      "production_sources": [
+        "tools/phase5_public_live_affine_v2/foundation_resources.cpp"
+      ],
+      "runtime_evidence": [
+        {
+          "unit": "buffer13",
+          "source": "reviews/evidence/public_live_affine_v2_foundation_owned_numeric_buffer_source_protocol_v2_20261009/owned_buffer_v1.cpp",
+          "review": "reviews/evidence/public_live_affine_v2_foundation_owned_buffer_bounded13_runtime_once_v1_20261009/ROOT_BUFFER_RUNTIME13_REVIEW.json",
+          "actual_stdout": "reviews/evidence/public_live_affine_v2_foundation_owned_buffer_bounded13_runtime_once_v1_20261009/BUFFER_BOUNDED13_STDOUT.txt",
+          "groups_file": "reviews/evidence/public_live_affine_v2_foundation_owned_buffer_bounded13_runtime_once_v1_20261009/BUFFER_BOUNDED13_GROUP_RESULTS.json",
+          "case_group_ids": [
+            "buffer_zero_null",
+            "buffer_initialized_mutable_const",
+            "buffer_initialized64",
+            "buffer_move_constructor",
+            "buffer_assign_same_case",
+            "buffer_assign_different_case_same_batch",
+            "buffer_assign_different_batch",
+            "buffer_self_move",
+            "buffer_assign_zero_into_occupied",
+            "buffer_assign_occupied_into_zero",
+            "buffer_outlives_case_batch_wrappers",
+            "buffer_two64_overlap128",
+            "buffer_constructor_moved_case_refusal"
+          ]
+        }
+      ],
+      "limits": [
+        "64elements/array128simultaneous1024numericbytes bound not totalRSS",
+        "12positive+1required movedcase constructor refusal;bad_alloc and hostsizeoverflow not observed"
+      ]
+    },
+    {
+      "property": "Buffer physical deallocation order/realbad_alloc cleanup/hostsize overflow",
+      "status": "STATIC_BOUND_DEFERRED",
+      "production_sources": [
+        "tools/phase5_public_live_affine_v2/foundation_resources.cpp"
+      ],
+      "runtime_evidence": [],
+      "limits": [
+        "Release order fromsource only;ledger counts do not instrument allocator;no OOM/replacementallocator proposed"
+      ]
+    },
+    {
+      "property": "ChunkIOLease four type-trait static_assert contracts",
+      "status": "COMPILE_ONLY",
+      "production_sources": [
+        "tools/phase5_public_live_affine_v2/foundation.hpp"
+      ],
+      "runtime_evidence": [],
+      "limits": [
+        "Noncopyconstruct/noncopyassign/nothrowmoveconstruct/nonmoveassign compiled successfully;not additionalruntimegroups"
+      ],
+      "compile_review": "reviews/evidence/public_live_affine_v2_foundation_chunk_io_lease_tu_compile_only_once_v1_20261009/ROOT_LEASE_TU_COMPILE_REVIEW.json"
+    },
+    {
+      "property": "Pinnedfile SHA/regularfile/caps/fstat/no-follow/currentproducer kernelELF",
+      "status": "COMPILE_ONLY",
+      "production_sources": [
+        "tools/phase5_public_live_affine_v2/foundation_identity.cpp"
+      ],
+      "runtime_evidence": [],
+      "limits": [
+        "Foundationidentity archive member built;none of four admittedtestprograms invokes identityfunctions",
+        "Archivedf1 rejection/nonLinux branch/member identity observations NOT_EXERCISED"
+      ],
+      "static_review": "reviews/evidence/public_live_affine_v2_foundation_stage1_20261008/ROOT_SOURCE_REVIEW.json"
+    },
+    {
+      "property": "StaticDomainRanges hash-and-parse samebounded YAMLbytes/7and14rosters/finiteorderedlimits",
+      "status": "COMPILE_ONLY",
+      "production_sources": [
+        "tools/phase5_public_live_affine_v2/foundation_identity.cpp",
+        "tools/phase5_public_live_affine_v2/foundation.hpp"
+      ],
+      "runtime_evidence": [],
+      "limits": [
+        "Onlyconstantsfilewitness,not VerifiedModelProfile/SDKmetadata/physicaldomaincertificate",
+        "No runtime parse or filefixture yet;privateconstructor must not be bypassed"
+      ]
+    },
+    {
+      "property": "validateAlgebraTestInitial finite30scalar copy/negative r/type separation",
+      "status": "COMPILE_ONLY",
+      "production_sources": [
+        "tools/phase5_public_live_affine_v2/foundation_context.cpp",
+        "tools/phase5_public_live_affine_v2/foundation.hpp"
+      ],
+      "runtime_evidence": [],
+      "limits": [
+        "Finiteonly,not closedphysicaldomain admission;four currentunits neverinvoke this function",
+        "No affine/map/cost/solver execution implied"
+      ]
+    },
+    {
+      "property": "validateLiveActual boundary/observation/transaction/history/freshness/contact/domain/nominal exactbinding",
+      "status": "COMPILE_ONLY",
+      "production_sources": [
+        "tools/phase5_public_live_affine_v2/foundation_context.cpp",
+        "tools/phase5_public_live_affine_v2/foundation.hpp"
+      ],
+      "runtime_evidence": [],
+      "limits": [
+        "No genuine physicalobserver clock/contact provenance or runtimevalidator test yet",
+        "Observed q/v and accepted C/w independent;nominal exact equality,not reset/reconstruction"
+      ]
+    },
+    {
+      "property": "first4msRequest semiimplicit C / two2ms progress references / conditional impliedalpha and historyjerk",
+      "status": "COMPILE_ONLY",
+      "production_sources": [
+        "tools/phase5_public_live_affine_v2/foundation_context.cpp"
+      ],
+      "runtime_evidence": [],
+      "limits": [
+        "Source repairhistory retains prior wrongcommand law;currentbody compiled only",
+        "Preview never issues/applies commands/physical qv forecast;no runtimeclosed-domain/roundedimpliedacceleration checks yet"
+      ]
+    },
+    {
+      "property": "ContextSnapshot original85inputs/ranges29/validated69 ownership/prefix/refusal/same-source binding",
+      "status": "COMPILE_ONLY",
+      "production_sources": [
+        "tools/phase5_public_live_affine_v2/foundation_context.cpp",
+        "tools/phase5_public_live_affine_v2/model_boundary/model_boundary.cpp"
+      ],
+      "runtime_evidence": [],
+      "limits": [
+        "198slot/metadata/history budgets and copiedprefix counts staticallyreviewed,not dynamicmemory/capture proof",
+        "Real source token and caller assertions do not attest physicalsensorhistory",
+        "Private earlyfailure/publication missing"
+      ],
+      "source_review": "reviews/evidence/public_live_affine_v2_context_snapshot_stage3c2b3b2b2_20261009/ROOT_SOURCE_REVIEW.json"
+    },
+    {
+      "property": "GenuineModel permission/metadata/constructor/rollout/complete rawretention/normalization",
+      "status": "COMPILE_ONLY",
+      "production_sources": [
+        "tools/phase5_public_live_affine_v2/model_boundary/model_boundary.cpp",
+        "tools/phase5_public_live_affine_v2/normalization/normalization.cpp"
+      ],
+      "runtime_evidence": [],
+      "limits": [
+        "Source independentreview and namedstaticbuild,zero newactualModelconstructor/metadata/rollout;no dummyModel/fakepermission admissible",
+        "Trusted separate protocol/FIRST/currentexecutable/SDK/source/FP/input gates still required"
+      ]
+    },
+    {
+      "property": "New liveaffine assembly and quadratic cost/full inputcodec",
+      "status": "COMPILE_ONLY",
+      "production_sources": [
+        "tools/phase5_public_live_affine_v2/affine/affine_assembly.cpp",
+        "tools/phase5_public_live_affine_v2/cost/quadratic_cost.cpp",
+        "tools/phase5_public_live_affine_v2/input_codec/cost_input_decoder.cpp"
+      ],
+      "runtime_evidence": [],
+      "limits": [
+        "No new liveproduction affine/cost numerics;cached public20261008 algebra is different target and evidencecarrier",
+        "Nonemptynewalgebra needs independently reviewed exactfreeze and run gate"
+      ]
+    },
+    {
+      "property": "New captureinventory/workspace/leaves/metadata/provisionalwriterreader/outputchunks",
+      "status": "COMPILE_ONLY",
+      "production_sources": [
+        "tools/phase5_public_live_affine_v2/capture_inventory/capture_inventory.cpp",
+        "tools/phase5_public_live_affine_v2/capture_workspace/capture_workspace.cpp",
+        "tools/phase5_public_live_affine_v2/capture_leaves/capture_leaves.cpp",
+        "tools/phase5_public_live_affine_v2/capture_leaves/provisional_manifest_writer.cpp",
+        "tools/phase5_public_live_affine_v2/capture_leaves/provisional_manifest_reader.cpp",
+        "tools/phase5_public_live_affine_v2/output_chunks/chunk_writer.cpp",
+        "tools/phase5_public_live_affine_v2/output_chunks/chunk_reader.cpp"
+      ],
+      "runtime_evidence": [],
+      "limits": [
+        "Static source/byte/count/format repair reviews plusbuild,not true wholelossless publication/readback/ref reconstruction",
+        "Earlyfailedstate/raw completeevidence/metadata/cumulative/memory/inverseuniqueness missing;10leasePASS not realchunkIO"
+      ]
+    },
+    {
+      "property": "Parent child executionownership/terminal/rootpublication/whole independentreader",
+      "status": "SOURCE_ONLY",
+      "production_sources": [],
+      "runtime_evidence": [],
+      "limits": [
+        "Execution design and FILE_PLAN reviewed only;implementation/source/aggregate envp/stdin/kernelpipe funding/rootbridge missing",
+        "No new Parentprocess/spawn experiment admitted"
+      ],
+      "design": "reviews/evidence/public_live_affine_v2_execution_design_stage3c2b3b2d1_20261009/FILE_PLAN_AND_GATES.json"
+    },
+    {
+      "property": "Maincontroller/solver/plant/taskcompletion/timing/Phase6 on new livev2stack",
+      "status": "NOT_EXERCISED",
+      "production_sources": [],
+      "runtime_evidence": [],
+      "limits": [
+        "Accepted Phase4 historicalbaseline remains;noneofthese fixedfoundationchecks is physical task evidence",
+        "Rejectedseed91013 protocolv1 mustneverrun;separateplant/main/scorer protocols/gates"
+      ]
+    }
+  ],
+  "sharedlease_overlap_correction": {
+    "corrected_interpretation": "66 alreadycovers SharedCaseBudget reserve/charges/sameCase/moved-source getters andbasic leasepoison/move/reopen.10extends finite lifecycle/repeatedpoison/isolation/move/wrappers and exactreason checks;not first-ever wholeAPI coverage.",
+    "evidence": {
+      "source": "reviews/evidence/public_live_affine_v2_foundation_mesh_ledger_source_protocol_v1_20261009/foundation_mesh_ledger_v1.cpp",
+      "lines": [
+        133,
+        264
+      ],
+      "group_ids": [
+        "ledger_share_and_distinct_case",
+        "ledger_metadata_output_boundary",
+        "ledger_moved_from_shared",
+        "ledger_chunk_reentry_poison"
+      ]
+    },
+    "sealed_histories_changed": false
+  },
+  "static_build": {
+    "review": "reviews/evidence/public_live_affine_v2_repaired_named_build_success_after_v4_20261009/ROOT_REPAIRED_NAMED_BUILD_REVIEW.json",
+    "actual_translation_units": 20,
+    "objects": 20,
+    "archives": 14,
+    "runtime_inference": "None for functions notadmittedin4testprograms;source milestone reviews have historical0counts,overlaid laterbuildnotrewritten"
+  },
+  "historical_cached_algebra": {
+    "review": "reviews/evidence/public_affine_horizon_algebra_root_review_20261008.json",
+    "status": "RUNTIME_FIXED_CASES",
+    "scope": "Different public cachedcarrier/genericaffine target;not newModel/newfoundation/newliveaffine proof",
+    "frozen_ec1_and_d3d4": "reviews/evidence/public_affine_horizon_checker_v2_freeze_root_review_20261008.json",
+    "earlier_friction_branch_FD_failure": "Retained unresolved as acceptance limitation inhistoricalrootreview;no freshModelFD passed here"
+  },
+  "retained_failure_meaning": {
+    "records": [
+      "reviews/evidence/public_live_affine_v2_full_stack_configure_first_failure_after_v4_20261009/ROOT_CONFIGURE_FAILURE_REVIEW.json",
+      "reviews/evidence/public_live_affine_v2_full_stack_configure_attempt2_after_v4_20261009/ROOT_CONFIGURE_ATTEMPT2_REVIEW.json",
+      "reviews/evidence/public_live_affine_v2_named_build_first_failure_after_v4_20261009/ROOT_NAMED_BUILD_FAILURE_REVIEW.json",
+      "reviews/evidence/public_live_affine_v2_chunk_reader_identifier_repair_after_v4_20261009/ROOT_IDENTIFIER_REPAIR_REVIEW.json",
+      "reviews/evidence/public_live_affine_v2_foundation_owned_numeric_buffer_source_protocol_v2_20261009/ROOT_OWNED_BUFFER_SOURCE_V2_REVIEW.json",
+      "reviews/evidence/public_live_affine_v2_resource_pricing_link_only_freeze_v2_20261009/ROOT_PRICING_LINK_FREEZE_REVIEW.json",
+      "reviews/evidence/public_live_affine_v2_foundation_owned_buffer_tu_compile_only_once_v1_20261009/ROOT_BUFFER_TU_COMPILE_REVIEW.json"
+    ],
+    "meaning": [
+      "Configuration/bootstrap/toolsearch and initialidentifierbuild failures preserved;later fixedbuild supersedes environment/sourcecompile hurdle only",
+      "Source-only bufferV1missingbeforeledger checks andpricinglinkV1wrong lexicalroster preserved;reviewedV2 admittedlater,not retroactivelypassedV1",
+      "Intentional selfmove compilewarning andlocalcollection/reviewadapter AssertionError/FileNotFound failures retained;not hiddenruntime reruns",
+      "Allfour admittedfoundationprogram attempts passed;these do not erase oldfrictionFD failure or outstandingModel/capture/phasegates"
+    ]
+  },
+  "remaining_boundaries": [
+    "No identity productionfile/native binding or livecontext/preview runtime inthese4units",
+    "No actualloader/OS/readset/RSS proof, allocatorreleaseinstrumentation/OOM proof",
+    "GenuineModel/nonemptylivealgebra/cost/capture/publicearlyfailure/Parent/plant/main/scorer remain separatelyclosed",
+    "No selectedarmtrajectory/video or researchranking from foundationgroups"
+  ],
+  "executions_this_audit": {
+    "compiler": 0,
+    "link": 0,
+    "program": 0,
+    "production_CPP": 0,
+    "Model_SDK": 0,
+    "production_file_IO": 0,
+    "SSH_native_queries": 0,
+    "new_CPP_or_fixture_generated": false
+  },
+  "phase5": "NOT_ACCEPTED",
+  "phase6": "NOT_STARTED"
+}

@@ -1,0 +1,57 @@
+{
+  "decision": "PASS_FINITE_FOUNDATION_COVERAGE_GAP_AUDIT_AND_ONE_NEXT_SOURCE_CANDIDATE_ONLY",
+  "baseline": "1258b5ecffee6f2b6ee7cf1e907250b55798c639",
+  "ready_sha256": "69dce5d82b2ec98a570f5e0672092109dcb54f528d3906d8c7b901c9878ab702",
+  "packet_payloads_verified": 4,
+  "production_and_prior_guards_verified": 239,
+  "mapped_source_evidence_files_current_and_actual_Git_bytes_verified": 53,
+  "property_scope_rows_reviewed": 21,
+  "additional_primary_fixture_headers_independently_verified": [
+    {
+      "path": "reviews/evidence/public_live_affine_v2_foundation_mesh_ledger_source_protocol_v1_20261009/expected_v1.hpp",
+      "bytes": 2830,
+      "sha256": "72ff013c43e44b625019b9a13c202eb971b49c0ece8af7feae634722226ca8ce"
+    },
+    {
+      "path": "reviews/evidence/public_live_affine_v2_foundation_resource_pricing_source_protocol_v1_20261009/pricing_expected_v1.hpp",
+      "bytes": 15637,
+      "sha256": "3a2aaac6204a89867ac4b34cea55c790ddd39cbf55118264d75861f5cc1b6f9b"
+    }
+  ],
+  "root_static_adapter_failure_retained": "Initial source-ID check omitted included expected headers where66 and85 store some IDs; corrected static check reads those exact committed headers. Original and completed root scripts/failure retained privately, no source/fixture/program changes.",
+  "actual_units_verified_separately": {
+    "mesh66": 66,
+    "pricing85": 85,
+    "buffer13": 13,
+    "lease10": 10
+  },
+  "counts_scope": "Separate finite group counts, overlapping properties; not assertions/unique coverage/trajectories or a combined research score",
+  "independent_review": [
+    "All actual sources, ordered stdout, PASS result IDs and independent one-run reviews cross-match the four saved units",
+    "Old66 public share/reserve/charge/moved-source getters and basic lease poisoning/movement/reopen source independently read; detailed new10 is expansion with overlap",
+    "All runtime property row IDs are backed by actual unit group records; compile/source/deferred/unexercised rows retain separate scope",
+    "20TUs/20objects/14archives confirmed by retained independent build review; unopened identity/context/newModel/newaffine/cost/capture definitions are compilation evidence only",
+    "Historical cached affine component is distinct, Model/plant calls0 and oldfriction FD limitation retained; Parent remains source design, and newstack plant/main/scorer unexercised",
+    "Next validator function independently inspected: finite q/v/C/w/s/r check followed by State30 copy; no domain admission, file witness, Model, commandpreview, affine/cost or solver effect"
+  ],
+  "next_candidate_approved_for_source_draft_only": true,
+  "next_function": "validateAlgebraTestInitial",
+  "six_candidate_families_not_yet_fixed_roster": true,
+  "candidate_scope_clarifications": [
+    "Candidate shorthand no arrays means no separate dynamic numeric buffer/matrix allocations; State30 necessarily includes four inline seven-element JointVector arrays plus s/r",
+    "Proposed atmost4 State30 instances must account for input/expected/wrapper-owned state and source-visible return/copy temporaries; this is a logical source bound, not RSS/compiler allocation proof",
+    "Compare initialized scalar components and signed-zero sign bits individually; no whole-struct memcmp/padding assumption, cross-array pointer flattening, NaN numeric equality or default uninitialized reads",
+    "Finite-only synthetic coordinates including negative r do not qualify as accepted actual observation/domain/sensor/Model permission",
+    "No affine matrix or nonempty algebra evaluation, no first4msRequest/validateLiveActual or private factory bypass; exact source roster/call bound and future oracle require later independent review"
+  ],
+  "compiler_calls": 0,
+  "link_calls": 0,
+  "program_runs": 0,
+  "production_CPP_function_calls": 0,
+  "Model_SDK_calls": 0,
+  "new_CPP_or_fixture_generated": false,
+  "publication": "Small host-free source/evidence audit, candidate and hashes plus root review/storage/docs; native environment/credentials excluded",
+  "phase5": "NOT_ACCEPTED",
+  "phase6": "NOT_STARTED",
+  "all_prior_sources_failure_archives_checkers_and_figures_preserved": true
+}
