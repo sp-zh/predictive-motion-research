@@ -1,0 +1,11 @@
+{
+  "literal_reasons": {
+    "begin_active": "CHUNK_IO_REENTRY",
+    "healthy_poisoned": "CHUNK_IO_REENTRY_OR_CLOSED_LEASE",
+    "healthy_moved_source": "moved-from case budget",
+    "moved_source_first_reason": null
+  },
+  "derivation": "requireHealthy calls valid(state_) before active/reentry check;nullmoved source therefore moved-case reason;beginactive sets reentrytrue before throw;new inactivebegin resetsreentryfalse",
+  "type_traits": "Noncopyconstructible/noncopyassignable/nothrowmoveconstructible/nonmoveassignable source static_asserts;NOT_COMPILED",
+  "strings": "Compare owned std::string content only while lease state lives;nullfirstreason checked;no rawpointeridentity or useafterdestruction"
+}

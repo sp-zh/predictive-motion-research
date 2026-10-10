@@ -1,0 +1,43 @@
+{
+  "scope": "CANDIDATE_ONLY_NOT_DISPATCHED",
+  "program_invocations": 1,
+  "argv": "Frozenfuturebinary noargs",
+  "environment": {
+    "PATH": "/usr/bin:/bin",
+    "LANG": "C",
+    "LC_ALL": "C",
+    "TZ": "UTC"
+  },
+  "inherit_environment": false,
+  "stdin": "DEVNULL",
+  "wall_seconds": 15,
+  "rlimits": {
+    "CPU": 10,
+    "AS": 268435456,
+    "CORE": 0,
+    "FSIZE": 0,
+    "NOFILE": 32,
+    "NPROC": 16
+  },
+  "limits_application": "Clamp stricter inheritedlimits",
+  "raw_combined_cap_bytes": 131072,
+  "fresh_emptycwd": true,
+  "expected_exit_code": 0,
+  "expected_stderr_bytes": 0,
+  "expected_stdout_bytes": 395,
+  "expected_stdout_sha256": "5a7eae8e7ec1cb779c978a66e70be4f455f29451342a1a8b3067676561ee0ec3",
+  "ordered_groups": [
+    "lease_open_close_reopen",
+    "lease_shared_alias_reentry",
+    "lease_repeat_reentry_poison",
+    "lease_close_reset_poison",
+    "lease_different_case_isolation",
+    "lease_different_batch_isolation",
+    "lease_move_healthy_moved_source",
+    "lease_moved_source_dies_first",
+    "lease_move_poisoned_state",
+    "lease_outlives_case_batch_wrappers"
+  ],
+  "failure_policy": "Firstnonzero/signal/timeout/cap/drift/mismatch STOP retainrawprefix/status/partialfailures,no retries/repairs/oracle edits",
+  "separate_gates": "Independent source/protocolreview+backup,compilefreeze+dispatch,linkfreeze+dispatch,runtimefreeze+dispatch required before actualrun"
+}
