@@ -1,0 +1,167 @@
+name: Publish and validate CI environment
+on:
+  workflow_dispatch:
+    inputs:
+      operation:
+        description: Explicit release stage (never changes daily CI)
+        type: choice
+        required: true
+        options: [copy-base, build-ci, verify-public-ci]
+      base_image:
+        description: Verified GHCR ROS base manifest digest (build-ci only)
+        type: string
+      base_validation_run:
+        description: Successful copy-base run ID at this same commit (build-ci only)
+        type: string
+      candidate_image:
+        description: Published CI manifest digest (verify-public-ci only)
+        type: string
+permissions:
+  contents: read
+concurrency:
+  group: ci-environment-release
+  cancel-in-progress: false
+jobs:
+  publish:
+    if: github.repository == 'sp-zh/predictive-motion-research' && github.ref == 'refs/heads/master' && inputs.operation != 'verify-public-ci'
+    runs-on: ubuntu-24.04
+    timeout-minutes: 30
+    permissions:
+      contents: read
+      actions: read
+      packages: write
+    outputs:
+      image: ${{ steps.release.outputs.image }}
+      kind: ${{ steps.release.outputs.kind }}
+    steps:
+      - uses: actions/checkout@11d5960a326750d5838078e36cf38b85af677262 # existing releases-v4 pin
+        id: checkout
+        with:
+          persist-credentials: false
+      - name: Require verified Stage A before building Stage B
+        if: inputs.operation == 'build-ci'
+        shell: bash
+        env:
+          GH_TOKEN: ${{ github.token }}
+          BASE_IMAGE: ${{ inputs.base_image }}
+          BASE_RUN: ${{ inputs.base_validation_run }}
+        run: |
+          set -euo pipefail
+          [[ $BASE_RUN =~ ^[0-9]+$ ]]
+          [[ $BASE_IMAGE =~ ^ghcr\.io/sp-zh/predictive-motion-research-ros-base@sha256:[0-9a-f]{64}$ ]]
+          gh api "repos/$GITHUB_REPOSITORY/actions/runs/$BASE_RUN" > "$RUNNER_TEMP/base-run.json"
+          python3 - <<'PYCODE'
+          import json, os
+          from pathlib import Path
+          r=json.loads((Path(os.environ['RUNNER_TEMP'])/'base-run.json').read_text())
+          assert r['conclusion']=='success' and r['head_sha']==os.environ['GITHUB_SHA']
+          assert r['event']=='workflow_dispatch' and r['path']=='.github/workflows/publish-ci-images.yml'
+          PYCODE
+          gh run download "$BASE_RUN" --repo "$GITHUB_REPOSITORY" --name ci-image-release --dir "$RUNNER_TEMP/base-release"
+          python3 - <<'PYCODE'
+          import json, os
+          from pathlib import Path
+          r=json.loads((Path(os.environ['RUNNER_TEMP'])/'base-release/base-copy.json').read_text())
+          assert r['target_manifest']==os.environ['BASE_IMAGE'] and r['platform']=='linux/amd64'
+          PYCODE
+      - name: Publish candidate and verify registry re-pull
+        id: release
+        shell: bash
+        env:
+          GH_TOKEN: ${{ github.token }}
+          OPERATION: ${{ inputs.operation }}
+          BASE_IMAGE: ${{ inputs.base_image }}
+          DOCKERHUB_USERNAME: ${{ secrets.DOCKERHUB_USERNAME }}
+          DOCKERHUB_TOKEN: ${{ secrets.DOCKERHUB_TOKEN }}
+        run: bash scripts/publish_ci_images.sh "$OPERATION" "$BASE_IMAGE"
+      - name: Preserve release evidence
+        if: always() && steps.checkout.outcome == 'success'
+        uses: actions/upload-artifact@cf430e030ddbb5b0abf93d22962f4752f3646cd9 # v7.0.2
+        with:
+          name: ci-image-release
+          path: |
+            results/ci-images/base-copy.json
+            results/ci-images/source-index.json
+            results/ci-images/source-manifest.json
+            results/ci-images/target-manifest.json
+            results/ci-images/digest-manifest.json
+            results/ci-images/push.log
+          if-no-files-found: warn
+          retention-days: 30
+  validation:
+    needs: publish
+    if: always() && github.repository == 'sp-zh/predictive-motion-research' && github.ref == 'refs/heads/master' && (needs.publish.result == 'success' || inputs.operation == 'verify-public-ci')
+    runs-on: ubuntu-24.04
+    timeout-minutes: 25
+    permissions:
+      contents: read
+      packages: read
+    steps:
+      - uses: actions/checkout@11d5960a326750d5838078e36cf38b85af677262 # existing releases-v4 pin
+        id: checkout
+        with:
+          persist-credentials: false
+      - name: Check CI failure controls
+        shell: bash
+        run: python3 tests/ci/test_environment_check.py
+      - name: Pull candidate in isolated authentication configuration
+        id: pull
+        shell: bash
+        env:
+          GH_TOKEN: ${{ github.token }}
+          OPERATION: ${{ inputs.operation }}
+          PUBLISHED_IMAGE: ${{ needs.publish.outputs.image }}
+          CANDIDATE_IMAGE: ${{ inputs.candidate_image }}
+        run: |
+          set -euo pipefail
+          image=$PUBLISHED_IMAGE
+          [[ $OPERATION != verify-public-ci ]] || image=$CANDIDATE_IMAGE
+          [[ $image =~ ^ghcr\.io/sp-zh/predictive-motion-research-(ros-base|ci)@sha256:[0-9a-f]{64}$ ]]
+          if [[ $OPERATION == verify-public-ci ]]; then
+            [[ $image =~ ^ghcr\.io/sp-zh/predictive-motion-research-ci@sha256:[0-9a-f]{64}$ ]]
+          fi
+          export DOCKER_CONFIG
+          DOCKER_CONFIG=$(mktemp -d)
+          trap 'rm -rf "$DOCKER_CONFIG"' EXIT
+          if [[ $OPERATION != verify-public-ci ]]; then
+            printf '%s' "$GH_TOKEN" | docker login ghcr.io -u "$GITHUB_ACTOR" --password-stdin
+          fi
+          docker pull --platform linux/amd64 "$image"
+          [[ $(docker image inspect "$image" --format '{{.Os}}/{{.Architecture}}') == linux/amd64 ]]
+          printf 'image=%s\n' "$image" >> "$GITHUB_OUTPUT"
+          # shellcheck disable=SC2016 # Literal Markdown backticks.
+          printf '## Fresh-runner pull\n- `%s`\n- Mode: `%s` (verify-public-ci uses empty auth config)\n' "$image" "$OPERATION" >> "$GITHUB_STEP_SUMMARY"
+      - name: Run original full CI from this checkout
+        shell: bash
+        env:
+          CI_IMAGE_REFERENCE: ${{ steps.pull.outputs.image }}
+          PM_IMAGE_KIND: ${{ inputs.operation }}
+        run: |
+          set -euo pipefail
+          mkdir -p results/ci-images
+          docker run --rm --entrypoint bash \
+            -e CI_IMAGE_REFERENCE -e GITHUB_RUN_ID -e GITHUB_RUN_ATTEMPT \
+            -v "$GITHUB_WORKSPACE:/work" -w /work "$CI_IMAGE_REFERENCE" \
+            scripts/run_ci_image.sh "$PM_IMAGE_KIND" 2>&1 | tee results/ci-images/full-ci.log
+      - name: Verify complete original test inventory
+        shell: bash
+        run: python3 scripts/ci/verify_test_results.py
+      - name: Preserve explicit diagnostics
+        if: always() && steps.checkout.outcome == 'success'
+        uses: actions/upload-artifact@cf430e030ddbb5b0abf93d22962f4752f3646cd9 # v7.0.2
+        with:
+          name: ci-image-validation
+          path: |
+            results/ci-images/full-ci.log
+            results/ci-images/test-inventory.json
+            results/ci-images/metadata.json
+            results/ci-images/installed-packages.tsv
+            results/phase0/*.log
+            results/phase0/environment.json
+            results/phase1/*.log
+            results/phase1/numerical/**
+            build/**/test_results/**/*.xml
+            log/latest_build/**
+            log/latest_test/**
+          if-no-files-found: warn
+          retention-days: 30

@@ -1,0 +1,27 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="640" viewBox="0 0 1200 640">
+<rect width="1200" height="640" fill="#0f172a"/>
+<g font-family="DejaVu Sans, sans-serif">
+<text x="48" y="65" fill="#f8fafc" font-size="30" font-weight="bold">CI environment: evidence and deployment gates</text>
+<text x="48" y="102" fill="#cbd5e1" font-size="18">Bootstrap audit · 2026-10-09 Toronto · linux/amd64 target</text>
+<rect x="48" y="138" width="1104" height="72" rx="10" fill="#1e293b"/>
+<text x="68" y="166" fill="#f8fafc" font-size="20">Original environment · full CI</text>
+<text x="68" y="192" fill="#cbd5e1" font-size="16">Run 38015143167 · 24 GoogleTests + 8 statistics tests</text>
+<text x="1118" y="178" text-anchor="end" fill="#10b981" font-size="19" font-weight="bold">PASS</text>
+<rect x="48" y="222" width="1104" height="72" rx="10" fill="#1e293b"/>
+<text x="68" y="250" fill="#f8fafc" font-size="20">Original environment · startup failure</text>
+<text x="68" y="276" fill="#cbd5e1" font-size="16">Run 37995122633 · Docker Hub limit / timeout</text>
+<text x="1118" y="262" text-anchor="end" fill="#f87171" font-size="19" font-weight="bold">FAIL</text>
+<rect x="48" y="306" width="1104" height="72" rx="10" fill="#1e293b"/>
+<text x="68" y="334" fill="#f8fafc" font-size="20">GHCR ROS base · Stage A</text>
+<text x="68" y="360" fill="#cbd5e1" font-size="16">Not published · no verified registry digest</text>
+<text x="1118" y="346" text-anchor="end" fill="#94a3b8" font-size="19" font-weight="bold">PENDING</text>
+<rect x="48" y="390" width="1104" height="72" rx="10" fill="#1e293b"/>
+<text x="68" y="418" fill="#f8fafc" font-size="20">GHCR dependency image · Stage B</text>
+<text x="68" y="444" fill="#cbd5e1" font-size="16">Not published · full target-platform tests pending</text>
+<text x="1118" y="430" text-anchor="end" fill="#94a3b8" font-size="19" font-weight="bold">PENDING</text>
+<rect x="48" y="474" width="1104" height="72" rx="10" fill="#1e293b"/>
+<text x="68" y="502" fill="#f8fafc" font-size="20">Daily CI · GHCR migration</text>
+<text x="68" y="528" fill="#cbd5e1" font-size="16">Bootstrap PR must be merged before release dispatch</text>
+<text x="1118" y="514" text-anchor="end" fill="#94a3b8" font-size="19" font-weight="bold">PENDING</text>
+<text x="48" y="598" fill="#cbd5e1" font-size="17">Infrastructure evidence only. Pending stages do not establish migration or research acceptance.</text>
+</g></svg>

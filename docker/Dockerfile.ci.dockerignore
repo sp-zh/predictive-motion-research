@@ -1,0 +1,9 @@
+# Allowlist applies only to Dockerfile.ci; development context is unchanged.
+**
+!scripts/
+!scripts/phase0/
+!scripts/phase0/setup_linux.sh
+!scripts/check_ci_environment.py
+!docker/
+!docker/Dockerfile.ci
+!docker/Dockerfile.ci.dockerignore

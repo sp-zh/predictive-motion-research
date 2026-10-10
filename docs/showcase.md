@@ -5,6 +5,19 @@ Phase 0–4 component gates have passed; Phase 5 awaits independent acceptance.
 These assets illustrate the stated scope and do not establish final research
 performance or physical hardware safety.
 
+
+## CI environment infrastructure
+
+![CI environment evidence and pending deployment gates](../figures/ci/ghcr-bootstrap-status.png)
+
+[SVG](../figures/ci/ghcr-bootstrap-status.svg),
+[audited run provenance](../reviews/ci-ghcr-bootstrap-20261009.md),
+[release and rollback runbook](ci-environment.md).
+This shows observed original-environment CI evidence and explicitly pending GHCR
+stages. It is an infrastructure diagnostic, not a robot render or controller
+performance result; no new motion/plant experiment was run for this repair.
+
+
 ## Task-completion videos
 
 Three curated successful Phase 4 inspection trials, rendered from saved measured
