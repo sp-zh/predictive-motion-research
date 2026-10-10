@@ -1,0 +1,11 @@
+PASS lease_open_close_reopen
+PASS lease_shared_alias_reentry
+PASS lease_repeat_reentry_poison
+PASS lease_close_reset_poison
+PASS lease_different_case_isolation
+PASS lease_different_batch_isolation
+PASS lease_move_healthy_moved_source
+PASS lease_moved_source_dies_first
+PASS lease_move_poisoned_state
+PASS lease_outlives_case_batch_wrappers
+COMPLETE 10 chunk IO lease groups; no phase acceptance

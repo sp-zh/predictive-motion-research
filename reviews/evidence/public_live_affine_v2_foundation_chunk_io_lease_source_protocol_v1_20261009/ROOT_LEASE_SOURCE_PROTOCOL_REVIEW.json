@@ -1,0 +1,117 @@
+{
+  "decision": "PASS_CHUNK_IO_LEASE_SOURCE_PROTOCOL_ONLY_NOT_COMPILED_OR_RUN",
+  "baseline": "3e688436ed04e7918640edab0ff7ccd4bc4195b6",
+  "ready_sha256": "4e56ccdc1d47fb5d72e3f60989600ff275937df49e6e1d4ca296fd06536915bd",
+  "packet_payloads_verified": 8,
+  "production_and_prior_guards_verified": 209,
+  "source": {
+    "bytes": 6840,
+    "sha256": "355482c1cbea7dff1c25ee202c54191f04717bc9814b0ec2879e4f45a60462d7"
+  },
+  "fixed_proposed_groups": 10,
+  "fixed_future_stdout": {
+    "bytes": 395,
+    "sha256": "5a7eae8e7ec1cb779c978a66e70be4f455f29451342a1a8b3067676561ee0ec3",
+    "derived_from_fixed_roster_and_source_prints_before_runtime": true
+  },
+  "independent_source_helper_sequence_checks": [
+    {
+      "id": "lease_open_close_reopen",
+      "source_helper_fragments_verified": 12,
+      "initial_public_zero_assertion_present": true
+    },
+    {
+      "id": "lease_shared_alias_reentry",
+      "source_helper_fragments_verified": 23,
+      "initial_public_zero_assertion_present": true
+    },
+    {
+      "id": "lease_repeat_reentry_poison",
+      "source_helper_fragments_verified": 20,
+      "initial_public_zero_assertion_present": true
+    },
+    {
+      "id": "lease_close_reset_poison",
+      "source_helper_fragments_verified": 25,
+      "initial_public_zero_assertion_present": true
+    },
+    {
+      "id": "lease_different_case_isolation",
+      "source_helper_fragments_verified": 26,
+      "initial_public_zero_assertion_present": true
+    },
+    {
+      "id": "lease_different_batch_isolation",
+      "source_helper_fragments_verified": 22,
+      "initial_public_zero_assertion_present": true
+    },
+    {
+      "id": "lease_move_healthy_moved_source",
+      "source_helper_fragments_verified": 17,
+      "initial_public_zero_assertion_present": true
+    },
+    {
+      "id": "lease_moved_source_dies_first",
+      "source_helper_fragments_verified": 24,
+      "initial_public_zero_assertion_present": true
+    },
+    {
+      "id": "lease_move_poisoned_state",
+      "source_helper_fragments_verified": 21,
+      "initial_public_zero_assertion_present": true
+    },
+    {
+      "id": "lease_outlives_case_batch_wrappers",
+      "source_helper_fragments_verified": 14,
+      "initial_public_zero_assertion_present": true
+    }
+  ],
+  "independent_lifetime_and_reason_review": [
+    "openClose: no reentry; first lease destruction clears active, subsequent lease begins healthy; zeros before/inside/after",
+    "sameAlias: two shares identify the same nonnull state; second begin poisons first, exact required reasons; close then alias reopens healthy",
+    "repeated: every rejected nested begin leaves poison true, repeated healthy refusals/reason retained; final close/reopen clears poison",
+    "resetAfterPoison: inactive begin explicitly clears old poison; separate episode can be poisoned again; third clean reopen",
+    "differentCase: distinct shared case states on same batch; poison one does not affect healthy second; both close/reopen",
+    "differentBatch: separate case and batch states; poison one does not affect second; zero assertions cover both live/cumulative ledgers",
+    "moveHealthy: default move transfers shared_ptr; source reason null and valid(state_) rejects source before healthy condition; target remains healthy",
+    "movedSourceDiesFirst: optional target retains state after source destructor; active target then rejects reentry; target reset allows next lease",
+    "movePoison: shared state poison transfers with ownership; target refuses healthy and retains reason; null source gives moved-case reason; close/reset reopens healthy",
+    "ownersGone: surviving shared view/lease keep CaseState and underlying shared BatchState alive; no destroyed wrapper getter is read; only shared case zeros observed after wrapper destruction"
+  ],
+  "zero_ledger_derivation": "Setup alone does not reserve or charge; no source group calls reserve/scratch/output/metadata charging. Every declared zero helper explicitly checks case live/cumulative/output/metadata or batch live/cumulative. No batch wrapper getter after destruction. These are future assertions, not observed runtime results.",
+  "roster_scope_clarification": "Ordered public steps enumerate selected helper-call source fragments; lambda refusal fragments end at the inner semicolon, not complete C++ expressions. Inline sameCase identity assertions are included and independently checked. Roster is not a complete AST/readset or runtime trace.",
+  "traits_scope": "Four exact type contracts agree with header declarations; proposed static_asserts remain uncompiled",
+  "literal_first_refusal_reasons": {
+    "begin_active": "CHUNK_IO_REENTRY",
+    "healthy_poisoned": "CHUNK_IO_REENTRY_OR_CLOSED_LEASE",
+    "healthy_moved_source": "moved-from case budget",
+    "moved_source_first_reason": null
+  },
+  "future_candidate_limits": {
+    "CPU": 10,
+    "AS": 268435456,
+    "CORE": 0,
+    "FSIZE": 0,
+    "NOFILE": 32,
+    "NPROC": 16
+  },
+  "wall_seconds": 15,
+  "combined_output_cap_bytes": 131072,
+  "compiler_calls": 0,
+  "link_calls": 0,
+  "program_runs": 0,
+  "production_CPP_function_calls": 0,
+  "actual_lease_constructions": 0,
+  "actual_numeric_buffer_allocations": 0,
+  "scope_limits": [
+    "All10groups are source proposals; nested expected refusals are assertions within groups, not additional experiments",
+    "Public healthy/reason/sameCase/zero accounting checks cannot prove private active boolean, actual file or stream IO, concurrency or thread safety",
+    "Lease shared-state lifetime prediction is source reasoning; private allocator/physical RSS/destruction instrumentation remains outside runtime claims",
+    "No reservation tickets/numeric arrays/old66/85/13reruns; no identity/context/preview/cost/affine/SDK/Model/controller/Parent/plant/main/scorer"
+  ],
+  "next_scope": "Separate compile-only source freeze and controls preparation, followed by independent review/backup and exact compile dispatch; no native freeze/compile in this unit",
+  "publication": "Small project test sources/literals/roster/host-free protocol/reviews/documentation only; raw host indexes excluded",
+  "phase5": "NOT_ACCEPTED",
+  "phase6": "NOT_STARTED",
+  "prior_actual66_85_13_results_figures_and_all_failures_preserved": true
+}
