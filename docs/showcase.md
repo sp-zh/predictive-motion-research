@@ -14,8 +14,8 @@ performance or physical hardware safety.
 [audited run provenance](../reviews/ci-ghcr-bootstrap-20261009.md),
 [release and rollback runbook](ci-environment.md).
 This shows the same-commit original environment and verified GHCR base, with
-the verified dependency image and anonymous full CI, with migration gates
-explicitly pending. It is an infrastructure diagnostic, not a robot render or controller
+the verified dependency image, anonymous full CI and completed master migration.
+The final master run is linked in the audit record. It is an infrastructure diagnostic, not a robot render or controller
 performance result; no new motion/plant experiment was run for this repair.
 
 

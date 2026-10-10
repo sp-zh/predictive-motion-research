@@ -1,8 +1,15 @@
 # CI environment maintenance
 
-Status, 2026-10-10 (America/Toronto): **base and dependency images published,
-re-pulled and fully verified; anonymous hosted-runner full CI passed; migration
-branch configured, awaiting its PR checks and merge/default-branch validation.**
+Status, 2026-10-10 (America/Toronto): **deployed and verified on master**.
+[Migration PR #3](https://github.com/sp-zh/predictive-motion-research/pull/3)
+passed complete push/PR checks and was merged, with verified direct-human
+conditional authorization, as `26ed25bf7ed97c0e73bda97f8577e976544795e8`.
+[Master run 38027887735](https://github.com/sp-zh/predictive-motion-research/actions/runs/38027887735)
+passed all required steps: GHCR job-container initialization, image consistency,
+23 infrastructure controls, original 24 native GoogleTests + eight statistics
+cases (zero skips), numerical/consumer checks and diagnostics. The old apt
+installation step is absent. SDK/model downloads still use the network.
+
 PR #2 was merged with direct human authorization at `ff27808fea77a9742cd9363c17addfbf0d1f3ca2`.
 No algorithms, thresholds, research gates or original test entry points changed.
 
@@ -25,7 +32,7 @@ all passed at the same source commit. Each full-test job ran the original
 without test skips. Both actual Package pages show Public and this repository;
 the agent did not change their visibility. Daily CI needs no registry secret.
 
-## Current source and deployment order
+## Current source and future release order
 
 The pre-migration daily CI and retained development `docker/Dockerfile` use
 `docker.io/library/ros:jazzy-ros-base-noble@sha256:066420e07f60aa18262f2479981def87ebcfcec42eefb0c0c57c4a46098348ca`.
@@ -39,8 +46,9 @@ contain both tag and digest; `scripts/ci/ros_source_reference.py` validates the
 allowed repository/tag and full digest and constructs the transport references.
  The verified base and published CI candidate are recorded above; the candidate remains gated on validation.
 
-1. Review and manually merge the bootstrap PR. GitHub requires the dispatch
-   workflow to be registered on the default branch. No automatic merge is used.
+1. Bootstrap PR #2 is already merged and the dispatch workflow is registered.
+   Future environment candidates use the trusted master workflow below.
+   Workflow execution never auto-merges a digest change or changes visibility.
 2. Run `Publish and validate CI environment` on `master`, operation `copy-base`.
    It resolves the index's amd64 manifest, copies that platform to
    `ghcr.io/sp-zh/predictive-motion-research-ros-base`, compares source/target
@@ -78,9 +86,10 @@ allowed repository/tag and full digest and constructs the transport references.
    Keep the workflow name, `validation` job ID, push/PR triggers, Bash shells,
    original full test command and diagnostics. Do not add registry write
    permission or a silent Docker Hub fallback to daily CI.
-7. Inspect migration PR push/PR logs on hosted Linux runners, manually merge,
-   and inspect the new default-branch full CI run. Only then record migration
-   completion and the current and previous verified GHCR digests here.
+7. Inspect migration PR push/PR logs on hosted Linux runners, merge only with
+   explicit owner authorization and passed checks, then inspect the new
+   default-branch full CI run. The initial migration passed these gates in PR #3
+   and master run 38027887735. Record current and predecessor verified refs here.
 
 Dispatch example after registration:
 
