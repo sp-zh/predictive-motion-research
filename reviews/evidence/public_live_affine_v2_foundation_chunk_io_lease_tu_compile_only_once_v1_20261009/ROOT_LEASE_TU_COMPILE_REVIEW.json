@@ -1,0 +1,89 @@
+{
+  "decision": "PASS_ONE_CHUNK_IO_LEASE_TU_COMPILE_ONLY_NOT_LINK_OR_RUNTIME",
+  "baseline": "5696d78da61842a78bd87da4d3ed5f3db50ee2da",
+  "original_ready_sha256": "9d5a387ece7959fff1063bf9199f123f17f8b7b3e33a2bd4f6f6de52b8a657d6",
+  "packet_payloads_verified": 33,
+  "production_and_prior_guards_verified": 221,
+  "sealed_controls_byte_identical_to_reviewed_freeze": true,
+  "compile_invocations": 1,
+  "exit_code": 0,
+  "signal_number": null,
+  "timeout_or_cap_stop": false,
+  "automatic_retries": 0,
+  "raw_stdout_bytes": 0,
+  "raw_stderr_bytes": 0,
+  "object": {
+    "class": "ELF64",
+    "type": "ET_REL",
+    "machine": "AMD64",
+    "entry": 0,
+    "program_headers": 0,
+    "sections": 51,
+    "bytes": 53784,
+    "sha256": "ce3c6951b2eb0261c8c494bfb661a31a80e51ecaaeabd8413a8a07b226bcda50"
+  },
+  "depfile_paths_verified": 229,
+  "new_post_compile_headers": 0,
+  "harness_compile_input_prepost_records_matched": 360,
+  "separate_artifact_prepost_records_matched": 58,
+  "separate_artifact_guard_scope": "Received independent58before/after observations match sealed artifact guards; not part of harness360compile-input records",
+  "prior_unique_project_artifacts_unchanged": 58,
+  "prior_library_objects": 20,
+  "prior_static_archives": 14,
+  "root_independent_remote_byte_mode_recheck": {
+    "records_rechecked": 420,
+    "compile_cwd_empty": true,
+    "readonly_source_directory": true,
+    "compiler_or_program_invocations": 0
+  },
+  "original_executor_archive_all14_regular_files_and13_payloads_verified": true,
+  "compiler_profile": "Reviewed GCC13/O2/DNDEBUG/fno-fast-math/ffp-contract=off/C++17/warnings; one-cTU/fixed4fieldenv/120s/parallel1/cap1MiB",
+  "candidate_limits": {
+    "CPU_seconds": [
+      110,
+      110
+    ],
+    "AS_bytes": [
+      4294967296,
+      4294967296
+    ],
+    "CORE_bytes": [
+      0,
+      0
+    ],
+    "FSIZE_bytes": [
+      134217728,
+      134217728
+    ],
+    "NOFILE": [
+      64,
+      64
+    ]
+  },
+  "public_type_contract_static_assertions_compiled_successfully": 4,
+  "literal_type_contracts": [
+    "noncopyconstructible",
+    "noncopyassignable",
+    "nothrowmoveconstructible",
+    "nonmoveassignable"
+  ],
+  "limits": [
+    "10lease groups compile but remain unexecuted; no healthy/poison/reset/move/lifetime/reentry refusal runtime results",
+    "Four type assertions passed at compilation; they are not runtime or actual IO/concurrency checks",
+    "Finite frozen and depfile identities do not establish full OS/include/native/readset/RSS closure",
+    "Compile elapsed time is a development observation, not controller timing or deadline evidence",
+    "Public lifecycle proposal scope remains unchanged; no private active-state/concurrency/allocator/realIO proof",
+    "Inherited executor RESOURCE_LEASE decision wording is a descriptor only; actual inputs/argv and independently reviewed10groups are ChunkIOLease"
+  ],
+  "lease_case_groups_executed": 0,
+  "actual_lease_constructions": 0,
+  "actual_numeric_buffer_allocations": 0,
+  "link_calls": 0,
+  "program_runs": 0,
+  "production_CPP_function_calls": 0,
+  "phase5": "NOT_ACCEPTED",
+  "phase6": "NOT_STARTED",
+  "next_unit": "Separate reviewed single-link input preparation; no link/runtime admitted by compilation success",
+  "publication": "Compact authored root review/storage only; raw controls/object/depfile/host indices excluded",
+  "existing66_85_13_results_visuals_sources_and_all_failures_preserved": true
+}

@@ -1,0 +1,30 @@
+{
+  "scope": "Full original chunk IO lease single-TU compile evidence retained immutably",
+  "archive": {
+    "bytes": 248473,
+    "sha256": "5bebb9b3980b3721ccd141ee7dc5928a77e7ffbf526fe75d598e081d57893527",
+    "file": "chunk-lease-tu-compile-only-once-v1.tar.gz",
+    "regular_file_count": 37,
+    "payload_file_count": 36,
+    "inner_ready_sha256": "c0cdb45a6b70a4064554c970dc0dceb3ee29c460ac20c52c867c5456d9f46f93"
+  },
+  "Mac_archive": "/Users/uot/Documents/ChatGPT/ros/results/phase5-reference/chunk-lease-tu-compile-only-once-v1-20261009/root-retained-attempt1/chunk-lease-tu-compile-only-once-v1.tar.gz",
+  "Dell_archive": "/mnt/d/CodexTransfer/projects/predictive_motion/checkpoints/chunk-lease-tu-compile-only-once-v1-20261009/root-retained-attempt1/chunk-lease-tu-compile-only-once-v1.tar.gz",
+  "Mac_payloads_verified": true,
+  "Dell_payloads_verified": true,
+  "Mac_verification": {
+    "archive_sha256": "5bebb9b3980b3721ccd141ee7dc5928a77e7ffbf526fe75d598e081d57893527",
+    "payloads_verified": 36
+  },
+  "Dell_verification": {
+    "archive_sha256": "5bebb9b3980b3721ccd141ee7dc5928a77e7ffbf526fe75d598e081d57893527",
+    "payloads_verified": 36
+  },
+  "original_source_ready_sha256": "9d5a387ece7959fff1063bf9199f123f17f8b7b3e33a2bd4f6f6de52b8a657d6",
+  "publication": "Compact authored root review/storage only;raw object,depfile,host plan,control,harness and dependency identities excluded",
+  "compiled": true,
+  "linked": false,
+  "run": false,
+  "phase5": "NOT_ACCEPTED",
+  "phase6": "NOT_STARTED"
+}
