@@ -1,0 +1,107 @@
+{
+  "decision": "PASS_BOUNDED11_SYNTHETIC_INITIAL_RUNTIME_FREEZE_ONLY_NOT_EXECUTED",
+  "baseline": "1af4527ec31be8bf820a1fdca38967db8772afcc",
+  "ready_sha256": "7a70253bcc652d8e0ccedf089c0c9d6874a5df147a25c5180b29ead5f5531804",
+  "packet_payloads_verified": 11,
+  "production_and_prior_guards_verified": 263,
+  "binary": {
+    "bytes": 103096,
+    "sha256": "dd47a63159725a7b0188b9689d09633c8654519e81bd73dac7b5acef88c1f701",
+    "mode": "0555"
+  },
+  "fixed_groups": 11,
+  "prospective_controlled_target_entries": 97,
+  "independent_expected_stdout": {
+    "bytes": 413,
+    "sha256": "7cdfc5b3ef402d90316a9f35b87252463f2d0ba0c16b25d582de01f0e0a42e74",
+    "original_source_roster_countclosure_and_previously_reviewed_fixture_exact": true
+  },
+  "finite_runtime_named_identities": 13,
+  "native_and_loader_cache_reused_from_prior": 12,
+  "original_artifact_records_verified": 75,
+  "future_prepost_records": 89,
+  "unique_requested_paths": 88,
+  "unique_resolved_files": 82,
+  "root_independent_remote_recheck": {
+    "identity_records_verified": 89,
+    "unique_requested_paths_verified": 88,
+    "unique_resolved_files_verified": 82,
+    "separate_postcompile_math_records_verified": 10,
+    "ELF_file_records_independently_verified": 48,
+    "all_audited_ELF_RPATH_RUNPATH_absent": true,
+    "frozen_binary0555": true,
+    "exact_directory_modes_rosters_verified": 12,
+    "named_specs_absences_verified": 2,
+    "named_preload_absence_verified": true,
+    "run_attempt_absent": true,
+    "program_runs": 0
+  },
+  "separate_postcompile_math_records": 10,
+  "postcompile_math_not_runtime_dependencies_or_retrofreeze": true,
+  "harness_exact_directory_modes_rosters": 12,
+  "ELF_dictionary_scope": "48 pure ELF file audits =12 runtime-named ELF paths and36 preserved artifact ELF audits;not48 loaded dependencies",
+  "harness_review": "Exact reviewed lease pattern after filenames/pins/fixed11 result and97controlledcount/unknown occurrence reporting substitutions;adds12exactreadonly modes/rosters and separate10postcompile math records;AST parsed only",
+  "future_status_reporting_scope": "After Popen CPP/point occurrence remains unknown;true only after complete fixed11+97output corroborated by sourceflow.97entries are counted only at sole compiled-controlled validator callsite,not allCPP/native/getter calls.Those counts remain unmeasured;provisional target_entry_observation remains initial marker,not final evidence.Capture interval starts afterPopen,not full runtime/CPU/controller timing.",
+  "permission_correction": "Root0444 instruction explicitly corrected to fresh executable0555 before any copy;original0775 remains unchanged;source/object/control0444 retained",
+  "count_description_correction": "Executor manual summary81resolved corrected to82;sealedmanifest/review actual82unchanged",
+  "fixed_replaced_environment": {
+    "PATH": "/usr/bin:/bin",
+    "LANG": "C",
+    "LC_ALL": "C",
+    "TZ": "UTC"
+  },
+  "timeout_seconds": 15,
+  "combined_output_cap_bytes": 131072,
+  "candidate_child_rlimits": {
+    "RLIMIT_CPU": [
+      10,
+      10
+    ],
+    "RLIMIT_AS": [
+      268435456,
+      268435456
+    ],
+    "RLIMIT_CORE": [
+      0,
+      0
+    ],
+    "RLIMIT_FSIZE": [
+      0,
+      0
+    ],
+    "RLIMIT_NOFILE": [
+      32,
+      32
+    ],
+    "RLIMIT_NPROC": [
+      16,
+      16
+    ]
+  },
+  "allowlisted_future_project_effects": [
+    "Native/C++ standard initialization and small controlstorage",
+    "Only validateAlgebraTestInitial finite30scalarcopy andpoint() checks on synthetic coordinates",
+    "97 controlledtargetentries:5positive/90singlepoison/2joint-vs-progresscategorypriority;11groupcountclosure",
+    "Standard invalid_argument refusals,scalar comparisons/signbit/isnan/isinf and capturedPASSFAILCOMPLETE text"
+  ],
+  "type_contracts_passed_at_prior_compile_only": 3,
+  "compiler_calls": 0,
+  "link_calls": 0,
+  "program_runs": 0,
+  "production_CPP_function_calls": 0,
+  "target_validator_entries_executed": 0,
+  "point_checks_executed": 0,
+  "initial_groups_executed": 0,
+  "limits": [
+    "Only finite synthetic30scalarcopy/point and nonfinite-category refusal;selectedshiftedfinite/negative-r coordinates do not establish physical/live-context/Model admission",
+    "Four source-visible logicalState30 positions are not physicalmemory/compilerallocation/RSS bound",
+    "NaN/Inf singlepoison90entries plus5positive and2joint-vs-progresscategorypriority;groupcounts are not rank/trajectory/controller metrics",
+    "No contextlive/first4ms/snapshot/permissionfactory/reservation/charge/buffer/lease/SDK/Model/cost/affine/capture/Parent/controller/plant/main/scorer execution",
+    "Native/cache/mixedELF audits do not prove fullactual loader/OS/readset/RSS/runtimeABI/performance closure"
+  ],
+  "next_admitted_unit": "Separate one exact bounded11 invocation after verified milestone backup;first failure stop,no retry/repair/fixture changes",
+  "publication": "Compact root review/storage only;binary/hostplan/harness/native/cache/correction record excluded",
+  "phase5": "NOT_ACCEPTED",
+  "phase6": "NOT_STARTED",
+  "prior_actual66_85_13_10_results_figures_and_all_failures_preserved": true
+}
