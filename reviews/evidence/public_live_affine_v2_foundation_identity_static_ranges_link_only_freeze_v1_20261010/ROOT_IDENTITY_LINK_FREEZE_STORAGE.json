@@ -1,0 +1,51 @@
+{
+  "scope": "Full original unexecuted identity/static-range link preparation and schema repair records retained immutably",
+  "archive": {
+    "bytes": 201563,
+    "sha256": "22d67d650054b64f33c977cd037b7139ca5a65d1f5a57ca8946b189e549dc55a",
+    "file": "identity-link-only-freeze-v1.tar.gz",
+    "regular_file_count": 34,
+    "payload_file_count": 33,
+    "inner_ready_sha256": "ec10abcb7e3a896264a0468cc4174f091c11e82785cf16214073ae33af11f552"
+  },
+  "Mac_archive": "/Users/uot/Documents/ChatGPT/ros/results/phase5-reference/identity-link-only-freeze-v1-20261010/root-retained-preparation1/identity-link-only-freeze-v1.tar.gz",
+  "Dell_archive": "/mnt/d/CodexTransfer/projects/predictive_motion/checkpoints/identity-link-only-freeze-v1-20261010/root-retained-preparation1/identity-link-only-freeze-v1.tar.gz",
+  "Mac_payloads_verified": true,
+  "Dell_payloads_verified": true,
+  "Mac_verification": {
+    "archive_sha256": "22d67d650054b64f33c977cd037b7139ca5a65d1f5a57ca8946b189e549dc55a",
+    "payloads_verified": 33
+  },
+  "Dell_verification": {
+    "archive_sha256": "22d67d650054b64f33c977cd037b7139ca5a65d1f5a57ca8946b189e549dc55a",
+    "payloads_verified": 33
+  },
+  "original_source_ready_sha256": "71e102b0a8802213f4fd1e16280bba308a3c6ba43e83e0dabfd32125af984fc1",
+  "publication": "Compact authored root review/storage only;raw object/archive/symbols/host plan/control/harness/native/header identities excluded",
+  "new_compilation": false,
+  "linked": false,
+  "run": false,
+  "phase5": "NOT_ACCEPTED",
+  "phase6": "NOT_STARTED",
+  "separate_CI_integration_supplement": {
+    "archive": {
+      "file": "identity-link-ci-sync-supplement-v1.tar.gz",
+      "bytes": 2241,
+      "sha256": "39a3d935d077449862b2214dbae319033999299752c8e7fbf8d9a9c72b8a5d9f",
+      "regular_file_count": 4,
+      "payload_file_count": 3,
+      "inner_ready_sha256": "80b0ff9e7f7e824d72330cde18fbebe3caacec1fc54efb9d17faee517479f7e3"
+    },
+    "Mac_archive": "/Users/uot/Documents/ChatGPT/ros/results/phase5-reference/identity-link-only-freeze-v1-20261010/root-retained-ci-sync1/identity-link-ci-sync-supplement-v1.tar.gz",
+    "Dell_archive": "/mnt/d/CodexTransfer/projects/predictive_motion/checkpoints/identity-link-only-freeze-v1-20261010/root-retained-ci-sync1/identity-link-ci-sync-supplement-v1.tar.gz",
+    "Mac_verification": {
+      "sha256": "39a3d935d077449862b2214dbae319033999299752c8e7fbf8d9a9c72b8a5d9f",
+      "payloads_verified": 3
+    },
+    "Dell_verification": {
+      "sha256": "39a3d935d077449862b2214dbae319033999299752c8e7fbf8d9a9c72b8a5d9f",
+      "payloads_verified": 3
+    },
+    "main_archive_unchanged": true
+  }
+}
