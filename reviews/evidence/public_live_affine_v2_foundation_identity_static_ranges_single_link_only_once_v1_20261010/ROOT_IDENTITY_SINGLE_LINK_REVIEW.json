@@ -1,0 +1,108 @@
+{
+  "decision": "PASS_ONE_IDENTITY_STATIC_RANGE_LINK_ONLY_NOT_RUNTIME_OR_PHASE_ACCEPTANCE",
+  "baseline": "824d6499d61d4b06109588c98fb6f99c472aee33",
+  "ready_sha256": "3030e75e6fc923792f3d6bd6fffb55f334e80887b7ddc9e917851f5832fd0765",
+  "original_payloads_verified": 35,
+  "production_and_prior_guards_verified": 311,
+  "link_invocations": 1,
+  "exit_code": 0,
+  "signal_number": null,
+  "timeout_or_output_stop": false,
+  "automatic_retries": 0,
+  "raw_stdout_bytes": 0,
+  "raw_stderr_bytes": 0,
+  "binary": {
+    "bytes": 173664,
+    "sha256": "367bed8cb810afd952d3403391e1d033eec2b6ce69d48e03091ec0e8e6960eff",
+    "mode": "0775",
+    "ELF64_type": "ET_DYN",
+    "machine": "x86-64",
+    "DF_1_PIE_flag": true,
+    "entry": 44384,
+    "program_headers": 13,
+    "sections": 33,
+    "DT_NEEDED": [
+      "libcrypto.so.3",
+      "libyaml-cpp.so.0.8",
+      "libstdc++.so.6",
+      "libgcc_s.so.1",
+      "libc.so.6"
+    ],
+    "PT_INTERP": [
+      "/lib64/ld-linux-x86-64.so.2"
+    ],
+    "RPATH_RUNPATH": [],
+    "unresolved_project_symbols": 0,
+    "compiled_fixture_root_literal_retained": true
+  },
+  "map": {
+    "bytes": 2674141,
+    "sha256": "c8d9e0ee98a66ae7f0ad082ae6530cf0e243316e762cd44b00fe5f47aa780eb6",
+    "actual_project_archive_members": [
+      "foundation_identity.cpp.o",
+      "foundation_resources.cpp.o"
+    ],
+    "actual_LOAD_lines": 25,
+    "distinct_LOAD_paths": 20,
+    "explicit_resolved_Crypto_YAML_paths_observed": true,
+    "post_first_requested_alias_paths": 6,
+    "all_resolved_targets_match_prefrozen_records": true,
+    "not_retroactive_requested_path_prefreeze": true
+  },
+  "aggregate_harness_prepost_records_matched": 140,
+  "primary_roles": 136,
+  "separate_header_historical_depfile_roles": 4,
+  "readonly_mode_rosters_preserved": 15,
+  "actual_parent_mode_preserved": "0775",
+  "actual_parent_only_link_attempt_added": true,
+  "named_absences_preserved": 4,
+  "original_artifact_source_fixture_records": 97,
+  "separate_historical_math10_preserved_not_link_dependencies_or_retrofreeze": true,
+  "root_independent_remote_recheck": {
+    "current_file_records_rechecked": 172,
+    "harness_primary_separate_roles": 140,
+    "artifact_roles": 2,
+    "map_LOAD_paths": 20,
+    "separate_historical_math": 10,
+    "readonly_mode_rosters_preserved": 15,
+    "actual_parent_mode": "0o775",
+    "actual_parent_after_roster": [
+      "compile-attempt1",
+      "link-attempt1",
+      "link-inputs-version1",
+      "source-version1"
+    ],
+    "named_absences": 4,
+    "cwd_empty": true,
+    "link_or_program_invocations": 0
+  },
+  "original_archive_verified": {
+    "regular_files": 15,
+    "payloads": 14
+  },
+  "independent_review": [
+    "Exactsealedcontrols/actualplan match independentlyreviewedfreeze;one successfulnativeGCCdriverlink,emptyrawstreams",
+    "IndependentELFparser confirms x86-64PIE andfiveorderedDTNEEDED includingboth explicit nativeDSO SONAMEs,interpreter,noRPATH/RUNPATH orprojectUND",
+    "Independentactualmap shows identity/resources archiveextraction andboth pinnedresolvedCrypto/YAMLLOADarguments;20 distinctLOADpaths observed",
+    "Sixnew requested spellings resolve toknownaliases withpost-linklabels;notfull linkerreadset/nativeversion/ABIproof",
+    "All140harnessroles match before/after;15readonlyrosters,parentsoleexclusiveaddition and4absences independently rechecked",
+    "Historical10math records preserveorigin/currentbytes separately,not linkdependencies/newprefreeze"
+  ],
+  "compiler_source_compilation_calls": 0,
+  "program_runs": 0,
+  "production_CPP_API_calls": 0,
+  "planned_groups_unexecuted": 24,
+  "planned_controlled_entries_unexecuted": 29,
+  "expected714byte_stdout_still_future": true,
+  "limits": [
+    "Successful link andprojectsymbolresolution do not validate identityhash/YAMLconversion/rangegetter/exception/runtime behavior",
+    "Otheridentity/currentproducer/memberbudget/reservation functions presentinmembers remainruntimeclosed",
+    "FiveDSO namesandfinitefile/map identities are notcompleteactual loader/version/ABI/readset/RSS/performanceproof",
+    "NoCurrentproducer/memberbudget/SDKModel/LiveActual/first4ms/affine/cost/capture/Parent/plant/main/scorer"
+  ],
+  "publication": "Compactauthoredrootreview/storage only;rawbinary/map/hostplan/control/nativeLOADindices excluded",
+  "next_scope": "Preparation only:freeze successfulbinary,fixture/native/runtime protocol;no runtimeuntilseparate review/backup/dispatch",
+  "phase5": "NOT_ACCEPTED",
+  "phase6": "NOT_STARTED",
+  "all_prior_actual_results_figures_checkerfreezes_sources_and_failures_preserved": true
+}
