@@ -1,0 +1,38 @@
+{
+  "scope": "Full original resource pricing single-link-only evidence retained immutably",
+  "archive": {
+    "bytes": 301463,
+    "sha256": "80b7cad0554c71f636892449de5c548e6f58a4aea490e7ad9ae449b7635e5261",
+    "file": "resource-pricing-single-link-only-once-v1.tar.gz",
+    "regular_file_count": 35,
+    "payload_file_count": 34,
+    "inner_ready_sha256": "e362bde057e1f02ad36f57f519edfff37f76d5d1d4a5b37f7e49db73dc11a4ab"
+  },
+  "Mac_archive": "/Users/uot/Documents/ChatGPT/ros/results/phase5-reference/resource-pricing-single-link-only-once-v1-20261009/root-retained-attempt2/resource-pricing-single-link-only-once-v1.tar.gz",
+  "Dell_archive": "/mnt/d/CodexTransfer/projects/predictive_motion/checkpoints/resource-pricing-single-link-only-once-v1-20261009/root-retained-attempt2/resource-pricing-single-link-only-once-v1.tar.gz",
+  "Mac_payloads_verified": true,
+  "Dell_payloads_verified": true,
+  "Mac_verification": {
+    "archive_sha256": "80b7cad0554c71f636892449de5c548e6f58a4aea490e7ad9ae449b7635e5261",
+    "payloads_verified": 34
+  },
+  "Dell_verification": {
+    "archive_sha256": "80b7cad0554c71f636892449de5c548e6f58a4aea490e7ad9ae449b7635e5261",
+    "payloads_verified": 34
+  },
+  "original_source_ready_sha256": "0faf1a6f13db159dd58d6239fb8552e217f12f3f7f329526cdeb9674e065b9b5",
+  "publication": "Compact authored root review/storage only;raw binary,map,host plan,control,harness and native identities excluded",
+  "new_source_compilation": false,
+  "linked": true,
+  "run": false,
+  "phase5": "NOT_ACCEPTED",
+  "phase6": "NOT_STARTED",
+  "root_review_wording_correction": "Removed inherited approximate 2.58MB map label; precise actual map bytes2542920 were always correct. Prior root review retained inside current archive. Archive attempt2 is root packaging only, not a second linker invocation.",
+  "prior_root_archive_preserved": {
+    "bytes": 301461,
+    "sha256": "d9e57484069cbe01b0ead452172f8b30409fbd56df44bd22d049097119c12c34",
+    "Mac_archive": "/Users/uot/Documents/ChatGPT/ros/results/phase5-reference/resource-pricing-single-link-only-once-v1-20261009/root-retained-attempt1/resource-pricing-single-link-only-once-v1.tar.gz",
+    "Dell_archive": "/mnt/d/CodexTransfer/projects/predictive_motion/checkpoints/resource-pricing-single-link-only-once-v1-20261009/root-retained-attempt1/resource-pricing-single-link-only-once-v1.tar.gz",
+    "both_hosts_all33_payloads_verified": true
+  }
+}
