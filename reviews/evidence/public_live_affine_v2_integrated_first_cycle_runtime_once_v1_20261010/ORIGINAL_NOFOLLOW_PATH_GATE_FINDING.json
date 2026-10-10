@@ -1,0 +1,20 @@
+{
+  "schema": "FIRST_CYCLE_ORIGINAL_NOFOLLOW_PROTOCOL_PATH_FINDING_1",
+  "actual_error": "cannot open identity input: Too many levels of symbolic links",
+  "original_gate": "foundation_identity.cpp File::File sets O_NOFOLLOW for nonproducer observePinnedFile",
+  "cause": "Protocol source-closure uses final-component symlink paths while standard Python preflight resolves/follows them. Matching resolved SHA does not satisfy original nofollow identity-open gate.",
+  "source_order_inference_first_blocked_member": {
+    "ordinal": 50,
+    "role": "source_input_0050",
+    "requested_basename": "libmujoco.so",
+    "resolved_basename": "libmujoco.so.3.3.7",
+    "sha256": "23841520ecf60ad648405674a757f260949f7cf6b44deb284398b9851b3f061d",
+    "bytes": 5075256
+  },
+  "actual_final_component_symlink_count": 17,
+  "repair_not_performed": "Root must independently review canonical-path role/unique-path mapping and versioned protocol/reviews/claim-output paths before any new attempt; do not weaken O_NOFOLLOW or silently drop required59roles",
+  "native_second_attempt_or_probe": 0,
+  "all_failure_prefix_and_old_protocols_retained": true,
+  "phase5": "NOT_ACCEPTED",
+  "phase6": "NOT_STARTED"
+}
