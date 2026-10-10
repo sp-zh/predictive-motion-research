@@ -10,7 +10,14 @@ It does not change research code, phase gates, thresholds or test entry points.
 Daily CI and the retained development `docker/Dockerfile` currently use
 `docker.io/library/ros:jazzy-ros-base-noble@sha256:066420e07f60aa18262f2479981def87ebcfcec42eefb0c0c57c4a46098348ca`.
 This is the official multi-platform **index**, not a config ID. Linux CI targets
-`linux/amd64`. No current GHCR CI digest exists in this implementation record.
+`linux/amd64`. The publisher retains the original tag+digest source in
+`base-copy.json` as `source_original`; `source_index` is the normalized tag-free
+`docker.io/library/ros@sha256:…`, and `source_platform_manifest` uses the same
+repository with the amd64 digest selected from that index. `target_manifest`
+is the independent GHCR result. Skopeo rejects Docker transport references that
+contain both tag and digest; `scripts/ci/ros_source_reference.py` validates the
+allowed repository/tag and full digest and constructs the transport references.
+ No current GHCR CI digest exists in this implementation record.
 
 1. Review and manually merge the bootstrap PR. GitHub requires the dispatch
    workflow to be registered on the default branch. No automatic merge is used.

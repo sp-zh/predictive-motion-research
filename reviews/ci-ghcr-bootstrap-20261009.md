@@ -107,3 +107,42 @@ requires manual bootstrap merge/registration before those stages can run.
 The final follow-up commit only records completed validation; executable CI
 sources are identical to the tested `5a2055e` checkpoint. Research phase gates,
 algorithms, thresholds and primary workspace remain outside this repair.
+
+
+Skopeo source-reference repair — 2026-10-09 Toronto
+
+Starting PR #2 head was rechecked as `ad045b2432dcb25d904b50e8e451b4fc25add898`;
+no newer branch change or uncommitted work was present. The publisher now calls
+one shared validated parser for the Dockerfile lock, normalized index and selected
+platform reference; it preserves the original source record and the existing
+index digest. Eight targeted regressions were added to the existing suite (23
+cases total; the prior 15 remain unchanged). Static checks passed: Actionlint,
+Hadolint, ShellCheck, Bash parse, Python syntax and diff whitespace.
+
+Actual read-only test on Dell WSL Linux x86_64, Skopeo 1.13.3 from Ubuntu package
+`1.13.3+ds1-2ubuntu0.24.04.3`, SHA-256
+`d908a86538f6d4bc49ea9c7423e5fb279a5c8cfc1f9bc7bd505f8bfe25d29be3`.
+The package was downloaded and extracted under `/tmp/pm-skopeo-readonly.q9J9QD`;
+it was not installed into the host. Existing system libraries were used. An
+explicit empty auth file isolated this test from registry login credentials.
+The exact production parser and retained Dockerfile were transferred with matching
+SHA-256 (`1ae382029518896ef96d3e30149f312cda924a06667fa836211bc9e7655d3dbe`
+and `f656d0e83c32e2254c124959df9f788d4ff5d77d4e31f5bcd8dbe0ee53cf50c6`).
+Each inspect was bounded by a 25-second command timeout and 35-second external
+timeout, with one invocation per reference and no retry loop.
+
+Command form: `skopeo --command-timeout 25s inspect --authfile <empty-auth.json>
+--raw docker://<reference>` (read-only):
+
+- Original `docker.io/library/ros:jazzy-ros-base-noble@sha256:066420e07f60aa18262f2479981def87ebcfcec42eefb0c0c57c4a46098348ca`: exit 1, exact “Docker references with both a tag and digest are currently not supported” parse error.
+- Normalized `docker.io/library/ros@sha256:066420e07f60aa18262f2479981def87ebcfcec42eefb0c0c57c4a46098348ca`: exit 0, OCI index/schema 2 with four descriptors; raw bytes hash equals the unchanged index digest.
+- Selected linux/amd64 `docker.io/library/ros@sha256:a5426de405f6f0a82b0f3def3bbd3bce2a71a91421fe980c17613b4e51ef38d9`: exit 0, OCI manifest/schema 2, ten layers; raw bytes hash equals the selected digest. Config digest is `sha256:04b9d24bad695363d48418c1109d23e9738774b88a2017ec6d01ff9df4c3072c` (config identity, not a registry image reference).
+
+This proves both reference parsing and registry reads for the actual locked
+source. It does **not** prove copying or publishing: no `skopeo copy`, Docker
+push, GHCR release or Package visibility operation ran. Raw stdout/stderr remain
+in that isolated Dell temporary directory and inspection copies under
+`/private/tmp/ros-skopeo-readonly-evidence` on Mac; these are diagnostic temporary
+copies, not durable experimental archives. The small source/digest/results
+record is retained here. PR merge remains paused; formal CI retains the original
+container, dependency installation, algorithms, phase state and test entry.

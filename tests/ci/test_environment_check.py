@@ -17,6 +17,9 @@ spec.loader.exec_module(checker)
 spec_audit = importlib.util.spec_from_file_location("audit", ROOT / "scripts/ci/verify_test_results.py")
 audit = importlib.util.module_from_spec(spec_audit)
 spec_audit.loader.exec_module(audit)
+spec_source = importlib.util.spec_from_file_location("source", ROOT / "scripts/ci/ros_source_reference.py")
+source = importlib.util.module_from_spec(spec_source)
+spec_source.loader.exec_module(source)
 
 
 class EnvironmentCheck(unittest.TestCase):
@@ -147,6 +150,62 @@ class TestInventory(unittest.TestCase):
         self.log.write_text(self.log.read_text().replace("OK\n", "OK (skipped=1)\n"))
         with self.assertRaisesRegex(ValueError, "statistics"):
             audit.audit(self.root)
+
+
+class RosSourceReference(unittest.TestCase):
+    def setUp(self):
+        self.original = source.dockerfile_source(ROOT / "docker/Dockerfile")
+        self.index = {"schemaVersion": 2,
+                      "mediaType": "application/vnd.oci.image.index.v1+json",
+                      "manifests": [{"digest": "sha256:" + "b" * 64,
+                                     "platform": {"os": "linux", "architecture": "amd64"}}]}
+
+    def test_real_tag_digest_preserves_locked_digest(self):
+        self.assertIn("ros:jazzy-ros-base-noble@sha256:", self.original)
+        normalized = source.locked_source(self.original)["index_reference"]
+        self.assertEqual(normalized, "docker.io/library/ros@" + self.original.rpartition("@")[2])
+        self.assertEqual(normalized.rpartition("@")[2], "sha256:066420e07f60aa18262f2479981def87ebcfcec42eefb0c0c57c4a46098348ca")
+
+    def test_publisher_cli_uses_same_reference_logic(self):
+        # These are the actual commands used by publish_ci_images.sh, without invoking publication.
+        script = ROOT / "scripts/ci/ros_source_reference.py"
+        original = subprocess.check_output(["python3", str(script), "original", str(ROOT / "docker/Dockerfile")], text=True).strip()
+        normalized = subprocess.check_output(["python3", str(script), "index", original], text=True).strip()
+        with tempfile.TemporaryDirectory() as directory:
+            path = Path(directory) / "index.json"
+            path.write_text(json.dumps(self.index))
+            platform = subprocess.check_output(["python3", str(script), "platform", original, str(path)], text=True).strip()
+        self.assertEqual(normalized, source.locked_source(original)["index_reference"])
+        self.assertEqual(platform, "docker.io/library/ros@sha256:" + "b" * 64)
+
+    def test_platform_never_reintroduces_tag(self):
+        ref = source.platform_reference(self.original, self.index)
+        self.assertEqual(ref, "docker.io/library/ros@sha256:" + "b" * 64)
+        self.assertNotIn(":jazzy", ref)
+
+    def test_missing_digest_rejected(self):
+        with self.assertRaisesRegex(ValueError, "missing @sha256"):
+            source.locked_source("docker.io/library/ros:jazzy-ros-base-noble")
+
+    def test_malformed_digest_rejected(self):
+        for digest in ("sha256:abc", "sha256:" + "g" * 64, "sha512:" + "a" * 64, "sha256:" + "A" * 64, ""):
+            with self.subTest(digest=digest), self.assertRaisesRegex(ValueError, "64-hex sha256"):
+                source.locked_source("docker.io/library/ros@" + digest)
+
+    def test_disallowed_source_rejected(self):
+        for name in ("example.com:5000/library/ros", "docker.io/other/ros", "docker.io/library/ros:latest"):
+            with self.subTest(name=name), self.assertRaisesRegex(ValueError, "source must be"):
+                source.locked_source(name + "@sha256:" + "a" * 64)
+
+    def test_bad_platform_digest_rejected(self):
+        self.index["manifests"][0]["digest"] = "sha256:bad"
+        with self.assertRaisesRegex(ValueError, "platform manifest requires"):
+            source.platform_reference(self.original, self.index)
+
+    def test_ambiguous_or_missing_amd64_rejected(self):
+        for manifests in ([], self.index["manifests"] * 2):
+            with self.subTest(manifests=manifests), self.assertRaisesRegex(ValueError, "exactly one"):
+                source.platform_reference(self.original, dict(self.index, manifests=manifests))
 
 
 if __name__ == "__main__":

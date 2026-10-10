@@ -37,40 +37,24 @@ if [[ $mode == copy-base ]]; then
     printf '%s' "$DOCKERHUB_TOKEN" | docker login docker.io -u "$DOCKERHUB_USERNAME" --password-stdin
   fi
   # Read the retained official source lock (also the current daily CI base).
-  source_image=$(python3 - <<'PYCODE'
-import re
-from pathlib import Path
-text=Path('docker/Dockerfile').read_text()
-match=re.search(r'FROM (?:docker.io/library/)?(ros:jazzy-ros-base-noble@sha256:[0-9a-f]{64})', text)
-assert match, 'Development Dockerfile no longer defines the expected locked ROS source; review before mirroring'
-print('docker.io/library/' + match[1])
-PYCODE
-)
+  source_original=$(python3 scripts/ci/ros_source_reference.py original docker/Dockerfile)
+  source_index_ref=$(python3 scripts/ci/ros_source_reference.py index "$source_original")
   sudo apt-get update
   sudo apt-get install -y --no-install-recommends skopeo
   # skopeo reads only this job's isolated Docker auth file.
-  skopeo inspect --authfile "$DOCKER_CONFIG/config.json" --raw "docker://$source_image" > results/ci-images/source-index.json
-  source_platform=$(python3 - <<'PYCODE'
-import json
-from pathlib import Path
-m=json.loads(Path('results/ci-images/source-index.json').read_text())
-v=[x['digest'] for x in m['manifests'] if x.get('platform', {}).get('os') == 'linux' and x.get('platform', {}).get('architecture') == 'amd64']
-assert len(v)==1, 'Exactly one linux/amd64 source manifest required'
-print(v[0])
-PYCODE
-)
-  source_platform_ref="${source_image%@*}@$source_platform"
+  skopeo inspect --authfile "$DOCKER_CONFIG/config.json" --raw "docker://$source_index_ref" > results/ci-images/source-index.json
+  source_platform_ref=$(python3 scripts/ci/ros_source_reference.py platform "$source_original" results/ci-images/source-index.json)
   skopeo inspect --authfile "$DOCKER_CONFIG/config.json" --raw "docker://$source_platform_ref" > results/ci-images/source-manifest.json
   skopeo copy --authfile "$DOCKER_CONFIG/config.json" --override-os linux --override-arch amd64 "docker://$source_platform_ref" "docker://$image:$tag"
   skopeo inspect --authfile "$DOCKER_CONFIG/config.json" --raw "docker://$image:$tag" > results/ci-images/target-manifest.json
   digest=sha256:$(sha256sum results/ci-images/target-manifest.json | cut -d ' ' -f 1)
-  python3 - "$source_image" "$source_platform_ref" "$image@$digest" <<'PYCODE'
+  python3 - "$source_original" "$source_index_ref" "$source_platform_ref" "$image@$digest" <<'PYCODE'
 import json, sys
 from pathlib import Path
 s=json.loads(Path('results/ci-images/source-manifest.json').read_text())
 t=json.loads(Path('results/ci-images/target-manifest.json').read_text())
 assert s['config']['digest']==t['config']['digest'] and s['layers']==t['layers'], 'Source/target content mismatch'
-Path('results/ci-images/base-copy.json').write_text(json.dumps(dict(source_index=sys.argv[1], source_platform_manifest=sys.argv[2], target_manifest=sys.argv[3], platform='linux/amd64', config=s['config']['digest'], layers=[x['digest'] for x in s['layers']]), indent=2)+'\n')
+Path('results/ci-images/base-copy.json').write_text(json.dumps(dict(source_original=sys.argv[1], source_index=sys.argv[2], source_platform_manifest=sys.argv[3], target_manifest=sys.argv[4], platform='linux/amd64', config=s['config']['digest'], layers=[x['digest'] for x in s['layers']]), indent=2)+'\n')
 PYCODE
 else
   [[ $base =~ ^ghcr\.io/sp-zh/predictive-motion-research-ros-base@sha256:[0-9a-f]{64}$ ]] || { echo 'Reviewed project GHCR base digest required' >&2; exit 1; }
