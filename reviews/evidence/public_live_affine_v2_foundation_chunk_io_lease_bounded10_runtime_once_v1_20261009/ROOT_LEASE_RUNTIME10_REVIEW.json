@@ -1,0 +1,108 @@
+{
+  "decision": "PASS_FIXED10_CHUNK_IO_LEASE_RUNTIME_ONLY_NOT_PHASE_ACCEPTANCE",
+  "baseline": "5082c7c0651578fdb89ed0d054a92c7ea4f1bfe1",
+  "ready_sha256": "9512def47285b53c1fb54117be5699a83669593dee627d953091c938416bbf4b",
+  "packet_payloads_verified": 35,
+  "production_and_prior_guards_verified": 229,
+  "program_invocations": 1,
+  "exit_code": 0,
+  "signal_number": null,
+  "timeout_or_output_stop": false,
+  "automatic_retries": 0,
+  "case_groups_passed": 10,
+  "case_groups_failed": 0,
+  "expected_outcome_counts": {
+    "PUBLIC_LEASE_CONTRACT": 10
+  },
+  "nested_required_refusals_are_not_additional_experiments": true,
+  "actual_stdout_bytes": 395,
+  "actual_stdout_sha256": "5a7eae8e7ec1cb779c978a66e70be4f455f29451342a1a8b3067676561ee0ec3",
+  "stderr_bytes": 0,
+  "expected_stdout_frozen_before_execution": true,
+  "exact_ordered_stdout_matched": true,
+  "binary_sha256": "1be89142928eaeaa3560c203043d82428fde8fca34e1db45ceb55cc86f4a6570",
+  "prepost_identity_records_matched": 80,
+  "unique_requested_paths_matched": 79,
+  "unique_resolved_files_matched": 73,
+  "original_artifact_guard_records": 66,
+  "harness_readonly_directories_matched": 6,
+  "separate_additional_prior_buffer_directory_checks": {
+    "before_after_equal": true,
+    "directories": 3,
+    "guarded_files": 5,
+    "exact_modes_rosters_hashes_match_frozen_artifact_records": true,
+    "not_harness9directories": true
+  },
+  "root_independent_remote_recheck": {
+    "current_records_verified": 80,
+    "unique_paths": 79,
+    "harness_readonly_directories": 6,
+    "additional_prior_buffer_directories": 3,
+    "additional_guard_files": 5,
+    "named_specs_absences": 2,
+    "named_preload_absence": true,
+    "cwd_empty": true,
+    "program_calls": 0
+  },
+  "applied_child_limits": {
+    "RLIMIT_CPU": [
+      10,
+      10
+    ],
+    "RLIMIT_AS": [
+      268435456,
+      268435456
+    ],
+    "RLIMIT_CORE": [
+      0,
+      0
+    ],
+    "RLIMIT_FSIZE": [
+      0,
+      0
+    ],
+    "RLIMIT_NOFILE": [
+      32,
+      32
+    ],
+    "RLIMIT_NPROC": [
+      16,
+      16
+    ]
+  },
+  "independent_review": [
+    "All35 sealed payloads and original13regularfile archive/12payloads verified against exact retained bytes",
+    "Sealed controls and actual plan match independently reviewed runtime freeze; one program/no compiler/link/retry",
+    "Actual395B ordered10PASS+COMPLETE matches original roster/source print literals and pre-run fixture; stderr empty",
+    "Every fixed group passes its declared healthy/reentry/poison/reset/isolation/move/lifetime/public zero-ledger checks; nested refusals are checked internally with exact reason strings",
+    "All80pre/postrecords match frozen80/79unique, including66original artifacts and named6directoryguards; separate3oldbufferdirectory checks preserve5files/modes/rosters before and after",
+    "All6applied process caps equal reviewed caps; no RSS/performance inference"
+  ],
+  "production_foundation_CPP_functions_actually_called": true,
+  "actual_lease_constructions_occurred": true,
+  "call_evidence_scope": "Complete fixed10 PASS output and reviewed source control flow corroborate actual calls and lease construction; Popen alone is not proof",
+  "exact_CPP_function_call_count": "UNMEASURED",
+  "exact_lease_construction_count": "UNMEASURED",
+  "provisional_status_marker_scope": "Retained lease_construction_observation string is the initial UNKNOWN marker; final actual_lease_constructions_occurred flag and exact output determine outcome",
+  "type_contracts_passed_at_prior_compile_only": 4,
+  "source_observation_fragments_not_dynamic_call_count": 204,
+  "compiler_calls": 0,
+  "link_calls": 0,
+  "actual_numeric_buffer_allocations": 0,
+  "capture_wait_interval_seconds": 0.0006154029979370534,
+  "capture_interval_scope": "Capture/wait begins after Popen; not complete program walltime, CPUtime or controller latency/deadline evidence",
+  "scope_excluded_calls": [
+    "old66/85/13reruns",
+    "OwnedNumericBuffer/reservation/charges/actual file or stream IO/threads",
+    "identity/context/preview/permissionfactory/SDK/Model/cost/affine/capture/controller/Parent/plant/mainexperiment/scorer"
+  ],
+  "limits": [
+    "Only10fixed public lease contract groups passed; private active state, concurrency/thread safety, actual IO/capture/publication and private allocator/RSS remain deferred",
+    "Public zero accounting shows no charges in these groups, not full process allocation or physical-memory evidence",
+    "No full actual-loader/OS/native/readset/generalABI or controller performance proof; no accepted complete robot trajectory"
+  ],
+  "publication": "Small actual stdout/groupresults/provenance, compact root review/storage and source-backed verification figure; raw host/native/cache/bin/control evidence excluded",
+  "phase5": "NOT_ACCEPTED",
+  "phase6": "NOT_STARTED",
+  "all_prior_sources_failures_checkerfreezes_and66_85_13_results_preserved": true
+}

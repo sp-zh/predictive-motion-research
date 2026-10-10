@@ -1,0 +1,89 @@
+{
+  "scope": "Finite Chunk IO lease verification; no phase acceptance",
+  "grain": "One fixed test group; nested refusal assertions are not separate observations",
+  "selection": "All ten frozen groups, original source order; no curated subset",
+  "rows": [
+    {
+      "area": "Healthy open / reopen",
+      "case_group_ids": [
+        "lease_open_close_reopen"
+      ],
+      "passed_groups": 1,
+      "planned_groups": 1
+    },
+    {
+      "area": "Reentry / poison / reset",
+      "case_group_ids": [
+        "lease_shared_alias_reentry",
+        "lease_repeat_reentry_poison",
+        "lease_close_reset_poison"
+      ],
+      "passed_groups": 3,
+      "planned_groups": 3
+    },
+    {
+      "area": "Case / batch isolation",
+      "case_group_ids": [
+        "lease_different_case_isolation",
+        "lease_different_batch_isolation"
+      ],
+      "passed_groups": 2,
+      "planned_groups": 2
+    },
+    {
+      "area": "Move / lifetime checks",
+      "case_group_ids": [
+        "lease_move_healthy_moved_source",
+        "lease_moved_source_dies_first",
+        "lease_move_poisoned_state",
+        "lease_outlives_case_batch_wrappers"
+      ],
+      "passed_groups": 4,
+      "planned_groups": 4
+    }
+  ],
+  "sources": {
+    "review": {
+      "file": "ROOT_LEASE_RUNTIME10_REVIEW.json",
+      "sha256": "9973d55e8a0467688ce6e2d0ec06e1b9ce307ff98a5e689005c36848ef6a19f3"
+    },
+    "actual_stdout": {
+      "file": "LEASE_BOUNDED10_STDOUT.txt",
+      "sha256": "5a7eae8e7ec1cb779c978a66e70be4f455f29451342a1a8b3067676561ee0ec3"
+    },
+    "original_roster": {
+      "file": "FIXED_LEASE_ROSTER_AND_PUBLIC_STEPS_V1.json",
+      "sha256": "ae0c68e6357198f9863ba7227e354279e838b3ab6790f93e45b2f022cb2f9e3a"
+    },
+    "group_results": {
+      "file": "LEASE_BOUNDED10_GROUP_RESULTS.json",
+      "sha256": "095043dd8424319a6702da9c16b9fae9eaacb2fa06f7a98ec972038cdf23a09a"
+    }
+  },
+  "renderer": {
+    "script": "plot_chunk_lease_bounded10.py",
+    "sha256": "4f6aa8a422d97bfa756ea59ccbf12561f726df6797e4c60305841e2950c2b9e4",
+    "matplotlib": "3.10.3",
+    "dpi": 180,
+    "figure_inches": [
+      13,
+      7
+    ],
+    "font": "DejaVu Sans",
+    "bar_color": "#2864B0"
+  },
+  "outputs": [
+    {
+      "file": "chunk_lease_bounded10_outcomes.png",
+      "bytes": 167773,
+      "sha256": "096d5b164c4c248444553ffc635dff663eacea735e10cafd82621f6a3a7881e1"
+    },
+    {
+      "file": "chunk_lease_bounded10_outcomes.svg",
+      "bytes": 9992,
+      "sha256": "eb56e1772801085ca1d365b3e4e0dcc77eea25fcd763210a4940c32356735631"
+    }
+  ],
+  "phase5": "NOT_ACCEPTED",
+  "phase6": "NOT_STARTED"
+}

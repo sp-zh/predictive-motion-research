@@ -1,0 +1,45 @@
+{
+  "scope": "One actual fixed10 ChunkIOLease/sharedcase health/poison/isolation/move/wrapperlifetime/publiczeroledger verification;not realIO/concurrency/controller/motion/phase acceptance",
+  "baseline": "5082c7c0651578fdb89ed0d054a92c7ea4f1bfe1",
+  "program_invocations": 1,
+  "fixed_case_groups": 10,
+  "passed_case_groups": 10,
+  "failed_case_groups": 0,
+  "source_fixture_sha256": {
+    "chunk_lease_v1.cpp": "355482c1cbea7dff1c25ee202c54191f04717bc9814b0ec2879e4f45a60462d7",
+    "lease_expected_v1.hpp": "a0e607a92b9eba8c658b4f7f8e6f095769591e2dc79f81c275b8e1d0090877fc",
+    "FIXED_LEASE_ROSTER_AND_PUBLIC_STEPS_V1.json": "ae0c68e6357198f9863ba7227e354279e838b3ab6790f93e45b2f022cb2f9e3a",
+    "FIXED_FUTURE_EXPECTED_STDOUT_V1.txt": "5a7eae8e7ec1cb779c978a66e70be4f455f29451342a1a8b3067676561ee0ec3",
+    "LEASE_REASONS_AND_TYPE_CONTRACT_V1.json": "dad935f4c8bc7f92f05137cea9cb0551072d2f0ad85620d80e0e39237845be70"
+  },
+  "actual_object_sha256": "ce3c6951b2eb0261c8c494bfb661a31a80e51ecaaeabd8413a8a07b226bcda50",
+  "actual_binary_sha256": "1be89142928eaeaa3560c203043d82428fde8fca34e1db45ceb55cc86f4a6570",
+  "stdout": {
+    "path": "LEASE_BOUNDED10_STDOUT.txt",
+    "bytes": 395,
+    "sha256": "5a7eae8e7ec1cb779c978a66e70be4f455f29451342a1a8b3067676561ee0ec3"
+  },
+  "stderr_bytes": 0,
+  "expected_data_frozen_before_outputs": true,
+  "group_results_file": "LEASE_BOUNDED10_GROUP_RESULTS.json",
+  "group_results_sha256": "095043dd8424319a6702da9c16b9fae9eaacb2fa06f7a98ec972038cdf23a09a",
+  "selection": "All10originalgroups in one admitted attempt;no omittedfailedcases. Nestedrequiredrefusal assertions are not additional experiments.",
+  "production_CPP_calls_occurred": true,
+  "exact_production_CPP_call_count": "UNMEASURED",
+  "actual_lease_constructions_occurred": true,
+  "exact_lease_construction_count": "UNMEASURED",
+  "occurrence_evidence": "Exactordered10PASS+sourceflow validates realCPP/leaseconstruction;not Popen alone. Provisional lease_construction_observation string preserved as initial marker;final actuallease flags and outputs establish occurrence.",
+  "OwnedNumericBuffer_materializations": 0,
+  "real_file_or_stream_IO_calls": 0,
+  "threads_or_concurrency_tests": 0,
+  "scope_limits": [
+    "Only public sameCase/zeroledgers/healthy/refusal/reasonstring/move/destruction/reset/wrapperlifetime assertions",
+    "Privateactivebool/concurrency/capture/realIO/allocator/RSS deferred",
+    "4typeconstraints previouslycompiledpass,not countedasruntimegroups",
+    "204sourceobservationfragments not dynamiccallcount",
+    "Capture interval starts afterPopen;not full runtime/CPU/controller timing",
+    "Native/loader/OS/RSS/ABI/robotmotion not established"
+  ],
+  "phase5": "NOT_ACCEPTED",
+  "phase6": "NOT_STARTED"
+}

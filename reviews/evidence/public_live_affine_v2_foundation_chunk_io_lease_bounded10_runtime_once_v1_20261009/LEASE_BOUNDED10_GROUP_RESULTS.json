@@ -1,0 +1,81 @@
+{
+  "program_invocations": 1,
+  "fixed_case_group_count": 10,
+  "groups": [
+    {
+      "case_group_id": "lease_open_close_reopen",
+      "observed_status": "PASS",
+      "declared_public_checks": "Healthy open/destruction/reopen,reason null",
+      "scope": "Fixed public lease/zeroledger/identity/move/lifetime checks;not realIO/concurrency/privateactive/RSS proof",
+      "nested_required_refusals_are_not_extra_observations": true
+    },
+    {
+      "case_group_id": "lease_shared_alias_reentry",
+      "observed_status": "PASS",
+      "declared_public_checks": "SameCase reflexivity/symmetric aliases,aliasreentry poisons original",
+      "scope": "Fixed public lease/zeroledger/identity/move/lifetime checks;not realIO/concurrency/privateactive/RSS proof",
+      "nested_required_refusals_are_not_extra_observations": true
+    },
+    {
+      "case_group_id": "lease_repeat_reentry_poison",
+      "observed_status": "PASS",
+      "declared_public_checks": "Repeated reentry preserves poison and firstreason",
+      "scope": "Fixed public lease/zeroledger/identity/move/lifetime checks;not realIO/concurrency/privateactive/RSS proof",
+      "nested_required_refusals_are_not_extra_observations": true
+    },
+    {
+      "case_group_id": "lease_close_reset_poison",
+      "observed_status": "PASS",
+      "declared_public_checks": "Poisoned destruction then healthynewlease resetsreason",
+      "scope": "Fixed public lease/zeroledger/identity/move/lifetime checks;not realIO/concurrency/privateactive/RSS proof",
+      "nested_required_refusals_are_not_extra_observations": true
+    },
+    {
+      "case_group_id": "lease_different_case_isolation",
+      "observed_status": "PASS",
+      "declared_public_checks": "Differentcases samebatch isolate poison",
+      "scope": "Fixed public lease/zeroledger/identity/move/lifetime checks;not realIO/concurrency/privateactive/RSS proof",
+      "nested_required_refusals_are_not_extra_observations": true
+    },
+    {
+      "case_group_id": "lease_different_batch_isolation",
+      "observed_status": "PASS",
+      "declared_public_checks": "Differentbatches isolate poison",
+      "scope": "Fixed public lease/zeroledger/identity/move/lifetime checks;not realIO/concurrency/privateactive/RSS proof",
+      "nested_required_refusals_are_not_extra_observations": true
+    },
+    {
+      "case_group_id": "lease_move_healthy_moved_source",
+      "observed_status": "PASS",
+      "declared_public_checks": "Movetargethealthy/source requireHealthy moved-case refusal and nullreason",
+      "scope": "Fixed public lease/zeroledger/identity/move/lifetime checks;not realIO/concurrency/privateactive/RSS proof",
+      "nested_required_refusals_are_not_extra_observations": true
+    },
+    {
+      "case_group_id": "lease_moved_source_dies_first",
+      "observed_status": "PASS",
+      "declared_public_checks": "Movedsource diesbeforetarget;target remainshealthy then poisons;reset reopens",
+      "scope": "Fixed public lease/zeroledger/identity/move/lifetime checks;not realIO/concurrency/privateactive/RSS proof",
+      "nested_required_refusals_are_not_extra_observations": true
+    },
+    {
+      "case_group_id": "lease_move_poisoned_state",
+      "observed_status": "PASS",
+      "declared_public_checks": "Move transferspoison,target refuses/source moved-case distinctreason",
+      "scope": "Fixed public lease/zeroledger/identity/move/lifetime checks;not realIO/concurrency/privateactive/RSS proof",
+      "nested_required_refusals_are_not_extra_observations": true
+    },
+    {
+      "case_group_id": "lease_outlives_case_batch_wrappers",
+      "observed_status": "PASS",
+      "declared_public_checks": "Lease/sharedobserver survive case/batch wrapperdestruction,reentry/reset/reopen",
+      "scope": "Fixed public lease/zeroledger/identity/move/lifetime checks;not realIO/concurrency/privateactive/RSS proof",
+      "nested_required_refusals_are_not_extra_observations": true
+    }
+  ],
+  "expected_outcome_counts": {
+    "PUBLIC_LEASE_CONTRACT": 10
+  },
+  "all_required_group_refusals_checked_by_original_source": true,
+  "not_motion_or_controller_evidence": true
+}
