@@ -1,0 +1,15 @@
+{
+  "inline_vectors": "State30 contains four inline std::array<double,7> plus two scalar doubles;these inlinearrays permitted,not dynamic OwnedNumericBuffer",
+  "literalheader": "30 doubleliteral scalars plus30 boolsignmask;no State30 or100state fixturearray stored",
+  "logical_peak_bound": 4,
+  "accounting": "One inputState30;validateAlgebraTestInitial local out.point_;source-visible invoke return/copy storage;caller wrapper.point_. Atmost4source-visible logical State30 positions if returncopies coexist. C++17prvalue elision may reduce actualobjects;not compiler/RSS/allocation proof. No separate expectedState30;point() onlyborrowed whilewrapperalive.",
+  "failedcases": "Single input initializedinsideinnermostcase;released before nextiteration;validator fails finiteState before constructing localout",
+  "positivecases": "Inputplusreturnedwrappervalue,oraclecomparesstaticliteral scalars without extraState30",
+  "type_traits": [
+    "!is_convertible<AlgebraTestInitial,LiveActualContext>",
+    "!is_constructible<LiveActualContext,AlgebraTestInitial>",
+    "!is_invocable<decltype(&first4msRequest),const AlgebraTestInitial&,const JointVector&,double>"
+  ],
+  "type_expression_scope": "Unevaluatedcompiletimeexpressions;nevercallfirst4msRequest;uncompiledinthisproposal",
+  "physical_scope": "Arbitraryfinite shiftedq/s/r includingnegative r are coordinates only,not physicaladmission/liveobservations/Model/controllerpermission"
+}

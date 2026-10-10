@@ -1,0 +1,46 @@
+{
+  "scope": "CANDIDATE_ONLY_NOT_DISPATCHED",
+  "program_invocations": 1,
+  "argv": "Futurefrozenbinary noargs",
+  "environment": {
+    "PATH": "/usr/bin:/bin",
+    "LANG": "C",
+    "LC_ALL": "C",
+    "TZ": "UTC"
+  },
+  "inherit_environment": false,
+  "stdin": "DEVNULL",
+  "wall_seconds": 15,
+  "rlimits": {
+    "CPU": 10,
+    "AS": 268435456,
+    "CORE": 0,
+    "FSIZE": 0,
+    "NOFILE": 32,
+    "NPROC": 16
+  },
+  "limits_application": "Clamp stricter inheritedcaps",
+  "raw_combined_cap_bytes": 131072,
+  "fresh_emptycwd": true,
+  "expected_exit_code": 0,
+  "expected_stderr_bytes": 0,
+  "expected_stdout_bytes": 413,
+  "expected_stdout_sha256": "7cdfc5b3ef402d90316a9f35b87252463f2d0ba0c16b25d582de01f0e0a42e74",
+  "ordered_groups": [
+    "initial_zero_copy",
+    "initial_literal_tuple_copy",
+    "initial_source_mutation_independence",
+    "initial_finite_shift_negative_r",
+    "initial_signed_zero_copy",
+    "initial_q_nonfinite",
+    "initial_v_nonfinite",
+    "initial_C_nonfinite",
+    "initial_w_nonfinite",
+    "initial_progress_nonfinite",
+    "initial_joint_over_progress_priority"
+  ],
+  "expected_target_entries": 97,
+  "countclosure": "Per-group invoke entries,11completedgroups,97attemptedtargetentries beforeCOMPLETE;targethardcap97",
+  "failure_policy": "Oneattempt firstnonzero/signal/timeout/cap/drift/fixture/countmismatch STOP retainrawprefix/status/failure,neverrepair/rerun/Oraclechange",
+  "gates": "Source/fixture/protocolRootreview+dualarchive+Gitbackup,then separate sourcecompilefreeze/dispatch,linkfreeze/dispatch,runtimebinary/native/protocolfreeze/dispatch;no currentexecution"
+}
