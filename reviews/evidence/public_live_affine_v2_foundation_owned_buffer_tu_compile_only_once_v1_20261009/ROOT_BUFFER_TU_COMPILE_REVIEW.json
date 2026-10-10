@@ -1,0 +1,91 @@
+{
+  "decision": "PASS_ONE_OWNED_BUFFER_TU_COMPILE_ONLY_NOT_LINK_OR_RUNTIME",
+  "baseline": "e065e218932dde8732c3fb3bc52d3b0bc7ad2d66",
+  "original_ready_sha256": "61789afd90004911c47b7f451a057f071cafa083226fab73cd9d74b9a3258d11",
+  "packet_payloads_verified": 31,
+  "production_and_prior_guards_verified": 191,
+  "sealed_controls_byte_identical_to_reviewed_freeze": true,
+  "compile_invocations": 1,
+  "exit_code": 0,
+  "signal_number": null,
+  "timeout_or_cap_stop": false,
+  "automatic_retries": 0,
+  "raw_stdout_bytes": 0,
+  "raw_stderr_bytes": 948,
+  "diagnostics": {
+    "warning_count": 1,
+    "note_count": 1,
+    "warning": "-Wself-move at intentional x=std::move(x), source line56",
+    "sha256": "69500a189802cc130fba76be3d95f79256ce4966504bede75a730b2db2b106c4",
+    "assessment": "Required selfmove test is intentional. Production move assignment explicitly checks this != &other. Compiler exited0; diagnostics retained; no suppression or source change. Runtime behavior is still unverified."
+  },
+  "postprocessing_failure_retained": {
+    "stage": "Local postprocessing, not compiler execution",
+    "exception": "AssertionError",
+    "cause": "Inherited pricing postprocessing asserted empty stderr; corrected metadata condition only, original script/failure retained",
+    "compiler_retries": 0
+  },
+  "object": {
+    "class": "ELF64",
+    "type": "ET_REL",
+    "machine": "AMD64",
+    "entry": 0,
+    "program_headers": 0,
+    "sections": 86,
+    "bytes": 64224,
+    "sha256": "979d6fcfe9a750a1d065cc18c637708e03f632565d963574b71690264b541b13"
+  },
+  "depfile_paths_verified": 229,
+  "new_post_compile_headers": 0,
+  "frozen_input_prepost_records_matched": 360,
+  "prior_unique_project_artifacts_unchanged": 49,
+  "prior_library_objects": 20,
+  "prior_static_archives": 14,
+  "root_independent_remote_byte_mode_recheck": {
+    "records_rechecked": 411,
+    "compile_cwd_empty": true,
+    "readonly_source_directory": true,
+    "compiler_or_program_invocations": 0
+  },
+  "original_executor_archive_all14_regular_files_and13_payloads_verified": true,
+  "compiler_profile": "Reviewed GCC13/O2/DNDEBUG/fno-fast-math/ffp-contract=off/C++17/warnings; single-cTU/fixed4fieldenv/120s/parallel1/cap1MiB",
+  "candidate_limits": {
+    "CPU_seconds": [
+      110,
+      110
+    ],
+    "AS_bytes": [
+      4294967296,
+      4294967296
+    ],
+    "CORE_bytes": [
+      0,
+      0
+    ],
+    "FSIZE_bytes": [
+      134217728,
+      134217728
+    ],
+    "NOFILE": [
+      64,
+      64
+    ]
+  },
+  "limits": [
+    "13 proposed buffer groups compiled but none executed; no buffer allocation/value/move/ledger/refusal runtime results",
+    "Finite frozen and depfile identities do not establish full OS/include/native/readset/RSS closure",
+    "Compile elapsed time is a development observation, not controller timing or deadline evidence",
+    "Private destruction order remains a static source fact; bad_alloc and host-size overflow remain deferred",
+    "Prior pricing matrix/cumulative bounds and conservative scalar output allowance retain their limited scope"
+  ],
+  "buffer_case_groups_executed": 0,
+  "actual_owned_numeric_buffer_allocations": 0,
+  "link_calls": 0,
+  "program_runs": 0,
+  "production_CPP_function_calls": 0,
+  "phase5": "NOT_ACCEPTED",
+  "phase6": "NOT_STARTED",
+  "next_unit": "Separate reviewed single-link input preparation; no link/runtime admitted by compilation success",
+  "publication": "Compact authored root review/storage only; raw controls/object/depfile/host indices excluded",
+  "existing66_and85_results_visuals_sources_and_failures_preserved": true
+}
