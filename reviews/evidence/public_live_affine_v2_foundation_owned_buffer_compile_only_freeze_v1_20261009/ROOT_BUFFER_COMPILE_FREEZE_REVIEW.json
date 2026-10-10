@@ -1,0 +1,68 @@
+{
+  "decision": "PASS_OWNED_BUFFER_SINGLE_TU_COMPILE_FREEZE_ONLY_NOT_COMPILED_LINKED_RUN",
+  "baseline": "8819939bd87326630e70123c2555090d3b43f242",
+  "ready_sha256": "2826df3bc84c875bfa1f284f578608e13fda59a7c77cc9067154622e4586bba5",
+  "original_payloads_verified": 7,
+  "production_and_prior_checkpoint_guards_verified": 189,
+  "current_known_compile_inputs": 358,
+  "test_sources": 2,
+  "historical_origins": {
+    "FULL_BUILD_PREFROZEN_2949": 337,
+    "FULL_BUILD_POST_FIRST_OBSERVATION_NOT_PRIOR_PREFROZEN": 19,
+    "POST_COMPILE_FIRST_OBSERVATION_NOT_PRIOR_PREFROZEN": 2
+  },
+  "root_independent_remote_recheck": {
+    "current_records_verified": 360,
+    "readonly_test_files0444": 2,
+    "source_directory0555": true,
+    "parent_only_source": true,
+    "compile_attempt_absent": true,
+    "compiler_calls": 0
+  },
+  "independent_review": [
+    "All source bytes match reviewed public13-group source proposal V2;readonly2files/directory and source-only parent independently rechecked",
+    "358 known identities match prior frozen356 plus2 explicitly post-first headers;original origin labels unchanged",
+    "Compile argv reviewed as one -c TU with originalGCC profile/fixed4-field environment/fresh output/120s/parallel1/cap1MiB",
+    "Harness is byte-identical to reviewed prior pattern after exact file/digest renames and signal reporting;no other behavior change",
+    "Explicit dispatch argument only;prepost identities/raw streams/partial object+depfile/first-failure stop;no link or executable run path"
+  ],
+  "candidate_limits": {
+    "CPU_seconds": [
+      110,
+      110
+    ],
+    "AS_bytes": [
+      4294967296,
+      4294967296
+    ],
+    "CORE_bytes": [
+      0,
+      0
+    ],
+    "FSIZE_bytes": [
+      134217728,
+      134217728
+    ],
+    "NOFILE": [
+      64,
+      64
+    ]
+  },
+  "descriptor_scope_correction": "Sealed executor/template pricing labels are inherited text only;actual twofiles and argv are reviewed owned-buffer V2;allsealed bytes retained unchanged",
+  "actual_owned_numeric_buffer_allocations": 0,
+  "compiler_queries": 0,
+  "compiler_calls": 0,
+  "link_calls": 0,
+  "test_runs": 0,
+  "production_CPP_function_calls": 0,
+  "next_admitted_unit": "Separate exact one compile-only harness invocation after verified milestone backup;no link/runtime/retry",
+  "limits": [
+    "Actual newTU include paths must remain postcompile observations until checked;finite known manifest is not full OS/native/include/readset/RSS closure",
+    "13buffer groups remain unexecuted;64elements perarray/128simultaneous,privateorder/OOM/hostsize deferred and previous pricinglimits preserved",
+    "No Model/SDK/cost or affine evaluation/permission factory/plant/main/scorer"
+  ],
+  "publication": "Compact authored root review/storage only;exact hostplan/harness/control/raw dependency identities excluded",
+  "phase5": "NOT_ACCEPTED",
+  "phase6": "NOT_STARTED",
+  "all_prior66_results_figures_sources_and_failures_preserved": true
+}
