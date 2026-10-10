@@ -1,0 +1,102 @@
+{
+  "decision": "PASS_FIXED85_RESOURCE_PRICING_RUNTIME_ONLY_NOT_PHASE_ACCEPTANCE",
+  "baseline": "4bcee7ea2a9bae2ebd991735fbddac3cf78aa43b",
+  "ready_sha256": "2932ad2f5e59d350a042ff13254670406b2f8447517533f189a66958d589033d",
+  "packet_payloads_verified": 31,
+  "production_and_prior_guards_verified": 168,
+  "program_invocations": 1,
+  "exit_code": 0,
+  "signal_number": null,
+  "timeout_or_output_stop": false,
+  "automatic_retries": 0,
+  "case_groups_passed": 85,
+  "case_groups_failed": 0,
+  "expected_outcome_counts": {
+    "ACCEPT": 51,
+    "REQUIRED_REFUSAL": 34
+  },
+  "required_first_refusal_reason_counts": {
+    "whole-request output quota exceeded": 11,
+    "whole-request live quota exceeded": 2,
+    "cost term/row envelope mismatch": 5,
+    "largest term cannot exceed total rows": 1,
+    "nonempty data with zero terms": 2,
+    "addition envelope exceeded": 2,
+    "addition coefficient rows not dimension30": 3,
+    "addition record/coefficient envelope mismatch": 5,
+    "unknown capture mode": 2,
+    "unknown numeric encoding": 1
+  },
+  "actual_stdout_bytes": 2514,
+  "actual_stdout_sha256": "cdb0ce6db16e42ec679fd160c2ae95da8eb8eaa1a2f32b81cf29e1a9358d6dd7",
+  "stderr_bytes": 0,
+  "expected_stdout_frozen_before_execution": true,
+  "exact_ordered_stdout_matched": true,
+  "binary_sha256": "e802061074ea940d11edeb214fcb226c601be54ceed0dd884b88bc13d16a75ed",
+  "prepost_identity_records_matched": 63,
+  "unique_requested_paths_matched": 62,
+  "original_artifact_guard_records": 49,
+  "root_independent_remote_recheck": {
+    "current_records_verified": 63,
+    "unique_paths": 62,
+    "readonly_directories": 5,
+    "named_preload_absence": true,
+    "cwd_empty": true,
+    "program_calls": 0
+  },
+  "applied_child_limits": {
+    "RLIMIT_CPU": [
+      10,
+      10
+    ],
+    "RLIMIT_AS": [
+      268435456,
+      268435456
+    ],
+    "RLIMIT_CORE": [
+      0,
+      0
+    ],
+    "RLIMIT_FSIZE": [
+      0,
+      0
+    ],
+    "RLIMIT_NOFILE": [
+      32,
+      32
+    ],
+    "RLIMIT_NPROC": [
+      16,
+      16
+    ]
+  },
+  "independent_review": [
+    "All31packetpayloads and original13regularfile archive/12payloads verified with exact retained bytes",
+    "Sealedcontrols and actualplan byte-identical to independently reviewed runtimefreeze;oneinvocation/no compiler/link/retry",
+    "Actual2514B ordered85PASS+COMPLETE output matches independently derived originalroster/source literals and prerunfixture;stderr empty",
+    "51accept checks exercise11Count+2enumpublicgetters;34refusals require exact first invalid_argument reason,including2wholelive/11wholeoutput/21domain-enum groups",
+    "63pre/postrecords match originalfrozen63/62unique,including49originalartifacts;root independentlycurrent rehashed modes/absences/readonlydirs/cwd",
+    "All6appliedcaps equal reviewedcaps;no performance orRSS inference"
+  ],
+  "production_foundation_pricing_functions_actually_called": true,
+  "exact_CPP_function_call_count_measured": false,
+  "compiler_calls": 0,
+  "link_calls": 0,
+  "capture_wait_interval_seconds": 0.0006496109999716282,
+  "capture_interval_scope": "Observer capture/wait begins after Popen;not completeprogram walltime,CPUtime orcontroller latency/deadline evidence",
+  "scope_excluded_calls": [
+    "old66rerun/CaseBudget/sharedledger/lease tests",
+    "identity/context/preview/permissionfactory/OwnedNumericBuffer materialization",
+    "SDK/Model/cost/affine/capture/controller/Parent/plant/mainexperiment/scorer"
+  ],
+  "limits": [
+    "Only85fixedpublicpricing/getter/refusalgroups passed;privatebank components remain derivationpremises,not individually observed runtime results",
+    "Independentmatrix/cumulativecap refusals remain STATIC_BOUND_DEFERRED;conservative outputscalar allowance is not exact writerbyte evidence",
+    "No fullactual-loader/OS/native/readset/RSS/generalABI orphysicalRAM/controllerperformance proof",
+    "No acceptedcomplete robottrajectory;Phase5 remains NOT_ACCEPTED"
+  ],
+  "publication": "Small actualstdout/groupresults/provenance,compact rootreview/storage and actualverificationfigure;raw host/native/cache/bin/control evidence excluded",
+  "phase5": "NOT_ACCEPTED",
+  "phase6": "NOT_STARTED",
+  "all_prior_sources_failures_checkerfreezes_and66results_preserved": true
+}

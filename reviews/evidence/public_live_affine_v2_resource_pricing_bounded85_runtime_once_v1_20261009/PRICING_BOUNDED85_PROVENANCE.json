@@ -1,0 +1,31 @@
+{
+  "scope": "One actual85group ResourcePlan publicpricing/refusal verification;notmotion/controller/performance/fullphase evidence",
+  "baseline": "4bcee7ea2a9bae2ebd991735fbddac3cf78aa43b",
+  "program_invocations": 1,
+  "fixed_case_groups": 85,
+  "passed_case_groups": 85,
+  "failed_case_groups": 0,
+  "expected_accept": 51,
+  "expected_refuse": 34,
+  "source_fixture_sha256": {
+    "resource_pricing_v1.cpp": "f8a792be3e57bd820275373a82563061a666012ea95ca5a02cd3b052d8fc2118",
+    "pricing_expected_v1.hpp": "3a2aaac6204a89867ac4b34cea55c790ddd39cbf55118264d75861f5cc1b6f9b",
+    "FIXED_PRICING_CASES_AND_DIMENSIONAL_LEDGER_V1.json": "1fed2f7afdc7a5a79763214479fa0866e5bd8fad0066db0372a168ea0b7c54c5",
+    "REACHABILITY_AND_CONTRACT_LIMITS_V1.json": "913ff4f3e33316f83549098c8f84a4180454eb825e8c2cb94b965576126f3eb7"
+  },
+  "actual_object_sha256": "0d0905f45f0e9a0b7b2ac61a62cb4294f1f9faee92aefde8b2085e922cdc9b48",
+  "actual_binary_sha256": "e802061074ea940d11edeb214fcb226c601be54ceed0dd884b88bc13d16a75ed",
+  "stdout": {
+    "path": "PRICING_BOUNDED85_STDOUT.txt",
+    "bytes": 2514,
+    "sha256": "cdb0ce6db16e42ec679fd160c2ae95da8eb8eaa1a2f32b81cf29e1a9358d6dd7"
+  },
+  "stderr_bytes": 0,
+  "expected_data_frozen_before_outputs": true,
+  "group_results_file": "PRICING_BOUNDED85_GROUP_RESULTS.json",
+  "group_results_sha256": "4699f9daf919f7dd761fba1a454367e19a61783bccb5e161b3484289c901a217",
+  "selection": "Alloriginal85groups inoneadmittedattempt;no omittedfailedcases or curatedseeds.34expectedrefusal groups successfullymatchedfirstsourcecondition.",
+  "scope_limits": "Only public11Count+2enumgetters andfrozenrefusalreasons observed. Privatebanks derivationonly;matrix/cumulativecap independentrefusals STATIC_BOUND_DEFERRED;scalaroutput conservativeallowance remains. No cost/affine/Model/SDK/controller/RSS/exactwriterbyte evidence.",
+  "phase5": "NOT_ACCEPTED",
+  "phase6": "NOT_STARTED"
+}

@@ -1,0 +1,67 @@
+{
+  "scope": "Finite ResourcePlan pricing verification; no phase acceptance",
+  "grain": "One fixed test group; nested refusal assertions are not separate observations",
+  "selection": "All 85 frozen groups, original source order; no curated subset",
+  "rows": [
+    {
+      "area": "Accepted plans: public getters",
+      "passed_groups": 51,
+      "planned_groups": 51
+    },
+    {
+      "area": "Required refusal: live quota",
+      "passed_groups": 2,
+      "planned_groups": 2
+    },
+    {
+      "area": "Required refusal: output quota",
+      "passed_groups": 11,
+      "planned_groups": 11
+    },
+    {
+      "area": "Required refusal: domain / enums",
+      "passed_groups": 21,
+      "planned_groups": 21
+    }
+  ],
+  "sources": {
+    "review": {
+      "file": "ROOT_PRICING_RUNTIME85_REVIEW.json",
+      "sha256": "303dfdd482375fc39c3cb7bc62a8afd22ba17257ccc59465af124dae80368297"
+    },
+    "actual_stdout": {
+      "file": "PRICING_BOUNDED85_STDOUT.txt",
+      "sha256": "cdb0ce6db16e42ec679fd160c2ae95da8eb8eaa1a2f32b81cf29e1a9358d6dd7"
+    },
+    "original_roster": {
+      "file": "FIXED_PRICING_CASES_AND_DIMENSIONAL_LEDGER_V1.json",
+      "sha256": "1fed2f7afdc7a5a79763214479fa0866e5bd8fad0066db0372a168ea0b7c54c5"
+    }
+  },
+  "renderer": {
+    "script": "plot_pricing_bounded85.py",
+    "sha256": "23e7ab708a2254b57a946ab5d4505ab543846e26bcce390bf421af07d0408e69",
+    "matplotlib": "3.10.3",
+    "dpi": 180,
+    "figure_inches": [
+      13,
+      7
+    ],
+    "font": "DejaVu Sans",
+    "bar_color": "#2864B0"
+  },
+  "outputs": [
+    {
+      "file": "resource_pricing_bounded85_outcomes.png",
+      "bytes": 178335,
+      "sha256": "4620c3f36501e57a6db8f4c495911a18bc9e3ea27df168c649654266be7526a4"
+    },
+    {
+      "file": "resource_pricing_bounded85_outcomes.svg",
+      "bytes": 10617,
+      "sha256": "f98571db6d1719cb217d1df4f7459317eb2c2c2e2c9295f42b38b6e0f49a9541"
+    }
+  ],
+  "phase5": "NOT_ACCEPTED",
+  "phase6": "NOT_STARTED"
+}
