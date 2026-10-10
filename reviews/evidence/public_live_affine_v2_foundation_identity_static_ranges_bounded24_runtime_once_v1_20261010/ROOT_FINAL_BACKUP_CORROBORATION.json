@@ -1,0 +1,31 @@
+{
+  "scope": "Final read-only corroboration of existing bounded24 checkpoint; immutable primary archive unchanged",
+  "checkpoint_verified": "9a10da1a89e130c043f3f5b5fc81c6aa28d3eb90",
+  "actual_Git_files_verified": 11,
+  "unchanged_guards_verified": 315,
+  "primary_archive_payloads_verified_each_copy": 48,
+  "final_corroboration_supplement": {
+    "file": "identity-runtime24-final-corroboration.tar.gz",
+    "bytes": 5074,
+    "sha256": "437fe69ad50436941609a6106e7c13bd6faaf95e517e95d00fb226d8bc64792b",
+    "regular_files": 6,
+    "payloads": 5,
+    "inner_ready_sha256": "a1012eba0de818de4257ce071420bd5d4570f0a6c19f6e83f4573eb8b2bbb07a"
+  },
+  "Mac_archive": "/Users/uot/Documents/ChatGPT/ros/results/phase5-reference/identity-bounded24-runtime-once-v1-20261010/root-retained-final-corroboration1/identity-runtime24-final-corroboration.tar.gz",
+  "Dell_archive": "/mnt/d/CodexTransfer/projects/predictive_motion/checkpoints/identity-bounded24-runtime-once-v1-20261010/root-retained-final-corroboration1/identity-runtime24-final-corroboration.tar.gz",
+  "Mac_verification": {
+    "archive_sha256": "437fe69ad50436941609a6106e7c13bd6faaf95e517e95d00fb226d8bc64792b",
+    "payloads_verified": 5
+  },
+  "Dell_verification": {
+    "archive_sha256": "437fe69ad50436941609a6106e7c13bd6faaf95e517e95d00fb226d8bc64792b",
+    "payloads_verified": 5
+  },
+  "retained_failure": "Local verifier V1 original roster path FileNotFoundError before any Dell invocation; explicit source_protocol_v3 path in fresh V2 passed. No target failure or test rerun.",
+  "program_test_invocations_added": 0,
+  "compiler_calls_added": 0,
+  "link_calls_added": 0,
+  "phase5": "NOT_ACCEPTED",
+  "phase6": "NOT_STARTED"
+}
