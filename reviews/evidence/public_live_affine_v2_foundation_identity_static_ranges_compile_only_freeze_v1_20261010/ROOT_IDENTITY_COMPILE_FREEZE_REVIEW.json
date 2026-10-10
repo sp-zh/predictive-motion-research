@@ -1,0 +1,96 @@
+{
+  "decision": "PASS_IDENTITY_STATIC_RANGE_READONLY_STAGING_AND_COMPILE_PREPARATION_ONLY_NOT_COMPILED_LINKED_RUN",
+  "baseline": "0ebcbb0636054097bfc4abd4eec31a53eb621169",
+  "ready_sha256": "d5ade76b4e48cff81357d460d17996d59887d7cfe5b04f86ad81ab885d42f36a",
+  "original_payloads_verified": 14,
+  "production_and_prior_guards_verified": 303,
+  "readonly_native_bytecopies": 19,
+  "source_files": 2,
+  "source_bytes": 9935,
+  "fixture_files": 17,
+  "fixture_bytes": 3341,
+  "copy_file_modes": "0444",
+  "new_child_directories0555": 2,
+  "new_parent_mode_preserved": "0775",
+  "parent_initial_roster_only_source_version1": true,
+  "known_compile_input_records": 368,
+  "historical_observation_origin_counts": {
+    "FULL_BUILD_PREFROZEN_2949": 337,
+    "FULL_BUILD_POST_FIRST_OBSERVATION_NOT_PRIOR_PREFROZEN": 19,
+    "POST_COMPILE_FIRST_OBSERVATION_NOT_PRIOR_PREFROZEN": 12
+  },
+  "future_primary_prepost_roles": 387,
+  "separate_prior_artifact_records": 76,
+  "separate_header_text_observation_records": 3,
+  "prior_readonly_exact_directory_guards": 12,
+  "future_guarded_parent_mode_roster_scope": "Parent0775 is not readonly;initialonly source-version1;harness afterexclusive attemptcreation permits solelycompile-attempt1 addition.12prior+2childreadonly directories unchanged. Serializeddirectoryguardrecords retain originaltemplates,not a claim of unchangedparentactualroster.",
+  "named_absences": 4,
+  "root_independent_remote_recheck": {
+    "current_records_verified": 466,
+    "primary_future_records": 387,
+    "separate_artifact_records": 76,
+    "separate_header_text_records": 3,
+    "prior_readonly_directories": 12,
+    "new_readonly_child_directories": 2,
+    "parent_mode": "0o775",
+    "parent_exact_initial_roster": true,
+    "named_absences": 4,
+    "compile_attempt_absent": true,
+    "compiler_calls": 0
+  },
+  "independent_review": [
+    "19exclusivecopies match originalreviewedV3 source/17fixturebytes andhashes;14readonly rosters+freshparent0775/currentabsence verified",
+    "368reusedcompiler/header/native records retain337prefrozen19fullbuildpost12previouscompilepost labels;no retrospective prefreeze",
+    "GCC13single-cTU argv includes one correctlyquoted IDENTITY_FIXTURE_ROOT absolute literal matchingstagedfixtures;originalFP/NDEBUG/C++17warnings/fixed4env/exclusiveoutputlimits retained",
+    "Harness matches reviewedinitial pattern after names/pins/fixture-roster and preciselyreviewed separate guard prepost/successclosure additions;ASTonly",
+    "76oldartifactrecords match previousinitialruntime original75plus readonlyinitialbinarycopy",
+    "ThreeinstalledYAML headers retained as exactread-only text observations;notdirectCPPincludes or loadedlibrary/versionbinding"
+  ],
+  "conditional_yaml_header_text_scope": "Matched .nan/.inf/-.inf conversion strings and constmissingkeyZombie/InvalidNode/IsSequence-Type sourcechain. No YAML parser/nativeversionquery/OpenSSL execution. Futurelink/runtime exactlibrary/headerbinding stillrequired.",
+  "candidate_limits": {
+    "CPU_seconds": [
+      110,
+      110
+    ],
+    "AS_bytes": [
+      4294967296,
+      4294967296
+    ],
+    "CORE_bytes": [
+      0,
+      0
+    ],
+    "FSIZE_bytes": [
+      134217728,
+      134217728
+    ],
+    "NOFILE": [
+      64,
+      64
+    ]
+  },
+  "compiler_queries": 0,
+  "compiler_calls": 0,
+  "link_calls": 0,
+  "program_runs": 0,
+  "production_CPP_API_calls": 0,
+  "planned_groups_still_unexecuted": 24,
+  "planned_target_entries_still_unexecuted": 29,
+  "expected714bytes_still_future_output": true,
+  "limits": [
+    "Sourcebytecopy/preparation is not compiler/function/runtime validation",
+    "368historicalrecords pluscopies are finiteknown inputs,notallactualfutureincludes orwholeOS/native/readset/RSSclosure",
+    "Installedheadertextnotactualversion/libraryABI/loadeddependencyproof",
+    "NoactualprojectfixtureIO/hash/parser/API calls;noCurrentproducer/memberbudget/LiveActual/first4ms/Model/SDK/affine/cost/capture/Parent/plant/main/scorer"
+  ],
+  "publication": "Compactrootreview/storage only;hostplan/control/inputs/headertext/diff/rawidentities excluded",
+  "next_scope": "Separateexactonecompile-only invocationafterverifiedbackup;no link/runtime/retry/fixture/sourcechange",
+  "phase5": "NOT_ACCEPTED",
+  "phase6": "NOT_STARTED",
+  "all_previous_actual_results_figures_sources_failures_and_immutable_checkers_preserved": true,
+  "root_static_adapter_schema_corrections_retained": [
+    "Rawstaging headerrecords include base64;manifest drops only those fields and keepsbyteidentity,rawtextchecked independently",
+    "Transportstatus usesreturncode ratherthancompilerexit_code;exactstatuschecked"
+  ],
+  "root_adapter_corrections_compiler_or_project_calls": 0
+}
