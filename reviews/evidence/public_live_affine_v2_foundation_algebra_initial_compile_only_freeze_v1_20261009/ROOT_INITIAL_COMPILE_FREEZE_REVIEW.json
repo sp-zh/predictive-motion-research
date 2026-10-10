@@ -1,0 +1,73 @@
+{
+  "decision": "PASS_SYNTHETIC_ALGEBRA_INITIAL_SINGLE_TU_COMPILE_FREEZE_ONLY_NOT_COMPILED_LINKED_RUN",
+  "baseline": "0fd8e5c795bc64337fbd9b5a1ab86690de202cf8",
+  "ready_sha256": "39a90a139e1e15e6e1ceed9cf4ad4ee060ac19ce50c805bffbbec69c72ab8fd5",
+  "original_payloads_verified": 7,
+  "production_and_prior_checkpoint_guards_verified": 255,
+  "current_known_compile_inputs": 358,
+  "test_sources": 2,
+  "historical_origins": {
+    "FULL_BUILD_PREFROZEN_2949": 337,
+    "FULL_BUILD_POST_FIRST_OBSERVATION_NOT_PRIOR_PREFROZEN": 19,
+    "POST_COMPILE_FIRST_OBSERVATION_NOT_PRIOR_PREFROZEN": 2
+  },
+  "separate_retained_artifact_guard_records_verified": 67,
+  "separate_prior_readonly_directory_guards_verified": 9,
+  "root_independent_remote_recheck": {
+    "current_records_verified": 427,
+    "prior_readonly_directories_verified": 9,
+    "readonly_test_files0444": 2,
+    "source_directory0555": true,
+    "parent_only_source": true,
+    "compile_attempt_absent": true,
+    "compiler_calls": 0
+  },
+  "independent_review": [
+    "Exact two readonly source copies match reviewed11group97target-entry source protocol;source0555/parent-only-source and no attempt independently checked",
+    "358 reused compiler/header/native records retain337pre19fullbuildpost2old66compilepost origins; two new sources bring future compile-input records to360",
+    "GCC13 argv reviewed as one-cTU with original FP/NDEBUG/C++17warning flags/fixed4fieldenv/freshoutput120s/parallel1/rawcap1MiB",
+    "Harness exactly matches reviewed lease pattern after filenames/control names/pinned digests; AST parsed only; one explicit compile action and no link/executable path",
+    "67 artifact guards match prior66 originals plus frozen lease executable copy; nine directory rosters/modes match original six lease-runtime directories plus additional three old buffer directories",
+    "Root strict SSH byte/mode check verifies427records, all nine preserved directories and freshsource0555"
+  ],
+  "separate_guard_scope": "Sealed harness checks360compile-input records and newsource directory, not67artifact/9prior-directory guard fields. Future exact compile dispatch must separately retain67artifact and9directory pre/post checks, stop on drift, and not relabel them as harness427inputs.",
+  "candidate_limits": {
+    "CPU_seconds": [
+      110,
+      110
+    ],
+    "AS_bytes": [
+      4294967296,
+      4294967296
+    ],
+    "CORE_bytes": [
+      0,
+      0
+    ],
+    "FSIZE_bytes": [
+      134217728,
+      134217728
+    ],
+    "NOFILE": [
+      64,
+      64
+    ]
+  },
+  "compiler_queries": 0,
+  "compiler_calls": 0,
+  "link_calls": 0,
+  "test_runs": 0,
+  "production_CPP_function_calls": 0,
+  "target_validator_entries": 0,
+  "three_type_assertions_uncompiled": true,
+  "next_admitted_unit": "Separate exact one compile-only invocation after verified milestone backup, with independent67artifact/9directoryprepost; no link/runtime/retry",
+  "limits": [
+    "Actual newTU dependency paths are postcompile observations; finite known manifest is not full OS/native/include/readset/RSS closure",
+    "11groups/97attempted target entries remain unexecuted; synthetic finite-only coordinate diagnostics do not validate affine/physics/Model/controller admission",
+    "No privatefactory/LiveActualContext/first4msRequest/value witness/ModelSDK/actualIO/affinecostsolvercapture/Parent/plant/main/scorer"
+  ],
+  "publication": "Compact root review/storage only; exact hostplan/harness/control/raw dependency and directory identities excluded",
+  "phase5": "NOT_ACCEPTED",
+  "phase6": "NOT_STARTED",
+  "prior_actual66_85_13_10_results_figures_sources_and_all_failures_preserved": true
+}
