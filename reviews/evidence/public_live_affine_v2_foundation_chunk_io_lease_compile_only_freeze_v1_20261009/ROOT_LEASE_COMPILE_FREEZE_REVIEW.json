@@ -1,0 +1,70 @@
+{
+  "decision": "PASS_CHUNK_IO_LEASE_SINGLE_TU_COMPILE_FREEZE_ONLY_NOT_COMPILED_LINKED_RUN",
+  "baseline": "7989c8c9705ddbb61d2b38e7ccbb0d166f10385b",
+  "ready_sha256": "aa4c8898446802b2dbaa3dc69495f14157e26efe1ca851371f32d9c1cbe59670",
+  "original_payloads_verified": 7,
+  "production_and_prior_checkpoint_guards_verified": 219,
+  "current_known_compile_inputs": 358,
+  "test_sources": 2,
+  "historical_origins": {
+    "FULL_BUILD_PREFROZEN_2949": 337,
+    "FULL_BUILD_POST_FIRST_OBSERVATION_NOT_PRIOR_PREFROZEN": 19,
+    "POST_COMPILE_FIRST_OBSERVATION_NOT_PRIOR_PREFROZEN": 2
+  },
+  "retained_artifact_guard_records_independently_verified": 58,
+  "root_independent_remote_recheck": {
+    "current_records_verified": 418,
+    "readonly_test_files0444": 2,
+    "source_directory0555": true,
+    "parent_only_source": true,
+    "compile_attempt_absent": true,
+    "compiler_calls": 0
+  },
+  "independent_review": [
+    "Exact two readonly source copies match independently reviewed10-group source protocol; source0555/parent-only-source and no attempt rechecked",
+    "358 reused known file identities match preserved prior records/origin labels; two new sources bring future compile prepost to360",
+    "GCC13 argv reviewed as one -cTU with original flags, fixed4fieldenv, freshoutput120s/parallel1/rawcap1MiB",
+    "Harness exactly matches prior reviewed buffer pattern after filename/pinned digest substitutions and correctly sorted source roster; ASTparsed only",
+    "58 separate prior artifact guards match original57 plus buffer readonly executable copy; current byte/mode recheck verified all418records"
+  ],
+  "artifact_guard_scope": "The sealed compile harness checks360 compile inputs, not58 separately stored artifact guards. Any future exact compile dispatch must independently check and retain those58 before and after, stopping for drift; do not relabel them as harness prepost or include closure.",
+  "candidate_limits": {
+    "CPU_seconds": [
+      110,
+      110
+    ],
+    "AS_bytes": [
+      4294967296,
+      4294967296
+    ],
+    "CORE_bytes": [
+      0,
+      0
+    ],
+    "FSIZE_bytes": [
+      134217728,
+      134217728
+    ],
+    "NOFILE": [
+      64,
+      64
+    ]
+  },
+  "actual_lease_constructions": 0,
+  "actual_owned_numeric_buffer_allocations": 0,
+  "compiler_queries": 0,
+  "compiler_calls": 0,
+  "link_calls": 0,
+  "test_runs": 0,
+  "production_CPP_function_calls": 0,
+  "next_admitted_unit": "Separate exact one compile-only harness invocation after verified milestone backup; independent58artifact pre/post checks required; no link/runtime/retry",
+  "limits": [
+    "Actual newTU dependency paths are postcompile observations; finite known manifest is not full OS/native/include/readset/RSS closure",
+    "10lease groups and4type-trait checks remain uncompiled/unexecuted; all state steps are source predictions only",
+    "No actual file/stream IO, concurrency, buffers/charges, Model/SDK/cost/affine/controller/plant/main/scorer"
+  ],
+  "publication": "Compact authored root review/storage only; exact hostplan/harness/control/raw dependency identities excluded",
+  "phase5": "NOT_ACCEPTED",
+  "phase6": "NOT_STARTED",
+  "all_prior66_85_13_results_figures_sources_and_failures_preserved": true
+}
