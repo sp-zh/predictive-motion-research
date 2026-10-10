@@ -1,0 +1,67 @@
+{
+  "scope": "SOURCE_ONLY_PRE_SNAPSHOT_COMPLETION_V2",
+  "baseline": "6e25afb8c65c88552b76799ef63e4a91daef1634",
+  "v1_ready": {
+    "bytes": 38994,
+    "sha256": "6e0825b20c4dc96395ac14e5997604b76f271bc2fa67da13fc357d3d5a9bbe38"
+  },
+  "original_CPP": {
+    "bytes": 7793,
+    "sha256": "38ac63de6f6598e03cf0ea66d28123689ef6e175948ead8b15424d2767e81798"
+  },
+  "revised_CPP": {
+    "bytes": 8004,
+    "sha256": "4d1b75d76eb6093b00d4250803860fe48f97031db03d3946300c483819744947"
+  },
+  "exact_replacements": [
+    {
+      "function": "moveCtor",
+      "before": "initialize(from);double* ptr=from.data();p::OwnedNumericBuffer to(std::move(from));",
+      "after": "initialize(from);double* ptr=from.data();ledger(c,e::held8);ledger(b,e::held8);p::OwnedNumericBuffer to(std::move(from));"
+    },
+    {
+      "function": "selfMove",
+      "before": "initialize(x);double* liveptr=x.data();x=std::move(x);",
+      "after": "initialize(x);double* liveptr=x.data();ledger(c,e::held64);ledger(b,e::held64);x=std::move(x);"
+    },
+    {
+      "function": "occupiedIntoZero",
+      "before": "initialize(from);double* liveptr=from.data();to=std::move(from);",
+      "after": "initialize(from);double* liveptr=from.data();ledger(c,e::held4);ledger(b,e::held4);to=std::move(from);"
+    },
+    {
+      "function": "overlap128",
+      "before": "p::OwnedNumericBuffer first(c,64);initialize(first);{",
+      "after": "p::OwnedNumericBuffer first(c,64);initialize(first);ledger(c,e::held64);ledger(b,e::held64);{"
+    },
+    {
+      "function": "zeroIntoOccupied",
+      "before": "initialize(to);empty(from);ledger(c,e::held4);to=std::move(from);",
+      "after": "initialize(to);empty(from);ledger(c,e::held4);ledger(b,e::held4);to=std::move(from);"
+    },
+    {
+      "function": "differentBatchAssign",
+      "before": "ledger(ba,e::own5);ledger(bb,e::own7);",
+      "after": "ledger(ba,e::own5);ledger(bb,e::own7);ledger(a,e::own5);ledger(b,e::own7);"
+    }
+  ],
+  "v1_tar": {
+    "path": "retained-unexecuted-buffer-v1-source-proposal.tar.gz",
+    "bytes": 20241,
+    "sha256": "e50dc13419e9878ba6f7d43aeb65f7796701b900b1d5a69615a9f93e9ffd2a11",
+    "regular_files": 10,
+    "all9payloads_and_READY_verified": true
+  },
+  "all_other9packet_original_payloads_except_CPP_unchanged": true,
+  "case_ID_count": 13,
+  "expected_stdout_and_literal_values_unchanged": true,
+  "future_path_scope": "Uncreated source-version1 is first Linux freeze candidate and may hold source proposal revision2;exact hostcandidate remains unchanged,not an existingV1freeze reused.",
+  "production_API_source_changed": false,
+  "compiler_calls": 0,
+  "link_calls": 0,
+  "program_runs": 0,
+  "CPP_function_calls": 0,
+  "owned_array_allocations": 0,
+  "phase5": "NOT_ACCEPTED",
+  "phase6": "NOT_STARTED"
+}

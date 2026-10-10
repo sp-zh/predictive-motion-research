@@ -1,0 +1,355 @@
+{
+  "status": "FROZEN_SOURCE_PROPOSAL_NOT_EXECUTED",
+  "group_count": 13,
+  "positive_groups": 12,
+  "required_refusal_groups": 1,
+  "groups": [
+    {
+      "id": "buffer_zero_null",
+      "purpose": "zero-size/null mutable andconstdata,noelementread",
+      "expected": "PUBLIC_BUFFER_AND_LEDGER_CHECKS_PASS",
+      "first_refusal_reason": null,
+      "max_owned_buffer_doubles": 0,
+      "max_simultaneous_owned_doubles": 0,
+      "literal_observable_snapshots": {
+        "case_batch": [
+          {
+            "live_slots": 0,
+            "cumulative_charges": 0
+          },
+          {
+            "live_slots": 0,
+            "cumulative_charges": 0
+          }
+        ]
+      }
+    },
+    {
+      "id": "buffer_initialized_mutable_const",
+      "purpose": "8explicit initialized literals,mutable/constalias andexact4.25rewrite",
+      "expected": "PUBLIC_BUFFER_AND_LEDGER_CHECKS_PASS",
+      "first_refusal_reason": null,
+      "max_owned_buffer_doubles": 8,
+      "max_simultaneous_owned_doubles": 8,
+      "literal_observable_snapshots": {
+        "case_batch": [
+          {
+            "live_slots": 8,
+            "cumulative_charges": 8
+          },
+          {
+            "live_slots": 0,
+            "cumulative_charges": 8
+          }
+        ]
+      }
+    },
+    {
+      "id": "buffer_initialized64",
+      "purpose": "maximum64initialized values,no private allocation measurements",
+      "expected": "PUBLIC_BUFFER_AND_LEDGER_CHECKS_PASS",
+      "first_refusal_reason": null,
+      "max_owned_buffer_doubles": 64,
+      "max_simultaneous_owned_doubles": 64,
+      "literal_observable_snapshots": {
+        "case_batch": [
+          {
+            "live_slots": 64,
+            "cumulative_charges": 64
+          },
+          {
+            "live_slots": 0,
+            "cumulative_charges": 64
+          }
+        ]
+      }
+    },
+    {
+      "id": "buffer_move_constructor",
+      "purpose": "moveconstructor retains live arraypointer/values,sourceempty",
+      "expected": "PUBLIC_BUFFER_AND_LEDGER_CHECKS_PASS",
+      "first_refusal_reason": null,
+      "max_owned_buffer_doubles": 8,
+      "max_simultaneous_owned_doubles": 8,
+      "literal_observable_snapshots": {
+        "case_batch": [
+          {
+            "live_slots": 8,
+            "cumulative_charges": 8
+          },
+          {
+            "live_slots": 8,
+            "cumulative_charges": 8
+          },
+          {
+            "live_slots": 0,
+            "cumulative_charges": 8
+          }
+        ]
+      }
+    },
+    {
+      "id": "buffer_assign_same_case",
+      "purpose": "samecase5+7occupiedmoveassignment",
+      "expected": "PUBLIC_BUFFER_AND_LEDGER_CHECKS_PASS",
+      "first_refusal_reason": null,
+      "max_owned_buffer_doubles": 7,
+      "max_simultaneous_owned_doubles": 12,
+      "literal_observable_snapshots": {
+        "case_batch": [
+          {
+            "live_slots": 12,
+            "cumulative_charges": 12
+          },
+          {
+            "live_slots": 7,
+            "cumulative_charges": 12
+          },
+          {
+            "live_slots": 0,
+            "cumulative_charges": 12
+          }
+        ]
+      }
+    },
+    {
+      "id": "buffer_assign_different_case_same_batch",
+      "purpose": "differentcases/samebatch pointerownership transfer",
+      "expected": "PUBLIC_BUFFER_AND_LEDGER_CHECKS_PASS",
+      "first_refusal_reason": null,
+      "max_owned_buffer_doubles": 7,
+      "max_simultaneous_owned_doubles": 12,
+      "literal_observable_snapshots": {
+        "caseA": [
+          {
+            "live_slots": 5,
+            "cumulative_charges": 5
+          },
+          {
+            "live_slots": 0,
+            "cumulative_charges": 5
+          },
+          {
+            "live_slots": 0,
+            "cumulative_charges": 5
+          }
+        ],
+        "caseB": [
+          {
+            "live_slots": 7,
+            "cumulative_charges": 7
+          },
+          {
+            "live_slots": 7,
+            "cumulative_charges": 7
+          },
+          {
+            "live_slots": 0,
+            "cumulative_charges": 7
+          }
+        ],
+        "batch": [
+          {
+            "live_slots": 12,
+            "cumulative_charges": 12
+          },
+          {
+            "live_slots": 7,
+            "cumulative_charges": 12
+          },
+          {
+            "live_slots": 0,
+            "cumulative_charges": 12
+          }
+        ]
+      }
+    },
+    {
+      "id": "buffer_assign_different_batch",
+      "purpose": "differentbatches pointerownership transfer",
+      "expected": "PUBLIC_BUFFER_AND_LEDGER_CHECKS_PASS",
+      "first_refusal_reason": null,
+      "max_owned_buffer_doubles": 7,
+      "max_simultaneous_owned_doubles": 12,
+      "literal_observable_snapshots": {
+        "caseA_batchA": [
+          {
+            "live_slots": 5,
+            "cumulative_charges": 5
+          },
+          {
+            "live_slots": 0,
+            "cumulative_charges": 5
+          },
+          {
+            "live_slots": 0,
+            "cumulative_charges": 5
+          }
+        ],
+        "caseB_batchB": [
+          {
+            "live_slots": 7,
+            "cumulative_charges": 7
+          },
+          {
+            "live_slots": 7,
+            "cumulative_charges": 7
+          },
+          {
+            "live_slots": 0,
+            "cumulative_charges": 7
+          }
+        ]
+      }
+    },
+    {
+      "id": "buffer_self_move",
+      "purpose": "selfmove supportedbyexplicitthis!=other guard;livepointer staysvalid",
+      "expected": "PUBLIC_BUFFER_AND_LEDGER_CHECKS_PASS",
+      "first_refusal_reason": null,
+      "max_owned_buffer_doubles": 64,
+      "max_simultaneous_owned_doubles": 64,
+      "literal_observable_snapshots": {
+        "case_batch": [
+          {
+            "live_slots": 64,
+            "cumulative_charges": 64
+          },
+          {
+            "live_slots": 64,
+            "cumulative_charges": 64
+          },
+          {
+            "live_slots": 0,
+            "cumulative_charges": 64
+          }
+        ]
+      }
+    },
+    {
+      "id": "buffer_assign_zero_into_occupied",
+      "purpose": "zero source replaces occupied4; no freedpointeruse",
+      "expected": "PUBLIC_BUFFER_AND_LEDGER_CHECKS_PASS",
+      "first_refusal_reason": null,
+      "max_owned_buffer_doubles": 4,
+      "max_simultaneous_owned_doubles": 4,
+      "literal_observable_snapshots": {
+        "case_batch": [
+          {
+            "live_slots": 4,
+            "cumulative_charges": 4
+          },
+          {
+            "live_slots": 0,
+            "cumulative_charges": 4
+          },
+          {
+            "live_slots": 0,
+            "cumulative_charges": 4
+          }
+        ]
+      }
+    },
+    {
+      "id": "buffer_assign_occupied_into_zero",
+      "purpose": "occupied4source replaceszero,pointer staysowned",
+      "expected": "PUBLIC_BUFFER_AND_LEDGER_CHECKS_PASS",
+      "first_refusal_reason": null,
+      "max_owned_buffer_doubles": 4,
+      "max_simultaneous_owned_doubles": 4,
+      "literal_observable_snapshots": {
+        "case_batch": [
+          {
+            "live_slots": 4,
+            "cumulative_charges": 4
+          },
+          {
+            "live_slots": 4,
+            "cumulative_charges": 4
+          },
+          {
+            "live_slots": 0,
+            "cumulative_charges": 4
+          }
+        ]
+      }
+    },
+    {
+      "id": "buffer_outlives_case_batch_wrappers",
+      "purpose": "bufferoutlivesCase/Batchwrappers,sharedCaseobserver survives",
+      "expected": "PUBLIC_BUFFER_AND_LEDGER_CHECKS_PASS",
+      "first_refusal_reason": null,
+      "max_owned_buffer_doubles": 6,
+      "max_simultaneous_owned_doubles": 6,
+      "literal_observable_snapshots": {
+        "shared_case_only": [
+          {
+            "live_slots": 6,
+            "cumulative_charges": 6
+          },
+          {
+            "live_slots": 6,
+            "cumulative_charges": 6
+          },
+          {
+            "live_slots": 0,
+            "cumulative_charges": 6
+          }
+        ],
+        "batch_after_owner_destruction": "NOT_PUBLICLY_OBSERVED"
+      }
+    },
+    {
+      "id": "buffer_two64_overlap128",
+      "purpose": "two64arrays overlap128,then release64/0 without charge refund",
+      "expected": "PUBLIC_BUFFER_AND_LEDGER_CHECKS_PASS",
+      "first_refusal_reason": null,
+      "max_owned_buffer_doubles": 64,
+      "max_simultaneous_owned_doubles": 128,
+      "literal_observable_snapshots": {
+        "case_batch": [
+          {
+            "live_slots": 64,
+            "cumulative_charges": 64
+          },
+          {
+            "live_slots": 128,
+            "cumulative_charges": 128
+          },
+          {
+            "live_slots": 64,
+            "cumulative_charges": 128
+          },
+          {
+            "live_slots": 0,
+            "cumulative_charges": 128
+          }
+        ]
+      }
+    },
+    {
+      "id": "buffer_constructor_moved_case_refusal",
+      "purpose": "constructorrefusesmovedfromCasebeforearraymaterialization",
+      "expected": "REQUIRED_INVALID_ARGUMENT_BEFORE_NUMERIC_ALLOCATION",
+      "first_refusal_reason": "moved-from case budget",
+      "max_owned_buffer_doubles": 0,
+      "max_simultaneous_owned_doubles": 0,
+      "literal_observable_snapshots": {
+        "retained_case_batch": [
+          {
+            "live_slots": 0,
+            "cumulative_charges": 0
+          },
+          {
+            "live_slots": 0,
+            "cumulative_charges": 0
+          }
+        ]
+      }
+    }
+  ],
+  "independent_reference": "Constructorreserve adds requestedslots tolive+cumulative;movestransferownership with no newcharge;assignment releasesdestinationlive only;destruction decreaseslive notcumulative.From declaredoperations,literalprefixvalues exactlybinaryrational;neverproduceroutput-derived.",
+  "maximum_per_array_doubles": 64,
+  "maximum_simultaneous_owned_doubles": 128,
+  "initialization_rule": "Every allocatedelement explicitlywrittenbeforeanyread;values/pointers only accessedwhilecurrentowner alive;freedold-destinationpointer neverstored/compared."
+}

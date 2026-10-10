@@ -1,0 +1,33 @@
+{
+  "status": "UNEXECUTED_OWNED_BUFFER_SOURCE_PROTOCOL_PROPOSAL",
+  "fixed_groups": 13,
+  "positive_groups": 12,
+  "required_refusal_groups": 1,
+  "scope": "CurrentOwnedNumericBuffer zero/data/size/initializedreadwrite/moveconstructor/moveassignment/selfmove/ownership+lifetime andnecessarypublicledgeraccounting only",
+  "numeric_bounds": {
+    "maximum_array_doubles": 64,
+    "maximum_simultaneous_owned_doubles": 128,
+    "maximum_simultaneous_owned_numeric_bytes_on_declared8byte_double": 1024
+  },
+  "literal_reference": "64 exactlyrepresentablefinitehalf-integers plus4.25 mutation,explicit initializationbeforeeveryread;fixed before/after counts from declaredownershipoperations,not outputs.",
+  "runtime_success": "Noargonce/exit0/emptystderr/exactordered13PASS+COMPLETE/countclosure/prepost unchanged/cwdempty;firstunexpectedexception/value/counter/limit/outputmismatch stopretainprefix,no repair/rerun.",
+  "static_deferred": "Privateactualreleaseorder staticonly;truebad_alloc cleanup/hostsizeoverflow remainDEFERRED,not counterproof.",
+  "future_candidate_limits": {
+    "once": 1,
+    "wall_seconds": 15,
+    "CPU_seconds": 10,
+    "AS_bytes": 268435456,
+    "CORE_FSIZElimit": 0,
+    "NOFILE": 32,
+    "NPROC": 16,
+    "stricter_inherited_limits_preserved": true,
+    "raw_capture_cap_bytes": 131072,
+    "replaced_environment": "4fields PATH LANG LC_ALL TZ"
+  },
+  "expected_stdout_bytes": 488,
+  "expected_stdout_sha256": "450c080b20270f36d2a2ad4d99f42a1eb8bc0d455d5e4c7e9fa74c60d1a9d2ba",
+  "gates": "Separatereview/backup/freeze/explicitcompile-only,link-only,runtime dispatch required;none executednow.",
+  "not_covered": "Allocator/RSS/fullOS/nativeABI/Model/SDK/cost/affine/context/controller/plant/mainexperiment/scorer/phaseacceptance;no newmotion/video",
+  "phase5": "NOT_ACCEPTED",
+  "phase6": "NOT_STARTED"
+}

@@ -1,0 +1,24 @@
+{
+  "decision": "OWNED_NUMERIC_BUFFER_FINITE_SOURCE_PROPOSAL_PENDING_ROOT_REVIEW_NOT_COMPILED_LINKED_RUN",
+  "baseline": "6e25afb8c65c88552b76799ef63e4a91daef1634",
+  "source_files": 2,
+  "fixed_groups": 13,
+  "positive": 12,
+  "required_refusal": 1,
+  "NDEBUG_safe": "Explicitrequirethrows/mainfirstfailureexit1/fixedcount13;noassert;no defaultargs/fixturemodification",
+  "public_observation": "Initializedvalues/size/null/pointerownership/move semantics/necessaryledgercounts andsurvivingCaseobserver;privateallocator release/RSS notobserved.",
+  "array_initialization": "Everyelement of everynonzeroOwnedNumericBuffer written from64frozenliteralbeforevalues(). 4.25mutation overwrittenbacktoliteralbeforelatercomparison.",
+  "dangling_safety": "Savedfrom-array pointers stayownedinmove destination throughoutcomparison;no savedold-destination pointer usedafterfree;retainedowner resetfollowedonlyledgerread.",
+  "small_allocation_cap": {
+    "per_buffer_doubles": 64,
+    "simultaneous_doubles": 128
+  },
+  "allocation_failure_and_hostoverflow": "STATIC_SOURCE/DEFERRED,notforced",
+  "production_source_or_API_changes": 0,
+  "compiler_link_test_calls": 0,
+  "production_CPP_function_calls": 0,
+  "owned_numeric_buffer_allocations_during_preparation": 0,
+  "existing66_85fixtures_evidence_figures_checkers_failures_preserved": true,
+  "phase5": "NOT_ACCEPTED",
+  "phase6": "NOT_STARTED"
+}

@@ -1,0 +1,47 @@
+{
+  "decision": "PASS_FIXED13_OWNED_BUFFER_SOURCE_PROTOCOL_V2_ONLY_NOT_COMPILE_LINK_OR_RUNTIME",
+  "baseline": "6e25afb8c65c88552b76799ef63e4a91daef1634",
+  "ready_sha256": "3d745966b24dd6312f7d912ae838acc25eafed96c728c7060c015c25846371c9",
+  "packet_payloads_verified": 11,
+  "production_and_prior_guards_verified": 178,
+  "original_v1_regular_files_verified": 10,
+  "original_v1_payloads_verified": 9,
+  "source_repair": "Six exact replacements add11 ledger calls;allotherCPP/sourcefixture/protocol bytes preserved",
+  "groups_proposed": 13,
+  "positive_groups": 12,
+  "required_constructor_refusal_groups": 1,
+  "exact_fraction_literals_independently_verified": 64,
+  "mutation_literal": "17/4 exactly representable",
+  "header_ledger_literals_independently_verified": 19,
+  "ownership_timeline_groups_independently_verified": 13,
+  "source_snapshot_scope": "All positive-group declared case/batch/sharedobserver timeline snapshots match explicit assertion sequences. Constructor-refusal initialzero is a setup derivation premise; retainedcase+batch zeros are explicitly asserted after refusal,not separately before.",
+  "expected_stdout": {
+    "bytes": 488,
+    "sha256": "450c080b20270f36d2a2ad4d99f42a1eb8bc0d455d5e4c7e9fa74c60d1a9d2ba",
+    "derived_from_original_ID_order_and_source_literals": true
+  },
+  "pointer_initialization_review": [
+    "Every numeric element written before values/readwrite checks;maximum64elements/array,128simultaneous",
+    "Source data pointer comparisons occur only while destination owns transferred array;freed destination pointers never saved or read",
+    "Selfmove is supported by current explicit this!=other guard;no destructive source-only assumptions",
+    "Surviving sharedCaseobserver and retainedbuffer preserve shared internal state after wrapper destruction;no privatebatch getter claimed after batch wrapper destruction",
+    "After retained.reset(),only sharedcase ledger getters used;no danglingdata pointer use"
+  ],
+  "maximum_numeric_payload_bytes_on_reviewed8byte_double_profile": 1024,
+  "limits": [
+    "Numeric payload bound is not RSS or totalprocessRAM",
+    "Actual allocator/deallocationorder is static source review only;publicledger counters do not instrument it",
+    "bad_alloccleanup and hostsizeoverflow remain STATIC/DEFERRED;no OOM/replacementallocator/factoryhooks proposed",
+    "Zero/nonempty data storage and all13groups remain unexecuted;no Model/SDK/cost/affine/controller/plant/main/scorer claim"
+  ],
+  "compiler_calls": 0,
+  "link_calls": 0,
+  "program_runs": 0,
+  "production_CPP_function_calls": 0,
+  "actual_owned_numeric_buffer_allocations": 0,
+  "publication": "Reviewed V2testsource/fixedliteralroster/hostfreeprotocol/scope/reviews/docs only;exact hostcandidates/originalrawproposal archive excluded",
+  "next_unit": "Separate compile-only input freeze preparation;actual compile/link/run require independent reviews/backups/dispatches",
+  "existing_actual66_and85_figures_preserved": true,
+  "phase5": "NOT_ACCEPTED",
+  "phase6": "NOT_STARTED"
+}

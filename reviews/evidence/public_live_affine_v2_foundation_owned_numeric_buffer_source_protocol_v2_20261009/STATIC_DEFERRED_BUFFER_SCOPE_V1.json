@@ -1,0 +1,22 @@
+{
+  "deallocation_order": {
+    "status": "STATIC_SOURCE_FACT_NOT_RUNTIME_PROOF",
+    "source_basis": "foundation.hpp declaresreservationbeforedata;reverse memberdestruction dropsdatafirst. Moveassignment callsdata_.reset before reservationmove. Publiccounters/pointerpreservation cannot prove actualallocator release order orRSS."
+  },
+  "bad_alloc_cleanup": {
+    "status": "DEFERRED_NOT_FORCED",
+    "source_basis": "Reservedticket constructedbefore newdouble[]. Ifallocationthrows,unwinding ticketreleaseslive butkeepscumulative. NoOOM/globaloperatornew hooks/toolwrappers/fakefactories allowed;not runtime-tested."
+  },
+  "host_size_overflow": {
+    "status": "STATIC_BOUND_DEFERRED_ON_CURRENT_AMD64_PROFILE",
+    "source_basis": "Sourcechecks size_tmax/sizeofdouble after reserve. Existing64million logical-live cap alreadyrejects far smaller than64-bit hostsize/8 threshold;fixedmax64proposed arrays cannot isolate this check. Otherhosts/ABIs notproven."
+  },
+  "limits": [
+    "Ledger snapshots showpublicaccounting only,notactualstorageinstrumentation/processRAM",
+    "No uninitializedread,freed/danglingpointeruse,numericmatrices,millionslotallocation",
+    "Case/Batchowner-wrapper destruction observation limited to survivingSharedCaseBudget getters",
+    "No rerun original66or85 sweeps;smallplan usedonly setup"
+  ],
+  "phase5": "NOT_ACCEPTED",
+  "phase6": "NOT_STARTED"
+}
