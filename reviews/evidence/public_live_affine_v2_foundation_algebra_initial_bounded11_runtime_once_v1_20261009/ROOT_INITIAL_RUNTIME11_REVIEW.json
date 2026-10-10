@@ -1,0 +1,114 @@
+{
+  "decision": "PASS_FIXED11_SYNTHETIC_INITIAL_RUNTIME_ONLY_NOT_PHASE_ACCEPTANCE",
+  "baseline": "4c092989f30a94caa8af605fed10e96ac42a07fb",
+  "ready_sha256": "fa1eed6467c0794acf7e7c1b6156b184c9d014be7dc4778ff8653f149dcc51df",
+  "packet_payloads_verified": 32,
+  "production_and_prior_guards_verified": 265,
+  "program_invocations": 1,
+  "exit_code": 0,
+  "signal_number": null,
+  "timeout_or_output_stop": false,
+  "automatic_retries": 0,
+  "case_groups_passed": 11,
+  "case_groups_failed": 0,
+  "expected_outcome_counts": {
+    "PUBLIC_INITIAL_CONTRACT": 11
+  },
+  "controlled_target_entries": 97,
+  "controlled_target_entry_partition": {
+    "finite_copy": 5,
+    "single_joint_nonfinite": 84,
+    "single_progress_nonfinite": 6,
+    "joint_vs_progress_category_priority": 2
+  },
+  "controlled_target_entry_outcomes": {
+    "accepted": 5,
+    "required_invalid_argument": 92
+  },
+  "controlled_entry_scope": "Attempted validator entries at sole compiledinvoke callsite;pergroupcount/finalCOMPLETE97 closure,not allCPP/native/getter calls or97independentexperiments",
+  "actual_stdout_bytes": 413,
+  "actual_stdout_sha256": "7cdfc5b3ef402d90316a9f35b87252463f2d0ba0c16b25d582de01f0e0a42e74",
+  "stderr_bytes": 0,
+  "expected_stdout_frozen_before_execution": true,
+  "exact_ordered_stdout_matched": true,
+  "binary_sha256": "dd47a63159725a7b0188b9689d09633c8654519e81bd73dac7b5acef88c1f701",
+  "prepost_identity_records_matched": 89,
+  "unique_requested_paths_matched": 88,
+  "unique_resolved_files_matched": 82,
+  "original_artifact_guard_records": 75,
+  "harness_exact_readonly_modes_rosters_matched": 12,
+  "separate_postcompile_math_records_unchanged": 10,
+  "postcompile_math_not_runtime_dependencies_or_retrofreeze": true,
+  "root_independent_remote_recheck": {
+    "current_main_records_verified": 89,
+    "unique_requested_paths": 88,
+    "unique_resolved_files": 82,
+    "separate_postcompile_math_records": 10,
+    "harness_exact_readonly_modes_rosters": 12,
+    "named_specs_absences": 2,
+    "named_preload_absence": true,
+    "cwd_empty": true,
+    "program_calls": 0
+  },
+  "applied_child_limits": {
+    "RLIMIT_CPU": [
+      10,
+      10
+    ],
+    "RLIMIT_AS": [
+      268435456,
+      268435456
+    ],
+    "RLIMIT_CORE": [
+      0,
+      0
+    ],
+    "RLIMIT_FSIZE": [
+      0,
+      0
+    ],
+    "RLIMIT_NOFILE": [
+      32,
+      32
+    ],
+    "RLIMIT_NPROC": [
+      16,
+      16
+    ]
+  },
+  "independent_review": [
+    "All32sealedpayloads and original13regularfile archive/12payloads verified against exactretainedbytes",
+    "Allsealedcontrols/actualplan match reviewed runtimefreeze;oneprogram/no compiler/link/retry",
+    "Actual413B ordered11PASS+COMPLETE97 matches originalroster/sourcecontrolflow and prerunfixture;stderr empty",
+    "Fivepositive groups verify finite30componentcopy/mutationindependence/shiftednegative-r/signedzero;84joint+6progress+2categorypriority declaredrequiredrefusals match exactreasonchecks",
+    "89mainprepostrecords/12rosters/separate10mathrecords exact frozenidentities;3namedabsences and75originalartifactguards preserved",
+    "All6applied processcaps equal reviewedcaps,noRSS/performanceinference"
+  ],
+  "production_validator_CPP_actually_called": true,
+  "point_checks_performed": true,
+  "call_evidence_scope": "Completefixed11PASS+COMPLETE97 and compiledreviewedsourceflow corroborate validatorentries andpointchecks,Popenalonenotproof",
+  "exact_all_CPP_native_getter_call_count": "UNMEASURED",
+  "provisional_status_marker_scope": "Retained target_entry_observation is initialUNKNOWN marker;finalflags/controlcounterclosure+exactoutput establishactualscope",
+  "type_contracts_passed_at_prior_compile_only": 3,
+  "logical_source_visible_State30_bound": 4,
+  "logical_State30_bound_not_physical_memory_or_compiler_allocation": true,
+  "compiler_calls": 0,
+  "link_calls": 0,
+  "actual_owned_numeric_buffer_materializations": 0,
+  "capture_wait_interval_seconds": 0.0007296599942492321,
+  "capture_interval_scope": "Capture/wait begins afterPopen;notfullwalltimeCPUtime or controllerdeadlineevidence",
+  "scope_excluded_calls": [
+    "Old66/85/13/10reruns;mesh/resource/reserve/charge/buffer/lease",
+    "LiveActual/first4ms/snapshot/permissionfactory/identity/SDK/Model/cost/affine/capture/controller/Parent/plant/main/scorer"
+  ],
+  "limits": [
+    "Only11finitecontractgroups;selectedfinitecoordinates/negative-r/outdomain values do not establish physicaladmission orLiveActual/Modelpermission",
+    "Alljointfields sharerefusalmessage;two priority cases support joint-vs-progress category,not intrajointfieldfirstsite",
+    "Threecompiletraits remaincompileevidence,notruntimegroups;97targetentriesnot uniqueproperties/assertions/ranking",
+    "No actualrobottrajectory or full loader/OS/native/readset/RSS/generalABI/controllerperformanceproof"
+  ],
+  "publication": "Smallactualstdout/groupresults/provenance,compactrootreview/storage and source-backed diagnosticfigure;rawhostnative/cache/bincontrols excluded",
+  "phase5": "NOT_ACCEPTED",
+  "phase6": "NOT_STARTED",
+  "all_prior_sources_failures_checkerfreezes_and66_85_13_10_results_preserved": true
+}

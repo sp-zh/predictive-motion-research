@@ -1,0 +1,49 @@
+{
+  "scope": "One actualfixed11 syntheticAlgebraTestInitial finite30scalarcopy/type separation diagnostic;not physical/livecontext/Model/controller/phaseacceptance",
+  "baseline": "4c092989f30a94caa8af605fed10e96ac42a07fb",
+  "program_invocations": 1,
+  "fixed_case_groups": 11,
+  "passed_case_groups": 11,
+  "failed_case_groups": 0,
+  "controlled_target_entries": 97,
+  "controlled_target_entry_outcome_counts": {
+    "accepted_target_entries": 5,
+    "required_invalid_argument_target_entries": 92
+  },
+  "controlled_counter_scope": "Attempted validateAlgebraTestInitial entries at sole compiledinvoke callsite;pergroupclosure and COMPLETE97 checked;notallCPP/native/gettercounts",
+  "production_CPP_calls_occurred": true,
+  "point_checks_performed": true,
+  "all_CPP_native_getter_call_count": "UNMEASURED",
+  "occurrence_evidence": "Exactoriginal413B11PASS+COMPLETE97 and frozenCPPcontrolflow;not Popenalone. Provisionaltarget_entry_observation string remainsinitialUNKNOWNmarker,notfinalfailure evidence.",
+  "source_fixture_sha256": {
+    "algebra_initial_v1.cpp": "d8098d6a132adc033d0076e9484b9b78a3f4761c944f4b45152773b3a5969767",
+    "initial_expected_v1.hpp": "e16082b4674603e45da5db0b624f147c7e3a120a3c269a27578b73d6f4444f8d",
+    "FIXED_INITIAL_ROSTER_AND_SUBCASES_V1.json": "c63092e96bcdc1d1c156fac5d25198a65ccd192c1ca7bb67cb3c3059fa5efd65",
+    "FIXED_FUTURE_EXPECTED_STDOUT_V1.txt": "7cdfc5b3ef402d90316a9f35b87252463f2d0ba0c16b25d582de01f0e0a42e74",
+    "INDEPENDENT_LITERAL_ORACLE_V1.json": "6326a61aec6c933806b90d2e73abc1471f00dafac2ecaf87f38461e86911d3bc",
+    "STATE30_LOGICAL_OBJECT_AND_TYPE_SCOPE_V1.json": "9b7f7119c8f8dc0a5f22da38639825eadd31fb0e3c1e53ad09eabee9658f0bd2"
+  },
+  "actual_object_sha256": "70bd9758fca0e5e44d4242c532c502bbffd9be2528125b78fe7f607717caed89",
+  "actual_binary_sha256": "dd47a63159725a7b0188b9689d09633c8654519e81bd73dac7b5acef88c1f701",
+  "stdout": {
+    "path": "INITIAL_BOUNDED11_STDOUT.txt",
+    "bytes": 413,
+    "sha256": "7cdfc5b3ef402d90316a9f35b87252463f2d0ba0c16b25d582de01f0e0a42e74"
+  },
+  "stderr_bytes": 0,
+  "expected_data_frozen_before_outputs": true,
+  "group_results_file": "INITIAL_BOUNDED11_GROUP_RESULTS.json",
+  "group_results_sha256": "249ec8b14048ac92219ed42fbf701bac4b1beca280c712419e2e51a5d4108817",
+  "selection": "All11originalgroups and97declaredtargetentries inoneadmittedattempt;no omittedfailedcases or curatedvalues.92requiredinvalid_argument entries are matched contractchecks,notfailedresearchruns or92independentexperiments.",
+  "scope_limits": [
+    "30half-integer literals/shiftednegative-r/source-mutationindependence/zero-signmask directcomponents;not physicalclosed-domain admission",
+    "90singleNaN/Inf+2joint-vs-progresspriority entries;alljointfields sharemessage,so nointra-joint-fieldfirstsite claim",
+    "4source-visible logicalState30bound not measured compilerallocation/allocator/RSS",
+    "3typeconstraints previouslycompilepassed,not countedasruntimegroups",
+    "Linkedcontextotherdefinitions remainclosed:LiveActual/first4ms/snapshot/permission/Model/affinecostcapture/Parent/plant/scorer",
+    "Native/loader/OS/RSS/ABI/trajectory/performance acceptance notestablished",
+    "Captureintervalstarts afterPopen,notcomplete runtimeCPU/controllerlatency"
+  ],
+  "phase5": "NOT_ACCEPTED",
+  "phase6": "NOT_STARTED"
+}

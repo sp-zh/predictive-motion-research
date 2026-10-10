@@ -1,0 +1,881 @@
+{
+  "program_invocations": 1,
+  "fixed_case_group_count": 11,
+  "groups": [
+    {
+      "case_group_id": "initial_zero_copy",
+      "observed_status": "PASS",
+      "declared_public_checks": "FINITE_COPY_PUBLIC_CHECKS_PASS",
+      "scope": "Fixed synthetic finitecopy/signedzero/nonfinitecategory checks;not physical/livecontext/Model/RSS proof",
+      "nested_required_refusals_are_not_extra_group_observations": true,
+      "controlled_target_entries": 1,
+      "source_declared_subcases": [
+        {
+          "id": "initial_zero_copy",
+          "outcome": "ACCEPT"
+        }
+      ]
+    },
+    {
+      "case_group_id": "initial_literal_tuple_copy",
+      "observed_status": "PASS",
+      "declared_public_checks": "FINITE_COPY_PUBLIC_CHECKS_PASS",
+      "scope": "Fixed synthetic finitecopy/signedzero/nonfinitecategory checks;not physical/livecontext/Model/RSS proof",
+      "nested_required_refusals_are_not_extra_group_observations": true,
+      "controlled_target_entries": 1,
+      "source_declared_subcases": [
+        {
+          "id": "initial_literal_tuple_copy",
+          "outcome": "ACCEPT"
+        }
+      ]
+    },
+    {
+      "case_group_id": "initial_source_mutation_independence",
+      "observed_status": "PASS",
+      "declared_public_checks": "FINITE_COPY_PUBLIC_CHECKS_PASS",
+      "scope": "Fixed synthetic finitecopy/signedzero/nonfinitecategory checks;not physical/livecontext/Model/RSS proof",
+      "nested_required_refusals_are_not_extra_group_observations": true,
+      "controlled_target_entries": 1,
+      "source_declared_subcases": [
+        {
+          "id": "initial_source_mutation_independence",
+          "outcome": "ACCEPT"
+        }
+      ]
+    },
+    {
+      "case_group_id": "initial_finite_shift_negative_r",
+      "observed_status": "PASS",
+      "declared_public_checks": "FINITE_COPY_PUBLIC_CHECKS_PASS",
+      "scope": "Fixed synthetic finitecopy/signedzero/nonfinitecategory checks;not physical/livecontext/Model/RSS proof",
+      "nested_required_refusals_are_not_extra_group_observations": true,
+      "controlled_target_entries": 1,
+      "source_declared_subcases": [
+        {
+          "id": "initial_finite_shift_negative_r",
+          "outcome": "ACCEPT"
+        }
+      ]
+    },
+    {
+      "case_group_id": "initial_signed_zero_copy",
+      "observed_status": "PASS",
+      "declared_public_checks": "FINITE_COPY_PUBLIC_CHECKS_PASS",
+      "scope": "Fixed synthetic finitecopy/signedzero/nonfinitecategory checks;not physical/livecontext/Model/RSS proof",
+      "nested_required_refusals_are_not_extra_group_observations": true,
+      "controlled_target_entries": 1,
+      "source_declared_subcases": [
+        {
+          "id": "initial_signed_zero_copy",
+          "outcome": "ACCEPT"
+        }
+      ]
+    },
+    {
+      "case_group_id": "initial_q_nonfinite",
+      "observed_status": "PASS",
+      "declared_public_checks": "ALL_SINGLE_JOINT_NONFINITE_REFUSALS_MATCH",
+      "scope": "Fixed synthetic finitecopy/signedzero/nonfinitecategory checks;not physical/livecontext/Model/RSS proof",
+      "nested_required_refusals_are_not_extra_group_observations": true,
+      "controlled_target_entries": 21,
+      "source_declared_subcases": [
+        {
+          "id": "q_j0_quiet_nan",
+          "field": "q",
+          "index": 0,
+          "nonfinite_category": "quiet_nan",
+          "outcome": "REQUIRED_INVALID_ARGUMENT",
+          "exact_reason": "nonfinite joint vector"
+        },
+        {
+          "id": "q_j0_positive_infinity",
+          "field": "q",
+          "index": 0,
+          "nonfinite_category": "positive_infinity",
+          "outcome": "REQUIRED_INVALID_ARGUMENT",
+          "exact_reason": "nonfinite joint vector"
+        },
+        {
+          "id": "q_j0_negative_infinity",
+          "field": "q",
+          "index": 0,
+          "nonfinite_category": "negative_infinity",
+          "outcome": "REQUIRED_INVALID_ARGUMENT",
+          "exact_reason": "nonfinite joint vector"
+        },
+        {
+          "id": "q_j1_quiet_nan",
+          "field": "q",
+          "index": 1,
+          "nonfinite_category": "quiet_nan",
+          "outcome": "REQUIRED_INVALID_ARGUMENT",
+          "exact_reason": "nonfinite joint vector"
+        },
+        {
+          "id": "q_j1_positive_infinity",
+          "field": "q",
+          "index": 1,
+          "nonfinite_category": "positive_infinity",
+          "outcome": "REQUIRED_INVALID_ARGUMENT",
+          "exact_reason": "nonfinite joint vector"
+        },
+        {
+          "id": "q_j1_negative_infinity",
+          "field": "q",
+          "index": 1,
+          "nonfinite_category": "negative_infinity",
+          "outcome": "REQUIRED_INVALID_ARGUMENT",
+          "exact_reason": "nonfinite joint vector"
+        },
+        {
+          "id": "q_j2_quiet_nan",
+          "field": "q",
+          "index": 2,
+          "nonfinite_category": "quiet_nan",
+          "outcome": "REQUIRED_INVALID_ARGUMENT",
+          "exact_reason": "nonfinite joint vector"
+        },
+        {
+          "id": "q_j2_positive_infinity",
+          "field": "q",
+          "index": 2,
+          "nonfinite_category": "positive_infinity",
+          "outcome": "REQUIRED_INVALID_ARGUMENT",
+          "exact_reason": "nonfinite joint vector"
+        },
+        {
+          "id": "q_j2_negative_infinity",
+          "field": "q",
+          "index": 2,
+          "nonfinite_category": "negative_infinity",
+          "outcome": "REQUIRED_INVALID_ARGUMENT",
+          "exact_reason": "nonfinite joint vector"
+        },
+        {
+          "id": "q_j3_quiet_nan",
+          "field": "q",
+          "index": 3,
+          "nonfinite_category": "quiet_nan",
+          "outcome": "REQUIRED_INVALID_ARGUMENT",
+          "exact_reason": "nonfinite joint vector"
+        },
+        {
+          "id": "q_j3_positive_infinity",
+          "field": "q",
+          "index": 3,
+          "nonfinite_category": "positive_infinity",
+          "outcome": "REQUIRED_INVALID_ARGUMENT",
+          "exact_reason": "nonfinite joint vector"
+        },
+        {
+          "id": "q_j3_negative_infinity",
+          "field": "q",
+          "index": 3,
+          "nonfinite_category": "negative_infinity",
+          "outcome": "REQUIRED_INVALID_ARGUMENT",
+          "exact_reason": "nonfinite joint vector"
+        },
+        {
+          "id": "q_j4_quiet_nan",
+          "field": "q",
+          "index": 4,
+          "nonfinite_category": "quiet_nan",
+          "outcome": "REQUIRED_INVALID_ARGUMENT",
+          "exact_reason": "nonfinite joint vector"
+        },
+        {
+          "id": "q_j4_positive_infinity",
+          "field": "q",
+          "index": 4,
+          "nonfinite_category": "positive_infinity",
+          "outcome": "REQUIRED_INVALID_ARGUMENT",
+          "exact_reason": "nonfinite joint vector"
+        },
+        {
+          "id": "q_j4_negative_infinity",
+          "field": "q",
+          "index": 4,
+          "nonfinite_category": "negative_infinity",
+          "outcome": "REQUIRED_INVALID_ARGUMENT",
+          "exact_reason": "nonfinite joint vector"
+        },
+        {
+          "id": "q_j5_quiet_nan",
+          "field": "q",
+          "index": 5,
+          "nonfinite_category": "quiet_nan",
+          "outcome": "REQUIRED_INVALID_ARGUMENT",
+          "exact_reason": "nonfinite joint vector"
+        },
+        {
+          "id": "q_j5_positive_infinity",
+          "field": "q",
+          "index": 5,
+          "nonfinite_category": "positive_infinity",
+          "outcome": "REQUIRED_INVALID_ARGUMENT",
+          "exact_reason": "nonfinite joint vector"
+        },
+        {
+          "id": "q_j5_negative_infinity",
+          "field": "q",
+          "index": 5,
+          "nonfinite_category": "negative_infinity",
+          "outcome": "REQUIRED_INVALID_ARGUMENT",
+          "exact_reason": "nonfinite joint vector"
+        },
+        {
+          "id": "q_j6_quiet_nan",
+          "field": "q",
+          "index": 6,
+          "nonfinite_category": "quiet_nan",
+          "outcome": "REQUIRED_INVALID_ARGUMENT",
+          "exact_reason": "nonfinite joint vector"
+        },
+        {
+          "id": "q_j6_positive_infinity",
+          "field": "q",
+          "index": 6,
+          "nonfinite_category": "positive_infinity",
+          "outcome": "REQUIRED_INVALID_ARGUMENT",
+          "exact_reason": "nonfinite joint vector"
+        },
+        {
+          "id": "q_j6_negative_infinity",
+          "field": "q",
+          "index": 6,
+          "nonfinite_category": "negative_infinity",
+          "outcome": "REQUIRED_INVALID_ARGUMENT",
+          "exact_reason": "nonfinite joint vector"
+        }
+      ]
+    },
+    {
+      "case_group_id": "initial_v_nonfinite",
+      "observed_status": "PASS",
+      "declared_public_checks": "ALL_SINGLE_JOINT_NONFINITE_REFUSALS_MATCH",
+      "scope": "Fixed synthetic finitecopy/signedzero/nonfinitecategory checks;not physical/livecontext/Model/RSS proof",
+      "nested_required_refusals_are_not_extra_group_observations": true,
+      "controlled_target_entries": 21,
+      "source_declared_subcases": [
+        {
+          "id": "v_j0_quiet_nan",
+          "field": "v",
+          "index": 0,
+          "nonfinite_category": "quiet_nan",
+          "outcome": "REQUIRED_INVALID_ARGUMENT",
+          "exact_reason": "nonfinite joint vector"
+        },
+        {
+          "id": "v_j0_positive_infinity",
+          "field": "v",
+          "index": 0,
+          "nonfinite_category": "positive_infinity",
+          "outcome": "REQUIRED_INVALID_ARGUMENT",
+          "exact_reason": "nonfinite joint vector"
+        },
+        {
+          "id": "v_j0_negative_infinity",
+          "field": "v",
+          "index": 0,
+          "nonfinite_category": "negative_infinity",
+          "outcome": "REQUIRED_INVALID_ARGUMENT",
+          "exact_reason": "nonfinite joint vector"
+        },
+        {
+          "id": "v_j1_quiet_nan",
+          "field": "v",
+          "index": 1,
+          "nonfinite_category": "quiet_nan",
+          "outcome": "REQUIRED_INVALID_ARGUMENT",
+          "exact_reason": "nonfinite joint vector"
+        },
+        {
+          "id": "v_j1_positive_infinity",
+          "field": "v",
+          "index": 1,
+          "nonfinite_category": "positive_infinity",
+          "outcome": "REQUIRED_INVALID_ARGUMENT",
+          "exact_reason": "nonfinite joint vector"
+        },
+        {
+          "id": "v_j1_negative_infinity",
+          "field": "v",
+          "index": 1,
+          "nonfinite_category": "negative_infinity",
+          "outcome": "REQUIRED_INVALID_ARGUMENT",
+          "exact_reason": "nonfinite joint vector"
+        },
+        {
+          "id": "v_j2_quiet_nan",
+          "field": "v",
+          "index": 2,
+          "nonfinite_category": "quiet_nan",
+          "outcome": "REQUIRED_INVALID_ARGUMENT",
+          "exact_reason": "nonfinite joint vector"
+        },
+        {
+          "id": "v_j2_positive_infinity",
+          "field": "v",
+          "index": 2,
+          "nonfinite_category": "positive_infinity",
+          "outcome": "REQUIRED_INVALID_ARGUMENT",
+          "exact_reason": "nonfinite joint vector"
+        },
+        {
+          "id": "v_j2_negative_infinity",
+          "field": "v",
+          "index": 2,
+          "nonfinite_category": "negative_infinity",
+          "outcome": "REQUIRED_INVALID_ARGUMENT",
+          "exact_reason": "nonfinite joint vector"
+        },
+        {
+          "id": "v_j3_quiet_nan",
+          "field": "v",
+          "index": 3,
+          "nonfinite_category": "quiet_nan",
+          "outcome": "REQUIRED_INVALID_ARGUMENT",
+          "exact_reason": "nonfinite joint vector"
+        },
+        {
+          "id": "v_j3_positive_infinity",
+          "field": "v",
+          "index": 3,
+          "nonfinite_category": "positive_infinity",
+          "outcome": "REQUIRED_INVALID_ARGUMENT",
+          "exact_reason": "nonfinite joint vector"
+        },
+        {
+          "id": "v_j3_negative_infinity",
+          "field": "v",
+          "index": 3,
+          "nonfinite_category": "negative_infinity",
+          "outcome": "REQUIRED_INVALID_ARGUMENT",
+          "exact_reason": "nonfinite joint vector"
+        },
+        {
+          "id": "v_j4_quiet_nan",
+          "field": "v",
+          "index": 4,
+          "nonfinite_category": "quiet_nan",
+          "outcome": "REQUIRED_INVALID_ARGUMENT",
+          "exact_reason": "nonfinite joint vector"
+        },
+        {
+          "id": "v_j4_positive_infinity",
+          "field": "v",
+          "index": 4,
+          "nonfinite_category": "positive_infinity",
+          "outcome": "REQUIRED_INVALID_ARGUMENT",
+          "exact_reason": "nonfinite joint vector"
+        },
+        {
+          "id": "v_j4_negative_infinity",
+          "field": "v",
+          "index": 4,
+          "nonfinite_category": "negative_infinity",
+          "outcome": "REQUIRED_INVALID_ARGUMENT",
+          "exact_reason": "nonfinite joint vector"
+        },
+        {
+          "id": "v_j5_quiet_nan",
+          "field": "v",
+          "index": 5,
+          "nonfinite_category": "quiet_nan",
+          "outcome": "REQUIRED_INVALID_ARGUMENT",
+          "exact_reason": "nonfinite joint vector"
+        },
+        {
+          "id": "v_j5_positive_infinity",
+          "field": "v",
+          "index": 5,
+          "nonfinite_category": "positive_infinity",
+          "outcome": "REQUIRED_INVALID_ARGUMENT",
+          "exact_reason": "nonfinite joint vector"
+        },
+        {
+          "id": "v_j5_negative_infinity",
+          "field": "v",
+          "index": 5,
+          "nonfinite_category": "negative_infinity",
+          "outcome": "REQUIRED_INVALID_ARGUMENT",
+          "exact_reason": "nonfinite joint vector"
+        },
+        {
+          "id": "v_j6_quiet_nan",
+          "field": "v",
+          "index": 6,
+          "nonfinite_category": "quiet_nan",
+          "outcome": "REQUIRED_INVALID_ARGUMENT",
+          "exact_reason": "nonfinite joint vector"
+        },
+        {
+          "id": "v_j6_positive_infinity",
+          "field": "v",
+          "index": 6,
+          "nonfinite_category": "positive_infinity",
+          "outcome": "REQUIRED_INVALID_ARGUMENT",
+          "exact_reason": "nonfinite joint vector"
+        },
+        {
+          "id": "v_j6_negative_infinity",
+          "field": "v",
+          "index": 6,
+          "nonfinite_category": "negative_infinity",
+          "outcome": "REQUIRED_INVALID_ARGUMENT",
+          "exact_reason": "nonfinite joint vector"
+        }
+      ]
+    },
+    {
+      "case_group_id": "initial_C_nonfinite",
+      "observed_status": "PASS",
+      "declared_public_checks": "ALL_SINGLE_JOINT_NONFINITE_REFUSALS_MATCH",
+      "scope": "Fixed synthetic finitecopy/signedzero/nonfinitecategory checks;not physical/livecontext/Model/RSS proof",
+      "nested_required_refusals_are_not_extra_group_observations": true,
+      "controlled_target_entries": 21,
+      "source_declared_subcases": [
+        {
+          "id": "C_j0_quiet_nan",
+          "field": "C",
+          "index": 0,
+          "nonfinite_category": "quiet_nan",
+          "outcome": "REQUIRED_INVALID_ARGUMENT",
+          "exact_reason": "nonfinite joint vector"
+        },
+        {
+          "id": "C_j0_positive_infinity",
+          "field": "C",
+          "index": 0,
+          "nonfinite_category": "positive_infinity",
+          "outcome": "REQUIRED_INVALID_ARGUMENT",
+          "exact_reason": "nonfinite joint vector"
+        },
+        {
+          "id": "C_j0_negative_infinity",
+          "field": "C",
+          "index": 0,
+          "nonfinite_category": "negative_infinity",
+          "outcome": "REQUIRED_INVALID_ARGUMENT",
+          "exact_reason": "nonfinite joint vector"
+        },
+        {
+          "id": "C_j1_quiet_nan",
+          "field": "C",
+          "index": 1,
+          "nonfinite_category": "quiet_nan",
+          "outcome": "REQUIRED_INVALID_ARGUMENT",
+          "exact_reason": "nonfinite joint vector"
+        },
+        {
+          "id": "C_j1_positive_infinity",
+          "field": "C",
+          "index": 1,
+          "nonfinite_category": "positive_infinity",
+          "outcome": "REQUIRED_INVALID_ARGUMENT",
+          "exact_reason": "nonfinite joint vector"
+        },
+        {
+          "id": "C_j1_negative_infinity",
+          "field": "C",
+          "index": 1,
+          "nonfinite_category": "negative_infinity",
+          "outcome": "REQUIRED_INVALID_ARGUMENT",
+          "exact_reason": "nonfinite joint vector"
+        },
+        {
+          "id": "C_j2_quiet_nan",
+          "field": "C",
+          "index": 2,
+          "nonfinite_category": "quiet_nan",
+          "outcome": "REQUIRED_INVALID_ARGUMENT",
+          "exact_reason": "nonfinite joint vector"
+        },
+        {
+          "id": "C_j2_positive_infinity",
+          "field": "C",
+          "index": 2,
+          "nonfinite_category": "positive_infinity",
+          "outcome": "REQUIRED_INVALID_ARGUMENT",
+          "exact_reason": "nonfinite joint vector"
+        },
+        {
+          "id": "C_j2_negative_infinity",
+          "field": "C",
+          "index": 2,
+          "nonfinite_category": "negative_infinity",
+          "outcome": "REQUIRED_INVALID_ARGUMENT",
+          "exact_reason": "nonfinite joint vector"
+        },
+        {
+          "id": "C_j3_quiet_nan",
+          "field": "C",
+          "index": 3,
+          "nonfinite_category": "quiet_nan",
+          "outcome": "REQUIRED_INVALID_ARGUMENT",
+          "exact_reason": "nonfinite joint vector"
+        },
+        {
+          "id": "C_j3_positive_infinity",
+          "field": "C",
+          "index": 3,
+          "nonfinite_category": "positive_infinity",
+          "outcome": "REQUIRED_INVALID_ARGUMENT",
+          "exact_reason": "nonfinite joint vector"
+        },
+        {
+          "id": "C_j3_negative_infinity",
+          "field": "C",
+          "index": 3,
+          "nonfinite_category": "negative_infinity",
+          "outcome": "REQUIRED_INVALID_ARGUMENT",
+          "exact_reason": "nonfinite joint vector"
+        },
+        {
+          "id": "C_j4_quiet_nan",
+          "field": "C",
+          "index": 4,
+          "nonfinite_category": "quiet_nan",
+          "outcome": "REQUIRED_INVALID_ARGUMENT",
+          "exact_reason": "nonfinite joint vector"
+        },
+        {
+          "id": "C_j4_positive_infinity",
+          "field": "C",
+          "index": 4,
+          "nonfinite_category": "positive_infinity",
+          "outcome": "REQUIRED_INVALID_ARGUMENT",
+          "exact_reason": "nonfinite joint vector"
+        },
+        {
+          "id": "C_j4_negative_infinity",
+          "field": "C",
+          "index": 4,
+          "nonfinite_category": "negative_infinity",
+          "outcome": "REQUIRED_INVALID_ARGUMENT",
+          "exact_reason": "nonfinite joint vector"
+        },
+        {
+          "id": "C_j5_quiet_nan",
+          "field": "C",
+          "index": 5,
+          "nonfinite_category": "quiet_nan",
+          "outcome": "REQUIRED_INVALID_ARGUMENT",
+          "exact_reason": "nonfinite joint vector"
+        },
+        {
+          "id": "C_j5_positive_infinity",
+          "field": "C",
+          "index": 5,
+          "nonfinite_category": "positive_infinity",
+          "outcome": "REQUIRED_INVALID_ARGUMENT",
+          "exact_reason": "nonfinite joint vector"
+        },
+        {
+          "id": "C_j5_negative_infinity",
+          "field": "C",
+          "index": 5,
+          "nonfinite_category": "negative_infinity",
+          "outcome": "REQUIRED_INVALID_ARGUMENT",
+          "exact_reason": "nonfinite joint vector"
+        },
+        {
+          "id": "C_j6_quiet_nan",
+          "field": "C",
+          "index": 6,
+          "nonfinite_category": "quiet_nan",
+          "outcome": "REQUIRED_INVALID_ARGUMENT",
+          "exact_reason": "nonfinite joint vector"
+        },
+        {
+          "id": "C_j6_positive_infinity",
+          "field": "C",
+          "index": 6,
+          "nonfinite_category": "positive_infinity",
+          "outcome": "REQUIRED_INVALID_ARGUMENT",
+          "exact_reason": "nonfinite joint vector"
+        },
+        {
+          "id": "C_j6_negative_infinity",
+          "field": "C",
+          "index": 6,
+          "nonfinite_category": "negative_infinity",
+          "outcome": "REQUIRED_INVALID_ARGUMENT",
+          "exact_reason": "nonfinite joint vector"
+        }
+      ]
+    },
+    {
+      "case_group_id": "initial_w_nonfinite",
+      "observed_status": "PASS",
+      "declared_public_checks": "ALL_SINGLE_JOINT_NONFINITE_REFUSALS_MATCH",
+      "scope": "Fixed synthetic finitecopy/signedzero/nonfinitecategory checks;not physical/livecontext/Model/RSS proof",
+      "nested_required_refusals_are_not_extra_group_observations": true,
+      "controlled_target_entries": 21,
+      "source_declared_subcases": [
+        {
+          "id": "w_j0_quiet_nan",
+          "field": "w",
+          "index": 0,
+          "nonfinite_category": "quiet_nan",
+          "outcome": "REQUIRED_INVALID_ARGUMENT",
+          "exact_reason": "nonfinite joint vector"
+        },
+        {
+          "id": "w_j0_positive_infinity",
+          "field": "w",
+          "index": 0,
+          "nonfinite_category": "positive_infinity",
+          "outcome": "REQUIRED_INVALID_ARGUMENT",
+          "exact_reason": "nonfinite joint vector"
+        },
+        {
+          "id": "w_j0_negative_infinity",
+          "field": "w",
+          "index": 0,
+          "nonfinite_category": "negative_infinity",
+          "outcome": "REQUIRED_INVALID_ARGUMENT",
+          "exact_reason": "nonfinite joint vector"
+        },
+        {
+          "id": "w_j1_quiet_nan",
+          "field": "w",
+          "index": 1,
+          "nonfinite_category": "quiet_nan",
+          "outcome": "REQUIRED_INVALID_ARGUMENT",
+          "exact_reason": "nonfinite joint vector"
+        },
+        {
+          "id": "w_j1_positive_infinity",
+          "field": "w",
+          "index": 1,
+          "nonfinite_category": "positive_infinity",
+          "outcome": "REQUIRED_INVALID_ARGUMENT",
+          "exact_reason": "nonfinite joint vector"
+        },
+        {
+          "id": "w_j1_negative_infinity",
+          "field": "w",
+          "index": 1,
+          "nonfinite_category": "negative_infinity",
+          "outcome": "REQUIRED_INVALID_ARGUMENT",
+          "exact_reason": "nonfinite joint vector"
+        },
+        {
+          "id": "w_j2_quiet_nan",
+          "field": "w",
+          "index": 2,
+          "nonfinite_category": "quiet_nan",
+          "outcome": "REQUIRED_INVALID_ARGUMENT",
+          "exact_reason": "nonfinite joint vector"
+        },
+        {
+          "id": "w_j2_positive_infinity",
+          "field": "w",
+          "index": 2,
+          "nonfinite_category": "positive_infinity",
+          "outcome": "REQUIRED_INVALID_ARGUMENT",
+          "exact_reason": "nonfinite joint vector"
+        },
+        {
+          "id": "w_j2_negative_infinity",
+          "field": "w",
+          "index": 2,
+          "nonfinite_category": "negative_infinity",
+          "outcome": "REQUIRED_INVALID_ARGUMENT",
+          "exact_reason": "nonfinite joint vector"
+        },
+        {
+          "id": "w_j3_quiet_nan",
+          "field": "w",
+          "index": 3,
+          "nonfinite_category": "quiet_nan",
+          "outcome": "REQUIRED_INVALID_ARGUMENT",
+          "exact_reason": "nonfinite joint vector"
+        },
+        {
+          "id": "w_j3_positive_infinity",
+          "field": "w",
+          "index": 3,
+          "nonfinite_category": "positive_infinity",
+          "outcome": "REQUIRED_INVALID_ARGUMENT",
+          "exact_reason": "nonfinite joint vector"
+        },
+        {
+          "id": "w_j3_negative_infinity",
+          "field": "w",
+          "index": 3,
+          "nonfinite_category": "negative_infinity",
+          "outcome": "REQUIRED_INVALID_ARGUMENT",
+          "exact_reason": "nonfinite joint vector"
+        },
+        {
+          "id": "w_j4_quiet_nan",
+          "field": "w",
+          "index": 4,
+          "nonfinite_category": "quiet_nan",
+          "outcome": "REQUIRED_INVALID_ARGUMENT",
+          "exact_reason": "nonfinite joint vector"
+        },
+        {
+          "id": "w_j4_positive_infinity",
+          "field": "w",
+          "index": 4,
+          "nonfinite_category": "positive_infinity",
+          "outcome": "REQUIRED_INVALID_ARGUMENT",
+          "exact_reason": "nonfinite joint vector"
+        },
+        {
+          "id": "w_j4_negative_infinity",
+          "field": "w",
+          "index": 4,
+          "nonfinite_category": "negative_infinity",
+          "outcome": "REQUIRED_INVALID_ARGUMENT",
+          "exact_reason": "nonfinite joint vector"
+        },
+        {
+          "id": "w_j5_quiet_nan",
+          "field": "w",
+          "index": 5,
+          "nonfinite_category": "quiet_nan",
+          "outcome": "REQUIRED_INVALID_ARGUMENT",
+          "exact_reason": "nonfinite joint vector"
+        },
+        {
+          "id": "w_j5_positive_infinity",
+          "field": "w",
+          "index": 5,
+          "nonfinite_category": "positive_infinity",
+          "outcome": "REQUIRED_INVALID_ARGUMENT",
+          "exact_reason": "nonfinite joint vector"
+        },
+        {
+          "id": "w_j5_negative_infinity",
+          "field": "w",
+          "index": 5,
+          "nonfinite_category": "negative_infinity",
+          "outcome": "REQUIRED_INVALID_ARGUMENT",
+          "exact_reason": "nonfinite joint vector"
+        },
+        {
+          "id": "w_j6_quiet_nan",
+          "field": "w",
+          "index": 6,
+          "nonfinite_category": "quiet_nan",
+          "outcome": "REQUIRED_INVALID_ARGUMENT",
+          "exact_reason": "nonfinite joint vector"
+        },
+        {
+          "id": "w_j6_positive_infinity",
+          "field": "w",
+          "index": 6,
+          "nonfinite_category": "positive_infinity",
+          "outcome": "REQUIRED_INVALID_ARGUMENT",
+          "exact_reason": "nonfinite joint vector"
+        },
+        {
+          "id": "w_j6_negative_infinity",
+          "field": "w",
+          "index": 6,
+          "nonfinite_category": "negative_infinity",
+          "outcome": "REQUIRED_INVALID_ARGUMENT",
+          "exact_reason": "nonfinite joint vector"
+        }
+      ]
+    },
+    {
+      "case_group_id": "initial_progress_nonfinite",
+      "observed_status": "PASS",
+      "declared_public_checks": "ALL_SINGLE_PROGRESS_NONFINITE_REFUSALS_MATCH",
+      "scope": "Fixed synthetic finitecopy/signedzero/nonfinitecategory checks;not physical/livecontext/Model/RSS proof",
+      "nested_required_refusals_are_not_extra_group_observations": true,
+      "controlled_target_entries": 6,
+      "source_declared_subcases": [
+        {
+          "id": "s_quiet_nan",
+          "field": "s",
+          "nonfinite_category": "quiet_nan",
+          "outcome": "REQUIRED_INVALID_ARGUMENT",
+          "exact_reason": "nonfinite progress state"
+        },
+        {
+          "id": "s_positive_infinity",
+          "field": "s",
+          "nonfinite_category": "positive_infinity",
+          "outcome": "REQUIRED_INVALID_ARGUMENT",
+          "exact_reason": "nonfinite progress state"
+        },
+        {
+          "id": "s_negative_infinity",
+          "field": "s",
+          "nonfinite_category": "negative_infinity",
+          "outcome": "REQUIRED_INVALID_ARGUMENT",
+          "exact_reason": "nonfinite progress state"
+        },
+        {
+          "id": "r_quiet_nan",
+          "field": "r",
+          "nonfinite_category": "quiet_nan",
+          "outcome": "REQUIRED_INVALID_ARGUMENT",
+          "exact_reason": "nonfinite progress state"
+        },
+        {
+          "id": "r_positive_infinity",
+          "field": "r",
+          "nonfinite_category": "positive_infinity",
+          "outcome": "REQUIRED_INVALID_ARGUMENT",
+          "exact_reason": "nonfinite progress state"
+        },
+        {
+          "id": "r_negative_infinity",
+          "field": "r",
+          "nonfinite_category": "negative_infinity",
+          "outcome": "REQUIRED_INVALID_ARGUMENT",
+          "exact_reason": "nonfinite progress state"
+        }
+      ]
+    },
+    {
+      "case_group_id": "initial_joint_over_progress_priority",
+      "observed_status": "PASS",
+      "declared_public_checks": "JOINT_CATEGORY_BEFORE_PROGRESS_CATEGORY_ONLY",
+      "scope": "Fixed synthetic finitecopy/signedzero/nonfinitecategory checks;not physical/livecontext/Model/RSS proof",
+      "nested_required_refusals_are_not_extra_group_observations": true,
+      "controlled_target_entries": 2,
+      "source_declared_subcases": [
+        {
+          "id": "q0_nan_and_s_positive_infinity",
+          "joint_field": "q",
+          "joint_index": 0,
+          "joint_category": "quiet_nan",
+          "progress_field": "s",
+          "progress_category": "positive_infinity",
+          "outcome": "REQUIRED_INVALID_ARGUMENT",
+          "exact_reason": "nonfinite joint vector"
+        },
+        {
+          "id": "w6_negative_infinity_and_r_nan",
+          "joint_field": "w",
+          "joint_index": 6,
+          "joint_category": "negative_infinity",
+          "progress_field": "r",
+          "progress_category": "quiet_nan",
+          "outcome": "REQUIRED_INVALID_ARGUMENT",
+          "exact_reason": "nonfinite joint vector"
+        }
+      ]
+    }
+  ],
+  "expected_outcome_counts": {
+    "PUBLIC_INITIAL_CONTRACT": 11
+  },
+  "all_required_group_refusals_checked_by_original_source": true,
+  "not_motion_or_controller_evidence": true,
+  "controlled_target_entry_count": 97,
+  "controlled_target_entry_outcome_counts": {
+    "accepted_target_entries": 5,
+    "required_invalid_argument_target_entries": 92
+  },
+  "group_count_is_not_target_entry_or_assertion_count": true
+}

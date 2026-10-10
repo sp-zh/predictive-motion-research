@@ -1,0 +1,98 @@
+{
+  "scope": "Finite synthetic initial-state verification; no phase acceptance",
+  "grains": {
+    "left": "One fixed case group",
+    "right": "One entry at the compiled validator callsite"
+  },
+  "selection": "All eleven original groups and 97 declared entries; no curated subset",
+  "counter_scope": "Five accepted entries and 92 required invalid_argument entries; not all C++/native/getter counts or independent experiments",
+  "rows": [
+    {
+      "area": "Finite copy",
+      "case_group_ids": [
+        "initial_zero_copy",
+        "initial_literal_tuple_copy",
+        "initial_source_mutation_independence",
+        "initial_finite_shift_negative_r",
+        "initial_signed_zero_copy"
+      ],
+      "passed_groups": 5,
+      "planned_groups": 5,
+      "controlled_validator_entries": 5
+    },
+    {
+      "area": "Joint NaN / Inf",
+      "case_group_ids": [
+        "initial_q_nonfinite",
+        "initial_v_nonfinite",
+        "initial_C_nonfinite",
+        "initial_w_nonfinite"
+      ],
+      "passed_groups": 4,
+      "planned_groups": 4,
+      "controlled_validator_entries": 84
+    },
+    {
+      "area": "Progress NaN / Inf",
+      "case_group_ids": [
+        "initial_progress_nonfinite"
+      ],
+      "passed_groups": 1,
+      "planned_groups": 1,
+      "controlled_validator_entries": 6
+    },
+    {
+      "area": "Category priority",
+      "case_group_ids": [
+        "initial_joint_over_progress_priority"
+      ],
+      "passed_groups": 1,
+      "planned_groups": 1,
+      "controlled_validator_entries": 2
+    }
+  ],
+  "sources": {
+    "review": {
+      "file": "ROOT_INITIAL_RUNTIME11_REVIEW.json",
+      "sha256": "fae007f6e779821a62f1758b65ea0dee32476417b193c22099f0264c5645330f"
+    },
+    "actual_stdout": {
+      "file": "INITIAL_BOUNDED11_STDOUT.txt",
+      "sha256": "7cdfc5b3ef402d90316a9f35b87252463f2d0ba0c16b25d582de01f0e0a42e74"
+    },
+    "original_roster": {
+      "file": "FIXED_INITIAL_ROSTER_AND_SUBCASES_V1.json",
+      "sha256": "c63092e96bcdc1d1c156fac5d25198a65ccd192c1ca7bb67cb3c3059fa5efd65"
+    },
+    "group_results": {
+      "file": "INITIAL_BOUNDED11_GROUP_RESULTS.json",
+      "sha256": "249ec8b14048ac92219ed42fbf701bac4b1beca280c712419e2e51a5d4108817"
+    }
+  },
+  "renderer": {
+    "script": "plot_algebra_initial_bounded11.py",
+    "sha256": "4720e40ebce0ed7ef5d328e7b6fbf9e58addbfea8081c80f83eb8337885437ea",
+    "matplotlib": "3.10.3",
+    "dpi": 180,
+    "figure_inches": [
+      13,
+      7
+    ],
+    "font": "DejaVu Sans",
+    "bar_color": "#2864B0"
+  },
+  "outputs": [
+    {
+      "file": "algebra_initial_bounded11_outcomes.png",
+      "bytes": 186780,
+      "sha256": "25d77381a756f3f620ff4a17578b25ae222c4920b07818a7541fdce605669e0b"
+    },
+    {
+      "file": "algebra_initial_bounded11_outcomes.svg",
+      "bytes": 17725,
+      "sha256": "0a025a36f3e69fe0668064516cb532c898f27eb225151fdd9afc45960d59a496"
+    }
+  ],
+  "phase5": "NOT_ACCEPTED",
+  "phase6": "NOT_STARTED"
+}
