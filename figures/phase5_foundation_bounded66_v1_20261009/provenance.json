@@ -1,0 +1,67 @@
+{
+  "scope": "Finite foundation development verification; no phase acceptance",
+  "grain": "One fixed test group; nested refusal assertions are not separate observations",
+  "selection": "All 66 frozen groups, original source order; no curated subset",
+  "rows": [
+    {
+      "area": "Checked integer arithmetic",
+      "passed_groups": 9,
+      "planned_groups": 9
+    },
+    {
+      "area": "Decimal cycle parser",
+      "passed_groups": 26,
+      "planned_groups": 26
+    },
+    {
+      "area": "Ordered cycle meshes",
+      "passed_groups": 18,
+      "planned_groups": 18
+    },
+    {
+      "area": "Budget ownership and shared ledgers",
+      "passed_groups": 13,
+      "planned_groups": 13
+    }
+  ],
+  "sources": {
+    "review": {
+      "file": "ROOT_BOUNDED66_RUNTIME_REVIEW.json",
+      "sha256": "05b413a507ed54e4733b33461fe629604a3cca534f5a38fe6991398c5049601f"
+    },
+    "actual_stdout": {
+      "file": "FOUNDATION_BOUNDED66_STDOUT.txt",
+      "sha256": "f5ab2101e8aec6b189dc2f8ee9fdaaebcd7d5fd933851d59890831b032e21f55"
+    },
+    "original_roster": {
+      "file": "FIXED_CASE_ROSTER_V1.json",
+      "sha256": "09986d4fa4707db99bc5b9bc406bd0006e4a9b2a2a4ec4c2a9120eb3113c2306"
+    }
+  },
+  "renderer": {
+    "script": "plot_bounded66.py",
+    "sha256": "349ba12bf91040ba1883c769f0fb805165b4b9d4eed1f269c18e7b7152ddc514",
+    "matplotlib": "3.10.3",
+    "dpi": 180,
+    "figure_inches": [
+      13,
+      7
+    ],
+    "font": "DejaVu Sans",
+    "bar_color": "#2864B0"
+  },
+  "outputs": [
+    {
+      "file": "foundation_bounded66_outcomes.png",
+      "bytes": 160059,
+      "sha256": "6d305f2b04c4c6b72e7213ce4ae2779d91458b3b5fdddae7857ad1110b5ef48a"
+    },
+    {
+      "file": "foundation_bounded66_outcomes.svg",
+      "bytes": 10521,
+      "sha256": "efcf3ea3aefb40337c36a493b05263650657111f54f5c610afa587fbc7e62d81"
+    }
+  ],
+  "phase5": "NOT_ACCEPTED",
+  "phase6": "NOT_STARTED"
+}

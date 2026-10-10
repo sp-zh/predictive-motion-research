@@ -1,0 +1,88 @@
+{
+  "decision": "PASS_FIXED66_FOUNDATION_RUNTIME_ONLY_NOT_PHASE_ACCEPTANCE",
+  "baseline": "c9eb9484b715976f9b3d7d3a732fc5484cd6fd61",
+  "ready_sha256": "e9b87fc02d493d566a2b17c71deb6f09d22ad65914673a149790bcb8d8e74bba",
+  "original_payloads_verified": 31,
+  "production_and_prior_checkpoint_guards_verified": 136,
+  "program_invocations": 1,
+  "exit_code": 0,
+  "signal_number": null,
+  "timeout_or_output_stop": false,
+  "automatic_retries": 0,
+  "case_groups_passed": 66,
+  "case_groups_failed": 0,
+  "area_group_counts": {
+    "integer": 9,
+    "decimal": 26,
+    "mesh": 18,
+    "ledger": 13
+  },
+  "actual_stdout_bytes": 1743,
+  "actual_stdout_sha256": "f5ab2101e8aec6b189dc2f8ee9fdaaebcd7d5fd933851d59890831b032e21f55",
+  "stderr_bytes": 0,
+  "expected_stdout_frozen_before_execution": true,
+  "exact_ordered_stdout_matched": true,
+  "binary_sha256": "4089ac4be17271437cd7969d866ac6ced20362ae2b49f538968e9f6aef70060f",
+  "prepost_identity_records_matched": 56,
+  "unique_requested_paths_matched": 54,
+  "original_artifact_guard_records": 42,
+  "applied_child_limits": {
+    "RLIMIT_CPU": [
+      10,
+      10
+    ],
+    "RLIMIT_AS": [
+      268435456,
+      268435456
+    ],
+    "RLIMIT_CORE": [
+      0,
+      0
+    ],
+    "RLIMIT_FSIZE": [
+      0,
+      0
+    ],
+    "RLIMIT_NOFILE": [
+      32,
+      32
+    ],
+    "RLIMIT_NPROC": [
+      16,
+      16
+    ]
+  },
+  "independent_review": [
+    "All31 payloads and original13-file raw archive/12payloads individually verified and matched retained copies",
+    "Sealed control/actual plan bytes exactly match separately reviewed frozen protocol;single invocation,exit0,no signal/stop/retry",
+    "Expected stdout independently regenerated from original66 ordered roster/source print literals and matched actual1743 raw bytes plus pre-run fixture;stderr empty",
+    "All66 observed group IDs/statuses/category counts match raw ordered PASS output and original fixed roster;required refusals remain within original group checks",
+    "56 actual pre/post identity records exactly match reviewed56 records/54unique paths,including42original artifacts and readonly test/binary inputs",
+    "Child-limit record matches all6 reviewed caps;limits are constraints,not measured physical RAM or performance"
+  ],
+  "foundation_project_functions_actually_exercised": true,
+  "exact_function_call_total_measured": false,
+  "compiler_calls": 0,
+  "link_calls": 0,
+  "scope_excluded_calls": [
+    "identity/files/actualbinding",
+    "commandpreview",
+    "OwnedNumericBuffer materialization",
+    "SDK/Model/helper",
+    "nonempty controller algebra",
+    "Parent",
+    "plant/main experiment/scorer"
+  ],
+  "capture_wait_interval_seconds": 0.0007384640048258007,
+  "capture_interval_scope": "Begins after Popen;not full program walltime,CPUtime or controller deadline evidence",
+  "limits": [
+    "Only these66 grouped integer/parser/mesh/ledger/lease seams passed;not exhaustive full resource pricing or actual buffer allocation/data-lifetime validation",
+    "No full native loader/OS/readset/RSS/performance or general runtime ABI proof",
+    "No Model,controller,plant or accepted complete trajectory;Phase5 remains NOT_ACCEPTED"
+  ],
+  "next_scope": "Source/fixture/protocol preparation for bounded independent ResourcePlan shape/mode/encoding pricing checks;no compilation/link/runtime or model calls in preparation",
+  "publication": "Small actual stdout/group results/provenance,compact authored review/storage and diagnostic figure only;raw host/native/control evidence excluded",
+  "phase5": "NOT_ACCEPTED",
+  "phase6": "NOT_STARTED",
+  "all_previous_sources_failures_and_immutable_checkers_preserved": true
+}

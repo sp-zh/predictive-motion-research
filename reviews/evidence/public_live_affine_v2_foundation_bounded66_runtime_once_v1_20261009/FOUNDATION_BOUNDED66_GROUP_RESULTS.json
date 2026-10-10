@@ -1,0 +1,410 @@
+{
+  "program_invocations": 1,
+  "fixed_case_group_count": 66,
+  "groups": [
+    {
+      "case_group_id": "add_zero_max",
+      "area": "integer",
+      "observed_status": "PASS",
+      "scope": "Grouped original checks including required refusals;not one assertion or motion trajectory"
+    },
+    {
+      "case_group_id": "add_exact_max",
+      "area": "integer",
+      "observed_status": "PASS",
+      "scope": "Grouped original checks including required refusals;not one assertion or motion trajectory"
+    },
+    {
+      "case_group_id": "add_small",
+      "area": "integer",
+      "observed_status": "PASS",
+      "scope": "Grouped original checks including required refusals;not one assertion or motion trajectory"
+    },
+    {
+      "case_group_id": "multiply_zero_max",
+      "area": "integer",
+      "observed_status": "PASS",
+      "scope": "Grouped original checks including required refusals;not one assertion or motion trajectory"
+    },
+    {
+      "case_group_id": "multiply_max_one",
+      "area": "integer",
+      "observed_status": "PASS",
+      "scope": "Grouped original checks including required refusals;not one assertion or motion trajectory"
+    },
+    {
+      "case_group_id": "multiply_square_below_overflow",
+      "area": "integer",
+      "observed_status": "PASS",
+      "scope": "Grouped original checks including required refusals;not one assertion or motion trajectory"
+    },
+    {
+      "case_group_id": "add_overflow",
+      "area": "integer",
+      "observed_status": "PASS",
+      "scope": "Grouped original checks including required refusals;not one assertion or motion trajectory"
+    },
+    {
+      "case_group_id": "multiply_overflow",
+      "area": "integer",
+      "observed_status": "PASS",
+      "scope": "Grouped original checks including required refusals;not one assertion or motion trajectory"
+    },
+    {
+      "case_group_id": "multiply_square_overflow",
+      "area": "integer",
+      "observed_status": "PASS",
+      "scope": "Grouped original checks including required refusals;not one assertion or motion trajectory"
+    },
+    {
+      "case_group_id": "decimal_one_cycle",
+      "area": "decimal",
+      "observed_status": "PASS",
+      "scope": "Grouped original checks including required refusals;not one assertion or motion trajectory"
+    },
+    {
+      "case_group_id": "decimal_leading_dot",
+      "area": "decimal",
+      "observed_status": "PASS",
+      "scope": "Grouped original checks including required refusals;not one assertion or motion trajectory"
+    },
+    {
+      "case_group_id": "decimal_200",
+      "area": "decimal",
+      "observed_status": "PASS",
+      "scope": "Grouped original checks including required refusals;not one assertion or motion trajectory"
+    },
+    {
+      "case_group_id": "decimal_375",
+      "area": "decimal",
+      "observed_status": "PASS",
+      "scope": "Grouped original checks including required refusals;not one assertion or motion trajectory"
+    },
+    {
+      "case_group_id": "decimal_one_second",
+      "area": "decimal",
+      "observed_status": "PASS",
+      "scope": "Grouped original checks including required refusals;not one assertion or motion trajectory"
+    },
+    {
+      "case_group_id": "decimal_leading_trailing_zeros",
+      "area": "decimal",
+      "observed_status": "PASS",
+      "scope": "Grouped original checks including required refusals;not one assertion or motion trajectory"
+    },
+    {
+      "case_group_id": "decimal_374",
+      "area": "decimal",
+      "observed_status": "PASS",
+      "scope": "Grouped original checks including required refusals;not one assertion or motion trajectory"
+    },
+    {
+      "case_group_id": "decimal_empty",
+      "area": "decimal",
+      "observed_status": "PASS",
+      "scope": "Grouped original checks including required refusals;not one assertion or motion trajectory"
+    },
+    {
+      "case_group_id": "decimal_zero",
+      "area": "decimal",
+      "observed_status": "PASS",
+      "scope": "Grouped original checks including required refusals;not one assertion or motion trajectory"
+    },
+    {
+      "case_group_id": "decimal_off_lattice",
+      "area": "decimal",
+      "observed_status": "PASS",
+      "scope": "Grouped original checks including required refusals;not one assertion or motion trajectory"
+    },
+    {
+      "case_group_id": "decimal_quarter",
+      "area": "decimal",
+      "observed_status": "PASS",
+      "scope": "Grouped original checks including required refusals;not one assertion or motion trajectory"
+    },
+    {
+      "case_group_id": "decimal_three_quarters",
+      "area": "decimal",
+      "observed_status": "PASS",
+      "scope": "Grouped original checks including required refusals;not one assertion or motion trajectory"
+    },
+    {
+      "case_group_id": "decimal_fraction_over_cap",
+      "area": "decimal",
+      "observed_status": "PASS",
+      "scope": "Grouped original checks including required refusals;not one assertion or motion trajectory"
+    },
+    {
+      "case_group_id": "decimal_over_cap",
+      "area": "decimal",
+      "observed_status": "PASS",
+      "scope": "Grouped original checks including required refusals;not one assertion or motion trajectory"
+    },
+    {
+      "case_group_id": "decimal_negative",
+      "area": "decimal",
+      "observed_status": "PASS",
+      "scope": "Grouped original checks including required refusals;not one assertion or motion trajectory"
+    },
+    {
+      "case_group_id": "decimal_plus",
+      "area": "decimal",
+      "observed_status": "PASS",
+      "scope": "Grouped original checks including required refusals;not one assertion or motion trajectory"
+    },
+    {
+      "case_group_id": "decimal_exponent",
+      "area": "decimal",
+      "observed_status": "PASS",
+      "scope": "Grouped original checks including required refusals;not one assertion or motion trajectory"
+    },
+    {
+      "case_group_id": "decimal_space",
+      "area": "decimal",
+      "observed_status": "PASS",
+      "scope": "Grouped original checks including required refusals;not one assertion or motion trajectory"
+    },
+    {
+      "case_group_id": "decimal_two_dots",
+      "area": "decimal",
+      "observed_status": "PASS",
+      "scope": "Grouped original checks including required refusals;not one assertion or motion trajectory"
+    },
+    {
+      "case_group_id": "decimal_final_dot",
+      "area": "decimal",
+      "observed_status": "PASS",
+      "scope": "Grouped original checks including required refusals;not one assertion or motion trajectory"
+    },
+    {
+      "case_group_id": "decimal_only_dot",
+      "area": "decimal",
+      "observed_status": "PASS",
+      "scope": "Grouped original checks including required refusals;not one assertion or motion trajectory"
+    },
+    {
+      "case_group_id": "decimal_letters",
+      "area": "decimal",
+      "observed_status": "PASS",
+      "scope": "Grouped original checks including required refusals;not one assertion or motion trajectory"
+    },
+    {
+      "case_group_id": "decimal_length33",
+      "area": "decimal",
+      "observed_status": "PASS",
+      "scope": "Grouped original checks including required refusals;not one assertion or motion trajectory"
+    },
+    {
+      "case_group_id": "decimal_numerator_overflow",
+      "area": "decimal",
+      "observed_status": "PASS",
+      "scope": "Grouped original checks including required refusals;not one assertion or motion trajectory"
+    },
+    {
+      "case_group_id": "decimal_scaled_overflow",
+      "area": "decimal",
+      "observed_status": "PASS",
+      "scope": "Grouped original checks including required refusals;not one assertion or motion trajectory"
+    },
+    {
+      "case_group_id": "decimal_denominator_overflow",
+      "area": "decimal",
+      "observed_status": "PASS",
+      "scope": "Grouped original checks including required refusals;not one assertion or motion trajectory"
+    },
+    {
+      "case_group_id": "mesh_uniform_20_200",
+      "area": "mesh",
+      "observed_status": "PASS",
+      "scope": "Grouped original checks including required refusals;not one assertion or motion trajectory"
+    },
+    {
+      "case_group_id": "mesh_balanced_20_375",
+      "area": "mesh",
+      "observed_status": "PASS",
+      "scope": "Grouped original checks including required refusals;not one assertion or motion trajectory"
+    },
+    {
+      "case_group_id": "mesh_explicit_4_10",
+      "area": "mesh",
+      "observed_status": "PASS",
+      "scope": "Grouped original checks including required refusals;not one assertion or motion trajectory"
+    },
+    {
+      "case_group_id": "mesh_explicit_1_375",
+      "area": "mesh",
+      "observed_status": "PASS",
+      "scope": "Grouped original checks including required refusals;not one assertion or motion trajectory"
+    },
+    {
+      "case_group_id": "mesh_zero_n",
+      "area": "mesh",
+      "observed_status": "PASS",
+      "scope": "Grouped original checks including required refusals;not one assertion or motion trajectory"
+    },
+    {
+      "case_group_id": "mesh_n_over_cap",
+      "area": "mesh",
+      "observed_status": "PASS",
+      "scope": "Grouped original checks including required refusals;not one assertion or motion trajectory"
+    },
+    {
+      "case_group_id": "mesh_zero_total",
+      "area": "mesh",
+      "observed_status": "PASS",
+      "scope": "Grouped original checks including required refusals;not one assertion or motion trajectory"
+    },
+    {
+      "case_group_id": "mesh_total_below_n",
+      "area": "mesh",
+      "observed_status": "PASS",
+      "scope": "Grouped original checks including required refusals;not one assertion or motion trajectory"
+    },
+    {
+      "case_group_id": "mesh_total_over_cap",
+      "area": "mesh",
+      "observed_status": "PASS",
+      "scope": "Grouped original checks including required refusals;not one assertion or motion trajectory"
+    },
+    {
+      "case_group_id": "mesh_uniform_remainder",
+      "area": "mesh",
+      "observed_status": "PASS",
+      "scope": "Grouped original checks including required refusals;not one assertion or motion trajectory"
+    },
+    {
+      "case_group_id": "mesh_uniform_extra",
+      "area": "mesh",
+      "observed_status": "PASS",
+      "scope": "Grouped original checks including required refusals;not one assertion or motion trajectory"
+    },
+    {
+      "case_group_id": "mesh_balanced_extra",
+      "area": "mesh",
+      "observed_status": "PASS",
+      "scope": "Grouped original checks including required refusals;not one assertion or motion trajectory"
+    },
+    {
+      "case_group_id": "mesh_explicit_empty",
+      "area": "mesh",
+      "observed_status": "PASS",
+      "scope": "Grouped original checks including required refusals;not one assertion or motion trajectory"
+    },
+    {
+      "case_group_id": "mesh_explicit_wrong_size",
+      "area": "mesh",
+      "observed_status": "PASS",
+      "scope": "Grouped original checks including required refusals;not one assertion or motion trajectory"
+    },
+    {
+      "case_group_id": "mesh_explicit_zero",
+      "area": "mesh",
+      "observed_status": "PASS",
+      "scope": "Grouped original checks including required refusals;not one assertion or motion trajectory"
+    },
+    {
+      "case_group_id": "mesh_explicit_wrong_sum",
+      "area": "mesh",
+      "observed_status": "PASS",
+      "scope": "Grouped original checks including required refusals;not one assertion or motion trajectory"
+    },
+    {
+      "case_group_id": "mesh_explicit_cell_over_cap",
+      "area": "mesh",
+      "observed_status": "PASS",
+      "scope": "Grouped original checks including required refusals;not one assertion or motion trajectory"
+    },
+    {
+      "case_group_id": "mesh_bad_enum",
+      "area": "mesh",
+      "observed_status": "PASS",
+      "scope": "Grouped original checks including required refusals;not one assertion or motion trajectory"
+    },
+    {
+      "case_group_id": "ledger_ticket_move_and_release",
+      "area": "ledger",
+      "observed_status": "PASS",
+      "scope": "Grouped original checks including required refusals;not one assertion or motion trajectory"
+    },
+    {
+      "case_group_id": "ledger_owner_lifetime",
+      "area": "ledger",
+      "observed_status": "PASS",
+      "scope": "Grouped original checks including required refusals;not one assertion or motion trajectory"
+    },
+    {
+      "case_group_id": "ledger_share_and_distinct_case",
+      "area": "ledger",
+      "observed_status": "PASS",
+      "scope": "Grouped original checks including required refusals;not one assertion or motion trajectory"
+    },
+    {
+      "case_group_id": "ledger_case_live_boundary",
+      "area": "ledger",
+      "observed_status": "PASS",
+      "scope": "Grouped original checks including required refusals;not one assertion or motion trajectory"
+    },
+    {
+      "case_group_id": "ledger_case_cumulative_boundary",
+      "area": "ledger",
+      "observed_status": "PASS",
+      "scope": "Grouped original checks including required refusals;not one assertion or motion trajectory"
+    },
+    {
+      "case_group_id": "ledger_batch_live_boundary",
+      "area": "ledger",
+      "observed_status": "PASS",
+      "scope": "Grouped original checks including required refusals;not one assertion or motion trajectory"
+    },
+    {
+      "case_group_id": "ledger_batch_cumulative_boundary",
+      "area": "ledger",
+      "observed_status": "PASS",
+      "scope": "Grouped original checks including required refusals;not one assertion or motion trajectory"
+    },
+    {
+      "case_group_id": "ledger_metadata_output_boundary",
+      "area": "ledger",
+      "observed_status": "PASS",
+      "scope": "Grouped original checks including required refusals;not one assertion or motion trajectory"
+    },
+    {
+      "case_group_id": "ledger_checked_overflow_atomic",
+      "area": "ledger",
+      "observed_status": "PASS",
+      "scope": "Grouped original checks including required refusals;not one assertion or motion trajectory"
+    },
+    {
+      "case_group_id": "ledger_moved_from_batch",
+      "area": "ledger",
+      "observed_status": "PASS",
+      "scope": "Grouped original checks including required refusals;not one assertion or motion trajectory"
+    },
+    {
+      "case_group_id": "ledger_moved_from_case",
+      "area": "ledger",
+      "observed_status": "PASS",
+      "scope": "Grouped original checks including required refusals;not one assertion or motion trajectory"
+    },
+    {
+      "case_group_id": "ledger_moved_from_shared",
+      "area": "ledger",
+      "observed_status": "PASS",
+      "scope": "Grouped original checks including required refusals;not one assertion or motion trajectory"
+    },
+    {
+      "case_group_id": "ledger_chunk_reentry_poison",
+      "area": "ledger",
+      "observed_status": "PASS",
+      "scope": "Grouped original checks including required refusals;not one assertion or motion trajectory"
+    }
+  ],
+  "area_counts": {
+    "integer": 9,
+    "decimal": 26,
+    "mesh": 18,
+    "ledger": 13
+  },
+  "all_required_group_refusals_checked_by_original_source": true,
+  "not_motion_or_controller_evidence": true
+}

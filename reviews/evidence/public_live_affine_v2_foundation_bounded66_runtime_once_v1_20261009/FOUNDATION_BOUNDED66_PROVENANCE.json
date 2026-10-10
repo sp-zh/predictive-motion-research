@@ -1,0 +1,32 @@
+{
+  "scope": "One actual bounded development test execution;66 grouped foundation seam checks,not motion/controller evidence",
+  "baseline": "c9eb9484b715976f9b3d7d3a732fc5484cd6fd61",
+  "program_invocations": 1,
+  "expected_case_groups": 66,
+  "passed_case_groups": 66,
+  "failed_case_groups": 0,
+  "source_cpp_sha256": "3599fbb01022ee3f26b7d9cdca404855b1d8949498bf907dd4ceb81d7bcb6490",
+  "source_expected_header_sha256": "72ff013c43e44b625019b9a13c202eb971b49c0ece8af7feae634722226ca8ce",
+  "test_object_sha256": "848e6f6f5bfa606a074934a4a202a62581c23b45041b1a43bf2164ea4721f487",
+  "actual_binary_sha256": "4089ac4be17271437cd7969d866ac6ced20362ae2b49f538968e9f6aef70060f",
+  "stdout": {
+    "path": "FOUNDATION_BOUNDED66_STDOUT.txt",
+    "bytes": 1743,
+    "sha256": "f5ab2101e8aec6b189dc2f8ee9fdaaebcd7d5fd933851d59890831b032e21f55"
+  },
+  "stderr_bytes": 0,
+  "fixed_expected_stdout_sha256": "f5ab2101e8aec6b189dc2f8ee9fdaaebcd7d5fd933851d59890831b032e21f55",
+  "expected_data_frozen_before_outputs": true,
+  "area_group_counts": {
+    "integer": 9,
+    "decimal": 26,
+    "mesh": 18,
+    "ledger": 13
+  },
+  "group_result_path": "FOUNDATION_BOUNDED66_GROUP_RESULTS.json",
+  "group_result_sha256": "095e059852f0b7c03cf472503ad274f1d073bcf5ed7d7df865f89236e7bd88d8",
+  "selection": "All original66groups from the one admitted execution;no omitted cases or chosen successful seeds;expected refusals form part of successful groups.",
+  "scope_limits": "No controller/Model/SDK/main experiment/plant/scorer or numeric buffer materialization;does not validate full planner/resource pricing/identity/context/buffer/loader/RSS/performance or phase acceptance.",
+  "phase5": "NOT_ACCEPTED",
+  "phase6": "NOT_STARTED"
+}
