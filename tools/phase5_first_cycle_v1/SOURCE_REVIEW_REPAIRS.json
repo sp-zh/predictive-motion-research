@@ -1,0 +1,20 @@
+{
+  "schema": "FIRST_CYCLE_SOURCE_REPAIRS_1",
+  "unexecuted_initial_entry_archive": {
+    "file": "UNEXECUTED_ENTRY_DRAFT_BEFORE_REVIEW_REPAIRS_EXCLUDED.tar.gz",
+    "bytes": 13085,
+    "sha256": "8bbd6afcb9d5c4c5b453d21a0a97def8730e9ecdb845452b2e9b0e030d2ea811"
+  },
+  "repairs": [
+    "Preparse ranges and expected anchor before actual observation, validate original actual capture age immediately; no age refresh",
+    "Cross-bind outer observer XML/constants to original V1 protocol",
+    "Retain partial observer state/counters and exactly one after-observer attempt after initialized main-chain failure",
+    "Keep original nominal lossless/fsynced before adapter; use direct orchestration with original helper retained unchanged",
+    "Candidate refusal retains evidence and returns nonzero; data-only request cannot release execution",
+    "Build helper version2 retains first failure, clamped/applied limits, exact before/after input identities/rosters, bounded stream capture and own process group cleanup even when direct parent has already exited",
+    "Close captured pipe handles after bounded drain; reap child even when process group already absent"
+  ],
+  "unchanged_core_files": 6,
+  "unchanged_production_backend_and_header": 2,
+  "no_execution": true
+}

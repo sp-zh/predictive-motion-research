@@ -1,0 +1,133 @@
+{
+  "scope": "Source/preparation diagram, no target runtime evidence",
+  "review_sha256": "dd096a14ac3c8c57b76bfdf23b9cd6536cb251d6f6b15a107a71369ce95abd5f",
+  "source_records": [
+    {
+      "path": "tools/phase5_first_cycle_v1/BUILD_PREPARATION_SCOPE.md",
+      "bytes": 3959,
+      "sha256": "689bc87b0e8b350997c7d6b401fa4712dd699b6115e96586bc67593972a67a31"
+    },
+    {
+      "path": "tools/phase5_first_cycle_v1/CMakeLists.txt",
+      "bytes": 617,
+      "sha256": "3af6792c8538e0821f09eb61bbe85834cff3f77fed3acc168e73e13e392c8428"
+    },
+    {
+      "path": "tools/phase5_first_cycle_v1/ENTRY_OBSERVER_OUTPUT_CONTRACT.md",
+      "bytes": 8315,
+      "sha256": "d87283feec7f5bd073ccbb40ae44072382e364da729035c8069b50308e213d64"
+    },
+    {
+      "path": "tools/phase5_first_cycle_v1/FIRST_CYCLE_RUNTIME_SCOPE_DRAFT.json",
+      "bytes": 2512,
+      "sha256": "6318469c463a6d70421b32695f3ee47da5f4e8b5bc6b0ccb0c12dd3911b29927"
+    },
+    {
+      "path": "tools/phase5_first_cycle_v1/README.md",
+      "bytes": 1089,
+      "sha256": "f45f37b37cf7598204904fe6fea91df8e06d50bcd90a05817ebe04088b662595"
+    },
+    {
+      "path": "tools/phase5_first_cycle_v1/SOURCE_REVIEW_REPAIRS.json",
+      "bytes": 1273,
+      "sha256": "636fa010736f6f9a93480685eebcf2fa139c5cb4f50ee490c40628a4a5fca8a0"
+    },
+    {
+      "path": "tools/phase5_first_cycle_v1/backend/reactive_qp.cpp",
+      "bytes": 23205,
+      "sha256": "7f0b10b09c66c078e2342ebd1cc44ba636f76a59c5d908b0a15392ea6d589507"
+    },
+    {
+      "path": "tools/phase5_first_cycle_v1/bootstrap_observer.cpp",
+      "bytes": 6979,
+      "sha256": "6ec04e4593d51b2b14cb5154bb2ca3aa7639e206eaeabb6b3dea017cb1b491de"
+    },
+    {
+      "path": "tools/phase5_first_cycle_v1/bootstrap_observer.hpp",
+      "bytes": 1937,
+      "sha256": "5b707c84085821d5dab5fdbccad99b243c2a89dd35af9694b73865216b99914f"
+    },
+    {
+      "path": "tools/phase5_first_cycle_v1/build_once_v2.py",
+      "bytes": 7558,
+      "sha256": "addb4b0a23be6d1cc5e0902871cf33e936e476b6f077269d7efac55c3a909800"
+    },
+    {
+      "path": "tools/phase5_first_cycle_v1/core/first_cycle_component.cpp",
+      "bytes": 1853,
+      "sha256": "7103db6daf2f6cf28eae0ff77ec205304b56137ae3990408b92b86790b9a56dd"
+    },
+    {
+      "path": "tools/phase5_first_cycle_v1/core/first_cycle_component.hpp",
+      "bytes": 770,
+      "sha256": "14bda619fa48089d4811d069415e1ddd4fe21bc68339502e2fae45ac4de8d48c"
+    },
+    {
+      "path": "tools/phase5_first_cycle_v1/core/integrated_horizon_qp.cpp",
+      "bytes": 26664,
+      "sha256": "bd8bfc327efd0f3301de42df444d35fe52f1485df62b5b45fdd9f3fb063b934a"
+    },
+    {
+      "path": "tools/phase5_first_cycle_v1/core/integrated_horizon_qp.hpp",
+      "bytes": 7735,
+      "sha256": "5b2f4bc52a1911852917f0a6cc6c44d7c1ae8fafe0cdd0bdf25277e87354f696"
+    },
+    {
+      "path": "tools/phase5_first_cycle_v1/core/task_local_provider.cpp",
+      "bytes": 1843,
+      "sha256": "0b0dabcbe70ead3de45818cecb6cacab603434ed33716f2a8b901ce0614ecd6a"
+    },
+    {
+      "path": "tools/phase5_first_cycle_v1/core/task_local_provider.hpp",
+      "bytes": 644,
+      "sha256": "0d5c11557b9a0831e3ff6ce8cb62cfddcddb03b97f7f839bd6ae83d835fd6380"
+    },
+    {
+      "path": "tools/phase5_first_cycle_v1/include/predictive_motion_control/reactive_qp.hpp",
+      "bytes": 5277,
+      "sha256": "75efe6117b7d833497a05d766eb9d7d0a4299a12af68e67dbb578b0f1095c784"
+    },
+    {
+      "path": "tools/phase5_first_cycle_v1/lossless_evidence.cpp",
+      "bytes": 14384,
+      "sha256": "099cc711037cd52fb56ee33966723ce2ad8a9cdad56fa279e14de0051c855e70"
+    },
+    {
+      "path": "tools/phase5_first_cycle_v1/lossless_evidence.hpp",
+      "bytes": 1538,
+      "sha256": "eda57ed1fde3892ba3957cf10bd20273ca176d658bf8237c1ea8ad2ec6415c06"
+    },
+    {
+      "path": "tools/phase5_first_cycle_v1/standalone_first_cycle.cpp",
+      "bytes": 14083,
+      "sha256": "a5e2bf1146b35eaa62cd5404e4527c57804b577096414105b0a0203d1ea44eb2"
+    }
+  ],
+  "selection": "All three standalone pipeline blocks and exact declared build stages",
+  "counts_scope": "Build/source shapes and file identities, not executed compiler/Model calls",
+  "renderer": {
+    "script": "render_first_cycle_preparation.py",
+    "sha256": "d920df2b9ea1eca9c48c6ffad3c23fa8ec9e8cd5e29d761f9bc372628a82520c",
+    "matplotlib": "3.10.3",
+    "font": "DejaVu Sans",
+    "dpi": 180,
+    "figure_inches": [
+      13,
+      7.5
+    ]
+  },
+  "outputs": [
+    {
+      "file": "first_cycle_source_preparation.png",
+      "bytes": 210651,
+      "sha256": "d939a8582631f2368f11c51dbfb39704d7fa40971c0f22d5dcf7466986bf1762"
+    },
+    {
+      "file": "first_cycle_source_preparation.svg",
+      "bytes": 7593,
+      "sha256": "4899b8ce73638929f1c4818ceb24d9a13e02e55fec3da1fb96c20365e1f54272"
+    }
+  ],
+  "phase5": "NOT_ACCEPTED",
+  "phase6": "NOT_STARTED"
+}
