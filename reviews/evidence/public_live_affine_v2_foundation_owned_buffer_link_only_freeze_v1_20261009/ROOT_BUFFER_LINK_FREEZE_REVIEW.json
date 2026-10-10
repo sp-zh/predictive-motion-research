@@ -1,0 +1,78 @@
+{
+  "decision": "PASS_OWNED_BUFFER_SINGLE_LINK_INPUT_FREEZE_ONLY_NOT_LINK_OR_RUNTIME",
+  "baseline": "2ce0a4f20090a093ea5bda5afd8ecb74dd0d1424",
+  "ready_sha256": "71145fba8ea895d665def1703d061a38bd723762581abe90583f6272ea474c4e",
+  "original_payloads_verified": 11,
+  "production_and_prior_guards_verified": 193,
+  "readonly_link_files": 2,
+  "prior_project_artifact_source_guards": 53,
+  "current_native_link_identities": 33,
+  "historical_native_origin_labels_preserved": true,
+  "future_prepost_role_records": 88,
+  "unique_requested_paths": 88,
+  "unique_resolved_files": 81,
+  "root_independent_remote_recheck": {
+    "records_verified": 88,
+    "named_absences_verified": 2,
+    "source_directory_guards_verified": 4,
+    "readonly_link_inputs": 2,
+    "link_attempt_absent": true,
+    "link_and_program_calls": 0
+  },
+  "independent_file_byte_symbols": {
+    "archive_members_matched_original": 3,
+    "buffer_project_undefined_symbols": 15,
+    "all_defined_by_resources_member": true,
+    "resources_member_project_undefined_symbols": 0,
+    "extraction_prediction_only_actual_map_required": true
+  },
+  "harness_review": "Exact reviewed pricing-link V2 pattern after control filenames, owned buffer filename and pinned digest changes; sorted fixed roster checked; AST parsed only; one dispatch-gated Popen and no output execution",
+  "limits": {
+    "CPU_seconds": [
+      110,
+      110
+    ],
+    "AS_bytes": [
+      4294967296,
+      4294967296
+    ],
+    "CORE_bytes": [
+      0,
+      0
+    ],
+    "FSIZE_bytes": [
+      134217728,
+      134217728
+    ],
+    "NOFILE": [
+      64,
+      64
+    ]
+  },
+  "wall_timeout_seconds": 120,
+  "combined_output_cap_bytes": 1048576,
+  "fixed_replaced_environment": {
+    "PATH": "/usr/bin:/bin",
+    "LANG": "C",
+    "LC_ALL": "C",
+    "TZ": "UTC"
+  },
+  "diagnostic_retention": "Actual raw stream bytes/hashes retained including warnings; no empty-stderr assumption or suppression; nonzero/signal/timeout/cap/drift stops without retry",
+  "compiler_queries": 0,
+  "compiler_calls": 0,
+  "link_calls": 0,
+  "program_runs": 0,
+  "production_CPP_function_calls": 0,
+  "buffer_groups_executed": 0,
+  "actual_owned_numeric_buffer_allocations": 0,
+  "scope_limits": [
+    "Finite33 native/default-link identities and two named specs absences do not establish full OS/search/readset/native/RSS closure",
+    "Symbol coverage predicts one resources member; actual linker selection requires future emitted map",
+    "Successful linking cannot validate values/moves/ledger accounting/refusals or authorize a test run",
+    "Private destruction order remains static; bad_alloc and host-size overflow remain deferred; prior66 and85 results/figures and all failures preserved"
+  ],
+  "next_admitted_unit": "Separate exact one-link-only invocation after verified milestone backup; no binary execution/retry/repair",
+  "publication": "Compact root review/storage only; raw object/archive/symbols/controls/native indexes excluded",
+  "phase5": "NOT_ACCEPTED",
+  "phase6": "NOT_STARTED"
+}
