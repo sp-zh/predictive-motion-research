@@ -1,0 +1,128 @@
+{
+  "source": "GitHub API via gh, actualcompleted hostedjob",
+  "run": {
+    "conclusion": "success",
+    "headSha": "1aa607c0909ed4d7395609dcf9706f5fccf33c61",
+    "jobs": [
+      {
+        "completedAt": "2026-10-10T22:18:17Z",
+        "conclusion": "success",
+        "databaseId": 114326312776,
+        "name": "validation",
+        "startedAt": "2026-10-10T22:14:48Z",
+        "status": "completed",
+        "steps": [
+          {
+            "completedAt": "2026-10-10T22:14:50Z",
+            "conclusion": "success",
+            "name": "Set up job",
+            "number": 1,
+            "startedAt": "2026-10-10T22:14:49Z",
+            "status": "completed"
+          },
+          {
+            "completedAt": "2026-10-10T22:15:25Z",
+            "conclusion": "success",
+            "name": "Initialize containers",
+            "number": 2,
+            "startedAt": "2026-10-10T22:14:50Z",
+            "status": "completed"
+          },
+          {
+            "completedAt": "2026-10-10T22:15:28Z",
+            "conclusion": "success",
+            "name": "Run actions/checkout@11d5960a326750d5838078e36cf38b85af677262",
+            "number": 3,
+            "startedAt": "2026-10-10T22:15:25Z",
+            "status": "completed"
+          },
+          {
+            "completedAt": "2026-10-10T22:15:28Z",
+            "conclusion": "success",
+            "name": "Verify dependency image consistency",
+            "number": 4,
+            "startedAt": "2026-10-10T22:15:28Z",
+            "status": "completed"
+          },
+          {
+            "completedAt": "2026-10-10T22:15:29Z",
+            "conclusion": "success",
+            "name": "Check CI failure controls",
+            "number": 5,
+            "startedAt": "2026-10-10T22:15:28Z",
+            "status": "completed"
+          },
+          {
+            "completedAt": "2026-10-10T22:18:11Z",
+            "conclusion": "success",
+            "name": "Fetch locked models, compile and execute tests",
+            "number": 6,
+            "startedAt": "2026-10-10T22:15:29Z",
+            "status": "completed"
+          },
+          {
+            "completedAt": "2026-10-10T22:18:11Z",
+            "conclusion": "success",
+            "name": "Verify complete original test inventory",
+            "number": 7,
+            "startedAt": "2026-10-10T22:18:11Z",
+            "status": "completed"
+          },
+          {
+            "completedAt": "2026-10-10T22:18:11Z",
+            "conclusion": "success",
+            "name": "Record environment",
+            "number": 8,
+            "startedAt": "2026-10-10T22:18:11Z",
+            "status": "completed"
+          },
+          {
+            "completedAt": "2026-10-10T22:18:13Z",
+            "conclusion": "success",
+            "name": "Preserve explicit CI diagnostics",
+            "number": 9,
+            "startedAt": "2026-10-10T22:18:11Z",
+            "status": "completed"
+          },
+          {
+            "completedAt": "2026-10-10T22:18:14Z",
+            "conclusion": "success",
+            "name": "Post Run actions/checkout@11d5960a326750d5838078e36cf38b85af677262",
+            "number": 17,
+            "startedAt": "2026-10-10T22:18:13Z",
+            "status": "completed"
+          },
+          {
+            "completedAt": "2026-10-10T22:18:15Z",
+            "conclusion": "success",
+            "name": "Stop containers",
+            "number": 18,
+            "startedAt": "2026-10-10T22:18:14Z",
+            "status": "completed"
+          },
+          {
+            "completedAt": "2026-10-10T22:18:15Z",
+            "conclusion": "success",
+            "name": "Complete job",
+            "number": 19,
+            "startedAt": "2026-10-10T22:18:15Z",
+            "status": "completed"
+          }
+        ],
+        "url": "https://github.com/sp-zh/predictive-motion-research/actions/runs/38090687120/job/114326312776"
+      }
+    ],
+    "status": "completed",
+    "url": "https://github.com/sp-zh/predictive-motion-research/actions/runs/38090687120"
+  },
+  "coverage": "scripts/ci.sh Phase0/Phase1/Phase2control package optionalPhase3cases + paired_statistics; pinnedenvironmentcheck and fixed24native/8statistics inventory",
+  "excluded": "Phase4fullServo/QPbenchmarks and Phase5standalonefirstcycle/newpredictiveloop/complete tasks/main/scorer/researchranking",
+  "source_hashes": {
+    "scripts/ci.sh": "8ab5d4b6b152c25094f4cbcf616fa6ba09d437b0a7991179a49fca800b9d99fb",
+    ".github/workflows/ci.yml": "697f474e423f02a689073f0c8c0826c4e0b8288185543c337fc1b91d700ca8ee",
+    "scripts/ci/verify_test_results.py": "164864e964a15a82a70a0a0ff424c16858b69520201787171128ecf7289e3da4"
+  },
+  "log_fetch_first_failure": "Defaultghlogcachepathoutsideworkspace denied; redirectedonlycache to/private/tmp/predictive-motion-gh-cache",
+  "phase5": "NOT_ACCEPTED",
+  "phase6": "NOT_STARTED"
+}

@@ -1,0 +1,55 @@
+{
+  "schema": "FIRST_CYCLE_ACTUAL_TRUSTED_RECORD_FREEZE_SUMMARY_1",
+  "scope": "One exact4file freeze only; no program, controller or staged transport execution",
+  "baseline": "1aa607c0909ed4d7395609dcf9706f5fccf33c61",
+  "Root_authored_records": [
+    {
+      "file": "model_review.json",
+      "bytes": 521,
+      "sha256": "db5fb08faf69d42f6c614a92b4ab023663fb8105f883d460ec57ab04d9a74fad"
+    },
+    {
+      "file": "outer_review.json",
+      "bytes": 1713,
+      "sha256": "98be35629042055d6a28eae5cc94df3cb399ff4638cebcbe2e0c4b680d075910"
+    },
+    {
+      "file": "external_transport.py",
+      "bytes": 6400,
+      "sha256": "ce27dad720fba3825379d2cba33570f7ab23b5abfcf627313dc5f213d437988d"
+    },
+    {
+      "file": "runtime_plan.json",
+      "bytes": 632383,
+      "sha256": "a6e17b16bb088df35bc59e70f17510d352ede01c62a1380e396c938b49a47438"
+    }
+  ],
+  "frozen_files": 4,
+  "readonly_directory_rosters": 1,
+  "file_mode": "0444",
+  "directory_mode": "0555",
+  "freeze_attempts": 1,
+  "freeze_failures": 0,
+  "automatic_retries": 0,
+  "all_four_bytes_exact_Root_authored": true,
+  "old_installed_profile_files_unchanged": 21,
+  "original_inputs_plus_profiles_before_after_exact": 1618,
+  "old_readonly_rosters_unchanged": 18,
+  "original_source_version_mode_unchanged": "0555",
+  "compiled_producer_ELF_unchanged": true,
+  "old_three_proposals_still_NOT_RELEASED": true,
+  "exact_final_CLI_argc": 8,
+  "final_record_bindings_verified_as_JSON_only": true,
+  "actual_parent_applied_and_child_inherited_caps_verified": true,
+  "runtime_attempt_directory_exists": false,
+  "external_runtime_transport_control_directory_exists": false,
+  "canonical_guards_verified": 1736,
+  "retained_Dell_artifact_files": 19,
+  "stage_transport_exit": 0,
+  "filecopy_control_child_exit": 0,
+  "new_staged_transport_or_runtime_controller_import_or_launch": 0,
+  "new_program_CPP_engine_Kinematics_Model_metadata_nominal_inline_QP_plant_calls": 0,
+  "execution_still_requires_next_separate_exact_Root_dispatch": true,
+  "phase5": "NOT_ACCEPTED",
+  "phase6": "NOT_STARTED"
+}

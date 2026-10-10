@@ -18,7 +18,7 @@ bash scripts/phase0/build_test.sh
 
 `fetch_vendor.sh` locks MuJoCo 3.3.7 by archive SHA-256 and Menagerie by full Git commit, then checks the FR3 file manifest. It does not use a changing main branch as the model version. `PM_CACHE` may point to a larger disk for archives, while extracted libraries remain in the Linux checkout. Download/checksum errors fail the setup.
 
-The ROS binary repository is external and may remove old package revisions. Exact Pinocchio package version installation fails rather than silently upgrading; long-term dependency archival remains a reproducibility risk. An uncached rootless Podman build of the source-only Phase 0–3 snapshot passed, with image identity, installed packages, 24 actual unit cases, ROS exchange, 2000-sample numerical validation and installed consumers retained in [the component environment review](../reviews/clean_component_environment_review.md). Docker itself, the editor devcontainer workflow and hosted Actions have not executed. Final research reproduction remains pending.
+The ROS binary repository is external and may remove old package revisions. Exact Pinocchio package version installation fails rather than silently upgrading; long-term dependency archival remains a reproducibility risk. An uncached rootless Podman build of the source-only Phase 0–3 snapshot passed, with image identity, installed packages, 24 actual unit cases, ROS exchange, 2000-sample numerical validation and installed consumers retained in [the component environment review](../reviews/clean_component_environment_review.md). Hosted Actions now has successful pinned-container runs, including [38090687120](https://github.com/sp-zh/predictive-motion-research/actions/runs/38090687120); the editor devcontainer workflow and final research reproduction remain unverified. Hosted component CI is separate from Phase5 execution and research-result reproduction.
 
 ## Phase 0 execution and artifacts
 
@@ -37,7 +37,7 @@ A second checkout/fresh build directory must re-run the same workflow before Pha
 
 ## CI
 
-The GitHub workflow runs the same Linux setup/fetch/build/test scripts on Ubuntu/ROS. Until a GitHub destination is explicitly supplied and the workflow executes there, status is “local CI commands tested” or “untested”, not “GitHub Actions passed”. Repository upload and publication are separate actions.
+The hosted [workflow](https://github.com/sp-zh/predictive-motion-research/actions/runs/38090687120) has run successfully in the pinned Linux dependency image. `scripts/ci.sh` calls Phase0, Phase1 model fetch/build/numerical validation, Phase2 control-package tests/installed consumers and paired-statistics tests. Its inventory verifier requires 24 native GTest cases and 8 statistics tests, with no skipped cases. It does not call the Phase5 standalone source, first-cycle model/QP diagnostic, full closed-loop controller, plant/main/scorer benchmarks or comparative research evaluation. [Phase5 CI migration](ci-phase5-coverage.md) is a separate reviewed path; a green current workflow is not Phase5 acceptance.
 
 `bash scripts/ci.sh` builds and tests the simulation, kinematics and control packages, runs the Phase 1 numerical validation and exercises the installed control library. Phase 3 tests are part of that control package. Full development/evaluation diagnostics use the phase-specific commands in `scripts/phase2/README.md` and `scripts/phase3/README.md` and are separate from fast CI.
 

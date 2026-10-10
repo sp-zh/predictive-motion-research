@@ -2,7 +2,7 @@
 
 A research project investigating finite-horizon posture selection and online path retiming for 7-DoF inspection manipulators. The intended contribution is preventive constraint handling coupled to path progress, evaluated against strong reactive baselines.
 
-**Development status: Phase 0–4 component gates passed, including independently audited post-step observations, constrained QP and actual Servo integration with retained failures; The user resumed the project on 2026-10-07; the pause checkpoint is backed up and scorer-v2 integrity repair is independently reviewed. A single frozen known-input conditional validation passes; main-controller integration and online timing remain pending. Phase5 remains unaccepted. Parametric CAD generation and saved-document checks passed. No validated predictive controller or final comparative research results yet.** The original requirements are preserved in [docs/source/master_project_prompt.md](docs/source/master_project_prompt.md). Phase gates prevent configuration-only or unexecuted code from being reported as completed work.
+**Development status: Phase 0–4 component gates passed with retained failures. Phase5 has a compiled standalone 0.8s predictive-horizon/QP entry and independently verified immutable runtime profiles; its first offline component result, complete repeated controller execution and online timing remain pending. Phase5 is NOT_ACCEPTED and Phase6 is NOT_STARTED. No demonstrated predictive closed-loop advantage over Reactive QP, DLS or Servo is claimed.** The original requirements are preserved in [docs/source/master_project_prompt.md](docs/source/master_project_prompt.md). Historical pauses, conditional diagnostics and rejected protocols remain in the evidence.
 
 Primary platform: Ubuntu 24.04 / ROS 2 Jazzy on Dell WSL2. Primary robot: Franka FR3; planned cross-validation: KUKA iiwa 14. C++ owns runtime math/control/simulation; Python owns experiments and analysis.
 
@@ -27,7 +27,7 @@ sudo bash scripts/phase0/setup_linux.sh
 bash scripts/ci.sh
 ```
 
-See [reproducibility](docs/reproducibility.md) and [Phase 0 review](reviews/phase_0_review.md) for prerequisites and actual evidence. An [uncached rootless Podman build](reviews/clean_component_environment_review.md) independently passed 24 actual unit cases across Phases 0–3, ROS command/state/reset exchange, 2000-sample kinematics validation and four installed consumers. Docker itself, the editor devcontainer workflow and hosted GitHub Actions remain untested; final research reproduction is pending.
+See [reproducibility](docs/reproducibility.md) and [Phase 0 review](reviews/phase_0_review.md) for prerequisites and actual evidence. An [uncached rootless Podman build](reviews/clean_component_environment_review.md) independently passed 24 actual unit cases across Phases 0–3, ROS command/state/reset exchange, 2000-sample kinematics validation and four installed consumers. Hosted GitHub Actions has executed successfully, including [run 38090687120](https://github.com/sp-zh/predictive-motion-research/actions/runs/38090687120) at checkpoint `1aa607c`. Its current scope is the baseline component inventory and statistics tests; it does not build or execute the new Phase5 standalone program or a complete predictive task. The editor devcontainer workflow and final research reproduction remain unverified. See [CI coverage and the Phase5 migration path](docs/ci-phase5-coverage.md).
 
 ![Actual Phase 0 FR3 MuJoCo render](figures/fr3_phase0.png)
 

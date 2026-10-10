@@ -1,0 +1,15 @@
+# Hosted CI coverage and Phase5 migration
+
+Hosted GitHub Actions run [38090687120](https://github.com/sp-zh/predictive-motion-research/actions/runs/38090687120) completed successfully on `1aa607c0909ed4d7395609dcf9706f5fccf33c61`. The job's dependency-image check, failure controls, test execution and complete-inventory check all passed. Its log contains the 2000-sample numerical marker, installed Eigen-only control/nullspace consumers and the required 24 native GTest plus 8 paired-statistics tests. These are component and analysis checks, not a comparative motion-control result.
+
+The current workflow calls `scripts/ci.sh`. It covers the Phase0 plant/ROS checks, Phase1 kinematics/model fetch/build, Phase2 IK and the control package's Phase3 nullspace cases, plus statistics. It does not invoke the separately built Phase5 first-cycle program, the full predictive/replanning loop, candidate nonlinear forward validation, full Phase4 Servo/QP diagnostics, task/main/scorer benchmarks or research comparisons. Phase5 remains NOT_ACCEPTED. No full predictive closed-loop advantage over Reactive QP, DLS or Servo has been established.
+
+A portable Phase5 integration must follow this concrete path:
+
+1. Make the reviewed source/library graph build from repository sources and pinned dependencies in a fresh workspace. Replace Dell-specific installed archives and absolute source/profile paths with generated workspace paths; preserve units, dynamics, solver options and source provenance. Do not execute an archived host ELF as a portable build.
+2. Supply pinned model/URDF/mesh/constants/SDK inputs and generate the exact source/build/SDK/profile manifests from the current job's actual artifacts. Publish required dependency licenses. The first implementation can remain an offline one-cycle component with no actuator step or task acceptance.
+3. Independently review a versioned CI runtime protocol and fresh per-run claims, exact producer/profile/review bindings, bounded process/output limits and complete failure retention. The existing local release is not blanket authorization for unattended CI or extra cases. No workflow may change NOT_RELEASED proposals into self-issued permissions.
+4. Add a build gate and then the specifically authorized component run. Verify genuine nominal completeness, source/metadata/observation identity, all original SI and solver outcomes and before/after state; retain nonzero, unsupported, timeout and partial outputs. A process exit0 alone cannot pass the gate. Do not adapt expected results after failure.
+5. Add repeated complete recorded control tasks only after the session factory, candidate forward, actual plant commit and stop/geometry gates are implemented and reviewed. Record task metrics and matched Reactive QP/DLS/Servo baseline protocols before any ranking. CI completion and scientific acceptance remain separate.
+
+No new Phase5 execution was added to the workflow by this documentation update. The original affine checker, d3d4 freeze, rejected seed91013 v1 and historical failures remain preserved.
