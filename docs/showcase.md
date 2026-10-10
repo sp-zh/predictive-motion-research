@@ -522,3 +522,15 @@ The [owned numeric buffer single-file compilation](../reviews/evidence/public_li
 The [owned numeric buffer link preparation](../reviews/evidence/public_live_affine_v2_foundation_owned_buffer_link_only_freeze_v1_20261009/ROOT_BUFFER_LINK_FREEZE_REVIEW.json) freezes readonly copies of the new object and original foundation archive. Root independently verifies 88 file records (81 resolved files), two named absences and four readonly directory guards. Pure byte symbol analysis finds 15 project symbols, all covered by the resources archive member; actual extraction still requires the emitted linker map. Full preparation evidence has verified Mac/Dell archives. No linker or test program ran, all 13 buffer groups remain unexecuted, and prior actual 66- and 85-group figures retain their scope.
 
 The [owned numeric buffer single link](../reviews/evidence/public_live_affine_v2_foundation_owned_buffer_single_link_only_once_v1_20261009/ROOT_BUFFER_SINGLE_LINK_REVIEW.json) produced an independently inspected x86-64 PIE with only the resources archive member extracted and three direct standard-library dependencies. All 88 frozen input records match before and after; six lexical paths first observed in the actual map retain their post-link labels and resolve to known file identities. Full binary, map and control evidence has verified Mac/Dell archives. The program and all 13 buffer groups remain unexecuted; no value, move, ledger, refusal, allocation, motion or Phase5 acceptance follows. Prior actual 66- and 85-group figures retain their scope.
+
+
+## CI environment infrastructure
+
+![CI environment evidence and pending deployment gates](../figures/ci/ghcr-bootstrap-status.png)
+
+[SVG](../figures/ci/ghcr-bootstrap-status.svg),
+[audited run provenance](../reviews/ci-ghcr-bootstrap-20261009.md),
+[release and rollback runbook](ci-environment.md).
+This shows observed original-environment CI evidence and explicitly pending GHCR
+stages. It is an infrastructure diagnostic, not a robot render or controller
+performance result; no new motion/plant experiment was run for this repair.

@@ -4,6 +4,7 @@ import argparse
 import datetime
 import importlib.metadata
 import json
+import os
 import platform
 import shutil
 import subprocess
@@ -30,6 +31,13 @@ def main():
             packages[name] = None
     inventory = {
         'recorded_utc': datetime.datetime.now(datetime.timezone.utc).isoformat(),
+        'checkout_commit': command(['git', 'rev-parse', 'HEAD']),
+        'workflow_run_id': os.environ.get('GITHUB_RUN_ID'),
+        'workflow_run_attempt': os.environ.get('GITHUB_RUN_ATTEMPT'),
+        'ci_image_reference': os.environ.get('CI_IMAGE_REFERENCE'),
+        'os_release': command(['cat', '/etc/os-release']),
+        'ci_image_metadata': (json.loads(Path('/usr/local/share/predictive-motion-ci/metadata.json').read_text())
+                              if Path('/usr/local/share/predictive-motion-ci/metadata.json').is_file() else None),
         'platform': platform.platform(), 'machine': platform.machine(),
         'python': platform.python_version(), 'python_packages': packages,
         'tools': {name: shutil.which(name) for name in ['c++','cmake','ninja','git','colcon','ros2','docker','FreeCADCmd']},

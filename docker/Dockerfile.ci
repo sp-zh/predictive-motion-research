@@ -1,0 +1,25 @@
+# Environment only; build from an already verified project GHCR base digest.
+ARG ROS_BASE_IMAGE
+FROM ${ROS_BASE_IMAGE}
+ARG ROS_BASE_IMAGE
+ARG SOURCE_COMMIT
+ARG SETUP_SHA256
+ARG ENVIRONMENT_SHA256
+LABEL org.opencontainers.image.source="https://github.com/sp-zh/predictive-motion-research" \
+      org.opencontainers.image.revision="${SOURCE_COMMIT}" \
+      io.predictive-motion.ros-base="${ROS_BASE_IMAGE}" \
+      io.predictive-motion.platform="linux/amd64" \
+      io.predictive-motion.setup-sha256="${SETUP_SHA256}" \
+      io.predictive-motion.environment-sha256="${ENVIRONMENT_SHA256}"
+ENV DEBIAN_FRONTEND=noninteractive
+ENV CMAKE_BUILD_PARALLEL_LEVEL=2 MAKEFLAGS=-j2
+WORKDIR /workspaces/predictive_motion
+COPY scripts/phase0/setup_linux.sh /opt/pm-ci/environment/scripts/phase0/setup_linux.sh
+COPY scripts/check_ci_environment.py /opt/pm-ci/environment/scripts/check_ci_environment.py
+COPY docker/Dockerfile.ci docker/Dockerfile.ci.dockerignore /opt/pm-ci/environment/docker/
+RUN bash /opt/pm-ci/environment/scripts/phase0/setup_linux.sh \
+ && python3 /opt/pm-ci/environment/scripts/check_ci_environment.py record \
+      --root /opt/pm-ci/environment --source-commit "${SOURCE_COMMIT}" \
+      --base-image "${ROS_BASE_IMAGE}" \
+ && rm -rf /var/lib/apt/lists/*
+CMD ["bash"]
