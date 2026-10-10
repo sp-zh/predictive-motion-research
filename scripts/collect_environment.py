@@ -31,7 +31,7 @@ def main():
             packages[name] = None
     inventory = {
         'recorded_utc': datetime.datetime.now(datetime.timezone.utc).isoformat(),
-        'checkout_commit': command(['git', 'rev-parse', 'HEAD']),
+        'checkout_commit': command(['git', '-c', f'safe.directory={Path.cwd().resolve()}', 'rev-parse', 'HEAD']),
         'workflow_run_id': os.environ.get('GITHUB_RUN_ID'),
         'workflow_run_attempt': os.environ.get('GITHUB_RUN_ATTEMPT'),
         'ci_image_reference': os.environ.get('CI_IMAGE_REFERENCE'),

@@ -44,7 +44,8 @@ test scripts, no algorithm edits, and no automatic merge/visibility change were
 reviewed in the complete diff.
 
 Static/host-free checks: actionlint v1.7.12 (official release archive verified
-against upstream checksums), ShellCheck, Bash parse, Python source compile,
+against upstream checksums), Hadolint v2.15.1 (upstream checksum verified),
+ShellCheck, Bash parse, Python source compile,
 15 infrastructure tests, and whitespace/diff review. Tests include real subprocess
 install/test nonzero exits and failed diagnostics, plus dependency-drift controls.
 They do not establish a Linux Docker build, GHCR access or full new-image tests.
@@ -64,3 +65,17 @@ status chart from the two linked baseline Actions logs; five explicit observed
 
 - `figures/ci/ghcr-bootstrap-status.svg`: `59a69f9ab8eb4ea74135c71f5823cbd9d39cfbedb30b2e41a11aea3468eca498`
 - `figures/ci/ghcr-bootstrap-status.png`: `0d1c509984e13131943cff75ea43fccc05a90534f8b2e495afd7aaa8e3dad7fd`
+
+
+Real preparation validation: [push 38016299622](https://github.com/sp-zh/predictive-motion-research/actions/runs/38016299622)
+at `2c647666f4e47639716e1694484c13909faec7cf` completed all original tests,
+the 15 infrastructure cases and the native inventory audit; downloaded XML/logs
+independently confirm 24 native tests, 8 statistics cases and zero skips. The
+artifact confirms x86_64 Ubuntu 24.04.5 and the exact pinned Pinocchio version.
+Its checkout-SHA diagnostic failed with Git dubious ownership even though the
+workflow was green; that failure remains in the run artifact. The collector now
+uses a safe.directory argument limited to this read command and the actual
+workspace path, without global configuration or a wildcard trust exemption.
+This correction still requires a new hosted run. The initial historical baseline
+and all preparation runs remain original ROS/Docker Hub environment evidence,
+not GHCR publication/migration proof.

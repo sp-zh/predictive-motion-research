@@ -5,6 +5,19 @@ Phase 0–4 component gates have passed; Phase 5 awaits independent acceptance.
 These assets illustrate the stated scope and do not establish final research
 performance or physical hardware safety.
 
+
+## CI environment infrastructure
+
+![CI environment evidence and pending deployment gates](../figures/ci/ghcr-bootstrap-status.png)
+
+[SVG](../figures/ci/ghcr-bootstrap-status.svg),
+[audited run provenance](../reviews/ci-ghcr-bootstrap-20261009.md),
+[release and rollback runbook](ci-environment.md).
+This shows observed original-environment CI evidence and explicitly pending GHCR
+stages. It is an infrastructure diagnostic, not a robot render or controller
+performance result; no new motion/plant experiment was run for this repair.
+
+
 ## Task-completion videos
 
 Three curated successful Phase 4 inspection trials, rendered from saved measured
@@ -530,15 +543,3 @@ The [single bounded owned-buffer test run](../reviews/evidence/public_live_affin
 ![Owned numeric buffer verification outcome](../figures/phase5_owned_buffer_bounded13_v1_20261009/owned_buffer_bounded13_outcomes.png)
 
 [Editable SVG](../figures/phase5_owned_buffer_bounded13_v1_20261009/owned_buffer_bounded13_outcomes.svg) · [figure provenance](../figures/phase5_owned_buffer_bounded13_v1_20261009/provenance.json) · [rendering source](../tools/phase5_foundation_verification_visuals/README_owned_buffer_bounded13.md). The 2340 × 1260 export and actual grayscale preview were inspected; all original 13 groups are included in declared 3/7/2/1 categories. These finite checks produced no robot motion video. Existing actual motion assets and every retained failure preserve their scope.
-
-
-## CI environment infrastructure
-
-![CI environment evidence and pending deployment gates](../figures/ci/ghcr-bootstrap-status.png)
-
-[SVG](../figures/ci/ghcr-bootstrap-status.svg),
-[audited run provenance](../reviews/ci-ghcr-bootstrap-20261009.md),
-[release and rollback runbook](ci-environment.md).
-This shows observed original-environment CI evidence and explicitly pending GHCR
-stages. It is an infrastructure diagnostic, not a robot render or controller
-performance result; no new motion/plant experiment was run for this repair.
