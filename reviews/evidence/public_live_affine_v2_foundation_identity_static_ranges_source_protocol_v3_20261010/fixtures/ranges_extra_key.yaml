@@ -1,0 +1,5 @@
+joint_range: [-4, 4, -3.5, 3.5, -3, 3, -2.5, 2.5, -2, 2, -1.5, 1.5, -1, 1]
+control_range: [-8, 8, -7.5, 7.5, -7, 7, -6.5, 6.5, -6, 6, -5.5, 5.5, -5, 5]
+joint_limited: [1, 1, 1, 1, 1, 1, 1]
+control_limited: [1, 1, 1, 1, 1, 1, 1]
+diagnostic_unused_key: 7

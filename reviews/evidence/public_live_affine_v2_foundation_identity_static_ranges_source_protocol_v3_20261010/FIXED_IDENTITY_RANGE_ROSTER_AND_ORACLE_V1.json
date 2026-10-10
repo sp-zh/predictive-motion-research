@@ -1,0 +1,234 @@
+{
+  "groups": [
+    {
+      "id": "identity_plain_bytes",
+      "target_entries": 1,
+      "target_api": "observePinnedFile",
+      "expected": "ACCEPT_IDENTITY"
+    },
+    {
+      "id": "identity_yaml_bytes",
+      "target_entries": 1,
+      "target_api": "observePinnedFile",
+      "expected": "ACCEPT_IDENTITY"
+    },
+    {
+      "id": "ranges_valid_getters",
+      "target_entries": 1,
+      "target_api": "loadPinnedStaticRanges",
+      "expected": "ACCEPT_RANGES"
+    },
+    {
+      "id": "ranges_extra_key_allowed",
+      "target_entries": 1,
+      "target_api": "loadPinnedStaticRanges",
+      "expected": "ACCEPT_RANGES"
+    },
+    {
+      "id": "identity_sha_syntax_before_io",
+      "target_entries": 4,
+      "target_api": "observePinnedFile",
+      "expected": "REQUIRED_INVALID_ARGUMENT_SHA"
+    },
+    {
+      "id": "identity_path_syntax_before_io",
+      "target_entries": 3,
+      "target_api": "observePinnedFile",
+      "expected": "REQUIRED_INVALID_ARGUMENT_PATH"
+    },
+    {
+      "id": "identity_sha_before_bad_path",
+      "target_entries": 1,
+      "target_api": "observePinnedFile",
+      "expected": "REQUIRED_INVALID_ARGUMENT_SHA_PRIORITY"
+    },
+    {
+      "id": "identity_digest_mismatch",
+      "target_entries": 1,
+      "target_api": "observePinnedFile",
+      "expected": "REQUIRED_INVALID_ARGUMENT_DIGEST"
+    },
+    {
+      "id": "identity_empty_file",
+      "target_entries": 1,
+      "target_api": "observePinnedFile",
+      "expected": "REQUIRED_INVALID_ARGUMENT_EMPTY"
+    },
+    {
+      "id": "identity_missing_file",
+      "target_entries": 1,
+      "target_api": "observePinnedFile",
+      "expected": "REQUIRED_RUNTIME_ERROR_OPEN_PREFIX"
+    },
+    {
+      "id": "identity_directory_nonregular",
+      "target_entries": 1,
+      "target_api": "observePinnedFile",
+      "expected": "REQUIRED_INVALID_ARGUMENT_NONREGULAR"
+    },
+    {
+      "id": "range_nonmap",
+      "fixture": "ranges_nonmap.yaml",
+      "message": "static constants must be a keyed object",
+      "target_entries": 1,
+      "target_api": "loadPinnedStaticRanges",
+      "expected": "REQUIRED_INVALID_ARGUMENT_RANGE_RULE"
+    },
+    {
+      "id": "range_duplicate_key",
+      "fixture": "ranges_duplicate_key.yaml",
+      "message": "duplicate static constants key",
+      "target_entries": 1,
+      "target_api": "loadPinnedStaticRanges",
+      "expected": "REQUIRED_INVALID_ARGUMENT_RANGE_RULE"
+    },
+    {
+      "id": "range_joint13",
+      "fixture": "ranges_joint13.yaml",
+      "message": "static range/list roster mismatch",
+      "target_entries": 1,
+      "target_api": "loadPinnedStaticRanges",
+      "expected": "REQUIRED_INVALID_ARGUMENT_RANGE_RULE"
+    },
+    {
+      "id": "range_control15",
+      "fixture": "ranges_control15.yaml",
+      "message": "static range/list roster mismatch",
+      "target_entries": 1,
+      "target_api": "loadPinnedStaticRanges",
+      "expected": "REQUIRED_INVALID_ARGUMENT_RANGE_RULE"
+    },
+    {
+      "id": "range_joint_flags6",
+      "fixture": "ranges_joint_flags6.yaml",
+      "message": "static range/list roster mismatch",
+      "target_entries": 1,
+      "target_api": "loadPinnedStaticRanges",
+      "expected": "REQUIRED_INVALID_ARGUMENT_RANGE_RULE"
+    },
+    {
+      "id": "range_control_flags8",
+      "fixture": "ranges_control_flags8.yaml",
+      "message": "static range/list roster mismatch",
+      "target_entries": 1,
+      "target_api": "loadPinnedStaticRanges",
+      "expected": "REQUIRED_INVALID_ARGUMENT_RANGE_RULE"
+    },
+    {
+      "id": "range_joint_flag0",
+      "fixture": "ranges_joint_flag0.yaml",
+      "message": "fixed bounded FR3 joint and command profile required",
+      "target_entries": 1,
+      "target_api": "loadPinnedStaticRanges",
+      "expected": "REQUIRED_INVALID_ARGUMENT_RANGE_RULE"
+    },
+    {
+      "id": "range_control_flag2",
+      "fixture": "ranges_control_flag2.yaml",
+      "message": "fixed bounded FR3 joint and command profile required",
+      "target_entries": 1,
+      "target_api": "loadPinnedStaticRanges",
+      "expected": "REQUIRED_INVALID_ARGUMENT_RANGE_RULE"
+    },
+    {
+      "id": "range_nan",
+      "fixture": "ranges_nan.yaml",
+      "message": "finite ordered static ranges required",
+      "target_entries": 1,
+      "target_api": "loadPinnedStaticRanges",
+      "expected": "REQUIRED_INVALID_ARGUMENT_RANGE_RULE"
+    },
+    {
+      "id": "range_positive_inf",
+      "fixture": "ranges_positive_inf.yaml",
+      "message": "finite ordered static ranges required",
+      "target_entries": 1,
+      "target_api": "loadPinnedStaticRanges",
+      "expected": "REQUIRED_INVALID_ARGUMENT_RANGE_RULE"
+    },
+    {
+      "id": "range_negative_inf",
+      "fixture": "ranges_negative_inf.yaml",
+      "message": "finite ordered static ranges required",
+      "target_entries": 1,
+      "target_api": "loadPinnedStaticRanges",
+      "expected": "REQUIRED_INVALID_ARGUMENT_RANGE_RULE"
+    },
+    {
+      "id": "range_reversed",
+      "fixture": "ranges_reversed.yaml",
+      "message": "finite ordered static ranges required",
+      "target_entries": 1,
+      "target_api": "loadPinnedStaticRanges",
+      "expected": "REQUIRED_INVALID_ARGUMENT_RANGE_RULE"
+    },
+    {
+      "id": "range_equal",
+      "fixture": "ranges_equal.yaml",
+      "message": "finite ordered static ranges required",
+      "target_entries": 1,
+      "target_api": "loadPinnedStaticRanges",
+      "expected": "REQUIRED_INVALID_ARGUMENT_RANGE_RULE"
+    }
+  ],
+  "group_count": 24,
+  "controlled_target_entries": 29,
+  "observePinnedFile_entries": 14,
+  "loadPinnedStaticRanges_entries": 15,
+  "positive_entries": 4,
+  "required_refusal_entries": 25,
+  "getter_oracle": {
+    "q_lower": [
+      "-4",
+      "-7/2",
+      "-3",
+      "-5/2",
+      "-2",
+      "-3/2",
+      "-1"
+    ],
+    "q_upper": [
+      "4",
+      "7/2",
+      "3",
+      "5/2",
+      "2",
+      "3/2",
+      "1"
+    ],
+    "c_lower": [
+      "-8",
+      "-15/2",
+      "-7",
+      "-13/2",
+      "-6",
+      "-11/2",
+      "-5"
+    ],
+    "c_upper": [
+      "8",
+      "15/2",
+      "7",
+      "13/2",
+      "6",
+      "11/2",
+      "5"
+    ],
+    "limited_flags": [
+      "1",
+      "1",
+      "1",
+      "1",
+      "1",
+      "1",
+      "1"
+    ],
+    "scalar_range_getters": 28
+  },
+  "identity_oracle": "Eachreturnedpath equals pinnedroot/name;bytes+SHA literal independentlycomputed fromdraftfixturebytes,not productionreturnvalues",
+  "extra_keys": "loadPinnedStaticRanges permits unrecognizedkeys;fixtureextra key ACCEPT,not invented exact-mapkeyreject",
+  "error_rules": "SHA/path/regularity/size/digest/map/duplicate/roster/flags/nonfinite/order exact sourceinvalid_argument messages. Missingpath uses runtime_error withliteral sourceprefix only,strerror tailnotdeclaredexact. UnexpectedYAMLexceptions are FAIL,notalternateacceptedoutcomes.",
+  "IO_before_refusal": "SHAandpathsyntax+SHA-vs-pathprioritychecks failbeforeFile.open byoriginalsource order",
+  "nested_checks_not_independent_experiments": true,
+  "whole_CPP_native_counts": "UNMEASURED;29 target calls counted only at explicit controlled wrapper callsites"
+}

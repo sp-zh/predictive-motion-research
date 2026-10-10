@@ -1,0 +1,87 @@
+{
+  "scope": "SOURCE_CANDIDATE_NOT_DISPATCHED",
+  "future_argv": [
+    "future_frozen_binary",
+    "future_frozen_absolute_fixture_directory"
+  ],
+  "compile_root_binding": "RequiredIDENTITY_FIXTURE_ROOT macro pinnedbyfutureexcludedcompileplan;argvroot mustexactmatch;currentCPPdoesnot embed hostpath",
+  "program_invocations": 1,
+  "environment": {
+    "PATH": "/usr/bin:/bin",
+    "LANG": "C",
+    "LC_ALL": "C",
+    "TZ": "UTC"
+  },
+  "stdin": "DEVNULL",
+  "inherit_environment": false,
+  "fresh_emptycwd": true,
+  "wall_seconds": 15,
+  "rlimits": {
+    "CPU": 10,
+    "AS": 268435456,
+    "CORE": 0,
+    "FSIZE": 0,
+    "NOFILE": 32,
+    "NPROC": 16
+  },
+  "stricter_inherited_caps": true,
+  "raw_combined_cap_bytes": 131072,
+  "expected_exit_code": 0,
+  "expected_stderr_bytes": 0,
+  "expected_stdout_bytes": 714,
+  "expected_stdout_sha256": "c1076d9df9c778e50ff46dc76359528502a8c6d8974ff7de7c54a642f1ccddad",
+  "ordered_groups": [
+    "identity_plain_bytes",
+    "identity_yaml_bytes",
+    "ranges_valid_getters",
+    "ranges_extra_key_allowed",
+    "identity_sha_syntax_before_io",
+    "identity_path_syntax_before_io",
+    "identity_sha_before_bad_path",
+    "identity_digest_mismatch",
+    "identity_empty_file",
+    "identity_missing_file",
+    "identity_directory_nonregular",
+    "range_nonmap",
+    "range_duplicate_key",
+    "range_joint13",
+    "range_control15",
+    "range_joint_flags6",
+    "range_control_flags8",
+    "range_joint_flag0",
+    "range_control_flag2",
+    "range_nan",
+    "range_positive_inf",
+    "range_negative_inf",
+    "range_reversed",
+    "range_equal"
+  ],
+  "controlled_target_count_closure": {
+    "total": 29,
+    "observePinnedFile": 14,
+    "loadPinnedStaticRanges": 15,
+    "groups": 24
+  },
+  "allowed_future_effects": [
+    "RealPOSIX open O_RDONLY/CLOEXEC/NOFOLLOW,fstat/read/close ofexactfrozensmallfixtures ordeclaredabsentname/fixturedirectory nonregularcheck",
+    "OpenSSL EVP SHA256 andyaml-cpp parsingthosehashedsamebytes;standardlibs/controlstorage/stdio",
+    "Sharedfileidentity path/bytes/SHA+28rangegetter checks;no permission orModelprofile created"
+  ],
+  "closed_calls": [
+    "Currentproducer/proc/self/exe",
+    "Memberbudgetidentity variants",
+    "LiveActual/first4ms/Model/SDK/permissionfactory",
+    "Affine/cost/capture/solver/Parent/controller/plant/main/scorer",
+    "Arbitraryfiles/directories/realrobotconfig/network/systemconfig"
+  ],
+  "failure_policy": "Firstunexpectedresult/exception/message/IOerror/count/hash/timeout/cap/drift stopsrawprefix/status,no repair/retry/oraclechange",
+  "required_separate_gates": [
+    "Rootsource/fixture/oraclereview+dualarchive+Gitbackup",
+    "Explicit nativefixturestaging/install/freeze includingexactSHA/mode/absence/roster andsource compilemacro binding",
+    "Source/dependency/compilerfreeze+review+backup+onecompile dispatch",
+    "Identitylib/OpenSSL/yaml-cpp finite linkinput/dependency/protocolfreeze+review+backup+one linkdispatch",
+    "Runtimebinary/native/fixture/effectsfrozenplan review+backup+separateonceIOtest dispatch"
+  ],
+  "actual_IO_runtime_permission_current": false,
+  "native_installation_current": false
+}

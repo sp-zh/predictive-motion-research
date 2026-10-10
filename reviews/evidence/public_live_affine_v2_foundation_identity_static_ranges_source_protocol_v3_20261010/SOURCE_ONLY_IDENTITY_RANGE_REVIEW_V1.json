@@ -1,0 +1,43 @@
+{
+  "decision": "PENDING_ROOT_SOURCE_FIXTURE_ORACLE_REVIEW_NOT_COMPILED_INSTALLED_OR_RUN",
+  "baseline": "d9b7297e74c08559e1e3a86496814a4f08759036",
+  "CPP_target_APIs": [
+    "observePinnedFile",
+    "loadPinnedStaticRanges",
+    "StaticDomainRanges getters"
+  ],
+  "proposed_groups": 24,
+  "proposed_controlled_entries": 29,
+  "proposed_identity_entries": 14,
+  "proposed_range_entries": 15,
+  "fixture_count": 17,
+  "actual_draft_fixture_bytes": 3341,
+  "fixturecap": {
+    "per_file": 16384,
+    "aggregate": 65536,
+    "count": 24
+  },
+  "independent_draftSHA_andhalfint_oracle": true,
+  "hostfree_public_source": true,
+  "future_fixedargv_macro_scope_required": true,
+  "NDEBUG_safe_require_andfirstfailurestop": true,
+  "future_trueIO_effects_only_afterseparatedispatch": true,
+  "current": {
+    "native_install": 0,
+    "compiler": 0,
+    "link": 0,
+    "program": 0,
+    "production_CPP_APIs": 0,
+    "SDK_Model": 0,
+    "production_IO": 0
+  },
+  "publication": "Smallsource/fixtures/literalroster/hostfreeprotocol/staticreview/coverageoverlay only;hostindices/raw excluded",
+  "preservation": "All116production/oldcheckerfreezes/pausehistory/5actualunitresultsfigures andallfailures unchanged",
+  "phase5": "NOT_ACCEPTED",
+  "phase6": "NOT_STARTED",
+  "source_revision": 3,
+  "original_V1_preserved_unexecuted": true,
+  "source_only_repair": "Withdrawoneunsupported missingkeyexception oracle/group/fixture;allotherCPP/hppfixture SHA/reasons retained;no production/native/compiler/API actions",
+  "original_V2_preserved_unexecuted": true,
+  "metadata_count_correction": "One descriptive 30-target-call string corrected to 29; CPP/header/fixtures/protocol/expected output unchanged from V2."
+}

@@ -1,0 +1,73 @@
+{
+  "decision": "PASS_VERSION3_IDENTITY_STATIC_RANGE_SOURCE_PROTOCOL_ONLY_NOT_INSTALL_COMPILE_LINK_OR_RUN",
+  "baseline": "d9b7297e74c08559e1e3a86496814a4f08759036",
+  "ready_sha256": "43ec4e2e1c9e374073318b9ea8acf8b813ab3014d9ae64d821902c1f8e14a643",
+  "original_packet_payloads_verified": 30,
+  "production_and_prior_guards_verified": 275,
+  "public_source_fixture_candidates_verified": 26,
+  "planned_groups": 24,
+  "planned_controlled_target_entries": 29,
+  "planned_API_entry_counts": {
+    "observePinnedFile": 14,
+    "loadPinnedStaticRanges": 15
+  },
+  "planned_entry_outcomes": {
+    "accept": 4,
+    "required_refusal": 25
+  },
+  "fixed_fixture_files": 17,
+  "aggregate_fixture_bytes": 3341,
+  "largest_fixture_bytes": 303,
+  "fixture_caps": {
+    "files": 24,
+    "per_file_bytes": 16384,
+    "aggregate_bytes": 65536
+  },
+  "independent_half_integer_range_getter_oracle_scalars": 28,
+  "getter_exactness": "All literalhalf-integers exactly representable;four separate7arrays andYAML flowfixtures checked withFractions and fixedtexttemplates,no YAML orCPP API executed",
+  "expected_future_stdout": {
+    "bytes": 714,
+    "sha256": "c1076d9df9c778e50ff46dc76359528502a8c6d8974ff7de7c54a642f1ccddad",
+    "not_actual_run_output": true
+  },
+  "source_control_review": [
+    "Two sole target wrapper callsites increment totalandAPI counters immediatelybefore invocation;fixed pergroup/final24/29/14/15closure and hardcaps",
+    "Every group matches originalliteralroster;all17filename/SHA/bytes entries and complete text variants independently checked",
+    "Fouraccepted identity/range cases;20refusal groups contain25targetentries,includingone missingfile runtime_error sourceprefix check",
+    "Source getters/path/bytes/SHA and positiveextra-key allowance match frozen production;no invented exactmapkeyrefusal",
+    "Futureabsolutefixture root mustmatch separately reviewed compilemacro andfixedruntimeargv;hostpaths not embedded in publicsource",
+    "No production/source changes;no compilation or executable call proves proposal values"
+  ],
+  "retained_unexecuted_versions": {
+    "V1_regular_files": 28,
+    "V1_payloads": 27,
+    "V2_regular_files": 29,
+    "V2_payloads": 28,
+    "V1_missing_key_oracle_withdrawn": true,
+    "V2_to_V3_description_count_only": true,
+    "no_native_or_project_retry": true
+  },
+  "primary_dependency_reference_scope": "Upstream yaml-cpp0.8.0 source supports .nan/.inf/-.inf conversion and potentially InvalidNode for missing constkey;reference only.Futureexactnativeheader/lib binding mustbe separatelyverifiedbefore admittingcases",
+  "primary_sources": [
+    "https://raw.githubusercontent.com/jbeder/yaml-cpp/0.8.0/include/yaml-cpp/node/convert.h",
+    "https://raw.githubusercontent.com/jbeder/yaml-cpp/0.8.0/include/yaml-cpp/node/impl.h"
+  ],
+  "coverage_overlay": "Only previousAlgebraTestInitial row updated to actualfinite11groups/97controlledentries plus3compiletraits;old21rowauditimmutable,no summeduniqueproperty/ranking/trajectoryclaims",
+  "native_fixture_installations": 0,
+  "compiler_calls": 0,
+  "link_calls": 0,
+  "program_runs": 0,
+  "production_CPP_API_calls": 0,
+  "limits": [
+    "Current proposal not actualfileIO/YAML/runtime result,rangeprofile orModelpermission",
+    "Futureexactread-onlyfixture staging/compiler/link/runtime protocols each require separate reviewed backupanddispatch",
+    "Missingkey/symlink/FIFO/device/race/largecaps/OOM/broadparser/errorversion/currentproducer/memberbudget branches remain deferred",
+    "Syntheticranges notVerifiedModelProfile/SDKphysicaladmission;noLiveActual/first4ms/permission/affine/cost/capture/Parent/plant/scorer",
+    "Fixturelogicalbytecaps notwholeprocessOS/readset/RSS orallocatorbound"
+  ],
+  "publication": "Smallsource/fixtures/oracles/hostfreeprotocol/compactreviews/coverageoverlay only;fullarchives andrepairnotes excluded",
+  "next_scope": "Separately reviewed nativefixture installation and readonly source/fixture freeze preparation only;no compile/link/runtime yet",
+  "phase5": "NOT_ACCEPTED",
+  "phase6": "NOT_STARTED",
+  "all_prior_actual_results_figures_checkerfreezes_and_failures_preserved": true
+}
