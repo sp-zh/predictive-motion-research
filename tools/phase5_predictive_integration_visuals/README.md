@@ -1,0 +1,3 @@
+# Integration dependency diagram
+
+`render_critical_path.py` verifies every pinned source file in the independent critical-path findings JSON, then creates a static PNG/SVG dependency map with provenance. Use `--findings`, `--integration-review`, `--repo` and a fresh `--output-dir`. The output uses Matplotlib 3.10.3, DejaVu Sans, 14×7.5 inches and 180 DPI; color and grayscale exports must be inspected. This is source architecture evidence, not a numerical result, completed simulation or safety claim. Retained early factor-convention review and wrapping drafts remain separate from the final map.

@@ -1,0 +1,196 @@
+{
+  "scope": "Source-backed dependency diagram, not numeric experiment or task acceptance",
+  "baseline": "9483b2c624c94369a1adcd8fbe08c52c88210a4f",
+  "source_findings_sha256": "79ae008609cc035a55ca4975b1a945578a47ee3ec70b53d3d60f5a89fac768e0",
+  "source_records": [
+    {
+      "path": "src/predictive_motion_control/src/predictive.cpp",
+      "bytes": 38633,
+      "sha256": "4ad70dcf75500e956141557a6b17eaa2bdb9a7f670abb7f380da5c699efb1df5"
+    },
+    {
+      "path": "src/predictive_motion_control/include/predictive_motion_control/predictive.hpp",
+      "bytes": 8010,
+      "sha256": "c5ff72290709ad694c61686bd495abbfe4223b3bb532f434a5d25af55c784652"
+    },
+    {
+      "path": "src/predictive_motion_control/src/reactive_qp.cpp",
+      "bytes": 23205,
+      "sha256": "7f0b10b09c66c078e2342ebd1cc44ba636f76a59c5d908b0a15392ea6d589507"
+    },
+    {
+      "path": "src/predictive_motion_control/include/predictive_motion_control/reactive_qp.hpp",
+      "bytes": 5277,
+      "sha256": "75efe6117b7d833497a05d766eb9d7d0a4299a12af68e67dbb578b0f1095c784"
+    },
+    {
+      "path": "tools/phase5_adapter/phase5_benchmark.cpp",
+      "bytes": 44584,
+      "sha256": "72d59b1a4921b37a9ead7ab59602d75238927cb89224673574cfcd7a9a1147d1"
+    },
+    {
+      "path": "tools/phase5_public_coupled_augmented_extension_cpp/public_coupled_augmented_extension.cpp",
+      "bytes": 7073,
+      "sha256": "74b3d8eccdd4a1373d39bc46cf122564a5101259c2212cb45d98f81678f882fa"
+    },
+    {
+      "path": "tools/phase5_public_coupled_augmented_extension_cpp/public_coupled_augmented_extension.hpp",
+      "bytes": 2171,
+      "sha256": "d97d4f5fbbd837317bdf488291f3aca0c822c512a7e3f6c079e196d3641b104f"
+    },
+    {
+      "path": "tools/phase5_public_live_affine_v2/model_boundary/model_boundary.cpp",
+      "bytes": 95323,
+      "sha256": "ae62ad6b02bc18a9d2971c493f280a4bed3464379c1a70581f24923337ed6080"
+    },
+    {
+      "path": "tools/phase5_public_live_affine_v2/model_boundary/model_boundary.hpp",
+      "bytes": 10693,
+      "sha256": "759440cb94d75e0aaca5759176ac9dd290aef12b7b562fc0433b859ecf21db6d"
+    },
+    {
+      "path": "tools/phase5_public_live_affine_v2/normalization/normalization.hpp",
+      "bytes": 4447,
+      "sha256": "92813ab26886a215544f7d66a27d452d9cedcd5742afe813e9cc61db2aae8dbf"
+    },
+    {
+      "path": "tools/phase5_public_live_affine_v2/affine/affine_assembly.hpp",
+      "bytes": 6228,
+      "sha256": "3c595ff9ef8995ac77459d5a88228f78593132834684ef305408c4713986d2fa"
+    },
+    {
+      "path": "tools/phase5_public_live_affine_v2/cost/quadratic_cost.hpp",
+      "bytes": 8513,
+      "sha256": "f5bdfcd920750f1b94b3e5917f886300ae5276111b4b7990c4baba5f2e166784"
+    },
+    {
+      "path": "tools/phase5_public_live_affine_v2/cost/quadratic_cost.cpp",
+      "bytes": 39246,
+      "sha256": "0c177e1079f5b38733f24ac2d2455636fbfa598bae5f0876a027aa5de2041882"
+    },
+    {
+      "path": "tools/phase5_public_live_affine_v2/input_codec/cost_input_decoder.hpp",
+      "bytes": 3145,
+      "sha256": "9cfc61732e68ad5a503a14e4b34e8b60c968d8765ab0a37bea7ca59f01fe8e5e"
+    },
+    {
+      "path": "docs/design/public_live_affine_v2/public_live_affine_v2_source_contract_20261008.md",
+      "bytes": 16724,
+      "sha256": "4bfcd9d5ce0efacce2ccbdb3b02ff097660c6d4e4b1c26bbb1aba48888afdb84"
+    },
+    {
+      "path": "reviews/issue_register.md",
+      "bytes": 16407,
+      "sha256": "a17a109204044eff484b3b907bdfc3673cbfbccf77ca2d6961f81d6484c9fdf4"
+    }
+  ],
+  "integration_review_sha256": "127a757825441dd3d2c17bdf6b08bd4a4bcd259eeb10dbf4accd22ec22ccc233",
+  "new_integration_source_records": [
+    {
+      "path": "tools/phase5_integrated_horizon_qp_v1/CMakeLists.txt",
+      "bytes": 2359,
+      "sha256": "cf493522ba4f0967aece7f93e545fcc505911d3150231dbeb73366aaa4b38f51"
+    },
+    {
+      "path": "tools/phase5_integrated_horizon_qp_v1/CRITICAL_PATH_GAPS.md",
+      "bytes": 6809,
+      "sha256": "690e09e2e5d47acca4747f2beadd84a9136be21f9bc5d204ef6ca1765e23daa8"
+    },
+    {
+      "path": "tools/phase5_integrated_horizon_qp_v1/HOST_FREE_FIRST_CYCLE_RUN_PROTOCOL_DRAFT.json",
+      "bytes": 8037,
+      "sha256": "b1690675e76f16e8410ee89bda8b29cd2ade6ab99889a797eb96423a80b7a77f"
+    },
+    {
+      "path": "tools/phase5_integrated_horizon_qp_v1/INTEGRATION_CONTRACT.md",
+      "bytes": 11326,
+      "sha256": "e93d87e380825326c504e4fb25e024ea670663fcf0f835a8d6e9bfa5076f0633"
+    },
+    {
+      "path": "tools/phase5_integrated_horizon_qp_v1/MODEL_SESSION_FACTORY_DESIGN.md",
+      "bytes": 5695,
+      "sha256": "710469812e19692702546321f89bc55d06c965a50b969d52e31844f225bbcbc2"
+    },
+    {
+      "path": "tools/phase5_integrated_horizon_qp_v1/README.md",
+      "bytes": 1968,
+      "sha256": "0febff54fc359b2f482e1e4c60589ebc6e1d08e8c2146f2b3ca5ae4aabc5e906"
+    },
+    {
+      "path": "tools/phase5_integrated_horizon_qp_v1/SOURCE_BINDINGS_READ.json",
+      "bytes": 6913,
+      "sha256": "71861cd96b7b28f6508ca326655982271564b9a78610cbd565cd06b30d4fd30b"
+    },
+    {
+      "path": "tools/phase5_integrated_horizon_qp_v1/SOURCE_DIAGRAM_DATA.json",
+      "bytes": 2457,
+      "sha256": "997964f9f92bcd9139f493fe8922d565b6742223ef87db0f3da0526871a02e6c"
+    },
+    {
+      "path": "tools/phase5_integrated_horizon_qp_v1/SOURCE_PREPARATION_FAILURES.json",
+      "bytes": 369,
+      "sha256": "b59b38ffbb636309aa5a3ed2faf73c496ebce30dbabff755b3b466a089f4933d"
+    },
+    {
+      "path": "tools/phase5_integrated_horizon_qp_v1/SOURCE_REVIEW_REPAIRS.json",
+      "bytes": 1447,
+      "sha256": "44986d43faa5cd5faeafb0ec82dfcb888c9de977121e0832f9666ec4914f7bd6"
+    },
+    {
+      "path": "tools/phase5_integrated_horizon_qp_v1/first_cycle_component.cpp",
+      "bytes": 1853,
+      "sha256": "7103db6daf2f6cf28eae0ff77ec205304b56137ae3990408b92b86790b9a56dd"
+    },
+    {
+      "path": "tools/phase5_integrated_horizon_qp_v1/first_cycle_component.hpp",
+      "bytes": 770,
+      "sha256": "14bda619fa48089d4811d069415e1ddd4fe21bc68339502e2fae45ac4de8d48c"
+    },
+    {
+      "path": "tools/phase5_integrated_horizon_qp_v1/integrated_horizon_qp.cpp",
+      "bytes": 26664,
+      "sha256": "bd8bfc327efd0f3301de42df444d35fe52f1485df62b5b45fdd9f3fb063b934a"
+    },
+    {
+      "path": "tools/phase5_integrated_horizon_qp_v1/integrated_horizon_qp.hpp",
+      "bytes": 7735,
+      "sha256": "5b2f4bc52a1911852917f0a6cc6c44d7c1ae8fafe0cdd0bdf25277e87354f696"
+    },
+    {
+      "path": "tools/phase5_integrated_horizon_qp_v1/task_local_provider.cpp",
+      "bytes": 1843,
+      "sha256": "0b0dabcbe70ead3de45818cecb6cacab603434ed33716f2a8b901ce0614ecd6a"
+    },
+    {
+      "path": "tools/phase5_integrated_horizon_qp_v1/task_local_provider.hpp",
+      "bytes": 644,
+      "sha256": "0d5c11557b9a0831e3ff6ce8cb62cfddcddb03b97f7f839bd6ae83d835fd6380"
+    }
+  ],
+  "selection": "All five independent critical-path findings; phases remain unaccepted",
+  "renderer": {
+    "script": "render_critical_path.py",
+    "sha256": "413828646e5791ecd640b36ff79f5387112596b5529c86891cb2d61df53da196",
+    "matplotlib": "3.10.3",
+    "font": "DejaVu Sans",
+    "dpi": 180,
+    "figure_inches": [
+      14,
+      7.5
+    ]
+  },
+  "outputs": [
+    {
+      "file": "coupled_predictive_critical_path.png",
+      "bytes": 236768,
+      "sha256": "d1d564fd82682cd3672632f663ccc6ed845b4d112cfba7088277e7ed77f71326"
+    },
+    {
+      "file": "coupled_predictive_critical_path.svg",
+      "bytes": 10259,
+      "sha256": "6acf295cc597df496d56f07473a71d48d0d64851a3d553071dae3b0d40dcfc61"
+    }
+  ],
+  "phase5": "NOT_ACCEPTED",
+  "phase6": "NOT_STARTED"
+}

@@ -1,0 +1,110 @@
+{
+  "schema": "INTEGRATED_HORIZON_QP_SOURCE_TOPOLOGY_V1",
+  "scope": "SOURCE_ONLY_NOT_RUNTIME_OR_MOTION_EVIDENCE",
+  "nodes": [
+    {
+      "id": "observer",
+      "label": "Actual completed q/v + accepted C/w/alpha/b boundary",
+      "status": "REQUIRED_SOURCE_PROVENANCE_GATE"
+    },
+    {
+      "id": "permission",
+      "label": "Existing single-use reviewed invocation and Model profile",
+      "status": "EXISTING_SOURCE_ONE_NOMINAL_ONLY"
+    },
+    {
+      "id": "forecast",
+      "label": "Genuine coupled NX30, N20/T200/S400 nominal",
+      "status": "RUNTIME_CLOSED"
+    },
+    {
+      "id": "normalization",
+      "label": "Normalized whole-cell and sample prefixes",
+      "status": "EXISTING_TYPED_SOURCE"
+    },
+    {
+      "id": "inline",
+      "label": "NEW inline H/g/F/constant +13156 SI rows",
+      "status": "NEW_SOURCE_IMPLEMENTED_UNCOMPILED"
+    },
+    {
+      "id": "qp",
+      "label": "One certified QP + original SI gate",
+      "status": "NEW_CONNECTION_SOURCE_RUNTIME_CLOSED"
+    },
+    {
+      "id": "preview",
+      "label": "Accepted-history first4ms preview and exact tail observation",
+      "status": "DATA_ONLY_SOURCE"
+    },
+    {
+      "id": "forward",
+      "label": "Independent full candidate forward",
+      "status": "NEW_SESSION_FACTORY_REQUIRED_CLOSED"
+    },
+    {
+      "id": "commit",
+      "label": "Exact plant commit + completed observer/history + physical stop",
+      "status": "SEPARATE_PLANT_MAIN_GATE_CLOSED"
+    },
+    {
+      "id": "session",
+      "label": "750 commits /3s duration diagnostic",
+      "status": "NEW_REPEATED_SESSION_REQUIRED_CLOSED"
+    }
+  ],
+  "edges": [
+    [
+      "observer",
+      "permission"
+    ],
+    [
+      "permission",
+      "forecast"
+    ],
+    [
+      "forecast",
+      "normalization"
+    ],
+    [
+      "normalization",
+      "inline"
+    ],
+    [
+      "inline",
+      "qp"
+    ],
+    [
+      "qp",
+      "preview"
+    ],
+    [
+      "preview",
+      "forward"
+    ],
+    [
+      "forward",
+      "commit"
+    ],
+    [
+      "commit",
+      "session"
+    ],
+    [
+      "session",
+      "observer"
+    ]
+  ],
+  "source_counts": {
+    "factor_rows": 741,
+    "base_two_sided_QP_rows": 13156,
+    "geometry_rows_max": 1600,
+    "nominal_cells": 20,
+    "nominal_macro_cycles": 200,
+    "nominal_physical_samples": 400
+  },
+  "runtime_counts": null,
+  "phase5": "NOT_ACCEPTED",
+  "phase6": "NOT_STARTED",
+  "no_arm_motion_or_controller_performance_claim": true
+}

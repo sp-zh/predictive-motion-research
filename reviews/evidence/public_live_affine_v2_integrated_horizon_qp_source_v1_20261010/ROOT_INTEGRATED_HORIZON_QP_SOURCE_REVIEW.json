@@ -1,0 +1,199 @@
+{
+  "decision": "PASS_VERSIONED_INTEGRATION_SOURCE_ONLY_BUILD_AND_RUNTIME_CLOSED",
+  "baseline": "9483b2c624c94369a1adcd8fbe08c52c88210a4f",
+  "ready_sha256": "4aedbcc0dc671a298623b27540343e11bcaef3b583919db9c27e49470ff9f583",
+  "payloads_verified": 18,
+  "public_source_candidates_imported": 16,
+  "tracked_guards_unchanged": 1647,
+  "production_guards_unchanged": 116,
+  "source_binding_records_verified": 34,
+  "source_derived_shapes": {
+    "nx": 30,
+    "nu": 8,
+    "N": 20,
+    "T": 200,
+    "S": 400,
+    "DU": 160,
+    "factor_rows": 741,
+    "base_two_sided_QP_rows": 13156,
+    "term_descriptors": 144
+  },
+  "source_shape_values_are_not_actual_run_counts": true,
+  "independent_source_review": [
+    "Genuine OwnedPublicForecast rvalue is the only forecast entry; normalization and full LiveActual affine assembly retain original owner and reject incomplete/unsupported horizon.",
+    "Absolute independent percell U and wholecell/sample cumulative composition preserve actual initial and separate q/v from accepted C/w.",
+    "Semiimplicit acceptedcommand law and progress polynomial remain distinct; actual4ms boundary jerk and one-h cost weighting confirmed.",
+    "Online inline objective is separately source/profile bound; original frozen cost artifact/schema retained but its computation not claimed. H/g/constant include full factors and linear progress reward; sparseF certificate preserves original tolerance.",
+    "All400 linear half q/v/trust and200 acceptedcommand/progress macro checkpoints have exact13156base rows; factor rowcap is a different grain.",
+    "Standalone actual kinematics/worldcurve provider uses original residual/Jacobian conventions and rotation scaling once; no indirect legacy geometry or predictive source. Provider ON is required for complete future build.",
+    "Actual source-owner solve latch plus candidate latch prevents another solver on a reused source; active request cleared on repeated entry while earlier outputs remain forensic.",
+    "Mode is fixed before run; Offline preserves original captured age and realelapsed, Online adds all known upstream/model/connect/solve time without refresh. V3 age exactmatch qualified as caller assertions.",
+    "Terminal residuals/exact-tail observation do not grant infinite or physicalstop proof. Candidate and first4ms preview are data only; no Model candidate role, plant commit, loop or scorer implemented.",
+    "Future candidate/session factory and observer/driver/program bindings are concrete remaining dependencies; one-use V1-V4 cannot silently expand."
+  ],
+  "retained_preexecution_repairs": {
+    "scope": "Pre-execution source/math review refinements; not numerical failures, epsilon tuning or reruns",
+    "retained_unexecuted_draft": "UNEXECUTED_DRAFT_BEFORE_TIMING_TAIL_REPAIR_RETAINED.tar.gz",
+    "items": [
+      "Root observed qrow draft mismatch13336; executor corrected independently to13156 before execution; bound source rosters now match loop arithmetic",
+      "Root corrected its initial legacy/live factor convention; executor independently found original live .5norm and reported no sqrt2 on originalFc; source remains unmodified",
+      "Owner-based once latch, candidate active request cleared on reentry, older outputs explicitly forensic",
+      "Offline frozen component separated from online elapsed age; originalV3 observerage exact binding and source assertions qualified",
+      "Nearzero terminal SI residuals retained with exacttailbool rather than blocking data-only forward diagnostic; no infinite physicalstop claim",
+      "Jerk squared penalty corrected pre-run to one boundary h, not cell duration; acceleration heldcell usesduration",
+      "Added independently named progress b/boundaryjerk objective channels for completeNU8 mapping: factorrows now741, termdescriptors144; Root earlier701 check was alpha7-only draft",
+      "Actualtaskprovider worldcurve in separate source uses originalkinematics derivatives and no geometry/legacycontroller dependency"
+    ],
+    "all_source_stage_model_solver_getter_numerical_calls": 0
+  },
+  "root_prior_review_error": "Root V1 CP5 imported legacy sqrt2 convention incorrectly; exact original retained. V2 source reading corrected current live half-square convention before any run. New inline factors explicitly encode sqrt(2weight*duration), a distinct correct formulation.",
+  "retained_draft_regular_files": 8,
+  "retained_draft_payload_identities": [
+    {
+      "path": "CMakeLists.txt",
+      "bytes": 1705,
+      "sha256": "c5d4ae601549f8c458b02aa32ab5bce24e9ac84e9a79bdc1371d30966f1ecc88"
+    },
+    {
+      "path": "first_cycle_component.cpp",
+      "bytes": 1119,
+      "sha256": "6bdfd946652aafccfca9a3f30bf065ffc6461ece00f14dfc322ea13d5bba41db"
+    },
+    {
+      "path": "first_cycle_component.hpp",
+      "bytes": 732,
+      "sha256": "a5680e6424ab2762d6a3c7d914cdfa492d6f04a51cb1267945da8eb8b64eeefb"
+    },
+    {
+      "path": "integrated_horizon_qp.cpp",
+      "bytes": 23315,
+      "sha256": "7265564ffdef89df87520675ea72445b768685b033551327da59b004a4778135"
+    },
+    {
+      "path": "integrated_horizon_qp.hpp",
+      "bytes": 6161,
+      "sha256": "8ce4e42de4c41502d608f8f7270fa321c14286260b28c117d0edbc5c067a23e2"
+    },
+    {
+      "path": "task_local_provider.cpp",
+      "bytes": 1033,
+      "sha256": "b817133b196486513fdd1ef54869f79965c23172475a03620f86ab4588af9663"
+    },
+    {
+      "path": "task_local_provider.hpp",
+      "bytes": 517,
+      "sha256": "66f520e25f8f7a39452e037bdce203151434056717b22186a345e97f4330ffb1"
+    },
+    {
+      "path": "SOURCE_DRAFT_READY.json",
+      "bytes": 1232,
+      "sha256": "38c9f6f31e345b460b96ea430985ef516d48b707d0de33a56f0567e1dcc2d0a0"
+    }
+  ],
+  "limitations": [
+    "No syntax/compiler/link/actual Model/normalization/affine/QP/candidate result from static review.",
+    "Geometry rows are finite local inputs and may be empty; no full collision/singularity/inter-sample/nonlinear physical safety coverage.",
+    "Independent explicit array plan is not old CaseBudget/cumulative ledger, callback heap/native allocator/RSS closure.",
+    "Catastrophic allocation before Outcome requires external raw retention; standalone entrypoint/output observer and binary/profile/native freeze still missing.",
+    "3second750commit diagnostic is unexecuted; s0=0,r<=.2 implies s<=.6 at3s, not full s1 task completion.",
+    "Original friction FD failure, paused history, accepted Phase4 and ec1/d3d4/checkers remain unchanged."
+  ],
+  "runtime_added": {
+    "configure": 0,
+    "compile": 0,
+    "link": 0,
+    "Model_wrapper": 0,
+    "metadata": 0,
+    "forecast": 0,
+    "task_query": 0,
+    "solver": 0,
+    "plant": 0,
+    "main": 0,
+    "scorer": 0
+  },
+  "filesystem_hash_plotting_helper_backend_counts": "UNMEASURED; zero runtime fields refer to project target execution",
+  "phase5": "NOT_ACCEPTED",
+  "phase6": "NOT_STARTED",
+  "imported_source_identities": [
+    {
+      "path": "tools/phase5_integrated_horizon_qp_v1/CMakeLists.txt",
+      "bytes": 2359,
+      "sha256": "cf493522ba4f0967aece7f93e545fcc505911d3150231dbeb73366aaa4b38f51"
+    },
+    {
+      "path": "tools/phase5_integrated_horizon_qp_v1/CRITICAL_PATH_GAPS.md",
+      "bytes": 6809,
+      "sha256": "690e09e2e5d47acca4747f2beadd84a9136be21f9bc5d204ef6ca1765e23daa8"
+    },
+    {
+      "path": "tools/phase5_integrated_horizon_qp_v1/HOST_FREE_FIRST_CYCLE_RUN_PROTOCOL_DRAFT.json",
+      "bytes": 8037,
+      "sha256": "b1690675e76f16e8410ee89bda8b29cd2ade6ab99889a797eb96423a80b7a77f"
+    },
+    {
+      "path": "tools/phase5_integrated_horizon_qp_v1/INTEGRATION_CONTRACT.md",
+      "bytes": 11326,
+      "sha256": "e93d87e380825326c504e4fb25e024ea670663fcf0f835a8d6e9bfa5076f0633"
+    },
+    {
+      "path": "tools/phase5_integrated_horizon_qp_v1/MODEL_SESSION_FACTORY_DESIGN.md",
+      "bytes": 5695,
+      "sha256": "710469812e19692702546321f89bc55d06c965a50b969d52e31844f225bbcbc2"
+    },
+    {
+      "path": "tools/phase5_integrated_horizon_qp_v1/README.md",
+      "bytes": 1968,
+      "sha256": "0febff54fc359b2f482e1e4c60589ebc6e1d08e8c2146f2b3ca5ae4aabc5e906"
+    },
+    {
+      "path": "tools/phase5_integrated_horizon_qp_v1/SOURCE_BINDINGS_READ.json",
+      "bytes": 6913,
+      "sha256": "71861cd96b7b28f6508ca326655982271564b9a78610cbd565cd06b30d4fd30b"
+    },
+    {
+      "path": "tools/phase5_integrated_horizon_qp_v1/SOURCE_DIAGRAM_DATA.json",
+      "bytes": 2457,
+      "sha256": "997964f9f92bcd9139f493fe8922d565b6742223ef87db0f3da0526871a02e6c"
+    },
+    {
+      "path": "tools/phase5_integrated_horizon_qp_v1/SOURCE_PREPARATION_FAILURES.json",
+      "bytes": 369,
+      "sha256": "b59b38ffbb636309aa5a3ed2faf73c496ebce30dbabff755b3b466a089f4933d"
+    },
+    {
+      "path": "tools/phase5_integrated_horizon_qp_v1/SOURCE_REVIEW_REPAIRS.json",
+      "bytes": 1447,
+      "sha256": "44986d43faa5cd5faeafb0ec82dfcb888c9de977121e0832f9666ec4914f7bd6"
+    },
+    {
+      "path": "tools/phase5_integrated_horizon_qp_v1/first_cycle_component.cpp",
+      "bytes": 1853,
+      "sha256": "7103db6daf2f6cf28eae0ff77ec205304b56137ae3990408b92b86790b9a56dd"
+    },
+    {
+      "path": "tools/phase5_integrated_horizon_qp_v1/first_cycle_component.hpp",
+      "bytes": 770,
+      "sha256": "14bda619fa48089d4811d069415e1ddd4fe21bc68339502e2fae45ac4de8d48c"
+    },
+    {
+      "path": "tools/phase5_integrated_horizon_qp_v1/integrated_horizon_qp.cpp",
+      "bytes": 26664,
+      "sha256": "bd8bfc327efd0f3301de42df444d35fe52f1485df62b5b45fdd9f3fb063b934a"
+    },
+    {
+      "path": "tools/phase5_integrated_horizon_qp_v1/integrated_horizon_qp.hpp",
+      "bytes": 7735,
+      "sha256": "5b2f4bc52a1911852917f0a6cc6c44d7c1ae8fafe0cdd0bdf25277e87354f696"
+    },
+    {
+      "path": "tools/phase5_integrated_horizon_qp_v1/task_local_provider.cpp",
+      "bytes": 1843,
+      "sha256": "0b0dabcbe70ead3de45818cecb6cacab603434ed33716f2a8b901ce0614ecd6a"
+    },
+    {
+      "path": "tools/phase5_integrated_horizon_qp_v1/task_local_provider.hpp",
+      "bytes": 644,
+      "sha256": "0d5c11557b9a0831e3ff6ce8cb62cfddcddb03b97f7f839bd6ae83d835fd6380"
+    }
+  ]
+}

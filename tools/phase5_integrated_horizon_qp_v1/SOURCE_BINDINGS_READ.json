@@ -1,0 +1,178 @@
+{
+  "scope": "Relevant actual implementations/interfaces/config/math/targets inspected, source-derived findings; not new binary/ABI/native observations",
+  "baseline": "9483b2c",
+  "files": [
+    {
+      "path": "src/predictive_motion_control/src/predictive.cpp",
+      "bytes": 38633,
+      "sha256": "4ad70dcf75500e956141557a6b17eaa2bdb9a7f670abb7f380da5c699efb1df5"
+    },
+    {
+      "path": "src/predictive_motion_control/include/predictive_motion_control/predictive.hpp",
+      "bytes": 8010,
+      "sha256": "c5ff72290709ad694c61686bd495abbfe4223b3bb532f434a5d25af55c784652"
+    },
+    {
+      "path": "src/predictive_motion_control/src/reactive_qp.cpp",
+      "bytes": 23205,
+      "sha256": "7f0b10b09c66c078e2342ebd1cc44ba636f76a59c5d908b0a15392ea6d589507"
+    },
+    {
+      "path": "src/predictive_motion_control/include/predictive_motion_control/reactive_qp.hpp",
+      "bytes": 5277,
+      "sha256": "75efe6117b7d833497a05d766eb9d7d0a4299a12af68e67dbb578b0f1095c784"
+    },
+    {
+      "path": "src/predictive_motion_control/CMakeLists.txt",
+      "bytes": 3945,
+      "sha256": "1720a351fa3601de11054093cddb31c87610082a4ae0d104eb8a7c6843fafdd9"
+    },
+    {
+      "path": "tools/phase5_adapter/phase5_benchmark.cpp",
+      "bytes": 44584,
+      "sha256": "72d59b1a4921b37a9ead7ab59602d75238927cb89224673574cfcd7a9a1147d1"
+    },
+    {
+      "path": "tools/phase5_adapter/path_adapter.hpp",
+      "bytes": 2858,
+      "sha256": "faffd6ae74b7f77554b1e1aec68a7cda52c640d8ba819a7928caa072a4058aec"
+    },
+    {
+      "path": "tools/phase5_adapter/linearization.hpp",
+      "bytes": 2064,
+      "sha256": "50366f34c7ebcf53da527b8b6ef7a56e5cc3335665ac97c0374ef6e183c81148"
+    },
+    {
+      "path": "src/predictive_motion_kinematics/src/robot_kinematics.cpp",
+      "bytes": 7495,
+      "sha256": "5859eb5d6e9f9385c7c067def409fe21aa68d307606b484be6cb216a674feaa2"
+    },
+    {
+      "path": "src/predictive_motion_kinematics/src/config.cpp",
+      "bytes": 1579,
+      "sha256": "a5ced422bfd08b4a575646f91c87c084a3263a6a93f6237a2e8861157f59c962"
+    },
+    {
+      "path": "src/predictive_motion_kinematics/include/predictive_motion_kinematics/robot_kinematics.hpp",
+      "bytes": 1957,
+      "sha256": "b5fffc30ba2d4152b777181b6f8c474f8681e4e41d1a306632e552bb1d40c801"
+    },
+    {
+      "path": "src/predictive_motion_kinematics/CMakeLists.txt",
+      "bytes": 2479,
+      "sha256": "561aa415aa24b8d08351209a1a30a1dff06b0245f267c54271b4e74b02779748"
+    },
+    {
+      "path": "config/phase4.yaml",
+      "bytes": 1902,
+      "sha256": "84d6fdae1ace5dfb3c8dd2df85d29f11ca97d69dffb04d393c196f8e1f1fbdea"
+    },
+    {
+      "path": "config/phase5.yaml",
+      "bytes": 2743,
+      "sha256": "3e845009aecd612952b495f224bc6ef460e5fffb15e2c133986d16c312c0817f"
+    },
+    {
+      "path": "benchmarks/reference/inspection_curve.json",
+      "bytes": 661,
+      "sha256": "62c163f41dcf196aa77978037cc6ced3809b67e3903058b7da3fb4759ab464c9"
+    },
+    {
+      "path": "tools/phase5_public_live_affine_v2/foundation.hpp",
+      "bytes": 16063,
+      "sha256": "ee673d71ea3824aa41647ff2254ebcee477a091c817d1b3e21d398ace11cd8e2"
+    },
+    {
+      "path": "tools/phase5_public_live_affine_v2/foundation_context.cpp",
+      "bytes": 13656,
+      "sha256": "d0537f8c88b641df526d24971504b7813c5c88e4734f1b668f7f5cdae8acfed7"
+    },
+    {
+      "path": "tools/phase5_public_live_affine_v2/foundation_resources.cpp",
+      "bytes": 16952,
+      "sha256": "3a83eddf893b77e1fe67c03de32292431cd0ce273934e479f9c238a25113ca49"
+    },
+    {
+      "path": "tools/phase5_public_live_affine_v2/model_boundary/model_boundary.hpp",
+      "bytes": 10693,
+      "sha256": "759440cb94d75e0aaca5759176ac9dd290aef12b7b562fc0433b859ecf21db6d"
+    },
+    {
+      "path": "tools/phase5_public_live_affine_v2/model_boundary/model_boundary.cpp",
+      "bytes": 95323,
+      "sha256": "ae62ad6b02bc18a9d2971c493f280a4bed3464379c1a70581f24923337ed6080"
+    },
+    {
+      "path": "tools/phase5_public_live_affine_v2/normalization/normalization.hpp",
+      "bytes": 4447,
+      "sha256": "92813ab26886a215544f7d66a27d452d9cedcd5742afe813e9cc61db2aae8dbf"
+    },
+    {
+      "path": "tools/phase5_public_live_affine_v2/normalization/normalization.cpp",
+      "bytes": 25146,
+      "sha256": "0ca10f29fcd8c516c54b2825ae066a98b2b2d49171486bd69a7622b60d48d695"
+    },
+    {
+      "path": "tools/phase5_public_live_affine_v2/affine/affine_assembly.hpp",
+      "bytes": 6228,
+      "sha256": "3c595ff9ef8995ac77459d5a88228f78593132834684ef305408c4713986d2fa"
+    },
+    {
+      "path": "tools/phase5_public_live_affine_v2/affine/affine_assembly.cpp",
+      "bytes": 30014,
+      "sha256": "516da52ba0dd801b04e4a5c3fd1b229e644f782fc9ddc26092fdf759cdea6ce4"
+    },
+    {
+      "path": "tools/phase5_public_live_affine_v2/cost/quadratic_cost.hpp",
+      "bytes": 8513,
+      "sha256": "f5bdfcd920750f1b94b3e5917f886300ae5276111b4b7990c4baba5f2e166784"
+    },
+    {
+      "path": "tools/phase5_public_live_affine_v2/cost/quadratic_cost.cpp",
+      "bytes": 39246,
+      "sha256": "0c177e1079f5b38733f24ac2d2455636fbfa598bae5f0876a027aa5de2041882"
+    },
+    {
+      "path": "tools/phase5_public_live_affine_v2/input_codec/cost_input_decoder.hpp",
+      "bytes": 3145,
+      "sha256": "9cfc61732e68ad5a503a14e4b34e8b60c968d8765ab0a37bea7ca59f01fe8e5e"
+    },
+    {
+      "path": "tools/phase5_public_live_affine_v2/input_codec/cost_input_decoder.cpp",
+      "bytes": 23938,
+      "sha256": "8e595aea56152b08dbd6dff089fbe3471368f43c5d6af961b984930bb7f58876"
+    },
+    {
+      "path": "tools/phase5_public_coupled_augmented_extension_cpp/public_coupled_augmented_extension.hpp",
+      "bytes": 2171,
+      "sha256": "d97d4f5fbbd837317bdf488291f3aca0c822c512a7e3f6c079e196d3641b104f"
+    },
+    {
+      "path": "tools/phase5_public_coupled_augmented_extension_cpp/public_coupled_augmented_extension.cpp",
+      "bytes": 7073,
+      "sha256": "74b3d8eccdd4a1373d39bc46cf122564a5101259c2212cb45d98f81678f882fa"
+    },
+    {
+      "path": "tools/phase5_public_coupled_augmented_cpp/public_coupled_augmented_model.hpp",
+      "bytes": 1818,
+      "sha256": "24350b7680f65c2ea667628e8e80e0830e2a471b501bf77acd51d699b9d44b8d"
+    },
+    {
+      "path": "tools/phase5_public_coupled_augmented_cpp/public_coupled_augmented_model.cpp",
+      "bytes": 4305,
+      "sha256": "add6e9d0ef578ed3adcd7e715d2844fb60c063afa24bfb6dd233cdd5f04eac1b"
+    },
+    {
+      "path": "tools/phase5_public_coupled_derivative_cpp/public_coupled_derivative_model.cpp",
+      "bytes": 10204,
+      "sha256": "9f66b1b84edd7370657f9a026f51305bee9f678f0246a2e911da8e9ccc9cb942"
+    },
+    {
+      "path": "tools/phase5_public_coupled_cpp_v2/public_coupled_model.cpp",
+      "bytes": 9934,
+      "sha256": "a66fa3974807a1ec168325b19fc9feecd2353e4b7f0586c59ef5f93af6136f91"
+    }
+  ],
+  "production_Cpp_numerical_calls": 0,
+  "original_model_parameters_checker_failures_preserved": true
+}

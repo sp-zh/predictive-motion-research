@@ -1,0 +1,131 @@
+{
+  "scope": "Independent source critical-path findings for genuine coupled predictive integration; no compilation or numerical calls",
+  "baseline": "9483b2c624c94369a1adcd8fbe08c52c88210a4f",
+  "source_records": [
+    {
+      "path": "src/predictive_motion_control/src/predictive.cpp",
+      "bytes": 38633,
+      "sha256": "4ad70dcf75500e956141557a6b17eaa2bdb9a7f670abb7f380da5c699efb1df5"
+    },
+    {
+      "path": "src/predictive_motion_control/include/predictive_motion_control/predictive.hpp",
+      "bytes": 8010,
+      "sha256": "c5ff72290709ad694c61686bd495abbfe4223b3bb532f434a5d25af55c784652"
+    },
+    {
+      "path": "src/predictive_motion_control/src/reactive_qp.cpp",
+      "bytes": 23205,
+      "sha256": "7f0b10b09c66c078e2342ebd1cc44ba636f76a59c5d908b0a15392ea6d589507"
+    },
+    {
+      "path": "src/predictive_motion_control/include/predictive_motion_control/reactive_qp.hpp",
+      "bytes": 5277,
+      "sha256": "75efe6117b7d833497a05d766eb9d7d0a4299a12af68e67dbb578b0f1095c784"
+    },
+    {
+      "path": "tools/phase5_adapter/phase5_benchmark.cpp",
+      "bytes": 44584,
+      "sha256": "72d59b1a4921b37a9ead7ab59602d75238927cb89224673574cfcd7a9a1147d1"
+    },
+    {
+      "path": "tools/phase5_public_coupled_augmented_extension_cpp/public_coupled_augmented_extension.cpp",
+      "bytes": 7073,
+      "sha256": "74b3d8eccdd4a1373d39bc46cf122564a5101259c2212cb45d98f81678f882fa"
+    },
+    {
+      "path": "tools/phase5_public_coupled_augmented_extension_cpp/public_coupled_augmented_extension.hpp",
+      "bytes": 2171,
+      "sha256": "d97d4f5fbbd837317bdf488291f3aca0c822c512a7e3f6c079e196d3641b104f"
+    },
+    {
+      "path": "tools/phase5_public_live_affine_v2/model_boundary/model_boundary.cpp",
+      "bytes": 95323,
+      "sha256": "ae62ad6b02bc18a9d2971c493f280a4bed3464379c1a70581f24923337ed6080"
+    },
+    {
+      "path": "tools/phase5_public_live_affine_v2/model_boundary/model_boundary.hpp",
+      "bytes": 10693,
+      "sha256": "759440cb94d75e0aaca5759176ac9dd290aef12b7b562fc0433b859ecf21db6d"
+    },
+    {
+      "path": "tools/phase5_public_live_affine_v2/normalization/normalization.hpp",
+      "bytes": 4447,
+      "sha256": "92813ab26886a215544f7d66a27d452d9cedcd5742afe813e9cc61db2aae8dbf"
+    },
+    {
+      "path": "tools/phase5_public_live_affine_v2/affine/affine_assembly.hpp",
+      "bytes": 6228,
+      "sha256": "3c595ff9ef8995ac77459d5a88228f78593132834684ef305408c4713986d2fa"
+    },
+    {
+      "path": "tools/phase5_public_live_affine_v2/cost/quadratic_cost.hpp",
+      "bytes": 8513,
+      "sha256": "f5bdfcd920750f1b94b3e5917f886300ae5276111b4b7990c4baba5f2e166784"
+    },
+    {
+      "path": "tools/phase5_public_live_affine_v2/cost/quadratic_cost.cpp",
+      "bytes": 39246,
+      "sha256": "0c177e1079f5b38733f24ac2d2455636fbfa598bae5f0876a027aa5de2041882"
+    },
+    {
+      "path": "tools/phase5_public_live_affine_v2/input_codec/cost_input_decoder.hpp",
+      "bytes": 3145,
+      "sha256": "9cfc61732e68ad5a503a14e4b34e8b60c968d8765ab0a37bea7ca59f01fe8e5e"
+    },
+    {
+      "path": "docs/design/public_live_affine_v2/public_live_affine_v2_source_contract_20261008.md",
+      "bytes": 16724,
+      "sha256": "4bfcd9d5ce0efacce2ccbdb3b02ff097660c6d4e4b1c26bbb1aba48888afdb84"
+    },
+    {
+      "path": "reviews/issue_register.md",
+      "bytes": 16407,
+      "sha256": "a17a109204044eff484b3b907bdfc3673cbfbccf77ca2d6961f81d6484c9fdf4"
+    }
+  ],
+  "findings": [
+    {
+      "id": "CP1",
+      "fact": "Legacy preview dynamics pack physical q/v/s/r, 16 states for FR3, and input physical acceleration a. Existing benchmark requests measured v + .004 a and increments accepted C by .004 command velocity.",
+      "implication": "Cannot use legacy preview/rows as new alpha controller; CTRL-001 remains open."
+    },
+    {
+      "id": "CP2",
+      "fact": "New augmented model holds C_next and w_next for two2ms physical steps; dx30 q/v/C/w/s/r and du8 alpha/b.",
+      "implication": "Exact acceptedcommand law w_next=w+h alpha,C_next=C+h w_next. Progress has separate .5h\u00b2b."
+    },
+    {
+      "id": "CP3",
+      "fact": "New Model boundary V1-V4 protocols explicitly require constructor=metadata=rollout=1 and LiveActual.",
+      "implication": "Neither candidate validation rollout nor repeated MPC session is admitted by that permission. New versioned scope/session must be reviewed; frozen archive is not current observation."
+    },
+    {
+      "id": "CP4",
+      "fact": "Typed normalization/affine/cost libraries have no solver/coupled controller executable. Existing canonical algebra proofs use archived/generic coefficient fixtures and small meshes.",
+      "implication": "Need actual coupled horizon and cost-to-OSQP connection, a full nonlinear candidate checker and subsequent reviewed plant/main protocol."
+    },
+    {
+      "id": "CP5",
+      "fact": "Current live cost evaluates .5||Fc U+fc||\u00b2+ell\u00b7y+c and condenses H=sumFc\u1d40Fc, g=sumFc\u1d40fc+T\u1d40ell. Solver requires H\u2248Fsolver\u1d40Fsolver in normalized stable Frobenius norm.",
+      "implication": "Use original concatenatedFc as solver factor; preserve actual H/g/constants and original tolerance. Legacy weight||...||\u00b2 sqrt2 convention is separate."
+    }
+  ],
+  "independent_review_criteria": [
+    "Whole N20/T200/S400 provenance and completeness; no shortening incomplete/unsupported forecast; retained failures/prefixes.",
+    "U actual vs deviation coordinate explicit; no nominal state reset; correct sample cumulative prefix and actual initial sensitivities.",
+    "Distinct measured q/v and accepted C/w/prioralpha plus progress priorb.",
+    "Discrete heldcell command coefficient k(k+1)h\u00b2/2 and command jerk divided by4ms, not cell duration.",
+    "Full objective linear/constants/unit weights and current .5 squared-norm convention; factor equals original concatenatedFc; original SI rowchecks after solver SOLVED.",
+    "Constraint rows vs cost-factor rows and memory caps are independent grains; geometry/nonlinear safety/stopping coverage explicitly limited until implemented.",
+    "No candidate or callback boolean becomes execution permission; one-release counters cannot be silently expanded.",
+    "Warm controls remain guesses repropagated from fresh state.",
+    "No privileged MuJoCo plant rollout in predictor; separate plant/control protocol, actual observations and complete750commit diagnostic+stop/limits before task claims.",
+    "Retain original FD friction failure and refuse uniform radius/accuracy/real-time/Phase5 acceptance claims."
+  ],
+  "next_package": "Versioned source for genuine coupled horizon/objective/constraints/solver/candidate-first4ms seam plus exact staged protocol; Root review then bounded build/freeze/run. Not unrelated foundation case counts.",
+  "phase5": "NOT_ACCEPTED",
+  "phase6": "NOT_STARTED",
+  "retained_prior_review_sha256": "f215844ef0c69460f3fc1fe1b98786fd98596c2bd6e645affad693ba513241c8",
+  "retained_prior_review": "ROOT_COUPLED_PREDICTIVE_CRITICAL_PATH_SOURCE_FINDINGS_V1_20261010.json",
+  "review_correction": "V1 CP5 mistakenly imported legacy cost normalization. Direct reading of current cost.cpp condense/evaluateTerm/condensedEvaluation confirms .5 squared norm; source/gates unchanged and no numeric run preceded correction."
+}
