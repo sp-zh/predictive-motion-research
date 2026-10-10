@@ -246,3 +246,61 @@ infrastructure-only scope; newly rendered PNG inspected. SHA-256:
 
 - `figures/ci/ghcr-bootstrap-status.svg`: `6e98372cbf98c2c832ff0f18a54d1353fbeb351dbbe96ddff06eaf34566520b1`
 - `figures/ci/ghcr-bootstrap-status.png`: `740c91ffe1fc1350ea6f60fef698198b46b2cce05f8ec04b0c099b45c418a26c`
+
+
+Completed default-branch migration — 2026-10-10 Toronto
+
+[PR #3](https://github.com/sp-zh/predictive-motion-research/pull/3) at
+`84ae4b8ad321ed9b4f976073ad3f36ce80847e03` passed
+[push 38027583602](https://github.com/sp-zh/predictive-motion-research/actions/runs/38027583602)
+and [PR 38027618925](https://github.com/sp-zh/predictive-motion-research/actions/runs/38027618925).
+Both artifacts were downloaded and independently audited: 24 original native
+GoogleTests + eight statistics cases, zero skips, original numerical/consumer
+markers, image/checkout/run provenance and all 23 infrastructure controls pass.
+PR effective merge checkout was `500f1cab19ec9c6b53a92177b72d2488d2760b7e`.
+No validation step was skipped. An initial collector assertion required exactly
+`/usr/bin/docker pull`; Actions actually logs `/usr/bin/docker --config <temp>
+pull`. That narrow collector assertion failed after the test audits had passed;
+the retained actual log `/private/tmp/ros-ghcr-migration-pr.log` was checked with
+the real command form, confirming GHCR digest pull. No workflow/runtime/test
+failure or image change resulted from that collector assumption. The pipeline
+itself has no continue-on-error or suppressed test failure.
+
+The explicitly authorized conditional merge was performed only after all PR
+checks and complete test-report audits passed, resulting in master
+`26ed25bf7ed97c0e73bda97f8577e976544795e8`.
+[Master run 38027887735](https://github.com/sp-zh/predictive-motion-research/actions/runs/38027887735)
+passed every required step and re-executed all original tests. Downloaded raw XML,
+full log and environment evidence independently confirm 24 native/eight statistics
+cases, zero skips, 23 infrastructure tests, numerical/consumer markers, exact
+master checkout and exact `16bacb7e…2cff6` image. No apt setup step executed.
+The startup command uses GHCR only; Actions automatically logs into GHCR with
+its own limited token at startup, while the separate public verification run
+proved pull and full tests with a genuinely empty auth directory and no login.
+Daily workflow permissions remain contents:read; no private registry secret is
+required for public/fork compatibility. SDK/model downloads remain disclosed.
+
+Master artifact ID `11660273848`, 650661 bytes; GitHub artifact archive SHA-256
+`c6f6d74a691dde23b550b84cdee09004bb9dd62a1ae1bbc063711dc1c7ab6763`
+is an artifact identity, not an image digest. Local inspection copy is
+`/private/tmp/ros-ghcr-master-validation` and log `/private/tmp/ros-ghcr-master.log`;
+Actions retention is 30 days. Verified GHCR images and their release tags are
+retained for current environment/recovery. No image/package was deleted, no
+visibility setting changed, and no new broad credential was requested. No
+algorithm, research stage state, original test source or threshold changed.
+The final closure only updates maintenance/report/showcase files and the status
+figure; CI/Docker/scripts/tests executable bytes match the verified master.
+
+Independent read-only review in chat “修复 CI 镜像基础设施” independently
+downloaded A/B/anonymous/PR/master evidence and confirmed the same test identities,
+zero skips, source config/ten-layer correspondence and definition/package hashes.
+It parsed Docker commands as shell tokens, avoiding the earlier narrow text
+assumption. GitHub commit trees for tested PR checkout `500f1cab…` and actual
+master `26ed25b…` are identical; master retains parents `7445c83…` (latest research
+work) and `84ae4b8…` (CI migration). This preserves both contributors' work.
+Final completed-state figure: 1200×640, inspected, status rows sourced from the
+actual run IDs above, no physical units or controller-performance inference.
+SHA-256:
+
+- `figures/ci/ghcr-bootstrap-status.svg`: `4040206cbb36a12aa02ac154083b65a620c544c969a86ffb83ac871b7226549e`
+- `figures/ci/ghcr-bootstrap-status.png`: `9823f772dd019b7faddaab5f4d8ad7d45adb90c7051d477d3efc50fc0a761a6a`
