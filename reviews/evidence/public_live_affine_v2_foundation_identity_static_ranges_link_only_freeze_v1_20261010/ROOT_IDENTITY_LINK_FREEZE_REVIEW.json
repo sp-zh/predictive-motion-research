@@ -1,0 +1,181 @@
+{
+  "decision": "PASS_IDENTITY_STATIC_RANGE_SINGLE_LINK_PREPARATION_ONLY_NOT_LINK_OR_RUNTIME",
+  "baseline": "7445c83ca4b63360a14279dd086075c5888d0299",
+  "ready_sha256": "71e102b0a8802213f4fd1e16280bba308a3c6ba43e83e0dabfd32125af984fc1",
+  "original_payloads_verified": 25,
+  "production_and_prior_guards_verified": 308,
+  "readonly_input_copies": 2,
+  "input_file_modes": "0444",
+  "input_directory_mode": "0555",
+  "parent_mode_preserved": "0775",
+  "parent_only_reviewed_linkinput_copy_addition": true,
+  "original_artifact_source_fixture_records": 97,
+  "stock_native_default_link_records": 33,
+  "new_native_alias_resolved_roles": 4,
+  "primary_future_roles": 136,
+  "unique_primary_requested": 136,
+  "unique_primary_resolved": 127,
+  "separate_historical_header_depfile_roles": 4,
+  "future_total_harness_identity_roles": 140,
+  "readonly_mode_roster_guards": 15,
+  "named_absences": 4,
+  "root_independent_remote_recheck": {
+    "current_file_records_verified": 140,
+    "primary_roles": 136,
+    "separate_header_dep_records": 4,
+    "unique_primary_requested": 136,
+    "unique_primary_resolved": 127,
+    "readonly_mode_rosters_verified": 15,
+    "parent_after_copy_roster_exact": true,
+    "parent_mode": "0o775",
+    "named_absences": 4,
+    "link_attempt_absent": true,
+    "native_file_byte_symbol_checks": [
+      {
+        "SONAME": [
+          "libcrypto.so.3"
+        ],
+        "required_visible_symbol_names_verified": 6,
+        "dynamic_export_names": 5367,
+        "needed": [
+          "libc.so.6"
+        ],
+        "RPATH_RUNPATH_absent": true,
+        "versioned_link_supply_ABI_runtime_proved": false
+      },
+      {
+        "SONAME": [
+          "libyaml-cpp.so.0.8"
+        ],
+        "required_visible_symbol_names_verified": 18,
+        "dynamic_export_names": 534,
+        "needed": [
+          "libstdc++.so.6",
+          "libgcc_s.so.1",
+          "libc.so.6"
+        ],
+        "RPATH_RUNPATH_absent": true,
+        "versioned_link_supply_ABI_runtime_proved": false
+      }
+    ],
+    "compiler_link_program_calls": 0
+  },
+  "independent_project_symbol_analysis": {
+    "original_archive_members_verified": 3,
+    "direct_test_project_UND": 2,
+    "recursive_project_required": 7,
+    "predicted_project_members": [
+      "foundation_identity.cpp.o",
+      "foundation_resources.cpp.o"
+    ],
+    "steps": [
+      {
+        "missing_symbols": [
+          "_ZN28phase5_public_live_affine_v217observePinnedFileERKNSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEES7_",
+          "_ZN28phase5_public_live_affine_v222loadPinnedStaticRangesERKNSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEES7_"
+        ],
+        "members_added": [
+          "foundation_identity.cpp.o"
+        ]
+      },
+      {
+        "missing_symbols": [
+          "_ZN28phase5_public_live_affine_v210checkedAddEmm",
+          "_ZN28phase5_public_live_affine_v216OwnedReservationD1Ev",
+          "_ZN28phase5_public_live_affine_v216SharedCaseBudget19chargeMetadataBytesEm",
+          "_ZN28phase5_public_live_affine_v216SharedCaseBudget19chargeScratchOrCopyEm",
+          "_ZN28phase5_public_live_affine_v216SharedCaseBudget7reserveEm"
+        ],
+        "members_added": [
+          "foundation_resources.cpp.o"
+        ]
+      }
+    ],
+    "context_member_required": false,
+    "actual_extraction_requires_future_map": true
+  },
+  "native_symbol_name_candidates": {
+    "EVP": 6,
+    "YAML": 18,
+    "total": 24,
+    "independent_visible_dynsym_name_checks": true,
+    "not_versioned_link_ABI_runtime_supply": true
+  },
+  "historical_header_qualification": {
+    "original_identity_TU_recorded_dep_paths": 395,
+    "original_depfile_bytes": 17226,
+    "original_depfile_sha256": "a94494023dafdea87fafcb591b950cd37475dec33dea749d30f63135c9b98245",
+    "original_three_recorded_postbuild_header_identities_match_current": true,
+    "not_new_test_direct_includes": true,
+    "not_current_DSO_version_or_ABI_binding": true
+  },
+  "parser_review": "Adds only ELF other&3 visibility field;ASTparsed,filebyteonly",
+  "harness_review": [
+    "OnefixedGCC13link argv exacttwoinputs+twoexplicitresolvedDSOfiles;noSDK/wholearchive/newsourcecompile",
+    "Limits/kill/capture scaffolding ASTmatchespreviousreviewedV2linkpattern",
+    "Comparedtemplate to retainedunexecutedinitialV1 onlyas sourceanchor;actual15readonlyroster,parentexclusiveattempt,4separaterecord andnativeSONAME/LOAD/RPATH checks independentlyreviewed",
+    "OnePopen path gatedby --execute-reviewed-link-once;no binaryexecutionpath",
+    "Actualfuturemap must extractidentity+resources andLOADbothselectednativefiles;ELFrequiresCrypto/YAMLSONAMEs andnoRPATH/RUNPATH"
+  ],
+  "future_parent_after_link_attempt": {
+    "path": "/home/codextransfer/predictive_motion/results/phase5/foundation-identity-static-ranges-v1-20261010",
+    "mode": "0o775",
+    "roster": [
+      "compile-attempt1",
+      "link-attempt1",
+      "link-inputs-version1",
+      "source-version1"
+    ]
+  },
+  "candidate_child_limits": {
+    "CPU_seconds": [
+      110,
+      110
+    ],
+    "AS_bytes": [
+      4294967296,
+      4294967296
+    ],
+    "CORE_bytes": [
+      0,
+      0
+    ],
+    "FSIZE_bytes": [
+      134217728,
+      134217728
+    ],
+    "NOFILE": [
+      64,
+      64
+    ]
+  },
+  "wall_seconds": 120,
+  "combined_output_cap_bytes": 1048576,
+  "fixed_environment": {
+    "PATH": "/usr/bin:/bin",
+    "LANG": "C",
+    "LC_ALL": "C",
+    "TZ": "UTC"
+  },
+  "nativequeries": 0,
+  "compiler_calls": 0,
+  "link_calls": 0,
+  "program_runs": 0,
+  "production_CPP_API_calls": 0,
+  "planned_groups_unexecuted": 24,
+  "planned_target_entries_unexecuted": 29,
+  "expected714byte_stdout_still_future": true,
+  "retained_schema_adapter_failures": "Producer count-vs-list TypeError plus Root step/header-field schema adapters retained;no native/project execution or input/control changes",
+  "limits": [
+    "Pureprojectclosure andnativevisible symbolnames are predictions,notactualarchive/linkselection orversionedABI/runtimeproof",
+    "15readonlyrosters preserved;parent0775 is mutable andonly futureexclusive link-attempt1 addition admitted",
+    "Historical10math observation labels remainhistorical,no linkdependency/retrospectiveprefreeze claim",
+    "Identity/resource memberotherproducer/memberbudget/reservation definitions maylinkbutremainruntimeclosed",
+    "NoCurrentproducer/memberbudget/Model/SDK/LiveActual/first4ms/affine/cost/capture/Parent/plant/main/scorer"
+  ],
+  "publication": "Compactauthoredrootreview/storage only;hostplan/controls/nativefile/symbol/header/dep/archives excluded",
+  "next_admitted_unit": "Separate exactone link-only invocationafterverifiedmilestonebackup;firstfailurestop,no retry/source/fixturechange orbinaryexecution",
+  "phase5": "NOT_ACCEPTED",
+  "phase6": "NOT_STARTED",
+  "all_prior_actual_results_figures_sources_failures_and_immutable_checker_freezes_preserved": true
+}
