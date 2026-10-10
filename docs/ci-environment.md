@@ -1,9 +1,22 @@
 # CI environment maintenance
 
-Status, 2026-10-09 (America/Toronto): **bootstrap code prepared; no GHCR image
-has been published or verified by this change; daily CI has not migrated.**
-The first PR retains the working daily ROS container and dependency installation.
-It does not change research code, phase gates, thresholds or test entry points.
+Status, 2026-10-10 (America/Toronto): **Stage A published and fully verified;
+Stage B candidate published, its full validation is running; daily CI has not
+migrated.** PR #2 was merged with direct human authorization at
+`ff27808fea77a9742cd9363c17addfbf0d1f3ca2`. Current daily CI still uses the
+original container and dependency installation. No research code, phase gates,
+thresholds or test entry points changed.
+
+Verified GHCR ROS base (`linux/amd64` manifest):
+`ghcr.io/sp-zh/predictive-motion-research-ros-base@sha256:a5426de405f6f0a82b0f3def3bbd3bce2a71a91421fe980c17613b4e51ef38d9`.
+[Stage A run 38026127189](https://github.com/sp-zh/predictive-motion-research/actions/runs/38026127189)
+passed publication/re-pull/content correspondence and the original full tests.
+The dependency candidate is
+`ghcr.io/sp-zh/predictive-motion-research-ci@sha256:16bacb7ed79dde48cd3c60766ab04982a4096fdcfe780a492636ff5c1ed2cff6`,
+from [Stage B run 38026435088](https://github.com/sp-zh/predictive-motion-research/actions/runs/38026435088).
+It is published but not yet accepted for daily CI. Do not switch until full and
+anonymous hosted-runner validation complete. The Package page currently shows
+Public and repository ownership; the agent did not alter visibility.
 
 ## Current source and deployment order
 
@@ -17,7 +30,7 @@ repository with the amd64 digest selected from that index. `target_manifest`
 is the independent GHCR result. Skopeo rejects Docker transport references that
 contain both tag and digest; `scripts/ci/ros_source_reference.py` validates the
 allowed repository/tag and full digest and constructs the transport references.
- No current GHCR CI digest exists in this implementation record.
+ The verified base and published CI candidate are recorded above; the candidate remains gated on validation.
 
 1. Review and manually merge the bootstrap PR. GitHub requires the dispatch
    workflow to be registered on the default branch. No automatic merge is used.

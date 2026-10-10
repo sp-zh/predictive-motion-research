@@ -58,7 +58,7 @@ owner confirmation before anonymous verification and the second migration PR.
 Current daily CI has not switched; no Stage A/B/public verification has occurred.
 See [maintenance runbook](../docs/ci-environment.md) for exact acceptance gates.
 
-Visual provenance: `figures/ci/ghcr-bootstrap-status.svg`/`.png` are a static
+Initial 2026-10-09 snapshot visual provenance (retained in Git at `9ea9269`): `figures/ci/ghcr-bootstrap-status.svg`/`.png` are a static
 status chart from the two linked baseline Actions logs; five explicit observed
 /pass/fail/pending rows, no simulated or inferred controller values. PNG is
 1200×640; inspected for legibility. No physical units apply. SHA-256:
@@ -146,3 +146,47 @@ in that isolated Dell temporary directory and inspection copies under
 copies, not durable experimental archives. The small source/digest/results
 record is retained here. PR merge remains paused; formal CI retains the original
 container, dependency installation, algorithms, phase state and test entry.
+
+
+Stage A deployment checkpoint — 2026-10-10 Toronto
+
+The human explicitly authorized “授权合并 PR #2 并继续部署”. PR #2 head
+`9ea92693b71007a93a6881400bcf8b1c118b5fc3` was merged normally to
+`ff27808fea77a9742cd9363c17addfbf0d1f3ca2`; no history rewrite or branch-protection
+bypass. Publication workflow registration was confirmed before dispatch.
+[Stage A run 38026127189](https://github.com/sp-zh/predictive-motion-research/actions/runs/38026127189)
+completed both publication and read-only validation jobs successfully.
+Original source remains `docker.io/library/ros:jazzy-ros-base-noble@sha256:066420e07f60aa18262f2479981def87ebcfcec42eefb0c0c57c4a46098348ca`;
+normalized index uses the same digest without a tag. Selected source and actual
+GHCR target manifest both resolved to `sha256:a5426de405f6f0a82b0f3def3bbd3bce2a71a91421fe980c17613b4e51ef38d9`.
+This equality was measured, not assumed. Target is
+`ghcr.io/sp-zh/predictive-motion-research-ros-base@sha256:a5426de405f6f0a82b0f3def3bbd3bce2a71a91421fe980c17613b4e51ef38d9`,
+linux/amd64 only, with source config and all ten layer descriptors matching.
+The job re-pulled the target digest and checked architecture, Ubuntu and ROS.
+
+Downloaded and independently audited native XML/full logs from Stage A and
+[original-container run 38026123434](https://github.com/sp-zh/predictive-motion-research/actions/runs/38026123434).
+Both checkout the same `ff27808` commit, execute 24 identical native GoogleTest
+cases plus eight statistics cases, zero skips, and retain numerical/consumer
+markers. Selected tool/library version command outputs are identical. This is
+an environment-supply comparison, not a controller-performance claim.
+Stage A still installed the unchanged setup script and exact Pinocchio version.
+Release and validation artifacts are under `/private/tmp/ros-ghcr-stage-a-release`
+and `/private/tmp/ros-ghcr-stage-a-validation` for local inspection; Actions retains
+its named artifacts for 30 days. Small immutable references/results are retained
+here; temporary directories are not claimed as durable experimental backups.
+
+Stage B was dispatched at the same commit using that successful run's artifact.
+Its publisher checks confirmed the base Package belongs to this repository. The
+candidate was built from the explicit four-file context, pushed and re-pulled as
+`ghcr.io/sp-zh/predictive-motion-research-ci@sha256:16bacb7ed79dde48cd3c60766ab04982a4096fdcfe780a492636ff5c1ed2cff6`.
+[Run 38026435088](https://github.com/sp-zh/predictive-motion-research/actions/runs/38026435088)
+has not yet completed full validation at this checkpoint. Its actual Package
+page shows Public and links this repository; no visibility setting was changed
+by the agent. Anonymous pull is still unverified. Daily CI remains unchanged.
+
+Stage A status visual: 1200×640, inspected; source is the run IDs and result
+records above. Infrastructure scope only, no physical model units. SHA-256:
+
+- `figures/ci/ghcr-bootstrap-status.svg`: `5a704657a68fbbad5a7feab06c97f63b1c37859635f90b51e4013d483f39d6e9`
+- `figures/ci/ghcr-bootstrap-status.png`: `9566b6c1cfe3717d30acdb529ee40f18aba00e89352c03329632c7d2fbeb1b82`
