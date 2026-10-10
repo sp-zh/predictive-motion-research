@@ -1,0 +1,84 @@
+{
+  "decision": "PASS_ONE_SYNTHETIC_FINITE_INITIAL_TU_COMPILE_ONLY_NOT_LINK_OR_RUNTIME",
+  "baseline": "9648a453f1d39f2307aaf1395c5fa7032a6bf082",
+  "original_ready_sha256": "91a0363a1b79cc2cd5b8cd7caeb0d3c3dcc59e2ebdf137862a9c11ae977757db",
+  "packet_payloads_verified": 33,
+  "production_and_prior_guards_verified": 257,
+  "sealed_controls_byte_identical_to_reviewed_freeze": true,
+  "compile_invocations": 1,
+  "exit_code": 0,
+  "signal_number": null,
+  "timeout_or_cap_stop": false,
+  "automatic_retries": 0,
+  "raw_stdout_bytes": 0,
+  "raw_stderr_bytes": 0,
+  "object": {
+    "class": "ELF64",
+    "type": "ET_REL",
+    "machine": "AMD64",
+    "entry": 0,
+    "program_headers": 0,
+    "sections": 37,
+    "bytes": 26936,
+    "sha256": "70bd9758fca0e5e44d4242c532c502bbffd9be2528125b78fe7f607717caed89"
+  },
+  "actual_depfile_paths_verified": 250,
+  "depfile_prelisted_records_matched": 240,
+  "new_post_compile_records_verified": 10,
+  "new_observation_scope": "Ten math-header records absent from this360input catalog observed after compilation; not retroactively prefrozen, not an assertion of never being seen in any historical build or complete OS/include/readset closure",
+  "harness_compile_input_prepost_records_matched": 360,
+  "separate_artifact_prepost_records_matched": 67,
+  "separate_directory_prepost_records_matched": 9,
+  "separate_preservation_scope": "67artifact and9directory records are independent before/after observations, not harness427inputs or ten harness-old directories",
+  "prior_library_objects": 20,
+  "prior_static_archives": 14,
+  "root_independent_remote_byte_mode_recheck": {
+    "prior_directory_guards_rechecked": 9,
+    "records_rechecked": 439,
+    "compile_cwd_empty": true,
+    "readonly_source_directory": true,
+    "compiler_or_program_invocations": 0
+  },
+  "original_executor_archive_all14_regular_files_and13_payloads_verified": true,
+  "compiler_profile": "Reviewed GCC13/O2/DNDEBUG/fno-fast-math/ffp-contract=off/C++17/warnings; one-cTU/fixed4fieldenv/120s/parallel1/cap1MiB",
+  "candidate_limits": {
+    "CPU_seconds": [
+      110,
+      110
+    ],
+    "AS_bytes": [
+      4294967296,
+      4294967296
+    ],
+    "CORE_bytes": [
+      0,
+      0
+    ],
+    "FSIZE_bytes": [
+      134217728,
+      134217728
+    ],
+    "NOFILE": [
+      64,
+      64
+    ]
+  },
+  "type_separation_static_assertions_compiled_successfully": 3,
+  "traits_scope": "Not convertible/constructible toLiveActualContext andnot invocable into first4msRequest; compile-only, not runtime assertions",
+  "limits": [
+    "Eleven groups and97attempted target entries remain unexecuted; no finitecopy/signedzero/nonfinite/refusal runtime results",
+    "Selected synthetic coordinates do not establish physicaldomain/sensor/Model/controller permission; no affine map or nonempty algebra computation",
+    "Finite known files/actual depfile records do not prove full OS/native/readset/RSS closure or measured performance",
+    "Inherited RESOURCE_INITIAL descriptor is generic wording only; actual source/argv is the independently reviewed finite-initial test"
+  ],
+  "target_validator_entries_executed": 0,
+  "point_accessor_runtime_calls": 0,
+  "link_calls": 0,
+  "program_runs": 0,
+  "production_CPP_function_calls": 0,
+  "phase5": "NOT_ACCEPTED",
+  "phase6": "NOT_STARTED",
+  "next_unit": "Separate reviewed single-link preparation using actual context validator symbol analysis; do not inherit resources-only extraction prediction",
+  "publication": "Compact authored root review/storage only; raw controls/object/depfile/header-native indices excluded",
+  "prior_actual66_85_13_10_results_visuals_sources_and_all_failures_preserved": true
+}
