@@ -1,0 +1,25 @@
+PASS identity_plain_bytes
+PASS identity_yaml_bytes
+PASS ranges_valid_getters
+PASS ranges_extra_key_allowed
+PASS identity_sha_syntax_before_io
+PASS identity_path_syntax_before_io
+PASS identity_sha_before_bad_path
+PASS identity_digest_mismatch
+PASS identity_empty_file
+PASS identity_missing_file
+PASS identity_directory_nonregular
+PASS range_nonmap
+PASS range_duplicate_key
+PASS range_joint13
+PASS range_control15
+PASS range_joint_flags6
+PASS range_control_flags8
+PASS range_joint_flag0
+PASS range_control_flag2
+PASS range_nan
+PASS range_positive_inf
+PASS range_negative_inf
+PASS range_reversed
+PASS range_equal
+COMPLETE 24 identity/range groups; identity entries 14; range entries 15; total 29; no phase acceptance

@@ -1,0 +1,107 @@
+{
+  "decision": "PASS_FIXED24_IDENTITY_STATIC_RANGES_RUNTIME_ONLY_NOT_PHASE_ACCEPTANCE",
+  "baseline": "4efad09bf72d12bcb8aa3cc2a035c17f79b59840",
+  "ready_sha256": "2d6b7eb77fb6bfc9519bf81f7ad75863a0adf9a4768b3be709d34177d8bd6d30",
+  "packet_payloads_verified": 36,
+  "production_and_prior_guards_verified": 316,
+  "program_invocations": 1,
+  "exit_code": 0,
+  "signal_number": null,
+  "timeout_or_output_stop": false,
+  "automatic_retries": 0,
+  "case_groups_passed": 24,
+  "case_groups_failed": 0,
+  "controlled_target_entries": 29,
+  "controlled_API_partition": {
+    "observePinnedFile": 14,
+    "loadPinnedStaticRanges": 15
+  },
+  "controlled_entry_outcomes": {
+    "accepted": 4,
+    "required_refusal": 25
+  },
+  "required_refusal_types": {
+    "invalid_argument": 24,
+    "runtime_error_open_prefix": 1
+  },
+  "controlled_entry_scope": "Entries at two compiled source wrappers; pergroup delta and final COMPLETE29 closure. Not IO/getter/all C++/native calls or independent experiments.",
+  "actual_stdout_bytes": 714,
+  "actual_stdout_sha256": "c1076d9df9c778e50ff46dc76359528502a8c6d8974ff7de7c54a642f1ccddad",
+  "stderr_bytes": 0,
+  "expected_stdout_frozen_before_execution": true,
+  "exact_ordered_stdout_matched": true,
+  "binary_sha256": "367bed8cb810afd952d3403391e1d033eec2b6ce69d48e03091ec0e8e6960eff",
+  "prepost_identity_records_matched": 121,
+  "unique_requested_paths_matched": 120,
+  "unique_resolved_files_matched": 111,
+  "original_artifact_guard_records": 101,
+  "readonly_directory_rosters_matched": 16,
+  "separate_yaml_header_and_historical_depfile_records": 4,
+  "separate_postcompile_math_records_unchanged": 10,
+  "historical_records_not_new_runtime_dependencies_or_retrofreeze": true,
+  "named_absences_preserved": 4,
+  "root_independent_remote_recheck": {
+    "records_verified": 135,
+    "readonly_rosters": 16,
+    "named_absences": 4,
+    "cwd_empty": true,
+    "native_actual_stdout_matched": true,
+    "test_program_calls": 0,
+    "compiler_calls": 0,
+    "link_calls": 0
+  },
+  "applied_child_limits": {
+    "RLIMIT_CPU": [
+      10,
+      10
+    ],
+    "RLIMIT_AS": [
+      268435456,
+      268435456
+    ],
+    "RLIMIT_CORE": [
+      0,
+      0
+    ],
+    "RLIMIT_FSIZE": [
+      0,
+      0
+    ],
+    "RLIMIT_NOFILE": [
+      32,
+      32
+    ],
+    "RLIMIT_NPROC": [
+      16,
+      16
+    ]
+  },
+  "CPP_public_API_and_getter_checks_occurred": true,
+  "occurrence_evidence": "Exact714B ordered24PASS+COMPLETE14identity15range29 and previously reviewed frozen compiled sourceflow; not Popen alone.",
+  "exact_all_CPP_getter_IO_native_library_audit_backend_call_count": "UNMEASURED",
+  "compiler_calls": 0,
+  "link_calls": 0,
+  "capture_wait_interval_seconds": 0.0029624099988723174,
+  "capture_interval_scope": "Begins after Popen; not total runtime/CPU/controller deadline evidence.",
+  "independent_review": [
+    "All36 sealedpayloads,316 prior guards and13 regularfile nativearchive/12payloads match exact retained bytes.",
+    "Controls and actualplan match reviewedfreeze; one program, no compiler/link/retry.",
+    "All24 original groups retained;4accepted and25 requiredrefusals match frozen sourcechecks.",
+    "Two valid rangegroups check28 exact halfinteger scalar ranges and limitedflags; extra mapkey permitted by original implementation.",
+    "121 main roles plus14 separate historical/math records and16 readonly rosters match pre/post and current remote bytes; parent only adds run-attempt1.",
+    "Actualcaps equal admitted caps; native initialization V2 scope retained without full readset/RSS/ABI inference."
+  ],
+  "limits": [
+    "28half-integer scalar ranges checked ineachpositive range group;fixtureconstants witness not robotModel/livecontext/physicalunits admission",
+    "Source SHA/path/type/map/duplicate/roster/flags/nonfinite/order refusals matchedcompiledchecks;source reasons not separatelyprinted exception telemetry",
+    "Missing-key YAML andunsafe/racy/oversize/OOM/producer/memberbudget variantsremainDEFERRED",
+    "Otherlinked producer/memberbudget/resourceBudget/Model/affine/cost/capture/Parent/plant/scorer remainclosed",
+    "CapturewaitintervalafterPopen not totalruntimeCPU/controllerlatency/RSS/ABI/performance",
+    "No successful robottrajectory, controllerperformance, fullnativeABI or phaseacceptance established.",
+    "Getter values are synthetic fixture witnesses; physical units and robot Model admission remain unestablished."
+  ],
+  "publication": "Small actualstdout/groups/provenance, compact rootreview/storage and actual evidenceplot; raw native/config/cache/host/control/binary indices excluded.",
+  "phase5": "NOT_ACCEPTED",
+  "phase6": "NOT_STARTED",
+  "all_prior_sources_failures_checkerfreezes_and_results_preserved": true
+}

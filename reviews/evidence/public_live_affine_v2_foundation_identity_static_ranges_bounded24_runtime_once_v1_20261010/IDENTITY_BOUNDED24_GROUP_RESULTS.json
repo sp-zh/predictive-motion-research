@@ -1,0 +1,262 @@
+{
+  "program_invocations": 1,
+  "fixed_case_groups": 24,
+  "groups": [
+    {
+      "case_group_id": "identity_plain_bytes",
+      "observed_status": "PASS",
+      "target_API": "observePinnedFile",
+      "controlled_target_entries": 1,
+      "source_declared_expected": "ACCEPT_IDENTITY",
+      "source_declared_fixture": null,
+      "source_checked_refusal_message": null,
+      "scope": "Fullfixedoutput+compiledsourceflow verifies declaredchecks;declaredreason notseparatelyprinted exception telemetry;notphysical/model/trajectory acceptance"
+    },
+    {
+      "case_group_id": "identity_yaml_bytes",
+      "observed_status": "PASS",
+      "target_API": "observePinnedFile",
+      "controlled_target_entries": 1,
+      "source_declared_expected": "ACCEPT_IDENTITY",
+      "source_declared_fixture": null,
+      "source_checked_refusal_message": null,
+      "scope": "Fullfixedoutput+compiledsourceflow verifies declaredchecks;declaredreason notseparatelyprinted exception telemetry;notphysical/model/trajectory acceptance"
+    },
+    {
+      "case_group_id": "ranges_valid_getters",
+      "observed_status": "PASS",
+      "target_API": "loadPinnedStaticRanges",
+      "controlled_target_entries": 1,
+      "source_declared_expected": "ACCEPT_RANGES",
+      "source_declared_fixture": null,
+      "source_checked_refusal_message": null,
+      "scope": "Fullfixedoutput+compiledsourceflow verifies declaredchecks;declaredreason notseparatelyprinted exception telemetry;notphysical/model/trajectory acceptance"
+    },
+    {
+      "case_group_id": "ranges_extra_key_allowed",
+      "observed_status": "PASS",
+      "target_API": "loadPinnedStaticRanges",
+      "controlled_target_entries": 1,
+      "source_declared_expected": "ACCEPT_RANGES",
+      "source_declared_fixture": null,
+      "source_checked_refusal_message": null,
+      "scope": "Fullfixedoutput+compiledsourceflow verifies declaredchecks;declaredreason notseparatelyprinted exception telemetry;notphysical/model/trajectory acceptance"
+    },
+    {
+      "case_group_id": "identity_sha_syntax_before_io",
+      "observed_status": "PASS",
+      "target_API": "observePinnedFile",
+      "controlled_target_entries": 4,
+      "source_declared_expected": "REQUIRED_INVALID_ARGUMENT_SHA",
+      "source_declared_fixture": null,
+      "source_checked_refusal_message": null,
+      "scope": "Fullfixedoutput+compiledsourceflow verifies declaredchecks;declaredreason notseparatelyprinted exception telemetry;notphysical/model/trajectory acceptance"
+    },
+    {
+      "case_group_id": "identity_path_syntax_before_io",
+      "observed_status": "PASS",
+      "target_API": "observePinnedFile",
+      "controlled_target_entries": 3,
+      "source_declared_expected": "REQUIRED_INVALID_ARGUMENT_PATH",
+      "source_declared_fixture": null,
+      "source_checked_refusal_message": null,
+      "scope": "Fullfixedoutput+compiledsourceflow verifies declaredchecks;declaredreason notseparatelyprinted exception telemetry;notphysical/model/trajectory acceptance"
+    },
+    {
+      "case_group_id": "identity_sha_before_bad_path",
+      "observed_status": "PASS",
+      "target_API": "observePinnedFile",
+      "controlled_target_entries": 1,
+      "source_declared_expected": "REQUIRED_INVALID_ARGUMENT_SHA_PRIORITY",
+      "source_declared_fixture": null,
+      "source_checked_refusal_message": null,
+      "scope": "Fullfixedoutput+compiledsourceflow verifies declaredchecks;declaredreason notseparatelyprinted exception telemetry;notphysical/model/trajectory acceptance"
+    },
+    {
+      "case_group_id": "identity_digest_mismatch",
+      "observed_status": "PASS",
+      "target_API": "observePinnedFile",
+      "controlled_target_entries": 1,
+      "source_declared_expected": "REQUIRED_INVALID_ARGUMENT_DIGEST",
+      "source_declared_fixture": null,
+      "source_checked_refusal_message": null,
+      "scope": "Fullfixedoutput+compiledsourceflow verifies declaredchecks;declaredreason notseparatelyprinted exception telemetry;notphysical/model/trajectory acceptance"
+    },
+    {
+      "case_group_id": "identity_empty_file",
+      "observed_status": "PASS",
+      "target_API": "observePinnedFile",
+      "controlled_target_entries": 1,
+      "source_declared_expected": "REQUIRED_INVALID_ARGUMENT_EMPTY",
+      "source_declared_fixture": null,
+      "source_checked_refusal_message": null,
+      "scope": "Fullfixedoutput+compiledsourceflow verifies declaredchecks;declaredreason notseparatelyprinted exception telemetry;notphysical/model/trajectory acceptance"
+    },
+    {
+      "case_group_id": "identity_missing_file",
+      "observed_status": "PASS",
+      "target_API": "observePinnedFile",
+      "controlled_target_entries": 1,
+      "source_declared_expected": "REQUIRED_RUNTIME_ERROR_OPEN_PREFIX",
+      "source_declared_fixture": null,
+      "source_checked_refusal_message": null,
+      "scope": "Fullfixedoutput+compiledsourceflow verifies declaredchecks;declaredreason notseparatelyprinted exception telemetry;notphysical/model/trajectory acceptance"
+    },
+    {
+      "case_group_id": "identity_directory_nonregular",
+      "observed_status": "PASS",
+      "target_API": "observePinnedFile",
+      "controlled_target_entries": 1,
+      "source_declared_expected": "REQUIRED_INVALID_ARGUMENT_NONREGULAR",
+      "source_declared_fixture": null,
+      "source_checked_refusal_message": null,
+      "scope": "Fullfixedoutput+compiledsourceflow verifies declaredchecks;declaredreason notseparatelyprinted exception telemetry;notphysical/model/trajectory acceptance"
+    },
+    {
+      "case_group_id": "range_nonmap",
+      "observed_status": "PASS",
+      "target_API": "loadPinnedStaticRanges",
+      "controlled_target_entries": 1,
+      "source_declared_expected": "REQUIRED_INVALID_ARGUMENT_RANGE_RULE",
+      "source_declared_fixture": "ranges_nonmap.yaml",
+      "source_checked_refusal_message": "static constants must be a keyed object",
+      "scope": "Fullfixedoutput+compiledsourceflow verifies declaredchecks;declaredreason notseparatelyprinted exception telemetry;notphysical/model/trajectory acceptance"
+    },
+    {
+      "case_group_id": "range_duplicate_key",
+      "observed_status": "PASS",
+      "target_API": "loadPinnedStaticRanges",
+      "controlled_target_entries": 1,
+      "source_declared_expected": "REQUIRED_INVALID_ARGUMENT_RANGE_RULE",
+      "source_declared_fixture": "ranges_duplicate_key.yaml",
+      "source_checked_refusal_message": "duplicate static constants key",
+      "scope": "Fullfixedoutput+compiledsourceflow verifies declaredchecks;declaredreason notseparatelyprinted exception telemetry;notphysical/model/trajectory acceptance"
+    },
+    {
+      "case_group_id": "range_joint13",
+      "observed_status": "PASS",
+      "target_API": "loadPinnedStaticRanges",
+      "controlled_target_entries": 1,
+      "source_declared_expected": "REQUIRED_INVALID_ARGUMENT_RANGE_RULE",
+      "source_declared_fixture": "ranges_joint13.yaml",
+      "source_checked_refusal_message": "static range/list roster mismatch",
+      "scope": "Fullfixedoutput+compiledsourceflow verifies declaredchecks;declaredreason notseparatelyprinted exception telemetry;notphysical/model/trajectory acceptance"
+    },
+    {
+      "case_group_id": "range_control15",
+      "observed_status": "PASS",
+      "target_API": "loadPinnedStaticRanges",
+      "controlled_target_entries": 1,
+      "source_declared_expected": "REQUIRED_INVALID_ARGUMENT_RANGE_RULE",
+      "source_declared_fixture": "ranges_control15.yaml",
+      "source_checked_refusal_message": "static range/list roster mismatch",
+      "scope": "Fullfixedoutput+compiledsourceflow verifies declaredchecks;declaredreason notseparatelyprinted exception telemetry;notphysical/model/trajectory acceptance"
+    },
+    {
+      "case_group_id": "range_joint_flags6",
+      "observed_status": "PASS",
+      "target_API": "loadPinnedStaticRanges",
+      "controlled_target_entries": 1,
+      "source_declared_expected": "REQUIRED_INVALID_ARGUMENT_RANGE_RULE",
+      "source_declared_fixture": "ranges_joint_flags6.yaml",
+      "source_checked_refusal_message": "static range/list roster mismatch",
+      "scope": "Fullfixedoutput+compiledsourceflow verifies declaredchecks;declaredreason notseparatelyprinted exception telemetry;notphysical/model/trajectory acceptance"
+    },
+    {
+      "case_group_id": "range_control_flags8",
+      "observed_status": "PASS",
+      "target_API": "loadPinnedStaticRanges",
+      "controlled_target_entries": 1,
+      "source_declared_expected": "REQUIRED_INVALID_ARGUMENT_RANGE_RULE",
+      "source_declared_fixture": "ranges_control_flags8.yaml",
+      "source_checked_refusal_message": "static range/list roster mismatch",
+      "scope": "Fullfixedoutput+compiledsourceflow verifies declaredchecks;declaredreason notseparatelyprinted exception telemetry;notphysical/model/trajectory acceptance"
+    },
+    {
+      "case_group_id": "range_joint_flag0",
+      "observed_status": "PASS",
+      "target_API": "loadPinnedStaticRanges",
+      "controlled_target_entries": 1,
+      "source_declared_expected": "REQUIRED_INVALID_ARGUMENT_RANGE_RULE",
+      "source_declared_fixture": "ranges_joint_flag0.yaml",
+      "source_checked_refusal_message": "fixed bounded FR3 joint and command profile required",
+      "scope": "Fullfixedoutput+compiledsourceflow verifies declaredchecks;declaredreason notseparatelyprinted exception telemetry;notphysical/model/trajectory acceptance"
+    },
+    {
+      "case_group_id": "range_control_flag2",
+      "observed_status": "PASS",
+      "target_API": "loadPinnedStaticRanges",
+      "controlled_target_entries": 1,
+      "source_declared_expected": "REQUIRED_INVALID_ARGUMENT_RANGE_RULE",
+      "source_declared_fixture": "ranges_control_flag2.yaml",
+      "source_checked_refusal_message": "fixed bounded FR3 joint and command profile required",
+      "scope": "Fullfixedoutput+compiledsourceflow verifies declaredchecks;declaredreason notseparatelyprinted exception telemetry;notphysical/model/trajectory acceptance"
+    },
+    {
+      "case_group_id": "range_nan",
+      "observed_status": "PASS",
+      "target_API": "loadPinnedStaticRanges",
+      "controlled_target_entries": 1,
+      "source_declared_expected": "REQUIRED_INVALID_ARGUMENT_RANGE_RULE",
+      "source_declared_fixture": "ranges_nan.yaml",
+      "source_checked_refusal_message": "finite ordered static ranges required",
+      "scope": "Fullfixedoutput+compiledsourceflow verifies declaredchecks;declaredreason notseparatelyprinted exception telemetry;notphysical/model/trajectory acceptance"
+    },
+    {
+      "case_group_id": "range_positive_inf",
+      "observed_status": "PASS",
+      "target_API": "loadPinnedStaticRanges",
+      "controlled_target_entries": 1,
+      "source_declared_expected": "REQUIRED_INVALID_ARGUMENT_RANGE_RULE",
+      "source_declared_fixture": "ranges_positive_inf.yaml",
+      "source_checked_refusal_message": "finite ordered static ranges required",
+      "scope": "Fullfixedoutput+compiledsourceflow verifies declaredchecks;declaredreason notseparatelyprinted exception telemetry;notphysical/model/trajectory acceptance"
+    },
+    {
+      "case_group_id": "range_negative_inf",
+      "observed_status": "PASS",
+      "target_API": "loadPinnedStaticRanges",
+      "controlled_target_entries": 1,
+      "source_declared_expected": "REQUIRED_INVALID_ARGUMENT_RANGE_RULE",
+      "source_declared_fixture": "ranges_negative_inf.yaml",
+      "source_checked_refusal_message": "finite ordered static ranges required",
+      "scope": "Fullfixedoutput+compiledsourceflow verifies declaredchecks;declaredreason notseparatelyprinted exception telemetry;notphysical/model/trajectory acceptance"
+    },
+    {
+      "case_group_id": "range_reversed",
+      "observed_status": "PASS",
+      "target_API": "loadPinnedStaticRanges",
+      "controlled_target_entries": 1,
+      "source_declared_expected": "REQUIRED_INVALID_ARGUMENT_RANGE_RULE",
+      "source_declared_fixture": "ranges_reversed.yaml",
+      "source_checked_refusal_message": "finite ordered static ranges required",
+      "scope": "Fullfixedoutput+compiledsourceflow verifies declaredchecks;declaredreason notseparatelyprinted exception telemetry;notphysical/model/trajectory acceptance"
+    },
+    {
+      "case_group_id": "range_equal",
+      "observed_status": "PASS",
+      "target_API": "loadPinnedStaticRanges",
+      "controlled_target_entries": 1,
+      "source_declared_expected": "REQUIRED_INVALID_ARGUMENT_RANGE_RULE",
+      "source_declared_fixture": "ranges_equal.yaml",
+      "source_checked_refusal_message": "finite ordered static ranges required",
+      "scope": "Fullfixedoutput+compiledsourceflow verifies declaredchecks;declaredreason notseparatelyprinted exception telemetry;notphysical/model/trajectory acceptance"
+    }
+  ],
+  "controlled_target_entries": 29,
+  "controlled_API_partition": {
+    "observePinnedFile": 14,
+    "loadPinnedStaticRanges": 15
+  },
+  "controlled_entry_outcomes": {
+    "accepted_target_entries": 4,
+    "required_refusal_target_entries": 25
+  },
+  "required_refusal_types": {
+    "invalid_argument": 24,
+    "runtime_error_open_prefix": 1
+  },
+  "group_counts_not_entry_IO_call_or_independent_experiment_counts": true,
+  "all_original_fixed_cases_retained": true,
+  "not_motion_or_controller_evidence": true
+}

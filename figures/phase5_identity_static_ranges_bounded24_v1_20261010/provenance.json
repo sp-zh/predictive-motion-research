@@ -1,0 +1,109 @@
+{
+  "scope": "Actual finite identity/static range interface checks; no phase acceptance",
+  "grains": {
+    "left": "One fixed group",
+    "right": "Entry at a compiled observe/load wrapper"
+  },
+  "selection": "All24 original groups and29 entries; no curated subset",
+  "rows": [
+    {
+      "area": "File identity",
+      "API": "observePinnedFile",
+      "case_group_ids": [
+        "identity_plain_bytes",
+        "identity_yaml_bytes",
+        "identity_sha_syntax_before_io",
+        "identity_path_syntax_before_io",
+        "identity_sha_before_bad_path",
+        "identity_digest_mismatch",
+        "identity_empty_file",
+        "identity_missing_file",
+        "identity_directory_nonregular"
+      ],
+      "passed_groups": 9,
+      "planned_groups": 9,
+      "controlled_entries": 14,
+      "accepted_entries": 2,
+      "required_refusal_entries": 12
+    },
+    {
+      "area": "Static ranges",
+      "API": "loadPinnedStaticRanges",
+      "case_group_ids": [
+        "ranges_valid_getters",
+        "ranges_extra_key_allowed",
+        "range_nonmap",
+        "range_duplicate_key",
+        "range_joint13",
+        "range_control15",
+        "range_joint_flags6",
+        "range_control_flags8",
+        "range_joint_flag0",
+        "range_control_flag2",
+        "range_nan",
+        "range_positive_inf",
+        "range_negative_inf",
+        "range_reversed",
+        "range_equal"
+      ],
+      "passed_groups": 15,
+      "planned_groups": 15,
+      "controlled_entries": 15,
+      "accepted_entries": 2,
+      "required_refusal_entries": 13
+    }
+  ],
+  "source_reason_scope": "Expected reasons checked by frozen source; exceptions not separately printed telemetry",
+  "required_refusal_types": {
+    "invalid_argument": 24,
+    "runtime_error_open_prefix": 1
+  },
+  "sources": {
+    "review": {
+      "file": "ROOT_IDENTITY_RUNTIME24_REVIEW.json",
+      "sha256": "fafdd621464cc4e45945572ba5d146020d556b4a20eedd2319764ebff98f7c65"
+    },
+    "actual_stdout": {
+      "file": "IDENTITY_BOUNDED24_STDOUT.txt",
+      "sha256": "c1076d9df9c778e50ff46dc76359528502a8c6d8974ff7de7c54a642f1ccddad"
+    },
+    "original_roster": {
+      "file": "FIXED_IDENTITY_RANGE_ROSTER_AND_ORACLE_V1.json",
+      "sha256": "659f7fbaab331e38c0d975b1752b1e2c1f5285f7a4a954cc32060c0a8b3654b1"
+    },
+    "group_results": {
+      "file": "IDENTITY_BOUNDED24_GROUP_RESULTS.json",
+      "sha256": "2f1aaab90aa5be4496eb72fd56a9d58561a3989bac74f1118d4fc687d9fa3f7d"
+    }
+  },
+  "renderer": {
+    "script": "plot_identity_static_ranges_bounded24.py",
+    "sha256": "0430ea40a7e4755ad085a9e6e6bf1594a674c6d19ac48cb51d7610a1606cd591",
+    "matplotlib": "3.10.3",
+    "dpi": 180,
+    "figure_inches": [
+      13,
+      7
+    ],
+    "font": "DejaVu Sans",
+    "colors": [
+      "#2864B0",
+      "#667180"
+    ],
+    "refusal_hatch": "///"
+  },
+  "outputs": [
+    {
+      "file": "identity_static_ranges_bounded24_outcomes.png",
+      "bytes": 184894,
+      "sha256": "07ed883275f3fec66c47a9b1fc959c2951a88bad92433dc123a98b40af0ef086"
+    },
+    {
+      "file": "identity_static_ranges_bounded24_outcomes.svg",
+      "bytes": 18280,
+      "sha256": "0fbc5a4e596f99c62757cb82b2765baea774a8438412140f04e100f9f585a6b3"
+    }
+  ],
+  "phase5": "NOT_ACCEPTED",
+  "phase6": "NOT_STARTED"
+}

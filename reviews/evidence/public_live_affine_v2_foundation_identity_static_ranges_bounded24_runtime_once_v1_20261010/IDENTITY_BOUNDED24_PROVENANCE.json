@@ -1,0 +1,156 @@
+{
+  "scope": "One actual fixed24fileidentity/staticrange contract diagnostic;not VerifiedModelProfile/physicaladmission/controller/phase acceptance",
+  "baseline": "4efad09bf72d12bcb8aa3cc2a035c17f79b59840",
+  "program_invocations": 1,
+  "fixed_case_groups": 24,
+  "passed_groups": 24,
+  "failed_groups": 0,
+  "controlled_target_entries": 29,
+  "controlled_API_partition": {
+    "observePinnedFile": 14,
+    "loadPinnedStaticRanges": 15
+  },
+  "controlled_entry_outcomes": {
+    "accepted_target_entries": 4,
+    "required_refusal_target_entries": 25
+  },
+  "required_refusal_types": {
+    "invalid_argument": 24,
+    "runtime_error_open_prefix": 1
+  },
+  "counter_scope": "Attempted targetentries counted in compiled observe/load wrappers;pergroupdelta and COMPLETE29 closure,not IOcalls/allCPP/native/gettercalls/independentexperiments",
+  "CPP_public_API_and_getter_checks_occurred": true,
+  "occurrence_evidence": "Exactoriginal714B24PASS+COMPLETE14identity15range29 and reviewedcompiledsourceflow,notPopenalone",
+  "exact_all_CPP_getter_IO_native_library_audit_backend_call_count": "UNMEASURED",
+  "source_reference_SHA256": {
+    "identity_static_ranges_v1.cpp": "541cc59e2c06952d407bb8fd222b4135e134852a8ce38ef9b0db0523bb90ef90",
+    "identity_expected_v1.hpp": "07ca5f7c175106696e235b3d2f7acd4098e33a9c1eef6add640c3c157c3333b8",
+    "FIXED_IDENTITY_RANGE_ROSTER_AND_ORACLE_V1.json": "659f7fbaab331e38c0d975b1752b1e2c1f5285f7a4a954cc32060c0a8b3654b1",
+    "FIXTURE_MANIFEST_AND_LOGICAL_BYTE_CAPS_V1.json": "66843cf9b517002c4401609c72179201d4e320bbac8ff08133f6d31278c20275",
+    "FIXED_FUTURE_EXPECTED_STDOUT_V1.txt": "c1076d9df9c778e50ff46dc76359528502a8c6d8974ff7de7c54a642f1ccddad"
+  },
+  "fixture_reference_identities": [
+    {
+      "name": "identity_plain.txt",
+      "path": "fixtures/identity_plain.txt",
+      "bytes": 32,
+      "sha256": "65bfdc92e029fd0218f2086e96049d13f824ccbf447da4736c07dd3fa5768a99"
+    },
+    {
+      "name": "identity_empty.txt",
+      "path": "fixtures/identity_empty.txt",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "name": "ranges_valid.yaml",
+      "path": "fixtures/ranges_valid.yaml",
+      "bytes": 228,
+      "sha256": "73936338fba4ed33377b5b8e65503ce54289459ff6d5e584f1c8f3961fbe18d4"
+    },
+    {
+      "name": "ranges_extra_key.yaml",
+      "path": "fixtures/ranges_extra_key.yaml",
+      "bytes": 253,
+      "sha256": "af03aa14f40c785eb37724bef018e28b10b0dbe04a3054b9801210637b427a84"
+    },
+    {
+      "name": "ranges_nonmap.yaml",
+      "path": "fixtures/ranges_nonmap.yaml",
+      "bytes": 10,
+      "sha256": "67358ed8fd6cd4d8aac33acaa376b58237beb891c3e984e505d3e57e43f7d320"
+    },
+    {
+      "name": "ranges_duplicate_key.yaml",
+      "path": "fixtures/ranges_duplicate_key.yaml",
+      "bytes": 303,
+      "sha256": "e52368cc832d7e56e06e63dd6f6e2dfb209b3d3d72461b7ad6aeca0ada7bb28d"
+    },
+    {
+      "name": "ranges_joint13.yaml",
+      "path": "fixtures/ranges_joint13.yaml",
+      "bytes": 225,
+      "sha256": "014b437b885bcef5047982b9658a44f7e86b32105920770d205c2331ced4ffa9"
+    },
+    {
+      "name": "ranges_control15.yaml",
+      "path": "fixtures/ranges_control15.yaml",
+      "bytes": 231,
+      "sha256": "72944b3c697a5895323080051500ac567adde3692d76be35cd81365b16eccd24"
+    },
+    {
+      "name": "ranges_joint_flags6.yaml",
+      "path": "fixtures/ranges_joint_flags6.yaml",
+      "bytes": 225,
+      "sha256": "83e67d17f466bfdc6a6f5481df2e0a0beb5a09dcd6c4f6dc8dc521066a0317c0"
+    },
+    {
+      "name": "ranges_control_flags8.yaml",
+      "path": "fixtures/ranges_control_flags8.yaml",
+      "bytes": 231,
+      "sha256": "405c7d1d2a234dc30b5d737608e9e28469a4efd771ff0e26a4655f77e92e9c11"
+    },
+    {
+      "name": "ranges_joint_flag0.yaml",
+      "path": "fixtures/ranges_joint_flag0.yaml",
+      "bytes": 228,
+      "sha256": "7e3400e801b0c24740a68ff04619323182eafc8503f12086636c1ce96845c285"
+    },
+    {
+      "name": "ranges_control_flag2.yaml",
+      "path": "fixtures/ranges_control_flag2.yaml",
+      "bytes": 228,
+      "sha256": "35cbe1fa35b4722e94f9e640718bcf748faa44bbff91e1d3642f72fe855dcfb6"
+    },
+    {
+      "name": "ranges_nan.yaml",
+      "path": "fixtures/ranges_nan.yaml",
+      "bytes": 230,
+      "sha256": "9cc7617eeaab5daa18841fcd479702c495cbdb8f58ef6c0d0734f31c2f083f84"
+    },
+    {
+      "name": "ranges_positive_inf.yaml",
+      "path": "fixtures/ranges_positive_inf.yaml",
+      "bytes": 231,
+      "sha256": "8fdbeebb9c675524dc4b69c293db2f37e33e92284b7432a5a320cba88d6fa600"
+    },
+    {
+      "name": "ranges_negative_inf.yaml",
+      "path": "fixtures/ranges_negative_inf.yaml",
+      "bytes": 231,
+      "sha256": "fe80f176c4e8c61fc9e51e2f28d1ed7888d9ecb1f0d2a69d92bbc0e460f6c649"
+    },
+    {
+      "name": "ranges_reversed.yaml",
+      "path": "fixtures/ranges_reversed.yaml",
+      "bytes": 228,
+      "sha256": "93ff249018f53e1bdb0eaf02f221bddcaa79312bfcd11b03a6350a1973db0b28"
+    },
+    {
+      "name": "ranges_equal.yaml",
+      "path": "fixtures/ranges_equal.yaml",
+      "bytes": 227,
+      "sha256": "238eb2c4d7c5d91bfc884870c88e44a1596cb724bcc2544346cd75cd2990a9dc"
+    }
+  ],
+  "binary_sha256": "367bed8cb810afd952d3403391e1d033eec2b6ce69d48e03091ec0e8e6960eff",
+  "stdout": {
+    "path": "IDENTITY_BOUNDED24_STDOUT.txt",
+    "bytes": 714,
+    "sha256": "c1076d9df9c778e50ff46dc76359528502a8c6d8974ff7de7c54a642f1ccddad"
+  },
+  "stderr_bytes": 0,
+  "group_results_file": "IDENTITY_BOUNDED24_GROUP_RESULTS.json",
+  "group_results_sha256": "2f1aaab90aa5be4496eb72fd56a9d58561a3989bac74f1118d4fc687d9fa3f7d",
+  "selection": "All24originalgroups and29declaredentries inoneadmittedattempt;no failures omitted.25requiredrefusals are matchedcontract outcomes,not failedresearchruns or25independentexperiments",
+  "native_initialization_effects": "ReviewedV2stocknative/config effects permitted;actualstartup/config reads nottraced/fullreadsetnotclaimed",
+  "limits": [
+    "28half-integer scalar ranges checked ineachpositive range group;fixtureconstants witness not robotModel/livecontext/physicalunits admission",
+    "Source SHA/path/type/map/duplicate/roster/flags/nonfinite/order refusals matchedcompiledchecks;source reasons not separatelyprinted exception telemetry",
+    "Missing-key YAML andunsafe/racy/oversize/OOM/producer/memberbudget variantsremainDEFERRED",
+    "Otherlinked producer/memberbudget/resourceBudget/Model/affine/cost/capture/Parent/plant/scorer remainclosed",
+    "CapturewaitintervalafterPopen not totalruntimeCPU/controllerlatency/RSS/ABI/performance"
+  ],
+  "phase5": "NOT_ACCEPTED",
+  "phase6": "NOT_STARTED"
+}
