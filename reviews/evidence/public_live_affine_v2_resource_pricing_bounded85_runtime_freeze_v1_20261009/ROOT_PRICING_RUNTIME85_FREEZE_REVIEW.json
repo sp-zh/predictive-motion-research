@@ -1,0 +1,96 @@
+{
+  "decision": "PASS_BOUNDED85_RESOURCE_PRICING_RUNTIME_FREEZE_ONLY_NOT_EXECUTED",
+  "baseline": "2311a49d3a96503b0b837f11cfbf84f6ace3c1c2",
+  "ready_sha256": "50736fd85692bf6fa3d8ae99bbabae9dcdf7eb07ae0ea9ee97f382ed11dfc3cd",
+  "packet_payloads_verified": 10,
+  "production_and_prior_guards_verified": 166,
+  "binary": {
+    "bytes": 89904,
+    "sha256": "e802061074ea940d11edeb214fcb226c601be54ceed0dd884b88bc13d16a75ed",
+    "mode": "0555"
+  },
+  "fixed_groups": 85,
+  "accept_groups": 51,
+  "required_first_invalid_argument_groups": 34,
+  "independent_expected_stdout": {
+    "bytes": 2514,
+    "sha256": "cdb0ce6db16e42ec679fd160c2ae95da8eb8eaa1a2f32b81cf29e1a9358d6dd7",
+    "original_roster_source_strings_and_previously_reviewed_fixture_exact": true
+  },
+  "finite_runtime_named_identities": 13,
+  "native_and_loader_cache_reused_from_prior": 12,
+  "original_artifact_records_verified": 49,
+  "future_prepost_records": 63,
+  "unique_requested_paths": 62,
+  "root_independent_remote_recheck": {
+    "identity_records_verified": 63,
+    "unique_paths_verified": 62,
+    "ELF_graph_records_independently_verified": 37,
+    "all_native_graph_RPATH_RUNPATH_absent": true,
+    "frozen_binary0555": true,
+    "readonly_directories_verified": 5,
+    "named_preload_absence_verified": true,
+    "run_attempt_absent": true,
+    "program_runs": 0
+  },
+  "ELF_graph_scope": "12 runtime ELF path records including new original executable;25 additional preserved project object/executable ELF records are artifact audits,not loaded dependency claims",
+  "harness_review": "Byte-identical prior bounded66 pattern after explicit filenames/digests/actionflag and85result field/count substitutions;ASTparsed only",
+  "fixed_replaced_environment": {
+    "PATH": "/usr/bin:/bin",
+    "LANG": "C",
+    "LC_ALL": "C",
+    "TZ": "UTC"
+  },
+  "timeout_seconds": 15,
+  "combined_output_cap_bytes": 131072,
+  "candidate_child_rlimits": {
+    "RLIMIT_CPU": [
+      10,
+      10
+    ],
+    "RLIMIT_AS": [
+      268435456,
+      268435456
+    ],
+    "RLIMIT_CORE": [
+      0,
+      0
+    ],
+    "RLIMIT_FSIZE": [
+      0,
+      0
+    ],
+    "RLIMIT_NOFILE": [
+      32,
+      32
+    ],
+    "RLIMIT_NPROC": [
+      16,
+      16
+    ]
+  },
+  "allowlisted_future_project_effects": [
+    "Native/C++standard initialization and smallSTL/controlstorage",
+    "BalancedIntegerplanMesh onlyvalid<=32cellsetup",
+    "planResources fixed85aggregateFactorShapes/mode/encoding",
+    "11Count+2enumgetters frozenliteralchecks and34exactfirstinvalid_argumentreason checks",
+    "Captured deterministicPASS/FAIL/COMPLETE text"
+  ],
+  "compiler_calls": 0,
+  "link_calls": 0,
+  "program_runs": 0,
+  "production_CPP_function_calls": 0,
+  "pricing_groups_executed": 0,
+  "limits": [
+    "One direct noarg test only;small meshsetup/planResources/publicgetters/exact expectedrefusals;no materialized numeric arrays/SDK/Model/cost/affine/controller/plant/main/scorer",
+    "Native initialization and small STL storage are admitted; named cache opaque bytes retained privately",
+    "Finite identities and pure ELF graph do not prove complete actual loader selection/fullOS/readset/RSS closure",
+    "Constraints do not measure memory/CPU/controller deadline performance",
+    "STATIC_BOUND_DEFERRED matrix/cumulative caps and conservative output scalar allowances unchanged;any later PASS covers fixed85 groups only"
+  ],
+  "next_admitted_unit": "Separate one exact bounded85 harness invocation after verified milestone backup;firstfailure stop/no retry/repair/fixturechanges",
+  "publication": "Compact authored root review/storage only;binary/hostplan/controls/nativegraph/cache bytes excluded",
+  "phase5": "NOT_ACCEPTED",
+  "phase6": "NOT_STARTED",
+  "existing66_results_figures_and_all_failures_preserved": true
+}
