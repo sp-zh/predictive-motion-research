@@ -1,0 +1,65 @@
+{
+  "decision": "PASS_ONE_FIRST_CYCLE_COMPILE_LINK_BATCH_ONLY_RUNTIME_CLOSED",
+  "baseline": "34ae77e23c07e6e6fbf7f1084a41783ab1621178",
+  "ready_sha256": "63a396a06ce33fea7caa84d5aa19d49315f5f7366db9da9f0a1948569b9bd35c",
+  "payloads_verified": 122,
+  "canonical_unchanged_guards": 1699,
+  "source_files_staged_exact": 15,
+  "plan_staged_exact": true,
+  "source_file_mode": "0444",
+  "source_directory_mode": "0555",
+  "configure_entries": 1,
+  "compile_entries": 7,
+  "link_entries": 1,
+  "retries": 0,
+  "original_flags_and_argv_exact": true,
+  "before_after_inputs_and_rosters_exact": true,
+  "actual_objects": 7,
+  "actual_depfiles": 7,
+  "dependencies_verified": 1418,
+  "post_first_headers": 1384,
+  "passive_ELF_independent_parse": {
+    "type": "PIE",
+    "machine": "x86_64",
+    "DT_NEEDED": [
+      "libmujoco.so.3.3.7",
+      "libcrypto.so.3",
+      "libyaml-cpp.so.0.8",
+      "libpinocchio_default.so.4.1.0",
+      "libpinocchio_parsers.so.4.1.0",
+      "libstdc++.so.6",
+      "libm.so.6",
+      "libgcc_s.so.1",
+      "libc.so.6"
+    ],
+    "DT_RPATH": [
+      "/home/codextransfer/predictive_motion/.vendor/mujoco-3.3.7/lib:/opt/ros/jazzy/lib/x86_64-linux-gnu:/opt/ros/jazzy/lib:/usr/lib/x86_64-linux-gnu"
+    ],
+    "DT_RUNPATH": []
+  },
+  "recursive_dependency_scope": "26 objects/97 edges are static possible resolution, not actual native loader evidence",
+  "warning_review": {
+    "count": 7,
+    "kind": "misleading indentation",
+    "semantics": "One conditional weighted accumulation followed by unconditional oldbegin update; five explicitly one-statement serialization loops followed by the next field; conditional bootstrap then unconditional finish. Source reviewed against intended ordered output and loop progression. No source changes or rebuild.",
+    "complete_stderr_retained": true
+  },
+  "independent_remote_readonly_recheck": {
+    "status": "PASS_READONLY_CURRENT_IDENTITIES",
+    "file_role_entries": 1678,
+    "readonly_rosters": 15,
+    "ELF_execution": 0,
+    "CPP_Model_solver_plant_calls": 0
+  },
+  "public_build_data_sha256": "9978af191fec9b120e658ee6694e202946b392a47445d9f19510cc50c3a40109",
+  "limitations": [
+    "Ordinary successful build does not execute or validate the model, task, matrices, QP, candidate or controller.",
+    "POST_FIRST identities do not prove the unlisted header bytes were frozen before compilation.",
+    "Original separately reviewed Model profile/SDK/metadata/invocation/claim gates and trusted outer runtime release are still required.",
+    "No produced ELF execution, native constructor/metadata/nominal/solver, candidate forward, plant step/commit, legacy main or scorer.",
+    "Build process timings do not establish the online4ms policy, geometry safety, tracking or phase acceptance."
+  ],
+  "program_runtime": 0,
+  "phase5": "NOT_ACCEPTED",
+  "phase6": "NOT_STARTED"
+}

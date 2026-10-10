@@ -1,0 +1,29 @@
+{
+  "scope": "Actual source installation/configuration/seven compile/one link and independent review; no produced ELF execution",
+  "archive": {
+    "bytes": 12875290,
+    "sha256": "da8d518f848bb6f1a7f2685935000bde474d72c88b56b2638f2fd29ad8f237b3",
+    "file": "first-cycle-build-batch-v1.tar.gz",
+    "regular_file_count": 144,
+    "payload_file_count": 143,
+    "inner_ready_sha256": "4ea2e48a5b60f6e4acb9b7e77745c072854816e9064cd4915a06a35338c51d28"
+  },
+  "Mac_archive": "/Users/uot/Documents/ChatGPT/ros/results/phase5-reference/integrated-first-cycle-build-batch-once-v1-20261010/root-retained-build1/first-cycle-build-batch-v1.tar.gz",
+  "Dell_archive": "/mnt/d/CodexTransfer/projects/predictive_motion/checkpoints/integrated-first-cycle-build-batch-once-v1-20261010/root-retained-build1/first-cycle-build-batch-v1.tar.gz",
+  "Mac_verification": {
+    "status": "PASS_ALL_ARCHIVE_PAYLOADS",
+    "archive_sha256": "da8d518f848bb6f1a7f2685935000bde474d72c88b56b2638f2fd29ad8f237b3",
+    "payloads_verified": 143
+  },
+  "Dell_verification": {
+    "status": "PASS_ALL_ARCHIVE_PAYLOADS",
+    "archive_sha256": "da8d518f848bb6f1a7f2685935000bde474d72c88b56b2638f2fd29ad8f237b3",
+    "payloads_verified": 143
+  },
+  "original_ready_sha256": "63a396a06ce33fea7caa84d5aa19d49315f5f7366db9da9f0a1948569b9bd35c",
+  "all122_sealed_payloads_and_retained_local_failures_preserved": true,
+  "publication": "Small build summaries/review/data/provenance/figures/renderer and approved historical public-retention record. ELF/objects/depfiles/map/fullnative/header/control/transport indexes remain excluded.",
+  "program_runtime": 0,
+  "phase5": "NOT_ACCEPTED",
+  "phase6": "NOT_STARTED"
+}

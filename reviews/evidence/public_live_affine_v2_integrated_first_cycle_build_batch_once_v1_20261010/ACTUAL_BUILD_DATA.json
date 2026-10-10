@@ -1,0 +1,79 @@
+{
+  "scope": "All actual direct compiler/link entries; one batch only",
+  "entries": [
+    {
+      "kind": "compile",
+      "index": 1,
+      "label": "integrated_horizon_qp",
+      "exit": 0,
+      "wall_seconds": 4.261111417989014,
+      "stderr_bytes": 1160
+    },
+    {
+      "kind": "compile",
+      "index": 2,
+      "label": "first_cycle_component",
+      "exit": 0,
+      "wall_seconds": 0.7570830550102983,
+      "stderr_bytes": 0
+    },
+    {
+      "kind": "compile",
+      "index": 3,
+      "label": "task_local_provider",
+      "exit": 0,
+      "wall_seconds": 2.4167685770080425,
+      "stderr_bytes": 0
+    },
+    {
+      "kind": "compile",
+      "index": 4,
+      "label": "bootstrap_observer",
+      "exit": 0,
+      "wall_seconds": 0.8163358769961633,
+      "stderr_bytes": 0
+    },
+    {
+      "kind": "compile",
+      "index": 5,
+      "label": "lossless_evidence",
+      "exit": 0,
+      "wall_seconds": 1.763680542993825,
+      "stderr_bytes": 6141
+    },
+    {
+      "kind": "compile",
+      "index": 6,
+      "label": "standalone_first_cycle",
+      "exit": 0,
+      "wall_seconds": 3.9290558409993537,
+      "stderr_bytes": 930
+    },
+    {
+      "kind": "compile",
+      "index": 7,
+      "label": "reactive_qp",
+      "exit": 0,
+      "wall_seconds": 7.274316239985637,
+      "stderr_bytes": 0
+    },
+    {
+      "kind": "link",
+      "index": 1,
+      "label": "Link program",
+      "exit": 0,
+      "wall_seconds": 0.25740372098516673,
+      "stderr_bytes": 0
+    }
+  ],
+  "configure_wall_seconds": 0.029249365004943684,
+  "outer_build_wall_seconds": 22.560606896993704,
+  "warning_count": 7,
+  "ELF": {
+    "bytes": 19344320,
+    "sha256": "8bb1e243dd2a2cc7568e16bb6f515cca3c4932ea4d588941a59e7cc87119d5f0"
+  },
+  "program_runtime": 0,
+  "phase5": "NOT_ACCEPTED",
+  "phase6": "NOT_STARTED"
+}

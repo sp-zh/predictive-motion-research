@@ -1,0 +1,31 @@
+{
+  "scope": "Actual ordinary compile/link process timings; no produced-program runtime",
+  "review_sha256": "7e22f2273b13b16dd9b45f58554ac41e5261b0ab73c66215593c92972d8266e8",
+  "data_sha256": "9978af191fec9b120e658ee6694e202946b392a47445d9f19510cc50c3a40109",
+  "selection": "All seven compiler entries and the sole link; no excluded attempts",
+  "renderer": {
+    "script": "render_first_cycle_build.py",
+    "sha256": "316fbf598264eeaf6e017580971b99d3e3064042104740be342403047871323c",
+    "matplotlib": "3.10.3",
+    "font": "DejaVu Sans",
+    "dpi": 180,
+    "figure_inches": [
+      13,
+      7.5
+    ]
+  },
+  "outputs": [
+    {
+      "file": "first_cycle_actual_build.png",
+      "bytes": 162632,
+      "sha256": "f49e74e7e038f4cb2ca556b95043a72ce81a9fecedee562f9abc020630307783"
+    },
+    {
+      "file": "first_cycle_actual_build.svg",
+      "bytes": 11335,
+      "sha256": "7f33e7fbc9753ca1de5c4a3b6b4abc4ca222ce70f8765c8150b5478f7eeaaa73"
+    }
+  ],
+  "phase5": "NOT_ACCEPTED",
+  "phase6": "NOT_STARTED"
+}
