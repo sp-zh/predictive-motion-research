@@ -1,0 +1,67 @@
+{
+  "decision": "PASS_FIXED85_RESOURCE_PRICING_SOURCE_PROTOCOL_ONLY_NOT_COMPILE_LINK_OR_RUN",
+  "baseline": "7a644ac9882b8a53bc3f5e84dbac871017c5db9a",
+  "ready_sha256": "bd9876266b785d5e873a04a770abeafdcd44fb5450ffd86430fffef799678922",
+  "original_payloads_verified": 11,
+  "production_and_prior_checkpoint_guards_verified": 146,
+  "public_source_reference_files_imported_exactly": 10,
+  "fixed_case_groups": 85,
+  "expected_accept": 51,
+  "expected_refuse": 34,
+  "refusal_reason_counts": {
+    "whole-request output quota exceeded": 11,
+    "whole-request live quota exceeded": 2,
+    "cost term/row envelope mismatch": 5,
+    "largest term cannot exceed total rows": 1,
+    "nonempty data with zero terms": 2,
+    "addition envelope exceeded": 2,
+    "addition coefficient rows not dimension30": 3,
+    "addition record/coefficient envelope mismatch": 5,
+    "unknown capture mode": 2,
+    "unknown numeric encoding": 1
+  },
+  "public_Count_getters_compared_in_future": 11,
+  "public_enum_getters_compared_in_future": 2,
+  "independent_static_review": [
+    "All85 input/ID rows match literal C++ table and JSON case roster;all IDs unique and expected ordered2514byte stdout fixed before any run",
+    "Reviewed pure integer reference contains only math.prod,constants and function definitions;no production imports/calls,tool execution or file writes",
+    "All64 stored dimensional ledgers independently recomputed from named field/work-bank shapes and multiplicities;category subtotals and every accepted literal getter matched.21 earlier domain/enum refusals have no returned-getter ledger",
+    "51 prospective accepts are within unchanged live/charge/output caps;34 prospective refusals match first domain/enum/live/output conditions and exact source reason strings",
+    "Two reachable whole-live and11 whole-output refusals have legal earlier dimensional envelopes;no fallback mode/encoding permitted",
+    "NDEBUG-safe explicit checks compare only public getters and first refusal;private component banks are derivation premises,not individually observed outputs"
+  ],
+  "static_deferred_guards": {
+    "matrix_products_upper_bounds": [
+      10207232,
+      980100,
+      318976
+    ],
+    "matrix_cap": 12000000,
+    "base_factory_cumulative_upper_bound": 241832203,
+    "case_charge_cap": 512000000,
+    "scope": "Compatible input-envelope corner can fail later whole-live/output gates;not an accepted returned-getter fixture. MemberCapture extensions outside this bound.",
+    "independent_refusal_runtime_coverage": false
+  },
+  "output_allowance_scope": "Two scalar slots per evaluation side are conservative pricing;public evaluation exposes one value. No invented result or exact writer-byte claim.",
+  "source_supplement_retained": {
+    "bytes": 400,
+    "sha256": "b90480289f48a75e8e8ad84cc96c743f9c27c011133ca61fc5235373f98b9763",
+    "sealed_source_packet_unchanged": true
+  },
+  "reference_python_functions_evaluated_during_static_review": true,
+  "production_CPP_function_calls": 0,
+  "compiler_calls": 0,
+  "link_calls": 0,
+  "test_program_runs": 0,
+  "limits": [
+    "This is unexecuted85-group source/protocol review,not passing runtime evidence",
+    "Only aggregate public getter pricing is observable;complete allocator/actual arrays/exact capture bytes/SDK/RSS remain deferred",
+    "Matrix and base-case charge cap refusals are not independently reachable under current legal input bounds",
+    "No actual cost/affine evaluation,member permission factory,Model/controller/plant/main/scorer"
+  ],
+  "next_scope": "Freeze the reviewed two test files and compile-only candidate under reused finite toolchain identities;no build or runtime in preparation",
+  "publication": "Reviewed source,expected literals,host-free dimensional fixture/reference/protocol and compact review/storage;exact host-stage configuration excluded",
+  "phase5": "NOT_ACCEPTED",
+  "phase6": "NOT_STARTED",
+  "all_previous_source_failures_passed66_and_figures_preserved": true
+}

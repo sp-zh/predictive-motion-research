@@ -1,0 +1,41 @@
+{
+  "matrix_cap": {
+    "fixed_cap": 12000000,
+    "bounded_maxima": {
+      "rows_by_DY": 10207232,
+      "DX_squared": 980100,
+      "DY_by_DU": 318976
+    },
+    "independent_refusal_reachable": false,
+    "proof": "N<=32 implies DX<=990/DU<=256/DY<=1246;rows<=8192.Each monotone shape product below12m.Using earlier-invalid shape would not isolate matrix guard."
+  },
+  "case_charge_cap": {
+    "fixed_cap": 512000000,
+    "monotone_upper_bound": 241832203,
+    "independent_refusal_reachable": false,
+    "reference_case": [
+      32,
+      375,
+      32,
+      8192,
+      256,
+      3999990,
+      8192,
+      1,
+      1
+    ],
+    "proof": "All priced dimensions/repetition counts nonnegative and monotone in n,t,k,rows,r,C,records;Dense dominates Compact;encoding does not affect charges;max C satisfyingmultiple30<=4m is3999990.241832203<512m."
+  },
+  "component_observation": "Component ledgers explain aggregate getter expectations;private component fields cannot be independently observed and must not be reported individually runtime-passed.",
+  "scalar_output_allowance": "Foundation output envelope prices2scalar slots per side forK+1 evaluation pairs;CostEvaluationView exposes1value per side.Surplus is retained as conservative pricing allowance,not invented extra results or exact writer output.",
+  "topology": "RawMap numeric fields2438+3logicalindices=2441;Substep49fields+3indices=52;Normalized1238+3/5topology=1241/1243;logicalslots notvectorcapacity/RSS.",
+  "deferred": [
+    "Independent matrix-cap and512mcase-cumulative-cap refusal unreachable in this valid basefactory domain",
+    "Actual cost descriptor per-parent ordering/source consistency/physical matrix values",
+    "Every private component as a separately observed output",
+    "Full exact capture writer bytecount/SDK allocator/RSS",
+    "MemberCapture wrappers/permissionfactories/OwnedNumericBuffer"
+  ],
+  "phase5": "NOT_ACCEPTED",
+  "phase6": "NOT_STARTED"
+}
