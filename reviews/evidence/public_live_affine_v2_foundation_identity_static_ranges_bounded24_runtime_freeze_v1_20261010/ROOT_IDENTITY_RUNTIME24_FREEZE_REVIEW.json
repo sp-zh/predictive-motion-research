@@ -1,0 +1,140 @@
+{
+  "decision": "PASS_BOUNDED24_IDENTITY_STATIC_RANGE_RUNTIME_AND_NATIVE_EFFECTS_V2_PREPARATION_ONLY_NOT_EXECUTED",
+  "baseline": "91bdfabe99e113f3156ada8af73ac426cdd3ec50",
+  "ready_sha256": "6281f9c1f56a91f7e3e014c778d62bd50e57cc327b0f775165fe997ebd6de526",
+  "original_payloads_verified": 21,
+  "production_and_prior_guards_verified": 313,
+  "binary": {
+    "bytes": 173664,
+    "sha256": "367bed8cb810afd952d3403391e1d033eec2b6ce69d48e03091ec0e8e6960eff",
+    "readonly_executable_mode": "0555",
+    "original_mode0775_preserved": true
+  },
+  "fixed_future_argv": "Onefrozenbinaryplus exactcompiledabsolute syntheticfixture-root",
+  "future_groups": 24,
+  "future_controlled_entries": 29,
+  "entry_partition": {
+    "observePinnedFile": 14,
+    "loadPinnedStaticRanges": 15
+  },
+  "future_entry_outcomes": {
+    "accepted": 4,
+    "required_refusal": 25
+  },
+  "fixture_files": 17,
+  "fixture_logical_bytes": 3341,
+  "half_integer_range_getter_oracle_scalars": 28,
+  "independent_expected_future_stdout": {
+    "bytes": 714,
+    "sha256": "c1076d9df9c778e50ff46dc76359528502a8c6d8974ff7de7c54a642f1ccddad",
+    "original_source_fixture_and_roster_exact": true,
+    "not_actual_output": true
+  },
+  "main_prepost_roles": 121,
+  "unique_main_requested": 120,
+  "unique_main_resolved": 111,
+  "runtime_named_roles": 19,
+  "original_artifact_source_fixture_guards": 101,
+  "separate_historical_roles": 14,
+  "separate_role_scope": "3YAMLheaders+historical395depfile+10math observations;notactual runtimeDSOloads ornewprefreeze",
+  "readonly_mode_roster_guards": 16,
+  "parent_mode": "0775",
+  "parent_only_binarycopy_addition": true,
+  "future_only_parent_addition": "run-attempt1",
+  "named_absences": 4,
+  "finite_named_ELF_path_audits": 16,
+  "named_graph_scope": "16ELFrequestedpaths includealiases andoriginalbinary;not16unique oractual loadeddependencies;17native/cache roles includeonecache,plus2configaliases",
+  "root_independent_remote_recheck": {
+    "main_roles_verified": 121,
+    "unique_main_requested": 120,
+    "unique_main_resolved": 111,
+    "separate_historical_roles_verified": 14,
+    "readonly_mode_rosters_verified": 16,
+    "parent_mode": "0o775",
+    "parent_after_binarycopy_roster_exact": true,
+    "named_absences": 4,
+    "finite_runtime_ELF_path_audits": 16,
+    "run_attempt_absent": true,
+    "linked_test_or_project_API_invocations": 0,
+    "audit_native_backend_counts": "UNMEASURED"
+  },
+  "native_startup_effects_V2_review": {
+    "decision": "PASS_FINITE_NAMED_STOCK_NATIVE_INITIALIZATION_EFFECTS_SOURCE_QUALIFICATION_ONLY",
+    "source_CPP_fixture_oracle_caps_unchanged": true,
+    "fixed4environment_unchanged": true,
+    "stock_config_bytes": 12324,
+    "stock_config_sha256": "529815b0dd4bd6608bafeeb3d410b0683374e61aef792b3e3f38b3767d26f747",
+    "initializer_route": "openssl_init -> provider_sect -> emptydefault_sect",
+    "active_include_or_pragma": 0,
+    "active_external_module_or_engine_or_plugin_initializer": false,
+    "active_OID_declarations": 3,
+    "allowed": "Standardloader/C/C++/OpenSSL nativeinit withnamedlibraries/cache/stockconfig,defaultprovider/OID/resourceinit;fixedprojectinputs boundedseparately",
+    "closed": "Explicitexternalprovider/engine/plugin/probes,privatekeys/tokens/credentialtargets/unrelatedCA/TSA/CMPoperations/network/spawn/writes/systemconfigchanges",
+    "unrelated_example_reference_targets_not_read": true,
+    "evidence_scope": "Staticconfigsyntax/rawbytes+officialreference,notactualfutureinitialization traceor nativeversion proof",
+    "primary_sources": [
+      "https://docs.openssl.org/3.0/man3/OPENSSL_init_crypto/",
+      "https://docs.openssl.org/3.0/man7/OSSL_PROVIDER-default/"
+    ]
+  },
+  "harness_review": [
+    "Names/pins/onefixturearg/24-29-14-15reporting and separate4historical/parentroster additions reviewedfromexactsourcepatch",
+    "Boundedlimits/childlimits/kill/capture ASTexactpreviousreviewed11pattern;onePopen withgatedflag/no defaultaction",
+    "ProductionCPP/getteroccurrence unknownafterPopen,true onlyfull714B24PASS+COMPLETE29/sourceflowcorroborated;targetwrappers only controlledcounts",
+    "Successmarker nowexplicit finalcorroboratedstatus;exactCPP/getter/IO/native/helper/backendcounts remainunmeasured",
+    "16readonlyrosters,parentsoleexclusiveaddition/fourabsences and121main+14separate roles checkedbefore/after"
+  ],
+  "candidate_child_limits": {
+    "RLIMIT_CPU": [
+      10,
+      10
+    ],
+    "RLIMIT_AS": [
+      268435456,
+      268435456
+    ],
+    "RLIMIT_CORE": [
+      0,
+      0
+    ],
+    "RLIMIT_FSIZE": [
+      0,
+      0
+    ],
+    "RLIMIT_NOFILE": [
+      32,
+      32
+    ],
+    "RLIMIT_NPROC": [
+      16,
+      16
+    ]
+  },
+  "wall_seconds": 15,
+  "combined_output_cap_bytes": 131072,
+  "fixed_environment": {
+    "PATH": "/usr/bin:/bin",
+    "LANG": "C",
+    "LC_ALL": "C",
+    "TZ": "UTC"
+  },
+  "project_program_runs": 0,
+  "production_CPP_API_calls": 0,
+  "direct_deliberate_native_library_or_version_probes": 0,
+  "compiler_calls": 0,
+  "link_calls": 0,
+  "Python_stdlib_native_audit_backend_call_counts": "UNMEASURED",
+  "zero_field_scope": "Only linkedtest/project APIs anddeliberateprobes areunexecuted;rawNO_OPENSSL markers notclaiminghashlib/backend/provider functions globallyzero",
+  "limits": [
+    "Onlyfinitefileidentity/staticrange witness,notVerifiedModelProfile/physicaladmission/controllertrajectory/Modelpermission",
+    "29countedtargetentries notindependentexperiments/assertions/allCPP/native/getter/IOcounts",
+    "Project17smallfixtures are notentireprocessreadset;namednativeinit/config additional effectsareexplicitlyqualified",
+    "16ELFaudits/nameclosure/configtext donotprovefullactual loader/version/ABI/OS/readset/RSS/performance",
+    "NoCurrentproducer/memberbudget/resourceBudget/reservation/charge/ownedbuffers/lease/LiveActual/first4ms/permission/SDKModel/affinecostcapture/Parent/plant/main/scorer"
+  ],
+  "next_admitted_unit": "Separateexactonebounded24test invocationafterverifiedmilestonebackup;firstfailureSTOP,no rerun/repair/oracleprofilechange",
+  "publication": "Compactrootreview/storage only;native/config/rawheader/cache/binary/hostplan/harness/effectsproposal excluded",
+  "phase5": "NOT_ACCEPTED",
+  "phase6": "NOT_STARTED",
+  "all_prior_actual_results_figures_checkerfreezes_source_failures_preserved": true
+}
