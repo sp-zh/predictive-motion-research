@@ -1,0 +1,99 @@
+{
+  "decision": "PASS_ONE_SYNTHETIC_INITIAL_LINK_ONLY_NOT_RUNTIME_OR_PHASE_ACCEPTANCE",
+  "baseline": "2bdf3008a5c4e5b833a5409791ab8d5d91c90333",
+  "ready_sha256": "c534b120b632be781ebb25a395eac1131006915a94a425f154544f227a1899a4",
+  "original_payloads_verified": 40,
+  "production_and_prior_checkpoint_guards_verified": 261,
+  "link_invocations": 1,
+  "exit_code": 0,
+  "timeout_or_output_stop": false,
+  "elapsed_seconds": 0.07311737499549054,
+  "raw_stdout_bytes": 0,
+  "raw_stderr_bytes": 0,
+  "binary": {
+    "bytes": 103096,
+    "sha256": "dd47a63159725a7b0188b9689d09633c8654519e81bd73dac7b5acef88c1f701",
+    "ELF64_type": "ET_DYN",
+    "machine": "x86-64",
+    "DF_1_PIE_flag": true,
+    "entry": 25504,
+    "program_headers": 13,
+    "sections": 33,
+    "DT_NEEDED": [
+      "libstdc++.so.6",
+      "libgcc_s.so.1",
+      "libc.so.6"
+    ],
+    "PT_INTERP": [
+      "/lib64/ld-linux-x86-64.so.2"
+    ],
+    "RPATH_RUNPATH": [],
+    "unresolved_project_symbols": 0
+  },
+  "map": {
+    "bytes": 2583198,
+    "sha256": "02176c76684b4f5a243b5e39aeadeb24fe52bc0f9d2befe0229239540ae6287f",
+    "actual_foundation_archive_members": [
+      "foundation_context.cpp.o",
+      "foundation_resources.cpp.o"
+    ],
+    "actual_LOAD_lines": 23,
+    "distinct_LOAD_paths": 18,
+    "first_observed_requested_alias_paths": 6,
+    "all_resolved_targets_match_prefrozen_identities": true
+  },
+  "prepost_file_identities_matched": 106,
+  "prepost_readonly_modes_and_rosters": 11,
+  "separate_postcompile_math_header_prepost_records": 10,
+  "postcompile_math_headers_not_link_dependencies_or_retrofreeze": true,
+  "original_project_artifact_source_guards": 71,
+  "root_independent_remote_recheck": {
+    "current_records_rechecked": 136,
+    "future_link_input_records": 106,
+    "separate_postcompile_math_records": 10,
+    "artifact_records": 2,
+    "map_LOAD_observation_records": 18,
+    "named_absences": 2,
+    "readonly_modes_and_rosters": 11,
+    "cwd_empty": true,
+    "link_or_program_invocations": 0
+  },
+  "signal_number": null,
+  "automatic_retries": 0,
+  "initial_groups_executed": 0,
+  "target_validator_runtime_calls": 0,
+  "point_accessor_runtime_calls": 0,
+  "synthetic_fixture_planned_target_entries_unexecuted": 97,
+  "type_contracts_compiled_only": 3,
+  "named_specs_absence_guards_checked": 2,
+  "independent_review": [
+    "All sealed V2 controls and actual link plan match reviewed bytes;one successful invocation,empty raw streams",
+    "Original15-file raw archive and14 payloads verified against retained copies",
+    "Independent ELF byte parser confirms default PIE x86-64,exact3 standard DT_NEEDED,interpreter,no RPATH/RUNPATH or unresolved project symbols",
+    "Actual map independently parsed:only context+resources project archive members extracted;18 LOAD identities match current records or exact resolved aliases",
+    "Six lexical paths first observed after link keep post-observation labels;no retrospective prefreeze claim",
+    "106 input records and11exactreadonly directories identical before/after;separate10postcompile math headers preserved",
+    "Read-only collector e_machine metadata fix changes only71to62;retained original+rawfailure;no relink or source/control/profile/oracle change",
+    "Prelink storage filename lookup failure preserved;correct lookup and backup corroboration preceded link"
+  ],
+  "compiler_source_compilation_calls": 0,
+  "project_program_runs": 0,
+  "project_function_calls": 0,
+  "next_scope": "Preparation only:freeze successful binary and bounded11-group synthetic initial run protocol/native identities;no runtime before separate review,backup and dispatch",
+  "limits": [
+    "Final linking does not validate testcase values,exceptions,finitecopy/nonfinite refusal or runtime/native ABI",
+    "Context extraction does not authorize live context/first4ms/privatefactory/snapshot/Model functions",
+    "Finite map/ELF/file records do not prove full loader/OS/process/readset/RSS closure",
+    "Only foundation synthetic test binary linked;Model/controller/plant/main/scorer gates remain closed",
+    "All prior actual66/85/13/10 diagnostic results and figures retain individual scope"
+  ],
+  "publication": "Compact authored root review/storage only;binary,map,raw controls/native indices excluded",
+  "phase5": "NOT_ACCEPTED",
+  "phase6": "NOT_STARTED",
+  "all_previous_sources_failures_and_immutable_checkers_preserved": true,
+  "root_static_adapter_failures_retained": [
+    "Collector delta adapter used wrong field expression; corrected to actual parsed e[machine] literal",
+    "Supplemental and harness106 identical unique records use different list grouping; compared complete keyed identities, with exact before/after checks kept"
+  ],
+  "root_static_adapter_native_invocations": 0
+}
