@@ -76,6 +76,34 @@ Its checkout-SHA diagnostic failed with Git dubious ownership even though the
 workflow was green; that failure remains in the run artifact. The collector now
 uses a safe.directory argument limited to this read command and the actual
 workspace path, without global configuration or a wildcard trust exemption.
-This correction still requires a new hosted run. The initial historical baseline
+At that checkpoint this correction still required a new hosted run; see the follow-up below. The initial historical baseline
 and all preparation runs remain original ROS/Docker Hub environment evidence,
 not GHCR publication/migration proof.
+
+
+Final implementation validation (original ROS environment):
+
+- [push run 38016564467](https://github.com/sp-zh/predictive-motion-research/actions/runs/38016564467): actual checkout `5a2055e0a8191ef34398bc8d1e58fa5c425ec057`, attempt 1; all steps successful, 15 infrastructure cases + 24 native GoogleTests + 8 statistics tests, zero skips.
+- [PR run 38016566562](https://github.com/sp-zh/predictive-motion-research/actions/runs/38016566562): actual checkout `6e32056c762c0d6e49b6c2a88ac4e14a9010f796`, attempt 1; all steps successful, 15 infrastructure cases + 24 native GoogleTests + 8 statistics tests, zero skips.
+
+Downloaded both artifacts and independently reran the native XML/full-log audit.
+The inventory enumeration order is filesystem-dependent; testcase identity sets
+and counts match the generated report (order is not a test outcome). Both
+checkout-SHA reads now succeed. Ubuntu 24.04/x86_64, exact Pinocchio, run/attempt,
+image ref, numerical marker and original test/consumer execution were checked.
+The PR's effective checkout is GitHub's synthetic merge commit, distinct from
+source branch checkpoint `5a2055e0a8191ef34398bc8d1e58fa5c425ec057`.
+PR artifact ID `11656058077`, 645876 bytes, GitHub archive SHA-256
+`ca58dff8307864026ae44dd9e00752761395eac6f461522f59f5ed7a320de597`
+(**artifact digest, not an image digest**), retained by Actions for 30 days.
+Local inspection copies are under `/private/tmp/ros-ci-final-pr-artifact` and
+`/private/tmp/ros-ci-final-push-artifact`; these temporary paths are not durable
+experimental archives. The source, report and figure milestone are backed up on
+the public repair branch; original Actions logs preserve the provenance failure.
+
+No GHCR base/CI publication, anonymous pull, new-image full CI or default-branch
+migration has occurred. [PR #2](https://github.com/sp-zh/predictive-motion-research/pull/2)
+requires manual bootstrap merge/registration before those stages can run.
+The final follow-up commit only records completed validation; executable CI
+sources are identical to the tested `5a2055e` checkpoint. Research phase gates,
+algorithms, thresholds and primary workspace remain outside this repair.
