@@ -1,0 +1,103 @@
+{
+  "program_invocations": 1,
+  "fixed_case_group_count": 13,
+  "groups": [
+    {
+      "case_group_id": "buffer_zero_null",
+      "observed_status": "PASS",
+      "expected_outcome": "POSITIVE",
+      "expected_first_refusal": null,
+      "scope": "Fixed initialized values/moves/lifetimes/public ledger checks or moved-case refusal;not allocator instrumentation/RSS/controller/motion evidence"
+    },
+    {
+      "case_group_id": "buffer_initialized_mutable_const",
+      "observed_status": "PASS",
+      "expected_outcome": "POSITIVE",
+      "expected_first_refusal": null,
+      "scope": "Fixed initialized values/moves/lifetimes/public ledger checks or moved-case refusal;not allocator instrumentation/RSS/controller/motion evidence"
+    },
+    {
+      "case_group_id": "buffer_initialized64",
+      "observed_status": "PASS",
+      "expected_outcome": "POSITIVE",
+      "expected_first_refusal": null,
+      "scope": "Fixed initialized values/moves/lifetimes/public ledger checks or moved-case refusal;not allocator instrumentation/RSS/controller/motion evidence"
+    },
+    {
+      "case_group_id": "buffer_move_constructor",
+      "observed_status": "PASS",
+      "expected_outcome": "POSITIVE",
+      "expected_first_refusal": null,
+      "scope": "Fixed initialized values/moves/lifetimes/public ledger checks or moved-case refusal;not allocator instrumentation/RSS/controller/motion evidence"
+    },
+    {
+      "case_group_id": "buffer_assign_same_case",
+      "observed_status": "PASS",
+      "expected_outcome": "POSITIVE",
+      "expected_first_refusal": null,
+      "scope": "Fixed initialized values/moves/lifetimes/public ledger checks or moved-case refusal;not allocator instrumentation/RSS/controller/motion evidence"
+    },
+    {
+      "case_group_id": "buffer_assign_different_case_same_batch",
+      "observed_status": "PASS",
+      "expected_outcome": "POSITIVE",
+      "expected_first_refusal": null,
+      "scope": "Fixed initialized values/moves/lifetimes/public ledger checks or moved-case refusal;not allocator instrumentation/RSS/controller/motion evidence"
+    },
+    {
+      "case_group_id": "buffer_assign_different_batch",
+      "observed_status": "PASS",
+      "expected_outcome": "POSITIVE",
+      "expected_first_refusal": null,
+      "scope": "Fixed initialized values/moves/lifetimes/public ledger checks or moved-case refusal;not allocator instrumentation/RSS/controller/motion evidence"
+    },
+    {
+      "case_group_id": "buffer_self_move",
+      "observed_status": "PASS",
+      "expected_outcome": "POSITIVE",
+      "expected_first_refusal": null,
+      "scope": "Fixed initialized values/moves/lifetimes/public ledger checks or moved-case refusal;not allocator instrumentation/RSS/controller/motion evidence"
+    },
+    {
+      "case_group_id": "buffer_assign_zero_into_occupied",
+      "observed_status": "PASS",
+      "expected_outcome": "POSITIVE",
+      "expected_first_refusal": null,
+      "scope": "Fixed initialized values/moves/lifetimes/public ledger checks or moved-case refusal;not allocator instrumentation/RSS/controller/motion evidence"
+    },
+    {
+      "case_group_id": "buffer_assign_occupied_into_zero",
+      "observed_status": "PASS",
+      "expected_outcome": "POSITIVE",
+      "expected_first_refusal": null,
+      "scope": "Fixed initialized values/moves/lifetimes/public ledger checks or moved-case refusal;not allocator instrumentation/RSS/controller/motion evidence"
+    },
+    {
+      "case_group_id": "buffer_outlives_case_batch_wrappers",
+      "observed_status": "PASS",
+      "expected_outcome": "POSITIVE",
+      "expected_first_refusal": null,
+      "scope": "Fixed initialized values/moves/lifetimes/public ledger checks or moved-case refusal;not allocator instrumentation/RSS/controller/motion evidence"
+    },
+    {
+      "case_group_id": "buffer_two64_overlap128",
+      "observed_status": "PASS",
+      "expected_outcome": "POSITIVE",
+      "expected_first_refusal": null,
+      "scope": "Fixed initialized values/moves/lifetimes/public ledger checks or moved-case refusal;not allocator instrumentation/RSS/controller/motion evidence"
+    },
+    {
+      "case_group_id": "buffer_constructor_moved_case_refusal",
+      "observed_status": "PASS",
+      "expected_outcome": "REQUIRED_REFUSAL",
+      "expected_first_refusal": "moved-from case budget",
+      "scope": "Fixed initialized values/moves/lifetimes/public ledger checks or moved-case refusal;not allocator instrumentation/RSS/controller/motion evidence"
+    }
+  ],
+  "expected_outcome_counts": {
+    "POSITIVE": 12,
+    "REQUIRED_REFUSAL": 1
+  },
+  "all_required_group_refusals_checked_by_original_source": true,
+  "not_motion_or_controller_evidence": true
+}

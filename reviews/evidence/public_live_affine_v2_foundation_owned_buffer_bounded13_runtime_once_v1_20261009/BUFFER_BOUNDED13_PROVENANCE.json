@@ -1,0 +1,46 @@
+{
+  "scope": "One actual fixed13 OwnedNumericBuffer values/moves/lifetime/public ledger verification;not controller/motion/performance or phase acceptance",
+  "baseline": "eb00ba29a0780ff6e076593f694854fa5a52be82",
+  "program_invocations": 1,
+  "fixed_case_groups": 13,
+  "passed_case_groups": 13,
+  "failed_case_groups": 0,
+  "positive_groups_passed": 12,
+  "required_refusal_groups_passed": 1,
+  "source_fixture_sha256": {
+    "owned_buffer_v1.cpp": "4d1b75d76eb6093b00d4250803860fe48f97031db03d3946300c483819744947",
+    "buffer_expected_v1.hpp": "329c87e98db47f0f00e9d76c6ee16d0090dc96760b9da67a0e6c7bc4ff7fba17",
+    "FIXED_BUFFER_CASE_ROSTER_AND_SNAPSHOTS_V1.json": "77dcd696bcdbb8f9f3cea0604c8d365bd6bc66f7f5e3bce9038e083b1f61303e",
+    "FIXED_FUTURE_EXPECTED_STDOUT_V1.txt": "450c080b20270f36d2a2ad4d99f42a1eb8bc0d455d5e4c7e9fa74c60d1a9d2ba",
+    "SOURCE_ONLY_PRE_SNAPSHOT_COMPLETION_V2.json": "ee57e4b4a0362e440c2260c3f10a57aa11dc40f62c3a55e8931270ef119c0490"
+  },
+  "actual_object_sha256": "979d6fcfe9a750a1d065cc18c637708e03f632565d963574b71690264b541b13",
+  "actual_binary_sha256": "18eba1dd7beecea0aadc58544c9c2a5f18b66b2888338c226c47ce448edcd1dd",
+  "stdout": {
+    "path": "BUFFER_BOUNDED13_STDOUT.txt",
+    "bytes": 488,
+    "sha256": "450c080b20270f36d2a2ad4d99f42a1eb8bc0d455d5e4c7e9fa74c60d1a9d2ba"
+  },
+  "stderr_bytes": 0,
+  "expected_data_frozen_before_outputs": true,
+  "group_results_file": "BUFFER_BOUNDED13_GROUP_RESULTS.json",
+  "group_results_sha256": "a43d83055547c942fec8fa00d2ae48fd134282cfcd99265e6cc35626dbc9bd80",
+  "selection": "All13 original groups in one admitted attempt;no omitted failures or curated seeds. Required refusal is a passing contract check.",
+  "production_CPP_calls_occurred": true,
+  "exact_production_CPP_call_count": "UNMEASURED",
+  "actual_numeric_buffer_allocations_occurred": true,
+  "exact_numeric_allocation_count": "UNMEASURED",
+  "maximum_owned_doubles_per_array": 64,
+  "maximum_simultaneous_owned_doubles": 128,
+  "maximum_numeric_payload_bytes_on8byte_double": 1024,
+  "scope_limits": [
+    "Numeric payload bound not total RSS/physical memory",
+    "Values explicitly initialized before reads;tests observe public moves/ledgers/shared lifetime",
+    "Private allocator release order source static only;bad_alloc/hostsize DEFERRED",
+    "Constructor refusal initialzero setup-derived;afterrefusal retainedcase/batch zeros observed",
+    "Capture interval starts after Popen;not full runtime/CPU/controller timing",
+    "No full loader/native/OS/RSS/ABI proof or robot motion"
+  ],
+  "phase5": "NOT_ACCEPTED",
+  "phase6": "NOT_STARTED"
+}

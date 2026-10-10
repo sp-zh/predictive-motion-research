@@ -1,0 +1,14 @@
+PASS buffer_zero_null
+PASS buffer_initialized_mutable_const
+PASS buffer_initialized64
+PASS buffer_move_constructor
+PASS buffer_assign_same_case
+PASS buffer_assign_different_case_same_batch
+PASS buffer_assign_different_batch
+PASS buffer_self_move
+PASS buffer_assign_zero_into_occupied
+PASS buffer_assign_occupied_into_zero
+PASS buffer_outlives_case_batch_wrappers
+PASS buffer_two64_overlap128
+PASS buffer_constructor_moved_case_refusal
+COMPLETE 13 owned buffer groups; no phase acceptance

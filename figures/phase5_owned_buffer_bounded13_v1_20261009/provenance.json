@@ -1,0 +1,92 @@
+{
+  "scope": "Finite Owned numeric buffer verification; no phase acceptance",
+  "grain": "One fixed test group; nested refusal assertions are not separate observations",
+  "selection": "All 13 frozen groups, original source order; no curated subset",
+  "rows": [
+    {
+      "area": "Storage / value checks",
+      "case_group_ids": [
+        "buffer_zero_null",
+        "buffer_initialized_mutable_const",
+        "buffer_initialized64"
+      ],
+      "passed_groups": 3,
+      "planned_groups": 3
+    },
+    {
+      "area": "Move-operation checks",
+      "case_group_ids": [
+        "buffer_move_constructor",
+        "buffer_assign_same_case",
+        "buffer_assign_different_case_same_batch",
+        "buffer_assign_different_batch",
+        "buffer_self_move",
+        "buffer_assign_zero_into_occupied",
+        "buffer_assign_occupied_into_zero"
+      ],
+      "passed_groups": 7,
+      "planned_groups": 7
+    },
+    {
+      "area": "Lifetime / overlap checks",
+      "case_group_ids": [
+        "buffer_outlives_case_batch_wrappers",
+        "buffer_two64_overlap128"
+      ],
+      "passed_groups": 2,
+      "planned_groups": 2
+    },
+    {
+      "area": "Required constructor refusal",
+      "case_group_ids": [
+        "buffer_constructor_moved_case_refusal"
+      ],
+      "passed_groups": 1,
+      "planned_groups": 1
+    }
+  ],
+  "sources": {
+    "review": {
+      "file": "ROOT_BUFFER_RUNTIME13_REVIEW.json",
+      "sha256": "9847124fb1efd85a2ff763a10bb6e783ac03e6ab06b95ed9c324bfb6ab2b11fc"
+    },
+    "actual_stdout": {
+      "file": "BUFFER_BOUNDED13_STDOUT.txt",
+      "sha256": "450c080b20270f36d2a2ad4d99f42a1eb8bc0d455d5e4c7e9fa74c60d1a9d2ba"
+    },
+    "original_roster": {
+      "file": "FIXED_BUFFER_CASE_ROSTER_AND_SNAPSHOTS_V1.json",
+      "sha256": "77dcd696bcdbb8f9f3cea0604c8d365bd6bc66f7f5e3bce9038e083b1f61303e"
+    },
+    "group_results": {
+      "file": "BUFFER_BOUNDED13_GROUP_RESULTS.json",
+      "sha256": "a43d83055547c942fec8fa00d2ae48fd134282cfcd99265e6cc35626dbc9bd80"
+    }
+  },
+  "renderer": {
+    "script": "plot_owned_buffer_bounded13.py",
+    "sha256": "0fe35f4f720ebfabb3faad4adf08949aa3290874a9e6eaeec97f9ed2d26ddd61",
+    "matplotlib": "3.10.3",
+    "dpi": 180,
+    "figure_inches": [
+      13,
+      7
+    ],
+    "font": "DejaVu Sans",
+    "bar_color": "#2864B0"
+  },
+  "outputs": [
+    {
+      "file": "owned_buffer_bounded13_outcomes.png",
+      "bytes": 179562,
+      "sha256": "3a54da747fc1d39e02e8f8e87c06a9b5e26119a5584ae32a62dc3154323d890d"
+    },
+    {
+      "file": "owned_buffer_bounded13_outcomes.svg",
+      "bytes": 12399,
+      "sha256": "dcf78543522fe911f9e7aacab713908f3461b69cba8cd4d767bf57c2ca943303"
+    }
+  ],
+  "phase5": "NOT_ACCEPTED",
+  "phase6": "NOT_STARTED"
+}
