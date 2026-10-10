@@ -1,0 +1,38 @@
+{
+  "decision": "PASS_ONE_ACTUAL_PROFILE_STAGE_ONLY_RUNTIME_CLOSED",
+  "baseline": "42ec3a5750df713190e36d35acce57a67d4b56f6",
+  "ready_sha256": "a3c94e17ea7561039ad2062dcc1f9918df01e9712f06e327599cb09ae9c3e7c6",
+  "payloads_verified": 59,
+  "canonical_unchanged_guards": 1726,
+  "actual_installer_attempts": 1,
+  "installer_exact_previously_reviewed_source": true,
+  "Root_stage_manifest_only_decision_changed": true,
+  "actual_profile_files": 21,
+  "actual_profile_rosters": 3,
+  "actual_three_Mac_contract_copies_installed": true,
+  "profile_file_mode": "0444",
+  "profile_directory_mode": "0555",
+  "all_profile_bytes_exact_sealed_V2": true,
+  "before_after_original_file_records_exact": 1597,
+  "old_readonly_rosters_exact": 15,
+  "actual_caps_inherited_clamped_and_child_verified": true,
+  "actual_stage_return_zero_and_empty_stderr": true,
+  "independent_remote_readonly_recheck": {
+    "status": "PASS_READONLY_ACTUAL_PROFILE_STAGE",
+    "file_role_entries": 1657,
+    "readonly_rosters": 18,
+    "runtime_and_final_review_absent": true,
+    "new_project_CPP_calls": 0
+  },
+  "installed_runtime_decisions_NOT_RELEASED": true,
+  "limitations": [
+    "This is actual file installation, not program/model/metadata/nominal/solver or task execution.",
+    "Current native loaded library/inode set, ABI/actual metadata/observer/nominal/QP outcomes remain runtime gates.",
+    "Final trusted originalV1 model review, outer review and exact released plan require a separate fresh authoring/freeze and explicit dispatch.",
+    "Immutable byte/mode/roster checks do not claim adversarial filesystem lock or complete crash/power-loss/Parent/RSS closure.",
+    "No candidate forward, step/commit, main/scorer, online4ms result or phase acceptance."
+  ],
+  "new_project_CPP_calls": 0,
+  "phase5": "NOT_ACCEPTED",
+  "phase6": "NOT_STARTED"
+}

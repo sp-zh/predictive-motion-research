@@ -1,0 +1,29 @@
+{
+  "scope": "Independently reviewed actual one21file stage only; no program execution",
+  "archive": {
+    "bytes": 4211794,
+    "sha256": "a66ff6df1faed6bd0e2ea2548e6c5df14428a3a690407456b58e47ac1b0784a4",
+    "file": "first-cycle-profile-stage-v1.tar.gz",
+    "regular_file_count": 80,
+    "payload_file_count": 79,
+    "inner_ready_sha256": "734fa7659ae66885d304b9d660ba52da176df63cee6f67604e82b475d63d7aca"
+  },
+  "Mac_archive": "/Users/uot/Documents/ChatGPT/ros/results/phase5-reference/integrated-first-cycle-profile-stage-once-v1-20261010/root-retained-stage1/first-cycle-profile-stage-v1.tar.gz",
+  "Dell_archive": "/mnt/d/CodexTransfer/projects/predictive_motion/checkpoints/integrated-first-cycle-profile-stage-once-v1-20261010/root-retained-stage1/first-cycle-profile-stage-v1.tar.gz",
+  "Mac_verification": {
+    "status": "PASS_ALL_ARCHIVE_PAYLOADS",
+    "archive_sha256": "a66ff6df1faed6bd0e2ea2548e6c5df14428a3a690407456b58e47ac1b0784a4",
+    "payloads_verified": 79
+  },
+  "Dell_verification": {
+    "status": "PASS_ALL_ARCHIVE_PAYLOADS",
+    "archive_sha256": "a66ff6df1faed6bd0e2ea2548e6c5df14428a3a690407456b58e47ac1b0784a4",
+    "payloads_verified": 79
+  },
+  "original_ready_sha256": "a3c94e17ea7561039ad2062dcc1f9918df01e9712f06e327599cb09ae9c3e7c6",
+  "all59_sealed_stage_payloads_and_controls_preserved": true,
+  "publication": "Small actual stage report, remaining runtime gates, independent review, provenance/figures/renderer. Full profile/SDK/host/guard/control/transport/installer indices remain excluded.",
+  "program_runtime": 0,
+  "phase5": "NOT_ACCEPTED",
+  "phase6": "NOT_STARTED"
+}

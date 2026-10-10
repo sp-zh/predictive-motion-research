@@ -1,0 +1,30 @@
+{
+  "scope": "Actual file staging and remaining release prerequisites; no target execution",
+  "review_sha256": "9d7ea6257a93c8de67ea9bf1457f014902b3031d6daf38f6ea4d20de3fb781f7",
+  "selection": "Exact installation, actual file verification and remaining execution gates",
+  "renderer": {
+    "script": "render_profile_stage.py",
+    "sha256": "2a2160c363620e044c070252152aee7cb53c26571e085f0232286011c9232a61",
+    "matplotlib": "3.10.3",
+    "font": "DejaVu Sans",
+    "dpi": 180,
+    "figure_inches": [
+      13,
+      7.5
+    ]
+  },
+  "outputs": [
+    {
+      "file": "first_cycle_actual_profile_stage.png",
+      "bytes": 226524,
+      "sha256": "9f132048164e8b4bee78354e1cd4b6a3e13873dc7bab0b5ab89ab0719ade712b"
+    },
+    {
+      "file": "first_cycle_actual_profile_stage.svg",
+      "bytes": 7693,
+      "sha256": "ae34fe68c5475e91870535de704378b800cb3083c6322f6d9e248e659ce27bc5"
+    }
+  ],
+  "phase5": "NOT_ACCEPTED",
+  "phase6": "NOT_STARTED"
+}
