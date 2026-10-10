@@ -1,26 +1,33 @@
 # CI environment maintenance
 
-Status, 2026-10-10 (America/Toronto): **Stage A published and fully verified;
-Stage B candidate published, its full validation is running; daily CI has not
-migrated.** PR #2 was merged with direct human authorization at
-`ff27808fea77a9742cd9363c17addfbf0d1f3ca2`. Current daily CI still uses the
-original container and dependency installation. No research code, phase gates,
-thresholds or test entry points changed.
+Status, 2026-10-10 (America/Toronto): **base and dependency images published,
+re-pulled and fully verified; anonymous hosted-runner full CI passed; migration
+branch configured, awaiting its PR checks and merge/default-branch validation.**
+PR #2 was merged with direct human authorization at `ff27808fea77a9742cd9363c17addfbf0d1f3ca2`.
+No algorithms, thresholds, research gates or original test entry points changed.
+
+Current verified CI environment (`linux/amd64` manifest):
+`ghcr.io/sp-zh/predictive-motion-research-ci@sha256:16bacb7ed79dde48cd3c60766ab04982a4096fdcfe780a492636ff5c1ed2cff6`.
+Build source: `ff27808fea77a9742cd9363c17addfbf0d1f3ca2`; definition SHA-256:
+`96be9686a81ab6cffd8fbdbb5f168fc54078e8d9fcb31b433bb0e9650bd1bda8`;
+complete installed-package inventory SHA-256:
+`5135f97de49e98f6596635bac45bb81198e1fe19407f592efc9c2d27bb3950b0`.
+Inventory remains inside the retained image, retrievable with
+`docker run --rm --entrypoint cat <verified-CI-ref> /usr/local/share/predictive-motion-ci/installed-packages.tsv`.
 
 Verified GHCR ROS base (`linux/amd64` manifest):
 `ghcr.io/sp-zh/predictive-motion-research-ros-base@sha256:a5426de405f6f0a82b0f3def3bbd3bce2a71a91421fe980c17613b4e51ef38d9`.
-[Stage A run 38026127189](https://github.com/sp-zh/predictive-motion-research/actions/runs/38026127189)
-passed publication/re-pull/content correspondence and the original full tests.
-The dependency candidate is
-`ghcr.io/sp-zh/predictive-motion-research-ci@sha256:16bacb7ed79dde48cd3c60766ab04982a4096fdcfe780a492636ff5c1ed2cff6`,
-from [Stage B run 38026435088](https://github.com/sp-zh/predictive-motion-research/actions/runs/38026435088).
-It is published but not yet accepted for daily CI. Do not switch until full and
-anonymous hosted-runner validation complete. The Package page currently shows
-Public and repository ownership; the agent did not alter visibility.
+[Stage A 38026127189](https://github.com/sp-zh/predictive-motion-research/actions/runs/38026127189),
+[Stage B 38026435088](https://github.com/sp-zh/predictive-motion-research/actions/runs/38026435088),
+and [anonymous full CI 38026788308](https://github.com/sp-zh/predictive-motion-research/actions/runs/38026788308)
+all passed at the same source commit. Each full-test job ran the original
+24 native GoogleTests, eight statistics tests and numerical/consumer checks,
+without test skips. Both actual Package pages show Public and this repository;
+the agent did not change their visibility. Daily CI needs no registry secret.
 
 ## Current source and deployment order
 
-Daily CI and the retained development `docker/Dockerfile` currently use
+The pre-migration daily CI and retained development `docker/Dockerfile` use
 `docker.io/library/ros:jazzy-ros-base-noble@sha256:066420e07f60aa18262f2479981def87ebcfcec42eefb0c0c57c4a46098348ca`.
 This is the official multi-platform **index**, not a config ID. Linux CI targets
 `linux/amd64`. The publisher retains the original tag+digest source in
@@ -180,9 +187,17 @@ the two CI refs and removing/replacing installation only when appropriate.
 Record the previous verified GHCR digest before replacement. Roll back via a
 reviewed PR restoring both refs to that prior compatible digest; if definitions
 also changed, restore the corresponding environment definitions in the same PR
-so the checker can pass. Do not silently revert to Docker Hub. Until a first
-GHCR release exists, the current official ROS source plus setup script remains
-the bootstrap recovery configuration, not a verified GHCR rollback target.
+so the checker can pass. Do not silently revert to Docker Hub. For this first dependency-image release there is no earlier preinstalled CI
+image to invent. Retain the verified Stage A GHCR base as the bootstrap recovery
+image: a rollback PR can use its exact `a5426de…f38d9` reference in both CI fields
+and replace the consistency step with the unchanged setup script, as fully tested
+in Stage A. This explicit recovery still uses GHCR, but temporarily restores apt
+installation and its network requirements. For subsequent dependency releases,
+keep the current `16bacb7e…2cff6` image as the previous fully verified environment
+and restore its matching definitions and both refs through a rollback PR.
+Keep both current CI and Stage A base release tags; do not delete either without
+owner approval. The complete references above are the authority; short hashes in
+this paragraph are labels only.
 
 Retain current and at least one previous verified image/tag; never delete them
 without owner confirmation. Review security updates on a controlled schedule

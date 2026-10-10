@@ -9,15 +9,15 @@ jobs:
     runs-on: ubuntu-24.04
     timeout-minutes: 25
     container:
-      image: ros:jazzy-ros-base-noble@sha256:066420e07f60aa18262f2479981def87ebcfcec42eefb0c0c57c4a46098348ca
+      image: ghcr.io/sp-zh/predictive-motion-research-ci@sha256:16bacb7ed79dde48cd3c60766ab04982a4096fdcfe780a492636ff5c1ed2cff6
     steps:
       - uses: actions/checkout@11d5960a326750d5838078e36cf38b85af677262
         id: checkout
         with:
           persist-credentials: false
-      - name: Install selected dependencies
+      - name: Verify dependency image consistency
         shell: bash
-        run: bash scripts/phase0/setup_linux.sh
+        run: python3 scripts/check_ci_environment.py check
       - name: Check CI failure controls
         shell: bash
         run: python3 tests/ci/test_environment_check.py
@@ -33,7 +33,7 @@ jobs:
         if: always() && steps.checkout.outcome == 'success'
         shell: bash
         env:
-          CI_IMAGE_REFERENCE: ros:jazzy-ros-base-noble@sha256:066420e07f60aa18262f2479981def87ebcfcec42eefb0c0c57c4a46098348ca
+          CI_IMAGE_REFERENCE: ghcr.io/sp-zh/predictive-motion-research-ci@sha256:16bacb7ed79dde48cd3c60766ab04982a4096fdcfe780a492636ff5c1ed2cff6
         run: |
           source /opt/ros/jazzy/setup.bash
           python3 scripts/collect_environment.py --output results/phase0/environment.json
