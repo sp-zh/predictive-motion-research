@@ -1,0 +1,85 @@
+{
+  "decision": "PASS_ONE_CHUNK_IO_LEASE_LINK_ONLY_NOT_RUNTIME_OR_PHASE_ACCEPTANCE",
+  "baseline": "0397426b966c3d412017b8acc3d3cd48d04aab83",
+  "ready_sha256": "9c83f3514ce020c5dded14db93a9a0c157a9ac16b0c5db5bff96653b8da143be",
+  "original_payloads_verified": 30,
+  "production_and_prior_checkpoint_guards_verified": 225,
+  "link_invocations": 1,
+  "exit_code": 0,
+  "timeout_or_output_stop": false,
+  "elapsed_seconds": 0.0745090819982579,
+  "raw_stdout_bytes": 0,
+  "raw_stderr_bytes": 0,
+  "binary": {
+    "bytes": 88728,
+    "sha256": "1be89142928eaeaa3560c203043d82428fde8fca34e1db45ceb55cc86f4a6570",
+    "ELF64_type": "ET_DYN",
+    "machine": "x86-64",
+    "DF_1_PIE_flag": true,
+    "entry": 24976,
+    "program_headers": 13,
+    "sections": 33,
+    "DT_NEEDED": [
+      "libstdc++.so.6",
+      "libgcc_s.so.1",
+      "libc.so.6"
+    ],
+    "PT_INTERP": [
+      "/lib64/ld-linux-x86-64.so.2"
+    ],
+    "RPATH_RUNPATH": [],
+    "unresolved_project_symbols": 0
+  },
+  "map": {
+    "bytes": 2549314,
+    "sha256": "787906ac517a29a0f42128328d864a37bd615b5dfb7c55dcda359fe847f02537",
+    "actual_foundation_archive_members": [
+      "foundation_resources.cpp.o"
+    ],
+    "actual_LOAD_lines": 23,
+    "distinct_LOAD_paths": 18,
+    "first_observed_requested_alias_paths": 6,
+    "all_resolved_targets_match_prefrozen_identities": true
+  },
+  "prepost_file_identities_matched": 97,
+  "root_independent_remote_recheck": {
+    "current_records_rechecked": 117,
+    "named_absences": 2,
+    "source_directory_guards": 5,
+    "readonly_input_roster": true,
+    "cwd_empty": true,
+    "link_or_program_invocations": 0
+  },
+  "signal_number": null,
+  "automatic_retries": 0,
+  "lease_groups_executed": 0,
+  "actual_lease_constructions": 0,
+  "actual_owned_numeric_buffer_allocations": 0,
+  "prior_pricing_STATIC_BOUND_DEFERRED_and_conservative_scalar_scope_preserved": true,
+  "prior_buffer_private_order_static_bad_alloc_and_hostsize_deferred_preserved": true,
+  "lease_realIO_concurrency_privateactive_scope_deferred_preserved": true,
+  "type_contracts_compiled_only": 4,
+  "named_specs_absence_guards_checked": 2,
+  "independent_review": [
+    "All sealed controls and actual link plan match the reviewed source;single successful invocation,empty raw streams",
+    "Original15-file raw archive and14 payloads verified against retained copies",
+    "Independent ELF byte parser confirms default PIE x86-64,exact3 standard DT_NEEDED,observed interpreter,no RPATH/RUNPATH or unresolved project symbols",
+    "Actual map independently parsed:only resources archive member extracted;18 LOAD identities match current records or exact resolved aliases",
+    "Six lexical paths first observed after link keep post-observation labels;no retrospective prefreeze claim",
+    "97 input records identical before/after;originals/readonly inputs preserved;no executable/library probe ran"
+  ],
+  "compiler_source_compilation_calls": 0,
+  "test_case_groups_executed": 0,
+  "project_program_runs": 0,
+  "project_function_calls": 0,
+  "next_scope": "Preparation only:freeze successful binary and bounded10-group run protocol/native file identities;no runtime before separate review,backup and dispatch",
+  "limits": [
+    "Final linking does not validate testcase values,exceptions,ownership or runtime/native ABI",
+    "Finite map/ELF/file records do not prove full loader/OS/process/readset/RSS closure",
+    "Only foundation test binary was linked;Model/controller/plant/main/scorer gates remain closed"
+  ],
+  "publication": "Compact authored root review/storage only;binary,map,raw control/native identities excluded",
+  "phase5": "NOT_ACCEPTED",
+  "phase6": "NOT_STARTED",
+  "all_previous_sources_failures_and_immutable_checkers_preserved": true
+}
