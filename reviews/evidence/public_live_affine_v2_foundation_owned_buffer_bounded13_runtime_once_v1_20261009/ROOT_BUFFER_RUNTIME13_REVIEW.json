@@ -1,0 +1,112 @@
+{
+  "decision": "PASS_FIXED13_OWNED_BUFFER_RUNTIME_ONLY_NOT_PHASE_ACCEPTANCE",
+  "baseline": "eb00ba29a0780ff6e076593f694854fa5a52be82",
+  "ready_sha256": "df69b3c6985f715daf27e4aaddb2a0aac3927f5dce476aebc0ab85c2a93695c8",
+  "packet_payloads_verified": 33,
+  "production_and_prior_guards_verified": 199,
+  "program_invocations": 1,
+  "exit_code": 0,
+  "signal_number": null,
+  "timeout_or_output_stop": false,
+  "automatic_retries": 0,
+  "case_groups_passed": 13,
+  "case_groups_failed": 0,
+  "expected_outcome_counts": {
+    "POSITIVE": 12,
+    "REQUIRED_REFUSAL": 1
+  },
+  "required_first_refusal_reason_counts": {
+    "moved-from case budget": 1
+  },
+  "actual_stdout_bytes": 488,
+  "actual_stdout_sha256": "450c080b20270f36d2a2ad4d99f42a1eb8bc0d455d5e4c7e9fa74c60d1a9d2ba",
+  "stderr_bytes": 0,
+  "expected_stdout_frozen_before_execution": true,
+  "exact_ordered_stdout_matched": true,
+  "binary_sha256": "18eba1dd7beecea0aadc58544c9c2a5f18b66b2888338c226c47ce448edcd1dd",
+  "prepost_identity_records_matched": 71,
+  "unique_requested_paths_matched": 70,
+  "unique_resolved_files_matched": 64,
+  "original_artifact_guard_records": 57,
+  "root_independent_remote_recheck": {
+    "current_records_verified": 71,
+    "unique_paths": 70,
+    "readonly_directories": 6,
+    "named_specs_absences": 2,
+    "named_preload_absence": true,
+    "cwd_empty": true,
+    "program_calls": 0
+  },
+  "applied_child_limits": {
+    "RLIMIT_CPU": [
+      10,
+      10
+    ],
+    "RLIMIT_AS": [
+      268435456,
+      268435456
+    ],
+    "RLIMIT_CORE": [
+      0,
+      0
+    ],
+    "RLIMIT_FSIZE": [
+      0,
+      0
+    ],
+    "RLIMIT_NOFILE": [
+      32,
+      32
+    ],
+    "RLIMIT_NPROC": [
+      16,
+      16
+    ]
+  },
+  "independent_review": [
+    "All33 sealed payloads and original13regularfile archive/12payloads verified with exact retained bytes",
+    "Sealed controls and actual plan byte-identical to independently reviewed runtime freeze; one program invocation/no compiler/link/retry",
+    "Actual488B ordered13PASS+COMPLETE matches independently derived original roster/source literals and pre-run fixture; stderr empty",
+    "12 positive groups exercise explicitly initialized values, data/size/nullness, moves/selfmove, occupied destination accounting and wrapper lifetime; one exact moved-case invalid_argument contract refusal",
+    "All71 pre/post records match original frozen manifest, including57original artifacts; root independently rechecks current bytes/modes/3absences/6readonlydirs/emptycwd",
+    "All6applied caps equal reviewed caps; no RSS/performance inference"
+  ],
+  "production_foundation_CPP_functions_actually_called": true,
+  "actual_numeric_buffer_allocations_occurred": true,
+  "call_evidence_scope": "Fixed PASS output and reviewed source control flow corroborate actual calls and allocations; Popen flag alone is not proof",
+  "exact_CPP_function_call_count": "UNMEASURED",
+  "exact_numeric_allocation_count": "UNMEASURED",
+  "maximum_owned_doubles_per_array": 64,
+  "maximum_simultaneous_owned_doubles": 128,
+  "maximum_numeric_payload_bytes_on_8byte_double": 1024,
+  "compiler_calls": 0,
+  "link_calls": 0,
+  "capture_wait_interval_seconds": 0.0007239130063680932,
+  "capture_interval_scope": "Observer capture/wait begins after Popen; not complete program walltime, CPUtime or controller latency/deadline evidence",
+  "collector_adapter_failure_retained": {
+    "stage": "Local collection source adaptation before SSH",
+    "exception": "FileNotFoundError",
+    "cause": "Filename substitution order left stale pricing fixture path; path corrected to original reviewed V2 roster only",
+    "program_reruns": 0,
+    "oracle_or_source_changes": 0,
+    "initial_script_and_failure_retained": true
+  },
+  "scope_excluded_calls": [
+    "old66 or85 reruns",
+    "ChunkIOLease/identity/context/preview/permissionfactory",
+    "SDK/Model/cost/affine/capture/controller/Parent/plant/mainexperiment/scorer",
+    "allocator replacement/OOM forcing/private deallocation instrumentation"
+  ],
+  "limits": [
+    "Only13fixed values/moves/public ledger/lifetime/refusal groups passed; 1024B numeric payload is not total allocations, physical RAM orRSS",
+    "Public zero/live/cumulative accounting assertions do not instrument private allocation release order; destruction ordering is static source evidence only",
+    "Real bad_alloc cleanup and host-size overflow remain DEFERRED",
+    "Constructor refusal initialzero is setup-derived; after-refusal retained-case/batch zeros are asserted",
+    "Prior pricing independent matrix/cumulative-cap refusal and conservative scalar allowances retain their stated scope",
+    "No full actual-loader/OS/native/readset/RSS/generalABI or controller performance proof; no accepted complete robot trajectory"
+  ],
+  "publication": "Small actual stdout/groupresults/provenance, compact root review/storage and source-backed verification figure; raw host/native/cache/bin/control evidence excluded",
+  "phase5": "NOT_ACCEPTED",
+  "phase6": "NOT_STARTED",
+  "all_prior_sources_failures_checkerfreezes_and66_and85_results_preserved": true
+}

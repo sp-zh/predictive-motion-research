@@ -1,0 +1,104 @@
+{
+  "decision": "PASS_BOUNDED13_OWNED_BUFFER_RUNTIME_FREEZE_ONLY_NOT_EXECUTED",
+  "baseline": "51c7eb143ac66a34c188729608a51413a7f29f0c",
+  "ready_sha256": "c79037000923261ab258b34d80b5d5c028949c45503484b027e91d297af4a22f",
+  "packet_payloads_verified": 10,
+  "production_and_prior_guards_verified": 197,
+  "binary": {
+    "bytes": 93720,
+    "sha256": "18eba1dd7beecea0aadc58544c9c2a5f18b66b2888338c226c47ce448edcd1dd",
+    "mode": "0555"
+  },
+  "fixed_groups": 13,
+  "positive_groups": 12,
+  "required_first_invalid_argument_groups": 1,
+  "independent_expected_stdout": {
+    "bytes": 488,
+    "sha256": "450c080b20270f36d2a2ad4d99f42a1eb8bc0d455d5e4c7e9fa74c60d1a9d2ba",
+    "original_roster_source_strings_and_previously_reviewed_fixture_exact": true
+  },
+  "finite_runtime_named_identities": 13,
+  "native_and_loader_cache_reused_from_prior": 12,
+  "original_artifact_records_verified": 57,
+  "future_prepost_records": 71,
+  "unique_requested_paths": 70,
+  "unique_resolved_files": 64,
+  "root_independent_remote_recheck": {
+    "identity_records_verified": 71,
+    "unique_paths_verified": 70,
+    "ELF_graph_records_independently_verified": 40,
+    "all_native_graph_RPATH_RUNPATH_absent": true,
+    "frozen_binary0555": true,
+    "readonly_directories_verified": 6,
+    "named_specs_absences_verified": 2,
+    "named_preload_absence_verified": true,
+    "run_attempt_absent": true,
+    "program_runs": 0
+  },
+  "ELF_graph_scope": "40 pure ELF file audits =12 runtime-named ELF paths and28 preserved artifact ELF audits; not40 loaded dependencies",
+  "harness_review": "Exact prior pricing pattern after filenames/pins/action flag/fixed13 result substitutions; additional two specs absence checks and future status reporting; AST parsed only",
+  "future_status_reporting_scope": "Popen production_CPP_calls_occurred flag is prospective bookkeeping. Corroborate actual CPP calls with the fixed13 PASS output and source control flow. If exec/loader/early failure prevents this evidence, report calls as unknown rather than accepting that flag as proof; exact counts remain unmeasured. Numeric-allocation flag requires successful fixed13 output. Capture starts after Popen and is not total execution/CPU/controller timing.",
+  "fixed_replaced_environment": {
+    "PATH": "/usr/bin:/bin",
+    "LANG": "C",
+    "LC_ALL": "C",
+    "TZ": "UTC"
+  },
+  "timeout_seconds": 15,
+  "combined_output_cap_bytes": 131072,
+  "candidate_child_rlimits": {
+    "RLIMIT_CPU": [
+      10,
+      10
+    ],
+    "RLIMIT_AS": [
+      268435456,
+      268435456
+    ],
+    "RLIMIT_CORE": [
+      0,
+      0
+    ],
+    "RLIMIT_FSIZE": [
+      0,
+      0
+    ],
+    "RLIMIT_NOFILE": [
+      32,
+      32
+    ],
+    "RLIMIT_NPROC": [
+      16,
+      16
+    ]
+  },
+  "allowlisted_future_project_effects": [
+    "Native/C++ standard initialization and small STL/controlstorage",
+    "BalancedInteger planMesh N1/T1 and empty FactorShape ResourcePlan setup only",
+    "CaseBudget/BatchBudget/shared-case public ledger checks for fixed13groups",
+    "Real OwnedNumericBuffer constructors/moves/selfmove/moveassignment/initialization/readwrite/scoped release/reset/shared lifetime beyond wrappers",
+    "Exact moved-from CaseBudget invalid_argument refusal before numeric allocation",
+    "Captured deterministic PASS/FAIL/COMPLETE text"
+  ],
+  "maximum_doubles_per_array": 64,
+  "maximum_simultaneous_doubles": 128,
+  "maximum_numeric_payload_bytes_on_8byte_double": 1024,
+  "compiler_calls": 0,
+  "link_calls": 0,
+  "program_runs": 0,
+  "production_CPP_function_calls": 0,
+  "actual_owned_numeric_buffer_allocations": 0,
+  "buffer_groups_executed": 0,
+  "limits": [
+    "One fixed noarg test only: initialized buffer data, moves, ledgers, wrapper lifetime and exact moved-case refusal; no old66/85 sweep, SDK/Model/cost/affine/controller/plant/main/scorer",
+    "Contents explicitly initialized before reads; transferred pointers inspected only while owned; no freed destination pointer observations",
+    "1024B is bounded numeric payload, not total allocations or RSS; private release ordering static only and bad_alloc/hostsize refusal deferred",
+    "Constructor-refusal initialzero is setup-derived; only after-refusal zeros asserted",
+    "Finite named native/cache/ELF identities do not prove full actual loader/OS/readset/RSS closure; limits do not establish measured performance"
+  ],
+  "next_admitted_unit": "Separate one exact bounded13 harness invocation after verified milestone backup; first failure stop/no retry/repair/fixture changes",
+  "publication": "Compact authored root review/storage only; binary/hostplan/controls/nativegraph/cache bytes excluded",
+  "phase5": "NOT_ACCEPTED",
+  "phase6": "NOT_STARTED",
+  "existing66_and85_results_figures_and_all_failures_preserved": true
+}
