@@ -1,0 +1,11 @@
+Traceback (most recent call last):
+  File "/private/tmp/root_independent_dynamic_actual_review_20261011/audit_dynamic_actual.py", line 394, in <module>
+    if __name__=='__main__':main()
+                            ^^^^^^
+  File "/private/tmp/root_independent_dynamic_actual_review_20261011/audit_dynamic_actual.py", line 352, in main
+    n=nominal(pin(cb/'original_nominal.bin'));q=inline_full(pin(cb/'inline_qp.bin'));cv=candidate_value(pin(cb/'candidate_value.bin'));cr=candidate(pin(cb/'candidate.bin'));iv=initial_validation(pin(cb/'validation_initial.bin'));assessment=validation(pin(cb/'candidate_validation.bin'));red=reduction(pin(cb/'qp_equality_reduction.bin'));timing=cycle_timing(pin(cb/'cycle_timing.bin'));hint=parse_current_hint(pin(cb/'current_numeric_hint.bin'))
+                                                                                        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/private/tmp/root_independent_dynamic_actual_review_20261011/audit_dynamic_actual.py", line 88, in candidate_value
+    r=R(data,'ORIGINAL_GENUINE_CANDIDATE_VALUE_NO_EXECUTION');v={'facts':[r.u() for _ in range(3)]};assert r.u()==1;v['metadata']=metadata(r);v['transport'],v['nomdigest'],v['digest']=r.text(),r.text(),r.text();v['initial']=r.nums(30);v['controls']=[(r.u(),np.r_[r.vec(),r.d()]) for _ in range(r.u())];assert r.u()==1;v['success'],v['final_available'],v['error']=r.u(),r.u(),r.text();v['final']=state(r);v['points'],v['cycles'],v['cells']=values(r);r.end();return v
+                                                                                                           ^^^^^^^^
+AssertionError

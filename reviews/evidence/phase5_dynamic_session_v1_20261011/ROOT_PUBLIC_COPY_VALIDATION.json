@@ -1,0 +1,14 @@
+{
+  "schema": "ROOT_PUBLIC_COPY_VALIDATION_V1",
+  "credential_patterns_matched": 0,
+  "cache_excluded": {
+    "path": "reviews/evidence/phase5_dynamic_session_v1_20261011/independent/__pycache__/audit_dynamic_actual.cpython-312.pyc",
+    "sha256": "01437e3ca5966a47b54f6da14dc28a9a82423929e5a83d28c1074241d9dfeb31"
+  },
+  "qualification": "Only unintended untracked public-view bytecode removed. Immutable raw packets/archives and their manifests remain unchanged. Source scripts and independent review retained.",
+  "retained_root_copy_failures": [
+    "Initial public-view validation refused copied Python cache; no Git publication occurred.",
+    "First cache-manifest inspection assumed list files schema; AttributeError before removal. Corrected explicitly accepts list or dict."
+  ],
+  "public_remote_backup": "INCOMPLETE_PRIVACY_INSTRUCTION_CONFLICT_PENDING_DIRECT_HUMAN_REPLY"
+}

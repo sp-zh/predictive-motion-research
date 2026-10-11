@@ -1,0 +1,11 @@
+Traceback (most recent call last):
+  File "/private/tmp/root_independent_dynamic_actual_review_20261011/audit_dynamic_actual.py", line 394, in <module>
+    if __name__=='__main__':main()
+                            ^^^^^^
+  File "/private/tmp/root_independent_dynamic_actual_review_20261011/audit_dynamic_actual.py", line 346, in main
+    profile=json.loads(pin(unit/'profile-version1/active_input.json','2de29ad696bb58a5cf87fec360df5c6f57561d7b1e95ad794bbcb868e39bc90e'));producer=json.loads(pin(unit/'profile-version1/PRODUCER.json'));root_before=snapshot(pin(base/'observation_before.bin'));root_receipts=verify_receipts(base)
+                                                                                                                                                                                                                                                                                 ^^^^^^^^^^^^^^^^^^^^^
+  File "/private/tmp/root_independent_dynamic_actual_review_20261011/audit_dynamic_actual.py", line 330, in verify_receipts
+    return {'files':len(receipts),'bytes':fields['output_bytes'],'execution_permission_legacy_field':fields['execution_permission']}
+                                                                                                     ~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^
+KeyError: 'execution_permission'

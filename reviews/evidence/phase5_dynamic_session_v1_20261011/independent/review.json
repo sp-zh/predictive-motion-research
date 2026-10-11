@@ -1,0 +1,136 @@
+{
+  "verdict": "PASS_RECORDED_THREE_OFFLINE_BETA0_SMALL_ALPHA_TRANSACTIONS_FILE_ALGEBRA",
+  "packet_ready_sha256": "ed369c53267efa139012e5d310a6a8d08db1943bbd46753040da4a0e325bde42",
+  "payloads": 837,
+  "bytes": 275007193,
+  "checks": {
+    "all53_binary_receipts": true,
+    "eachfull741F_Hgconstant_and13156rows": true,
+    "all600rounded_command_histories_pass": true,
+    "fresh_actual_context_reobserved": true,
+    "control_only_nominal_shift_and_cumulative_delta8": true,
+    "fresh_E_RHS_p_Z_D_R_and_current_matrix_hint": true,
+    "all1200_B_values_derivatives_geometry_intervals_including_initial_sigma_recomputed": true,
+    "all6_actual_steps_derivatives_intervals_currenthistory_and24journal_rows": true,
+    "warm1000_and3000journal_actual_boundary_binding": true,
+    "1696_recorded_requests1667_unique_beforeafter_matchplan": true,
+    "exact_one_dispatch_rootrelease_argv": true,
+    "session_and_simulation_termination": true
+  },
+  "bycycle": [
+    {
+      "cycle": 0,
+      "SI_max": 3.7269449679189215e-20,
+      "B_max30": 2.2140449391395978e-10,
+      "hint_stationarity": 3.469446951953614e-18,
+      "terminal_p_max": 0.0,
+      "native": {
+        "status": 0,
+        "raw": 1,
+        "iterations": 1,
+        "setup": 0.028650028,
+        "solve": 0.001858993
+      },
+      "whole_cycle_wall_seconds": 3.10737837,
+      "counts": [
+        1,
+        2,
+        2,
+        15505159,
+        8459213
+      ],
+      "CSV_bytes": 926527
+    },
+    {
+      "cycle": 1,
+      "SI_max": 3.7269449679189215e-20,
+      "B_max30": 5.099135631965457e-14,
+      "hint_stationarity": 1.734723475976807e-18,
+      "terminal_p_max": 3.567857142857141e-05,
+      "native": {
+        "status": 0,
+        "raw": 1,
+        "iterations": 1,
+        "setup": 0.029622948,
+        "solve": 0.00198578
+      },
+      "whole_cycle_wall_seconds": 2.640075385,
+      "counts": [
+        2,
+        4,
+        4,
+        19764138,
+        16918426
+      ],
+      "CSV_bytes": 881086
+    },
+    {
+      "cycle": 2,
+      "SI_max": 5.759824041329242e-20,
+      "B_max30": 4.8840922625692507e-14,
+      "hint_stationarity": 3.469446951953614e-18,
+      "terminal_p_max": 7.135714285714282e-05,
+      "native": {
+        "status": 0,
+        "raw": 1,
+        "iterations": 1,
+        "setup": 0.028801775,
+        "solve": 0.001911353
+      },
+      "whole_cycle_wall_seconds": 2.636071641,
+      "counts": [
+        3,
+        6,
+        6,
+        24023117,
+        25377639
+      ],
+      "CSV_bytes": 856035
+    }
+  ],
+  "bootstrap": [
+    1,
+    2,
+    1,
+    1016,
+    1014,
+    2034,
+    8,
+    1006,
+    3
+  ],
+  "entry": {
+    "stage": "COMPLETE_THREE_REOBSERVED_REPROPAGATED_CYCLES_NOT_FULL_TASK",
+    "wall": 20.06985492,
+    "physicalsteps": 1006,
+    "tasksubsteps": 6,
+    "commits": 3,
+    "session_termination": 1,
+    "simulation_termination": 1
+  },
+  "startup_derivative_exclusion": {
+    "max_a": 6.6436306091723925,
+    "max_available_jerk": 1357.6628167075585,
+    "first_jerk_available": 0
+  },
+  "timing_descriptive_3sample": {
+    "p50": 2.640075385,
+    "p95": 3.0606480715,
+    "p99": 3.0980323103000003,
+    "max": 3.10737837,
+    "misses": 3,
+    "samples": 3
+  },
+  "scope_limits": [
+    "Allthree4msdeadlinesmissed; n3linearquantiles descriptive only. Wholecycle excludes timing serialization/manifest and SDKstartup/termination as stated, includes actualobserve/repropagation/value/Cjournals/reobserve/controlshift.",
+    "Beta0/s/r=0 throughout; no meaningful path advancement/full task, physical rest/tail/stop/D-E/online/hardware/main/scorer/Phase5 acceptance. Exact-command-progress tailflag remains separate and nonzero finalcommandw is retained.",
+    "Genuine400points eachcycle are predicted Model values initialized from that cycle actual measuredq/v and acceptedC/w/history; future points are not actual physical observations. Six actual native points are separately exported.",
+    "GeometryQP explicitly empty; complete fullgeometry9035-query checks at all B/C points are source+record-supported. Packet keeps aggregate minimum/count/sigma, not every raw witness query. Interval arithmetic concerns declared endpoint linear interpolation, not continuous physical motion certificate.",
+    "InitialJ/sigma present and saved-matrix SVD checked; no new robot kinematics call to independently rederive Jacobian from URDF.",
+    "Recorded producer/source/1696 pin metadata and exact driver argv are linked; executable bytes are not present locally. Root actual passive ELF/SDK/input readback remains its separate proof. No newly executed compiler/Model/native/solver/SSH by reviewer.",
+    "Candidate Model cache explains ctor/meta1 on first B then0/0; eachgenuine value rollout1. Timing ledger forecast/step counts are reservations; actualcall counts independently come from native facts/journals/results.",
+    "Logical numeric reservation8,459,213 percycle total25,377,639 separate from originalcharged24,023,117 and allocator memory/CPU/AS caps; no batch reset.",
+    "Warmup whole startup maxa6.64363/maxjerk1357.66282 exceedtask5/500, firstjerkunavailable; exclusion preserved, no claim of wholewarmupderivativeacceptance.",
+    "Parser failures preserved: obsolete manifestfield execution_permission and cachedcandidate metadata assumed present. Corrected by frozen source schema; no data/guard/model change. No fault-injection or universal no-throw/durability guarantee."
+  ]
+}

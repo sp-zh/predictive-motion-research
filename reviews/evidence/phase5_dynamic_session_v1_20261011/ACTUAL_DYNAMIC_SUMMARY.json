@@ -1,0 +1,269 @@
+{
+  "entry": {
+    "role": "ACTIVE_SESSION_FINAL_SCOPE_AND_TIMING",
+    "stage": "COMPLETE_THREE_REOBSERVED_REPROPAGATED_CYCLES_NOT_FULL_TASK",
+    "error": "",
+    "boundary_unchanged": 0,
+    "session_termination_pass": 1,
+    "session_termination_error": "",
+    "native_termination_pass": 1,
+    "native_termination_error": "",
+    "entry_wall_seconds": 20.06985492,
+    "total_physical_step_attempts": 1006,
+    "commits": 3,
+    "native_facts": {
+      "load_xml": 1,
+      "make_data": 2,
+      "reset": 1,
+      "forward": 1016,
+      "copy": 1014,
+      "get_state": 2034,
+      "observations": 8,
+      "step": 1006,
+      "commits": 3
+    }
+  },
+  "cycles": [
+    {
+      "cycle": 0,
+      "boundary_before": [
+        0,
+        0
+      ],
+      "boundary_after": [
+        1,
+        1
+      ],
+      "time_before": 2.0000000000000013,
+      "time_after": 2.004000000000001,
+      "native_osqp_iterations": 1,
+      "maximum_original_SI_violation": 8.131516293641283e-20,
+      "max_affine_error": 2.2140449402238e-10,
+      "max_joint_trust": 9.788713493685819e-05,
+      "min_true_clearance_m": 0.01558697693493688,
+      "min_cover_clearance_m": 0.022112107966645006,
+      "min_sigma": 0.0398616614370639,
+      "max_predicted_acceleration": 0.00105586074328792,
+      "max_predicted_jerk": 0.23647013088250926,
+      "max_actual_acceleration": 3.0246793082199422e-05,
+      "max_actual_jerk": 0.0057106498457285305,
+      "candidate_value_facts": {
+        "constructor_attempts": 1,
+        "metadata_attempts": 1,
+        "rollout_attempts": 1
+      },
+      "task_progress": 0.0,
+      "timing": {
+        "role": "ACTUAL_OFFLINE_CYCLE_SEGMENTS_AND_4MS_MISS",
+        "cycle": 0,
+        "complete": 1,
+        "complete_cycle_seconds": 3.10737837,
+        "deadline_missed": 1,
+        "segments": [
+          {
+            "name": "observe",
+            "measured": 1,
+            "seconds": 0.003968443
+          },
+          {
+            "name": "nominal_maps",
+            "measured": 1,
+            "seconds": 0.468617329
+          },
+          {
+            "name": "geometry_assembly",
+            "measured": 1,
+            "seconds": 0.776159626
+          },
+          {
+            "name": "solve",
+            "measured": 1,
+            "seconds": 1.022847471
+          },
+          {
+            "name": "value_validation",
+            "measured": 1,
+            "seconds": 0.795869474
+          },
+          {
+            "name": "commit_journal",
+            "measured": 1,
+            "seconds": 0.036543542
+          }
+        ],
+        "ledger": {
+          "completed_commits": 1,
+          "forecast_budget_reservations": 2,
+          "step_budget_reservations": 2,
+          "original_session_charged_slots": 15505159,
+          "separate_logical_reserved_slots": 8459213
+        },
+        "scope": "monotonic realwall from current observe through retained solve/value/Cjournals/afterobserve+controlshift; timing serialization/manifest excluded; SDKstartup/termination excluded; geometryassembly includes genuine affine+fullQP+retained artifacts, geometricQProws diagnosticempty"
+      }
+    },
+    {
+      "cycle": 1,
+      "boundary_before": [
+        1,
+        1
+      ],
+      "boundary_after": [
+        2,
+        2
+      ],
+      "time_before": 2.004000000000001,
+      "time_after": 2.0080000000000005,
+      "native_osqp_iterations": 1,
+      "maximum_original_SI_violation": 6.098637220230962e-20,
+      "max_affine_error": 5.099135631965457e-14,
+      "max_joint_trust": 1.1980723089166645e-06,
+      "min_true_clearance_m": 0.0155869400187009,
+      "min_cover_clearance_m": 0.022112107966645006,
+      "min_sigma": 0.03986159463647039,
+      "max_predicted_acceleration": 0.0010633898917936958,
+      "max_predicted_jerk": 0.23901726056120093,
+      "max_actual_acceleration": 3.717039717351758e-05,
+      "max_actual_jerk": 0.010390414349556395,
+      "candidate_value_facts": {
+        "constructor_attempts": 0,
+        "metadata_attempts": 0,
+        "rollout_attempts": 1
+      },
+      "task_progress": 0.0,
+      "timing": {
+        "role": "ACTUAL_OFFLINE_CYCLE_SEGMENTS_AND_4MS_MISS",
+        "cycle": 1,
+        "complete": 1,
+        "complete_cycle_seconds": 2.640075385,
+        "deadline_missed": 1,
+        "segments": [
+          {
+            "name": "observe",
+            "measured": 1,
+            "seconds": 0.003940816
+          },
+          {
+            "name": "nominal_maps",
+            "measured": 1,
+            "seconds": 0.456333103
+          },
+          {
+            "name": "geometry_assembly",
+            "measured": 1,
+            "seconds": 0.758032849
+          },
+          {
+            "name": "solve",
+            "measured": 1,
+            "seconds": 0.945626376
+          },
+          {
+            "name": "value_validation",
+            "measured": 1,
+            "seconds": 0.436660866
+          },
+          {
+            "name": "commit_journal",
+            "measured": 1,
+            "seconds": 0.035745393
+          }
+        ],
+        "ledger": {
+          "completed_commits": 2,
+          "forecast_budget_reservations": 4,
+          "step_budget_reservations": 4,
+          "original_session_charged_slots": 19764138,
+          "separate_logical_reserved_slots": 16918426
+        },
+        "scope": "monotonic realwall from current observe through retained solve/value/Cjournals/afterobserve+controlshift; timing serialization/manifest excluded; SDKstartup/termination excluded; geometryassembly includes genuine affine+fullQP+retained artifacts, geometricQProws diagnosticempty"
+      }
+    },
+    {
+      "cycle": 2,
+      "boundary_before": [
+        2,
+        2
+      ],
+      "boundary_after": [
+        3,
+        3
+      ],
+      "time_before": 2.0080000000000005,
+      "time_after": 2.012,
+      "native_osqp_iterations": 1,
+      "maximum_original_SI_violation": 9.486769009248164e-20,
+      "max_affine_error": 4.8840922625692507e-14,
+      "max_joint_trust": 1.211851131888153e-06,
+      "min_true_clearance_m": 0.015586902637946643,
+      "min_cover_clearance_m": 0.022112107966645006,
+      "min_sigma": 0.03986152696267591,
+      "max_predicted_acceleration": 0.0010708159769283881,
+      "max_predicted_jerk": 0.24175580801440685,
+      "max_actual_acceleration": 5.192863288112328e-05,
+      "max_actual_jerk": 0.014429384022523702,
+      "candidate_value_facts": {
+        "constructor_attempts": 0,
+        "metadata_attempts": 0,
+        "rollout_attempts": 1
+      },
+      "task_progress": 0.0,
+      "timing": {
+        "role": "ACTUAL_OFFLINE_CYCLE_SEGMENTS_AND_4MS_MISS",
+        "cycle": 2,
+        "complete": 1,
+        "complete_cycle_seconds": 2.636071641,
+        "deadline_missed": 1,
+        "segments": [
+          {
+            "name": "observe",
+            "measured": 1,
+            "seconds": 0.004176465
+          },
+          {
+            "name": "nominal_maps",
+            "measured": 1,
+            "seconds": 0.457012582
+          },
+          {
+            "name": "geometry_assembly",
+            "measured": 1,
+            "seconds": 0.756860363
+          },
+          {
+            "name": "solve",
+            "measured": 1,
+            "seconds": 0.943363487
+          },
+          {
+            "name": "value_validation",
+            "measured": 1,
+            "seconds": 0.43537317
+          },
+          {
+            "name": "commit_journal",
+            "measured": 1,
+            "seconds": 0.035889428
+          }
+        ],
+        "ledger": {
+          "completed_commits": 3,
+          "forecast_budget_reservations": 6,
+          "step_budget_reservations": 6,
+          "original_session_charged_slots": 24023117,
+          "separate_logical_reserved_slots": 25377639
+        },
+        "scope": "monotonic realwall from current observe through retained solve/value/Cjournals/afterobserve+controlshift; timing serialization/manifest excluded; SDKstartup/termination excluded; geometryassembly includes genuine affine+fullQP+retained artifacts, geometricQProws diagnosticempty"
+      }
+    }
+  ],
+  "scope": "one actual warm1000 and3 current reobserved beta0/smallalpha transactions; no fulltask/stop/online/geometryQP/phase acceptance",
+  "cycle_wall_descriptive_statistics": {
+    "n": 3,
+    "method": "linear_interpolation, descriptive small-sample diagnostic only",
+    "p50_seconds": 2.640075385,
+    "p95_seconds": 3.0606480715,
+    "p99_seconds": 3.0980323103000003,
+    "max_seconds": 3.10737837,
+    "4ms_misses": 3
+  }
+}

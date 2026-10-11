@@ -1,0 +1,37 @@
+{
+  "input_packet_sha256": "ed369c53267efa139012e5d310a6a8d08db1943bbd46753040da4a0e325bde42",
+  "all53_binary_receipts": true,
+  "warm1000_values_match_actual_boundary": true,
+  "warm3000_journal_rows": 3000,
+  "warmup_derivatives_startup_excluded": {
+    "max_a": 6.6436306091723925,
+    "max_available_jerk": 1357.6628167075585,
+    "first_jerk_available": 0
+  },
+  "all1200_value_q_v_C_w_bounds_and_geometry_stored_fields_checked": 1200,
+  "all6_actual_joint_speed_and_position_checked": true,
+  "source6_predictive_step_calls_not_per_ctor": true,
+  "actual_contacts": 0,
+  "recorded_driver_exact_release": true,
+  "readonly_rosters_before_after_equal": true,
+  "native_facts": [
+    1,
+    2,
+    1,
+    1016,
+    1014,
+    2034,
+    8,
+    1006,
+    3
+  ],
+  "wall_three_sample_descriptive_linear_quantiles": {
+    "p50": 2.640075385,
+    "p95": 3.0606480715,
+    "p99": 3.0980323103000003,
+    "max": 3.10737837,
+    "misses": 3,
+    "samples": 3
+  },
+  "scope": "No actual current/new optimizer or Model/native calls; saved geometry counts/minima are not per-query raw witness retention or continuous physical certificate."
+}
