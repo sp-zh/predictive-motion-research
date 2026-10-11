@@ -19,8 +19,24 @@
   "archive_READY_sha256": "abd1746fb40434d7f0a717f6bee1f545940818e02d5d8afc5b8b08d8b8fee4b7",
   "source_LOCAL_READY_sha256": "0f0cedb0da63ad0d74947e8b7fb58211c4b07a8393f057e4f84a713791115a59",
   "independent_source_READY_sha256": "877c903fd775d6363aa81519d85450ff78a5834ff37fd9b4bc28b7cfd5755495",
-  "Dell_copy_verified": false,
-  "backup_scope": "SOURCE/PRESENTATION_CHECKPOINT_ONLY; Dellcopy andfunctional32milestone INCOMPLETE",
+  "Dell_copy_verified": true,
+  "backup_scope": "Prepared source/presentation archive nowfull246payloads Mac+Dverified; native32functionalmilestone stillpending",
   "public_checkpoint": "PENDING_PUSH",
-  "qualification": "Finalstorage/remote records postdate aggregate; large nativeevidence fromold36 remains underpreviousverifieddualhostarchive, no newnative evidence claimed"
+  "qualification": "Finalstorage/remote records postdate aggregate; large nativeevidence fromold36 remains underpreviousverifieddualhostarchive, no newnative evidence claimed",
+  "Dell_readback": {
+    "schema": "ROOT_UNIT_DELL_FULL_READBACK_V1",
+    "archive": "/mnt/d/CodexTransfer/projects/predictive_motion/checkpoints/nonzero-32cycle-source-preparation-v1-20261011-root1/source38-preparation-and-actual36-presentation-v1.tar.gz",
+    "archive_bytes": 1295161,
+    "archive_sha256": "07a39f17f7c7958a6c452be5e9beb1f841818091ce385235c5fa51817bb0f171",
+    "ready_sha256": "abd1746fb40434d7f0a717f6bee1f545940818e02d5d8afc5b8b08d8b8fee4b7",
+    "manifest_sha256": "8206dc2123e9f10e75724eb66c7f963885b84cbf9e9ae2efdb4ed6357cec6cdc",
+    "regular_members_verified": 247,
+    "payloads_verified": 246,
+    "all_payloads_verified": true,
+    "observed_mode": 365,
+    "observed_uid": 1000,
+    "observed_gid": 1000,
+    "qualification": "NTFS POSIX sealing/ownership change not asserted; no chmod attempted."
+  },
+  "connection_restore_record": "reviews/evidence/dell_usb4_wsl_connection_restored_20261011.json"
 }

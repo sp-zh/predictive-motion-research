@@ -1,0 +1,32 @@
+{
+  "schema": "DELL_USB4_WSL_CONNECTION_RESTORATION_V1",
+  "recorded_utc": "2026-10-11T19:58:00.919843+00:00",
+  "source_human_chat": "01a10a40-558c-71a3-b343-6ff4c2709b36",
+  "source_human_message": "01a12c86-2a4c-7300-b135-59431e905c89",
+  "human_request": "检查Dell已唤醒/数据线",
+  "diagnosis_from_existing_Dell_control_chat": {
+    "WindowsUSB4": "Up20Gbps",
+    "ping": "2of2success",
+    "original2222listener_portproxy_firewall": "normal",
+    "Ubuntu24.04": "Stopped",
+    "old_keeper": "31076absent"
+  },
+  "repair": "ExistingWindowsdiagnosis chat startedoriginalUbuntu andrestoredsleepinfinity; originalsshdautoresumed; noadmin/portproxy/firewall/project experiment change",
+  "Root_readonly_confirmation": {
+    "SSH_exit": 0,
+    "reply": "DELL_SSH_OK",
+    "sshd": "active",
+    "keeper": "551 sleep infinity"
+  },
+  "keeper_disappearance_cause": "UNKNOWN",
+  "permanent_resolution_claim": false,
+  "source_preparation_archive_Dell_full_readback": {
+    "payloads": 246,
+    "archive_sha256": "07a39f17f7c7958a6c452be5e9beb1f841818091ce385235c5fa51817bb0f171",
+    "location": "/mnt/d/CodexTransfer/projects/predictive_motion/checkpoints/nonzero-32cycle-source-preparation-v1-20261011-root1/source38-preparation-and-actual36-presentation-v1.tar.gz",
+    "all_payloads_verified": true
+  },
+  "current_project_work": "ExistinguniqueDellwriteralreadyactiveatnew38compile; no duplicate project entry issuedbyRoot",
+  "phase5": "NOT_ACCEPTED",
+  "phase6": "NOT_STARTED"
+}
