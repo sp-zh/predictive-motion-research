@@ -1,0 +1,30 @@
+{
+  "scope": "Exact actual136ms prefix/34C68halves; only2brakingcommands and4stoppoints,0consecutive dwell,not stopped. Predictedhalf negative r=-2^-58 refused before B/C. No fulltask/realtime/phase acceptance.",
+  "producer_READY_sha256": "86b74c000ce38832a903d113ffe651b803dcd62588f10d39bdde8b0683737e58",
+  "files": {
+    "RENDER_RECEIPT.json": {
+      "bytes": 489,
+      "sha256": "8887fd23027b3813f093c4780987cbae0630d863fd80e5e763effb2e02e82318"
+    },
+    "plot_input.json": {
+      "bytes": 124701,
+      "sha256": "049c0a2c39561f8fe8c454b395145a13f6cf2ff255b9947b7526570ebd869ace"
+    },
+    "producer_plot_source.py": {
+      "bytes": 3777,
+      "sha256": "749e24e58a0901d3c967fd1b25c4cf2d07ed6aacdff13afef1c3787b62c53430"
+    },
+    "stop45_actual_diagnostic.png": {
+      "bytes": 235991,
+      "sha256": "f4abcc82f2caea32974a7bc89525a05aa5cd50281c04e8855cbe806f9254f9c4"
+    },
+    "stop45_actual_tcp_prefix.png": {
+      "bytes": 210020,
+      "sha256": "7f58fba6c2d1505ab2e9d4429713e7e751c04cc558e88c53ec2ef6788774c3ed"
+    }
+  },
+  "Root_visual_QA": "Root viewed both exact copied producerPNGs: labels/units/thresholds readable,actualspeeds abovebound shown; finalfailedwholeclock present.",
+  "input_projection": "Exact task68/stop4/all35wholeclocks selectedfromimmutableproducerplot_input; raw trialfullvalidation matrices remain private",
+  "phase5": "NOT_ACCEPTED",
+  "phase6": "NOT_STARTED"
+}

@@ -1,0 +1,52 @@
+{
+  "references": [
+    {
+      "directory": "/private/tmp/stop45_stop_record_independent_review_20261011",
+      "READY_sha256": "62f3b828b92c22856b7149a2248c7dc5843c98eb69f6bae16ee17c57999ba835",
+      "payloads": 8,
+      "payload_bytes": 109658,
+      "all_manifested_payloads_SHA_size_verified": true,
+      "unmanifested_cache_excluded": [],
+      "whole_current_directory_equals_READY": true
+    },
+    {
+      "directory": "/private/tmp/stop45_progress_floor_pure46analysis_v1_20261011",
+      "READY_sha256": "977e5f30a5739cc3a6f14d0f5c079dabc64ca75ba553adf213bb9d5107b0a0d9",
+      "payloads": 25,
+      "payload_bytes": 171923,
+      "all_manifested_payloads_SHA_size_verified": true,
+      "unmanifested_cache_excluded": [
+        "__pycache__/bounded_bytes.cpython-314.pyc"
+      ],
+      "whole_current_directory_equals_READY": false
+    },
+    {
+      "directory": "/private/tmp/stop45_floor_coverage_and_strict_pure_v1_20261011",
+      "READY_sha256": "c5b2ba03d8f983b6f4065eedb845a6fc3429cefd48ea555d40d3e6cdb7fd6b4c",
+      "payloads": 3,
+      "payload_bytes": 50801,
+      "all_manifested_payloads_SHA_size_verified": true,
+      "unmanifested_cache_excluded": [],
+      "whole_current_directory_equals_READY": true
+    },
+    {
+      "directory": "/private/tmp/stop45_all264_progress_floor_pure_v1_20261011",
+      "READY_sha256": "04433b00e85aa06025e447d0290fee881eaa83ac9d5b3eb136fc77a6a3bde308",
+      "payloads": 9,
+      "payload_bytes": 91464,
+      "all_manifested_payloads_SHA_size_verified": true,
+      "unmanifested_cache_excluded": [],
+      "whole_current_directory_equals_READY": true
+    },
+    {
+      "directory": "/private/tmp/stop45_all264_narrow_source_review_20261011",
+      "READY_sha256": "db8c8a8e92eebf69c1f375379c408ac9f5286dfb6a688cc4a88294bc2f48e4d9",
+      "payloads": 2,
+      "payload_bytes": 1743,
+      "all_manifested_payloads_SHA_size_verified": true,
+      "unmanifested_cache_excluded": [],
+      "whole_current_directory_equals_READY": true
+    }
+  ],
+  "scope": "Saved-state pure diagnostics and one limited independent record/source review. No actual46, SDK/Model/B/C or stop-success evidence. Full reference payloads retained in Root45-only archive."
+}

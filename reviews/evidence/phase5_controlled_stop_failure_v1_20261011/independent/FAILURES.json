@@ -1,0 +1,27 @@
+{
+  "schema": "ROOT_STOP45_RETAINED_ADAPTER_FAILURES_V1",
+  "native_failure": "Last cycle34/trial0 nativeSOLVED but strict half progress domain refusal. Actual stop FAILED; no new Value/B/C.",
+  "adapters": [
+    {
+      "file": "audit_chain.py / CHAIN.stderr",
+      "error": "Budget variable B shadowed by decoded validation dictionary; first CSV open AttributeError.",
+      "repair": "DW writer alias; no source/data gate change."
+    },
+    {
+      "file": "audit_chain_retry2.py / CHAIN_RETRY2.stderr",
+      "error": "Expected CSV cycle23 instead of source t23 zero-based / CSV24.",
+      "repair": "One-based ordinal corrected; previous71 CSVs byte-compared before reuse, unchanged."
+    },
+    {
+      "file": "audit_source_timing.py / SOURCE_TIMING.stderr",
+      "error": "Assumed old producer-local/src duplication;45 packet has native source plus derived history, not that old directory.",
+      "repair": "Actual native50/source snapshot identity via fullpacket manifests; no invented second source copy."
+    },
+    {
+      "file": "audit_stop_warm.py / STOP_WARM.stderr",
+      "error": "Old journal role V2 expected; actual collector emits native-step journal prefixV3.",
+      "repair": "Read actual frozen role/schema; all1000points/3000rows and receipts pass."
+    }
+  ],
+  "producer_failures": "All packet retained source versions/pure failures/7macOS AS setup refusals/capture v1 wrong path are preserved in immutable packet, not converted to success. New46 source/pure diagnostics excluded."
+}

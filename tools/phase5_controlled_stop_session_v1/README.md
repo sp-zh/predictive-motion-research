@@ -1,0 +1,9 @@
+# Bounded controlled-stop source, failed actual45
+
+This exact source view adds a prospectively declared physical-stop monitor and a mode-specific stopping objective after32 active commands. Stopping retains all original SI/history/nonlinear B/private C checks and continues fresh QP/B/C during dwell. Physical v/a come from actual simulated observations; accepted command w/alpha and logical point s/r remain distinct. The new component requires50 actual2ms halves under declared v/a/control/progress/drift bounds. It is not an exact rest, indefinite equilibrium, full task or formal phase criterion.
+
+The finite actual45 run completes32 active plus2 braking-mode commands, then refuses a predicted negative half-progress rate before B/C. The four actual stop observations do not meet thresholds; dwell remains0. All failures and old source versions remain in the private underlying evidence archive. Native SOLVED and numerical SI do not authorize a candidate when the stricter original half-domain check fails.
+
+Global trial176 and source1.024B counters never reset between modes. Normal binary writes share16GiB with a32MiB cleanup reservation; cleanup releases the reservation without resetting spent bytes. The source records a fixed-shape terminal-byte upper bound under the supported codec text domain. Resource exhaustion remains a package failure, not a fabricated completed stop. ActualSDK/native fault and OS durability guarantees are not inferred from pure quota tests.
+
+Dell compiled21 translation units/10ELF targets and passed9 targeted pure regressions under the exact profile. This directory is an archival own-source view requiring separately pinned Dell SDK/runtime/assets; it is not a standalone portable build. Consumed45 must not be rerun. See the separate full saved-data review and Mac/Dell storage checkpoint. Phase5 NOT_ACCEPTED; Phase6 NOT_STARTED.

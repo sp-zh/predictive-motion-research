@@ -68,6 +68,12 @@ This image depicts the integrated scene; it is not a predictive-control result.
 
 ## Simulation and diagnostic figures
 
+![Attempt45 actual active/braking prefix and failed stop monitor](../figures/phase5_controlled_stop_failure_v1_20261011/stop45_actual_diagnostic.png)
+
+![68 recorded TCP poses from the retained attempt45 prefix](../figures/phase5_controlled_stop_failure_v1_20261011/stop45_actual_tcp_prefix.png)
+
+Attempt45 completes32 active plus2 braking-mode commands over136ms. All four actual stop observations fail the prospective thresholds, with0/50 dwell; the next control is refused before B/C at a tiny negative predicted half-r. The whole timing plot includes the failed35th boundary. These are actual partial diagnostics, with no completed stop/task/video or real-time claim. [Figure provenance](../figures/phase5_controlled_stop_failure_v1_20261011/PROVENANCE.json), [independent failure review and storage scope](../reviews/evidence/phase5_controlled_stop_failure_v1_20261011/README.md).
+
 ![64 genuine commits, all141 proposals and complete cycle timing](../figures/phase5_scp_workpackage40_44_v1_20261011/attempt44/scp_rank44_diagnostic.png)
 
 ![128 recorded TCP poses against the task reference](../figures/phase5_scp_workpackage40_44_v1_20261011/attempt44/scp_rank44_tcp_prefix.png)

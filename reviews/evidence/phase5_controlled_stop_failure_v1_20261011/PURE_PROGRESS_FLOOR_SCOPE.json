@@ -1,0 +1,22 @@
+{
+  "saved_state": "actual45 failed current34/trial0 only",
+  "original_negative_half_r": -3.469446951953614e-18,
+  "sample": 263,
+  "cell": 17,
+  "source_cycle_index_zero_based": 23,
+  "cycle_ordinal_one_based": 24,
+  "half": 2,
+  "planning_floor": 1e-09,
+  "preserved_original_H_g_A_l_u": true,
+  "first_diagnostic_retained_rows": 241,
+  "original_screen_omitted_rows": 23,
+  "later_diagnostic_explicit_added_rows": 264,
+  "original_solver_rows": 7101,
+  "diagnostic_solver_rows": 7365,
+  "original_hint_events_bit_replayed": 164,
+  "new_hint_events": 163,
+  "same_U_bits_between_241_and_264_diagnostics": true,
+  "new_pure400_half_r_min": 1.000238e-13,
+  "sample263_new_pure_half_r": 9.999999964e-10,
+  "scope": "Explicit planning subset, not unrestricted optimum. Saved-data Eigen hint plus separate producer literal400/200 postprocessor diagnostics. Original native result and failures unchanged. No fresh optimizer/Model/B/C/physical stop test. Narrow source reviewer did not execute the diagnostics. Actual46 needs fixed unique 264 roster, bounded shapes before allocation, finite values/positive scaling, exact input identity and roles/EOF checks, full strict C position ranges, finite fresh profile and original native/SI/literal/B/C gates. No r clamp or acceptance tolerance relaxation."
+}

@@ -1,0 +1,23 @@
+import sys,json,os,resource,signal,io,base64,hashlib,pathlib
+resource.setrlimit(resource.RLIMIT_CPU,(30,30));resource.setrlimit(resource.RLIMIT_AS,(536870912,536870912));signal.alarm(40)
+p=pathlib.Path('/home/codextransfer/predictive_motion/results/phase5/stop45-actual-visuals-v1-20261011');p.mkdir(exist_ok=False);os.environ['MPLCONFIGDIR']=str(p/'mpl-cache')
+import matplotlib;matplotlib.use('Agg')
+import matplotlib.pyplot as plt
+d=json.load(sys.stdin);t=d['task'];stop=d['stop'];times=[1000*(.004*z['cycle']+z['logical_elapsed']) for z in t]
+plt.rcParams.update({'font.family':'DejaVu Sans','font.size':11,'axes.grid':True,'grid.alpha':.22,'axes.spines.top':False,'axes.spines.right':False})
+fig,ax=plt.subplots(2,2,figsize=(14,9),constrained_layout=True);fig.suptitle('Attempt 45: 32 active + 2 braking commands; stop NOT PASSED',fontsize=17)
+a=ax[0,0];a.plot(times,[100*z['logical_s'] for z in t],lw=2,color='#2374ab');a.axvline(128,color='#a13d63',ls='--',label='Braking begins');a.set(xlabel='Recorded controller time (ms)',ylabel='Path progress (%)',title='136 ms completed prefix; full task incomplete');a.legend(fontsize=9)
+a=ax[0,1];a.plot(times,[1000*z['translation_error_m'] for z in t],lw=2,color='#007f5f',label='Actual TCP translation');a.axhline(10,color='#007f5f',ls='--',label='10 mm limit');a.set(xlabel='Recorded controller time (ms)',ylabel='Translation error (mm)',title='68 actual native poses vs pinned reference',ylim=(0,11));a.legend(fontsize=9)
+a=ax[1,0];r=stop['records'];st=[1000*(z['simulation_time']-2.) for z in r];a.plot(st,[max(map(abs,z['actual_velocity'])) for z in r],marker='o',label='Max actual joint speed (rad/s)');a.axhline(stop['spec']['velocity'],ls='--',color='#b22222',label='Stop component speed bound');a.set(xlabel='Recorded controller time (ms)',ylabel='Max actual |v| (rad/s)',title='Four braking halves: zero consecutive dwell samples');a.legend(fontsize=9)
+a=ax[1,1];w=d['whole']['whole'];a.plot([x['cycle']+1 for x in w],[x['wall'] for x in w],marker='o',markersize=3,color='#d67d00');a.axhline(.004,color='#b22222',ls='--');a.set_yscale('log');a.set(xlabel='Current boundary / cycle',ylabel='Whole offline wall time (s)',title='Includes rejected trials; final cycle refused before B/C');a.text(.03,.07,'4 ms deadline',transform=a.transAxes,color='#b22222')
+fig.text(.5,-.015,'Final candidate strict progress refusal: predicted r = -3.47e-18. Development evidence; no stop/full-task/online/Phase5 acceptance.',ha='center',fontsize=10)
+images=[];total=0
+def emit(fig,name):
+ global total
+ buf=io.BytesIO();fig.savefig(buf,format='png',dpi=150,bbox_inches='tight');b=buf.getvalue();assert len(b)<=8*1024**2-total;total+=len(b);(p/name).write_bytes(b);images.append({'name':name,'bytes':len(b),'sha256':hashlib.sha256(b).hexdigest(),'base64':base64.b64encode(b).decode()});plt.close(fig)
+emit(fig,'stop45_actual_diagnostic.png')
+fig=plt.figure(figsize=(10,7));a=fig.add_subplot(111,projection='3d');origin=t[0]['actual']['world_position']
+for kind,color,label in [('actual','#2374ab','Actual TCP'),('desired','#007f5f','Pinned desired TCP')]:
+ vals=[z[kind]['world_position'] for z in t];a.plot(*[[1000*(v[j]-origin[j]) for v in vals] for j in range(3)],lw=2,color=color,label=label)
+a.set(xlabel='World X offset (mm)',ylabel='World Y offset (mm)',zlabel='World Z offset (mm)',title='Actual recorded 136 ms prefix; stop and task incomplete');a.legend();fig.text(.5,.03,'Coordinates from actual native poses. Origin = first actual TCP. Seed 91011; offline development diagnostic.',ha='center',fontsize=9);emit(fig,'stop45_actual_tcp_prefix.png')
+print(json.dumps({'matplotlib_version':matplotlib.__version__,'files':images,'seed':91011,'scope':'Recorded partial native motion only; stop/fulltask/online/phase unaccepted'}))

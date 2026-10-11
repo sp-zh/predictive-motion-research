@@ -1,0 +1,250 @@
+{
+  "schema": "ROOT_STOP45_SAVED_FULL_REVIEW_V1",
+  "verdict": "PASS_RECORDED_FAILURE_AND_FILE_ALGEBRA; STOP_COMPONENT_FAILED",
+  "packet": {
+    "ready_sha256": "86b74c000ce38832a903d113ffe651b803dcd62588f10d39bdde8b0683737e58",
+    "payloads": 2440,
+    "bytes": 4112126519,
+    "external_transport_excluded": {
+      "schema": "STOP45_EXTERNAL_TRANSPORT_VERIFIED_V1",
+      "archive_external_path": "/private/tmp/phase5_stop45_transport_external_v1_20261011/transport.tar.gz",
+      "archive_bytes": 1482056417,
+      "archive_sha256": "7af0b94aa8af0afbb93e5ba080ac4fb29a30d15bb57233ab8aff597a810fef41",
+      "member_count": 1790,
+      "native_bytes": 3995321568,
+      "aux_bytes": 3518837,
+      "all_members_verified": true,
+      "compressed_transport_D_copy_claimed": false,
+      "root_archive_selection": "underlying payload once; external compressed transport excluded"
+    },
+    "source_files": 50,
+    "verifier_sha256": "aece68e6139999f1c95682fda13ec851f2934cbb2ef67448db892b02c8395dd4",
+    "chunk_bytes": 524288,
+    "wall_s": 2.7455474589951336
+  },
+  "checks": {
+    "current_QPs": 72,
+    "native_SOLVED": 72,
+    "original_SI_rows_per_QP": 14756,
+    "active_factors": 741,
+    "stop_factors": 909,
+    "extra_stop_factors": 168,
+    "physical_velocity_cost_weight_active_stop": [
+      0.01,
+      100
+    ],
+    "command_w_and_progress_r_stop_weights": 1000,
+    "stop_progress_reward_terminal_weight": 0,
+    "free_reduced_columns": 144,
+    "additional_internal_guard_rows": 160,
+    "exact_trust_rows": 201600,
+    "fullvalue_points": 28400,
+    "B400_passes": 34,
+    "B_refusals": 37,
+    "complete200_cycle_literal_candidates": 71,
+    "final_U200_command_checks_diagnostic": true,
+    "all72_original_cost_reduction_reconstructed": true,
+    "all34_retained_commit_and_task_payload_copies_bitexact": true,
+    "current_trial_controls_only_retries": true,
+    "coreExecutionPermission0_all72": true,
+    "sameowner_registry_tokens": 34,
+    "raw_binary_receipts": 1439,
+    "input_pins_before_after_exact": 1717,
+    "source_snapshot_files": 50
+  },
+  "actual": {
+    "active_commands": 32,
+    "braking_commands": 2,
+    "commits": 34,
+    "physical_task_halves": 68,
+    "elapsed_s": 0.136,
+    "total_physical_steps_including_warmup": 1068,
+    "forecast_reservations": 143,
+    "entry_exit": 1,
+    "entry_wall_s": 238.574182783,
+    "cleanup_session_sim_termination_pass": true,
+    "final_accepted_s_r_previous_b": [
+      0.0014483712600852113,
+      0.023277648103366425,
+      0.1329457539297068
+    ],
+    "actual_TCP_translation_max_m": 0.00332332024803509,
+    "actual_TCP_SO3_max_rad": 0.0054843976588832815,
+    "originalSI_max_all72": 1.0000680839006293e-13,
+    "passedB_global_model_affine_max": 7.269330899563678e-07,
+    "whole_successful_cycle_walls_s": {
+      "n": 34,
+      "mean": 6.550674019205882,
+      "p50": 6.2909538795,
+      "p95": 9.42458966585,
+      "p99": 9.589204488350001,
+      "max": 9.59856395,
+      "missed4ms": 34
+    },
+    "failed_whole_boundary": {
+      "cycle": 34,
+      "trials": 1,
+      "physical_success": 0,
+      "wall": 3.223005734,
+      "missed": 1,
+      "last_error": "",
+      "fatal": "candidate half progress strict domain",
+      "ledger": [
+        72,
+        143,
+        68,
+        34
+      ]
+    },
+    "final_ledger_commits_forecasts_steps_oldslots_separate_slots": [
+      34,
+      143,
+      68,
+      316351398,
+      645313008
+    ]
+  },
+  "firstfailure": {
+    "reason": "candidate half progress strict domain",
+    "sample_zero_based": 263,
+    "cell_zero_based": 17,
+    "within_cell_cycle_source_zero_based": 23,
+    "within_cell_cycle_csv_one_based": 24,
+    "half": 2,
+    "r": -3.469446951953614e-18,
+    "r_exact_binary64": "-2^-58",
+    "forwardRequest": false,
+    "candidateValue_B_C_entered": false,
+    "actual_current34_unchanged": true
+  },
+  "stop_monitor": {
+    "passed": false,
+    "structural_failed": false,
+    "consecutive": 0,
+    "required_actual_halves": 50,
+    "records": [
+      {
+        "actual_half": 1065,
+        "time": 2.129999999999987,
+        "cycle": 32,
+        "half": 1,
+        "maxima": {
+          "v": 0.0004819041120100884,
+          "a": 0.012109483955864697,
+          "w": 0.002527014006838596,
+          "alpha": 0.03526596593634082
+        },
+        "s": 0.0013111383870357486,
+        "r": 0.02243998157978696,
+        "b": 0.15294175393032047,
+        "below": false,
+        "binding_and_derivatives_bitexact": true,
+        "accepted_w_alpha_after_both_halves": true
+      },
+      {
+        "actual_half": 1066,
+        "time": 2.131999999999987,
+        "cycle": 32,
+        "half": 2,
+        "maxima": {
+          "v": 0.0005005927500582489,
+          "a": 0.009811085905157883,
+          "w": 0.002527014006838596,
+          "alpha": 0.03526596593634082
+        },
+        "s": 0.0013563242337031834,
+        "r": 0.022745865087647598,
+        "b": 0.15294175393032047,
+        "below": false,
+        "binding_and_derivatives_bitexact": true,
+        "accepted_w_alpha_after_both_halves": true
+      },
+      {
+        "actual_half": 1067,
+        "time": 2.1339999999999866,
+        "cycle": 33,
+        "half": 1,
+        "maxima": {
+          "v": 0.0005261221330540257,
+          "a": 0.012764691497888371,
+          "w": 0.002663460716556416,
+          "alpha": 0.03411167742945506
+        },
+        "s": 0.001402081855386338,
+        "r": 0.023011756595507013,
+        "b": 0.1329457539297068,
+        "below": false,
+        "binding_and_derivatives_bitexact": true,
+        "accepted_w_alpha_after_both_halves": true
+      },
+      {
+        "actual_half": 1068,
+        "time": 2.1359999999999864,
+        "cycle": 33,
+        "half": 2,
+        "maxima": {
+          "v": 0.000545797527768933,
+          "a": 0.0103501116370586,
+          "w": 0.002663460716556416,
+          "alpha": 0.03411167742945506
+        },
+        "s": 0.0014483712600852113,
+        "r": 0.023277648103366425,
+        "b": 0.1329457539297068,
+        "below": false,
+        "binding_and_derivatives_bitexact": true,
+        "accepted_w_alpha_after_both_halves": true
+      }
+    ],
+    "recorded_C_s_drift_zero_scope": "No below-threshold anchor was established. Zero drift defaults are not measured hold stability or a passed drift test.",
+    "hypothetical_all4_from_first_C_drift": 1.0653842866581442e-05,
+    "hypothetical_all4_from_first_s_drift": 0.00013723287304946274,
+    "accepted_w_alpha_b_scope": "After both actual halves accepted history; physicalv/a and pointlogicals/r remain separate."
+  },
+  "warmup": {
+    "points": 1000,
+    "journal_rows": 3000,
+    "initial_MT19937_seed91011_match": true,
+    "max_abs_v": 0.029928739008387738,
+    "max_abs_acc": 6.6436306091723925,
+    "max_available_abs_jerk": 1357.6628167075585,
+    "first_jerk_unavailable": true,
+    "frame_max": 1.793440987239997e-15,
+    "endhold_gate": true,
+    "recorded_pose_errors_not_independent_FK": [
+      0.0032157093225693213,
+      0.005484296217470531
+    ],
+    "whole_warmup_derivative_acceptance": false
+  },
+  "rank_diagnostics": {
+    "recorded_events": 29,
+    "per_event_independent_KKT_resolve": false,
+    "saved_endpoint_stationarity_complementarity_and_floatLLT_checked": true,
+    "exact_SPD_certificate": false
+  },
+  "resource_source": {
+    "oldSession_cumulative_cap_unchanged": 1024000000,
+    "separate_numeric_cap": 1800000000,
+    "global_trials_cap": 176,
+    "forecasts_cap": 352,
+    "binary_cap_bytes": 17179869184,
+    "cleanup_reserve_bytes": 33554432,
+    "fixedshape_tail_bound_bytes": 16879432,
+    "spent_not_reset_at_cleanup": true,
+    "fixedshape_tail_domain_only": true,
+    "global_derived_prewrite_budget_bytes": 3221225472
+  },
+  "scope_limits": [
+    "No SDK/Model/Scene/FK/native/compiler/optimizer/SSH invoked; this is saved file/source arithmetic.",
+    "Final SOLVED/SI-compliant U is retained evidence only; strict domain rejection remains decisive, with no clip/epsilon repair or forward Request.",
+    "741 base stop factors keep their structure but change physicalv and progress terminal/reward weights;909 includes21x8 acceptedw/r factors. Stop objective is not a physical stop certificate.",
+    "1e-13 planning terminal-r RHS is disclosed; original equality equivalence is not claimed, unchanged originalSI/literal/B/C gates are checked.",
+    "Selected geometry rows/fullB/C saved aggregates checked; full primitive witness roster not independently rerun. Unmeasured failed-point zeros are unavailable.",
+    "Friction branch changes are recorded association only, not proven cause.",
+    "Per-event singular KKT matrices/RHS/solution are not serialized; recorded residuals/source gate and final endpoint arithmetic checked only.",
+    "Fine scopes are nested/provider-only and sample1/256 resets pertrial;72 denominator. Whole failed/successful boundaries include all trials, not last trial only.",
+    "No runtime fault injection/arbitrary resource-exhaustion/power-loss guarantee; cleanup floor applies declared fixedshape/text domain only.",
+    "Four actual stop points fail thresholds;no50-half dwell/no physicalstop/fulltask/realtime/hardware/Phase5 acceptance."
+  ]
+}
