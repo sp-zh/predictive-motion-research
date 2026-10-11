@@ -68,6 +68,10 @@ This image depicts the integrated scene; it is not a predictive-control result.
 
 ## Simulation and diagnostic figures
 
+![Actual enhanced bootstrap warmup V2](../figures/phase5_task_warmup_v2_20261010/actual_warmup.png)
+
+Recorded seed91011 V2 bootstrap adds3000 durable events and actual TCP/armframe checks. Independent normal-run audit passes these records and the original end hold gates. Startup derivatives remain above task thresholds; no task commands were committed. No fault-injection or full controller acceptance is claimed. [Provenance](../figures/phase5_task_warmup_v2_20261010/provenance.json), [independent audit](../reviews/evidence/phase5_task_warmup_v2_20261010/independent/review.md).
+
 ![Actual task initialization and held-target warmup](../figures/phase5_task_warmup_v1_20261010/actual_warmup.png)
 
 Actual seed91011 bootstrap: 1000 recorded2ms steps, full configured geometry and actual derivative history. End hold contact/clearance/speed gates pass; startup acceleration and jerk exceed task limits. First jerk is unavailable. Task control cycles remain0. Four V1 observer/journal gaps remain recorded and are being repaired separately; this is not a completed controller task or Phase5 acceptance. The original V1 figure had incorrect unlabeled±100 jerk markers; this fresh render uses the unchanged±500rad/s³ task threshold and preserves all original data/figures in the archive. [Provenance](../figures/phase5_task_warmup_v1_20261010/provenance.json), [retained actual audit](../reviews/evidence/phase5_task_warmup_v1_20261010/WARMUP_AUDIT.json).

@@ -1,0 +1,4 @@
+  File "/private/tmp/root_independent_task_warmup_v2_review_20261010/audit_warmup_v2.py", line 76
+    expected=p['a']+p['j']+[float(p['jerk_available']),1.,1.,p['true'],p['cover'],float(p['queries']),p['tcp_frame_error'],p['arm_frame_error']
+                           ^
+SyntaxError: '[' was never closed

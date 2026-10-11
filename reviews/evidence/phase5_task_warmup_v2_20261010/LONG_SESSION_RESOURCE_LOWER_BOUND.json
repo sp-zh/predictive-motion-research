@@ -1,0 +1,46 @@
+{
+  "schema": "ROOT_LONG_SESSION_RESOURCE_LOWER_BOUND_V1",
+  "scope": "Pure arithmetic on current frozen resource formulas and active source; no Model/solver/plant invocation. Lower bound only, excluding normalization/inlineQP/scaling/temporary/output charges.",
+  "source_pins": {
+    "tools/phase5_public_live_affine_v2/foundation.hpp": {
+      "bytes": 16063,
+      "sha256": "ee673d71ea3824aa41647ff2254ebcee477a091c817d1b3e21d398ace11cd8e2"
+    },
+    "tools/phase5_public_live_affine_v2/foundation_resources.cpp": {
+      "bytes": 16952,
+      "sha256": "3a83eddf893b77e1fe67c03de32292431cd0ce273934e479f9c238a25113ca49"
+    },
+    "tools/phase5_active_session_v1/model_boundary.cpp": {
+      "bytes": 14091,
+      "sha256": "04c94821ee57669431b8c7bceac1d66004fdfc8af11424008e89890a7486630a"
+    },
+    "tools/phase5_active_session_b_value_v1/model_boundary.cpp": {
+      "bytes": 20505,
+      "sha256": "271c8f3ba8226561ad5dae7499b12f3fb9127e1855c165346e57127d43b3bcbb"
+    }
+  },
+  "fixed_mesh": {
+    "cells": 20,
+    "macrocycles": 200,
+    "physical_samples": 400
+  },
+  "raw_result_slots": 1541030,
+  "resident_sdk_allowance_slots": 5623090,
+  "minimum_forecast_charge_per_cycle": 1541309,
+  "prototype_candidate_value_reserved_charge_per_cycle": 1541270,
+  "current_batch_ceiling_slots": 1024000000,
+  "full_s1_task_minimum_4ms_cycles": 1250,
+  "max_forecasts_using_only_raw_and_one_resident": 660,
+  "max_forecast_plus_candidate_cycles_using_only_raw_and_two_residents": 328,
+  "raw_only_forecast_lower_bound_1250cycles": 1932259340,
+  "raw_only_forecast_plus_value_lower_bound_1250cycles": 3864469930,
+  "decision": "Current batch cannot support a complete s=1 task even ignoring all other costs. Preserve original frozen budget; implement and review a separate prospectively bounded long-session policy/ledger with persistent nonrefunding totals, peak live allocations, temporaries/output and stop reserve before repeated task execution. No caller reset of old cumulative ledger per cycle.",
+  "available_storage_observation_GiB": {
+    "Mac_data_volume": 149,
+    "Dell_native_linux": 932,
+    "Dell_D_NTFS": 118
+  },
+  "storage_qualification": "df available space observed2026-10-10; dynamic, must recheck before large task outputs. Large evidence stays out ofGit and needs archives/verified location manifests.",
+  "phase5": "NOT_ACCEPTED",
+  "phase6": "NOT_STARTED"
+}

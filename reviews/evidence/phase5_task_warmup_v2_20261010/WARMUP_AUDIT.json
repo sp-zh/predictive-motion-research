@@ -1,0 +1,66 @@
+{
+  "schema": "ACTUAL_WARMUP_INDEPENDENT_FILE_AUDIT_V1",
+  "input_sha256": "ddfe59b603e0caa2ef85b0bb3e3e14a75e4f57a639cc22f8bad2fda249802901",
+  "seed": 91011,
+  "actual_substeps": 1000,
+  "simulation_time": 2.0000000000000013,
+  "stage": "COMPLETE_DECLARED_ACTUAL_WARMUP_NO_TASK_COMMIT",
+  "end_contacts": 0,
+  "end_minimum_true_m": 0.01558975221624639,
+  "end_minimum_cover_m": 0.022112112220012935,
+  "end_max_velocity_rad_s": 9.680608756091955e-06,
+  "actual_final_acceleration_rad_s2": [
+    1.148336051085219e-08,
+    -2.5956717947797526e-05,
+    3.4237807424845845e-07,
+    1.7558074828400348e-06,
+    -5.1989740987056865e-08,
+    1.2468979099335955e-07,
+    -7.369428879322151e-10
+  ],
+  "actual_TCP_position_start_error_m": 0.0032157093225693213,
+  "actual_TCP_rotation_start_error_rad": 0.005484296217470531,
+  "initial_q": [
+    -1.245765748910091,
+    0.09664780639474282,
+    1.1546321286355201,
+    -2.7819779781855476,
+    -0.09755087623640622,
+    4.385246703649958,
+    -1.6281268331277312
+  ],
+  "all_observer_bitguards": true,
+  "maximum_tcp_frame_error": 1.793440987239997e-15,
+  "maximum_arm_frame_error": 1.5385483651880288e-15,
+  "geometry_queries_per_point": [
+    9035
+  ],
+  "first_jerk_unavailable": true,
+  "maximum_recorded_acceleration_rad_s2": 6.6436306091723925,
+  "maximum_available_jerk_rad_s3": 1357.6628167075585,
+  "max_contacts_any_step": 0,
+  "warning_counts_last": [
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0
+  ],
+  "task_cycles": 0,
+  "Model_calls": 0,
+  "candidate_calls": 0,
+  "task_commits": 0,
+  "phase5": "NOT_ACCEPTED",
+  "scope": "Actual task initialization/hold warmup only; startup acceleration/jerk shown, no controller performance acceptance.",
+  "durable_journal": {
+    "bytes": 1813021,
+    "sha256": "eea9da2c74e5b8e20776e7e0df04e8926c9ab278117fcce5c9fb03ac16927313",
+    "events": 3000,
+    "complete_newline": true,
+    "full_point_correspondence": true,
+    "missing_return_semantics": "UNKNOWN actual native entry/advance; never infer0steps"
+  }
+}

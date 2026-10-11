@@ -1,0 +1,40 @@
+{
+  "schema": "ROOT_TASK_WARMUP_V2_STORAGE_CHECKPOINT",
+  "scope": "Actual repair7 normal bootstrap/component source, raw1000records/3000linejournal, complete343file packet, Root32file independent review, inspected figure and long-session resource lower bound. No later task-startA/Model/QP/controlcommit.",
+  "Mac": {
+    "schema": "ACTUAL_TASK_WARMUP_V2_ARCHIVE_READY_V1",
+    "archive": "/Users/uot/Documents/ChatGPT/ros/results/phase5-reference/task-warmup-v2-20261010/root-archive1/task-warmup-v2.tar.gz",
+    "archive_bytes": 3294824,
+    "archive_sha256": "d7ceeca9a5f547231e764a668a7374cb8a318df74b032f2f0053207237bc9d11",
+    "manifest_sha256": "7f349365826c050e75848c581dbe46842cfa5eebfd562c108acecdc3bd22cfbb",
+    "regular_members": 430,
+    "payloads": 429,
+    "payload_bytes": 9581800,
+    "Mac_all_payloads_verified": true,
+    "Dell_copy_verified": false,
+    "phase5": "NOT_ACCEPTED",
+    "phase6": "NOT_STARTED"
+  },
+  "Dell_readback": {
+    "schema": "ROOT_TASK_WARMUP_V2_DELL_FULL_READBACK",
+    "archive": "/mnt/d/CodexTransfer/projects/predictive_motion/checkpoints/task-warmup-v2-20261010-root1/task-warmup-v2.tar.gz",
+    "archive_bytes": 3294824,
+    "archive_sha256": "d7ceeca9a5f547231e764a668a7374cb8a318df74b032f2f0053207237bc9d11",
+    "ready_sha256": "9fa6cd0457ce2b52f35fc5c9db79d1d4fe60ecd206493b7e0f1befeebf21b69e",
+    "manifest_sha256": "7f349365826c050e75848c581dbe46842cfa5eebfd562c108acecdc3bd22cfbb",
+    "regular_members_verified": 430,
+    "payloads_verified": 429,
+    "all_payloads_verified": true,
+    "observed_mode": 365,
+    "observed_uid": 1000,
+    "observed_gid": 1000,
+    "qualification": "NTFS POSIX sealing/ownership change not asserted; no chmod attempted."
+  },
+  "archive_ready_sha256": "9fa6cd0457ce2b52f35fc5c9db79d1d4fe60ecd206493b7e0f1befeebf21b69e",
+  "Mac_payload_sealed_readonly": true,
+  "Dell_NTFS_POSIX_immutable_claim": false,
+  "native_binary_cache_qualification": "Native ELF/dependency binaries not copied toMacaggregate; actual identities/paths retained.",
+  "source_snapshot_scope": "Archive precedes this final smallstorage record; every archivedbyte identity isverified.",
+  "phase5": "NOT_ACCEPTED",
+  "phase6": "NOT_STARTED"
+}

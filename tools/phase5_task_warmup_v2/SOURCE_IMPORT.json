@@ -1,0 +1,29 @@
+{
+  "schema": "ROOT_TASK_WARMUP_V2_SOURCE_IMPORT",
+  "packet_ready_sha256": "688d70570dd2f92a65f40bb71f7a1459c97c6eb4640aee7c18f654d4e7dd96a7",
+  "source_manifest_sha256": "fa0d10fb1a0e05cf397d7a98a1720b1850a362bfef14f52553cfedea9cf62704",
+  "files": {
+    "runtime_observer.cpp": {
+      "bytes": 17215,
+      "sha256": "9bbbe145f0cfa78c24f1d2b56008b065f1f3838ee54fa727eb76a88578fb607f"
+    },
+    "runtime_observer.hpp": {
+      "bytes": 5472,
+      "sha256": "0e0ef9cfe8bc1c8a5bb38327148110dd6db4ebfe4e2ba479de8d1d78175941c8"
+    },
+    "active_task_warmup.cpp": {
+      "bytes": 7003,
+      "sha256": "fe239e7b389788ad9d091c0261f929fdd6ef1e3a0611c8ba286864b27a7ee431"
+    },
+    "lossless_evidence.cpp": {
+      "bytes": 17427,
+      "sha256": "e75fbf554668c8dbc91bcb8fd3396f784a15795c4502a9f5865aea241eb4814f"
+    },
+    "lossless_evidence.hpp": {
+      "bytes": 1943,
+      "sha256": "3f08adbda6f4fba1b81ddcbce990b62b55071967d0dbcc9652ecbca0afdd8b84"
+    }
+  },
+  "scope": "Five bootstrap source files from actualrepair7, full21source/archive separate; not wholecanonicalA16 overwrite or portable/coherent integratedbuild claim.",
+  "phase5": "NOT_ACCEPTED"
+}
