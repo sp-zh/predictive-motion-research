@@ -1,0 +1,40 @@
+/home/codextransfer/predictive_motion/results/phase5/session-actual-task-metrics-three-cycle-v1-20261011-attempt31/src/lossless_evidence.cpp: In lambda function:
+/home/codextransfer/predictive_motion/results/phase5/session-actual-task-metrics-three-cycle-v1-20261011-attempt31/src/lossless_evidence.cpp:57:2: warning: this 'for' clause does not guard... [-Wmisleading-indentation]
+   57 |  for(double a:c.previous_alpha)f.number(a);f.number(p.previous_b);
+      |  ^~~
+/home/codextransfer/predictive_motion/results/phase5/session-actual-task-metrics-three-cycle-v1-20261011-attempt31/src/lossless_evidence.cpp:57:44: note: ...this statement, but the latter is misleadingly indented as if it were guarded by the 'for'
+   57 |  for(double a:c.previous_alpha)f.number(a);f.number(p.previous_b);
+      |                                            ^
+/home/codextransfer/predictive_motion/results/phase5/session-actual-task-metrics-three-cycle-v1-20261011-attempt31/src/lossless_evidence.cpp: In lambda function:
+/home/codextransfer/predictive_motion/results/phase5/session-actual-task-metrics-three-cycle-v1-20261011-attempt31/src/lossless_evidence.cpp:82:2: warning: this 'for' clause does not guard... [-Wmisleading-indentation]
+   82 |  for(double x:source.actualContext().previousAlpha())f.number(x);f.number(source.actualContext().previousB());
+      |  ^~~
+/home/codextransfer/predictive_motion/results/phase5/session-actual-task-metrics-three-cycle-v1-20261011-attempt31/src/lossless_evidence.cpp:82:66: note: ...this statement, but the latter is misleadingly indented as if it were guarded by the 'for'
+   82 |  for(double x:source.actualContext().previousAlpha())f.number(x);f.number(source.actualContext().previousB());
+      |                                                                  ^
+/home/codextransfer/predictive_motion/results/phase5/session-actual-task-metrics-three-cycle-v1-20261011-attempt31/src/lossless_evidence.cpp:90:3: warning: this 'for' clause does not guard... [-Wmisleading-indentation]
+   90 |   for(const auto* v:{&s.q,&s.v,&s.C,&s.w,&s.friction.force})f.vector(*v);f.u64(s.friction.branches.size());for(int x:s.friction.branches)f.u64(static_cast<std::uint64_t>(static_cast<std::int64_t>(x)));
+      |   ^~~
+/home/codextransfer/predictive_motion/results/phase5/session-actual-task-metrics-three-cycle-v1-20261011-attempt31/src/lossless_evidence.cpp:90:74: note: ...this statement, but the latter is misleadingly indented as if it were guarded by the 'for'
+   90 |   for(const auto* v:{&s.q,&s.v,&s.C,&s.w,&s.friction.force})f.vector(*v);f.u64(s.friction.branches.size());for(int x:s.friction.branches)f.u64(static_cast<std::uint64_t>(static_cast<std::int64_t>(x)));
+      |                                                                          ^
+/home/codextransfer/predictive_motion/results/phase5/session-actual-task-metrics-three-cycle-v1-20261011-attempt31/src/lossless_evidence.cpp: In lambda function:
+/home/codextransfer/predictive_motion/results/phase5/session-actual-task-metrics-three-cycle-v1-20261011-attempt31/src/lossless_evidence.cpp:109:2: warning: this 'for' clause does not guard... [-Wmisleading-indentation]
+  109 |  for(auto x:{r.workspace_reused,r.matrix_updated,r.dual_reused})f.u64(x);f.u64(r.dual_mapped_rows);f.text(r.reset_reason);f.u64(r.hessian_nonzeros);f.u64(r.constraint_nonzeros);f.u64(r.rho_updates);f.u64(r.polish_status);
+      |  ^~~
+/home/codextransfer/predictive_motion/results/phase5/session-actual-task-metrics-three-cycle-v1-20261011-attempt31/src/lossless_evidence.cpp:109:74: note: ...this statement, but the latter is misleadingly indented as if it were guarded by the 'for'
+  109 |  for(auto x:{r.workspace_reused,r.matrix_updated,r.dual_reused})f.u64(x);f.u64(r.dual_mapped_rows);f.text(r.reset_reason);f.u64(r.hessian_nonzeros);f.u64(r.constraint_nonzeros);f.u64(r.rho_updates);f.u64(r.polish_status);
+      |                                                                          ^
+/home/codextransfer/predictive_motion/results/phase5/session-actual-task-metrics-three-cycle-v1-20261011-attempt31/src/lossless_evidence.cpp:113:3: warning: this 'for' clause does not guard... [-Wmisleading-indentation]
+  113 |   for(double x:{p->s_next,p->r_next,p->b,p->progress_jerk})f.number(x);for(double x:p->half_s_reference)f.number(x);for(double x:p->half_r_reference)f.number(x);f.u64(p->from.completed_tick);f.u64(p->from.completed_command_sequence);}
+      |   ^~~
+/home/codextransfer/predictive_motion/results/phase5/session-actual-task-metrics-three-cycle-v1-20261011-attempt31/src/lossless_evidence.cpp:113:72: note: ...this statement, but the latter is misleadingly indented as if it were guarded by the 'for'
+  113 |   for(double x:{p->s_next,p->r_next,p->b,p->progress_jerk})f.number(x);for(double x:p->half_s_reference)f.number(x);for(double x:p->half_r_reference)f.number(x);f.u64(p->from.completed_tick);f.u64(p->from.completed_command_sequence);}
+      |                                                                        ^~~
+/home/codextransfer/predictive_motion/results/phase5/session-actual-task-metrics-three-cycle-v1-20261011-attempt31/src/lossless_evidence.cpp: In member function 'void phase5_active_evidence_v1::Evidence::finish(const std::string&, const std::string&, bool)':
+/home/codextransfer/predictive_motion/results/phase5/session-actual-task-metrics-three-cycle-v1-20261011-attempt31/src/lossless_evidence.cpp:120:2: warning: this 'for' clause does not guard... [-Wmisleading-indentation]
+  120 |  for(const auto& r:receipts_)o<<YAML::BeginMap<<YAML::Key<<"file"<<YAML::Value<<r.file<<YAML::Key<<"role"<<YAML::Value<<r.role<<YAML::Key<<"bytes"<<YAML::Value<<r.bytes<<YAML::Key<<"sha256"<<YAML::Value<<r.sha256<<YAML::Key<<"created"<<YAML::Value<<r.created<<YAML::Key<<"hash_valid"<<YAML::Value<<r.hash_valid<<YAML::Key<<"complete"<<YAML::Value<<r.complete<<YAML::Key<<"error"<<YAML::Value<<r.error<<YAML::EndMap;o<<YAML::EndSeq<<YAML::EndMap;
+      |  ^~~
+/home/codextransfer/predictive_motion/results/phase5/session-actual-task-metrics-three-cycle-v1-20261011-attempt31/src/lossless_evidence.cpp:120:416: note: ...this statement, but the latter is misleadingly indented as if it were guarded by the 'for'
+  120 |  for(const auto& r:receipts_)o<<YAML::BeginMap<<YAML::Key<<"file"<<YAML::Value<<r.file<<YAML::Key<<"role"<<YAML::Value<<r.role<<YAML::Key<<"bytes"<<YAML::Value<<r.bytes<<YAML::Key<<"sha256"<<YAML::Value<<r.sha256<<YAML::Key<<"created"<<YAML::Value<<r.created<<YAML::Key<<"hash_valid"<<YAML::Value<<r.hash_valid<<YAML::Key<<"complete"<<YAML::Value<<r.complete<<YAML::Key<<"error"<<YAML::Value<<r.error<<YAML::EndMap;o<<YAML::EndSeq<<YAML::EndMap;
+      |                                                                                                                                                                                                                                                                                                                                                                                                                                ^

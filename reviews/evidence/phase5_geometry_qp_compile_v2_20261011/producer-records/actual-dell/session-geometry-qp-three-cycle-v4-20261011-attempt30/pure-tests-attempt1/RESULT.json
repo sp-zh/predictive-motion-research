@@ -1,0 +1,36 @@
+{
+  "records": [
+    {
+      "name": "owner_binding_tests",
+      "exe_sha256": "8300faa65c6a72008d6d72aa135893cdddcd683b797df13846a7301e5c5005fb",
+      "exit": 0,
+      "wall_seconds": 0.01497265198850073,
+      "actual_Session": 0,
+      "Model": 0,
+      "MuJoCo_step": 0,
+      "commits": 0
+    },
+    {
+      "name": "cycle_support_tests",
+      "exe_sha256": "61c240a83592991eec8aed775839fad9fe76cd3e042dc02b014a08f746049630",
+      "exit": 0,
+      "wall_seconds": 0.010062626999570057,
+      "actual_Session": 0,
+      "Model": 0,
+      "MuJoCo_step": 0,
+      "commits": 0
+    },
+    {
+      "name": "current_numeric_tests",
+      "exe_sha256": "b235089ec6c2270dc7024c9126afcf94d968e04456849782d1c76eecc8d37c88",
+      "exit": 0,
+      "wall_seconds": 0.0016703360015526414,
+      "actual_Session": 0,
+      "Model": 0,
+      "MuJoCo_step": 0,
+      "commits": 0
+    }
+  ],
+  "complete": true,
+  "scope": "Pure codecs and arithmetic only; owner test lacks explicit weak.expired assertion; no actual foreign SDK Session negative control"
+}

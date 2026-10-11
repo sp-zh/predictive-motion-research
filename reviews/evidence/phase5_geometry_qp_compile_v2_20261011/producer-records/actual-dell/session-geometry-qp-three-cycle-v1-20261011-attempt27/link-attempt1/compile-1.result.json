@@ -1,0 +1,91 @@
+{
+  "kind": "compile",
+  "index": 1,
+  "argv": [
+    "/usr/bin/x86_64-linux-gnu-g++-13",
+    "/home/codextransfer/predictive_motion/results/phase5/session-geometry-qp-three-cycle-v1-20261011-attempt27/build-attempt1/unit-1.o",
+    "/home/codextransfer/predictive_motion/results/phase5/session-geometry-qp-three-cycle-v1-20261011-attempt27/build-attempt1/unit-2.o",
+    "/home/codextransfer/predictive_motion/results/phase5/session-geometry-qp-three-cycle-v1-20261011-attempt27/build-attempt1/unit-3.o",
+    "/home/codextransfer/predictive_motion/results/phase5/session-geometry-qp-three-cycle-v1-20261011-attempt27/build-attempt1/unit-4.o",
+    "/home/codextransfer/predictive_motion/results/phase5/session-geometry-qp-three-cycle-v1-20261011-attempt27/build-attempt1/unit-5.o",
+    "/home/codextransfer/predictive_motion/results/phase5/session-geometry-qp-three-cycle-v1-20261011-attempt27/build-attempt1/unit-6.o",
+    "/home/codextransfer/predictive_motion/results/phase5/session-geometry-qp-three-cycle-v1-20261011-attempt27/build-attempt1/unit-7.o",
+    "/home/codextransfer/predictive_motion/results/phase5/session-geometry-qp-three-cycle-v1-20261011-attempt27/build-attempt1/unit-9.o",
+    "/home/codextransfer/predictive_motion/results/phase5/session-geometry-qp-three-cycle-v1-20261011-attempt27/build-attempt1/unit-8.o",
+    "/home/codextransfer/predictive_motion/results/phase5/session-task-start-a-primaldual-v2-20261010-attempt5/build-attempt1/unit-9.o",
+    "/home/codextransfer/predictive_motion/results/phase5/integrated-first-cycle-v1-20261010/build-attempt1/unit-7.o",
+    "-Wl,--start-group",
+    "/home/codextransfer/predictive_motion/install/predictive_motion_kinematics/lib/librobot_kinematics.a",
+    "/home/codextransfer/predictive_motion/.vendor/osqp-1.0.0-install/lib/libosqpstatic.a",
+    "/home/codextransfer/predictive_motion/results/phase5/repaired-source-configure-only-after-v4-20261009/attempt1/build/inventory-source/input-source/cost-source/affine-source/normalized-source/model-boundary/live-foundation/libpublic_live_affine_v2_foundation.a",
+    "/home/codextransfer/predictive_motion/results/phase5/repaired-source-configure-only-after-v4-20261009/attempt1/build/inventory-source/input-source/cost-source/affine-source/normalized-source/model-boundary/frozen-extension/libpublic_coupled_augmented_extension.a",
+    "/home/codextransfer/predictive_motion/results/phase5/repaired-source-configure-only-after-v4-20261009/attempt1/build/inventory-source/input-source/cost-source/affine-source/normalized-source/model-boundary/frozen-extension/libfrozen_augmented_extension_value.a",
+    "/home/codextransfer/predictive_motion/results/phase5/repaired-source-configure-only-after-v4-20261009/attempt1/build/inventory-source/input-source/cost-source/affine-source/normalized-source/model-boundary/frozen-extension/physical-derivative/libpublic_coupled_derivative_model.a",
+    "/home/codextransfer/predictive_motion/results/phase5/repaired-source-configure-only-after-v4-20261009/attempt1/build/inventory-source/input-source/cost-source/affine-source/normalized-source/model-boundary/frozen-extension/physical-derivative/base-v2/libpublic_coupled_model_v2.a",
+    "-Wl,--end-group",
+    "/home/codextransfer/predictive_motion/.vendor/mujoco-3.3.7/lib/libmujoco.so",
+    "/usr/lib/x86_64-linux-gnu/libcrypto.so",
+    "/usr/lib/x86_64-linux-gnu/libyaml-cpp.so",
+    "/opt/ros/jazzy/lib/x86_64-linux-gnu/libpinocchio_default.so.4.1.0",
+    "/opt/ros/jazzy/lib/x86_64-linux-gnu/libpinocchio_collision.so.4.1.0",
+    "/opt/ros/jazzy/lib/x86_64-linux-gnu/libpinocchio_parsers.so.4.1.0",
+    "/usr/lib/x86_64-linux-gnu/libboost_serialization.so.1.83.0",
+    "/usr/lib/x86_64-linux-gnu/libboost_filesystem.so.1.83.0",
+    "/opt/ros/jazzy/lib/x86_64-linux-gnu/libcoal.so.3.0.3",
+    "-ldl",
+    "-pthread",
+    "-Wl,--disable-new-dtags",
+    "-Wl,-rpath,/home/codextransfer/predictive_motion/.vendor/mujoco-3.3.7/lib:/opt/ros/jazzy/lib/x86_64-linux-gnu:/opt/ros/jazzy/lib:/usr/lib/x86_64-linux-gnu",
+    "-Wl,-Map,/home/codextransfer/predictive_motion/results/phase5/session-geometry-qp-three-cycle-v1-20261011-attempt27/link-attempt1/active_first_cycle.map",
+    "-o",
+    "/home/codextransfer/predictive_motion/results/phase5/session-geometry-qp-three-cycle-v1-20261011-attempt27/link-attempt1/active_first_cycle"
+  ],
+  "stage": "CHILD_EXIT_REAPED",
+  "actual_project_tool_entry": "Popen started; exit retained, compiler/link success only if exit0",
+  "exit": 0,
+  "first_error": null,
+  "applied_limits": {
+    "CPU": {
+      "inherited_soft": -1,
+      "inherited_hard": -1,
+      "applied_soft": 120,
+      "applied_hard": 120
+    },
+    "AS": {
+      "inherited_soft": -1,
+      "inherited_hard": -1,
+      "applied_soft": 2147483648,
+      "applied_hard": 2147483648
+    },
+    "CORE": {
+      "inherited_soft": 0,
+      "inherited_hard": -1,
+      "applied_soft": 0,
+      "applied_hard": 0
+    },
+    "FSIZE": {
+      "inherited_soft": -1,
+      "inherited_hard": -1,
+      "applied_soft": 268435456,
+      "applied_hard": 268435456
+    },
+    "NOFILE": {
+      "inherited_soft": 1024,
+      "inherited_hard": 1048576,
+      "applied_soft": 64,
+      "applied_hard": 64
+    },
+    "NPROC": {
+      "inherited_soft": 63295,
+      "inherited_hard": 63295,
+      "applied_soft": 32,
+      "applied_hard": 32
+    }
+  },
+  "observed_stream_bytes": {
+    "stdout": 0,
+    "stderr": 0
+  },
+  "stop_reason": null,
+  "wall_seconds": 0.3893659120076336
+}

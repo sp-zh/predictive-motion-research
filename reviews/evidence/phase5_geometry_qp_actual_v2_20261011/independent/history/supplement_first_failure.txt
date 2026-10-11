@@ -1,0 +1,14 @@
+Traceback (most recent call last):
+  File "/private/tmp/root_independent_geometry_qp_actual_review_20261011/audit_supplement.py", line 43, in <module>
+    plan=json.loads(a.pin(PACK/'phase5_geometry_qp_runtime_profile_v2_20261011/active_run_plan.json'));runtime_in=a.pin(UNIT/'profile-version1/active_input.json');producer=json.loads(a.pin(UNIT/'profile-version1/PRODUCER.json'));dispatch=json.loads(a.pin(RUN/'BATCH_PREFIX.json'));release=json.loads(a.pin(PACK/'ROOT_ONE_GEOMETRY_THREE_CYCLE_RELEASE.json'))
+                    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/private/tmp/root_independent_geometry_qp_actual_review_20261011/audit_geometry_qp_actual.py", line 13, in pin
+    b=p.read_bytes();s=hashlib.sha256(b).hexdigest()
+      ^^^^^^^^^^^^^^
+  File "/Users/uot/.cache/codex-runtimes/codex-primary-runtime/dependencies/python/lib/python3.12/pathlib.py", line 1019, in read_bytes
+    with self.open(mode='rb') as f:
+         ^^^^^^^^^^^^^^^^^^^^
+  File "/Users/uot/.cache/codex-runtimes/codex-primary-runtime/dependencies/python/lib/python3.12/pathlib.py", line 1013, in open
+    return io.open(self, mode, buffering, encoding, errors, newline)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+FileNotFoundError: [Errno 2] No such file or directory: '/private/tmp/phase5_geometry_qp_actual_checkpoint_v1_20261011/phase5_geometry_qp_runtime_profile_v2_20261011/active_run_plan.json'

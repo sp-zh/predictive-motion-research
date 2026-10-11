@@ -1,0 +1,53 @@
+{
+  "verdict": "PASS_NARROW_FINAL_SOURCE30_PROFILE_STATIC_CONTRACT_NO_RUNTIME_RELEASE",
+  "source_READY_sha256": "0723f9efddc1349192f03631c4626450cbc4bea823cfa51af22343f05fd54e6d",
+  "source_payloads": 36,
+  "source_bytes": 425177,
+  "profile_READY_sha256": "c2b0dda9f38005a17e0385b948a7725fcd1b9d60c30ff34d80267d5fe0f288b7",
+  "profile_payloads": 10,
+  "profile_bytes": 941334,
+  "metadata": {
+    "source_payloads": 36,
+    "profile_payloads": 10,
+    "runtime_pin_metadata_records": 1701,
+    "unique_requested_paths": 1672,
+    "duplicate_consistent_identity_requests": 29,
+    "producer_record": {
+      "path": "/home/codextransfer/predictive_motion/results/phase5/session-geometry-qp-three-cycle-v4-20261011-attempt30/link-attempt1/active_first_cycle",
+      "bytes": 19751536,
+      "sha256": "19f6a2a49ca857b36b17d543100a7d935d1c6ce67e068c64e2e9f42deb1fd94e"
+    },
+    "scope": "frozen localfile hash and metadata consistency, not actual live1701passive readback or runtime proof"
+  },
+  "prior_source_unchanged": {
+    "normalization.cpp": true,
+    "affine_assembly.cpp": true,
+    "integrated_horizon_qp.cpp": true,
+    "candidate_validation.cpp": true,
+    "current_numeric_guess.hpp": true,
+    "solver_forensics.cpp": true
+  },
+  "finding_resolution": {
+    "owner_designation": "Closed in source: true private SessionStorage weakcontrolblock bound once before forecasts; no IDs/booleans/raw wrapper address as owner proof",
+    "geometry": "Designatedweak Session match plusSession ownsforecast/activity/currentSnapshot bits/integration guards",
+    "connected_forecast": "Closed final delta: connected.complete then private forecast authenticOwner and active designatedweak checked before validationlatch/Scene/assessment/token",
+    "candidate_value_token": "Private valueauthenticOwner matches designatedweak atvalidation and commit; value active required",
+    "lifetime": "Session destructor latches terminated only, retainedstorage does not keep forecast/value active; no terminationverification fabrication"
+  },
+  "math_and_scope": {
+    "physicalq_absoluteU_geometry_row": "g*Mq and d_nom+g*(cq-qnom), original m-unit bounds/1600compoundsupports\u219214756SI",
+    "objective": "Core unchanged; same current nominal/task implies sameF/f/H/g/cost, everynewcurrent rebuild remains mandatory",
+    "fullgates": "NativeSOLVED/all14756originalSI/strict200/B400/privateC2 remain mandatory; legacy13156human strings not actualdimensions",
+    "budgets": "Per-cycle geometry200k +additionalinline1600*162 slots; total26755239<48M separatelogical, originalSession1.024Bnotreset; provider1400/20M/40k/20k separatefromwarm/B/C counters",
+    "finiteprofile": "Atmost warm1000+threecurrent\u03b20/smallalpha transactions,6forecasts/6actualsteps/3commits, freshattempt30 only"
+  },
+  "limitations": [
+    "Local source/profile36+10 verified twice and metadata1701 records crosschecked; Root separately performs livepassive1701/ELF/SDK/input validation before any release.",
+    "14TU/5ELF/threepure PASS are declared build/profile receipts, not independently executed by reviewer here. Compilecheckpointbackup remainsRootscope.",
+    "owner pure tests check identity codec aliases/foreignsamevalue/once/empty; postreset foreign-negative does not explicitly assert weakexpiry, so no actual released-owner lifetime test or SDKforeignSessionnegative claim.",
+    "Private bind is designation/freshness, not universal callerSHA/config authenticity; actualentry literalModel include/pins support is preserved.",
+    "Legacy numericaldigest covers matrix/bound bytes but notsemanticlabels; fresh current derive has no oldsemantic-roster cache.",
+    "No Scene/FK/Model/native/compiler/new optimizer/SSH calls, no currentcandidate/runtime/task/safety/stop/realtime/Phase5 acceptance.",
+    "Prior32/29draftfindings andoldactual failures remain preserved; finalsource fixes do not retroactively establish an oldruntimebug."
+  ]
+}

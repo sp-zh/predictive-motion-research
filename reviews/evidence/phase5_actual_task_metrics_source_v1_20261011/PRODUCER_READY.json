@@ -1,0 +1,862 @@
+{
+  "schema": "ACTUAL_TASK_METRICS_COMPILE_PURE_CHECKPOINT_V1",
+  "native_control_invocations": 0,
+  "files": {
+    "INTERFACE_REVIEW.md": {
+      "bytes": 537,
+      "sha256": "236f0a012217a7360fac09c75afd208275d5bbd9023c2ea7f7c6d7b095547a85"
+    },
+    "SCOPE.md": {
+      "bytes": 993,
+      "sha256": "5bcbc39ee8427ec81a86ac7b09a367e7db4a9a0b45e0ad008d2eefad0b992f65"
+    },
+    "actual-dell/NATIVE_ELF_INDEX.json": {
+      "bytes": 311,
+      "sha256": "4698131d7905a2f5eff42628403aeb3ae863c48291717386451c61af00ab328a"
+    },
+    "actual-dell/session-actual-task-metrics-three-cycle-v1-20261011-attempt31/build-attempt1/AFTER_INPUT_IDENTITIES.json": {
+      "bytes": 16515,
+      "sha256": "2d29b595ebc6d1a7278f0e3392d5f81519cc8f9310de3cf80befd64f77ded2ea"
+    },
+    "actual-dell/session-actual-task-metrics-three-cycle-v1-20261011-attempt31/build-attempt1/AFTER_READONLY_ROSTERS.json": {
+      "bytes": 3,
+      "sha256": "37517e5f3dc66819f61f5a7bb8ace1921282415f10551d2defa5c3eb0985b570"
+    },
+    "actual-dell/session-actual-task-metrics-three-cycle-v1-20261011-attempt31/build-attempt1/BATCH_PREFIX.json": {
+      "bytes": 86294,
+      "sha256": "aa4a244f7a5e86a5dc6610f387b435817ab92d589978fa697443749bbdb0ccb5"
+    },
+    "actual-dell/session-actual-task-metrics-three-cycle-v1-20261011-attempt31/build-attempt1/BEFORE_INPUT_IDENTITIES.json": {
+      "bytes": 16515,
+      "sha256": "2d29b595ebc6d1a7278f0e3392d5f81519cc8f9310de3cf80befd64f77ded2ea"
+    },
+    "actual-dell/session-actual-task-metrics-three-cycle-v1-20261011-attempt31/build-attempt1/BEFORE_READONLY_ROSTERS.json": {
+      "bytes": 3,
+      "sha256": "37517e5f3dc66819f61f5a7bb8ace1921282415f10551d2defa5c3eb0985b570"
+    },
+    "actual-dell/session-actual-task-metrics-three-cycle-v1-20261011-attempt31/build-attempt1/BUILD_RESULT.json": {
+      "bytes": 86348,
+      "sha256": "4656f405c2d5abd0bdc755d1abd98a4207623ad61a6785c976dfa89bcb2362f0"
+    },
+    "actual-dell/session-actual-task-metrics-three-cycle-v1-20261011-attempt31/build-attempt1/CONTROL_EVENT_PREFIX.json": {
+      "bytes": 4476,
+      "sha256": "8b2991496fa0b21b944f6648c3756c7480c7d03df9d4149aa7c5c46c58fb959d"
+    },
+    "actual-dell/session-actual-task-metrics-three-cycle-v1-20261011-attempt31/build-attempt1/compile-1.result.json": {
+      "bytes": 5221,
+      "sha256": "dcad67a278862fd2f8522a988fa74395a42e07a656ff2d35e265357d7560dfad"
+    },
+    "actual-dell/session-actual-task-metrics-three-cycle-v1-20261011-attempt31/build-attempt1/compile-1.stderr": {
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    "actual-dell/session-actual-task-metrics-three-cycle-v1-20261011-attempt31/build-attempt1/compile-1.stdout": {
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    "actual-dell/session-actual-task-metrics-three-cycle-v1-20261011-attempt31/build-attempt1/compile-10.result.json": {
+      "bytes": 5229,
+      "sha256": "e9886a6ffec92bccb5719651c21f011992f9d10297fb48bd0839e335dae3c221"
+    },
+    "actual-dell/session-actual-task-metrics-three-cycle-v1-20261011-attempt31/build-attempt1/compile-10.stderr": {
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    "actual-dell/session-actual-task-metrics-three-cycle-v1-20261011-attempt31/build-attempt1/compile-10.stdout": {
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    "actual-dell/session-actual-task-metrics-three-cycle-v1-20261011-attempt31/build-attempt1/compile-11.result.json": {
+      "bytes": 5230,
+      "sha256": "90613bd51a3865cd6d3d026c1ed578ef225126136b8eda34e7a9d289c28409d0"
+    },
+    "actual-dell/session-actual-task-metrics-three-cycle-v1-20261011-attempt31/build-attempt1/compile-11.stderr": {
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    "actual-dell/session-actual-task-metrics-three-cycle-v1-20261011-attempt31/build-attempt1/compile-11.stdout": {
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    "actual-dell/session-actual-task-metrics-three-cycle-v1-20261011-attempt31/build-attempt1/compile-12.result.json": {
+      "bytes": 5232,
+      "sha256": "b8fe67d8c1467d226529831ad3814fef8e0a5ccf5b8ea643d0c3d69680ff96b2"
+    },
+    "actual-dell/session-actual-task-metrics-three-cycle-v1-20261011-attempt31/build-attempt1/compile-12.stderr": {
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    "actual-dell/session-actual-task-metrics-three-cycle-v1-20261011-attempt31/build-attempt1/compile-12.stdout": {
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    "actual-dell/session-actual-task-metrics-three-cycle-v1-20261011-attempt31/build-attempt1/compile-13.result.json": {
+      "bytes": 5223,
+      "sha256": "d4dca5239c3411b5c35af51da70fc9f71757c6df0bca0706452b3c6a71ee7cc3"
+    },
+    "actual-dell/session-actual-task-metrics-three-cycle-v1-20261011-attempt31/build-attempt1/compile-13.stderr": {
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    "actual-dell/session-actual-task-metrics-three-cycle-v1-20261011-attempt31/build-attempt1/compile-13.stdout": {
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    "actual-dell/session-actual-task-metrics-three-cycle-v1-20261011-attempt31/build-attempt1/compile-14.result.json": {
+      "bytes": 5230,
+      "sha256": "9b47a982c1b0eef1ad17abae46ee879b6060bbaa23b357c69e83f03fe0d877cb"
+    },
+    "actual-dell/session-actual-task-metrics-three-cycle-v1-20261011-attempt31/build-attempt1/compile-14.stderr": {
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    "actual-dell/session-actual-task-metrics-three-cycle-v1-20261011-attempt31/build-attempt1/compile-14.stdout": {
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    "actual-dell/session-actual-task-metrics-three-cycle-v1-20261011-attempt31/build-attempt1/compile-15.result.json": {
+      "bytes": 5235,
+      "sha256": "8cfc132eb6916318d58c4113eb9266b3b6e8eff30b16ca0a6a47629acc3f471a"
+    },
+    "actual-dell/session-actual-task-metrics-three-cycle-v1-20261011-attempt31/build-attempt1/compile-15.stderr": {
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    "actual-dell/session-actual-task-metrics-three-cycle-v1-20261011-attempt31/build-attempt1/compile-15.stdout": {
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    "actual-dell/session-actual-task-metrics-three-cycle-v1-20261011-attempt31/build-attempt1/compile-2.result.json": {
+      "bytes": 5223,
+      "sha256": "194ad867a734d441888961998f46d7f17fe8796a0323963d50e3e17aa3ed9ec9"
+    },
+    "actual-dell/session-actual-task-metrics-three-cycle-v1-20261011-attempt31/build-attempt1/compile-2.stderr": {
+      "bytes": 4408,
+      "sha256": "c1b4847a0066e6e3c7542f06d43154dd4405003a87ad74c2baef8933f409ccdb"
+    },
+    "actual-dell/session-actual-task-metrics-three-cycle-v1-20261011-attempt31/build-attempt1/compile-2.stdout": {
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    "actual-dell/session-actual-task-metrics-three-cycle-v1-20261011-attempt31/build-attempt1/compile-3.result.json": {
+      "bytes": 5226,
+      "sha256": "45395fdb4943f7ccfc337376bbe0c71997789330cd328e27b40a68e9c3b0a205"
+    },
+    "actual-dell/session-actual-task-metrics-three-cycle-v1-20261011-attempt31/build-attempt1/compile-3.stderr": {
+      "bytes": 12007,
+      "sha256": "d4787d424d271f6028c318744596a6f6fb9119d966cb4bc6cf3324787cea70b1"
+    },
+    "actual-dell/session-actual-task-metrics-three-cycle-v1-20261011-attempt31/build-attempt1/compile-3.stdout": {
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    "actual-dell/session-actual-task-metrics-three-cycle-v1-20261011-attempt31/build-attempt1/compile-4.result.json": {
+      "bytes": 5230,
+      "sha256": "6665b98d11d16b911d6c1cf892da7561c0aaff53f4eaf3a7030b5ded3db036dd"
+    },
+    "actual-dell/session-actual-task-metrics-three-cycle-v1-20261011-attempt31/build-attempt1/compile-4.stderr": {
+      "bytes": 1165,
+      "sha256": "a3e39771e18bb51cd54c5e4dc5c01871afd0c3ae00f93fae1b1ad5d97ff73a4f"
+    },
+    "actual-dell/session-actual-task-metrics-three-cycle-v1-20261011-attempt31/build-attempt1/compile-4.stdout": {
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    "actual-dell/session-actual-task-metrics-three-cycle-v1-20261011-attempt31/build-attempt1/compile-5.result.json": {
+      "bytes": 5225,
+      "sha256": "2c3d30a799f33e3ff1fc9295e8b6383839cabb95a3298e1dd095abe89700b40d"
+    },
+    "actual-dell/session-actual-task-metrics-three-cycle-v1-20261011-attempt31/build-attempt1/compile-5.stderr": {
+      "bytes": 6382,
+      "sha256": "b57375de3eb35476e5fe1aa93d07b8953f5ef6d933446b22a2f4a9e3574c041e"
+    },
+    "actual-dell/session-actual-task-metrics-three-cycle-v1-20261011-attempt31/build-attempt1/compile-5.stdout": {
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    "actual-dell/session-actual-task-metrics-three-cycle-v1-20261011-attempt31/build-attempt1/compile-6.result.json": {
+      "bytes": 5226,
+      "sha256": "3d5d0f26a04aff324f3fbcbaf49fc1b4eec9221f831a3c465f9a295dc5c8970f"
+    },
+    "actual-dell/session-actual-task-metrics-three-cycle-v1-20261011-attempt31/build-attempt1/compile-6.stderr": {
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    "actual-dell/session-actual-task-metrics-three-cycle-v1-20261011-attempt31/build-attempt1/compile-6.stdout": {
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    "actual-dell/session-actual-task-metrics-three-cycle-v1-20261011-attempt31/build-attempt1/compile-7.result.json": {
+      "bytes": 5225,
+      "sha256": "4ab892984ec451aec90fbcbb0c4cec370b34b69ad4409193a05a4ccf17af0a47"
+    },
+    "actual-dell/session-actual-task-metrics-three-cycle-v1-20261011-attempt31/build-attempt1/compile-7.stderr": {
+      "bytes": 7098,
+      "sha256": "04316f2f3a64be7c725ecdc1b754f35020885cd1c296e0ee1643c4a999eb7dc2"
+    },
+    "actual-dell/session-actual-task-metrics-three-cycle-v1-20261011-attempt31/build-attempt1/compile-7.stdout": {
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    "actual-dell/session-actual-task-metrics-three-cycle-v1-20261011-attempt31/build-attempt1/compile-8.result.json": {
+      "bytes": 5224,
+      "sha256": "c8ef09fb6f78d9ac55273eccd5ee85ff5408662e9292710c96d08ff19b07ceb1"
+    },
+    "actual-dell/session-actual-task-metrics-three-cycle-v1-20261011-attempt31/build-attempt1/compile-8.stderr": {
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    "actual-dell/session-actual-task-metrics-three-cycle-v1-20261011-attempt31/build-attempt1/compile-8.stdout": {
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    "actual-dell/session-actual-task-metrics-three-cycle-v1-20261011-attempt31/build-attempt1/compile-9.result.json": {
+      "bytes": 5229,
+      "sha256": "e2ffd2606baa7fff75ffaaf19d7da11184dba7ee83bad7672b80364ee1a3c395"
+    },
+    "actual-dell/session-actual-task-metrics-three-cycle-v1-20261011-attempt31/build-attempt1/compile-9.stderr": {
+      "bytes": 5178,
+      "sha256": "45a6959f47f6b411b634ccca9c04c8dab9882cc52637a701d603318b0f1aad91"
+    },
+    "actual-dell/session-actual-task-metrics-three-cycle-v1-20261011-attempt31/build-attempt1/compile-9.stdout": {
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    "actual-dell/session-actual-task-metrics-three-cycle-v1-20261011-attempt31/dev_compile.py": {
+      "bytes": 7468,
+      "sha256": "ff891393302d1a5db9ec7513f43814b51176c6975767aca4cc1149b5b9314950"
+    },
+    "actual-dell/session-actual-task-metrics-three-cycle-v1-20261011-attempt31/dev_compile_plan.json": {
+      "bytes": 73726,
+      "sha256": "b4abd19731fbfdca876bf5dbe63fc62319e77513f616542413e9d297694ef555"
+    },
+    "actual-dell/session-actual-task-metrics-three-cycle-v1-20261011-attempt31/src/active_first_cycle.cpp": {
+      "bytes": 32386,
+      "sha256": "c92e083b76dfdead7be7e2ef02e2a4dffb6f9f98f947d2f69c2d1b239d7df8bd"
+    },
+    "actual-dell/session-actual-task-metrics-three-cycle-v1-20261011-attempt31/src/actual_task_metrics.hpp": {
+      "bytes": 1883,
+      "sha256": "83bb0f21e0bfa830b4d8f7e356f9f7c2ce916c49d540c948588d5e460e07d900"
+    },
+    "actual-dell/session-actual-task-metrics-three-cycle-v1-20261011-attempt31/src/actual_task_metrics_tests.cpp": {
+      "bytes": 1359,
+      "sha256": "00bea8673e19abc62233e5933722eae94c35b7540d4f3d2c5e609dc2a83b374c"
+    },
+    "actual-dell/session-actual-task-metrics-three-cycle-v1-20261011-attempt31/src/affine_assembly.cpp": {
+      "bytes": 28981,
+      "sha256": "d478eda1f0fe97bfc41851515f4baa3e485fd4a57968a62dcb6233ae1157bbd5"
+    },
+    "actual-dell/session-actual-task-metrics-three-cycle-v1-20261011-attempt31/src/affine_assembly.hpp": {
+      "bytes": 6026,
+      "sha256": "6faee2961242052c7655da41e8988dd0844f14c3cfa885672aa7c03eaa1dcb57"
+    },
+    "actual-dell/session-actual-task-metrics-three-cycle-v1-20261011-attempt31/src/box_screen_tests.cpp": {
+      "bytes": 2954,
+      "sha256": "d922876babec2867dd1293bcee259ac12e4b2a6af5a30dd551209e097c0abaf8"
+    },
+    "actual-dell/session-actual-task-metrics-three-cycle-v1-20261011-attempt31/src/candidate_validation.cpp": {
+      "bytes": 10659,
+      "sha256": "aa76869432f465e45c48acf777913eea5972414a145eedbf02645035773f63e9"
+    },
+    "actual-dell/session-actual-task-metrics-three-cycle-v1-20261011-attempt31/src/candidate_validation.hpp": {
+      "bytes": 1526,
+      "sha256": "d816bedb47cff25c49a0d5577a9fa805771816caa1dc406d4772c1ee843fe4fa"
+    },
+    "actual-dell/session-actual-task-metrics-three-cycle-v1-20261011-attempt31/src/counted_geometry.hpp": {
+      "bytes": 6363,
+      "sha256": "180ea5a855dfac54d1a1cc6476a0a024623bce67143820624660e09cbadb1fcb"
+    },
+    "actual-dell/session-actual-task-metrics-three-cycle-v1-20261011-attempt31/src/current_numeric_guess.hpp": {
+      "bytes": 4718,
+      "sha256": "bb935c5cbc1c3a09717142947d285b8f2009fe8ae8e47d433703dc815a322972"
+    },
+    "actual-dell/session-actual-task-metrics-three-cycle-v1-20261011-attempt31/src/current_numeric_oracle.cpp": {
+      "bytes": 1845,
+      "sha256": "43e2f0fc6cab95382ff9741669f82d21d43670db633088c6141106bf40a95cac"
+    },
+    "actual-dell/session-actual-task-metrics-three-cycle-v1-20261011-attempt31/src/current_numeric_tests.cpp": {
+      "bytes": 780,
+      "sha256": "b7957cb18696352b7e92333e4c78c88e059d7c79235fe6ba81c356b3c06b00bc"
+    },
+    "actual-dell/session-actual-task-metrics-three-cycle-v1-20261011-attempt31/src/cycle_support.hpp": {
+      "bytes": 5382,
+      "sha256": "d3dab83b30bf0905ae1209d9fd4cbf8eb298031b91a6b5b4b57a7a92a42416a4"
+    },
+    "actual-dell/session-actual-task-metrics-three-cycle-v1-20261011-attempt31/src/cycle_support_tests.cpp": {
+      "bytes": 3540,
+      "sha256": "d8f236dea84b64b855f790bdc7fc3d42f932de09989a1a1dbcafe9b1b3279b2f"
+    },
+    "actual-dell/session-actual-task-metrics-three-cycle-v1-20261011-attempt31/src/integrated_horizon_qp.cpp": {
+      "bytes": 133371,
+      "sha256": "8ba664f20422b2d9e5ce3860034b94209e056d9feb179642bbb04b702fe69ec4"
+    },
+    "actual-dell/session-actual-task-metrics-three-cycle-v1-20261011-attempt31/src/integrated_horizon_qp.hpp": {
+      "bytes": 12375,
+      "sha256": "051bd26e2992e0174d68e5ca523131f24af134809ac0766cbccda5e62ca32e47"
+    },
+    "actual-dell/session-actual-task-metrics-three-cycle-v1-20261011-attempt31/src/invariant_tests.cpp": {
+      "bytes": 4721,
+      "sha256": "f5a859d4cf9d79a5ae1b533b8dd62776f2bba6599dfdf691a2915ef3296a33f9"
+    },
+    "actual-dell/session-actual-task-metrics-three-cycle-v1-20261011-attempt31/src/linear_box_screen.hpp": {
+      "bytes": 3916,
+      "sha256": "b649eff43293a3078b7b46a0166fa0f8a2ac59f3a8496c8c73a98c275fed96d1"
+    },
+    "actual-dell/session-actual-task-metrics-three-cycle-v1-20261011-attempt31/src/lossless_evidence.cpp": {
+      "bytes": 17672,
+      "sha256": "f0794f09ed38192b7564b8d2f991b2610000f6c72317f2f395482a325ca6eaa5"
+    },
+    "actual-dell/session-actual-task-metrics-three-cycle-v1-20261011-attempt31/src/lossless_evidence.hpp": {
+      "bytes": 2138,
+      "sha256": "75ca8a356e1c2f7b90ac17a0182697041cad1df0beb2b0ca995777b37e1882a8"
+    },
+    "actual-dell/session-actual-task-metrics-three-cycle-v1-20261011-attempt31/src/model_boundary.cpp": {
+      "bytes": 21482,
+      "sha256": "eeb1f2a43ef40315e747c1be536eccc7b810647c65840999cd9c27d75895366e"
+    },
+    "actual-dell/session-actual-task-metrics-three-cycle-v1-20261011-attempt31/src/model_boundary.hpp": {
+      "bytes": 4503,
+      "sha256": "966af079735681aedf1031822864baa608255efa43e4ca699d5bec07a3235efb"
+    },
+    "actual-dell/session-actual-task-metrics-three-cycle-v1-20261011-attempt31/src/nominal_geometry_provider.hpp": {
+      "bytes": 3544,
+      "sha256": "7269a27ae1cdf5d623b726a52092adb074df8c6e032bcc1cd2c4845acafaf498"
+    },
+    "actual-dell/session-actual-task-metrics-three-cycle-v1-20261011-attempt31/src/nominal_geometry_selection.hpp": {
+      "bytes": 2524,
+      "sha256": "6a41cc80feca43509d234c5aaf70e9a4c4de77abfa9b8eabfec6b6541b7711fa"
+    },
+    "actual-dell/session-actual-task-metrics-three-cycle-v1-20261011-attempt31/src/normalization.cpp": {
+      "bytes": 23976,
+      "sha256": "a0cd0c9cdb505f922f1744f24cf115057b6ba9f3a9bc1b3ed0c9bdb82d358ed5"
+    },
+    "actual-dell/session-actual-task-metrics-three-cycle-v1-20261011-attempt31/src/normalization.hpp": {
+      "bytes": 4288,
+      "sha256": "9456be5c205f23d2aa2210eac02286d030204a446af003ee85362b971ccb43d8"
+    },
+    "actual-dell/session-actual-task-metrics-three-cycle-v1-20261011-attempt31/src/observer_tests.cpp": {
+      "bytes": 3834,
+      "sha256": "18bef19661326132aac7396998b07395acd20e83c69b70b520fea855915b5e83"
+    },
+    "actual-dell/session-actual-task-metrics-three-cycle-v1-20261011-attempt31/src/owner_binding.hpp": {
+      "bytes": 745,
+      "sha256": "26a058244f7ef8f6d9353857637270623e18e706a061bccc3be4cffb66a54354"
+    },
+    "actual-dell/session-actual-task-metrics-three-cycle-v1-20261011-attempt31/src/owner_binding_tests.cpp": {
+      "bytes": 832,
+      "sha256": "891c6b39bf5a9d23c581f6c25a60876cc336c0f299d79239c06cdd04ac447fd4"
+    },
+    "actual-dell/session-actual-task-metrics-three-cycle-v1-20261011-attempt31/src/runtime_observer.cpp": {
+      "bytes": 37126,
+      "sha256": "3b1cbb6f7eec258f6c8331bb56d85ba9c6bd353e0e63a695d586118abbd6c60a"
+    },
+    "actual-dell/session-actual-task-metrics-three-cycle-v1-20261011-attempt31/src/runtime_observer.hpp": {
+      "bytes": 8864,
+      "sha256": "c72a860bccd560ac2ad1d68d45496d7d950cfbc76e7e7251dd8911969503c0d9"
+    },
+    "actual-dell/session-actual-task-metrics-three-cycle-v1-20261011-attempt31/src/session_primitives.hpp": {
+      "bytes": 2259,
+      "sha256": "0b76bc232ed81dc9b4831617ae1690cfc287def914b8bca5f05ce6e6e25b6080"
+    },
+    "actual-dell/session-actual-task-metrics-three-cycle-v1-20261011-attempt31/src/solver_forensics.cpp": {
+      "bytes": 26514,
+      "sha256": "664c1d480e23c1ddef4f45a57165cba871213740329f8693c897d7c07ee7af27"
+    },
+    "actual-dell/session-actual-task-metrics-three-cycle-v1-20261011-attempt31/src/solver_forensics.hpp": {
+      "bytes": 860,
+      "sha256": "02b3a3d33ea64a351b228b96b2e0590b7a79fb4e9b87da78dc28c59465aca3bb"
+    },
+    "actual-dell/session-actual-task-metrics-three-cycle-v1-20261011-attempt31/src/task_local_provider.cpp": {
+      "bytes": 1839,
+      "sha256": "051b424236979f9fe7ea4cb96564f54969025c997bfba2c61d347a23f7fbae4c"
+    },
+    "actual-dell/session-actual-task-metrics-three-cycle-v1-20261011-attempt31/src/task_local_provider.hpp": {
+      "bytes": 640,
+      "sha256": "1819e2f626fb0ff65ad7e7e8de0b0b52f625e6bf435b073d7cca55722d76f093"
+    },
+    "actual-dell/session-actual-task-metrics-three-cycle-v2-20261011-attempt32/LINK_OBJECT_BINDING.json": {
+      "bytes": 10350,
+      "sha256": "f9dd2d06d29f871b62030f597b47e240f5581c121a403108753619be532ea4de"
+    },
+    "actual-dell/session-actual-task-metrics-three-cycle-v2-20261011-attempt32/build-attempt1/AFTER_INPUT_IDENTITIES.json": {
+      "bytes": 16515,
+      "sha256": "3a368ca73a69d291e7b8bfeefbe5d80e1a438a4e778b67db4148a06f17c5d6ae"
+    },
+    "actual-dell/session-actual-task-metrics-three-cycle-v2-20261011-attempt32/build-attempt1/AFTER_READONLY_ROSTERS.json": {
+      "bytes": 3,
+      "sha256": "37517e5f3dc66819f61f5a7bb8ace1921282415f10551d2defa5c3eb0985b570"
+    },
+    "actual-dell/session-actual-task-metrics-three-cycle-v2-20261011-attempt32/build-attempt1/BATCH_PREFIX.json": {
+      "bytes": 86294,
+      "sha256": "36733f5d1e273a5e619d775898e9a22334c02ef5b0b0ebd66ad04524951eaf6a"
+    },
+    "actual-dell/session-actual-task-metrics-three-cycle-v2-20261011-attempt32/build-attempt1/BEFORE_INPUT_IDENTITIES.json": {
+      "bytes": 16515,
+      "sha256": "3a368ca73a69d291e7b8bfeefbe5d80e1a438a4e778b67db4148a06f17c5d6ae"
+    },
+    "actual-dell/session-actual-task-metrics-three-cycle-v2-20261011-attempt32/build-attempt1/BEFORE_READONLY_ROSTERS.json": {
+      "bytes": 3,
+      "sha256": "37517e5f3dc66819f61f5a7bb8ace1921282415f10551d2defa5c3eb0985b570"
+    },
+    "actual-dell/session-actual-task-metrics-three-cycle-v2-20261011-attempt32/build-attempt1/BUILD_RESULT.json": {
+      "bytes": 86348,
+      "sha256": "132a15705938af3d47b74c931183a72a27fa0c4e456246b136497176a3b67646"
+    },
+    "actual-dell/session-actual-task-metrics-three-cycle-v2-20261011-attempt32/build-attempt1/CONTROL_EVENT_PREFIX.json": {
+      "bytes": 4475,
+      "sha256": "0da44ece3797be3ced240ad2a828340e4479a030f20ea94ca55c0e2562716bfd"
+    },
+    "actual-dell/session-actual-task-metrics-three-cycle-v2-20261011-attempt32/build-attempt1/compile-1.result.json": {
+      "bytes": 5221,
+      "sha256": "5aabd9a6c338c06bf5e8e0e8316c0cde3ae6a0c1707c6c9c2b979880c7ba258c"
+    },
+    "actual-dell/session-actual-task-metrics-three-cycle-v2-20261011-attempt32/build-attempt1/compile-1.stderr": {
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    "actual-dell/session-actual-task-metrics-three-cycle-v2-20261011-attempt32/build-attempt1/compile-1.stdout": {
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    "actual-dell/session-actual-task-metrics-three-cycle-v2-20261011-attempt32/build-attempt1/compile-10.result.json": {
+      "bytes": 5228,
+      "sha256": "f93e15724bfa666f737af23523a37c2ec24206fbca2c47b647f6c6aeaa88e365"
+    },
+    "actual-dell/session-actual-task-metrics-three-cycle-v2-20261011-attempt32/build-attempt1/compile-10.stderr": {
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    "actual-dell/session-actual-task-metrics-three-cycle-v2-20261011-attempt32/build-attempt1/compile-10.stdout": {
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    "actual-dell/session-actual-task-metrics-three-cycle-v2-20261011-attempt32/build-attempt1/compile-11.result.json": {
+      "bytes": 5231,
+      "sha256": "161e130eb0c297072a9e6ed9410bf05d42458202bd2a3aac7c200ae8d7d23c4d"
+    },
+    "actual-dell/session-actual-task-metrics-three-cycle-v2-20261011-attempt32/build-attempt1/compile-11.stderr": {
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    "actual-dell/session-actual-task-metrics-three-cycle-v2-20261011-attempt32/build-attempt1/compile-11.stdout": {
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    "actual-dell/session-actual-task-metrics-three-cycle-v2-20261011-attempt32/build-attempt1/compile-12.result.json": {
+      "bytes": 5232,
+      "sha256": "152b5931177060e688e42688abd98ba337485c03e5fe0a816177561580bf14a7"
+    },
+    "actual-dell/session-actual-task-metrics-three-cycle-v2-20261011-attempt32/build-attempt1/compile-12.stderr": {
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    "actual-dell/session-actual-task-metrics-three-cycle-v2-20261011-attempt32/build-attempt1/compile-12.stdout": {
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    "actual-dell/session-actual-task-metrics-three-cycle-v2-20261011-attempt32/build-attempt1/compile-13.result.json": {
+      "bytes": 5223,
+      "sha256": "5d99bd7e3a3a473cdfc7495b3d6ea67c9f54f95d72367ed7d62cd9a240bb872a"
+    },
+    "actual-dell/session-actual-task-metrics-three-cycle-v2-20261011-attempt32/build-attempt1/compile-13.stderr": {
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    "actual-dell/session-actual-task-metrics-three-cycle-v2-20261011-attempt32/build-attempt1/compile-13.stdout": {
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    "actual-dell/session-actual-task-metrics-three-cycle-v2-20261011-attempt32/build-attempt1/compile-14.result.json": {
+      "bytes": 5230,
+      "sha256": "b58dd22a372a3d320c1ede2b98a2ccf9783165350cf8c8b250d72ac442d84c2b"
+    },
+    "actual-dell/session-actual-task-metrics-three-cycle-v2-20261011-attempt32/build-attempt1/compile-14.stderr": {
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    "actual-dell/session-actual-task-metrics-three-cycle-v2-20261011-attempt32/build-attempt1/compile-14.stdout": {
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    "actual-dell/session-actual-task-metrics-three-cycle-v2-20261011-attempt32/build-attempt1/compile-15.result.json": {
+      "bytes": 5235,
+      "sha256": "c91d61972c9ee3675645a0e6dce0ff0480a5fcb60b532e0522f6540b226db960"
+    },
+    "actual-dell/session-actual-task-metrics-three-cycle-v2-20261011-attempt32/build-attempt1/compile-15.stderr": {
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    "actual-dell/session-actual-task-metrics-three-cycle-v2-20261011-attempt32/build-attempt1/compile-15.stdout": {
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    "actual-dell/session-actual-task-metrics-three-cycle-v2-20261011-attempt32/build-attempt1/compile-2.result.json": {
+      "bytes": 5222,
+      "sha256": "98a974162f97eaa32bca1217cfc565a1ec8012f8d88cb48cad140d54389e9263"
+    },
+    "actual-dell/session-actual-task-metrics-three-cycle-v2-20261011-attempt32/build-attempt1/compile-2.stderr": {
+      "bytes": 4408,
+      "sha256": "8f47dec5e3745e1223ff1070237bdd5afed3d0a2fdc3a3ff5ff359fd06ecf927"
+    },
+    "actual-dell/session-actual-task-metrics-three-cycle-v2-20261011-attempt32/build-attempt1/compile-2.stdout": {
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    "actual-dell/session-actual-task-metrics-three-cycle-v2-20261011-attempt32/build-attempt1/compile-3.result.json": {
+      "bytes": 5226,
+      "sha256": "d02b7c733af4f7726c99a4acd61128403819c54bb688fab0d619ab86b82f78dd"
+    },
+    "actual-dell/session-actual-task-metrics-three-cycle-v2-20261011-attempt32/build-attempt1/compile-3.stderr": {
+      "bytes": 12007,
+      "sha256": "a7960c8e683c0da2a7e68b11969c7115d5f7609b7815205e2349bb41f5d08f9c"
+    },
+    "actual-dell/session-actual-task-metrics-three-cycle-v2-20261011-attempt32/build-attempt1/compile-3.stdout": {
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    "actual-dell/session-actual-task-metrics-three-cycle-v2-20261011-attempt32/build-attempt1/compile-4.result.json": {
+      "bytes": 5229,
+      "sha256": "c1e01b1d22a6983a591f103130f67da3759e1d57112a8c3af8368e566ae8cbc7"
+    },
+    "actual-dell/session-actual-task-metrics-three-cycle-v2-20261011-attempt32/build-attempt1/compile-4.stderr": {
+      "bytes": 1165,
+      "sha256": "6e72fe5e61e1c3a6c5cb79e994d2a41c817c0f395d2a940575f9bd621f0de16a"
+    },
+    "actual-dell/session-actual-task-metrics-three-cycle-v2-20261011-attempt32/build-attempt1/compile-4.stdout": {
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    "actual-dell/session-actual-task-metrics-three-cycle-v2-20261011-attempt32/build-attempt1/compile-5.result.json": {
+      "bytes": 5226,
+      "sha256": "5c564310075341c09d5869fd1a40161be9f188c2cc415b87655ba0e43b1b070c"
+    },
+    "actual-dell/session-actual-task-metrics-three-cycle-v2-20261011-attempt32/build-attempt1/compile-5.stderr": {
+      "bytes": 6382,
+      "sha256": "dc29aadb52ae14e06b9bc1414f1cd298eb9af8c440daecd38bc446e31de8c8bf"
+    },
+    "actual-dell/session-actual-task-metrics-three-cycle-v2-20261011-attempt32/build-attempt1/compile-5.stdout": {
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    "actual-dell/session-actual-task-metrics-three-cycle-v2-20261011-attempt32/build-attempt1/compile-6.result.json": {
+      "bytes": 5226,
+      "sha256": "d1275ea9d616af83a6224384717c685ef41deec161199da9d804e41ca98c0ea0"
+    },
+    "actual-dell/session-actual-task-metrics-three-cycle-v2-20261011-attempt32/build-attempt1/compile-6.stderr": {
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    "actual-dell/session-actual-task-metrics-three-cycle-v2-20261011-attempt32/build-attempt1/compile-6.stdout": {
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    "actual-dell/session-actual-task-metrics-three-cycle-v2-20261011-attempt32/build-attempt1/compile-7.result.json": {
+      "bytes": 5226,
+      "sha256": "02e82ae2003f1de652c41ed059303855969915df5172185afc43652002494fe6"
+    },
+    "actual-dell/session-actual-task-metrics-three-cycle-v2-20261011-attempt32/build-attempt1/compile-7.stderr": {
+      "bytes": 7098,
+      "sha256": "49290d690d9f024193c3855797751c25f41850bbb2c9ed8da7810c602b1927aa"
+    },
+    "actual-dell/session-actual-task-metrics-three-cycle-v2-20261011-attempt32/build-attempt1/compile-7.stdout": {
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    "actual-dell/session-actual-task-metrics-three-cycle-v2-20261011-attempt32/build-attempt1/compile-8.result.json": {
+      "bytes": 5224,
+      "sha256": "c8d24babee0345ec8e8655ac5baf9d6d139617f795039d4cff7e13d42c1acc10"
+    },
+    "actual-dell/session-actual-task-metrics-three-cycle-v2-20261011-attempt32/build-attempt1/compile-8.stderr": {
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    "actual-dell/session-actual-task-metrics-three-cycle-v2-20261011-attempt32/build-attempt1/compile-8.stdout": {
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    "actual-dell/session-actual-task-metrics-three-cycle-v2-20261011-attempt32/build-attempt1/compile-9.result.json": {
+      "bytes": 5229,
+      "sha256": "970e255f8d07f17b92770517a069b6e9b92c85726fe43473ee8ead9d54b55932"
+    },
+    "actual-dell/session-actual-task-metrics-three-cycle-v2-20261011-attempt32/build-attempt1/compile-9.stderr": {
+      "bytes": 5178,
+      "sha256": "ea6d58579b558dcc1fd1075c8ec31946e81d35e7d8c6bec326058a69af7950ef"
+    },
+    "actual-dell/session-actual-task-metrics-three-cycle-v2-20261011-attempt32/build-attempt1/compile-9.stdout": {
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    "actual-dell/session-actual-task-metrics-three-cycle-v2-20261011-attempt32/dev_compile.py": {
+      "bytes": 7468,
+      "sha256": "ff891393302d1a5db9ec7513f43814b51176c6975767aca4cc1149b5b9314950"
+    },
+    "actual-dell/session-actual-task-metrics-three-cycle-v2-20261011-attempt32/dev_compile_plan.json": {
+      "bytes": 73726,
+      "sha256": "ecec6543a5c5a91f035b3182226c9a00427f3bf977cb809ae6f05312c25ae7d7"
+    },
+    "actual-dell/session-actual-task-metrics-three-cycle-v2-20261011-attempt32/dev_link.py": {
+      "bytes": 7480,
+      "sha256": "3e2044615968f19c401cc271b71648b8959f01751d446417b79d773ba371badc"
+    },
+    "actual-dell/session-actual-task-metrics-three-cycle-v2-20261011-attempt32/dev_link_plan.json": {
+      "bytes": 13226,
+      "sha256": "a41b191139a2f4b7c8cf5d7c811306157b9ca52c62425ac6a024cd1f011faa82"
+    },
+    "actual-dell/session-actual-task-metrics-three-cycle-v2-20261011-attempt32/link-attempt1/AFTER_INPUT_IDENTITIES.json": {
+      "bytes": 5390,
+      "sha256": "c10f5c98610517fb84df5bfee7554439a609857eacdc0308079e6056d2de1a43"
+    },
+    "actual-dell/session-actual-task-metrics-three-cycle-v2-20261011-attempt32/link-attempt1/AFTER_READONLY_ROSTERS.json": {
+      "bytes": 3,
+      "sha256": "37517e5f3dc66819f61f5a7bb8ace1921282415f10551d2defa5c3eb0985b570"
+    },
+    "actual-dell/session-actual-task-metrics-three-cycle-v2-20261011-attempt32/link-attempt1/BATCH_PREFIX.json": {
+      "bytes": 10482,
+      "sha256": "ff6d88851d11ba15675074e67613754e2cb4a0b7e5cbe80cc4527b806091ac6f"
+    },
+    "actual-dell/session-actual-task-metrics-three-cycle-v2-20261011-attempt32/link-attempt1/BEFORE_INPUT_IDENTITIES.json": {
+      "bytes": 5390,
+      "sha256": "c10f5c98610517fb84df5bfee7554439a609857eacdc0308079e6056d2de1a43"
+    },
+    "actual-dell/session-actual-task-metrics-three-cycle-v2-20261011-attempt32/link-attempt1/BEFORE_READONLY_ROSTERS.json": {
+      "bytes": 3,
+      "sha256": "37517e5f3dc66819f61f5a7bb8ace1921282415f10551d2defa5c3eb0985b570"
+    },
+    "actual-dell/session-actual-task-metrics-three-cycle-v2-20261011-attempt32/link-attempt1/BUILD_RESULT.json": {
+      "bytes": 10536,
+      "sha256": "a11413b422775862b76d5bf206e74f0ed4f05a81f9aee16b05f2a4d79cfadc2d"
+    },
+    "actual-dell/session-actual-task-metrics-three-cycle-v2-20261011-attempt32/link-attempt1/CONTROL_EVENT_PREFIX.json": {
+      "bytes": 988,
+      "sha256": "829fc3c173d928979bcb3ece4d3e6ff9e90d5bf64ca6ff47097d7ad0c787edc3"
+    },
+    "actual-dell/session-actual-task-metrics-three-cycle-v2-20261011-attempt32/link-attempt1/compile-1.result.json": {
+      "bytes": 5564,
+      "sha256": "561085d99d342cb1b45ae3e582b5e4249bb9f6ad68d08c2fe545f30f55d55f79"
+    },
+    "actual-dell/session-actual-task-metrics-three-cycle-v2-20261011-attempt32/link-attempt1/compile-1.stderr": {
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    "actual-dell/session-actual-task-metrics-three-cycle-v2-20261011-attempt32/link-attempt1/compile-1.stdout": {
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    "actual-dell/session-actual-task-metrics-three-cycle-v2-20261011-attempt32/link-attempt1/compile-2.result.json": {
+      "bytes": 4157,
+      "sha256": "8300f44b0e786a7a41c3a3dd49dc0fc818e442967d6d7e5424668d610e82f473"
+    },
+    "actual-dell/session-actual-task-metrics-three-cycle-v2-20261011-attempt32/link-attempt1/compile-2.stderr": {
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    "actual-dell/session-actual-task-metrics-three-cycle-v2-20261011-attempt32/link-attempt1/compile-2.stdout": {
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    "actual-dell/session-actual-task-metrics-three-cycle-v2-20261011-attempt32/pure-tests-attempt1/RESULT.json": {
+      "bytes": 200,
+      "sha256": "5796ae96d905d3c5989e461daa2b0fe08b56c11e6d167af6f1a88743e6627ff0"
+    },
+    "actual-dell/session-actual-task-metrics-three-cycle-v2-20261011-attempt32/pure-tests-attempt1/stderr.txt": {
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    "actual-dell/session-actual-task-metrics-three-cycle-v2-20261011-attempt32/pure-tests-attempt1/stdout.txt": {
+      "bytes": 154,
+      "sha256": "f84268947ff6d5571057d981f4ea49f4f8859a05aaea5be9a59454a2f1913791"
+    },
+    "actual-dell/session-actual-task-metrics-three-cycle-v2-20261011-attempt32/src/active_first_cycle.cpp": {
+      "bytes": 32458,
+      "sha256": "bbc4c2f0498e1a8b2b5e8c5d76b496faaef2542562b9b1f7eb4a5b6010f77c91"
+    },
+    "actual-dell/session-actual-task-metrics-three-cycle-v2-20261011-attempt32/src/actual_task_metrics.hpp": {
+      "bytes": 1883,
+      "sha256": "83bb0f21e0bfa830b4d8f7e356f9f7c2ce916c49d540c948588d5e460e07d900"
+    },
+    "actual-dell/session-actual-task-metrics-three-cycle-v2-20261011-attempt32/src/actual_task_metrics_tests.cpp": {
+      "bytes": 1359,
+      "sha256": "00bea8673e19abc62233e5933722eae94c35b7540d4f3d2c5e609dc2a83b374c"
+    },
+    "actual-dell/session-actual-task-metrics-three-cycle-v2-20261011-attempt32/src/affine_assembly.cpp": {
+      "bytes": 28981,
+      "sha256": "d478eda1f0fe97bfc41851515f4baa3e485fd4a57968a62dcb6233ae1157bbd5"
+    },
+    "actual-dell/session-actual-task-metrics-three-cycle-v2-20261011-attempt32/src/affine_assembly.hpp": {
+      "bytes": 6026,
+      "sha256": "6faee2961242052c7655da41e8988dd0844f14c3cfa885672aa7c03eaa1dcb57"
+    },
+    "actual-dell/session-actual-task-metrics-three-cycle-v2-20261011-attempt32/src/box_screen_tests.cpp": {
+      "bytes": 2954,
+      "sha256": "d922876babec2867dd1293bcee259ac12e4b2a6af5a30dd551209e097c0abaf8"
+    },
+    "actual-dell/session-actual-task-metrics-three-cycle-v2-20261011-attempt32/src/candidate_validation.cpp": {
+      "bytes": 10659,
+      "sha256": "aa76869432f465e45c48acf777913eea5972414a145eedbf02645035773f63e9"
+    },
+    "actual-dell/session-actual-task-metrics-three-cycle-v2-20261011-attempt32/src/candidate_validation.hpp": {
+      "bytes": 1526,
+      "sha256": "d816bedb47cff25c49a0d5577a9fa805771816caa1dc406d4772c1ee843fe4fa"
+    },
+    "actual-dell/session-actual-task-metrics-three-cycle-v2-20261011-attempt32/src/counted_geometry.hpp": {
+      "bytes": 6363,
+      "sha256": "180ea5a855dfac54d1a1cc6476a0a024623bce67143820624660e09cbadb1fcb"
+    },
+    "actual-dell/session-actual-task-metrics-three-cycle-v2-20261011-attempt32/src/current_numeric_guess.hpp": {
+      "bytes": 4718,
+      "sha256": "bb935c5cbc1c3a09717142947d285b8f2009fe8ae8e47d433703dc815a322972"
+    },
+    "actual-dell/session-actual-task-metrics-three-cycle-v2-20261011-attempt32/src/current_numeric_oracle.cpp": {
+      "bytes": 1845,
+      "sha256": "43e2f0fc6cab95382ff9741669f82d21d43670db633088c6141106bf40a95cac"
+    },
+    "actual-dell/session-actual-task-metrics-three-cycle-v2-20261011-attempt32/src/current_numeric_tests.cpp": {
+      "bytes": 780,
+      "sha256": "b7957cb18696352b7e92333e4c78c88e059d7c79235fe6ba81c356b3c06b00bc"
+    },
+    "actual-dell/session-actual-task-metrics-three-cycle-v2-20261011-attempt32/src/cycle_support.hpp": {
+      "bytes": 5382,
+      "sha256": "d3dab83b30bf0905ae1209d9fd4cbf8eb298031b91a6b5b4b57a7a92a42416a4"
+    },
+    "actual-dell/session-actual-task-metrics-three-cycle-v2-20261011-attempt32/src/cycle_support_tests.cpp": {
+      "bytes": 3540,
+      "sha256": "d8f236dea84b64b855f790bdc7fc3d42f932de09989a1a1dbcafe9b1b3279b2f"
+    },
+    "actual-dell/session-actual-task-metrics-three-cycle-v2-20261011-attempt32/src/integrated_horizon_qp.cpp": {
+      "bytes": 133371,
+      "sha256": "8ba664f20422b2d9e5ce3860034b94209e056d9feb179642bbb04b702fe69ec4"
+    },
+    "actual-dell/session-actual-task-metrics-three-cycle-v2-20261011-attempt32/src/integrated_horizon_qp.hpp": {
+      "bytes": 12375,
+      "sha256": "051bd26e2992e0174d68e5ca523131f24af134809ac0766cbccda5e62ca32e47"
+    },
+    "actual-dell/session-actual-task-metrics-three-cycle-v2-20261011-attempt32/src/invariant_tests.cpp": {
+      "bytes": 4721,
+      "sha256": "f5a859d4cf9d79a5ae1b533b8dd62776f2bba6599dfdf691a2915ef3296a33f9"
+    },
+    "actual-dell/session-actual-task-metrics-three-cycle-v2-20261011-attempt32/src/linear_box_screen.hpp": {
+      "bytes": 3916,
+      "sha256": "b649eff43293a3078b7b46a0166fa0f8a2ac59f3a8496c8c73a98c275fed96d1"
+    },
+    "actual-dell/session-actual-task-metrics-three-cycle-v2-20261011-attempt32/src/lossless_evidence.cpp": {
+      "bytes": 17672,
+      "sha256": "f0794f09ed38192b7564b8d2f991b2610000f6c72317f2f395482a325ca6eaa5"
+    },
+    "actual-dell/session-actual-task-metrics-three-cycle-v2-20261011-attempt32/src/lossless_evidence.hpp": {
+      "bytes": 2138,
+      "sha256": "75ca8a356e1c2f7b90ac17a0182697041cad1df0beb2b0ca995777b37e1882a8"
+    },
+    "actual-dell/session-actual-task-metrics-three-cycle-v2-20261011-attempt32/src/model_boundary.cpp": {
+      "bytes": 21482,
+      "sha256": "eeb1f2a43ef40315e747c1be536eccc7b810647c65840999cd9c27d75895366e"
+    },
+    "actual-dell/session-actual-task-metrics-three-cycle-v2-20261011-attempt32/src/model_boundary.hpp": {
+      "bytes": 4503,
+      "sha256": "966af079735681aedf1031822864baa608255efa43e4ca699d5bec07a3235efb"
+    },
+    "actual-dell/session-actual-task-metrics-three-cycle-v2-20261011-attempt32/src/nominal_geometry_provider.hpp": {
+      "bytes": 3544,
+      "sha256": "7269a27ae1cdf5d623b726a52092adb074df8c6e032bcc1cd2c4845acafaf498"
+    },
+    "actual-dell/session-actual-task-metrics-three-cycle-v2-20261011-attempt32/src/nominal_geometry_selection.hpp": {
+      "bytes": 2524,
+      "sha256": "6a41cc80feca43509d234c5aaf70e9a4c4de77abfa9b8eabfec6b6541b7711fa"
+    },
+    "actual-dell/session-actual-task-metrics-three-cycle-v2-20261011-attempt32/src/normalization.cpp": {
+      "bytes": 23976,
+      "sha256": "a0cd0c9cdb505f922f1744f24cf115057b6ba9f3a9bc1b3ed0c9bdb82d358ed5"
+    },
+    "actual-dell/session-actual-task-metrics-three-cycle-v2-20261011-attempt32/src/normalization.hpp": {
+      "bytes": 4288,
+      "sha256": "9456be5c205f23d2aa2210eac02286d030204a446af003ee85362b971ccb43d8"
+    },
+    "actual-dell/session-actual-task-metrics-three-cycle-v2-20261011-attempt32/src/observer_tests.cpp": {
+      "bytes": 3834,
+      "sha256": "18bef19661326132aac7396998b07395acd20e83c69b70b520fea855915b5e83"
+    },
+    "actual-dell/session-actual-task-metrics-three-cycle-v2-20261011-attempt32/src/owner_binding.hpp": {
+      "bytes": 745,
+      "sha256": "26a058244f7ef8f6d9353857637270623e18e706a061bccc3be4cffb66a54354"
+    },
+    "actual-dell/session-actual-task-metrics-three-cycle-v2-20261011-attempt32/src/owner_binding_tests.cpp": {
+      "bytes": 832,
+      "sha256": "891c6b39bf5a9d23c581f6c25a60876cc336c0f299d79239c06cdd04ac447fd4"
+    },
+    "actual-dell/session-actual-task-metrics-three-cycle-v2-20261011-attempt32/src/runtime_observer.cpp": {
+      "bytes": 37214,
+      "sha256": "8ca7df3c10bc2713caf21aff94afd96ecc41fe6597ba1968a94f646b00a0025f"
+    },
+    "actual-dell/session-actual-task-metrics-three-cycle-v2-20261011-attempt32/src/runtime_observer.hpp": {
+      "bytes": 8907,
+      "sha256": "69d1dfc60fb763ce471c26a5aa50cd743a7aab3a436847bea71eda7801609bbf"
+    },
+    "actual-dell/session-actual-task-metrics-three-cycle-v2-20261011-attempt32/src/session_primitives.hpp": {
+      "bytes": 2259,
+      "sha256": "0b76bc232ed81dc9b4831617ae1690cfc287def914b8bca5f05ce6e6e25b6080"
+    },
+    "actual-dell/session-actual-task-metrics-three-cycle-v2-20261011-attempt32/src/solver_forensics.cpp": {
+      "bytes": 26514,
+      "sha256": "664c1d480e23c1ddef4f45a57165cba871213740329f8693c897d7c07ee7af27"
+    },
+    "actual-dell/session-actual-task-metrics-three-cycle-v2-20261011-attempt32/src/solver_forensics.hpp": {
+      "bytes": 860,
+      "sha256": "02b3a3d33ea64a351b228b96b2e0590b7a79fb4e9b87da78dc28c59465aca3bb"
+    },
+    "actual-dell/session-actual-task-metrics-three-cycle-v2-20261011-attempt32/src/task_local_provider.cpp": {
+      "bytes": 1839,
+      "sha256": "051b424236979f9fe7ea4cb96564f54969025c997bfba2c61d347a23f7fbae4c"
+    },
+    "actual-dell/session-actual-task-metrics-three-cycle-v2-20261011-attempt32/src/task_local_provider.hpp": {
+      "bytes": 640,
+      "sha256": "1819e2f626fb0ff65ad7e7e8de0b0b52f625e6bf435b073d7cca55722d76f093"
+    },
+    "actual_collection.tar.gz": {
+      "bytes": 244760,
+      "sha256": "72953d35d3f7fa95114bac91f19c0eed1258974d7753114a858524500ae591c5"
+    },
+    "collection.stderr": {
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    "link_actual_task_metrics32.py": {
+      "bytes": 3557,
+      "sha256": "8d4fdaa8d41f8641ba0b1dcfa9484a3e0cef37b2aebd05061f7440b4d08c4f19"
+    },
+    "pure-source-checkpoint/READY.json": {
+      "bytes": 628,
+      "sha256": "f1b64bc8268746812e9d92cacef766f3a2917bad9b81d2a0fa90c6fb9ea29164"
+    },
+    "pure-source-checkpoint/RESULT.json": {
+      "bytes": 961,
+      "sha256": "77f961a055db68a1f054f36a6f601cb04e420408ebcba37808e5dce89837db5a"
+    },
+    "pure-source-checkpoint/SCOPE.md": {
+      "bytes": 978,
+      "sha256": "7400063ecda1b50f78607c58ece8b92a504daac68b9dcb47d11ba3e13d6caa78"
+    },
+    "pure-source-checkpoint/actual_task_metrics.hpp": {
+      "bytes": 1883,
+      "sha256": "83bb0f21e0bfa830b4d8f7e356f9f7c2ce916c49d540c948588d5e460e07d900"
+    },
+    "pure-source-checkpoint/actual_task_metrics_tests.cpp": {
+      "bytes": 1359,
+      "sha256": "00bea8673e19abc62233e5933722eae94c35b7540d4f3d2c5e609dc2a83b374c"
+    },
+    "readonly_collection_source.py": {
+      "bytes": 1285,
+      "sha256": "c59740ce3be0177604bf73d1d04176852d62acd5072be9164124623852c3b722"
+    },
+    "run_actual_task_metrics_pure32.py": {
+      "bytes": 1508,
+      "sha256": "39541d723de2c335e56d3a1f624d87064d4c3b7937e9ddf3aecf921bb4670d01"
+    },
+    "stage_actual_task_metrics_compile31.py": {
+      "bytes": 2572,
+      "sha256": "52960a4a03170b47d1c07a9fad8e52210791b3556a8d5cb07046c9d0810d6337"
+    },
+    "stage_actual_task_metrics_compile32.py": {
+      "bytes": 2572,
+      "sha256": "3521e901fabc2d8003acc8c9e6a7b300e54077094f3d0713f8bb81e7835038b1"
+    }
+  }
+}

@@ -1,0 +1,26 @@
+{
+  "schema": "ACTUAL_TASK_METRIC_PURE_SOURCE_CHECKPOINT_V1",
+  "host": "Mac",
+  "compile_argv": [
+    "c++",
+    "-std=c++17",
+    "-O2",
+    "-Wall",
+    "-Wextra",
+    "-Wpedantic",
+    "/private/tmp/phase5_actual_task_metrics_active_v1_20261011/actual_task_metrics_tests.cpp",
+    "-o",
+    "/private/tmp/phase5_actual_task_metrics_active_v1_20261011/actual_task_metrics_tests"
+  ],
+  "compiler_version": "Apple clang version 21.0.0 (clang-2100.1.1.101)\nTarget: arm64-apple-darwin25.6.0\nThread model: posix\nInstalledDir: /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin\n",
+  "compile_exit": 0,
+  "pure_exit": 0,
+  "exe_bytes": 37000,
+  "exe_sha256": "ee3b3937b2a66f25a793b33d07f7fc6368bd2f29e7132d4de66ed3134d6e25e9",
+  "tests": "zero/3-4-5translation/nearzero/pi/thresholds/improperrotation/nonfinite",
+  "actual_runtime_integration": false,
+  "Model": 0,
+  "MuJoCo": 0,
+  "steps": 0,
+  "phase5": "NOT_ACCEPTED"
+}

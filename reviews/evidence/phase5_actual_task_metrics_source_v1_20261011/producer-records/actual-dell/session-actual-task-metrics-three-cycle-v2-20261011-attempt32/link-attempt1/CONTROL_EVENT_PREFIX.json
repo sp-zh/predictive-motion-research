@@ -1,0 +1,41 @@
+[
+  {
+    "stage": "FIRST_BUILD_CLAIM_INPUTS_NOT_YET_CHECKED",
+    "batch_elapsed_seconds": 4.1180988773703575e-05,
+    "plan_sha256": "a41b191139a2f4b7c8cf5d7c811306157b9ca52c62425ac6a024cd1f011faa82"
+  },
+  {
+    "stage": "EXACT_BEFORE_INPUTS_AND_READONLY_ROSTERS_VERIFIED",
+    "batch_elapsed_seconds": 0.0031623239920008928
+  },
+  {
+    "stage": "BEFORE_POPEN",
+    "batch_elapsed_seconds": 0.003308512008516118,
+    "kind": "compile",
+    "index": 1
+  },
+  {
+    "stage": "CHILD_STARTED",
+    "batch_elapsed_seconds": 0.016445315995952114,
+    "kind": "compile",
+    "index": 1,
+    "pid": 51501
+  },
+  {
+    "stage": "BEFORE_POPEN",
+    "batch_elapsed_seconds": 0.3885496750008315,
+    "kind": "compile",
+    "index": 2
+  },
+  {
+    "stage": "CHILD_STARTED",
+    "batch_elapsed_seconds": 0.3899462000117637,
+    "kind": "compile",
+    "index": 2,
+    "pid": 51504
+  },
+  {
+    "stage": "COMPLETE_FOUR_ACTIVE_COMPILE_NO_RUNTIME",
+    "batch_elapsed_seconds": 0.439064211997902
+  }
+]

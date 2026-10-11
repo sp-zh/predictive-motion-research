@@ -1,0 +1,29 @@
+{
+  "schema": "GEOMETRY_QP_THREE_CYCLE_ACTUAL_PLOT_V1",
+  "inputs": {
+    "ACTUAL_DYNAMIC_SUMMARY.json": "180a266b8d99a50f129ff8417d1de774476f5e8c77819efbe21b287620030902",
+    "cycle-0-validation.json": "8c26b93d5acb56585fee8c0ef02236c6a62f5560c091af5a86d2296de7e9f066",
+    "cycle-0-value.json": "40057fe962651c18a3efe016a4098e5143bc9706c31263035fd5a1a8484b6c54",
+    "cycle-0-commit.json": "cfd8f423b491ab93638ac11cb24bd23a37de954c8ab0c950d9401fb69e48ebdf",
+    "cycle-1-validation.json": "36921c9a067d0c9d7e927029695a80599d3fd7280d02084b781213fbe68c89dc",
+    "cycle-1-value.json": "734bbf0155d9bda8acc90222c07ff34fca09db92dd0a8fa2504dd47dec6579ce",
+    "cycle-1-commit.json": "6327b9e86c10cf12bf53550b8e1d87935744d12d948860e3b4a5dd2a6fda9588",
+    "cycle-2-validation.json": "b4cc6b5580b16bb91350b6df48e37240cb01dafd831e5ff2932157e54e8db8ea",
+    "cycle-2-value.json": "45192222a76f00deeda55bb9bed67eed793b260b7ead891470dfb3cf717dedbf",
+    "cycle-2-commit.json": "4d4d6bbe82c8b2516cf47a5e94ff83065b9fc6046d1556931736575a6c0d6264"
+  },
+  "outputs": {
+    "three_current_geometry_qp_transactions.png": {
+      "bytes": 313811,
+      "sha256": "16f9732e4744a664a4ab2a15062950c24ebe54c9d5e371a3f7e288b2c7b22a0c"
+    },
+    "three_current_geometry_qp_transactions.svg": {
+      "bytes": 164331,
+      "sha256": "6254c9cfba939f37685f48ca673cf4a20c0bfd917992423f5d251edeec410241"
+    }
+  },
+  "matplotlib_version": "3.6.3",
+  "scope": "All3 currentpredictions400 each, all6 actual tasksteps, all3 offlinewalls. No selected cases/fulltask claims",
+  "new_Model_or_MuJoCo_entries": 0,
+  "timing_exclusions": "SDKstartup/term; cycle timing serialization/manifest; wallincludes stageevidence andafterobserve/shift"
+}

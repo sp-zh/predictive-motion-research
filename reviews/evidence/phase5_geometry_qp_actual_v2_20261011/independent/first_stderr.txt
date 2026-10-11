@@ -1,0 +1,8 @@
+Traceback (most recent call last):
+  File "/private/tmp/root_independent_geometry_qp_actual_review_20261011/audit_geometry_qp_actual.py", line 424, in <module>
+    if __name__=='__main__':main()
+                            ^^^^^^
+  File "/private/tmp/root_independent_geometry_qp_actual_review_20261011/audit_geometry_qp_actual.py", line 416, in main
+    release=json.loads(pin(pack/'ROOT_ONE_GEOMETRY_THREE_CYCLE_RELEASE.json'));assert dispatch['records'][0]['argv']==release['sole_child_argv']
+                                                                                                                      ~~~~~~~^^^^^^^^^^^^^^^^^^^
+KeyError: 'sole_child_argv'

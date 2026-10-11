@@ -1,0 +1,7 @@
+{
+  "schema": "ROOT_SOURCE_BINDING_INSPECTION_CORRECTION_V1",
+  "failure": "Initial basename-only source search found both preserved legacyA7 and current30 active_first_cycle.cpp; assertion stopped before release.",
+  "repair": "Use exact current30 source directory derived from concrete ELF argv stem; all oldpins remain checked independently.",
+  "source_or_profile_changed": false,
+  "runtime_dispatched": false
+}

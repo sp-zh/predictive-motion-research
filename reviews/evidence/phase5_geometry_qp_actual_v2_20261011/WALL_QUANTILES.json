@@ -1,0 +1,11 @@
+{
+  "n": 3,
+  "method": "linear quantile interpolation descriptive only",
+  "p50_s": 5.094048042,
+  "p95_s": 5.4370612745999995,
+  "p99_s": 5.46755133972,
+  "max_s": 5.475173856,
+  "4ms_misses": 3,
+  "denominator": 3,
+  "scope": "offline currentobserve throughstageevidence/afterobserve/shift; excludesstartup/termination/timing serialization/manifest; no inferential tail/realtime/fulltask claim"
+}

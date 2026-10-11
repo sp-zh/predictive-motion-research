@@ -1,0 +1,80 @@
+[
+  {
+    "stage": "FIRST_BUILD_CLAIM_INPUTS_NOT_YET_CHECKED",
+    "batch_elapsed_seconds": 5.089998012408614e-05,
+    "plan_sha256": "5b1b218ef76a8ed48d11ef2e41371d151fe8afb59e36af5d823e975743e409b9"
+  },
+  {
+    "stage": "EXACT_BEFORE_INPUTS_AND_READONLY_ROSTERS_VERIFIED",
+    "batch_elapsed_seconds": 0.0035957109939772636
+  },
+  {
+    "stage": "BEFORE_POPEN",
+    "batch_elapsed_seconds": 0.003729739983100444,
+    "kind": "compile",
+    "index": 1
+  },
+  {
+    "stage": "CHILD_STARTED",
+    "batch_elapsed_seconds": 0.016795539995655417,
+    "kind": "compile",
+    "index": 1,
+    "pid": 50860
+  },
+  {
+    "stage": "BEFORE_POPEN",
+    "batch_elapsed_seconds": 0.26717667299089953,
+    "kind": "compile",
+    "index": 2
+  },
+  {
+    "stage": "CHILD_STARTED",
+    "batch_elapsed_seconds": 0.2687247329740785,
+    "kind": "compile",
+    "index": 2,
+    "pid": 50863
+  },
+  {
+    "stage": "BEFORE_POPEN",
+    "batch_elapsed_seconds": 0.3136914469941985,
+    "kind": "compile",
+    "index": 3
+  },
+  {
+    "stage": "CHILD_STARTED",
+    "batch_elapsed_seconds": 0.3150875669962261,
+    "kind": "compile",
+    "index": 3,
+    "pid": 50866
+  },
+  {
+    "stage": "BEFORE_POPEN",
+    "batch_elapsed_seconds": 0.3583014159812592,
+    "kind": "compile",
+    "index": 4
+  },
+  {
+    "stage": "CHILD_STARTED",
+    "batch_elapsed_seconds": 0.3598439859924838,
+    "kind": "compile",
+    "index": 4,
+    "pid": 50869
+  },
+  {
+    "stage": "BEFORE_POPEN",
+    "batch_elapsed_seconds": 0.40634568297537044,
+    "kind": "compile",
+    "index": 5
+  },
+  {
+    "stage": "CHILD_STARTED",
+    "batch_elapsed_seconds": 0.40782645798753947,
+    "kind": "compile",
+    "index": 5,
+    "pid": 50872
+  },
+  {
+    "stage": "COMPLETE_FOUR_ACTIVE_COMPILE_NO_RUNTIME",
+    "batch_elapsed_seconds": 0.4534519349981565
+  }
+]

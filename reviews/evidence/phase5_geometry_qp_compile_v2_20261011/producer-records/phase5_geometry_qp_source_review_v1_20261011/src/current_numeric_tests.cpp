@@ -1,0 +1,3 @@
+#include "current_numeric_guess.hpp"
+#include <iostream>
+int main(){Eigen::MatrixXd H=Eigen::MatrixXd::Identity(2,2),A=H;Eigen::VectorXd g(2),l(2),u(2);g<<-2,3;l<<-1,-1;u<<1,1;auto r=phase5_dynamic_numeric_v1::derive(H,g,A,l,u);if(!r.complete||(r.primal-Eigen::Vector2d(1,-1)).norm()>1e-12||(H*r.primal+g+A.transpose()*r.dual).norm()>1e-12)return 1;g<<-.2,.3;auto changed=phase5_dynamic_numeric_v1::derive(H,g,A,l,u);if(!changed.complete||(changed.primal-Eigen::Vector2d(.2,-.3)).norm()>1e-12||changed.dual.norm()!=0)return 2;l<<2,-1;u<<1,1;auto failed=phase5_dynamic_numeric_v1::derive(H,g,A,l,u);if(failed.complete||failed.error.empty())return 3;std::cout<<"PASS current-matrix constrained/interior/rebuilt-gradient/inverted-bounds numeric hint tests; no OSQP/Model/commit\n";}

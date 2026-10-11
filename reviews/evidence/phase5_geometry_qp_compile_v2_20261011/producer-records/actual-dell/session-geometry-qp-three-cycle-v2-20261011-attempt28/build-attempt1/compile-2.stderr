@@ -1,0 +1,28 @@
+/home/codextransfer/predictive_motion/results/phase5/session-geometry-qp-three-cycle-v2-20261011-attempt28/src/normalization.cpp: In function 'double phase5_active_session_v1::{anonymous}::coordinate(const NativeState&, phase5_public_live_affine_v2::Count)':
+/home/codextransfer/predictive_motion/results/phase5/session-geometry-qp-three-cycle-v2-20261011-attempt28/src/normalization.cpp:33:3: warning: this 'if' clause does not guard... [-Wmisleading-indentation]
+   33 |   if(j<7)return s.q(j);if(j<14)return s.v(j-7);if(j<21)return s.C(j-14);if(j<28)return s.w(j-21);
+      |   ^~
+/home/codextransfer/predictive_motion/results/phase5/session-geometry-qp-three-cycle-v2-20261011-attempt28/src/normalization.cpp:33:24: note: ...this statement, but the latter is misleadingly indented as if it were guarded by the 'if'
+   33 |   if(j<7)return s.q(j);if(j<14)return s.v(j-7);if(j<21)return s.C(j-14);if(j<28)return s.w(j-21);
+      |                        ^~
+/home/codextransfer/predictive_motion/results/phase5/session-geometry-qp-three-cycle-v2-20261011-attempt28/src/normalization.cpp: In function 'void phase5_active_session_v1::{anonymous}::mapping(const NativeMap&, phase5_public_live_affine_v2::Count, phase5_public_live_affine_v2::Count, phase5_public_live_affine_v2::Count, const NativeCell&, const NativeState&, const NativeState&, const NativeState&, const NativeMap*, double*, phase5_public_live_affine_v2::CaseBudget&, phase5_public_live_affine_v2::MathCaptureTrace&)':
+/home/codextransfer/predictive_motion/results/phase5/session-geometry-qp-three-cycle-v2-20261011-attempt28/src/normalization.cpp:107:3: warning: this 'for' clause does not guard... [-Wmisleading-indentation]
+  107 |   for(Count j=0;j<4;++j)trace.written[j]=0;std::fill_n(scratch,120,0.); // Reused fixed work charged before every map check.
+      |   ^~~
+/home/codextransfer/predictive_motion/results/phase5/session-geometry-qp-three-cycle-v2-20261011-attempt28/src/normalization.cpp:107:44: note: ...this statement, but the latter is misleadingly indented as if it were guarded by the 'for'
+  107 |   for(Count j=0;j<4;++j)trace.written[j]=0;std::fill_n(scratch,120,0.); // Reused fixed work charged before every map check.
+      |                                            ^~~
+/home/codextransfer/predictive_motion/results/phase5/session-geometry-qp-three-cycle-v2-20261011-attempt28/src/normalization.cpp: In member function 'phase5_public_live_affine_v2::Count phase5_active_session_v1::NormalizedBlockView::physicalTick() const':
+/home/codextransfer/predictive_motion/results/phase5/session-geometry-qp-three-cycle-v2-20261011-attempt28/src/normalization.cpp:282:3: warning: this 'for' clause does not guard... [-Wmisleading-indentation]
+  282 |   for(Count k=0;k<=cell();++k)t=checkedAdd(t,mesh.cycles().at(k));return checkedMultiply(2,t);
+      |   ^~~
+/home/codextransfer/predictive_motion/results/phase5/session-geometry-qp-three-cycle-v2-20261011-attempt28/src/normalization.cpp:282:67: note: ...this statement, but the latter is misleadingly indented as if it were guarded by the 'for'
+  282 |   for(Count k=0;k<=cell();++k)t=checkedAdd(t,mesh.cycles().at(k));return checkedMultiply(2,t);
+      |                                                                   ^~~~~~
+/home/codextransfer/predictive_motion/results/phase5/session-geometry-qp-three-cycle-v2-20261011-attempt28/src/normalization.cpp: In member function 'std::string_view phase5_active_session_v1::NormalizationOutcome::refusal() const':
+/home/codextransfer/predictive_motion/results/phase5/session-geometry-qp-three-cycle-v2-20261011-attempt28/src/normalization.cpp:317:3: warning: this 'if' clause does not guard... [-Wmisleading-indentation]
+  317 |   if(!refused_)return {};return refusal_detail_.empty()?std::string_view("NORMALIZATION_REFUSAL_UNRECORDED_DETAIL"):std::string_view(refusal_detail_);
+      |   ^~
+/home/codextransfer/predictive_motion/results/phase5/session-geometry-qp-three-cycle-v2-20261011-attempt28/src/normalization.cpp:317:26: note: ...this statement, but the latter is misleadingly indented as if it were guarded by the 'if'
+  317 |   if(!refused_)return {};return refusal_detail_.empty()?std::string_view("NORMALIZATION_REFUSAL_UNRECORDED_DETAIL"):std::string_view(refusal_detail_);
+      |                          ^~~~~~

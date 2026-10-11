@@ -1,0 +1,67 @@
+[
+  {
+    "stage": "FIRST_BUILD_CLAIM_INPUTS_NOT_YET_CHECKED",
+    "batch_elapsed_seconds": 6.144100916571915e-05,
+    "plan_sha256": "65a0393763f9fda848fe0198c7c0e20530412c494e49093e4c8bc44d0006a8fb"
+  },
+  {
+    "stage": "EXACT_BEFORE_INPUTS_AND_READONLY_ROSTERS_VERIFIED",
+    "batch_elapsed_seconds": 0.0032737829897087067
+  },
+  {
+    "stage": "BEFORE_POPEN",
+    "batch_elapsed_seconds": 0.0038174089859239757,
+    "kind": "compile",
+    "index": 1
+  },
+  {
+    "stage": "CHILD_STARTED",
+    "batch_elapsed_seconds": 0.007879312994191423,
+    "kind": "compile",
+    "index": 1,
+    "pid": 50237
+  },
+  {
+    "stage": "BEFORE_POPEN",
+    "batch_elapsed_seconds": 0.3963893750042189,
+    "kind": "compile",
+    "index": 2
+  },
+  {
+    "stage": "CHILD_STARTED",
+    "batch_elapsed_seconds": 0.39769943099236116,
+    "kind": "compile",
+    "index": 2,
+    "pid": 50240
+  },
+  {
+    "stage": "BEFORE_POPEN",
+    "batch_elapsed_seconds": 0.4453597799874842,
+    "kind": "compile",
+    "index": 3
+  },
+  {
+    "stage": "CHILD_STARTED",
+    "batch_elapsed_seconds": 0.4466920940030832,
+    "kind": "compile",
+    "index": 3,
+    "pid": 50243
+  },
+  {
+    "stage": "BEFORE_POPEN",
+    "batch_elapsed_seconds": 0.48897776400553994,
+    "kind": "compile",
+    "index": 4
+  },
+  {
+    "stage": "CHILD_STARTED",
+    "batch_elapsed_seconds": 0.4903088090068195,
+    "kind": "compile",
+    "index": 4,
+    "pid": 50246
+  },
+  {
+    "stage": "COMPLETE_FOUR_ACTIVE_COMPILE_NO_RUNTIME",
+    "batch_elapsed_seconds": 0.5364700320060365
+  }
+]
