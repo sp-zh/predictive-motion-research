@@ -13,8 +13,13 @@ class Snapshot final {
  const std::vector<mjtNum>& integrationBefore() const noexcept{return integration_before;}
  const std::vector<mjtNum>& integrationAfter() const noexcept{return integration_after;}
  double simulationTime() const noexcept{return simulation_time;}
+ const std::chrono::steady_clock::time_point& captureTime() const noexcept{return capture;}
  bool completed() const noexcept{return complete;}
  const std::string& failure() const noexcept{return error;}
+ const std::string& stageName() const noexcept{return stage;}
+ int jointsRead() const noexcept{return joints_read;}
+ bool beforeWritten() const noexcept{return before_written;}
+ bool afterWritten() const noexcept{return after_written;}
  private:
  std::shared_ptr<const void> owner_token;
  live::ObservedActual observed;
@@ -23,6 +28,7 @@ class Snapshot final {
  std::chrono::steady_clock::time_point capture;
  std::vector<mjtNum> integration_before,integration_after;
  double simulation_time=0;int contacts=0;
+ int joints_read=0;bool before_written=false,after_written=false;
  bool complete=false;std::string stage="NOT_STARTED",error;
  friend class Simulation;
 };
@@ -38,6 +44,8 @@ class Simulation final {
  double ageSeconds(const Snapshot&) const; // elapsed since original capture; no timestamp or stored-age mutation
  live::CurrentBoundaryExpectation current(const Snapshot&,ObservationClock=ObservationClock::OnlineWallAge) const;
  void verifyTermination();
+ bool terminationVerified() const noexcept{return terminated_&&termination_passed_;}
+ const std::string& terminationFailure() const noexcept{return termination_failure_;}
  const NativeFacts& facts() const noexcept{return facts_;}
  private:
  std::unique_ptr<mjModel,decltype(&mj_deleteModel)> model_{nullptr,mj_deleteModel};
@@ -47,6 +55,7 @@ class Simulation final {
  live::BoundaryId completed_{};std::string epoch_;NativeFacts facts_;
  live::FileIdentity xml_pin_;
  std::shared_ptr<const void> owner_token_=std::make_shared<char>(0);
- bool failed_=false,in_flight_=false,terminated_=false;
+ bool failed_=false,in_flight_=false,terminated_=false,termination_passed_=false;
+ std::string termination_failure_;
 };
 }

@@ -1,4 +1,5 @@
 #include "integrated_horizon_qp.hpp"
+#include "linear_box_screen.hpp"
 #include <algorithm>
 #include <cmath>
 #include <chrono>
@@ -6,6 +7,8 @@
 #include <set>
 #include <stdexcept>
 #include <utility>
+#include <sstream>
+#include <iomanip>
 
 namespace phase5_active_session_qp_v1 {
 namespace {
@@ -274,8 +277,18 @@ void solveOnce(Outcome& out,const qp::QpOptions& options,CandidateOutcome& candi
   }else s.problem.original_si.state_age_seconds=s.inputs.observed_age_seconds;
   // Offline keeps original historical age. Real elapsed remains separate;
   // source runner must prove no simulation step/command mutation. No mode retry.
-  ++candidate.solver_wrapper_entries_; // C++ QP API entry, NOT OSQP/internal calls.
-  candidate.result_=qp::solveQpCertified(p.original_si,options,p.seed,p.psd_factor);
+  // Equivalent positive variable/row scaling; original SI arrays and every
+  // final original-row/rounded-history gate stay unchanged. Fresh workspace.
+  Eigen::VectorXd scale(NZ);
+  for(int j=0;j<NZ;++j){const double diagonal=p.original_si.hessian(j,j);need(std::isfinite(diagonal)&&diagonal>0,"positive objective diagonal required for Jacobi scaling");scale(j)=1/std::sqrt(diagonal);need(std::isfinite(scale(j))&&scale(j)>0,"finite positive Jacobi variable scale");}
+  const auto screened=screenLinearInputBoxes(p);
+  candidate.retained_solver_rows_=screened.retained_rows;candidate.screening_environment_={static_cast<unsigned>(screened.rounding_mode),screened.x87_control,screened.mxcsr};candidate.omitted_solver_rows_.reserve(screened.omitted_rows.size());
+  for(const auto& row:screened.omitted_rows){candidate.omitted_solver_rows_.push_back(row.original_row);std::ostringstream interval;interval<<std::hexfloat<<std::setprecision(std::numeric_limits<long double>::max_digits10)<<row.lower_bound<<" "<<row.upper_bound;candidate.omitted_solver_intervals_.push_back(interval.str());}
+  qp::QpWorkspace workspace;
+  ++candidate.solver_wrapper_entries_; // immediately before actual C++ QP API entry
+  candidate.result_=qp::solveQpScaledWorkspace(screened.solver_problem,options,p.seed,p.psd_factor,scale,workspace,screened.labels);
+  const int backend_row=candidate.result_.maximum_violation_row;
+  if(backend_row>=0){need(backend_row<static_cast<int>(screened.retained_rows.size()),"backend violation row outside reduced roster");candidate.original_maximum_violation_row_=screened.retained_rows[backend_row];}
   candidate.timing_.connection_and_solver_elapsed=std::chrono::duration<double>(std::chrono::steady_clock::now()-s.connection_started).count();
   candidate.timing_.known_wall_age=s.inputs.observed_age_seconds+s.inputs.known_upstream_elapsed_seconds+candidate.timing_.connection_and_solver_elapsed;
   need(candidate.result_.status==qp::QpStatus::Solved,"only SOLVED admits candidate; native status retained");

@@ -1,0 +1,29 @@
+{
+  "verdict": "PASS_ALL_ACTUAL_EXACT_REDUNDANCY_PROOFS_WITH_KEEP_POLICY_AND_DIAGNOSTIC_QUALIFICATIONS",
+  "source_specific_review": true,
+  "exact_proof_report": "exact_report.json",
+  "all_proofs": "all_omitted_exact_checks.json",
+  "trust_omission_policy_deviation": {
+    "count": 578,
+    "q": 437,
+    "s": 141,
+    "not_mathematically_unsound_on_verified_box": true,
+    "fix": "next-version trust keep predicate or explicitly version actual policy"
+  },
+  "worst_field_fix": "separate backend reduced->original mapped worst from full original worst loop",
+  "compile_math_flags_verified": [
+    "-fno-fast-math",
+    "-ffp-contract=off"
+  ],
+  "next_strategy_scope": "prospective exact equality elimination U=p+Zy; no solver calls or speed claim",
+  "old_tolerance_witness_kept": true,
+  "actual_candidate_available": false,
+  "calls": {
+    "native": 0,
+    "Model": 0,
+    "compiler": 0,
+    "solver": 0,
+    "plant": 0
+  },
+  "phase5": "NOT_ACCEPTED"
+}

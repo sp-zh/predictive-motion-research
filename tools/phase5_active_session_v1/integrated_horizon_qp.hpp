@@ -129,11 +129,18 @@ class CandidateOutcome final {
   const std::optional<CandidateForwardRequest>& forensicForwardRequest() const noexcept{return forensic_request_;}
   bool executionPermission() const noexcept{return false;}
   bool needsIndependentCandidateForward() const noexcept{return request_.has_value();}
+  const std::vector<std::string>& omittedSolverIntervals() const noexcept{return omitted_solver_intervals_;}
+  const std::array<unsigned,3>& screeningEnvironment() const noexcept{return screening_environment_;}
+  int originalMaximumViolationRow() const noexcept{return original_maximum_violation_row_;}
+  const std::vector<int>& retainedSolverRows() const noexcept{return retained_solver_rows_;}
+  const std::vector<int>& omittedSolverRows() const noexcept{return omitted_solver_rows_;}
   unsigned solveAttempts() const noexcept{return solve_attempts_;}
   unsigned solverWrapperEntries() const noexcept{return solver_wrapper_entries_;}
   // Fresh forward and original SI/geometry/physical-tail validation remain
   // required even when stopReason()==CANDIDATE_FORWARD_REQUIRED.
  private:
+  std::vector<int> retained_solver_rows_,omitted_solver_rows_;
+  std::vector<std::string> omitted_solver_intervals_;std::array<unsigned,3> screening_environment_{};int original_maximum_violation_row_=-1;
   qp::QpResult result_;std::string stop_reason_="NOT_ATTEMPTED";
   std::vector<double> violations_;std::optional<live::CommandProposal> preview_;
   std::optional<CandidateForwardRequest> request_,forensic_request_;

@@ -1,0 +1,43 @@
+{
+  "schema": "ROOT_ACTIVE_A_FUNCTIONAL_STORAGE_CHECKPOINT_V1",
+  "date": "2026-10-10",
+  "archive_ready": "/Users/uot/Documents/ChatGPT/ros/results/phase5-reference/active-a-functional-v1-20261010/root-archive1/ARCHIVE_READY.json",
+  "archive_ready_sha256": "6f401e179029e45e9044ebf02257d61f8fa6e88a44cd02a3558a84be3192be11",
+  "mac": {
+    "schema": "ACTIVE_A_FUNCTIONAL_ARCHIVE_READY_V1",
+    "archive": "/Users/uot/Documents/ChatGPT/ros/results/phase5-reference/active-a-functional-v1-20261010/root-archive1/active-a-functional-v1.tar.gz",
+    "archive_bytes": 69245410,
+    "archive_sha256": "f9b2be535e89a5e9292f39c1b9e0464865e0ce6bfdda3a990f02713144797e0e",
+    "manifest_sha256": "8dfb03ecd43dd903582587afdc83e648f9df2fa5d7a53b58473f7156317f8e64",
+    "regular_members": 396,
+    "payloads": 395,
+    "payload_bytes": 144718027,
+    "Mac_all_payloads_verified": true,
+    "Dell_copy_verified": false,
+    "phase5": "NOT_ACCEPTED",
+    "phase6": "NOT_STARTED"
+  },
+  "dell_full_readback": {
+    "schema": "ROOT_ACTIVE_A_DELL_FULL_READBACK_V1",
+    "archive": "/mnt/d/CodexTransfer/projects/predictive_motion/checkpoints/active-a-functional-v1-20261010-root1/active-a-functional-v1.tar.gz",
+    "archive_bytes": 69245410,
+    "archive_sha256": "f9b2be535e89a5e9292f39c1b9e0464865e0ce6bfdda3a990f02713144797e0e",
+    "ready_sha256": "6f401e179029e45e9044ebf02257d61f8fa6e88a44cd02a3558a84be3192be11",
+    "manifest_sha256": "8dfb03ecd43dd903582587afdc83e648f9df2fa5d7a53b58473f7156317f8e64",
+    "regular_members_verified": 396,
+    "payloads_verified": 395,
+    "all_payloads_verified": true,
+    "observed_mode": 365,
+    "observed_uid": 1000,
+    "observed_gid": 1000,
+    "qualification": "NTFS POSIX sealing/ownership change not asserted; no chmod attempted."
+  },
+  "readback_file": "/Users/uot/Documents/ChatGPT/ros/results/phase5-reference/active-a-functional-v1-20261010/DELL_ARCHIVE_READBACK.stdout.json",
+  "readback_sha256": "0a135871f3812c09e697d774b8d5af1916eea6b1d65c522b876e2cc481f17fde",
+  "scope": "Actual repair1/3/6 Session attempts, raw outputs and original failure streams, termination/box regressions, all7684 exact rational certificates, source snapshot and diagnostic figure. Subsequent repair7/10 are not included.",
+  "native_binaries": "ELF identities and original Dell paths retained in dell-packet/actual-dell/NATIVE_ELF_INDEX.json; dependency/build binaries are excluded from this archive and Git. No Mac verification/copy of those native binaries claimed.",
+  "copy_qualification": "Mac sealed0444/0555; all archive payloads verified on Mac/Dell. Observed Dell NTFS mode0555 does not establish a POSIX chmod/ownership seal.",
+  "public_scope": "Small source/review/summary/figure/documentation only; archive and per-row large exact certificate excluded.",
+  "phase5": "NOT_ACCEPTED",
+  "phase6": "NOT_STARTED"
+}

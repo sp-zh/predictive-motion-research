@@ -76,7 +76,7 @@ struct SessionStorage {
  CycleMesh mesh;ResourcePlan resident_plan;CaseBudget resident_budget;
  OwnedReservation resident_ticket; // Model and metadata are destroyed before this reservation
  std::unique_ptr<phase5_public_coupled_augmented_extension::Model> model;
- NativeMetadata metadata;bool verified=false,terminated=false;Count ordinal=0;std::string binding_digest;
+ NativeMetadata metadata;bool verified=false,terminated=false,termination_passed=false;std::string termination_failure;Count ordinal=0;std::string binding_digest;
  explicit SessionStorage(const SessionPins& p):pins(p),ranges(loadPinnedStaticRanges(p.constants.path,p.constants.sha256)),mesh(fixedMesh()),resident_plan(planResources(mesh,FactorShape{},CaptureMode::CompactComplete,NumericEncoding::LosslessBinary)),resident_budget(batch,resident_plan),resident_ticket(resident_budget.reserve(resident_plan.sdkPlanningAllowance())){
   need(!pins.session_id.empty()&&pins.session_id.size()<=256,"bounded session identity required");
   checkPins();model=std::make_unique<phase5_public_coupled_augmented_extension::Model>(pins.xml.path,pins.constants.path);
@@ -106,7 +106,9 @@ struct ForecastStorage {
 Session::Session(const SessionPins& p):storage_(std::make_shared<detail::SessionStorage>(p)){}
 Session::~Session()=default;
 const NativeMetadata& Session::verifiedMetadata() const{return storage_->metadata;}
-void Session::verifyTermination(){need(!storage_->terminated,"session already terminated");storage_->terminated=true;storage_->checkPins();}
+void Session::verifyTermination(){need(!storage_->terminated,"session already terminated");storage_->terminated=true;try{storage_->checkPins();storage_->termination_passed=true;}catch(const std::exception& e){storage_->verified=false;storage_->termination_failure=e.what();throw;}catch(...){storage_->verified=false;storage_->termination_failure="unknown termination verification failure";throw;}}
+bool Session::terminationVerified() const{return storage_->terminated&&storage_->termination_passed&&storage_->termination_failure.empty();}
+const std::string& Session::terminationFailure() const{return storage_->termination_failure;}
 Count Session::cumulativeCharges() const{return storage_->batch.cumulativeCharges();}
 OwnedPublicForecast Session::forecast(const ObservedActual& obs,const AcceptedCommandHistory& cmd,const ProgressHistory& prog,const CurrentBoundaryExpectation& current,const std::vector<NominalControl>& controls){
  auto& s=*storage_;need(s.verified&&!s.terminated,"inactive session");s.ordinal=checkedAdd(s.ordinal,1);need(controls.size()==20,"N20 controls required");
@@ -135,6 +137,8 @@ const LiveActualContext& OwnedPublicForecast::actualContext() const{return prese
 const CycleMesh& OwnedPublicForecast::mesh() const{return present(storage_).mesh;}
 const std::vector<phase5_public_coupled_augmented::Cell>& OwnedPublicForecast::nativeCells() const{return present(storage_).cells;}
 const std::string& OwnedPublicForecast::invocationSha256() const{return present(storage_).digest;}
+const NativeMetadata& OwnedPublicForecast::verifiedMetadata() const{return present(storage_).session->metadata;}
+const SessionPins& OwnedPublicForecast::startupPins() const{return present(storage_).session->pins;}
 double OwnedPublicForecast::originalObservedAge() const{return present(storage_).observer_age;}
 bool OwnedPublicForecast::bindingVerified() const noexcept{return storage_&&storage_->session->verified&&!storage_->digest.empty();}
 CaseBudget& OwnedPublicForecast::normalizationBudget(){need(bool(storage_),"moved forecast");return storage_->budget;}

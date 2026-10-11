@@ -1,0 +1,26 @@
+{
+  "schema": "ACTUAL_ACTIVE_A_TIMING_FIGURE_V1",
+  "source": "reviews/evidence/phase5_active_a_functional_20261010/ACTUAL_SUMMARY.json",
+  "source_sha256": "0104df18f300203dd00988db005cdb6c573ea631529031fba32964a9e368f59e",
+  "packet_ready_sha256": "25b8572470112ed66f7c3735bca1e58b2aa16ca0ebbeea4bf8c1917de2fc4fdb",
+  "attempt_labels": {
+    "repair1": "Original coordinates",
+    "repair3": "Jacobi + row scaling",
+    "repair6": "Scaling + exact box screen"
+  },
+  "render_sha256": "372d1593f35b54e9ad5a1d340f4210f5316ffbaca6a4b873f9d28357f8a3cbc0",
+  "matplotlib": "3.10.3",
+  "figures": {
+    "qp_attempts.png": {
+      "bytes": 87856,
+      "sha256": "284aa061ed25759f4eec8f63f3c584bb59f8cdab3dbb9910a293589d14cf4cfb"
+    },
+    "qp_attempts.svg": {
+      "bytes": 81002,
+      "sha256": "28f62adf7db1bee3d23328086232acbc2f9bfdd76385883498f25f3d8231da82"
+    }
+  },
+  "scope": "Recorded native setup/solve subsets and iterations, not full-cycle latency, physical performance, research ranking or Phase5 acceptance. No motion render or task video is claimed.",
+  "phase5": "NOT_ACCEPTED",
+  "phase6": "NOT_STARTED"
+}

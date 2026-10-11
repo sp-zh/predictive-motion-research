@@ -1,0 +1,31 @@
+{
+  "scope": "RETROSPECTIVE_EXACT_PROOFS_AND_READ_ONLY_REPAIR6_SOURCE_REVIEW",
+  "source_manifest_sha256": "9068e7d2b1908f26d03628991e840c555c9a8fcfa8631bedd15b50ba2f925513",
+  "actual_packet_ready_sha256": "25b8572470112ed66f7c3735bca1e58b2aa16ca0ebbeea4bf8c1917de2fc4fdb",
+  "files": {
+    "exact_proofs.py": {
+      "bytes": 7999,
+      "sha256": "21756f4bbd7f8770a2494f5c80ac5a9ad1264b51c2566c6e8226ee927b60cf3d"
+    },
+    "exact_report.json": {
+      "bytes": 9360,
+      "sha256": "6d320002986d918378b143515d23f9852f7cb026695a2145d6ee86870c8a091d"
+    },
+    "all_omitted_exact_checks.json": {
+      "bytes": 3355131,
+      "sha256": "bc53a12e529dd3d908a25bae3ac0d6e7a67f489176f472374f344713dd430827"
+    },
+    "review.md": {
+      "bytes": 7288,
+      "sha256": "47f8c75fbcf94a1e9090801a32917e1113066b05e411b06f854d58a886059d0d"
+    },
+    "review.json": {
+      "bytes": 964,
+      "sha256": "005d3e23778ae3b77e9545a122dd410128adf8a8e91ebafcba45705410797d80"
+    },
+    "retained_audit_prepublication_failure.json": {
+      "bytes": 312,
+      "sha256": "318ecbc57c4cd4d4808d4fe908fb265b1ebacd232d72ae2d9c0d87e769431e7b"
+    }
+  }
+}

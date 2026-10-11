@@ -1,0 +1,216 @@
+{
+  "schema": "ROOT_ACTIVE_A_ACTUAL_SUMMARY_V1",
+  "ready_sha256": "25b8572470112ed66f7c3735bca1e58b2aa16ca0ebbeea4bf8c1917de2fc4fdb",
+  "source_outcomes_sha256": "218f87b50bafbf0732e0ed24a318739a77898ff8860dd6f539c1a17a18c574c6",
+  "payloads_verified": 341,
+  "phase5": "NOT_ACCEPTED",
+  "phase6": "NOT_STARTED",
+  "attempts": [
+    {
+      "version": "repair1",
+      "status": 7,
+      "raw_status": 8,
+      "api_error": 0,
+      "iterations": 1620,
+      "setup_seconds": 0.106918743,
+      "solve_seconds": 4.894595496,
+      "primal": 0.7892725414786148,
+      "dual": 0.0020039834571162944,
+      "epsabs": 1e-09,
+      "epsrel": 1e-09,
+      "initial_rho": 0.1,
+      "rho_updates": 2,
+      "polish_status": 0,
+      "native_entry_wall_seconds": 7.489783655,
+      "native_boundary_unchanged": 1,
+      "session_termination_pass": 1,
+      "native_termination_pass": 1,
+      "plant_steps": 0,
+      "commits": 0,
+      "input_pins_count": 1651,
+      "before_after_input_pins_identical": true,
+      "preview": 0,
+      "forward_request": 0,
+      "stop": "only SOLVED admits candidate; native status retained",
+      "original_rows": 13156,
+      "solver_rows": 13156,
+      "omitted_rows": 0,
+      "usable_controls": 0,
+      "source_artifacts": {
+        "model_open.bin": {
+          "bytes": 1275,
+          "sha256": "f5ec5debb244e76c025ca107bc44ae12d03755fd7159d86dafbe18ef126f0a07"
+        },
+        "bootstrap.bin": {
+          "bytes": 150,
+          "sha256": "1a33e859581b0112bf10bf1a2d31bfa380de441a83b3abc0ca26989f4291abf5"
+        },
+        "entry_completion.bin": {
+          "bytes": 239,
+          "sha256": "dbcbf33baadc08ddce4f485f9152bb8e453430d433a2d6d23e333d45d8f9cf77"
+        },
+        "observation_before.bin": {
+          "bytes": 2342,
+          "sha256": "319fe27a70cf20eaf6dc6b62736c616e0e1c4b95a4a17a8fb347581d0af07223"
+        },
+        "observation_after.bin": {
+          "bytes": 2342,
+          "sha256": "275d0e3e05b4afe00a026eef27ef0555764c96736440f521a8f1e0881240aaf3"
+        },
+        "candidate.bin": {
+          "bytes": 484,
+          "sha256": "78c5e018bc307edd0e1f4a0eae62d00edec54bae5c0da905f97681c95e3ba37a"
+        },
+        "inline_qp.bin": {
+          "bytes": 19485833,
+          "sha256": "db8afb48c0954eef94b4aa6472dfca3ace27a33d859c82f43c773023969ccf16"
+        },
+        "original_nominal.bin": {
+          "bytes": 12713468,
+          "sha256": "c6ba7a895b162c2b3261e07f692c65b65c816513ce13cf5d82d1e1ebd50e076b"
+        }
+      }
+    },
+    {
+      "version": "repair3",
+      "status": 7,
+      "raw_status": 8,
+      "api_error": 0,
+      "iterations": 1574,
+      "setup_seconds": 0.120123017,
+      "solve_seconds": 4.880475556,
+      "primal": 0.00010991781510353085,
+      "dual": 0.00032312261526650546,
+      "epsabs": 1e-09,
+      "epsrel": 1e-09,
+      "initial_rho": 0.1,
+      "rho_updates": 0,
+      "polish_status": 0,
+      "native_entry_wall_seconds": 7.508981735,
+      "native_boundary_unchanged": 1,
+      "session_termination_pass": 1,
+      "native_termination_pass": 1,
+      "plant_steps": 0,
+      "commits": 0,
+      "input_pins_count": 1651,
+      "before_after_input_pins_identical": true,
+      "preview": 0,
+      "forward_request": 0,
+      "stop": "only SOLVED admits candidate; native status retained",
+      "original_rows": 13156,
+      "solver_rows": 13156,
+      "omitted_rows": 0,
+      "usable_controls": 0,
+      "source_artifacts": {
+        "model_open.bin": {
+          "bytes": 1275,
+          "sha256": "f5ec5debb244e76c025ca107bc44ae12d03755fd7159d86dafbe18ef126f0a07"
+        },
+        "bootstrap.bin": {
+          "bytes": 150,
+          "sha256": "1a33e859581b0112bf10bf1a2d31bfa380de441a83b3abc0ca26989f4291abf5"
+        },
+        "entry_completion.bin": {
+          "bytes": 239,
+          "sha256": "c8cac016d2b7aae0fa2c3310fdb9b4b89a90ad54457b772877250b5b21357922"
+        },
+        "observation_before.bin": {
+          "bytes": 2342,
+          "sha256": "a55b58cbc8d23561bc4f52e3cac1af69d1b0484beeb3534a4b2f71647b2e57b9"
+        },
+        "observation_after.bin": {
+          "bytes": 2342,
+          "sha256": "1055d88aefcd42abb30592e26a285a5a3c6606907680499d3d4d8c0d4a9dedf3"
+        },
+        "candidate.bin": {
+          "bytes": 498,
+          "sha256": "4583a8b69382845abc342774c72f81a51530bb9ef4110965e5d4d985a3472c39"
+        },
+        "inline_qp.bin": {
+          "bytes": 19485833,
+          "sha256": "79f33a3a75bf11c06355b9c5ed69313a5959269ab964398b36ce71226207f3a3"
+        },
+        "original_nominal.bin": {
+          "bytes": 12713468,
+          "sha256": "315e21ca14c2e9f125264c6cd6e2e165efdab7036c74908d1010e14fd670101b"
+        }
+      }
+    },
+    {
+      "version": "repair6",
+      "status": 6,
+      "raw_status": 7,
+      "api_error": 0,
+      "iterations": 4000,
+      "setup_seconds": 0.03074154,
+      "solve_seconds": 3.199009868,
+      "primal": 3.5005863120718406e-06,
+      "dual": 5.1870386790506894e-05,
+      "epsabs": 1e-09,
+      "epsrel": 1e-09,
+      "initial_rho": 0.1,
+      "rho_updates": 2,
+      "polish_status": 0,
+      "native_entry_wall_seconds": 5.769036363,
+      "native_boundary_unchanged": 1,
+      "session_termination_pass": 1,
+      "native_termination_pass": 1,
+      "plant_steps": 0,
+      "commits": 0,
+      "input_pins_count": 1653,
+      "before_after_input_pins_identical": true,
+      "preview": 0,
+      "forward_request": 0,
+      "stop": "only SOLVED admits candidate; native status retained",
+      "original_rows": 13156,
+      "solver_rows": 5472,
+      "omitted_rows": 7684,
+      "usable_controls": 0,
+      "source_artifacts": {
+        "model_open.bin": {
+          "bytes": 1275,
+          "sha256": "f5ec5debb244e76c025ca107bc44ae12d03755fd7159d86dafbe18ef126f0a07"
+        },
+        "bootstrap.bin": {
+          "bytes": 150,
+          "sha256": "1a33e859581b0112bf10bf1a2d31bfa380de441a83b3abc0ca26989f4291abf5"
+        },
+        "entry_completion.bin": {
+          "bytes": 239,
+          "sha256": "3d21bbf4bf6e08c490170d366da99028983489792b910eef0a9f9d3ad4a596ae"
+        },
+        "observation_before.bin": {
+          "bytes": 2342,
+          "sha256": "4c64d24d9dbe74ea42eb770709b2566a6f2d39e91dfb79d1c014a615f00b8d10"
+        },
+        "solver_row_screen.bin": {
+          "bytes": 523804,
+          "sha256": "b525a334c518507d38727bc124e38d336555792fd36aa044fd047c06d869d1be"
+        },
+        "observation_after.bin": {
+          "bytes": 2342,
+          "sha256": "b45909e585f7c10c92e78d0f063a4740ab5f1524224cc4c3c3718f66814b8cbe"
+        },
+        "candidate.bin": {
+          "bytes": 498,
+          "sha256": "7dc0f80ca130b99bf734038f4c31fe4ba6c3f4fb274875d42f060cf48677b1fe"
+        },
+        "inline_qp.bin": {
+          "bytes": 19485833,
+          "sha256": "6cddbd19e4a25dba53ca20e389ff2cf42b75283be39eea8812f103417da77fb1"
+        },
+        "original_nominal.bin": {
+          "bytes": 12713873,
+          "sha256": "89f173de0a447c1849a2f015d749b6bed73076e7adff9416c86de0e3a2d7690d"
+        }
+      }
+    }
+  ],
+  "qualifiers": [
+    "Bounded offline development attempts, no usable candidate or physical task.",
+    "Residuals refer to each solver scaling; comparisons are not physical performance or a research ranking.",
+    "Repair6 omits redundant trust rows, contrary to the original proposal to retain trust. Subsequent source repair retains trust; historical source/results remain unchanged.",
+    "Repair6 originalMaximumViolationRow maps reduced backend worst, not a full-original worst. No usable vector was returned, so the full-original candidate scan was not reached. Prospective repair separates these fields.",
+    "Compile/link plans use Dell retained dependency paths; no portable CI reproduction claimed."
+  ]
+}

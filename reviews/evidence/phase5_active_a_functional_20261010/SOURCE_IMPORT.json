@@ -1,0 +1,88 @@
+{
+  "schema": "ROOT_ACTIVE_A_SOURCE_IMPORT_V1",
+  "source_packet_ready_sha256": "25b8572470112ed66f7c3735bca1e58b2aa16ca0ebbeea4bf8c1917de2fc4fdb",
+  "files": {
+    "active_first_cycle.cpp": {
+      "bytes": 11734,
+      "sha256": "9b92495de638e303ee5995f59e3bdc1a96d3673f1c6ad7ad2b08787540a56aad"
+    },
+    "affine_assembly.cpp": {
+      "bytes": 28981,
+      "sha256": "d478eda1f0fe97bfc41851515f4baa3e485fd4a57968a62dcb6233ae1157bbd5"
+    },
+    "affine_assembly.hpp": {
+      "bytes": 6026,
+      "sha256": "6faee2961242052c7655da41e8988dd0844f14c3cfa885672aa7c03eaa1dcb57"
+    },
+    "box_screen_tests.cpp": {
+      "bytes": 2954,
+      "sha256": "d922876babec2867dd1293bcee259ac12e4b2a6af5a30dd551209e097c0abaf8"
+    },
+    "integrated_horizon_qp.cpp": {
+      "bytes": 27778,
+      "sha256": "1accb46d2d06f5d2a0126e2c2d2719c2bf0f652f2eddd487d84e855710cfb8d4"
+    },
+    "integrated_horizon_qp.hpp": {
+      "bytes": 8414,
+      "sha256": "bd03ec2511ea5070708e1b59f87745777d8e1b6dc82840f94141f7c466caf95c"
+    },
+    "invariant_tests.cpp": {
+      "bytes": 4721,
+      "sha256": "f5a859d4cf9d79a5ae1b533b8dd62776f2bba6599dfdf691a2915ef3296a33f9"
+    },
+    "linear_box_screen.hpp": {
+      "bytes": 3841,
+      "sha256": "d329e8a10ff754f97cd304c4dae763538ad7542790b6016d738fba72fdb74a42"
+    },
+    "lossless_evidence.cpp": {
+      "bytes": 14600,
+      "sha256": "9609fab7b29b7de2c72f266f4020a49289fc429ba520a7124c876c92c05b8633"
+    },
+    "lossless_evidence.hpp": {
+      "bytes": 1817,
+      "sha256": "47703a81c47d04a3e22e3108c27b77447ec812b74995d030f0570ce2e1bd95a4"
+    },
+    "model_boundary.cpp": {
+      "bytes": 14091,
+      "sha256": "04c94821ee57669431b8c7bceac1d66004fdfc8af11424008e89890a7486630a"
+    },
+    "model_boundary.hpp": {
+      "bytes": 2528,
+      "sha256": "51b2e845860fb4faecfc95b7f9873439ab4e682adce37a290e6fe704ee48a9d9"
+    },
+    "normalization.cpp": {
+      "bytes": 23976,
+      "sha256": "a0cd0c9cdb505f922f1744f24cf115057b6ba9f3a9bc1b3ed0c9bdb82d358ed5"
+    },
+    "normalization.hpp": {
+      "bytes": 4288,
+      "sha256": "9456be5c205f23d2aa2210eac02286d030204a446af003ee85362b971ccb43d8"
+    },
+    "observer_tests.cpp": {
+      "bytes": 3785,
+      "sha256": "d1ff998984981a5ded1e92b8d452503e8b489ecfb0d067fb04ff5fd616d02877"
+    },
+    "runtime_observer.cpp": {
+      "bytes": 6658,
+      "sha256": "66a659f856d2fcebd220892a405500d98c6076a6e9d4655a66866d6fb10ab65d"
+    },
+    "runtime_observer.hpp": {
+      "bytes": 3308,
+      "sha256": "0c43675ce98339a1030bc9625a248b61dd5bbfc0b2a9f8c135183d66da069cf1"
+    },
+    "session_primitives.hpp": {
+      "bytes": 2259,
+      "sha256": "0b76bc232ed81dc9b4831617ae1690cfc287def914b8bca5f05ce6e6e25b6080"
+    },
+    "task_local_provider.cpp": {
+      "bytes": 1839,
+      "sha256": "051b424236979f9fe7ea4cb96564f54969025c997bfba2c61d347a23f7fbae4c"
+    },
+    "task_local_provider.hpp": {
+      "bytes": 640,
+      "sha256": "1819e2f626fb0ff65ad7e7e8de0b0b52f625e6bf435b073d7cca55722d76f093"
+    }
+  },
+  "scope": "Actual repair6 source, with documented trust retention proposal deviation and mapped-backend worst-index qualifier. Subsequent prospective repairs are not claimed included.",
+  "phase5": "NOT_ACCEPTED"
+}

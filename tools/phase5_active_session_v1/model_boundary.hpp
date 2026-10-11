@@ -28,6 +28,8 @@ class OwnedPublicForecast final {
  const std::vector<phase5_public_coupled_augmented::Cell>& nativeCells() const;
  const std::string& invocationSha256() const;
  double originalObservedAge() const;
+ const NativeMetadata& verifiedMetadata() const;
+ const SessionPins& startupPins() const;
  bool bindingVerified() const noexcept;
  private:
  explicit OwnedPublicForecast(std::unique_ptr<detail::ForecastStorage>);
@@ -49,6 +51,8 @@ class Session final {
   const ProgressHistory&,const CurrentBoundaryExpectation&,const std::vector<NominalControl>&);
  const NativeMetadata& verifiedMetadata() const;
  void verifyTermination();
+ bool terminationVerified() const;
+ const std::string& terminationFailure() const;
  Count cumulativeCharges() const;
  private:
  std::shared_ptr<detail::SessionStorage> storage_;

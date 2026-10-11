@@ -24,16 +24,16 @@ void Simulation::observe(Snapshot& out){
  need(!failed_&&!terminated_&&!in_flight_&&!out.complete&&out.stage=="NOT_STARTED","failed/inflight/reused observer attempt");
  facts_.observations=live::checkedAdd(facts_.observations,1);
  try{
-  out.owner_token=owner_token_;out.stage="INDEPENDENT_OBSERVER_BEFORE";const int n=mj_stateSize(model_.get(),mjSTATE_INTEGRATION);need(n>0&&n<=65536,"bounded integration observation");out.integration_before.resize(n);out.integration_after.resize(n);++facts_.get_state;mj_getState(model_.get(),state_.get(),out.integration_before.data(),mjSTATE_INTEGRATION);
+  out.owner_token=owner_token_;out.stage="INDEPENDENT_OBSERVER_BEFORE";const int n=mj_stateSize(model_.get(),mjSTATE_INTEGRATION);need(n>0&&n<=65536,"bounded integration observation");out.integration_before.resize(n);out.integration_after.resize(n);++facts_.get_state;mj_getState(model_.get(),state_.get(),out.integration_before.data(),mjSTATE_INTEGRATION);out.before_written=true;
   ++facts_.copy;need(mj_copyData(scratch_.get(),model_.get(),state_.get())==scratch_.get(),"native scratch copy failed");++facts_.forward;mj_forward(model_.get(),scratch_.get());
   out.capture=std::chrono::steady_clock::now();out.stage="ACTUAL_ENCODER_AND_OWNED_HISTORY";
   const std::string observation="OBS_"+epoch_+"_"+std::to_string(facts_.observations),transaction="TX_"+epoch_+"_"+std::to_string(completed_.completed_command_sequence);
   auto& o=out.observed;o.boundary=completed_;o.observation_id=observation;o.transaction_id=transaction;o.current_contact_free=scratch_->ncon==0;
-  for(int j=0;j<7;++j){o.q[j]=scratch_->qpos[qpos_[j]];o.v[j]=scratch_->qvel[dof_[j]];need(std::isfinite(o.q[j])&&std::isfinite(o.v[j])&&scratch_->ctrl[actuators_[j]]==C_[j],"nonfinite encoder or accepted target differs from native ctrl");}
+  for(int j=0;j<7;++j){o.q[j]=scratch_->qpos[qpos_[j]];o.v[j]=scratch_->qvel[dof_[j]];need(std::isfinite(o.q[j])&&std::isfinite(o.v[j])&&scratch_->ctrl[actuators_[j]]==C_[j],"nonfinite encoder or accepted target differs from native ctrl");out.joints_read=j+1;}
   out.command.C=C_;out.command.w=w_;out.command.previous_alpha=previous_alpha_;out.command.boundary=completed_;out.command.observation_id=observation;out.command.transaction_id=transaction;
   out.progress.s=s_;out.progress.r=r_;out.progress.previous_b=previous_b_;out.progress.boundary=completed_;out.progress.observation_id=observation;out.progress.transaction_id=transaction;
   out.contacts=scratch_->ncon;out.simulation_time=scratch_->time;
-  out.stage="INDEPENDENT_OBSERVER_AFTER";++facts_.get_state;mj_getState(model_.get(),state_.get(),out.integration_after.data(),mjSTATE_INTEGRATION);need(bits(out.integration_before,out.integration_after),"scratch observer changed integration state");need(out.contacts==0,"current observed contact");need(out.simulation_time==state_->time,"scratch/current clock mismatch");
+  out.stage="INDEPENDENT_OBSERVER_AFTER";++facts_.get_state;mj_getState(model_.get(),state_.get(),out.integration_after.data(),mjSTATE_INTEGRATION);out.after_written=true;need(bits(out.integration_before,out.integration_after),"scratch observer changed integration state");need(out.contacts==0,"current observed contact");need(out.simulation_time==state_->time,"scratch/current clock mismatch");
   o.completed=true;out.command.completed=true;out.progress.completed=true;out.complete=true;out.stage="COMPLETE_CURRENT_NATIVE_BOUNDARY";out.observed.state_age_seconds=ageSeconds(out);
  }catch(const std::exception& e){out.error=e.what();failed_=true;throw;}
 }
@@ -45,5 +45,5 @@ live::CurrentBoundaryExpectation Simulation::current(const Snapshot& out,Observa
  else need(clock==ObservationClock::OfflineFrozenSimulationBoundary,"unknown observation clock mode");
  live::CurrentBoundaryExpectation c;c.boundary=completed_;c.observation_id=out.observed.observation_id;c.transaction_id=out.observed.transaction_id;c.maximum_age_seconds=.004;c.no_command_in_flight=true;return c;
 }
-void Simulation::verifyTermination(){need(!terminated_,"native simulation already terminated");terminated_=true;const auto f=live::observePinnedFile(xml_pin_.path,xml_pin_.sha256);need(f.bytes==xml_pin_.bytes,"native XML changed at termination");}
+void Simulation::verifyTermination(){need(!terminated_,"native simulation already terminated");terminated_=true;try{const auto f=live::observePinnedFile(xml_pin_.path,xml_pin_.sha256);need(f.bytes==xml_pin_.bytes,"native XML changed at termination");termination_passed_=true;}catch(const std::exception& e){termination_failure_=e.what();throw;}catch(...){termination_failure_="unknown native termination failure";throw;}}
 }
