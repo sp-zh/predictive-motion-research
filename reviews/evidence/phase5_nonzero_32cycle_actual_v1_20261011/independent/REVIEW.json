@@ -1,0 +1,246 @@
+{
+  "schema": "ROOT_ACTUAL38_32_COMPONENT_REVIEW_V1",
+  "verdict": "PASS_SAVED_ALGEBRA_AND_ACTUAL32_COMPONENT",
+  "packet_ready_sha256": "a96e538e7ec9b8c1b80af1b5783fee9b19fecf0c30116220954685dd480630f2",
+  "unique_payloads": 1233,
+  "payload_bytes": 2554719887,
+  "summary": {
+    "cycles": 32,
+    "unique_binary_receipts": 584,
+    "all6400_literal_updates": true,
+    "all12800_reference_and_B_samples": true,
+    "all64_actual2ms_samples": true,
+    "s_r_previousb": [
+      0.0012665643073840446,
+      0.02213409807192644,
+      0.17293775393293884
+    ],
+    "actual_TCP_max_position_m": 0.003327944547755789,
+    "actual_TCP_max_SO3_rad": 0.00548443958666738,
+    "SI_max": 1.0000333894311098e-13,
+    "B_max30": 2.2140449390040725e-10,
+    "original_A_regen_max": 2.220446049250313e-16,
+    "original_F_regen_max": 1.1449174941446927e-16,
+    "original_bound_regen_max": 8.171241461241152e-14,
+    "reduction_array_max": 1.7763568394002505e-15,
+    "fine": [
+      {
+        "name": "GeometryQuery",
+        "calls_sum": 12800,
+        "per_cycle_calls_unique": [
+          400
+        ],
+        "seconds_sum_inclusive": 19.495013911,
+        "per_cycle_descriptive_p50_p95_p99_max": [
+          0.6081543389999999,
+          0.619557409,
+          0.6239651194300001,
+          0.6257311730000003
+        ]
+      },
+      {
+        "name": "FkJacobian",
+        "calls_sum": 358400,
+        "per_cycle_calls_unique": [
+          11200
+        ],
+        "seconds_sum_inclusive": 0.6847489419999999,
+        "per_cycle_descriptive_p50_p95_p99_max": [
+          0.021292076500000083,
+          0.023055117400000037,
+          0.02494942722,
+          0.025165633
+        ]
+      },
+      {
+        "name": "CoalBatch",
+        "calls_sum": 12800,
+        "per_cycle_calls_unique": [
+          400
+        ],
+        "seconds_sum_inclusive": 2.5331950799999996,
+        "per_cycle_descriptive_p50_p95_p99_max": [
+          0.078705814,
+          0.08255497889999996,
+          0.08533678984000004,
+          0.0855878390000001
+        ]
+      },
+      {
+        "name": "CoverBatch",
+        "calls_sum": 12800,
+        "per_cycle_calls_unique": [
+          400
+        ],
+        "seconds_sum_inclusive": 16.167060206000002,
+        "per_cycle_descriptive_p50_p95_p99_max": [
+          0.5041848615,
+          0.5161658744500002,
+          0.5172177165000001,
+          0.517351497
+        ]
+      },
+      {
+        "name": "GradientSample",
+        "calls_sum": 451776,
+        "per_cycle_calls_unique": [
+          14118
+        ],
+        "seconds_sum_inclusive": 0.039140776999999585,
+        "per_cycle_descriptive_p50_p95_p99_max": [
+          0.0012137124999999993,
+          0.0013149745999999967,
+          0.001369542129999976,
+          0.001377005999999982
+        ]
+      },
+      {
+        "name": "Assembly",
+        "calls_sum": 32,
+        "per_cycle_calls_unique": [
+          1
+        ],
+        "seconds_sum_inclusive": 3.3967456510000003,
+        "per_cycle_descriptive_p50_p95_p99_max": [
+          0.10630472799999999,
+          0.1103194126,
+          0.11602711773,
+          0.11763469
+        ]
+      },
+      {
+        "name": "Hint",
+        "calls_sum": 32,
+        "per_cycle_calls_unique": [
+          1
+        ],
+        "seconds_sum_inclusive": 14.697771916,
+        "per_cycle_descriptive_p50_p95_p99_max": [
+          0.45199220549999997,
+          0.48582493564999996,
+          0.6127352043700002,
+          0.658502852
+        ]
+      },
+      {
+        "name": "NativeWrapper",
+        "calls_sum": 32,
+        "per_cycle_calls_unique": [
+          1
+        ],
+        "seconds_sum_inclusive": 1.7687632139999998,
+        "per_cycle_descriptive_p50_p95_p99_max": [
+          0.0544777575,
+          0.0594056356,
+          0.06104105872,
+          0.061645214
+        ]
+      },
+      {
+        "name": "EvidenceCodecWriteSha",
+        "calls_sum": 512,
+        "per_cycle_calls_unique": [
+          16
+        ],
+        "seconds_sum_inclusive": 54.44611893,
+        "per_cycle_descriptive_p50_p95_p99_max": [
+          1.696319758,
+          1.74416447335,
+          1.77264078693,
+          1.783687574
+        ]
+      },
+      {
+        "name": "EvidenceFsync",
+        "calls_sum": 512,
+        "per_cycle_calls_unique": [
+          16
+        ],
+        "seconds_sum_inclusive": 6.4963545069999995,
+        "per_cycle_descriptive_p50_p95_p99_max": [
+          0.158188807,
+          0.5255033495999997,
+          0.79990105415,
+          0.812612894
+        ]
+      },
+      {
+        "name": "JournalCodecWrite",
+        "calls_sum": 256,
+        "per_cycle_calls_unique": [
+          8
+        ],
+        "seconds_sum_inclusive": 0.006961327,
+        "per_cycle_descriptive_p50_p95_p99_max": [
+          0.000205851,
+          0.00029801405,
+          0.00038485426000000017,
+          0.00042132700000000004
+        ]
+      },
+      {
+        "name": "JournalFsync",
+        "calls_sum": 256,
+        "per_cycle_calls_unique": [
+          8
+        ],
+        "seconds_sum_inclusive": 1.7881183079999998,
+        "per_cycle_descriptive_p50_p95_p99_max": [
+          0.025749737,
+          0.33070777665,
+          0.34928604873,
+          0.353001125
+        ]
+      }
+    ],
+    "whole_cycle_seconds_sum": 160.09968507000002,
+    "whole_cycle_descriptive_p50_p95_p99_max": [
+      4.9023780485,
+      5.662179771,
+      5.83922208144,
+      5.83964014
+    ],
+    "deadline_misses": 32,
+    "internal_entry_wall": 172.628500584,
+    "original_cumulative_slots": 147533508,
+    "separate_numeric_slots": 285389216,
+    "retention": {
+      "schema": "ROOT_ACTUAL38_32_RETENTION_V1",
+      "warm_points": 1000,
+      "warm_journal_rows": 3000,
+      "warm_final_state_and_actual_history_match_task0": true,
+      "startup_physical_derivatives_excluded": {
+        "max_a": 6.6436306091723925,
+        "max_available_j": 1357.6628167075585,
+        "first_j_available": 0
+      },
+      "all1200_value_bounds_checked": 12800,
+      "hint_signed_complementarity_max": 6.895643830292557e-17,
+      "all32_retained_actual_commit_and_task_metric_records_exact": true,
+      "actual64_bounds_checked": true,
+      "all1705_profile_before_after_records_exact": true,
+      "profile_bound_actual_single_dispatch": true,
+      "facts": [
+        1,
+        2,
+        1,
+        1132,
+        1130,
+        2388,
+        66,
+        1064,
+        32
+      ],
+      "scope": "Saved-file arithmetic/provenance only; full queryraw not retained, no fault injection, runtime SDK proof beyond recorded pins/Root passive proof, task/stop/realtime/Phase5 acceptance."
+    },
+    "scope": "Single32 sequential offline development epoch, inclusive fine counters not a partition; sample1of256 nominal-provider gradients no extrapolation/errorbars; physicaltask128ms, no fulltask/stop/realtime/Phase5 acceptance"
+  },
+  "original_exact_E0_equivalence": false,
+  "full_task": false,
+  "physical_stop": false,
+  "realtime": false,
+  "hardware": false,
+  "heldout_result": false,
+  "phase5_accepted": false,
+  "new_Model_native_Scene_FK_compiler_optimizer_SSH_calls": 0
+}

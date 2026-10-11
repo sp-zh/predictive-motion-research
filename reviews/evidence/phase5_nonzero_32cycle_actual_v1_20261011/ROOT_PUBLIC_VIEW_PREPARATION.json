@@ -1,0 +1,32 @@
+{
+  "schema": "ROOT_ACTUAL38_VIEW_PREPARATION_V1",
+  "failure_retained": {
+    "script": "/private/tmp/root_prepare_actual38_public.py initial version",
+    "exit": 1,
+    "reason": "Conservative400000B public per-file selector refused497989B exact active_run_plan.json before native/figure mutation. Selector corrected to1MiB bound; exact bytes copied. Not a native numerical failure."
+  },
+  "native_calls": 0,
+  "source_PACKET_READY": "a96e538e7ec9b8c1b80af1b5783fee9b19fecf0c30116220954685dd480630f2",
+  "additional_native_receipts": [
+    {
+      "path": "actual-dell/session-nonzero-progress-32cycle-timing-v1-20261011-attempt38/build-attempt1/BUILD_RESULT.json",
+      "bytes": 92088,
+      "sha256": "fc669e4ac3d33f4319ac22fc25c93aba0bc3b5f6c1d2006005fe4b16fad3e3e8"
+    },
+    {
+      "path": "actual-dell/session-nonzero-progress-32cycle-timing-v1-20261011-attempt38/link-attempt1/BUILD_RESULT.json",
+      "bytes": 19467,
+      "sha256": "9302ecfc60bfd066ffda58029acea4d36b12a69d13cc6d6610610fe1cccc6e9b"
+    },
+    {
+      "path": "actual-dell/session-nonzero-progress-32cycle-timing-v1-20261011-attempt38/run-attempt1/BUILD_RESULT.json",
+      "bytes": 2187,
+      "sha256": "3d2d9b63fb234188fac67f8f5716d765958c491e699f366c069995de897a5fa5"
+    },
+    {
+      "path": "actual-dell/session-nonzero-progress-32cycle-timing-v1-20261011-attempt38/profile-version1/active_input.json",
+      "bytes": 327105,
+      "sha256": "a0fc83044816536880e07355e70b22687da9890bf63f8f21508719f5093b591e"
+    }
+  ]
+}

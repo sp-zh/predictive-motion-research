@@ -68,6 +68,13 @@ This image depicts the integrated scene; it is not a predictive-control result.
 
 ## Simulation and diagnostic figures
 
+![32 genuine current cycles: progress, accuracy and timing](../figures/phase5_nonzero_32cycle_actual_v1_20261011/actual32_diagnostic.png)
+
+![64 actual recorded TCP poses against the task reference](../figures/phase5_nonzero_32cycle_actual_v1_20261011/actual32_tcp_prefix.png)
+
+Attempt38 shows all32 commits/64 physical substeps over128ms, final progress0.1266564%, original TCP gates passing and every4ms deadline missed. The timing bars are inclusive and overlap; the 3D coordinates show the actual short TCP prefix, not an arm completing its task. Full task and physical stop remain unverified. [Figure provenance and portable retained-data renderer](../figures/phase5_nonzero_32cycle_actual_v1_20261011/PROVENANCE.json), [development evidence](../reviews/evidence/phase5_nonzero_32cycle_actual_v1_20261011/README.md).
+
+
 ![Same task-start QP: retained numeric failures](../figures/phase5_task_start_a_v1_20261010/diagnostics.png)
 
 Independent saved-map/QP reconstruction agrees to roundoff. The native unsolved iterate violates original SI; an external reference passes numeric SI but fails strict progress history. Both are diagnostic data, neither was executed. Inline geometry and nonlinear B remain absent in this A component. [Provenance](../figures/phase5_task_start_a_v1_20261010/provenance.json), [independent review](../reviews/evidence/phase5_task_start_a_v1_20261010/independent/review.md).

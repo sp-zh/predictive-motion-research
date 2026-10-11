@@ -1,0 +1,4 @@
+[{"test": "cycle_support_tests", "exit": 0, "wall_s": 0.02160138000002121, "elf_sha256": "152a1ee7d4ae21f80e4255b8854537161b541c30c099ac74f4224e234af54978", "Model_native_invocations": 0}, {"test": "fine_timing_tests", "exit": 0, "wall_s": 0.0015178969999851688, "elf_sha256": "1f5a199c0819db47930d0ead274e9aa1638617a2131127463a175bcc68b68e94", "Model_native_invocations": 0}]
+PASS nonzero-delta/progress/current-hint-invalidation/cumulative-caps/actual-wall-timing; no Model or physical step
+PASS timing nesting, exception retention, binding lifetime, unavailable meter and exact1of256 gradient sampling; no Model/native execution
+

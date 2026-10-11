@@ -1,0 +1,120 @@
+{
+  "schema": "ACTUAL38_SMALL_PUBLIC_SELECTION_V1",
+  "files": [
+    {
+      "source": "READY.json",
+      "destination": "reviews/evidence/phase5_nonzero_32cycle_actual_v1_20261011/producer/READY.json",
+      "bytes": 286319,
+      "sha256": "a96e538e7ec9b8c1b80af1b5783fee9b19fecf0c30116220954685dd480630f2"
+    },
+    {
+      "source": "ACTUAL38_FUNCTIONAL_SUMMARY.json",
+      "destination": "reviews/evidence/phase5_nonzero_32cycle_actual_v1_20261011/producer/ACTUAL38_FUNCTIONAL_SUMMARY.json",
+      "bytes": 2717,
+      "sha256": "491c5df37e2317ea588c946220a7ac0d9675aff035dc5f4412f81008bb6fa82f"
+    },
+    {
+      "source": "CAPTURE_VERIFICATION.json",
+      "destination": "reviews/evidence/phase5_nonzero_32cycle_actual_v1_20261011/producer/CAPTURE_VERIFICATION.json",
+      "bytes": 9143,
+      "sha256": "34fb8d4c834928edc2de5321cdd0bcfc8341e710349a788a8680d91bc90988b1"
+    },
+    {
+      "source": "COLLECTION_RECEIPT.json",
+      "destination": "reviews/evidence/phase5_nonzero_32cycle_actual_v1_20261011/producer/COLLECTION_RECEIPT.json",
+      "bytes": 268,
+      "sha256": "cf0be4043ea30b449b39ca2635cbf02910f51a4fd3df87b2629c7bc0aa3e652f"
+    },
+    {
+      "source": "SCOPE.md",
+      "destination": "reviews/evidence/phase5_nonzero_32cycle_actual_v1_20261011/producer/SCOPE.md",
+      "bytes": 1489,
+      "sha256": "1999b4ce325755991d57ba97e1da0e675905afb50e8daaa689a618adb337b56b"
+    },
+    {
+      "source": "decoded-native/ACTUAL_DYNAMIC_SUMMARY.json",
+      "destination": "reviews/evidence/phase5_nonzero_32cycle_actual_v1_20261011/producer/decoded-native/ACTUAL_DYNAMIC_SUMMARY.json",
+      "bytes": 85923,
+      "sha256": "b08a9a85075047095d71fa0985d50b0c1200109760c6976adbb28f8a735631fd"
+    },
+    {
+      "source": "decoded-task/SUMMARY.json",
+      "destination": "reviews/evidence/phase5_nonzero_32cycle_actual_v1_20261011/producer/decoded-task/SUMMARY.json",
+      "bytes": 403,
+      "sha256": "563d9f029774333a9dab9bd184acc328826db7f3dd169d52a54b3eec77ce40a5"
+    },
+    {
+      "source": "decoded-fine/SUMMARY.json",
+      "destination": "reviews/evidence/phase5_nonzero_32cycle_actual_v1_20261011/producer/decoded-fine/SUMMARY.json",
+      "bytes": 1484,
+      "sha256": "8e796c9c233465df63eb753c5177cbbde03f477fe900614938333f42c7e6a9dd"
+    },
+    {
+      "source": "decoded-geometry/SUMMARY.json",
+      "destination": "reviews/evidence/phase5_nonzero_32cycle_actual_v1_20261011/producer/decoded-geometry/SUMMARY.json",
+      "bytes": 21688,
+      "sha256": "64d46d6b4f3ce014eb918f8ea0cb8fbf26a32b1ef2bdc9547a250a4ecf8ea0fd"
+    },
+    {
+      "source": "producer-local/RESOURCE_AND_STORAGE_PLAN.json",
+      "destination": "reviews/evidence/phase5_nonzero_32cycle_actual_v1_20261011/producer/producer-local/RESOURCE_AND_STORAGE_PLAN.json",
+      "bytes": 1625,
+      "sha256": "742e4d00d5c96f2defa312561a9a31e5b72a0b55edeb84538c877289900237f2"
+    },
+    {
+      "source": "producer-local/active_run_plan.json",
+      "destination": "reviews/evidence/phase5_nonzero_32cycle_actual_v1_20261011/producer/producer-local/active_run_plan.json",
+      "bytes": 497989,
+      "sha256": "5bff00060ace5d01a305e5eba293608e24fa7d9a9f9e6a4cd89e0a3177148deb"
+    },
+    {
+      "source": "producer-local/dev_compile_plan.json",
+      "destination": "reviews/evidence/phase5_nonzero_32cycle_actual_v1_20261011/producer/producer-local/dev_compile_plan.json",
+      "bytes": 78493,
+      "sha256": "02b3a6a7b3ef742dd51bfc9605676fae1701ff5a94c0500fc40e7b47871181e6"
+    },
+    {
+      "source": "producer-local/dev_link_plan.json",
+      "destination": "reviews/evidence/phase5_nonzero_32cycle_actual_v1_20261011/producer/producer-local/dev_link_plan.json",
+      "bytes": 20173,
+      "sha256": "2ad754afd2fbf525714c0f4f6d78444ad1fc1741bd9103a352f0c82ae5c80933"
+    },
+    {
+      "source": "producer-local/PHYSICAL_VOLUME_PRECHECK.json",
+      "destination": "reviews/evidence/phase5_nonzero_32cycle_actual_v1_20261011/producer/producer-local/PHYSICAL_VOLUME_PRECHECK.json",
+      "bytes": 614,
+      "sha256": "25ff26ae741d3bf850fcdc3e31913ad34dec2deaf8f0d94020d1e83108eff288"
+    },
+    {
+      "source": "producer-local/NATIVE_ONESHOT_DISPATCH_EXIT.json",
+      "destination": "reviews/evidence/phase5_nonzero_32cycle_actual_v1_20261011/producer/producer-local/NATIVE_ONESHOT_DISPATCH_EXIT.json",
+      "bytes": 113,
+      "sha256": "a68ff8781aacb0ff079cc8a1c45b7d9cfae0edf55b428196e56ee8b6e8baa695"
+    },
+    {
+      "source": "producer-local/NATIVE_ONESHOT_DISPATCH.stdout",
+      "destination": "reviews/evidence/phase5_nonzero_32cycle_actual_v1_20261011/producer/producer-local/NATIVE_ONESHOT_DISPATCH.stdout",
+      "bytes": 544,
+      "sha256": "3352f354ccb97e293de24aba6c7349edbd9013a7300e8e9694fee769f7916caf"
+    },
+    {
+      "source": "producer-local/NATIVE_ONESHOT_DISPATCH.stderr",
+      "destination": "reviews/evidence/phase5_nonzero_32cycle_actual_v1_20261011/producer/producer-local/NATIVE_ONESHOT_DISPATCH.stderr",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "source": "producer-local/PURE_TEST_DISPATCH.stdout",
+      "destination": "reviews/evidence/phase5_nonzero_32cycle_actual_v1_20261011/producer/producer-local/PURE_TEST_DISPATCH.stdout",
+      "bytes": 633,
+      "sha256": "383ea76d3ce49402be2b42e39e167eb1a81288cb31d4b039262ca993682f1d48"
+    },
+    {
+      "source": "producer-local/PURE_TEST_DISPATCH.stderr",
+      "destination": "reviews/evidence/phase5_nonzero_32cycle_actual_v1_20261011/producer/producer-local/PURE_TEST_DISPATCH.stderr",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    }
+  ],
+  "omitted": "Full raw binary/geometry/value tables and complete audit/failure inputs stay in full SHA-verified archives; selected summaries and all supplied figure inputs are public. This is not a complete SDK/dependency copy."
+}

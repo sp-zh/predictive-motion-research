@@ -1,0 +1,7 @@
+# Actual attempt38: 32 finite nonzero closed-loop cycles
+
+One genuinely initialized/warmed native simulation and one authentic prediction Session completed 32 current reobserved transactions, 64 actual 2 ms task substeps and 12,800 candidate validation samples. Original full 14,756 SI constraints, strict recursive domains, physical jerk/clearance/sigma/current-owner gates remained mandatory. Startup and termination identities were verified. The disclosed 1e-13 numerical planning terminal progress target remains a biased planning subset, not exact original E0 equivalence or physical stop.
+
+This is 128 ms of logical task time. Final path progress is 0.0012665643073840446 (0.1267 percent). All 32 cycles missed the 4 ms deadline; mean wall cycle 5.0031151584375 seconds. Full task, physical stop, online performance and Phase5 acceptance are unverified. Phase5 NOT_ACCEPTED; Phase6 NOT_STARTED. Historical connection failures and a local fixture generation failure remain retained. No consumed36 or rejected protocol was rerun.
+
+Raw archive and every payload are SHA-256 identified by READY.json. Native ELFs/build caches remain on Dell and their identities are recorded; they are excluded from the archive/Git. Figures use actual recorded poses and timing. Gradient time is a 1/256 sample, not extrapolated total. Nested spans overlap and must not be added. Runtime/dependency/source evidence is not an independent native recomputation; Root conducts independent review separately.

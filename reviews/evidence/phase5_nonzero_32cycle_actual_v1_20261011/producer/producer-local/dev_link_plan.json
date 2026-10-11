@@ -1,0 +1,225 @@
+{
+  "schema": "GEOMETRY_QP_FULL144_PLANNING_TAIL_NATIVE_AND_PURE_LINK_V1",
+  "output_directory": "/home/codextransfer/predictive_motion/results/phase5/session-nonzero-progress-32cycle-timing-v1-20261011-attempt38/link-attempt1",
+  "env": {
+    "PATH": "/usr/bin:/bin",
+    "LANG": "C",
+    "LC_ALL": "C",
+    "TZ": "UTC"
+  },
+  "input_files": [
+    {
+      "requested_path": "/home/codextransfer/predictive_motion/results/phase5/integrated-first-cycle-v1-20261010/build-attempt1/unit-7.o",
+      "resolved_path": "/home/codextransfer/predictive_motion/results/phase5/integrated-first-cycle-v1-20261010/build-attempt1/unit-7.o",
+      "bytes": 293608,
+      "sha256": "313710e7ef8834c83739a9d1b3cdd121b7c49a3db63dc07978762f86af6a103f"
+    },
+    {
+      "requested_path": "/home/codextransfer/predictive_motion/results/phase5/session-nonzero-progress-32cycle-timing-v1-20261011-attempt38/build-attempt1/unit-1.o",
+      "resolved_path": "/home/codextransfer/predictive_motion/results/phase5/session-nonzero-progress-32cycle-timing-v1-20261011-attempt38/build-attempt1/unit-1.o",
+      "bytes": 228952,
+      "sha256": "843df0b78f966bf4e9618931aeaecfd6ac043804569e4a59fcb61528e9e9ebb3"
+    },
+    {
+      "requested_path": "/home/codextransfer/predictive_motion/results/phase5/session-nonzero-progress-32cycle-timing-v1-20261011-attempt38/build-attempt1/unit-10.o",
+      "resolved_path": "/home/codextransfer/predictive_motion/results/phase5/session-nonzero-progress-32cycle-timing-v1-20261011-attempt38/build-attempt1/unit-10.o",
+      "bytes": 43424,
+      "sha256": "52e381cd70b0cec91cc72cd27b69940b3fc4357ad5ad9b6087c80ffd71323195"
+    },
+    {
+      "requested_path": "/home/codextransfer/predictive_motion/results/phase5/session-nonzero-progress-32cycle-timing-v1-20261011-attempt38/build-attempt1/unit-12.o",
+      "resolved_path": "/home/codextransfer/predictive_motion/results/phase5/session-nonzero-progress-32cycle-timing-v1-20261011-attempt38/build-attempt1/unit-12.o",
+      "bytes": 73032,
+      "sha256": "59bba0c5a1cd410fffccdb4afa3e20a99e57e4dd63bf8a8b7508ecd8ced1f06b"
+    },
+    {
+      "requested_path": "/home/codextransfer/predictive_motion/results/phase5/session-nonzero-progress-32cycle-timing-v1-20261011-attempt38/build-attempt1/unit-16.o",
+      "resolved_path": "/home/codextransfer/predictive_motion/results/phase5/session-nonzero-progress-32cycle-timing-v1-20261011-attempt38/build-attempt1/unit-16.o",
+      "bytes": 7784,
+      "sha256": "1d5c887772a320038d0d18a3499a64df41cedaf08dbbcda63067bbba28c6e681"
+    },
+    {
+      "requested_path": "/home/codextransfer/predictive_motion/results/phase5/session-nonzero-progress-32cycle-timing-v1-20261011-attempt38/build-attempt1/unit-2.o",
+      "resolved_path": "/home/codextransfer/predictive_motion/results/phase5/session-nonzero-progress-32cycle-timing-v1-20261011-attempt38/build-attempt1/unit-2.o",
+      "bytes": 89928,
+      "sha256": "73cb3304f9ec895477e7f917cef75b6c751a3b55e4d16737de5fb440b98acec7"
+    },
+    {
+      "requested_path": "/home/codextransfer/predictive_motion/results/phase5/session-nonzero-progress-32cycle-timing-v1-20261011-attempt38/build-attempt1/unit-3.o",
+      "resolved_path": "/home/codextransfer/predictive_motion/results/phase5/session-nonzero-progress-32cycle-timing-v1-20261011-attempt38/build-attempt1/unit-3.o",
+      "bytes": 149416,
+      "sha256": "1c31f244782b9f8b01fbace7deb33220a018f62bb8631f250d2d5c9aad6df851"
+    },
+    {
+      "requested_path": "/home/codextransfer/predictive_motion/results/phase5/session-nonzero-progress-32cycle-timing-v1-20261011-attempt38/build-attempt1/unit-4.o",
+      "resolved_path": "/home/codextransfer/predictive_motion/results/phase5/session-nonzero-progress-32cycle-timing-v1-20261011-attempt38/build-attempt1/unit-4.o",
+      "bytes": 586904,
+      "sha256": "f3efda6584ba2f6235beb34d5e5f0ba6c065050ad3b01159a09b7ee65938d36e"
+    },
+    {
+      "requested_path": "/home/codextransfer/predictive_motion/results/phase5/session-nonzero-progress-32cycle-timing-v1-20261011-attempt38/build-attempt1/unit-5.o",
+      "resolved_path": "/home/codextransfer/predictive_motion/results/phase5/session-nonzero-progress-32cycle-timing-v1-20261011-attempt38/build-attempt1/unit-5.o",
+      "bytes": 879136,
+      "sha256": "9a6e33167f91a09d15644086a4bb9b652f44867237c4d5c875fdb0721cd6f3ee"
+    },
+    {
+      "requested_path": "/home/codextransfer/predictive_motion/results/phase5/session-nonzero-progress-32cycle-timing-v1-20261011-attempt38/build-attempt1/unit-6.o",
+      "resolved_path": "/home/codextransfer/predictive_motion/results/phase5/session-nonzero-progress-32cycle-timing-v1-20261011-attempt38/build-attempt1/unit-6.o",
+      "bytes": 15128,
+      "sha256": "449a550837f97427593febf02436de6d5c8abc0505ac28f292bfde9a983a5435"
+    },
+    {
+      "requested_path": "/home/codextransfer/predictive_motion/results/phase5/session-nonzero-progress-32cycle-timing-v1-20261011-attempt38/build-attempt1/unit-7.o",
+      "resolved_path": "/home/codextransfer/predictive_motion/results/phase5/session-nonzero-progress-32cycle-timing-v1-20261011-attempt38/build-attempt1/unit-7.o",
+      "bytes": 106512,
+      "sha256": "ffd56cf0fcb9e955eed5ae03e84e2c116c74a240ff2decc9ff144a2961ceab5a"
+    },
+    {
+      "requested_path": "/home/codextransfer/predictive_motion/results/phase5/session-nonzero-progress-32cycle-timing-v1-20261011-attempt38/build-attempt1/unit-8.o",
+      "resolved_path": "/home/codextransfer/predictive_motion/results/phase5/session-nonzero-progress-32cycle-timing-v1-20261011-attempt38/build-attempt1/unit-8.o",
+      "bytes": 580632,
+      "sha256": "ccc580d77599f25b09adda48f7667fd2f6695792bcb409d5e440e5ade3d77132"
+    },
+    {
+      "requested_path": "/home/codextransfer/predictive_motion/results/phase5/session-nonzero-progress-32cycle-timing-v1-20261011-attempt38/build-attempt1/unit-9.o",
+      "resolved_path": "/home/codextransfer/predictive_motion/results/phase5/session-nonzero-progress-32cycle-timing-v1-20261011-attempt38/build-attempt1/unit-9.o",
+      "bytes": 218216,
+      "sha256": "2e38e5c0c962ba3f3c24f0b4489c2ffef8fbf7642ef777eaecf805abc17c3c64"
+    },
+    {
+      "requested_path": "/home/codextransfer/predictive_motion/results/phase5/session-task-start-a-primaldual-v2-20261010-attempt5/build-attempt1/unit-9.o",
+      "resolved_path": "/home/codextransfer/predictive_motion/results/phase5/session-task-start-a-primaldual-v2-20261010-attempt5/build-attempt1/unit-9.o",
+      "bytes": 211776,
+      "sha256": "6b892be6fa011db86b17a994d81b8bf12d3e2bddb248f88fe85506bdf082b565"
+    }
+  ],
+  "readonly_directory_rosters": [],
+  "compile_argv": [
+    [
+      "/usr/bin/x86_64-linux-gnu-g++-13",
+      "/home/codextransfer/predictive_motion/results/phase5/session-nonzero-progress-32cycle-timing-v1-20261011-attempt38/build-attempt1/unit-1.o",
+      "/home/codextransfer/predictive_motion/results/phase5/session-nonzero-progress-32cycle-timing-v1-20261011-attempt38/build-attempt1/unit-2.o",
+      "/home/codextransfer/predictive_motion/results/phase5/session-nonzero-progress-32cycle-timing-v1-20261011-attempt38/build-attempt1/unit-3.o",
+      "/home/codextransfer/predictive_motion/results/phase5/session-nonzero-progress-32cycle-timing-v1-20261011-attempt38/build-attempt1/unit-4.o",
+      "/home/codextransfer/predictive_motion/results/phase5/session-nonzero-progress-32cycle-timing-v1-20261011-attempt38/build-attempt1/unit-5.o",
+      "/home/codextransfer/predictive_motion/results/phase5/session-nonzero-progress-32cycle-timing-v1-20261011-attempt38/build-attempt1/unit-6.o",
+      "/home/codextransfer/predictive_motion/results/phase5/session-nonzero-progress-32cycle-timing-v1-20261011-attempt38/build-attempt1/unit-7.o",
+      "/home/codextransfer/predictive_motion/results/phase5/session-nonzero-progress-32cycle-timing-v1-20261011-attempt38/build-attempt1/unit-9.o",
+      "/home/codextransfer/predictive_motion/results/phase5/session-nonzero-progress-32cycle-timing-v1-20261011-attempt38/build-attempt1/unit-8.o",
+      "/home/codextransfer/predictive_motion/results/phase5/session-task-start-a-primaldual-v2-20261010-attempt5/build-attempt1/unit-9.o",
+      "/home/codextransfer/predictive_motion/results/phase5/integrated-first-cycle-v1-20261010/build-attempt1/unit-7.o",
+      "-Wl,--start-group",
+      "/home/codextransfer/predictive_motion/install/predictive_motion_kinematics/lib/librobot_kinematics.a",
+      "/home/codextransfer/predictive_motion/.vendor/osqp-1.0.0-install/lib/libosqpstatic.a",
+      "/home/codextransfer/predictive_motion/results/phase5/repaired-source-configure-only-after-v4-20261009/attempt1/build/inventory-source/input-source/cost-source/affine-source/normalized-source/model-boundary/live-foundation/libpublic_live_affine_v2_foundation.a",
+      "/home/codextransfer/predictive_motion/results/phase5/repaired-source-configure-only-after-v4-20261009/attempt1/build/inventory-source/input-source/cost-source/affine-source/normalized-source/model-boundary/frozen-extension/libpublic_coupled_augmented_extension.a",
+      "/home/codextransfer/predictive_motion/results/phase5/repaired-source-configure-only-after-v4-20261009/attempt1/build/inventory-source/input-source/cost-source/affine-source/normalized-source/model-boundary/frozen-extension/libfrozen_augmented_extension_value.a",
+      "/home/codextransfer/predictive_motion/results/phase5/repaired-source-configure-only-after-v4-20261009/attempt1/build/inventory-source/input-source/cost-source/affine-source/normalized-source/model-boundary/frozen-extension/physical-derivative/libpublic_coupled_derivative_model.a",
+      "/home/codextransfer/predictive_motion/results/phase5/repaired-source-configure-only-after-v4-20261009/attempt1/build/inventory-source/input-source/cost-source/affine-source/normalized-source/model-boundary/frozen-extension/physical-derivative/base-v2/libpublic_coupled_model_v2.a",
+      "-Wl,--end-group",
+      "/home/codextransfer/predictive_motion/.vendor/mujoco-3.3.7/lib/libmujoco.so",
+      "/usr/lib/x86_64-linux-gnu/libcrypto.so",
+      "/usr/lib/x86_64-linux-gnu/libyaml-cpp.so",
+      "/opt/ros/jazzy/lib/x86_64-linux-gnu/libpinocchio_default.so.4.1.0",
+      "/opt/ros/jazzy/lib/x86_64-linux-gnu/libpinocchio_collision.so.4.1.0",
+      "/opt/ros/jazzy/lib/x86_64-linux-gnu/libpinocchio_parsers.so.4.1.0",
+      "/usr/lib/x86_64-linux-gnu/libboost_serialization.so.1.83.0",
+      "/usr/lib/x86_64-linux-gnu/libboost_filesystem.so.1.83.0",
+      "/opt/ros/jazzy/lib/x86_64-linux-gnu/libcoal.so.3.0.3",
+      "-ldl",
+      "-pthread",
+      "-Wl,--disable-new-dtags",
+      "-Wl,-rpath,/home/codextransfer/predictive_motion/.vendor/mujoco-3.3.7/lib:/opt/ros/jazzy/lib/x86_64-linux-gnu:/opt/ros/jazzy/lib:/usr/lib/x86_64-linux-gnu",
+      "-Wl,-Map,/home/codextransfer/predictive_motion/results/phase5/session-nonzero-progress-32cycle-timing-v1-20261011-attempt38/link-attempt1/active_first_cycle.map",
+      "-o",
+      "/home/codextransfer/predictive_motion/results/phase5/session-nonzero-progress-32cycle-timing-v1-20261011-attempt38/link-attempt1/active_first_cycle"
+    ],
+    [
+      "/usr/bin/x86_64-linux-gnu-g++-13",
+      "/home/codextransfer/predictive_motion/results/phase5/session-nonzero-progress-32cycle-timing-v1-20261011-attempt38/build-attempt1/unit-12.o",
+      "-Wl,--start-group",
+      "/home/codextransfer/predictive_motion/install/predictive_motion_kinematics/lib/librobot_kinematics.a",
+      "/home/codextransfer/predictive_motion/.vendor/osqp-1.0.0-install/lib/libosqpstatic.a",
+      "/home/codextransfer/predictive_motion/results/phase5/repaired-source-configure-only-after-v4-20261009/attempt1/build/inventory-source/input-source/cost-source/affine-source/normalized-source/model-boundary/live-foundation/libpublic_live_affine_v2_foundation.a",
+      "/home/codextransfer/predictive_motion/results/phase5/repaired-source-configure-only-after-v4-20261009/attempt1/build/inventory-source/input-source/cost-source/affine-source/normalized-source/model-boundary/frozen-extension/libpublic_coupled_augmented_extension.a",
+      "/home/codextransfer/predictive_motion/results/phase5/repaired-source-configure-only-after-v4-20261009/attempt1/build/inventory-source/input-source/cost-source/affine-source/normalized-source/model-boundary/frozen-extension/libfrozen_augmented_extension_value.a",
+      "/home/codextransfer/predictive_motion/results/phase5/repaired-source-configure-only-after-v4-20261009/attempt1/build/inventory-source/input-source/cost-source/affine-source/normalized-source/model-boundary/frozen-extension/physical-derivative/libpublic_coupled_derivative_model.a",
+      "/home/codextransfer/predictive_motion/results/phase5/repaired-source-configure-only-after-v4-20261009/attempt1/build/inventory-source/input-source/cost-source/affine-source/normalized-source/model-boundary/frozen-extension/physical-derivative/base-v2/libpublic_coupled_model_v2.a",
+      "-Wl,--end-group",
+      "/home/codextransfer/predictive_motion/.vendor/mujoco-3.3.7/lib/libmujoco.so",
+      "/usr/lib/x86_64-linux-gnu/libcrypto.so",
+      "/usr/lib/x86_64-linux-gnu/libyaml-cpp.so",
+      "/opt/ros/jazzy/lib/x86_64-linux-gnu/libpinocchio_default.so.4.1.0",
+      "/opt/ros/jazzy/lib/x86_64-linux-gnu/libpinocchio_collision.so.4.1.0",
+      "/opt/ros/jazzy/lib/x86_64-linux-gnu/libpinocchio_parsers.so.4.1.0",
+      "/usr/lib/x86_64-linux-gnu/libboost_serialization.so.1.83.0",
+      "/usr/lib/x86_64-linux-gnu/libboost_filesystem.so.1.83.0",
+      "/opt/ros/jazzy/lib/x86_64-linux-gnu/libcoal.so.3.0.3",
+      "-ldl",
+      "-pthread",
+      "-Wl,--disable-new-dtags",
+      "-Wl,-rpath,/home/codextransfer/predictive_motion/.vendor/mujoco-3.3.7/lib:/opt/ros/jazzy/lib/x86_64-linux-gnu:/opt/ros/jazzy/lib:/usr/lib/x86_64-linux-gnu",
+      "-Wl,-Map,/home/codextransfer/predictive_motion/results/phase5/session-nonzero-progress-32cycle-timing-v1-20261011-attempt38/link-attempt1/current_numeric_oracle.map",
+      "-o",
+      "/home/codextransfer/predictive_motion/results/phase5/session-nonzero-progress-32cycle-timing-v1-20261011-attempt38/link-attempt1/current_numeric_oracle"
+    ],
+    [
+      "/usr/bin/x86_64-linux-gnu-g++-13",
+      "/home/codextransfer/predictive_motion/results/phase5/session-nonzero-progress-32cycle-timing-v1-20261011-attempt38/build-attempt1/unit-10.o",
+      "-Wl,--start-group",
+      "/home/codextransfer/predictive_motion/install/predictive_motion_kinematics/lib/librobot_kinematics.a",
+      "/home/codextransfer/predictive_motion/.vendor/osqp-1.0.0-install/lib/libosqpstatic.a",
+      "/home/codextransfer/predictive_motion/results/phase5/repaired-source-configure-only-after-v4-20261009/attempt1/build/inventory-source/input-source/cost-source/affine-source/normalized-source/model-boundary/live-foundation/libpublic_live_affine_v2_foundation.a",
+      "/home/codextransfer/predictive_motion/results/phase5/repaired-source-configure-only-after-v4-20261009/attempt1/build/inventory-source/input-source/cost-source/affine-source/normalized-source/model-boundary/frozen-extension/libpublic_coupled_augmented_extension.a",
+      "/home/codextransfer/predictive_motion/results/phase5/repaired-source-configure-only-after-v4-20261009/attempt1/build/inventory-source/input-source/cost-source/affine-source/normalized-source/model-boundary/frozen-extension/libfrozen_augmented_extension_value.a",
+      "/home/codextransfer/predictive_motion/results/phase5/repaired-source-configure-only-after-v4-20261009/attempt1/build/inventory-source/input-source/cost-source/affine-source/normalized-source/model-boundary/frozen-extension/physical-derivative/libpublic_coupled_derivative_model.a",
+      "/home/codextransfer/predictive_motion/results/phase5/repaired-source-configure-only-after-v4-20261009/attempt1/build/inventory-source/input-source/cost-source/affine-source/normalized-source/model-boundary/frozen-extension/physical-derivative/base-v2/libpublic_coupled_model_v2.a",
+      "-Wl,--end-group",
+      "/home/codextransfer/predictive_motion/.vendor/mujoco-3.3.7/lib/libmujoco.so",
+      "/usr/lib/x86_64-linux-gnu/libcrypto.so",
+      "/usr/lib/x86_64-linux-gnu/libyaml-cpp.so",
+      "/opt/ros/jazzy/lib/x86_64-linux-gnu/libpinocchio_default.so.4.1.0",
+      "/opt/ros/jazzy/lib/x86_64-linux-gnu/libpinocchio_collision.so.4.1.0",
+      "/opt/ros/jazzy/lib/x86_64-linux-gnu/libpinocchio_parsers.so.4.1.0",
+      "/usr/lib/x86_64-linux-gnu/libboost_serialization.so.1.83.0",
+      "/usr/lib/x86_64-linux-gnu/libboost_filesystem.so.1.83.0",
+      "/opt/ros/jazzy/lib/x86_64-linux-gnu/libcoal.so.3.0.3",
+      "-ldl",
+      "-pthread",
+      "-Wl,--disable-new-dtags",
+      "-Wl,-rpath,/home/codextransfer/predictive_motion/.vendor/mujoco-3.3.7/lib:/opt/ros/jazzy/lib/x86_64-linux-gnu:/opt/ros/jazzy/lib:/usr/lib/x86_64-linux-gnu",
+      "-Wl,-Map,/home/codextransfer/predictive_motion/results/phase5/session-nonzero-progress-32cycle-timing-v1-20261011-attempt38/link-attempt1/cycle_support_tests.map",
+      "-o",
+      "/home/codextransfer/predictive_motion/results/phase5/session-nonzero-progress-32cycle-timing-v1-20261011-attempt38/link-attempt1/cycle_support_tests"
+    ],
+    [
+      "/usr/bin/x86_64-linux-gnu-g++-13",
+      "/home/codextransfer/predictive_motion/results/phase5/session-nonzero-progress-32cycle-timing-v1-20261011-attempt38/build-attempt1/unit-16.o",
+      "-Wl,--start-group",
+      "/home/codextransfer/predictive_motion/install/predictive_motion_kinematics/lib/librobot_kinematics.a",
+      "/home/codextransfer/predictive_motion/.vendor/osqp-1.0.0-install/lib/libosqpstatic.a",
+      "/home/codextransfer/predictive_motion/results/phase5/repaired-source-configure-only-after-v4-20261009/attempt1/build/inventory-source/input-source/cost-source/affine-source/normalized-source/model-boundary/live-foundation/libpublic_live_affine_v2_foundation.a",
+      "/home/codextransfer/predictive_motion/results/phase5/repaired-source-configure-only-after-v4-20261009/attempt1/build/inventory-source/input-source/cost-source/affine-source/normalized-source/model-boundary/frozen-extension/libpublic_coupled_augmented_extension.a",
+      "/home/codextransfer/predictive_motion/results/phase5/repaired-source-configure-only-after-v4-20261009/attempt1/build/inventory-source/input-source/cost-source/affine-source/normalized-source/model-boundary/frozen-extension/libfrozen_augmented_extension_value.a",
+      "/home/codextransfer/predictive_motion/results/phase5/repaired-source-configure-only-after-v4-20261009/attempt1/build/inventory-source/input-source/cost-source/affine-source/normalized-source/model-boundary/frozen-extension/physical-derivative/libpublic_coupled_derivative_model.a",
+      "/home/codextransfer/predictive_motion/results/phase5/repaired-source-configure-only-after-v4-20261009/attempt1/build/inventory-source/input-source/cost-source/affine-source/normalized-source/model-boundary/frozen-extension/physical-derivative/base-v2/libpublic_coupled_model_v2.a",
+      "-Wl,--end-group",
+      "/home/codextransfer/predictive_motion/.vendor/mujoco-3.3.7/lib/libmujoco.so",
+      "/usr/lib/x86_64-linux-gnu/libcrypto.so",
+      "/usr/lib/x86_64-linux-gnu/libyaml-cpp.so",
+      "/opt/ros/jazzy/lib/x86_64-linux-gnu/libpinocchio_default.so.4.1.0",
+      "/opt/ros/jazzy/lib/x86_64-linux-gnu/libpinocchio_collision.so.4.1.0",
+      "/opt/ros/jazzy/lib/x86_64-linux-gnu/libpinocchio_parsers.so.4.1.0",
+      "/usr/lib/x86_64-linux-gnu/libboost_serialization.so.1.83.0",
+      "/usr/lib/x86_64-linux-gnu/libboost_filesystem.so.1.83.0",
+      "/opt/ros/jazzy/lib/x86_64-linux-gnu/libcoal.so.3.0.3",
+      "-ldl",
+      "-pthread",
+      "-Wl,--disable-new-dtags",
+      "-Wl,-rpath,/home/codextransfer/predictive_motion/.vendor/mujoco-3.3.7/lib:/opt/ros/jazzy/lib/x86_64-linux-gnu:/opt/ros/jazzy/lib:/usr/lib/x86_64-linux-gnu",
+      "-Wl,-Map,/home/codextransfer/predictive_motion/results/phase5/session-nonzero-progress-32cycle-timing-v1-20261011-attempt38/link-attempt1/fine_timing_tests.map",
+      "-o",
+      "/home/codextransfer/predictive_motion/results/phase5/session-nonzero-progress-32cycle-timing-v1-20261011-attempt38/link-attempt1/fine_timing_tests"
+    ]
+  ]
+}

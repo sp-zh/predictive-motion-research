@@ -1,0 +1,18 @@
+{
+  "schema": "PHYSICAL_WINDOWS_VOLUME_PRECHECK38_V1",
+  "utc": "2026-10-11T19:56:52.347797+00:00",
+  "source": "actual Windows Get-CimInstance Win32_LogicalDisk through existing strict Dell SSH",
+  "C": {
+    "free_bytes": 196921479168,
+    "size_bytes": 488030334976
+  },
+  "D": {
+    "free_bytes": 125857808384,
+    "size_bytes": 512098299904
+  },
+  "minimum_each_bytes": 12884901888,
+  "minimum_shared_volume_bytes": 21474836480,
+  "even_if_same_volume_pass": true,
+  "WSL_virtual_free_space_not_used": true,
+  "note": "Fresh recheck required before native entry; source/precheck only, no Model/native run."
+}

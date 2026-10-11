@@ -1,0 +1,52 @@
+{
+  "schema": "ACTUAL38_PUBLIC_FIGURE_PROVENANCE_V1",
+  "seed": 91011,
+  "run": "attempt38 single consumed32",
+  "source_READY_sha256": "a96e538e7ec9b8c1b80af1b5783fee9b19fecf0c30116220954685dd480630f2",
+  "input_scope": "All32 committedcycles/64 actual2ms TCP poses; these plots have no successful-case filtering",
+  "encoding": "PNG160dpi; actual recorded native values. portable renderer retains exact plotting instructions except Mac-compatible resource/cache setup",
+  "files": {
+    "RENDER_RECEIPT.json": {
+      "bytes": 477,
+      "sha256": "64e54c56aebf9f7c1086b220c5995aece5adc6043946acf751efcea9b7226f95"
+    },
+    "ROOT_VISUAL_INSPECTION.json": {
+      "bytes": 607,
+      "sha256": "c2124be99c8e206795eab2ca7352b1edc0422324cd081e49b0e2b74886867a56"
+    },
+    "actual32_diagnostic.png": {
+      "bytes": 249939,
+      "sha256": "2336edddbbcce03748c16b1ae3419935a2382f56b47f9bc700ca07aca7bc2ee0"
+    },
+    "actual32_tcp_prefix.png": {
+      "bytes": 241217,
+      "sha256": "f9e760057b8209f93d0c37737ceeb427949faf5e4f7500db3f52c7c36502aead"
+    },
+    "fine.json": {
+      "bytes": 1484,
+      "sha256": "8e796c9c233465df63eb753c5177cbbde03f477fe900614938333f42c7e6a9dd"
+    },
+    "functional.json": {
+      "bytes": 2717,
+      "sha256": "491c5df37e2317ea588c946220a7ac0d9675aff035dc5f4412f81008bb6fa82f"
+    },
+    "native.json": {
+      "bytes": 85923,
+      "sha256": "b08a9a85075047095d71fa0985d50b0c1200109760c6976adbb28f8a735631fd"
+    },
+    "plot.py": {
+      "bytes": 4276,
+      "sha256": "e1e28a93b8609d85b3f2f947571fec1a120de1c34b99d640c34e104dffa0c23f"
+    },
+    "render_portable.py": {
+      "bytes": 4173,
+      "sha256": "67c99472d7725f4aca881e286504cfd1fa2ca4685105747d01acf05650b9f825"
+    },
+    "task_points.json": {
+      "bytes": 81827,
+      "sha256": "e130bb099b78f51992cc3cb7fa15bc8162b6946c44429d29784c53bdecd738c5"
+    }
+  },
+  "limits": "128ms development prefix, final0.1267%; no fulltask/stop/realtime/hardware/phase acceptance; inclusive nested timings must not be summed",
+  "rendered_by": "producer Matplotlib3.10.3; Root copied exact inspected PNGs"
+}

@@ -1,0 +1,8 @@
+{
+  "schema": "ROOT_ACTUAL38_ARCHIVE_RESOURCE_PRECHECK_V1",
+  "Darwin_RLIMIT_AS_512MiB": "REJECTED ValueError current limit exceeds maximum limit in isolated precheck before archive starts",
+  "memory_policy": "fixed524288B streamed payload/archive hash and member-readback, tar file roster small; no Darwin OS address-space enforcement claimed",
+  "CPU_limit_seconds": 360,
+  "Dell_readback_AS_limit_bytes": 536870912,
+  "new_native_calls": 0
+}

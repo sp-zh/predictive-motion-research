@@ -1,0 +1,10 @@
+{
+  "schema": "ROOT_ACTUAL38_ARCHIVE_WRAPPER_QUALIFICATION_V1",
+  "outer_time_wrapper_exit": 1,
+  "stderr": "29.44real 26.16user 1.93sys; time sysctl kern.clockrate Operation not permitted",
+  "archive_creation_outcome": "Inner script wrote sealed finalARCHIVE_READY only after asserting fullSHA/member data success; finalstdout matches it. No Pythontraceback/archive error. Outer profilingwrapperfailed to queryMacclockrate; maxRSS unavailable and no suchmemorymetricclaimed.",
+  "archive_ready_sha256": "09e810cf74f9333a0b0393e4aa4fa1dce5d3ba9854624a340cc945592848e1f8",
+  "Mac_full_payloads_verified": 1389,
+  "new_native_calls": 0,
+  "archive_rerun": false
+}

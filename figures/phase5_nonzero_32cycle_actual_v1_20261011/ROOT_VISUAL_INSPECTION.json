@@ -1,0 +1,12 @@
+{
+  "schema": "ROOT_ACTUAL38_VISUAL_INSPECTION_V1",
+  "inspected": [
+    "actual32_diagnostic.png",
+    "actual32_tcp_prefix.png"
+  ],
+  "method": "Root view_image displayed both actual producer PNGs before copying; exact bytes pinned here",
+  "findings": "Labels/units readable; 32/32 timing misses and incomplete128ms scope visible; nested timings explicitly overlap; 3D actual/reference uses first actual TCP origin, not fabricated arm motion. Final0.1267% annotation close to curve but no material data obstruction.",
+  "native_execution": false,
+  "phase5": "NOT_ACCEPTED",
+  "phase6": "NOT_STARTED"
+}
