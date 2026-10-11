@@ -1,0 +1,20 @@
+{
+  "schema": "PILOT_BC_FAILURE_PREDICTION_PLOT_V5",
+  "inputs": {
+    "ACTUAL_CANDIDATE_VALIDATION.json": "143b0adcef2fc9fd01f7221b3f0e85402a86e491b73de1ee544e6a02c0593452",
+    "FAILURE_BRANCH_NEIGHBORHOOD.json": "8d3476d80d831dadc42d31d32932f94b050bdd99371ed22cbde3831834d478ba"
+  },
+  "outputs": {
+    "candidate_validation_refusal.png": {
+      "bytes": 192935,
+      "sha256": "4fc34dfe5f4f3fa75788551a4e4e032f4b78737ffc1cfeed7f64faf43cfbb82e"
+    },
+    "candidate_validation_refusal.svg": {
+      "bytes": 96398,
+      "sha256": "3e5dcba064e11dc71f0719ee92df86f46203f37167e515a8fd9998e1670e7221"
+    }
+  },
+  "matplotlib_version": "3.6.3",
+  "actual_scope": "B predicted values, first failure retained; 0 taskstep/commit; phase5 NOT_ACCEPTED",
+  "Model_or_MuJoCo_native_entries": 0
+}

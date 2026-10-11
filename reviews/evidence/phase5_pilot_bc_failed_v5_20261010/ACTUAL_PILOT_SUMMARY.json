@@ -1,0 +1,90 @@
+{
+  "role": "ACTIVE_SESSION_FINAL_SCOPE_AND_TIMING",
+  "stage": "GENUINE_VALUE_ONLY_B_SAME_CURRENT_BOUNDARY",
+  "error": "original value-affine1e-6/jointtrust.002",
+  "boundary_unchanged": 1,
+  "session_termination_pass": 1,
+  "session_termination_error": "",
+  "native_termination_pass": 1,
+  "native_termination_error": "",
+  "entry_wall_seconds": 14.333857838,
+  "total_physical_step_attempts": 1000,
+  "commits": 0,
+  "native_facts": {
+    "load_xml": 1,
+    "make_data": 2,
+    "reset": 1,
+    "forward": 1004,
+    "copy": 1002,
+    "get_state": 2004,
+    "observations": 2,
+    "step": 1000,
+    "commits": 0
+  },
+  "candidate_value_summary": {
+    "facts": {
+      "constructor_attempts": 1,
+      "metadata_attempts": 1,
+      "rollout_attempts": 1
+    },
+    "raw_exists": 1,
+    "success": 1,
+    "has_final_state": 1,
+    "error": "",
+    "transport_error": "",
+    "nominal_digest": "b8e7e2fe10f2873b5eeb8730cd5333765ed482291b39dc563cfcf960d821756a",
+    "candidate_digest": "42236f4fae7968dadde3fae649768242ae00bea3bdc857fbae16450fc93a523f",
+    "substeps": 400,
+    "cycle_states": 200,
+    "cell_states": 20
+  },
+  "assessment_summary": {
+    "role": "FULL_PREDICTED_VALUE_DOMAINS_AND_DISCRETE_INTERPOLATION_V1",
+    "attempted": 1,
+    "passed": 0,
+    "stage": "RETAINED_VALUE_CANDIDATE_VALIDATION_FAILURE",
+    "error": "original value-affine1e-6/jointtrust.002",
+    "reach_bound_m": 1.653118739175897,
+    "geometry_radius_m": 2.0,
+    "sigma_lipschitz": 32.0,
+    "interval_scope": "interval support is original fixed-step model linear interpolation only; no continuous plant/hardware certificate or online latency claim",
+    "retained_points": 53,
+    "completed_points": 52,
+    "first_failure": {
+      "sample": 52,
+      "cell": 9,
+      "cycle": 2,
+      "half": 1,
+      "elapsed": 0.106,
+      "acceleration": [
+        -0.00788129850563525,
+        -0.017415378983742832,
+        0.019702940542065096,
+        0.04751395955849007,
+        -0.0050681842572057245,
+        0.0855908316168576,
+        -0.010179873570110182
+      ],
+      "jerk": [
+        -0.7748772284946682,
+        -2.9406960949331546,
+        2.0804767293559223,
+        6.219861682233936,
+        -0.7196350041299306,
+        24.854087783837645,
+        -0.8858449945870267
+      ],
+      "min_true": 0.0,
+      "min_cover": 0.0,
+      "sigma": 0.0,
+      "geometry_interval_lower": 0.0,
+      "sigma_interval_lower": 0.0,
+      "affine_error": 8.350320600854395e-05,
+      "joint_trust": 8.261347946447728e-05,
+      "geometry_queries": 0,
+      "complete": 0,
+      "stage": "ORIGINAL_AFFINE_AND_TRUST_MODEL_CHECK",
+      "error": "original value-affine1e-6/jointtrust.002"
+    }
+  }
+}

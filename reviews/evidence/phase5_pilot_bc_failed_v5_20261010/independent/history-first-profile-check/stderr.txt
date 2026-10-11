@@ -1,0 +1,5 @@
+Traceback (most recent call last):
+  File "/private/tmp/root_independent_pilot_bc_failed_review_20261010/audit_failed_bc.py", line 80, in <module>
+    assert ids[0]==profile['producer'] and ids[1:]==[profile[k] for k in ['xml','constants','expected_metadata']] and libs==profile['loaded_libraries'] and deps==profile['dependencies']
+                   ~~~~~~~^^^^^^^^^^^^
+KeyError: 'producer'

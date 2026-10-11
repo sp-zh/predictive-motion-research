@@ -1,0 +1,11 @@
+# Actual candidate-value refusal, before physical commit
+
+Exactly one bounded offline attempt12 produced genuine candidate values: constructor1/metadata1/value-rollout1,400 half steps/200 cycles/20 cells with success. All13,156 original SI rows and200 literal command/progress cycles pass. B completes52 points, then refuses sample52 (cell9/cycle2/half1, .106 s): physical velocity joint6 has value–affine error8.350320600854352e-5 rad/s > original1e-6 numeric gate. Its q6 residual is1.66935e-7 rad; maximum joint trust deviation8.26135e-5 rad remains below.002. All53 recorded acceleration/jerk chains independently reproduce from actual last warmup velocity/acceleration and prior modeled values.
+
+Only52 fullgeometry/sigma/interval points complete; the failed point's zero geometry fields are unreached defaults, not passed zero-clearance measurements. The full400 value/map comparison is forensic after refusal. Joint6 friction changes from nominalinterior0 to candidatelower-1 at the same failing sample; this is coincidence evidence, not a completed causal proof.
+
+C is never entered: task steps0, commits0, physical1000 all bootstrap. Before/after current integration bits remain equal; Session and native Simulation termination checks pass;1692 runtime input pins remain identical. Wall14.3339 s is an offline path including bootstrap and diagnostics, not controller4 ms latency.
+
+Frozen Ahead4 and Ahead5 error-path repairs, interface findings, literal source/profile, release, earlier compile/link failures and independent histories remain preserved. Root's attempt11 release was sealed but withdrawn before any dispatch; its separate withdrawal is added here, closing that packet-reference gap. No tail/physical-rest certificate, repeated D/E, continuous physical/hardware interval safety, full task, scorer or Phase5 acceptance is established.
+
+Complete raw values/maps/arrays and every failure are archived on Mac/Dell in STORAGE_CHECKPOINT.json. New small command-input optimizer guards are prospective source work; they neither relax this threshold nor shrink/clamp the refused solution. Public Git push remains pending resolution of conflicting human visibility instructions. Phase5 NOT_ACCEPTED; Phase6 NOT_STARTED.

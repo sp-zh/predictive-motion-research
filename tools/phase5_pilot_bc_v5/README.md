@@ -1,0 +1,5 @@
+# Frozen B/C component source V5
+
+This24-file view contains the exact one-shot native candidate-value validator and guarded two-step transaction source used in attempt12. Its prospective C path uses a private current-owner token, privately recomputed Robot/Scene/reach, immutable original limits, one exact held target for two2 ms steps, durable attempt/returned/complete records, sticky partial failure and history publication after both steps. Aggregate success flags follow potentially throwing work and error paths clear them first. This is not universal no-throw OOM or fault-injection validation.
+
+The actual run refuses nonlinear B at.106 s; C is not exercised. Source review and successful linking do not establish physical execution, stopping, continuous interval safety, full task or Phase5 acceptance. See the [actual review](../../reviews/evidence/phase5_pilot_bc_failed_v5_20261010/README.md). Original canonicalA16 and all original checkers/freezes remain unchanged. Cached SDK/dependency binaries/objects are indexed in raw archives, not copied into this source view; no standalone portable target is claimed.

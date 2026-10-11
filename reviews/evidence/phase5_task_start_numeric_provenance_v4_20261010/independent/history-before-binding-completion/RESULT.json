@@ -1,0 +1,499 @@
+{
+  "schema": "ROOT_NUMERIC_HINT_PROVENANCE_FILE_REVIEW_V1",
+  "source_sha256": "704b3ac757752c95928719d26bcf585767f85969af8cbdeb87a81f67e5503539",
+  "verified_packet_files": 60,
+  "verified_packet_bytes": 21717275,
+  "archive_verified_regular_payloads": 53,
+  "input_pins": {
+    "/private/tmp/phase5_task_start_numeric_repairs_checkpoint_v4_20261010/READY.json": {
+      "bytes": 11676,
+      "sha256": "673350a4f4a9bf6ab32356eff904c346b7a7fcbf432328f99f8dd4a94959075f"
+    },
+    "/private/tmp/phase5_task_start_numeric_repairs_checkpoint_v4_20261010/README.md": {
+      "bytes": 897,
+      "sha256": "c7700beb29838fbff69edda134a3cd4de7fb73312d1e534e4f8679aa1d223145"
+    },
+    "/private/tmp/phase5_task_start_numeric_repairs_checkpoint_v4_20261010/STABILIZATION_ACTIVE_SET_GUESS_RESULT.json": {
+      "bytes": 1194,
+      "sha256": "c58f5fa663429e2f51718b8661dc9279d795b90a61502d62d062b8f3123af773"
+    },
+    "/private/tmp/phase5_task_start_numeric_repairs_checkpoint_v4_20261010/actual-dell/task-start-dual-guess-v1-20261010-attempt1/ACTUAL_NNLS_INPUTS.npz": {
+      "bytes": 28766,
+      "sha256": "d03ff0188b24d047719c65464d77b15e051ee6b88060d2ae6b744724ec64939f"
+    },
+    "/private/tmp/phase5_task_start_numeric_repairs_checkpoint_v4_20261010/actual-dell/task-start-dual-guess-v1-20261010-attempt1/BEFORE_INPUTS.json": {
+      "bytes": 841,
+      "sha256": "c120dae7e66cbe682108118f3cafdc0571261407153dbd744e6ddb645d367eea"
+    },
+    "/private/tmp/phase5_task_start_numeric_repairs_checkpoint_v4_20261010/actual-dell/task-start-dual-guess-v1-20261010-attempt1/RESULT.json": {
+      "bytes": 535,
+      "sha256": "7947a74bc91ccb0ed22ecd0f5bb6cbdff86df286a29fefa2b1099a72b7d6f5b1"
+    },
+    "/private/tmp/phase5_task_start_numeric_repairs_checkpoint_v4_20261010/actual-dell/task-start-dual-guess-v1-20261010-attempt1/RESULT_PREFIX.json": {
+      "bytes": 395,
+      "sha256": "975ad737ffb306d833b50352d510c7aa18360981e85e211287df84219c56bfc5"
+    },
+    "/private/tmp/phase5_task_start_numeric_repairs_checkpoint_v4_20261010/actual-dell/task-start-dual-guess-v1-20261010-attempt2/ACTUAL_NNLS_INPUTS.npz": {
+      "bytes": 28766,
+      "sha256": "d03ff0188b24d047719c65464d77b15e051ee6b88060d2ae6b744724ec64939f"
+    },
+    "/private/tmp/phase5_task_start_numeric_repairs_checkpoint_v4_20261010/actual-dell/task-start-dual-guess-v1-20261010-attempt2/AFTER_INPUTS.json": {
+      "bytes": 841,
+      "sha256": "c120dae7e66cbe682108118f3cafdc0571261407153dbd744e6ddb645d367eea"
+    },
+    "/private/tmp/phase5_task_start_numeric_repairs_checkpoint_v4_20261010/actual-dell/task-start-dual-guess-v1-20261010-attempt2/BEFORE_INPUTS.json": {
+      "bytes": 841,
+      "sha256": "c120dae7e66cbe682108118f3cafdc0571261407153dbd744e6ddb645d367eea"
+    },
+    "/private/tmp/phase5_task_start_numeric_repairs_checkpoint_v4_20261010/actual-dell/task-start-dual-guess-v1-20261010-attempt2/NUMERICAL_GUESS_ONLY.npz": {
+      "bytes": 51784,
+      "sha256": "43bde93bcc0fedbc819a29a43aed5c90bf6a540037a0c92d572aa94e499f2aa0"
+    },
+    "/private/tmp/phase5_task_start_numeric_repairs_checkpoint_v4_20261010/actual-dell/task-start-dual-guess-v1-20261010-attempt2/RESULT.json": {
+      "bytes": 1068,
+      "sha256": "df71d2cd2e91a2fb509cf3caeacd38eb150f4de9139e53b54afb1dcabe87c740"
+    },
+    "/private/tmp/phase5_task_start_numeric_repairs_checkpoint_v4_20261010/actual-dell/task-start-dual-guess-v1-20261010-attempt2/RESULT_PREFIX.json": {
+      "bytes": 486,
+      "sha256": "4e3cda00a94b7a61391f51b9d418f442558803a5927191aca3e8bfe11c0eb93e"
+    },
+    "/private/tmp/phase5_task_start_numeric_repairs_checkpoint_v4_20261010/actual-dell/task-start-dual-guess-v1-20261010-attempt2/SDK_AFTER.json": {
+      "bytes": 187984,
+      "sha256": "78ef66ea566325c249c171a8e7a2f5c7dd69a74c6abc791d143de8163c273f5d"
+    },
+    "/private/tmp/phase5_task_start_numeric_repairs_checkpoint_v4_20261010/actual-dell/task-start-dual-guess-v1-20261010-attempt2/SDK_BEFORE.json": {
+      "bytes": 187984,
+      "sha256": "78ef66ea566325c249c171a8e7a2f5c7dd69a74c6abc791d143de8163c273f5d"
+    },
+    "/private/tmp/phase5_task_start_numeric_repairs_checkpoint_v4_20261010/actual-dell/task-start-dual-guess-v1-20261010-attempt2/guess.json": {
+      "bytes": 61676,
+      "sha256": "3b5bc66e146f9043b84571271bf7115c86b44820e4594f6e2fc01e825c48d0d7"
+    },
+    "/private/tmp/phase5_task_start_numeric_repairs_checkpoint_v4_20261010/actual-dell/task-start-dual-guess-v1-20261010-attempt3/ACTUAL_KKT_REFINEMENT.npz": {
+      "bytes": 228390,
+      "sha256": "35bc7b3cb9b283cea6ff1fe46106745f25bdaffd651b6e64f4c8ec9e979a4c2e"
+    },
+    "/private/tmp/phase5_task_start_numeric_repairs_checkpoint_v4_20261010/actual-dell/task-start-dual-guess-v1-20261010-attempt3/ACTUAL_NNLS_INPUTS.npz": {
+      "bytes": 28766,
+      "sha256": "d03ff0188b24d047719c65464d77b15e051ee6b88060d2ae6b744724ec64939f"
+    },
+    "/private/tmp/phase5_task_start_numeric_repairs_checkpoint_v4_20261010/actual-dell/task-start-dual-guess-v1-20261010-attempt3/AFTER_INPUTS.json": {
+      "bytes": 841,
+      "sha256": "c120dae7e66cbe682108118f3cafdc0571261407153dbd744e6ddb645d367eea"
+    },
+    "/private/tmp/phase5_task_start_numeric_repairs_checkpoint_v4_20261010/actual-dell/task-start-dual-guess-v1-20261010-attempt3/BEFORE_INPUTS.json": {
+      "bytes": 841,
+      "sha256": "c120dae7e66cbe682108118f3cafdc0571261407153dbd744e6ddb645d367eea"
+    },
+    "/private/tmp/phase5_task_start_numeric_repairs_checkpoint_v4_20261010/actual-dell/task-start-dual-guess-v1-20261010-attempt3/NUMERICAL_GUESS_ONLY.npz": {
+      "bytes": 51784,
+      "sha256": "3ec3f6534875cbd4083404971eac1c316929ea57538bf0c20e4c585d00c5b6a3"
+    },
+    "/private/tmp/phase5_task_start_numeric_repairs_checkpoint_v4_20261010/actual-dell/task-start-dual-guess-v1-20261010-attempt3/RESULT.json": {
+      "bytes": 1288,
+      "sha256": "d4d6910d944d52faa1f8b7b1e27f754e4001317024d2e7a9d8a7459058b56d64"
+    },
+    "/private/tmp/phase5_task_start_numeric_repairs_checkpoint_v4_20261010/actual-dell/task-start-dual-guess-v1-20261010-attempt3/RESULT_PREFIX.json": {
+      "bytes": 486,
+      "sha256": "4e3cda00a94b7a61391f51b9d418f442558803a5927191aca3e8bfe11c0eb93e"
+    },
+    "/private/tmp/phase5_task_start_numeric_repairs_checkpoint_v4_20261010/actual-dell/task-start-dual-guess-v1-20261010-attempt3/SDK_AFTER.json": {
+      "bytes": 187984,
+      "sha256": "78ef66ea566325c249c171a8e7a2f5c7dd69a74c6abc791d143de8163c273f5d"
+    },
+    "/private/tmp/phase5_task_start_numeric_repairs_checkpoint_v4_20261010/actual-dell/task-start-dual-guess-v1-20261010-attempt3/SDK_BEFORE.json": {
+      "bytes": 187984,
+      "sha256": "78ef66ea566325c249c171a8e7a2f5c7dd69a74c6abc791d143de8163c273f5d"
+    },
+    "/private/tmp/phase5_task_start_numeric_repairs_checkpoint_v4_20261010/actual-dell/task-start-dual-guess-v1-20261010-attempt3/guess.json": {
+      "bytes": 61682,
+      "sha256": "aa3a9471c80e2d91297d3d24d5025375e1927f20a91ef48e7026b8b7ece48bf9"
+    },
+    "/private/tmp/phase5_task_start_numeric_repairs_checkpoint_v4_20261010/actual-dell/task-start-dual-guess-v1-20261010-attempt4/ACTUAL_KKT_REFINEMENT.npz": {
+      "bytes": 228390,
+      "sha256": "35bc7b3cb9b283cea6ff1fe46106745f25bdaffd651b6e64f4c8ec9e979a4c2e"
+    },
+    "/private/tmp/phase5_task_start_numeric_repairs_checkpoint_v4_20261010/actual-dell/task-start-dual-guess-v1-20261010-attempt4/ACTUAL_NNLS_INPUTS.npz": {
+      "bytes": 28766,
+      "sha256": "d03ff0188b24d047719c65464d77b15e051ee6b88060d2ae6b744724ec64939f"
+    },
+    "/private/tmp/phase5_task_start_numeric_repairs_checkpoint_v4_20261010/actual-dell/task-start-dual-guess-v1-20261010-attempt4/AFTER_INPUTS.json": {
+      "bytes": 841,
+      "sha256": "c120dae7e66cbe682108118f3cafdc0571261407153dbd744e6ddb645d367eea"
+    },
+    "/private/tmp/phase5_task_start_numeric_repairs_checkpoint_v4_20261010/actual-dell/task-start-dual-guess-v1-20261010-attempt4/BEFORE_INPUTS.json": {
+      "bytes": 841,
+      "sha256": "c120dae7e66cbe682108118f3cafdc0571261407153dbd744e6ddb645d367eea"
+    },
+    "/private/tmp/phase5_task_start_numeric_repairs_checkpoint_v4_20261010/actual-dell/task-start-dual-guess-v1-20261010-attempt4/NUMERICAL_GUESS_ONLY.npz": {
+      "bytes": 51784,
+      "sha256": "3ec3f6534875cbd4083404971eac1c316929ea57538bf0c20e4c585d00c5b6a3"
+    },
+    "/private/tmp/phase5_task_start_numeric_repairs_checkpoint_v4_20261010/actual-dell/task-start-dual-guess-v1-20261010-attempt4/RESULT.json": {
+      "bytes": 1337,
+      "sha256": "29ae34e6a226793e2bf86ac581a83b70a6a8f6b93ef0ce16bc3f8362be7b3033"
+    },
+    "/private/tmp/phase5_task_start_numeric_repairs_checkpoint_v4_20261010/actual-dell/task-start-dual-guess-v1-20261010-attempt4/RESULT_PREFIX.json": {
+      "bytes": 486,
+      "sha256": "4e3cda00a94b7a61391f51b9d418f442558803a5927191aca3e8bfe11c0eb93e"
+    },
+    "/private/tmp/phase5_task_start_numeric_repairs_checkpoint_v4_20261010/actual-dell/task-start-dual-guess-v1-20261010-attempt4/SDK_AFTER.json": {
+      "bytes": 187984,
+      "sha256": "78ef66ea566325c249c171a8e7a2f5c7dd69a74c6abc791d143de8163c273f5d"
+    },
+    "/private/tmp/phase5_task_start_numeric_repairs_checkpoint_v4_20261010/actual-dell/task-start-dual-guess-v1-20261010-attempt4/SDK_BEFORE.json": {
+      "bytes": 187984,
+      "sha256": "78ef66ea566325c249c171a8e7a2f5c7dd69a74c6abc791d143de8163c273f5d"
+    },
+    "/private/tmp/phase5_task_start_numeric_repairs_checkpoint_v4_20261010/actual-dell/task-start-dual-guess-v1-20261010-attempt4/guess.json": {
+      "bytes": 61682,
+      "sha256": "aa87171749dfa0b2b0d8c988eff95fa56a6b9976cadf23fcabc298a455dfa6f5"
+    },
+    "/private/tmp/phase5_task_start_numeric_repairs_checkpoint_v4_20261010/actual-dell/task-start-inner-jerk-probe-v1-20261010/RESULT.json": {
+      "bytes": 3501,
+      "sha256": "467973edc792301ac7feb251b637f97bace3bde91ab33491c9c075777d0230b4"
+    },
+    "/private/tmp/phase5_task_start_numeric_repairs_checkpoint_v4_20261010/actual-dell/task-start-inner-jerk-probe-v1-20261010/probe-1e-06.json": {
+      "bytes": 1353,
+      "sha256": "00f84a2f77e62ed587e4da41b04816f96465fad72b250f07d0d9c1b56e4a5d63"
+    },
+    "/private/tmp/phase5_task_start_numeric_repairs_checkpoint_v4_20261010/actual-dell/task-start-inner-jerk-probe-v1-20261010/probe-1e-06.npz": {
+      "bytes": 152776,
+      "sha256": "9df0ae20904e2e3cc07f4580e99b8c8e28211c4f6505bc09c4bdb896fecff2a1"
+    },
+    "/private/tmp/phase5_task_start_numeric_repairs_checkpoint_v4_20261010/actual-dell/task-start-inner-jerk-probe-v1-20261010/probe-1e-07.json": {
+      "bytes": 1353,
+      "sha256": "9de9d5135a5416433bed1feae9afffdc28a063be602b394fa27b0938b25c7e08"
+    },
+    "/private/tmp/phase5_task_start_numeric_repairs_checkpoint_v4_20261010/actual-dell/task-start-inner-jerk-probe-v1-20261010/probe-1e-07.npz": {
+      "bytes": 152776,
+      "sha256": "79e2626097c160012ac5c6bd1a404250367eff8938d0028c567e7eed43209bbc"
+    },
+    "/private/tmp/phase5_task_start_numeric_repairs_checkpoint_v4_20261010/actual-dell/task-start-inner-jerk-probe-v1-20261010/probe-1e-08.json": {
+      "bytes": 561,
+      "sha256": "5ec1fdf36c97787a8b919f8f66380952f921437fcb08fa0843eb4366473a26f6"
+    },
+    "/private/tmp/phase5_task_start_numeric_repairs_checkpoint_v4_20261010/actual-dell/task-start-inner-jerk-probe-v1-20261010/probe-1e-08.npz": {
+      "bytes": 152776,
+      "sha256": "9db23375f9b78ee0855a4ad1dc16172b034a64cacface96f9d12a967535fd4c0"
+    },
+    "/private/tmp/phase5_task_start_numeric_repairs_checkpoint_v4_20261010/actual-dell/task-start-stabilization-active-set-v1-20261010/ITERATION_APPEND.jsonl": {
+      "bytes": 670,
+      "sha256": "a1e0ca248508e020f2c6fdca33ae5fa2f208dceee764b6ec8152b41edf2a6d2a"
+    },
+    "/private/tmp/phase5_task_start_numeric_repairs_checkpoint_v4_20261010/actual-dell/task-start-stabilization-active-set-v1-20261010/LATEST_DIAGNOSTIC.npz": {
+      "bytes": 138570,
+      "sha256": "085b001ad2c52dfcb21670545b59d52fbb0aa457352027cf15a3e30c8dfff1a6"
+    },
+    "/private/tmp/phase5_task_start_numeric_repairs_checkpoint_v4_20261010/actual-dell/task-start-stabilization-active-set-v1-20261010/NUMERICAL_GUESS_ONLY.npz": {
+      "bytes": 51210,
+      "sha256": "20f277638f0619f79f805401f7e4697394041531f55d2cee055745885c08ea37"
+    },
+    "/private/tmp/phase5_task_start_numeric_repairs_checkpoint_v4_20261010/actual-dell/task-start-stabilization-active-set-v1-20261010/RESULT.json": {
+      "bytes": 1892,
+      "sha256": "008133ea48d96841fc9f502da00a451924d667118349a2ecf05e91ce1c0d3a65"
+    },
+    "/private/tmp/phase5_task_start_numeric_repairs_checkpoint_v4_20261010/actual-dell/task-start-stabilization-active-set-v1-20261010/guess.json": {
+      "bytes": 60882,
+      "sha256": "7f44c11a1ba47479a8af8abe34a2c9d863ae0ee1b719bea1a6a91474ef30c371"
+    },
+    "/private/tmp/phase5_task_start_numeric_repairs_checkpoint_v4_20261010/actual-dell/task-start-stabilization-numeric-guess-v1-20261010/ACTUAL_STABILIZATION_INPUTS.npz": {
+      "bytes": 6490526,
+      "sha256": "f4f8d7c0fbb42e270279d83a83c7746b52107670352800da8bd5409ba1417e12"
+    },
+    "/private/tmp/phase5_task_start_numeric_repairs_checkpoint_v4_20261010/actual-dell/task-start-stabilization-numeric-guess-v1-20261010/ITERATION_APPEND.jsonl": {
+      "bytes": 1766,
+      "sha256": "502542010c2a14a956734da6b873d9825927d157c74bc26253bc7b9c25a930ba"
+    },
+    "/private/tmp/phase5_task_start_numeric_repairs_checkpoint_v4_20261010/actual-dell/task-start-stabilization-numeric-guess-v1-20261010/RESULT_PREFIX.json": {
+      "bytes": 1347,
+      "sha256": "8ec5ded7c6bdc01bf983b01f4cd9ba498c9e5c77608435c088823f2a5a7621b3"
+    },
+    "/private/tmp/phase5_task_start_numeric_repairs_checkpoint_v4_20261010/actual-dell/task-start-stabilization-numeric-guess-v1-20261010-repair2/ACTUAL_STABILIZATION_INPUTS.npz": {
+      "bytes": 6490526,
+      "sha256": "f4f8d7c0fbb42e270279d83a83c7746b52107670352800da8bd5409ba1417e12"
+    },
+    "/private/tmp/phase5_task_start_numeric_repairs_checkpoint_v4_20261010/actual-dell/task-start-stabilization-numeric-guess-v1-20261010-repair2/ITERATION_APPEND.jsonl": {
+      "bytes": 1764,
+      "sha256": "49537e04b1c4aedb62f326ee2624bf3e1ec5b78aff0afa688fcaf4cc079439f5"
+    },
+    "/private/tmp/phase5_task_start_numeric_repairs_checkpoint_v4_20261010/actual-dell/task-start-stabilization-numeric-guess-v1-20261010-repair2/POST_KKT_DIAGNOSTIC.npz": {
+      "bytes": 53026,
+      "sha256": "61f0b8c7490564d4c61c3a6e65746f27dd121a43146602875fca5f67c3ee1baf"
+    },
+    "/private/tmp/phase5_task_start_numeric_repairs_checkpoint_v4_20261010/actual-dell/task-start-stabilization-numeric-guess-v1-20261010-repair2/RESULT_PREFIX.json": {
+      "bytes": 1347,
+      "sha256": "8ec5ded7c6bdc01bf983b01f4cd9ba498c9e5c77608435c088823f2a5a7621b3"
+    },
+    "/private/tmp/phase5_task_start_numeric_repairs_checkpoint_v4_20261010/actual-dell/task-start-stabilization-numeric-guess-v1-20261010-repair2/SLSQP_REFERENCE_ONLY.npz": {
+      "bytes": 1264,
+      "sha256": "06a79f9d4f8136286e629b4ae0251d89954f6c32e24bb6b041200d315ccc40f7"
+    },
+    "/private/tmp/phase5_task_start_numeric_repairs_checkpoint_v4_20261010/actual_collection.tar.gz": {
+      "bytes": 5889653,
+      "sha256": "554252bf13d6eb8db30868ace064675e7fdb792d1759063664c24af8af5d6a5e"
+    },
+    "/private/tmp/phase5_task_start_numeric_repairs_checkpoint_v4_20261010/collect_task_start_numeric_repairs4.py": {
+      "bytes": 1819,
+      "sha256": "7619817aecbabcd07238febcf6e1c93246defebeb08357cb35bd5bed6db534ed"
+    },
+    "/private/tmp/phase5_task_start_numeric_repairs_checkpoint_v4_20261010/derive_stabilization_numeric_guess.py": {
+      "bytes": 4009,
+      "sha256": "641ff4491f8f9daf9a636ea3a0199e6198a6b08801ea907b10a334cb526a8962"
+    },
+    "/private/tmp/phase5_task_start_numeric_repairs_checkpoint_v4_20261010/derive_stabilization_numeric_guess2.py": {
+      "bytes": 4440,
+      "sha256": "09ffb0a35e3f4bb88daac40ad40abbb44f192851ced8579e2a6902e3573ba72a"
+    },
+    "/private/tmp/phase5_task_start_numeric_repairs_checkpoint_v4_20261010/refine_stabilization_active_set.py": {
+      "bytes": 3269,
+      "sha256": "a099a5f297c81df701cc9fedd3bd23ae7b69d7950fe9c5929bc860a37356709a"
+    },
+    "/private/tmp/phase5_task_start_oracle_checkpoint_v2_20261010/actual-dell/task-start-linear-oracle-v2-20261010-attempt1/oracle-artifacts-attempt1/ACTUAL_ORACLE_INPUTS.npz": {
+      "bytes": 7663124,
+      "sha256": "3fa8228457f27b66208a1b3b02547b0727a65946a99bc9e2651c8f98d1decdc0"
+    },
+    "/private/tmp/phase5_task_start_oracle_checkpoint_v2_20261010/actual-dell/task-start-linear-oracle-v2-20261010-attempt1/oracle-artifacts-attempt1/FOR_NUMERICAL_REFERENCE_ONLY.npz": {
+      "bytes": 4384,
+      "sha256": "6d37c3b738ec9a23f6f19a7736acf080785761ed87acb28a57279cac7286ebc5"
+    },
+    "/private/tmp/phase5_task_start_a_checkpoint_v1_20261010/READY.json": {
+      "bytes": 38310,
+      "sha256": "17d59d457b1ba039141883a211e5259717a012f6dd8a48c5b81f892e5dbef3b6"
+    },
+    "/private/tmp/phase5_task_start_a_checkpoint_v1_20261010/actual-dell/repair2/run-attempt1/artifacts/inline_qp.bin": {
+      "bytes": 19485833,
+      "sha256": "7e80228ce7c30a6671fa4aacfb9281d4b27b14c611b726ec119b0a2d1a183c4f"
+    },
+    "/private/tmp/phase5_task_start_a_primaldual_checkpoint_v2_20261010/READY.json": {
+      "bytes": 35204,
+      "sha256": "2da3d50c450279d672b602316256412c89406dc1d7814b4e503c3dc5968dbf14"
+    },
+    "/private/tmp/phase5_task_start_a_primaldual_checkpoint_v2_20261010/actual-dell/session-task-start-a-primaldual-v2-20261010-attempt5/run-attempt1/artifacts/external_numeric_guess.bin": {
+      "bytes": 51596,
+      "sha256": "d70842957ecb86c303e6855dcc2c92c72ff75fb2e4742f9f463c4bf09c38812a"
+    },
+    "/private/tmp/phase5_task_start_stabilization_checkpoint_v2_20261010/READY.json": {
+      "bytes": 30988,
+      "sha256": "5146ccede2eef1edeac17d1b7c3674675a2c3065633cafa0ca349497b7667294"
+    },
+    "/private/tmp/phase5_task_start_stabilization_checkpoint_v2_20261010/actual-dell/session-task-start-stabilization-v2-20261010-attempt7/run-attempt1/artifacts/external_numeric_guess.bin": {
+      "bytes": 51566,
+      "sha256": "ca921ad981952f5e1acd1552bd7f6186741ab41ba75d961aa206ccf4a80d16ae"
+    }
+  },
+  "original_problem_sha256": "47b33fe5ae43ae90b351a83fc7caba18ab960e076d570ff7c0dd1685d3eceab4",
+  "dual_guess_attempts": [
+    {
+      "attempt": 2,
+      "guess_sha256": "3b5bc66e146f9043b84571271bf7115c86b44820e4594f6e2fc01e825c48d0d7",
+      "actual_A5_used": false,
+      "guess_primal_matches_saved_NPZ": true,
+      "guess_dual_matches_saved_NPZ": true,
+      "NNLS_target_product_roundoff": 2.7755575615628914e-17,
+      "saved_KKT_system_residual": null,
+      "saved_primal_dual": {
+        "scaled_box_violation": 6.765421556309548e-17,
+        "stationarity_inf": 2.4263871123983774e-07,
+        "signed_complementarity_maxabs": 8.677409502306058e-18,
+        "worst_scaled_row": 2347,
+        "dual_nonzero": 23
+      },
+      "JSON_hint_pair": {
+        "scaled_box_violation": 6.765421556309548e-17,
+        "stationarity_inf": 2.4263871123983774e-07,
+        "signed_complementarity_maxabs": 8.677409502306058e-18,
+        "worst_scaled_row": 2347,
+        "dual_nonzero": 23
+      },
+      "literal_history": {
+        "cycles": 200,
+        "failures": 129,
+        "first_failure": {
+          "kind": "progress_jerk",
+          "tick": 2,
+          "b": 0.039999999999999945,
+          "jerk": 5.00000000000001
+        },
+        "final_r": -1.7320129705455933e-17,
+        "final_w_maxabs": 7.657177843178875e-18,
+        "max_literal_progress_jerk": 5.000000000000093
+      }
+    },
+    {
+      "attempt": 3,
+      "guess_sha256": "aa3a9471c80e2d91297d3d24d5025375e1927f20a91ef48e7026b8b7ece48bf9",
+      "actual_A5_used": false,
+      "guess_primal_matches_saved_NPZ": false,
+      "guess_dual_matches_saved_NPZ": true,
+      "NNLS_target_product_roundoff": 2.7755575615628914e-17,
+      "saved_KKT_system_residual": 1.1796119636642288e-16,
+      "saved_primal_dual": {
+        "scaled_box_violation": 5.204170427930421e-18,
+        "stationarity_inf": 1.1796119636642288e-16,
+        "signed_complementarity_maxabs": 3.3374646150860586e-19,
+        "worst_scaled_row": 469,
+        "dual_nonzero": 23
+      },
+      "JSON_hint_pair": {
+        "scaled_box_violation": 6.765421556309548e-17,
+        "stationarity_inf": 2.750635412537405e-07,
+        "signed_complementarity_maxabs": 8.677407999223752e-18,
+        "worst_scaled_row": 2347,
+        "dual_nonzero": 23
+      },
+      "literal_history": {
+        "cycles": 200,
+        "failures": 129,
+        "first_failure": {
+          "kind": "progress_jerk",
+          "tick": 2,
+          "b": 0.039999999999999945,
+          "jerk": 5.00000000000001
+        },
+        "final_r": -1.7320129705455933e-17,
+        "final_w_maxabs": 7.657177843178875e-18,
+        "max_literal_progress_jerk": 5.000000000000093
+      }
+    },
+    {
+      "attempt": 4,
+      "guess_sha256": "aa87171749dfa0b2b0d8c988eff95fa56a6b9976cadf23fcabc298a455dfa6f5",
+      "actual_A5_used": true,
+      "guess_primal_matches_saved_NPZ": true,
+      "guess_dual_matches_saved_NPZ": true,
+      "NNLS_target_product_roundoff": 2.7755575615628914e-17,
+      "saved_KKT_system_residual": 1.1796119636642288e-16,
+      "saved_primal_dual": {
+        "scaled_box_violation": 5.204170427930421e-18,
+        "stationarity_inf": 1.1796119636642288e-16,
+        "signed_complementarity_maxabs": 3.3374646150860586e-19,
+        "worst_scaled_row": 469,
+        "dual_nonzero": 23
+      },
+      "JSON_hint_pair": {
+        "scaled_box_violation": 5.204170427930421e-18,
+        "stationarity_inf": 1.1796119636642288e-16,
+        "signed_complementarity_maxabs": 3.3374646150860586e-19,
+        "worst_scaled_row": 469,
+        "dual_nonzero": 23
+      },
+      "literal_history": {
+        "cycles": 200,
+        "failures": 10,
+        "first_failure": {
+          "kind": "progress_jerk",
+          "tick": 2,
+          "b": 0.04,
+          "jerk": 5.000000000000001
+        },
+        "final_r": 1.328147661294743e-18,
+        "final_w_maxabs": 1.4690939437178585e-17,
+        "max_literal_progress_jerk": 5.000000000000013
+      }
+    }
+  ],
+  "stabilization_rejected_initial_KKT": {
+    "scaled_box_violation": 5.443950802305753e-10,
+    "stationarity_inf": 1.452830911130576e-17,
+    "signed_complementarity_maxabs": 7.581265097171261e-20,
+    "worst_scaled_row": 5575,
+    "dual_nonzero": 4
+  },
+  "stabilization_final_hint": {
+    "scaled_box_violation": 0.0,
+    "stationarity_inf": 1.3010426069826053e-17,
+    "signed_complementarity_maxabs": 3.1080905638411066e-20,
+    "worst_scaled_row": 0,
+    "dual_nonzero": 4,
+    "saved_KKT_system_residual": 1.5612511283791264e-17,
+    "literal_history": {
+      "cycles": 200,
+      "failures": 0,
+      "first_failure": null,
+      "final_r": 0.0,
+      "final_w_maxabs": 1.3633842319005218e-17,
+      "max_literal_progress_jerk": 0.0
+    },
+    "actual_A7_used": true,
+    "guess_sha256": "7f44c11a1ba47479a8af8abe34a2c9d863ae0ee1b719bea1a6a91474ef30c371"
+  },
+  "inner_progress_guard_explorations": [
+    {
+      "eta": "1e-08",
+      "stronger_problem": {
+        "scaled_box_violation": 4.336808689942018e-18,
+        "stationarity_inf": 8.326672684688674e-17,
+        "signed_complementarity_maxabs": 4.449952820863666e-19,
+        "worst_scaled_row": 5454,
+        "dual_nonzero": 23
+      },
+      "full_original_SI_max": 4.336808689942018e-18,
+      "literal_history": {
+        "cycles": 200,
+        "failures": 0,
+        "first_failure": null,
+        "final_r": 1.032702569292443e-17,
+        "final_w_maxabs": 1.3742262536253769e-17,
+        "max_literal_progress_jerk": 4.999999990000007
+      },
+      "actual_A5_or_A7_used": false
+    },
+    {
+      "eta": "1e-07",
+      "stronger_problem": {
+        "scaled_box_violation": 1.734723475976807e-18,
+        "stationarity_inf": 1.457167719820518e-16,
+        "signed_complementarity_maxabs": 5.562441034504998e-19,
+        "worst_scaled_row": 1100,
+        "dual_nonzero": 23
+      },
+      "full_original_SI_max": 3.903127820947816e-18,
+      "literal_history": {
+        "cycles": 200,
+        "failures": 122,
+        "first_failure": {
+          "kind": "half_progress",
+          "tick": 160,
+          "half": 2,
+          "s": 0.004992159900156823,
+          "r": -2.168404344971009e-18
+        },
+        "final_r": -2.0599841277224584e-18,
+        "final_w_maxabs": 1.3755815063409838e-17,
+        "max_literal_progress_jerk": 4.999999900000007
+      },
+      "actual_A5_or_A7_used": false
+    },
+    {
+      "eta": "1e-06",
+      "stronger_problem": {
+        "scaled_box_violation": 3.0357660829594124e-18,
+        "stationarity_inf": 1.6306400674181987e-16,
+        "signed_complementarity_maxabs": 3.893708783131474e-19,
+        "worst_scaled_row": 2347,
+        "dual_nonzero": 23
+      },
+      "full_original_SI_max": 4.0115480381963664e-18,
+      "literal_history": {
+        "cycles": 200,
+        "failures": 122,
+        "first_failure": {
+          "kind": "half_progress",
+          "tick": 160,
+          "half": 2,
+          "s": 0.004992159001567995,
+          "r": -1.9081958235744878e-17
+        },
+        "final_r": -2.0708261494473135e-17,
+        "final_w_maxabs": 1.6154612370034016e-17,
+        "max_literal_progress_jerk": 4.99999900000001
+      },
+      "actual_A5_or_A7_used": false
+    }
+  ],
+  "new_optimizer_Model_native_calls": 0,
+  "complete_dual_derivation_source_present": false,
+  "scope": "numerical hint provenance supplement; no independent optimizer/oracle optimum/native candidate claim",
+  "phase5": "NOT_ACCEPTED"
+}

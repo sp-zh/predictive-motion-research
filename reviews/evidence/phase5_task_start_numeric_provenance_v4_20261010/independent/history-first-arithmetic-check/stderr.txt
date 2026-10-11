@@ -1,0 +1,5 @@
+Traceback (most recent call last):
+  File "/private/tmp/root_independent_task_start_numeric_repairs_review_20261010/audit_numeric_provenance.py", line 104, in <module>
+    assert np.array_equal(nn['M'],M) and np.array_equal(nn['target'],-(H@ref+g))
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AssertionError

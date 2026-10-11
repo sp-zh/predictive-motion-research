@@ -1,0 +1,146 @@
+{
+  "schema": "LITERAL_PINNED_GEOMETRY_REACH_PURE_READ_V1",
+  "inputs": [
+    {
+      "path": "/home/codextransfer/predictive_motion/models/fr3/fr3_arm.urdf",
+      "bytes": 15732,
+      "sha256": "b66fe057eef414021df731932851604b5eef175610fd679338994e920aff157d"
+    },
+    {
+      "path": "/home/codextransfer/predictive_motion/experiments/generated/phase4/robot.yaml",
+      "bytes": 363,
+      "sha256": "38bc8c200850bb3353f147b3b69eefdbb04916de7942da8002d99a9893fa3330"
+    },
+    {
+      "path": "/home/codextransfer/predictive_motion/experiments/generated/phase4/geometry.json",
+      "bytes": 6436,
+      "sha256": "643fc68ccc123ea2321358f4d631221df79001465daa85b55ee87cdde66d2c7f"
+    },
+    {
+      "path": "/home/codextransfer/predictive_motion/experiments/generated/phase4/link0_hull.txt",
+      "bytes": 8281,
+      "sha256": "2b9d130ee533007b1e0c46c9c4e54a83eaebadbe166291333b58f74ff421c46f"
+    },
+    {
+      "path": "/home/codextransfer/predictive_motion/experiments/generated/phase4/link1_hull.txt",
+      "bytes": 12718,
+      "sha256": "1a3fe93e21c2ae635a73c9b0d5e32cd10197bf439f758eb9c54d50071bb680f6"
+    },
+    {
+      "path": "/home/codextransfer/predictive_motion/experiments/generated/phase4/link2_hull.txt",
+      "bytes": 12598,
+      "sha256": "ad58135ef6da47e5ca7ec9d2b44e6affedeb9a2b6b89fdd0b00f4586209d6fd3"
+    },
+    {
+      "path": "/home/codextransfer/predictive_motion/experiments/generated/phase4/link3_hull.txt",
+      "bytes": 12671,
+      "sha256": "5f0d055a1ae3b820fc78980bd1a1d43c2cc1d051475ff28a316dd639011b3af1"
+    },
+    {
+      "path": "/home/codextransfer/predictive_motion/experiments/generated/phase4/link4_hull.txt",
+      "bytes": 12645,
+      "sha256": "31ffebc17dbde087bf6b3acb71fab00f65c2bd8e710454a86363d4fad8192577"
+    },
+    {
+      "path": "/home/codextransfer/predictive_motion/experiments/generated/phase4/link5_hull.txt",
+      "bytes": 12614,
+      "sha256": "e9399f63b91c8511010b380ab1e83c2cc4a60ce4291496f97d26ff177c5ca507"
+    },
+    {
+      "path": "/home/codextransfer/predictive_motion/experiments/generated/phase4/link6_hull.txt",
+      "bytes": 8237,
+      "sha256": "9ab8fff4f30f8d04ac083759d3bf4714829ac46b69dab0dd2e9dc914227f1bd7"
+    },
+    {
+      "path": "/home/codextransfer/predictive_motion/experiments/generated/phase4/link7_hull.txt",
+      "bytes": 8239,
+      "sha256": "574fd99cb5ae5fb65e50fd677c82a78bf968b539411a5feef32d12c41d648163"
+    }
+  ],
+  "root_to_link_chain_m": {
+    "fr3_link0": 0.0,
+    "fr3_link0_accelerometer_top": 0.050871607877086014,
+    "fr3_link0_accelerometer_bottom": 0.05447563658517448,
+    "fr3_link1_accelerometer_top": 0.4282856883692404,
+    "fr3_link1_accelerometer_bottom": 0.4249082836310199,
+    "fr3_link1": 0.333,
+    "fr3_link2_accelerometer_top": 0.4516967725298376,
+    "fr3_link2_accelerometer_bottom": 0.4533890118283226,
+    "fr3_link2": 0.333,
+    "fr3_link3_accelerometer_top": 0.7504058608020266,
+    "fr3_link3_accelerometer_bottom": 0.7458622599209827,
+    "fr3_link3": 0.649,
+    "fr3_link4_accelerometer_top": 0.8117445911199004,
+    "fr3_link4_accelerometer_bottom": 0.811615317723891,
+    "fr3_link4": 0.7315,
+    "fr3_link5_accelerometer_top": 1.2122320812258423,
+    "fr3_link5_accelerometer_bottom": 1.2088853425235535,
+    "fr3_link5": 1.1242623327153458,
+    "fr3_link6": 1.1242623327153458,
+    "fr3_link7": 1.212262332715346,
+    "fr3_link8": 1.3192623327153459
+  },
+  "maximum_chain_m": 1.3192623327153459,
+  "attached_aabb_tcp_cover_extent_m": 0.33385640646055104,
+  "conservative_total_m": 1.653118739175897,
+  "comparison_constant_m": 2.0,
+  "relative_geometry_lipschitz": 4.0,
+  "body_sigma_column_derivative_bound": 8.6,
+  "sqrt7_body_matrix_derivative_bound": 22.75346127515548,
+  "used_body_sigma_lipschitz": 32.0,
+  "attachments": [
+    {
+      "name": "fr3_link0",
+      "aabb_corner_radius": 0.22869964582432098
+    },
+    {
+      "name": "fr3_link1",
+      "aabb_corner_radius": 0.23800363711277853
+    },
+    {
+      "name": "fr3_link2",
+      "aabb_corner_radius": 0.23968545000288824
+    },
+    {
+      "name": "fr3_link3",
+      "aabb_corner_radius": 0.21432324450955537
+    },
+    {
+      "name": "fr3_link4",
+      "aabb_corner_radius": 0.21597817382518703
+    },
+    {
+      "name": "fr3_link5",
+      "aabb_corner_radius": 0.2998304929713953
+    },
+    {
+      "name": "fr3_link6",
+      "aabb_corner_radius": 0.1652916324974519
+    },
+    {
+      "name": "fr3_link7",
+      "aabb_corner_radius": 0.1568956945020237
+    },
+    {
+      "name": "tool_adapter",
+      "aabb_extent": 0.05585980344927164
+    },
+    {
+      "name": "tool_shaft",
+      "aabb_extent": 0.3134925740754312
+    },
+    {
+      "name": "tool_sensor",
+      "aabb_extent": 0.07613118960624632
+    },
+    {
+      "name": "tool_tip",
+      "aabb_extent": 0.33385640646055104
+    },
+    {
+      "name": "tool_bracket",
+      "aabb_extent": 0.07110605688291835
+    }
+  ],
+  "Model_MuJoCo_native_entries": 0
+}

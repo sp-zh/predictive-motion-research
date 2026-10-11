@@ -1,0 +1,2842 @@
+{
+  "schema": "ROOT_ACTUAL_B_REFUSAL_FILE_ARITHMETIC_V1",
+  "source_sha256": "6ae16f42ae605f4e758c1e7e78b45461e9a60853fe11647fceecb8e7ecb62629",
+  "packet_payloads": 558,
+  "packet_bytes": 78795534,
+  "input_pins": {
+    "/private/tmp/phase5_pilot_bc_checkpoint_v5_20261010/READY.json": {
+      "bytes": 112011,
+      "sha256": "5320992b8ec6334d07bc37a58b5750053090f62d960c3c757b78beb3b391bdd9"
+    },
+    "/private/tmp/phase5_pilot_bc_checkpoint_v5_20261010/ACTUAL_CANDIDATE_VALIDATION.json": {
+      "bytes": 54507,
+      "sha256": "143b0adcef2fc9fd01f7221b3f0e85402a86e491b73de1ee544e6a02c0593452"
+    },
+    "/private/tmp/phase5_pilot_bc_checkpoint_v5_20261010/ACTUAL_CANDIDATE_VALUE.json": {
+      "bytes": 825160,
+      "sha256": "4255f81650016f332db681fb5514b69658cd51646356c9fcf1be2043e7df2835"
+    },
+    "/private/tmp/phase5_pilot_bc_checkpoint_v5_20261010/ACTUAL_PILOT_SUMMARY.json": {
+      "bytes": 2689,
+      "sha256": "9fc1b5a33583eb3484331881db483344dd06e5b41e9025fae94658ce7686849b"
+    },
+    "/private/tmp/phase5_pilot_bc_checkpoint_v5_20261010/FAILURE_BRANCH_NEIGHBORHOOD.json": {
+      "bytes": 11478,
+      "sha256": "8d3476d80d831dadc42d31d32932f94b050bdd99371ed22cbde3831834d478ba"
+    },
+    "/private/tmp/phase5_pilot_bc_checkpoint_v5_20261010/PILOT_REACH_BOUND_PURE_DATA_V4.json": {
+      "bytes": 4941,
+      "sha256": "6e94e4325f32b84b8e8f330575eff6ceed48920890dcdedeb85b61b54a415382"
+    },
+    "/private/tmp/phase5_pilot_bc_checkpoint_v5_20261010/README.md": {
+      "bytes": 1345,
+      "sha256": "3b54ae25a8bc457d192f5961fd839704c3e301bdc0cec5236f763cdc69bd03e2"
+    },
+    "/private/tmp/phase5_pilot_bc_checkpoint_v5_20261010/ROOT_ONE_COMPONENT_RELEASE.json": {
+      "bytes": 4230,
+      "sha256": "5e3cc78e1318c174bb321411f36d2fd1fd3a9ce5c2645686a7de4cd726932e8c"
+    },
+    "/private/tmp/phase5_pilot_bc_checkpoint_v5_20261010/VISUAL_INSPECTION.md": {
+      "bytes": 492,
+      "sha256": "ee1313810f226b8ad84f25b446f85164625333296df916d5c2705b8d8232b670"
+    },
+    "/private/tmp/phase5_pilot_bc_checkpoint_v5_20261010/actual-dell/NATIVE_ELF_INDEX.json": {
+      "bytes": 890,
+      "sha256": "052f7c4a8837d832146e650e23f0fedf8f70ffeabbe9743660bfcc31e16d92f3"
+    },
+    "/private/tmp/phase5_pilot_bc_checkpoint_v5_20261010/actual-dell/session-task-start-pilot-bc-v1-20261010-attempt8/LINK_OBJECT_BINDING.json": {
+      "bytes": 4750,
+      "sha256": "ea65178bdb9eb24acc2a5a41d4f1f1a61b26d1c426f68cb527a19f72a93c95ca"
+    },
+    "/private/tmp/phase5_pilot_bc_checkpoint_v5_20261010/actual-dell/session-task-start-pilot-bc-v1-20261010-attempt8/build-attempt1/AFTER_INPUT_IDENTITIES.json": {
+      "bytes": 10338,
+      "sha256": "9eba6ca3c16cfcdabd5deedd65e4937ebe9724167b9a488ab39b8fcccf636d31"
+    },
+    "/private/tmp/phase5_pilot_bc_checkpoint_v5_20261010/actual-dell/session-task-start-pilot-bc-v1-20261010-attempt8/build-attempt1/AFTER_READONLY_ROSTERS.json": {
+      "bytes": 3,
+      "sha256": "37517e5f3dc66819f61f5a7bb8ace1921282415f10551d2defa5c3eb0985b570"
+    },
+    "/private/tmp/phase5_pilot_bc_checkpoint_v5_20261010/actual-dell/session-task-start-pilot-bc-v1-20261010-attempt8/build-attempt1/BATCH_PREFIX.json": {
+      "bytes": 51322,
+      "sha256": "8d8fa0ab0b3bdad67ac02907065107d45b2d067bf8da5a42e5c8d3f15d56bb13"
+    },
+    "/private/tmp/phase5_pilot_bc_checkpoint_v5_20261010/actual-dell/session-task-start-pilot-bc-v1-20261010-attempt8/build-attempt1/BEFORE_INPUT_IDENTITIES.json": {
+      "bytes": 10338,
+      "sha256": "9eba6ca3c16cfcdabd5deedd65e4937ebe9724167b9a488ab39b8fcccf636d31"
+    },
+    "/private/tmp/phase5_pilot_bc_checkpoint_v5_20261010/actual-dell/session-task-start-pilot-bc-v1-20261010-attempt8/build-attempt1/BEFORE_READONLY_ROSTERS.json": {
+      "bytes": 3,
+      "sha256": "37517e5f3dc66819f61f5a7bb8ace1921282415f10551d2defa5c3eb0985b570"
+    },
+    "/private/tmp/phase5_pilot_bc_checkpoint_v5_20261010/actual-dell/session-task-start-pilot-bc-v1-20261010-attempt8/build-attempt1/BUILD_RESULT.json": {
+      "bytes": 51376,
+      "sha256": "49c95aabcad433dae832f756af706fbe5b188ff6f963d4192161cc718c5dc863"
+    },
+    "/private/tmp/phase5_pilot_bc_checkpoint_v5_20261010/actual-dell/session-task-start-pilot-bc-v1-20261010-attempt8/build-attempt1/CONTROL_EVENT_PREFIX.json": {
+      "bytes": 2860,
+      "sha256": "9861b502ae64f21f3b6fbee19a7293ccf762920b68355e9e8587bc4d63968658"
+    },
+    "/private/tmp/phase5_pilot_bc_checkpoint_v5_20261010/actual-dell/session-task-start-pilot-bc-v1-20261010-attempt8/build-attempt1/compile-1.result.json": {
+      "bytes": 5169,
+      "sha256": "57f4600f42613d6a1a5722f8a29e724b17622a8d64e8a66c109df0355913dbfc"
+    },
+    "/private/tmp/phase5_pilot_bc_checkpoint_v5_20261010/actual-dell/session-task-start-pilot-bc-v1-20261010-attempt8/build-attempt1/compile-1.stderr": {
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    "/private/tmp/phase5_pilot_bc_checkpoint_v5_20261010/actual-dell/session-task-start-pilot-bc-v1-20261010-attempt8/build-attempt1/compile-1.stdout": {
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    "/private/tmp/phase5_pilot_bc_checkpoint_v5_20261010/actual-dell/session-task-start-pilot-bc-v1-20261010-attempt8/build-attempt1/compile-2.result.json": {
+      "bytes": 5171,
+      "sha256": "967dc06b4c19dc2c4e9d325daf0abb1dc8b4a82ada780437e1c35a9a0c487655"
+    },
+    "/private/tmp/phase5_pilot_bc_checkpoint_v5_20261010/actual-dell/session-task-start-pilot-bc-v1-20261010-attempt8/build-attempt1/compile-2.stderr": {
+      "bytes": 4252,
+      "sha256": "05e58f8ad400e6bf7259e2783326d500f332d1cdf6e9221c2295de2500dbb1ef"
+    },
+    "/private/tmp/phase5_pilot_bc_checkpoint_v5_20261010/actual-dell/session-task-start-pilot-bc-v1-20261010-attempt8/build-attempt1/compile-2.stdout": {
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    "/private/tmp/phase5_pilot_bc_checkpoint_v5_20261010/actual-dell/session-task-start-pilot-bc-v1-20261010-attempt8/build-attempt1/compile-3.result.json": {
+      "bytes": 5174,
+      "sha256": "5a7457939d9c1d1ea20a45bc107a3cafd989251ca320d48b734c74d08b558cc5"
+    },
+    "/private/tmp/phase5_pilot_bc_checkpoint_v5_20261010/actual-dell/session-task-start-pilot-bc-v1-20261010-attempt8/build-attempt1/compile-3.stderr": {
+      "bytes": 11604,
+      "sha256": "55c7676a0ba75be05a0c05fea63f61b9142d760187262c08e0a4eb1fde7174da"
+    },
+    "/private/tmp/phase5_pilot_bc_checkpoint_v5_20261010/actual-dell/session-task-start-pilot-bc-v1-20261010-attempt8/build-attempt1/compile-3.stdout": {
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    "/private/tmp/phase5_pilot_bc_checkpoint_v5_20261010/actual-dell/session-task-start-pilot-bc-v1-20261010-attempt8/build-attempt1/compile-4.result.json": {
+      "bytes": 5178,
+      "sha256": "bdd2049413c874c1be9ba3905c758973bcf38e39dae70a4095f300b8ed42343a"
+    },
+    "/private/tmp/phase5_pilot_bc_checkpoint_v5_20261010/actual-dell/session-task-start-pilot-bc-v1-20261010-attempt8/build-attempt1/compile-4.stderr": {
+      "bytes": 1126,
+      "sha256": "e838172384a638ce6ec5aacea7765fde5bed0887a3d60c00b914e07b1a7c815e"
+    },
+    "/private/tmp/phase5_pilot_bc_checkpoint_v5_20261010/actual-dell/session-task-start-pilot-bc-v1-20261010-attempt8/build-attempt1/compile-4.stdout": {
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    "/private/tmp/phase5_pilot_bc_checkpoint_v5_20261010/actual-dell/session-task-start-pilot-bc-v1-20261010-attempt8/build-attempt1/compile-5.result.json": {
+      "bytes": 5173,
+      "sha256": "303ea582ec9fe0f9df7979ad5a3dfad4e955d4c4b1d2ea43e0516dfdb431dca9"
+    },
+    "/private/tmp/phase5_pilot_bc_checkpoint_v5_20261010/actual-dell/session-task-start-pilot-bc-v1-20261010-attempt8/build-attempt1/compile-5.stderr": {
+      "bytes": 6291,
+      "sha256": "b8a6fb2da78c27e06177baa79771f0f2697ba4f20d3e46377ed9099e9796d440"
+    },
+    "/private/tmp/phase5_pilot_bc_checkpoint_v5_20261010/actual-dell/session-task-start-pilot-bc-v1-20261010-attempt8/build-attempt1/compile-5.stdout": {
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    "/private/tmp/phase5_pilot_bc_checkpoint_v5_20261010/actual-dell/session-task-start-pilot-bc-v1-20261010-attempt8/build-attempt1/compile-6.result.json": {
+      "bytes": 5174,
+      "sha256": "5558aef15a0c5c5a617f97248b8b806afb5e2d9f029388c50e044e06e260b422"
+    },
+    "/private/tmp/phase5_pilot_bc_checkpoint_v5_20261010/actual-dell/session-task-start-pilot-bc-v1-20261010-attempt8/build-attempt1/compile-6.stderr": {
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    "/private/tmp/phase5_pilot_bc_checkpoint_v5_20261010/actual-dell/session-task-start-pilot-bc-v1-20261010-attempt8/build-attempt1/compile-6.stdout": {
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    "/private/tmp/phase5_pilot_bc_checkpoint_v5_20261010/actual-dell/session-task-start-pilot-bc-v1-20261010-attempt8/build-attempt1/compile-7.result.json": {
+      "bytes": 5174,
+      "sha256": "6b0df09931da24462d444bdb4350dd9c5c79bfa7896aed6ef4960ca203ea1b2c"
+    },
+    "/private/tmp/phase5_pilot_bc_checkpoint_v5_20261010/actual-dell/session-task-start-pilot-bc-v1-20261010-attempt8/build-attempt1/compile-7.stderr": {
+      "bytes": 6890,
+      "sha256": "53b1c4157cf1d884e9197e211a5390db7b2194c553f420447e5f699e101322ba"
+    },
+    "/private/tmp/phase5_pilot_bc_checkpoint_v5_20261010/actual-dell/session-task-start-pilot-bc-v1-20261010-attempt8/build-attempt1/compile-7.stdout": {
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    "/private/tmp/phase5_pilot_bc_checkpoint_v5_20261010/actual-dell/session-task-start-pilot-bc-v1-20261010-attempt8/build-attempt1/compile-8.result.json": {
+      "bytes": 5172,
+      "sha256": "ffd03f3c52931474438ec0a6e43c9fbce2c7d17f39be3f5c5e7471f645456ab4"
+    },
+    "/private/tmp/phase5_pilot_bc_checkpoint_v5_20261010/actual-dell/session-task-start-pilot-bc-v1-20261010-attempt8/build-attempt1/compile-8.stderr": {
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    "/private/tmp/phase5_pilot_bc_checkpoint_v5_20261010/actual-dell/session-task-start-pilot-bc-v1-20261010-attempt8/build-attempt1/compile-8.stdout": {
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    "/private/tmp/phase5_pilot_bc_checkpoint_v5_20261010/actual-dell/session-task-start-pilot-bc-v1-20261010-attempt8/build-attempt1/compile-9.result.json": {
+      "bytes": 5177,
+      "sha256": "15d9d87599a22a22b53a2cf02df5f8be5b373b7ba8e6bbb38474bcc6fbfc03c3"
+    },
+    "/private/tmp/phase5_pilot_bc_checkpoint_v5_20261010/actual-dell/session-task-start-pilot-bc-v1-20261010-attempt8/build-attempt1/compile-9.stderr": {
+      "bytes": 6576,
+      "sha256": "55cf5d5d381af293c2cf41fa0c1a98650d952c8adbadcf2d24918159e4f78a07"
+    },
+    "/private/tmp/phase5_pilot_bc_checkpoint_v5_20261010/actual-dell/session-task-start-pilot-bc-v1-20261010-attempt8/build-attempt1/compile-9.stdout": {
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    "/private/tmp/phase5_pilot_bc_checkpoint_v5_20261010/actual-dell/session-task-start-pilot-bc-v1-20261010-attempt8/dev_compile.py": {
+      "bytes": 7467,
+      "sha256": "d7944f587094687f580da210efc654ac2f754f63ba6e2ed30f5a5687c68eca13"
+    },
+    "/private/tmp/phase5_pilot_bc_checkpoint_v5_20261010/actual-dell/session-task-start-pilot-bc-v1-20261010-attempt8/dev_compile_plan.json": {
+      "bytes": 44243,
+      "sha256": "7cf98721f437865691fc3bdb876beae3f1643a64c374c2b1b6624d6e6acbd331"
+    },
+    "/private/tmp/phase5_pilot_bc_checkpoint_v5_20261010/actual-dell/session-task-start-pilot-bc-v1-20261010-attempt8/dev_link.py": {
+      "bytes": 7464,
+      "sha256": "5527e266877fa48e70c2e335aa43175a1b7473644ba70ad62c23f0f6624b14cc"
+    },
+    "/private/tmp/phase5_pilot_bc_checkpoint_v5_20261010/actual-dell/session-task-start-pilot-bc-v1-20261010-attempt8/dev_link_plan.json": {
+      "bytes": 9320,
+      "sha256": "951c36a8f899a05e9a3aadac3b884a370434ca05ed8473f63b6b376d209413d2"
+    },
+    "/private/tmp/phase5_pilot_bc_checkpoint_v5_20261010/actual-dell/session-task-start-pilot-bc-v1-20261010-attempt8/link-attempt1/AFTER_INPUT_IDENTITIES.json": {
+      "bytes": 4700,
+      "sha256": "5eb8bc9191ecc691efb00e040cc753c82ebdbb4c469c6dd37fd3f2121a55adda"
+    },
+    "/private/tmp/phase5_pilot_bc_checkpoint_v5_20261010/actual-dell/session-task-start-pilot-bc-v1-20261010-attempt8/link-attempt1/AFTER_READONLY_ROSTERS.json": {
+      "bytes": 3,
+      "sha256": "37517e5f3dc66819f61f5a7bb8ace1921282415f10551d2defa5c3eb0985b570"
+    },
+    "/private/tmp/phase5_pilot_bc_checkpoint_v5_20261010/actual-dell/session-task-start-pilot-bc-v1-20261010-attempt8/link-attempt1/BATCH_PREFIX.json": {
+      "bytes": 5845,
+      "sha256": "465bf5f05fb373a671fa414907faba6e09648a6e3cf68494ced16d531216d511"
+    },
+    "/private/tmp/phase5_pilot_bc_checkpoint_v5_20261010/actual-dell/session-task-start-pilot-bc-v1-20261010-attempt8/link-attempt1/BEFORE_INPUT_IDENTITIES.json": {
+      "bytes": 4700,
+      "sha256": "5eb8bc9191ecc691efb00e040cc753c82ebdbb4c469c6dd37fd3f2121a55adda"
+    },
+    "/private/tmp/phase5_pilot_bc_checkpoint_v5_20261010/actual-dell/session-task-start-pilot-bc-v1-20261010-attempt8/link-attempt1/BEFORE_READONLY_ROSTERS.json": {
+      "bytes": 3,
+      "sha256": "37517e5f3dc66819f61f5a7bb8ace1921282415f10551d2defa5c3eb0985b570"
+    },
+    "/private/tmp/phase5_pilot_bc_checkpoint_v5_20261010/actual-dell/session-task-start-pilot-bc-v1-20261010-attempt8/link-attempt1/BUILD_RESULT.json": {
+      "bytes": 5899,
+      "sha256": "78ac8d49c68348c54a3ad9e86a7afcb3cae8fbd696af8101d3a73d4ab5847c7b"
+    },
+    "/private/tmp/phase5_pilot_bc_checkpoint_v5_20261010/actual-dell/session-task-start-pilot-bc-v1-20261010-attempt8/link-attempt1/CONTROL_EVENT_PREFIX.json": {
+      "bytes": 722,
+      "sha256": "580c2ef307e2f21c33e58e5797add27272cb4b1a70e089269c7e37d55e9c8474"
+    },
+    "/private/tmp/phase5_pilot_bc_checkpoint_v5_20261010/actual-dell/session-task-start-pilot-bc-v1-20261010-attempt8/link-attempt1/compile-1.result.json": {
+      "bytes": 5409,
+      "sha256": "5bd33f0fdecb214ad4cad78ebe53e52f5c036b0fea22e5ed4b27eb5e2703191a"
+    },
+    "/private/tmp/phase5_pilot_bc_checkpoint_v5_20261010/actual-dell/session-task-start-pilot-bc-v1-20261010-attempt8/link-attempt1/compile-1.stderr": {
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    "/private/tmp/phase5_pilot_bc_checkpoint_v5_20261010/actual-dell/session-task-start-pilot-bc-v1-20261010-attempt8/link-attempt1/compile-1.stdout": {
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    "/private/tmp/phase5_pilot_bc_checkpoint_v5_20261010/actual-dell/session-task-start-pilot-bc-v1-20261010-attempt8/src/active_first_cycle.cpp": {
+      "bytes": 25408,
+      "sha256": "8f2af92562f2eb4ee514435d3c95298bf8005b5eff729e927f242c05b55286ca"
+    },
+    "/private/tmp/phase5_pilot_bc_checkpoint_v5_20261010/actual-dell/session-task-start-pilot-bc-v1-20261010-attempt8/src/affine_assembly.cpp": {
+      "bytes": 28981,
+      "sha256": "d478eda1f0fe97bfc41851515f4baa3e485fd4a57968a62dcb6233ae1157bbd5"
+    },
+    "/private/tmp/phase5_pilot_bc_checkpoint_v5_20261010/actual-dell/session-task-start-pilot-bc-v1-20261010-attempt8/src/affine_assembly.hpp": {
+      "bytes": 6026,
+      "sha256": "6faee2961242052c7655da41e8988dd0844f14c3cfa885672aa7c03eaa1dcb57"
+    },
+    "/private/tmp/phase5_pilot_bc_checkpoint_v5_20261010/actual-dell/session-task-start-pilot-bc-v1-20261010-attempt8/src/box_screen_tests.cpp": {
+      "bytes": 2954,
+      "sha256": "d922876babec2867dd1293bcee259ac12e4b2a6af5a30dd551209e097c0abaf8"
+    },
+    "/private/tmp/phase5_pilot_bc_checkpoint_v5_20261010/actual-dell/session-task-start-pilot-bc-v1-20261010-attempt8/src/candidate_validation.cpp": {
+      "bytes": 9533,
+      "sha256": "ca3a4c883a3321b6faea550c96b4edd4083770d1b54eadb6162ba747bc94a19f"
+    },
+    "/private/tmp/phase5_pilot_bc_checkpoint_v5_20261010/actual-dell/session-task-start-pilot-bc-v1-20261010-attempt8/src/candidate_validation.hpp": {
+      "bytes": 1114,
+      "sha256": "54c2135a7ce9a0bf61362c7e22014c2e9df3410b6dbfe1be1893f0ecb90af3cf"
+    },
+    "/private/tmp/phase5_pilot_bc_checkpoint_v5_20261010/actual-dell/session-task-start-pilot-bc-v1-20261010-attempt8/src/integrated_horizon_qp.cpp": {
+      "bytes": 88934,
+      "sha256": "475aeb8c56589ce851c23f6755aeb5bf615cd9f98fce01f93ab2dc4dfa2b45e2"
+    },
+    "/private/tmp/phase5_pilot_bc_checkpoint_v5_20261010/actual-dell/session-task-start-pilot-bc-v1-20261010-attempt8/src/integrated_horizon_qp.hpp": {
+      "bytes": 10978,
+      "sha256": "c159175fbb8ef987e3bd4b81ecfbc64e7f7ecef6858b4d504733aa45e695aa74"
+    },
+    "/private/tmp/phase5_pilot_bc_checkpoint_v5_20261010/actual-dell/session-task-start-pilot-bc-v1-20261010-attempt8/src/invariant_tests.cpp": {
+      "bytes": 4721,
+      "sha256": "f5a859d4cf9d79a5ae1b533b8dd62776f2bba6599dfdf691a2915ef3296a33f9"
+    },
+    "/private/tmp/phase5_pilot_bc_checkpoint_v5_20261010/actual-dell/session-task-start-pilot-bc-v1-20261010-attempt8/src/linear_box_screen.hpp": {
+      "bytes": 3916,
+      "sha256": "b649eff43293a3078b7b46a0166fa0f8a2ac59f3a8496c8c73a98c275fed96d1"
+    },
+    "/private/tmp/phase5_pilot_bc_checkpoint_v5_20261010/actual-dell/session-task-start-pilot-bc-v1-20261010-attempt8/src/lossless_evidence.cpp": {
+      "bytes": 17427,
+      "sha256": "38d3f0ce4bd1086e9eba95bedbe453c54cb07efd8dfcecbfa873ade5e966256c"
+    },
+    "/private/tmp/phase5_pilot_bc_checkpoint_v5_20261010/actual-dell/session-task-start-pilot-bc-v1-20261010-attempt8/src/lossless_evidence.hpp": {
+      "bytes": 1943,
+      "sha256": "1c406d89f0c6156eed89ab191ae395143be8012aa25186b88af7db28f476f769"
+    },
+    "/private/tmp/phase5_pilot_bc_checkpoint_v5_20261010/actual-dell/session-task-start-pilot-bc-v1-20261010-attempt8/src/model_boundary.cpp": {
+      "bytes": 20641,
+      "sha256": "0da697a20727fc1c56d733d184a70ed59468df314e2c9c39c0dc44b76e690008"
+    },
+    "/private/tmp/phase5_pilot_bc_checkpoint_v5_20261010/actual-dell/session-task-start-pilot-bc-v1-20261010-attempt8/src/model_boundary.hpp": {
+      "bytes": 4002,
+      "sha256": "33e21b605d8e042d7c9c4db2cf99736f995be2494714e3c37f8ac2746fb5a5b6"
+    },
+    "/private/tmp/phase5_pilot_bc_checkpoint_v5_20261010/actual-dell/session-task-start-pilot-bc-v1-20261010-attempt8/src/normalization.cpp": {
+      "bytes": 23976,
+      "sha256": "a0cd0c9cdb505f922f1744f24cf115057b6ba9f3a9bc1b3ed0c9bdb82d358ed5"
+    },
+    "/private/tmp/phase5_pilot_bc_checkpoint_v5_20261010/actual-dell/session-task-start-pilot-bc-v1-20261010-attempt8/src/normalization.hpp": {
+      "bytes": 4288,
+      "sha256": "9456be5c205f23d2aa2210eac02286d030204a446af003ee85362b971ccb43d8"
+    },
+    "/private/tmp/phase5_pilot_bc_checkpoint_v5_20261010/actual-dell/session-task-start-pilot-bc-v1-20261010-attempt8/src/observer_tests.cpp": {
+      "bytes": 3785,
+      "sha256": "d1ff998984981a5ded1e92b8d452503e8b489ecfb0d067fb04ff5fd616d02877"
+    },
+    "/private/tmp/phase5_pilot_bc_checkpoint_v5_20261010/actual-dell/session-task-start-pilot-bc-v1-20261010-attempt8/src/runtime_observer.cpp": {
+      "bytes": 29234,
+      "sha256": "38dca26ff77b94f767fd113e8ab1152b115a09841d2ee29e5a780a80a11d3311"
+    },
+    "/private/tmp/phase5_pilot_bc_checkpoint_v5_20261010/actual-dell/session-task-start-pilot-bc-v1-20261010-attempt8/src/runtime_observer.hpp": {
+      "bytes": 7283,
+      "sha256": "ac8177e89a894c99fc08b8c3964bbfccc876f49a9c125cc5f2d16a76028b3a82"
+    },
+    "/private/tmp/phase5_pilot_bc_checkpoint_v5_20261010/actual-dell/session-task-start-pilot-bc-v1-20261010-attempt8/src/session_primitives.hpp": {
+      "bytes": 2259,
+      "sha256": "0b76bc232ed81dc9b4831617ae1690cfc287def914b8bca5f05ce6e6e25b6080"
+    },
+    "/private/tmp/phase5_pilot_bc_checkpoint_v5_20261010/actual-dell/session-task-start-pilot-bc-v1-20261010-attempt8/src/solver_forensics.cpp": {
+      "bytes": 26514,
+      "sha256": "664c1d480e23c1ddef4f45a57165cba871213740329f8693c897d7c07ee7af27"
+    },
+    "/private/tmp/phase5_pilot_bc_checkpoint_v5_20261010/actual-dell/session-task-start-pilot-bc-v1-20261010-attempt8/src/solver_forensics.hpp": {
+      "bytes": 860,
+      "sha256": "02b3a3d33ea64a351b228b96b2e0590b7a79fb4e9b87da78dc28c59465aca3bb"
+    },
+    "/private/tmp/phase5_pilot_bc_checkpoint_v5_20261010/actual-dell/session-task-start-pilot-bc-v1-20261010-attempt8/src/task_local_provider.cpp": {
+      "bytes": 1839,
+      "sha256": "051b424236979f9fe7ea4cb96564f54969025c997bfba2c61d347a23f7fbae4c"
+    },
+    "/private/tmp/phase5_pilot_bc_checkpoint_v5_20261010/actual-dell/session-task-start-pilot-bc-v1-20261010-attempt8/src/task_local_provider.hpp": {
+      "bytes": 640,
+      "sha256": "1819e2f626fb0ff65ad7e7e8de0b0b52f625e6bf435b073d7cca55722d76f093"
+    },
+    "/private/tmp/phase5_pilot_bc_checkpoint_v5_20261010/actual-dell/session-task-start-pilot-bc-v2-20261010-attempt9/build-attempt1/AFTER_INPUT_IDENTITIES.json": {
+      "bytes": 10338,
+      "sha256": "b57cd6bdd81a7b1fce127077075c2805343689417e28dda90ca3399f6af8fe1c"
+    },
+    "/private/tmp/phase5_pilot_bc_checkpoint_v5_20261010/actual-dell/session-task-start-pilot-bc-v2-20261010-attempt9/build-attempt1/AFTER_READONLY_ROSTERS.json": {
+      "bytes": 3,
+      "sha256": "37517e5f3dc66819f61f5a7bb8ace1921282415f10551d2defa5c3eb0985b570"
+    },
+    "/private/tmp/phase5_pilot_bc_checkpoint_v5_20261010/actual-dell/session-task-start-pilot-bc-v2-20261010-attempt9/build-attempt1/BATCH_PREFIX.json": {
+      "bytes": 51318,
+      "sha256": "2ec4db56f4035bc276c435d2c3421a75cc3bb83d428671700cd8455722655f34"
+    },
+    "/private/tmp/phase5_pilot_bc_checkpoint_v5_20261010/actual-dell/session-task-start-pilot-bc-v2-20261010-attempt9/build-attempt1/BEFORE_INPUT_IDENTITIES.json": {
+      "bytes": 10338,
+      "sha256": "b57cd6bdd81a7b1fce127077075c2805343689417e28dda90ca3399f6af8fe1c"
+    },
+    "/private/tmp/phase5_pilot_bc_checkpoint_v5_20261010/actual-dell/session-task-start-pilot-bc-v2-20261010-attempt9/build-attempt1/BEFORE_READONLY_ROSTERS.json": {
+      "bytes": 3,
+      "sha256": "37517e5f3dc66819f61f5a7bb8ace1921282415f10551d2defa5c3eb0985b570"
+    },
+    "/private/tmp/phase5_pilot_bc_checkpoint_v5_20261010/actual-dell/session-task-start-pilot-bc-v2-20261010-attempt9/build-attempt1/BUILD_RESULT.json": {
+      "bytes": 51372,
+      "sha256": "29e3802101222ea34e54a2e6be9dc10b1ce27133e1f0ace5f3a1ead5809ef9a0"
+    },
+    "/private/tmp/phase5_pilot_bc_checkpoint_v5_20261010/actual-dell/session-task-start-pilot-bc-v2-20261010-attempt9/build-attempt1/CONTROL_EVENT_PREFIX.json": {
+      "bytes": 2864,
+      "sha256": "9df4d468971d6805ffd906d86866481884c6766adbe5404989d105898adbf380"
+    },
+    "/private/tmp/phase5_pilot_bc_checkpoint_v5_20261010/actual-dell/session-task-start-pilot-bc-v2-20261010-attempt9/build-attempt1/compile-1.result.json": {
+      "bytes": 5168,
+      "sha256": "518e6d60a7629ca79f3bea1d5d8a79b134050f1ff40088e55c90bb4d6912a43c"
+    },
+    "/private/tmp/phase5_pilot_bc_checkpoint_v5_20261010/actual-dell/session-task-start-pilot-bc-v2-20261010-attempt9/build-attempt1/compile-1.stderr": {
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    "/private/tmp/phase5_pilot_bc_checkpoint_v5_20261010/actual-dell/session-task-start-pilot-bc-v2-20261010-attempt9/build-attempt1/compile-1.stdout": {
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    "/private/tmp/phase5_pilot_bc_checkpoint_v5_20261010/actual-dell/session-task-start-pilot-bc-v2-20261010-attempt9/build-attempt1/compile-2.result.json": {
+      "bytes": 5171,
+      "sha256": "189c58bdcda9458cc1cd230a230b27faf6a91746c51ed30fe7ceff7acb439421"
+    },
+    "/private/tmp/phase5_pilot_bc_checkpoint_v5_20261010/actual-dell/session-task-start-pilot-bc-v2-20261010-attempt9/build-attempt1/compile-2.stderr": {
+      "bytes": 4252,
+      "sha256": "e92e7710b760c5faea974ee4b14eb02eec5096334119d55d59d99e88cc170c0a"
+    },
+    "/private/tmp/phase5_pilot_bc_checkpoint_v5_20261010/actual-dell/session-task-start-pilot-bc-v2-20261010-attempt9/build-attempt1/compile-2.stdout": {
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    "/private/tmp/phase5_pilot_bc_checkpoint_v5_20261010/actual-dell/session-task-start-pilot-bc-v2-20261010-attempt9/build-attempt1/compile-3.result.json": {
+      "bytes": 5173,
+      "sha256": "3a796a5294a5d15df4dbdce21662809e490e3a4accb3a688ec902d1d63218d3d"
+    },
+    "/private/tmp/phase5_pilot_bc_checkpoint_v5_20261010/actual-dell/session-task-start-pilot-bc-v2-20261010-attempt9/build-attempt1/compile-3.stderr": {
+      "bytes": 11604,
+      "sha256": "e24a943e7a19c4f6016b127e35f9d2dc463aba2d7ad2127be9a618f40bdf283a"
+    },
+    "/private/tmp/phase5_pilot_bc_checkpoint_v5_20261010/actual-dell/session-task-start-pilot-bc-v2-20261010-attempt9/build-attempt1/compile-3.stdout": {
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    "/private/tmp/phase5_pilot_bc_checkpoint_v5_20261010/actual-dell/session-task-start-pilot-bc-v2-20261010-attempt9/build-attempt1/compile-4.result.json": {
+      "bytes": 5178,
+      "sha256": "72aa6a3c67c6dcd6ed3476f3bdfa0b6be01523e2a2c18c84104235825225fd9e"
+    },
+    "/private/tmp/phase5_pilot_bc_checkpoint_v5_20261010/actual-dell/session-task-start-pilot-bc-v2-20261010-attempt9/build-attempt1/compile-4.stderr": {
+      "bytes": 1126,
+      "sha256": "e7f629351b35d26fbeb002c11dae62e5f5a8c3e0ecad28880763c80e8fc64815"
+    },
+    "/private/tmp/phase5_pilot_bc_checkpoint_v5_20261010/actual-dell/session-task-start-pilot-bc-v2-20261010-attempt9/build-attempt1/compile-4.stdout": {
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    "/private/tmp/phase5_pilot_bc_checkpoint_v5_20261010/actual-dell/session-task-start-pilot-bc-v2-20261010-attempt9/build-attempt1/compile-5.result.json": {
+      "bytes": 5172,
+      "sha256": "4ca9da149480f4af397c3c0e91f455f589c5044e5037c58cc8597fe7287b9657"
+    },
+    "/private/tmp/phase5_pilot_bc_checkpoint_v5_20261010/actual-dell/session-task-start-pilot-bc-v2-20261010-attempt9/build-attempt1/compile-5.stderr": {
+      "bytes": 6291,
+      "sha256": "f6d3f90b716891df3988ef478877ba6f8a7e599fe6870b19387eec1be5e162fd"
+    },
+    "/private/tmp/phase5_pilot_bc_checkpoint_v5_20261010/actual-dell/session-task-start-pilot-bc-v2-20261010-attempt9/build-attempt1/compile-5.stdout": {
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    "/private/tmp/phase5_pilot_bc_checkpoint_v5_20261010/actual-dell/session-task-start-pilot-bc-v2-20261010-attempt9/build-attempt1/compile-6.result.json": {
+      "bytes": 5173,
+      "sha256": "715df2c5ea6d8a97a5ab153eb00d039f72ab28d1a8251a664cc5f3d1daa51628"
+    },
+    "/private/tmp/phase5_pilot_bc_checkpoint_v5_20261010/actual-dell/session-task-start-pilot-bc-v2-20261010-attempt9/build-attempt1/compile-6.stderr": {
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    "/private/tmp/phase5_pilot_bc_checkpoint_v5_20261010/actual-dell/session-task-start-pilot-bc-v2-20261010-attempt9/build-attempt1/compile-6.stdout": {
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    "/private/tmp/phase5_pilot_bc_checkpoint_v5_20261010/actual-dell/session-task-start-pilot-bc-v2-20261010-attempt9/build-attempt1/compile-7.result.json": {
+      "bytes": 5174,
+      "sha256": "e428116c61bf50e9d0b0211da14b719c05c2766eff21ef7feb57e9d844773969"
+    },
+    "/private/tmp/phase5_pilot_bc_checkpoint_v5_20261010/actual-dell/session-task-start-pilot-bc-v2-20261010-attempt9/build-attempt1/compile-7.stderr": {
+      "bytes": 6890,
+      "sha256": "950504d8dd17381a9f01c152ffa31332d08bbab37a0a7f1dfe7375f5a796a63b"
+    },
+    "/private/tmp/phase5_pilot_bc_checkpoint_v5_20261010/actual-dell/session-task-start-pilot-bc-v2-20261010-attempt9/build-attempt1/compile-7.stdout": {
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    "/private/tmp/phase5_pilot_bc_checkpoint_v5_20261010/actual-dell/session-task-start-pilot-bc-v2-20261010-attempt9/build-attempt1/compile-8.result.json": {
+      "bytes": 5172,
+      "sha256": "a445827ae96e8fe7f0e27b6388290a47204a7b6d3a4aab0a9b0108c5dfdd1b4e"
+    },
+    "/private/tmp/phase5_pilot_bc_checkpoint_v5_20261010/actual-dell/session-task-start-pilot-bc-v2-20261010-attempt9/build-attempt1/compile-8.stderr": {
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    "/private/tmp/phase5_pilot_bc_checkpoint_v5_20261010/actual-dell/session-task-start-pilot-bc-v2-20261010-attempt9/build-attempt1/compile-8.stdout": {
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    "/private/tmp/phase5_pilot_bc_checkpoint_v5_20261010/actual-dell/session-task-start-pilot-bc-v2-20261010-attempt9/build-attempt1/compile-9.result.json": {
+      "bytes": 5177,
+      "sha256": "d61898e432b8b902908c92291a8f3ff86c34ce878c3cfbe146e2be18cf71b364"
+    },
+    "/private/tmp/phase5_pilot_bc_checkpoint_v5_20261010/actual-dell/session-task-start-pilot-bc-v2-20261010-attempt9/build-attempt1/compile-9.stderr": {
+      "bytes": 6661,
+      "sha256": "ed2a0cd301b2c1403e98f9fe93706c784743ccdc17a47b8f96423b2c348146f0"
+    },
+    "/private/tmp/phase5_pilot_bc_checkpoint_v5_20261010/actual-dell/session-task-start-pilot-bc-v2-20261010-attempt9/build-attempt1/compile-9.stdout": {
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    "/private/tmp/phase5_pilot_bc_checkpoint_v5_20261010/actual-dell/session-task-start-pilot-bc-v2-20261010-attempt9/dev_compile.py": {
+      "bytes": 7467,
+      "sha256": "d7944f587094687f580da210efc654ac2f754f63ba6e2ed30f5a5687c68eca13"
+    },
+    "/private/tmp/phase5_pilot_bc_checkpoint_v5_20261010/actual-dell/session-task-start-pilot-bc-v2-20261010-attempt9/dev_compile_plan.json": {
+      "bytes": 44243,
+      "sha256": "abc2df9dfb05fc467f28b19f8f9d4aa33cfb3797bb09c9db96c430c5b69a495d"
+    },
+    "/private/tmp/phase5_pilot_bc_checkpoint_v5_20261010/actual-dell/session-task-start-pilot-bc-v2-20261010-attempt9/src/active_first_cycle.cpp": {
+      "bytes": 25408,
+      "sha256": "8f2af92562f2eb4ee514435d3c95298bf8005b5eff729e927f242c05b55286ca"
+    },
+    "/private/tmp/phase5_pilot_bc_checkpoint_v5_20261010/actual-dell/session-task-start-pilot-bc-v2-20261010-attempt9/src/affine_assembly.cpp": {
+      "bytes": 28981,
+      "sha256": "d478eda1f0fe97bfc41851515f4baa3e485fd4a57968a62dcb6233ae1157bbd5"
+    },
+    "/private/tmp/phase5_pilot_bc_checkpoint_v5_20261010/actual-dell/session-task-start-pilot-bc-v2-20261010-attempt9/src/affine_assembly.hpp": {
+      "bytes": 6026,
+      "sha256": "6faee2961242052c7655da41e8988dd0844f14c3cfa885672aa7c03eaa1dcb57"
+    },
+    "/private/tmp/phase5_pilot_bc_checkpoint_v5_20261010/actual-dell/session-task-start-pilot-bc-v2-20261010-attempt9/src/box_screen_tests.cpp": {
+      "bytes": 2954,
+      "sha256": "d922876babec2867dd1293bcee259ac12e4b2a6af5a30dd551209e097c0abaf8"
+    },
+    "/private/tmp/phase5_pilot_bc_checkpoint_v5_20261010/actual-dell/session-task-start-pilot-bc-v2-20261010-attempt9/src/candidate_validation.cpp": {
+      "bytes": 9618,
+      "sha256": "4c47590f9254b0a5ece8d6408f2da91e8d2fcb07576af155164544a4f56bf176"
+    },
+    "/private/tmp/phase5_pilot_bc_checkpoint_v5_20261010/actual-dell/session-task-start-pilot-bc-v2-20261010-attempt9/src/candidate_validation.hpp": {
+      "bytes": 1114,
+      "sha256": "54c2135a7ce9a0bf61362c7e22014c2e9df3410b6dbfe1be1893f0ecb90af3cf"
+    },
+    "/private/tmp/phase5_pilot_bc_checkpoint_v5_20261010/actual-dell/session-task-start-pilot-bc-v2-20261010-attempt9/src/integrated_horizon_qp.cpp": {
+      "bytes": 89073,
+      "sha256": "dbf28d84b112befd9f8b1a52737a4d5e7d96c97af9ec1edc13281b83bd0c349a"
+    },
+    "/private/tmp/phase5_pilot_bc_checkpoint_v5_20261010/actual-dell/session-task-start-pilot-bc-v2-20261010-attempt9/src/integrated_horizon_qp.hpp": {
+      "bytes": 11018,
+      "sha256": "c3149b43a9d419a20245e36d161c979b504a1bd930463f9b3a60efe527233c26"
+    },
+    "/private/tmp/phase5_pilot_bc_checkpoint_v5_20261010/actual-dell/session-task-start-pilot-bc-v2-20261010-attempt9/src/invariant_tests.cpp": {
+      "bytes": 4721,
+      "sha256": "f5a859d4cf9d79a5ae1b533b8dd62776f2bba6599dfdf691a2915ef3296a33f9"
+    },
+    "/private/tmp/phase5_pilot_bc_checkpoint_v5_20261010/actual-dell/session-task-start-pilot-bc-v2-20261010-attempt9/src/linear_box_screen.hpp": {
+      "bytes": 3916,
+      "sha256": "b649eff43293a3078b7b46a0166fa0f8a2ac59f3a8496c8c73a98c275fed96d1"
+    },
+    "/private/tmp/phase5_pilot_bc_checkpoint_v5_20261010/actual-dell/session-task-start-pilot-bc-v2-20261010-attempt9/src/lossless_evidence.cpp": {
+      "bytes": 17427,
+      "sha256": "38d3f0ce4bd1086e9eba95bedbe453c54cb07efd8dfcecbfa873ade5e966256c"
+    },
+    "/private/tmp/phase5_pilot_bc_checkpoint_v5_20261010/actual-dell/session-task-start-pilot-bc-v2-20261010-attempt9/src/lossless_evidence.hpp": {
+      "bytes": 1943,
+      "sha256": "1c406d89f0c6156eed89ab191ae395143be8012aa25186b88af7db28f476f769"
+    },
+    "/private/tmp/phase5_pilot_bc_checkpoint_v5_20261010/actual-dell/session-task-start-pilot-bc-v2-20261010-attempt9/src/model_boundary.cpp": {
+      "bytes": 20641,
+      "sha256": "0da697a20727fc1c56d733d184a70ed59468df314e2c9c39c0dc44b76e690008"
+    },
+    "/private/tmp/phase5_pilot_bc_checkpoint_v5_20261010/actual-dell/session-task-start-pilot-bc-v2-20261010-attempt9/src/model_boundary.hpp": {
+      "bytes": 4002,
+      "sha256": "33e21b605d8e042d7c9c4db2cf99736f995be2494714e3c37f8ac2746fb5a5b6"
+    },
+    "/private/tmp/phase5_pilot_bc_checkpoint_v5_20261010/actual-dell/session-task-start-pilot-bc-v2-20261010-attempt9/src/normalization.cpp": {
+      "bytes": 23976,
+      "sha256": "a0cd0c9cdb505f922f1744f24cf115057b6ba9f3a9bc1b3ed0c9bdb82d358ed5"
+    },
+    "/private/tmp/phase5_pilot_bc_checkpoint_v5_20261010/actual-dell/session-task-start-pilot-bc-v2-20261010-attempt9/src/normalization.hpp": {
+      "bytes": 4288,
+      "sha256": "9456be5c205f23d2aa2210eac02286d030204a446af003ee85362b971ccb43d8"
+    },
+    "/private/tmp/phase5_pilot_bc_checkpoint_v5_20261010/actual-dell/session-task-start-pilot-bc-v2-20261010-attempt9/src/observer_tests.cpp": {
+      "bytes": 3785,
+      "sha256": "d1ff998984981a5ded1e92b8d452503e8b489ecfb0d067fb04ff5fd616d02877"
+    },
+    "/private/tmp/phase5_pilot_bc_checkpoint_v5_20261010/actual-dell/session-task-start-pilot-bc-v2-20261010-attempt9/src/runtime_observer.cpp": {
+      "bytes": 29296,
+      "sha256": "42d526426e22cf4419bc2932ef2c9ffe57ee96d07d6e6965380a4f2ba6586060"
+    },
+    "/private/tmp/phase5_pilot_bc_checkpoint_v5_20261010/actual-dell/session-task-start-pilot-bc-v2-20261010-attempt9/src/runtime_observer.hpp": {
+      "bytes": 7267,
+      "sha256": "ffd34f418c8fde91f56c786f1743a87bf14f3ce10a2ebc1e0503dbad70c90c8d"
+    },
+    "/private/tmp/phase5_pilot_bc_checkpoint_v5_20261010/actual-dell/session-task-start-pilot-bc-v2-20261010-attempt9/src/session_primitives.hpp": {
+      "bytes": 2259,
+      "sha256": "0b76bc232ed81dc9b4831617ae1690cfc287def914b8bca5f05ce6e6e25b6080"
+    },
+    "/private/tmp/phase5_pilot_bc_checkpoint_v5_20261010/actual-dell/session-task-start-pilot-bc-v2-20261010-attempt9/src/solver_forensics.cpp": {
+      "bytes": 26514,
+      "sha256": "664c1d480e23c1ddef4f45a57165cba871213740329f8693c897d7c07ee7af27"
+    },
+    "/private/tmp/phase5_pilot_bc_checkpoint_v5_20261010/actual-dell/session-task-start-pilot-bc-v2-20261010-attempt9/src/solver_forensics.hpp": {
+      "bytes": 860,
+      "sha256": "02b3a3d33ea64a351b228b96b2e0590b7a79fb4e9b87da78dc28c59465aca3bb"
+    },
+    "/private/tmp/phase5_pilot_bc_checkpoint_v5_20261010/actual-dell/session-task-start-pilot-bc-v2-20261010-attempt9/src/task_local_provider.cpp": {
+      "bytes": 1839,
+      "sha256": "051b424236979f9fe7ea4cb96564f54969025c997bfba2c61d347a23f7fbae4c"
+    },
+    "/private/tmp/phase5_pilot_bc_checkpoint_v5_20261010/actual-dell/session-task-start-pilot-bc-v2-20261010-attempt9/src/task_local_provider.hpp": {
+      "bytes": 640,
+      "sha256": "1819e2f626fb0ff65ad7e7e8de0b0b52f625e6bf435b073d7cca55722d76f093"
+    },
+    "/private/tmp/phase5_pilot_bc_checkpoint_v5_20261010/actual-dell/session-task-start-pilot-bc-v3-20261010-attempt10/build-attempt1/AFTER_INPUT_IDENTITIES.json": {
+      "bytes": 10386,
+      "sha256": "a34475d7794acc61f993de03e624b366723e64edc6cd560f9f1b4f6259292c44"
+    },
+    "/private/tmp/phase5_pilot_bc_checkpoint_v5_20261010/actual-dell/session-task-start-pilot-bc-v3-20261010-attempt10/build-attempt1/AFTER_READONLY_ROSTERS.json": {
+      "bytes": 3,
+      "sha256": "37517e5f3dc66819f61f5a7bb8ace1921282415f10551d2defa5c3eb0985b570"
+    },
+    "/private/tmp/phase5_pilot_bc_checkpoint_v5_20261010/actual-dell/session-task-start-pilot-bc-v3-20261010-attempt10/build-attempt1/BATCH_PREFIX.json": {
+      "bytes": 5768,
+      "sha256": "72a4ff95a2c8a3b8f8bf4b587d414c061ed97887d4ca503ede6801c0a3f3a593"
+    },
+    "/private/tmp/phase5_pilot_bc_checkpoint_v5_20261010/actual-dell/session-task-start-pilot-bc-v3-20261010-attempt10/build-attempt1/BEFORE_INPUT_IDENTITIES.json": {
+      "bytes": 10386,
+      "sha256": "a34475d7794acc61f993de03e624b366723e64edc6cd560f9f1b4f6259292c44"
+    },
+    "/private/tmp/phase5_pilot_bc_checkpoint_v5_20261010/actual-dell/session-task-start-pilot-bc-v3-20261010-attempt10/build-attempt1/BEFORE_READONLY_ROSTERS.json": {
+      "bytes": 3,
+      "sha256": "37517e5f3dc66819f61f5a7bb8ace1921282415f10551d2defa5c3eb0985b570"
+    },
+    "/private/tmp/phase5_pilot_bc_checkpoint_v5_20261010/actual-dell/session-task-start-pilot-bc-v3-20261010-attempt10/build-attempt1/BUILD_RESULT.json": {
+      "bytes": 5822,
+      "sha256": "dc98c3539744f9be828b6cad93a24a5de58dc5a31357573a8a22b1b954e96cd2"
+    },
+    "/private/tmp/phase5_pilot_bc_checkpoint_v5_20261010/actual-dell/session-task-start-pilot-bc-v3-20261010-attempt10/build-attempt1/CONTROL_EVENT_PREFIX.json": {
+      "bytes": 718,
+      "sha256": "f647d95f3e3a256e4141293e2cffb60bad529bd2e488c8f5b0bc5e3fe578771c"
+    },
+    "/private/tmp/phase5_pilot_bc_checkpoint_v5_20261010/actual-dell/session-task-start-pilot-bc-v3-20261010-attempt10/build-attempt1/compile-1.result.json": {
+      "bytes": 5176,
+      "sha256": "5d4d0368f5de7135fe78e529085932304c45150e44a5391337774acb0156f2b6"
+    },
+    "/private/tmp/phase5_pilot_bc_checkpoint_v5_20261010/actual-dell/session-task-start-pilot-bc-v3-20261010-attempt10/build-attempt1/compile-1.stderr": {
+      "bytes": 6298,
+      "sha256": "1d0818a20f3ae3bba6a9222bb322833c2643100394f4eff1241352461f7ebf0e"
+    },
+    "/private/tmp/phase5_pilot_bc_checkpoint_v5_20261010/actual-dell/session-task-start-pilot-bc-v3-20261010-attempt10/build-attempt1/compile-1.stdout": {
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    "/private/tmp/phase5_pilot_bc_checkpoint_v5_20261010/actual-dell/session-task-start-pilot-bc-v3-20261010-attempt10/dev_compile.py": {
+      "bytes": 7467,
+      "sha256": "01fb5f9d8907348c3fc0067ecf6e298758a045aa7e3b332abfec1a9d110b3cbf"
+    },
+    "/private/tmp/phase5_pilot_bc_checkpoint_v5_20261010/actual-dell/session-task-start-pilot-bc-v3-20261010-attempt10/dev_compile_plan.json": {
+      "bytes": 11079,
+      "sha256": "47d810b29ea77272245e78e8df34db3e9bab244d6bc9319db324d48b7cf50d03"
+    },
+    "/private/tmp/phase5_pilot_bc_checkpoint_v5_20261010/actual-dell/session-task-start-pilot-bc-v3-20261010-attempt10/src/active_first_cycle.cpp": {
+      "bytes": 25408,
+      "sha256": "8f2af92562f2eb4ee514435d3c95298bf8005b5eff729e927f242c05b55286ca"
+    },
+    "/private/tmp/phase5_pilot_bc_checkpoint_v5_20261010/actual-dell/session-task-start-pilot-bc-v3-20261010-attempt10/src/affine_assembly.cpp": {
+      "bytes": 28981,
+      "sha256": "d478eda1f0fe97bfc41851515f4baa3e485fd4a57968a62dcb6233ae1157bbd5"
+    },
+    "/private/tmp/phase5_pilot_bc_checkpoint_v5_20261010/actual-dell/session-task-start-pilot-bc-v3-20261010-attempt10/src/affine_assembly.hpp": {
+      "bytes": 6026,
+      "sha256": "6faee2961242052c7655da41e8988dd0844f14c3cfa885672aa7c03eaa1dcb57"
+    },
+    "/private/tmp/phase5_pilot_bc_checkpoint_v5_20261010/actual-dell/session-task-start-pilot-bc-v3-20261010-attempt10/src/box_screen_tests.cpp": {
+      "bytes": 2954,
+      "sha256": "d922876babec2867dd1293bcee259ac12e4b2a6af5a30dd551209e097c0abaf8"
+    },
+    "/private/tmp/phase5_pilot_bc_checkpoint_v5_20261010/actual-dell/session-task-start-pilot-bc-v3-20261010-attempt10/src/candidate_validation.cpp": {
+      "bytes": 9618,
+      "sha256": "4c47590f9254b0a5ece8d6408f2da91e8d2fcb07576af155164544a4f56bf176"
+    },
+    "/private/tmp/phase5_pilot_bc_checkpoint_v5_20261010/actual-dell/session-task-start-pilot-bc-v3-20261010-attempt10/src/candidate_validation.hpp": {
+      "bytes": 1114,
+      "sha256": "54c2135a7ce9a0bf61362c7e22014c2e9df3410b6dbfe1be1893f0ecb90af3cf"
+    },
+    "/private/tmp/phase5_pilot_bc_checkpoint_v5_20261010/actual-dell/session-task-start-pilot-bc-v3-20261010-attempt10/src/integrated_horizon_qp.cpp": {
+      "bytes": 89073,
+      "sha256": "dbf28d84b112befd9f8b1a52737a4d5e7d96c97af9ec1edc13281b83bd0c349a"
+    },
+    "/private/tmp/phase5_pilot_bc_checkpoint_v5_20261010/actual-dell/session-task-start-pilot-bc-v3-20261010-attempt10/src/integrated_horizon_qp.hpp": {
+      "bytes": 11018,
+      "sha256": "c3149b43a9d419a20245e36d161c979b504a1bd930463f9b3a60efe527233c26"
+    },
+    "/private/tmp/phase5_pilot_bc_checkpoint_v5_20261010/actual-dell/session-task-start-pilot-bc-v3-20261010-attempt10/src/invariant_tests.cpp": {
+      "bytes": 4721,
+      "sha256": "f5a859d4cf9d79a5ae1b533b8dd62776f2bba6599dfdf691a2915ef3296a33f9"
+    },
+    "/private/tmp/phase5_pilot_bc_checkpoint_v5_20261010/actual-dell/session-task-start-pilot-bc-v3-20261010-attempt10/src/linear_box_screen.hpp": {
+      "bytes": 3916,
+      "sha256": "b649eff43293a3078b7b46a0166fa0f8a2ac59f3a8496c8c73a98c275fed96d1"
+    },
+    "/private/tmp/phase5_pilot_bc_checkpoint_v5_20261010/actual-dell/session-task-start-pilot-bc-v3-20261010-attempt10/src/lossless_evidence.cpp": {
+      "bytes": 17427,
+      "sha256": "38d3f0ce4bd1086e9eba95bedbe453c54cb07efd8dfcecbfa873ade5e966256c"
+    },
+    "/private/tmp/phase5_pilot_bc_checkpoint_v5_20261010/actual-dell/session-task-start-pilot-bc-v3-20261010-attempt10/src/lossless_evidence.hpp": {
+      "bytes": 1943,
+      "sha256": "1c406d89f0c6156eed89ab191ae395143be8012aa25186b88af7db28f476f769"
+    },
+    "/private/tmp/phase5_pilot_bc_checkpoint_v5_20261010/actual-dell/session-task-start-pilot-bc-v3-20261010-attempt10/src/model_boundary.cpp": {
+      "bytes": 20641,
+      "sha256": "0da697a20727fc1c56d733d184a70ed59468df314e2c9c39c0dc44b76e690008"
+    },
+    "/private/tmp/phase5_pilot_bc_checkpoint_v5_20261010/actual-dell/session-task-start-pilot-bc-v3-20261010-attempt10/src/model_boundary.hpp": {
+      "bytes": 4002,
+      "sha256": "33e21b605d8e042d7c9c4db2cf99736f995be2494714e3c37f8ac2746fb5a5b6"
+    },
+    "/private/tmp/phase5_pilot_bc_checkpoint_v5_20261010/actual-dell/session-task-start-pilot-bc-v3-20261010-attempt10/src/normalization.cpp": {
+      "bytes": 23976,
+      "sha256": "a0cd0c9cdb505f922f1744f24cf115057b6ba9f3a9bc1b3ed0c9bdb82d358ed5"
+    },
+    "/private/tmp/phase5_pilot_bc_checkpoint_v5_20261010/actual-dell/session-task-start-pilot-bc-v3-20261010-attempt10/src/normalization.hpp": {
+      "bytes": 4288,
+      "sha256": "9456be5c205f23d2aa2210eac02286d030204a446af003ee85362b971ccb43d8"
+    },
+    "/private/tmp/phase5_pilot_bc_checkpoint_v5_20261010/actual-dell/session-task-start-pilot-bc-v3-20261010-attempt10/src/observer_tests.cpp": {
+      "bytes": 3785,
+      "sha256": "d1ff998984981a5ded1e92b8d452503e8b489ecfb0d067fb04ff5fd616d02877"
+    },
+    "/private/tmp/phase5_pilot_bc_checkpoint_v5_20261010/actual-dell/session-task-start-pilot-bc-v3-20261010-attempt10/src/runtime_observer.cpp": {
+      "bytes": 29299,
+      "sha256": "27facc8fdbe938fe684fc2831d383614cbbfe58d2aa82d15c5a2449051f48457"
+    },
+    "/private/tmp/phase5_pilot_bc_checkpoint_v5_20261010/actual-dell/session-task-start-pilot-bc-v3-20261010-attempt10/src/runtime_observer.hpp": {
+      "bytes": 7267,
+      "sha256": "ffd34f418c8fde91f56c786f1743a87bf14f3ce10a2ebc1e0503dbad70c90c8d"
+    },
+    "/private/tmp/phase5_pilot_bc_checkpoint_v5_20261010/actual-dell/session-task-start-pilot-bc-v3-20261010-attempt10/src/session_primitives.hpp": {
+      "bytes": 2259,
+      "sha256": "0b76bc232ed81dc9b4831617ae1690cfc287def914b8bca5f05ce6e6e25b6080"
+    },
+    "/private/tmp/phase5_pilot_bc_checkpoint_v5_20261010/actual-dell/session-task-start-pilot-bc-v3-20261010-attempt10/src/solver_forensics.cpp": {
+      "bytes": 26514,
+      "sha256": "664c1d480e23c1ddef4f45a57165cba871213740329f8693c897d7c07ee7af27"
+    },
+    "/private/tmp/phase5_pilot_bc_checkpoint_v5_20261010/actual-dell/session-task-start-pilot-bc-v3-20261010-attempt10/src/solver_forensics.hpp": {
+      "bytes": 860,
+      "sha256": "02b3a3d33ea64a351b228b96b2e0590b7a79fb4e9b87da78dc28c59465aca3bb"
+    },
+    "/private/tmp/phase5_pilot_bc_checkpoint_v5_20261010/actual-dell/session-task-start-pilot-bc-v3-20261010-attempt10/src/task_local_provider.cpp": {
+      "bytes": 1839,
+      "sha256": "051b424236979f9fe7ea4cb96564f54969025c997bfba2c61d347a23f7fbae4c"
+    },
+    "/private/tmp/phase5_pilot_bc_checkpoint_v5_20261010/actual-dell/session-task-start-pilot-bc-v3-20261010-attempt10/src/task_local_provider.hpp": {
+      "bytes": 640,
+      "sha256": "1819e2f626fb0ff65ad7e7e8de0b0b52f625e6bf435b073d7cca55722d76f093"
+    },
+    "/private/tmp/phase5_pilot_bc_checkpoint_v5_20261010/actual-dell/session-task-start-pilot-bc-v4-20261010-attempt11/LINK_OBJECT_BINDING.json": {
+      "bytes": 4785,
+      "sha256": "9ab1b27e8224d032c1554e4f0678ea8652d521368f9d7e1d1187ffca39f1e5d0"
+    },
+    "/private/tmp/phase5_pilot_bc_checkpoint_v5_20261010/actual-dell/session-task-start-pilot-bc-v4-20261010-attempt11/active_run_driver.py": {
+      "bytes": 7592,
+      "sha256": "b828f200f9750faca0ff89abc3ef4b4d7da78c9ab61976a49766a6c125a3e3f2"
+    },
+    "/private/tmp/phase5_pilot_bc_checkpoint_v5_20261010/actual-dell/session-task-start-pilot-bc-v4-20261010-attempt11/active_run_plan.json": {
+      "bytes": 493998,
+      "sha256": "dc072040715400b9a833332fe8365d13da7977932a6815b1d1f18bab3c92ab9c"
+    },
+    "/private/tmp/phase5_pilot_bc_checkpoint_v5_20261010/actual-dell/session-task-start-pilot-bc-v4-20261010-attempt11/build-attempt1/AFTER_INPUT_IDENTITIES.json": {
+      "bytes": 10386,
+      "sha256": "21a56d72c7aaf30f7bf54398da04374add379f15eceb91d8381ada412eb89af6"
+    },
+    "/private/tmp/phase5_pilot_bc_checkpoint_v5_20261010/actual-dell/session-task-start-pilot-bc-v4-20261010-attempt11/build-attempt1/AFTER_READONLY_ROSTERS.json": {
+      "bytes": 3,
+      "sha256": "37517e5f3dc66819f61f5a7bb8ace1921282415f10551d2defa5c3eb0985b570"
+    },
+    "/private/tmp/phase5_pilot_bc_checkpoint_v5_20261010/actual-dell/session-task-start-pilot-bc-v4-20261010-attempt11/build-attempt1/BATCH_PREFIX.json": {
+      "bytes": 5770,
+      "sha256": "0f173bf2b888d29d0b0000a3b02ecba57e2468f0c771b3f82a37df74701efc6a"
+    },
+    "/private/tmp/phase5_pilot_bc_checkpoint_v5_20261010/actual-dell/session-task-start-pilot-bc-v4-20261010-attempt11/build-attempt1/BEFORE_INPUT_IDENTITIES.json": {
+      "bytes": 10386,
+      "sha256": "21a56d72c7aaf30f7bf54398da04374add379f15eceb91d8381ada412eb89af6"
+    },
+    "/private/tmp/phase5_pilot_bc_checkpoint_v5_20261010/actual-dell/session-task-start-pilot-bc-v4-20261010-attempt11/build-attempt1/BEFORE_READONLY_ROSTERS.json": {
+      "bytes": 3,
+      "sha256": "37517e5f3dc66819f61f5a7bb8ace1921282415f10551d2defa5c3eb0985b570"
+    },
+    "/private/tmp/phase5_pilot_bc_checkpoint_v5_20261010/actual-dell/session-task-start-pilot-bc-v4-20261010-attempt11/build-attempt1/BUILD_RESULT.json": {
+      "bytes": 5824,
+      "sha256": "c538faa09d5a2fa3c2a309cdca691245dd813666d1fb5b5b2adcf036c16a1523"
+    },
+    "/private/tmp/phase5_pilot_bc_checkpoint_v5_20261010/actual-dell/session-task-start-pilot-bc-v4-20261010-attempt11/build-attempt1/CONTROL_EVENT_PREFIX.json": {
+      "bytes": 720,
+      "sha256": "7bf59fc45a4945a4dcf015068d3803b49d73973a63bd889842d6b42cd4240c88"
+    },
+    "/private/tmp/phase5_pilot_bc_checkpoint_v5_20261010/actual-dell/session-task-start-pilot-bc-v4-20261010-attempt11/build-attempt1/compile-1.result.json": {
+      "bytes": 5178,
+      "sha256": "220d265c58e4a9c9ee91162ef8347a5e0fb40fd20df8face49e60893991a0177"
+    },
+    "/private/tmp/phase5_pilot_bc_checkpoint_v5_20261010/actual-dell/session-task-start-pilot-bc-v4-20261010-attempt11/build-attempt1/compile-1.stderr": {
+      "bytes": 6298,
+      "sha256": "0e3c708417c484ed9d980d710ae31c2f36493ce75ba01576055e196363b4cfcd"
+    },
+    "/private/tmp/phase5_pilot_bc_checkpoint_v5_20261010/actual-dell/session-task-start-pilot-bc-v4-20261010-attempt11/build-attempt1/compile-1.stdout": {
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    "/private/tmp/phase5_pilot_bc_checkpoint_v5_20261010/actual-dell/session-task-start-pilot-bc-v4-20261010-attempt11/dev_compile.py": {
+      "bytes": 7467,
+      "sha256": "01fb5f9d8907348c3fc0067ecf6e298758a045aa7e3b332abfec1a9d110b3cbf"
+    },
+    "/private/tmp/phase5_pilot_bc_checkpoint_v5_20261010/actual-dell/session-task-start-pilot-bc-v4-20261010-attempt11/dev_compile_plan.json": {
+      "bytes": 11079,
+      "sha256": "ad0dac465d9f7b2cb54186fa234a6c7cda34e70bbe3b25c77d016b7afcbde794"
+    },
+    "/private/tmp/phase5_pilot_bc_checkpoint_v5_20261010/actual-dell/session-task-start-pilot-bc-v4-20261010-attempt11/dev_link.py": {
+      "bytes": 7464,
+      "sha256": "5527e266877fa48e70c2e335aa43175a1b7473644ba70ad62c23f0f6624b14cc"
+    },
+    "/private/tmp/phase5_pilot_bc_checkpoint_v5_20261010/actual-dell/session-task-start-pilot-bc-v4-20261010-attempt11/dev_link_plan.json": {
+      "bytes": 9326,
+      "sha256": "e47f6b03ef4714020808a636af6c4d5698fc5b29efd9527155a7d670fc36a97d"
+    },
+    "/private/tmp/phase5_pilot_bc_checkpoint_v5_20261010/actual-dell/session-task-start-pilot-bc-v4-20261010-attempt11/link-attempt1/AFTER_INPUT_IDENTITIES.json": {
+      "bytes": 4702,
+      "sha256": "8ceb0c8fcfeb875e0fb32b1300756d073cb22b22ee54e896f41bc4e2b31a8c46"
+    },
+    "/private/tmp/phase5_pilot_bc_checkpoint_v5_20261010/actual-dell/session-task-start-pilot-bc-v4-20261010-attempt11/link-attempt1/AFTER_READONLY_ROSTERS.json": {
+      "bytes": 3,
+      "sha256": "37517e5f3dc66819f61f5a7bb8ace1921282415f10551d2defa5c3eb0985b570"
+    },
+    "/private/tmp/phase5_pilot_bc_checkpoint_v5_20261010/actual-dell/session-task-start-pilot-bc-v4-20261010-attempt11/link-attempt1/BATCH_PREFIX.json": {
+      "bytes": 5847,
+      "sha256": "ebd2e3833155937f59367af88a2614a7e994e5a1a4302fcf97d68873d99e5611"
+    },
+    "/private/tmp/phase5_pilot_bc_checkpoint_v5_20261010/actual-dell/session-task-start-pilot-bc-v4-20261010-attempt11/link-attempt1/BEFORE_INPUT_IDENTITIES.json": {
+      "bytes": 4702,
+      "sha256": "8ceb0c8fcfeb875e0fb32b1300756d073cb22b22ee54e896f41bc4e2b31a8c46"
+    },
+    "/private/tmp/phase5_pilot_bc_checkpoint_v5_20261010/actual-dell/session-task-start-pilot-bc-v4-20261010-attempt11/link-attempt1/BEFORE_READONLY_ROSTERS.json": {
+      "bytes": 3,
+      "sha256": "37517e5f3dc66819f61f5a7bb8ace1921282415f10551d2defa5c3eb0985b570"
+    },
+    "/private/tmp/phase5_pilot_bc_checkpoint_v5_20261010/actual-dell/session-task-start-pilot-bc-v4-20261010-attempt11/link-attempt1/BUILD_RESULT.json": {
+      "bytes": 5901,
+      "sha256": "179961693e7f3eeb0f36aea11eacb60446baecd9816992215c23f2293682e1c2"
+    },
+    "/private/tmp/phase5_pilot_bc_checkpoint_v5_20261010/actual-dell/session-task-start-pilot-bc-v4-20261010-attempt11/link-attempt1/CONTROL_EVENT_PREFIX.json": {
+      "bytes": 719,
+      "sha256": "78d56c5919e3638b01a1b784ed90ccdf50fc8e20f79d4b1578cee116721b2fbe"
+    },
+    "/private/tmp/phase5_pilot_bc_checkpoint_v5_20261010/actual-dell/session-task-start-pilot-bc-v4-20261010-attempt11/link-attempt1/compile-1.result.json": {
+      "bytes": 5411,
+      "sha256": "a03aa0b5edbb313146b3e618483777c3c6a4c24e4f56dcf94f19e07799918e2a"
+    },
+    "/private/tmp/phase5_pilot_bc_checkpoint_v5_20261010/actual-dell/session-task-start-pilot-bc-v4-20261010-attempt11/link-attempt1/compile-1.stderr": {
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    "/private/tmp/phase5_pilot_bc_checkpoint_v5_20261010/actual-dell/session-task-start-pilot-bc-v4-20261010-attempt11/link-attempt1/compile-1.stdout": {
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    "/private/tmp/phase5_pilot_bc_checkpoint_v5_20261010/actual-dell/session-task-start-pilot-bc-v4-20261010-attempt11/profile-version1/PRODUCER.json": {
+      "bytes": 253,
+      "sha256": "f387aadafa9b4675328dd05e07266959093b06267317766152ed8afcd514968c"
+    },
+    "/private/tmp/phase5_pilot_bc_checkpoint_v5_20261010/actual-dell/session-task-start-pilot-bc-v4-20261010-attempt11/profile-version1/active_input.json": {
+      "bytes": 326589,
+      "sha256": "39bdd02239172da84dbe7c93d8e327a7100426fbfb18711ccd79e44ace350eda"
+    },
+    "/private/tmp/phase5_pilot_bc_checkpoint_v5_20261010/actual-dell/session-task-start-pilot-bc-v4-20261010-attempt11/src/active_first_cycle.cpp": {
+      "bytes": 25408,
+      "sha256": "8f2af92562f2eb4ee514435d3c95298bf8005b5eff729e927f242c05b55286ca"
+    },
+    "/private/tmp/phase5_pilot_bc_checkpoint_v5_20261010/actual-dell/session-task-start-pilot-bc-v4-20261010-attempt11/src/affine_assembly.cpp": {
+      "bytes": 28981,
+      "sha256": "d478eda1f0fe97bfc41851515f4baa3e485fd4a57968a62dcb6233ae1157bbd5"
+    },
+    "/private/tmp/phase5_pilot_bc_checkpoint_v5_20261010/actual-dell/session-task-start-pilot-bc-v4-20261010-attempt11/src/affine_assembly.hpp": {
+      "bytes": 6026,
+      "sha256": "6faee2961242052c7655da41e8988dd0844f14c3cfa885672aa7c03eaa1dcb57"
+    },
+    "/private/tmp/phase5_pilot_bc_checkpoint_v5_20261010/actual-dell/session-task-start-pilot-bc-v4-20261010-attempt11/src/box_screen_tests.cpp": {
+      "bytes": 2954,
+      "sha256": "d922876babec2867dd1293bcee259ac12e4b2a6af5a30dd551209e097c0abaf8"
+    },
+    "/private/tmp/phase5_pilot_bc_checkpoint_v5_20261010/actual-dell/session-task-start-pilot-bc-v4-20261010-attempt11/src/candidate_validation.cpp": {
+      "bytes": 9618,
+      "sha256": "4c47590f9254b0a5ece8d6408f2da91e8d2fcb07576af155164544a4f56bf176"
+    },
+    "/private/tmp/phase5_pilot_bc_checkpoint_v5_20261010/actual-dell/session-task-start-pilot-bc-v4-20261010-attempt11/src/candidate_validation.hpp": {
+      "bytes": 1114,
+      "sha256": "54c2135a7ce9a0bf61362c7e22014c2e9df3410b6dbfe1be1893f0ecb90af3cf"
+    },
+    "/private/tmp/phase5_pilot_bc_checkpoint_v5_20261010/actual-dell/session-task-start-pilot-bc-v4-20261010-attempt11/src/integrated_horizon_qp.cpp": {
+      "bytes": 89073,
+      "sha256": "dbf28d84b112befd9f8b1a52737a4d5e7d96c97af9ec1edc13281b83bd0c349a"
+    },
+    "/private/tmp/phase5_pilot_bc_checkpoint_v5_20261010/actual-dell/session-task-start-pilot-bc-v4-20261010-attempt11/src/integrated_horizon_qp.hpp": {
+      "bytes": 11018,
+      "sha256": "c3149b43a9d419a20245e36d161c979b504a1bd930463f9b3a60efe527233c26"
+    },
+    "/private/tmp/phase5_pilot_bc_checkpoint_v5_20261010/actual-dell/session-task-start-pilot-bc-v4-20261010-attempt11/src/invariant_tests.cpp": {
+      "bytes": 4721,
+      "sha256": "f5a859d4cf9d79a5ae1b533b8dd62776f2bba6599dfdf691a2915ef3296a33f9"
+    },
+    "/private/tmp/phase5_pilot_bc_checkpoint_v5_20261010/actual-dell/session-task-start-pilot-bc-v4-20261010-attempt11/src/linear_box_screen.hpp": {
+      "bytes": 3916,
+      "sha256": "b649eff43293a3078b7b46a0166fa0f8a2ac59f3a8496c8c73a98c275fed96d1"
+    },
+    "/private/tmp/phase5_pilot_bc_checkpoint_v5_20261010/actual-dell/session-task-start-pilot-bc-v4-20261010-attempt11/src/lossless_evidence.cpp": {
+      "bytes": 17427,
+      "sha256": "38d3f0ce4bd1086e9eba95bedbe453c54cb07efd8dfcecbfa873ade5e966256c"
+    },
+    "/private/tmp/phase5_pilot_bc_checkpoint_v5_20261010/actual-dell/session-task-start-pilot-bc-v4-20261010-attempt11/src/lossless_evidence.hpp": {
+      "bytes": 1943,
+      "sha256": "1c406d89f0c6156eed89ab191ae395143be8012aa25186b88af7db28f476f769"
+    },
+    "/private/tmp/phase5_pilot_bc_checkpoint_v5_20261010/actual-dell/session-task-start-pilot-bc-v4-20261010-attempt11/src/model_boundary.cpp": {
+      "bytes": 20641,
+      "sha256": "0da697a20727fc1c56d733d184a70ed59468df314e2c9c39c0dc44b76e690008"
+    },
+    "/private/tmp/phase5_pilot_bc_checkpoint_v5_20261010/actual-dell/session-task-start-pilot-bc-v4-20261010-attempt11/src/model_boundary.hpp": {
+      "bytes": 4002,
+      "sha256": "33e21b605d8e042d7c9c4db2cf99736f995be2494714e3c37f8ac2746fb5a5b6"
+    },
+    "/private/tmp/phase5_pilot_bc_checkpoint_v5_20261010/actual-dell/session-task-start-pilot-bc-v4-20261010-attempt11/src/normalization.cpp": {
+      "bytes": 23976,
+      "sha256": "a0cd0c9cdb505f922f1744f24cf115057b6ba9f3a9bc1b3ed0c9bdb82d358ed5"
+    },
+    "/private/tmp/phase5_pilot_bc_checkpoint_v5_20261010/actual-dell/session-task-start-pilot-bc-v4-20261010-attempt11/src/normalization.hpp": {
+      "bytes": 4288,
+      "sha256": "9456be5c205f23d2aa2210eac02286d030204a446af003ee85362b971ccb43d8"
+    },
+    "/private/tmp/phase5_pilot_bc_checkpoint_v5_20261010/actual-dell/session-task-start-pilot-bc-v4-20261010-attempt11/src/observer_tests.cpp": {
+      "bytes": 3785,
+      "sha256": "d1ff998984981a5ded1e92b8d452503e8b489ecfb0d067fb04ff5fd616d02877"
+    },
+    "/private/tmp/phase5_pilot_bc_checkpoint_v5_20261010/actual-dell/session-task-start-pilot-bc-v4-20261010-attempt11/src/runtime_observer.cpp": {
+      "bytes": 30429,
+      "sha256": "b9c95d633dd99014487755e8f2260bef34f0dae2acc89e553115de245059f93b"
+    },
+    "/private/tmp/phase5_pilot_bc_checkpoint_v5_20261010/actual-dell/session-task-start-pilot-bc-v4-20261010-attempt11/src/runtime_observer.hpp": {
+      "bytes": 7267,
+      "sha256": "ffd34f418c8fde91f56c786f1743a87bf14f3ce10a2ebc1e0503dbad70c90c8d"
+    },
+    "/private/tmp/phase5_pilot_bc_checkpoint_v5_20261010/actual-dell/session-task-start-pilot-bc-v4-20261010-attempt11/src/session_primitives.hpp": {
+      "bytes": 2259,
+      "sha256": "0b76bc232ed81dc9b4831617ae1690cfc287def914b8bca5f05ce6e6e25b6080"
+    },
+    "/private/tmp/phase5_pilot_bc_checkpoint_v5_20261010/actual-dell/session-task-start-pilot-bc-v4-20261010-attempt11/src/solver_forensics.cpp": {
+      "bytes": 26514,
+      "sha256": "664c1d480e23c1ddef4f45a57165cba871213740329f8693c897d7c07ee7af27"
+    },
+    "/private/tmp/phase5_pilot_bc_checkpoint_v5_20261010/actual-dell/session-task-start-pilot-bc-v4-20261010-attempt11/src/solver_forensics.hpp": {
+      "bytes": 860,
+      "sha256": "02b3a3d33ea64a351b228b96b2e0590b7a79fb4e9b87da78dc28c59465aca3bb"
+    },
+    "/private/tmp/phase5_pilot_bc_checkpoint_v5_20261010/actual-dell/session-task-start-pilot-bc-v4-20261010-attempt11/src/task_local_provider.cpp": {
+      "bytes": 1839,
+      "sha256": "051b424236979f9fe7ea4cb96564f54969025c997bfba2c61d347a23f7fbae4c"
+    },
+    "/private/tmp/phase5_pilot_bc_checkpoint_v5_20261010/actual-dell/session-task-start-pilot-bc-v4-20261010-attempt11/src/task_local_provider.hpp": {
+      "bytes": 640,
+      "sha256": "1819e2f626fb0ff65ad7e7e8de0b0b52f625e6bf435b073d7cca55722d76f093"
+    },
+    "/private/tmp/phase5_pilot_bc_checkpoint_v5_20261010/actual-dell/session-task-start-pilot-bc-v5-20261010-attempt12/LINK_OBJECT_BINDING.json": {
+      "bytes": 4791,
+      "sha256": "22dfaafc78f7e9764e8604e2c9c0deab04063f71d9e2b4f106971d23270c5c99"
+    },
+    "/private/tmp/phase5_pilot_bc_checkpoint_v5_20261010/actual-dell/session-task-start-pilot-bc-v5-20261010-attempt12/active_run_driver.py": {
+      "bytes": 7592,
+      "sha256": "b828f200f9750faca0ff89abc3ef4b4d7da78c9ab61976a49766a6c125a3e3f2"
+    },
+    "/private/tmp/phase5_pilot_bc_checkpoint_v5_20261010/actual-dell/session-task-start-pilot-bc-v5-20261010-attempt12/active_run_plan.json": {
+      "bytes": 493998,
+      "sha256": "2aca7494c4b17ce8d11612aba246eb93ad5a7435ddbfbc739a326241d2e71e4a"
+    },
+    "/private/tmp/phase5_pilot_bc_checkpoint_v5_20261010/actual-dell/session-task-start-pilot-bc-v5-20261010-attempt12/build-attempt1/AFTER_INPUT_IDENTITIES.json": {
+      "bytes": 10386,
+      "sha256": "a54e675cab801b9a5be84d7121a8b23d948cc4c966c96e95a576236fa9118f7d"
+    },
+    "/private/tmp/phase5_pilot_bc_checkpoint_v5_20261010/actual-dell/session-task-start-pilot-bc-v5-20261010-attempt12/build-attempt1/AFTER_READONLY_ROSTERS.json": {
+      "bytes": 3,
+      "sha256": "37517e5f3dc66819f61f5a7bb8ace1921282415f10551d2defa5c3eb0985b570"
+    },
+    "/private/tmp/phase5_pilot_bc_checkpoint_v5_20261010/actual-dell/session-task-start-pilot-bc-v5-20261010-attempt12/build-attempt1/BATCH_PREFIX.json": {
+      "bytes": 17169,
+      "sha256": "c622a151a32c983ffba4b1d8706868da7469d4bb835c3da0debbafb020b139f8"
+    },
+    "/private/tmp/phase5_pilot_bc_checkpoint_v5_20261010/actual-dell/session-task-start-pilot-bc-v5-20261010-attempt12/build-attempt1/BEFORE_INPUT_IDENTITIES.json": {
+      "bytes": 10386,
+      "sha256": "a54e675cab801b9a5be84d7121a8b23d948cc4c966c96e95a576236fa9118f7d"
+    },
+    "/private/tmp/phase5_pilot_bc_checkpoint_v5_20261010/actual-dell/session-task-start-pilot-bc-v5-20261010-attempt12/build-attempt1/BEFORE_READONLY_ROSTERS.json": {
+      "bytes": 3,
+      "sha256": "37517e5f3dc66819f61f5a7bb8ace1921282415f10551d2defa5c3eb0985b570"
+    },
+    "/private/tmp/phase5_pilot_bc_checkpoint_v5_20261010/actual-dell/session-task-start-pilot-bc-v5-20261010-attempt12/build-attempt1/BUILD_RESULT.json": {
+      "bytes": 17223,
+      "sha256": "b06123c90d9a181d70e61ca552e147c071d4e91526c347dca275a9161252e30e"
+    },
+    "/private/tmp/phase5_pilot_bc_checkpoint_v5_20261010/actual-dell/session-task-start-pilot-bc-v5-20261010-attempt12/build-attempt1/CONTROL_EVENT_PREFIX.json": {
+      "bytes": 1255,
+      "sha256": "072fd0901927661ddba2341fe9227f65cc716a528713019d0c6483ae5378bad6"
+    },
+    "/private/tmp/phase5_pilot_bc_checkpoint_v5_20261010/actual-dell/session-task-start-pilot-bc-v5-20261010-attempt12/build-attempt1/compile-1.result.json": {
+      "bytes": 5178,
+      "sha256": "c27a50ac31c9e0fa5ca950ad6d36b78e11b35a140b03c2c7b65b678fe8c3f48c"
+    },
+    "/private/tmp/phase5_pilot_bc_checkpoint_v5_20261010/actual-dell/session-task-start-pilot-bc-v5-20261010-attempt12/build-attempt1/compile-1.stderr": {
+      "bytes": 6298,
+      "sha256": "5b928c958d1d20dbf0e8e9996034d108b315f1337a02c64ac85ee62c1153abd7"
+    },
+    "/private/tmp/phase5_pilot_bc_checkpoint_v5_20261010/actual-dell/session-task-start-pilot-bc-v5-20261010-attempt12/build-attempt1/compile-1.stdout": {
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    "/private/tmp/phase5_pilot_bc_checkpoint_v5_20261010/actual-dell/session-task-start-pilot-bc-v5-20261010-attempt12/build-attempt1/compile-2.result.json": {
+      "bytes": 5176,
+      "sha256": "c86a573fa5008f39be0ca82c325ef1bf79649f67ee208fed311a1931a18d8768"
+    },
+    "/private/tmp/phase5_pilot_bc_checkpoint_v5_20261010/actual-dell/session-task-start-pilot-bc-v5-20261010-attempt12/build-attempt1/compile-2.stderr": {
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    "/private/tmp/phase5_pilot_bc_checkpoint_v5_20261010/actual-dell/session-task-start-pilot-bc-v5-20261010-attempt12/build-attempt1/compile-2.stdout": {
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    "/private/tmp/phase5_pilot_bc_checkpoint_v5_20261010/actual-dell/session-task-start-pilot-bc-v5-20261010-attempt12/build-attempt1/compile-3.result.json": {
+      "bytes": 5181,
+      "sha256": "d4191f29237366937e2ab9e657a5ec0c0aa3247857bcb5ed782a4d281af6c1dd"
+    },
+    "/private/tmp/phase5_pilot_bc_checkpoint_v5_20261010/actual-dell/session-task-start-pilot-bc-v5-20261010-attempt12/build-attempt1/compile-3.stderr": {
+      "bytes": 6668,
+      "sha256": "af939f89186336cebea96528cda69a23734bdcd4aeb8fa146ad4fe74a1e65ebb"
+    },
+    "/private/tmp/phase5_pilot_bc_checkpoint_v5_20261010/actual-dell/session-task-start-pilot-bc-v5-20261010-attempt12/build-attempt1/compile-3.stdout": {
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    "/private/tmp/phase5_pilot_bc_checkpoint_v5_20261010/actual-dell/session-task-start-pilot-bc-v5-20261010-attempt12/dev_compile.py": {
+      "bytes": 7467,
+      "sha256": "24ffda8c55d10991bb99a7c3ecbd575772e7d67792c7fdee42caf0d101d7903c"
+    },
+    "/private/tmp/phase5_pilot_bc_checkpoint_v5_20261010/actual-dell/session-task-start-pilot-bc-v5-20261010-attempt12/dev_compile_plan.json": {
+      "bytes": 19389,
+      "sha256": "23a3c58411c2d18ab76d0ef0efc67d7d97ef31c578a15305a1a91eb7fbac4025"
+    },
+    "/private/tmp/phase5_pilot_bc_checkpoint_v5_20261010/actual-dell/session-task-start-pilot-bc-v5-20261010-attempt12/dev_link.py": {
+      "bytes": 7464,
+      "sha256": "2a0653925f13e4ce0babe5c49323fc7d463a30e36cb287db4521c48c354f99f0"
+    },
+    "/private/tmp/phase5_pilot_bc_checkpoint_v5_20261010/actual-dell/session-task-start-pilot-bc-v5-20261010-attempt12/dev_link2.py": {
+      "bytes": 7464,
+      "sha256": "5527e266877fa48e70c2e335aa43175a1b7473644ba70ad62c23f0f6624b14cc"
+    },
+    "/private/tmp/phase5_pilot_bc_checkpoint_v5_20261010/actual-dell/session-task-start-pilot-bc-v5-20261010-attempt12/dev_link2_plan.json": {
+      "bytes": 9332,
+      "sha256": "f2a687914c5d9f17a7c64b7a51911e30a7cd2c7ba081fdc129ce20af179436e3"
+    },
+    "/private/tmp/phase5_pilot_bc_checkpoint_v5_20261010/actual-dell/session-task-start-pilot-bc-v5-20261010-attempt12/dev_link_plan.json": {
+      "bytes": 9332,
+      "sha256": "bec3ce26961da110327e39c3a89c4381ede4fe03403802aa8f00a3bfe56d894b"
+    },
+    "/private/tmp/phase5_pilot_bc_checkpoint_v5_20261010/actual-dell/session-task-start-pilot-bc-v5-20261010-attempt12/link-attempt1/BUILD_FAILURE.json": {
+      "bytes": 79,
+      "sha256": "465c6133d77844702badfbde1307db5b2b17ddf00aada7ce47de77937fc472d6"
+    },
+    "/private/tmp/phase5_pilot_bc_checkpoint_v5_20261010/actual-dell/session-task-start-pilot-bc-v5-20261010-attempt12/link-attempt1/CONTROL_EVENT_PREFIX.json": {
+      "bytes": 346,
+      "sha256": "2ab1d45b0d8e2ac46cb237026b79897fd5a7d633702eacf076f8f398f48c7dc9"
+    },
+    "/private/tmp/phase5_pilot_bc_checkpoint_v5_20261010/actual-dell/session-task-start-pilot-bc-v5-20261010-attempt12/link-attempt2/AFTER_INPUT_IDENTITIES.json": {
+      "bytes": 4706,
+      "sha256": "d7eca73685dec884f795513c5012e77f37775925b3338dd333f61a6dee5de1a2"
+    },
+    "/private/tmp/phase5_pilot_bc_checkpoint_v5_20261010/actual-dell/session-task-start-pilot-bc-v5-20261010-attempt12/link-attempt2/AFTER_READONLY_ROSTERS.json": {
+      "bytes": 3,
+      "sha256": "37517e5f3dc66819f61f5a7bb8ace1921282415f10551d2defa5c3eb0985b570"
+    },
+    "/private/tmp/phase5_pilot_bc_checkpoint_v5_20261010/actual-dell/session-task-start-pilot-bc-v5-20261010-attempt12/link-attempt2/BATCH_PREFIX.json": {
+      "bytes": 5850,
+      "sha256": "58f0f45fedb416105f35a4d970f5bd9d66cc9ad43fe6a952d327210f3b0a693f"
+    },
+    "/private/tmp/phase5_pilot_bc_checkpoint_v5_20261010/actual-dell/session-task-start-pilot-bc-v5-20261010-attempt12/link-attempt2/BEFORE_INPUT_IDENTITIES.json": {
+      "bytes": 4706,
+      "sha256": "d7eca73685dec884f795513c5012e77f37775925b3338dd333f61a6dee5de1a2"
+    },
+    "/private/tmp/phase5_pilot_bc_checkpoint_v5_20261010/actual-dell/session-task-start-pilot-bc-v5-20261010-attempt12/link-attempt2/BEFORE_READONLY_ROSTERS.json": {
+      "bytes": 3,
+      "sha256": "37517e5f3dc66819f61f5a7bb8ace1921282415f10551d2defa5c3eb0985b570"
+    },
+    "/private/tmp/phase5_pilot_bc_checkpoint_v5_20261010/actual-dell/session-task-start-pilot-bc-v5-20261010-attempt12/link-attempt2/BUILD_RESULT.json": {
+      "bytes": 5904,
+      "sha256": "8cef73706a3c323a027f14515e54e70406d9d2fe4a92c070f4de11732207962d"
+    },
+    "/private/tmp/phase5_pilot_bc_checkpoint_v5_20261010/actual-dell/session-task-start-pilot-bc-v5-20261010-attempt12/link-attempt2/CONTROL_EVENT_PREFIX.json": {
+      "bytes": 721,
+      "sha256": "fb53b6949bf0d22d4514bdd43e694d708ff57cb43d69e6e7b0880129896acedc"
+    },
+    "/private/tmp/phase5_pilot_bc_checkpoint_v5_20261010/actual-dell/session-task-start-pilot-bc-v5-20261010-attempt12/link-attempt2/compile-1.result.json": {
+      "bytes": 5414,
+      "sha256": "9d51a1756b344346b3cd6fb911324589f198ddb67f06bd3b905ccb03b976ae29"
+    },
+    "/private/tmp/phase5_pilot_bc_checkpoint_v5_20261010/actual-dell/session-task-start-pilot-bc-v5-20261010-attempt12/link-attempt2/compile-1.stderr": {
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    "/private/tmp/phase5_pilot_bc_checkpoint_v5_20261010/actual-dell/session-task-start-pilot-bc-v5-20261010-attempt12/link-attempt2/compile-1.stdout": {
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    "/private/tmp/phase5_pilot_bc_checkpoint_v5_20261010/actual-dell/session-task-start-pilot-bc-v5-20261010-attempt12/profile-version1/PRODUCER.json": {
+      "bytes": 253,
+      "sha256": "9eef3752733f5785a8be1b3e7ace530bd0e5ed47bd00e633e9791943c7bc1835"
+    },
+    "/private/tmp/phase5_pilot_bc_checkpoint_v5_20261010/actual-dell/session-task-start-pilot-bc-v5-20261010-attempt12/profile-version1/active_input.json": {
+      "bytes": 326589,
+      "sha256": "0ae467e18237636f9af77a0c893ccaaacecc7f8d6d0bde17ea09b597e8250a10"
+    },
+    "/private/tmp/phase5_pilot_bc_checkpoint_v5_20261010/actual-dell/session-task-start-pilot-bc-v5-20261010-attempt12/run-attempt1/AFTER_INPUT_IDENTITIES.json": {
+      "bytes": 505538,
+      "sha256": "cecc615271f774a03edc17537303dca3fba741fe58951b6c54bb7039a75c2331"
+    },
+    "/private/tmp/phase5_pilot_bc_checkpoint_v5_20261010/actual-dell/session-task-start-pilot-bc-v5-20261010-attempt12/run-attempt1/AFTER_READONLY_ROSTERS.json": {
+      "bytes": 3,
+      "sha256": "37517e5f3dc66819f61f5a7bb8ace1921282415f10551d2defa5c3eb0985b570"
+    },
+    "/private/tmp/phase5_pilot_bc_checkpoint_v5_20261010/actual-dell/session-task-start-pilot-bc-v5-20261010-attempt12/run-attempt1/BATCH_PREFIX.json": {
+      "bytes": 2095,
+      "sha256": "7b78b74f98922920df36d240d65f2f91a97c020a9ede821c628a5b5294afda89"
+    },
+    "/private/tmp/phase5_pilot_bc_checkpoint_v5_20261010/actual-dell/session-task-start-pilot-bc-v5-20261010-attempt12/run-attempt1/BEFORE_INPUT_IDENTITIES.json": {
+      "bytes": 505538,
+      "sha256": "cecc615271f774a03edc17537303dca3fba741fe58951b6c54bb7039a75c2331"
+    },
+    "/private/tmp/phase5_pilot_bc_checkpoint_v5_20261010/actual-dell/session-task-start-pilot-bc-v5-20261010-attempt12/run-attempt1/BEFORE_READONLY_ROSTERS.json": {
+      "bytes": 3,
+      "sha256": "37517e5f3dc66819f61f5a7bb8ace1921282415f10551d2defa5c3eb0985b570"
+    },
+    "/private/tmp/phase5_pilot_bc_checkpoint_v5_20261010/actual-dell/session-task-start-pilot-bc-v5-20261010-attempt12/run-attempt1/BUILD_FAILURE.json": {
+      "bytes": 2166,
+      "sha256": "d07cda16747caf86316f584c3581462d6b57095d55c96a4a9a8554ce846503f0"
+    },
+    "/private/tmp/phase5_pilot_bc_checkpoint_v5_20261010/actual-dell/session-task-start-pilot-bc-v5-20261010-attempt12/run-attempt1/CONTROL_EVENT_PREFIX.json": {
+      "bytes": 797,
+      "sha256": "e8dc75e62afe94cdd5a3cb8369c9b9c985ed4b75f18f5d02e29a094a0af6e4c3"
+    },
+    "/private/tmp/phase5_pilot_bc_checkpoint_v5_20261010/actual-dell/session-task-start-pilot-bc-v5-20261010-attempt12/run-attempt1/artifacts/MANIFEST.yaml": {
+      "bytes": 3995,
+      "sha256": "a1bfbc6002ec1203218c70817d6c20dbf6903069e98703aafb60f1cabf1b2fb6"
+    },
+    "/private/tmp/phase5_pilot_bc_checkpoint_v5_20261010/actual-dell/session-task-start-pilot-bc-v5-20261010-attempt12/run-attempt1/artifacts/actual_step_journal.csv": {
+      "bytes": 1813021,
+      "sha256": "eea9da2c74e5b8e20776e7e0df04e8926c9ab278117fcce5c9fb03ac16927313"
+    },
+    "/private/tmp/phase5_pilot_bc_checkpoint_v5_20261010/actual-dell/session-task-start-pilot-bc-v5-20261010-attempt12/run-attempt1/artifacts/actual_warmup.bin": {
+      "bytes": 504405,
+      "sha256": "ddfe59b603e0caa2ef85b0bb3e3e14a75e4f57a639cc22f8bad2fda249802901"
+    },
+    "/private/tmp/phase5_pilot_bc_checkpoint_v5_20261010/actual-dell/session-task-start-pilot-bc-v5-20261010-attempt12/run-attempt1/artifacts/bootstrap.bin": {
+      "bytes": 150,
+      "sha256": "814d79448cdd7569c35fd74570cba93f5ccf7f0ab780789a6d08fa554478454d"
+    },
+    "/private/tmp/phase5_pilot_bc_checkpoint_v5_20261010/actual-dell/session-task-start-pilot-bc-v5-20261010-attempt12/run-attempt1/artifacts/candidate.bin": {
+      "bytes": 109409,
+      "sha256": "3bfcc766c52cf6ab90f2ae07e4e73ecf354fabc4b34f35afeec7affa2ac53f17"
+    },
+    "/private/tmp/phase5_pilot_bc_checkpoint_v5_20261010/actual-dell/session-task-start-pilot-bc-v5-20261010-attempt12/run-attempt1/artifacts/candidate_validation.bin": {
+      "bytes": 14960,
+      "sha256": "93212c8ff90284a1bde5a5965c36260dcc7f0653014f42ec9f60841a96ae6a93"
+    },
+    "/private/tmp/phase5_pilot_bc_checkpoint_v5_20261010/actual-dell/session-task-start-pilot-bc-v5-20261010-attempt12/run-attempt1/artifacts/candidate_value.bin": {
+      "bytes": 249087,
+      "sha256": "d904992b7dff035057995af953440acda4f0a6df69b643fd90816117bc77da5c"
+    },
+    "/private/tmp/phase5_pilot_bc_checkpoint_v5_20261010/actual-dell/session-task-start-pilot-bc-v5-20261010-attempt12/run-attempt1/artifacts/entry_completion.bin": {
+      "bytes": 244,
+      "sha256": "9734df6748ae31f7a01ce672e7b1f428017bbd4e43484bd415800d6d99adf9ce"
+    },
+    "/private/tmp/phase5_pilot_bc_checkpoint_v5_20261010/actual-dell/session-task-start-pilot-bc-v5-20261010-attempt12/run-attempt1/artifacts/external_numeric_guess.bin": {
+      "bytes": 51566,
+      "sha256": "ca921ad981952f5e1acd1552bd7f6186741ab41ba75d961aa206ccf4a80d16ae"
+    },
+    "/private/tmp/phase5_pilot_bc_checkpoint_v5_20261010/actual-dell/session-task-start-pilot-bc-v5-20261010-attempt12/run-attempt1/artifacts/inline_qp.bin": {
+      "bytes": 19485833,
+      "sha256": "66240a2a41a539ba16f1b2ccf1973165f16cb0e6d1dbf5c36abd66fab193f939"
+    },
+    "/private/tmp/phase5_pilot_bc_checkpoint_v5_20261010/actual-dell/session-task-start-pilot-bc-v5-20261010-attempt12/run-attempt1/artifacts/journal_receipt.bin": {
+      "bytes": 551,
+      "sha256": "e0a9e9eeb2b6ce0961c048804ddb347d85e2ed9a946e33bda05a0ea267e07b6e"
+    },
+    "/private/tmp/phase5_pilot_bc_checkpoint_v5_20261010/actual-dell/session-task-start-pilot-bc-v5-20261010-attempt12/run-attempt1/artifacts/model_open.bin": {
+      "bytes": 1275,
+      "sha256": "f5ec5debb244e76c025ca107bc44ae12d03755fd7159d86dafbe18ef126f0a07"
+    },
+    "/private/tmp/phase5_pilot_bc_checkpoint_v5_20261010/actual-dell/session-task-start-pilot-bc-v5-20261010-attempt12/run-attempt1/artifacts/observation_after.bin": {
+      "bytes": 2576,
+      "sha256": "61ede876120f0961e83aace76971b2891043517020b28debbbd790b5a15114ff"
+    },
+    "/private/tmp/phase5_pilot_bc_checkpoint_v5_20261010/actual-dell/session-task-start-pilot-bc-v5-20261010-attempt12/run-attempt1/artifacts/observation_before.bin": {
+      "bytes": 2576,
+      "sha256": "71c918d9c540e48703144de98141e4eb3bbc82150e7e93a92853fcba2f931877"
+    },
+    "/private/tmp/phase5_pilot_bc_checkpoint_v5_20261010/actual-dell/session-task-start-pilot-bc-v5-20261010-attempt12/run-attempt1/artifacts/original_nominal.bin": {
+      "bytes": 12716851,
+      "sha256": "a820428ca113b1b2f8b4f1afc8906eed449b3f37086b3402b8a7b4c40deccded"
+    },
+    "/private/tmp/phase5_pilot_bc_checkpoint_v5_20261010/actual-dell/session-task-start-pilot-bc-v5-20261010-attempt12/run-attempt1/artifacts/qp_equality_reduction.bin": {
+      "bytes": 14809370,
+      "sha256": "9c9dfde5bda1021a5599f75d064f7970595c53b5ba301811fd2a463ffed96149"
+    },
+    "/private/tmp/phase5_pilot_bc_checkpoint_v5_20261010/actual-dell/session-task-start-pilot-bc-v5-20261010-attempt12/run-attempt1/artifacts/solver_row_screen.bin": {
+      "bytes": 482308,
+      "sha256": "0630d94130c91a134a36b8943b7a90b9e48a23ea0902eb059af3e757ce89eb1f"
+    },
+    "/private/tmp/phase5_pilot_bc_checkpoint_v5_20261010/actual-dell/session-task-start-pilot-bc-v5-20261010-attempt12/run-attempt1/compile-1.result.json": {
+      "bytes": 1775,
+      "sha256": "d17ed202dbefb62f253dfe4a108f01175420d63590c889595dae73953b8dca30"
+    },
+    "/private/tmp/phase5_pilot_bc_checkpoint_v5_20261010/actual-dell/session-task-start-pilot-bc-v5-20261010-attempt12/run-attempt1/compile-1.stderr": {
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    "/private/tmp/phase5_pilot_bc_checkpoint_v5_20261010/actual-dell/session-task-start-pilot-bc-v5-20261010-attempt12/run-attempt1/compile-1.stdout": {
+      "bytes": 151,
+      "sha256": "b886983df335d9edea9d0b985ba9bce4f4ca119c3b74434964c7db30f8363222"
+    },
+    "/private/tmp/phase5_pilot_bc_checkpoint_v5_20261010/actual-dell/session-task-start-pilot-bc-v5-20261010-attempt12/src/active_first_cycle.cpp": {
+      "bytes": 25476,
+      "sha256": "2cee1d6566218aa61f6ab9d3211ef77588ae288f98a49c5697f9e4751bd3bd53"
+    },
+    "/private/tmp/phase5_pilot_bc_checkpoint_v5_20261010/actual-dell/session-task-start-pilot-bc-v5-20261010-attempt12/src/affine_assembly.cpp": {
+      "bytes": 28981,
+      "sha256": "d478eda1f0fe97bfc41851515f4baa3e485fd4a57968a62dcb6233ae1157bbd5"
+    },
+    "/private/tmp/phase5_pilot_bc_checkpoint_v5_20261010/actual-dell/session-task-start-pilot-bc-v5-20261010-attempt12/src/affine_assembly.hpp": {
+      "bytes": 6026,
+      "sha256": "6faee2961242052c7655da41e8988dd0844f14c3cfa885672aa7c03eaa1dcb57"
+    },
+    "/private/tmp/phase5_pilot_bc_checkpoint_v5_20261010/actual-dell/session-task-start-pilot-bc-v5-20261010-attempt12/src/box_screen_tests.cpp": {
+      "bytes": 2954,
+      "sha256": "d922876babec2867dd1293bcee259ac12e4b2a6af5a30dd551209e097c0abaf8"
+    },
+    "/private/tmp/phase5_pilot_bc_checkpoint_v5_20261010/actual-dell/session-task-start-pilot-bc-v5-20261010-attempt12/src/candidate_validation.cpp": {
+      "bytes": 9635,
+      "sha256": "0a91f55ebf40219b829097d13f0230237d3eebf08af9e53a42387ebdee6ed9d4"
+    },
+    "/private/tmp/phase5_pilot_bc_checkpoint_v5_20261010/actual-dell/session-task-start-pilot-bc-v5-20261010-attempt12/src/candidate_validation.hpp": {
+      "bytes": 1114,
+      "sha256": "54c2135a7ce9a0bf61362c7e22014c2e9df3410b6dbfe1be1893f0ecb90af3cf"
+    },
+    "/private/tmp/phase5_pilot_bc_checkpoint_v5_20261010/actual-dell/session-task-start-pilot-bc-v5-20261010-attempt12/src/integrated_horizon_qp.cpp": {
+      "bytes": 89073,
+      "sha256": "dbf28d84b112befd9f8b1a52737a4d5e7d96c97af9ec1edc13281b83bd0c349a"
+    },
+    "/private/tmp/phase5_pilot_bc_checkpoint_v5_20261010/actual-dell/session-task-start-pilot-bc-v5-20261010-attempt12/src/integrated_horizon_qp.hpp": {
+      "bytes": 11018,
+      "sha256": "c3149b43a9d419a20245e36d161c979b504a1bd930463f9b3a60efe527233c26"
+    },
+    "/private/tmp/phase5_pilot_bc_checkpoint_v5_20261010/actual-dell/session-task-start-pilot-bc-v5-20261010-attempt12/src/invariant_tests.cpp": {
+      "bytes": 4721,
+      "sha256": "f5a859d4cf9d79a5ae1b533b8dd62776f2bba6599dfdf691a2915ef3296a33f9"
+    },
+    "/private/tmp/phase5_pilot_bc_checkpoint_v5_20261010/actual-dell/session-task-start-pilot-bc-v5-20261010-attempt12/src/linear_box_screen.hpp": {
+      "bytes": 3916,
+      "sha256": "b649eff43293a3078b7b46a0166fa0f8a2ac59f3a8496c8c73a98c275fed96d1"
+    },
+    "/private/tmp/phase5_pilot_bc_checkpoint_v5_20261010/actual-dell/session-task-start-pilot-bc-v5-20261010-attempt12/src/lossless_evidence.cpp": {
+      "bytes": 17427,
+      "sha256": "38d3f0ce4bd1086e9eba95bedbe453c54cb07efd8dfcecbfa873ade5e966256c"
+    },
+    "/private/tmp/phase5_pilot_bc_checkpoint_v5_20261010/actual-dell/session-task-start-pilot-bc-v5-20261010-attempt12/src/lossless_evidence.hpp": {
+      "bytes": 1943,
+      "sha256": "1c406d89f0c6156eed89ab191ae395143be8012aa25186b88af7db28f476f769"
+    },
+    "/private/tmp/phase5_pilot_bc_checkpoint_v5_20261010/actual-dell/session-task-start-pilot-bc-v5-20261010-attempt12/src/model_boundary.cpp": {
+      "bytes": 20641,
+      "sha256": "0da697a20727fc1c56d733d184a70ed59468df314e2c9c39c0dc44b76e690008"
+    },
+    "/private/tmp/phase5_pilot_bc_checkpoint_v5_20261010/actual-dell/session-task-start-pilot-bc-v5-20261010-attempt12/src/model_boundary.hpp": {
+      "bytes": 4002,
+      "sha256": "33e21b605d8e042d7c9c4db2cf99736f995be2494714e3c37f8ac2746fb5a5b6"
+    },
+    "/private/tmp/phase5_pilot_bc_checkpoint_v5_20261010/actual-dell/session-task-start-pilot-bc-v5-20261010-attempt12/src/normalization.cpp": {
+      "bytes": 23976,
+      "sha256": "a0cd0c9cdb505f922f1744f24cf115057b6ba9f3a9bc1b3ed0c9bdb82d358ed5"
+    },
+    "/private/tmp/phase5_pilot_bc_checkpoint_v5_20261010/actual-dell/session-task-start-pilot-bc-v5-20261010-attempt12/src/normalization.hpp": {
+      "bytes": 4288,
+      "sha256": "9456be5c205f23d2aa2210eac02286d030204a446af003ee85362b971ccb43d8"
+    },
+    "/private/tmp/phase5_pilot_bc_checkpoint_v5_20261010/actual-dell/session-task-start-pilot-bc-v5-20261010-attempt12/src/observer_tests.cpp": {
+      "bytes": 3785,
+      "sha256": "d1ff998984981a5ded1e92b8d452503e8b489ecfb0d067fb04ff5fd616d02877"
+    },
+    "/private/tmp/phase5_pilot_bc_checkpoint_v5_20261010/actual-dell/session-task-start-pilot-bc-v5-20261010-attempt12/src/runtime_observer.cpp": {
+      "bytes": 30558,
+      "sha256": "c061636b87836b935fefed7050f785b38b8b70c614c82e01b67dbb2130ccf5df"
+    },
+    "/private/tmp/phase5_pilot_bc_checkpoint_v5_20261010/actual-dell/session-task-start-pilot-bc-v5-20261010-attempt12/src/runtime_observer.hpp": {
+      "bytes": 7267,
+      "sha256": "ffd34f418c8fde91f56c786f1743a87bf14f3ce10a2ebc1e0503dbad70c90c8d"
+    },
+    "/private/tmp/phase5_pilot_bc_checkpoint_v5_20261010/actual-dell/session-task-start-pilot-bc-v5-20261010-attempt12/src/session_primitives.hpp": {
+      "bytes": 2259,
+      "sha256": "0b76bc232ed81dc9b4831617ae1690cfc287def914b8bca5f05ce6e6e25b6080"
+    },
+    "/private/tmp/phase5_pilot_bc_checkpoint_v5_20261010/actual-dell/session-task-start-pilot-bc-v5-20261010-attempt12/src/solver_forensics.cpp": {
+      "bytes": 26514,
+      "sha256": "664c1d480e23c1ddef4f45a57165cba871213740329f8693c897d7c07ee7af27"
+    },
+    "/private/tmp/phase5_pilot_bc_checkpoint_v5_20261010/actual-dell/session-task-start-pilot-bc-v5-20261010-attempt12/src/solver_forensics.hpp": {
+      "bytes": 860,
+      "sha256": "02b3a3d33ea64a351b228b96b2e0590b7a79fb4e9b87da78dc28c59465aca3bb"
+    },
+    "/private/tmp/phase5_pilot_bc_checkpoint_v5_20261010/actual-dell/session-task-start-pilot-bc-v5-20261010-attempt12/src/task_local_provider.cpp": {
+      "bytes": 1839,
+      "sha256": "051b424236979f9fe7ea4cb96564f54969025c997bfba2c61d347a23f7fbae4c"
+    },
+    "/private/tmp/phase5_pilot_bc_checkpoint_v5_20261010/actual-dell/session-task-start-pilot-bc-v5-20261010-attempt12/src/task_local_provider.hpp": {
+      "bytes": 640,
+      "sha256": "1819e2f626fb0ff65ad7e7e8de0b0b52f625e6bf435b073d7cca55722d76f093"
+    },
+    "/private/tmp/phase5_pilot_bc_checkpoint_v5_20261010/actual_collection.tar.gz": {
+      "bytes": 17898404,
+      "sha256": "72fec010c22cafabba0e15291994b9f349cb7614f2a6d55f1ef8cf36c3e590f1"
+    },
+    "/private/tmp/phase5_pilot_bc_checkpoint_v5_20261010/ahead-source-profile-v2/PROTOCOL.json": {
+      "bytes": 2324,
+      "sha256": "3846f566a4ec8fd4f5d23b3c609024c819188c6ffdbaf5aa74adee3e89c052c1"
+    },
+    "/private/tmp/phase5_pilot_bc_checkpoint_v5_20261010/ahead-source-profile-v2/READY.json": {
+      "bytes": 3999,
+      "sha256": "2f33cedb444da2284b94056c3cb412051e224efc4115d6c77df7f3924947369e"
+    },
+    "/private/tmp/phase5_pilot_bc_checkpoint_v5_20261010/ahead-source-profile-v2/VALIDATION_AND_COMMIT_DESIGN.md": {
+      "bytes": 3198,
+      "sha256": "db465e7026e69cf88e3c1655e11a6133f316bc6b180c00d744fdcef1cfb79fa8"
+    },
+    "/private/tmp/phase5_pilot_bc_checkpoint_v5_20261010/ahead-source-profile-v2/src/active_first_cycle.cpp": {
+      "bytes": 25408,
+      "sha256": "8f2af92562f2eb4ee514435d3c95298bf8005b5eff729e927f242c05b55286ca"
+    },
+    "/private/tmp/phase5_pilot_bc_checkpoint_v5_20261010/ahead-source-profile-v2/src/affine_assembly.cpp": {
+      "bytes": 28981,
+      "sha256": "d478eda1f0fe97bfc41851515f4baa3e485fd4a57968a62dcb6233ae1157bbd5"
+    },
+    "/private/tmp/phase5_pilot_bc_checkpoint_v5_20261010/ahead-source-profile-v2/src/affine_assembly.hpp": {
+      "bytes": 6026,
+      "sha256": "6faee2961242052c7655da41e8988dd0844f14c3cfa885672aa7c03eaa1dcb57"
+    },
+    "/private/tmp/phase5_pilot_bc_checkpoint_v5_20261010/ahead-source-profile-v2/src/box_screen_tests.cpp": {
+      "bytes": 2954,
+      "sha256": "d922876babec2867dd1293bcee259ac12e4b2a6af5a30dd551209e097c0abaf8"
+    },
+    "/private/tmp/phase5_pilot_bc_checkpoint_v5_20261010/ahead-source-profile-v2/src/candidate_validation.cpp": {
+      "bytes": 9618,
+      "sha256": "4c47590f9254b0a5ece8d6408f2da91e8d2fcb07576af155164544a4f56bf176"
+    },
+    "/private/tmp/phase5_pilot_bc_checkpoint_v5_20261010/ahead-source-profile-v2/src/candidate_validation.hpp": {
+      "bytes": 1114,
+      "sha256": "54c2135a7ce9a0bf61362c7e22014c2e9df3410b6dbfe1be1893f0ecb90af3cf"
+    },
+    "/private/tmp/phase5_pilot_bc_checkpoint_v5_20261010/ahead-source-profile-v2/src/integrated_horizon_qp.cpp": {
+      "bytes": 89073,
+      "sha256": "dbf28d84b112befd9f8b1a52737a4d5e7d96c97af9ec1edc13281b83bd0c349a"
+    },
+    "/private/tmp/phase5_pilot_bc_checkpoint_v5_20261010/ahead-source-profile-v2/src/integrated_horizon_qp.hpp": {
+      "bytes": 11018,
+      "sha256": "c3149b43a9d419a20245e36d161c979b504a1bd930463f9b3a60efe527233c26"
+    },
+    "/private/tmp/phase5_pilot_bc_checkpoint_v5_20261010/ahead-source-profile-v2/src/invariant_tests.cpp": {
+      "bytes": 4721,
+      "sha256": "f5a859d4cf9d79a5ae1b533b8dd62776f2bba6599dfdf691a2915ef3296a33f9"
+    },
+    "/private/tmp/phase5_pilot_bc_checkpoint_v5_20261010/ahead-source-profile-v2/src/linear_box_screen.hpp": {
+      "bytes": 3916,
+      "sha256": "b649eff43293a3078b7b46a0166fa0f8a2ac59f3a8496c8c73a98c275fed96d1"
+    },
+    "/private/tmp/phase5_pilot_bc_checkpoint_v5_20261010/ahead-source-profile-v2/src/lossless_evidence.cpp": {
+      "bytes": 17427,
+      "sha256": "38d3f0ce4bd1086e9eba95bedbe453c54cb07efd8dfcecbfa873ade5e966256c"
+    },
+    "/private/tmp/phase5_pilot_bc_checkpoint_v5_20261010/ahead-source-profile-v2/src/lossless_evidence.hpp": {
+      "bytes": 1943,
+      "sha256": "1c406d89f0c6156eed89ab191ae395143be8012aa25186b88af7db28f476f769"
+    },
+    "/private/tmp/phase5_pilot_bc_checkpoint_v5_20261010/ahead-source-profile-v2/src/model_boundary.cpp": {
+      "bytes": 20641,
+      "sha256": "0da697a20727fc1c56d733d184a70ed59468df314e2c9c39c0dc44b76e690008"
+    },
+    "/private/tmp/phase5_pilot_bc_checkpoint_v5_20261010/ahead-source-profile-v2/src/model_boundary.hpp": {
+      "bytes": 4002,
+      "sha256": "33e21b605d8e042d7c9c4db2cf99736f995be2494714e3c37f8ac2746fb5a5b6"
+    },
+    "/private/tmp/phase5_pilot_bc_checkpoint_v5_20261010/ahead-source-profile-v2/src/normalization.cpp": {
+      "bytes": 23976,
+      "sha256": "a0cd0c9cdb505f922f1744f24cf115057b6ba9f3a9bc1b3ed0c9bdb82d358ed5"
+    },
+    "/private/tmp/phase5_pilot_bc_checkpoint_v5_20261010/ahead-source-profile-v2/src/normalization.hpp": {
+      "bytes": 4288,
+      "sha256": "9456be5c205f23d2aa2210eac02286d030204a446af003ee85362b971ccb43d8"
+    },
+    "/private/tmp/phase5_pilot_bc_checkpoint_v5_20261010/ahead-source-profile-v2/src/observer_tests.cpp": {
+      "bytes": 3785,
+      "sha256": "d1ff998984981a5ded1e92b8d452503e8b489ecfb0d067fb04ff5fd616d02877"
+    },
+    "/private/tmp/phase5_pilot_bc_checkpoint_v5_20261010/ahead-source-profile-v2/src/runtime_observer.cpp": {
+      "bytes": 29296,
+      "sha256": "42d526426e22cf4419bc2932ef2c9ffe57ee96d07d6e6965380a4f2ba6586060"
+    },
+    "/private/tmp/phase5_pilot_bc_checkpoint_v5_20261010/ahead-source-profile-v2/src/runtime_observer.hpp": {
+      "bytes": 7267,
+      "sha256": "ffd34f418c8fde91f56c786f1743a87bf14f3ce10a2ebc1e0503dbad70c90c8d"
+    },
+    "/private/tmp/phase5_pilot_bc_checkpoint_v5_20261010/ahead-source-profile-v2/src/session_primitives.hpp": {
+      "bytes": 2259,
+      "sha256": "0b76bc232ed81dc9b4831617ae1690cfc287def914b8bca5f05ce6e6e25b6080"
+    },
+    "/private/tmp/phase5_pilot_bc_checkpoint_v5_20261010/ahead-source-profile-v2/src/solver_forensics.cpp": {
+      "bytes": 26514,
+      "sha256": "664c1d480e23c1ddef4f45a57165cba871213740329f8693c897d7c07ee7af27"
+    },
+    "/private/tmp/phase5_pilot_bc_checkpoint_v5_20261010/ahead-source-profile-v2/src/solver_forensics.hpp": {
+      "bytes": 860,
+      "sha256": "02b3a3d33ea64a351b228b96b2e0590b7a79fb4e9b87da78dc28c59465aca3bb"
+    },
+    "/private/tmp/phase5_pilot_bc_checkpoint_v5_20261010/ahead-source-profile-v2/src/task_local_provider.cpp": {
+      "bytes": 1839,
+      "sha256": "051b424236979f9fe7ea4cb96564f54969025c997bfba2c61d347a23f7fbae4c"
+    },
+    "/private/tmp/phase5_pilot_bc_checkpoint_v5_20261010/ahead-source-profile-v2/src/task_local_provider.hpp": {
+      "bytes": 640,
+      "sha256": "1819e2f626fb0ff65ad7e7e8de0b0b52f625e6bf435b073d7cca55722d76f093"
+    },
+    "/private/tmp/phase5_pilot_bc_checkpoint_v5_20261010/ahead-source-profile-v3/PROTOCOL.json": {
+      "bytes": 2324,
+      "sha256": "b650dcd8418a17263ab4661b9f60aa3410813092dc5d6dca23edd95ac585cbca"
+    },
+    "/private/tmp/phase5_pilot_bc_checkpoint_v5_20261010/ahead-source-profile-v3/READY.json": {
+      "bytes": 4101,
+      "sha256": "e6467f5d55d3862472d9074af1a73f9a311b093db1e6f98f06c4069c916e9da8"
+    },
+    "/private/tmp/phase5_pilot_bc_checkpoint_v5_20261010/ahead-source-profile-v3/VALIDATION_AND_COMMIT_DESIGN.md": {
+      "bytes": 3198,
+      "sha256": "db465e7026e69cf88e3c1655e11a6133f316bc6b180c00d744fdcef1cfb79fa8"
+    },
+    "/private/tmp/phase5_pilot_bc_checkpoint_v5_20261010/ahead-source-profile-v3/src/active_first_cycle.cpp": {
+      "bytes": 25408,
+      "sha256": "8f2af92562f2eb4ee514435d3c95298bf8005b5eff729e927f242c05b55286ca"
+    },
+    "/private/tmp/phase5_pilot_bc_checkpoint_v5_20261010/ahead-source-profile-v3/src/affine_assembly.cpp": {
+      "bytes": 28981,
+      "sha256": "d478eda1f0fe97bfc41851515f4baa3e485fd4a57968a62dcb6233ae1157bbd5"
+    },
+    "/private/tmp/phase5_pilot_bc_checkpoint_v5_20261010/ahead-source-profile-v3/src/affine_assembly.hpp": {
+      "bytes": 6026,
+      "sha256": "6faee2961242052c7655da41e8988dd0844f14c3cfa885672aa7c03eaa1dcb57"
+    },
+    "/private/tmp/phase5_pilot_bc_checkpoint_v5_20261010/ahead-source-profile-v3/src/box_screen_tests.cpp": {
+      "bytes": 2954,
+      "sha256": "d922876babec2867dd1293bcee259ac12e4b2a6af5a30dd551209e097c0abaf8"
+    },
+    "/private/tmp/phase5_pilot_bc_checkpoint_v5_20261010/ahead-source-profile-v3/src/candidate_validation.cpp": {
+      "bytes": 9618,
+      "sha256": "4c47590f9254b0a5ece8d6408f2da91e8d2fcb07576af155164544a4f56bf176"
+    },
+    "/private/tmp/phase5_pilot_bc_checkpoint_v5_20261010/ahead-source-profile-v3/src/candidate_validation.hpp": {
+      "bytes": 1114,
+      "sha256": "54c2135a7ce9a0bf61362c7e22014c2e9df3410b6dbfe1be1893f0ecb90af3cf"
+    },
+    "/private/tmp/phase5_pilot_bc_checkpoint_v5_20261010/ahead-source-profile-v3/src/integrated_horizon_qp.cpp": {
+      "bytes": 89073,
+      "sha256": "dbf28d84b112befd9f8b1a52737a4d5e7d96c97af9ec1edc13281b83bd0c349a"
+    },
+    "/private/tmp/phase5_pilot_bc_checkpoint_v5_20261010/ahead-source-profile-v3/src/integrated_horizon_qp.hpp": {
+      "bytes": 11018,
+      "sha256": "c3149b43a9d419a20245e36d161c979b504a1bd930463f9b3a60efe527233c26"
+    },
+    "/private/tmp/phase5_pilot_bc_checkpoint_v5_20261010/ahead-source-profile-v3/src/invariant_tests.cpp": {
+      "bytes": 4721,
+      "sha256": "f5a859d4cf9d79a5ae1b533b8dd62776f2bba6599dfdf691a2915ef3296a33f9"
+    },
+    "/private/tmp/phase5_pilot_bc_checkpoint_v5_20261010/ahead-source-profile-v3/src/linear_box_screen.hpp": {
+      "bytes": 3916,
+      "sha256": "b649eff43293a3078b7b46a0166fa0f8a2ac59f3a8496c8c73a98c275fed96d1"
+    },
+    "/private/tmp/phase5_pilot_bc_checkpoint_v5_20261010/ahead-source-profile-v3/src/lossless_evidence.cpp": {
+      "bytes": 17427,
+      "sha256": "38d3f0ce4bd1086e9eba95bedbe453c54cb07efd8dfcecbfa873ade5e966256c"
+    },
+    "/private/tmp/phase5_pilot_bc_checkpoint_v5_20261010/ahead-source-profile-v3/src/lossless_evidence.hpp": {
+      "bytes": 1943,
+      "sha256": "1c406d89f0c6156eed89ab191ae395143be8012aa25186b88af7db28f476f769"
+    },
+    "/private/tmp/phase5_pilot_bc_checkpoint_v5_20261010/ahead-source-profile-v3/src/model_boundary.cpp": {
+      "bytes": 20641,
+      "sha256": "0da697a20727fc1c56d733d184a70ed59468df314e2c9c39c0dc44b76e690008"
+    },
+    "/private/tmp/phase5_pilot_bc_checkpoint_v5_20261010/ahead-source-profile-v3/src/model_boundary.hpp": {
+      "bytes": 4002,
+      "sha256": "33e21b605d8e042d7c9c4db2cf99736f995be2494714e3c37f8ac2746fb5a5b6"
+    },
+    "/private/tmp/phase5_pilot_bc_checkpoint_v5_20261010/ahead-source-profile-v3/src/normalization.cpp": {
+      "bytes": 23976,
+      "sha256": "a0cd0c9cdb505f922f1744f24cf115057b6ba9f3a9bc1b3ed0c9bdb82d358ed5"
+    },
+    "/private/tmp/phase5_pilot_bc_checkpoint_v5_20261010/ahead-source-profile-v3/src/normalization.hpp": {
+      "bytes": 4288,
+      "sha256": "9456be5c205f23d2aa2210eac02286d030204a446af003ee85362b971ccb43d8"
+    },
+    "/private/tmp/phase5_pilot_bc_checkpoint_v5_20261010/ahead-source-profile-v3/src/observer_tests.cpp": {
+      "bytes": 3785,
+      "sha256": "d1ff998984981a5ded1e92b8d452503e8b489ecfb0d067fb04ff5fd616d02877"
+    },
+    "/private/tmp/phase5_pilot_bc_checkpoint_v5_20261010/ahead-source-profile-v3/src/runtime_observer.cpp": {
+      "bytes": 29299,
+      "sha256": "27facc8fdbe938fe684fc2831d383614cbbfe58d2aa82d15c5a2449051f48457"
+    },
+    "/private/tmp/phase5_pilot_bc_checkpoint_v5_20261010/ahead-source-profile-v3/src/runtime_observer.hpp": {
+      "bytes": 7267,
+      "sha256": "ffd34f418c8fde91f56c786f1743a87bf14f3ce10a2ebc1e0503dbad70c90c8d"
+    },
+    "/private/tmp/phase5_pilot_bc_checkpoint_v5_20261010/ahead-source-profile-v3/src/session_primitives.hpp": {
+      "bytes": 2259,
+      "sha256": "0b76bc232ed81dc9b4831617ae1690cfc287def914b8bca5f05ce6e6e25b6080"
+    },
+    "/private/tmp/phase5_pilot_bc_checkpoint_v5_20261010/ahead-source-profile-v3/src/solver_forensics.cpp": {
+      "bytes": 26514,
+      "sha256": "664c1d480e23c1ddef4f45a57165cba871213740329f8693c897d7c07ee7af27"
+    },
+    "/private/tmp/phase5_pilot_bc_checkpoint_v5_20261010/ahead-source-profile-v3/src/solver_forensics.hpp": {
+      "bytes": 860,
+      "sha256": "02b3a3d33ea64a351b228b96b2e0590b7a79fb4e9b87da78dc28c59465aca3bb"
+    },
+    "/private/tmp/phase5_pilot_bc_checkpoint_v5_20261010/ahead-source-profile-v3/src/task_local_provider.cpp": {
+      "bytes": 1839,
+      "sha256": "051b424236979f9fe7ea4cb96564f54969025c997bfba2c61d347a23f7fbae4c"
+    },
+    "/private/tmp/phase5_pilot_bc_checkpoint_v5_20261010/ahead-source-profile-v3/src/task_local_provider.hpp": {
+      "bytes": 640,
+      "sha256": "1819e2f626fb0ff65ad7e7e8de0b0b52f625e6bf435b073d7cca55722d76f093"
+    },
+    "/private/tmp/phase5_pilot_bc_checkpoint_v5_20261010/ahead-source-profile-v4/PROTOCOL.json": {
+      "bytes": 2339,
+      "sha256": "18663bbd722e137125f3135b798e9850b03be9151a3e4cf082dcefd63db863e3"
+    },
+    "/private/tmp/phase5_pilot_bc_checkpoint_v5_20261010/ahead-source-profile-v4/READY.json": {
+      "bytes": 4101,
+      "sha256": "d041a586f24168ed85e11c9baf234bb741cd053cf14e2aa576c72aeecbdc967f"
+    },
+    "/private/tmp/phase5_pilot_bc_checkpoint_v5_20261010/ahead-source-profile-v4/VALIDATION_AND_COMMIT_DESIGN.md": {
+      "bytes": 3219,
+      "sha256": "a71508fb808e09ad29b5e5fd16a59082658e0d867fa24fe198f31e4265fa5d8e"
+    },
+    "/private/tmp/phase5_pilot_bc_checkpoint_v5_20261010/ahead-source-profile-v4/src/active_first_cycle.cpp": {
+      "bytes": 25408,
+      "sha256": "8f2af92562f2eb4ee514435d3c95298bf8005b5eff729e927f242c05b55286ca"
+    },
+    "/private/tmp/phase5_pilot_bc_checkpoint_v5_20261010/ahead-source-profile-v4/src/affine_assembly.cpp": {
+      "bytes": 28981,
+      "sha256": "d478eda1f0fe97bfc41851515f4baa3e485fd4a57968a62dcb6233ae1157bbd5"
+    },
+    "/private/tmp/phase5_pilot_bc_checkpoint_v5_20261010/ahead-source-profile-v4/src/affine_assembly.hpp": {
+      "bytes": 6026,
+      "sha256": "6faee2961242052c7655da41e8988dd0844f14c3cfa885672aa7c03eaa1dcb57"
+    },
+    "/private/tmp/phase5_pilot_bc_checkpoint_v5_20261010/ahead-source-profile-v4/src/box_screen_tests.cpp": {
+      "bytes": 2954,
+      "sha256": "d922876babec2867dd1293bcee259ac12e4b2a6af5a30dd551209e097c0abaf8"
+    },
+    "/private/tmp/phase5_pilot_bc_checkpoint_v5_20261010/ahead-source-profile-v4/src/candidate_validation.cpp": {
+      "bytes": 9618,
+      "sha256": "4c47590f9254b0a5ece8d6408f2da91e8d2fcb07576af155164544a4f56bf176"
+    },
+    "/private/tmp/phase5_pilot_bc_checkpoint_v5_20261010/ahead-source-profile-v4/src/candidate_validation.hpp": {
+      "bytes": 1114,
+      "sha256": "54c2135a7ce9a0bf61362c7e22014c2e9df3410b6dbfe1be1893f0ecb90af3cf"
+    },
+    "/private/tmp/phase5_pilot_bc_checkpoint_v5_20261010/ahead-source-profile-v4/src/integrated_horizon_qp.cpp": {
+      "bytes": 89073,
+      "sha256": "dbf28d84b112befd9f8b1a52737a4d5e7d96c97af9ec1edc13281b83bd0c349a"
+    },
+    "/private/tmp/phase5_pilot_bc_checkpoint_v5_20261010/ahead-source-profile-v4/src/integrated_horizon_qp.hpp": {
+      "bytes": 11018,
+      "sha256": "c3149b43a9d419a20245e36d161c979b504a1bd930463f9b3a60efe527233c26"
+    },
+    "/private/tmp/phase5_pilot_bc_checkpoint_v5_20261010/ahead-source-profile-v4/src/invariant_tests.cpp": {
+      "bytes": 4721,
+      "sha256": "f5a859d4cf9d79a5ae1b533b8dd62776f2bba6599dfdf691a2915ef3296a33f9"
+    },
+    "/private/tmp/phase5_pilot_bc_checkpoint_v5_20261010/ahead-source-profile-v4/src/linear_box_screen.hpp": {
+      "bytes": 3916,
+      "sha256": "b649eff43293a3078b7b46a0166fa0f8a2ac59f3a8496c8c73a98c275fed96d1"
+    },
+    "/private/tmp/phase5_pilot_bc_checkpoint_v5_20261010/ahead-source-profile-v4/src/lossless_evidence.cpp": {
+      "bytes": 17427,
+      "sha256": "38d3f0ce4bd1086e9eba95bedbe453c54cb07efd8dfcecbfa873ade5e966256c"
+    },
+    "/private/tmp/phase5_pilot_bc_checkpoint_v5_20261010/ahead-source-profile-v4/src/lossless_evidence.hpp": {
+      "bytes": 1943,
+      "sha256": "1c406d89f0c6156eed89ab191ae395143be8012aa25186b88af7db28f476f769"
+    },
+    "/private/tmp/phase5_pilot_bc_checkpoint_v5_20261010/ahead-source-profile-v4/src/model_boundary.cpp": {
+      "bytes": 20641,
+      "sha256": "0da697a20727fc1c56d733d184a70ed59468df314e2c9c39c0dc44b76e690008"
+    },
+    "/private/tmp/phase5_pilot_bc_checkpoint_v5_20261010/ahead-source-profile-v4/src/model_boundary.hpp": {
+      "bytes": 4002,
+      "sha256": "33e21b605d8e042d7c9c4db2cf99736f995be2494714e3c37f8ac2746fb5a5b6"
+    },
+    "/private/tmp/phase5_pilot_bc_checkpoint_v5_20261010/ahead-source-profile-v4/src/normalization.cpp": {
+      "bytes": 23976,
+      "sha256": "a0cd0c9cdb505f922f1744f24cf115057b6ba9f3a9bc1b3ed0c9bdb82d358ed5"
+    },
+    "/private/tmp/phase5_pilot_bc_checkpoint_v5_20261010/ahead-source-profile-v4/src/normalization.hpp": {
+      "bytes": 4288,
+      "sha256": "9456be5c205f23d2aa2210eac02286d030204a446af003ee85362b971ccb43d8"
+    },
+    "/private/tmp/phase5_pilot_bc_checkpoint_v5_20261010/ahead-source-profile-v4/src/observer_tests.cpp": {
+      "bytes": 3785,
+      "sha256": "d1ff998984981a5ded1e92b8d452503e8b489ecfb0d067fb04ff5fd616d02877"
+    },
+    "/private/tmp/phase5_pilot_bc_checkpoint_v5_20261010/ahead-source-profile-v4/src/runtime_observer.cpp": {
+      "bytes": 30429,
+      "sha256": "b9c95d633dd99014487755e8f2260bef34f0dae2acc89e553115de245059f93b"
+    },
+    "/private/tmp/phase5_pilot_bc_checkpoint_v5_20261010/ahead-source-profile-v4/src/runtime_observer.hpp": {
+      "bytes": 7267,
+      "sha256": "ffd34f418c8fde91f56c786f1743a87bf14f3ce10a2ebc1e0503dbad70c90c8d"
+    },
+    "/private/tmp/phase5_pilot_bc_checkpoint_v5_20261010/ahead-source-profile-v4/src/session_primitives.hpp": {
+      "bytes": 2259,
+      "sha256": "0b76bc232ed81dc9b4831617ae1690cfc287def914b8bca5f05ce6e6e25b6080"
+    },
+    "/private/tmp/phase5_pilot_bc_checkpoint_v5_20261010/ahead-source-profile-v4/src/solver_forensics.cpp": {
+      "bytes": 26514,
+      "sha256": "664c1d480e23c1ddef4f45a57165cba871213740329f8693c897d7c07ee7af27"
+    },
+    "/private/tmp/phase5_pilot_bc_checkpoint_v5_20261010/ahead-source-profile-v4/src/solver_forensics.hpp": {
+      "bytes": 860,
+      "sha256": "02b3a3d33ea64a351b228b96b2e0590b7a79fb4e9b87da78dc28c59465aca3bb"
+    },
+    "/private/tmp/phase5_pilot_bc_checkpoint_v5_20261010/ahead-source-profile-v4/src/task_local_provider.cpp": {
+      "bytes": 1839,
+      "sha256": "051b424236979f9fe7ea4cb96564f54969025c997bfba2c61d347a23f7fbae4c"
+    },
+    "/private/tmp/phase5_pilot_bc_checkpoint_v5_20261010/ahead-source-profile-v4/src/task_local_provider.hpp": {
+      "bytes": 640,
+      "sha256": "1819e2f626fb0ff65ad7e7e8de0b0b52f625e6bf435b073d7cca55722d76f093"
+    },
+    "/private/tmp/phase5_pilot_bc_checkpoint_v5_20261010/ahead-source-profile-v5/PROTOCOL.json": {
+      "bytes": 2339,
+      "sha256": "3d2b226648c2f6df154315fda3712a1f8f3d07c054a856962888036e9b0abce8"
+    },
+    "/private/tmp/phase5_pilot_bc_checkpoint_v5_20261010/ahead-source-profile-v5/READY.json": {
+      "bytes": 4158,
+      "sha256": "7495e8ecd0bf8c169eda2eb3bd18471e0bc48c556390bd6ae5eac54a86b9dc97"
+    },
+    "/private/tmp/phase5_pilot_bc_checkpoint_v5_20261010/ahead-source-profile-v5/VALIDATION_AND_COMMIT_DESIGN.md": {
+      "bytes": 3219,
+      "sha256": "a71508fb808e09ad29b5e5fd16a59082658e0d867fa24fe198f31e4265fa5d8e"
+    },
+    "/private/tmp/phase5_pilot_bc_checkpoint_v5_20261010/ahead-source-profile-v5/src/active_first_cycle.cpp": {
+      "bytes": 25476,
+      "sha256": "2cee1d6566218aa61f6ab9d3211ef77588ae288f98a49c5697f9e4751bd3bd53"
+    },
+    "/private/tmp/phase5_pilot_bc_checkpoint_v5_20261010/ahead-source-profile-v5/src/affine_assembly.cpp": {
+      "bytes": 28981,
+      "sha256": "d478eda1f0fe97bfc41851515f4baa3e485fd4a57968a62dcb6233ae1157bbd5"
+    },
+    "/private/tmp/phase5_pilot_bc_checkpoint_v5_20261010/ahead-source-profile-v5/src/affine_assembly.hpp": {
+      "bytes": 6026,
+      "sha256": "6faee2961242052c7655da41e8988dd0844f14c3cfa885672aa7c03eaa1dcb57"
+    },
+    "/private/tmp/phase5_pilot_bc_checkpoint_v5_20261010/ahead-source-profile-v5/src/box_screen_tests.cpp": {
+      "bytes": 2954,
+      "sha256": "d922876babec2867dd1293bcee259ac12e4b2a6af5a30dd551209e097c0abaf8"
+    },
+    "/private/tmp/phase5_pilot_bc_checkpoint_v5_20261010/ahead-source-profile-v5/src/candidate_validation.cpp": {
+      "bytes": 9635,
+      "sha256": "0a91f55ebf40219b829097d13f0230237d3eebf08af9e53a42387ebdee6ed9d4"
+    },
+    "/private/tmp/phase5_pilot_bc_checkpoint_v5_20261010/ahead-source-profile-v5/src/candidate_validation.hpp": {
+      "bytes": 1114,
+      "sha256": "54c2135a7ce9a0bf61362c7e22014c2e9df3410b6dbfe1be1893f0ecb90af3cf"
+    },
+    "/private/tmp/phase5_pilot_bc_checkpoint_v5_20261010/ahead-source-profile-v5/src/integrated_horizon_qp.cpp": {
+      "bytes": 89073,
+      "sha256": "dbf28d84b112befd9f8b1a52737a4d5e7d96c97af9ec1edc13281b83bd0c349a"
+    },
+    "/private/tmp/phase5_pilot_bc_checkpoint_v5_20261010/ahead-source-profile-v5/src/integrated_horizon_qp.hpp": {
+      "bytes": 11018,
+      "sha256": "c3149b43a9d419a20245e36d161c979b504a1bd930463f9b3a60efe527233c26"
+    },
+    "/private/tmp/phase5_pilot_bc_checkpoint_v5_20261010/ahead-source-profile-v5/src/invariant_tests.cpp": {
+      "bytes": 4721,
+      "sha256": "f5a859d4cf9d79a5ae1b533b8dd62776f2bba6599dfdf691a2915ef3296a33f9"
+    },
+    "/private/tmp/phase5_pilot_bc_checkpoint_v5_20261010/ahead-source-profile-v5/src/linear_box_screen.hpp": {
+      "bytes": 3916,
+      "sha256": "b649eff43293a3078b7b46a0166fa0f8a2ac59f3a8496c8c73a98c275fed96d1"
+    },
+    "/private/tmp/phase5_pilot_bc_checkpoint_v5_20261010/ahead-source-profile-v5/src/lossless_evidence.cpp": {
+      "bytes": 17427,
+      "sha256": "38d3f0ce4bd1086e9eba95bedbe453c54cb07efd8dfcecbfa873ade5e966256c"
+    },
+    "/private/tmp/phase5_pilot_bc_checkpoint_v5_20261010/ahead-source-profile-v5/src/lossless_evidence.hpp": {
+      "bytes": 1943,
+      "sha256": "1c406d89f0c6156eed89ab191ae395143be8012aa25186b88af7db28f476f769"
+    },
+    "/private/tmp/phase5_pilot_bc_checkpoint_v5_20261010/ahead-source-profile-v5/src/model_boundary.cpp": {
+      "bytes": 20641,
+      "sha256": "0da697a20727fc1c56d733d184a70ed59468df314e2c9c39c0dc44b76e690008"
+    },
+    "/private/tmp/phase5_pilot_bc_checkpoint_v5_20261010/ahead-source-profile-v5/src/model_boundary.hpp": {
+      "bytes": 4002,
+      "sha256": "33e21b605d8e042d7c9c4db2cf99736f995be2494714e3c37f8ac2746fb5a5b6"
+    },
+    "/private/tmp/phase5_pilot_bc_checkpoint_v5_20261010/ahead-source-profile-v5/src/normalization.cpp": {
+      "bytes": 23976,
+      "sha256": "a0cd0c9cdb505f922f1744f24cf115057b6ba9f3a9bc1b3ed0c9bdb82d358ed5"
+    },
+    "/private/tmp/phase5_pilot_bc_checkpoint_v5_20261010/ahead-source-profile-v5/src/normalization.hpp": {
+      "bytes": 4288,
+      "sha256": "9456be5c205f23d2aa2210eac02286d030204a446af003ee85362b971ccb43d8"
+    },
+    "/private/tmp/phase5_pilot_bc_checkpoint_v5_20261010/ahead-source-profile-v5/src/observer_tests.cpp": {
+      "bytes": 3785,
+      "sha256": "d1ff998984981a5ded1e92b8d452503e8b489ecfb0d067fb04ff5fd616d02877"
+    },
+    "/private/tmp/phase5_pilot_bc_checkpoint_v5_20261010/ahead-source-profile-v5/src/runtime_observer.cpp": {
+      "bytes": 30558,
+      "sha256": "c061636b87836b935fefed7050f785b38b8b70c614c82e01b67dbb2130ccf5df"
+    },
+    "/private/tmp/phase5_pilot_bc_checkpoint_v5_20261010/ahead-source-profile-v5/src/runtime_observer.hpp": {
+      "bytes": 7267,
+      "sha256": "ffd34f418c8fde91f56c786f1743a87bf14f3ce10a2ebc1e0503dbad70c90c8d"
+    },
+    "/private/tmp/phase5_pilot_bc_checkpoint_v5_20261010/ahead-source-profile-v5/src/session_primitives.hpp": {
+      "bytes": 2259,
+      "sha256": "0b76bc232ed81dc9b4831617ae1690cfc287def914b8bca5f05ce6e6e25b6080"
+    },
+    "/private/tmp/phase5_pilot_bc_checkpoint_v5_20261010/ahead-source-profile-v5/src/solver_forensics.cpp": {
+      "bytes": 26514,
+      "sha256": "664c1d480e23c1ddef4f45a57165cba871213740329f8693c897d7c07ee7af27"
+    },
+    "/private/tmp/phase5_pilot_bc_checkpoint_v5_20261010/ahead-source-profile-v5/src/solver_forensics.hpp": {
+      "bytes": 860,
+      "sha256": "02b3a3d33ea64a351b228b96b2e0590b7a79fb4e9b87da78dc28c59465aca3bb"
+    },
+    "/private/tmp/phase5_pilot_bc_checkpoint_v5_20261010/ahead-source-profile-v5/src/task_local_provider.cpp": {
+      "bytes": 1839,
+      "sha256": "051b424236979f9fe7ea4cb96564f54969025c997bfba2c61d347a23f7fbae4c"
+    },
+    "/private/tmp/phase5_pilot_bc_checkpoint_v5_20261010/ahead-source-profile-v5/src/task_local_provider.hpp": {
+      "bytes": 640,
+      "sha256": "1819e2f626fb0ff65ad7e7e8de0b0b52f625e6bf435b073d7cca55722d76f093"
+    },
+    "/private/tmp/phase5_pilot_bc_checkpoint_v5_20261010/collect_pilot_bc_after_run.py": {
+      "bytes": 2368,
+      "sha256": "6079df59da6ecba78f840433d86ed1e8c0aa56296520dca805b83978e626f183"
+    },
+    "/private/tmp/phase5_pilot_bc_checkpoint_v5_20261010/collection.stderr": {
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    "/private/tmp/phase5_pilot_bc_checkpoint_v5_20261010/figures/PLOT_PROVENANCE.json": {
+      "bytes": 792,
+      "sha256": "b33ceb6eed1f4f835723fe80fd1c806b176b6936f48bc7793ff744680f814e61"
+    },
+    "/private/tmp/phase5_pilot_bc_checkpoint_v5_20261010/figures/candidate_validation_refusal.png": {
+      "bytes": 192935,
+      "sha256": "4fc34dfe5f4f3fa75788551a4e4e032f4b78737ffc1cfeed7f64faf43cfbb82e"
+    },
+    "/private/tmp/phase5_pilot_bc_checkpoint_v5_20261010/figures/candidate_validation_refusal.svg": {
+      "bytes": 96398,
+      "sha256": "3e5dcba064e11dc71f0719ee92df86f46203f37167e515a8fd9998e1670e7221"
+    },
+    "/private/tmp/phase5_pilot_bc_checkpoint_v5_20261010/figures/render.py": {
+      "bytes": 3708,
+      "sha256": "cad51c97f8a0ce3035b8cbc2a44e0ff3e798f713adaa3f2b1d922c1b80344dfc"
+    },
+    "/private/tmp/phase5_pilot_bc_checkpoint_v5_20261010/pilot_bc_interface_review1_20261010.md": {
+      "bytes": 5925,
+      "sha256": "74163c820170258cbbdd920e7e388a7efe6e960f1f69185582ac8405a1b08688"
+    },
+    "/private/tmp/phase5_pilot_bc_checkpoint_v5_20261010/pilot_bc_interface_review4_20261010.md": {
+      "bytes": 6546,
+      "sha256": "51641dbc20c7f6233e263e1825598e0109bae7a24ef0fc1cf04a73273a81f1a1"
+    },
+    "/private/tmp/phase5_pilot_bc_checkpoint_v5_20261010/pilot_bc_interface_review5_delta_20261010.md": {
+      "bytes": 2012,
+      "sha256": "9918b910e3ae6c5ccaa2ce2c06bb854b48273ec6adae500885f3f56ce25e3d97"
+    },
+    "/private/tmp/phase5_pilot_bc_checkpoint_v5_20261010/read_pilot_bc5_summary.py": {
+      "bytes": 4263,
+      "sha256": "0f78f7a96a50730eb534dbe787de00302ffd35357c9f5857f65ed6c7c969afbc"
+    },
+    "/private/tmp/phase5_pilot_bc_checkpoint_v5_20261010/read_pilot_nominal_branch_prefix.py": {
+      "bytes": 2665,
+      "sha256": "2aa0b6c4df3e07437cf4db343f80da7cffc56fad09fdca802b28b4b866d7f2ec"
+    },
+    "/private/tmp/phase5_pilot_bc_checkpoint_v5_20261010/read_pilot_reach_data.py": {
+      "bytes": 3404,
+      "sha256": "1144354febc3f7a8eec7fe1df6a9bd8e0de4151171c58592e1d2032a3b6c92f6"
+    },
+    "/private/tmp/phase5_pilot_bc_checkpoint_v5_20261010/readonly_collection_source.py": {
+      "bytes": 1415,
+      "sha256": "bb0b6619ba811b41417e6f6b368b006ce9ec0fe1626bb158341b27b320922a40"
+    },
+    "/private/tmp/phase5_pilot_bc_checkpoint_v5_20261010/render_pilot_failure5.py": {
+      "bytes": 5674,
+      "sha256": "62a0b19f94ecf0e81130d9040e98351a30b085d31731d8b75052ab375a9c75c3"
+    },
+    "/private/tmp/phase5_pilot_bc_checkpoint_v5_20261010/root_independent_pilot_bc_ahead5_delta_review_20261010/AHEAD4_READY_READ.json": {
+      "bytes": 4101,
+      "sha256": "d041a586f24168ed85e11c9baf234bb741cd053cf14e2aa576c72aeecbdc967f"
+    },
+    "/private/tmp/phase5_pilot_bc_checkpoint_v5_20261010/root_independent_pilot_bc_ahead5_delta_review_20261010/AHEAD5_READY_READ.json": {
+      "bytes": 4158,
+      "sha256": "7495e8ecd0bf8c169eda2eb3bd18471e0bc48c556390bd6ae5eac54a86b9dc97"
+    },
+    "/private/tmp/phase5_pilot_bc_checkpoint_v5_20261010/root_independent_pilot_bc_ahead5_delta_review_20261010/READY.json": {
+      "bytes": 5556,
+      "sha256": "455c388c7061689bb3b7d2c219ab004bd47af7f5d8d26309f7b178781f381d33"
+    },
+    "/private/tmp/phase5_pilot_bc_checkpoint_v5_20261010/root_independent_pilot_bc_ahead5_delta_review_20261010/RESULT.json": {
+      "bytes": 836,
+      "sha256": "2af7eec9d827119b2ad492acb29a5f58de13866489e726e0775044ce0f076954"
+    },
+    "/private/tmp/phase5_pilot_bc_checkpoint_v5_20261010/root_independent_pilot_bc_ahead5_delta_review_20261010/REVIEW.md": {
+      "bytes": 2288,
+      "sha256": "7497880466fcebb0a874a752cb005c19252364c61244aa8365d94c4481f29475"
+    },
+    "/private/tmp/phase5_pilot_bc_checkpoint_v5_20261010/root_independent_pilot_bc_ahead5_delta_review_20261010/SOURCE_DELTA.diff": {
+      "bytes": 9619,
+      "sha256": "2db8c0b5405995931d435db328c266bfe3aaee578bc86d6bbc19adc5d45384ec"
+    },
+    "/private/tmp/phase5_pilot_bc_checkpoint_v5_20261010/root_independent_pilot_bc_ahead5_delta_review_20261010/SOURCE_SNAPSHOT.py": {
+      "bytes": 3235,
+      "sha256": "8e06d5fe69b6fde31204a71e06d004920f23d6fa08a1b44808b507d804f1783d"
+    },
+    "/private/tmp/phase5_pilot_bc_checkpoint_v5_20261010/root_independent_pilot_bc_ahead5_delta_review_20261010/ahead5-read-snapshot/PROTOCOL.json": {
+      "bytes": 2339,
+      "sha256": "3d2b226648c2f6df154315fda3712a1f8f3d07c054a856962888036e9b0abce8"
+    },
+    "/private/tmp/phase5_pilot_bc_checkpoint_v5_20261010/root_independent_pilot_bc_ahead5_delta_review_20261010/ahead5-read-snapshot/VALIDATION_AND_COMMIT_DESIGN.md": {
+      "bytes": 3219,
+      "sha256": "a71508fb808e09ad29b5e5fd16a59082658e0d867fa24fe198f31e4265fa5d8e"
+    },
+    "/private/tmp/phase5_pilot_bc_checkpoint_v5_20261010/root_independent_pilot_bc_ahead5_delta_review_20261010/ahead5-read-snapshot/src/active_first_cycle.cpp": {
+      "bytes": 25476,
+      "sha256": "2cee1d6566218aa61f6ab9d3211ef77588ae288f98a49c5697f9e4751bd3bd53"
+    },
+    "/private/tmp/phase5_pilot_bc_checkpoint_v5_20261010/root_independent_pilot_bc_ahead5_delta_review_20261010/ahead5-read-snapshot/src/affine_assembly.cpp": {
+      "bytes": 28981,
+      "sha256": "d478eda1f0fe97bfc41851515f4baa3e485fd4a57968a62dcb6233ae1157bbd5"
+    },
+    "/private/tmp/phase5_pilot_bc_checkpoint_v5_20261010/root_independent_pilot_bc_ahead5_delta_review_20261010/ahead5-read-snapshot/src/affine_assembly.hpp": {
+      "bytes": 6026,
+      "sha256": "6faee2961242052c7655da41e8988dd0844f14c3cfa885672aa7c03eaa1dcb57"
+    },
+    "/private/tmp/phase5_pilot_bc_checkpoint_v5_20261010/root_independent_pilot_bc_ahead5_delta_review_20261010/ahead5-read-snapshot/src/box_screen_tests.cpp": {
+      "bytes": 2954,
+      "sha256": "d922876babec2867dd1293bcee259ac12e4b2a6af5a30dd551209e097c0abaf8"
+    },
+    "/private/tmp/phase5_pilot_bc_checkpoint_v5_20261010/root_independent_pilot_bc_ahead5_delta_review_20261010/ahead5-read-snapshot/src/candidate_validation.cpp": {
+      "bytes": 9635,
+      "sha256": "0a91f55ebf40219b829097d13f0230237d3eebf08af9e53a42387ebdee6ed9d4"
+    },
+    "/private/tmp/phase5_pilot_bc_checkpoint_v5_20261010/root_independent_pilot_bc_ahead5_delta_review_20261010/ahead5-read-snapshot/src/candidate_validation.hpp": {
+      "bytes": 1114,
+      "sha256": "54c2135a7ce9a0bf61362c7e22014c2e9df3410b6dbfe1be1893f0ecb90af3cf"
+    },
+    "/private/tmp/phase5_pilot_bc_checkpoint_v5_20261010/root_independent_pilot_bc_ahead5_delta_review_20261010/ahead5-read-snapshot/src/integrated_horizon_qp.cpp": {
+      "bytes": 89073,
+      "sha256": "dbf28d84b112befd9f8b1a52737a4d5e7d96c97af9ec1edc13281b83bd0c349a"
+    },
+    "/private/tmp/phase5_pilot_bc_checkpoint_v5_20261010/root_independent_pilot_bc_ahead5_delta_review_20261010/ahead5-read-snapshot/src/integrated_horizon_qp.hpp": {
+      "bytes": 11018,
+      "sha256": "c3149b43a9d419a20245e36d161c979b504a1bd930463f9b3a60efe527233c26"
+    },
+    "/private/tmp/phase5_pilot_bc_checkpoint_v5_20261010/root_independent_pilot_bc_ahead5_delta_review_20261010/ahead5-read-snapshot/src/invariant_tests.cpp": {
+      "bytes": 4721,
+      "sha256": "f5a859d4cf9d79a5ae1b533b8dd62776f2bba6599dfdf691a2915ef3296a33f9"
+    },
+    "/private/tmp/phase5_pilot_bc_checkpoint_v5_20261010/root_independent_pilot_bc_ahead5_delta_review_20261010/ahead5-read-snapshot/src/linear_box_screen.hpp": {
+      "bytes": 3916,
+      "sha256": "b649eff43293a3078b7b46a0166fa0f8a2ac59f3a8496c8c73a98c275fed96d1"
+    },
+    "/private/tmp/phase5_pilot_bc_checkpoint_v5_20261010/root_independent_pilot_bc_ahead5_delta_review_20261010/ahead5-read-snapshot/src/lossless_evidence.cpp": {
+      "bytes": 17427,
+      "sha256": "38d3f0ce4bd1086e9eba95bedbe453c54cb07efd8dfcecbfa873ade5e966256c"
+    },
+    "/private/tmp/phase5_pilot_bc_checkpoint_v5_20261010/root_independent_pilot_bc_ahead5_delta_review_20261010/ahead5-read-snapshot/src/lossless_evidence.hpp": {
+      "bytes": 1943,
+      "sha256": "1c406d89f0c6156eed89ab191ae395143be8012aa25186b88af7db28f476f769"
+    },
+    "/private/tmp/phase5_pilot_bc_checkpoint_v5_20261010/root_independent_pilot_bc_ahead5_delta_review_20261010/ahead5-read-snapshot/src/model_boundary.cpp": {
+      "bytes": 20641,
+      "sha256": "0da697a20727fc1c56d733d184a70ed59468df314e2c9c39c0dc44b76e690008"
+    },
+    "/private/tmp/phase5_pilot_bc_checkpoint_v5_20261010/root_independent_pilot_bc_ahead5_delta_review_20261010/ahead5-read-snapshot/src/model_boundary.hpp": {
+      "bytes": 4002,
+      "sha256": "33e21b605d8e042d7c9c4db2cf99736f995be2494714e3c37f8ac2746fb5a5b6"
+    },
+    "/private/tmp/phase5_pilot_bc_checkpoint_v5_20261010/root_independent_pilot_bc_ahead5_delta_review_20261010/ahead5-read-snapshot/src/normalization.cpp": {
+      "bytes": 23976,
+      "sha256": "a0cd0c9cdb505f922f1744f24cf115057b6ba9f3a9bc1b3ed0c9bdb82d358ed5"
+    },
+    "/private/tmp/phase5_pilot_bc_checkpoint_v5_20261010/root_independent_pilot_bc_ahead5_delta_review_20261010/ahead5-read-snapshot/src/normalization.hpp": {
+      "bytes": 4288,
+      "sha256": "9456be5c205f23d2aa2210eac02286d030204a446af003ee85362b971ccb43d8"
+    },
+    "/private/tmp/phase5_pilot_bc_checkpoint_v5_20261010/root_independent_pilot_bc_ahead5_delta_review_20261010/ahead5-read-snapshot/src/observer_tests.cpp": {
+      "bytes": 3785,
+      "sha256": "d1ff998984981a5ded1e92b8d452503e8b489ecfb0d067fb04ff5fd616d02877"
+    },
+    "/private/tmp/phase5_pilot_bc_checkpoint_v5_20261010/root_independent_pilot_bc_ahead5_delta_review_20261010/ahead5-read-snapshot/src/runtime_observer.cpp": {
+      "bytes": 30558,
+      "sha256": "c061636b87836b935fefed7050f785b38b8b70c614c82e01b67dbb2130ccf5df"
+    },
+    "/private/tmp/phase5_pilot_bc_checkpoint_v5_20261010/root_independent_pilot_bc_ahead5_delta_review_20261010/ahead5-read-snapshot/src/runtime_observer.hpp": {
+      "bytes": 7267,
+      "sha256": "ffd34f418c8fde91f56c786f1743a87bf14f3ce10a2ebc1e0503dbad70c90c8d"
+    },
+    "/private/tmp/phase5_pilot_bc_checkpoint_v5_20261010/root_independent_pilot_bc_ahead5_delta_review_20261010/ahead5-read-snapshot/src/session_primitives.hpp": {
+      "bytes": 2259,
+      "sha256": "0b76bc232ed81dc9b4831617ae1690cfc287def914b8bca5f05ce6e6e25b6080"
+    },
+    "/private/tmp/phase5_pilot_bc_checkpoint_v5_20261010/root_independent_pilot_bc_ahead5_delta_review_20261010/ahead5-read-snapshot/src/solver_forensics.cpp": {
+      "bytes": 26514,
+      "sha256": "664c1d480e23c1ddef4f45a57165cba871213740329f8693c897d7c07ee7af27"
+    },
+    "/private/tmp/phase5_pilot_bc_checkpoint_v5_20261010/root_independent_pilot_bc_ahead5_delta_review_20261010/ahead5-read-snapshot/src/solver_forensics.hpp": {
+      "bytes": 860,
+      "sha256": "02b3a3d33ea64a351b228b96b2e0590b7a79fb4e9b87da78dc28c59465aca3bb"
+    },
+    "/private/tmp/phase5_pilot_bc_checkpoint_v5_20261010/root_independent_pilot_bc_ahead5_delta_review_20261010/ahead5-read-snapshot/src/task_local_provider.cpp": {
+      "bytes": 1839,
+      "sha256": "051b424236979f9fe7ea4cb96564f54969025c997bfba2c61d347a23f7fbae4c"
+    },
+    "/private/tmp/phase5_pilot_bc_checkpoint_v5_20261010/root_independent_pilot_bc_ahead5_delta_review_20261010/ahead5-read-snapshot/src/task_local_provider.hpp": {
+      "bytes": 640,
+      "sha256": "1819e2f626fb0ff65ad7e7e8de0b0b52f625e6bf435b073d7cca55722d76f093"
+    },
+    "/private/tmp/phase5_pilot_bc_checkpoint_v5_20261010/root_independent_pilot_bc_ahead5_delta_review_20261010/audit_delta.py": {
+      "bytes": 3235,
+      "sha256": "8e06d5fe69b6fde31204a71e06d004920f23d6fa08a1b44808b507d804f1783d"
+    },
+    "/private/tmp/phase5_pilot_bc_checkpoint_v5_20261010/root_independent_pilot_bc_ahead_review_20261010/AHEAD2_READY_READ.json": {
+      "bytes": 3999,
+      "sha256": "2f33cedb444da2284b94056c3cb412051e224efc4115d6c77df7f3924947369e"
+    },
+    "/private/tmp/phase5_pilot_bc_checkpoint_v5_20261010/root_independent_pilot_bc_ahead_review_20261010/AHEAD4_READY_READ.json": {
+      "bytes": 4101,
+      "sha256": "d041a586f24168ed85e11c9baf234bb741cd053cf14e2aa576c72aeecbdc967f"
+    },
+    "/private/tmp/phase5_pilot_bc_checkpoint_v5_20261010/root_independent_pilot_bc_ahead_review_20261010/PUBLIC_PINNED_URDF_READ_SNAPSHOT.xml": {
+      "bytes": 15732,
+      "sha256": "b66fe057eef414021df731932851604b5eef175610fd679338994e920aff157d"
+    },
+    "/private/tmp/phase5_pilot_bc_checkpoint_v5_20261010/root_independent_pilot_bc_ahead_review_20261010/READY.json": {
+      "bytes": 9991,
+      "sha256": "cd1eac016f495b03d62450dd657dfafd1a1b13d5831aa0b178568b929941a64a"
+    },
+    "/private/tmp/phase5_pilot_bc_checkpoint_v5_20261010/root_independent_pilot_bc_ahead_review_20261010/REVIEW.md": {
+      "bytes": 5327,
+      "sha256": "8de4b5febc096da3f721b42fc08e2faab61fedf9b728c9e54a56733003ce8e9b"
+    },
+    "/private/tmp/phase5_pilot_bc_checkpoint_v5_20261010/root_independent_pilot_bc_ahead_review_20261010/SOURCE_SNAPSHOT.py": {
+      "bytes": 5089,
+      "sha256": "f22b3a8a304d9d79f0a21e88572d98ebbabef98d985915abdac14b47fc39f9dc"
+    },
+    "/private/tmp/phase5_pilot_bc_checkpoint_v5_20261010/root_independent_pilot_bc_ahead_review_20261010/ahead2-read-snapshot/PROTOCOL.json": {
+      "bytes": 2324,
+      "sha256": "3846f566a4ec8fd4f5d23b3c609024c819188c6ffdbaf5aa74adee3e89c052c1"
+    },
+    "/private/tmp/phase5_pilot_bc_checkpoint_v5_20261010/root_independent_pilot_bc_ahead_review_20261010/ahead2-read-snapshot/VALIDATION_AND_COMMIT_DESIGN.md": {
+      "bytes": 3198,
+      "sha256": "db465e7026e69cf88e3c1655e11a6133f316bc6b180c00d744fdcef1cfb79fa8"
+    },
+    "/private/tmp/phase5_pilot_bc_checkpoint_v5_20261010/root_independent_pilot_bc_ahead_review_20261010/ahead2-read-snapshot/src/active_first_cycle.cpp": {
+      "bytes": 25408,
+      "sha256": "8f2af92562f2eb4ee514435d3c95298bf8005b5eff729e927f242c05b55286ca"
+    },
+    "/private/tmp/phase5_pilot_bc_checkpoint_v5_20261010/root_independent_pilot_bc_ahead_review_20261010/ahead2-read-snapshot/src/affine_assembly.cpp": {
+      "bytes": 28981,
+      "sha256": "d478eda1f0fe97bfc41851515f4baa3e485fd4a57968a62dcb6233ae1157bbd5"
+    },
+    "/private/tmp/phase5_pilot_bc_checkpoint_v5_20261010/root_independent_pilot_bc_ahead_review_20261010/ahead2-read-snapshot/src/affine_assembly.hpp": {
+      "bytes": 6026,
+      "sha256": "6faee2961242052c7655da41e8988dd0844f14c3cfa885672aa7c03eaa1dcb57"
+    },
+    "/private/tmp/phase5_pilot_bc_checkpoint_v5_20261010/root_independent_pilot_bc_ahead_review_20261010/ahead2-read-snapshot/src/box_screen_tests.cpp": {
+      "bytes": 2954,
+      "sha256": "d922876babec2867dd1293bcee259ac12e4b2a6af5a30dd551209e097c0abaf8"
+    },
+    "/private/tmp/phase5_pilot_bc_checkpoint_v5_20261010/root_independent_pilot_bc_ahead_review_20261010/ahead2-read-snapshot/src/candidate_validation.cpp": {
+      "bytes": 9618,
+      "sha256": "4c47590f9254b0a5ece8d6408f2da91e8d2fcb07576af155164544a4f56bf176"
+    },
+    "/private/tmp/phase5_pilot_bc_checkpoint_v5_20261010/root_independent_pilot_bc_ahead_review_20261010/ahead2-read-snapshot/src/candidate_validation.hpp": {
+      "bytes": 1114,
+      "sha256": "54c2135a7ce9a0bf61362c7e22014c2e9df3410b6dbfe1be1893f0ecb90af3cf"
+    },
+    "/private/tmp/phase5_pilot_bc_checkpoint_v5_20261010/root_independent_pilot_bc_ahead_review_20261010/ahead2-read-snapshot/src/integrated_horizon_qp.cpp": {
+      "bytes": 89073,
+      "sha256": "dbf28d84b112befd9f8b1a52737a4d5e7d96c97af9ec1edc13281b83bd0c349a"
+    },
+    "/private/tmp/phase5_pilot_bc_checkpoint_v5_20261010/root_independent_pilot_bc_ahead_review_20261010/ahead2-read-snapshot/src/integrated_horizon_qp.hpp": {
+      "bytes": 11018,
+      "sha256": "c3149b43a9d419a20245e36d161c979b504a1bd930463f9b3a60efe527233c26"
+    },
+    "/private/tmp/phase5_pilot_bc_checkpoint_v5_20261010/root_independent_pilot_bc_ahead_review_20261010/ahead2-read-snapshot/src/invariant_tests.cpp": {
+      "bytes": 4721,
+      "sha256": "f5a859d4cf9d79a5ae1b533b8dd62776f2bba6599dfdf691a2915ef3296a33f9"
+    },
+    "/private/tmp/phase5_pilot_bc_checkpoint_v5_20261010/root_independent_pilot_bc_ahead_review_20261010/ahead2-read-snapshot/src/linear_box_screen.hpp": {
+      "bytes": 3916,
+      "sha256": "b649eff43293a3078b7b46a0166fa0f8a2ac59f3a8496c8c73a98c275fed96d1"
+    },
+    "/private/tmp/phase5_pilot_bc_checkpoint_v5_20261010/root_independent_pilot_bc_ahead_review_20261010/ahead2-read-snapshot/src/lossless_evidence.cpp": {
+      "bytes": 17427,
+      "sha256": "38d3f0ce4bd1086e9eba95bedbe453c54cb07efd8dfcecbfa873ade5e966256c"
+    },
+    "/private/tmp/phase5_pilot_bc_checkpoint_v5_20261010/root_independent_pilot_bc_ahead_review_20261010/ahead2-read-snapshot/src/lossless_evidence.hpp": {
+      "bytes": 1943,
+      "sha256": "1c406d89f0c6156eed89ab191ae395143be8012aa25186b88af7db28f476f769"
+    },
+    "/private/tmp/phase5_pilot_bc_checkpoint_v5_20261010/root_independent_pilot_bc_ahead_review_20261010/ahead2-read-snapshot/src/model_boundary.cpp": {
+      "bytes": 20641,
+      "sha256": "0da697a20727fc1c56d733d184a70ed59468df314e2c9c39c0dc44b76e690008"
+    },
+    "/private/tmp/phase5_pilot_bc_checkpoint_v5_20261010/root_independent_pilot_bc_ahead_review_20261010/ahead2-read-snapshot/src/model_boundary.hpp": {
+      "bytes": 4002,
+      "sha256": "33e21b605d8e042d7c9c4db2cf99736f995be2494714e3c37f8ac2746fb5a5b6"
+    },
+    "/private/tmp/phase5_pilot_bc_checkpoint_v5_20261010/root_independent_pilot_bc_ahead_review_20261010/ahead2-read-snapshot/src/normalization.cpp": {
+      "bytes": 23976,
+      "sha256": "a0cd0c9cdb505f922f1744f24cf115057b6ba9f3a9bc1b3ed0c9bdb82d358ed5"
+    },
+    "/private/tmp/phase5_pilot_bc_checkpoint_v5_20261010/root_independent_pilot_bc_ahead_review_20261010/ahead2-read-snapshot/src/normalization.hpp": {
+      "bytes": 4288,
+      "sha256": "9456be5c205f23d2aa2210eac02286d030204a446af003ee85362b971ccb43d8"
+    },
+    "/private/tmp/phase5_pilot_bc_checkpoint_v5_20261010/root_independent_pilot_bc_ahead_review_20261010/ahead2-read-snapshot/src/observer_tests.cpp": {
+      "bytes": 3785,
+      "sha256": "d1ff998984981a5ded1e92b8d452503e8b489ecfb0d067fb04ff5fd616d02877"
+    },
+    "/private/tmp/phase5_pilot_bc_checkpoint_v5_20261010/root_independent_pilot_bc_ahead_review_20261010/ahead2-read-snapshot/src/runtime_observer.cpp": {
+      "bytes": 29296,
+      "sha256": "42d526426e22cf4419bc2932ef2c9ffe57ee96d07d6e6965380a4f2ba6586060"
+    },
+    "/private/tmp/phase5_pilot_bc_checkpoint_v5_20261010/root_independent_pilot_bc_ahead_review_20261010/ahead2-read-snapshot/src/runtime_observer.hpp": {
+      "bytes": 7267,
+      "sha256": "ffd34f418c8fde91f56c786f1743a87bf14f3ce10a2ebc1e0503dbad70c90c8d"
+    },
+    "/private/tmp/phase5_pilot_bc_checkpoint_v5_20261010/root_independent_pilot_bc_ahead_review_20261010/ahead2-read-snapshot/src/session_primitives.hpp": {
+      "bytes": 2259,
+      "sha256": "0b76bc232ed81dc9b4831617ae1690cfc287def914b8bca5f05ce6e6e25b6080"
+    },
+    "/private/tmp/phase5_pilot_bc_checkpoint_v5_20261010/root_independent_pilot_bc_ahead_review_20261010/ahead2-read-snapshot/src/solver_forensics.cpp": {
+      "bytes": 26514,
+      "sha256": "664c1d480e23c1ddef4f45a57165cba871213740329f8693c897d7c07ee7af27"
+    },
+    "/private/tmp/phase5_pilot_bc_checkpoint_v5_20261010/root_independent_pilot_bc_ahead_review_20261010/ahead2-read-snapshot/src/solver_forensics.hpp": {
+      "bytes": 860,
+      "sha256": "02b3a3d33ea64a351b228b96b2e0590b7a79fb4e9b87da78dc28c59465aca3bb"
+    },
+    "/private/tmp/phase5_pilot_bc_checkpoint_v5_20261010/root_independent_pilot_bc_ahead_review_20261010/ahead2-read-snapshot/src/task_local_provider.cpp": {
+      "bytes": 1839,
+      "sha256": "051b424236979f9fe7ea4cb96564f54969025c997bfba2c61d347a23f7fbae4c"
+    },
+    "/private/tmp/phase5_pilot_bc_checkpoint_v5_20261010/root_independent_pilot_bc_ahead_review_20261010/ahead2-read-snapshot/src/task_local_provider.hpp": {
+      "bytes": 640,
+      "sha256": "1819e2f626fb0ff65ad7e7e8de0b0b52f625e6bf435b073d7cca55722d76f093"
+    },
+    "/private/tmp/phase5_pilot_bc_checkpoint_v5_20261010/root_independent_pilot_bc_ahead_review_20261010/ahead4-read-snapshot/PROTOCOL.json": {
+      "bytes": 2339,
+      "sha256": "18663bbd722e137125f3135b798e9850b03be9151a3e4cf082dcefd63db863e3"
+    },
+    "/private/tmp/phase5_pilot_bc_checkpoint_v5_20261010/root_independent_pilot_bc_ahead_review_20261010/ahead4-read-snapshot/VALIDATION_AND_COMMIT_DESIGN.md": {
+      "bytes": 3219,
+      "sha256": "a71508fb808e09ad29b5e5fd16a59082658e0d867fa24fe198f31e4265fa5d8e"
+    },
+    "/private/tmp/phase5_pilot_bc_checkpoint_v5_20261010/root_independent_pilot_bc_ahead_review_20261010/ahead4-read-snapshot/src/active_first_cycle.cpp": {
+      "bytes": 25408,
+      "sha256": "8f2af92562f2eb4ee514435d3c95298bf8005b5eff729e927f242c05b55286ca"
+    },
+    "/private/tmp/phase5_pilot_bc_checkpoint_v5_20261010/root_independent_pilot_bc_ahead_review_20261010/ahead4-read-snapshot/src/affine_assembly.cpp": {
+      "bytes": 28981,
+      "sha256": "d478eda1f0fe97bfc41851515f4baa3e485fd4a57968a62dcb6233ae1157bbd5"
+    },
+    "/private/tmp/phase5_pilot_bc_checkpoint_v5_20261010/root_independent_pilot_bc_ahead_review_20261010/ahead4-read-snapshot/src/affine_assembly.hpp": {
+      "bytes": 6026,
+      "sha256": "6faee2961242052c7655da41e8988dd0844f14c3cfa885672aa7c03eaa1dcb57"
+    },
+    "/private/tmp/phase5_pilot_bc_checkpoint_v5_20261010/root_independent_pilot_bc_ahead_review_20261010/ahead4-read-snapshot/src/box_screen_tests.cpp": {
+      "bytes": 2954,
+      "sha256": "d922876babec2867dd1293bcee259ac12e4b2a6af5a30dd551209e097c0abaf8"
+    },
+    "/private/tmp/phase5_pilot_bc_checkpoint_v5_20261010/root_independent_pilot_bc_ahead_review_20261010/ahead4-read-snapshot/src/candidate_validation.cpp": {
+      "bytes": 9618,
+      "sha256": "4c47590f9254b0a5ece8d6408f2da91e8d2fcb07576af155164544a4f56bf176"
+    },
+    "/private/tmp/phase5_pilot_bc_checkpoint_v5_20261010/root_independent_pilot_bc_ahead_review_20261010/ahead4-read-snapshot/src/candidate_validation.hpp": {
+      "bytes": 1114,
+      "sha256": "54c2135a7ce9a0bf61362c7e22014c2e9df3410b6dbfe1be1893f0ecb90af3cf"
+    },
+    "/private/tmp/phase5_pilot_bc_checkpoint_v5_20261010/root_independent_pilot_bc_ahead_review_20261010/ahead4-read-snapshot/src/integrated_horizon_qp.cpp": {
+      "bytes": 89073,
+      "sha256": "dbf28d84b112befd9f8b1a52737a4d5e7d96c97af9ec1edc13281b83bd0c349a"
+    },
+    "/private/tmp/phase5_pilot_bc_checkpoint_v5_20261010/root_independent_pilot_bc_ahead_review_20261010/ahead4-read-snapshot/src/integrated_horizon_qp.hpp": {
+      "bytes": 11018,
+      "sha256": "c3149b43a9d419a20245e36d161c979b504a1bd930463f9b3a60efe527233c26"
+    },
+    "/private/tmp/phase5_pilot_bc_checkpoint_v5_20261010/root_independent_pilot_bc_ahead_review_20261010/ahead4-read-snapshot/src/invariant_tests.cpp": {
+      "bytes": 4721,
+      "sha256": "f5a859d4cf9d79a5ae1b533b8dd62776f2bba6599dfdf691a2915ef3296a33f9"
+    },
+    "/private/tmp/phase5_pilot_bc_checkpoint_v5_20261010/root_independent_pilot_bc_ahead_review_20261010/ahead4-read-snapshot/src/linear_box_screen.hpp": {
+      "bytes": 3916,
+      "sha256": "b649eff43293a3078b7b46a0166fa0f8a2ac59f3a8496c8c73a98c275fed96d1"
+    },
+    "/private/tmp/phase5_pilot_bc_checkpoint_v5_20261010/root_independent_pilot_bc_ahead_review_20261010/ahead4-read-snapshot/src/lossless_evidence.cpp": {
+      "bytes": 17427,
+      "sha256": "38d3f0ce4bd1086e9eba95bedbe453c54cb07efd8dfcecbfa873ade5e966256c"
+    },
+    "/private/tmp/phase5_pilot_bc_checkpoint_v5_20261010/root_independent_pilot_bc_ahead_review_20261010/ahead4-read-snapshot/src/lossless_evidence.hpp": {
+      "bytes": 1943,
+      "sha256": "1c406d89f0c6156eed89ab191ae395143be8012aa25186b88af7db28f476f769"
+    },
+    "/private/tmp/phase5_pilot_bc_checkpoint_v5_20261010/root_independent_pilot_bc_ahead_review_20261010/ahead4-read-snapshot/src/model_boundary.cpp": {
+      "bytes": 20641,
+      "sha256": "0da697a20727fc1c56d733d184a70ed59468df314e2c9c39c0dc44b76e690008"
+    },
+    "/private/tmp/phase5_pilot_bc_checkpoint_v5_20261010/root_independent_pilot_bc_ahead_review_20261010/ahead4-read-snapshot/src/model_boundary.hpp": {
+      "bytes": 4002,
+      "sha256": "33e21b605d8e042d7c9c4db2cf99736f995be2494714e3c37f8ac2746fb5a5b6"
+    },
+    "/private/tmp/phase5_pilot_bc_checkpoint_v5_20261010/root_independent_pilot_bc_ahead_review_20261010/ahead4-read-snapshot/src/normalization.cpp": {
+      "bytes": 23976,
+      "sha256": "a0cd0c9cdb505f922f1744f24cf115057b6ba9f3a9bc1b3ed0c9bdb82d358ed5"
+    },
+    "/private/tmp/phase5_pilot_bc_checkpoint_v5_20261010/root_independent_pilot_bc_ahead_review_20261010/ahead4-read-snapshot/src/normalization.hpp": {
+      "bytes": 4288,
+      "sha256": "9456be5c205f23d2aa2210eac02286d030204a446af003ee85362b971ccb43d8"
+    },
+    "/private/tmp/phase5_pilot_bc_checkpoint_v5_20261010/root_independent_pilot_bc_ahead_review_20261010/ahead4-read-snapshot/src/observer_tests.cpp": {
+      "bytes": 3785,
+      "sha256": "d1ff998984981a5ded1e92b8d452503e8b489ecfb0d067fb04ff5fd616d02877"
+    },
+    "/private/tmp/phase5_pilot_bc_checkpoint_v5_20261010/root_independent_pilot_bc_ahead_review_20261010/ahead4-read-snapshot/src/runtime_observer.cpp": {
+      "bytes": 30429,
+      "sha256": "b9c95d633dd99014487755e8f2260bef34f0dae2acc89e553115de245059f93b"
+    },
+    "/private/tmp/phase5_pilot_bc_checkpoint_v5_20261010/root_independent_pilot_bc_ahead_review_20261010/ahead4-read-snapshot/src/runtime_observer.hpp": {
+      "bytes": 7267,
+      "sha256": "ffd34f418c8fde91f56c786f1743a87bf14f3ce10a2ebc1e0503dbad70c90c8d"
+    },
+    "/private/tmp/phase5_pilot_bc_checkpoint_v5_20261010/root_independent_pilot_bc_ahead_review_20261010/ahead4-read-snapshot/src/session_primitives.hpp": {
+      "bytes": 2259,
+      "sha256": "0b76bc232ed81dc9b4831617ae1690cfc287def914b8bca5f05ce6e6e25b6080"
+    },
+    "/private/tmp/phase5_pilot_bc_checkpoint_v5_20261010/root_independent_pilot_bc_ahead_review_20261010/ahead4-read-snapshot/src/solver_forensics.cpp": {
+      "bytes": 26514,
+      "sha256": "664c1d480e23c1ddef4f45a57165cba871213740329f8693c897d7c07ee7af27"
+    },
+    "/private/tmp/phase5_pilot_bc_checkpoint_v5_20261010/root_independent_pilot_bc_ahead_review_20261010/ahead4-read-snapshot/src/solver_forensics.hpp": {
+      "bytes": 860,
+      "sha256": "02b3a3d33ea64a351b228b96b2e0590b7a79fb4e9b87da78dc28c59465aca3bb"
+    },
+    "/private/tmp/phase5_pilot_bc_checkpoint_v5_20261010/root_independent_pilot_bc_ahead_review_20261010/ahead4-read-snapshot/src/task_local_provider.cpp": {
+      "bytes": 1839,
+      "sha256": "051b424236979f9fe7ea4cb96564f54969025c997bfba2c61d347a23f7fbae4c"
+    },
+    "/private/tmp/phase5_pilot_bc_checkpoint_v5_20261010/root_independent_pilot_bc_ahead_review_20261010/ahead4-read-snapshot/src/task_local_provider.hpp": {
+      "bytes": 640,
+      "sha256": "1819e2f626fb0ff65ad7e7e8de0b0b52f625e6bf435b073d7cca55722d76f093"
+    },
+    "/private/tmp/phase5_pilot_bc_checkpoint_v5_20261010/root_independent_pilot_bc_ahead_review_20261010/audit_ahead4_source.py": {
+      "bytes": 5089,
+      "sha256": "f22b3a8a304d9d79f0a21e88572d98ebbabef98d985915abdac14b47fc39f9dc"
+    },
+    "/private/tmp/phase5_pilot_bc_checkpoint_v5_20261010/root_independent_pilot_bc_ahead_review_20261010/source_arithmetic_result.json": {
+      "bytes": 1402,
+      "sha256": "54386414f9ef0203c318f7bdfd0752e3aadc35fbe1a44d7a11fc10ba4d88906b"
+    },
+    "/private/tmp/phase5_pilot_bc_checkpoint_v5_20261010/runtime-profile-review-v4/LINK_OBJECT_BINDING.json": {
+      "bytes": 4785,
+      "sha256": "9ab1b27e8224d032c1554e4f0678ea8652d521368f9d7e1d1187ffca39f1e5d0"
+    },
+    "/private/tmp/phase5_pilot_bc_checkpoint_v5_20261010/runtime-profile-review-v4/READY.json": {
+      "bytes": 1649,
+      "sha256": "3d9f9df6283a0d7c2350f044ad6c58bf5913c378388db06d76e6218307c0b4db"
+    },
+    "/private/tmp/phase5_pilot_bc_checkpoint_v5_20261010/runtime-profile-review-v4/active_run_driver.py": {
+      "bytes": 7592,
+      "sha256": "b828f200f9750faca0ff89abc3ef4b4d7da78c9ab61976a49766a6c125a3e3f2"
+    },
+    "/private/tmp/phase5_pilot_bc_checkpoint_v5_20261010/runtime-profile-review-v4/active_run_plan.json": {
+      "bytes": 493998,
+      "sha256": "dc072040715400b9a833332fe8365d13da7977932a6815b1d1f18bab3c92ab9c"
+    },
+    "/private/tmp/phase5_pilot_bc_checkpoint_v5_20261010/runtime-profile-review-v4/dev_compile_plan.json": {
+      "bytes": 11079,
+      "sha256": "ad0dac465d9f7b2cb54186fa234a6c7cda34e70bbe3b25c77d016b7afcbde794"
+    },
+    "/private/tmp/phase5_pilot_bc_checkpoint_v5_20261010/runtime-profile-review-v4/dev_link_plan.json": {
+      "bytes": 9326,
+      "sha256": "e47f6b03ef4714020808a636af6c4d5698fc5b29efd9527155a7d670fc36a97d"
+    },
+    "/private/tmp/phase5_pilot_bc_checkpoint_v5_20261010/runtime-profile-review-v4/interface_review_before_repairs.md": {
+      "bytes": 5925,
+      "sha256": "74163c820170258cbbdd920e7e388a7efe6e960f1f69185582ac8405a1b08688"
+    },
+    "/private/tmp/phase5_pilot_bc_checkpoint_v5_20261010/runtime-profile-review-v4/literal_urdf_readonly.json": {
+      "bytes": 2541,
+      "sha256": "c50599467ac0a476d48fa44116756b23d2fe6da1ad40bfcc3fe19d4d0ba8c54b"
+    },
+    "/private/tmp/phase5_pilot_bc_checkpoint_v5_20261010/runtime-profile-review-v4/profile-version1/PRODUCER.json": {
+      "bytes": 253,
+      "sha256": "f387aadafa9b4675328dd05e07266959093b06267317766152ed8afcd514968c"
+    },
+    "/private/tmp/phase5_pilot_bc_checkpoint_v5_20261010/runtime-profile-review-v4/profile-version1/active_input.json": {
+      "bytes": 326589,
+      "sha256": "39bdd02239172da84dbe7c93d8e327a7100426fbfb18711ccd79e44ace350eda"
+    },
+    "/private/tmp/phase5_pilot_bc_checkpoint_v5_20261010/runtime-profile-review-v5/LINK_OBJECT_BINDING.json": {
+      "bytes": 4791,
+      "sha256": "22dfaafc78f7e9764e8604e2c9c0deab04063f71d9e2b4f106971d23270c5c99"
+    },
+    "/private/tmp/phase5_pilot_bc_checkpoint_v5_20261010/runtime-profile-review-v5/READY.json": {
+      "bytes": 1801,
+      "sha256": "33d334ceee86b4a84441c38061564a1261a2e2147c325b7632b5837c43923df7"
+    },
+    "/private/tmp/phase5_pilot_bc_checkpoint_v5_20261010/runtime-profile-review-v5/active_run_driver.py": {
+      "bytes": 7592,
+      "sha256": "b828f200f9750faca0ff89abc3ef4b4d7da78c9ab61976a49766a6c125a3e3f2"
+    },
+    "/private/tmp/phase5_pilot_bc_checkpoint_v5_20261010/runtime-profile-review-v5/active_run_plan.json": {
+      "bytes": 493998,
+      "sha256": "2aca7494c4b17ce8d11612aba246eb93ad5a7435ddbfbc739a326241d2e71e4a"
+    },
+    "/private/tmp/phase5_pilot_bc_checkpoint_v5_20261010/runtime-profile-review-v5/dev_compile_plan.json": {
+      "bytes": 19389,
+      "sha256": "23a3c58411c2d18ab76d0ef0efc67d7d97ef31c578a15305a1a91eb7fbac4025"
+    },
+    "/private/tmp/phase5_pilot_bc_checkpoint_v5_20261010/runtime-profile-review-v5/dev_link2_plan.json": {
+      "bytes": 9332,
+      "sha256": "f2a687914c5d9f17a7c64b7a51911e30a7cd2c7ba081fdc129ce20af179436e3"
+    },
+    "/private/tmp/phase5_pilot_bc_checkpoint_v5_20261010/runtime-profile-review-v5/interface_review_before_success_order_repair.md": {
+      "bytes": 6546,
+      "sha256": "51641dbc20c7f6233e263e1825598e0109bae7a24ef0fc1cf04a73273a81f1a1"
+    },
+    "/private/tmp/phase5_pilot_bc_checkpoint_v5_20261010/runtime-profile-review-v5/literal_reach_pure_data.json": {
+      "bytes": 4941,
+      "sha256": "6e94e4325f32b84b8e8f330575eff6ceed48920890dcdedeb85b61b54a415382"
+    },
+    "/private/tmp/phase5_pilot_bc_checkpoint_v5_20261010/runtime-profile-review-v5/profile-version1/PRODUCER.json": {
+      "bytes": 253,
+      "sha256": "9eef3752733f5785a8be1b3e7ace530bd0e5ed47bd00e633e9791943c7bc1835"
+    },
+    "/private/tmp/phase5_pilot_bc_checkpoint_v5_20261010/runtime-profile-review-v5/profile-version1/active_input.json": {
+      "bytes": 326589,
+      "sha256": "0ae467e18237636f9af77a0c893ccaaacecc7f8d6d0bde17ea09b597e8250a10"
+    },
+    "/private/tmp/phase5_pilot_bc_ahead_review_v5_20261010/READY.json": {
+      "bytes": 4158,
+      "sha256": "7495e8ecd0bf8c169eda2eb3bd18471e0bc48c556390bd6ae5eac54a86b9dc97"
+    },
+    "/private/tmp/phase5_pilot_bc_ahead_review_v5_20261010/PROTOCOL.json": {
+      "bytes": 2339,
+      "sha256": "3d2b226648c2f6df154315fda3712a1f8f3d07c054a856962888036e9b0abce8"
+    },
+    "/private/tmp/phase5_pilot_bc_ahead_review_v5_20261010/VALIDATION_AND_COMMIT_DESIGN.md": {
+      "bytes": 3219,
+      "sha256": "a71508fb808e09ad29b5e5fd16a59082658e0d867fa24fe198f31e4265fa5d8e"
+    },
+    "/private/tmp/phase5_pilot_bc_ahead_review_v5_20261010/src/active_first_cycle.cpp": {
+      "bytes": 25476,
+      "sha256": "2cee1d6566218aa61f6ab9d3211ef77588ae288f98a49c5697f9e4751bd3bd53"
+    },
+    "/private/tmp/phase5_pilot_bc_ahead_review_v5_20261010/src/affine_assembly.cpp": {
+      "bytes": 28981,
+      "sha256": "d478eda1f0fe97bfc41851515f4baa3e485fd4a57968a62dcb6233ae1157bbd5"
+    },
+    "/private/tmp/phase5_pilot_bc_ahead_review_v5_20261010/src/affine_assembly.hpp": {
+      "bytes": 6026,
+      "sha256": "6faee2961242052c7655da41e8988dd0844f14c3cfa885672aa7c03eaa1dcb57"
+    },
+    "/private/tmp/phase5_pilot_bc_ahead_review_v5_20261010/src/box_screen_tests.cpp": {
+      "bytes": 2954,
+      "sha256": "d922876babec2867dd1293bcee259ac12e4b2a6af5a30dd551209e097c0abaf8"
+    },
+    "/private/tmp/phase5_pilot_bc_ahead_review_v5_20261010/src/candidate_validation.cpp": {
+      "bytes": 9635,
+      "sha256": "0a91f55ebf40219b829097d13f0230237d3eebf08af9e53a42387ebdee6ed9d4"
+    },
+    "/private/tmp/phase5_pilot_bc_ahead_review_v5_20261010/src/candidate_validation.hpp": {
+      "bytes": 1114,
+      "sha256": "54c2135a7ce9a0bf61362c7e22014c2e9df3410b6dbfe1be1893f0ecb90af3cf"
+    },
+    "/private/tmp/phase5_pilot_bc_ahead_review_v5_20261010/src/integrated_horizon_qp.cpp": {
+      "bytes": 89073,
+      "sha256": "dbf28d84b112befd9f8b1a52737a4d5e7d96c97af9ec1edc13281b83bd0c349a"
+    },
+    "/private/tmp/phase5_pilot_bc_ahead_review_v5_20261010/src/integrated_horizon_qp.hpp": {
+      "bytes": 11018,
+      "sha256": "c3149b43a9d419a20245e36d161c979b504a1bd930463f9b3a60efe527233c26"
+    },
+    "/private/tmp/phase5_pilot_bc_ahead_review_v5_20261010/src/invariant_tests.cpp": {
+      "bytes": 4721,
+      "sha256": "f5a859d4cf9d79a5ae1b533b8dd62776f2bba6599dfdf691a2915ef3296a33f9"
+    },
+    "/private/tmp/phase5_pilot_bc_ahead_review_v5_20261010/src/linear_box_screen.hpp": {
+      "bytes": 3916,
+      "sha256": "b649eff43293a3078b7b46a0166fa0f8a2ac59f3a8496c8c73a98c275fed96d1"
+    },
+    "/private/tmp/phase5_pilot_bc_ahead_review_v5_20261010/src/lossless_evidence.cpp": {
+      "bytes": 17427,
+      "sha256": "38d3f0ce4bd1086e9eba95bedbe453c54cb07efd8dfcecbfa873ade5e966256c"
+    },
+    "/private/tmp/phase5_pilot_bc_ahead_review_v5_20261010/src/lossless_evidence.hpp": {
+      "bytes": 1943,
+      "sha256": "1c406d89f0c6156eed89ab191ae395143be8012aa25186b88af7db28f476f769"
+    },
+    "/private/tmp/phase5_pilot_bc_ahead_review_v5_20261010/src/model_boundary.cpp": {
+      "bytes": 20641,
+      "sha256": "0da697a20727fc1c56d733d184a70ed59468df314e2c9c39c0dc44b76e690008"
+    },
+    "/private/tmp/phase5_pilot_bc_ahead_review_v5_20261010/src/model_boundary.hpp": {
+      "bytes": 4002,
+      "sha256": "33e21b605d8e042d7c9c4db2cf99736f995be2494714e3c37f8ac2746fb5a5b6"
+    },
+    "/private/tmp/phase5_pilot_bc_ahead_review_v5_20261010/src/normalization.cpp": {
+      "bytes": 23976,
+      "sha256": "a0cd0c9cdb505f922f1744f24cf115057b6ba9f3a9bc1b3ed0c9bdb82d358ed5"
+    },
+    "/private/tmp/phase5_pilot_bc_ahead_review_v5_20261010/src/normalization.hpp": {
+      "bytes": 4288,
+      "sha256": "9456be5c205f23d2aa2210eac02286d030204a446af003ee85362b971ccb43d8"
+    },
+    "/private/tmp/phase5_pilot_bc_ahead_review_v5_20261010/src/observer_tests.cpp": {
+      "bytes": 3785,
+      "sha256": "d1ff998984981a5ded1e92b8d452503e8b489ecfb0d067fb04ff5fd616d02877"
+    },
+    "/private/tmp/phase5_pilot_bc_ahead_review_v5_20261010/src/runtime_observer.cpp": {
+      "bytes": 30558,
+      "sha256": "c061636b87836b935fefed7050f785b38b8b70c614c82e01b67dbb2130ccf5df"
+    },
+    "/private/tmp/phase5_pilot_bc_ahead_review_v5_20261010/src/runtime_observer.hpp": {
+      "bytes": 7267,
+      "sha256": "ffd34f418c8fde91f56c786f1743a87bf14f3ce10a2ebc1e0503dbad70c90c8d"
+    },
+    "/private/tmp/phase5_pilot_bc_ahead_review_v5_20261010/src/session_primitives.hpp": {
+      "bytes": 2259,
+      "sha256": "0b76bc232ed81dc9b4831617ae1690cfc287def914b8bca5f05ce6e6e25b6080"
+    },
+    "/private/tmp/phase5_pilot_bc_ahead_review_v5_20261010/src/solver_forensics.cpp": {
+      "bytes": 26514,
+      "sha256": "664c1d480e23c1ddef4f45a57165cba871213740329f8693c897d7c07ee7af27"
+    },
+    "/private/tmp/phase5_pilot_bc_ahead_review_v5_20261010/src/solver_forensics.hpp": {
+      "bytes": 860,
+      "sha256": "02b3a3d33ea64a351b228b96b2e0590b7a79fb4e9b87da78dc28c59465aca3bb"
+    },
+    "/private/tmp/phase5_pilot_bc_ahead_review_v5_20261010/src/task_local_provider.cpp": {
+      "bytes": 1839,
+      "sha256": "051b424236979f9fe7ea4cb96564f54969025c997bfba2c61d347a23f7fbae4c"
+    },
+    "/private/tmp/phase5_pilot_bc_ahead_review_v5_20261010/src/task_local_provider.hpp": {
+      "bytes": 640,
+      "sha256": "1819e2f626fb0ff65ad7e7e8de0b0b52f625e6bf435b073d7cca55722d76f093"
+    },
+    "/private/tmp/phase5_task_start_stabilization_checkpoint_v2_20261010/READY.json": {
+      "bytes": 30988,
+      "sha256": "5146ccede2eef1edeac17d1b7c3674675a2c3065633cafa0ca349497b7667294"
+    },
+    "/private/tmp/phase5_task_start_stabilization_checkpoint_v2_20261010/actual-dell/session-task-start-stabilization-v2-20261010-attempt7/run-attempt1/artifacts/inline_qp.bin": {
+      "bytes": 19485833,
+      "sha256": "e604e32fca36d778b2942118ce793c822ac09927713c150a955dc5095d100df9"
+    }
+  },
+  "source_Ahead5_exact": true,
+  "profile_ELF_declared": {
+    "path": "/home/codextransfer/predictive_motion/results/phase5/session-task-start-pilot-bc-v5-20261010-attempt12/link-attempt2/active_first_cycle",
+    "bytes": 19602096,
+    "sha256": "74a0d3c605bab3ebba32c22c05fd897c6beb7f0ab543040ad55b5d9140794e9f"
+  },
+  "local_ELF_bytes_present_verified": false,
+  "recorded_startup_termination_pin_count": 1692,
+  "recorded_pin_lists_before_after_exact": true,
+  "raw_facts": [
+    1,
+    1,
+    1
+  ],
+  "raw_shapes": [
+    400,
+    200,
+    20
+  ],
+  "own_full400_recomputation": true,
+  "first_failure": {
+    "sample": 52,
+    "cell": 9,
+    "cycle": 2,
+    "half": 1,
+    "time": 0.106,
+    "affine_error": 8.350320600854352e-05,
+    "trust": 8.261347946447728e-05,
+    "component": 12
+  },
+  "failed_point_residual30": [
+    -2.9400195611373192e-09,
+    -8.772783194332945e-09,
+    3.8105896216222845e-10,
+    4.21835721908792e-09,
+    -1.998243279177636e-09,
+    1.669351430422239e-07,
+    -1.0713496756409313e-10,
+    -1.461237735168755e-06,
+    -4.395846315418273e-06,
+    2.44570393212744e-07,
+    2.1221725937286065e-06,
+    -1.0299492989103063e-06,
+    8.350320600854352e-05,
+    -5.376436624051663e-08,
+    -6.661338147750939e-16,
+    2.7755575615628914e-17,
+    -4.440892098500626e-16,
+    4.440892098500626e-16,
+    -2.7755575615628914e-17,
+    8.881784197001252e-16,
+    0.0,
+    0.0,
+    5.204170427930421e-18,
+    1.734723475976807e-18,
+    3.469446951953614e-18,
+    -2.168404344971009e-19,
+    0.0,
+    -6.505213034913027e-19,
+    0.0,
+    0.0
+  ],
+  "max30_all400": 0.0033408378069384598,
+  "max30_by_component": [
+    5.764199562108274e-07,
+    0.0007948541223118388,
+    3.147146681703461e-06,
+    0.0002686596737278002,
+    8.32616570065059e-07,
+    0.00014945111075359563,
+    2.186569014739348e-08,
+    8.355229377645821e-06,
+    0.0033408378069384598,
+    2.0466965758909276e-05,
+    0.0019917122407838665,
+    5.992530449889003e-06,
+    0.001203772956952948,
+    2.3077181430955582e-07,
+    1.1102230246251565e-15,
+    5.551115123125783e-17,
+    8.881784197001252e-16,
+    8.881784197001252e-16,
+    6.938893903907228e-17,
+    3.552713678800501e-15,
+    6.661338147750939e-16,
+    6.938893903907228e-18,
+    6.938893903907228e-18,
+    2.0816681711721685e-17,
+    9.107298248878237e-18,
+    9.215718466126788e-19,
+    8.673617379884035e-18,
+    1.4653669987499396e-18,
+    0.0,
+    0.0
+  ],
+  "first53_physical_a_jerk_record_difference": [
+    0.0,
+    0.0
+  ],
+  "complete_geometry_points": 52,
+  "failed_point_geometry": "NOT_EVALUATED: zero aggregate defaults are not PASS",
+  "stored_geometry_sigma_interval_recompute_error_points1to51": 0.0,
+  "first_geometry_initial_sigma_not_saved_not_independently_recomputed": true,
+  "full_original_QP_arrays_exact_previousA7": true,
+  "full_original_SI": {
+    "rows": 13156,
+    "max_independent": 3.903127820947816e-18,
+    "max_recorded": 3.469446951953614e-18,
+    "row_error": 8.673617379884035e-19
+  },
+  "native_SOLVED": {
+    "status": 0,
+    "raw_status": 1,
+    "api_error": 0,
+    "iterations": 1,
+    "setup": 0.030772379,
+    "solve": 0.0019383579999999998
+  },
+  "exact_tail": 0,
+  "coincident_branch_neighborhood": [
+    {
+      "sample": 49,
+      "time": 0.1,
+      "nominal_branches": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "candidate_branches": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "q_residual": [
+        -1.4547474336268351e-11,
+        1.4793874458796097e-11,
+        -8.716782851081462e-11,
+        -2.1359802815368312e-11,
+        4.984557211429319e-11,
+        -5.7266191788585274e-11,
+        3.1730174043786974e-13
+      ],
+      "v_residual": [
+        -6.902983246592689e-10,
+        8.812397513102699e-10,
+        -4.588317035233817e-09,
+        -1.0010121785294923e-09,
+        2.590792376396282e-09,
+        -3.045087419630693e-09,
+        1.6764531657418452e-11
+      ],
+      "nominal_force": [
+        5.890431773298759e-06,
+        -0.009129805715892796,
+        2.856735964988805e-05,
+        7.861464283535961e-05,
+        -2.374476372277868e-06,
+        9.119214507206797e-06,
+        -9.467387364952965e-09
+      ],
+      "candidate_force": [
+        0.1551981948361575,
+        0.9257184838011789,
+        -0.30346437129530807,
+        -0.9378730535241933,
+        0.03424301190439809,
+        -0.3950871596265039,
+        0.06380996061678698
+      ]
+    },
+    {
+      "sample": 50,
+      "time": 0.10200000000000001,
+      "nominal_branches": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "candidate_branches": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "q_residual": [
+        -1.5971668432257502e-11,
+        1.6761703136580763e-11,
+        -9.726175420610161e-11,
+        -2.369882068364859e-11,
+        5.556803628348206e-11,
+        -6.406164487771093e-11,
+        3.539391002504999e-13
+      ],
+      "v_residual": [
+        -7.121582505024808e-10,
+        9.839242813515156e-10,
+        -5.046973251864387e-09,
+        -1.1693104453452952e-09,
+        2.861233219428848e-09,
+        -3.3968732137019952e-09,
+        1.831620066120726e-11
+      ],
+      "nominal_force": [
+        5.858507701229241e-06,
+        -0.009081091186797067,
+        2.840661109870306e-05,
+        7.784854250138067e-05,
+        -2.3623324236874555e-06,
+        9.066151022714682e-06,
+        -9.44262623642976e-09
+      ],
+      "candidate_force": [
+        0.176430118709966,
+        1.0100707166788792,
+        -0.3376613316025582,
+        -1.0285042171150314,
+        0.03795744831520651,
+        -0.4390470731616196,
+        0.07230064832881453
+      ]
+    },
+    {
+      "sample": 51,
+      "time": 0.10400000000000001,
+      "nominal_branches": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "candidate_branches": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "q_residual": [
+        -1.7544188324336574e-11,
+        1.890942957771813e-11,
+        -1.0808198780409839e-10,
+        -2.5987656471215814e-11,
+        6.165531973856275e-11,
+        -7.126921275357745e-11,
+        3.934630399271555e-13
+      ],
+      "v_residual": [
+        -7.860820181089002e-10,
+        1.0738633315909851e-09,
+        -5.410121978991107e-09,
+        -1.144666823566648e-09,
+        3.0436446016789912e-09,
+        -3.6039360757841865e-09,
+        1.976820898814957e-11
+      ],
+      "nominal_force": [
+        5.826762965818799e-06,
+        -0.00903263657359788,
+        2.8246825537175366e-05,
+        7.70900967095423e-05,
+        -2.3502482882186207e-06,
+        9.013426218262195e-06,
+        -9.417482544851706e-09
+      ],
+      "candidate_force": [
+        0.16648370976387528,
+        0.9994175573883434,
+        -0.32425563716245387,
+        -0.9993365096047194,
+        0.035983653453171296,
+        -0.418013569445817,
+        0.06726246048615503
+      ]
+    },
+    {
+      "sample": 52,
+      "time": 0.106,
+      "nominal_branches": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "candidate_branches": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        -1,
+        0
+      ],
+      "q_residual": [
+        -2.9400195611373192e-09,
+        -8.772783194332945e-09,
+        3.8105896216222845e-10,
+        4.21835721908792e-09,
+        -1.998243279177636e-09,
+        1.669351430422239e-07,
+        -1.0713496756409313e-10
+      ],
+      "v_residual": [
+        -1.461237735168755e-06,
+        -4.395846315418273e-06,
+        2.44570393212744e-07,
+        2.1221725937286065e-06,
+        -1.0299492989103063e-06,
+        8.350320600854352e-05,
+        -5.376436624051663e-08
+      ],
+      "nominal_force": [
+        5.795197988351987e-06,
+        -0.0089844404897272,
+        2.8087996514092355e-05,
+        7.633922623615531e-05,
+        -2.33822369044597e-06,
+        8.961034183403691e-06,
+        -9.392407919245492e-09
+      ],
+      "candidate_force": [
+        0.18733180975032507,
+        1.080590278028156,
+        -0.3590703647825647,
+        -1.0879001308300393,
+        0.039355040949491625,
+        -0.44,
+        0.07589193652990334
+      ]
+    },
+    {
+      "sample": 53,
+      "time": 0.108,
+      "nominal_branches": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "candidate_branches": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "q_residual": [
+        -5.083171661368624e-09,
+        -1.5335075542743937e-08,
+        8.440204091186843e-10,
+        7.0629084802931175e-09,
+        -3.5852587842999384e-09,
+        3.1313483006556453e-07,
+        -1.9038548515482034e-10
+      ],
+      "v_residual": [
+        -1.0715761325754075e-06,
+        -3.281146176158361e-06,
+        2.3148069400603499e-07,
+        1.4222755135083302e-06,
+        -7.93507754845023e-07,
+        7.309984310818838e-05,
+        -4.162517564811584e-08
+      ],
+      "nominal_force": [
+        5.763811272143064e-06,
+        -0.00893650155598244,
+        2.7930116856437116e-05,
+        7.559585425837972e-05,
+        -2.326258380877533e-06,
+        8.908975749379471e-06,
+        -9.366999447088339e-09
+      ],
+      "candidate_force": [
+        0.17762490848614026,
+        1.0740021919610194,
+        -0.34514885902950687,
+        -1.0608038062674368,
+        0.03751964796440462,
+        -0.426407415507402,
+        0.07064473657962111
+      ]
+    },
+    {
+      "sample": 54,
+      "time": 0.11,
+      "nominal_branches": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "candidate_branches": [
+        0,
+        1,
+        0,
+        -1,
+        0,
+        -1,
+        0
+      ],
+      "q_residual": [
+        -1.0607867695355822e-08,
+        -7.14681574059961e-08,
+        3.492519828895979e-09,
+        4.0915693499954386e-08,
+        -7.511147287475595e-09,
+        6.814969717439112e-07,
+        -3.8739544905297407e-10
+      ],
+      "v_residual": [
+        -2.7623480396353722e-06,
+        -2.8066540932624958e-05,
+        1.324249681820171e-06,
+        1.692639244120324e-05,
+        -1.9629442498567367e-06,
+        0.00018418107145381233,
+        -9.850503880127776e-08
+      ],
+      "nominal_force": [
+        5.732601069577698e-06,
+        -0.008888818400497947,
+        2.7773180766176777e-05,
+        7.485990505285477e-05,
+        -2.3143520890358655e-06,
+        8.857246579695529e-06,
+        -9.34129660680408e-09
+      ],
+      "candidate_force": [
+        0.2006608708163469,
+        1.137,
+        -0.3781928904080593,
+        -1.137,
+        0.040578505380148414,
+        -0.44,
+        0.07943466551809782
+      ]
+    }
+  ],
+  "branch_causality_claim": false,
+  "completion": {
+    "stage": "GENUINE_VALUE_ONLY_B_SAME_CURRENT_BOUNDARY",
+    "error": "original value-affine1e-6/jointtrust.002",
+    "wall": 14.333857838,
+    "boundary_unchanged": 1,
+    "termination_session": 1,
+    "termination_sim": 1,
+    "physical_steps": 1000,
+    "C_commits": 0
+  },
+  "no_new_Model_native_solver_calls": true,
+  "phase5": "NOT_ACCEPTED"
+}

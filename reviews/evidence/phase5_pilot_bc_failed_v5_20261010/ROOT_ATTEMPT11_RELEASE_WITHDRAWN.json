@@ -1,0 +1,8 @@
+{
+  "schema": "ROOT_WITHDRAW_UNDISPATCHED_ATTEMPT11_RELEASE",
+  "prior_release_sha256": "d9a3fdbbb54772bb78a1b643235f9d5168a8f0af73398861ab242e16ea335b01",
+  "status": "WITHDRAWN_BEFORE_DISPATCH_NO_NATIVE_RUN",
+  "cause": "New Ahead5 success-flag/exception-path source repair supersedes Ahead4. Original sealed release retained; no message dispatched it.",
+  "attempt11_must_not_run": true,
+  "next": "Review/freeze final Ahead5 and actual attempt12 profile; no oldattempt8/9/10/11 runtime."
+}

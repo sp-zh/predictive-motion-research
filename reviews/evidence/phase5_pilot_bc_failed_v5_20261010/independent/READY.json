@@ -1,0 +1,121 @@
+{
+  "schema": "ROOT_ACTUAL_B_REFUSAL_REVIEW_READY_V1",
+  "files": {
+    "PACKET_READY_READ.json": {
+      "bytes": 112011,
+      "sha256": "5320992b8ec6334d07bc37a58b5750053090f62d960c3c757b78beb3b391bdd9"
+    },
+    "RESULT.json": {
+      "bytes": 158432,
+      "sha256": "cd50b1da15dcf0d7b91980224fa653b813fa55bcc38fd12b678e56371bb5b47a"
+    },
+    "REVIEW.md": {
+      "bytes": 5397,
+      "sha256": "37759200ef25f79d1ea3ea8cc3a9cc1c6aa0ccc23625b72c82f7146c0cb32abd"
+    },
+    "SOURCE_SNAPSHOT.py": {
+      "bytes": 20574,
+      "sha256": "d09191da66da780df0f918e19929b4003fc4db69578994df88eb6195c379851f"
+    },
+    "active_first_cycle.cpp": {
+      "bytes": 25476,
+      "sha256": "2cee1d6566218aa61f6ab9d3211ef77588ae288f98a49c5697f9e4751bd3bd53"
+    },
+    "audit_failed_bc.py": {
+      "bytes": 20574,
+      "sha256": "d09191da66da780df0f918e19929b4003fc4db69578994df88eb6195c379851f"
+    },
+    "candidate_validation.cpp": {
+      "bytes": 9635,
+      "sha256": "0a91f55ebf40219b829097d13f0230237d3eebf08af9e53a42387ebdee6ed9d4"
+    },
+    "history-before-manifest-dispatch-completion/RESULT.json": {
+      "bytes": 158261,
+      "sha256": "f2c6dd66ccaecc943d2c02a13539b6c816487ae4cc0fc0673d129386d5c5d1e2"
+    },
+    "history-before-manifest-dispatch-completion/audit_failed_bc.py": {
+      "bytes": 18282,
+      "sha256": "5041000f832bf027966a913ca4468a1a385af497fa2f5a7899938e1161a46527"
+    },
+    "history-before-manifest-dispatch-completion/stderr.txt": {
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    "history-before-manifest-dispatch-completion/stdout.json": {
+      "bytes": 3930,
+      "sha256": "2dea09cb3a46995f7364122682c40cba488210c9ae9017dfe461b86c757045ab"
+    },
+    "history-before-strict-and-endstate-completion/RESULT.json": {
+      "bytes": 158103,
+      "sha256": "c8435ed3df9fe7d34fbfca2ae0ffa4ef4be45506b81d541957a7b4194b73ecdf"
+    },
+    "history-before-strict-and-endstate-completion/audit_failed_bc.py": {
+      "bytes": 16491,
+      "sha256": "6ae16f42ae605f4e758c1e7e78b45461e9a60853fe11647fceecb8e7ecb62629"
+    },
+    "history-before-strict-and-endstate-completion/stderr.txt": {
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    "history-before-strict-and-endstate-completion/stdout.json": {
+      "bytes": 3772,
+      "sha256": "f93373ac2c1df094406ab836ecce43d263a40e071eb8ba828d9bc773abca3928"
+    },
+    "history-before-warm-history-link/RESULT.json": {
+      "bytes": 158365,
+      "sha256": "2f81e5db7f8a6c485623fc5a73286a980e37fe62695ebadec8d1b8832f44b134"
+    },
+    "history-before-warm-history-link/audit_failed_bc.py": {
+      "bytes": 19797,
+      "sha256": "621889fd708d2861ffea32cd1c0a95043ab48686b4732a171b982a3a959d553e"
+    },
+    "history-before-warm-history-link/stderr.txt": {
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    "history-before-warm-history-link/stdout.json": {
+      "bytes": 4034,
+      "sha256": "4dd31cc1d923aa9decb5ae64f6e9338fbe5962e9fbdaaa52abd544cd3f14798b"
+    },
+    "history-first-profile-check/audit_failed_bc.py": {
+      "bytes": 16416,
+      "sha256": "9933a0edfd297976780c011455a4fd7030ad877efb4f0621b8fc1ea542e52454"
+    },
+    "history-first-profile-check/stderr.txt": {
+      "bytes": 393,
+      "sha256": "dea6ed02347596c16c04d1b04e4be8874a93bf8bd3116f92c5b54d17bbf64568"
+    },
+    "history-first-profile-check/stdout.json": {
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    "independent_all400_value_affine_components.csv": {
+      "bytes": 861647,
+      "sha256": "bf616a1bbd73e7c487902a924dfce43e92ccda3a803afa41eddbfd3bbc707f54"
+    },
+    "lossless_evidence.cpp": {
+      "bytes": 17427,
+      "sha256": "38d3f0ce4bd1086e9eba95bedbe453c54cb07efd8dfcecbfa873ade5e966256c"
+    },
+    "model_boundary.cpp": {
+      "bytes": 20641,
+      "sha256": "0da697a20727fc1c56d733d184a70ed59468df314e2c9c39c0dc44b76e690008"
+    },
+    "runtime_observer.cpp": {
+      "bytes": 30558,
+      "sha256": "c061636b87836b935fefed7050f785b38b8b70c614c82e01b67dbb2130ccf5df"
+    },
+    "stderr.txt": {
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    "stdout.json": {
+      "bytes": 4101,
+      "sha256": "47b6d70dbd31c7dfe79340d1999dfb1bd60f65d4802a03586b4c43a58392f0d6"
+    }
+  },
+  "source_sha256": "d09191da66da780df0f918e19929b4003fc4db69578994df88eb6195c379851f",
+  "verdict": "CONFIRMED_ACTUAL_B_REFUSAL_NO_C",
+  "scope": "pure-file actual conditional-model versus original-affine arithmetic; no new native/Model/solver calls",
+  "phase5_accepted": false
+}

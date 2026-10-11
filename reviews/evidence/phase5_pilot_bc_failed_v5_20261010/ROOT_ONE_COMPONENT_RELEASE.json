@@ -1,0 +1,65 @@
+{
+  "schema": "ROOT_ONE_OFFLINE_BETA_ZERO_BC_COMPONENT_RELEASE_V5",
+  "status": "RELEASED_EXACT_ONE_FRESH_ATTEMPT12_ONLY",
+  "human_scope_source": "Verified ongoing A\u2013E functional development authorization; historical gates and failures preserved. Public/private backup conflict holds publication only.",
+  "source_ready_sha256": "7495e8ecd0bf8c169eda2eb3bd18471e0bc48c556390bd6ae5eac54a86b9dc97",
+  "independent_math_ready_sha256": "cd1eac016f495b03d62450dd657dfafd1a1b13d5831aa0b178568b929941a64a",
+  "runtime_profile_ready_sha256": "33d334ceee86b4a84441c38061564a1261a2e2147c325b7632b5837c43923df7",
+  "runtime_plan_sha256": "2aca7494c4b17ce8d11612aba246eb93ad5a7435ddbfbc739a326241d2e71e4a",
+  "runtime_driver_sha256": "b828f200f9750faca0ff89abc3ef4b4d7da78c9ab61976a49766a6c125a3e3f2",
+  "passive_input_verification_sha256": "34cb8892cbcd0f11591ee5225b98a04393d605e21ce7e6d3224dfebe92ebd152",
+  "runtime_input_sha256": "0ae467e18237636f9af77a0c893ccaaacecc7f8d6d0bde17ea09b597e8250a10",
+  "ELF_sha256": "74a0d3c605bab3ebba32c22c05fd897c6beb7f0ab543040ad55b5d9140794e9f",
+  "driver_exact_argv": [
+    "/usr/bin/python3.12",
+    "-I",
+    "-S",
+    "-B",
+    "/home/codextransfer/predictive_motion/results/phase5/session-task-start-pilot-bc-v5-20261010-attempt12/active_run_driver.py",
+    "/home/codextransfer/predictive_motion/results/phase5/session-task-start-pilot-bc-v5-20261010-attempt12/active_run_plan.json"
+  ],
+  "sole_child_argv": [
+    "/home/codextransfer/predictive_motion/results/phase5/session-task-start-pilot-bc-v5-20261010-attempt12/link-attempt2/active_first_cycle",
+    "/home/codextransfer/predictive_motion/results/phase5/session-task-start-pilot-bc-v5-20261010-attempt12/profile-version1/active_input.json",
+    "0ae467e18237636f9af77a0c893ccaaacecc7f8d6d0bde17ea09b597e8250a10",
+    "74a0d3c605bab3ebba32c22c05fd897c6beb7f0ab543040ad55b5d9140794e9f",
+    "/home/codextransfer/predictive_motion/results/phase5/session-task-start-pilot-bc-v5-20261010-attempt12/run-attempt1/artifacts"
+  ],
+  "scope": {
+    "seed": 91011,
+    "bootstrap_steps": 1000,
+    "primary_genuine_nominal_entries": 1,
+    "QP_component": "126cmd subspace/all20beta0, full original160controlproblem/13156rows/stricthistory unchanged",
+    "candidate_value_Model_entries_max": 1,
+    "value_substeps": 400,
+    "C_attempts_max": 1,
+    "actual_C_substeps_max": 2,
+    "native_dt_seconds": 0.002,
+    "progress": 0,
+    "one_private_validation_latch": true,
+    "accepted_history_publish": "only after both actual steps and all checks complete",
+    "time_scope": "offline frozen current native simulation boundary; no4ms latency claim"
+  },
+  "limits": {
+    "CPU_seconds": 120,
+    "AS_bytes": 2147483648,
+    "child_wall_seconds": 150,
+    "stdout_stderr_each_bytes": 1048576,
+    "binary_evidence_bytes": 134217728,
+    "each_journal_bytes": 12582912
+  },
+  "conditions": [
+    "Execute exact one fresh attempt12 only; no retry or oldattempt8/9/10/11 invocation.",
+    "All original source/profile/native/Model/SI/strict-history/geometry/physicalderivative/currentowner gates must pass; if B refuses, no C.",
+    "Preserve full raw candidate value and assessment/actual durable prefixes, complete+partial failures and honest native counters.",
+    "Root-to-link/attached extent is privately recomputed and must pass <=2m before validation; pure precheck is not actual runtime result.",
+    "Interval bounds describe declared discrete endpoint interpolation only, not continuous MuJoCo/hardware physics.",
+    "A7 exact-tail false remains; no terminal physical-rest/zeroextension certificate, repeated D/E, fulltask/main/scorer/hardware run or Phase5 acceptance is released.",
+    "Startup+termination source/dependency checks and post-run before/after identities are required."
+  ],
+  "phase5": "NOT_ACCEPTED",
+  "phase6": "NOT_STARTED",
+  "independent_ahead5_delta_ready_sha256": "455c388c7061689bb3b7d2c219ab004bd47af7f5d8d26309f7b178781f381d33",
+  "prior_undispatched_attempt11_release_withdrawal": "../pilot-bc-runtime-profile-v4-20261010/ROOT_ATTEMPT11_RELEASE_WITHDRAWN.json",
+  "AS_error_scope": "Ahead5 clears success flags before allocating failure messages; no universal no-throw OOM or fault-injection proof."
+}
