@@ -1,0 +1,18 @@
+{
+  "status": "RESUMED_BY_USER",
+  "instruction": "继续",
+  "effective_date": "2026-10-08",
+  "recorded_time_utc": "2026-10-08T17:41:06.915941+00:00",
+  "recorded_time_local": "2026-10-08T13:41:06.915941-04:00",
+  "timezone": "America/Toronto",
+  "accepted_through": "Phase4",
+  "phase5": "NOT_ACCEPTED",
+  "phase6": "NOT_STARTED",
+  "previous_pause_record": "reviews/evidence/project_pause_before_resumption_20261008T174106Z.json",
+  "checkpoint_commit": "365bcf6e56667bf97a948dd942afd66d9c123748",
+  "preserve_existing_files_and_failures": true,
+  "continued_work_authorized": true,
+  "next_work": "Review minimal versioned producer-checker negative-control repairs, preserve old checker/freeze, review and freeze exact new verification sources before scoped algebra-only numerical dispatch",
+  "run_policy": "No rejected protocol v1 or automatic plant/main/phase acceptance; later dispatch and gates remain scoped",
+  "latest_checkpoint_record": "reviews/evidence/public_affine_horizon_build_freeze_checkpoint_20261008.json"
+}

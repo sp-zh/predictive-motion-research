@@ -1,0 +1,1221 @@
+{
+  "schema": "NONZERO_PROGRESS_ACTUAL36_OFFLINE37_CHECKPOINT_V1",
+  "files": {
+    "CAPTURE_VERIFICATION.json": {
+      "bytes": 1250,
+      "sha256": "6f70e779a0f7c545e7b0875cec2c25d0a0d08892ed630ac736cdd9fa495107fb"
+    },
+    "OFFLINE_CLOSEOUT_VERIFICATION.json": {
+      "bytes": 853,
+      "sha256": "d58d1780554993e159e89b01e5e0425eb9211d701c2c0ac3237f4eb670d66e2a"
+    },
+    "SCOPE.md": {
+      "bytes": 1990,
+      "sha256": "876baae0d942e1a219d74061884f07dae7e283b47634e53f02f4a0c5955c5e57"
+    },
+    "WALL_QUANTILES.json": {
+      "bytes": 343,
+      "sha256": "11e55f1967eb3136be842570ba1453d43542670a61a9822307b7da0b752854dd"
+    },
+    "actual-dell/NATIVE_ELF_INDEX.json": {
+      "bytes": 322,
+      "sha256": "a38f11f8a4de2f6c7a5bcf989b7690b4f918778ae9955e583b49bbbc04e3b61a"
+    },
+    "actual-dell/offline-single36-v1-20261011-attempt37/HIBERNATEIDLE.powercfg.raw": {
+      "bytes": 489,
+      "sha256": "b858d6843b2fc371c3c4d4da567dcf554115ec10746a4b4d1385db3521dadde2"
+    },
+    "actual-dell/offline-single36-v1-20261011-attempt37/LAUNCH.json": {
+      "bytes": 6007,
+      "sha256": "309a5bdafdcdb72821c25d104517d93a32545a4a93947791300fff9746013b84"
+    },
+    "actual-dell/offline-single36-v1-20261011-attempt37/LIDACTION.powercfg.raw": {
+      "bytes": 613,
+      "sha256": "7fae75474bcc55023ba3da62c0e17fea8524f3773daae2fd3e728f94dcc7f649"
+    },
+    "actual-dell/offline-single36-v1-20261011-attempt37/ROOT_RELEASE36.json": {
+      "bytes": 3752,
+      "sha256": "bef6891d705e600dd619a6599789a521bdfb56095f8796e3e2012a072eef8f2f"
+    },
+    "actual-dell/offline-single36-v1-20261011-attempt37/SSH_DETACHED_VERIFICATION.json": {
+      "bytes": 864,
+      "sha256": "f163bb76569755dcef42757e651a7f519b63d17c92e693b2d66801bf9a58f759"
+    },
+    "actual-dell/offline-single36-v1-20261011-attempt37/STANDBYIDLE.powercfg.raw": {
+      "bytes": 487,
+      "sha256": "e16db39960da24803114d2795a24ea883b9aa2b19ed4af5483d1926d48a65cba"
+    },
+    "actual-dell/offline-single36-v1-20261011-attempt37/status/EXIT.json": {
+      "bytes": 277,
+      "sha256": "ea3cc5cfac0d9675214258edc38fb0cc3a4d47f0fd9ea609803d07b1d24e68f3"
+    },
+    "actual-dell/offline-single36-v1-20261011-attempt37/status/READY.json": {
+      "bytes": 12302,
+      "sha256": "1900874bf859bf60e96fca4482affd9a6ed2d17fd445289c976a488cdc811df0"
+    },
+    "actual-dell/offline-single36-v1-20261011-attempt37/status/STARTED.json": {
+      "bytes": 668,
+      "sha256": "37286868ce7e6ac468a82ff18ff5a03194664b90eb6ad6b10d609290b372465f"
+    },
+    "actual-dell/offline-single36-v1-20261011-attempt37/status/driver.stderr": {
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    "actual-dell/offline-single36-v1-20261011-attempt37/status/driver.stdout": {
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    "actual-dell/offline-single36-v1-20261011-attempt37/supervisor.py": {
+      "bytes": 5852,
+      "sha256": "0cddec1c7bdcf17dde0288593c79da10f28adf141ce856be4c6d0bc67e9b98eb"
+    },
+    "actual-dell/offline-single36-v1-20261011-attempt37/supervisor.stderr": {
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    "actual-dell/offline-single36-v1-20261011-attempt37/supervisor.stdout": {
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    "actual-dell/session-nonzero-progress-planning-tail-three-cycle-v1-20261011-attempt36/LINK_OBJECT_BINDING.json": {
+      "bytes": 10570,
+      "sha256": "33df8ad36f5691a8423272b00e8b63b6657d9627cd61f901fafe235a682dc21e"
+    },
+    "actual-dell/session-nonzero-progress-planning-tail-three-cycle-v1-20261011-attempt36/active_run_driver.py": {
+      "bytes": 7621,
+      "sha256": "5255ebe8ddc755885f5c613f78367f4b739e6768edefa765ca49853598294225"
+    },
+    "actual-dell/session-nonzero-progress-planning-tail-three-cycle-v1-20261011-attempt36/active_run_plan.json": {
+      "bytes": 497908,
+      "sha256": "ae2ec0e7f0b89de2bc2f50f56e385c41598a25f3e2ba8e9731d57a99022ecea8"
+    },
+    "actual-dell/session-nonzero-progress-planning-tail-three-cycle-v1-20261011-attempt36/build-attempt1/AFTER_INPUT_IDENTITIES.json": {
+      "bytes": 17307,
+      "sha256": "cb24c90c50cadd196f80e8529e377f70dddc38a2dcfbe0e3ee7821ebf2478de2"
+    },
+    "actual-dell/session-nonzero-progress-planning-tail-three-cycle-v1-20261011-attempt36/build-attempt1/AFTER_READONLY_ROSTERS.json": {
+      "bytes": 3,
+      "sha256": "37517e5f3dc66819f61f5a7bb8ace1921282415f10551d2defa5c3eb0985b570"
+    },
+    "actual-dell/session-nonzero-progress-planning-tail-three-cycle-v1-20261011-attempt36/build-attempt1/BATCH_PREFIX.json": {
+      "bytes": 86955,
+      "sha256": "cfd257d1050aaaa9787c801875754ad63d9d11fa07d6c5b3b85ecb9082b2c069"
+    },
+    "actual-dell/session-nonzero-progress-planning-tail-three-cycle-v1-20261011-attempt36/build-attempt1/BEFORE_INPUT_IDENTITIES.json": {
+      "bytes": 17307,
+      "sha256": "cb24c90c50cadd196f80e8529e377f70dddc38a2dcfbe0e3ee7821ebf2478de2"
+    },
+    "actual-dell/session-nonzero-progress-planning-tail-three-cycle-v1-20261011-attempt36/build-attempt1/BEFORE_READONLY_ROSTERS.json": {
+      "bytes": 3,
+      "sha256": "37517e5f3dc66819f61f5a7bb8ace1921282415f10551d2defa5c3eb0985b570"
+    },
+    "actual-dell/session-nonzero-progress-planning-tail-three-cycle-v1-20261011-attempt36/build-attempt1/BUILD_RESULT.json": {
+      "bytes": 87009,
+      "sha256": "e271e735770538533a6b45472bde06d39489605da4ee3f2d406191dc9bd43daf"
+    },
+    "actual-dell/session-nonzero-progress-planning-tail-three-cycle-v1-20261011-attempt36/build-attempt1/CONTROL_EVENT_PREFIX.json": {
+      "bytes": 4481,
+      "sha256": "61cf20f4eb60cf72a623488045de919ce70861a58fae2edddc90acae181a442b"
+    },
+    "actual-dell/session-nonzero-progress-planning-tail-three-cycle-v1-20261011-attempt36/build-attempt1/compile-1.result.json": {
+      "bytes": 5264,
+      "sha256": "25b0135d445e963d6810097dfd23b809d85830d7bb4487373683998e85d94048"
+    },
+    "actual-dell/session-nonzero-progress-planning-tail-three-cycle-v1-20261011-attempt36/build-attempt1/compile-1.stderr": {
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    "actual-dell/session-nonzero-progress-planning-tail-three-cycle-v1-20261011-attempt36/build-attempt1/compile-1.stdout": {
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    "actual-dell/session-nonzero-progress-planning-tail-three-cycle-v1-20261011-attempt36/build-attempt1/compile-10.result.json": {
+      "bytes": 5273,
+      "sha256": "67095509096bd6109398448a0815c086b9158e61d4a7183ec230849bc5c165c9"
+    },
+    "actual-dell/session-nonzero-progress-planning-tail-three-cycle-v1-20261011-attempt36/build-attempt1/compile-10.stderr": {
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    "actual-dell/session-nonzero-progress-planning-tail-three-cycle-v1-20261011-attempt36/build-attempt1/compile-10.stdout": {
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    "actual-dell/session-nonzero-progress-planning-tail-three-cycle-v1-20261011-attempt36/build-attempt1/compile-11.result.json": {
+      "bytes": 5274,
+      "sha256": "04003a01f6b9b7a74ec9799a7719d4865ed31bce23eb42ea06e0c732e87d2467"
+    },
+    "actual-dell/session-nonzero-progress-planning-tail-three-cycle-v1-20261011-attempt36/build-attempt1/compile-11.stderr": {
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    "actual-dell/session-nonzero-progress-planning-tail-three-cycle-v1-20261011-attempt36/build-attempt1/compile-11.stdout": {
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    "actual-dell/session-nonzero-progress-planning-tail-three-cycle-v1-20261011-attempt36/build-attempt1/compile-12.result.json": {
+      "bytes": 5276,
+      "sha256": "928b18b49b8ab210feb2fb9f04fb8b513b1f33b5849c78c36eed5616d558d6a9"
+    },
+    "actual-dell/session-nonzero-progress-planning-tail-three-cycle-v1-20261011-attempt36/build-attempt1/compile-12.stderr": {
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    "actual-dell/session-nonzero-progress-planning-tail-three-cycle-v1-20261011-attempt36/build-attempt1/compile-12.stdout": {
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    "actual-dell/session-nonzero-progress-planning-tail-three-cycle-v1-20261011-attempt36/build-attempt1/compile-13.result.json": {
+      "bytes": 5268,
+      "sha256": "eedf50c0b317f3cc8ae276a28717d574672302842327ae155bb0ee6d86ea540d"
+    },
+    "actual-dell/session-nonzero-progress-planning-tail-three-cycle-v1-20261011-attempt36/build-attempt1/compile-13.stderr": {
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    "actual-dell/session-nonzero-progress-planning-tail-three-cycle-v1-20261011-attempt36/build-attempt1/compile-13.stdout": {
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    "actual-dell/session-nonzero-progress-planning-tail-three-cycle-v1-20261011-attempt36/build-attempt1/compile-14.result.json": {
+      "bytes": 5274,
+      "sha256": "a6c720e884f3f0f04f448d58b0ab0b82afb67ce6e7a1e9efc1aac50ddf646836"
+    },
+    "actual-dell/session-nonzero-progress-planning-tail-three-cycle-v1-20261011-attempt36/build-attempt1/compile-14.stderr": {
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    "actual-dell/session-nonzero-progress-planning-tail-three-cycle-v1-20261011-attempt36/build-attempt1/compile-14.stdout": {
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    "actual-dell/session-nonzero-progress-planning-tail-three-cycle-v1-20261011-attempt36/build-attempt1/compile-15.result.json": {
+      "bytes": 5280,
+      "sha256": "f0f20c0dfba1ca120076a007cbfc065751de7bf03642f379c2312d688e168ebd"
+    },
+    "actual-dell/session-nonzero-progress-planning-tail-three-cycle-v1-20261011-attempt36/build-attempt1/compile-15.stderr": {
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    "actual-dell/session-nonzero-progress-planning-tail-three-cycle-v1-20261011-attempt36/build-attempt1/compile-15.stdout": {
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    "actual-dell/session-nonzero-progress-planning-tail-three-cycle-v1-20261011-attempt36/build-attempt1/compile-2.result.json": {
+      "bytes": 5267,
+      "sha256": "80c14791ef5c24d2a39b47fdf651eee336ca27d559844951e5418bfa511f2eca"
+    },
+    "actual-dell/session-nonzero-progress-planning-tail-three-cycle-v1-20261011-attempt36/build-attempt1/compile-2.stderr": {
+      "bytes": 4540,
+      "sha256": "054ca0c3caee1f4c1e96fc90d7f14aaa7870e08f718e112bf375024d210a588e"
+    },
+    "actual-dell/session-nonzero-progress-planning-tail-three-cycle-v1-20261011-attempt36/build-attempt1/compile-2.stdout": {
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    "actual-dell/session-nonzero-progress-planning-tail-three-cycle-v1-20261011-attempt36/build-attempt1/compile-3.result.json": {
+      "bytes": 5270,
+      "sha256": "6a8d4b61c9675bcce0e035dcb0934701977424b9f10d9228cbed12e3611e69fd"
+    },
+    "actual-dell/session-nonzero-progress-planning-tail-three-cycle-v1-20261011-attempt36/build-attempt1/compile-3.stderr": {
+      "bytes": 12348,
+      "sha256": "d59223e7026ebf025c7f1ecd3132707e4dded3166c6a1042f42fb849247e4134"
+    },
+    "actual-dell/session-nonzero-progress-planning-tail-three-cycle-v1-20261011-attempt36/build-attempt1/compile-3.stdout": {
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    "actual-dell/session-nonzero-progress-planning-tail-three-cycle-v1-20261011-attempt36/build-attempt1/compile-4.result.json": {
+      "bytes": 5274,
+      "sha256": "545000faaebce54dc3df88f4b1313493cc463588b46bb857a76985ea9341f4b6"
+    },
+    "actual-dell/session-nonzero-progress-planning-tail-three-cycle-v1-20261011-attempt36/build-attempt1/compile-4.stderr": {
+      "bytes": 1200,
+      "sha256": "1b706b00d93231d4bae1e8e270cafae9fdfa732df35716d039ed72c4424ec609"
+    },
+    "actual-dell/session-nonzero-progress-planning-tail-three-cycle-v1-20261011-attempt36/build-attempt1/compile-4.stdout": {
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    "actual-dell/session-nonzero-progress-planning-tail-three-cycle-v1-20261011-attempt36/build-attempt1/compile-5.result.json": {
+      "bytes": 5269,
+      "sha256": "2c7c00d5f7500ac89ebf2d2be07c87583b81d81baa4e70d2fcf279ee3f3daa09"
+    },
+    "actual-dell/session-nonzero-progress-planning-tail-three-cycle-v1-20261011-attempt36/build-attempt1/compile-5.stderr": {
+      "bytes": 6459,
+      "sha256": "dcb11ab872079edf0f9288b0552f2f32866b3601ac2265bb26448775d6dc5e97"
+    },
+    "actual-dell/session-nonzero-progress-planning-tail-three-cycle-v1-20261011-attempt36/build-attempt1/compile-5.stdout": {
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    "actual-dell/session-nonzero-progress-planning-tail-three-cycle-v1-20261011-attempt36/build-attempt1/compile-6.result.json": {
+      "bytes": 5269,
+      "sha256": "a109eb828292c5e3ebdb0778dc7220593e79b179d905f75c20a501ffc414e6ae"
+    },
+    "actual-dell/session-nonzero-progress-planning-tail-three-cycle-v1-20261011-attempt36/build-attempt1/compile-6.stderr": {
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    "actual-dell/session-nonzero-progress-planning-tail-three-cycle-v1-20261011-attempt36/build-attempt1/compile-6.stdout": {
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    "actual-dell/session-nonzero-progress-planning-tail-three-cycle-v1-20261011-attempt36/build-attempt1/compile-7.result.json": {
+      "bytes": 5270,
+      "sha256": "1feda42a64fe478edf1b02c7cada5717aaaf6e20879a89059bcd293ae0a044e1"
+    },
+    "actual-dell/session-nonzero-progress-planning-tail-three-cycle-v1-20261011-attempt36/build-attempt1/compile-7.stderr": {
+      "bytes": 7274,
+      "sha256": "28eaca11a315d1017e83623ac15835c35f046fe697945c5159bc88981e48a98f"
+    },
+    "actual-dell/session-nonzero-progress-planning-tail-three-cycle-v1-20261011-attempt36/build-attempt1/compile-7.stdout": {
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    "actual-dell/session-nonzero-progress-planning-tail-three-cycle-v1-20261011-attempt36/build-attempt1/compile-8.result.json": {
+      "bytes": 5268,
+      "sha256": "8378aab17986970f14b7436da834a73510f11747c477b7c07cad99cb1ae326eb"
+    },
+    "actual-dell/session-nonzero-progress-planning-tail-three-cycle-v1-20261011-attempt36/build-attempt1/compile-8.stderr": {
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    "actual-dell/session-nonzero-progress-planning-tail-three-cycle-v1-20261011-attempt36/build-attempt1/compile-8.stdout": {
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    "actual-dell/session-nonzero-progress-planning-tail-three-cycle-v1-20261011-attempt36/build-attempt1/compile-9.result.json": {
+      "bytes": 5273,
+      "sha256": "90e739ed4b2a7ba73bb9f242dfc5c22853e641bb0047d2f313927beec8a2bc3a"
+    },
+    "actual-dell/session-nonzero-progress-planning-tail-three-cycle-v1-20261011-attempt36/build-attempt1/compile-9.stderr": {
+      "bytes": 5233,
+      "sha256": "9196f614b08e05621457a1d4fa7080de3141364e599072a02299900bd1dce03a"
+    },
+    "actual-dell/session-nonzero-progress-planning-tail-three-cycle-v1-20261011-attempt36/build-attempt1/compile-9.stdout": {
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    "actual-dell/session-nonzero-progress-planning-tail-three-cycle-v1-20261011-attempt36/dev_compile.py": {
+      "bytes": 7468,
+      "sha256": "ff891393302d1a5db9ec7513f43814b51176c6975767aca4cc1149b5b9314950"
+    },
+    "actual-dell/session-nonzero-progress-planning-tail-three-cycle-v1-20261011-attempt36/dev_compile_plan.json": {
+      "bytes": 74793,
+      "sha256": "faae1ea67d1a7d19fc73c131649e007275ba76401879761e9b25df4262fe4664"
+    },
+    "actual-dell/session-nonzero-progress-planning-tail-three-cycle-v1-20261011-attempt36/dev_link.py": {
+      "bytes": 7490,
+      "sha256": "838bffcf7b6fa01c85d706df7a7318cca551e73f3155d6fa2748f6fc9adc37a5"
+    },
+    "actual-dell/session-nonzero-progress-planning-tail-three-cycle-v1-20261011-attempt36/dev_link_plan.json": {
+      "bytes": 13615,
+      "sha256": "144eafb867002cc8a5c3279bb932cad2d897287b78cd78df4f4ddceeb0b12171"
+    },
+    "actual-dell/session-nonzero-progress-planning-tail-three-cycle-v1-20261011-attempt36/link-attempt1/AFTER_INPUT_IDENTITIES.json": {
+      "bytes": 5610,
+      "sha256": "cd1d6f3f5642e9c369859ff11d4c4b9f2855d7f4ef9ff5676dd9fcaef67ce96a"
+    },
+    "actual-dell/session-nonzero-progress-planning-tail-three-cycle-v1-20261011-attempt36/link-attempt1/AFTER_READONLY_ROSTERS.json": {
+      "bytes": 3,
+      "sha256": "37517e5f3dc66819f61f5a7bb8ace1921282415f10551d2defa5c3eb0985b570"
+    },
+    "actual-dell/session-nonzero-progress-planning-tail-three-cycle-v1-20261011-attempt36/link-attempt1/BATCH_PREFIX.json": {
+      "bytes": 10632,
+      "sha256": "91a387178857ff2b403531b932fd4afe97eeae25df2e249badabd9713e28dd5c"
+    },
+    "actual-dell/session-nonzero-progress-planning-tail-three-cycle-v1-20261011-attempt36/link-attempt1/BEFORE_INPUT_IDENTITIES.json": {
+      "bytes": 5610,
+      "sha256": "cd1d6f3f5642e9c369859ff11d4c4b9f2855d7f4ef9ff5676dd9fcaef67ce96a"
+    },
+    "actual-dell/session-nonzero-progress-planning-tail-three-cycle-v1-20261011-attempt36/link-attempt1/BEFORE_READONLY_ROSTERS.json": {
+      "bytes": 3,
+      "sha256": "37517e5f3dc66819f61f5a7bb8ace1921282415f10551d2defa5c3eb0985b570"
+    },
+    "actual-dell/session-nonzero-progress-planning-tail-three-cycle-v1-20261011-attempt36/link-attempt1/BUILD_RESULT.json": {
+      "bytes": 10686,
+      "sha256": "b0b76babacf24f7b98e5ff50ca98beacd03ef8f14455d839b279af8a1a2a1625"
+    },
+    "actual-dell/session-nonzero-progress-planning-tail-three-cycle-v1-20261011-attempt36/link-attempt1/CONTROL_EVENT_PREFIX.json": {
+      "bytes": 989,
+      "sha256": "6e44a7dd81f574746eef51a8c7f02071de5a35c1de20daef5c61afbaf110dffa"
+    },
+    "actual-dell/session-nonzero-progress-planning-tail-three-cycle-v1-20261011-attempt36/link-attempt1/compile-1.result.json": {
+      "bytes": 5687,
+      "sha256": "f468cb5d468d49ff820650ca1027639a4d30b3de31599117d834f1d865ab19f0"
+    },
+    "actual-dell/session-nonzero-progress-planning-tail-three-cycle-v1-20261011-attempt36/link-attempt1/compile-1.stderr": {
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    "actual-dell/session-nonzero-progress-planning-tail-three-cycle-v1-20261011-attempt36/link-attempt1/compile-1.stdout": {
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    "actual-dell/session-nonzero-progress-planning-tail-three-cycle-v1-20261011-attempt36/link-attempt1/compile-2.result.json": {
+      "bytes": 4184,
+      "sha256": "616f2701b46219616a56bb9c37756c7b0095065900af840d18217324545c7001"
+    },
+    "actual-dell/session-nonzero-progress-planning-tail-three-cycle-v1-20261011-attempt36/link-attempt1/compile-2.stderr": {
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    "actual-dell/session-nonzero-progress-planning-tail-three-cycle-v1-20261011-attempt36/link-attempt1/compile-2.stdout": {
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    "actual-dell/session-nonzero-progress-planning-tail-three-cycle-v1-20261011-attempt36/profile-version1/PRODUCER.json": {
+      "bytes": 276,
+      "sha256": "933c40f757aea7543aab51fab3f063349fa5c58ff886e33589afea5ec1dc0cfa"
+    },
+    "actual-dell/session-nonzero-progress-planning-tail-three-cycle-v1-20261011-attempt36/profile-version1/active_input.json": {
+      "bytes": 326848,
+      "sha256": "f934cb99018da10b102af5fb1283075e83c8d5d91156e7216cdc069b481c9076"
+    },
+    "actual-dell/session-nonzero-progress-planning-tail-three-cycle-v1-20261011-attempt36/run-attempt1/AFTER_INPUT_IDENTITIES.json": {
+      "bytes": 512151,
+      "sha256": "e20d86c8228766ce1acb9f80e760d458e1abdc931dae287b18b9df3a69118076"
+    },
+    "actual-dell/session-nonzero-progress-planning-tail-three-cycle-v1-20261011-attempt36/run-attempt1/AFTER_READONLY_ROSTERS.json": {
+      "bytes": 3,
+      "sha256": "37517e5f3dc66819f61f5a7bb8ace1921282415f10551d2defa5c3eb0985b570"
+    },
+    "actual-dell/session-nonzero-progress-planning-tail-three-cycle-v1-20261011-attempt36/run-attempt1/BATCH_PREFIX.json": {
+      "bytes": 2163,
+      "sha256": "3df0f115f0de8cb8ab8d101a952ce0369d0c489eced937c0d2bcae6a8ddf13b1"
+    },
+    "actual-dell/session-nonzero-progress-planning-tail-three-cycle-v1-20261011-attempt36/run-attempt1/BEFORE_INPUT_IDENTITIES.json": {
+      "bytes": 512151,
+      "sha256": "e20d86c8228766ce1acb9f80e760d458e1abdc931dae287b18b9df3a69118076"
+    },
+    "actual-dell/session-nonzero-progress-planning-tail-three-cycle-v1-20261011-attempt36/run-attempt1/BEFORE_READONLY_ROSTERS.json": {
+      "bytes": 3,
+      "sha256": "37517e5f3dc66819f61f5a7bb8ace1921282415f10551d2defa5c3eb0985b570"
+    },
+    "actual-dell/session-nonzero-progress-planning-tail-three-cycle-v1-20261011-attempt36/run-attempt1/BUILD_RESULT.json": {
+      "bytes": 2217,
+      "sha256": "65bf93aeb146b65a20b1f6a85070c727e84fffb0deed18bde82b4e7240c38b03"
+    },
+    "actual-dell/session-nonzero-progress-planning-tail-three-cycle-v1-20261011-attempt36/run-attempt1/CONTROL_EVENT_PREFIX.json": {
+      "bytes": 732,
+      "sha256": "29b1c650ef86c52f36a404f5a85cd49b3285d19916c4d646d5972ba66a17227e"
+    },
+    "actual-dell/session-nonzero-progress-planning-tail-three-cycle-v1-20261011-attempt36/run-attempt1/artifacts/MANIFEST.yaml": {
+      "bytes": 2233,
+      "sha256": "a19dbb2bca2d6eb64d5040a07bb65e978e57a5e65a3f82d05da9e4c29a49283c"
+    },
+    "actual-dell/session-nonzero-progress-planning-tail-three-cycle-v1-20261011-attempt36/run-attempt1/artifacts/actual_step_journal.csv": {
+      "bytes": 1813021,
+      "sha256": "eea9da2c74e5b8e20776e7e0df04e8926c9ab278117fcce5c9fb03ac16927313"
+    },
+    "actual-dell/session-nonzero-progress-planning-tail-three-cycle-v1-20261011-attempt36/run-attempt1/artifacts/actual_warmup.bin": {
+      "bytes": 504405,
+      "sha256": "ddfe59b603e0caa2ef85b0bb3e3e14a75e4f57a639cc22f8bad2fda249802901"
+    },
+    "actual-dell/session-nonzero-progress-planning-tail-three-cycle-v1-20261011-attempt36/run-attempt1/artifacts/bootstrap.bin": {
+      "bytes": 150,
+      "sha256": "d3e5152172d091dcb46ea5f9767f3308c3fd2a9cf969c88494348502d2681a89"
+    },
+    "actual-dell/session-nonzero-progress-planning-tail-three-cycle-v1-20261011-attempt36/run-attempt1/artifacts/cycle-0/MANIFEST.yaml": {
+      "bytes": 4584,
+      "sha256": "4f71c7738662b26724db2730dec630b139b7fc8f18c1a8df4511ed55cc169a37"
+    },
+    "actual-dell/session-nonzero-progress-planning-tail-three-cycle-v1-20261011-attempt36/run-attempt1/artifacts/cycle-0/actual_commit.bin": {
+      "bytes": 1381,
+      "sha256": "5a71af3c492c9022da5519854657ef1f75e416765fb0d6e802ecada62c422e62"
+    },
+    "actual-dell/session-nonzero-progress-planning-tail-three-cycle-v1-20261011-attempt36/run-attempt1/artifacts/cycle-0/actual_commit_journal.csv": {
+      "bytes": 4284,
+      "sha256": "0608b50ab8441dca2390995aa6196391752fa513101815a8ba8a52769a0359d6"
+    },
+    "actual-dell/session-nonzero-progress-planning-tail-three-cycle-v1-20261011-attempt36/run-attempt1/artifacts/cycle-0/actual_task_errors.bin": {
+      "bytes": 1017,
+      "sha256": "a74b12dfb3bb1cfee2a95ce9d91a911a00b3224b7fe676f949f0bd635f5b9003"
+    },
+    "actual-dell/session-nonzero-progress-planning-tail-three-cycle-v1-20261011-attempt36/run-attempt1/artifacts/cycle-0/candidate.bin": {
+      "bytes": 122215,
+      "sha256": "0fc6be953238efba4170a26f594a75ec233bb107070e75817d2134642dfbe866"
+    },
+    "actual-dell/session-nonzero-progress-planning-tail-three-cycle-v1-20261011-attempt36/run-attempt1/artifacts/cycle-0/candidate_validation.bin": {
+      "bytes": 109970,
+      "sha256": "dacdb04178745c1284336d911a93c391fa0c37fb206684f409d3e739a0e8abfb"
+    },
+    "actual-dell/session-nonzero-progress-planning-tail-three-cycle-v1-20261011-attempt36/run-attempt1/artifacts/cycle-0/candidate_value.bin": {
+      "bytes": 249087,
+      "sha256": "37d241452f0cafa82070ac27aa248ee3f7cc2647df05f9d2cf1db59c009615d0"
+    },
+    "actual-dell/session-nonzero-progress-planning-tail-three-cycle-v1-20261011-attempt36/run-attempt1/artifacts/cycle-0/commit_journal_receipt.bin": {
+      "bytes": 584,
+      "sha256": "10da1d28df6097e7da362e5eed4f1794b0d81d52a044ab1065b7c28bd98b6730"
+    },
+    "actual-dell/session-nonzero-progress-planning-tail-three-cycle-v1-20261011-attempt36/run-attempt1/artifacts/cycle-0/current_numeric_hint.bin": {
+      "bytes": 71552,
+      "sha256": "e3d5dd9b023319c9cb90647f842a16e418e16e37edce470ace4d59c132d9659b"
+    },
+    "actual-dell/session-nonzero-progress-planning-tail-three-cycle-v1-20261011-attempt36/run-attempt1/artifacts/cycle-0/cycle_timing.bin": {
+      "bytes": 593,
+      "sha256": "ce7171c78f7050f5a32f580fd9f19777920183a80c2e68b5174306130c9c6231"
+    },
+    "actual-dell/session-nonzero-progress-planning-tail-three-cycle-v1-20261011-attempt36/run-attempt1/artifacts/cycle-0/inline_qp.bin": {
+      "bytes": 21673393,
+      "sha256": "52b3daf07d0e2c69ac770b0a8894074bb38d6ae07bd7be3486aa824975a34a5f"
+    },
+    "actual-dell/session-nonzero-progress-planning-tail-three-cycle-v1-20261011-attempt36/run-attempt1/artifacts/cycle-0/nominal_geometry_rows.bin": {
+      "bytes": 668229,
+      "sha256": "19ab6cadc7bdebab90f273cd36e0a957ddac8e21720adaad3e2f95e29692d992"
+    },
+    "actual-dell/session-nonzero-progress-planning-tail-three-cycle-v1-20261011-attempt36/run-attempt1/artifacts/cycle-0/observation_after.bin": {
+      "bytes": 2601,
+      "sha256": "50916a45df8c5ed57e9b504b6d0bcec71c99aee06509c734a9c865b424d0cba2"
+    },
+    "actual-dell/session-nonzero-progress-planning-tail-three-cycle-v1-20261011-attempt36/run-attempt1/artifacts/cycle-0/observation_before.bin": {
+      "bytes": 2585,
+      "sha256": "ca6566cf503bd521b74ec5d2d03f8f5b489054610c77745dfb9e24d25b423217"
+    },
+    "actual-dell/session-nonzero-progress-planning-tail-three-cycle-v1-20261011-attempt36/run-attempt1/artifacts/cycle-0/original_nominal.bin": {
+      "bytes": 12716678,
+      "sha256": "2d4c193550e75c54412b586fe45defa67c3b8d01b596cdac2e85fac19b1acdbb"
+    },
+    "actual-dell/session-nonzero-progress-planning-tail-three-cycle-v1-20261011-attempt36/run-attempt1/artifacts/cycle-0/planning_guard.bin": {
+      "bytes": 3074,
+      "sha256": "f407026fd9425ce3227f9c5602b46eee224f673563524561c73a8e99bd33dab0"
+    },
+    "actual-dell/session-nonzero-progress-planning-tail-three-cycle-v1-20261011-attempt36/run-attempt1/artifacts/cycle-0/qp_equality_reduction.bin": {
+      "bytes": 19323341,
+      "sha256": "1a2b366b66ade762e1d80faa3c082044cf5969f9592b86c9a80b0cc7b36525e5"
+    },
+    "actual-dell/session-nonzero-progress-planning-tail-three-cycle-v1-20261011-attempt36/run-attempt1/artifacts/cycle-0/solver_row_screen.bin": {
+      "bytes": 536356,
+      "sha256": "177081dee7a5319a48b6bd70abbf4693ef3beb421b4f5ae08d21bdd54b677823"
+    },
+    "actual-dell/session-nonzero-progress-planning-tail-three-cycle-v1-20261011-attempt36/run-attempt1/artifacts/cycle-0/validation_initial.bin": {
+      "bytes": 881,
+      "sha256": "7c71a9acc454ac3c1af967c9a220bdd7398d3422d8057e014e6b350711991d07"
+    },
+    "actual-dell/session-nonzero-progress-planning-tail-three-cycle-v1-20261011-attempt36/run-attempt1/artifacts/cycle-1/MANIFEST.yaml": {
+      "bytes": 4584,
+      "sha256": "563d894a9a23207fa55efeddfc3a4762cded64f3e596cc1d477efc01401b3104"
+    },
+    "actual-dell/session-nonzero-progress-planning-tail-three-cycle-v1-20261011-attempt36/run-attempt1/artifacts/cycle-1/actual_commit.bin": {
+      "bytes": 1381,
+      "sha256": "a5b0311313dcdb1224d2ee4aed1019078a6b1f890487a74121dcb0d69d8bcc6e"
+    },
+    "actual-dell/session-nonzero-progress-planning-tail-three-cycle-v1-20261011-attempt36/run-attempt1/artifacts/cycle-1/actual_commit_journal.csv": {
+      "bytes": 4263,
+      "sha256": "de06cc2d19d3139961643b2a3e45f933f52c9dd0aad6f4f05ed7a7a16cb74128"
+    },
+    "actual-dell/session-nonzero-progress-planning-tail-three-cycle-v1-20261011-attempt36/run-attempt1/artifacts/cycle-1/actual_task_errors.bin": {
+      "bytes": 1017,
+      "sha256": "93280cc5d67253033799f11cd30391acd1e281c0412256735a588e21de11b98d"
+    },
+    "actual-dell/session-nonzero-progress-planning-tail-three-cycle-v1-20261011-attempt36/run-attempt1/artifacts/cycle-1/candidate.bin": {
+      "bytes": 122215,
+      "sha256": "0192fdb0aaf35655fac3cbf4428b3d7f93f8d779245aea207a65df10395b582f"
+    },
+    "actual-dell/session-nonzero-progress-planning-tail-three-cycle-v1-20261011-attempt36/run-attempt1/artifacts/cycle-1/candidate_validation.bin": {
+      "bytes": 109970,
+      "sha256": "b1b52f24e7a3a182fe27dad55c728f0f998ea10e891fc56b0914a098f3205b22"
+    },
+    "actual-dell/session-nonzero-progress-planning-tail-three-cycle-v1-20261011-attempt36/run-attempt1/artifacts/cycle-1/candidate_value.bin": {
+      "bytes": 247890,
+      "sha256": "e77c3f7641f709c803c4df8dd054d736cdd57f3ed33f7ef4db45eab4b470ae34"
+    },
+    "actual-dell/session-nonzero-progress-planning-tail-three-cycle-v1-20261011-attempt36/run-attempt1/artifacts/cycle-1/commit_journal_receipt.bin": {
+      "bytes": 584,
+      "sha256": "7be0b74dd0d66eb13215521ef9693f5cb6166baba870970fa4930b4039a1e424"
+    },
+    "actual-dell/session-nonzero-progress-planning-tail-three-cycle-v1-20261011-attempt36/run-attempt1/artifacts/cycle-1/current_numeric_hint.bin": {
+      "bytes": 69816,
+      "sha256": "25dec9d202b040ed6224b91798598e573924e95ef80a3ddf95a9fb84081d1683"
+    },
+    "actual-dell/session-nonzero-progress-planning-tail-three-cycle-v1-20261011-attempt36/run-attempt1/artifacts/cycle-1/cycle_timing.bin": {
+      "bytes": 593,
+      "sha256": "435a44444ead02df18564d2db7960cfece350e711a879cbe310f19d3038661b8"
+    },
+    "actual-dell/session-nonzero-progress-planning-tail-three-cycle-v1-20261011-attempt36/run-attempt1/artifacts/cycle-1/inline_qp.bin": {
+      "bytes": 21673393,
+      "sha256": "4886413acb1c503d2b9219c0ce75a47462841acd130d9fed2d7e985ca7a82e53"
+    },
+    "actual-dell/session-nonzero-progress-planning-tail-three-cycle-v1-20261011-attempt36/run-attempt1/artifacts/cycle-1/nominal_geometry_rows.bin": {
+      "bytes": 668229,
+      "sha256": "c0a7d3d0d2b7f072292733d7d0e1c9db3f0c97b9da83189cd8c63426e0a535af"
+    },
+    "actual-dell/session-nonzero-progress-planning-tail-three-cycle-v1-20261011-attempt36/run-attempt1/artifacts/cycle-1/observation_after.bin": {
+      "bytes": 2601,
+      "sha256": "c5e0707c419ac3eb331c2685cd76ee7b867a96f3fff0cf57897b3cdac3d72f3e"
+    },
+    "actual-dell/session-nonzero-progress-planning-tail-three-cycle-v1-20261011-attempt36/run-attempt1/artifacts/cycle-1/observation_before.bin": {
+      "bytes": 2601,
+      "sha256": "4bf55075ff4259d0c2f4783881ad21439712a0dbec88da0c93a090d7e4da7845"
+    },
+    "actual-dell/session-nonzero-progress-planning-tail-three-cycle-v1-20261011-attempt36/run-attempt1/artifacts/cycle-1/original_nominal.bin": {
+      "bytes": 12716678,
+      "sha256": "0ab6b27bb045ead297d8664d1c33e465793b5cda855fce0b0ea7f01338ee4226"
+    },
+    "actual-dell/session-nonzero-progress-planning-tail-three-cycle-v1-20261011-attempt36/run-attempt1/artifacts/cycle-1/planning_guard.bin": {
+      "bytes": 3074,
+      "sha256": "1ad2a054190b99a3d34fe5225199ed78493c020ba86c7356085bf8cf1888cf78"
+    },
+    "actual-dell/session-nonzero-progress-planning-tail-three-cycle-v1-20261011-attempt36/run-attempt1/artifacts/cycle-1/qp_equality_reduction.bin": {
+      "bytes": 19323341,
+      "sha256": "b92d399f5b6e549ffef79ecfe413397b790809a776a37664787c886a773c42dd"
+    },
+    "actual-dell/session-nonzero-progress-planning-tail-three-cycle-v1-20261011-attempt36/run-attempt1/artifacts/cycle-1/solver_row_screen.bin": {
+      "bytes": 536384,
+      "sha256": "864e5be11a6fc968fb25fb5d799ae8a281b93852e5b1eef8197bb082ca0bd501"
+    },
+    "actual-dell/session-nonzero-progress-planning-tail-three-cycle-v1-20261011-attempt36/run-attempt1/artifacts/cycle-1/validation_initial.bin": {
+      "bytes": 881,
+      "sha256": "e0f8c97d925ed3e7b6cc7e60f462013a918a969123674fd70b09898d8b30c7fc"
+    },
+    "actual-dell/session-nonzero-progress-planning-tail-three-cycle-v1-20261011-attempt36/run-attempt1/artifacts/cycle-2/MANIFEST.yaml": {
+      "bytes": 4584,
+      "sha256": "f4b3aa6d79a009647b32a045fc85e0099ee7c46222aa1bba22b761a672d825b1"
+    },
+    "actual-dell/session-nonzero-progress-planning-tail-three-cycle-v1-20261011-attempt36/run-attempt1/artifacts/cycle-2/actual_commit.bin": {
+      "bytes": 1381,
+      "sha256": "9c8025d0dbdfef28a4c73df8c649e6d4ff7dc672775c6ded438effe12f49e617"
+    },
+    "actual-dell/session-nonzero-progress-planning-tail-three-cycle-v1-20261011-attempt36/run-attempt1/artifacts/cycle-2/actual_commit_journal.csv": {
+      "bytes": 4246,
+      "sha256": "f31a79c54b1c0230aed8b6016dc3030fe30159a2e25a663719ff520368045937"
+    },
+    "actual-dell/session-nonzero-progress-planning-tail-three-cycle-v1-20261011-attempt36/run-attempt1/artifacts/cycle-2/actual_task_errors.bin": {
+      "bytes": 1017,
+      "sha256": "76d99df06633bbd20e34fcf09088e2b9e278146894a1e370f91f416696ed48ef"
+    },
+    "actual-dell/session-nonzero-progress-planning-tail-three-cycle-v1-20261011-attempt36/run-attempt1/artifacts/cycle-2/candidate.bin": {
+      "bytes": 122215,
+      "sha256": "262bc9861b332956e469285d24fec1a04a4bbefec5104ebe55804491a181b068"
+    },
+    "actual-dell/session-nonzero-progress-planning-tail-three-cycle-v1-20261011-attempt36/run-attempt1/artifacts/cycle-2/candidate_validation.bin": {
+      "bytes": 109970,
+      "sha256": "31d4ab56b0915a699bba1f78b98efaf20747be1849928f6772a3ccedee8ae035"
+    },
+    "actual-dell/session-nonzero-progress-planning-tail-three-cycle-v1-20261011-attempt36/run-attempt1/artifacts/cycle-2/candidate_value.bin": {
+      "bytes": 247890,
+      "sha256": "7213ae11a29eb85216cb914f6507da49868f3e0065325f01830c36b27eef96f9"
+    },
+    "actual-dell/session-nonzero-progress-planning-tail-three-cycle-v1-20261011-attempt36/run-attempt1/artifacts/cycle-2/commit_journal_receipt.bin": {
+      "bytes": 584,
+      "sha256": "5b5ab0ac8566eb3a3bbcd24ae095f9600ec9eac3b514649f9a72d03dcc154696"
+    },
+    "actual-dell/session-nonzero-progress-planning-tail-three-cycle-v1-20261011-attempt36/run-attempt1/artifacts/cycle-2/current_numeric_hint.bin": {
+      "bytes": 69808,
+      "sha256": "6245dabcae511f35ac2f213def941e0b67d291238554d9434647cce994c22bfc"
+    },
+    "actual-dell/session-nonzero-progress-planning-tail-three-cycle-v1-20261011-attempt36/run-attempt1/artifacts/cycle-2/cycle_timing.bin": {
+      "bytes": 593,
+      "sha256": "8d6b5e806475f06b5189df67aec4e6611d69909bed7ed1804a45986e50102030"
+    },
+    "actual-dell/session-nonzero-progress-planning-tail-three-cycle-v1-20261011-attempt36/run-attempt1/artifacts/cycle-2/inline_qp.bin": {
+      "bytes": 21673393,
+      "sha256": "345fc7e48ee00ef7042fde21f662e3477a1e58fda3c7da6d23663bba7c492537"
+    },
+    "actual-dell/session-nonzero-progress-planning-tail-three-cycle-v1-20261011-attempt36/run-attempt1/artifacts/cycle-2/nominal_geometry_rows.bin": {
+      "bytes": 668229,
+      "sha256": "36c16a2c05a622611d185ec5c984c6bb720ebefd91b13bb9dfcfdc8f1cf954c0"
+    },
+    "actual-dell/session-nonzero-progress-planning-tail-three-cycle-v1-20261011-attempt36/run-attempt1/artifacts/cycle-2/observation_after.bin": {
+      "bytes": 2601,
+      "sha256": "5ec2f8b1bcd097f5fb2a5278fae75c02d073ce5c69cdc532e7d841964908c5ef"
+    },
+    "actual-dell/session-nonzero-progress-planning-tail-three-cycle-v1-20261011-attempt36/run-attempt1/artifacts/cycle-2/observation_before.bin": {
+      "bytes": 2601,
+      "sha256": "ed8754c616d3c003597ced439f54889561db310f5e52149cccfcb28865f61a84"
+    },
+    "actual-dell/session-nonzero-progress-planning-tail-three-cycle-v1-20261011-attempt36/run-attempt1/artifacts/cycle-2/original_nominal.bin": {
+      "bytes": 12716678,
+      "sha256": "907119991fde66fc62740a616575a0d98c443d6a40c7ef00ad13ad8c7dd824b5"
+    },
+    "actual-dell/session-nonzero-progress-planning-tail-three-cycle-v1-20261011-attempt36/run-attempt1/artifacts/cycle-2/planning_guard.bin": {
+      "bytes": 3074,
+      "sha256": "cfe784913cad4ba99f93859569ef00327eb736590a7737fa8bce5ecf018220db"
+    },
+    "actual-dell/session-nonzero-progress-planning-tail-three-cycle-v1-20261011-attempt36/run-attempt1/artifacts/cycle-2/qp_equality_reduction.bin": {
+      "bytes": 19320981,
+      "sha256": "9384159f1babe115cecde5136c9b98be750d1ef2334386088d239aea28dce188"
+    },
+    "actual-dell/session-nonzero-progress-planning-tail-three-cycle-v1-20261011-attempt36/run-attempt1/artifacts/cycle-2/solver_row_screen.bin": {
+      "bytes": 536466,
+      "sha256": "ac507cd9de3cf5367e1eadaed59a5f38302692e8801dd6661bcb9e4128da5d09"
+    },
+    "actual-dell/session-nonzero-progress-planning-tail-three-cycle-v1-20261011-attempt36/run-attempt1/artifacts/cycle-2/validation_initial.bin": {
+      "bytes": 881,
+      "sha256": "fcf8b51c41dbdf16bb5efc5000d2e756e6e24cac81792406de98038100c84234"
+    },
+    "actual-dell/session-nonzero-progress-planning-tail-three-cycle-v1-20261011-attempt36/run-attempt1/artifacts/entry_completion.bin": {
+      "bytes": 240,
+      "sha256": "c5470a2a20b75450a88734758bdde5f0cf6201461e13713e996374dc17e7cef0"
+    },
+    "actual-dell/session-nonzero-progress-planning-tail-three-cycle-v1-20261011-attempt36/run-attempt1/artifacts/journal_receipt.bin": {
+      "bytes": 574,
+      "sha256": "3c4d5f1dc890f18e0334167dce6b06c230124d339e12e97accfdb00d54ffa88b"
+    },
+    "actual-dell/session-nonzero-progress-planning-tail-three-cycle-v1-20261011-attempt36/run-attempt1/artifacts/model_open.bin": {
+      "bytes": 1275,
+      "sha256": "f5ec5debb244e76c025ca107bc44ae12d03755fd7159d86dafbe18ef126f0a07"
+    },
+    "actual-dell/session-nonzero-progress-planning-tail-three-cycle-v1-20261011-attempt36/run-attempt1/artifacts/observation_after.bin": {
+      "bytes": 2601,
+      "sha256": "5f74e1ea158b4c4123cfe69a572c71ba8cb44057e3eaeae61d346c9a883b2048"
+    },
+    "actual-dell/session-nonzero-progress-planning-tail-three-cycle-v1-20261011-attempt36/run-attempt1/artifacts/observation_before.bin": {
+      "bytes": 2585,
+      "sha256": "735d0fb470bf30efc1cfa6ee8529a4cf6450c540bd378a512551850fb007f5a5"
+    },
+    "actual-dell/session-nonzero-progress-planning-tail-three-cycle-v1-20261011-attempt36/run-attempt1/artifacts/retained_commit_history.bin": {
+      "bytes": 6850,
+      "sha256": "c24231a9d0564335265a788980e8b25f4e7a1cee1061af39fbe4819c2e5c8ec8"
+    },
+    "actual-dell/session-nonzero-progress-planning-tail-three-cycle-v1-20261011-attempt36/run-attempt1/compile-1.result.json": {
+      "bytes": 1843,
+      "sha256": "f8dd57eb4d36fe859330ff6a90e11d544d113b4b92f75097e79898dd340a19e8"
+    },
+    "actual-dell/session-nonzero-progress-planning-tail-three-cycle-v1-20261011-attempt36/run-attempt1/compile-1.stderr": {
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    "actual-dell/session-nonzero-progress-planning-tail-three-cycle-v1-20261011-attempt36/run-attempt1/compile-1.stdout": {
+      "bytes": 147,
+      "sha256": "7078baf38fcef259d4ad5428539d448f39efbed5cd4d5bc180046d2946ba5a30"
+    },
+    "actual-dell/session-nonzero-progress-planning-tail-three-cycle-v1-20261011-attempt36/src/active_first_cycle.cpp": {
+      "bytes": 32926,
+      "sha256": "73a86e96b03dba57d2e503958875364010150813e49438341ee9b169543ad66c"
+    },
+    "actual-dell/session-nonzero-progress-planning-tail-three-cycle-v1-20261011-attempt36/src/actual_task_metrics.hpp": {
+      "bytes": 1883,
+      "sha256": "83bb0f21e0bfa830b4d8f7e356f9f7c2ce916c49d540c948588d5e460e07d900"
+    },
+    "actual-dell/session-nonzero-progress-planning-tail-three-cycle-v1-20261011-attempt36/src/actual_task_metrics_tests.cpp": {
+      "bytes": 1359,
+      "sha256": "00bea8673e19abc62233e5933722eae94c35b7540d4f3d2c5e609dc2a83b374c"
+    },
+    "actual-dell/session-nonzero-progress-planning-tail-three-cycle-v1-20261011-attempt36/src/affine_assembly.cpp": {
+      "bytes": 28981,
+      "sha256": "d478eda1f0fe97bfc41851515f4baa3e485fd4a57968a62dcb6233ae1157bbd5"
+    },
+    "actual-dell/session-nonzero-progress-planning-tail-three-cycle-v1-20261011-attempt36/src/affine_assembly.hpp": {
+      "bytes": 6026,
+      "sha256": "6faee2961242052c7655da41e8988dd0844f14c3cfa885672aa7c03eaa1dcb57"
+    },
+    "actual-dell/session-nonzero-progress-planning-tail-three-cycle-v1-20261011-attempt36/src/box_screen_tests.cpp": {
+      "bytes": 2954,
+      "sha256": "d922876babec2867dd1293bcee259ac12e4b2a6af5a30dd551209e097c0abaf8"
+    },
+    "actual-dell/session-nonzero-progress-planning-tail-three-cycle-v1-20261011-attempt36/src/candidate_validation.cpp": {
+      "bytes": 10659,
+      "sha256": "aa76869432f465e45c48acf777913eea5972414a145eedbf02645035773f63e9"
+    },
+    "actual-dell/session-nonzero-progress-planning-tail-three-cycle-v1-20261011-attempt36/src/candidate_validation.hpp": {
+      "bytes": 1526,
+      "sha256": "d816bedb47cff25c49a0d5577a9fa805771816caa1dc406d4772c1ee843fe4fa"
+    },
+    "actual-dell/session-nonzero-progress-planning-tail-three-cycle-v1-20261011-attempt36/src/counted_geometry.hpp": {
+      "bytes": 6363,
+      "sha256": "180ea5a855dfac54d1a1cc6476a0a024623bce67143820624660e09cbadb1fcb"
+    },
+    "actual-dell/session-nonzero-progress-planning-tail-three-cycle-v1-20261011-attempt36/src/current_numeric_guess.hpp": {
+      "bytes": 4718,
+      "sha256": "bb935c5cbc1c3a09717142947d285b8f2009fe8ae8e47d433703dc815a322972"
+    },
+    "actual-dell/session-nonzero-progress-planning-tail-three-cycle-v1-20261011-attempt36/src/current_numeric_oracle.cpp": {
+      "bytes": 1845,
+      "sha256": "43e2f0fc6cab95382ff9741669f82d21d43670db633088c6141106bf40a95cac"
+    },
+    "actual-dell/session-nonzero-progress-planning-tail-three-cycle-v1-20261011-attempt36/src/current_numeric_tests.cpp": {
+      "bytes": 780,
+      "sha256": "b7957cb18696352b7e92333e4c78c88e059d7c79235fe6ba81c356b3c06b00bc"
+    },
+    "actual-dell/session-nonzero-progress-planning-tail-three-cycle-v1-20261011-attempt36/src/cycle_support.hpp": {
+      "bytes": 5382,
+      "sha256": "d3dab83b30bf0905ae1209d9fd4cbf8eb298031b91a6b5b4b57a7a92a42416a4"
+    },
+    "actual-dell/session-nonzero-progress-planning-tail-three-cycle-v1-20261011-attempt36/src/cycle_support_tests.cpp": {
+      "bytes": 3540,
+      "sha256": "d8f236dea84b64b855f790bdc7fc3d42f932de09989a1a1dbcafe9b1b3279b2f"
+    },
+    "actual-dell/session-nonzero-progress-planning-tail-three-cycle-v1-20261011-attempt36/src/integrated_horizon_qp.cpp": {
+      "bytes": 155393,
+      "sha256": "aa19a7c5ab80b59f0bb2d9bd467caef0bd1f81431263dc35de4d814be9f3d5c0"
+    },
+    "actual-dell/session-nonzero-progress-planning-tail-three-cycle-v1-20261011-attempt36/src/integrated_horizon_qp.hpp": {
+      "bytes": 12808,
+      "sha256": "7bd5c0c781161b88e399902d4d0e7c54a2f51602aedfb3359ae5f18d03336019"
+    },
+    "actual-dell/session-nonzero-progress-planning-tail-three-cycle-v1-20261011-attempt36/src/invariant_tests.cpp": {
+      "bytes": 4721,
+      "sha256": "f5a859d4cf9d79a5ae1b533b8dd62776f2bba6599dfdf691a2915ef3296a33f9"
+    },
+    "actual-dell/session-nonzero-progress-planning-tail-three-cycle-v1-20261011-attempt36/src/linear_box_screen.hpp": {
+      "bytes": 3916,
+      "sha256": "b649eff43293a3078b7b46a0166fa0f8a2ac59f3a8496c8c73a98c275fed96d1"
+    },
+    "actual-dell/session-nonzero-progress-planning-tail-three-cycle-v1-20261011-attempt36/src/lossless_evidence.cpp": {
+      "bytes": 17672,
+      "sha256": "f0794f09ed38192b7564b8d2f991b2610000f6c72317f2f395482a325ca6eaa5"
+    },
+    "actual-dell/session-nonzero-progress-planning-tail-three-cycle-v1-20261011-attempt36/src/lossless_evidence.hpp": {
+      "bytes": 2138,
+      "sha256": "75ca8a356e1c2f7b90ac17a0182697041cad1df0beb2b0ca995777b37e1882a8"
+    },
+    "actual-dell/session-nonzero-progress-planning-tail-three-cycle-v1-20261011-attempt36/src/model_boundary.cpp": {
+      "bytes": 21482,
+      "sha256": "eeb1f2a43ef40315e747c1be536eccc7b810647c65840999cd9c27d75895366e"
+    },
+    "actual-dell/session-nonzero-progress-planning-tail-three-cycle-v1-20261011-attempt36/src/model_boundary.hpp": {
+      "bytes": 4503,
+      "sha256": "966af079735681aedf1031822864baa608255efa43e4ca699d5bec07a3235efb"
+    },
+    "actual-dell/session-nonzero-progress-planning-tail-three-cycle-v1-20261011-attempt36/src/nominal_geometry_provider.hpp": {
+      "bytes": 3544,
+      "sha256": "7269a27ae1cdf5d623b726a52092adb074df8c6e032bcc1cd2c4845acafaf498"
+    },
+    "actual-dell/session-nonzero-progress-planning-tail-three-cycle-v1-20261011-attempt36/src/nominal_geometry_selection.hpp": {
+      "bytes": 2524,
+      "sha256": "6a41cc80feca43509d234c5aaf70e9a4c4de77abfa9b8eabfec6b6541b7711fa"
+    },
+    "actual-dell/session-nonzero-progress-planning-tail-three-cycle-v1-20261011-attempt36/src/normalization.cpp": {
+      "bytes": 23976,
+      "sha256": "a0cd0c9cdb505f922f1744f24cf115057b6ba9f3a9bc1b3ed0c9bdb82d358ed5"
+    },
+    "actual-dell/session-nonzero-progress-planning-tail-three-cycle-v1-20261011-attempt36/src/normalization.hpp": {
+      "bytes": 4288,
+      "sha256": "9456be5c205f23d2aa2210eac02286d030204a446af003ee85362b971ccb43d8"
+    },
+    "actual-dell/session-nonzero-progress-planning-tail-three-cycle-v1-20261011-attempt36/src/observer_tests.cpp": {
+      "bytes": 3834,
+      "sha256": "18bef19661326132aac7396998b07395acd20e83c69b70b520fea855915b5e83"
+    },
+    "actual-dell/session-nonzero-progress-planning-tail-three-cycle-v1-20261011-attempt36/src/owner_binding.hpp": {
+      "bytes": 745,
+      "sha256": "26a058244f7ef8f6d9353857637270623e18e706a061bccc3be4cffb66a54354"
+    },
+    "actual-dell/session-nonzero-progress-planning-tail-three-cycle-v1-20261011-attempt36/src/owner_binding_tests.cpp": {
+      "bytes": 832,
+      "sha256": "891c6b39bf5a9d23c581f6c25a60876cc336c0f299d79239c06cdd04ac447fd4"
+    },
+    "actual-dell/session-nonzero-progress-planning-tail-three-cycle-v1-20261011-attempt36/src/runtime_observer.cpp": {
+      "bytes": 37328,
+      "sha256": "3a06fde05f266f49891d50f69d6f7f14a9b775e32c66187f06f30425a976d930"
+    },
+    "actual-dell/session-nonzero-progress-planning-tail-three-cycle-v1-20261011-attempt36/src/runtime_observer.hpp": {
+      "bytes": 8907,
+      "sha256": "69d1dfc60fb763ce471c26a5aa50cd743a7aab3a436847bea71eda7801609bbf"
+    },
+    "actual-dell/session-nonzero-progress-planning-tail-three-cycle-v1-20261011-attempt36/src/session_primitives.hpp": {
+      "bytes": 2259,
+      "sha256": "0b76bc232ed81dc9b4831617ae1690cfc287def914b8bca5f05ce6e6e25b6080"
+    },
+    "actual-dell/session-nonzero-progress-planning-tail-three-cycle-v1-20261011-attempt36/src/solver_forensics.cpp": {
+      "bytes": 26514,
+      "sha256": "664c1d480e23c1ddef4f45a57165cba871213740329f8693c897d7c07ee7af27"
+    },
+    "actual-dell/session-nonzero-progress-planning-tail-three-cycle-v1-20261011-attempt36/src/solver_forensics.hpp": {
+      "bytes": 860,
+      "sha256": "02b3a3d33ea64a351b228b96b2e0590b7a79fb4e9b87da78dc28c59465aca3bb"
+    },
+    "actual-dell/session-nonzero-progress-planning-tail-three-cycle-v1-20261011-attempt36/src/task_local_provider.cpp": {
+      "bytes": 1839,
+      "sha256": "051b424236979f9fe7ea4cb96564f54969025c997bfba2c61d347a23f7fbae4c"
+    },
+    "actual-dell/session-nonzero-progress-planning-tail-three-cycle-v1-20261011-attempt36/src/task_local_provider.hpp": {
+      "bytes": 640,
+      "sha256": "1819e2f626fb0ff65ad7e7e8de0b0b52f625e6bf435b073d7cca55722d76f093"
+    },
+    "actual-task-metrics/ALL_ACTUAL_TASK_POINTS.json": {
+      "bytes": 7658,
+      "sha256": "86647ec91e86cec5b384b06dcd76d5562c69273abd20a0b359949c96ee0212a7"
+    },
+    "actual-task-metrics/SUMMARY.json": {
+      "bytes": 398,
+      "sha256": "871fe9b2443289253c74baea5dab130930082707620b50f2a1cd24582c95d0a6"
+    },
+    "actual-task-metrics/cycle-0.json": {
+      "bytes": 3036,
+      "sha256": "f2166b41ef140d797656ecdafdee49522b6111a5482647f1518f63818e5bd998"
+    },
+    "actual-task-metrics/cycle-1.json": {
+      "bytes": 3042,
+      "sha256": "62e0ca3ed24756e55ae2a49ba94401079c2f08bf16bd5ad5d9dfc90fc6b833bb"
+    },
+    "actual-task-metrics/cycle-2.json": {
+      "bytes": 3026,
+      "sha256": "d98cccc716e3f957ffcb1b92fedd8d687d71c4576042a897715c811bbb6d17b9"
+    },
+    "actual_collection.tar.gz": {
+      "bytes": 61983321,
+      "sha256": "61d8a546d3b1870908a49a020e85e645d068fee44b6529fc7588e964bbeadfc3"
+    },
+    "collection.stderr": {
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    "cycle-analysis/ACTUAL_DYNAMIC_SUMMARY.json": {
+      "bytes": 8856,
+      "sha256": "646b51b9dfa49885d12ee11ebbe1323caf704cfa32d99c1e3794b68eddb80741"
+    },
+    "cycle-analysis/cycle-json/cycle-0/ACTUAL_CANDIDATE_VALIDATION.json": {
+      "bytes": 414789,
+      "sha256": "dbfcc11f680c60d9aa0c5637e9d8600a876d0e01edf9c0a886638251bde397e1"
+    },
+    "cycle-analysis/cycle-json/cycle-0/ACTUAL_CANDIDATE_VALUE.json": {
+      "bytes": 850737,
+      "sha256": "2bec4879e9d22026dce9f3ec9f59e81c4fe2e20761ea26c1858a6364274460b9"
+    },
+    "cycle-analysis/cycle-json/cycle-0/ACTUAL_COMMIT.json": {
+      "bytes": 4647,
+      "sha256": "cfd8f423b491ab93638ac11cb24bd23a37de954c8ab0c950d9401fb69e48ebdf"
+    },
+    "cycle-analysis/cycle-json/cycle-0/ACTUAL_PILOT_SUMMARY.json": {
+      "bytes": 7974,
+      "sha256": "6a4ef6499270b307da8ad205989808e7b245e4219e934fa6d371868528ab8987"
+    },
+    "cycle-analysis/cycle-json/cycle-0/ACTUAL_PLANNING_GUARD.json": {
+      "bytes": 6006,
+      "sha256": "2caa60c2f0f1673c56d45134582d1be22a516a3ef1175d8f9df5e33632fee5c1"
+    },
+    "cycle-analysis/cycle-json/cycle-0/ACTUAL_SOLVER_SUMMARY.json": {
+      "bytes": 143508,
+      "sha256": "d7893c57b786e175c5f3c703b5e052410fff10807cf042955438bbe243dd7234"
+    },
+    "cycle-analysis/cycle-json/cycle-0/CYCLE_TIMING.json": {
+      "bytes": 1292,
+      "sha256": "1e110e61e5d63f0ff07503b7082fc8084854ae8b9983bb3a081a257903b0ebb1"
+    },
+    "cycle-analysis/cycle-json/cycle-0/OBSERVATION_AFTER.json": {
+      "bytes": 5110,
+      "sha256": "2ba265114e9990706f70474d8442c43e73cf935844a33ee53186b0c03da8652a"
+    },
+    "cycle-analysis/cycle-json/cycle-0/OBSERVATION_BEFORE.json": {
+      "bytes": 4993,
+      "sha256": "4dc9f2b07eecc85658df5cb80836f029e033833b69a8b71681bddfe24a09b6af"
+    },
+    "cycle-analysis/cycle-json/cycle-0/VALIDATION_INITIAL.json": {
+      "bytes": 2071,
+      "sha256": "64c5630bd0c56d74ebd032e30a4bdb2f5d04d2245d88adafea52e37f4320cc70"
+    },
+    "cycle-analysis/cycle-json/cycle-1/ACTUAL_CANDIDATE_VALIDATION.json": {
+      "bytes": 412432,
+      "sha256": "cbd8820938a165175718605ab1155c4b1222ff964daa2195818a967736bfb10d"
+    },
+    "cycle-analysis/cycle-json/cycle-1/ACTUAL_CANDIDATE_VALUE.json": {
+      "bytes": 855831,
+      "sha256": "907b358c644277484a347c57f7a47b6fd3fa28096cbedf6272811db360e9ef65"
+    },
+    "cycle-analysis/cycle-json/cycle-1/ACTUAL_COMMIT.json": {
+      "bytes": 4648,
+      "sha256": "6327b9e86c10cf12bf53550b8e1d87935744d12d948860e3b4a5dd2a6fda9588"
+    },
+    "cycle-analysis/cycle-json/cycle-1/ACTUAL_PILOT_SUMMARY.json": {
+      "bytes": 7992,
+      "sha256": "09f44e4eb67428a6a64f46d1033f265942a21aa57aca3864d008672e23dc60a8"
+    },
+    "cycle-analysis/cycle-json/cycle-1/ACTUAL_PLANNING_GUARD.json": {
+      "bytes": 6026,
+      "sha256": "7638e8ad36eeb9aa325368c8e890c850a97b916496cd97d0810c41287f69c0ed"
+    },
+    "cycle-analysis/cycle-json/cycle-1/ACTUAL_SOLVER_SUMMARY.json": {
+      "bytes": 143470,
+      "sha256": "481176390a723e88a0e7dab540e074df7efbdce6d66f1e3ac6575552c94e31cc"
+    },
+    "cycle-analysis/cycle-json/cycle-1/CYCLE_TIMING.json": {
+      "bytes": 1294,
+      "sha256": "38024ed978a4d6583b3a4d05acc3a77c45000f577d6dde419651178dca55eb9f"
+    },
+    "cycle-analysis/cycle-json/cycle-1/OBSERVATION_AFTER.json": {
+      "bytes": 5126,
+      "sha256": "4a464448d1a93d94ffaddac8e90284f14147e3c87853281b6d9a30e8eadbec75"
+    },
+    "cycle-analysis/cycle-json/cycle-1/OBSERVATION_BEFORE.json": {
+      "bytes": 5110,
+      "sha256": "9017cd4b0f488ea424e7b2fd607cf3dd304b0ab03e6e481bd9202e9462e6540b"
+    },
+    "cycle-analysis/cycle-json/cycle-1/VALIDATION_INITIAL.json": {
+      "bytes": 2053,
+      "sha256": "a443b694fbf9949541ea39844c2fae76f0b6ab7a6d71eb7b386ceafaa0bb33e7"
+    },
+    "cycle-analysis/cycle-json/cycle-2/ACTUAL_CANDIDATE_VALIDATION.json": {
+      "bytes": 412442,
+      "sha256": "fca3848af5fc5778b447835bb49118a06c70c3f530f3bcf85ddb5b4a438cf671"
+    },
+    "cycle-analysis/cycle-json/cycle-2/ACTUAL_CANDIDATE_VALUE.json": {
+      "bytes": 856631,
+      "sha256": "419b7b741848a23b6dcdf584ea5d4f521ed3a42095f65a02fccfeb9c46976abf"
+    },
+    "cycle-analysis/cycle-json/cycle-2/ACTUAL_COMMIT.json": {
+      "bytes": 4624,
+      "sha256": "4d4d6bbe82c8b2516cf47a5e94ff83065b9fc6046d1556931736575a6c0d6264"
+    },
+    "cycle-analysis/cycle-json/cycle-2/ACTUAL_PILOT_SUMMARY.json": {
+      "bytes": 7963,
+      "sha256": "850530ec29de5aaf1bc34c9dc0e063e9ce265a071db53e5a0564f8124657dc84"
+    },
+    "cycle-analysis/cycle-json/cycle-2/ACTUAL_PLANNING_GUARD.json": {
+      "bytes": 6022,
+      "sha256": "4112eb0107e3c556ef822e64bb962713b265614df514d3967d5efeaf4f7f1c57"
+    },
+    "cycle-analysis/cycle-json/cycle-2/ACTUAL_SOLVER_SUMMARY.json": {
+      "bytes": 143559,
+      "sha256": "b7656895c7d9e44fbfd89d661864a6ac642a1ee6b08647cc2a7239de8ed77584"
+    },
+    "cycle-analysis/cycle-json/cycle-2/CYCLE_TIMING.json": {
+      "bytes": 1294,
+      "sha256": "cadf497c7bcd86ceeec714a4befd4872aefb0e3ab47c61b6abe534260f1b404f"
+    },
+    "cycle-analysis/cycle-json/cycle-2/OBSERVATION_AFTER.json": {
+      "bytes": 5194,
+      "sha256": "a9acc0c6742859630a12b8237e3909918b6533be85fb9b5b308a17dc86b5b42c"
+    },
+    "cycle-analysis/cycle-json/cycle-2/OBSERVATION_BEFORE.json": {
+      "bytes": 5126,
+      "sha256": "b6f1a6e5f6fb732a3ceef230a991eb86e51b2ecfb211061785e04e22fd0a7018"
+    },
+    "cycle-analysis/cycle-json/cycle-2/VALIDATION_INITIAL.json": {
+      "bytes": 2092,
+      "sha256": "ec616193d584a29849f8c6055629668af66ed1709b4748ff3e0195cf73db0a9a"
+    },
+    "geometry-json/SUMMARY.json": {
+      "bytes": 2007,
+      "sha256": "5a8bc9e506f947aa25b3fb605e75506171e610c364567e1e7561c0ab7dc70ea1"
+    },
+    "geometry-json/cycle-0.json": {
+      "bytes": 2348877,
+      "sha256": "1890ce23b2df57388d40991ebbe1473a8dd7b63c5b110b145f8db8275e9946b4"
+    },
+    "geometry-json/cycle-1.json": {
+      "bytes": 2348475,
+      "sha256": "c8897b633a4a4cc7f70c935ec2cb34f12b30988a1dd22ad88ac5432a7cbbc7ff"
+    },
+    "geometry-json/cycle-2.json": {
+      "bytes": 2349236,
+      "sha256": "df7dd705f57202a42d225bcf137b15ad71c5a92b3eaa100f7f77a241167309ac"
+    },
+    "phase5_nonzero_progress_tail_runtime_profile_v1_20261011/LINK_OBJECT_BINDING.json": {
+      "bytes": 10570,
+      "sha256": "33df8ad36f5691a8423272b00e8b63b6657d9627cd61f901fafe235a682dc21e"
+    },
+    "phase5_nonzero_progress_tail_runtime_profile_v1_20261011/PROFILE_BUILD_HELPER.py": {
+      "bytes": 4157,
+      "sha256": "d925f657db367891df9cd4f12e9abb9994809a6c030bf2140b4d9bd938047184"
+    },
+    "phase5_nonzero_progress_tail_runtime_profile_v1_20261011/READY.json": {
+      "bytes": 1399,
+      "sha256": "a6eff2dbea8414da4309aadf46f9be368561d78dd72818b07e850cb95c1e3c23"
+    },
+    "phase5_nonzero_progress_tail_runtime_profile_v1_20261011/SCOPE.md": {
+      "bytes": 2009,
+      "sha256": "159deb55adc346e30e3351e62b0434941773abacc7adc1fbdc0578fccdb5d9a4"
+    },
+    "phase5_nonzero_progress_tail_runtime_profile_v1_20261011/active_run_driver.py": {
+      "bytes": 7621,
+      "sha256": "5255ebe8ddc755885f5c613f78367f4b739e6768edefa765ca49853598294225"
+    },
+    "phase5_nonzero_progress_tail_runtime_profile_v1_20261011/active_run_plan.json": {
+      "bytes": 497908,
+      "sha256": "ae2ec0e7f0b89de2bc2f50f56e385c41598a25f3e2ba8e9731d57a99022ecea8"
+    },
+    "phase5_nonzero_progress_tail_runtime_profile_v1_20261011/dev_compile_plan.json": {
+      "bytes": 74793,
+      "sha256": "faae1ea67d1a7d19fc73c131649e007275ba76401879761e9b25df4262fe4664"
+    },
+    "phase5_nonzero_progress_tail_runtime_profile_v1_20261011/dev_link_plan.json": {
+      "bytes": 13615,
+      "sha256": "144eafb867002cc8a5c3279bb932cad2d897287b78cd78df4f4ddceeb0b12171"
+    },
+    "phase5_nonzero_progress_tail_runtime_profile_v1_20261011/profile-version1/PRODUCER.json": {
+      "bytes": 276,
+      "sha256": "933c40f757aea7543aab51fab3f063349fa5c58ff886e33589afea5ec1dc0cfa"
+    },
+    "phase5_nonzero_progress_tail_runtime_profile_v1_20261011/profile-version1/active_input.json": {
+      "bytes": 326848,
+      "sha256": "f934cb99018da10b102af5fb1283075e83c8d5d91156e7216cdc069b481c9076"
+    },
+    "phase5_nonzero_progress_tail_source_review_v1_20261011/FUNCTIONAL_DESIGN.md": {
+      "bytes": 1048,
+      "sha256": "29938bf4a8f28e4b9238b4efb62133d6409a1117614f9839b16449ae94c54852"
+    },
+    "phase5_nonzero_progress_tail_source_review_v1_20261011/READY.json": {
+      "bytes": 5912,
+      "sha256": "93448302a7db20487babd926f980257686278b750a13916d6d8fe804cebe3eb1"
+    },
+    "phase5_nonzero_progress_tail_source_review_v1_20261011/ROOT_SOURCE_ONLY_NUMERICAL_PLANNING_REPAIR_SCOPE.json": {
+      "bytes": 1800,
+      "sha256": "59d9671e9e70b4b20415b38196d2a6edf66fede5f5b4fbc6667b7b8f845ee1fc"
+    },
+    "phase5_nonzero_progress_tail_source_review_v1_20261011/SOURCE_COMPILE_STAGE_HELPER.py": {
+      "bytes": 2585,
+      "sha256": "37c6f0b1a97500ea5fac2edcbeabcdfa48328712c0550ae2d002e11fb558ea99"
+    },
+    "phase5_nonzero_progress_tail_source_review_v1_20261011/src/active_first_cycle.cpp": {
+      "bytes": 32926,
+      "sha256": "73a86e96b03dba57d2e503958875364010150813e49438341ee9b169543ad66c"
+    },
+    "phase5_nonzero_progress_tail_source_review_v1_20261011/src/actual_task_metrics.hpp": {
+      "bytes": 1883,
+      "sha256": "83bb0f21e0bfa830b4d8f7e356f9f7c2ce916c49d540c948588d5e460e07d900"
+    },
+    "phase5_nonzero_progress_tail_source_review_v1_20261011/src/actual_task_metrics_tests.cpp": {
+      "bytes": 1359,
+      "sha256": "00bea8673e19abc62233e5933722eae94c35b7540d4f3d2c5e609dc2a83b374c"
+    },
+    "phase5_nonzero_progress_tail_source_review_v1_20261011/src/affine_assembly.cpp": {
+      "bytes": 28981,
+      "sha256": "d478eda1f0fe97bfc41851515f4baa3e485fd4a57968a62dcb6233ae1157bbd5"
+    },
+    "phase5_nonzero_progress_tail_source_review_v1_20261011/src/affine_assembly.hpp": {
+      "bytes": 6026,
+      "sha256": "6faee2961242052c7655da41e8988dd0844f14c3cfa885672aa7c03eaa1dcb57"
+    },
+    "phase5_nonzero_progress_tail_source_review_v1_20261011/src/box_screen_tests.cpp": {
+      "bytes": 2954,
+      "sha256": "d922876babec2867dd1293bcee259ac12e4b2a6af5a30dd551209e097c0abaf8"
+    },
+    "phase5_nonzero_progress_tail_source_review_v1_20261011/src/candidate_validation.cpp": {
+      "bytes": 10659,
+      "sha256": "aa76869432f465e45c48acf777913eea5972414a145eedbf02645035773f63e9"
+    },
+    "phase5_nonzero_progress_tail_source_review_v1_20261011/src/candidate_validation.hpp": {
+      "bytes": 1526,
+      "sha256": "d816bedb47cff25c49a0d5577a9fa805771816caa1dc406d4772c1ee843fe4fa"
+    },
+    "phase5_nonzero_progress_tail_source_review_v1_20261011/src/counted_geometry.hpp": {
+      "bytes": 6363,
+      "sha256": "180ea5a855dfac54d1a1cc6476a0a024623bce67143820624660e09cbadb1fcb"
+    },
+    "phase5_nonzero_progress_tail_source_review_v1_20261011/src/current_numeric_guess.hpp": {
+      "bytes": 4718,
+      "sha256": "bb935c5cbc1c3a09717142947d285b8f2009fe8ae8e47d433703dc815a322972"
+    },
+    "phase5_nonzero_progress_tail_source_review_v1_20261011/src/current_numeric_oracle.cpp": {
+      "bytes": 1845,
+      "sha256": "43e2f0fc6cab95382ff9741669f82d21d43670db633088c6141106bf40a95cac"
+    },
+    "phase5_nonzero_progress_tail_source_review_v1_20261011/src/current_numeric_tests.cpp": {
+      "bytes": 780,
+      "sha256": "b7957cb18696352b7e92333e4c78c88e059d7c79235fe6ba81c356b3c06b00bc"
+    },
+    "phase5_nonzero_progress_tail_source_review_v1_20261011/src/cycle_support.hpp": {
+      "bytes": 5382,
+      "sha256": "d3dab83b30bf0905ae1209d9fd4cbf8eb298031b91a6b5b4b57a7a92a42416a4"
+    },
+    "phase5_nonzero_progress_tail_source_review_v1_20261011/src/cycle_support_tests.cpp": {
+      "bytes": 3540,
+      "sha256": "d8f236dea84b64b855f790bdc7fc3d42f932de09989a1a1dbcafe9b1b3279b2f"
+    },
+    "phase5_nonzero_progress_tail_source_review_v1_20261011/src/integrated_horizon_qp.cpp": {
+      "bytes": 155393,
+      "sha256": "aa19a7c5ab80b59f0bb2d9bd467caef0bd1f81431263dc35de4d814be9f3d5c0"
+    },
+    "phase5_nonzero_progress_tail_source_review_v1_20261011/src/integrated_horizon_qp.hpp": {
+      "bytes": 12808,
+      "sha256": "7bd5c0c781161b88e399902d4d0e7c54a2f51602aedfb3359ae5f18d03336019"
+    },
+    "phase5_nonzero_progress_tail_source_review_v1_20261011/src/invariant_tests.cpp": {
+      "bytes": 4721,
+      "sha256": "f5a859d4cf9d79a5ae1b533b8dd62776f2bba6599dfdf691a2915ef3296a33f9"
+    },
+    "phase5_nonzero_progress_tail_source_review_v1_20261011/src/linear_box_screen.hpp": {
+      "bytes": 3916,
+      "sha256": "b649eff43293a3078b7b46a0166fa0f8a2ac59f3a8496c8c73a98c275fed96d1"
+    },
+    "phase5_nonzero_progress_tail_source_review_v1_20261011/src/lossless_evidence.cpp": {
+      "bytes": 17672,
+      "sha256": "f0794f09ed38192b7564b8d2f991b2610000f6c72317f2f395482a325ca6eaa5"
+    },
+    "phase5_nonzero_progress_tail_source_review_v1_20261011/src/lossless_evidence.hpp": {
+      "bytes": 2138,
+      "sha256": "75ca8a356e1c2f7b90ac17a0182697041cad1df0beb2b0ca995777b37e1882a8"
+    },
+    "phase5_nonzero_progress_tail_source_review_v1_20261011/src/model_boundary.cpp": {
+      "bytes": 21482,
+      "sha256": "eeb1f2a43ef40315e747c1be536eccc7b810647c65840999cd9c27d75895366e"
+    },
+    "phase5_nonzero_progress_tail_source_review_v1_20261011/src/model_boundary.hpp": {
+      "bytes": 4503,
+      "sha256": "966af079735681aedf1031822864baa608255efa43e4ca699d5bec07a3235efb"
+    },
+    "phase5_nonzero_progress_tail_source_review_v1_20261011/src/nominal_geometry_provider.hpp": {
+      "bytes": 3544,
+      "sha256": "7269a27ae1cdf5d623b726a52092adb074df8c6e032bcc1cd2c4845acafaf498"
+    },
+    "phase5_nonzero_progress_tail_source_review_v1_20261011/src/nominal_geometry_selection.hpp": {
+      "bytes": 2524,
+      "sha256": "6a41cc80feca43509d234c5aaf70e9a4c4de77abfa9b8eabfec6b6541b7711fa"
+    },
+    "phase5_nonzero_progress_tail_source_review_v1_20261011/src/normalization.cpp": {
+      "bytes": 23976,
+      "sha256": "a0cd0c9cdb505f922f1744f24cf115057b6ba9f3a9bc1b3ed0c9bdb82d358ed5"
+    },
+    "phase5_nonzero_progress_tail_source_review_v1_20261011/src/normalization.hpp": {
+      "bytes": 4288,
+      "sha256": "9456be5c205f23d2aa2210eac02286d030204a446af003ee85362b971ccb43d8"
+    },
+    "phase5_nonzero_progress_tail_source_review_v1_20261011/src/observer_tests.cpp": {
+      "bytes": 3834,
+      "sha256": "18bef19661326132aac7396998b07395acd20e83c69b70b520fea855915b5e83"
+    },
+    "phase5_nonzero_progress_tail_source_review_v1_20261011/src/owner_binding.hpp": {
+      "bytes": 745,
+      "sha256": "26a058244f7ef8f6d9353857637270623e18e706a061bccc3be4cffb66a54354"
+    },
+    "phase5_nonzero_progress_tail_source_review_v1_20261011/src/owner_binding_tests.cpp": {
+      "bytes": 832,
+      "sha256": "891c6b39bf5a9d23c581f6c25a60876cc336c0f299d79239c06cdd04ac447fd4"
+    },
+    "phase5_nonzero_progress_tail_source_review_v1_20261011/src/runtime_observer.cpp": {
+      "bytes": 37328,
+      "sha256": "3a06fde05f266f49891d50f69d6f7f14a9b775e32c66187f06f30425a976d930"
+    },
+    "phase5_nonzero_progress_tail_source_review_v1_20261011/src/runtime_observer.hpp": {
+      "bytes": 8907,
+      "sha256": "69d1dfc60fb763ce471c26a5aa50cd743a7aab3a436847bea71eda7801609bbf"
+    },
+    "phase5_nonzero_progress_tail_source_review_v1_20261011/src/session_primitives.hpp": {
+      "bytes": 2259,
+      "sha256": "0b76bc232ed81dc9b4831617ae1690cfc287def914b8bca5f05ce6e6e25b6080"
+    },
+    "phase5_nonzero_progress_tail_source_review_v1_20261011/src/solver_forensics.cpp": {
+      "bytes": 26514,
+      "sha256": "664c1d480e23c1ddef4f45a57165cba871213740329f8693c897d7c07ee7af27"
+    },
+    "phase5_nonzero_progress_tail_source_review_v1_20261011/src/solver_forensics.hpp": {
+      "bytes": 860,
+      "sha256": "02b3a3d33ea64a351b228b96b2e0590b7a79fb4e9b87da78dc28c59465aca3bb"
+    },
+    "phase5_nonzero_progress_tail_source_review_v1_20261011/src/task_local_provider.cpp": {
+      "bytes": 1839,
+      "sha256": "051b424236979f9fe7ea4cb96564f54969025c997bfba2c61d347a23f7fbae4c"
+    },
+    "phase5_nonzero_progress_tail_source_review_v1_20261011/src/task_local_provider.hpp": {
+      "bytes": 640,
+      "sha256": "1819e2f626fb0ff65ad7e7e8de0b0b52f625e6bf435b073d7cca55722d76f093"
+    },
+    "read_actual_task_metrics36.py": {
+      "bytes": 3189,
+      "sha256": "7955de5301ad26eb55fc843498320c3ecc3cc4a48fde14a1b959e2b6ac2a17db"
+    },
+    "read_geometry_qp_rows30.py": {
+      "bytes": 3605,
+      "sha256": "1e85ade03d662592ede5a423278ff851f17e4cdd578b231911246d88354ec175"
+    },
+    "read_nonzero_progress_native36_summary.py": {
+      "bytes": 13546,
+      "sha256": "ef4dffbcc3c0e0faf9a113282ce259ab243f6c5e0f5032de5f5c60af332e684f"
+    },
+    "readonly_collection_source.py": {
+      "bytes": 1273,
+      "sha256": "272575d2176a0c03ca525fbae46726fa30fd8eb828b7e067bcefdf5ce328a326"
+    },
+    "ros_offline_once_supervisor_writer36_20261011.py": {
+      "bytes": 5852,
+      "sha256": "0cddec1c7bdcf17dde0288593c79da10f28adf141ce856be4c6d0bc67e9b98eb"
+    },
+    "verify_nonzero_progress_packet36.py": {
+      "bytes": 2621,
+      "sha256": "71aa84cbaaff6e35dc52e1b055f90c6b8e570187a79bfd505e9d66f1128bc415"
+    }
+  }
+}

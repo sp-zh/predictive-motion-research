@@ -1,0 +1,115 @@
+{
+  "boundary": [
+    0,
+    0
+  ],
+  "commit_success": 1,
+  "commit_error": "",
+  "points": [
+    {
+      "half": 1,
+      "actual_simulation_time": 2.002000000000001,
+      "raw_pose_available": 1,
+      "actual_elapsed": 0.0019999999999997797,
+      "logical_elapsed": 0.002,
+      "logical_s": 3.999199999999999e-08,
+      "logical_r": 3.999199999999999e-05,
+      "actual": {
+        "world_position": [
+          0.7192059431043121,
+          -0.030257545799222612,
+          0.3918945267729458
+        ],
+        "world_rotation_rowmajor": [
+          0.0002512208113293335,
+          0.005028326764555391,
+          0.9999873263287145,
+          0.9999976046851002,
+          -0.002175520086099142,
+          -0.00024028402898140788,
+          0.002174284287658701,
+          0.9999849914085219,
+          -0.005028861256050565
+        ]
+      },
+      "desired": {
+        "world_position": [
+          0.7200000079984,
+          -0.02999999824105997,
+          0.39500000125638574
+        ],
+        "world_rotation_rowmajor": [
+          0.0,
+          0.0,
+          1.0,
+          1.0,
+          0.0,
+          0.0,
+          0.0,
+          1.0,
+          0.0
+        ]
+      },
+      "measured": 1,
+      "translation_error_m": 0.003215717893104911,
+      "rotation_angle_rad": 0.005484309714888434,
+      "within_10mm_005rad": 1,
+      "commit_point_passed": 1,
+      "stage": "COMPLETE_ACTUAL_VALIDATED_COMMIT_HALF",
+      "error": ""
+    },
+    {
+      "half": 2,
+      "actual_simulation_time": 2.004000000000001,
+      "raw_pose_available": 1,
+      "actual_elapsed": 0.0039999999999995595,
+      "logical_elapsed": 0.004,
+      "logical_s": 1.5996799999999997e-07,
+      "logical_r": 7.998399999999999e-05,
+      "actual": {
+        "world_position": [
+          0.7192059433154335,
+          -0.030257546864191256,
+          0.3918945214479971
+        ],
+        "world_rotation_rowmajor": [
+          0.00025122082768722076,
+          0.005028333488583281,
+          0.9999873262948992,
+          0.9999976046457106,
+          -0.002175538201751759,
+          -0.00024028393961661454,
+          0.002174302401841799,
+          0.9999849913352991,
+          -0.005028867984450874
+        ]
+      },
+      "desired": {
+        "world_position": [
+          0.7200000319936,
+          -0.02999999296423989,
+          0.39500000502554294
+        ],
+        "world_rotation_rowmajor": [
+          0.0,
+          0.0,
+          1.0,
+          1.0,
+          0.0,
+          0.0,
+          0.0,
+          1.0,
+          0.0
+        ]
+      },
+      "measured": 1,
+      "translation_error_m": 0.003215733056486396,
+      "rotation_angle_rad": 0.0054843230646394615,
+      "within_10mm_005rad": 1,
+      "commit_point_passed": 1,
+      "stage": "COMPLETE_ACTUAL_VALIDATED_COMMIT_HALF",
+      "error": ""
+    }
+  ],
+  "scope": "Actual native scratch world TCP vs pinned Td at logical controller halfprogress; translation worldnorm m and SO3 angle rad; 10mm/.05rad diagnostic flag alone is not commit/task/stop acceptance"
+}

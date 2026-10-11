@@ -1,0 +1,32 @@
+{
+  "schema": "PRODUCER_NONZERO_PROGRESS_FULL_CAPTURE_VERIFICATION_V1",
+  "before_after_identity_requests_verified": 1703,
+  "unique_requested_paths": 1674,
+  "runtime_exit0_complete": true,
+  "all_manifest_receipts": [
+    {
+      "path": "actual-dell/session-nonzero-progress-planning-tail-three-cycle-v1-20261011-attempt36/run-attempt1/artifacts/MANIFEST.yaml",
+      "binary_receipts": 8
+    },
+    {
+      "path": "actual-dell/session-nonzero-progress-planning-tail-three-cycle-v1-20261011-attempt36/run-attempt1/artifacts/cycle-0/MANIFEST.yaml",
+      "binary_receipts": 17
+    },
+    {
+      "path": "actual-dell/session-nonzero-progress-planning-tail-three-cycle-v1-20261011-attempt36/run-attempt1/artifacts/cycle-1/MANIFEST.yaml",
+      "binary_receipts": 17
+    },
+    {
+      "path": "actual-dell/session-nonzero-progress-planning-tail-three-cycle-v1-20261011-attempt36/run-attempt1/artifacts/cycle-2/MANIFEST.yaml",
+      "binary_receipts": 17
+    }
+  ],
+  "binary_receipts_verified": 59,
+  "warmup_durable_journal_events": 3000,
+  "actual_commit_journal_events": [
+    8,
+    8,
+    8
+  ],
+  "scope": "byte hashing + fixed emitted manifests and event order, not independent native recomputation/collision engine/fault-injection proof"
+}

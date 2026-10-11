@@ -1,0 +1,47 @@
+{
+  "role": "ACTUAL_OFFLINE_CYCLE_SEGMENTS_AND_4MS_MISS",
+  "cycle": 1,
+  "complete": 1,
+  "complete_cycle_seconds": 5.827029351,
+  "deadline_missed": 1,
+  "segments": [
+    {
+      "name": "observe",
+      "measured": 1,
+      "seconds": 0.003342598
+    },
+    {
+      "name": "nominal_maps",
+      "measured": 1,
+      "seconds": 0.423949881
+    },
+    {
+      "name": "geometry_assembly",
+      "measured": 1,
+      "seconds": 2.781287017
+    },
+    {
+      "name": "solve",
+      "measured": 1,
+      "seconds": 1.492228423
+    },
+    {
+      "name": "value_validation",
+      "measured": 1,
+      "seconds": 0.551992046
+    },
+    {
+      "name": "commit_journal",
+      "measured": 1,
+      "seconds": 0.519629017
+    }
+  ],
+  "ledger": {
+    "completed_commits": 2,
+    "forecast_budget_reservations": 4,
+    "step_budget_reservations": 4,
+    "original_session_charged_slots": 19764138,
+    "separate_logical_reserved_slots": 17836826
+  },
+  "scope": "monotonic realwall from current observe through retained solve/value/Cjournals/afterobserve+controlshift; timing serialization/manifest excluded; SDKstartup/termination excluded; geometryassembly includes genuine affine+fullQP+retained artifacts, 1600originalnominalgeometric assistance rows, sourcewholephysicalB/C stillmandatory"
+}

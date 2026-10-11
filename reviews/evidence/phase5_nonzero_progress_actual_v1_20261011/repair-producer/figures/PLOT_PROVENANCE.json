@@ -1,0 +1,23 @@
+{
+  "schema": "NUMERICAL_TAIL_PURE_REPAIR_PLOT_V1",
+  "inputs": {
+    "zero.stdout": "44a1a5d2550efe71e96a0203c7649ec9a77d8fa5beca9ab057d2ebeb063db2f5",
+    "reduced.stdout": "59667ca8a1111bbf43aea7aeb8849fca6d2ae8bd806986e06b8b1a582e9d4f3b",
+    "planning.stdout": "06ba3714a86482849f369cb77ceab756b0f078557879d0c86d5561d37627f336",
+    "FINITE_CLOCK_CERTIFICATES.json": "67d92240f5860195adeae412cf0d4c85f94b6f2005b26ed5e3796be06dd4582d",
+    "planning.REFERENCE_ERROR_BOUNDS.json": "e5fa15c50b0696dc233104b2a7c408218119b51ea75fa2d74127651c432d8b5c"
+  },
+  "outputs": {
+    "numerical_progress_tail_repair.png": {
+      "bytes": 271528,
+      "sha256": "98e4852dcd741c812e1d9084d6f3bbac6e7a6c32939824d768d61151037a3e6a"
+    },
+    "numerical_progress_tail_repair.svg": {
+      "bytes": 134847,
+      "sha256": "d34d54c0805a09378b1cd31a6d3530740c747cc4576059a80f4c9ed0070fab78"
+    }
+  },
+  "matplotlib_version": "3.6.3",
+  "scope": "all3prospectivemargins, all400pureclockerrors/bounds/planningspeeds/fullSI, savedoneinputcase; noactualmotion/globalguarantee",
+  "new_Model_or_MuJoCo": 0
+}

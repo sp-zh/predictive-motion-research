@@ -1,0 +1,73 @@
+schema: ACTIVE_SESSION_EVIDENCE_MANIFEST_V1
+stage: COMPLETE_THREE_CURRENT_NONZERO_PROGRESS_GEOMETRY_QP_TRANSACTIONS_NOT_FULL_TASK
+error: ""
+actual_boundary_unchanged: false
+output_bytes: 518680
+core_data_only_execution_permission: false
+phase5: NOT_ACCEPTED
+phase6: NOT_STARTED
+files:
+  - file: actual_warmup.bin
+    role: ACTUAL_TASK_INITIALIZATION_AND_PHYSICAL_WARMUP_V2
+    bytes: 504405
+    sha256: ddfe59b603e0caa2ef85b0bb3e3e14a75e4f57a639cc22f8bad2fda249802901
+    created: true
+    hash_valid: true
+    complete: true
+    error: ""
+  - file: journal_receipt.bin
+    role: ACTUAL_DURABLE_NATIVE_STEP_JOURNAL_PREFIX_V3
+    bytes: 574
+    sha256: 3c4d5f1dc890f18e0334167dce6b06c230124d339e12e97accfdb00d54ffa88b
+    created: true
+    hash_valid: true
+    complete: true
+    error: ""
+  - file: observation_before.bin
+    role: ACTUAL_NATIVE_SESSION_SNAPSHOT
+    bytes: 2585
+    sha256: 735d0fb470bf30efc1cfa6ee8529a4cf6450c540bd378a512551850fb007f5a5
+    created: true
+    hash_valid: true
+    complete: true
+    error: ""
+  - file: model_open.bin
+    role: SESSION_STARTUP_VERIFIED_METADATA
+    bytes: 1275
+    sha256: f5ec5debb244e76c025ca107bc44ae12d03755fd7159d86dafbe18ef126f0a07
+    created: true
+    hash_valid: true
+    complete: true
+    error: ""
+  - file: retained_commit_history.bin
+    role: ALL_ACTUAL_COMMIT_OUTCOMES_AND_TASK_ERRORS_V2
+    bytes: 6850
+    sha256: c24231a9d0564335265a788980e8b25f4e7a1cee1061af39fbe4819c2e5c8ec8
+    created: true
+    hash_valid: true
+    complete: true
+    error: ""
+  - file: observation_after.bin
+    role: ACTUAL_NATIVE_SESSION_SNAPSHOT
+    bytes: 2601
+    sha256: 5f74e1ea158b4c4123cfe69a572c71ba8cb44057e3eaeae61d346c9a883b2048
+    created: true
+    hash_valid: true
+    complete: true
+    error: ""
+  - file: bootstrap.bin
+    role: ACTUAL_DIRECT_SESSION_API_ENTRIES
+    bytes: 150
+    sha256: d3e5152172d091dcb46ea5f9767f3308c3fd2a9cf969c88494348502d2681a89
+    created: true
+    hash_valid: true
+    complete: true
+    error: ""
+  - file: entry_completion.bin
+    role: ACTIVE_SESSION_FINAL_SCOPE_AND_TIMING
+    bytes: 240
+    sha256: c5470a2a20b75450a88734758bdde5f0cf6201461e13713e996374dc17e7cef0
+    created: true
+    hash_valid: true
+    complete: true
+    error: ""

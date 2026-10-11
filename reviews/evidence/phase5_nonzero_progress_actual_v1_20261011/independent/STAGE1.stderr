@@ -1,0 +1,5 @@
+Traceback (most recent call last):
+  File "/private/tmp/root_independent_nonzero_progress_actual_review_20261011/audit_actual36.py", line 70, in <module>
+    diff=red['planning_rhs']-red['rhs'];assert np.count_nonzero(diff)==1 and abs(diff[15]-1e-13)<1e-28
+                                               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AssertionError

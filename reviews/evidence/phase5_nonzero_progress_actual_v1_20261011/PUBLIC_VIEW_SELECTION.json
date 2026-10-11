@@ -1,0 +1,40 @@
+{
+  "producer": {
+    "READY_sha256": "4bb6db2e0c5d2917f876d6c38e66c714aa42852c2806ae9cf6353c2c4776f310",
+    "all_payloads_verified": 304,
+    "public_selected": 290,
+    "omitted_large_raw_or_existing_diagnostic_images": [
+      "actual-dell/session-nonzero-progress-planning-tail-three-cycle-v1-20261011-attempt36/run-attempt1/artifacts/actual_step_journal.csv",
+      "actual-dell/session-nonzero-progress-planning-tail-three-cycle-v1-20261011-attempt36/run-attempt1/artifacts/cycle-0/inline_qp.bin",
+      "actual-dell/session-nonzero-progress-planning-tail-three-cycle-v1-20261011-attempt36/run-attempt1/artifacts/cycle-0/original_nominal.bin",
+      "actual-dell/session-nonzero-progress-planning-tail-three-cycle-v1-20261011-attempt36/run-attempt1/artifacts/cycle-0/qp_equality_reduction.bin",
+      "actual-dell/session-nonzero-progress-planning-tail-three-cycle-v1-20261011-attempt36/run-attempt1/artifacts/cycle-1/inline_qp.bin",
+      "actual-dell/session-nonzero-progress-planning-tail-three-cycle-v1-20261011-attempt36/run-attempt1/artifacts/cycle-1/original_nominal.bin",
+      "actual-dell/session-nonzero-progress-planning-tail-three-cycle-v1-20261011-attempt36/run-attempt1/artifacts/cycle-1/qp_equality_reduction.bin",
+      "actual-dell/session-nonzero-progress-planning-tail-three-cycle-v1-20261011-attempt36/run-attempt1/artifacts/cycle-2/inline_qp.bin",
+      "actual-dell/session-nonzero-progress-planning-tail-three-cycle-v1-20261011-attempt36/run-attempt1/artifacts/cycle-2/original_nominal.bin",
+      "actual-dell/session-nonzero-progress-planning-tail-three-cycle-v1-20261011-attempt36/run-attempt1/artifacts/cycle-2/qp_equality_reduction.bin",
+      "actual_collection.tar.gz",
+      "geometry-json/cycle-0.json",
+      "geometry-json/cycle-1.json",
+      "geometry-json/cycle-2.json"
+    ]
+  },
+  "independent": {
+    "READY_sha256": "0e255995ed9c762085b38fae8cc2e8e6e58c53d45bd7a1fef33ccde07f6e5f4d",
+    "all_payloads_verified": 25,
+    "public_selected": 25,
+    "omitted_large_raw_or_existing_diagnostic_images": []
+  },
+  "repair-producer": {
+    "READY_sha256": "8e349f67e3a159884df16ba57bdf4a9f60e4cd7f1190b7a8b1e6ed36ceb35d3c",
+    "all_payloads_verified": 252,
+    "public_selected": 248,
+    "omitted_large_raw_or_existing_diagnostic_images": [
+      "actual_collection.tar.gz",
+      "figures/numerical_progress_tail_repair.png",
+      "figures/numerical_progress_tail_repair.svg",
+      "phase5_numerical_progress_tail_pure35_review_v1_20261011/original_input.bin"
+    ]
+  }
+}

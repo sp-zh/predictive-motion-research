@@ -1,0 +1,145 @@
+schema: ACTIVE_SESSION_EVIDENCE_MANIFEST_V1
+stage: COMPLETE_REOBSERVED_DYNAMIC_TRANSACTION_DIAGNOSTIC
+error: ""
+actual_boundary_unchanged: false
+output_bytes: 55480648
+core_data_only_execution_permission: false
+phase5: NOT_ACCEPTED
+phase6: NOT_STARTED
+files:
+  - file: observation_before.bin
+    role: ACTUAL_NATIVE_SESSION_SNAPSHOT
+    bytes: 2601
+    sha256: 4bf55075ff4259d0c2f4783881ad21439712a0dbec88da0c93a090d7e4da7845
+    created: true
+    hash_valid: true
+    complete: true
+    error: ""
+  - file: original_nominal.bin
+    role: ORIGINAL_GENUINE_NOMINAL_BEFORE_ADAPTER
+    bytes: 12716678
+    sha256: 0ab6b27bb045ead297d8664d1c33e465793b5cda855fce0b0ea7f01338ee4226
+    created: true
+    hash_valid: true
+    complete: true
+    error: ""
+  - file: nominal_geometry_rows.bin
+    role: PRIVATELY_CURRENT_BOUND_GENUINE_NOMINAL_GEOMETRY_ROWS_V1
+    bytes: 668229
+    sha256: c0a7d3d0d2b7f072292733d7d0e1c9db3f0c97b9da83189cd8c63426e0a535af
+    created: true
+    hash_valid: true
+    complete: true
+    error: ""
+  - file: inline_qp.bin
+    role: INLINE_QP_COMPLETE_OR_RETAINED_PREFIX
+    bytes: 21673393
+    sha256: 4886413acb1c503d2b9219c0ce75a47462841acd130d9fed2d7e985ca7a82e53
+    created: true
+    hash_valid: true
+    complete: true
+    error: ""
+  - file: current_numeric_hint.bin
+    role: BOUNDED_CURRENT_MATRIX_OPTIMIZER_HINT_NOT_CANDIDATE
+    bytes: 69816
+    sha256: 25dec9d202b040ed6224b91798598e573924e95ef80a3ddf95a9fb84081d1683
+    created: true
+    hash_valid: true
+    complete: true
+    error: ""
+  - file: candidate.bin
+    role: SOLVER_RESULT_AND_DATA_ONLY_PREVIEW
+    bytes: 122215
+    sha256: 0192fdb0aaf35655fac3cbf4428b3d7f93f8d779245aea207a65df10395b582f
+    created: true
+    hash_valid: true
+    complete: true
+    error: ""
+  - file: solver_row_screen.bin
+    role: ORIGINAL_SI_INPUT_BOX_IMPLICATION_SCREEN
+    bytes: 536384
+    sha256: 864e5be11a6fc968fb25fb5d799ae8a281b93852e5b1eef8197bb082ca0bd501
+    created: true
+    hash_valid: true
+    complete: true
+    error: ""
+  - file: qp_equality_reduction.bin
+    role: ORIGINAL_AND_NUMERICAL_PLANNING_TERMINAL_REDUCTION_V2
+    bytes: 19323341
+    sha256: b92d399f5b6e549ffef79ecfe413397b790809a776a37664787c886a773c42dd
+    created: true
+    hash_valid: true
+    complete: true
+    error: ""
+  - file: planning_guard.bin
+    role: EXPLICIT_OPTIMIZER_ALPHA_PROGRESS_JERK_AND_NUMERICAL_TAIL_V3
+    bytes: 3074
+    sha256: 1ad2a054190b99a3d34fe5225199ed78493c020ba86c7356085bf8cf1888cf78
+    created: true
+    hash_valid: true
+    complete: true
+    error: ""
+  - file: candidate_value.bin
+    role: ORIGINAL_GENUINE_CANDIDATE_VALUE_NO_EXECUTION
+    bytes: 247890
+    sha256: e77c3f7641f709c803c4df8dd054d736cdd57f3ed33f7ef4db45eab4b470ae34
+    created: true
+    hash_valid: true
+    complete: true
+    error: ""
+  - file: candidate_validation.bin
+    role: FULL_PREDICTED_VALUE_DOMAINS_AND_DISCRETE_INTERPOLATION_V1
+    bytes: 109970
+    sha256: b1b52f24e7a3a182fe27dad55c728f0f998ea10e891fc56b0914a098f3205b22
+    created: true
+    hash_valid: true
+    complete: true
+    error: ""
+  - file: validation_initial.bin
+    role: BOUND_CURRENT_INITIAL_WEIGHTED_JACOBIAN_AND_GEOMETRY_V1
+    bytes: 881
+    sha256: e0f8c97d925ed3e7b6cc7e60f462013a918a969123674fd70b09898d8b30c7fc
+    created: true
+    hash_valid: true
+    complete: true
+    error: ""
+  - file: commit_journal_receipt.bin
+    role: ACTUAL_DURABLE_NATIVE_STEP_JOURNAL_PREFIX_V3
+    bytes: 584
+    sha256: 7be0b74dd0d66eb13215521ef9693f5cb6166baba870970fa4930b4039a1e424
+    created: true
+    hash_valid: true
+    complete: true
+    error: ""
+  - file: actual_commit.bin
+    role: TWO_REAL_2MS_HELD_TARGET_COMMIT_OR_RETAINED_PARTIAL_V1
+    bytes: 1381
+    sha256: a5b0311313dcdb1224d2ee4aed1019078a6b1f890487a74121dcb0d69d8bcc6e
+    created: true
+    hash_valid: true
+    complete: true
+    error: ""
+  - file: actual_task_errors.bin
+    role: ACTUAL_WORLD_TCP_TASK_ERROR_TWO_PHYSICAL_HALVES_V1
+    bytes: 1017
+    sha256: 93280cc5d67253033799f11cd30391acd1e281c0412256735a588e21de11b98d
+    created: true
+    hash_valid: true
+    complete: true
+    error: ""
+  - file: observation_after.bin
+    role: ACTUAL_NATIVE_SESSION_SNAPSHOT
+    bytes: 2601
+    sha256: c5e0707c419ac3eb331c2685cd76ee7b867a96f3fff0cf57897b3cdac3d72f3e
+    created: true
+    hash_valid: true
+    complete: true
+    error: ""
+  - file: cycle_timing.bin
+    role: ACTUAL_OFFLINE_CYCLE_SEGMENTS_AND_4MS_MISS
+    bytes: 593
+    sha256: 435a44444ead02df18564d2db7960cfece350e711a879cbe310f19d3038661b8
+    created: true
+    hash_valid: true
+    complete: true
+    error: ""

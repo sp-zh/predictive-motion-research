@@ -1,6 +1,8 @@
 # Phase 5 development status
 
-Updated 2026-10-11, America/Toronto. **Project resumed; the human authorizes continuous ordinary development within one functional work package.** Historical pauses, old freezes and rejected protocols remain preserved. Accepted through Phase4; Phase5 NOT_ACCEPTED; Phase6 NOT_STARTED.
+Updated 2026-10-11, America/Toronto. **Waiting for direct human manual resume after the completed offline batch.** Only current result-retention/review/backup closeout proceeds; no new development or simulation. Historical pauses, old freezes and rejected protocols remain preserved. Accepted through Phase4; Phase5 NOT_ACCEPTED; Phase6 NOT_STARTED.
+
+The [actual nonzero-progress short segment](../reviews/evidence/phase5_nonzero_progress_actual_v1_20261011/README.md) passes three current full144 geometry QPs/B400/C2 transactions under unchanged gates. Independent data confirms finalprogress2.239552e-6 and six TCP errors at most3.216mm/.005484rad; fulltask and physicalstop are unproven, all4ms cycle deadlines missed. Offline supervisor detached and naturally ended32.092s. Only current result retention and backup closeout continue; further development and actual presentation assets await manual resume.
 
 The [nonzero-progress numerical planning review](../reviews/evidence/phase5_nonzero_progress_numerical_tail_v1_20261011/README.md) retains literal negative-tail failures and independently verifies an explicit1e-13 planning target on the saved first QP. Full144 progress variables remain free, original exact equality is not claimed equivalent, and original acceptance gates remain unchanged. This source/pure result releases a separate bounded native attempt; actual task progress and stopping still need recorded runtime evidence.
 

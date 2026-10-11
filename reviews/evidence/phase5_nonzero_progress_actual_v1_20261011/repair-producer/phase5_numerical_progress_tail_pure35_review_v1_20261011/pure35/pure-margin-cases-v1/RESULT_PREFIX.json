@@ -1,0 +1,38 @@
+[
+  {
+    "name": "zero",
+    "delta_argument": "0",
+    "exit": 2,
+    "wall_s": 0.711325737007428,
+    "first_line": "complete=1 error= events=176",
+    "terminal_line": "terminal,0.00499116156799999,-1.6994869053710282e-17,failures,122",
+    "hashes": {
+      "/home/codextransfer/predictive_motion/results/phase5/full144-planning-margin-pure-v1-20261011-attempt35/build-attempt1/progress_numeric_forensics": "b6bac04993e52274ce0644d4dd79834c257a292a9355edad3e26cf212e6abd31",
+      "/home/codextransfer/predictive_motion/results/phase5/full144-ieee-terminal-pure-v1-20261011-attempt34/original-fixture-v1/original_input.bin": "896943953327260fdf3c7dbc1f337b90e2d4a013bf6a8fa28c37f1d43d32139c"
+    }
+  },
+  {
+    "name": "reduced",
+    "delta_argument": "1e-18",
+    "exit": 2,
+    "wall_s": 0.7002637890109327,
+    "first_line": "complete=1 error= events=176",
+    "terminal_line": "terminal,0.0049911615679999882,-2.0464316005663896e-17,failures,122",
+    "hashes": {
+      "/home/codextransfer/predictive_motion/results/phase5/full144-planning-margin-pure-v1-20261011-attempt35/build-attempt1/progress_numeric_forensics": "b6bac04993e52274ce0644d4dd79834c257a292a9355edad3e26cf212e6abd31",
+      "/home/codextransfer/predictive_motion/results/phase5/full144-ieee-terminal-pure-v1-20261011-attempt34/original-fixture-v1/original_input.bin": "896943953327260fdf3c7dbc1f337b90e2d4a013bf6a8fa28c37f1d43d32139c"
+    }
+  },
+  {
+    "name": "planning",
+    "delta_argument": "1e-13",
+    "exit": 0,
+    "wall_s": 0.6917596590064932,
+    "first_line": "complete=1 error= events=176",
+    "terminal_line": "terminal,0.0049911615680600071,1.000306337328033e-13,failures,0",
+    "hashes": {
+      "/home/codextransfer/predictive_motion/results/phase5/full144-planning-margin-pure-v1-20261011-attempt35/build-attempt1/progress_numeric_forensics": "b6bac04993e52274ce0644d4dd79834c257a292a9355edad3e26cf212e6abd31",
+      "/home/codextransfer/predictive_motion/results/phase5/full144-ieee-terminal-pure-v1-20261011-attempt34/original-fixture-v1/original_input.bin": "896943953327260fdf3c7dbc1f337b90e2d4a013bf6a8fa28c37f1d43d32139c"
+    }
+  }
+]

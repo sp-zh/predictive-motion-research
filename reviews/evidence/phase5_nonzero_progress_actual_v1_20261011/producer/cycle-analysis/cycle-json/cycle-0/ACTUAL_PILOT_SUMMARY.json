@@ -1,0 +1,266 @@
+{
+  "candidate_value_summary": {
+    "facts": {
+      "constructor_attempts": 1,
+      "metadata_attempts": 1,
+      "rollout_attempts": 1
+    },
+    "raw_exists": 1,
+    "success": 1,
+    "has_final_state": 1,
+    "error": "",
+    "transport_error": "",
+    "nominal_digest": "c84d99eed0153628d4e1e378aebdf61dbdb061fc63abd07fd1ab09c35a92a4dc",
+    "candidate_digest": "298a9e041749e55aec0b0097792518c37ab8af7660e1ac118544c4bff8757828",
+    "substeps": 400,
+    "cycle_states": 200,
+    "cell_states": 20
+  },
+  "assessment_summary": {
+    "role": "FULL_PREDICTED_VALUE_DOMAINS_AND_DISCRETE_INTERPOLATION_V1",
+    "attempted": 1,
+    "passed": 1,
+    "stage": "PASS_FULL_VALUE_ONLY_CURRENT_CANDIDATE_NO_EXECUTION_PERMIT",
+    "error": "",
+    "reach_bound_m": 1.653118739175897,
+    "geometry_radius_m": 2.0,
+    "sigma_lipschitz": 32.0,
+    "interval_scope": "interval support is original fixed-step model linear interpolation only; no continuous plant/hardware certificate or online latency claim",
+    "retained_points": 400,
+    "completed_points": 400,
+    "first_failure": null,
+    "last_completed_point": {
+      "sample": 399,
+      "cell": 19,
+      "cycle": 40,
+      "half": 2,
+      "elapsed": 0.8,
+      "acceleration": [
+        -0.00027927301866385125,
+        0.00021076862117193768,
+        -0.00028064447765152394,
+        -0.0002936177015729413,
+        0.00027676390399188706,
+        -0.0002906457280939157,
+        0.0002563540962795608
+      ],
+      "jerk": [
+        0.0018781152821672738,
+        -0.0005183278841739921,
+        0.0017091964128017605,
+        0.0015323549322844349,
+        -0.002012570977669788,
+        0.0019924382306293334,
+        -0.0022267677847107566
+      ],
+      "min_true": 0.01558697693493688,
+      "min_cover": 0.022280509942828895,
+      "sigma": 0.0398616614370639,
+      "geometry_interval_lower": 0.015583292558777525,
+      "sigma_interval_lower": 0.03984018642778905,
+      "affine_error": 1.2138368848740259e-10,
+      "joint_trust": 9.788713493685819e-05,
+      "geometry_queries": 9035,
+      "complete": 1,
+      "stage": "COMPLETE_VALUE_CANDIDATE_2MS_CHECK",
+      "error": ""
+    }
+  },
+  "commit_summary": {
+    "role": "TWO_REAL_2MS_HELD_TARGET_COMMIT_OR_RETAINED_PARTIAL_V1",
+    "attempted": 1,
+    "success": 1,
+    "native_step_attempts": 2,
+    "native_returns": 2,
+    "stage": "COMPLETE_TWO_REAL_2MS_HELD_TARGET_COMMIT",
+    "error": "",
+    "history_before": [
+      0,
+      0
+    ],
+    "history_after": [
+      1,
+      1
+    ],
+    "held_C": [
+      -1.2457657329260912,
+      0.09664779041074283,
+      1.15463214461952,
+      -2.7819779622015477,
+      -0.09755089222040622,
+      4.385246719633958,
+      -1.6281268491117311
+    ],
+    "before_time": 2.0000000000000013,
+    "after_time": 2.004000000000001,
+    "points": [
+      {
+        "substep": 1,
+        "simulation_time": 2.002000000000001,
+        "native_returned": 1,
+        "native_joints_read": 7,
+        "scratch_joints_read": 7,
+        "q": [
+          -1.2457657479972657,
+          0.09866495574210202,
+          1.1540916191427322,
+          -2.785580959239316,
+          -0.09762355579294828,
+          4.384426021781889,
+          -1.6281406873570805
+        ],
+        "v": [
+          1.7339921873892236e-08,
+          9.620115169927556e-06,
+          -8.996663544944664e-08,
+          -3.1123365076878343e-07,
+          3.267040757437281e-09,
+          -1.9850991250871893e-08,
+          -1.3188293983248161e-08
+        ],
+        "C": [
+          -1.2457657329260912,
+          0.09664779041074283,
+          1.15463214461952,
+          -2.7819779622015477,
+          -0.09755089222040622,
+          4.385246719633958,
+          -1.6281268491117311
+        ],
+        "acceleration": [
+          1.0112160540784862e-05,
+          -3.0246793082199422e-05,
+          1.176367776570552e-05,
+          8.838345595653709e-06,
+          -8.225877724711882e-06,
+          6.3101155054378125e-06,
+          -6.751630684445712e-06
+        ],
+        "jerk": [
+          0.005050338590137004,
+          -0.002145037567200948,
+          0.0057106498457285305,
+          0.0035412690564068368,
+          -0.0040869439918624125,
+          0.0030927128572222264,
+          -0.00337544687077889
+        ],
+        "jerk_available": 1,
+        "geometry_complete": 1,
+        "independent_observer_guard": 1,
+        "contacts": 0,
+        "warnings": [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        "minimum_true": 0.015589752217377363,
+        "minimum_cover": 0.022112111090645904,
+        "tcp_frame_error": 7.819966288099224e-16,
+        "arm_frame_error": 7.435706384684081e-16,
+        "sigma": 0.03986637981160701,
+        "geometry_interval_lower": 0.015588671616554082,
+        "sigma_interval_lower": 0.03986573441409079,
+        "geometry_queries": 9035,
+        "passed": 1,
+        "stage": "COMPLETE_ACTUAL_VALIDATED_COMMIT_HALF",
+        "error": ""
+      },
+      {
+        "substep": 2,
+        "simulation_time": 2.004000000000001,
+        "native_returned": 1,
+        "native_joints_read": 7,
+        "scratch_joints_read": 7,
+        "q": [
+          -1.245765747930713,
+          0.09866497486557688,
+          1.154091618999388,
+          -2.785580959831714,
+          -0.09762355581375,
+          4.3844260217642095,
+          -1.628140687407325
+        ],
+        "v": [
+          3.327635194524788e-08,
+          9.561737431425342e-06,
+          -7.16721244633371e-08,
+          -2.961991480064722e-07,
+          -1.0400863185316215e-08,
+          -8.839458259477045e-09,
+          -2.512224811777186e-08
+        ],
+        "C": [
+          -1.2457657329260912,
+          0.09664779041074283,
+          1.15463214461952,
+          -2.7819779622015477,
+          -0.09755089222040622,
+          4.385246719633958,
+          -1.6281268491117311
+        ],
+        "acceleration": [
+          7.968215035677823e-06,
+          -2.918886925110698e-05,
+          9.14725549305477e-06,
+          7.517251381155626e-06,
+          -6.833951971376748e-06,
+          5.505766495697424e-06,
+          -5.966977067261849e-06
+        ],
+        "jerk": [
+          -0.0010719727525535193,
+          0.0005289619155462214,
+          -0.0013082111363253751,
+          -0.0006605471072490414,
+          0.0006959628766675667,
+          -0.0004021745048701942,
+          0.0003923268085919315
+        ],
+        "jerk_available": 1,
+        "geometry_complete": 1,
+        "independent_observer_guard": 1,
+        "contacts": 0,
+        "warnings": [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        "minimum_true": 0.015589752217866413,
+        "minimum_cover": 0.022112110024783575,
+        "tcp_frame_error": 8.91188519696932e-16,
+        "arm_frame_error": 8.246836280829951e-16,
+        "sigma": 0.03986638040654074,
+        "geometry_interval_lower": 0.015588672159395897,
+        "sigma_interval_lower": 0.03986573934775528,
+        "geometry_queries": 9035,
+        "passed": 1,
+        "stage": "COMPLETE_ACTUAL_VALIDATED_COMMIT_HALF",
+        "error": ""
+      }
+    ]
+  },
+  "planning_guard_summary": {
+    "role": "EXPLICIT_OPTIMIZER_ALPHA_PROGRESS_JERK_AND_NUMERICAL_TAIL_V3",
+    "solver_alpha_guard": 0.000999,
+    "strict_alpha_guard": 0.001,
+    "solver_progress_jerk_guard": 4.999,
+    "strict_progress_jerk_guard": 4.9995,
+    "actual_previous_b": 0.0,
+    "planning_terminal_progress_r_target": 1e-13,
+    "base_solver_row_count": 7072,
+    "backend_internal_guard_label": "internal_progress_jerk_guard/cell/19",
+    "scope": "additional160solver rows:140alpha +20progressjerk with actualpreviousb; all144 reduced controls incl18progress; original full14756SI/H/g/F/f/c/E unchanged; guard rows have originalrow\u22121, never fabricated originalSI index; smaller planning subset, no originalQP optimum/fulltask claim",
+    "guard_rows": 160
+  }
+}

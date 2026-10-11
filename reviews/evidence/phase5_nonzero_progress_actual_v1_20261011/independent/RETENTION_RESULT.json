@@ -1,0 +1,167 @@
+{
+  "schema": "ROOT_ACTUAL36_RETENTION_CLOSEOUT_V1",
+  "warm_points": 1000,
+  "warm_journal_rows": 3000,
+  "warm_final_state_and_actual_history_match_task0": true,
+  "startup_physical_derivatives_excluded": {
+    "max_a": 6.6436306091723925,
+    "max_available_j": 1357.6628167075585,
+    "first_j_available": 0
+  },
+  "all1200_value_bounds_checked": 1200,
+  "hint_signed_complementarity_max": 8.9956929417895e-19,
+  "all3_retained_actual_commit_and_task_metric_records_exact": true,
+  "actual6_bounds_checked": true,
+  "all1703_profile_before_after_records_exact": true,
+  "profile_bound_actual_single_dispatch": true,
+  "facts": [
+    1,
+    2,
+    1,
+    1016,
+    1014,
+    2040,
+    8,
+    1006,
+    3
+  ],
+  "input_pins": {
+    "/private/tmp/root_independent_geometry_qp_actual_review_20261011/audit_geometry_qp_actual.py": {
+      "bytes": 42626,
+      "sha256": "b648463d205992e217480407e8b2a5e553ac0401137b3a1ce084f1bcc3597c5b"
+    },
+    "/private/tmp/root_independent_nonzero_progress_actual_review_20261011/audit_actual36.py": {
+      "bytes": 16689,
+      "sha256": "72b61c0ddac051f40ff627979abd82d0fd9d5b644b7a4763a4ef5bd2026a41f2"
+    },
+    "/private/tmp/phase5_nonzero_progress_tail_runtime_profile_v1_20261011/profile-version1/active_input.json": {
+      "bytes": 326848,
+      "sha256": "f934cb99018da10b102af5fb1283075e83c8d5d91156e7216cdc069b481c9076"
+    },
+    "/private/tmp/phase5_nonzero_progress_tail_runtime_profile_v1_20261011/profile-version1/PRODUCER.json": {
+      "bytes": 276,
+      "sha256": "933c40f757aea7543aab51fab3f063349fa5c58ff886e33589afea5ec1dc0cfa"
+    },
+    "/private/tmp/phase5_nonzero_progress_tail_runtime_profile_v1_20261011/active_run_plan.json": {
+      "bytes": 497908,
+      "sha256": "ae2ec0e7f0b89de2bc2f50f56e385c41598a25f3e2ba8e9731d57a99022ecea8"
+    },
+    "/Users/uot/Documents/ChatGPT/ros/results/phase5-reference/nonzero-progress-actual-v1-20261011/runtime-import1/artifacts/observation_before.bin": {
+      "bytes": 2585,
+      "sha256": "735d0fb470bf30efc1cfa6ee8529a4cf6450c540bd378a512551850fb007f5a5"
+    },
+    "/Users/uot/Documents/ChatGPT/ros/results/phase5-reference/nonzero-progress-actual-v1-20261011/runtime-import1/artifacts/actual_warmup.bin": {
+      "bytes": 504405,
+      "sha256": "ddfe59b603e0caa2ef85b0bb3e3e14a75e4f57a639cc22f8bad2fda249802901"
+    },
+    "/Users/uot/Documents/ChatGPT/ros/results/phase5-reference/nonzero-progress-actual-v1-20261011/runtime-import1/artifacts/actual_step_journal.csv": {
+      "bytes": 1813021,
+      "sha256": "eea9da2c74e5b8e20776e7e0df04e8926c9ab278117fcce5c9fb03ac16927313"
+    },
+    "/private/tmp/public_live_affine_v2_integrated_first_cycle_canonical_protocol_repair_v2_20261010/proposed-files/inputs/public_constants.json": {
+      "bytes": 4481,
+      "sha256": "d37c9a12539345fd1dbb6718cd273584140359ca2bd9834442bf2228e50f6bdd"
+    },
+    "/Users/uot/Documents/ChatGPT/ros/results/phase5-reference/nonzero-progress-actual-v1-20261011/runtime-import1/artifacts/retained_commit_history.bin": {
+      "bytes": 6850,
+      "sha256": "c24231a9d0564335265a788980e8b25f4e7a1cee1061af39fbe4819c2e5c8ec8"
+    },
+    "/Users/uot/Documents/ChatGPT/ros/results/phase5-reference/nonzero-progress-actual-v1-20261011/runtime-import1/artifacts/cycle-0/candidate_value.bin": {
+      "bytes": 249087,
+      "sha256": "37d241452f0cafa82070ac27aa248ee3f7cc2647df05f9d2cf1db59c009615d0"
+    },
+    "/Users/uot/Documents/ChatGPT/ros/results/phase5-reference/nonzero-progress-actual-v1-20261011/runtime-import1/artifacts/cycle-0/candidate_validation.bin": {
+      "bytes": 109970,
+      "sha256": "dacdb04178745c1284336d911a93c391fa0c37fb206684f409d3e739a0e8abfb"
+    },
+    "/Users/uot/Documents/ChatGPT/ros/results/phase5-reference/nonzero-progress-actual-v1-20261011/runtime-import1/artifacts/cycle-0/qp_equality_reduction.bin": {
+      "bytes": 19323341,
+      "sha256": "1a2b366b66ade762e1d80faa3c082044cf5969f9592b86c9a80b0cc7b36525e5"
+    },
+    "/Users/uot/Documents/ChatGPT/ros/results/phase5-reference/nonzero-progress-actual-v1-20261011/runtime-import1/artifacts/cycle-0/current_numeric_hint.bin": {
+      "bytes": 71552,
+      "sha256": "e3d5dd9b023319c9cb90647f842a16e418e16e37edce470ace4d59c132d9659b"
+    },
+    "/Users/uot/Documents/ChatGPT/ros/results/phase5-reference/nonzero-progress-actual-v1-20261011/runtime-import1/artifacts/cycle-0/actual_commit.bin": {
+      "bytes": 1381,
+      "sha256": "5a71af3c492c9022da5519854657ef1f75e416765fb0d6e802ecada62c422e62"
+    },
+    "/Users/uot/Documents/ChatGPT/ros/results/phase5-reference/nonzero-progress-actual-v1-20261011/runtime-import1/artifacts/cycle-0/actual_task_errors.bin": {
+      "bytes": 1017,
+      "sha256": "a74b12dfb3bb1cfee2a95ce9d91a911a00b3224b7fe676f949f0bd635f5b9003"
+    },
+    "/Users/uot/Documents/ChatGPT/ros/results/phase5-reference/nonzero-progress-actual-v1-20261011/runtime-import1/artifacts/cycle-1/candidate_value.bin": {
+      "bytes": 247890,
+      "sha256": "e77c3f7641f709c803c4df8dd054d736cdd57f3ed33f7ef4db45eab4b470ae34"
+    },
+    "/Users/uot/Documents/ChatGPT/ros/results/phase5-reference/nonzero-progress-actual-v1-20261011/runtime-import1/artifacts/cycle-1/candidate_validation.bin": {
+      "bytes": 109970,
+      "sha256": "b1b52f24e7a3a182fe27dad55c728f0f998ea10e891fc56b0914a098f3205b22"
+    },
+    "/Users/uot/Documents/ChatGPT/ros/results/phase5-reference/nonzero-progress-actual-v1-20261011/runtime-import1/artifacts/cycle-1/qp_equality_reduction.bin": {
+      "bytes": 19323341,
+      "sha256": "b92d399f5b6e549ffef79ecfe413397b790809a776a37664787c886a773c42dd"
+    },
+    "/Users/uot/Documents/ChatGPT/ros/results/phase5-reference/nonzero-progress-actual-v1-20261011/runtime-import1/artifacts/cycle-1/current_numeric_hint.bin": {
+      "bytes": 69816,
+      "sha256": "25dec9d202b040ed6224b91798598e573924e95ef80a3ddf95a9fb84081d1683"
+    },
+    "/Users/uot/Documents/ChatGPT/ros/results/phase5-reference/nonzero-progress-actual-v1-20261011/runtime-import1/artifacts/cycle-1/actual_commit.bin": {
+      "bytes": 1381,
+      "sha256": "a5b0311313dcdb1224d2ee4aed1019078a6b1f890487a74121dcb0d69d8bcc6e"
+    },
+    "/Users/uot/Documents/ChatGPT/ros/results/phase5-reference/nonzero-progress-actual-v1-20261011/runtime-import1/artifacts/cycle-1/actual_task_errors.bin": {
+      "bytes": 1017,
+      "sha256": "93280cc5d67253033799f11cd30391acd1e281c0412256735a588e21de11b98d"
+    },
+    "/Users/uot/Documents/ChatGPT/ros/results/phase5-reference/nonzero-progress-actual-v1-20261011/runtime-import1/artifacts/cycle-2/candidate_value.bin": {
+      "bytes": 247890,
+      "sha256": "7213ae11a29eb85216cb914f6507da49868f3e0065325f01830c36b27eef96f9"
+    },
+    "/Users/uot/Documents/ChatGPT/ros/results/phase5-reference/nonzero-progress-actual-v1-20261011/runtime-import1/artifacts/cycle-2/candidate_validation.bin": {
+      "bytes": 109970,
+      "sha256": "31d4ab56b0915a699bba1f78b98efaf20747be1849928f6772a3ccedee8ae035"
+    },
+    "/Users/uot/Documents/ChatGPT/ros/results/phase5-reference/nonzero-progress-actual-v1-20261011/runtime-import1/artifacts/cycle-2/qp_equality_reduction.bin": {
+      "bytes": 19320981,
+      "sha256": "9384159f1babe115cecde5136c9b98be750d1ef2334386088d239aea28dce188"
+    },
+    "/Users/uot/Documents/ChatGPT/ros/results/phase5-reference/nonzero-progress-actual-v1-20261011/runtime-import1/artifacts/cycle-2/current_numeric_hint.bin": {
+      "bytes": 69808,
+      "sha256": "6245dabcae511f35ac2f213def941e0b67d291238554d9434647cce994c22bfc"
+    },
+    "/Users/uot/Documents/ChatGPT/ros/results/phase5-reference/nonzero-progress-actual-v1-20261011/runtime-import1/artifacts/cycle-2/actual_commit.bin": {
+      "bytes": 1381,
+      "sha256": "9c8025d0dbdfef28a4c73df8c649e6d4ff7dc672775c6ded438effe12f49e617"
+    },
+    "/Users/uot/Documents/ChatGPT/ros/results/phase5-reference/nonzero-progress-actual-v1-20261011/runtime-import1/artifacts/cycle-2/actual_task_errors.bin": {
+      "bytes": 1017,
+      "sha256": "76d99df06633bbd20e34fcf09088e2b9e278146894a1e370f91f416696ed48ef"
+    },
+    "/Users/uot/Documents/ChatGPT/ros/results/phase5-reference/nonzero-progress-actual-v1-20261011/runtime-import1/BEFORE_INPUT_IDENTITIES.json": {
+      "bytes": 512151,
+      "sha256": "e20d86c8228766ce1acb9f80e760d458e1abdc931dae287b18b9df3a69118076"
+    },
+    "/Users/uot/Documents/ChatGPT/ros/results/phase5-reference/nonzero-progress-actual-v1-20261011/runtime-import1/AFTER_INPUT_IDENTITIES.json": {
+      "bytes": 512151,
+      "sha256": "e20d86c8228766ce1acb9f80e760d458e1abdc931dae287b18b9df3a69118076"
+    },
+    "/Users/uot/Documents/ChatGPT/ros/results/phase5-reference/nonzero-progress-actual-v1-20261011/runtime-import1/BEFORE_READONLY_ROSTERS.json": {
+      "bytes": 3,
+      "sha256": "37517e5f3dc66819f61f5a7bb8ace1921282415f10551d2defa5c3eb0985b570"
+    },
+    "/Users/uot/Documents/ChatGPT/ros/results/phase5-reference/nonzero-progress-actual-v1-20261011/runtime-import1/AFTER_READONLY_ROSTERS.json": {
+      "bytes": 3,
+      "sha256": "37517e5f3dc66819f61f5a7bb8ace1921282415f10551d2defa5c3eb0985b570"
+    },
+    "/Users/uot/Documents/ChatGPT/ros/results/phase5-reference/nonzero-progress-actual-v1-20261011/runtime-import1/BATCH_PREFIX.json": {
+      "bytes": 2163,
+      "sha256": "3df0f115f0de8cb8ab8d101a952ce0369d0c489eced937c0d2bcae6a8ddf13b1"
+    },
+    "/Users/uot/Documents/ChatGPT/ros/results/phase5-reference/nonzero-progress-actual-v1-20261011/runtime-import1/artifacts/bootstrap.bin": {
+      "bytes": 150,
+      "sha256": "d3e5152172d091dcb46ea5f9767f3308c3fd2a9cf969c88494348502d2681a89"
+    }
+  },
+  "scope": "Saved-file arithmetic/provenance only; full queryraw not retained, no fault injection, runtime SDK proof beyond recorded pins/Root passive proof, task/stop/realtime/Phase5 acceptance."
+}

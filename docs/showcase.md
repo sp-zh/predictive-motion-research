@@ -716,3 +716,7 @@ The [supplemental A5/A7 hint provenance](../reviews/evidence/phase5_task_start_n
 ![Pure saved-QP progress and refused terminal speed](../figures/phase5_nonzero_progress_numerical_tail_v1_20261011/full144_progress_refused_tail.png)
 
 [SVG](../figures/phase5_nonzero_progress_numerical_tail_v1_20261011/full144_progress_refused_tail.svg) · [provenance](../figures/phase5_nonzero_progress_numerical_tail_v1_20261011/PLOT_PROVENANCE.json) · [scope and repair evidence](../reviews/evidence/phase5_nonzero_progress_numerical_tail_v1_20261011/README.md).400 saved command references show attempted progress, but both strict tail checks refuse. The separate explicit planning target has passed saved-input arithmetic; this figure remains the original failure. No new executed motion, task video, physical stop or phase acceptance follows.
+
+## Actual nonzero-progress short segment — presentation deferred under pause
+
+[Actual36 evidence and raw arithmetic](../reviews/evidence/phase5_nonzero_progress_actual_v1_20261011/README.md) · [six actual worldTCP pose/error rows](../reviews/evidence/phase5_nonzero_progress_actual_v1_20261011/independent/actual6_task_pose_errors.csv) · [offline startup and normal exit](../reviews/evidence/phase5_offline_single36_v1_20261011/README.md). Three accepted transactions cover12ms with tiny positive progress, original10mm/.05rad TCP checks and all4ms deadlines missed. No new actual render/video was produced after the human pause. Presentation assets wait for manual resume; prior pure figures are not substituted as actual motion proof.

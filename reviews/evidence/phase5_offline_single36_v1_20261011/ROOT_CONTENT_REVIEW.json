@@ -1,0 +1,19 @@
+{
+  "schema": "ROOT_OFFLINE37_STARTUP_CONTENT_REVIEW_V1",
+  "launch_single_use_release_sha256": "bef6891d705e600dd619a6599789a521bdfb56095f8796e3e2012a072eef8f2f",
+  "captured_files": 14,
+  "captured_bytes": 31311,
+  "new_SSH_after_launch_ended_observed_alive": true,
+  "final_exit0_elapsed_seconds": 32.091719003015896,
+  "limits": "Outer300s plus30s finalhash; observed output1GiB andfree10GiB reserve, inner36 process limits unchanged; serialexactoneentry/no retry/no network/Git/source writes",
+  "existing_power_observations": "Raw powercfg ACsleep/hibernate/lid0; WSL keeper501 sleepinfinity, readonly observations no system-setting change",
+  "qualifications": [
+    "Outputlimit sampled every0.5s, not strict instantaneous allocator/storage cap",
+    "Native WSL statvfs free virtual capacity; physicalD125997867008B observed at launch, no large full-task storage claim",
+    "Normal startup/detach/termination proven; forced timeout/kill andsignal handling not exercised by this success",
+    "Positive launch and exit status do not replace actual36 content/phase review"
+  ],
+  "scope": "Source and captured control records only, no new native action",
+  "phase5": "NOT_ACCEPTED",
+  "phase6": "NOT_STARTED"
+}

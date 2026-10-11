@@ -1,0 +1,847 @@
+{
+  "schema": "ROOT_ACTUAL36_TARGETED_CHAIN_STAGE1_V1",
+  "actual_runtime_sha256": "a8002776d4850dc1b87df9b2aa384d8ea23e5c0f1dd527881c394a25dfe031ec",
+  "payloads": 77,
+  "bytes": 169834436,
+  "cycles": [
+    {
+      "cycle": 0,
+      "native": {
+        "flags": [
+          0,
+          1,
+          1,
+          0,
+          1,
+          0,
+          1
+        ],
+        "setup": 0.044975276,
+        "solve": 0.0029056159999999998
+      },
+      "SI_max": 9.99975926715968e-14,
+      "full_SI_rows": 14756,
+      "free_columns": 144,
+      "original_E_offset_error": 1e-13,
+      "planning_E_offset_error": 0.0,
+      "strict200_and400_pass": true,
+      "terminal_r": 1.0003838577833657e-13,
+      "exact_tail": 0,
+      "initial_s_r_b": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "accepted_s_r_b": [
+        1.5996799999999997e-07,
+        7.998399999999999e-05,
+        0.019995999999999996
+      ],
+      "accepted_w": [
+        3.996e-06,
+        -3.996e-06,
+        3.996e-06,
+        3.996e-06,
+        -3.996e-06,
+        3.996e-06,
+        -3.996e-06
+      ],
+      "B_max30": 2.2140449390040725e-10,
+      "B_trust": 9.788713493685819e-05,
+      "B_interval_error_all400": 0.0,
+      "C": {
+        "value_actual_qv_absmax": 4.924588724474255e-16,
+        "actual_first_and_second_interval_arithmetic_error": 0.0,
+        "history": [
+          0,
+          0,
+          1,
+          1
+        ],
+        "times": [
+          2.002000000000001,
+          2.004000000000001
+        ],
+        "journal_events": 8
+      },
+      "actual_task_path_formula_error": 0.0,
+      "timing": {
+        "cycle": 0,
+        "finalized": 1,
+        "wall": 5.338923301,
+        "missed": 1,
+        "segments": [
+          [
+            1,
+            0.003751823
+          ],
+          [
+            1,
+            0.442161287
+          ],
+          [
+            1,
+            2.69209824
+          ],
+          [
+            1,
+            1.415010228
+          ],
+          [
+            1,
+            0.747183259
+          ],
+          [
+            1,
+            0.035561066
+          ]
+        ],
+        "counts": [
+          1,
+          2,
+          2,
+          15505159,
+          8918413
+        ],
+        "scope": "monotonic realwall from current observe through retained solve/value/Cjournals/afterobserve+controlshift; timing serialization/manifest excluded; SDKstartup/termination excluded; geometryassembly includes genuine affine+fullQP+retained artifacts, 1600originalnominalgeometric assistance rows, sourcewholephysicalB/C stillmandatory"
+      },
+      "hint_stationarity": 1.3877787807814457e-17,
+      "binary_receipts": {
+        "files": 17,
+        "bytes": 55483537,
+        "core_data_only_execution_permission": false
+      }
+    },
+    {
+      "cycle": 1,
+      "native": {
+        "flags": [
+          0,
+          1,
+          1,
+          0,
+          1,
+          0,
+          1
+        ],
+        "setup": 0.040932426,
+        "solve": 0.002974315
+      },
+      "SI_max": 1.000022818459928e-13,
+      "full_SI_rows": 14756,
+      "free_columns": 144,
+      "original_E_offset_error": 1.0000000502143058e-13,
+      "planning_E_offset_error": 0.0,
+      "strict200_and400_pass": true,
+      "terminal_r": 9.998309146753981e-14,
+      "exact_tail": 0,
+      "initial_s_r_b": [
+        1.5996799999999997e-07,
+        7.998399999999999e-05,
+        0.019995999999999996
+      ],
+      "accepted_s_r_b": [
+        7.998399999999999e-07,
+        0.00023995199999999996,
+        0.03999199999999999
+      ],
+      "accepted_w": [
+        7.992e-06,
+        -7.992e-06,
+        7.992e-06,
+        7.992e-06,
+        -7.992e-06,
+        7.992e-06,
+        -7.992e-06
+      ],
+      "B_max30": 5.099138342470888e-14,
+      "B_trust": 1.1980723089166645e-06,
+      "B_interval_error_all400": 0.0,
+      "C": {
+        "value_actual_qv_absmax": 3.895531192725476e-16,
+        "actual_first_and_second_interval_arithmetic_error": 0.0,
+        "history": [
+          1,
+          1,
+          2,
+          2
+        ],
+        "times": [
+          2.0060000000000007,
+          2.0080000000000005
+        ],
+        "journal_events": 8
+      },
+      "actual_task_path_formula_error": 0.0,
+      "timing": {
+        "cycle": 1,
+        "finalized": 1,
+        "wall": 5.827029351,
+        "missed": 1,
+        "segments": [
+          [
+            1,
+            0.003342598
+          ],
+          [
+            1,
+            0.423949881
+          ],
+          [
+            1,
+            2.781287017
+          ],
+          [
+            1,
+            1.492228423
+          ],
+          [
+            1,
+            0.551992046
+          ],
+          [
+            1,
+            0.519629017
+          ]
+        ],
+        "counts": [
+          2,
+          4,
+          4,
+          19764138,
+          17836826
+        ],
+        "scope": "monotonic realwall from current observe through retained solve/value/Cjournals/afterobserve+controlshift; timing serialization/manifest excluded; SDKstartup/termination excluded; geometryassembly includes genuine affine+fullQP+retained artifacts, 1600originalnominalgeometric assistance rows, sourcewholephysicalB/C stillmandatory"
+      },
+      "hint_stationarity": 4.5102810375396984e-17,
+      "binary_receipts": {
+        "files": 17,
+        "bytes": 55480648,
+        "core_data_only_execution_permission": false
+      }
+    },
+    {
+      "cycle": 2,
+      "native": {
+        "flags": [
+          0,
+          1,
+          1,
+          0,
+          1,
+          0,
+          1
+        ],
+        "setup": 0.03717255,
+        "solve": 0.002636088
+      },
+      "SI_max": 9.999745714632524e-14,
+      "full_SI_rows": 14756,
+      "free_columns": 144,
+      "original_E_offset_error": 1.0000000502143058e-13,
+      "planning_E_offset_error": 0.0,
+      "strict200_and400_pass": true,
+      "terminal_r": 9.9978158347655e-14,
+      "exact_tail": 0,
+      "initial_s_r_b": [
+        7.998399999999999e-07,
+        0.00023995199999999996,
+        0.03999199999999999
+      ],
+      "accepted_s_r_b": [
+        2.2395519999999996e-06,
+        0.0004799039999999999,
+        0.059987999999999986
+      ],
+      "accepted_w": [
+        1.1988000000000001e-05,
+        -1.1988000000000001e-05,
+        1.1988000000000001e-05,
+        1.1988000000000001e-05,
+        -1.1988000000000001e-05,
+        1.1988000000000001e-05,
+        -1.1988000000000001e-05
+      ],
+      "B_max30": 4.8840895520638195e-14,
+      "B_trust": 1.211851131888153e-06,
+      "B_interval_error_all400": 0.0,
+      "C": {
+        "value_actual_qv_absmax": 3.134504184225254e-16,
+        "actual_first_and_second_interval_arithmetic_error": 0.0,
+        "history": [
+          2,
+          2,
+          3,
+          3
+        ],
+        "times": [
+          2.0100000000000002,
+          2.012
+        ],
+        "journal_events": 8
+      },
+      "actual_task_path_formula_error": 0.0,
+      "timing": {
+        "cycle": 2,
+        "finalized": 1,
+        "wall": 6.140950591,
+        "missed": 1,
+        "segments": [
+          [
+            1,
+            0.054719667
+          ],
+          [
+            1,
+            0.476363585
+          ],
+          [
+            1,
+            2.830325627
+          ],
+          [
+            1,
+            1.488055279
+          ],
+          [
+            1,
+            0.531986244
+          ],
+          [
+            1,
+            0.580646256
+          ]
+        ],
+        "counts": [
+          3,
+          6,
+          6,
+          24023117,
+          26755239
+        ],
+        "scope": "monotonic realwall from current observe through retained solve/value/Cjournals/afterobserve+controlshift; timing serialization/manifest excluded; SDKstartup/termination excluded; geometryassembly includes genuine affine+fullQP+retained artifacts, 1600originalnominalgeometric assistance rows, sourcewholephysicalB/C stillmandatory"
+      },
+      "hint_stationarity": 2.0816681711721685e-17,
+      "binary_receipts": {
+        "files": 17,
+        "bytes": 55478362,
+        "core_data_only_execution_permission": false
+      }
+    }
+  ],
+  "entry": {
+    "stage": "COMPLETE_THREE_CURRENT_NONZERO_PROGRESS_GEOMETRY_QP_TRANSACTIONS_NOT_FULL_TASK",
+    "wall": 29.895881058,
+    "actual_substeps": 1006,
+    "task_substeps": 6,
+    "commits": 3,
+    "termination": [
+      1,
+      1
+    ]
+  },
+  "pin_records": 1703,
+  "pin_unique": 1674,
+  "task_translation_max_m": 0.003215925283117378,
+  "task_SO3_max_rad": 0.005484373014887934,
+  "root_receipts": {
+    "files": 8,
+    "bytes": 518680,
+    "core_data_only_execution_permission": false
+  },
+  "input_pins": {
+    "/private/tmp/root_independent_geometry_qp_actual_review_20261011/audit_geometry_qp_actual.py": {
+      "bytes": 42626,
+      "sha256": "b648463d205992e217480407e8b2a5e553ac0401137b3a1ce084f1bcc3597c5b"
+    },
+    "/Users/uot/Documents/ChatGPT/ros/results/phase5-reference/nonzero-progress-actual-v1-20261011/runtime-import1/ROOT_READY.json": {
+      "bytes": 12474,
+      "sha256": "a8002776d4850dc1b87df9b2aa384d8ea23e5c0f1dd527881c394a25dfe031ec"
+    },
+    "/Users/uot/Documents/ChatGPT/ros/results/phase5-reference/nonzero-progress-actual-v1-20261011/runtime-import1/AFTER_INPUT_IDENTITIES.json": {
+      "bytes": 512151,
+      "sha256": "e20d86c8228766ce1acb9f80e760d458e1abdc931dae287b18b9df3a69118076"
+    },
+    "/Users/uot/Documents/ChatGPT/ros/results/phase5-reference/nonzero-progress-actual-v1-20261011/runtime-import1/AFTER_READONLY_ROSTERS.json": {
+      "bytes": 3,
+      "sha256": "37517e5f3dc66819f61f5a7bb8ace1921282415f10551d2defa5c3eb0985b570"
+    },
+    "/Users/uot/Documents/ChatGPT/ros/results/phase5-reference/nonzero-progress-actual-v1-20261011/runtime-import1/BATCH_PREFIX.json": {
+      "bytes": 2163,
+      "sha256": "3df0f115f0de8cb8ab8d101a952ce0369d0c489eced937c0d2bcae6a8ddf13b1"
+    },
+    "/Users/uot/Documents/ChatGPT/ros/results/phase5-reference/nonzero-progress-actual-v1-20261011/runtime-import1/BEFORE_INPUT_IDENTITIES.json": {
+      "bytes": 512151,
+      "sha256": "e20d86c8228766ce1acb9f80e760d458e1abdc931dae287b18b9df3a69118076"
+    },
+    "/Users/uot/Documents/ChatGPT/ros/results/phase5-reference/nonzero-progress-actual-v1-20261011/runtime-import1/BEFORE_READONLY_ROSTERS.json": {
+      "bytes": 3,
+      "sha256": "37517e5f3dc66819f61f5a7bb8ace1921282415f10551d2defa5c3eb0985b570"
+    },
+    "/Users/uot/Documents/ChatGPT/ros/results/phase5-reference/nonzero-progress-actual-v1-20261011/runtime-import1/BUILD_RESULT.json": {
+      "bytes": 2217,
+      "sha256": "65bf93aeb146b65a20b1f6a85070c727e84fffb0deed18bde82b4e7240c38b03"
+    },
+    "/Users/uot/Documents/ChatGPT/ros/results/phase5-reference/nonzero-progress-actual-v1-20261011/runtime-import1/CONTROL_EVENT_PREFIX.json": {
+      "bytes": 732,
+      "sha256": "29b1c650ef86c52f36a404f5a85cd49b3285d19916c4d646d5972ba66a17227e"
+    },
+    "/Users/uot/Documents/ChatGPT/ros/results/phase5-reference/nonzero-progress-actual-v1-20261011/runtime-import1/artifacts/MANIFEST.yaml": {
+      "bytes": 2233,
+      "sha256": "a19dbb2bca2d6eb64d5040a07bb65e978e57a5e65a3f82d05da9e4c29a49283c"
+    },
+    "/Users/uot/Documents/ChatGPT/ros/results/phase5-reference/nonzero-progress-actual-v1-20261011/runtime-import1/artifacts/actual_step_journal.csv": {
+      "bytes": 1813021,
+      "sha256": "eea9da2c74e5b8e20776e7e0df04e8926c9ab278117fcce5c9fb03ac16927313"
+    },
+    "/Users/uot/Documents/ChatGPT/ros/results/phase5-reference/nonzero-progress-actual-v1-20261011/runtime-import1/artifacts/actual_warmup.bin": {
+      "bytes": 504405,
+      "sha256": "ddfe59b603e0caa2ef85b0bb3e3e14a75e4f57a639cc22f8bad2fda249802901"
+    },
+    "/Users/uot/Documents/ChatGPT/ros/results/phase5-reference/nonzero-progress-actual-v1-20261011/runtime-import1/artifacts/bootstrap.bin": {
+      "bytes": 150,
+      "sha256": "d3e5152172d091dcb46ea5f9767f3308c3fd2a9cf969c88494348502d2681a89"
+    },
+    "/Users/uot/Documents/ChatGPT/ros/results/phase5-reference/nonzero-progress-actual-v1-20261011/runtime-import1/artifacts/cycle-0/MANIFEST.yaml": {
+      "bytes": 4584,
+      "sha256": "4f71c7738662b26724db2730dec630b139b7fc8f18c1a8df4511ed55cc169a37"
+    },
+    "/Users/uot/Documents/ChatGPT/ros/results/phase5-reference/nonzero-progress-actual-v1-20261011/runtime-import1/artifacts/cycle-0/actual_commit.bin": {
+      "bytes": 1381,
+      "sha256": "5a71af3c492c9022da5519854657ef1f75e416765fb0d6e802ecada62c422e62"
+    },
+    "/Users/uot/Documents/ChatGPT/ros/results/phase5-reference/nonzero-progress-actual-v1-20261011/runtime-import1/artifacts/cycle-0/actual_commit_journal.csv": {
+      "bytes": 4284,
+      "sha256": "0608b50ab8441dca2390995aa6196391752fa513101815a8ba8a52769a0359d6"
+    },
+    "/Users/uot/Documents/ChatGPT/ros/results/phase5-reference/nonzero-progress-actual-v1-20261011/runtime-import1/artifacts/cycle-0/actual_task_errors.bin": {
+      "bytes": 1017,
+      "sha256": "a74b12dfb3bb1cfee2a95ce9d91a911a00b3224b7fe676f949f0bd635f5b9003"
+    },
+    "/Users/uot/Documents/ChatGPT/ros/results/phase5-reference/nonzero-progress-actual-v1-20261011/runtime-import1/artifacts/cycle-0/candidate.bin": {
+      "bytes": 122215,
+      "sha256": "0fc6be953238efba4170a26f594a75ec233bb107070e75817d2134642dfbe866"
+    },
+    "/Users/uot/Documents/ChatGPT/ros/results/phase5-reference/nonzero-progress-actual-v1-20261011/runtime-import1/artifacts/cycle-0/candidate_validation.bin": {
+      "bytes": 109970,
+      "sha256": "dacdb04178745c1284336d911a93c391fa0c37fb206684f409d3e739a0e8abfb"
+    },
+    "/Users/uot/Documents/ChatGPT/ros/results/phase5-reference/nonzero-progress-actual-v1-20261011/runtime-import1/artifacts/cycle-0/candidate_value.bin": {
+      "bytes": 249087,
+      "sha256": "37d241452f0cafa82070ac27aa248ee3f7cc2647df05f9d2cf1db59c009615d0"
+    },
+    "/Users/uot/Documents/ChatGPT/ros/results/phase5-reference/nonzero-progress-actual-v1-20261011/runtime-import1/artifacts/cycle-0/commit_journal_receipt.bin": {
+      "bytes": 584,
+      "sha256": "10da1d28df6097e7da362e5eed4f1794b0d81d52a044ab1065b7c28bd98b6730"
+    },
+    "/Users/uot/Documents/ChatGPT/ros/results/phase5-reference/nonzero-progress-actual-v1-20261011/runtime-import1/artifacts/cycle-0/current_numeric_hint.bin": {
+      "bytes": 71552,
+      "sha256": "e3d5dd9b023319c9cb90647f842a16e418e16e37edce470ace4d59c132d9659b"
+    },
+    "/Users/uot/Documents/ChatGPT/ros/results/phase5-reference/nonzero-progress-actual-v1-20261011/runtime-import1/artifacts/cycle-0/cycle_timing.bin": {
+      "bytes": 593,
+      "sha256": "ce7171c78f7050f5a32f580fd9f19777920183a80c2e68b5174306130c9c6231"
+    },
+    "/Users/uot/Documents/ChatGPT/ros/results/phase5-reference/nonzero-progress-actual-v1-20261011/runtime-import1/artifacts/cycle-0/inline_qp.bin": {
+      "bytes": 21673393,
+      "sha256": "52b3daf07d0e2c69ac770b0a8894074bb38d6ae07bd7be3486aa824975a34a5f"
+    },
+    "/Users/uot/Documents/ChatGPT/ros/results/phase5-reference/nonzero-progress-actual-v1-20261011/runtime-import1/artifacts/cycle-0/nominal_geometry_rows.bin": {
+      "bytes": 668229,
+      "sha256": "19ab6cadc7bdebab90f273cd36e0a957ddac8e21720adaad3e2f95e29692d992"
+    },
+    "/Users/uot/Documents/ChatGPT/ros/results/phase5-reference/nonzero-progress-actual-v1-20261011/runtime-import1/artifacts/cycle-0/observation_after.bin": {
+      "bytes": 2601,
+      "sha256": "50916a45df8c5ed57e9b504b6d0bcec71c99aee06509c734a9c865b424d0cba2"
+    },
+    "/Users/uot/Documents/ChatGPT/ros/results/phase5-reference/nonzero-progress-actual-v1-20261011/runtime-import1/artifacts/cycle-0/observation_before.bin": {
+      "bytes": 2585,
+      "sha256": "ca6566cf503bd521b74ec5d2d03f8f5b489054610c77745dfb9e24d25b423217"
+    },
+    "/Users/uot/Documents/ChatGPT/ros/results/phase5-reference/nonzero-progress-actual-v1-20261011/runtime-import1/artifacts/cycle-0/original_nominal.bin": {
+      "bytes": 12716678,
+      "sha256": "2d4c193550e75c54412b586fe45defa67c3b8d01b596cdac2e85fac19b1acdbb"
+    },
+    "/Users/uot/Documents/ChatGPT/ros/results/phase5-reference/nonzero-progress-actual-v1-20261011/runtime-import1/artifacts/cycle-0/planning_guard.bin": {
+      "bytes": 3074,
+      "sha256": "f407026fd9425ce3227f9c5602b46eee224f673563524561c73a8e99bd33dab0"
+    },
+    "/Users/uot/Documents/ChatGPT/ros/results/phase5-reference/nonzero-progress-actual-v1-20261011/runtime-import1/artifacts/cycle-0/qp_equality_reduction.bin": {
+      "bytes": 19323341,
+      "sha256": "1a2b366b66ade762e1d80faa3c082044cf5969f9592b86c9a80b0cc7b36525e5"
+    },
+    "/Users/uot/Documents/ChatGPT/ros/results/phase5-reference/nonzero-progress-actual-v1-20261011/runtime-import1/artifacts/cycle-0/solver_row_screen.bin": {
+      "bytes": 536356,
+      "sha256": "177081dee7a5319a48b6bd70abbf4693ef3beb421b4f5ae08d21bdd54b677823"
+    },
+    "/Users/uot/Documents/ChatGPT/ros/results/phase5-reference/nonzero-progress-actual-v1-20261011/runtime-import1/artifacts/cycle-0/validation_initial.bin": {
+      "bytes": 881,
+      "sha256": "7c71a9acc454ac3c1af967c9a220bdd7398d3422d8057e014e6b350711991d07"
+    },
+    "/Users/uot/Documents/ChatGPT/ros/results/phase5-reference/nonzero-progress-actual-v1-20261011/runtime-import1/artifacts/cycle-1/MANIFEST.yaml": {
+      "bytes": 4584,
+      "sha256": "563d894a9a23207fa55efeddfc3a4762cded64f3e596cc1d477efc01401b3104"
+    },
+    "/Users/uot/Documents/ChatGPT/ros/results/phase5-reference/nonzero-progress-actual-v1-20261011/runtime-import1/artifacts/cycle-1/actual_commit.bin": {
+      "bytes": 1381,
+      "sha256": "a5b0311313dcdb1224d2ee4aed1019078a6b1f890487a74121dcb0d69d8bcc6e"
+    },
+    "/Users/uot/Documents/ChatGPT/ros/results/phase5-reference/nonzero-progress-actual-v1-20261011/runtime-import1/artifacts/cycle-1/actual_commit_journal.csv": {
+      "bytes": 4263,
+      "sha256": "de06cc2d19d3139961643b2a3e45f933f52c9dd0aad6f4f05ed7a7a16cb74128"
+    },
+    "/Users/uot/Documents/ChatGPT/ros/results/phase5-reference/nonzero-progress-actual-v1-20261011/runtime-import1/artifacts/cycle-1/actual_task_errors.bin": {
+      "bytes": 1017,
+      "sha256": "93280cc5d67253033799f11cd30391acd1e281c0412256735a588e21de11b98d"
+    },
+    "/Users/uot/Documents/ChatGPT/ros/results/phase5-reference/nonzero-progress-actual-v1-20261011/runtime-import1/artifacts/cycle-1/candidate.bin": {
+      "bytes": 122215,
+      "sha256": "0192fdb0aaf35655fac3cbf4428b3d7f93f8d779245aea207a65df10395b582f"
+    },
+    "/Users/uot/Documents/ChatGPT/ros/results/phase5-reference/nonzero-progress-actual-v1-20261011/runtime-import1/artifacts/cycle-1/candidate_validation.bin": {
+      "bytes": 109970,
+      "sha256": "b1b52f24e7a3a182fe27dad55c728f0f998ea10e891fc56b0914a098f3205b22"
+    },
+    "/Users/uot/Documents/ChatGPT/ros/results/phase5-reference/nonzero-progress-actual-v1-20261011/runtime-import1/artifacts/cycle-1/candidate_value.bin": {
+      "bytes": 247890,
+      "sha256": "e77c3f7641f709c803c4df8dd054d736cdd57f3ed33f7ef4db45eab4b470ae34"
+    },
+    "/Users/uot/Documents/ChatGPT/ros/results/phase5-reference/nonzero-progress-actual-v1-20261011/runtime-import1/artifacts/cycle-1/commit_journal_receipt.bin": {
+      "bytes": 584,
+      "sha256": "7be0b74dd0d66eb13215521ef9693f5cb6166baba870970fa4930b4039a1e424"
+    },
+    "/Users/uot/Documents/ChatGPT/ros/results/phase5-reference/nonzero-progress-actual-v1-20261011/runtime-import1/artifacts/cycle-1/current_numeric_hint.bin": {
+      "bytes": 69816,
+      "sha256": "25dec9d202b040ed6224b91798598e573924e95ef80a3ddf95a9fb84081d1683"
+    },
+    "/Users/uot/Documents/ChatGPT/ros/results/phase5-reference/nonzero-progress-actual-v1-20261011/runtime-import1/artifacts/cycle-1/cycle_timing.bin": {
+      "bytes": 593,
+      "sha256": "435a44444ead02df18564d2db7960cfece350e711a879cbe310f19d3038661b8"
+    },
+    "/Users/uot/Documents/ChatGPT/ros/results/phase5-reference/nonzero-progress-actual-v1-20261011/runtime-import1/artifacts/cycle-1/inline_qp.bin": {
+      "bytes": 21673393,
+      "sha256": "4886413acb1c503d2b9219c0ce75a47462841acd130d9fed2d7e985ca7a82e53"
+    },
+    "/Users/uot/Documents/ChatGPT/ros/results/phase5-reference/nonzero-progress-actual-v1-20261011/runtime-import1/artifacts/cycle-1/nominal_geometry_rows.bin": {
+      "bytes": 668229,
+      "sha256": "c0a7d3d0d2b7f072292733d7d0e1c9db3f0c97b9da83189cd8c63426e0a535af"
+    },
+    "/Users/uot/Documents/ChatGPT/ros/results/phase5-reference/nonzero-progress-actual-v1-20261011/runtime-import1/artifacts/cycle-1/observation_after.bin": {
+      "bytes": 2601,
+      "sha256": "c5e0707c419ac3eb331c2685cd76ee7b867a96f3fff0cf57897b3cdac3d72f3e"
+    },
+    "/Users/uot/Documents/ChatGPT/ros/results/phase5-reference/nonzero-progress-actual-v1-20261011/runtime-import1/artifacts/cycle-1/observation_before.bin": {
+      "bytes": 2601,
+      "sha256": "4bf55075ff4259d0c2f4783881ad21439712a0dbec88da0c93a090d7e4da7845"
+    },
+    "/Users/uot/Documents/ChatGPT/ros/results/phase5-reference/nonzero-progress-actual-v1-20261011/runtime-import1/artifacts/cycle-1/original_nominal.bin": {
+      "bytes": 12716678,
+      "sha256": "0ab6b27bb045ead297d8664d1c33e465793b5cda855fce0b0ea7f01338ee4226"
+    },
+    "/Users/uot/Documents/ChatGPT/ros/results/phase5-reference/nonzero-progress-actual-v1-20261011/runtime-import1/artifacts/cycle-1/planning_guard.bin": {
+      "bytes": 3074,
+      "sha256": "1ad2a054190b99a3d34fe5225199ed78493c020ba86c7356085bf8cf1888cf78"
+    },
+    "/Users/uot/Documents/ChatGPT/ros/results/phase5-reference/nonzero-progress-actual-v1-20261011/runtime-import1/artifacts/cycle-1/qp_equality_reduction.bin": {
+      "bytes": 19323341,
+      "sha256": "b92d399f5b6e549ffef79ecfe413397b790809a776a37664787c886a773c42dd"
+    },
+    "/Users/uot/Documents/ChatGPT/ros/results/phase5-reference/nonzero-progress-actual-v1-20261011/runtime-import1/artifacts/cycle-1/solver_row_screen.bin": {
+      "bytes": 536384,
+      "sha256": "864e5be11a6fc968fb25fb5d799ae8a281b93852e5b1eef8197bb082ca0bd501"
+    },
+    "/Users/uot/Documents/ChatGPT/ros/results/phase5-reference/nonzero-progress-actual-v1-20261011/runtime-import1/artifacts/cycle-1/validation_initial.bin": {
+      "bytes": 881,
+      "sha256": "e0f8c97d925ed3e7b6cc7e60f462013a918a969123674fd70b09898d8b30c7fc"
+    },
+    "/Users/uot/Documents/ChatGPT/ros/results/phase5-reference/nonzero-progress-actual-v1-20261011/runtime-import1/artifacts/cycle-2/MANIFEST.yaml": {
+      "bytes": 4584,
+      "sha256": "f4b3aa6d79a009647b32a045fc85e0099ee7c46222aa1bba22b761a672d825b1"
+    },
+    "/Users/uot/Documents/ChatGPT/ros/results/phase5-reference/nonzero-progress-actual-v1-20261011/runtime-import1/artifacts/cycle-2/actual_commit.bin": {
+      "bytes": 1381,
+      "sha256": "9c8025d0dbdfef28a4c73df8c649e6d4ff7dc672775c6ded438effe12f49e617"
+    },
+    "/Users/uot/Documents/ChatGPT/ros/results/phase5-reference/nonzero-progress-actual-v1-20261011/runtime-import1/artifacts/cycle-2/actual_commit_journal.csv": {
+      "bytes": 4246,
+      "sha256": "f31a79c54b1c0230aed8b6016dc3030fe30159a2e25a663719ff520368045937"
+    },
+    "/Users/uot/Documents/ChatGPT/ros/results/phase5-reference/nonzero-progress-actual-v1-20261011/runtime-import1/artifacts/cycle-2/actual_task_errors.bin": {
+      "bytes": 1017,
+      "sha256": "76d99df06633bbd20e34fcf09088e2b9e278146894a1e370f91f416696ed48ef"
+    },
+    "/Users/uot/Documents/ChatGPT/ros/results/phase5-reference/nonzero-progress-actual-v1-20261011/runtime-import1/artifacts/cycle-2/candidate.bin": {
+      "bytes": 122215,
+      "sha256": "262bc9861b332956e469285d24fec1a04a4bbefec5104ebe55804491a181b068"
+    },
+    "/Users/uot/Documents/ChatGPT/ros/results/phase5-reference/nonzero-progress-actual-v1-20261011/runtime-import1/artifacts/cycle-2/candidate_validation.bin": {
+      "bytes": 109970,
+      "sha256": "31d4ab56b0915a699bba1f78b98efaf20747be1849928f6772a3ccedee8ae035"
+    },
+    "/Users/uot/Documents/ChatGPT/ros/results/phase5-reference/nonzero-progress-actual-v1-20261011/runtime-import1/artifacts/cycle-2/candidate_value.bin": {
+      "bytes": 247890,
+      "sha256": "7213ae11a29eb85216cb914f6507da49868f3e0065325f01830c36b27eef96f9"
+    },
+    "/Users/uot/Documents/ChatGPT/ros/results/phase5-reference/nonzero-progress-actual-v1-20261011/runtime-import1/artifacts/cycle-2/commit_journal_receipt.bin": {
+      "bytes": 584,
+      "sha256": "5b5ab0ac8566eb3a3bbcd24ae095f9600ec9eac3b514649f9a72d03dcc154696"
+    },
+    "/Users/uot/Documents/ChatGPT/ros/results/phase5-reference/nonzero-progress-actual-v1-20261011/runtime-import1/artifacts/cycle-2/current_numeric_hint.bin": {
+      "bytes": 69808,
+      "sha256": "6245dabcae511f35ac2f213def941e0b67d291238554d9434647cce994c22bfc"
+    },
+    "/Users/uot/Documents/ChatGPT/ros/results/phase5-reference/nonzero-progress-actual-v1-20261011/runtime-import1/artifacts/cycle-2/cycle_timing.bin": {
+      "bytes": 593,
+      "sha256": "8d6b5e806475f06b5189df67aec4e6611d69909bed7ed1804a45986e50102030"
+    },
+    "/Users/uot/Documents/ChatGPT/ros/results/phase5-reference/nonzero-progress-actual-v1-20261011/runtime-import1/artifacts/cycle-2/inline_qp.bin": {
+      "bytes": 21673393,
+      "sha256": "345fc7e48ee00ef7042fde21f662e3477a1e58fda3c7da6d23663bba7c492537"
+    },
+    "/Users/uot/Documents/ChatGPT/ros/results/phase5-reference/nonzero-progress-actual-v1-20261011/runtime-import1/artifacts/cycle-2/nominal_geometry_rows.bin": {
+      "bytes": 668229,
+      "sha256": "36c16a2c05a622611d185ec5c984c6bb720ebefd91b13bb9dfcfdc8f1cf954c0"
+    },
+    "/Users/uot/Documents/ChatGPT/ros/results/phase5-reference/nonzero-progress-actual-v1-20261011/runtime-import1/artifacts/cycle-2/observation_after.bin": {
+      "bytes": 2601,
+      "sha256": "5ec2f8b1bcd097f5fb2a5278fae75c02d073ce5c69cdc532e7d841964908c5ef"
+    },
+    "/Users/uot/Documents/ChatGPT/ros/results/phase5-reference/nonzero-progress-actual-v1-20261011/runtime-import1/artifacts/cycle-2/observation_before.bin": {
+      "bytes": 2601,
+      "sha256": "ed8754c616d3c003597ced439f54889561db310f5e52149cccfcb28865f61a84"
+    },
+    "/Users/uot/Documents/ChatGPT/ros/results/phase5-reference/nonzero-progress-actual-v1-20261011/runtime-import1/artifacts/cycle-2/original_nominal.bin": {
+      "bytes": 12716678,
+      "sha256": "907119991fde66fc62740a616575a0d98c443d6a40c7ef00ad13ad8c7dd824b5"
+    },
+    "/Users/uot/Documents/ChatGPT/ros/results/phase5-reference/nonzero-progress-actual-v1-20261011/runtime-import1/artifacts/cycle-2/planning_guard.bin": {
+      "bytes": 3074,
+      "sha256": "cfe784913cad4ba99f93859569ef00327eb736590a7737fa8bce5ecf018220db"
+    },
+    "/Users/uot/Documents/ChatGPT/ros/results/phase5-reference/nonzero-progress-actual-v1-20261011/runtime-import1/artifacts/cycle-2/qp_equality_reduction.bin": {
+      "bytes": 19320981,
+      "sha256": "9384159f1babe115cecde5136c9b98be750d1ef2334386088d239aea28dce188"
+    },
+    "/Users/uot/Documents/ChatGPT/ros/results/phase5-reference/nonzero-progress-actual-v1-20261011/runtime-import1/artifacts/cycle-2/solver_row_screen.bin": {
+      "bytes": 536466,
+      "sha256": "ac507cd9de3cf5367e1eadaed59a5f38302692e8801dd6661bcb9e4128da5d09"
+    },
+    "/Users/uot/Documents/ChatGPT/ros/results/phase5-reference/nonzero-progress-actual-v1-20261011/runtime-import1/artifacts/cycle-2/validation_initial.bin": {
+      "bytes": 881,
+      "sha256": "fcf8b51c41dbdf16bb5efc5000d2e756e6e24cac81792406de98038100c84234"
+    },
+    "/Users/uot/Documents/ChatGPT/ros/results/phase5-reference/nonzero-progress-actual-v1-20261011/runtime-import1/artifacts/entry_completion.bin": {
+      "bytes": 240,
+      "sha256": "c5470a2a20b75450a88734758bdde5f0cf6201461e13713e996374dc17e7cef0"
+    },
+    "/Users/uot/Documents/ChatGPT/ros/results/phase5-reference/nonzero-progress-actual-v1-20261011/runtime-import1/artifacts/journal_receipt.bin": {
+      "bytes": 574,
+      "sha256": "3c4d5f1dc890f18e0334167dce6b06c230124d339e12e97accfdb00d54ffa88b"
+    },
+    "/Users/uot/Documents/ChatGPT/ros/results/phase5-reference/nonzero-progress-actual-v1-20261011/runtime-import1/artifacts/model_open.bin": {
+      "bytes": 1275,
+      "sha256": "f5ec5debb244e76c025ca107bc44ae12d03755fd7159d86dafbe18ef126f0a07"
+    },
+    "/Users/uot/Documents/ChatGPT/ros/results/phase5-reference/nonzero-progress-actual-v1-20261011/runtime-import1/artifacts/observation_after.bin": {
+      "bytes": 2601,
+      "sha256": "5f74e1ea158b4c4123cfe69a572c71ba8cb44057e3eaeae61d346c9a883b2048"
+    },
+    "/Users/uot/Documents/ChatGPT/ros/results/phase5-reference/nonzero-progress-actual-v1-20261011/runtime-import1/artifacts/observation_before.bin": {
+      "bytes": 2585,
+      "sha256": "735d0fb470bf30efc1cfa6ee8529a4cf6450c540bd378a512551850fb007f5a5"
+    },
+    "/Users/uot/Documents/ChatGPT/ros/results/phase5-reference/nonzero-progress-actual-v1-20261011/runtime-import1/artifacts/retained_commit_history.bin": {
+      "bytes": 6850,
+      "sha256": "c24231a9d0564335265a788980e8b25f4e7a1cee1061af39fbe4819c2e5c8ec8"
+    },
+    "/Users/uot/Documents/ChatGPT/ros/results/phase5-reference/nonzero-progress-actual-v1-20261011/runtime-import1/compile-1.result.json": {
+      "bytes": 1843,
+      "sha256": "f8dd57eb4d36fe859330ff6a90e11d544d113b4b92f75097e79898dd340a19e8"
+    },
+    "/Users/uot/Documents/ChatGPT/ros/results/phase5-reference/nonzero-progress-actual-v1-20261011/runtime-import1/compile-1.stderr": {
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    "/Users/uot/Documents/ChatGPT/ros/results/phase5-reference/nonzero-progress-actual-v1-20261011/runtime-import1/compile-1.stdout": {
+      "bytes": 147,
+      "sha256": "7078baf38fcef259d4ad5428539d448f39efbed5cd4d5bc180046d2946ba5a30"
+    },
+    "/private/tmp/phase5_nonzero_progress_tail_source_review_v1_20261011/READY.json": {
+      "bytes": 5912,
+      "sha256": "93448302a7db20487babd926f980257686278b750a13916d6d8fe804cebe3eb1"
+    },
+    "/private/tmp/phase5_nonzero_progress_tail_source_review_v1_20261011/FUNCTIONAL_DESIGN.md": {
+      "bytes": 1048,
+      "sha256": "29938bf4a8f28e4b9238b4efb62133d6409a1117614f9839b16449ae94c54852"
+    },
+    "/private/tmp/phase5_nonzero_progress_tail_source_review_v1_20261011/ROOT_SOURCE_ONLY_NUMERICAL_PLANNING_REPAIR_SCOPE.json": {
+      "bytes": 1800,
+      "sha256": "59d9671e9e70b4b20415b38196d2a6edf66fede5f5b4fbc6667b7b8f845ee1fc"
+    },
+    "/private/tmp/phase5_nonzero_progress_tail_source_review_v1_20261011/SOURCE_COMPILE_STAGE_HELPER.py": {
+      "bytes": 2585,
+      "sha256": "37c6f0b1a97500ea5fac2edcbeabcdfa48328712c0550ae2d002e11fb558ea99"
+    },
+    "/private/tmp/phase5_nonzero_progress_tail_source_review_v1_20261011/src/active_first_cycle.cpp": {
+      "bytes": 32926,
+      "sha256": "73a86e96b03dba57d2e503958875364010150813e49438341ee9b169543ad66c"
+    },
+    "/private/tmp/phase5_nonzero_progress_tail_source_review_v1_20261011/src/actual_task_metrics.hpp": {
+      "bytes": 1883,
+      "sha256": "83bb0f21e0bfa830b4d8f7e356f9f7c2ce916c49d540c948588d5e460e07d900"
+    },
+    "/private/tmp/phase5_nonzero_progress_tail_source_review_v1_20261011/src/actual_task_metrics_tests.cpp": {
+      "bytes": 1359,
+      "sha256": "00bea8673e19abc62233e5933722eae94c35b7540d4f3d2c5e609dc2a83b374c"
+    },
+    "/private/tmp/phase5_nonzero_progress_tail_source_review_v1_20261011/src/affine_assembly.cpp": {
+      "bytes": 28981,
+      "sha256": "d478eda1f0fe97bfc41851515f4baa3e485fd4a57968a62dcb6233ae1157bbd5"
+    },
+    "/private/tmp/phase5_nonzero_progress_tail_source_review_v1_20261011/src/affine_assembly.hpp": {
+      "bytes": 6026,
+      "sha256": "6faee2961242052c7655da41e8988dd0844f14c3cfa885672aa7c03eaa1dcb57"
+    },
+    "/private/tmp/phase5_nonzero_progress_tail_source_review_v1_20261011/src/box_screen_tests.cpp": {
+      "bytes": 2954,
+      "sha256": "d922876babec2867dd1293bcee259ac12e4b2a6af5a30dd551209e097c0abaf8"
+    },
+    "/private/tmp/phase5_nonzero_progress_tail_source_review_v1_20261011/src/candidate_validation.cpp": {
+      "bytes": 10659,
+      "sha256": "aa76869432f465e45c48acf777913eea5972414a145eedbf02645035773f63e9"
+    },
+    "/private/tmp/phase5_nonzero_progress_tail_source_review_v1_20261011/src/candidate_validation.hpp": {
+      "bytes": 1526,
+      "sha256": "d816bedb47cff25c49a0d5577a9fa805771816caa1dc406d4772c1ee843fe4fa"
+    },
+    "/private/tmp/phase5_nonzero_progress_tail_source_review_v1_20261011/src/counted_geometry.hpp": {
+      "bytes": 6363,
+      "sha256": "180ea5a855dfac54d1a1cc6476a0a024623bce67143820624660e09cbadb1fcb"
+    },
+    "/private/tmp/phase5_nonzero_progress_tail_source_review_v1_20261011/src/current_numeric_guess.hpp": {
+      "bytes": 4718,
+      "sha256": "bb935c5cbc1c3a09717142947d285b8f2009fe8ae8e47d433703dc815a322972"
+    },
+    "/private/tmp/phase5_nonzero_progress_tail_source_review_v1_20261011/src/current_numeric_oracle.cpp": {
+      "bytes": 1845,
+      "sha256": "43e2f0fc6cab95382ff9741669f82d21d43670db633088c6141106bf40a95cac"
+    },
+    "/private/tmp/phase5_nonzero_progress_tail_source_review_v1_20261011/src/current_numeric_tests.cpp": {
+      "bytes": 780,
+      "sha256": "b7957cb18696352b7e92333e4c78c88e059d7c79235fe6ba81c356b3c06b00bc"
+    },
+    "/private/tmp/phase5_nonzero_progress_tail_source_review_v1_20261011/src/cycle_support.hpp": {
+      "bytes": 5382,
+      "sha256": "d3dab83b30bf0905ae1209d9fd4cbf8eb298031b91a6b5b4b57a7a92a42416a4"
+    },
+    "/private/tmp/phase5_nonzero_progress_tail_source_review_v1_20261011/src/cycle_support_tests.cpp": {
+      "bytes": 3540,
+      "sha256": "d8f236dea84b64b855f790bdc7fc3d42f932de09989a1a1dbcafe9b1b3279b2f"
+    },
+    "/private/tmp/phase5_nonzero_progress_tail_source_review_v1_20261011/src/integrated_horizon_qp.cpp": {
+      "bytes": 155393,
+      "sha256": "aa19a7c5ab80b59f0bb2d9bd467caef0bd1f81431263dc35de4d814be9f3d5c0"
+    },
+    "/private/tmp/phase5_nonzero_progress_tail_source_review_v1_20261011/src/integrated_horizon_qp.hpp": {
+      "bytes": 12808,
+      "sha256": "7bd5c0c781161b88e399902d4d0e7c54a2f51602aedfb3359ae5f18d03336019"
+    },
+    "/private/tmp/phase5_nonzero_progress_tail_source_review_v1_20261011/src/invariant_tests.cpp": {
+      "bytes": 4721,
+      "sha256": "f5a859d4cf9d79a5ae1b533b8dd62776f2bba6599dfdf691a2915ef3296a33f9"
+    },
+    "/private/tmp/phase5_nonzero_progress_tail_source_review_v1_20261011/src/linear_box_screen.hpp": {
+      "bytes": 3916,
+      "sha256": "b649eff43293a3078b7b46a0166fa0f8a2ac59f3a8496c8c73a98c275fed96d1"
+    },
+    "/private/tmp/phase5_nonzero_progress_tail_source_review_v1_20261011/src/lossless_evidence.cpp": {
+      "bytes": 17672,
+      "sha256": "f0794f09ed38192b7564b8d2f991b2610000f6c72317f2f395482a325ca6eaa5"
+    },
+    "/private/tmp/phase5_nonzero_progress_tail_source_review_v1_20261011/src/lossless_evidence.hpp": {
+      "bytes": 2138,
+      "sha256": "75ca8a356e1c2f7b90ac17a0182697041cad1df0beb2b0ca995777b37e1882a8"
+    },
+    "/private/tmp/phase5_nonzero_progress_tail_source_review_v1_20261011/src/model_boundary.cpp": {
+      "bytes": 21482,
+      "sha256": "eeb1f2a43ef40315e747c1be536eccc7b810647c65840999cd9c27d75895366e"
+    },
+    "/private/tmp/phase5_nonzero_progress_tail_source_review_v1_20261011/src/model_boundary.hpp": {
+      "bytes": 4503,
+      "sha256": "966af079735681aedf1031822864baa608255efa43e4ca699d5bec07a3235efb"
+    },
+    "/private/tmp/phase5_nonzero_progress_tail_source_review_v1_20261011/src/nominal_geometry_provider.hpp": {
+      "bytes": 3544,
+      "sha256": "7269a27ae1cdf5d623b726a52092adb074df8c6e032bcc1cd2c4845acafaf498"
+    },
+    "/private/tmp/phase5_nonzero_progress_tail_source_review_v1_20261011/src/nominal_geometry_selection.hpp": {
+      "bytes": 2524,
+      "sha256": "6a41cc80feca43509d234c5aaf70e9a4c4de77abfa9b8eabfec6b6541b7711fa"
+    },
+    "/private/tmp/phase5_nonzero_progress_tail_source_review_v1_20261011/src/normalization.cpp": {
+      "bytes": 23976,
+      "sha256": "a0cd0c9cdb505f922f1744f24cf115057b6ba9f3a9bc1b3ed0c9bdb82d358ed5"
+    },
+    "/private/tmp/phase5_nonzero_progress_tail_source_review_v1_20261011/src/normalization.hpp": {
+      "bytes": 4288,
+      "sha256": "9456be5c205f23d2aa2210eac02286d030204a446af003ee85362b971ccb43d8"
+    },
+    "/private/tmp/phase5_nonzero_progress_tail_source_review_v1_20261011/src/observer_tests.cpp": {
+      "bytes": 3834,
+      "sha256": "18bef19661326132aac7396998b07395acd20e83c69b70b520fea855915b5e83"
+    },
+    "/private/tmp/phase5_nonzero_progress_tail_source_review_v1_20261011/src/owner_binding.hpp": {
+      "bytes": 745,
+      "sha256": "26a058244f7ef8f6d9353857637270623e18e706a061bccc3be4cffb66a54354"
+    },
+    "/private/tmp/phase5_nonzero_progress_tail_source_review_v1_20261011/src/owner_binding_tests.cpp": {
+      "bytes": 832,
+      "sha256": "891c6b39bf5a9d23c581f6c25a60876cc336c0f299d79239c06cdd04ac447fd4"
+    },
+    "/private/tmp/phase5_nonzero_progress_tail_source_review_v1_20261011/src/runtime_observer.cpp": {
+      "bytes": 37328,
+      "sha256": "3a06fde05f266f49891d50f69d6f7f14a9b775e32c66187f06f30425a976d930"
+    },
+    "/private/tmp/phase5_nonzero_progress_tail_source_review_v1_20261011/src/runtime_observer.hpp": {
+      "bytes": 8907,
+      "sha256": "69d1dfc60fb763ce471c26a5aa50cd743a7aab3a436847bea71eda7801609bbf"
+    },
+    "/private/tmp/phase5_nonzero_progress_tail_source_review_v1_20261011/src/session_primitives.hpp": {
+      "bytes": 2259,
+      "sha256": "0b76bc232ed81dc9b4831617ae1690cfc287def914b8bca5f05ce6e6e25b6080"
+    },
+    "/private/tmp/phase5_nonzero_progress_tail_source_review_v1_20261011/src/solver_forensics.cpp": {
+      "bytes": 26514,
+      "sha256": "664c1d480e23c1ddef4f45a57165cba871213740329f8693c897d7c07ee7af27"
+    },
+    "/private/tmp/phase5_nonzero_progress_tail_source_review_v1_20261011/src/solver_forensics.hpp": {
+      "bytes": 860,
+      "sha256": "02b3a3d33ea64a351b228b96b2e0590b7a79fb4e9b87da78dc28c59465aca3bb"
+    },
+    "/private/tmp/phase5_nonzero_progress_tail_source_review_v1_20261011/src/task_local_provider.cpp": {
+      "bytes": 1839,
+      "sha256": "051b424236979f9fe7ea4cb96564f54969025c997bfba2c61d347a23f7fbae4c"
+    },
+    "/private/tmp/phase5_nonzero_progress_tail_source_review_v1_20261011/src/task_local_provider.hpp": {
+      "bytes": 640,
+      "sha256": "1819e2f626fb0ff65ad7e7e8de0b0b52f625e6bf435b073d7cca55722d76f093"
+    },
+    "/private/tmp/phase5_nonzero_progress_tail_runtime_profile_v1_20261011/profile-version1/active_input.json": {
+      "bytes": 326848,
+      "sha256": "f934cb99018da10b102af5fb1283075e83c8d5d91156e7216cdc069b481c9076"
+    },
+    "/private/tmp/phase5_nonzero_progress_tail_runtime_profile_v1_20261011/profile-version1/PRODUCER.json": {
+      "bytes": 276,
+      "sha256": "933c40f757aea7543aab51fab3f063349fa5c58ff886e33589afea5ec1dc0cfa"
+    },
+    "/private/tmp/public_live_affine_v2_integrated_first_cycle_canonical_protocol_repair_v2_20261010/proposed-files/inputs/public_constants.json": {
+      "bytes": 4481,
+      "sha256": "d37c9a12539345fd1dbb6718cd273584140359ca2bd9834442bf2228e50f6bdd"
+    },
+    "/private/tmp/public_live_affine_v2_integrated_first_cycle_canonical_protocol_repair_v2_20261010/proposed-files/inputs/inspection_curve.json": {
+      "bytes": 661,
+      "sha256": "62c163f41dcf196aa77978037cc6ced3809b67e3903058b7da3fb4759ab464c9"
+    }
+  },
+  "scope": "Three actual offline nonzero-progress/smallalpha transactions; stage1 saved SI/history/B/C/task metric checks, full regeneration stage2 pending. No model/native/optimizer/FK/Scene/compiler calls, no exactE0/physicalstop/task/realtime/Phase5 acceptance."
+}

@@ -1,0 +1,68 @@
+[
+  {
+    "cycle": "cycle-0",
+    "source_sha256": "19ab6cadc7bdebab90f273cd36e0a957ddac8e21720adaad3e2f95e29692d992",
+    "complete": 1,
+    "error": "",
+    "samples": 400,
+    "rows": 1600,
+    "counts": {
+      "scene_attempts": 400,
+      "scene_returns": 400,
+      "primitive_attempts": 3614000,
+      "true_attempts": 48000,
+      "true_returns": 48000,
+      "cover_attempts": 3566000,
+      "cover_returns": 3566000,
+      "fk_attempts": 5600,
+      "fk_returns": 5600,
+      "jac_attempts": 5600,
+      "jac_returns": 5600
+    },
+    "scope": "selected4 and retained full minima checked; all9035 full queries not retained; no fresh collision query"
+  },
+  {
+    "cycle": "cycle-1",
+    "source_sha256": "c0a7d3d0d2b7f072292733d7d0e1c9db3f0c97b9da83189cd8c63426e0a535af",
+    "complete": 1,
+    "error": "",
+    "samples": 400,
+    "rows": 1600,
+    "counts": {
+      "scene_attempts": 800,
+      "scene_returns": 800,
+      "primitive_attempts": 7228000,
+      "true_attempts": 96000,
+      "true_returns": 96000,
+      "cover_attempts": 7132000,
+      "cover_returns": 7132000,
+      "fk_attempts": 11200,
+      "fk_returns": 11200,
+      "jac_attempts": 11200,
+      "jac_returns": 11200
+    },
+    "scope": "selected4 and retained full minima checked; all9035 full queries not retained; no fresh collision query"
+  },
+  {
+    "cycle": "cycle-2",
+    "source_sha256": "36c16a2c05a622611d185ec5c984c6bb720ebefd91b13bb9dfcfdc8f1cf954c0",
+    "complete": 1,
+    "error": "",
+    "samples": 400,
+    "rows": 1600,
+    "counts": {
+      "scene_attempts": 1200,
+      "scene_returns": 1200,
+      "primitive_attempts": 10842000,
+      "true_attempts": 144000,
+      "true_returns": 144000,
+      "cover_attempts": 10698000,
+      "cover_returns": 10698000,
+      "fk_attempts": 16800,
+      "fk_returns": 16800,
+      "jac_attempts": 16800,
+      "jac_returns": 16800
+    },
+    "scope": "selected4 and retained full minima checked; all9035 full queries not retained; no fresh collision query"
+  }
+]

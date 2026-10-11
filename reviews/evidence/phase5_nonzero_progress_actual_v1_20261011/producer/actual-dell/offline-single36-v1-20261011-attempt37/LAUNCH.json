@@ -1,0 +1,55 @@
+{
+  "schema": "DETACHED_OFFLINE_SINGLE36_LAUNCH_V1",
+  "pid": 54226,
+  "argv": [
+    "/usr/bin/setsid",
+    "/usr/bin/nohup",
+    "/usr/bin/python3.12",
+    "-I",
+    "-S",
+    "-B",
+    "/home/codextransfer/predictive_motion/results/phase5/offline-single36-v1-20261011-attempt37/supervisor.py",
+    "--driver",
+    "/home/codextransfer/predictive_motion/results/phase5/session-nonzero-progress-planning-tail-three-cycle-v1-20261011-attempt36/active_run_driver.py",
+    "--driver-sha256",
+    "5255ebe8ddc755885f5c613f78367f4b739e6768edefa765ca49853598294225",
+    "--plan",
+    "/home/codextransfer/predictive_motion/results/phase5/session-nonzero-progress-planning-tail-three-cycle-v1-20261011-attempt36/active_run_plan.json",
+    "--plan-sha256",
+    "ae2ec0e7f0b89de2bc2f50f56e385c41598a25f3e2ba8e9731d57a99022ecea8",
+    "--status-directory",
+    "/home/codextransfer/predictive_motion/results/phase5/offline-single36-v1-20261011-attempt37/status",
+    "--wall-seconds",
+    "300",
+    "--output-bytes",
+    "1073741824"
+  ],
+  "launch_utc_epoch": 1791702538.6155717,
+  "supervisor_sha256": "0cddec1c7bdcf17dde0288593c79da10f28adf141ce856be4c6d0bc67e9b98eb",
+  "Rootrelease_sha256": "bef6891d705e600dd619a6599789a521bdfb56095f8796e3e2012a072eef8f2f",
+  "powercfg": {
+    "STANDBYIDLE": {
+      "exit": 0,
+      "raw_stdout_sha256": "e16db39960da24803114d2795a24ea883b9aa2b19ed4af5483d1926d48a65cba",
+      "stdout": "\ufffd\ufffd\u0534\ufffd\ufffd\ufffd\ufffd GUID: 381b4222-f694-41f0-9685-ff5bb260df2e  (\u01bd\ufffd\ufffd)\r\n  GUID \ufffd\ufffd\ufffd\ufffd: SCHEME_BALANCED\r\n  \ufffd\ufffd\ufffd\ufffd GUID: 238c9fa8-0aad-41ed-83f4-97be242c8f20  (\u02ef\ufffd\ufffd)\r\n    GUID \ufffd\ufffd\ufffd\ufffd: SUB_SLEEP\r\n    \ufffd\ufffd\u0534\ufffd\ufffd\ufffd\ufffd GUID: 29f6c1db-86da-48c5-9fdb-f2b67b1f44da  (\ufffd\u06b4\ufffd\u02b1\ufffd\ufffd\ufffd\u02ef\ufffd\ufffd)\r\n      GUID \ufffd\ufffd\ufffd\ufffd: STANDBYIDLE\r\n      \ufffd\ufffd\u0421\ufffd\ufffd\ufffd\u0735\ufffd\ufffd\ufffd\ufffd\ufffd: 0x00000000\r\n      \ufffd\ufffd\ufffd\ufffd\ufffd\u0735\ufffd\ufffd\ufffd\ufffd\ufffd: 0xffffffff\r\n      \ufffd\ufffd\ufffd\u0735\ufffd\ufffd\ufffd\ufffd\ufffd\ufffd\ufffd\ufffd\ufffd: 0x00000001\r\n      \ufffd\ufffd\ufffd\u0735\ufffd\ufffd\ufffd\ufffd\u00f5\ufffd\u03bb: \ufffd\ufffd\r\n    \ufffd\ufffd\u01f0\ufffd\ufffd\ufffd\ufffd\ufffd\ufffd\u0534\ufffd\ufffd\ufffd\ufffd\ufffd\ufffd\ufffd\ufffd: 0x00000000\r\n    \ufffd\ufffd\u01f0\u05b1\ufffd\ufffd\ufffd\ufffd\u0534\ufffd\ufffd\ufffd\ufffd\ufffd\ufffd\ufffd\ufffd: 0x00000e10\r\n\r\n"
+    },
+    "HIBERNATEIDLE": {
+      "exit": 0,
+      "raw_stdout_sha256": "b858d6843b2fc371c3c4d4da567dcf554115ec10746a4b4d1385db3521dadde2",
+      "stdout": "\ufffd\ufffd\u0534\ufffd\ufffd\ufffd\ufffd GUID: 381b4222-f694-41f0-9685-ff5bb260df2e  (\u01bd\ufffd\ufffd)\r\n  GUID \ufffd\ufffd\ufffd\ufffd: SCHEME_BALANCED\r\n  \ufffd\ufffd\ufffd\ufffd GUID: 238c9fa8-0aad-41ed-83f4-97be242c8f20  (\u02ef\ufffd\ufffd)\r\n    GUID \ufffd\ufffd\ufffd\ufffd: SUB_SLEEP\r\n    \ufffd\ufffd\u0534\ufffd\ufffd\ufffd\ufffd GUID: 9d7815a6-7ee4-497e-8888-515a05f02364  (\ufffd\u06b4\ufffd\u02b1\ufffd\ufffd\ufffd\ufffd\ufffd\ufffd\ufffd)\r\n      GUID \ufffd\ufffd\ufffd\ufffd: HIBERNATEIDLE\r\n      \ufffd\ufffd\u0421\ufffd\ufffd\ufffd\u0735\ufffd\ufffd\ufffd\ufffd\ufffd: 0x00000000\r\n      \ufffd\ufffd\ufffd\ufffd\ufffd\u0735\ufffd\ufffd\ufffd\ufffd\ufffd: 0xffffffff\r\n      \ufffd\ufffd\ufffd\u0735\ufffd\ufffd\ufffd\ufffd\ufffd\ufffd\ufffd\ufffd\ufffd: 0x00000001\r\n      \ufffd\ufffd\ufffd\u0735\ufffd\ufffd\ufffd\ufffd\u00f5\ufffd\u03bb: \ufffd\ufffd\r\n    \ufffd\ufffd\u01f0\ufffd\ufffd\ufffd\ufffd\ufffd\ufffd\u0534\ufffd\ufffd\ufffd\ufffd\ufffd\ufffd\ufffd\ufffd: 0x00000000\r\n    \ufffd\ufffd\u01f0\u05b1\ufffd\ufffd\ufffd\ufffd\u0534\ufffd\ufffd\ufffd\ufffd\ufffd\ufffd\ufffd\ufffd: 0x7fffffff\r\n\r\n"
+    },
+    "LIDACTION": {
+      "exit": 0,
+      "stdout": "\ufffd\ufffd\u0534\ufffd\ufffd\ufffd\ufffd GUID: 381b4222-f694-41f0-9685-ff5bb260df2e  (\u01bd\ufffd\ufffd)\r\n  GUID \ufffd\ufffd\ufffd\ufffd: SCHEME_BALANCED\r\n  \ufffd\ufffd\ufffd\ufffd GUID: 4f971e89-eebd-4455-a8de-9e59040e7347  (\ufffd\ufffd\u0534\ufffd\ufffd\u0165\ufffd\u0378\ufffd\ufffd\ufffd)\r\n    GUID \ufffd\ufffd\ufffd\ufffd: SUB_BUTTONS\r\n    \ufffd\ufffd\u0534\ufffd\ufffd\ufffd\ufffd GUID: 5ca83367-6e45-459f-a27b-476b1d01c936  (\ufffd\ufffd\ufffd\u03f8\ufffd\ufffd\u04f2\ufffd\ufffd\ufffd)\r\n      GUID \ufffd\ufffd\ufffd\ufffd: LIDACTION\r\n      \ufffd\ufffd\ufffd\u0735\ufffd\ufffd\ufffd\ufffd\ufffd\ufffd\ufffd\ufffd\ufffd: 000\r\n      \ufffd\ufffd\ufffd\u0735\ufffd\ufffd\ufffd\ufffd\ufffd\ufffd\u047a\ufffd\ufffd\ufffd\ufffd\ufffd: \ufffd\ufffd\ufffd\ufffd\u0221\ufffd\u03ba\u03b2\ufffd\ufffd\ufffd\r\n      \ufffd\ufffd\ufffd\u0735\ufffd\ufffd\ufffd\ufffd\ufffd\ufffd\ufffd\ufffd\ufffd: 001\r\n      \ufffd\ufffd\ufffd\u0735\ufffd\ufffd\ufffd\ufffd\ufffd\ufffd\u047a\ufffd\ufffd\ufffd\ufffd\ufffd: \u02ef\ufffd\ufffd\r\n      \ufffd\ufffd\ufffd\u0735\ufffd\ufffd\ufffd\ufffd\ufffd\ufffd\ufffd\ufffd\ufffd: 002\r\n      \ufffd\ufffd\ufffd\u0735\ufffd\ufffd\ufffd\ufffd\ufffd\ufffd\u047a\ufffd\ufffd\ufffd\ufffd\ufffd: \ufffd\ufffd\ufffd\ufffd\r\n      \ufffd\ufffd\ufffd\u0735\ufffd\ufffd\ufffd\ufffd\ufffd\ufffd\ufffd\ufffd\ufffd: 003\r\n      \ufffd\ufffd\ufffd\u0735\ufffd\ufffd\ufffd\ufffd\ufffd\ufffd\u047a\ufffd\ufffd\ufffd\ufffd\ufffd: \ufffd\u063b\ufffd\r\n    \ufffd\ufffd\u01f0\ufffd\ufffd\ufffd\ufffd\ufffd\ufffd\u0534\ufffd\ufffd\ufffd\ufffd\ufffd\ufffd\ufffd\ufffd: 0x00000000\r\n    \ufffd\ufffd\u01f0\u05b1\ufffd\ufffd\ufffd\ufffd\u0534\ufffd\ufffd\ufffd\ufffd\ufffd\ufffd\ufffd\ufffd: 0x00000001\r\n\r\n"
+    }
+  },
+  "wsl_keeper_pid": 501,
+  "wsl_keeper_cmdline": "sleep infinity ",
+  "disk_free_native": 999197683712,
+  "disk_free_D": 125997867008,
+  "maximum_elapsed_including_final_hash_s": 330,
+  "profile_inner_limits_unchanged": true,
+  "control_entries": 1,
+  "automatic_retries": 0,
+  "remote_backup_complete": false
+}
