@@ -68,6 +68,10 @@ This image depicts the integrated scene; it is not a predictive-control result.
 
 ## Simulation and diagnostic figures
 
+![Same task-start QP: retained numeric failures](../figures/phase5_task_start_a_v1_20261010/diagnostics.png)
+
+Independent saved-map/QP reconstruction agrees to roundoff. The native unsolved iterate violates original SI; an external reference passes numeric SI but fails strict progress history. Both are diagnostic data, neither was executed. Inline geometry and nonlinear B remain absent in this A component. [Provenance](../figures/phase5_task_start_a_v1_20261010/provenance.json), [independent review](../reviews/evidence/phase5_task_start_a_v1_20261010/independent/review.md).
+
 ![Actual enhanced bootstrap warmup V2](../figures/phase5_task_warmup_v2_20261010/actual_warmup.png)
 
 Recorded seed91011 V2 bootstrap adds3000 durable events and actual TCP/armframe checks. Independent normal-run audit passes these records and the original end hold gates. Startup derivatives remain above task thresholds; no task commands were committed. No fault-injection or full controller acceptance is claimed. [Provenance](../figures/phase5_task_warmup_v2_20261010/provenance.json), [independent audit](../reviews/evidence/phase5_task_warmup_v2_20261010/independent/review.md).

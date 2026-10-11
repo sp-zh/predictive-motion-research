@@ -1,0 +1,1177 @@
+{
+  "scope": "EXTERNAL_SLSQP_REFERENCE_ONLY_NOT_NATIVE_SOLVED_OR_CANDIDATE",
+  "forensic": {
+    "maximum_original_SI_violation": 1.5460706270786773e-06,
+    "worst_row": 2961,
+    "worst_label": "feedback_jerk/18/7",
+    "worst_units": "1/s^3",
+    "rows_above_1e_7": 8,
+    "terminal_affine_residual": 1.3010426069826053e-18,
+    "literal_history_failures": [
+      {
+        "kind": "b_or_progress_jerk",
+        "cell": 7,
+        "tick": 17,
+        "b": 0.11868421848600946,
+        "previous_b": 0.1386842189520651,
+        "progress_jerk": -5.000000116513907,
+        "cap": 5.0
+      },
+      {
+        "kind": "b_or_progress_jerk",
+        "cell": 8,
+        "tick": 21,
+        "b": 0.09868421798180078,
+        "previous_b": 0.11868421848600946,
+        "progress_jerk": -5.00000012605217,
+        "cap": 5.0
+      },
+      {
+        "kind": "b_or_progress_jerk",
+        "cell": 9,
+        "tick": 26,
+        "b": 0.07868421747010779,
+        "previous_b": 0.09868421798180078,
+        "progress_jerk": -5.000000127923249,
+        "cap": 5.0
+      },
+      {
+        "kind": "b_or_progress_jerk",
+        "cell": 10,
+        "tick": 31,
+        "b": 0.05868421696984419,
+        "previous_b": 0.07868421747010779,
+        "progress_jerk": -5.0000001250659,
+        "cap": 5.0
+      },
+      {
+        "kind": "b_or_progress_jerk",
+        "cell": 11,
+        "tick": 37,
+        "b": 0.03868421653548253,
+        "previous_b": 0.05868421696984419,
+        "progress_jerk": -5.000000108590415,
+        "cap": 5.0
+      },
+      {
+        "kind": "b_or_progress_jerk",
+        "cell": 12,
+        "tick": 43,
+        "b": 0.018684216192202594,
+        "previous_b": 0.03868421653548253,
+        "progress_jerk": -5.000000085819983,
+        "cap": 5.0
+      },
+      {
+        "kind": "b_or_progress_jerk",
+        "cell": 13,
+        "tick": 51,
+        "b": -0.0013157839550528244,
+        "previous_b": 0.018684216192202594,
+        "progress_jerk": -5.000000036813855,
+        "cap": 5.0
+      },
+      {
+        "kind": "b_or_progress_jerk",
+        "cell": 17,
+        "tick": 109,
+        "b": -0.0400000084503544,
+        "previous_b": -0.06000000998527069,
+        "progress_jerk": 5.000000383729072,
+        "cap": 5.0
+      },
+      {
+        "kind": "b_or_progress_jerk",
+        "cell": 18,
+        "tick": 133,
+        "b": -0.020000002266071893,
+        "previous_b": -0.0400000084503544,
+        "progress_jerk": 5.000001546070627,
+        "cap": 5.0
+      },
+      {
+        "kind": "b_or_progress_jerk",
+        "cell": 19,
+        "tick": 161,
+        "b": 0.0,
+        "previous_b": -0.020000002266071893,
+        "progress_jerk": 5.000000566517973,
+        "cap": 5.0
+      }
+    ],
+    "literal_max_command_jerk": 9.893747853910448,
+    "literal_final_w": [
+      -2.6156377411212794e-18,
+      -1.111307226797642e-18,
+      4.4994390158148434e-18,
+      -1.0489656018797255e-17,
+      2.303929616531697e-19,
+      -2.100641709190665e-18,
+      -5.2075585597194385e-18
+    ],
+    "literal_final_r": 4.363913744254155e-18,
+    "last_alpha": [
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0
+    ],
+    "last_b": 0.0,
+    "exact_zero_tail": false,
+    "cycles": 200,
+    "literal_C": [
+      -1.2464674602552963,
+      0.09398735721335935,
+      1.1567198991655514,
+      -2.7799675230683563,
+      -0.09694436135318116,
+      4.38724627632015,
+      -1.6290068741281378
+    ]
+  },
+  "external_reference": {
+    "maximum_original_SI_violation": 9.414691248821327e-14,
+    "worst_row": 3538,
+    "worst_label": "feedback_jerk/19/7",
+    "worst_units": "1/s^3",
+    "rows_above_1e_7": 0,
+    "terminal_affine_residual": 1.0842021724855044e-18,
+    "literal_history_failures": [
+      {
+        "kind": "b_or_progress_jerk",
+        "cell": 1,
+        "tick": 2,
+        "b": 0.039999999999999945,
+        "previous_b": 0.019999999999999907,
+        "progress_jerk": 5.00000000000001,
+        "cap": 5.0
+      },
+      {
+        "kind": "b_or_progress_jerk",
+        "cell": 4,
+        "tick": 7,
+        "b": 0.09999999999999988,
+        "previous_b": 0.07999999999999971,
+        "progress_jerk": 5.000000000000043,
+        "cap": 5.0
+      },
+      {
+        "kind": "b_or_progress_jerk",
+        "cell": 9,
+        "tick": 26,
+        "b": 0.07868421052631598,
+        "previous_b": 0.09868421052631605,
+        "progress_jerk": -5.000000000000019,
+        "cap": 5.0
+      },
+      {
+        "kind": "b_or_progress_jerk",
+        "cell": 11,
+        "tick": 37,
+        "b": 0.03868421052631575,
+        "previous_b": 0.058684210526316026,
+        "progress_jerk": -5.000000000000068,
+        "cap": 5.0
+      },
+      {
+        "kind": "b_or_progress_jerk",
+        "cell": 13,
+        "tick": 51,
+        "b": -0.0013157894736841712,
+        "previous_b": 0.01868421052631591,
+        "progress_jerk": -5.0000000000000195,
+        "cap": 5.0
+      },
+      {
+        "kind": "b_or_progress_jerk",
+        "cell": 14,
+        "tick": 61,
+        "b": -0.02131578947368424,
+        "previous_b": -0.0013157894736841712,
+        "progress_jerk": -5.000000000000017,
+        "cap": 5.0
+      },
+      {
+        "kind": "half_progress_domain",
+        "cell": 18,
+        "tick": 160,
+        "half": 2,
+        "s": 0.004992160000000011,
+        "r": -1.691355389077387e-17
+      },
+      {
+        "kind": "recursive_progress_domain",
+        "cell": 18,
+        "tick": 160,
+        "s": 0.004992160000000013,
+        "r": -1.7320129705455933e-17
+      },
+      {
+        "kind": "b_or_progress_jerk",
+        "cell": 19,
+        "tick": 161,
+        "b": 0.0,
+        "previous_b": -0.020000000000000375,
+        "progress_jerk": 5.000000000000093,
+        "cap": 5.0
+      },
+      {
+        "kind": "half_progress_domain",
+        "cell": 19,
+        "tick": 161,
+        "half": 1,
+        "s": 0.004992160000000013,
+        "r": -1.7320129705455933e-17
+      },
+      {
+        "kind": "half_progress_domain",
+        "cell": 19,
+        "tick": 161,
+        "half": 2,
+        "s": 0.004992160000000013,
+        "r": -1.7320129705455933e-17
+      },
+      {
+        "kind": "recursive_progress_domain",
+        "cell": 19,
+        "tick": 161,
+        "s": 0.004992160000000013,
+        "r": -1.7320129705455933e-17
+      },
+      {
+        "kind": "half_progress_domain",
+        "cell": 19,
+        "tick": 162,
+        "half": 1,
+        "s": 0.004992160000000013,
+        "r": -1.7320129705455933e-17
+      },
+      {
+        "kind": "half_progress_domain",
+        "cell": 19,
+        "tick": 162,
+        "half": 2,
+        "s": 0.004992160000000013,
+        "r": -1.7320129705455933e-17
+      },
+      {
+        "kind": "recursive_progress_domain",
+        "cell": 19,
+        "tick": 162,
+        "s": 0.004992160000000013,
+        "r": -1.7320129705455933e-17
+      },
+      {
+        "kind": "half_progress_domain",
+        "cell": 19,
+        "tick": 163,
+        "half": 1,
+        "s": 0.004992160000000013,
+        "r": -1.7320129705455933e-17
+      },
+      {
+        "kind": "half_progress_domain",
+        "cell": 19,
+        "tick": 163,
+        "half": 2,
+        "s": 0.004992160000000013,
+        "r": -1.7320129705455933e-17
+      },
+      {
+        "kind": "recursive_progress_domain",
+        "cell": 19,
+        "tick": 163,
+        "s": 0.004992160000000013,
+        "r": -1.7320129705455933e-17
+      },
+      {
+        "kind": "half_progress_domain",
+        "cell": 19,
+        "tick": 164,
+        "half": 1,
+        "s": 0.004992160000000013,
+        "r": -1.7320129705455933e-17
+      },
+      {
+        "kind": "half_progress_domain",
+        "cell": 19,
+        "tick": 164,
+        "half": 2,
+        "s": 0.004992160000000013,
+        "r": -1.7320129705455933e-17
+      },
+      {
+        "kind": "recursive_progress_domain",
+        "cell": 19,
+        "tick": 164,
+        "s": 0.004992160000000013,
+        "r": -1.7320129705455933e-17
+      },
+      {
+        "kind": "half_progress_domain",
+        "cell": 19,
+        "tick": 165,
+        "half": 1,
+        "s": 0.004992160000000013,
+        "r": -1.7320129705455933e-17
+      },
+      {
+        "kind": "half_progress_domain",
+        "cell": 19,
+        "tick": 165,
+        "half": 2,
+        "s": 0.004992160000000013,
+        "r": -1.7320129705455933e-17
+      },
+      {
+        "kind": "recursive_progress_domain",
+        "cell": 19,
+        "tick": 165,
+        "s": 0.004992160000000013,
+        "r": -1.7320129705455933e-17
+      },
+      {
+        "kind": "half_progress_domain",
+        "cell": 19,
+        "tick": 166,
+        "half": 1,
+        "s": 0.004992160000000013,
+        "r": -1.7320129705455933e-17
+      },
+      {
+        "kind": "half_progress_domain",
+        "cell": 19,
+        "tick": 166,
+        "half": 2,
+        "s": 0.004992160000000013,
+        "r": -1.7320129705455933e-17
+      },
+      {
+        "kind": "recursive_progress_domain",
+        "cell": 19,
+        "tick": 166,
+        "s": 0.004992160000000013,
+        "r": -1.7320129705455933e-17
+      },
+      {
+        "kind": "half_progress_domain",
+        "cell": 19,
+        "tick": 167,
+        "half": 1,
+        "s": 0.004992160000000012,
+        "r": -1.7320129705455933e-17
+      },
+      {
+        "kind": "half_progress_domain",
+        "cell": 19,
+        "tick": 167,
+        "half": 2,
+        "s": 0.004992160000000012,
+        "r": -1.7320129705455933e-17
+      },
+      {
+        "kind": "recursive_progress_domain",
+        "cell": 19,
+        "tick": 167,
+        "s": 0.004992160000000013,
+        "r": -1.7320129705455933e-17
+      },
+      {
+        "kind": "half_progress_domain",
+        "cell": 19,
+        "tick": 168,
+        "half": 1,
+        "s": 0.004992160000000012,
+        "r": -1.7320129705455933e-17
+      },
+      {
+        "kind": "half_progress_domain",
+        "cell": 19,
+        "tick": 168,
+        "half": 2,
+        "s": 0.004992160000000012,
+        "r": -1.7320129705455933e-17
+      },
+      {
+        "kind": "recursive_progress_domain",
+        "cell": 19,
+        "tick": 168,
+        "s": 0.004992160000000013,
+        "r": -1.7320129705455933e-17
+      },
+      {
+        "kind": "half_progress_domain",
+        "cell": 19,
+        "tick": 169,
+        "half": 1,
+        "s": 0.004992160000000012,
+        "r": -1.7320129705455933e-17
+      },
+      {
+        "kind": "half_progress_domain",
+        "cell": 19,
+        "tick": 169,
+        "half": 2,
+        "s": 0.004992160000000012,
+        "r": -1.7320129705455933e-17
+      },
+      {
+        "kind": "recursive_progress_domain",
+        "cell": 19,
+        "tick": 169,
+        "s": 0.004992160000000013,
+        "r": -1.7320129705455933e-17
+      },
+      {
+        "kind": "half_progress_domain",
+        "cell": 19,
+        "tick": 170,
+        "half": 1,
+        "s": 0.004992160000000012,
+        "r": -1.7320129705455933e-17
+      },
+      {
+        "kind": "half_progress_domain",
+        "cell": 19,
+        "tick": 170,
+        "half": 2,
+        "s": 0.004992160000000012,
+        "r": -1.7320129705455933e-17
+      },
+      {
+        "kind": "recursive_progress_domain",
+        "cell": 19,
+        "tick": 170,
+        "s": 0.004992160000000013,
+        "r": -1.7320129705455933e-17
+      },
+      {
+        "kind": "half_progress_domain",
+        "cell": 19,
+        "tick": 171,
+        "half": 1,
+        "s": 0.004992160000000012,
+        "r": -1.7320129705455933e-17
+      },
+      {
+        "kind": "half_progress_domain",
+        "cell": 19,
+        "tick": 171,
+        "half": 2,
+        "s": 0.004992160000000012,
+        "r": -1.7320129705455933e-17
+      },
+      {
+        "kind": "recursive_progress_domain",
+        "cell": 19,
+        "tick": 171,
+        "s": 0.004992160000000013,
+        "r": -1.7320129705455933e-17
+      },
+      {
+        "kind": "half_progress_domain",
+        "cell": 19,
+        "tick": 172,
+        "half": 1,
+        "s": 0.004992160000000012,
+        "r": -1.7320129705455933e-17
+      },
+      {
+        "kind": "half_progress_domain",
+        "cell": 19,
+        "tick": 172,
+        "half": 2,
+        "s": 0.004992160000000012,
+        "r": -1.7320129705455933e-17
+      },
+      {
+        "kind": "recursive_progress_domain",
+        "cell": 19,
+        "tick": 172,
+        "s": 0.004992160000000013,
+        "r": -1.7320129705455933e-17
+      },
+      {
+        "kind": "half_progress_domain",
+        "cell": 19,
+        "tick": 173,
+        "half": 1,
+        "s": 0.004992160000000012,
+        "r": -1.7320129705455933e-17
+      },
+      {
+        "kind": "half_progress_domain",
+        "cell": 19,
+        "tick": 173,
+        "half": 2,
+        "s": 0.004992160000000012,
+        "r": -1.7320129705455933e-17
+      },
+      {
+        "kind": "recursive_progress_domain",
+        "cell": 19,
+        "tick": 173,
+        "s": 0.004992160000000013,
+        "r": -1.7320129705455933e-17
+      },
+      {
+        "kind": "half_progress_domain",
+        "cell": 19,
+        "tick": 174,
+        "half": 1,
+        "s": 0.004992160000000012,
+        "r": -1.7320129705455933e-17
+      },
+      {
+        "kind": "half_progress_domain",
+        "cell": 19,
+        "tick": 174,
+        "half": 2,
+        "s": 0.004992160000000012,
+        "r": -1.7320129705455933e-17
+      },
+      {
+        "kind": "recursive_progress_domain",
+        "cell": 19,
+        "tick": 174,
+        "s": 0.004992160000000013,
+        "r": -1.7320129705455933e-17
+      },
+      {
+        "kind": "half_progress_domain",
+        "cell": 19,
+        "tick": 175,
+        "half": 1,
+        "s": 0.004992160000000012,
+        "r": -1.7320129705455933e-17
+      },
+      {
+        "kind": "half_progress_domain",
+        "cell": 19,
+        "tick": 175,
+        "half": 2,
+        "s": 0.004992160000000012,
+        "r": -1.7320129705455933e-17
+      },
+      {
+        "kind": "recursive_progress_domain",
+        "cell": 19,
+        "tick": 175,
+        "s": 0.004992160000000013,
+        "r": -1.7320129705455933e-17
+      },
+      {
+        "kind": "half_progress_domain",
+        "cell": 19,
+        "tick": 176,
+        "half": 1,
+        "s": 0.004992160000000012,
+        "r": -1.7320129705455933e-17
+      },
+      {
+        "kind": "half_progress_domain",
+        "cell": 19,
+        "tick": 176,
+        "half": 2,
+        "s": 0.004992160000000012,
+        "r": -1.7320129705455933e-17
+      },
+      {
+        "kind": "recursive_progress_domain",
+        "cell": 19,
+        "tick": 176,
+        "s": 0.004992160000000013,
+        "r": -1.7320129705455933e-17
+      },
+      {
+        "kind": "half_progress_domain",
+        "cell": 19,
+        "tick": 177,
+        "half": 1,
+        "s": 0.004992160000000012,
+        "r": -1.7320129705455933e-17
+      },
+      {
+        "kind": "half_progress_domain",
+        "cell": 19,
+        "tick": 177,
+        "half": 2,
+        "s": 0.004992160000000012,
+        "r": -1.7320129705455933e-17
+      },
+      {
+        "kind": "recursive_progress_domain",
+        "cell": 19,
+        "tick": 177,
+        "s": 0.004992160000000013,
+        "r": -1.7320129705455933e-17
+      },
+      {
+        "kind": "half_progress_domain",
+        "cell": 19,
+        "tick": 178,
+        "half": 1,
+        "s": 0.004992160000000012,
+        "r": -1.7320129705455933e-17
+      },
+      {
+        "kind": "half_progress_domain",
+        "cell": 19,
+        "tick": 178,
+        "half": 2,
+        "s": 0.004992160000000012,
+        "r": -1.7320129705455933e-17
+      },
+      {
+        "kind": "recursive_progress_domain",
+        "cell": 19,
+        "tick": 178,
+        "s": 0.004992160000000013,
+        "r": -1.7320129705455933e-17
+      },
+      {
+        "kind": "half_progress_domain",
+        "cell": 19,
+        "tick": 179,
+        "half": 1,
+        "s": 0.004992160000000012,
+        "r": -1.7320129705455933e-17
+      },
+      {
+        "kind": "half_progress_domain",
+        "cell": 19,
+        "tick": 179,
+        "half": 2,
+        "s": 0.004992160000000011,
+        "r": -1.7320129705455933e-17
+      },
+      {
+        "kind": "recursive_progress_domain",
+        "cell": 19,
+        "tick": 179,
+        "s": 0.004992160000000013,
+        "r": -1.7320129705455933e-17
+      },
+      {
+        "kind": "half_progress_domain",
+        "cell": 19,
+        "tick": 180,
+        "half": 1,
+        "s": 0.004992160000000011,
+        "r": -1.7320129705455933e-17
+      },
+      {
+        "kind": "half_progress_domain",
+        "cell": 19,
+        "tick": 180,
+        "half": 2,
+        "s": 0.004992160000000011,
+        "r": -1.7320129705455933e-17
+      },
+      {
+        "kind": "recursive_progress_domain",
+        "cell": 19,
+        "tick": 180,
+        "s": 0.004992160000000013,
+        "r": -1.7320129705455933e-17
+      },
+      {
+        "kind": "half_progress_domain",
+        "cell": 19,
+        "tick": 181,
+        "half": 1,
+        "s": 0.004992160000000011,
+        "r": -1.7320129705455933e-17
+      },
+      {
+        "kind": "half_progress_domain",
+        "cell": 19,
+        "tick": 181,
+        "half": 2,
+        "s": 0.004992160000000011,
+        "r": -1.7320129705455933e-17
+      },
+      {
+        "kind": "recursive_progress_domain",
+        "cell": 19,
+        "tick": 181,
+        "s": 0.004992160000000013,
+        "r": -1.7320129705455933e-17
+      },
+      {
+        "kind": "half_progress_domain",
+        "cell": 19,
+        "tick": 182,
+        "half": 1,
+        "s": 0.004992160000000011,
+        "r": -1.7320129705455933e-17
+      },
+      {
+        "kind": "half_progress_domain",
+        "cell": 19,
+        "tick": 182,
+        "half": 2,
+        "s": 0.004992160000000011,
+        "r": -1.7320129705455933e-17
+      },
+      {
+        "kind": "recursive_progress_domain",
+        "cell": 19,
+        "tick": 182,
+        "s": 0.004992160000000013,
+        "r": -1.7320129705455933e-17
+      },
+      {
+        "kind": "half_progress_domain",
+        "cell": 19,
+        "tick": 183,
+        "half": 1,
+        "s": 0.004992160000000011,
+        "r": -1.7320129705455933e-17
+      },
+      {
+        "kind": "half_progress_domain",
+        "cell": 19,
+        "tick": 183,
+        "half": 2,
+        "s": 0.004992160000000011,
+        "r": -1.7320129705455933e-17
+      },
+      {
+        "kind": "recursive_progress_domain",
+        "cell": 19,
+        "tick": 183,
+        "s": 0.004992160000000013,
+        "r": -1.7320129705455933e-17
+      },
+      {
+        "kind": "half_progress_domain",
+        "cell": 19,
+        "tick": 184,
+        "half": 1,
+        "s": 0.004992160000000011,
+        "r": -1.7320129705455933e-17
+      },
+      {
+        "kind": "half_progress_domain",
+        "cell": 19,
+        "tick": 184,
+        "half": 2,
+        "s": 0.004992160000000011,
+        "r": -1.7320129705455933e-17
+      },
+      {
+        "kind": "recursive_progress_domain",
+        "cell": 19,
+        "tick": 184,
+        "s": 0.004992160000000013,
+        "r": -1.7320129705455933e-17
+      },
+      {
+        "kind": "half_progress_domain",
+        "cell": 19,
+        "tick": 185,
+        "half": 1,
+        "s": 0.004992160000000011,
+        "r": -1.7320129705455933e-17
+      },
+      {
+        "kind": "half_progress_domain",
+        "cell": 19,
+        "tick": 185,
+        "half": 2,
+        "s": 0.004992160000000011,
+        "r": -1.7320129705455933e-17
+      },
+      {
+        "kind": "recursive_progress_domain",
+        "cell": 19,
+        "tick": 185,
+        "s": 0.004992160000000013,
+        "r": -1.7320129705455933e-17
+      },
+      {
+        "kind": "half_progress_domain",
+        "cell": 19,
+        "tick": 186,
+        "half": 1,
+        "s": 0.004992160000000011,
+        "r": -1.7320129705455933e-17
+      },
+      {
+        "kind": "half_progress_domain",
+        "cell": 19,
+        "tick": 186,
+        "half": 2,
+        "s": 0.004992160000000011,
+        "r": -1.7320129705455933e-17
+      },
+      {
+        "kind": "recursive_progress_domain",
+        "cell": 19,
+        "tick": 186,
+        "s": 0.004992160000000013,
+        "r": -1.7320129705455933e-17
+      },
+      {
+        "kind": "half_progress_domain",
+        "cell": 19,
+        "tick": 187,
+        "half": 1,
+        "s": 0.004992160000000011,
+        "r": -1.7320129705455933e-17
+      },
+      {
+        "kind": "half_progress_domain",
+        "cell": 19,
+        "tick": 187,
+        "half": 2,
+        "s": 0.004992160000000011,
+        "r": -1.7320129705455933e-17
+      },
+      {
+        "kind": "recursive_progress_domain",
+        "cell": 19,
+        "tick": 187,
+        "s": 0.004992160000000013,
+        "r": -1.7320129705455933e-17
+      },
+      {
+        "kind": "half_progress_domain",
+        "cell": 19,
+        "tick": 188,
+        "half": 1,
+        "s": 0.004992160000000011,
+        "r": -1.7320129705455933e-17
+      },
+      {
+        "kind": "half_progress_domain",
+        "cell": 19,
+        "tick": 188,
+        "half": 2,
+        "s": 0.004992160000000011,
+        "r": -1.7320129705455933e-17
+      },
+      {
+        "kind": "recursive_progress_domain",
+        "cell": 19,
+        "tick": 188,
+        "s": 0.004992160000000013,
+        "r": -1.7320129705455933e-17
+      },
+      {
+        "kind": "half_progress_domain",
+        "cell": 19,
+        "tick": 189,
+        "half": 1,
+        "s": 0.004992160000000011,
+        "r": -1.7320129705455933e-17
+      },
+      {
+        "kind": "half_progress_domain",
+        "cell": 19,
+        "tick": 189,
+        "half": 2,
+        "s": 0.004992160000000011,
+        "r": -1.7320129705455933e-17
+      },
+      {
+        "kind": "recursive_progress_domain",
+        "cell": 19,
+        "tick": 189,
+        "s": 0.004992160000000013,
+        "r": -1.7320129705455933e-17
+      },
+      {
+        "kind": "half_progress_domain",
+        "cell": 19,
+        "tick": 190,
+        "half": 1,
+        "s": 0.004992160000000011,
+        "r": -1.7320129705455933e-17
+      },
+      {
+        "kind": "half_progress_domain",
+        "cell": 19,
+        "tick": 190,
+        "half": 2,
+        "s": 0.004992160000000011,
+        "r": -1.7320129705455933e-17
+      },
+      {
+        "kind": "recursive_progress_domain",
+        "cell": 19,
+        "tick": 190,
+        "s": 0.004992160000000013,
+        "r": -1.7320129705455933e-17
+      },
+      {
+        "kind": "half_progress_domain",
+        "cell": 19,
+        "tick": 191,
+        "half": 1,
+        "s": 0.004992160000000011,
+        "r": -1.7320129705455933e-17
+      },
+      {
+        "kind": "half_progress_domain",
+        "cell": 19,
+        "tick": 191,
+        "half": 2,
+        "s": 0.004992160000000011,
+        "r": -1.7320129705455933e-17
+      },
+      {
+        "kind": "recursive_progress_domain",
+        "cell": 19,
+        "tick": 191,
+        "s": 0.004992160000000013,
+        "r": -1.7320129705455933e-17
+      },
+      {
+        "kind": "half_progress_domain",
+        "cell": 19,
+        "tick": 192,
+        "half": 1,
+        "s": 0.00499216000000001,
+        "r": -1.7320129705455933e-17
+      },
+      {
+        "kind": "half_progress_domain",
+        "cell": 19,
+        "tick": 192,
+        "half": 2,
+        "s": 0.00499216000000001,
+        "r": -1.7320129705455933e-17
+      },
+      {
+        "kind": "recursive_progress_domain",
+        "cell": 19,
+        "tick": 192,
+        "s": 0.004992160000000013,
+        "r": -1.7320129705455933e-17
+      },
+      {
+        "kind": "half_progress_domain",
+        "cell": 19,
+        "tick": 193,
+        "half": 1,
+        "s": 0.00499216000000001,
+        "r": -1.7320129705455933e-17
+      },
+      {
+        "kind": "half_progress_domain",
+        "cell": 19,
+        "tick": 193,
+        "half": 2,
+        "s": 0.00499216000000001,
+        "r": -1.7320129705455933e-17
+      },
+      {
+        "kind": "recursive_progress_domain",
+        "cell": 19,
+        "tick": 193,
+        "s": 0.004992160000000013,
+        "r": -1.7320129705455933e-17
+      },
+      {
+        "kind": "half_progress_domain",
+        "cell": 19,
+        "tick": 194,
+        "half": 1,
+        "s": 0.00499216000000001,
+        "r": -1.7320129705455933e-17
+      },
+      {
+        "kind": "half_progress_domain",
+        "cell": 19,
+        "tick": 194,
+        "half": 2,
+        "s": 0.00499216000000001,
+        "r": -1.7320129705455933e-17
+      },
+      {
+        "kind": "recursive_progress_domain",
+        "cell": 19,
+        "tick": 194,
+        "s": 0.004992160000000013,
+        "r": -1.7320129705455933e-17
+      },
+      {
+        "kind": "half_progress_domain",
+        "cell": 19,
+        "tick": 195,
+        "half": 1,
+        "s": 0.00499216000000001,
+        "r": -1.7320129705455933e-17
+      },
+      {
+        "kind": "half_progress_domain",
+        "cell": 19,
+        "tick": 195,
+        "half": 2,
+        "s": 0.00499216000000001,
+        "r": -1.7320129705455933e-17
+      },
+      {
+        "kind": "recursive_progress_domain",
+        "cell": 19,
+        "tick": 195,
+        "s": 0.004992160000000013,
+        "r": -1.7320129705455933e-17
+      },
+      {
+        "kind": "half_progress_domain",
+        "cell": 19,
+        "tick": 196,
+        "half": 1,
+        "s": 0.00499216000000001,
+        "r": -1.7320129705455933e-17
+      },
+      {
+        "kind": "half_progress_domain",
+        "cell": 19,
+        "tick": 196,
+        "half": 2,
+        "s": 0.00499216000000001,
+        "r": -1.7320129705455933e-17
+      },
+      {
+        "kind": "recursive_progress_domain",
+        "cell": 19,
+        "tick": 196,
+        "s": 0.004992160000000013,
+        "r": -1.7320129705455933e-17
+      },
+      {
+        "kind": "half_progress_domain",
+        "cell": 19,
+        "tick": 197,
+        "half": 1,
+        "s": 0.00499216000000001,
+        "r": -1.7320129705455933e-17
+      },
+      {
+        "kind": "half_progress_domain",
+        "cell": 19,
+        "tick": 197,
+        "half": 2,
+        "s": 0.00499216000000001,
+        "r": -1.7320129705455933e-17
+      },
+      {
+        "kind": "recursive_progress_domain",
+        "cell": 19,
+        "tick": 197,
+        "s": 0.004992160000000013,
+        "r": -1.7320129705455933e-17
+      },
+      {
+        "kind": "half_progress_domain",
+        "cell": 19,
+        "tick": 198,
+        "half": 1,
+        "s": 0.00499216000000001,
+        "r": -1.7320129705455933e-17
+      },
+      {
+        "kind": "half_progress_domain",
+        "cell": 19,
+        "tick": 198,
+        "half": 2,
+        "s": 0.00499216000000001,
+        "r": -1.7320129705455933e-17
+      },
+      {
+        "kind": "recursive_progress_domain",
+        "cell": 19,
+        "tick": 198,
+        "s": 0.004992160000000013,
+        "r": -1.7320129705455933e-17
+      },
+      {
+        "kind": "half_progress_domain",
+        "cell": 19,
+        "tick": 199,
+        "half": 1,
+        "s": 0.00499216000000001,
+        "r": -1.7320129705455933e-17
+      },
+      {
+        "kind": "half_progress_domain",
+        "cell": 19,
+        "tick": 199,
+        "half": 2,
+        "s": 0.00499216000000001,
+        "r": -1.7320129705455933e-17
+      },
+      {
+        "kind": "recursive_progress_domain",
+        "cell": 19,
+        "tick": 199,
+        "s": 0.004992160000000013,
+        "r": -1.7320129705455933e-17
+      },
+      {
+        "kind": "half_progress_domain",
+        "cell": 19,
+        "tick": 200,
+        "half": 1,
+        "s": 0.00499216000000001,
+        "r": -1.7320129705455933e-17
+      },
+      {
+        "kind": "half_progress_domain",
+        "cell": 19,
+        "tick": 200,
+        "half": 2,
+        "s": 0.00499216000000001,
+        "r": -1.7320129705455933e-17
+      },
+      {
+        "kind": "recursive_progress_domain",
+        "cell": 19,
+        "tick": 200,
+        "s": 0.004992160000000013,
+        "r": -1.7320129705455933e-17
+      }
+    ],
+    "literal_max_command_jerk": 9.893212350488147,
+    "literal_final_w": [
+      -4.119968255444917e-18,
+      -7.657177843178875e-18,
+      -4.30970363562988e-18,
+      7.399679827213568e-18,
+      3.5101045334218206e-18,
+      -4.865357249028701e-18,
+      1.6940658945086007e-20
+    ],
+    "literal_final_r": -1.7320129705455933e-17,
+    "last_alpha": [
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0
+    ],
+    "last_b": 0.0,
+    "exact_zero_tail": false,
+    "cycles": 200,
+    "literal_C": [
+      -1.24646746625803,
+      0.09398734654269893,
+      1.1567199017142291,
+      -2.77996750044261,
+      -0.09694438678458234,
+      4.38724622948658,
+      -1.629006816636328
+    ]
+  },
+  "guess_state_history_bitwise_match_actual_A2": true,
+  "oracle_inputs_exact_actual_A2": true
+}

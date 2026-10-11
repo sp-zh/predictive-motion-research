@@ -1,0 +1,37 @@
+{
+  "schema": "ROOT_TASK_START_A_DIAGNOSTIC_FIGURE_V1",
+  "review_ready_sha256": "a7cecbf2181485032cbf52af5090ce6be7321a7742d4219923a93add8068b099",
+  "review_results_sha256": "c5874a9b4f8c4381b92725e6ff639b103a1415c369eefcb562dec3478e74c5d8",
+  "renderer_sha256": "70254f33b777279e0d41599a7c1148b80324ea93b63b1234ac621feff04345b2",
+  "scope": "Independent saved-file diagnostics only; same actual A2 matrices. No method ranking, executed controls or research acceptance.",
+  "data": {
+    "regeneration_errors": {
+      "F": 6.591949208711867e-17,
+      "H": 4.336808689942018e-18,
+      "g": 3.885780586188048e-16,
+      "lower": 5.5067062021407764e-14,
+      "upper": 5.5067062021407764e-14
+    },
+    "worst_original_jerk_violations": [
+      1.5460706270786773e-06,
+      9.414691248821327e-14
+    ],
+    "strict_counts": {
+      "Native forensic\nb or progress jerk": 10,
+      "SLSQP reference\nb or progress jerk": 7,
+      "SLSQP reference\nhalf progress domain": 81,
+      "SLSQP reference\nrecursive progress domain": 41
+    }
+  },
+  "files": {
+    "diagnostics.png": {
+      "bytes": 185401,
+      "sha256": "0e46c71991cdc678196f1b3c9c13986dc12836f9ae7498e315b75d2909bd8ebc"
+    },
+    "diagnostics.svg": {
+      "bytes": 136385,
+      "sha256": "71f8e6adb4250934f4ec7fa70ed279b17981a1a2b7d1c6967ad938249e2415d4"
+    }
+  },
+  "phase5": "NOT_ACCEPTED"
+}

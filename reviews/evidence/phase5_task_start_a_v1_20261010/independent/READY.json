@@ -1,0 +1,154 @@
+{
+  "schema": "ROOT_TASK_START_A2_AND_ORACLEV2_INDEPENDENT_FILE_AUDIT_V1",
+  "input_ready_sha256": "17d59d457b1ba039141883a211e5259717a012f6dd8a48c5b81f892e5dbef3b6",
+  "oracle_ready_sha256": "337fb7eb6d282b9e6a4c33b4bbed9be8ee1b259de18e19ddd333abe39dc60fc7",
+  "source_sha256": "de1f719e5cbf7c7986f4fa090e76c1fbc04a5151f84b721720f117fe51ff0d60",
+  "files": {
+    "SOURCE_READ_MANIFEST.json": {
+      "bytes": 2943,
+      "sha256": "e636d92f328ff125d4af6abb2762809b098ae5e80a2cf9f147c6b43507002564"
+    },
+    "SOURCE_SNAPSHOT.py": {
+      "bytes": 30356,
+      "sha256": "de1f719e5cbf7c7986f4fa090e76c1fbc04a5151f84b721720f117fe51ff0d60"
+    },
+    "audit_task_start.py": {
+      "bytes": 30356,
+      "sha256": "de1f719e5cbf7c7986f4fa090e76c1fbc04a5151f84b721720f117fe51ff0d60"
+    },
+    "full_stderr.txt": {
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    "full_stdout.txt": {
+      "bytes": 1304,
+      "sha256": "ceef5155c484b8cf13b73ce08bea9599db8bc3940b0b174804464fcd855986bd"
+    },
+    "history/reference_product_bitwise_before_fix.py": {
+      "bytes": 9080,
+      "sha256": "d5ccbb1ed9170972043365c7ec418a6d3520eeaa2f0831e84ddb121b56cc26b6"
+    },
+    "history/reference_product_bitwise_before_fix.stderr.txt": {
+      "bytes": 454,
+      "sha256": "976a7d1532207b8ce01e6fa074eaf2e2fba331d888e9bf313c6099365677f959"
+    },
+    "prep_path_failure.txt": {
+      "bytes": 160,
+      "sha256": "b94f206db383037efcea43f75877aa967a804f11c4d717e076e0abe2752de8be"
+    },
+    "quick_oracle_postgate.json": {
+      "bytes": 28663,
+      "sha256": "03acb70f19de50c85b26e7b107a9ee41174174516fba2666329077946b4e631c"
+    },
+    "quick_stderr.txt": {
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    "quick_stdout.txt": {
+      "bytes": 889,
+      "sha256": "285b1e09862144d846f99bde024203405c2e4015b5f9d9e71e145e0d4cb771b5"
+    },
+    "results.json": {
+      "bytes": 114198,
+      "sha256": "c5874a9b4f8c4381b92725e6ff639b103a1415c369eefcb562dec3478e74c5d8"
+    },
+    "review.json": {
+      "bytes": 676,
+      "sha256": "315998d65699481ae51570f08a6d3199f8e340b1684dcf35ab2d431b01fa2f94"
+    },
+    "review.md": {
+      "bytes": 6003,
+      "sha256": "c347cead2f37fe25d0b68702a22faa1771b73bab3d266a5875105b161183102d"
+    },
+    "source-read-snapshot/active_first_cycle.cpp": {
+      "bytes": 18194,
+      "sha256": "48ab1a5bfec3b3d54e2e2910519dc0e7a05af840923e8c6c175ae2b8c2df56a9"
+    },
+    "source-read-snapshot/affine_assembly.cpp": {
+      "bytes": 28981,
+      "sha256": "d478eda1f0fe97bfc41851515f4baa3e485fd4a57968a62dcb6233ae1157bbd5"
+    },
+    "source-read-snapshot/affine_assembly.hpp": {
+      "bytes": 6026,
+      "sha256": "6faee2961242052c7655da41e8988dd0844f14c3cfa885672aa7c03eaa1dcb57"
+    },
+    "source-read-snapshot/box_screen_tests.cpp": {
+      "bytes": 2954,
+      "sha256": "d922876babec2867dd1293bcee259ac12e4b2a6af5a30dd551209e097c0abaf8"
+    },
+    "source-read-snapshot/integrated_horizon_qp.cpp": {
+      "bytes": 36508,
+      "sha256": "ad771e10de104f7a9ef38e907354b8c27420525affcf3980301e9c3258acee74"
+    },
+    "source-read-snapshot/integrated_horizon_qp.hpp": {
+      "bytes": 9631,
+      "sha256": "379d9c599895143ab80bc144414091a749f46848b7cf8d6c913db97d998f41a9"
+    },
+    "source-read-snapshot/invariant_tests.cpp": {
+      "bytes": 4721,
+      "sha256": "f5a859d4cf9d79a5ae1b533b8dd62776f2bba6599dfdf691a2915ef3296a33f9"
+    },
+    "source-read-snapshot/linear_box_screen.hpp": {
+      "bytes": 3916,
+      "sha256": "b649eff43293a3078b7b46a0166fa0f8a2ac59f3a8496c8c73a98c275fed96d1"
+    },
+    "source-read-snapshot/lossless_evidence.cpp": {
+      "bytes": 15969,
+      "sha256": "04680550f459ebf6bf0136bd611e2707b18562ddea5d44e4fc1c8782efb1bdd6"
+    },
+    "source-read-snapshot/lossless_evidence.hpp": {
+      "bytes": 1887,
+      "sha256": "6e40b8878ddc78e8422c1301ca62ca98ed854fc2f57e6f549f5685cc1387bccc"
+    },
+    "source-read-snapshot/model_boundary.cpp": {
+      "bytes": 14091,
+      "sha256": "04c94821ee57669431b8c7bceac1d66004fdfc8af11424008e89890a7486630a"
+    },
+    "source-read-snapshot/model_boundary.hpp": {
+      "bytes": 2528,
+      "sha256": "51b2e845860fb4faecfc95b7f9873439ab4e682adce37a290e6fe704ee48a9d9"
+    },
+    "source-read-snapshot/normalization.cpp": {
+      "bytes": 23976,
+      "sha256": "a0cd0c9cdb505f922f1744f24cf115057b6ba9f3a9bc1b3ed0c9bdb82d358ed5"
+    },
+    "source-read-snapshot/normalization.hpp": {
+      "bytes": 4288,
+      "sha256": "9456be5c205f23d2aa2210eac02286d030204a446af003ee85362b971ccb43d8"
+    },
+    "source-read-snapshot/observer_tests.cpp": {
+      "bytes": 3785,
+      "sha256": "d1ff998984981a5ded1e92b8d452503e8b489ecfb0d067fb04ff5fd616d02877"
+    },
+    "source-read-snapshot/runtime_observer.cpp": {
+      "bytes": 17215,
+      "sha256": "9bbbe145f0cfa78c24f1d2b56008b065f1f3838ee54fa727eb76a88578fb607f"
+    },
+    "source-read-snapshot/runtime_observer.hpp": {
+      "bytes": 5472,
+      "sha256": "0e0ef9cfe8bc1c8a5bb38327148110dd6db4ebfe4e2ba479de8d1d78175941c8"
+    },
+    "source-read-snapshot/session_primitives.hpp": {
+      "bytes": 2259,
+      "sha256": "0b76bc232ed81dc9b4831617ae1690cfc287def914b8bca5f05ce6e6e25b6080"
+    },
+    "source-read-snapshot/solver_forensics.cpp": {
+      "bytes": 14141,
+      "sha256": "b0432ed917ecf68689705558730f6ee8fc781eef78692205f021f9eeb610720c"
+    },
+    "source-read-snapshot/solver_forensics.hpp": {
+      "bytes": 602,
+      "sha256": "6db9c07abeb82e5c119ad18f44c3207733f8e73b54df2eea3b48dab013c70a54"
+    },
+    "source-read-snapshot/task_local_provider.cpp": {
+      "bytes": 1839,
+      "sha256": "051b424236979f9fe7ea4cb96564f54969025c997bfba2c61d347a23f7fbae4c"
+    },
+    "source-read-snapshot/task_local_provider.hpp": {
+      "bytes": 640,
+      "sha256": "1819e2f626fb0ff65ad7e7e8de0b0b52f625e6bf435b073d7cca55722d76f093"
+    }
+  },
+  "verdict": "PASS_ACTUAL_A2_SAVED_MAPS_FULL_QP_AND_EQUIVALENT_REDUCTION_ALGEBRA_ONLY",
+  "phase5": "NOT_ACCEPTED"
+}

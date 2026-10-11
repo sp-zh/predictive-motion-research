@@ -1,0 +1,5 @@
+Traceback (most recent call last):
+  File "/private/tmp/root_independent_task_start_a_review_20261010/audit_task_start.py", line 64, in <module>
+    xref=ref['solver_x'];Uref=p+Z@(D*xref);assert np.array_equal(ref['reduced_z'],D*xref) and np.array_equal(ref['reconstructed_original_U'],Uref)
+                                                  ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AssertionError

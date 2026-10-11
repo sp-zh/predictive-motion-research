@@ -1,0 +1,3049 @@
+{
+  "scope": "ACTUAL_TASK_START_A2_MAPS_QP_AND_EXTERNAL_REFERENCE_FILE_ALGEBRA_ONLY",
+  "source_sha256": "de1f719e5cbf7c7986f4fa090e76c1fbc04a5151f84b721720f117fe51ff0d60",
+  "input_pins": {
+    "/private/tmp/phase5_task_start_a_checkpoint_v1_20261010/READY.json": {
+      "bytes": 38310,
+      "sha256": "17d59d457b1ba039141883a211e5259717a012f6dd8a48c5b81f892e5dbef3b6"
+    },
+    "/private/tmp/phase5_task_start_a_checkpoint_v1_20261010/stage_task_start_a_input2.py": {
+      "bytes": 2378,
+      "sha256": "8d6f35cf8f6a6769a088103331362de2ad7bea9cce87f427e936d12f7dc81f7e"
+    },
+    "/private/tmp/phase5_task_start_a_checkpoint_v1_20261010/prepare_task_start_a_run2.py": {
+      "bytes": 3171,
+      "sha256": "f3602479b0b483999b4af7e2ea68836836182b891d42fa6a314be319aa0f48c3"
+    },
+    "/private/tmp/phase5_task_start_a_checkpoint_v1_20261010/collection.stderr": {
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    "/private/tmp/phase5_task_start_a_checkpoint_v1_20261010/README.md": {
+      "bytes": 1070,
+      "sha256": "9c56981fd80af4cae510b60c47113c8e262959ebb46fd80937d1d918d436be16"
+    },
+    "/private/tmp/phase5_task_start_a_checkpoint_v1_20261010/link_task_start_a2.py": {
+      "bytes": 2027,
+      "sha256": "d66979686da085ad7b624d541f26c4cf81df74455aa0320152a3bd9d912e4209"
+    },
+    "/private/tmp/phase5_task_start_a_checkpoint_v1_20261010/ACTUAL_SOLVER_SUMMARY.json": {
+      "bytes": 1445,
+      "sha256": "ce20d31573c0194a9e77a6d8f7d4aca765c380820d67dd017e9edfd65c4f063c"
+    },
+    "/private/tmp/phase5_task_start_a_checkpoint_v1_20261010/stage_task_start_a_compile2.py": {
+      "bytes": 2496,
+      "sha256": "74f1159741836976e4c6d7bcd265c1edfaf499204480fe2e7a685454624fb92c"
+    },
+    "/private/tmp/phase5_task_start_a_checkpoint_v1_20261010/actual_collection.tar.gz": {
+      "bytes": 18652247,
+      "sha256": "090fc2496dfacd93ca37aec49e087c73fbfa0e35c2c22662395e90e28985faec"
+    },
+    "/private/tmp/phase5_task_start_a_checkpoint_v1_20261010/collect_task_start_a_checkpoint1.py": {
+      "bytes": 2477,
+      "sha256": "d152f6e98e1094d233cb630970d69c8803289e1e41a0f8661e8f019fe778fb1d"
+    },
+    "/private/tmp/phase5_task_start_a_checkpoint_v1_20261010/readonly_collection_source.py": {
+      "bytes": 1404,
+      "sha256": "f9e42bb14ccad98f1ca9ea8e18ae8c12161cdadbbb4d2a8791f0f697f11630ea"
+    },
+    "/private/tmp/phase5_task_start_a_checkpoint_v1_20261010/read_task_start_a_summary.py": {
+      "bytes": 2008,
+      "sha256": "c2fdab023d4793500bb3822dd69346e058b077e844a0b96b3306192f2e3003b7"
+    },
+    "/private/tmp/phase5_task_start_a_checkpoint_v1_20261010/source-review-frozen/SOURCE_MANIFEST.json": {
+      "bytes": 2943,
+      "sha256": "e636d92f328ff125d4af6abb2762809b098ae5e80a2cf9f147c6b43507002564"
+    },
+    "/private/tmp/phase5_task_start_a_checkpoint_v1_20261010/actual-dell/NATIVE_ELF_INDEX.json": {
+      "bytes": 578,
+      "sha256": "51f8b96670babab0e01a1aa9c390ca3fca81208e1906646cf176779539475d67"
+    },
+    "/private/tmp/phase5_task_start_a_checkpoint_v1_20261010/actual-dell/attempt1/active_run_plan.json": {
+      "bytes": 486758,
+      "sha256": "a597b1c71478dbdef1c7a22768b6dd178f709c7b4e6311aeec628645ea7b41c8"
+    },
+    "/private/tmp/phase5_task_start_a_checkpoint_v1_20261010/actual-dell/attempt1/dev_link.py": {
+      "bytes": 7457,
+      "sha256": "fbce82edadae898f80f7480ce9ce3415daf61535e581ae815139ed0e9e8cad90"
+    },
+    "/private/tmp/phase5_task_start_a_checkpoint_v1_20261010/actual-dell/attempt1/dev_compile_plan.json": {
+      "bytes": 37444,
+      "sha256": "fa07cae51996c861f499e17c9a4c362635a83f57c46fcba2db0f0a17f7616bcd"
+    },
+    "/private/tmp/phase5_task_start_a_checkpoint_v1_20261010/actual-dell/attempt1/dev_link_plan.json": {
+      "bytes": 4446,
+      "sha256": "0861c4a14e625b4a852ca006e15344f0e6dddd3942cb18ab6fb40555e989fccf"
+    },
+    "/private/tmp/phase5_task_start_a_checkpoint_v1_20261010/actual-dell/attempt1/dev_compile.py": {
+      "bytes": 7460,
+      "sha256": "f10c7a612887f917bb29ba9beb05b2a0421a43bfdaab7c82dbfee4ff7072fd5a"
+    },
+    "/private/tmp/phase5_task_start_a_checkpoint_v1_20261010/actual-dell/attempt1/active_run_driver.py": {
+      "bytes": 7585,
+      "sha256": "39c511a032bd8b44c4132150bdeef5641c3cf5551a61e395e4a78d93c9268ec4"
+    },
+    "/private/tmp/phase5_task_start_a_checkpoint_v1_20261010/actual-dell/repair2/active_run_plan.json": {
+      "bytes": 486726,
+      "sha256": "e8720548e1620e1528d1cab5c8b3250b7b57c0bf19360492f41a35bfe53c7f58"
+    },
+    "/private/tmp/phase5_task_start_a_checkpoint_v1_20261010/actual-dell/repair2/dev_link.py": {
+      "bytes": 7457,
+      "sha256": "fbce82edadae898f80f7480ce9ce3415daf61535e581ae815139ed0e9e8cad90"
+    },
+    "/private/tmp/phase5_task_start_a_checkpoint_v1_20261010/actual-dell/repair2/dev_compile_plan.json": {
+      "bytes": 37407,
+      "sha256": "b3b64f2a39c65390545b69314d5102acdb8e57c6c8df715466d80ee2f6e6f19d"
+    },
+    "/private/tmp/phase5_task_start_a_checkpoint_v1_20261010/actual-dell/repair2/dev_link_plan.json": {
+      "bytes": 4434,
+      "sha256": "a41608409a2bbeb6be73d56a742d7bccdcbdccb2d0243ffff33119a3084c7c25"
+    },
+    "/private/tmp/phase5_task_start_a_checkpoint_v1_20261010/actual-dell/repair2/dev_compile.py": {
+      "bytes": 7460,
+      "sha256": "f10c7a612887f917bb29ba9beb05b2a0421a43bfdaab7c82dbfee4ff7072fd5a"
+    },
+    "/private/tmp/phase5_task_start_a_checkpoint_v1_20261010/actual-dell/repair2/active_run_driver.py": {
+      "bytes": 7585,
+      "sha256": "39c511a032bd8b44c4132150bdeef5641c3cf5551a61e395e4a78d93c9268ec4"
+    },
+    "/private/tmp/phase5_task_start_a_checkpoint_v1_20261010/actual-dell/repair2/link-attempt1/BEFORE_READONLY_ROSTERS.json": {
+      "bytes": 3,
+      "sha256": "37517e5f3dc66819f61f5a7bb8ace1921282415f10551d2defa5c3eb0985b570"
+    },
+    "/private/tmp/phase5_task_start_a_checkpoint_v1_20261010/actual-dell/repair2/link-attempt1/BATCH_PREFIX.json": {
+      "bytes": 5615,
+      "sha256": "b9acc3a3cdf780b8e827a5c1dd31f970069dcbcb1b228c3e0c8bffa263059f1d"
+    },
+    "/private/tmp/phase5_task_start_a_checkpoint_v1_20261010/actual-dell/repair2/link-attempt1/BUILD_RESULT.json": {
+      "bytes": 5669,
+      "sha256": "53975881ad6e9eadfb70cb949bd189ca9ef78fdfbff6fdc7b8cf777104a5d391"
+    },
+    "/private/tmp/phase5_task_start_a_checkpoint_v1_20261010/actual-dell/repair2/link-attempt1/CONTROL_EVENT_PREFIX.json": {
+      "bytes": 723,
+      "sha256": "2d0839a3dd79875c8d3570e18324e513687e4189eeb1675c73f5e226d131b2fb"
+    },
+    "/private/tmp/phase5_task_start_a_checkpoint_v1_20261010/actual-dell/repair2/link-attempt1/BEFORE_INPUT_IDENTITIES.json": {
+      "bytes": 3,
+      "sha256": "37517e5f3dc66819f61f5a7bb8ace1921282415f10551d2defa5c3eb0985b570"
+    },
+    "/private/tmp/phase5_task_start_a_checkpoint_v1_20261010/actual-dell/repair2/link-attempt1/compile-1.result.json": {
+      "bytes": 5183,
+      "sha256": "d9e08b85e6713b512c2fb7183ac6810c922b30b5086462b81b330966b0fd1798"
+    },
+    "/private/tmp/phase5_task_start_a_checkpoint_v1_20261010/actual-dell/repair2/link-attempt1/compile-1.stderr": {
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    "/private/tmp/phase5_task_start_a_checkpoint_v1_20261010/actual-dell/repair2/link-attempt1/AFTER_INPUT_IDENTITIES.json": {
+      "bytes": 3,
+      "sha256": "37517e5f3dc66819f61f5a7bb8ace1921282415f10551d2defa5c3eb0985b570"
+    },
+    "/private/tmp/phase5_task_start_a_checkpoint_v1_20261010/actual-dell/repair2/link-attempt1/AFTER_READONLY_ROSTERS.json": {
+      "bytes": 3,
+      "sha256": "37517e5f3dc66819f61f5a7bb8ace1921282415f10551d2defa5c3eb0985b570"
+    },
+    "/private/tmp/phase5_task_start_a_checkpoint_v1_20261010/actual-dell/repair2/link-attempt1/compile-1.stdout": {
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    "/private/tmp/phase5_task_start_a_checkpoint_v1_20261010/actual-dell/repair2/build-attempt1/BEFORE_READONLY_ROSTERS.json": {
+      "bytes": 3,
+      "sha256": "37517e5f3dc66819f61f5a7bb8ace1921282415f10551d2defa5c3eb0985b570"
+    },
+    "/private/tmp/phase5_task_start_a_checkpoint_v1_20261010/actual-dell/repair2/build-attempt1/compile-5.result.json": {
+      "bytes": 5139,
+      "sha256": "f9bd9b5b53c1e8ab3941b8a588f54fcb0d246c96544e96144e41b3e506fa5af5"
+    },
+    "/private/tmp/phase5_task_start_a_checkpoint_v1_20261010/actual-dell/repair2/build-attempt1/compile-4.stdout": {
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    "/private/tmp/phase5_task_start_a_checkpoint_v1_20261010/actual-dell/repair2/build-attempt1/compile-8.stdout": {
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    "/private/tmp/phase5_task_start_a_checkpoint_v1_20261010/actual-dell/repair2/build-attempt1/BATCH_PREFIX.json": {
+      "bytes": 51025,
+      "sha256": "6ef7de1697efa978e28640d710888e2a8ab799959ab11420c6c9334df35714b8"
+    },
+    "/private/tmp/phase5_task_start_a_checkpoint_v1_20261010/actual-dell/repair2/build-attempt1/BUILD_RESULT.json": {
+      "bytes": 51079,
+      "sha256": "028d3bcc87e94a94767fb3fb0aad8bfa0f4498aa15248804336a8749cb9b69ce"
+    },
+    "/private/tmp/phase5_task_start_a_checkpoint_v1_20261010/actual-dell/repair2/build-attempt1/compile-6.stdout": {
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    "/private/tmp/phase5_task_start_a_checkpoint_v1_20261010/actual-dell/repair2/build-attempt1/compile-9.result.json": {
+      "bytes": 5140,
+      "sha256": "52d9f7155b8379fb327b82da51a0915ecbccc62c7573a8419d7e4d3a47e4cc15"
+    },
+    "/private/tmp/phase5_task_start_a_checkpoint_v1_20261010/actual-dell/repair2/build-attempt1/CONTROL_EVENT_PREFIX.json": {
+      "bytes": 2868,
+      "sha256": "55162d76298cfd2829f0cfa922f2bf6ac2fe7357973892be0e9568cb6d088ed0"
+    },
+    "/private/tmp/phase5_task_start_a_checkpoint_v1_20261010/actual-dell/repair2/build-attempt1/compile-2.stderr": {
+      "bytes": 4156,
+      "sha256": "e5233e52f3503df2dc57fb5b6ee3d3a6df628e321b2b317d17f8a5cd7bbc2a39"
+    },
+    "/private/tmp/phase5_task_start_a_checkpoint_v1_20261010/actual-dell/repair2/build-attempt1/compile-3.result.json": {
+      "bytes": 5140,
+      "sha256": "bb364a6b48c46b518742bb76aa20fe55bb6742050774273a0899492a5f75a0b8"
+    },
+    "/private/tmp/phase5_task_start_a_checkpoint_v1_20261010/actual-dell/repair2/build-attempt1/compile-2.stdout": {
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    "/private/tmp/phase5_task_start_a_checkpoint_v1_20261010/actual-dell/repair2/build-attempt1/compile-6.stderr": {
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    "/private/tmp/phase5_task_start_a_checkpoint_v1_20261010/actual-dell/repair2/build-attempt1/compile-8.stderr": {
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    "/private/tmp/phase5_task_start_a_checkpoint_v1_20261010/actual-dell/repair2/build-attempt1/compile-4.stderr": {
+      "bytes": 1102,
+      "sha256": "204e0f528a5e77af0e50cce0e2fea63301664b0b6933acc9014c097c30eb76a8"
+    },
+    "/private/tmp/phase5_task_start_a_checkpoint_v1_20261010/actual-dell/repair2/build-attempt1/compile-6.result.json": {
+      "bytes": 5141,
+      "sha256": "423496d6f3f933b67f54ac22c82c6f590e2d0196f6c3f73ee0c72bb0db45cb7d"
+    },
+    "/private/tmp/phase5_task_start_a_checkpoint_v1_20261010/actual-dell/repair2/build-attempt1/BEFORE_INPUT_IDENTITIES.json": {
+      "bytes": 3,
+      "sha256": "37517e5f3dc66819f61f5a7bb8ace1921282415f10551d2defa5c3eb0985b570"
+    },
+    "/private/tmp/phase5_task_start_a_checkpoint_v1_20261010/actual-dell/repair2/build-attempt1/compile-1.result.json": {
+      "bytes": 5137,
+      "sha256": "cdd5c2c4067d19f77a44f8a7df75938664a17da1099a545dec7a7003f145f848"
+    },
+    "/private/tmp/phase5_task_start_a_checkpoint_v1_20261010/actual-dell/repair2/build-attempt1/compile-5.stdout": {
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    "/private/tmp/phase5_task_start_a_checkpoint_v1_20261010/actual-dell/repair2/build-attempt1/compile-9.stdout": {
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    "/private/tmp/phase5_task_start_a_checkpoint_v1_20261010/actual-dell/repair2/build-attempt1/compile-8.result.json": {
+      "bytes": 5140,
+      "sha256": "92f88762e9ce196ab7fbff5ab08b9129f6341a4858b270201d31c5b03a2d839a"
+    },
+    "/private/tmp/phase5_task_start_a_checkpoint_v1_20261010/actual-dell/repair2/build-attempt1/compile-1.stderr": {
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    "/private/tmp/phase5_task_start_a_checkpoint_v1_20261010/actual-dell/repair2/build-attempt1/compile-3.stderr": {
+      "bytes": 11356,
+      "sha256": "dd3fdefca22930bfbc0fbed1f7035ac1c70c978ae21a988c01892104632e338d"
+    },
+    "/private/tmp/phase5_task_start_a_checkpoint_v1_20261010/actual-dell/repair2/build-attempt1/AFTER_INPUT_IDENTITIES.json": {
+      "bytes": 3,
+      "sha256": "37517e5f3dc66819f61f5a7bb8ace1921282415f10551d2defa5c3eb0985b570"
+    },
+    "/private/tmp/phase5_task_start_a_checkpoint_v1_20261010/actual-dell/repair2/build-attempt1/compile-4.result.json": {
+      "bytes": 5146,
+      "sha256": "4438fecd5f3db91a29a9efc7dbc3ca01888590eebe5e69b62e3376110ec9ccef"
+    },
+    "/private/tmp/phase5_task_start_a_checkpoint_v1_20261010/actual-dell/repair2/build-attempt1/compile-7.stdout": {
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    "/private/tmp/phase5_task_start_a_checkpoint_v1_20261010/actual-dell/repair2/build-attempt1/compile-7.stderr": {
+      "bytes": 6762,
+      "sha256": "658a72f7ebdfe0ff18d84f450af9863c99aa3354cdb681bdd6b41fd37fce7887"
+    },
+    "/private/tmp/phase5_task_start_a_checkpoint_v1_20261010/actual-dell/repair2/build-attempt1/compile-7.result.json": {
+      "bytes": 5143,
+      "sha256": "348f30c44a01eb9d8dfb6c7baeaba55ddefce1186d9d7c8dfbb7fe477a7f7f24"
+    },
+    "/private/tmp/phase5_task_start_a_checkpoint_v1_20261010/actual-dell/repair2/build-attempt1/AFTER_READONLY_ROSTERS.json": {
+      "bytes": 3,
+      "sha256": "37517e5f3dc66819f61f5a7bb8ace1921282415f10551d2defa5c3eb0985b570"
+    },
+    "/private/tmp/phase5_task_start_a_checkpoint_v1_20261010/actual-dell/repair2/build-attempt1/compile-3.stdout": {
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    "/private/tmp/phase5_task_start_a_checkpoint_v1_20261010/actual-dell/repair2/build-attempt1/compile-1.stdout": {
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    "/private/tmp/phase5_task_start_a_checkpoint_v1_20261010/actual-dell/repair2/build-attempt1/compile-9.stderr": {
+      "bytes": 394,
+      "sha256": "36b868901ed4d2e42fbbfb37508cf6e7769a8efd8264d141613806e3966f72b5"
+    },
+    "/private/tmp/phase5_task_start_a_checkpoint_v1_20261010/actual-dell/repair2/build-attempt1/compile-2.result.json": {
+      "bytes": 5139,
+      "sha256": "88457dba4c77ab727694575e32e4f2386afee26311c84fe84cfe4bae4a073ac4"
+    },
+    "/private/tmp/phase5_task_start_a_checkpoint_v1_20261010/actual-dell/repair2/build-attempt1/compile-5.stderr": {
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    "/private/tmp/phase5_task_start_a_checkpoint_v1_20261010/actual-dell/repair2/run-attempt1/BEFORE_READONLY_ROSTERS.json": {
+      "bytes": 3,
+      "sha256": "37517e5f3dc66819f61f5a7bb8ace1921282415f10551d2defa5c3eb0985b570"
+    },
+    "/private/tmp/phase5_task_start_a_checkpoint_v1_20261010/actual-dell/repair2/run-attempt1/BATCH_PREFIX.json": {
+      "bytes": 2068,
+      "sha256": "bed3c58b3d57891e45f9e42e197dada7f4191217f26e412588503232b47b84d5"
+    },
+    "/private/tmp/phase5_task_start_a_checkpoint_v1_20261010/actual-dell/repair2/run-attempt1/CONTROL_EVENT_PREFIX.json": {
+      "bytes": 798,
+      "sha256": "401a9f86c0872dd5c3a2ed75f76aab065ab2a495098baf57b914244091d8dcaa"
+    },
+    "/private/tmp/phase5_task_start_a_checkpoint_v1_20261010/actual-dell/repair2/run-attempt1/BEFORE_INPUT_IDENTITIES.json": {
+      "bytes": 494146,
+      "sha256": "4760f70179ba349d9f529e606a9d1350bdaf5d8004d4fb640d495859dddea774"
+    },
+    "/private/tmp/phase5_task_start_a_checkpoint_v1_20261010/actual-dell/repair2/run-attempt1/compile-1.result.json": {
+      "bytes": 1748,
+      "sha256": "ed76ffdc4f3b3f37348f1d9ecf00dd575e809336466c29d604a9795173c06b80"
+    },
+    "/private/tmp/phase5_task_start_a_checkpoint_v1_20261010/actual-dell/repair2/run-attempt1/compile-1.stderr": {
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    "/private/tmp/phase5_task_start_a_checkpoint_v1_20261010/actual-dell/repair2/run-attempt1/AFTER_INPUT_IDENTITIES.json": {
+      "bytes": 494146,
+      "sha256": "4760f70179ba349d9f529e606a9d1350bdaf5d8004d4fb640d495859dddea774"
+    },
+    "/private/tmp/phase5_task_start_a_checkpoint_v1_20261010/actual-dell/repair2/run-attempt1/BUILD_FAILURE.json": {
+      "bytes": 2139,
+      "sha256": "aeb8608f89a55e46cecdc5c6f51ab9d9b4f51302f6c164c29bb7cf9d26722b85"
+    },
+    "/private/tmp/phase5_task_start_a_checkpoint_v1_20261010/actual-dell/repair2/run-attempt1/AFTER_READONLY_ROSTERS.json": {
+      "bytes": 3,
+      "sha256": "37517e5f3dc66819f61f5a7bb8ace1921282415f10551d2defa5c3eb0985b570"
+    },
+    "/private/tmp/phase5_task_start_a_checkpoint_v1_20261010/actual-dell/repair2/run-attempt1/compile-1.stdout": {
+      "bytes": 146,
+      "sha256": "c22d7a7fe31d86e444b9015422da7de4dd1c7f6e124c789053653be40e09a603"
+    },
+    "/private/tmp/phase5_task_start_a_checkpoint_v1_20261010/actual-dell/repair2/profile-version1/active_input.json": {
+      "bytes": 325824,
+      "sha256": "7448fbaaaad73e080cab2f75f5f3917a5f61dd3ca5e07f5f485c5670bbc18691"
+    },
+    "/private/tmp/phase5_task_start_a_checkpoint_v1_20261010/actual-dell/repair2/src/invariant_tests.cpp": {
+      "bytes": 4721,
+      "sha256": "f5a859d4cf9d79a5ae1b533b8dd62776f2bba6599dfdf691a2915ef3296a33f9"
+    },
+    "/private/tmp/phase5_task_start_a_checkpoint_v1_20261010/actual-dell/repair2/src/normalization.cpp": {
+      "bytes": 23976,
+      "sha256": "a0cd0c9cdb505f922f1744f24cf115057b6ba9f3a9bc1b3ed0c9bdb82d358ed5"
+    },
+    "/private/tmp/phase5_task_start_a_checkpoint_v1_20261010/actual-dell/repair2/src/session_primitives.hpp": {
+      "bytes": 2259,
+      "sha256": "0b76bc232ed81dc9b4831617ae1690cfc287def914b8bca5f05ce6e6e25b6080"
+    },
+    "/private/tmp/phase5_task_start_a_checkpoint_v1_20261010/actual-dell/repair2/src/model_boundary.cpp": {
+      "bytes": 14091,
+      "sha256": "04c94821ee57669431b8c7bceac1d66004fdfc8af11424008e89890a7486630a"
+    },
+    "/private/tmp/phase5_task_start_a_checkpoint_v1_20261010/actual-dell/repair2/src/solver_forensics.cpp": {
+      "bytes": 14141,
+      "sha256": "b0432ed917ecf68689705558730f6ee8fc781eef78692205f021f9eeb610720c"
+    },
+    "/private/tmp/phase5_task_start_a_checkpoint_v1_20261010/actual-dell/repair2/src/runtime_observer.hpp": {
+      "bytes": 5472,
+      "sha256": "0e0ef9cfe8bc1c8a5bb38327148110dd6db4ebfe4e2ba479de8d1d78175941c8"
+    },
+    "/private/tmp/phase5_task_start_a_checkpoint_v1_20261010/actual-dell/repair2/src/lossless_evidence.hpp": {
+      "bytes": 1887,
+      "sha256": "6e40b8878ddc78e8422c1301ca62ca98ed854fc2f57e6f549f5685cc1387bccc"
+    },
+    "/private/tmp/phase5_task_start_a_checkpoint_v1_20261010/actual-dell/repair2/src/affine_assembly.cpp": {
+      "bytes": 28981,
+      "sha256": "d478eda1f0fe97bfc41851515f4baa3e485fd4a57968a62dcb6233ae1157bbd5"
+    },
+    "/private/tmp/phase5_task_start_a_checkpoint_v1_20261010/actual-dell/repair2/src/integrated_horizon_qp.hpp": {
+      "bytes": 9631,
+      "sha256": "379d9c599895143ab80bc144414091a749f46848b7cf8d6c913db97d998f41a9"
+    },
+    "/private/tmp/phase5_task_start_a_checkpoint_v1_20261010/actual-dell/repair2/src/task_local_provider.cpp": {
+      "bytes": 1839,
+      "sha256": "051b424236979f9fe7ea4cb96564f54969025c997bfba2c61d347a23f7fbae4c"
+    },
+    "/private/tmp/phase5_task_start_a_checkpoint_v1_20261010/actual-dell/repair2/src/box_screen_tests.cpp": {
+      "bytes": 2954,
+      "sha256": "d922876babec2867dd1293bcee259ac12e4b2a6af5a30dd551209e097c0abaf8"
+    },
+    "/private/tmp/phase5_task_start_a_checkpoint_v1_20261010/actual-dell/repair2/src/active_first_cycle.cpp": {
+      "bytes": 18194,
+      "sha256": "48ab1a5bfec3b3d54e2e2910519dc0e7a05af840923e8c6c175ae2b8c2df56a9"
+    },
+    "/private/tmp/phase5_task_start_a_checkpoint_v1_20261010/actual-dell/repair2/src/observer_tests.cpp": {
+      "bytes": 3785,
+      "sha256": "d1ff998984981a5ded1e92b8d452503e8b489ecfb0d067fb04ff5fd616d02877"
+    },
+    "/private/tmp/phase5_task_start_a_checkpoint_v1_20261010/actual-dell/repair2/src/solver_forensics.hpp": {
+      "bytes": 602,
+      "sha256": "6db9c07abeb82e5c119ad18f44c3207733f8e73b54df2eea3b48dab013c70a54"
+    },
+    "/private/tmp/phase5_task_start_a_checkpoint_v1_20261010/actual-dell/repair2/src/runtime_observer.cpp": {
+      "bytes": 17215,
+      "sha256": "9bbbe145f0cfa78c24f1d2b56008b065f1f3838ee54fa727eb76a88578fb607f"
+    },
+    "/private/tmp/phase5_task_start_a_checkpoint_v1_20261010/actual-dell/repair2/src/lossless_evidence.cpp": {
+      "bytes": 15969,
+      "sha256": "04680550f459ebf6bf0136bd611e2707b18562ddea5d44e4fc1c8782efb1bdd6"
+    },
+    "/private/tmp/phase5_task_start_a_checkpoint_v1_20261010/actual-dell/repair2/src/task_local_provider.hpp": {
+      "bytes": 640,
+      "sha256": "1819e2f626fb0ff65ad7e7e8de0b0b52f625e6bf435b073d7cca55722d76f093"
+    },
+    "/private/tmp/phase5_task_start_a_checkpoint_v1_20261010/actual-dell/repair2/src/affine_assembly.hpp": {
+      "bytes": 6026,
+      "sha256": "6faee2961242052c7655da41e8988dd0844f14c3cfa885672aa7c03eaa1dcb57"
+    },
+    "/private/tmp/phase5_task_start_a_checkpoint_v1_20261010/actual-dell/repair2/src/integrated_horizon_qp.cpp": {
+      "bytes": 36508,
+      "sha256": "ad771e10de104f7a9ef38e907354b8c27420525affcf3980301e9c3258acee74"
+    },
+    "/private/tmp/phase5_task_start_a_checkpoint_v1_20261010/actual-dell/repair2/src/normalization.hpp": {
+      "bytes": 4288,
+      "sha256": "9456be5c205f23d2aa2210eac02286d030204a446af003ee85362b971ccb43d8"
+    },
+    "/private/tmp/phase5_task_start_a_checkpoint_v1_20261010/actual-dell/repair2/src/model_boundary.hpp": {
+      "bytes": 2528,
+      "sha256": "51b2e845860fb4faecfc95b7f9873439ab4e682adce37a290e6fe704ee48a9d9"
+    },
+    "/private/tmp/phase5_task_start_a_checkpoint_v1_20261010/actual-dell/repair2/src/linear_box_screen.hpp": {
+      "bytes": 3916,
+      "sha256": "b649eff43293a3078b7b46a0166fa0f8a2ac59f3a8496c8c73a98c275fed96d1"
+    },
+    "/private/tmp/phase5_task_start_a_checkpoint_v1_20261010/actual-dell/repair2/run-attempt1/artifacts/model_open.bin": {
+      "bytes": 1275,
+      "sha256": "f5ec5debb244e76c025ca107bc44ae12d03755fd7159d86dafbe18ef126f0a07"
+    },
+    "/private/tmp/phase5_task_start_a_checkpoint_v1_20261010/actual-dell/repair2/run-attempt1/artifacts/bootstrap.bin": {
+      "bytes": 150,
+      "sha256": "814d79448cdd7569c35fd74570cba93f5ccf7f0ab780789a6d08fa554478454d"
+    },
+    "/private/tmp/phase5_task_start_a_checkpoint_v1_20261010/actual-dell/repair2/run-attempt1/artifacts/actual_warmup.bin": {
+      "bytes": 504405,
+      "sha256": "ddfe59b603e0caa2ef85b0bb3e3e14a75e4f57a639cc22f8bad2fda249802901"
+    },
+    "/private/tmp/phase5_task_start_a_checkpoint_v1_20261010/actual-dell/repair2/run-attempt1/artifacts/entry_completion.bin": {
+      "bytes": 239,
+      "sha256": "9eb4350c4e112285e304547863087fff8cb16e1d5f10e1d5c317afbb5f5231c5"
+    },
+    "/private/tmp/phase5_task_start_a_checkpoint_v1_20261010/actual-dell/repair2/run-attempt1/artifacts/observation_before.bin": {
+      "bytes": 2540,
+      "sha256": "72b8c75bb332885a97905e85cb9e17a3398e97368f17a81cec916f05c53c1b0d"
+    },
+    "/private/tmp/phase5_task_start_a_checkpoint_v1_20261010/actual-dell/repair2/run-attempt1/artifacts/solver_row_screen.bin": {
+      "bytes": 482308,
+      "sha256": "7835784c906e73cfbbae74995ee3fa3e0bff9da03af2cd50cd1b2660ec5d514f"
+    },
+    "/private/tmp/phase5_task_start_a_checkpoint_v1_20261010/actual-dell/repair2/run-attempt1/artifacts/MANIFEST.yaml": {
+      "bytes": 3190,
+      "sha256": "611e593cf787c56d34914783d21e718970beac21395a37d1b013d87e426ee285"
+    },
+    "/private/tmp/phase5_task_start_a_checkpoint_v1_20261010/actual-dell/repair2/run-attempt1/artifacts/journal_receipt.bin": {
+      "bytes": 537,
+      "sha256": "dbaad9944163e58b799bbea1f7a0b6bbaa183d89e5d30bffec043d8c8edb3310"
+    },
+    "/private/tmp/phase5_task_start_a_checkpoint_v1_20261010/actual-dell/repair2/run-attempt1/artifacts/observation_after.bin": {
+      "bytes": 2540,
+      "sha256": "6c4f051813b4d4548c24f39a42c1baf21871be27f73e5353bf548d0fd3281140"
+    },
+    "/private/tmp/phase5_task_start_a_checkpoint_v1_20261010/actual-dell/repair2/run-attempt1/artifacts/candidate.bin": {
+      "bytes": 484,
+      "sha256": "2d066bf98432e1ea760018cf566ffbb99446f9720ef0085389d4e02482160e6b"
+    },
+    "/private/tmp/phase5_task_start_a_checkpoint_v1_20261010/actual-dell/repair2/run-attempt1/artifacts/inline_qp.bin": {
+      "bytes": 19485833,
+      "sha256": "7e80228ce7c30a6671fa4aacfb9281d4b27b14c611b726ec119b0a2d1a183c4f"
+    },
+    "/private/tmp/phase5_task_start_a_checkpoint_v1_20261010/actual-dell/repair2/run-attempt1/artifacts/actual_step_journal.csv": {
+      "bytes": 1813021,
+      "sha256": "eea9da2c74e5b8e20776e7e0df04e8926c9ab278117fcce5c9fb03ac16927313"
+    },
+    "/private/tmp/phase5_task_start_a_checkpoint_v1_20261010/actual-dell/repair2/run-attempt1/artifacts/original_nominal.bin": {
+      "bytes": 12716345,
+      "sha256": "7e4b1f6960f7d2d4f5cd025be5861a0adc585b2427871c8777c542c39a6b82d6"
+    },
+    "/private/tmp/phase5_task_start_a_checkpoint_v1_20261010/actual-dell/repair2/run-attempt1/artifacts/qp_equality_reduction.bin": {
+      "bytes": 16911194,
+      "sha256": "9483d47bd20c1b0f38157629bf86c5ce734ae50c5fbdcf6ea8e6474e51d565d2"
+    },
+    "/private/tmp/phase5_task_start_a_checkpoint_v1_20261010/actual-dell/attempt1/link-attempt1/BEFORE_READONLY_ROSTERS.json": {
+      "bytes": 3,
+      "sha256": "37517e5f3dc66819f61f5a7bb8ace1921282415f10551d2defa5c3eb0985b570"
+    },
+    "/private/tmp/phase5_task_start_a_checkpoint_v1_20261010/actual-dell/attempt1/link-attempt1/BATCH_PREFIX.json": {
+      "bytes": 5627,
+      "sha256": "c93efc91cd1ae003a0010f708f19b2f30c5d1f49c632e21e6a2843be08fea67b"
+    },
+    "/private/tmp/phase5_task_start_a_checkpoint_v1_20261010/actual-dell/attempt1/link-attempt1/BUILD_RESULT.json": {
+      "bytes": 5681,
+      "sha256": "e67f91130f66a5f16ff2683bdb23f40d8df3736a5e0ed8a4adda20e973f1ad0a"
+    },
+    "/private/tmp/phase5_task_start_a_checkpoint_v1_20261010/actual-dell/attempt1/link-attempt1/CONTROL_EVENT_PREFIX.json": {
+      "bytes": 721,
+      "sha256": "44866c52b0aa4ce2e87b83b9b87fed005a0a8f7969d71417d8e4c705f182a848"
+    },
+    "/private/tmp/phase5_task_start_a_checkpoint_v1_20261010/actual-dell/attempt1/link-attempt1/BEFORE_INPUT_IDENTITIES.json": {
+      "bytes": 3,
+      "sha256": "37517e5f3dc66819f61f5a7bb8ace1921282415f10551d2defa5c3eb0985b570"
+    },
+    "/private/tmp/phase5_task_start_a_checkpoint_v1_20261010/actual-dell/attempt1/link-attempt1/compile-1.result.json": {
+      "bytes": 5195,
+      "sha256": "4c4c3965fdd7df5570d6fc80f3445bf9bc11820aaa36891d76b46ad6873a25d4"
+    },
+    "/private/tmp/phase5_task_start_a_checkpoint_v1_20261010/actual-dell/attempt1/link-attempt1/compile-1.stderr": {
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    "/private/tmp/phase5_task_start_a_checkpoint_v1_20261010/actual-dell/attempt1/link-attempt1/AFTER_INPUT_IDENTITIES.json": {
+      "bytes": 3,
+      "sha256": "37517e5f3dc66819f61f5a7bb8ace1921282415f10551d2defa5c3eb0985b570"
+    },
+    "/private/tmp/phase5_task_start_a_checkpoint_v1_20261010/actual-dell/attempt1/link-attempt1/AFTER_READONLY_ROSTERS.json": {
+      "bytes": 3,
+      "sha256": "37517e5f3dc66819f61f5a7bb8ace1921282415f10551d2defa5c3eb0985b570"
+    },
+    "/private/tmp/phase5_task_start_a_checkpoint_v1_20261010/actual-dell/attempt1/link-attempt1/compile-1.stdout": {
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    "/private/tmp/phase5_task_start_a_checkpoint_v1_20261010/actual-dell/attempt1/build-attempt1/BEFORE_READONLY_ROSTERS.json": {
+      "bytes": 3,
+      "sha256": "37517e5f3dc66819f61f5a7bb8ace1921282415f10551d2defa5c3eb0985b570"
+    },
+    "/private/tmp/phase5_task_start_a_checkpoint_v1_20261010/actual-dell/attempt1/build-attempt1/compile-5.result.json": {
+      "bytes": 5142,
+      "sha256": "1abaafb7c0b992787ffd90a7653e67739616e0f753734ca4744f1799a50ad69d"
+    },
+    "/private/tmp/phase5_task_start_a_checkpoint_v1_20261010/actual-dell/attempt1/build-attempt1/compile-4.stdout": {
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    "/private/tmp/phase5_task_start_a_checkpoint_v1_20261010/actual-dell/attempt1/build-attempt1/compile-8.stdout": {
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    "/private/tmp/phase5_task_start_a_checkpoint_v1_20261010/actual-dell/attempt1/build-attempt1/BATCH_PREFIX.json": {
+      "bytes": 51063,
+      "sha256": "a6a933269b9a62dfbe0618008d157026e531ea6b761d42623f858038421210c6"
+    },
+    "/private/tmp/phase5_task_start_a_checkpoint_v1_20261010/actual-dell/attempt1/build-attempt1/BUILD_RESULT.json": {
+      "bytes": 51117,
+      "sha256": "376fb2f64c66117d868f0c9f84f70add30dd4ad303a718ee3ce7837045a194f2"
+    },
+    "/private/tmp/phase5_task_start_a_checkpoint_v1_20261010/actual-dell/attempt1/build-attempt1/compile-6.stdout": {
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    "/private/tmp/phase5_task_start_a_checkpoint_v1_20261010/actual-dell/attempt1/build-attempt1/compile-9.result.json": {
+      "bytes": 5144,
+      "sha256": "4a15f9c3f6f06d01f1fff21473c4479bd6f73ca94b3c0004313d648113471def"
+    },
+    "/private/tmp/phase5_task_start_a_checkpoint_v1_20261010/actual-dell/attempt1/build-attempt1/CONTROL_EVENT_PREFIX.json": {
+      "bytes": 2869,
+      "sha256": "631c88bd122f13d846c4dd417b33ec8df3a31709b38b3f0c6d626b98a166c9e3"
+    },
+    "/private/tmp/phase5_task_start_a_checkpoint_v1_20261010/actual-dell/attempt1/build-attempt1/compile-2.stderr": {
+      "bytes": 4168,
+      "sha256": "42f735db27c5b2ffd0258600fbb9392fe3709361c3a40754f858792907aaf228"
+    },
+    "/private/tmp/phase5_task_start_a_checkpoint_v1_20261010/actual-dell/attempt1/build-attempt1/compile-3.result.json": {
+      "bytes": 5145,
+      "sha256": "6e9b847473739e25a740da0512b299b0bb23de4a4659803413d7090e78f69260"
+    },
+    "/private/tmp/phase5_task_start_a_checkpoint_v1_20261010/actual-dell/attempt1/build-attempt1/compile-2.stdout": {
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    "/private/tmp/phase5_task_start_a_checkpoint_v1_20261010/actual-dell/attempt1/build-attempt1/compile-6.stderr": {
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    "/private/tmp/phase5_task_start_a_checkpoint_v1_20261010/actual-dell/attempt1/build-attempt1/compile-8.stderr": {
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    "/private/tmp/phase5_task_start_a_checkpoint_v1_20261010/actual-dell/attempt1/build-attempt1/compile-4.stderr": {
+      "bytes": 1105,
+      "sha256": "3e073d8bb6ec1162e3674074e77fb23c95b070cb1e07992212609b3f7360cd4d"
+    },
+    "/private/tmp/phase5_task_start_a_checkpoint_v1_20261010/actual-dell/attempt1/build-attempt1/compile-6.result.json": {
+      "bytes": 5146,
+      "sha256": "14eea67afd19dd5d40117fc730113da55978c1ff9bcce543377fdc2d35fd5bfb"
+    },
+    "/private/tmp/phase5_task_start_a_checkpoint_v1_20261010/actual-dell/attempt1/build-attempt1/BEFORE_INPUT_IDENTITIES.json": {
+      "bytes": 3,
+      "sha256": "37517e5f3dc66819f61f5a7bb8ace1921282415f10551d2defa5c3eb0985b570"
+    },
+    "/private/tmp/phase5_task_start_a_checkpoint_v1_20261010/actual-dell/attempt1/build-attempt1/compile-1.result.json": {
+      "bytes": 5141,
+      "sha256": "6f1b28681715d5cb6f164cde7300eea1b2844e6dd97762e158a28a93b768eaf5"
+    },
+    "/private/tmp/phase5_task_start_a_checkpoint_v1_20261010/actual-dell/attempt1/build-attempt1/compile-5.stdout": {
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    "/private/tmp/phase5_task_start_a_checkpoint_v1_20261010/actual-dell/attempt1/build-attempt1/compile-9.stdout": {
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    "/private/tmp/phase5_task_start_a_checkpoint_v1_20261010/actual-dell/attempt1/build-attempt1/compile-8.result.json": {
+      "bytes": 5145,
+      "sha256": "f3ea89fab05bfd1373033c984772ade475a2f52177b21956ab2a3302297a4ade"
+    },
+    "/private/tmp/phase5_task_start_a_checkpoint_v1_20261010/actual-dell/attempt1/build-attempt1/compile-1.stderr": {
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    "/private/tmp/phase5_task_start_a_checkpoint_v1_20261010/actual-dell/attempt1/build-attempt1/compile-3.stderr": {
+      "bytes": 11387,
+      "sha256": "fd7a6e95d83bba7b06202946fda817bc1ad9343b2f49ccc23d1c51447e79f141"
+    },
+    "/private/tmp/phase5_task_start_a_checkpoint_v1_20261010/actual-dell/attempt1/build-attempt1/AFTER_INPUT_IDENTITIES.json": {
+      "bytes": 3,
+      "sha256": "37517e5f3dc66819f61f5a7bb8ace1921282415f10551d2defa5c3eb0985b570"
+    },
+    "/private/tmp/phase5_task_start_a_checkpoint_v1_20261010/actual-dell/attempt1/build-attempt1/compile-4.result.json": {
+      "bytes": 5150,
+      "sha256": "449fa18f2380bd84cfeee8015854591f7fbd32e87c39260cca21d0e3f29f5d8e"
+    },
+    "/private/tmp/phase5_task_start_a_checkpoint_v1_20261010/actual-dell/attempt1/build-attempt1/compile-7.stdout": {
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    "/private/tmp/phase5_task_start_a_checkpoint_v1_20261010/actual-dell/attempt1/build-attempt1/compile-7.stderr": {
+      "bytes": 6778,
+      "sha256": "d7b4ebb55c02ef893830847d4ec7a3f77efeb3b30213457a76fff7715744453f"
+    },
+    "/private/tmp/phase5_task_start_a_checkpoint_v1_20261010/actual-dell/attempt1/build-attempt1/compile-7.result.json": {
+      "bytes": 5147,
+      "sha256": "d19fb5e259a39ea62e74f004529a6a21643671000fc219d76f8c8c2c5d69c737"
+    },
+    "/private/tmp/phase5_task_start_a_checkpoint_v1_20261010/actual-dell/attempt1/build-attempt1/AFTER_READONLY_ROSTERS.json": {
+      "bytes": 3,
+      "sha256": "37517e5f3dc66819f61f5a7bb8ace1921282415f10551d2defa5c3eb0985b570"
+    },
+    "/private/tmp/phase5_task_start_a_checkpoint_v1_20261010/actual-dell/attempt1/build-attempt1/compile-3.stdout": {
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    "/private/tmp/phase5_task_start_a_checkpoint_v1_20261010/actual-dell/attempt1/build-attempt1/compile-1.stdout": {
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    "/private/tmp/phase5_task_start_a_checkpoint_v1_20261010/actual-dell/attempt1/build-attempt1/compile-9.stderr": {
+      "bytes": 395,
+      "sha256": "41c25c46058d6819c9702bd89cb036c4652d1e79e7c4fb161e2e108ef2626e99"
+    },
+    "/private/tmp/phase5_task_start_a_checkpoint_v1_20261010/actual-dell/attempt1/build-attempt1/compile-2.result.json": {
+      "bytes": 5143,
+      "sha256": "9a56531edbce1e0c8d5c8b01fe1095b0439321241af7b0987f80b1fcb8cd1091"
+    },
+    "/private/tmp/phase5_task_start_a_checkpoint_v1_20261010/actual-dell/attempt1/build-attempt1/compile-5.stderr": {
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    "/private/tmp/phase5_task_start_a_checkpoint_v1_20261010/actual-dell/attempt1/run-attempt1/BEFORE_READONLY_ROSTERS.json": {
+      "bytes": 3,
+      "sha256": "37517e5f3dc66819f61f5a7bb8ace1921282415f10551d2defa5c3eb0985b570"
+    },
+    "/private/tmp/phase5_task_start_a_checkpoint_v1_20261010/actual-dell/attempt1/run-attempt1/BATCH_PREFIX.json": {
+      "bytes": 2071,
+      "sha256": "32553e7379872fec7fac8f6557abc79f888441a79ef52d07c92577abade0f3d3"
+    },
+    "/private/tmp/phase5_task_start_a_checkpoint_v1_20261010/actual-dell/attempt1/run-attempt1/CONTROL_EVENT_PREFIX.json": {
+      "bytes": 795,
+      "sha256": "2282510008d9e7cf4431367b9083e69eaed8a3e4326d72bc560d46f74cbd5531"
+    },
+    "/private/tmp/phase5_task_start_a_checkpoint_v1_20261010/actual-dell/attempt1/run-attempt1/BEFORE_INPUT_IDENTITIES.json": {
+      "bytes": 494174,
+      "sha256": "1be24d2ac785dad8e21a69b17d2e0d6f491a3e5ecad57d59ee8b13f0d2e30616"
+    },
+    "/private/tmp/phase5_task_start_a_checkpoint_v1_20261010/actual-dell/attempt1/run-attempt1/compile-1.result.json": {
+      "bytes": 1751,
+      "sha256": "1e3667d1d2defcfd3c106751ff1a0282e9947b5ae3527a974297800c4b7284b4"
+    },
+    "/private/tmp/phase5_task_start_a_checkpoint_v1_20261010/actual-dell/attempt1/run-attempt1/compile-1.stderr": {
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    "/private/tmp/phase5_task_start_a_checkpoint_v1_20261010/actual-dell/attempt1/run-attempt1/AFTER_INPUT_IDENTITIES.json": {
+      "bytes": 494174,
+      "sha256": "1be24d2ac785dad8e21a69b17d2e0d6f491a3e5ecad57d59ee8b13f0d2e30616"
+    },
+    "/private/tmp/phase5_task_start_a_checkpoint_v1_20261010/actual-dell/attempt1/run-attempt1/BUILD_FAILURE.json": {
+      "bytes": 2142,
+      "sha256": "f832bcb9b368a6c9abf1f0532371234bee2cc53606ee76e358ba5ce3a045066b"
+    },
+    "/private/tmp/phase5_task_start_a_checkpoint_v1_20261010/actual-dell/attempt1/run-attempt1/AFTER_READONLY_ROSTERS.json": {
+      "bytes": 3,
+      "sha256": "37517e5f3dc66819f61f5a7bb8ace1921282415f10551d2defa5c3eb0985b570"
+    },
+    "/private/tmp/phase5_task_start_a_checkpoint_v1_20261010/actual-dell/attempt1/run-attempt1/compile-1.stdout": {
+      "bytes": 122,
+      "sha256": "0319a37e5ee534bfe4a9d017d205713b37ffc2321db12342610e6556fca1220b"
+    },
+    "/private/tmp/phase5_task_start_a_checkpoint_v1_20261010/actual-dell/attempt1/profile-version1/active_input.json": {
+      "bytes": 325617,
+      "sha256": "ee691dbac7e5196bb1ec602c1f3d3bc7c54a7893590a2c5d4100c7fd9499461f"
+    },
+    "/private/tmp/phase5_task_start_a_checkpoint_v1_20261010/actual-dell/attempt1/src/invariant_tests.cpp": {
+      "bytes": 4721,
+      "sha256": "f5a859d4cf9d79a5ae1b533b8dd62776f2bba6599dfdf691a2915ef3296a33f9"
+    },
+    "/private/tmp/phase5_task_start_a_checkpoint_v1_20261010/actual-dell/attempt1/src/normalization.cpp": {
+      "bytes": 23976,
+      "sha256": "a0cd0c9cdb505f922f1744f24cf115057b6ba9f3a9bc1b3ed0c9bdb82d358ed5"
+    },
+    "/private/tmp/phase5_task_start_a_checkpoint_v1_20261010/actual-dell/attempt1/src/session_primitives.hpp": {
+      "bytes": 2259,
+      "sha256": "0b76bc232ed81dc9b4831617ae1690cfc287def914b8bca5f05ce6e6e25b6080"
+    },
+    "/private/tmp/phase5_task_start_a_checkpoint_v1_20261010/actual-dell/attempt1/src/model_boundary.cpp": {
+      "bytes": 14091,
+      "sha256": "04c94821ee57669431b8c7bceac1d66004fdfc8af11424008e89890a7486630a"
+    },
+    "/private/tmp/phase5_task_start_a_checkpoint_v1_20261010/actual-dell/attempt1/src/solver_forensics.cpp": {
+      "bytes": 14141,
+      "sha256": "b0432ed917ecf68689705558730f6ee8fc781eef78692205f021f9eeb610720c"
+    },
+    "/private/tmp/phase5_task_start_a_checkpoint_v1_20261010/actual-dell/attempt1/src/runtime_observer.hpp": {
+      "bytes": 5472,
+      "sha256": "0e0ef9cfe8bc1c8a5bb38327148110dd6db4ebfe4e2ba479de8d1d78175941c8"
+    },
+    "/private/tmp/phase5_task_start_a_checkpoint_v1_20261010/actual-dell/attempt1/src/lossless_evidence.hpp": {
+      "bytes": 1887,
+      "sha256": "6e40b8878ddc78e8422c1301ca62ca98ed854fc2f57e6f549f5685cc1387bccc"
+    },
+    "/private/tmp/phase5_task_start_a_checkpoint_v1_20261010/actual-dell/attempt1/src/affine_assembly.cpp": {
+      "bytes": 28981,
+      "sha256": "d478eda1f0fe97bfc41851515f4baa3e485fd4a57968a62dcb6233ae1157bbd5"
+    },
+    "/private/tmp/phase5_task_start_a_checkpoint_v1_20261010/actual-dell/attempt1/src/integrated_horizon_qp.hpp": {
+      "bytes": 9631,
+      "sha256": "379d9c599895143ab80bc144414091a749f46848b7cf8d6c913db97d998f41a9"
+    },
+    "/private/tmp/phase5_task_start_a_checkpoint_v1_20261010/actual-dell/attempt1/src/task_local_provider.cpp": {
+      "bytes": 1839,
+      "sha256": "051b424236979f9fe7ea4cb96564f54969025c997bfba2c61d347a23f7fbae4c"
+    },
+    "/private/tmp/phase5_task_start_a_checkpoint_v1_20261010/actual-dell/attempt1/src/box_screen_tests.cpp": {
+      "bytes": 2954,
+      "sha256": "d922876babec2867dd1293bcee259ac12e4b2a6af5a30dd551209e097c0abaf8"
+    },
+    "/private/tmp/phase5_task_start_a_checkpoint_v1_20261010/actual-dell/attempt1/src/active_first_cycle.cpp": {
+      "bytes": 17408,
+      "sha256": "2d19cad27658be3c54224d8beddace2425b9b2bdbea30af93255e4e41053ea5c"
+    },
+    "/private/tmp/phase5_task_start_a_checkpoint_v1_20261010/actual-dell/attempt1/src/observer_tests.cpp": {
+      "bytes": 3785,
+      "sha256": "d1ff998984981a5ded1e92b8d452503e8b489ecfb0d067fb04ff5fd616d02877"
+    },
+    "/private/tmp/phase5_task_start_a_checkpoint_v1_20261010/actual-dell/attempt1/src/solver_forensics.hpp": {
+      "bytes": 602,
+      "sha256": "6db9c07abeb82e5c119ad18f44c3207733f8e73b54df2eea3b48dab013c70a54"
+    },
+    "/private/tmp/phase5_task_start_a_checkpoint_v1_20261010/actual-dell/attempt1/src/runtime_observer.cpp": {
+      "bytes": 17215,
+      "sha256": "9bbbe145f0cfa78c24f1d2b56008b065f1f3838ee54fa727eb76a88578fb607f"
+    },
+    "/private/tmp/phase5_task_start_a_checkpoint_v1_20261010/actual-dell/attempt1/src/lossless_evidence.cpp": {
+      "bytes": 15969,
+      "sha256": "04680550f459ebf6bf0136bd611e2707b18562ddea5d44e4fc1c8782efb1bdd6"
+    },
+    "/private/tmp/phase5_task_start_a_checkpoint_v1_20261010/actual-dell/attempt1/src/task_local_provider.hpp": {
+      "bytes": 640,
+      "sha256": "1819e2f626fb0ff65ad7e7e8de0b0b52f625e6bf435b073d7cca55722d76f093"
+    },
+    "/private/tmp/phase5_task_start_a_checkpoint_v1_20261010/actual-dell/attempt1/src/affine_assembly.hpp": {
+      "bytes": 6026,
+      "sha256": "6faee2961242052c7655da41e8988dd0844f14c3cfa885672aa7c03eaa1dcb57"
+    },
+    "/private/tmp/phase5_task_start_a_checkpoint_v1_20261010/actual-dell/attempt1/src/integrated_horizon_qp.cpp": {
+      "bytes": 36508,
+      "sha256": "ad771e10de104f7a9ef38e907354b8c27420525affcf3980301e9c3258acee74"
+    },
+    "/private/tmp/phase5_task_start_a_checkpoint_v1_20261010/actual-dell/attempt1/src/normalization.hpp": {
+      "bytes": 4288,
+      "sha256": "9456be5c205f23d2aa2210eac02286d030204a446af003ee85362b971ccb43d8"
+    },
+    "/private/tmp/phase5_task_start_a_checkpoint_v1_20261010/actual-dell/attempt1/src/model_boundary.hpp": {
+      "bytes": 2528,
+      "sha256": "51b2e845860fb4faecfc95b7f9873439ab4e682adce37a290e6fe704ee48a9d9"
+    },
+    "/private/tmp/phase5_task_start_a_checkpoint_v1_20261010/actual-dell/attempt1/src/linear_box_screen.hpp": {
+      "bytes": 3916,
+      "sha256": "b649eff43293a3078b7b46a0166fa0f8a2ac59f3a8496c8c73a98c275fed96d1"
+    },
+    "/private/tmp/phase5_task_start_a_checkpoint_v1_20261010/actual-dell/attempt1/run-attempt1/artifacts/bootstrap.bin": {
+      "bytes": 150,
+      "sha256": "814d79448cdd7569c35fd74570cba93f5ccf7f0ab780789a6d08fa554478454d"
+    },
+    "/private/tmp/phase5_task_start_a_checkpoint_v1_20261010/actual-dell/attempt1/run-attempt1/artifacts/actual_warmup.bin": {
+      "bytes": 504405,
+      "sha256": "ddfe59b603e0caa2ef85b0bb3e3e14a75e4f57a639cc22f8bad2fda249802901"
+    },
+    "/private/tmp/phase5_task_start_a_checkpoint_v1_20261010/actual-dell/attempt1/run-attempt1/artifacts/entry_completion.bin": {
+      "bytes": 233,
+      "sha256": "1c61d7e6091d63cb00ba96c22f2d340484bd4517dc36291276807a8b383a5aee"
+    },
+    "/private/tmp/phase5_task_start_a_checkpoint_v1_20261010/actual-dell/attempt1/run-attempt1/artifacts/observation_before.bin": {
+      "bytes": 2540,
+      "sha256": "e3d1a6551f230a194c2d4fb68e055f187725787d8e9586684a9c53be8fae8c7d"
+    },
+    "/private/tmp/phase5_task_start_a_checkpoint_v1_20261010/actual-dell/attempt1/run-attempt1/artifacts/MANIFEST.yaml": {
+      "bytes": 1692,
+      "sha256": "33dace6e4ca34c8d4770cd502c0128bda9a9826b1216c83782e2a43fc76f82f7"
+    },
+    "/private/tmp/phase5_task_start_a_checkpoint_v1_20261010/actual-dell/attempt1/run-attempt1/artifacts/journal_receipt.bin": {
+      "bytes": 538,
+      "sha256": "41a071080a652991c6a5747eec7e8f2771d36579a118bbc9c94dc4ffd35c473e"
+    },
+    "/private/tmp/phase5_task_start_a_checkpoint_v1_20261010/actual-dell/attempt1/run-attempt1/artifacts/observation_after.bin": {
+      "bytes": 2540,
+      "sha256": "89ee5de22981a9abbfbcee70a1b5a4121e1a88c7a0e72c6ea017145b5b6e145d"
+    },
+    "/private/tmp/phase5_task_start_a_checkpoint_v1_20261010/actual-dell/attempt1/run-attempt1/artifacts/actual_step_journal.csv": {
+      "bytes": 1813021,
+      "sha256": "eea9da2c74e5b8e20776e7e0df04e8926c9ab278117fcce5c9fb03ac16927313"
+    },
+    "/private/tmp/phase5_task_start_a_checkpoint_v1_20261010/source-review-frozen/src/invariant_tests.cpp": {
+      "bytes": 4721,
+      "sha256": "f5a859d4cf9d79a5ae1b533b8dd62776f2bba6599dfdf691a2915ef3296a33f9"
+    },
+    "/private/tmp/phase5_task_start_a_checkpoint_v1_20261010/source-review-frozen/src/normalization.cpp": {
+      "bytes": 23976,
+      "sha256": "a0cd0c9cdb505f922f1744f24cf115057b6ba9f3a9bc1b3ed0c9bdb82d358ed5"
+    },
+    "/private/tmp/phase5_task_start_a_checkpoint_v1_20261010/source-review-frozen/src/session_primitives.hpp": {
+      "bytes": 2259,
+      "sha256": "0b76bc232ed81dc9b4831617ae1690cfc287def914b8bca5f05ce6e6e25b6080"
+    },
+    "/private/tmp/phase5_task_start_a_checkpoint_v1_20261010/source-review-frozen/src/model_boundary.cpp": {
+      "bytes": 14091,
+      "sha256": "04c94821ee57669431b8c7bceac1d66004fdfc8af11424008e89890a7486630a"
+    },
+    "/private/tmp/phase5_task_start_a_checkpoint_v1_20261010/source-review-frozen/src/solver_forensics.cpp": {
+      "bytes": 14141,
+      "sha256": "b0432ed917ecf68689705558730f6ee8fc781eef78692205f021f9eeb610720c"
+    },
+    "/private/tmp/phase5_task_start_a_checkpoint_v1_20261010/source-review-frozen/src/runtime_observer.hpp": {
+      "bytes": 5472,
+      "sha256": "0e0ef9cfe8bc1c8a5bb38327148110dd6db4ebfe4e2ba479de8d1d78175941c8"
+    },
+    "/private/tmp/phase5_task_start_a_checkpoint_v1_20261010/source-review-frozen/src/lossless_evidence.hpp": {
+      "bytes": 1887,
+      "sha256": "6e40b8878ddc78e8422c1301ca62ca98ed854fc2f57e6f549f5685cc1387bccc"
+    },
+    "/private/tmp/phase5_task_start_a_checkpoint_v1_20261010/source-review-frozen/src/affine_assembly.cpp": {
+      "bytes": 28981,
+      "sha256": "d478eda1f0fe97bfc41851515f4baa3e485fd4a57968a62dcb6233ae1157bbd5"
+    },
+    "/private/tmp/phase5_task_start_a_checkpoint_v1_20261010/source-review-frozen/src/integrated_horizon_qp.hpp": {
+      "bytes": 9631,
+      "sha256": "379d9c599895143ab80bc144414091a749f46848b7cf8d6c913db97d998f41a9"
+    },
+    "/private/tmp/phase5_task_start_a_checkpoint_v1_20261010/source-review-frozen/src/task_local_provider.cpp": {
+      "bytes": 1839,
+      "sha256": "051b424236979f9fe7ea4cb96564f54969025c997bfba2c61d347a23f7fbae4c"
+    },
+    "/private/tmp/phase5_task_start_a_checkpoint_v1_20261010/source-review-frozen/src/box_screen_tests.cpp": {
+      "bytes": 2954,
+      "sha256": "d922876babec2867dd1293bcee259ac12e4b2a6af5a30dd551209e097c0abaf8"
+    },
+    "/private/tmp/phase5_task_start_a_checkpoint_v1_20261010/source-review-frozen/src/active_first_cycle.cpp": {
+      "bytes": 18194,
+      "sha256": "48ab1a5bfec3b3d54e2e2910519dc0e7a05af840923e8c6c175ae2b8c2df56a9"
+    },
+    "/private/tmp/phase5_task_start_a_checkpoint_v1_20261010/source-review-frozen/src/observer_tests.cpp": {
+      "bytes": 3785,
+      "sha256": "d1ff998984981a5ded1e92b8d452503e8b489ecfb0d067fb04ff5fd616d02877"
+    },
+    "/private/tmp/phase5_task_start_a_checkpoint_v1_20261010/source-review-frozen/src/solver_forensics.hpp": {
+      "bytes": 602,
+      "sha256": "6db9c07abeb82e5c119ad18f44c3207733f8e73b54df2eea3b48dab013c70a54"
+    },
+    "/private/tmp/phase5_task_start_a_checkpoint_v1_20261010/source-review-frozen/src/runtime_observer.cpp": {
+      "bytes": 17215,
+      "sha256": "9bbbe145f0cfa78c24f1d2b56008b065f1f3838ee54fa727eb76a88578fb607f"
+    },
+    "/private/tmp/phase5_task_start_a_checkpoint_v1_20261010/source-review-frozen/src/lossless_evidence.cpp": {
+      "bytes": 15969,
+      "sha256": "04680550f459ebf6bf0136bd611e2707b18562ddea5d44e4fc1c8782efb1bdd6"
+    },
+    "/private/tmp/phase5_task_start_a_checkpoint_v1_20261010/source-review-frozen/src/task_local_provider.hpp": {
+      "bytes": 640,
+      "sha256": "1819e2f626fb0ff65ad7e7e8de0b0b52f625e6bf435b073d7cca55722d76f093"
+    },
+    "/private/tmp/phase5_task_start_a_checkpoint_v1_20261010/source-review-frozen/src/affine_assembly.hpp": {
+      "bytes": 6026,
+      "sha256": "6faee2961242052c7655da41e8988dd0844f14c3cfa885672aa7c03eaa1dcb57"
+    },
+    "/private/tmp/phase5_task_start_a_checkpoint_v1_20261010/source-review-frozen/src/integrated_horizon_qp.cpp": {
+      "bytes": 36508,
+      "sha256": "ad771e10de104f7a9ef38e907354b8c27420525affcf3980301e9c3258acee74"
+    },
+    "/private/tmp/phase5_task_start_a_checkpoint_v1_20261010/source-review-frozen/src/normalization.hpp": {
+      "bytes": 4288,
+      "sha256": "9456be5c205f23d2aa2210eac02286d030204a446af003ee85362b971ccb43d8"
+    },
+    "/private/tmp/phase5_task_start_a_checkpoint_v1_20261010/source-review-frozen/src/model_boundary.hpp": {
+      "bytes": 2528,
+      "sha256": "51b2e845860fb4faecfc95b7f9873439ab4e682adce37a290e6fe704ee48a9d9"
+    },
+    "/private/tmp/phase5_task_start_a_checkpoint_v1_20261010/source-review-frozen/src/linear_box_screen.hpp": {
+      "bytes": 3916,
+      "sha256": "b649eff43293a3078b7b46a0166fa0f8a2ac59f3a8496c8c73a98c275fed96d1"
+    },
+    "/private/tmp/phase5_task_start_oracle_checkpoint_v2_20261010/READY.json": {
+      "bytes": 5534,
+      "sha256": "337fb7eb6d282b9e6a4c33b4bbed9be8ee1b259de18e19ddd333abe39dc60fc7"
+    },
+    "/private/tmp/phase5_task_start_oracle_checkpoint_v2_20261010/generate_task_start_numeric_seed.py": {
+      "bytes": 3084,
+      "sha256": "6b40cbc36d341cc1a6879f6f9cafed9f48f32431f005c2c3cee1b05702273c84"
+    },
+    "/private/tmp/phase5_task_start_oracle_checkpoint_v2_20261010/stage_task_start_linear_oracle2.py": {
+      "bytes": 2856,
+      "sha256": "fa1be69f6addf9f7c5581bac487c98e95da071d1bd84c791118bfb4a37f1c665"
+    },
+    "/private/tmp/phase5_task_start_oracle_checkpoint_v2_20261010/README.md": {
+      "bytes": 673,
+      "sha256": "d5f845be004f5865b8935f9f74266b594cddff2bd32cee2cf37b647b6d2e8ffe"
+    },
+    "/private/tmp/phase5_task_start_oracle_checkpoint_v2_20261010/actual_collection.tar.gz": {
+      "bytes": 2839394,
+      "sha256": "ea653616fa3591e1749338a7e9f976c8352e2141fcfc8f774e3a95a777bdb261"
+    },
+    "/private/tmp/phase5_task_start_oracle_checkpoint_v2_20261010/actual-dell/task-start-numeric-guess-v1-20261010/guess.json": {
+      "bytes": 5262,
+      "sha256": "b9563e031892611491bfab40d7126e5de3858f25dc2adb85bc132fd6904fce01"
+    },
+    "/private/tmp/phase5_task_start_oracle_checkpoint_v2_20261010/actual-dell/task-start-linear-oracle-v2-20261010-attempt1/oracle_plan.json": {
+      "bytes": 1980,
+      "sha256": "0364f96dcf185d905e9fae4c92164e44218be5e5746d7fcf46242cb56791effc"
+    },
+    "/private/tmp/phase5_task_start_oracle_checkpoint_v2_20261010/actual-dell/task-start-linear-oracle-v2-20261010-attempt1/oracle_driver.py": {
+      "bytes": 7479,
+      "sha256": "7b63c0ecfff84438e010a089201177cdeb4315768eab4fd7a24a863607551f24"
+    },
+    "/private/tmp/phase5_task_start_oracle_checkpoint_v2_20261010/actual-dell/task-start-linear-oracle-v2-20261010-attempt1/linear_oracle.py": {
+      "bytes": 6662,
+      "sha256": "647d5a3abbd0da68b425ca061a85a144aef94677e14d87751824be5f976b689c"
+    },
+    "/private/tmp/phase5_task_start_oracle_checkpoint_v2_20261010/actual-dell/task-start-linear-oracle-v2-20261010-attempt1/control-attempt1/BEFORE_READONLY_ROSTERS.json": {
+      "bytes": 3,
+      "sha256": "37517e5f3dc66819f61f5a7bb8ace1921282415f10551d2defa5c3eb0985b570"
+    },
+    "/private/tmp/phase5_task_start_oracle_checkpoint_v2_20261010/actual-dell/task-start-linear-oracle-v2-20261010-attempt1/control-attempt1/BATCH_PREFIX.json": {
+      "bytes": 2235,
+      "sha256": "47d1b6d878b01c1ccc2451f5dcad217842f1a57491f71b48046178787e5f3adc"
+    },
+    "/private/tmp/phase5_task_start_oracle_checkpoint_v2_20261010/actual-dell/task-start-linear-oracle-v2-20261010-attempt1/control-attempt1/BUILD_RESULT.json": {
+      "bytes": 2289,
+      "sha256": "6389e8410b781b8670ad7b8ee2991ae4f76633027aa7c7d8c695e28490ba8c02"
+    },
+    "/private/tmp/phase5_task_start_oracle_checkpoint_v2_20261010/actual-dell/task-start-linear-oracle-v2-20261010-attempt1/control-attempt1/CONTROL_EVENT_PREFIX.json": {
+      "bytes": 730,
+      "sha256": "409648f21b316050a34f193ca28d6faaf4eaa994df395d3028091dd5ff42626c"
+    },
+    "/private/tmp/phase5_task_start_oracle_checkpoint_v2_20261010/actual-dell/task-start-linear-oracle-v2-20261010-attempt1/control-attempt1/BEFORE_INPUT_IDENTITIES.json": {
+      "bytes": 875,
+      "sha256": "41f3189a541267063b6d3fc4f34300c07a8f8153f77202da8f527038ba2c4a91"
+    },
+    "/private/tmp/phase5_task_start_oracle_checkpoint_v2_20261010/actual-dell/task-start-linear-oracle-v2-20261010-attempt1/control-attempt1/compile-1.result.json": {
+      "bytes": 1895,
+      "sha256": "5c2a4804cce793fa2509203bf3b9e142a3fdb7489fd67f48f9e9fced8af670a2"
+    },
+    "/private/tmp/phase5_task_start_oracle_checkpoint_v2_20261010/actual-dell/task-start-linear-oracle-v2-20261010-attempt1/control-attempt1/compile-1.stderr": {
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    "/private/tmp/phase5_task_start_oracle_checkpoint_v2_20261010/actual-dell/task-start-linear-oracle-v2-20261010-attempt1/control-attempt1/AFTER_INPUT_IDENTITIES.json": {
+      "bytes": 875,
+      "sha256": "41f3189a541267063b6d3fc4f34300c07a8f8153f77202da8f527038ba2c4a91"
+    },
+    "/private/tmp/phase5_task_start_oracle_checkpoint_v2_20261010/actual-dell/task-start-linear-oracle-v2-20261010-attempt1/control-attempt1/AFTER_READONLY_ROSTERS.json": {
+      "bytes": 3,
+      "sha256": "37517e5f3dc66819f61f5a7bb8ace1921282415f10551d2defa5c3eb0985b570"
+    },
+    "/private/tmp/phase5_task_start_oracle_checkpoint_v2_20261010/actual-dell/task-start-linear-oracle-v2-20261010-attempt1/control-attempt1/compile-1.stdout": {
+      "bytes": 1446,
+      "sha256": "508bc9c255fb318f4ab115398216a0e160ce23cd6a6056a7b2c5be17825f5583"
+    },
+    "/private/tmp/phase5_task_start_oracle_checkpoint_v2_20261010/actual-dell/task-start-linear-oracle-v2-20261010-attempt1/oracle-artifacts-attempt1/ACTUAL_ORACLE_INPUTS.npz": {
+      "bytes": 7663124,
+      "sha256": "3fa8228457f27b66208a1b3b02547b0727a65946a99bc9e2651c8f98d1decdc0"
+    },
+    "/private/tmp/phase5_task_start_oracle_checkpoint_v2_20261010/actual-dell/task-start-linear-oracle-v2-20261010-attempt1/oracle-artifacts-attempt1/FOR_NUMERICAL_REFERENCE_ONLY.npz": {
+      "bytes": 4384,
+      "sha256": "6d37c3b738ec9a23f6f19a7736acf080785761ed87acb28a57279cac7286ebc5"
+    },
+    "/private/tmp/phase5_task_start_oracle_checkpoint_v2_20261010/actual-dell/task-start-linear-oracle-v2-20261010-attempt1/oracle-artifacts-attempt1/AFTER_SDK_IDENTITIES.json": {
+      "bytes": 257001,
+      "sha256": "d82f011455256e1013b73581269440380b9fe269eaa5052a4a304402ca0c2d87"
+    },
+    "/private/tmp/phase5_task_start_oracle_checkpoint_v2_20261010/actual-dell/task-start-linear-oracle-v2-20261010-attempt1/oracle-artifacts-attempt1/RESULT.json": {
+      "bytes": 1646,
+      "sha256": "393bad2dc2e418eb5fb499949f6f0d055bb109b2e0803d189f722e3f51f621dc"
+    },
+    "/private/tmp/phase5_task_start_oracle_checkpoint_v2_20261010/actual-dell/task-start-linear-oracle-v2-20261010-attempt1/oracle-artifacts-attempt1/ITERATION_PREFIX.json": {
+      "bytes": 5950,
+      "sha256": "d28e9aa4c9bff57d524b466a42577ed5637934ea45bb551fb613c423a1303967"
+    },
+    "/private/tmp/phase5_task_start_oracle_checkpoint_v2_20261010/actual-dell/task-start-linear-oracle-v2-20261010-attempt1/oracle-artifacts-attempt1/RESULT_PREFIX.json": {
+      "bytes": 996,
+      "sha256": "e312eda095cd9955c4fa0002af6f59c4912b81df737e9b2f411cc2a2a4579fd0"
+    },
+    "/private/tmp/phase5_task_start_oracle_checkpoint_v2_20261010/actual-dell/task-start-linear-oracle-v2-20261010-attempt1/oracle-artifacts-attempt1/BEFORE_SDK_IDENTITIES.json": {
+      "bytes": 257001,
+      "sha256": "d82f011455256e1013b73581269440380b9fe269eaa5052a4a304402ca0c2d87"
+    },
+    "/private/tmp/phase5_task_start_oracle_checkpoint_v2_20261010/actual-dell/task-start-linear-oracle-v2-20261010-attempt1/oracle-artifacts-attempt1/ITERATION_APPEND.jsonl": {
+      "bytes": 5119,
+      "sha256": "cba848cf165ae70ef6b42816524aeea290f4db65c9c55f8242404c01e2b2d44c"
+    },
+    "/private/tmp/root_independent_task_start_a_review_20261010/SOURCE_READ_MANIFEST.json": {
+      "bytes": 2943,
+      "sha256": "e636d92f328ff125d4af6abb2762809b098ae5e80a2cf9f147c6b43507002564"
+    },
+    "/private/tmp/root_independent_task_start_a_review_20261010/source-read-snapshot/invariant_tests.cpp": {
+      "bytes": 4721,
+      "sha256": "f5a859d4cf9d79a5ae1b533b8dd62776f2bba6599dfdf691a2915ef3296a33f9"
+    },
+    "/private/tmp/root_independent_task_start_a_review_20261010/source-read-snapshot/normalization.cpp": {
+      "bytes": 23976,
+      "sha256": "a0cd0c9cdb505f922f1744f24cf115057b6ba9f3a9bc1b3ed0c9bdb82d358ed5"
+    },
+    "/private/tmp/root_independent_task_start_a_review_20261010/source-read-snapshot/session_primitives.hpp": {
+      "bytes": 2259,
+      "sha256": "0b76bc232ed81dc9b4831617ae1690cfc287def914b8bca5f05ce6e6e25b6080"
+    },
+    "/private/tmp/root_independent_task_start_a_review_20261010/source-read-snapshot/model_boundary.cpp": {
+      "bytes": 14091,
+      "sha256": "04c94821ee57669431b8c7bceac1d66004fdfc8af11424008e89890a7486630a"
+    },
+    "/private/tmp/root_independent_task_start_a_review_20261010/source-read-snapshot/solver_forensics.cpp": {
+      "bytes": 14141,
+      "sha256": "b0432ed917ecf68689705558730f6ee8fc781eef78692205f021f9eeb610720c"
+    },
+    "/private/tmp/root_independent_task_start_a_review_20261010/source-read-snapshot/runtime_observer.hpp": {
+      "bytes": 5472,
+      "sha256": "0e0ef9cfe8bc1c8a5bb38327148110dd6db4ebfe4e2ba479de8d1d78175941c8"
+    },
+    "/private/tmp/root_independent_task_start_a_review_20261010/source-read-snapshot/lossless_evidence.hpp": {
+      "bytes": 1887,
+      "sha256": "6e40b8878ddc78e8422c1301ca62ca98ed854fc2f57e6f549f5685cc1387bccc"
+    },
+    "/private/tmp/root_independent_task_start_a_review_20261010/source-read-snapshot/affine_assembly.cpp": {
+      "bytes": 28981,
+      "sha256": "d478eda1f0fe97bfc41851515f4baa3e485fd4a57968a62dcb6233ae1157bbd5"
+    },
+    "/private/tmp/root_independent_task_start_a_review_20261010/source-read-snapshot/integrated_horizon_qp.hpp": {
+      "bytes": 9631,
+      "sha256": "379d9c599895143ab80bc144414091a749f46848b7cf8d6c913db97d998f41a9"
+    },
+    "/private/tmp/root_independent_task_start_a_review_20261010/source-read-snapshot/task_local_provider.cpp": {
+      "bytes": 1839,
+      "sha256": "051b424236979f9fe7ea4cb96564f54969025c997bfba2c61d347a23f7fbae4c"
+    },
+    "/private/tmp/root_independent_task_start_a_review_20261010/source-read-snapshot/box_screen_tests.cpp": {
+      "bytes": 2954,
+      "sha256": "d922876babec2867dd1293bcee259ac12e4b2a6af5a30dd551209e097c0abaf8"
+    },
+    "/private/tmp/root_independent_task_start_a_review_20261010/source-read-snapshot/active_first_cycle.cpp": {
+      "bytes": 18194,
+      "sha256": "48ab1a5bfec3b3d54e2e2910519dc0e7a05af840923e8c6c175ae2b8c2df56a9"
+    },
+    "/private/tmp/root_independent_task_start_a_review_20261010/source-read-snapshot/observer_tests.cpp": {
+      "bytes": 3785,
+      "sha256": "d1ff998984981a5ded1e92b8d452503e8b489ecfb0d067fb04ff5fd616d02877"
+    },
+    "/private/tmp/root_independent_task_start_a_review_20261010/source-read-snapshot/solver_forensics.hpp": {
+      "bytes": 602,
+      "sha256": "6db9c07abeb82e5c119ad18f44c3207733f8e73b54df2eea3b48dab013c70a54"
+    },
+    "/private/tmp/root_independent_task_start_a_review_20261010/source-read-snapshot/runtime_observer.cpp": {
+      "bytes": 17215,
+      "sha256": "9bbbe145f0cfa78c24f1d2b56008b065f1f3838ee54fa727eb76a88578fb607f"
+    },
+    "/private/tmp/root_independent_task_start_a_review_20261010/source-read-snapshot/lossless_evidence.cpp": {
+      "bytes": 15969,
+      "sha256": "04680550f459ebf6bf0136bd611e2707b18562ddea5d44e4fc1c8782efb1bdd6"
+    },
+    "/private/tmp/root_independent_task_start_a_review_20261010/source-read-snapshot/task_local_provider.hpp": {
+      "bytes": 640,
+      "sha256": "1819e2f626fb0ff65ad7e7e8de0b0b52f625e6bf435b073d7cca55722d76f093"
+    },
+    "/private/tmp/root_independent_task_start_a_review_20261010/source-read-snapshot/affine_assembly.hpp": {
+      "bytes": 6026,
+      "sha256": "6faee2961242052c7655da41e8988dd0844f14c3cfa885672aa7c03eaa1dcb57"
+    },
+    "/private/tmp/root_independent_task_start_a_review_20261010/source-read-snapshot/integrated_horizon_qp.cpp": {
+      "bytes": 36508,
+      "sha256": "ad771e10de104f7a9ef38e907354b8c27420525affcf3980301e9c3258acee74"
+    },
+    "/private/tmp/root_independent_task_start_a_review_20261010/source-read-snapshot/normalization.hpp": {
+      "bytes": 4288,
+      "sha256": "9456be5c205f23d2aa2210eac02286d030204a446af003ee85362b971ccb43d8"
+    },
+    "/private/tmp/root_independent_task_start_a_review_20261010/source-read-snapshot/model_boundary.hpp": {
+      "bytes": 2528,
+      "sha256": "51b2e845860fb4faecfc95b7f9873439ab4e682adce37a290e6fe704ee48a9d9"
+    },
+    "/private/tmp/root_independent_task_start_a_review_20261010/source-read-snapshot/linear_box_screen.hpp": {
+      "bytes": 3916,
+      "sha256": "b649eff43293a3078b7b46a0166fa0f8a2ac59f3a8496c8c73a98c275fed96d1"
+    },
+    "/Users/uot/Documents/ChatGPT/ros/results/phase5-reference/task-start-a-v1-20261010/root-input-readback1/scene.xml": {
+      "bytes": 828,
+      "sha256": "fdbb460120c287785dceafe2f320e8b79865203a09aebb5027ec8fd53f4628a5"
+    },
+    "/Users/uot/Documents/ChatGPT/ros/results/phase5-reference/task-start-a-v1-20261010/root-input-readback1/inspection_fr3.xml": {
+      "bytes": 11239,
+      "sha256": "0231a374b6173f38ff63a214932dfca624594d23daf5f4b0c4a0e8e02016ebae"
+    },
+    "/Users/uot/Documents/ChatGPT/ros/results/phase5-reference/task-start-a-v1-20261010/root-input-readback1/expected_metadata.json": {
+      "bytes": 1744,
+      "sha256": "8fc50a0c2597e27f6692def308f5c0799e15ba771b8fd2ab409adf1a1100119a"
+    },
+    "/private/tmp/public_live_affine_v2_integrated_first_cycle_canonical_protocol_repair_v2_20261010/proposed-files/inputs/public_constants.json": {
+      "bytes": 4481,
+      "sha256": "d37c9a12539345fd1dbb6718cd273584140359ca2bd9834442bf2228e50f6bdd"
+    }
+  },
+  "packet_files": 223,
+  "packet_bytes": 77710253,
+  "oracle_files": 26,
+  "actual_source_payloads": 160,
+  "literal_XML_single_include_bound_postrun": true,
+  "postrun_exact_files_not_new_startup_proof": true,
+  "native_scene_and_model_XML_pins": [
+    {
+      "path": "/home/codextransfer/predictive_motion/experiments/generated/inspection/scene.xml",
+      "bytes": 828,
+      "sha256": "fdbb460120c287785dceafe2f320e8b79865203a09aebb5027ec8fd53f4628a5"
+    },
+    {
+      "path": "/home/codextransfer/predictive_motion/experiments/generated/inspection/inspection_fr3.xml",
+      "bytes": 11239,
+      "sha256": "0231a374b6173f38ff63a214932dfca624594d23daf5f4b0c4a0e8e02016ebae"
+    }
+  ],
+  "complete_model_metadata_exact_expected": {
+    "pinocchio_version": "4.1.0",
+    "nq": 7,
+    "nv": 7,
+    "joint_names": [
+      "fr3_joint1",
+      "fr3_joint2",
+      "fr3_joint3",
+      "fr3_joint4",
+      "fr3_joint5",
+      "fr3_joint6",
+      "fr3_joint7"
+    ],
+    "frame_names": [
+      "universe",
+      "base",
+      "fr3_link0_fixed",
+      "fr3_link0",
+      "fr3_joint1",
+      "fr3_link1",
+      "fr3_joint2",
+      "fr3_link2",
+      "fr3_joint3",
+      "fr3_link3",
+      "fr3_joint4",
+      "fr3_link4",
+      "fr3_joint5",
+      "fr3_link5",
+      "fr3_joint6",
+      "fr3_link6",
+      "fr3_joint7",
+      "fr3_link7",
+      "attachment_site",
+      "inspection_tool_fixed",
+      "inspection_tool",
+      "inspection_tcp"
+    ],
+    "idx_q": [
+      0,
+      1,
+      2,
+      3,
+      4,
+      5,
+      6
+    ],
+    "idx_v": [
+      0,
+      1,
+      2,
+      3,
+      4,
+      5,
+      6
+    ],
+    "joint_nq": [
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1
+    ],
+    "joint_nv": [
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1
+    ],
+    "masses": [
+      1.0,
+      2.92747,
+      2.93554,
+      2.2449,
+      2.6156,
+      2.32712,
+      1.81704,
+      1.077143
+    ],
+    "armature": [
+      0.195,
+      0.195,
+      0.195,
+      0.195,
+      0.074,
+      0.074,
+      0.074
+    ],
+    "gravity": [
+      0.0,
+      0.0,
+      -9.81
+    ],
+    "R": [
+      0.3876906608381666,
+      0.0812362043341259,
+      0.4331862156261861,
+      0.2873660249915066,
+      1.0025599181193177,
+      0.8294841910688778,
+      1.4962574210970128
+    ],
+    "B": [
+      105.26315789473685,
+      105.26315789473685,
+      105.26315789473685,
+      105.26315789473685,
+      105.26315789473685,
+      105.26315789473685,
+      105.26315789473685
+    ],
+    "damping": [
+      450.21,
+      450.21,
+      350.21,
+      350.21,
+      200.21,
+      200.21,
+      200.21
+    ]
+  },
+  "loaded_SDK_roster_matches_recorded_profile": 25,
+  "runtime_guard_pins_before_after_exact": true,
+  "actual_runtime_guard_count": 1667,
+  "compile_link_guardarrays_empty_no_complete_buildclosure": true,
+  "source_ELF_record": {
+    "path": "/home/codextransfer/predictive_motion/results/phase5/session-task-start-a-v1-20261010-repair2/link-attempt1/active_first_cycle",
+    "sha256": "1f04ea9480b640c33b8917536b795a38722bafca20178de6d62c4e57362b5e68",
+    "bytes": 19358288
+  },
+  "local_ELF_bytes_verified": false,
+  "mesh": [
+    1,
+    1,
+    2,
+    2,
+    3,
+    3,
+    4,
+    4,
+    5,
+    5,
+    6,
+    6,
+    8,
+    10,
+    12,
+    16,
+    20,
+    24,
+    28,
+    40
+  ],
+  "raw_counts": {
+    "half_maps": 400,
+    "cycle_maps": 200,
+    "cell_maps": 20
+  },
+  "full_QP": {
+    "F_rows": 741,
+    "A_rows": 13156,
+    "controls": 160,
+    "solver_rows": 6211,
+    "eliminated": 16,
+    "omitted": 6929,
+    "factor_PSD_min_eigenvalue": 0.00022043190091410736,
+    "geometry_inline_rows": 0
+  },
+  "checks": {
+    "Hr": 3.469446951953614e-18,
+    "gr": 4.336808689942018e-19,
+    "Ar": 1.3877787807814457e-17,
+    "lr": 0.0,
+    "ur": 0.0,
+    "Fr": 6.938893903907228e-18,
+    "D": 0.0,
+    "R": 0.0,
+    "Hs": 0.0,
+    "gs": 0.0,
+    "As": 2.220446049250313e-16,
+    "ls": 0.0,
+    "us": 0.0,
+    "Fs": 0.0,
+    "seeds": 0.0,
+    "kr": 0.0,
+    "reference_reduced_product": 0.0,
+    "reference_U_product": 2.7755575615628914e-17,
+    "lifted_equations": 4.107825191113079e-15,
+    "seed_original_controls": 0.0,
+    "nominal_boundaries": 5.643885041825799e-14,
+    "half_value_0": 0.0,
+    "half_value_1": 0.0,
+    "half_value_2": 0.0,
+    "half_value_3": 0.0,
+    "half_value_4": 0.0,
+    "half_value_5": 0.0,
+    "half_value_6": 0.0,
+    "half_value_7": 0.0,
+    "half_value_8": 0.0,
+    "half_value_9": 0.0,
+    "half_value_10": 0.0,
+    "half_value_11": 0.0,
+    "half_value_12": 0.0,
+    "half_value_13": 0.0,
+    "half_value_14": 0.0,
+    "half_value_15": 0.0,
+    "half_value_16": 0.0,
+    "half_value_17": 0.0,
+    "half_value_18": 0.0,
+    "half_value_19": 0.0,
+    "half_value_20": 0.0,
+    "half_value_21": 0.0,
+    "half_value_22": 0.0,
+    "half_value_23": 0.0,
+    "half_value_24": 0.0,
+    "half_value_25": 0.0,
+    "half_value_26": 0.0,
+    "half_value_27": 0.0,
+    "half_value_28": 0.0,
+    "half_value_29": 0.0,
+    "half_value_30": 0.0,
+    "half_value_31": 0.0,
+    "half_value_32": 0.0,
+    "half_value_33": 0.0,
+    "half_value_34": 0.0,
+    "half_value_35": 0.0,
+    "half_value_36": 0.0,
+    "half_value_37": 0.0,
+    "half_value_38": 0.0,
+    "half_value_39": 0.0,
+    "half_value_40": 0.0,
+    "half_value_41": 0.0,
+    "half_value_42": 0.0,
+    "half_value_43": 0.0,
+    "half_value_44": 0.0,
+    "half_value_45": 0.0,
+    "half_value_46": 0.0,
+    "half_value_47": 0.0,
+    "half_value_48": 0.0,
+    "half_value_49": 0.0,
+    "half_value_50": 0.0,
+    "half_value_51": 0.0,
+    "half_value_52": 0.0,
+    "half_value_53": 0.0,
+    "half_value_54": 0.0,
+    "half_value_55": 0.0,
+    "half_value_56": 0.0,
+    "half_value_57": 0.0,
+    "half_value_58": 0.0,
+    "half_value_59": 0.0,
+    "half_value_60": 0.0,
+    "half_value_61": 0.0,
+    "half_value_62": 0.0,
+    "half_value_63": 0.0,
+    "half_value_64": 0.0,
+    "half_value_65": 0.0,
+    "half_value_66": 0.0,
+    "half_value_67": 0.0,
+    "half_value_68": 0.0,
+    "half_value_69": 0.0,
+    "half_value_70": 0.0,
+    "half_value_71": 0.0,
+    "half_value_72": 0.0,
+    "half_value_73": 0.0,
+    "half_value_74": 0.0,
+    "half_value_75": 0.0,
+    "half_value_76": 0.0,
+    "half_value_77": 0.0,
+    "half_value_78": 0.0,
+    "half_value_79": 0.0,
+    "half_value_80": 0.0,
+    "half_value_81": 0.0,
+    "half_value_82": 0.0,
+    "half_value_83": 0.0,
+    "half_value_84": 0.0,
+    "half_value_85": 0.0,
+    "half_value_86": 0.0,
+    "half_value_87": 0.0,
+    "half_value_88": 0.0,
+    "half_value_89": 0.0,
+    "half_value_90": 0.0,
+    "half_value_91": 0.0,
+    "half_value_92": 0.0,
+    "half_value_93": 0.0,
+    "half_value_94": 0.0,
+    "half_value_95": 0.0,
+    "half_value_96": 0.0,
+    "half_value_97": 0.0,
+    "half_value_98": 0.0,
+    "half_value_99": 0.0,
+    "half_value_100": 0.0,
+    "half_value_101": 0.0,
+    "half_value_102": 0.0,
+    "half_value_103": 0.0,
+    "half_value_104": 0.0,
+    "half_value_105": 0.0,
+    "half_value_106": 0.0,
+    "half_value_107": 0.0,
+    "half_value_108": 0.0,
+    "half_value_109": 0.0,
+    "half_value_110": 0.0,
+    "half_value_111": 0.0,
+    "half_value_112": 0.0,
+    "half_value_113": 0.0,
+    "half_value_114": 0.0,
+    "half_value_115": 0.0,
+    "half_value_116": 0.0,
+    "half_value_117": 0.0,
+    "half_value_118": 0.0,
+    "half_value_119": 0.0,
+    "half_value_120": 0.0,
+    "half_value_121": 0.0,
+    "half_value_122": 0.0,
+    "half_value_123": 0.0,
+    "half_value_124": 0.0,
+    "half_value_125": 0.0,
+    "half_value_126": 0.0,
+    "half_value_127": 0.0,
+    "half_value_128": 0.0,
+    "half_value_129": 0.0,
+    "half_value_130": 0.0,
+    "half_value_131": 0.0,
+    "half_value_132": 0.0,
+    "half_value_133": 0.0,
+    "half_value_134": 0.0,
+    "half_value_135": 0.0,
+    "half_value_136": 0.0,
+    "half_value_137": 0.0,
+    "half_value_138": 0.0,
+    "half_value_139": 0.0,
+    "half_value_140": 0.0,
+    "half_value_141": 0.0,
+    "half_value_142": 0.0,
+    "half_value_143": 0.0,
+    "half_value_144": 0.0,
+    "half_value_145": 0.0,
+    "half_value_146": 0.0,
+    "half_value_147": 0.0,
+    "half_value_148": 0.0,
+    "half_value_149": 0.0,
+    "half_value_150": 0.0,
+    "half_value_151": 0.0,
+    "half_value_152": 0.0,
+    "half_value_153": 0.0,
+    "half_value_154": 0.0,
+    "half_value_155": 0.0,
+    "half_value_156": 0.0,
+    "half_value_157": 0.0,
+    "half_value_158": 0.0,
+    "half_value_159": 0.0,
+    "half_value_160": 0.0,
+    "half_value_161": 0.0,
+    "half_value_162": 0.0,
+    "half_value_163": 0.0,
+    "half_value_164": 0.0,
+    "half_value_165": 0.0,
+    "half_value_166": 0.0,
+    "half_value_167": 0.0,
+    "half_value_168": 0.0,
+    "half_value_169": 0.0,
+    "half_value_170": 0.0,
+    "half_value_171": 0.0,
+    "half_value_172": 0.0,
+    "half_value_173": 0.0,
+    "half_value_174": 0.0,
+    "half_value_175": 0.0,
+    "half_value_176": 0.0,
+    "half_value_177": 0.0,
+    "half_value_178": 0.0,
+    "half_value_179": 0.0,
+    "half_value_180": 0.0,
+    "half_value_181": 0.0,
+    "half_value_182": 0.0,
+    "half_value_183": 0.0,
+    "half_value_184": 0.0,
+    "half_value_185": 0.0,
+    "half_value_186": 0.0,
+    "half_value_187": 0.0,
+    "half_value_188": 0.0,
+    "half_value_189": 0.0,
+    "half_value_190": 0.0,
+    "half_value_191": 0.0,
+    "half_value_192": 0.0,
+    "half_value_193": 0.0,
+    "half_value_194": 0.0,
+    "half_value_195": 0.0,
+    "half_value_196": 0.0,
+    "half_value_197": 0.0,
+    "half_value_198": 0.0,
+    "half_value_199": 0.0,
+    "half_value_200": 0.0,
+    "half_value_201": 0.0,
+    "half_value_202": 0.0,
+    "half_value_203": 0.0,
+    "half_value_204": 0.0,
+    "half_value_205": 0.0,
+    "half_value_206": 0.0,
+    "half_value_207": 0.0,
+    "half_value_208": 0.0,
+    "half_value_209": 0.0,
+    "half_value_210": 0.0,
+    "half_value_211": 0.0,
+    "half_value_212": 0.0,
+    "half_value_213": 0.0,
+    "half_value_214": 0.0,
+    "half_value_215": 0.0,
+    "half_value_216": 0.0,
+    "half_value_217": 0.0,
+    "half_value_218": 0.0,
+    "half_value_219": 0.0,
+    "half_value_220": 0.0,
+    "half_value_221": 0.0,
+    "half_value_222": 0.0,
+    "half_value_223": 0.0,
+    "half_value_224": 0.0,
+    "half_value_225": 0.0,
+    "half_value_226": 0.0,
+    "half_value_227": 0.0,
+    "half_value_228": 0.0,
+    "half_value_229": 0.0,
+    "half_value_230": 0.0,
+    "half_value_231": 0.0,
+    "half_value_232": 0.0,
+    "half_value_233": 0.0,
+    "half_value_234": 0.0,
+    "half_value_235": 0.0,
+    "half_value_236": 0.0,
+    "half_value_237": 0.0,
+    "half_value_238": 0.0,
+    "half_value_239": 0.0,
+    "half_value_240": 0.0,
+    "half_value_241": 0.0,
+    "half_value_242": 0.0,
+    "half_value_243": 0.0,
+    "half_value_244": 0.0,
+    "half_value_245": 0.0,
+    "half_value_246": 0.0,
+    "half_value_247": 0.0,
+    "half_value_248": 0.0,
+    "half_value_249": 0.0,
+    "half_value_250": 0.0,
+    "half_value_251": 0.0,
+    "half_value_252": 0.0,
+    "half_value_253": 0.0,
+    "half_value_254": 0.0,
+    "half_value_255": 0.0,
+    "half_value_256": 0.0,
+    "half_value_257": 0.0,
+    "half_value_258": 0.0,
+    "half_value_259": 0.0,
+    "half_value_260": 0.0,
+    "half_value_261": 0.0,
+    "half_value_262": 0.0,
+    "half_value_263": 0.0,
+    "half_value_264": 0.0,
+    "half_value_265": 0.0,
+    "half_value_266": 0.0,
+    "half_value_267": 0.0,
+    "half_value_268": 0.0,
+    "half_value_269": 0.0,
+    "half_value_270": 0.0,
+    "half_value_271": 0.0,
+    "half_value_272": 0.0,
+    "half_value_273": 0.0,
+    "half_value_274": 0.0,
+    "half_value_275": 0.0,
+    "half_value_276": 0.0,
+    "half_value_277": 0.0,
+    "half_value_278": 0.0,
+    "half_value_279": 0.0,
+    "half_value_280": 0.0,
+    "half_value_281": 0.0,
+    "half_value_282": 0.0,
+    "half_value_283": 0.0,
+    "half_value_284": 0.0,
+    "half_value_285": 0.0,
+    "half_value_286": 0.0,
+    "half_value_287": 0.0,
+    "half_value_288": 0.0,
+    "half_value_289": 0.0,
+    "half_value_290": 0.0,
+    "half_value_291": 0.0,
+    "half_value_292": 0.0,
+    "half_value_293": 0.0,
+    "half_value_294": 0.0,
+    "half_value_295": 0.0,
+    "half_value_296": 0.0,
+    "half_value_297": 0.0,
+    "half_value_298": 0.0,
+    "half_value_299": 0.0,
+    "half_value_300": 0.0,
+    "half_value_301": 0.0,
+    "half_value_302": 0.0,
+    "half_value_303": 0.0,
+    "half_value_304": 0.0,
+    "half_value_305": 0.0,
+    "half_value_306": 0.0,
+    "half_value_307": 0.0,
+    "half_value_308": 0.0,
+    "half_value_309": 0.0,
+    "half_value_310": 0.0,
+    "half_value_311": 0.0,
+    "half_value_312": 0.0,
+    "half_value_313": 0.0,
+    "half_value_314": 0.0,
+    "half_value_315": 0.0,
+    "half_value_316": 0.0,
+    "half_value_317": 0.0,
+    "half_value_318": 0.0,
+    "half_value_319": 0.0,
+    "half_value_320": 0.0,
+    "half_value_321": 0.0,
+    "half_value_322": 0.0,
+    "half_value_323": 0.0,
+    "half_value_324": 0.0,
+    "half_value_325": 0.0,
+    "half_value_326": 0.0,
+    "half_value_327": 0.0,
+    "half_value_328": 0.0,
+    "half_value_329": 0.0,
+    "half_value_330": 0.0,
+    "half_value_331": 0.0,
+    "half_value_332": 0.0,
+    "half_value_333": 0.0,
+    "half_value_334": 0.0,
+    "half_value_335": 0.0,
+    "half_value_336": 0.0,
+    "half_value_337": 0.0,
+    "half_value_338": 0.0,
+    "half_value_339": 0.0,
+    "half_value_340": 0.0,
+    "half_value_341": 0.0,
+    "half_value_342": 0.0,
+    "half_value_343": 0.0,
+    "half_value_344": 0.0,
+    "half_value_345": 0.0,
+    "half_value_346": 0.0,
+    "half_value_347": 0.0,
+    "half_value_348": 0.0,
+    "half_value_349": 0.0,
+    "half_value_350": 0.0,
+    "half_value_351": 0.0,
+    "half_value_352": 0.0,
+    "half_value_353": 0.0,
+    "half_value_354": 0.0,
+    "half_value_355": 0.0,
+    "half_value_356": 0.0,
+    "half_value_357": 0.0,
+    "half_value_358": 0.0,
+    "half_value_359": 0.0,
+    "half_value_360": 0.0,
+    "half_value_361": 0.0,
+    "half_value_362": 0.0,
+    "half_value_363": 0.0,
+    "half_value_364": 0.0,
+    "half_value_365": 0.0,
+    "half_value_366": 0.0,
+    "half_value_367": 0.0,
+    "half_value_368": 0.0,
+    "half_value_369": 0.0,
+    "half_value_370": 0.0,
+    "half_value_371": 0.0,
+    "half_value_372": 0.0,
+    "half_value_373": 0.0,
+    "half_value_374": 0.0,
+    "half_value_375": 0.0,
+    "half_value_376": 0.0,
+    "half_value_377": 0.0,
+    "half_value_378": 0.0,
+    "half_value_379": 0.0,
+    "half_value_380": 0.0,
+    "half_value_381": 0.0,
+    "half_value_382": 0.0,
+    "half_value_383": 0.0,
+    "half_value_384": 0.0,
+    "half_value_385": 0.0,
+    "half_value_386": 0.0,
+    "half_value_387": 0.0,
+    "half_value_388": 0.0,
+    "half_value_389": 0.0,
+    "half_value_390": 0.0,
+    "half_value_391": 0.0,
+    "half_value_392": 0.0,
+    "half_value_393": 0.0,
+    "half_value_394": 0.0,
+    "half_value_395": 0.0,
+    "half_value_396": 0.0,
+    "half_value_397": 0.0,
+    "half_value_398": 0.0,
+    "half_value_399": 0.0,
+    "raw_defects": {
+      "max_abs": 1.0241807402167069e-14
+    },
+    "raw_cumulative_composition": {
+      "max_abs": 1.7763568394002505e-15
+    },
+    "sample_nominal_reproduction": {
+      "max_abs": 5.2801998690331843e-14
+    },
+    "F": 6.591949208711867e-17,
+    "f": 9.145462165349727e-15,
+    "sparse_factor": 0.0,
+    "H": 4.336808689942018e-18,
+    "g": 3.885780586188048e-16,
+    "constant": 9.71445146547012e-17,
+    "objective_at_seed": 9.71445146547012e-17,
+    "raw_H_symmetry": 0.0,
+    "gradient_at_seed": 3.885780586188048e-16,
+    "A": 1.3704315460216776e-16,
+    "lower": 5.5067062021407764e-14,
+    "upper": 5.5067062021407764e-14,
+    "native_stationarity_projection": 1.36086461907517e-17,
+    "reference_objective": 0.0
+  },
+  "observed_start": {
+    "actual_q_v_C_w_s_r": [
+      -1.2457657480319455,
+      0.09866493650187168,
+      1.1540916193226654,
+      -2.7855809586168485,
+      -0.09762355579948236,
+      4.38442602182159,
+      -1.6281406873307038,
+      -2.8843992076774874e-09,
+      9.680608756091955e-06,
+      -1.1349399098085768e-07,
+      -3.2891034196009085e-07,
+      1.9718796206861044e-08,
+      -3.247122226174752e-08,
+      3.149673856432623e-10,
+      -1.245765748910091,
+      0.09664780639474282,
+      1.1546321286355201,
+      -2.7819779781855476,
+      -0.09755087623640622,
+      4.385246703649958,
+      -1.6281268331277312,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0
+    ],
+    "physical_substeps": 1000,
+    "task_boundary": [
+      0,
+      0
+    ],
+    "measured_last_acceleration": [
+      1.148336051085219e-08,
+      -2.5956717947797526e-05,
+      3.4237807424845845e-07,
+      1.7558074828400348e-06,
+      -5.1989740987056865e-08,
+      1.2468979099335955e-07,
+      -7.369428879322151e-10
+    ],
+    "source": "WARMUP_ACTUAL_TASK_START_A_SEED91011_ATTEMPT1_SUBSTEP_1000",
+    "endhold_position_error_stored": 0.0032157093225693213,
+    "endhold_rotation_error_stored": 0.005484296217470531
+  },
+  "native_result": {
+    "status": 6,
+    "raw_status": 7,
+    "iterations": 20000,
+    "primal": 2.2524509306429796e-08,
+    "dual": 3.5505578736654e-08,
+    "rho_updates": 6,
+    "rho_estimate": 0.14078452173202222,
+    "usable_count": 0,
+    "preview": 0,
+    "tail": 0,
+    "forward_request": 0,
+    "collector_fullSI_rows_scanned": 0,
+    "collector_fullSI": "UNMEASURED",
+    "forensic_diagnostics": {
+      "maximum_original_SI_violation": 1.5460706270786773e-06,
+      "worst_row": 2961,
+      "worst_label": "feedback_jerk/18/7",
+      "worst_units": "1/s^3",
+      "rows_above_1e_7": 8,
+      "terminal_affine_residual": 1.3010426069826053e-18,
+      "literal_history_failures": [
+        {
+          "kind": "b_or_progress_jerk",
+          "cell": 7,
+          "tick": 17,
+          "b": 0.11868421848600946,
+          "previous_b": 0.1386842189520651,
+          "progress_jerk": -5.000000116513907,
+          "cap": 5.0
+        },
+        {
+          "kind": "b_or_progress_jerk",
+          "cell": 8,
+          "tick": 21,
+          "b": 0.09868421798180078,
+          "previous_b": 0.11868421848600946,
+          "progress_jerk": -5.00000012605217,
+          "cap": 5.0
+        },
+        {
+          "kind": "b_or_progress_jerk",
+          "cell": 9,
+          "tick": 26,
+          "b": 0.07868421747010779,
+          "previous_b": 0.09868421798180078,
+          "progress_jerk": -5.000000127923249,
+          "cap": 5.0
+        },
+        {
+          "kind": "b_or_progress_jerk",
+          "cell": 10,
+          "tick": 31,
+          "b": 0.05868421696984419,
+          "previous_b": 0.07868421747010779,
+          "progress_jerk": -5.0000001250659,
+          "cap": 5.0
+        },
+        {
+          "kind": "b_or_progress_jerk",
+          "cell": 11,
+          "tick": 37,
+          "b": 0.03868421653548253,
+          "previous_b": 0.05868421696984419,
+          "progress_jerk": -5.000000108590415,
+          "cap": 5.0
+        },
+        {
+          "kind": "b_or_progress_jerk",
+          "cell": 12,
+          "tick": 43,
+          "b": 0.018684216192202594,
+          "previous_b": 0.03868421653548253,
+          "progress_jerk": -5.000000085819983,
+          "cap": 5.0
+        },
+        {
+          "kind": "b_or_progress_jerk",
+          "cell": 13,
+          "tick": 51,
+          "b": -0.0013157839550528244,
+          "previous_b": 0.018684216192202594,
+          "progress_jerk": -5.000000036813855,
+          "cap": 5.0
+        },
+        {
+          "kind": "b_or_progress_jerk",
+          "cell": 17,
+          "tick": 109,
+          "b": -0.0400000084503544,
+          "previous_b": -0.06000000998527069,
+          "progress_jerk": 5.000000383729072,
+          "cap": 5.0
+        },
+        {
+          "kind": "b_or_progress_jerk",
+          "cell": 18,
+          "tick": 133,
+          "b": -0.020000002266071893,
+          "previous_b": -0.0400000084503544,
+          "progress_jerk": 5.000001546070627,
+          "cap": 5.0
+        },
+        {
+          "kind": "b_or_progress_jerk",
+          "cell": 19,
+          "tick": 161,
+          "b": 0.0,
+          "previous_b": -0.020000002266071893,
+          "progress_jerk": 5.000000566517973,
+          "cap": 5.0
+        }
+      ],
+      "literal_max_command_jerk": 9.893747853910448,
+      "literal_final_w": [
+        -2.6156377411212794e-18,
+        -1.111307226797642e-18,
+        4.4994390158148434e-18,
+        -1.0489656018797255e-17,
+        2.303929616531697e-19,
+        -2.100641709190665e-18,
+        -5.2075585597194385e-18
+      ],
+      "literal_final_r": 4.363913744254155e-18,
+      "last_alpha": [
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "last_b": 0.0,
+      "exact_zero_tail": false,
+      "cycles": 200,
+      "literal_C": [
+        -1.2464674602552963,
+        0.09398735721335935,
+        1.1567198991655514,
+        -2.7799675230683563,
+        -0.09694436135318116,
+        4.38724627632015,
+        -1.6290068741281378
+      ]
+    },
+    "forensic_scaled_stationarity_max": 3.550557873188351e-08,
+    "stop": "only SOLVED admits candidate; native status retained"
+  },
+  "external_reference": {
+    "inputs_exact_actual_arrays": true,
+    "recorded_and_zero_seeds_exact_zero": true,
+    "uses_native_unsolved_seed": false,
+    "original_problem_digest": "47b33fe5ae43ae90b351a83fc7caba18ab960e076d570ff7c0dd1685d3eceab4",
+    "transformed_problem_digest": "4605e2647e35d27677e755554493cd569ff79feb9c235ed8432bf07af8b4cad3",
+    "actual_state_history_bitwise_match": true,
+    "SLSQP_source_status": {
+      "success": true,
+      "nit": 36,
+      "scope": "approximate SLSQP algebra reference only, not nativeOSQPSOLVED/candidate/controller/Model/plant"
+    },
+    "diagnostics": {
+      "maximum_original_SI_violation": 9.414691248821327e-14,
+      "worst_row": 3538,
+      "worst_label": "feedback_jerk/19/7",
+      "worst_units": "1/s^3",
+      "rows_above_1e_7": 0,
+      "terminal_affine_residual": 1.0842021724855044e-18,
+      "literal_history_failures": [
+        {
+          "kind": "b_or_progress_jerk",
+          "cell": 1,
+          "tick": 2,
+          "b": 0.039999999999999945,
+          "previous_b": 0.019999999999999907,
+          "progress_jerk": 5.00000000000001,
+          "cap": 5.0
+        },
+        {
+          "kind": "b_or_progress_jerk",
+          "cell": 4,
+          "tick": 7,
+          "b": 0.09999999999999988,
+          "previous_b": 0.07999999999999971,
+          "progress_jerk": 5.000000000000043,
+          "cap": 5.0
+        },
+        {
+          "kind": "b_or_progress_jerk",
+          "cell": 9,
+          "tick": 26,
+          "b": 0.07868421052631598,
+          "previous_b": 0.09868421052631605,
+          "progress_jerk": -5.000000000000019,
+          "cap": 5.0
+        },
+        {
+          "kind": "b_or_progress_jerk",
+          "cell": 11,
+          "tick": 37,
+          "b": 0.03868421052631575,
+          "previous_b": 0.058684210526316026,
+          "progress_jerk": -5.000000000000068,
+          "cap": 5.0
+        },
+        {
+          "kind": "b_or_progress_jerk",
+          "cell": 13,
+          "tick": 51,
+          "b": -0.0013157894736841712,
+          "previous_b": 0.01868421052631591,
+          "progress_jerk": -5.0000000000000195,
+          "cap": 5.0
+        },
+        {
+          "kind": "b_or_progress_jerk",
+          "cell": 14,
+          "tick": 61,
+          "b": -0.02131578947368424,
+          "previous_b": -0.0013157894736841712,
+          "progress_jerk": -5.000000000000017,
+          "cap": 5.0
+        },
+        {
+          "kind": "half_progress_domain",
+          "cell": 18,
+          "tick": 160,
+          "half": 2,
+          "s": 0.004992160000000011,
+          "r": -1.691355389077387e-17
+        },
+        {
+          "kind": "recursive_progress_domain",
+          "cell": 18,
+          "tick": 160,
+          "s": 0.004992160000000013,
+          "r": -1.7320129705455933e-17
+        },
+        {
+          "kind": "b_or_progress_jerk",
+          "cell": 19,
+          "tick": 161,
+          "b": 0.0,
+          "previous_b": -0.020000000000000375,
+          "progress_jerk": 5.000000000000093,
+          "cap": 5.0
+        },
+        {
+          "kind": "half_progress_domain",
+          "cell": 19,
+          "tick": 161,
+          "half": 1,
+          "s": 0.004992160000000013,
+          "r": -1.7320129705455933e-17
+        },
+        {
+          "kind": "half_progress_domain",
+          "cell": 19,
+          "tick": 161,
+          "half": 2,
+          "s": 0.004992160000000013,
+          "r": -1.7320129705455933e-17
+        },
+        {
+          "kind": "recursive_progress_domain",
+          "cell": 19,
+          "tick": 161,
+          "s": 0.004992160000000013,
+          "r": -1.7320129705455933e-17
+        },
+        {
+          "kind": "half_progress_domain",
+          "cell": 19,
+          "tick": 162,
+          "half": 1,
+          "s": 0.004992160000000013,
+          "r": -1.7320129705455933e-17
+        },
+        {
+          "kind": "half_progress_domain",
+          "cell": 19,
+          "tick": 162,
+          "half": 2,
+          "s": 0.004992160000000013,
+          "r": -1.7320129705455933e-17
+        },
+        {
+          "kind": "recursive_progress_domain",
+          "cell": 19,
+          "tick": 162,
+          "s": 0.004992160000000013,
+          "r": -1.7320129705455933e-17
+        },
+        {
+          "kind": "half_progress_domain",
+          "cell": 19,
+          "tick": 163,
+          "half": 1,
+          "s": 0.004992160000000013,
+          "r": -1.7320129705455933e-17
+        },
+        {
+          "kind": "half_progress_domain",
+          "cell": 19,
+          "tick": 163,
+          "half": 2,
+          "s": 0.004992160000000013,
+          "r": -1.7320129705455933e-17
+        },
+        {
+          "kind": "recursive_progress_domain",
+          "cell": 19,
+          "tick": 163,
+          "s": 0.004992160000000013,
+          "r": -1.7320129705455933e-17
+        },
+        {
+          "kind": "half_progress_domain",
+          "cell": 19,
+          "tick": 164,
+          "half": 1,
+          "s": 0.004992160000000013,
+          "r": -1.7320129705455933e-17
+        },
+        {
+          "kind": "half_progress_domain",
+          "cell": 19,
+          "tick": 164,
+          "half": 2,
+          "s": 0.004992160000000013,
+          "r": -1.7320129705455933e-17
+        },
+        {
+          "kind": "recursive_progress_domain",
+          "cell": 19,
+          "tick": 164,
+          "s": 0.004992160000000013,
+          "r": -1.7320129705455933e-17
+        },
+        {
+          "kind": "half_progress_domain",
+          "cell": 19,
+          "tick": 165,
+          "half": 1,
+          "s": 0.004992160000000013,
+          "r": -1.7320129705455933e-17
+        },
+        {
+          "kind": "half_progress_domain",
+          "cell": 19,
+          "tick": 165,
+          "half": 2,
+          "s": 0.004992160000000013,
+          "r": -1.7320129705455933e-17
+        },
+        {
+          "kind": "recursive_progress_domain",
+          "cell": 19,
+          "tick": 165,
+          "s": 0.004992160000000013,
+          "r": -1.7320129705455933e-17
+        },
+        {
+          "kind": "half_progress_domain",
+          "cell": 19,
+          "tick": 166,
+          "half": 1,
+          "s": 0.004992160000000013,
+          "r": -1.7320129705455933e-17
+        },
+        {
+          "kind": "half_progress_domain",
+          "cell": 19,
+          "tick": 166,
+          "half": 2,
+          "s": 0.004992160000000013,
+          "r": -1.7320129705455933e-17
+        },
+        {
+          "kind": "recursive_progress_domain",
+          "cell": 19,
+          "tick": 166,
+          "s": 0.004992160000000013,
+          "r": -1.7320129705455933e-17
+        },
+        {
+          "kind": "half_progress_domain",
+          "cell": 19,
+          "tick": 167,
+          "half": 1,
+          "s": 0.004992160000000012,
+          "r": -1.7320129705455933e-17
+        },
+        {
+          "kind": "half_progress_domain",
+          "cell": 19,
+          "tick": 167,
+          "half": 2,
+          "s": 0.004992160000000012,
+          "r": -1.7320129705455933e-17
+        },
+        {
+          "kind": "recursive_progress_domain",
+          "cell": 19,
+          "tick": 167,
+          "s": 0.004992160000000013,
+          "r": -1.7320129705455933e-17
+        },
+        {
+          "kind": "half_progress_domain",
+          "cell": 19,
+          "tick": 168,
+          "half": 1,
+          "s": 0.004992160000000012,
+          "r": -1.7320129705455933e-17
+        },
+        {
+          "kind": "half_progress_domain",
+          "cell": 19,
+          "tick": 168,
+          "half": 2,
+          "s": 0.004992160000000012,
+          "r": -1.7320129705455933e-17
+        },
+        {
+          "kind": "recursive_progress_domain",
+          "cell": 19,
+          "tick": 168,
+          "s": 0.004992160000000013,
+          "r": -1.7320129705455933e-17
+        },
+        {
+          "kind": "half_progress_domain",
+          "cell": 19,
+          "tick": 169,
+          "half": 1,
+          "s": 0.004992160000000012,
+          "r": -1.7320129705455933e-17
+        },
+        {
+          "kind": "half_progress_domain",
+          "cell": 19,
+          "tick": 169,
+          "half": 2,
+          "s": 0.004992160000000012,
+          "r": -1.7320129705455933e-17
+        },
+        {
+          "kind": "recursive_progress_domain",
+          "cell": 19,
+          "tick": 169,
+          "s": 0.004992160000000013,
+          "r": -1.7320129705455933e-17
+        },
+        {
+          "kind": "half_progress_domain",
+          "cell": 19,
+          "tick": 170,
+          "half": 1,
+          "s": 0.004992160000000012,
+          "r": -1.7320129705455933e-17
+        },
+        {
+          "kind": "half_progress_domain",
+          "cell": 19,
+          "tick": 170,
+          "half": 2,
+          "s": 0.004992160000000012,
+          "r": -1.7320129705455933e-17
+        },
+        {
+          "kind": "recursive_progress_domain",
+          "cell": 19,
+          "tick": 170,
+          "s": 0.004992160000000013,
+          "r": -1.7320129705455933e-17
+        },
+        {
+          "kind": "half_progress_domain",
+          "cell": 19,
+          "tick": 171,
+          "half": 1,
+          "s": 0.004992160000000012,
+          "r": -1.7320129705455933e-17
+        },
+        {
+          "kind": "half_progress_domain",
+          "cell": 19,
+          "tick": 171,
+          "half": 2,
+          "s": 0.004992160000000012,
+          "r": -1.7320129705455933e-17
+        },
+        {
+          "kind": "recursive_progress_domain",
+          "cell": 19,
+          "tick": 171,
+          "s": 0.004992160000000013,
+          "r": -1.7320129705455933e-17
+        },
+        {
+          "kind": "half_progress_domain",
+          "cell": 19,
+          "tick": 172,
+          "half": 1,
+          "s": 0.004992160000000012,
+          "r": -1.7320129705455933e-17
+        },
+        {
+          "kind": "half_progress_domain",
+          "cell": 19,
+          "tick": 172,
+          "half": 2,
+          "s": 0.004992160000000012,
+          "r": -1.7320129705455933e-17
+        },
+        {
+          "kind": "recursive_progress_domain",
+          "cell": 19,
+          "tick": 172,
+          "s": 0.004992160000000013,
+          "r": -1.7320129705455933e-17
+        },
+        {
+          "kind": "half_progress_domain",
+          "cell": 19,
+          "tick": 173,
+          "half": 1,
+          "s": 0.004992160000000012,
+          "r": -1.7320129705455933e-17
+        },
+        {
+          "kind": "half_progress_domain",
+          "cell": 19,
+          "tick": 173,
+          "half": 2,
+          "s": 0.004992160000000012,
+          "r": -1.7320129705455933e-17
+        },
+        {
+          "kind": "recursive_progress_domain",
+          "cell": 19,
+          "tick": 173,
+          "s": 0.004992160000000013,
+          "r": -1.7320129705455933e-17
+        },
+        {
+          "kind": "half_progress_domain",
+          "cell": 19,
+          "tick": 174,
+          "half": 1,
+          "s": 0.004992160000000012,
+          "r": -1.7320129705455933e-17
+        },
+        {
+          "kind": "half_progress_domain",
+          "cell": 19,
+          "tick": 174,
+          "half": 2,
+          "s": 0.004992160000000012,
+          "r": -1.7320129705455933e-17
+        },
+        {
+          "kind": "recursive_progress_domain",
+          "cell": 19,
+          "tick": 174,
+          "s": 0.004992160000000013,
+          "r": -1.7320129705455933e-17
+        },
+        {
+          "kind": "half_progress_domain",
+          "cell": 19,
+          "tick": 175,
+          "half": 1,
+          "s": 0.004992160000000012,
+          "r": -1.7320129705455933e-17
+        },
+        {
+          "kind": "half_progress_domain",
+          "cell": 19,
+          "tick": 175,
+          "half": 2,
+          "s": 0.004992160000000012,
+          "r": -1.7320129705455933e-17
+        },
+        {
+          "kind": "recursive_progress_domain",
+          "cell": 19,
+          "tick": 175,
+          "s": 0.004992160000000013,
+          "r": -1.7320129705455933e-17
+        },
+        {
+          "kind": "half_progress_domain",
+          "cell": 19,
+          "tick": 176,
+          "half": 1,
+          "s": 0.004992160000000012,
+          "r": -1.7320129705455933e-17
+        },
+        {
+          "kind": "half_progress_domain",
+          "cell": 19,
+          "tick": 176,
+          "half": 2,
+          "s": 0.004992160000000012,
+          "r": -1.7320129705455933e-17
+        },
+        {
+          "kind": "recursive_progress_domain",
+          "cell": 19,
+          "tick": 176,
+          "s": 0.004992160000000013,
+          "r": -1.7320129705455933e-17
+        },
+        {
+          "kind": "half_progress_domain",
+          "cell": 19,
+          "tick": 177,
+          "half": 1,
+          "s": 0.004992160000000012,
+          "r": -1.7320129705455933e-17
+        },
+        {
+          "kind": "half_progress_domain",
+          "cell": 19,
+          "tick": 177,
+          "half": 2,
+          "s": 0.004992160000000012,
+          "r": -1.7320129705455933e-17
+        },
+        {
+          "kind": "recursive_progress_domain",
+          "cell": 19,
+          "tick": 177,
+          "s": 0.004992160000000013,
+          "r": -1.7320129705455933e-17
+        },
+        {
+          "kind": "half_progress_domain",
+          "cell": 19,
+          "tick": 178,
+          "half": 1,
+          "s": 0.004992160000000012,
+          "r": -1.7320129705455933e-17
+        },
+        {
+          "kind": "half_progress_domain",
+          "cell": 19,
+          "tick": 178,
+          "half": 2,
+          "s": 0.004992160000000012,
+          "r": -1.7320129705455933e-17
+        },
+        {
+          "kind": "recursive_progress_domain",
+          "cell": 19,
+          "tick": 178,
+          "s": 0.004992160000000013,
+          "r": -1.7320129705455933e-17
+        },
+        {
+          "kind": "half_progress_domain",
+          "cell": 19,
+          "tick": 179,
+          "half": 1,
+          "s": 0.004992160000000012,
+          "r": -1.7320129705455933e-17
+        },
+        {
+          "kind": "half_progress_domain",
+          "cell": 19,
+          "tick": 179,
+          "half": 2,
+          "s": 0.004992160000000011,
+          "r": -1.7320129705455933e-17
+        },
+        {
+          "kind": "recursive_progress_domain",
+          "cell": 19,
+          "tick": 179,
+          "s": 0.004992160000000013,
+          "r": -1.7320129705455933e-17
+        },
+        {
+          "kind": "half_progress_domain",
+          "cell": 19,
+          "tick": 180,
+          "half": 1,
+          "s": 0.004992160000000011,
+          "r": -1.7320129705455933e-17
+        },
+        {
+          "kind": "half_progress_domain",
+          "cell": 19,
+          "tick": 180,
+          "half": 2,
+          "s": 0.004992160000000011,
+          "r": -1.7320129705455933e-17
+        },
+        {
+          "kind": "recursive_progress_domain",
+          "cell": 19,
+          "tick": 180,
+          "s": 0.004992160000000013,
+          "r": -1.7320129705455933e-17
+        },
+        {
+          "kind": "half_progress_domain",
+          "cell": 19,
+          "tick": 181,
+          "half": 1,
+          "s": 0.004992160000000011,
+          "r": -1.7320129705455933e-17
+        },
+        {
+          "kind": "half_progress_domain",
+          "cell": 19,
+          "tick": 181,
+          "half": 2,
+          "s": 0.004992160000000011,
+          "r": -1.7320129705455933e-17
+        },
+        {
+          "kind": "recursive_progress_domain",
+          "cell": 19,
+          "tick": 181,
+          "s": 0.004992160000000013,
+          "r": -1.7320129705455933e-17
+        },
+        {
+          "kind": "half_progress_domain",
+          "cell": 19,
+          "tick": 182,
+          "half": 1,
+          "s": 0.004992160000000011,
+          "r": -1.7320129705455933e-17
+        },
+        {
+          "kind": "half_progress_domain",
+          "cell": 19,
+          "tick": 182,
+          "half": 2,
+          "s": 0.004992160000000011,
+          "r": -1.7320129705455933e-17
+        },
+        {
+          "kind": "recursive_progress_domain",
+          "cell": 19,
+          "tick": 182,
+          "s": 0.004992160000000013,
+          "r": -1.7320129705455933e-17
+        },
+        {
+          "kind": "half_progress_domain",
+          "cell": 19,
+          "tick": 183,
+          "half": 1,
+          "s": 0.004992160000000011,
+          "r": -1.7320129705455933e-17
+        },
+        {
+          "kind": "half_progress_domain",
+          "cell": 19,
+          "tick": 183,
+          "half": 2,
+          "s": 0.004992160000000011,
+          "r": -1.7320129705455933e-17
+        },
+        {
+          "kind": "recursive_progress_domain",
+          "cell": 19,
+          "tick": 183,
+          "s": 0.004992160000000013,
+          "r": -1.7320129705455933e-17
+        },
+        {
+          "kind": "half_progress_domain",
+          "cell": 19,
+          "tick": 184,
+          "half": 1,
+          "s": 0.004992160000000011,
+          "r": -1.7320129705455933e-17
+        },
+        {
+          "kind": "half_progress_domain",
+          "cell": 19,
+          "tick": 184,
+          "half": 2,
+          "s": 0.004992160000000011,
+          "r": -1.7320129705455933e-17
+        },
+        {
+          "kind": "recursive_progress_domain",
+          "cell": 19,
+          "tick": 184,
+          "s": 0.004992160000000013,
+          "r": -1.7320129705455933e-17
+        },
+        {
+          "kind": "half_progress_domain",
+          "cell": 19,
+          "tick": 185,
+          "half": 1,
+          "s": 0.004992160000000011,
+          "r": -1.7320129705455933e-17
+        },
+        {
+          "kind": "half_progress_domain",
+          "cell": 19,
+          "tick": 185,
+          "half": 2,
+          "s": 0.004992160000000011,
+          "r": -1.7320129705455933e-17
+        },
+        {
+          "kind": "recursive_progress_domain",
+          "cell": 19,
+          "tick": 185,
+          "s": 0.004992160000000013,
+          "r": -1.7320129705455933e-17
+        },
+        {
+          "kind": "half_progress_domain",
+          "cell": 19,
+          "tick": 186,
+          "half": 1,
+          "s": 0.004992160000000011,
+          "r": -1.7320129705455933e-17
+        },
+        {
+          "kind": "half_progress_domain",
+          "cell": 19,
+          "tick": 186,
+          "half": 2,
+          "s": 0.004992160000000011,
+          "r": -1.7320129705455933e-17
+        },
+        {
+          "kind": "recursive_progress_domain",
+          "cell": 19,
+          "tick": 186,
+          "s": 0.004992160000000013,
+          "r": -1.7320129705455933e-17
+        },
+        {
+          "kind": "half_progress_domain",
+          "cell": 19,
+          "tick": 187,
+          "half": 1,
+          "s": 0.004992160000000011,
+          "r": -1.7320129705455933e-17
+        },
+        {
+          "kind": "half_progress_domain",
+          "cell": 19,
+          "tick": 187,
+          "half": 2,
+          "s": 0.004992160000000011,
+          "r": -1.7320129705455933e-17
+        },
+        {
+          "kind": "recursive_progress_domain",
+          "cell": 19,
+          "tick": 187,
+          "s": 0.004992160000000013,
+          "r": -1.7320129705455933e-17
+        },
+        {
+          "kind": "half_progress_domain",
+          "cell": 19,
+          "tick": 188,
+          "half": 1,
+          "s": 0.004992160000000011,
+          "r": -1.7320129705455933e-17
+        },
+        {
+          "kind": "half_progress_domain",
+          "cell": 19,
+          "tick": 188,
+          "half": 2,
+          "s": 0.004992160000000011,
+          "r": -1.7320129705455933e-17
+        },
+        {
+          "kind": "recursive_progress_domain",
+          "cell": 19,
+          "tick": 188,
+          "s": 0.004992160000000013,
+          "r": -1.7320129705455933e-17
+        },
+        {
+          "kind": "half_progress_domain",
+          "cell": 19,
+          "tick": 189,
+          "half": 1,
+          "s": 0.004992160000000011,
+          "r": -1.7320129705455933e-17
+        },
+        {
+          "kind": "half_progress_domain",
+          "cell": 19,
+          "tick": 189,
+          "half": 2,
+          "s": 0.004992160000000011,
+          "r": -1.7320129705455933e-17
+        },
+        {
+          "kind": "recursive_progress_domain",
+          "cell": 19,
+          "tick": 189,
+          "s": 0.004992160000000013,
+          "r": -1.7320129705455933e-17
+        },
+        {
+          "kind": "half_progress_domain",
+          "cell": 19,
+          "tick": 190,
+          "half": 1,
+          "s": 0.004992160000000011,
+          "r": -1.7320129705455933e-17
+        },
+        {
+          "kind": "half_progress_domain",
+          "cell": 19,
+          "tick": 190,
+          "half": 2,
+          "s": 0.004992160000000011,
+          "r": -1.7320129705455933e-17
+        },
+        {
+          "kind": "recursive_progress_domain",
+          "cell": 19,
+          "tick": 190,
+          "s": 0.004992160000000013,
+          "r": -1.7320129705455933e-17
+        },
+        {
+          "kind": "half_progress_domain",
+          "cell": 19,
+          "tick": 191,
+          "half": 1,
+          "s": 0.004992160000000011,
+          "r": -1.7320129705455933e-17
+        },
+        {
+          "kind": "half_progress_domain",
+          "cell": 19,
+          "tick": 191,
+          "half": 2,
+          "s": 0.004992160000000011,
+          "r": -1.7320129705455933e-17
+        },
+        {
+          "kind": "recursive_progress_domain",
+          "cell": 19,
+          "tick": 191,
+          "s": 0.004992160000000013,
+          "r": -1.7320129705455933e-17
+        },
+        {
+          "kind": "half_progress_domain",
+          "cell": 19,
+          "tick": 192,
+          "half": 1,
+          "s": 0.00499216000000001,
+          "r": -1.7320129705455933e-17
+        },
+        {
+          "kind": "half_progress_domain",
+          "cell": 19,
+          "tick": 192,
+          "half": 2,
+          "s": 0.00499216000000001,
+          "r": -1.7320129705455933e-17
+        },
+        {
+          "kind": "recursive_progress_domain",
+          "cell": 19,
+          "tick": 192,
+          "s": 0.004992160000000013,
+          "r": -1.7320129705455933e-17
+        },
+        {
+          "kind": "half_progress_domain",
+          "cell": 19,
+          "tick": 193,
+          "half": 1,
+          "s": 0.00499216000000001,
+          "r": -1.7320129705455933e-17
+        },
+        {
+          "kind": "half_progress_domain",
+          "cell": 19,
+          "tick": 193,
+          "half": 2,
+          "s": 0.00499216000000001,
+          "r": -1.7320129705455933e-17
+        },
+        {
+          "kind": "recursive_progress_domain",
+          "cell": 19,
+          "tick": 193,
+          "s": 0.004992160000000013,
+          "r": -1.7320129705455933e-17
+        },
+        {
+          "kind": "half_progress_domain",
+          "cell": 19,
+          "tick": 194,
+          "half": 1,
+          "s": 0.00499216000000001,
+          "r": -1.7320129705455933e-17
+        },
+        {
+          "kind": "half_progress_domain",
+          "cell": 19,
+          "tick": 194,
+          "half": 2,
+          "s": 0.00499216000000001,
+          "r": -1.7320129705455933e-17
+        },
+        {
+          "kind": "recursive_progress_domain",
+          "cell": 19,
+          "tick": 194,
+          "s": 0.004992160000000013,
+          "r": -1.7320129705455933e-17
+        },
+        {
+          "kind": "half_progress_domain",
+          "cell": 19,
+          "tick": 195,
+          "half": 1,
+          "s": 0.00499216000000001,
+          "r": -1.7320129705455933e-17
+        },
+        {
+          "kind": "half_progress_domain",
+          "cell": 19,
+          "tick": 195,
+          "half": 2,
+          "s": 0.00499216000000001,
+          "r": -1.7320129705455933e-17
+        },
+        {
+          "kind": "recursive_progress_domain",
+          "cell": 19,
+          "tick": 195,
+          "s": 0.004992160000000013,
+          "r": -1.7320129705455933e-17
+        },
+        {
+          "kind": "half_progress_domain",
+          "cell": 19,
+          "tick": 196,
+          "half": 1,
+          "s": 0.00499216000000001,
+          "r": -1.7320129705455933e-17
+        },
+        {
+          "kind": "half_progress_domain",
+          "cell": 19,
+          "tick": 196,
+          "half": 2,
+          "s": 0.00499216000000001,
+          "r": -1.7320129705455933e-17
+        },
+        {
+          "kind": "recursive_progress_domain",
+          "cell": 19,
+          "tick": 196,
+          "s": 0.004992160000000013,
+          "r": -1.7320129705455933e-17
+        },
+        {
+          "kind": "half_progress_domain",
+          "cell": 19,
+          "tick": 197,
+          "half": 1,
+          "s": 0.00499216000000001,
+          "r": -1.7320129705455933e-17
+        },
+        {
+          "kind": "half_progress_domain",
+          "cell": 19,
+          "tick": 197,
+          "half": 2,
+          "s": 0.00499216000000001,
+          "r": -1.7320129705455933e-17
+        },
+        {
+          "kind": "recursive_progress_domain",
+          "cell": 19,
+          "tick": 197,
+          "s": 0.004992160000000013,
+          "r": -1.7320129705455933e-17
+        },
+        {
+          "kind": "half_progress_domain",
+          "cell": 19,
+          "tick": 198,
+          "half": 1,
+          "s": 0.00499216000000001,
+          "r": -1.7320129705455933e-17
+        },
+        {
+          "kind": "half_progress_domain",
+          "cell": 19,
+          "tick": 198,
+          "half": 2,
+          "s": 0.00499216000000001,
+          "r": -1.7320129705455933e-17
+        },
+        {
+          "kind": "recursive_progress_domain",
+          "cell": 19,
+          "tick": 198,
+          "s": 0.004992160000000013,
+          "r": -1.7320129705455933e-17
+        },
+        {
+          "kind": "half_progress_domain",
+          "cell": 19,
+          "tick": 199,
+          "half": 1,
+          "s": 0.00499216000000001,
+          "r": -1.7320129705455933e-17
+        },
+        {
+          "kind": "half_progress_domain",
+          "cell": 19,
+          "tick": 199,
+          "half": 2,
+          "s": 0.00499216000000001,
+          "r": -1.7320129705455933e-17
+        },
+        {
+          "kind": "recursive_progress_domain",
+          "cell": 19,
+          "tick": 199,
+          "s": 0.004992160000000013,
+          "r": -1.7320129705455933e-17
+        },
+        {
+          "kind": "half_progress_domain",
+          "cell": 19,
+          "tick": 200,
+          "half": 1,
+          "s": 0.00499216000000001,
+          "r": -1.7320129705455933e-17
+        },
+        {
+          "kind": "half_progress_domain",
+          "cell": 19,
+          "tick": 200,
+          "half": 2,
+          "s": 0.00499216000000001,
+          "r": -1.7320129705455933e-17
+        },
+        {
+          "kind": "recursive_progress_domain",
+          "cell": 19,
+          "tick": 200,
+          "s": 0.004992160000000013,
+          "r": -1.7320129705455933e-17
+        }
+      ],
+      "literal_max_command_jerk": 9.893212350488147,
+      "literal_final_w": [
+        -4.119968255444917e-18,
+        -7.657177843178875e-18,
+        -4.30970363562988e-18,
+        7.399679827213568e-18,
+        3.5101045334218206e-18,
+        -4.865357249028701e-18,
+        1.6940658945086007e-20
+      ],
+      "literal_final_r": -1.7320129705455933e-17,
+      "last_alpha": [
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "last_b": 0.0,
+      "exact_zero_tail": false,
+      "cycles": 200,
+      "literal_C": [
+        -1.24646746625803,
+        0.09398734654269893,
+        1.1567199017142291,
+        -2.77996750044261,
+        -0.09694438678458234,
+        4.38724622948658,
+        -1.629006816636328
+      ]
+    },
+    "literal_history_PASS": false,
+    "not_candidate_or_native_SOLVED": true,
+    "newA3_requires_fresh_full_matrix_and_actual_history_identity_before_guess_use": true
+  },
+  "completion": {
+    "stage": "ONE_ACTIVE_OFFLINE_SOLVER",
+    "error": "only SOLVED admits candidate; native status retained",
+    "boundary_same": 1,
+    "session_termination": 1,
+    "session_failure": "",
+    "native_termination": 1,
+    "native_failure": "",
+    "wall": 29.950467011,
+    "actual_steps": 1000,
+    "task_commits": 0
+  },
+  "first_XML_body_failure_preserved": {
+    "stage": "SESSION_STARTUP_MODEL_METADATA_SDK",
+    "error": "No such node (body)",
+    "boundary_same": 1,
+    "session_termination": 0,
+    "session_failure": "no session created",
+    "native_termination": 1,
+    "native_failure": "",
+    "wall": 11.520878373,
+    "actual_steps": 1000,
+    "task_commits": 0
+  },
+  "Model_native_solver_calls": 0,
+  "phase5": "NOT_ACCEPTED",
+  "elapsed_seconds": 0.8961672079749405,
+  "all_original_receipts_and_binary_roles_verified": 12,
+  "actual_bootstrap_counters_load_make_reset_forward_copy_getstate_observations_steps_commits": [
+    1,
+    2,
+    1,
+    1004,
+    1002,
+    2004,
+    2,
+    1000,
+    0
+  ]
+}

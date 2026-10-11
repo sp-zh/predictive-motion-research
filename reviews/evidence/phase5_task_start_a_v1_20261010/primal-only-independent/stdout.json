@@ -1,0 +1,53 @@
+{
+  "scope": "ACTUAL_A3_EXTERNAL_PRIMAL_WARM_FAILURE_FILE_AND_SEPARATE_API_REVIEW_ONLY",
+  "source_sha256": "9a5d36f48f0f841b9ba5c528c942daa5c9f160bf02814d31ac3b10772ca2a5ff",
+  "packet_files": 128,
+  "packet_bytes": 72084442,
+  "source_snapshot_files": 22,
+  "legacy_solveOnce_body_byte_preserved": true,
+  "forensic_backend_byte_preserved": true,
+  "new_API": "solveOnceWithNumericGuess",
+  "warmup_binary_and_journal_bit_identical_A2": true,
+  "actual_state_history_and_400nominal_map_result_bytes_exact_A2": true,
+  "all_original_and_transformed_array_values_exact_A2_except_solver_seed": true,
+  "guess_file_bytes": 5262,
+  "finite_shape144_verified": true,
+  "generic_loader_byte_cap_NOT_present": true,
+  "fulloriginal_and_scaled_digests": [
+    "47b33fe5ae43ae90b351a83fc7caba18ab960e076d570ff7c0dd1685d3eceab4",
+    "4605e2647e35d27677e755554493cd569ff79feb9c235ed8432bf07af8b4cad3"
+  ],
+  "actual_recorded_solver_seed_equals_external_guess": true,
+  "guess_is_not_old_unsolved_iterate": true,
+  "runtime_before_after_exact": true,
+  "actual_result": {
+    "status": 6,
+    "raw_status": 7,
+    "iterations": 20000,
+    "setup_seconds": 0.033494029,
+    "solve_seconds": 16.633478268,
+    "primal_transformed": 2.2522257367857013e-08,
+    "dual_transformed": 1.8928696360331898e-08,
+    "rho_updates": 10,
+    "rho_estimate": 0.20518410509480392,
+    "usable_count": 0,
+    "original_SI_rows_scanned": 0,
+    "collector_fullSI": "UNMEASURED",
+    "preview": 0,
+    "tail": 0,
+    "request": 0,
+    "steps_warmup": 1000,
+    "task_commits": 0,
+    "stop": "only SOLVED admits candidate; native status retained"
+  },
+  "new_forensic_unusable_only": {
+    "max_original_violation": 1.1794993062252956e-06,
+    "row": 15,
+    "label": "feedback_jerk/0/7",
+    "rows_over1e_7": 14
+  },
+  "prior_algebra_proof_READY_sha256": "a7cecbf2181485032cbf52af5090ce6be7321a7742d4219923a93add8068b099",
+  "no_B_or_new_model_evaluation": true,
+  "native_model_solver_calls": 0,
+  "phase5": "NOT_ACCEPTED"
+}
