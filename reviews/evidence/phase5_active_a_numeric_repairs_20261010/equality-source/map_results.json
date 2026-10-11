@@ -1,0 +1,292 @@
+{
+  "scope": "READ_ONLY_REPAIR12_SOURCE_PLUS_ACTUAL_REPAIR6_MATRIX_MAP_CHECK_NOT_NATIVE_REPAIR12_OUTPUT",
+  "source_sha256": "334562662bf57343c8d8cf7afeeb31cded2a04660e99909c158e167e00835219",
+  "source_manifest_sha256": "6609b307f239a80ac41afac5cf13822b249bd1f5c72c1f50337e5e124ff20aab",
+  "source_manifest": {
+    "active_input_v1.json": {
+      "bytes": 322033,
+      "sha256": "b5a67a325a677a73bb620d338ed4472cf2333d4c0bbbf5bc08b0e1443e6cb52e"
+    },
+    "src/active_first_cycle.cpp": {
+      "bytes": 13207,
+      "sha256": "faa44a70dc6a6c5fbc9a29648683aeaf8821f95ceaf3b45fb4f8c8839c3b9c79"
+    },
+    "src/affine_assembly.cpp": {
+      "bytes": 28981,
+      "sha256": "d478eda1f0fe97bfc41851515f4baa3e485fd4a57968a62dcb6233ae1157bbd5"
+    },
+    "src/affine_assembly.hpp": {
+      "bytes": 6026,
+      "sha256": "6faee2961242052c7655da41e8988dd0844f14c3cfa885672aa7c03eaa1dcb57"
+    },
+    "src/box_screen_tests.cpp": {
+      "bytes": 2954,
+      "sha256": "d922876babec2867dd1293bcee259ac12e4b2a6af5a30dd551209e097c0abaf8"
+    },
+    "src/integrated_horizon_qp.cpp": {
+      "bytes": 33912,
+      "sha256": "34fc04ec81c8ae7715e5031c3cca04e82130441566cb9b38a5ae41fc6f96e373"
+    },
+    "src/integrated_horizon_qp.hpp": {
+      "bytes": 9361,
+      "sha256": "86b1a0e2be598f5180dbb0e9fe64f39a21fb841453d79180d07241ed20798c57"
+    },
+    "src/invariant_tests.cpp": {
+      "bytes": 4721,
+      "sha256": "f5a859d4cf9d79a5ae1b533b8dd62776f2bba6599dfdf691a2915ef3296a33f9"
+    },
+    "src/linear_box_screen.hpp": {
+      "bytes": 3916,
+      "sha256": "b649eff43293a3078b7b46a0166fa0f8a2ac59f3a8496c8c73a98c275fed96d1"
+    },
+    "src/lossless_evidence.cpp": {
+      "bytes": 14600,
+      "sha256": "9609fab7b29b7de2c72f266f4020a49289fc429ba520a7124c876c92c05b8633"
+    },
+    "src/lossless_evidence.hpp": {
+      "bytes": 1817,
+      "sha256": "47703a81c47d04a3e22e3108c27b77447ec812b74995d030f0570ce2e1bd95a4"
+    },
+    "src/model_boundary.cpp": {
+      "bytes": 14091,
+      "sha256": "04c94821ee57669431b8c7bceac1d66004fdfc8af11424008e89890a7486630a"
+    },
+    "src/model_boundary.hpp": {
+      "bytes": 2528,
+      "sha256": "51b2e845860fb4faecfc95b7f9873439ab4e682adce37a290e6fe704ee48a9d9"
+    },
+    "src/normalization.cpp": {
+      "bytes": 23976,
+      "sha256": "a0cd0c9cdb505f922f1744f24cf115057b6ba9f3a9bc1b3ed0c9bdb82d358ed5"
+    },
+    "src/normalization.hpp": {
+      "bytes": 4288,
+      "sha256": "9456be5c205f23d2aa2210eac02286d030204a446af003ee85362b971ccb43d8"
+    },
+    "src/observer_tests.cpp": {
+      "bytes": 3785,
+      "sha256": "d1ff998984981a5ded1e92b8d452503e8b489ecfb0d067fb04ff5fd616d02877"
+    },
+    "src/runtime_observer.cpp": {
+      "bytes": 6658,
+      "sha256": "66a659f856d2fcebd220892a405500d98c6076a6e9d4655a66866d6fb10ab65d"
+    },
+    "src/runtime_observer.hpp": {
+      "bytes": 3308,
+      "sha256": "0c43675ce98339a1030bc9625a248b61dd5bbfc0b2a9f8c135183d66da069cf1"
+    },
+    "src/session_primitives.hpp": {
+      "bytes": 2259,
+      "sha256": "0b76bc232ed81dc9b4831617ae1690cfc287def914b8bca5f05ce6e6e25b6080"
+    },
+    "src/task_local_provider.cpp": {
+      "bytes": 1839,
+      "sha256": "051b424236979f9fe7ea4cb96564f54969025c997bfba2c61d347a23f7fbae4c"
+    },
+    "src/task_local_provider.hpp": {
+      "bytes": 640,
+      "sha256": "1819e2f626fb0ff65ad7e7e8de0b0b52f625e6bf435b073d7cca55722d76f093"
+    }
+  },
+  "matrix_identity": {
+    "bytes": 19485833,
+    "sha256": "6cddbd19e4a25dba53ca20e389ff2cf42b75283be39eea8812f103417da77fb1"
+  },
+  "old_actual_matrix_source": "repair6; not claimed actual repair12 reduction artifact",
+  "equality_original_indices": [
+    4341,
+    4343,
+    4345,
+    4347,
+    4349,
+    4351,
+    4353,
+    4355,
+    4340,
+    4342,
+    4344,
+    4346,
+    4348,
+    4350,
+    4352,
+    4354
+  ],
+  "reduced_dimension": 144,
+  "pivot_columns": [
+    144,
+    145,
+    146,
+    147,
+    148,
+    149,
+    150,
+    151
+  ],
+  "free_columns": [
+    0,
+    1,
+    2,
+    3,
+    4,
+    5,
+    6,
+    7,
+    8,
+    9,
+    10,
+    11,
+    12,
+    13,
+    14,
+    15,
+    16,
+    17,
+    18,
+    19,
+    20,
+    21,
+    22,
+    23,
+    24,
+    25,
+    26,
+    27,
+    28,
+    29,
+    30,
+    31,
+    32,
+    33,
+    34,
+    35,
+    36,
+    37,
+    38,
+    39,
+    40,
+    41,
+    42,
+    43,
+    44,
+    45,
+    46,
+    47,
+    48,
+    49,
+    50,
+    51,
+    52,
+    53,
+    54,
+    55,
+    56,
+    57,
+    58,
+    59,
+    60,
+    61,
+    62,
+    63,
+    64,
+    65,
+    66,
+    67,
+    68,
+    69,
+    70,
+    71,
+    72,
+    73,
+    74,
+    75,
+    76,
+    77,
+    78,
+    79,
+    80,
+    81,
+    82,
+    83,
+    84,
+    85,
+    86,
+    87,
+    88,
+    89,
+    90,
+    91,
+    92,
+    93,
+    94,
+    95,
+    96,
+    97,
+    98,
+    99,
+    100,
+    101,
+    102,
+    103,
+    104,
+    105,
+    106,
+    107,
+    108,
+    109,
+    110,
+    111,
+    112,
+    113,
+    114,
+    115,
+    116,
+    117,
+    118,
+    119,
+    120,
+    121,
+    122,
+    123,
+    124,
+    125,
+    126,
+    127,
+    128,
+    129,
+    130,
+    131,
+    132,
+    133,
+    134,
+    135,
+    136,
+    137,
+    138,
+    139,
+    140,
+    141,
+    142,
+    143
+  ],
+  "last8_inputs_literal_zero": true,
+  "seed_recovery_max_error": 0.0,
+  "errors": {
+    "nullspace_residual": 4.091964862189873e-18,
+    "particular_residual": 0.0,
+    "span_projector_error": 6.661338147750939e-16,
+    "objective": 7.105427357601002e-15,
+    "gradient": 2.7755575615628914e-17,
+    "original_rows": 1.3877787807814457e-17,
+    "last8_controls": 0.0
+  },
+  "actual_rhs_nonzero": false,
+  "test_vectors": 8,
+  "random_seed": 12102026,
+  "structured_reduced_H_condition": 284.0663045680426,
+  "orthonormal_reduced_H_condition": 134.2664509895154,
+  "factor_offset_recorded_by_producer": false,
+  "factor_offset_independently_reconstructed": true,
+  "solver_calls": 0,
+  "Model_calls": 0,
+  "phase5": "NOT_ACCEPTED"
+}

@@ -1,5 +1,6 @@
 #include "integrated_horizon_qp.hpp"
 #include "linear_box_screen.hpp"
+#include <Eigen/Cholesky>
 #include <algorithm>
 #include <cmath>
 #include <chrono>
@@ -277,18 +278,69 @@ void solveOnce(Outcome& out,const qp::QpOptions& options,CandidateOutcome& candi
   }else s.problem.original_si.state_age_seconds=s.inputs.observed_age_seconds;
   // Offline keeps original historical age. Real elapsed remains separate;
   // source runner must prove no simulation step/command mutation. No mode retry.
-  // Equivalent positive variable/row scaling; original SI arrays and every
+  // Structured equality reduction and equivalent positive row/variable scaling; original SI arrays and every
   // final original-row/rounded-history gate stay unchanged. Fresh workspace.
-  Eigen::VectorXd scale(NZ);
-  for(int j=0;j<NZ;++j){const double diagonal=p.original_si.hessian(j,j);need(std::isfinite(diagonal)&&diagonal>0,"positive objective diagonal required for Jacobi scaling");scale(j)=1/std::sqrt(diagonal);need(std::isfinite(scale(j))&&scale(j)>0,"finite positive Jacobi variable scale");}
   const auto screened=screenLinearInputBoxes(p);
   candidate.retained_solver_rows_=screened.retained_rows;candidate.screening_environment_={static_cast<unsigned>(screened.rounding_mode),screened.x87_control,screened.mxcsr};candidate.omitted_solver_rows_.reserve(screened.omitted_rows.size());
   for(const auto& row:screened.omitted_rows){candidate.omitted_solver_rows_.push_back(row.original_row);std::ostringstream interval;interval<<std::hexfloat<<std::setprecision(std::numeric_limits<long double>::max_digits10)<<row.lower_bound<<" "<<row.upper_bound;candidate.omitted_solver_intervals_.push_back(interval.str());}
-  qp::QpWorkspace workspace;
-  ++candidate.solver_wrapper_entries_; // immediately before actual C++ QP API entry
-  candidate.result_=qp::solveQpScaledWorkspace(screened.solver_problem,options,p.seed,p.psd_factor,scale,workspace,screened.labels);
+  // Analytic terminal equality elimination in original IEEE coefficients.
+  // Mathematical U=p+Z*Y; all floating products/reconstruction are retained,
+  // and every original SI row and strict rounded-history gate remains required.
+  candidate.reduction_.emplace();auto& transform=*candidate.reduction_;
+  constexpr int reduced_n=18*NU;
+  transform.offset=Eigen::VectorXd::Zero(NZ);transform.transform=Eigen::MatrixXd::Zero(NZ,reduced_n);transform.transform.topRows(reduced_n).setIdentity();
+  transform.equalities=Eigen::MatrixXd::Zero(16,NZ);transform.equality_rhs=Eigen::VectorXd::Zero(16);
+  auto find=[&](const std::string& label){int found=-1;for(int r=0;r<static_cast<int>(p.rows.size());++r)if(p.rows[r].label==label){need(found<0,"duplicate terminal equality label");found=r;}need(found>=0,"missing terminal equality");need(p.original_si.lower(found)==p.original_si.upper(found),"terminal row must be original equality");return found;};
+  for(int j=0;j<NU;++j){const auto label=j<7?"terminal/alpha/"+std::to_string(j):"terminal/b";const int r=find(label),col=(N-1)*NU+j;need(p.original_si.lower(r)==0,"terminal final input must be exact zero");
+   for(int k=0;k<NZ;++k)need(p.original_si.constraints(r,k)==(k==col?1.:0.),"terminal final input exact unit row required");
+   transform.eliminated_rows.push_back(r);transform.equalities.row(j)=p.original_si.constraints.row(r);transform.equality_rhs(j)=p.original_si.lower(r);}
+  for(int j=0;j<NU;++j){const auto label=j<7?"terminal/command_w/"+std::to_string(j):"terminal/progress_r";const int r=find(label),pivot=(N-2)*NU+j;const auto row=p.original_si.constraints.row(r);
+   for(int k=0;k<NZ;++k)need(std::isfinite(row(k))&&(k%NU==j||row(k)==0),"terminal equality must have only its own control channel");
+   need(row(pivot)!=0&&std::isfinite(p.original_si.lower(r)),"finite nonzero terminal pivot required");transform.offset(pivot)=p.original_si.lower(r)/row(pivot);
+   for(int k=0;k<reduced_n;++k)transform.transform(pivot,k)=-row(k)/row(pivot);
+   transform.eliminated_rows.push_back(r);transform.equalities.row(NU+j)=row;transform.equality_rhs(NU+j)=p.original_si.lower(r);}
+  need(transform.transform.allFinite()&&transform.offset.allFinite(),"finite analytic equality map/offset");
+  transform.equality_origin_error=(transform.equalities*transform.offset-transform.equality_rhs).cwiseAbs().maxCoeff()/std::max(1.,transform.equality_rhs.cwiseAbs().maxCoeff());
+  transform.equality_map_error=(transform.equalities*transform.transform).cwiseAbs().maxCoeff()/std::max(1.,transform.equalities.cwiseAbs().maxCoeff());
+  need(transform.equality_origin_error<=1e-12&&transform.equality_map_error<=1e-12,"terminal equality numerical reconstruction check");
+  std::set<int> eliminated(transform.eliminated_rows.begin(),transform.eliminated_rows.end());need(eliminated.size()==16,"all16 independent structured terminal equalities required");
+  std::vector<std::string> labels;
+  for(int r:screened.retained_rows)if(!eliminated.count(r)){transform.solver_rows.push_back(r);labels.push_back(p.rows[r].label);}
+  candidate.retained_solver_rows_=transform.solver_rows;
+  transform.stored_numeric_slots=live::checkedAdd(live::checkedMultiply(transform.solver_rows.size(),reduced_n),live::checkedAdd(live::checkedMultiply(p.F.rows(),reduced_n),live::checkedAdd(NZ*reduced_n+reduced_n*reduced_n+16*NZ, NZ+5*reduced_n+16+2*transform.solver_rows.size())));
+  need(transform.stored_numeric_slots<=2000000,"bounded reduction stored numeric payload before dense transformation; temporary storage bounded by external AS");
+  transform.stage="STRUCTURE_VALIDATED_BUILD_REDUCED_QP";
+  qp::QpProblem reduced;reduced.state_age_seconds=screened.solver_problem.state_age_seconds;reduced.hessian=transform.transform.transpose()*p.original_si.hessian*transform.transform;
+  reduced.gradient=transform.transform.transpose()*(p.original_si.gradient+p.original_si.hessian*transform.offset);
+  reduced.constraints.resize(transform.solver_rows.size(),reduced_n);reduced.lower.resize(transform.solver_rows.size());reduced.upper.resize(transform.solver_rows.size());
+  for(int i=0;i<static_cast<int>(transform.solver_rows.size());++i){int r=transform.solver_rows[i];const double shift=p.original_si.constraints.row(r).dot(transform.offset);reduced.constraints.row(i)=p.original_si.constraints.row(r)*transform.transform;reduced.lower(i)=p.original_si.lower(r)-shift;reduced.upper(i)=p.original_si.upper(r)-shift;}
+  transform.lower=reduced.lower;transform.upper=reduced.upper;transform.hessian=reduced.hessian;transform.gradient=reduced.gradient;transform.constraints=reduced.constraints;transform.factor=p.F*transform.transform;transform.seed=p.seed.head(reduced_n);
+  transform.constant=p.constant+p.original_si.gradient.dot(transform.offset)+.5*transform.offset.dot(p.original_si.hessian*transform.offset);
+  transform.factor_consistency_error=(transform.factor.transpose()*transform.factor-reduced.hessian).cwiseAbs().maxCoeff()/std::max(1.,reduced.hessian.cwiseAbs().maxCoeff());
+  need(reduced.hessian.allFinite()&&reduced.gradient.allFinite()&&reduced.constraints.allFinite()&&reduced.lower.allFinite()&&reduced.upper.allFinite()&&transform.factor.allFinite()&&std::isfinite(transform.constant)&&transform.factor_consistency_error<=1e-12,"reduced finite/factor certificate validation");
+  Eigen::VectorXd scale(reduced_n);for(int j=0;j<reduced_n;++j){need(std::isfinite(reduced.hessian(j,j))&&reduced.hessian(j,j)>0,"positive reduced diagonal");scale(j)=1/std::sqrt(reduced.hessian(j,j));need(std::isfinite(scale(j))&&scale(j)>0,"finite positive reduced Jacobi scale");}
+  transform.variable_scale=scale;
+  // Positive bounded row equilibration: normalize large rows downward, never
+  // magnify almost-zero cancellation rows after equality elimination. Fresh
+  // certified API has no workspace auto row scaling; original SI final gate.
+  transform.stored_numeric_slots=live::checkedAdd(transform.stored_numeric_slots,live::checkedAdd(live::checkedMultiply(reduced.constraints.rows(),reduced_n+3),live::checkedAdd(reduced_n*reduced_n+7*reduced_n+transform.solver_rows.size(),live::checkedMultiply(p.F.rows(),reduced_n))));
+  need(transform.stored_numeric_slots<=4000000,"scaled stored numeric payload cap before allocation");
+  qp::QpProblem scaled=reduced;scaled.hessian=scale.asDiagonal()*reduced.hessian*scale.asDiagonal();scaled.gradient=scale.asDiagonal()*reduced.gradient;scaled.constraints=reduced.constraints*scale.asDiagonal();
+  transform.row_scale=Eigen::VectorXd::Ones(scaled.constraints.rows());
+  for(int r=0;r<scaled.constraints.rows();++r){const double norm=scaled.constraints.row(r).cwiseAbs().maxCoeff();need(std::isfinite(norm),"finite bounded scale row norm");const double multiplier=1/std::max(1.,norm);need(std::isfinite(multiplier)&&multiplier>0&&multiplier<=1,"positive downward-only row scale");transform.row_scale(r)=multiplier;scaled.constraints.row(r)*=multiplier;scaled.lower(r)*=multiplier;scaled.upper(r)*=multiplier;}
+  transform.solver_hessian=scaled.hessian;transform.solver_gradient=scaled.gradient;transform.solver_constraints=scaled.constraints;transform.solver_lower=scaled.lower;transform.solver_upper=scaled.upper;transform.solver_factor=transform.factor*scale.asDiagonal();transform.solver_seed=transform.seed.cwiseQuotient(scale);
+  need(transform.stored_numeric_slots<=4000000&&scaled.hessian.allFinite()&&scaled.gradient.allFinite()&&scaled.constraints.allFinite()&&scaled.lower.allFinite()&&scaled.upper.allFinite()&&transform.solver_factor.allFinite()&&transform.solver_seed.allFinite(),"bounded finite explicitly scaled solver problem");
+  transform.scaled_factor_consistency_error=(transform.solver_factor.transpose()*transform.solver_factor-scaled.hessian).cwiseAbs().maxCoeff()/std::max(1.,scaled.hessian.cwiseAbs().maxCoeff());
+  need(transform.scaled_factor_consistency_error<=1e-12,"scaled factor consistency certificate");
+  transform.numerical_validation_passed=true;transform.stage="VALIDATED_REDUCED_AND_BOUNDED_SCALED_QP_BEFORE_SOLVER";
+  transform.forensic_iterates.primal=Eigen::VectorXd::Zero(reduced_n);transform.forensic_iterates.dual=Eigen::VectorXd::Zero(transform.solver_rows.size()); // owned placeholder only until present=true
+  const Eigen::SparseMatrix<double> certificate=transform.solver_factor.sparseView();
+  ++candidate.solver_wrapper_entries_;
+  candidate.result_=phase5_active_solver_forensics_v1::solveCertified(scaled,options,transform.solver_seed,certificate,transform.forensic_iterates);
+  transform.stage="QP_RETURNED_EXPLICITLY_SCALED_COORDINATES";transform.solver_coordinates=candidate.result_.velocity;
+  if(candidate.result_.velocity.size()){need(candidate.result_.velocity.size()==reduced_n&&candidate.result_.velocity.allFinite(),"solver scaled coordinate vector finite144 required");transform.reduced_coordinates=scale.asDiagonal()*transform.solver_coordinates;candidate.result_.velocity=transform.offset+transform.transform*transform.reduced_coordinates;need(candidate.result_.velocity.allFinite(),"finite reconstructed original controls160 required");}
   const int backend_row=candidate.result_.maximum_violation_row;
-  if(backend_row>=0){need(backend_row<static_cast<int>(screened.retained_rows.size()),"backend violation row outside reduced roster");candidate.original_maximum_violation_row_=screened.retained_rows[backend_row];}
+  if(backend_row>=0){need(backend_row<static_cast<int>(transform.solver_rows.size()),"backend violation row outside reduced roster");candidate.backend_mapped_original_violation_row_=transform.solver_rows[backend_row];}
   candidate.timing_.connection_and_solver_elapsed=std::chrono::duration<double>(std::chrono::steady_clock::now()-s.connection_started).count();
   candidate.timing_.known_wall_age=s.inputs.observed_age_seconds+s.inputs.known_upstream_elapsed_seconds+candidate.timing_.connection_and_solver_elapsed;
   need(candidate.result_.status==qp::QpStatus::Solved,"only SOLVED admits candidate; native status retained");
@@ -296,6 +348,7 @@ void solveOnce(Outcome& out,const qp::QpOptions& options,CandidateOutcome& candi
   Eigen::VectorXd ax=p.original_si.constraints*u;need(ax.allFinite(),"candidate original SI row evaluation");
   candidate.violations_.reserve(p.rows.size());bool accepted=true;
   for(int r=0;r<ax.size();++r){const double v=std::max({0.,p.original_si.lower(r)-ax(r),ax(r)-p.original_si.upper(r)});finite(v);
+   if(v>candidate.full_original_maximum_violation_){candidate.full_original_maximum_violation_=v;candidate.full_original_maximum_violation_row_=r;}
    candidate.violations_.push_back(v);if(v>options.acceptance_tolerance)accepted=false;}
   need(accepted,"independent original SI row gate failed; no epsilon change");
   candidate.timing_.connection_and_solver_elapsed=std::chrono::duration<double>(std::chrono::steady_clock::now()-s.connection_started).count();

@@ -1,0 +1,316 @@
+{
+  "schema": "ROOT_ACTIVE_A_NUMERICAL_REPAIR_SUMMARY_V1",
+  "packet_ready_sha256": "2e84145e5d8cfe6c69f955d2b0054b0bd76eca8267fc978bf8ba8cace1e071f4",
+  "source_outcomes_sha256": "387de7055d53c221559f64f23b9431548915a1f5df510ec8781b67fa994b9874",
+  "payloads_verified": 415,
+  "attempts": [
+    {
+      "version": "repair7",
+      "status": 6,
+      "raw_status": 7,
+      "api_error": 0,
+      "iterations": 20000,
+      "backend_primal": 7.840613427331777e-07,
+      "backend_dual": 6.914316886960408e-07,
+      "setup_seconds": 0.033772368,
+      "solve_seconds": 15.348167272,
+      "epsabs": 1e-09,
+      "epsrel": 1e-09,
+      "initial_rho": 0.1,
+      "rho_estimate": 10.251152785031652,
+      "rho_updates": 2,
+      "native_boundary_unchanged": 1,
+      "session_termination_pass": 1,
+      "native_termination_pass": 1,
+      "plant_steps": 0,
+      "commits": 0,
+      "usable_candidate": false,
+      "forensic_preview": 0,
+      "forward_request": 0,
+      "stop": "only SOLVED admits candidate; native status retained",
+      "input_pins_count": 1653,
+      "before_after_input_pins_identical": true,
+      "original_rows": 13156,
+      "backend_rows": 5472,
+      "box_omitted_rows": 7684,
+      "eliminated_equality_rows": 0,
+      "original_si_rows_scanned": 0,
+      "full_original_si_max_violation": null,
+      "forensic_original_controls_count": 0,
+      "solver_variables": 160,
+      "source_artifacts": {
+        "actual-dell/repair7/run-attempt1/artifacts/model_open.bin": {
+          "bytes": 1275,
+          "sha256": "f5ec5debb244e76c025ca107bc44ae12d03755fd7159d86dafbe18ef126f0a07"
+        },
+        "actual-dell/repair7/run-attempt1/artifacts/bootstrap.bin": {
+          "bytes": 150,
+          "sha256": "1a33e859581b0112bf10bf1a2d31bfa380de441a83b3abc0ca26989f4291abf5"
+        },
+        "actual-dell/repair7/run-attempt1/artifacts/entry_completion.bin": {
+          "bytes": 239,
+          "sha256": "338ad612e5da5067dcbfb76db8020d3bd027b0d61a57fb6e5c53e1f03bbc32be"
+        },
+        "actual-dell/repair7/run-attempt1/artifacts/observation_before.bin": {
+          "bytes": 2342,
+          "sha256": "a2e89ee8b59c4a0847bb9e56cde62492e4f7e292d4204398f99616c9b9534646"
+        },
+        "actual-dell/repair7/run-attempt1/artifacts/solver_row_screen.bin": {
+          "bytes": 523804,
+          "sha256": "b525a334c518507d38727bc124e38d336555792fd36aa044fd047c06d869d1be"
+        },
+        "actual-dell/repair7/run-attempt1/artifacts/observation_after.bin": {
+          "bytes": 2342,
+          "sha256": "18f7d30f9dc0e80158e4de4f806a0f3c0552c17e2b78c06adfc56926702a5239"
+        },
+        "actual-dell/repair7/run-attempt1/artifacts/candidate.bin": {
+          "bytes": 498,
+          "sha256": "046395123d5dc3348183b8c75913aae43a47a390f95a879cba3e0eb3da63476e"
+        },
+        "actual-dell/repair7/run-attempt1/artifacts/inline_qp.bin": {
+          "bytes": 19485833,
+          "sha256": "f93e0e3dc33537c3d2d0c2ce149cdd3249a3c507025ceba924824c65755d7f98"
+        },
+        "actual-dell/repair7/run-attempt1/artifacts/original_nominal.bin": {
+          "bytes": 12713873,
+          "sha256": "9af00094644413cfd4ef89b9bca69ff94de1dbdacbf9617d51bc6dcb9522a44a"
+        }
+      }
+    },
+    {
+      "version": "repair10",
+      "status": 7,
+      "raw_status": 8,
+      "api_error": 0,
+      "iterations": 8047,
+      "backend_primal": 7.893201604131095e-07,
+      "backend_dual": 1.6283409637469127e-05,
+      "setup_seconds": 0.108656867,
+      "solve_seconds": 19.893433975,
+      "epsabs": 1e-09,
+      "epsrel": 1e-09,
+      "initial_rho": 0.1,
+      "rho_estimate": 18.84644613802506,
+      "rho_updates": 3,
+      "native_boundary_unchanged": 1,
+      "session_termination_pass": 1,
+      "native_termination_pass": 1,
+      "plant_steps": 0,
+      "commits": 0,
+      "usable_candidate": false,
+      "forensic_preview": 0,
+      "forward_request": 0,
+      "stop": "only SOLVED admits candidate; native status retained",
+      "input_pins_count": 1653,
+      "before_after_input_pins_identical": true,
+      "original_rows": 13156,
+      "backend_rows": 6050,
+      "box_omitted_rows": 7106,
+      "eliminated_equality_rows": 0,
+      "original_si_rows_scanned": 0,
+      "full_original_si_max_violation": null,
+      "forensic_original_controls_count": 0,
+      "solver_variables": 160,
+      "source_artifacts": {
+        "actual-dell/repair10/run-attempt1/artifacts/model_open.bin": {
+          "bytes": 1275,
+          "sha256": "f5ec5debb244e76c025ca107bc44ae12d03755fd7159d86dafbe18ef126f0a07"
+        },
+        "actual-dell/repair10/run-attempt1/artifacts/bootstrap.bin": {
+          "bytes": 150,
+          "sha256": "1a33e859581b0112bf10bf1a2d31bfa380de441a83b3abc0ca26989f4291abf5"
+        },
+        "actual-dell/repair10/run-attempt1/artifacts/qp_whitening.bin": {
+          "bytes": 9105252,
+          "sha256": "94d34bbdf9d8ac1ec251e233100528f0b444431774e33dd96363afa3b6eb2731"
+        },
+        "actual-dell/repair10/run-attempt1/artifacts/entry_completion.bin": {
+          "bytes": 239,
+          "sha256": "9622635c727f60d1c06684b2b978c3a27086ec7861de7a95d12931225bfeb968"
+        },
+        "actual-dell/repair10/run-attempt1/artifacts/observation_before.bin": {
+          "bytes": 2342,
+          "sha256": "f2dc495f40e3d40833042d56706de1a0a2182a3de51871a13ccc9f0a81335303"
+        },
+        "actual-dell/repair10/run-attempt1/artifacts/solver_row_screen.bin": {
+          "bytes": 491624,
+          "sha256": "663deaadc521a30e073d519ee8488efa058fee9ca3d6d80fc031e23c1a5bbf6c"
+        },
+        "actual-dell/repair10/run-attempt1/artifacts/observation_after.bin": {
+          "bytes": 2342,
+          "sha256": "87ba2a16cfe787907c50b6b5d506ac31d3faa304c89bf2478c52e07803847c98"
+        },
+        "actual-dell/repair10/run-attempt1/artifacts/candidate.bin": {
+          "bytes": 484,
+          "sha256": "a27cee5dd4a90de370bd76d9cfb69155936d4b039f447f16e6373f51bbc22eed"
+        },
+        "actual-dell/repair10/run-attempt1/artifacts/inline_qp.bin": {
+          "bytes": 19485833,
+          "sha256": "e05cd482dfc42d331956ce8f35ee83247c8155727e91383f521f73f7abcd7c42"
+        },
+        "actual-dell/repair10/run-attempt1/artifacts/original_nominal.bin": {
+          "bytes": 12713894,
+          "sha256": "4da05ab942fdc8f614be9a60d0fc49659446dfa59c21c2352722a1ed0d3481b5"
+        }
+      }
+    },
+    {
+      "version": "repair12",
+      "status": 6,
+      "raw_status": 7,
+      "api_error": 0,
+      "iterations": 20000,
+      "backend_primal": 7.874421870321391e-07,
+      "backend_dual": 9.414162454863357e-07,
+      "setup_seconds": 0.031984583,
+      "solve_seconds": 15.839491777,
+      "epsabs": 1e-09,
+      "epsrel": 1e-09,
+      "initial_rho": 0.1,
+      "rho_estimate": 11.978310778104866,
+      "rho_updates": 2,
+      "native_boundary_unchanged": 1,
+      "session_termination_pass": 1,
+      "native_termination_pass": 1,
+      "plant_steps": 0,
+      "commits": 0,
+      "usable_candidate": false,
+      "forensic_preview": 0,
+      "forward_request": 0,
+      "stop": "only SOLVED admits candidate; native status retained",
+      "input_pins_count": 1653,
+      "before_after_input_pins_identical": true,
+      "original_rows": 13156,
+      "backend_rows": 6034,
+      "box_omitted_rows": 7106,
+      "eliminated_equality_rows": 16,
+      "original_si_rows_scanned": 0,
+      "full_original_si_max_violation": null,
+      "forensic_original_controls_count": 0,
+      "solver_variables": 144,
+      "source_artifacts": {
+        "actual-dell/repair12/run-attempt1/artifacts/model_open.bin": {
+          "bytes": 1275,
+          "sha256": "f5ec5debb244e76c025ca107bc44ae12d03755fd7159d86dafbe18ef126f0a07"
+        },
+        "actual-dell/repair12/run-attempt1/artifacts/bootstrap.bin": {
+          "bytes": 150,
+          "sha256": "1a33e859581b0112bf10bf1a2d31bfa380de441a83b3abc0ca26989f4291abf5"
+        },
+        "actual-dell/repair12/run-attempt1/artifacts/entry_completion.bin": {
+          "bytes": 239,
+          "sha256": "3d0cd584964c8d8879e2a16ff9daac479af7cf550d785429749eca54811314be"
+        },
+        "actual-dell/repair12/run-attempt1/artifacts/observation_before.bin": {
+          "bytes": 2342,
+          "sha256": "24885e35020ac34c3472391f04010381d0bb797fedb8267faa07e12c08f8b31b"
+        },
+        "actual-dell/repair12/run-attempt1/artifacts/solver_row_screen.bin": {
+          "bytes": 491572,
+          "sha256": "21ee3a0bf198977d34f67f676750329f5e0fcb5687152062c1b2692cf124420b"
+        },
+        "actual-dell/repair12/run-attempt1/artifacts/observation_after.bin": {
+          "bytes": 2342,
+          "sha256": "c2e724684c5e1fabd0e8f1c20b3137f3434f08852667e13fe5e2d1ac06360a8e"
+        },
+        "actual-dell/repair12/run-attempt1/artifacts/candidate.bin": {
+          "bytes": 498,
+          "sha256": "0f82c9cca52a91ff0b146430a23d29e3b6e2374b52809c0f194e8f2e7bc4f089"
+        },
+        "actual-dell/repair12/run-attempt1/artifacts/inline_qp.bin": {
+          "bytes": 19485833,
+          "sha256": "72432199d0a611649c9c610fa79651a6c6eef99911583db851f5031db2c1df07"
+        },
+        "actual-dell/repair12/run-attempt1/artifacts/original_nominal.bin": {
+          "bytes": 12713894,
+          "sha256": "1a9013057d9df407d8d07fc5e36fd2da81b29386c9d80612eeb2eea40b3e37a9"
+        },
+        "actual-dell/repair12/run-attempt1/artifacts/qp_equality_reduction.bin": {
+          "bytes": 8325882,
+          "sha256": "eb0c15ef78d8c0656ba9bb190b1c817adbe6fca78121abed6e93e6ceb44acbfa"
+        }
+      }
+    },
+    {
+      "version": "repair14",
+      "status": 6,
+      "raw_status": 7,
+      "api_error": 0,
+      "iterations": 20000,
+      "backend_primal": 2.5616324764807403e-08,
+      "backend_dual": 3.1660640245311303e-06,
+      "setup_seconds": 0.033153558,
+      "solve_seconds": 15.74718021,
+      "epsabs": 1e-09,
+      "epsrel": 1e-09,
+      "initial_rho": 0.1,
+      "rho_estimate": 6.814342727330224,
+      "rho_updates": 2,
+      "native_boundary_unchanged": 1,
+      "session_termination_pass": 1,
+      "native_termination_pass": 1,
+      "plant_steps": 0,
+      "commits": 0,
+      "usable_candidate": false,
+      "forensic_preview": 0,
+      "forward_request": 0,
+      "stop": "only SOLVED admits candidate; native status retained",
+      "input_pins_count": 1653,
+      "before_after_input_pins_identical": true,
+      "original_rows": 13156,
+      "backend_rows": 6034,
+      "box_omitted_rows": 7106,
+      "eliminated_equality_rows": 16,
+      "original_si_rows_scanned": 0,
+      "full_original_si_max_violation": null,
+      "forensic_original_controls_count": 0,
+      "solver_variables": 144,
+      "source_artifacts": {
+        "actual-dell/repair14/run-attempt1/artifacts/model_open.bin": {
+          "bytes": 1275,
+          "sha256": "f5ec5debb244e76c025ca107bc44ae12d03755fd7159d86dafbe18ef126f0a07"
+        },
+        "actual-dell/repair14/run-attempt1/artifacts/bootstrap.bin": {
+          "bytes": 150,
+          "sha256": "1a33e859581b0112bf10bf1a2d31bfa380de441a83b3abc0ca26989f4291abf5"
+        },
+        "actual-dell/repair14/run-attempt1/artifacts/entry_completion.bin": {
+          "bytes": 239,
+          "sha256": "ed533d162b9201a16331f46b0dbbe06fe5701b7b52760156dcaa1a0d06f51d66"
+        },
+        "actual-dell/repair14/run-attempt1/artifacts/observation_before.bin": {
+          "bytes": 2342,
+          "sha256": "6420b60d40053e259b8cc183f0a3c2f11ce6dc31ea9cf8441721620aff332539"
+        },
+        "actual-dell/repair14/run-attempt1/artifacts/solver_row_screen.bin": {
+          "bytes": 491572,
+          "sha256": "21ee3a0bf198977d34f67f676750329f5e0fcb5687152062c1b2692cf124420b"
+        },
+        "actual-dell/repair14/run-attempt1/artifacts/observation_after.bin": {
+          "bytes": 2342,
+          "sha256": "f704e3a03b1084651bbd16cc156ac834e53fa668dfa129d0f9ca0dd4368a8170"
+        },
+        "actual-dell/repair14/run-attempt1/artifacts/candidate.bin": {
+          "bytes": 484,
+          "sha256": "2e07699aee1f9624754aa0dff4d3fabd1561c64ecd56c90b9f41875915ee6853"
+        },
+        "actual-dell/repair14/run-attempt1/artifacts/inline_qp.bin": {
+          "bytes": 19485833,
+          "sha256": "b9621157c19d83f43153afdb0b5eee178a8efde8d09fcde506ec9afea190f48d"
+        },
+        "actual-dell/repair14/run-attempt1/artifacts/original_nominal.bin": {
+          "bytes": 12713894,
+          "sha256": "e6903401684dd53431f587b4330420a7d0dcbe7aa3d72d5b83c4558e90539bfc"
+        },
+        "actual-dell/repair14/run-attempt1/artifacts/qp_equality_reduction.bin": {
+          "bytes": 16443878,
+          "sha256": "ab38190436781eb2260f8563abade9ac50d2834fde0e1167e56a0a3592c5308d"
+        }
+      }
+    }
+  ],
+  "scope": "Actual bounded offline numeric strategies, not online control; no usable candidate/B/physical task. Backend residuals refer to each explicitly transformed solver problem, not the full original SI gate. Default full maximum=0 with empty scan means unmeasured.",
+  "native_binaries": "Original Dell identities and paths indexed; excluded from source Git backup.",
+  "phase5": "NOT_ACCEPTED",
+  "phase6": "NOT_STARTED"
+}

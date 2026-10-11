@@ -1,0 +1,929 @@
+{
+  "schema": "ROOT_PORTABLE_CMAKE_ACTUAL_RESULTS_V1",
+  "source_packet_ready_sha256": "3ea541faa7638c96ab62957f76f392550c8ccd4984bea7089735518c9b510090",
+  "attempts": [
+    {
+      "attempt": "portable1",
+      "records": [
+        {
+          "file": "portable1/control-attempt1/compile-1.result.json",
+          "sha256": "d00fea0cee8da415b1f8045a42e5f6593ac6464c1d3bbfaa3fb7d8fe6caf9109",
+          "record": {
+            "kind": "compile",
+            "index": 1,
+            "argv": [
+              "/usr/bin/cmake",
+              "-S",
+              "/home/codextransfer/predictive_motion/results/phase5/session-portable-cmake-v1-20261010-attempt1/source/tools/phase5_active_session_v1",
+              "-B",
+              "/home/codextransfer/predictive_motion/results/phase5/session-portable-cmake-v1-20261010-attempt1/configure-build-attempt1",
+              "-DCMAKE_BUILD_TYPE=Release",
+              "-DCMAKE_CXX_COMPILER=/usr/bin/x86_64-linux-gnu-g++-13",
+              "-DCMAKE_PREFIX_PATH=/opt/ros/jazzy;/home/codextransfer/predictive_motion/.vendor/osqp-1.0.0-install",
+              "-DBUILD_TESTING=ON",
+              "-DACTIVE_SESSION_BUILD_NATIVE_ENTRY=OFF",
+              "-DACTIVE_SESSION_CONSTANTS=/home/codextransfer/predictive_motion/results/phase5/integrated-first-cycle-v1-20261010/runtime-profile-version2/inputs/public_constants.json",
+              "-DACTIVE_SESSION_CONSTANTS_SHA256=d37c9a12539345fd1dbb6718cd273584140359ca2bd9834442bf2228e50f6bdd"
+            ],
+            "stage": "CHILD_EXIT_REAPED",
+            "actual_project_tool_entry": "Popen started; exit retained, compiler/link success only if exit0",
+            "exit": 1,
+            "first_error": null,
+            "applied_limits": {
+              "CPU": {
+                "inherited_soft": -1,
+                "inherited_hard": -1,
+                "applied_soft": 480,
+                "applied_hard": 480
+              },
+              "AS": {
+                "inherited_soft": -1,
+                "inherited_hard": -1,
+                "applied_soft": 2147483648,
+                "applied_hard": 2147483648
+              },
+              "CORE": {
+                "inherited_soft": 0,
+                "inherited_hard": -1,
+                "applied_soft": 0,
+                "applied_hard": 0
+              },
+              "FSIZE": {
+                "inherited_soft": -1,
+                "inherited_hard": -1,
+                "applied_soft": 268435456,
+                "applied_hard": 268435456
+              },
+              "NOFILE": {
+                "inherited_soft": 1024,
+                "inherited_hard": 1048576,
+                "applied_soft": 64,
+                "applied_hard": 64
+              },
+              "NPROC": {
+                "inherited_soft": 63295,
+                "inherited_hard": 63295,
+                "applied_soft": 32,
+                "applied_hard": 32
+              }
+            },
+            "observed_stream_bytes": {
+              "stdout": 1640,
+              "stderr": 401
+            },
+            "stop_reason": null,
+            "wall_seconds": 1.0527445230109151
+          }
+        }
+      ]
+    },
+    {
+      "attempt": "portable2",
+      "records": [
+        {
+          "file": "portable2/control-attempt1/compile-1.result.json",
+          "sha256": "46db2020893f681c8615cb7323a29c0fc3ab1fd0886eff99cf4ef594da47a270",
+          "record": {
+            "kind": "compile",
+            "index": 1,
+            "argv": [
+              "/usr/bin/cmake",
+              "-S",
+              "/home/codextransfer/predictive_motion/results/phase5/session-portable-cmake-v1-20261010-attempt2/source/tools/phase5_active_session_v1",
+              "-B",
+              "/home/codextransfer/predictive_motion/results/phase5/session-portable-cmake-v1-20261010-attempt2/configure-build-attempt1",
+              "-DCMAKE_BUILD_TYPE=Release",
+              "-DCMAKE_CXX_COMPILER=/usr/bin/x86_64-linux-gnu-g++-13",
+              "-DCMAKE_PREFIX_PATH=/opt/ros/jazzy;/home/codextransfer/predictive_motion/.vendor/osqp-1.0.0-install",
+              "-DBUILD_TESTING=ON",
+              "-DACTIVE_SESSION_BUILD_NATIVE_ENTRY=OFF",
+              "-DACTIVE_SESSION_CONSTANTS=/home/codextransfer/predictive_motion/results/phase5/integrated-first-cycle-v1-20261010/runtime-profile-version2/inputs/public_constants.json",
+              "-DACTIVE_SESSION_CONSTANTS_SHA256=d37c9a12539345fd1dbb6718cd273584140359ca2bd9834442bf2228e50f6bdd"
+            ],
+            "stage": "CHILD_EXIT_REAPED",
+            "actual_project_tool_entry": "Popen started; exit retained, compiler/link success only if exit0",
+            "exit": 0,
+            "first_error": null,
+            "applied_limits": {
+              "CPU": {
+                "inherited_soft": -1,
+                "inherited_hard": -1,
+                "applied_soft": 480,
+                "applied_hard": 480
+              },
+              "AS": {
+                "inherited_soft": -1,
+                "inherited_hard": -1,
+                "applied_soft": 2147483648,
+                "applied_hard": 2147483648
+              },
+              "CORE": {
+                "inherited_soft": 0,
+                "inherited_hard": -1,
+                "applied_soft": 0,
+                "applied_hard": 0
+              },
+              "FSIZE": {
+                "inherited_soft": -1,
+                "inherited_hard": -1,
+                "applied_soft": 268435456,
+                "applied_hard": 268435456
+              },
+              "NOFILE": {
+                "inherited_soft": 1024,
+                "inherited_hard": 1048576,
+                "applied_soft": 64,
+                "applied_hard": 64
+              },
+              "NPROC": {
+                "inherited_soft": 63295,
+                "inherited_hard": 63295,
+                "applied_soft": 32,
+                "applied_hard": 32
+              }
+            },
+            "observed_stream_bytes": {
+              "stdout": 1799,
+              "stderr": 0
+            },
+            "stop_reason": null,
+            "wall_seconds": 1.1863037049770355
+          }
+        },
+        {
+          "file": "portable2/control-attempt1/compile-2.result.json",
+          "sha256": "bfd70cc1680fae48f736128e3babee138abcd14c44f138cac01525a632bfaad3",
+          "record": {
+            "kind": "compile",
+            "index": 2,
+            "argv": [
+              "/usr/bin/cmake",
+              "--build",
+              "/home/codextransfer/predictive_motion/results/phase5/session-portable-cmake-v1-20261010-attempt2/configure-build-attempt1",
+              "--parallel",
+              "1",
+              "--target",
+              "active_session_invariants",
+              "active_session_box_tests"
+            ],
+            "stage": "CHILD_EXIT_REAPED",
+            "actual_project_tool_entry": "Popen started; exit retained, compiler/link success only if exit0",
+            "exit": 2,
+            "first_error": null,
+            "applied_limits": {
+              "CPU": {
+                "inherited_soft": -1,
+                "inherited_hard": -1,
+                "applied_soft": 480,
+                "applied_hard": 480
+              },
+              "AS": {
+                "inherited_soft": -1,
+                "inherited_hard": -1,
+                "applied_soft": 2147483648,
+                "applied_hard": 2147483648
+              },
+              "CORE": {
+                "inherited_soft": 0,
+                "inherited_hard": -1,
+                "applied_soft": 0,
+                "applied_hard": 0
+              },
+              "FSIZE": {
+                "inherited_soft": -1,
+                "inherited_hard": -1,
+                "applied_soft": 268435456,
+                "applied_hard": 268435456
+              },
+              "NOFILE": {
+                "inherited_soft": 1024,
+                "inherited_hard": 1048576,
+                "applied_soft": 64,
+                "applied_hard": 64
+              },
+              "NPROC": {
+                "inherited_soft": 63295,
+                "inherited_hard": 63295,
+                "applied_soft": 32,
+                "applied_hard": 32
+              }
+            },
+            "observed_stream_bytes": {
+              "stdout": 137,
+              "stderr": 576
+            },
+            "stop_reason": null,
+            "wall_seconds": 13.251115319988457
+          }
+        }
+      ]
+    },
+    {
+      "attempt": "portable3",
+      "records": [
+        {
+          "file": "portable3/control-attempt1/compile-1.result.json",
+          "sha256": "fddf5d278e5f117429a952c58d72ee582f3e1557e99ea9f80609abb4e5844a0b",
+          "record": {
+            "kind": "compile",
+            "index": 1,
+            "argv": [
+              "/usr/bin/cmake",
+              "-S",
+              "/home/codextransfer/predictive_motion/results/phase5/session-portable-cmake-v1-20261010-attempt3/source/tools/phase5_active_session_v1",
+              "-B",
+              "/home/codextransfer/predictive_motion/results/phase5/session-portable-cmake-v1-20261010-attempt3/configure-build-attempt1",
+              "-DCMAKE_BUILD_TYPE=Release",
+              "-DCMAKE_CXX_FLAGS_RELEASE=-O2 -DNDEBUG -fno-fast-math -ffp-contract=off",
+              "-DCMAKE_CXX_COMPILER=/usr/bin/x86_64-linux-gnu-g++-13",
+              "-DCMAKE_PREFIX_PATH=/opt/ros/jazzy;/home/codextransfer/predictive_motion/.vendor/osqp-1.0.0-install",
+              "-DBUILD_TESTING=ON",
+              "-DACTIVE_SESSION_BUILD_NATIVE_ENTRY=OFF",
+              "-DACTIVE_SESSION_CONSTANTS=/home/codextransfer/predictive_motion/results/phase5/integrated-first-cycle-v1-20261010/runtime-profile-version2/inputs/public_constants.json",
+              "-DACTIVE_SESSION_CONSTANTS_SHA256=d37c9a12539345fd1dbb6718cd273584140359ca2bd9834442bf2228e50f6bdd"
+            ],
+            "stage": "CHILD_EXIT_REAPED",
+            "actual_project_tool_entry": "Popen started; exit retained, compiler/link success only if exit0",
+            "exit": 0,
+            "first_error": null,
+            "applied_limits": {
+              "CPU": {
+                "inherited_soft": -1,
+                "inherited_hard": -1,
+                "applied_soft": 480,
+                "applied_hard": 480
+              },
+              "AS": {
+                "inherited_soft": -1,
+                "inherited_hard": -1,
+                "applied_soft": 8589934592,
+                "applied_hard": 8589934592
+              },
+              "CORE": {
+                "inherited_soft": 0,
+                "inherited_hard": -1,
+                "applied_soft": 0,
+                "applied_hard": 0
+              },
+              "FSIZE": {
+                "inherited_soft": -1,
+                "inherited_hard": -1,
+                "applied_soft": 268435456,
+                "applied_hard": 268435456
+              },
+              "NOFILE": {
+                "inherited_soft": 1024,
+                "inherited_hard": 1048576,
+                "applied_soft": 64,
+                "applied_hard": 64
+              },
+              "NPROC": {
+                "inherited_soft": 63295,
+                "inherited_hard": 63295,
+                "applied_soft": 32,
+                "applied_hard": 32
+              }
+            },
+            "observed_stream_bytes": {
+              "stdout": 1799,
+              "stderr": 0
+            },
+            "stop_reason": null,
+            "wall_seconds": 0.8366642420005519
+          }
+        },
+        {
+          "file": "portable3/control-attempt1/compile-2.result.json",
+          "sha256": "dc7b53fbc81105a0895f4490330a6e7d3acfc8f9cbac5e014c648ce54276006b",
+          "record": {
+            "kind": "compile",
+            "index": 2,
+            "argv": [
+              "/usr/bin/cmake",
+              "--build",
+              "/home/codextransfer/predictive_motion/results/phase5/session-portable-cmake-v1-20261010-attempt3/configure-build-attempt1",
+              "--parallel",
+              "1",
+              "--target",
+              "active_session_invariants",
+              "active_session_box_tests"
+            ],
+            "stage": "CHILD_EXIT_REAPED",
+            "actual_project_tool_entry": "Popen started; exit retained, compiler/link success only if exit0",
+            "exit": 0,
+            "first_error": null,
+            "applied_limits": {
+              "CPU": {
+                "inherited_soft": -1,
+                "inherited_hard": -1,
+                "applied_soft": 480,
+                "applied_hard": 480
+              },
+              "AS": {
+                "inherited_soft": -1,
+                "inherited_hard": -1,
+                "applied_soft": 8589934592,
+                "applied_hard": 8589934592
+              },
+              "CORE": {
+                "inherited_soft": 0,
+                "inherited_hard": -1,
+                "applied_soft": 0,
+                "applied_hard": 0
+              },
+              "FSIZE": {
+                "inherited_soft": -1,
+                "inherited_hard": -1,
+                "applied_soft": 268435456,
+                "applied_hard": 268435456
+              },
+              "NOFILE": {
+                "inherited_soft": 1024,
+                "inherited_hard": 1048576,
+                "applied_soft": 64,
+                "applied_hard": 64
+              },
+              "NPROC": {
+                "inherited_soft": 63295,
+                "inherited_hard": 63295,
+                "applied_soft": 32,
+                "applied_hard": 32
+              }
+            },
+            "observed_stream_bytes": {
+              "stdout": 3313,
+              "stderr": 20035
+            },
+            "stop_reason": null,
+            "wall_seconds": 68.5472079369938
+          }
+        },
+        {
+          "file": "portable3/control-attempt1/compile-3.result.json",
+          "sha256": "3243acd61cca50088caa34a18355851b456b6e03002211f15d20a08e947c5690",
+          "record": {
+            "kind": "compile",
+            "index": 3,
+            "argv": [
+              "/usr/bin/ctest",
+              "--test-dir",
+              "/home/codextransfer/predictive_motion/results/phase5/session-portable-cmake-v1-20261010-attempt3/configure-build-attempt1",
+              "--output-on-failure",
+              "--timeout",
+              "10"
+            ],
+            "stage": "CHILD_EXIT_REAPED",
+            "actual_project_tool_entry": "Popen started; exit retained, compiler/link success only if exit0",
+            "exit": 0,
+            "first_error": null,
+            "applied_limits": {
+              "CPU": {
+                "inherited_soft": -1,
+                "inherited_hard": -1,
+                "applied_soft": 480,
+                "applied_hard": 480
+              },
+              "AS": {
+                "inherited_soft": -1,
+                "inherited_hard": -1,
+                "applied_soft": 8589934592,
+                "applied_hard": 8589934592
+              },
+              "CORE": {
+                "inherited_soft": 0,
+                "inherited_hard": -1,
+                "applied_soft": 0,
+                "applied_hard": 0
+              },
+              "FSIZE": {
+                "inherited_soft": -1,
+                "inherited_hard": -1,
+                "applied_soft": 268435456,
+                "applied_hard": 268435456
+              },
+              "NOFILE": {
+                "inherited_soft": 1024,
+                "inherited_hard": 1048576,
+                "applied_soft": 64,
+                "applied_hard": 64
+              },
+              "NPROC": {
+                "inherited_soft": 63295,
+                "inherited_hard": 63295,
+                "applied_soft": 32,
+                "applied_hard": 32
+              }
+            },
+            "observed_stream_bytes": {
+              "stdout": 625,
+              "stderr": 0
+            },
+            "stop_reason": null,
+            "wall_seconds": 0.03587700499338098
+          }
+        }
+      ]
+    },
+    {
+      "attempt": "portable4",
+      "records": [
+        {
+          "file": "portable4/control-attempt1/compile-1.result.json",
+          "sha256": "5176ae7ef61e0c8a7792fbe9588a0f20e38e6eb6daaa38f145906e55e5c0e78c",
+          "record": {
+            "kind": "compile",
+            "index": 1,
+            "argv": [
+              "/usr/bin/cmake",
+              "-S",
+              "/home/codextransfer/predictive_motion/results/phase5/session-portable-cmake-v1-20261010-attempt4/source/tools/phase5_active_session_v1",
+              "-B",
+              "/home/codextransfer/predictive_motion/results/phase5/session-portable-cmake-v1-20261010-attempt4/configure-build-attempt1",
+              "-DCMAKE_BUILD_TYPE=Release",
+              "-DCMAKE_CXX_FLAGS_RELEASE=-O2 -DNDEBUG -fno-fast-math -ffp-contract=off",
+              "-DCMAKE_CXX_COMPILER=/usr/bin/x86_64-linux-gnu-g++-13",
+              "-DCMAKE_PREFIX_PATH=/opt/ros/jazzy;/home/codextransfer/predictive_motion/.vendor/osqp-1.0.0-install;/home/codextransfer/predictive_motion/install/predictive_motion_kinematics",
+              "-DBUILD_TESTING=ON",
+              "-DACTIVE_SESSION_MUJOCO_INCLUDE=/home/codextransfer/predictive_motion/.vendor/mujoco-3.3.7/include",
+              "-DACTIVE_SESSION_MUJOCO_LIBRARY=/home/codextransfer/predictive_motion/.vendor/mujoco-3.3.7/lib/libmujoco.so.3.3.7",
+              "-DACTIVE_SESSION_BUILD_NATIVE_ENTRY=ON",
+              "-DACTIVE_SESSION_CONSTANTS=/home/codextransfer/predictive_motion/results/phase5/integrated-first-cycle-v1-20261010/runtime-profile-version2/inputs/public_constants.json",
+              "-DACTIVE_SESSION_CONSTANTS_SHA256=d37c9a12539345fd1dbb6718cd273584140359ca2bd9834442bf2228e50f6bdd"
+            ],
+            "stage": "CHILD_EXIT_REAPED",
+            "actual_project_tool_entry": "Popen started; exit retained, compiler/link success only if exit0",
+            "exit": 1,
+            "first_error": null,
+            "applied_limits": {
+              "CPU": {
+                "inherited_soft": -1,
+                "inherited_hard": -1,
+                "applied_soft": 480,
+                "applied_hard": 480
+              },
+              "AS": {
+                "inherited_soft": -1,
+                "inherited_hard": -1,
+                "applied_soft": 8589934592,
+                "applied_hard": 8589934592
+              },
+              "CORE": {
+                "inherited_soft": 0,
+                "inherited_hard": -1,
+                "applied_soft": 0,
+                "applied_hard": 0
+              },
+              "FSIZE": {
+                "inherited_soft": -1,
+                "inherited_hard": -1,
+                "applied_soft": 268435456,
+                "applied_hard": 268435456
+              },
+              "NOFILE": {
+                "inherited_soft": 1024,
+                "inherited_hard": 1048576,
+                "applied_soft": 64,
+                "applied_hard": 64
+              },
+              "NPROC": {
+                "inherited_soft": 63295,
+                "inherited_hard": 63295,
+                "applied_soft": 32,
+                "applied_hard": 32
+              }
+            },
+            "observed_stream_bytes": {
+              "stdout": 1885,
+              "stderr": 1223
+            },
+            "stop_reason": null,
+            "wall_seconds": 3.3441773839876987
+          }
+        }
+      ]
+    },
+    {
+      "attempt": "portable5",
+      "records": [
+        {
+          "file": "portable5/control-attempt1/compile-1.result.json",
+          "sha256": "d1bf480a334a348773bbd032b51627ac59e5193f173925834a93afa48fbd5963",
+          "record": {
+            "kind": "compile",
+            "index": 1,
+            "argv": [
+              "/usr/bin/env",
+              "PYTHONPATH=/opt/ros/jazzy/lib/python3.12/site-packages",
+              "/usr/bin/cmake",
+              "-S",
+              "/home/codextransfer/predictive_motion/results/phase5/session-portable-cmake-v1-20261010-attempt5/source/tools/phase5_active_session_v1",
+              "-B",
+              "/home/codextransfer/predictive_motion/results/phase5/session-portable-cmake-v1-20261010-attempt5/configure-build-attempt1",
+              "-DCMAKE_BUILD_TYPE=Release",
+              "-DCMAKE_CXX_FLAGS_RELEASE=-O2 -DNDEBUG -fno-fast-math -ffp-contract=off",
+              "-DCMAKE_CXX_COMPILER=/usr/bin/x86_64-linux-gnu-g++-13",
+              "-DCMAKE_PREFIX_PATH=/opt/ros/jazzy;/home/codextransfer/predictive_motion/.vendor/osqp-1.0.0-install;/home/codextransfer/predictive_motion/install/predictive_motion_kinematics",
+              "-DBUILD_TESTING=ON",
+              "-DACTIVE_SESSION_MUJOCO_INCLUDE=/home/codextransfer/predictive_motion/.vendor/mujoco-3.3.7/include",
+              "-DACTIVE_SESSION_MUJOCO_LIBRARY=/home/codextransfer/predictive_motion/.vendor/mujoco-3.3.7/lib/libmujoco.so.3.3.7",
+              "-DACTIVE_SESSION_BUILD_NATIVE_ENTRY=ON",
+              "-DACTIVE_SESSION_CONSTANTS=/home/codextransfer/predictive_motion/results/phase5/integrated-first-cycle-v1-20261010/runtime-profile-version2/inputs/public_constants.json",
+              "-DACTIVE_SESSION_CONSTANTS_SHA256=d37c9a12539345fd1dbb6718cd273584140359ca2bd9834442bf2228e50f6bdd"
+            ],
+            "stage": "CHILD_EXIT_REAPED",
+            "actual_project_tool_entry": "Popen started; exit retained, compiler/link success only if exit0",
+            "exit": 0,
+            "first_error": null,
+            "applied_limits": {
+              "CPU": {
+                "inherited_soft": -1,
+                "inherited_hard": -1,
+                "applied_soft": 480,
+                "applied_hard": 480
+              },
+              "AS": {
+                "inherited_soft": -1,
+                "inherited_hard": -1,
+                "applied_soft": 8589934592,
+                "applied_hard": 8589934592
+              },
+              "CORE": {
+                "inherited_soft": 0,
+                "inherited_hard": -1,
+                "applied_soft": 0,
+                "applied_hard": 0
+              },
+              "FSIZE": {
+                "inherited_soft": -1,
+                "inherited_hard": -1,
+                "applied_soft": 268435456,
+                "applied_hard": 268435456
+              },
+              "NOFILE": {
+                "inherited_soft": 1024,
+                "inherited_hard": 1048576,
+                "applied_soft": 64,
+                "applied_hard": 64
+              },
+              "NPROC": {
+                "inherited_soft": 63295,
+                "inherited_hard": 63295,
+                "applied_soft": 32,
+                "applied_hard": 32
+              }
+            },
+            "observed_stream_bytes": {
+              "stdout": 2964,
+              "stderr": 0
+            },
+            "stop_reason": null,
+            "wall_seconds": 1.5373038570105564
+          }
+        },
+        {
+          "file": "portable5/control-attempt1/compile-2.result.json",
+          "sha256": "a9d7552a957b4cf93725b2f9c29d53f72dc367e58db1e93a9086e0538a5ab99c",
+          "record": {
+            "kind": "compile",
+            "index": 2,
+            "argv": [
+              "/usr/bin/cmake",
+              "--build",
+              "/home/codextransfer/predictive_motion/results/phase5/session-portable-cmake-v1-20261010-attempt5/configure-build-attempt1",
+              "--parallel",
+              "1",
+              "--target",
+              "active_session_invariants",
+              "active_session_box_tests",
+              "active_session_first_cycle",
+              "active_session_observer_tests"
+            ],
+            "stage": "CHILD_EXIT_REAPED",
+            "actual_project_tool_entry": "Popen started; exit retained, compiler/link success only if exit0",
+            "exit": 0,
+            "first_error": null,
+            "applied_limits": {
+              "CPU": {
+                "inherited_soft": -1,
+                "inherited_hard": -1,
+                "applied_soft": 480,
+                "applied_hard": 480
+              },
+              "AS": {
+                "inherited_soft": -1,
+                "inherited_hard": -1,
+                "applied_soft": 8589934592,
+                "applied_hard": 8589934592
+              },
+              "CORE": {
+                "inherited_soft": 0,
+                "inherited_hard": -1,
+                "applied_soft": 0,
+                "applied_hard": 0
+              },
+              "FSIZE": {
+                "inherited_soft": -1,
+                "inherited_hard": -1,
+                "applied_soft": 268435456,
+                "applied_hard": 268435456
+              },
+              "NOFILE": {
+                "inherited_soft": 1024,
+                "inherited_hard": 1048576,
+                "applied_soft": 64,
+                "applied_hard": 64
+              },
+              "NPROC": {
+                "inherited_soft": 63295,
+                "inherited_hard": 63295,
+                "applied_soft": 32,
+                "applied_hard": 32
+              }
+            },
+            "observed_stream_bytes": {
+              "stdout": 4828,
+              "stderr": 27385
+            },
+            "stop_reason": null,
+            "wall_seconds": 77.14887214300688
+          }
+        },
+        {
+          "file": "portable5/control-attempt1/compile-3.result.json",
+          "sha256": "4aec104237c755008147aa5663aa08677130fc3a2bc4e1acbabaa61c8b1fe767",
+          "record": {
+            "kind": "compile",
+            "index": 3,
+            "argv": [
+              "/usr/bin/ctest",
+              "--test-dir",
+              "/home/codextransfer/predictive_motion/results/phase5/session-portable-cmake-v1-20261010-attempt5/configure-build-attempt1",
+              "--output-on-failure",
+              "--timeout",
+              "10"
+            ],
+            "stage": "CHILD_EXIT_REAPED",
+            "actual_project_tool_entry": "Popen started; exit retained, compiler/link success only if exit0",
+            "exit": 0,
+            "first_error": null,
+            "applied_limits": {
+              "CPU": {
+                "inherited_soft": -1,
+                "inherited_hard": -1,
+                "applied_soft": 480,
+                "applied_hard": 480
+              },
+              "AS": {
+                "inherited_soft": -1,
+                "inherited_hard": -1,
+                "applied_soft": 8589934592,
+                "applied_hard": 8589934592
+              },
+              "CORE": {
+                "inherited_soft": 0,
+                "inherited_hard": -1,
+                "applied_soft": 0,
+                "applied_hard": 0
+              },
+              "FSIZE": {
+                "inherited_soft": -1,
+                "inherited_hard": -1,
+                "applied_soft": 268435456,
+                "applied_hard": 268435456
+              },
+              "NOFILE": {
+                "inherited_soft": 1024,
+                "inherited_hard": 1048576,
+                "applied_soft": 64,
+                "applied_hard": 64
+              },
+              "NPROC": {
+                "inherited_soft": 63295,
+                "inherited_hard": 63295,
+                "applied_soft": 32,
+                "applied_hard": 32
+              }
+            },
+            "observed_stream_bytes": {
+              "stdout": 625,
+              "stderr": 0
+            },
+            "stop_reason": null,
+            "wall_seconds": 0.016068035998614505
+          }
+        }
+      ]
+    },
+    {
+      "attempt": "portable6",
+      "records": [
+        {
+          "kind": "compile",
+          "index": 1,
+          "argv": [
+            "/usr/bin/env",
+            "PYTHONPATH=/opt/ros/jazzy/lib/python3.12/site-packages",
+            "/usr/bin/cmake",
+            "-S",
+            "/home/codextransfer/predictive_motion/results/phase5/session-portable-cmake-v1-20261010-attempt6/source/tools/phase5_active_session_v1",
+            "-B",
+            "/home/codextransfer/predictive_motion/results/phase5/session-portable-cmake-v1-20261010-attempt6/configure-build-attempt1",
+            "-DCMAKE_BUILD_TYPE=Release",
+            "-DCMAKE_CXX_FLAGS_RELEASE=-O2 -DNDEBUG -fno-fast-math -ffp-contract=off",
+            "-DCMAKE_CXX_COMPILER=/usr/bin/x86_64-linux-gnu-g++-13",
+            "-DCMAKE_PREFIX_PATH=/opt/ros/jazzy;/home/codextransfer/predictive_motion/.vendor/osqp-1.0.0-install;/home/codextransfer/predictive_motion/install/predictive_motion_kinematics",
+            "-DBUILD_TESTING=ON",
+            "-DACTIVE_SESSION_MUJOCO_INCLUDE=/home/codextransfer/predictive_motion/.vendor/mujoco-3.3.7/include",
+            "-DACTIVE_SESSION_MUJOCO_LIBRARY=/home/codextransfer/predictive_motion/.vendor/mujoco-3.3.7/lib/libmujoco.so.3.3.7",
+            "-DACTIVE_SESSION_BUILD_NATIVE_ENTRY=ON",
+            "-DACTIVE_SESSION_CONSTANTS=/home/codextransfer/predictive_motion/results/phase5/integrated-first-cycle-v1-20261010/runtime-profile-version2/inputs/public_constants.json",
+            "-DACTIVE_SESSION_CONSTANTS_SHA256=d37c9a12539345fd1dbb6718cd273584140359ca2bd9834442bf2228e50f6bdd"
+          ],
+          "stage": "CHILD_EXIT_REAPED",
+          "actual_project_tool_entry": "Popen started; exit retained, compiler/link success only if exit0",
+          "exit": 0,
+          "first_error": null,
+          "applied_limits": {
+            "CPU": {
+              "inherited_soft": -1,
+              "inherited_hard": -1,
+              "applied_soft": 480,
+              "applied_hard": 480
+            },
+            "AS": {
+              "inherited_soft": -1,
+              "inherited_hard": -1,
+              "applied_soft": 8589934592,
+              "applied_hard": 8589934592
+            },
+            "CORE": {
+              "inherited_soft": 0,
+              "inherited_hard": -1,
+              "applied_soft": 0,
+              "applied_hard": 0
+            },
+            "FSIZE": {
+              "inherited_soft": -1,
+              "inherited_hard": -1,
+              "applied_soft": 268435456,
+              "applied_hard": 268435456
+            },
+            "NOFILE": {
+              "inherited_soft": 1024,
+              "inherited_hard": 1048576,
+              "applied_soft": 64,
+              "applied_hard": 64
+            },
+            "NPROC": {
+              "inherited_soft": 63295,
+              "inherited_hard": 63295,
+              "applied_soft": 32,
+              "applied_hard": 32
+            }
+          },
+          "observed_stream_bytes": {
+            "stdout": 2964,
+            "stderr": 0
+          },
+          "stop_reason": null,
+          "wall_seconds": 1.8749827970168553
+        },
+        {
+          "kind": "compile",
+          "index": 2,
+          "argv": [
+            "/usr/bin/cmake",
+            "--build",
+            "/home/codextransfer/predictive_motion/results/phase5/session-portable-cmake-v1-20261010-attempt6/configure-build-attempt1",
+            "--parallel",
+            "1",
+            "--target",
+            "active_session_invariants",
+            "active_session_box_tests",
+            "active_session_first_cycle",
+            "active_session_observer_tests"
+          ],
+          "stage": "CHILD_EXIT_REAPED",
+          "actual_project_tool_entry": "Popen started; exit retained, compiler/link success only if exit0",
+          "exit": 0,
+          "first_error": null,
+          "applied_limits": {
+            "CPU": {
+              "inherited_soft": -1,
+              "inherited_hard": -1,
+              "applied_soft": 480,
+              "applied_hard": 480
+            },
+            "AS": {
+              "inherited_soft": -1,
+              "inherited_hard": -1,
+              "applied_soft": 8589934592,
+              "applied_hard": 8589934592
+            },
+            "CORE": {
+              "inherited_soft": 0,
+              "inherited_hard": -1,
+              "applied_soft": 0,
+              "applied_hard": 0
+            },
+            "FSIZE": {
+              "inherited_soft": -1,
+              "inherited_hard": -1,
+              "applied_soft": 268435456,
+              "applied_hard": 268435456
+            },
+            "NOFILE": {
+              "inherited_soft": 1024,
+              "inherited_hard": 1048576,
+              "applied_soft": 64,
+              "applied_hard": 64
+            },
+            "NPROC": {
+              "inherited_soft": 63295,
+              "inherited_hard": 63295,
+              "applied_soft": 32,
+              "applied_hard": 32
+            }
+          },
+          "observed_stream_bytes": {
+            "stdout": 4919,
+            "stderr": 27816
+          },
+          "stop_reason": null,
+          "wall_seconds": 85.3745017600013
+        },
+        {
+          "kind": "compile",
+          "index": 3,
+          "argv": [
+            "/usr/bin/ctest",
+            "--test-dir",
+            "/home/codextransfer/predictive_motion/results/phase5/session-portable-cmake-v1-20261010-attempt6/configure-build-attempt1",
+            "--output-on-failure",
+            "--timeout",
+            "10"
+          ],
+          "stage": "CHILD_EXIT_REAPED",
+          "actual_project_tool_entry": "Popen started; exit retained, compiler/link success only if exit0",
+          "exit": 0,
+          "first_error": null,
+          "applied_limits": {
+            "CPU": {
+              "inherited_soft": -1,
+              "inherited_hard": -1,
+              "applied_soft": 480,
+              "applied_hard": 480
+            },
+            "AS": {
+              "inherited_soft": -1,
+              "inherited_hard": -1,
+              "applied_soft": 8589934592,
+              "applied_hard": 8589934592
+            },
+            "CORE": {
+              "inherited_soft": 0,
+              "inherited_hard": -1,
+              "applied_soft": 0,
+              "applied_hard": 0
+            },
+            "FSIZE": {
+              "inherited_soft": -1,
+              "inherited_hard": -1,
+              "applied_soft": 268435456,
+              "applied_hard": 268435456
+            },
+            "NOFILE": {
+              "inherited_soft": 1024,
+              "inherited_hard": 1048576,
+              "applied_soft": 64,
+              "applied_hard": 64
+            },
+            "NPROC": {
+              "inherited_soft": 63295,
+              "inherited_hard": 63295,
+              "applied_soft": 32,
+              "applied_hard": 32
+            }
+          },
+          "observed_stream_bytes": {
+            "stdout": 625,
+            "stderr": 0
+          },
+          "stop_reason": null,
+          "wall_seconds": 0.03399387199897319
+        }
+      ]
+    }
+  ],
+  "accepted_scope": "Portable3 prediction+pure2CTest andportable5 nativeoptional4targets+pure2CTest passed onrepair6 source. NoModel/nominal/QP/observer/plant entry was run bythis build/test task. CompilerAS8GiB isseparatefromruntime2GiB. Portable6 repeats fourtargetbuild andpure2CTest against currentA16/forensic source, withall48sourcepins independently matched.",
+  "retained_failures": {
+    "portable1": "OpenSSL imported target scope generate error, fixed parentfind_package",
+    "portable2": "Compiler AS2GiB exhaustion, prospective compile-only AS8GiB withpreflight",
+    "portable4": "ROS ament_package Python path absent, declared configure PYTHONPATH restored"
+  },
+  "current_source": "A16 plus forensic CMake: all48 actual source-copy manifest entries match current canonical bytes; four targets compile/link, pure2 CTest PASS, runtime entries not invoked.",
+  "phase5": "NOT_ACCEPTED",
+  "phase6": "NOT_STARTED",
+  "portable6_ready_sha256": "7b1825064d7a3a21dcaf4a5bcf0f40fafc37fe8021110eeda327215414cb9ed4",
+  "portable6_source_files_matched_current_canonical": 48
+}

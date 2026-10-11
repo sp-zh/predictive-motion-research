@@ -1,0 +1,304 @@
+{
+  "scope": "INDEPENDENT_ACTUAL_REPAIR14_SAVED_MATRIX_ALGEBRA_AND_READ_ONLY_SOURCE_NO_MODEL_SOLVER_NATIVE",
+  "source_sha256": "4520dc42521a2b2baa9af89737bb67f4fce27800143b300492f374d99812de55",
+  "input_pins": {
+    "/private/tmp/phase5_active_a_numeric_repair_checkpoint_v2_20261010/ACTIVE_A_NUMERIC_REPAIR_CHECKPOINT_READY.json": {
+      "bytes": 71764,
+      "sha256": "2e84145e5d8cfe6c69f955d2b0054b0bd76eca8267fc978bf8ba8cace1e071f4"
+    },
+    "/private/tmp/phase5_active_a_numeric_repair_checkpoint_v2_20261010/source-review-frozen/SOURCE_MANIFEST.json": {
+      "bytes": 2891,
+      "sha256": "97af4ff02f2791ba67fa7d554481528690b11184e3f673d91e48d829c376cc3f"
+    },
+    "/private/tmp/phase5_active_a_numeric_repair_checkpoint_v2_20261010/source-review-frozen/active_input_v1.json": {
+      "bytes": 322033,
+      "sha256": "73dcf2c1c733885b7266cff8883eadba55bd9c87d3ab2cdc2ee380e0ec5b49d6"
+    },
+    "/private/tmp/phase5_active_a_numeric_repair_checkpoint_v2_20261010/source-review-frozen/src/active_first_cycle.cpp": {
+      "bytes": 13555,
+      "sha256": "b435c52d53fc2b5c6d07d46906624051c3c575fffa8849c9cb7601f635a120c5"
+    },
+    "/private/tmp/phase5_active_a_numeric_repair_checkpoint_v2_20261010/source-review-frozen/src/affine_assembly.cpp": {
+      "bytes": 28981,
+      "sha256": "d478eda1f0fe97bfc41851515f4baa3e485fd4a57968a62dcb6233ae1157bbd5"
+    },
+    "/private/tmp/phase5_active_a_numeric_repair_checkpoint_v2_20261010/source-review-frozen/src/affine_assembly.hpp": {
+      "bytes": 6026,
+      "sha256": "6faee2961242052c7655da41e8988dd0844f14c3cfa885672aa7c03eaa1dcb57"
+    },
+    "/private/tmp/phase5_active_a_numeric_repair_checkpoint_v2_20261010/source-review-frozen/src/box_screen_tests.cpp": {
+      "bytes": 2954,
+      "sha256": "d922876babec2867dd1293bcee259ac12e4b2a6af5a30dd551209e097c0abaf8"
+    },
+    "/private/tmp/phase5_active_a_numeric_repair_checkpoint_v2_20261010/source-review-frozen/src/integrated_horizon_qp.cpp": {
+      "bytes": 36221,
+      "sha256": "905476ec9c43e0e4f447a4928421223715486fddfb12d658a0c24d3fc4fcf563"
+    },
+    "/private/tmp/phase5_active_a_numeric_repair_checkpoint_v2_20261010/source-review-frozen/src/integrated_horizon_qp.hpp": {
+      "bytes": 9527,
+      "sha256": "16da4d31d3003dc940234aa6baff6764d1aa6e029250a616f5575543e40eff86"
+    },
+    "/private/tmp/phase5_active_a_numeric_repair_checkpoint_v2_20261010/source-review-frozen/src/invariant_tests.cpp": {
+      "bytes": 4721,
+      "sha256": "f5a859d4cf9d79a5ae1b533b8dd62776f2bba6599dfdf691a2915ef3296a33f9"
+    },
+    "/private/tmp/phase5_active_a_numeric_repair_checkpoint_v2_20261010/source-review-frozen/src/linear_box_screen.hpp": {
+      "bytes": 3916,
+      "sha256": "b649eff43293a3078b7b46a0166fa0f8a2ac59f3a8496c8c73a98c275fed96d1"
+    },
+    "/private/tmp/phase5_active_a_numeric_repair_checkpoint_v2_20261010/source-review-frozen/src/lossless_evidence.cpp": {
+      "bytes": 14600,
+      "sha256": "9609fab7b29b7de2c72f266f4020a49289fc429ba520a7124c876c92c05b8633"
+    },
+    "/private/tmp/phase5_active_a_numeric_repair_checkpoint_v2_20261010/source-review-frozen/src/lossless_evidence.hpp": {
+      "bytes": 1817,
+      "sha256": "47703a81c47d04a3e22e3108c27b77447ec812b74995d030f0570ce2e1bd95a4"
+    },
+    "/private/tmp/phase5_active_a_numeric_repair_checkpoint_v2_20261010/source-review-frozen/src/model_boundary.cpp": {
+      "bytes": 14091,
+      "sha256": "04c94821ee57669431b8c7bceac1d66004fdfc8af11424008e89890a7486630a"
+    },
+    "/private/tmp/phase5_active_a_numeric_repair_checkpoint_v2_20261010/source-review-frozen/src/model_boundary.hpp": {
+      "bytes": 2528,
+      "sha256": "51b2e845860fb4faecfc95b7f9873439ab4e682adce37a290e6fe704ee48a9d9"
+    },
+    "/private/tmp/phase5_active_a_numeric_repair_checkpoint_v2_20261010/source-review-frozen/src/normalization.cpp": {
+      "bytes": 23976,
+      "sha256": "a0cd0c9cdb505f922f1744f24cf115057b6ba9f3a9bc1b3ed0c9bdb82d358ed5"
+    },
+    "/private/tmp/phase5_active_a_numeric_repair_checkpoint_v2_20261010/source-review-frozen/src/normalization.hpp": {
+      "bytes": 4288,
+      "sha256": "9456be5c205f23d2aa2210eac02286d030204a446af003ee85362b971ccb43d8"
+    },
+    "/private/tmp/phase5_active_a_numeric_repair_checkpoint_v2_20261010/source-review-frozen/src/observer_tests.cpp": {
+      "bytes": 3785,
+      "sha256": "d1ff998984981a5ded1e92b8d452503e8b489ecfb0d067fb04ff5fd616d02877"
+    },
+    "/private/tmp/phase5_active_a_numeric_repair_checkpoint_v2_20261010/source-review-frozen/src/runtime_observer.cpp": {
+      "bytes": 6658,
+      "sha256": "66a659f856d2fcebd220892a405500d98c6076a6e9d4655a66866d6fb10ab65d"
+    },
+    "/private/tmp/phase5_active_a_numeric_repair_checkpoint_v2_20261010/source-review-frozen/src/runtime_observer.hpp": {
+      "bytes": 3308,
+      "sha256": "0c43675ce98339a1030bc9625a248b61dd5bbfc0b2a9f8c135183d66da069cf1"
+    },
+    "/private/tmp/phase5_active_a_numeric_repair_checkpoint_v2_20261010/source-review-frozen/src/session_primitives.hpp": {
+      "bytes": 2259,
+      "sha256": "0b76bc232ed81dc9b4831617ae1690cfc287def914b8bca5f05ce6e6e25b6080"
+    },
+    "/private/tmp/phase5_active_a_numeric_repair_checkpoint_v2_20261010/source-review-frozen/src/task_local_provider.cpp": {
+      "bytes": 1839,
+      "sha256": "051b424236979f9fe7ea4cb96564f54969025c997bfba2c61d347a23f7fbae4c"
+    },
+    "/private/tmp/phase5_active_a_numeric_repair_checkpoint_v2_20261010/source-review-frozen/src/task_local_provider.hpp": {
+      "bytes": 640,
+      "sha256": "1819e2f626fb0ff65ad7e7e8de0b0b52f625e6bf435b073d7cca55722d76f093"
+    },
+    "/private/tmp/root_independent_repair14_scaled_reduction_review_20261010/backend_source_read_snapshot.cpp": {
+      "bytes": 23205,
+      "sha256": "7f0b10b09c66c078e2342ebd1cc44ba636f76a59c5d908b0a15392ea6d589507"
+    },
+    "/private/tmp/phase5_active_a_numeric_repair_checkpoint_v2_20261010/actual-dell/repair14/active_run_plan.json": {
+      "bytes": 481965,
+      "sha256": "90b9a8d43583ac503450cfe36f22eb2739086f3dabbb7ffe0212d29d4b0a7b6f"
+    },
+    "/private/tmp/phase5_active_a_numeric_repair_checkpoint_v2_20261010/actual-dell/repair14/run-attempt1/artifacts/inline_qp.bin": {
+      "bytes": 19485833,
+      "sha256": "b9621157c19d83f43153afdb0b5eee178a8efde8d09fcde506ec9afea190f48d"
+    },
+    "/private/tmp/phase5_active_a_functional_checkpoint_v1_20261010_collection2/ACTIVE_A_FUNCTIONAL_CHECKPOINT_READY.json": {
+      "bytes": 59278,
+      "sha256": "25b8572470112ed66f7c3735bca1e58b2aa16ca0ebbeea4bf8c1917de2fc4fdb"
+    },
+    "/private/tmp/phase5_active_a_functional_checkpoint_v1_20261010_collection2/actual-dell/repair6/run-attempt1/artifacts/inline_qp.bin": {
+      "bytes": 19485833,
+      "sha256": "6cddbd19e4a25dba53ca20e389ff2cf42b75283be39eea8812f103417da77fb1"
+    },
+    "/private/tmp/phase5_active_a_numeric_repair_checkpoint_v2_20261010/actual-dell/repair14/run-attempt1/artifacts/qp_equality_reduction.bin": {
+      "bytes": 16443878,
+      "sha256": "ab38190436781eb2260f8563abade9ac50d2834fde0e1167e56a0a3592c5308d"
+    },
+    "/private/tmp/phase5_active_a_numeric_repair_checkpoint_v2_20261010/actual-dell/repair14/run-attempt1/artifacts/solver_row_screen.bin": {
+      "bytes": 491572,
+      "sha256": "21ee3a0bf198977d34f67f676750329f5e0fcb5687152062c1b2692cf124420b"
+    },
+    "/private/tmp/phase5_active_a_numeric_repair_checkpoint_v2_20261010/actual-dell/repair14/run-attempt1/artifacts/candidate.bin": {
+      "bytes": 484,
+      "sha256": "2e07699aee1f9624754aa0dff4d3fabd1561c64ecd56c90b9f41875915ee6853"
+    },
+    "/private/tmp/phase5_active_a_numeric_repair_checkpoint_v2_20261010/ACTUAL_NUMERIC_REPAIR_OUTCOMES.json": {
+      "bytes": 2458177,
+      "sha256": "387de7055d53c221559f64f23b9431548915a1f5df510ec8781b67fa994b9874"
+    },
+    "/private/tmp/phase5_active_a_numeric_repair_checkpoint_v2_20261010/actual-dell/NATIVE_ELF_INDEX.json": {
+      "bytes": 1138,
+      "sha256": "d0b53a23a589ddd878432d80e0f67c82d89ac961d0ddd43437756a9cfc8f09cc"
+    },
+    "/private/tmp/phase5_active_a_numeric_repair_checkpoint_v2_20261010/actual-dell/repair14/run-attempt1/compile-1.result.json": {
+      "bytes": 1718,
+      "sha256": "68147941f2e061f8b49b8bf7d6e1a2991c2f1a4a42cbc47bafa48f88cf61daf5"
+    }
+  },
+  "source_manifest_payloads": 21,
+  "backend_snapshot_matches_frozen_runtime_pin": true,
+  "native_ELF_record": {
+    "path": "/home/codextransfer/predictive_motion/results/phase5/session-active-a-v1-20261010-repair14/link-attempt1/active_first_cycle",
+    "bytes": 19100848,
+    "sha256": "271fc0ebe24a52a20ddb2a969ac5b4639bb924ce1f0eaf873adb89db1a008b54",
+    "retained_dell_only": true
+  },
+  "native_ELF_bytes_locally_verified": false,
+  "original_array_values_bit_equal_actual_repair6": true,
+  "dimensions": {
+    "original_controls": 160,
+    "reduced_controls": 144,
+    "original_rows": 13156,
+    "solver_rows": 6034,
+    "omitted": 7106,
+    "eliminated": 16,
+    "cost_factor_rows": 741
+  },
+  "errors": {
+    "E_Z": 4.091964862189873e-18,
+    "E_p_rhs": 0.0,
+    "reduced_H": 3.469446951953614e-18,
+    "reduced_g": 1.3877787807814457e-17,
+    "reduced_A": 1.3877787807814457e-17,
+    "reduced_l": 0.0,
+    "reduced_u": 0.0,
+    "reduced_F": 6.938893903907228e-18,
+    "reduced_seed": 0.0,
+    "reduced_constant": 0.0,
+    "D": 0.0,
+    "R": 0.0,
+    "scaled_H": 0.0,
+    "scaled_g": 0.0,
+    "scaled_A": 0.0,
+    "scaled_l": 0.0,
+    "scaled_u": 0.0,
+    "scaled_F": 0.0,
+    "scaled_seed": 0.0,
+    "reduced_factor_gram": 6.938893903907228e-18,
+    "scaled_factor_gram": 5.551115123125783e-16
+  },
+  "fixed_vector_checks": [
+    {
+      "objective": 0.0,
+      "factor_cost": 0.0,
+      "gradient": 1.1102230246251565e-16,
+      "equality": 0.0,
+      "row_reconstruction": 0.0,
+      "back_transform": 0.0
+    },
+    {
+      "objective": 0.0,
+      "factor_cost": 0.0,
+      "gradient": 1.1102230246251565e-16,
+      "equality": 0.0,
+      "row_reconstruction": 0.0,
+      "back_transform": 0.0
+    },
+    {
+      "objective": 0.0,
+      "factor_cost": 1.0658141036401503e-14,
+      "gradient": 2.220446049250313e-16,
+      "equality": 1.3552527156068805e-20,
+      "row_reconstruction": 3.3881317890172014e-20,
+      "back_transform": 6.776263578034403e-21
+    },
+    {
+      "objective": 0.0,
+      "factor_cost": 3.552713678800501e-15,
+      "gradient": 2.220446049250313e-16,
+      "equality": 1.3552527156068805e-20,
+      "row_reconstruction": 2.710505431213761e-20,
+      "back_transform": 6.776263578034403e-21
+    },
+    {
+      "objective": 0.0,
+      "factor_cost": 7.105427357601002e-15,
+      "gradient": 4.440892098500626e-16,
+      "equality": 2.710505431213761e-20,
+      "row_reconstruction": 5.421010862427522e-20,
+      "back_transform": 6.776263578034403e-21
+    },
+    {
+      "objective": 0.0,
+      "factor_cost": 3.552713678800501e-15,
+      "gradient": 4.440892098500626e-16,
+      "equality": 2.710505431213761e-20,
+      "row_reconstruction": 2.710505431213761e-20,
+      "back_transform": 1.3552527156068805e-20
+    },
+    {
+      "objective": 0.0,
+      "factor_cost": 7.105427357601002e-15,
+      "gradient": 2.220446049250313e-16,
+      "equality": 1.3552527156068805e-20,
+      "row_reconstruction": 2.710505431213761e-20,
+      "back_transform": 6.776263578034403e-21
+    },
+    {
+      "objective": 0.0,
+      "factor_cost": 7.105427357601002e-15,
+      "gradient": 2.220446049250313e-16,
+      "equality": 1.3552527156068805e-20,
+      "row_reconstruction": 5.421010862427522e-20,
+      "back_transform": 1.3552527156068805e-20
+    }
+  ],
+  "D_range": [
+    6.057664443560153,
+    9.977633340218823
+  ],
+  "explicit_R_range": [
+    0.00035080735400066116,
+    1.0
+  ],
+  "row_count_explicit_R_less_than_one": 312,
+  "largest_solver_row_norm": 1.0,
+  "stored_numeric_slots": 2050202,
+  "saved_certificates": {
+    "equality_origin_error": 0.0,
+    "equality_map_error": 0.0,
+    "factor_error": 6.938893903907228e-18,
+    "scaled_factor_error": 4.440892098500625e-16
+  },
+  "actual_result": {
+    "status": 6,
+    "raw_status": 7,
+    "api_error": 0,
+    "iterations": 20000,
+    "controls_count": 0,
+    "scaled_Y_count": 0,
+    "reduced_Y_count": 0,
+    "backend_primal_transformed_units": 2.5616324764807403e-08,
+    "backend_dual_transformed_units": 3.1660640245311303e-06,
+    "setup_seconds": 0.033153558,
+    "solve_seconds": 15.74718021,
+    "rho_updates": 2,
+    "rho_estimate": 6.814342727330224,
+    "backend_internal_row_scale": [
+      1.0,
+      1.0
+    ],
+    "backend_internal_variable_scale": [
+      1.0,
+      1.0
+    ],
+    "preview": 0,
+    "tail": 0,
+    "request": 0,
+    "stop_reason": "only SOLVED admits candidate; native status retained"
+  },
+  "full_original_SI": {
+    "rows_scanned": 0,
+    "default_max_field": 0.0,
+    "worst_row": -1,
+    "interpretation": "UNMEASURED_NO_CANDIDATE_NOT_PASS"
+  },
+  "solver_calls": 0,
+  "Model_calls": 0,
+  "phase5": "NOT_ACCEPTED",
+  "elapsed_seconds": 0.2574258749373257
+}

@@ -1,4 +1,5 @@
 #pragma once
+#include "solver_forensics.hpp"
 // Versioned SOURCE candidate. No executable and no new witness/session factory.
 #include "affine_assembly.hpp"
 #include <predictive_motion_control/reactive_qp.hpp>
@@ -116,6 +117,15 @@ struct CandidateTiming {
   double original_observer_age=0,known_upstream_elapsed=0,connection_and_solver_elapsed=0,known_wall_age=0;
   bool known_current_age_within_policy=false,complete_online_observation_timing_proved=false;
 };
+struct EqualityReductionDiagnostics {
+ phase5_active_solver_forensics_v1::ForensicIterates forensic_iterates;
+ std::string stage="BEFORE_TERMINAL_STRUCTURE";bool numerical_validation_passed=false;
+ Eigen::MatrixXd transform,hessian,constraints,factor,equalities,solver_hessian,solver_constraints,solver_factor;
+ Eigen::VectorXd offset,gradient,seed,solver_coordinates,equality_rhs,lower,upper,variable_scale,row_scale,solver_gradient,solver_lower,solver_upper,solver_seed,reduced_coordinates;
+ std::vector<int> eliminated_rows,solver_rows;
+ std::uint64_t stored_numeric_slots=0;
+ double constant=0,equality_origin_error=0,equality_map_error=0,factor_consistency_error=0,scaled_factor_consistency_error=0;
+};
 class CandidateOutcome final {
  public:
   CandidateOutcome()=default;
@@ -131,16 +141,20 @@ class CandidateOutcome final {
   bool needsIndependentCandidateForward() const noexcept{return request_.has_value();}
   const std::vector<std::string>& omittedSolverIntervals() const noexcept{return omitted_solver_intervals_;}
   const std::array<unsigned,3>& screeningEnvironment() const noexcept{return screening_environment_;}
-  int originalMaximumViolationRow() const noexcept{return original_maximum_violation_row_;}
+  int backendMappedOriginalViolationRow() const noexcept{return backend_mapped_original_violation_row_;}
+  int fullOriginalMaximumViolationRow() const noexcept{return full_original_maximum_violation_row_;}
+  double fullOriginalMaximumViolation() const noexcept{return full_original_maximum_violation_;}
   const std::vector<int>& retainedSolverRows() const noexcept{return retained_solver_rows_;}
   const std::vector<int>& omittedSolverRows() const noexcept{return omitted_solver_rows_;}
+  const std::optional<EqualityReductionDiagnostics>& equalityReductionDiagnostics() const noexcept{return reduction_;}
   unsigned solveAttempts() const noexcept{return solve_attempts_;}
   unsigned solverWrapperEntries() const noexcept{return solver_wrapper_entries_;}
   // Fresh forward and original SI/geometry/physical-tail validation remain
   // required even when stopReason()==CANDIDATE_FORWARD_REQUIRED.
  private:
   std::vector<int> retained_solver_rows_,omitted_solver_rows_;
-  std::vector<std::string> omitted_solver_intervals_;std::array<unsigned,3> screening_environment_{};int original_maximum_violation_row_=-1;
+  std::vector<std::string> omitted_solver_intervals_;std::array<unsigned,3> screening_environment_{};int backend_mapped_original_violation_row_=-1,full_original_maximum_violation_row_=-1;double full_original_maximum_violation_=0;
+  std::optional<EqualityReductionDiagnostics> reduction_;
   qp::QpResult result_;std::string stop_reason_="NOT_ATTEMPTED";
   std::vector<double> violations_;std::optional<live::CommandProposal> preview_;
   std::optional<CandidateForwardRequest> request_,forensic_request_;

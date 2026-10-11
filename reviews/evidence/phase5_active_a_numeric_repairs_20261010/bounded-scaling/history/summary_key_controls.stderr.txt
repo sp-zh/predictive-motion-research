@@ -1,0 +1,5 @@
+Traceback (most recent call last):
+  File "/private/tmp/root_independent_repair14_scaled_reduction_review_20261010/check_saved_transform.py", line 122, in <module>
+    assert reported['controls']==[] and reported['backend_primal']==floats[1] and reported['backend_dual']==floats[2]
+           ~~~~~~~~^^^^^^^^^^^^
+KeyError: 'controls'

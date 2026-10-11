@@ -1,0 +1,102 @@
+{
+  "scope": "EXACT_STORED_ORIGINAL_IEEE_ROWS_AND_FRACTION_PROPORTIONS_ONLY_NO_SOLVER_MODEL",
+  "source_sha256": "abbde41517578b931070712ca48e1338eac3db39d219a834b792c70fa9c270d3",
+  "input_ready_sha256": "25b8572470112ed66f7c3735bca1e58b2aa16ca0ebbeea4bf8c1917de2fc4fdb",
+  "input_inline_sha256": "6cddbd19e4a25dba53ca20e389ff2cf42b75283be39eea8812f103417da77fb1",
+  "bit_identical_row_groups": 10184,
+  "bit_identical_repeated_groups": 2969,
+  "bit_identical_extra_rows": 2972,
+  "exact_numeric_row_groups_signed_zero_canonicalized": 10184,
+  "exact_proportional_groups": 10157,
+  "zero_row_count": 1,
+  "factor_diagnostics": {
+    "rows": 741,
+    "zero_coefficient_rows": 20,
+    "bit_identical_affine_residual_groups": 728,
+    "extra_identical_affine_residual_rows": 13,
+    "deleting_cost_rows_without_weight_constant_compensation_is_invalid": true,
+    "solver_uses_summed_H_not_F_rows_as_constraints": true
+  },
+  "native_repair6_info": {
+    "raw_status": 7,
+    "iterations": 4000,
+    "primal": 3.5005863120718406e-06,
+    "dual": 5.1870386790506894e-05,
+    "setup_seconds": 0.03074154,
+    "solve_seconds": 3.199009868,
+    "rho_updates": 2,
+    "rho_estimate": 2.500814874444487,
+    "initial_rho": 0.1,
+    "polish_status": 0,
+    "workspace_reused": 0,
+    "dual_reused": 0,
+    "controls": []
+  },
+  "elapsed_seconds": 1.7679592499043792,
+  "actual_A14_not_claimed": "No actual A14 solver diagnostics or transformed duplicate matrix parsed in this unit",
+  "cost_proportionality_scope": "Constraint duplication cannot establish cause of slow dual convergence; summing squared cost terms is not interchangeable with deleting them",
+  "phase5": "NOT_ACCEPTED"
+}
+{
+  "all_original": {
+    "rows": 13156,
+    "distinct_exact_proportional_groups": 10157,
+    "repeated_proportional_groups": 2974,
+    "retained_by_exact_dominance": 10189,
+    "removable_nonmandatory": 2967,
+    "removal_uses_two_retained_side_owners": 4,
+    "removal_semantic_groups": {
+      "command/C": 7,
+      "command/w": 14,
+      "progress/r": 123,
+      "progress/s": 21,
+      "progress/bernstein": 2,
+      "physical/q": 2800
+    },
+    "mandatory_rows_all_preserved": true
+  },
+  "actual_repair6_retained": {
+    "rows": 5472,
+    "distinct_exact_proportional_groups": 5303,
+    "repeated_proportional_groups": 162,
+    "retained_by_exact_dominance": 5320,
+    "removable_nonmandatory": 152,
+    "removal_uses_two_retained_side_owners": 4,
+    "removal_semantic_groups": {
+      "progress/r": 123,
+      "progress/s": 21,
+      "progress/bernstein": 1,
+      "command/w": 7
+    },
+    "mandatory_rows_all_preserved": true
+  },
+  "repair6_matrix_with_trust_restored": {
+    "rows": 6050,
+    "distinct_exact_proportional_groups": 5865,
+    "repeated_proportional_groups": 174,
+    "retained_by_exact_dominance": 5898,
+    "removable_nonmandatory": 152,
+    "removal_uses_two_retained_side_owners": 4,
+    "removal_semantic_groups": {
+      "progress/r": 123,
+      "progress/s": 21,
+      "progress/bernstein": 1,
+      "command/w": 7
+    },
+    "mandatory_rows_all_preserved": true
+  },
+  "trust_restored_after_explicit16_equality_elimination": {
+    "rows": 6034,
+    "distinct_exact_proportional_groups": 5865,
+    "repeated_proportional_groups": 158,
+    "retained_by_exact_dominance": 5890,
+    "removable_nonmandatory": 144,
+    "removal_uses_two_retained_side_owners": 4,
+    "removal_semantic_groups": {
+      "progress/r": 122,
+      "progress/s": 21,
+      "progress/bernstein": 1
+    },
+    "mandatory_rows_all_preserved": true
+  }
+}

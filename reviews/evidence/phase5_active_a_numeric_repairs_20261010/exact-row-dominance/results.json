@@ -1,0 +1,989 @@
+{
+  "scope": "EXACT_STORED_ORIGINAL_IEEE_ROWS_AND_FRACTION_PROPORTIONS_ONLY_NO_SOLVER_MODEL",
+  "source_sha256": "abbde41517578b931070712ca48e1338eac3db39d219a834b792c70fa9c270d3",
+  "input_ready_sha256": "25b8572470112ed66f7c3735bca1e58b2aa16ca0ebbeea4bf8c1917de2fc4fdb",
+  "input_inline_sha256": "6cddbd19e4a25dba53ca20e389ff2cf42b75283be39eea8812f103417da77fb1",
+  "bit_identical_row_groups": 10184,
+  "bit_identical_repeated_groups": 2969,
+  "bit_identical_extra_rows": 2972,
+  "exact_numeric_row_groups_signed_zero_canonicalized": 10184,
+  "exact_proportional_groups": 10157,
+  "zero_row_count": 1,
+  "profiles": {
+    "all_original": {
+      "rows": 13156,
+      "distinct_exact_proportional_groups": 10157,
+      "repeated_proportional_groups": 2974,
+      "retained_by_exact_dominance": 10189,
+      "removable_nonmandatory": 2967,
+      "removal_uses_two_retained_side_owners": 4,
+      "removal_semantic_groups": {
+        "command/C": 7,
+        "command/w": 14,
+        "progress/r": 123,
+        "progress/s": 21,
+        "progress/bernstein": 2,
+        "physical/q": 2800
+      },
+      "mandatory_rows_all_preserved": true,
+      "representative_groups": [
+        {
+          "rows": [
+            0,
+            1,
+            17,
+            18
+          ],
+          "labels": [
+            "input/0/0",
+            "feedback_jerk/0/0",
+            "command/C/tick/1/0",
+            "command/w/tick/1/0"
+          ],
+          "retained": [
+            0,
+            1
+          ],
+          "lower_owner": 1,
+          "upper_owner": 1
+        },
+        {
+          "rows": [
+            2,
+            3,
+            19,
+            20
+          ],
+          "labels": [
+            "input/0/1",
+            "feedback_jerk/0/1",
+            "command/C/tick/1/1",
+            "command/w/tick/1/1"
+          ],
+          "retained": [
+            2,
+            3
+          ],
+          "lower_owner": 3,
+          "upper_owner": 3
+        },
+        {
+          "rows": [
+            4,
+            5,
+            21,
+            22
+          ],
+          "labels": [
+            "input/0/2",
+            "feedback_jerk/0/2",
+            "command/C/tick/1/2",
+            "command/w/tick/1/2"
+          ],
+          "retained": [
+            4,
+            5
+          ],
+          "lower_owner": 5,
+          "upper_owner": 5
+        },
+        {
+          "rows": [
+            6,
+            7,
+            23,
+            24
+          ],
+          "labels": [
+            "input/0/3",
+            "feedback_jerk/0/3",
+            "command/C/tick/1/3",
+            "command/w/tick/1/3"
+          ],
+          "retained": [
+            6,
+            7
+          ],
+          "lower_owner": 7,
+          "upper_owner": 7
+        },
+        {
+          "rows": [
+            8,
+            9,
+            25,
+            26
+          ],
+          "labels": [
+            "input/0/4",
+            "feedback_jerk/0/4",
+            "command/C/tick/1/4",
+            "command/w/tick/1/4"
+          ],
+          "retained": [
+            8,
+            9
+          ],
+          "lower_owner": 9,
+          "upper_owner": 9
+        },
+        {
+          "rows": [
+            10,
+            11,
+            27,
+            28
+          ],
+          "labels": [
+            "input/0/5",
+            "feedback_jerk/0/5",
+            "command/C/tick/1/5",
+            "command/w/tick/1/5"
+          ],
+          "retained": [
+            10,
+            11
+          ],
+          "lower_owner": 11,
+          "upper_owner": 11
+        },
+        {
+          "rows": [
+            12,
+            13,
+            29,
+            30
+          ],
+          "labels": [
+            "input/0/6",
+            "feedback_jerk/0/6",
+            "command/C/tick/1/6",
+            "command/w/tick/1/6"
+          ],
+          "retained": [
+            12,
+            13
+          ],
+          "lower_owner": 13,
+          "upper_owner": 13
+        },
+        {
+          "rows": [
+            14,
+            15,
+            31,
+            32,
+            33,
+            34,
+            35,
+            36,
+            53,
+            4377,
+            4399
+          ],
+          "labels": [
+            "input/0/7",
+            "feedback_jerk/0/7",
+            "progress/s/tick/1",
+            "progress/r/tick/1",
+            "progress/s/half/0",
+            "progress/r/half/0",
+            "progress/s/half/1",
+            "progress/r/half/1",
+            "progress/bernstein/cell/1",
+            "trust/s/half/0",
+            "trust/s/half/1"
+          ],
+          "retained": [
+            14,
+            15,
+            31,
+            4377,
+            4399
+          ],
+          "lower_owner": 31,
+          "upper_owner": 15
+        },
+        {
+          "rows": [
+            68,
+            72,
+            4443
+          ],
+          "labels": [
+            "progress/s/tick/2",
+            "progress/s/half/3",
+            "trust/s/half/3"
+          ],
+          "retained": [
+            68,
+            4443
+          ],
+          "lower_owner": 68,
+          "upper_owner": 4443
+        },
+        {
+          "rows": [
+            69,
+            73
+          ],
+          "labels": [
+            "progress/r/tick/2",
+            "progress/r/half/3"
+          ],
+          "retained": [
+            69
+          ],
+          "lower_owner": 69,
+          "upper_owner": 69
+        },
+        {
+          "rows": [
+            70,
+            4421
+          ],
+          "labels": [
+            "progress/s/half/2",
+            "trust/s/half/2"
+          ],
+          "retained": [
+            70,
+            4421
+          ],
+          "lower_owner": 70,
+          "upper_owner": 4421
+        },
+        {
+          "rows": [
+            105,
+            109,
+            4487
+          ],
+          "labels": [
+            "progress/s/tick/3",
+            "progress/s/half/5",
+            "trust/s/half/5"
+          ],
+          "retained": [
+            105,
+            4487
+          ],
+          "lower_owner": 105,
+          "upper_owner": 4487
+        }
+      ]
+    },
+    "actual_repair6_retained": {
+      "rows": 5472,
+      "distinct_exact_proportional_groups": 5303,
+      "repeated_proportional_groups": 162,
+      "retained_by_exact_dominance": 5320,
+      "removable_nonmandatory": 152,
+      "removal_uses_two_retained_side_owners": 4,
+      "removal_semantic_groups": {
+        "progress/r": 123,
+        "progress/s": 21,
+        "progress/bernstein": 1,
+        "command/w": 7
+      },
+      "mandatory_rows_all_preserved": true,
+      "representative_groups": [
+        {
+          "rows": [
+            0,
+            1
+          ],
+          "labels": [
+            "input/0/0",
+            "feedback_jerk/0/0"
+          ],
+          "retained": [
+            0,
+            1
+          ],
+          "lower_owner": 1,
+          "upper_owner": 1
+        },
+        {
+          "rows": [
+            2,
+            3
+          ],
+          "labels": [
+            "input/0/1",
+            "feedback_jerk/0/1"
+          ],
+          "retained": [
+            2,
+            3
+          ],
+          "lower_owner": 3,
+          "upper_owner": 3
+        },
+        {
+          "rows": [
+            4,
+            5
+          ],
+          "labels": [
+            "input/0/2",
+            "feedback_jerk/0/2"
+          ],
+          "retained": [
+            4,
+            5
+          ],
+          "lower_owner": 5,
+          "upper_owner": 5
+        },
+        {
+          "rows": [
+            6,
+            7
+          ],
+          "labels": [
+            "input/0/3",
+            "feedback_jerk/0/3"
+          ],
+          "retained": [
+            6,
+            7
+          ],
+          "lower_owner": 7,
+          "upper_owner": 7
+        },
+        {
+          "rows": [
+            8,
+            9
+          ],
+          "labels": [
+            "input/0/4",
+            "feedback_jerk/0/4"
+          ],
+          "retained": [
+            8,
+            9
+          ],
+          "lower_owner": 9,
+          "upper_owner": 9
+        },
+        {
+          "rows": [
+            10,
+            11
+          ],
+          "labels": [
+            "input/0/5",
+            "feedback_jerk/0/5"
+          ],
+          "retained": [
+            10,
+            11
+          ],
+          "lower_owner": 11,
+          "upper_owner": 11
+        },
+        {
+          "rows": [
+            12,
+            13
+          ],
+          "labels": [
+            "input/0/6",
+            "feedback_jerk/0/6"
+          ],
+          "retained": [
+            12,
+            13
+          ],
+          "lower_owner": 13,
+          "upper_owner": 13
+        },
+        {
+          "rows": [
+            14,
+            15,
+            31,
+            32,
+            33,
+            34,
+            35,
+            36,
+            53
+          ],
+          "labels": [
+            "input/0/7",
+            "feedback_jerk/0/7",
+            "progress/s/tick/1",
+            "progress/r/tick/1",
+            "progress/s/half/0",
+            "progress/r/half/0",
+            "progress/s/half/1",
+            "progress/r/half/1",
+            "progress/bernstein/cell/1"
+          ],
+          "retained": [
+            14,
+            15,
+            31
+          ],
+          "lower_owner": 31,
+          "upper_owner": 15
+        },
+        {
+          "rows": [
+            68,
+            72
+          ],
+          "labels": [
+            "progress/s/tick/2",
+            "progress/s/half/3"
+          ],
+          "retained": [
+            68
+          ],
+          "lower_owner": 68,
+          "upper_owner": 68
+        },
+        {
+          "rows": [
+            69,
+            73
+          ],
+          "labels": [
+            "progress/r/tick/2",
+            "progress/r/half/3"
+          ],
+          "retained": [
+            69
+          ],
+          "lower_owner": 69,
+          "upper_owner": 69
+        },
+        {
+          "rows": [
+            105,
+            109
+          ],
+          "labels": [
+            "progress/s/tick/3",
+            "progress/s/half/5"
+          ],
+          "retained": [
+            105
+          ],
+          "lower_owner": 105,
+          "upper_owner": 105
+        },
+        {
+          "rows": [
+            106,
+            110
+          ],
+          "labels": [
+            "progress/r/tick/3",
+            "progress/r/half/5"
+          ],
+          "retained": [
+            106
+          ],
+          "lower_owner": 106,
+          "upper_owner": 106
+        }
+      ]
+    },
+    "repair6_matrix_with_trust_restored": {
+      "rows": 6050,
+      "distinct_exact_proportional_groups": 5865,
+      "repeated_proportional_groups": 174,
+      "retained_by_exact_dominance": 5898,
+      "removable_nonmandatory": 152,
+      "removal_uses_two_retained_side_owners": 4,
+      "removal_semantic_groups": {
+        "progress/r": 123,
+        "progress/s": 21,
+        "progress/bernstein": 1,
+        "command/w": 7
+      },
+      "mandatory_rows_all_preserved": true,
+      "representative_groups": [
+        {
+          "rows": [
+            0,
+            1
+          ],
+          "labels": [
+            "input/0/0",
+            "feedback_jerk/0/0"
+          ],
+          "retained": [
+            0,
+            1
+          ],
+          "lower_owner": 1,
+          "upper_owner": 1
+        },
+        {
+          "rows": [
+            2,
+            3
+          ],
+          "labels": [
+            "input/0/1",
+            "feedback_jerk/0/1"
+          ],
+          "retained": [
+            2,
+            3
+          ],
+          "lower_owner": 3,
+          "upper_owner": 3
+        },
+        {
+          "rows": [
+            4,
+            5
+          ],
+          "labels": [
+            "input/0/2",
+            "feedback_jerk/0/2"
+          ],
+          "retained": [
+            4,
+            5
+          ],
+          "lower_owner": 5,
+          "upper_owner": 5
+        },
+        {
+          "rows": [
+            6,
+            7
+          ],
+          "labels": [
+            "input/0/3",
+            "feedback_jerk/0/3"
+          ],
+          "retained": [
+            6,
+            7
+          ],
+          "lower_owner": 7,
+          "upper_owner": 7
+        },
+        {
+          "rows": [
+            8,
+            9
+          ],
+          "labels": [
+            "input/0/4",
+            "feedback_jerk/0/4"
+          ],
+          "retained": [
+            8,
+            9
+          ],
+          "lower_owner": 9,
+          "upper_owner": 9
+        },
+        {
+          "rows": [
+            10,
+            11
+          ],
+          "labels": [
+            "input/0/5",
+            "feedback_jerk/0/5"
+          ],
+          "retained": [
+            10,
+            11
+          ],
+          "lower_owner": 11,
+          "upper_owner": 11
+        },
+        {
+          "rows": [
+            12,
+            13
+          ],
+          "labels": [
+            "input/0/6",
+            "feedback_jerk/0/6"
+          ],
+          "retained": [
+            12,
+            13
+          ],
+          "lower_owner": 13,
+          "upper_owner": 13
+        },
+        {
+          "rows": [
+            14,
+            15,
+            31,
+            32,
+            33,
+            34,
+            35,
+            36,
+            53,
+            4377,
+            4399
+          ],
+          "labels": [
+            "input/0/7",
+            "feedback_jerk/0/7",
+            "progress/s/tick/1",
+            "progress/r/tick/1",
+            "progress/s/half/0",
+            "progress/r/half/0",
+            "progress/s/half/1",
+            "progress/r/half/1",
+            "progress/bernstein/cell/1",
+            "trust/s/half/0",
+            "trust/s/half/1"
+          ],
+          "retained": [
+            14,
+            15,
+            31,
+            4377,
+            4399
+          ],
+          "lower_owner": 31,
+          "upper_owner": 15
+        },
+        {
+          "rows": [
+            68,
+            72,
+            4443
+          ],
+          "labels": [
+            "progress/s/tick/2",
+            "progress/s/half/3",
+            "trust/s/half/3"
+          ],
+          "retained": [
+            68,
+            4443
+          ],
+          "lower_owner": 68,
+          "upper_owner": 4443
+        },
+        {
+          "rows": [
+            69,
+            73
+          ],
+          "labels": [
+            "progress/r/tick/2",
+            "progress/r/half/3"
+          ],
+          "retained": [
+            69
+          ],
+          "lower_owner": 69,
+          "upper_owner": 69
+        },
+        {
+          "rows": [
+            70,
+            4421
+          ],
+          "labels": [
+            "progress/s/half/2",
+            "trust/s/half/2"
+          ],
+          "retained": [
+            70,
+            4421
+          ],
+          "lower_owner": 70,
+          "upper_owner": 4421
+        },
+        {
+          "rows": [
+            105,
+            109,
+            4487
+          ],
+          "labels": [
+            "progress/s/tick/3",
+            "progress/s/half/5",
+            "trust/s/half/5"
+          ],
+          "retained": [
+            105,
+            4487
+          ],
+          "lower_owner": 105,
+          "upper_owner": 4487
+        }
+      ]
+    },
+    "trust_restored_after_explicit16_equality_elimination": {
+      "rows": 6034,
+      "distinct_exact_proportional_groups": 5865,
+      "repeated_proportional_groups": 158,
+      "retained_by_exact_dominance": 5890,
+      "removable_nonmandatory": 144,
+      "removal_uses_two_retained_side_owners": 4,
+      "removal_semantic_groups": {
+        "progress/r": 122,
+        "progress/s": 21,
+        "progress/bernstein": 1
+      },
+      "mandatory_rows_all_preserved": true,
+      "representative_groups": [
+        {
+          "rows": [
+            0,
+            1
+          ],
+          "labels": [
+            "input/0/0",
+            "feedback_jerk/0/0"
+          ],
+          "retained": [
+            0,
+            1
+          ],
+          "lower_owner": 1,
+          "upper_owner": 1
+        },
+        {
+          "rows": [
+            2,
+            3
+          ],
+          "labels": [
+            "input/0/1",
+            "feedback_jerk/0/1"
+          ],
+          "retained": [
+            2,
+            3
+          ],
+          "lower_owner": 3,
+          "upper_owner": 3
+        },
+        {
+          "rows": [
+            4,
+            5
+          ],
+          "labels": [
+            "input/0/2",
+            "feedback_jerk/0/2"
+          ],
+          "retained": [
+            4,
+            5
+          ],
+          "lower_owner": 5,
+          "upper_owner": 5
+        },
+        {
+          "rows": [
+            6,
+            7
+          ],
+          "labels": [
+            "input/0/3",
+            "feedback_jerk/0/3"
+          ],
+          "retained": [
+            6,
+            7
+          ],
+          "lower_owner": 7,
+          "upper_owner": 7
+        },
+        {
+          "rows": [
+            8,
+            9
+          ],
+          "labels": [
+            "input/0/4",
+            "feedback_jerk/0/4"
+          ],
+          "retained": [
+            8,
+            9
+          ],
+          "lower_owner": 9,
+          "upper_owner": 9
+        },
+        {
+          "rows": [
+            10,
+            11
+          ],
+          "labels": [
+            "input/0/5",
+            "feedback_jerk/0/5"
+          ],
+          "retained": [
+            10,
+            11
+          ],
+          "lower_owner": 11,
+          "upper_owner": 11
+        },
+        {
+          "rows": [
+            12,
+            13
+          ],
+          "labels": [
+            "input/0/6",
+            "feedback_jerk/0/6"
+          ],
+          "retained": [
+            12,
+            13
+          ],
+          "lower_owner": 13,
+          "upper_owner": 13
+        },
+        {
+          "rows": [
+            14,
+            15,
+            31,
+            32,
+            33,
+            34,
+            35,
+            36,
+            53,
+            4377,
+            4399
+          ],
+          "labels": [
+            "input/0/7",
+            "feedback_jerk/0/7",
+            "progress/s/tick/1",
+            "progress/r/tick/1",
+            "progress/s/half/0",
+            "progress/r/half/0",
+            "progress/s/half/1",
+            "progress/r/half/1",
+            "progress/bernstein/cell/1",
+            "trust/s/half/0",
+            "trust/s/half/1"
+          ],
+          "retained": [
+            14,
+            15,
+            31,
+            4377,
+            4399
+          ],
+          "lower_owner": 31,
+          "upper_owner": 15
+        },
+        {
+          "rows": [
+            68,
+            72,
+            4443
+          ],
+          "labels": [
+            "progress/s/tick/2",
+            "progress/s/half/3",
+            "trust/s/half/3"
+          ],
+          "retained": [
+            68,
+            4443
+          ],
+          "lower_owner": 68,
+          "upper_owner": 4443
+        },
+        {
+          "rows": [
+            69,
+            73
+          ],
+          "labels": [
+            "progress/r/tick/2",
+            "progress/r/half/3"
+          ],
+          "retained": [
+            69
+          ],
+          "lower_owner": 69,
+          "upper_owner": 69
+        },
+        {
+          "rows": [
+            70,
+            4421
+          ],
+          "labels": [
+            "progress/s/half/2",
+            "trust/s/half/2"
+          ],
+          "retained": [
+            70,
+            4421
+          ],
+          "lower_owner": 70,
+          "upper_owner": 4421
+        },
+        {
+          "rows": [
+            105,
+            109,
+            4487
+          ],
+          "labels": [
+            "progress/s/tick/3",
+            "progress/s/half/5",
+            "trust/s/half/5"
+          ],
+          "retained": [
+            105,
+            4487
+          ],
+          "lower_owner": 105,
+          "upper_owner": 4487
+        }
+      ]
+    }
+  },
+  "factor_diagnostics": {
+    "rows": 741,
+    "zero_coefficient_rows": 20,
+    "bit_identical_affine_residual_groups": 728,
+    "extra_identical_affine_residual_rows": 13,
+    "deleting_cost_rows_without_weight_constant_compensation_is_invalid": true,
+    "solver_uses_summed_H_not_F_rows_as_constraints": true
+  },
+  "native_repair6_info": {
+    "raw_status": 7,
+    "iterations": 4000,
+    "primal": 3.5005863120718406e-06,
+    "dual": 5.1870386790506894e-05,
+    "setup_seconds": 0.03074154,
+    "solve_seconds": 3.199009868,
+    "rho_updates": 2,
+    "rho_estimate": 2.500814874444487,
+    "initial_rho": 0.1,
+    "polish_status": 0,
+    "workspace_reused": 0,
+    "dual_reused": 0,
+    "controls": []
+  },
+  "elapsed_seconds": 1.7679592499043792,
+  "actual_A14_not_claimed": "No actual A14 solver diagnostics or transformed duplicate matrix parsed in this unit",
+  "cost_proportionality_scope": "Constraint duplication cannot establish cause of slow dual convergence; summing squared cost terms is not interchangeable with deleting them",
+  "phase5": "NOT_ACCEPTED"
+}

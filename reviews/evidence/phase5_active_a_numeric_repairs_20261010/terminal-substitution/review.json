@@ -1,0 +1,29 @@
+{
+  "verdict": "PASS_ACTUAL_MATRIX_EQUALITY_NULLSPACE_AND_FULL_SPD_WHITENING_ALGEBRA_ONLY",
+  "result": "results.json",
+  "scope": "OFFLINE_ACTUAL_LINEAR_QP_MATRICES_NO_NATIVE_MODEL_SOLVER",
+  "exact_rank": 16,
+  "reduced_variables": 144,
+  "full_H_condition": 540.7034112255187,
+  "reduced_H_condition": 134.26645098951684,
+  "whitened_H_condition": 1.0000000000000058,
+  "identity_errors": {
+    "nullspace_equality": 1.9581749673234422e-16,
+    "orthonormal_basis": 9.992007221626409e-16,
+    "whitening_triangular_identity": 2.842571298996302e-16,
+    "whitening_H_identity": 4.884981308350689e-15,
+    "whitening_factor_identity": 4.551914400963142e-15
+  },
+  "maximum_errors_by_group": {
+    "_equality": 1.9581749673234422e-16,
+    "_objective": 3.552713678800501e-15,
+    "_gradient": 2.1094237467877974e-15,
+    "_rows": 5.551115123125783e-17,
+    "_slack": 3.552713678800501e-15,
+    "_FD_": 4.0860710648349396e-10
+  },
+  "actual_candidate_or_speed_claim": false,
+  "nonzero_particular_same_equality_set_tested": true,
+  "random_vectors_are_not_feasible_candidates": true,
+  "phase5": "NOT_ACCEPTED"
+}

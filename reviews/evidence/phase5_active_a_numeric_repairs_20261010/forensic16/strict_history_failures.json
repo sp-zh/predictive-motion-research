@@ -1,0 +1,2043 @@
+[
+  {
+    "kind": "command_jerk",
+    "value": 20.000000471441922,
+    "limit": 20.0,
+    "excess": 4.7144192194537027e-07,
+    "cell": 0,
+    "tick": 1,
+    "joint": 0
+  },
+  {
+    "kind": "command_jerk",
+    "value": 20.000000611209728,
+    "limit": 20.0,
+    "excess": 6.112097281629758e-07,
+    "cell": 0,
+    "tick": 1,
+    "joint": 2
+  },
+  {
+    "kind": "command_jerk",
+    "value": 20.000003848219855,
+    "limit": 20.0,
+    "excess": 3.848219854774015e-06,
+    "cell": 0,
+    "tick": 1,
+    "joint": 3
+  },
+  {
+    "kind": "command_jerk",
+    "value": 20.00000023319865,
+    "limit": 20.0,
+    "excess": 2.3319865150028818e-07,
+    "cell": 0,
+    "tick": 1,
+    "joint": 6
+  },
+  {
+    "kind": "half_progress_domain",
+    "cell": 0,
+    "tick": 1,
+    "half": 1,
+    "s": -1.5685727265622572e-22,
+    "r": -1.5685727265622573e-19
+  },
+  {
+    "kind": "half_progress_domain",
+    "cell": 0,
+    "tick": 1,
+    "half": 2,
+    "s": -6.274290906249029e-22,
+    "r": -3.1371454531245145e-19
+  },
+  {
+    "kind": "recursive_progress_domain",
+    "cell": 0,
+    "tick": 1,
+    "s": -6.274290906249029e-22,
+    "r": -3.1371454531245145e-19
+  },
+  {
+    "kind": "command_jerk",
+    "value": 20.000000278561597,
+    "limit": 20.0,
+    "excess": 2.7856159690031745e-07,
+    "cell": 1,
+    "tick": 2,
+    "joint": 0
+  },
+  {
+    "kind": "command_jerk",
+    "value": 20.00000096530834,
+    "limit": 20.0,
+    "excess": 9.653083417049402e-07,
+    "cell": 1,
+    "tick": 2,
+    "joint": 2
+  },
+  {
+    "kind": "command_jerk",
+    "value": 20.000002967849703,
+    "limit": 20.0,
+    "excess": 2.9678497028839956e-06,
+    "cell": 1,
+    "tick": 2,
+    "joint": 3
+  },
+  {
+    "kind": "command_jerk",
+    "value": 20.000000196770262,
+    "limit": 20.0,
+    "excess": 1.9677026230624506e-07,
+    "cell": 1,
+    "tick": 2,
+    "joint": 6
+  },
+  {
+    "kind": "command_jerk",
+    "value": 20.000000132210157,
+    "limit": 20.0,
+    "excess": 1.322101574885437e-07,
+    "cell": 2,
+    "tick": 3,
+    "joint": 0
+  },
+  {
+    "kind": "command_jerk",
+    "value": 20.000001143157455,
+    "limit": 20.0,
+    "excess": 1.1431574549192192e-06,
+    "cell": 2,
+    "tick": 3,
+    "joint": 2
+  },
+  {
+    "kind": "command_jerk",
+    "value": 20.00000218690288,
+    "limit": 20.0,
+    "excess": 2.1869028792309564e-06,
+    "cell": 2,
+    "tick": 3,
+    "joint": 3
+  },
+  {
+    "kind": "command_jerk",
+    "value": 20.000000162479775,
+    "limit": 20.0,
+    "excess": 1.62479775411839e-07,
+    "cell": 2,
+    "tick": 3,
+    "joint": 6
+  },
+  {
+    "kind": "half_progress_domain",
+    "cell": 2,
+    "tick": 4,
+    "half": 2,
+    "s": 1.8636074965866996e-20,
+    "r": -1.707904391981828e-19
+  },
+  {
+    "kind": "recursive_progress_domain",
+    "cell": 2,
+    "tick": 4,
+    "s": 1.863607496586699e-20,
+    "r": -1.707904391981828e-19
+  },
+  {
+    "kind": "command_jerk",
+    "value": 20.000000992352273,
+    "limit": 20.0,
+    "excess": 9.923522732435686e-07,
+    "cell": 3,
+    "tick": 5,
+    "joint": 2
+  },
+  {
+    "kind": "command_jerk",
+    "value": 20.000000867422234,
+    "limit": 20.0,
+    "excess": 8.674222335969262e-07,
+    "cell": 3,
+    "tick": 5,
+    "joint": 3
+  },
+  {
+    "kind": "command_jerk",
+    "value": 20.0000000977894,
+    "limit": 20.0,
+    "excess": 9.778939968896339e-08,
+    "cell": 3,
+    "tick": 5,
+    "joint": 6
+  },
+  {
+    "kind": "command_jerk",
+    "value": 20.000000914949815,
+    "limit": 20.0,
+    "excess": 9.149498154670255e-07,
+    "cell": 5,
+    "tick": 10,
+    "joint": 3
+  },
+  {
+    "kind": "command_jerk",
+    "value": 20.000002432498164,
+    "limit": 20.0,
+    "excess": 2.4324981637846577e-06,
+    "cell": 6,
+    "tick": 13,
+    "joint": 2
+  },
+  {
+    "kind": "command_jerk",
+    "value": 20.000001424347012,
+    "limit": 20.0,
+    "excess": 1.4243470118913137e-06,
+    "cell": 6,
+    "tick": 13,
+    "joint": 3
+  },
+  {
+    "kind": "command_jerk",
+    "value": 20.00000008133939,
+    "limit": 20.0,
+    "excess": 8.13393903342785e-08,
+    "cell": 6,
+    "tick": 13,
+    "joint": 6
+  },
+  {
+    "kind": "half_progress_domain",
+    "cell": 6,
+    "tick": 16,
+    "half": 2,
+    "s": 6.556313412211042e-19,
+    "r": -1.1327695253664966e-18
+  },
+  {
+    "kind": "recursive_progress_domain",
+    "cell": 6,
+    "tick": 16,
+    "s": 6.556313412211041e-19,
+    "r": -1.1327695253664981e-18
+  },
+  {
+    "kind": "command_jerk",
+    "value": 20.000004465759847,
+    "limit": 20.0,
+    "excess": 4.465759847249728e-06,
+    "cell": 7,
+    "tick": 17,
+    "joint": 2
+  },
+  {
+    "kind": "command_jerk",
+    "value": 20.00000163998074,
+    "limit": 20.0,
+    "excess": 1.6399807414302359e-06,
+    "cell": 7,
+    "tick": 17,
+    "joint": 3
+  },
+  {
+    "kind": "command_jerk",
+    "value": 20.000000132064656,
+    "limit": 20.0,
+    "excess": 1.3206465609982843e-07,
+    "cell": 7,
+    "tick": 17,
+    "joint": 6
+  },
+  {
+    "kind": "command_jerk",
+    "value": 20.000005781874812,
+    "limit": 20.0,
+    "excess": 5.781874811816579e-06,
+    "cell": 8,
+    "tick": 21,
+    "joint": 2
+  },
+  {
+    "kind": "command_jerk",
+    "value": 20.000001646227478,
+    "limit": 20.0,
+    "excess": 1.6462274778916708e-06,
+    "cell": 8,
+    "tick": 21,
+    "joint": 3
+  },
+  {
+    "kind": "command_jerk",
+    "value": 20.00000021034351,
+    "limit": 20.0,
+    "excess": 2.1034351149751274e-07,
+    "cell": 8,
+    "tick": 21,
+    "joint": 4
+  },
+  {
+    "kind": "command_jerk",
+    "value": 20.000000165077857,
+    "limit": 20.0,
+    "excess": 1.650778571615774e-07,
+    "cell": 8,
+    "tick": 21,
+    "joint": 6
+  },
+  {
+    "kind": "command_jerk",
+    "value": 20.000005375787325,
+    "limit": 20.0,
+    "excess": 5.375787324624071e-06,
+    "cell": 9,
+    "tick": 26,
+    "joint": 2
+  },
+  {
+    "kind": "command_jerk",
+    "value": 20.000001323754525,
+    "limit": 20.0,
+    "excess": 1.3237545246624904e-06,
+    "cell": 9,
+    "tick": 26,
+    "joint": 3
+  },
+  {
+    "kind": "command_jerk",
+    "value": 20.000000448284258,
+    "limit": 20.0,
+    "excess": 4.482842577147039e-07,
+    "cell": 9,
+    "tick": 26,
+    "joint": 4
+  },
+  {
+    "kind": "command_jerk",
+    "value": 20.000000177812893,
+    "limit": 20.0,
+    "excess": 1.7781289329832362e-07,
+    "cell": 9,
+    "tick": 26,
+    "joint": 6
+  },
+  {
+    "kind": "half_progress_domain",
+    "cell": 9,
+    "tick": 26,
+    "half": 1,
+    "s": 1.157993929656438e-18,
+    "r": -3.6765687378663975e-18
+  },
+  {
+    "kind": "half_progress_domain",
+    "cell": 9,
+    "tick": 26,
+    "half": 2,
+    "s": 1.1413875046777937e-18,
+    "r": -1.2929856240778015e-17
+  },
+  {
+    "kind": "recursive_progress_domain",
+    "cell": 9,
+    "tick": 26,
+    "s": 1.1413875046777937e-18,
+    "r": -1.2929856240778015e-17
+  },
+  {
+    "kind": "half_progress_domain",
+    "cell": 9,
+    "tick": 27,
+    "half": 1,
+    "s": 1.106274504693326e-18,
+    "r": -2.218314374368963e-17
+  },
+  {
+    "kind": "half_progress_domain",
+    "cell": 9,
+    "tick": 27,
+    "half": 2,
+    "s": 1.0526549297030351e-18,
+    "r": -3.143643124660125e-17
+  },
+  {
+    "kind": "recursive_progress_domain",
+    "cell": 9,
+    "tick": 27,
+    "s": 1.0526549297030353e-18,
+    "r": -3.143643124660125e-17
+  },
+  {
+    "kind": "half_progress_domain",
+    "cell": 9,
+    "tick": 28,
+    "half": 1,
+    "s": 9.80528779706921e-19,
+    "r": -4.068971874951286e-17
+  },
+  {
+    "kind": "half_progress_domain",
+    "cell": 9,
+    "tick": 28,
+    "half": 2,
+    "s": 8.898960547049837e-19,
+    "r": -4.9943006252424477e-17
+  },
+  {
+    "kind": "recursive_progress_domain",
+    "cell": 9,
+    "tick": 28,
+    "s": 8.898960547049839e-19,
+    "r": -4.994300625242448e-17
+  },
+  {
+    "kind": "half_progress_domain",
+    "cell": 9,
+    "tick": 29,
+    "half": 1,
+    "s": 7.80756754697223e-19,
+    "r": -5.919629375533608e-17
+  },
+  {
+    "kind": "half_progress_domain",
+    "cell": 9,
+    "tick": 29,
+    "half": 2,
+    "s": 6.531108796836393e-19,
+    "r": -6.844958125824771e-17
+  },
+  {
+    "kind": "recursive_progress_domain",
+    "cell": 9,
+    "tick": 29,
+    "s": 6.531108796836395e-19,
+    "r": -6.844958125824772e-17
+  },
+  {
+    "kind": "half_progress_domain",
+    "cell": 9,
+    "tick": 30,
+    "half": 1,
+    "s": 5.069584296642321e-19,
+    "r": -7.770286876115932e-17
+  },
+  {
+    "kind": "half_progress_domain",
+    "cell": 9,
+    "tick": 30,
+    "half": 2,
+    "s": 3.4229940463900183e-19,
+    "r": -8.695615626407094e-17
+  },
+  {
+    "kind": "recursive_progress_domain",
+    "cell": 9,
+    "tick": 30,
+    "s": 3.422994046390021e-19,
+    "r": -8.695615626407095e-17
+  },
+  {
+    "kind": "command_jerk",
+    "value": 20.000003938075174,
+    "limit": 20.0,
+    "excess": 3.938075174403366e-06,
+    "cell": 10,
+    "tick": 31,
+    "joint": 2
+  },
+  {
+    "kind": "command_jerk",
+    "value": 20.000000926190168,
+    "limit": 20.0,
+    "excess": 9.261901681156814e-07,
+    "cell": 10,
+    "tick": 31,
+    "joint": 3
+  },
+  {
+    "kind": "command_jerk",
+    "value": 20.000000550808146,
+    "limit": 20.0,
+    "excess": 5.50808145760584e-07,
+    "cell": 10,
+    "tick": 31,
+    "joint": 4
+  },
+  {
+    "kind": "command_jerk",
+    "value": 20.000000170136307,
+    "limit": 20.0,
+    "excess": 1.701363068207229e-07,
+    "cell": 10,
+    "tick": 31,
+    "joint": 6
+  },
+  {
+    "kind": "half_progress_domain",
+    "cell": 10,
+    "tick": 31,
+    "half": 1,
+    "s": 1.6642153887282393e-19,
+    "r": -8.892170950210725e-17
+  },
+  {
+    "kind": "half_progress_domain",
+    "cell": 10,
+    "tick": 31,
+    "half": 2,
+    "s": -1.3387433369426858e-20,
+    "r": -9.088726274014353e-17
+  },
+  {
+    "kind": "recursive_progress_domain",
+    "cell": 10,
+    "tick": 31,
+    "s": -1.3387433369426858e-20,
+    "r": -9.088726274014353e-17
+  },
+  {
+    "kind": "half_progress_domain",
+    "cell": 10,
+    "tick": 32,
+    "half": 1,
+    "s": -1.971275120877502e-19,
+    "r": -9.285281597817982e-17
+  },
+  {
+    "kind": "half_progress_domain",
+    "cell": 10,
+    "tick": 32,
+    "half": 2,
+    "s": -3.8479869728214614e-19,
+    "r": -9.481836921621611e-17
+  },
+  {
+    "kind": "recursive_progress_domain",
+    "cell": 10,
+    "tick": 32,
+    "s": -3.847986972821462e-19,
+    "r": -9.481836921621611e-17
+  },
+  {
+    "kind": "half_progress_domain",
+    "cell": 10,
+    "tick": 33,
+    "half": 1,
+    "s": -5.764009889526147e-19,
+    "r": -9.67839224542524e-17
+  },
+  {
+    "kind": "half_progress_domain",
+    "cell": 10,
+    "tick": 33,
+    "half": 2,
+    "s": -7.719343870991558e-19,
+    "r": -9.874947569228869e-17
+  },
+  {
+    "kind": "recursive_progress_domain",
+    "cell": 10,
+    "tick": 33,
+    "s": -7.719343870991558e-19,
+    "r": -9.874947569228869e-17
+  },
+  {
+    "kind": "half_progress_domain",
+    "cell": 10,
+    "tick": 34,
+    "half": 1,
+    "s": -9.713988917217695e-19,
+    "r": -1.0071502893032498e-16
+  },
+  {
+    "kind": "half_progress_domain",
+    "cell": 10,
+    "tick": 34,
+    "half": 2,
+    "s": -1.1747945028204555e-18,
+    "r": -1.0268058216836127e-16
+  },
+  {
+    "kind": "recursive_progress_domain",
+    "cell": 10,
+    "tick": 34,
+    "s": -1.1747945028204557e-18,
+    "r": -1.0268058216836127e-16
+  },
+  {
+    "kind": "half_progress_domain",
+    "cell": 10,
+    "tick": 35,
+    "half": 1,
+    "s": -1.3821212203952148e-18,
+    "r": -1.0464613540639756e-16
+  },
+  {
+    "kind": "half_progress_domain",
+    "cell": 10,
+    "tick": 35,
+    "half": 2,
+    "s": -1.5933790444460462e-18,
+    "r": -1.0661168864443386e-16
+  },
+  {
+    "kind": "recursive_progress_domain",
+    "cell": 10,
+    "tick": 35,
+    "s": -1.593379044446046e-18,
+    "r": -1.0661168864443384e-16
+  },
+  {
+    "kind": "half_progress_domain",
+    "cell": 10,
+    "tick": 36,
+    "half": 1,
+    "s": -1.80856797497295e-18,
+    "r": -1.0857724188247014e-16
+  },
+  {
+    "kind": "half_progress_domain",
+    "cell": 10,
+    "tick": 36,
+    "half": 2,
+    "s": -2.0276880119759267e-18,
+    "r": -1.1054279512050644e-16
+  },
+  {
+    "kind": "recursive_progress_domain",
+    "cell": 10,
+    "tick": 36,
+    "s": -2.0276880119759267e-18,
+    "r": -1.1054279512050642e-16
+  },
+  {
+    "kind": "command_jerk",
+    "value": 20.00000009409297,
+    "limit": 20.0,
+    "excess": 9.409297163642805e-08,
+    "cell": 11,
+    "tick": 37,
+    "joint": 1
+  },
+  {
+    "kind": "command_jerk",
+    "value": 20.000001737450294,
+    "limit": 20.0,
+    "excess": 1.7374502938594105e-06,
+    "cell": 11,
+    "tick": 37,
+    "joint": 2
+  },
+  {
+    "kind": "command_jerk",
+    "value": 20.000000387274138,
+    "limit": 20.0,
+    "excess": 3.8727413809169775e-07,
+    "cell": 11,
+    "tick": 37,
+    "joint": 3
+  },
+  {
+    "kind": "command_jerk",
+    "value": 20.000000428031147,
+    "limit": 20.0,
+    "excess": 4.2803114652656404e-07,
+    "cell": 11,
+    "tick": 37,
+    "joint": 4
+  },
+  {
+    "kind": "command_jerk",
+    "value": 20.00000015078124,
+    "limit": 20.0,
+    "excess": 1.5078123993816916e-07,
+    "cell": 11,
+    "tick": 37,
+    "joint": 5
+  },
+  {
+    "kind": "command_jerk",
+    "value": 20.00000012916117,
+    "limit": 20.0,
+    "excess": 1.291611688714056e-07,
+    "cell": 11,
+    "tick": 37,
+    "joint": 6
+  },
+  {
+    "kind": "half_progress_domain",
+    "cell": 11,
+    "tick": 37,
+    "half": 1,
+    "s": -2.2525600433873426e-18,
+    "r": -1.143292362909093e-16
+  },
+  {
+    "kind": "half_progress_domain",
+    "cell": 11,
+    "tick": 37,
+    "half": 2,
+    "s": -2.485004957139564e-18,
+    "r": -1.181156774613122e-16
+  },
+  {
+    "kind": "recursive_progress_domain",
+    "cell": 11,
+    "tick": 37,
+    "s": -2.485004957139564e-18,
+    "r": -1.181156774613122e-16
+  },
+  {
+    "kind": "half_progress_domain",
+    "cell": 11,
+    "tick": 38,
+    "half": 1,
+    "s": -2.725022753232591e-18,
+    "r": -1.219021186317151e-16
+  },
+  {
+    "kind": "half_progress_domain",
+    "cell": 11,
+    "tick": 38,
+    "half": 2,
+    "s": -2.9726134316664246e-18,
+    "r": -1.2568855980211798e-16
+  },
+  {
+    "kind": "recursive_progress_domain",
+    "cell": 11,
+    "tick": 38,
+    "s": -2.9726134316664242e-18,
+    "r": -1.2568855980211795e-16
+  },
+  {
+    "kind": "half_progress_domain",
+    "cell": 11,
+    "tick": 39,
+    "half": 1,
+    "s": -3.227776992441063e-18,
+    "r": -1.2947500097252086e-16
+  },
+  {
+    "kind": "half_progress_domain",
+    "cell": 11,
+    "tick": 39,
+    "half": 2,
+    "s": -3.490513435556508e-18,
+    "r": -1.3326144214292374e-16
+  },
+  {
+    "kind": "recursive_progress_domain",
+    "cell": 11,
+    "tick": 39,
+    "s": -3.490513435556508e-18,
+    "r": -1.3326144214292372e-16
+  },
+  {
+    "kind": "half_progress_domain",
+    "cell": 11,
+    "tick": 40,
+    "half": 1,
+    "s": -3.760822761012759e-18,
+    "r": -1.3704788331332663e-16
+  },
+  {
+    "kind": "half_progress_domain",
+    "cell": 11,
+    "tick": 40,
+    "half": 2,
+    "s": -4.038704968809815e-18,
+    "r": -1.4083432448372953e-16
+  },
+  {
+    "kind": "recursive_progress_domain",
+    "cell": 11,
+    "tick": 40,
+    "s": -4.038704968809815e-18,
+    "r": -1.4083432448372949e-16
+  },
+  {
+    "kind": "half_progress_domain",
+    "cell": 11,
+    "tick": 41,
+    "half": 1,
+    "s": -4.3241600589476765e-18,
+    "r": -1.4462076565413242e-16
+  },
+  {
+    "kind": "half_progress_domain",
+    "cell": 11,
+    "tick": 41,
+    "half": 2,
+    "s": -4.6171880314263434e-18,
+    "r": -1.484072068245353e-16
+  },
+  {
+    "kind": "recursive_progress_domain",
+    "cell": 11,
+    "tick": 41,
+    "s": -4.617188031426344e-18,
+    "r": -1.4840720682453525e-16
+  },
+  {
+    "kind": "half_progress_domain",
+    "cell": 11,
+    "tick": 42,
+    "half": 1,
+    "s": -4.917788886245817e-18,
+    "r": -1.5219364799493818e-16
+  },
+  {
+    "kind": "half_progress_domain",
+    "cell": 11,
+    "tick": 42,
+    "half": 2,
+    "s": -5.225962623406097e-18,
+    "r": -1.559800891653411e-16
+  },
+  {
+    "kind": "recursive_progress_domain",
+    "cell": 11,
+    "tick": 42,
+    "s": -5.225962623406097e-18,
+    "r": -1.5598008916534102e-16
+  },
+  {
+    "kind": "half_progress_domain",
+    "cell": 12,
+    "tick": 43,
+    "half": 1,
+    "s": -5.54018372682353e-18,
+    "r": -1.5824101425209222e-16
+  },
+  {
+    "kind": "half_progress_domain",
+    "cell": 12,
+    "tick": 43,
+    "half": 2,
+    "s": -5.858926680414466e-18,
+    "r": -1.605019393388434e-16
+  },
+  {
+    "kind": "recursive_progress_domain",
+    "cell": 12,
+    "tick": 43,
+    "s": -5.858926680414466e-18,
+    "r": -1.605019393388434e-16
+  },
+  {
+    "kind": "half_progress_domain",
+    "cell": 12,
+    "tick": 44,
+    "half": 1,
+    "s": -6.182191484178904e-18,
+    "r": -1.627628644255946e-16
+  },
+  {
+    "kind": "half_progress_domain",
+    "cell": 12,
+    "tick": 44,
+    "half": 2,
+    "s": -6.509978138116844e-18,
+    "r": -1.6502378951234576e-16
+  },
+  {
+    "kind": "recursive_progress_domain",
+    "cell": 12,
+    "tick": 44,
+    "s": -6.509978138116844e-18,
+    "r": -1.6502378951234576e-16
+  },
+  {
+    "kind": "half_progress_domain",
+    "cell": 12,
+    "tick": 45,
+    "half": 1,
+    "s": -6.842286642228287e-18,
+    "r": -1.6728471459909696e-16
+  },
+  {
+    "kind": "half_progress_domain",
+    "cell": 12,
+    "tick": 45,
+    "half": 2,
+    "s": -7.179116996513233e-18,
+    "r": -1.6954563968584816e-16
+  },
+  {
+    "kind": "recursive_progress_domain",
+    "cell": 12,
+    "tick": 45,
+    "s": -7.179116996513232e-18,
+    "r": -1.6954563968584814e-16
+  },
+  {
+    "kind": "half_progress_domain",
+    "cell": 12,
+    "tick": 46,
+    "half": 1,
+    "s": -7.52046920097168e-18,
+    "r": -1.7180656477259933e-16
+  },
+  {
+    "kind": "half_progress_domain",
+    "cell": 12,
+    "tick": 46,
+    "half": 2,
+    "s": -7.866343255603629e-18,
+    "r": -1.7406748985935053e-16
+  },
+  {
+    "kind": "recursive_progress_domain",
+    "cell": 12,
+    "tick": 46,
+    "s": -7.866343255603629e-18,
+    "r": -1.740674898593505e-16
+  },
+  {
+    "kind": "half_progress_domain",
+    "cell": 12,
+    "tick": 47,
+    "half": 1,
+    "s": -8.216739160409082e-18,
+    "r": -1.763284149461017e-16
+  },
+  {
+    "kind": "half_progress_domain",
+    "cell": 12,
+    "tick": 47,
+    "half": 2,
+    "s": -8.571656915388036e-18,
+    "r": -1.785893400328529e-16
+  },
+  {
+    "kind": "recursive_progress_domain",
+    "cell": 12,
+    "tick": 47,
+    "s": -8.571656915388035e-18,
+    "r": -1.7858934003285288e-16
+  },
+  {
+    "kind": "half_progress_domain",
+    "cell": 12,
+    "tick": 48,
+    "half": 1,
+    "s": -8.931096520540494e-18,
+    "r": -1.808502651196041e-16
+  },
+  {
+    "kind": "half_progress_domain",
+    "cell": 12,
+    "tick": 48,
+    "half": 2,
+    "s": -9.295057975866453e-18,
+    "r": -1.8311119020635528e-16
+  },
+  {
+    "kind": "recursive_progress_domain",
+    "cell": 12,
+    "tick": 48,
+    "s": -9.29505797586645e-18,
+    "r": -1.8311119020635525e-16
+  },
+  {
+    "kind": "half_progress_domain",
+    "cell": 12,
+    "tick": 49,
+    "half": 1,
+    "s": -9.663541281365915e-18,
+    "r": -1.8537211529310648e-16
+  },
+  {
+    "kind": "half_progress_domain",
+    "cell": 12,
+    "tick": 49,
+    "half": 2,
+    "s": -1.0036546437038877e-17,
+    "r": -1.8763304037985765e-16
+  },
+  {
+    "kind": "recursive_progress_domain",
+    "cell": 12,
+    "tick": 49,
+    "s": -1.0036546437038876e-17,
+    "r": -1.8763304037985763e-16
+  },
+  {
+    "kind": "half_progress_domain",
+    "cell": 12,
+    "tick": 50,
+    "half": 1,
+    "s": -1.0414073442885345e-17,
+    "r": -1.8989396546660885e-16
+  },
+  {
+    "kind": "half_progress_domain",
+    "cell": 12,
+    "tick": 50,
+    "half": 2,
+    "s": -1.0796122298905314e-17,
+    "r": -1.9215489055336002e-16
+  },
+  {
+    "kind": "recursive_progress_domain",
+    "cell": 12,
+    "tick": 50,
+    "s": -1.0796122298905311e-17,
+    "r": -1.9215489055336e-16
+  },
+  {
+    "kind": "command_jerk",
+    "value": 20.000000156292163,
+    "limit": 20.0,
+    "excess": 1.5629216321144668e-07,
+    "cell": 13,
+    "tick": 51,
+    "joint": 1
+  },
+  {
+    "kind": "command_jerk",
+    "value": 20.00000049421225,
+    "limit": 20.0,
+    "excess": 4.942122515672054e-07,
+    "cell": 13,
+    "tick": 51,
+    "joint": 3
+  },
+  {
+    "kind": "command_jerk",
+    "value": 20.000000649734304,
+    "limit": 20.0,
+    "excess": 6.497343036926395e-07,
+    "cell": 13,
+    "tick": 51,
+    "joint": 4
+  },
+  {
+    "kind": "command_jerk",
+    "value": 20.000000074193036,
+    "limit": 20.0,
+    "excess": 7.419303571509772e-08,
+    "cell": 13,
+    "tick": 51,
+    "joint": 5
+  },
+  {
+    "kind": "command_jerk",
+    "value": 20.000000049804076,
+    "limit": 20.0,
+    "excess": 4.980407553034638e-08,
+    "cell": 13,
+    "tick": 51,
+    "joint": 6
+  },
+  {
+    "kind": "half_progress_domain",
+    "cell": 13,
+    "tick": 51,
+    "half": 1,
+    "s": -1.1187814340254899e-17,
+    "r": -1.9953715079622756e-16
+  },
+  {
+    "kind": "half_progress_domain",
+    "cell": 13,
+    "tick": 51,
+    "half": 2,
+    "s": -1.1594270902090221e-17,
+    "r": -2.069194110390951e-16
+  },
+  {
+    "kind": "recursive_progress_domain",
+    "cell": 13,
+    "tick": 51,
+    "s": -1.1594270902090221e-17,
+    "r": -2.069194110390951e-16
+  },
+  {
+    "kind": "half_progress_domain",
+    "cell": 13,
+    "tick": 52,
+    "half": 1,
+    "s": -1.201549198441128e-17,
+    "r": -2.1430167128196267e-16
+  },
+  {
+    "kind": "half_progress_domain",
+    "cell": 13,
+    "tick": 52,
+    "half": 2,
+    "s": -1.2451477587218073e-17,
+    "r": -2.2168393152483023e-16
+  },
+  {
+    "kind": "recursive_progress_domain",
+    "cell": 13,
+    "tick": 52,
+    "s": -1.2451477587218072e-17,
+    "r": -2.216839315248302e-16
+  },
+  {
+    "kind": "half_progress_domain",
+    "cell": 13,
+    "tick": 53,
+    "half": 1,
+    "s": -1.2902227710510599e-17,
+    "r": -2.2906619176769775e-16
+  },
+  {
+    "kind": "half_progress_domain",
+    "cell": 13,
+    "tick": 53,
+    "half": 2,
+    "s": -1.3367742354288863e-17,
+    "r": -2.364484520105653e-16
+  },
+  {
+    "kind": "recursive_progress_domain",
+    "cell": 13,
+    "tick": 53,
+    "s": -1.3367742354288863e-17,
+    "r": -2.364484520105653e-16
+  },
+  {
+    "kind": "half_progress_domain",
+    "cell": 13,
+    "tick": 54,
+    "half": 1,
+    "s": -1.3848021518552862e-17,
+    "r": -2.438307122534329e-16
+  },
+  {
+    "kind": "half_progress_domain",
+    "cell": 13,
+    "tick": 54,
+    "half": 2,
+    "s": -1.4343065203302594e-17,
+    "r": -2.5121297249630044e-16
+  },
+  {
+    "kind": "recursive_progress_domain",
+    "cell": 13,
+    "tick": 54,
+    "s": -1.4343065203302594e-17,
+    "r": -2.5121297249630044e-16
+  },
+  {
+    "kind": "half_progress_domain",
+    "cell": 13,
+    "tick": 55,
+    "half": 1,
+    "s": -1.4852873408538063e-17,
+    "r": -2.58595232739168e-16
+  },
+  {
+    "kind": "half_progress_domain",
+    "cell": 13,
+    "tick": 55,
+    "half": 2,
+    "s": -1.5377446134259265e-17,
+    "r": -2.659774929820355e-16
+  },
+  {
+    "kind": "recursive_progress_domain",
+    "cell": 13,
+    "tick": 55,
+    "s": -1.5377446134259265e-17,
+    "r": -2.6597749298203557e-16
+  },
+  {
+    "kind": "half_progress_domain",
+    "cell": 13,
+    "tick": 56,
+    "half": 1,
+    "s": -1.5916783380466205e-17,
+    "r": -2.733597532249031e-16
+  },
+  {
+    "kind": "half_progress_domain",
+    "cell": 13,
+    "tick": 56,
+    "half": 2,
+    "s": -1.647088514715888e-17,
+    "r": -2.8074201346777065e-16
+  },
+  {
+    "kind": "recursive_progress_domain",
+    "cell": 13,
+    "tick": 56,
+    "s": -1.6470885147158878e-17,
+    "r": -2.807420134677707e-16
+  },
+  {
+    "kind": "half_progress_domain",
+    "cell": 13,
+    "tick": 57,
+    "half": 1,
+    "s": -1.7039751434337288e-17,
+    "r": -2.881242737106382e-16
+  },
+  {
+    "kind": "half_progress_domain",
+    "cell": 13,
+    "tick": 57,
+    "half": 2,
+    "s": -1.762338224200143e-17,
+    "r": -2.955065339535058e-16
+  },
+  {
+    "kind": "recursive_progress_domain",
+    "cell": 13,
+    "tick": 57,
+    "s": -1.762338224200143e-17,
+    "r": -2.9550653395350583e-16
+  },
+  {
+    "kind": "half_progress_domain",
+    "cell": 13,
+    "tick": 58,
+    "half": 1,
+    "s": -1.822177757015131e-17,
+    "r": -3.028887941963733e-16
+  },
+  {
+    "kind": "half_progress_domain",
+    "cell": 13,
+    "tick": 58,
+    "half": 2,
+    "s": -1.8834937418786925e-17,
+    "r": -3.102710544392409e-16
+  },
+  {
+    "kind": "recursive_progress_domain",
+    "cell": 13,
+    "tick": 58,
+    "s": -1.8834937418786925e-17,
+    "r": -3.1027105443924096e-16
+  },
+  {
+    "kind": "half_progress_domain",
+    "cell": 13,
+    "tick": 59,
+    "half": 1,
+    "s": -1.9462861787908276e-17,
+    "r": -3.176533146821084e-16
+  },
+  {
+    "kind": "half_progress_domain",
+    "cell": 13,
+    "tick": 59,
+    "half": 2,
+    "s": -2.010555067751536e-17,
+    "r": -3.25035574924976e-16
+  },
+  {
+    "kind": "recursive_progress_domain",
+    "cell": 13,
+    "tick": 59,
+    "s": -2.010555067751536e-17,
+    "r": -3.250355749249761e-16
+  },
+  {
+    "kind": "half_progress_domain",
+    "cell": 13,
+    "tick": 60,
+    "half": 1,
+    "s": -2.0763004087608178e-17,
+    "r": -3.3241783516784355e-16
+  },
+  {
+    "kind": "half_progress_domain",
+    "cell": 13,
+    "tick": 60,
+    "half": 2,
+    "s": -2.1435222018186735e-17,
+    "r": -3.398000954107111e-16
+  },
+  {
+    "kind": "recursive_progress_domain",
+    "cell": 13,
+    "tick": 60,
+    "s": -2.1435222018186735e-17,
+    "r": -3.398000954107112e-16
+  },
+  {
+    "kind": "command_jerk",
+    "value": 20.00000033694666,
+    "limit": 20.0,
+    "excess": 3.369466590186221e-07,
+    "cell": 14,
+    "tick": 61,
+    "joint": 0
+  },
+  {
+    "kind": "command_jerk",
+    "value": 20.00000042828734,
+    "limit": 20.0,
+    "excess": 4.282873398153697e-07,
+    "cell": 14,
+    "tick": 61,
+    "joint": 1
+  },
+  {
+    "kind": "command_jerk",
+    "value": 20.000000565145598,
+    "limit": 20.0,
+    "excess": 5.651455978750164e-07,
+    "cell": 14,
+    "tick": 61,
+    "joint": 3
+  },
+  {
+    "kind": "command_jerk",
+    "value": 20.000001437249164,
+    "limit": 20.0,
+    "excess": 1.437249164126797e-06,
+    "cell": 14,
+    "tick": 61,
+    "joint": 4
+  },
+  {
+    "kind": "command_jerk",
+    "value": 20.000000986825256,
+    "limit": 20.0,
+    "excess": 9.86825256177326e-07,
+    "cell": 14,
+    "tick": 61,
+    "joint": 5
+  },
+  {
+    "kind": "command_jerk",
+    "value": 20.00000019230678,
+    "limit": 20.0,
+    "excess": 1.9230677850146094e-07,
+    "cell": 14,
+    "tick": 61,
+    "joint": 6
+  },
+  {
+    "kind": "half_progress_domain",
+    "cell": 14,
+    "tick": 61,
+    "half": 1,
+    "s": -2.209731535699666e-17,
+    "r": -3.222932433992146e-16
+  },
+  {
+    "kind": "half_progress_domain",
+    "cell": 14,
+    "tick": 61,
+    "half": 2,
+    "s": -2.2724394991783595e-17,
+    "r": -3.04786391387718e-16
+  },
+  {
+    "kind": "recursive_progress_domain",
+    "cell": 14,
+    "tick": 61,
+    "s": -2.2724394991783595e-17,
+    "r": -3.04786391387718e-16
+  },
+  {
+    "kind": "half_progress_domain",
+    "cell": 14,
+    "tick": 62,
+    "half": 1,
+    "s": -2.331646092254753e-17,
+    "r": -2.872795393762214e-16
+  },
+  {
+    "kind": "half_progress_domain",
+    "cell": 14,
+    "tick": 62,
+    "half": 2,
+    "s": -2.3873513149288478e-17,
+    "r": -2.697726873647248e-16
+  },
+  {
+    "kind": "recursive_progress_domain",
+    "cell": 14,
+    "tick": 62,
+    "s": -2.387351314928848e-17,
+    "r": -2.6977268736472475e-16
+  },
+  {
+    "kind": "half_progress_domain",
+    "cell": 14,
+    "tick": 63,
+    "half": 1,
+    "s": -2.439555167200643e-17,
+    "r": -2.5226583535322816e-16
+  },
+  {
+    "kind": "half_progress_domain",
+    "cell": 14,
+    "tick": 63,
+    "half": 2,
+    "s": -2.4882576490701392e-17,
+    "r": -2.3475898334173157e-16
+  },
+  {
+    "kind": "recursive_progress_domain",
+    "cell": 14,
+    "tick": 63,
+    "s": -2.4882576490701395e-17,
+    "r": -2.3475898334173153e-16
+  },
+  {
+    "kind": "half_progress_domain",
+    "cell": 14,
+    "tick": 64,
+    "half": 1,
+    "s": -2.533458760537336e-17,
+    "r": -2.1725213133023496e-16
+  },
+  {
+    "kind": "half_progress_domain",
+    "cell": 14,
+    "tick": 64,
+    "half": 2,
+    "s": -2.575158501602233e-17,
+    "r": -1.9974527931873835e-16
+  },
+  {
+    "kind": "recursive_progress_domain",
+    "cell": 14,
+    "tick": 64,
+    "s": -2.5751585016022336e-17,
+    "r": -1.997452793187383e-16
+  },
+  {
+    "kind": "half_progress_domain",
+    "cell": 14,
+    "tick": 65,
+    "half": 1,
+    "s": -2.6133568722648313e-17,
+    "r": -1.8223842730724173e-16
+  },
+  {
+    "kind": "half_progress_domain",
+    "cell": 14,
+    "tick": 65,
+    "half": 2,
+    "s": -2.6480538725251297e-17,
+    "r": -1.6473157529574514e-16
+  },
+  {
+    "kind": "recursive_progress_domain",
+    "cell": 14,
+    "tick": 65,
+    "s": -2.6480538725251303e-17,
+    "r": -1.6473157529574507e-16
+  },
+  {
+    "kind": "half_progress_domain",
+    "cell": 14,
+    "tick": 66,
+    "half": 1,
+    "s": -2.6792495023831288e-17,
+    "r": -1.4722472328424855e-16
+  },
+  {
+    "kind": "half_progress_domain",
+    "cell": 14,
+    "tick": 66,
+    "half": 2,
+    "s": -2.7069437618388292e-17,
+    "r": -1.297178712727519e-16
+  },
+  {
+    "kind": "recursive_progress_domain",
+    "cell": 14,
+    "tick": 66,
+    "s": -2.7069437618388298e-17,
+    "r": -1.2971787127275184e-16
+  },
+  {
+    "kind": "half_progress_domain",
+    "cell": 14,
+    "tick": 67,
+    "half": 1,
+    "s": -2.7311366508922303e-17,
+    "r": -1.122110192612553e-16
+  },
+  {
+    "kind": "half_progress_domain",
+    "cell": 14,
+    "tick": 67,
+    "half": 2,
+    "s": -2.7518281695433314e-17,
+    "r": -9.470416724975871e-17
+  },
+  {
+    "kind": "recursive_progress_domain",
+    "cell": 14,
+    "tick": 67,
+    "s": -2.751828169543332e-17,
+    "r": -9.470416724975862e-17
+  },
+  {
+    "kind": "half_progress_domain",
+    "cell": 14,
+    "tick": 68,
+    "half": 1,
+    "s": -2.7690183177921335e-17,
+    "r": -7.719731523826212e-17
+  },
+  {
+    "kind": "half_progress_domain",
+    "cell": 14,
+    "tick": 68,
+    "half": 2,
+    "s": -2.7827070956386363e-17,
+    "r": -5.969046322676548e-17
+  },
+  {
+    "kind": "recursive_progress_domain",
+    "cell": 14,
+    "tick": 68,
+    "s": -2.782707095638637e-17,
+    "r": -5.96904632267654e-17
+  },
+  {
+    "kind": "half_progress_domain",
+    "cell": 14,
+    "tick": 69,
+    "half": 1,
+    "s": -2.79289450308284e-17,
+    "r": -4.218361121526884e-17
+  },
+  {
+    "kind": "half_progress_domain",
+    "cell": 14,
+    "tick": 69,
+    "half": 2,
+    "s": -2.7995805401247433e-17,
+    "r": -2.4676759203772248e-17
+  },
+  {
+    "kind": "recursive_progress_domain",
+    "cell": 14,
+    "tick": 69,
+    "s": -2.7995805401247446e-17,
+    "r": -2.4676759203772187e-17
+  },
+  {
+    "kind": "half_progress_domain",
+    "cell": 14,
+    "tick": 70,
+    "half": 1,
+    "s": -2.802765206764349e-17,
+    "r": -7.169907192275609e-18
+  },
+  {
+    "kind": "half_progress_domain",
+    "cell": 14,
+    "tick": 70,
+    "half": 2,
+    "s": -2.802448503001654e-17,
+    "r": 1.033694481922103e-17
+  },
+  {
+    "kind": "recursive_progress_domain",
+    "cell": 14,
+    "tick": 70,
+    "s": -2.802448503001655e-17,
+    "r": 1.033694481922103e-17
+  },
+  {
+    "kind": "half_progress_domain",
+    "cell": 14,
+    "tick": 71,
+    "half": 1,
+    "s": -2.79863042883666e-17,
+    "r": 2.784379683071757e-17
+  },
+  {
+    "kind": "half_progress_domain",
+    "cell": 14,
+    "tick": 71,
+    "half": 2,
+    "s": -2.7913109842693673e-17,
+    "r": 4.535064884221411e-17
+  },
+  {
+    "kind": "recursive_progress_domain",
+    "cell": 14,
+    "tick": 71,
+    "s": -2.791310984269368e-17,
+    "r": 4.5350648842214247e-17
+  },
+  {
+    "kind": "half_progress_domain",
+    "cell": 14,
+    "tick": 72,
+    "half": 1,
+    "s": -2.780490169299775e-17,
+    "r": 6.285750085371075e-17
+  },
+  {
+    "kind": "half_progress_domain",
+    "cell": 14,
+    "tick": 72,
+    "half": 2,
+    "s": -2.7661679839278828e-17,
+    "r": 8.036435286520739e-17
+  },
+  {
+    "kind": "recursive_progress_domain",
+    "cell": 14,
+    "tick": 72,
+    "s": -2.7661679839278837e-17,
+    "r": 8.036435286520746e-17
+  },
+  {
+    "kind": "command_jerk",
+    "value": 20.00000043674791,
+    "limit": 20.0,
+    "excess": 4.367479107258987e-07,
+    "cell": 15,
+    "tick": 73,
+    "joint": 0
+  },
+  {
+    "kind": "command_jerk",
+    "value": 20.0000005317051,
+    "limit": 20.0,
+    "excess": 5.31705101280977e-07,
+    "cell": 15,
+    "tick": 73,
+    "joint": 1
+  },
+  {
+    "kind": "command_jerk",
+    "value": 20.00000021745111,
+    "limit": 20.0,
+    "excess": 2.1745110956317149e-07,
+    "cell": 15,
+    "tick": 73,
+    "joint": 3
+  },
+  {
+    "kind": "command_jerk",
+    "value": 20.000001704778892,
+    "limit": 20.0,
+    "excess": 1.7047788922752716e-06,
+    "cell": 15,
+    "tick": 73,
+    "joint": 4
+  },
+  {
+    "kind": "command_jerk",
+    "value": 20.000001385555407,
+    "limit": 20.0,
+    "excess": 1.385555407296124e-06,
+    "cell": 15,
+    "tick": 73,
+    "joint": 5
+  },
+  {
+    "kind": "command_jerk",
+    "value": 20.000000302825413,
+    "limit": 20.0,
+    "excess": 3.0282541274573305e-07,
+    "cell": 15,
+    "tick": 73,
+    "joint": 6
+  },
+  {
+    "kind": "half_progress_domain",
+    "cell": 15,
+    "tick": 73,
+    "half": 1,
+    "s": -2.7480681997638275e-17,
+    "r": 1.0063348877535306e-16
+  },
+  {
+    "kind": "half_progress_domain",
+    "cell": 15,
+    "tick": 73,
+    "half": 2,
+    "s": -2.7259145884177426e-17,
+    "r": 1.2090262468549866e-16
+  },
+  {
+    "kind": "recursive_progress_domain",
+    "cell": 15,
+    "tick": 73,
+    "s": -2.7259145884177426e-17,
+    "r": 1.2090262468549866e-16
+  },
+  {
+    "kind": "half_progress_domain",
+    "cell": 15,
+    "tick": 74,
+    "half": 1,
+    "s": -2.6997071498896282e-17,
+    "r": 1.4117176059564423e-16
+  },
+  {
+    "kind": "half_progress_domain",
+    "cell": 15,
+    "tick": 74,
+    "half": 2,
+    "s": -2.6694458841794848e-17,
+    "r": 1.6144089650578983e-16
+  },
+  {
+    "kind": "recursive_progress_domain",
+    "cell": 15,
+    "tick": 74,
+    "s": -2.669445884179485e-17,
+    "r": 1.6144089650578985e-16
+  },
+  {
+    "kind": "half_progress_domain",
+    "cell": 15,
+    "tick": 75,
+    "half": 1,
+    "s": -2.6351307912873122e-17,
+    "r": 1.8171003241593542e-16
+  },
+  {
+    "kind": "half_progress_domain",
+    "cell": 15,
+    "tick": 75,
+    "half": 2,
+    "s": -2.5967618712131105e-17,
+    "r": 2.0197916832608102e-16
+  },
+  {
+    "kind": "recursive_progress_domain",
+    "cell": 15,
+    "tick": 75,
+    "s": -2.5967618712131108e-17,
+    "r": 2.0197916832608105e-16
+  },
+  {
+    "kind": "half_progress_domain",
+    "cell": 15,
+    "tick": 76,
+    "half": 1,
+    "s": -2.5543391239568798e-17,
+    "r": 2.222483042362266e-16
+  },
+  {
+    "kind": "half_progress_domain",
+    "cell": 15,
+    "tick": 76,
+    "half": 2,
+    "s": -2.50786254951862e-17,
+    "r": 2.425174401463722e-16
+  },
+  {
+    "kind": "recursive_progress_domain",
+    "cell": 15,
+    "tick": 76,
+    "s": -2.5078625495186202e-17,
+    "r": 2.425174401463722e-16
+  },
+  {
+    "kind": "half_progress_domain",
+    "cell": 15,
+    "tick": 77,
+    "half": 1,
+    "s": -2.457332147898331e-17,
+    "r": 2.627865760565178e-16
+  },
+  {
+    "kind": "half_progress_domain",
+    "cell": 15,
+    "tick": 77,
+    "half": 2,
+    "s": -2.4027479190960128e-17,
+    "r": 2.830557119666634e-16
+  },
+  {
+    "kind": "recursive_progress_domain",
+    "cell": 15,
+    "tick": 77,
+    "s": -2.402747919096013e-17,
+    "r": 2.830557119666634e-16
+  },
+  {
+    "kind": "half_progress_domain",
+    "cell": 15,
+    "tick": 78,
+    "half": 1,
+    "s": -2.3441098631116657e-17,
+    "r": 3.0332484787680896e-16
+  },
+  {
+    "kind": "half_progress_domain",
+    "cell": 15,
+    "tick": 78,
+    "half": 2,
+    "s": -2.281417979945289e-17,
+    "r": 3.2359398378695455e-16
+  },
+  {
+    "kind": "recursive_progress_domain",
+    "cell": 15,
+    "tick": 78,
+    "s": -2.2814179799452897e-17,
+    "r": 3.235939837869546e-16
+  },
+  {
+    "kind": "half_progress_domain",
+    "cell": 15,
+    "tick": 79,
+    "half": 1,
+    "s": -2.2146722695968837e-17,
+    "r": 3.4386311969710015e-16
+  },
+  {
+    "kind": "half_progress_domain",
+    "cell": 15,
+    "tick": 79,
+    "half": 2,
+    "s": -2.1438727320664492e-17,
+    "r": 3.6413225560724575e-16
+  },
+  {
+    "kind": "recursive_progress_domain",
+    "cell": 15,
+    "tick": 79,
+    "s": -2.1438727320664495e-17,
+    "r": 3.641322556072458e-16
+  },
+  {
+    "kind": "half_progress_domain",
+    "cell": 15,
+    "tick": 80,
+    "half": 1,
+    "s": -2.0690193673539853e-17,
+    "r": 3.8440139151739135e-16
+  },
+  {
+    "kind": "half_progress_domain",
+    "cell": 15,
+    "tick": 80,
+    "half": 2,
+    "s": -1.9901121754594926e-17,
+    "r": 4.0467052742753694e-16
+  },
+  {
+    "kind": "recursive_progress_domain",
+    "cell": 15,
+    "tick": 80,
+    "s": -1.990112175459493e-17,
+    "r": 4.04670527427537e-16
+  },
+  {
+    "kind": "half_progress_domain",
+    "cell": 15,
+    "tick": 81,
+    "half": 1,
+    "s": -1.9071511563829705e-17,
+    "r": 4.2493966333768254e-16
+  },
+  {
+    "kind": "half_progress_domain",
+    "cell": 15,
+    "tick": 81,
+    "half": 2,
+    "s": -1.8201363101244196e-17,
+    "r": 4.452087992478281e-16
+  },
+  {
+    "kind": "recursive_progress_domain",
+    "cell": 15,
+    "tick": 81,
+    "s": -1.82013631012442e-17,
+    "r": 4.452087992478281e-16
+  },
+  {
+    "kind": "half_progress_domain",
+    "cell": 15,
+    "tick": 82,
+    "half": 1,
+    "s": -1.729067636683839e-17,
+    "r": 4.654779351579738e-16
+  },
+  {
+    "kind": "half_progress_domain",
+    "cell": 15,
+    "tick": 82,
+    "half": 2,
+    "s": -1.6339451360612296e-17,
+    "r": 4.857470710681194e-16
+  },
+  {
+    "kind": "recursive_progress_domain",
+    "cell": 15,
+    "tick": 82,
+    "s": -1.6339451360612305e-17,
+    "r": 4.857470710681193e-16
+  },
+  {
+    "kind": "half_progress_domain",
+    "cell": 15,
+    "tick": 83,
+    "half": 1,
+    "s": -1.5347688082565917e-17,
+    "r": 5.060162069782649e-16
+  },
+  {
+    "kind": "half_progress_domain",
+    "cell": 15,
+    "tick": 83,
+    "half": 2,
+    "s": -1.431538653269924e-17,
+    "r": 5.262853428884105e-16
+  },
+  {
+    "kind": "recursive_progress_domain",
+    "cell": 15,
+    "tick": 83,
+    "s": -1.4315386532699247e-17,
+    "r": 5.262853428884105e-16
+  },
+  {
+    "kind": "half_progress_domain",
+    "cell": 15,
+    "tick": 84,
+    "half": 1,
+    "s": -1.3242546711012276e-17,
+    "r": 5.465544787985561e-16
+  },
+  {
+    "kind": "half_progress_domain",
+    "cell": 15,
+    "tick": 84,
+    "half": 2,
+    "s": -1.2129168617505017e-17,
+    "r": 5.668236147087017e-16
+  },
+  {
+    "kind": "recursive_progress_domain",
+    "cell": 15,
+    "tick": 84,
+    "s": -1.2129168617505024e-17,
+    "r": 5.668236147087017e-16
+  },
+  {
+    "kind": "half_progress_domain",
+    "cell": 15,
+    "tick": 85,
+    "half": 1,
+    "s": -1.0975252252177467e-17,
+    "r": 5.870927506188473e-16
+  },
+  {
+    "kind": "half_progress_domain",
+    "cell": 15,
+    "tick": 85,
+    "half": 2,
+    "s": -9.780797615029623e-18,
+    "r": 6.073618865289929e-16
+  },
+  {
+    "kind": "recursive_progress_domain",
+    "cell": 15,
+    "tick": 85,
+    "s": -9.780797615029634e-18,
+    "r": 6.073618865289929e-16
+  },
+  {
+    "kind": "half_progress_domain",
+    "cell": 15,
+    "tick": 86,
+    "half": 1,
+    "s": -8.545804706061492e-18,
+    "r": 6.276310224391386e-16
+  },
+  {
+    "kind": "half_progress_domain",
+    "cell": 15,
+    "tick": 86,
+    "half": 2,
+    "s": -7.27027352527307e-18,
+    "r": 6.479001583492842e-16
+  },
+  {
+    "kind": "recursive_progress_domain",
+    "cell": 15,
+    "tick": 86,
+    "s": -7.27027352527308e-18,
+    "r": 6.479001583492841e-16
+  },
+  {
+    "kind": "half_progress_domain",
+    "cell": 15,
+    "tick": 87,
+    "half": 1,
+    "s": -5.95420407266436e-18,
+    "r": 6.681692942594297e-16
+  },
+  {
+    "kind": "half_progress_domain",
+    "cell": 15,
+    "tick": 87,
+    "half": 2,
+    "s": -4.5975963482353555e-18,
+    "r": 6.884384301695753e-16
+  },
+  {
+    "kind": "recursive_progress_domain",
+    "cell": 15,
+    "tick": 87,
+    "s": -4.597596348235362e-18,
+    "r": 6.884384301695753e-16
+  },
+  {
+    "kind": "half_progress_domain",
+    "cell": 15,
+    "tick": 88,
+    "half": 1,
+    "s": -3.2004503519860603e-18,
+    "r": 7.087075660797209e-16
+  },
+  {
+    "kind": "half_progress_domain",
+    "cell": 15,
+    "tick": 88,
+    "half": 2,
+    "s": -1.762766083916474e-18,
+    "r": 7.289767019898665e-16
+  },
+  {
+    "kind": "recursive_progress_domain",
+    "cell": 15,
+    "tick": 88,
+    "s": -1.762766083916478e-18,
+    "r": 7.289767019898665e-16
+  },
+  {
+    "kind": "half_progress_domain",
+    "cell": 16,
+    "tick": 89,
+    "half": 1,
+    "s": -2.018359870227367e-19,
+    "r": 8.3195339490387505e-16
+  },
+  {
+    "kind": "command_jerk",
+    "value": 20.000003284370617,
+    "limit": 20.0,
+    "excess": 3.2843706172513976e-06,
+    "cell": 17,
+    "tick": 109,
+    "joint": 4
+  },
+  {
+    "kind": "command_jerk",
+    "value": 20.00000114810823,
+    "limit": 20.0,
+    "excess": 1.1481082289321876e-06,
+    "cell": 17,
+    "tick": 109,
+    "joint": 5
+  }
+]

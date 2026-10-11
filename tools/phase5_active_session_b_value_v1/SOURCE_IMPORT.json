@@ -1,0 +1,23 @@
+{
+  "schema": "B_VALUE_ONLY_COMPILE_SOURCE_SNAPSHOT_V1",
+  "packet_ready_sha256": "3ea541faa7638c96ab62957f76f392550c8ccd4984bea7089735518c9b510090",
+  "files": {
+    "model_boundary.hpp": {
+      "bytes": 3964,
+      "sha256": "6555686e877ca1881fb7ad8532ca006aa2d0e50de7dbf04d7771b0737b173cf1"
+    },
+    "model_boundary.cpp": {
+      "bytes": 20505,
+      "sha256": "271c8f3ba8226561ad5dae7499b12f3fb9127e1855c165346e57127d43b3bcbb"
+    },
+    "lossless_evidence.hpp": {
+      "bytes": 1873,
+      "sha256": "7f1c524e0117bcb3c7c0a145f78372834327a1def541bf0edcadf5759a24c3fc"
+    },
+    "lossless_evidence.cpp": {
+      "bytes": 16058,
+      "sha256": "6587985f1311a49c7d3d538119c97666d2e72eacc2aaea97ad0c679074ffadb9"
+    }
+  },
+  "scope": "Four-file prototype delta compiled in retained earlier common-core snapshot; no linked/runtime B or nonlinear/geometry/physical acceptance. Not merged into activeA16."
+}

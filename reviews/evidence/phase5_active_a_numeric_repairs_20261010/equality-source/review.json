@@ -1,0 +1,38 @@
+{
+  "verdict": "PASS_SCOPED_STRUCTURED_EQUALITY_SOURCE_AND_SAVED_MATRIX_MAP_EQUIVALENCE",
+  "input_source_manifest_sha256": "6609b307f239a80ac41afac5cf13822b249bd1f5c72c1f50337e5e124ff20aab",
+  "source_files": 20,
+  "source_payloads_including_input": 21,
+  "numeric_reference_matrix_version": "actual repair6 not native repair12 reduction output",
+  "errors": {
+    "nullspace_residual": 4.091964862189873e-18,
+    "particular_residual": 0.0,
+    "span_projector_error": 6.661338147750939e-16,
+    "objective": 7.105427357601002e-15,
+    "gradient": 2.7755575615628914e-17,
+    "original_rows": 1.3877787807814457e-17,
+    "last8_controls": 0.0
+  },
+  "seed_rule": "head144 correct because Zhead=I and phead=0",
+  "structured_H_condition": 284.0663045680426,
+  "orthonormal_reference_condition": 134.2664509895154,
+  "corrected_trust_keep": true,
+  "corrected_mapped_vs_full_worst": true,
+  "preserved_full_original_SI_and_strict_history": true,
+  "partial_transform_never_execution_permission": true,
+  "diagnostic_suggestions": [
+    "optional reduced factor offset Fp+f",
+    "retained shape slots not whole-path peak/cumulative ledger certificate"
+  ],
+  "native12_result_independently_parsed": false,
+  "reported_native12_usable_candidate": false,
+  "prospective_repair13_scope": "positive capped row scaling is mathematically equivalent; source/result not yet reviewed",
+  "phase5": "NOT_ACCEPTED",
+  "calls": {
+    "native": 0,
+    "Model": 0,
+    "compiler": 0,
+    "solver": 0,
+    "plant": 0
+  }
+}

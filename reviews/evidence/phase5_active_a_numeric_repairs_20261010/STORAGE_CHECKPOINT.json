@@ -1,0 +1,40 @@
+{
+  "schema": "ROOT_ACTIVE_NUMERIC_REPAIR_STORAGE_CHECKPOINT_V1",
+  "scope": "Actual repairs7/10/12/14/16 refused results, original histories/proofs/forensic arrays, portable1-6 and B compile-only prototype. Full forensic rowCSV and raw packets excluded from Git are preserved here. Later working-set/oracle/task-warmup are outside this archive.",
+  "Mac": {
+    "schema": "ACTIVE_NUMERIC_REPAIR_ARCHIVE_READY_V1",
+    "archive": "/Users/uot/Documents/ChatGPT/ros/results/phase5-reference/active-a-numeric-repair-v2-20261010/root-archive1/active-a-numeric-repairs-v2.tar.gz",
+    "archive_bytes": 158206266,
+    "archive_sha256": "1754d46ee03332b387ef50beae3083b0291838210a9e3cae422bbaf0fb63d771",
+    "manifest_sha256": "f418a04faf403af4571ac22723dbca48d3e70a27367a387a3750b76d3e0525f9",
+    "regular_members": 1281,
+    "payloads": 1280,
+    "payload_bytes": 315646748,
+    "Mac_all_payloads_verified": true,
+    "Dell_copy_verified": false,
+    "phase5": "NOT_ACCEPTED",
+    "phase6": "NOT_STARTED"
+  },
+  "Dell_readback": {
+    "schema": "ROOT_ACTIVE_NUMERIC_REPAIR_DELL_FULL_READBACK_V1",
+    "archive": "/mnt/d/CodexTransfer/projects/predictive_motion/checkpoints/active-a-numeric-repair-v2-20261010-root1/active-a-numeric-repairs-v2.tar.gz",
+    "archive_bytes": 158206266,
+    "archive_sha256": "1754d46ee03332b387ef50beae3083b0291838210a9e3cae422bbaf0fb63d771",
+    "ready_sha256": "5212e1fde92ad18c3e117431ee7fecf15a1a69d998ee24f631aae611d7958b16",
+    "manifest_sha256": "f418a04faf403af4571ac22723dbca48d3e70a27367a387a3750b76d3e0525f9",
+    "regular_members_verified": 1281,
+    "payloads_verified": 1280,
+    "all_payloads_verified": true,
+    "observed_mode": 365,
+    "observed_uid": 1000,
+    "observed_gid": 1000,
+    "qualification": "NTFS POSIX sealing/ownership change not asserted; no chmod attempted."
+  },
+  "archive_ready_sha256": "5212e1fde92ad18c3e117431ee7fecf15a1a69d998ee24f631aae611d7958b16",
+  "native_and_dependency_binary_caches": "Not copied into this Mac aggregate; Dell paths/identities are indexed in source packets. No all-ELF replication claim.",
+  "Mac_payload_sealed_readonly": true,
+  "Dell_NTFS_POSIX_immutable_claim": false,
+  "source_snapshot_scope": "Snapshot made before final storage-record and portable-scope documentation edits; every archived byte is hashed. Git checkpoint carries final small records.",
+  "phase5": "NOT_ACCEPTED",
+  "phase6": "NOT_STARTED"
+}

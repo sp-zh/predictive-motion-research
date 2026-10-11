@@ -1,23 +1,32 @@
 {
   "schema": "ACTUAL_ACTIVE_A_TIMING_FIGURE_V1",
-  "source": "reviews/evidence/phase5_active_a_functional_20261010/ACTUAL_SUMMARY.json",
-  "source_sha256": "0104df18f300203dd00988db005cdb6c573ea631529031fba32964a9e368f59e",
-  "packet_ready_sha256": "25b8572470112ed66f7c3735bca1e58b2aa16ca0ebbeea4bf8c1917de2fc4fdb",
+  "sources": {
+    "reviews/evidence/phase5_active_a_functional_20261010/ACTUAL_SUMMARY.json": "0104df18f300203dd00988db005cdb6c573ea631529031fba32964a9e368f59e",
+    "reviews/evidence/phase5_active_a_numeric_repairs_20261010/ACTUAL_SUMMARY.json": "05d24c009fc58cb2efbfd3845f68dfc59bbb0db7c5931f350566293940e43799"
+  },
+  "packet_ready_sha256": [
+    "25b8572470112ed66f7c3735bca1e58b2aa16ca0ebbeea4bf8c1917de2fc4fdb",
+    "2e84145e5d8cfe6c69f955d2b0054b0bd76eca8267fc978bf8ba8cace1e071f4"
+  ],
   "attempt_labels": {
     "repair1": "Original coordinates",
     "repair3": "Jacobi + row scaling",
-    "repair6": "Scaling + exact box screen"
+    "repair6": "Scaling + exact box screen",
+    "repair7": "20k iteration budget",
+    "repair10": "Full SPD whitening",
+    "repair12": "Terminal equality elimination",
+    "repair14": "Equality elimination + bounded row scale"
   },
-  "render_sha256": "372d1593f35b54e9ad5a1d340f4210f5316ffbaca6a4b873f9d28357f8a3cbc0",
+  "render_sha256": "ff9b7ddaac9f2f8220808e24783192ee387256580d59b30e1ae5dbeff96ce1fb",
   "matplotlib": "3.10.3",
   "figures": {
     "qp_attempts.png": {
-      "bytes": 87856,
-      "sha256": "284aa061ed25759f4eec8f63f3c584bb59f8cdab3dbb9910a293589d14cf4cfb"
+      "bytes": 131689,
+      "sha256": "5cec1cb370d1d56154e2e279051ce5af420d22271a146721aa4a0a9725112d82"
     },
     "qp_attempts.svg": {
-      "bytes": 81002,
-      "sha256": "28f62adf7db1bee3d23328086232acbc2f9bfdd76385883498f25f3d8231da82"
+      "bytes": 111220,
+      "sha256": "91b82ff6cbdd85859d13e7fffe33217e21b8c7537a8c49d9fbf015ff83fd2c06"
     }
   },
   "scope": "Recorded native setup/solve subsets and iterations, not full-cycle latency, physical performance, research ranking or Phase5 acceptance. No motion render or task video is claimed.",

@@ -1,0 +1,96 @@
+{
+  "schema": "ROOT_ACTIVE_A16_SOURCE_IMPORT_V1",
+  "packet_ready_sha256": "37ec40acd1c7beb5cc2a5cd77c3c41847e7be2a749c79f7513cb688049013d72",
+  "source_manifest_sha256": "d41d0be8d6092726ec79d586dc5d3784b3c115752991a855b55739cf95c93904",
+  "files": {
+    "invariant_tests.cpp": {
+      "bytes": 4721,
+      "sha256": "f5a859d4cf9d79a5ae1b533b8dd62776f2bba6599dfdf691a2915ef3296a33f9"
+    },
+    "normalization.cpp": {
+      "bytes": 23976,
+      "sha256": "a0cd0c9cdb505f922f1744f24cf115057b6ba9f3a9bc1b3ed0c9bdb82d358ed5"
+    },
+    "session_primitives.hpp": {
+      "bytes": 2259,
+      "sha256": "0b76bc232ed81dc9b4831617ae1690cfc287def914b8bca5f05ce6e6e25b6080"
+    },
+    "model_boundary.cpp": {
+      "bytes": 14091,
+      "sha256": "04c94821ee57669431b8c7bceac1d66004fdfc8af11424008e89890a7486630a"
+    },
+    "solver_forensics.cpp": {
+      "bytes": 14141,
+      "sha256": "b0432ed917ecf68689705558730f6ee8fc781eef78692205f021f9eeb610720c"
+    },
+    "runtime_observer.hpp": {
+      "bytes": 3308,
+      "sha256": "0c43675ce98339a1030bc9625a248b61dd5bbfc0b2a9f8c135183d66da069cf1"
+    },
+    "lossless_evidence.hpp": {
+      "bytes": 1817,
+      "sha256": "47703a81c47d04a3e22e3108c27b77447ec812b74995d030f0570ce2e1bd95a4"
+    },
+    "affine_assembly.cpp": {
+      "bytes": 28981,
+      "sha256": "d478eda1f0fe97bfc41851515f4baa3e485fd4a57968a62dcb6233ae1157bbd5"
+    },
+    "integrated_horizon_qp.hpp": {
+      "bytes": 9631,
+      "sha256": "379d9c599895143ab80bc144414091a749f46848b7cf8d6c913db97d998f41a9"
+    },
+    "task_local_provider.cpp": {
+      "bytes": 1839,
+      "sha256": "051b424236979f9fe7ea4cb96564f54969025c997bfba2c61d347a23f7fbae4c"
+    },
+    "box_screen_tests.cpp": {
+      "bytes": 2954,
+      "sha256": "d922876babec2867dd1293bcee259ac12e4b2a6af5a30dd551209e097c0abaf8"
+    },
+    "active_first_cycle.cpp": {
+      "bytes": 14015,
+      "sha256": "de29f677b84eaf5277a1651193feecbd03d72fb1b1f6c26722c0ad11bc635506"
+    },
+    "observer_tests.cpp": {
+      "bytes": 3785,
+      "sha256": "d1ff998984981a5ded1e92b8d452503e8b489ecfb0d067fb04ff5fd616d02877"
+    },
+    "solver_forensics.hpp": {
+      "bytes": 602,
+      "sha256": "6db9c07abeb82e5c119ad18f44c3207733f8e73b54df2eea3b48dab013c70a54"
+    },
+    "runtime_observer.cpp": {
+      "bytes": 6658,
+      "sha256": "66a659f856d2fcebd220892a405500d98c6076a6e9d4655a66866d6fb10ab65d"
+    },
+    "lossless_evidence.cpp": {
+      "bytes": 14600,
+      "sha256": "9609fab7b29b7de2c72f266f4020a49289fc429ba520a7124c876c92c05b8633"
+    },
+    "task_local_provider.hpp": {
+      "bytes": 640,
+      "sha256": "1819e2f626fb0ff65ad7e7e8de0b0b52f625e6bf435b073d7cca55722d76f093"
+    },
+    "affine_assembly.hpp": {
+      "bytes": 6026,
+      "sha256": "6faee2961242052c7655da41e8988dd0844f14c3cfa885672aa7c03eaa1dcb57"
+    },
+    "integrated_horizon_qp.cpp": {
+      "bytes": 36508,
+      "sha256": "ad771e10de104f7a9ef38e907354b8c27420525affcf3980301e9c3258acee74"
+    },
+    "normalization.hpp": {
+      "bytes": 4288,
+      "sha256": "9456be5c205f23d2aa2210eac02286d030204a446af003ee85362b971ccb43d8"
+    },
+    "model_boundary.hpp": {
+      "bytes": 2528,
+      "sha256": "51b2e845860fb4faecfc95b7f9873439ab4e682adce37a290e6fe704ee48a9d9"
+    },
+    "linear_box_screen.hpp": {
+      "bytes": 3916,
+      "sha256": "b649eff43293a3078b7b46a0166fa0f8a2ac59f3a8496c8c73a98c275fed96d1"
+    }
+  },
+  "scope": "Active forensic-only namespace and actual bounded original model/QP source. Raw unsolved x/y cannot become a candidate. Excludes B and new working-set source."
+}

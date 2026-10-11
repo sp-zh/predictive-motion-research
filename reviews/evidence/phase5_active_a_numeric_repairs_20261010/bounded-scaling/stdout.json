@@ -1,0 +1,100 @@
+{
+  "scope": "INDEPENDENT_ACTUAL_REPAIR14_SAVED_MATRIX_ALGEBRA_AND_READ_ONLY_SOURCE_NO_MODEL_SOLVER_NATIVE",
+  "source_sha256": "4520dc42521a2b2baa9af89737bb67f4fce27800143b300492f374d99812de55",
+  "source_manifest_payloads": 21,
+  "backend_snapshot_matches_frozen_runtime_pin": true,
+  "native_ELF_record": {
+    "path": "/home/codextransfer/predictive_motion/results/phase5/session-active-a-v1-20261010-repair14/link-attempt1/active_first_cycle",
+    "bytes": 19100848,
+    "sha256": "271fc0ebe24a52a20ddb2a969ac5b4639bb924ce1f0eaf873adb89db1a008b54",
+    "retained_dell_only": true
+  },
+  "native_ELF_bytes_locally_verified": false,
+  "original_array_values_bit_equal_actual_repair6": true,
+  "dimensions": {
+    "original_controls": 160,
+    "reduced_controls": 144,
+    "original_rows": 13156,
+    "solver_rows": 6034,
+    "omitted": 7106,
+    "eliminated": 16,
+    "cost_factor_rows": 741
+  },
+  "errors": {
+    "E_Z": 4.091964862189873e-18,
+    "E_p_rhs": 0.0,
+    "reduced_H": 3.469446951953614e-18,
+    "reduced_g": 1.3877787807814457e-17,
+    "reduced_A": 1.3877787807814457e-17,
+    "reduced_l": 0.0,
+    "reduced_u": 0.0,
+    "reduced_F": 6.938893903907228e-18,
+    "reduced_seed": 0.0,
+    "reduced_constant": 0.0,
+    "D": 0.0,
+    "R": 0.0,
+    "scaled_H": 0.0,
+    "scaled_g": 0.0,
+    "scaled_A": 0.0,
+    "scaled_l": 0.0,
+    "scaled_u": 0.0,
+    "scaled_F": 0.0,
+    "scaled_seed": 0.0,
+    "reduced_factor_gram": 6.938893903907228e-18,
+    "scaled_factor_gram": 5.551115123125783e-16
+  },
+  "D_range": [
+    6.057664443560153,
+    9.977633340218823
+  ],
+  "explicit_R_range": [
+    0.00035080735400066116,
+    1.0
+  ],
+  "row_count_explicit_R_less_than_one": 312,
+  "largest_solver_row_norm": 1.0,
+  "stored_numeric_slots": 2050202,
+  "saved_certificates": {
+    "equality_origin_error": 0.0,
+    "equality_map_error": 0.0,
+    "factor_error": 6.938893903907228e-18,
+    "scaled_factor_error": 4.440892098500625e-16
+  },
+  "actual_result": {
+    "status": 6,
+    "raw_status": 7,
+    "api_error": 0,
+    "iterations": 20000,
+    "controls_count": 0,
+    "scaled_Y_count": 0,
+    "reduced_Y_count": 0,
+    "backend_primal_transformed_units": 2.5616324764807403e-08,
+    "backend_dual_transformed_units": 3.1660640245311303e-06,
+    "setup_seconds": 0.033153558,
+    "solve_seconds": 15.74718021,
+    "rho_updates": 2,
+    "rho_estimate": 6.814342727330224,
+    "backend_internal_row_scale": [
+      1.0,
+      1.0
+    ],
+    "backend_internal_variable_scale": [
+      1.0,
+      1.0
+    ],
+    "preview": 0,
+    "tail": 0,
+    "request": 0,
+    "stop_reason": "only SOLVED admits candidate; native status retained"
+  },
+  "full_original_SI": {
+    "rows_scanned": 0,
+    "default_max_field": 0.0,
+    "worst_row": -1,
+    "interpretation": "UNMEASURED_NO_CANDIDATE_NOT_PASS"
+  },
+  "solver_calls": 0,
+  "Model_calls": 0,
+  "phase5": "NOT_ACCEPTED",
+  "elapsed_seconds": 0.2574258749373257
+}

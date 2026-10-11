@@ -1,0 +1,57 @@
+{
+  "schema": "ROOT_REPAIR14_BOUNDED_SCALE_INDEPENDENT_FILE_AUDIT_V1",
+  "input_ready_sha256": "2e84145e5d8cfe6c69f955d2b0054b0bd76eca8267fc978bf8ba8cace1e071f4",
+  "source_sha256": "4520dc42521a2b2baa9af89737bb67f4fce27800143b300492f374d99812de55",
+  "files": {
+    "SOURCE_SNAPSHOT.py": {
+      "bytes": 11382,
+      "sha256": "4520dc42521a2b2baa9af89737bb67f4fce27800143b300492f374d99812de55"
+    },
+    "backend_source_read_snapshot.cpp": {
+      "bytes": 23205,
+      "sha256": "7f0b10b09c66c078e2342ebd1cc44ba636f76a59c5d908b0a15392ea6d589507"
+    },
+    "check_saved_transform.py": {
+      "bytes": 11382,
+      "sha256": "4520dc42521a2b2baa9af89737bb67f4fce27800143b300492f374d99812de55"
+    },
+    "history/parser_before_row_violation_vector.py": {
+      "bytes": 11333,
+      "sha256": "81b94ad3988607018991a90bf3d3ff721818a1482e70477166da64d2bad63690"
+    },
+    "history/parser_before_row_violation_vector.stderr.txt": {
+      "bytes": 1145,
+      "sha256": "f3b6d0bdc4bd165e2a1a3b15f25c7ac09d7a71c932206b1dd1a38de34d529cb4"
+    },
+    "history/summary_key_controls.py": {
+      "bytes": 11369,
+      "sha256": "1e304b9194dac18badfcae3d278ce101cf2490a2e2853c3ef6d805b03af75c47"
+    },
+    "history/summary_key_controls.stderr.txt": {
+      "bytes": 335,
+      "sha256": "72bd0cc3e92fb4c93e961daaa7c062f7d3ebcc4a389e04252feb5168b87795df"
+    },
+    "results.json": {
+      "bytes": 12926,
+      "sha256": "c33ac1353f109873f0c492897f7d00ed805a6d771a80252fccac4d6266c6458f"
+    },
+    "review.json": {
+      "bytes": 521,
+      "sha256": "f64f4d1ea0fe7ecb2d5c9653b92df56e69c8ab353bf1a5a2b9f6b69742736416"
+    },
+    "review.md": {
+      "bytes": 4270,
+      "sha256": "969b95769fad960836b18b84036fc0d3549d576b954a110ded6aa60782571e1d"
+    },
+    "stderr.txt": {
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    "stdout.json": {
+      "bytes": 2910,
+      "sha256": "992c6118321f0ec35fb820a0e92dfa9ca2590afa70a3f4877763f575644631aa"
+    }
+  },
+  "verdict": "PASS_NARROW_REPAIR14_SAVED_AFFINE_EQUIVALENCE_AND_BOUNDED_R_ONLY",
+  "phase5": "NOT_ACCEPTED"
+}

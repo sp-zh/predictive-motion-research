@@ -1,0 +1,1 @@
+Independent file arithmetic of unsolved native16 x/y. All original rows and literal command history fail declared gates; this is not a candidate or execution. The 1,378,058-byte full-row CSV is excluded from Git and retained in the Mac/Dell functional archive identified by ../STORAGE_CHECKPOINT.json. READY preserves its identity.

@@ -40,7 +40,7 @@ inline BoxScreenResult screenLinearInputBoxes(const Problem& p){
  out.retained_rows.reserve(rows);
  const long double infinity=std::numeric_limits<long double>::infinity();
  for(int r=0;r<rows;++r){bool remove=false;long double lo=0,hi=0;
-  if(!input[r]&&q.lower(r)<q.upper(r)){
+  if(!input[r]&&p.rows[r].label.rfind("trust/",0)!=0&&p.rows[r].label.rfind("keep/",0)!=0&&q.lower(r)<q.upper(r)){
    for(int j=0;j<NZ;++j){const double a=q.constraints(r,j);if(!std::isfinite(a))throw std::invalid_argument("nonfinite screen coefficient");if(a==0)continue;
     const long double low=static_cast<long double>(a)*(a>0?lower[j]:upper[j]);
     const long double high=static_cast<long double>(a)*(a>0?upper[j]:lower[j]);

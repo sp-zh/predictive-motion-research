@@ -1,0 +1,11 @@
+# Exact original-row dominance diagnostic
+
+File-only independent Fraction arithmetic on frozen actual repair6, not a native solve or model trial. All input/trust/keep rows and exact equalities remain mandatory. Each deletion has exact original-row lower/upper witnesses; no approximate ratio, near-zero threshold or merged bound is used.
+
+The 13,156 original rows contain 2,972 extra bit-identical coefficient rows. Exact proportional interval dominance removes 2,967 nonmandatory original rows, but much of that was already box-screened. Restoring all trust rows to actual repair6 gives 6,050 rows; only 152 further rows are provably redundant (123 progress/r, 21 progress/s, seven command/w and one Bernstein row). Keeping trust/keep and removing the 16 explicit equalities first leaves 6,034 original rows and 144 independently removable rows. These latter counts use original coefficients, not the 144-variable substituted matrix. Four removals require two retained side owners. Certificates preserve original row IDs, labels and units.
+
+There are 13 repeated affine cost residuals among 741 rows, and 20 zero-coefficient rows. Cost rows already contribute to summed H/g/constant; deleting them without multiplicity/constant compensation changes the objective and is not an equivalent constraint cleanup.
+
+The sealed repair6 solve was MAX_ITER (4,000), with primal 3.5005863e-6, dual 5.1870387e-5, two rho updates, estimate 2.5008149 versus initial rho 0.1. No controls were returned. Exact duplicate constraints can produce nonunique/distributed duals, but these counts do not establish the cause of slow convergence or promise a runtime improvement. A 152-row reduction on the trust-restored system is about 2.5%, so do not treat it as a decisive conditioning repair. A prospective bounded backend/rho experiment can be declared using recorded estimates; keep original tolerances, SOLVED-only acceptance, full original SI checks and strict command/history checks.
+
+Exact feasible-set equivalence does not preserve tolerance-soft acceptance: the earlier 2x <= 2 counterexample remains applicable. Revalidate all original rows after any reduced solve; an empty candidate is not an SI pass. This unit makes no A14, task, geometry, stop, realtime or Phase5 acceptance claim.
