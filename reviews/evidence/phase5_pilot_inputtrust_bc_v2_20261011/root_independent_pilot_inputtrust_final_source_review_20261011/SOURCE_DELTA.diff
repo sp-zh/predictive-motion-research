@@ -1,0 +1,79 @@
+--- Inputtrust1/PROTOCOL.json
++++ Inputtrust3/PROTOCOL.json
+@@ -1,5 +1,5 @@
+ {
+-  "schema": "PILOT_BETA_ZERO_ORIGINAL_ALPHA_INPUTTRUST_PROTOCOL_V1",
++  "schema": "PILOT_BETA_ZERO_ORIGINAL_ALPHA_INPUTTRUST_PROTOCOL_V3",
+   "status": "REVIEW_REQUIRED_BEFORE_NONEMPTY_ALGEBRA_OR_NATIVE",
+   "component_scope": "zero nominal, one seed91011 actualwarmup1000, oneprimary400/full original QP, betaall0 plus140 originalalpha guard rows, value400 andC2onlyifallgatespass",
+   "optimizer_guard_alpha_rad_s2": 0.000999,
+@@ -27,11 +27,14 @@
+     "FSIZE_bytes": 33554432,
+     "SDK_before_after": "NumPy/SciPy .py/.so max5000; existing three data inputs actualbytes/SHA beforeafter; freshoutputonly",
+     "source_arrays": "A2reference full144scaled andA7matchingbeta0subset; derivedaugmented6351guessfresh, old6351dual nonexistent",
+-    "source_binding": "C++ actualfulloriginal/scaled+newguards digest andbitwiseinitial/history beforeNativeSOLVED gate"
++    "source_binding": "C++ actualfulloriginal/scaled+newguards digest andbitwiseinitial/history beforeNativeSOLVED gate",
++    "selection_assertions": "expected126columns, bytewiseH/g/A/l/u equalitywithfull144selection, originalZ/D/p shapes",
++    "failure_guards": "ordinarysuccess/failure best-effort finalinput+SDK hashes; invalidhint exit1; signalhardkill outer1350pin guard"
+   },
+   "native_runtime": "notyetprepared; requires separately reviewed finalELF/input/plan; original20k/20s/eps1e-9/accept1e-7 andsame120CPU2GiB150wall/binary128MiB/everyjournal12MiB",
+   "acceptance_unchanged": "originalallSI/strict200history, Bphysicalvelocity/5acc/500jerk, noModelclips/KKT1e-10, affine1e-6/trust.002, fullgeometry5mm/sigma1e-6, privateowner-boundC2",
+   "preserved_failure": "attempt12 Bpoint53affine8.35032e-5, C0; norescale/retryoldsolution/oldprotocol",
+   "phase5": "NOT_ACCEPTED",
+-  "phase6": "NOT_STARTED"
++  "phase6": "NOT_STARTED",
++  "exception_repair": "newvariant stopReason-before-request publication; bothcatch reset active request; oldhistoricfunctions byteidentical"
+ }
+--- Inputtrust1/derive_numeric_guess.py
++++ Inputtrust3/derive_numeric_guess.py
+@@ -3,16 +3,17 @@
+ import pathlib,sys,json,hashlib,struct,os
+ sys.path.insert(0,'/usr/lib/python3/dist-packages');import numpy as np
+ from scipy.optimize import minimize,LinearConstraint,nnls
+-R=pathlib.Path('/home/codextransfer/predictive_motion/results/phase5');P=R/'pilot-inputtrust-numeric-guess-v1-20261010';P.mkdir(exist_ok=False)
++R=pathlib.Path('/home/codextransfer/predictive_motion/results/phase5');P=R/'pilot-inputtrust-numeric-guess-v2-20261010';P.mkdir(exist_ok=False)
+ result={'schema':'PILOT_INPUTTRUST_PURE_OPTIMIZER_GUESS_V1','stage':'BEFORE_INPUT','Model':0,'physical_steps':0,'commits':0,'solver_alpha_guard':.000999,'strict_alpha_guard':.001}
+ (P/'RESULT_PREFIX.json').write_text(json.dumps(result,indent=2)+'\n')
++before=None;sdk=[];files=[]
+ try:
+  files=[R/'task-start-stabilization-numeric-guess-v1-20261010-repair2/ACTUAL_STABILIZATION_INPUTS.npz',R/'task-start-linear-oracle-v2-20261010-attempt1/oracle-artifacts-attempt1/ACTUAL_ORACLE_INPUTS.npz',R/'task-start-numeric-guess-v1-20261010/guess.json'];before={str(p):hashlib.sha256(p.read_bytes()).hexdigest() for p in files};(P/'BEFORE_INPUTS.json').write_text(json.dumps(before,indent=2)+'\n');sdk=[]
+  for root in [pathlib.Path('/usr/lib/python3/dist-packages/numpy'),pathlib.Path('/usr/lib/python3/dist-packages/scipy')]:
+   for z in sorted(root.rglob('*')):
+    if z.is_file() and z.suffix in ['.py','.so']:sdk.append((str(z),hashlib.sha256(z.read_bytes()).hexdigest()))
+  assert len(sdk)<=5000;(P/'SDK_BEFORE.json').write_text(json.dumps(sdk)+'\n')
+- a=np.load(files[0]);original=np.load(files[1]);H,g,A0,l0,u0=[a[n].copy() for n in ['H','g','A','l','u']];cols=a['columns'];assert H.shape==(126,126) and A0.shape==(6211,126);Z=original['Z'][:,cols];D=original['D'][cols];p=original['p'];alpha_columns=np.array([k*8+j for k in range(20) for j in range(7)]);unscaled=Z[alpha_columns].copy();values=unscaled*D[None,:];multipliers=1/np.maximum(1,np.max(np.abs(values),axis=1));guard_A=multipliers[:,None]*values;guard_l=multipliers*(-.000999-p[alpha_columns]);guard_u=multipliers*(.000999-p[alpha_columns]);A=np.vstack([A0,guard_A]);l=np.concatenate([l0,guard_l]);u=np.concatenate([u0,guard_u]);assert A.shape==(6351,126) and np.isfinite(A).all();np.savez(P/'ACTUAL_INPUTTRUST_INPUTS.npz',H=H,g=g,A=A,l=l,u=u,Z=Z,D=D,p=p,guard_original_columns=alpha_columns,guard_multiplier=multipliers)
++ a=np.load(files[0]);original=np.load(files[1]);H,g,A0,l0,u0=[a[n].copy() for n in ['H','g','A','l','u']];cols=a['columns'];expected=np.array([k*8+j for k in range(18) for j in range(7)],dtype=np.int64);assert np.array_equal(cols,expected);assert H.shape==(126,126) and A0.shape==(6211,126);selected=[original['H'][np.ix_(expected,expected)],original['g'][expected],original['A'][:,expected],original['l'],original['u']];assert all(x.shape==y.shape and x.dtype==y.dtype and x.tobytes(order='C')==y.tobytes(order='C') for x,y in zip([H,g,A0,l0,u0],selected));assert original['Z'].shape==(160,144) and original['D'].shape==(144,) and original['p'].shape==(160,);result['literal_base_selection_verified']=True;Z=original['Z'][:,cols];D=original['D'][cols];p=original['p'];alpha_columns=np.array([k*8+j for k in range(20) for j in range(7)]);unscaled=Z[alpha_columns].copy();values=unscaled*D[None,:];multipliers=1/np.maximum(1,np.max(np.abs(values),axis=1));guard_A=multipliers[:,None]*values;guard_l=multipliers*(-.000999-p[alpha_columns]);guard_u=multipliers*(.000999-p[alpha_columns]);A=np.vstack([A0,guard_A]);l=np.concatenate([l0,guard_l]);u=np.concatenate([u0,guard_u]);assert A.shape==(6351,126) and np.isfinite(A).all();np.savez(P/'ACTUAL_INPUTTRUST_INPUTS.npz',H=H,g=g,A=A,l=l,u=u,Z=Z,D=D,p=p,guard_original_columns=alpha_columns,guard_multiplier=multipliers)
+  result.update(stage='BEFORE_BOUNDED_SLSQP',n=126,m=6351,original_rows=6211,additional_guard_rows=140,max_iterations=500);(P/'RESULT_PREFIX.json').write_text(json.dumps(result,indent=2)+'\n')
+  def callback(x):
+   if time.monotonic()-started>48:raise TimeoutError('bounded pureinputtrust')
+@@ -42,4 +43,16 @@
+  guess=json.loads(files[2].read_text());guess.update(schema='TASK_START_B_ZERO_INPUT_TRUST_OPTIMIZER_GUESS_V1',solver_coordinates=x.tolist(),dual_coordinates=y.tolist(),transformed_problem_sha256=h.hexdigest(),solver_alpha_guard=.000999,strict_alpha_guard=.001,restriction='additional140originalalpha coordinateguardrows+betaall0; optimizerguessonly notcontrols/candidate');data=(json.dumps(guess,indent=2)+'\n').encode();assert len(data)<=512*1024;(P/'guess.json').write_bytes(data);(P/'guess.json').chmod(0o444)
+  after={str(p):hashlib.sha256(p.read_bytes()).hexdigest() for p in files};assert before==after;(P/'AFTER_INPUTS.json').write_text(json.dumps(after,indent=2)+'\n');sdk_after=[(p,hashlib.sha256(pathlib.Path(p).read_bytes()).hexdigest()) for p,h in sdk];assert sdk_after==sdk;(P/'SDK_AFTER.json').write_text(json.dumps(sdk_after)+'\n');result.update(stage='PURE_INPUTTRUST_GUESS_COMPLETE_NOT_CANDIDATE',bindings_valid=True,events=events,whole_seconds=time.monotonic()-started,nnls_residual_l2=float(residual),scaled_violation=float(np.max(np.maximum.reduce([l-A@x,A@x-u,np.zeros(len(l))]))),stationarity_inf=float(np.max(np.abs(H@x+g+A.T@y))),dual_shape=6351,alpha_original_max=float(np.max(np.abs(U[alpha_columns]))),transformed_problem_sha256=h.hexdigest(),guess_identity={'path':str(P/'guess.json'),'bytes':len(data),'sha256':hashlib.sha256(data).hexdigest()},error=None)
+ except Exception as e:result.update(stage='RETAINED_PURE_INPUTTRUST_FAILURE',error=type(e).__name__+': '+str(e),whole_seconds=time.monotonic()-started,bindings_valid=False)
+-(P/'RESULT.json').write_text(json.dumps(result,indent=2)+'\n');print(json.dumps(result));
++# Best-effort input/SDK guards also on ordinary failure; signals/CPU kill may
++# skip this, in which case the external1350-pin driver retains the boundary.
++for label,expected_rows in [('INPUTS',before),('SDK',dict(sdk) if sdk else None)]:
++ try:
++  if expected_rows is None:raise RuntimeError('before guard unavailable')
++  observed={name:hashlib.sha256(pathlib.Path(name).read_bytes()).hexdigest() for name in expected_rows};(P/('FINAL_'+label+'_CHECK.json')).write_text(json.dumps({'passed':observed==expected_rows,'observed':observed},indent=2)+'\n')
++  if observed!=expected_rows:result.update(bindings_valid=False,error='final '+label+' input identity drift',stage='RETAINED_PURE_INPUTTRUST_FAILURE')
++ except Exception as e:
++  (P/('FINAL_'+label+'_CHECK.json')).write_text(json.dumps({'passed':False,'error':type(e).__name__+': '+str(e)})+'\n');result['bindings_valid']=False
++result['whole_seconds']=time.monotonic()-started
++(P/'RESULT.json').write_text(json.dumps(result,indent=2)+'\n');print(json.dumps(result))
++if not result.get('bindings_valid',False):raise SystemExit(1)
++
+--- Inputtrust1/src/integrated_horizon_qp.cpp
++++ Inputtrust3/src/integrated_horizon_qp.cpp
+@@ -836,8 +836,8 @@
+   CandidateForwardRequest request;request.actual_initial_at_completed_boundary=context.actualInitial();request.boundary=context.boundary();
+   request.observation_id=context.observationId();request.transaction_id=context.transactionId();request.nominal_invocation_sha256=raw.invocationSha256();
+   request.candidate_controls.reserve(N);for(int k=0;k<N;++k){live::NominalControl c;for(int j=0;j<7;++j)c.alpha[j]=u(k*NU+j);c.b=u(k*NU+7);request.candidate_controls.push_back(c);}
+-  candidate.forensic_request_=request;candidate.request_=std::move(request);candidate.stop_reason_="CANDIDATE_FORWARD_REQUIRED_NO_EXECUTION_PERMISSION";
+- }catch(const std::exception& e){candidate.stop_reason_=e.what();}catch(...){candidate.stop_reason_="NONSTANDARD_SOLVER_OR_CANDIDATE_GATE_FAILURE";}
++  candidate.stop_reason_="CANDIDATE_FORWARD_REQUIRED_NO_EXECUTION_PERMISSION";candidate.forensic_request_=request;candidate.request_=std::move(request);
++ }catch(const std::exception& e){candidate.request_.reset();candidate.stop_reason_=e.what();}catch(...){candidate.request_.reset();candidate.stop_reason_="NONSTANDARD_SOLVER_OR_CANDIDATE_GATE_FAILURE";}
+  // No retry/projection/shrink/posthoc clip. Original SI unchanged; explicit guard subset only.
+ }
+ Eigen::VectorXd shiftControlGuess(const Eigen::VectorXd& old,live::Count elapsed){

@@ -1,0 +1,37 @@
+{
+  "schema": "ROOT_ACTUAL_PURE_INPUTTRUST_REVIEW_READY_V1",
+  "files": {
+    "INPUT_READY_READ.json": {
+      "bytes": 12828,
+      "sha256": "7454dce3190d5761a4f24a1587e2889856806e076288171b68f616ab3a52440f"
+    },
+    "RESULT.json": {
+      "bytes": 26989,
+      "sha256": "cad3c40459086d1f7ad28046bce3f59a753fbe1ae3afef8b83e260d9b72dbb79"
+    },
+    "REVIEW.md": {
+      "bytes": 4637,
+      "sha256": "d6649d92271810ea56ee34d3da61d0e7781aef0d794ce27f9fc5350371a9f1e5"
+    },
+    "SOURCE_SNAPSHOT.py": {
+      "bytes": 11815,
+      "sha256": "ecfd7930d42cb3fbc60f23e08df263aa54c4042de82656cf6ef6d66830844a34"
+    },
+    "audit_actual_pure.py": {
+      "bytes": 11815,
+      "sha256": "ecfd7930d42cb3fbc60f23e08df263aa54c4042de82656cf6ef6d66830844a34"
+    },
+    "stderr.txt": {
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    "stdout.json": {
+      "bytes": 2190,
+      "sha256": "480ad6a693ddf924b0fe3bf65c2257df10564057d8e52420f22add1520354c4f"
+    }
+  },
+  "source_sha256": "ecfd7930d42cb3fbc60f23e08df263aa54c4042de82656cf6ef6d66830844a34",
+  "verdict": "VERIFIED_NUMERICAL_HINT_ARITHMETIC_ONLY",
+  "scope": "no new optimizer/Model/native execution; no accepted candidate or B/C release",
+  "phase5_accepted": false
+}

@@ -1,0 +1,31 @@
+{
+  "schema": "ROOT_INPUTTRUST_FINAL_SOURCE_PURE_PROFILE_REVIEW_V1",
+  "source_sha256": "7df7f8ac876ba7a8a7dcbc7ac022cf681d1ea7433a8f7ffe656fc23728ae00b1",
+  "source_ready_sha256": "374c592d7a1481c9860953612f4623ee054e1a6683f5a7d3ee46d7e9caa1da51",
+  "pure_ready_sha256": "3895d4418205e9fc5c8cf9a962f84df8f6f1b8fbc95f11aab0b89e237c120aee",
+  "source_payloads": 27,
+  "source_bytes": 365158,
+  "pure_payloads": 3,
+  "pure_bytes": 427541,
+  "changed_previous_payloads": [
+    "PROTOCOL.json",
+    "derive_numeric_guess.py",
+    "src/integrated_horizon_qp.cpp"
+  ],
+  "all_existing_core_cpp_bytes_preserved": true,
+  "pure_plan_hash": "2c01609b28f8a54dd9b4bdb5230059d43f1cd1da01b8b0a77814a241e92d0472",
+  "declared_input_files": 1350,
+  "declared_empty_SDK_files": 52,
+  "declared_data_hashes_match_previous_audits": true,
+  "derive_source_matches_plan_and_source_freeze": true,
+  "actual_remote1350_hash_check_performed_here": false,
+  "source_selection_assertions_present": true,
+  "ordinary_failure_final_input_and_SDK_checks_present": true,
+  "invalid_hint_exit1_present": true,
+  "source_request_catch_reset_repair_present": true,
+  "math_guard_proof_reused_READY": "15ba759f6ff86dc38720d16d9d969257c889080c1d85f2100eb1409511cbe9d4",
+  "scope": "source/profile metadata only; no matrix/optimizer/Model/native execution",
+  "verdict": "SOURCE_AND_FROZEN_PURE_PLAN_DELTA_CONSISTENT",
+  "runtime_release": false,
+  "phase5_accepted": false
+}

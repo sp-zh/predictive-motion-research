@@ -1,0 +1,22 @@
+{
+  "schema": "PILOT_INPUTTRUST_PURE_PLAN_READY_V1",
+  "files": {
+    "derive_numeric_guess.py": {
+      "bytes": 8635,
+      "sha256": "85049a4fd1a8eafdf8ce4e9fc81a8c0218427a365d26c71eb43a108dddcc8a12"
+    },
+    "pure_driver.py": {
+      "bytes": 7624,
+      "sha256": "fd1cf45867a40d26c9af6dfee12f54ad6d2d896a8871303aaa8aa276a5600266"
+    },
+    "pure_plan.json": {
+      "bytes": 411282,
+      "sha256": "2c01609b28f8a54dd9b4bdb5230059d43f1cd1da01b8b0a77814a241e92d0472"
+    }
+  },
+  "source_ready_sha256": "374c592d7a1481c9860953612f4623ee054e1a6683f5a7d3ee46d7e9caa1da51",
+  "exact_input_files": 1350,
+  "source_sha256": "85049a4fd1a8eafdf8ce4e9fc81a8c0218427a365d26c71eb43a108dddcc8a12",
+  "runtime_dispatches": 0,
+  "scope": "bounded pureadditional140guard optimizerhint, noModel/plant, reviewrequiredbeforeentry"
+}

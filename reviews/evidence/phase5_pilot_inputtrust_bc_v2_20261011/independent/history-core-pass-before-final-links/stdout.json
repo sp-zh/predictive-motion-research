@@ -1,0 +1,148 @@
+{
+  "schema": "ROOT_ACTUAL_INPUTTRUST_BC_COMPONENT_FILE_ARITHMETIC_V1",
+  "source_sha256": "8f46170a78e2393ad808f3878d1da56977a0dd5a6ea2686120a5de3ead329bfd",
+  "packet_payloads": 429,
+  "packet_bytes": 89406729,
+  "source_Ahead3_exact": true,
+  "profile_ELF_declared": {
+    "path": "/home/codextransfer/predictive_motion/results/phase5/session-task-start-inputtrust-bc-v2-20261010-attempt14/link-attempt1/active_first_cycle",
+    "bytes": 19637080,
+    "sha256": "7bf6a729b3921cb849698f1e7279018573c6a7a425a7ed54e0474f26322371e5"
+  },
+  "local_ELF_bytes_present_verified": false,
+  "recorded_startup_termination_pin_count": 1692,
+  "recorded_pin_lists_before_after_exact": true,
+  "artifact_receipts_verified": 18,
+  "artifact_receipt_bytes": 48822084,
+  "actual_dispatch_count": 1,
+  "raw_facts": [
+    1,
+    1,
+    1
+  ],
+  "raw_shapes": [
+    400,
+    200,
+    20
+  ],
+  "own_full400_recomputation": true,
+  "first_failure": null,
+  "max30_all400": 2.2140449391395978e-10,
+  "max30_by_component": [
+    1.0780487613715195e-11,
+    1.9193813205475863e-11,
+    3.4536595805434445e-11,
+    6.832445720306168e-11,
+    2.405430021834576e-11,
+    9.78772618509538e-12,
+    4.46753745109163e-13,
+    4.5232960199691544e-11,
+    1.2138368847385006e-10,
+    2.2140449391395978e-10,
+    1.760672464757012e-10,
+    1.7028336809458023e-10,
+    7.192682341112915e-11,
+    3.4039853319964633e-12,
+    8.881784197001252e-16,
+    1.1102230246251565e-16,
+    8.881784197001252e-16,
+    1.3322676295501878e-15,
+    1.1102230246251565e-16,
+    1.7763568394002505e-15,
+    8.881784197001252e-16,
+    2.710505431213761e-19,
+    2.710505431213761e-19,
+    2.710505431213761e-19,
+    2.710505431213761e-19,
+    2.710505431213761e-19,
+    2.710505431213761e-19,
+    2.710505431213761e-19,
+    0.0,
+    0.0
+  ],
+  "initial_physical_history_exact_actual_warmup_last_point": true,
+  "all400_physical_a_jerk_record_difference": [
+    0.0,
+    0.0
+  ],
+  "complete_geometry_points": 400,
+  "stored_geometry_sigma_interval_recompute_error_points1to399": 0.0,
+  "first_geometry_initial_sigma_not_saved_not_independently_recomputed": true,
+  "full_original_QP_arrays_exact_previousA7": true,
+  "full_original_SI": {
+    "rows": 13156,
+    "max_independent": 3.7269449679189215e-20,
+    "max_recorded": 8.131516293641283e-20,
+    "row_error": 5.421010862427522e-20
+  },
+  "native_SOLVED": {
+    "status": 0,
+    "raw_status": 1,
+    "api_error": 0,
+    "iterations": 1,
+    "setup": 0.029019768,
+    "solve": 0.00187221
+  },
+  "new_guard": {
+    "rows": 140,
+    "all6351_scaled_arrays_exact_pure_hint_inputs": true,
+    "solver_caps": [
+      0.000999,
+      0.001
+    ],
+    "alpha_max": 0.0009990000000000003,
+    "internal_label": "internal_alpha_guard/cell/18/joint/1"
+  },
+  "actual_C": {
+    "attempts": 2,
+    "returns": 2,
+    "history_before": [
+      0,
+      0
+    ],
+    "history_after": [
+      1,
+      1
+    ],
+    "held_C": [
+      -1.2457657329260912,
+      0.09664779041074283,
+      1.15463214461952,
+      -2.7819779622015477,
+      -0.09755089222040622,
+      4.385246719633958,
+      -1.6281268491117311
+    ],
+    "times": [
+      2.002000000000001,
+      2.004000000000001
+    ],
+    "actual_derivatives_exact": true,
+    "value_actual_qv_maxdiff": 4.924588724474255e-16,
+    "interval_arithmetic_error": 0.0,
+    "journal_events": 8,
+    "last_physical_history_matches_after_snapshot": true
+  },
+  "strict_actual_input_history": {
+    "cycles": 200,
+    "failures": 0,
+    "exact_beta_s_r_b_zero": true,
+    "final_w_maxabs": 1.6432439176733427e-19
+  },
+  "exact_tail": 0,
+  "branch_causality_claim": false,
+  "completion": {
+    "stage": "COMPLETE_STABILIZATION_B_AND_ONE_TWO_STEP_C_PILOT_NOT_FULL_TASK",
+    "error": "",
+    "wall": 14.426002326,
+    "boundary_unchanged": 0,
+    "termination_session": 1,
+    "termination_sim": 1,
+    "physical_steps": 1002,
+    "C_commits": 1
+  },
+  "no_new_Model_native_solver_calls": true,
+  "accepted_tick_count": 1,
+  "actual_task_substeps": 2,
+  "phase5": "NOT_ACCEPTED"
+}

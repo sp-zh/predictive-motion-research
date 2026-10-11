@@ -1,0 +1,22 @@
+{
+  "schema": "PILOT_INPUTTRUST_ACTUAL_PREDICTION_TRANSACTION_PLOT_V2",
+  "inputs": {
+    "ACTUAL_CANDIDATE_VALIDATION.json": "69123b7fcfa0dce0f559c8253a4697bc0e7a35d987c3770a7281e8d392557846",
+    "ACTUAL_COMMIT.json": "cfd8f423b491ab93638ac11cb24bd23a37de954c8ab0c950d9401fb69e48ebdf",
+    "ACTUAL_CANDIDATE_VALUE.json": "176a12f2342d4c7a5d0834b3b6ea1bd728aa1ac48eec002e0d1c782398e05a14"
+  },
+  "outputs": {
+    "validated_two_step_transaction_root.png": {
+      "bytes": 222528,
+      "sha256": "ee7e59b68c676020f30b745047cedcc77322857e1e6032137d5033f4dc4048e6"
+    },
+    "validated_two_step_transaction_root.svg": {
+      "bytes": 145968,
+      "sha256": "0b3ad1d8144919592abc686e7815a583d25767844b201f7da1035eef6888d11f"
+    }
+  },
+  "matplotlib_version": "3.10.3",
+  "scope": "B full400 prediction, C two realobserved2ms; taskprogress0; nofulltask performance",
+  "raw_actual_steps_already_completed": 2,
+  "new_Model_or_MuJoCo_native_entries": 0
+}

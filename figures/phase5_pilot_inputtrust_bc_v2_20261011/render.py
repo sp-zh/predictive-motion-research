@@ -1,0 +1,22 @@
+from pathlib import Path
+import json,hashlib
+p=Path(__file__).resolve().parents[2]/"reviews/evidence/phase5_pilot_inputtrust_bc_v2_20261011"
+out=Path(__file__).resolve().parent
+import matplotlib;matplotlib.use('Agg')
+import matplotlib.pyplot as plt
+names=['ACTUAL_CANDIDATE_VALIDATION.json','ACTUAL_COMMIT.json','ACTUAL_CANDIDATE_VALUE.json'];before={n:hashlib.sha256((p/n).read_bytes()).hexdigest() for n in names};assert before=={'ACTUAL_CANDIDATE_VALIDATION.json': '69123b7fcfa0dce0f559c8253a4697bc0e7a35d987c3770a7281e8d392557846', 'ACTUAL_COMMIT.json': 'cfd8f423b491ab93638ac11cb24bd23a37de954c8ab0c950d9401fb69e48ebdf', 'ACTUAL_CANDIDATE_VALUE.json': '176a12f2342d4c7a5d0834b3b6ea1bd728aa1ac48eec002e0d1c782398e05a14'}
+a,c,v=[json.loads((p/n).read_text()) for n in names];rows=a['points'];assert len(rows)==400 and all(z['complete'] for z in rows) and a['passed'] and c['success'] and len(c['points'])==2
+plt.rcParams.update({'font.size':11,'axes.spines.top':False,'axes.spines.right':False,'axes.grid':True,'grid.alpha':.2})
+fig,ax=plt.subplots(2,2,figsize=(13,8));fig.suptitle('Phase 5 development: one validated two-step transaction',fontsize=18,x=.07,ha='left')
+t=[r['elapsed'] for r in rows];ax[0,0].semilogy(t,[max(r['affine_error'],1e-16) for r in rows],color='#006f89',label='Genuine value / affine max error');ax[0,0].axhline(1e-6,color='#b23a38',ls='--',label='Unchanged 1e-6 gate');ax[0,0].set_ylim(1e-16,1e-5);ax[0,0].set_title('B: all 400 predicted samples checked',loc='left');ax[0,0].set_ylabel('Mixed state component error');ax[0,0].legend(loc='lower right',fontsize=9)
+ax[0,1].plot(t,[r['min_true']*1000 for r in rows],label='Full true geometry',color='#006f89');ax[0,1].plot(t,[r['min_cover']*1000 for r in rows],label='Full cover geometry',color='#568d39');ax[0,1].axhline(5,color='#b23a38',ls='--',label='5 mm floor');ax[0,1].set_ylim(4,25);ax[0,1].set_title('B: complete predicted geometry',loc='left');ax[0,1].set_ylabel('Predicted clearance (mm)');ax[0,1].legend(loc='lower right',fontsize=9)
+for aaxis in ax[0]:aaxis.set_xlabel('Prediction horizon time (s)');aaxis.set_xlim(0,.8)
+initial=v['actual_initial'];deltas=[(x-y)*1e9 for x,y in zip(c['held_C'],initial['C'])];ax[1,0].hlines([min(deltas),max(deltas)],0,4,color=['#b23a38','#006f89'],lw=3,label='Exact held target range');ax[1,0].axvline(2,color='#999999',ls=':');ax[1,0].set_ylim(-20,20);ax[1,0].set_title('C: same C_next held across both halves',loc='left');ax[1,0].set_ylabel('Target change from prior C (nrad)');ax[1,0].text(.045,.15,'Very small command, fixed alpha subset\nHistory published only after half 2',transform=ax[1,0].transAxes,fontsize=10)
+actual_t=[0]+[(z['simulation_time']-c['before_time'])*1000 for z in c['points']];actual_v=[initial['v'][1]*1e6]+[z['v'][1]*1e6 for z in c['points']];modeled_v=[initial['v'][1]*1e6]+[z['v'][1]*1e6 for z in v['substeps'][:2]];ax[1,1].plot([0,2,4],modeled_v,color='#006f89',label='Genuine prediction, first two samples');ax[1,1].scatter(actual_t,actual_v,color='#b23a38',s=40,zorder=4,label='Actual independent observation');ax[1,1].set_title('C: two real 2 ms steps observed',loc='left');ax[1,1].set_ylabel('Joint 2 velocity (microrad/s)');ax[1,1].legend(loc='upper right',fontsize=8)
+for aaxis in ax[1]:aaxis.set_xlabel('Actual transaction time (ms)');aaxis.set_xlim(-.1,4.1);aaxis.set_xticks([0,2,4])
+fig.text(.07,.064,'Seed 91011 | beta = 0 | optimizer alpha cap 0.000999 rad/s2 | 1 commit, 2 real 2 ms substeps',fontsize=11)
+fig.text(.07,.034,'Restricted stabilization interface only. No full-task, physical-rest, continuous-trajectory or real-time performance claim.',fontsize=10)
+fig.subplots_adjust(top=.9,bottom=.16,left=.085,right=.97,hspace=.36,wspace=.3)
+for ext in ['png','svg']:fig.savefig(out/('validated_two_step_transaction_root.'+ext),dpi=160)
+plt.close(fig);after={n:hashlib.sha256((p/n).read_bytes()).hexdigest() for n in names};assert before==after
+outputs={n:{'bytes':(out/n).stat().st_size,'sha256':hashlib.sha256((out/n).read_bytes()).hexdigest()} for n in ['validated_two_step_transaction_root.png','validated_two_step_transaction_root.svg']};(out/'ROOT_REPRODUCTION_PROVENANCE.json').write_text(json.dumps({'schema':'PILOT_INPUTTRUST_ACTUAL_PREDICTION_TRANSACTION_PLOT_V2','inputs':before,'outputs':outputs,'matplotlib_version':matplotlib.__version__,'scope':'B full400 prediction, C two realobserved2ms; taskprogress0; nofulltask performance','raw_actual_steps_already_completed':2,'new_Model_or_MuJoCo_native_entries':0},indent=2)+'\n');print(json.dumps(outputs))

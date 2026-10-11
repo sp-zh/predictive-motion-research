@@ -1,0 +1,5 @@
+Traceback (most recent call last):
+  File "/private/tmp/root_independent_pilot_inputtrust_bc_actual_review_20261011/audit_actual_bc.py", line 190, in <module>
+    red=reduction(pin(BASE/'qp_equality_reduction.bin'));assert red['valid']==1 and red['Z'].shape==(160,126) and red['As'].shape==(6351,126) and len(red['rows'])==6351 and red['rows'][-140:]==[-1]*140
+                                                                ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AssertionError

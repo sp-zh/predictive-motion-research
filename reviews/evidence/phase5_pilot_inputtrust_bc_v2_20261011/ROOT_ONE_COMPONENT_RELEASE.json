@@ -1,0 +1,69 @@
+{
+  "schema": "ROOT_ONE_OFFLINE_INPUTTRUST_BETA_ZERO_BC_COMPONENT_RELEASE_V1",
+  "status": "RELEASED_EXACT_ONE_FRESH_ATTEMPT14_ONLY",
+  "human_scope_source": "Verified ongoing A\u2013E functional development authorization; historical gates and failures preserved. Public/private backup conflict holds publication only.",
+  "source_ready_sha256": "374c592d7a1481c9860953612f4623ee054e1a6683f5a7d3ee46d7e9caa1da51",
+  "independent_math_ready_sha256": "f3ed69afa3f611ab4ec695b3e0369e8c3a13b462926c3dfcfe81ba6e78281281",
+  "runtime_profile_ready_sha256": "6d37e4c356508a17b9480be8b18f1764a40bdc5168d2363803d5508ba49f3db8",
+  "runtime_plan_sha256": "7a27997b2c1a553859f0b61ec22d1f750ac89eb31b37b557f85947f06041f442",
+  "runtime_driver_sha256": "b828f200f9750faca0ff89abc3ef4b4d7da78c9ab61976a49766a6c125a3e3f2",
+  "passive_input_verification_sha256": "264fe43ef133543c70c4ebf83a7a59d7d710170368040c13aa3f950dc094d56b",
+  "runtime_input_sha256": "3b442197a19376f69799aa0a9acb96a3d3334b42071cfb5c7cb36a448330189d",
+  "ELF_sha256": "7bf6a729b3921cb849698f1e7279018573c6a7a425a7ed54e0474f26322371e5",
+  "driver_exact_argv": [
+    "/usr/bin/python3.12",
+    "-I",
+    "-S",
+    "-B",
+    "/home/codextransfer/predictive_motion/results/phase5/session-task-start-inputtrust-bc-v2-20261010-attempt14/active_run_driver.py",
+    "/home/codextransfer/predictive_motion/results/phase5/session-task-start-inputtrust-bc-v2-20261010-attempt14/active_run_plan.json"
+  ],
+  "sole_child_argv": [
+    "/home/codextransfer/predictive_motion/results/phase5/session-task-start-inputtrust-bc-v2-20261010-attempt14/link-attempt1/active_first_cycle",
+    "/home/codextransfer/predictive_motion/results/phase5/session-task-start-inputtrust-bc-v2-20261010-attempt14/profile-version1/active_input.json",
+    "3b442197a19376f69799aa0a9acb96a3d3334b42071cfb5c7cb36a448330189d",
+    "7bf6a729b3921cb849698f1e7279018573c6a7a425a7ed54e0474f26322371e5",
+    "/home/codextransfer/predictive_motion/results/phase5/session-task-start-inputtrust-bc-v2-20261010-attempt14/run-attempt1/artifacts"
+  ],
+  "scope": {
+    "seed": 91011,
+    "bootstrap_steps": 1000,
+    "primary_genuine_nominal_entries": 1,
+    "QP_component": "126command subspace/all20beta0; original objective/full13156SI/strict200 unchanged;140 originalalpha guards solvercap.000999rad/s^2 and strictreconstructioncap.001rad/s^2;newnativeQP6351rows",
+    "candidate_value_Model_entries_max": 1,
+    "value_substeps": 400,
+    "C_attempts_max": 1,
+    "actual_C_substeps_max": 2,
+    "native_dt_seconds": 0.002,
+    "progress": 0,
+    "one_private_validation_latch": true,
+    "accepted_history_publish": "only after both actual steps and all checks complete",
+    "time_scope": "offline frozen current native simulation boundary; no4ms latency claim"
+  },
+  "limits": {
+    "CPU_seconds": 120,
+    "AS_bytes": 2147483648,
+    "child_wall_seconds": 150,
+    "stdout_stderr_each_bytes": 1048576,
+    "binary_evidence_bytes": 134217728,
+    "each_journal_bytes": 12582912
+  },
+  "conditions": [
+    "Execute exact one fresh attempt14 only; no repeat/attempt13 or old8/9/10/11/12 invocation.",
+    "All original source/profile/native/Model/SI/strict-history/geometry/physicalderivative/currentowner gates must pass; if B refuses, no C.",
+    "Preserve full raw candidate value and assessment/actual durable prefixes, complete+partial failures and honest native counters.",
+    "Root-to-link/attached extent is privately recomputed and must pass <=2m before validation; pure precheck is not actual runtime result.",
+    "Interval bounds describe declared discrete endpoint interpolation only, not continuous MuJoCo/hardware physics.",
+    "A7 exact-tail false remains; no terminal physical-rest/zeroextension certificate, repeated D/E, fulltask/main/scorer/hardware run or Phase5 acceptance is released.",
+    "Startup+termination source/dependency checks and post-run before/after identities are required.",
+    "No post-hoc clamp/repair or reuse of rejected attempt12 solution; numerical hint is only initial point; fresh nativeSOLVED/fulloriginalSI/strict200/B400 mandatory.",
+    "Reconstructed alpha .001 cap is additional restricted-domain gate, not a universal branch-invariance/prediction-error guarantee or unrestricted144 optimum."
+  ],
+  "phase5": "NOT_ACCEPTED",
+  "phase6": "NOT_STARTED",
+  "prior_undispatched_attempt11_release_withdrawal": "../pilot-bc-runtime-profile-v4-20261010/ROOT_ATTEMPT11_RELEASE_WITHDRAWN.json",
+  "AS_error_scope": "Ahead5 clears success flags before allocating failure messages; no universal no-throw OOM or fault-injection proof.",
+  "actual_pure_ready_sha256": "7454dce3190d5761a4f24a1587e2889856806e076288171b68f616ab3a52440f",
+  "independent_actual_pure_ready_sha256": "2cb4d006b3310422afa4e1462a0da645cc8f1bdabffee696802be81cc150fe07",
+  "source_math_scope": "Root final source/pure declaration verified; actual65 hint packet independentlyverified before native14 release. Pure derivation had producer interface review before its own dispatch; no retroactive Root1350 pre-dispatch verification claim."
+}
