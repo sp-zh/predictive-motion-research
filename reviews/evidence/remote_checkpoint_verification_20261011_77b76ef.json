@@ -1,0 +1,22 @@
+{
+  "schema": "ROOT_PAUSED_PROJECT_REMOTE_CHECKPOINT_VERIFICATION_V1",
+  "remote": "https://github.com/sp-zh/predictive-motion-research.git",
+  "branch": "master",
+  "verified_functional_checkpoint": "77b76ef4babba48b1aeb365bbb9c5d3bdfaeab41",
+  "verification": "git push exit0, git ls-remote refs/heads/master returned exact77b76ef",
+  "recorded_time_utc": "2026-10-11T07:31:40.886667+00:00",
+  "functional_units_in_ancestry": [
+    "actual30 geometryQPs",
+    "numerical-tail saved-input repair",
+    "actual36 nonzero3transactions/offline37",
+    "direct-human manualwait"
+  ],
+  "all_actual36_aggregate1261payloads_Mac_Dell_SHA_verified": true,
+  "archive_sha256": "a71aa4e1d9818a735ba252a023b5e5b61023e9206fc9ff901a9c40549e78be77",
+  "historical_pending_publication_fields": "These record status at older immutable archive/commit time; this verification confirms actuallaterpublication of77b76ef and its ancestors",
+  "status": "WAITING_FOR_MANUAL_RESUME",
+  "daily_automation": "PAUSED",
+  "presentation": "Actual36 renders/video deferred until manualresume",
+  "phase5": "NOT_ACCEPTED",
+  "phase6": "NOT_STARTED"
+}
