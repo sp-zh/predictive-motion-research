@@ -1,0 +1,75 @@
+{
+  "schema": "ACTUAL_NOMINAL_COMPONENT_FIGURE_PROVENANCE_1",
+  "scope": "Model-produced nominal forecast only. QP TIME_LIMIT; no usable candidate, no physical steps, no task trajectory.",
+  "source_binary": {
+    "path": "/proc/self/exe",
+    "sha256": "8bb1e243dd2a2cc7568e16bb6f515cca3c4932ea4d588941a59e7cc87119d5f0",
+    "bytes": 19344320
+  },
+  "source_nominal_sha256": "67a583419a02968bbdbae471939d8c32647ad434d4b94a9f6287bbbcbf0c0bf2",
+  "independent_export_sha256": "91705fe018d49bc7095b79e186ba70c18f3ca44b4d0c00bfd7d5d38c981d5044",
+  "outcome_sha256": "f8062834851ba7386462ecbfb42b92413278e14982de632ac1a3cfa2f5669315",
+  "samples": 400,
+  "units": {
+    "time": "seconds",
+    "q_C": "rad (plot mrad)",
+    "v_w": "rad/s"
+  },
+  "nominal_inputs": "all alpha/b zero; C held; s=r=0",
+  "mesh_cycles": [
+    1,
+    1,
+    2,
+    2,
+    3,
+    3,
+    4,
+    4,
+    5,
+    5,
+    6,
+    6,
+    8,
+    10,
+    12,
+    16,
+    20,
+    24,
+    28,
+    40
+  ],
+  "measured_timing_scope": "Upstream+raw retention; connection assembly; remaining wrapper path (connection-and-solver minus assembly). Native setup/solve are nested subsets, not summed again. Known age excludes later observer/output work and is not full-cycle online timing.",
+  "phase5": "NOT_ACCEPTED",
+  "phase6": "NOT_STARTED",
+  "files": {
+    "nominal_diagnostic.png": {
+      "bytes": 171603,
+      "sha256": "cdd2c81bcfc0077d701c43bc0edbb97d58a8ff448b7ebf8dd60dddf07a2daf4b"
+    },
+    "nominal_diagnostic.svg": {
+      "bytes": 42600,
+      "sha256": "540f8722359efab5cebd008da2acb916eb9eafb9587b23d15ac07d63ff3855c4"
+    },
+    "nominal_halves.csv": {
+      "bytes": 160905,
+      "sha256": "ab1ef037510de7422e83984e8834643ef7bd90c787022cc38ae659cfd3c77433"
+    },
+    "render.py": {
+      "bytes": 2565,
+      "sha256": "3bc11dc6a0b8e8b11397c22970409be15503b67fbbfa9bf8288cf2f4eeb644ba"
+    }
+  },
+  "final_independent_audit_source_sha256": "78155d5e4a354bec52408e497674d301c68c3bbeab6aa4b4333a60914a9a63a3",
+  "independent_audit_ready_sha256": "52ecb2007c001b334ecd26911c58753e1a46677b2d54fd62cec18a497bea1178",
+  "inspection": "Color PNG inspected; units and complete400sample export validated. Figure represents model forecast only.",
+  "model_only_first_half_finite_difference_acceleration_rad_s2": [
+    0.01167786945528854,
+    4.706941312576518,
+    0.01816943947850787,
+    -7.52419313027547,
+    -0.25578138400866784,
+    -1.220594469488875,
+    0.0006749948988523869
+  ],
+  "model_derivative_scope": "Difference from observed initial v=0 to first produced nominal2ms v. This is model startup diagnosis, not an executed candidate or a physical-safety verdict."
+}

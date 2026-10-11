@@ -1,0 +1,67 @@
+{
+  "schema": "ACTIVE_NATIVE_OBSERVER_REGRESSION_V1",
+  "stage": "REAPED_WITH_INPUTS_VERIFIED",
+  "scope": "actual repeated native independent observer only; no Model/nominal/QP/candidate/step/commit",
+  "exit": 0,
+  "argv": [
+    "/home/codextransfer/predictive_motion/results/phase5/session-runtime-observer-v1-20261010-repair1/link-attempt1/observer_tests",
+    "/home/codextransfer/predictive_motion/results/phase5/integrated-first-cycle-v1-20261010/runtime-profile-version2/inputs/inspection_fr3.xml",
+    "0231a374b6173f38ff63a214932dfca624594d23daf5f4b0c4a0e8e02016ebae",
+    "11239",
+    "/home/codextransfer/predictive_motion/results/phase5/integrated-first-cycle-v1-20261010/runtime-profile-version2/inputs/public_constants.json",
+    "d37c9a12539345fd1dbb6718cd273584140359ca2bd9834442bf2228e50f6bdd"
+  ],
+  "producer": {
+    "path": "/home/codextransfer/predictive_motion/results/phase5/session-runtime-observer-v1-20261010-repair1/link-attempt1/observer_tests",
+    "bytes": 200256,
+    "sha256": "02c4030cb06c2454081d55173ad5fa8246ea792c762eed13504d91a93d787828"
+  },
+  "pid": 28611,
+  "stdout": "{\"complete\":true,\"scope\":\"actual repeated independent native observation only\",\"load_xml\":1,\"make_data\":2,\"reset\":1,\"forward\":4,\"copy\":3,\"get_state\":6,\"observations\":3,\"steps\":0,\"commits\":0,\"Model_nominal_QP_candidate_calls\":0,\"stored_observer_age\":8.6400000000000001e-07,\"derived_age\":0.0052432219999999996,\"q\":[0,0,0,-1.5707899999999999,0,1.5707899999999999,-0.7853],\"v\":[0,0,0,0,0,0,0],\"accepted_C\":[0,0,0,-1.5707899999999999,0,1.5707899999999999,-0.7853]}\n",
+  "stderr": "",
+  "input_bindings_unchanged": true,
+  "native_result": {
+    "complete": true,
+    "scope": "actual repeated independent native observation only",
+    "load_xml": 1,
+    "make_data": 2,
+    "reset": 1,
+    "forward": 4,
+    "copy": 3,
+    "get_state": 6,
+    "observations": 3,
+    "steps": 0,
+    "commits": 0,
+    "Model_nominal_QP_candidate_calls": 0,
+    "stored_observer_age": 8.64e-07,
+    "derived_age": 0.005243222,
+    "q": [
+      0,
+      0,
+      0,
+      -1.57079,
+      0,
+      1.57079,
+      -0.7853
+    ],
+    "v": [
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0
+    ],
+    "accepted_C": [
+      0,
+      0,
+      0,
+      -1.57079,
+      0,
+      1.57079,
+      -0.7853
+    ]
+  },
+  "wall_seconds": 0.8548898989974987
+}

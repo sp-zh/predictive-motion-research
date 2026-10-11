@@ -1,0 +1,28 @@
+{
+  "schema": "ACTIVE_SESSION_OBSERVER_LINK_V1",
+  "output_directory": "/home/codextransfer/predictive_motion/results/phase5/session-runtime-observer-v1-20261010-repair1/link-attempt1",
+  "env": {
+    "PATH": "/usr/bin:/bin",
+    "LANG": "C",
+    "LC_ALL": "C",
+    "TZ": "UTC"
+  },
+  "input_files": [],
+  "readonly_directory_rosters": [],
+  "compile_argv": [
+    [
+      "/usr/bin/x86_64-linux-gnu-g++-13",
+      "/home/codextransfer/predictive_motion/results/phase5/session-runtime-observer-v1-20261010-repair1/build-attempt1/unit-1.o",
+      "/home/codextransfer/predictive_motion/results/phase5/session-runtime-observer-v1-20261010-repair1/build-attempt1/unit-2.o",
+      "/home/codextransfer/predictive_motion/results/phase5/repaired-source-configure-only-after-v4-20261009/attempt1/build/inventory-source/input-source/cost-source/affine-source/normalized-source/model-boundary/live-foundation/libpublic_live_affine_v2_foundation.a",
+      "/home/codextransfer/predictive_motion/.vendor/mujoco-3.3.7/lib/libmujoco.so.3.3.7",
+      "/usr/lib/x86_64-linux-gnu/libcrypto.so.3",
+      "/usr/lib/x86_64-linux-gnu/libyaml-cpp.so.0.8.0",
+      "-Wl,--disable-new-dtags",
+      "-Wl,-rpath,/home/codextransfer/predictive_motion/.vendor/mujoco-3.3.7/lib:/usr/lib/x86_64-linux-gnu",
+      "-Wl,-Map,/home/codextransfer/predictive_motion/results/phase5/session-runtime-observer-v1-20261010-repair1/link-attempt1/link.map",
+      "-o",
+      "/home/codextransfer/predictive_motion/results/phase5/session-runtime-observer-v1-20261010-repair1/link-attempt1/observer_tests"
+    ]
+  ]
+}

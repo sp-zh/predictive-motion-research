@@ -1,0 +1,23 @@
+{
+  "scope": "LOCAL_AUDIT_SCRIPT_DEBUG_NO_NATIVE_MODEL_PLANT",
+  "failures": [
+    {
+      "attempt": "initial audit script",
+      "cause": "selected NumPy runtime does not provide PyYAML",
+      "error": "ModuleNotFoundError: No module named yaml",
+      "repair": "strict known-emitter manifest parser; reject unsupported layout"
+    },
+    {
+      "attempt": "second audit script",
+      "cause": "audit row list retained mutable NumPy views of command maps",
+      "error": "independent A comparison max mismatch 0.16000000000000011",
+      "repair": "copy each regenerated row before subsequent command-map update; production evidence never changed"
+    },
+    {
+      "attempt": "final guarded audit",
+      "exit": 0,
+      "source_sha256": "78155d5e4a354bec52408e497674d301c68c3bbeab6aa4b4333a60914a9a63a3"
+    }
+  ],
+  "producer_failed_run_preserved": true
+}

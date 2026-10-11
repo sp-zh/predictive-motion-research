@@ -1,0 +1,62 @@
+{
+  "schema": "FUNCTIONAL_ASSEMBLY_OBSERVER_STORAGE_CHECKPOINT_V1",
+  "date": "2026-10-10",
+  "phase5": "NOT_ACCEPTED",
+  "phase6": "NOT_STARTED",
+  "scope": "Canonical offline first-cycle assembly retained TIME_LIMIT and initial prediction seam, independent numeric audit, native observation regression; excludes subsequent active-A repair1/3/6 attempts.",
+  "archives": [
+    {
+      "mac_archive": "/Users/uot/Documents/ChatGPT/ros/results/phase5-reference/functional-prediction-assembly-v1-20261010/root-retained-milestone1/functional-prediction-assembly-v1.tar.gz",
+      "mac_ready": "/Users/uot/Documents/ChatGPT/ros/results/phase5-reference/functional-prediction-assembly-v1-20261010/root-retained-milestone1/ARCHIVE_READY.json",
+      "bytes": 29599332,
+      "sha256": "ec3be121639e3bec40f449c4438ef4e95ad8d14266b4d756d0f58e1a0f3c1bb9",
+      "ready_sha256": "8a6bf99a245de6a4f13eecfb731464916e96c25d63b406536d06e6629111510f",
+      "mac_verified": true,
+      "dell_full_payload_readback": {
+        "archive": "/mnt/d/CodexTransfer/projects/predictive_motion/checkpoints/functional-prediction-assembly-v1-20261010/functional-prediction-assembly-v1.tar.gz",
+        "sha256": "ec3be121639e3bec40f449c4438ef4e95ad8d14266b4d756d0f58e1a0f3c1bb9",
+        "bytes": 29599332,
+        "manifest_sha256": "920beec4e505aac8825714dbd1b129c501d7d12c5c20d04914f7d60aeb5dd4b0",
+        "verified_regular_members": 375,
+        "verified_payloads": 374,
+        "all_payloads_verified": true,
+        "ready_sha256": "8a6bf99a245de6a4f13eecfb731464916e96c25d63b406536d06e6629111510f",
+        "observed_mode": 365,
+        "observed_uid": 1000,
+        "observed_gid": 1000
+      }
+    },
+    {
+      "mac_archive": "/Users/uot/Documents/ChatGPT/ros/results/phase5-reference/functional-prediction-assembly-v1-20261010/root-observer-delta1/observer-functional-delta-v1.tar.gz",
+      "mac_ready": "/Users/uot/Documents/ChatGPT/ros/results/phase5-reference/functional-prediction-assembly-v1-20261010/root-observer-delta1/ARCHIVE_READY.json",
+      "bytes": 41538,
+      "sha256": "dfca6f7d82596b8aae87f0673951c6d6418529c97e662a578fb7295407516723",
+      "ready_sha256": "598c0612f305e8687045d5e1d60110eec19aa6de574db7ead26d13ae2386495c",
+      "mac_verified": true,
+      "dell_full_payload_readback": {
+        "archive": "/mnt/d/CodexTransfer/projects/predictive_motion/checkpoints/functional-prediction-assembly-v1-20261010/observer-functional-delta-v1.tar.gz",
+        "sha256": "dfca6f7d82596b8aae87f0673951c6d6418529c97e662a578fb7295407516723",
+        "bytes": 41538,
+        "manifest_sha256": "e8c71fc67b35a5c350dbc7f178835a05ca2aa50d486f686aef632afe59f72595",
+        "verified_regular_members": 48,
+        "verified_payloads": 47,
+        "all_payloads_verified": true,
+        "ready_sha256": "598c0612f305e8687045d5e1d60110eec19aa6de574db7ead26d13ae2386495c",
+        "observed_mode": 365,
+        "observed_uid": 1000,
+        "observed_gid": 1000
+      }
+    }
+  ],
+  "copy_failure_retained": {
+    "file": "/Users/uot/Documents/ChatGPT/ros/results/phase5-reference/functional-prediction-assembly-v1-20261010/DELL_ARCHIVE_VERIFICATION.stderr",
+    "sha256": "3dfb2d8a933c37a4e27f01928a732d21c8a9ca99d155aa29c7e1e7e55176aaff",
+    "reason": "Copies succeeded; NTFS chmod failed EPERM. Subsequent read-only full archive/payload verification passed for both existing copies. Dell POSIX sealing/ownership change is not asserted."
+  },
+  "verification_receipt": {
+    "file": "/Users/uot/Documents/ChatGPT/ros/results/phase5-reference/functional-prediction-assembly-v1-20261010/DELL_ARCHIVE_READBACK_V2.stdout.json",
+    "sha256": "fe6a19dc620e1aa1f4e672d50af4a23caf76bae0b3d8c27211932a5aeb012045"
+  },
+  "publication_scope": "Small source/reviews/documentation/diagnostic figure only; raw archives excluded from Git. Standing direct-human public backup authorization applies.",
+  "acceptance": "Component/observer success and this backup do not establish usable candidate, physical motion, task completion, real-time performance or phase acceptance."
+}

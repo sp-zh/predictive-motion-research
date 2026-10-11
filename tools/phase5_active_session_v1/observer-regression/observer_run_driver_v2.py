@@ -1,0 +1,24 @@
+import pathlib,subprocess,resource,os,time,json,signal,hashlib,xml.etree.ElementTree as ET
+params=json.loads('{"remote": "/home/codextransfer/predictive_motion/results/phase5/session-runtime-observer-v1-20261010-repair1", "xml": {"path": "/home/codextransfer/predictive_motion/results/phase5/integrated-first-cycle-v1-20261010/runtime-profile-version2/inputs/inspection_fr3.xml", "bytes": 11239, "sha256": "0231a374b6173f38ff63a214932dfca624594d23daf5f4b0c4a0e8e02016ebae"}, "constants": {"path": "/home/codextransfer/predictive_motion/results/phase5/integrated-first-cycle-v1-20261010/runtime-profile-version2/inputs/public_constants.json", "bytes": 4481, "sha256": "d37c9a12539345fd1dbb6718cd273584140359ca2bd9834442bf2228e50f6bdd"}, "sources": [{"path": "/home/codextransfer/predictive_motion/results/phase5/session-runtime-observer-v1-20261010-repair1/src/observer_tests.cpp", "bytes": 3785, "sha256": "d1ff998984981a5ded1e92b8d452503e8b489ecfb0d067fb04ff5fd616d02877"}, {"path": "/home/codextransfer/predictive_motion/results/phase5/session-runtime-observer-v1-20261010-repair1/src/runtime_observer.cpp", "bytes": 6417, "sha256": "b749a223203f3a28719585b061741016f45bd2b94d042508e34765940a42f9ef"}, {"path": "/home/codextransfer/predictive_motion/results/phase5/session-runtime-observer-v1-20261010-repair1/src/runtime_observer.hpp", "bytes": 2682, "sha256": "90e82dc6facf7cd809efbf16bf15a32358bdcd0d40c54e8f96695cd5300590f2"}]}');p=pathlib.Path(params['remote']);out=p/'observer-run-attempt2';out.mkdir(exist_ok=False);start=time.monotonic();child=None
+r={'schema':'ACTIVE_NATIVE_OBSERVER_REGRESSION_V1','stage':'INPUT_VERIFICATION','scope':'actual repeated native independent observer only; no Model/nominal/QP/candidate/step/commit','exit':None}
+def identity(x):
+ q=pathlib.Path(x['path']);b=q.read_bytes();assert not q.is_symlink() and q.is_file() and q.resolve(strict=True)==q;v={'path':str(q),'bytes':len(b),'sha256':hashlib.sha256(b).hexdigest()};assert v['bytes']==x['bytes'] and v['sha256']==x['sha256'];return v
+try:
+ profile=pathlib.Path(params['xml']['path']).parent.parent;closure=json.loads((profile/'source_closure.json').read_text())['files'];sdk=json.loads((profile/'sdk_manifest.json').read_text())['files'];roster={x['path']:x for x in closure+sdk};xml=ET.parse(params['xml']['path']);assert not list(xml.iter('include'));meshdir=pathlib.Path(xml.getroot().find('compiler').attrib['meshdir']);assert meshdir.is_absolute();mesh_paths=sorted(set(str((meshdir/x.attrib['file']).resolve(strict=True)) for x in xml.iter('mesh') if 'file' in x.attrib));assert len(mesh_paths)==38
+ deps=[roster[x] for x in mesh_paths]+[roster[x] for x in ['/home/codextransfer/predictive_motion/.vendor/mujoco-3.3.7/lib/libmujoco.so.3.3.7','/usr/lib/x86_64-linux-gnu/libcrypto.so.3','/usr/lib/x86_64-linux-gnu/libyaml-cpp.so.0.8.0']]
+ pins=params['sources']+[params['xml'],params['constants']]+deps
+ before=[identity(x) for x in pins];exe=p/'link-attempt1/observer_tests';eb=exe.read_bytes();producer={'path':str(exe),'bytes':len(eb),'sha256':hashlib.sha256(eb).hexdigest()};before.append(identity(producer));(out/'before_inputs.json').write_text(json.dumps(before,indent=2)+'\n')
+ argv=[str(exe),params['xml']['path'],params['xml']['sha256'],str(params['xml']['bytes']),params['constants']['path'],params['constants']['sha256']];r['argv']=argv;r['producer']=producer;r['stage']='BEFORE_NATIVE_ENTRY'
+ def caps():
+  for k,v in [(resource.RLIMIT_CPU,15),(resource.RLIMIT_AS,2147483648),(resource.RLIMIT_CORE,0),(resource.RLIMIT_FSIZE,2097152),(resource.RLIMIT_NOFILE,64)]:
+   _,hard=resource.getrlimit(k);n=v if hard==resource.RLIM_INFINITY else min(v,hard);resource.setrlimit(k,(n,n))
+ with (out/'stdout').open('xb') as o,(out/'stderr').open('xb') as e:
+  child=subprocess.Popen(argv,stdout=o,stderr=e,start_new_session=True,preexec_fn=caps,env={'PATH':'/usr/bin:/bin','LANG':'C','LC_ALL':'C','TZ':'UTC'});r['pid']=child.pid;r['stage']='NATIVE_OBSERVER_TEST_ENTERED'
+  try:r['exit']=child.wait(timeout=25)
+  except subprocess.TimeoutExpired:os.killpg(child.pid,signal.SIGKILL);r['exit']=child.wait(timeout=5);r['first_error']='NATIVE_WALL_TIMEOUT'
+ r['stdout']=(out/'stdout').read_text();r['stderr']=(out/'stderr').read_text();after=[identity(x) for x in pins]+[identity(producer)];assert after==before;(out/'after_inputs.json').write_text(json.dumps(after,indent=2)+'\n');r['input_bindings_unchanged']=True;r['stage']='REAPED_WITH_INPUTS_VERIFIED';r['native_result']=json.loads(r['stdout']) if r['exit']==0 else None
+except BaseException as e:r['first_error']=type(e).__name__+': '+str(e)
+finally:
+ if child is not None and child.poll() is None:os.killpg(child.pid,signal.SIGKILL);child.wait(timeout=5)
+ r['wall_seconds']=time.monotonic()-start;(out/'result.json').write_text(json.dumps(r,indent=2)+'\n');print(json.dumps(r))
+raise SystemExit(0 if r['exit']==0 and 'first_error' not in r else 1)

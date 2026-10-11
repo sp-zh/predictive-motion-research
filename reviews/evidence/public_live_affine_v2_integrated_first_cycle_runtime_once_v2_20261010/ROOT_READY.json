@@ -1,0 +1,39 @@
+{
+  "scope": "ACTUAL_FIRST_CYCLE_FILE_ALGEBRA_VERIFIED_RUN_TIME_LIMIT_NO_CANDIDATE_NO_PLANT",
+  "files": {
+    "audit.py": {
+      "sha256": "78155d5e4a354bec52408e497674d301c68c3bbeab6aa4b4333a60914a9a63a3",
+      "bytes": 20448
+    },
+    "audit_stdout.json": {
+      "sha256": "0363881370d6ec1ef8ff597c151ddd02128541cfa8bbf39b826d4f9e05d0c59c",
+      "bytes": 3662
+    },
+    "report.json": {
+      "sha256": "b84f5b1dc0a72fb84e849fc7e37b97befc873c36bf88531ee4383cf9fdbe5752",
+      "bytes": 41851
+    },
+    "review.md": {
+      "sha256": "d41cb18683dfc4500a64e788dc1d422c0e7ab421426c08d412c5bd8a6e7ef7ca",
+      "bytes": 5332
+    },
+    "retained_audit_prepublication_failures.json": {
+      "sha256": "d39109d877fdf61731ca50530be2d9fb663c9292ea183b92f7815589770c1d60",
+      "bytes": 869
+    },
+    "actual_produced_nominal_halves.csv": {
+      "sha256": "ab1ef037510de7422e83984e8834643ef7bd90c787022cc38ae659cfd3c77433",
+      "bytes": 160905
+    },
+    "actual_produced_nominal_export.json": {
+      "sha256": "91705fe018d49bc7095b79e186ba70c18f3ca44b4d0c00bfd7d5d38c981d5044",
+      "bytes": 360840
+    }
+  },
+  "input_manifest_sha256": "29355caa32ee0dd75078974801fd74387e91574e3a84dbe156f74f8aac96a948",
+  "source_binary": {
+    "path": "/proc/self/exe",
+    "sha256": "8bb1e243dd2a2cc7568e16bb6f515cca3c4932ea4d588941a59e7cc87119d5f0",
+    "bytes": 19344320
+  }
+}

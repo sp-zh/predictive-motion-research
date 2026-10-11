@@ -1,0 +1,95 @@
+{
+  "scope": "READ_ONLY_SEALED_ACTUAL_OBSERVER_EVIDENCE_AND_DIRECTED_SCALING_SOURCE_REVIEW",
+  "verdict": "PASS_SCOPED_OBSERVER_FUNCTIONAL_RECORD_AND_SCALING_SOURCE_SEMANTICS",
+  "input_ready_sha256": "78de60a702b88c98646512d686204ee943dc7e82cb108d5bf94d9891b46ec47c",
+  "packet_payload_count_verified": 43,
+  "observer_source_hashes": {
+    "source/runtime_observer.hpp": {
+      "bytes": 2682,
+      "sha256": "90e82dc6facf7cd809efbf16bf15a32358bdcd0d40c54e8f96695cd5300590f2"
+    },
+    "source/runtime_observer.cpp": {
+      "bytes": 6417,
+      "sha256": "b749a223203f3a28719585b061741016f45bd2b94d042508e34765940a42f9ef"
+    },
+    "source/observer_tests.cpp": {
+      "bytes": 3785,
+      "sha256": "d1ff998984981a5ded1e92b8d452503e8b489ecfb0d067fb04ff5fd616d02877"
+    }
+  },
+  "actual_runtime_input_records_equal": true,
+  "actual_runtime_input_count": 47,
+  "runtime_roster_counts": {
+    "sources": 3,
+    "xml_constants": 2,
+    "mesh_assets": 38,
+    "linked_library_paths": 3,
+    "elf": 1
+  },
+  "actual_native_result": {
+    "complete": true,
+    "scope": "actual repeated independent native observation only",
+    "load_xml": 1,
+    "make_data": 2,
+    "reset": 1,
+    "forward": 4,
+    "copy": 3,
+    "get_state": 6,
+    "observations": 3,
+    "steps": 0,
+    "commits": 0,
+    "Model_nominal_QP_candidate_calls": 0,
+    "stored_observer_age": 8.64e-07,
+    "derived_age": 0.005243222,
+    "q": [
+      0,
+      0,
+      0,
+      -1.57079,
+      0,
+      1.57079,
+      -0.7853
+    ],
+    "v": [
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0
+    ],
+    "accepted_C": [
+      0,
+      0,
+      0,
+      -1.57079,
+      0,
+      1.57079,
+      -0.7853
+    ]
+  },
+  "actual_producer_identity_record": {
+    "path": "/home/codextransfer/predictive_motion/results/phase5/session-runtime-observer-v1-20261010-repair1/link-attempt1/observer_tests",
+    "bytes": 200256,
+    "sha256": "02c4030cb06c2454081d55173ad5fa8246ea792c762eed13504d91a93d787828"
+  },
+  "elf_bytes_rehashed_by_reviewer": false,
+  "full_build_closure_proved": false,
+  "loaded_sdk_inventory_proved": false,
+  "empty_compile_link_guard_arrays_confirmed": true,
+  "retained_preflight_failure": {
+    "schema": "ACTIVE_NATIVE_OBSERVER_REGRESSION_V1",
+    "stage": "INPUT_VERIFICATION",
+    "scope": "actual repeated native independent observer only; no Model/nominal/QP/candidate/step/commit",
+    "exit": null,
+    "first_error": "KeyError: 'link0.stl'",
+    "wall_seconds": 0.0035255329858046025
+  },
+  "QP_source_sha256": "7f0b10b09c66c078e2342ebd1cc44ba636f76a59c5d908b0a15392ea6d589507",
+  "QP_scope": "source-only algebra and workspace semantics; no new solve or performance claim",
+  "QP_dual_semantics": "D change/explicit reset/failure clear drop dual; same structure reuse+matrix updates allowed; changed structure reconstructs native workspace but locally precomputed label-mapped semantic dual may still warmstart",
+  "phase5": "NOT_ACCEPTED",
+  "reviewer_native_model_compiler_calls": 0,
+  "canonical_edits": 0
+}

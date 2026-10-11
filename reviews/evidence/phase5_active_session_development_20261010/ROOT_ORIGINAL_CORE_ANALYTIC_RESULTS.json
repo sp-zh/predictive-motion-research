@@ -1,0 +1,289 @@
+{
+  "scope": "INDEPENDENT_SYNTHETIC_ALGEBRA_ONLY_NO_MODEL_SOLVER_PLANT",
+  "source_sha256": "c59a377096b932f35c1e5d6766cd1022a053124a0fedc38018cae94a54ef6f08",
+  "source_hashes": {
+    "tools/phase5_first_cycle_v1/core/integrated_horizon_qp.cpp": "bd8bfc327efd0f3301de42df444d35fe52f1485df62b5b45fdd9f3fb063b934a",
+    "tools/phase5_first_cycle_v1/core/integrated_horizon_qp.hpp": "5b2f4bc52a1911852917f0a6cc6c44d7c1ae8fafe0cdd0bdf25277e87354f696",
+    "tools/phase5_first_cycle_v1/core/task_local_provider.cpp": "0b0dabcbe70ead3de45818cecb6cacab603434ed33716f2a8b901ce0614ecd6a",
+    "tools/phase5_first_cycle_v1/standalone_first_cycle.cpp": "a5e2bf1146b35eaa62cd5404e4527c57804b577096414105b0a0203d1ea44eb2",
+    "tools/phase5_first_cycle_v1/bootstrap_observer.cpp": "6ec04e4593d51b2b14cb5154bb2ca3aa7639e206eaeabb6b3dea017cb1b491de",
+    "tools/phase5_first_cycle_v1/backend/reactive_qp.cpp": "7f0b10b09c66c078e2342ebd1cc44ba636f76a59c5d908b0a15392ea6d589507",
+    "tools/phase5_first_cycle_v1/lossless_evidence.cpp": "099cc711037cd52fb56ee33966723ce2ad8a9cdad56fa279e14de0051c855e70",
+    "tools/phase5_public_live_affine_v2/foundation_context.cpp": "d0537f8c88b641df526d24971504b7813c5c88e4734f1b668f7f5cdae8acfed7",
+    "tools/phase5_public_live_affine_v2/normalization/normalization.cpp": "0ca10f29fcd8c516c54b2825ae066a98b2b2d49171486bd69a7622b60d48d695",
+    "tools/phase5_public_live_affine_v2/affine/affine_assembly.cpp": "516da52ba0dd801b04e4a5c3fd1b229e644f782fc9ddc26092fdf759cdea6ce4",
+    "tools/phase5_public_coupled_augmented_extension_cpp/public_coupled_augmented_extension.cpp": "74b3d8eccdd4a1373d39bc46cf122564a5101259c2212cb45d98f81678f882fa",
+    "tools/phase5_integrated_horizon_qp_v1/integrated_horizon_qp.cpp": "bd8bfc327efd0f3301de42df444d35fe52f1485df62b5b45fdd9f3fb063b934a",
+    "tools/phase5_integrated_horizon_qp_v1/integrated_horizon_qp.hpp": "5b2f4bc52a1911852917f0a6cc6c44d7c1ae8fafe0cdd0bdf25277e87354f696"
+  },
+  "synthetic_fixture": {
+    "controls": [
+      [
+        0.0002,
+        -0.0004,
+        0.0006000000000000001,
+        -0.0008,
+        0.001,
+        -0.0012000000000000001,
+        0.0014,
+        0.0001
+      ],
+      [
+        -0.0004,
+        0.0008,
+        -0.0012000000000000001,
+        0.0016,
+        -0.002,
+        0.0024000000000000002,
+        -0.0028,
+        -0.0001
+      ],
+      [
+        0.0006000000000000001,
+        -0.0012000000000000001,
+        0.0018000000000000002,
+        -0.0024000000000000002,
+        0.003,
+        -0.0036000000000000003,
+        0.004200000000000001,
+        0.0001
+      ],
+      [
+        -0.0008,
+        0.0016,
+        -0.0024000000000000002,
+        0.0032,
+        -0.004,
+        0.0048000000000000004,
+        -0.0056,
+        -0.0001
+      ],
+      [
+        0.001,
+        -0.002,
+        0.003,
+        -0.004,
+        0.005,
+        -0.006,
+        0.007,
+        0.0001
+      ],
+      [
+        -0.0012000000000000001,
+        0.0024000000000000002,
+        -0.0036000000000000003,
+        0.0048000000000000004,
+        -0.006,
+        0.007200000000000001,
+        -0.008400000000000001,
+        -0.0001
+      ],
+      [
+        0.0014,
+        -0.0028,
+        0.0042,
+        -0.0056,
+        0.007,
+        -0.0084,
+        0.0098,
+        0.0001
+      ],
+      [
+        -0.0016,
+        0.0032,
+        -0.0048000000000000004,
+        0.0064,
+        -0.008,
+        0.009600000000000001,
+        -0.0112,
+        -0.0001
+      ],
+      [
+        0.0018000000000000002,
+        -0.0036000000000000003,
+        0.0054,
+        -0.007200000000000001,
+        0.009000000000000001,
+        -0.0108,
+        0.012600000000000002,
+        0.0001
+      ],
+      [
+        -0.002,
+        0.004,
+        -0.006,
+        0.008,
+        -0.01,
+        0.012,
+        -0.014,
+        -0.0001
+      ],
+      [
+        0.0022,
+        -0.0044,
+        0.0066,
+        -0.0088,
+        0.011000000000000001,
+        -0.0132,
+        0.0154,
+        0.0001
+      ],
+      [
+        -0.0024000000000000002,
+        0.0048000000000000004,
+        -0.007200000000000001,
+        0.009600000000000001,
+        -0.012,
+        0.014400000000000001,
+        -0.016800000000000002,
+        -0.0001
+      ],
+      [
+        0.0026000000000000003,
+        -0.005200000000000001,
+        0.007800000000000001,
+        -0.010400000000000001,
+        0.013000000000000001,
+        -0.015600000000000003,
+        0.0182,
+        0.0001
+      ],
+      [
+        -0.0028,
+        0.0056,
+        -0.0084,
+        0.0112,
+        -0.014,
+        0.0168,
+        -0.0196,
+        -0.0001
+      ],
+      [
+        0.003,
+        -0.006,
+        0.009000000000000001,
+        -0.012,
+        0.015,
+        -0.018000000000000002,
+        0.021,
+        0.0001
+      ],
+      [
+        -0.0032,
+        0.0064,
+        -0.009600000000000001,
+        0.0128,
+        -0.016,
+        0.019200000000000002,
+        -0.0224,
+        -0.0001
+      ],
+      [
+        0.0034000000000000002,
+        -0.0068000000000000005,
+        0.0102,
+        -0.013600000000000001,
+        0.017,
+        -0.0204,
+        0.0238,
+        0.0001
+      ],
+      [
+        -0.0036000000000000003,
+        0.007200000000000001,
+        -0.0108,
+        0.014400000000000001,
+        -0.018000000000000002,
+        0.0216,
+        -0.025200000000000004,
+        -0.0001
+      ],
+      [
+        0.0038,
+        -0.0076,
+        0.0114,
+        -0.0152,
+        0.019,
+        -0.0228,
+        0.0266,
+        0.0001
+      ],
+      [
+        -0.004,
+        0.008,
+        -0.012,
+        0.016,
+        -0.02,
+        0.024,
+        -0.028,
+        -0.0001
+      ]
+    ],
+    "C0": [
+      0.0,
+      0.1,
+      0.2,
+      0.30000000000000004,
+      0.4,
+      0.5,
+      0.6000000000000001
+    ],
+    "w0": [
+      0.001,
+      0.002,
+      0.003,
+      0.004,
+      0.005,
+      0.006,
+      0.007
+    ],
+    "s0": 0.1,
+    "r0": 0.01
+  },
+  "mesh": [
+    1,
+    1,
+    2,
+    2,
+    3,
+    3,
+    4,
+    4,
+    5,
+    5,
+    6,
+    6,
+    8,
+    10,
+    12,
+    16,
+    20,
+    24,
+    28,
+    40
+  ],
+  "cycles": 200,
+  "halves": 400,
+  "seconds": 0.8,
+  "command_closed_form_max_abs_error": 3.3306690738754696e-16,
+  "progress_closed_form_max_abs_error": 1.249000902703301e-16,
+  "half_progress_composition_max_abs_error": 2.7755575615628914e-17,
+  "trapezoid_weight_sum": 0.7999999999999999,
+  "factor_rows": 741,
+  "constraint_row_groups": {
+    "input_and_boundary_jerk": 320,
+    "progress_bernstein": 20,
+    "macro_command_C_w_progress": 3200,
+    "half_progress": 800,
+    "terminal_command_progress": 16,
+    "half_physical_q_v_qtrust_strust": 8800
+  },
+  "constraint_rows": 13156,
+  "synthetic_factor_cost_direct_quadratic_error": 1.734723475976807e-18,
+  "synthetic_factor_gradient_direction_error": 1.014151870121216e-12,
+  "synthetic_H_min_eigenvalue": -1.0860437274600107e-17,
+  "terminal_last_cell_hold_seconds": 0.16,
+  "zero_r0_exact_terminal_r_and_last_b0_progress_upper_bound_ignoring_jerk": 0.0512,
+  "three_second_absolute_progress_upper_bound": 0.6000000000000001,
+  "full_path_time_lower_bound_rate_only_seconds": 5.0
+}

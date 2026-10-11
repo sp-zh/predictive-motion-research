@@ -1,0 +1,104 @@
+{
+  "verdict": "SOURCE_NUMERICAL_SEAM_PRESERVED_WITH_EXPLICIT_RUNTIME_SCOPE_GAPS",
+  "checkpoint_ready_sha256": "6baaf39baaf88ae676b5506d66674d4bcc6e42899bcf100a816d0c07123c5877",
+  "reviewed_source_files": {
+    "source/affine_assembly.cpp": {
+      "bytes": 28981,
+      "sha256": "d478eda1f0fe97bfc41851515f4baa3e485fd4a57968a62dcb6233ae1157bbd5"
+    },
+    "source/affine_assembly.hpp": {
+      "bytes": 6026,
+      "sha256": "6faee2961242052c7655da41e8988dd0844f14c3cfa885672aa7c03eaa1dcb57"
+    },
+    "source/integrated_horizon_qp.cpp": {
+      "bytes": 26261,
+      "sha256": "71c1a87ab90a29993b7ebaccf0ab0c2f36ce33564ae6258e2bbe933652714d2e"
+    },
+    "source/integrated_horizon_qp.hpp": {
+      "bytes": 7723,
+      "sha256": "79f323434682e007efa6a9f192082795d7e516bd552cb6e69885c28c52fb1482"
+    },
+    "source/invariant_tests.cpp": {
+      "bytes": 4721,
+      "sha256": "f5a859d4cf9d79a5ae1b533b8dd62776f2bba6599dfdf691a2915ef3296a33f9"
+    },
+    "source/model_boundary.cpp": {
+      "bytes": 13328,
+      "sha256": "295da676bb76b7c8ad5d22d45a7e474d23be366a0fc5fadec516872afbad1c17"
+    },
+    "source/model_boundary.hpp": {
+      "bytes": 2355,
+      "sha256": "f14a0fa539ba2b4dbe0238162fb9bb8826094b182b1fb3d47fea03172a7e78f0"
+    },
+    "source/normalization.cpp": {
+      "bytes": 23976,
+      "sha256": "a0cd0c9cdb505f922f1744f24cf115057b6ba9f3a9bc1b3ed0c9bdb82d358ed5"
+    },
+    "source/normalization.hpp": {
+      "bytes": 4288,
+      "sha256": "9456be5c205f23d2aa2210eac02286d030204a446af003ee85362b971ccb43d8"
+    },
+    "source/session_primitives.hpp": {
+      "bytes": 2259,
+      "sha256": "0b76bc232ed81dc9b4831617ae1690cfc287def914b8bca5f05ce6e6e25b6080"
+    }
+  },
+  "source_count": 10,
+  "review_method": "read-only source/diff/ownership analysis; no model/compiler/native execution",
+  "nativeA_numeric_evidence_reviewed": false,
+  "numerical_functions_unchanged": [
+    "normalization local/cumulative maps, roster and domain arithmetic",
+    "compact/lifted affine offset,control,initial,embedding,sample arithmetic",
+    "inline weighted objective, H/g/constant and 13156 base rows",
+    "rounded command/progress candidate and control-only warm shift"
+  ],
+  "findings": [
+    {
+      "id": "STARTUP_BINDING_IS_NOT_TERMINATION_VERIFICATION",
+      "path": "source/model_boundary.cpp",
+      "lines": [
+        109,
+        139
+      ],
+      "severity": "runtime integration contract",
+      "detail": "Termination is latched before pin checks, prohibiting future forecast, but verified stays true on termination check failure; existing raw bindingVerified remains true. Keep termination outcome separate, invalidate success/dispatch on failed final check without deleting forensic raw."
+    },
+    {
+      "id": "CALLER_ASSERTIONS_REQUIRE_RUNTIME_TRANSACTION_OWNER",
+      "path": "source/model_boundary.cpp",
+      "lines": [
+        111,
+        124
+      ],
+      "severity": "scope",
+      "detail": "Per-call validation/digest binds supplied q/v,C/w,s/r, histories, age and IDs; prediction seam does not observe plant or prove those assertions, monotone commit sequence or no mutation during offline computation."
+    },
+    {
+      "id": "OLD_BATCH_CEILING",
+      "path": "source/session_primitives.hpp",
+      "lines": [
+        15,
+        45
+      ],
+      "severity": "continuous-session blocker",
+      "detail": "BatchBudget is original fixed cumulative ceiling; release never refunds. Preserved correctly but not a long-task session budget."
+    },
+    {
+      "id": "INVARIANTS_NOT_NATIVE_A",
+      "path": "source/invariant_tests.cpp",
+      "lines": [
+        13,
+        40
+      ],
+      "severity": "evidence scope",
+      "detail": "Exercises context/preview, warm shift and toy reservation ledger; no Session construction, Model/metadata, normalization/affine nonempty records, QP or plant."
+    }
+  ],
+  "inherited_gap": "final OnlineWallAge check still precedes strict200cycle command check; nonlinear candidate/geometry/physical-stop/commit work not implemented",
+  "phase5": "NOT_ACCEPTED",
+  "mutable_runtime_read": false,
+  "canonical_mutations": 0,
+  "model_calls": 0,
+  "native_calls": 0,
+  "compiler_calls": 0
+}

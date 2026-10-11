@@ -1,0 +1,16 @@
+{
+  "schema": "ROOT_CANONICAL_DATA_REPAIR_REVIEW_1",
+  "decision": "PASS_DATA_REPAIR_STAGE_AND_AUTHOR_FRESH_V2_RECORDS",
+  "ready_sha256": "7361901abc8285ae9668fec8b1a46215ca61790f15851ac103a1882191793241",
+  "verified_packet_files": 41,
+  "all_required_roles": 59,
+  "canonical_alias_collapses": 4,
+  "original_native_gate_and_producer_unchanged": true,
+  "SDK_manifest_exact": true,
+  "profile_numeric_settings_exact": true,
+  "root_review_method": "Independent packet hashes, original-to-new complete role mapping, duplicates, required-role preservation, copied bytes, numeric semantic equality, protocol hashes and supplied readonly regular-path identities. Staging is still pending; no numeric run result asserted.",
+  "workflow": "2026-10-10 direct-human functional work package; no per-edit public backup gate",
+  "scope": "One fresh offline legacy first-cycle component comparison; candidate/commit/session remain separate active implementation. No old record change.",
+  "phase5": "NOT_ACCEPTED",
+  "phase6": "NOT_STARTED"
+}
