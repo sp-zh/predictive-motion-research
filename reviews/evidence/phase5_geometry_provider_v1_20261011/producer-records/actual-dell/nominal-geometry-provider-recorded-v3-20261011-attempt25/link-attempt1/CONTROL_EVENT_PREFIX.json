@@ -1,0 +1,28 @@
+[
+  {
+    "stage": "FIRST_BUILD_CLAIM_INPUTS_NOT_YET_CHECKED",
+    "batch_elapsed_seconds": 4.992700996808708e-05,
+    "plan_sha256": "1932a9fe064d7f7ba33e32c0b1e414f7c5764c6bd0f2bc2693597e444e9fc103"
+  },
+  {
+    "stage": "EXACT_BEFORE_INPUTS_AND_READONLY_ROSTERS_VERIFIED",
+    "batch_elapsed_seconds": 0.0007339230214711279
+  },
+  {
+    "stage": "BEFORE_POPEN",
+    "batch_elapsed_seconds": 0.0014546270249411464,
+    "kind": "compile",
+    "index": 1
+  },
+  {
+    "stage": "CHILD_STARTED",
+    "batch_elapsed_seconds": 0.0052850750216748565,
+    "kind": "compile",
+    "index": 1,
+    "pid": 49176
+  },
+  {
+    "stage": "COMPLETE_FOUR_ACTIVE_COMPILE_NO_RUNTIME",
+    "batch_elapsed_seconds": 0.3516964130103588
+  }
+]

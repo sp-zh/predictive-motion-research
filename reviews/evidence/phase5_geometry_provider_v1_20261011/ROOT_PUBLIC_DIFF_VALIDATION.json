@@ -1,0 +1,12 @@
+{
+  "schema": "ROOT_GEOMETRY_PUBLIC_DIFF_VALIDATION_V1",
+  "known_preserved_whitespace": {
+    "path": "reviews/evidence/phase5_geometry_provider_v1_20261011/producer-records/READONLY_GEOMETRY_CONFIG_SNAPSHOT.json",
+    "sha256": "a80466734c613ea5bcec82fad154b4f7f8b28becde6583407307462c4bf4fae4",
+    "finding": "Producer JSON has an extra final blank line; exact archived/source bytes retained intentionally."
+  },
+  "whitespace_check_scope": "All staged source/review/docs checked except generated SVG, CSV CRLF and this exact original JSON EOF. No original evidence normalized.",
+  "credential_patterns_matched": 0,
+  "large_raw_or_dependency_or_local_cache_files_staged": false,
+  "public_remote_backup": "INCOMPLETE_PRIVACY_INSTRUCTION_CONFLICT_PENDING_DIRECT_HUMAN_REPLY"
+}

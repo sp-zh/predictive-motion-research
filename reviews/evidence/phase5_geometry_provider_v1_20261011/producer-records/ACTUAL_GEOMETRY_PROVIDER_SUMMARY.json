@@ -1,0 +1,43 @@
+{
+  "schema": "PRODUCER_RECORDED_GEOMETRY_PROVIDER_ARITHMETIC_V1",
+  "selected_rows": 4800,
+  "full_nominal_samples": 1200,
+  "fixed_probe_samples": 9,
+  "selected_witness_fd_records": 252,
+  "all_query_count_per_sample": 9035,
+  "source_q_and_digest_exact": true,
+  "two_true_two_cover_original_minima": true,
+  "max_selected_unit_normal_error": 6.661338147750939e-16,
+  "max_selected_witness_consistency_error_m": 1.2124060545060545e-16,
+  "point_fd_error_max": 9.198573378424638e-11,
+  "cover_fd_error_max": 1.2801176785259827e-10,
+  "true_smooth_fd_error_max": 3.814859489544633e-05,
+  "true_smooth_count": 7549,
+  "true_nonsmooth_count": 11,
+  "true_interval_failures": 0,
+  "input_identities_prepost_verified": 1704,
+  "outputs": {
+    "selected_witness_regression.csv": {
+      "bytes": 60337,
+      "sha256": "d7cd643dc8e2b93d6dd36145040d53d45c97b72657bfac61e8b303fc3370978d"
+    },
+    "gradient_regression_summary.csv": {
+      "bytes": 954,
+      "sha256": "5e2c9ad784b33ba2858e75e3cb8a12cc580259e3dd608dcf38827e4bc47b41d5"
+    },
+    "nominal_geometry_minima.csv": {
+      "bytes": 109008,
+      "sha256": "6fbe880d4341e87d9457c0e2b34ed16c6b71fe1fa184d2a76447391117d05a94"
+    },
+    "COMPLETION.txt": {
+      "bytes": 665,
+      "sha256": "b2eedf4becf7d9dea59495fd86078067054d2e53e34768ff1bcd9e2f32a0276f"
+    },
+    "selected_geometry_rows.csv": {
+      "bytes": 3043203,
+      "sha256": "81e8e2675bc08e8f86235f6d7436ca6ce51f7f1cd7c22007187e49f0e1bc5fc1"
+    }
+  },
+  "scope": "recorded nominal geometry assistance+9fixedFD probes only; no freshModelF1/MuJoCo/controller/candidate/phaseacceptance; samequery identities not persistentfeatures",
+  "completion": "success=1\nerror=\nscene_attempts=1326,scene_returns=1326,primitive_attempts=11980410,true_attempts=159120,true_returns=159120,cover_attempts=11821290,cover_returns=11821290,FK_attempts=18699,FK_returns=18699,analytic_J_attempts=16809,analytic_J_returns=16809\nsamples=1200,selected_rows=4800,fixed_probe_samples=9,point_components=63,cover_components=33012,true_smooth=7549,true_nonsmooth=11,true_interval_failures=0\npoint_max_error=9.1985733784246381e-11,cover_max_error=1.2801176785259827e-10,true_smooth_max_error=3.8148594895446328e-05\ntermination_verified=1\nwall_seconds=8.3335464179999992\nModelF1_instances=0,MuJoCo_calls=0,physics_steps=0,controller_commits=0\n"
+}

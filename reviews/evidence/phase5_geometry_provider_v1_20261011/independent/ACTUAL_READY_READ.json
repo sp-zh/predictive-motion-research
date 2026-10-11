@@ -1,0 +1,618 @@
+{
+  "schema": "RECORDED_NOMINAL_GEOMETRY_PROVIDER_FUNCTIONAL_READY_V1",
+  "files": {
+    "collect_geometry_provider26.py": {
+      "bytes": 2351,
+      "sha256": "4e15a7396b3a8a2e82bf0fc4cd90065905275e343f39650f0cd700c146030fa4"
+    },
+    "ACTUAL_GEOMETRY_PROVIDER_SUMMARY.json": {
+      "bytes": 2352,
+      "sha256": "39a18b11be0eba4711b4e918b6838e93aacf64e455b951fec1ce967c251fdf82"
+    },
+    "VISUAL_INSPECTION.md": {
+      "bytes": 506,
+      "sha256": "abe433a3328fbafe505c191473628495a7f889d71f535d22596ccfbb73ce3db4"
+    },
+    "UPSTREAM_PHASE4_GRADIENT_CONVENTION.cpp": {
+      "bytes": 3934,
+      "sha256": "27430ae032501e7f4ebb4970f6ec51ecb40e18a3984487b445227b2888655222"
+    },
+    "geometry_provider_interface_review1_20261011.md": {
+      "bytes": 6745,
+      "sha256": "2bbb92c38c2ca033f25c6d68c3b91d68cab240571eca34415ecefd1fe039937c"
+    },
+    "build_counted_geometry_provider2.py": {
+      "bytes": 3721,
+      "sha256": "ef902515324998732f438c9b22406bb7e4c8c2a3c9529b628e6c8b45ac5395dd"
+    },
+    "collection.stderr": {
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    "extract_genuine_nominal_geometry20.py": {
+      "bytes": 4490,
+      "sha256": "5c45bd1f82c4c135eb76041961aa713a340b2658f9851fd1b55e0b381069e743"
+    },
+    "stage_geometry_provider_runtime26.py": {
+      "bytes": 4400,
+      "sha256": "7f53dcf381cf8ba5cf4f6370b5074b14d28b140cd909ee2e0fea0d1cb03455b0"
+    },
+    "README.md": {
+      "bytes": 2279,
+      "sha256": "0fd5b4c7fa7e36f7a4d3a0c1aefc4798c7003685c1772e1611015fa69f5b23be"
+    },
+    "verify_geometry_provider26.py": {
+      "bytes": 4386,
+      "sha256": "8196b3f07d36806f436b36ac050b9ab4fba186a5b8e410f76f0e2a3ce4cbe979"
+    },
+    "render_geometry_provider26.py": {
+      "bytes": 5781,
+      "sha256": "6228cd5a59ddd0f4482046fda935d438198eabc9176cca820e9dd81512eba4e2"
+    },
+    "actual_collection.tar.gz": {
+      "bytes": 1528034,
+      "sha256": "d42717a6a89ae6e6705bb7c08e99457ea0b49d2405f41f720b21f915809ea2a5"
+    },
+    "READONLY_GEOMETRY_CONFIG_SNAPSHOT.json": {
+      "bytes": 6437,
+      "sha256": "a80466734c613ea5bcec82fad154b4f7f8b28becde6583407307462c4bf4fae4"
+    },
+    "readonly_collection_source.py": {
+      "bytes": 1389,
+      "sha256": "c32eb077ec046b5c8fbb5e7426e9561555b9dc93c8660afb108b65d666a3f24f"
+    },
+    "phase5_geometry_provider_profile_v1_20261011/active_run_plan.json": {
+      "bytes": 497359,
+      "sha256": "ca878f2c1265eca773214dd048188b61b42516df85fd2fa67d66b5d4a0658784"
+    },
+    "phase5_geometry_provider_profile_v1_20261011/dev_compile_plan.json": {
+      "bytes": 13763,
+      "sha256": "098f4c5db3982d9e417216a80b704c642cf4bf2dffa4835e7d1e0c2994eb49ba"
+    },
+    "phase5_geometry_provider_profile_v1_20261011/SCOPE.md": {
+      "bytes": 903,
+      "sha256": "b5b68c4dd8c66c3c50d5a2cd56fd47d09c62b4c0f00643b5401c2a0ef6b26bf0"
+    },
+    "phase5_geometry_provider_profile_v1_20261011/COUNTED_QUERY_SOURCE_BINDING_FINAL.json": {
+      "bytes": 775,
+      "sha256": "5fbb4329349d4ed5b79dec6aca28d0f01b6240787e02ff77a7fc995bb7d1401e"
+    },
+    "phase5_geometry_provider_profile_v1_20261011/extract_genuine_nominal_geometry20.py": {
+      "bytes": 4490,
+      "sha256": "5c45bd1f82c4c135eb76041961aa713a340b2658f9851fd1b55e0b381069e743"
+    },
+    "phase5_geometry_provider_profile_v1_20261011/dev_link_plan.json": {
+      "bytes": 3843,
+      "sha256": "e6caaf2a99baba027c4d1033e5b90fbb16ea44e9fff2c5c3f13d91444685d70c"
+    },
+    "phase5_geometry_provider_profile_v1_20261011/INTERFACE_REVIEW.md": {
+      "bytes": 6745,
+      "sha256": "2bbb92c38c2ca033f25c6d68c3b91d68cab240571eca34415ecefd1fe039937c"
+    },
+    "phase5_geometry_provider_profile_v1_20261011/READY.json": {
+      "bytes": 2288,
+      "sha256": "c612c2302eb6358a0c60798dafcbecd4ee5aa98132b35f9328d19de8eac3733a"
+    },
+    "phase5_geometry_provider_profile_v1_20261011/active_run_driver.py": {
+      "bytes": 7595,
+      "sha256": "05c0821a7ebe4f47980df629ac335f3891cf4cac6e4e80c61629575b780cb81a"
+    },
+    "phase5_geometry_provider_profile_v1_20261011/ACTUAL_NOMINAL_Q400_X3.json": {
+      "bytes": 1581695,
+      "sha256": "e458983841049d2d1cad45373fa4d3743ed9977f644c1cb3576242fcb99d4cff"
+    },
+    "actual-dell/NATIVE_ELF_INDEX.json": {
+      "bytes": 601,
+      "sha256": "15bb6e7c0edfc577e0374e0b5fd174d631e51579f69e7820a4debf83276c7f04"
+    },
+    "figures/selected_witness_regression.csv": {
+      "bytes": 60337,
+      "sha256": "d7cd643dc8e2b93d6dd36145040d53d45c97b72657bfac61e8b303fc3370978d"
+    },
+    "figures/gradient_regression_summary.csv": {
+      "bytes": 954,
+      "sha256": "5e2c9ad784b33ba2858e75e3cb8a12cc580259e3dd608dcf38827e4bc47b41d5"
+    },
+    "figures/render.py": {
+      "bytes": 3744,
+      "sha256": "2e4ab00d48da9379ca3c604ffbddf0db4c717b1c5bc0f60d75774689b2671d7c"
+    },
+    "figures/PLOT_PROVENANCE.json": {
+      "bytes": 942,
+      "sha256": "e8702d287f29b193a1abaa8c81d7ff37c674e5268cf5c15f25562d9f076e2699"
+    },
+    "figures/recorded_nominal_geometry.png": {
+      "bytes": 227393,
+      "sha256": "3c54c8c765e9826960a1c5c9e87e7d1e2cb7701bdefd1fc8548f58d5d33cff1a"
+    },
+    "figures/nominal_geometry_minima.csv": {
+      "bytes": 109008,
+      "sha256": "6fbe880d4341e87d9457c0e2b34ed16c6b71fe1fa184d2a76447391117d05a94"
+    },
+    "figures/recorded_nominal_geometry.svg": {
+      "bytes": 113602,
+      "sha256": "59b1c304b1529537aefd5d869b5124dffaa323f1265d7973af32907ce6bd9ee0"
+    },
+    "actual-dell/nominal-geometry-provider-recorded-v1-20261011-attempt23/dev_compile_plan.json": {
+      "bytes": 13763,
+      "sha256": "29f19fc90945ac2d2bd10179a924dc75157fbd4a83d419aba1602bf65d22dcfc"
+    },
+    "actual-dell/nominal-geometry-provider-recorded-v1-20261011-attempt23/dev_compile.py": {
+      "bytes": 7470,
+      "sha256": "f45f8f60d06c1045bf35b80d826f5199c951dd060f87003dd60da9a114b917a7"
+    },
+    "actual-dell/nominal-geometry-provider-recorded-v1-20261011-attempt23/COUNTED_QUERY_SOURCE_BINDING.json": {
+      "bytes": 600,
+      "sha256": "955a4630f7c172aa936a60c0174fa728be40dd815cd91bf59e4d7e0719af6316"
+    },
+    "actual-dell/nominal-geometry-provider-recorded-v2-20261011-attempt24/dev_compile_plan.json": {
+      "bytes": 13763,
+      "sha256": "d49265044b010b0a3d42becfbb2520f13329c60cce3bc13ef104c753cb45fb96"
+    },
+    "actual-dell/nominal-geometry-provider-recorded-v2-20261011-attempt24/dev_compile.py": {
+      "bytes": 7470,
+      "sha256": "f45f8f60d06c1045bf35b80d826f5199c951dd060f87003dd60da9a114b917a7"
+    },
+    "actual-dell/nominal-geometry-provider-recorded-v2-20261011-attempt24/COUNTED_QUERY_SOURCE_BINDING.json": {
+      "bytes": 600,
+      "sha256": "955a4630f7c172aa936a60c0174fa728be40dd815cd91bf59e4d7e0719af6316"
+    },
+    "actual-dell/nominal-geometry-provider-recorded-v4-20261011-attempt26/active_run_plan.json": {
+      "bytes": 497359,
+      "sha256": "ca878f2c1265eca773214dd048188b61b42516df85fd2fa67d66b5d4a0658784"
+    },
+    "actual-dell/nominal-geometry-provider-recorded-v4-20261011-attempt26/dev_link.py": {
+      "bytes": 7467,
+      "sha256": "7b79b3bd32678552d082e7e6597c9fb5da20e1ce273845c5bfda65d672f88064"
+    },
+    "actual-dell/nominal-geometry-provider-recorded-v4-20261011-attempt26/dev_compile_plan.json": {
+      "bytes": 13763,
+      "sha256": "098f4c5db3982d9e417216a80b704c642cf4bf2dffa4835e7d1e0c2994eb49ba"
+    },
+    "actual-dell/nominal-geometry-provider-recorded-v4-20261011-attempt26/COUNTED_QUERY_SOURCE_BINDING_FINAL.json": {
+      "bytes": 775,
+      "sha256": "5fbb4329349d4ed5b79dec6aca28d0f01b6240787e02ff77a7fc995bb7d1401e"
+    },
+    "actual-dell/nominal-geometry-provider-recorded-v4-20261011-attempt26/dev_link_plan.json": {
+      "bytes": 3843,
+      "sha256": "e6caaf2a99baba027c4d1033e5b90fbb16ea44e9fff2c5c3f13d91444685d70c"
+    },
+    "actual-dell/nominal-geometry-provider-recorded-v4-20261011-attempt26/dev_compile.py": {
+      "bytes": 7470,
+      "sha256": "f45f8f60d06c1045bf35b80d826f5199c951dd060f87003dd60da9a114b917a7"
+    },
+    "actual-dell/nominal-geometry-provider-recorded-v4-20261011-attempt26/COUNTED_QUERY_SOURCE_BINDING.json": {
+      "bytes": 600,
+      "sha256": "955a4630f7c172aa936a60c0174fa728be40dd815cd91bf59e4d7e0719af6316"
+    },
+    "actual-dell/nominal-geometry-provider-recorded-v4-20261011-attempt26/active_run_driver.py": {
+      "bytes": 7595,
+      "sha256": "05c0821a7ebe4f47980df629ac335f3891cf4cac6e4e80c61629575b780cb81a"
+    },
+    "actual-dell/nominal-geometry-provider-recorded-v3-20261011-attempt25/dev_link.py": {
+      "bytes": 7467,
+      "sha256": "7b79b3bd32678552d082e7e6597c9fb5da20e1ce273845c5bfda65d672f88064"
+    },
+    "actual-dell/nominal-geometry-provider-recorded-v3-20261011-attempt25/dev_compile_plan.json": {
+      "bytes": 13763,
+      "sha256": "4c153bb63f77ab4a552ee5343a9adfcd1d5cd8246f6df954f10e78f1e116e9cd"
+    },
+    "actual-dell/nominal-geometry-provider-recorded-v3-20261011-attempt25/dev_link_plan.json": {
+      "bytes": 3843,
+      "sha256": "1932a9fe064d7f7ba33e32c0b1e414f7c5764c6bd0f2bc2693597e444e9fc103"
+    },
+    "actual-dell/nominal-geometry-provider-recorded-v3-20261011-attempt25/dev_compile.py": {
+      "bytes": 7470,
+      "sha256": "f45f8f60d06c1045bf35b80d826f5199c951dd060f87003dd60da9a114b917a7"
+    },
+    "actual-dell/nominal-geometry-provider-recorded-v3-20261011-attempt25/COUNTED_QUERY_SOURCE_BINDING.json": {
+      "bytes": 600,
+      "sha256": "955a4630f7c172aa936a60c0174fa728be40dd815cd91bf59e4d7e0719af6316"
+    },
+    "actual-dell/nominal-geometry-provider-recorded-v3-20261011-attempt25/link-attempt1/BEFORE_READONLY_ROSTERS.json": {
+      "bytes": 3,
+      "sha256": "37517e5f3dc66819f61f5a7bb8ace1921282415f10551d2defa5c3eb0985b570"
+    },
+    "actual-dell/nominal-geometry-provider-recorded-v3-20261011-attempt25/link-attempt1/BATCH_PREFIX.json": {
+      "bytes": 4522,
+      "sha256": "1ec4bc78654ce22ec954ed38c05bf1856aa78f9589dc660e24e4d7ab48d4e11a"
+    },
+    "actual-dell/nominal-geometry-provider-recorded-v3-20261011-attempt25/link-attempt1/BUILD_RESULT.json": {
+      "bytes": 4576,
+      "sha256": "a0478572ff355a2b4d16a2e2b4dcf5eb4adf7f30320c9cd1c830f159c0e24afb"
+    },
+    "actual-dell/nominal-geometry-provider-recorded-v3-20261011-attempt25/link-attempt1/CONTROL_EVENT_PREFIX.json": {
+      "bytes": 721,
+      "sha256": "ec7a3e47b602000e20f659b1038364345cc35b40cfc5c8043263fd18461e839f"
+    },
+    "actual-dell/nominal-geometry-provider-recorded-v3-20261011-attempt25/link-attempt1/BEFORE_INPUT_IDENTITIES.json": {
+      "bytes": 464,
+      "sha256": "76d3659e51e958f2b5e06105b239d1a790e95371aadfc69c3d6479ee550529a2"
+    },
+    "actual-dell/nominal-geometry-provider-recorded-v3-20261011-attempt25/link-attempt1/compile-1.result.json": {
+      "bytes": 4126,
+      "sha256": "e8cf749b90eeeec8e128ad728e7c72fe29f56dcbff6550d870fc2ca15197f996"
+    },
+    "actual-dell/nominal-geometry-provider-recorded-v3-20261011-attempt25/link-attempt1/compile-1.stderr": {
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    "actual-dell/nominal-geometry-provider-recorded-v3-20261011-attempt25/link-attempt1/AFTER_INPUT_IDENTITIES.json": {
+      "bytes": 464,
+      "sha256": "76d3659e51e958f2b5e06105b239d1a790e95371aadfc69c3d6479ee550529a2"
+    },
+    "actual-dell/nominal-geometry-provider-recorded-v3-20261011-attempt25/link-attempt1/AFTER_READONLY_ROSTERS.json": {
+      "bytes": 3,
+      "sha256": "37517e5f3dc66819f61f5a7bb8ace1921282415f10551d2defa5c3eb0985b570"
+    },
+    "actual-dell/nominal-geometry-provider-recorded-v3-20261011-attempt25/link-attempt1/compile-1.stdout": {
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    "actual-dell/nominal-geometry-provider-recorded-v3-20261011-attempt25/build-attempt1/BEFORE_READONLY_ROSTERS.json": {
+      "bytes": 3,
+      "sha256": "37517e5f3dc66819f61f5a7bb8ace1921282415f10551d2defa5c3eb0985b570"
+    },
+    "actual-dell/nominal-geometry-provider-recorded-v3-20261011-attempt25/build-attempt1/BATCH_PREFIX.json": {
+      "bytes": 5939,
+      "sha256": "61a1035f8221d223d71f849be114a011ce789ade833ffbf4d180aef5c6a6761c"
+    },
+    "actual-dell/nominal-geometry-provider-recorded-v3-20261011-attempt25/build-attempt1/BUILD_RESULT.json": {
+      "bytes": 5993,
+      "sha256": "7d68d753580b4274ed3f40b26e125ad7cd852ba72e1d42e3c88b08750507693c"
+    },
+    "actual-dell/nominal-geometry-provider-recorded-v3-20261011-attempt25/build-attempt1/CONTROL_EVENT_PREFIX.json": {
+      "bytes": 716,
+      "sha256": "3642fafcadd9a5f224afced7320406d4d7d9fe38db1f248a0521a526a6e29c8b"
+    },
+    "actual-dell/nominal-geometry-provider-recorded-v3-20261011-attempt25/build-attempt1/BEFORE_INPUT_IDENTITIES.json": {
+      "bytes": 14374,
+      "sha256": "a93637917a6c22027f2f34abc451b07d1047d103181bffe2a640a54625b8ee1d"
+    },
+    "actual-dell/nominal-geometry-provider-recorded-v3-20261011-attempt25/build-attempt1/compile-1.result.json": {
+      "bytes": 5339,
+      "sha256": "ec583ddcbda2fca7bd705193f68f93c8923aa8e3fab47b3389f1fdf930150322"
+    },
+    "actual-dell/nominal-geometry-provider-recorded-v3-20261011-attempt25/build-attempt1/compile-1.stderr": {
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    "actual-dell/nominal-geometry-provider-recorded-v3-20261011-attempt25/build-attempt1/AFTER_INPUT_IDENTITIES.json": {
+      "bytes": 14374,
+      "sha256": "a93637917a6c22027f2f34abc451b07d1047d103181bffe2a640a54625b8ee1d"
+    },
+    "actual-dell/nominal-geometry-provider-recorded-v3-20261011-attempt25/build-attempt1/AFTER_READONLY_ROSTERS.json": {
+      "bytes": 3,
+      "sha256": "37517e5f3dc66819f61f5a7bb8ace1921282415f10551d2defa5c3eb0985b570"
+    },
+    "actual-dell/nominal-geometry-provider-recorded-v3-20261011-attempt25/build-attempt1/compile-1.stdout": {
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    "actual-dell/nominal-geometry-provider-recorded-v3-20261011-attempt25/src/upstream_geometry.hpp": {
+      "bytes": 10837,
+      "sha256": "65150b6e7d1b83cb0e3ec81fd2f6331216e6bfa19460aa329335c96fd1cb2e00"
+    },
+    "actual-dell/nominal-geometry-provider-recorded-v3-20261011-attempt25/src/counted_geometry.hpp": {
+      "bytes": 6363,
+      "sha256": "180ea5a855dfac54d1a1cc6476a0a024623bce67143820624660e09cbadb1fcb"
+    },
+    "actual-dell/nominal-geometry-provider-recorded-v3-20261011-attempt25/src/nominal_geometry_selection.hpp": {
+      "bytes": 2524,
+      "sha256": "6a41cc80feca43509d234c5aaf70e9a4c4de77abfa9b8eabfec6b6541b7711fa"
+    },
+    "actual-dell/nominal-geometry-provider-recorded-v3-20261011-attempt25/src/provider_probe.cpp": {
+      "bytes": 14888,
+      "sha256": "6f4b49e67d92b667dc3b2ca52c4403f81453b5d11d98af2a78e7e09cbebc1091"
+    },
+    "actual-dell/nominal-geometry-provider-recorded-v4-20261011-attempt26/link-attempt1/BEFORE_READONLY_ROSTERS.json": {
+      "bytes": 3,
+      "sha256": "37517e5f3dc66819f61f5a7bb8ace1921282415f10551d2defa5c3eb0985b570"
+    },
+    "actual-dell/nominal-geometry-provider-recorded-v4-20261011-attempt26/link-attempt1/BATCH_PREFIX.json": {
+      "bytes": 4522,
+      "sha256": "377d4a9ed951bba30be13f793075dad979cf48fb0f5dde0e9498e6f1fc99c1eb"
+    },
+    "actual-dell/nominal-geometry-provider-recorded-v4-20261011-attempt26/link-attempt1/BUILD_RESULT.json": {
+      "bytes": 4576,
+      "sha256": "25dfc842af8499ad1e0dbdefca4bcb9592f22d2da058a19472dadf4cca91aa82"
+    },
+    "actual-dell/nominal-geometry-provider-recorded-v4-20261011-attempt26/link-attempt1/CONTROL_EVENT_PREFIX.json": {
+      "bytes": 720,
+      "sha256": "57006a1017a3c6e84da675a78b489627e9359a9d8c3176aca4d2dc51fb51856f"
+    },
+    "actual-dell/nominal-geometry-provider-recorded-v4-20261011-attempt26/link-attempt1/BEFORE_INPUT_IDENTITIES.json": {
+      "bytes": 464,
+      "sha256": "23992462eee94dedad412ede0046fa18d5d3d468dcdcd6a2252001fda8b69c64"
+    },
+    "actual-dell/nominal-geometry-provider-recorded-v4-20261011-attempt26/link-attempt1/compile-1.result.json": {
+      "bytes": 4126,
+      "sha256": "e95ddae936ed3f9df346d31dd4907db1292e26305aecce648941e8aa9f975761"
+    },
+    "actual-dell/nominal-geometry-provider-recorded-v4-20261011-attempt26/link-attempt1/compile-1.stderr": {
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    "actual-dell/nominal-geometry-provider-recorded-v4-20261011-attempt26/link-attempt1/AFTER_INPUT_IDENTITIES.json": {
+      "bytes": 464,
+      "sha256": "23992462eee94dedad412ede0046fa18d5d3d468dcdcd6a2252001fda8b69c64"
+    },
+    "actual-dell/nominal-geometry-provider-recorded-v4-20261011-attempt26/link-attempt1/AFTER_READONLY_ROSTERS.json": {
+      "bytes": 3,
+      "sha256": "37517e5f3dc66819f61f5a7bb8ace1921282415f10551d2defa5c3eb0985b570"
+    },
+    "actual-dell/nominal-geometry-provider-recorded-v4-20261011-attempt26/link-attempt1/compile-1.stdout": {
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    "actual-dell/nominal-geometry-provider-recorded-v4-20261011-attempt26/build-attempt1/BEFORE_READONLY_ROSTERS.json": {
+      "bytes": 3,
+      "sha256": "37517e5f3dc66819f61f5a7bb8ace1921282415f10551d2defa5c3eb0985b570"
+    },
+    "actual-dell/nominal-geometry-provider-recorded-v4-20261011-attempt26/build-attempt1/BATCH_PREFIX.json": {
+      "bytes": 5940,
+      "sha256": "f45169f9156b77f59de098b8c52786ab4cc2d805c7be653001c74973cda0c2e8"
+    },
+    "actual-dell/nominal-geometry-provider-recorded-v4-20261011-attempt26/build-attempt1/BUILD_RESULT.json": {
+      "bytes": 5994,
+      "sha256": "583de6c469463d8211561f64c58e6f434bedbea62def6b18ce1818ae0a76e6cf"
+    },
+    "actual-dell/nominal-geometry-provider-recorded-v4-20261011-attempt26/build-attempt1/CONTROL_EVENT_PREFIX.json": {
+      "bytes": 716,
+      "sha256": "b2ce73e820803e2505328b1ab287b30c9955411d5ac86a629a69f977f2619f9c"
+    },
+    "actual-dell/nominal-geometry-provider-recorded-v4-20261011-attempt26/build-attempt1/BEFORE_INPUT_IDENTITIES.json": {
+      "bytes": 14374,
+      "sha256": "e9ef0570dbdbb4706cc827a989688e672b13a254bd0670246ca1e335e08d8229"
+    },
+    "actual-dell/nominal-geometry-provider-recorded-v4-20261011-attempt26/build-attempt1/compile-1.result.json": {
+      "bytes": 5340,
+      "sha256": "deca8566697dec513020e2033f888a80c90496dbd0cfef6ebd9d7e038329e7ab"
+    },
+    "actual-dell/nominal-geometry-provider-recorded-v4-20261011-attempt26/build-attempt1/compile-1.stderr": {
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    "actual-dell/nominal-geometry-provider-recorded-v4-20261011-attempt26/build-attempt1/AFTER_INPUT_IDENTITIES.json": {
+      "bytes": 14374,
+      "sha256": "e9ef0570dbdbb4706cc827a989688e672b13a254bd0670246ca1e335e08d8229"
+    },
+    "actual-dell/nominal-geometry-provider-recorded-v4-20261011-attempt26/build-attempt1/AFTER_READONLY_ROSTERS.json": {
+      "bytes": 3,
+      "sha256": "37517e5f3dc66819f61f5a7bb8ace1921282415f10551d2defa5c3eb0985b570"
+    },
+    "actual-dell/nominal-geometry-provider-recorded-v4-20261011-attempt26/build-attempt1/compile-1.stdout": {
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    "actual-dell/nominal-geometry-provider-recorded-v4-20261011-attempt26/run-attempt1/BEFORE_READONLY_ROSTERS.json": {
+      "bytes": 3,
+      "sha256": "37517e5f3dc66819f61f5a7bb8ace1921282415f10551d2defa5c3eb0985b570"
+    },
+    "actual-dell/nominal-geometry-provider-recorded-v4-20261011-attempt26/run-attempt1/BATCH_PREFIX.json": {
+      "bytes": 2112,
+      "sha256": "95fa39d031e0af1d59e273199cc86c24829409c7546bd66e507922c1bd3fd0d6"
+    },
+    "actual-dell/nominal-geometry-provider-recorded-v4-20261011-attempt26/run-attempt1/BUILD_RESULT.json": {
+      "bytes": 2166,
+      "sha256": "59518426637ab89e8b2016f05fe9e416f9f4d3baae6cba84fd669074a44c1b49"
+    },
+    "actual-dell/nominal-geometry-provider-recorded-v4-20261011-attempt26/run-attempt1/CONTROL_EVENT_PREFIX.json": {
+      "bytes": 732,
+      "sha256": "7caeca8c8ac8f6acd603ad506a47b8d9defa66f9a96579fbb4109f5241cb5efd"
+    },
+    "actual-dell/nominal-geometry-provider-recorded-v4-20261011-attempt26/run-attempt1/BEFORE_INPUT_IDENTITIES.json": {
+      "bytes": 511105,
+      "sha256": "76375321de2f278c56412ddb623693f537756324c382000db75975ad88853800"
+    },
+    "actual-dell/nominal-geometry-provider-recorded-v4-20261011-attempt26/run-attempt1/compile-1.result.json": {
+      "bytes": 1792,
+      "sha256": "0656bd1cf340c5356f629da2da7f304b067c5c89fc8d465ca9e0620f19ccc588"
+    },
+    "actual-dell/nominal-geometry-provider-recorded-v4-20261011-attempt26/run-attempt1/compile-1.stderr": {
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    "actual-dell/nominal-geometry-provider-recorded-v4-20261011-attempt26/run-attempt1/AFTER_INPUT_IDENTITIES.json": {
+      "bytes": 511105,
+      "sha256": "76375321de2f278c56412ddb623693f537756324c382000db75975ad88853800"
+    },
+    "actual-dell/nominal-geometry-provider-recorded-v4-20261011-attempt26/run-attempt1/AFTER_READONLY_ROSTERS.json": {
+      "bytes": 3,
+      "sha256": "37517e5f3dc66819f61f5a7bb8ace1921282415f10551d2defa5c3eb0985b570"
+    },
+    "actual-dell/nominal-geometry-provider-recorded-v4-20261011-attempt26/run-attempt1/compile-1.stdout": {
+      "bytes": 686,
+      "sha256": "2a6624df29c964e90f1cd9a046f88d42264d4ef2fc885fed964c05b7774a3bc2"
+    },
+    "actual-dell/nominal-geometry-provider-recorded-v4-20261011-attempt26/profile-version1/PRODUCER.json": {
+      "bytes": 256,
+      "sha256": "6af307f679fb3e297dcb50e8738d76437311267e1737815b2e2a855bf31ceac1"
+    },
+    "actual-dell/nominal-geometry-provider-recorded-v4-20261011-attempt26/profile-version1/provider_input.json": {
+      "bytes": 325895,
+      "sha256": "444880467c848c077fe42b5d6b3d9f525f8ee811440df2dbbea620716cf458ce"
+    },
+    "actual-dell/nominal-geometry-provider-recorded-v4-20261011-attempt26/profile-version1/ACTUAL_NOMINAL_Q400_X3.json": {
+      "bytes": 1581695,
+      "sha256": "e458983841049d2d1cad45373fa4d3743ed9977f644c1cb3576242fcb99d4cff"
+    },
+    "actual-dell/nominal-geometry-provider-recorded-v4-20261011-attempt26/src/upstream_geometry.hpp": {
+      "bytes": 10837,
+      "sha256": "65150b6e7d1b83cb0e3ec81fd2f6331216e6bfa19460aa329335c96fd1cb2e00"
+    },
+    "actual-dell/nominal-geometry-provider-recorded-v4-20261011-attempt26/src/counted_geometry.hpp": {
+      "bytes": 6363,
+      "sha256": "180ea5a855dfac54d1a1cc6476a0a024623bce67143820624660e09cbadb1fcb"
+    },
+    "actual-dell/nominal-geometry-provider-recorded-v4-20261011-attempt26/src/nominal_geometry_selection.hpp": {
+      "bytes": 2524,
+      "sha256": "6a41cc80feca43509d234c5aaf70e9a4c4de77abfa9b8eabfec6b6541b7711fa"
+    },
+    "actual-dell/nominal-geometry-provider-recorded-v4-20261011-attempt26/src/provider_probe.cpp": {
+      "bytes": 14902,
+      "sha256": "d4a2a9aa93a23a233681a8d364bd7546e2eb766ad9f1cd0245324f2bb62e8834"
+    },
+    "actual-dell/nominal-geometry-provider-recorded-v4-20261011-attempt26/run-attempt1/artifacts/selected_witness_regression.csv": {
+      "bytes": 60337,
+      "sha256": "d7cd643dc8e2b93d6dd36145040d53d45c97b72657bfac61e8b303fc3370978d"
+    },
+    "actual-dell/nominal-geometry-provider-recorded-v4-20261011-attempt26/run-attempt1/artifacts/gradient_regression_summary.csv": {
+      "bytes": 954,
+      "sha256": "5e2c9ad784b33ba2858e75e3cb8a12cc580259e3dd608dcf38827e4bc47b41d5"
+    },
+    "actual-dell/nominal-geometry-provider-recorded-v4-20261011-attempt26/run-attempt1/artifacts/nominal_geometry_minima.csv": {
+      "bytes": 109008,
+      "sha256": "6fbe880d4341e87d9457c0e2b34ed16c6b71fe1fa184d2a76447391117d05a94"
+    },
+    "actual-dell/nominal-geometry-provider-recorded-v4-20261011-attempt26/run-attempt1/artifacts/COMPLETION.txt": {
+      "bytes": 665,
+      "sha256": "b2eedf4becf7d9dea59495fd86078067054d2e53e34768ff1bcd9e2f32a0276f"
+    },
+    "actual-dell/nominal-geometry-provider-recorded-v4-20261011-attempt26/run-attempt1/artifacts/selected_geometry_rows.csv": {
+      "bytes": 3043203,
+      "sha256": "81e8e2675bc08e8f86235f6d7436ca6ce51f7f1cd7c22007187e49f0e1bc5fc1"
+    },
+    "actual-dell/nominal-geometry-provider-recorded-v2-20261011-attempt24/build-attempt1/BEFORE_READONLY_ROSTERS.json": {
+      "bytes": 3,
+      "sha256": "37517e5f3dc66819f61f5a7bb8ace1921282415f10551d2defa5c3eb0985b570"
+    },
+    "actual-dell/nominal-geometry-provider-recorded-v2-20261011-attempt24/build-attempt1/BATCH_PREFIX.json": {
+      "bytes": 5939,
+      "sha256": "1b724b7fbadc28c24002bbb36bd66a70e39a0e1376a99ae254296da4dc650005"
+    },
+    "actual-dell/nominal-geometry-provider-recorded-v2-20261011-attempt24/build-attempt1/BUILD_RESULT.json": {
+      "bytes": 5993,
+      "sha256": "6bdfbf21a9a7d05a44e237d5bfadbaca4a5f2b502b636aa59e52e3e431a9b204"
+    },
+    "actual-dell/nominal-geometry-provider-recorded-v2-20261011-attempt24/build-attempt1/CONTROL_EVENT_PREFIX.json": {
+      "bytes": 716,
+      "sha256": "f3bc2256064414cd622003e19a60697fc7f814272352121e4437062d129dba7a"
+    },
+    "actual-dell/nominal-geometry-provider-recorded-v2-20261011-attempt24/build-attempt1/BEFORE_INPUT_IDENTITIES.json": {
+      "bytes": 14374,
+      "sha256": "8860d1d29cab8ad1d46b9b63bc48664890c386d7d2673aa351146e4ca90ae563"
+    },
+    "actual-dell/nominal-geometry-provider-recorded-v2-20261011-attempt24/build-attempt1/compile-1.result.json": {
+      "bytes": 5339,
+      "sha256": "5cc17a05f8b3eeb0c368ee108a362808f57f50255027dbfed376a2589c8640fa"
+    },
+    "actual-dell/nominal-geometry-provider-recorded-v2-20261011-attempt24/build-attempt1/compile-1.stderr": {
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    "actual-dell/nominal-geometry-provider-recorded-v2-20261011-attempt24/build-attempt1/AFTER_INPUT_IDENTITIES.json": {
+      "bytes": 14374,
+      "sha256": "8860d1d29cab8ad1d46b9b63bc48664890c386d7d2673aa351146e4ca90ae563"
+    },
+    "actual-dell/nominal-geometry-provider-recorded-v2-20261011-attempt24/build-attempt1/AFTER_READONLY_ROSTERS.json": {
+      "bytes": 3,
+      "sha256": "37517e5f3dc66819f61f5a7bb8ace1921282415f10551d2defa5c3eb0985b570"
+    },
+    "actual-dell/nominal-geometry-provider-recorded-v2-20261011-attempt24/build-attempt1/compile-1.stdout": {
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    "actual-dell/nominal-geometry-provider-recorded-v2-20261011-attempt24/src/upstream_geometry.hpp": {
+      "bytes": 10837,
+      "sha256": "65150b6e7d1b83cb0e3ec81fd2f6331216e6bfa19460aa329335c96fd1cb2e00"
+    },
+    "actual-dell/nominal-geometry-provider-recorded-v2-20261011-attempt24/src/counted_geometry.hpp": {
+      "bytes": 6164,
+      "sha256": "835a694bf3e87fb5f340250215a6a5333ce073009af9593d5f7037bed485b36b"
+    },
+    "actual-dell/nominal-geometry-provider-recorded-v2-20261011-attempt24/src/nominal_geometry_selection.hpp": {
+      "bytes": 2524,
+      "sha256": "6a41cc80feca43509d234c5aaf70e9a4c4de77abfa9b8eabfec6b6541b7711fa"
+    },
+    "actual-dell/nominal-geometry-provider-recorded-v2-20261011-attempt24/src/provider_probe.cpp": {
+      "bytes": 14594,
+      "sha256": "6e18871ea27e1fc3274b328ded3de7d774f188e0d91e582b76a243f5f7dd2272"
+    },
+    "actual-dell/nominal-geometry-provider-recorded-v1-20261011-attempt23/build-attempt1/BEFORE_READONLY_ROSTERS.json": {
+      "bytes": 3,
+      "sha256": "37517e5f3dc66819f61f5a7bb8ace1921282415f10551d2defa5c3eb0985b570"
+    },
+    "actual-dell/nominal-geometry-provider-recorded-v1-20261011-attempt23/build-attempt1/BATCH_PREFIX.json": {
+      "bytes": 5943,
+      "sha256": "c2a3e4d8498c9f1becc4e7428194ebb2ab5ec479f01dda7ca2653d310222a950"
+    },
+    "actual-dell/nominal-geometry-provider-recorded-v1-20261011-attempt23/build-attempt1/CONTROL_EVENT_PREFIX.json": {
+      "bytes": 783,
+      "sha256": "6507de28b1046e3df32f310170785947171b7caafe3c74f918bd2832e462fcfd"
+    },
+    "actual-dell/nominal-geometry-provider-recorded-v1-20261011-attempt23/build-attempt1/BEFORE_INPUT_IDENTITIES.json": {
+      "bytes": 14374,
+      "sha256": "4074ac515903090d18d2ddeb09eacd2475ba06058099f2d776a5ceef22366f10"
+    },
+    "actual-dell/nominal-geometry-provider-recorded-v1-20261011-attempt23/build-attempt1/compile-1.result.json": {
+      "bytes": 5343,
+      "sha256": "62e6c79aa44080eac8da01a5e71e310aa3a62ff211c84ac54bb1c9ee3fc8c949"
+    },
+    "actual-dell/nominal-geometry-provider-recorded-v1-20261011-attempt23/build-attempt1/compile-1.stderr": {
+      "bytes": 2816,
+      "sha256": "9befa273db15b1f1181d810a93d769316d3baec501723777742bab3b7340c7fe"
+    },
+    "actual-dell/nominal-geometry-provider-recorded-v1-20261011-attempt23/build-attempt1/AFTER_INPUT_IDENTITIES.json": {
+      "bytes": 14374,
+      "sha256": "4074ac515903090d18d2ddeb09eacd2475ba06058099f2d776a5ceef22366f10"
+    },
+    "actual-dell/nominal-geometry-provider-recorded-v1-20261011-attempt23/build-attempt1/BUILD_FAILURE.json": {
+      "bytes": 5999,
+      "sha256": "cb6cdced1fa954669bd60ec0c4bb3ca3cacb7c854b3e700e5bd05056e46b90bc"
+    },
+    "actual-dell/nominal-geometry-provider-recorded-v1-20261011-attempt23/build-attempt1/AFTER_READONLY_ROSTERS.json": {
+      "bytes": 3,
+      "sha256": "37517e5f3dc66819f61f5a7bb8ace1921282415f10551d2defa5c3eb0985b570"
+    },
+    "actual-dell/nominal-geometry-provider-recorded-v1-20261011-attempt23/build-attempt1/compile-1.stdout": {
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    "actual-dell/nominal-geometry-provider-recorded-v1-20261011-attempt23/src/upstream_geometry.hpp": {
+      "bytes": 10837,
+      "sha256": "65150b6e7d1b83cb0e3ec81fd2f6331216e6bfa19460aa329335c96fd1cb2e00"
+    },
+    "actual-dell/nominal-geometry-provider-recorded-v1-20261011-attempt23/src/counted_geometry.hpp": {
+      "bytes": 6158,
+      "sha256": "f79b11ab78e94989f6447abec51964c33028dbd49c699de60f91642c9f66a52b"
+    },
+    "actual-dell/nominal-geometry-provider-recorded-v1-20261011-attempt23/src/nominal_geometry_selection.hpp": {
+      "bytes": 2522,
+      "sha256": "65c5af508f89856fb1aebdd8fb0f9c9c062e57312c8c2f9270cc1f36e7ef08e6"
+    },
+    "actual-dell/nominal-geometry-provider-recorded-v1-20261011-attempt23/src/provider_probe.cpp": {
+      "bytes": 14594,
+      "sha256": "6e18871ea27e1fc3274b328ded3de7d774f188e0d91e582b76a243f5f7dd2272"
+    },
+    "phase5_geometry_provider_profile_v1_20261011/profile-version1/PRODUCER.json": {
+      "bytes": 256,
+      "sha256": "6af307f679fb3e297dcb50e8738d76437311267e1737815b2e2a855bf31ceac1"
+    },
+    "phase5_geometry_provider_profile_v1_20261011/profile-version1/provider_input.json": {
+      "bytes": 325895,
+      "sha256": "444880467c848c077fe42b5d6b3d9f525f8ee811440df2dbbea620716cf458ce"
+    },
+    "phase5_geometry_provider_profile_v1_20261011/src/upstream_geometry.hpp": {
+      "bytes": 10837,
+      "sha256": "65150b6e7d1b83cb0e3ec81fd2f6331216e6bfa19460aa329335c96fd1cb2e00"
+    },
+    "phase5_geometry_provider_profile_v1_20261011/src/counted_geometry.hpp": {
+      "bytes": 6363,
+      "sha256": "180ea5a855dfac54d1a1cc6476a0a024623bce67143820624660e09cbadb1fcb"
+    },
+    "phase5_geometry_provider_profile_v1_20261011/src/nominal_geometry_selection.hpp": {
+      "bytes": 2524,
+      "sha256": "6a41cc80feca43509d234c5aaf70e9a4c4de77abfa9b8eabfec6b6541b7711fa"
+    },
+    "phase5_geometry_provider_profile_v1_20261011/src/provider_probe.cpp": {
+      "bytes": 14902,
+      "sha256": "d4a2a9aa93a23a233681a8d364bd7546e2eb766ad9f1cd0245324f2bb62e8834"
+    }
+  },
+  "source_import_candidates": "phase5_geometry_provider_profile_v1_20261011/src",
+  "scope": "recordedgenuine1200nominalposes/4800assistance rows+9gradientprobes; no newModelF1/MuJoCo/controller or actualgeometryQP",
+  "phase5": "NOT_ACCEPTED",
+  "phase6": "NOT_STARTED",
+  "remote_git_backup_verified": false
+}

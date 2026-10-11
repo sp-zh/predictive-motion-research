@@ -1,0 +1,29 @@
+[
+  {
+    "stage": "FIRST_BUILD_CLAIM_INPUTS_NOT_YET_CHECKED",
+    "batch_elapsed_seconds": 4.566498682834208e-05,
+    "plan_sha256": "29f19fc90945ac2d2bd10179a924dc75157fbd4a83d419aba1602bf65d22dcfc"
+  },
+  {
+    "stage": "EXACT_BEFORE_INPUTS_AND_READONLY_ROSTERS_VERIFIED",
+    "batch_elapsed_seconds": 0.019879687984939665
+  },
+  {
+    "stage": "BEFORE_POPEN",
+    "batch_elapsed_seconds": 0.020233222981914878,
+    "kind": "compile",
+    "index": 1
+  },
+  {
+    "stage": "CHILD_STARTED",
+    "batch_elapsed_seconds": 0.0233195339969825,
+    "kind": "compile",
+    "index": 1,
+    "pid": 48861
+  },
+  {
+    "stage": "FIRST_BUILD_FAILURE_RETAINED",
+    "batch_elapsed_seconds": 5.302144291985314,
+    "error": "RuntimeError: First controlled compiler/link refusal; no retry"
+  }
+]

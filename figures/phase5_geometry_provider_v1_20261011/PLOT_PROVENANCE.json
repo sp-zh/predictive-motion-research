@@ -1,0 +1,21 @@
+{
+  "schema": "RECORDED_NOMINAL_GEOMETRY_PROVIDER_PLOT_V1",
+  "inputs": {
+    "nominal_geometry_minima.csv": "6fbe880d4341e87d9457c0e2b34ed16c6b71fe1fa184d2a76447391117d05a94",
+    "gradient_regression_summary.csv": "5e2c9ad784b33ba2858e75e3cb8a12cc580259e3dd608dcf38827e4bc47b41d5",
+    "selected_witness_regression.csv": "d7cd643dc8e2b93d6dd36145040d53d45c97b72657bfac61e8b303fc3370978d"
+  },
+  "outputs": {
+    "recorded_nominal_geometry.png": {
+      "bytes": 227393,
+      "sha256": "3c54c8c765e9826960a1c5c9e87e7d1e2cb7701bdefd1fc8548f58d5d33cff1a"
+    },
+    "recorded_nominal_geometry.svg": {
+      "bytes": 113602,
+      "sha256": "59b1c304b1529537aefd5d869b5124dffaa323f1265d7973af32907ce6bd9ee0"
+    }
+  },
+  "matplotlib_version": "3.6.3",
+  "scope": "all1200recordednominalposes andall9fixedgradientprobes; noactualcontroller/motion/geometryQPsolve/candidateperformance",
+  "new_geometry_engine_or_ModelF1_or_MuJoCo_entries": 0
+}

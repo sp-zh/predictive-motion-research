@@ -1,0 +1,18 @@
+{
+  "schema": "ROOT_GEOMETRY_INDEPENDENT_PUBLIC_VIEW_V1",
+  "complete_independent_READY_sha256": "16c543c6e0023cad1320c79f3c24cde4e0832c16e2eb134d9da744b8b893f373",
+  "all32payloads_verified": true,
+  "total_verified_bytes": 5771566,
+  "public_small_payloads": 30,
+  "excluded": {
+    "actual_recorded_data/selected_geometry_rows.csv": {
+      "bytes": 3043203,
+      "sha256": "81e8e2675bc08e8f86235f6d7436ca6ce51f7f1cd7c22007187e49f0e1bc5fc1"
+    },
+    "profile_snapshot/ACTUAL_NOMINAL_Q400_X3.json": {
+      "bytes": 1581695,
+      "sha256": "e458983841049d2d1cad45373fa4d3743ed9977f644c1cb3576242fcb99d4cff"
+    }
+  },
+  "scope": "Full32 retained private immutable review/aggregate archive; public view omits these two raw large files. No literal public READY closure claim."
+}

@@ -1,0 +1,25 @@
+{
+  "schema": "ROOT_GEOMETRY_PROVIDER_SOURCE_IMPORT_V1",
+  "producer_READY_sha256": "3617d73b1506469eddc31a381b555728dfbcada8c1665eab9030f1e51010a801",
+  "files": {
+    "upstream_geometry.hpp": {
+      "bytes": 10837,
+      "sha256": "65150b6e7d1b83cb0e3ec81fd2f6331216e6bfa19460aa329335c96fd1cb2e00"
+    },
+    "counted_geometry.hpp": {
+      "bytes": 6363,
+      "sha256": "180ea5a855dfac54d1a1cc6476a0a024623bce67143820624660e09cbadb1fcb"
+    },
+    "nominal_geometry_selection.hpp": {
+      "bytes": 2524,
+      "sha256": "6a41cc80feca43509d234c5aaf70e9a4c4de77abfa9b8eabfec6b6541b7711fa"
+    },
+    "provider_probe.cpp": {
+      "bytes": 14902,
+      "sha256": "d4a2a9aa93a23a233681a8d364bd7546e2eb766ad9f1cd0245324f2bb62e8834"
+    }
+  },
+  "upstream": "tools/phase4_adapters/geometry.hpp; unchanged geometry formulas/options, explicit counted wrapper; existing kinematics/Coal/Pinocchio dependencies not vendored here.",
+  "scope": "Fresh26 standalone recorded-q diagnostic. Not private current-owner runtime integration, QP solve, new controller, full-task or phase acceptance.",
+  "build": "Actual compile/link receipts retained; no portable CMake target claimed."
+}

@@ -1,0 +1,22 @@
+{
+  "copied_packet_small_files": 141,
+  "excluded_large_files": {
+    "actual_collection.tar.gz": {
+      "bytes": 1528034,
+      "sha256": "d42717a6a89ae6e6705bb7c08e99457ea0b49d2405f41f720b21f915809ea2a5"
+    },
+    "phase5_geometry_provider_profile_v1_20261011/ACTUAL_NOMINAL_Q400_X3.json": {
+      "bytes": 1581695,
+      "sha256": "e458983841049d2d1cad45373fa4d3743ed9977f644c1cb3576242fcb99d4cff"
+    },
+    "actual-dell/nominal-geometry-provider-recorded-v4-20261011-attempt26/profile-version1/ACTUAL_NOMINAL_Q400_X3.json": {
+      "bytes": 1581695,
+      "sha256": "e458983841049d2d1cad45373fa4d3743ed9977f644c1cb3576242fcb99d4cff"
+    },
+    "actual-dell/nominal-geometry-provider-recorded-v4-20261011-attempt26/run-attempt1/artifacts/selected_geometry_rows.csv": {
+      "bytes": 3043203,
+      "sha256": "81e8e2675bc08e8f86235f6d7436ca6ce51f7f1cd7c22007187e49f0e1bc5fc1"
+    }
+  },
+  "qualification": "Full152 payloads verified and preserved in immutable local raw copy; Git view deliberately omits large raw CSV/input/tar and local caches."
+}

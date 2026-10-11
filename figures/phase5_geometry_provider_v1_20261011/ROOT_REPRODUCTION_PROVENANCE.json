@@ -1,0 +1,20 @@
+{
+  "schema": "ROOT_RECORDED_NOMINAL_GEOMETRY_REPRODUCTION_V1",
+  "inputs": {
+    "nominal_geometry_minima.csv": "6fbe880d4341e87d9457c0e2b34ed16c6b71fe1fa184d2a76447391117d05a94",
+    "gradient_regression_summary.csv": "5e2c9ad784b33ba2858e75e3cb8a12cc580259e3dd608dcf38827e4bc47b41d5",
+    "selected_witness_regression.csv": "d7cd643dc8e2b93d6dd36145040d53d45c97b72657bfac61e8b303fc3370978d"
+  },
+  "outputs": {
+    "recorded_nominal_geometry_root.png": {
+      "bytes": 200527,
+      "sha256": "f06aec9ed32263030b8d96adaa618a81028613adeb092e3e7b2d6896b625e312"
+    },
+    "recorded_nominal_geometry_root.svg": {
+      "bytes": 152390,
+      "sha256": "ea709eb578409c1c7c7975b0e52d037280ae9fa5615c5b95d7be3ae6c005eaf0"
+    }
+  },
+  "matplotlib_version": "3.10.3",
+  "scope": "Pure plot of pinned saved geometry/minimum/FD summaries; no new FK/Scene/Model/native/controller entry; full FD aggregate not independently replayed."
+}

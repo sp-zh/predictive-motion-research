@@ -1,0 +1,224 @@
+{
+  "schema": 1,
+  "arm": [
+    {
+      "frame": "fr3_link0",
+      "file": "/home/codextransfer/predictive_motion/experiments/generated/phase4/link0_hull.txt",
+      "source_sha256": "dfc6d94330de8ddb005b311bfdba9f3b8e1aa7c256b71592ee7ff32cb9a9a5aa",
+      "generated_sha256": "2b9d130ee533007b1e0c46c9c4e54a83eaebadbe166291333b58f74ff421c46f",
+      "max_vertex_containment_error_m": 2.7755575615628914e-17,
+      "vertices": 102,
+      "triangles": 200
+    },
+    {
+      "frame": "fr3_link1",
+      "file": "/home/codextransfer/predictive_motion/experiments/generated/phase4/link1_hull.txt",
+      "source_sha256": "e41a39a94108fcf56aacff603fc91ec80541f4c1af17b51a0de5617f5566e6d2",
+      "generated_sha256": "1a3fe93e21c2ae635a73c9b0d5e32cd10197bf439f758eb9c54d50071bb680f6",
+      "max_vertex_containment_error_m": 5.551115123125783e-17,
+      "vertices": 152,
+      "triangles": 300
+    },
+    {
+      "frame": "fr3_link2",
+      "file": "/home/codextransfer/predictive_motion/experiments/generated/phase4/link2_hull.txt",
+      "source_sha256": "370f7605a0fae3529db169ded50f52f171024aa792d4d773bc84197301f6a039",
+      "generated_sha256": "ad58135ef6da47e5ca7ec9d2b44e6affedeb9a2b6b89fdd0b00f4586209d6fd3",
+      "max_vertex_containment_error_m": 2.7755575615628914e-17,
+      "vertices": 152,
+      "triangles": 300
+    },
+    {
+      "frame": "fr3_link3",
+      "file": "/home/codextransfer/predictive_motion/experiments/generated/phase4/link3_hull.txt",
+      "source_sha256": "0a8d638b9349c6c0eefc4e888636ac4838c4b27170f18a51699321118af709c1",
+      "generated_sha256": "5f0d055a1ae3b820fc78980bd1a1d43c2cc1d051475ff28a316dd639011b3af1",
+      "max_vertex_containment_error_m": 2.7755575615628914e-17,
+      "vertices": 152,
+      "triangles": 300
+    },
+    {
+      "frame": "fr3_link4",
+      "file": "/home/codextransfer/predictive_motion/experiments/generated/phase4/link4_hull.txt",
+      "source_sha256": "0180ebb5772ec9840cb049750cffb29a9ddc90311752a16ea34757782ef9e48d",
+      "generated_sha256": "31ffebc17dbde087bf6b3acb71fab00f65c2bd8e710454a86363d4fad8192577",
+      "max_vertex_containment_error_m": 5.551115123125783e-17,
+      "vertices": 152,
+      "triangles": 300
+    },
+    {
+      "frame": "fr3_link5",
+      "file": "/home/codextransfer/predictive_motion/experiments/generated/phase4/link5_hull.txt",
+      "source_sha256": "dd17e688c7870e722283525879643d53a74c0024d328b0e14b034b54c8b6c31a",
+      "generated_sha256": "e9399f63b91c8511010b380ab1e83c2cc4a60ce4291496f97d26ff177c5ca507",
+      "max_vertex_containment_error_m": 5.551115123125783e-17,
+      "vertices": 152,
+      "triangles": 300
+    },
+    {
+      "frame": "fr3_link6",
+      "file": "/home/codextransfer/predictive_motion/experiments/generated/phase4/link6_hull.txt",
+      "source_sha256": "20b768e99a0e0440b5754dcca108016434e57937cc356acd9c352ccd3cb27f77",
+      "generated_sha256": "9ab8fff4f30f8d04ac083759d3bf4714829ac46b69dab0dd2e9dc914227f1bd7",
+      "max_vertex_containment_error_m": 2.7755575615628914e-17,
+      "vertices": 102,
+      "triangles": 200
+    },
+    {
+      "frame": "fr3_link7",
+      "file": "/home/codextransfer/predictive_motion/experiments/generated/phase4/link7_hull.txt",
+      "source_sha256": "92ac6afcf7574c034d3170d8a68e95ac9048ab9d0dd5bbd8311b86e551b9ab1c",
+      "generated_sha256": "574fd99cb5ae5fb65e50fd677c82a78bf968b539411a5feef32d12c41d648163",
+      "max_vertex_containment_error_m": 2.7755575615628914e-17,
+      "vertices": 102,
+      "triangles": 200
+    }
+  ],
+  "primitives": [
+    {
+      "name": "tool_adapter",
+      "body": "inspection_tool",
+      "type": "cylinder",
+      "local_position_m": [
+        0,
+        0,
+        0.006
+      ],
+      "size_m": [
+        0.035,
+        0.006
+      ]
+    },
+    {
+      "name": "tool_shaft",
+      "body": "inspection_tool",
+      "type": "cylinder",
+      "local_position_m": [
+        0,
+        0,
+        0.162
+      ],
+      "size_m": [
+        0.015,
+        0.15
+      ]
+    },
+    {
+      "name": "tool_sensor",
+      "body": "inspection_tool",
+      "type": "box",
+      "local_position_m": [
+        0,
+        0,
+        0.037000000000000005
+      ],
+      "size_m": [
+        0.0225,
+        0.02,
+        0.025
+      ]
+    },
+    {
+      "name": "tool_tip",
+      "body": "inspection_tool",
+      "type": "sphere",
+      "local_position_m": [
+        0.0,
+        0.0,
+        0.32
+      ],
+      "size_m": [
+        0.008
+      ]
+    },
+    {
+      "name": "tool_bracket",
+      "body": "inspection_tool",
+      "type": "box",
+      "local_position_m": [
+        0.0375,
+        0,
+        0.029500000000000002
+      ],
+      "size_m": [
+        0.015,
+        0.004,
+        0.0175
+      ]
+    },
+    {
+      "name": "fixture_base",
+      "body": "inspection_fixture",
+      "type": "box",
+      "local_position_m": [
+        0.82,
+        -0.03,
+        0.2625
+      ],
+      "size_m": [
+        0.12,
+        0.15,
+        0.0125
+      ]
+    },
+    {
+      "name": "fixture_left",
+      "body": "inspection_fixture",
+      "type": "box",
+      "local_position_m": [
+        0.82,
+        -0.08,
+        0.375
+      ],
+      "size_m": [
+        0.12,
+        0.0125,
+        0.1
+      ]
+    },
+    {
+      "name": "fixture_right",
+      "body": "inspection_fixture",
+      "type": "box",
+      "local_position_m": [
+        0.82,
+        0.020000000000000007,
+        0.375
+      ],
+      "size_m": [
+        0.12,
+        0.0125,
+        0.1
+      ]
+    },
+    {
+      "name": "fixture_rear",
+      "body": "inspection_fixture",
+      "type": "box",
+      "local_position_m": [
+        0.84,
+        0.1325,
+        0.375
+      ],
+      "size_m": [
+        0.1,
+        0.0125,
+        0.1
+      ]
+    }
+  ],
+  "tool_frame": "fr3_link8",
+  "floor_z": 0.0,
+  "cover_cell_m": 0.004,
+  "cover_method": "box intersecting cells with circumspheres; cylinder axial slice circumspheres; tip exact sphere",
+  "motion_radius_bound_m": 1.647262333715346,
+  "reach_bound_proof": "sum of URDF fixed/joint origin lengths plus local point radius, including cell cover inflation; any joint-to-point lever <= this global chain bound",
+  "exclusions": [
+    "adjacent arm links only",
+    "fr3_link0 versus floor: intentional base mounting",
+    "tool versus fr3_link7: rigid mount",
+    "intra-tool and intra-fixture: fixed compounds"
+  ],
+  "source_manifest_sha256": "73effb013b8bfd0945ed518855c453403f8087eef09603c34d428dbbabe808d8"
+}
+

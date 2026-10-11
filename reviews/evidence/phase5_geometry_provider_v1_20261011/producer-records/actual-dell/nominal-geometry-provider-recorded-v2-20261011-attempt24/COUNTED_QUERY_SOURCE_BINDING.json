@@ -1,0 +1,8 @@
+{
+  "upstream_path": "tools/phase4_adapters/geometry.hpp",
+  "upstream_sha256": "65150b6e7d1b83cb0e3ec81fd2f6331216e6bfa19460aa329335c96fd1cb2e00",
+  "upstream_query_source_sha256": "dbaeea7111777208c861da632ba75bdce567b7034521b118cb62c37822bb6f8e",
+  "counted_query_source_sha256": "f79b11ab78e94989f6447abec51964c33028dbd49c699de60f91642c9f66a52b",
+  "only_changes": "count-before-calls wrappers for FK/Jacobian/Coal/cover/Scene eval and returns; exact original math/options/error thresholds preserved",
+  "scope": "finite recorded-nominal geometry diagnostic only; no MuJoCo/ModelF1/controller"
+}
