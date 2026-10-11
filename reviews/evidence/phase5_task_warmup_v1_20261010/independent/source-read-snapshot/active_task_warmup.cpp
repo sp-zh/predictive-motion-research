@@ -1,0 +1,17 @@
+#include "runtime_observer.hpp"
+#include "lossless_evidence.hpp"
+#include <yaml-cpp/yaml.h>
+#include <filesystem>
+#include <iostream>
+namespace live=phase5_active_session_v1;namespace rt=phase5_active_session_runtime_v1;namespace ev=phase5_active_evidence_v1;
+namespace {void need(bool x,const char* s){if(!x)throw std::runtime_error(s);}live::FileIdentity id(const YAML::Node& n){return {n["path"].as<std::string>(),n["sha256"].as<std::string>(),n["bytes"].as<live::Count>()};}void pin(const live::FileIdentity& f){const auto a=live::observePinnedFile(f.path,f.sha256);need(a.bytes==f.bytes,"warmup entry pin size");}}
+int main(int argc,char** argv){std::unique_ptr<ev::Evidence> out;std::unique_ptr<rt::Simulation> sim;rt::Snapshot obs;std::string stage="BEFORE_INPUT",error;bool success=false;std::vector<live::FileIdentity> pins;
+ try{need(argc==5,"input/hash/producerhash/newoutput");live::observePinnedFile(argv[1],argv[2]);const auto input=YAML::LoadFile(argv[1]);need(input["schema"].as<std::string>()=="ACTIVE_TASK_PHYSICAL_WARMUP_DEV_V1","fresh warmup schema");out=std::make_unique<ev::Evidence>(argv[4]);auto producer=live::observeCurrentProducerElf(argv[3]);producer.path=std::filesystem::canonical("/proc/self/exe").string();pins.push_back(producer);
+ for(const auto& n:input["dependencies"])pins.push_back(id(n));for(const auto& f:pins)pin(f);need(pins.size()<=128,"finite warmup pin roster");
+ rt::WarmupSpec spec;spec.feasible_csv=id(input["feasible_csv"]);spec.robot_config=id(input["robot_config"]);spec.geometry_config=id(input["geometry_config"]);spec.task_reference=id(input["task_reference"]);spec.seed=input["seed"].as<unsigned>();spec.dependencies=pins;
+ stage="OWNED_FULL_SCENE_BOOTSTRAP";sim=std::make_unique<rt::Simulation>(id(input["xml"]),input["epoch"].as<std::string>());stage="ACTUAL1000_TIMES2MS_WARMUP";const auto& w=sim->initializeAndWarmup(spec);out->warmup(w);need(w.success,w.error.c_str());stage="FRESH_CURRENT_AFTER_WARMUP";sim->observe(obs);out->snapshot("actual_current.bin",obs);need(obs.completed()&&obs.actualObservation().boundary.completed_tick==0&&obs.acceptedHistory().boundary.completed_command_sequence==0&&obs.physicalHistory().total_actual_substeps==1000&&obs.physicalHistory().acceleration_available,"separate task0/actualphysical1000 boundary");success=true;stage="PASS_ACTUAL_TASK_WARMUP_COMPONENT_NO_MODEL_NO_CANDIDATE";
+ }catch(const std::exception& e){error=e.what();}catch(...){error="unknown task warmup failure";}
+ bool terminal=false;try{if(sim)sim->verifyTermination();for(const auto& f:pins)pin(f);terminal=sim&&sim->terminationVerified();}catch(const std::exception& e){if(error.empty())error=e.what();}
+ if(out)try{if(sim)out->bootstrap(sim->facts());out->write("warmup_completion.bin","ACTIVE_SESSION_FINAL_SCOPE_AND_TIMING",[&](ev::BinaryFile& f){f.text(stage);f.text(error);f.u64(success);f.u64(terminal);f.u64(sim?sim->facts().warmup_step_attempts:0);f.u64(sim?sim->facts().warmup_completed_steps:0);f.u64(sim?sim->facts().commits:0);f.u64(0);f.u64(0);f.text("component bootstrap only; Model=0,nominal=0,QP=0,candidate=0,taskcommit=0; phase5 NOT_ACCEPTED");});out->finish(stage,error,false);}catch(const std::exception& e){if(error.empty())error=e.what();}
+ std::cout<<"stage="<<stage<<" error="<<error<<" terminal="<<terminal<<" warmupsteps="<<(sim?sim->facts().warmup_completed_steps:0)<<" taskcommits=0 Model=0 phase5=NOT_ACCEPTED\n";return success&&terminal&&error.empty()?0:1;
+}

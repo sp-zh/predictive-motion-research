@@ -1,0 +1,110 @@
+{
+  "scope": "ACTUAL_RECORDED_WARMUP_COMPONENT_ONLY_FILE_ARITHMETIC_NOT_TASK_OR_PHASE_ACCEPTANCE",
+  "source_sha256": "81c5771ff61a5f0457e97ce69b9982dbe684425710efac9d93904d5f4d4e9a05",
+  "seed": 91011,
+  "independent_mt19937_first7": [
+    516818031,
+    384307152,
+    1317467462,
+    3084263230,
+    2760313653,
+    1923955207,
+    3392524457
+  ],
+  "initial_q": [
+    -1.245765748910091,
+    0.09664780639474282,
+    1.1546321286355201,
+    -2.7819779781855476,
+    -0.09755087623640622,
+    4.385246703649958,
+    -1.6281268331277312
+  ],
+  "held_accepted_target_verified_all1000": true,
+  "physical_substeps": 1000,
+  "task_boundary": [
+    0,
+    0
+  ],
+  "task_commits": 0,
+  "bootstrap_counters_load_make_reset_forward_copy_getstate_observations_step_commits": [
+    1,
+    2,
+    1,
+    1003,
+    1001,
+    2002,
+    1,
+    1000,
+    0
+  ],
+  "derivatives": {
+    "max_abs_v": 0.029928739008387738,
+    "max_abs_acc": 6.6436306091723925,
+    "max_abs_available_jerk": 1357.6628167075585,
+    "recorded_acc_error": 0.0,
+    "recorded_jerk_error": 0.0,
+    "first_acc_available_from_declared_v0": true,
+    "first_jerk_available": false,
+    "first_jerk_NaN_exactly_preserved": true
+  },
+  "clock_max_error": 1.5543122344752192e-15,
+  "endgate": {
+    "elapsed2s": true,
+    "contact0": true,
+    "true_and_cover_at_least_5mm": true,
+    "velocity_at_most_1e_4": true
+  },
+  "final": {
+    "time": 2.0000000000000013,
+    "max_abs_v": 9.680608756091955e-06,
+    "minimum_true": 0.01558975221624639,
+    "minimum_cover": 0.022112112220012935,
+    "contacts": 0,
+    "geometry_queries": 9035,
+    "position_error_stored_not_recomputed": 0.0032157093225693213,
+    "rotation_error_stored_not_recomputed": 0.005484296217470531
+  },
+  "whole_warmup": {
+    "max_warning_count": 0,
+    "max_contacts": 0,
+    "minimum_true": 0.015566343416054946,
+    "minimum_cover": 0.022112112220012935,
+    "query_counts": [
+      9035
+    ],
+    "safety_gate_over_all_warmup_NOT_claimed": true
+  },
+  "actual_current_B_history": {
+    "physical_velocity_matches_actual_last_point": true,
+    "physical_acceleration_matches_actual_last_point": true,
+    "physical_source_id": "WARMUP_TASK_WARMUP91011_ATTEMPT1_20261010_SUBSTEP_1000",
+    "accepted_w_alpha_progress_zero_are_held_target_history_NOT_measured_velocity": true,
+    "capture_age_recorded": 3.803e-06,
+    "current_online_age_not_proven_by_offline_record": true
+  },
+  "identity_layers": {
+    "run_before_after_exact_equal": true,
+    "run_inputs_count": 106,
+    "entry_input_not_internal_dependency_but_runner_pinned": true,
+    "ELF_record_sha": "7716467199432ccb7bebc7a9a7a2ee6ccf9fd2689b312d242acd13f59973fcb6",
+    "local_ELF_bytes_verified": false,
+    "compile_link_empty_identity_arrays_not_buildclosure": true
+  },
+  "preserved_attempt1_failure": {
+    "stage": "BEFORE_INPUT",
+    "error": "cannot open identity input: Too many levels of symbolic links",
+    "completion_fields": [
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0
+    ]
+  },
+  "independent_geometry_or_TCP_calls": 0,
+  "model_native_solver_calls": 0,
+  "phase5": "NOT_ACCEPTED"
+}

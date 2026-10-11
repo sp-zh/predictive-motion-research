@@ -1,0 +1,91 @@
+{
+  "scope": "ACTUAL_REPAIR2_SOURCE_VERIFIED_AGAINST_READY_BEFORE_NUMERIC_PARSE_MATCHES_OWN_PREVIOUS_READ_SNAPSHOT",
+  "packet_ready_sha256": "4aaf556d9bea6112373996287004f18d442f06e616e066a78ff5f8c13f702094",
+  "source_read_manifest_sha256": "1a644d978b826ab4f5e4eb6da1e28d9907afd5c6d1b27f704c328b9599a53c2a",
+  "files": {
+    "actual-dell/repair2/src/invariant_tests.cpp": {
+      "bytes": 4721,
+      "sha256": "f5a859d4cf9d79a5ae1b533b8dd62776f2bba6599dfdf691a2915ef3296a33f9"
+    },
+    "actual-dell/repair2/src/normalization.cpp": {
+      "bytes": 23976,
+      "sha256": "a0cd0c9cdb505f922f1744f24cf115057b6ba9f3a9bc1b3ed0c9bdb82d358ed5"
+    },
+    "actual-dell/repair2/src/session_primitives.hpp": {
+      "bytes": 2259,
+      "sha256": "0b76bc232ed81dc9b4831617ae1690cfc287def914b8bca5f05ce6e6e25b6080"
+    },
+    "actual-dell/repair2/src/model_boundary.cpp": {
+      "bytes": 20505,
+      "sha256": "271c8f3ba8226561ad5dae7499b12f3fb9127e1855c165346e57127d43b3bcbb"
+    },
+    "actual-dell/repair2/src/active_task_warmup.cpp": {
+      "bytes": 3455,
+      "sha256": "d55b15fabc189b29bcf2e84b3166e31220c190432d2e246ea096a63ff6f50ea3"
+    },
+    "actual-dell/repair2/src/runtime_observer.hpp": {
+      "bytes": 5159,
+      "sha256": "b37e47c1d2188bb906d7a2f508ebcb2c19e49069e374d19445b84a281efc865d"
+    },
+    "actual-dell/repair2/src/lossless_evidence.hpp": {
+      "bytes": 1943,
+      "sha256": "3f08adbda6f4fba1b81ddcbce990b62b55071967d0dbcc9652ecbca0afdd8b84"
+    },
+    "actual-dell/repair2/src/affine_assembly.cpp": {
+      "bytes": 28981,
+      "sha256": "d478eda1f0fe97bfc41851515f4baa3e485fd4a57968a62dcb6233ae1157bbd5"
+    },
+    "actual-dell/repair2/src/integrated_horizon_qp.hpp": {
+      "bytes": 9163,
+      "sha256": "0eec80ccd47ed5b7a6ff704e7fe79a02d869b0252d241ab73ce35f1446c635ea"
+    },
+    "actual-dell/repair2/src/task_local_provider.cpp": {
+      "bytes": 1839,
+      "sha256": "051b424236979f9fe7ea4cb96564f54969025c997bfba2c61d347a23f7fbae4c"
+    },
+    "actual-dell/repair2/src/box_screen_tests.cpp": {
+      "bytes": 2954,
+      "sha256": "d922876babec2867dd1293bcee259ac12e4b2a6af5a30dd551209e097c0abaf8"
+    },
+    "actual-dell/repair2/src/active_first_cycle.cpp": {
+      "bytes": 12831,
+      "sha256": "8814c3cd45926ed77fbd0e8256ebc5b4b145c0f97ee412ba832bbcf5943e2581"
+    },
+    "actual-dell/repair2/src/observer_tests.cpp": {
+      "bytes": 3785,
+      "sha256": "d1ff998984981a5ded1e92b8d452503e8b489ecfb0d067fb04ff5fd616d02877"
+    },
+    "actual-dell/repair2/src/runtime_observer.cpp": {
+      "bytes": 15232,
+      "sha256": "88579f0dfe13aa02361db803dca46f21b9dde50a04913a3a76e4a676cdf8217d"
+    },
+    "actual-dell/repair2/src/lossless_evidence.cpp": {
+      "bytes": 17289,
+      "sha256": "84cd00f468a80a2d69cb0246ed242d726e2b501bf356c6403a01f6cae0e5d395"
+    },
+    "actual-dell/repair2/src/task_local_provider.hpp": {
+      "bytes": 640,
+      "sha256": "1819e2f626fb0ff65ad7e7e8de0b0b52f625e6bf435b073d7cca55722d76f093"
+    },
+    "actual-dell/repair2/src/affine_assembly.hpp": {
+      "bytes": 6026,
+      "sha256": "6faee2961242052c7655da41e8988dd0844f14c3cfa885672aa7c03eaa1dcb57"
+    },
+    "actual-dell/repair2/src/integrated_horizon_qp.cpp": {
+      "bytes": 30828,
+      "sha256": "9225c085a93acb00256a72174cbed93673264a94a6468351f56b68a34a857058"
+    },
+    "actual-dell/repair2/src/normalization.hpp": {
+      "bytes": 4288,
+      "sha256": "9456be5c205f23d2aa2210eac02286d030204a446af003ee85362b971ccb43d8"
+    },
+    "actual-dell/repair2/src/model_boundary.hpp": {
+      "bytes": 3964,
+      "sha256": "6555686e877ca1881fb7ad8532ca006aa2d0e50de7dbf04d7771b0737b173cf1"
+    },
+    "actual-dell/repair2/src/linear_box_screen.hpp": {
+      "bytes": 3916,
+      "sha256": "b649eff43293a3078b7b46a0166fa0f8a2ac59f3a8496c8c73a98c275fed96d1"
+    }
+  }
+}

@@ -1,0 +1,39 @@
+{
+  "schema": "ROOT_TASK_WARMUP_V1_STORAGE_CHECKPOINT",
+  "scope": "Original actual2 endhold/history evidence with all known defects, source/identity records, complete original180file packet, Root31file independent review and fresh corrected physicaljerk diagnostic markers. Excludes later V2 bootstrap or Model/QP/task execution.",
+  "Mac": {
+    "schema": "ACTUAL_TASK_WARMUP_V1_ARCHIVE_READY_V1",
+    "archive": "/Users/uot/Documents/ChatGPT/ros/results/phase5-reference/task-warmup-v1-20261010/root-archive1/task-warmup-v1.tar.gz",
+    "archive_bytes": 2112671,
+    "archive_sha256": "9795b1490c90ddf016b99d7cd7826e4af3d08933dcd7c86b651e6397dbb3d576",
+    "manifest_sha256": "43b36864e0dc3e12c6610788dd6c1ceb54c1a50045b7becfc01ffed3781bf000",
+    "regular_members": 261,
+    "payloads": 260,
+    "payload_bytes": 5594541,
+    "Mac_all_payloads_verified": true,
+    "Dell_copy_verified": false,
+    "phase5": "NOT_ACCEPTED",
+    "phase6": "NOT_STARTED"
+  },
+  "Dell_readback": {
+    "schema": "ROOT_TASK_WARMUP_V1_DELL_FULL_READBACK",
+    "archive": "/mnt/d/CodexTransfer/projects/predictive_motion/checkpoints/task-warmup-v1-20261010-root1/task-warmup-v1.tar.gz",
+    "archive_bytes": 2112671,
+    "archive_sha256": "9795b1490c90ddf016b99d7cd7826e4af3d08933dcd7c86b651e6397dbb3d576",
+    "ready_sha256": "3b1df98829fd857b1fa5440efe64c4727bd03ba4b9f058b6ea2ec42e151fc949",
+    "manifest_sha256": "43b36864e0dc3e12c6610788dd6c1ceb54c1a50045b7becfc01ffed3781bf000",
+    "regular_members_verified": 261,
+    "payloads_verified": 260,
+    "all_payloads_verified": true,
+    "observed_mode": 365,
+    "observed_uid": 1000,
+    "observed_gid": 1000,
+    "qualification": "NTFS POSIX sealing/ownership change not asserted; no chmod attempted."
+  },
+  "archive_ready_sha256": "3b1df98829fd857b1fa5440efe64c4727bd03ba4b9f058b6ea2ec42e151fc949",
+  "Mac_payload_sealed_readonly": true,
+  "Dell_NTFS_POSIX_immutable_claim": false,
+  "source_snapshot_scope": "Archive precedes final small storage record; all archived bytes/payload identities verified.",
+  "phase5": "NOT_ACCEPTED",
+  "phase6": "NOT_STARTED"
+}

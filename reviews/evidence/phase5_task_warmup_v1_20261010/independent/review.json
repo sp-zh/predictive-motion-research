@@ -1,0 +1,21 @@
+{
+  "verdict": "PASS_RECORDED_ACTUAL2_ENDHOLD_GATE_AND_HISTORY_ARITHMETIC_ONLY_WITH_RETAINED_SOURCE_GAPS",
+  "source_sha256": "81c5771ff61a5f0457e97ce69b9982dbe684425710efac9d93904d5f4d4e9a05",
+  "packet_ready_sha256": "4aaf556d9bea6112373996287004f18d442f06e616e066a78ff5f8c13f702094",
+  "payload_file_count": 180,
+  "payload_total_bytes": 4365220,
+  "source_snapshot_files": 21,
+  "results_sha256": "4edec027e937dd9fd603c1ef76a5fbb04dcc34eb9f31862ada561fc9eac730e9",
+  "phase4_frame_gate_source_sha256": "bff5c68ac9ecd62e89054583072e57bd9d5f3664af0be18c41a6ba591f9bdd17",
+  "preserved_original_failure": "attempt1 ELOOP before input,0warmupsteps",
+  "actual2_source_gaps": [
+    "per-step prefix only RAM until warmup returns; no durable before-native-step journal",
+    "numerical warnings recorded without rejection",
+    "no per-point MuJoCo inspection_tcp/arm-frame to same-q URDF comparison gate at1e-8",
+    "partial native step/observation stages lack explicit individual attempt/completion availability flags"
+  ],
+  "original_visual_bug": "producer actual2 plot jerk markers \u00b1100 instead of declared task\u00b1500; original plot retained, Root separately corrected figure",
+  "no_whole_warmup_derivative_acceptance": true,
+  "no_task_or_phase_acceptance": true,
+  "phase5": "NOT_ACCEPTED"
+}

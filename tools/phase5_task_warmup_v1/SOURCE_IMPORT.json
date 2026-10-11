@@ -1,0 +1,33 @@
+{
+  "schema": "ROOT_TASK_WARMUP_V1_SOURCE_IMPORT",
+  "packet_ready_sha256": "4aaf556d9bea6112373996287004f18d442f06e616e066a78ff5f8c13f702094",
+  "files": {
+    "runtime_observer.cpp": {
+      "source_packet_relative_path": "actual-dell/repair2/src/runtime_observer.cpp",
+      "bytes": 15232,
+      "sha256": "88579f0dfe13aa02361db803dca46f21b9dde50a04913a3a76e4a676cdf8217d"
+    },
+    "runtime_observer.hpp": {
+      "source_packet_relative_path": "actual-dell/repair2/src/runtime_observer.hpp",
+      "bytes": 5159,
+      "sha256": "b37e47c1d2188bb906d7a2f508ebcb2c19e49069e374d19445b84a281efc865d"
+    },
+    "active_task_warmup.cpp": {
+      "source_packet_relative_path": "actual-dell/repair2/src/active_task_warmup.cpp",
+      "bytes": 3455,
+      "sha256": "d55b15fabc189b29bcf2e84b3166e31220c190432d2e246ea096a63ff6f50ea3"
+    },
+    "lossless_evidence.cpp": {
+      "source_packet_relative_path": "actual-dell/repair2/src/lossless_evidence.cpp",
+      "bytes": 17289,
+      "sha256": "84cd00f468a80a2d69cb0246ed242d726e2b501bf356c6403a01f6cae0e5d395"
+    },
+    "lossless_evidence.hpp": {
+      "source_packet_relative_path": "actual-dell/repair2/src/lossless_evidence.hpp",
+      "bytes": 1943,
+      "sha256": "3f08adbda6f4fba1b81ddcbce990b62b55071967d0dbcc9652ecbca0afdd8b84"
+    }
+  },
+  "scope": "Five bootstrap-specific source files only; all21 exact source files and actual host compile/link plans retained in the immutable archive. This subset is not the canonical integrated A16/B/C build graph.",
+  "phase5": "NOT_ACCEPTED"
+}
