@@ -720,3 +720,9 @@ The [supplemental A5/A7 hint provenance](../reviews/evidence/phase5_task_start_n
 ## Actual nonzero-progress short segment — presentation deferred under pause
 
 [Actual36 evidence and raw arithmetic](../reviews/evidence/phase5_nonzero_progress_actual_v1_20261011/README.md) · [six actual worldTCP pose/error rows](../reviews/evidence/phase5_nonzero_progress_actual_v1_20261011/independent/actual6_task_pose_errors.csv) · [offline startup and normal exit](../reviews/evidence/phase5_offline_single36_v1_20261011/README.md). Three accepted transactions cover12ms with tiny positive progress, original10mm/.05rad TCP checks and all4ms deadlines missed. No new actual render/video was produced after the human pause. Presentation assets wait for manual resume; prior pure figures are not substituted as actual motion proof.
+
+## Actual36 short segment — figures completed after manual resume
+
+![Accepted short progress, actual TCP gates and measured timing](../figures/phase5_nonzero_progress_actual_v2_20261011/actual36_short_progress_timing.png)
+
+[SVG](../figures/phase5_nonzero_progress_actual_v2_20261011/actual36_short_progress_timing.svg) · [source-pinned plot data](../figures/phase5_nonzero_progress_actual_v2_20261011/plot-data.json) · [renderer and provenance](../figures/phase5_nonzero_progress_actual_v2_20261011/PROVENANCE.json). Prepared after the directhuman2026-10-11 resumption. Three command-boundary measurements and six native substeps are shown; these12ms do not complete the task. Native setup+solve39.8–47.9ms is included in whole solve-stage1.415–1.492s. Complete cycles5.339–6.141s all miss4ms. The stacked Othergroup is completewall minus the three displayed stages, preserving all other work. Final2128×1456 PNG inspected; initial layout failures retained. No fulltask, physicalstop, realtime, hardware or Phase5 claim.

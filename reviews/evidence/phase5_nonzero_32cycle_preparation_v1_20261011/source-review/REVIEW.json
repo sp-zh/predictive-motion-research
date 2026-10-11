@@ -1,0 +1,43 @@
+{
+  "schema": "ROOT_LOCAL_SOURCE38_BOUNDED_REVIEW_V1",
+  "verdict": "PASS_SOURCE_DELTA_NO_RUNTIME_RESULT",
+  "local_ready_sha256": "0f0cedb0da63ad0d74947e8b7fb58211c4b07a8393f057e4f84a713791115a59",
+  "snapshot_payloads": 46,
+  "snapshot_bytes": 524674,
+  "numeric_core_after_removing_only_profiling_byte_equal_final36": true,
+  "observer_except_caps_ctor_byte_equal_final36": true,
+  "unchanged_existing_sources": 29,
+  "commits_forecasts_tasksteps": [
+    32,
+    64,
+    64
+  ],
+  "caps": {
+    "numeric_slots": 400000000,
+    "binary_bytes": 4563402752,
+    "journal_bytes": 67108864,
+    "provider_scenes": 13200,
+    "provider_primitives": 120000000,
+    "provider_FK": 200000,
+    "provider_J": 200000
+  },
+  "original_session_cumulative_cap": 1024000000,
+  "original_solver_gates_unchanged": true,
+  "fine_categories_nested_not_partition": true,
+  "gradient_sampling_first_ordinal": 1,
+  "gradient_sampling_stride": 256,
+  "provider_timing_does_not_cover_full_B_C_warm_geometry": true,
+  "retention_artifacts_attempted_once": true,
+  "first_standard_exception_preserved_best_effort": true,
+  "nonstandard_or_OS_failure_retention_not_certified": true,
+  "writer_stand_in_tests_not_external_SDK_result": true,
+  "planned_runner_CPU_nativewall_driverwall_s": [
+    1200,
+    1500,
+    1560
+  ],
+  "actual_native_compile_model_steps": 0,
+  "blocking_numeric_regressions_found": [],
+  "runtime_release": false,
+  "phase5_accepted": false
+}

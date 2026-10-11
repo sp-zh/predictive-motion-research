@@ -1,0 +1,9 @@
+{
+  "MacUSBbridge": "bridge0 UP RUNNING active169.254.142.85/16; routeDell169.254.118.3 throughbridge0",
+  "readonly_checks": "routeandifconfig; no networksettingchange",
+  "RootSSH_probe": "exit255 Connectiontimedout duringbanner exchange; port2222",
+  "writerSSH_attempts": 3,
+  "conclusion": "USB bridge active; SSHserviceavailability/backend not established. Not proof DellOS awake or correctWSL forwarding.",
+  "required": "Restore Dell/WSL/SSH connectivity; existing Dellchat asynchumanquestionpending, notaskedagain",
+  "native_execution": 0
+}

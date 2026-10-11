@@ -1,0 +1,20 @@
+{
+  "schema": "ROOT_ORIGINAL_HISTORY_DIFF_WHITESPACE_QUALIFICATION_V1",
+  "exact_paths": {
+    "reviews/evidence/agents_manual_wait_header_20261011.md": {
+      "sha256": "220d6df84521ace82ad0547a826cdb00baca19d93db0477c07a6b36538c00519",
+      "bytes": 727
+    },
+    "reviews/evidence/phase5_nonzero_32cycle_preparation_v1_20261011/SOURCE_DIFF_FROM36.patch": {
+      "sha256": "c9f9d9307acde202b111e0911c5af5926cf82b4bc39804fb27fc7d0dfb3b9b87",
+      "bytes": 55328
+    },
+    "reviews/evidence/phase5_nonzero_32cycle_preparation_v1_20261011/source-review/snapshot/SOURCE_DIFF_FROM36.patch": {
+      "sha256": "c9f9d9307acde202b111e0911c5af5926cf82b4bc39804fb27fc7d0dfb3b9b87",
+      "bytes": 55328
+    }
+  },
+  "reason": "Preserve exact previousmanual-wait header and original source-diff bytes; onehistoricalEOFblank and twooriginaldiffspace-lines are intentional retained evidence",
+  "current_source_and_documents": "All other staged source/docs whitespace checked, exceptgeneratedSVG",
+  "native_result": false
+}

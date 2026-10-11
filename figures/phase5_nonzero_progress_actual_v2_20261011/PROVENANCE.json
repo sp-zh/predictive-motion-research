@@ -1,0 +1,46 @@
+{
+  "schema": "ACTUAL36_RESUMED_PRESENTATION_PROVENANCE_V1",
+  "renderer_sha256": "1b6faeb0abc1924a104aea91a4aa97d11d081e6705b9190e881d0211cd5a6680",
+  "plot_data_sha256": "57fab4a3a241c8e6274986580d5ac9ef1ed25c3a179759293ae11f1c92360b6b",
+  "sources": {
+    "reviews/evidence/phase5_nonzero_progress_actual_v1_20261011/independent/REVIEW.json": {
+      "bytes": 55231,
+      "sha256": "44aca1a0a93d5b5344d49020a3af36d823933995213bae7475b9c5c54fe8fe1b"
+    },
+    "reviews/evidence/phase5_nonzero_progress_actual_v1_20261011/independent/actual6_task_pose_errors.csv": {
+      "bytes": 3045,
+      "sha256": "3b1cb1818d25fd1d322af38b7f91e7088c76a724dc20526d4fa0b0cb182aa4e3"
+    },
+    "reviews/evidence/phase5_nonzero_progress_actual_v1_20261011/producer/cycle-analysis/cycle-json/cycle-0/CYCLE_TIMING.json": {
+      "bytes": 1292,
+      "sha256": "1e110e61e5d63f0ff07503b7082fc8084854ae8b9983bb3a081a257903b0ebb1"
+    },
+    "reviews/evidence/phase5_nonzero_progress_actual_v1_20261011/producer/cycle-analysis/cycle-json/cycle-1/CYCLE_TIMING.json": {
+      "bytes": 1294,
+      "sha256": "38024ed978a4d6583b3a4d05acc3a77c45000f577d6dde419651178dca55eb9f"
+    },
+    "reviews/evidence/phase5_nonzero_progress_actual_v1_20261011/producer/cycle-analysis/cycle-json/cycle-2/CYCLE_TIMING.json": {
+      "bytes": 1294,
+      "sha256": "cadf497c7bcd86ceeec714a4befd4872aefb0e3ab47c61b6abe534260f1b404f"
+    }
+  },
+  "dimensions": [
+    2128,
+    1456
+  ],
+  "method": "Matplotlib static source-backed figure, no Model/Scene/FK/solver/plant execution",
+  "units": "s dimensionless; elapsedms; positionmetres/0.01; SO3radians/0.05; timer seconds convertedms",
+  "scope": "Actual36 only:threeaccepted4ms transactions/sixnative2ms steps; frozen offline simulation; no completepath/stop/realtime/phase acceptance. Plot authored after directhumanresumption, notduringpause.",
+  "outputs": {
+    "actual36_short_progress_timing.png": {
+      "bytes": 224436,
+      "sha256": "36602a64031874786931dbc23eef521297d2f035e77092626699dac935895208"
+    },
+    "actual36_short_progress_timing.svg": {
+      "bytes": 44000,
+      "sha256": "8ca4bd92ad68cf076d785aea2c4902c49dcc03a67eca20ef79e124348225b7d0"
+    }
+  },
+  "phase5": "NOT_ACCEPTED",
+  "phase6": "NOT_STARTED"
+}

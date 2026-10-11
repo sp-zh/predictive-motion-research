@@ -1,0 +1,235 @@
+{
+  "schema": "LOCAL_ONLY_SOURCE_CHECKPOINT_NOT_NATIVE_OR_BACKUP_V1",
+  "files": [
+    {
+      "path": "INDEPENDENT_SOURCE_REVIEW.json",
+      "bytes": 573,
+      "sha256": "da927ddf262c47cbb253f9b799fe2a6011bcb5ea26202ccd3aee629c794a6f81"
+    },
+    {
+      "path": "LOCAL_PROGRESS.json",
+      "bytes": 1627,
+      "sha256": "492f68cdd378e1460f381f133f34a1268321db0d0ac9b7cae324c16d4837f735"
+    },
+    {
+      "path": "LOCAL_RETENTION_TEST.json",
+      "bytes": 530,
+      "sha256": "fa0adf03fedf4c55dff3b7840d2557f6ab5809281e14210a4f6fa1682eca8ac8"
+    },
+    {
+      "path": "RESOURCE_AND_STORAGE_PLAN.json",
+      "bytes": 1625,
+      "sha256": "742e4d00d5c96f2defa312561a9a31e5b72a0b55edeb84538c877289900237f2"
+    },
+    {
+      "path": "RETAINED_LOCAL_FIXTURE_FAILURE.txt",
+      "bytes": 200,
+      "sha256": "23719dcc7a1f1140657bb154453a3aceefff7e484b1c9cdbe659326fd1d5e950"
+    },
+    {
+      "path": "SOURCE_DIFF_FROM36.patch",
+      "bytes": 55328,
+      "sha256": "c9f9d9307acde202b111e0911c5af5926cf82b4bc39804fb27fc7d0dfb3b9b87"
+    },
+    {
+      "path": "retention_lambda_exact_test.cpp",
+      "bytes": 3482,
+      "sha256": "2d9ec6694fd11d821f9b23e45195a6bc9bb0df69e5cdb3bc14409f08b2d4451e"
+    },
+    {
+      "path": "retention_lambda_exact_test_failed_fixture_v1.cpp",
+      "bytes": 3481,
+      "sha256": "e8d3310f95128308c3e092f78323965b681b102cd33793e6f805131e01ada0da"
+    },
+    {
+      "path": "src/active_first_cycle.cpp",
+      "bytes": 35552,
+      "sha256": "39a3e03255edeab1bdf1df65a184a2c9c3337047c88688cf830819e7e56d992a"
+    },
+    {
+      "path": "src/actual_task_metrics.hpp",
+      "bytes": 1883,
+      "sha256": "83bb0f21e0bfa830b4d8f7e356f9f7c2ce916c49d540c948588d5e460e07d900"
+    },
+    {
+      "path": "src/actual_task_metrics_tests.cpp",
+      "bytes": 1359,
+      "sha256": "00bea8673e19abc62233e5933722eae94c35b7540d4f3d2c5e609dc2a83b374c"
+    },
+    {
+      "path": "src/affine_assembly.cpp",
+      "bytes": 28981,
+      "sha256": "d478eda1f0fe97bfc41851515f4baa3e485fd4a57968a62dcb6233ae1157bbd5"
+    },
+    {
+      "path": "src/affine_assembly.hpp",
+      "bytes": 6026,
+      "sha256": "6faee2961242052c7655da41e8988dd0844f14c3cfa885672aa7c03eaa1dcb57"
+    },
+    {
+      "path": "src/box_screen_tests.cpp",
+      "bytes": 2954,
+      "sha256": "d922876babec2867dd1293bcee259ac12e4b2a6af5a30dd551209e097c0abaf8"
+    },
+    {
+      "path": "src/candidate_validation.cpp",
+      "bytes": 10659,
+      "sha256": "aa76869432f465e45c48acf777913eea5972414a145eedbf02645035773f63e9"
+    },
+    {
+      "path": "src/candidate_validation.hpp",
+      "bytes": 1526,
+      "sha256": "d816bedb47cff25c49a0d5577a9fa805771816caa1dc406d4772c1ee843fe4fa"
+    },
+    {
+      "path": "src/counted_geometry.hpp",
+      "bytes": 7359,
+      "sha256": "aede8b1a2b4f5a17e00c7fd477a3db0e9264eab2539c7aa20eb97f62959d9401"
+    },
+    {
+      "path": "src/current_numeric_guess.hpp",
+      "bytes": 4718,
+      "sha256": "bb935c5cbc1c3a09717142947d285b8f2009fe8ae8e47d433703dc815a322972"
+    },
+    {
+      "path": "src/current_numeric_oracle.cpp",
+      "bytes": 1845,
+      "sha256": "43e2f0fc6cab95382ff9741669f82d21d43670db633088c6141106bf40a95cac"
+    },
+    {
+      "path": "src/current_numeric_tests.cpp",
+      "bytes": 780,
+      "sha256": "b7957cb18696352b7e92333e4c78c88e059d7c79235fe6ba81c356b3c06b00bc"
+    },
+    {
+      "path": "src/cycle_support.hpp",
+      "bytes": 5856,
+      "sha256": "2e596e57e511de20483246538b89bef9afdb9131dde7f963e0e3711c47eea6fa"
+    },
+    {
+      "path": "src/cycle_support_tests.cpp",
+      "bytes": 4622,
+      "sha256": "7bbb86a9c2e67789233a099fa34d1e1b9bdbf1d084545d36152921bde343309d"
+    },
+    {
+      "path": "src/fine_timing.hpp",
+      "bytes": 1160,
+      "sha256": "17e519005d4740fdf78b85029ece68cf70f75f9f111fc2130061d45acece7f07"
+    },
+    {
+      "path": "src/fine_timing_tests.cpp",
+      "bytes": 1251,
+      "sha256": "fc29f2387722763c6601aef677dabfc1685d958093fa799a34452c33aa1c482f"
+    },
+    {
+      "path": "src/integrated_horizon_qp.cpp",
+      "bytes": 155750,
+      "sha256": "eed48486073803f4abf1fad154748d21dd18f4e841eb93a344855d093336250c"
+    },
+    {
+      "path": "src/integrated_horizon_qp.hpp",
+      "bytes": 12808,
+      "sha256": "7bd5c0c781161b88e399902d4d0e7c54a2f51602aedfb3359ae5f18d03336019"
+    },
+    {
+      "path": "src/invariant_tests.cpp",
+      "bytes": 4721,
+      "sha256": "f5a859d4cf9d79a5ae1b533b8dd62776f2bba6599dfdf691a2915ef3296a33f9"
+    },
+    {
+      "path": "src/linear_box_screen.hpp",
+      "bytes": 3916,
+      "sha256": "b649eff43293a3078b7b46a0166fa0f8a2ac59f3a8496c8c73a98c275fed96d1"
+    },
+    {
+      "path": "src/lossless_evidence.cpp",
+      "bytes": 17881,
+      "sha256": "64d10dc451b0c4f28eaaaf23d5d9c7321028aa2b047b8695a06d565f37e6b76c"
+    },
+    {
+      "path": "src/lossless_evidence.hpp",
+      "bytes": 2138,
+      "sha256": "75ca8a356e1c2f7b90ac17a0182697041cad1df0beb2b0ca995777b37e1882a8"
+    },
+    {
+      "path": "src/model_boundary.cpp",
+      "bytes": 21482,
+      "sha256": "eeb1f2a43ef40315e747c1be536eccc7b810647c65840999cd9c27d75895366e"
+    },
+    {
+      "path": "src/model_boundary.hpp",
+      "bytes": 4503,
+      "sha256": "966af079735681aedf1031822864baa608255efa43e4ca699d5bec07a3235efb"
+    },
+    {
+      "path": "src/nominal_geometry_provider.hpp",
+      "bytes": 3544,
+      "sha256": "7269a27ae1cdf5d623b726a52092adb074df8c6e032bcc1cd2c4845acafaf498"
+    },
+    {
+      "path": "src/nominal_geometry_selection.hpp",
+      "bytes": 2524,
+      "sha256": "6a41cc80feca43509d234c5aaf70e9a4c4de77abfa9b8eabfec6b6541b7711fa"
+    },
+    {
+      "path": "src/normalization.cpp",
+      "bytes": 23976,
+      "sha256": "a0cd0c9cdb505f922f1744f24cf115057b6ba9f3a9bc1b3ed0c9bdb82d358ed5"
+    },
+    {
+      "path": "src/normalization.hpp",
+      "bytes": 4288,
+      "sha256": "9456be5c205f23d2aa2210eac02286d030204a446af003ee85362b971ccb43d8"
+    },
+    {
+      "path": "src/observer_tests.cpp",
+      "bytes": 3834,
+      "sha256": "18bef19661326132aac7396998b07395acd20e83c69b70b520fea855915b5e83"
+    },
+    {
+      "path": "src/owner_binding.hpp",
+      "bytes": 745,
+      "sha256": "26a058244f7ef8f6d9353857637270623e18e706a061bccc3be4cffb66a54354"
+    },
+    {
+      "path": "src/owner_binding_tests.cpp",
+      "bytes": 832,
+      "sha256": "891c6b39bf5a9d23c581f6c25a60876cc336c0f299d79239c06cdd04ac447fd4"
+    },
+    {
+      "path": "src/runtime_observer.cpp",
+      "bytes": 37336,
+      "sha256": "413dc4ba214184d62ba9db149a48b1c0da345aaf61a19d12bd80ff9ce0774804"
+    },
+    {
+      "path": "src/runtime_observer.hpp",
+      "bytes": 8907,
+      "sha256": "69d1dfc60fb763ce471c26a5aa50cd743a7aab3a436847bea71eda7801609bbf"
+    },
+    {
+      "path": "src/session_primitives.hpp",
+      "bytes": 2259,
+      "sha256": "0b76bc232ed81dc9b4831617ae1690cfc287def914b8bca5f05ce6e6e25b6080"
+    },
+    {
+      "path": "src/solver_forensics.cpp",
+      "bytes": 26514,
+      "sha256": "664c1d480e23c1ddef4f45a57165cba871213740329f8693c897d7c07ee7af27"
+    },
+    {
+      "path": "src/solver_forensics.hpp",
+      "bytes": 860,
+      "sha256": "02b3a3d33ea64a351b228b96b2e0590b7a79fb4e9b87da78dc28c59465aca3bb"
+    },
+    {
+      "path": "src/task_local_provider.cpp",
+      "bytes": 1839,
+      "sha256": "051b424236979f9fe7ea4cb96564f54969025c997bfba2c61d347a23f7fbae4c"
+    },
+    {
+      "path": "src/task_local_provider.hpp",
+      "bytes": 640,
+      "sha256": "1819e2f626fb0ff65ad7e7e8de0b0b52f625e6bf435b073d7cca55722d76f093"
+    }
+  ]
+}

@@ -1,0 +1,15 @@
+{
+  "schema": "ROOT_ACTUAL36_PRESENTATION_VISUAL_QA_V1",
+  "image_sha256": "36602a64031874786931dbc23eef521297d2f035e77092626699dac935895208",
+  "dimensions": [
+    2128,
+    1456
+  ],
+  "inspected": "Final exportedPNG visually viewed; all four panels, labels, legend/footer spacing and gate/reference units reviewed",
+  "data_checks": "Allfive original file SHA/bytes verified byrenderer; n3/n6/countscales and native-vs-wholestage scopes exact; no candidatepoint falselylabelledactual",
+  "repairs_retained": "Both earlierlayoutversions keptignoredresults/phase5-reference/actual36-presentation-resume-v1-20261011",
+  "accessibility": "Position/SO3 and full/native timings use redundant solid/open/hatch; baraxes startzero; cyclecomponents use fixedorder; no unsupported confidenceband",
+  "limitation": "Static PNG/SVG export, not responsiveinteractive app; no new motion/SDK/collision proof",
+  "phase5": "NOT_ACCEPTED",
+  "phase6": "NOT_STARTED"
+}

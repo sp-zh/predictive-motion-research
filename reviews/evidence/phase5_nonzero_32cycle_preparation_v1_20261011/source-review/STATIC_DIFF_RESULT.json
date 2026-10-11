@@ -1,0 +1,49 @@
+{
+  "changed": [
+    "active_first_cycle.cpp",
+    "counted_geometry.hpp",
+    "cycle_support.hpp",
+    "cycle_support_tests.cpp",
+    "integrated_horizon_qp.cpp",
+    "lossless_evidence.cpp",
+    "runtime_observer.cpp"
+  ],
+  "unchanged": [
+    "actual_task_metrics.hpp",
+    "actual_task_metrics_tests.cpp",
+    "affine_assembly.cpp",
+    "affine_assembly.hpp",
+    "box_screen_tests.cpp",
+    "candidate_validation.cpp",
+    "candidate_validation.hpp",
+    "current_numeric_guess.hpp",
+    "current_numeric_oracle.cpp",
+    "current_numeric_tests.cpp",
+    "integrated_horizon_qp.hpp",
+    "invariant_tests.cpp",
+    "linear_box_screen.hpp",
+    "lossless_evidence.hpp",
+    "model_boundary.cpp",
+    "model_boundary.hpp",
+    "nominal_geometry_provider.hpp",
+    "nominal_geometry_selection.hpp",
+    "normalization.cpp",
+    "normalization.hpp",
+    "observer_tests.cpp",
+    "owner_binding.hpp",
+    "owner_binding_tests.cpp",
+    "runtime_observer.hpp",
+    "session_primitives.hpp",
+    "solver_forensics.cpp",
+    "solver_forensics.hpp",
+    "task_local_provider.cpp",
+    "task_local_provider.hpp"
+  ],
+  "new": [
+    "fine_timing.hpp",
+    "fine_timing_tests.cpp"
+  ],
+  "core_after_removing_profiling_byte_same": true,
+  "observer_except_versioned_caps_and_provider_ctor_byte_same": true,
+  "writer_retention_fixture_sourceSHA_matches_snapshot": true
+}

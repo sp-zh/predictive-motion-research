@@ -1,0 +1,148 @@
+{
+  "schema": "ROOT_PROSPECTIVE_32CYCLE_SOURCE36_RESOURCE_ARITHMETIC_V1",
+  "basis": "Fixed unchanged N20/T200/S400/full14756/741F/full144 path, not runtime success extrapolation",
+  "cycles": 32,
+  "forecast_attempts_max": 64,
+  "task_step_attempts_max": 64,
+  "task_virtual_seconds": 0.128,
+  "provider_only": {
+    "scenes": 12800,
+    "primitives": 115648000,
+    "FK": 179200,
+    "Jacobian": 179200,
+    "requested_caps": {
+      "scenes": 13200,
+      "primitives": 120000000,
+      "FK": 200000,
+      "Jacobian": 200000
+    }
+  },
+  "full_geometry_work_roster_if_all_B_C_complete": {
+    "scenes": 26728,
+    "primitives": 241487480,
+    "scope": "warmup and B/C calls use other Scene paths, outside provider counters; includes initial B/C queries"
+  },
+  "logical_numeric": {
+    "inline_per_cycle": 2718413,
+    "geometry_per_cycle": 200000,
+    "reduction_per_cycle_reservation": 4000000,
+    "hint_per_cycle_reservation": 2000000,
+    "per_cycle": 8918413,
+    "all32": 285389216,
+    "requested_cap": 400000000
+  },
+  "original_batch": {
+    "raw_result_slots": 1541030,
+    "two_resident_allowances": 11246180,
+    "fixed_path_charge_per_complete_cycle": 4258979,
+    "32_fixed_path_total": 147533508,
+    "hard_cumulative_cap": 1024000000,
+    "simultaneous_live_cap": 64000000,
+    "no_reset": true,
+    "scope": "exact declared fixed source-call schedule; failures stop prefix; added capture/sample callbacks need their own charges, not caller history reset"
+  },
+  "binary_output": {
+    "per_Evidence_cap": 134217728,
+    "root_plus32_per_Evidence_cap_sum": 4429185024,
+    "requested_global_cap": 2147483648,
+    "aggregate_cap_does_not_guarantee32": true,
+    "max_base_reduced_rows_per_current_storage_caps": 12483,
+    "max_solver_rows_including160guards": 12643
+  },
+  "journal": {
+    "maximum_declared_line_bytes": 4096,
+    "warm_events": 3000,
+    "C_events_if32complete": 256,
+    "max_all_lines_bytes": 13336576,
+    "requested_global_cap": 67108864,
+    "existing_each_file_cap": 12582912
+  },
+  "timing": {
+    "observed36_cycle_seconds": [
+      5.338923301,
+      5.827029351,
+      6.140950591
+    ],
+    "observed36_min_max_repeat32_not_guarantee": [
+      170.845545632,
+      196.510418912
+    ],
+    "hint_per_call_wall_cap_s": 10,
+    "native_per_call_solve_cap_s": 20,
+    "sum_32_hints_native_caps_before_other_work_s": 960,
+    "requested_CPU_s": 420,
+    "requested_wall_s": 600,
+    "requested_AS_bytes": 4294967296,
+    "bounded_refusal_not_all32_guarantee": true
+  },
+  "progress_from_initial_zero": {
+    "max_s_using_only_b_le_half": 0.004096,
+    "max_r_using_only_b_le_half": 0.064,
+    "tight_discrete_Jb_internal_guard_upper_s": 0.0018078388000000003,
+    "tight_discrete_Jb_internal_guard_upper_r": 0.0399974,
+    "scope": "algebraic upper bound, not a future control proposal or actual prediction; cannot reach normalized fullpath1 in32ticks"
+  },
+  "inputs": {
+    "tools/phase5_nonzero_progress_session_v1/cycle_support.hpp": {
+      "bytes": 5382,
+      "sha256": "d3dab83b30bf0905ae1209d9fd4cbf8eb298031b91a6b5b4b57a7a92a42416a4"
+    },
+    "tools/phase5_nonzero_progress_session_v1/counted_geometry.hpp": {
+      "bytes": 6363,
+      "sha256": "180ea5a855dfac54d1a1cc6476a0a024623bce67143820624660e09cbadb1fcb"
+    },
+    "tools/phase5_nonzero_progress_session_v1/runtime_observer.cpp": {
+      "bytes": 37328,
+      "sha256": "3a06fde05f266f49891d50f69d6f7f14a9b775e32c66187f06f30425a976d930"
+    },
+    "tools/phase5_nonzero_progress_session_v1/runtime_observer.hpp": {
+      "bytes": 8907,
+      "sha256": "69d1dfc60fb763ce471c26a5aa50cd743a7aab3a436847bea71eda7801609bbf"
+    },
+    "tools/phase5_nonzero_progress_session_v1/active_first_cycle.cpp": {
+      "bytes": 32926,
+      "sha256": "73a86e96b03dba57d2e503958875364010150813e49438341ee9b169543ad66c"
+    },
+    "tools/phase5_nonzero_progress_session_v1/lossless_evidence.cpp": {
+      "bytes": 17672,
+      "sha256": "f0794f09ed38192b7564b8d2f991b2610000f6c72317f2f395482a325ca6eaa5"
+    },
+    "tools/phase5_nonzero_progress_session_v1/integrated_horizon_qp.cpp": {
+      "bytes": 155393,
+      "sha256": "aa19a7c5ab80b59f0bb2d9bd467caef0bd1f81431263dc35de4d814be9f3d5c0"
+    },
+    "tools/phase5_nonzero_progress_session_v1/model_boundary.cpp": {
+      "bytes": 21482,
+      "sha256": "eeb1f2a43ef40315e747c1be536eccc7b810647c65840999cd9c27d75895366e"
+    },
+    "tools/phase5_nonzero_progress_session_v1/normalization.cpp": {
+      "bytes": 23976,
+      "sha256": "a0cd0c9cdb505f922f1744f24cf115057b6ba9f3a9bc1b3ed0c9bdb82d358ed5"
+    },
+    "tools/phase5_nonzero_progress_session_v1/affine_assembly.cpp": {
+      "bytes": 28981,
+      "sha256": "d478eda1f0fe97bfc41851515f4baa3e485fd4a57968a62dcb6233ae1157bbd5"
+    },
+    "tools/phase5_public_live_affine_v2/foundation.hpp": {
+      "bytes": 16063,
+      "sha256": "ee673d71ea3824aa41647ff2254ebcee477a091c817d1b3e21d398ace11cd8e2"
+    },
+    "tools/phase5_public_live_affine_v2/foundation_resources.cpp": {
+      "bytes": 16952,
+      "sha256": "3a83eddf893b77e1fe67c03de32292431cd0ce273934e479f9c238a25113ca49"
+    },
+    "config/phase5.yaml": {
+      "bytes": 2743,
+      "sha256": "3e845009aecd612952b495f224bc6ef460e5fffb15e2c133986d16c312c0817f"
+    },
+    "tools/phase5_adapter/phase5_benchmark.cpp": {
+      "bytes": 44584,
+      "sha256": "72d59b1a4921b37a9ead7ab59602d75238927cb89224673574cfcd7a9a1147d1"
+    },
+    "docs/phase5_development_status.md": {
+      "bytes": 53012,
+      "sha256": "388fa9721f2403a22361b02f6045740822bed9b4052675768a46f91fc5fbedc7"
+    }
+  },
+  "no_native_model_compiler_SSH_optimizer_calls": true
+}

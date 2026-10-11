@@ -1,0 +1,49 @@
+{
+  "schema": "ATTEMPT38_LOCAL_DEVELOPMENT_PENDING_DELL_V1",
+  "utc": "2026-10-11T18:26:42.403139+00:00",
+  "attempt_id": 38,
+  "stage": "LOCAL_IMPLEMENTATION_PENDING_NATIVE_COMPILE",
+  "native_model_invocations": 0,
+  "native_task_substeps": 0,
+  "old36_reused": false,
+  "failures": [
+    {
+      "action": "fresh_remote_staging",
+      "reason": "SSH169.254.118.3:2222 connect timeout",
+      "remote_mutation_verified": false
+    },
+    {
+      "action": "compile_dispatch_request",
+      "reason": "SSH banner exchange timed out",
+      "native_execution_verified": false
+    },
+    {
+      "action": "SSH_readonly_true_probe",
+      "reason": "third SSH banner exchange timeout",
+      "native_execution_verified": false
+    },
+    {
+      "action": "local generated test fixture compile",
+      "reason": "fixture newline escaping error; original fixture retained; generator repaired and exact production lambda test then passed",
+      "production_source_affected": false
+    }
+  ],
+  "local_checks": {
+    "fine_timing_cpp17_warnings_as_errors": "PASS",
+    "compile_link_runtime_python_syntax": "PASS",
+    "exact_production_retention_lambda_failure_injection": "PASS",
+    "static_startup_order_and_no_short_cap": "PASS"
+  },
+  "pending": [
+    "restore Dell SSH",
+    "native16TUcompile+4ELFlink",
+    "pure cumulative32 tests",
+    "physicalWindows volume/D archive>=12GiB",
+    "fresh32 native one-shot",
+    "retained-failure diagnosis",
+    "Root canonical integration and verified public backup"
+  ],
+  "phase5": "NOT_ACCEPTED",
+  "phase6": "NOT_STARTED",
+  "resource_plan": "RESOURCE_AND_STORAGE_PLAN.json"
+}

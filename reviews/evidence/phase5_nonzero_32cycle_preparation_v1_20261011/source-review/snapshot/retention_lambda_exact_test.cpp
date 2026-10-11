@@ -1,0 +1,17 @@
+#include "fine_timing.hpp"
+#include <exception>
+#include <memory>
+#include <stdexcept>
+#include <string>
+#include <array>
+#include <iostream>
+namespace timing {enum class Stage {A,B,C,D,E,F,Count};}
+namespace evidence {struct BinaryFile {void u64(unsigned long long){} void number(double){} void text(const std::string&){} };}
+struct Output {bool failFine=false,failCycle=false;int fineCalls=0,cycleCalls=0;template<class F>void write(const std::string& n,const std::string&,F f){bool fine=n=="fine_timing.bin";int& count=fine?fineCalls:cycleCalls;if(++count>1)throw std::runtime_error("O_EXCL duplicate");if(fine?failFine:failCycle)throw std::runtime_error(fine?"fine failure":"cycle failure");evidence::BinaryFile file;f(file);}};
+struct Ledger {int commits(){return 0;}int forecasts(){return 0;}int steps(){return 0;}int originalSlots(){return 0;}int separateNumericSlots(){return 0;}};
+struct Timings {bool complete=false,deadline_missed=false;double complete_cycle_s=0;std::array<bool,6> measured{};std::array<double,6> seconds{};};
+int main(){for(int mode=0;mode<4;++mode){auto out=std::make_unique<Output>();out->failFine=mode&1;out->failCycle=mode&2;bool fine_attempted=false,cycle_timing_attempted=false;phase5_fine_timing_v1::Metrics fine;Timings measured;Ledger ledger;unsigned cycle=0;
+   auto retain_timing=[&](){std::exception_ptr first_failure;const auto snapshot=fine;if(!fine_attempted){fine_attempted=true;try{out->write("fine_timing.bin","NESTED_OFFLINE_TIMING_WITH_GRADIENT_SAMPLE_V1",[&](evidence::BinaryFile& f){f.u64(cycle);for(int i=0;i<static_cast<int>(phase5_fine_timing_v1::Part::Count);++i){f.u64(snapshot.calls[i]);f.number(snapshot.seconds[i]);}f.u64(snapshot.gradient_operations);f.u64(256);f.text("Categories enum fine_timing.hpp; nested totals overlap, no sum equals wall; gradient records only every256th operation, not total or extrapolated time; codec includes actual writes and SHA; snapshot before timing serialization/manifest");});}catch(...){first_failure=std::current_exception();}}if(!cycle_timing_attempted){cycle_timing_attempted=true;try{out->write("cycle_timing.bin","ACTUAL_OFFLINE_CYCLE_SEGMENTS_AND_4MS_MISS",[&](evidence::BinaryFile& f){f.u64(cycle);f.u64(measured.complete);f.number(measured.complete_cycle_s);f.u64(measured.deadline_missed);for(int i=0;i<static_cast<int>(timing::Stage::Count);++i){f.u64(measured.measured[i]);f.number(measured.seconds[i]);}for(auto n:{ledger.commits(),ledger.forecasts(),ledger.steps(),ledger.originalSlots(),ledger.separateNumericSlots()})f.u64(n);f.text("monotonic realwall from current observe through retained solve/value/Cjournals/afterobserve+controlshift; timing serialization/manifest excluded; SDKstartup/termination excluded; geometryassembly includes genuine affine+fullQP+retained artifacts, 1600originalnominalgeometric assistance rows, sourcewholephysicalB/C stillmandatory");});}catch(...){if(!first_failure)first_failure=std::current_exception();}}if(first_failure)std::rethrow_exception(first_failure);};
+std::string first;try{retain_timing();}catch(const std::runtime_error& e){first=e.what();}try{retain_timing();}catch(...){throw std::runtime_error("unexpected retry");}
+if(out->fineCalls!=1||out->cycleCalls!=1||first!=(mode&1?"fine failure":mode&2?"cycle failure":""))throw std::runtime_error("retention invariant");}
+std::cout<<"PASS exact production retain_timing lambda: each artifact attempted once, later artifact survives earlier failure, first error preserved\n";}

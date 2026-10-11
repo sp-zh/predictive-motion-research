@@ -1,0 +1,8 @@
+{
+  "schema": "EXACT_PRODUCTION_LAMBDA_LOCAL_FAILURE_TEST_V1",
+  "source_sha256": "39a3e03255edeab1bdf1df65a184a2c9c3337047c88688cf830819e7e56d992a",
+  "lambda_sha256": "b68aeb76e641d880131805d47178653c5040667df988369f27a4d188c2d9a08e",
+  "fixtures": "Local output and ledger stand-ins; only retention scheduling tested, not SDK/Model/math",
+  "result": "PASS exact production retain_timing lambda: each artifact attempted once, later artifact survives earlier failure, first error preserved\n",
+  "native_model_invocations": 0
+}

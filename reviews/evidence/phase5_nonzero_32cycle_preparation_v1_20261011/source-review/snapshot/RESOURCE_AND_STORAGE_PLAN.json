@@ -1,0 +1,44 @@
+{
+  "schema": "NEW32_FIXED_SHAPE_AND_STORAGE_PLAN_V1",
+  "commits": 32,
+  "logical_task_duration_s": 0.128,
+  "forecast_attempts": 64,
+  "task_substeps": 64,
+  "provider_only": {
+    "scene": 12800,
+    "primitives": 115648000,
+    "fk": 179200,
+    "jac": 179200
+  },
+  "separate_numeric_fixed_shape": 285389216,
+  "original_session_expected_slots": 147533508,
+  "original_session_policy_unchanged": 1024000000,
+  "caps": {
+    "numeric": 400000000,
+    "provider_scene": 13200,
+    "provider_primitives": 120000000,
+    "provider_fk": 200000,
+    "provider_jac": 200000,
+    "binary": 4563402752,
+    "journal": 67108864,
+    "per_evidence_directory": 134217728,
+    "per_journal": 12582912,
+    "OS_per_file": 268435456,
+    "cpu_seconds": 1200,
+    "native_wall_seconds": 1500,
+    "driver_wall_seconds": 1560,
+    "AS_bytes": 4294967296
+  },
+  "binary_directory_ceiling": 4429185024,
+  "storage": {
+    "physical_windows_precheck_required": true,
+    "WSL_virtual_statvfs_accepted": false,
+    "host_and_archive_each_minimum_free": 12884901888,
+    "if_same_physical_volume_minimum_free": 21474836480,
+    "archive_strategy": "Stream tar from remote to Mac file; never load whole archive into RAM. Retained source+raw immutable archive+one extraction/mirror at most3 evidence-size copies per shared physicalvolume; precheck20GiB when host/archive share volume. Raw results excluded Git; Root checkpoint small source/review figures only. Verify SHA/READY before backup report.",
+    "Mac_free_required": 12884901888
+  },
+  "limits_do_not_guarantee_success": true,
+  "outcomes_pending": true,
+  "phase5": "NOT_ACCEPTED"
+}

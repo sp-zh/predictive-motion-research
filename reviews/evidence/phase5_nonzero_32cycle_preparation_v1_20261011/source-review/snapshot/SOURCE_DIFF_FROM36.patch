@@ -1,0 +1,303 @@
+--- exact36/active_first_cycle.cpp
++++ new38/active_first_cycle.cpp
+@@ -1,4 +1,5 @@
+ #include "runtime_observer.hpp"
++#include "fine_timing.hpp"
+ #include "candidate_validation.hpp"
+ #include "lossless_evidence.hpp"
+ #include "task_local_provider.hpp"
+@@ -8,6 +9,7 @@
+ #include <fstream>
+ #include <iostream>
+ #include <memory>
++#include <exception>
+ #include <cstring>
+ #include <sstream>
+ #include <iomanip>
+@@ -25,17 +27,20 @@
+ Eigen::Vector3d vec3(const YAML::Node& n){need(n.IsSequence()&&n.size()==3,"three-vector");return {n[0].as<double>(),n[1].as<double>(),n[2].as<double>()};}
+ bool bits(const std::vector<mjtNum>& a,const std::vector<mjtNum>& b){return a.size()==b.size()&&(a.empty()||std::memcmp(a.data(),b.data(),a.size()*sizeof(mjtNum))==0);}
+ }
+-class DurableWarmupJournal final {int fd=-1;std::size_t bytes=0,events=0;std::string path;phase5_dynamic_cycle_support_v1::Ledger* ledger;public:explicit DurableWarmupJournal(const std::string& file,phase5_dynamic_cycle_support_v1::Ledger* scope=nullptr):path(file),ledger(scope){fd=::open(file.c_str(),O_WRONLY|O_CREAT|O_EXCL|O_NOFOLLOW|O_CLOEXEC,0600);need(fd>=0,"fresh durable warmup journal");}~DurableWarmupJournal(){if(fd>=0)::close(fd);}void append(const rt::WarmupPoint& p,const std::string& event){std::ostringstream o;o<<std::setprecision(17)<<event<<","<<p.substep<<","<<p.simulation_time<<","<<p.native_returned<<","<<p.native_joints_read<<","<<p.scratch_joints_read<<","<<p.contacts;for(int n:p.warnings)o<<","<<n;for(const auto* v:{&p.q,&p.v,&p.C,&p.acceleration,&p.jerk})for(double x:*v)o<<","<<x;o<<","<<p.jerk_available<<","<<p.geometry_complete<<","<<p.independent_observer_guard<<","<<p.minimum_true<<","<<p.minimum_cover<<","<<p.geometry_queries<<","<<p.tcp_frame_error<<","<<p.arm_frame_error<<"\n";const auto line=o.str();need(line.size()<=4096&&bytes+line.size()<=12582912,"bounded durable warmup journal");if(ledger)ledger->reserveBytes(line.size(),true);std::size_t n=0;while(n<line.size()){const auto k=::write(fd,line.data()+n,line.size()-n);if(k<0&&errno==EINTR)continue;need(k>0,"durable journal write prefix retained");n+=k;bytes+=k;}need(::fsync(fd)==0,"durable warmup journal fsync");++events;}void receipt(evidence::Evidence& out,const std::string& name="journal_receipt.bin"){need(::fsync(fd)==0,"journal final fsync");std::ifstream in(path,std::ios::binary);need(bool(in),"journal receipt open");std::unique_ptr<EVP_MD_CTX,decltype(&EVP_MD_CTX_free)> h(EVP_MD_CTX_new(),EVP_MD_CTX_free);need(h&&EVP_DigestInit_ex(h.get(),EVP_sha256(),nullptr)==1,"journal receipt hash init");char buffer[4096];std::size_t seen=0,newlines=0;char last=0;while(in){in.read(buffer,sizeof(buffer));const auto n=in.gcount();if(n>0){seen+=n;need(seen<=12582912&&EVP_DigestUpdate(h.get(),buffer,n)==1,"journal receipt bounded hash");for(int j=0;j<n;++j)if(buffer[j]=='\n')++newlines;last=buffer[n-1];}}need(in.eof(),"journal receipt complete read");unsigned char digest[32];unsigned n=0;need(EVP_DigestFinal_ex(h.get(),digest,&n)==1&&n==32,"journal final hash");std::string sha;const char* hex="0123456789abcdef";for(unsigned char b:digest){sha.push_back(hex[b>>4]);sha.push_back(hex[b&15]);}const auto pin=live::observePinnedFile(path,sha);need(pin.bytes==seen,"journal receipt stable size/hash");out.write(name,"ACTUAL_DURABLE_NATIVE_STEP_JOURNAL_PREFIX_V3",[&](evidence::BinaryFile& f){f.text(path);f.text(sha);f.u64(seen);f.u64(bytes);f.u64(events);f.u64(newlines);f.u64(seen&&last!='\n');f.text("hard termination may leave final step-attempt without native-return: native entry/advancement UNKNOWN; retain exact complete newline prefix; binary128MiB plus separate journal12MiB caps");});}};
++class DurableWarmupJournal final {int fd=-1;std::size_t bytes=0,events=0;std::string path;phase5_dynamic_cycle_support_v1::Ledger* ledger;public:explicit DurableWarmupJournal(const std::string& file,phase5_dynamic_cycle_support_v1::Ledger* scope=nullptr):path(file),ledger(scope){fd=::open(file.c_str(),O_WRONLY|O_CREAT|O_EXCL|O_NOFOLLOW|O_CLOEXEC,0600);need(fd>=0,"fresh durable warmup journal");}~DurableWarmupJournal(){if(fd>=0)::close(fd);}void append(const rt::WarmupPoint& p,const std::string& event){{phase5_fine_timing_v1::Span journal_timing(phase5_fine_timing_v1::Part::JournalCodecWrite);std::ostringstream o;o<<std::setprecision(17)<<event<<","<<p.substep<<","<<p.simulation_time<<","<<p.native_returned<<","<<p.native_joints_read<<","<<p.scratch_joints_read<<","<<p.contacts;for(int n:p.warnings)o<<","<<n;for(const auto* v:{&p.q,&p.v,&p.C,&p.acceleration,&p.jerk})for(double x:*v)o<<","<<x;o<<","<<p.jerk_available<<","<<p.geometry_complete<<","<<p.independent_observer_guard<<","<<p.minimum_true<<","<<p.minimum_cover<<","<<p.geometry_queries<<","<<p.tcp_frame_error<<","<<p.arm_frame_error<<"\n";const auto line=o.str();need(line.size()<=4096&&bytes+line.size()<=12582912,"bounded durable warmup journal");if(ledger)ledger->reserveBytes(line.size(),true);std::size_t n=0;while(n<line.size()){const auto k=::write(fd,line.data()+n,line.size()-n);if(k<0&&errno==EINTR)continue;need(k>0,"durable journal write prefix retained");n+=k;bytes+=k;}}{phase5_fine_timing_v1::Span fsync_timing(phase5_fine_timing_v1::Part::JournalFsync);need(::fsync(fd)==0,"durable warmup journal fsync");}++events;}void receipt(evidence::Evidence& out,const std::string& name="journal_receipt.bin"){need(::fsync(fd)==0,"journal final fsync");std::ifstream in(path,std::ios::binary);need(bool(in),"journal receipt open");std::unique_ptr<EVP_MD_CTX,decltype(&EVP_MD_CTX_free)> h(EVP_MD_CTX_new(),EVP_MD_CTX_free);need(h&&EVP_DigestInit_ex(h.get(),EVP_sha256(),nullptr)==1,"journal receipt hash init");char buffer[4096];std::size_t seen=0,newlines=0;char last=0;while(in){in.read(buffer,sizeof(buffer));const auto n=in.gcount();if(n>0){seen+=n;need(seen<=12582912&&EVP_DigestUpdate(h.get(),buffer,n)==1,"journal receipt bounded hash");for(int j=0;j<n;++j)if(buffer[j]=='\n')++newlines;last=buffer[n-1];}}need(in.eof(),"journal receipt complete read");unsigned char digest[32];unsigned n=0;need(EVP_DigestFinal_ex(h.get(),digest,&n)==1&&n==32,"journal final hash");std::string sha;const char* hex="0123456789abcdef";for(unsigned char b:digest){sha.push_back(hex[b>>4]);sha.push_back(hex[b&15]);}const auto pin=live::observePinnedFile(path,sha);need(pin.bytes==seen,"journal receipt stable size/hash");out.write(name,"ACTUAL_DURABLE_NATIVE_STEP_JOURNAL_PREFIX_V3",[&](evidence::BinaryFile& f){f.text(path);f.text(sha);f.u64(seen);f.u64(bytes);f.u64(events);f.u64(newlines);f.u64(seen&&last!='\n');f.text("hard termination may leave final step-attempt without native-return: native entry/advancement UNKNOWN; retain exact complete newline prefix; binary128MiB plus separate journal12MiB caps");});}};
+ void emitCommitRecord(evidence::BinaryFile& f,const rt::CommitOutcome& committed){f.u64(committed.attempted);f.u64(committed.success);f.u64(committed.native_step_attempts);f.u64(committed.native_returns);f.text(committed.stage);f.text(committed.error);for(auto n:{committed.history_before.completed_tick,committed.history_before.completed_command_sequence,committed.history_after.completed_tick,committed.history_after.completed_command_sequence})f.u64(n);for(double x:committed.held_C)f.number(x);f.number(committed.before_time);f.number(committed.after_time);f.u64(committed.points.size());for(const auto& point:committed.points){const auto& p=point.actual;f.u64(p.substep);f.number(p.simulation_time);f.u64(p.native_returned);f.u64(p.native_joints_read);f.u64(p.scratch_joints_read);for(const auto* v:{&p.q,&p.v,&p.C,&p.acceleration,&p.jerk})for(double x:*v)f.number(x);f.u64(p.jerk_available);f.u64(p.geometry_complete);f.u64(p.independent_observer_guard);f.u64(p.contacts);for(int n:p.warnings)f.u64(n);for(double x:{p.minimum_true,p.minimum_cover,p.tcp_frame_error,p.arm_frame_error,point.sigma,point.geometry_interval_lower,point.sigma_interval_lower})f.number(x);f.u64(p.geometry_queries);f.u64(point.passed);f.text(p.stage);f.text(p.error);}}
+ void emitTaskErrorRecord(evidence::BinaryFile& f,const rt::CommitOutcome& committed){f.u64(committed.history_before.completed_tick);f.u64(committed.history_before.completed_command_sequence);f.u64(committed.success);f.text(committed.error);f.u64(committed.points.size());for(const auto& point:committed.points){f.u64(point.actual.substep);f.number(point.actual.simulation_time);const auto& t=point.task_error;f.u64(t.raw_pose_available);for(double v:{t.elapsed,t.logical_elapsed,t.logical_s,t.logical_r})f.number(v);if(t.raw_pose_available){for(const auto* pose:{&t.actual_world,&t.desired_world}){for(double v:pose->position)f.number(v);for(double v:pose->rotation)f.number(v);}}f.u64(t.measured);if(t.measured){f.number(t.error.translation_m);f.number(t.error.orientation_rad);f.u64(t.error.within_10mm_005rad);}f.u64(point.passed);f.text(point.actual.stage);f.text(point.actual.error);}f.text("Actual native scratch world TCP vs pinned Td at logical controller halfprogress; translation worldnorm m and SO3 angle rad; 10mm/.05rad diagnostic flag alone is not commit/task/stop acceptance");}
+ int main(int argc,char** argv){
+  std::string stage="BEFORE_ACTIVE_INPUT",error;std::unique_ptr<evidence::Evidence> out;std::unique_ptr<rt::Simulation> simulation;std::unique_ptr<live::Session> session;rt::Snapshot before,after;bool boundary_same=false,termination_pass=false,before_write_attempted=false,after_write_attempted=false;
+- phase5_dynamic_cycle_support_v1::Envelope scope;phase5_dynamic_cycle_support_v1::Ledger ledger(scope);
++ phase5_dynamic_cycle_support_v1::Envelope scope;std::unique_ptr<phase5_dynamic_cycle_support_v1::Ledger> owned_ledger;
+  const auto start=std::chrono::steady_clock::now();
+  try{
+   need(argc==5,"active input path/hash, new producer SHA and fresh output directory required");
+-  live::observePinnedFile(argv[1],argv[2]);const auto input=YAML::LoadFile(argv[1]);need(input["schema"].as<std::string>()=="NONZERO_PROGRESS_NUMERICAL_TAIL_GEOMETRY_TASK_METRIC_DIAGNOSTIC_V2","new active input schema required");
++  live::observePinnedFile(argv[1],argv[2]);const auto input=YAML::LoadFile(argv[1]);need(input["schema"].as<std::string>()=="NONZERO_PROGRESS_32CYCLE_GEOMETRY_TIMING_DIAGNOSTIC_V1","new active input schema required");
+   need(input["timing_mode"].as<std::string>()=="OFFLINE_FROZEN_SIMULATION_BOUNDARY","this entry is offline only");
++  const auto envelope=input["finite_envelope"];need(bool(envelope),"explicit new finite envelope required");
++  scope.maximum_commits=envelope["commits"].as<live::Count>();scope.maximum_forecasts=envelope["forecasts"].as<live::Count>();scope.maximum_task_substeps=envelope["task_substeps"].as<live::Count>();scope.output_bytes=envelope["binary_bytes"].as<live::Count>();scope.global_journal_bytes=envelope["journal_bytes"].as<live::Count>();scope.separate_numeric_slots=envelope["numeric_slots"].as<live::Count>();scope.provider_scene=envelope["provider_scene"].as<live::Count>();scope.provider_primitives=envelope["provider_primitives"].as<live::Count>();scope.provider_fk=envelope["provider_fk"].as<live::Count>();scope.provider_jac=envelope["provider_jac"].as<live::Count>();
++  need(scope.maximum_commits==32,"new attempt exactly32 declared commits");owned_ledger=std::make_unique<phase5_dynamic_cycle_support_v1::Ledger>(scope);auto& ledger=*owned_ledger;
+   out=std::make_unique<evidence::Evidence>(argv[4],&ledger);stage="ACTIVE_PINNED_INPUTS";
+   live::SessionPins pins;pins.producer=live::observeCurrentProducerElf(argv[3]);pins.producer.path=std::filesystem::canonical("/proc/self/exe").string();pins.xml=identity(input["xml"]);pins.constants=identity(input["constants"]);pins.expected_metadata=identity(input["expected_metadata"]);pins.session_id=input["session_id"].as<std::string>();
+   for(const auto& n:input["dependencies"]) {pins.dependencies.push_back(identity(n));}
+@@ -71,8 +76,9 @@
+   namespace timing=phase5_dynamic_cycle_support_v1;std::vector<live::NominalControl> controls(core::N);
+   for(live::Count cycle=0;cycle<scope.maximum_commits;++cycle){
+    const std::string cycle_directory=std::string(argv[4])+"/cycle-"+std::to_string(cycle);auto cycle_evidence=std::make_unique<evidence::Evidence>(cycle_directory,&ledger);auto& out=cycle_evidence;
+-   timing::Timings measured;timing::CycleClock clock(measured);rt::Snapshot cycle_before;std::string cycle_error;
+-   auto retain_timing=[&](){out->write("cycle_timing.bin","ACTUAL_OFFLINE_CYCLE_SEGMENTS_AND_4MS_MISS",[&](evidence::BinaryFile& f){f.u64(cycle);f.u64(measured.complete);f.number(measured.complete_cycle_s);f.u64(measured.deadline_missed);for(int i=0;i<static_cast<int>(timing::Stage::Count);++i){f.u64(measured.measured[i]);f.number(measured.seconds[i]);}for(auto n:{ledger.commits(),ledger.forecasts(),ledger.steps(),ledger.originalSlots(),ledger.separateNumericSlots()})f.u64(n);f.text("monotonic realwall from current observe through retained solve/value/Cjournals/afterobserve+controlshift; timing serialization/manifest excluded; SDKstartup/termination excluded; geometryassembly includes genuine affine+fullQP+retained artifacts, 1600originalnominalgeometric assistance rows, sourcewholephysicalB/C stillmandatory");});};
++   phase5_fine_timing_v1::Metrics fine;phase5_fine_timing_v1::Binding fine_binding(fine);timing::Timings measured;timing::CycleClock clock(measured);rt::Snapshot cycle_before;std::string cycle_error;bool fine_attempted=false,cycle_timing_attempted=false,manifest_attempted=false;
++   auto finish_cycle=[&](const std::string& current_stage,const std::string& current_error){if(!manifest_attempted){manifest_attempted=true;out->finish(current_stage,current_error,false);}};
++   auto retain_timing=[&](){std::exception_ptr first_failure;const auto snapshot=fine;if(!fine_attempted){fine_attempted=true;try{out->write("fine_timing.bin","NESTED_OFFLINE_TIMING_WITH_GRADIENT_SAMPLE_V1",[&](evidence::BinaryFile& f){f.u64(cycle);for(int i=0;i<static_cast<int>(phase5_fine_timing_v1::Part::Count);++i){f.u64(snapshot.calls[i]);f.number(snapshot.seconds[i]);}f.u64(snapshot.gradient_operations);f.u64(256);f.text("Categories enum fine_timing.hpp; nested totals overlap, no sum equals wall; gradient records only every256th operation, not total or extrapolated time; codec includes actual writes and SHA; snapshot before timing serialization/manifest");});}catch(...){first_failure=std::current_exception();}}if(!cycle_timing_attempted){cycle_timing_attempted=true;try{out->write("cycle_timing.bin","ACTUAL_OFFLINE_CYCLE_SEGMENTS_AND_4MS_MISS",[&](evidence::BinaryFile& f){f.u64(cycle);f.u64(measured.complete);f.number(measured.complete_cycle_s);f.u64(measured.deadline_missed);for(int i=0;i<static_cast<int>(timing::Stage::Count);++i){f.u64(measured.measured[i]);f.number(measured.seconds[i]);}for(auto n:{ledger.commits(),ledger.forecasts(),ledger.steps(),ledger.originalSlots(),ledger.separateNumericSlots()})f.u64(n);f.text("monotonic realwall from current observe through retained solve/value/Cjournals/afterobserve+controlshift; timing serialization/manifest excluded; SDKstartup/termination excluded; geometryassembly includes genuine affine+fullQP+retained artifacts, 1600originalnominalgeometric assistance rows, sourcewholephysicalB/C stillmandatory");});}catch(...){if(!first_failure)first_failure=std::current_exception();}}if(first_failure)std::rethrow_exception(first_failure);};
+    try{auto observe_begin=clock.begin();simulation->observe(cycle_before);out->snapshot("observation_before.bin",cycle_before);clock.end(timing::Stage::Observe,observe_begin);
+   stage="GENUINE_CURRENT_NOMINAL";auto nominal_begin=clock.begin();ledger.beforeForecast();
+   auto forecast=session->forecast(cycle_before.actualObservation(),cycle_before.acceptedHistory(),cycle_before.progressHistory(),simulation->current(cycle_before,rt::ObservationClock::OfflineFrozenSimulationBoundary),controls);
+@@ -82,13 +88,13 @@
+   stage="PRIVATE_CURRENT_NOMINAL_GEOMETRY_AND_NONEMPTY_FULL_QP";phase5_nominal_geometry_provider_v1::Result geometry;simulation->buildNominalGeometry(cycle_before,*session,forecast,geometry,inputs.reserve_separate_numeric);
+   out->write("nominal_geometry_rows.bin","PRIVATELY_CURRENT_BOUND_GENUINE_NOMINAL_GEOMETRY_ROWS_V1",[&](evidence::BinaryFile& f){f.u64(geometry.attempted);f.u64(geometry.complete);f.text(geometry.error);f.text(geometry.nominal_invocation_sha256);f.text(geometry.geometry_configuration_sha256);const auto& current=cycle_before.actualObservation();f.text(current.observation_id);f.text(current.transaction_id);f.u64(current.boundary.completed_tick);f.u64(current.boundary.completed_command_sequence);f.number(cycle_before.simulationTime());f.text("Actualcurrent privateowner/IDs/initialq-v-C-w-s-r/previousalpha-b/integration bits+stillActive forecast; selected2true2cover genuine nominal gradient assistance notcomplete collisioncertificate; fullB/C mandatory; worldwitness m, Jq m/rad, geometryfloor.005m, original1600rowcap");f.u64(geometry.rows.size());f.u64(geometry.samples.size());for(const auto& sample:geometry.samples){for(int n:{sample.sample,sample.cell,sample.cycle,sample.half})f.u64(n);f.number(sample.elapsed);f.vector(sample.nominal_q);f.number(sample.minimum_true);f.number(sample.minimum_cover);f.u64(sample.complete_query_count);f.u64(sample.selected.size());for(const auto& selected:sample.selected){const auto& r=selected.row;const auto& q=selected.original_query;f.u64(r.sample);f.text(r.id);f.text(r.units);f.vector(r.Jq.transpose());for(double x:{r.nominal_value,r.lower,r.upper})f.number(x);f.text(q.a);f.text(q.b);f.text(q.type);f.u64(static_cast<std::uint64_t>(static_cast<std::int64_t>(q.cover_index)));f.u64(q.covered_tool_environment);f.number(q.distance);for(const auto* v:{&q.normal,&q.witness_a,&q.witness_b})f.vector(*v);f.vector(q.gradient.transpose());}}const auto& c=simulation->providerGeometryCounts();for(auto n:{c.scene_attempts,c.scene_returns,c.primitive_attempts,c.true_attempts,c.true_returns,c.cover_attempts,c.cover_returns,c.fk_attempts,c.fk_returns,c.jac_attempts,c.jac_returns})f.u64(n);f.u64(200000);f.text("Per invocation200000retainedgeometry logicalnumeric reservation; originalSessionbudget stays; provider counts separate from alloriginalwarm/B/C queries, supplied rawproofs retain those actualcounts");});
+   need(geometry.complete&&geometry.error.empty()&&geometry.rows.size()==1600,geometry.error.c_str());inputs.geometry=geometry.rows;
+-  stage="ACTUAL_FULL_INLINE_QP_WITH_1600_NOMINAL_GEOMETRY_ROWS";auto connected=core::connect(std::move(forecast),inputs);out->integration(connected);clock.end(timing::Stage::GeometryAssembly,assembly_begin);
++  stage="ACTUAL_FULL_INLINE_QP_WITH_1600_NOMINAL_GEOMETRY_ROWS";auto connected=[&](){phase5_fine_timing_v1::Span assembly_timing(phase5_fine_timing_v1::Part::Assembly);return core::connect(std::move(forecast),inputs);}();out->integration(connected);clock.end(timing::Stage::GeometryAssembly,assembly_begin);
+   const auto options_node=input["solver"];predictive_motion::control::QpOptions options;options.max_iterations=options_node["max_iterations"].as<int>();options.absolute_tolerance=options_node["absolute_tolerance"].as<double>();options.relative_tolerance=options_node["relative_tolerance"].as<double>();options.acceptance_tolerance=options_node["acceptance_tolerance"].as<double>();options.time_limit_seconds=options_node["time_limit_seconds"].as<double>();options.max_state_age_seconds=options_node["max_state_age_seconds"].as<double>();options.initial_rho=options_node["initial_rho"].as<double>();
+   need(options.max_iterations==20000&&options.absolute_tolerance==1e-9&&options.relative_tolerance==1e-9&&options.acceptance_tolerance==1e-7&&options.time_limit_seconds==20&&options.max_state_age_seconds==.05&&options.initial_rho==.1,"exact bounded offline development budget; unchanged tolerances/rho; no online performance claim");
+   stage="FRESH_CURRENT_MATRIX_HINT_AND_NATIVE_SOLVER";auto solve_begin=clock.begin();core::CandidateOutcome candidate;core::solveCurrentProgressInputTrust(connected,options,candidate);
+   out->write("current_numeric_hint.bin","BOUNDED_CURRENT_MATRIX_OPTIMIZER_HINT_NOT_CANDIDATE",[&](evidence::BinaryFile& f){const auto& h=candidate.currentNumericHint();f.u64(h.has_value());if(h){f.u64(h->complete);f.text(h->error);f.vector(h->primal);f.vector(h->dual);f.u64(h->events.size());for(const auto& e:h->events){f.u64(e.iteration);f.u64(e.active_count);f.u64(e.worst_row);for(double x:{e.violation,e.min_multiplier,e.stationarity,e.kkt_residual})f.number(x);}f.u64(h->faces.size());for(const auto& x:h->faces){f.u64(x.row);f.u64(static_cast<std::uint64_t>(static_cast<std::int64_t>(x.side)));}}f.text("Fresh current H/g/A/l/u/p/Z/scales; no oldhint/currentstate factory; all original nativeSOLVED/SI/strict/value/privateC gates mandatory; all144 reduced controls incl18progress inputs; smallalpha+4.999progressjerk subset only");});
+   out->candidate(candidate);out->write("solver_row_screen.bin","ORIGINAL_SI_INPUT_BOX_IMPLICATION_SCREEN",[&](evidence::BinaryFile& f){f.text("outward-long-double-box-interval-v1; retainall160inputboxes/equalities before structured equality reduction; binary reduction records eliminated16; independentlycheckalloriginalSIrows");f.u64(candidate.retainedSolverRows().size());for(int r:candidate.retainedSolverRows())f.u64(r);f.u64(candidate.omittedSolverRows().size());for(int r:candidate.omittedSolverRows())f.u64(r);f.u64(candidate.omittedSolverIntervals().size());for(const auto& interval:candidate.omittedSolverIntervals())f.text(interval);for(unsigned v:candidate.screeningEnvironment())f.u64(v);f.text("backend.maximum_violation_row uses solver-reduced coordinates; following maps original SI");f.u64(static_cast<std::uint64_t>(static_cast<std::int64_t>(candidate.backendMappedOriginalViolationRow())));f.text("full original SI independently scanned maximum (only after SOLVED)");f.u64(candidate.originalRowViolations().size());f.u64(static_cast<std::uint64_t>(static_cast<std::int64_t>(candidate.fullOriginalMaximumViolationRow())));f.number(candidate.fullOriginalMaximumViolation());});
+-  if(candidate.equalityReductionDiagnostics())out->write("qp_equality_reduction.bin","ORIGINAL_AND_NUMERICAL_PLANNING_TERMINAL_REDUCTION_V2",[&](evidence::BinaryFile& f){const auto& w=*candidate.equalityReductionDiagnostics();f.text("U=p+Z*(D*solverY) using original terminal IEEE coefficients with disclosed numerical1e-13 progress-r target; not exact originalE0 equivalence; objective constant included; bounded row scales1/max(1,row infinity norm); backend residuals explicitly scaled reduced coordinate space; restriction of original objective to disclosed biased planning space; no mathematical equivalence to originalE0; all original SI/strict gates mandatory; pending shared ledger");f.text(w.stage);f.u64(w.numerical_validation_passed);f.matrix(w.transform);f.vector(w.offset);f.matrix(w.equalities);f.vector(w.equality_rhs);f.vector(w.planning_equality_rhs);f.u64(w.eliminated_rows.size());for(int r:w.eliminated_rows)f.u64(r);f.u64(w.solver_rows.size());for(int r:w.solver_rows)f.u64(r);f.matrix(w.hessian);f.vector(w.gradient);f.matrix(w.constraints);f.vector(w.lower);f.vector(w.upper);f.vector(w.variable_scale);f.matrix(w.factor);f.vector(w.seed);f.vector(w.solver_coordinates);f.vector(w.reduced_coordinates);f.vector(w.row_scale);f.matrix(w.solver_hessian);f.vector(w.solver_gradient);f.matrix(w.solver_constraints);f.vector(w.solver_lower);f.vector(w.solver_upper);f.matrix(w.solver_factor);f.vector(w.solver_seed);f.text("FORENSIC UNSOLVED/SOLVED native x,y in explicitly scaled coordinates; not usable controls or forward request");f.u64(w.forensic_iterates.wrapper_attempted);f.u64(w.forensic_iterates.native_solve_attempts);f.u64(static_cast<std::uint64_t>(static_cast<std::int64_t>(w.forensic_iterates.raw_status)));f.u64(w.forensic_iterates.primal_present);f.u64(w.forensic_iterates.dual_present);f.vector(w.forensic_iterates.primal);f.vector(w.forensic_iterates.dual);f.u64(w.stored_numeric_slots);for(double e:{w.constant,w.equality_origin_error,w.equality_map_error,w.factor_consistency_error,w.scaled_factor_consistency_error})f.number(e);});
++  if(candidate.equalityReductionDiagnostics())out->write("qp_equality_reduction.bin","ORIGINAL_AND_NUMERICAL_PLANNING_TERMINAL_REDUCTION_V2",[&](evidence::BinaryFile& f){const auto& w=*candidate.equalityReductionDiagnostics();f.text("U=p+Z*(D*solverY) using original terminal IEEE coefficients with disclosed numerical1e-13 progress-r target; not exact originalE0 equivalence; objective constant included; bounded row scales1/max(1,row infinity norm); backend residuals explicitly scaled reduced coordinate space; restriction of original objective to disclosed biased planning space; no mathematical equivalence to originalE0; all original SI/strict gates mandatory; shared cumulative numeric ledger enforced");f.text(w.stage);f.u64(w.numerical_validation_passed);f.matrix(w.transform);f.vector(w.offset);f.matrix(w.equalities);f.vector(w.equality_rhs);f.vector(w.planning_equality_rhs);f.u64(w.eliminated_rows.size());for(int r:w.eliminated_rows)f.u64(r);f.u64(w.solver_rows.size());for(int r:w.solver_rows)f.u64(r);f.matrix(w.hessian);f.vector(w.gradient);f.matrix(w.constraints);f.vector(w.lower);f.vector(w.upper);f.vector(w.variable_scale);f.matrix(w.factor);f.vector(w.seed);f.vector(w.solver_coordinates);f.vector(w.reduced_coordinates);f.vector(w.row_scale);f.matrix(w.solver_hessian);f.vector(w.solver_gradient);f.matrix(w.solver_constraints);f.vector(w.solver_lower);f.vector(w.solver_upper);f.matrix(w.solver_factor);f.vector(w.solver_seed);f.text("FORENSIC UNSOLVED/SOLVED native x,y in explicitly scaled coordinates; not usable controls or forward request");f.u64(w.forensic_iterates.wrapper_attempted);f.u64(w.forensic_iterates.native_solve_attempts);f.u64(static_cast<std::uint64_t>(static_cast<std::int64_t>(w.forensic_iterates.raw_status)));f.u64(w.forensic_iterates.primal_present);f.u64(w.forensic_iterates.dual_present);f.vector(w.forensic_iterates.primal);f.vector(w.forensic_iterates.dual);f.u64(w.stored_numeric_slots);for(double e:{w.constant,w.equality_origin_error,w.equality_map_error,w.factor_consistency_error,w.scaled_factor_consistency_error})f.number(e);});
+   if(candidate.equalityReductionDiagnostics())out->write("planning_guard.bin","EXPLICIT_OPTIMIZER_ALPHA_PROGRESS_JERK_AND_NUMERICAL_TAIL_V3",[&](evidence::BinaryFile& f){const auto& w=*candidate.equalityReductionDiagnostics();f.number(w.solver_alpha_guard);f.number(w.strict_alpha_guard);f.number(w.solver_progress_jerk_guard);f.number(w.strict_progress_jerk_guard);f.number(w.progress_guard_previous_b);f.number(w.planning_terminal_progress_r_target);f.u64(w.base_solver_row_count);f.u64(w.internal_guard_control_columns.size());for(int col:w.internal_guard_control_columns)f.u64(col);f.vector(w.internal_guard_row_scale);f.text(candidate.backendInternalGuardLabel());f.text("additional160solver rows:140alpha +20progressjerk with actualpreviousb; all144 reduced controls incl18progress; original full14756SI/H/g/F/f/c/E unchanged; guard rows have originalrow−1, never fabricated originalSI index; smaller planning subset, no originalQP optimum/fulltask claim");});
+   clock.end(timing::Stage::Solve,solve_begin);ledger.sourceSlots(session->cumulativeCharges());
+   if(!connected.complete())throw std::runtime_error(std::string(connected.trace().first_error));
+@@ -107,10 +113,10 @@
+   clock.end(timing::Stage::CommitJournal,commit_begin);need(committed.success&&committed.error.empty(),committed.error.c_str());ledger.completedCommit();rt::Snapshot cycle_after;simulation->observe(cycle_after);out->snapshot("observation_after.bin",cycle_after);
+   need(cycle_after.acceptedHistory().boundary.completed_tick==cycle_before.acceptedHistory().boundary.completed_tick+1,"actual next current accepted boundary");
+   const auto shifted=core::shiftControlGuess(candidate.solverResult().velocity,1);for(int k=0;k<core::N;++k){for(int j=0;j<7;++j)controls[k].alpha[j]=shifted(k*8+j);controls[k].b=shifted(k*8+7);}stage="COMPLETE_REOBSERVED_DYNAMIC_TRANSACTION_DIAGNOSTIC";
+-    clock.finish();retain_timing();out->finish(stage,"",false);
+-   }catch(const std::exception& e){cycle_error=e.what();if(!measured.complete)clock.finish();try{retain_timing();out->finish(stage,cycle_error,false);}catch(...){}throw;}
++    clock.finish();retain_timing();finish_cycle(stage,"");
++   }catch(const std::exception& e){cycle_error=e.what();if(!measured.complete)clock.finish();try{retain_timing();}catch(...){}try{finish_cycle(stage,cycle_error);}catch(...){}throw;}
+   }
+-  need(ledger.commits()==3&&ledger.forecasts()==6&&ledger.steps()==6,"finite three actual transactions complete");stage="COMPLETE_THREE_CURRENT_NONZERO_PROGRESS_GEOMETRY_QP_TRANSACTIONS_NOT_FULL_TASK";
++  need(ledger.commits()==scope.maximum_commits&&ledger.forecasts()==scope.maximum_forecasts&&ledger.steps()==scope.maximum_task_substeps,"declared finite actual transactions complete");stage="COMPLETE_32_CURRENT_NONZERO_PROGRESS_GEOMETRY_QP_TRANSACTIONS_NOT_FULL_TASK";
+ 
+  }catch(const std::exception& e){error=e.what();}catch(...){error="unknown active entry failure";}
+  // Always retain the actual native boundary and explicit termination outcome.
+--- exact36/counted_geometry.hpp
++++ new38/counted_geometry.hpp
+@@ -1,16 +1,19 @@
+ #pragma once
+ #include "geometry.hpp"
++#include "fine_timing.hpp"
++#include "cycle_support.hpp"
+ namespace phase5_geometry_provider_counted_v2 {
+ using namespace predictive_motion;using namespace predictive_motion::geometry;
+ struct Counts {std::uint64_t scene_attempts=0,scene_returns=0,primitive_attempts=0,true_attempts=0,true_returns=0,cover_attempts=0,cover_returns=0,fk_attempts=0,fk_returns=0,jac_attempts=0,jac_returns=0;};
+ class CountedScene final:public Scene {
+- Counts& counts_;static void before(std::uint64_t& count,std::uint64_t cap,const char* why){if(count>=cap)throw std::runtime_error(why);++count;}
+- public:CountedScene(const std::string& filename,Counts& counts):Scene(filename),counts_(counts){}
+- Pose pose(RobotKinematics& robot,const Eigen::VectorXd& q,const std::string& frame)const {before(counts_.fk_attempts,40000,"provider FK cumulative40000");auto value=robot.framePose(q,frame);if(!value.rotation().allFinite()||!value.translation().allFinite())throw std::runtime_error("finite actual FK pose");++counts_.fk_returns;return value;}
+- Jacobian jacobian(RobotKinematics& robot,const Eigen::VectorXd& q,const std::string& frame)const {before(counts_.jac_attempts,20000,"provider analyticJacob cumulative20000");auto value=robot.frameJacobian(q,frame,Reference::LocalWorldAligned);if(!value.allFinite())throw std::runtime_error("finite actual analytic Jacobian");++counts_.jac_returns;return value;}
++ Counts& counts_;const phase5_dynamic_cycle_support_v1::Envelope scope_;static void before(std::uint64_t& count,std::uint64_t cap,const char* why){if(count>=cap)throw std::runtime_error(why);++count;}
++ public:CountedScene(const std::string& filename,Counts& counts,const phase5_dynamic_cycle_support_v1::Envelope& scope):Scene(filename),counts_(counts),scope_(scope){}
++ Pose pose(RobotKinematics& robot,const Eigen::VectorXd& q,const std::string& frame)const {phase5_fine_timing_v1::Span timing(phase5_fine_timing_v1::Part::FkJacobian);before(counts_.fk_attempts,scope_.provider_fk,"provider FK declared cumulative cap");auto value=robot.framePose(q,frame);if(!value.rotation().allFinite()||!value.translation().allFinite())throw std::runtime_error("finite actual FK pose");++counts_.fk_returns;return value;}
++ Jacobian jacobian(RobotKinematics& robot,const Eigen::VectorXd& q,const std::string& frame)const {phase5_fine_timing_v1::Span timing(phase5_fine_timing_v1::Part::FkJacobian);before(counts_.jac_attempts,scope_.provider_jac,"provider analyticJacob declared cumulative cap");auto value=robot.frameJacobian(q,frame,Reference::LocalWorldAligned);if(!value.allFinite())throw std::runtime_error("finite actual analytic Jacobian");++counts_.jac_returns;return value;}
+   Snapshot query(RobotKinematics& robot,const Eigen::VectorXd& q,bool gradients=true,
+                  bool cover_queries=true,double keep_cover_below=std::numeric_limits<double>::infinity()) const {
+-    before(counts_.scene_attempts,1400,"Scene eval cumulative1400");
++    phase5_fine_timing_v1::Span query_timing(phase5_fine_timing_v1::Part::GeometryQuery);
++    before(counts_.scene_attempts,scope_.provider_scene,"Scene eval declared cumulative cap");
+     struct Placement { Pose frame; coal::Transform3s transform; Jacobian jacobian; };
+     std::vector<Placement> poses;
+     for(const auto& object:objects) {
+@@ -19,12 +22,13 @@
+       poses.push_back({pose,coal::Transform3s(pose.rotation(),pose.act(object.center)),j});
+     }
+     Snapshot out;
++    {phase5_fine_timing_v1::Span batch_timing(phase5_fine_timing_v1::Part::CoalBatch);
+     for(size_t a=0;a<objects.size();++a)for(size_t b=a+1;b<objects.size();++b) {
+       if(excluded(objects[a],objects[b]))continue;
+       coal::DistanceRequest request;
+       request.enable_signed_distance=true;request.gjk_tolerance=1e-10;request.epa_tolerance=1e-10;request.gjk_max_iterations=256;
+       coal::DistanceResult result;
+-      before(counts_.primitive_attempts,20000000,"provider primitive query cumulative20M");++counts_.true_attempts;
++      before(counts_.primitive_attempts,scope_.provider_primitives,"provider primitive query declared cumulative cap");++counts_.true_attempts;
+       coal::distance(objects[a].shape.get(),poses[a].transform,objects[b].shape.get(),poses[b].transform,request,result);++counts_.true_returns;
+       if(!std::isfinite(result.min_distance) || !result.normal.allFinite() ||
+          !result.nearest_points[0].allFinite() || !result.nearest_points[1].allFinite() ||
+@@ -35,19 +39,21 @@
+               result.nearest_points[0],result.nearest_points[1],result.normal,Eigen::RowVectorXd::Zero(q.size())};
+       r.covered_tool_environment=objects[a].category=="tool" && (objects[b].category=="fixture" || objects[b].category=="floor");
+       if(r.covered_tool_environment)out.minimum_tool_environment_true=std::min(out.minimum_tool_environment_true,r.distance);
+-      if(gradients)r.gradient=-r.normal.transpose()*(pointJacobian(poses[a].frame,poses[a].jacobian,r.witness_a)-pointJacobian(poses[b].frame,poses[b].jacobian,r.witness_b));
++      if(gradients){phase5_fine_timing_v1::Span gradient_timing(phase5_fine_timing_v1::Part::GradientSample,phase5_fine_timing_v1::sampleGradient());r.gradient=-r.normal.transpose()*(pointJacobian(poses[a].frame,poses[a].jacobian,r.witness_a)-pointJacobian(poses[b].frame,poses[b].jacobian,r.witness_b));}
+       if(!r.gradient.allFinite())throw std::runtime_error("nonfinite geometry gradient");
+       out.minimum_true=std::min(out.minimum_true,r.distance);out.queries.push_back(std::move(r));
++    }
+     }
+     if(!cover_queries){++counts_.scene_returns;return out;}
+     const Pose flange=pose(robot,q,tool_frame);
+     const Jacobian fj=gradients ? jacobian(robot,q,tool_frame) : Jacobian::Zero(6,q.size());
++    {phase5_fine_timing_v1::Span batch_timing(phase5_fine_timing_v1::Part::CoverBatch);
+     int cover_index=0;for(const auto& sphere:cover) {
+       const int current_index=cover_index++;
+       const V center=flange.act(sphere.center);
+       for(size_t b=0;b<objects.size();++b) {
+         if(objects[b].category!="fixture" && objects[b].category!="floor")continue;
+-        before(counts_.primitive_attempts,20000000,"provider primitive query cumulative20M");++counts_.cover_attempts;
++        before(counts_.primitive_attempts,scope_.provider_primitives,"provider primitive query declared cumulative cap");++counts_.cover_attempts;
+         V closest,normal; double signed_center;
+         if(objects[b].category=="floor") {
+           signed_center=center.z()-objects[b].center.z();normal=V(0,0,-1);
+@@ -75,10 +81,11 @@
+         Query r{sphere.primitive,objects[b].name,"cover",distance,
+                 center+sphere.radius*normal,closest,normal,Eigen::RowVectorXd::Zero(q.size())};
+         r.cover_index=current_index;
+-        if(gradients)r.gradient=-normal.transpose()*pointJacobian(flange,fj,center);
++        if(gradients){phase5_fine_timing_v1::Span gradient_timing(phase5_fine_timing_v1::Part::GradientSample,phase5_fine_timing_v1::sampleGradient());r.gradient=-normal.transpose()*pointJacobian(flange,fj,center);}
+         if(!std::isfinite(distance) || !r.gradient.allFinite())throw std::runtime_error("nonfinite cover query");
+         out.queries.push_back(std::move(r));
+       }
++    }
+     }
+     ++counts_.scene_returns;return out;
+   }
+--- exact36/cycle_support.hpp
++++ new38/cycle_support.hpp
+@@ -13,8 +13,8 @@
+ namespace live=phase5_active_session_v1;
+ inline void need(bool b,const char* msg){if(!b)throw std::invalid_argument(msg);}
+ inline bool bits(double a,double b){return std::memcmp(&a,&b,sizeof(double))==0;}
+-struct Envelope {live::Count maximum_commits=3,maximum_forecasts=6,maximum_task_substeps=6;live::Count output_bytes=768ULL*1024*1024,global_journal_bytes=48ULL*1024*1024;live::Count separate_numeric_slots=48000000;double cycle_deadline_s=.004;};
+-class Ledger {Envelope e_;live::Count commits_=0,forecasts_=0,steps_=0,bytes_=0,journal_=0,actual_slots_last_=0,separate_numeric_=0;public:explicit Ledger(const Envelope& e):e_(e){need(e.maximum_commits>0&&e.maximum_commits<=8&&e.maximum_forecasts==2*e.maximum_commits&&e.maximum_task_substeps==2*e.maximum_commits&&e.cycle_deadline_s==.004,"declared finite short session envelope");}
++struct Envelope {live::Count maximum_commits=3,maximum_forecasts=6,maximum_task_substeps=6;live::Count output_bytes=768ULL*1024*1024,global_journal_bytes=48ULL*1024*1024;live::Count separate_numeric_slots=48000000;live::Count provider_scene=1400,provider_primitives=20000000,provider_fk=40000,provider_jac=20000;double cycle_deadline_s=.004;};
++class Ledger {Envelope e_;live::Count commits_=0,forecasts_=0,steps_=0,bytes_=0,journal_=0,actual_slots_last_=0,separate_numeric_=0;public:explicit Ledger(const Envelope& e):e_(e){need(e.maximum_commits>0&&e.maximum_commits<=32&&e.maximum_forecasts==2*e.maximum_commits&&e.maximum_task_substeps==2*e.maximum_commits&&e.cycle_deadline_s==.004&&e.output_bytes>0&&e.output_bytes<=4352ULL*1024*1024&&e.global_journal_bytes>0&&e.global_journal_bytes<=64ULL*1024*1024&&e.separate_numeric_slots>0&&e.separate_numeric_slots<=400000000&&e.provider_scene>0&&e.provider_scene<=13200&&e.provider_primitives>0&&e.provider_primitives<=120000000&&e.provider_fk>0&&e.provider_fk<=200000&&e.provider_jac>0&&e.provider_jac<=200000,"declared finite session envelope through32");}
+  void beforeForecast(){need(forecasts_<e_.maximum_forecasts,"cumulative genuine forecast cap");++forecasts_;}
+  void beforeStep(){need(steps_<e_.maximum_task_substeps,"cumulative native taskstep attempt cap");++steps_;}
+  void completedCommit(){need(commits_<e_.maximum_commits,"cumulative completed commit cap");++commits_;}
+--- exact36/cycle_support_tests.cpp
++++ new38/cycle_support_tests.cpp
+@@ -13,6 +13,7 @@
+  for(int field=0;field<9;++field){auto b=a;switch(field){case 0:b.initial.s=.1;break;case 1:b.initial.r=.1;break;case 2:b.previous_b=.1;break;case 3:b.boundary.completed_tick=1;break;case 4:b.boundary.completed_command_sequence=1;break;case 5:b.nominal_digest="new";break;case 6:b.problem_digest="new";break;case 7:b.row_roster_digest="new";break;case 8:b.support_digest="new";break;}check(!sameBinding(a,b),"context/matrix/support/roster must invalidate hint");}
+  Envelope e;e.separate_numeric_slots=8;e.output_bytes=8;e.global_journal_bytes=8;Ledger l(e);l.reserveNumeric(8);refused([&]{l.reserveNumeric(1);});check(l.separateNumericSlots()==8,"numeric charges retained");l.sourceSlots(10);l.sourceSlots(10);refused([&]{l.sourceSlots(9);});l.reserveBytes(8,false);refused([&]{l.reserveBytes(1,false);});l.reserveBytes(8,true);refused([&]{l.reserveBytes(1,true);});
+  for(int i=0;i<6;++i){l.beforeForecast();l.beforeStep();}for(int i=0;i<3;++i)l.completedCommit();refused([&]{l.beforeForecast();});refused([&]{l.beforeStep();});refused([&]{l.completedCommit();});check(l.forecasts()==6&&l.steps()==6&&l.commits()==3&&l.originalSlots()==10,"cumulative counter preservation");e.maximum_forecasts=8;refused([&]{Ledger wrong(e);});
++ Envelope longer;longer.maximum_commits=32;longer.maximum_forecasts=64;longer.maximum_task_substeps=64;longer.separate_numeric_slots=400000000;longer.output_bytes=4352ULL*1024*1024;longer.global_journal_bytes=64ULL*1024*1024;longer.provider_scene=13200;longer.provider_primitives=120000000;longer.provider_fk=longer.provider_jac=200000;Ledger cumulative(longer);for(int i=0;i<32;++i){cumulative.beforeForecast();cumulative.beforeForecast();cumulative.beforeStep();cumulative.beforeStep();cumulative.sourceSlots(15505159+4258979ULL*i);cumulative.reserveNumeric(8918413);cumulative.completedCommit();}check(cumulative.commits()==32&&cumulative.forecasts()==64&&cumulative.steps()==64&&cumulative.separateNumericSlots()==285389216,"32 monotonic cumulative accounting");refused([&]{cumulative.beforeForecast();});refused([&]{cumulative.beforeStep();});refused([&]{cumulative.completedCommit();});refused([&]{cumulative.sourceSlots(0);});longer.maximum_commits=33;refused([&]{Ledger bad(longer);});longer.maximum_commits=32;longer.provider_scene=13201;refused([&]{Ledger bad(longer);});
+  Timings timing;check(std::isnan(timing.complete_cycle_s)&&std::isnan(timing.seconds[0])&&!timing.measured[0],"unmeasured is unavailable");CycleClock clock(timing);auto begin=clock.begin();clock.end(Stage::Observe,begin);refused([&]{clock.end(Stage::Observe,begin);});std::this_thread::sleep_for(std::chrono::milliseconds(8));clock.finish();check(timing.complete&&timing.deadline_missed&&timing.complete_cycle_s>=.004&&timing.measured[0]&&std::isnan(timing.seconds[1]),"actual wall miss plus partial segments");refused([&]{clock.finish();});
+  std::cout<<"PASS nonzero-delta/progress/current-hint-invalidation/cumulative-caps/actual-wall-timing; no Model or physical step\n";return 0;
+  }catch(const std::exception& e){std::cerr<<e.what()<<"\n";return 1;}}
+--- exact36/fine_timing.hpp
++++ new38/fine_timing.hpp
+@@ -0,0 +1,12 @@
++#pragma once
++#include <array>
++#include <chrono>
++#include <cstdint>
++namespace phase5_fine_timing_v1 {
++enum class Part {GeometryQuery,FkJacobian,CoalBatch,CoverBatch,GradientSample,Assembly,Hint,NativeWrapper,EvidenceCodecWriteSha,EvidenceFsync,JournalCodecWrite,JournalFsync,Count};
++struct Metrics {std::array<double,static_cast<int>(Part::Count)> seconds{};std::array<std::uint64_t,static_cast<int>(Part::Count)> calls{};std::uint64_t gradient_operations=0;};
++inline thread_local Metrics* active=nullptr;
++class Binding {Metrics* previous_;public:explicit Binding(Metrics& m):previous_(active){active=&m;}~Binding(){active=previous_;}Binding(const Binding&)=delete;};
++class Span {using Clock=std::chrono::steady_clock;Metrics* target_;Part part_;Clock::time_point start_;public:explicit Span(Part p,bool enabled=true):target_(enabled?active:nullptr),part_(p){if(target_)start_=Clock::now();}~Span(){if(target_){auto i=static_cast<int>(part_);target_->seconds[i]+=std::chrono::duration<double>(Clock::now()-start_).count();++target_->calls[i];}}Span(const Span&)=delete;};
++inline bool sampleGradient(){return active&&((++active->gradient_operations)%256==1);}
++}
+--- exact36/fine_timing_tests.cpp
++++ new38/fine_timing_tests.cpp
+@@ -0,0 +1,18 @@
++#include "fine_timing.hpp"
++#include <stdexcept>
++#include <iostream>
++namespace t=phase5_fine_timing_v1;
++void need(bool b){if(!b)throw std::runtime_error("timing invariant");}
++int main(){
++ t::Metrics outer,inner;need(t::active==nullptr);
++ {t::Binding bound(outer);{t::Span a(t::Part::GeometryQuery);{t::Span b(t::Part::FkJacobian);}}
++ need(outer.calls[0]==1&&outer.calls[1]==1&&outer.seconds[0]>=outer.seconds[1]);
++ try{t::Span a(t::Part::Assembly);throw std::runtime_error("retained failure");}catch(const std::runtime_error&){}
++ need(outer.calls[static_cast<int>(t::Part::Assembly)]==1);
++ {t::Binding nested(inner);{t::Span a(t::Part::Hint);}need(t::active==&inner);}
++ need(t::active==&outer&&inner.calls[static_cast<int>(t::Part::Hint)]==1&&outer.calls[static_cast<int>(t::Part::Hint)]==0);
++ for(int i=0;i<512;++i){t::Span sampled(t::Part::GradientSample,t::sampleGradient());}
++ need(outer.gradient_operations==512&&outer.calls[static_cast<int>(t::Part::GradientSample)]==2);
++ }need(t::active==nullptr);{t::Span disabled(t::Part::Hint);}need(inner.calls[static_cast<int>(t::Part::Hint)]==1);
++ std::cout<<"PASS timing nesting, exception retention, binding lifetime, unavailable meter and exact1of256 gradient sampling; no Model/native execution\n";
++}
+--- exact36/integrated_horizon_qp.cpp
++++ new38/integrated_horizon_qp.cpp
+@@ -1,4 +1,5 @@
+ #include "integrated_horizon_qp.hpp"
++#include "fine_timing.hpp"
+ #include <openssl/evp.h>
+ #include <cstring>
+ #include "linear_box_screen.hpp"
+@@ -936,7 +937,7 @@
+   // Rebuilt current p/Z/H/g/A/l/u/scales only. Never accept old x/y/context
+   // or use a state/map shift. Retain all bounded face-search events on refusal.
+   s.inputs.reserve_separate_numeric(2000000); // bounded current dense arrays/KKT/hints; AS covers allocator/native/temp
+-  candidate.current_numeric_=phase5_dynamic_numeric_v1::derive(scaled.hessian,scaled.gradient,scaled.constraints,scaled.lower,scaled.upper,transform.solver_seed);
++  {phase5_fine_timing_v1::Span hint_timing(phase5_fine_timing_v1::Part::Hint);candidate.current_numeric_=phase5_dynamic_numeric_v1::derive(scaled.hessian,scaled.gradient,scaled.constraints,scaled.lower,scaled.upper,transform.solver_seed);}
+   const auto& hint=*candidate.current_numeric_;need(hint.complete&&hint.error.empty(),hint.error.c_str());
+   need(hint.primal.size()==native_n&&hint.dual.size()==scaled.lower.size()&&hint.primal.allFinite()&&hint.dual.allFinite(),"bounded current numeric primal-dual shapes");
+   transform.solver_seed=hint.primal;
+@@ -944,7 +945,7 @@
+   transform.forensic_iterates.primal=Eigen::VectorXd::Zero(native_n);transform.forensic_iterates.dual=Eigen::VectorXd::Zero(transform.solver_rows.size()); // owned placeholder only until present=true
+   const Eigen::SparseMatrix<double> certificate=transform.solver_factor.sparseView();
+   ++candidate.solver_wrapper_entries_;
+-  candidate.result_=phase5_active_solver_forensics_v1::solveCertifiedPrimalDualGuess(scaled,options,transform.solver_seed,hint.dual,certificate,transform.forensic_iterates);
++  {phase5_fine_timing_v1::Span native_timing(phase5_fine_timing_v1::Part::NativeWrapper);candidate.result_=phase5_active_solver_forensics_v1::solveCertifiedPrimalDualGuess(scaled,options,transform.solver_seed,hint.dual,certificate,transform.forensic_iterates);}
+   transform.stage="QP_RETURNED_EXPLICITLY_SCALED_COORDINATES";transform.solver_coordinates=candidate.result_.velocity;
+   if(candidate.result_.velocity.size()){need(candidate.result_.velocity.size()==native_n&&candidate.result_.velocity.allFinite(),"solver scaled coordinate vector finite126 required");transform.reduced_coordinates=transform.variable_scale.asDiagonal()*transform.solver_coordinates;candidate.result_.velocity=transform.offset+transform.transform*transform.reduced_coordinates;need(candidate.result_.velocity.allFinite(),"finite reconstructed original controls160 required");}
+   const int backend_row=candidate.result_.maximum_violation_row;
+@@ -1073,7 +1074,7 @@
+   // Rebuilt current p/Z/H/g/A/l/u/scales only. Never accept old x/y/context
+   // or use a state/map shift. Retain all bounded face-search events on refusal.
+   s.inputs.reserve_separate_numeric(2000000); // bounded current dense arrays/KKT/hints; AS covers allocator/native/temp
+-  candidate.current_numeric_=phase5_dynamic_numeric_v1::derive(scaled.hessian,scaled.gradient,scaled.constraints,scaled.lower,scaled.upper,transform.solver_seed);
++  {phase5_fine_timing_v1::Span hint_timing(phase5_fine_timing_v1::Part::Hint);candidate.current_numeric_=phase5_dynamic_numeric_v1::derive(scaled.hessian,scaled.gradient,scaled.constraints,scaled.lower,scaled.upper,transform.solver_seed);}
+   const auto& hint=*candidate.current_numeric_;need(hint.complete&&hint.error.empty(),hint.error.c_str());
+   need(hint.primal.size()==native_n&&hint.dual.size()==scaled.lower.size()&&hint.primal.allFinite()&&hint.dual.allFinite(),"bounded current numeric primal-dual shapes");
+   transform.solver_seed=hint.primal;
+@@ -1081,7 +1082,7 @@
+   transform.forensic_iterates.primal=Eigen::VectorXd::Zero(native_n);transform.forensic_iterates.dual=Eigen::VectorXd::Zero(transform.solver_rows.size()); // owned placeholder only until present=true
+   const Eigen::SparseMatrix<double> certificate=transform.solver_factor.sparseView();
+   ++candidate.solver_wrapper_entries_;
+-  candidate.result_=phase5_active_solver_forensics_v1::solveCertifiedPrimalDualGuess(scaled,options,transform.solver_seed,hint.dual,certificate,transform.forensic_iterates);
++  {phase5_fine_timing_v1::Span native_timing(phase5_fine_timing_v1::Part::NativeWrapper);candidate.result_=phase5_active_solver_forensics_v1::solveCertifiedPrimalDualGuess(scaled,options,transform.solver_seed,hint.dual,certificate,transform.forensic_iterates);}
+   transform.stage="QP_RETURNED_EXPLICITLY_SCALED_COORDINATES";transform.solver_coordinates=candidate.result_.velocity;
+   if(candidate.result_.velocity.size()){need(candidate.result_.velocity.size()==native_n&&candidate.result_.velocity.allFinite(),"solver scaled coordinate vector finite144 required");transform.reduced_coordinates=transform.variable_scale.asDiagonal()*transform.solver_coordinates;candidate.result_.velocity=transform.offset+transform.transform*transform.reduced_coordinates;need(candidate.result_.velocity.allFinite(),"finite reconstructed original controls160 required");}
+   const int backend_row=candidate.result_.maximum_violation_row;
+--- exact36/lossless_evidence.cpp
++++ new38/lossless_evidence.cpp
+@@ -1,4 +1,5 @@
+ #include "lossless_evidence.hpp"
++#include "fine_timing.hpp"
+ #include <algorithm>
+ #include <cerrno>
+ #include <cstring>
+@@ -46,8 +47,8 @@
+  try{need(hash&&EVP_DigestInit_ex(hash.get(),EVP_sha256(),nullptr)==1,"output SHA init");r.hash_valid=true;
+   fd=::open((dir_/name).c_str(),O_WRONLY|O_CREAT|O_EXCL|O_NOFOLLOW|O_CLOEXEC,0600);need(fd>=0,"FIRST evidence file refused");r.created=true;
+   const bool final_role=role=="ACTUAL_NATIVE_SESSION_SNAPSHOT"||role=="ACTUAL_DIRECT_SESSION_API_ENTRIES"||role=="ACTIVE_SESSION_FINAL_SCOPE_AND_TIMING";
+-  BinaryFile out(fd,hash.get(),r,total_,final_role?byte_cap:byte_cap-4ULL*1024*1024,ledger_);out.text("P5_ACTIVE_SESSION_LOSSLESS_V1");out.text(role);emit(out);
+-  need(::fsync(fd)==0,"evidence fsync failed");r.sha256=digest(hash.get());const int owned=fd;fd=-1;need(::close(owned)==0,"evidence close failed; no close retry");r.complete=true;
++  {phase5_fine_timing_v1::Span codec_timing(phase5_fine_timing_v1::Part::EvidenceCodecWriteSha);BinaryFile out(fd,hash.get(),r,total_,final_role?byte_cap:byte_cap-4ULL*1024*1024,ledger_);out.text("P5_ACTIVE_SESSION_LOSSLESS_V1");out.text(role);emit(out);}
++  {phase5_fine_timing_v1::Span fsync_timing(phase5_fine_timing_v1::Part::EvidenceFsync);need(::fsync(fd)==0,"evidence fsync failed");}r.sha256=digest(hash.get());const int owned=fd;fd=-1;need(::close(owned)==0,"evidence close failed; no close retry");r.complete=true;
+  }catch(const std::exception& e){r.error=e.what();if(hash&&r.hash_valid)try{r.sha256=digest(hash.get());}catch(...){}if(fd>=0)::close(fd);throw;}
+ }
+ void Evidence::snapshot(const std::string& name,const Snapshot& s){write(name,"ACTUAL_NATIVE_SESSION_SNAPSHOT",[&](BinaryFile& f){
+--- exact36/runtime_observer.cpp
++++ new38/runtime_observer.cpp
+@@ -18,7 +18,7 @@
+ namespace {void need(bool c,const char* why){if(!c)throw std::invalid_argument(why);}
+ bool bits(const std::vector<mjtNum>& a,const std::vector<mjtNum>& b){return a.size()==b.size()&&(a.empty()||std::memcmp(a.data(),b.data(),a.size()*sizeof(mjtNum))==0);}}
+ Simulation::Simulation(const live::FileIdentity& xml,const std::string& epoch,const phase5_dynamic_cycle_support_v1::Envelope& scope):scope_(scope),epoch_(epoch),xml_pin_(xml){
+- need(scope_.maximum_commits>0&&scope_.maximum_commits<=8&&scope_.maximum_task_substeps==2*scope_.maximum_commits,"explicit finite dynamic scope");commit_history_.reserve(scope_.maximum_commits);
++ need(scope_.maximum_commits>0&&scope_.maximum_commits<=32&&scope_.maximum_task_substeps==2*scope_.maximum_commits,"explicit finite dynamic scope");commit_history_.reserve(scope_.maximum_commits);
+  static_assert(mjVERSION_HEADER==337&&sizeof(mjtNum)==8,"fixed MuJoCo ABI");
+  need(!epoch.empty()&&epoch.size()<=128,"bounded current simulation epoch required");
+  for(unsigned char c:epoch) need(c>=33&&c<=126,"printable epoch identity required");
+@@ -47,7 +47,7 @@
+   const auto geometry_config=YAML::LoadFile(spec.geometry_config.path);need(geometry_config["arm"].IsSequence()&&geometry_config["arm"].size()<=16,"bounded warmup arm primitives");for(const auto& arm:geometry_config["arm"])need(bound(arm["file"].as<std::string>()),"warmup convex asset must be pinned");
+   const auto task=YAML::LoadFile(spec.task_reference.path);need(task["start"].size()==3&&task["quaternion_xyzw"].size()==4,"declared path initial pose shape");Eigen::Vector3d start;Eigen::Vector4d quat;for(int j=0;j<3;++j)start(j)=task["start"][j].as<double>();for(int j=0;j<4;++j)quat(j)=task["quaternion_xyzw"][j].as<double>();need(start.allFinite()&&quat.allFinite()&&std::abs(quat.norm()-1)<=1e-10,"finite task start pose");const auto desired=predictive_motion::poseFromXyzw(start,quat);
+   need(task["end"].size()==3,"pinned full path endpoint shape");actual_task_path_.start=start;actual_task_path_.quaternion_xyzw=quat;for(int j=0;j<3;++j)actual_task_path_.end(j)=task["end"][j].as<double>();actual_task_path_.lateral_amplitude=task["lateral_amplitude"].as<double>();actual_task_path_.vertical_amplitude=task["vertical_amplitude"].as<double>();need(actual_task_path_.end.allFinite()&&std::isfinite(actual_task_path_.lateral_amplitude)&&std::isfinite(actual_task_path_.vertical_amplitude),"finite pinned full task curve");actual_task_path_bound_=true;
+-  warmup_robot_=std::make_unique<predictive_motion::RobotKinematics>(definition);warmup_geometry_=std::make_unique<predictive_motion::geometry::Scene>(spec.geometry_config.path);geometry_pin_=spec.geometry_config;provider_geometry_=std::make_unique<phase5_geometry_provider_counted_v2::CountedScene>(geometry_pin_.path,provider_geometry_counts_);
++  warmup_robot_=std::make_unique<predictive_motion::RobotKinematics>(definition);warmup_geometry_=std::make_unique<predictive_motion::geometry::Scene>(spec.geometry_config.path);geometry_pin_=spec.geometry_config;provider_geometry_=std::make_unique<phase5_geometry_provider_counted_v2::CountedScene>(geometry_pin_.path,provider_geometry_counts_,scope_);
+   // Maximum root-to-link translation-chain sum; sibling accelerometer
+   // branches must not be concatenated into a fictitious serial chain.
+   boost::property_tree::ptree urdf;boost::property_tree::read_xml(definition.urdf,urdf);struct Edge{std::string parent;double length;};std::map<std::string,Edge> edges;int rotational=0;
