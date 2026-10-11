@@ -1,0 +1,8 @@
+{
+  "planned_cycles": 128,
+  "completed_commits": 111,
+  "first_failed_cycle": 112,
+  "failure_before_native_solver_candidateB_or_physicalC": true,
+  "buffer_fault_coverage": "normal, std exceptions, RLIMIT file-size actual partial syscall; nonstd/hardkill/SHA internal failures not tested in39; nonstd repaired and tested only prospective40",
+  "helper_failures": "guard-basis parser field offsets incorrect twice then repaired; link40 preparer quoting syntax and missing dispatch file then repaired; no native calls during these failures"
+}

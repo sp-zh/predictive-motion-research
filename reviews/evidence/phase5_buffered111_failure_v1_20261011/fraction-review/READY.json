@@ -1,0 +1,49 @@
+{
+  "schema": "ROOT_HINT_FRACTION_REVIEW_READY_V1",
+  "immutable": true,
+  "files": [
+    {
+      "path": "RESULT.json",
+      "bytes": 615,
+      "sha256": "def91104d707f713175e8ac334be827d6c35f04b2a509d4c2a07fc7ad9077b50"
+    },
+    {
+      "path": "REVIEW.md",
+      "bytes": 3388,
+      "sha256": "d3e7dd1ad19ff5df1f622419a3f49f2062a80b903f48b82a87825036c7c8b0fb"
+    },
+    {
+      "path": "SOURCE_IDENTITY.json",
+      "bytes": 270,
+      "sha256": "f732826c5f89b619abeae134ac5e6213f8d5e67644ac83a205fe2f5bbe3e6a6b"
+    },
+    {
+      "path": "SOURCE_SNAPSHOT.hpp",
+      "bytes": 4718,
+      "sha256": "bb935c5cbc1c3a09717142947d285b8f2009fe8ae8e47d433703dc815a322972"
+    },
+    {
+      "path": "WITNESSES.json",
+      "bytes": 4872,
+      "sha256": "0e997b54d1c2eb6936d3ba19e875f4db5bae80225d507317165db7558c32830c"
+    },
+    {
+      "path": "WRITER_FRACTION_FORENSICS40A.stdout",
+      "bytes": 549,
+      "sha256": "f8091bcdbe352fee5f8d7f37a23884f041ab32f7d5861a1beb71b8e0e2675cc5"
+    },
+    {
+      "path": "WRITER_REPLAY_SCALAR_CHECK.json",
+      "bytes": 1031,
+      "sha256": "fb312cc52823af7d2f8d680b9abf0f0fd4bceb4836103a09199de0eb8d25a92f"
+    },
+    {
+      "path": "row_fraction_witnesses.py",
+      "bytes": 3091,
+      "sha256": "9f1f26444638beeda404beb784d3bdfff302fe3d890cf4b10bc63bd11246e08c"
+    }
+  ],
+  "payload_count": 8,
+  "payload_bytes": 18534,
+  "scope": "read-only source plus bounded scalar arithmetic; no native/model/optimizer/compiler/SSH"
+}

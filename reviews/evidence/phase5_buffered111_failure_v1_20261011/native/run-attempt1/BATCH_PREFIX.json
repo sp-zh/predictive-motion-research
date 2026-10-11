@@ -1,0 +1,65 @@
+{
+  "records": [
+    {
+      "kind": "compile",
+      "index": 1,
+      "argv": [
+        "/home/codextransfer/predictive_motion/results/phase5/session-nonzero-progress-128cycle-buffered-v1-20261011-attempt39/link-attempt1/active_first_cycle",
+        "/home/codextransfer/predictive_motion/results/phase5/session-nonzero-progress-128cycle-buffered-v1-20261011-attempt39/profile-version1/active_input.json",
+        "aeae7ba83b3b3db81aa51b319a8dd10270d12dd6c1ecfe59ea9b84686e4ccbd5",
+        "4b63ef96ced141d01aa3369981dcd2aff0774fc1a51cb2a704a10726821cb82e",
+        "/home/codextransfer/predictive_motion/results/phase5/session-nonzero-progress-128cycle-buffered-v1-20261011-attempt39/run-attempt1/artifacts"
+      ],
+      "stage": "CHILD_EXIT_REAPED",
+      "actual_project_tool_entry": "Popen dispatched fresh active executable; native scope requires its retained artifacts",
+      "exit": 1,
+      "first_error": null,
+      "applied_limits": {
+        "CPU": {
+          "inherited_soft": -1,
+          "inherited_hard": -1,
+          "applied_soft": 1200,
+          "applied_hard": 1200
+        },
+        "AS": {
+          "inherited_soft": -1,
+          "inherited_hard": -1,
+          "applied_soft": 4294967296,
+          "applied_hard": 4294967296
+        },
+        "CORE": {
+          "inherited_soft": 0,
+          "inherited_hard": -1,
+          "applied_soft": 0,
+          "applied_hard": 0
+        },
+        "FSIZE": {
+          "inherited_soft": -1,
+          "inherited_hard": -1,
+          "applied_soft": 268435456,
+          "applied_hard": 268435456
+        },
+        "NOFILE": {
+          "inherited_soft": 1024,
+          "inherited_hard": 1048576,
+          "applied_soft": 64,
+          "applied_hard": 64
+        },
+        "NPROC": {
+          "inherited_soft": 63295,
+          "inherited_hard": 63295,
+          "applied_soft": 32,
+          "applied_hard": 32
+        }
+      },
+      "observed_stream_bytes": {
+        "stdout": 154,
+        "stderr": 0
+      },
+      "stop_reason": null,
+      "wall_seconds": 396.043019966
+    }
+  ],
+  "complete": false,
+  "native_project_entry_dispatches": 1
+}

@@ -1,0 +1,61 @@
+{
+  "entry": {
+    "role": "ACTIVE_SESSION_FINAL_SCOPE_AND_TIMING",
+    "stage": "FRESH_CURRENT_MATRIX_HINT_AND_NATIVE_SOLVER",
+    "error": "invalid feasible-current boundary fraction",
+    "boundary_unchanged": 0,
+    "session_termination_pass": 1,
+    "session_termination_error": "",
+    "native_termination_pass": 1,
+    "native_termination_error": "",
+    "entry_wall_seconds": 395.993046236,
+    "total_physical_step_attempts": 1222,
+    "commits": 111,
+    "native_facts": {
+      "load_xml": 1,
+      "make_data": 2,
+      "reset": 1,
+      "forward": 1449,
+      "copy": 1447,
+      "get_state": 3340,
+      "observations": 225,
+      "step": 1222,
+      "commits": 111
+    }
+  },
+  "completed_commits": 111,
+  "B_complete_samples": 44400,
+  "C_actual_substeps": 222,
+  "logical_task_duration_s": 0.444,
+  "first_failed_cycle_zero_based": 111,
+  "first_failure": "invalid feasible-current boundary fraction",
+  "failed_before_native_OSQP_B_C": true,
+  "unchanged_prefix32_numerical_control_states_SI_rows_bit_values": true,
+  "task": {
+    "actual_points": 222,
+    "maximum_translation_error_m": 0.004983813754281087,
+    "maximum_rotation_angle_rad": 0.005484439586667381,
+    "final_s": 0.013552235131715128,
+    "final_r": 0.04736583406910642,
+    "scope": "recorded actual2ms native scratch worldTCP poses vsprivatepinnedTd atlogical controllerprogress; Euclideanworldposition/SO3angle, notSE3logtranslation; nofulltask/stop/phaseacceptance"
+  },
+  "maximum_original_SI_violation": 1.0001721673091879e-13,
+  "maximum_actual_jerk": 0.35861552982410394,
+  "cycle_wall_mean_completed_s": 3.4142187145675678,
+  "cycle_wall_min_completed_s": 3.209057553,
+  "cycle_wall_max_completed_s": 4.758761165,
+  "deadline_miss_completed": 111,
+  "codec_mean_all112_s": 0.11644128929464286,
+  "codec_mean_original38_s": 1.7014412165625,
+  "prefix32_codec_mean39_s": 0.11352374109374999,
+  "last_completed_ledger": {
+    "completed_commits": 111,
+    "forecast_budget_reservations": 222,
+    "step_budget_reservations": 222,
+    "original_session_charged_slots": 483992849,
+    "separate_logical_reserved_slots": 989943843
+  },
+  "phase5": "NOT_ACCEPTED",
+  "phase6": "NOT_STARTED",
+  "scope": "Buffered111 current commits + failed112th current hint. Planned128 incomplete; not full path or physical stop. Same first32 numerical controls/states/SI rows checked exact; timing comparison development only."
+}

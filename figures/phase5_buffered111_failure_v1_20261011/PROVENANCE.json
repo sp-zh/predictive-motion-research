@@ -1,0 +1,56 @@
+{
+  "schema": "ROOT_ACTUAL39_RETAINED_FIGURE_PROVENANCE_V1",
+  "producer_READY_sha256": "c6644a447c754422a76c85a27a51f4159cee82298c7cd20350ddc52579380ad4",
+  "run": "singleconsumed39:111completed/failed112, planned128incomplete",
+  "seed": 91011,
+  "criteria": "Allsuccessfulprefixpointsandfirstfailureexplicit, nofilteringofthisrun. Earlierandcurrentfailurespreservedfullarchive; no taskcompletevideo/researchranking.",
+  "source": "ProducerexactJSON/nativeactualworldTCP/SO3/111timings+112inclusivefine intervals; Rootrendererusesunchangednumericinputs, replacesonlytextpositions/legend andMac cache/resource setup",
+  "files": {
+    "PRODUCER_RENDER_RECEIPT.json": {
+      "bytes": 491,
+      "sha256": "9bffeeb9a966489455371a8c33dd3f6fb9c89c1535f18818650360f0e11b7d9c"
+    },
+    "ROOT_RENDER_RECEIPT.json": {
+      "bytes": 492,
+      "sha256": "3cbe8125b0d77afdd09e44c2b0183301e7db91d37b2f22f3cfb432718dd8be0b"
+    },
+    "VISUAL_QA.json": {
+      "bytes": 806,
+      "sha256": "bb87c7a71c136e7e48132a3f2935dc8846e7a901f16bd90aa2364e5edfa4a3c0"
+    },
+    "buffered111_failure_diagnostic.png": {
+      "bytes": 217443,
+      "sha256": "a91f805414167928c99fa17c8fc4e34f9618e1e9b400162103d0bba8f38139f3"
+    },
+    "buffered111_tcp_prefix.png": {
+      "bytes": 198030,
+      "sha256": "ceb685e14989fd6197c359aa95962b4ab38424dc49b8aded8111ade3b12579a8"
+    },
+    "fine.json": {
+      "bytes": 1489,
+      "sha256": "47a2180e93226cf64aba2ab6efbd4989895865b3e8c169b4f4724d47bf3e58c1"
+    },
+    "functional.json": {
+      "bytes": 2405,
+      "sha256": "1dfbe031c2d176f52c4411199d6b5418b0cec54f83fe291ba9cf3a927a7ce68e"
+    },
+    "native.json": {
+      "bytes": 295950,
+      "sha256": "c5c857a6ac468c4e1728ace6ebc2e3fff80da493e3c412dfbc3fef5ccb9a4940"
+    },
+    "producer_plot.py": {
+      "bytes": 4364,
+      "sha256": "bb606ead6404ab58c2b1e3d88a631d26f469c8fd0709e5095162c84e28801c53"
+    },
+    "render.py": {
+      "bytes": 4236,
+      "sha256": "0de04467868a9a0c5c74ceed4a58aff2a9403b6f68776cce5f7ccfb9427a5ded"
+    },
+    "task_points.json": {
+      "bytes": 283812,
+      "sha256": "87860e003c5b23912a6b0c4c10d49e244ceec77c0a3a5d84eeb680dd482b11d1"
+    }
+  },
+  "validation": "scientificstaticPNG160dpi visuallyinspected; no nativeModel/Scene/tasksteps",
+  "scope": "444ms,progress1.3552235%; nofulltask/physicalstop/realtime/hardware/phaseacceptance. Nestedfine spans overlap and cannotbeadded; 112timingdenominatorincludesfailedcycle."
+}

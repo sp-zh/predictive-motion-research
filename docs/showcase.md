@@ -68,6 +68,13 @@ This image depicts the integrated scene; it is not a predictive-control result.
 
 ## Simulation and diagnostic figures
 
+![Buffered111 prefix, retained112th refusal and original timing gates](../figures/phase5_buffered111_failure_v1_20261011/buffered111_failure_diagnostic.png)
+
+![222 actual TCP measurements against the task reference](../figures/phase5_buffered111_failure_v1_20261011/buffered111_tcp_prefix.png)
+
+Attempt39 completes444ms with1.3552235% normalized progress, then refuses in cycle112 before native solver/B/C. Original TCP gates pass on222samples; every111 complete4ms deadline misses. Inclusive timing bars use112attempts and overlap. Root adjusted labels and legend placement using unchanged retained inputs; originalproducer and firstRootlayout remain archived. [Figure provenance](../figures/phase5_buffered111_failure_v1_20261011/PROVENANCE.json), [independent failure-chain review](../reviews/evidence/phase5_buffered111_failure_v1_20261011/independent/REVIEW.md). No fulltask/stop/video/phase acceptance.
+
+
 ![32 genuine current cycles: progress, accuracy and timing](../figures/phase5_nonzero_32cycle_actual_v1_20261011/actual32_diagnostic.png)
 
 ![64 actual recorded TCP poses against the task reference](../figures/phase5_nonzero_32cycle_actual_v1_20261011/actual32_tcp_prefix.png)

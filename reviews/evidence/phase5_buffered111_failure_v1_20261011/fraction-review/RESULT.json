@@ -1,0 +1,14 @@
+{
+  "verdict": "CONFIRMED_SOURCE_NUMERICAL_MISMATCH_AND_SAVED_REPLAY_SCALAR_AGREEMENT",
+  "source_sha256": "bb935c5cbc1c3a09717142947d285b8f2009fe8ae8e47d433703dc815a322972",
+  "synthetic_scalar_cases": 8,
+  "saved_writer_replay_scalar_agrees_exactly": true,
+  "full_actual39_provenance_verified": false,
+  "repair_implemented_or_executed_by_reviewer": false,
+  "threshold_changes_recommended": false,
+  "scope": "read-only source plus bounded scalar arithmetic; no native/model/optimizer/compiler/SSH",
+  "pending": [
+    "sealed39 full fixture/provenance audit",
+    "writer repair and regression evidence"
+  ]
+}
