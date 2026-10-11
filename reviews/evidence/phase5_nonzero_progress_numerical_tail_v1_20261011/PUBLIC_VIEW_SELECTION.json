@@ -1,0 +1,27 @@
+{
+  "failure33-34": {
+    "all_payloads_verified": 204,
+    "READY_sha256": "b7cb0a224b0eb2432397ed0e17283453fa0ce50ad8fc021949d55ca5092205ee",
+    "public_selected": 200,
+    "omitted_large_raw_or_cache": [
+      "actual-dell/full144-ieee-terminal-pure-v1-20261011-attempt34/original-fixture-v1/original_input.bin",
+      "actual-dell/session-nonzero-progress-geometry-three-cycle-v1-20261011-attempt33/pure144-fixture-v2/INPUTS.npz",
+      "actual-dell/session-nonzero-progress-geometry-three-cycle-v1-20261011-attempt33/pure144-fixture-v2/input.bin",
+      "actual_collection.tar.gz"
+    ]
+  },
+  "pure35": {
+    "all_payloads_verified": 36,
+    "READY_sha256": "dfdc8f4e1f774d0a78b9d9797a1c543ef13a722f4c734bea79bf637375816f54",
+    "public_selected": 35,
+    "omitted_large_raw_or_cache": [
+      "original_input.bin"
+    ]
+  },
+  "independent36-pure35": {
+    "all_payloads_verified": 48,
+    "READY_sha256": "23c802ada8e4309f3ab592a0be5ff30ef46912d5117fe86703c7e949fe4df7fa",
+    "public_selected": 48,
+    "omitted_large_raw_or_cache": []
+  }
+}

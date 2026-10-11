@@ -1,0 +1,79 @@
+/home/codextransfer/predictive_motion/results/phase5/session-nonzero-progress-geometry-three-cycle-v1-20261011-attempt33/src/affine_assembly.cpp: In function 'double phase5_active_session_v1::{anonymous}::coordinate(const phase5_public_live_affine_v2::State30&, phase5_public_live_affine_v2::Count)':
+/home/codextransfer/predictive_motion/results/phase5/session-nonzero-progress-geometry-three-cycle-v1-20261011-attempt33/src/affine_assembly.cpp:20:3: warning: this 'if' clause does not guard... [-Wmisleading-indentation]
+   20 |   if(j<7)return s.q[j];if(j<14)return s.v[j-7];if(j<21)return s.C[j-14];if(j<28)return s.w[j-21];return j==28?s.s:s.r;
+      |   ^~
+/home/codextransfer/predictive_motion/results/phase5/session-nonzero-progress-geometry-three-cycle-v1-20261011-attempt33/src/affine_assembly.cpp:20:24: note: ...this statement, but the latter is misleadingly indented as if it were guarded by the 'if'
+   20 |   if(j<7)return s.q[j];if(j<14)return s.v[j-7];if(j<21)return s.C[j-14];if(j<28)return s.w[j-21];return j==28?s.s:s.r;
+      |                        ^~
+/home/codextransfer/predictive_motion/results/phase5/session-nonzero-progress-geometry-three-cycle-v1-20261011-attempt33/src/affine_assembly.cpp: In static member function 'static void phase5_active_session_v1::detail::AffineFactory::compact(phase5_active_session_v1::detail::AffineStorage&, const phase5_public_live_affine_v2::State30&)':
+/home/codextransfer/predictive_motion/results/phase5/session-nonzero-progress-geometry-three-cycle-v1-20261011-attempt33/src/affine_assembly.cpp:108:11: warning: this 'if' clause does not guard... [-Wmisleading-indentation]
+  108 |           if(col>=8*k&&col<8*(k+1))value+=cell.B()(row,col-8*k);finite(value);p.M(k+1,row,col)=value;++p.trace.written[2];}
+      |           ^~
+/home/codextransfer/predictive_motion/results/phase5/session-nonzero-progress-geometry-three-cycle-v1-20261011-attempt33/src/affine_assembly.cpp:108:65: note: ...this statement, but the latter is misleadingly indented as if it were guarded by the 'if'
+  108 |           if(col>=8*k&&col<8*(k+1))value+=cell.B()(row,col-8*k);finite(value);p.M(k+1,row,col)=value;++p.trace.written[2];}
+      |                                                                 ^~~~~~
+/home/codextransfer/predictive_motion/results/phase5/session-nonzero-progress-geometry-three-cycle-v1-20261011-attempt33/src/affine_assembly.cpp:110:11: warning: this 'for' clause does not guard... [-Wmisleading-indentation]
+  110 |           for(Count j=0;j<30;++j)product(cell.A()(row,j),p.P(k,j,col),value);p.P(k+1,row,col)=value;++p.trace.written[3];}
+      |           ^~~
+/home/codextransfer/predictive_motion/results/phase5/session-nonzero-progress-geometry-three-cycle-v1-20261011-attempt33/src/affine_assembly.cpp:110:78: note: ...this statement, but the latter is misleadingly indented as if it were guarded by the 'for'
+  110 |           for(Count j=0;j<30;++j)product(cell.A()(row,j),p.P(k,j,col),value);p.P(k+1,row,col)=value;++p.trace.written[3];}
+      |                                                                              ^
+/home/codextransfer/predictive_motion/results/phase5/session-nonzero-progress-geometry-three-cycle-v1-20261011-attempt33/src/affine_assembly.cpp:115:9: warning: this 'for' clause does not guard... [-Wmisleading-indentation]
+  115 |         for(Count col=0;col<30;++col)product(p.P(k,j,col),p.work()[col],value);p.t(row)=value;++p.trace.written[4];
+      |         ^~~
+/home/codextransfer/predictive_motion/results/phase5/session-nonzero-progress-geometry-three-cycle-v1-20261011-attempt33/src/affine_assembly.cpp:115:80: note: ...this statement, but the latter is misleadingly indented as if it were guarded by the 'for'
+  115 |         for(Count col=0;col<30;++col)product(p.P(k,j,col),p.work()[col],value);p.t(row)=value;++p.trace.written[4];
+      |                                                                                ^
+/home/codextransfer/predictive_motion/results/phase5/session-nonzero-progress-geometry-three-cycle-v1-20261011-attempt33/src/affine_assembly.cpp: In static member function 'static void phase5_active_session_v1::detail::AffineFactory::sample(phase5_active_session_v1::detail::AffineStorage&, phase5_public_live_affine_v2::Count)':
+/home/codextransfer/predictive_motion/results/phase5/session-nonzero-progress-geometry-three-cycle-v1-20261011-attempt33/src/affine_assembly.cpp:133:9: warning: this 'if' clause does not guard... [-Wmisleading-indentation]
+  133 |         if(col>=8*k&&col<8*(k+1))m+=view.B()(row,col-8*k);finite(m);work[90+mul(row,p.du)+col]=m;++p.trace.written[7];}
+      |         ^~
+/home/codextransfer/predictive_motion/results/phase5/session-nonzero-progress-geometry-three-cycle-v1-20261011-attempt33/src/affine_assembly.cpp:133:59: note: ...this statement, but the latter is misleadingly indented as if it were guarded by the 'if'
+  133 |         if(col>=8*k&&col<8*(k+1))m+=view.B()(row,col-8*k);finite(m);work[90+mul(row,p.du)+col]=m;++p.trace.written[7];}
+      |                                                           ^~~~~~
+/home/codextransfer/predictive_motion/results/phase5/session-nonzero-progress-geometry-three-cycle-v1-20261011-attempt33/src/affine_assembly.cpp:135:9: warning: this 'for' clause does not guard... [-Wmisleading-indentation]
+  135 |         for(Count j=0;j<30;++j)product(view.A()(row,j),p.P(k,j,col),m);work[90+mul(30,p.du)+mul(row,30)+col]=m;++p.trace.written[8];}
+      |         ^~~
+/home/codextransfer/predictive_motion/results/phase5/session-nonzero-progress-geometry-three-cycle-v1-20261011-attempt33/src/affine_assembly.cpp:135:72: note: ...this statement, but the latter is misleadingly indented as if it were guarded by the 'for'
+  135 |         for(Count j=0;j<30;++j)product(view.A()(row,j),p.P(k,j,col),m);work[90+mul(30,p.du)+mul(row,30)+col]=m;++p.trace.written[8];}
+      |                                                                        ^~~~
+/home/codextransfer/predictive_motion/results/phase5/session-nonzero-progress-geometry-three-cycle-v1-20261011-attempt33/src/affine_assembly.cpp: In static member function 'static void phase5_active_session_v1::detail::AffineFactory::denseAudit(phase5_active_session_v1::detail::AffineStorage&)':
+/home/codextransfer/predictive_motion/results/phase5/session-nonzero-progress-geometry-three-cycle-v1-20261011-attempt33/src/affine_assembly.cpp:149:9: warning: this 'if' clause does not guard... [-Wmisleading-indentation]
+  149 |         if(k>0&&col/30==k-1)v=-source.cells().at(k-1).A()(r,col%30);p.L(row,col)=v;++p.trace.written[10];}
+      |         ^~
+/home/codextransfer/predictive_motion/results/phase5/session-nonzero-progress-geometry-three-cycle-v1-20261011-attempt33/src/affine_assembly.cpp:149:69: note: ...this statement, but the latter is misleadingly indented as if it were guarded by the 'if'
+  149 |         if(k>0&&col/30==k-1)v=-source.cells().at(k-1).A()(r,col%30);p.L(row,col)=v;++p.trace.written[10];}
+      |                                                                     ^
+/home/codextransfer/predictive_motion/results/phase5/session-nonzero-progress-geometry-three-cycle-v1-20261011-attempt33/src/affine_assembly.cpp:184:11: warning: this 'if' clause does not guard... [-Wmisleading-indentation]
+  184 |           if(col>=p.dx&&(col-p.dx)/8==cell)value=v.B()(row,(col-p.dx)%8);p.selector(index,row,col)=value;++p.trace.written[17];}
+      |           ^~
+/home/codextransfer/predictive_motion/results/phase5/session-nonzero-progress-geometry-three-cycle-v1-20261011-attempt33/src/affine_assembly.cpp:184:74: note: ...this statement, but the latter is misleadingly indented as if it were guarded by the 'if'
+  184 |           if(col>=p.dx&&(col-p.dx)/8==cell)value=v.B()(row,(col-p.dx)%8);p.selector(index,row,col)=value;++p.trace.written[17];}
+      |                                                                          ^
+/home/codextransfer/predictive_motion/results/phase5/session-nonzero-progress-geometry-three-cycle-v1-20261011-attempt33/src/affine_assembly.cpp:190:13: warning: this 'if' clause does not guard... [-Wmisleading-indentation]
+  190 |             if(col>=8*cell&&col<8*(cell+1))m+=v.B()(row,col-8*cell);finite(m);p.sM(eliminated,index,row,col)=m;++p.trace.written[19+static_cast<Count>(eliminated)*3];}
+      |             ^~
+/home/codextransfer/predictive_motion/results/phase5/session-nonzero-progress-geometry-three-cycle-v1-20261011-attempt33/src/affine_assembly.cpp:190:69: note: ...this statement, but the latter is misleadingly indented as if it were guarded by the 'if'
+  190 |             if(col>=8*cell&&col<8*(cell+1))m+=v.B()(row,col-8*cell);finite(m);p.sM(eliminated,index,row,col)=m;++p.trace.written[19+static_cast<Count>(eliminated)*3];}
+      |                                                                     ^~~~~~
+/home/codextransfer/predictive_motion/results/phase5/session-nonzero-progress-geometry-three-cycle-v1-20261011-attempt33/src/affine_assembly.cpp: In member function 'std::string_view phase5_active_session_v1::CompactAffineAssembly::refusal() const':
+/home/codextransfer/predictive_motion/results/phase5/session-nonzero-progress-geometry-three-cycle-v1-20261011-attempt33/src/affine_assembly.cpp:267:3: warning: this 'if' clause does not guard... [-Wmisleading-indentation]
+  267 |   if(storage_&&!storage_->anchor->normalization.hasFullNominalMaps())return storage_->anchor->normalization.refusal();return {};
+      |   ^~
+/home/codextransfer/predictive_motion/results/phase5/session-nonzero-progress-geometry-three-cycle-v1-20261011-attempt33/src/affine_assembly.cpp:267:119: note: ...this statement, but the latter is misleadingly indented as if it were guarded by the 'if'
+  267 |   if(storage_&&!storage_->anchor->normalization.hasFullNominalMaps())return storage_->anchor->normalization.refusal();return {};
+      |                                                                                                                       ^~~~~~
+/home/codextransfer/predictive_motion/results/phase5/session-nonzero-progress-geometry-three-cycle-v1-20261011-attempt33/src/affine_assembly.cpp: In member function 'const phase5_public_live_affine_v2::ResourcePlan& phase5_active_session_v1::AffineAssemblyOutcome::capturePlan() const':
+/home/codextransfer/predictive_motion/results/phase5/session-nonzero-progress-geometry-three-cycle-v1-20261011-attempt33/src/affine_assembly.cpp:297:3: warning: this 'if' clause does not guard... [-Wmisleading-indentation]
+  297 |   if(assembly_&&assembly_->storage_)return assembly_->storage_->plan;if(failed_)return failed_->plan;
+      |   ^~
+/home/codextransfer/predictive_motion/results/phase5/session-nonzero-progress-geometry-three-cycle-v1-20261011-attempt33/src/affine_assembly.cpp:297:70: note: ...this statement, but the latter is misleadingly indented as if it were guarded by the 'if'
+  297 |   if(assembly_&&assembly_->storage_)return assembly_->storage_->plan;if(failed_)return failed_->plan;
+      |                                                                      ^~
+/home/codextransfer/predictive_motion/results/phase5/session-nonzero-progress-geometry-three-cycle-v1-20261011-attempt33/src/affine_assembly.cpp: In member function 'phase5_public_live_affine_v2::SharedCaseBudget phase5_active_session_v1::AffineAssemblyOutcome::captureBudget() const':
+/home/codextransfer/predictive_motion/results/phase5/session-nonzero-progress-geometry-three-cycle-v1-20261011-attempt33/src/affine_assembly.cpp:301:3: warning: this 'if' clause does not guard... [-Wmisleading-indentation]
+  301 |   if(assembly_&&assembly_->storage_)return assembly_->storage_->budget->share();if(failed_)return failed_->budget->share();
+      |   ^~
+/home/codextransfer/predictive_motion/results/phase5/session-nonzero-progress-geometry-three-cycle-v1-20261011-attempt33/src/affine_assembly.cpp:301:81: note: ...this statement, but the latter is misleadingly indented as if it were guarded by the 'if'
+  301 |   if(assembly_&&assembly_->storage_)return assembly_->storage_->budget->share();if(failed_)return failed_->budget->share();
+      |                                                                                 ^~

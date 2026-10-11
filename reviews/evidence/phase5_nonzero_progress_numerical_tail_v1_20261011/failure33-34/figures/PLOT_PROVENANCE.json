@@ -1,0 +1,24 @@
+{
+  "schema": "FULL144_PURE_REFUSED_TAIL_PLOT_V1",
+  "inputs": {
+    "cpp_oracle.stdout": "9375c3569e9e9afb2434cdc307942d8b97547784de49cf05110b14cf1e309a21",
+    "numpy_analysis.json": "56fa327f009d9b8c18821cc7f9f3bb87b6895d1a0759c32fb6485e39f282f410"
+  },
+  "outputs": {
+    "full144_progress_refused_tail.png": {
+      "bytes": 224351,
+      "sha256": "75cd825c4376ac8e79cf5d2dd053a97596258b56cdfb3125f8e08aeea332bee5"
+    },
+    "full144_progress_refused_tail.svg": {
+      "bytes": 109850,
+      "sha256": "a1f583a6465691c53b79fc07eec08cece6b26d9486100a71fafa6faa2a83ca42"
+    },
+    "LOGICAL_HALF_PROGRESS.json": {
+      "bytes": 30573,
+      "sha256": "fcfd9de0ea987c563731a84eec2d3c981a4f0b4c1e78964a1eb54f5c2d56c428"
+    }
+  },
+  "matplotlib_version": "3.6.3",
+  "scope": "all400 pure logical references from saved34 numerical U, both strictterminal failures; actual motion not plotted",
+  "new_Model_or_MuJoCo_entries": 0
+}

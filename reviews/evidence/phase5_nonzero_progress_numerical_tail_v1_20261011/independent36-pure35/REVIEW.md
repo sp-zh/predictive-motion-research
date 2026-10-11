@@ -1,0 +1,21 @@
+# Independent final36 / pure35 review
+
+**PASS for the disclosed source repair and concrete saved-input arithmetic. No concrete blocker to Root's separately pinned, scoped fresh36 decision was found.** This review issues no runtime approval and establishes no model/plant/task/stop/realtime/Phase5 acceptance.
+
+Finalsource36 READY `93448302a7db20487babd926f980257686278b750a13916d6d8fe804cebe3eb1`: all39 payloads /455,098B verified and copied readonly. Pure35 READY `dfdc8f4e1f774d0a78b9d9797a1c543ef13a722f4c734bea79bf637375816f54`: all36 payloads /19,985,699B verified. Its original_input.bin SHA `896943953327260fdf3c7dbc1f337b90e2d4a013bf6a8fa28c37f1d43d32139c` contains H/g/A/l/u/E/rhs/seed/retained rows exactly matching saved actual30 cycle0. No new optimizer, compiler, Model, native, FK, Scene or SSH call was made.
+
+`src/integrated_horizon_qp.cpp:1016–1026` keeps original E/rhs, adds a separate planning_rhs with only element15 (terminal progress-r) increased by1e-13 1/s, and rebuilds p before transforming cost/bounds/scales/seed. Z remains full160×144. Original-E origin/map checks remain1e-12; native SOLVED, all14,756 original SI rows (1e-7), all200 literal histories/400 progress references, genuine candidate-value, B400, privateC and actual10mm/.05rad gates remain unchanged. There is no posthoc clamp, tolerance change or substitution of stale states/maps. New reduction V2 serializes original and planning rhs separately; planning-guard V3 serializes the target; stage/text explicitly deny exact E0 equivalence.
+
+This is an affine **biased planning space**, not an exact elimination of the original terminal-r=0 equality and not an exact subset of that equality-feasible set. Original toleranced residual acceptance is still checked independently. Positive tail must remain visible; it is not stopped progress, an infinite zero-tail continuation, a physical-stop certificate or original-QP optimality. Actual strict-history gates remain authoritative on every fresh replan; this finite rounding margin does not prove unseen prefixes feasible.
+
+Independent checker parsed the recorded U for each predeclared pure35 case, rebuilt original SI and Ep-rhs, and replayed all200 accepted-command recurrences plus200 progress recurrences and400 cell-origin references. It independently accumulated exact Fraction per-operation binary64 rounding errors and propagated initial/cell-clock errors. The producer's bound script was read but not imported or executed. All stored clocks and outputs matched the independently ordered arithmetic exactly; concrete operations satisfy normal finite binary64 rounding bounds (compile record uses fno-fast-math/ffp-contract=off).
+
+| Saved pure case | terminal r | progress updates valid | references valid | original SI max |
+|---|---:|---:|---:|---:|
+|0|−1.6994869053710282e−17|159/200|319/400|2.168404344971009e−18|
+|1e−18|−2.0464316005663896e−17|159/200|319/400|5.759824041329242e−20|
+|1e−13|1.000306337328033e−13|200/200|400/400|1.0000008633659352e−13|
+
+All3 command-history derivative/speed checks and progress acceleration/jerk checks passed; zero/reduced progress-domain failures remain preserved. The planning case's independent exact-rational terminal-distance bound is recorded in INDEPENDENT_PURE_RESULT.json; its certified lower is9.996040441921434e−14>0, and original Ep-rhs is≤unchanged1e−12. Both failures show that small original SI residual alone does not imply strict nonnegative progress. All400 reference bounds per case are exported as CSV, labelled pure arithmetic.
+
+Only active entry/core/header differ from reviewed33. Runtime observer, physical limits, actual task-metric pose/validity/partial flags, candidate validation, normalization/affine assembly and actual transactional publication are byte-identical. Root's separate profile/ELF/SDK/passive-pin proof is not recreated here. Recorded pure U is not a native accepted candidate; KKT/hint records are not independent native or physical evidence. The saved30 fixture cannot establish genuine36 forecast accuracy or successful nonzero task execution. Full144/small-alpha/progress-jerk subset and three-cycle limits remain; every future actual gate and retained failure applies.

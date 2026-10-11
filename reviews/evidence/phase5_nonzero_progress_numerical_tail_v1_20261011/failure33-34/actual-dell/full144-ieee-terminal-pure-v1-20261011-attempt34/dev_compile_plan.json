@@ -1,0 +1,53 @@
+{
+  "schema": "ACTIVE_SESSION_PILOT_BC_COMPILE_V1",
+  "output_directory": "/home/codextransfer/predictive_motion/results/phase5/full144-ieee-terminal-pure-v1-20261011-attempt34/build-attempt1",
+  "env": {
+    "PATH": "/usr/bin:/bin",
+    "LANG": "C",
+    "LC_ALL": "C",
+    "TZ": "UTC"
+  },
+  "input_files": [
+    {
+      "requested_path": "/home/codextransfer/predictive_motion/results/phase5/full144-ieee-terminal-pure-v1-20261011-attempt34/src/progress_numeric_forensics.cpp",
+      "bytes": 4754,
+      "sha256": "df7b50ef95f3de4177fcf6d26fedeff7c53abccb058393561b26733d372281a9"
+    },
+    {
+      "requested_path": "/home/codextransfer/predictive_motion/results/phase5/full144-ieee-terminal-pure-v1-20261011-attempt34/src/current_numeric_guess.hpp",
+      "bytes": 4718,
+      "sha256": "bb935c5cbc1c3a09717142947d285b8f2009fe8ae8e47d433703dc815a322972"
+    }
+  ],
+  "readonly_directory_rosters": [],
+  "compile_argv": [
+    [
+      "/usr/bin/x86_64-linux-gnu-g++-13",
+      "-I",
+      "/home/codextransfer/predictive_motion/results/phase5/full144-ieee-terminal-pure-v1-20261011-attempt34/src",
+      "-I",
+      "/usr/include/eigen3",
+      "-std=c++17",
+      "-O2",
+      "-DNDEBUG",
+      "-fno-fast-math",
+      "-ffp-contract=off",
+      "-Wall",
+      "-Wextra",
+      "-Wpedantic",
+      "-MMD",
+      "-MF",
+      "/home/codextransfer/predictive_motion/results/phase5/full144-ieee-terminal-pure-v1-20261011-attempt34/build-attempt1/unit-1.d",
+      "-c",
+      "/home/codextransfer/predictive_motion/results/phase5/full144-ieee-terminal-pure-v1-20261011-attempt34/src/progress_numeric_forensics.cpp",
+      "-o",
+      "/home/codextransfer/predictive_motion/results/phase5/full144-ieee-terminal-pure-v1-20261011-attempt34/build-attempt1/unit-1.o"
+    ],
+    [
+      "/usr/bin/x86_64-linux-gnu-g++-13",
+      "/home/codextransfer/predictive_motion/results/phase5/full144-ieee-terminal-pure-v1-20261011-attempt34/build-attempt1/unit-1.o",
+      "-o",
+      "/home/codextransfer/predictive_motion/results/phase5/full144-ieee-terminal-pure-v1-20261011-attempt34/build-attempt1/progress_numeric_forensics"
+    ]
+  ]
+}

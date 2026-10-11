@@ -1,0 +1,14 @@
+{
+  "failures": [
+    {
+      "failure": "copytree preserved readonly source directory mode; adding metadata raised EACCES",
+      "repair": "Only new untracked destination directory mode0755 changed, source bytes exact"
+    },
+    {
+      "failure": "Preparing that failure record raised local NameError review; downstream completion helper still succeeded",
+      "repair": "Saved this qualified record after original aggregate was sealed; no source/evidence changes"
+    }
+  ],
+  "archive_qualification": "This record and final public scan/storage records postdate original aggregate",
+  "native_or_immutable_evidence_changed": false
+}

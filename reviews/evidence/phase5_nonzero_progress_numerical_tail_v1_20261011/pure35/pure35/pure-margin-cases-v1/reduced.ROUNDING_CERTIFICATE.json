@@ -1,0 +1,65 @@
+{
+  "case": "reduced",
+  "target": 1e-18,
+  "terminal_r": -2.0464316005663896e-17,
+  "valid_reference_domains": 319,
+  "denominator": 400,
+  "macro_points": 200,
+  "all_operations_within_u_relative_bound": true,
+  "u": "2^-53",
+  "rounding_mode_scope": "Finite concrete normal IEEE operands/outputs from compiled fno-fast-math ff-contract-off saved trial; exact rational per-operation certificates verified; not a universal bound for unseen replans",
+  "macro_r_rounding_charge_bound": {
+    "numerator": "106087726043953532014672971560501373",
+    "denominator": "748288838313422294120286634350736906063837462003712",
+    "upper_float": 1.4177376517210388e-16
+  },
+  "macro_s_rounding_charge_bound": {
+    "numerator": "1526385594026283867990844158612954962571850255923763",
+    "denominator": "6739986666787659948666753771754907668409286105635143120275902562304",
+    "upper_float": 2.264671533473187e-16
+  },
+  "maximum_cell_reference_r_bound": {
+    "numerator": "106087726043953465710427457598374013",
+    "denominator": "748288838313422294120286634350736906063837462003712",
+    "upper_float": 1.417737651721038e-16
+  },
+  "maximum_cell_reference_s_bound": {
+    "numerator": "39522202101924019256358870640766988193458317976527503",
+    "denominator": "215679573337205118357336120696157045389097155380324579848828881993728",
+    "upper_float": 1.832449939064599e-16
+  },
+  "maximum_cell_reference_r_actual_error": {
+    "numerator": "3170392355993878673",
+    "denominator": "83076749736557242056487941267521536",
+    "upper_float": 3.816220983665631e-17
+  },
+  "original_E0_exact_r_residual": {
+    "numerator": "38618653138825777",
+    "denominator": "83076749736557242056487941267521536",
+    "upper_float": 4.648551280748043e-19
+  },
+  "planning_E_exact_r_residual": {
+    "numerator": "121695402875383025",
+    "denominator": "83076749736557242056487941267521536",
+    "upper_float": 1.4648551280748045e-18
+  },
+  "original_E_vs_exact_clock_coefficient_difference": {
+    "numerator": "313880770996462297",
+    "denominator": "41538374868278621028243970633760768",
+    "upper_float": 7.556404697867993e-18
+  },
+  "total_terminal_r_distance_from_target_bound": {
+    "numerator": "112838234079231813129264144785719421",
+    "denominator": "748288838313422294120286634350736906063837462003712",
+    "upper_float": 1.507950249980467e-16
+  },
+  "gamma400_r_rounding_bound": {
+    "numerator": "60633898102225265678991653853187125",
+    "denominator": "46768052394586816463774500715869644430458153336832",
+    "upper_float": 1.2964811446636886e-15
+  },
+  "certified_terminal_r_lower": -1.4979502499804665e-16,
+  "source_stdout_sha256": "59667ca8a1111bbf43aea7aeb8849fca6d2ae8bd806986e06b8b1a582e9d4f3b",
+  "actual_r_tail_zero": false,
+  "new_Model_or_MuJoCo": 0
+}

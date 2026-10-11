@@ -1,0 +1,979 @@
+{
+  "scaled_stationarity_inf": 8.673617379884035e-18,
+  "scaled_violation": 4.336808689942018e-18,
+  "all14756_original_SI_violation": 3.0357660829594124e-18,
+  "original_alpha_max": 0.0009990000000000018,
+  "progress_b": [
+    0.019995999999999996,
+    0.03999199999999999,
+    0.059988000000000034,
+    0.07998400000000004,
+    0.09998000000000005,
+    0.11997600000000004,
+    0.13865647368421052,
+    0.11866047368421054,
+    0.09866447368421054,
+    0.07866847368421054,
+    0.05867247368421059,
+    0.03867647368421059,
+    0.01868047368421054,
+    -0.0013155263157894463,
+    -0.021311526315789437,
+    -0.041307526315789427,
+    -0.05998800000000002,
+    -0.03999200000000002,
+    -0.019995999999999986,
+    0.0
+  ],
+  "progress_jerk_absmax": 4.999000000000012,
+  "first_commit_s": 1.5996799999999997e-07,
+  "first_commit_r": 7.998399999999999e-05,
+  "horizon_s": 0.00499116156799999,
+  "horizon_r": -1.5585406229479126e-17,
+  "halfprogress_ranges": [
+    0.0,
+    0.004991161567999991,
+    -1.5585406229479126e-17,
+    0.014597079999999993
+  ],
+  "strict_progress_failures": [
+    {
+      "cell": 18,
+      "cycle": 27,
+      "half": 2,
+      "s": 0.004991161567999991,
+      "r": -1.5178830414797062e-17,
+      "kind": "halfprogress strict"
+    },
+    {
+      "cell": 18,
+      "cycle": 27,
+      "s": 0.00499116156799999,
+      "r": -1.5585406229479126e-17,
+      "kind": "recursiveprogress strict"
+    },
+    {
+      "cell": 19,
+      "cycle": 0,
+      "half": 1,
+      "s": 0.00499116156799999,
+      "r": -1.5585406229479126e-17,
+      "kind": "halfprogress strict"
+    },
+    {
+      "cell": 19,
+      "cycle": 0,
+      "half": 2,
+      "s": 0.00499116156799999,
+      "r": -1.5585406229479126e-17,
+      "kind": "halfprogress strict"
+    },
+    {
+      "cell": 19,
+      "cycle": 0,
+      "s": 0.00499116156799999,
+      "r": -1.5585406229479126e-17,
+      "kind": "recursiveprogress strict"
+    },
+    {
+      "cell": 19,
+      "cycle": 1,
+      "half": 1,
+      "s": 0.00499116156799999,
+      "r": -1.5585406229479126e-17,
+      "kind": "halfprogress strict"
+    },
+    {
+      "cell": 19,
+      "cycle": 1,
+      "half": 2,
+      "s": 0.00499116156799999,
+      "r": -1.5585406229479126e-17,
+      "kind": "halfprogress strict"
+    },
+    {
+      "cell": 19,
+      "cycle": 1,
+      "s": 0.00499116156799999,
+      "r": -1.5585406229479126e-17,
+      "kind": "recursiveprogress strict"
+    },
+    {
+      "cell": 19,
+      "cycle": 2,
+      "half": 1,
+      "s": 0.00499116156799999,
+      "r": -1.5585406229479126e-17,
+      "kind": "halfprogress strict"
+    },
+    {
+      "cell": 19,
+      "cycle": 2,
+      "half": 2,
+      "s": 0.00499116156799999,
+      "r": -1.5585406229479126e-17,
+      "kind": "halfprogress strict"
+    },
+    {
+      "cell": 19,
+      "cycle": 2,
+      "s": 0.00499116156799999,
+      "r": -1.5585406229479126e-17,
+      "kind": "recursiveprogress strict"
+    },
+    {
+      "cell": 19,
+      "cycle": 3,
+      "half": 1,
+      "s": 0.00499116156799999,
+      "r": -1.5585406229479126e-17,
+      "kind": "halfprogress strict"
+    },
+    {
+      "cell": 19,
+      "cycle": 3,
+      "half": 2,
+      "s": 0.00499116156799999,
+      "r": -1.5585406229479126e-17,
+      "kind": "halfprogress strict"
+    },
+    {
+      "cell": 19,
+      "cycle": 3,
+      "s": 0.00499116156799999,
+      "r": -1.5585406229479126e-17,
+      "kind": "recursiveprogress strict"
+    },
+    {
+      "cell": 19,
+      "cycle": 4,
+      "half": 1,
+      "s": 0.00499116156799999,
+      "r": -1.5585406229479126e-17,
+      "kind": "halfprogress strict"
+    },
+    {
+      "cell": 19,
+      "cycle": 4,
+      "half": 2,
+      "s": 0.00499116156799999,
+      "r": -1.5585406229479126e-17,
+      "kind": "halfprogress strict"
+    },
+    {
+      "cell": 19,
+      "cycle": 4,
+      "s": 0.00499116156799999,
+      "r": -1.5585406229479126e-17,
+      "kind": "recursiveprogress strict"
+    },
+    {
+      "cell": 19,
+      "cycle": 5,
+      "half": 1,
+      "s": 0.00499116156799999,
+      "r": -1.5585406229479126e-17,
+      "kind": "halfprogress strict"
+    },
+    {
+      "cell": 19,
+      "cycle": 5,
+      "half": 2,
+      "s": 0.00499116156799999,
+      "r": -1.5585406229479126e-17,
+      "kind": "halfprogress strict"
+    },
+    {
+      "cell": 19,
+      "cycle": 5,
+      "s": 0.00499116156799999,
+      "r": -1.5585406229479126e-17,
+      "kind": "recursiveprogress strict"
+    },
+    {
+      "cell": 19,
+      "cycle": 6,
+      "half": 1,
+      "s": 0.00499116156799999,
+      "r": -1.5585406229479126e-17,
+      "kind": "halfprogress strict"
+    },
+    {
+      "cell": 19,
+      "cycle": 6,
+      "half": 2,
+      "s": 0.004991161567999989,
+      "r": -1.5585406229479126e-17,
+      "kind": "halfprogress strict"
+    },
+    {
+      "cell": 19,
+      "cycle": 6,
+      "s": 0.00499116156799999,
+      "r": -1.5585406229479126e-17,
+      "kind": "recursiveprogress strict"
+    },
+    {
+      "cell": 19,
+      "cycle": 7,
+      "half": 1,
+      "s": 0.004991161567999989,
+      "r": -1.5585406229479126e-17,
+      "kind": "halfprogress strict"
+    },
+    {
+      "cell": 19,
+      "cycle": 7,
+      "half": 2,
+      "s": 0.004991161567999989,
+      "r": -1.5585406229479126e-17,
+      "kind": "halfprogress strict"
+    },
+    {
+      "cell": 19,
+      "cycle": 7,
+      "s": 0.00499116156799999,
+      "r": -1.5585406229479126e-17,
+      "kind": "recursiveprogress strict"
+    },
+    {
+      "cell": 19,
+      "cycle": 8,
+      "half": 1,
+      "s": 0.004991161567999989,
+      "r": -1.5585406229479126e-17,
+      "kind": "halfprogress strict"
+    },
+    {
+      "cell": 19,
+      "cycle": 8,
+      "half": 2,
+      "s": 0.004991161567999989,
+      "r": -1.5585406229479126e-17,
+      "kind": "halfprogress strict"
+    },
+    {
+      "cell": 19,
+      "cycle": 8,
+      "s": 0.00499116156799999,
+      "r": -1.5585406229479126e-17,
+      "kind": "recursiveprogress strict"
+    },
+    {
+      "cell": 19,
+      "cycle": 9,
+      "half": 1,
+      "s": 0.004991161567999989,
+      "r": -1.5585406229479126e-17,
+      "kind": "halfprogress strict"
+    },
+    {
+      "cell": 19,
+      "cycle": 9,
+      "half": 2,
+      "s": 0.004991161567999989,
+      "r": -1.5585406229479126e-17,
+      "kind": "halfprogress strict"
+    },
+    {
+      "cell": 19,
+      "cycle": 9,
+      "s": 0.00499116156799999,
+      "r": -1.5585406229479126e-17,
+      "kind": "recursiveprogress strict"
+    },
+    {
+      "cell": 19,
+      "cycle": 10,
+      "half": 1,
+      "s": 0.004991161567999989,
+      "r": -1.5585406229479126e-17,
+      "kind": "halfprogress strict"
+    },
+    {
+      "cell": 19,
+      "cycle": 10,
+      "half": 2,
+      "s": 0.004991161567999989,
+      "r": -1.5585406229479126e-17,
+      "kind": "halfprogress strict"
+    },
+    {
+      "cell": 19,
+      "cycle": 10,
+      "s": 0.00499116156799999,
+      "r": -1.5585406229479126e-17,
+      "kind": "recursiveprogress strict"
+    },
+    {
+      "cell": 19,
+      "cycle": 11,
+      "half": 1,
+      "s": 0.004991161567999989,
+      "r": -1.5585406229479126e-17,
+      "kind": "halfprogress strict"
+    },
+    {
+      "cell": 19,
+      "cycle": 11,
+      "half": 2,
+      "s": 0.004991161567999989,
+      "r": -1.5585406229479126e-17,
+      "kind": "halfprogress strict"
+    },
+    {
+      "cell": 19,
+      "cycle": 11,
+      "s": 0.00499116156799999,
+      "r": -1.5585406229479126e-17,
+      "kind": "recursiveprogress strict"
+    },
+    {
+      "cell": 19,
+      "cycle": 12,
+      "half": 1,
+      "s": 0.004991161567999989,
+      "r": -1.5585406229479126e-17,
+      "kind": "halfprogress strict"
+    },
+    {
+      "cell": 19,
+      "cycle": 12,
+      "half": 2,
+      "s": 0.004991161567999989,
+      "r": -1.5585406229479126e-17,
+      "kind": "halfprogress strict"
+    },
+    {
+      "cell": 19,
+      "cycle": 12,
+      "s": 0.00499116156799999,
+      "r": -1.5585406229479126e-17,
+      "kind": "recursiveprogress strict"
+    },
+    {
+      "cell": 19,
+      "cycle": 13,
+      "half": 1,
+      "s": 0.004991161567999989,
+      "r": -1.5585406229479126e-17,
+      "kind": "halfprogress strict"
+    },
+    {
+      "cell": 19,
+      "cycle": 13,
+      "half": 2,
+      "s": 0.004991161567999989,
+      "r": -1.5585406229479126e-17,
+      "kind": "halfprogress strict"
+    },
+    {
+      "cell": 19,
+      "cycle": 13,
+      "s": 0.00499116156799999,
+      "r": -1.5585406229479126e-17,
+      "kind": "recursiveprogress strict"
+    },
+    {
+      "cell": 19,
+      "cycle": 14,
+      "half": 1,
+      "s": 0.004991161567999989,
+      "r": -1.5585406229479126e-17,
+      "kind": "halfprogress strict"
+    },
+    {
+      "cell": 19,
+      "cycle": 14,
+      "half": 2,
+      "s": 0.004991161567999989,
+      "r": -1.5585406229479126e-17,
+      "kind": "halfprogress strict"
+    },
+    {
+      "cell": 19,
+      "cycle": 14,
+      "s": 0.00499116156799999,
+      "r": -1.5585406229479126e-17,
+      "kind": "recursiveprogress strict"
+    },
+    {
+      "cell": 19,
+      "cycle": 15,
+      "half": 1,
+      "s": 0.004991161567999989,
+      "r": -1.5585406229479126e-17,
+      "kind": "halfprogress strict"
+    },
+    {
+      "cell": 19,
+      "cycle": 15,
+      "half": 2,
+      "s": 0.004991161567999989,
+      "r": -1.5585406229479126e-17,
+      "kind": "halfprogress strict"
+    },
+    {
+      "cell": 19,
+      "cycle": 15,
+      "s": 0.00499116156799999,
+      "r": -1.5585406229479126e-17,
+      "kind": "recursiveprogress strict"
+    },
+    {
+      "cell": 19,
+      "cycle": 16,
+      "half": 1,
+      "s": 0.004991161567999989,
+      "r": -1.5585406229479126e-17,
+      "kind": "halfprogress strict"
+    },
+    {
+      "cell": 19,
+      "cycle": 16,
+      "half": 2,
+      "s": 0.004991161567999989,
+      "r": -1.5585406229479126e-17,
+      "kind": "halfprogress strict"
+    },
+    {
+      "cell": 19,
+      "cycle": 16,
+      "s": 0.00499116156799999,
+      "r": -1.5585406229479126e-17,
+      "kind": "recursiveprogress strict"
+    },
+    {
+      "cell": 19,
+      "cycle": 17,
+      "half": 1,
+      "s": 0.004991161567999989,
+      "r": -1.5585406229479126e-17,
+      "kind": "halfprogress strict"
+    },
+    {
+      "cell": 19,
+      "cycle": 17,
+      "half": 2,
+      "s": 0.004991161567999989,
+      "r": -1.5585406229479126e-17,
+      "kind": "halfprogress strict"
+    },
+    {
+      "cell": 19,
+      "cycle": 17,
+      "s": 0.00499116156799999,
+      "r": -1.5585406229479126e-17,
+      "kind": "recursiveprogress strict"
+    },
+    {
+      "cell": 19,
+      "cycle": 18,
+      "half": 1,
+      "s": 0.004991161567999989,
+      "r": -1.5585406229479126e-17,
+      "kind": "halfprogress strict"
+    },
+    {
+      "cell": 19,
+      "cycle": 18,
+      "half": 2,
+      "s": 0.004991161567999989,
+      "r": -1.5585406229479126e-17,
+      "kind": "halfprogress strict"
+    },
+    {
+      "cell": 19,
+      "cycle": 18,
+      "s": 0.00499116156799999,
+      "r": -1.5585406229479126e-17,
+      "kind": "recursiveprogress strict"
+    },
+    {
+      "cell": 19,
+      "cycle": 19,
+      "half": 1,
+      "s": 0.004991161567999989,
+      "r": -1.5585406229479126e-17,
+      "kind": "halfprogress strict"
+    },
+    {
+      "cell": 19,
+      "cycle": 19,
+      "half": 2,
+      "s": 0.004991161567999989,
+      "r": -1.5585406229479126e-17,
+      "kind": "halfprogress strict"
+    },
+    {
+      "cell": 19,
+      "cycle": 19,
+      "s": 0.00499116156799999,
+      "r": -1.5585406229479126e-17,
+      "kind": "recursiveprogress strict"
+    },
+    {
+      "cell": 19,
+      "cycle": 20,
+      "half": 1,
+      "s": 0.004991161567999989,
+      "r": -1.5585406229479126e-17,
+      "kind": "halfprogress strict"
+    },
+    {
+      "cell": 19,
+      "cycle": 20,
+      "half": 2,
+      "s": 0.004991161567999988,
+      "r": -1.5585406229479126e-17,
+      "kind": "halfprogress strict"
+    },
+    {
+      "cell": 19,
+      "cycle": 20,
+      "s": 0.00499116156799999,
+      "r": -1.5585406229479126e-17,
+      "kind": "recursiveprogress strict"
+    },
+    {
+      "cell": 19,
+      "cycle": 21,
+      "half": 1,
+      "s": 0.004991161567999988,
+      "r": -1.5585406229479126e-17,
+      "kind": "halfprogress strict"
+    },
+    {
+      "cell": 19,
+      "cycle": 21,
+      "half": 2,
+      "s": 0.004991161567999988,
+      "r": -1.5585406229479126e-17,
+      "kind": "halfprogress strict"
+    },
+    {
+      "cell": 19,
+      "cycle": 21,
+      "s": 0.00499116156799999,
+      "r": -1.5585406229479126e-17,
+      "kind": "recursiveprogress strict"
+    },
+    {
+      "cell": 19,
+      "cycle": 22,
+      "half": 1,
+      "s": 0.004991161567999988,
+      "r": -1.5585406229479126e-17,
+      "kind": "halfprogress strict"
+    },
+    {
+      "cell": 19,
+      "cycle": 22,
+      "half": 2,
+      "s": 0.004991161567999988,
+      "r": -1.5585406229479126e-17,
+      "kind": "halfprogress strict"
+    },
+    {
+      "cell": 19,
+      "cycle": 22,
+      "s": 0.00499116156799999,
+      "r": -1.5585406229479126e-17,
+      "kind": "recursiveprogress strict"
+    },
+    {
+      "cell": 19,
+      "cycle": 23,
+      "half": 1,
+      "s": 0.004991161567999988,
+      "r": -1.5585406229479126e-17,
+      "kind": "halfprogress strict"
+    },
+    {
+      "cell": 19,
+      "cycle": 23,
+      "half": 2,
+      "s": 0.004991161567999988,
+      "r": -1.5585406229479126e-17,
+      "kind": "halfprogress strict"
+    },
+    {
+      "cell": 19,
+      "cycle": 23,
+      "s": 0.00499116156799999,
+      "r": -1.5585406229479126e-17,
+      "kind": "recursiveprogress strict"
+    },
+    {
+      "cell": 19,
+      "cycle": 24,
+      "half": 1,
+      "s": 0.004991161567999988,
+      "r": -1.5585406229479126e-17,
+      "kind": "halfprogress strict"
+    },
+    {
+      "cell": 19,
+      "cycle": 24,
+      "half": 2,
+      "s": 0.004991161567999988,
+      "r": -1.5585406229479126e-17,
+      "kind": "halfprogress strict"
+    },
+    {
+      "cell": 19,
+      "cycle": 24,
+      "s": 0.00499116156799999,
+      "r": -1.5585406229479126e-17,
+      "kind": "recursiveprogress strict"
+    },
+    {
+      "cell": 19,
+      "cycle": 25,
+      "half": 1,
+      "s": 0.004991161567999988,
+      "r": -1.5585406229479126e-17,
+      "kind": "halfprogress strict"
+    },
+    {
+      "cell": 19,
+      "cycle": 25,
+      "half": 2,
+      "s": 0.004991161567999988,
+      "r": -1.5585406229479126e-17,
+      "kind": "halfprogress strict"
+    },
+    {
+      "cell": 19,
+      "cycle": 25,
+      "s": 0.00499116156799999,
+      "r": -1.5585406229479126e-17,
+      "kind": "recursiveprogress strict"
+    },
+    {
+      "cell": 19,
+      "cycle": 26,
+      "half": 1,
+      "s": 0.004991161567999988,
+      "r": -1.5585406229479126e-17,
+      "kind": "halfprogress strict"
+    },
+    {
+      "cell": 19,
+      "cycle": 26,
+      "half": 2,
+      "s": 0.004991161567999988,
+      "r": -1.5585406229479126e-17,
+      "kind": "halfprogress strict"
+    },
+    {
+      "cell": 19,
+      "cycle": 26,
+      "s": 0.00499116156799999,
+      "r": -1.5585406229479126e-17,
+      "kind": "recursiveprogress strict"
+    },
+    {
+      "cell": 19,
+      "cycle": 27,
+      "half": 1,
+      "s": 0.004991161567999988,
+      "r": -1.5585406229479126e-17,
+      "kind": "halfprogress strict"
+    },
+    {
+      "cell": 19,
+      "cycle": 27,
+      "half": 2,
+      "s": 0.004991161567999988,
+      "r": -1.5585406229479126e-17,
+      "kind": "halfprogress strict"
+    },
+    {
+      "cell": 19,
+      "cycle": 27,
+      "s": 0.00499116156799999,
+      "r": -1.5585406229479126e-17,
+      "kind": "recursiveprogress strict"
+    },
+    {
+      "cell": 19,
+      "cycle": 28,
+      "half": 1,
+      "s": 0.004991161567999988,
+      "r": -1.5585406229479126e-17,
+      "kind": "halfprogress strict"
+    },
+    {
+      "cell": 19,
+      "cycle": 28,
+      "half": 2,
+      "s": 0.004991161567999988,
+      "r": -1.5585406229479126e-17,
+      "kind": "halfprogress strict"
+    },
+    {
+      "cell": 19,
+      "cycle": 28,
+      "s": 0.00499116156799999,
+      "r": -1.5585406229479126e-17,
+      "kind": "recursiveprogress strict"
+    },
+    {
+      "cell": 19,
+      "cycle": 29,
+      "half": 1,
+      "s": 0.004991161567999988,
+      "r": -1.5585406229479126e-17,
+      "kind": "halfprogress strict"
+    },
+    {
+      "cell": 19,
+      "cycle": 29,
+      "half": 2,
+      "s": 0.004991161567999988,
+      "r": -1.5585406229479126e-17,
+      "kind": "halfprogress strict"
+    },
+    {
+      "cell": 19,
+      "cycle": 29,
+      "s": 0.00499116156799999,
+      "r": -1.5585406229479126e-17,
+      "kind": "recursiveprogress strict"
+    },
+    {
+      "cell": 19,
+      "cycle": 30,
+      "half": 1,
+      "s": 0.004991161567999988,
+      "r": -1.5585406229479126e-17,
+      "kind": "halfprogress strict"
+    },
+    {
+      "cell": 19,
+      "cycle": 30,
+      "half": 2,
+      "s": 0.004991161567999988,
+      "r": -1.5585406229479126e-17,
+      "kind": "halfprogress strict"
+    },
+    {
+      "cell": 19,
+      "cycle": 30,
+      "s": 0.00499116156799999,
+      "r": -1.5585406229479126e-17,
+      "kind": "recursiveprogress strict"
+    },
+    {
+      "cell": 19,
+      "cycle": 31,
+      "half": 1,
+      "s": 0.004991161567999988,
+      "r": -1.5585406229479126e-17,
+      "kind": "halfprogress strict"
+    },
+    {
+      "cell": 19,
+      "cycle": 31,
+      "half": 2,
+      "s": 0.004991161567999988,
+      "r": -1.5585406229479126e-17,
+      "kind": "halfprogress strict"
+    },
+    {
+      "cell": 19,
+      "cycle": 31,
+      "s": 0.00499116156799999,
+      "r": -1.5585406229479126e-17,
+      "kind": "recursiveprogress strict"
+    },
+    {
+      "cell": 19,
+      "cycle": 32,
+      "half": 1,
+      "s": 0.004991161567999988,
+      "r": -1.5585406229479126e-17,
+      "kind": "halfprogress strict"
+    },
+    {
+      "cell": 19,
+      "cycle": 32,
+      "half": 2,
+      "s": 0.004991161567999988,
+      "r": -1.5585406229479126e-17,
+      "kind": "halfprogress strict"
+    },
+    {
+      "cell": 19,
+      "cycle": 32,
+      "s": 0.00499116156799999,
+      "r": -1.5585406229479126e-17,
+      "kind": "recursiveprogress strict"
+    },
+    {
+      "cell": 19,
+      "cycle": 33,
+      "half": 1,
+      "s": 0.004991161567999988,
+      "r": -1.5585406229479126e-17,
+      "kind": "halfprogress strict"
+    },
+    {
+      "cell": 19,
+      "cycle": 33,
+      "half": 2,
+      "s": 0.004991161567999988,
+      "r": -1.5585406229479126e-17,
+      "kind": "halfprogress strict"
+    },
+    {
+      "cell": 19,
+      "cycle": 33,
+      "s": 0.00499116156799999,
+      "r": -1.5585406229479126e-17,
+      "kind": "recursiveprogress strict"
+    },
+    {
+      "cell": 19,
+      "cycle": 34,
+      "half": 1,
+      "s": 0.004991161567999988,
+      "r": -1.5585406229479126e-17,
+      "kind": "halfprogress strict"
+    },
+    {
+      "cell": 19,
+      "cycle": 34,
+      "half": 2,
+      "s": 0.004991161567999987,
+      "r": -1.5585406229479126e-17,
+      "kind": "halfprogress strict"
+    },
+    {
+      "cell": 19,
+      "cycle": 34,
+      "s": 0.00499116156799999,
+      "r": -1.5585406229479126e-17,
+      "kind": "recursiveprogress strict"
+    },
+    {
+      "cell": 19,
+      "cycle": 35,
+      "half": 1,
+      "s": 0.004991161567999987,
+      "r": -1.5585406229479126e-17,
+      "kind": "halfprogress strict"
+    },
+    {
+      "cell": 19,
+      "cycle": 35,
+      "half": 2,
+      "s": 0.004991161567999987,
+      "r": -1.5585406229479126e-17,
+      "kind": "halfprogress strict"
+    },
+    {
+      "cell": 19,
+      "cycle": 35,
+      "s": 0.00499116156799999,
+      "r": -1.5585406229479126e-17,
+      "kind": "recursiveprogress strict"
+    },
+    {
+      "cell": 19,
+      "cycle": 36,
+      "half": 1,
+      "s": 0.004991161567999987,
+      "r": -1.5585406229479126e-17,
+      "kind": "halfprogress strict"
+    },
+    {
+      "cell": 19,
+      "cycle": 36,
+      "half": 2,
+      "s": 0.004991161567999987,
+      "r": -1.5585406229479126e-17,
+      "kind": "halfprogress strict"
+    },
+    {
+      "cell": 19,
+      "cycle": 36,
+      "s": 0.00499116156799999,
+      "r": -1.5585406229479126e-17,
+      "kind": "recursiveprogress strict"
+    },
+    {
+      "cell": 19,
+      "cycle": 37,
+      "half": 1,
+      "s": 0.004991161567999987,
+      "r": -1.5585406229479126e-17,
+      "kind": "halfprogress strict"
+    },
+    {
+      "cell": 19,
+      "cycle": 37,
+      "half": 2,
+      "s": 0.004991161567999987,
+      "r": -1.5585406229479126e-17,
+      "kind": "halfprogress strict"
+    },
+    {
+      "cell": 19,
+      "cycle": 37,
+      "s": 0.00499116156799999,
+      "r": -1.5585406229479126e-17,
+      "kind": "recursiveprogress strict"
+    },
+    {
+      "cell": 19,
+      "cycle": 38,
+      "half": 1,
+      "s": 0.004991161567999987,
+      "r": -1.5585406229479126e-17,
+      "kind": "halfprogress strict"
+    },
+    {
+      "cell": 19,
+      "cycle": 38,
+      "half": 2,
+      "s": 0.004991161567999987,
+      "r": -1.5585406229479126e-17,
+      "kind": "halfprogress strict"
+    },
+    {
+      "cell": 19,
+      "cycle": 38,
+      "s": 0.00499116156799999,
+      "r": -1.5585406229479126e-17,
+      "kind": "recursiveprogress strict"
+    },
+    {
+      "cell": 19,
+      "cycle": 39,
+      "half": 1,
+      "s": 0.004991161567999987,
+      "r": -1.5585406229479126e-17,
+      "kind": "halfprogress strict"
+    },
+    {
+      "cell": 19,
+      "cycle": 39,
+      "half": 2,
+      "s": 0.004991161567999987,
+      "r": -1.5585406229479126e-17,
+      "kind": "halfprogress strict"
+    },
+    {
+      "cell": 19,
+      "cycle": 39,
+      "s": 0.00499116156799999,
+      "r": -1.5585406229479126e-17,
+      "kind": "recursiveprogress strict"
+    }
+  ],
+  "scope": "archived30 initial144 hint only; nativeOSQP/strictcommand/B/C/actualnewtaskmetrics not run",
+  "Model": 0,
+  "MuJoCo_step": 0
+}

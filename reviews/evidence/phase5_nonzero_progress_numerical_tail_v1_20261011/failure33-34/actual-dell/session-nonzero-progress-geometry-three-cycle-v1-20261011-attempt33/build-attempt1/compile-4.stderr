@@ -1,0 +1,7 @@
+/home/codextransfer/predictive_motion/results/phase5/session-nonzero-progress-geometry-three-cycle-v1-20261011-attempt33/src/integrated_horizon_qp.cpp: In function 'Eigen::VectorXd phase5_active_session_qp_v1::shiftControlGuess(const Eigen::VectorXd&, phase5_public_live_affine_v2::Count)':
+/home/codextransfer/predictive_motion/results/phase5/session-nonzero-progress-geometry-three-cycle-v1-20261011-attempt33/src/integrated_horizon_qp.cpp:1114:4: warning: this 'if' clause does not guard... [-Wmisleading-indentation]
+ 1114 |    if(right>left)guess.segment(k*NU,NU)+=(static_cast<double>(right-left)/lattice[k])*old.segment(j*NU,NU);oldbegin=oldend;}
+      |    ^~
+/home/codextransfer/predictive_motion/results/phase5/session-nonzero-progress-geometry-three-cycle-v1-20261011-attempt33/src/integrated_horizon_qp.cpp:1114:108: note: ...this statement, but the latter is misleadingly indented as if it were guarded by the 'if'
+ 1114 |    if(right>left)guess.segment(k*NU,NU)+=(static_cast<double>(right-left)/lattice[k])*old.segment(j*NU,NU);oldbegin=oldend;}
+      |                                                                                                            ^~~~~~~~

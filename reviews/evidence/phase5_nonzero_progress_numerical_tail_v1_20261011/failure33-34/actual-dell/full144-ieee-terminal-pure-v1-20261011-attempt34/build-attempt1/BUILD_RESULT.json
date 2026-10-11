@@ -1,0 +1,140 @@
+{
+  "records": [
+    {
+      "kind": "compile",
+      "index": 1,
+      "argv": [
+        "/usr/bin/x86_64-linux-gnu-g++-13",
+        "-I",
+        "/home/codextransfer/predictive_motion/results/phase5/full144-ieee-terminal-pure-v1-20261011-attempt34/src",
+        "-I",
+        "/usr/include/eigen3",
+        "-std=c++17",
+        "-O2",
+        "-DNDEBUG",
+        "-fno-fast-math",
+        "-ffp-contract=off",
+        "-Wall",
+        "-Wextra",
+        "-Wpedantic",
+        "-MMD",
+        "-MF",
+        "/home/codextransfer/predictive_motion/results/phase5/full144-ieee-terminal-pure-v1-20261011-attempt34/build-attempt1/unit-1.d",
+        "-c",
+        "/home/codextransfer/predictive_motion/results/phase5/full144-ieee-terminal-pure-v1-20261011-attempt34/src/progress_numeric_forensics.cpp",
+        "-o",
+        "/home/codextransfer/predictive_motion/results/phase5/full144-ieee-terminal-pure-v1-20261011-attempt34/build-attempt1/unit-1.o"
+      ],
+      "stage": "CHILD_EXIT_REAPED",
+      "actual_project_tool_entry": "Popen started; exit retained, compiler/link success only if exit0",
+      "exit": 0,
+      "first_error": null,
+      "applied_limits": {
+        "CPU": {
+          "inherited_soft": -1,
+          "inherited_hard": -1,
+          "applied_soft": 120,
+          "applied_hard": 120
+        },
+        "AS": {
+          "inherited_soft": -1,
+          "inherited_hard": -1,
+          "applied_soft": 2147483648,
+          "applied_hard": 2147483648
+        },
+        "CORE": {
+          "inherited_soft": 0,
+          "inherited_hard": -1,
+          "applied_soft": 0,
+          "applied_hard": 0
+        },
+        "FSIZE": {
+          "inherited_soft": -1,
+          "inherited_hard": -1,
+          "applied_soft": 268435456,
+          "applied_hard": 268435456
+        },
+        "NOFILE": {
+          "inherited_soft": 1024,
+          "inherited_hard": 1048576,
+          "applied_soft": 64,
+          "applied_hard": 64
+        },
+        "NPROC": {
+          "inherited_soft": 63295,
+          "inherited_hard": 63295,
+          "applied_soft": 32,
+          "applied_hard": 32
+        }
+      },
+      "observed_stream_bytes": {
+        "stdout": 0,
+        "stderr": 0
+      },
+      "stop_reason": null,
+      "wall_seconds": 4.036497141001746
+    },
+    {
+      "kind": "compile",
+      "index": 2,
+      "argv": [
+        "/usr/bin/x86_64-linux-gnu-g++-13",
+        "/home/codextransfer/predictive_motion/results/phase5/full144-ieee-terminal-pure-v1-20261011-attempt34/build-attempt1/unit-1.o",
+        "-o",
+        "/home/codextransfer/predictive_motion/results/phase5/full144-ieee-terminal-pure-v1-20261011-attempt34/build-attempt1/progress_numeric_forensics"
+      ],
+      "stage": "CHILD_EXIT_REAPED",
+      "actual_project_tool_entry": "Popen started; exit retained, compiler/link success only if exit0",
+      "exit": 0,
+      "first_error": null,
+      "applied_limits": {
+        "CPU": {
+          "inherited_soft": -1,
+          "inherited_hard": -1,
+          "applied_soft": 120,
+          "applied_hard": 120
+        },
+        "AS": {
+          "inherited_soft": -1,
+          "inherited_hard": -1,
+          "applied_soft": 2147483648,
+          "applied_hard": 2147483648
+        },
+        "CORE": {
+          "inherited_soft": 0,
+          "inherited_hard": -1,
+          "applied_soft": 0,
+          "applied_hard": 0
+        },
+        "FSIZE": {
+          "inherited_soft": -1,
+          "inherited_hard": -1,
+          "applied_soft": 268435456,
+          "applied_hard": 268435456
+        },
+        "NOFILE": {
+          "inherited_soft": 1024,
+          "inherited_hard": 1048576,
+          "applied_soft": 64,
+          "applied_hard": 64
+        },
+        "NPROC": {
+          "inherited_soft": 63295,
+          "inherited_hard": 63295,
+          "applied_soft": 32,
+          "applied_hard": 32
+        }
+      },
+      "observed_stream_bytes": {
+        "stdout": 0,
+        "stderr": 0
+      },
+      "stop_reason": null,
+      "wall_seconds": 0.03723134400206618
+    }
+  ],
+  "complete": true,
+  "runtime_invocations": 0,
+  "phase5": "NOT_ACCEPTED",
+  "phase6": "NOT_STARTED"
+}

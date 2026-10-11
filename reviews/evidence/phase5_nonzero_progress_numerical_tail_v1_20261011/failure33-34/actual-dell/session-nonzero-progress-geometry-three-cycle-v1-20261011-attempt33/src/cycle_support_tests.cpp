@@ -1,0 +1,18 @@
+#include "cycle_support.hpp"
+#include <iostream>
+#include <thread>
+using namespace phase5_dynamic_cycle_support_v1;
+void check(bool x,const char* s){if(!x)throw std::runtime_error(s);}
+template<class F>void refused(F f){bool caught=false;try{f();}catch(const std::invalid_argument&){caught=true;}check(caught,"expected refusal missing");}
+int main(){try{
+ phase5_public_coupled_augmented::Cell nominal,candidate;nominal.cycles=candidate.cycles=3;nominal.alpha=Eigen::VectorXd::Constant(7,.0003);candidate.alpha=Eigen::VectorXd::Constant(7,.0007);nominal.b=.01;candidate.b=.02;
+ auto du=deltaControl(candidate,nominal);check((du.head<7>().array()-.0004).abs().maxCoeff()<1e-18&&du(7)==.01,"nonzero nominal control subtraction");candidate.cycles=4;refused([&]{deltaControl(candidate,nominal);});candidate.cycles=3;candidate.alpha(0)=NAN;refused([&]{deltaControl(candidate,nominal);});
+ auto p=cellReference(.12,.03,.01,2,1);const double t=.01;check(bits(p.s,.12+t*.03+.5*t*t*.01)&&bits(p.r,.03+t*.01),"original quadratic progress reference");refused([&]{cellReference(0,0,-.01,0,1);});refused([&]{cellReference(.999,.2,1,4,2);});
+ HintBinding a;a.nominal_digest="n";a.problem_digest="p";a.row_roster_digest="r";a.support_digest="s";check(sameBinding(a,a),"same current binding");
+ for(int j=0;j<7;++j)for(int field=0;field<5;++field){auto b=a;double* ptr=field==0?&b.initial.q[j]:field==1?&b.initial.v[j]:field==2?&b.initial.C[j]:field==3?&b.initial.w[j]:&b.previous_alpha[j];*ptr=.0001;check(!sameBinding(a,b),"changed joint/history must invalidate hint");}
+ for(int field=0;field<9;++field){auto b=a;switch(field){case 0:b.initial.s=.1;break;case 1:b.initial.r=.1;break;case 2:b.previous_b=.1;break;case 3:b.boundary.completed_tick=1;break;case 4:b.boundary.completed_command_sequence=1;break;case 5:b.nominal_digest="new";break;case 6:b.problem_digest="new";break;case 7:b.row_roster_digest="new";break;case 8:b.support_digest="new";break;}check(!sameBinding(a,b),"context/matrix/support/roster must invalidate hint");}
+ Envelope e;e.separate_numeric_slots=8;e.output_bytes=8;e.global_journal_bytes=8;Ledger l(e);l.reserveNumeric(8);refused([&]{l.reserveNumeric(1);});check(l.separateNumericSlots()==8,"numeric charges retained");l.sourceSlots(10);l.sourceSlots(10);refused([&]{l.sourceSlots(9);});l.reserveBytes(8,false);refused([&]{l.reserveBytes(1,false);});l.reserveBytes(8,true);refused([&]{l.reserveBytes(1,true);});
+ for(int i=0;i<6;++i){l.beforeForecast();l.beforeStep();}for(int i=0;i<3;++i)l.completedCommit();refused([&]{l.beforeForecast();});refused([&]{l.beforeStep();});refused([&]{l.completedCommit();});check(l.forecasts()==6&&l.steps()==6&&l.commits()==3&&l.originalSlots()==10,"cumulative counter preservation");e.maximum_forecasts=8;refused([&]{Ledger wrong(e);});
+ Timings timing;check(std::isnan(timing.complete_cycle_s)&&std::isnan(timing.seconds[0])&&!timing.measured[0],"unmeasured is unavailable");CycleClock clock(timing);auto begin=clock.begin();clock.end(Stage::Observe,begin);refused([&]{clock.end(Stage::Observe,begin);});std::this_thread::sleep_for(std::chrono::milliseconds(8));clock.finish();check(timing.complete&&timing.deadline_missed&&timing.complete_cycle_s>=.004&&timing.measured[0]&&std::isnan(timing.seconds[1]),"actual wall miss plus partial segments");refused([&]{clock.finish();});
+ std::cout<<"PASS nonzero-delta/progress/current-hint-invalidation/cumulative-caps/actual-wall-timing; no Model or physical step\n";return 0;
+ }catch(const std::exception& e){std::cerr<<e.what()<<"\n";return 1;}}

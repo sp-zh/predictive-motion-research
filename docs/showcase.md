@@ -710,3 +710,9 @@ The [supplemental A5/A7 hint provenance](../reviews/evidence/phase5_task_start_n
 ![Three geometry QPs, predictions and actual substeps](../figures/phase5_geometry_qp_actual_v2_20261011/three_current_geometry_qp_transactions_root.png)
 
 [SVG](../figures/phase5_geometry_qp_actual_v2_20261011/three_current_geometry_qp_transactions_root.svg) · [pinned-input renderer](../figures/phase5_geometry_qp_actual_v2_20261011/render.py) · [provenance](../figures/phase5_geometry_qp_actual_v2_20261011/ROOT_REPRODUCTION_PROVENANCE.json) · [independent evidence](../reviews/evidence/phase5_geometry_qp_actual_v2_20261011/README.md). Each current QP contains1600 nominal geometry rows and14756 SI rows in total. All three400-point candidate predictions, six actual2ms steps and three full offline cycle walls are shown. Independent saved-data arithmetic verifies the full matrices, added support rows, original histories, B/C and journals. The small-alpha/beta0 component advances no task progress and supplies no physical-stop or task video. All4ms deadlines are missed; Phase5 remains NOT_ACCEPTED.
+
+## Retained nonzero-progress tail refusal (2026-10-11)
+
+![Pure saved-QP progress and refused terminal speed](../figures/phase5_nonzero_progress_numerical_tail_v1_20261011/full144_progress_refused_tail.png)
+
+[SVG](../figures/phase5_nonzero_progress_numerical_tail_v1_20261011/full144_progress_refused_tail.svg) · [provenance](../figures/phase5_nonzero_progress_numerical_tail_v1_20261011/PLOT_PROVENANCE.json) · [scope and repair evidence](../reviews/evidence/phase5_nonzero_progress_numerical_tail_v1_20261011/README.md).400 saved command references show attempted progress, but both strict tail checks refuse. The separate explicit planning target has passed saved-input arithmetic; this figure remains the original failure. No new executed motion, task video, physical stop or phase acceptance follows.

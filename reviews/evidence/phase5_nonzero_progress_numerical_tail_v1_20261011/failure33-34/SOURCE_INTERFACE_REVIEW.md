@@ -1,0 +1,1 @@
+Existing interface reviewer narrowPASS33 full144, guardoffset/scales/originalrowmapping-1/currentgenuineseed(:159)/strict200/B/C+actualtaskaccuracyrawfailure. Reviewerinitialseedfindingallocationzero waswithdrawn aftergenuinefillread; no sourcefork. NoSDK/native/nonemptyfixture inreview. Producercompiled15TU source33/nativeELF+purelink andseparatelyranarchived30 pure144 fixture.
