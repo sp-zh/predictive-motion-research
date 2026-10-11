@@ -1,0 +1,1938 @@
+{
+  "scope": "ACTUAL_A5_NATIVE_SOLVED_BUT_STRICT_REJECTED_FILE_REVIEW_ONLY",
+  "source_sha256": "f1db54a5344c2cd0833e4aebf0032dd4f9f2ad8f72194bf4db06726da46bd410",
+  "input_pins": {
+    "/private/tmp/phase5_task_start_a_primaldual_checkpoint_v2_20261010/READY.json": {
+      "bytes": 35204,
+      "sha256": "2da3d50c450279d672b602316256412c89406dc1d7814b4e503c3dc5968dbf14"
+    },
+    "/private/tmp/phase5_task_start_a_primaldual_checkpoint_v2_20261010/read_task_start_a_primaldual5_summary.py": {
+      "bytes": 2667,
+      "sha256": "7a272bb21e17e59b070993ce21694a770b73cba682980663467cb087a3158c78"
+    },
+    "/private/tmp/phase5_task_start_a_primaldual_checkpoint_v2_20261010/stage_task_start_a_compile5.py": {
+      "bytes": 2538,
+      "sha256": "b798c5394d7025c7bc1ec6fdc70556cc126672e9ed3f6d8506b3321bd9ca2f35"
+    },
+    "/private/tmp/phase5_task_start_a_primaldual_checkpoint_v2_20261010/collection.stderr": {
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    "/private/tmp/phase5_task_start_a_primaldual_checkpoint_v2_20261010/collect_task_start_a_primaldual5.py": {
+      "bytes": 2539,
+      "sha256": "85f6afa60e9ff5fc9a33a23b5cedd5bb9f4a2f69be931f007d41c002bb8b7f0c"
+    },
+    "/private/tmp/phase5_task_start_a_primaldual_checkpoint_v2_20261010/link_task_start_a5.py": {
+      "bytes": 3205,
+      "sha256": "da57464e7e368f15db06c38dfb50a34b36f9688499f40919bf129f44199dea7b"
+    },
+    "/private/tmp/phase5_task_start_a_primaldual_checkpoint_v2_20261010/README.md": {
+      "bytes": 1023,
+      "sha256": "81f4e138e1c0c9226face8b7a90d364e5c5ccba265fd4944aac6ba238afb74d1"
+    },
+    "/private/tmp/phase5_task_start_a_primaldual_checkpoint_v2_20261010/ACTUAL_SOLVER_SUMMARY.json": {
+      "bytes": 125469,
+      "sha256": "6f320dc4e8cf319d9799a74f27e08ee1fd5a9fb5122897a085985dcccb9b37a1"
+    },
+    "/private/tmp/phase5_task_start_a_primaldual_checkpoint_v2_20261010/implement_task_start_dual_api.py": {
+      "bytes": 5820,
+      "sha256": "2bac2a2f6c5077be5c6e27c6a6d02b34752f759dda8afc9f2e9d3ea44cb92467"
+    },
+    "/private/tmp/phase5_task_start_a_primaldual_checkpoint_v2_20261010/actual_collection.tar.gz": {
+      "bytes": 17670848,
+      "sha256": "6e37d117fa0309d73d3ecf30b530a0e68ce03acbf023a668df37220e2cde4a13"
+    },
+    "/private/tmp/phase5_task_start_a_primaldual_checkpoint_v2_20261010/readonly_collection_source.py": {
+      "bytes": 1455,
+      "sha256": "771eb3802f5adf835aadb4b99b1e0de5134c78528ccf4e252a1525d21d03561a"
+    },
+    "/private/tmp/phase5_task_start_a_primaldual_checkpoint_v2_20261010/source-review-frozen/SOURCE_MANIFEST.json": {
+      "bytes": 2944,
+      "sha256": "a020779bcc023d4c8be52aa2fb86441f7eb32cff44d8a85d852f88cf1ec2a3f0"
+    },
+    "/private/tmp/phase5_task_start_a_primaldual_checkpoint_v2_20261010/actual-dell/NATIVE_ELF_INDEX.json": {
+      "bytes": 302,
+      "sha256": "d0e207c2934636ccff1f4d0cd451046f338fc8af85d97f1030f721a6323d7e5b"
+    },
+    "/private/tmp/phase5_task_start_a_primaldual_checkpoint_v2_20261010/actual-dell/session-task-start-a-primaldual-v2-20261010-attempt5/active_run_plan.json": {
+      "bytes": 487736,
+      "sha256": "50c085a1b9edef246b742233bb2c7f509a7d104c44dfb1e5b67ef5b2e4b89474"
+    },
+    "/private/tmp/phase5_task_start_a_primaldual_checkpoint_v2_20261010/actual-dell/session-task-start-a-primaldual-v2-20261010-attempt5/dev_link.py": {
+      "bytes": 7457,
+      "sha256": "fbce82edadae898f80f7480ce9ce3415daf61535e581ae815139ed0e9e8cad90"
+    },
+    "/private/tmp/phase5_task_start_a_primaldual_checkpoint_v2_20261010/actual-dell/session-task-start-a-primaldual-v2-20261010-attempt5/dev_compile_plan.json": {
+      "bytes": 8700,
+      "sha256": "c3b61c916824ca8c5b611e654472f8f464d9094cc9ee7dc0d91637171dd015a6"
+    },
+    "/private/tmp/phase5_task_start_a_primaldual_checkpoint_v2_20261010/actual-dell/session-task-start-a-primaldual-v2-20261010-attempt5/OBJECT_REUSE_BINDING_V2.json": {
+      "bytes": 6629,
+      "sha256": "65f2ea1bcddac036a518a4e86ae9a409414c5c6032d647a65e57e6e9d1f7a67f"
+    },
+    "/private/tmp/phase5_task_start_a_primaldual_checkpoint_v2_20261010/actual-dell/session-task-start-a-primaldual-v2-20261010-attempt5/dev_link_plan.json": {
+      "bytes": 8861,
+      "sha256": "ba449701cb2c6f2a9f05aa0fb28235123c04b20176e799357b4b0b1b7dea2a94"
+    },
+    "/private/tmp/phase5_task_start_a_primaldual_checkpoint_v2_20261010/actual-dell/session-task-start-a-primaldual-v2-20261010-attempt5/dev_compile.py": {
+      "bytes": 7460,
+      "sha256": "9dfd7747a9263b940ddd7b856f1c46b8f04655ba7edf29b523003adae9160ee9"
+    },
+    "/private/tmp/phase5_task_start_a_primaldual_checkpoint_v2_20261010/actual-dell/session-task-start-a-primaldual-v2-20261010-attempt5/active_run_driver.py": {
+      "bytes": 7585,
+      "sha256": "39c511a032bd8b44c4132150bdeef5641c3cf5551a61e395e4a78d93c9268ec4"
+    },
+    "/private/tmp/phase5_task_start_a_primaldual_checkpoint_v2_20261010/actual-dell/session-task-start-a-primaldual-v1-20261010-attempt4/dev_compile_plan.json": {
+      "bytes": 37851,
+      "sha256": "38252f8311ef4dc1312f252bbc03c4c443feca2a60398e52b6c0e0f3add3c584"
+    },
+    "/private/tmp/phase5_task_start_a_primaldual_checkpoint_v2_20261010/actual-dell/session-task-start-a-primaldual-v1-20261010-attempt4/dev_compile.py": {
+      "bytes": 7460,
+      "sha256": "f10c7a612887f917bb29ba9beb05b2a0421a43bfdaab7c82dbfee4ff7072fd5a"
+    },
+    "/private/tmp/phase5_task_start_a_primaldual_checkpoint_v2_20261010/actual-dell/session-task-start-a-primaldual-v1-20261010-attempt4/build-attempt1/BEFORE_READONLY_ROSTERS.json": {
+      "bytes": 3,
+      "sha256": "37517e5f3dc66819f61f5a7bb8ace1921282415f10551d2defa5c3eb0985b570"
+    },
+    "/private/tmp/phase5_task_start_a_primaldual_checkpoint_v2_20261010/actual-dell/session-task-start-a-primaldual-v1-20261010-attempt4/build-attempt1/compile-5.result.json": {
+      "bytes": 5186,
+      "sha256": "2a99fef0a24366025a6ab9fe49371bbe345c577e605354a75cbe20c2e03d2847"
+    },
+    "/private/tmp/phase5_task_start_a_primaldual_checkpoint_v2_20261010/actual-dell/session-task-start-a-primaldual-v1-20261010-attempt4/build-attempt1/compile-4.stdout": {
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    "/private/tmp/phase5_task_start_a_primaldual_checkpoint_v2_20261010/actual-dell/session-task-start-a-primaldual-v1-20261010-attempt4/build-attempt1/compile-8.stdout": {
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    "/private/tmp/phase5_task_start_a_primaldual_checkpoint_v2_20261010/actual-dell/session-task-start-a-primaldual-v1-20261010-attempt4/build-attempt1/BATCH_PREFIX.json": {
+      "bytes": 51459,
+      "sha256": "f9c54d6134371a8737ccda5628ead1a238e7b9c32c0b44ddaba73a3797d230ac"
+    },
+    "/private/tmp/phase5_task_start_a_primaldual_checkpoint_v2_20261010/actual-dell/session-task-start-a-primaldual-v1-20261010-attempt4/build-attempt1/BUILD_RESULT.json": {
+      "bytes": 51513,
+      "sha256": "787c0f272703ce37ceff256c38a753bb87e8dc90e9795b85a9f33dde3b0f97dc"
+    },
+    "/private/tmp/phase5_task_start_a_primaldual_checkpoint_v2_20261010/actual-dell/session-task-start-a-primaldual-v1-20261010-attempt4/build-attempt1/compile-6.stdout": {
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    "/private/tmp/phase5_task_start_a_primaldual_checkpoint_v2_20261010/actual-dell/session-task-start-a-primaldual-v1-20261010-attempt4/build-attempt1/compile-9.result.json": {
+      "bytes": 5189,
+      "sha256": "65b8cde7c4dd5ccb542969e41a51f5d345403a90ada0067fb808180076f2a446"
+    },
+    "/private/tmp/phase5_task_start_a_primaldual_checkpoint_v2_20261010/actual-dell/session-task-start-a-primaldual-v1-20261010-attempt4/build-attempt1/CONTROL_EVENT_PREFIX.json": {
+      "bytes": 2865,
+      "sha256": "219152ab741fa9cbca7bb7f6100efd4b3249da4ba1fe5e4d5e0c9f9f070890dd"
+    },
+    "/private/tmp/phase5_task_start_a_primaldual_checkpoint_v2_20261010/actual-dell/session-task-start-a-primaldual-v1-20261010-attempt4/build-attempt1/compile-2.stderr": {
+      "bytes": 4300,
+      "sha256": "0836b5cd9fe22049852fa3bff70548ff85d14a1d3dffc5b04cd6927e78d1fc41"
+    },
+    "/private/tmp/phase5_task_start_a_primaldual_checkpoint_v2_20261010/actual-dell/session-task-start-a-primaldual-v1-20261010-attempt4/build-attempt1/compile-3.result.json": {
+      "bytes": 5189,
+      "sha256": "34d0ba42fa54e85dd6bb9247301295c615b9be452620c298f37b5760ec3124b0"
+    },
+    "/private/tmp/phase5_task_start_a_primaldual_checkpoint_v2_20261010/actual-dell/session-task-start-a-primaldual-v1-20261010-attempt4/build-attempt1/compile-2.stdout": {
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    "/private/tmp/phase5_task_start_a_primaldual_checkpoint_v2_20261010/actual-dell/session-task-start-a-primaldual-v1-20261010-attempt4/build-attempt1/compile-6.stderr": {
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    "/private/tmp/phase5_task_start_a_primaldual_checkpoint_v2_20261010/actual-dell/session-task-start-a-primaldual-v1-20261010-attempt4/build-attempt1/compile-8.stderr": {
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    "/private/tmp/phase5_task_start_a_primaldual_checkpoint_v2_20261010/actual-dell/session-task-start-a-primaldual-v1-20261010-attempt4/build-attempt1/compile-4.stderr": {
+      "bytes": 1138,
+      "sha256": "89db0fe37de1a3d6febcde270fbeba2a6133da864b36f4a8bbd9e132eb95680a"
+    },
+    "/private/tmp/phase5_task_start_a_primaldual_checkpoint_v2_20261010/actual-dell/session-task-start-a-primaldual-v1-20261010-attempt4/build-attempt1/compile-6.result.json": {
+      "bytes": 5190,
+      "sha256": "e1ce013cca82bf2d2ab471c8eba135084c576a18c379ca301194f9f579d1f1a6"
+    },
+    "/private/tmp/phase5_task_start_a_primaldual_checkpoint_v2_20261010/actual-dell/session-task-start-a-primaldual-v1-20261010-attempt4/build-attempt1/BEFORE_INPUT_IDENTITIES.json": {
+      "bytes": 3,
+      "sha256": "37517e5f3dc66819f61f5a7bb8ace1921282415f10551d2defa5c3eb0985b570"
+    },
+    "/private/tmp/phase5_task_start_a_primaldual_checkpoint_v2_20261010/actual-dell/session-task-start-a-primaldual-v1-20261010-attempt4/build-attempt1/compile-1.result.json": {
+      "bytes": 5185,
+      "sha256": "22a37a23df6e22c9e65089d39fadb7d83c207ec8a52e0552b930cf16424be7c7"
+    },
+    "/private/tmp/phase5_task_start_a_primaldual_checkpoint_v2_20261010/actual-dell/session-task-start-a-primaldual-v1-20261010-attempt4/build-attempt1/compile-5.stdout": {
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    "/private/tmp/phase5_task_start_a_primaldual_checkpoint_v2_20261010/actual-dell/session-task-start-a-primaldual-v1-20261010-attempt4/build-attempt1/compile-9.stdout": {
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    "/private/tmp/phase5_task_start_a_primaldual_checkpoint_v2_20261010/actual-dell/session-task-start-a-primaldual-v1-20261010-attempt4/build-attempt1/compile-8.result.json": {
+      "bytes": 5188,
+      "sha256": "776fd845d0472d1020744bffb18fb874d5a6370228a9b610982b08611b29da74"
+    },
+    "/private/tmp/phase5_task_start_a_primaldual_checkpoint_v2_20261010/actual-dell/session-task-start-a-primaldual-v1-20261010-attempt4/build-attempt1/compile-1.stderr": {
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    "/private/tmp/phase5_task_start_a_primaldual_checkpoint_v2_20261010/actual-dell/session-task-start-a-primaldual-v1-20261010-attempt4/build-attempt1/compile-3.stderr": {
+      "bytes": 11728,
+      "sha256": "64d1df5720d6cb870cba0c28c566a73463111dce1bec485bcfb011f6b02aeb96"
+    },
+    "/private/tmp/phase5_task_start_a_primaldual_checkpoint_v2_20261010/actual-dell/session-task-start-a-primaldual-v1-20261010-attempt4/build-attempt1/AFTER_INPUT_IDENTITIES.json": {
+      "bytes": 3,
+      "sha256": "37517e5f3dc66819f61f5a7bb8ace1921282415f10551d2defa5c3eb0985b570"
+    },
+    "/private/tmp/phase5_task_start_a_primaldual_checkpoint_v2_20261010/actual-dell/session-task-start-a-primaldual-v1-20261010-attempt4/build-attempt1/compile-4.result.json": {
+      "bytes": 5194,
+      "sha256": "b47e109ffd9abcc0b9fe6b4a7fdc1976e2448ebae86c0ed5fe35d74b2d22b939"
+    },
+    "/private/tmp/phase5_task_start_a_primaldual_checkpoint_v2_20261010/actual-dell/session-task-start-a-primaldual-v1-20261010-attempt4/build-attempt1/compile-7.stdout": {
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    "/private/tmp/phase5_task_start_a_primaldual_checkpoint_v2_20261010/actual-dell/session-task-start-a-primaldual-v1-20261010-attempt4/build-attempt1/compile-7.stderr": {
+      "bytes": 6954,
+      "sha256": "9eddd28630694f9c9c3c6e2288398daa668bc3b8fe97e0ee1d6da3d13ac05c7f"
+    },
+    "/private/tmp/phase5_task_start_a_primaldual_checkpoint_v2_20261010/actual-dell/session-task-start-a-primaldual-v1-20261010-attempt4/build-attempt1/compile-7.result.json": {
+      "bytes": 5191,
+      "sha256": "8a3bf97c0efc6369d0afda11f5373c62088238a089db97a348b6d86336aa1be3"
+    },
+    "/private/tmp/phase5_task_start_a_primaldual_checkpoint_v2_20261010/actual-dell/session-task-start-a-primaldual-v1-20261010-attempt4/build-attempt1/AFTER_READONLY_ROSTERS.json": {
+      "bytes": 3,
+      "sha256": "37517e5f3dc66819f61f5a7bb8ace1921282415f10551d2defa5c3eb0985b570"
+    },
+    "/private/tmp/phase5_task_start_a_primaldual_checkpoint_v2_20261010/actual-dell/session-task-start-a-primaldual-v1-20261010-attempt4/build-attempt1/compile-3.stdout": {
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    "/private/tmp/phase5_task_start_a_primaldual_checkpoint_v2_20261010/actual-dell/session-task-start-a-primaldual-v1-20261010-attempt4/build-attempt1/compile-1.stdout": {
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    "/private/tmp/phase5_task_start_a_primaldual_checkpoint_v2_20261010/actual-dell/session-task-start-a-primaldual-v1-20261010-attempt4/build-attempt1/compile-9.stderr": {
+      "bytes": 2602,
+      "sha256": "c1184eefb290c32521daf8603ef41c9f9651b0b788345879fb47b78dafd5ed22"
+    },
+    "/private/tmp/phase5_task_start_a_primaldual_checkpoint_v2_20261010/actual-dell/session-task-start-a-primaldual-v1-20261010-attempt4/build-attempt1/compile-2.result.json": {
+      "bytes": 5187,
+      "sha256": "7b55a66ba8eabe8c5de7b2b06e2868eb5bb7d90e412605668272e9f5fcc3968b"
+    },
+    "/private/tmp/phase5_task_start_a_primaldual_checkpoint_v2_20261010/actual-dell/session-task-start-a-primaldual-v1-20261010-attempt4/build-attempt1/compile-5.stderr": {
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    "/private/tmp/phase5_task_start_a_primaldual_checkpoint_v2_20261010/actual-dell/session-task-start-a-primaldual-v1-20261010-attempt4/src/invariant_tests.cpp": {
+      "bytes": 4721,
+      "sha256": "f5a859d4cf9d79a5ae1b533b8dd62776f2bba6599dfdf691a2915ef3296a33f9"
+    },
+    "/private/tmp/phase5_task_start_a_primaldual_checkpoint_v2_20261010/actual-dell/session-task-start-a-primaldual-v1-20261010-attempt4/src/normalization.cpp": {
+      "bytes": 23976,
+      "sha256": "a0cd0c9cdb505f922f1744f24cf115057b6ba9f3a9bc1b3ed0c9bdb82d358ed5"
+    },
+    "/private/tmp/phase5_task_start_a_primaldual_checkpoint_v2_20261010/actual-dell/session-task-start-a-primaldual-v1-20261010-attempt4/src/session_primitives.hpp": {
+      "bytes": 2259,
+      "sha256": "0b76bc232ed81dc9b4831617ae1690cfc287def914b8bca5f05ce6e6e25b6080"
+    },
+    "/private/tmp/phase5_task_start_a_primaldual_checkpoint_v2_20261010/actual-dell/session-task-start-a-primaldual-v1-20261010-attempt4/src/model_boundary.cpp": {
+      "bytes": 14091,
+      "sha256": "04c94821ee57669431b8c7bceac1d66004fdfc8af11424008e89890a7486630a"
+    },
+    "/private/tmp/phase5_task_start_a_primaldual_checkpoint_v2_20261010/actual-dell/session-task-start-a-primaldual-v1-20261010-attempt4/src/solver_forensics.cpp": {
+      "bytes": 26367,
+      "sha256": "4e0acddf498b85dc5e34e9c6d34e5ef9544808d18ff3c9336d17126a8e438c5c"
+    },
+    "/private/tmp/phase5_task_start_a_primaldual_checkpoint_v2_20261010/actual-dell/session-task-start-a-primaldual-v1-20261010-attempt4/src/runtime_observer.hpp": {
+      "bytes": 5472,
+      "sha256": "0e0ef9cfe8bc1c8a5bb38327148110dd6db4ebfe4e2ba479de8d1d78175941c8"
+    },
+    "/private/tmp/phase5_task_start_a_primaldual_checkpoint_v2_20261010/actual-dell/session-task-start-a-primaldual-v1-20261010-attempt4/src/lossless_evidence.hpp": {
+      "bytes": 1887,
+      "sha256": "6e40b8878ddc78e8422c1301ca62ca98ed854fc2f57e6f549f5685cc1387bccc"
+    },
+    "/private/tmp/phase5_task_start_a_primaldual_checkpoint_v2_20261010/actual-dell/session-task-start-a-primaldual-v1-20261010-attempt4/src/affine_assembly.cpp": {
+      "bytes": 28981,
+      "sha256": "d478eda1f0fe97bfc41851515f4baa3e485fd4a57968a62dcb6233ae1157bbd5"
+    },
+    "/private/tmp/phase5_task_start_a_primaldual_checkpoint_v2_20261010/actual-dell/session-task-start-a-primaldual-v1-20261010-attempt4/src/integrated_horizon_qp.hpp": {
+      "bytes": 10599,
+      "sha256": "066da1b1f9e6228cef56e2b52ae73a852a08b54836f53da8e01a6a707aa69299"
+    },
+    "/private/tmp/phase5_task_start_a_primaldual_checkpoint_v2_20261010/actual-dell/session-task-start-a-primaldual-v1-20261010-attempt4/src/task_local_provider.cpp": {
+      "bytes": 1839,
+      "sha256": "051b424236979f9fe7ea4cb96564f54969025c997bfba2c61d347a23f7fbae4c"
+    },
+    "/private/tmp/phase5_task_start_a_primaldual_checkpoint_v2_20261010/actual-dell/session-task-start-a-primaldual-v1-20261010-attempt4/src/box_screen_tests.cpp": {
+      "bytes": 2954,
+      "sha256": "d922876babec2867dd1293bcee259ac12e4b2a6af5a30dd551209e097c0abaf8"
+    },
+    "/private/tmp/phase5_task_start_a_primaldual_checkpoint_v2_20261010/actual-dell/session-task-start-a-primaldual-v1-20261010-attempt4/src/active_first_cycle.cpp": {
+      "bytes": 20022,
+      "sha256": "b69efa3afcc27527fe5f88e3d1f3b076812f044f37d23bdb563e300d3fe9bf10"
+    },
+    "/private/tmp/phase5_task_start_a_primaldual_checkpoint_v2_20261010/actual-dell/session-task-start-a-primaldual-v1-20261010-attempt4/src/observer_tests.cpp": {
+      "bytes": 3785,
+      "sha256": "d1ff998984981a5ded1e92b8d452503e8b489ecfb0d067fb04ff5fd616d02877"
+    },
+    "/private/tmp/phase5_task_start_a_primaldual_checkpoint_v2_20261010/actual-dell/session-task-start-a-primaldual-v1-20261010-attempt4/src/solver_forensics.hpp": {
+      "bytes": 860,
+      "sha256": "02b3a3d33ea64a351b228b96b2e0590b7a79fb4e9b87da78dc28c59465aca3bb"
+    },
+    "/private/tmp/phase5_task_start_a_primaldual_checkpoint_v2_20261010/actual-dell/session-task-start-a-primaldual-v1-20261010-attempt4/src/runtime_observer.cpp": {
+      "bytes": 17215,
+      "sha256": "9bbbe145f0cfa78c24f1d2b56008b065f1f3838ee54fa727eb76a88578fb607f"
+    },
+    "/private/tmp/phase5_task_start_a_primaldual_checkpoint_v2_20261010/actual-dell/session-task-start-a-primaldual-v1-20261010-attempt4/src/lossless_evidence.cpp": {
+      "bytes": 15969,
+      "sha256": "04680550f459ebf6bf0136bd611e2707b18562ddea5d44e4fc1c8782efb1bdd6"
+    },
+    "/private/tmp/phase5_task_start_a_primaldual_checkpoint_v2_20261010/actual-dell/session-task-start-a-primaldual-v1-20261010-attempt4/src/task_local_provider.hpp": {
+      "bytes": 640,
+      "sha256": "1819e2f626fb0ff65ad7e7e8de0b0b52f625e6bf435b073d7cca55722d76f093"
+    },
+    "/private/tmp/phase5_task_start_a_primaldual_checkpoint_v2_20261010/actual-dell/session-task-start-a-primaldual-v1-20261010-attempt4/src/affine_assembly.hpp": {
+      "bytes": 6026,
+      "sha256": "6faee2961242052c7655da41e8988dd0844f14c3cfa885672aa7c03eaa1dcb57"
+    },
+    "/private/tmp/phase5_task_start_a_primaldual_checkpoint_v2_20261010/actual-dell/session-task-start-a-primaldual-v1-20261010-attempt4/src/integrated_horizon_qp.cpp": {
+      "bytes": 69975,
+      "sha256": "a7318504af8b4969b442fe0769fe9f06cf87110c1a9f6402470c054f3a0c3046"
+    },
+    "/private/tmp/phase5_task_start_a_primaldual_checkpoint_v2_20261010/actual-dell/session-task-start-a-primaldual-v1-20261010-attempt4/src/normalization.hpp": {
+      "bytes": 4288,
+      "sha256": "9456be5c205f23d2aa2210eac02286d030204a446af003ee85362b971ccb43d8"
+    },
+    "/private/tmp/phase5_task_start_a_primaldual_checkpoint_v2_20261010/actual-dell/session-task-start-a-primaldual-v1-20261010-attempt4/src/model_boundary.hpp": {
+      "bytes": 2528,
+      "sha256": "51b2e845860fb4faecfc95b7f9873439ab4e682adce37a290e6fe704ee48a9d9"
+    },
+    "/private/tmp/phase5_task_start_a_primaldual_checkpoint_v2_20261010/actual-dell/session-task-start-a-primaldual-v1-20261010-attempt4/src/linear_box_screen.hpp": {
+      "bytes": 3916,
+      "sha256": "b649eff43293a3078b7b46a0166fa0f8a2ac59f3a8496c8c73a98c275fed96d1"
+    },
+    "/private/tmp/phase5_task_start_a_primaldual_checkpoint_v2_20261010/actual-dell/session-task-start-a-primaldual-v2-20261010-attempt5/link-attempt1/BEFORE_READONLY_ROSTERS.json": {
+      "bytes": 3,
+      "sha256": "37517e5f3dc66819f61f5a7bb8ace1921282415f10551d2defa5c3eb0985b570"
+    },
+    "/private/tmp/phase5_task_start_a_primaldual_checkpoint_v2_20261010/actual-dell/session-task-start-a-primaldual-v2-20261010-attempt5/link-attempt1/BATCH_PREFIX.json": {
+      "bytes": 5747,
+      "sha256": "d018da9d4655705dc5c64b7cbceb9d74065425c596c744ee891fb0d5ae8d455b"
+    },
+    "/private/tmp/phase5_task_start_a_primaldual_checkpoint_v2_20261010/actual-dell/session-task-start-a-primaldual-v2-20261010-attempt5/link-attempt1/BUILD_RESULT.json": {
+      "bytes": 5801,
+      "sha256": "df67017215b1b3d2c409dcf1e26d01a7e81272a5b8ef53b6c788aebe8fd4ddad"
+    },
+    "/private/tmp/phase5_task_start_a_primaldual_checkpoint_v2_20261010/actual-dell/session-task-start-a-primaldual-v2-20261010-attempt5/link-attempt1/CONTROL_EVENT_PREFIX.json": {
+      "bytes": 719,
+      "sha256": "188b6e58513e83d8d55b362621eceee1e9d9690e50c91d9fe5c520c3190d90f7"
+    },
+    "/private/tmp/phase5_task_start_a_primaldual_checkpoint_v2_20261010/actual-dell/session-task-start-a-primaldual-v2-20261010-attempt5/link-attempt1/BEFORE_INPUT_IDENTITIES.json": {
+      "bytes": 4334,
+      "sha256": "2615650254f15a7b38a77eb4bc5793c6c4443a56e1f199c83229e91133472894"
+    },
+    "/private/tmp/phase5_task_start_a_primaldual_checkpoint_v2_20261010/actual-dell/session-task-start-a-primaldual-v2-20261010-attempt5/link-attempt1/compile-1.result.json": {
+      "bytes": 5315,
+      "sha256": "7182a8739affc44a45eb36d7d8b140bd727f16930771530f1ceec0f155e0e2e8"
+    },
+    "/private/tmp/phase5_task_start_a_primaldual_checkpoint_v2_20261010/actual-dell/session-task-start-a-primaldual-v2-20261010-attempt5/link-attempt1/compile-1.stderr": {
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    "/private/tmp/phase5_task_start_a_primaldual_checkpoint_v2_20261010/actual-dell/session-task-start-a-primaldual-v2-20261010-attempt5/link-attempt1/AFTER_INPUT_IDENTITIES.json": {
+      "bytes": 4334,
+      "sha256": "2615650254f15a7b38a77eb4bc5793c6c4443a56e1f199c83229e91133472894"
+    },
+    "/private/tmp/phase5_task_start_a_primaldual_checkpoint_v2_20261010/actual-dell/session-task-start-a-primaldual-v2-20261010-attempt5/link-attempt1/AFTER_READONLY_ROSTERS.json": {
+      "bytes": 3,
+      "sha256": "37517e5f3dc66819f61f5a7bb8ace1921282415f10551d2defa5c3eb0985b570"
+    },
+    "/private/tmp/phase5_task_start_a_primaldual_checkpoint_v2_20261010/actual-dell/session-task-start-a-primaldual-v2-20261010-attempt5/link-attempt1/compile-1.stdout": {
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    "/private/tmp/phase5_task_start_a_primaldual_checkpoint_v2_20261010/actual-dell/session-task-start-a-primaldual-v2-20261010-attempt5/build-attempt1/BEFORE_READONLY_ROSTERS.json": {
+      "bytes": 3,
+      "sha256": "37517e5f3dc66819f61f5a7bb8ace1921282415f10551d2defa5c3eb0985b570"
+    },
+    "/private/tmp/phase5_task_start_a_primaldual_checkpoint_v2_20261010/actual-dell/session-task-start-a-primaldual-v2-20261010-attempt5/build-attempt1/BATCH_PREFIX.json": {
+      "bytes": 11490,
+      "sha256": "23686745b583c420686d0ec2f90f43e8cefa7873ed67ee262df0ec56aeea5314"
+    },
+    "/private/tmp/phase5_task_start_a_primaldual_checkpoint_v2_20261010/actual-dell/session-task-start-a-primaldual-v2-20261010-attempt5/build-attempt1/BUILD_RESULT.json": {
+      "bytes": 11544,
+      "sha256": "499879f37131e95300855631799eda5188aa3049dd0a917531e580d6eb1f323a"
+    },
+    "/private/tmp/phase5_task_start_a_primaldual_checkpoint_v2_20261010/actual-dell/session-task-start-a-primaldual-v2-20261010-attempt5/build-attempt1/CONTROL_EVENT_PREFIX.json": {
+      "bytes": 988,
+      "sha256": "8f6e3a1d591c62e47efed5f4898b7b4dd3f76b829420b853ae132200abfe0285"
+    },
+    "/private/tmp/phase5_task_start_a_primaldual_checkpoint_v2_20261010/actual-dell/session-task-start-a-primaldual-v2-20261010-attempt5/build-attempt1/compile-2.stderr": {
+      "bytes": 2896,
+      "sha256": "053931ba2f15348f203bd21691d04f36a7f5bc77191e7dafe7ba4ea028a07a08"
+    },
+    "/private/tmp/phase5_task_start_a_primaldual_checkpoint_v2_20261010/actual-dell/session-task-start-a-primaldual-v2-20261010-attempt5/build-attempt1/compile-2.stdout": {
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    "/private/tmp/phase5_task_start_a_primaldual_checkpoint_v2_20261010/actual-dell/session-task-start-a-primaldual-v2-20261010-attempt5/build-attempt1/BEFORE_INPUT_IDENTITIES.json": {
+      "bytes": 3,
+      "sha256": "37517e5f3dc66819f61f5a7bb8ace1921282415f10551d2defa5c3eb0985b570"
+    },
+    "/private/tmp/phase5_task_start_a_primaldual_checkpoint_v2_20261010/actual-dell/session-task-start-a-primaldual-v2-20261010-attempt5/build-attempt1/compile-1.result.json": {
+      "bytes": 5188,
+      "sha256": "183de44ece3ecff75c94a01ca7d247f84be18ceec9607f493dfafdf65c1bf37c"
+    },
+    "/private/tmp/phase5_task_start_a_primaldual_checkpoint_v2_20261010/actual-dell/session-task-start-a-primaldual-v2-20261010-attempt5/build-attempt1/compile-1.stderr": {
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    "/private/tmp/phase5_task_start_a_primaldual_checkpoint_v2_20261010/actual-dell/session-task-start-a-primaldual-v2-20261010-attempt5/build-attempt1/AFTER_INPUT_IDENTITIES.json": {
+      "bytes": 3,
+      "sha256": "37517e5f3dc66819f61f5a7bb8ace1921282415f10551d2defa5c3eb0985b570"
+    },
+    "/private/tmp/phase5_task_start_a_primaldual_checkpoint_v2_20261010/actual-dell/session-task-start-a-primaldual-v2-20261010-attempt5/build-attempt1/AFTER_READONLY_ROSTERS.json": {
+      "bytes": 3,
+      "sha256": "37517e5f3dc66819f61f5a7bb8ace1921282415f10551d2defa5c3eb0985b570"
+    },
+    "/private/tmp/phase5_task_start_a_primaldual_checkpoint_v2_20261010/actual-dell/session-task-start-a-primaldual-v2-20261010-attempt5/build-attempt1/compile-1.stdout": {
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    "/private/tmp/phase5_task_start_a_primaldual_checkpoint_v2_20261010/actual-dell/session-task-start-a-primaldual-v2-20261010-attempt5/build-attempt1/compile-2.result.json": {
+      "bytes": 5189,
+      "sha256": "15810c333dd21c41c391ab3bf8894cdf4cab429a1a2bc5a699bb6aef349528fc"
+    },
+    "/private/tmp/phase5_task_start_a_primaldual_checkpoint_v2_20261010/actual-dell/session-task-start-a-primaldual-v2-20261010-attempt5/run-attempt1/BEFORE_READONLY_ROSTERS.json": {
+      "bytes": 3,
+      "sha256": "37517e5f3dc66819f61f5a7bb8ace1921282415f10551d2defa5c3eb0985b570"
+    },
+    "/private/tmp/phase5_task_start_a_primaldual_checkpoint_v2_20261010/actual-dell/session-task-start-a-primaldual-v2-20261010-attempt5/run-attempt1/BATCH_PREFIX.json": {
+      "bytes": 2104,
+      "sha256": "7beb698a41dd68be35c25d76a87848a9602d7019db0f0891d91e03d7ecae5116"
+    },
+    "/private/tmp/phase5_task_start_a_primaldual_checkpoint_v2_20261010/actual-dell/session-task-start-a-primaldual-v2-20261010-attempt5/run-attempt1/CONTROL_EVENT_PREFIX.json": {
+      "bytes": 796,
+      "sha256": "aa2f0162acb6e430c3fa9a0d7dd78b88bc7afd3fba25e271a85230a45a9ccdea"
+    },
+    "/private/tmp/phase5_task_start_a_primaldual_checkpoint_v2_20261010/actual-dell/session-task-start-a-primaldual-v2-20261010-attempt5/run-attempt1/BEFORE_INPUT_IDENTITIES.json": {
+      "bytes": 495113,
+      "sha256": "d5d3ee870dc66d92a57282080f7d7e6d087f10e00df4fab6cbf8050c39c7f81c"
+    },
+    "/private/tmp/phase5_task_start_a_primaldual_checkpoint_v2_20261010/actual-dell/session-task-start-a-primaldual-v2-20261010-attempt5/run-attempt1/compile-1.result.json": {
+      "bytes": 1784,
+      "sha256": "ccd78bba048e8e04f6cb7a4be3a0cea4469d2fa20e8ef060a520470efecd2c24"
+    },
+    "/private/tmp/phase5_task_start_a_primaldual_checkpoint_v2_20261010/actual-dell/session-task-start-a-primaldual-v2-20261010-attempt5/run-attempt1/compile-1.stderr": {
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    "/private/tmp/phase5_task_start_a_primaldual_checkpoint_v2_20261010/actual-dell/session-task-start-a-primaldual-v2-20261010-attempt5/run-attempt1/AFTER_INPUT_IDENTITIES.json": {
+      "bytes": 495113,
+      "sha256": "d5d3ee870dc66d92a57282080f7d7e6d087f10e00df4fab6cbf8050c39c7f81c"
+    },
+    "/private/tmp/phase5_task_start_a_primaldual_checkpoint_v2_20261010/actual-dell/session-task-start-a-primaldual-v2-20261010-attempt5/run-attempt1/BUILD_FAILURE.json": {
+      "bytes": 2175,
+      "sha256": "5fc9b38ef24b47e4da7b696f1792d71a1e3b9df53647123eff51a320d188aaff"
+    },
+    "/private/tmp/phase5_task_start_a_primaldual_checkpoint_v2_20261010/actual-dell/session-task-start-a-primaldual-v2-20261010-attempt5/run-attempt1/AFTER_READONLY_ROSTERS.json": {
+      "bytes": 3,
+      "sha256": "37517e5f3dc66819f61f5a7bb8ace1921282415f10551d2defa5c3eb0985b570"
+    },
+    "/private/tmp/phase5_task_start_a_primaldual_checkpoint_v2_20261010/actual-dell/session-task-start-a-primaldual-v2-20261010-attempt5/run-attempt1/compile-1.stdout": {
+      "bytes": 132,
+      "sha256": "7e23909b8fc6b1a12eb1582a4432989a377cb330dd005a7521dcf831a7430ece"
+    },
+    "/private/tmp/phase5_task_start_a_primaldual_checkpoint_v2_20261010/actual-dell/session-task-start-a-primaldual-v2-20261010-attempt5/profile-version1/active_input.json": {
+      "bytes": 326596,
+      "sha256": "c3065697c28ae1644b45f3ee77981921e08cb7d16e7a49bdc9cc9e1bf3308c47"
+    },
+    "/private/tmp/phase5_task_start_a_primaldual_checkpoint_v2_20261010/actual-dell/session-task-start-a-primaldual-v2-20261010-attempt5/src/invariant_tests.cpp": {
+      "bytes": 4721,
+      "sha256": "f5a859d4cf9d79a5ae1b533b8dd62776f2bba6599dfdf691a2915ef3296a33f9"
+    },
+    "/private/tmp/phase5_task_start_a_primaldual_checkpoint_v2_20261010/actual-dell/session-task-start-a-primaldual-v2-20261010-attempt5/src/normalization.cpp": {
+      "bytes": 23976,
+      "sha256": "a0cd0c9cdb505f922f1744f24cf115057b6ba9f3a9bc1b3ed0c9bdb82d358ed5"
+    },
+    "/private/tmp/phase5_task_start_a_primaldual_checkpoint_v2_20261010/actual-dell/session-task-start-a-primaldual-v2-20261010-attempt5/src/session_primitives.hpp": {
+      "bytes": 2259,
+      "sha256": "0b76bc232ed81dc9b4831617ae1690cfc287def914b8bca5f05ce6e6e25b6080"
+    },
+    "/private/tmp/phase5_task_start_a_primaldual_checkpoint_v2_20261010/actual-dell/session-task-start-a-primaldual-v2-20261010-attempt5/src/model_boundary.cpp": {
+      "bytes": 14091,
+      "sha256": "04c94821ee57669431b8c7bceac1d66004fdfc8af11424008e89890a7486630a"
+    },
+    "/private/tmp/phase5_task_start_a_primaldual_checkpoint_v2_20261010/actual-dell/session-task-start-a-primaldual-v2-20261010-attempt5/src/solver_forensics.cpp": {
+      "bytes": 26514,
+      "sha256": "664c1d480e23c1ddef4f45a57165cba871213740329f8693c897d7c07ee7af27"
+    },
+    "/private/tmp/phase5_task_start_a_primaldual_checkpoint_v2_20261010/actual-dell/session-task-start-a-primaldual-v2-20261010-attempt5/src/runtime_observer.hpp": {
+      "bytes": 5472,
+      "sha256": "0e0ef9cfe8bc1c8a5bb38327148110dd6db4ebfe4e2ba479de8d1d78175941c8"
+    },
+    "/private/tmp/phase5_task_start_a_primaldual_checkpoint_v2_20261010/actual-dell/session-task-start-a-primaldual-v2-20261010-attempt5/src/lossless_evidence.hpp": {
+      "bytes": 1887,
+      "sha256": "6e40b8878ddc78e8422c1301ca62ca98ed854fc2f57e6f549f5685cc1387bccc"
+    },
+    "/private/tmp/phase5_task_start_a_primaldual_checkpoint_v2_20261010/actual-dell/session-task-start-a-primaldual-v2-20261010-attempt5/src/affine_assembly.cpp": {
+      "bytes": 28981,
+      "sha256": "d478eda1f0fe97bfc41851515f4baa3e485fd4a57968a62dcb6233ae1157bbd5"
+    },
+    "/private/tmp/phase5_task_start_a_primaldual_checkpoint_v2_20261010/actual-dell/session-task-start-a-primaldual-v2-20261010-attempt5/src/integrated_horizon_qp.hpp": {
+      "bytes": 10599,
+      "sha256": "066da1b1f9e6228cef56e2b52ae73a852a08b54836f53da8e01a6a707aa69299"
+    },
+    "/private/tmp/phase5_task_start_a_primaldual_checkpoint_v2_20261010/actual-dell/session-task-start-a-primaldual-v2-20261010-attempt5/src/task_local_provider.cpp": {
+      "bytes": 1839,
+      "sha256": "051b424236979f9fe7ea4cb96564f54969025c997bfba2c61d347a23f7fbae4c"
+    },
+    "/private/tmp/phase5_task_start_a_primaldual_checkpoint_v2_20261010/actual-dell/session-task-start-a-primaldual-v2-20261010-attempt5/src/box_screen_tests.cpp": {
+      "bytes": 2954,
+      "sha256": "d922876babec2867dd1293bcee259ac12e4b2a6af5a30dd551209e097c0abaf8"
+    },
+    "/private/tmp/phase5_task_start_a_primaldual_checkpoint_v2_20261010/actual-dell/session-task-start-a-primaldual-v2-20261010-attempt5/src/active_first_cycle.cpp": {
+      "bytes": 20037,
+      "sha256": "4a292a27db7e720af0c82cec5b565f8d35781edc7e33223f48ce47fce057f880"
+    },
+    "/private/tmp/phase5_task_start_a_primaldual_checkpoint_v2_20261010/actual-dell/session-task-start-a-primaldual-v2-20261010-attempt5/src/observer_tests.cpp": {
+      "bytes": 3785,
+      "sha256": "d1ff998984981a5ded1e92b8d452503e8b489ecfb0d067fb04ff5fd616d02877"
+    },
+    "/private/tmp/phase5_task_start_a_primaldual_checkpoint_v2_20261010/actual-dell/session-task-start-a-primaldual-v2-20261010-attempt5/src/solver_forensics.hpp": {
+      "bytes": 860,
+      "sha256": "02b3a3d33ea64a351b228b96b2e0590b7a79fb4e9b87da78dc28c59465aca3bb"
+    },
+    "/private/tmp/phase5_task_start_a_primaldual_checkpoint_v2_20261010/actual-dell/session-task-start-a-primaldual-v2-20261010-attempt5/src/runtime_observer.cpp": {
+      "bytes": 17215,
+      "sha256": "9bbbe145f0cfa78c24f1d2b56008b065f1f3838ee54fa727eb76a88578fb607f"
+    },
+    "/private/tmp/phase5_task_start_a_primaldual_checkpoint_v2_20261010/actual-dell/session-task-start-a-primaldual-v2-20261010-attempt5/src/lossless_evidence.cpp": {
+      "bytes": 15969,
+      "sha256": "04680550f459ebf6bf0136bd611e2707b18562ddea5d44e4fc1c8782efb1bdd6"
+    },
+    "/private/tmp/phase5_task_start_a_primaldual_checkpoint_v2_20261010/actual-dell/session-task-start-a-primaldual-v2-20261010-attempt5/src/task_local_provider.hpp": {
+      "bytes": 640,
+      "sha256": "1819e2f626fb0ff65ad7e7e8de0b0b52f625e6bf435b073d7cca55722d76f093"
+    },
+    "/private/tmp/phase5_task_start_a_primaldual_checkpoint_v2_20261010/actual-dell/session-task-start-a-primaldual-v2-20261010-attempt5/src/affine_assembly.hpp": {
+      "bytes": 6026,
+      "sha256": "6faee2961242052c7655da41e8988dd0844f14c3cfa885672aa7c03eaa1dcb57"
+    },
+    "/private/tmp/phase5_task_start_a_primaldual_checkpoint_v2_20261010/actual-dell/session-task-start-a-primaldual-v2-20261010-attempt5/src/integrated_horizon_qp.cpp": {
+      "bytes": 69975,
+      "sha256": "a7318504af8b4969b442fe0769fe9f06cf87110c1a9f6402470c054f3a0c3046"
+    },
+    "/private/tmp/phase5_task_start_a_primaldual_checkpoint_v2_20261010/actual-dell/session-task-start-a-primaldual-v2-20261010-attempt5/src/normalization.hpp": {
+      "bytes": 4288,
+      "sha256": "9456be5c205f23d2aa2210eac02286d030204a446af003ee85362b971ccb43d8"
+    },
+    "/private/tmp/phase5_task_start_a_primaldual_checkpoint_v2_20261010/actual-dell/session-task-start-a-primaldual-v2-20261010-attempt5/src/model_boundary.hpp": {
+      "bytes": 2528,
+      "sha256": "51b2e845860fb4faecfc95b7f9873439ab4e682adce37a290e6fe704ee48a9d9"
+    },
+    "/private/tmp/phase5_task_start_a_primaldual_checkpoint_v2_20261010/actual-dell/session-task-start-a-primaldual-v2-20261010-attempt5/src/linear_box_screen.hpp": {
+      "bytes": 3916,
+      "sha256": "b649eff43293a3078b7b46a0166fa0f8a2ac59f3a8496c8c73a98c275fed96d1"
+    },
+    "/private/tmp/phase5_task_start_a_primaldual_checkpoint_v2_20261010/actual-dell/session-task-start-a-primaldual-v2-20261010-attempt5/run-attempt1/artifacts/model_open.bin": {
+      "bytes": 1275,
+      "sha256": "f5ec5debb244e76c025ca107bc44ae12d03755fd7159d86dafbe18ef126f0a07"
+    },
+    "/private/tmp/phase5_task_start_a_primaldual_checkpoint_v2_20261010/actual-dell/session-task-start-a-primaldual-v2-20261010-attempt5/run-attempt1/artifacts/bootstrap.bin": {
+      "bytes": 150,
+      "sha256": "814d79448cdd7569c35fd74570cba93f5ccf7f0ab780789a6d08fa554478454d"
+    },
+    "/private/tmp/phase5_task_start_a_primaldual_checkpoint_v2_20261010/actual-dell/session-task-start-a-primaldual-v2-20261010-attempt5/run-attempt1/artifacts/actual_warmup.bin": {
+      "bytes": 504405,
+      "sha256": "ddfe59b603e0caa2ef85b0bb3e3e14a75e4f57a639cc22f8bad2fda249802901"
+    },
+    "/private/tmp/phase5_task_start_a_primaldual_checkpoint_v2_20261010/actual-dell/session-task-start-a-primaldual-v2-20261010-attempt5/run-attempt1/artifacts/entry_completion.bin": {
+      "bytes": 225,
+      "sha256": "6ec334933f174eed2ceef9a9043b8a456729ad77eba7ac0ee877f8e7e114a74a"
+    },
+    "/private/tmp/phase5_task_start_a_primaldual_checkpoint_v2_20261010/actual-dell/session-task-start-a-primaldual-v2-20261010-attempt5/run-attempt1/artifacts/observation_before.bin": {
+      "bytes": 2540,
+      "sha256": "883193da702ea245c4c4093dafed5b7c89c17ae239a94924a16fe9e7f38b6f84"
+    },
+    "/private/tmp/phase5_task_start_a_primaldual_checkpoint_v2_20261010/actual-dell/session-task-start-a-primaldual-v2-20261010-attempt5/run-attempt1/artifacts/solver_row_screen.bin": {
+      "bytes": 482308,
+      "sha256": "00f777dff13c4d55e7005bc2a386b5c3d5156510507f792a45658d86d255c244"
+    },
+    "/private/tmp/phase5_task_start_a_primaldual_checkpoint_v2_20261010/actual-dell/session-task-start-a-primaldual-v2-20261010-attempt5/run-attempt1/artifacts/MANIFEST.yaml": {
+      "bytes": 3454,
+      "sha256": "f7dcf414f0658a009334f69cad4605a3b6610e092103b076baee3ffc046c5cbd"
+    },
+    "/private/tmp/phase5_task_start_a_primaldual_checkpoint_v2_20261010/actual-dell/session-task-start-a-primaldual-v2-20261010-attempt5/run-attempt1/artifacts/journal_receipt.bin": {
+      "bytes": 549,
+      "sha256": "6b171853e19e28a2d5c7c82b2814fa3bf827cfdd7965dd5135634e3dc69d8fc7"
+    },
+    "/private/tmp/phase5_task_start_a_primaldual_checkpoint_v2_20261010/actual-dell/session-task-start-a-primaldual-v2-20261010-attempt5/run-attempt1/artifacts/observation_after.bin": {
+      "bytes": 2540,
+      "sha256": "5d300ab2a79fbbd4e39391c2ffba90727755b1f8af07fa9619a61cec1fcca1b1"
+    },
+    "/private/tmp/phase5_task_start_a_primaldual_checkpoint_v2_20261010/actual-dell/session-task-start-a-primaldual-v2-20261010-attempt5/run-attempt1/artifacts/external_numeric_guess.bin": {
+      "bytes": 51596,
+      "sha256": "d70842957ecb86c303e6855dcc2c92c72ff75fb2e4742f9f463c4bf09c38812a"
+    },
+    "/private/tmp/phase5_task_start_a_primaldual_checkpoint_v2_20261010/actual-dell/session-task-start-a-primaldual-v2-20261010-attempt5/run-attempt1/artifacts/candidate.bin": {
+      "bytes": 107358,
+      "sha256": "e834958376491701325fa5b0a47251b0af3df88cdfe2b103fdb2d96d34af1866"
+    },
+    "/private/tmp/phase5_task_start_a_primaldual_checkpoint_v2_20261010/actual-dell/session-task-start-a-primaldual-v2-20261010-attempt5/run-attempt1/artifacts/inline_qp.bin": {
+      "bytes": 19485833,
+      "sha256": "7b8d8711d7bc1ad17c435499d8354566562a9260745b5fb25d168652d20fdb62"
+    },
+    "/private/tmp/phase5_task_start_a_primaldual_checkpoint_v2_20261010/actual-dell/session-task-start-a-primaldual-v2-20261010-attempt5/run-attempt1/artifacts/actual_step_journal.csv": {
+      "bytes": 1813021,
+      "sha256": "eea9da2c74e5b8e20776e7e0df04e8926c9ab278117fcce5c9fb03ac16927313"
+    },
+    "/private/tmp/phase5_task_start_a_primaldual_checkpoint_v2_20261010/actual-dell/session-task-start-a-primaldual-v2-20261010-attempt5/run-attempt1/artifacts/original_nominal.bin": {
+      "bytes": 12716815,
+      "sha256": "33d74fc8e34227d9841388bb1f2374b6ee7f298528f62627a22011d406c4b97d"
+    },
+    "/private/tmp/phase5_task_start_a_primaldual_checkpoint_v2_20261010/actual-dell/session-task-start-a-primaldual-v2-20261010-attempt5/run-attempt1/artifacts/qp_equality_reduction.bin": {
+      "bytes": 16913498,
+      "sha256": "9a96b4d39e4dd2901a3ec2741649c989a2151d0ebc800b793ceb7ffe8610fab8"
+    },
+    "/private/tmp/phase5_task_start_a_primaldual_checkpoint_v2_20261010/source-review-frozen/src/invariant_tests.cpp": {
+      "bytes": 4721,
+      "sha256": "f5a859d4cf9d79a5ae1b533b8dd62776f2bba6599dfdf691a2915ef3296a33f9"
+    },
+    "/private/tmp/phase5_task_start_a_primaldual_checkpoint_v2_20261010/source-review-frozen/src/normalization.cpp": {
+      "bytes": 23976,
+      "sha256": "a0cd0c9cdb505f922f1744f24cf115057b6ba9f3a9bc1b3ed0c9bdb82d358ed5"
+    },
+    "/private/tmp/phase5_task_start_a_primaldual_checkpoint_v2_20261010/source-review-frozen/src/session_primitives.hpp": {
+      "bytes": 2259,
+      "sha256": "0b76bc232ed81dc9b4831617ae1690cfc287def914b8bca5f05ce6e6e25b6080"
+    },
+    "/private/tmp/phase5_task_start_a_primaldual_checkpoint_v2_20261010/source-review-frozen/src/model_boundary.cpp": {
+      "bytes": 14091,
+      "sha256": "04c94821ee57669431b8c7bceac1d66004fdfc8af11424008e89890a7486630a"
+    },
+    "/private/tmp/phase5_task_start_a_primaldual_checkpoint_v2_20261010/source-review-frozen/src/solver_forensics.cpp": {
+      "bytes": 26514,
+      "sha256": "664c1d480e23c1ddef4f45a57165cba871213740329f8693c897d7c07ee7af27"
+    },
+    "/private/tmp/phase5_task_start_a_primaldual_checkpoint_v2_20261010/source-review-frozen/src/runtime_observer.hpp": {
+      "bytes": 5472,
+      "sha256": "0e0ef9cfe8bc1c8a5bb38327148110dd6db4ebfe4e2ba479de8d1d78175941c8"
+    },
+    "/private/tmp/phase5_task_start_a_primaldual_checkpoint_v2_20261010/source-review-frozen/src/lossless_evidence.hpp": {
+      "bytes": 1887,
+      "sha256": "6e40b8878ddc78e8422c1301ca62ca98ed854fc2f57e6f549f5685cc1387bccc"
+    },
+    "/private/tmp/phase5_task_start_a_primaldual_checkpoint_v2_20261010/source-review-frozen/src/affine_assembly.cpp": {
+      "bytes": 28981,
+      "sha256": "d478eda1f0fe97bfc41851515f4baa3e485fd4a57968a62dcb6233ae1157bbd5"
+    },
+    "/private/tmp/phase5_task_start_a_primaldual_checkpoint_v2_20261010/source-review-frozen/src/integrated_horizon_qp.hpp": {
+      "bytes": 10599,
+      "sha256": "066da1b1f9e6228cef56e2b52ae73a852a08b54836f53da8e01a6a707aa69299"
+    },
+    "/private/tmp/phase5_task_start_a_primaldual_checkpoint_v2_20261010/source-review-frozen/src/task_local_provider.cpp": {
+      "bytes": 1839,
+      "sha256": "051b424236979f9fe7ea4cb96564f54969025c997bfba2c61d347a23f7fbae4c"
+    },
+    "/private/tmp/phase5_task_start_a_primaldual_checkpoint_v2_20261010/source-review-frozen/src/box_screen_tests.cpp": {
+      "bytes": 2954,
+      "sha256": "d922876babec2867dd1293bcee259ac12e4b2a6af5a30dd551209e097c0abaf8"
+    },
+    "/private/tmp/phase5_task_start_a_primaldual_checkpoint_v2_20261010/source-review-frozen/src/active_first_cycle.cpp": {
+      "bytes": 20037,
+      "sha256": "4a292a27db7e720af0c82cec5b565f8d35781edc7e33223f48ce47fce057f880"
+    },
+    "/private/tmp/phase5_task_start_a_primaldual_checkpoint_v2_20261010/source-review-frozen/src/observer_tests.cpp": {
+      "bytes": 3785,
+      "sha256": "d1ff998984981a5ded1e92b8d452503e8b489ecfb0d067fb04ff5fd616d02877"
+    },
+    "/private/tmp/phase5_task_start_a_primaldual_checkpoint_v2_20261010/source-review-frozen/src/solver_forensics.hpp": {
+      "bytes": 860,
+      "sha256": "02b3a3d33ea64a351b228b96b2e0590b7a79fb4e9b87da78dc28c59465aca3bb"
+    },
+    "/private/tmp/phase5_task_start_a_primaldual_checkpoint_v2_20261010/source-review-frozen/src/runtime_observer.cpp": {
+      "bytes": 17215,
+      "sha256": "9bbbe145f0cfa78c24f1d2b56008b065f1f3838ee54fa727eb76a88578fb607f"
+    },
+    "/private/tmp/phase5_task_start_a_primaldual_checkpoint_v2_20261010/source-review-frozen/src/lossless_evidence.cpp": {
+      "bytes": 15969,
+      "sha256": "04680550f459ebf6bf0136bd611e2707b18562ddea5d44e4fc1c8782efb1bdd6"
+    },
+    "/private/tmp/phase5_task_start_a_primaldual_checkpoint_v2_20261010/source-review-frozen/src/task_local_provider.hpp": {
+      "bytes": 640,
+      "sha256": "1819e2f626fb0ff65ad7e7e8de0b0b52f625e6bf435b073d7cca55722d76f093"
+    },
+    "/private/tmp/phase5_task_start_a_primaldual_checkpoint_v2_20261010/source-review-frozen/src/affine_assembly.hpp": {
+      "bytes": 6026,
+      "sha256": "6faee2961242052c7655da41e8988dd0844f14c3cfa885672aa7c03eaa1dcb57"
+    },
+    "/private/tmp/phase5_task_start_a_primaldual_checkpoint_v2_20261010/source-review-frozen/src/integrated_horizon_qp.cpp": {
+      "bytes": 69975,
+      "sha256": "a7318504af8b4969b442fe0769fe9f06cf87110c1a9f6402470c054f3a0c3046"
+    },
+    "/private/tmp/phase5_task_start_a_primaldual_checkpoint_v2_20261010/source-review-frozen/src/normalization.hpp": {
+      "bytes": 4288,
+      "sha256": "9456be5c205f23d2aa2210eac02286d030204a446af003ee85362b971ccb43d8"
+    },
+    "/private/tmp/phase5_task_start_a_primaldual_checkpoint_v2_20261010/source-review-frozen/src/model_boundary.hpp": {
+      "bytes": 2528,
+      "sha256": "51b2e845860fb4faecfc95b7f9873439ab4e682adce37a290e6fe704ee48a9d9"
+    },
+    "/private/tmp/phase5_task_start_a_primaldual_checkpoint_v2_20261010/source-review-frozen/src/linear_box_screen.hpp": {
+      "bytes": 3916,
+      "sha256": "b649eff43293a3078b7b46a0166fa0f8a2ac59f3a8496c8c73a98c275fed96d1"
+    },
+    "/private/tmp/phase5_task_start_a_checkpoint_v1_20261010/READY.json": {
+      "bytes": 38310,
+      "sha256": "17d59d457b1ba039141883a211e5259717a012f6dd8a48c5b81f892e5dbef3b6"
+    },
+    "/private/tmp/phase5_task_start_a_checkpoint_v1_20261010/actual-dell/repair2/run-attempt1/artifacts/actual_warmup.bin": {
+      "bytes": 504405,
+      "sha256": "ddfe59b603e0caa2ef85b0bb3e3e14a75e4f57a639cc22f8bad2fda249802901"
+    },
+    "/private/tmp/phase5_task_start_a_checkpoint_v1_20261010/actual-dell/repair2/run-attempt1/artifacts/observation_before.bin": {
+      "bytes": 2540,
+      "sha256": "72b8c75bb332885a97905e85cb9e17a3398e97368f17a81cec916f05c53c1b0d"
+    },
+    "/private/tmp/phase5_task_start_a_checkpoint_v1_20261010/actual-dell/repair2/run-attempt1/artifacts/inline_qp.bin": {
+      "bytes": 19485833,
+      "sha256": "7e80228ce7c30a6671fa4aacfb9281d4b27b14c611b726ec119b0a2d1a183c4f"
+    },
+    "/private/tmp/phase5_task_start_a_checkpoint_v1_20261010/actual-dell/repair2/run-attempt1/artifacts/actual_step_journal.csv": {
+      "bytes": 1813021,
+      "sha256": "eea9da2c74e5b8e20776e7e0df04e8926c9ab278117fcce5c9fb03ac16927313"
+    },
+    "/private/tmp/phase5_task_start_a_checkpoint_v1_20261010/actual-dell/repair2/run-attempt1/artifacts/original_nominal.bin": {
+      "bytes": 12716345,
+      "sha256": "7e4b1f6960f7d2d4f5cd025be5861a0adc585b2427871c8777c542c39a6b82d6"
+    },
+    "/private/tmp/phase5_task_start_a_checkpoint_v1_20261010/actual-dell/repair2/run-attempt1/artifacts/qp_equality_reduction.bin": {
+      "bytes": 16911194,
+      "sha256": "9483d47bd20c1b0f38157629bf86c5ce734ae50c5fbdcf6ea8e6474e51d565d2"
+    },
+    "/private/tmp/phase5_task_start_a_checkpoint_v1_20261010/actual-dell/attempt1/run-attempt1/artifacts/actual_warmup.bin": {
+      "bytes": 504405,
+      "sha256": "ddfe59b603e0caa2ef85b0bb3e3e14a75e4f57a639cc22f8bad2fda249802901"
+    },
+    "/private/tmp/phase5_task_start_a_checkpoint_v1_20261010/actual-dell/attempt1/run-attempt1/artifacts/observation_before.bin": {
+      "bytes": 2540,
+      "sha256": "e3d1a6551f230a194c2d4fb68e055f187725787d8e9586684a9c53be8fae8c7d"
+    },
+    "/private/tmp/phase5_task_start_a_checkpoint_v1_20261010/actual-dell/attempt1/run-attempt1/artifacts/actual_step_journal.csv": {
+      "bytes": 1813021,
+      "sha256": "eea9da2c74e5b8e20776e7e0df04e8926c9ab278117fcce5c9fb03ac16927313"
+    },
+    "/private/tmp/phase5_task_start_a_warm_checkpoint_v1_20261010/READY.json": {
+      "bytes": 25795,
+      "sha256": "2ea0ba48063e6e3999fa906d87ddc3f36ee855a6a681b4501770674db410a3e6"
+    },
+    "/private/tmp/phase5_task_start_a_warm_checkpoint_v1_20261010/actual-dell/session-task-start-a-warm-v1-20261010-attempt3/run-attempt1/artifacts/actual_warmup.bin": {
+      "bytes": 504405,
+      "sha256": "ddfe59b603e0caa2ef85b0bb3e3e14a75e4f57a639cc22f8bad2fda249802901"
+    },
+    "/private/tmp/phase5_task_start_a_warm_checkpoint_v1_20261010/actual-dell/session-task-start-a-warm-v1-20261010-attempt3/run-attempt1/artifacts/observation_before.bin": {
+      "bytes": 2540,
+      "sha256": "07f114a55713aff0be417e4c33644b277a95931734d7fb9089429218d1127fc1"
+    },
+    "/private/tmp/phase5_task_start_a_warm_checkpoint_v1_20261010/actual-dell/session-task-start-a-warm-v1-20261010-attempt3/run-attempt1/artifacts/inline_qp.bin": {
+      "bytes": 19485833,
+      "sha256": "aba93584e58cfc68332d42f3ccc31a8091a6448c3c23eae674be999e809817dc"
+    },
+    "/private/tmp/phase5_task_start_a_warm_checkpoint_v1_20261010/actual-dell/session-task-start-a-warm-v1-20261010-attempt3/run-attempt1/artifacts/actual_step_journal.csv": {
+      "bytes": 1813021,
+      "sha256": "eea9da2c74e5b8e20776e7e0df04e8926c9ab278117fcce5c9fb03ac16927313"
+    },
+    "/private/tmp/phase5_task_start_a_warm_checkpoint_v1_20261010/actual-dell/session-task-start-a-warm-v1-20261010-attempt3/run-attempt1/artifacts/original_nominal.bin": {
+      "bytes": 12716671,
+      "sha256": "4f951fbb2ae91e2f40823abb0f2a9dc0a45d761893ff48c95e1e97c4ba6f3037"
+    },
+    "/private/tmp/phase5_task_start_a_warm_checkpoint_v1_20261010/actual-dell/session-task-start-a-warm-v1-20261010-attempt3/run-attempt1/artifacts/qp_equality_reduction.bin": {
+      "bytes": 16911194,
+      "sha256": "1ac067c4c2f992fcc5f1055a7522c1d04795b58c7c8c0f144cd4ad84bee5a129"
+    },
+    "/private/tmp/root_independent_task_start_a_primaldual_review_20261010/SOURCE_READ_MANIFEST.json": {
+      "bytes": 2944,
+      "sha256": "a020779bcc023d4c8be52aa2fb86441f7eb32cff44d8a85d852f88cf1ec2a3f0"
+    },
+    "/private/tmp/root_independent_task_start_a_primaldual_review_20261010/source-read-snapshot/invariant_tests.cpp": {
+      "bytes": 4721,
+      "sha256": "f5a859d4cf9d79a5ae1b533b8dd62776f2bba6599dfdf691a2915ef3296a33f9"
+    },
+    "/private/tmp/root_independent_task_start_a_primaldual_review_20261010/source-read-snapshot/normalization.cpp": {
+      "bytes": 23976,
+      "sha256": "a0cd0c9cdb505f922f1744f24cf115057b6ba9f3a9bc1b3ed0c9bdb82d358ed5"
+    },
+    "/private/tmp/root_independent_task_start_a_primaldual_review_20261010/source-read-snapshot/session_primitives.hpp": {
+      "bytes": 2259,
+      "sha256": "0b76bc232ed81dc9b4831617ae1690cfc287def914b8bca5f05ce6e6e25b6080"
+    },
+    "/private/tmp/root_independent_task_start_a_primaldual_review_20261010/source-read-snapshot/model_boundary.cpp": {
+      "bytes": 14091,
+      "sha256": "04c94821ee57669431b8c7bceac1d66004fdfc8af11424008e89890a7486630a"
+    },
+    "/private/tmp/root_independent_task_start_a_primaldual_review_20261010/source-read-snapshot/solver_forensics.cpp": {
+      "bytes": 26514,
+      "sha256": "664c1d480e23c1ddef4f45a57165cba871213740329f8693c897d7c07ee7af27"
+    },
+    "/private/tmp/root_independent_task_start_a_primaldual_review_20261010/source-read-snapshot/runtime_observer.hpp": {
+      "bytes": 5472,
+      "sha256": "0e0ef9cfe8bc1c8a5bb38327148110dd6db4ebfe4e2ba479de8d1d78175941c8"
+    },
+    "/private/tmp/root_independent_task_start_a_primaldual_review_20261010/source-read-snapshot/lossless_evidence.hpp": {
+      "bytes": 1887,
+      "sha256": "6e40b8878ddc78e8422c1301ca62ca98ed854fc2f57e6f549f5685cc1387bccc"
+    },
+    "/private/tmp/root_independent_task_start_a_primaldual_review_20261010/source-read-snapshot/affine_assembly.cpp": {
+      "bytes": 28981,
+      "sha256": "d478eda1f0fe97bfc41851515f4baa3e485fd4a57968a62dcb6233ae1157bbd5"
+    },
+    "/private/tmp/root_independent_task_start_a_primaldual_review_20261010/source-read-snapshot/integrated_horizon_qp.hpp": {
+      "bytes": 10599,
+      "sha256": "066da1b1f9e6228cef56e2b52ae73a852a08b54836f53da8e01a6a707aa69299"
+    },
+    "/private/tmp/root_independent_task_start_a_primaldual_review_20261010/source-read-snapshot/task_local_provider.cpp": {
+      "bytes": 1839,
+      "sha256": "051b424236979f9fe7ea4cb96564f54969025c997bfba2c61d347a23f7fbae4c"
+    },
+    "/private/tmp/root_independent_task_start_a_primaldual_review_20261010/source-read-snapshot/box_screen_tests.cpp": {
+      "bytes": 2954,
+      "sha256": "d922876babec2867dd1293bcee259ac12e4b2a6af5a30dd551209e097c0abaf8"
+    },
+    "/private/tmp/root_independent_task_start_a_primaldual_review_20261010/source-read-snapshot/active_first_cycle.cpp": {
+      "bytes": 20037,
+      "sha256": "4a292a27db7e720af0c82cec5b565f8d35781edc7e33223f48ce47fce057f880"
+    },
+    "/private/tmp/root_independent_task_start_a_primaldual_review_20261010/source-read-snapshot/observer_tests.cpp": {
+      "bytes": 3785,
+      "sha256": "d1ff998984981a5ded1e92b8d452503e8b489ecfb0d067fb04ff5fd616d02877"
+    },
+    "/private/tmp/root_independent_task_start_a_primaldual_review_20261010/source-read-snapshot/solver_forensics.hpp": {
+      "bytes": 860,
+      "sha256": "02b3a3d33ea64a351b228b96b2e0590b7a79fb4e9b87da78dc28c59465aca3bb"
+    },
+    "/private/tmp/root_independent_task_start_a_primaldual_review_20261010/source-read-snapshot/runtime_observer.cpp": {
+      "bytes": 17215,
+      "sha256": "9bbbe145f0cfa78c24f1d2b56008b065f1f3838ee54fa727eb76a88578fb607f"
+    },
+    "/private/tmp/root_independent_task_start_a_primaldual_review_20261010/source-read-snapshot/lossless_evidence.cpp": {
+      "bytes": 15969,
+      "sha256": "04680550f459ebf6bf0136bd611e2707b18562ddea5d44e4fc1c8782efb1bdd6"
+    },
+    "/private/tmp/root_independent_task_start_a_primaldual_review_20261010/source-read-snapshot/task_local_provider.hpp": {
+      "bytes": 640,
+      "sha256": "1819e2f626fb0ff65ad7e7e8de0b0b52f625e6bf435b073d7cca55722d76f093"
+    },
+    "/private/tmp/root_independent_task_start_a_primaldual_review_20261010/source-read-snapshot/affine_assembly.hpp": {
+      "bytes": 6026,
+      "sha256": "6faee2961242052c7655da41e8988dd0844f14c3cfa885672aa7c03eaa1dcb57"
+    },
+    "/private/tmp/root_independent_task_start_a_primaldual_review_20261010/source-read-snapshot/integrated_horizon_qp.cpp": {
+      "bytes": 69975,
+      "sha256": "a7318504af8b4969b442fe0769fe9f06cf87110c1a9f6402470c054f3a0c3046"
+    },
+    "/private/tmp/root_independent_task_start_a_primaldual_review_20261010/source-read-snapshot/normalization.hpp": {
+      "bytes": 4288,
+      "sha256": "9456be5c205f23d2aa2210eac02286d030204a446af003ee85362b971ccb43d8"
+    },
+    "/private/tmp/root_independent_task_start_a_primaldual_review_20261010/source-read-snapshot/model_boundary.hpp": {
+      "bytes": 2528,
+      "sha256": "51b2e845860fb4faecfc95b7f9873439ab4e682adce37a290e6fe704ee48a9d9"
+    },
+    "/private/tmp/root_independent_task_start_a_primaldual_review_20261010/source-read-snapshot/linear_box_screen.hpp": {
+      "bytes": 3916,
+      "sha256": "b649eff43293a3078b7b46a0166fa0f8a2ac59f3a8496c8c73a98c275fed96d1"
+    }
+  },
+  "packet_files": 170,
+  "packet_bytes": 72856202,
+  "source_files": 22,
+  "old_solveOnce_primalOnly_and_legacy_backend_functions_byte_preserved": true,
+  "actual_warmup_state_history_nominalmaps_and_original_transformed_arrays_exact_A2_A3": true,
+  "recorded_guess_primal144_signeddual6211_finite_and_pinned": true,
+  "recorded_solver_primal_seed_equals_guess": true,
+  "original_and_scaled_digests": [
+    "47b33fe5ae43ae90b351a83fc7caba18ab960e076d570ff7c0dd1685d3eceab4",
+    "4605e2647e35d27677e755554493cd569ff79feb9c235ed8432bf07af8b4cad3"
+  ],
+  "guess_source_file_bytes": 61682,
+  "full_guess_JSON_and_derivation_evidence_in_packet": false,
+  "guess_KKT_diagnostics": {
+    "scaled_stationarity": 1.1796119636642288e-16,
+    "scaled_box_violation": 5.204170427930421e-18,
+    "signed_complementarity_maxabs": 3.3374646150860586e-19,
+    "not_derivation_proof": true
+  },
+  "loader_bytecap_and_exact7shapes_still_missing": true,
+  "native_result": {
+    "status": 0,
+    "raw_status": 1,
+    "api_error": 0,
+    "iterations": 1,
+    "setup": 0.031914972,
+    "solve": 0.002174718,
+    "primal": 2.797316654917533e-16,
+    "dual": 5.551115123125783e-17,
+    "polish_status": 1,
+    "numerical_U_count": 160,
+    "request_authorized": false,
+    "original_rows_scanned": 13156,
+    "preview_forensic_only": {
+      "C_next": [
+        -1.2457657424183497,
+        0.09664751352807203,
+        1.154632337442312,
+        -2.7819773450108474,
+        -0.09755089811515172,
+        4.385247182268161,
+        -1.6281269290533666
+      ],
+      "w_next": [
+        1.62293532002618e-06,
+        -7.321666769671514e-05,
+        5.220169793692301e-05,
+        0.00015829367505023012,
+        -5.469686373526724e-06,
+        0.00011965455062448138,
+        -2.398140885303549e-05
+      ],
+      "alpha": [
+        0.000405733830006545,
+        -0.018304166924178782,
+        0.013050424484230752,
+        0.03957341876255753,
+        -0.001367421593381681,
+        0.029913637656120345,
+        -0.005995352213258872
+      ],
+      "implied_alpha": [
+        0.000405733830006545,
+        -0.018304166924178782,
+        0.013050424484230752,
+        0.03957341876255753,
+        -0.001367421593381681,
+        0.029913637656120345,
+        -0.005995352213258872
+      ],
+      "command_jerk": [
+        0.10143345750163625,
+        -4.576041731044696,
+        3.262606121057688,
+        9.893354690639383,
+        -0.3418553983454202,
+        7.478409414030086,
+        -1.498838053314718
+      ],
+      "s_next": 1.6000000000000003e-07,
+      "r_next": 8.000000000000002e-05,
+      "b": 0.020000000000000004,
+      "progress_jerk": 5.000000000000001,
+      "half_s": [
+        4.000000000000001e-08,
+        1.6000000000000003e-07
+      ],
+      "half_r": [
+        4.000000000000001e-05,
+        8.000000000000002e-05
+      ],
+      "boundary": [
+        0,
+        0
+      ]
+    },
+    "tail": 0,
+    "request": 0,
+    "stop": "candidate b/feedback jerk strict bound"
+  },
+  "full_original_SI": {
+    "recorded_max": 7.105427357601002e-15,
+    "independent_max": 7.105427357601002e-15,
+    "independent_worst_row": 203,
+    "label": "feedback_jerk/4/7",
+    "row_violation_vector_error": 1.5178830414797062e-18,
+    "gate1e_7_pass": true
+  },
+  "strict_history": {
+    "first_failure": {
+      "kind": "b_or_progress_jerk",
+      "tick": 1,
+      "cell": 0,
+      "b": 0.020000000000000004,
+      "previous_b": 0.0,
+      "progress_jerk": 5.000000000000001,
+      "cap": 5
+    },
+    "all_failures": [
+      {
+        "kind": "b_or_progress_jerk",
+        "tick": 1,
+        "cell": 0,
+        "b": 0.020000000000000004,
+        "previous_b": 0.0,
+        "progress_jerk": 5.000000000000001,
+        "cap": 5
+      },
+      {
+        "kind": "b_or_progress_jerk",
+        "tick": 2,
+        "cell": 1,
+        "b": 0.04000000000000001,
+        "previous_b": 0.020000000000000004,
+        "progress_jerk": 5.000000000000001,
+        "cap": 5
+      },
+      {
+        "kind": "b_or_progress_jerk",
+        "tick": 3,
+        "cell": 2,
+        "b": 0.06000000000000002,
+        "previous_b": 0.04000000000000001,
+        "progress_jerk": 5.000000000000003,
+        "cap": 5
+      },
+      {
+        "kind": "b_or_progress_jerk",
+        "tick": 7,
+        "cell": 4,
+        "b": 0.10000000000000005,
+        "previous_b": 0.08000000000000002,
+        "progress_jerk": 5.000000000000008,
+        "cap": 5
+      },
+      {
+        "kind": "b_or_progress_jerk",
+        "tick": 21,
+        "cell": 8,
+        "b": 0.09868421052631587,
+        "previous_b": 0.11868421052631589,
+        "progress_jerk": -5.000000000000004,
+        "cap": 5
+      },
+      {
+        "kind": "b_or_progress_jerk",
+        "tick": 26,
+        "cell": 9,
+        "b": 0.07868421052631587,
+        "previous_b": 0.09868421052631587,
+        "progress_jerk": -5.000000000000001,
+        "cap": 5
+      },
+      {
+        "kind": "b_or_progress_jerk",
+        "tick": 31,
+        "cell": 10,
+        "b": 0.05868421052631586,
+        "previous_b": 0.07868421052631587,
+        "progress_jerk": -5.000000000000003,
+        "cap": 5
+      },
+      {
+        "kind": "b_or_progress_jerk",
+        "tick": 37,
+        "cell": 11,
+        "b": 0.038684210526315856,
+        "previous_b": 0.05868421052631586,
+        "progress_jerk": -5.000000000000001,
+        "cap": 5
+      },
+      {
+        "kind": "b_or_progress_jerk",
+        "tick": 43,
+        "cell": 12,
+        "b": 0.01868421052631584,
+        "previous_b": 0.038684210526315856,
+        "progress_jerk": -5.0000000000000036,
+        "cap": 5
+      },
+      {
+        "kind": "b_or_progress_jerk",
+        "tick": 51,
+        "cell": 13,
+        "b": -0.0013157894736841671,
+        "previous_b": 0.01868421052631584,
+        "progress_jerk": -5.000000000000002,
+        "cap": 5
+      },
+      {
+        "kind": "b_or_progress_jerk",
+        "tick": 61,
+        "cell": 14,
+        "b": -0.021315789473684177,
+        "previous_b": -0.0013157894736841671,
+        "progress_jerk": -5.000000000000003,
+        "cap": 5
+      },
+      {
+        "kind": "b_or_progress_jerk",
+        "tick": 73,
+        "cell": 15,
+        "b": -0.04131578947368419,
+        "previous_b": -0.021315789473684177,
+        "progress_jerk": -5.000000000000003,
+        "cap": 5
+      },
+      {
+        "kind": "b_or_progress_jerk",
+        "tick": 109,
+        "cell": 17,
+        "b": -0.04000000000000004,
+        "previous_b": -0.06000000000000005,
+        "progress_jerk": 5.000000000000003,
+        "cap": 5
+      },
+      {
+        "kind": "b_or_progress_jerk",
+        "tick": 133,
+        "cell": 18,
+        "b": -0.020000000000000018,
+        "previous_b": -0.04000000000000004,
+        "progress_jerk": 5.000000000000006,
+        "cap": 5
+      },
+      {
+        "kind": "half_progress",
+        "tick": 160,
+        "half": 2,
+        "s": 0.00499216000000001,
+        "r": -1.3877787807814457e-17
+      },
+      {
+        "kind": "recursive_progress",
+        "tick": 160,
+        "s": 0.004992160000000013,
+        "r": -1.3660947373317356e-17
+      },
+      {
+        "kind": "b_or_progress_jerk",
+        "tick": 161,
+        "cell": 19,
+        "b": 0.0,
+        "previous_b": -0.020000000000000018,
+        "progress_jerk": 5.000000000000004,
+        "cap": 5
+      },
+      {
+        "kind": "half_progress",
+        "tick": 161,
+        "half": 1,
+        "s": 0.004992160000000013,
+        "r": -1.3660947373317356e-17
+      },
+      {
+        "kind": "half_progress",
+        "tick": 161,
+        "half": 2,
+        "s": 0.004992160000000013,
+        "r": -1.3660947373317356e-17
+      },
+      {
+        "kind": "recursive_progress",
+        "tick": 161,
+        "s": 0.004992160000000013,
+        "r": -1.3660947373317356e-17
+      },
+      {
+        "kind": "half_progress",
+        "tick": 162,
+        "half": 1,
+        "s": 0.004992160000000013,
+        "r": -1.3660947373317356e-17
+      },
+      {
+        "kind": "half_progress",
+        "tick": 162,
+        "half": 2,
+        "s": 0.004992160000000013,
+        "r": -1.3660947373317356e-17
+      },
+      {
+        "kind": "recursive_progress",
+        "tick": 162,
+        "s": 0.004992160000000013,
+        "r": -1.3660947373317356e-17
+      },
+      {
+        "kind": "half_progress",
+        "tick": 163,
+        "half": 1,
+        "s": 0.004992160000000013,
+        "r": -1.3660947373317356e-17
+      },
+      {
+        "kind": "half_progress",
+        "tick": 163,
+        "half": 2,
+        "s": 0.004992160000000013,
+        "r": -1.3660947373317356e-17
+      },
+      {
+        "kind": "recursive_progress",
+        "tick": 163,
+        "s": 0.004992160000000013,
+        "r": -1.3660947373317356e-17
+      },
+      {
+        "kind": "half_progress",
+        "tick": 164,
+        "half": 1,
+        "s": 0.004992160000000013,
+        "r": -1.3660947373317356e-17
+      },
+      {
+        "kind": "half_progress",
+        "tick": 164,
+        "half": 2,
+        "s": 0.004992160000000013,
+        "r": -1.3660947373317356e-17
+      },
+      {
+        "kind": "recursive_progress",
+        "tick": 164,
+        "s": 0.004992160000000013,
+        "r": -1.3660947373317356e-17
+      },
+      {
+        "kind": "half_progress",
+        "tick": 165,
+        "half": 1,
+        "s": 0.004992160000000013,
+        "r": -1.3660947373317356e-17
+      },
+      {
+        "kind": "half_progress",
+        "tick": 165,
+        "half": 2,
+        "s": 0.004992160000000013,
+        "r": -1.3660947373317356e-17
+      },
+      {
+        "kind": "recursive_progress",
+        "tick": 165,
+        "s": 0.004992160000000013,
+        "r": -1.3660947373317356e-17
+      },
+      {
+        "kind": "half_progress",
+        "tick": 166,
+        "half": 1,
+        "s": 0.004992160000000013,
+        "r": -1.3660947373317356e-17
+      },
+      {
+        "kind": "half_progress",
+        "tick": 166,
+        "half": 2,
+        "s": 0.004992160000000013,
+        "r": -1.3660947373317356e-17
+      },
+      {
+        "kind": "recursive_progress",
+        "tick": 166,
+        "s": 0.004992160000000013,
+        "r": -1.3660947373317356e-17
+      },
+      {
+        "kind": "half_progress",
+        "tick": 167,
+        "half": 1,
+        "s": 0.004992160000000013,
+        "r": -1.3660947373317356e-17
+      },
+      {
+        "kind": "half_progress",
+        "tick": 167,
+        "half": 2,
+        "s": 0.004992160000000013,
+        "r": -1.3660947373317356e-17
+      },
+      {
+        "kind": "recursive_progress",
+        "tick": 167,
+        "s": 0.004992160000000013,
+        "r": -1.3660947373317356e-17
+      },
+      {
+        "kind": "half_progress",
+        "tick": 168,
+        "half": 1,
+        "s": 0.004992160000000013,
+        "r": -1.3660947373317356e-17
+      },
+      {
+        "kind": "half_progress",
+        "tick": 168,
+        "half": 2,
+        "s": 0.004992160000000012,
+        "r": -1.3660947373317356e-17
+      },
+      {
+        "kind": "recursive_progress",
+        "tick": 168,
+        "s": 0.004992160000000013,
+        "r": -1.3660947373317356e-17
+      },
+      {
+        "kind": "half_progress",
+        "tick": 169,
+        "half": 1,
+        "s": 0.004992160000000012,
+        "r": -1.3660947373317356e-17
+      },
+      {
+        "kind": "half_progress",
+        "tick": 169,
+        "half": 2,
+        "s": 0.004992160000000012,
+        "r": -1.3660947373317356e-17
+      },
+      {
+        "kind": "recursive_progress",
+        "tick": 169,
+        "s": 0.004992160000000013,
+        "r": -1.3660947373317356e-17
+      },
+      {
+        "kind": "half_progress",
+        "tick": 170,
+        "half": 1,
+        "s": 0.004992160000000012,
+        "r": -1.3660947373317356e-17
+      },
+      {
+        "kind": "half_progress",
+        "tick": 170,
+        "half": 2,
+        "s": 0.004992160000000012,
+        "r": -1.3660947373317356e-17
+      },
+      {
+        "kind": "recursive_progress",
+        "tick": 170,
+        "s": 0.004992160000000013,
+        "r": -1.3660947373317356e-17
+      },
+      {
+        "kind": "half_progress",
+        "tick": 171,
+        "half": 1,
+        "s": 0.004992160000000012,
+        "r": -1.3660947373317356e-17
+      },
+      {
+        "kind": "half_progress",
+        "tick": 171,
+        "half": 2,
+        "s": 0.004992160000000012,
+        "r": -1.3660947373317356e-17
+      },
+      {
+        "kind": "recursive_progress",
+        "tick": 171,
+        "s": 0.004992160000000013,
+        "r": -1.3660947373317356e-17
+      },
+      {
+        "kind": "half_progress",
+        "tick": 172,
+        "half": 1,
+        "s": 0.004992160000000012,
+        "r": -1.3660947373317356e-17
+      },
+      {
+        "kind": "half_progress",
+        "tick": 172,
+        "half": 2,
+        "s": 0.004992160000000012,
+        "r": -1.3660947373317356e-17
+      },
+      {
+        "kind": "recursive_progress",
+        "tick": 172,
+        "s": 0.004992160000000013,
+        "r": -1.3660947373317356e-17
+      },
+      {
+        "kind": "half_progress",
+        "tick": 173,
+        "half": 1,
+        "s": 0.004992160000000012,
+        "r": -1.3660947373317356e-17
+      },
+      {
+        "kind": "half_progress",
+        "tick": 173,
+        "half": 2,
+        "s": 0.004992160000000012,
+        "r": -1.3660947373317356e-17
+      },
+      {
+        "kind": "recursive_progress",
+        "tick": 173,
+        "s": 0.004992160000000013,
+        "r": -1.3660947373317356e-17
+      },
+      {
+        "kind": "half_progress",
+        "tick": 174,
+        "half": 1,
+        "s": 0.004992160000000012,
+        "r": -1.3660947373317356e-17
+      },
+      {
+        "kind": "half_progress",
+        "tick": 174,
+        "half": 2,
+        "s": 0.004992160000000012,
+        "r": -1.3660947373317356e-17
+      },
+      {
+        "kind": "recursive_progress",
+        "tick": 174,
+        "s": 0.004992160000000013,
+        "r": -1.3660947373317356e-17
+      },
+      {
+        "kind": "half_progress",
+        "tick": 175,
+        "half": 1,
+        "s": 0.004992160000000012,
+        "r": -1.3660947373317356e-17
+      },
+      {
+        "kind": "half_progress",
+        "tick": 175,
+        "half": 2,
+        "s": 0.004992160000000012,
+        "r": -1.3660947373317356e-17
+      },
+      {
+        "kind": "recursive_progress",
+        "tick": 175,
+        "s": 0.004992160000000013,
+        "r": -1.3660947373317356e-17
+      },
+      {
+        "kind": "half_progress",
+        "tick": 176,
+        "half": 1,
+        "s": 0.004992160000000012,
+        "r": -1.3660947373317356e-17
+      },
+      {
+        "kind": "half_progress",
+        "tick": 176,
+        "half": 2,
+        "s": 0.004992160000000012,
+        "r": -1.3660947373317356e-17
+      },
+      {
+        "kind": "recursive_progress",
+        "tick": 176,
+        "s": 0.004992160000000013,
+        "r": -1.3660947373317356e-17
+      },
+      {
+        "kind": "half_progress",
+        "tick": 177,
+        "half": 1,
+        "s": 0.004992160000000012,
+        "r": -1.3660947373317356e-17
+      },
+      {
+        "kind": "half_progress",
+        "tick": 177,
+        "half": 2,
+        "s": 0.004992160000000012,
+        "r": -1.3660947373317356e-17
+      },
+      {
+        "kind": "recursive_progress",
+        "tick": 177,
+        "s": 0.004992160000000013,
+        "r": -1.3660947373317356e-17
+      },
+      {
+        "kind": "half_progress",
+        "tick": 178,
+        "half": 1,
+        "s": 0.004992160000000012,
+        "r": -1.3660947373317356e-17
+      },
+      {
+        "kind": "half_progress",
+        "tick": 178,
+        "half": 2,
+        "s": 0.004992160000000012,
+        "r": -1.3660947373317356e-17
+      },
+      {
+        "kind": "recursive_progress",
+        "tick": 178,
+        "s": 0.004992160000000013,
+        "r": -1.3660947373317356e-17
+      },
+      {
+        "kind": "half_progress",
+        "tick": 179,
+        "half": 1,
+        "s": 0.004992160000000012,
+        "r": -1.3660947373317356e-17
+      },
+      {
+        "kind": "half_progress",
+        "tick": 179,
+        "half": 2,
+        "s": 0.004992160000000012,
+        "r": -1.3660947373317356e-17
+      },
+      {
+        "kind": "recursive_progress",
+        "tick": 179,
+        "s": 0.004992160000000013,
+        "r": -1.3660947373317356e-17
+      },
+      {
+        "kind": "half_progress",
+        "tick": 180,
+        "half": 1,
+        "s": 0.004992160000000012,
+        "r": -1.3660947373317356e-17
+      },
+      {
+        "kind": "half_progress",
+        "tick": 180,
+        "half": 2,
+        "s": 0.004992160000000012,
+        "r": -1.3660947373317356e-17
+      },
+      {
+        "kind": "recursive_progress",
+        "tick": 180,
+        "s": 0.004992160000000013,
+        "r": -1.3660947373317356e-17
+      },
+      {
+        "kind": "half_progress",
+        "tick": 181,
+        "half": 1,
+        "s": 0.004992160000000012,
+        "r": -1.3660947373317356e-17
+      },
+      {
+        "kind": "half_progress",
+        "tick": 181,
+        "half": 2,
+        "s": 0.004992160000000012,
+        "r": -1.3660947373317356e-17
+      },
+      {
+        "kind": "recursive_progress",
+        "tick": 181,
+        "s": 0.004992160000000013,
+        "r": -1.3660947373317356e-17
+      },
+      {
+        "kind": "half_progress",
+        "tick": 182,
+        "half": 1,
+        "s": 0.004992160000000012,
+        "r": -1.3660947373317356e-17
+      },
+      {
+        "kind": "half_progress",
+        "tick": 182,
+        "half": 2,
+        "s": 0.004992160000000012,
+        "r": -1.3660947373317356e-17
+      },
+      {
+        "kind": "recursive_progress",
+        "tick": 182,
+        "s": 0.004992160000000013,
+        "r": -1.3660947373317356e-17
+      },
+      {
+        "kind": "half_progress",
+        "tick": 183,
+        "half": 1,
+        "s": 0.004992160000000012,
+        "r": -1.3660947373317356e-17
+      },
+      {
+        "kind": "half_progress",
+        "tick": 183,
+        "half": 2,
+        "s": 0.004992160000000012,
+        "r": -1.3660947373317356e-17
+      },
+      {
+        "kind": "recursive_progress",
+        "tick": 183,
+        "s": 0.004992160000000013,
+        "r": -1.3660947373317356e-17
+      },
+      {
+        "kind": "half_progress",
+        "tick": 184,
+        "half": 1,
+        "s": 0.004992160000000012,
+        "r": -1.3660947373317356e-17
+      },
+      {
+        "kind": "half_progress",
+        "tick": 184,
+        "half": 2,
+        "s": 0.004992160000000011,
+        "r": -1.3660947373317356e-17
+      },
+      {
+        "kind": "recursive_progress",
+        "tick": 184,
+        "s": 0.004992160000000013,
+        "r": -1.3660947373317356e-17
+      },
+      {
+        "kind": "half_progress",
+        "tick": 185,
+        "half": 1,
+        "s": 0.004992160000000011,
+        "r": -1.3660947373317356e-17
+      },
+      {
+        "kind": "half_progress",
+        "tick": 185,
+        "half": 2,
+        "s": 0.004992160000000011,
+        "r": -1.3660947373317356e-17
+      },
+      {
+        "kind": "recursive_progress",
+        "tick": 185,
+        "s": 0.004992160000000013,
+        "r": -1.3660947373317356e-17
+      },
+      {
+        "kind": "half_progress",
+        "tick": 186,
+        "half": 1,
+        "s": 0.004992160000000011,
+        "r": -1.3660947373317356e-17
+      },
+      {
+        "kind": "half_progress",
+        "tick": 186,
+        "half": 2,
+        "s": 0.004992160000000011,
+        "r": -1.3660947373317356e-17
+      },
+      {
+        "kind": "recursive_progress",
+        "tick": 186,
+        "s": 0.004992160000000013,
+        "r": -1.3660947373317356e-17
+      },
+      {
+        "kind": "half_progress",
+        "tick": 187,
+        "half": 1,
+        "s": 0.004992160000000011,
+        "r": -1.3660947373317356e-17
+      },
+      {
+        "kind": "half_progress",
+        "tick": 187,
+        "half": 2,
+        "s": 0.004992160000000011,
+        "r": -1.3660947373317356e-17
+      },
+      {
+        "kind": "recursive_progress",
+        "tick": 187,
+        "s": 0.004992160000000013,
+        "r": -1.3660947373317356e-17
+      },
+      {
+        "kind": "half_progress",
+        "tick": 188,
+        "half": 1,
+        "s": 0.004992160000000011,
+        "r": -1.3660947373317356e-17
+      },
+      {
+        "kind": "half_progress",
+        "tick": 188,
+        "half": 2,
+        "s": 0.004992160000000011,
+        "r": -1.3660947373317356e-17
+      },
+      {
+        "kind": "recursive_progress",
+        "tick": 188,
+        "s": 0.004992160000000013,
+        "r": -1.3660947373317356e-17
+      },
+      {
+        "kind": "half_progress",
+        "tick": 189,
+        "half": 1,
+        "s": 0.004992160000000011,
+        "r": -1.3660947373317356e-17
+      },
+      {
+        "kind": "half_progress",
+        "tick": 189,
+        "half": 2,
+        "s": 0.004992160000000011,
+        "r": -1.3660947373317356e-17
+      },
+      {
+        "kind": "recursive_progress",
+        "tick": 189,
+        "s": 0.004992160000000013,
+        "r": -1.3660947373317356e-17
+      },
+      {
+        "kind": "half_progress",
+        "tick": 190,
+        "half": 1,
+        "s": 0.004992160000000011,
+        "r": -1.3660947373317356e-17
+      },
+      {
+        "kind": "half_progress",
+        "tick": 190,
+        "half": 2,
+        "s": 0.004992160000000011,
+        "r": -1.3660947373317356e-17
+      },
+      {
+        "kind": "recursive_progress",
+        "tick": 190,
+        "s": 0.004992160000000013,
+        "r": -1.3660947373317356e-17
+      },
+      {
+        "kind": "half_progress",
+        "tick": 191,
+        "half": 1,
+        "s": 0.004992160000000011,
+        "r": -1.3660947373317356e-17
+      },
+      {
+        "kind": "half_progress",
+        "tick": 191,
+        "half": 2,
+        "s": 0.004992160000000011,
+        "r": -1.3660947373317356e-17
+      },
+      {
+        "kind": "recursive_progress",
+        "tick": 191,
+        "s": 0.004992160000000013,
+        "r": -1.3660947373317356e-17
+      },
+      {
+        "kind": "half_progress",
+        "tick": 192,
+        "half": 1,
+        "s": 0.004992160000000011,
+        "r": -1.3660947373317356e-17
+      },
+      {
+        "kind": "half_progress",
+        "tick": 192,
+        "half": 2,
+        "s": 0.004992160000000011,
+        "r": -1.3660947373317356e-17
+      },
+      {
+        "kind": "recursive_progress",
+        "tick": 192,
+        "s": 0.004992160000000013,
+        "r": -1.3660947373317356e-17
+      },
+      {
+        "kind": "half_progress",
+        "tick": 193,
+        "half": 1,
+        "s": 0.004992160000000011,
+        "r": -1.3660947373317356e-17
+      },
+      {
+        "kind": "half_progress",
+        "tick": 193,
+        "half": 2,
+        "s": 0.004992160000000011,
+        "r": -1.3660947373317356e-17
+      },
+      {
+        "kind": "recursive_progress",
+        "tick": 193,
+        "s": 0.004992160000000013,
+        "r": -1.3660947373317356e-17
+      },
+      {
+        "kind": "half_progress",
+        "tick": 194,
+        "half": 1,
+        "s": 0.004992160000000011,
+        "r": -1.3660947373317356e-17
+      },
+      {
+        "kind": "half_progress",
+        "tick": 194,
+        "half": 2,
+        "s": 0.004992160000000011,
+        "r": -1.3660947373317356e-17
+      },
+      {
+        "kind": "recursive_progress",
+        "tick": 194,
+        "s": 0.004992160000000013,
+        "r": -1.3660947373317356e-17
+      },
+      {
+        "kind": "half_progress",
+        "tick": 195,
+        "half": 1,
+        "s": 0.004992160000000011,
+        "r": -1.3660947373317356e-17
+      },
+      {
+        "kind": "half_progress",
+        "tick": 195,
+        "half": 2,
+        "s": 0.004992160000000011,
+        "r": -1.3660947373317356e-17
+      },
+      {
+        "kind": "recursive_progress",
+        "tick": 195,
+        "s": 0.004992160000000013,
+        "r": -1.3660947373317356e-17
+      },
+      {
+        "kind": "half_progress",
+        "tick": 196,
+        "half": 1,
+        "s": 0.004992160000000011,
+        "r": -1.3660947373317356e-17
+      },
+      {
+        "kind": "half_progress",
+        "tick": 196,
+        "half": 2,
+        "s": 0.004992160000000011,
+        "r": -1.3660947373317356e-17
+      },
+      {
+        "kind": "recursive_progress",
+        "tick": 196,
+        "s": 0.004992160000000013,
+        "r": -1.3660947373317356e-17
+      },
+      {
+        "kind": "half_progress",
+        "tick": 197,
+        "half": 1,
+        "s": 0.004992160000000011,
+        "r": -1.3660947373317356e-17
+      },
+      {
+        "kind": "half_progress",
+        "tick": 197,
+        "half": 2,
+        "s": 0.004992160000000011,
+        "r": -1.3660947373317356e-17
+      },
+      {
+        "kind": "recursive_progress",
+        "tick": 197,
+        "s": 0.004992160000000013,
+        "r": -1.3660947373317356e-17
+      },
+      {
+        "kind": "half_progress",
+        "tick": 198,
+        "half": 1,
+        "s": 0.004992160000000011,
+        "r": -1.3660947373317356e-17
+      },
+      {
+        "kind": "half_progress",
+        "tick": 198,
+        "half": 2,
+        "s": 0.004992160000000011,
+        "r": -1.3660947373317356e-17
+      },
+      {
+        "kind": "recursive_progress",
+        "tick": 198,
+        "s": 0.004992160000000013,
+        "r": -1.3660947373317356e-17
+      },
+      {
+        "kind": "half_progress",
+        "tick": 199,
+        "half": 1,
+        "s": 0.004992160000000011,
+        "r": -1.3660947373317356e-17
+      },
+      {
+        "kind": "half_progress",
+        "tick": 199,
+        "half": 2,
+        "s": 0.004992160000000011,
+        "r": -1.3660947373317356e-17
+      },
+      {
+        "kind": "recursive_progress",
+        "tick": 199,
+        "s": 0.004992160000000013,
+        "r": -1.3660947373317356e-17
+      },
+      {
+        "kind": "half_progress",
+        "tick": 200,
+        "half": 1,
+        "s": 0.004992160000000011,
+        "r": -1.3660947373317356e-17
+      },
+      {
+        "kind": "half_progress",
+        "tick": 200,
+        "half": 2,
+        "s": 0.00499216000000001,
+        "r": -1.3660947373317356e-17
+      },
+      {
+        "kind": "recursive_progress",
+        "tick": 200,
+        "s": 0.004992160000000013,
+        "r": -1.3660947373317356e-17
+      }
+    ],
+    "200cycles_replayed": 200,
+    "terminal_r": -1.3660947373317356e-17,
+    "terminal_w": [
+      -1.3552527156068805e-20,
+      1.2874900798265365e-17,
+      7.792703114739563e-18,
+      -1.656118818471608e-17,
+      2.371692252312041e-18,
+      -6.098637220230962e-19,
+      -2.6122496093322622e-18
+    ],
+    "no_clamp_projection_epsilon_change": true
+  },
+  "runtime_inputs_before_after_exact": true,
+  "warmup_steps": 1000,
+  "task_commits": 0,
+  "nonlinearB_Modelcalls": 0,
+  "new_native_model_solver_calls": 0,
+  "priorA2_fullalgebra_reference": "a7cecbf2181485032cbf52af5090ce6be7321a7742d4219923a93add8068b099",
+  "phase5": "NOT_ACCEPTED"
+}

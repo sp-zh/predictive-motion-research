@@ -1,0 +1,7 @@
+# Native primal/dual task-start development checkpoint
+
+The actual native QP returns SOLVED (raw1/API0, one iteration, polished), and all 13,156 original-unit rows pass the unchanged 1e-7 gate. The subsequent literal history checker refuses first progress jerk 5.000000000000001 > 5. Its numerical U and preview are retained for forensics only: no forward request, nonlinear B, physical C step or task commit occurred. Phase5 remains NOT_ACCEPTED; Phase6 NOT_STARTED.
+
+Independent file/source review confirms exact prior task-start matrices, actual history and nominal suffix, full SI recomputation, and unchanged legacy/primal-only backend bodies. The recorded 144-primal/6211-signed-dual hint has small KKT residuals, but the full guess JSON and derivation evidence are absent from this packet; that derivation is not certified. The frozen loader lacks an explicit byte cap and exact seven-element history shapes; its actual pinned input is 61,682 bytes. Prospective fixes and the zero-progress component are separate work, not retroactive acceptance.
+
+Native setup 31.915 ms and solve 2.175 ms are measured subsets of an offline path; no 4 ms complete-cycle or online claim follows. The strict checker is not relaxed, and no clamping, snapping or hidden history reset is introduced. Full actual evidence and failures are in the immutable archive recorded in STORAGE_CHECKPOINT.json. Public push is pending resolution of conflicting human repository-visibility instructions; local preservation continues.

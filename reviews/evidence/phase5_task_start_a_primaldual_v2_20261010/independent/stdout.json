@@ -1,0 +1,121 @@
+{
+  "scope": "ACTUAL_A5_NATIVE_SOLVED_BUT_STRICT_REJECTED_FILE_REVIEW_ONLY",
+  "source_sha256": "f1db54a5344c2cd0833e4aebf0032dd4f9f2ad8f72194bf4db06726da46bd410",
+  "packet_files": 170,
+  "packet_bytes": 72856202,
+  "source_files": 22,
+  "old_solveOnce_primalOnly_and_legacy_backend_functions_byte_preserved": true,
+  "actual_warmup_state_history_nominalmaps_and_original_transformed_arrays_exact_A2_A3": true,
+  "recorded_guess_primal144_signeddual6211_finite_and_pinned": true,
+  "recorded_solver_primal_seed_equals_guess": true,
+  "original_and_scaled_digests": [
+    "47b33fe5ae43ae90b351a83fc7caba18ab960e076d570ff7c0dd1685d3eceab4",
+    "4605e2647e35d27677e755554493cd569ff79feb9c235ed8432bf07af8b4cad3"
+  ],
+  "guess_source_file_bytes": 61682,
+  "full_guess_JSON_and_derivation_evidence_in_packet": false,
+  "guess_KKT_diagnostics": {
+    "scaled_stationarity": 1.1796119636642288e-16,
+    "scaled_box_violation": 5.204170427930421e-18,
+    "signed_complementarity_maxabs": 3.3374646150860586e-19,
+    "not_derivation_proof": true
+  },
+  "loader_bytecap_and_exact7shapes_still_missing": true,
+  "native_result": {
+    "status": 0,
+    "raw_status": 1,
+    "api_error": 0,
+    "iterations": 1,
+    "setup": 0.031914972,
+    "solve": 0.002174718,
+    "primal": 2.797316654917533e-16,
+    "dual": 5.551115123125783e-17,
+    "polish_status": 1,
+    "numerical_U_count": 160,
+    "request_authorized": false,
+    "original_rows_scanned": 13156,
+    "preview_forensic_only": {
+      "C_next": [
+        -1.2457657424183497,
+        0.09664751352807203,
+        1.154632337442312,
+        -2.7819773450108474,
+        -0.09755089811515172,
+        4.385247182268161,
+        -1.6281269290533666
+      ],
+      "w_next": [
+        1.62293532002618e-06,
+        -7.321666769671514e-05,
+        5.220169793692301e-05,
+        0.00015829367505023012,
+        -5.469686373526724e-06,
+        0.00011965455062448138,
+        -2.398140885303549e-05
+      ],
+      "alpha": [
+        0.000405733830006545,
+        -0.018304166924178782,
+        0.013050424484230752,
+        0.03957341876255753,
+        -0.001367421593381681,
+        0.029913637656120345,
+        -0.005995352213258872
+      ],
+      "implied_alpha": [
+        0.000405733830006545,
+        -0.018304166924178782,
+        0.013050424484230752,
+        0.03957341876255753,
+        -0.001367421593381681,
+        0.029913637656120345,
+        -0.005995352213258872
+      ],
+      "command_jerk": [
+        0.10143345750163625,
+        -4.576041731044696,
+        3.262606121057688,
+        9.893354690639383,
+        -0.3418553983454202,
+        7.478409414030086,
+        -1.498838053314718
+      ],
+      "s_next": 1.6000000000000003e-07,
+      "r_next": 8.000000000000002e-05,
+      "b": 0.020000000000000004,
+      "progress_jerk": 5.000000000000001,
+      "half_s": [
+        4.000000000000001e-08,
+        1.6000000000000003e-07
+      ],
+      "half_r": [
+        4.000000000000001e-05,
+        8.000000000000002e-05
+      ],
+      "boundary": [
+        0,
+        0
+      ]
+    },
+    "tail": 0,
+    "request": 0,
+    "stop": "candidate b/feedback jerk strict bound"
+  },
+  "full_original_SI": {
+    "recorded_max": 7.105427357601002e-15,
+    "independent_max": 7.105427357601002e-15,
+    "independent_worst_row": 203,
+    "label": "feedback_jerk/4/7",
+    "row_violation_vector_error": 1.5178830414797062e-18,
+    "gate1e_7_pass": true
+  },
+  "runtime_inputs_before_after_exact": true,
+  "warmup_steps": 1000,
+  "task_commits": 0,
+  "nonlinearB_Modelcalls": 0,
+  "new_native_model_solver_calls": 0,
+  "priorA2_fullalgebra_reference": "a7cecbf2181485032cbf52af5090ce6be7321a7742d4219923a93add8068b099",
+  "phase5": "NOT_ACCEPTED"
+}
+first_strict {'kind': 'b_or_progress_jerk', 'tick': 1, 'cell': 0, 'b': 0.020000000000000004, 'previous_b': 0.0, 'progress_jerk': 5.000000000000001, 'cap': 5}
+all_strict_count 137

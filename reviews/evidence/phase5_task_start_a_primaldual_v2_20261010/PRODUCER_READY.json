@@ -1,0 +1,692 @@
+{
+  "schema": "TASK_START_NATIVE_SOLVED_STRICT_REFUSED_CHECKPOINT_V2",
+  "files": {
+    "read_task_start_a_primaldual5_summary.py": {
+      "bytes": 2667,
+      "sha256": "7a272bb21e17e59b070993ce21694a770b73cba682980663467cb087a3158c78"
+    },
+    "stage_task_start_a_compile5.py": {
+      "bytes": 2538,
+      "sha256": "b798c5394d7025c7bc1ec6fdc70556cc126672e9ed3f6d8506b3321bd9ca2f35"
+    },
+    "collection.stderr": {
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    "collect_task_start_a_primaldual5.py": {
+      "bytes": 2539,
+      "sha256": "85f6afa60e9ff5fc9a33a23b5cedd5bb9f4a2f69be931f007d41c002bb8b7f0c"
+    },
+    "link_task_start_a5.py": {
+      "bytes": 3205,
+      "sha256": "da57464e7e368f15db06c38dfb50a34b36f9688499f40919bf129f44199dea7b"
+    },
+    "README.md": {
+      "bytes": 1023,
+      "sha256": "81f4e138e1c0c9226face8b7a90d364e5c5ccba265fd4944aac6ba238afb74d1"
+    },
+    "ACTUAL_SOLVER_SUMMARY.json": {
+      "bytes": 125469,
+      "sha256": "6f320dc4e8cf319d9799a74f27e08ee1fd5a9fb5122897a085985dcccb9b37a1"
+    },
+    "implement_task_start_dual_api.py": {
+      "bytes": 5820,
+      "sha256": "2bac2a2f6c5077be5c6e27c6a6d02b34752f759dda8afc9f2e9d3ea44cb92467"
+    },
+    "actual_collection.tar.gz": {
+      "bytes": 17670848,
+      "sha256": "6e37d117fa0309d73d3ecf30b530a0e68ce03acbf023a668df37220e2cde4a13"
+    },
+    "readonly_collection_source.py": {
+      "bytes": 1455,
+      "sha256": "771eb3802f5adf835aadb4b99b1e0de5134c78528ccf4e252a1525d21d03561a"
+    },
+    "source-review-frozen/SOURCE_MANIFEST.json": {
+      "bytes": 2944,
+      "sha256": "a020779bcc023d4c8be52aa2fb86441f7eb32cff44d8a85d852f88cf1ec2a3f0"
+    },
+    "actual-dell/NATIVE_ELF_INDEX.json": {
+      "bytes": 302,
+      "sha256": "d0e207c2934636ccff1f4d0cd451046f338fc8af85d97f1030f721a6323d7e5b"
+    },
+    "actual-dell/session-task-start-a-primaldual-v2-20261010-attempt5/active_run_plan.json": {
+      "bytes": 487736,
+      "sha256": "50c085a1b9edef246b742233bb2c7f509a7d104c44dfb1e5b67ef5b2e4b89474"
+    },
+    "actual-dell/session-task-start-a-primaldual-v2-20261010-attempt5/dev_link.py": {
+      "bytes": 7457,
+      "sha256": "fbce82edadae898f80f7480ce9ce3415daf61535e581ae815139ed0e9e8cad90"
+    },
+    "actual-dell/session-task-start-a-primaldual-v2-20261010-attempt5/dev_compile_plan.json": {
+      "bytes": 8700,
+      "sha256": "c3b61c916824ca8c5b611e654472f8f464d9094cc9ee7dc0d91637171dd015a6"
+    },
+    "actual-dell/session-task-start-a-primaldual-v2-20261010-attempt5/OBJECT_REUSE_BINDING_V2.json": {
+      "bytes": 6629,
+      "sha256": "65f2ea1bcddac036a518a4e86ae9a409414c5c6032d647a65e57e6e9d1f7a67f"
+    },
+    "actual-dell/session-task-start-a-primaldual-v2-20261010-attempt5/dev_link_plan.json": {
+      "bytes": 8861,
+      "sha256": "ba449701cb2c6f2a9f05aa0fb28235123c04b20176e799357b4b0b1b7dea2a94"
+    },
+    "actual-dell/session-task-start-a-primaldual-v2-20261010-attempt5/dev_compile.py": {
+      "bytes": 7460,
+      "sha256": "9dfd7747a9263b940ddd7b856f1c46b8f04655ba7edf29b523003adae9160ee9"
+    },
+    "actual-dell/session-task-start-a-primaldual-v2-20261010-attempt5/active_run_driver.py": {
+      "bytes": 7585,
+      "sha256": "39c511a032bd8b44c4132150bdeef5641c3cf5551a61e395e4a78d93c9268ec4"
+    },
+    "actual-dell/session-task-start-a-primaldual-v1-20261010-attempt4/dev_compile_plan.json": {
+      "bytes": 37851,
+      "sha256": "38252f8311ef4dc1312f252bbc03c4c443feca2a60398e52b6c0e0f3add3c584"
+    },
+    "actual-dell/session-task-start-a-primaldual-v1-20261010-attempt4/dev_compile.py": {
+      "bytes": 7460,
+      "sha256": "f10c7a612887f917bb29ba9beb05b2a0421a43bfdaab7c82dbfee4ff7072fd5a"
+    },
+    "actual-dell/session-task-start-a-primaldual-v1-20261010-attempt4/build-attempt1/BEFORE_READONLY_ROSTERS.json": {
+      "bytes": 3,
+      "sha256": "37517e5f3dc66819f61f5a7bb8ace1921282415f10551d2defa5c3eb0985b570"
+    },
+    "actual-dell/session-task-start-a-primaldual-v1-20261010-attempt4/build-attempt1/compile-5.result.json": {
+      "bytes": 5186,
+      "sha256": "2a99fef0a24366025a6ab9fe49371bbe345c577e605354a75cbe20c2e03d2847"
+    },
+    "actual-dell/session-task-start-a-primaldual-v1-20261010-attempt4/build-attempt1/compile-4.stdout": {
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    "actual-dell/session-task-start-a-primaldual-v1-20261010-attempt4/build-attempt1/compile-8.stdout": {
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    "actual-dell/session-task-start-a-primaldual-v1-20261010-attempt4/build-attempt1/BATCH_PREFIX.json": {
+      "bytes": 51459,
+      "sha256": "f9c54d6134371a8737ccda5628ead1a238e7b9c32c0b44ddaba73a3797d230ac"
+    },
+    "actual-dell/session-task-start-a-primaldual-v1-20261010-attempt4/build-attempt1/BUILD_RESULT.json": {
+      "bytes": 51513,
+      "sha256": "787c0f272703ce37ceff256c38a753bb87e8dc90e9795b85a9f33dde3b0f97dc"
+    },
+    "actual-dell/session-task-start-a-primaldual-v1-20261010-attempt4/build-attempt1/compile-6.stdout": {
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    "actual-dell/session-task-start-a-primaldual-v1-20261010-attempt4/build-attempt1/compile-9.result.json": {
+      "bytes": 5189,
+      "sha256": "65b8cde7c4dd5ccb542969e41a51f5d345403a90ada0067fb808180076f2a446"
+    },
+    "actual-dell/session-task-start-a-primaldual-v1-20261010-attempt4/build-attempt1/CONTROL_EVENT_PREFIX.json": {
+      "bytes": 2865,
+      "sha256": "219152ab741fa9cbca7bb7f6100efd4b3249da4ba1fe5e4d5e0c9f9f070890dd"
+    },
+    "actual-dell/session-task-start-a-primaldual-v1-20261010-attempt4/build-attempt1/compile-2.stderr": {
+      "bytes": 4300,
+      "sha256": "0836b5cd9fe22049852fa3bff70548ff85d14a1d3dffc5b04cd6927e78d1fc41"
+    },
+    "actual-dell/session-task-start-a-primaldual-v1-20261010-attempt4/build-attempt1/compile-3.result.json": {
+      "bytes": 5189,
+      "sha256": "34d0ba42fa54e85dd6bb9247301295c615b9be452620c298f37b5760ec3124b0"
+    },
+    "actual-dell/session-task-start-a-primaldual-v1-20261010-attempt4/build-attempt1/compile-2.stdout": {
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    "actual-dell/session-task-start-a-primaldual-v1-20261010-attempt4/build-attempt1/compile-6.stderr": {
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    "actual-dell/session-task-start-a-primaldual-v1-20261010-attempt4/build-attempt1/compile-8.stderr": {
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    "actual-dell/session-task-start-a-primaldual-v1-20261010-attempt4/build-attempt1/compile-4.stderr": {
+      "bytes": 1138,
+      "sha256": "89db0fe37de1a3d6febcde270fbeba2a6133da864b36f4a8bbd9e132eb95680a"
+    },
+    "actual-dell/session-task-start-a-primaldual-v1-20261010-attempt4/build-attempt1/compile-6.result.json": {
+      "bytes": 5190,
+      "sha256": "e1ce013cca82bf2d2ab471c8eba135084c576a18c379ca301194f9f579d1f1a6"
+    },
+    "actual-dell/session-task-start-a-primaldual-v1-20261010-attempt4/build-attempt1/BEFORE_INPUT_IDENTITIES.json": {
+      "bytes": 3,
+      "sha256": "37517e5f3dc66819f61f5a7bb8ace1921282415f10551d2defa5c3eb0985b570"
+    },
+    "actual-dell/session-task-start-a-primaldual-v1-20261010-attempt4/build-attempt1/compile-1.result.json": {
+      "bytes": 5185,
+      "sha256": "22a37a23df6e22c9e65089d39fadb7d83c207ec8a52e0552b930cf16424be7c7"
+    },
+    "actual-dell/session-task-start-a-primaldual-v1-20261010-attempt4/build-attempt1/compile-5.stdout": {
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    "actual-dell/session-task-start-a-primaldual-v1-20261010-attempt4/build-attempt1/compile-9.stdout": {
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    "actual-dell/session-task-start-a-primaldual-v1-20261010-attempt4/build-attempt1/compile-8.result.json": {
+      "bytes": 5188,
+      "sha256": "776fd845d0472d1020744bffb18fb874d5a6370228a9b610982b08611b29da74"
+    },
+    "actual-dell/session-task-start-a-primaldual-v1-20261010-attempt4/build-attempt1/compile-1.stderr": {
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    "actual-dell/session-task-start-a-primaldual-v1-20261010-attempt4/build-attempt1/compile-3.stderr": {
+      "bytes": 11728,
+      "sha256": "64d1df5720d6cb870cba0c28c566a73463111dce1bec485bcfb011f6b02aeb96"
+    },
+    "actual-dell/session-task-start-a-primaldual-v1-20261010-attempt4/build-attempt1/AFTER_INPUT_IDENTITIES.json": {
+      "bytes": 3,
+      "sha256": "37517e5f3dc66819f61f5a7bb8ace1921282415f10551d2defa5c3eb0985b570"
+    },
+    "actual-dell/session-task-start-a-primaldual-v1-20261010-attempt4/build-attempt1/compile-4.result.json": {
+      "bytes": 5194,
+      "sha256": "b47e109ffd9abcc0b9fe6b4a7fdc1976e2448ebae86c0ed5fe35d74b2d22b939"
+    },
+    "actual-dell/session-task-start-a-primaldual-v1-20261010-attempt4/build-attempt1/compile-7.stdout": {
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    "actual-dell/session-task-start-a-primaldual-v1-20261010-attempt4/build-attempt1/compile-7.stderr": {
+      "bytes": 6954,
+      "sha256": "9eddd28630694f9c9c3c6e2288398daa668bc3b8fe97e0ee1d6da3d13ac05c7f"
+    },
+    "actual-dell/session-task-start-a-primaldual-v1-20261010-attempt4/build-attempt1/compile-7.result.json": {
+      "bytes": 5191,
+      "sha256": "8a3bf97c0efc6369d0afda11f5373c62088238a089db97a348b6d86336aa1be3"
+    },
+    "actual-dell/session-task-start-a-primaldual-v1-20261010-attempt4/build-attempt1/AFTER_READONLY_ROSTERS.json": {
+      "bytes": 3,
+      "sha256": "37517e5f3dc66819f61f5a7bb8ace1921282415f10551d2defa5c3eb0985b570"
+    },
+    "actual-dell/session-task-start-a-primaldual-v1-20261010-attempt4/build-attempt1/compile-3.stdout": {
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    "actual-dell/session-task-start-a-primaldual-v1-20261010-attempt4/build-attempt1/compile-1.stdout": {
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    "actual-dell/session-task-start-a-primaldual-v1-20261010-attempt4/build-attempt1/compile-9.stderr": {
+      "bytes": 2602,
+      "sha256": "c1184eefb290c32521daf8603ef41c9f9651b0b788345879fb47b78dafd5ed22"
+    },
+    "actual-dell/session-task-start-a-primaldual-v1-20261010-attempt4/build-attempt1/compile-2.result.json": {
+      "bytes": 5187,
+      "sha256": "7b55a66ba8eabe8c5de7b2b06e2868eb5bb7d90e412605668272e9f5fcc3968b"
+    },
+    "actual-dell/session-task-start-a-primaldual-v1-20261010-attempt4/build-attempt1/compile-5.stderr": {
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    "actual-dell/session-task-start-a-primaldual-v1-20261010-attempt4/src/invariant_tests.cpp": {
+      "bytes": 4721,
+      "sha256": "f5a859d4cf9d79a5ae1b533b8dd62776f2bba6599dfdf691a2915ef3296a33f9"
+    },
+    "actual-dell/session-task-start-a-primaldual-v1-20261010-attempt4/src/normalization.cpp": {
+      "bytes": 23976,
+      "sha256": "a0cd0c9cdb505f922f1744f24cf115057b6ba9f3a9bc1b3ed0c9bdb82d358ed5"
+    },
+    "actual-dell/session-task-start-a-primaldual-v1-20261010-attempt4/src/session_primitives.hpp": {
+      "bytes": 2259,
+      "sha256": "0b76bc232ed81dc9b4831617ae1690cfc287def914b8bca5f05ce6e6e25b6080"
+    },
+    "actual-dell/session-task-start-a-primaldual-v1-20261010-attempt4/src/model_boundary.cpp": {
+      "bytes": 14091,
+      "sha256": "04c94821ee57669431b8c7bceac1d66004fdfc8af11424008e89890a7486630a"
+    },
+    "actual-dell/session-task-start-a-primaldual-v1-20261010-attempt4/src/solver_forensics.cpp": {
+      "bytes": 26367,
+      "sha256": "4e0acddf498b85dc5e34e9c6d34e5ef9544808d18ff3c9336d17126a8e438c5c"
+    },
+    "actual-dell/session-task-start-a-primaldual-v1-20261010-attempt4/src/runtime_observer.hpp": {
+      "bytes": 5472,
+      "sha256": "0e0ef9cfe8bc1c8a5bb38327148110dd6db4ebfe4e2ba479de8d1d78175941c8"
+    },
+    "actual-dell/session-task-start-a-primaldual-v1-20261010-attempt4/src/lossless_evidence.hpp": {
+      "bytes": 1887,
+      "sha256": "6e40b8878ddc78e8422c1301ca62ca98ed854fc2f57e6f549f5685cc1387bccc"
+    },
+    "actual-dell/session-task-start-a-primaldual-v1-20261010-attempt4/src/affine_assembly.cpp": {
+      "bytes": 28981,
+      "sha256": "d478eda1f0fe97bfc41851515f4baa3e485fd4a57968a62dcb6233ae1157bbd5"
+    },
+    "actual-dell/session-task-start-a-primaldual-v1-20261010-attempt4/src/integrated_horizon_qp.hpp": {
+      "bytes": 10599,
+      "sha256": "066da1b1f9e6228cef56e2b52ae73a852a08b54836f53da8e01a6a707aa69299"
+    },
+    "actual-dell/session-task-start-a-primaldual-v1-20261010-attempt4/src/task_local_provider.cpp": {
+      "bytes": 1839,
+      "sha256": "051b424236979f9fe7ea4cb96564f54969025c997bfba2c61d347a23f7fbae4c"
+    },
+    "actual-dell/session-task-start-a-primaldual-v1-20261010-attempt4/src/box_screen_tests.cpp": {
+      "bytes": 2954,
+      "sha256": "d922876babec2867dd1293bcee259ac12e4b2a6af5a30dd551209e097c0abaf8"
+    },
+    "actual-dell/session-task-start-a-primaldual-v1-20261010-attempt4/src/active_first_cycle.cpp": {
+      "bytes": 20022,
+      "sha256": "b69efa3afcc27527fe5f88e3d1f3b076812f044f37d23bdb563e300d3fe9bf10"
+    },
+    "actual-dell/session-task-start-a-primaldual-v1-20261010-attempt4/src/observer_tests.cpp": {
+      "bytes": 3785,
+      "sha256": "d1ff998984981a5ded1e92b8d452503e8b489ecfb0d067fb04ff5fd616d02877"
+    },
+    "actual-dell/session-task-start-a-primaldual-v1-20261010-attempt4/src/solver_forensics.hpp": {
+      "bytes": 860,
+      "sha256": "02b3a3d33ea64a351b228b96b2e0590b7a79fb4e9b87da78dc28c59465aca3bb"
+    },
+    "actual-dell/session-task-start-a-primaldual-v1-20261010-attempt4/src/runtime_observer.cpp": {
+      "bytes": 17215,
+      "sha256": "9bbbe145f0cfa78c24f1d2b56008b065f1f3838ee54fa727eb76a88578fb607f"
+    },
+    "actual-dell/session-task-start-a-primaldual-v1-20261010-attempt4/src/lossless_evidence.cpp": {
+      "bytes": 15969,
+      "sha256": "04680550f459ebf6bf0136bd611e2707b18562ddea5d44e4fc1c8782efb1bdd6"
+    },
+    "actual-dell/session-task-start-a-primaldual-v1-20261010-attempt4/src/task_local_provider.hpp": {
+      "bytes": 640,
+      "sha256": "1819e2f626fb0ff65ad7e7e8de0b0b52f625e6bf435b073d7cca55722d76f093"
+    },
+    "actual-dell/session-task-start-a-primaldual-v1-20261010-attempt4/src/affine_assembly.hpp": {
+      "bytes": 6026,
+      "sha256": "6faee2961242052c7655da41e8988dd0844f14c3cfa885672aa7c03eaa1dcb57"
+    },
+    "actual-dell/session-task-start-a-primaldual-v1-20261010-attempt4/src/integrated_horizon_qp.cpp": {
+      "bytes": 69975,
+      "sha256": "a7318504af8b4969b442fe0769fe9f06cf87110c1a9f6402470c054f3a0c3046"
+    },
+    "actual-dell/session-task-start-a-primaldual-v1-20261010-attempt4/src/normalization.hpp": {
+      "bytes": 4288,
+      "sha256": "9456be5c205f23d2aa2210eac02286d030204a446af003ee85362b971ccb43d8"
+    },
+    "actual-dell/session-task-start-a-primaldual-v1-20261010-attempt4/src/model_boundary.hpp": {
+      "bytes": 2528,
+      "sha256": "51b2e845860fb4faecfc95b7f9873439ab4e682adce37a290e6fe704ee48a9d9"
+    },
+    "actual-dell/session-task-start-a-primaldual-v1-20261010-attempt4/src/linear_box_screen.hpp": {
+      "bytes": 3916,
+      "sha256": "b649eff43293a3078b7b46a0166fa0f8a2ac59f3a8496c8c73a98c275fed96d1"
+    },
+    "actual-dell/session-task-start-a-primaldual-v2-20261010-attempt5/link-attempt1/BEFORE_READONLY_ROSTERS.json": {
+      "bytes": 3,
+      "sha256": "37517e5f3dc66819f61f5a7bb8ace1921282415f10551d2defa5c3eb0985b570"
+    },
+    "actual-dell/session-task-start-a-primaldual-v2-20261010-attempt5/link-attempt1/BATCH_PREFIX.json": {
+      "bytes": 5747,
+      "sha256": "d018da9d4655705dc5c64b7cbceb9d74065425c596c744ee891fb0d5ae8d455b"
+    },
+    "actual-dell/session-task-start-a-primaldual-v2-20261010-attempt5/link-attempt1/BUILD_RESULT.json": {
+      "bytes": 5801,
+      "sha256": "df67017215b1b3d2c409dcf1e26d01a7e81272a5b8ef53b6c788aebe8fd4ddad"
+    },
+    "actual-dell/session-task-start-a-primaldual-v2-20261010-attempt5/link-attempt1/CONTROL_EVENT_PREFIX.json": {
+      "bytes": 719,
+      "sha256": "188b6e58513e83d8d55b362621eceee1e9d9690e50c91d9fe5c520c3190d90f7"
+    },
+    "actual-dell/session-task-start-a-primaldual-v2-20261010-attempt5/link-attempt1/BEFORE_INPUT_IDENTITIES.json": {
+      "bytes": 4334,
+      "sha256": "2615650254f15a7b38a77eb4bc5793c6c4443a56e1f199c83229e91133472894"
+    },
+    "actual-dell/session-task-start-a-primaldual-v2-20261010-attempt5/link-attempt1/compile-1.result.json": {
+      "bytes": 5315,
+      "sha256": "7182a8739affc44a45eb36d7d8b140bd727f16930771530f1ceec0f155e0e2e8"
+    },
+    "actual-dell/session-task-start-a-primaldual-v2-20261010-attempt5/link-attempt1/compile-1.stderr": {
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    "actual-dell/session-task-start-a-primaldual-v2-20261010-attempt5/link-attempt1/AFTER_INPUT_IDENTITIES.json": {
+      "bytes": 4334,
+      "sha256": "2615650254f15a7b38a77eb4bc5793c6c4443a56e1f199c83229e91133472894"
+    },
+    "actual-dell/session-task-start-a-primaldual-v2-20261010-attempt5/link-attempt1/AFTER_READONLY_ROSTERS.json": {
+      "bytes": 3,
+      "sha256": "37517e5f3dc66819f61f5a7bb8ace1921282415f10551d2defa5c3eb0985b570"
+    },
+    "actual-dell/session-task-start-a-primaldual-v2-20261010-attempt5/link-attempt1/compile-1.stdout": {
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    "actual-dell/session-task-start-a-primaldual-v2-20261010-attempt5/build-attempt1/BEFORE_READONLY_ROSTERS.json": {
+      "bytes": 3,
+      "sha256": "37517e5f3dc66819f61f5a7bb8ace1921282415f10551d2defa5c3eb0985b570"
+    },
+    "actual-dell/session-task-start-a-primaldual-v2-20261010-attempt5/build-attempt1/BATCH_PREFIX.json": {
+      "bytes": 11490,
+      "sha256": "23686745b583c420686d0ec2f90f43e8cefa7873ed67ee262df0ec56aeea5314"
+    },
+    "actual-dell/session-task-start-a-primaldual-v2-20261010-attempt5/build-attempt1/BUILD_RESULT.json": {
+      "bytes": 11544,
+      "sha256": "499879f37131e95300855631799eda5188aa3049dd0a917531e580d6eb1f323a"
+    },
+    "actual-dell/session-task-start-a-primaldual-v2-20261010-attempt5/build-attempt1/CONTROL_EVENT_PREFIX.json": {
+      "bytes": 988,
+      "sha256": "8f6e3a1d591c62e47efed5f4898b7b4dd3f76b829420b853ae132200abfe0285"
+    },
+    "actual-dell/session-task-start-a-primaldual-v2-20261010-attempt5/build-attempt1/compile-2.stderr": {
+      "bytes": 2896,
+      "sha256": "053931ba2f15348f203bd21691d04f36a7f5bc77191e7dafe7ba4ea028a07a08"
+    },
+    "actual-dell/session-task-start-a-primaldual-v2-20261010-attempt5/build-attempt1/compile-2.stdout": {
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    "actual-dell/session-task-start-a-primaldual-v2-20261010-attempt5/build-attempt1/BEFORE_INPUT_IDENTITIES.json": {
+      "bytes": 3,
+      "sha256": "37517e5f3dc66819f61f5a7bb8ace1921282415f10551d2defa5c3eb0985b570"
+    },
+    "actual-dell/session-task-start-a-primaldual-v2-20261010-attempt5/build-attempt1/compile-1.result.json": {
+      "bytes": 5188,
+      "sha256": "183de44ece3ecff75c94a01ca7d247f84be18ceec9607f493dfafdf65c1bf37c"
+    },
+    "actual-dell/session-task-start-a-primaldual-v2-20261010-attempt5/build-attempt1/compile-1.stderr": {
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    "actual-dell/session-task-start-a-primaldual-v2-20261010-attempt5/build-attempt1/AFTER_INPUT_IDENTITIES.json": {
+      "bytes": 3,
+      "sha256": "37517e5f3dc66819f61f5a7bb8ace1921282415f10551d2defa5c3eb0985b570"
+    },
+    "actual-dell/session-task-start-a-primaldual-v2-20261010-attempt5/build-attempt1/AFTER_READONLY_ROSTERS.json": {
+      "bytes": 3,
+      "sha256": "37517e5f3dc66819f61f5a7bb8ace1921282415f10551d2defa5c3eb0985b570"
+    },
+    "actual-dell/session-task-start-a-primaldual-v2-20261010-attempt5/build-attempt1/compile-1.stdout": {
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    "actual-dell/session-task-start-a-primaldual-v2-20261010-attempt5/build-attempt1/compile-2.result.json": {
+      "bytes": 5189,
+      "sha256": "15810c333dd21c41c391ab3bf8894cdf4cab429a1a2bc5a699bb6aef349528fc"
+    },
+    "actual-dell/session-task-start-a-primaldual-v2-20261010-attempt5/run-attempt1/BEFORE_READONLY_ROSTERS.json": {
+      "bytes": 3,
+      "sha256": "37517e5f3dc66819f61f5a7bb8ace1921282415f10551d2defa5c3eb0985b570"
+    },
+    "actual-dell/session-task-start-a-primaldual-v2-20261010-attempt5/run-attempt1/BATCH_PREFIX.json": {
+      "bytes": 2104,
+      "sha256": "7beb698a41dd68be35c25d76a87848a9602d7019db0f0891d91e03d7ecae5116"
+    },
+    "actual-dell/session-task-start-a-primaldual-v2-20261010-attempt5/run-attempt1/CONTROL_EVENT_PREFIX.json": {
+      "bytes": 796,
+      "sha256": "aa2f0162acb6e430c3fa9a0d7dd78b88bc7afd3fba25e271a85230a45a9ccdea"
+    },
+    "actual-dell/session-task-start-a-primaldual-v2-20261010-attempt5/run-attempt1/BEFORE_INPUT_IDENTITIES.json": {
+      "bytes": 495113,
+      "sha256": "d5d3ee870dc66d92a57282080f7d7e6d087f10e00df4fab6cbf8050c39c7f81c"
+    },
+    "actual-dell/session-task-start-a-primaldual-v2-20261010-attempt5/run-attempt1/compile-1.result.json": {
+      "bytes": 1784,
+      "sha256": "ccd78bba048e8e04f6cb7a4be3a0cea4469d2fa20e8ef060a520470efecd2c24"
+    },
+    "actual-dell/session-task-start-a-primaldual-v2-20261010-attempt5/run-attempt1/compile-1.stderr": {
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    "actual-dell/session-task-start-a-primaldual-v2-20261010-attempt5/run-attempt1/AFTER_INPUT_IDENTITIES.json": {
+      "bytes": 495113,
+      "sha256": "d5d3ee870dc66d92a57282080f7d7e6d087f10e00df4fab6cbf8050c39c7f81c"
+    },
+    "actual-dell/session-task-start-a-primaldual-v2-20261010-attempt5/run-attempt1/BUILD_FAILURE.json": {
+      "bytes": 2175,
+      "sha256": "5fc9b38ef24b47e4da7b696f1792d71a1e3b9df53647123eff51a320d188aaff"
+    },
+    "actual-dell/session-task-start-a-primaldual-v2-20261010-attempt5/run-attempt1/AFTER_READONLY_ROSTERS.json": {
+      "bytes": 3,
+      "sha256": "37517e5f3dc66819f61f5a7bb8ace1921282415f10551d2defa5c3eb0985b570"
+    },
+    "actual-dell/session-task-start-a-primaldual-v2-20261010-attempt5/run-attempt1/compile-1.stdout": {
+      "bytes": 132,
+      "sha256": "7e23909b8fc6b1a12eb1582a4432989a377cb330dd005a7521dcf831a7430ece"
+    },
+    "actual-dell/session-task-start-a-primaldual-v2-20261010-attempt5/profile-version1/active_input.json": {
+      "bytes": 326596,
+      "sha256": "c3065697c28ae1644b45f3ee77981921e08cb7d16e7a49bdc9cc9e1bf3308c47"
+    },
+    "actual-dell/session-task-start-a-primaldual-v2-20261010-attempt5/src/invariant_tests.cpp": {
+      "bytes": 4721,
+      "sha256": "f5a859d4cf9d79a5ae1b533b8dd62776f2bba6599dfdf691a2915ef3296a33f9"
+    },
+    "actual-dell/session-task-start-a-primaldual-v2-20261010-attempt5/src/normalization.cpp": {
+      "bytes": 23976,
+      "sha256": "a0cd0c9cdb505f922f1744f24cf115057b6ba9f3a9bc1b3ed0c9bdb82d358ed5"
+    },
+    "actual-dell/session-task-start-a-primaldual-v2-20261010-attempt5/src/session_primitives.hpp": {
+      "bytes": 2259,
+      "sha256": "0b76bc232ed81dc9b4831617ae1690cfc287def914b8bca5f05ce6e6e25b6080"
+    },
+    "actual-dell/session-task-start-a-primaldual-v2-20261010-attempt5/src/model_boundary.cpp": {
+      "bytes": 14091,
+      "sha256": "04c94821ee57669431b8c7bceac1d66004fdfc8af11424008e89890a7486630a"
+    },
+    "actual-dell/session-task-start-a-primaldual-v2-20261010-attempt5/src/solver_forensics.cpp": {
+      "bytes": 26514,
+      "sha256": "664c1d480e23c1ddef4f45a57165cba871213740329f8693c897d7c07ee7af27"
+    },
+    "actual-dell/session-task-start-a-primaldual-v2-20261010-attempt5/src/runtime_observer.hpp": {
+      "bytes": 5472,
+      "sha256": "0e0ef9cfe8bc1c8a5bb38327148110dd6db4ebfe4e2ba479de8d1d78175941c8"
+    },
+    "actual-dell/session-task-start-a-primaldual-v2-20261010-attempt5/src/lossless_evidence.hpp": {
+      "bytes": 1887,
+      "sha256": "6e40b8878ddc78e8422c1301ca62ca98ed854fc2f57e6f549f5685cc1387bccc"
+    },
+    "actual-dell/session-task-start-a-primaldual-v2-20261010-attempt5/src/affine_assembly.cpp": {
+      "bytes": 28981,
+      "sha256": "d478eda1f0fe97bfc41851515f4baa3e485fd4a57968a62dcb6233ae1157bbd5"
+    },
+    "actual-dell/session-task-start-a-primaldual-v2-20261010-attempt5/src/integrated_horizon_qp.hpp": {
+      "bytes": 10599,
+      "sha256": "066da1b1f9e6228cef56e2b52ae73a852a08b54836f53da8e01a6a707aa69299"
+    },
+    "actual-dell/session-task-start-a-primaldual-v2-20261010-attempt5/src/task_local_provider.cpp": {
+      "bytes": 1839,
+      "sha256": "051b424236979f9fe7ea4cb96564f54969025c997bfba2c61d347a23f7fbae4c"
+    },
+    "actual-dell/session-task-start-a-primaldual-v2-20261010-attempt5/src/box_screen_tests.cpp": {
+      "bytes": 2954,
+      "sha256": "d922876babec2867dd1293bcee259ac12e4b2a6af5a30dd551209e097c0abaf8"
+    },
+    "actual-dell/session-task-start-a-primaldual-v2-20261010-attempt5/src/active_first_cycle.cpp": {
+      "bytes": 20037,
+      "sha256": "4a292a27db7e720af0c82cec5b565f8d35781edc7e33223f48ce47fce057f880"
+    },
+    "actual-dell/session-task-start-a-primaldual-v2-20261010-attempt5/src/observer_tests.cpp": {
+      "bytes": 3785,
+      "sha256": "d1ff998984981a5ded1e92b8d452503e8b489ecfb0d067fb04ff5fd616d02877"
+    },
+    "actual-dell/session-task-start-a-primaldual-v2-20261010-attempt5/src/solver_forensics.hpp": {
+      "bytes": 860,
+      "sha256": "02b3a3d33ea64a351b228b96b2e0590b7a79fb4e9b87da78dc28c59465aca3bb"
+    },
+    "actual-dell/session-task-start-a-primaldual-v2-20261010-attempt5/src/runtime_observer.cpp": {
+      "bytes": 17215,
+      "sha256": "9bbbe145f0cfa78c24f1d2b56008b065f1f3838ee54fa727eb76a88578fb607f"
+    },
+    "actual-dell/session-task-start-a-primaldual-v2-20261010-attempt5/src/lossless_evidence.cpp": {
+      "bytes": 15969,
+      "sha256": "04680550f459ebf6bf0136bd611e2707b18562ddea5d44e4fc1c8782efb1bdd6"
+    },
+    "actual-dell/session-task-start-a-primaldual-v2-20261010-attempt5/src/task_local_provider.hpp": {
+      "bytes": 640,
+      "sha256": "1819e2f626fb0ff65ad7e7e8de0b0b52f625e6bf435b073d7cca55722d76f093"
+    },
+    "actual-dell/session-task-start-a-primaldual-v2-20261010-attempt5/src/affine_assembly.hpp": {
+      "bytes": 6026,
+      "sha256": "6faee2961242052c7655da41e8988dd0844f14c3cfa885672aa7c03eaa1dcb57"
+    },
+    "actual-dell/session-task-start-a-primaldual-v2-20261010-attempt5/src/integrated_horizon_qp.cpp": {
+      "bytes": 69975,
+      "sha256": "a7318504af8b4969b442fe0769fe9f06cf87110c1a9f6402470c054f3a0c3046"
+    },
+    "actual-dell/session-task-start-a-primaldual-v2-20261010-attempt5/src/normalization.hpp": {
+      "bytes": 4288,
+      "sha256": "9456be5c205f23d2aa2210eac02286d030204a446af003ee85362b971ccb43d8"
+    },
+    "actual-dell/session-task-start-a-primaldual-v2-20261010-attempt5/src/model_boundary.hpp": {
+      "bytes": 2528,
+      "sha256": "51b2e845860fb4faecfc95b7f9873439ab4e682adce37a290e6fe704ee48a9d9"
+    },
+    "actual-dell/session-task-start-a-primaldual-v2-20261010-attempt5/src/linear_box_screen.hpp": {
+      "bytes": 3916,
+      "sha256": "b649eff43293a3078b7b46a0166fa0f8a2ac59f3a8496c8c73a98c275fed96d1"
+    },
+    "actual-dell/session-task-start-a-primaldual-v2-20261010-attempt5/run-attempt1/artifacts/model_open.bin": {
+      "bytes": 1275,
+      "sha256": "f5ec5debb244e76c025ca107bc44ae12d03755fd7159d86dafbe18ef126f0a07"
+    },
+    "actual-dell/session-task-start-a-primaldual-v2-20261010-attempt5/run-attempt1/artifacts/bootstrap.bin": {
+      "bytes": 150,
+      "sha256": "814d79448cdd7569c35fd74570cba93f5ccf7f0ab780789a6d08fa554478454d"
+    },
+    "actual-dell/session-task-start-a-primaldual-v2-20261010-attempt5/run-attempt1/artifacts/actual_warmup.bin": {
+      "bytes": 504405,
+      "sha256": "ddfe59b603e0caa2ef85b0bb3e3e14a75e4f57a639cc22f8bad2fda249802901"
+    },
+    "actual-dell/session-task-start-a-primaldual-v2-20261010-attempt5/run-attempt1/artifacts/entry_completion.bin": {
+      "bytes": 225,
+      "sha256": "6ec334933f174eed2ceef9a9043b8a456729ad77eba7ac0ee877f8e7e114a74a"
+    },
+    "actual-dell/session-task-start-a-primaldual-v2-20261010-attempt5/run-attempt1/artifacts/observation_before.bin": {
+      "bytes": 2540,
+      "sha256": "883193da702ea245c4c4093dafed5b7c89c17ae239a94924a16fe9e7f38b6f84"
+    },
+    "actual-dell/session-task-start-a-primaldual-v2-20261010-attempt5/run-attempt1/artifacts/solver_row_screen.bin": {
+      "bytes": 482308,
+      "sha256": "00f777dff13c4d55e7005bc2a386b5c3d5156510507f792a45658d86d255c244"
+    },
+    "actual-dell/session-task-start-a-primaldual-v2-20261010-attempt5/run-attempt1/artifacts/MANIFEST.yaml": {
+      "bytes": 3454,
+      "sha256": "f7dcf414f0658a009334f69cad4605a3b6610e092103b076baee3ffc046c5cbd"
+    },
+    "actual-dell/session-task-start-a-primaldual-v2-20261010-attempt5/run-attempt1/artifacts/journal_receipt.bin": {
+      "bytes": 549,
+      "sha256": "6b171853e19e28a2d5c7c82b2814fa3bf827cfdd7965dd5135634e3dc69d8fc7"
+    },
+    "actual-dell/session-task-start-a-primaldual-v2-20261010-attempt5/run-attempt1/artifacts/observation_after.bin": {
+      "bytes": 2540,
+      "sha256": "5d300ab2a79fbbd4e39391c2ffba90727755b1f8af07fa9619a61cec1fcca1b1"
+    },
+    "actual-dell/session-task-start-a-primaldual-v2-20261010-attempt5/run-attempt1/artifacts/external_numeric_guess.bin": {
+      "bytes": 51596,
+      "sha256": "d70842957ecb86c303e6855dcc2c92c72ff75fb2e4742f9f463c4bf09c38812a"
+    },
+    "actual-dell/session-task-start-a-primaldual-v2-20261010-attempt5/run-attempt1/artifacts/candidate.bin": {
+      "bytes": 107358,
+      "sha256": "e834958376491701325fa5b0a47251b0af3df88cdfe2b103fdb2d96d34af1866"
+    },
+    "actual-dell/session-task-start-a-primaldual-v2-20261010-attempt5/run-attempt1/artifacts/inline_qp.bin": {
+      "bytes": 19485833,
+      "sha256": "7b8d8711d7bc1ad17c435499d8354566562a9260745b5fb25d168652d20fdb62"
+    },
+    "actual-dell/session-task-start-a-primaldual-v2-20261010-attempt5/run-attempt1/artifacts/actual_step_journal.csv": {
+      "bytes": 1813021,
+      "sha256": "eea9da2c74e5b8e20776e7e0df04e8926c9ab278117fcce5c9fb03ac16927313"
+    },
+    "actual-dell/session-task-start-a-primaldual-v2-20261010-attempt5/run-attempt1/artifacts/original_nominal.bin": {
+      "bytes": 12716815,
+      "sha256": "33d74fc8e34227d9841388bb1f2374b6ee7f298528f62627a22011d406c4b97d"
+    },
+    "actual-dell/session-task-start-a-primaldual-v2-20261010-attempt5/run-attempt1/artifacts/qp_equality_reduction.bin": {
+      "bytes": 16913498,
+      "sha256": "9a96b4d39e4dd2901a3ec2741649c989a2151d0ebc800b793ceb7ffe8610fab8"
+    },
+    "source-review-frozen/src/invariant_tests.cpp": {
+      "bytes": 4721,
+      "sha256": "f5a859d4cf9d79a5ae1b533b8dd62776f2bba6599dfdf691a2915ef3296a33f9"
+    },
+    "source-review-frozen/src/normalization.cpp": {
+      "bytes": 23976,
+      "sha256": "a0cd0c9cdb505f922f1744f24cf115057b6ba9f3a9bc1b3ed0c9bdb82d358ed5"
+    },
+    "source-review-frozen/src/session_primitives.hpp": {
+      "bytes": 2259,
+      "sha256": "0b76bc232ed81dc9b4831617ae1690cfc287def914b8bca5f05ce6e6e25b6080"
+    },
+    "source-review-frozen/src/model_boundary.cpp": {
+      "bytes": 14091,
+      "sha256": "04c94821ee57669431b8c7bceac1d66004fdfc8af11424008e89890a7486630a"
+    },
+    "source-review-frozen/src/solver_forensics.cpp": {
+      "bytes": 26514,
+      "sha256": "664c1d480e23c1ddef4f45a57165cba871213740329f8693c897d7c07ee7af27"
+    },
+    "source-review-frozen/src/runtime_observer.hpp": {
+      "bytes": 5472,
+      "sha256": "0e0ef9cfe8bc1c8a5bb38327148110dd6db4ebfe4e2ba479de8d1d78175941c8"
+    },
+    "source-review-frozen/src/lossless_evidence.hpp": {
+      "bytes": 1887,
+      "sha256": "6e40b8878ddc78e8422c1301ca62ca98ed854fc2f57e6f549f5685cc1387bccc"
+    },
+    "source-review-frozen/src/affine_assembly.cpp": {
+      "bytes": 28981,
+      "sha256": "d478eda1f0fe97bfc41851515f4baa3e485fd4a57968a62dcb6233ae1157bbd5"
+    },
+    "source-review-frozen/src/integrated_horizon_qp.hpp": {
+      "bytes": 10599,
+      "sha256": "066da1b1f9e6228cef56e2b52ae73a852a08b54836f53da8e01a6a707aa69299"
+    },
+    "source-review-frozen/src/task_local_provider.cpp": {
+      "bytes": 1839,
+      "sha256": "051b424236979f9fe7ea4cb96564f54969025c997bfba2c61d347a23f7fbae4c"
+    },
+    "source-review-frozen/src/box_screen_tests.cpp": {
+      "bytes": 2954,
+      "sha256": "d922876babec2867dd1293bcee259ac12e4b2a6af5a30dd551209e097c0abaf8"
+    },
+    "source-review-frozen/src/active_first_cycle.cpp": {
+      "bytes": 20037,
+      "sha256": "4a292a27db7e720af0c82cec5b565f8d35781edc7e33223f48ce47fce057f880"
+    },
+    "source-review-frozen/src/observer_tests.cpp": {
+      "bytes": 3785,
+      "sha256": "d1ff998984981a5ded1e92b8d452503e8b489ecfb0d067fb04ff5fd616d02877"
+    },
+    "source-review-frozen/src/solver_forensics.hpp": {
+      "bytes": 860,
+      "sha256": "02b3a3d33ea64a351b228b96b2e0590b7a79fb4e9b87da78dc28c59465aca3bb"
+    },
+    "source-review-frozen/src/runtime_observer.cpp": {
+      "bytes": 17215,
+      "sha256": "9bbbe145f0cfa78c24f1d2b56008b065f1f3838ee54fa727eb76a88578fb607f"
+    },
+    "source-review-frozen/src/lossless_evidence.cpp": {
+      "bytes": 15969,
+      "sha256": "04680550f459ebf6bf0136bd611e2707b18562ddea5d44e4fc1c8782efb1bdd6"
+    },
+    "source-review-frozen/src/task_local_provider.hpp": {
+      "bytes": 640,
+      "sha256": "1819e2f626fb0ff65ad7e7e8de0b0b52f625e6bf435b073d7cca55722d76f093"
+    },
+    "source-review-frozen/src/affine_assembly.hpp": {
+      "bytes": 6026,
+      "sha256": "6faee2961242052c7655da41e8988dd0844f14c3cfa885672aa7c03eaa1dcb57"
+    },
+    "source-review-frozen/src/integrated_horizon_qp.cpp": {
+      "bytes": 69975,
+      "sha256": "a7318504af8b4969b442fe0769fe9f06cf87110c1a9f6402470c054f3a0c3046"
+    },
+    "source-review-frozen/src/normalization.hpp": {
+      "bytes": 4288,
+      "sha256": "9456be5c205f23d2aa2210eac02286d030204a446af003ee85362b971ccb43d8"
+    },
+    "source-review-frozen/src/model_boundary.hpp": {
+      "bytes": 2528,
+      "sha256": "51b2e845860fb4faecfc95b7f9873439ab4e682adce37a290e6fe704ee48a9d9"
+    },
+    "source-review-frozen/src/linear_box_screen.hpp": {
+      "bytes": 3916,
+      "sha256": "b649eff43293a3078b7b46a0166fa0f8a2ac59f3a8496c8c73a98c275fed96d1"
+    }
+  },
+  "nativeSolved": true,
+  "originalSI": true,
+  "strictHistory": false,
+  "candidateForwardRequest": false,
+  "ModelB": 0,
+  "task_commits": 0,
+  "phase5": "NOT_ACCEPTED"
+}

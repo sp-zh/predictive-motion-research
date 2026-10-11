@@ -1,0 +1,47 @@
+{
+  "schema": "A5_SOLVED_STRICT_REFUSED_DIAGNOSTIC_FIGURE_V1",
+  "review_ready_sha256": "fb182a1c80ff780898f11214ed78b41f39a5f5fb2d2070dbb3ee389b63ac6f6a",
+  "review_results_sha256": "d7839d89d644f5ccd74cf0c7b2cf57976604cf0e61ed408bcd65278dca298701",
+  "renderer_sha256": "b13599e708638d324f4a87969837d43e1403d79bfa04a4132ab751caf2817fc2",
+  "scope": "Actual saved-file native/SI/strict-history diagnostics. No executed trajectory, full task, matched method ranking or complete-cycle latency.",
+  "data": {
+    "native_ms": [
+      31.914972,
+      2.174718
+    ],
+    "full_original_SI": {
+      "recorded_max": 7.105427357601002e-15,
+      "independent_max": 7.105427357601002e-15,
+      "independent_worst_row": 203,
+      "label": "feedback_jerk/4/7",
+      "row_violation_vector_error": 1.5178830414797062e-18,
+      "gate1e_7_pass": true
+    },
+    "first_strict_failure": {
+      "kind": "b_or_progress_jerk",
+      "tick": 1,
+      "cell": 0,
+      "b": 0.020000000000000004,
+      "previous_b": 0.0,
+      "progress_jerk": 5.000000000000001,
+      "cap": 5
+    },
+    "strict_failure_counts": {
+      "b_or_progress_jerk": 15,
+      "half_progress": 81,
+      "recursive_progress": 41
+    }
+  },
+  "files": {
+    "diagnostics.png": {
+      "bytes": 150925,
+      "sha256": "1fc3c5f1713ca39359f16db8cc044610bbaa3db543e6ea15fd601ee8328f9487"
+    },
+    "diagnostics.svg": {
+      "bytes": 100635,
+      "sha256": "1c9bf8744017779e9369887e9c689bbd6e4a74dacb13471f15dca1fc44130f92"
+    }
+  },
+  "phase5": "NOT_ACCEPTED",
+  "phase6": "NOT_STARTED"
+}

@@ -1,0 +1,19 @@
+{
+  "verdict": "CONFIRMED_NATIVE_SOLVED_FULL_SI_PASS_STRICT_PROGRESS_HISTORY_REFUSAL_NO_CANDIDATE",
+  "source_sha256": "f1db54a5344c2cd0833e4aebf0032dd4f9f2ad8f72194bf4db06726da46bd410",
+  "results_sha256": "d7839d89d644f5ccd74cf0c7b2cf57976604cf0e61ed408bcd65278dca298701",
+  "packet_ready_sha256": "2da3d50c450279d672b602316256412c89406dc1d7814b4e503c3dc5968dbf14",
+  "first_strict_failure": {
+    "kind": "b_or_progress_jerk",
+    "tick": 1,
+    "cell": 0,
+    "b": 0.020000000000000004,
+    "previous_b": 0.0,
+    "progress_jerk": 5.000000000000001,
+    "cap": 5
+  },
+  "forensic_preview_not_authorization": true,
+  "loader_gap_retained": true,
+  "guess_derivation_closure_not_in_packet": true,
+  "phase5": "NOT_ACCEPTED"
+}

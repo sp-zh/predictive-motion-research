@@ -1,0 +1,21 @@
+{
+  "schema": "ARCHIVAL_A5_SOURCE_VIEW_V1",
+  "producer_ready_sha256": "2da3d50c450279d672b602316256412c89406dc1d7814b4e503c3dc5968dbf14",
+  "full_22_source_snapshot": "../../reviews/evidence/phase5_task_start_a_primaldual_v2_20261010/independent/source-read-snapshot",
+  "files": {
+    "active_first_cycle.cpp": {
+      "bytes": 20037,
+      "sha256": "4a292a27db7e720af0c82cec5b565f8d35781edc7e33223f48ce47fce057f880"
+    },
+    "integrated_horizon_qp.cpp": {
+      "bytes": 69975,
+      "sha256": "a7318504af8b4969b442fe0769fe9f06cf87110c1a9f6402470c054f3a0c3046"
+    },
+    "integrated_horizon_qp.hpp": {
+      "bytes": 10599,
+      "sha256": "066da1b1f9e6228cef56e2b52ae73a852a08b54836f53da8e01a6a707aa69299"
+    }
+  },
+  "scope": "Frozen actual A5 subset, not a standalone portable build or replacement of canonical active source.",
+  "phase5": "NOT_ACCEPTED"
+}
