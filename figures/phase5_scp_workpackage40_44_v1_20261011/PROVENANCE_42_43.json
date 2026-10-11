@@ -1,0 +1,79 @@
+{
+  "attempts": {
+    "42": {
+      "files": {
+        "plot.py": {
+          "bytes": 2067,
+          "sha256": "bf9b7f837ed192368b668052a3eac32a895ccb41d857b3290832c75fe463545f"
+        },
+        "render.py": {
+          "bytes": 2034,
+          "sha256": "da481bc1a3175ff4a987e86665a0d8f8263006309fafbc8cb199bc7fd9fc11d5"
+        },
+        "scp_fixed_margin_failure42.png": {
+          "bytes": 139614,
+          "sha256": "87b4e2e7266eb4a274222b10de901180fd6ae7e94a2817bfbd863bbc199bd595"
+        },
+        "data.json": {
+          "bytes": 51884,
+          "sha256": "5f0cab1fa2f796510344d2c968e751b260a67322b3d6307c68e7bc972fcf808f"
+        },
+        "RENDER_RECEIPT.json": {
+          "bytes": 179,
+          "sha256": "7d0fa59b710a825fb6be2babb83d3da3175e571346bf88e3a0c3844b93af68ac"
+        }
+      },
+      "Root_visual_qa": true,
+      "source_projection": "Exact saved scalar values and counts; full raw candidate/model inputs remain in private immutable evidence. Portable renderer uses external /private/tmp cache, CPU30s and wall40s; unsupported Darwin AS cap omitted."
+    },
+    "43": {
+      "files": {
+        "render.py": {
+          "bytes": 4661,
+          "sha256": "abf4235c5dece8260966671fce7745abf478b1c9d45ff98bef4e51093f51f339"
+        },
+        "fine.json": {
+          "bytes": 1500,
+          "sha256": "d4d6134daf43c181685c6089598db67038e49ba9159b60937968bdd914593f53"
+        },
+        "native.json": {
+          "bytes": 56656,
+          "sha256": "b86436adeb8420874b88a253b08b6dcd15655ffd379726ed0c5ce3b49890dcee"
+        },
+        "scp_backtrack43_tcp_prefix.png": {
+          "bytes": 181089,
+          "sha256": "a8e8374dd4ec217a8b9aed411c36dd62f405d851d9a1dfa0ff5cbdc6a38e74a2"
+        },
+        "whole.json": {
+          "bytes": 13879,
+          "sha256": "bc34172190f0efcf6f6ebce894d3e73c5be3d09fb33113a0753fa555a4adfd26"
+        },
+        "scp_backtrack43_diagnostic.png": {
+          "bytes": 219009,
+          "sha256": "eb4aa7d386479483ce01fc8ca5b6cf25be580973be1c6fd4d92f1743e0e9e6ca"
+        },
+        "task_points.json": {
+          "bytes": 53675,
+          "sha256": "5d2f14d77dfd370f7f79af84a583b4597bd2ae2b61a356117827689ae1675e14"
+        },
+        "producer_plot.py": {
+          "bytes": 4565,
+          "sha256": "9e5e2ed3e02e4c5fb5be88f207c4acd97ced66c4738e4ef16f2cc99557281dad"
+        },
+        "RENDER_RECEIPT.json": {
+          "bytes": 492,
+          "sha256": "45e201cedbf00d313811b67e3f548c5f9722401877482b63cce2536a7dba7266"
+        },
+        "producer_RENDER_RECEIPT.json": {
+          "bytes": 491,
+          "sha256": "c53e2e4b5e8cb3250c3046933354b3197f5abd0f6f9212d2c6fcd8124becc615"
+        }
+      },
+      "Root_visual_qa": true,
+      "source_projection": "Exact saved scalar values and counts; full raw candidate/model inputs remain in private immutable evidence. Portable renderer uses external /private/tmp cache, CPU30s and wall40s; unsupported Darwin AS cap omitted.",
+      "caption_clarification": "45fullModelvalueforecasts,21B400passes/24refusals;finaldiagnostic inspected again"
+    }
+  },
+  "scope": "Actual short prefixes and all retained refusal boundaries; no fulltask/stop/realtime/phase acceptance.43 plot corrected label overlap and includes failed wholeboundary22.42 portable render on exact selected curves matches original PNG byte for byte.",
+  "phase5": "NOT_ACCEPTED"
+}

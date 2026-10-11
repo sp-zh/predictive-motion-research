@@ -1,0 +1,25 @@
+# Genuine current-relinearization work package, attempts40–44
+
+Attempt44 completes 64 real simulated command transactions and 128 physical 2ms substeps in one genuine Session/Scene, over 256ms. It enters 141 fresh proposals, retaining all 77 nonlinear B refusals; only 64 complete B400 passes authorize C. Recorded final path progress is 0.52740798%, maximum actual TCP errors 3.5238046mm and 0.0054843977rad. All64 whole-cycle deadlines miss4ms (mean6.8622445s). Entry452.7396313s includes startup/termination. It ends at nonzero progress speed .0387616263/s, with no stopping attempt or certificate.
+
+| Attempt | Final retained outcome | Actual commits / halves | Planning change |
+|---|---|---:|---|
+|40|B affine refusal at sample154|1 / 2|centered affine-q margin1/2, repaired fraction/codec exceptions|
+|41|B affine refusal at sample192|5 / 10|margin1/8; original nonlinear gate unchanged|
+|42|three B refusals at boundary5|5 / 10|three fresh current proposals with fixed margin|
+|43|dependent-face hint refusal at cycle21/trial1|21 / 42|fresh relinearization with margin /16 per trial|
+|44|finite64-command work package complete|64 / 128|consistent singular KKT hint; original rank threshold/residual gates|
+
+These are consecutive source-development attempts, not a controlled method comparison or research ranking. Original failures, preparation/schema mistakes, exact fixtures and source versions remain in the complete archive. No old consumed attempt is rerun. The original affine checker, d3d4 freeze, original Model/configuration and gate thresholds remain preserved.
+
+Retries keep exactly the same actual q/v/C/w/s/r, previous alpha/b, physical derivative history, integration bits and accepted boundary. Only controls of an eligible native-SOLVED/full-original-SI/literal-history candidate become a new genuine Model nominal. Its maps, geometry, QP, numerical hint, native solver and B are rebuilt. The private owner registry has unique proposal IDs, at most three trials per boundary and no proposal after a validation token. Predicted states and refused controls never become accepted history. Centered affine-q containment is not nonlinear or friction-branch certification; original nonlinear B400 is mandatory.
+
+The singular KKT hint preserves all active faces, the Eigen default rank threshold and full residual gate1e-10. It adds floating positive-Hessian checks and retains original final primal1e-12/stationarity1e-10/nativeSOLVED/fullSI/literal200/B/C checks. Multipliers may be nonunique; floating tests do not prove exact conditioning or unrestricted original-QP optimality. Numerical terminal progress target1e-13 remains explicitly biased, not exact originalE0 equivalence.
+
+The actual44 source ledger611,762,219 stays below the original1,024,000,000 cap. Its separate ledger1,263,433,193 stays below prospective1,800,000,000; neither resets old counters. Provider56400 nominal scenes/509574000 primitive calls/789600 FK and Jacobian calls each are a separate scope, not all warmup/B/C work. Whole-cycle clocks cover every refused trial and successful C; inclusive fine stages overlap and must not be summed. Fine means use141 attempted trials. Independent review of complete64 evidence passes all187 saved QPs across43/44,523600 exact dyadic trust rows,186 literal200 histories and both actual execution chains. Intermediate singular-event K/rhs/solution were not separately recorded, so its two event residuals are source/log evidence, not independently recomputed event residuals.
+
+Independent reviews cover full saved maps, objective, original rows, reduction/guards, prediction/state/history and actual journals, without compiler/SDK/Model/Scene/FK/solver calls. Their exact scope and unavailable measurements are documented in the separate reviews. Source-only or pure fault-injection results do not replace actual simulation. Evidence-write fault tests demonstrate latch/ledger behavior with an extracted pure test, not real native crash or powerloss behavior. The original Mac memory-cap refusal and subsequent bounded Dell pure run remain retained.
+
+The full original packets, independent outputs and failures are excluded from public Git. The complete functional archive has been independently read back on Mac and Dell D: 7695 payloads / 16,018,002,424 bytes, archived in 8,555,289,790 bytes. [Storage checkpoint](STORAGE_CHECKPOINT.json) records both paths and exact SHA identities. Captured pending flags remain historical and are closed by the separate final readback record. Small source, reviewed reports and scientifically inspected figures are public under the standing human backup authorization. Storage verification and remote checkpoint identity are separate facts; a backup does not pass a phase gate. The archival V4 source depends on exact pinned Dell SDK/assets/runtime and is not a portable standalone build.
+
+Phase5 NOT_ACCEPTED; Phase6 NOT_STARTED. This result is a short nonzero closed loop, with incomplete task, physical stopping, realtime and formal held-out acceptance. New finite stopping and longer-task development continue prospectively under actual resource/storage limits.

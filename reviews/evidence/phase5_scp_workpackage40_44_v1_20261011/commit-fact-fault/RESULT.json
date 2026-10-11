@@ -1,0 +1,26 @@
+{
+  "status": "NOT_RUN_RESOURCE_LIMIT_SETUP_REFUSED",
+  "scope": "Independent pure Ledger/latch fault injection only; not complete entry or SDK execution",
+  "limits_required": {
+    "CPU_seconds": 10,
+    "AS_bytes": 1073741824,
+    "overall_timeout_seconds": 15
+  },
+  "failure": "Mac Python resource.setrlimit(RLIMIT_AS) raised ValueError: current limit exceeds maximum limit for both soft/hard1GiB and soft1GiB/originalhard. Initial subprocess preexec_fn failed before clang exec. No compiler or test executable ran.",
+  "source_sha256": {
+    "/private/tmp/phase5_nonzero_scp64x3_active_v1_20261011/src/cycle_support.hpp": "a6155b3e9aecd039a59cd156ceb887c4b0f6b3057166b6dc500f5b2517a99207",
+    "/private/tmp/phase5_nonzero_scp64x3_active_v1_20261011/src/active_first_cycle.cpp": "47dcac8eb2dc296247b72acad85a7271dc8c8c6f376b9db747823fcddfebe786",
+    "/Users/uot/Documents/ChatGPT/ros/tools/phase5_public_live_affine_v2/foundation_resources.cpp": "3a83eddf893b77e1fe67c03de32292431cd0ce273934e479f9c238a25113ca49"
+  },
+  "prepared_sha256": {
+    "regression.cpp": "d8886fbdfe8afb23cca6e27d55ea825b188c37ef23bbb64c9135b72cfe06cbd6",
+    "extracted_checked_add.txt": "b87f41cb1d76b26dcc28b2380994471d5a9b4a9ec96b72c32fc0f10be6897e00",
+    "extracted_ledger.txt": "603406da73aebbc01aecdaa5b3b96919ed7ee44a7f661efce66aa865b65664da",
+    "extracted_latch.txt": "69eed2be5869813e096629b47ca7d6970eb5d17f1c30437ad5c328e7b209a165"
+  },
+  "nativeSDKcalls": 0,
+  "Model_calls": 0,
+  "OSQP_calls": 0,
+  "physical_steps": 0,
+  "static_review": "Source successful-C latch precedes receipt/write/observe/timing; downstream exceptions preserve physical=true and completedCommit, populate final error and prohibit final PASS. Pure test prepared but runtime unverified."
+}

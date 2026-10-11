@@ -1,0 +1,196 @@
+{
+  "schema": "ROOT_EXACT_NATIVE_SOURCE_ARCHIVAL_VIEW_V4",
+  "attempt": 44,
+  "source_dir": "/private/tmp/phase5_nonzero_scp64x3_rank_active_v1_20261011/src",
+  "files": {
+    "active_first_cycle.cpp": {
+      "bytes": 41943,
+      "sha256": "c0871133a23b886031bcc0f27ddeaf646b3d1948951ed87e4c7a2e183c683a86"
+    },
+    "actual_task_metrics.hpp": {
+      "bytes": 1883,
+      "sha256": "83bb0f21e0bfa830b4d8f7e356f9f7c2ce916c49d540c948588d5e460e07d900"
+    },
+    "actual_task_metrics_tests.cpp": {
+      "bytes": 1359,
+      "sha256": "00bea8673e19abc62233e5933722eae94c35b7540d4f3d2c5e609dc2a83b374c"
+    },
+    "affine_assembly.cpp": {
+      "bytes": 28981,
+      "sha256": "d478eda1f0fe97bfc41851515f4baa3e485fd4a57968a62dcb6233ae1157bbd5"
+    },
+    "affine_assembly.hpp": {
+      "bytes": 6026,
+      "sha256": "6faee2961242052c7655da41e8988dd0844f14c3cfa885672aa7c03eaa1dcb57"
+    },
+    "bounded_current_trials.hpp": {
+      "bytes": 2203,
+      "sha256": "b61dcfdc999de8e47c7cf1178564acb3be5f7b70c5633563de634647a8039376"
+    },
+    "bounded_current_trials_tests.cpp": {
+      "bytes": 1396,
+      "sha256": "8dc1dc04037378e0932fef01d281b83ec42cf0872f9576c0e70d0985dbba07f9"
+    },
+    "box_screen_tests.cpp": {
+      "bytes": 2954,
+      "sha256": "d922876babec2867dd1293bcee259ac12e4b2a6af5a30dd551209e097c0abaf8"
+    },
+    "candidate_validation.cpp": {
+      "bytes": 10659,
+      "sha256": "aa76869432f465e45c48acf777913eea5972414a145eedbf02645035773f63e9"
+    },
+    "candidate_validation.hpp": {
+      "bytes": 1526,
+      "sha256": "d816bedb47cff25c49a0d5577a9fa805771816caa1dc406d4772c1ee843fe4fa"
+    },
+    "counted_geometry.hpp": {
+      "bytes": 7359,
+      "sha256": "aede8b1a2b4f5a17e00c7fd477a3db0e9264eab2539c7aa20eb97f62959d9401"
+    },
+    "current_alpha_trust.hpp": {
+      "bytes": 4084,
+      "sha256": "e22e52d912cce18c61aaba4a907a92117853d047020a5bc0a614cb663fd83e78"
+    },
+    "current_alpha_trust_tests.cpp": {
+      "bytes": 2903,
+      "sha256": "adb42a13804dd8ccfd6fc665cdd37aab5a33ab990ca5ac5ae1ac31450ea9a04d"
+    },
+    "current_numeric_guess.hpp": {
+      "bytes": 7368,
+      "sha256": "f3009331a4da83edc27faaefbf3c9a3af8ad4cdaaa4cd578843d60bd31fabfa6"
+    },
+    "current_numeric_guess_before_fraction_repair39.hpp": {
+      "bytes": 4718,
+      "sha256": "bb935c5cbc1c3a09717142947d285b8f2009fe8ae8e47d433703dc815a322972"
+    },
+    "current_numeric_guess_before_rank_repair43.hpp": {
+      "bytes": 5930,
+      "sha256": "6347f1499b3ef91ceaea247035664bb52e1e3cd09cfdf168380861610e502999"
+    },
+    "current_numeric_oracle.cpp": {
+      "bytes": 1845,
+      "sha256": "43e2f0fc6cab95382ff9741669f82d21d43670db633088c6141106bf40a95cac"
+    },
+    "current_numeric_tests.cpp": {
+      "bytes": 3100,
+      "sha256": "f915a7eec36722e45268d443af9bee310fdb1e9a3720c9250b8dca1d0993abf9"
+    },
+    "cycle_support.hpp": {
+      "bytes": 6540,
+      "sha256": "a6155b3e9aecd039a59cd156ceb887c4b0f6b3057166b6dc500f5b2517a99207"
+    },
+    "cycle_support_tests.cpp": {
+      "bytes": 6447,
+      "sha256": "4bbc94b30fd4e860be2b89ca4b75143efecef92427245c5ea6ceced91b60ff68"
+    },
+    "evidence_buffer_tests.cpp": {
+      "bytes": 6554,
+      "sha256": "a3dcddee70a0ad8c5b71ee3ee51b26a762f5b07feb87bcb47fcf8407e124bee7"
+    },
+    "fine_timing.hpp": {
+      "bytes": 1160,
+      "sha256": "17e519005d4740fdf78b85029ece68cf70f75f9f111fc2130061d45acece7f07"
+    },
+    "fine_timing_tests.cpp": {
+      "bytes": 1251,
+      "sha256": "fc29f2387722763c6601aef677dabfc1685d958093fa799a34452c33aa1c482f"
+    },
+    "fraction_repair_regression.cpp": {
+      "bytes": 2199,
+      "sha256": "6377f1275266aa159c740acc95cf559a475bc447dbf1eeadcead115d3bb13a5e"
+    },
+    "integrated_horizon_qp.cpp": {
+      "bytes": 156900,
+      "sha256": "fc23ad27567206bde05a81ca2ef5f6af47615dee04ca2a1ff428802a2c96e380"
+    },
+    "integrated_horizon_qp.hpp": {
+      "bytes": 13006,
+      "sha256": "84ae6e2a7bcb71f126c8ddc1adc167a4f880cfdd428ae592f0e7975100c1c272"
+    },
+    "invariant_tests.cpp": {
+      "bytes": 4721,
+      "sha256": "f5a859d4cf9d79a5ae1b533b8dd62776f2bba6599dfdf691a2915ef3296a33f9"
+    },
+    "linear_box_screen.hpp": {
+      "bytes": 3916,
+      "sha256": "b649eff43293a3078b7b46a0166fa0f8a2ac59f3a8496c8c73a98c275fed96d1"
+    },
+    "lossless_evidence.cpp": {
+      "bytes": 18923,
+      "sha256": "26132fde06d1538f4bcd8e4b846d650ab9ab333572978c30aa9030ec12523b2b"
+    },
+    "lossless_evidence.hpp": {
+      "bytes": 2265,
+      "sha256": "8431175019137524adb05081faa5b16a0bd06b533d04ef3f73f533099b337eb3"
+    },
+    "model_boundary.cpp": {
+      "bytes": 21482,
+      "sha256": "eeb1f2a43ef40315e747c1be536eccc7b810647c65840999cd9c27d75895366e"
+    },
+    "model_boundary.hpp": {
+      "bytes": 4503,
+      "sha256": "966af079735681aedf1031822864baa608255efa43e4ca699d5bec07a3235efb"
+    },
+    "nominal_geometry_provider.hpp": {
+      "bytes": 3544,
+      "sha256": "7269a27ae1cdf5d623b726a52092adb074df8c6e032bcc1cd2c4845acafaf498"
+    },
+    "nominal_geometry_selection.hpp": {
+      "bytes": 2524,
+      "sha256": "6a41cc80feca43509d234c5aaf70e9a4c4de77abfa9b8eabfec6b6541b7711fa"
+    },
+    "normalization.cpp": {
+      "bytes": 23976,
+      "sha256": "a0cd0c9cdb505f922f1744f24cf115057b6ba9f3a9bc1b3ed0c9bdb82d358ed5"
+    },
+    "normalization.hpp": {
+      "bytes": 4288,
+      "sha256": "9456be5c205f23d2aa2210eac02286d030204a446af003ee85362b971ccb43d8"
+    },
+    "observer_tests.cpp": {
+      "bytes": 3834,
+      "sha256": "18bef19661326132aac7396998b07395acd20e83c69b70b520fea855915b5e83"
+    },
+    "owner_binding.hpp": {
+      "bytes": 745,
+      "sha256": "26a058244f7ef8f6d9353857637270623e18e706a061bccc3be4cffb66a54354"
+    },
+    "owner_binding_tests.cpp": {
+      "bytes": 832,
+      "sha256": "891c6b39bf5a9d23c581f6c25a60876cc336c0f299d79239c06cdd04ac447fd4"
+    },
+    "runtime_observer.cpp": {
+      "bytes": 37604,
+      "sha256": "f430badb9ccf00a735258437c0ad5939f60d1372925f1175f2679abce1001a8b"
+    },
+    "runtime_observer.hpp": {
+      "bytes": 9121,
+      "sha256": "b6f9098a00ccecfc6104a655d3e6897cb35ffb030c96dab252dfdcfacab0d278"
+    },
+    "session_primitives.hpp": {
+      "bytes": 2259,
+      "sha256": "0b76bc232ed81dc9b4831617ae1690cfc287def914b8bca5f05ce6e6e25b6080"
+    },
+    "solver_forensics.cpp": {
+      "bytes": 26514,
+      "sha256": "664c1d480e23c1ddef4f45a57165cba871213740329f8693c897d7c07ee7af27"
+    },
+    "solver_forensics.hpp": {
+      "bytes": 860,
+      "sha256": "02b3a3d33ea64a351b228b96b2e0590b7a79fb4e9b87da78dc28c59465aca3bb"
+    },
+    "task_local_provider.cpp": {
+      "bytes": 1839,
+      "sha256": "051b424236979f9fe7ea4cb96564f54969025c997bfba2c61d347a23f7fbae4c"
+    },
+    "task_local_provider.hpp": {
+      "bytes": 640,
+      "sha256": "1819e2f626fb0ff65ad7e7e8de0b0b52f625e6bf435b073d7cca55722d76f093"
+    }
+  },
+  "binding_status": "All46source files exact SHA/size match sealed producer44 actual native src and producer-local/src",
+  "scope": "Exact own C++ sources; original affine/normalization/Session policy preserved. Pinned SDK/build/runtime dependencies stay on Dell; not a portable standalone CMake target. No new native execution from this Mac source view.",
+  "phase5": "NOT_ACCEPTED",
+  "phase6": "NOT_STARTED",
+  "producer_READY_sha256": "c791f36b54afa1b529a9b15d4aa407d58ee91538b868a4f099727306a9042405"
+}

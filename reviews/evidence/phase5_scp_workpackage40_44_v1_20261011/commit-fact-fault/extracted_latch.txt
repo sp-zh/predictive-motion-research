@@ -1,0 +1,1 @@
+if(committed.success&&committed.error.empty()){physical_commit_completed=true;ledger.completedCommit();}

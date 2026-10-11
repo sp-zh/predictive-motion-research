@@ -1,0 +1,2228 @@
+[
+  {
+    "cycle": 0,
+    "half": 1,
+    "actual_simulation_time": 2.002000000000001,
+    "raw_pose_available": 1,
+    "actual_elapsed": 0.0019999999999997797,
+    "logical_elapsed": 0.002,
+    "logical_s": 3.999199999999999e-08,
+    "logical_r": 3.999199999999999e-05,
+    "actual": {
+      "world_position": [
+        0.7192059431048834,
+        -0.03025754579320585,
+        0.39189452677592984
+      ],
+      "world_rotation_rowmajor": [
+        0.000251220802121227,
+        0.005028326759313861,
+        0.9999873263287427,
+        0.999997604685112,
+        -0.0021755200815425646,
+        -0.00024028401980757952,
+        0.002174284283149641,
+        0.9999849914085578,
+        -0.005028861250787803
+      ]
+    },
+    "desired": {
+      "world_position": [
+        0.7200000079984,
+        -0.02999999824105997,
+        0.39500000125638574
+      ],
+      "world_rotation_rowmajor": [
+        0.0,
+        0.0,
+        1.0,
+        1.0,
+        0.0,
+        0.0,
+        0.0,
+        1.0,
+        0.0
+      ]
+    },
+    "measured": 1,
+    "translation_error_m": 0.0032157178896001933,
+    "rotation_angle_rad": 0.005484309707863156,
+    "within_10mm_005rad": 1,
+    "commit_point_passed": 1,
+    "stage": "COMPLETE_ACTUAL_VALIDATED_COMMIT_HALF",
+    "error": ""
+  },
+  {
+    "cycle": 0,
+    "half": 2,
+    "actual_simulation_time": 2.004000000000001,
+    "raw_pose_available": 1,
+    "actual_elapsed": 0.0039999999999995595,
+    "logical_elapsed": 0.004,
+    "logical_s": 1.5996799999999997e-07,
+    "logical_r": 7.998399999999999e-05,
+    "actual": {
+      "world_position": [
+        0.7192059433170279,
+        -0.030257546847422708,
+        0.3918945214564293
+      ],
+      "world_rotation_rowmajor": [
+        0.00025122080198766716,
+        0.005028333473734881,
+        0.9999873262949801,
+        0.9999976046457448,
+        -0.0021755381887887393,
+        -0.00024028391401426097,
+        0.002174302389011451,
+        0.9999849913354018,
+        -0.00502886796954341
+      ]
+    },
+    "desired": {
+      "world_position": [
+        0.7200000319936,
+        -0.02999999296423989,
+        0.39500000502554294
+      ],
+      "world_rotation_rowmajor": [
+        0.0,
+        0.0,
+        1.0,
+        1.0,
+        0.0,
+        0.0,
+        0.0,
+        1.0,
+        0.0
+      ]
+    },
+    "measured": 1,
+    "translation_error_m": 0.0032157330466065503,
+    "rotation_angle_rad": 0.005484323044733557,
+    "within_10mm_005rad": 1,
+    "commit_point_passed": 1,
+    "stage": "COMPLETE_ACTUAL_VALIDATED_COMMIT_HALF",
+    "error": ""
+  },
+  {
+    "cycle": 1,
+    "half": 1,
+    "actual_simulation_time": 2.0060000000000007,
+    "raw_pose_available": 1,
+    "actual_elapsed": 0.0019999999999997797,
+    "logical_elapsed": 0.002,
+    "logical_s": 3.999199999999999e-07,
+    "logical_r": 0.00015996799999999997,
+    "actual": {
+      "world_position": [
+        0.7192059435564222,
+        -0.030257547606399725,
+        0.39189451631371874
+      ],
+      "world_rotation_rowmajor": [
+        0.00025122035770414053,
+        0.005028339891120059,
+        0.9999873262628225,
+        0.999997604607184,
+        -0.0021755559738141084,
+        -0.00024028336633241665,
+        0.0021743201749533925,
+        0.9999849912644396,
+        -0.005028874390220761
+      ]
+    },
+    "desired": {
+      "world_position": [
+        0.720000079984,
+        -0.029999982410599722,
+        0.39500001256385736
+      ],
+      "world_rotation_rowmajor": [
+        0.0,
+        0.0,
+        1.0,
+        1.0,
+        0.0,
+        0.0,
+        0.0,
+        1.0,
+        0.0
+      ]
+    },
+    "measured": 1,
+    "translation_error_m": 0.003215757990788247,
+    "rotation_angle_rad": 0.005484335961620647,
+    "within_10mm_005rad": 1,
+    "commit_point_passed": 1,
+    "stage": "COMPLETE_ACTUAL_VALIDATED_COMMIT_HALF",
+    "error": ""
+  },
+  {
+    "cycle": 1,
+    "half": 2,
+    "actual_simulation_time": 2.0080000000000005,
+    "raw_pose_available": 1,
+    "actual_elapsed": 0.0039999999999995595,
+    "logical_elapsed": 0.004,
+    "logical_s": 7.998399999999999e-07,
+    "logical_r": 0.00023995199999999996,
+    "actual": {
+      "world_position": [
+        0.7192059438172196,
+        -0.030257548132067727,
+        0.3918945113220884
+      ],
+      "world_rotation_rowmajor": [
+        0.00025121956229270936,
+        0.005028346054893995,
+        0.9999873262320285,
+        0.9999976045693312,
+        -0.0021755734719713093,
+        -0.00024028246951302012,
+        0.0021743376758503463,
+        0.9999849911953768,
+        -0.005028880556454979
+      ]
+    },
+    "desired": {
+      "world_position": [
+        0.7200001599679999,
+        -0.029999964821199446,
+        0.3950000251277147
+      ],
+      "world_rotation_rowmajor": [
+        0.0,
+        0.0,
+        1.0,
+        1.0,
+        0.0,
+        0.0,
+        0.0,
+        1.0,
+        0.0
+      ]
+    },
+    "measured": 1,
+    "translation_error_m": 0.003215796083885561,
+    "rotation_angle_rad": 0.005484348516524582,
+    "within_10mm_005rad": 1,
+    "commit_point_passed": 1,
+    "stage": "COMPLETE_ACTUAL_VALIDATED_COMMIT_HALF",
+    "error": ""
+  },
+  {
+    "cycle": 2,
+    "half": 1,
+    "actual_simulation_time": 2.0100000000000002,
+    "raw_pose_available": 1,
+    "actual_elapsed": 0.0019999999999997797,
+    "logical_elapsed": 0.002,
+    "logical_s": 1.3997199999999996e-06,
+    "logical_r": 0.0003599279999999999,
+    "actual": {
+      "world_position": [
+        0.7192059441402521,
+        -0.030257547994391794,
+        0.39189450669793274
+      ],
+      "world_rotation_rowmajor": [
+        0.00025121775648700995,
+        0.0050283515837458714,
+        0.9999873262046812,
+        0.9999976045330687,
+        -0.0021755903501827767,
+        -0.00024028056678698784,
+        0.002174354562027414,
+        0.9999849911308554,
+        -0.005028886085422735
+      ]
+    },
+    "desired": {
+      "world_position": [
+        0.720000279944,
+        -0.02999993843709903,
+        0.3950000439735007
+      ],
+      "world_rotation_rowmajor": [
+        0.0,
+        0.0,
+        1.0,
+        1.0,
+        0.0,
+        0.0,
+        0.0,
+        1.0,
+        0.0
+      ]
+    },
+    "measured": 1,
+    "translation_error_m": 0.0032158504043357434,
+    "rotation_angle_rad": 0.005484360198214758,
+    "within_10mm_005rad": 1,
+    "commit_point_passed": 1,
+    "stage": "COMPLETE_ACTUAL_VALIDATED_COMMIT_HALF",
+    "error": ""
+  },
+  {
+    "cycle": 2,
+    "half": 2,
+    "actual_simulation_time": 2.012,
+    "raw_pose_available": 1,
+    "actual_elapsed": 0.0039999999999995595,
+    "logical_elapsed": 0.004,
+    "logical_s": 2.2395519999999996e-06,
+    "logical_r": 0.0004799039999999999,
+    "actual": {
+      "world_position": [
+        0.7192059445121239,
+        -0.03025754733490833,
+        0.3918945023819374
+      ],
+      "world_rotation_rowmajor": [
+        0.00025121515317180765,
+        0.005028356578206272,
+        0.9999873261802208,
+        0.9999976044981671,
+        -0.00217560669017261,
+        -0.00024027787041175364,
+        0.0021743709141152645,
+        0.999984991070191,
+        -0.005028891078136838
+      ]
+    },
+    "desired": {
+      "world_position": [
+        0.7200004479104,
+        -0.029999901499358456,
+        0.3950000703576011
+      ],
+      "world_rotation_rowmajor": [
+        0.0,
+        0.0,
+        1.0,
+        1.0,
+        0.0,
+        0.0,
+        0.0,
+        1.0,
+        0.0
+      ]
+    },
+    "measured": 1,
+    "translation_error_m": 0.0032159243582392024,
+    "rotation_angle_rad": 0.0054843711408087605,
+    "within_10mm_005rad": 1,
+    "commit_point_passed": 1,
+    "stage": "COMPLETE_ACTUAL_VALIDATED_COMMIT_HALF",
+    "error": ""
+  },
+  {
+    "cycle": 3,
+    "half": 1,
+    "actual_simulation_time": 2.014,
+    "raw_pose_available": 1,
+    "actual_elapsed": 0.0019999999999997797,
+    "logical_elapsed": 0.002,
+    "logical_s": 3.3593279999999997e-06,
+    "logical_r": 0.0006398719999999999,
+    "actual": {
+      "world_position": [
+        0.7192059449978283,
+        -0.03025754547148648,
+        0.3918944987210477
+      ],
+      "world_rotation_rowmajor": [
+        0.0002512107056228674,
+        0.005028360426313383,
+        0.9999873261619878,
+        0.9999976044660425,
+        -0.002175621956406054,
+        -0.00024027333767623338,
+        0.002174386201983125,
+        0.9999849910176268,
+        -0.005028894920232091
+      ]
+    },
+    "desired": {
+      "world_position": [
+        0.7200006718656,
+        -0.02999985224903769,
+        0.3950001055364017
+      ],
+      "world_rotation_rowmajor": [
+        0.0,
+        0.0,
+        1.0,
+        1.0,
+        0.0,
+        0.0,
+        0.0,
+        1.0,
+        0.0
+      ]
+    },
+    "measured": 1,
+    "translation_error_m": 0.0032160208772374944,
+    "rotation_angle_rad": 0.005484380523956888,
+    "within_10mm_005rad": 1,
+    "commit_point_passed": 1,
+    "stage": "COMPLETE_ACTUAL_VALIDATED_COMMIT_HALF",
+    "error": ""
+  },
+  {
+    "cycle": 3,
+    "half": 2,
+    "actual_simulation_time": 2.0159999999999996,
+    "raw_pose_available": 1,
+    "actual_elapsed": 0.0039999999999995595,
+    "logical_elapsed": 0.004,
+    "logical_s": 4.7990399999999995e-06,
+    "logical_r": 0.0007998399999999998,
+    "actual": {
+      "world_position": [
+        0.7192059455727087,
+        -0.030257542663475894,
+        0.39189449560505657
+      ],
+      "world_rotation_rowmajor": [
+        0.0002512048044261972,
+        0.00502836331537887,
+        0.999987326148943,
+        0.99999760443627,
+        -0.0021756363013280544,
+        -0.00024026735799664856,
+        0.002174400576068769,
+        0.9999849909718899,
+        -0.005028897799905729
+      ]
+    },
+    "desired": {
+      "world_position": [
+        0.7200009598079999,
+        -0.029999788927196715,
+        0.3950001507662881
+      ],
+      "world_rotation_rowmajor": [
+        0.0,
+        0.0,
+        1.0,
+        1.0,
+        0.0,
+        0.0,
+        0.0,
+        1.0,
+        0.0
+      ]
+    },
+    "measured": 1,
+    "translation_error_m": 0.0032161434363792876,
+    "rotation_angle_rad": 0.005484388597350899,
+    "within_10mm_005rad": 1,
+    "commit_point_passed": 1,
+    "stage": "COMPLETE_ACTUAL_VALIDATED_COMMIT_HALF",
+    "error": ""
+  },
+  {
+    "cycle": 4,
+    "half": 1,
+    "actual_simulation_time": 2.0179999999999993,
+    "raw_pose_available": 1,
+    "actual_elapsed": 0.0019999999999997797,
+    "logical_elapsed": 0.002,
+    "logical_s": 6.598679999999999e-06,
+    "logical_r": 0.0009997999999999997,
+    "actual": {
+      "world_position": [
+        0.7192059463299658,
+        -0.03025753794509867,
+        0.39189449353652955
+      ],
+      "world_rotation_rowmajor": [
+        0.0002511959648732187,
+        0.005028364357980597,
+        0.9999873261459209,
+        0.9999976044108939,
+        -0.0021756489485016683,
+        -0.00024025845248332178,
+        0.0021744132676051464,
+        0.9999849909391311,
+        -0.005028898826322514
+      ]
+    },
+    "desired": {
+      "world_position": [
+        0.720001319736,
+        -0.029999709774895522,
+        0.3950002073036461
+      ],
+      "world_rotation_rowmajor": [
+        0.0,
+        0.0,
+        1.0,
+        1.0,
+        0.0,
+        0.0,
+        0.0,
+        1.0,
+        0.0
+      ]
+    },
+    "measured": 1,
+    "translation_error_m": 0.003216294797376943,
+    "rotation_angle_rad": 0.005484394172933535,
+    "within_10mm_005rad": 1,
+    "commit_point_passed": 1,
+    "stage": "COMPLETE_ACTUAL_VALIDATED_COMMIT_HALF",
+    "error": ""
+  },
+  {
+    "cycle": 4,
+    "half": 2,
+    "actual_simulation_time": 2.019999999999999,
+    "raw_pose_available": 1,
+    "actual_elapsed": 0.0039999999999995595,
+    "logical_elapsed": 0.004,
+    "logical_s": 8.798239999999998e-06,
+    "logical_r": 0.0011997599999999998,
+    "actual": {
+      "world_position": [
+        0.7192059472297901,
+        -0.03025753173082839,
+        0.3918944923355451
+      ],
+      "world_rotation_rowmajor": [
+        0.00025118481213357025,
+        0.0050283638607576675,
+        0.9999873261512224,
+        0.999997604389221,
+        -0.0021756601476199955,
+        -0.000240247244390146,
+        0.0021744245230709836,
+        0.9999849909172653,
+        -0.005028898307540414
+      ]
+    },
+    "desired": {
+      "world_position": [
+        0.720001759648,
+        -0.029999613033194115,
+        0.39500027640486146
+      ],
+      "world_rotation_rowmajor": [
+        0.0,
+        0.0,
+        1.0,
+        1.0,
+        0.0,
+        0.0,
+        0.0,
+        1.0,
+        0.0
+      ]
+    },
+    "measured": 1,
+    "translation_error_m": 0.003216478531684263,
+    "rotation_angle_rad": 0.005484397658883282,
+    "within_10mm_005rad": 1,
+    "commit_point_passed": 1,
+    "stage": "COMPLETE_ACTUAL_VALIDATED_COMMIT_HALF",
+    "error": ""
+  },
+  {
+    "cycle": 5,
+    "half": 1,
+    "actual_simulation_time": 2.021999999999999,
+    "raw_pose_available": 1,
+    "actual_elapsed": 0.0019999999999997797,
+    "logical_elapsed": 0.002,
+    "logical_s": 1.1437711999999997e-05,
+    "logical_r": 0.0014397119999999997,
+    "actual": {
+      "world_position": [
+        0.7192059483971931,
+        -0.030257522759667085,
+        0.3918944926864396
+      ],
+      "world_rotation_rowmajor": [
+        0.0002511694011199106,
+        0.005028360613714478,
+        0.9999873261714209,
+        0.9999976043740144,
+        -0.0021756688427908566,
+        -0.0002402317965509715,
+        0.002174433296632916,
+        0.9999849909146749,
+        -0.0050288950290834356
+      ]
+    },
+    "desired": {
+      "world_position": [
+        0.7200022875423999,
+        -0.02999949694315253,
+        0.3950003593263199
+      ],
+      "world_rotation_rowmajor": [
+        0.0,
+        0.0,
+        1.0,
+        1.0,
+        0.0,
+        0.0,
+        0.0,
+        1.0,
+        0.0
+      ]
+    },
+    "measured": 1,
+    "translation_error_m": 0.0032166972100118336,
+    "rotation_angle_rad": 0.005484397439958825,
+    "within_10mm_005rad": 1,
+    "commit_point_passed": 1,
+    "stage": "COMPLETE_ACTUAL_VALIDATED_COMMIT_HALF",
+    "error": ""
+  },
+  {
+    "cycle": 5,
+    "half": 2,
+    "actual_simulation_time": 2.0239999999999987,
+    "raw_pose_available": 1,
+    "actual_elapsed": 0.0039999999999995595,
+    "logical_elapsed": 0.004,
+    "logical_s": 1.4557087999999997e-05,
+    "logical_r": 0.0016796639999999998,
+    "actual": {
+      "world_position": [
+        0.7192059497732586,
+        -0.03025751163327825,
+        0.3918944943193074
+      ],
+      "world_rotation_rowmajor": [
+        0.000251150641256942,
+        0.005028355078190272,
+        0.9999873262039684,
+        0.9999976043642407,
+        -0.002175675409113842,
+        -0.00024021301551030438,
+        0.0021744399587110275,
+        0.9999849909282241,
+        -0.005028889454357172
+      ]
+    },
+    "desired": {
+      "world_position": [
+        0.7200029114176,
+        -0.029999359745830834,
+        0.39500045732440703
+      ],
+      "world_rotation_rowmajor": [
+        0.0,
+        0.0,
+        1.0,
+        1.0,
+        0.0,
+        0.0,
+        0.0,
+        1.0,
+        0.0
+      ]
+    },
+    "measured": 1,
+    "translation_error_m": 0.003216954530078339,
+    "rotation_angle_rad": 0.0054843941286559904,
+    "within_10mm_005rad": 1,
+    "commit_point_passed": 1,
+    "stage": "COMPLETE_ACTUAL_VALIDATED_COMMIT_HALF",
+    "error": ""
+  },
+  {
+    "cycle": 6,
+    "half": 1,
+    "actual_simulation_time": 2.0259999999999985,
+    "raw_pose_available": 1,
+    "actual_elapsed": 0.0019999999999997797,
+    "logical_elapsed": 0.002,
+    "logical_s": 1.8196359999999998e-05,
+    "logical_r": 0.001959608,
+    "actual": {
+      "world_position": [
+        0.7192059515178286,
+        -0.03025749679621378,
+        0.3918944981248727
+      ],
+      "world_rotation_rowmajor": [
+        0.0002511261225164596,
+        0.005028345677092871,
+        0.999987326257398,
+        0.9999976043634563,
+        -0.002175678475687476,
+        -0.00024018850153889604,
+        0.0021744431508851636,
+        0.9999849909688243,
+        -0.005028880000703534
+      ]
+    },
+    "desired": {
+      "world_position": [
+        0.720003639272,
+        -0.02999919968228917,
+        0.39500057165550867
+      ],
+      "world_rotation_rowmajor": [
+        0.0,
+        0.0,
+        1.0,
+        1.0,
+        0.0,
+        0.0,
+        0.0,
+        1.0,
+        0.0
+      ]
+    },
+    "measured": 1,
+    "translation_error_m": 0.0032172528545226374,
+    "rotation_angle_rad": 0.00548438562744602,
+    "within_10mm_005rad": 1,
+    "commit_point_passed": 1,
+    "stage": "COMPLETE_ACTUAL_VALIDATED_COMMIT_HALF",
+    "error": ""
+  },
+  {
+    "cycle": 6,
+    "half": 2,
+    "actual_simulation_time": 2.0279999999999982,
+    "raw_pose_available": 1,
+    "actual_elapsed": 0.0039999999999995595,
+    "logical_elapsed": 0.004,
+    "logical_s": 2.2395519999999997e-05,
+    "logical_r": 0.0022395519999999997,
+    "actual": {
+      "world_position": [
+        0.7192059535489961,
+        -0.030257479062456356,
+        0.39189450372203216
+      ],
+      "world_rotation_rowmajor": [
+        0.0002510970785448152,
+        0.005028333063805401,
+        0.9999873263281162,
+        0.9999976043702157,
+        -0.002175678572112344,
+        -0.00024015948421135525,
+        0.002174443396400938,
+        0.9999849910320393,
+        -0.00502886732431429
+      ]
+    },
+    "desired": {
+      "world_position": [
+        0.720004479104,
+        -0.029999014993587775,
+        0.39500070357601047
+      ],
+      "world_rotation_rowmajor": [
+        0.0,
+        0.0,
+        1.0,
+        1.0,
+        0.0,
+        0.0,
+        0.0,
+        1.0,
+        0.0
+      ]
+    },
+    "measured": 1,
+    "translation_error_m": 0.00321759603893113,
+    "rotation_angle_rad": 0.005484372800720603,
+    "within_10mm_005rad": 1,
+    "commit_point_passed": 1,
+    "stage": "COMPLETE_ACTUAL_VALIDATED_COMMIT_HALF",
+    "error": ""
+  },
+  {
+    "cycle": 7,
+    "half": 1,
+    "actual_simulation_time": 2.029999999999998,
+    "raw_pose_available": 1,
+    "actual_elapsed": 0.0019999999999997797,
+    "logical_elapsed": 0.002,
+    "logical_s": 2.7194559999999996e-05,
+    "logical_r": 0.0025594879999999995,
+    "actual": {
+      "world_position": [
+        0.7192059560643818,
+        -0.030257456581897272,
+        0.3918945122316522
+      ],
+      "world_rotation_rowmajor": [
+        0.0002510606285863748,
+        0.005028315251292603,
+        0.9999873264268364,
+        0.9999976043889491,
+        -0.0021756739781941536,
+        -0.0002401230957140843,
+        0.0021744389900064665,
+        0.999984991131603,
+        -0.00502884943148163
+      ]
+    },
+    "desired": {
+      "world_position": [
+        0.720005438912,
+        -0.029998803920787027,
+        0.3950008543422981
+      ],
+      "world_rotation_rowmajor": [
+        0.0,
+        0.0,
+        1.0,
+        1.0,
+        0.0,
+        0.0,
+        0.0,
+        1.0,
+        0.0
+      ]
+    },
+    "measured": 1,
+    "translation_error_m": 0.003217986222951701,
+    "rotation_angle_rad": 0.0054843530155595285,
+    "within_10mm_005rad": 1,
+    "commit_point_passed": 1,
+    "stage": "COMPLETE_ACTUAL_VALIDATED_COMMIT_HALF",
+    "error": ""
+  },
+  {
+    "cycle": 7,
+    "half": 2,
+    "actual_simulation_time": 2.031999999999998,
+    "raw_pose_available": 1,
+    "actual_elapsed": 0.0039999999999995595,
+    "logical_elapsed": 0.004,
+    "logical_s": 3.2633471999999995e-05,
+    "logical_r": 0.0028794239999999994,
+    "actual": {
+      "world_position": [
+        0.7192059589552862,
+        -0.030257430400649727,
+        0.3918945231395363
+      ],
+      "world_rotation_rowmajor": [
+        0.0002510183630647922,
+        0.005028293123772898,
+        0.999987326548712,
+        0.9999976044177215,
+        -0.0021756654079227167,
+        -0.000240080920973329,
+        0.002174430637489122,
+        0.9999849912615149,
+        -0.005028827210052267
+      ]
+    },
+    "desired": {
+      "world_position": [
+        0.7200065266944,
+        -0.02999856470494751,
+        0.3950010252107572
+      ],
+      "world_rotation_rowmajor": [
+        0.0,
+        0.0,
+        1.0,
+        1.0,
+        0.0,
+        0.0,
+        0.0,
+        1.0,
+        0.0
+      ]
+    },
+    "measured": 1,
+    "translation_error_m": 0.0032184274532480674,
+    "rotation_angle_rad": 0.005484327437142324,
+    "within_10mm_005rad": 1,
+    "commit_point_passed": 1,
+    "stage": "COMPLETE_ACTUAL_VALIDATED_COMMIT_HALF",
+    "error": ""
+  },
+  {
+    "cycle": 8,
+    "half": 1,
+    "actual_simulation_time": 2.0339999999999976,
+    "raw_pose_available": 1,
+    "actual_elapsed": 0.0019999999999997797,
+    "logical_elapsed": 0.002,
+    "logical_s": 3.8752247999999996e-05,
+    "logical_r": 0.003239351999999999,
+    "actual": {
+      "world_position": [
+        0.7192059624602092,
+        -0.030257398367078636,
+        0.39189453781988043
+      ],
+      "world_rotation_rowmajor": [
+        0.0002509669153997196,
+        0.005028264242673719,
+        0.9999873267068488,
+        0.9999976044619117,
+        -0.0021756507581242868,
+        -0.00024002960925301187,
+        0.0021744162531630584,
+        0.9999849914386121,
+        -0.005028798213634944
+      ]
+    },
+    "desired": {
+      "world_position": [
+        0.7200077504496,
+        -0.029998295587130065,
+        0.3950012174377733
+      ],
+      "world_rotation_rowmajor": [
+        0.0,
+        0.0,
+        1.0,
+        1.0,
+        0.0,
+        0.0,
+        0.0,
+        1.0,
+        0.0
+      ]
+    },
+    "measured": 1,
+    "translation_error_m": 0.0032189216328980834,
+    "rotation_angle_rad": 0.005484292845039609,
+    "within_10mm_005rad": 1,
+    "commit_point_passed": 1,
+    "stage": "COMPLETE_ACTUAL_VALIDATED_COMMIT_HALF",
+    "error": ""
+  },
+  {
+    "cycle": 8,
+    "half": 2,
+    "actual_simulation_time": 2.0359999999999974,
+    "raw_pose_available": 1,
+    "actual_elapsed": 0.0039999999999995595,
+    "logical_elapsed": 0.004,
+    "logical_s": 4.559087999999999e-05,
+    "logical_r": 0.003599279999999999,
+    "actual": {
+      "world_position": [
+        0.7192059664399161,
+        -0.030257361776507515,
+        0.3918945556029806
+      ],
+      "world_rotation_rowmajor": [
+        0.00025090826162488256,
+        0.0050282297629019035,
+        0.9999873268949431,
+        0.999997604519026,
+        -0.002175630957885727,
+        -0.00023997112942275578,
+        0.002174396755910857,
+        0.9999849916550672,
+        -0.005028763601654773
+      ]
+    },
+    "desired": {
+      "world_position": [
+        0.720009118176,
+        -0.02999799480839592,
+        0.3950014322797319
+      ],
+      "world_rotation_rowmajor": [
+        0.0,
+        0.0,
+        1.0,
+        1.0,
+        0.0,
+        0.0,
+        0.0,
+        1.0,
+        0.0
+      ]
+    },
+    "measured": 1,
+    "translation_error_m": 0.003219473034498539,
+    "rotation_angle_rad": 0.0054842507552460675,
+    "within_10mm_005rad": 1,
+    "commit_point_passed": 1,
+    "stage": "COMPLETE_ACTUAL_VALIDATED_COMMIT_HALF",
+    "error": ""
+  },
+  {
+    "cycle": 9,
+    "half": 1,
+    "actual_simulation_time": 2.037999999999997,
+    "raw_pose_available": 1,
+    "actual_elapsed": 0.0019999999999997797,
+    "logical_elapsed": 0.002,
+    "logical_s": 5.3189359999999986e-05,
+    "logical_r": 0.003999199999999999,
+    "actual": {
+      "world_position": [
+        0.7192059711770965,
+        -0.030257318162257997,
+        0.39189457813912815
+      ],
+      "world_rotation_rowmajor": [
+        0.0002508385252822376,
+        0.0050281867537430025,
+        0.9999873271286999,
+        0.9999976045954666,
+        -0.002175603488105249,
+        -0.00023990162402459658,
+        0.0021743696467941276,
+        0.9999849919310937,
+        -0.005028720434372247
+      ]
+    },
+    "desired": {
+      "world_position": [
+        0.7200106378719999,
+        -0.029997660609806794,
+        0.39500167099301847
+      ],
+      "world_rotation_rowmajor": [
+        0.0,
+        0.0,
+        1.0,
+        1.0,
+        0.0,
+        0.0,
+        0.0,
+        1.0,
+        0.0
+      ]
+    },
+    "measured": 1,
+    "translation_error_m": 0.0032200833121408634,
+    "rotation_angle_rad": 0.005484197308526839,
+    "within_10mm_005rad": 1,
+    "commit_point_passed": 1,
+    "stage": "COMPLETE_ACTUAL_VALIDATED_COMMIT_HALF",
+    "error": ""
+  },
+  {
+    "cycle": 9,
+    "half": 2,
+    "actual_simulation_time": 2.039999999999997,
+    "raw_pose_available": 1,
+    "actual_elapsed": 0.0039999999999995595,
+    "logical_elapsed": 0.004,
+    "logical_s": 6.158767999999998e-05,
+    "logical_r": 0.0043991199999999986,
+    "actual": {
+      "world_position": [
+        0.7192059764982505,
+        -0.030257269085316466,
+        0.3918946045802947
+      ],
+      "world_rotation_rowmajor": [
+        0.000250760096075775,
+        0.005028136681424877,
+        0.999987327400145,
+        0.999997604688103,
+        -0.002175569524470483,
+        -0.00023982347368506352,
+        0.002174336089143303,
+        0.9999849922567612,
+        -0.005028670183492179
+      ]
+    },
+    "desired": {
+      "world_position": [
+        0.7200123175359999,
+        -0.029997291232425047,
+        0.39500193483401835
+      ],
+      "world_rotation_rowmajor": [
+        0.0,
+        0.0,
+        1.0,
+        1.0,
+        0.0,
+        0.0,
+        0.0,
+        1.0,
+        0.0
+      ]
+    },
+    "measured": 1,
+    "translation_error_m": 0.0032207570009020127,
+    "rotation_angle_rad": 0.00548413442271775,
+    "within_10mm_005rad": 1,
+    "commit_point_passed": 1,
+    "stage": "COMPLETE_ACTUAL_VALIDATED_COMMIT_HALF",
+    "error": ""
+  },
+  {
+    "cycle": 10,
+    "half": 1,
+    "actual_simulation_time": 2.0419999999999967,
+    "raw_pose_available": 1,
+    "actual_elapsed": 0.0019999999999997797,
+    "logical_elapsed": 0.002,
+    "logical_s": 7.082583199999998e-05,
+    "logical_r": 0.004839031999999998,
+    "actual": {
+      "world_position": [
+        0.7192059827337951,
+        -0.030257211744335478,
+        0.39189463687531945
+      ],
+      "world_rotation_rowmajor": [
+        0.00025066855549987777,
+        0.005028076083250177,
+        0.999987327727794,
+        0.9999976048044417,
+        -0.002175526099692099,
+        -0.00023973228230206312,
+        0.002174293138678174,
+        0.9999849926559341,
+        -0.005028609376009574
+      ]
+    },
+    "desired": {
+      "world_position": [
+        0.7200141651663999,
+        -0.029996884917313876,
+        0.39500222505911664
+      ],
+      "world_rotation_rowmajor": [
+        0.0,
+        0.0,
+        1.0,
+        1.0,
+        0.0,
+        0.0,
+        0.0,
+        1.0,
+        0.0
+      ]
+    },
+    "measured": 1,
+    "translation_error_m": 0.003221495494535751,
+    "rotation_angle_rad": 0.00548405754912176,
+    "within_10mm_005rad": 1,
+    "commit_point_passed": 1,
+    "stage": "COMPLETE_ACTUAL_VALIDATED_COMMIT_HALF",
+    "error": ""
+  },
+  {
+    "cycle": 10,
+    "half": 2,
+    "actual_simulation_time": 2.0439999999999965,
+    "raw_pose_available": 1,
+    "actual_elapsed": 0.0039999999999995595,
+    "logical_elapsed": 0.004,
+    "logical_s": 8.094380799999997e-05,
+    "logical_r": 0.005278943999999999,
+    "actual": {
+      "world_position": [
+        0.7192059896722152,
+        -0.030257147983352904,
+        0.3918946739747241
+      ],
+      "world_rotation_rowmajor": [
+        0.00025056673638157445,
+        0.005028006777949623,
+        0.9999873281017866,
+        0.9999976049406376,
+        -0.0021754746683007864,
+        -0.00023963087145995043,
+        0.002174242235261359,
+        0.9999849931163002,
+        -0.0050285398371626155
+      ]
+    },
+    "desired": {
+      "world_position": [
+        0.7200161887616,
+        -0.029996439905537544,
+        0.3950025429246983
+      ],
+      "world_rotation_rowmajor": [
+        0.0,
+        0.0,
+        1.0,
+        1.0,
+        0.0,
+        0.0,
+        0.0,
+        1.0,
+        0.0
+      ]
+    },
+    "measured": 1,
+    "translation_error_m": 0.003222303628848739,
+    "rotation_angle_rad": 0.005483969059303086,
+    "within_10mm_005rad": 1,
+    "commit_point_passed": 1,
+    "stage": "COMPLETE_ACTUAL_VALIDATED_COMMIT_HALF",
+    "error": ""
+  },
+  {
+    "cycle": 11,
+    "half": 1,
+    "actual_simulation_time": 2.0459999999999963,
+    "raw_pose_available": 1,
+    "actual_elapsed": 0.0019999999999997797,
+    "logical_elapsed": 0.002,
+    "logical_s": 9.195842281818237e-05,
+    "logical_r": 0.0057356708181823856,
+    "actual": {
+      "world_position": [
+        0.7192059976953871,
+        -0.030257074641082786,
+        0.3918947181481422
+      ],
+      "world_rotation_rowmajor": [
+        0.0002504496382007282,
+        0.00502792473152891,
+        0.9999873285436529,
+        0.9999976051053753,
+        -0.002175411783695569,
+        -0.0002395142666862804,
+        0.0021741799583550603,
+        0.9999849936656371,
+        -0.005028457521273261
+      ]
+    },
+    "desired": {
+      "world_position": [
+        0.7200183916845636,
+        -0.029995955457547182,
+        0.3950028889590154
+      ],
+      "world_rotation_rowmajor": [
+        0.0,
+        0.0,
+        1.0,
+        1.0,
+        0.0,
+        0.0,
+        0.0,
+        1.0,
+        0.0
+      ]
+    },
+    "measured": 1,
+    "translation_error_m": 0.003223180573784966,
+    "rotation_angle_rad": 0.005483863665066845,
+    "within_10mm_005rad": 1,
+    "commit_point_passed": 1,
+    "stage": "COMPLETE_ACTUAL_VALIDATED_COMMIT_HALF",
+    "error": ""
+  },
+  {
+    "cycle": 11,
+    "half": 2,
+    "actual_simulation_time": 2.047999999999996,
+    "raw_pose_available": 1,
+    "actual_elapsed": 0.0039999999999995595,
+    "logical_elapsed": 0.004,
+    "logical_s": 0.0001038864912727295,
+    "logical_r": 0.006192397636364772,
+    "actual": {
+      "world_position": [
+        0.7192060065499847,
+        -0.03025699386404922,
+        0.39189476812128216
+      ],
+      "world_rotation_rowmajor": [
+        0.000250320569313095,
+        0.005027832156790313,
+        0.9999873290414303,
+        0.9999976052940163,
+        -0.0021753392120832937,
+        -0.0002393857626735163,
+        0.0021741080570147897,
+        0.9999849942889711,
+        -0.00502836464876058
+      ]
+    },
+    "desired": {
+      "world_position": [
+        0.7200207772982545,
+        -0.029995430833795404,
+        0.39500326369031996
+      ],
+      "world_rotation_rowmajor": [
+        0.0,
+        0.0,
+        1.0,
+        1.0,
+        0.0,
+        0.0,
+        0.0,
+        1.0,
+        0.0
+      ]
+    },
+    "measured": 1,
+    "translation_error_m": 0.003224129540474367,
+    "rotation_angle_rad": 0.0054837442443159325,
+    "within_10mm_005rad": 1,
+    "commit_point_passed": 1,
+    "stage": "COMPLETE_ACTUAL_VALIDATED_COMMIT_HALF",
+    "error": ""
+  },
+  {
+    "cycle": 12,
+    "half": 1,
+    "actual_simulation_time": 2.049999999999996,
+    "raw_pose_available": 1,
+    "actual_elapsed": 0.0019999999999997797,
+    "logical_elapsed": 0.002,
+    "logical_s": 0.00011672282328616209,
+    "logical_r": 0.006643934377067813,
+    "actual": {
+      "world_position": [
+        0.7192060166732561,
+        -0.030256902101283182,
+        0.3918948265068347
+      ],
+      "world_rotation_rowmajor": [
+        0.00025017390089679403,
+        0.0050277244092052364,
+        0.999987329619872,
+        0.9999976055164963,
+        -0.0021752529988580405,
+        -0.00023923976051970497,
+        0.002174022605992143,
+        0.9999849950182522,
+        -0.00502825656193015
+      ]
+    },
+    "desired": {
+      "world_position": [
+        0.7200233445646572,
+        -0.029994866262562217,
+        0.3950036669555593
+      ],
+      "world_rotation_rowmajor": [
+        0.0,
+        0.0,
+        1.0,
+        1.0,
+        0.0,
+        0.0,
+        0.0,
+        1.0,
+        0.0
+      ]
+    },
+    "measured": 1,
+    "translation_error_m": 0.0032251475312708227,
+    "rotation_angle_rad": 0.005483604720120389,
+    "within_10mm_005rad": 1,
+    "commit_point_passed": 1,
+    "stage": "COMPLETE_ACTUAL_VALIDATED_COMMIT_HALF",
+    "error": ""
+  },
+  {
+    "cycle": 12,
+    "half": 2,
+    "actual_simulation_time": 2.0519999999999956,
+    "raw_pose_available": 1,
+    "actual_elapsed": 0.0039999999999995595,
+    "logical_elapsed": 0.004,
+    "logical_s": 0.00013046222878100076,
+    "logical_r": 0.007095471117770855,
+    "actual": {
+      "world_position": [
+        0.7192060277662005,
+        -0.03025680182388858,
+        0.39189489178211945
+      ],
+      "world_rotation_rowmajor": [
+        0.0002500134530649678,
+        0.00502760413753256,
+        0.9999873302646924,
+        0.9999976057673023,
+        -0.0021751552550106357,
+        -0.0002390800639959223,
+        0.002173925696450363,
+        0.9999849958355627,
+        -0.005028135918354604
+      ]
+    },
+    "desired": {
+      "world_position": [
+        0.7200260924457562,
+        -0.02999426197212947,
+        0.39500409859168034
+      ],
+      "world_rotation_rowmajor": [
+        0.0,
+        0.0,
+        1.0,
+        1.0,
+        0.0,
+        0.0,
+        0.0,
+        1.0,
+        0.0
+      ]
+    },
+    "measured": 1,
+    "translation_error_m": 0.003226236233916607,
+    "rotation_angle_rad": 0.005483448529902479,
+    "within_10mm_005rad": 1,
+    "commit_point_passed": 1,
+    "stage": "COMPLETE_ACTUAL_VALIDATED_COMMIT_HALF",
+    "error": ""
+  },
+  {
+    "cycle": 13,
+    "half": 1,
+    "actual_simulation_time": 2.0539999999999954,
+    "raw_pose_available": 1,
+    "actual_elapsed": 0.0019999999999997797,
+    "logical_elapsed": 0.002,
+    "logical_s": 0.00014509957665791935,
+    "logical_r": 0.007541876759147725,
+    "actual": {
+      "world_position": [
+        0.719206040325445,
+        -0.030256689058648385,
+        0.3918949669250319
+      ],
+      "world_rotation_rowmajor": [
+        0.0002498329183653891,
+        0.005027466047739904,
+        0.9999873310040732,
+        0.9999976060576923,
+        -0.002175041489680535,
+        -0.0002389003996662309,
+        0.00217381287044055,
+        0.9999849967772793,
+        -0.005027997409239093
+      ]
+    },
+    "desired": {
+      "world_position": [
+        0.7200290199153315,
+        -0.02999361818818712,
+        0.39500455843748283
+      ],
+      "world_rotation_rowmajor": [
+        0.0,
+        0.0,
+        1.0,
+        1.0,
+        0.0,
+        0.0,
+        0.0,
+        1.0,
+        0.0
+      ]
+    },
+    "measured": 1,
+    "translation_error_m": 0.003227392300691374,
+    "rotation_angle_rad": 0.005483268759058305,
+    "within_10mm_005rad": 1,
+    "commit_point_passed": 1,
+    "stage": "COMPLETE_ACTUAL_VALIDATED_COMMIT_HALF",
+    "error": ""
+  },
+  {
+    "cycle": 13,
+    "half": 2,
+    "actual_simulation_time": 2.055999999999995,
+    "raw_pose_available": 1,
+    "actual_elapsed": 0.0039999999999995595,
+    "logical_elapsed": 0.004,
+    "logical_s": 0.00016062973581759164,
+    "logical_r": 0.007988282400524595,
+    "actual": {
+      "world_position": [
+        0.7192060540023808,
+        -0.030256566626095417,
+        0.3918950501407766
+      ],
+      "world_rotation_rowmajor": [
+        0.0002496366688543583,
+        0.005027313266636302,
+        0.999987331821184,
+        0.999997606381196,
+        -0.0021749141919205905,
+        -0.00023870512030765845,
+        0.002173686594300561,
+        0.9999849978222548,
+        -0.005027844171498652
+      ]
+    },
+    "desired": {
+      "world_position": [
+        0.7200321259471635,
+        -0.029992935136427503,
+        0.39500504633176575
+      ],
+      "world_rotation_rowmajor": [
+        0.0,
+        0.0,
+        1.0,
+        1.0,
+        0.0,
+        0.0,
+        0.0,
+        1.0,
+        0.0
+      ]
+    },
+    "measured": 1,
+    "translation_error_m": 0.003228617773640715,
+    "rotation_angle_rad": 0.005483069458144317,
+    "within_10mm_005rad": 1,
+    "commit_point_passed": 1,
+    "stage": "COMPLETE_ACTUAL_VALIDATED_COMMIT_HALF",
+    "error": ""
+  },
+  {
+    "cycle": 14,
+    "half": 1,
+    "actual_simulation_time": 2.057999999999995,
+    "raw_pose_available": 1,
+    "actual_elapsed": 0.0019999999999997797,
+    "logical_elapsed": 0.002,
+    "logical_s": 0.00017704763346863844,
+    "logical_r": 0.008429615250522183,
+    "actual": {
+      "world_position": [
+        0.7192060693570668,
+        -0.030256430098278036,
+        0.39189514479446746
+      ],
+      "world_rotation_rowmajor": [
+        0.0002494176688153382,
+        0.005027139811989545,
+        0.9999873327478379,
+        0.9999976067504625,
+        -0.0021747683065480305,
+        -0.0002384872285386419,
+        0.00217354184956825,
+        0.9999849990115459,
+        -0.005027670206430829
+      ]
+    },
+    "desired": {
+      "world_position": [
+        0.7200354095266936,
+        -0.029992213039981074,
+        0.39500556211515964
+      ],
+      "world_rotation_rowmajor": [
+        0.0,
+        0.0,
+        1.0,
+        1.0,
+        0.0,
+        0.0,
+        0.0,
+        1.0,
+        0.0
+      ]
+    },
+    "measured": 1,
+    "translation_error_m": 0.003229908927464319,
+    "rotation_angle_rad": 0.005482842826368316,
+    "within_10mm_005rad": 1,
+    "commit_point_passed": 1,
+    "stage": "COMPLETE_ACTUAL_VALIDATED_COMMIT_HALF",
+    "error": ""
+  },
+  {
+    "cycle": 14,
+    "half": 2,
+    "actual_simulation_time": 2.0599999999999947,
+    "raw_pose_available": 1,
+    "actual_elapsed": 0.0039999999999995595,
+    "logical_elapsed": 0.004,
+    "logical_s": 0.00019434819681968038,
+    "logical_r": 0.008870948100519771,
+    "actual": {
+      "world_position": [
+        0.7192060859872905,
+        -0.030256282672243583,
+        0.3918952487953681
+      ],
+      "world_rotation_rowmajor": [
+        0.00024918088556818985,
+        0.005026949330876274,
+        0.9999873337644378,
+        0.9999976071579835,
+        -0.0021746067340224495,
+        -0.00023825166920293794,
+        0.0021733815108722077,
+        0.9999850003204924,
+        -0.005027479172612481
+      ]
+    },
+    "desired": {
+      "world_position": [
+        0.7200388696393639,
+        -0.02999145212198122,
+        0.39500610562829436
+      ],
+      "world_rotation_rowmajor": [
+        0.0,
+        0.0,
+        1.0,
+        1.0,
+        0.0,
+        0.0,
+        0.0,
+        1.0,
+        0.0
+      ]
+    },
+    "measured": 1,
+    "translation_error_m": 0.0032312681823824362,
+    "rotation_angle_rad": 0.005482593581311157,
+    "within_10mm_005rad": 1,
+    "commit_point_passed": 1,
+    "stage": "COMPLETE_ACTUAL_VALIDATED_COMMIT_HALF",
+    "error": ""
+  },
+  {
+    "cycle": 15,
+    "half": 1,
+    "actual_simulation_time": 2.0619999999999945,
+    "raw_pose_available": 1,
+    "actual_elapsed": 0.0019999999999997797,
+    "logical_elapsed": 0.002,
+    "logical_s": 0.00021252561199224478,
+    "logical_r": 0.009306467072044635,
+    "actual": {
+      "world_position": [
+        0.7192061045207117,
+        -0.03025611944183251,
+        0.39189536591711627
+      ],
+      "world_rotation_rowmajor": [
+        0.0002489185249110737,
+        0.005026735115676251,
+        0.9999873349066194,
+        0.9999976076178485,
+        -0.0021744238337962074,
+        -0.00023799069093544123,
+        0.0021731999783519695,
+        0.9999850017950601,
+        -0.0050272643441780784
+      ]
+    },
+    "desired": {
+      "world_position": [
+        0.7200425051223984,
+        -0.02999065263815924,
+        0.3950066766885173
+      ],
+      "world_rotation_rowmajor": [
+        0.0,
+        0.0,
+        1.0,
+        1.0,
+        0.0,
+        0.0,
+        0.0,
+        1.0,
+        0.0
+      ]
+    },
+    "measured": 1,
+    "translation_error_m": 0.003232691341064065,
+    "rotation_angle_rad": 0.0054823129925918035,
+    "within_10mm_005rad": 1,
+    "commit_point_passed": 1,
+    "stage": "COMPLETE_ACTUAL_VALIDATED_COMMIT_HALF",
+    "error": ""
+  },
+  {
+    "cycle": 15,
+    "half": 2,
+    "actual_simulation_time": 2.0639999999999943,
+    "raw_pose_available": 1,
+    "actual_elapsed": 0.0039999999999995595,
+    "logical_elapsed": 0.004,
+    "logical_s": 0.00023157406510785893,
+    "logical_r": 0.009741986043569496,
+    "actual": {
+      "world_position": [
+        0.7192061244974376,
+        -0.03025594400798986,
+        0.3918954937492282
+      ],
+      "world_rotation_rowmajor": [
+        0.0002486361922797442,
+        0.005026501375836434,
+        0.9999873361517937,
+        0.9999976081214281,
+        -0.0021742229501484633,
+        -0.00023770987324361892,
+        0.002173000567114114,
+        0.999985003406791,
+        -0.0050270299435709875
+      ]
+    },
+    "desired": {
+      "world_position": [
+        0.7200463148130215,
+        -0.02998981484424995,
+        0.3950072751131753
+      ],
+      "world_rotation_rowmajor": [
+        0.0,
+        0.0,
+        1.0,
+        1.0,
+        0.0,
+        0.0,
+        0.0,
+        1.0,
+        0.0
+      ]
+    },
+    "measured": 1,
+    "translation_error_m": 0.0032341811568312325,
+    "rotation_angle_rad": 0.005482006498200546,
+    "within_10mm_005rad": 1,
+    "commit_point_passed": 1,
+    "stage": "COMPLETE_ACTUAL_VALIDATED_COMMIT_HALF",
+    "error": ""
+  },
+  {
+    "cycle": 16,
+    "half": 1,
+    "actual_simulation_time": 2.065999999999994,
+    "raw_pose_available": 1,
+    "actual_elapsed": 0.0019999999999997797,
+    "logical_elapsed": 0.002,
+    "logical_s": 0.00025148750729191827,
+    "logical_r": 0.010171456140489848,
+    "actual": {
+      "world_position": [
+        0.719206146616937,
+        -0.03025575097156633,
+        0.3918956364947531
+      ],
+      "world_rotation_rowmajor": [
+        0.0002483253222112791,
+        0.005026240642049651,
+        0.9999873375396013,
+        0.9999976086842866,
+        -0.0021739978415817873,
+        -0.0002374006981569199,
+        0.002172777080382715,
+        0.9999850052067736,
+        -0.005026768481435934
+      ]
+    },
+    "desired": {
+      "world_position": [
+        0.7200502975014583,
+        -0.029988939006327653,
+        0.39500790071223185
+      ],
+      "world_rotation_rowmajor": [
+        0.0,
+        0.0,
+        1.0,
+        1.0,
+        0.0,
+        0.0,
+        0.0,
+        1.0,
+        0.0
+      ]
+    },
+    "measured": 1,
+    "translation_error_m": 0.003235732977245046,
+    "rotation_angle_rad": 0.005481664398607986,
+    "within_10mm_005rad": 1,
+    "commit_point_passed": 1,
+    "stage": "COMPLETE_ACTUAL_VALIDATED_COMMIT_HALF",
+    "error": ""
+  },
+  {
+    "cycle": 16,
+    "half": 2,
+    "actual_simulation_time": 2.067999999999994,
+    "raw_pose_available": 1,
+    "actual_elapsed": 0.0039999999999995595,
+    "logical_elapsed": 0.004,
+    "logical_s": 0.00027225988966981835,
+    "logical_r": 0.010600926237410198,
+    "actual": {
+      "world_position": [
+        0.7192061703574892,
+        -0.030255544363401353,
+        0.39189579139973646
+      ],
+      "world_rotation_rowmajor": [
+        0.00024799219768043,
+        0.005025957728008401,
+        0.9999873390442422,
+        0.9999976092965971,
+        -0.002173752326984163,
+        -0.00023706941902340573,
+        0.002172533304323432,
+        0.999985007162475,
+        -0.0050264847860509165
+      ]
+    },
+    "desired": {
+      "world_position": [
+        0.7200544519779339,
+        -0.029988025390470775,
+        0.39500855329564966
+      ],
+      "world_rotation_rowmajor": [
+        0.0,
+        0.0,
+        1.0,
+        1.0,
+        0.0,
+        0.0,
+        0.0,
+        1.0,
+        0.0
+      ]
+    },
+    "measured": 1,
+    "translation_error_m": 0.0032373499546868943,
+    "rotation_angle_rad": 0.0054812929045745615,
+    "within_10mm_005rad": 1,
+    "commit_point_passed": 1,
+    "stage": "COMPLETE_ACTUAL_VALIDATED_COMMIT_HALF",
+    "error": ""
+  },
+  {
+    "cycle": 17,
+    "half": 1,
+    "actual_simulation_time": 2.0699999999999936,
+    "raw_pose_available": 1,
+    "actual_elapsed": 0.0019999999999997797,
+    "logical_elapsed": 0.002,
+    "logical_s": 0.00029388524737910187,
+    "logical_r": 0.011024431471873321,
+    "actual": {
+      "world_position": [
+        0.719206196494494,
+        -0.03025531828627248,
+        0.391895963117364
+      ],
+      "world_rotation_rowmajor": [
+        0.0002476274864249006,
+        0.0050256443667173745,
+        0.9999873407095337,
+        0.9999976099754087,
+        -0.0021734795559531783,
+        -0.00023670675584219758,
+        0.002172262437270145,
+        0.9999850093302984,
+        -0.005026170568582983
+      ]
+    },
+    "desired": {
+      "world_position": [
+        0.7200587770494757,
+        -0.029987074259067166,
+        0.39500923267603
+      ],
+      "world_rotation_rowmajor": [
+        0.0,
+        0.0,
+        1.0,
+        1.0,
+        0.0,
+        0.0,
+        0.0,
+        1.0,
+        0.0
+      ]
+    },
+    "measured": 1,
+    "translation_error_m": 0.003239026984416849,
+    "rotation_angle_rad": 0.005480881312014104,
+    "within_10mm_005rad": 1,
+    "commit_point_passed": 1,
+    "stage": "COMPLETE_ACTUAL_VALIDATED_COMMIT_HALF",
+    "error": ""
+  },
+  {
+    "cycle": 17,
+    "half": 2,
+    "actual_simulation_time": 2.0719999999999934,
+    "raw_pose_available": 1,
+    "actual_elapsed": 0.0039999999999995595,
+    "logical_elapsed": 0.004,
+    "logical_s": 0.00031635761555731163,
+    "logical_r": 0.011447936706336445,
+    "actual": {
+      "world_position": [
+        0.7192062244402013,
+        -0.03025507722376451,
+        0.39189614852660754
+      ],
+      "world_rotation_rowmajor": [
+        0.0002472381821382874,
+        0.005025306017719333,
+        0.9999873425062479,
+        0.9999976107096283,
+        -0.002173183850264493,
+        -0.00023631966874892996,
+        0.0021719687645499475,
+        0.9999850116733648,
+        -0.005025831304828643
+      ]
+    },
+    "desired": {
+      "world_position": [
+        0.7200632715231114,
+        -0.029986085874509464,
+        0.3950099386659732
+      ],
+      "world_rotation_rowmajor": [
+        0.0,
+        0.0,
+        1.0,
+        1.0,
+        0.0,
+        0.0,
+        0.0,
+        1.0,
+        0.0
+      ]
+    },
+    "measured": 1,
+    "translation_error_m": 0.0032407676683634404,
+    "rotation_angle_rad": 0.005480436655267741,
+    "within_10mm_005rad": 1,
+    "commit_point_passed": 1,
+    "stage": "COMPLETE_ACTUAL_VALIDATED_COMMIT_HALF",
+    "error": ""
+  },
+  {
+    "cycle": 18,
+    "half": 1,
+    "actual_simulation_time": 2.073999999999993,
+    "raw_pose_available": 1,
+    "actual_elapsed": 0.0019999999999997797,
+    "logical_elapsed": 0.002,
+    "logical_s": 0.00033967111218730236,
+    "logical_r": 0.011865559923654248,
+    "actual": {
+      "world_position": [
+        0.7192062550499815,
+        -0.0302548147803319,
+        0.39189635275120205
+      ],
+      "world_rotation_rowmajor": [
+        0.0002468141988782313,
+        0.005024933580896895,
+        0.9999873444825471,
+        0.9999976115177691,
+        -0.002172857755816271,
+        -0.00023589812887608863,
+        0.002171644884747581,
+        0.9999850142535527,
+        -0.005025457871078609
+      ]
+    },
+    "desired": {
+      "world_position": [
+        0.7200679342224374,
+        -0.0299850604955517,
+        0.3950106710806816
+      ],
+      "world_rotation_rowmajor": [
+        0.0,
+        0.0,
+        1.0,
+        1.0,
+        0.0,
+        0.0,
+        0.0,
+        1.0,
+        0.0
+      ]
+    },
+    "measured": 1,
+    "translation_error_m": 0.003242566426109724,
+    "rotation_angle_rad": 0.005479947196489409,
+    "within_10mm_005rad": 1,
+    "commit_point_passed": 1,
+    "stage": "COMPLETE_ACTUAL_VALIDATED_COMMIT_HALF",
+    "error": ""
+  },
+  {
+    "cycle": 18,
+    "half": 2,
+    "actual_simulation_time": 2.075999999999993,
+    "raw_pose_available": 1,
+    "actual_elapsed": 0.0039999999999995595,
+    "logical_elapsed": 0.004,
+    "logical_s": 0.0003638198552519286,
+    "logical_r": 0.01228318314097205,
+    "actual": {
+      "world_position": [
+        0.7192062876658274,
+        -0.030254535911539114,
+        0.3918965722796083
+      ],
+      "world_rotation_rowmajor": [
+        0.00024636326727492386,
+        0.0050245332029132395,
+        0.9999873466055618,
+        0.9999976123874135,
+        -0.0021725061217129638,
+        -0.00023544982915241208,
+        0.002171295606651913,
+        0.9999850170293767,
+        -0.0050250564319808955
+      ]
+    },
+    "desired": {
+      "world_position": [
+        0.7200727639710504,
+        -0.02998399838095338,
+        0.3950114297353563
+      ],
+      "world_rotation_rowmajor": [
+        0.0,
+        0.0,
+        1.0,
+        1.0,
+        0.0,
+        0.0,
+        0.0,
+        1.0,
+        0.0
+      ]
+    },
+    "measured": 1,
+    "translation_error_m": 0.0032444273319951708,
+    "rotation_angle_rad": 0.005479420842232955,
+    "within_10mm_005rad": 1,
+    "commit_point_passed": 1,
+    "stage": "COMPLETE_ACTUAL_VALIDATED_COMMIT_HALF",
+    "error": ""
+  },
+  {
+    "cycle": 19,
+    "half": 1,
+    "actual_simulation_time": 2.0779999999999927,
+    "raw_pose_available": 1,
+    "actual_elapsed": 0.0019999999999997797,
+    "logical_elapsed": 0.002,
+    "logical_s": 0.0003887980444287278,
+    "logical_r": 0.012695006035827105,
+    "actual": {
+      "world_position": [
+        0.7192063232271306,
+        -0.030254233724542078,
+        0.39189681272664645
+      ],
+      "world_rotation_rowmajor": [
+        0.00024587456332664237,
+        0.0050240949148921965,
+        0.9999873489279665,
+        0.9999976133384961,
+        -0.002172120904597785,
+        -0.00023496400746253476,
+        0.002170912943464609,
+        0.9999850200683305,
+        -0.005024616993357156
+      ]
+    },
+    "desired": {
+      "world_position": [
+        0.7200777596088858,
+        -0.0299828997858867,
+        0.3950122144477639
+      ],
+      "world_rotation_rowmajor": [
+        0.0,
+        0.0,
+        1.0,
+        1.0,
+        0.0,
+        0.0,
+        0.0,
+        1.0,
+        0.0
+      ]
+    },
+    "measured": 1,
+    "translation_error_m": 0.003246344306701671,
+    "rotation_angle_rad": 0.005478844795356076,
+    "within_10mm_005rad": 1,
+    "commit_point_passed": 1,
+    "stage": "COMPLETE_ACTUAL_VALIDATED_COMMIT_HALF",
+    "error": ""
+  },
+  {
+    "cycle": 19,
+    "half": 2,
+    "actual_simulation_time": 2.0799999999999925,
+    "raw_pose_available": 1,
+    "actual_elapsed": 0.0039999999999995595,
+    "logical_elapsed": 0.004,
+    "logical_s": 0.00041459987939523706,
+    "logical_r": 0.01310682893068216,
+    "actual": {
+      "world_position": [
+        0.7192063610013737,
+        -0.030253913662829614,
+        0.39189707016696496
+      ],
+      "world_rotation_rowmajor": [
+        0.0002453565744238162,
+        0.005023625591603409,
+        0.9999873514130382,
+        0.9999976143572256,
+        -0.002171707500807113,
+        -0.0002344491091620382,
+        0.002170502247231143,
+        0.9999850233240709,
+        -0.005024146449740419
+      ]
+    },
+    "desired": {
+      "world_position": [
+        0.720082919975879,
+        -0.029981764965530018,
+        0.39501302503567004
+      ],
+      "world_rotation_rowmajor": [
+        0.0,
+        0.0,
+        1.0,
+        1.0,
+        0.0,
+        0.0,
+        0.0,
+        1.0,
+        0.0
+      ]
+    },
+    "measured": 1,
+    "translation_error_m": 0.003248321919550868,
+    "rotation_angle_rad": 0.005478227880861287,
+    "within_10mm_005rad": 1,
+    "commit_point_passed": 1,
+    "stage": "COMPLETE_ACTUAL_VALIDATED_COMMIT_HALF",
+    "error": ""
+  },
+  {
+    "cycle": 20,
+    "half": 1,
+    "actual_simulation_time": 2.0819999999999923,
+    "raw_pose_available": 1,
+    "actual_elapsed": 0.0019999999999997797,
+    "logical_elapsed": 0.002,
+    "logical_s": 0.0004412196403890279,
+    "logical_r": 0.013512932063108673,
+    "actual": {
+      "world_position": [
+        0.7192064020160469,
+        -0.0302535683362102,
+        0.3918973507270217
+      ],
+      "world_rotation_rowmajor": [
+        0.0002447977526087719,
+        0.005023114359772041,
+        0.9999873541181341,
+        0.9999976154649055,
+        -0.0021712572993025647,
+        -0.0002338936529525104,
+        0.002170054967272461,
+        0.999985026869836,
+        -0.005023633900886781
+      ]
+    },
+    "desired": {
+      "world_position": [
+        0.7200882439280778,
+        -0.029980594171524995,
+        0.3950138613193699
+      ],
+      "world_rotation_rowmajor": [
+        0.0,
+        0.0,
+        1.0,
+        1.0,
+        0.0,
+        0.0,
+        0.0,
+        1.0,
+        0.0
+      ]
+    },
+    "measured": 1,
+    "translation_error_m": 0.003250353569170334,
+    "rotation_angle_rad": 0.005477556219604491,
+    "within_10mm_005rad": 1,
+    "commit_point_passed": 1,
+    "stage": "COMPLETE_ACTUAL_VALIDATED_COMMIT_HALF",
+    "error": ""
+  },
+  {
+    "cycle": 20,
+    "half": 2,
+    "actual_simulation_time": 2.083999999999992,
+    "raw_pose_available": 1,
+    "actual_elapsed": 0.0039999999999995595,
+    "logical_elapsed": 0.004,
+    "logical_s": 0.00046865160764767176,
+    "logical_r": 0.013919035195535187,
+    "actual": {
+      "world_position": [
+        0.7192064454598456,
+        -0.030253203689504803,
+        0.39189765004447097
+      ],
+      "world_rotation_rowmajor": [
+        0.00024420735671587535,
+        0.005022568863000787,
+        0.9999873570024684,
+        0.9999976166463334,
+        -0.0021707762586605783,
+        -0.00023330685113615024,
+        0.0021695770138157044,
+        0.9999850306541844,
+        -0.005023087011974958
+      ]
+    },
+    "desired": {
+      "world_position": [
+        0.7200937303215295,
+        -0.029979387655520162,
+        0.3950147231191576
+      ],
+      "world_rotation_rowmajor": [
+        0.0,
+        0.0,
+        1.0,
+        1.0,
+        0.0,
+        0.0,
+        0.0,
+        1.0,
+        0.0
+      ]
+    },
+    "measured": 1,
+    "translation_error_m": 0.0032524443422104446,
+    "rotation_angle_rad": 0.0054768395988018526,
+    "within_10mm_005rad": 1,
+    "commit_point_passed": 1,
+    "stage": "COMPLETE_ACTUAL_VALIDATED_COMMIT_HALF",
+    "error": ""
+  }
+]

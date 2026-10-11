@@ -1,0 +1,10 @@
+{
+  "scope": "Exact immutable native source archival view whitespace qualification, no source byte normalization",
+  "full_diff_check_exit": 2,
+  "only_warning": "tools/phase5_nonzero_progress_session_v4/current_numeric_tests.cpp:4: one whitespace-only blank line",
+  "exact_native_source_sha256": "f915a7eec36722e45268d443af9bee310fdb1e9a3720c9250b8dca1d0993abf9",
+  "all_other_intended_diff_whitespace_checks_pass": true,
+  "affected_file_remaining_lines_checked": true,
+  "why_preserved": "Changing this frozen source byte would break exact compiled-source identity. Native sources/test execution and original archives remain unchanged. No broad lint exclusion or new-source defect waiver.",
+  "phase5": "NOT_ACCEPTED"
+}

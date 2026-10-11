@@ -1,0 +1,25 @@
+{
+  "original_service_failure": "stream disconnected before completion",
+  "request_id": "2ec2783d-a645-4ac6-bfcd-a5dfea00a38c",
+  "scope": "Existing math agent43+44 turn failed at service layer; no numerical PASS/FAIL inferred, no new native call authorized. Retried same pure saved-data scope, preserving any prior artifacts.",
+  "independent_audit_still_pending": false,
+  "phase5": "NOT_ACCEPTED",
+  "service_failures": [
+    {
+      "request_id": "2ec2783d-a645-4ac6-bfcd-a5dfea00a38c",
+      "error": "stream disconnected before completion"
+    },
+    {
+      "request_id": "351eb94b-e6a5-4c82-ae52-22f769d81f53",
+      "error": "stream disconnected before completion"
+    },
+    {
+      "request_id": "8e11d73c-6f5c-4f62-b024-500bbffb84d1",
+      "error": "stream disconnected before completion"
+    }
+  ],
+  "retry_action": "Resume existing pure audit processes/results; no duplicate native/Model/solver or protocol rerun",
+  "core_saved_data_results_on_disk": "187 full algebra cases,523600 exact dyadic trust rows and both complete actual chains finished; final source/timing/closure sealing continues without re-running those jobs",
+  "final_sealed_READY_sha256": "73578659b676bc0fd34c16157c24769ea3a7b81dfff6c30f0d800e5ee1bb5861",
+  "Root_report_copy_adapter_failure": "Expected FAILURES.md but final sealed review uses FAILURES.json; stopped before any status completion update. Existing SUMMARY/REVIEW bytes matched, copied actual FAILURES.json without changing sealed evidence."
+}

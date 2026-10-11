@@ -68,6 +68,22 @@ This image depicts the integrated scene; it is not a predictive-control result.
 
 ## Simulation and diagnostic figures
 
+![64 genuine commits, all141 proposals and complete cycle timing](../figures/phase5_scp_workpackage40_44_v1_20261011/attempt44/scp_rank44_diagnostic.png)
+
+![128 recorded TCP poses against the task reference](../figures/phase5_scp_workpackage40_44_v1_20261011/attempt44/scp_rank44_tcp_prefix.png)
+
+Attempt44 records a 256ms prefix with 0.52741% path progress. All 77 original B refusals are preserved; 64 complete B400 passes authorize 128 actual simulated 2ms steps. Every whole-cycle deadline misses 4ms. Whole clocks include every proposal and successful C; inclusive fine means use 141 trials and overlap. Root moved labels using unchanged saved values; original producer plots remain archived. Full task, physical stop and phase acceptance remain unverified. [44figure provenance](../figures/phase5_scp_workpackage40_44_v1_20261011/PROVENANCE_44.json), [functional evidence](../reviews/evidence/phase5_scp_workpackage40_44_v1_20261011/README.md).
+
+![Retained21-commit prefix and failed22ndwholeboundary](../figures/phase5_scp_workpackage40_44_v1_20261011/attempt43/scp_backtrack43_diagnostic.png)
+
+![Three retainedfixed-margin nonlinear refusals at the sameactualboundary](../figures/phase5_scp_workpackage40_44_v1_20261011/attempt42/scp_fixed_margin_failure42.png)
+
+Attempts42/43 preserve their failed proposals and actual state histories. Attempt43 ends at a dependent-face hint refusal before a new solver/B/C; the figure includes its failed 22nd whole boundary. These consecutive source development attempts are not a research comparison. [42/43figure provenance](../figures/phase5_scp_workpackage40_44_v1_20261011/PROVENANCE_42_43.json).
+
+![Original nonlinear refusal and same-pointpredictedfrictionbranch difference](../figures/phase5_centered_trust_failures40_41_v1_20261011/attempt41/candidate_branch_affine_refusal41.png)
+
+Attempt41's rejected candidate was not executed. The same-point friction branch difference does not prove causality. The original 1e-6 component gate remains unchanged; geometry at the failed point is unmeasured. [40/41figure provenance](../figures/phase5_centered_trust_failures40_41_v1_20261011/PROVENANCE.json).
+
 ![Buffered111 prefix, retained112th refusal and original timing gates](../figures/phase5_buffered111_failure_v1_20261011/buffered111_failure_diagnostic.png)
 
 ![222 actual TCP measurements against the task reference](../figures/phase5_buffered111_failure_v1_20261011/buffered111_tcp_prefix.png)

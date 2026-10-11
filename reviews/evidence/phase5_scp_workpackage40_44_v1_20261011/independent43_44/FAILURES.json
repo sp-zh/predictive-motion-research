@@ -1,0 +1,33 @@
+{
+  "schema": "ROOT_RETAINED_AUDIT_AND_SERVICE_FAILURES_V1",
+  "service_disconnections": [
+    "2ec2783d-a645-4ac6-bfcd-a5dfea00a38c",
+    "351eb94b-e6a5-4c82-ae52-22f769d81f53",
+    "8e11d73c-6f5c-4f62-b024-500bbffb84d1"
+  ],
+  "service_scope": "Communication interruption; no numerical failure or native protocol consumption inferred. Existing pure processes/results resumed without rerunning completed187 algebra,523600 exact rows or chain.",
+  "audit_adapters": [
+    {
+      "preserved": "FAILED_ALGEBRA_DRAFT1.py / ALGEBRA.stderr",
+      "failure": "Attempted D144*x before detecting absent final43 x.",
+      "repair": "Only branch ordering; final hint failure has no usable U and no candidate objective/SI evaluation."
+    },
+    {
+      "preserved": "FAILED_TRUST_DRAFT1.py / TRUST_EXACT.stderr",
+      "failure": "Overstrict margin comparison used separately outward-rounded binary64 interval endpoints rather than tighter internal interval.",
+      "repair": "Independent exact dyadic support confirms margin against exact A*center; exported enclosure/L1/radius still checked. All523600 pass, no source gate relaxation."
+    },
+    {
+      "preserved": "FAILED_CHAIN_DRAFT1.py / CHAIN.stderr",
+      "failure": "Expected1713 input pins for43; actual version43 has1712,44has1713.",
+      "repair": "Case-specific roster only; all original checks retained."
+    }
+  ],
+  "native_failure43": "cycle21/trial1 dependent active-face KKT retained failure, no new native solver/B/C.",
+  "producer_failures_preserved_in_inputs": "43 decoder/plot and44 earlier source versions/errors retained by immutable packet; not relabeled as numeric passes.",
+  "seal_draft": {
+    "preserved": "FAILED_READY_DRAFT1.json",
+    "failure": "Initial unpublished seal included FINALIZE.stdout before finalizer printed its completed summary.",
+    "repair": "Second dedicated seal starts after finalizer/log completion and writes no local active logs; no numeric checks rerun."
+  }
+}

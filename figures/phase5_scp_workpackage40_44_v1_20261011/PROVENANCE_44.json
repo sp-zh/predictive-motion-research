@@ -1,0 +1,53 @@
+{
+  "producer_READY_sha256": "c791f36b54afa1b529a9b15d4aa407d58ee91538b868a4f099727306a9042405",
+  "files": {
+    "scp_rank44_diagnostic.png": {
+      "bytes": 220784,
+      "sha256": "a70b4b21ce96b7e2bcb984e3765e9e0b8448e3e66a8df92a99acc2ff212ed165"
+    },
+    "scp_rank44_tcp_prefix.png": {
+      "bytes": 194252,
+      "sha256": "c0da491ad1f0bde740c6efa3bc6f46da32de63d4ee4298c9a8f8fad95b1c8036"
+    },
+    "render.py": {
+      "bytes": 4499,
+      "sha256": "1cac42a5e9cbc0a634fc1023ca0b5ec591abe4ea6c339c31fa36b45d29aee087"
+    },
+    "fine.json": {
+      "bytes": 1495,
+      "sha256": "3c6f0c8d50a63b6a65224962f047392fc1a36485ec5cdc01c5c7acd23abbbfff"
+    },
+    "native.json": {
+      "bytes": 170714,
+      "sha256": "2aea52ee81f0ee902273f0b020cbee8bb1b062b5087177613683396f2d7c8a72"
+    },
+    "whole.json": {
+      "bytes": 40398,
+      "sha256": "e5cf1058b48757ac9c43bc78af31d9477aa514ad043b0183b4f97b6adbd5f4a6"
+    },
+    "task_points.json": {
+      "bytes": 163651,
+      "sha256": "ceb2823ce591d2d0b90ee27a956434c43965d1dd4cdf480c3ff6ebb29a5145fc"
+    },
+    "producer_plot.py": {
+      "bytes": 4586,
+      "sha256": "41308c3a6baa9f1798fc6e2e5836cb9accc19e1260c2e26b053f36880d5f4346"
+    },
+    "RENDER_RECEIPT.json": {
+      "bytes": 482,
+      "sha256": "57c2050ddf285ecd4d30b34299030bb9aadf2e4bff7d9a1f817a1bf8e5a3b011"
+    },
+    "producer_RENDER_RECEIPT.json": {
+      "bytes": 481,
+      "sha256": "96e6c722db6ba1d637e270957b77e08a5ed23b63acaa6aba2c3cbba4f05e3e53"
+    }
+  },
+  "Root_visual_qa": "Original2 and final2 viewed by Root; all labels/units/curves clear. Progress label and4ms label moved off data; all64wholeclocks/128TCP/141attempt denominator preserved. No visible clipping or covered data. New TCP PNG is visually equivalent from exact input, not byteequal to producer PNG; failed equality assumption retained below.",
+  "scope": "Recorded256ms simulated prefix with77refused proposals; plotting source projection retains exact required values/counts. Full original candidate/input arrays retained privately. No new native/Scene/Model calculation, no task/stop/realtime/Phase5acceptance.",
+  "renderer_limit": "CPU30s wall40s; Darwin unsupported AS cap omitted; external tmp cache",
+  "phase5": "NOT_ACCEPTED",
+  "phase6": "NOT_STARTED",
+  "initial_TCP_byte_identity_check": "AssertionError before any provenance write; byteequality was unnecessary and not established. Original and final PNG hashes remain distinct and both inspected.",
+  "producer_TCP_sha256": "3607a45f6eb98053ad0c0541ac3a1227b5e7bada91f5900e0c4af7c59993330e",
+  "caption_clarification": "141fullModelvalueforecasts,64B400passes/77refusals;finaldiagnostic inspected again"
+}

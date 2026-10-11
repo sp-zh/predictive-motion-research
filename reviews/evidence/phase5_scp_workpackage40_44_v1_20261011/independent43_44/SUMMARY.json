@@ -1,0 +1,182 @@
+{
+  "schema": "ROOT_SAVED_SCP43_44_INDEPENDENT_SUMMARY_V1",
+  "verdict": "PASS_RECORDED_FILE_ALGEBRA_AND_TRANSACTION_CHECKS_WITH_RETAINED43_FAILURE",
+  "packets": [
+    {
+      "case": 43,
+      "ready_sha256": "1aa244fb4eb9c66c40413b6d13ae44a010299b4780070248946f840f0c7d0699",
+      "payloads": 1524,
+      "bytes": 3612898573,
+      "chunk_bytes": 524288
+    },
+    {
+      "case": 44,
+      "ready_sha256": "c791f36b54afa1b529a9b15d4aa407d58ee91538b868a4f099727306a9042405",
+      "payloads": 3986,
+      "bytes": 10926159533,
+      "chunk_bytes": 524288
+    }
+  ],
+  "checks": {
+    "full_current_QP": 187,
+    "original_rows_per_QP": 14756,
+    "cost_factor_rows_per_QP": 741,
+    "free_reduced_control_columns": 144,
+    "extra_alpha_progress_rows_per_QP": 160,
+    "exact_qtrust_rows": 523600,
+    "complete_literal200_candidates": 186,
+    "same_actual_history_retry_controls_only": true,
+    "max_trials_per_boundary": 3,
+    "core_execution_permission_always_zero": true,
+    "private_registry_tokens43_44": [
+      21,
+      64
+    ],
+    "source_native_producer_local_exact": true,
+    "source44_default_LU_threshold_and_original_residual_gate_unchanged": true,
+    "rank_events_recorded": [
+      {
+        "cycle": 21,
+        "trial": 1,
+        "iteration": 129,
+        "rank": 253,
+        "dimension": 254,
+        "recorded_original_residual": 4.85722573273506e-17,
+        "scope": "recorded per-event residual, no per-event K/rhs/fullsolution snapshot; not independently re-solved"
+      },
+      {
+        "cycle": 21,
+        "trial": 1,
+        "iteration": 130,
+        "rank": 254,
+        "dimension": 255,
+        "recorded_original_residual": 5.898059818321144e-17,
+        "scope": "recorded per-event residual, no per-event K/rhs/fullsolution snapshot; not independently re-solved"
+      }
+    ],
+    "failed43_fixture_exact_reconstruction_sha256": "53eb88dcb98194256c8f325d5ad7348afdbec3f0aa3117c2a011184fe2ff2d10"
+  },
+  "cases": [
+    {
+      "case": 43,
+      "outcome": "RETAINED_HINT_FAILURE_AFTER_21_COMMITS",
+      "trials": 46,
+      "native_SOLVED": 45,
+      "accepted_B400": 21,
+      "B_refusals": 24,
+      "commits": 21,
+      "actual_task_halves": 42,
+      "task_elapsed_s": 0.084,
+      "physical_steps_including_warmup": 1042,
+      "unique_binary_receipts": 826,
+      "input_pins_before_after_identical": 1712,
+      "native_entry_wall_s": 160.994935259,
+      "termination_session_sim_pass": true,
+      "final_s_r_previous_b": [
+        0.00046865160764767176,
+        0.013919035195535187,
+        0.20305156621325646
+      ],
+      "actual_TCP_translation_max_m": 0.003252444342210445,
+      "actual_TCP_SO3_max_rad": 0.0054843976588832815,
+      "actual_physical_acceleration_absmax": 0.0051606333831460864,
+      "actual_physical_jerk_absmax": 0.7384004905399845,
+      "original_SI_max_native_SOLVED": 1.0000507366658695e-13,
+      "accepted_B_global_affine_absmax": 6.558387660401434e-07,
+      "hint_stationarity_max_complete": 9.020562075079397e-17,
+      "hint_complementarity_max_complete": 3.513397581355991e-17,
+      "ledger_final_commits_forecasts_steps_oldslots_logicalslots": [
+        21,
+        91,
+        42,
+        205617944,
+        412095190
+      ],
+      "whole_successful_cycle_wall_s": {
+        "n": 21,
+        "mean": 6.773996209619048,
+        "p50": 6.245393629,
+        "p95": 9.970528455,
+        "p99": 11.220464790200001,
+        "max": 11.532948874,
+        "all_4ms_misses": true
+      },
+      "failed_whole_boundary": {
+        "cycle": 21,
+        "trials": 2,
+        "physical_success": 0,
+        "wall": 5.47978331,
+        "missed": 1,
+        "last_error": "original value-affine1e-6/jointtrust.002",
+        "fatal": "dependent active-face KKT retained failure",
+        "ledger": [
+          46,
+          91,
+          42,
+          21
+        ]
+      },
+      "fine_timing_trial_denominator": 46,
+      "physical_stop": "NOT_PROVED_NO_STOP_EXECUTION"
+    },
+    {
+      "case": 44,
+      "outcome": "COMPLETE_FINITE_64_COMMITS_NOT_FULL_TASK",
+      "trials": 141,
+      "native_SOLVED": 141,
+      "accepted_B400": 64,
+      "B_refusals": 77,
+      "commits": 64,
+      "actual_task_halves": 128,
+      "task_elapsed_s": 0.256,
+      "physical_steps_including_warmup": 1128,
+      "unique_binary_receipts": 2662,
+      "input_pins_before_after_identical": 1713,
+      "native_entry_wall_s": 452.739631319,
+      "termination_session_sim_pass": true,
+      "final_s_r_previous_b": [
+        0.005274079798661217,
+        0.038761626280593105,
+        0.09100379462847162
+      ],
+      "actual_TCP_translation_max_m": 0.0035238046031544857,
+      "actual_TCP_SO3_max_rad": 0.0054843976588832815,
+      "actual_physical_acceleration_absmax": 0.06967005212463553,
+      "actual_physical_jerk_absmax": 23.741850509575723,
+      "original_SI_max_native_SOLVED": 1.0001721673091879e-13,
+      "accepted_B_global_affine_absmax": 9.473153783443738e-07,
+      "hint_stationarity_max_complete": 9.71445146547012e-17,
+      "hint_complementarity_max_complete": 3.513397581355991e-17,
+      "ledger_final_commits_forecasts_steps_oldslots_logicalslots": [
+        64,
+        282,
+        128,
+        611762219,
+        1263433193
+      ],
+      "whole_successful_cycle_wall_s": {
+        "n": 64,
+        "mean": 6.862244496140625,
+        "p50": 6.0714910025,
+        "p95": 9.225440073749999,
+        "p99": 11.018914303109996,
+        "max": 11.839978122,
+        "all_4ms_misses": true
+      },
+      "failed_whole_boundary": null,
+      "fine_timing_trial_denominator": 141,
+      "physical_stop": "NOT_PROVED_NO_STOP_EXECUTION"
+    }
+  ],
+  "scope_limits": [
+    "File/source/numerical arithmetic only; no new SDK, native, FK, Scene, Model, optimizer, compiler or SSH calls.",
+    "Source and saved private registry/owner checks reviewed; artifact identity alone is not an authentic runtime owner token.",
+    "Two singular KKT event residuals are recorded values checked against source gates; per-event K/rhs/solution were not serialized, so no independent per-event linear solve or exact SPD certificate.",
+    "Planning terminal r RHS differs from original by 1e-13; original SI gate and literal histories remain checked, not exact original-equality equivalence.",
+    "All saved candidate Model points after B refusal remain diagnostics, not passed B or actual execution. Failed-point unmeasured geometry/sigma zeros are unavailable, not clearance measurements.",
+    "Saved selected support rows and B/C aggregates are checked; full collision primitive witness rosters are not all serialized.",
+    "Fine timing is nested inclusive/provider-only; gradient stride256 resets each trial (14118 of3614000). No partition, extrapolation, benchmark or confidence interval.",
+    "Whole boundary timing includes all rejected trials; SDK startup/termination and specified final timing/manifest serialization are outside per-cycle timing.",
+    "No physical stopping execution, completed task, real-time, hardware or Phase5 acceptance."
+  ]
+}

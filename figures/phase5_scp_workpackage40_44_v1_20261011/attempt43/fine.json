@@ -1,0 +1,67 @@
+{
+  "cycles": 46,
+  "nested_sum_not_wall": true,
+  "gradient_sample_not_total": true,
+  "segments": [
+    {
+      "name": "geometry_query",
+      "total_seconds": 26.973939854,
+      "total_calls": 18400
+    },
+    {
+      "name": "fk_jacobian",
+      "total_seconds": 0.9953916500000005,
+      "total_calls": 515200
+    },
+    {
+      "name": "coal_batch_including_true_gradients",
+      "total_seconds": 3.6000107930000005,
+      "total_calls": 18400
+    },
+    {
+      "name": "cover_batch_including_cover_gradients",
+      "total_seconds": 22.234245025000003,
+      "total_calls": 18400
+    },
+    {
+      "name": "gradient_1of256_sample_only",
+      "total_seconds": 0.05296219500000012,
+      "total_calls": 649428
+    },
+    {
+      "name": "assembly",
+      "total_seconds": 4.9670534669999995,
+      "total_calls": 46
+    },
+    {
+      "name": "current_numeric_hint",
+      "total_seconds": 18.117080542,
+      "total_calls": 46
+    },
+    {
+      "name": "native_osqp_wrapper",
+      "total_seconds": 2.089701426,
+      "total_calls": 45
+    },
+    {
+      "name": "evidence_codec_write_sha",
+      "total_seconds": 5.073816043,
+      "total_calls": 703
+    },
+    {
+      "name": "evidence_fsync",
+      "total_seconds": 10.636177027,
+      "total_calls": 703
+    },
+    {
+      "name": "journal_codec_write",
+      "total_seconds": 0.006108907,
+      "total_calls": 168
+    },
+    {
+      "name": "journal_fsync",
+      "total_seconds": 1.794427423,
+      "total_calls": 168
+    }
+  ]
+}

@@ -1,0 +1,5 @@
+Count checkedAdd(Count a, Count b) {
+  if (b > std::numeric_limits<Count>::max() - a)
+    throw std::overflow_error("integer shape addition overflow");
+  return a + b;
+}

@@ -1,0 +1,28 @@
+{
+  "scope": "Root source-only review while complete actual44 packet is being sealed. No compiler, optimizer, native or Model call. Exact packet source binding and full actual review pending.",
+  "source_sha256": {
+    "current_numeric_guess.hpp": "f3009331a4da83edc27faaefbf3c9a3af8ad4cdaaa4cd578843d60bd31fabfa6",
+    "bounded_current_trials.hpp": "b61dcfdc999de8e47c7cf1178564acb3be5f7b70c5633563de634647a8039376",
+    "active_first_cycle.cpp": "c0871133a23b886031bcc0f27ddeaf646b3d1948951ed87e4c7a2e183c683a86"
+  },
+  "default_FullPivLU_threshold_changed": false,
+  "original_KKT_residual_gate": 1e-10,
+  "singular_acceptance_conditions": [
+    "finite full KKT and RHS",
+    "finite solution and full original residual<=1e-10",
+    "original primal Hessian symmetry<=1e-12",
+    "floating LLT succeeds with finite positive diagonals",
+    "reported rank>=primal dimension"
+  ],
+  "original_final_primal_gate": 1e-12,
+  "original_final_stationarity_gate": 1e-10,
+  "all_faces_retained": true,
+  "hint_limits": {
+    "iterations": 512,
+    "wall_seconds": 10
+  },
+  "phase5": "NOT_ACCEPTED",
+  "phase6": "NOT_STARTED",
+  "packet_source_binding_verified": true,
+  "producer_READY_sha256": "c791f36b54afa1b529a9b15d4aa407d58ee91538b868a4f099727306a9042405"
+}
