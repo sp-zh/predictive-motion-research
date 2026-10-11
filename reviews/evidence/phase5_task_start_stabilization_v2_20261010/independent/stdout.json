@@ -1,0 +1,75 @@
+{
+  "scope": "ACTUAL_A7_EXACT_BETA0_STABILIZATION_COMPONENT_ONLY_NO_PROGRESS_TASK_OPTIMALITY_CLAIM",
+  "source_sha256": "37dc8e6156b97538e5d38d60c01c1a5e400d1484ca10808267aa0ee5bfea14e0",
+  "packet_files": 149,
+  "packet_bytes": 70664733,
+  "source_files": 22,
+  "original_full_H_g_F_f_c_A_l_u_E_exact_A2": true,
+  "actual_history_and_nominal_maps_warmup_exact_A2": true,
+  "recorded_external_guess": {
+    "primal_shape": [
+      126
+    ],
+    "dual_shape": [
+      6211
+    ],
+    "file_bytes": 60882,
+    "declared_hash": "7f44c11a1ba47479a8af8abe34a2c9d863ae0ee1b719bea1a6a91474ef30c371",
+    "finite_and_actual_state_history_bitwise_bound": true,
+    "original_and_scaled_digests": [
+      "47b33fe5ae43ae90b351a83fc7caba18ab960e076d570ff7c0dd1685d3eceab4",
+      "252fea5e86b07e0446decd53e51b34eaa96d40af958d2793a1727f185af153ac"
+    ],
+    "source_fullguess_derivation_not_in_packet": true
+  },
+  "loader_source": {
+    "512KiB_preparse_cap": true,
+    "O_NOFOLLOW_opened_regular_fd_exact_size": true,
+    "parsed_exact_bounded_read_EOF_SHA_bytes": true,
+    "seven_history_shape_checks": true,
+    "no_hostile_yaml_or_fault_injection_tested": true
+  },
+  "actual_native": {
+    "status": 0,
+    "raw_status": 1,
+    "api_error": 0,
+    "iterations": 1,
+    "polish": 1,
+    "setup": 0.03097513,
+    "solve": 0.001928706,
+    "primal": 1.8353765045219993e-18,
+    "dual": 2.8406096919120216e-17,
+    "numerical_U_count": 160
+  },
+  "full_original_SI": {
+    "scanned": 13156,
+    "recorded_max": 3.469446951953614e-18,
+    "independent_max": 3.903127820947816e-18,
+    "row_vector_error": 8.673617379884035e-19,
+    "passed1e_7": true
+  },
+  "strict_history": {
+    "200cycles": 200,
+    "failure_count": 0,
+    "all_beta_s_r_b_jerk_exact_zero": true,
+    "final_w": [
+      4.553649124439119e-18,
+      1.3417001884508117e-18,
+      1.9705374484924043e-17,
+      4.30970363562988e-18,
+      -6.06475590234079e-19,
+      7.697835424647081e-18,
+      -1.085896238380013e-18
+    ],
+    "tail_exact_zero_flag": 0,
+    "infinite_hold_NOT_certified": true
+  },
+  "legacy_functions_preserved": true,
+  "runtime_pin_before_after_exact": true,
+  "warmup_steps": 1000,
+  "task_commits": 0,
+  "stop": "CANDIDATE_FORWARD_REQUIRED_NO_EXECUTION_PERMISSION",
+  "firstcause_history_A6_retained_in_packet": true,
+  "new_model_native_solver_calls": 0,
+  "phase5": "NOT_ACCEPTED"
+}

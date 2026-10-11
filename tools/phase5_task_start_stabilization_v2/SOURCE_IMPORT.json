@@ -1,0 +1,20 @@
+{
+  "schema": "ARCHIVAL_A7_STABILIZATION_SOURCE_VIEW_V1",
+  "producer_ready_sha256": "5146ccede2eef1edeac17d1b7c3674675a2c3065633cafa0ca349497b7667294",
+  "files": {
+    "active_first_cycle.cpp": {
+      "bytes": 21731,
+      "sha256": "7e8dc803f312bc950c1eb271e3a345d8f3b80a09a7fa3aff8c69795df97b649c"
+    },
+    "integrated_horizon_qp.cpp": {
+      "bytes": 88934,
+      "sha256": "475aeb8c56589ce851c23f6755aeb5bf615cd9f98fce01f93ab2dc4dfa2b45e2"
+    },
+    "integrated_horizon_qp.hpp": {
+      "bytes": 10978,
+      "sha256": "c159175fbb8ef987e3bd4b81ecfbc64e7f7ecef6858b4d504733aa45e695aa74"
+    }
+  },
+  "scope": "Frozen actual A7 archival source subset, not portable integrated build. Full source remains preserved in packet/independent snapshot. Canonical activeA16 unchanged.",
+  "phase5": "NOT_ACCEPTED"
+}

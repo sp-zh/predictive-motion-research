@@ -1,0 +1,62 @@
+{
+  "schema": "A7_STABILIZATION_PLANNED_COMMAND_DIAGNOSTIC_V1",
+  "producer_ready_sha256": "5146ccede2eef1edeac17d1b7c3674675a2c3065633cafa0ca349497b7667294",
+  "actual_summary_sha256": "8f15be6b24c19e380095a39df8ec2c1544f28b31fec85abbd7607072ec6c2523",
+  "renderer_sha256": "76cee10230138a422e2b456c2f63ae54aec16a4621f7c20da1a3d0aac8e7522c",
+  "scope": "Actual saved QP candidate planned command recurrence. Not physical motion/value validation/replay/full task/online performance. Restricted beta0 subspace does not prove unrestricted optimality.",
+  "data": {
+    "cycles": [
+      1,
+      1,
+      2,
+      2,
+      3,
+      3,
+      4,
+      4,
+      5,
+      5,
+      6,
+      6,
+      8,
+      10,
+      12,
+      16,
+      20,
+      24,
+      28,
+      40
+    ],
+    "command_law": "w_next=w+.004*alpha; C_next=C+.004*w_next; held for two2ms steps only if subsequently validated",
+    "total_plan_seconds": 0.8,
+    "max_absolute_planned_alpha": 0.12903795449056749,
+    "max_absolute_planned_w": 0.011855967742677595,
+    "terminal_planned_w": [
+      4.553649124439119e-18,
+      1.3417001884508117e-18,
+      1.9705374484924043e-17,
+      4.30970363562988e-18,
+      -6.06475590234079e-19,
+      7.697835424647081e-18,
+      -1.085896238380013e-18
+    ],
+    "progress_all_exact_zero": true,
+    "native_setup_seconds": 0.03097513,
+    "native_solve_seconds": 0.001928706,
+    "original_rows": 13156,
+    "maximum_original_SI_violation": 3.469446951953614e-18,
+    "physical_commits": 0
+  },
+  "files": {
+    "planned_commands.png": {
+      "bytes": 242280,
+      "sha256": "82bc4164be276989837b03a8672757f91e34c3dddd6b7e6560993f50b282e4ef"
+    },
+    "planned_commands.svg": {
+      "bytes": 146819,
+      "sha256": "bef099a4254eaec0aa02adca8fe49047056828abe5d360b03e8008246500ce5a"
+    }
+  },
+  "phase5": "NOT_ACCEPTED",
+  "phase6": "NOT_STARTED"
+}

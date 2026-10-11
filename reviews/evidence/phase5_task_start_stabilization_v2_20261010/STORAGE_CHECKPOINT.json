@@ -1,0 +1,41 @@
+{
+  "schema": "ROOT_TASK_START_STABILIZATION_STORAGE_CHECKPOINT_V1",
+  "scope": "Actual A7 SOLVED/fulloriginalSI+strict200cyclePASS, exact126command subspace/all20beta0; complete source/actual A6compilefail/A7/independent33proofs/inspectedplanned-command plot and prior title revision. No nonlinearB/C/fulltask/physicalstop acceptance.",
+  "Mac": {
+    "schema": "TASK_START_STABILIZATION_ARCHIVE_READY_V1",
+    "archive": "/Users/uot/Documents/ChatGPT/ros/results/phase5-reference/task-start-stabilization-v2-20261010/root-archive1/task-start-stabilization-v2.tar.gz",
+    "archive_bytes": 35442423,
+    "archive_sha256": "039e86b0a893acaa4377892f6febbf4d5af41d337dbdb2306920e3224aa29208",
+    "manifest_sha256": "cc364338be9a1a77278649d22b2d44f69f979b5c3357c342bf25d76a4deeec2a",
+    "regular_members": 244,
+    "payloads": 243,
+    "payload_bytes": 72746880,
+    "Mac_all_payloads_verified": true,
+    "Dell_copy_verified": false,
+    "phase5": "NOT_ACCEPTED",
+    "phase6": "NOT_STARTED"
+  },
+  "Dell_readback": {
+    "schema": "ROOT_TASK_START_STABILIZATION_DELL_FULL_READBACK_V1",
+    "archive": "/mnt/d/CodexTransfer/projects/predictive_motion/checkpoints/task-start-stabilization-v2-20261010-root1/task-start-stabilization-v2.tar.gz",
+    "archive_bytes": 35442423,
+    "archive_sha256": "039e86b0a893acaa4377892f6febbf4d5af41d337dbdb2306920e3224aa29208",
+    "ready_sha256": "5ade474f36135e07f0386c51488e36e535de7572f427eaa33a73aecb4810591e",
+    "manifest_sha256": "cc364338be9a1a77278649d22b2d44f69f979b5c3357c342bf25d76a4deeec2a",
+    "regular_members_verified": 244,
+    "payloads_verified": 243,
+    "all_payloads_verified": true,
+    "observed_mode": 365,
+    "observed_uid": 1000,
+    "observed_gid": 1000,
+    "qualification": "NTFS POSIX sealing/ownership change not asserted; no chmod attempted."
+  },
+  "archive_ready_sha256": "5ade474f36135e07f0386c51488e36e535de7572f427eaa33a73aecb4810591e",
+  "Mac_payload_sealed_readonly": true,
+  "Dell_NTFS_POSIX_immutable_claim": false,
+  "native_binary_cache_qualification": "Native/dependency ELF binaries not replicated in Macaggregate; actualDell indexed paths/identities retained.",
+  "source_snapshot_scope": "Archive precedes final smallstorage record; archivedbytes all verified.",
+  "public_remote_backup": "INCOMPLETE_PRIVACY_INSTRUCTION_CONFLICT_PENDING_DIRECT_HUMAN_REPLY",
+  "phase5": "NOT_ACCEPTED",
+  "phase6": "NOT_STARTED"
+}

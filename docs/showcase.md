@@ -666,3 +666,10 @@ The [first actual standalone entry](../reviews/evidence/public_live_affine_v2_in
 ![Native solved but strictly refused task-start candidate](../figures/phase5_task_start_a_primaldual_v2_20261010/diagnostics.png)
 
 [SVG](../figures/phase5_task_start_a_primaldual_v2_20261010/diagnostics.svg) · [provenance](../figures/phase5_task_start_a_primaldual_v2_20261010/provenance.json) · [independent review](../reviews/evidence/phase5_task_start_a_primaldual_v2_20261010/README.md). The inspected 2569 × 869 diagnostic shows native SOLVED and a passing full original SI scan, followed by literal strict-history refusal. First progress jerk exceeds5 by floating-point rounding. All137 forensic replay failures remain retained. Native setup/solve are offline timing subsets. No nonlinear B, executable request, physical C step, accepted task trajectory or Phase5 task video was produced. A zero-progress stabilization component is separate subsequent work.
+
+
+## Zero-progress stabilization candidate (2026-10-10)
+
+![Planned command curves for the actual A7 stabilization candidate](../figures/phase5_task_start_stabilization_v2_20261010/planned_commands.png)
+
+[SVG](../figures/phase5_task_start_stabilization_v2_20261010/planned_commands.svg) · [provenance](../figures/phase5_task_start_stabilization_v2_20261010/provenance.json) · [checkpoint review](../reviews/evidence/phase5_task_start_stabilization_v2_20261010/README.md). The inspected 2569 × 869 figure reconstructs200 planned4 ms command cycles from the actual native QP controls. Original SI and literal command/progress history pass, while progress stays exactly0. These are planned command acceleration and speed, not physical motion or value-model validation. Near-zero terminal command speed is not exact-zero extension or physical rest. No nonlinear B or physical C has run; no accepted Phase5 task video or full-task/online performance claim follows.

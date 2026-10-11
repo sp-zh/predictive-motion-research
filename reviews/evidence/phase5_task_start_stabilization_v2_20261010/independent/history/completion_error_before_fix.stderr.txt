@@ -1,0 +1,5 @@
+Traceback (most recent call last):
+  File "/private/tmp/root_independent_task_start_stabilization_review_20261010/audit_stabilization.py", line 142, in <module>
+    r=Reader(pin(BASE/'entry_completion.bin'),'ACTIVE_SESSION_FINAL_SCOPE_AND_TIMING');stage,error=r.text(),r.text();same,session=r.u(),r.u();se=r.text();native=r.u();ne=r.text();wall=r.d();steps,commits=r.u(),r.u();r.end();assert same==session==native==1 and steps==1000 and commits==0 and error==stop
+                                                                                                                                                                                                                                       ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AssertionError
