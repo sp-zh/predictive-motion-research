@@ -1,0 +1,17 @@
+{
+  "schema": "ROOT50_RETAINED_D_TRANSFER_SUFFIX_REVIEW_V1",
+  "failure": "First D transfer lost archive prefix; fullbytes/SHA gate correctly rejected",
+  "Mac_archive_sha256": "557cd8fce4ff57baefa50a73d19490f3f90e699bc149d730da883404b34e8dcd",
+  "Mac_archive_bytes": 1009637725,
+  "D_partial_bytes": 1009346909,
+  "missing_prefix_bytes": 290816,
+  "D_partial_sha256": "9a4ecd71ee1001bba88457d3f6d63131a6628e0e933c9471c2030b1b66e6c410",
+  "Mac_entire_suffix_sha256_equal_to_D_partial": true,
+  "first64bytes_also_match_at_offset": true,
+  "source_diagnostic": "/private/tmp/dell_stop50_D_archive_transfer_v1_20261012/DIAGNOSTIC.stdout.json",
+  "cause_inference": "Pre-read PowerShell child inherits the archive stdin; exact prefix loss supports this mechanism, no isolated child-consumption experiment claimed",
+  "repair_scope": "Fresh receiver isolates CIM child stdin with DEVNULL; fullarchive SHA/size/member gates unchanged; original partial retained",
+  "actual_D_success_claim": false,
+  "phase5": "NOT_ACCEPTED",
+  "phase6": "NOT_STARTED"
+}

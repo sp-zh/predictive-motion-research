@@ -72,6 +72,12 @@ This image depicts the integrated scene; it is not a predictive-control result.
 
 Exact producer status counts for the old-source replay, failed first basis prototype, failed zero-step diagnosis and completed second pure prototype on saved attempt47 inputs. This figure does not show an actual48 run or accepted control; input binding limits and both failures remain visible. [Provenance](../figures/phase5_seed48_prototype_v1_20261011/PROVENANCE.json), [narrow review/storage](../reviews/evidence/phase5_seed48_prototype_v1_20261011/README.md).
 
+![Attempt50 actual88ms prefix and no stop observations](../figures/phase5_controlled_stop_compression_failure_v1_20261012/stop50_actual_diagnostic.png)
+
+![44 actual native TCP poses from attempt50](../figures/phase5_controlled_stop_compression_failure_v1_20261012/stop50_actual_tcp_prefix.png)
+
+Attempt50 records22 active commands/44 simulated2ms halves before a gzip writer failure. Stop/braking was not entered and the full task remains incomplete. All22 completed4ms deadlines miss; the failed23rd clock is shown too. [Provenance](../figures/phase5_controlled_stop_compression_failure_v1_20261012/PROVENANCE.json) binds recorded poses, units, source data and inspected images. No full-task/stop/real-time/Phase5 acceptance is claimed.
+
 ![Attempt49 actual prefix and fourteen failed stop observations](../figures/phase5_controlled_stop_flat_seed_failure_v1_20261011/stop49_actual_diagnostic.png)
 
 ![78 actual native TCP poses from attempt49](../figures/phase5_controlled_stop_flat_seed_failure_v1_20261011/stop49_actual_tcp_prefix.png)

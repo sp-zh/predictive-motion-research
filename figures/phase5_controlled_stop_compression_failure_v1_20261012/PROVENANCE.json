@@ -1,0 +1,30 @@
+{
+  "scope": "Actual88ms active prefix22C44simulated2ms halves; stop not entered, full task incomplete.23 whole clocks include failed boundary. No real-time/Phase5 acceptance.",
+  "source_parameters": "Frozen seed91011 task/limits, plot coordinates from native recorded TCP; millimetres and milliseconds explicitly labelled.",
+  "producer_READY_sha256": "64b9a442420df79642ba4c818b675186df4f0e5ab0663ddc90cc8682dc53ce9f",
+  "files": {
+    "RENDER_RECEIPT.json": {
+      "bytes": 489,
+      "sha256": "9be5b383615caa6671f9a0101b7e3855c081b56430fdd89529b80bee3a9dcac1"
+    },
+    "plot_input.json": {
+      "bytes": 76746,
+      "sha256": "f88ec2c9ba09e2a4995aefbf4af1484c6720254a0ca762d22eca53d3a8e9c556"
+    },
+    "producer_plot_source.py": {
+      "bytes": 3881,
+      "sha256": "fcecf089dd3f765773847ef895d0eb2166d1bc170295653f76b3f01b618c6a8c"
+    },
+    "stop50_actual_diagnostic.png": {
+      "bytes": 212278,
+      "sha256": "c464df23b859df93b13f5e83e09984abf09097b7841de840752f9df24acbec71"
+    },
+    "stop50_actual_tcp_prefix.png": {
+      "bytes": 200252,
+      "sha256": "0a52a094723bf06e50bf0dcee47bde70fca5d217797ae5e27e151e2720608d66"
+    }
+  },
+  "Root_visual_QA": "Both selected v2 PNGs inspected:44 actual TCP poses vs desired reference, progress percent/time labels, explicit no-stop-observations panel,23 offline clocks with4ms threshold. Initial empty-panel renders remain preserved privately; no full-task video claimed.",
+  "phase5": "NOT_ACCEPTED",
+  "phase6": "NOT_STARTED"
+}

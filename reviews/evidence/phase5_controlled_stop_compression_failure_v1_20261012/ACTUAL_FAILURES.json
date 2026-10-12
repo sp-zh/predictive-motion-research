@@ -1,0 +1,25 @@
+{
+  "actual_first_failure": "current22/trial0 deflate must make finite progress",
+  "retained_errors": [
+    "VERIFY_ADAPTER_FAILURE_V2.json",
+    "PACKET_VERIFY.stderr",
+    "VERIFY_ADAPTER_FAILURE_V3.json",
+    "ALGEBRA50.stderr",
+    "CHAIN50.stderr",
+    "TERMINAL_DERIVED_AVAILABILITY_ADAPTER_FAILURE.json",
+    "TRACE_INITIALIZER50.stderr",
+    "TRACE_TERMINAL_INITIALIZER_AVAILABILITY_FAILURE.json"
+  ],
+  "metadata_only_errors": [
+    "systempython3 NumPy unavailable; corrected bundledNumPy interpreter",
+    "aggregate compared float oracle entries asdict; corrected accessor",
+    "aggregate expected exact UNKNOWN vsproducer UNKNOWN_RETAINED_PARTIAL; corrected prefix qualification"
+  ],
+  "wording_corrections": [
+    "terminal stop_objective_mode EXISTS active741; initial availability note corrected",
+    "STOP_WARM50.stdout legacy stop6/retained35 progress label stale; JSON0stop/22C authoritative",
+    "TRACE_INITIALIZER50_RETRY1.stdout47unattempted label overbroad:46serialized and1unavailable; Summary exact"
+  ],
+  "frozen_input_changes": false,
+  "native_or_optimizer_rerun": false
+}

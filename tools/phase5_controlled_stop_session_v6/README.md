@@ -1,0 +1,9 @@
+# Controlled-stop source archival view V6
+
+Exact 68 source files for consumed compressed attempt50v4; manifest c9c619d785dc546079ccd23fd697cfc527e5dfb2223b2e2e6e438f8aadc57a9e. All29 compilation units,18 linked executables and17 pure regressions passed. Startup and termination verify1737 identities/1708 distinct paths. Dependencies and model assets remain externally pinned; this is an archival view.
+
+The bounded initialization repair preserves non-beta bits and limits displacement in18 free beta coordinates in original units to1e-6. This is not an all20 reconstructed-U displacement claim. Original all-row1e-12 starting-guess, solver absolute/relative1e-9 and full original SI1e-7 acceptance gates remain. Original strict curve, B and guarded two2ms C checks are unchanged. The repaired initializer's saved-data tests do not demonstrate stopping in this actual run.
+
+Evidence uses opt-in lossless GZIP_DEFLATE_V1, separate12GiB logical raw and7GiB stored-binary-plus-manifest budgets,32MiB tail and128MiB per-file raw bounds. Default RAW behavior remains available. Complete records require separate stored/raw SHA and closed gzip CRC/EOF; an incomplete prefix is not a complete matrix. Native CPU2400s/AS4GiB/wall3000s,121 commits/176 trials/352 forecasts/242 task halves remain finite.
+
+Actual50 records22 active commands/44 simulated2ms halves/88ms.47 native SOLVED/original14756-row SI checks precede46 genuine Value/B cases:22 B passes and24 refusals. A gzip no-progress guard rejects serialization at current22/trial0 after native solving and before B/C. Its normalized reduction is incomplete; original native/inline SI/hint records remain available. Stop/braking was not entered. All22 completed4ms deadlines miss. No full-task/stop/realtime or Phase5 acceptance is claimed; Phase6 is not started. Original failed source/evidence are preserved; future51 logging repair is separate.
