@@ -1,0 +1,520 @@
+{
+  "schema": "ROOT_ACTUAL49_FULL_SAVED_REVIEW_V1",
+  "verdict": "PASS_RECORDED_FILE_ALGEBRA_AND_ACTUAL_PREFIX; STOP_FAILED; TERMINAL_TRACE_CONTEXT_BINDING_FAILED",
+  "packet": {
+    "ready_sha256": "b88a04844690bf33470584a2717334fa04c6e9fbb9dee2252944fb68419812ed",
+    "payloads": 3076,
+    "bytes": 4823378063,
+    "source_files": 60,
+    "source_manifest_sha256": "06575a7268d38f293efc8e626d5c13ddbb0adaced324c627c202fb8a21fde4ce",
+    "actual_summary_path": "/private/tmp/phase5_controlled_stop_endpoint_capacity_actual_checkpoint_v1_20261011/derived/FUNCTIONAL_COMPLETION_SUMMARY49.json",
+    "actual_summary_sha256": "2993cca287b15ea9436106c6d6c962de34aad7c6de875b0c8192956e9cd7c880",
+    "external_transport_excluded_from_payload": {
+      "schema": "STOP49_EXTERNAL_TRANSPORT_VERIFIED_V1",
+      "archive_external_path": "/private/tmp/phase5_stop49_transport_external_v1_20261011/transport.tar.gz",
+      "archive_bytes": 1730328401,
+      "archive_sha256": "0be8175b0811277a2615794be77d3e0b2152215aba20167a143c0c1b2a36a365",
+      "member_count": 2195,
+      "native_bytes": 4678942803,
+      "aux_bytes": 2685288,
+      "all_members_verified": true,
+      "compressed_transport_D_copy_claimed": false,
+      "root_archive_selection": "underlying payload once; external compressed transport excluded"
+    },
+    "chunk_bytes": 524288,
+    "wall_s": 3.872351166093722,
+    "source_sha256": "6517dbbafc60635a77d18f147024afa85f7707f1bd4e5639e2e7fa4b05bfc10b"
+  },
+  "checks": {
+    "all_current_QPs": 84,
+    "native_SOLVED_usableU": 83,
+    "original_rows_per_QP": 14756,
+    "full_original_SI_scans": 83,
+    "original_SI_values": 1224748,
+    "true_original_SI_acceptance_gate": 1e-07,
+    "factor_rows_active_stop": [
+      741,
+      909
+    ],
+    "reduced_free_control_columns": 144,
+    "alpha_beta_extra_guards": 160,
+    "stop_floor_rows_per_trial": 264,
+    "floor_ID_scale_offset_rows_regenerated": true,
+    "exact_qtrust_rows": 235200,
+    "fullValue_forecasts": 83,
+    "fullValue_samples": 33200,
+    "literal200_half400_candidates": 83,
+    "B400_passes": 39,
+    "B_refusals": 44,
+    "all_coreExecutionPermission0": true,
+    "private_sameowner_B_tokens": 39,
+    "actual_C_commits": 39,
+    "actual_physical_halves": 78,
+    "full_retained39_commit_task_copies_bitexact": true,
+    "warm1000_journal3000": true,
+    "input_pin_before_after_identical_occurrences": 1727,
+    "unique_binary_receipts": 1928,
+    "source_snapshot_files": 60
+  },
+  "actual": {
+    "active_commits": 32,
+    "brake_commits": 7,
+    "task_elapsed_s": 0.156,
+    "physical_steps_with_warmup": 1078,
+    "final_accepted_s_r_previous_b": [
+      0.0019317151329384765,
+      0.024736803181958793,
+      0.03296575392875649
+    ],
+    "actual_TCP_translation_max_m": 0.0033550214034940603,
+    "actual_TCP_SO3_max_rad": 0.0054843976588832815,
+    "originalSI_max_NumPy_recomputed83": 1.0000680839006293e-13,
+    "accepted_B_affine_max": 9.041271154803902e-07,
+    "entry_wall_s": 286.624620576,
+    "driver_native_entry_wall_s": 286.66398762099925,
+    "termination_session_sim_pass": true,
+    "whole_successful_boundary_wall_s": {
+      "n": 39,
+      "mean": 6.88410705848718,
+      "p50": 6.419153357,
+      "p95": 9.5142553805,
+      "p99": 10.219140847559999,
+      "max": 10.317676762,
+      "4ms_misses": 39
+    },
+    "failed_boundary_whole_includes_both_trials": {
+      "cycle": 39,
+      "trials": 2,
+      "physical_success": 0,
+      "wall": 5.673828617,
+      "missed": 1,
+      "last_error": "original value-affine1e-6/jointtrust.002",
+      "fatal": "initializer flat row infeasible; wholepolytope unknown",
+      "ledger": [
+        84,
+        167,
+        78,
+        39
+      ]
+    },
+    "final_ledger_commits_forecasts_steps_oldslots_separateslots": [
+      39,
+      167,
+      78,
+      367459146,
+      771263116
+    ]
+  },
+  "failure": {
+    "current": 39,
+    "trial": 1,
+    "shape": [
+      7351,
+      144
+    ],
+    "reason": "initializer flat row infeasible; wholepolytope unknown",
+    "failed_solver_row": 7073,
+    "row_original_mapping": -1,
+    "internal_label": "internal_progress_jerk_guard/cell/6",
+    "valid_row_bounds_prefix": 7073,
+    "unavailable_zero_suffix_rows": 278,
+    "source_start_allowance": 1e-12,
+    "sequential_IEEE_deficit": 1.0118225701738481e-12,
+    "sequential_IEEE_progress_ray_travel": 0.0,
+    "exact_dyadic_deficit": 1.0118213747892253e-12,
+    "exact_dyadic_progress_ray_travel": -1.1096350903342756e-17,
+    "noHint_native_originalSIscan_Request_Value_B_C": true,
+    "whole_polytope_feasibility": "UNKNOWN",
+    "previous_current39_trial0_native_Value_B_refusal_retained": true
+  },
+  "initializer": {
+    "attempted": 17,
+    "completed": 16,
+    "changed": 5,
+    "failed": 1,
+    "epsilon_bounds": [
+      0,
+      1e-06
+    ],
+    "max_attempts": 3,
+    "unchanged_allowance": 1e-12,
+    "valid_prefix_seed_currentQP_rechecks": true,
+    "no_fullpolytope_infeasibility_proof": true
+  },
+  "working_trace": {
+    "normal_contexts": 84,
+    "basis_events": 13,
+    "nonblock_endpoints": 10770,
+    "endpoint_capacity_per_context": 4096,
+    "allIDs_bound_actual_matrix_m": true,
+    "independent_float_LS_span_max": 5.558202383576825e-15,
+    "current_bound_bytes_and_recorded_endpoint_residual_checked": true,
+    "previouslyDropped_membership_checked": true,
+    "per_event_fullprimal_direction_missing": true,
+    "independent_A_full_endpoint_recomputation": false,
+    "terminal_binding_pass": false,
+    "serialized_terminal_label": [
+      39,
+      0
+    ],
+    "latest_normal_label": [
+      39,
+      1
+    ],
+    "both_trace_available": false,
+    "source_defect": "active_first_cycle.cpp109 sets labels only inside hasHint branch, else resets pointer without labels; terminal154 emits stale labels.",
+    "gate_bypass_demonstrated": false,
+    "recommended_followup_only": "Update latest context labels independently of hint availability in a new version; preserve original49 evidence."
+  },
+  "old48_current37_numeric_input_comparison": {
+    "bitexact_fields": [
+      "original/H",
+      "original/g",
+      "original/A",
+      "original/l",
+      "original/u",
+      "original/F",
+      "original/f",
+      "original/seed",
+      "reduction/Z",
+      "reduction/p",
+      "reduction/E",
+      "reduction/rhs",
+      "reduction/planning_rhs",
+      "reduction/eq",
+      "reduction/rows",
+      "reduction/Hr",
+      "reduction/gr",
+      "reduction/Ar",
+      "reduction/lr",
+      "reduction/ur",
+      "reduction/D",
+      "reduction/Fr",
+      "reduction/seed",
+      "reduction/R",
+      "reduction/Hs",
+      "reduction/gs",
+      "reduction/As",
+      "reduction/ls",
+      "reduction/us",
+      "reduction/Fs"
+    ],
+    "initializer_fullfile_bitexact": true,
+    "crossed_old1024_barrier": true,
+    "posthint_native_outputs_are_separate_outcomes": true
+  },
+  "stop": {
+    "actual_points": 14,
+    "passed": false,
+    "structural_failed": false,
+    "consecutive": 0,
+    "required": 50,
+    "records": [
+      {
+        "actual_half": 1065,
+        "time": 2.129999999999987,
+        "cycle": 32,
+        "half": 1,
+        "maxima": {
+          "v": 0.0004819041120100884,
+          "a": 0.012109483955864697,
+          "w": 0.002527014006838596,
+          "alpha": 0.03526596593634082
+        },
+        "s": 0.0013111383870357486,
+        "r": 0.02243998157978696,
+        "b": 0.15294175393032047,
+        "below": false,
+        "binding_and_derivatives_bitexact": true,
+        "accepted_w_alpha_after_both_halves": true
+      },
+      {
+        "actual_half": 1066,
+        "time": 2.131999999999987,
+        "cycle": 32,
+        "half": 2,
+        "maxima": {
+          "v": 0.0005005927500582489,
+          "a": 0.009811085905157883,
+          "w": 0.002527014006838596,
+          "alpha": 0.03526596593634082
+        },
+        "s": 0.0013563242337031834,
+        "r": 0.022745865087647598,
+        "b": 0.15294175393032047,
+        "below": false,
+        "binding_and_derivatives_bitexact": true,
+        "accepted_w_alpha_after_both_halves": true
+      },
+      {
+        "actual_half": 1067,
+        "time": 2.1339999999999866,
+        "cycle": 33,
+        "half": 1,
+        "maxima": {
+          "v": 0.0005261221330540257,
+          "a": 0.012764691497888371,
+          "w": 0.002663460716556416,
+          "alpha": 0.03411167742945506
+        },
+        "s": 0.001402081855386338,
+        "r": 0.023011756595507013,
+        "b": 0.1329457539297068,
+        "below": false,
+        "binding_and_derivatives_bitexact": true,
+        "accepted_w_alpha_after_both_halves": true
+      },
+      {
+        "actual_half": 1068,
+        "time": 2.1359999999999864,
+        "cycle": 33,
+        "half": 2,
+        "maxima": {
+          "v": 0.000545797527768933,
+          "a": 0.0103501116370586,
+          "w": 0.002663460716556416,
+          "alpha": 0.03411167742945506
+        },
+        "s": 0.0014483712600852113,
+        "r": 0.023277648103366425,
+        "b": 0.1329457539297068,
+        "below": false,
+        "binding_and_derivatives_bitexact": true,
+        "accepted_w_alpha_after_both_halves": true
+      },
+      {
+        "actual_half": 1069,
+        "time": 2.137999999999986,
+        "cycle": 34,
+        "half": 1,
+        "maxima": {
+          "v": 0.0005725764571232507,
+          "a": 0.01338946467715883,
+          "w": 0.0027952811263833918,
+          "alpha": 0.03295510245674392
+        },
+        "s": 0.0014951524557998033,
+        "r": 0.023503547611225674,
+        "b": 0.11294975392962418,
+        "below": false,
+        "binding_and_derivatives_bitexact": true,
+        "accepted_w_alpha_after_both_halves": true
+      },
+      {
+        "actual_half": 1070,
+        "time": 2.139999999999986,
+        "cycle": 34,
+        "half": 2,
+        "maxima": {
+          "v": 0.00059318676007492,
+          "a": 0.010872508417569478,
+          "w": 0.0027952811263833918,
+          "alpha": 0.03295510245674392
+        },
+        "s": 0.001542385450530114,
+        "r": 0.02372944711908492,
+        "b": 0.11294975392962418,
+        "below": false,
+        "binding_and_derivatives_bitexact": true,
+        "accepted_w_alpha_after_both_halves": true
+      },
+      {
+        "actual_half": 1071,
+        "time": 2.1419999999999857,
+        "cycle": 35,
+        "half": 1,
+        "maxima": {
+          "v": 0.0006211373476588174,
+          "a": 0.013975293791948723,
+          "w": 0.002922463711300861,
+          "alpha": 0.031795646229367265
+        },
+        "s": 0.001590030252276143,
+        "r": 0.02391535462694412,
+        "b": 0.09295375392960052,
+        "below": false,
+        "binding_and_derivatives_bitexact": true,
+        "accepted_w_alpha_after_both_halves": true
+      },
+      {
+        "actual_half": 1072,
+        "time": 2.1439999999999855,
+        "cycle": 35,
+        "half": 2,
+        "maxima": {
+          "v": 0.000642617511749796,
+          "a": 0.011370910337702432,
+          "w": 0.002922463711300861,
+          "alpha": 0.031795646229367265
+        },
+        "s": 0.0016380468690378905,
+        "r": 0.024101262134803323,
+        "b": 0.09295375392960052,
+        "below": false,
+        "binding_and_derivatives_bitexact": true,
+        "accepted_w_alpha_after_both_halves": true
+      },
+      {
+        "actual_half": 1073,
+        "time": 2.1459999999999853,
+        "cycle": 36,
+        "half": 1,
+        "maxima": {
+          "v": 0.0006716489355987443,
+          "a": 0.014515711924474118,
+          "w": 0.0030449941861319238,
+          "alpha": 0.03063261870776574
+        },
+        "s": 0.0016863953088153564,
+        "r": 0.0242471776426625,
+        "b": 0.07295775392958984,
+        "below": false,
+        "binding_and_derivatives_bitexact": true,
+        "accepted_w_alpha_after_both_halves": true
+      },
+      {
+        "actual_half": 1074,
+        "time": 2.147999999999985,
+        "cycle": 36,
+        "half": 2,
+        "maxima": {
+          "v": 0.0006939239231119084,
+          "a": 0.01183868579919409,
+          "w": 0.0030449941861319238,
+          "alpha": 0.03063261870776574
+        },
+        "s": 0.0017350355796085406,
+        "r": 0.024393093150521683,
+        "b": 0.07295775392958984,
+        "below": false,
+        "binding_and_derivatives_bitexact": true,
+        "accepted_w_alpha_after_both_halves": true
+      },
+      {
+        "actual_half": 1075,
+        "time": 2.149999999999985,
+        "cycle": 37,
+        "half": 1,
+        "maxima": {
+          "v": 0.0007239352792672176,
+          "a": 0.015005678077654636,
+          "w": 0.0031628551093938854,
+          "alpha": 0.02946523081549042
+        },
+        "s": 0.001783927689417445,
+        "r": 0.024499016658382725,
+        "b": 0.052961753930521466,
+        "below": false,
+        "binding_and_derivatives_bitexact": true,
+        "accepted_w_alpha_after_both_halves": true
+      },
+      {
+        "actual_half": 1076,
+        "time": 2.1519999999999846,
+        "cycle": 37,
+        "half": 2,
+        "maxima": {
+          "v": 0.0007469223004472383,
+          "a": 0.01227020795029857,
+          "w": 0.0031628551093938854,
+          "alpha": 0.02946523081549042
+        },
+        "s": 0.0018330316462420715,
+        "r": 0.024604940166243768,
+        "b": 0.052961753930521466,
+        "below": false,
+        "binding_and_derivatives_bitexact": true,
+        "accepted_w_alpha_after_both_halves": true
+      },
+      {
+        "actual_half": 1077,
+        "time": 2.1539999999999844,
+        "cycle": 38,
+        "half": 1,
+        "maxima": {
+          "v": 0.0007778046612301958,
+          "a": 0.015441180391478763,
+          "w": 0.0032760086004363195,
+          "alpha": 0.028288372760608523
+        },
+        "s": 0.0018823074580824166,
+        "r": 0.024670871674101282,
+        "b": 0.03296575392875649,
+        "below": false,
+        "binding_and_derivatives_bitexact": true,
+        "accepted_w_alpha_after_both_halves": true
+      },
+      {
+        "actual_half": 1078,
+        "time": 2.155999999999984,
+        "cycle": 38,
+        "half": 2,
+        "maxima": {
+          "v": 0.0008014147966010511,
+          "a": 0.012660923863808647,
+          "w": 0.0032760086004363195,
+          "alpha": 0.028288372760608523
+        },
+        "s": 0.0019317151329384765,
+        "r": 0.024736803181958793,
+        "b": 0.03296575392875649,
+        "below": false,
+        "binding_and_derivatives_bitexact": true,
+        "accepted_w_alpha_after_both_halves": true
+      }
+    ],
+    "zero_drift_defaults": "No below-threshold anchor established; unavailable hold evidence, not drift pass."
+  },
+  "warmup": {
+    "points": 1000,
+    "journal_rows": 3000,
+    "initial_MT19937_seed91011_match": true,
+    "max_abs_v": 0.029928739008387738,
+    "max_abs_acc": 6.6436306091723925,
+    "max_available_abs_jerk": 1357.6628167075585,
+    "first_jerk_unavailable": true,
+    "frame_max": 1.793440987239997e-15,
+    "endhold_gate": true,
+    "recorded_pose_errors_not_independent_FK": [
+      0.0032157093225693213,
+      0.005484296217470531
+    ],
+    "whole_warmup_derivative_acceptance": false
+  },
+  "rank": {
+    "recorded_singular_events": 836,
+    "max_recorded_original_residual": 1.942890293094024e-15,
+    "per_event_K_rhs_solution_missing": true,
+    "independent_event_KKT_solve": false,
+    "endpoint_stationarity_complementarity_floatLLT_checked": true,
+    "no_exactSPD_rank_certificate": true
+  },
+  "resources": {
+    "original_slots_cap": 1024000000,
+    "separate_slots_cap": 1800000000,
+    "working_precharge_slots_per_stop_derive": 600000,
+    "conservative_logic_slots": 514544,
+    "slots_not_bytes_allocator_RSS": true,
+    "trace_codec_bound_bytes": 4194304,
+    "cleanup_tail_bound_bytes": 21073736,
+    "cleanup_reserve_bytes": 33554432,
+    "native_output_cap_bytes": 8589934592,
+    "external_AS_bytes": 4294967296,
+    "not_general_fault_or_tailproof": true
+  },
+  "limitations": [
+    "Only saved source/PythonNumPy/Fraction arithmetic, no Native/Model/SDK/Scene/FK/compiler/SSH/optimizer invocation.",
+    "Actual fullSI gate is1e-7; observed~1e-13 and planner bias1e-13 are different quantities, not acceptance cutoff.",
+    "Initializer1e-12/ray failure is not fullpolytope infeasibility or originalSI acceptedcandidate.",
+    "Final missing nativeU/defaultSI0 are unavailable, not feasibility passes.",
+    "Terminal trace binding FAIL is an unavailable diagnostic context defect, not demonstrated control-gate bypass.",
+    "No per-event fullpoint/direction or KKT arrays, so no A*x/eventsolve/exactrank proof.",
+    "Seven actual braking commands do not establish successful stopping/dwell.",
+    "All39completed boundaries miss4ms; overlapping/provider/stride256 timings are not realtime performance/decomposition.",
+    "Only156ms executed prefix, no fulltask/hardware/Phase5 acceptance.",
+    "Root post-entry and passive identity receipts do not manufacture fullRootpre-entry checks.",
+    "Future50 prototypes excluded."
+  ],
+  "phase5": "NOT_ACCEPTED",
+  "phase6": "NOT_STARTED"
+}

@@ -1,0 +1,69 @@
+{
+  "scope": "producer savedbinary row ID/coefficient/scaledseed/direction analysis; Python2termIEEE sum labelled, freshC++ Eigenbaseline diagnostic separate. NoNative49repeat/wholepolytopecertificate/tolerancechange. failedrow was not written inoriginalbounds zerosuffix, missingvaluesnotpass",
+  "row": {
+    "stage": "STRUCTURE_VALIDATED_BUILD_REDUCED_QP",
+    "m": 7351,
+    "n": 144,
+    "row": 7073,
+    "first_internal_row": 6927,
+    "mapping_u64": 18446744073709551615,
+    "internal_label": "internal_progress_jerk_guard/cell/6",
+    "lower": -0.008156305423715482,
+    "upper": 0.008156305423715482,
+    "seedvalue_python_sum_not_Eigen": -0.008156305424727305,
+    "python_violation": 1.0118225701738481e-12,
+    "row_inf_norm": 1.0,
+    "uniform_progress_ray_delta_python": 0.0,
+    "row_nonzero": [
+      {
+        "col": 47,
+        "cell": 5,
+        "component": 7,
+        "a": -1.0,
+        "seed": -0.03549120533921032,
+        "variable_scale": 2.451600199014019,
+        "uniform_progress_direction": 0.4078968505558853
+      },
+      {
+        "col": 55,
+        "cell": 6,
+        "component": 7,
+        "a": 0.7697343767439211,
+        "seed": -0.05670464004553415,
+        "variable_scale": 1.8870809512133289,
+        "uniform_progress_direction": 0.5299189731935103
+      }
+    ],
+    "scope": "post-terminal savedrow decode/doublePython sum; Eigenexacttrace bounds row7073 is unavailable prefix and independent reproduce needed"
+  },
+  "initializer": {
+    "cycle": 39,
+    "attempted": 1,
+    "complete": 0,
+    "changed": 0,
+    "epsilon": 0.0,
+    "initial_violation": 1.0118225701738481e-12,
+    "interval_lower": 0.0,
+    "interval_upper": 1e-06,
+    "error": "initializer flat row infeasible; wholepolytope unknown",
+    "seed_n": 144,
+    "row_bounds_written": 7073,
+    "row_bounds_shape": [
+      7351,
+      4
+    ],
+    "last_written_bounds": [
+      -0.008156305423558007,
+      0.0,
+      0.0,
+      1e-06
+    ],
+    "attempts_shape": [
+      0,
+      3
+    ]
+  },
+  "all_nominal_progress_direction_components18": "1/scale forindices8cell+7,cells0..17; allother0",
+  "true_first_start_refusal_context": "cycle39trial1",
+  "native_wrapper_notentered": true
+}

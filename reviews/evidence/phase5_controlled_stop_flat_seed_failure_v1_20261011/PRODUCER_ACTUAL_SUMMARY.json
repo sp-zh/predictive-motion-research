@@ -1,0 +1,130 @@
+{
+  "schema": "CONTROLLED_STOP49_ACTUAL_RETAINED_RESULT_V1",
+  "utc": "2026-10-12T02:25:38.496889+00:00",
+  "seed": 91011,
+  "actual_entry_exit": 1,
+  "entry_wall_s": 286.624620576,
+  "driver_wall_s": 286.66398762099925,
+  "completed_commands": 39,
+  "active_commands": 32,
+  "braking_commands": 7,
+  "actual_task_halves": 78,
+  "actual_controller_elapsed_ms": 156,
+  "total_actual_steps_including_warm1000": 1078,
+  "entered_fresh_trials": 84,
+  "forecast_reservations": 167,
+  "native_SOLVED_and_full14756SI": 83,
+  "originalSI_residual_values": 1224748,
+  "maximum_originalSI_violation": 1.0001027783701488e-13,
+  "genuine_value_forecasts": 83,
+  "genuine_value_raw_samples": 33200,
+  "full_B_passes": 39,
+  "B_refusals": 44,
+  "retained_B_assessment_points": 19827,
+  "failure_stage": "FRESH_CURRENT_MATRIX_HINT_AND_NATIVE_SOLVER",
+  "failure_reason": "initializer flat row infeasible; wholepolytope unknown",
+  "before_B_refusals": [
+    {
+      "path": "cycle-39/trial-1",
+      "no_B_no_C": true,
+      "originalSI_rows": 0,
+      "native_SOLVED": false,
+      "stop_reason": "initializer flat row infeasible; wholepolytope unknown",
+      "wrapper_entries": 0
+    }
+  ],
+  "unmeasured_originalSI_defaults_not_claimed_zero_or_pass": true,
+  "actual_stop_monitor_records": 14,
+  "stop_consecutive_dwell_halves": 0,
+  "stop_component_passed": false,
+  "stop_monitor_structural_failed": false,
+  "final_actual_progress_s": 0.0019317151329384765,
+  "final_actual_progress_rate": 0.024736803181958793,
+  "maximum_actual_TCP_translation_m": 0.0033550214034940603,
+  "maximum_actual_TCP_orientation_rad": 0.005484397658883282,
+  "actual_cumulative_ledger": {
+    "completed_commits": 39,
+    "forecasts": 167,
+    "steps": 78,
+    "original_session_charged_slots": 367459146,
+    "separate_numeric_slots": 771263116
+  },
+  "binary_receipts_verified": 1928,
+  "startup_termination_identity_requests": 1727,
+  "whole_cycle_timing": {
+    "completed_cycles": 39,
+    "all_4ms_missed": true,
+    "mean_s": 6.88410705848718,
+    "median_s": 6.419153357,
+    "minimum_s": 3.348199842,
+    "maximum_s": 10.317676762,
+    "scope": "descriptive offline timings including entered rejected trials, not controlled benchmark"
+  },
+  "initializer": {
+    "changed_count": 5,
+    "attempted_count": 17,
+    "failure_count": 1
+  },
+  "working_trace_codec": {
+    "schema": "PRODUCER_WORKING_TRACE_CODEC49_VERIFICATION_V1",
+    "scope": "Bounded finite codec/meaning/availability binding only; numerical rank/span/true A*point recomputation belongs to independent matrix review. No exactrank/control/physical certificate. Missing normal trace is explicitly possible after output failure.",
+    "normal_trace_count": 84,
+    "terminal_trace_count": 1,
+    "terminal_same_context_normal_match": false,
+    "terminal_unavailable_context_qualification": {
+      "issue": "Frozen49 main resets missinghint trace but leaves previous numeric context labels; unavailable cleanup IDs stale. Original bytes retained, not retroactively relabeled.",
+      "serialized_terminal_context": [
+        39,
+        0
+      ],
+      "latest_entered_unavailable_normal_context": [
+        39,
+        1
+      ],
+      "terminal_context_binding_pass": false,
+      "numeric_trace_unavailable_NOT_pass": true,
+      "next_source_fix": "Always set latest_trace cycle/trial before conditional currenthint assignment, then reset unavailabletrace."
+    },
+    "basis_events_total": 13,
+    "endpoint_events_total": 10770
+  },
+  "rank_diagnostics": {
+    "singular_events": 836,
+    "maximum_emitted_original_residual": 1.942890293094024e-15,
+    "per_event_K_RHS_solution_not_serialized": true
+  },
+  "preparation_refs": [
+    {
+      "ready": "/private/tmp/stop48_endpoint_capacity_saved49pure_v1_20261011/READY.json",
+      "sha256": "f28ea522544d2b0f24da68cd6b233b9f3ea65ab5d86264d20ca30cea8ee2e5e2"
+    },
+    {
+      "ready": "/private/tmp/stop48_endpoint_capacity_saved49pure_v2_structured_20261011/READY.json",
+      "sha256": "b043f6e3920218f35d844bd0e17b283c0d02b57b95fe9ed289ba19c1e48f7f36"
+    },
+    {
+      "ready": "/private/tmp/stop49_endpoint_capacity_source_review_v1_20261011/READY.json",
+      "sha256": "511d57666ccda2b1ee704e8fb9d82d920264f1eea73684bf73f7a0c449c30c54"
+    },
+    {
+      "ready": "/private/tmp/stop49_endpoint_capacity_source_review_pure_v2_addendum_20261011/READY.json",
+      "sha256": "fe36d3b4156b81adc05f362ac85770550c5c4341d239b402c972184cc691309c"
+    },
+    {
+      "ready": "/private/tmp/stop49_profile_resource_preentry_review_v1_20261011/READY.json",
+      "sha256": "43741eec4c19ec20ed6029aaa90ffb320a5ade384c4689e8f59f220d2c57e72b"
+    },
+    {
+      "ready": "/private/tmp/stop49_v2_smaller_cap_preentry_review_v1_20261011/READY.json",
+      "sha256": "d1c710b1bf345f69bad7f7467e88927f2bfc1a771defad23a327bc7467f27451"
+    },
+    {
+      "ready": "/private/tmp/root_stop49_source_readiness_review_20261011/READY.json",
+      "sha256": "6f99a831b7eb01e2ff9dd83407d83c7f1cb3dfacbc5f44417263ce4b81874ebd"
+    }
+  ],
+  "visual_QA": "Actual PNGs inspected, original pose units and partial-task scope retained. No completed-task video claimed.",
+  "phase5": "NOT_ACCEPTED",
+  "phase6": "NOT_STARTED",
+  "scope": "One fresh finite genuine session/native simulation. Full original native/SI/strict/B/C mandatory. Prospective component stop and original fulltask/online/hardware/phase acceptance distinct. All failures and original freezes retained. Source/Gitintegration remains Root."
+}

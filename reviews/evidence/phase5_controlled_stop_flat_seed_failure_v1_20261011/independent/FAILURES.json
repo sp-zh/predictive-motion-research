@@ -1,0 +1,61 @@
+{
+  "review_adapter_failures": [
+    {
+      "error": "KeyError error: final initializer refusal has no hint; old chain metadata accessed absent hint.error after83prior candidates checked.",
+      "repair": "Use actual candidate stop reason and explicit no-hint field. Preserve original script/stderr/partialCSV. No input change/native call."
+    }
+  ],
+  "actual_first_failure": {
+    "current": 39,
+    "trial": 1,
+    "shape": [
+      7351,
+      144
+    ],
+    "reason": "initializer flat row infeasible; wholepolytope unknown",
+    "failed_solver_row": 7073,
+    "row_original_mapping": -1,
+    "internal_label": "internal_progress_jerk_guard/cell/6",
+    "valid_row_bounds_prefix": 7073,
+    "unavailable_zero_suffix_rows": 278,
+    "source_start_allowance": 1e-12,
+    "sequential_IEEE_deficit": 1.0118225701738481e-12,
+    "sequential_IEEE_progress_ray_travel": 0.0,
+    "exact_dyadic_deficit": 1.0118213747892253e-12,
+    "exact_dyadic_progress_ray_travel": -1.1096350903342756e-17,
+    "noHint_native_originalSIscan_Request_Value_B_C": true,
+    "whole_polytope_feasibility": "UNKNOWN",
+    "previous_current39_trial0_native_Value_B_refusal_retained": true
+  },
+  "terminal_trace_context_binding_FAIL": {
+    "normal_contexts": 84,
+    "basis_events": 13,
+    "nonblock_endpoints": 10770,
+    "endpoint_capacity_per_context": 4096,
+    "allIDs_bound_actual_matrix_m": true,
+    "independent_float_LS_span_max": 5.558202383576825e-15,
+    "current_bound_bytes_and_recorded_endpoint_residual_checked": true,
+    "previouslyDropped_membership_checked": true,
+    "per_event_fullprimal_direction_missing": true,
+    "independent_A_full_endpoint_recomputation": false,
+    "terminal_binding_pass": false,
+    "serialized_terminal_label": [
+      39,
+      0
+    ],
+    "latest_normal_label": [
+      39,
+      1
+    ],
+    "both_trace_available": false,
+    "source_defect": "active_first_cycle.cpp109 sets labels only inside hasHint branch, else resets pointer without labels; terminal154 emits stale labels.",
+    "gate_bypass_demonstrated": false,
+    "recommended_followup_only": "Update latest context labels independently of hint availability in a new version; preserve original49 evidence."
+  },
+  "retained_producer_failures": [
+    "49v1 storagegate NOTENTERED",
+    "producer firstterminal decoder assertion thenV2 explicitunavailableFAIL, frozen bytes unchanged",
+    "48cap failure and original49pure/compile histories remain untouched"
+  ],
+  "old_helper_scope_labels": "Qualified by INHERITED_HELPER_SCOPE_QUALIFICATION.json, SUMMARY is authoritative; no source/data edits."
+}

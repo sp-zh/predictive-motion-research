@@ -1,0 +1,30 @@
+{
+  "scope": "Actual156ms failed prefix39C78halves/32active7brake;14 failed stop points,dwell0/50; current39/trial1 refuses before native/Request/B/C. No fulltask/realtime/Phase5 acceptance.",
+  "producer_READY_sha256": "b88a04844690bf33470584a2717334fa04c6e9fbb9dee2252944fb68419812ed",
+  "files": {
+    "RENDER_RECEIPT.json": {
+      "bytes": 489,
+      "sha256": "3a1ec4d3b1a536b99afda95581a81231a47e8460dd2dd115035c99a5669a2b71"
+    },
+    "plot_input.json": {
+      "bytes": 158854,
+      "sha256": "ba76a9b863126ec3287cc8e59cac631ffd533d1cb732966d9a02b0cf14534525"
+    },
+    "producer_plot_source.py": {
+      "bytes": 4020,
+      "sha256": "19c6685e3ecd25cfcd414357fa2250bb94ff36e0a4ee529d7040639ba9d38d80"
+    },
+    "stop49_actual_diagnostic.png": {
+      "bytes": 254962,
+      "sha256": "6ebf0c3b93c3c02519828feb981f0d4a637d3e969d962f924b9c96b4aeeec303"
+    },
+    "stop49_actual_tcp_prefix.png": {
+      "bytes": 218195,
+      "sha256": "da51699d7b078bdfc3a9cef06385d4d1b1e7de6d4bd350245349239cb5b22104"
+    }
+  },
+  "Root_visual_QA": "Both exact PNGs inspected: physical units/readable,78 actual native TCP poses,14 actual stop observations/speed above threshold,40 whole clocks including failed boundary. Actual/desired offset visible; partial scope explicit.",
+  "input_projection": "Exact78 task poses,14 stop records,40 whole clocks; large raw matrices private.",
+  "phase5": "NOT_ACCEPTED",
+  "phase6": "NOT_STARTED"
+}
