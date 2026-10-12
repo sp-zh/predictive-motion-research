@@ -1,0 +1,20 @@
+{
+  "schema": "PUBLIC52_MINIMAL_PLOT_INPUT_DERIVATION_V1",
+  "private_full_input": "/private/tmp/phase5_controlled_stop_schema_match_actual_checkpoint_v1_20261012/derived/visuals/plot_input.json",
+  "original_bytes": 14619539,
+  "original_sha256": "d2c99228d113d873145bd0a27a27f5400d31049c29a6f13c8bdf1fb246d485f2",
+  "public_bytes": 165686,
+  "public_sha256": "57f89ad808f15d415fbe5fba16a3468329ca34626dc1818490112670dd22fc83",
+  "kept_exact_renderer_inputs": [
+    "whole.entry.commits",
+    "whole.whole",
+    "task",
+    "stop"
+  ],
+  "removed": "Unused per-trial diagnostics/rank details under whole; full original retained in immutable actual52 archive",
+  "rendered_PNG_changed": false,
+  "new_render_performed": false,
+  "scope": "Same actual plotting inputs, only unused large metadata removed from public copy; no observations edited or simulated",
+  "phase5": "NOT_ACCEPTED",
+  "phase6": "NOT_STARTED"
+}

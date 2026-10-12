@@ -72,6 +72,12 @@ This image depicts the integrated scene; it is not a predictive-control result.
 
 Exact producer status counts for the old-source replay, failed first basis prototype, failed zero-step diagnosis and completed second pure prototype on saved attempt47 inputs. This figure does not show an actual48 run or accepted control; input binding limits and both failures remain visible. [Provenance](../figures/phase5_seed48_prototype_v1_20261011/PROVENANCE.json), [narrow review/storage](../reviews/evidence/phase5_seed48_prototype_v1_20261011/README.md).
 
+![Offline52 actual160ms partial motion and16failedstop observations](../figures/phase5_controlled_stop_schema_match_failure_v1_20261012/stop52_actual_diagnostic.png)
+
+![80 actual native TCP poses from offline52](../figures/phase5_controlled_stop_schema_match_failure_v1_20261012/stop52_actual_tcp_prefix.png)
+
+Finite52 records32active/8braking-mode commands before the endpoint diagnostic quota refuses current40/trial0. Stop0/50, fulltask incomplete and all40 wholecycle4ms deadlines missed. The80 recorded poses,16stop samples and41inclusive clocks are actual source data; no successful task video or ranking is claimed. [Provenance](../figures/phase5_controlled_stop_schema_match_failure_v1_20261012/PROVENANCE.json), [independent saved-data review](../reviews/evidence/phase5_controlled_stop_schema_match_failure_v1_20261012/ACTUAL_REVIEW.md).
+
 ![Attempt50 actual88ms prefix and no stop observations](../figures/phase5_controlled_stop_compression_failure_v1_20261012/stop50_actual_diagnostic.png)
 
 ![44 actual native TCP poses from attempt50](../figures/phase5_controlled_stop_compression_failure_v1_20261012/stop50_actual_tcp_prefix.png)

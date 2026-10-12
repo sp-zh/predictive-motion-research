@@ -1,0 +1,16 @@
+{
+  "schema": "ROOT52_ENTRY_CONSISTENCY_REVIEW_V1",
+  "status": "PASS_STATIC_SOURCE_PROFILE_ARGV_CONSISTENCY",
+  "literal_implementation_schema": "CONTROLLED_STOP_FLAT_PROGRESS_COMPRESSED_ACTIVE32_BRAKE64_DWELL25_DIAGNOSTIC_V4",
+  "profile_sha256": "c21cf9599e569e85b6f215eaf4d3bb183d1923ef61cc4a1338610d8de209b2d2",
+  "runtime_plan_sha256": "4899e4040f219984647fb9731fdd0a67302efe2fc6ef4869a32c5dcb6a2a8b8c",
+  "source68_byteexact_to_consumed51": true,
+  "ELF_exact_reuse_sha256": "d7f7c26172cd5f8af1fb758994ab8ce9b9939a94453f8844e57f21606bf1d59d",
+  "argv_profile_digest_matches": true,
+  "original51_negative_schema_case_preserved": true,
+  "startup_requested_pins": 1737,
+  "native_or_SSH_calls": 0,
+  "scope": "Static entry consistency only; actual entry space, source pins, simulation, B/C/stop/whole-task outcomes require actual once-run records. No native termination success inferred from this review.",
+  "phase5": "NOT_ACCEPTED",
+  "phase6": "NOT_STARTED"
+}

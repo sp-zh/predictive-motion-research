@@ -1,0 +1,32 @@
+{
+  "scope": "Actual40C/80simulated2ms halves/160ms;32active8braking-mode,16stopallfail0/50,fulltaskincomplete.41wholeclocks include failedcurrent40/trial0. No realtime/phase acceptance.",
+  "source_parameters": "Frozen seed91011, actual native worldTCP positions and exact pinned task reference. Millimetres, controlmilliseconds and actualwallseconds explicitly labelled.",
+  "producer_READY_sha256": "f24031516a1eb5b8d7ae88dda2fff0063d705137b41a97cde40013bf79e6f434",
+  "Root_review_READY_sha256": "ca61b59f6f7b7370ccff2666206e091458de35780fb960e967692dd2fe5986da",
+  "files": {
+    "plot_input.json": {
+      "bytes": 165686,
+      "sha256": "57f89ad808f15d415fbe5fba16a3468329ca34626dc1818490112670dd22fc83"
+    },
+    "plot_source.py": {
+      "bytes": 4029,
+      "sha256": "e6c3f7985ba14be92c38e03870971a5b3b12231600ffb0218d703992ea14f08d"
+    },
+    "RENDER_RECEIPT.json": {
+      "bytes": 489,
+      "sha256": "2161c788a1f04cfc19a5b3603a9c1fb63e0ea6356876da77a745d31dbae5bfd2"
+    },
+    "stop52_actual_diagnostic.png": {
+      "bytes": 260116,
+      "sha256": "ad85cfbaf5dd218d9e5be84840a8de91f624ab12a2a5ede2814956a11ee1cc73"
+    },
+    "stop52_actual_tcp_prefix.png": {
+      "bytes": 218995,
+      "sha256": "e2e6455851f6a1ce9dfb677423bd834c6b187d654209368e51d17722334ba8c7"
+    }
+  },
+  "Root_visual_QA": "Both PNGs inspected:80actualposes,brakingstart128ms,16speedrecordsabove1e-4rad/s,0/50dwell,41inclusivewholeclocks+4ms threshold; failure/no fulltask/phase flags legible. Independent actualpose/task/stop arithmetic passes. No successful task video invented.",
+  "phase5": "NOT_ACCEPTED",
+  "phase6": "NOT_STARTED",
+  "public_plot_input_derivation": "PUBLIC_INPUT_DERIVATION.json; original full unused diagnostics retained privately, all actual renderer-read values identical"
+}

@@ -1,0 +1,19 @@
+{
+  "schema": "ROOT51_ENTRY_SCHEMA_FAILURE_AND_REVIEW_QUALIFICATION_V1",
+  "status": "FAILED_BEFORE_SIMULATION",
+  "source_requires_schema": "CONTROLLED_STOP_FLAT_PROGRESS_COMPRESSED_ACTIVE32_BRAKE64_DWELL25_DIAGNOSTIC_V4",
+  "profile_declares_schema": "CONTROLLED_STOP_FLAT_PROGRESS_COMPRESSED_ACTIVE32_BRAKE64_DWELL25_DIAGNOSTIC_V1",
+  "native_wall_seconds": 0.03153767099865945,
+  "native_stdout": "stage=BEFORE_ACTIVE_INPUT error=new active input schema required unchanged=0 termination_verified=0 phase5=NOT_ACCEPTED",
+  "native_termination_verified_flag": false,
+  "wrapper_BEFORE_AFTER_input_records_identical": true,
+  "BEFORE_sha256": "d60ad9a84057d2b86696ed81d02c0c635163325d1cf997303452b85629754c3f",
+  "AFTER_sha256": "d60ad9a84057d2b86696ed81d02c0c635163325d1cf997303452b85629754c3f",
+  "actual_motion_commits": 0,
+  "Model_Value_B_C_stop_entered": false,
+  "prior_Root_static_review_READY_preserved": "9839e79ec0db045cf0e8b9959ee1e3146c8d8a9c2c13548447de8285bdc02f4a",
+  "prior_review_scope_correction": "Verified source diff and saved reference identities correctly, but omitted source/profile interface schema equality. That readiness review does not establish runnable input consistency.",
+  "repair": "Fresh52 profile uses source-required V4 plus matching entry precheck; old51 bytes and consumed attempt retained; no gate tolerance/source algorithm change",
+  "phase5": "NOT_ACCEPTED",
+  "phase6": "NOT_STARTED"
+}

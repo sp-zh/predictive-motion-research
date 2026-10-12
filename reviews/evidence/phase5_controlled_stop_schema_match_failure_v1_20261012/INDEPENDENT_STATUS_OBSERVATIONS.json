@@ -1,0 +1,78 @@
+{
+  "schema": "STATUS_CHAT_TOOL_OBSERVATIONS_52_V1",
+  "source_chat": "01a10a40-558c-71a3-b343-6ff4c2709b36",
+  "scope": "Small transcription of this chat actual exec tool outputs. Not a byte-identical copy of remote files; receipt SHA binds only this transcription. Full remote artifacts still require archive verification.",
+  "observations": [
+    {
+      "tool_output_chunk": "b5514d",
+      "ssh_exit_code": 0,
+      "kind": "New SSH after launcher ended, pgrep actual process list",
+      "observed_running_pids": [
+        21771,
+        21772,
+        21773
+      ]
+    },
+    {
+      "tool_output_chunk": "b23156",
+      "ssh_exit_code": 0,
+      "kind": "Subsequent new SSH read STARTED/EXIT and status filenames",
+      "supervisor_pid": 21771,
+      "supervisor_sid": 21771,
+      "supervisor_pgid": 21771,
+      "driver_pid": 21772,
+      "driver_pgid": 21772,
+      "started_utc_epoch": 1791788234.3715427,
+      "driver_sha256": "3a511b3f2c8aa43a5501e949598de40518e7041581bab053da1508e725028446",
+      "plan_sha256": "4899e4040f219984647fb9731fdd0a67302efe2fc6ef4869a32c5dcb6a2a8b8c",
+      "driver_exit_code": 1,
+      "elapsed_wall_seconds": 327.2806781410036,
+      "stop_reason": null,
+      "signal": null,
+      "maximum_wall_seconds": 3600,
+      "maximum_output_bytes": 6845104128,
+      "minimum_free_bytes": 10737418240,
+      "program_attempts": 1,
+      "automatic_retries": 0,
+      "status_filenames": [
+        "EXIT.json",
+        "MANUAL_WAIT_AFTER_52.json",
+        "READY.json",
+        "STARTED.json",
+        "driver.stderr",
+        "driver.stdout"
+      ],
+      "proc_records_for_pids_21771_21772_21773_after_exit": [],
+      "READY_bytes_or_hash_read": false,
+      "manual_wait_marker_read": {
+        "automatic_retries": 0,
+        "next_experiment_started": false,
+        "direct_human_resume_required": true,
+        "phase5": "NOT_ACCEPTED",
+        "phase6": "NOT_STARTED"
+      }
+    },
+    {
+      "tool_output_chunk": "3b07cd",
+      "ssh_exit_code": 0,
+      "kind": "Later new SSH original run stdout and native driver result",
+      "native_stdout": "stage=FRESH_CURRENT_MATRIX_HINT_AND_NATIVE_SOLVER error=finite previouslydropped fullendpoint diagnostics cap unchanged=0 termination_verified=1 phase5=NOT_ACCEPTED\n",
+      "native_stderr": "",
+      "native_exit": 1,
+      "native_wall_seconds": 325.7366488980042,
+      "native_limit_caps": {
+        "CPU": 2400,
+        "AS": 4294967296,
+        "CORE": 0,
+        "FSIZE": 268435456,
+        "NOFILE": 64,
+        "NPROC": 32
+      }
+    }
+  ],
+  "remote_root": "/home/codextransfer/predictive_motion/results/phase5/session-controlled-stop-schema-match-active32-brake64-dwell25-v1-20261012-attempt52",
+  "whole_control_prefix_B_C_stop_content_verified_by_this_receipt": false,
+  "remote_backup_complete": false,
+  "phase5": "NOT_ACCEPTED",
+  "phase6": "NOT_STARTED"
+}

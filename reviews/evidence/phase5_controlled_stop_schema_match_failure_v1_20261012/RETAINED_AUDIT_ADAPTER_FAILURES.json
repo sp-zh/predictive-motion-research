@@ -1,0 +1,16 @@
+{
+  "scope": "Local saved-review adapter failures only; original experiment files unchanged",
+  "retained": [
+    "CHAIN52_RETRY1.stderr",
+    "SOURCE_TIMING52.stderr",
+    "TRACE52.stderr",
+    "TRACE52_RETRY1.stderr"
+  ],
+  "causes": [
+    "Stale common-module pin filename",
+    "Source reuse files are sealed under retained51/source, not UNIT52/src",
+    "Oldface values encode row*2+side; kept values are positions, not rowIDs",
+    "Derived span annotation must not mutate raw decoded dictionary used for final-copy equality"
+  ],
+  "repairs": "Fresh versioned adapters preserve all old scripts/stderr; no input changes, acceptance gate removals or native runs"
+}

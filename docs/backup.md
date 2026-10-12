@@ -45,3 +45,9 @@ XML and upstream dependency caches remain excluded.
 Small task-completion MP4s, thumbnails and provenance under `videos/` are also
 part of milestone backups. Select successful accurate/smooth runs for display,
 record the selection criteria, and preserve the complete research outcomes.
+
+## Earlier preparation before the daily disconnect
+
+On2026-10-12 the human requested “之后要提前一点做备份”. The existing preparation automation now runs at02:00 America/Toronto when resumed, aiming to verify the remote SHA of completed units or a clearly scoped recoverable checkpoint before02:30, ahead of the approximate03:00 disconnect. It is currently PAUSED after offline52. Resume requires the direct human instruction; reconnecting or a scheduled wake does not authorize new work.
+
+Results produced later by the finite offline batch are preserved locally first and verified/backed up after connection recovery. Unfinished runs, uncopied large evidence and unverified archives are explicitly incomplete backups; a preparation checkpoint does not imply their results exist or are accepted.

@@ -1,0 +1,11 @@
+{
+  "schema": "ROOT52_ARCHIVE_AND_TIMING_SCOPE_QUALIFICATION_V1",
+  "archive_builder_base": "/private/tmp/dell_stop51_archive_candidate_v1_20261012/archive_builder.py",
+  "base_sha256": "c597e019c164ec786de9545e72a9eaca9a31561b651716edac5ea1e558561d4c",
+  "builder52_sha256": "d984d2e84189473202b42a6a9a06f77c7869df5ed54d7a501981619556eed766",
+  "changes": "Only STOP51\u2192STOP52 schema labels, fresh root path guard and archive filename/ended label. Shared51 writer/ledger, physical8GiB/logical7.5GiB/metadata16MiB, all regularfile hashes, poison/prewrite limits and full member readback unchanged. No native calls.",
+  "summary_native_wall_s_qualification": "Root SUMMARY.whole_cycle_timing.native_wall_s325.688039096 is self-recorded native entry timer; wrapper native wall325.7366488980042 includes process/loader overhead. Both independently observed, not summed or substituted for whole-current-cycle mean7.744210506125.",
+  "forced_cleanup_path": "Not executed; native naturally failed diagnostic cap, supervisorstop_reasonnull/signalnull",
+  "phase5": "NOT_ACCEPTED",
+  "phase6": "NOT_STARTED"
+}
