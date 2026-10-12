@@ -1,0 +1,28 @@
+{
+  "scope": "One fresh savedcurrent36 diagnostic pure numeric replay; no Model/SDK/nativeOSQP/task/hardware/new48native",
+  "records": [
+    {
+      "stage": "compile",
+      "exit": 0,
+      "CPU": 45,
+      "AS": 2147483648,
+      "FSIZE": 16777216,
+      "wall": 50
+    },
+    {
+      "stage": "pure",
+      "exit": 0,
+      "CPU": 25,
+      "AS": 536870912,
+      "FSIZE": 1048576,
+      "wall": 30
+    }
+  ],
+  "source47_inputs_unchanged": {
+    "qp_equality_reduction.bin": "5822aa07c81a510a1a1f1d0e622ef76493e2fb739a84f07c878d52031c3d858a",
+    "current_numeric_hint.bin": "af5a76500dd6d99bf88c603847ff1e28372da22b414cff559ceee293336e7d7a",
+    "numeric_feasible_initializer.bin": "47b58cc729287b63d37b99a7f396a6d60ba2ae45c132e4132da87083404b4a92",
+    "candidate.bin": "7443a74266b2fab73882c6fca94f08b80cbe910990877967babd123a3ae76636"
+  },
+  "original47_numeric_header_unchanged": "f3009331a4da83edc27faaefbf3c9a3af8ad4cdaaa4cd578843d60bd31fabfa6"
+}

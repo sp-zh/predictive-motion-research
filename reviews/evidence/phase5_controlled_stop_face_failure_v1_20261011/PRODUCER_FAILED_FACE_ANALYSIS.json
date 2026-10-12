@@ -1,0 +1,55 @@
+{
+  "schema": "ACTUAL47_CURRENT_FACE_CAP_RETAINED_FAILURE_ANALYSIS_V1",
+  "numpy_version": "2.5.3",
+  "interpreter": "/private/tmp/phase5-foundation-figure-env-v2/bin/python",
+  "retained_first_decoder_failure": "face_cap_analysis47_TRANSCRIPT.txt: Mac default Python lacks numpy; no numeric decoding executed",
+  "failures": [
+    {
+      "path": "cycle-36/trial-0",
+      "hint_error": "current active face cap before append",
+      "hint_complete": false,
+      "hint_events_count": 145,
+      "faces_count": 144,
+      "last_event": {
+        "iteration": 144,
+        "active_count": 144,
+        "worst_row_u64": 7039,
+        "violation": 3.767819389821625e-15,
+        "min_multiplier": -5.384854866161797,
+        "stationarity": 7.494005416219807e-16,
+        "kkt_residual": 7.494005416219807e-16
+      },
+      "blocked_row": 7039,
+      "blocked_row_originalSI_mapping": -1,
+      "blocked_row_is_new_guard": true,
+      "saved_matrix_shape": [
+        7358,
+        144
+      ],
+      "initializer_changed": true,
+      "initializer_epsilon": 1.006573999830422e-08,
+      "solver_start_matches_retained_initializer_exact_values": true,
+      "starting_guess_numpy_max_violation": 3.767819389821625e-15,
+      "incomplete_hint_primal_numpy_max_violation": 3.767819389821625e-15,
+      "native_forensics": {
+        "wrapper_attempted": 0,
+        "native_solve_attempts": 0,
+        "raw_status": 0,
+        "primal_present": 0,
+        "dual_present": 0
+      },
+      "originalSI_candidate_scan_NOT_RUN": true,
+      "B_C_NOT_ENTERED": true,
+      "rows_scope": "All7362 current augmented scaled rows; NumPy accumulation may differ from Eigen. This diagnostic never validates incompletehint as candidate.",
+      "source_input_hashes": {
+        "current_numeric_hint.bin": "af5a76500dd6d99bf88c603847ff1e28372da22b414cff559ceee293336e7d7a",
+        "qp_equality_reduction.bin": "5822aa07c81a510a1a1f1d0e622ef76493e2fb739a84f07c878d52031c3d858a",
+        "numeric_feasible_initializer.bin": "47b58cc729287b63d37b99a7f396a6d60ba2ae45c132e4132da87083404b4a92",
+        "candidate.bin": "7443a74266b2fab73882c6fca94f08b80cbe910990877967babd123a3ae76636"
+      }
+    }
+  ],
+  "source_cap": "144 active faces, unchanged; refuse before append of145th face",
+  "whole_polytope_feasibility": "UNKNOWN; no infeasibility/solver/stop certificate from cap refusal",
+  "scope": "Saved-data read-only diagnostics, no solver rerun or usable controls, no limit/tolerance expansion"
+}

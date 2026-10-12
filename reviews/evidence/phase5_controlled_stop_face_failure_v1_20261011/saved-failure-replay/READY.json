@@ -1,0 +1,71 @@
+{
+  "schema": "SAVED47_FACE_CAP_DIAGNOSTIC48_PURE_READY_V1",
+  "files": [
+    {
+      "path": "DERIVED_OUTPUT_LEDGER.json",
+      "bytes": 797,
+      "sha256": "20e310d84f481a40f175b24742377d58bdb81ab8cfaa11e25722a393d1bf3d29"
+    },
+    {
+      "path": "DERIVED_OUTPUT_LOCK",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "DISPATCH.stderr",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "DISPATCH.stdout",
+      "bytes": 15758,
+      "sha256": "35cb67b9bd632238df91cd5c8cec1406ea8b2e8c3552d5d3873746005cd59411"
+    },
+    {
+      "path": "DRIVER.py",
+      "bytes": 2802,
+      "sha256": "1395c5f2a5a9d40e974cef213ea51ca22a5ec3f75eaf2a1cf043656e62cc4f5b"
+    },
+    {
+      "path": "SUMMARY.json",
+      "bytes": 960,
+      "sha256": "ad44f97592f3c171883213a06af7b728029ead9879e87c14edaf88885d9ce54b"
+    },
+    {
+      "path": "bounded_bytes.py",
+      "bytes": 1620,
+      "sha256": "01a1aa86c2a065fbe52ef6d27ff122d5be3a800adedf3581c3bed90b34617631"
+    },
+    {
+      "path": "current_numeric_guess_diagnostic48.hpp",
+      "bytes": 7892,
+      "sha256": "64eadc6631c54c27668c86d420fe31e5adfc414ec7c84473a1502e2ee13d0eb4"
+    },
+    {
+      "path": "saved47_face_diagnostic.cpp",
+      "bytes": 3001,
+      "sha256": "d8c00d0b924147317a10959111d534a388f05ace586f9f220cd32e4ec82d075f"
+    }
+  ],
+  "payload_bytes": 32830,
+  "scope": "One fresh savedcurrent36 diagnostic pure numeric replay; no Model/SDK/nativeOSQP/task/hardware/new48native",
+  "records": [
+    {
+      "stage": "compile",
+      "exit": 0,
+      "CPU": 45,
+      "AS": 2147483648,
+      "FSIZE": 16777216,
+      "wall": 50
+    },
+    {
+      "stage": "pure",
+      "exit": 0,
+      "CPU": 25,
+      "AS": 536870912,
+      "FSIZE": 1048576,
+      "wall": 30
+    }
+  ],
+  "all_native48_invocations": 0
+}

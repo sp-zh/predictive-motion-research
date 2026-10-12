@@ -1,0 +1,30 @@
+{
+  "scope": "Actual144ms failed prefix36C/72halves,32active4braking,8stop observations0/50dwell. Final incomplete current hint refuses before native/Request/B/C. No complete task/stop/realtime/phase acceptance.",
+  "producer_READY_sha256": "5a4438a47e3ee2a39aea15f890752670796b796d7791764c5f9c872d77dc94f4",
+  "files": {
+    "RENDER_RECEIPT.json": {
+      "bytes": 489,
+      "sha256": "800489d7997561e0d0fa008be3c4a37d1891b3f6d90b2dcfb4ce651f60857964"
+    },
+    "plot_input.json": {
+      "bytes": 138331,
+      "sha256": "6685509bd1fd8c192e76a4444208cd6f96ed8b3fb25f8962674558346a0a25fe"
+    },
+    "producer_plot_source.py": {
+      "bytes": 4006,
+      "sha256": "7524a70c1081a4d7d29978796d66c4bc5e86dafba64c47b1c84075c47728c35d"
+    },
+    "stop47_actual_diagnostic.png": {
+      "bytes": 243114,
+      "sha256": "c5ab0a1d800e63b515d50982a35bd4a662c01b921144fd945c937af5aab730e7"
+    },
+    "stop47_actual_tcp_prefix.png": {
+      "bytes": 207715,
+      "sha256": "68df8987a08b8419ba4d1a82d0d7eaae02a8afdd334d3aae6724a8b55d167c80"
+    }
+  },
+  "Root_visual_QA": "Both exact producer PNGs inspected: readable physical units/speed threshold, all37whole clocks including failed37th, actualTCP/reference offset. Physical speed remains above prospective stop bound.",
+  "input_projection": "Exact72actualTCP/8stop/all37whole clocks; large raw native matrices private.",
+  "phase5": "NOT_ACCEPTED",
+  "phase6": "NOT_STARTED"
+}

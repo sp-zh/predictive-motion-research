@@ -68,6 +68,12 @@ This image depicts the integrated scene; it is not a predictive-control result.
 
 ## Simulation and diagnostic figures
 
+![Attempt47 actual prefix and eight failed stop observations](../figures/phase5_controlled_stop_face_failure_v1_20261011/stop47_actual_diagnostic.png)
+
+![72 actual recorded TCP poses from attempt47](../figures/phase5_controlled_stop_face_failure_v1_20261011/stop47_actual_tcp_prefix.png)
+
+Attempt47 completes32 active plus4 braking-mode commands over144ms; all8 stop observations fail, dwell0/50. The next incomplete numerical hint hits its active-face cap before native solve/B/C. All36 completed4ms deadlines miss and the failed37th whole clock is included. [Provenance](../figures/phase5_controlled_stop_face_failure_v1_20261011/PROVENANCE.json) binds exact recorded poses, units, partial scope and inspected PNGs. This failed prefix does not provide a full-task/stop video or research advantage.
+
 ![Attempt46 actual prefix and six failed stop observations](../figures/phase5_controlled_stop_floor_failure_v1_20261011/stop46_actual_diagnostic.png)
 
 ![70 actual recorded TCP poses from attempt46](../figures/phase5_controlled_stop_floor_failure_v1_20261011/stop46_actual_tcp_prefix.png)

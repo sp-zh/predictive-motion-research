@@ -1,0 +1,468 @@
+{
+  "scope": "fresh47 finalsource/profile/pure readiness only; no actual stop/phase result",
+  "utc": "2026-10-12T00:05:39.916373+00:00",
+  "remote": "/home/codextransfer/predictive_motion/results/phase5/session-controlled-stop-feasible-seed-active32-brake64-dwell25-v3-20261011-attempt47",
+  "ELF": {
+    "path": "/home/codextransfer/predictive_motion/results/phase5/session-controlled-stop-feasible-seed-active32-brake64-dwell25-v3-20261011-attempt47/link-attempt1/active_first_cycle",
+    "bytes": 19886776,
+    "sha256": "4a3157941eb6548be78a8ce247aced407644b25be07e74023f505497082ae0ac"
+  },
+  "profile_sha256": "6a2bab9233cfbd31103dd625499b2a83391143b8ca528662d5f1aec94210a040",
+  "sources": [
+    {
+      "file": "active_first_cycle.cpp",
+      "bytes": 49913,
+      "sha256": "d087ae4db53ad32b92db9680749e50c0a597acdc1424d70e3ea8e0c3542cf0ac"
+    },
+    {
+      "file": "actual_stop_monitor.hpp",
+      "bytes": 3580,
+      "sha256": "beaf7d76164638ebe035c9961a9f6a940becac7a62395444c55e301c006d0a4c"
+    },
+    {
+      "file": "actual_stop_monitor_tests.cpp",
+      "bytes": 3830,
+      "sha256": "cd56b9dc8dff809d10eb8ada519d37c551b9347c64d0c6500d05683fb3e9b5af"
+    },
+    {
+      "file": "actual_task_metrics.hpp",
+      "bytes": 1883,
+      "sha256": "83bb0f21e0bfa830b4d8f7e356f9f7c2ce916c49d540c948588d5e460e07d900"
+    },
+    {
+      "file": "actual_task_metrics_tests.cpp",
+      "bytes": 1359,
+      "sha256": "00bea8673e19abc62233e5933722eae94c35b7540d4f3d2c5e609dc2a83b374c"
+    },
+    {
+      "file": "affine_assembly.cpp",
+      "bytes": 28981,
+      "sha256": "d478eda1f0fe97bfc41851515f4baa3e485fd4a57968a62dcb6233ae1157bbd5"
+    },
+    {
+      "file": "affine_assembly.hpp",
+      "bytes": 6026,
+      "sha256": "6faee2961242052c7655da41e8988dd0844f14c3cfa885672aa7c03eaa1dcb57"
+    },
+    {
+      "file": "bounded_current_trials.hpp",
+      "bytes": 2347,
+      "sha256": "4d7663f1dbc75bd125ca5319817f6b2b363222310ce337f06f0a468e1cd8ef61"
+    },
+    {
+      "file": "bounded_current_trials_tests.cpp",
+      "bytes": 1724,
+      "sha256": "dc8ce680a0c19249c3462003f23f80e2f4dba5a58a7a921de851bff5074fb23b"
+    },
+    {
+      "file": "bounded_progress_seed.hpp",
+      "bytes": 4309,
+      "sha256": "6dc1d317db9504ec248dda3f04ef2917bd4850de027c032575eff5d0f39c4ff0"
+    },
+    {
+      "file": "bounded_progress_seed_tests.cpp",
+      "bytes": 2670,
+      "sha256": "78d76a69ced03c25e90242203e3ef5d61a858ada18d8fd1ee854d76b53f965d3"
+    },
+    {
+      "file": "box_screen_tests.cpp",
+      "bytes": 2954,
+      "sha256": "d922876babec2867dd1293bcee259ac12e4b2a6af5a30dd551209e097c0abaf8"
+    },
+    {
+      "file": "candidate_validation.cpp",
+      "bytes": 10659,
+      "sha256": "aa76869432f465e45c48acf777913eea5972414a145eedbf02645035773f63e9"
+    },
+    {
+      "file": "candidate_validation.hpp",
+      "bytes": 1526,
+      "sha256": "d816bedb47cff25c49a0d5577a9fa805771816caa1dc406d4772c1ee843fe4fa"
+    },
+    {
+      "file": "counted_geometry.hpp",
+      "bytes": 7359,
+      "sha256": "aede8b1a2b4f5a17e00c7fd477a3db0e9264eab2539c7aa20eb97f62959d9401"
+    },
+    {
+      "file": "current_alpha_trust.hpp",
+      "bytes": 4084,
+      "sha256": "e22e52d912cce18c61aaba4a907a92117853d047020a5bc0a614cb663fd83e78"
+    },
+    {
+      "file": "current_alpha_trust_tests.cpp",
+      "bytes": 2903,
+      "sha256": "adb42a13804dd8ccfd6fc665cdd37aab5a33ab990ca5ac5ae1ac31450ea9a04d"
+    },
+    {
+      "file": "current_numeric_guess.hpp",
+      "bytes": 7368,
+      "sha256": "f3009331a4da83edc27faaefbf3c9a3af8ad4cdaaa4cd578843d60bd31fabfa6"
+    },
+    {
+      "file": "current_numeric_guess_before_fraction_repair39.hpp",
+      "bytes": 4718,
+      "sha256": "bb935c5cbc1c3a09717142947d285b8f2009fe8ae8e47d433703dc815a322972"
+    },
+    {
+      "file": "current_numeric_guess_before_rank_repair43.hpp",
+      "bytes": 5930,
+      "sha256": "6347f1499b3ef91ceaea247035664bb52e1e3cd09cfdf168380861610e502999"
+    },
+    {
+      "file": "current_numeric_oracle.cpp",
+      "bytes": 1845,
+      "sha256": "43e2f0fc6cab95382ff9741669f82d21d43670db633088c6141106bf40a95cac"
+    },
+    {
+      "file": "current_numeric_tests.cpp",
+      "bytes": 3100,
+      "sha256": "f915a7eec36722e45268d443af9bee310fdb1e9a3720c9250b8dca1d0993abf9"
+    },
+    {
+      "file": "cycle_support.hpp",
+      "bytes": 7265,
+      "sha256": "f73f3726bc9bfafd2a0a1102b0f679b1144e23cc0fce60fe2ec1c588bd623991"
+    },
+    {
+      "file": "cycle_support_tests.cpp",
+      "bytes": 7461,
+      "sha256": "fd5e44a1cf39785555b2eef4e9d46e1ef26435ce8976a7660ce3a06a3dbad5a5"
+    },
+    {
+      "file": "evidence_buffer_tests.cpp",
+      "bytes": 6554,
+      "sha256": "a3dcddee70a0ad8c5b71ee3ee51b26a762f5b07feb87bcb47fcf8407e124bee7"
+    },
+    {
+      "file": "fine_timing.hpp",
+      "bytes": 1160,
+      "sha256": "17e519005d4740fdf78b85029ece68cf70f75f9f111fc2130061d45acece7f07"
+    },
+    {
+      "file": "fine_timing_tests.cpp",
+      "bytes": 1251,
+      "sha256": "fc29f2387722763c6601aef677dabfc1685d958093fa799a34452c33aa1c482f"
+    },
+    {
+      "file": "fraction_repair_regression.cpp",
+      "bytes": 2199,
+      "sha256": "6377f1275266aa159c740acc95cf559a475bc447dbf1eeadcead115d3bb13a5e"
+    },
+    {
+      "file": "integrated_horizon_qp.cpp",
+      "bytes": 162227,
+      "sha256": "344459cbe7f745de8933153b700ba7b3de837fa76a68cc4ab6528ca8c358a22a"
+    },
+    {
+      "file": "integrated_horizon_qp.hpp",
+      "bytes": 13538,
+      "sha256": "0cacf846d1734c6a163f1d8ba015bfeff91cb820792cc18b13e76c902f68f4ec"
+    },
+    {
+      "file": "invariant_tests.cpp",
+      "bytes": 4721,
+      "sha256": "f5a859d4cf9d79a5ae1b533b8dd62776f2bba6599dfdf691a2915ef3296a33f9"
+    },
+    {
+      "file": "linear_box_screen.hpp",
+      "bytes": 3916,
+      "sha256": "b649eff43293a3078b7b46a0166fa0f8a2ac59f3a8496c8c73a98c275fed96d1"
+    },
+    {
+      "file": "lossless_evidence.cpp",
+      "bytes": 18923,
+      "sha256": "26132fde06d1538f4bcd8e4b846d650ab9ab333572978c30aa9030ec12523b2b"
+    },
+    {
+      "file": "lossless_evidence.hpp",
+      "bytes": 2265,
+      "sha256": "8431175019137524adb05081faa5b16a0bd06b533d04ef3f73f533099b337eb3"
+    },
+    {
+      "file": "model_boundary.cpp",
+      "bytes": 21482,
+      "sha256": "eeb1f2a43ef40315e747c1be536eccc7b810647c65840999cd9c27d75895366e"
+    },
+    {
+      "file": "model_boundary.hpp",
+      "bytes": 4503,
+      "sha256": "966af079735681aedf1031822864baa608255efa43e4ca699d5bec07a3235efb"
+    },
+    {
+      "file": "nominal_geometry_provider.hpp",
+      "bytes": 3544,
+      "sha256": "7269a27ae1cdf5d623b726a52092adb074df8c6e032bcc1cd2c4845acafaf498"
+    },
+    {
+      "file": "nominal_geometry_selection.hpp",
+      "bytes": 2524,
+      "sha256": "6a41cc80feca43509d234c5aaf70e9a4c4de77abfa9b8eabfec6b6541b7711fa"
+    },
+    {
+      "file": "normalization.cpp",
+      "bytes": 23976,
+      "sha256": "a0cd0c9cdb505f922f1744f24cf115057b6ba9f3a9bc1b3ed0c9bdb82d358ed5"
+    },
+    {
+      "file": "normalization.hpp",
+      "bytes": 4288,
+      "sha256": "9456be5c205f23d2aa2210eac02286d030204a446af003ee85362b971ccb43d8"
+    },
+    {
+      "file": "observer_tests.cpp",
+      "bytes": 3834,
+      "sha256": "18bef19661326132aac7396998b07395acd20e83c69b70b520fea855915b5e83"
+    },
+    {
+      "file": "owner_binding.hpp",
+      "bytes": 745,
+      "sha256": "26a058244f7ef8f6d9353857637270623e18e706a061bccc3be4cffb66a54354"
+    },
+    {
+      "file": "owner_binding_tests.cpp",
+      "bytes": 832,
+      "sha256": "891c6b39bf5a9d23c581f6c25a60876cc336c0f299d79239c06cdd04ac447fd4"
+    },
+    {
+      "file": "progress_interior_guard.hpp",
+      "bytes": 4089,
+      "sha256": "03fde0d535b571890b166fef3cf08a91dfa4c848fddeb17105562f40980eab73"
+    },
+    {
+      "file": "progress_interior_guard_tests.cpp",
+      "bytes": 2560,
+      "sha256": "7ea392de6be2289fa86d0524c55827e20bc7e6e0c2f419a886051c6c67cc47b7"
+    },
+    {
+      "file": "runtime_observer.cpp",
+      "bytes": 37768,
+      "sha256": "3370439af398e3f6c425750712ff4df9acf2f0166d072fc9b35cecca2761bd72"
+    },
+    {
+      "file": "runtime_observer.hpp",
+      "bytes": 9121,
+      "sha256": "b6f9098a00ccecfc6104a655d3e6897cb35ffb030c96dab252dfdcfacab0d278"
+    },
+    {
+      "file": "session_primitives.hpp",
+      "bytes": 2259,
+      "sha256": "0b76bc232ed81dc9b4831617ae1690cfc287def914b8bca5f05ce6e6e25b6080"
+    },
+    {
+      "file": "solver_forensics.cpp",
+      "bytes": 26514,
+      "sha256": "664c1d480e23c1ddef4f45a57165cba871213740329f8693c897d7c07ee7af27"
+    },
+    {
+      "file": "solver_forensics.hpp",
+      "bytes": 860,
+      "sha256": "02b3a3d33ea64a351b228b96b2e0590b7a79fb4e9b87da78dc28c59465aca3bb"
+    },
+    {
+      "file": "stop_objective_factors.hpp",
+      "bytes": 601,
+      "sha256": "08506d74ccb15a684b4ba0e68c935340085fd56d15df7cd12689cc7fc0acb544"
+    },
+    {
+      "file": "stop_tail_byte_bound.hpp",
+      "bytes": 1219,
+      "sha256": "c831a0db139c9ca3744185598927c4e179af8b9cd53b7bb67beebf6e23b2d63e"
+    },
+    {
+      "file": "task_local_provider.cpp",
+      "bytes": 1839,
+      "sha256": "051b424236979f9fe7ea4cb96564f54969025c997bfba2c61d347a23f7fbae4c"
+    },
+    {
+      "file": "task_local_provider.hpp",
+      "bytes": 640,
+      "sha256": "1819e2f626fb0ff65ad7e7e8de0b0b52f625e6bf435b073d7cca55722d76f093"
+    }
+  ],
+  "source_manifest_sha256": "e0fef85269c2fd2f1617ff19f6c960379c901c37cffe44286c407f9644f25c4b",
+  "fresh_TUs": 23,
+  "fresh_ELFs": 12,
+  "puretests": 11,
+  "pure_stdout_sha256": "d8e0b10d4e6ff16875cd87cc2c1098a486290b26c1a6676ff7efa93229b3f586",
+  "source_budget_cap_unchanged": 1024000000,
+  "source_worst_slots": 760826484,
+  "separate_worst_slots": 1669826160,
+  "normal_binary_write_cap_bytes": 14998831104,
+  "terminal_binary_floor_bytes": 33554432,
+  "tail_bound_bytes": 16879432,
+  "before_native_physical_precheck_still_required": true,
+  "macro_commands_max": 121,
+  "actual_halfsteps_max": 242,
+  "global_trials_max": 176,
+  "forecasts_max": 352,
+  "dwell_required_actual_halves": 50,
+  "CPU_s": 2400,
+  "AS_bytes": 4294967296,
+  "native_wall_s": 3000,
+  "driver_wall_s": 3060,
+  "Mac_free_min_GiB": 61,
+  "Windows_C_D_each_free_min_GiB": 80,
+  "storage_selection": {
+    "schema": "PROSPECTIVE_STOP47_STORAGE_COVERAGE_V1",
+    "scope": "Before fresh actual47; finitefailure allowed, not completion guarantee",
+    "native_binary_hard_cap_bytes": 15032385536,
+    "native_binary_finalization_floor_bytes": 33554432,
+    "native_journal_hard_cap_bytes": 134217728,
+    "native_source_build_capture_aux_hard_cap_bytes": 268435456,
+    "producer_transport_archive_hard_cap_bytes": 16106127360,
+    "producer_derivation_visual_hard_cap_bytes": 1073741824,
+    "root_independent_review_reference_hard_cap_bytes": 3221225472,
+    "Mac_fresh_free_requirement_GiB": 61,
+    "Windows_C_and_D_each_fresh_free_requirement_GiB": 80,
+    "Mac_peak_bound_GiB": 60.375,
+    "Mac_peak_terms_GiB": {
+      "native_underlying_data_binary_journal_aux": 14.375,
+      "one_temporary_transport_archive_no_compression_assumption": 15,
+      "producer_derived_plus_root_independent_outputs": 4,
+      "one_root_47_only_archive_underlying_evidence_once": 19,
+      "free_margin": 8
+    },
+    "root_import": "Fresh immutable alias with readonly hardlinks to sealed producer underlying payload, full nofollow/SHA/file-set verification. This is NOT an independent Mac physical copy.",
+    "duplicate_transport_role": "Transport .tar.gz remains immutable on Mac separately. Producer READY references its SHA/size and fully decoded members. New45 Root archive excludes only this duplicate transport object, includes full actual native/source/pins/failures/collector/member/SHA reports and records exclusion role. It does not claim transport compressed bytes copied to Dell.",
+    "old_evidence": "Old40-46 immutable archives and failures remain retained/verified, referenced by new47 checkpoint identities, not repacked into new47-only archive. No deletion/overwrite of old freezes or source results.",
+    "new_READY_coverage": "Full producer native evidence plus bounded derived artifacts. Transport archive external receipt, not a payload inside new Root selection READY. Root selection explicitly lists native/source/derived coverage and excluded duplicate transport SHA; storage checkpoint names which copies actually verified.",
+    "derived_quota": "Producer decoders/plots share <=1GiB pre-write hard quota; Root independent refs separately <=3GiB pre-write hard quota. Both reject before over-budget output and retain prior outputs/errors. Final archive member sum and gzip stream cap independently enforced. No ratio assumption.",
+    "physical_redundancy": "Root47-only complete underlying archive/payload on Mac plus independent Dell D copy/readback; same-Mac hardlinks never called a second physical backup.",
+    "output_failure_tail": "Normal native writes cannot use32MiB cleanup reserve. Cleanup releases only this reservation without resetting actual cumulative spent bytes; full real CommitHistory/StopRecord/current+termination evidence is attempted within tail. Output-cap failure remains package FAIL, retained partials never called complete.",
+    "status": "PROSPECTIVE_NOT_ACTUAL_RUN_NOT_BACKUP_COMPLETE",
+    "finalization_proof": "stop_tail_byte_bound.hpp: actual121history fixed/numeric+successlabels<=605000B,178StopRecords<=91136B,2snapshots cappedintegration4096<=147456B,176registry<=45056B,bootstrap/headers/manifestreceipts262144B;9*1MiB codec-validterminalerror strings (onlyonefailedC/half)+6MiBworstYAMLescaping. Total16879432B<32MiB. Sourceepoch<=256/integrationstate<=4096; normaloutput cannotborrow, releaseatcleanupnoresetspent. Oversizedtext beyond1MiB unsupportedcodec retainsboundedfailure ratherthanclaimscomplete.",
+    "root_47_only_archive_hard_cap_bytes": 20401094656
+  },
+  "no_hardware_main_scorer_formal_heldout": true,
+  "phase5": "NOT_ACCEPTED",
+  "phase6": "NOT_STARTED",
+  "runtime_plan_sha256": "223206cc12e1613ce721abba3f4cacd0b94c4351e6c92d16189d46bf4a4662c0",
+  "progress_interior_guard": {
+    "stop_only": true,
+    "first_half_count": 264,
+    "floor_rate": 1e-09,
+    "new_separate_numeric_reservation_per_stop_trial": 250000,
+    "slot_bound_breakdown": {
+      "helper_and_labels_roster_temporaries": 60000,
+      "three_appended_264x144_and_bounds_copies": 115632,
+      "metadata_rows_scales": 1056,
+      "extra_hint_vectors_and_encoding_slack": 20000
+    },
+    "role": "biasedterminal planning domain intersection only; originalSi/strict400/nativeSOLVED/B/C remain mandatory"
+  },
+  "remote_stage_verification": {
+    "compile_complete": true,
+    "compile_records": 23,
+    "link_complete": true,
+    "link_records": 12,
+    "pure_complete": true,
+    "pure_records": [
+      {
+        "test": "cycle_support_tests",
+        "exit": 0,
+        "wall_s": 0.010171078998610028,
+        "elf_sha256": "3130db3cb6e3d9dba1147fafa38c70a4ba309333a83864fec3ba7691845d2557",
+        "Model_native_invocations": 0
+      },
+      {
+        "test": "fine_timing_tests",
+        "exit": 0,
+        "wall_s": 0.0018415659997117473,
+        "elf_sha256": "1f5a199c0819db47930d0ead274e9aa1638617a2131127463a175bcc68b68e94",
+        "Model_native_invocations": 0
+      },
+      {
+        "test": "evidence_buffer_tests",
+        "exit": 0,
+        "wall_s": 0.05738779000057548,
+        "elf_sha256": "6c59ef96b3f9132ba8b647fddad6b7ecfa46295302a83fb30b1c8add00c23014",
+        "Model_native_invocations": 0
+      },
+      {
+        "test": "current_numeric_tests",
+        "exit": 0,
+        "wall_s": 0.0034313740015932126,
+        "elf_sha256": "99e35494b418e2cc27aba1a579a12e19915a66a7badeba53d1dfb9886be4cb84",
+        "Model_native_invocations": 0
+      },
+      {
+        "test": "fraction_repair_regression",
+        "exit": 0,
+        "wall_s": 0.46999642700029653,
+        "elf_sha256": "bf27ffc5de42d6df823b4d599fe0c1fbffc74b74846cba8ff8cf0e4fdc84b63e",
+        "Model_native_invocations": 0
+      },
+      {
+        "test": "rank_saved_regression",
+        "exit": 0,
+        "wall_s": 0.4321655499988992,
+        "elf_sha256": "bf27ffc5de42d6df823b4d599fe0c1fbffc74b74846cba8ff8cf0e4fdc84b63e",
+        "Model_native_invocations": 0
+      },
+      {
+        "test": "current_alpha_trust_tests",
+        "exit": 0,
+        "wall_s": 0.017441355001210468,
+        "elf_sha256": "f3c55d1eafcae41d80d23d7d6217a64031491cc90d0b59fcd6d3f636a802b12a",
+        "Model_native_invocations": 0
+      },
+      {
+        "test": "bounded_current_trials_tests",
+        "exit": 0,
+        "wall_s": 0.0019286400001874426,
+        "elf_sha256": "ace1e972f2affbf111a61c0fdddd51ea725990b3941179d05b30894c72c01bd6",
+        "Model_native_invocations": 0
+      },
+      {
+        "test": "actual_stop_monitor_tests",
+        "exit": 0,
+        "wall_s": 0.001956111000254168,
+        "elf_sha256": "39782c31fd15fc6143450f41f6b40fa46537e28a7c31850c5ff69f688e4b2da6",
+        "Model_native_invocations": 0
+      },
+      {
+        "test": "progress_interior_guard_tests",
+        "exit": 0,
+        "wall_s": 0.03133471899855067,
+        "elf_sha256": "2e454b9d96ccb7faae5ebf44d570b093578187f58d9272be7737a4801dc62730",
+        "Model_native_invocations": 0
+      },
+      {
+        "test": "bounded_progress_seed_tests",
+        "exit": 0,
+        "wall_s": 0.008380776998819783,
+        "elf_sha256": "98c9a9339cdd0e5f2608f8b85015de140310783cc6608077d911dd11921984ab",
+        "Model_native_invocations": 0
+      }
+    ],
+    "runtime_entered": false
+  },
+  "startup_termination_input_identities": 1721,
+  "feasible_initializer": {
+    "stop_only": true,
+    "before_current_hint_and_native": true,
+    "new_data_only_optimizer_startingguess": true,
+    "epsilon_cap": 1e-06,
+    "maximum_attempts": 3,
+    "unchanged_start_guess_allowance": 1e-12,
+    "same_full_augmented_row_recheck": true,
+    "new_separate_numeric_reservation_per_stop_trial": 250000,
+    "logical_upper_bound_slots": 235000,
+    "actualstate_Modelnominal_returnedcandidate_unchanged": true,
+    "pure_failure_and_success_retained": [
+      {
+        "ready": "/private/tmp/stop47_feasible_start_pure_v1_20261011/READY.json",
+        "sha256": "99bbb21be1920427d2a1b9aac3d2d02a390dc8440d6e393239739ea16bd0e6d1"
+      },
+      {
+        "ready": "/private/tmp/stop47_feasible_start_pure_v2_20261011/READY.json",
+        "sha256": "236f955fc7e22d47fd707397b0789f6dafc2f951b72c69fc8fb910e85dfd9f3a"
+      },
+      {
+        "ready": "/private/tmp/stop47_feasible_start_pure_v3_20261011/READY.json",
+        "sha256": "6daf7daf7bff0bffde2e419f681335371dc151fa21c431d718391879ff99643c"
+      }
+    ]
+  }
+}

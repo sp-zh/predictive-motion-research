@@ -1,0 +1,42 @@
+{
+  "schema": "ROOT_ACTUAL47_RETAINED_FAILURES_V1",
+  "actual_failure": {
+    "shape": [
+      7358,
+      144
+    ],
+    "hint_events": 145,
+    "active_faces": 144,
+    "blocked_row": 7039,
+    "mapping": -1,
+    "internal_label": "internal_alpha_guard/cell/15/joint/0",
+    "last_recorded_event": {
+      "iteration": 144,
+      "active": 144,
+      "worst": 7039,
+      "violation": 3.767819389821625e-15,
+      "min_lambda": -5.384854866161797,
+      "stationarity": 7.494005416219807e-16,
+      "residual": 7.494005416219807e-16
+    },
+    "partial_hint_feasibility_numpy": 3.767819389821625e-15,
+    "partial_primal_is_not_usable_candidate": true,
+    "no_native_fullSI_Request_Value_B_C": true,
+    "whole_polytope_feasibility": "UNKNOWN",
+    "per_event_K_RHS_solution_resolve": false
+  },
+  "producer_text_error": {
+    "text": "All7362 current augmented scaled rows; NumPy accumulation may differ from Eigen. This diagnostic never validates incompletehint as candidate.",
+    "actual_array_shape": [
+      7358,
+      144
+    ],
+    "scope": "Hardcoded7362 description is wrong; raw array dimensions are authoritative. Producer raw files unchanged."
+  },
+  "adapter_failure": {
+    "source": "audit_initializer_face.py",
+    "error": "Static source token asserted direct out.faces.size()< while actual uses const k=out.faces.size(); need(k<n,...) before append.",
+    "repair": "Match actual equivalent source expressions; all source/numeric gates unchanged, original stderr preserved."
+  },
+  "retained_producer_failures": "First face-cap decoder defaultPython NumPy unavailable, v1/v2 seed/prefix failures and old47preparation retained in immutable packet; not relabeled as control/native reruns."
+}
