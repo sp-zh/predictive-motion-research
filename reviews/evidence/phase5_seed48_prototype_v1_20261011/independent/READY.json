@@ -1,0 +1,65 @@
+{
+  "schema": "ROOT_SEED48_PREPARATION_REVIEW_READY_V1",
+  "files": [
+    {
+      "path": "FAILURES.json",
+      "bytes": 885,
+      "sha256": "9f5c6360cf7732814d831042b2e79ea00fdf6a510e302d755895326d9dd0164e"
+    },
+    {
+      "path": "PACKET0_READY_SNAPSHOT.json",
+      "bytes": 1936,
+      "sha256": "70bb0d4867641fe26b049f8117133ce40f71a906bd595b213843f0cd9bffba04"
+    },
+    {
+      "path": "PACKET1_READY_SNAPSHOT.json",
+      "bytes": 2085,
+      "sha256": "f4c5131c3d42623df15e86e350d3f2a5ccb9d33227ee62d860b89324fce32a44"
+    },
+    {
+      "path": "PACKET2_READY_SNAPSHOT.json",
+      "bytes": 2095,
+      "sha256": "8b6b7368fa2a94d6cc3c9e17851d3d3d035c148e9092257191ef6168fc9cb479"
+    },
+    {
+      "path": "PACKET3_READY_SNAPSHOT.json",
+      "bytes": 2086,
+      "sha256": "b7abcc3ab4d1f46dedbff9ef61f2536622eedc25a1e41ad8a12eb9e497e2ce3e"
+    },
+    {
+      "path": "RESULT.json",
+      "bytes": 16751,
+      "sha256": "8782b5ccc7d75e3e65fcee3fa3cff850279b9bd05bffed74403c46d139f296b7"
+    },
+    {
+      "path": "REVIEW.md",
+      "bytes": 1710,
+      "sha256": "b1056f1d24b93ce062db21ae6053860180ffb6523de611e58ac0a713e5045b20"
+    },
+    {
+      "path": "SHARED_BUDGET_BEFORE_READY.json",
+      "bytes": 291,
+      "sha256": "a11afefac0ad6aaf628e8f48df76e60fb8d45b3934604ca99b5ade1666861ccf"
+    },
+    {
+      "path": "audit_seed48_source.py",
+      "bytes": 12248,
+      "sha256": "5561b8beac8e5042359c5890c83b43acd82bb5b0af1c06b5a63b5b8f9e3e8d74"
+    },
+    {
+      "path": "current_numeric_guess_basis48.hpp",
+      "bytes": 9771,
+      "sha256": "cfbdd5df3685777709b35c1d4bd1e4924a0ca7262e8b030adc8650300cc57904"
+    },
+    {
+      "path": "saved47_basis_full_checks.cpp",
+      "bytes": 6573,
+      "sha256": "8ad135d8aa12f9fd0aabbdd00fcf2e4b13fb9b9148e4d500298a161619d9cc91"
+    }
+  ],
+  "payloads": 11,
+  "total_bytes": 56431,
+  "source_sha256": "5561b8beac8e5042359c5890c83b43acd82bb5b0af1c06b5a63b5b8f9e3e8d74",
+  "verdict": "PASS_BOUNDED_WORKING_SET_PROTOTYPE_SOURCE_WITH_PROVENANCE_AND_FLOAT_LIMITS",
+  "budget": "1MiB local/shared3GiB prewrite, no refund/reset"
+}

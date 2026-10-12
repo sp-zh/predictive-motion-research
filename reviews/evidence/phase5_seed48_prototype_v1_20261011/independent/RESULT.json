@@ -1,0 +1,344 @@
+{
+  "schema": "ROOT_SEED48_PROTOTYPE_PREPARATION_REVIEW_V1",
+  "verdict": "PASS_BOUNDED_WORKING_SET_PROTOTYPE_SOURCE_WITH_PROVENANCE_AND_FLOAT_LIMITS",
+  "packets": [
+    {
+      "name": "stop47_face_cap_saved48analysis_v1",
+      "ready_sha256": "70bb0d4867641fe26b049f8117133ce40f71a906bd595b213843f0cd9bffba04",
+      "payloads": 9,
+      "bytes": 32830,
+      "producer_exits": [
+        0,
+        0
+      ]
+    },
+    {
+      "name": "stop47_face_basis_saved48pure_v1",
+      "ready_sha256": "f4c5131c3d42623df15e86e350d3f2a5ccb9d33227ee62d860b89324fce32a44",
+      "payloads": 10,
+      "bytes": 43880,
+      "producer_exits": [
+        0,
+        1
+      ]
+    },
+    {
+      "name": "stop47_face_basis_zero_step_saved48diagnostic_v1",
+      "ready_sha256": "8b6b7368fa2a94d6cc3c9e17851d3d3d035c148e9092257191ef6168fc9cb479",
+      "payloads": 10,
+      "bytes": 101767,
+      "producer_exits": [
+        0,
+        1
+      ]
+    },
+    {
+      "name": "stop47_face_basis_saved48pure_v2",
+      "ready_sha256": "b7abcc3ab4d1f46dedbff9ef61f2536622eedc25a1e41ad8a12eb9e497e2ce3e",
+      "payloads": 10,
+      "bytes": 101432,
+      "producer_exits": [
+        0,
+        0
+      ]
+    }
+  ],
+  "producer_log_stats": [
+    {
+      "packet": 0,
+      "counts": {
+        "KDIAG": 17,
+        "BASIS_REPAIR": 0,
+        "ZERO_DIAG": 0,
+        "NUMERIC_ENDPOINT_NONBLOCKING": 0
+      },
+      "last_status": [
+        "EXACT_REPLAY_FAILED47 faces=144 events=145 error=current active face cap before append primal_bitwise=1 noModel_noNativeOSQP_noTask=1"
+      ]
+    },
+    {
+      "packet": 1,
+      "counts": {
+        "KDIAG": 0,
+        "BASIS_REPAIR": 72,
+        "ZERO_DIAG": 0,
+        "NUMERIC_ENDPOINT_NONBLOCKING": 0
+      },
+      "last_status": [
+        "NEW_HINT complete=0 events=512 error=current numeric iteration cap512"
+      ]
+    },
+    {
+      "packet": 2,
+      "counts": {
+        "KDIAG": 0,
+        "BASIS_REPAIR": 72,
+        "ZERO_DIAG": 359,
+        "NUMERIC_ENDPOINT_NONBLOCKING": 0
+      },
+      "last_status": [
+        "NEW_HINT complete=0 events=512 error=current numeric iteration cap512"
+      ]
+    },
+    {
+      "packet": 3,
+      "counts": {
+        "KDIAG": 0,
+        "BASIS_REPAIR": 4,
+        "ZERO_DIAG": 0,
+        "NUMERIC_ENDPOINT_NONBLOCKING": 346
+      },
+      "last_status": [
+        "NEW_HINT complete=1 events=187 error=",
+        "NEW_HINT_ORIGINAL14756_SI residual=9.9996400049207068e-14",
+        "LITERAL200_COMMAND_C_DERIVATIVE_PROGRESS400_PASS cycles=200 halves=400 minr=1.0000407451942897e-13 finalr=1.0000407451942897e-13 C-range=conservative_outward_interval_recovery_of_first_originalC_row noModel_noNativeOSQP_noTask=1"
+      ]
+    }
+  ],
+  "source_line_refs_v2": {
+    "caps": 28,
+    "clock": 29,
+    "iteration": 32,
+    "fullendpoint": 40,
+    "endpointfinite": 40,
+    "dropped": 42,
+    "nonblock_threshold": 42,
+    "step_allrows": 38,
+    "basis_trigger": 52,
+    "numeric_span": 57,
+    "mask_dropped": 58,
+    "cap_preserved": 60,
+    "finalstationarity": 38
+  },
+  "method": {
+    "basis": "Only at activeface144cap; signed normal columnsWT, defaultFullPivLU numericrank; selected sorted pivot columns, finite coefficient reconstruction residual<=1e-12, keep reducedfacebasis, appendblockedface. AlloriginalA/l/u unchanged.",
+    "not_exact": "Numericspanning is not exact rank, redundancy of affine bounds, permanent constraint deletion, or originalQP equivalence theorem.",
+    "nonblocking": "Only rows previously removed by basis compression; actual finite A*(x+direction) endpoint must satisfy same1e-12 bound allowance. Otherwise usual blocking search. Mask never removes originalA/l/u.",
+    "allrows": "Each actualfraction step recomputes fullA*x finite and violation<=1e-12; final fullrow feasibility and Hx+g+A^Tdual<=1e-10 remain.",
+    "convex_endpoint_scope": "For exact affine rows, two tolerance-feasible endpoints imply tolerance-feasible segment; this does not certify exact bounds/IEEE interpolation. Explicit fullfraction recheck is still necessary.",
+    "caps": "n<=144,m<=20000,faces<=144,512iterations,10s includingfinalscan,1024nonblocking diagnostics; default LU threshold and originalKKT residual1e-10 unchanged."
+  },
+  "producer_outcomes": "Old47Eigen exact replay145events/144faces/primalbits equal, workingrank139/K283of288. Basisv1/zero-step diagnostics fail512. V2 records187complete events,4basisrepairs/346nonblocking, original14756SI/literal200+400/conservativeinnerC checks PASS. Reviewer did not rerun optimizer or compile.",
+  "provenance_gap": {
+    "driver_pins_before_after": 4,
+    "additional_inputs_used_without_pure_time_hash_guard": [
+      "inline_qp.bin",
+      "observation_before.bin"
+    ],
+    "current_Mac_sealed47_identity_checked": true,
+    "cannot_backfill_pure_time_identity": true,
+    "action_for_structuredfuture": "Include every actually-read input in bounded before/after hash roster. Old packets remain unchanged; this limits exact-data binding of pure originalSI/literal logs, not proof of actual wrong data/nativebug."
+  },
+  "planned_integration_budget_not_audited": {
+    "beforeallocation_slots": 500000,
+    "upper": 491264,
+    "status": "Plan only, newBasisEvent/nonblocking codec and structured counters not available; no allocation/storage proof here."
+  },
+  "scope_limits": [
+    "No new native/Model/SDK/Scene/FK/compiler/SSH/optimizer calls; source/log arithmetic only.",
+    "Float rank/span and endpoint checks do not establish exact feasible-set equivalence, exactSPD/optimality or physical safety.",
+    "Old failures retained, no threshold/face/iteration/wall relaxation.",
+    "New pure controls are not nativeSOLVED candidates; originalSI/strict400/genuineB/privateC/physicalstop mandatory.",
+    "Conservative Cinner recovery is not exact originalctrlrange recovery.",
+    "Source integration and finalstructured codec/budget review deferred; no actual48/native permission or stop/Phase5 acceptance."
+  ],
+  "input_pins": {
+    "/private/tmp/stop47_face_cap_saved48analysis_v1_20261011/READY.json": {
+      "bytes": 1936,
+      "sha256": "70bb0d4867641fe26b049f8117133ce40f71a906bd595b213843f0cd9bffba04"
+    },
+    "/private/tmp/stop47_face_cap_saved48analysis_v1_20261011/DERIVED_OUTPUT_LEDGER.json": {
+      "bytes": 797,
+      "sha256": "20e310d84f481a40f175b24742377d58bdb81ab8cfaa11e25722a393d1bf3d29"
+    },
+    "/private/tmp/stop47_face_cap_saved48analysis_v1_20261011/DERIVED_OUTPUT_LOCK": {
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    "/private/tmp/stop47_face_cap_saved48analysis_v1_20261011/DISPATCH.stderr": {
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    "/private/tmp/stop47_face_cap_saved48analysis_v1_20261011/DISPATCH.stdout": {
+      "bytes": 15758,
+      "sha256": "35cb67b9bd632238df91cd5c8cec1406ea8b2e8c3552d5d3873746005cd59411"
+    },
+    "/private/tmp/stop47_face_cap_saved48analysis_v1_20261011/DRIVER.py": {
+      "bytes": 2802,
+      "sha256": "1395c5f2a5a9d40e974cef213ea51ca22a5ec3f75eaf2a1cf043656e62cc4f5b"
+    },
+    "/private/tmp/stop47_face_cap_saved48analysis_v1_20261011/SUMMARY.json": {
+      "bytes": 960,
+      "sha256": "ad44f97592f3c171883213a06af7b728029ead9879e87c14edaf88885d9ce54b"
+    },
+    "/private/tmp/stop47_face_cap_saved48analysis_v1_20261011/bounded_bytes.py": {
+      "bytes": 1620,
+      "sha256": "01a1aa86c2a065fbe52ef6d27ff122d5be3a800adedf3581c3bed90b34617631"
+    },
+    "/private/tmp/stop47_face_cap_saved48analysis_v1_20261011/current_numeric_guess_diagnostic48.hpp": {
+      "bytes": 7892,
+      "sha256": "64eadc6631c54c27668c86d420fe31e5adfc414ec7c84473a1502e2ee13d0eb4"
+    },
+    "/private/tmp/stop47_face_cap_saved48analysis_v1_20261011/saved47_face_diagnostic.cpp": {
+      "bytes": 3001,
+      "sha256": "d8c00d0b924147317a10959111d534a388f05ace586f9f220cd32e4ec82d075f"
+    },
+    "/private/tmp/stop47_face_basis_saved48pure_v1_20261011/READY.json": {
+      "bytes": 2085,
+      "sha256": "f4c5131c3d42623df15e86e350d3f2a5ccb9d33227ee62d860b89324fce32a44"
+    },
+    "/private/tmp/stop47_face_basis_saved48pure_v1_20261011/DERIVED_OUTPUT_LEDGER.json": {
+      "bytes": 797,
+      "sha256": "4d2d960faa79478203a6a7e17a10da92f5e5b24cb412887a4795e5336e684134"
+    },
+    "/private/tmp/stop47_face_basis_saved48pure_v1_20261011/DERIVED_OUTPUT_LOCK": {
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    "/private/tmp/stop47_face_basis_saved48pure_v1_20261011/DISPATCH.stderr": {
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    "/private/tmp/stop47_face_basis_saved48pure_v1_20261011/DISPATCH.stdout": {
+      "bytes": 21704,
+      "sha256": "08fb87da8cd922cb4f95e121a99c0014d8d600370047e455eea56b7e52dd9817"
+    },
+    "/private/tmp/stop47_face_basis_saved48pure_v1_20261011/DRIVER.py": {
+      "bytes": 2813,
+      "sha256": "c4ba584bf172b57e6da555a90df6bad711d7349df34c69865a318047fa35732d"
+    },
+    "/private/tmp/stop47_face_basis_saved48pure_v1_20261011/SCOPE.json": {
+      "bytes": 570,
+      "sha256": "650a073a2228d3ec38e637e0bcb4cfc50afcac447ec38cb4c30cd2c6720dbbae"
+    },
+    "/private/tmp/stop47_face_basis_saved48pure_v1_20261011/SUMMARY.json": {
+      "bytes": 970,
+      "sha256": "7130ac99bc7ac0007de94f8199002359790eaa99ee7f9c79b49c5d9d58e14309"
+    },
+    "/private/tmp/stop47_face_basis_saved48pure_v1_20261011/bounded_bytes.py": {
+      "bytes": 1620,
+      "sha256": "01a1aa86c2a065fbe52ef6d27ff122d5be3a800adedf3581c3bed90b34617631"
+    },
+    "/private/tmp/stop47_face_basis_saved48pure_v1_20261011/current_numeric_guess_basis48.hpp": {
+      "bytes": 8833,
+      "sha256": "06565e461c7a3d825f6f8e5f45299f705745ac3b175168eac5090d9fc9baa621"
+    },
+    "/private/tmp/stop47_face_basis_saved48pure_v1_20261011/saved47_basis_full_checks.cpp": {
+      "bytes": 6573,
+      "sha256": "8ad135d8aa12f9fd0aabbdd00fcf2e4b13fb9b9148e4d500298a161619d9cc91"
+    },
+    "/private/tmp/stop47_face_basis_zero_step_saved48diagnostic_v1_20261011/READY.json": {
+      "bytes": 2095,
+      "sha256": "8b6b7368fa2a94d6cc3c9e17851d3d3d035c148e9092257191ef6168fc9cb479"
+    },
+    "/private/tmp/stop47_face_basis_zero_step_saved48diagnostic_v1_20261011/DERIVED_OUTPUT_LEDGER.json": {
+      "bytes": 797,
+      "sha256": "13e0cd2d7c91e0a26373e05e3f67a3fba1883321be5ac81ba1fa869c9a345dda"
+    },
+    "/private/tmp/stop47_face_basis_zero_step_saved48diagnostic_v1_20261011/DERIVED_OUTPUT_LOCK": {
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    "/private/tmp/stop47_face_basis_zero_step_saved48diagnostic_v1_20261011/DISPATCH.stderr": {
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    "/private/tmp/stop47_face_basis_zero_step_saved48diagnostic_v1_20261011/DISPATCH.stdout": {
+      "bytes": 79601,
+      "sha256": "e40809dc3e432503bb9dbb0644e238f1727d1d5ffa8ac7eb4f8f589bb7f94daa"
+    },
+    "/private/tmp/stop47_face_basis_zero_step_saved48diagnostic_v1_20261011/DRIVER.py": {
+      "bytes": 2828,
+      "sha256": "477665e5c5335a514e53eb0ef67f34c87ac18f604e443ae57baa90b47766510b"
+    },
+    "/private/tmp/stop47_face_basis_zero_step_saved48diagnostic_v1_20261011/SCOPE.json": {
+      "bytes": 112,
+      "sha256": "1481f46df285ff7eac1887485ff954cbcc14995fbc45323e55a990e7f2b5addb"
+    },
+    "/private/tmp/stop47_face_basis_zero_step_saved48diagnostic_v1_20261011/SUMMARY.json": {
+      "bytes": 970,
+      "sha256": "7130ac99bc7ac0007de94f8199002359790eaa99ee7f9c79b49c5d9d58e14309"
+    },
+    "/private/tmp/stop47_face_basis_zero_step_saved48diagnostic_v1_20261011/bounded_bytes.py": {
+      "bytes": 1620,
+      "sha256": "01a1aa86c2a065fbe52ef6d27ff122d5be3a800adedf3581c3bed90b34617631"
+    },
+    "/private/tmp/stop47_face_basis_zero_step_saved48diagnostic_v1_20261011/current_numeric_guess_basis48.hpp": {
+      "bytes": 9266,
+      "sha256": "be4da89b20af4761ec18945e89f07454f7eb5f6fe5d53152cc43e5a7dd5e6c9c"
+    },
+    "/private/tmp/stop47_face_basis_zero_step_saved48diagnostic_v1_20261011/saved47_basis_full_checks.cpp": {
+      "bytes": 6573,
+      "sha256": "8ad135d8aa12f9fd0aabbdd00fcf2e4b13fb9b9148e4d500298a161619d9cc91"
+    },
+    "/private/tmp/stop47_face_basis_saved48pure_v2_20261011/READY.json": {
+      "bytes": 2086,
+      "sha256": "b7abcc3ab4d1f46dedbff9ef61f2536622eedc25a1e41ad8a12eb9e497e2ce3e"
+    },
+    "/private/tmp/stop47_face_basis_saved48pure_v2_20261011/DERIVED_OUTPUT_LEDGER.json": {
+      "bytes": 797,
+      "sha256": "566239680840b941a9142959421bbe3146e83d7bb06c6fc25d31b771aa6c434e"
+    },
+    "/private/tmp/stop47_face_basis_saved48pure_v2_20261011/DERIVED_OUTPUT_LOCK": {
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    "/private/tmp/stop47_face_basis_saved48pure_v2_20261011/DISPATCH.stderr": {
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    "/private/tmp/stop47_face_basis_saved48pure_v2_20261011/DISPATCH.stdout": {
+      "bytes": 78047,
+      "sha256": "19d9c2b8be82f5a83cfa134e56ee167e48743c1c86a4fb09c936fc792f8142f5"
+    },
+    "/private/tmp/stop47_face_basis_saved48pure_v2_20261011/DRIVER.py": {
+      "bytes": 2814,
+      "sha256": "21c918d2151f7e1166397fd4c8fdc729a647b30fdac5454f9fc3e460e522bca0"
+    },
+    "/private/tmp/stop47_face_basis_saved48pure_v2_20261011/SCOPE.json": {
+      "bytes": 840,
+      "sha256": "f4889083937e1cf13da0353f57632b35e48d5fc5612110fdffadd0c841fb0bd6"
+    },
+    "/private/tmp/stop47_face_basis_saved48pure_v2_20261011/SUMMARY.json": {
+      "bytes": 970,
+      "sha256": "a9f1d30fabf429609bdf276ad0ab2200d125118842571538dac28851fce40e63"
+    },
+    "/private/tmp/stop47_face_basis_saved48pure_v2_20261011/bounded_bytes.py": {
+      "bytes": 1620,
+      "sha256": "01a1aa86c2a065fbe52ef6d27ff122d5be3a800adedf3581c3bed90b34617631"
+    },
+    "/private/tmp/stop47_face_basis_saved48pure_v2_20261011/current_numeric_guess_basis48.hpp": {
+      "bytes": 9771,
+      "sha256": "cfbdd5df3685777709b35c1d4bd1e4924a0ca7262e8b030adc8650300cc57904"
+    },
+    "/private/tmp/stop47_face_basis_saved48pure_v2_20261011/saved47_basis_full_checks.cpp": {
+      "bytes": 6573,
+      "sha256": "8ad135d8aa12f9fd0aabbdd00fcf2e4b13fb9b9148e4d500298a161619d9cc91"
+    },
+    "/private/tmp/phase5_controlled_stop_feasible_seed_actual_checkpoint_v1_20261011/actual-dell/session-controlled-stop-feasible-seed-active32-brake64-dwell25-v3-20261011-attempt47/run-attempt1/artifacts/cycle-36/trial-0/qp_equality_reduction.bin": {
+      "bytes": 19945468,
+      "sha256": "5822aa07c81a510a1a1f1d0e622ef76493e2fb739a84f07c878d52031c3d858a"
+    },
+    "/private/tmp/phase5_controlled_stop_feasible_seed_actual_checkpoint_v1_20261011/actual-dell/session-controlled-stop-feasible-seed-active32-brake64-dwell25-v3-20261011-attempt47/run-attempt1/artifacts/cycle-36/trial-0/current_numeric_hint.bin": {
+      "bytes": 70861,
+      "sha256": "af5a76500dd6d99bf88c603847ff1e28372da22b414cff559ceee293336e7d7a"
+    },
+    "/private/tmp/phase5_controlled_stop_feasible_seed_actual_checkpoint_v1_20261011/actual-dell/session-controlled-stop-feasible-seed-active32-brake64-dwell25-v3-20261011-attempt47/run-attempt1/artifacts/cycle-36/trial-0/numeric_feasible_initializer.bin": {
+      "bytes": 237492,
+      "sha256": "47b58cc729287b63d37b99a7f396a6d60ba2ae45c132e4132da87083404b4a92"
+    },
+    "/private/tmp/phase5_controlled_stop_feasible_seed_actual_checkpoint_v1_20261011/actual-dell/session-controlled-stop-feasible-seed-active32-brake64-dwell25-v3-20261011-attempt47/run-attempt1/artifacts/cycle-36/trial-0/candidate.bin": {
+      "bytes": 469,
+      "sha256": "7443a74266b2fab73882c6fca94f08b80cbe910990877967babd123a3ae76636"
+    },
+    "/private/tmp/phase5_controlled_stop_feasible_seed_actual_checkpoint_v1_20261011/actual-dell/session-controlled-stop-feasible-seed-active32-brake64-dwell25-v3-20261011-attempt47/run-attempt1/artifacts/cycle-36/trial-0/inline_qp.bin": {
+      "bytes": 21932720,
+      "sha256": "dcee5d377032ebb15b67521f8dad0a910db6687f8c19ef409065dcbe5782c27f"
+    },
+    "/private/tmp/phase5_controlled_stop_feasible_seed_actual_checkpoint_v1_20261011/actual-dell/session-controlled-stop-feasible-seed-active32-brake64-dwell25-v3-20261011-attempt47/run-attempt1/artifacts/cycle-36/trial-0/observation_before.bin": {
+      "bytes": 2713,
+      "sha256": "b8151b5261d00577dbf915bf74779bf0a13f5cc95daba48c897d4fe5c63ab735"
+    }
+  },
+  "source_sha256": "5561b8beac8e5042359c5890c83b43acd82bb5b0af1c06b5a63b5b8f9e3e8d74"
+}

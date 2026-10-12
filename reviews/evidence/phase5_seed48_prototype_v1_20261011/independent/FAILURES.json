@@ -1,0 +1,16 @@
+{
+  "old47_face_cap": "Replayed145events/144faces; original47 actualfailure unchanged.",
+  "basis_v1": "Pureiteration512 refusal, repeated numericalzero-step basis cycling.",
+  "zero_step_diagnostic": "Pureiteration512 refusal; removed-floor endpoint violation~1.04e-17 below existing1e-12, no wholepolytope infeasibility proof.",
+  "adapter_failures": [],
+  "provenance_gap": {
+    "driver_pins_before_after": 4,
+    "additional_inputs_used_without_pure_time_hash_guard": [
+      "inline_qp.bin",
+      "observation_before.bin"
+    ],
+    "current_Mac_sealed47_identity_checked": true,
+    "cannot_backfill_pure_time_identity": true,
+    "action_for_structuredfuture": "Include every actually-read input in bounded before/after hash roster. Old packets remain unchanged; this limits exact-data binding of pure originalSI/literal logs, not proof of actual wrong data/nativebug."
+  }
+}

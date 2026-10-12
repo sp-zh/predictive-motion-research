@@ -68,6 +68,10 @@ This image depicts the integrated scene; it is not a predictive-control result.
 
 ## Simulation and diagnostic figures
 
+![Saved-case numerical hint outcomes and retained failures](../figures/phase5_seed48_prototype_v1_20261011/saved_hint_outcomes.png)
+
+Exact producer status counts for the old-source replay, failed first basis prototype, failed zero-step diagnosis and completed second pure prototype on saved attempt47 inputs. This figure does not show an actual48 run or accepted control; input binding limits and both failures remain visible. [Provenance](../figures/phase5_seed48_prototype_v1_20261011/PROVENANCE.json), [narrow review/storage](../reviews/evidence/phase5_seed48_prototype_v1_20261011/README.md).
+
 ![Attempt47 actual prefix and eight failed stop observations](../figures/phase5_controlled_stop_face_failure_v1_20261011/stop47_actual_diagnostic.png)
 
 ![72 actual recorded TCP poses from attempt47](../figures/phase5_controlled_stop_face_failure_v1_20261011/stop47_actual_tcp_prefix.png)

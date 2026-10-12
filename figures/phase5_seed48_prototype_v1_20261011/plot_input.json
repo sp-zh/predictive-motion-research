@@ -1,0 +1,30 @@
+{
+  "review_READY_sha256": "a9b96e4d5dfcbeff7fb74d9712bb4ce79b50e7c8289e8f4c1832e4f27349e150",
+  "rows": [
+    {
+      "case": 0,
+      "events": 145,
+      "pure_hint_complete": false,
+      "status_line": "EXACT_REPLAY_FAILED47 faces=144 events=145 error=current active face cap before append primal_bitwise=1 noModel_noNativeOSQP_noTask=1"
+    },
+    {
+      "case": 1,
+      "events": 512,
+      "pure_hint_complete": false,
+      "status_line": "NEW_HINT complete=0 events=512 error=current numeric iteration cap512"
+    },
+    {
+      "case": 2,
+      "events": 512,
+      "pure_hint_complete": false,
+      "status_line": "NEW_HINT complete=0 events=512 error=current numeric iteration cap512"
+    },
+    {
+      "case": 3,
+      "events": 187,
+      "pure_hint_complete": true,
+      "status_line": "NEW_HINT complete=1 events=187 error="
+    }
+  ],
+  "scope": "Producer logs from saved47 current36/trial0 numerical prototypes; no actual48/Model/nativeOSQP/physical steps. Pure-time hashes cover4 of6 read inputs; provenance gap retained."
+}
