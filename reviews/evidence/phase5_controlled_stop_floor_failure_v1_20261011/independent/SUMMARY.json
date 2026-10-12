@@ -1,0 +1,294 @@
+{
+  "schema": "ROOT_CONTROLLED_STOP46_ACTUAL_SAVED_REVIEW_V1",
+  "verdict": "PASS_RECORDED_FILE_ALGEBRA_AND_RETAINED_START_FAILURE; STOP_FAILED",
+  "packet": {
+    "ready_sha256": "9c189604bcdff12051b5a56343319f4ac323bb0bcd0baebe3189f90611767047",
+    "payloads": 2481,
+    "bytes": 4230463239,
+    "source_files": 52,
+    "verifier_sha256": "c5bfb227f36e82987c4c5ee56e9a693c0df2bc963c63f49f10e1243138206844",
+    "actual_summary_path": "/private/tmp/phase5_controlled_stop_all264_actual_checkpoint_v1_20261011/derived/FUNCTIONAL_COMPLETION_SUMMARY46.json",
+    "actual_summary_sha256": "70442814aa60f47dc272b0acf05209be17b9bf2d439e1eda075a455488d6dc93",
+    "external_transport_excluded": {
+      "schema": "STOP46_EXTERNAL_TRANSPORT_VERIFIED_V1",
+      "archive_external_path": "/private/tmp/phase5_stop46_transport_external_v1_20261011/transport.tar.gz",
+      "archive_bytes": 1523411206,
+      "archive_sha256": "9af222c8edc0a5db24652cc3a8753778ce7ee7d65193f5619376d03e6ce36fee",
+      "member_count": 1918,
+      "native_bytes": 4111469567,
+      "aux_bytes": 3593872,
+      "all_members_verified": true,
+      "compressed_transport_D_copy_claimed": false,
+      "root_archive_selection": "underlying payload once; external compressed transport excluded"
+    },
+    "chunk_bytes": 524288,
+    "wall_s": 2.6075534590054303
+  },
+  "checks": {
+    "full_current_QPs": 74,
+    "usable_native_SOLVED": 73,
+    "no_native_final_hint_refusal": 1,
+    "original_rows_per_QP": 14756,
+    "original_SI_evaluated_candidates": 73,
+    "original_SI_values": 1077188,
+    "factors_active_stop": [
+      741,
+      909
+    ],
+    "extra_stop_w_r_factors": 168,
+    "free_reduced_columns": 144,
+    "original_extra_alpha_beta_guards": 160,
+    "new_floor_rows_per_stop_trial": 264,
+    "new_floor_trials": 7,
+    "new_floor_original_ID_label_scale_offset_and_reduced_bounds_regenerated": true,
+    "exact_trust_rows": 207200,
+    "genuine_value_forecasts": 73,
+    "genuine_value_points": 29200,
+    "literal200_half400_candidates": 73,
+    "B400_passes": 35,
+    "B_refusals": 38,
+    "coreExecutionPermission0_all74": true,
+    "private_sameowner_tokens": 35,
+    "actual_commits": 35,
+    "actual_halves": 70,
+    "all35_retained_commit_and_task_payload_copies_bitexact": true,
+    "input_pins_before_after_identical": 1719,
+    "binary_receipts": 1553,
+    "source_snapshot_files": 52
+  },
+  "actual": {
+    "active_commands": 32,
+    "brake_commands": 3,
+    "elapsed_s": 0.14,
+    "physical_steps_including_warmup": 1070,
+    "final_accepted_s_r_previous_b": [
+      0.001542385450530114,
+      0.02372944711908492,
+      0.11294975392962418
+    ],
+    "actual_TCP_translation_max_m": 0.003329711226330202,
+    "actual_TCP_SO3_max_rad": 0.0054843976588832815,
+    "originalSI_max_73_SOLVED": 1.0000680839006293e-13,
+    "acceptedB_affine_max": 8.495481268041769e-07,
+    "native_entry_wall_s": 247.377648511,
+    "driver_native_entry_wall_s_from_BUILD_FAILURE": 247.40100159100075,
+    "producer_summary_driver_wall_s_preserved": null,
+    "driver_label_scope": "compile historical runner label; argv is active native executable, not compiler",
+    "whole_completed_boundary_wall_s": {
+      "n": 35,
+      "mean": 6.644718685857143,
+      "p50": 6.268296309,
+      "p95": 9.816611196999997,
+      "p99": 11.149888382879997,
+      "max": 11.476825317,
+      "4ms_misses": 35
+    },
+    "failed_boundary_whole": {
+      "cycle": 35,
+      "trials": 1,
+      "physical_success": 0,
+      "wall": 2.345944168,
+      "missed": 1,
+      "last_error": "",
+      "fatal": "current-matrix start infeasible; retained refusal, no projection",
+      "ledger": [
+        74,
+        147,
+        70,
+        35
+      ]
+    },
+    "termination_session_and_sim_pass": true,
+    "final_ledger_commits_forecastreservations_steps_oldslots_separateslots": [
+      35,
+      147,
+      70,
+      324869356,
+      665038026
+    ]
+  },
+  "failure": {
+    "boundary": 35,
+    "trial": 0,
+    "reason": "current-matrix start infeasible; retained refusal, no projection",
+    "shape": [
+      7362,
+      144
+    ],
+    "worst_scaled_row": 7361,
+    "internal_floor_sample": 263,
+    "mapped_original_SI_row": -1,
+    "original_semantic_row": 2945,
+    "original_label_units": [
+      "progress/r/half/263",
+      "1/s"
+    ],
+    "numpy_seed_deficit": 3.571073645125544e-11,
+    "exact_stored_IEEE_row_deficit": {
+      "numerator": "2966731993073386971517995",
+      "denominator": "83076749736557242056487941267521536",
+      "approx": 3.571073739019788e-11
+    },
+    "unchanged_initial_primal_acceptance": 1e-12,
+    "whole_polytope_feasibility": "UNKNOWN",
+    "native_wrapper_OSQP_Request_Value_B_C_ENTERED": false,
+    "original_SI_candidate_scan_result": null,
+    "current35_equals_after_C34_and_cleanup_bitwise": true
+  },
+  "stop_monitor": {
+    "actual_points": 6,
+    "passed": false,
+    "structural_failed": false,
+    "consecutive": 0,
+    "required": 50,
+    "records": [
+      {
+        "actual_half": 1065,
+        "time": 2.129999999999987,
+        "cycle": 32,
+        "half": 1,
+        "maxima": {
+          "v": 0.0004819041120100884,
+          "a": 0.012109483955864697,
+          "w": 0.002527014006838596,
+          "alpha": 0.03526596593634082
+        },
+        "s": 0.0013111383870357486,
+        "r": 0.02243998157978696,
+        "b": 0.15294175393032047,
+        "below": false,
+        "binding_and_derivatives_bitexact": true,
+        "accepted_w_alpha_after_both_halves": true
+      },
+      {
+        "actual_half": 1066,
+        "time": 2.131999999999987,
+        "cycle": 32,
+        "half": 2,
+        "maxima": {
+          "v": 0.0005005927500582489,
+          "a": 0.009811085905157883,
+          "w": 0.002527014006838596,
+          "alpha": 0.03526596593634082
+        },
+        "s": 0.0013563242337031834,
+        "r": 0.022745865087647598,
+        "b": 0.15294175393032047,
+        "below": false,
+        "binding_and_derivatives_bitexact": true,
+        "accepted_w_alpha_after_both_halves": true
+      },
+      {
+        "actual_half": 1067,
+        "time": 2.1339999999999866,
+        "cycle": 33,
+        "half": 1,
+        "maxima": {
+          "v": 0.0005261221330540257,
+          "a": 0.012764691497888371,
+          "w": 0.002663460716556416,
+          "alpha": 0.03411167742945506
+        },
+        "s": 0.001402081855386338,
+        "r": 0.023011756595507013,
+        "b": 0.1329457539297068,
+        "below": false,
+        "binding_and_derivatives_bitexact": true,
+        "accepted_w_alpha_after_both_halves": true
+      },
+      {
+        "actual_half": 1068,
+        "time": 2.1359999999999864,
+        "cycle": 33,
+        "half": 2,
+        "maxima": {
+          "v": 0.000545797527768933,
+          "a": 0.0103501116370586,
+          "w": 0.002663460716556416,
+          "alpha": 0.03411167742945506
+        },
+        "s": 0.0014483712600852113,
+        "r": 0.023277648103366425,
+        "b": 0.1329457539297068,
+        "below": false,
+        "binding_and_derivatives_bitexact": true,
+        "accepted_w_alpha_after_both_halves": true
+      },
+      {
+        "actual_half": 1069,
+        "time": 2.137999999999986,
+        "cycle": 34,
+        "half": 1,
+        "maxima": {
+          "v": 0.0005725764571232507,
+          "a": 0.01338946467715883,
+          "w": 0.0027952811263833918,
+          "alpha": 0.03295510245674392
+        },
+        "s": 0.0014951524557998033,
+        "r": 0.023503547611225674,
+        "b": 0.11294975392962418,
+        "below": false,
+        "binding_and_derivatives_bitexact": true,
+        "accepted_w_alpha_after_both_halves": true
+      },
+      {
+        "actual_half": 1070,
+        "time": 2.139999999999986,
+        "cycle": 34,
+        "half": 2,
+        "maxima": {
+          "v": 0.00059318676007492,
+          "a": 0.010872508417569478,
+          "w": 0.0027952811263833918,
+          "alpha": 0.03295510245674392
+        },
+        "s": 0.001542385450530114,
+        "r": 0.02372944711908492,
+        "b": 0.11294975392962418,
+        "below": false,
+        "binding_and_derivatives_bitexact": true,
+        "accepted_w_alpha_after_both_halves": true
+      }
+    ],
+    "zero_recorded_drift_scope": "No below-threshold anchor; default zeros are not successful drift measurements.",
+    "acceptedw_alpha_b": "After both actual halves, distinct from instantaneous physicalv/a and pointlogicals/r."
+  },
+  "warmup": {
+    "points": 1000,
+    "journal_rows": 3000,
+    "initial_MT19937_seed91011_match": true,
+    "max_abs_v": 0.029928739008387738,
+    "max_abs_acc": 6.6436306091723925,
+    "max_available_abs_jerk": 1357.6628167075585,
+    "first_jerk_unavailable": true,
+    "frame_max": 1.793440987239997e-15,
+    "endhold_gate": true,
+    "recorded_pose_errors_not_independent_FK": [
+      0.0032157093225693213,
+      0.005484296217470531
+    ],
+    "whole_warmup_derivative_acceptance": false
+  },
+  "rank_diagnostics": {
+    "recorded_events": 2,
+    "source_default_rank_threshold_unchanged": true,
+    "per_event_K_RHS_solution_not_serialized": true,
+    "independent_KKT_event_resolve": false,
+    "endpoint_stationarity_complementarity_and_floatLLT_checked": true,
+    "exact_SPD_certificate": false
+  },
+  "scope_limits": [
+    "Saved source/data/NumPy/Fraction only; no new SDK/Model/Scene/FK/native/compiler/optimizer/SSH.",
+    "New1e-9 floor is stop-only planning assistance over indices0..263. Other136 original halves and full literal400/B/C gates are preserved. No exact positive IEEEfloor/solver-tolerance/stop certificate.",
+    "The biased1e-13 terminal planning RHS is explicit, not exact original E0 equality equivalence.",
+    "Final seed failure does not prove whole-polytope infeasibility. Absent usableU/fullSIscan must not become default0/pass.",
+    "Exact stored-row dyadic arithmetic differs from NumPy/Eigen accumulation; no independent native expression/solver rerun.",
+    "B failures and all later Model values retain diagnostic status; unmeasured failed geometry/sigma0 is unavailable.",
+    "Selected supports/saved geometry aggregates checked; no fullprimitive-witness recomputation, no unsupported branch causal attribution.",
+    "Fine scopes are nested/provider-only, gradient1of256 resets each trial, denominator74; whole boundary spans all rejected trials, not only last. No decomposition or benchmark.",
+    "Global1.024B original ledger not reset, separate1.8B finite caps remain; stop trial reserves250K before new264 arrays plus retainedcopy cap. Fixedshape cleanup floor is not arbitrary failure/power-loss guarantee.",
+    "100ms stop criteria are prospective component scope, not formal exactrest/fulltask acceptance. Warmup derivative maxima exceed task bounds and are retained.",
+    "No physicalstop/fulltask/realtime/hardware/Phase5 acceptance; Phase6 not started. New47 or later work outside scope."
+  ]
+}

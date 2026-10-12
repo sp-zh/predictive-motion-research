@@ -1,0 +1,37 @@
+{
+  "schema": "STOP47_INITIALIZER_SOURCE_REVIEW_READY_V3",
+  "scope": "SOURCE_ONLY_NO_EXECUTION",
+  "source_manifest_sha256": "e0fef85269c2fd2f1617ff19f6c960379c901c37cffe44286c407f9644f25c4b",
+  "source_files_verified": 54,
+  "files": [
+    {
+      "path": "RESULT.json",
+      "bytes": 2394,
+      "sha256": "c6468f2950bb933dbf64ad6daaafc517ae80248976eb066f2c9fbffbf9ef168f"
+    },
+    {
+      "path": "REVIEW.md",
+      "bytes": 1905,
+      "sha256": "fb9e51c55f5ef8e43a8a6fd198c07a1562fd05e65ef0ad743f7ca9e39be9f716"
+    },
+    {
+      "path": "SHARED_DERIVED_BUDGET_SNAPSHOT.json",
+      "bytes": 291,
+      "sha256": "36e920c2b7efa79f1920056241977260b47887fc3d29b6294fc6f3c471cd6209"
+    },
+    {
+      "path": "V2_REVIEW_REFUSAL_BEFORE_NATIVE.json",
+      "bytes": 291,
+      "sha256": "415bdd5d46cfae1131b96d62e0e0562b5d7c8f2275cd146eaa770d093491cd88"
+    },
+    {
+      "path": "V3_SOURCE_PREPARATION.json",
+      "bytes": 9781,
+      "sha256": "2b76f91d77a25af45180c2d108a24b85c2052361332b2fa6c586d460d0d4e017"
+    }
+  ],
+  "payload_bytes": 14662,
+  "shared_budget": "Root cumulative3GiB prewrite via /private/tmp/root_shared_derived_budget_stop45.py; no reset/refund",
+  "phase5": "NOT_ACCEPTED",
+  "phase6": "NOT_STARTED"
+}

@@ -1,0 +1,33 @@
+{
+  "schema": "ROOT_STOP47_SOURCE_INTEGRATION_READY_V1",
+  "files": [
+    {
+      "path": "COORDINATION_RECOVERY_COMPACTION_FAILURE.json",
+      "bytes": 368,
+      "sha256": "b75e42eb25485be730e10fc80391fc7a94baf848c6a2f5bf87c89f54b09bc029"
+    },
+    {
+      "path": "COORDINATION_SYSTEM_ERROR_HISTORY.json",
+      "bytes": 510,
+      "sha256": "e61631fa477c6ad6164c6f92eb41880253d8a98054f36e35a34fa97d6a46f001"
+    },
+    {
+      "path": "RESULT.json",
+      "bytes": 1455,
+      "sha256": "6222b73f6dbb5e90d03976b5b3bd5336c2d7174038a73c253907ff8927113889"
+    },
+    {
+      "path": "REVIEW_SOURCE.py",
+      "bytes": 5540,
+      "sha256": "0810be35b86808fe580a8af680eb2635f967a9779c2e71fbaf141dec8381ceca"
+    },
+    {
+      "path": "SHARED_BUDGET_SNAPSHOT.json",
+      "bytes": 291,
+      "sha256": "33951e4f6716cf0733f89885805097423e8246d2d41d1b1f55d1c4e48ca14e61"
+    }
+  ],
+  "payloads": 5,
+  "payload_bytes": 8164,
+  "scope": "Read-only source/profile/producer-pure-log checks completed after actual47 entered. Does not backdate a preentry review or grant phase acceptance. No compile/Model/OSQP/native/physical task invoked by Root."
+}

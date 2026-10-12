@@ -1,0 +1,7 @@
+# Saved-current numerical initializer preparation
+
+These separately sealed supplements retain the V1 failed ray, V2 pure success and source-review refusal, V3 zero-initialized diagnostics with an explicit valid-prefix count, and narrow helper/source/profile reviews. The pure saved-current46 point uses the existing 1e-12 starting-guess criterion and bounded epsilon <=1e-6 with at most three full augmented-row checks. Producer hint, original SI and literal histories are pure tests. They do not establish a general feasible initializer, whole-polytope feasibility, recovered exact C bounds or successful actual stop.
+
+Both supplementary archives received full SHA/size/member readback on Mac and independently copied Dell D storage. They leave the main attempt46 archive untouched. V3 fixes a refusal-path uninitialized diagnostic suffix before any actual47 native entry; V2 source never entered its native run. Root's final source integration review completed after actual47 entry and explicitly records its time; the already sealed Dell source/profile and Root helper reviews are preserved separately. Coordinator system/compaction errors remain historical evidence. Actual47 outcomes await their separate full evidence integration and are outside this checkpoint.
+
+Source/helper changes affect the numerical starting seed before the current hint and native solver; original Model nominal, actual state, returned candidate, full SI, strict histories, B and private C checks remain required. Phase5 NOT_ACCEPTED; Phase6 NOT_STARTED.

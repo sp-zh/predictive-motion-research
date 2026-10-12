@@ -1,0 +1,35 @@
+{
+  "schema": "STOP47_INITIALIZER_INDEPENDENT_SOURCE_REVIEW_V3",
+  "scope": "SOURCE_ONLY_NO_EXECUTION",
+  "reviewer_Model_OSQP_MuJoCo_controller_calls": 0,
+  "reviewer_compile_or_pure_test_runs": 0,
+  "conclusion": "No remaining concrete source execution blocker in reviewed v3 delta; not actual stop result or phase acceptance.",
+  "v2_disposition": "Refused before native: partially filled uninitialized row_direction_bounds was returned and serialized as a full diagnostic matrix. Original v2 source/build/link and REVIEW_REFUSAL_BEFORE_NATIVE.json preserved.",
+  "v3_fix": {
+    "matrix": "Eigen::MatrixXd::Zero(A.rows(),4)",
+    "availability": "row_bounds_written increments after each fully filled row; core retains count; writer serializes u64 count before matrix; unavailable suffix remains zero placeholders.",
+    "regression_source": "Flat second-row refusal expects count1 of2 rows, allFinite, second row exact Zero. Inspected source, not independently executed.",
+    "budget": "stop-only precharge250000 before initializer outputs/copies; Zero initialization adds no matrix/prefix copy; +64 retained scalar slack includes count; existing4M retained cap unchanged.",
+    "seed_authority": "Data-only new startingguess before original currenthint/native; same all-row1e-12 allowance, epsilon<=1e-6, max3 attempts; no state/history/nominal/candidate change.",
+    "gates": "Original nativeSOLVED/full14756SI/strict200/400/genuineB/privateC retained; Model/runtime/candidate checks/currenthint/stop monitor/Ledger byte-identical to v2."
+  },
+  "v3_source_manifest_sha256": "e0fef85269c2fd2f1617ff19f6c960379c901c37cffe44286c407f9644f25c4b",
+  "verified_source_files": 54,
+  "verified_source_hash_mismatches": [],
+  "unchanged_checked_files": [
+    "model_boundary.cpp",
+    "runtime_observer.cpp",
+    "candidate_validation.cpp",
+    "current_numeric_guess.hpp",
+    "actual_stop_monitor.hpp",
+    "cycle_support.hpp"
+  ],
+  "codec_scope": {
+    "role": "DATA_ONLY_BOUNDED_CURRENT_MATRIX_INITIALIZER_BEFORE_NATIVE_SOLVE_V1",
+    "new_u64_before_row_matrix": true,
+    "old_v2_native_initializer_payloads_exist": false,
+    "new_decoder_requirement": "First native initializer output uses v3; decoder must read row_bounds_written and bind actual source/profile. This review does not claim the future decoder was executed."
+  },
+  "phase5": "NOT_ACCEPTED",
+  "phase6": "NOT_STARTED"
+}

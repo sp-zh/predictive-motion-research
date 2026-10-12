@@ -1,0 +1,43 @@
+{
+  "schema": "SAVED46_FAILED_START_ONLY_CURRENT_POLYTOPE_STATUS_UNKNOWN_V1",
+  "source": "current35/trial0 retained fullQP/reduction + actualsource seed expression",
+  "saved_matrix_shape": [
+    7362,
+    144
+  ],
+  "initial_seed_matches_original_nominal_seed_divided_by_scale": true,
+  "failed_start_worst_scaled_row": 7361,
+  "maximum_initial_scaled_violation_numpy": 3.571073645125544e-11,
+  "violations_above_unchanged_hint_1e_12": [
+    {
+      "scaled_solver_row": 7361,
+      "mapped_original_SI_row": -1,
+      "new_floor_sample": 263,
+      "lower": -0.02372944611908492,
+      "A_times_original_seed": -0.023729446154795657,
+      "upper": 0.1762705528809151,
+      "scaled_violation_numpy": 3.571073645125544e-11,
+      "positive_downscale": 1.0
+    }
+  ],
+  "native_forensics": {
+    "wrapper_attempted": 0,
+    "native_solve_attempts": 0,
+    "raw_status": 0,
+    "primal_present": 0,
+    "dual_present": 0
+  },
+  "native_wrapper_and_OSQP_NOT_ENTERED": true,
+  "full_original_SI_candidate_scan_NOT_RUN": true,
+  "full_original_SI_residual_not_zero_or_PASS": null,
+  "candidate_forward_request_B_C_NOT_ENTERED": true,
+  "whole_current_planning_polytope_feasibility": "UNKNOWN; start failure is not proof of empty polytope",
+  "no_actual_state_or_candidate_projection": true,
+  "scope": "Read-only NumPy evaluation of saved starting guess. Dot accumulation order can differ from nativeEigen; exact native expression replay separate. Original gates/tolerances unchanged.",
+  "source_input_hashes": {
+    "inline_qp.bin": "23aaafacd3cab2e98aec80aea17654fdadfeb263eb095ec187055b130baa839e",
+    "qp_equality_reduction.bin": "536a8c4b1d95c1310b09fbe3b6f3269be674e18237ade1baf174760d021a0249",
+    "current_numeric_hint.bin": "8aa9ec678b605cd2fd02c095260ebf096fb0b46501dcfa644719478dd4c9cb03",
+    "planning_progress_interior_guard.bin": "32d9ba493160dbd7ee32904867db472b17adad6885d7f01ab740f7fecfacce8b"
+  }
+}

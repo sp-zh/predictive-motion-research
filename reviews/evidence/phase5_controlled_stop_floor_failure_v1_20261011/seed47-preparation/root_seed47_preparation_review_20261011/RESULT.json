@@ -1,0 +1,241 @@
+{
+  "schema": "ROOT_SEED47_PREPARATION_REVIEW_V1",
+  "verdict": "PASS_V3_BOUNDED_NUMERIC_START_HELPER_SOURCE; NO_ACTUAL47_OR_STOP_ACCEPTANCE",
+  "packets": [
+    {
+      "version": 1,
+      "ready_sha256": "99bbb21be1920427d2a1b9aac3d2d02a390dc8440d6e393239739ea16bd0e6d1",
+      "payloads": 11,
+      "bytes": 39799
+    },
+    {
+      "version": 2,
+      "ready_sha256": "236f955fc7e22d47fd707397b0789f6dafc2f951b72c69fc8fb910e85dfd9f3a",
+      "payloads": 11,
+      "bytes": 44323
+    },
+    {
+      "version": 3,
+      "ready_sha256": "6daf7daf7bff0bffde2e419f681335371dc151fa21c431d718391879ff99643c",
+      "payloads": 10,
+      "bytes": 45533
+    }
+  ],
+  "math": {
+    "dimension_cap": "0<m<=20000,144 columns, matching l/u/nominal/scale; allfinite/positive scale/ordered bounds before numeric output allocation.",
+    "direction": "d[8k+7]=1/D[8k+7] for18free progress controls, others0; after scaling this shifts free b byepsilon. p/Z reconstructed dependentcontrols can also change; not an actualstate or nominalModel change.",
+    "return_same": "If full original scaled A*nominal bound violation<=1e-12, returns exact copied nominal, complete=true,changed=false,epsilon0.",
+    "ray": "Intersectepsilon in[0,1e-6] with (l-1e-12-base)/travel and(u+1e-12-base)/travel; negative travel swaps endpoints, flat row must itself pass1e-12.",
+    "tries": "At most3 declared interior choices; positivefinite doubleepsilon<=1e-6, then fullA*trialseed finite and same1e-12 bound recheck. Return first passing guess, refuse otherwise. No clipping/projection of returned nativecandidate.",
+    "v1": "Strict exact-bound ray empty is only failure of this one chosen ray, not entire polytope.",
+    "v2": "Uses unchanged start allowance in both intervals and final checks, not relaxed final native/SI/literal/B/C policy. Longdouble intervals are proposal diagnostics, not directed-rounding/exactpolytope certificate.",
+    "v3_prefix": "Zero initialization+row_bounds_written; rows beyond completed prefix are unavailable zeros, not valid row diagnostics. Fixes v2 indeterminate suffix on midloop refusal."
+  },
+  "source_line_refs_v3": {
+    "shapes": 14,
+    "return_same": 15,
+    "reciprocal": 16,
+    "finite_reciprocal": 16,
+    "diagnostic_zero": 16,
+    "interval_allowance": 19,
+    "prefix": 19,
+    "bounded_choices": 21,
+    "full_recheck": 22
+  },
+  "producer_saved46_evidence": {
+    "old_nativeEigen_seed_bits_refusal_reproduced": true,
+    "old_nativeEigen_worst_row": 7361,
+    "old_nativeEigen_deficit": 3.571073645125544e-11,
+    "starting_guess_feasibility_allowance": 1e-12,
+    "initializer_epsilon": 1.0065740031158832e-08,
+    "initializer_final_all_augmented_rows_violation": 1.3257190484283754e-14,
+    "new_hint_events": 161,
+    "new_hint_original14756SI_residual": 1.0000333894311098e-13,
+    "literal200_and400_progress_pass": true,
+    "minimum_half_r": 1.0001416275031874e-13,
+    "command_C_range_check": "Conservative outward interval recovery from originalfirstC row under nearest rounding; tightened interval used, not claimed exactbounds recovery."
+  },
+  "evidence_scope": "Producer recorded Eigen/g++ pure replay/optimizer on saved46 arrays; reviewer checks immutable source/logs/metrics and input SHA, never compiles, runs optimizer or Model. This is not independent numeric replay/nativeOSQP output.",
+  "test_coverage": "feasible unchanged;progress-only direction;flat infeasible;capped/negative ray;inverted bounds;nonpositive/nonfinite/tiny scale reciprocal overflow;NaN;wrong shape/rowcap;v3 finite zero incomplete suffix prefix1of2. Logs4stages0 forv3, not reviewer execution.",
+  "scope_limits": [
+    "Pure hint output not nativeSOLVED candidate; original fullSI/literal200/400/genuineB/privateC/physicalstop remain mandatory.",
+    "Saved C bounds are conservative outward interval recovery from firstC row, not exact underlying ctrlrange recovery.",
+    "Minimum half r of pure hint is producer recordedIEEE value; no generic IEEEfloor/rest/wholepolytope guarantee.",
+    "Helper catches standard exceptions; no arbitrary resource-failure/fault-injection/no-throw guarantee. Partial fields and error must not be treated as usablecomplete result.",
+    "Actual54-source integration/profile/fullresources not reviewed here; readiness metadata only pinned. Actual47 notstarted scope. Old46archive untouched, no prospective48 expansion."
+  ],
+  "input_pins": {
+    "/private/tmp/stop47_feasible_start_pure_v1_20261011/READY.json": {
+      "bytes": 1891,
+      "sha256": "99bbb21be1920427d2a1b9aac3d2d02a390dc8440d6e393239739ea16bd0e6d1"
+    },
+    "/private/tmp/stop47_feasible_start_pure_v1_20261011/DERIVED_OUTPUT_LEDGER.json": {
+      "bytes": 804,
+      "sha256": "c26d8150c260dd1f9fe8a161074d60724f512ff2e3b2cc61434f386e8fb63b17"
+    },
+    "/private/tmp/stop47_feasible_start_pure_v1_20261011/DERIVED_OUTPUT_LOCK": {
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    "/private/tmp/stop47_feasible_start_pure_v1_20261011/DISPATCH.stderr": {
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    "/private/tmp/stop47_feasible_start_pure_v1_20261011/DISPATCH.stdout": {
+      "bytes": 18220,
+      "sha256": "f13cf0af0a7fb3ba9fb9b0eacc716b8e792d95c261952f5c4257f7538d6edd74"
+    },
+    "/private/tmp/stop47_feasible_start_pure_v1_20261011/DISPATCH_RESULT.json": {
+      "bytes": 12,
+      "sha256": "5bc232b82de377a5655a39a2af9d7ae0fc868de5b9df957e18905cb914606c88"
+    },
+    "/private/tmp/stop47_feasible_start_pure_v1_20261011/DRIVER.py": {
+      "bytes": 2925,
+      "sha256": "4bf0e7b9f49a3fbf071b15042ba70ed5d1e8a9ed05059d05c53d41181848be5a"
+    },
+    "/private/tmp/stop47_feasible_start_pure_v1_20261011/SUMMARY.json": {
+      "bytes": 1983,
+      "sha256": "92d5362da97f18c0f18a731970ba68d38c0d4d554f66eb1c7d8be13fc067f76e"
+    },
+    "/private/tmp/stop47_feasible_start_pure_v1_20261011/bounded_bytes.py": {
+      "bytes": 1620,
+      "sha256": "01a1aa86c2a065fbe52ef6d27ff122d5be3a800adedf3581c3bed90b34617631"
+    },
+    "/private/tmp/stop47_feasible_start_pure_v1_20261011/bounded_progress_seed.hpp": {
+      "bytes": 4066,
+      "sha256": "debea11deed4bf764c488ac9195c809cde3c00ae8b4c6a878cb93bd4b8154d28"
+    },
+    "/private/tmp/stop47_feasible_start_pure_v1_20261011/bounded_progress_seed_tests.cpp": {
+      "bytes": 2508,
+      "sha256": "95dd8ef8a81e7f8a50fc4439b62fa83d176fb36011f356c9a742e3ae0264adfd"
+    },
+    "/private/tmp/stop47_feasible_start_pure_v1_20261011/saved46_feasible_start.cpp": {
+      "bytes": 7661,
+      "sha256": "82d532e84d1455c8ea780e40f033507bd2e5bf7ed8fc239f51d01bfe6c872535"
+    },
+    "/private/tmp/stop47_feasible_start_pure_v2_20261011/READY.json": {
+      "bytes": 1891,
+      "sha256": "236f955fc7e22d47fd707397b0789f6dafc2f951b72c69fc8fb910e85dfd9f3a"
+    },
+    "/private/tmp/stop47_feasible_start_pure_v2_20261011/DERIVED_OUTPUT_LEDGER.json": {
+      "bytes": 804,
+      "sha256": "f396760f180151e7823579cef774f869ed48c94711cae6027aff66f005208ee4"
+    },
+    "/private/tmp/stop47_feasible_start_pure_v2_20261011/DERIVED_OUTPUT_LOCK": {
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    "/private/tmp/stop47_feasible_start_pure_v2_20261011/DISPATCH.stderr": {
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    "/private/tmp/stop47_feasible_start_pure_v2_20261011/DISPATCH.stdout": {
+      "bytes": 22036,
+      "sha256": "86d4e07ffb3b4518fabb0b11e34bcf603414be0d35dabcfb9068a47a22c56851"
+    },
+    "/private/tmp/stop47_feasible_start_pure_v2_20261011/DISPATCH_RESULT.json": {
+      "bytes": 12,
+      "sha256": "5bc232b82de377a5655a39a2af9d7ae0fc868de5b9df957e18905cb914606c88"
+    },
+    "/private/tmp/stop47_feasible_start_pure_v2_20261011/DRIVER.py": {
+      "bytes": 2925,
+      "sha256": "676e4c2dc79b86e5375a710432bc3d255e5c112fbfad55bf8875f9394e5a1d62"
+    },
+    "/private/tmp/stop47_feasible_start_pure_v2_20261011/SUMMARY.json": {
+      "bytes": 2521,
+      "sha256": "b38193e6d78920a02e243cab0f4f9a605dae0db94e546465ae3bb5c6c9557957"
+    },
+    "/private/tmp/stop47_feasible_start_pure_v2_20261011/bounded_bytes.py": {
+      "bytes": 1620,
+      "sha256": "01a1aa86c2a065fbe52ef6d27ff122d5be3a800adedf3581c3bed90b34617631"
+    },
+    "/private/tmp/stop47_feasible_start_pure_v2_20261011/bounded_progress_seed.hpp": {
+      "bytes": 4236,
+      "sha256": "a04957b835f85da2a6e6d08073a3480b066344c93a2031559db74dc1701695c3"
+    },
+    "/private/tmp/stop47_feasible_start_pure_v2_20261011/bounded_progress_seed_tests.cpp": {
+      "bytes": 2508,
+      "sha256": "95dd8ef8a81e7f8a50fc4439b62fa83d176fb36011f356c9a742e3ae0264adfd"
+    },
+    "/private/tmp/stop47_feasible_start_pure_v2_20261011/saved46_feasible_start.cpp": {
+      "bytes": 7661,
+      "sha256": "82d532e84d1455c8ea780e40f033507bd2e5bf7ed8fc239f51d01bfe6c872535"
+    },
+    "/private/tmp/stop47_feasible_start_pure_v3_20261011/READY.json": {
+      "bytes": 1786,
+      "sha256": "6daf7daf7bff0bffde2e419f681335371dc151fa21c431d718391879ff99643c"
+    },
+    "/private/tmp/stop47_feasible_start_pure_v3_20261011/DERIVED_OUTPUT_LEDGER.json": {
+      "bytes": 1396,
+      "sha256": "38fd43de632d87eae3774cb9b4dfcaaa91cf55b29f98f45bbd4365f6b8baacc5"
+    },
+    "/private/tmp/stop47_feasible_start_pure_v3_20261011/DERIVED_OUTPUT_LOCK": {
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    "/private/tmp/stop47_feasible_start_pure_v3_20261011/DISPATCH.stderr": {
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    "/private/tmp/stop47_feasible_start_pure_v3_20261011/DISPATCH.stdout": {
+      "bytes": 22271,
+      "sha256": "478b55670ad280851f2a0d7d540b11f74cf4dfce45bba5fbcf4f0b0bf471197e"
+    },
+    "/private/tmp/stop47_feasible_start_pure_v3_20261011/DRIVER.py": {
+      "bytes": 2925,
+      "sha256": "54ac84cf9fa27723be49c2f5c9eab6afd08c41d7d388a87df14b9d2ddf2af87c"
+    },
+    "/private/tmp/stop47_feasible_start_pure_v3_20261011/SUMMARY.json": {
+      "bytes": 2681,
+      "sha256": "489b8307e807240683bf54f3326ec0821348b186c8bf795624e816ec0d0d8bcd"
+    },
+    "/private/tmp/stop47_feasible_start_pure_v3_20261011/bounded_bytes.py": {
+      "bytes": 1620,
+      "sha256": "01a1aa86c2a065fbe52ef6d27ff122d5be3a800adedf3581c3bed90b34617631"
+    },
+    "/private/tmp/stop47_feasible_start_pure_v3_20261011/bounded_progress_seed.hpp": {
+      "bytes": 4309,
+      "sha256": "6dc1d317db9504ec248dda3f04ef2917bd4850de027c032575eff5d0f39c4ff0"
+    },
+    "/private/tmp/stop47_feasible_start_pure_v3_20261011/bounded_progress_seed_tests.cpp": {
+      "bytes": 2670,
+      "sha256": "78d76a69ced03c25e90242203e3ef5d61a858ada18d8fd1ee854d76b53f965d3"
+    },
+    "/private/tmp/stop47_feasible_start_pure_v3_20261011/saved46_feasible_start.cpp": {
+      "bytes": 7661,
+      "sha256": "82d532e84d1455c8ea780e40f033507bd2e5bf7ed8fc239f51d01bfe6c872535"
+    },
+    "/private/tmp/phase5_controlled_stop_all264_actual_checkpoint_v1_20261011/actual-dell/session-controlled-stop-all264-floor-active32-brake64-dwell25-v2-20261011-attempt46/run-attempt1/artifacts/cycle-35/trial-0/inline_qp.bin": {
+      "bytes": 21932714,
+      "sha256": "23aaafacd3cab2e98aec80aea17654fdadfeb263eb095ec187055b130baa839e"
+    },
+    "/private/tmp/phase5_controlled_stop_all264_actual_checkpoint_v1_20261011/actual-dell/session-controlled-stop-all264-floor-active32-brake64-dwell25-v2-20261011-attempt46/run-attempt1/artifacts/cycle-35/trial-0/qp_equality_reduction.bin": {
+      "bytes": 19954876,
+      "sha256": "536a8c4b1d95c1310b09fbe3b6f3269be674e18237ade1baf174760d021a0249"
+    },
+    "/private/tmp/phase5_controlled_stop_all264_actual_checkpoint_v1_20261011/actual-dell/session-controlled-stop-all264-floor-active32-brake64-dwell25-v2-20261011-attempt46/run-attempt1/artifacts/cycle-35/trial-0/current_numeric_hint.bin": {
+      "bytes": 60496,
+      "sha256": "8aa9ec678b605cd2fd02c095260ebf096fb0b46501dcfa644719478dd4c9cb03"
+    },
+    "/private/tmp/phase5_controlled_stop_all264_actual_checkpoint_v1_20261011/actual-dell/session-controlled-stop-all264-floor-active32-brake64-dwell25-v2-20261011-attempt46/run-attempt1/artifacts/cycle-35/trial-0/observation_before.bin": {
+      "bytes": 2710,
+      "sha256": "762dae484fe5af46ddc2b789c7028378136f44dbfc58cf46d8654220f0835fd7"
+    },
+    "/private/tmp/phase5_controlled_stop_feasible_seed_active_v3_20261011/STOP47_FINAL_READINESS.json": {
+      "bytes": 18600,
+      "sha256": "32e5265e470bc6e08aa4b6dc7bafeb6ba85765e988e161764a19b390b3ca236f"
+    }
+  },
+  "actual47_readiness_metadata_only": "/private/tmp/phase5_controlled_stop_feasible_seed_active_v3_20261011/STOP47_FINAL_READINESS.json",
+  "source_sha256": "15a3e59baf95e5531710258d7af118d9603a25fcaa34d467028742da32f435b7",
+  "reviewer_calls": {
+    "native": 0,
+    "compiler": 0,
+    "optimizer": 0,
+    "Model": 0,
+    "SDK": 0,
+    "FK": 0,
+    "Scene": 0,
+    "SSH": 0
+  }
+}

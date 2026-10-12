@@ -1,0 +1,35 @@
+{
+  "schema": "ROOT_STOP46_RETAINED_FAILURES_V1",
+  "native_failure": {
+    "boundary": 35,
+    "trial": 0,
+    "reason": "current-matrix start infeasible; retained refusal, no projection",
+    "shape": [
+      7362,
+      144
+    ],
+    "worst_scaled_row": 7361,
+    "internal_floor_sample": 263,
+    "mapped_original_SI_row": -1,
+    "original_semantic_row": 2945,
+    "original_label_units": [
+      "progress/r/half/263",
+      "1/s"
+    ],
+    "numpy_seed_deficit": 3.571073645125544e-11,
+    "exact_stored_IEEE_row_deficit": {
+      "numerator": "2966731993073386971517995",
+      "denominator": "83076749736557242056487941267521536",
+      "approx": 3.571073739019788e-11
+    },
+    "unchanged_initial_primal_acceptance": 1e-12,
+    "whole_polytope_feasibility": "UNKNOWN",
+    "native_wrapper_OSQP_Request_Value_B_C_ENTERED": false,
+    "original_SI_candidate_scan_result": null,
+    "current35_equals_after_C34_and_cleanup_bitwise": true
+  },
+  "audit_adapter_failures": [],
+  "producer_preparation_failure": "v1 floor array-copy estimate150K undercount retained third matrix; corrected250K source/compile before actual46; original v1 retained in immutable packet.",
+  "historical_schema_labels": "Some reused parser/result schema strings name prior40/41/45; actual case46/input hashes/current source snapshots establish this version. No old sealed work was modified.",
+  "no_rerun_of_old45_or_guard46": true
+}

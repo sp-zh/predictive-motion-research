@@ -1,0 +1,72 @@
+{
+  "schema": "SAVED46_DATA_ONLY_FEASIBLE_INITIALIZER_PURE_V3",
+  "records": [
+    {
+      "target": "seed_tests",
+      "stage": "compile",
+      "exit": 0,
+      "CPU": 45,
+      "AS": 2147483648,
+      "FSIZE": 16777216,
+      "wall": 50
+    },
+    {
+      "target": "seed_tests",
+      "stage": "pure",
+      "exit": 0,
+      "CPU": 25,
+      "AS": 536870912,
+      "FSIZE": 1048576,
+      "wall": 30
+    },
+    {
+      "target": "saved46_feasible_start",
+      "stage": "compile",
+      "exit": 0,
+      "CPU": 45,
+      "AS": 2147483648,
+      "FSIZE": 16777216,
+      "wall": 50
+    },
+    {
+      "target": "saved46_feasible_start",
+      "stage": "pure",
+      "exit": 0,
+      "CPU": 25,
+      "AS": 536870912,
+      "FSIZE": 1048576,
+      "wall": 30
+    }
+  ],
+  "old_nativeEigen_seed_bits_refusal_reproduced": true,
+  "old_nativeEigen_worst_row": 7361,
+  "old_nativeEigen_deficit": 3.571073645125544e-11,
+  "starting_guess_feasibility_allowance": 1e-12,
+  "allowance_unchanged": true,
+  "new_native_Model_SDK_OSQP_Task_calls": 0,
+  "source46_inputs_unchanged": {
+    "inline_qp.bin": "23aaafacd3cab2e98aec80aea17654fdadfeb263eb095ec187055b130baa839e",
+    "qp_equality_reduction.bin": "536a8c4b1d95c1310b09fbe3b6f3269be674e18237ade1baf174760d021a0249",
+    "current_numeric_hint.bin": "8aa9ec678b605cd2fd02c095260ebf096fb0b46501dcfa644719478dd4c9cb03",
+    "observation_before.bin": "762dae484fe5af46ddc2b789c7028378136f44dbfc58cf46d8654220f0835fd7"
+  },
+  "whole_current_polytope_mathematical_feasibility_not_claimed": true,
+  "scope": "Fresh data-only optimizer initializer before native solve; no actualstate or returnedcandidate modification; actual47 not started",
+  "pure_result": "SAVED_CURRENT_NUMERIC_INITIALIZER_AND_FULL_CHECKS_PASS",
+  "same_existing1e_12_used_in_row_interval_and_final_row_recheck": true,
+  "initializer_epsilon": 1.0065740031158832e-08,
+  "initializer_final_all_augmented_rows_violation": 1.3257190484283754e-14,
+  "new_hint_complete": true,
+  "new_hint_events": 161,
+  "new_hint_original14756SI_residual": 1.0000333894311098e-13,
+  "literal200_and400_progress_pass": true,
+  "minimum_half_r": 1.0001416275031874e-13,
+  "command_C_range_check": "Conservative outward interval recovery from originalfirstC row under nearest rounding; tightened interval used, not claimed exactbounds recovery.",
+  "still_needed": [
+    "fresh actualsource47/explicitprofile/resources/pins",
+    "native originalSOLVED/full14756SI/strictliteral200/400",
+    "genuineB/privateC/physicalstop"
+  ],
+  "diagnostic_prefix_repair": "row bounds initialized Zero with actual completed-row count; mid-loop malformed rejection suffix test PASS",
+  "complete": true
+}

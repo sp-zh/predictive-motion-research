@@ -1,0 +1,65 @@
+{
+  "schema": "ROOT_SEED47_PREPARATION_REVIEW_READY_V1",
+  "files": [
+    {
+      "path": "FAILURES.json",
+      "bytes": 268,
+      "sha256": "c3091c19695c23905d5b31b43560912993b9728f0743bdd100b70053bedf111d"
+    },
+    {
+      "path": "PACKET_V1_READY_SNAPSHOT.json",
+      "bytes": 1891,
+      "sha256": "99bbb21be1920427d2a1b9aac3d2d02a390dc8440d6e393239739ea16bd0e6d1"
+    },
+    {
+      "path": "PACKET_V2_READY_SNAPSHOT.json",
+      "bytes": 1891,
+      "sha256": "236f955fc7e22d47fd707397b0789f6dafc2f951b72c69fc8fb910e85dfd9f3a"
+    },
+    {
+      "path": "PACKET_V3_READY_SNAPSHOT.json",
+      "bytes": 1786,
+      "sha256": "6daf7daf7bff0bffde2e419f681335371dc151fa21c431d718391879ff99643c"
+    },
+    {
+      "path": "RESULT.json",
+      "bytes": 13106,
+      "sha256": "1ec02185849f79a5b509b530f0b766bff4554f67c31272f8047bcc67b36129eb"
+    },
+    {
+      "path": "REVIEW.md",
+      "bytes": 1380,
+      "sha256": "cc3929bf0c5d5d658e955f7d21070608c4581d7949c40fa767e444578e1f5dfb"
+    },
+    {
+      "path": "SHARED_BUDGET_BEFORE_READY.json",
+      "bytes": 291,
+      "sha256": "b06b501460562a474c652f0a07e6a6ebb4c47756fdfbc5e0dfadc3f503a2d5ec"
+    },
+    {
+      "path": "audit_seed47_source.py",
+      "bytes": 10756,
+      "sha256": "15a3e59baf95e5531710258d7af118d9603a25fcaa34d467028742da32f435b7"
+    },
+    {
+      "path": "bounded_progress_seed.hpp",
+      "bytes": 4309,
+      "sha256": "6dc1d317db9504ec248dda3f04ef2917bd4850de027c032575eff5d0f39c4ff0"
+    },
+    {
+      "path": "bounded_progress_seed_tests.cpp",
+      "bytes": 2670,
+      "sha256": "78d76a69ced03c25e90242203e3ef5d61a858ada18d8fd1ee854d76b53f965d3"
+    },
+    {
+      "path": "saved46_feasible_start.cpp",
+      "bytes": 7661,
+      "sha256": "82d532e84d1455c8ea780e40f033507bd2e5bf7ed8fc239f51d01bfe6c872535"
+    }
+  ],
+  "payloads": 11,
+  "total_bytes": 46009,
+  "source_sha256": "15a3e59baf95e5531710258d7af118d9603a25fcaa34d467028742da32f435b7",
+  "verdict": "PASS_V3_BOUNDED_NUMERIC_START_HELPER_SOURCE; NO_ACTUAL47_OR_STOP_ACCEPTANCE",
+  "budget": "max1MiB and shared3GiB beforewrite; no refund/reset"
+}

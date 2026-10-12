@@ -1,0 +1,31 @@
+{
+  "schema": "ROOT_STOP46_DUALHOST_STORAGE_CHECKPOINT_V1",
+  "unit": "controlled-stop-failed46-v1-20261011",
+  "archive_bytes": 1600880455,
+  "archive_sha256": "5d246af20b91a3377a5db110b01b2e4ba1a9fd135e9f5535f7f2fa34c7981940",
+  "archive_READY_sha256": "55d2a8735da64fe9b184d5abdcf80fefa694ca2008520a3d5dd693d11d7c0c56",
+  "manifest_sha256": "a8f0b9d52c5bd9fdc11e6f202d8b21ddd0f1d23be5648fa9f91ac6ede95ea426",
+  "payloads_verified": 2757,
+  "regular_members_verified": 2758,
+  "payload_bytes_verified": 4303900226,
+  "Mac_archive": "/Users/uot/Documents/ChatGPT/ros/results/phase5-reference/controlled-stop-failed46-v1-20261011/root-archive1/controlled-stop46-full-failure-review-v1.tar.gz",
+  "Dell_D_archive": "/mnt/d/CodexTransfer/projects/predictive_motion/checkpoints/controlled-stop-failed46-v1-20261011-root1/controlled-stop46-full-failure-review-v1.tar.gz",
+  "Mac_full_member_readback_pass": true,
+  "Dell_D_full_member_readback_pass": true,
+  "compressed_and_uncompressed_tar_stream_prewrite_cap_bytes": 22548578304,
+  "actual_uncompressed_tar_stream_bytes": 4309585920,
+  "underlying_evidence_role": "Complete2481producer payloads,165fullmathreview payloads, guard/source-readiness references, allretainedfailure histories and public snapshot. SameMac hardlinks are aliases; one independently copied/read-back DellDarchive.",
+  "external_compressed_transport_role": {
+    "Mac_path": "/private/tmp/phase5_stop46_transport_external_v1_20261011/transport.tar.gz",
+    "bytes": 1523411206,
+    "sha256": "9af222c8edc0a5db24652cc3a8753778ce7ee7d65193f5619376d03e6ce36fee",
+    "original_members_all_SHA_verified": 1918,
+    "excluded_duplicate_archive_object": true,
+    "Dell_compressed_transport_copy_claimed": false
+  },
+  "immutable_history": "Originalarchive READY Dellfalse andpublicsnapshot pending-storage flags preserved; this finalreceipt closes actualverification. Prior40\u201345archives referencedunchanged, not repacked. No raw/source/failure removed. Future47pure/native separate supplemental identities.",
+  "NTFS_qualification": "NTFS POSIX sealing/ownership change not asserted; no chmod attempted.",
+  "prior_verified_public_checkpoint": "108db9035114fcd66e6be75099f08ebf989c825e",
+  "public_scope": "Ownedsource52, smallreview/docs and actualPNGdiagnostics. Rawlargeevidence/SDK/ELF/caches/credentials excluded, routinepublicbackup approved.",
+  "scope": "Recordedfailure/filealgebra verified, stop/fulltask/realtime/heldout/Phase5 NOT_ACCEPTED; Phase6 NOT_STARTED."
+}

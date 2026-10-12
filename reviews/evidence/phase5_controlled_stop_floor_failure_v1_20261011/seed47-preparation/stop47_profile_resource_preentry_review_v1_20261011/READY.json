@@ -1,0 +1,26 @@
+{
+  "schema": "STOP47_PROFILE_RESOURCE_INDEPENDENT_PREENTRY_READY_V1",
+  "scope": "SOURCE_PROFILE_RESOURCE_ONLY_NO_EXECUTION",
+  "conclusion": "PASS_LIMITED_PREENTRY_CONFIGURATION",
+  "files": [
+    {
+      "path": "RESULT.json",
+      "bytes": 4288,
+      "sha256": "f1764990b8fef5aa288d85f3ce87af30edb61e5ebc7836b906cff42b50d6d31b"
+    },
+    {
+      "path": "REVIEW.md",
+      "bytes": 2016,
+      "sha256": "ca153fdbf5474ccc587151091430f2d49ffb5c27a5e302cff9f44375aa958359"
+    },
+    {
+      "path": "SHARED_DERIVED_BUDGET_SNAPSHOT.json",
+      "bytes": 291,
+      "sha256": "67dcf1d812d1adb65089eed0529a061e4205cfdf354d1b42a1fa0523df0091fa"
+    }
+  ],
+  "payload_bytes": 6595,
+  "budget": "Root cumulative3GiB prewrite; no reset",
+  "phase5": "NOT_ACCEPTED",
+  "phase6": "NOT_STARTED"
+}

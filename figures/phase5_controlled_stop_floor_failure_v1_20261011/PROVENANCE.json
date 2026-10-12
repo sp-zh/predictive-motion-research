@@ -1,0 +1,30 @@
+{
+  "scope": "Exact actual140ms failed prefix35C/70halves,32active3braking,6actual stop points0/50 dwell. Finalseed planning-floor refusal before native/Request/B/C. No completedtask/stop/realtime/phaseacceptance.",
+  "producer_READY_sha256": "9c189604bcdff12051b5a56343319f4ac323bb0bcd0baebe3189f90611767047",
+  "files": {
+    "RENDER_RECEIPT.json": {
+      "bytes": 489,
+      "sha256": "65d45a196039af46029cc2875da565523b87e64a350127eb6a685b1c2a59bfb5"
+    },
+    "plot_input.json": {
+      "bytes": 131545,
+      "sha256": "50f2d7b20ff4fb1f3d54199e3b671de4a663144be4e14375f70040f3d1f617dc"
+    },
+    "producer_plot_source.py": {
+      "bytes": 3784,
+      "sha256": "98bb52ccabf385d5211da6cadaf0ea832af1b7bb65b032bf3a4a9642bd8ba04f"
+    },
+    "stop46_actual_diagnostic.png": {
+      "bytes": 240826,
+      "sha256": "f95ca405ba34355a0721db4d4ede06dacb37644c56cdb2ffa7865f7d6f0c5ddf"
+    },
+    "stop46_actual_tcp_prefix.png": {
+      "bytes": 210346,
+      "sha256": "2f7aefe3e31177a0e3d0075e610d8333e8e052fc84fb695da3860ee3f916e649"
+    }
+  },
+  "Root_visual_QA": "Both exact producer PNGs inspected. Clear units/thresholds; speed abovebound, full36 whole clocks includingfailed36th boundary, actualTCP origin/ref offset.",
+  "input_projection": "Exact70actualTCP/6stop/all36whole clocks. Large raw native/validation matrices private.",
+  "phase5": "NOT_ACCEPTED",
+  "phase6": "NOT_STARTED"
+}

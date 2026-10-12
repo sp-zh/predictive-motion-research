@@ -68,6 +68,12 @@ This image depicts the integrated scene; it is not a predictive-control result.
 
 ## Simulation and diagnostic figures
 
+![Attempt46 actual prefix and six failed stop observations](../figures/phase5_controlled_stop_floor_failure_v1_20261011/stop46_actual_diagnostic.png)
+
+![70 actual recorded TCP poses from attempt46](../figures/phase5_controlled_stop_floor_failure_v1_20261011/stop46_actual_tcp_prefix.png)
+
+Attempt46 completes32 active plus3 braking-mode commands over140ms. All six stop observations fail, dwell0/50; the next starting guess is refused by the new planning floor before native solve/B/C. The full36 whole clocks include that failed boundary, and all35 completed4ms deadlines miss. This is a failed actual prefix, with no completed stop/task/video or timing advantage claim. [Figure provenance](../figures/phase5_controlled_stop_floor_failure_v1_20261011/PROVENANCE.json), [full independent review and storage scope](../reviews/evidence/phase5_controlled_stop_floor_failure_v1_20261011/README.md).
+
 ![Attempt45 actual active/braking prefix and failed stop monitor](../figures/phase5_controlled_stop_failure_v1_20261011/stop45_actual_diagnostic.png)
 
 ![68 recorded TCP poses from the retained attempt45 prefix](../figures/phase5_controlled_stop_failure_v1_20261011/stop45_actual_tcp_prefix.png)

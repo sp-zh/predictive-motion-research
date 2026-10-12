@@ -1,0 +1,91 @@
+{
+  "schema": "STOP47_INDEPENDENT_PROFILE_RESOURCE_PREENTRY_REVIEW_V1",
+  "scope": "SOURCE_PROFILE_RESOURCE_ONLY_NO_EXECUTION",
+  "conclusion": "PASS_LIMITED_PREENTRY_CONFIGURATION",
+  "remaining_concrete_blockers": [],
+  "physical_prechecks": "Dispatch must still freshly measure actual C/D>=80GiB and Mac>=61GiB, and require fresh run-attempt1. This review did not execute or independently measure volumes.",
+  "reviewer_new_compile_pure_Model_OSQP_MuJoCo_controller_physics_invocations": 0,
+  "readiness_sha256": "32e5265e470bc6e08aa4b6dc7bafeb6ba85765e988e161764a19b390b3ca236f",
+  "source_files_verified": 54,
+  "source_manifest_sha256": "e0fef85269c2fd2f1617ff19f6c960379c901c37cffe44286c407f9644f25c4b",
+  "input_pins_declared": 1721,
+  "profile_sha256": "6a2bab9233cfbd31103dd625499b2a83391143b8ca528662d5f1aec94210a040",
+  "runtime_plan_sha256": "223206cc12e1613ce721abba3f4cacd0b94c4351e6c92d16189d46bf4a4662c0",
+  "ELF_bound_in_plan": {
+    "path": "/home/codextransfer/predictive_motion/results/phase5/session-controlled-stop-feasible-seed-active32-brake64-dwell25-v3-20261011-attempt47/link-attempt1/active_first_cycle",
+    "bytes": 19886776,
+    "sha256": "4a3157941eb6548be78a8ce247aced407644b25be07e74023f505497082ae0ac"
+  },
+  "compile_link_pure_records_checked": {
+    "TUs": 23,
+    "ELFs": 12,
+    "pure_tests": 11,
+    "all_pure_exits": 0,
+    "runtime_entered": false,
+    "method": "Read local readiness/dispatch stdout and staging scripts; not reviewer rerun or remote ELF rerehash."
+  },
+  "budgets": {
+    "source_worst": 760826484,
+    "source_cap": 1024000000,
+    "separate_worst": 1669826160,
+    "separate_cap": 1800000000,
+    "binary_GiB": 14,
+    "normal_binary_bytes": 14998831104,
+    "cleanup_bytes": 33554432,
+    "tail_bound_bytes": 16879432,
+    "CPU_s": 2400,
+    "AS_bytes": 4294967296,
+    "native_wall_s": 3000,
+    "driver_wall_s": 3060,
+    "capture_stream_max_bytes": 1048576
+  },
+  "storage": {
+    "native_GiB": 14.375,
+    "transport_GiB": 15,
+    "producer_plus_Root_derived_GiB": 4,
+    "Root47_only_archive_GiB": 19,
+    "margin_GiB": 8,
+    "peak_GiB": 60.375,
+    "Mac_min_GiB": 61,
+    "Windows_C_D_each_min_GiB": 80,
+    "hardlinks_not_independent_backup": true,
+    "old40_46_archives_retained_not_repacked": true
+  },
+  "scope_preservation": "Single fresh47 ELF/new profile, once/no retry, seed91011, no old36/seed91013 rejected protocol in argv; no permission mutation/new acceptance gate. Original native/fullSI/strict/B/privateC remain; finite stop component only.",
+  "phase5": "NOT_ACCEPTED",
+  "phase6": "NOT_STARTED",
+  "input_hashes": {
+    "/private/tmp/phase5_controlled_stop_feasible_seed_active_v3_20261011/STOP47_FINAL_READINESS.json": {
+      "bytes": 18600,
+      "sha256": "32e5265e470bc6e08aa4b6dc7bafeb6ba85765e988e161764a19b390b3ca236f"
+    },
+    "/private/tmp/phase5_controlled_stop_feasible_seed_active_v3_20261011/profile-version1/active_input.json": {
+      "bytes": 329475,
+      "sha256": "6a2bab9233cfbd31103dd625499b2a83391143b8ca528662d5f1aec94210a040"
+    },
+    "/private/tmp/phase5_controlled_stop_feasible_seed_active_v3_20261011/active_run_plan.json": {
+      "bytes": 504095,
+      "sha256": "223206cc12e1613ce721abba3f4cacd0b94c4351e6c92d16189d46bf4a4662c0"
+    },
+    "/private/tmp/phase5_controlled_stop_feasible_seed_active_v3_20261011/active_run_driver.py": {
+      "bytes": 7625,
+      "sha256": "6e0064b3286a390a74272afc3e75c7f62cbcbc847b6fe1fa3a8b29b436a27cd9"
+    },
+    "/private/tmp/dispatch_stop47_v3.py": {
+      "bytes": 2294,
+      "sha256": "4750adcd036eb4c903f191b4a50bf8867a63db7cb40a2f633f41214baf65bc32"
+    },
+    "/private/tmp/phase5_controlled_stop_feasible_seed_active_v3_20261011/PURE_TEST_DISPATCH.stdout": {
+      "bytes": 4105,
+      "sha256": "d8e0b10d4e6ff16875cd87cc2c1098a486290b26c1a6676ff7efa93229b3f586"
+    },
+    "/private/tmp/phase5_controlled_stop_feasible_seed_active_v3_20261011/LOCAL_PREENTRY_INTEGRATION_CHECK.json": {
+      "bytes": 407,
+      "sha256": "cf615ef1998391d8af8977d9d0698b69e96ab7b56501efea647467d5a40c3853"
+    },
+    "/private/tmp/phase5_controlled_stop_feasible_seed_active_v3_20261011/SOURCE_SCOPE_BINDING.json": {
+      "bytes": 10474,
+      "sha256": "35b190141d69cc2f75c6b3fe6d6f522ab0e0bff45384961472f1fc4a24df2060"
+    }
+  }
+}
