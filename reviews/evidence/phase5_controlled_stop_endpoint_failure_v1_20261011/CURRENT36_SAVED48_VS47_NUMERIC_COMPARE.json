@@ -1,0 +1,476 @@
+{
+  "schema": "CURRENT36_SAVED48_VS47_NUMERIC_WIRE_COMPARE_V1",
+  "fields": [
+    {
+      "file": "inline_qp.bin",
+      "field": "H",
+      "shape48": [
+        160,
+        160
+      ],
+      "shape47": [
+        160,
+        160
+      ],
+      "bytes48": 204800,
+      "bytes47": 204800,
+      "sha48": "97257895d398f268588dce1207b34572fad1366f4e3536d22717dc47d158ce4c",
+      "sha47": "97257895d398f268588dce1207b34572fad1366f4e3536d22717dc47d158ce4c",
+      "exact_numeric_wire_bits_equal": true
+    },
+    {
+      "file": "inline_qp.bin",
+      "field": "g",
+      "shape48": [
+        160
+      ],
+      "shape47": [
+        160
+      ],
+      "bytes48": 1280,
+      "bytes47": 1280,
+      "sha48": "cd6323c7683fe1bdc7108b81cf2ecb24df76fadb63fe91c04c76ea695037d454",
+      "sha47": "cd6323c7683fe1bdc7108b81cf2ecb24df76fadb63fe91c04c76ea695037d454",
+      "exact_numeric_wire_bits_equal": true
+    },
+    {
+      "file": "inline_qp.bin",
+      "field": "A",
+      "shape48": [
+        14756,
+        160
+      ],
+      "shape47": [
+        14756,
+        160
+      ],
+      "bytes48": 18887680,
+      "bytes47": 18887680,
+      "sha48": "e7197076456c3db31b0608ebf93e70b1f90a3c4d9ec595afde4fb246b54a574e",
+      "sha47": "e7197076456c3db31b0608ebf93e70b1f90a3c4d9ec595afde4fb246b54a574e",
+      "exact_numeric_wire_bits_equal": true
+    },
+    {
+      "file": "inline_qp.bin",
+      "field": "lower",
+      "shape48": [
+        14756
+      ],
+      "shape47": [
+        14756
+      ],
+      "bytes48": 118048,
+      "bytes47": 118048,
+      "sha48": "1bbb856e480618ebd45605f71d060099fe8989957f41a004a4784061bd01b78d",
+      "sha47": "1bbb856e480618ebd45605f71d060099fe8989957f41a004a4784061bd01b78d",
+      "exact_numeric_wire_bits_equal": true
+    },
+    {
+      "file": "inline_qp.bin",
+      "field": "upper",
+      "shape48": [
+        14756
+      ],
+      "shape47": [
+        14756
+      ],
+      "bytes48": 118048,
+      "bytes47": 118048,
+      "sha48": "192a264f5c9bdc10309da304db8a7b5d56052b62d8ae8111feb514cb0e365cc5",
+      "sha47": "192a264f5c9bdc10309da304db8a7b5d56052b62d8ae8111feb514cb0e365cc5",
+      "exact_numeric_wire_bits_equal": true
+    },
+    {
+      "file": "qp_equality_reduction.bin",
+      "field": "Z",
+      "shape48": [
+        160,
+        144
+      ],
+      "shape47": [
+        160,
+        144
+      ],
+      "bytes48": 184320,
+      "bytes47": 184320,
+      "sha48": "44ecb76259ebc39eabca0470c212b045bd04b23e166b78e964f40d3c9e9eac10",
+      "sha47": "44ecb76259ebc39eabca0470c212b045bd04b23e166b78e964f40d3c9e9eac10",
+      "exact_numeric_wire_bits_equal": true
+    },
+    {
+      "file": "qp_equality_reduction.bin",
+      "field": "offset",
+      "shape48": [
+        160
+      ],
+      "shape47": [
+        160
+      ],
+      "bytes48": 1280,
+      "bytes47": 1280,
+      "sha48": "85eb0b8ae104e7e7aef1e7fe61b0e9922bb2a2b3f2114aac87d7483f705b273e",
+      "sha47": "85eb0b8ae104e7e7aef1e7fe61b0e9922bb2a2b3f2114aac87d7483f705b273e",
+      "exact_numeric_wire_bits_equal": true
+    },
+    {
+      "file": "qp_equality_reduction.bin",
+      "field": "equalities",
+      "shape48": [
+        16,
+        160
+      ],
+      "shape47": [
+        16,
+        160
+      ],
+      "bytes48": 20480,
+      "bytes47": 20480,
+      "sha48": "369f4179c750a1e8bc25aa8617f7b8e66f0d93418259ec9931a181f3daf782f3",
+      "sha47": "369f4179c750a1e8bc25aa8617f7b8e66f0d93418259ec9931a181f3daf782f3",
+      "exact_numeric_wire_bits_equal": true
+    },
+    {
+      "file": "qp_equality_reduction.bin",
+      "field": "equality_rhs",
+      "shape48": [
+        16
+      ],
+      "shape47": [
+        16
+      ],
+      "bytes48": 128,
+      "bytes47": 128,
+      "sha48": "1862e836db0a4ff4ec1af68f8271f0db982728e33ceef5d255a8690518ddb344",
+      "sha47": "1862e836db0a4ff4ec1af68f8271f0db982728e33ceef5d255a8690518ddb344",
+      "exact_numeric_wire_bits_equal": true
+    },
+    {
+      "file": "qp_equality_reduction.bin",
+      "field": "planning_rhs",
+      "shape48": [
+        16
+      ],
+      "shape47": [
+        16
+      ],
+      "bytes48": 128,
+      "bytes47": 128,
+      "sha48": "6ac64fb6af8a2e1e01f60fc224b638f14562af177808f913b28c83ddf6b18693",
+      "sha47": "6ac64fb6af8a2e1e01f60fc224b638f14562af177808f913b28c83ddf6b18693",
+      "exact_numeric_wire_bits_equal": true
+    },
+    {
+      "file": "qp_equality_reduction.bin",
+      "field": "eliminated_ids",
+      "shape48": [
+        0
+      ],
+      "shape47": [
+        0
+      ],
+      "bytes48": 128,
+      "bytes47": 128,
+      "sha48": "71e244db0790ef7439670545b596e6374ae01e55f9eaf8887ef08daac4aed5ad",
+      "sha47": "71e244db0790ef7439670545b596e6374ae01e55f9eaf8887ef08daac4aed5ad",
+      "exact_numeric_wire_bits_equal": true
+    },
+    {
+      "file": "qp_equality_reduction.bin",
+      "field": "solver_row_ids",
+      "shape48": [
+        0
+      ],
+      "shape47": [
+        0
+      ],
+      "bytes48": 58864,
+      "bytes47": 58864,
+      "sha48": "26915ed63c098e1544a5c6c575d859404664f74d19793b1725c0977c1bef6c18",
+      "sha47": "26915ed63c098e1544a5c6c575d859404664f74d19793b1725c0977c1bef6c18",
+      "exact_numeric_wire_bits_equal": true
+    },
+    {
+      "file": "qp_equality_reduction.bin",
+      "field": "unscaled_H",
+      "shape48": [
+        144,
+        144
+      ],
+      "shape47": [
+        144,
+        144
+      ],
+      "bytes48": 165888,
+      "bytes47": 165888,
+      "sha48": "797933fe3e7c2e5727ce49d9a1cfc93e6821e2ae3f5b681a08a9aa1bfbd81320",
+      "sha47": "797933fe3e7c2e5727ce49d9a1cfc93e6821e2ae3f5b681a08a9aa1bfbd81320",
+      "exact_numeric_wire_bits_equal": true
+    },
+    {
+      "file": "qp_equality_reduction.bin",
+      "field": "unscaled_g",
+      "shape48": [
+        144
+      ],
+      "shape47": [
+        144
+      ],
+      "bytes48": 1152,
+      "bytes47": 1152,
+      "sha48": "bd7d05fd870c11968a5c6fb685429e78f7daa14fa7b72f3658f79f504980bd4e",
+      "sha47": "bd7d05fd870c11968a5c6fb685429e78f7daa14fa7b72f3658f79f504980bd4e",
+      "exact_numeric_wire_bits_equal": true
+    },
+    {
+      "file": "qp_equality_reduction.bin",
+      "field": "unscaled_A",
+      "shape48": [
+        7358,
+        144
+      ],
+      "shape47": [
+        7358,
+        144
+      ],
+      "bytes48": 8476416,
+      "bytes47": 8476416,
+      "sha48": "3e42bd40947ffce38bb3de8bc2cf86f5ef3938434866e5b52a357021ce397341",
+      "sha47": "3e42bd40947ffce38bb3de8bc2cf86f5ef3938434866e5b52a357021ce397341",
+      "exact_numeric_wire_bits_equal": true
+    },
+    {
+      "file": "qp_equality_reduction.bin",
+      "field": "unscaled_lower",
+      "shape48": [
+        7358
+      ],
+      "shape47": [
+        7358
+      ],
+      "bytes48": 58864,
+      "bytes47": 58864,
+      "sha48": "2ff1be9c91c09b02b283ea2279246c369594012f3bf328caa80f54dfbac09f1d",
+      "sha47": "2ff1be9c91c09b02b283ea2279246c369594012f3bf328caa80f54dfbac09f1d",
+      "exact_numeric_wire_bits_equal": true
+    },
+    {
+      "file": "qp_equality_reduction.bin",
+      "field": "unscaled_upper",
+      "shape48": [
+        7358
+      ],
+      "shape47": [
+        7358
+      ],
+      "bytes48": 58864,
+      "bytes47": 58864,
+      "sha48": "4f448317a67bcb7e41d68cefe1b76a1f8c21431ea1de8fa418ce2b999a28ce90",
+      "sha47": "4f448317a67bcb7e41d68cefe1b76a1f8c21431ea1de8fa418ce2b999a28ce90",
+      "exact_numeric_wire_bits_equal": true
+    },
+    {
+      "file": "qp_equality_reduction.bin",
+      "field": "variable_scale",
+      "shape48": [
+        144
+      ],
+      "shape47": [
+        144
+      ],
+      "bytes48": 1152,
+      "bytes47": 1152,
+      "sha48": "eec97fd5c525a06d7437ddd483b2965e6f65313a189796ed576a5d9572b1d843",
+      "sha47": "eec97fd5c525a06d7437ddd483b2965e6f65313a189796ed576a5d9572b1d843",
+      "exact_numeric_wire_bits_equal": true
+    },
+    {
+      "file": "qp_equality_reduction.bin",
+      "field": "factor",
+      "shape48": [
+        909,
+        144
+      ],
+      "shape47": [
+        909,
+        144
+      ],
+      "bytes48": 1047168,
+      "bytes47": 1047168,
+      "sha48": "09be8e2bc3c3ac0c0277800e1fd103b284c1a015a954ae40f235c3d647687a13",
+      "sha47": "09be8e2bc3c3ac0c0277800e1fd103b284c1a015a954ae40f235c3d647687a13",
+      "exact_numeric_wire_bits_equal": true
+    },
+    {
+      "file": "qp_equality_reduction.bin",
+      "field": "original_nominal_seed",
+      "shape48": [
+        144
+      ],
+      "shape47": [
+        144
+      ],
+      "bytes48": 1152,
+      "bytes47": 1152,
+      "sha48": "8536f120062971fcf2cbffd563fa0be00ba0dd4712c3ef3e83f33e26c1c131ee",
+      "sha47": "8536f120062971fcf2cbffd563fa0be00ba0dd4712c3ef3e83f33e26c1c131ee",
+      "exact_numeric_wire_bits_equal": true
+    },
+    {
+      "file": "qp_equality_reduction.bin",
+      "field": "solver_coordinates",
+      "shape48": [
+        144
+      ],
+      "shape47": [
+        0
+      ],
+      "bytes48": 1152,
+      "bytes47": 0,
+      "sha48": "4c97b8cf4736c3bddd6d5f26b902d7f941172f71a62e4beff57a5ac82a5447e6",
+      "sha47": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "exact_numeric_wire_bits_equal": false
+    },
+    {
+      "file": "qp_equality_reduction.bin",
+      "field": "reduced_coordinates",
+      "shape48": [
+        144
+      ],
+      "shape47": [
+        0
+      ],
+      "bytes48": 1152,
+      "bytes47": 0,
+      "sha48": "ff803f8eb4072a2035109c69b10f077341739d016e0125aea7d476526c6308d6",
+      "sha47": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "exact_numeric_wire_bits_equal": false
+    },
+    {
+      "file": "qp_equality_reduction.bin",
+      "field": "row_scale",
+      "shape48": [
+        7358
+      ],
+      "shape47": [
+        7358
+      ],
+      "bytes48": 58864,
+      "bytes47": 58864,
+      "sha48": "175c5533b507c24c32266b6f238db66cca8ba6a66cba1fbf0829837e892a168c",
+      "sha47": "175c5533b507c24c32266b6f238db66cca8ba6a66cba1fbf0829837e892a168c",
+      "exact_numeric_wire_bits_equal": true
+    },
+    {
+      "file": "qp_equality_reduction.bin",
+      "field": "H",
+      "shape48": [
+        144,
+        144
+      ],
+      "shape47": [
+        144,
+        144
+      ],
+      "bytes48": 165888,
+      "bytes47": 165888,
+      "sha48": "7d208f0c42c180a3991dc5b280ca2c0534332cfab44d245163bc8465d8b8552f",
+      "sha47": "7d208f0c42c180a3991dc5b280ca2c0534332cfab44d245163bc8465d8b8552f",
+      "exact_numeric_wire_bits_equal": true
+    },
+    {
+      "file": "qp_equality_reduction.bin",
+      "field": "g",
+      "shape48": [
+        144
+      ],
+      "shape47": [
+        144
+      ],
+      "bytes48": 1152,
+      "bytes47": 1152,
+      "sha48": "25e47c4614e9d3e02ec6e37cf6e06583576754aa0be30548434e3b1ed2dd3b63",
+      "sha47": "25e47c4614e9d3e02ec6e37cf6e06583576754aa0be30548434e3b1ed2dd3b63",
+      "exact_numeric_wire_bits_equal": true
+    },
+    {
+      "file": "qp_equality_reduction.bin",
+      "field": "A",
+      "shape48": [
+        7358,
+        144
+      ],
+      "shape47": [
+        7358,
+        144
+      ],
+      "bytes48": 8476416,
+      "bytes47": 8476416,
+      "sha48": "0ce886e98322d05c18af8656662e8113f3266d2af05c8e8173d6062ca5e44202",
+      "sha47": "0ce886e98322d05c18af8656662e8113f3266d2af05c8e8173d6062ca5e44202",
+      "exact_numeric_wire_bits_equal": true
+    },
+    {
+      "file": "qp_equality_reduction.bin",
+      "field": "lower",
+      "shape48": [
+        7358
+      ],
+      "shape47": [
+        7358
+      ],
+      "bytes48": 58864,
+      "bytes47": 58864,
+      "sha48": "0d54d3d464a9c27725108c0a5bd9b44d17557bf69c4c3aec9773762d1e16a1a1",
+      "sha47": "0d54d3d464a9c27725108c0a5bd9b44d17557bf69c4c3aec9773762d1e16a1a1",
+      "exact_numeric_wire_bits_equal": true
+    },
+    {
+      "file": "qp_equality_reduction.bin",
+      "field": "upper",
+      "shape48": [
+        7358
+      ],
+      "shape47": [
+        7358
+      ],
+      "bytes48": 58864,
+      "bytes47": 58864,
+      "sha48": "bb611f31e5f7337c2534941494b6ce80e7a4ccab37945eb3cfe889c1fd9b7e52",
+      "sha47": "bb611f31e5f7337c2534941494b6ce80e7a4ccab37945eb3cfe889c1fd9b7e52",
+      "exact_numeric_wire_bits_equal": true
+    },
+    {
+      "file": "qp_equality_reduction.bin",
+      "field": "solver_factor",
+      "shape48": [
+        909,
+        144
+      ],
+      "shape47": [
+        909,
+        144
+      ],
+      "bytes48": 1047168,
+      "bytes47": 1047168,
+      "sha48": "93e3cd8db924c908103fd514e67809779d59ba6d27b143d8d1bf9ac3d07efdaa",
+      "sha47": "93e3cd8db924c908103fd514e67809779d59ba6d27b143d8d1bf9ac3d07efdaa",
+      "exact_numeric_wire_bits_equal": true
+    },
+    {
+      "file": "qp_equality_reduction.bin",
+      "field": "posthint_solver_seed",
+      "shape48": [
+        144
+      ],
+      "shape47": [
+        144
+      ],
+      "bytes48": 1152,
+      "bytes47": 1152,
+      "sha48": "31180604adc562c44ed569d72a8abb021dcda1cff46289c3c73b2857e9fca8ea",
+      "sha47": "940555e731e49b659a6873f903bdedc399762ec0cf05bbdcd09fc748f0c93d4f",
+      "exact_numeric_wire_bits_equal": false
+    }
+  ],
+  "scope": "Same cycle36trial0 fields compared bitwise; file-level owner/session/diagnostic/status identity may differ. posthint_solver_seed is transformed to successfulhint in48 but remains initializer at old47 failure. Freshhint input seed must be bound to separately retained initializer before comparing algorithm input; no new solver or model execution."
+}

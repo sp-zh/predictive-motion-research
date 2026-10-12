@@ -1,0 +1,480 @@
+{
+  "schema": "ROOT_STOP48_PUBLIC_SCAN_V1",
+  "files": [
+    {
+      "path": "PROJECT_PAUSED.json",
+      "bytes": 2376,
+      "sha256": "554ec8ceab2f71367f1452af2dbe4901f9935d1e665a775bda22c5003b374491"
+    },
+    {
+      "path": "docs/phase5_development_status.md",
+      "bytes": 60627,
+      "sha256": "696c50c4c41b840df01f36d57db6922b17eb745e646bc6fb99e7331b44b9ae0b"
+    },
+    {
+      "path": "docs/showcase.md",
+      "bytes": 122522,
+      "sha256": "1f64c8e8e8e978602dca32b18da182ffb93bead8b9bae0e8a47120c392d693b6"
+    },
+    {
+      "path": "tools/phase5_controlled_stop_session_v4/README.md",
+      "bytes": 1701,
+      "sha256": "ddce4d56fe0104407ed3b1dfc4db68170c1f255fd524346cefa986b41961dbdf"
+    },
+    {
+      "path": "tools/phase5_controlled_stop_session_v4/SOURCE_IDENTITIES.json",
+      "bytes": 9307,
+      "sha256": "894d4d9cc5ffc73ff44125408ff71cc304758b99336198a14a4d516c110156b0"
+    },
+    {
+      "path": "tools/phase5_controlled_stop_session_v4/active_first_cycle.cpp",
+      "bytes": 51153,
+      "sha256": "9f73fc7238338b478f43cde10275917c0f6bb07249987154c3f3ec286e8ec1c7"
+    },
+    {
+      "path": "tools/phase5_controlled_stop_session_v4/actual_stop_monitor.hpp",
+      "bytes": 3580,
+      "sha256": "beaf7d76164638ebe035c9961a9f6a940becac7a62395444c55e301c006d0a4c"
+    },
+    {
+      "path": "tools/phase5_controlled_stop_session_v4/actual_stop_monitor_tests.cpp",
+      "bytes": 3830,
+      "sha256": "cd56b9dc8dff809d10eb8ada519d37c551b9347c64d0c6500d05683fb3e9b5af"
+    },
+    {
+      "path": "tools/phase5_controlled_stop_session_v4/actual_task_metrics.hpp",
+      "bytes": 1883,
+      "sha256": "83bb0f21e0bfa830b4d8f7e356f9f7c2ce916c49d540c948588d5e460e07d900"
+    },
+    {
+      "path": "tools/phase5_controlled_stop_session_v4/actual_task_metrics_tests.cpp",
+      "bytes": 1359,
+      "sha256": "00bea8673e19abc62233e5933722eae94c35b7540d4f3d2c5e609dc2a83b374c"
+    },
+    {
+      "path": "tools/phase5_controlled_stop_session_v4/affine_assembly.cpp",
+      "bytes": 28981,
+      "sha256": "d478eda1f0fe97bfc41851515f4baa3e485fd4a57968a62dcb6233ae1157bbd5"
+    },
+    {
+      "path": "tools/phase5_controlled_stop_session_v4/affine_assembly.hpp",
+      "bytes": 6026,
+      "sha256": "6faee2961242052c7655da41e8988dd0844f14c3cfa885672aa7c03eaa1dcb57"
+    },
+    {
+      "path": "tools/phase5_controlled_stop_session_v4/bounded_current_trials.hpp",
+      "bytes": 2347,
+      "sha256": "4d7663f1dbc75bd125ca5319817f6b2b363222310ce337f06f0a468e1cd8ef61"
+    },
+    {
+      "path": "tools/phase5_controlled_stop_session_v4/bounded_current_trials_tests.cpp",
+      "bytes": 1724,
+      "sha256": "dc8ce680a0c19249c3462003f23f80e2f4dba5a58a7a921de851bff5074fb23b"
+    },
+    {
+      "path": "tools/phase5_controlled_stop_session_v4/bounded_progress_seed.hpp",
+      "bytes": 4309,
+      "sha256": "6dc1d317db9504ec248dda3f04ef2917bd4850de027c032575eff5d0f39c4ff0"
+    },
+    {
+      "path": "tools/phase5_controlled_stop_session_v4/bounded_progress_seed_tests.cpp",
+      "bytes": 2670,
+      "sha256": "78d76a69ced03c25e90242203e3ef5d61a858ada18d8fd1ee854d76b53f965d3"
+    },
+    {
+      "path": "tools/phase5_controlled_stop_session_v4/box_screen_tests.cpp",
+      "bytes": 2954,
+      "sha256": "d922876babec2867dd1293bcee259ac12e4b2a6af5a30dd551209e097c0abaf8"
+    },
+    {
+      "path": "tools/phase5_controlled_stop_session_v4/candidate_validation.cpp",
+      "bytes": 10659,
+      "sha256": "aa76869432f465e45c48acf777913eea5972414a145eedbf02645035773f63e9"
+    },
+    {
+      "path": "tools/phase5_controlled_stop_session_v4/candidate_validation.hpp",
+      "bytes": 1526,
+      "sha256": "d816bedb47cff25c49a0d5577a9fa805771816caa1dc406d4772c1ee843fe4fa"
+    },
+    {
+      "path": "tools/phase5_controlled_stop_session_v4/counted_geometry.hpp",
+      "bytes": 7359,
+      "sha256": "aede8b1a2b4f5a17e00c7fd477a3db0e9264eab2539c7aa20eb97f62959d9401"
+    },
+    {
+      "path": "tools/phase5_controlled_stop_session_v4/current_alpha_trust.hpp",
+      "bytes": 4084,
+      "sha256": "e22e52d912cce18c61aaba4a907a92117853d047020a5bc0a614cb663fd83e78"
+    },
+    {
+      "path": "tools/phase5_controlled_stop_session_v4/current_alpha_trust_tests.cpp",
+      "bytes": 2903,
+      "sha256": "adb42a13804dd8ccfd6fc665cdd37aab5a33ab990ca5ac5ae1ac31450ea9a04d"
+    },
+    {
+      "path": "tools/phase5_controlled_stop_session_v4/current_numeric_guess.hpp",
+      "bytes": 9313,
+      "sha256": "60b45d2dcb7b7539d8b8120fe3d0a96c3c6a27b3f79c6f3fc246561876b1c450"
+    },
+    {
+      "path": "tools/phase5_controlled_stop_session_v4/current_numeric_guess_before_fraction_repair39.hpp",
+      "bytes": 4718,
+      "sha256": "bb935c5cbc1c3a09717142947d285b8f2009fe8ae8e47d433703dc815a322972"
+    },
+    {
+      "path": "tools/phase5_controlled_stop_session_v4/current_numeric_guess_before_rank_repair43.hpp",
+      "bytes": 5930,
+      "sha256": "6347f1499b3ef91ceaea247035664bb52e1e3cd09cfdf168380861610e502999"
+    },
+    {
+      "path": "tools/phase5_controlled_stop_session_v4/current_numeric_guess_before_working_basis_repair47.hpp",
+      "bytes": 7368,
+      "sha256": "f3009331a4da83edc27faaefbf3c9a3af8ad4cdaaa4cd578843d60bd31fabfa6"
+    },
+    {
+      "path": "tools/phase5_controlled_stop_session_v4/current_numeric_oracle.cpp",
+      "bytes": 1845,
+      "sha256": "43e2f0fc6cab95382ff9741669f82d21d43670db633088c6141106bf40a95cac"
+    },
+    {
+      "path": "tools/phase5_controlled_stop_session_v4/current_numeric_tests.cpp",
+      "bytes": 3100,
+      "sha256": "f915a7eec36722e45268d443af9bee310fdb1e9a3720c9250b8dca1d0993abf9"
+    },
+    {
+      "path": "tools/phase5_controlled_stop_session_v4/cycle_support.hpp",
+      "bytes": 7265,
+      "sha256": "f73f3726bc9bfafd2a0a1102b0f679b1144e23cc0fce60fe2ec1c588bd623991"
+    },
+    {
+      "path": "tools/phase5_controlled_stop_session_v4/cycle_support_tests.cpp",
+      "bytes": 7461,
+      "sha256": "fd5e44a1cf39785555b2eef4e9d46e1ef26435ce8976a7660ce3a06a3dbad5a5"
+    },
+    {
+      "path": "tools/phase5_controlled_stop_session_v4/evidence_buffer_tests.cpp",
+      "bytes": 6554,
+      "sha256": "a3dcddee70a0ad8c5b71ee3ee51b26a762f5b07feb87bcb47fcf8407e124bee7"
+    },
+    {
+      "path": "tools/phase5_controlled_stop_session_v4/fine_timing.hpp",
+      "bytes": 1160,
+      "sha256": "17e519005d4740fdf78b85029ece68cf70f75f9f111fc2130061d45acece7f07"
+    },
+    {
+      "path": "tools/phase5_controlled_stop_session_v4/fine_timing_tests.cpp",
+      "bytes": 1251,
+      "sha256": "fc29f2387722763c6601aef677dabfc1685d958093fa799a34452c33aa1c482f"
+    },
+    {
+      "path": "tools/phase5_controlled_stop_session_v4/fraction_repair_regression.cpp",
+      "bytes": 2199,
+      "sha256": "6377f1275266aa159c740acc95cf559a475bc447dbf1eeadcead115d3bb13a5e"
+    },
+    {
+      "path": "tools/phase5_controlled_stop_session_v4/integrated_horizon_qp.cpp",
+      "bytes": 162396,
+      "sha256": "dbb9095e0cb5d103a57cba7b7b0c41067840f90db5bf1573ed593c3aa6fe667b"
+    },
+    {
+      "path": "tools/phase5_controlled_stop_session_v4/integrated_horizon_qp.hpp",
+      "bytes": 13538,
+      "sha256": "0cacf846d1734c6a163f1d8ba015bfeff91cb820792cc18b13e76c902f68f4ec"
+    },
+    {
+      "path": "tools/phase5_controlled_stop_session_v4/invariant_tests.cpp",
+      "bytes": 4721,
+      "sha256": "f5a859d4cf9d79a5ae1b533b8dd62776f2bba6599dfdf691a2915ef3296a33f9"
+    },
+    {
+      "path": "tools/phase5_controlled_stop_session_v4/linear_box_screen.hpp",
+      "bytes": 3916,
+      "sha256": "b649eff43293a3078b7b46a0166fa0f8a2ac59f3a8496c8c73a98c275fed96d1"
+    },
+    {
+      "path": "tools/phase5_controlled_stop_session_v4/lossless_evidence.cpp",
+      "bytes": 18923,
+      "sha256": "26132fde06d1538f4bcd8e4b846d650ab9ab333572978c30aa9030ec12523b2b"
+    },
+    {
+      "path": "tools/phase5_controlled_stop_session_v4/lossless_evidence.hpp",
+      "bytes": 2265,
+      "sha256": "8431175019137524adb05081faa5b16a0bd06b533d04ef3f73f533099b337eb3"
+    },
+    {
+      "path": "tools/phase5_controlled_stop_session_v4/model_boundary.cpp",
+      "bytes": 21482,
+      "sha256": "eeb1f2a43ef40315e747c1be536eccc7b810647c65840999cd9c27d75895366e"
+    },
+    {
+      "path": "tools/phase5_controlled_stop_session_v4/model_boundary.hpp",
+      "bytes": 4503,
+      "sha256": "966af079735681aedf1031822864baa608255efa43e4ca699d5bec07a3235efb"
+    },
+    {
+      "path": "tools/phase5_controlled_stop_session_v4/nominal_geometry_provider.hpp",
+      "bytes": 3544,
+      "sha256": "7269a27ae1cdf5d623b726a52092adb074df8c6e032bcc1cd2c4845acafaf498"
+    },
+    {
+      "path": "tools/phase5_controlled_stop_session_v4/nominal_geometry_selection.hpp",
+      "bytes": 2524,
+      "sha256": "6a41cc80feca43509d234c5aaf70e9a4c4de77abfa9b8eabfec6b6541b7711fa"
+    },
+    {
+      "path": "tools/phase5_controlled_stop_session_v4/normalization.cpp",
+      "bytes": 23976,
+      "sha256": "a0cd0c9cdb505f922f1744f24cf115057b6ba9f3a9bc1b3ed0c9bdb82d358ed5"
+    },
+    {
+      "path": "tools/phase5_controlled_stop_session_v4/normalization.hpp",
+      "bytes": 4288,
+      "sha256": "9456be5c205f23d2aa2210eac02286d030204a446af003ee85362b971ccb43d8"
+    },
+    {
+      "path": "tools/phase5_controlled_stop_session_v4/observer_tests.cpp",
+      "bytes": 3834,
+      "sha256": "18bef19661326132aac7396998b07395acd20e83c69b70b520fea855915b5e83"
+    },
+    {
+      "path": "tools/phase5_controlled_stop_session_v4/owner_binding.hpp",
+      "bytes": 745,
+      "sha256": "26a058244f7ef8f6d9353857637270623e18e706a061bccc3be4cffb66a54354"
+    },
+    {
+      "path": "tools/phase5_controlled_stop_session_v4/owner_binding_tests.cpp",
+      "bytes": 832,
+      "sha256": "891c6b39bf5a9d23c581f6c25a60876cc336c0f299d79239c06cdd04ac447fd4"
+    },
+    {
+      "path": "tools/phase5_controlled_stop_session_v4/progress_interior_guard.hpp",
+      "bytes": 4089,
+      "sha256": "03fde0d535b571890b166fef3cf08a91dfa4c848fddeb17105562f40980eab73"
+    },
+    {
+      "path": "tools/phase5_controlled_stop_session_v4/progress_interior_guard_tests.cpp",
+      "bytes": 2560,
+      "sha256": "7ea392de6be2289fa86d0524c55827e20bc7e6e0c2f419a886051c6c67cc47b7"
+    },
+    {
+      "path": "tools/phase5_controlled_stop_session_v4/runtime_observer.cpp",
+      "bytes": 37768,
+      "sha256": "3370439af398e3f6c425750712ff4df9acf2f0166d072fc9b35cecca2761bd72"
+    },
+    {
+      "path": "tools/phase5_controlled_stop_session_v4/runtime_observer.hpp",
+      "bytes": 9121,
+      "sha256": "b6f9098a00ccecfc6104a655d3e6897cb35ffb030c96dab252dfdcfacab0d278"
+    },
+    {
+      "path": "tools/phase5_controlled_stop_session_v4/session_primitives.hpp",
+      "bytes": 2259,
+      "sha256": "0b76bc232ed81dc9b4831617ae1690cfc287def914b8bca5f05ce6e6e25b6080"
+    },
+    {
+      "path": "tools/phase5_controlled_stop_session_v4/solver_forensics.cpp",
+      "bytes": 26514,
+      "sha256": "664c1d480e23c1ddef4f45a57165cba871213740329f8693c897d7c07ee7af27"
+    },
+    {
+      "path": "tools/phase5_controlled_stop_session_v4/solver_forensics.hpp",
+      "bytes": 860,
+      "sha256": "02b3a3d33ea64a351b228b96b2e0590b7a79fb4e9b87da78dc28c59465aca3bb"
+    },
+    {
+      "path": "tools/phase5_controlled_stop_session_v4/stop_objective_factors.hpp",
+      "bytes": 601,
+      "sha256": "08506d74ccb15a684b4ba0e68c935340085fd56d15df7cd12689cc7fc0acb544"
+    },
+    {
+      "path": "tools/phase5_controlled_stop_session_v4/stop_tail_byte_bound.hpp",
+      "bytes": 1419,
+      "sha256": "380ef59896485fc7d72040b70e8dbeaf0559359f6448b27d37a32f490af635db"
+    },
+    {
+      "path": "tools/phase5_controlled_stop_session_v4/task_local_provider.cpp",
+      "bytes": 1839,
+      "sha256": "051b424236979f9fe7ea4cb96564f54969025c997bfba2c61d347a23f7fbae4c"
+    },
+    {
+      "path": "tools/phase5_controlled_stop_session_v4/task_local_provider.hpp",
+      "bytes": 640,
+      "sha256": "1819e2f626fb0ff65ad7e7e8de0b0b52f625e6bf435b073d7cca55722d76f093"
+    },
+    {
+      "path": "tools/phase5_controlled_stop_session_v4/working_face_basis.hpp",
+      "bytes": 3585,
+      "sha256": "f958f516f1ccf19f203b28f6411eed9d818f813bc658e2755d53657500aadf12"
+    },
+    {
+      "path": "tools/phase5_controlled_stop_session_v4/working_face_basis_tests.cpp",
+      "bytes": 2175,
+      "sha256": "ce0226e8d6d2c6514eb9f0a8f7bb84580c8d588a407ddd1882c2e2db74364e22"
+    },
+    {
+      "path": "tools/phase5_controlled_stop_session_v4/working_face_trace_codec.hpp",
+      "bytes": 4504,
+      "sha256": "b57f5eb410dc7616d5604f503a0ed2975af4c8c7f8c78a7a74d0629ea74b77aa"
+    },
+    {
+      "path": "tools/phase5_controlled_stop_session_v4/working_face_trace_codec_tests.cpp",
+      "bytes": 5087,
+      "sha256": "ee1c7aa94c6340eff4febe2ce62c7d9340922e37729ab7ff5003c7102e3e601e"
+    },
+    {
+      "path": "reviews/evidence/phase5_controlled_stop_endpoint_failure_v1_20261011/ARCHIVE_READY.json",
+      "bytes": 1445,
+      "sha256": "bd5e1f9232a766bd4eae97235e8b63a3bee59022293050c1a8c69259f8aeb853"
+    },
+    {
+      "path": "reviews/evidence/phase5_controlled_stop_endpoint_failure_v1_20261011/CURRENT36_SAVED48_VS47_NUMERIC_COMPARE.json",
+      "bytes": 13316,
+      "sha256": "1f4ae8c8c490796cbda487557b66c9c496ae422e54158c76d2b50ceb151cb205"
+    },
+    {
+      "path": "reviews/evidence/phase5_controlled_stop_endpoint_failure_v1_20261011/DELL_FULL_READBACK.json",
+      "bytes": 849,
+      "sha256": "cf14cfadd132ab6522144cf57148e45c81339425bef347dff01aaec0a0d4db41"
+    },
+    {
+      "path": "reviews/evidence/phase5_controlled_stop_endpoint_failure_v1_20261011/DELL_FULL_READBACK_SOURCE.py",
+      "bytes": 3833,
+      "sha256": "8801ed1ba5d29772bb486c789a762279bac2ebdf2c7bbe7fae40e2ebdb33ea84"
+    },
+    {
+      "path": "reviews/evidence/phase5_controlled_stop_endpoint_failure_v1_20261011/IMMUTABLE_SOURCE_WHITESPACE_QUALIFICATION.json",
+      "bytes": 312,
+      "sha256": "b1b6cc9291e98f158a1cfcfe4461ff8fff304d958ab204b4d1ddff1dd24c6291"
+    },
+    {
+      "path": "reviews/evidence/phase5_controlled_stop_endpoint_failure_v1_20261011/PRODUCER_ACTUAL_SUMMARY.json",
+      "bytes": 5194,
+      "sha256": "646347d0c69336a20c44d0e4e5b75d797f97a03b98a1b1438f9eafd044f0e288"
+    },
+    {
+      "path": "reviews/evidence/phase5_controlled_stop_endpoint_failure_v1_20261011/PRODUCER_WORKING_TRACE_VERIFICATION.json",
+      "bytes": 857962,
+      "sha256": "52c2a65485b3d131f9b925f7f8758e34f3a48d09080990742bec9c8a7fd9c7fd"
+    },
+    {
+      "path": "reviews/evidence/phase5_controlled_stop_endpoint_failure_v1_20261011/README.md",
+      "bytes": 3395,
+      "sha256": "81e4fb81c6ff1a007d8077f68d76ae974e5108c16b5b5a02e8b1a65a5cf9d480"
+    },
+    {
+      "path": "reviews/evidence/phase5_controlled_stop_endpoint_failure_v1_20261011/ROOT_ARCHIVE_ADAPTER_ATTEMPT1.py",
+      "bytes": 6717,
+      "sha256": "46247a379a0bea80d0feb46fadbe3111eff6acdf7c09ac78fe23885817cd3701"
+    },
+    {
+      "path": "reviews/evidence/phase5_controlled_stop_endpoint_failure_v1_20261011/ROOT_ARCHIVE_ADAPTER_FAILURE1.json",
+      "bytes": 262,
+      "sha256": "77ac7b4df5f6317953fb4c4c15c981cb07e1b1eb3f85210b5a80ba1c82d50cf5"
+    },
+    {
+      "path": "reviews/evidence/phase5_controlled_stop_endpoint_failure_v1_20261011/ROOT_ARCHIVE_ADAPTER_QUALIFICATION.json",
+      "bytes": 451,
+      "sha256": "23f6268c803ac99a275c3e60fabbf5cb3eeadcd2b1923403ff5633196a28e14a"
+    },
+    {
+      "path": "reviews/evidence/phase5_controlled_stop_endpoint_failure_v1_20261011/ROOT_ARCHIVE_BUILD_SOURCE.py",
+      "bytes": 6717,
+      "sha256": "259f1c951f7154588c9904cc98f8e9e80e84181335f69d75a25505662faf71e5"
+    },
+    {
+      "path": "reviews/evidence/phase5_controlled_stop_endpoint_failure_v1_20261011/ROOT_ARCHIVE_VERIFICATION.json",
+      "bytes": 389,
+      "sha256": "6d213526c29fe83289eff45c0718448ceb6326c7f199391856a1758c5c9c49c1"
+    },
+    {
+      "path": "reviews/evidence/phase5_controlled_stop_endpoint_failure_v1_20261011/ROOT_INDEPENDENT_REVIEW_VERIFICATION.json",
+      "bytes": 527,
+      "sha256": "42e0d8b7a8d2112dd80526ab186e76e48cad1b41ba557213b59a448a7a910d98"
+    },
+    {
+      "path": "reviews/evidence/phase5_controlled_stop_endpoint_failure_v1_20261011/ROOT_PACKET_VERIFICATION.json",
+      "bytes": 772,
+      "sha256": "2291c4221ca333c16951390cb61e5164517951a01d3df333dc811d5523333c72"
+    },
+    {
+      "path": "reviews/evidence/phase5_controlled_stop_endpoint_failure_v1_20261011/ROOT_PUBLIC_SOURCE_BINDING.json",
+      "bytes": 281,
+      "sha256": "668f525c06453e551a39f0d61b3123890cc742cec89f992650adc86fd1c180c7"
+    },
+    {
+      "path": "reviews/evidence/phase5_controlled_stop_endpoint_failure_v1_20261011/SOURCE_PREPARATION.json",
+      "bytes": 11015,
+      "sha256": "f5ebbff48294ef03c67d31702901523900c7bd0ce6272e47210d63af1c3324f0"
+    },
+    {
+      "path": "reviews/evidence/phase5_controlled_stop_endpoint_failure_v1_20261011/SOURCE_READINESS.json",
+      "bytes": 243729,
+      "sha256": "c0788b31eb0dd594f6a9fe0111400e0cf2a64cfcf8b8b98d5e8e3e77db4ebfaf"
+    },
+    {
+      "path": "reviews/evidence/phase5_controlled_stop_endpoint_failure_v1_20261011/STORAGE_CHECKPOINT.json",
+      "bytes": 3303,
+      "sha256": "df47d0b32d7c5dcb52ef4d5fab95d83ecbceb4c4b001d3ffa9c3a7c63cf70642"
+    },
+    {
+      "path": "reviews/evidence/phase5_controlled_stop_endpoint_failure_v1_20261011/independent/FAILURES.json",
+      "bytes": 1246,
+      "sha256": "081d4aed5b858119952001396fcc290a5b3c51e1caeb433ff1462b162009cf91"
+    },
+    {
+      "path": "reviews/evidence/phase5_controlled_stop_endpoint_failure_v1_20261011/independent/INHERITED_HELPER_SCOPE_QUALIFICATION.json",
+      "bytes": 498,
+      "sha256": "e114dc616d2d512b064d7c040e9a287a449c59f1c5e60cc5185734ef7ddd2c0a"
+    },
+    {
+      "path": "reviews/evidence/phase5_controlled_stop_endpoint_failure_v1_20261011/independent/RESOURCE_PLAN.json",
+      "bytes": 306,
+      "sha256": "afbe4fa23c8d10b2b789b266e68e38f16ee740e266d00f3421b90a56f088bbc0"
+    },
+    {
+      "path": "reviews/evidence/phase5_controlled_stop_endpoint_failure_v1_20261011/independent/REVIEW.md",
+      "bytes": 2993,
+      "sha256": "147096c427443f76f1651e65975aa8d1a5b141604e8cab922af4e678ece49186"
+    },
+    {
+      "path": "reviews/evidence/phase5_controlled_stop_endpoint_failure_v1_20261011/independent/SUMMARY.json",
+      "bytes": 13558,
+      "sha256": "12efc656e30336aace1cb7b4b0c8815760ca12413ebe08254fa7f6720cbde41a"
+    },
+    {
+      "path": "figures/phase5_controlled_stop_endpoint_failure_v1_20261011/PROVENANCE.json",
+      "bytes": 1441,
+      "sha256": "2d7343af3259b49c648aa3890c047ac22c4d0227b45cf6cb8f4d85c2d566b8e3"
+    },
+    {
+      "path": "figures/phase5_controlled_stop_endpoint_failure_v1_20261011/RENDER_RECEIPT.json",
+      "bytes": 489,
+      "sha256": "593c4a512ba7da638e2f46acc0153fc0a0553a062d83a2f541edaea60831754e"
+    },
+    {
+      "path": "figures/phase5_controlled_stop_endpoint_failure_v1_20261011/plot_input.json",
+      "bytes": 145166,
+      "sha256": "ece5df8b118768027cdcc5316f07459f052d7a3d308e41ecd1b40d79fb6c39ce"
+    },
+    {
+      "path": "figures/phase5_controlled_stop_endpoint_failure_v1_20261011/producer_plot_source.py",
+      "bytes": 4020,
+      "sha256": "f8a336760a114f8366c9cc68db0ac882794bf0d11e34bff22cb22fa25dc10e6b"
+    },
+    {
+      "path": "figures/phase5_controlled_stop_endpoint_failure_v1_20261011/stop48_actual_diagnostic.png",
+      "bytes": 250000,
+      "sha256": "9b264308db91836782f1ef25918137f732a1ea2d6017a016904d4476fa6ac364"
+    },
+    {
+      "path": "figures/phase5_controlled_stop_endpoint_failure_v1_20261011/stop48_actual_tcp_prefix.png",
+      "bytes": 211097,
+      "sha256": "dcbc8d03541906342729ebf76a3aff0ff862533896e5f6e3cbc4dbcaf3254df7"
+    }
+  ],
+  "files_checked": 94,
+  "max_file_bytes": 857962,
+  "all_JSON_parse_pass": true,
+  "no_symlinks_cache_native_binary_archives_private_key_markers": true,
+  "scope": "Exactsource59, actual48 failure/independentreview/dualhostarchive identities/actualplots; future49pure/source/native excluded. Standing human routine publication approval; no phase acceptance."
+}
