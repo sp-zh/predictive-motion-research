@@ -1,0 +1,20 @@
+{
+  "schema": "PREENTRY55_CONNECTION_FAILURE_RETAINED_V1",
+  "utc": "2026-10-15T21:56:16.153275+00:00",
+  "native55_started": false,
+  "entry_marker_written": false,
+  "stage": "before resource/identity preentry command could authenticate",
+  "error": "Connection timed out during banner exchange; TCP2222 succeeded separately",
+  "stderr_identity": {
+    "bytes": 94,
+    "sha256": "af69994eb9874f204e688d26cbb01c71742502532423bfba13db8d1ff4491062"
+  },
+  "Mac_live": {
+    "bridge0": "active 169.254.142.85",
+    "Dell_ARP": "e0:6c:64:c9:0b:ee",
+    "TCP2222": "open"
+  },
+  "cause": "UNKNOWN until Dell local keeper/WSL/sshd/portproxy state independently inspected",
+  "ownership": "Root coordinates existing communications maintenance owner. Dell native writer does not change original security/port/config scope.",
+  "compiled_source_outcome": "30TU/19link/18pures and saved-data math regressions pass, unaffected by failed authentication. Need fresh resource/allinput checks after actual restoration."
+}

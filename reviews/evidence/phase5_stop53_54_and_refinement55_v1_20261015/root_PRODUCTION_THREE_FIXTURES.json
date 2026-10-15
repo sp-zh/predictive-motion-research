@@ -1,0 +1,36 @@
+{
+  "schema": "ROOT55_PRODUCTION_THREE_SAVED_FIXTURE_REVIEW_V1",
+  "results": {
+    "40-0": {
+      "fixture_sha": "63adf752672de67a3842b39091157b476d3066a6e48de25dbe4bcc4da2514856",
+      "finalxy_sha": "34447bbb8e391cffa36c0c408c196dd55672486074e5a917aa41467dffd79d52",
+      "primal": 8.834192058437829e-13,
+      "stationarity": 2.498001805406602e-16,
+      "active_false_core_bit_identical": true,
+      "refinement_records": 479,
+      "accepted": 271,
+      "scope": "Saved finite records/order/acceptance invariants checked; perstep KKT arrays not in this compact packet."
+    },
+    "40-1": {
+      "fixture_sha": "548579a0aa48ab67cc2eb2e73ed38b0da1765d23e4b1dd59ceb9a9e23882b190",
+      "finalxy_sha": "b1a1fe54d5f10d8a33d3575d72e2e82fba8aeb8128d903c43501972e50a56c1f",
+      "primal": 8.286678634950029e-13,
+      "stationarity": 3.608224830031759e-16,
+      "active_false_core_bit_identical": true,
+      "refinement_records": 431,
+      "accepted": 228,
+      "scope": "Saved finite records/order/acceptance invariants checked; perstep KKT arrays not in this compact packet."
+    },
+    "43-0": {
+      "fixture_sha": "1c7920a7d9f697fce28aea0fad3ea4c10fd34c17248853ea46c9296783680aa2",
+      "finalxy_sha": "70e034c562eda9f837d6cb63133859ac5aa9b83f9529c4e854bb8dd2d9554f77",
+      "primal": 4.604524227180828e-13,
+      "stationarity": 2.2898349882893854e-16,
+      "active_false_core_bit_identical": true,
+      "refinement_records": 428,
+      "accepted": 242,
+      "scope": "Saved finite records/order/acceptance invariants checked; perstep KKT arrays not in this compact packet."
+    }
+  },
+  "scope": "Independent saved-byte arithmetic only; no native Model/B/C/stop acceptance. Same original primal1e-12/stationarity1e-10, finite512/3steps and activefalse core bit equality. Initial parser refused because count-prefixed refinement120 was treated as raw records; no result was written, corrected using exact producer format."
+}

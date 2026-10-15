@@ -17,6 +17,12 @@ Mac/Dell locations with their original hashes. This Git repository alone cannot
 restore the complete experimental dataset. Review links into excluded evidence
 require those local archives.
 
+## 2026-10-15 recoverable progress checkpoint
+
+The [53–54/55 source checkpoint](../reviews/evidence/phase5_stop53_54_and_refinement55_v1_20261015/README.md) includes exact versioned v8 source/profile, independent saved-data reports and actual54 PNG/SVG/CSV with provenance. It preserves failures and the direct-human resumption.55 is prepared but unconsumed after an SSH banner timeout. This checkpoint can be publicly committed/pushed under the existing authorization while communication is restored; it does not gate the next actual entry.
+
+[Storage identities](../reviews/evidence/phase5_stop53_54_and_refinement55_v1_20261015/STORAGE_CHECKPOINT.json) explicitly mark the new full-evidence backup INCOMPLETE.53 has a complete Mac packet and verified outer transport hash;54 has a verified selected Mac packet, with remaining raw data on Dell. New comprehensive Mac/Dell archive member readback is pending the original connection. Do not describe Git or the selected54 packet as a complete experimental-data backup. The older52 complete backup remains valid and unchanged.
+
 ## Required checkpoints
 
 Back up every completed work unit and every phase, including work still awaiting
@@ -48,6 +54,6 @@ record the selection criteria, and preserve the complete research outcomes.
 
 ## Earlier preparation before the daily disconnect
 
-On2026-10-12 the human requested “之后要提前一点做备份”. The existing preparation automation now runs at02:00 America/Toronto when resumed, aiming to verify the remote SHA of completed units or a clearly scoped recoverable checkpoint before02:30, ahead of the approximate03:00 disconnect. It is currently PAUSED after offline52. Resume requires the direct human instruction; reconnecting or a scheduled wake does not authorize new work.
+On2026-10-12 the human requested “之后要提前一点做备份”. The existing preparation automation now runs at02:00 America/Toronto when resumed, aiming to verify the remote SHA of completed units or a clearly scoped recoverable checkpoint before02:30, ahead of the approximate03:00 disconnect. It was PAUSED after offline52 and restored ACTIVE by the direct2026-10-15 human resume. The next offline batch ends in manual wait again; reconnecting or a scheduled wake does not authorize resuming that future wait.
 
 Results produced later by the finite offline batch are preserved locally first and verified/backed up after connection recovery. Unfinished runs, uncopied large evidence and unverified archives are explicitly incomplete backups; a preparation checkpoint does not imply their results exist or are accepted.

@@ -1,3 +1,13 @@
+# Latest human instruction: project resumed (2026-10-15)
+
+Root verified direct human “继续推进项目” in status chat `01a10a40-558c-71a3-b343-6ff4c2709b36`, user message `01a14153-949c-7f33-953a-22d7126b69e8` (turn `01a14153-9176-7423-a877-301f33667219`). This resumes development after offline52 manualwait; preserve that wait and every failure. Start from source/backup `196bf49` (communications recovery) and actual52, without rerunning consumed52 or auditing all history again.
+
+Continue the existing functional work package: repair the true4096 endpoint-diagnostic retention blockage with explicit finite counters/storage/resource bounds, targeted regression and fresh run IDs, then genuine braking/continuous stop and longer task paths. Preserve original mathematics/SI/nonlinear/geometric/B/history/two2ms physical/C/stop criteria. Ordinary implementation, compile, regression and bounded development simulation continue without a new human permission/freeze gate for every edit. Do not erase adverse evidence, expand an old single-use run or turn diagnostic/CI success into research acceptance. Original checker/ec1/d3d4 and rejected protocols remain unchanged; Phase5 NOT_ACCEPTED, Phase6 NOT_STARTED, no hardware authorization.
+
+Mac Root/Git integration remains chat `01a12eb1-3b98-7b61-8a81-9b2f4e7c5c32`; only Dell writer `01a114d9-3a3a-7071-b94f-624581000992` performs scoped native source/experiment writes. Old Root must not resume parallel Git writes. Current recovery evidence and all uncommitted work must be preserved. Daily preparation is02:00 Toronto (backup first, target02:30 remoteSHA), not02:40. The next finite offline batch ends in manualwait again; network or automatic messages do not resume it. A concrete platform refusal stops that operation and is reported, never bypassed through a new chat or rewritten request.
+
+Historical instructions below remain evidence; this section and the continuous functional-work-package workflow govern current ordinary development.
+
 # Latest human instruction: project resumed (2026-10-11)
 
 Direct human “继续项目” in status chat `01a10a40-558c-71a3-b343-6ff4c2709b36`, message `01a12c2c-dbba-7860-a7c9-8c15c606a17f`, was verified by Root. Resume from backed-up `b06bbf0` through the existing continuous development workflow below. Preserve the manual-wait history and all failures. Continue longer genuine nonzero closed-loop/task/physical-stop work and stage timing with fresh finite run IDs and explicit resource limits; do not reuse consumed36 or rejected old protocols. Phase5 NOT_ACCEPTED, Phase6 NOT_STARTED. Existing daily02:40 preparation was restored by the status chat; after the next offline batch ends, direct human manual resume is again required.

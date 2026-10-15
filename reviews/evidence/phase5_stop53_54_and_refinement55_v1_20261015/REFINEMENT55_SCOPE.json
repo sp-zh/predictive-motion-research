@@ -1,0 +1,21 @@
+{
+  "schema": "STOP_ONLY_BOUNDED_KKT_REFINEMENT55_V1",
+  "initial_LU_gate_retained_before_refinement": true,
+  "final_original_double_gate": 1e-10,
+  "rank_LLT_unchanged": true,
+  "outer_iterations": 512,
+  "local_wall": 10,
+  "maximum_steps": 3,
+  "correction_cap": "max(1,oldsolution_inf), reject above cap without clipping",
+  "strict_residual_improvement": "longdouble and saved double norms both strictly decrease",
+  "active_false_refinement_disabled": true,
+  "refinement_records_max": 1536,
+  "numeric_words_per_record_allowance": 16,
+  "additional_scratch_words": 1184,
+  "inventory_words": 691856,
+  "stop_precharge": 700000,
+  "global_original_worst": 1793026160,
+  "global_cap": 1800000000,
+  "ordinary_drop_mask_candidate_deployed": false,
+  "new_native_entered": false
+}

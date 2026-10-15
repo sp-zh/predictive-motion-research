@@ -1,0 +1,40 @@
+{
+  "schema": "ROOT55_SAVED54_FINAL_ACTIVE_FACE_LINEAR_DEPENDENCE_V1",
+  "fixture_sha256": "1c7920a7d9f697fce28aea0fad3ea4c10fd34c17248853ea46c9296783680aa2",
+  "method": "Independent NumPy SVD and lstsq of actual final signed active rows; no optimizer replay or Model/native calls",
+  "A_shape": [
+    7344,
+    144
+  ],
+  "final_faces": 129,
+  "rank_at_absolute_singular_threshold_1e_12": 128,
+  "without_last_row7236_faces": 128,
+  "without_last_row7236_rank": 128,
+  "base_min_singular": 3.975575961278262e-05,
+  "signed_row7236_span_max_residual": 3.490576641452815e-15,
+  "main_signed_row_coefficients": [
+    {
+      "row": 7292,
+      "side": -1,
+      "coefficient": 0.666666666666404
+    },
+    {
+      "row": 7328,
+      "side": -1,
+      "coefficient": -20.96666666665792
+    },
+    {
+      "row": 7329,
+      "side": -1,
+      "coefficient": 20.349999999991507
+    },
+    {
+      "row": 7235,
+      "side": -1,
+      "coefficient": 0.950000000000018
+    }
+  ],
+  "row7236_lower": -0.024464414244750647,
+  "row7236_final_value": -0.02446441424475065,
+  "scope": "Numerical linear dependence only. Mixed-sign coefficients do not prove redundant inequality, physical feasibility, dual sign certificate, or stop/fulltask/phase acceptance. Pure exact-state probe required for cycle mechanism."
+}

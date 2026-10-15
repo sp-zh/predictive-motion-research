@@ -1,0 +1,139 @@
+{
+  "schema": "FAILED_MASK_ONLY_CANDIDATE_TAIL_DIAGNOSIS_V1",
+  "first_exact_repeat": {
+    "from": 264,
+    "at": 266,
+    "period": 2
+  },
+  "tail": [
+    {
+      "iteration": 504,
+      "active": 128,
+      "direction_inf": 1.3444028406978607e-12,
+      "min_lambda": -158.88901279727492,
+      "negative_face": [
+        7329,
+        -1
+      ],
+      "rank": 272,
+      "dimension": 272,
+      "residual": 1.9071793840377826e-15,
+      "poststep_blocker": 7255,
+      "dropped_mask_count": 70,
+      "primal_equals_previous": true
+    },
+    {
+      "iteration": 505,
+      "active": 129,
+      "direction_inf": 1.1885982585222407e-16,
+      "min_lambda": -0.3903963478548613,
+      "negative_face": [
+        7255,
+        -1
+      ],
+      "rank": 272,
+      "dimension": 273,
+      "residual": 9.71445146547012e-17,
+      "poststep_blocker": -1,
+      "dropped_mask_count": 70,
+      "primal_equals_previous": true
+    },
+    {
+      "iteration": 506,
+      "active": 128,
+      "direction_inf": 1.3444028406978607e-12,
+      "min_lambda": -158.88901279727492,
+      "negative_face": [
+        7329,
+        -1
+      ],
+      "rank": 272,
+      "dimension": 272,
+      "residual": 1.9071793840377826e-15,
+      "poststep_blocker": 7255,
+      "dropped_mask_count": 70,
+      "primal_equals_previous": true
+    },
+    {
+      "iteration": 507,
+      "active": 129,
+      "direction_inf": 1.1885982585222407e-16,
+      "min_lambda": -0.3903963478548613,
+      "negative_face": [
+        7255,
+        -1
+      ],
+      "rank": 272,
+      "dimension": 273,
+      "residual": 9.71445146547012e-17,
+      "poststep_blocker": -1,
+      "dropped_mask_count": 70,
+      "primal_equals_previous": true
+    },
+    {
+      "iteration": 508,
+      "active": 128,
+      "direction_inf": 1.3444028406978607e-12,
+      "min_lambda": -158.88901279727492,
+      "negative_face": [
+        7329,
+        -1
+      ],
+      "rank": 272,
+      "dimension": 272,
+      "residual": 1.9071793840377826e-15,
+      "poststep_blocker": 7255,
+      "dropped_mask_count": 70,
+      "primal_equals_previous": true
+    },
+    {
+      "iteration": 509,
+      "active": 129,
+      "direction_inf": 1.1885982585222407e-16,
+      "min_lambda": -0.3903963478548613,
+      "negative_face": [
+        7255,
+        -1
+      ],
+      "rank": 272,
+      "dimension": 273,
+      "residual": 9.71445146547012e-17,
+      "poststep_blocker": -1,
+      "dropped_mask_count": 70,
+      "primal_equals_previous": true
+    },
+    {
+      "iteration": 510,
+      "active": 128,
+      "direction_inf": 1.3444028406978607e-12,
+      "min_lambda": -158.88901279727492,
+      "negative_face": [
+        7329,
+        -1
+      ],
+      "rank": 272,
+      "dimension": 272,
+      "residual": 1.9071793840377826e-15,
+      "poststep_blocker": 7255,
+      "dropped_mask_count": 70,
+      "primal_equals_previous": true
+    },
+    {
+      "iteration": 511,
+      "active": 129,
+      "direction_inf": 1.1885982585222407e-16,
+      "min_lambda": -0.3903963478548613,
+      "negative_face": [
+        7255,
+        -1
+      ],
+      "rank": 272,
+      "dimension": 273,
+      "residual": 9.71445146547012e-17,
+      "poststep_blocker": -1,
+      "dropped_mask_count": 70,
+      "primal_equals_previous": true
+    }
+  ],
+  "scope": "Failed pure candidate preserved; not deployed. Iteration cap unchanged."
+}

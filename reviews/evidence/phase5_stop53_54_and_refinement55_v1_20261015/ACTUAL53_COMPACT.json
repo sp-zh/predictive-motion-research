@@ -1,0 +1,45 @@
+{
+  "schema": "ATTEMPT53_COMPACT_PRODUCER_SAVED_DATA_RESULT_V1",
+  "entry": {
+    "stage": "FRESH_CURRENT_MATRIX_HINT_AND_NATIVE_SOLVER",
+    "error": "finite current near-boundary diagnostic cap",
+    "boundary_unchanged": 0,
+    "session_termination": 1,
+    "session_error": "",
+    "native_termination": 1,
+    "native_error": "",
+    "wall_seconds": 346.058832684,
+    "physical_step_attempts": 1080,
+    "commits": 40
+  },
+  "last_whole_cycle": {
+    "cycle": 40,
+    "trials_entered": 2,
+    "physical_complete": 0,
+    "wall": 7.171743667,
+    "deadline_miss": 1,
+    "last_B_error": "original value-affine1e-6/jointtrust.002",
+    "fatal_error": "finite current near-boundary diagnostic cap",
+    "trials_total": 86,
+    "forecasts": 171,
+    "steps": 80,
+    "commits": 40,
+    "scope": "Whole current cycle monotonic wall spans every rejected fresh trial and actual C with pertrial evidence/manifest; summary serialization excluded. Diagnostic4ms deadline threshold never shortened to last successful trial."
+  },
+  "whole_cycles": 41,
+  "deadline_misses": 41,
+  "stop": {
+    "passed": 0,
+    "failed": 0,
+    "consecutive": 0,
+    "required_halves": 50,
+    "maximum_halves": 178,
+    "scope": "Prospective component: actual measuredv<=1e-4rad/s,a<=1e-3rad/s2 plus acceptedw/alpha/r/b and C/s drift bounds for50actual2ms halves=100ms. All original B/C/geometry/task/jerk gates retained. No exactzero/fulltask/phaseacceptance; all failedpartialpoints retained."
+  },
+  "stop_record_count": 16,
+  "codec_complete_files": 1974,
+  "stored_binary_bytes": 1810847744,
+  "raw_binary_bytes": 4790112746,
+  "source_summary_sha256": "93361adda569627642e734c1e9a1ad77f7f63fca74aa77f07fac85be4e8b58cb",
+  "scope": "Producer saved-data summary; Root independent arithmetic reports separately scoped. No complete task/stop/real-time acceptance."
+}

@@ -1,0 +1,55 @@
+{
+  "schema": "ONLINE53_54_SOURCE55_CHECKPOINT_STORAGE_V1",
+  "date_toronto": "2026-10-15",
+  "Git_scope": "Source/profile/review/actual54 PNG SVG CSV provenance only; excludes raw results, transport archives, dependencies and credentials",
+  "prior_public_checkpoint": "196bf49173cad306cc659e7b3a407341312e549a",
+  "prior_offline52_backup_complete": "ca0d2861ad131460ffaedff3afa1ed7b6ea4bd4d",
+  "packets": [
+    {
+      "attempt": 53,
+      "Mac_packet": "/private/tmp/phase5_controlled_stop_full16384_actual_checkpoint_v1_20261015",
+      "READY_sha256": "09525ba487ff65bd74f1ac3681ec2713a9814fe674ab2502bb3a443d380e6abf",
+      "payload_count": 2535,
+      "payload_bytes": 1856020689,
+      "transport": {
+        "path": "/private/tmp/phase5_stop53_transport_external_v1_20261015/transport.tar.gz",
+        "bytes": 1802787877,
+        "sha256": "95b0c326db25feb290e586fc29d2921f7acbdaf12d04630b8a70d96faadd5fc2",
+        "full_tar_member_size_sha_and_outergzip_crc_eof_single_no_trailing": true
+      },
+      "Root_current_outer_size_sha_verified": true,
+      "Root_selected_payload_size_sha_verified": false,
+      "producer_reported_Mac_full_packet_check": true,
+      "complete_native_evidence_on_Mac": true,
+      "Dell_archive_copy_verified": false,
+      "scope": "Stored source/profile/ELF/runtime/pure/actual artifacts, including failures; no cache/object/dependency copies. Results and stop/full-task status require saved-data review. Mac verified, Dell archive copy not yet verified."
+    },
+    {
+      "attempt": 54,
+      "Mac_packet": "/private/tmp/phase5_controlled_stop_boundary4096_terminal54_v1_20261015",
+      "READY_sha256": "ba74a3866db79dd5b950c887e28f59ce1b602d524a8799aa4ad97346a949249c",
+      "payload_count": 502,
+      "payload_bytes": 48764008,
+      "transport": {
+        "path": "/private/tmp/phase5_stop54_minimal_transport_external_v1_20261015/transport.tar.gz",
+        "bytes": 28479558,
+        "sha256": "977d629d47f9634fa9d7c7173f9e26f71eeb6fe09801edc7a2c4709ccad3d994",
+        "full_tar_member_size_sha_and_outergzip_crc_eof_single_no_trailing": true
+      },
+      "Root_current_outer_size_sha_verified": true,
+      "Root_selected_payload_size_sha_verified": true,
+      "producer_reported_Mac_full_packet_check": true,
+      "complete_native_evidence_on_Mac": false,
+      "Dell_archive_copy_verified": false,
+      "scope": "Selected source/profile/ELF/runtime metadata, all whole-cycle records/actual commits and full last current inputs/failures only. Uncopied full native files remain on Dell with producer hashes and were not Mac-readback verified. This is not a complete evidence archive. Results/stop/fulltask require review; no Git/phase acceptance implied."
+    }
+  ],
+  "Dell_native_roots": [
+    "/home/codextransfer/predictive_motion/results/phase5/session-controlled-stop-full16384-active32-brake64-dwell25-v1-20261015-attempt53",
+    "/home/codextransfer/predictive_motion/results/phase5/session-controlled-stop-boundary4096-active32-brake64-dwell25-v1-20261015-attempt54"
+  ],
+  "Dell_originals_state": "Producer preserved original raw outputs/read-only inventory before SSH failure; current Root readback unavailable",
+  "full_evidence_backup": "INCOMPLETE: full54 Mac transfer and new archive/Dell member readback pending restored original SSH",
+  "native55": "NOT_ENTERED_NOT_CONSUMED: prepared71 source plus profile,1711 distinct intended inputs; resource and identity preentry interrupted before authentication",
+  "scope": "A public recoverable source checkpoint is not completed experimental evidence backup, stop/fulltask/4ms or phase acceptance."
+}

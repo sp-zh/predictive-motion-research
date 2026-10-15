@@ -1,0 +1,52 @@
+{
+  "schema": "ORIGINAL_EIGEN_ROW7236_ZERO_REENTRY_FULL_ENDPOINT_PROOF_V1",
+  "original512_outputs_bit_exact": true,
+  "rows": [
+    {
+      "iteration": 195,
+      "row": 7236,
+      "Ax": -0.02446441424475065,
+      "travel": -1.8253795437508938e-15,
+      "full_endpoint": -0.024464414244752472,
+      "lower": -0.024464414244750647,
+      "upper": 0.17553558475524936,
+      "slack": -3.469446951953614e-18,
+      "positive_travel": 1.8253795437508938e-15,
+      "step_fraction": 0.0,
+      "previously_dropped": 0,
+      "fullendpoint_max_violation": 1.824929096727601e-15,
+      "inside_original1e-12": true
+    },
+    {
+      "iteration": 197,
+      "row": 7236,
+      "Ax": -0.02446441424475065,
+      "travel": -1.8253795437508938e-15,
+      "full_endpoint": -0.024464414244752472,
+      "lower": -0.024464414244750647,
+      "upper": 0.17553558475524936,
+      "slack": -3.469446951953614e-18,
+      "positive_travel": 1.8253795437508938e-15,
+      "step_fraction": 0.0,
+      "previously_dropped": 0,
+      "fullendpoint_max_violation": 1.824929096727601e-15,
+      "inside_original1e-12": true
+    },
+    {
+      "iteration": 199,
+      "row": 7236,
+      "Ax": -0.02446441424475065,
+      "travel": -1.8253795437508938e-15,
+      "full_endpoint": -0.024464414244752472,
+      "lower": -0.024464414244750647,
+      "upper": 0.17553558475524936,
+      "slack": -3.469446951953614e-18,
+      "positive_travel": 1.8253795437508938e-15,
+      "step_fraction": 0.0,
+      "previously_dropped": 0,
+      "fullendpoint_max_violation": 1.824929096727601e-15,
+      "inside_original1e-12": true
+    }
+  ],
+  "scope": "Exact unchanged original branch values. Current KKT direction and faces already prove cycle; row fullendpoint remains within original numeric domain. This is not discarded inequality/global feasibility/physical certificate."
+}

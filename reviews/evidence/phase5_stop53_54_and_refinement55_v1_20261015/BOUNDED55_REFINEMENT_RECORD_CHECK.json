@@ -1,0 +1,29 @@
+{
+  "schema": "BOUND3_PRODUCTION55_ALL3_REFINEMENT_DATA_CHECK_V1",
+  "cases": [
+    {
+      "case": "40-0",
+      "records": 479,
+      "accepted": 271,
+      "max_correction_over_cap": 3.1213044559412306e-15,
+      "finalxy_sha256": "34447bbb8e391cffa36c0c408c196dd55672486074e5a917aa41467dffd79d52"
+    },
+    {
+      "case": "40-1",
+      "records": 431,
+      "accepted": 228,
+      "max_correction_over_cap": 1.4261324040799245e-12,
+      "finalxy_sha256": "b1a1fe54d5f10d8a33d3575d72e2e82fba8aeb8128d903c43501972e50a56c1f"
+    },
+    {
+      "case": "43-0",
+      "records": 428,
+      "accepted": 242,
+      "max_correction_over_cap": 1.7383830630094784e-13,
+      "finalxy_sha256": "70e034c562eda9f837d6cb63133859ac5aa9b83f9529c4e854bb8dd2d9554f77"
+    }
+  ],
+  "activefalse_all3_bit_exact": true,
+  "inputs_before_after_equal": true,
+  "scope": "Data-only pure; all original acceptance gates unchanged. Original activefalse comparisons are the exact three genuine saved inputs, including retained old errors."
+}

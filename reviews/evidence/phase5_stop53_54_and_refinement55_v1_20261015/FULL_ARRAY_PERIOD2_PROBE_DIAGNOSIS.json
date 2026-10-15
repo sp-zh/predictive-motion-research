@@ -1,0 +1,129 @@
+{
+  "schema": "PURE55_FULL_PRIMAL_FACE_SOL_MASK_PERIOD2_PROBE_V1",
+  "first_exact_full_arrays_period2_repeat": 197,
+  "repeated_from": 195,
+  "total_probed_iterations": 512,
+  "cases": [
+    {
+      "iteration": 195,
+      "active": 128,
+      "direction_inf": 1.343620744179522e-12,
+      "drop_position": 126,
+      "drop_face": [
+        7329,
+        -1
+      ],
+      "min_lambda": -158.88901270147736,
+      "KKT_rank": 272,
+      "KKT_dimension": 272,
+      "KKT_residual": 1.3877787807814457e-15,
+      "row7236_in_previously_dropped": false,
+      "row7236_in_active": false,
+      "row7236_current_Ax_numpy": -0.02446441424475065,
+      "row7236_endpoint_numpy": -0.02446441424475247,
+      "row7236_lower": -0.024464414244750647,
+      "row7236_upper": 0.17553558475524936,
+      "row7236_endpoint_max_violation_numpy": 1.8214596497756474e-15,
+      "row7236_travel_numpy": -1.8253795437508953e-15,
+      "row7236_lower_slack_numpy": -3.469446951953614e-18,
+      "primal_bit_identical_prev": true
+    },
+    {
+      "iteration": 196,
+      "active": 129,
+      "direction_inf": 1.8601215681791537e-15,
+      "drop_position": 128,
+      "drop_face": [
+        7236,
+        -1
+      ],
+      "min_lambda": -7.807926952390139,
+      "KKT_rank": 272,
+      "KKT_dimension": 273,
+      "KKT_residual": 1.942890293094024e-16,
+      "row7236_in_previously_dropped": false,
+      "row7236_in_active": true,
+      "row7236_current_Ax_numpy": -0.02446441424475065,
+      "row7236_endpoint_numpy": -0.024464414244750647,
+      "row7236_lower": -0.024464414244750647,
+      "row7236_upper": 0.17553558475524936,
+      "row7236_endpoint_max_violation_numpy": 0.0,
+      "row7236_travel_numpy": -2.5425164246947854e-18,
+      "row7236_lower_slack_numpy": -3.469446951953614e-18,
+      "primal_bit_identical_prev": true
+    },
+    {
+      "iteration": 197,
+      "active": 128,
+      "direction_inf": 1.343620744179522e-12,
+      "drop_position": 126,
+      "drop_face": [
+        7329,
+        -1
+      ],
+      "min_lambda": -158.88901270147736,
+      "KKT_rank": 272,
+      "KKT_dimension": 272,
+      "KKT_residual": 1.3877787807814457e-15,
+      "row7236_in_previously_dropped": false,
+      "row7236_in_active": false,
+      "row7236_current_Ax_numpy": -0.02446441424475065,
+      "row7236_endpoint_numpy": -0.02446441424475247,
+      "row7236_lower": -0.024464414244750647,
+      "row7236_upper": 0.17553558475524936,
+      "row7236_endpoint_max_violation_numpy": 1.8214596497756474e-15,
+      "row7236_travel_numpy": -1.8253795437508953e-15,
+      "row7236_lower_slack_numpy": -3.469446951953614e-18,
+      "primal_bit_identical_prev": true
+    },
+    {
+      "iteration": 198,
+      "active": 129,
+      "direction_inf": 1.8601215681791537e-15,
+      "drop_position": 128,
+      "drop_face": [
+        7236,
+        -1
+      ],
+      "min_lambda": -7.807926952390139,
+      "KKT_rank": 272,
+      "KKT_dimension": 273,
+      "KKT_residual": 1.942890293094024e-16,
+      "row7236_in_previously_dropped": false,
+      "row7236_in_active": true,
+      "row7236_current_Ax_numpy": -0.02446441424475065,
+      "row7236_endpoint_numpy": -0.024464414244750647,
+      "row7236_lower": -0.024464414244750647,
+      "row7236_upper": 0.17553558475524936,
+      "row7236_endpoint_max_violation_numpy": 0.0,
+      "row7236_travel_numpy": -2.5425164246947854e-18,
+      "row7236_lower_slack_numpy": -3.469446951953614e-18,
+      "primal_bit_identical_prev": true
+    },
+    {
+      "iteration": 199,
+      "active": 128,
+      "direction_inf": 1.343620744179522e-12,
+      "drop_position": 126,
+      "drop_face": [
+        7329,
+        -1
+      ],
+      "min_lambda": -158.88901270147736,
+      "KKT_rank": 272,
+      "KKT_dimension": 272,
+      "KKT_residual": 1.3877787807814457e-15,
+      "row7236_in_previously_dropped": false,
+      "row7236_in_active": false,
+      "row7236_current_Ax_numpy": -0.02446441424475065,
+      "row7236_endpoint_numpy": -0.02446441424475247,
+      "row7236_lower": -0.024464414244750647,
+      "row7236_upper": 0.17553558475524936,
+      "row7236_endpoint_max_violation_numpy": 1.8214596497756474e-15,
+      "row7236_travel_numpy": -1.8253795437508953e-15,
+      "row7236_lower_slack_numpy": -3.469446951953614e-18,
+      "primal_bit_identical_prev": true
+    }
+  ],
+  "scope": "Exact full arrays bit-identical recurrence; NumPy row products arithmetic comparison only, not original Eigen full_values branch proof. Need original loop row capture to confirm exact endpoint/slack/travel and drop eligibility."
+}

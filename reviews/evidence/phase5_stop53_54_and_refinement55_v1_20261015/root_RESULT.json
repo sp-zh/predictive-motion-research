@@ -1,0 +1,69 @@
+{
+  "schema": "ROOT54_INDEPENDENT_SELECTED_PACKET_STOP_WHOLE_REVIEW_V1",
+  "payload_files_size_sha_verified": 502,
+  "payload_bytes": 48764008,
+  "whole_cycles": 44,
+  "completed_commands": 43,
+  "actual_task_2ms_halves": 86,
+  "warmup_halves_separate": 1000,
+  "stop_records": 22,
+  "stop_passed": false,
+  "dwell": 0,
+  "required_dwell": 50,
+  "first_stop": {
+    "half": 1065,
+    "time": 2.129999999999987,
+    "v": 0.0004819041120100884,
+    "a": 0.012109483955864697,
+    "w": 0.002527014006838596,
+    "alpha": 0.03526596593634082,
+    "r": 0.02243998157978696,
+    "abs_b": 0.15294175393032047
+  },
+  "last_stop": {
+    "half": 1086,
+    "time": 2.1719999999999824,
+    "v": 0.0010324517881226017,
+    "a": 0.013761050231701766,
+    "w": 0.003681099577904284,
+    "alpha": 0.023519837852288908,
+    "r": 0.024464415244750647,
+    "abs_b": 0.04701824607546894
+  },
+  "stop_v_min_max": [
+    0.0004819041120100884,
+    0.0010324517881226017
+  ],
+  "stop_a_min_max": [
+    0.009811085905157883,
+    0.016709085952475937
+  ],
+  "whole_deadline_misses": 44,
+  "last_whole": {
+    "cycle": 43,
+    "trials": 1,
+    "complete": 0,
+    "wall": 5.720106762,
+    "miss": 1,
+    "B_error": "",
+    "fatal": "current numeric iteration cap512",
+    "trials_total": 92,
+    "forecasts": 183,
+    "steps": 86,
+    "commits": 43
+  },
+  "crossed40": {
+    "cycle": 40,
+    "trials": 3,
+    "complete": 1,
+    "wall": 11.770517736,
+    "miss": 1,
+    "B_error": "original value-affine1e-6/jointtrust.002",
+    "fatal": "",
+    "trials_total": 87,
+    "forecasts": 174,
+    "steps": 82,
+    "commits": 41
+  },
+  "scope": "Independent saved-byte hash and binary parsing only. Uncopied full Dell native data not Mac verified. No stop/full task/real time/phase acceptance. Hold drift unavailable for all below=false records."
+}

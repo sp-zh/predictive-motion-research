@@ -97,3 +97,14 @@ Mac SSH 配置已写入 `.transfer-private/ssh_config`，要求固定主机密�
 唯一 Mac 主审查和源码/Git整合聊天已接替为 `01a12eb1-3b98-7b61-8a81-9b2f4e7c5c32`。旧 Root `01a10958-048c-7480-a04e-51544112196c` 因上下文整理服务故障保留历史，不并行恢复 Git 写入；这不是算法失败或绕过平台拦截。唯一 Dell 写入聊天 `01a114d9-3a3a-7071-b94f-624581000992` 不变。
 
 有限离线52已自然失败结束，进程退出，项目等待直接人类恢复。仅当前结果保存、必要独立审查和可恢复备份收尾允许；不启动53、不修复新controller或新编译/仿真，恢复联网不是恢复授权。每日准备已按用户要求提前到02:00 Toronto并保持PAUSED，恢复后目标02:30前核验已完成单元或明确范围检查点的远端SHA。未完成结果不制造备份完成声明。
+
+## 2026-10-15 人工恢复
+
+Root已核实状态聊天直接用户消息 `01a14153-949c-7f33-953a-22d7126b69e8`“继续推进项目”。offline52人工等待历史保留，现恢复同一功能工作包，优先修复端点诊断容量阻塞并用新尝试验证真实制动与连续停稳。通讯恢复检查点196bf49已在远端核实；旧52及更早失败不改PASS。唯一Mac主审查/Git整合与唯一Dell写入聊天均不变；每日02:00准备恢复ACTIVE，下次有限离线批次结束再次人工等待。
+
+
+### Online53–54 results and prepared55 connection wait (2026-10-15)
+
+Root integrates exact tested69 computational sources plus2 metadata files and profile as `tools/phase5_controlled_stop_session_v8`; Dell remains the unique native source/experiment writer.53/54 retain40/43 commands respectively and all failures.55 stop-only bounded KKT refinement passes saved-input numerical gates and Dell30compile19link18pure; native55 remains unconsumed after preentry SSH banner timeout. Original TCP2222 is reachable, current WSL/keeper cause UNKNOWN; old Dell maintenance host unavailable. Status requested human open Ubuntu. After real recovery and bidirectional SHA, fresh resources/1711 distinct inputs/new preentry file precede the single55 entry; no fresh project-resume permission or Git microgate. Current source/review/figure checkpoint is publicly authorized; full new experimental evidence backup remains incomplete pending Mac/Dell archive readback. Phase5 NOT_ACCEPTED, Phase6 NOT_STARTED. See `reviews/evidence/phase5_stop53_54_and_refinement55_v1_20261015/README.md`.
+
+Checkpoint whitespace qualification: default staged diff check reports only standard CSV CRLF (23 rows), Matplotlib SVG path-format trailing spaces (1037 lines), two exact SSH stderr CRLF lines, and the single preserved tested `current_numeric_tests.cpp:4` space. These four byte-preserved generated/raw/frozen-source paths are explicitly scoped exceptions; all other staged paths pass `git diff --cached --check`. No source or evidence normalization was performed.
