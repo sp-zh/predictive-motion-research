@@ -1,0 +1,42 @@
+● codextransfer-sshd.service - Dedicated Codex USB4 transfer SSH
+     Loaded: loaded (/etc/systemd/system/codextransfer-sshd.service; enabled; preset: enabled)
+     Active: active (running) since Fri 2026-10-16 04:46:50 CST; 42s ago
+    Process: 316 ExecStartPre=/usr/bin/mkdir -p /run/sshd (code=exited, status=0/SUCCESS)
+   Main PID: 334 (sshd)
+      Tasks: 1 (limit: 18988)
+     Memory: 2.6M (peak: 6.0M)
+        CPU: 231ms
+     CGroup: /system.slice/codextransfer-sshd.service
+             └─334 "sshd: /usr/sbin/sshd -D -f /etc/ssh/sshd_config_codextransfer [listener] 0 of 10-100 startups"
+
+Oct 16 04:47:09 ZH2022 sshd[925]: Accepted publickey for codextransfer from 172.29.208.1 port 63239 ssh2: ED25519 SHA256:SrPLHK8YPOW4UiBGv3iWB9APm+PRMlE03bcsBVFhvwU
+Oct 16 04:47:09 ZH2022 sshd[925]: pam_unix(sshd:session): session opened for user codextransfer(uid=1001) by codextransfer(uid=0)
+Oct 16 04:47:10 ZH2022 sshd[925]: pam_unix(sshd:session): session closed for user codextransfer
+Oct 16 04:47:10 ZH2022 sshd[957]: Accepted publickey for codextransfer from 172.29.208.1 port 63249 ssh2: ED25519 SHA256:SrPLHK8YPOW4UiBGv3iWB9APm+PRMlE03bcsBVFhvwU
+Oct 16 04:47:10 ZH2022 sshd[957]: pam_unix(sshd:session): session opened for user codextransfer(uid=1001) by codextransfer(uid=0)
+Oct 16 04:47:10 ZH2022 sshd[957]: pam_unix(sshd:session): session closed for user codextransfer
+Oct 16 04:47:10 ZH2022 sshd[989]: Accepted publickey for codextransfer from 172.29.208.1 port 63250 ssh2: ED25519 SHA256:SrPLHK8YPOW4UiBGv3iWB9APm+PRMlE03bcsBVFhvwU
+Oct 16 04:47:10 ZH2022 sshd[989]: pam_unix(sshd:session): session opened for user codextransfer(uid=1001) by codextransfer(uid=0)
+Oct 16 04:47:10 ZH2022 sshd[989]: pam_unix(sshd:session): session closed for user codextransfer
+Oct 16 04:47:25 ZH2022 sshd[1024]: Connection closed by 172.29.208.1 port 63424
+port 2222
+listenaddress 172.29.211.53:2222
+permitrootlogin no
+pubkeyauthentication yes
+passwordauthentication no
+allowusers codextransfer
+authenticationmethods publickey
+256 SHA256:YeWtFYApPg3CNAiMhEz+YFGysfAr82PX3VxKseU1DBU root@ZH2022 (ED25519)
+Oct 16 04:47:09 ZH2022 sshd[893]: pam_unix(sshd:session): session opened for user codextransfer(uid=1001) by codextransfer(uid=0)
+Oct 16 04:47:09 ZH2022 sshd[893]: pam_unix(sshd:session): session closed for user codextransfer
+Oct 16 04:47:09 ZH2022 sshd[925]: Accepted publickey for codextransfer from 172.29.208.1 port 63239 ssh2: ED25519 SHA256:SrPLHK8YPOW4UiBGv3iWB9APm+PRMlE03bcsBVFhvwU
+Oct 16 04:47:09 ZH2022 sshd[925]: pam_unix(sshd:session): session opened for user codextransfer(uid=1001) by codextransfer(uid=0)
+Oct 16 04:47:10 ZH2022 sshd[925]: pam_unix(sshd:session): session closed for user codextransfer
+Oct 16 04:47:10 ZH2022 sshd[957]: Accepted publickey for codextransfer from 172.29.208.1 port 63249 ssh2: ED25519 SHA256:SrPLHK8YPOW4UiBGv3iWB9APm+PRMlE03bcsBVFhvwU
+Oct 16 04:47:10 ZH2022 sshd[957]: pam_unix(sshd:session): session opened for user codextransfer(uid=1001) by codextransfer(uid=0)
+Oct 16 04:47:10 ZH2022 sshd[957]: pam_unix(sshd:session): session closed for user codextransfer
+Oct 16 04:47:10 ZH2022 sshd[989]: Accepted publickey for codextransfer from 172.29.208.1 port 63250 ssh2: ED25519 SHA256:SrPLHK8YPOW4UiBGv3iWB9APm+PRMlE03bcsBVFhvwU
+Oct 16 04:47:10 ZH2022 sshd[989]: pam_unix(sshd:session): session opened for user codextransfer(uid=1001) by codextransfer(uid=0)
+Oct 16 04:47:10 ZH2022 sshd[989]: pam_unix(sshd:session): session closed for user codextransfer
+Oct 16 04:47:25 ZH2022 sshd[1024]: Connection closed by 172.29.208.1 port 63424
+

@@ -1,0 +1,57 @@
+{
+  "scope": "Existing USB4 SSH communications recovery; no project experiments",
+  "date_toronto": "2026-10-15",
+  "diagnosis": "Windows USB4 and original TCP2222 proxy healthy; Ubuntu-24.04 stopped; recorded keeper PID26568 absent",
+  "repair": "Run existing keeper-only restoration; original Ubuntu and enabled dedicated sshd resumed automatically",
+  "keeper": {
+    "windows_pid": 15432,
+    "start_time_utc": "2026-10-15T20:46:47.2665332Z",
+    "identity_verified_by_dell": true,
+    "linux_sleep_pid": 487
+  },
+  "unchanged": [
+    "portproxy",
+    "Mac-only firewall",
+    "host key",
+    "authentication",
+    "project source"
+  ],
+  "mac_validation": {
+    "fixed_host_key_public_key_login": "PASS",
+    "three_additional_independent_sessions": "PASS",
+    "remote_command_execution": "PASS",
+    "project_directory": "accessible",
+    "upload": {
+      "bytes": 2097152,
+      "sha256": "PASS"
+    },
+    "download_independently_generated_on_dell": {
+      "bytes": 2097152,
+      "sha256": "PASS"
+    },
+    "ping": {
+      "sent": 5,
+      "received": 5,
+      "loss_percent": 0,
+      "mean_ms": 0.8
+    },
+    "final_ssh_after_evidence_transfer": "PASS"
+  },
+  "storage_snapshot": {
+    "dell_D_available": "82G",
+    "note": "WSL virtual free space is not additional physical capacity"
+  },
+  "evidence": {
+    "dell_original": "/mnt/d/CodexTransfer/outbox/connection-repair-20261015",
+    "mac_verified_copy": "/Users/uot/Documents/ChatGPT/ros/reviews/evidence/connection-repair-20261015/dell",
+    "dell_manifest_sha256": "383cc176568f62a02bcf7003dd221e1920307c2867e7099d0978326f54ec06d9",
+    "original_six_payloads_size_and_hash_verified_on_mac": true,
+    "mac_raw_transfer_logs": "/Users/uot/Documents/ChatGPT/ros/transfer/connection-check-20261015",
+    "bidirectional_verification_bundle_dell_target": "/mnt/d/CodexTransfer/inbox/connection-verification-20261015-root1"
+  },
+  "limitations": [
+    "Old keeper exit cause UNKNOWN",
+    "Recovery and short-session tests do not establish permanent stability",
+    "No project or research run was started"
+  ]
+}

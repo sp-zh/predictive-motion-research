@@ -1,0 +1,97 @@
+[
+  {
+    "argv": [
+      "/Users/uot/Documents/ChatGPT/ros/tools/dell-ssh.sh",
+      "DellTransfer",
+      "hostname; id; uname -r; systemctl is-active codextransfer-sshd; test -d /home/codextransfer/predictive_motion && echo PROJECT_DIRECTORY_OK; df -h /mnt/d/CodexTransfer /home/codextransfer/predictive_motion; free -h"
+    ],
+    "exit": 0,
+    "elapsed_s": 0.244,
+    "stdout": "ZH2022\nuid=1001(codextransfer) gid=1001(codextransfer) groups=1001(codextransfer)\n6.18.33.1-microsoft-standard-WSL2\nactive\nPROJECT_DIRECTORY_OK\nFilesystem      Size  Used Avail Use% Mounted on\nD:\\             477G  396G   82G  83% /mnt/d\n/dev/sdd       1007G   68G  889G   8% /\n               total        used        free      shared  buff/cache   available\nMem:            15Gi       760Mi        13Gi       3.9Mi       1.3Gi        14Gi\nSwap:          4.0Gi          0B       4.0Gi\n",
+    "stderr": ""
+  },
+  {
+    "argv": [
+      "/Users/uot/Documents/ChatGPT/ros/tools/dell-ssh.sh",
+      "DellTransfer",
+      "printf \"INDEPENDENT_LOGIN_1_OK\\n\""
+    ],
+    "exit": 0,
+    "elapsed_s": 0.218,
+    "stdout": "INDEPENDENT_LOGIN_1_OK\n",
+    "stderr": ""
+  },
+  {
+    "argv": [
+      "/Users/uot/Documents/ChatGPT/ros/tools/dell-ssh.sh",
+      "DellTransfer",
+      "printf \"INDEPENDENT_LOGIN_2_OK\\n\""
+    ],
+    "exit": 0,
+    "elapsed_s": 0.228,
+    "stdout": "INDEPENDENT_LOGIN_2_OK\n",
+    "stderr": ""
+  },
+  {
+    "argv": [
+      "/Users/uot/Documents/ChatGPT/ros/tools/dell-ssh.sh",
+      "DellTransfer",
+      "printf \"INDEPENDENT_LOGIN_3_OK\\n\""
+    ],
+    "exit": 0,
+    "elapsed_s": 0.208,
+    "stdout": "INDEPENDENT_LOGIN_3_OK\n",
+    "stderr": ""
+  },
+  {
+    "argv": [
+      "python3",
+      "/Users/uot/Documents/ChatGPT/ros/tools/dell-sync.py",
+      "push",
+      "/Users/uot/Documents/ChatGPT/ros/transfer/connection-check-20261015/upload",
+      "connection-check-20261015-mac1"
+    ],
+    "exit": 0,
+    "elapsed_s": 0.96,
+    "stdout": "mac-random-2MiB.bin\n        2097152 100%   99.63MB/s   00:00:00 (xfer#1, to-check=1/2)\nNumber of files: 2\nNumber of files transferred: 1\nTotal file size: 2097152 B\nTotal transferred file size: 2097152 B\nUnmatched data: 2097152 B\nMatched data: 0 B\nFile list size: 75 B\nFile list generation time: 0.009 seconds\nFile list transfer time: 0.000 seconds\nTotal sent: 2097541 B\nTotal received: 42 B\n\nsent 2097541 bytes  received 42 bytes  25864155 bytes/sec\ntotal size is 2097152  speedup is 1.00\nVerified 1 files. SHA-256 manifest: /Users/uot/Documents/ChatGPT/ros/transfer/manifests/push-connection-check-20261015-mac1.json\n",
+    "stderr": ""
+  },
+  {
+    "argv": [
+      "/Users/uot/Documents/ChatGPT/ros/tools/dell-ssh.sh",
+      "DellTransfer",
+      "python3 -c 'import pathlib,os,hashlib,json; p=pathlib.Path('\"'\"'/mnt/d/CodexTransfer/outbox/connection-check-20261015-mac1'\"'\"'); p.mkdir(exist_ok=False); f=p/'\"'\"'dell-random-2MiB.bin'\"'\"'; f.write_bytes(os.urandom(2*1024*1024)); print(json.dumps({'\"'\"'path'\"'\"':str(f),'\"'\"'bytes'\"'\"':f.stat().st_size,'\"'\"'sha256'\"'\"':hashlib.sha256(f.read_bytes()).hexdigest()}))'"
+    ],
+    "exit": 0,
+    "elapsed_s": 0.309,
+    "stdout": "{\"path\": \"/mnt/d/CodexTransfer/outbox/connection-check-20261015-mac1/dell-random-2MiB.bin\", \"bytes\": 2097152, \"sha256\": \"0f69f878270d8f8da5df4fe6295c2f7d1b3154a6cf3228883a01556919239ff1\"}\n",
+    "stderr": ""
+  },
+  {
+    "argv": [
+      "python3",
+      "/Users/uot/Documents/ChatGPT/ros/tools/dell-sync.py",
+      "pull",
+      "/Users/uot/Documents/ChatGPT/ros/transfer/connection-check-20261015/download",
+      "connection-check-20261015-mac1"
+    ],
+    "exit": 0,
+    "elapsed_s": 0.67,
+    "stdout": "dell-random-2MiB.bin\n        2097152 100%   45.35MB/s   00:00:00 (xfer#1, to-check=1/2)\n\nsent 58 bytes  received 2097796 bytes  20978540000 bytes/sec\ntotal size is 2097152  speedup is 1.00\nNumber of files: 2\nNumber of files transferred: 1\nTotal file size: 2097152 B\nTotal transferred file size: 2097152 B\nUnmatched data: 2097152 B\nMatched data: 0 B\nFile list size: 62 B\nTotal sent: 62 B\nTotal received: 2097556 B\nVerified 1 files. SHA-256 manifest: /Users/uot/Documents/ChatGPT/ros/transfer/manifests/pull-connection-check-20261015-mac1.json\n",
+    "stderr": ""
+  },
+  {
+    "argv": [
+      "ping",
+      "-c",
+      "5",
+      "-W",
+      "1000",
+      "169.254.118.3"
+    ],
+    "exit": 0,
+    "elapsed_s": 4.02,
+    "stdout": "PING 169.254.118.3 (169.254.118.3): 56 data bytes\n64 bytes from 169.254.118.3: icmp_seq=0 ttl=128 time=0.957 ms\n64 bytes from 169.254.118.3: icmp_seq=1 ttl=128 time=0.827 ms\n64 bytes from 169.254.118.3: icmp_seq=2 ttl=128 time=0.831 ms\n64 bytes from 169.254.118.3: icmp_seq=3 ttl=128 time=0.704 ms\n64 bytes from 169.254.118.3: icmp_seq=4 ttl=128 time=0.679 ms\n\n--- 169.254.118.3 ping statistics ---\n5 packets transmitted, 5 packets received, 0.0% packet loss\nround-trip min/avg/max/stddev = 0.679/0.800/0.957/0.100 ms\n",
+    "stderr": ""
+  }
+]

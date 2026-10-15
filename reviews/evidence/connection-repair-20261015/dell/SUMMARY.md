@@ -1,0 +1,9 @@
+# Dell original SSH channel recovery — 20261015
+
+Before any WSL start, Windows diagnosis showed USB4 Up/20Gbps, IPv4169.254.118.3, original2222 listener and mapping to172.29.211.53:2222, IP Helper Running and correct Mac-only firewall. Ubuntu-24.04 was Stopped and the recorded Windows keeperPID26568 did not exist. This explains a Windows proxy accepting TCP while no backend supplied an SSH banner. Why the keeper exited or the distro stopped is UNKNOWN; no unsupported crash/power/reboot attribution is made.
+
+Only the existing keeper-only restoration script was run. It started the original Ubuntu-24.04 using the existing codextransfer account and hidden sleep infinity process. The enabled dedicated codextransfer-sshd started automatically. WSL address is unchanged172.29.211.53. Keeper Windows PID15432, UTC StartTime2026-10-15T20:46:47.2665332Z; full PID/start-time identity matches. Linux keeper sleep PID487. Dedicated sshd active/enabled, PID334, listening172.29.211.53:2222.
+
+Both direct WSL172.29.211.53:2222 and Windows USB4 proxy169.254.118.3:2222 return SSH-2.0-OpenSSH_9.6p1 Ubuntu-3ubuntu13.19. Dedicated account remains codextransfer, public-key-only authentication, password authentication/root login disabled. Existing ED25519 host public-key fingerprint is SHA256:YeWtFYApPg3CNAiMhEz+YFGysfAr82PX3VxKseU1DBU. Service logs show successful public-key sessions after startup. Mac will independently validate fixed-host-key login and bidirectional file integrity; these Dell-side tests alone do not establish the file-transfer result.
+
+No UAC, mapping/firewall change, added account/privilege/port, host-key change, project source edit, project/model experiment, environment rebuild, Windows restart, WSL shutdown or research-process termination was performed. Original scope remains local169.254.118.3, remote Mac169.254.142.85, TCP2222, interface以太网4. The old chat remains communications-only; project writing belongs to the newer project conversation.
