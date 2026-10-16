@@ -1,0 +1,35 @@
+{
+  "schema": "ROOT62_FROZEN91_SOURCE_AND_FINITE_CODEC_RESOURCE_REVIEW_V1",
+  "source_directory": "/private/tmp/phase5_current_braking_nominal62_source_v3_20261016/src-final-v2",
+  "source90_manifest_entries_all_verified": true,
+  "total_source_files": 91,
+  "changed_old_files": [
+    "README.md",
+    "active_first_cycle.cpp",
+    "model_boundary.cpp",
+    "model_boundary.hpp"
+  ],
+  "added_files": [
+    "braking_nominal62_codec.hpp",
+    "current_braking_nominal62.hpp",
+    "current_braking_nominal62_tests.cpp"
+  ],
+  "unchanged_old_sources": 83,
+  "profile_changed_keys": [
+    "current_braking_nominal62",
+    "session_id"
+  ],
+  "old_QP_cost_constraints_initializer_numeric_hint_SI_nonlinear_B_C_stop_source_exact": true,
+  "current_history_build_only_first_stop_trial": true,
+  "build_cap89_precharge2048_before_generation": true,
+  "unused_persistent_active_diagnostic_removed": true,
+  "maximum_family_attempts": 1072,
+  "record_bytes": 96,
+  "actual_header_bound": 3192,
+  "conservative_max_payload": 108288,
+  "hard_raw_file_cap": 131072,
+  "all144_stop_files_max": 18874368,
+  "whole_numeric_upper": 1799688432,
+  "conservative_hint_peak": 744960,
+  "scope": "Independent static source/profile/finite-allocation and codec review only. The132-joint/132plus16-progress generator can reject valid extreme histories and is not a complete feasible-set method or stopping proof. Prefix-source-failure, compiled/regression/new nominal Model/SI/nonlinear/B/C/physical stop/actual session results require their own evidence. Consumed61 unchanged; no native entry or hardware/research acceptance inferred."
+}

@@ -1,0 +1,36 @@
+{
+  "schema": "SAVED_ORIGINAL74_V3_SAME_HELPER_SCALAR_REGRESSION_V1",
+  "rows": [
+    {
+      "label": "compile",
+      "exit": 0,
+      "wall_s": 6.643456281002727,
+      "CPU": 90,
+      "AS": 2147483648,
+      "FSIZE": 33554432,
+      "wallcap": 100
+    },
+    {
+      "label": "link",
+      "exit": 0,
+      "wall_s": 0.318246533999627,
+      "CPU": 90,
+      "AS": 2147483648,
+      "FSIZE": 33554432,
+      "wallcap": 100
+    },
+    {
+      "label": "run",
+      "exit": 0,
+      "wall_s": 0.033019007998518646,
+      "CPU": 25,
+      "AS": 536870912,
+      "FSIZE": 16777216,
+      "wallcap": 30
+    }
+  ],
+  "input_before_after_equal": true,
+  "source_actual_w2": 0.0009410562469194435,
+  "prior_perturbed_fixture_retained": true,
+  "scope": "Original74 helper input correction only, no frozen controller overwrite/Model/native/phase/stop acceptance."
+}

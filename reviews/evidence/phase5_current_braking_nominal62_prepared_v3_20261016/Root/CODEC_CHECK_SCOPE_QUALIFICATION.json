@@ -1,0 +1,4 @@
+{
+  "schema": "PURE_RAW_CODEC_SCOPE_QUALIFICATION_V1",
+  "scope": "Standalone pure nominal fixtures use RAW_V1, so applicable storage checks are exact full stored/raw size+SHA and complete EOF/prefix framing. No gzip CRC exists for RAW. Earlier generic Root field names mentioning SHA_CRC_singleEOF mean all applicable canonical checks, not a claim to test nonexistent RAW gzip CRC. Actual native stored GZIP streams separately require CRC/singleEOF. This qualification preserves prior reports/receipts unchanged."
+}

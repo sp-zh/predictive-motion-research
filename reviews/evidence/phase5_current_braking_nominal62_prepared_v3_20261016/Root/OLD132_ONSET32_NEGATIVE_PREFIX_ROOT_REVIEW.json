@@ -1,0 +1,35 @@
+{
+  "schema": "ROOT62_OLD132_REAL_CXX_FIRST_STOP32_NEGATIVE_PREFIX_REVIEW_V1",
+  "all_copied_payload_SHA_size": true,
+  "old132_onset32_actual_history_byte_values_equal": true,
+  "raw_prefix_stored_SHA_CRC_singleEOF_verified": true,
+  "source_complete": false,
+  "terminal_available": false,
+  "records": 155,
+  "all132progress_failures_original_order_and_reason_bound_recomputed": true,
+  "replay": {
+    "attempts": 155,
+    "counts_per_channel": [
+      2,
+      4,
+      4,
+      4,
+      2,
+      4,
+      3,
+      132
+    ],
+    "successful_channels": [
+      0,
+      1,
+      2,
+      3,
+      4,
+      5,
+      6
+    ],
+    "every_rejected_reason_location_and_observed_bound_recomputed": true,
+    "scope": "Independent scalar recurrence/family+codec review only; no Model/native/SI/nonlinear/B/C/physical stop acceptance."
+  },
+  "scope": "Expected finite-family rejection reproduced in C++ scalar helper, not a native controller/Model run or proof all feasible progress plans are impossible. Original closed/raw prefix is retained as incomplete source; no complete24-directory or stopping acceptance claim."
+}

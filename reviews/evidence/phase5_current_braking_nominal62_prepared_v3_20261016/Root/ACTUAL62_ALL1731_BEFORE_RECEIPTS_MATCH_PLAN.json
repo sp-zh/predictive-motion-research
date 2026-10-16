@@ -1,0 +1,9 @@
+{
+  "schema": "ROOT62_ACTUAL1731_STARTUP_RECEIPTS_MATCH_FROZEN_PLAN_V2",
+  "count": 1731,
+  "all_declared_requested_bytes_SHA_and_resolved_fields_match": true,
+  "plan_resolved_path_undeclared_source_records": 2,
+  "undeclared_resolved_paths_equal_requested": true,
+  "reader_qualification": "First aggregate checker assumed resolved_path present in every plan entry. Source/profile entries declare requested/size/SHA only. KeyError after separate exact-original74 report was successfully written; no runtime/capture repeated. Corrected checker compares all declared fields and additionally requires equal requested/resolved path for those entries.",
+  "scope": "Independently received original driver startup observations match all declared plan identities; all91 source/profile hashes separately verified. No full dependency rehash/cold IO during native; termination identity still pending."
+}

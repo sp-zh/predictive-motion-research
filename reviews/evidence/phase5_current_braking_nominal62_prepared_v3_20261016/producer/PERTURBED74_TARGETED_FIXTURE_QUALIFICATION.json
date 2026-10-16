@@ -1,0 +1,14 @@
+{
+  "schema": "SOURCE62_V3_TARGETED_FIXTURE_GLOBAL_NUMERIC_SUBSTITUTION_ERROR_V1",
+  "case": "saved-3 originally labeled74",
+  "source_actual_w2": 0.0009410562469194435,
+  "test_fixture_w2": 0.0009410722469194435,
+  "delta": 1.6e-08,
+  "cause": "Whole C++ test string replace1056to1072 for record capacity also changed digits inside a numeric fixture literal. Unintentional synthetic perturbation, not actual saved74 history.",
+  "correct_source_snapshot_stored_sha256": "3b682097741ed5bd5995b6bdb115b61a099b35fef7dbb32c9fe7c3b852833f7e",
+  "original_python_design_input_correct": true,
+  "affected_scope": "Test literal and derived saved-3 pure outputs only. Production helper reads actual current acceptedHistory; no stored fixture in production main/Model/solver and no native62 entry.",
+  "old_perturbed_fixture_output_preserved": true,
+  "fix": "Fresh separately bounded original74 same-production-helper pure test, no frozen source/controller overwrite or consumed native rerun.",
+  "report_scope_correction": "Existing five-case summaries remain historical; saved-3 qualifies as perturbed74, not original-input byte match. Other exactbound cases32/43x2/95 unaffected."
+}

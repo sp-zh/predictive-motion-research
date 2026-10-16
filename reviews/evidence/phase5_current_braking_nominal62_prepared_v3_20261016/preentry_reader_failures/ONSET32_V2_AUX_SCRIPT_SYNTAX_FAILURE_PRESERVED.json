@@ -1,0 +1,9 @@
+{
+  "schema": "PREFLIGHT_PURE_RUNNER_SYNTAX_FAILURE_V1",
+  "original_remote": "pure-onset32-refusal-attempt1/runner.py",
+  "error": "Global SOURCE placeholder substitution also touched schema name REAL_SOURCE132, causing SyntaxError at line12 before any compilation/read/Model/native output. Original bad runner retained.",
+  "new_attempt": "pure-onset32-refusal-attempt2",
+  "fix": "Exact source=Path(SOURCE); token replacement only; no schema/other literal substitution. Also pin actual compile/link file paths/constants.",
+  "native62_entries": 0,
+  "Model_invocations": 0
+}

@@ -1,0 +1,238 @@
+{
+  "schema": "ROOT62V3_PURE26_ALL_FAMILY_COUNTEREXAMPLES_AND_NEW_CODEC_REVIEW_V1",
+  "initial_binding_assertion": "First audit correctly rejected saved-3 as unequal to actual74; subsequent qualification explicitly retains its w[2]+1.6e-8 and requires separate actual-value test. A debug invocation also used system Python without NumPy and stopped before evidence reads; bundled Python used for review.",
+  "payload_hashes_verified": 163,
+  "all26_exit0_declared_no_Model_native": true,
+  "pure_input_before_after_bytes_equal": true,
+  "saved_cases": [
+    {
+      "case": "actual61_32",
+      "source_history_values_exact": true,
+      "history_qualification": "Exact original history",
+      "recomputed": {
+        "attempts": 156,
+        "counts_per_channel": [
+          2,
+          4,
+          4,
+          4,
+          2,
+          4,
+          3,
+          133
+        ],
+        "successful_channels": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7
+        ],
+        "every_rejected_reason_location_and_observed_bound_recomputed": true,
+        "scope": "Independent scalar recurrence/family+codec review only; no Model/native/SI/nonlinear/B/C/physical stop acceptance."
+      },
+      "selected_families": [
+        1,
+        3,
+        3,
+        3,
+        1,
+        3,
+        2,
+        132
+      ],
+      "raw_bytes": 18175
+    },
+    {
+      "case": "actual61_43_0",
+      "source_history_values_exact": true,
+      "history_qualification": "Exact original history",
+      "recomputed": {
+        "attempts": 44,
+        "counts_per_channel": [
+          2,
+          5,
+          4,
+          5,
+          1,
+          4,
+          2,
+          21
+        ],
+        "successful_channels": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7
+        ],
+        "every_rejected_reason_location_and_observed_bound_recomputed": true,
+        "scope": "Independent scalar recurrence/family+codec review only; no Model/native/SI/nonlinear/B/C/physical stop acceptance."
+      },
+      "selected_families": [
+        1,
+        4,
+        3,
+        4,
+        0,
+        3,
+        1,
+        20
+      ],
+      "raw_bytes": 7423
+    },
+    {
+      "case": "actual61_43_1",
+      "source_history_values_exact": true,
+      "history_qualification": "Exact original history",
+      "recomputed": {
+        "attempts": 44,
+        "counts_per_channel": [
+          2,
+          5,
+          4,
+          5,
+          1,
+          4,
+          2,
+          21
+        ],
+        "successful_channels": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7
+        ],
+        "every_rejected_reason_location_and_observed_bound_recomputed": true,
+        "scope": "Independent scalar recurrence/family+codec review only; no Model/native/SI/nonlinear/B/C/physical stop acceptance."
+      },
+      "selected_families": [
+        1,
+        4,
+        3,
+        4,
+        0,
+        3,
+        1,
+        20
+      ],
+      "raw_bytes": 7423
+    },
+    {
+      "case": "actual61_74_w2_plus1p6e8",
+      "source_history_values_exact": false,
+      "history_qualification": "Original actual74 w[2] plus1.6e-8 embedded in this saved test; not exact actual74 input",
+      "recomputed": {
+        "attempts": 43,
+        "counts_per_channel": [
+          1,
+          4,
+          2,
+          4,
+          1,
+          3,
+          1,
+          27
+        ],
+        "successful_channels": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7
+        ],
+        "every_rejected_reason_location_and_observed_bound_recomputed": true,
+        "scope": "Independent scalar recurrence/family+codec review only; no Model/native/SI/nonlinear/B/C/physical stop acceptance."
+      },
+      "selected_families": [
+        0,
+        3,
+        1,
+        3,
+        0,
+        2,
+        0,
+        26
+      ],
+      "raw_bytes": 7327
+    },
+    {
+      "case": "actual61_95",
+      "source_history_values_exact": true,
+      "history_qualification": "Exact original history",
+      "recomputed": {
+        "attempts": 8,
+        "counts_per_channel": [
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1
+        ],
+        "successful_channels": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7
+        ],
+        "every_rejected_reason_location_and_observed_bound_recomputed": true,
+        "scope": "Independent scalar recurrence/family+codec review only; no Model/native/SI/nonlinear/B/C/physical stop acceptance."
+      },
+      "selected_families": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "raw_bytes": 3967
+    }
+  ],
+  "source_case_metadata_qualification": "Pure saved fixtures serialize synthetic cycle43 tags; source history values bind actual32/43x2/74/95. These are not native Model observations or owner/token factories.",
+  "rejected_B_trial1_controls_preserved": true,
+  "source_incomplete_real132_exhaustion": {
+    "source_complete": false,
+    "terminal_available": false,
+    "replay": {
+      "attempts": 132,
+      "counts_per_channel": [
+        132,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "successful_channels": [],
+      "every_rejected_reason_location_and_observed_bound_recomputed": true,
+      "scope": "Independent scalar recurrence/family+codec review only; no Model/native/SI/nonlinear/B/C/physical stop acceptance."
+    }
+  },
+  "synthetic_max_records": 1072,
+  "scope": "Independent complete finite-family/reason/cell/step/observed-bound and scalar literal200macro400half/jerk/domain/lastcell input review. Old26 preparation suite not physical stop, native entry, full24 V3 transaction or SI/nonlinear/B/C acceptance. Complete prefix storage is distinct from source completion."
+}

@@ -1,0 +1,26 @@
+schema: ACTIVE_SESSION_EVIDENCE_MANIFEST_V1
+stage: EXPECTED_NO_FEASIBLE_NOMINAL_FAMILY
+error: All132 actual family rejections retained; no Model entered
+actual_boundary_unchanged: true
+output_bytes: 13133
+output_bytes_semantics: LOGICAL_RAW_CONSUMED_BINARY_EXCLUDES_MANIFEST
+core_data_only_execution_permission: false
+phase5: NOT_ACCEPTED
+phase6: NOT_STARTED
+files:
+  - file: stop_objective_mode.bin
+    role: STOP_COST_CURRENT_HISTORY_JOINT_HAT_PROGRESS_ENVELOPE_NOMINAL_V3
+    bytes: 13133
+    sha256: e64bd3fa0429a23791a62c8f916b5dea50eea81fe64b8aa3ce8d6f91ad9a0429
+    created: true
+    hash_valid: true
+    complete: false
+    error: finite132 joint or132plus16 progress nominal families exhausted; all failures retained, no inherited nominal fallback
+    codec: RAW_V1
+    raw_bytes: 13133
+    raw_sha256: e64bd3fa0429a23791a62c8f916b5dea50eea81fe64b8aa3ce8d6f91ad9a0429
+    storage_stream_complete: true
+    raw_hash_valid: true
+    compressor_input_hash_valid: true
+    zlib_allocation_peak: 0
+    raw_scope: RECONSTRUCTIBLE_RAW_PAYLOAD_OR_SOURCEFAILURE_PREFIX

@@ -1,0 +1,26 @@
+schema: ACTIVE_SESSION_EVIDENCE_MANIFEST_V1
+stage: EXPECTED_OLD132_FAMILY_REFUSAL_AT_REAL_FIRST_STOP32
+error: finite132 current-history braking nominal families exhausted; retained failures, no old nominal fallback
+actual_boundary_unchanged: true
+output_bytes: 15346
+output_bytes_semantics: LOGICAL_RAW_CONSUMED_BINARY_EXCLUDES_MANIFEST
+core_data_only_execution_permission: false
+phase5: NOT_ACCEPTED
+phase6: NOT_STARTED
+files:
+  - file: stop_objective_mode.bin
+    role: STOP_COST_AND_CURRENT_HISTORY_FINITE_BRAKING_NOMINAL_FAMILY_DIAGNOSTICS_V2
+    bytes: 15346
+    sha256: 77b7ce001e65b2541194ff511c55f0b3e175b62142001c872f0ade25157abd24
+    created: true
+    hash_valid: true
+    complete: false
+    error: finite132 current-history braking nominal families exhausted; retained failures, no old nominal fallback
+    codec: RAW_V1
+    raw_bytes: 15346
+    raw_sha256: 77b7ce001e65b2541194ff511c55f0b3e175b62142001c872f0ade25157abd24
+    storage_stream_complete: true
+    raw_hash_valid: true
+    compressor_input_hash_valid: true
+    zlib_allocation_peak: 0
+    raw_scope: RECONSTRUCTIBLE_RAW_PAYLOAD_OR_SOURCEFAILURE_PREFIX

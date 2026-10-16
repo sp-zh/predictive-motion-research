@@ -1,0 +1,33 @@
+{
+  "schema": "ROOT62_ORIGINAL74_EXACT_HISTORY_EXTRA_FROZEN_HELPER_REVIEW_V1",
+  "payload_hashes_verified": 14,
+  "every_original_history_field_exact": true,
+  "raw_SHA_CRC_singleEOF": true,
+  "recomputed": {
+    "attempts": 43,
+    "counts_per_channel": [
+      1,
+      4,
+      2,
+      4,
+      1,
+      3,
+      1,
+      27
+    ],
+    "successful_channels": [
+      0,
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7
+    ],
+    "every_rejected_reason_location_and_observed_bound_recomputed": true,
+    "scope": "Independent scalar recurrence/family+codec review only; no Model/native/SI/nonlinear/B/C/physical stop acceptance."
+  },
+  "original_snapshot_stored_sha256": "3b682097741ed5bd5995b6bdb115b61a099b35fef7dbb32c9fe7c3b852833f7e",
+  "scope": "Additional fresh pure helper from the exact original74 values. Perturbed fixture/source/tests remain unchanged and qualified. No controller/Model/native replay or SI/nonlinear/physical stop acceptance."
+}

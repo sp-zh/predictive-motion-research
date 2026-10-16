@@ -1,0 +1,26 @@
+schema: ACTIVE_SESSION_EVIDENCE_MANIFEST_V1
+stage: SYNTHETIC_RELINEARIZATION_NOMINAL_PRESERVED
+error: ""
+actual_boundary_unchanged: true
+output_bytes: 3199
+output_bytes_semantics: LOGICAL_RAW_CONSUMED_BINARY_EXCLUDES_MANIFEST
+core_data_only_execution_permission: false
+phase5: NOT_ACCEPTED
+phase6: NOT_STARTED
+files:
+  - file: stop_objective_mode.bin
+    role: STOP_COST_CURRENT_HISTORY_JOINT_HAT_PROGRESS_ENVELOPE_NOMINAL_V3
+    bytes: 3199
+    sha256: 67c83eb169693894ab9b5b938b71ce31efef7f04d7ff481d19f5d0f47f85ec56
+    created: true
+    hash_valid: true
+    complete: true
+    error: ""
+    codec: RAW_V1
+    raw_bytes: 3199
+    raw_sha256: 67c83eb169693894ab9b5b938b71ce31efef7f04d7ff481d19f5d0f47f85ec56
+    storage_stream_complete: true
+    raw_hash_valid: true
+    compressor_input_hash_valid: true
+    zlib_allocation_peak: 0
+    raw_scope: RECONSTRUCTIBLE_RAW_PAYLOAD_OR_SOURCEFAILURE_PREFIX

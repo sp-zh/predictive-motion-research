@@ -1,0 +1,34 @@
+{
+  "schema": "SAVED32_V2_REAL_SOURCE132_REFUSAL_PREFIX_ONLY_V1",
+  "rows": [
+    {
+      "label": "compile",
+      "exit": 0,
+      "wall_s": 6.445352692004235,
+      "CPU": 90,
+      "AS": 2147483648,
+      "FSIZE": 33554432,
+      "wallcap": 100
+    },
+    {
+      "label": "link",
+      "exit": 0,
+      "wall_s": 0.31647608499770286,
+      "CPU": 90,
+      "AS": 2147483648,
+      "FSIZE": 33554432,
+      "wallcap": 100
+    },
+    {
+      "label": "run",
+      "exit": 0,
+      "wall_s": 0.0329879670025548,
+      "CPU": 25,
+      "AS": 536870912,
+      "FSIZE": 16777216,
+      "wallcap": 30
+    }
+  ],
+  "input_before_after_equal": true,
+  "scope": "Expected old V2 planner failure, process0 not a feasible plan. Prefix source incomplete retained; no Model/native/stop acceptance."
+}

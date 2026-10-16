@@ -4,6 +4,10 @@ Updated 2026-10-16, America/Toronto. **Resumed after offline61 by verified direc
 
 Local saved-data review confirms all128 records separately exceed physical v/a and accepted w/alpha thresholds. At43/trial1, a narrow nominal-centered alpha subset forces joints2/3/4/6 to increase absolute command velocity despite stop cost; this is a concrete restriction, not yet a complete cause or verified repair. Actual stopping/progress/closed-loop investigation remains next work.
 
+## Online62 V3 source and actual entry snapshot
+
+[Source/preparation and live original-channel entry proof](../reviews/evidence/phase5_current_braking_nominal62_prepared_v3_20261016/README.md) record once62 entry2026-10-16T19:36:47Z (Toronto15:36:47), driver15688/native15689 and1731 startup identities. Frozen91source files/profile bind actual runtime.38compile/27link/26pure, exact-original74 extra helper and old8stop×5core/6active byte compatibility pass; old132 first-stop32 rejection and perturbed74 fixture error remain. New nominal planning alone is not actual stopping. Actual terminal/stop/before-after/archive verification is pending at this snapshot. Original criteria/counters and finite bounds remain. Online62 is not an offline supervisor/batch; next actual offline batch still ends manualwait.
+
 ## Actual61 terminal result and verified two-device archive
 
 [Source, independent reviews and backup identities](../reviews/evidence/phase5_actual61_exact_cycle_and_stop_refusal_v1_20261016/README.md): one offline invocation completes96C/192 actual simulated2ms task halves/384ms,32active64brake,173trials346forecasts. Original64-brake boundary refuses because stop thresholds are not reached:128 observations allfalse,dwell0/50; no hold25 entered.96 whole records all miss4ms. Last physical_complete1 precedes post-loop refusal and does not prove successful stopping.
