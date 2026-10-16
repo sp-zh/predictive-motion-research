@@ -1,0 +1,8 @@
+{
+  "schema": "ROOT58_READER_ASSUMPTION_FAILURE_PRESERVED_V1",
+  "initial_error": "AssertionError: (seed/D).tobytes()==solver_seed.tobytes()",
+  "cause": "This is valid only before a successful hint. Production overwrites solver_seed with completed hint.x. Original nominal remains seed/D.",
+  "correction": "Assert solver_seed==hint.x; reconstruct original nominal separately and verify its full seven-field fixture hash and non-beta initializer bits.",
+  "retry_scope": "Saved-data read-only audit only; no new capture, source mutation or native entry.",
+  "all_corrected_checks_passed": true
+}

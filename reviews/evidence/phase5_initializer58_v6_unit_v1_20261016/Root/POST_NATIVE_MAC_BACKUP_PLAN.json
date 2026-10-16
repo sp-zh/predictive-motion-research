@@ -1,0 +1,18 @@
+{
+  "schema": "POST_NATIVE58_INDEPENDENT_MAC_ARCHIVE_COPY_PLAN_V1",
+  "basis": "Existing explicit human required milestone Mac/Dell archival backup; run58 has naturally ended and full archive is sealed. New phase does not alter in-run selected capture or original runtime entry.",
+  "source_archive": "/home/codextransfer/predictive_motion/transfer/cold-archives/native58-complete-20261016-v1/complete58.tar.gz",
+  "bytes": 3225158075,
+  "sha256": "12408b223543570a2e92fe912bddb5525d49645bec71c38631f4b069e8ff0fb5",
+  "Mac_destination": "/Users/uot/Documents/ChatGPT/ros/transfer/cold-backups/native58-complete-20261016-v1",
+  "single_part_or_final_cap_bytes": 4294967296,
+  "metadata_cap_bytes": 16777216,
+  "minimum_Mac_free_before_and_after_bytes": 35433480192,
+  "Mac_full_extracted_native_mirror": false,
+  "one_attempt_no_reset_no_refund": true,
+  "Gitignored_before_write": true,
+  "native58_finished_before_copy": true,
+  "source_Dell_preserved": true,
+  "full_tar_member_count": 4405,
+  "scope": "Two independent physical archive copies can be claimed only after Root entire streamed members/hash/CRC verify and retained Mac final file plus READY. Earlier full-evidence replication gaps remain separate."
+}

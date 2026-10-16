@@ -1,0 +1,32 @@
+{
+  "schema": "ROOT58_HISTORICAL_STOP_REQUOTE_AUTHORITY_QUALIFICATION_V1",
+  "verified_source": "Read-only role=user records from original Dell chat rollout, not agent messages",
+  "source_chat": "01a114d9-3a3a-7071-b94f-624581000992",
+  "historical_stop": {
+    "timestamp": "2026-10-08T07:29:02.399Z",
+    "message_id": "msg_01a11a6a-63bf-7532-b42c-6b6b0785abcf",
+    "text": "完成当前最小工作后就保存，上传git，不要继续了"
+  },
+  "later_verified_direct_continues": [
+    {
+      "timestamp": "2026-10-08T17:35:40.905Z",
+      "message_id": "msg_01a11c95-c969-7821-9fc2-f960a78b9154",
+      "text": "继续"
+    },
+    {
+      "timestamp": "2026-10-08T17:38:55.545Z",
+      "message_id": "msg_01a11c98-c1b8-7b90-9c5e-120dcd4f43df",
+      "text": "继续"
+    }
+  ],
+  "current_resume_authority": {
+    "date": "2026-10-15",
+    "chat": "01a10a40-558c-71a3-b343-6ff4c2709b36",
+    "message": "01a14153-949c-7f33-953a-22d7126b69e8",
+    "text": "继续推进项目",
+    "basis": "Verified direct-human resume already recorded in current human-provided AGENTS; same active functional work package"
+  },
+  "scope_correction": "Dell first re-quoted the old stop as current; Root temporarily withheld new native dispatch while checking. Both corrected the mistaken temporal attribution. No new human stop/freeze or new resumption is manufactured. Native58 had no entry during ambiguity. Unexposed claimed live steering is not used to manufacture authority.",
+  "actual_phase5": "NOT_ACCEPTED",
+  "actual_phase6": "NOT_STARTED"
+}

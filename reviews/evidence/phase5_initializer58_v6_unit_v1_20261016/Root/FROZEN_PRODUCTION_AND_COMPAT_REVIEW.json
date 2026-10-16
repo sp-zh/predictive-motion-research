@@ -1,0 +1,146 @@
+{
+  "schema": "ROOT58_FROZEN_PRODUCTION_V6_ALL_GATES_AND_COMPAT_REVIEW_V1",
+  "initializer_cases": [
+    {
+      "case": "actual55_current40_trial2",
+      "fixture_sha256": "5f2bd577c3586b91f4ce8f6b0a3256eb30322b95065aa00b51cb16dd197b00cb",
+      "seed_Ddelta_inf": 3.0590361040548806e-12,
+      "seed_max_violation_numpy": 8.395974887553947e-13,
+      "hint_max_violation_numpy": 7.868063839344686e-13,
+      "hint_stationarity_numpy": 2.220446049250313e-16,
+      "nonbeta_bits_exact": true,
+      "full_V3_base_old_new_bitexact_or_actual57_failure_exact": true,
+      "V4": {
+        "header_context": [
+          54,
+          0
+        ],
+        "complete": 1,
+        "legacy_complete": 1,
+        "global_entered": 0,
+        "corrections": 2,
+        "scans": 0,
+        "codec_raw_sha256": "a8736bbf4f190b533b48eccf3ce95b00f2fe1a92c18af9f713aca53bdc6c114a",
+        "measured_current_rows": 0,
+        "row_table_allocated": [
+          0,
+          0
+        ]
+      }
+    },
+    {
+      "case": "actual57_current54_trial0",
+      "fixture_sha256": "601f0a92e224e024a12e56a8aaaef037fe1106377fb3e354886ac4f749c7c2e9",
+      "seed_Ddelta_inf": 1.2442612996843024e-10,
+      "seed_max_violation_numpy": 6.813438702124586e-13,
+      "hint_max_violation_numpy": 3.504748574689742e-13,
+      "hint_stationarity_numpy": 2.1684043449710089e-16,
+      "nonbeta_bits_exact": true,
+      "full_V3_base_old_new_bitexact_or_actual57_failure_exact": true,
+      "V4": {
+        "header_context": [
+          54,
+          0
+        ],
+        "complete": 1,
+        "legacy_complete": 0,
+        "global_entered": 1,
+        "corrections": 1,
+        "scans": 2,
+        "codec_raw_sha256": "347e549bc3101afb216ea312651af57da0424eee44e4422c6bdff1d0a91cb395",
+        "measured_current_rows": 0,
+        "row_table_allocated": [
+          0,
+          0
+        ]
+      }
+    },
+    {
+      "case": "old52_current40_trial0",
+      "fixture_sha256": "de00c6a6e12b40ff8d156cca60c2e2c355f23a630921cb147391eb955c9a77a2",
+      "seed_Ddelta_inf": 1.006573971352078e-08,
+      "seed_max_violation_numpy": 8.834187721629139e-13,
+      "hint_max_violation_numpy": 8.834192058437829e-13,
+      "hint_stationarity_numpy": 2.498001805406602e-16,
+      "nonbeta_bits_exact": true,
+      "full_V3_base_old_new_bitexact_or_actual57_failure_exact": true,
+      "V4": {
+        "header_context": [
+          54,
+          0
+        ],
+        "complete": 1,
+        "legacy_complete": 1,
+        "global_entered": 0,
+        "corrections": 0,
+        "scans": 0,
+        "codec_raw_sha256": "fb73b4e11716012559211a718fd87e3cd5e312cd3a95902aa5d4790356ba7c9b",
+        "measured_current_rows": 7349,
+        "row_table_allocated": [
+          7349,
+          4
+        ]
+      }
+    },
+    {
+      "case": "old53_current40_trial1",
+      "fixture_sha256": "39a69a54ed17220c2f4ee4527261568f14737eb5a69c21ba17558576fd2f89ce",
+      "seed_Ddelta_inf": 3.089942457618941e-12,
+      "seed_max_violation_numpy": 8.384447650056082e-13,
+      "hint_max_violation_numpy": 8.286678634950029e-13,
+      "hint_stationarity_numpy": 3.608224830031759e-16,
+      "nonbeta_bits_exact": true,
+      "full_V3_base_old_new_bitexact_or_actual57_failure_exact": true,
+      "V4": {
+        "header_context": [
+          54,
+          0
+        ],
+        "complete": 1,
+        "legacy_complete": 1,
+        "global_entered": 0,
+        "corrections": 1,
+        "scans": 0,
+        "codec_raw_sha256": "1c12a3e02d4f5147dbc9f6a542ad5a05a9cc4bd2c4d7f6fa5330859e27840ca6",
+        "measured_current_rows": 0,
+        "row_table_allocated": [
+          0,
+          0
+        ]
+      }
+    },
+    {
+      "case": "old54_current43_trial0",
+      "fixture_sha256": "dbee63c9e0353265f9d8cf4ba153765fb00a8a9a277ac820fac0e7de4a61dbe3",
+      "seed_Ddelta_inf": 1.0065741176867655e-08,
+      "seed_max_violation_numpy": 4.604524227180828e-13,
+      "hint_max_violation_numpy": 4.604524227180828e-13,
+      "hint_stationarity_numpy": 2.2898349882893854e-16,
+      "nonbeta_bits_exact": true,
+      "full_V3_base_old_new_bitexact_or_actual57_failure_exact": true,
+      "V4": {
+        "header_context": [
+          54,
+          0
+        ],
+        "complete": 1,
+        "legacy_complete": 1,
+        "global_entered": 0,
+        "corrections": 0,
+        "scans": 0,
+        "codec_raw_sha256": "aad407c58e002ddf8d9fae5ee73ee05f589df610d2ea638c247c85f4492f04e7",
+        "measured_current_rows": 7344,
+        "row_table_allocated": [
+          7344,
+          4
+        ]
+      }
+    }
+  ],
+  "old_stop_cases_full_arrays_and_trace_records_bitexact": 5,
+  "activefalse_complete_core_cases_bitexact": 6,
+  "entire_bitexact_files_checked": 31,
+  "pre_native_snapshot_files_all_size_SHA_verified": 335,
+  "pre_native_snapshot_bytes": 11204401,
+  "scope": "Pure saved-matrix/codec full EOF/exact-pair/old-byte compatibility only. Five harness V4 context headers are synthetic54/0; separate fixture identities identify old actual cases. Oldsource57 vsnew58 actual56 fixture are both complete despite inherited final stdout wording. Original thresholds unchanged. No Model/nativeOSQP/physical/phase acceptance by Root; actual58 ongoing separately."
+}

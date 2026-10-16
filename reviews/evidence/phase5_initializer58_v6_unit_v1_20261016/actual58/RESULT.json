@@ -1,0 +1,100 @@
+{
+  "schema": "ROOT58_SELECTED_CODEC_COUNTS_STOP_AND_SAVED_BLOCKAGE_CROSSING_V1",
+  "payload_count": 865,
+  "payload_bytes": 93137772,
+  "complete_binary_files": 221,
+  "raw_binary_bytes": 170894680,
+  "all_codec_CRC_singleEOF_stored_and_raw_SHA_passed": true,
+  "before_after_1720_input_records_byte_equal": true,
+  "entry": {
+    "stage": "FRESH_CURRENT_MATRIX_HINT_AND_NATIVE_SOLVER",
+    "error": "current numeric iteration cap512",
+    "boundary_unchanged": 0,
+    "session_termination": 1,
+    "session_error": "",
+    "native_termination": 1,
+    "native_error": "",
+    "wall_seconds": 587.355278971,
+    "physical_step_attempts": 1148,
+    "commits": 74
+  },
+  "whole_boundaries": 75,
+  "whole_deadline_misses": 75,
+  "task_halves": 148,
+  "task_duration_ms": 296,
+  "last_whole": {
+    "cycle": 74,
+    "trials_entered": 1,
+    "physical_complete": 0,
+    "wall": 5.123974794,
+    "deadline_miss": 1,
+    "last_B_error": "",
+    "fatal_error": "current numeric iteration cap512",
+    "trials_total": 152,
+    "forecasts": 303,
+    "steps": 148,
+    "commits": 74,
+    "scope": "Whole current cycle monotonic wall spans every rejected fresh trial and actual C with pertrial evidence/manifest; summary serialization excluded. Diagnostic4ms deadline threshold never shortened to last successful trial."
+  },
+  "stop": {
+    "records": 84,
+    "passed": 0,
+    "failed": 0,
+    "consecutive": 0,
+    "required": 50,
+    "all_original_thresholds_and_anchor_drifts_independently_recomputed": true,
+    "first": {
+      "global_half": 1065,
+      "time_s": 2.129999999999987,
+      "v": 0.0004819041120100884,
+      "a": 0.012109483955864697,
+      "w": 0.002527014006838596,
+      "alpha": 0.03526596593634082,
+      "s": 0.0013111383870357486,
+      "r": 0.02243998157978696,
+      "b": 0.15294175393032047,
+      "below": 0,
+      "hold": 0,
+      "consecutive": 0,
+      "C_drift": 0.0,
+      "s_drift": 0.0
+    },
+    "last": {
+      "global_half": 1148,
+      "time_s": 2.2959999999999687,
+      "v": 0.0026060903890309907,
+      "a": 0.006318947754223141,
+      "w": 0.0037353347049269977,
+      "alpha": 0.0450125746371192,
+      "s": 0.003983566769707787,
+      "r": 0.002217349344098695,
+      "b": -0.11947137145727882,
+      "below": 0,
+      "hold": 0,
+      "consecutive": 0,
+      "C_drift": 0.0,
+      "s_drift": 0.0
+    }
+  },
+  "crossing54": {
+    "original_seven_fields_fixture_sha256": "601f0a92e224e024a12e56a8aaaef037fe1106377fb3e354886ac4f749c7c2e9",
+    "one_correction_row": 7358,
+    "limiting_rows": [
+      7075,
+      7075
+    ],
+    "nonbeta_bits_equal": true,
+    "seed_delta_physical_inf": 1.2442612996843024e-10,
+    "seed_violation_numpy": 6.813438702124586e-13,
+    "hint_iterations": 173,
+    "finalxy_sha256": "aad3b819cd4eb17dc8c4745b2aef83135d1814ff94729d69a0dada12ce384936",
+    "final_violation_numpy": 3.504748574689742e-13,
+    "final_stationarity_numpy": 2.1684043449710089e-16
+  },
+  "failure74": {
+    "hint_complete": false,
+    "error": "current numeric iteration cap512",
+    "retained_events": 512
+  },
+  "scope": "Selected packet independent review; not a full original B/C/SI audit. Full stored-evidence restoration separately verified on Mac and Dell; not standalone environment restoration or research acceptance. Stop/fulltask/realtime remain unmet."
+}

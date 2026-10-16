@@ -1,0 +1,40 @@
+{
+  "schema": "ROOT58_EXACT_FIXTURE_BINARY80_INTERVAL_AND_PURE_RESULT_REVIEW_V1",
+  "fixture_sha256": "601f0a92e224e024a12e56a8aaaef037fe1106377fb3e354886ac4f749c7c2e9",
+  "all7fixture_arrays_bitexact_actual_QP": true,
+  "nominal_reduced_seed_div_D_bitexact_actual_solver_and_V3_seed": true,
+  "shapeA": [
+    7359,
+    144
+  ],
+  "all7359_saved_row_intervals_replayed_Fraction_p64_match_binary64_bits": true,
+  "interval_replay_scope": "Exact source-order binary80-significand64 replay from actual recorded double base/travel and original bounds; does not independently reproduce all Eigen A*seed/travel products or prove whole-polytope feasibility.",
+  "lower_row": 7358,
+  "upper_row": 7075,
+  "decisive_exact_intervals": {
+    "7075": {
+      "lower_fraction": "-11803555025333583461/295147905179352825856",
+      "upper_fraction": "17915856793296095873/2535301200456458802993406410752",
+      "saved_lower": -0.03999200000474645,
+      "saved_upper": 7.066559503884786e-12
+    },
+    "7358": {
+      "lower_fraction": "5208396276480557205/79228162514264337593543950336",
+      "upper_fraction": "3493701512284423063/9223372036854775808",
+      "saved_lower": 6.573920322262719e-11,
+      "saved_upper": 0.3787878769634664
+    }
+  },
+  "two_physical_free_beta_rows_rank": 2,
+  "old_V5_failure_reproduced_same_seed": true,
+  "new_corrections": 1,
+  "corrected_row": 7358,
+  "all_nonbeta_seed_bits_preserved": true,
+  "new_seed_reconstructed_from_exact_delta_bits": true,
+  "physical_Ddelta_inf": 1.2442612996843024e-10,
+  "new_seed_max_violation_numpy": 6.813438702124586e-13,
+  "hint_max_violation_numpy": 3.504748574689742e-13,
+  "hint_stationarity_numpy": 2.1684043449710089e-16,
+  "finalxy_sha256": "aad3b819cd4eb17dc8c4745b2aef83135d1814ff94729d69a0dada12ce384936",
+  "scope": "Pure saved-data arithmetic only; no Root Model/nativeOSQP/physics. Formal58 V6/V4 codec, negative regressions and fresh bounded native entry are separate, not accepted by this prototype result."
+}

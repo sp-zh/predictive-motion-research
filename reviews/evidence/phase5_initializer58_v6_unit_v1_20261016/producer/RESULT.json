@@ -1,0 +1,248 @@
+{
+  "rows": [
+    {
+      "test": "cycle_support_tests",
+      "exit": 0,
+      "wall_s": 0.010724361000029603,
+      "elf_sha256": "3130db3cb6e3d9dba1147fafa38c70a4ba309333a83864fec3ba7691845d2557",
+      "Model_native_invocations": 0,
+      "CPU": 10,
+      "AS": 1073741824,
+      "FSIZE": 1048576,
+      "wall": 15
+    },
+    {
+      "test": "fine_timing_tests",
+      "exit": 0,
+      "wall_s": 0.0021255659994494636,
+      "elf_sha256": "1f5a199c0819db47930d0ead274e9aa1638617a2131127463a175bcc68b68e94",
+      "Model_native_invocations": 0,
+      "CPU": 10,
+      "AS": 1073741824,
+      "FSIZE": 1048576,
+      "wall": 15
+    },
+    {
+      "test": "evidence_buffer_tests",
+      "exit": 0,
+      "wall_s": 0.052020248000189895,
+      "elf_sha256": "1a8181ee82543135f8a059382b5faad2b228af6289bd20d68d269e82aa5412c3",
+      "Model_native_invocations": 0,
+      "CPU": 10,
+      "AS": 1073741824,
+      "FSIZE": 1048576,
+      "wall": 15
+    },
+    {
+      "test": "current_numeric_tests",
+      "exit": 0,
+      "wall_s": 0.0023171419998107012,
+      "elf_sha256": "5985c89f6a36da0603a5a8ba2f143b5855fbc0e19142c2551df91c5ff867ce74",
+      "Model_native_invocations": 0,
+      "CPU": 10,
+      "AS": 1073741824,
+      "FSIZE": 1048576,
+      "wall": 15
+    },
+    {
+      "test": "fraction_repair_regression",
+      "exit": 0,
+      "wall_s": 0.47814475999985007,
+      "elf_sha256": "d76e8292c62e7844f66695bf153f146c503349faf64788114a40e0d64804106d",
+      "Model_native_invocations": 0,
+      "CPU": 10,
+      "AS": 1073741824,
+      "FSIZE": 1048576,
+      "wall": 15
+    },
+    {
+      "test": "rank_saved_regression",
+      "exit": 0,
+      "wall_s": 0.4178373239992652,
+      "elf_sha256": "d76e8292c62e7844f66695bf153f146c503349faf64788114a40e0d64804106d",
+      "Model_native_invocations": 0,
+      "CPU": 10,
+      "AS": 1073741824,
+      "FSIZE": 1048576,
+      "wall": 15
+    },
+    {
+      "test": "current_alpha_trust_tests",
+      "exit": 0,
+      "wall_s": 0.018130296000890667,
+      "elf_sha256": "ccca45184ee9883928f63839d5a44cddd02582016922f6c0ac137e6a86308c7d",
+      "Model_native_invocations": 0,
+      "CPU": 10,
+      "AS": 1073741824,
+      "FSIZE": 1048576,
+      "wall": 15
+    },
+    {
+      "test": "bounded_current_trials_tests",
+      "exit": 0,
+      "wall_s": 0.0019969519998994656,
+      "elf_sha256": "ace1e972f2affbf111a61c0fdddd51ea725990b3941179d05b30894c72c01bd6",
+      "Model_native_invocations": 0,
+      "CPU": 10,
+      "AS": 1073741824,
+      "FSIZE": 1048576,
+      "wall": 15
+    },
+    {
+      "test": "actual_stop_monitor_tests",
+      "exit": 0,
+      "wall_s": 0.0020598789997166023,
+      "elf_sha256": "39782c31fd15fc6143450f41f6b40fa46537e28a7c31850c5ff69f688e4b2da6",
+      "Model_native_invocations": 0,
+      "CPU": 10,
+      "AS": 1073741824,
+      "FSIZE": 1048576,
+      "wall": 15
+    },
+    {
+      "test": "progress_interior_guard_tests",
+      "exit": 0,
+      "wall_s": 0.03795371799969871,
+      "elf_sha256": "2e454b9d96ccb7faae5ebf44d570b093578187f58d9272be7737a4801dc62730",
+      "Model_native_invocations": 0,
+      "CPU": 10,
+      "AS": 1073741824,
+      "FSIZE": 1048576,
+      "wall": 15
+    },
+    {
+      "test": "bounded_progress_seed_tests",
+      "exit": 0,
+      "wall_s": 0.011426729999584495,
+      "elf_sha256": "98c9a9339cdd0e5f2608f8b85015de140310783cc6608077d911dd11921984ab",
+      "Model_native_invocations": 0,
+      "CPU": 10,
+      "AS": 1073741824,
+      "FSIZE": 1048576,
+      "wall": 15
+    },
+    {
+      "test": "working_face_basis_tests",
+      "exit": 0,
+      "wall_s": 0.002036035000855918,
+      "elf_sha256": "ca6447660737a2335b03297953fb7196701ee60663d2b1939ea79d12aebb1af1",
+      "Model_native_invocations": 0,
+      "CPU": 10,
+      "AS": 1073741824,
+      "FSIZE": 1048576,
+      "wall": 15
+    },
+    {
+      "test": "working_face_trace_codec_tests",
+      "exit": 0,
+      "wall_s": 0.08368308599892771,
+      "elf_sha256": "364cf0b1146d3ee67b5249ceb3be170205b9ec57438c36543ccbaabd913b8a1e",
+      "Model_native_invocations": 0,
+      "CPU": 10,
+      "AS": 1073741824,
+      "FSIZE": 8388608,
+      "wall": 15
+    },
+    {
+      "test": "bounded_flat_progress_seed_tests",
+      "exit": 0,
+      "wall_s": 0.0026988069985236507,
+      "elf_sha256": "9266b2db45c17551de2d0cefb812d5b3c963095aa30145551faff8a245f18257",
+      "Model_native_invocations": 0,
+      "CPU": 10,
+      "AS": 1073741824,
+      "FSIZE": 1048576,
+      "wall": 15
+    },
+    {
+      "test": "flat_progress_seed_codec_tests",
+      "exit": 0,
+      "wall_s": 0.031100444999538013,
+      "elf_sha256": "5be9d7bb69938c792a83fa98d10f82ad17cb0052b1109357876797c77df21731",
+      "Model_native_invocations": 0,
+      "CPU": 10,
+      "AS": 1073741824,
+      "FSIZE": 8388608,
+      "wall": 15
+    },
+    {
+      "test": "lossless_stream_storage_tests",
+      "exit": 0,
+      "wall_s": 0.3008204919988202,
+      "elf_sha256": "e867fb12764c4738d7bf1ab8f7db1200641f8634163a52f890e6e15a5a6b7b4e",
+      "Model_native_invocations": 0,
+      "CPU": 10,
+      "AS": 1073741824,
+      "FSIZE": 1048576,
+      "wall": 15
+    },
+    {
+      "test": "evidence_compression_tests",
+      "exit": 0,
+      "wall_s": 0.0416724360002263,
+      "elf_sha256": "2b5dac1d992f5e85a69bcf79c42faae10b3bdfe5c1431575ce1642bcd95e3ec9",
+      "Model_native_invocations": 0,
+      "CPU": 10,
+      "AS": 1073741824,
+      "FSIZE": 8388608,
+      "wall": 15
+    },
+    {
+      "test": "kkt_refinement_tests",
+      "exit": 0,
+      "wall_s": 0.0021041169984528096,
+      "elf_sha256": "65c4f41c8a838b833af9293282cc4af956cb05e90c18f043bb9a38dcf11509d1",
+      "Model_native_invocations": 0,
+      "CPU": 10,
+      "AS": 1073741824,
+      "FSIZE": 1048576,
+      "wall": 15
+    },
+    {
+      "test": "bounded_row_progress_seed_tests",
+      "exit": 0,
+      "wall_s": 0.002019225999902119,
+      "elf_sha256": "f9b70fb3858ddc6e860519a051e755186dc9fc93469f07fa6e54c0d7b1bd2742",
+      "Model_native_invocations": 0,
+      "CPU": 10,
+      "AS": 1073741824,
+      "FSIZE": 1048576,
+      "wall": 15
+    },
+    {
+      "test": "boundary_retention_codec_tests",
+      "exit": 0,
+      "wall_s": 0.02789688700067927,
+      "elf_sha256": "ed0017bdba5eb92fb4c9fd09dc70d25c47c61f922f351c4ab673bd6b8965eee1",
+      "Model_native_invocations": 0,
+      "CPU": 10,
+      "AS": 1073741824,
+      "FSIZE": 8388608,
+      "wall": 15
+    },
+    {
+      "test": "global_interval_seed_tests",
+      "exit": 0,
+      "wall_s": 0.0021700589986721752,
+      "elf_sha256": "61d2539167c414124e4ebb84c54ef4496c7745b00ab71877d490816039d4bff9",
+      "Model_native_invocations": 0,
+      "CPU": 10,
+      "AS": 1073741824,
+      "FSIZE": 1048576,
+      "wall": 15
+    },
+    {
+      "test": "global_interval_codec_tests",
+      "exit": 0,
+      "wall_s": 0.044528956999783986,
+      "elf_sha256": "ccbbc19ddc7ea3ab6373cc064fc015e80af8ccc4fa83b8dba6bf4d8c91ab8aeb",
+      "Model_native_invocations": 0,
+      "CPU": 10,
+      "AS": 1073741824,
+      "FSIZE": 8388608,
+      "wall": 15
+    }
+  ],
+  "complete": true,
+  "scope": "pure ledger/timing only no Model/native physical steps"
+}

@@ -1,0 +1,89 @@
+{
+  "case": "actual58_current54_trial0",
+  "available": true,
+  "fixture_sha256": "601f0a92e224e024a12e56a8aaaef037fe1106377fb3e354886ac4f749c7c2e9",
+  "all7_original_nominal_D_fields_bitexact_to_actual57_failure": true,
+  "initializer_complete": 1,
+  "global_entered": 1,
+  "legacy_error": "bounded initializer ray has no interior; wholepolytope unknown",
+  "corrections": 1,
+  "selected_rows": [
+    7358
+  ],
+  "limiting_rows": [
+    7075,
+    7075
+  ],
+  "hint_present": 1,
+  "hint_complete": 1,
+  "hint_error": "",
+  "scope": "Actual selected context crosses old saved-input initializer blockage only if measured complete; no stop/full-task/4ms/phase acceptance.",
+  "nonbeta_bits_exact": true,
+  "seed_delta_physical_inf": 1.2442612996843024e-10,
+  "seed_violation_numpy": 6.813438702124586e-13,
+  "hint_iterations": 173,
+  "finalxy_sha256": "aad3b819cd4eb17dc8c4745b2aef83135d1814ff94729d69a0dada12ce384936",
+  "final_violation_numpy": 3.504748574689742e-13,
+  "final_stationarity_numpy": 2.1684043449710089e-16,
+  "finalxy_bitexact_production_pure": true,
+  "input_pins": {
+    "/private/tmp/phase5_controlled_stop_global_interval_terminal58_v1_20261016/READY.json": {
+      "bytes": 242135,
+      "sha256": "80afd6ecffd138417a78ea1fab50ccc19663e7f8e2d88c04132c4dfbe52cb7ba"
+    },
+    "/private/tmp/phase5_controlled_stop_global_interval_terminal58_v1_20261016/actual-dell/session-controlled-stop-global-interval-active32-brake64-dwell25-v1-20261016-attempt58/run-attempt1/artifacts/cycle-54/trial-0/qp_equality_reduction.bin": {
+      "bytes": 7717522,
+      "sha256": "c3578ac13aca4a1850dc394c66a45e721bff5b1329d1eff00f93a3da727cb3ad"
+    },
+    "/private/tmp/phase5_controlled_stop_global_interval_terminal58_v1_20261016/actual-dell/session-controlled-stop-global-interval-active32-brake64-dwell25-v1-20261016-attempt58/run-attempt1/artifacts/cycle-54/trial-0/MANIFEST.yaml": {
+      "bytes": 12744,
+      "sha256": "d0544468c8f20edb12a34ad8aec1af442998e36f43f55b5e8e5a7e578ae26454"
+    },
+    "/private/tmp/phase5_controlled_stop_global_interval_terminal58_v1_20261016/actual-dell/session-controlled-stop-global-interval-active32-brake64-dwell25-v1-20261016-attempt58/run-attempt1/artifacts/cycle-54/trial-0/numeric_feasible_initializer.bin": {
+      "bytes": 2721,
+      "sha256": "33532056e09eaebca451489947e61a7eafd45f7d0b71a7a6776cb1abd108d6d6"
+    },
+    "/private/tmp/phase5_controlled_stop_global_interval_terminal58_v1_20261016/actual-dell/session-controlled-stop-global-interval-active32-brake64-dwell25-v1-20261016-attempt58/run-attempt1/artifacts/cycle-54/trial-0/current_numeric_hint.bin": {
+      "bytes": 5709,
+      "sha256": "c0a84f5a03b15c743642e4f89b72a343cff9ad79288b99b2a5b0e1b793594b9d"
+    }
+  },
+  "codec_receipts": {
+    "/private/tmp/phase5_controlled_stop_global_interval_terminal58_v1_20261016/actual-dell/session-controlled-stop-global-interval-active32-brake64-dwell25-v1-20261016-attempt58/run-attempt1/artifacts/cycle-54/trial-0/qp_equality_reduction.bin": {
+      "file": "/private/tmp/phase5_controlled_stop_global_interval_terminal58_v1_20261016/actual-dell/session-controlled-stop-global-interval-active32-brake64-dwell25-v1-20261016-attempt58/run-attempt1/artifacts/cycle-54/trial-0/qp_equality_reduction.bin",
+      "codec": "GZIP_DEFLATE_V1",
+      "stored_bytes": 7717522,
+      "stored_sha256": "c3578ac13aca4a1850dc394c66a45e721bff5b1329d1eff00f93a3da727cb3ad",
+      "raw_bytes": 20010153,
+      "raw_sha256": "7f7a84d38579c1dc62a1abac7d85fa80b2ec67a35dc3b3aaf144b56f2d3e4a8c",
+      "source_complete": true,
+      "closed_raw_prefix_valid": true,
+      "scope": "source complete is separate from successful gzip prefix reconstruction; no Model/native/mathematical acceptance",
+      "math_available": true
+    },
+    "/private/tmp/phase5_controlled_stop_global_interval_terminal58_v1_20261016/actual-dell/session-controlled-stop-global-interval-active32-brake64-dwell25-v1-20261016-attempt58/run-attempt1/artifacts/cycle-54/trial-0/numeric_feasible_initializer.bin": {
+      "file": "/private/tmp/phase5_controlled_stop_global_interval_terminal58_v1_20261016/actual-dell/session-controlled-stop-global-interval-active32-brake64-dwell25-v1-20261016-attempt58/run-attempt1/artifacts/cycle-54/trial-0/numeric_feasible_initializer.bin",
+      "codec": "GZIP_DEFLATE_V1",
+      "stored_bytes": 2721,
+      "stored_sha256": "33532056e09eaebca451489947e61a7eafd45f7d0b71a7a6776cb1abd108d6d6",
+      "raw_bytes": 4660,
+      "raw_sha256": "347e549bc3101afb216ea312651af57da0424eee44e4422c6bdff1d0a91cb395",
+      "source_complete": true,
+      "closed_raw_prefix_valid": true,
+      "scope": "source complete is separate from successful gzip prefix reconstruction; no Model/native/mathematical acceptance",
+      "math_available": true
+    },
+    "/private/tmp/phase5_controlled_stop_global_interval_terminal58_v1_20261016/actual-dell/session-controlled-stop-global-interval-active32-brake64-dwell25-v1-20261016-attempt58/run-attempt1/artifacts/cycle-54/trial-0/current_numeric_hint.bin": {
+      "file": "/private/tmp/phase5_controlled_stop_global_interval_terminal58_v1_20261016/actual-dell/session-controlled-stop-global-interval-active32-brake64-dwell25-v1-20261016-attempt58/run-attempt1/artifacts/cycle-54/trial-0/current_numeric_hint.bin",
+      "codec": "GZIP_DEFLATE_V1",
+      "stored_bytes": 5709,
+      "stored_sha256": "c0a84f5a03b15c743642e4f89b72a343cff9ad79288b99b2a5b0e1b793594b9d",
+      "raw_bytes": 71888,
+      "raw_sha256": "8f9bcf981e556549b5a0dd6c417009c6e63d533ca95f6e346b91af5a72f9e400",
+      "source_complete": true,
+      "closed_raw_prefix_valid": true,
+      "scope": "source complete is separate from successful gzip prefix reconstruction; no Model/native/mathematical acceptance",
+      "math_available": true
+    }
+  }
+}

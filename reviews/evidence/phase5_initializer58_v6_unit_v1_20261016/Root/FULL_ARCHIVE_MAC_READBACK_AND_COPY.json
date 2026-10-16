@@ -1,0 +1,30 @@
+{
+  "schema": "ROOT58_COMPLETE_ARCHIVE_INDEPENDENT_MAC_FULL_RESTORATION_AND_DISK_COPY_V1",
+  "Dell_archive": "/home/codextransfer/predictive_motion/transfer/cold-archives/native58-complete-20261016-v1/complete58.tar.gz",
+  "Mac_archive": "/Users/uot/Documents/ChatGPT/ros/transfer/cold-backups/native58-complete-20261016-v1/complete58.tar.gz",
+  "archive_bytes": 3225158075,
+  "archive_sha256": "12408b223543570a2e92fe912bddb5525d49645bec71c38631f4b069e8ff0fb5",
+  "all4405_members_size_SHA_recovery_read_verified": true,
+  "members": 4405,
+  "payload_members": 4401,
+  "source_payload_bytes": 3344129291,
+  "total_member_bytes": 3347991831,
+  "outer_tar_raw_bytes": 3355658240,
+  "full_outer_gzip_CRC_singleEOF_no_trailing": true,
+  "complete_native_inner_codecs_verified": 3496,
+  "native_inner_raw_bytes": 8553770397,
+  "source_serialization_complete_not_math_or_stop_success": true,
+  "Mac_persisted_whole_file_reopened_SHA_and_CRC_verified": true,
+  "remote_fd_identity": {
+    "fd_identity_stable": true,
+    "mode": 292,
+    "bytes": 3225158075
+  },
+  "Mac_free_before": 210423463936,
+  "Mac_free_after": 207048847360,
+  "postrun_copy_cap_bytes": 4294967296,
+  "postrun_metadata_cap_bytes": 16777216,
+  "fresh_original33GiB_free_before_after_passed": true,
+  "wall_seconds": 49.42495595803484,
+  "scope": "Independent physical Mac and Dell complete58 stored-evidence archive copies. Post-native separate archival backup; original in-run12GiB/single-selected capture budgets and old33 failures untouched. Source/config/runtime dependency caches are excluded as declared. No phase, fulltask, stop or research acceptance; older full replication gaps remain separate."
+}

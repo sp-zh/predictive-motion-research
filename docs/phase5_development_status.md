@@ -2,6 +2,10 @@
 
 Updated 2026-10-16, America/Toronto. **Resumed by direct human “继续推进项目”.** Continue from independently reviewed offline52 and verified connection checkpoint196bf49, preserving the completed manual wait and all failures. Fresh bounded diagnostic-retention repair and actual stop/task checks are authorized within the continuous functional work package; no consumed run is reused. Phase5 NOT_ACCEPTED; Phase6 NOT_STARTED.
 
+## Actual58 result on 2026-10-16
+
+[Actual58 source, independent review and two-device archive](../reviews/evidence/phase5_initializer58_v6_unit_v1_20261016/README.md) record74 commands/148 simulated2ms task halves/296ms,32active42braking,152trials303forecasts. All84 stop predicates fail, dwell0/50; all75 whole boundaries miss4ms.1720 before/after inputs and session/native termination checks pass. The original54/0 initializer blockage is crossed with exact saved-input and pure-result byte bindings; the run naturally ends at74/0 numeric iteration cap512. Root independently checks865 selected payloads/221 codecs and all stop records. All4405 complete58 archive members and3496 native codecs are independently read back, with persisted full archive copies verified on Mac and Dell. This is stored-evidence recoverability, not full environment restoration or acceptance; older53–57 replication gaps remain. Stop-only leaving-policy59 development continues under fresh finite checks. No59 native entry is implied here.
+
 ## Actual57 result on 2026-10-16
 
 [Actual57 and independent review](../reviews/evidence/phase5_actual57_and_initializer54_v1_20261016/README.md) record54 committed commands/108 actual2ms task halves/216ms,32active22braking cycles,116trials231forecasts. All44 braking observations fail stop predicates; dwell0/50 and all55 whole-boundary deadlines miss4ms. Session/native termination checks and1716 before/after identities pass. Root verifies731 selected payload hashes and181 complete binary codecs, independently decoding counts and recomputing every stop predicate/anchor drift.

@@ -6,6 +6,14 @@ These assets illustrate the stated scope and do not establish final research
 performance or physical hardware safety.
 
 
+## Actual58 braking prefix and crossed initializer blockage
+
+![Every actual58 braking observation](../figures/phase5_stop58_actual_braking_20261016.png)
+
+[SVG](../figures/phase5_stop58_actual_braking_20261016.svg), [all84 observations CSV](../figures/phase5_stop58_actual_braking_20261016.csv), [source/output hashes](../figures/phase5_stop58_actual_braking_20261016.json), [independent review and archive scope](../reviews/evidence/phase5_initializer58_v6_unit_v1_20261016/README.md).
+
+Actual58 completes74 commands/148 simulated2ms task halves/296ms and crosses the prior initializer blockage on identical original inputs. It ends at74/0 numeric iteration cap512. Every braking observation is shown: dwell0/50, all75 whole-boundary4ms deadlines missed. Progress rate falls in the later prefix while actual velocity remains above its stop limit; the complete stopping trajectory is unobserved. This is adverse partial-run evidence, with no successful task video, realtime result or Phase5 acceptance. Full58 stored-evidence archive copies are independently verified on Mac and Dell; older replication gaps remain.
+
 ## Actual57 braking prefix and crossed diagnostic limit
 
 ![Every actual57 braking observation](../figures/phase5_stop57_actual_braking_20261016.png)

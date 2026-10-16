@@ -1,0 +1,50 @@
+{
+  "schema": "ROOT58_EXECUTED_STORAGE_PLAN_AND_ENTRY_QUALIFICATION_V1",
+  "actual_executed_plan_sha256": "82d2a94121b3dc5bebc7698f8041de07003c38395d167a02a6d5660ebe59524b",
+  "Root_later_draft_plan_sha256": "7cf43b511058496bbdbc99996b2c3b0e57ba36d38cf0caab5b84017302c8ef52",
+  "Root_draft_not_executed_or_retroactively_bound": true,
+  "Mac_peak_enforcement_and_all_native_caps_entire_objects_equal": true,
+  "actual_plan_uses_58_capture_profile_ELF_and_1720pins": true,
+  "fresh_preentry_SHA": "8dd71608105c81f015743a22ea254e6927237ca2cc96cfbc0483d729d61d6a6e",
+  "actual_entry_observation": {
+    "entry": {
+      "schema": "FRESH58_SINGLE_USE_NATIVE_ENTRY_MARKER_V1",
+      "utc": "2026-10-16T04:48:47.020916+00:00",
+      "driver_pid": 6792,
+      "runtime_plan_sha256": "e32fe13965af3b55feab1c0942c8e634ab183b760aa522a39ec2b4eae87d0f51",
+      "preentry_sha256": "8dd71608105c81f015743a22ea254e6927237ca2cc96cfbc0483d729d61d6a6e",
+      "storage_layout_sha256": "82d2a94121b3dc5bebc7698f8041de07003c38395d167a02a6d5660ebe59524b",
+      "capture_sha256": "52c43895593c6ae6548663b636f6d3818b0d9cb388ae4b3b09abd7face8cbd00",
+      "runtime_distinct_inputs": 1720,
+      "old_attempts_consumed_retained": true,
+      "scope": "One fresh58 bounded development entry after original saved math/pure/resource checks; no hardware/heldout/main/scorer or phase acceptance."
+    },
+    "events": [
+      {
+        "stage": "FIRST_BUILD_CLAIM_INPUTS_NOT_YET_CHECKED",
+        "batch_elapsed_seconds": 0.00042822300019906834,
+        "plan_sha256": "e32fe13965af3b55feab1c0942c8e634ab183b760aa522a39ec2b4eae87d0f51"
+      },
+      {
+        "stage": "EXACT_BEFORE_INPUTS_AND_READONLY_ROSTERS_VERIFIED",
+        "batch_elapsed_seconds": 0.19074205799915944
+      },
+      {
+        "stage": "BEFORE_POPEN",
+        "batch_elapsed_seconds": 0.19088556499991682,
+        "kind": "compile",
+        "index": 1
+      },
+      {
+        "stage": "CHILD_STARTED",
+        "batch_elapsed_seconds": 0.2050249999992957,
+        "kind": "compile",
+        "index": 1,
+        "pid": 6793
+      }
+    ],
+    "latest_cycle_directory": 47,
+    "terminal_present": false
+  },
+  "scope": "Immutable actual entry is authoritative; no second entry, rewrite or retroactive plan replacement. Current directory observation is not stop/task/terminal acceptance."
+}

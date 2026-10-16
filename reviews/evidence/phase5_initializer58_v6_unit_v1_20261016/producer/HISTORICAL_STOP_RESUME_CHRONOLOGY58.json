@@ -1,0 +1,33 @@
+{
+  "schema": "HISTORICAL_STOP_AND_LATER_DIRECT_RESUME_CHRONOLOGY58_V1",
+  "verified_utc": "2026-10-16T04:47:11.731544+00:00",
+  "source_rollout": "/Users/uot/.codex/sessions/2026/10/07/rollout-2026-10-07T01-32-22-01a114d9-3a3a-7071-b94f-624581000992.jsonl",
+  "historical_stop": {
+    "utc": "2026-10-08T07:29:02.399Z",
+    "message_id": "msg_01a11a6a-63bf-7532-b42c-6b6b0785abcf",
+    "turn_id": "01a11a62-2518-7fb2-a9a2-5457fed1228a",
+    "text": "完成当前最小工作后就保存，上传git，不要继续了"
+  },
+  "later_direct_resumptions": [
+    {
+      "utc": "2026-10-08T17:35:40.905Z",
+      "message_id": "msg_01a11c95-c969-7821-9fc2-f960a78b9154",
+      "turn_id": "01a11c95-c598-76e3-b2ee-3c872e395312",
+      "text": "继续"
+    },
+    {
+      "utc": "2026-10-08T17:38:55.545Z",
+      "message_id": "msg_01a11c98-c1b8-7b90-9c5e-120dcd4f43df",
+      "turn_id": "01a11c98-bf7e-70d3-85c2-253cd026fde1",
+      "text": "继续"
+    }
+  ],
+  "latest_verified_resumption_in_AGENTS": {
+    "chat": "01a10a40-558c-71a3-b343-6ff4c2709b36",
+    "user_message": "01a14153-949c-7f33-953a-22d7126b69e8",
+    "turn": "01a14153-9176-7423-a877-301f33667219",
+    "date": "2026-10-15"
+  },
+  "correction": "Writer initially misapplied old Oct8 stop to current continuous work. This error and subsequent noENTRY communication retained; chronology shows no new human stop. Current functional package remains resumed; Root single Git writer/Dell native source writer and original resource/physics/phase criteria unchanged.",
+  "read_thread_limitation": "Newest turns do not expose user items; exact directuser IDs established from existing local rollout role=user records, not coordinator instructions."
+}

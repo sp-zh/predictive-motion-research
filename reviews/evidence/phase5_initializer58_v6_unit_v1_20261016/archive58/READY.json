@@ -1,0 +1,22 @@
+{
+  "schema": "MAC_AND_DELL58_COMPLETE_STORED_EVIDENCE_ARCHIVE_READBACK_READY_V1",
+  "archive": "/Users/uot/Documents/ChatGPT/ros/transfer/cold-backups/native58-complete-20261016-v1/complete58.tar.gz",
+  "bytes": 3225158075,
+  "sha256": "12408b223543570a2e92fe912bddb5525d49645bec71c38631f4b069e8ff0fb5",
+  "Dell_archive": "/home/codextransfer/predictive_motion/transfer/cold-archives/native58-complete-20261016-v1/complete58.tar.gz",
+  "Root_independent_all_members_and_inner_codecs": true,
+  "Mac_persisted_whole_readback_passed": true,
+  "full_member_count": 4405,
+  "native_inner_serialization_complete_files": 3496,
+  "source_files_included": 80,
+  "profile_and_active_ELF_included": true,
+  "runtime_dependency_and_build_caches_excluded": true,
+  "Root_readback_report_sha256": "ee84dbd79fd73f3919fce28a52d01a356e56c91425933d0b049f8e511810c924",
+  "Dell_original_READY_sha256": "a53d9848c68a9b12c5d1be66315ed2101aff89942478fea809fc8476a281de24",
+  "old_Dell_READY_Mac_PENDING_preserved": true,
+  "two_independent_physical_archive_files_verified": true,
+  "metadata_bytes_before_this_READY": 3867734,
+  "postnative_copy_only_original_run_and_selected_caps_untouched": true,
+  "free_after_metadata": 207019782144,
+  "scope": "Complete58 stored execution evidence and frozen source/profile/active ELF recoverability on Mac and Dell. Dependency/build caches excluded; not a standalone environment restoration guarantee. Source serialization completeness is not solver/task/stop success. No phase acceptance; older experiment replication gaps remain."
+}

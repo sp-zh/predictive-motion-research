@@ -1,0 +1,26 @@
+{
+  "utc": "2026-10-16T04:46:01.052947+00:00",
+  "ENTRY58_exists": false,
+  "RUN58_exists": false,
+  "runtime_plan_actual_bytes": 522316,
+  "runtime_plan_actual_sha256": "e32fe13965af3b55feab1c0942c8e634ab183b760aa522a39ec2b4eae87d0f51",
+  "builds": {
+    "build-attempt1": {
+      "complete": true,
+      "count": 34,
+      "all_exit0": true,
+      "result_sha256": "2338428b2f58e2ea5c06f30425d8d50c5dd99e1aade4b5c8c2b7c656b4122ffe",
+      "before_after_equal": true
+    },
+    "link-attempt1": {
+      "complete": true,
+      "count": 23,
+      "all_exit0": true,
+      "result_sha256": "1a1dc29b71d725e075dc1a277f7aa0785a5695a7199db876367e9725f45d31ff",
+      "before_after_equal": true
+    }
+  },
+  "local_runtime_template_sha256": "be2ffc62153f32f925128d31768017806ec207d93c0d7a67d9e2b02abc00772c",
+  "runtime_plan_parsed_objects_equal": true,
+  "runtime_serialization_scope": "Remote frozen JSON may omit local trailing LF; parsed full objects equal, keep both byte identities."
+}

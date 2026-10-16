@@ -1,0 +1,221 @@
+{
+  "schema": "PRODUCTION58_COMPAT_SAVED_MATH_AND_ACTIVEFALSE_FULL_V1",
+  "stop_cases": [
+    {
+      "case": "actual56_48_1",
+      "fixture_sha256": "069b99b19abe78a22a7845e65a94774ef66958e6f9a2ad573001061e77ea7b66",
+      "final_violation_numpy": 7.892939773990193e-13,
+      "stationarity_numpy": 1.1102230246251565e-16,
+      "boundary_count": 11290,
+      "endpoint_count": 15812,
+      "complete_arrays_and_records_bitexact": [
+        {
+          "suffix": ".finalxy.bin",
+          "bytes": 59936,
+          "sha256": "8e29c022b367b5383fd2bad653df1149b564e9ea283992c68c50d11f2117f1c0"
+        },
+        {
+          "suffix": ".boundary48.bin",
+          "bytes": 541920,
+          "sha256": "622ff99d9f159d79b0d020605ba16795a3b939b707d2e6bbb472c5d71c9adb00"
+        },
+        {
+          "suffix": ".states.bin",
+          "bytes": 15232,
+          "sha256": "fa635507f9be83c9fb7342598e24b47daf4b670c0578f7cdc55b0db64fc43f47"
+        },
+        {
+          "suffix": ".retained64.bin",
+          "bytes": 1011968,
+          "sha256": "203cb69df339f1eed21f68c07df833937eb9d109728fff9b29b3e848a0b2f7f6"
+        },
+        {
+          "suffix": ".refinement120.bin",
+          "bytes": 67328,
+          "sha256": "12fe6c2399ed5526ff47ec04518f16a1a9140d61d312a8913fe322dcb72d2062"
+        }
+      ]
+    },
+    {
+      "case": "old52_40_0",
+      "fixture_sha256": "63adf752672de67a3842b39091157b476d3066a6e48de25dbe4bcc4da2514856",
+      "final_violation_numpy": 8.834192058437829e-13,
+      "stationarity_numpy": 2.498001805406602e-16,
+      "boundary_count": 67,
+      "endpoint_count": 3279,
+      "complete_arrays_and_records_bitexact": [
+        {
+          "suffix": ".finalxy.bin",
+          "bytes": 59960,
+          "sha256": "34447bbb8e391cffa36c0c408c196dd55672486074e5a917aa41467dffd79d52"
+        },
+        {
+          "suffix": ".boundary48.bin",
+          "bytes": 3216,
+          "sha256": "162256b65eba7ef13f5139abc62bcd8fb714d27c5040e0223ffb96cf909508c4"
+        },
+        {
+          "suffix": ".states.bin",
+          "bytes": 12096,
+          "sha256": "7be6a3729abde816f32e27f958636c5e8e18f6ff2ab910f5a07a2b144ef7b8ef"
+        },
+        {
+          "suffix": ".retained64.bin",
+          "bytes": 209856,
+          "sha256": "bec249b593b1481cb456ee30e350e517e7fa18497569d8c18c0ec53b877759ce"
+        },
+        {
+          "suffix": ".refinement120.bin",
+          "bytes": 57488,
+          "sha256": "6603ff7bdd3bf0d5362d6a7fe94b215a30340330483393e9ba26082180d45817"
+        }
+      ]
+    },
+    {
+      "case": "old53_40_1",
+      "fixture_sha256": "548579a0aa48ab67cc2eb2e73ed38b0da1765d23e4b1dd59ceb9a9e23882b190",
+      "final_violation_numpy": 8.286678634950029e-13,
+      "stationarity_numpy": 3.608224830031759e-16,
+      "boundary_count": 960,
+      "endpoint_count": 1950,
+      "complete_arrays_and_records_bitexact": [
+        {
+          "suffix": ".finalxy.bin",
+          "bytes": 59960,
+          "sha256": "b1a1fe54d5f10d8a33d3575d72e2e82fba8aeb8128d903c43501972e50a56c1f"
+        },
+        {
+          "suffix": ".boundary48.bin",
+          "bytes": 46080,
+          "sha256": "927d70438e3f1a61b9b216bf74bc097d29b20ad1962c329fcfe6e727a85b5071"
+        },
+        {
+          "suffix": ".states.bin",
+          "bytes": 11704,
+          "sha256": "5ebe6f265246c0ec712d9d0fb85d2a3b402164e63a676c3aedbd51786b04392d"
+        },
+        {
+          "suffix": ".retained64.bin",
+          "bytes": 124800,
+          "sha256": "e415fd6935a5cca6e02edc7ab4c99249171127d4237d0990280b4ff7b414bf9a"
+        },
+        {
+          "suffix": ".refinement120.bin",
+          "bytes": 51728,
+          "sha256": "5f9e1e3375ec540d9a7473b0939c14b265a3ca36cc352948f97a036c6b19fc6e"
+        }
+      ]
+    },
+    {
+      "case": "old54_43_0",
+      "fixture_sha256": "1c7920a7d9f697fce28aea0fad3ea4c10fd34c17248853ea46c9296783680aa2",
+      "final_violation_numpy": 4.604524227180828e-13,
+      "stationarity_numpy": 2.2898349882893854e-16,
+      "boundary_count": 6,
+      "endpoint_count": 1443,
+      "complete_arrays_and_records_bitexact": [
+        {
+          "suffix": ".finalxy.bin",
+          "bytes": 59920,
+          "sha256": "70e034c562eda9f837d6cb63133859ac5aa9b83f9529c4e854bb8dd2d9554f77"
+        },
+        {
+          "suffix": ".boundary48.bin",
+          "bytes": 288,
+          "sha256": "4aff60267cd29dd2dcc48881718d72bed1f9ec3fab0e2d1daff5d3ebc84f7a2e"
+        },
+        {
+          "suffix": ".states.bin",
+          "bytes": 10976,
+          "sha256": "f1bda069a50d11224860479fc0c7fb86d7742d943961cabcc88f224d658c058c"
+        },
+        {
+          "suffix": ".retained64.bin",
+          "bytes": 92352,
+          "sha256": "8703f54557736ea97a59e1447db575c5798a4641afc2d135a5ffa3b90499d5d4"
+        },
+        {
+          "suffix": ".refinement120.bin",
+          "bytes": 51368,
+          "sha256": "bc004f998a15e941c5add8e2d6ae4ff23e56e63b3d54c3927c8f16a153d4559e"
+        }
+      ]
+    },
+    {
+      "case": "old55_40_2",
+      "fixture_sha256": "e8e8c1140e56a0ae2dd494c122eab5f21b4eacd477c67cb03e22b86b1e899f74",
+      "final_violation_numpy": 7.868063839344686e-13,
+      "stationarity_numpy": 2.220446049250313e-16,
+      "boundary_count": 8,
+      "endpoint_count": 0,
+      "complete_arrays_and_records_bitexact": [
+        {
+          "suffix": ".finalxy.bin",
+          "bytes": 59960,
+          "sha256": "1d0318392194cca0b4be2b7e70acbf8a14c4ba7509fa96efe7270844c8d10169"
+        },
+        {
+          "suffix": ".boundary48.bin",
+          "bytes": 384,
+          "sha256": "128a20e79869cc290c861700eb54f9b7d6770cd17590aeb4fd38664e4f5db1c0"
+        },
+        {
+          "suffix": ".states.bin",
+          "bytes": 9072,
+          "sha256": "42243e1182800cfc110c658d935e8b4aaed3d1aba34970dc2be37b0eddae6947"
+        },
+        {
+          "suffix": ".retained64.bin",
+          "bytes": 0,
+          "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+        },
+        {
+          "suffix": ".refinement120.bin",
+          "bytes": 39488,
+          "sha256": "b50f2dc75e379be7fc609ef5cbcb5a84d59f91d08e1fe9294c9cdef182f03574"
+        }
+      ]
+    }
+  ],
+  "activefalse": [
+    {
+      "case": "old_active_ACTIVE_constrained.core.bin",
+      "bytes": 368,
+      "sha256": "663e0eb9d3acf8d25d10c4b057c96fb6252f489788d838cd6aa6f049d5b5ab53",
+      "entire_serialized_core_bitexact": true
+    },
+    {
+      "case": "old_active_ACTIVE_interior.core.bin",
+      "bytes": 224,
+      "sha256": "566c59ecc2e4f8e904507c445280e836b21678f81a157c5e7d166e36026244cf",
+      "entire_serialized_core_bitexact": true
+    },
+    {
+      "case": "old_active_ACTIVE_zero.core.bin",
+      "bytes": 168,
+      "sha256": "42a7dc2d496f01e39d8802d08f807fc420de4aa8b728574e587639f5d0cd8a1f",
+      "entire_serialized_core_bitexact": true
+    },
+    {
+      "case": "old_active_old52_40_0.core.bin",
+      "bytes": 106549,
+      "sha256": "94fe6594c31d658ec0f06f0e065ad68f0f342224fba3379c5a5f45c5636add06",
+      "entire_serialized_core_bitexact": true
+    },
+    {
+      "case": "old_active_old53_40_1.core.bin",
+      "bytes": 114161,
+      "sha256": "27918eba358f1d45b2b390594d9d1f995dd138d06d3a47c10e59a8f01ffc05ca",
+      "entire_serialized_core_bitexact": true
+    },
+    {
+      "case": "old_active_old54_43_0.core.bin",
+      "bytes": 76605,
+      "sha256": "e7ded4d23feb83699bfde5710e6be987348416c8323ef006c0ff0de427efe9ac",
+      "entire_serialized_core_bitexact": true
+    }
+  ],
+  "input_before_after_equal": true,
+  "stdout_label_correction": "Reused runner last text says oldfailure/newcomplete for actual56/48/1. In this58 comparison old source57 and new58 are BOTH complete and ALL records bitexact; both numerical stdout lines preserve this. No old failure is reinterpreted.",
+  "scope": "Saved numerical hints only. No Model/nativeOSQP/B/C/physical/task/phase acceptance."
+}

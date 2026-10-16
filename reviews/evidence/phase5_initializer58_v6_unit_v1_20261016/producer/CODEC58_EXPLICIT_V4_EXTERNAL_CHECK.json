@@ -1,0 +1,113 @@
+{
+  "rows": [
+    {
+      "case": "global8",
+      "codec": {
+        "file": "/private/tmp/phase5_global_interval_initializer58_source_v1_20261016/pure_suite58_readback_v1/global-interval-codec-tests/global8/data.bin",
+        "codec": "RAW_V1",
+        "stored_bytes": 14660,
+        "stored_sha256": "2f10274aa4f3e95de405730839eaa7efd3107a81a3be35e666212b85c6d50d65",
+        "raw_bytes": 14660,
+        "raw_sha256": "2f10274aa4f3e95de405730839eaa7efd3107a81a3be35e666212b85c6d50d65",
+        "source_complete": true,
+        "closed_raw_prefix_valid": true,
+        "scope": "source complete is separate from successful gzip prefix reconstruction; no Model/native/mathematical acceptance"
+      },
+      "complete": 1,
+      "global_entered": 1,
+      "corrections": 8,
+      "scans": 8,
+      "scan_attempts": 8,
+      "error": "",
+      "fullEOF_and_all_metadata_checked": true
+    },
+    {
+      "case": "maximum",
+      "codec": {
+        "file": "/private/tmp/phase5_global_interval_initializer58_source_v1_20261016/pure_suite58_readback_v1/global-interval-codec-tests/maximum/data.bin",
+        "codec": "RAW_V1",
+        "stored_bytes": 656644,
+        "stored_sha256": "268407b8c4ff09e2222f88abfee6d0a1fd28afd9f236c6768f8eadda0c5a86d7",
+        "raw_bytes": 656644,
+        "raw_sha256": "268407b8c4ff09e2222f88abfee6d0a1fd28afd9f236c6768f8eadda0c5a86d7",
+        "source_complete": true,
+        "closed_raw_prefix_valid": true,
+        "scope": "source complete is separate from successful gzip prefix reconstruction; no Model/native/mathematical acceptance"
+      },
+      "complete": 0,
+      "global_entered": 1,
+      "corrections": 8,
+      "scans": 8,
+      "scan_attempts": 8,
+      "error": "eeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeee",
+      "fullEOF_and_all_metadata_checked": true
+    },
+    {
+      "case": "unavailable",
+      "codec": {
+        "file": "/private/tmp/phase5_global_interval_initializer58_source_v1_20261016/pure_suite58_readback_v1/global-interval-codec-tests/unavailable/data.bin",
+        "codec": "RAW_V1",
+        "stored_bytes": 1840,
+        "stored_sha256": "bfa9880eb4b6e9ae43379d004ed396e0aaf9e011a6d72506552328f0281cdca1",
+        "raw_bytes": 1840,
+        "raw_sha256": "bfa9880eb4b6e9ae43379d004ed396e0aaf9e011a6d72506552328f0281cdca1",
+        "source_complete": true,
+        "closed_raw_prefix_valid": true,
+        "scope": "source complete is separate from successful gzip prefix reconstruction; no Model/native/mathematical acceptance"
+      },
+      "complete": 0,
+      "global_entered": 0,
+      "corrections": 0,
+      "scans": 0,
+      "scan_attempts": 0,
+      "error": "",
+      "fullEOF_and_all_metadata_checked": true
+    },
+    {
+      "case": "failed",
+      "codec": {
+        "file": "/private/tmp/phase5_global_interval_initializer58_source_v1_20261016/pure_suite58_readback_v1/global-interval-codec-tests/failed/data.bin",
+        "codec": "RAW_V1",
+        "stored_bytes": 2398,
+        "stored_sha256": "92a605528a8728719ce9ff0fb3283b165cb2beea52ce6efa719db686192cc2f7",
+        "raw_bytes": 2398,
+        "raw_sha256": "92a605528a8728719ce9ff0fb3283b165cb2beea52ce6efa719db686192cc2f7",
+        "source_complete": true,
+        "closed_raw_prefix_valid": true,
+        "scope": "source complete is separate from successful gzip prefix reconstruction; no Model/native/mathematical acceptance"
+      },
+      "complete": 0,
+      "global_entered": 1,
+      "corrections": 1,
+      "scans": 1,
+      "scan_attempts": 1,
+      "error": "row seed deficit beyond original rounding repair scope; wholepolytope unknown",
+      "fullEOF_and_all_metadata_checked": true
+    },
+    {
+      "case": "splitrefusal",
+      "codec": {
+        "file": "/private/tmp/phase5_global_interval_initializer58_source_v1_20261016/pure_suite58_readback_v1/global-interval-codec-tests/splitrefusal/data.bin",
+        "codec": "RAW_V1",
+        "stored_bytes": 2050,
+        "stored_sha256": "06c27ece7d097d3e2c6506ae98e335159d258502ec4d3a07508e4bfbb2179589",
+        "raw_bytes": 2050,
+        "raw_sha256": "06c27ece7d097d3e2c6506ae98e335159d258502ec4d3a07508e4bfbb2179589",
+        "source_complete": true,
+        "closed_raw_prefix_valid": true,
+        "scope": "source complete is separate from successful gzip prefix reconstruction; no Model/native/mathematical acceptance"
+      },
+      "complete": 0,
+      "global_entered": 1,
+      "corrections": 0,
+      "scans": 0,
+      "scan_attempts": 1,
+      "error": "fullray bound not exactly representable by two saved binary64 values; retained refusal",
+      "fullEOF_and_all_metadata_checked": true
+    }
+  ],
+  "pure_tests": 22,
+  "immutable_inputs_before_after_equal": true,
+  "parser_sha256": "50edcceaf1933fe01b3bad5c7355e94eb0f94a581059d46525bc6e9fa1f80dce",
+  "scope": "Synthetic component codec and pure regressions only; no Model, nativeOSQP, physics or acceptance."
+}

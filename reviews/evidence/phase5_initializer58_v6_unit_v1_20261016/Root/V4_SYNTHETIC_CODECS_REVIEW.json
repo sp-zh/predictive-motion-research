@@ -1,0 +1,308 @@
+{
+  "schema": "ROOT58_V4_SYNTHETIC_COMPLETE_CODEC_AND_EXACT_PAIR_REVIEW_V1",
+  "cases": [
+    {
+      "case": "failed",
+      "raw_bytes": 2398,
+      "stored_sha256": "92a605528a8728719ce9ff0fb3283b165cb2beea52ce6efa719db686192cc2f7",
+      "raw_sha256": "92a605528a8728719ce9ff0fb3283b165cb2beea52ce6efa719db686192cc2f7",
+      "full_CRC_singleEOF": true,
+      "header": [
+        54,
+        0,
+        1,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        1
+      ],
+      "seed_values": 0,
+      "current_row_table_shape": [
+        0,
+        0
+      ],
+      "measured_row_prefix": 0,
+      "legacy_summary_rows": 2,
+      "legacy_corrections": 0,
+      "corrections": 1,
+      "global_entered": true,
+      "scan_attempts": 1,
+      "available_scans": 1,
+      "every_pair_exact_Fraction_p64_and_limiter_original_arithmetic_checked": true,
+      "every_correction_guard_scope_and_delta_availability_checked": true,
+      "scans": [
+        {
+          "iteration": 0,
+          "limiter": 1,
+          "selected": 0,
+          "selected_available": true,
+          "upper_fraction": "5070602400912917555/2535301200456458802993406410752"
+        }
+      ],
+      "error": "row seed deficit beyond original rounding repair scope; wholepolytope unknown",
+      "retry_error": ""
+    },
+    {
+      "case": "global8",
+      "raw_bytes": 14660,
+      "stored_sha256": "2f10274aa4f3e95de405730839eaa7efd3107a81a3be35e666212b85c6d50d65",
+      "raw_sha256": "2f10274aa4f3e95de405730839eaa7efd3107a81a3be35e666212b85c6d50d65",
+      "full_CRC_singleEOF": true,
+      "header": [
+        54,
+        0,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1
+      ],
+      "seed_values": 144,
+      "current_row_table_shape": [
+        2,
+        4
+      ],
+      "measured_row_prefix": 2,
+      "legacy_summary_rows": 2,
+      "legacy_corrections": 0,
+      "corrections": 8,
+      "global_entered": true,
+      "scan_attempts": 8,
+      "available_scans": 8,
+      "every_pair_exact_Fraction_p64_and_limiter_original_arithmetic_checked": true,
+      "every_correction_guard_scope_and_delta_availability_checked": true,
+      "scans": [
+        {
+          "iteration": 0,
+          "limiter": 1,
+          "selected": 0,
+          "selected_available": true,
+          "upper_fraction": "5070602400912917555/2535301200456458802993406410752"
+        },
+        {
+          "iteration": 1,
+          "limiter": 1,
+          "selected": 1,
+          "selected_available": true,
+          "upper_fraction": "-8239728901483491059/633825300114114700748351602688"
+        },
+        {
+          "iteration": 2,
+          "limiter": 1,
+          "selected": 0,
+          "selected_available": true,
+          "upper_fraction": "2535301200456459315/2535301200456458802993406410752"
+        },
+        {
+          "iteration": 3,
+          "limiter": 1,
+          "selected": 1,
+          "selected_available": true,
+          "upper_fraction": "-15211807202738752461/2535301200456458802993406410752"
+        },
+        {
+          "iteration": 4,
+          "limiter": 1,
+          "selected": 0,
+          "selected_available": true,
+          "upper_fraction": "2535301200456459315/2535301200456458802993406410752"
+        },
+        {
+          "iteration": 5,
+          "limiter": 1,
+          "selected": 1,
+          "selected_available": true,
+          "upper_fraction": "-6338253001141144525/2535301200456458802993406410752"
+        },
+        {
+          "iteration": 6,
+          "limiter": 1,
+          "selected": 0,
+          "selected_available": true,
+          "upper_fraction": "2535301200456459315/2535301200456458802993406410752"
+        },
+        {
+          "iteration": 7,
+          "limiter": 1,
+          "selected": 1,
+          "selected_available": true,
+          "upper_fraction": "-1901475900342340557/2535301200456458802993406410752"
+        }
+      ],
+      "error": "",
+      "retry_error": ""
+    },
+    {
+      "case": "maximum",
+      "raw_bytes": 656644,
+      "stored_sha256": "268407b8c4ff09e2222f88abfee6d0a1fd28afd9f236c6768f8eadda0c5a86d7",
+      "raw_sha256": "268407b8c4ff09e2222f88abfee6d0a1fd28afd9f236c6768f8eadda0c5a86d7",
+      "full_CRC_singleEOF": true,
+      "header": [
+        54,
+        0,
+        1,
+        0,
+        1,
+        1,
+        1,
+        0,
+        0,
+        1
+      ],
+      "seed_values": 144,
+      "current_row_table_shape": [
+        20000,
+        4
+      ],
+      "measured_row_prefix": 19999,
+      "legacy_summary_rows": 2,
+      "legacy_corrections": 0,
+      "corrections": 8,
+      "global_entered": true,
+      "scan_attempts": 8,
+      "available_scans": 8,
+      "every_pair_exact_Fraction_p64_and_limiter_original_arithmetic_checked": true,
+      "every_correction_guard_scope_and_delta_availability_checked": true,
+      "scans": [
+        {
+          "iteration": 0,
+          "limiter": 1,
+          "selected": 0,
+          "selected_available": true,
+          "upper_fraction": "5070602400912917555/2535301200456458802993406410752"
+        },
+        {
+          "iteration": 1,
+          "limiter": 1,
+          "selected": 1,
+          "selected_available": true,
+          "upper_fraction": "-8239728901483491059/633825300114114700748351602688"
+        },
+        {
+          "iteration": 2,
+          "limiter": 1,
+          "selected": 0,
+          "selected_available": true,
+          "upper_fraction": "2535301200456459315/2535301200456458802993406410752"
+        },
+        {
+          "iteration": 3,
+          "limiter": 1,
+          "selected": 1,
+          "selected_available": true,
+          "upper_fraction": "-15211807202738752461/2535301200456458802993406410752"
+        },
+        {
+          "iteration": 4,
+          "limiter": 1,
+          "selected": 0,
+          "selected_available": true,
+          "upper_fraction": "2535301200456459315/2535301200456458802993406410752"
+        },
+        {
+          "iteration": 5,
+          "limiter": 1,
+          "selected": 1,
+          "selected_available": true,
+          "upper_fraction": "-6338253001141144525/2535301200456458802993406410752"
+        },
+        {
+          "iteration": 6,
+          "limiter": 1,
+          "selected": 0,
+          "selected_available": true,
+          "upper_fraction": "2535301200456459315/2535301200456458802993406410752"
+        },
+        {
+          "iteration": 7,
+          "limiter": 1,
+          "selected": 1,
+          "selected_available": true,
+          "upper_fraction": "-1901475900342340557/2535301200456458802993406410752"
+        }
+      ],
+      "error": "eeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeee",
+      "retry_error": "rrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrr"
+    },
+    {
+      "case": "splitrefusal",
+      "raw_bytes": 2050,
+      "stored_sha256": "06c27ece7d097d3e2c6506ae98e335159d258502ec4d3a07508e4bfbb2179589",
+      "raw_sha256": "06c27ece7d097d3e2c6506ae98e335159d258502ec4d3a07508e4bfbb2179589",
+      "full_CRC_singleEOF": true,
+      "header": [
+        54,
+        0,
+        1,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        1
+      ],
+      "seed_values": 0,
+      "current_row_table_shape": [
+        0,
+        0
+      ],
+      "measured_row_prefix": 0,
+      "legacy_summary_rows": 2,
+      "legacy_corrections": 0,
+      "corrections": 0,
+      "global_entered": true,
+      "scan_attempts": 1,
+      "available_scans": 0,
+      "every_pair_exact_Fraction_p64_and_limiter_original_arithmetic_checked": true,
+      "every_correction_guard_scope_and_delta_availability_checked": true,
+      "scans": [],
+      "error": "fullray bound not exactly representable by two saved binary64 values; retained refusal",
+      "retry_error": ""
+    },
+    {
+      "case": "unavailable",
+      "raw_bytes": 1840,
+      "stored_sha256": "bfa9880eb4b6e9ae43379d004ed396e0aaf9e011a6d72506552328f0281cdca1",
+      "raw_sha256": "bfa9880eb4b6e9ae43379d004ed396e0aaf9e011a6d72506552328f0281cdca1",
+      "full_CRC_singleEOF": true,
+      "header": [
+        54,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "seed_values": 0,
+      "current_row_table_shape": [
+        0,
+        0
+      ],
+      "measured_row_prefix": 0,
+      "legacy_summary_rows": 0,
+      "legacy_corrections": 0,
+      "corrections": 0,
+      "global_entered": false,
+      "scan_attempts": 0,
+      "available_scans": 0,
+      "every_pair_exact_Fraction_p64_and_limiter_original_arithmetic_checked": true,
+      "every_correction_guard_scope_and_delta_availability_checked": true,
+      "scans": [],
+      "error": "",
+      "retry_error": ""
+    }
+  ],
+  "scope": "Independent complete codec/Fraction replay for synthetic valid output records, unavailable/failed prefixes and maximum row table. Synthetic cycle54/0 labels do not identify actual research contexts. Source counters/availability retained; not native58, Model, physical step or acceptance."
+}
