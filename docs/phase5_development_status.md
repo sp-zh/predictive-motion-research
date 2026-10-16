@@ -1,6 +1,8 @@
 # Phase 5 development status
 
-Updated 2026-10-16, America/Toronto. **MANUALWAIT after finite offline61.** Phase5 NOT_ACCEPTED; Phase6 NOT_STARTED. Direct human continue in status chat is required for further development or62; only result preservation, necessary review and recoverable backup continue. Daily02:00 Toronto heartbeat is PAUSED. Earlier resumption/preparation paragraphs below are retained historical snapshots, superseded by the latest terminal record.
+Updated 2026-10-16, America/Toronto. **Resumed after offline61 by verified direct human “继续”.** Phase5 NOT_ACCEPTED; Phase6 NOT_STARTED. [Resume and local cause review](../reviews/evidence/phase5_resume_after61_and_stop_cause_v1_20261016/README.md) preserve manualwait61 and all failures. Daily02:00 Toronto heartbeat is ACTIVE. New outgoing Dell dispatch separately awaits explicit sending authorization after prior notification refusals; no62/native/source dispatch yet. Existing work-package development resumption does not release hardware or change original acceptance/resource gates. The next finite offline batch ends manualwait again.
+
+Local saved-data review confirms all128 records separately exceed physical v/a and accepted w/alpha thresholds. At43/trial1, a narrow nominal-centered alpha subset forces joints2/3/4/6 to increase absolute command velocity despite stop cost; this is a concrete restriction, not yet a complete cause or verified repair. Actual stopping/progress/closed-loop investigation remains next work.
 
 ## Actual61 terminal result and verified two-device archive
 

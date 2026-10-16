@@ -1,3 +1,13 @@
+# Latest human instruction: project resumed after offline61 (2026-10-16)
+
+Root independently verified direct human “继续” in status chat `01a10a40-558c-71a3-b343-6ff4c2709b36`, user message `01a1453d-65e4-7270-9531-272a56d2a5fd`, turn `01a1453d-6391-7b53-8856-a65fb73f3796`. Resume the same functional package from actual61 and verified public checkpoint `1f587bbcc065488d5a0a2b5931d775630b5014f3`. Preserve manualwait61, consumed61, the original64-brake stop refusal, all128 failed stop observations/dwell0/50, and every earlier failure. Do not replay or extend61.
+
+Investigate the actual braking failure and repair the closed loop with fresh finite IDs and targeted regression; preparation alone does not establish stopping. Preserve original mathematics/SI/nonlinear/geometric/B/history/two2ms physical/C/stop criteria and resource/counter bounds. Phase5 NOT_ACCEPTED; Phase6 NOT_STARTED; no hardware, heldout/main/scorer or research acceptance authorization.
+
+Mac Root remains sole source/Git integrator; original Dell writer remains unique native source/experiment writer. Direct project resumption is verified, while explicit authorization to send new cross-chat dispatches is pending separately after the prior auto-review notification refusals. Do not retry or repackage rejected messages or bypass the unique writer through Root native writes. Independent local saved-data review and authorized project-status documentation may continue.
+
+Daily preparation remains02:00 Toronto, backup first/target02:30 remoteSHA; status chat restored the heartbeat ACTIVE. The next actual finite offline batch must end manualwait again. Historical instructions below remain evidence.
+
 # Latest human instruction: project resumed (2026-10-15)
 
 Root verified direct human “继续推进项目” in status chat `01a10a40-558c-71a3-b343-6ff4c2709b36`, user message `01a14153-949c-7f33-953a-22d7126b69e8` (turn `01a14153-9176-7423-a877-301f33667219`). This resumes development after offline52 manualwait; preserve that wait and every failure. Start from source/backup `196bf49` (communications recovery) and actual52, without rerunning consumed52 or auditing all history again.

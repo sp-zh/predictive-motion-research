@@ -1,0 +1,354 @@
+{
+  "schema": "ROOT62_READONLY_SAVED61_STOP_CAUSE_OBSERVATIONS_V1",
+  "reader_qualification": "Initial saved-data checker assumed five proof columns; source explicitly serializes four (L1, seedlo, seedhi, margin). Assertion stopped before report write; corrected only reader shape, no source/capture/experiment rerun.",
+  "records": 128,
+  "individual_threshold_failures": {
+    "v": 128,
+    "a": 128,
+    "w": 128,
+    "alpha": 128,
+    "r": 103,
+    "b": 104
+  },
+  "first": {
+    "global_half": 1065,
+    "time_s": 2.129999999999987,
+    "v": 0.0004819041120100884,
+    "a": 0.012109483955864697,
+    "w": 0.002527014006838596,
+    "alpha": 0.03526596593634082,
+    "s": 0.0013111383870357486,
+    "r": 0.02243998157978696,
+    "b": 0.15294175393032047,
+    "below": 0,
+    "hold": 0,
+    "consecutive": 0,
+    "C_drift": 0.0,
+    "s_drift": 0.0
+  },
+  "last": {
+    "global_half": 1192,
+    "time_s": 2.383999999999959,
+    "v": 0.0023197021502147754,
+    "a": 0.015873487037869578,
+    "w": 0.00024400072393069677,
+    "alpha": 0.02576860266237034,
+    "s": 0.004011244695330419,
+    "r": 1.0000000002548923e-09,
+    "b": 5.887033955593021e-17,
+    "below": 0,
+    "hold": 0,
+    "consecutive": 0,
+    "C_drift": 0.0,
+    "s_drift": 0.0
+  },
+  "peak_velocity": 0.002625815482757821,
+  "peak_command_velocity": 0.004475848244559487,
+  "last_to_threshold": {
+    "v": 23.197021502147752,
+    "a": 15.873487037869577,
+    "w": 244.00072393069678,
+    "alpha": 257.6860266237034,
+    "r": 0.0010000000002548923,
+    "b": 5.887033955593021e-13
+  },
+  "selected_current_guard_and_alpha": [
+    {
+      "case": "cycle-0/trial-0",
+      "solver_guard": 0.001080354039239241,
+      "strict_guard": 0.0010814354747139552,
+      "trial_margin": 0.125,
+      "first_alpha": [
+        0.001080354039239241,
+        -0.001080354039239241,
+        0.001080354039239241,
+        0.001080354039239241,
+        -0.001080354039239241,
+        0.001080354039239241,
+        -0.001080354039239241
+      ],
+      "first_nominal_alpha": [
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "first_alpha_change": [
+        0.001080354039239241,
+        -0.001080354039239241,
+        0.001080354039239241,
+        0.001080354039239241,
+        -0.001080354039239241,
+        0.001080354039239241,
+        -0.001080354039239241
+      ],
+      "first_progress_b": 0.019995999999999996,
+      "first_nominal_progress_b": 0.0,
+      "max_alpha_change": 0.0010803540392392411,
+      "first_alpha_at_guard": [
+        true,
+        true,
+        true,
+        true,
+        true,
+        true,
+        true
+      ],
+      "proof_shape": [
+        2800,
+        4
+      ],
+      "input_pins": {
+        "planning_guard.bin": {
+          "bytes": 34680,
+          "sha256": "dad0e713254038f723648012a9e77facf2b8dbc5ba0484c4dc31ae9692632ecd"
+        },
+        "candidate.bin": {
+          "bytes": 2198,
+          "sha256": "6d34d8e3bfbc3e4f74ada67815e70a693b709ceab9bf0603125a1f38364bbe2c"
+        }
+      }
+    },
+    {
+      "case": "cycle-43/trial-0",
+      "solver_guard": 0.001080351910378662,
+      "strict_guard": 0.0010814333437223847,
+      "trial_margin": 0.125,
+      "first_alpha": [
+        -0.008085703257658977,
+        -0.022204886706575114,
+        0.014011470382750114,
+        0.022371710218680473,
+        0.005133922511635026,
+        0.01598634988721781,
+        0.013533343265975965
+      ],
+      "first_nominal_alpha": [
+        -0.007005351347256969,
+        -0.023285238616956534,
+        0.015091822293318837,
+        0.023452062129088597,
+        0.006214274421937311,
+        0.017066701797561812,
+        0.012452991355664493
+      ],
+      "first_alpha_change": [
+        -0.0010803519104020083,
+        0.0010803519103814198,
+        -0.001080351910568723,
+        -0.0010803519104081241,
+        -0.0010803519103022852,
+        -0.0010803519103440018,
+        0.0010803519103114723
+      ],
+      "first_progress_b": -0.06701424607199902,
+      "first_nominal_progress_b": -0.06701424607263627,
+      "max_alpha_change": 0.0010803519105876723,
+      "first_alpha_at_guard": [
+        true,
+        true,
+        true,
+        true,
+        true,
+        true,
+        true
+      ],
+      "proof_shape": [
+        2800,
+        4
+      ],
+      "input_pins": {
+        "planning_guard.bin": {
+          "bytes": 65397,
+          "sha256": "79c3a97cd38ad73ee9a7bc871a61fa9d654c5764fad244230dbafbb1042a9062"
+        },
+        "candidate.bin": {
+          "bytes": 4189,
+          "sha256": "e927feb25d56033cad5a8a3f975ef4b30da0b9189092fb5a8bfe166242d09153"
+        }
+      }
+    },
+    {
+      "case": "cycle-43/trial-1",
+      "solver_guard": 6.752200954592783e-05,
+      "strict_guard": 6.758959914507292e-05,
+      "trial_margin": 0.0078125,
+      "first_alpha": [
+        -0.008153225267202325,
+        -0.022137364697028983,
+        0.013943948373204309,
+        0.022304188209134743,
+        0.005066400502089508,
+        0.015918827877672195,
+        0.01360086527552228
+      ],
+      "first_nominal_alpha": [
+        -0.008085703257658977,
+        -0.022204886706575114,
+        0.014011470382750114,
+        0.022371710218680473,
+        0.005133922511635026,
+        0.01598634988721781,
+        0.013533343265975965
+      ],
+      "first_alpha_change": [
+        -6.752200954334743e-05,
+        6.752200954613166e-05,
+        -6.752200954580553e-05,
+        -6.75220095457292e-05,
+        -6.752200954551757e-05,
+        -6.752200954561471e-05,
+        6.752200954631554e-05
+      ],
+      "first_progress_b": -0.06701424607432298,
+      "first_nominal_progress_b": -0.06701424607199902,
+      "max_alpha_change": 6.752200957254456e-05,
+      "first_alpha_at_guard": [
+        true,
+        true,
+        true,
+        true,
+        true,
+        true,
+        true
+      ],
+      "proof_shape": [
+        2800,
+        4
+      ],
+      "input_pins": {
+        "planning_guard.bin": {
+          "bytes": 65405,
+          "sha256": "1a0331fab6ffad8e5cd67b430acc2062ca74a51ae03a6785c972a6e0f514a359"
+        },
+        "candidate.bin": {
+          "bytes": 4180,
+          "sha256": "def67cbe6bef8007a7e58d2910ef7205bf645ec7c84c268f87f03a9d70eb1e20"
+        }
+      }
+    },
+    {
+      "case": "cycle-74/trial-0",
+      "solver_guard": 0.0010803540110747008,
+      "strict_guard": 0.0010814354465212223,
+      "trial_margin": 0.125,
+      "first_alpha": [
+        2.3601751838228515e-05,
+        0.04236145435314168,
+        -0.043469679664614624,
+        -0.027651541674235613,
+        -7.88317830565087e-05,
+        -0.0436320360599542,
+        -0.0002843967558824047
+      ],
+      "first_nominal_alpha": [
+        2.423235900389764e-05,
+        0.041281100342141386,
+        -0.042389325653579245,
+        -0.02657118766315661,
+        -7.627833322943325e-05,
+        -0.04255168204890296,
+        -0.0002754424972098308
+      ],
+      "first_alpha_change": [
+        -6.306071656691238e-07,
+        0.0010803540110002965,
+        -0.0010803540110353796,
+        -0.0010803540110790044,
+        -2.5534498270754507e-06,
+        -0.001080354011051242,
+        -8.954258672573903e-06
+      ],
+      "first_progress_b": -0.10951542383675249,
+      "first_nominal_progress_b": -0.09947537145840898,
+      "max_alpha_change": 0.0010803540112165194,
+      "first_alpha_at_guard": [
+        false,
+        true,
+        true,
+        true,
+        false,
+        true,
+        false
+      ],
+      "proof_shape": [
+        2800,
+        4
+      ],
+      "input_pins": {
+        "planning_guard.bin": {
+          "bytes": 65652,
+          "sha256": "d407ffbfd88ab4a2aa548b752729d7be03913b126c372880873f32405279efe8"
+        },
+        "candidate.bin": {
+          "bytes": 4198,
+          "sha256": "9adb987f9db6d93a562d4e4fb3bb44e1df78d43acf787886e49150b20e2a75a9"
+        }
+      }
+    },
+    {
+      "case": "cycle-95/trial-0",
+      "solver_guard": 0.001080354070111527,
+      "strict_guard": 0.0010814355056171445,
+      "trial_margin": 0.125,
+      "first_alpha": [
+        1.0734370355210762e-05,
+        0.0008569504580165284,
+        0.0005356709021340094,
+        -0.02576860266237034,
+        -3.301638456064285e-05,
+        0.001047455659771003,
+        -9.693421550022914e-05
+      ],
+      "first_nominal_alpha": [
+        1.1013895178498546e-05,
+        0.0007216990972483858,
+        0.0005216077922932483,
+        -0.02468824859224844,
+        -3.203680679278124e-05,
+        0.001011528879764067,
+        -9.462666867242118e-05
+      ],
+      "first_alpha_change": [
+        -2.7952482328778323e-07,
+        0.00013525136076814265,
+        1.4063109840761192e-05,
+        -0.0010803540701219,
+        -9.79577767861608e-07,
+        3.592678000693592e-05,
+        -2.3075468278079594e-06
+      ],
+      "first_progress_b": 5.887033955593021e-17,
+      "first_nominal_progress_b": 2.7476672335121338e-17,
+      "max_alpha_change": 0.0010803540701219,
+      "first_alpha_at_guard": [
+        false,
+        false,
+        false,
+        true,
+        false,
+        false,
+        false
+      ],
+      "proof_shape": [
+        2800,
+        4
+      ],
+      "input_pins": {
+        "planning_guard.bin": {
+          "bytes": 65750,
+          "sha256": "76e08dc72c2bbe1e738c730e5f17a3cde971197f8894a132ea8976fed119c2f2"
+        },
+        "candidate.bin": {
+          "bytes": 4198,
+          "sha256": "00ccec48995ae9bbe3b4370853f758556be5b4210926a45e0b27e465f6c6ea1f"
+        }
+      }
+    }
+  ],
+  "confirmed": "The simultaneous stop predicate correctly fails; physical v/a and accepted w/alpha fail every saved stop observation. Progress r/b dropping below threshold does not stop the arm. Current43 accepted trial has a much smaller nominal-centered alpha subset after actual B rejection. Original stop-mode cost is present, but cannot by itself guarantee finite stop within64commands.",
+  "pending": "A causal ablation of a fresh genuinely braking nominal within unchanged plant/QP/SI/nonlinear/B/C/jerk/stop limits is needed. Saved-data guard observations alone do not prove a single complete cause or authorize replacing a native controller. No new Model/controller/native/probe executed."
+}
