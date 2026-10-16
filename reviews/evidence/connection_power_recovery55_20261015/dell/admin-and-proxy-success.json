@@ -1,0 +1,7 @@
+{
+  "chunk_id": "8ed1de",
+  "wall_time_seconds": 0.3249317,
+  "exit_code": 0,
+  "original_token_count": 239,
+  "output": "SUCCESS\r\n{\r\n  \"ActiveScheme\": \"381b4222-f694-41f0-9685-ff5bb260df2e\",\r\n  \"Before\": [\r\n    {\r\n      \"Name\": \"StandbyIdle\",\r\n      \"AC\": 0,\r\n      \"DC\": 3600\r\n    },\r\n    {\r\n      \"Name\": \"HibernateIdle\",\r\n      \"AC\": 0,\r\n      \"DC\": 2147483647\r\n    },\r\n    {\r\n      \"Name\": \"LidAction\",\r\n      \"AC\": 0,\r\n      \"DC\": 1\r\n    },\r\n    {\r\n      \"Name\": \"UnattendedSleep\",\r\n      \"AC\": 120,\r\n      \"DC\": 120\r\n    }\r\n  ],\r\n  \"After\": [\r\n    {\r\n      \"Name\": \"StandbyIdle\",\r\n      \"AC\": 0,\r\n      \"DC\": 3600\r\n    },\r\n    {\r\n      \"Name\": \"HibernateIdle\",\r\n      \"AC\": 0,\r\n      \"DC\": 2147483647\r\n    },\r\n    {\r\n      \"Name\": \"LidAction\",\r\n      \"AC\": 0,\r\n      \"DC\": 1\r\n    },\r\n    {\r\n      \"Name\": \"UnattendedSleep\",\r\n      \"AC\": 0,\r\n      \"DC\": 120\r\n    }\r\n  ],\r\n  \"ChangedAC\": [\r\n    \"UnattendedSleep\"\r\n  ],\r\n  \"BatterySettingsUnchanged\": true\r\n}\r\n{\r\n  \"Address\": \"169.254.118.3\",\r\n  \"Port\": 2222,\r\n  \"Banner\": \"SSH-2.0-OpenSSH_9.6p1 Ubuntu-3ubuntu13.19\"\r\n}\r\n"
+}

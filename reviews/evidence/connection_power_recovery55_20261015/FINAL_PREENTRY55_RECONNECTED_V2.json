@@ -1,0 +1,37 @@
+{
+  "Mac_free_bytes": 51284152320,
+  "minimum33GiB": 35433480192,
+  "remote": {
+    "schema": "FRESH55_RECONNECTED_V2_PREENTRY_RESOURCES_ALLINPUTS_V1",
+    "utc": "2026-10-16T01:44:32.052625+00:00",
+    "actual_CIM_volumes": [
+      {
+        "DeviceID": "C:",
+        "FreeSpace": 142062178304,
+        "Size": 488030334976
+      },
+      {
+        "DeviceID": "D:",
+        "FreeSpace": 87908872192,
+        "Size": 512098299904
+      }
+    ],
+    "C_D_80GiBeach": true,
+    "WSL_statvfs_used": false,
+    "all_distinct_inputs": 1711,
+    "identities_stable": true,
+    "pure18stable_pass": true,
+    "max_V2_codec_bytes": 3507749,
+    "longdouble_digits_measured": 64,
+    "existing_native_processes": [],
+    "argv": [
+      "/home/codextransfer/predictive_motion/results/phase5/session-controlled-stop-kkt-refinement-active32-brake64-dwell25-v1-20261015-attempt55/link-attempt1/active_first_cycle",
+      "/home/codextransfer/predictive_motion/results/phase5/session-controlled-stop-kkt-refinement-active32-brake64-dwell25-v1-20261015-attempt55/profile-version1/active_input.json",
+      "23665a622979bb9775e23f566d920fa670812d9aba47e53edcfc1e05b37ab000",
+      "a55cac662d6e0170ce66d128936d21826b4eec39fe9a9177d0456859066cb4a9",
+      "/home/codextransfer/predictive_motion/results/phase5/session-controlled-stop-kkt-refinement-active32-brake64-dwell25-v1-20261015-attempt55/run-attempt1/artifacts"
+    ],
+    "native_not_yet_entered": true
+  },
+  "scope": "Fresh after Root independent communication login+bidirectional readback. Original failed PREENTRY55 stderr retained; no once marker/native entry yet. Source/model/thresholds/outer512/10s/CPU/AS/storage/counter caps unchanged. Same combined53 global derived budget."
+}

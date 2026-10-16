@@ -1,0 +1,40 @@
+{
+  "schema": "ROOT55_RECONNECTED_TRANSFER_POWER_READBACK_V1",
+  "original_fixed_hostkey_SSH_identity": "ZH2022 uid1001 codextransfer sshd active: independent Root SSH command passed",
+  "two_direction_manifests_match": true,
+  "probe_size": 2097152,
+  "probe_sha256": "fdb1ca7b1b4a159ebd65622ce4c4ac2ae1ba49fe75d7f1ea106cbed8bbe98598",
+  "Root_rehashed_local_source_and_returned_paths": [
+    "/private/tmp/ros_link_recovery_20261016T013349Z/received/probe.bin",
+    "/private/tmp/ros_link_recovery_20261016T013349Z/send/probe.bin"
+  ],
+  "maintenance_power_readback_sha256": "9aaf482ace4317e526284665cdb9e500ff5aa9f5ba5468806f23e9a77cb47b7d",
+  "AC_values": {
+    "StandbyIdle": {
+      "Name": "StandbyIdle",
+      "AC": 0,
+      "DC": 3600
+    },
+    "HibernateIdle": {
+      "Name": "HibernateIdle",
+      "AC": 0,
+      "DC": 2147483647
+    },
+    "LidAction": {
+      "Name": "LidAction",
+      "AC": 0,
+      "DC": 1
+    },
+    "UnattendedSleep": {
+      "Name": "UnattendedSleep",
+      "AC": 0,
+      "DC": 120
+    }
+  },
+  "Battery_before_after_exact_match": true,
+  "only_AC_change": [
+    "UnattendedSleep"
+  ],
+  "independent_Root_live_power_query": "Initial query output was not UTF8; decoding failed and its exact stderr retained. Does not negate maintenance actual native readback independently inspected here. No extra configuration changes made.",
+  "keeper_lifetime": "Await independent post-executor identity snapshot; no indefinite survival claim."
+}

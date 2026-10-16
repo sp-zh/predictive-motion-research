@@ -1,0 +1,29 @@
+{
+  "schema": "ROOT55_POST_MAINTENANCE_KEEPER_PACKET_V1",
+  "manifest_sha256": "9e2578c99831f342ef32e1a0d7aec93da91f73d9f02873fb616f54108af8b824",
+  "all13_payload_size_sha_verified": true,
+  "keeper": {
+    "Id": 29304,
+    "Name": "wsl",
+    "IdentityMatches": true,
+    "StartTimeUtc": "2026-10-16T01:29:44.8524424Z"
+  },
+  "original_and_elevated_launchers_exited": true,
+  "listener": [
+    {
+      "LocalAddress": "169.254.118.3",
+      "LocalPort": 2222,
+      "OwningProcess": 5504
+    }
+  ],
+  "AC_power": [
+    {
+      "PowerOnline": true,
+      "Charging": false,
+      "Discharging": false
+    }
+  ],
+  "short_term_survival_verified": true,
+  "long_term_unknown": true,
+  "scope": "Maintenance READY says independent Mac duplex pending; Root separate TRANSFER_POWER_READBACK_VERIFIED.json supplies actual completed duplex proof. No rewriting of original READY. Native55 still unconsumed at this review."
+}

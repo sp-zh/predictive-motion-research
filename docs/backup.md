@@ -19,9 +19,11 @@ require those local archives.
 
 ## 2026-10-15 recoverable progress checkpoint
 
-The [53–54/55 source checkpoint](../reviews/evidence/phase5_stop53_54_and_refinement55_v1_20261015/README.md) includes exact versioned v8 source/profile, independent saved-data reports and actual54 PNG/SVG/CSV with provenance. It preserves failures and the direct-human resumption.55 is prepared but unconsumed after an SSH banner timeout. This checkpoint can be publicly committed/pushed under the existing authorization while communication is restored; it does not gate the next actual entry.
+The [53–54/55 source checkpoint](../reviews/evidence/phase5_stop53_54_and_refinement55_v1_20261015/README.md) includes exact versioned v8 source/profile, independent saved-data reports and actual54 PNG/SVG/CSV with provenance. It preserves failures and the direct-human resumption.At source checkpoint0ef35f8,55 was prepared but unconsumed after an SSH banner timeout. This checkpoint can be publicly committed/pushed under the existing authorization while communication is restored; it does not gate the next actual entry.
 
 [Storage identities](../reviews/evidence/phase5_stop53_54_and_refinement55_v1_20261015/STORAGE_CHECKPOINT.json) explicitly mark the new full-evidence backup INCOMPLETE.53 has a complete Mac packet and verified outer transport hash;54 has a verified selected Mac packet, with remaining raw data on Dell. New comprehensive Mac/Dell archive member readback is pending the original connection. Do not describe Git or the selected54 packet as a complete experimental-data backup. The older52 complete backup remains valid and unchanged.
+
+The subsequent [original-channel/AC-power recovery and55 entry record](../reviews/evidence/connection_power_recovery55_20261015/README.md) preserves13 maintenance payloads, both2MiB SHA manifests, power before/after, Root qualifications and fresh55 startup evidence. The human UAC completed; AC four-setting values are0 and DC/battery policy is unchanged. Native55 is running after fresh resource/1711-input checks; no result or full experimental evidence backup is implied. This small recovery checkpoint is independent of the running experiment and does not gate it.
 
 ## Required checkpoints
 

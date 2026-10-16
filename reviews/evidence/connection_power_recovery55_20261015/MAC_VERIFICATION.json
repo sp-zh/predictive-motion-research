@@ -1,0 +1,33 @@
+{
+  "checked_utc": "2026-10-16T01:40:54.959671+00:00",
+  "original_DellTransfer_ssh": "PASS; pinned existing hostkey configuration",
+  "duplex_2MiB_sha256": "PASS",
+  "bytes_each_direction": 2097152,
+  "sha256": "fdb1ca7b1b4a159ebd65622ce4c4ac2ae1ba49fe75d7f1ea106cbed8bbe98598",
+  "power_after": [
+    {
+      "Name": "StandbyIdle",
+      "AC": 0,
+      "DC": 3600
+    },
+    {
+      "Name": "HibernateIdle",
+      "AC": 0,
+      "DC": 2147483647
+    },
+    {
+      "Name": "LidAction",
+      "AC": 0,
+      "DC": 1
+    },
+    {
+      "Name": "UnattendedSleep",
+      "AC": 0,
+      "DC": 120
+    }
+  ],
+  "battery_safety_unchanged": true,
+  "maintenance_status": "SUCCESS",
+  "keeper_long_term_survival": "awaiting maintenance report; not established",
+  "project_attempt55": "not started by status chat"
+}
