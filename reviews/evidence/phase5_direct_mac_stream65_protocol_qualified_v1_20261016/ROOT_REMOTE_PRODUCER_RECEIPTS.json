@@ -1,0 +1,248 @@
+{
+  "protocol65-direct-stream-test1-20261016": {
+    "STREAM_CONSUMED.json": {
+      "bytes": 351,
+      "sha256": "f26544c3c2f0025235d7214a9afd04029de9c5ceb5dc95504a0500ace7bd95c5",
+      "value": {
+        "schema": "POSTNATIVE65_DIRECT_MAC_SINGLE_USE_STREAM_CONSUMED_V1",
+        "utc": "2026-10-16T23:05:36.272295+00:00",
+        "purpose": "PROTOCOL_TEST_ONLY",
+        "prepared_sha256": "44261fa4a78eebb6ecb6d1485195e9353ce1b5d046ef8ed8781a45161c5e0617",
+        "archive_aggregate_cap": 8388608,
+        "automatic_retries": 0,
+        "failed_Mac_partial_must_stay_charged": true
+      }
+    },
+    "STREAM_CONFIG.json": {
+      "bytes": 326,
+      "sha256": "5b565febd8a65378350d2304935dc44a68e171cd2787df2960e150d2f3c15040",
+      "value": {
+        "source": "/home/codextransfer/predictive_motion/results/phase5/protocol65-direct-stream-test1-20261016",
+        "purpose": "PROTOCOL_TEST_ONLY",
+        "fixture_id": "protocol65-direct-stream-test1-20261016",
+        "archive_prefix": "native65_test_only",
+        "source_payload_cap": 8388608,
+        "archive_aggregate_cap": 8388608,
+        "metadata_cap": 1048576
+      }
+    },
+    "STREAM_PREPARED.json": {
+      "bytes": 1764,
+      "sha256": "44261fa4a78eebb6ecb6d1485195e9353ce1b5d046ef8ed8781a45161c5e0617",
+      "value": {
+        "schema": "POSTNATIVE65_DIRECT_MAC_PREPARED_V1",
+        "utc": "2026-10-16T23:01:09.839476+00:00",
+        "purpose": "PROTOCOL_TEST_ONLY",
+        "payload_count": 8,
+        "payload_bytes": 249114,
+        "native_source": "/home/codextransfer/predictive_motion/results/phase5/protocol65-direct-stream-test1-20261016",
+        "prefix": "native65_test_only/",
+        "source_manifest": {
+          "bytes": 1964,
+          "sha256": "f7272b3a6d378f180d42ba4f61fbb42d7d3f6f31dde38cec3c09b337a4b0ad3f"
+        },
+        "codec_report": {
+          "bytes": 2773,
+          "sha256": "98d868cacc8acec72b9476224ed5466a2c66dbf25eaa12c1ced8d330c3a6ed96"
+        },
+        "metadata_members": {
+          "SOURCE_MANIFEST.json": {
+            "bytes": 1964,
+            "sha256": "f7272b3a6d378f180d42ba4f61fbb42d7d3f6f31dde38cec3c09b337a4b0ad3f"
+          },
+          "FULL_NATIVE_CODEC_READBACK.json": {
+            "bytes": 2773,
+            "sha256": "98d868cacc8acec72b9476224ed5466a2c66dbf25eaa12c1ced8d330c3a6ed96"
+          },
+          "direct_mac_archive_producer65_v4.py": {
+            "bytes": 13933,
+            "sha256": "ea29b98cd14fe7e732d516461b626f3fd05381eaabae4652f5e8f9a6501e8ddf"
+          },
+          "strict_codec_reader.py": {
+            "bytes": 7289,
+            "sha256": "c32178a23e5254f44ee21a62be655af3236c708c02bb061564c3d8b0b8cb468a"
+          }
+        },
+        "limits": {
+          "archive_bytes": 8388608,
+          "payload_bytes": 8388608,
+          "metadata_bytes": 1048576,
+          "tar_raw_bytes": 4563402752
+        },
+        "config_identity": {
+          "bytes": 326,
+          "sha256": "5b565febd8a65378350d2304935dc44a68e171cd2787df2960e150d2f3c15040"
+        },
+        "source_manifest_sha256": "f7272b3a6d378f180d42ba4f61fbb42d7d3f6f31dde38cec3c09b337a4b0ad3f",
+        "archive_aggregate_cap": 8388608,
+        "no_Dell_tar_file": true,
+        "actual_volumes": [],
+        "scope": "Preparation and original-source codec readback only; no Mac stream/backup completion yet."
+      }
+    },
+    "STREAM_SENT.json": {
+      "bytes": 925,
+      "sha256": "96eb748d4030c84ade4c300f47a906d1be89101b20117ea01aa9d7233b9a01ac",
+      "value": {
+        "schema": "POSTNATIVE65_DIRECT_MAC_PRODUCER_STREAM_SENT_V1",
+        "complete": true,
+        "utc": "2026-10-16T23:05:36.286645+00:00",
+        "purpose": "PROTOCOL_TEST_ONLY",
+        "bytes": 260359,
+        "sha256": "3d6c26e8d2e5cce38918cb047e9d3f3fb465abaf3b1e0ae448b6d97761109752",
+        "outer_tar_raw_bytes": 307200,
+        "attempted_bytes_charged": 260359,
+        "prepared_sha256": "44261fa4a78eebb6ecb6d1485195e9353ce1b5d046ef8ed8781a45161c5e0617",
+        "source_manifest_sha256": "f7272b3a6d378f180d42ba4f61fbb42d7d3f6f31dde38cec3c09b337a4b0ad3f",
+        "source_payload_count": 8,
+        "tar_members": 12,
+        "source_before_after_stable": true,
+        "no_Dell_tar_file": true,
+        "actual_volumes_after": [],
+        "wall_seconds": 0.01754582299327012,
+        "Mac_persisted_reopen_readback": "PENDING",
+        "scope": "Complete bounded stream emitted once only. Producer READY does not prove Mac persistence/independent member+codec/reopen verification or phase/stop acceptance."
+      }
+    }
+  },
+  "protocol65-direct-stream-test2-bad-complete-20261016": {
+    "PREPARE_FAILURE.json": {
+      "bytes": 1250,
+      "sha256": "9372cbeb8e67bb63502b35ecc65dfb2cf56d279e89e273df031a37fbc82ffc58",
+      "value": {
+        "error": "error('Error -3 while decompressing data: incorrect data check')",
+        "utc": "2026-10-16T23:01:39.716726+00:00",
+        "traceback": "Traceback (most recent call last):\n  File \"/home/codextransfer/predictive_motion/transfer/cold-archives/protocol65-direct-stream-test2-bad-complete-20261016/direct_mac_archive_producer65_v4.py\", line 65, in <module>\n    elif entry['complete']:native.append({**codec.verify_artifact(q,False,True),'kind':'NATIVE_ARTIFACT','availability':'COMPLETE_SOURCE_RAW_AVAILABLE'})\n                                            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/home/codextransfer/predictive_motion/transfer/cold-archives/protocol65-direct-stream-test2-bad-complete-20261016/strict_codec_reader.py\", line 69, in verify_artifact\n    out=decoder.decompress(data,BLOCK);accept(out);require(not decoder.unused_data,'single gzip no trailing/concatenated members');data=decoder.unconsumed_tail\n        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\nzlib.error: Error -3 while decompressing data: incorrect data check\n",
+        "wall_seconds": 0.005085769997094758,
+        "partial_preserved": true,
+        "stream_attempted_bytes": null,
+        "stream_written_bytes": null,
+        "no_retry_or_refund": true,
+        "purpose": "PROTOCOL_TEST_ONLY"
+      }
+    },
+    "STREAM_CONFIG.json": {
+      "bytes": 352,
+      "sha256": "5b986a90765d441f18805321f89fe0edcafb4cf789e7dd7666ebef9234e7d543",
+      "value": {
+        "source": "/home/codextransfer/predictive_motion/results/phase5/protocol65-direct-stream-test2-bad-complete-20261016",
+        "purpose": "PROTOCOL_TEST_ONLY",
+        "fixture_id": "protocol65-direct-stream-test2-bad-complete-20261016",
+        "archive_prefix": "native65_test_only",
+        "source_payload_cap": 8388608,
+        "archive_aggregate_cap": 8388608,
+        "metadata_cap": 1048576
+      }
+    }
+  },
+  "protocol65-direct-stream-test3-pipe-failure-20261016": {
+    "STREAM_CONSUMED.json": {
+      "bytes": 351,
+      "sha256": "df13f4fe19a3814436c36922e19fba2b1baa99b878833c81add349996bcac880",
+      "value": {
+        "schema": "POSTNATIVE65_DIRECT_MAC_SINGLE_USE_STREAM_CONSUMED_V1",
+        "utc": "2026-10-16T23:06:35.057356+00:00",
+        "purpose": "PROTOCOL_TEST_ONLY",
+        "prepared_sha256": "a969a9de71fdd7792bb02a30490dc5d7463d23e8c534d083dda99240e3058624",
+        "archive_aggregate_cap": 1048576,
+        "automatic_retries": 0,
+        "failed_Mac_partial_must_stay_charged": true
+      }
+    },
+    "PIPE_FAILURE_WRAPPER_RESULT.json": {
+      "bytes": 3503,
+      "sha256": "6ea60fa15f44a52ae14d780780b9e0c9265b773c207f755db30ccddd82281d9d",
+      "value": {
+        "purpose": "PROTOCOL_TEST_ONLY",
+        "intentional_child_output_pipe_closed_after_bytes": 8192,
+        "producer_exit": 1,
+        "producer_failure_preserved": true,
+        "stderr": "Traceback (most recent call last):\n  File \"/home/codextransfer/predictive_motion/transfer/cold-archives/protocol65-direct-stream-test3-pipe-failure-20261016/direct_mac_archive_producer65_v4.py\", line 101, in <module>\n    rel=Path(row['path']).relative_to(cfg['archive_prefix']);q=SOURCE/rel;assert digest(q)=={k:row[k]for k in ['bytes','sha256']};tar.add(q,arcname=row['path'],recursive=False)\n                                                                                                                                  ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/usr/lib/python3.12/tarfile.py\", line 2260, in add\n    self.addfile(tarinfo, f)\n  File \"/usr/lib/python3.12/tarfile.py\", line 2288, in addfile\n    copyfileobj(fileobj, self.fileobj, tarinfo.size, bufsize=bufsize)\n  File \"/usr/lib/python3.12/tarfile.py\", line 260, in copyfileobj\n    dst.write(buf)\n  File \"/usr/lib/python3.12/tarfile.py\", line 443, in write\n    self.__write(s)\n  File \"/usr/lib/python3.12/tarfile.py\", line 451, in __write\n    self.fileobj.write(self.buf[:self.bufsize])\n  File \"/home/codextransfer/predictive_motion/transfer/cold-archives/protocol65-direct-stream-test3-pipe-failure-20261016/direct_mac_archive_producer65_v4.py\", line 95, in write\n    assert len(data)<=MAX_TAR_RAW-self.bytes,'4.25GiB tarraw prewrite bound';self.bytes+=len(data);return self.file.write(data)\n                                                                                                          ^^^^^^^^^^^^^^^^^^^^^\n  File \"/usr/lib/python3.12/gzip.py\", line 300, in write\n    return self._buffer.write(data)\n           ^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/usr/lib/python3.12/gzip.py\", line 130, in write\n    return self.gzip_file._write_raw(data)\n           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/usr/lib/python3.12/gzip.py\", line 312, in _write_raw\n    self.fileobj.write(self.compress.compress(data))\n  File \"/home/codextransfer/predictive_motion/transfer/cold-archives/protocol65-direct-stream-test3-pipe-failure-20261016/direct_mac_archive_producer65_v4.py\", line 84, in write\n    try:got=os.write(1,data[at:])\n            ^^^^^^^^^^^^^^^^^^^^^\nBrokenPipeError: [Errno 32] Broken pipe\n\nDuring handling of the above exception, another exception occurred:\n\nTraceback (most recent call last):\n  File \"/home/codextransfer/predictive_motion/transfer/cold-archives/protocol65-direct-stream-test3-pipe-failure-20261016/direct_mac_archive_producer65_v4.py\", line 97, in <module>\n    with gzip.GzipFile(fileobj=output,mode='wb',compresslevel=1,mtime=0,filename='')as compressed:\n  File \"/usr/lib/python3.12/gzip.py\", line 356, in close\n    self._buffer.flush()\n  File \"/usr/lib/python3.12/gzip.py\", line 130, in write\n    return self.gzip_file._write_raw(data)\n           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/usr/lib/python3.12/gzip.py\", line 312, in _write_raw\n    self.fileobj.write(self.compress.compress(data))\n  File \"/home/codextransfer/predictive_motion/transfer/cold-archives/protocol65-direct-stream-test3-pipe-failure-20261016/direct_mac_archive_producer65_v4.py\", line 84, in write\n    try:got=os.write(1,data[at:])\n            ^^^^^^^^^^^^^^^^^^^^^\nBrokenPipeError: [Errno 32] Broken pipe\n",
+        "no_native_or_Model": true,
+        "no_retry_refund_or_READY": true
+      }
+    },
+    "STREAM_CONFIG.json": {
+      "bytes": 352,
+      "sha256": "ea171836908b244faa276326fd31ca156f0996e0ec929e24872ea319e2b7ca84",
+      "value": {
+        "source": "/home/codextransfer/predictive_motion/results/phase5/protocol65-direct-stream-test3-pipe-failure-20261016",
+        "purpose": "PROTOCOL_TEST_ONLY",
+        "fixture_id": "protocol65-direct-stream-test3-pipe-failure-20261016",
+        "archive_prefix": "native65_test_only",
+        "source_payload_cap": 8388608,
+        "archive_aggregate_cap": 1048576,
+        "metadata_cap": 1048576
+      }
+    },
+    "STREAM_PREPARED.json": {
+      "bytes": 1777,
+      "sha256": "a969a9de71fdd7792bb02a30490dc5d7463d23e8c534d083dda99240e3058624",
+      "value": {
+        "schema": "POSTNATIVE65_DIRECT_MAC_PREPARED_V1",
+        "utc": "2026-10-16T23:05:44.334789+00:00",
+        "purpose": "PROTOCOL_TEST_ONLY",
+        "payload_count": 8,
+        "payload_bytes": 249127,
+        "native_source": "/home/codextransfer/predictive_motion/results/phase5/protocol65-direct-stream-test3-pipe-failure-20261016",
+        "prefix": "native65_test_only/",
+        "source_manifest": {
+          "bytes": 1977,
+          "sha256": "ac834e63ba22edd4bc0a05a5ee4e01fdeccdf7ee44dbd0db37c7f0181aa696d4"
+        },
+        "codec_report": {
+          "bytes": 2825,
+          "sha256": "3286a0867c2582f53caa59a83a4821fe5ec51e5ad4c20bde84d37a4daf4ba4d6"
+        },
+        "metadata_members": {
+          "SOURCE_MANIFEST.json": {
+            "bytes": 1977,
+            "sha256": "ac834e63ba22edd4bc0a05a5ee4e01fdeccdf7ee44dbd0db37c7f0181aa696d4"
+          },
+          "FULL_NATIVE_CODEC_READBACK.json": {
+            "bytes": 2825,
+            "sha256": "3286a0867c2582f53caa59a83a4821fe5ec51e5ad4c20bde84d37a4daf4ba4d6"
+          },
+          "direct_mac_archive_producer65_v4.py": {
+            "bytes": 13933,
+            "sha256": "ea29b98cd14fe7e732d516461b626f3fd05381eaabae4652f5e8f9a6501e8ddf"
+          },
+          "strict_codec_reader.py": {
+            "bytes": 7289,
+            "sha256": "c32178a23e5254f44ee21a62be655af3236c708c02bb061564c3d8b0b8cb468a"
+          }
+        },
+        "limits": {
+          "archive_bytes": 1048576,
+          "payload_bytes": 8388608,
+          "metadata_bytes": 1048576,
+          "tar_raw_bytes": 4563402752
+        },
+        "config_identity": {
+          "bytes": 352,
+          "sha256": "ea171836908b244faa276326fd31ca156f0996e0ec929e24872ea319e2b7ca84"
+        },
+        "source_manifest_sha256": "ac834e63ba22edd4bc0a05a5ee4e01fdeccdf7ee44dbd0db37c7f0181aa696d4",
+        "archive_aggregate_cap": 1048576,
+        "no_Dell_tar_file": true,
+        "actual_volumes": [],
+        "scope": "Preparation and original-source codec readback only; no Mac stream/backup completion yet."
+      }
+    },
+    "STREAM_FAILURE.json": {
+      "bytes": 3581,
+      "sha256": "8529aee5db8da36aacd3fdf67a50bfe17e8b3509dc4795581f1a60417ed15730",
+      "value": {
+        "error": "BrokenPipeError(32, 'Broken pipe')",
+        "utc": "2026-10-16T23:06:35.064151+00:00",
+        "traceback": "Traceback (most recent call last):\n  File \"/home/codextransfer/predictive_motion/transfer/cold-archives/protocol65-direct-stream-test3-pipe-failure-20261016/direct_mac_archive_producer65_v4.py\", line 101, in <module>\n    rel=Path(row['path']).relative_to(cfg['archive_prefix']);q=SOURCE/rel;assert digest(q)=={k:row[k]for k in ['bytes','sha256']};tar.add(q,arcname=row['path'],recursive=False)\n                                                                                                                                  ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/usr/lib/python3.12/tarfile.py\", line 2260, in add\n    self.addfile(tarinfo, f)\n  File \"/usr/lib/python3.12/tarfile.py\", line 2288, in addfile\n    copyfileobj(fileobj, self.fileobj, tarinfo.size, bufsize=bufsize)\n  File \"/usr/lib/python3.12/tarfile.py\", line 260, in copyfileobj\n    dst.write(buf)\n  File \"/usr/lib/python3.12/tarfile.py\", line 443, in write\n    self.__write(s)\n  File \"/usr/lib/python3.12/tarfile.py\", line 451, in __write\n    self.fileobj.write(self.buf[:self.bufsize])\n  File \"/home/codextransfer/predictive_motion/transfer/cold-archives/protocol65-direct-stream-test3-pipe-failure-20261016/direct_mac_archive_producer65_v4.py\", line 95, in write\n    assert len(data)<=MAX_TAR_RAW-self.bytes,'4.25GiB tarraw prewrite bound';self.bytes+=len(data);return self.file.write(data)\n                                                                                                          ^^^^^^^^^^^^^^^^^^^^^\n  File \"/usr/lib/python3.12/gzip.py\", line 300, in write\n    return self._buffer.write(data)\n           ^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/usr/lib/python3.12/gzip.py\", line 130, in write\n    return self.gzip_file._write_raw(data)\n           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/usr/lib/python3.12/gzip.py\", line 312, in _write_raw\n    self.fileobj.write(self.compress.compress(data))\n  File \"/home/codextransfer/predictive_motion/transfer/cold-archives/protocol65-direct-stream-test3-pipe-failure-20261016/direct_mac_archive_producer65_v4.py\", line 84, in write\n    try:got=os.write(1,data[at:])\n            ^^^^^^^^^^^^^^^^^^^^^\nBrokenPipeError: [Errno 32] Broken pipe\n\nDuring handling of the above exception, another exception occurred:\n\nTraceback (most recent call last):\n  File \"/home/codextransfer/predictive_motion/transfer/cold-archives/protocol65-direct-stream-test3-pipe-failure-20261016/direct_mac_archive_producer65_v4.py\", line 97, in <module>\n    with gzip.GzipFile(fileobj=output,mode='wb',compresslevel=1,mtime=0,filename='')as compressed:\n  File \"/usr/lib/python3.12/gzip.py\", line 356, in close\n    self._buffer.flush()\n  File \"/usr/lib/python3.12/gzip.py\", line 130, in write\n    return self.gzip_file._write_raw(data)\n           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/usr/lib/python3.12/gzip.py\", line 312, in _write_raw\n    self.fileobj.write(self.compress.compress(data))\n  File \"/home/codextransfer/predictive_motion/transfer/cold-archives/protocol65-direct-stream-test3-pipe-failure-20261016/direct_mac_archive_producer65_v4.py\", line 84, in write\n    try:got=os.write(1,data[at:])\n            ^^^^^^^^^^^^^^^^^^^^^\nBrokenPipeError: [Errno 32] Broken pipe\n",
+        "wall_seconds": 0.013953802001196891,
+        "partial_preserved": true,
+        "stream_attempted_bytes": 66315,
+        "stream_written_bytes": 16734,
+        "no_retry_or_refund": true,
+        "purpose": "PROTOCOL_TEST_ONLY"
+      }
+    }
+  }
+}

@@ -1,5 +1,11 @@
-# Paused direct-stream backup draft
+# Bounded direct-to-Mac evidence archive
 
-**NOT RELEASED. Project paused by direct human instruction2026-10-16.**
+After the independently verified direct human resume, the original Dell writer and Mac Root qualified the stream on small owned fixtures through the original fixed-hostkey SSH channel. [Results and limits](../../reviews/evidence/phase5_direct_mac_stream65_protocol_qualified_v1_20261016/README.md).
 
-`mac_consumer.py` is an unfinished Mac-side draft. Only two local owned-fixture cases ended before Root received the pause notification; real fixed-hostkey Dell producer integration, failure/pipe handling and resource-plan acceptance are not completed. The producer metadata dictionary identity review remains unresolved. Do not execute or continue development until a new direct human resume in the status chat. [Pause, provenance and preserved files](../../reviews/evidence/phase5_human_pause_after64_v1_20261016/README.md).
+The producer preserves the original files on Dell and sends one gzip tar stream without a second Dell archive. Deploy its exact source with the pinned `tools/cold_storage_verification_v1/strict_codec_reader.py` and a scoped `STREAM_CONFIG.json`. Its `prepare` command records stored-byte identities and separate complete, closed-failure-prefix, UNKNOWN and opaque-raw qualifications. Its `stream` command consumes a single-use marker before output; a failed part stays charged and cannot be retried under that marker.
+
+`mac_consumer.py` accepts metadata and an explicit command argv JSON file, checks all four declared metadata identities, verifies every stored member, and independently reads certified inner codecs. It fsyncs and reopens the actual Mac archive to verify its full SHA/CRC before finalizing READY. UNKNOWN contents retain stored-byte certificates only; opaque binary recovery does not establish native mathematical completeness. Failed streams retain their `.part` and FAILURE record without READY.
+
+Native maxima are 4 GiB compressed, 3.5 GiB payload, 4.25 GiB tar bytes, 16 MiB aggregate metadata and a 33 GiB Mac reserve. Smaller prepared limits apply. Protocol fixtures require at most 8 MiB compressed/payload, 1 MiB metadata and an additional Mac-side 16 MiB tar bound. The tested positive and pipe-failure cases share a separate finite 16 MiB allocation, including retained parts. All output metadata is charged before writing; the optional shared derived ledger remains cumulative.
+
+Small-fixture qualification does not prove native-scale capacity, environment restoration, controller behavior, physical stopping or phase acceptance. Native65 still requires its own current input, resource and regression qualification. [Earlier paused drafts and failures](../../reviews/evidence/phase5_human_pause_after64_v1_20261016/README.md) remain unchanged.

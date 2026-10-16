@@ -48,6 +48,7 @@ def metadata_write(path, data, ledger):
         with (ledger / 'LOCK').open('a+b') as lock:
             fcntl.flock(lock, fcntl.LOCK_EX)
             state = json.loads((ledger / 'LEDGER.json').read_text())
+            require(len(state['outputs']) < 10000, 'shared derived output count exhausted')
             require(len(data) <= state['cap'] - state['charged'], 'shared derived budget exhausted')
             state['charged'] += len(data)
             state['outputs'].append(dict(path=str(path), root=str(path.parent), bytes=len(data), sha256=digest(data), reserved_before_write=True))
@@ -72,7 +73,6 @@ def copy_stream(metadata, destination, report_dir, command, ledger=None, wall=12
     started = time.monotonic()
     require(0 < wall <= 1200, 'wall cap cannot expand')
     require(not destination.exists(), 'fresh destination required; failed parts cannot be overwritten')
-    require(shutil.disk_usage(destination.parent).free >= RESERVE + ARCHIVE_CAP + META_CAP, 'Mac reserve plus prospective archive/metadata required')
     entries = {}
     paths = list(metadata.iterdir())
     require(len(paths) <= 16 and all(p.is_file() and not p.is_symlink() for p in paths), 'bounded regular metadata roster')
@@ -84,9 +84,26 @@ def copy_stream(metadata, destination, report_dir, command, ledger=None, wall=12
     require(sum(map(len, entries.values())) <= META_CAP, 'metadata aggregate cap')
     prepared = json.loads(entries['STREAM_PREPARED.json'])
     limits = prepared['limits']
+    require(prepared['purpose'] in ['NATIVE_FINITE65', 'PROTOCOL_TEST_ONLY'], 'explicit archive purpose required')
     require(all(isinstance(limits[k], int) and limits[k] > 0 for k in ['archive_bytes', 'payload_bytes', 'tar_raw_bytes', 'metadata_bytes']), 'positive integer stream limits')
     require(digest(entries['strict_codec_reader.py']) == 'c32178a23e5254f44ee21a62be655af3236c708c02bb061564c3d8b0b8cb468a', 'frozen canonical reader pin')
     require(limits['archive_bytes'] <= ARCHIVE_CAP and limits['payload_bytes'] <= PAYLOAD_CAP and limits['tar_raw_bytes'] <= TAR_CAP and limits['metadata_bytes'] <= META_CAP, 'producer limits exceed agreed bounds')
+    limits = dict(limits)
+    if prepared['purpose'] == 'PROTOCOL_TEST_ONLY':
+        require(limits['archive_bytes'] <= 8 << 20 and limits['payload_bytes'] <= 8 << 20 and limits['metadata_bytes'] <= 1 << 20, 'small protocol fixture bounds required')
+        limits['tar_raw_bytes'] = min(limits['tar_raw_bytes'], 16 << 20)
+    require(shutil.disk_usage(destination.parent).free >= RESERVE + limits['archive_bytes'] + limits['metadata_bytes'], 'Mac reserve plus prospective archive/metadata required')
+    metadata_charged = 0
+
+    def emit(path, data, final_failure=False):
+        nonlocal metadata_charged
+        reserve = 0 if final_failure else 8192
+        require(len(data) <= limits['metadata_bytes'] - metadata_charged - reserve, 'aggregate metadata prewrite cap')
+        metadata_charged += len(data)
+        metadata_write(path, data, ledger)
+
+    def emit_json(path, value, final_failure=False):
+        emit(path, (json.dumps(value, indent=2) + '\n').encode(), final_failure)
     for name, key in [('SOURCE_MANIFEST.json', 'source_manifest'), ('FULL_NATIVE_CODEC_READBACK.json', 'codec_report')]:
         require(prepared[key] == dict(bytes=len(entries[name]), sha256=digest(entries[name])), 'prepared metadata identity mismatch')
     manifest = json.loads(entries['SOURCE_MANIFEST.json'])
@@ -104,11 +121,13 @@ def copy_stream(metadata, destination, report_dir, command, ledger=None, wall=12
     payload_bytes = sum(e['bytes'] for e in expected.values())
     require(payload_bytes == manifest['payload_bytes'] == prepared['payload_bytes'] <= limits['payload_bytes'], 'payload bytes mismatch')
     members = prepared['metadata_members']
-    require(len(members) == len(set(members)) == 4 and all(Path(n).name == n and n in entries for n in members), 'four pinned metadata members required')
+    require(isinstance(members, dict) and len(members) == 4 and all(safe_name(n) and Path(n).name == n and n in entries for n in members), 'four pinned metadata member identities required')
     require({'SOURCE_MANIFEST.json', 'FULL_NATIVE_CODEC_READBACK.json', 'strict_codec_reader.py'}.issubset(members), 'missing verification metadata')
     for name in members:
         require(name not in expected, 'metadata/payload collision')
-        expected[name] = dict(bytes=len(entries[name]), sha256=digest(entries[name]))
+        identity = dict(bytes=len(entries[name]), sha256=digest(entries[name]))
+        require(members[name] == identity, 'declared metadata member identity mismatch: ' + name)
+        expected[name] = identity
     inner = {}
     for e in codecs['files']:
         relative = Path(e['file']).relative_to(prepared['native_source'])
@@ -123,8 +142,8 @@ def copy_stream(metadata, destination, report_dir, command, ledger=None, wall=12
         inner[name] = e
     require(set(inner) == {name for name in expected if name.endswith('.bin')}, 'every native binary needs a certified or explicit UNKNOWN record')
     report_dir.mkdir(parents=True, exist_ok=True)
-    plan = dict(schema='MAC_SINGLE_DIRECT_STREAM_PLAN_V1', prepared_sha256=digest(entries['STREAM_PREPARED.json']), archive_cap=ARCHIVE_CAP, payload_cap=PAYLOAD_CAP, tar_raw_cap=TAR_CAP, metadata_cap=META_CAP, Mac_reserve=RESERVE, attempts=1, wall_cap=wall, destination=str(destination), no_Dell_archive_stock=True, unknown_stored_bytes_preserved_without_raw_completion_promotion=True)
-    write_json(report_dir / 'PLAN.json', plan, ledger)
+    plan = dict(schema='MAC_SINGLE_DIRECT_STREAM_PLAN_V1', purpose=prepared['purpose'], prepared_sha256=digest(entries['STREAM_PREPARED.json']), archive_cap=limits['archive_bytes'], payload_cap=limits['payload_bytes'], tar_raw_cap=limits['tar_raw_bytes'], metadata_cap=limits['metadata_bytes'], Mac_reserve=RESERVE, attempts=1, wall_cap=wall, destination=str(destination), no_Dell_archive_stock=True, unknown_stored_bytes_preserved_without_raw_completion_promotion=True)
+    emit_json(report_dir / 'PLAN.json', plan)
     destination.mkdir()
     part = destination / 'complete.tar.gz.part'
     final = destination / 'complete.tar.gz'
@@ -196,7 +215,7 @@ def copy_stream(metadata, destination, report_dir, command, ledger=None, wall=12
         stream = Stream()
         seen = set()
         inner_seen = set()
-        counts = dict(source_complete=0, closed_source_failure_prefix=0, unknown_stored_only=0)
+        counts = dict(source_complete=0, closed_source_failure_prefix=0, unknown_stored_only=0, opaque_raw_only=0)
         native_raw = 0
         with tarfile.open(fileobj=stream, mode='r|') as archive:
             for member in archive:
@@ -235,7 +254,7 @@ def copy_stream(metadata, destination, report_dir, command, ledger=None, wall=12
                     if certified:
                         require((not z or z.eof and not z.unused_data and not z.unconsumed_tail) and rn == e['raw_bytes'] and rh.hexdigest() == e['raw_sha256'], 'inner CRC/EOF/raw SHA mismatch')
                         native_raw += rn
-                        counts['source_complete' if e['source_complete'] else 'closed_source_failure_prefix'] += 1
+                        counts['opaque_raw_only' if e.get('kind') == 'OPAQUE_NON_NATIVE_RAW_FILE' else 'source_complete' if e['source_complete'] else 'closed_source_failure_prefix'] += 1
                     else:
                         counts['unknown_stored_only'] += 1
         require(seen == set(expected) and inner_seen == set(inner), 'missing archive member/codec')
@@ -275,18 +294,18 @@ def copy_stream(metadata, destination, report_dir, command, ledger=None, wall=12
         require(n == stream.stored and h.hexdigest() == stored_hash.hexdigest() and rn == stream.raw and z.eof and not z.unused_data and not z.unconsumed_tail, 'persisted whole-file SHA/CRC/EOF mismatch')
         require(shutil.disk_usage(destination.parent).free >= RESERVE, 'Mac final reserve')
         report = dict(schema='MAC_DIRECT_STREAM_STORED_EVIDENCE_READBACK_V1', archive=str(final), bytes=n, sha256=h.hexdigest(), outer_tar_raw_bytes=rn, members=len(seen), payload_members=manifest['payload_count'], codec_counts=counts, certified_inner_raw_bytes=native_raw, every_stored_member_SHA_size_verified=True, certified_inner_raw_SHA_CRC_singleEOF_verified=True, UNKNOWN_inner_raw_CRC_explicitly_unverified=counts['unknown_stored_only'], Mac_persisted_full_file_reopened_SHA_CRC_verified=True, Dell_source_preserved=prepared['native_source'], independent_devices_format='Dell original frozen files and Mac complete tar; no Dell second tar file', producer_sent_receipt=sent, Mac_free_before=before, Mac_free_after=shutil.disk_usage(destination.parent).free, wall_seconds=time.monotonic() - started, scope='Complete stored-byte recovery only. Closed source-failure/UNKNOWN bytes retain original qualification. Not standalone environment, mathematical/physical stop, realtime, task or phase acceptance.')
-        write_json(report_dir / 'FULL_READBACK.json', report, ledger)
+        emit_json(report_dir / 'FULL_READBACK.json', report)
         part.chmod(0o444)
         os.rename(part, final)
         for name in members:
-            metadata_write(destination / name, entries[name], ledger)
-        metadata_write(destination / 'PRODUCER_PREPARED.json', entries['STREAM_PREPARED.json'], ledger)
-        write_json(destination / 'PRODUCER_SENT.json', sent, ledger)
-        metadata_write(destination / 'ROOT_FULL_READBACK.json', (report_dir / 'FULL_READBACK.json').read_bytes(), ledger)
+            emit(destination / name, entries[name])
+        emit(destination / 'PRODUCER_PREPARED.json', entries['STREAM_PREPARED.json'])
+        emit_json(destination / 'PRODUCER_SENT.json', sent)
+        emit(destination / 'ROOT_FULL_READBACK.json', (report_dir / 'FULL_READBACK.json').read_bytes())
         meta_bytes = sum(p.stat().st_size for p in destination.iterdir() if p != final)
         require(meta_bytes + 8192 <= META_CAP, 'final metadata aggregate bound')
         ready = dict(schema='MAC_DIRECT_STREAM_PERSISTED_ARCHIVE_READY_V1', archive=str(final), bytes=n, sha256=h.hexdigest(), members=len(seen), codec_counts=counts, producer_sent_is_not_Mac_readback=True, persisted_readback_passed=True, no_Dell_duplicate_archive_stock=True, full_readback_sha256=digest((report_dir / 'FULL_READBACK.json').read_bytes()), scope=report['scope'])
-        write_json(destination / 'READY.json', ready, ledger)
+        emit_json(destination / 'READY.json', ready)
         for p in destination.iterdir():
             p.chmod(0o444)
         fd = os.open(destination, os.O_RDONLY | os.O_DIRECTORY)
@@ -300,7 +319,7 @@ def copy_stream(metadata, destination, report_dir, command, ledger=None, wall=12
         if process and process.poll() is None:
             process.kill()
             process.wait()
-        write_json(report_dir / 'FAILURE.json', dict(error=repr(error), any_part_preserved=True, no_retry_no_reset_no_refund=True, no_confirmed_READY_claim=True, READY_file_exists_but_unconfirmed=(destination / 'READY.json').exists(), scope='The one-shot attempt failed; preserve bytes and original producer source. No experiment/native counters changed.'), ledger)
+        emit_json(report_dir / 'FAILURE.json', dict(error=repr(error), any_part_preserved=True, no_retry_no_reset_no_refund=True, no_confirmed_READY_claim=True, READY_file_exists_but_unconfirmed=(destination / 'READY.json').exists(), scope='The one-shot attempt failed; preserve bytes and original producer source. No experiment/native counters changed.'), final_failure=True)
         raise
     finally:
         signal.alarm(0)

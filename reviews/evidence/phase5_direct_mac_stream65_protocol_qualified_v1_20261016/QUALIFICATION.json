@@ -1,0 +1,28 @@
+{
+  "schema": "REAL_SSH_DIRECT_STREAM_COMPONENT_QUALIFICATION_V1",
+  "utc": "2026-10-16T23:08:13.943165+00:00",
+  "scope": "owned small protocol fixtures; no Model/controller65/native build",
+  "source": {
+    "tools/cold_stream_backup_v1/mac_consumer.py": {
+      "bytes": 20085,
+      "sha256": "6a7e116cb509a981ac07d9828217c5d74040e53006e30721af1f74561abbdaef"
+    },
+    "tools/cold_stream_backup_v1/direct_mac_archive_producer65_v4.py": {
+      "bytes": 13933,
+      "sha256": "ea29b98cd14fe7e732d516461b626f3fd05381eaabae4652f5e8f9a6501e8ddf"
+    },
+    "tools/cold_storage_verification_v1/strict_codec_reader.py": {
+      "bytes": 7289,
+      "sha256": "c32178a23e5254f44ee21a62be655af3236c708c02bb061564c3d8b0b8cb468a"
+    }
+  },
+  "positive_archive_sha256": "3d6c26e8d2e5cce38918cb047e9d3f3fb465abaf3b1e0ae448b6d97761109752",
+  "negative_cases": [
+    "declared producer SHA mismatch rejected before subprocess",
+    "false complete gzip CRC rejected during Dell prepare",
+    "actual producer broken pipe preserved on Dell; Mac truncated8192-byte part retained without READY"
+  ],
+  "actual_streams": 2,
+  "original_finite_native_caps_unchanged": true,
+  "native_scale_NOT_RUN": true
+}

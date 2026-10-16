@@ -1,25 +1,25 @@
 {
-  "status": "HUMAN_PAUSED_AFTER_ACTUAL64",
-  "instruction": "暂停项目",
+  "status": "RESUMED_BY_DIRECT_HUMAN_AFTER64_PAUSE",
+  "instruction": "\u7ee7\u7eed\u63a8\u8fdb\u9879\u76ee",
   "effective_date": "2026-10-16",
-  "recorded_time_utc": "2026-10-16T21:13:34.963229+00:00",
+  "recorded_time_utc": "2026-10-16T22:57:39.822220+00:00",
   "timezone": "America/Toronto",
   "direct_human_source_chat": "01a10a40-558c-71a3-b343-6ff4c2709b36",
-  "direct_human_message": "01a1468c-bd75-72c2-9382-d8b5cf6400d8",
-  "verified_by": "Root independently read direct userMessage in turn01a1468c-bc69-7181-a22b-18bf5f176674",
+  "direct_human_message": "01a146eb-2bd2-78d2-9142-af0d954eda08",
+  "verified_by": "Root independently read direct userMessage in turn01a146eb-29f9-7591-89dd-948a8108d27e",
   "accepted_through": "Phase4",
   "phase5": "NOT_ACCEPTED",
   "phase6": "NOT_STARTED",
-  "previous_state_record": "reviews/evidence/phase5_human_pause_after64_v1_20261016/before_pause/PROJECT_PAUSED.json",
-  "last_verified_public_checkpoint": "308838d4dfbdedeb4ba69d4fa4eb2a975976e0ba",
+  "previous_state_record": "reviews/evidence/phase5_resume_after64_v1_20261016/before_resume/PROJECT_PAUSED.json",
+  "last_verified_public_checkpoint": "c4ceb0142adf4f3077104bd5c9702b2886ed6e04",
   "preserve_existing_files_and_failures": true,
-  "continued_development_authorized": false,
-  "resume_condition": "New explicit direct human continue in status chat; connection/heartbeat/three-chat coordination authority do not resume",
-  "existing_daily_automation": "PAUSED by status chat tool after this direct human pause; no automatic resumption.",
+  "continued_development_authorized": true,
+  "resume_condition": "Direct human resume releases actual64 pause; original history preserved. Next actual finite offline batch ends manualwait and needs a new direct human resume.",
+  "existing_daily_automation": "Status chat reports ACTIVE daily02:00 Toronto/target02:30 backup; next actual finite offline batch ends manualwait again.",
   "latest_execution": "Online64 consumed/naturally terminated at current87 original near-boundary12288 cap after87C/174taskhalves/348ms;32active55brake. Command/progress below at end but all110 physicalv/a observations fail, dwell0/50,all88whole4ms misses. Complete stored64 Mac/Dell copies verified; no65 entry.",
   "latest_actual_checkpoint_record": "reviews/evidence/phase5_actual64_braking_and_boundary87_v1_20261016/README.md",
   "presentation_scope": "Actualpresentation work resumed withinfunctional milestones; fulltask videos only when genuine complete success exists",
-  "next_work": "PAUSED: only necessary safety/state/evidence/draft/recoverable-backup finishing. Do not continue algorithm/source/build/pure/stream-fixture/Model/native work until new direct human resume in status chat.",
+  "next_work": "Resume saved64 cause/physical-aware planning/source work and unfinished direct-stream backup qualification. Recheck live original connection/sole writer/current volumes and inputs, retain original limits, fresh65 only after actual bounded qualification. No consumed64 replay/extension or old evidence deletion.",
   "execution_connection": "Original fixed-hostkey SSH and bidirectional2MiB SHA verified after human UAC; AC sleep/hibernate/lid/unattended all0, DC/battery unchanged. Keeper29304 original identity survives launcher/admin exit; long-term and old exit cause UNKNOWN. Recovery evidence reviews/evidence/connection_power_recovery55_20261015/README.md.",
   "latest_preparation_checkpoint_record": "reviews/evidence/phase5_roundoff_command64_prepared_v1_20261016/README.md",
   "coordination": {
@@ -96,7 +96,7 @@
     "native_entry_evidence": "SUPERSEDED by verified single actual64 entry; prepared snapshot retained",
     "scope": "Two separate bounded causal repairs; physical stop/native/fulltask acceptance still pending."
   },
-  "project_paused": true,
+  "project_paused": false,
   "latest_pause_checkpoint_record": "reviews/evidence/phase5_human_pause_after64_v1_20261016/README.md",
   "pause_process_observation": {
     "utc": "2026-10-16T21:11:43.667792+00:00",
@@ -109,6 +109,10 @@
     "saved_design": "Two saved history doublehat/progress-band scalar studies and fixed-matrix probe only; not physical stop proof",
     "direct_stream_backup": "Producer v1-v4 and Mac consumer drafts; local owned-codec tests only, no real Dell end-to-end stream validation; not released",
     "physical_hot3GiB_guard": "Planned stricter additional cap only; not implemented or exercised in controller65",
-    "old_evidence_cleanup": "NONE; user only authorized specified temporary pyc. No archive/raw/failure cleanup performed."
-  }
+    "old_evidence_cleanup": "NONE; user only authorized specified temporary pyc. No archive/raw/failure cleanup performed.",
+    "status": "RESUMED_UNFINISHED_NOT_RELEASED"
+  },
+  "latest_resume_checkpoint_record": "reviews/evidence/phase5_resume_after64_v1_20261016/README.md",
+  "latest_storage_qualification_record": "reviews/evidence/phase5_direct_mac_stream65_protocol_qualified_v1_20261016/README.md",
+  "direct_stream_storage_status": "SMALL_REAL_SSH_FIXTURE_QUALIFIED; native-scale actual65 not run; original evidence/failed parts preserved"
 }

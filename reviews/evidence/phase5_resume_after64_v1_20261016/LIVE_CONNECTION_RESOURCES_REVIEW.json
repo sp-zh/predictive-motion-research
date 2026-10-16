@@ -1,0 +1,74 @@
+{
+  "utc": "2026-10-16T22:57:40.286713+00:00",
+  "active": [],
+  "writer_state": {
+    "owner_thread_id": "01a114d9-3a3a-7071-b94f-624581000992",
+    "state": "ACTIVE_SINGLE_WRITER",
+    "effective_utc": "2026-10-07T23:13:50.526190+00:00",
+    "root_thread_id": "01a10958-048c-7480-a04e-51544112196c",
+    "authoritative_project": "/home/codextransfer/predictive_motion",
+    "historical_release_record": "PHASE5_HANDOFF_STATE_20261007.json",
+    "root_acknowledged": true,
+    "scope": "Dell source/config/experiments only; Mac root owns independent review and Git backup",
+    "phase5": "NOT_ACCEPTED",
+    "phase6": "NOT_STARTED",
+    "user_instruction": "\u7ee7\u7eed\u4efb\u52a1; \u4fdd\u5b58\u540e\u6062\u590d Phase5",
+    "verified_resume_backup_commit": "779173a37f4b0a516d85c56e7014e07603befdc4"
+  },
+  "windows": {
+    "Utc": "2026-10-16T22:57:42.1148336Z",
+    "ActiveScheme": "381b4222-f694-41f0-9685-ff5bb260df2e",
+    "Settings": [
+      {
+        "Name": "StandbyIdle",
+        "AC": 0,
+        "DC": 3600
+      },
+      {
+        "Name": "HibernateIdle",
+        "AC": 0,
+        "DC": 2147483647
+      },
+      {
+        "Name": "LidAction",
+        "AC": 0,
+        "DC": 1
+      },
+      {
+        "Name": "UnattendedSleep",
+        "AC": 0,
+        "DC": 120
+      }
+    ],
+    "ACLineStatus": 1,
+    "BatteryFlag": 1,
+    "BatteryLifePercent": 94,
+    "Keeper": {
+      "Id": 29304,
+      "Name": "wsl",
+      "StartTimeUtc": "2026-10-16T01:29:44.8524424Z"
+    },
+    "Listeners": [
+      {
+        "LocalAddress": "169.254.118.3",
+        "LocalPort": 2222,
+        "OwningProcess": 5504
+      }
+    ],
+    "Volumes": [
+      {
+        "DeviceID": "C:",
+        "FreeSpace": 89682165760,
+        "Size": 488030334976
+      },
+      {
+        "DeviceID": "D:",
+        "FreeSpace": 87908872192,
+        "Size": 512098299904
+      }
+    ],
+    "AllOperationsReadOnly": true
+  },
+  "Mac_free_bytes": 192371568640,
+  "scope": "Read-only original fixed-hostkey SSH/physical Windows volume/AC/DC/keeper/proc inventory. No settings, process or project-source writes."
+}

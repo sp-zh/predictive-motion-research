@@ -1,0 +1,73 @@
+{
+  "schema": "DIRECT_MAC_PROTOCOL_SMALL_FIXTURE_STORAGE_V1",
+  "files": [
+    {
+      "path": "transfer/cold-backups/direct-mac-protocol65-fixtures-20261016-v1/pipe-failure/complete.tar.gz.part",
+      "bytes": 8192,
+      "sha256": "5fb94c6e4ef6f741f8855ec56a79fec73288503cac8127a0f29232e3ee4cae94",
+      "persisted_reopen_verified": true
+    },
+    {
+      "path": "transfer/cold-backups/direct-mac-protocol65-fixtures-20261016-v1/positive/FULL_NATIVE_CODEC_READBACK.json",
+      "bytes": 2773,
+      "sha256": "98d868cacc8acec72b9476224ed5466a2c66dbf25eaa12c1ced8d330c3a6ed96",
+      "persisted_reopen_verified": true
+    },
+    {
+      "path": "transfer/cold-backups/direct-mac-protocol65-fixtures-20261016-v1/positive/PRODUCER_PREPARED.json",
+      "bytes": 1764,
+      "sha256": "44261fa4a78eebb6ecb6d1485195e9353ce1b5d046ef8ed8781a45161c5e0617",
+      "persisted_reopen_verified": true
+    },
+    {
+      "path": "transfer/cold-backups/direct-mac-protocol65-fixtures-20261016-v1/positive/PRODUCER_SENT.json",
+      "bytes": 925,
+      "sha256": "96eb748d4030c84ade4c300f47a906d1be89101b20117ea01aa9d7233b9a01ac",
+      "persisted_reopen_verified": true
+    },
+    {
+      "path": "transfer/cold-backups/direct-mac-protocol65-fixtures-20261016-v1/positive/READY.json",
+      "bytes": 854,
+      "sha256": "38de210d52647ce5b6e65463f025410a5c9a4be0d2ecfb357de00667a3dc3160",
+      "persisted_reopen_verified": true
+    },
+    {
+      "path": "transfer/cold-backups/direct-mac-protocol65-fixtures-20261016-v1/positive/ROOT_FULL_READBACK.json",
+      "bytes": 2281,
+      "sha256": "a3b4739829acaedc08af2dd52bb5d55f5ff5bace79a92400af34293835ebf5d5",
+      "persisted_reopen_verified": true
+    },
+    {
+      "path": "transfer/cold-backups/direct-mac-protocol65-fixtures-20261016-v1/positive/SOURCE_MANIFEST.json",
+      "bytes": 1964,
+      "sha256": "f7272b3a6d378f180d42ba4f61fbb42d7d3f6f31dde38cec3c09b337a4b0ad3f",
+      "persisted_reopen_verified": true
+    },
+    {
+      "path": "transfer/cold-backups/direct-mac-protocol65-fixtures-20261016-v1/positive/complete.tar.gz",
+      "bytes": 260359,
+      "sha256": "3d6c26e8d2e5cce38918cb047e9d3f3fb465abaf3b1e0ae448b6d97761109752",
+      "persisted_reopen_verified": true
+    },
+    {
+      "path": "transfer/cold-backups/direct-mac-protocol65-fixtures-20261016-v1/positive/direct_mac_archive_producer65_v4.py",
+      "bytes": 13933,
+      "sha256": "ea29b98cd14fe7e732d516461b626f3fd05381eaabae4652f5e8f9a6501e8ddf",
+      "persisted_reopen_verified": true
+    },
+    {
+      "path": "transfer/cold-backups/direct-mac-protocol65-fixtures-20261016-v1/positive/strict_codec_reader.py",
+      "bytes": 7289,
+      "sha256": "c32178a23e5254f44ee21a62be655af3236c708c02bb061564c3d8b0b8cb468a",
+      "persisted_reopen_verified": true
+    }
+  ],
+  "archive_outer_reopened_CRC_SHA_EOF_verified": true,
+  "archive_tar_raw_bytes": 307200,
+  "Dell_originals_and_metadata_preserved": true,
+  "format": "Dell original stored fixtures, Mac verified archive and preserved failed part",
+  "allocation_aggregate": 16777216,
+  "no_retry_or_refund": true,
+  "no_native65_or_Model": true,
+  "scope": "Small protocol component verification only; not native-scale restoration/stop/phase acceptance"
+}

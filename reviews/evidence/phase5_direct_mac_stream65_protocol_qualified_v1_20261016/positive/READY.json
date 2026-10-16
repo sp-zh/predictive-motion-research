@@ -1,0 +1,18 @@
+{
+  "schema": "MAC_DIRECT_STREAM_PERSISTED_ARCHIVE_READY_V1",
+  "archive": "/private/tmp/root65_mac_consumer_review_v2_20261016/real-ssh-positive/complete.tar.gz",
+  "bytes": 260359,
+  "sha256": "3d6c26e8d2e5cce38918cb047e9d3f3fb465abaf3b1e0ae448b6d97761109752",
+  "members": 12,
+  "codec_counts": {
+    "source_complete": 1,
+    "closed_source_failure_prefix": 1,
+    "unknown_stored_only": 1,
+    "opaque_raw_only": 1
+  },
+  "producer_sent_is_not_Mac_readback": true,
+  "persisted_readback_passed": true,
+  "no_Dell_duplicate_archive_stock": true,
+  "full_readback_sha256": "a3b4739829acaedc08af2dd52bb5d55f5ff5bace79a92400af34293835ebf5d5",
+  "scope": "Complete stored-byte recovery only. Closed source-failure/UNKNOWN bytes retain original qualification. Not standalone environment, mathematical/physical stop, realtime, task or phase acceptance."
+}

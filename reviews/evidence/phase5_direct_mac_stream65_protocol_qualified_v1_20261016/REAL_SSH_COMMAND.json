@@ -1,0 +1,14 @@
+[
+  "/Users/uot/Documents/ChatGPT/ros/tools/dell-ssh.sh",
+  "-T",
+  "-o",
+  "BatchMode=yes",
+  "-o",
+  "StrictHostKeyChecking=yes",
+  "-o",
+  "ConnectTimeout=8",
+  "-o",
+  "ConnectionAttempts=1",
+  "DellTransfer",
+  "python3 -I -S -B /home/codextransfer/predictive_motion/transfer/cold-archives/protocol65-direct-stream-test1-20261016/direct_mac_archive_producer65_v4.py stream"
+]

@@ -1,0 +1,14 @@
+[
+  "/Users/uot/Documents/ChatGPT/ros/tools/dell-ssh.sh",
+  "-T",
+  "-o",
+  "BatchMode=yes",
+  "-o",
+  "StrictHostKeyChecking=yes",
+  "-o",
+  "ConnectTimeout=8",
+  "-o",
+  "ConnectionAttempts=1",
+  "DellTransfer",
+  "python3 -I -S -B /home/codextransfer/predictive_motion/transfer/cold-archives/protocol65-direct-stream-test3-pipe-failure-20261016/PIPE_FAILURE_WRAPPER.py"
+]
