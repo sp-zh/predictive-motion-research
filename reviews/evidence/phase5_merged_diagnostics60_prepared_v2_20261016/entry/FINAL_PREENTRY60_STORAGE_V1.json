@@ -1,0 +1,64 @@
+{
+  "schema": "FRESH60_DELL_HOT_COLD_MAC_BOUNDED_REVIEW_FINAL_PREENTRY_V1",
+  "utc": "2026-10-16T05:55:42.580874+00:00",
+  "storage_layout_plan_sha256": "3be147beaa876d003c7ec635fafb4d73c160717cd3663eba15cd9ca6b1788fca",
+  "capture_source_sha256": "5f5a57e763f2c778efef115693c90b5900a6a5f11c7759008cb72f5ef3635838",
+  "old33GiB_gate_passed": false,
+  "old33_mode_failures_preserved": true,
+  "Mac_free_bytes_before": 206821101568,
+  "Mac_free_bytes_after": 206821294080,
+  "new_minimum_free_Mac_bytes": 12884901888,
+  "maximum_new_Mac_peak_bytes": 2969567232,
+  "untouched_Mac_reserve_bytes": 8589934592,
+  "one_capture_output_absent": {
+    "OUT": "/private/tmp/phase5_controlled_stop_merged_hint_terminal60_v2_20261016",
+    "TRANSPORT": "/private/tmp/phase5_stop60_minimal_transport_external_v2_20261016"
+  },
+  "shared_derived_before": {
+    "cap": 1056964608,
+    "charged": 480472232,
+    "entries": 3930,
+    "metadata_bytes": 1482299,
+    "before_snapshot_sha256": "733bef57b2471f62684b793bd04843f2a17be90f2e2fffdfde0a747a2342c88a"
+  },
+  "Git_reports_temp_pool_limit_bytes": 1073741824,
+  "Root_Git_single_writer_and_no_autoGC_contract": true,
+  "remote": {
+    "schema": "FRESH60_PREENTRY_RESOURCES_ALLINPUTS_V1",
+    "utc": "2026-10-16T05:55:42.516291+00:00",
+    "actual_CIM_volumes": [
+      {
+        "DeviceID": "C:",
+        "FreeSpace": 115203653632,
+        "Size": 488030334976
+      },
+      {
+        "DeviceID": "D:",
+        "FreeSpace": 87908872192,
+        "Size": 512098299904
+      }
+    ],
+    "C_D_80GiBeach": true,
+    "WSL_statvfs_used": false,
+    "all_distinct_inputs": 1725,
+    "identities_stable": true,
+    "pure24stable_pass": true,
+    "max_V2_codec_bytes": 3507749,
+    "longdouble_digits_measured": 64,
+    "existing_native_processes": [],
+    "argv": [
+      "/home/codextransfer/predictive_motion/results/phase5/session-controlled-stop-merged-hint-diag-active32-brake64-dwell25-v2-20261016-attempt60/link-attempt1/active_first_cycle",
+      "/home/codextransfer/predictive_motion/results/phase5/session-controlled-stop-merged-hint-diag-active32-brake64-dwell25-v2-20261016-attempt60/profile-version1/active_input.json",
+      "0f92a85fdac7f1a17c3818e99af6b005b34510dd4159ec51606947ddd8a3d989",
+      "6f90633440152bbc3e9be7c32939be25df4889bae1cd6157bd660a32acded155",
+      "/home/codextransfer/predictive_motion/results/phase5/session-controlled-stop-merged-hint-diag-active32-brake64-dwell25-v2-20261016-attempt60/run-attempt1/artifacts"
+    ],
+    "native_not_yet_entered": true,
+    "storage_layout_mode": "DELL_HOT_COLD_MAC_BOUNDED_REVIEW_V1",
+    "storage_plan_sha256": "3be147beaa876d003c7ec635fafb4d73c160717cd3663eba15cd9ca6b1788fca",
+    "capture_source_sha256": "5f5a57e763f2c778efef115693c90b5900a6a5f11c7759008cb72f5ef3635838",
+    "Mac_free_before": 206821101568,
+    "Mac_minimum12GiB": 12884901888
+  },
+  "scope": "Fresh60 human-authorized Dell full/Mac bounded storage mode. Original CPU/AS/FSIZE/time/count/numeric/mathematics/physical/stop gates unchanged. V6 data-only initializer uses original shared8 and250K. No native/task/phase acceptance."
+}

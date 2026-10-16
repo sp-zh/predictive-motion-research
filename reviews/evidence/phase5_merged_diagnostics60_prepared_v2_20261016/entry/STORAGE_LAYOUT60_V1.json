@@ -1,0 +1,68 @@
+{
+  "schema": "FRESH60_DELL_HOT_AND_COLD_MAC_BOUNDED_REVIEW_LAYOUT_V1",
+  "direct_human_authorization": {
+    "chat": "01a10a40-558c-71a3-b343-6ff4c2709b36",
+    "message": "01a142bc-35b7-7052-9899-9edf5074d7a4",
+    "text": "mac\u7a7a\u95f4\u4e0d\u8db3\u53ef\u4ee5\u5b58\u50a8\u5728dell\u4e0a \u5982\u679c\u4e0d\u662f\u5f88\u5f71\u54cd\u8fd0\u884c\u7684\u8bdd"
+  },
+  "old_mode": {
+    "Mac_minimum_bytes": 35433480192,
+    "old_preentry_failures_preserved": true,
+    "new_mode_does_not_claim_old_gate_passed": true
+  },
+  "new_layout": {
+    "hot_native_and_complete_raw_results": "Original Dell WSL ext4, physically C VHDX; no SSH/DrvFS hot logging",
+    "full_cold_archives": "Dell C cold storage for complete native60 results/archives. No full Mac mirror in bounded runtime collection. Separately bounded post-run cross-machine archive copy is a later backup step.",
+    "Mac": "Source/Git, bounded selected review packet, derived reports, manifests, figures and stream-discard verification only",
+    "new_large_cold_migrations_stopped_before_native": true
+  },
+  "Mac_peak_components_bytes": {
+    "selected_unpacked_including_roster_and_metadata": 285212672,
+    "external_transport_including_retained_partial": 536870912,
+    "shared_Root_producer_derived_no_reset": 1073741824,
+    "Git_small_reports_and_temporary_pool": 1073741824
+  },
+  "Mac_peak_upper_bytes": 2969567232,
+  "Mac_peak_rounded_upper_bytes": 3221225472,
+  "Mac_untouched_reserve_bytes": 8589934592,
+  "minimum_free_Mac_bytes": 12884901888,
+  "rounded_headroom_bytes": 1325400064,
+  "enforcement": {
+    "capture_source": "/private/tmp/phase5_merged_hint_diagnostics60_source_v2_20261016/capture_terminal60.py",
+    "capture_source_sha256": "5f5a57e763f2c778efef115693c90b5900a6a5f11c7759008cb72f5ef3635838",
+    "producer_payload_preflight_bytes": 268435456,
+    "selected_extraction_aggregate_prewrite_bytes": 285212672,
+    "external_transport_aggregate_prewrite_bytes": 536870912,
+    "shared_derived_content_cap_bytes": 1056964608,
+    "shared_derived_metadata_files_max_bytes": 16777216,
+    "aggregate_derived_total_bound_bytes": 1073741824,
+    "Git_reports_temporary_pool_bytes": 1073741824,
+    "one_capture_attempt_only": "No retry/reset/refund. Failed transfer partials stay charged; further large Mac transfer stops and remains on Dell.",
+    "full_native_no_Mac_copy": true,
+    "no_bulk_readback_file": true,
+    "fresh_selected_output_and_transport_absent": true
+  },
+  "unchanged_native": {
+    "all_distinct_input_identities": 1725,
+    "profile_sha256": "0f92a85fdac7f1a17c3818e99af6b005b34510dd4159ec51606947ddd8a3d989",
+    "ELF_sha256": "6f90633440152bbc3e9be7c32939be25df4889bae1cd6157bd660a32acded155",
+    "actual_C_D_minimum_each_bytes": 85899345920,
+    "CPU_seconds": 2400,
+    "AS_bytes": 4294967296,
+    "FSIZE_bytes": 268435456,
+    "native_wall_seconds": 3000,
+    "driver_wall_seconds": 3060,
+    "maximum_trials": 176,
+    "maximum_forecasts": 352,
+    "maximum_commits": 121,
+    "maximum_task_halves": 242,
+    "numeric_outer_iterations": 512,
+    "numeric_wall_seconds": 10,
+    "numeric_slots": 1800000000,
+    "native_logical_bytes": 12884901888,
+    "native_stored_bytes": 6442450944,
+    "tail_bytes": 33554432,
+    "mathematics_SI_nonlinear_geometry_B_history_two2ms_C_stop": "ALL_UNCHANGED"
+  },
+  "scope": "Human-authorized storage redistribution changes actual Mac peak-write workload. New named storage mode and fresh preentry; not a numerical threshold relaxation, expansion of consumed attempts, executionPermission change or research acceptance. Full new experimental evidence backup remains incomplete; same Dell C/D is not independent hardware backup. Fresh60 binding after production7savedstop/6active and24pure. Explicit merged V2 rank/chosen diagnostics at existing24-file roster recorded in profile; original math, native and physical/stop standards unchanged."
+}

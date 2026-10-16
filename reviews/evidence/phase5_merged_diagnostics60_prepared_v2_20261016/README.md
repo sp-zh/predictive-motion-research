@@ -5,6 +5,18 @@ file-count failure](../phase5_actual59_artifact_roster_failure_v1_20261016/READM
 It is not a native60 outcome. Phase5 **NOT_ACCEPTED**, Phase6 **NOT_STARTED**;
 original hardware/held-out/main/scorer boundaries remain.
 
+Fresh60v2 subsequently entered once at2026-10-16T05:56:01.556607Z (Toronto01:56).
+[Root actual-entry binding](entry/ACTUAL_ENTRY_BINDING_REVIEW.json) independently
+checks the actual runtime plan SHA7881fc625bde535894ea2939b91d4eb7598e09d3aa17b8eae0be4f2511ff1028,
+all85 frozen Git source files, profile/ELF and1725 input records. Entire
+prepared/actual parsed plans agree; original resource/capture limits remain.
+Its05:59:30Z observation has no terminal record. Native result/full new
+stored-evidence backup are pending. [Entry metadata qualification](entry/ENTRY60_METADATA_SCOPE_QUALIFIER.json)
+preserves the original scope sentence's old `fresh59` literal, qualified by
+actual60 schema/v2 paths/input hashes, without rewriting ENTRY or rerunning.
+[Entry copied files](ENTRY_FILES.json). This is online continuation, not a new
+offline manualwait or a successful stop/task result.
+
 [Frozen v13](../../../tools/phase5_controlled_stop_session_v13/README.md) replaces
 the existing `hint_kkt_rank_events.bin` with an explicit
 `CONSISTENT_SINGULAR_ACTIVE_FACE_KKT_AND_STOP_SELECTED_LEAVING_DIAGNOSTICS_V2`
