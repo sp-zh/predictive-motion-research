@@ -1,0 +1,63 @@
+{
+  "utc": "2026-10-16T23:34:21.806684+00:00",
+  "entry": {
+    "schema": "FRESH65_PHYSICAL_BRAKING_FIRST_PROGRESS_SINGLE_USE_NATIVE_ENTRY_V1",
+    "utc": "2026-10-16T23:34:05.715255+00:00",
+    "driver_pid": 24345,
+    "preentry_sha256": "e5dacb8db9a4842b5c1a79a18b018204e8965d3f5bacfb8b92281c21831bbfd7",
+    "preentry_age_seconds": 3.97071,
+    "runtime_plan_sha256": "4526d9354b061afea08344551e95124b284cadf995a853caced7232e5ca916bb",
+    "profile_sha256": "003e4f44801dc1ab84830d9ae951b9204d85fa888caa2508a0a96c113adafbff",
+    "ELF_sha256": "b1fd5465b82f5c2f368ebdd482498aaf03798be6cc96f948ae95990c0b1d0482",
+    "runtime_input_count": 1743,
+    "native_attempts": 1,
+    "automatic_retries": 0,
+    "execution_mode": "ONLINE_NO_OFFLINE_SUPERVISOR_QUEUE",
+    "all64_and_prior_failures_retained": true,
+    "scope": "Actual fresh65 only; original math/physical/SI/nonlinear/geometry/B/history/two2ms/C/stop/global counters remain; stricter physicalhot3G shares originalspent/tail. Entry is not completion/acceptance."
+  },
+  "events": [
+    {
+      "stage": "FIRST_BUILD_CLAIM_INPUTS_NOT_YET_CHECKED",
+      "batch_elapsed_seconds": 0.00043829499918501824,
+      "plan_sha256": "4526d9354b061afea08344551e95124b284cadf995a853caced7232e5ca916bb"
+    },
+    {
+      "stage": "EXACT_BEFORE_INPUTS_AND_READONLY_ROSTERS_VERIFIED",
+      "batch_elapsed_seconds": 0.30537646100856364
+    },
+    {
+      "stage": "BEFORE_POPEN",
+      "batch_elapsed_seconds": 0.3191439720103517,
+      "kind": "compile",
+      "index": 1
+    },
+    {
+      "stage": "CHILD_STARTED",
+      "batch_elapsed_seconds": 0.3268064520088956,
+      "kind": "compile",
+      "index": 1,
+      "pid": 24346
+    }
+  ],
+  "native": {
+    "pid": 24346,
+    "state": "R",
+    "ppid": 24345,
+    "pgid": 24346,
+    "sid": 24346,
+    "startticks": 7940732,
+    "argv": [
+      "/home/codextransfer/predictive_motion/results/phase5/session-controlled-stop-physical-braking-first-progress-direct-mac-v1-20261016-attempt65/link-attempt1/active_first_cycle",
+      "/home/codextransfer/predictive_motion/results/phase5/session-controlled-stop-physical-braking-first-progress-direct-mac-v1-20261016-attempt65/profile-version1/active_input.json",
+      "003e4f44801dc1ab84830d9ae951b9204d85fa888caa2508a0a96c113adafbff",
+      "b1fd5465b82f5c2f368ebdd482498aaf03798be6cc96f948ae95990c0b1d0482",
+      "/home/codextransfer/predictive_motion/results/phase5/session-controlled-stop-physical-braking-first-progress-direct-mac-v1-20261016-attempt65/run-attempt1/artifacts"
+    ]
+  },
+  "entry_sha256": "9cd891759eb1413ed22457a0cfc700986dba7f8eba9aef0a61cf571b8dc41cb9",
+  "warmup_journal_bytes_observed": 1813021,
+  "native_warmup_return_evidence": true,
+  "run_BUILD_RESULT_exists": false,
+  "run_BUILD_FAILURE_exists": false
+}

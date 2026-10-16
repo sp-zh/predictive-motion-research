@@ -1,0 +1,17 @@
+{
+  "schema": "PREPARED65_CHECKPOINT_VERIFIED_SCAN_SCOPE_V1",
+  "checkpoint": "aae5c1cb2aa9465d7ec4a91ac8572594b3f1cb67",
+  "local_HEAD_and_independent_remote_master_verified": true,
+  "files_scanned": 164,
+  "bytes": 2406537,
+  "secret_signature_hits": 0,
+  "large_files_above2MiB": 0,
+  "all_JSON_and_active_Python_AST_pass": true,
+  "preserved_failed_Python_draft": {
+    "path": "preserved-preparation/memfd_targeted_build65_driver_v1.py",
+    "error": "expected else after if expression line47",
+    "not_executed_or_used_by_current_build": true,
+    "active_driver_v2_AST_and_real_build_pass": true
+  },
+  "scope": "Historical failed source is preserved as evidence; it is deliberately not repaired or treated as an active runnable source. Earlier unqualified whole-tree AST command stopped on this known failed archive, after which complete signatures/size/JSON and current-source scans passed."
+}

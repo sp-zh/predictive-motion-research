@@ -1,0 +1,61 @@
+{
+  "schema": "FRESH65_ACTUAL_ENTRY_SMALL_RECEIPT_V1",
+  "files": [
+    {
+      "name": "ENTRY_CONSUMED65.json",
+      "bytes": 939,
+      "sha256": "9cd891759eb1413ed22457a0cfc700986dba7f8eba9aef0a61cf571b8dc41cb9"
+    },
+    {
+      "name": "FINAL_PREENTRY65_V1_RESULT.json",
+      "bytes": 650,
+      "sha256": "079c9027581c55fac5b2061efa0a06656f072e3e369a84a0247172571f2f311a"
+    },
+    {
+      "name": "FINAL_PREENTRY65_V2_RESULT.json",
+      "bytes": 1921,
+      "sha256": "71beb743871c571608cf68ca22443f6c14a57bda4032c85de091974e75a7d50c"
+    },
+    {
+      "name": "LOCAL_PREENTRY_INTENT65_V1.json",
+      "bytes": 581,
+      "sha256": "77b939b18c490cac371e479d6636e184b2809c29d722b1ad3a1248cf6da7526b"
+    },
+    {
+      "name": "LOCAL_PREENTRY_INTENT65_V2.json",
+      "bytes": 581,
+      "sha256": "5e08601888a270e3e85e71d0f9a6bc86712bf8ad41793303daa0daf4f42bf822"
+    },
+    {
+      "name": "PREENTRY65_REMOTE_V3.py",
+      "bytes": 6111,
+      "sha256": "1db152715254f1f26af63ff345fef3d3fae2018041072f0073a3ab2b305c60fd"
+    },
+    {
+      "name": "PREENTRY65_V2.json",
+      "bytes": 1907,
+      "sha256": "e5dacb8db9a4842b5c1a79a18b018204e8965d3f5bacfb8b92281c21831bbfd7"
+    },
+    {
+      "name": "RUNTIME_LEGACY_KEYS_QUALIFICATION65_V1.json",
+      "bytes": 1199,
+      "sha256": "5068738163658f17b81002499abb51af61d51fa35ba115e67e7cc01397f3f6f3"
+    },
+    {
+      "name": "VERSION_DRIVER_LAYOUT_RESULT_V2.json",
+      "bytes": 583,
+      "sha256": "d4fe7d3ee048f29032c0634ecb60c3d43c2b333f0d16be1fd6af906abb3a6546"
+    },
+    {
+      "name": "once_entry65_v2.py",
+      "bytes": 2190,
+      "sha256": "938c288677cb97a0951b18ff1e4955973cdb6328b9ed248fe3f824d3588c4517"
+    }
+  ],
+  "preentry_error_qualification": "V2 checker incorrectly required legacy optional mode, failed before entry/model; V3 matches original driver optional schema and all1743 SHA/size required, new preentry V2 passed. No65 repetition; native ENTRY O_EXCL consumed once23:34:05.715255Z.",
+  "native_PID": 24346,
+  "driver_PID": 24345,
+  "start_ticks": 7940732,
+  "source_checkpoint": "aae5c1cb2aa9465d7ec4a91ac8572594b3f1cb67",
+  "scope": "Entry receipt only; actual65 running, no final command/stop/dwell/task or phase acceptance claimed."
+}

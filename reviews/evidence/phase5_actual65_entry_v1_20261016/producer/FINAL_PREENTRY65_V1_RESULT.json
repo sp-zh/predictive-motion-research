@@ -1,0 +1,5 @@
+{
+  "exit": 1,
+  "stdout": "",
+  "stderr": "Traceback (most recent call last):\n  File \"/home/codextransfer/predictive_motion/results/phase5/session-controlled-stop-physical-braking-first-progress-direct-mac-v1-20261016-attempt65/PREENTRY65_REMOTE_V2.py\", line 13, in <module>\n    q=Path(e['requested_path']);assert q.stat().st_size==e['bytes']and sha(q)==e['sha256'];assert str(q.resolve())==e['resolved_path']and q.stat().st_mode&0o7777==e['mode']\n                                                                                                                                                                   ~^^^^^^^^\nKeyError: 'mode'\n"
+}

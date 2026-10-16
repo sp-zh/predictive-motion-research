@@ -1,5 +1,7 @@
 # Predictive Redundancy-Aware Motion Control
 
+**Actual65 entered once2026-10-16T23:34:05Z.** [Independent startup proof](reviews/evidence/phase5_actual65_entry_v1_20261016/README.md) verifies the running native process,1743 input receipts and real warmup returns. Results, physical stopping and phase acceptance remain pending.
+
 **Resumed by new direct human instruction on2026-10-16 after the actual64 pause.** [Resume evidence](reviews/evidence/phase5_resume_after64_v1_20261016/DIRECT_HUMAN_RESUME.json) preserves the [pause history](reviews/evidence/phase5_human_pause_after64_v1_20261016/README.md). Physical-aware stopping/progress-floor and bounded direct-stream backup work continue; source drafts/pure checks are not actual stop or phase acceptance. No65 run is inferred from resumption.
 
 [Prepared65 source/build and independent saved-data qualification](reviews/evidence/phase5_physical_braking65_prepared_v1_20261016/README.md) is complete; native65 has not entered at this checkpoint. Physical stopping and phase acceptance remain unproven.
