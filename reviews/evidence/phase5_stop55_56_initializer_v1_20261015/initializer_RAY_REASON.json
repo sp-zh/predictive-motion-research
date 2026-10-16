@@ -1,0 +1,22 @@
+{
+  "schema": "ROOT56_SAVED55_INITIALIZER_RAY_DIAGNOSIS_V1",
+  "fixture_sha256": "5f2bd577c3586b91f4ce8f6b0a3256eb30322b95065aa00b51cb16dd197b00cb",
+  "all7_numeric_fields_byte_sha_bound": true,
+  "initializer_complete": false,
+  "baseline_error": "initializer flat row infeasible; wholepolytope unknown",
+  "retry_error": "bounded initializer ray has no interior; wholepolytope unknown",
+  "flat_correction_row": 7067,
+  "actual_physical_freebeta_delta_inf": 3.0412179770708857e-12,
+  "all_nonbeta_bits_preserved": true,
+  "retry_seed_exactly_nominal_plus_saved_delta": true,
+  "blocked_row": 7066,
+  "row_physical_beta_gradient_inf": 0.16892484428332857,
+  "row_nonzero_beta_count": 2,
+  "saved_nonzero_uniform_travel": 2.7755575615628914e-17,
+  "saved_after_flat_row_value": -0.0033778211873229324,
+  "excess_above_original_1e_12_allowance": "3.34944705592263858306978363543748855590820312500E-14",
+  "maximum_helpful_uniform_change_at_epsilon_cap": "2.77555756156289135105907917022705078125E-23",
+  "required_ray_epsilon_from_saved_Cpp_scalars": "1206.765481036032",
+  "declared_epsilon_cap": 1e-06,
+  "scope": "Decimal arithmetic of original C++ saved numeric row/ray scalars, with exact bound fixture/seed/delta. Uniform ray insufficient; not a whole-polytope infeasibility proof or actualstate/nativecandidate projection. New fallback/native56 remains untested byRoot."
+}

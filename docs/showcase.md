@@ -12,7 +12,15 @@ performance or physical hardware safety.
 
 [SVG](../figures/phase5_stop54_actual_braking_20261015.svg), [all22 observations CSV](../figures/phase5_stop54_actual_braking_20261015.csv), [source/renderer/output hashes](../figures/phase5_stop54_actual_braking_20261015.json), [review and backup limits](../reviews/evidence/phase5_stop53_54_and_refinement55_v1_20261015/README.md).
 
-Attempt54 completes43 commands/86 actual simulated2ms task halves/172ms, then reaches the512-iteration cap at current43/0. Every braking observation is shown relative to the original threshold; panels use separate logarithmic y scales. Dwell remains0/50 and all44 whole-boundary4ms deadlines miss. Hold drift is unavailable because no observation passes the threshold predicate. This is a partial-run diagnostic, with no successful task video or research-ranking claim. The stop-only KKT refinement passes three saved inputs. After verified connection/power recovery and fresh checks, native55 entered once at21:45 Toronto on2026-10-15; its outcome is pending.
+Attempt54 completes43 commands/86 actual simulated2ms task halves/172ms, then reaches the512-iteration cap at current43/0. Every braking observation is shown relative to the original threshold; panels use separate logarithmic y scales. Dwell remains0/50 and all44 whole-boundary4ms deadlines miss. Hold drift is unavailable because no observation passes the threshold predicate. This is a partial-run diagnostic, with no successful task video or research-ranking claim. The stop-only KKT refinement passes three saved inputs. After verified connection/power recovery and fresh checks, native55 entered once at21:45 Toronto on2026-10-15; it ended at current40/2 on initializer-ray failure, with40 commands/80 task halves and dwell0/50.
+
+## Actual56 braking diagnostic
+
+![Every actual56 braking observation](../figures/phase5_stop56_actual_braking_20261015.png)
+
+[SVG](../figures/phase5_stop56_actual_braking_20261015.svg), [all32 observations CSV](../figures/phase5_stop56_actual_braking_20261015.csv), [provenance](../figures/phase5_stop56_actual_braking_20261015.json), [source and independent review](../reviews/evidence/phase5_stop55_56_initializer_v1_20261015/README.md).
+
+The bounded initializer repair lets56 cross the55 failure point and complete48 commands/96 simulated2ms task halves/192ms. The run then exhausts4096 near-boundary records at current48/1. All32 braking observations are shown against original thresholds; actual velocity increases rather than settling. Dwell0/50, all49 whole deadlines miss4ms, and the full task remains incomplete. The scale is linear from0 to1 and logarithmic above1, with separate y ranges. This is adverse partial-run evidence, not a successful task video or accepted controller result. Complete new raw-evidence backup remains incomplete.
 
 ## CI environment infrastructure
 

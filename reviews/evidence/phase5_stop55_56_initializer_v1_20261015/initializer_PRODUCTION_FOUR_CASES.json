@@ -1,0 +1,42 @@
+{
+  "schema": "ROOT56_PRODUCTION_FOUR_CASE_BINDING_AND_RESIDUALS_V1",
+  "cases": [
+    {
+      "case": "old52_current40_trial0",
+      "fixture_sha256": "de00c6a6e12b40ff8d156cca60c2e2c355f23a630921cb147391eb955c9a77a2",
+      "own_original_D_and_nominal_seed_bitexact": true,
+      "all5_solver_arrays_exact_original": true,
+      "new_nonbeta_bits_unchanged": true,
+      "legacy_seed_identical": true,
+      "seed_physical_delta_inf": 1.006573971352078e-08,
+      "seed_violation": 8.834187721629139e-13,
+      "final_primal": 8.834192058437829e-13,
+      "final_stationarity": 2.498001805406602e-16
+    },
+    {
+      "case": "old53_current40_trial1",
+      "fixture_sha256": "39a69a54ed17220c2f4ee4527261568f14737eb5a69c21ba17558576fd2f89ce",
+      "own_original_D_and_nominal_seed_bitexact": true,
+      "all5_solver_arrays_exact_original": true,
+      "new_nonbeta_bits_unchanged": true,
+      "legacy_seed_identical": true,
+      "seed_physical_delta_inf": 3.089942457618941e-12,
+      "seed_violation": 8.384447650056082e-13,
+      "final_primal": 8.286678634950029e-13,
+      "final_stationarity": 3.608224830031759e-16
+    },
+    {
+      "case": "old54_current43_trial0",
+      "fixture_sha256": "dbee63c9e0353265f9d8cf4ba153765fb00a8a9a277ac820fac0e7de4a61dbe3",
+      "own_original_D_and_nominal_seed_bitexact": true,
+      "all5_solver_arrays_exact_original": true,
+      "new_nonbeta_bits_unchanged": true,
+      "legacy_seed_identical": true,
+      "seed_physical_delta_inf": 1.0065741176867655e-08,
+      "seed_violation": 4.604524227180828e-13,
+      "final_primal": 4.604524227180828e-13,
+      "final_stationarity": 2.2898349882893854e-16
+    }
+  ],
+  "scope": "Independent saved-byte original qpreduction prefix parse, field SHA, actual nominal/D per same trial and final NumPy residuals. No Model/optimizer/native/B/C/physical calls byRoot; does not establish actual56 or phase acceptance."
+}

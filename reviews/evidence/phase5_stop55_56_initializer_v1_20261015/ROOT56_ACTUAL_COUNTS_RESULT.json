@@ -1,0 +1,24 @@
+{
+  "entry": {
+    "stage": "FRESH_CURRENT_MATRIX_HINT_AND_NATIVE_SOLVER",
+    "error": "finite current near-boundary diagnostic cap (stop4096,active1024)",
+    "boundary_unchanged": 0,
+    "session_termination": 1,
+    "session_error": "",
+    "native_termination": 1,
+    "native_error": "",
+    "wall_seconds": 390.833514316,
+    "physical_step_attempts": 1096,
+    "commits": 48
+  },
+  "whole_boundaries": 49,
+  "deadline_misses": 49,
+  "commits": 48,
+  "task_halves": 96,
+  "task_simulated_seconds": 0.192,
+  "trials": 104,
+  "forecasts": 207,
+  "stop_records": 32,
+  "stop_dwell": "0/50; independent renderer parsed every stop record with original thresholds",
+  "scope": "Saved actual binary decoding only; warmup1000 separate, fulltask/stop/realtime NOT achieved"
+}

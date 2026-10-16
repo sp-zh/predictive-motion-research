@@ -1,0 +1,95 @@
+{
+  "schema": "ROOT55_SELECTED_ACTUAL_STOP_WHOLE_V2_CODEC_REVIEW_V1",
+  "payload_size_sha_verified": 537,
+  "selected_codec_complete": 151,
+  "selected_raw_bytes": 171005197,
+  "selected_stored_bytes": 63742803,
+  "before_after_inputs_exact": true,
+  "identity_container_count": 1711,
+  "commands": 40,
+  "task_halves_2ms": 80,
+  "duration_ms": 160,
+  "warmup_steps_separate": 1000,
+  "stop_observations": 16,
+  "stop_dwell": 0,
+  "required_dwell": 50,
+  "stop_passed": false,
+  "first_stop": {
+    "half": 1065,
+    "time": 2.129999999999987,
+    "v": 0.0004819041120100884,
+    "a": 0.012109483955864697,
+    "w": 0.002527014006838596,
+    "alpha": 0.03526596593634082,
+    "r": 0.02243998157978696,
+    "abs_b": 0.15294175393032047
+  },
+  "last_stop": {
+    "half": 1080,
+    "time": 2.1599999999999837,
+    "v": 0.0008571927357827654,
+    "a": 0.013007392384198423,
+    "w": 0.0033844465782409757,
+    "alpha": 0.027109494451139308,
+    "r": 0.02478868219767299,
+    "abs_b": 0.012969753928467555
+  },
+  "whole_records": 41,
+  "whole_deadline_misses": 41,
+  "last_whole": {
+    "cycle": 40,
+    "trials": 3,
+    "complete": 0,
+    "wall": 10.909388513,
+    "miss": 1,
+    "B_error": "original value-affine1e-6/jointtrust.002",
+    "fatal": "bounded initializer ray has no interior; wholepolytope unknown",
+    "trials_total": 87,
+    "forecasts": 173,
+    "steps": 80,
+    "commits": 40
+  },
+  "V2_trace_records": [
+    {
+      "file": "cycle-40/trial-0/working_face_basis_trace.bin",
+      "cycle": 40,
+      "trial": 0,
+      "available": 1,
+      "basis": 1,
+      "refinement_records": 575,
+      "accepted_refinements": 383,
+      "endpoints": 7396
+    },
+    {
+      "file": "cycle-40/trial-1/working_face_basis_trace.bin",
+      "cycle": 40,
+      "trial": 1,
+      "available": 1,
+      "basis": 2,
+      "refinement_records": 480,
+      "accepted_refinements": 245,
+      "endpoints": 4087
+    },
+    {
+      "file": "cycle-40/trial-2/working_face_basis_trace.bin",
+      "cycle": 40,
+      "trial": 2,
+      "available": 0,
+      "basis": 0,
+      "refinement_records": 0,
+      "accepted_refinements": 0,
+      "endpoints": 0
+    },
+    {
+      "file": "retained_working_face_trace_final.bin",
+      "cycle": 40,
+      "trial": 2,
+      "available": 0,
+      "basis": 0,
+      "refinement_records": 0,
+      "accepted_refinements": 0,
+      "endpoints": 0
+    }
+  ],
+  "scope": "Only selected packet verified; uncopied earlier native trial data remain Dell only. Original final trial numeric initializer has no hint/trace; preserved absent availability. No full QP/SI/B/C acceptance audit, full task/stop/real-time or phase acceptance."
+}

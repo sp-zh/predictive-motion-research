@@ -1,0 +1,126 @@
+{
+  "schema": "ROOT56_PRODUCTION_FOUR_CASE_BINDING_V3_AND_RESIDUALS_V2",
+  "cases": [
+    {
+      "case": "old52_current40_trial0",
+      "own_original_D_nominal_and_all5_solver_arrays_bitexact": true,
+      "legacy_seed_bitidentical": true,
+      "nonbeta_bitidentical": true,
+      "seed_physical_delta_inf": 1.006573971352078e-08,
+      "seed_violation": 8.834187721629139e-13,
+      "final_primal": 8.834192058437829e-13,
+      "final_stationarity": 2.498001805406602e-16,
+      "V3_flags": [
+        40,
+        2,
+        1,
+        1,
+        1,
+        0,
+        1,
+        1,
+        1,
+        0
+      ],
+      "V3_corrections": [],
+      "V3_scope": "Structure/availability/reach inequalities, exact step/total norms and complete applied-seed reconstruction verified; longdouble intermediate eligibility arithmetic not independently reproduced here."
+    },
+    {
+      "case": "old53_current40_trial1",
+      "own_original_D_nominal_and_all5_solver_arrays_bitexact": true,
+      "legacy_seed_bitidentical": true,
+      "nonbeta_bitidentical": true,
+      "seed_physical_delta_inf": 3.089942457618941e-12,
+      "seed_violation": 8.384447650056082e-13,
+      "final_primal": 8.286678634950029e-13,
+      "final_stationarity": 3.608224830031759e-16,
+      "V3_flags": [
+        40,
+        2,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        0,
+        1
+      ],
+      "V3_corrections": [
+        {
+          "row": 7066,
+          "reason": 1,
+          "travel": 0.0,
+          "required": 4.393620484199978e-14,
+          "useful": 0.0
+        }
+      ],
+      "V3_scope": "Structure/availability/reach inequalities, exact step/total norms and complete applied-seed reconstruction verified; longdouble intermediate eligibility arithmetic not independently reproduced here."
+    },
+    {
+      "case": "old54_current43_trial0",
+      "own_original_D_nominal_and_all5_solver_arrays_bitexact": true,
+      "legacy_seed_bitidentical": true,
+      "nonbeta_bitidentical": true,
+      "seed_physical_delta_inf": 1.0065741176867655e-08,
+      "seed_violation": 4.604524227180828e-13,
+      "final_primal": 4.604524227180828e-13,
+      "final_stationarity": 2.2898349882893854e-16,
+      "V3_flags": [
+        40,
+        2,
+        1,
+        1,
+        1,
+        0,
+        1,
+        1,
+        1,
+        0
+      ],
+      "V3_corrections": [],
+      "V3_scope": "Structure/availability/reach inequalities, exact step/total norms and complete applied-seed reconstruction verified; longdouble intermediate eligibility arithmetic not independently reproduced here."
+    },
+    {
+      "case": "actual55_current40_trial2",
+      "own_original_D_nominal_and_all5_solver_arrays_bitexact": true,
+      "legacy_seed_bitidentical": null,
+      "nonbeta_bitidentical": true,
+      "seed_physical_delta_inf": 3.0590361040548806e-12,
+      "seed_violation": 8.395974887553947e-13,
+      "final_primal": 7.868063839344686e-13,
+      "final_stationarity": 2.220446049250313e-16,
+      "V3_flags": [
+        40,
+        2,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        0,
+        1
+      ],
+      "V3_corrections": [
+        {
+          "row": 7067,
+          "reason": 1,
+          "travel": 0.0,
+          "required": 2.7474546416717872e-14,
+          "useful": 0.0
+        },
+        {
+          "row": 7066,
+          "reason": 2,
+          "travel": 2.7755575615628914e-17,
+          "required": 3.349447055922639e-14,
+          "useful": 2.775557561562891e-23
+        }
+      ],
+      "V3_scope": "Structure/availability/reach inequalities, exact step/total norms and complete applied-seed reconstruction verified; longdouble intermediate eligibility arithmetic not independently reproduced here."
+    }
+  ],
+  "qualification": "Earlier PRODUCTION_FOUR_CASES.json covered only the three old cases listed in BINDINGS; its filename was overly broad. This fresh report adds actual55 using its separately pinned exact fixture and original qpreduction. No previous report overwritten.",
+  "scope": "Saved-data arithmetic only, no Model/optimizer/native/B/C/physical calls or actual56/phase acceptance."
+}

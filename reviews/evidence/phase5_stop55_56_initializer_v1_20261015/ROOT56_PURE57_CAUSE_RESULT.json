@@ -1,0 +1,18 @@
+{
+  "scope": "Root saved matrix arithmetic and byte-prefix verification only, not native/B/C acceptance",
+  "fixture_sha256": "069b99b19abe78a22a7845e65a94774ef66958e6f9a2ad573001061e77ea7b66",
+  "shape_A": [
+    7346,
+    144
+  ],
+  "primal_max_violation": 7.892939773990193e-13,
+  "stationarity_inf": 1.1102230246251565e-16,
+  "boundary_records": 11290,
+  "old4096_and_new_prefix_bitexact_actual": true,
+  "old_partialxy_bitexact_actual": true,
+  "new_finalxy_sha256": "8e29c022b367b5383fd2bad653df1149b564e9ea283992c68c50d11f2117f1c0",
+  "inventory": 741008,
+  "precharge": 745000,
+  "global_worst": 1799506160,
+  "remaining_numeric_slots": 493840
+}
