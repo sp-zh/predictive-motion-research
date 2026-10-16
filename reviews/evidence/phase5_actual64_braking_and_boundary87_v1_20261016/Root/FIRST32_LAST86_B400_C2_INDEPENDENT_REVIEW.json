@@ -1,0 +1,38 @@
+{
+  "schema": "ROOT64_ACTUAL_TWO_SAMPLE_B400_AND_C2_CONTRACT_REVIEW_V1",
+  "samples": [
+    {
+      "cycle": 32,
+      "all400_B_original_full30_affine_jointtrust_physical_jerk_geometry_sigma_intervals_recomputed": true,
+      "max30_affine_error": 7.687665621821695e-12,
+      "jointtrust": 3.312551141210207e-05,
+      "all400_geometry_sigma_interval_roundoff": 0.0,
+      "all400_acceleration_jerk_record_error": [
+        0.0,
+        0.0
+      ],
+      "actual_native_substeps": 2,
+      "actual_value_qv_error": 1.7119552303546115e-16,
+      "actual_geometry_sigma_interval_roundoff": 0.0,
+      "no_clip_or_force_clip": true,
+      "scope": "Independent saved arithmetic and private recorded guard/real-native2half contract, not every FCL distance query or physics engine re-execution. Full sourcecomplete SHA/CRC and archive binding separately verified. No actual stop/fulltask/realtime/phase proof."
+    },
+    {
+      "cycle": 86,
+      "all400_B_original_full30_affine_jointtrust_physical_jerk_geometry_sigma_intervals_recomputed": true,
+      "max30_affine_error": 8.62687285025027e-12,
+      "jointtrust": 3.4327539378598004e-05,
+      "all400_geometry_sigma_interval_roundoff": 0.0,
+      "all400_acceleration_jerk_record_error": [
+        0.0,
+        0.0
+      ],
+      "actual_native_substeps": 2,
+      "actual_value_qv_error": 2.0602551782655798e-16,
+      "actual_geometry_sigma_interval_roundoff": 0.0,
+      "no_clip_or_force_clip": true,
+      "scope": "Independent saved arithmetic and private recorded guard/real-native2half contract, not every FCL distance query or physics engine re-execution. Full sourcecomplete SHA/CRC and archive binding separately verified. No actual stop/fulltask/realtime/phase proof."
+    }
+  ],
+  "scope": "Actual64 first changed stop32 and last committed86 only; all other55 completion records/110stop checks separate. No repeated Model/solver/physical experiment."
+}

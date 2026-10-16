@@ -1,0 +1,91 @@
+{
+  "utc": "2026-10-16T20:41:11.734730+00:00",
+  "whole_record_paths_observed": 88,
+  "latest_sourcecomplete_strict_codec_whole_records": [
+    {
+      "value": {
+        "cycle": 85,
+        "trials_entered": 1,
+        "physical_complete": 1,
+        "wall": 3.568760862,
+        "deadline_miss": 1,
+        "last_B_error": "",
+        "fatal_error": "",
+        "trials_total": 121,
+        "forecasts": 242,
+        "steps": 172,
+        "commits": 86,
+        "scope": "Whole current cycle monotonic wall spans every rejected fresh trial and actual C with pertrial evidence/manifest; summary serialization excluded. Diagnostic4ms deadline threshold never shortened to last successful trial."
+      },
+      "codec_receipt": {
+        "file": "/home/codextransfer/predictive_motion/results/phase5/session-controlled-stop-roundoff-command-contraction-active32-brake64-dwell25-v1-20261016-attempt64/run-attempt1/artifacts/cycle-85/whole_current_cycle.bin",
+        "codec": "GZIP_DEFLATE_V1",
+        "stored_bytes": 305,
+        "stored_sha256": "146e413c3718084dd6169b2e725411a045a67e82df998d03ad6bdc85e5916ada",
+        "raw_bytes": 419,
+        "raw_sha256": "40607eac84f63b2a800722b6461d49295c3bdadebe3b25a8dec96122d9bbf211",
+        "source_complete": true,
+        "closed_raw_prefix_valid": true,
+        "scope": "source complete is separate from successful gzip prefix reconstruction; no Model/native/mathematical acceptance"
+      }
+    },
+    {
+      "value": {
+        "cycle": 86,
+        "trials_entered": 1,
+        "physical_complete": 1,
+        "wall": 3.525673683,
+        "deadline_miss": 1,
+        "last_B_error": "",
+        "fatal_error": "",
+        "trials_total": 122,
+        "forecasts": 244,
+        "steps": 174,
+        "commits": 87,
+        "scope": "Whole current cycle monotonic wall spans every rejected fresh trial and actual C with pertrial evidence/manifest; summary serialization excluded. Diagnostic4ms deadline threshold never shortened to last successful trial."
+      },
+      "codec_receipt": {
+        "file": "/home/codextransfer/predictive_motion/results/phase5/session-controlled-stop-roundoff-command-contraction-active32-brake64-dwell25-v1-20261016-attempt64/run-attempt1/artifacts/cycle-86/whole_current_cycle.bin",
+        "codec": "GZIP_DEFLATE_V1",
+        "stored_bytes": 304,
+        "stored_sha256": "3a435778d123809aa9e19b2a4b568a64da1d2e013f01c39e84ad90e91cf52505",
+        "raw_bytes": 419,
+        "raw_sha256": "87078273818da30cc47ff63ea7da2b7ac21fc7fc885d529470c9257ca501f97c",
+        "source_complete": true,
+        "closed_raw_prefix_valid": true,
+        "scope": "source complete is separate from successful gzip prefix reconstruction; no Model/native/mathematical acceptance"
+      }
+    },
+    {
+      "value": {
+        "cycle": 87,
+        "trials_entered": 1,
+        "physical_complete": 0,
+        "wall": 3.213902895,
+        "deadline_miss": 1,
+        "last_B_error": "",
+        "fatal_error": "finite current near-boundary diagnostic cap (stop12288,active1024)",
+        "trials_total": 123,
+        "forecasts": 245,
+        "steps": 174,
+        "commits": 87,
+        "scope": "Whole current cycle monotonic wall spans every rejected fresh trial and actual C with pertrial evidence/manifest; summary serialization excluded. Diagnostic4ms deadline threshold never shortened to last successful trial."
+      },
+      "codec_receipt": {
+        "file": "/home/codextransfer/predictive_motion/results/phase5/session-controlled-stop-roundoff-command-contraction-active32-brake64-dwell25-v1-20261016-attempt64/run-attempt1/artifacts/cycle-87/whole_current_cycle.bin",
+        "codec": "GZIP_DEFLATE_V1",
+        "stored_bytes": 352,
+        "stored_sha256": "cf6b881b83faf578fc608205714b49c1c041d1d9708ec7cd4109023e6dd5aec1",
+        "raw_bytes": 485,
+        "raw_sha256": "021332dd1d578871dae269559a0e56dc889ff5abaead54c0334d5363ca1d1f9d",
+        "source_complete": true,
+        "closed_raw_prefix_valid": true,
+        "scope": "source complete is separate from successful gzip prefix reconstruction; no Model/native/mathematical acceptance"
+      }
+    }
+  ],
+  "unavailable_latest": [],
+  "driver_terminal": true,
+  "execution_mode": "ONLINE_NO_OFFLINE_SUPERVISOR_QUEUE",
+  "scope": "Closed recorded command counts only; no current pending cycle/final stop/task/phase result inferred."
+}

@@ -4,6 +4,12 @@ Updated 2026-10-16, America/Toronto. **Resumed after offline61 by verified direc
 
 Local saved-data review confirms all128 records separately exceed physical v/a and accepted w/alpha thresholds. At43/trial1, a narrow nominal-centered alpha subset forces joints2/3/4/6 to increase absolute command velocity despite stop cost; this is a concrete restriction, not yet a complete cause or verified repair. Actual stopping/progress/closed-loop investigation remains next work.
 
+## Actual64 closed-loop result and retained failure
+
+[Actual64 result](../reviews/evidence/phase5_actual64_braking_and_boundary87_v1_20261016/README.md):87C/174taskhalves/348ms,32active55brake,123trials245forecasts. It crosses old63 numerical512 and clears oldw platform to5e-7, with progressr1e-9 and alpha/b nearzero, but actual physical v/a remain2.324e-4/1.521e-3 and fail all110 stop observations, dwell0/50. All88 whole boundaries miss4ms. Current87 hint stops at original12288 boundary cap before nativeSOLVED/B/C; all original finite limits remain. Sourcecomplete codec does not mean complete numeric hint.
+
+Root verifies all1154selected payloads/489codecs,56nominal provenance+history recurrences, originalSI/cost and fullB400/C2 arithmetic for first32/last86, and complete Mac/Dell64 archives. Saved posthook replicates actual87 finalx/y/111events/12288 boundaries exactly and all corresponding full endpoints exceed original1e-12; correct refusal cannot be fixed by skipping them or raising cap. Physical-aware nominal and progress-floor degeneracy remain separate causal work. No65 entry at this checkpoint; resource/backup headroom must remain bounded. Original manualwait61/history preserved, next actual finite offline batch ends manualwait again.
+
 ## Actual62/63 completed functional unit and remaining failure
 
 [Actual62](../reviews/evidence/phase5_actual62_nominal_exhaustion_v3_20261016/README.md) completes53C/21braking, then exhausts all148 progress proposals at53 before Model. Its closed source-failure prefix is retained as incomplete. [Actual63](../reviews/evidence/phase5_actual63_explicit_warm_and_numeric512_v1_20261016/README.md) adds one original-limit checked warm family, crosses53 with independent exact previous52 candidate-shift provenance and all14756 SI rows, then fails original numeric512 hint at63.63C/31braking/126taskhalves/252ms,62stopfalse/dwell0/50 and64whole deadline misses4ms. Source94/39compile28link27pure and all8×5stop/6active core compatibility pass; this is not physical stop or full task success.

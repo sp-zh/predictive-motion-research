@@ -1,5 +1,9 @@
 # Project backup
 
+## Complete64 stored-evidence archive
+
+[Actual64](../reviews/evidence/phase5_actual64_braking_and_boundary87_v1_20261016/README.md):2,569,331,409B SHAd971983771de8a58b3fa721c9469ac4328c1aa9bf0e9ce14702f8806a24d0895,4076 members/2939 complete codecs, actual persisted Mac reopenSHA/CRC plus independent Dell original archive. Mac READYf526c265c3672831f18253a081c1be8b2a8a90b500469cb32f26c0fb2a1396b4. Single4GiB/metadata16MiB/Mac33GiB/C80GiB floors hold, no failure/reset. Original codec completion is distinct from failed near-boundary hint and physical stop; older gaps/no standalone environment restoration remain. Current C/D and future worst-case run+backup headroom must be checked before another native entry; no old evidence cleanup is implied.
+
 ## Complete62/63 stored-evidence copies
 
 [Actual62](../reviews/evidence/phase5_actual62_nominal_exhaustion_v3_20261016/README.md) and [actual63](../reviews/evidence/phase5_actual63_explicit_warm_and_numeric512_v1_20261016/README.md) now have independent physical Mac/Dell archives with full member/inner-codec/outerCRC and fsynced Mac whole-file reopenSHA/CRC checks.62:1,841,047,157B SHA051259984fe17c724aab8fcd633927f5eda2036311b4096c6dd574a59d4da98d;63:2,068,830,601B SHA387b5ac46e9667c75aa670072177b8522529a2300b90ddd6113c174ebeeba2bd.63 failedv1 part2,068,821,595B remains readonly/charged to original9GiB aggregate. Original source-failure62 prefix remains incomplete; backups do not make stopping pass. Frozen source/profile/ELF included, dependency/build caches excluded. Older53–57 gaps and no standalone environment restoration remain. Public small source/report/figure checkpoint requires separately verified remote SHA.

@@ -1,0 +1,13 @@
+{
+  "schema": "ROOT64_SAVED87_POSTAPPEND_FULL_ENDPOINT_DOMAIN_AND_ORIGINAL_REPLAY_REVIEW_V1",
+  "fixture_sha256": "bf36be43f10fe80ee3292c2b465f5c3704e7ba7df1482578b7a291e3f5f3be75",
+  "all6_scaled_inputs_byteexact_actual87": true,
+  "original_header_diff_exactly_one_readonly_postappend_macro": true,
+  "all_actual_final_x_y_111events_12288_boundary_fields_byteexact": true,
+  "all12288_stored_original_row_bounds_bitexact": true,
+  "full_endpoints_outside_original1e12_domain": 12288,
+  "inside_original_domain": 0,
+  "minimum_endpoint_violation": 1.0875430321044305e-12,
+  "maximum_endpoint_violation": 3.283553346899299e-05,
+  "scope": "Independent original-matrix/replay/recorded scalar domain check. Current64 correctly refuses these full directions; no basis to bypass/relax original1e-12 or increase12288. Intermediate full direction vectors are not all serialized; this does not independently reconstruct each original native full row product. No new65 Model/native/source gate or physical stop acceptance."
+}

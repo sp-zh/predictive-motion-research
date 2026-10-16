@@ -1,0 +1,34 @@
+{
+  "records": [
+    {
+      "label": "compile",
+      "exit": 0,
+      "wall_seconds": 4.887374481011648,
+      "cpu": 90,
+      "mem": 2147483648,
+      "filecap": 33554432,
+      "wallcap": 100
+    },
+    {
+      "label": "link",
+      "exit": 0,
+      "wall_seconds": 0.2660788240027614,
+      "cpu": 30,
+      "mem": 2147483648,
+      "filecap": 33554432,
+      "wallcap": 40
+    },
+    {
+      "label": "replay",
+      "exit": 0,
+      "wall_seconds": 0.36651628800609615,
+      "cpu": 30,
+      "mem": 1073741824,
+      "filecap": 16777216,
+      "wallcap": 40
+    }
+  ],
+  "original_failure_reproduced": true,
+  "inputs_before_after_equal": true,
+  "scope": "One finite saved-only original64 current87 replay with boundary append posthook; original algorithm/allcaps unchanged, extra2MiB output. No65 source/Model/native entry."
+}

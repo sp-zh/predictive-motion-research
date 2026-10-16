@@ -1,0 +1,49 @@
+{
+  "schema": "COMPLETE64_DELL_C_ARCHIVE_READY_V1",
+  "utc": "2026-10-16T20:44:15.649148+00:00",
+  "archive_path": "/home/codextransfer/predictive_motion/transfer/cold-archives/native64-complete-20261016-v1/complete64.tar.gz",
+  "bytes": 2569331409,
+  "sha256": "d971983771de8a58b3fa721c9469ac4328c1aa9bf0e9ce14702f8806a24d0895",
+  "source_manifest": {
+    "bytes": 825974,
+    "sha256": "96a98e6fa6c427073ae5b8fd12114a778792b9532fb9239b25a080264da57e4b"
+  },
+  "codec_report": {
+    "bytes": 2518414,
+    "sha256": "c6d960c4f4c864ffc1d8b818b2d383682a7f3bf7c5a1b737cac04497eef2a798"
+  },
+  "payload_count": 4072,
+  "payload_bytes": 2636269788,
+  "members_verified": 4076,
+  "full_member_bytes_verified": 2639630907,
+  "outer_tar_raw_bytes": 2646732800,
+  "full_gzip_crc_singleEOF_no_trailing": true,
+  "native_before_after_inputs_equal": true,
+  "actual_volumes_before": [
+    {
+      "DeviceID": "C:",
+      "FreeSpace": 92740358144,
+      "Size": 488030334976
+    },
+    {
+      "DeviceID": "D:",
+      "FreeSpace": 87908872192,
+      "Size": 512098299904
+    }
+  ],
+  "actual_volumes_after": [
+    {
+      "DeviceID": "C:",
+      "FreeSpace": 90189950976,
+      "Size": 488030334976
+    },
+    {
+      "DeviceID": "D:",
+      "FreeSpace": 87908872192,
+      "Size": 512098299904
+    }
+  ],
+  "wall_seconds": 78.39901890599867,
+  "Mac_full_stream_readback": "PENDING",
+  "scope": "Complete stored native64 evidence and recoverable source/profile archive on DellC, source incomplete evidence retained. Same Dell C original+archive are not independent physical-device backups. Mac metadata/selected packet only. No Git/phase acceptance claim."
+}

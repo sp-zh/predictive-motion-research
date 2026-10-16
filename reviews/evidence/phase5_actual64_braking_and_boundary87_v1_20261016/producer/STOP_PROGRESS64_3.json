@@ -1,0 +1,111 @@
+{
+  "reader_qualification": "Initial monitor looked for cycle-root observation_after; producer writes trial subdirectory. No source or native changed, absence not failure.",
+  "scope": "Read-only latest complete snapshot and nominal family. No dwell/current-pending/terminal/stop acceptance inferred.",
+  "driver_terminal": true,
+  "latest_actual_after": {
+    "cycle": 86,
+    "tick": 87,
+    "sequence": 87,
+    "completed": 1,
+    "stage": "COMPLETE_CURRENT_NATIVE_BOUNDARY",
+    "error": "",
+    "time": 2.347999999999963,
+    "contact_free": 1,
+    "v_inf": 0.000232406155271995,
+    "w_inf": 5.000000000001381e-07,
+    "alpha_inf": 4.16369633134692e-17,
+    "r": 9.99999999971967e-10,
+    "b": -5.31060726387798e-17,
+    "actual_acceleration_available": 1,
+    "a_inf": 0.001521276900518466,
+    "actual_physical_halves": 1174,
+    "codec": {
+      "file": "/home/codextransfer/predictive_motion/results/phase5/session-controlled-stop-roundoff-command-contraction-active32-brake64-dwell25-v1-20261016-attempt64/run-attempt1/artifacts/cycle-86/trial-0/observation_after.bin",
+      "codec": "GZIP_DEFLATE_V1",
+      "stored_bytes": 708,
+      "stored_sha256": "9bcb41113ddd5085679e13460aa095c3fdfb9905ea006c0704214f2d21be99ec",
+      "raw_bytes": 2767,
+      "raw_sha256": "73b8901b4845e899dca36893fdaec48bafd658d46b9ef8fe4c477c5b6924c041",
+      "source_complete": true,
+      "closed_raw_prefix_valid": true,
+      "scope": "source complete is separate from successful gzip prefix reconstruction; no Model/native/mathematical acceptance"
+    }
+  },
+  "latest_complete_nominal": {
+    "cycle": 87,
+    "regenerated": 1,
+    "build_complete": 1,
+    "attempts": 8,
+    "selected": [
+      {
+        "channel": 0,
+        "selected": 0,
+        "attempted": 1,
+        "parameter": -8.333333333335636e-05,
+        "terminal_rate": 2.6469779601696886e-23
+      },
+      {
+        "channel": 1,
+        "selected": 0,
+        "attempted": 1,
+        "parameter": 8.333333333333492e-05,
+        "terminal_rate": -2.6469779601696886e-23
+      },
+      {
+        "channel": 2,
+        "selected": 0,
+        "attempted": 1,
+        "parameter": -8.333333333335432e-05,
+        "terminal_rate": 0.0
+      },
+      {
+        "channel": 3,
+        "selected": 0,
+        "attempted": 1,
+        "parameter": -8.333333333331978e-05,
+        "terminal_rate": -5.293955920339377e-23
+      },
+      {
+        "channel": 4,
+        "selected": 0,
+        "attempted": 1,
+        "parameter": 8.333333333333253e-05,
+        "terminal_rate": -2.6469779601696886e-23
+      },
+      {
+        "channel": 5,
+        "selected": 0,
+        "attempted": 1,
+        "parameter": -8.333333333333417e-05,
+        "terminal_rate": 2.6469779601696886e-23
+      },
+      {
+        "channel": 6,
+        "selected": 0,
+        "attempted": 1,
+        "parameter": 8.333333333333451e-05,
+        "terminal_rate": 2.6469779601696886e-23
+      },
+      {
+        "channel": 7,
+        "selected": 0,
+        "attempted": 1,
+        "parameter": 0.0,
+        "terminal_rate": 9.99999999971967e-10
+      }
+    ],
+    "warm_selected_channels": [],
+    "codec": {
+      "file": "/home/codextransfer/predictive_motion/results/phase5/session-controlled-stop-roundoff-command-contraction-active32-brake64-dwell25-v1-20261016-attempt64/run-attempt1/artifacts/cycle-87/trial-0/stop_objective_mode.bin",
+      "codec": "GZIP_DEFLATE_V1",
+      "stored_bytes": 1603,
+      "stored_sha256": "58efce6312465f053fc7d17eec7af262c45257593313a13905140a3d255444fb",
+      "raw_bytes": 4168,
+      "raw_sha256": "148b2f70668cabdc3ed06269d3c81a621865b627dd6ab239b43d154fe0ef4875",
+      "source_complete": true,
+      "closed_raw_prefix_valid": true,
+      "scope": "source complete is separate from successful gzip prefix reconstruction; no Model/native/mathematical acceptance"
+    }
+  },
+  "unavailable_latest": []
+}

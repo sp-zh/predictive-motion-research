@@ -1,0 +1,98 @@
+{
+  "schema": "ROOT64_ACTUAL87C_ALL_SELECTED_NOMINAL_PROVENANCE_STOP_AND_BOUNDARY_FAILURE_REVIEW_V1",
+  "payload_files": 1154,
+  "payload_bytes": 93512344,
+  "all_selected_native_payloads_bound_to_full_archive_manifest": 1154,
+  "all489_codecs_source_complete": true,
+  "before_after1737_inputs_byte_equal": true,
+  "entry": {
+    "stage": "FRESH_CURRENT_MATRIX_HINT_AND_NATIVE_SOLVER",
+    "error": "finite current near-boundary diagnostic cap (stop12288,active1024)",
+    "boundary_unchanged": 0,
+    "session_termination": 1,
+    "session_error": "",
+    "native_termination": 1,
+    "native_error": "",
+    "wall_seconds": 449.058961945,
+    "physical_step_attempts": 1174,
+    "commits": 87
+  },
+  "active_commands": 32,
+  "braking_commands": 55,
+  "task_halves": 174,
+  "task_duration_ms": 348,
+  "whole_boundaries": 88,
+  "whole_4ms_misses": 88,
+  "last_whole": {
+    "cycle": 87,
+    "trials_entered": 1,
+    "physical_complete": 0,
+    "wall": 3.213902895,
+    "deadline_miss": 1,
+    "last_B_error": "",
+    "fatal_error": "finite current near-boundary diagnostic cap (stop12288,active1024)",
+    "trials_total": 123,
+    "forecasts": 245,
+    "steps": 174,
+    "commits": 87,
+    "scope": "Whole current cycle monotonic wall spans every rejected fresh trial and actual C with pertrial evidence/manifest; summary serialization excluded. Diagnostic4ms deadline threshold never shortened to last successful trial."
+  },
+  "all55_brake_cycles_one_trial_no_Berror": true,
+  "stop": {
+    "records": 110,
+    "all_below_false": true,
+    "dwell": 0,
+    "required": 50,
+    "threshold_failure_counts": {
+      "physical_v": 110,
+      "physical_a": 110,
+      "accepted_w": 28,
+      "accepted_alpha": 30,
+      "progress_r": 103,
+      "progress_b": 104
+    },
+    "last": {
+      "global_half": 1174,
+      "time_s": 2.347999999999963,
+      "v": 0.000232406155271995,
+      "a": 0.001521276900518466,
+      "w": 5.000000000001381e-07,
+      "alpha": 4.16369633134692e-17,
+      "s": 0.00401122748551892,
+      "r": 9.99999999971967e-10,
+      "b": -5.31060726387798e-17,
+      "below": 0,
+      "hold": 0,
+      "consecutive": 0,
+      "C_drift": 0.0,
+      "s_drift": 0.0
+    }
+  },
+  "all56_current_nominal_records_recomputed_with_authentic_previous_candidate_overlap_shift": true,
+  "warm_cases": [
+    {
+      "cycle": 53,
+      "channels": [
+        7
+      ],
+      "previous_accepted_candidate_SHA256": "85bfc1ca7680cf2ef4a9897e44a3cdb7f75ede8e47523963e88849ccae36b508"
+    },
+    {
+      "cycle": 54,
+      "channels": [
+        7
+      ],
+      "previous_accepted_candidate_SHA256": "474cb48cd629e7de14d1b247eb457f3ccdfa649d1f29860418589e05e747cc02"
+    },
+    {
+      "cycle": 55,
+      "channels": [
+        7
+      ],
+      "previous_accepted_candidate_SHA256": "41dfcfc891b73d092220f064987654e988aecb01aab474bef390410a6ff10996"
+    }
+  ],
+  "all55_sequential_command_progress_histories_reconstructed": true,
+  "last87_no_native_wrapper_SOLVED_B_C": true,
+  "scope": "Actual64 clears commandw/alpha and progress thresholds and crosses old63 failure, but physical v/a remain above thresholds in every110 observations, dwell0/50.55 of64 declared brake commands finish; current87 terminates at original near-boundary12288 cap before nativeSOLVED/B/C. Codec source completion is independent of incomplete numeric hint. Scalar/provenance/stop review is not independent reproof of every geometric/nonlinear B, nor complete task/realtime/phase success. No64 replay/extension; full persisted archive check separate."
+}

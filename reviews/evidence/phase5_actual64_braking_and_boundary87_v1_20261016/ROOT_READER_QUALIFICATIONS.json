@@ -1,0 +1,6 @@
+{
+  "selected_v1": "SyntaxError due missing space in else132 before any evidence read; v2 corrects syntax only.",
+  "B400_v1": "Originally required bit-exact 30-state half/cycle records as in old zero-progress fixtures. Nonzero progress uses equivalent different arithmetic order; first mismatch s4.34e-19/r3.47e-18. Diagnostic output retained.",
+  "B400_v2": "28 physical/command components still byte-exact half/cycle/cell; logical s/r representations checked within1e-14 plus independent literal recurrence, without changing original positivity,SI,nonlinearB1e-6,qtrust.002,geometry,sigma,jerk or actual stop gates. All original400 intervals and derivatives recompute; no native replay.",
+  "scope": "Reader failures preserved; successful v2 reports authoritative. No source/capture/controller repeat to repair reader."
+}

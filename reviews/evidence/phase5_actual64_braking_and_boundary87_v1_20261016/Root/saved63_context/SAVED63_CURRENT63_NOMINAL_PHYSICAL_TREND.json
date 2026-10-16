@@ -1,0 +1,73 @@
+{
+  "schema": "ROOT64_SAVED_ACTUAL63_CURRENT63_FIXED_NOMINAL_PHYSICAL_TREND_V1",
+  "source_codec": {
+    "file": "/private/tmp/phase5_controlled_stop_explicit_warm_nominal_terminal63_v1_20261016/actual-dell/session-controlled-stop-explicit-warm-nominal-active32-brake64-dwell25-v1-20261016-attempt63/run-attempt1/artifacts/cycle-63/trial-0/original_nominal.bin",
+    "codec": "GZIP_DEFLATE_V1",
+    "stored_bytes": 5014336,
+    "stored_sha256": "547191f0d76094f07fc1d6e832f69632c81042839745e267c5778638fad8f6b6",
+    "raw_bytes": 12716960,
+    "raw_sha256": "f34c9b36288c821949b2bc88eaccda4218649e812b348501129e186d43793cfc",
+    "source_complete": true,
+    "closed_raw_prefix_valid": true,
+    "scope": "source complete is separate from successful gzip prefix reconstruction; no Model/native/mathematical acceptance"
+  },
+  "full400_nominal_and_maps_decoded": true,
+  "all20controls_match_original63_stop_mode": true,
+  "at132ms_remaining33brake_commands": {
+    "elapsed_ms": 132,
+    "v": 0.00019782126232289953,
+    "a": 0.0012002237882925053,
+    "w": 8.470329472543003e-22,
+    "alpha": 0.0,
+    "r": 9.999999999750877e-09,
+    "abs_b": 0.0,
+    "ratios": [
+      1.9782126232289952,
+      1.2002237882925053,
+      8.470329472543003e-16,
+      0.0,
+      0.009999999999750877,
+      0.0
+    ],
+    "simultaneous_predicted_below": false
+  },
+  "at256ms_additional": {
+    "elapsed_ms": 256,
+    "v": 0.0001397471046181493,
+    "a": 0.000541577442459917,
+    "w": 8.470329472543003e-22,
+    "alpha": 0.0,
+    "r": 9.999999999750877e-09,
+    "abs_b": 0.0,
+    "ratios": [
+      1.397471046181493,
+      0.541577442459917,
+      8.470329472543003e-16,
+      0.0,
+      0.009999999999750877,
+      0.0
+    ],
+    "simultaneous_predicted_below": false
+  },
+  "at800ms": {
+    "elapsed_ms": 800,
+    "v": 3.3258805428846175e-05,
+    "a": 8.879537089288606e-05,
+    "w": 8.470329472543003e-22,
+    "alpha": 0.0,
+    "r": 9.999999999750877e-09,
+    "abs_b": 0.0,
+    "ratios": [
+      0.3325880542884617,
+      0.08879537089288606,
+      8.470329472543003e-16,
+      0.0,
+      0.009999999999750877,
+      0.0
+    ],
+    "simultaneous_predicted_below": true
+  },
+  "first_predicted_all6_below_ms": 386,
+  "total_predicted_all6_below": 208,
+  "scope": "Saved genuine nominal forecast from actual63 current63; no new Model/native/physics invocation and not current64 trajectory. Full horizons assume fixed original63 nominal, whereas current64 re-solves and changed first-command bounds. It can diagnose physical-following lag but does not predict current64 success/failure or establish actual stop/dwell/hold drift/phase acceptance. Predicted per-half w differs from actual monitor accepted-history w repeated for two command halves."
+}

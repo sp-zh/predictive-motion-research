@@ -1,5 +1,9 @@
 # Project showcase
 
+## Actual64 braking: command/progress pass, physical stop incomplete
+
+[Actual64 full110-observation figure](../figures/phase5_stop64_actual_braking_20261016.png), with CSV/SVG/JSON provenance. All original thresholds are shown: commandw/alpha and progressr/b eventually fall below; physicalv/a stay above, dwell0/50. The run naturally terminates at current87 near-boundary cap12288 after87C/55brake; this is not a successful full task or accepted stop video. [Independent result/scope](../reviews/evidence/phase5_actual64_braking_and_boundary87_v1_20261016/README.md).
+
 ## Actual62/63 braking diagnostics, incomplete stop
 
 [Actual62 figure](../figures/phase5_stop62_actual_braking_20261016.png) shows all42 failed stop observations before finite-family exhaustion. [Actual63 figure](../figures/phase5_stop63_actual_braking_20261016.png) shows all62 failed observations after explicit warm-family repair and before numeric512 failure. Both use original thresholds and show dwell0/50; no omitted failures or extrapolated motion. CSV/SVG/JSON provenance accompany each PNG. [Source/results and scope](../reviews/evidence/phase5_actual63_explicit_warm_and_numeric512_v1_20261016/README.md). These are development diagnostics, not successful full-task videos or research acceptance.
