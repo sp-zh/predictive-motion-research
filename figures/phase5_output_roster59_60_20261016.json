@@ -1,0 +1,44 @@
+{
+  "schema": "ACTUAL59_AND_PURE60_FILE_COUNT_FIGURE_V1",
+  "source_pins": {
+    "actual59_result": {
+      "path": "/Users/uot/Documents/ChatGPT/ros/reviews/evidence/phase5_actual59_artifact_roster_failure_v1_20261016/Root/RESULT.json",
+      "bytes": 3026,
+      "sha256": "1ff064993e69ad52159fa5c44e2a0f92efee814c4792c6542c5f99334e1bd515"
+    },
+    "actual59_roster": {
+      "path": "/Users/uot/Documents/ChatGPT/ros/reviews/evidence/phase5_actual59_artifact_roster_failure_v1_20261016/Root/TRIAL0_ARTIFACT_ROSTER.json",
+      "bytes": 12612,
+      "sha256": "f57145f3633cb41dc4d732f365d3c5a52cbbc99311e1a45b2817999f627ad285"
+    },
+    "pure60_review": {
+      "path": "/private/tmp/root60_merged_review_v1_20261016/PURE24_MERGED_AND_FULL_ROSTER_REVIEW.json",
+      "bytes": 19969,
+      "sha256": "b943f7f7614e13e4e1af990225dfe321d9df542ab43894db9fe1829dd6955dff"
+    },
+    "actual58_ordered_roster_binding": {
+      "path": "/private/tmp/phase5_merged_hint_diagnostics60_source_v2_20261016/FROZEN_SUCCESSFUL24_ROSTER_BINDING.json",
+      "bytes": 1568,
+      "sha256": "2cdcc61369cd3c7b036ef9017f64b0dc221ce9c1e71516e92a8570a577cae45b"
+    }
+  },
+  "renderer_sha256": "15701106079a451358fc32d618637beacd63f36151144a16cce484df482e6db0",
+  "matplotlib": "3.10.3",
+  "original_file_limit": 24,
+  "selection": "All written native59 trial0 binary slots plus the explicitly missing25th; complete24-name pure60 synthetic output roster. No extrapolation to runtime60.",
+  "scope": "Evidence/output integration counts only. Gray other-slot counts differ because actual59 lacks final cycle timing while pure60 includes it. Not a controller performance result.",
+  "outputs": {
+    "csv": {
+      "bytes": 175,
+      "sha256": "f8953c852a1f88a9cda44995099392d99c780e1fa26ef0c511e89bf0b076c414"
+    },
+    "png": {
+      "bytes": 114129,
+      "sha256": "72bde0ac9c266a49b4785d68c83d528257290af45b28da9d847b5e08b6f60365"
+    },
+    "svg": {
+      "bytes": 83587,
+      "sha256": "bdb4088472b60c2d0fd29fcde8fda65422edbc2ef310dd3d21c82313804d6771"
+    }
+  }
+}

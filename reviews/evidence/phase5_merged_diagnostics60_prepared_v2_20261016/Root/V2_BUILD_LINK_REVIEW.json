@@ -1,0 +1,22 @@
+{
+  "schema": "ROOT60_V2_ORIGINAL_SSH_BUILD_LINK_READBACK_V1",
+  "stages": [
+    {
+      "stage": "build-attempt1",
+      "commands": 36,
+      "complete": true,
+      "all_exit0": true,
+      "before_after_bytes_equal": true,
+      "runtime_invocations": 0
+    },
+    {
+      "stage": "link-attempt1",
+      "commands": 25,
+      "complete": true,
+      "all_exit0": true,
+      "before_after_bytes_equal": true,
+      "runtime_invocations": 0
+    }
+  ],
+  "scope": "Actual compile/link of freshv2 only, not simulation/task acceptance. Failedv1 untouched."
+}

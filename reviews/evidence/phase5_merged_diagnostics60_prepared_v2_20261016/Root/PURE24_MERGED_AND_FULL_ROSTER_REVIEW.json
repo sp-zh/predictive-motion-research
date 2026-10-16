@@ -1,0 +1,356 @@
+{
+  "schema": "ROOT60_FULL_MERGED512_AND_ORDERED24_OUTPUT_CHAIN_REVIEW_V1",
+  "producer_payload_hashes_verified": 110,
+  "pure24_pass": true,
+  "pure_no_model_native_invocations": true,
+  "pure_before_after_inputs_byte_equal": true,
+  "new_codec_cases": [
+    {
+      "case": "maximum",
+      "raw_bytes": 42267,
+      "raw_sha256": "18d3435f106d8bc03fcbf9ace7c062eb0fdea22b5ec2a30e0f93d1fc83b4f472",
+      "rank_count": 512,
+      "chosen_count": 512,
+      "all_records_exact": true,
+      "codec": {
+        "file": "/private/tmp/phase5_merged_hint_diagnostics60_source_v2_20261016/pure_suite60_readback_v1/merged-hint-codec-tests/maximum/hint_kkt_rank_events.bin",
+        "codec": "RAW_V1",
+        "stored_bytes": 42267,
+        "stored_sha256": "18d3435f106d8bc03fcbf9ace7c062eb0fdea22b5ec2a30e0f93d1fc83b4f472",
+        "raw_bytes": 42267,
+        "raw_sha256": "18d3435f106d8bc03fcbf9ace7c062eb0fdea22b5ec2a30e0f93d1fc83b4f472",
+        "source_complete": true,
+        "closed_raw_prefix_valid": true,
+        "scope": "source complete is separate from successful gzip prefix reconstruction; no Model/native/mathematical acceptance"
+      }
+    },
+    {
+      "case": "active",
+      "raw_bytes": 17691,
+      "raw_sha256": "e1177eb9c3b2c6ae4c30d0539d1ac8f245563c232620f02676d8d1a28e86bfb8",
+      "rank_count": 512,
+      "chosen_count": 0,
+      "all_records_exact": true,
+      "codec": {
+        "file": "/private/tmp/phase5_merged_hint_diagnostics60_source_v2_20261016/pure_suite60_readback_v1/merged-hint-codec-tests/active/hint_kkt_rank_events.bin",
+        "codec": "RAW_V1",
+        "stored_bytes": 17691,
+        "stored_sha256": "e1177eb9c3b2c6ae4c30d0539d1ac8f245563c232620f02676d8d1a28e86bfb8",
+        "raw_bytes": 17691,
+        "raw_sha256": "e1177eb9c3b2c6ae4c30d0539d1ac8f245563c232620f02676d8d1a28e86bfb8",
+        "source_complete": true,
+        "closed_raw_prefix_valid": true,
+        "scope": "source complete is separate from successful gzip prefix reconstruction; no Model/native/mathematical acceptance"
+      }
+    },
+    {
+      "case": "unavailable",
+      "raw_bytes": 1307,
+      "raw_sha256": "4dd625f7fd45fd8a29c2ec88bff1e6d82f671720fbefc6198f8e1bb4622603b9",
+      "rank_count": 0,
+      "chosen_count": 0,
+      "all_records_exact": true,
+      "codec": {
+        "file": "/private/tmp/phase5_merged_hint_diagnostics60_source_v2_20261016/pure_suite60_readback_v1/merged-hint-codec-tests/unavailable/hint_kkt_rank_events.bin",
+        "codec": "RAW_V1",
+        "stored_bytes": 1307,
+        "stored_sha256": "4dd625f7fd45fd8a29c2ec88bff1e6d82f671720fbefc6198f8e1bb4622603b9",
+        "raw_bytes": 1307,
+        "raw_sha256": "4dd625f7fd45fd8a29c2ec88bff1e6d82f671720fbefc6198f8e1bb4622603b9",
+        "source_complete": true,
+        "closed_raw_prefix_valid": true,
+        "scope": "source complete is separate from successful gzip prefix reconstruction; no Model/native/mathematical acceptance"
+      }
+    },
+    {
+      "case": "full-successful-24-roster",
+      "raw_bytes": 42267,
+      "raw_sha256": "b09d00fa1b2423a3eaa36ff4cc75692c80b0a493dcfed6ac7be62b08e5d91a88",
+      "rank_count": 512,
+      "chosen_count": 512,
+      "all_records_exact": true,
+      "codec": {
+        "file": "/private/tmp/phase5_merged_hint_diagnostics60_source_v2_20261016/pure_suite60_readback_v1/merged-hint-codec-tests/full-successful-24-roster/hint_kkt_rank_events.bin",
+        "codec": "RAW_V1",
+        "stored_bytes": 42267,
+        "stored_sha256": "b09d00fa1b2423a3eaa36ff4cc75692c80b0a493dcfed6ac7be62b08e5d91a88",
+        "raw_bytes": 42267,
+        "raw_sha256": "b09d00fa1b2423a3eaa36ff4cc75692c80b0a493dcfed6ac7be62b08e5d91a88",
+        "source_complete": true,
+        "closed_raw_prefix_valid": true,
+        "scope": "source complete is separate from successful gzip prefix reconstruction; no Model/native/mathematical acceptance"
+      }
+    }
+  ],
+  "all24_ordered_files_complete_SHA_CRC_EOF": true,
+  "last_cycle_timing_retained": true,
+  "expected_25th_separate_file_absent": true,
+  "all24_file_receipts": [
+    {
+      "file": "/private/tmp/phase5_merged_hint_diagnostics60_source_v2_20261016/pure_suite60_readback_v1/merged-hint-codec-tests/full-successful-24-roster/observation_before.bin",
+      "codec": "RAW_V1",
+      "stored_bytes": 94,
+      "stored_sha256": "22812f2b5505fa14f9ac07105ea38bd9607693564b0f919a3e02a509f5018be7",
+      "raw_bytes": 94,
+      "raw_sha256": "22812f2b5505fa14f9ac07105ea38bd9607693564b0f919a3e02a509f5018be7",
+      "source_complete": true,
+      "closed_raw_prefix_valid": true,
+      "scope": "source complete is separate from successful gzip prefix reconstruction; no Model/native/mathematical acceptance"
+    },
+    {
+      "file": "/private/tmp/phase5_merged_hint_diagnostics60_source_v2_20261016/pure_suite60_readback_v1/merged-hint-codec-tests/full-successful-24-roster/original_nominal.bin",
+      "codec": "RAW_V1",
+      "stored_bytes": 94,
+      "stored_sha256": "22812f2b5505fa14f9ac07105ea38bd9607693564b0f919a3e02a509f5018be7",
+      "raw_bytes": 94,
+      "raw_sha256": "22812f2b5505fa14f9ac07105ea38bd9607693564b0f919a3e02a509f5018be7",
+      "source_complete": true,
+      "closed_raw_prefix_valid": true,
+      "scope": "source complete is separate from successful gzip prefix reconstruction; no Model/native/mathematical acceptance"
+    },
+    {
+      "file": "/private/tmp/phase5_merged_hint_diagnostics60_source_v2_20261016/pure_suite60_readback_v1/merged-hint-codec-tests/full-successful-24-roster/stop_objective_mode.bin",
+      "codec": "RAW_V1",
+      "stored_bytes": 94,
+      "stored_sha256": "22812f2b5505fa14f9ac07105ea38bd9607693564b0f919a3e02a509f5018be7",
+      "raw_bytes": 94,
+      "raw_sha256": "22812f2b5505fa14f9ac07105ea38bd9607693564b0f919a3e02a509f5018be7",
+      "source_complete": true,
+      "closed_raw_prefix_valid": true,
+      "scope": "source complete is separate from successful gzip prefix reconstruction; no Model/native/mathematical acceptance"
+    },
+    {
+      "file": "/private/tmp/phase5_merged_hint_diagnostics60_source_v2_20261016/pure_suite60_readback_v1/merged-hint-codec-tests/full-successful-24-roster/nominal_geometry_rows.bin",
+      "codec": "RAW_V1",
+      "stored_bytes": 94,
+      "stored_sha256": "22812f2b5505fa14f9ac07105ea38bd9607693564b0f919a3e02a509f5018be7",
+      "raw_bytes": 94,
+      "raw_sha256": "22812f2b5505fa14f9ac07105ea38bd9607693564b0f919a3e02a509f5018be7",
+      "source_complete": true,
+      "closed_raw_prefix_valid": true,
+      "scope": "source complete is separate from successful gzip prefix reconstruction; no Model/native/mathematical acceptance"
+    },
+    {
+      "file": "/private/tmp/phase5_merged_hint_diagnostics60_source_v2_20261016/pure_suite60_readback_v1/merged-hint-codec-tests/full-successful-24-roster/inline_qp.bin",
+      "codec": "RAW_V1",
+      "stored_bytes": 94,
+      "stored_sha256": "22812f2b5505fa14f9ac07105ea38bd9607693564b0f919a3e02a509f5018be7",
+      "raw_bytes": 94,
+      "raw_sha256": "22812f2b5505fa14f9ac07105ea38bd9607693564b0f919a3e02a509f5018be7",
+      "source_complete": true,
+      "closed_raw_prefix_valid": true,
+      "scope": "source complete is separate from successful gzip prefix reconstruction; no Model/native/mathematical acceptance"
+    },
+    {
+      "file": "/private/tmp/phase5_merged_hint_diagnostics60_source_v2_20261016/pure_suite60_readback_v1/merged-hint-codec-tests/full-successful-24-roster/working_face_basis_trace.bin",
+      "codec": "RAW_V1",
+      "stored_bytes": 94,
+      "stored_sha256": "22812f2b5505fa14f9ac07105ea38bd9607693564b0f919a3e02a509f5018be7",
+      "raw_bytes": 94,
+      "raw_sha256": "22812f2b5505fa14f9ac07105ea38bd9607693564b0f919a3e02a509f5018be7",
+      "source_complete": true,
+      "closed_raw_prefix_valid": true,
+      "scope": "source complete is separate from successful gzip prefix reconstruction; no Model/native/mathematical acceptance"
+    },
+    {
+      "file": "/private/tmp/phase5_merged_hint_diagnostics60_source_v2_20261016/pure_suite60_readback_v1/merged-hint-codec-tests/full-successful-24-roster/current_numeric_hint.bin",
+      "codec": "RAW_V1",
+      "stored_bytes": 94,
+      "stored_sha256": "22812f2b5505fa14f9ac07105ea38bd9607693564b0f919a3e02a509f5018be7",
+      "raw_bytes": 94,
+      "raw_sha256": "22812f2b5505fa14f9ac07105ea38bd9607693564b0f919a3e02a509f5018be7",
+      "source_complete": true,
+      "closed_raw_prefix_valid": true,
+      "scope": "source complete is separate from successful gzip prefix reconstruction; no Model/native/mathematical acceptance"
+    },
+    {
+      "file": "/private/tmp/phase5_merged_hint_diagnostics60_source_v2_20261016/pure_suite60_readback_v1/merged-hint-codec-tests/full-successful-24-roster/hint_boundary_events.bin",
+      "codec": "RAW_V1",
+      "stored_bytes": 94,
+      "stored_sha256": "22812f2b5505fa14f9ac07105ea38bd9607693564b0f919a3e02a509f5018be7",
+      "raw_bytes": 94,
+      "raw_sha256": "22812f2b5505fa14f9ac07105ea38bd9607693564b0f919a3e02a509f5018be7",
+      "source_complete": true,
+      "closed_raw_prefix_valid": true,
+      "scope": "source complete is separate from successful gzip prefix reconstruction; no Model/native/mathematical acceptance"
+    },
+    {
+      "file": "/private/tmp/phase5_merged_hint_diagnostics60_source_v2_20261016/pure_suite60_readback_v1/merged-hint-codec-tests/full-successful-24-roster/hint_kkt_rank_events.bin",
+      "codec": "RAW_V1",
+      "stored_bytes": 42267,
+      "stored_sha256": "b09d00fa1b2423a3eaa36ff4cc75692c80b0a493dcfed6ac7be62b08e5d91a88",
+      "raw_bytes": 42267,
+      "raw_sha256": "b09d00fa1b2423a3eaa36ff4cc75692c80b0a493dcfed6ac7be62b08e5d91a88",
+      "source_complete": true,
+      "closed_raw_prefix_valid": true,
+      "scope": "source complete is separate from successful gzip prefix reconstruction; no Model/native/mathematical acceptance"
+    },
+    {
+      "file": "/private/tmp/phase5_merged_hint_diagnostics60_source_v2_20261016/pure_suite60_readback_v1/merged-hint-codec-tests/full-successful-24-roster/candidate.bin",
+      "codec": "RAW_V1",
+      "stored_bytes": 94,
+      "stored_sha256": "22812f2b5505fa14f9ac07105ea38bd9607693564b0f919a3e02a509f5018be7",
+      "raw_bytes": 94,
+      "raw_sha256": "22812f2b5505fa14f9ac07105ea38bd9607693564b0f919a3e02a509f5018be7",
+      "source_complete": true,
+      "closed_raw_prefix_valid": true,
+      "scope": "source complete is separate from successful gzip prefix reconstruction; no Model/native/mathematical acceptance"
+    },
+    {
+      "file": "/private/tmp/phase5_merged_hint_diagnostics60_source_v2_20261016/pure_suite60_readback_v1/merged-hint-codec-tests/full-successful-24-roster/solver_row_screen.bin",
+      "codec": "RAW_V1",
+      "stored_bytes": 94,
+      "stored_sha256": "22812f2b5505fa14f9ac07105ea38bd9607693564b0f919a3e02a509f5018be7",
+      "raw_bytes": 94,
+      "raw_sha256": "22812f2b5505fa14f9ac07105ea38bd9607693564b0f919a3e02a509f5018be7",
+      "source_complete": true,
+      "closed_raw_prefix_valid": true,
+      "scope": "source complete is separate from successful gzip prefix reconstruction; no Model/native/mathematical acceptance"
+    },
+    {
+      "file": "/private/tmp/phase5_merged_hint_diagnostics60_source_v2_20261016/pure_suite60_readback_v1/merged-hint-codec-tests/full-successful-24-roster/qp_equality_reduction.bin",
+      "codec": "RAW_V1",
+      "stored_bytes": 94,
+      "stored_sha256": "22812f2b5505fa14f9ac07105ea38bd9607693564b0f919a3e02a509f5018be7",
+      "raw_bytes": 94,
+      "raw_sha256": "22812f2b5505fa14f9ac07105ea38bd9607693564b0f919a3e02a509f5018be7",
+      "source_complete": true,
+      "closed_raw_prefix_valid": true,
+      "scope": "source complete is separate from successful gzip prefix reconstruction; no Model/native/mathematical acceptance"
+    },
+    {
+      "file": "/private/tmp/phase5_merged_hint_diagnostics60_source_v2_20261016/pure_suite60_readback_v1/merged-hint-codec-tests/full-successful-24-roster/planning_guard.bin",
+      "codec": "RAW_V1",
+      "stored_bytes": 94,
+      "stored_sha256": "22812f2b5505fa14f9ac07105ea38bd9607693564b0f919a3e02a509f5018be7",
+      "raw_bytes": 94,
+      "raw_sha256": "22812f2b5505fa14f9ac07105ea38bd9607693564b0f919a3e02a509f5018be7",
+      "source_complete": true,
+      "closed_raw_prefix_valid": true,
+      "scope": "source complete is separate from successful gzip prefix reconstruction; no Model/native/mathematical acceptance"
+    },
+    {
+      "file": "/private/tmp/phase5_merged_hint_diagnostics60_source_v2_20261016/pure_suite60_readback_v1/merged-hint-codec-tests/full-successful-24-roster/planning_progress_interior_guard.bin",
+      "codec": "RAW_V1",
+      "stored_bytes": 94,
+      "stored_sha256": "22812f2b5505fa14f9ac07105ea38bd9607693564b0f919a3e02a509f5018be7",
+      "raw_bytes": 94,
+      "raw_sha256": "22812f2b5505fa14f9ac07105ea38bd9607693564b0f919a3e02a509f5018be7",
+      "source_complete": true,
+      "closed_raw_prefix_valid": true,
+      "scope": "source complete is separate from successful gzip prefix reconstruction; no Model/native/mathematical acceptance"
+    },
+    {
+      "file": "/private/tmp/phase5_merged_hint_diagnostics60_source_v2_20261016/pure_suite60_readback_v1/merged-hint-codec-tests/full-successful-24-roster/numeric_feasible_initializer.bin",
+      "codec": "RAW_V1",
+      "stored_bytes": 94,
+      "stored_sha256": "22812f2b5505fa14f9ac07105ea38bd9607693564b0f919a3e02a509f5018be7",
+      "raw_bytes": 94,
+      "raw_sha256": "22812f2b5505fa14f9ac07105ea38bd9607693564b0f919a3e02a509f5018be7",
+      "source_complete": true,
+      "closed_raw_prefix_valid": true,
+      "scope": "source complete is separate from successful gzip prefix reconstruction; no Model/native/mathematical acceptance"
+    },
+    {
+      "file": "/private/tmp/phase5_merged_hint_diagnostics60_source_v2_20261016/pure_suite60_readback_v1/merged-hint-codec-tests/full-successful-24-roster/candidate_value.bin",
+      "codec": "RAW_V1",
+      "stored_bytes": 94,
+      "stored_sha256": "22812f2b5505fa14f9ac07105ea38bd9607693564b0f919a3e02a509f5018be7",
+      "raw_bytes": 94,
+      "raw_sha256": "22812f2b5505fa14f9ac07105ea38bd9607693564b0f919a3e02a509f5018be7",
+      "source_complete": true,
+      "closed_raw_prefix_valid": true,
+      "scope": "source complete is separate from successful gzip prefix reconstruction; no Model/native/mathematical acceptance"
+    },
+    {
+      "file": "/private/tmp/phase5_merged_hint_diagnostics60_source_v2_20261016/pure_suite60_readback_v1/merged-hint-codec-tests/full-successful-24-roster/candidate_validation.bin",
+      "codec": "RAW_V1",
+      "stored_bytes": 94,
+      "stored_sha256": "22812f2b5505fa14f9ac07105ea38bd9607693564b0f919a3e02a509f5018be7",
+      "raw_bytes": 94,
+      "raw_sha256": "22812f2b5505fa14f9ac07105ea38bd9607693564b0f919a3e02a509f5018be7",
+      "source_complete": true,
+      "closed_raw_prefix_valid": true,
+      "scope": "source complete is separate from successful gzip prefix reconstruction; no Model/native/mathematical acceptance"
+    },
+    {
+      "file": "/private/tmp/phase5_merged_hint_diagnostics60_source_v2_20261016/pure_suite60_readback_v1/merged-hint-codec-tests/full-successful-24-roster/validation_initial.bin",
+      "codec": "RAW_V1",
+      "stored_bytes": 94,
+      "stored_sha256": "22812f2b5505fa14f9ac07105ea38bd9607693564b0f919a3e02a509f5018be7",
+      "raw_bytes": 94,
+      "raw_sha256": "22812f2b5505fa14f9ac07105ea38bd9607693564b0f919a3e02a509f5018be7",
+      "source_complete": true,
+      "closed_raw_prefix_valid": true,
+      "scope": "source complete is separate from successful gzip prefix reconstruction; no Model/native/mathematical acceptance"
+    },
+    {
+      "file": "/private/tmp/phase5_merged_hint_diagnostics60_source_v2_20261016/pure_suite60_readback_v1/merged-hint-codec-tests/full-successful-24-roster/commit_journal_receipt.bin",
+      "codec": "RAW_V1",
+      "stored_bytes": 94,
+      "stored_sha256": "22812f2b5505fa14f9ac07105ea38bd9607693564b0f919a3e02a509f5018be7",
+      "raw_bytes": 94,
+      "raw_sha256": "22812f2b5505fa14f9ac07105ea38bd9607693564b0f919a3e02a509f5018be7",
+      "source_complete": true,
+      "closed_raw_prefix_valid": true,
+      "scope": "source complete is separate from successful gzip prefix reconstruction; no Model/native/mathematical acceptance"
+    },
+    {
+      "file": "/private/tmp/phase5_merged_hint_diagnostics60_source_v2_20261016/pure_suite60_readback_v1/merged-hint-codec-tests/full-successful-24-roster/actual_commit.bin",
+      "codec": "RAW_V1",
+      "stored_bytes": 94,
+      "stored_sha256": "22812f2b5505fa14f9ac07105ea38bd9607693564b0f919a3e02a509f5018be7",
+      "raw_bytes": 94,
+      "raw_sha256": "22812f2b5505fa14f9ac07105ea38bd9607693564b0f919a3e02a509f5018be7",
+      "source_complete": true,
+      "closed_raw_prefix_valid": true,
+      "scope": "source complete is separate from successful gzip prefix reconstruction; no Model/native/mathematical acceptance"
+    },
+    {
+      "file": "/private/tmp/phase5_merged_hint_diagnostics60_source_v2_20261016/pure_suite60_readback_v1/merged-hint-codec-tests/full-successful-24-roster/actual_task_errors.bin",
+      "codec": "RAW_V1",
+      "stored_bytes": 94,
+      "stored_sha256": "22812f2b5505fa14f9ac07105ea38bd9607693564b0f919a3e02a509f5018be7",
+      "raw_bytes": 94,
+      "raw_sha256": "22812f2b5505fa14f9ac07105ea38bd9607693564b0f919a3e02a509f5018be7",
+      "source_complete": true,
+      "closed_raw_prefix_valid": true,
+      "scope": "source complete is separate from successful gzip prefix reconstruction; no Model/native/mathematical acceptance"
+    },
+    {
+      "file": "/private/tmp/phase5_merged_hint_diagnostics60_source_v2_20261016/pure_suite60_readback_v1/merged-hint-codec-tests/full-successful-24-roster/observation_after.bin",
+      "codec": "RAW_V1",
+      "stored_bytes": 94,
+      "stored_sha256": "22812f2b5505fa14f9ac07105ea38bd9607693564b0f919a3e02a509f5018be7",
+      "raw_bytes": 94,
+      "raw_sha256": "22812f2b5505fa14f9ac07105ea38bd9607693564b0f919a3e02a509f5018be7",
+      "source_complete": true,
+      "closed_raw_prefix_valid": true,
+      "scope": "source complete is separate from successful gzip prefix reconstruction; no Model/native/mathematical acceptance"
+    },
+    {
+      "file": "/private/tmp/phase5_merged_hint_diagnostics60_source_v2_20261016/pure_suite60_readback_v1/merged-hint-codec-tests/full-successful-24-roster/fine_timing.bin",
+      "codec": "RAW_V1",
+      "stored_bytes": 94,
+      "stored_sha256": "22812f2b5505fa14f9ac07105ea38bd9607693564b0f919a3e02a509f5018be7",
+      "raw_bytes": 94,
+      "raw_sha256": "22812f2b5505fa14f9ac07105ea38bd9607693564b0f919a3e02a509f5018be7",
+      "source_complete": true,
+      "closed_raw_prefix_valid": true,
+      "scope": "source complete is separate from successful gzip prefix reconstruction; no Model/native/mathematical acceptance"
+    },
+    {
+      "file": "/private/tmp/phase5_merged_hint_diagnostics60_source_v2_20261016/pure_suite60_readback_v1/merged-hint-codec-tests/full-successful-24-roster/cycle_timing.bin",
+      "codec": "RAW_V1",
+      "stored_bytes": 94,
+      "stored_sha256": "22812f2b5505fa14f9ac07105ea38bd9607693564b0f919a3e02a509f5018be7",
+      "raw_bytes": 94,
+      "raw_sha256": "22812f2b5505fa14f9ac07105ea38bd9607693564b0f919a3e02a509f5018be7",
+      "source_complete": true,
+      "closed_raw_prefix_valid": true,
+      "scope": "source complete is separate from successful gzip prefix reconstruction; no Model/native/mathematical acceptance"
+    }
+  ],
+  "retained_reader_error": "Initial audit script used an invalid Python keyword starting25th, SyntaxError before imports/reads/writes. Corrected identifier only; no test, capture or native rerun.",
+  "scope": "Synthetic output-count integration and complete codec data only; original24 cap/reader retained. No Model/physicalC/stop/task/phase acceptance. Scalar records are not full eligible-working-set proof."
+}

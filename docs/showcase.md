@@ -6,6 +6,14 @@ These assets illustrate the stated scope and do not establish final research
 performance or physical hardware safety.
 
 
+## Actual59 output refusal and pure60 integration repair
+
+![Actual59 and pure60 output slots](../figures/phase5_output_roster59_60_20261016.png)
+
+[SVG](../figures/phase5_output_roster59_60_20261016.svg), [counts CSV](../figures/phase5_output_roster59_60_20261016.csv), [source/output hashes](../figures/phase5_output_roster59_60_20261016.json), [review and limits](../reviews/evidence/phase5_merged_diagnostics60_prepared_v2_20261016/README.md).
+
+Actual59 writes24 binary files after its first C, then refuses the25th cycle-timing output. Pure60 keeps24 slots by merging all rank/chosen diagnostics and includes final cycle timing. The refused slot is explicitly shown; pure slots contain dummy test data. This illustrates a verified output-integration repair, with no new Model/C execution, successful stop, task video or phase acceptance implied. Both actual59 and the failed first60 compiler version remain preserved.
+
 ## Actual58 braking prefix and crossed initializer blockage
 
 ![Every actual58 braking observation](../figures/phase5_stop58_actual_braking_20261016.png)

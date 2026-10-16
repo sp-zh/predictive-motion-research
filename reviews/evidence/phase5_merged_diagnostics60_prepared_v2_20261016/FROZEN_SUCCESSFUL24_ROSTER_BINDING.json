@@ -1,0 +1,36 @@
+{
+  "source_packet_READY_sha256": "80afd6ecffd138417a78ea1fab50ccc19663e7f8e2d88c04132c4dfbe52cb7ba",
+  "source_manifest": "/private/tmp/phase5_controlled_stop_global_interval_terminal58_v1_20261016/actual-dell/session-controlled-stop-global-interval-active32-brake64-dwell25-v1-20261016-attempt58/run-attempt1/artifacts/cycle-0/trial-0/MANIFEST.yaml",
+  "source_manifest_identity": {
+    "path": "actual-dell/session-controlled-stop-global-interval-active32-brake64-dwell25-v1-20261016-attempt58/run-attempt1/artifacts/cycle-0/trial-0/MANIFEST.yaml",
+    "bytes": 14405,
+    "sha256": "f398787ea00a8350056196898b5292b736071e4d0eeb164b3a93c2d8f8919525"
+  },
+  "ordered_binary_names": [
+    "observation_before.bin",
+    "original_nominal.bin",
+    "stop_objective_mode.bin",
+    "nominal_geometry_rows.bin",
+    "inline_qp.bin",
+    "working_face_basis_trace.bin",
+    "current_numeric_hint.bin",
+    "hint_boundary_events.bin",
+    "hint_kkt_rank_events.bin",
+    "candidate.bin",
+    "solver_row_screen.bin",
+    "qp_equality_reduction.bin",
+    "planning_guard.bin",
+    "planning_progress_interior_guard.bin",
+    "numeric_feasible_initializer.bin",
+    "candidate_value.bin",
+    "candidate_validation.bin",
+    "validation_initial.bin",
+    "commit_journal_receipt.bin",
+    "actual_commit.bin",
+    "actual_task_errors.bin",
+    "observation_after.bin",
+    "fine_timing.bin",
+    "cycle_timing.bin"
+  ],
+  "scope": "Actual58 successful-C old24-file roster, used for synthetic Evidence/output-count integration regression only. No new Model/physical claims."
+}

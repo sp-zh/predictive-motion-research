@@ -1,0 +1,12 @@
+{
+  "schema": "ROOT60_V1_GENERATOR_LITERAL_COMPILE_CAUSE_REVIEW_V1",
+  "first35_compile_exit0": true,
+  "unit36_exit": 1,
+  "before_after_inputs_byte_equal": true,
+  "frozen_bad_test_bound_to_actual_compiler_input": true,
+  "failed_test_sha256": "0a79e547a6003adda30925d3dd3b199e3574787081bd4f09005f7ff817d9ffc4",
+  "runtime_invocations": 0,
+  "entry_and_native_run_absent": true,
+  "cause": "Global ROSTER replacement inserted quoted24name array into C++ role/stage string literals as well as intended initializer. Newv2 changes only those two test literals and manifest, with fresh profile/session; no mathematical/native source changes.",
+  "scope": "Preserved compiler failure. Not36passed, no native60v1, no rerun59. v2 compile and regression outcomes require separate records."
+}

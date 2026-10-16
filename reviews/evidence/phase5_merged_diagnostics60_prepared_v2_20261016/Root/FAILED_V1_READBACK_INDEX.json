@@ -1,0 +1,37 @@
+{
+  "schema": "ROOT60_V1_REAL_COMPILER_FAILURE_PRESERVED_V1",
+  "remote": "/home/codextransfer/predictive_motion/results/phase5/session-controlled-stop-merged-hint-diag-active32-brake64-dwell25-v1-20261016-attempt60",
+  "entry_exists": false,
+  "native_run_exists": false,
+  "files": {
+    "BUILD_FAILURE.json": {
+      "bytes": 211007,
+      "sha256": "202f5362b4da46723ec859c8c14380dad3d2a9bc94110972a022e3c525af57f0"
+    },
+    "BATCH_PREFIX.json": {
+      "bytes": 210951,
+      "sha256": "ab4f09f3e11f72a0c08649d267df486b2a2e54f36b6444e2724511871925969f"
+    },
+    "compile-36.result.json": {
+      "bytes": 5347,
+      "sha256": "1c66f7d85d4cf6a61e3bc0fc1306694809090be72c18edf943504ee9a7e00f8e"
+    },
+    "compile-36.stderr": {
+      "bytes": 6126,
+      "sha256": "20dff235d35cd6f2a1a2a72427e7504be997ad4b58f47dcec706931990526a30"
+    },
+    "compile-36.stdout": {
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    "BEFORE_INPUT_IDENTITIES.json": {
+      "bytes": 44914,
+      "sha256": "a15fd3ae781c625e87a80ba57edf19d40553c7947ee5be1cf183e2cbf61f58dd"
+    },
+    "AFTER_INPUT_IDENTITIES.json": {
+      "bytes": 44914,
+      "sha256": "a15fd3ae781c625e87a80ba57edf19d40553c7947ee5be1cf183e2cbf61f58dd"
+    }
+  },
+  "scope": "Failed36th test compilation from bad generator, not native simulation. Frozen v1 source and every available original build failure file retained; newv2 target is separate, no consumed59 replay."
+}
