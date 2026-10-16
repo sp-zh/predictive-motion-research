@@ -1,0 +1,21 @@
+{
+  "schema": "SOURCE63_PRECOMPILE_SCOPE_IDENTITY_REVIEW_V1",
+  "unchanged_original_payload_count": 88,
+  "changed_existing": [
+    "README.md",
+    "active_first_cycle.cpp"
+  ],
+  "new_files": [
+    "braking_nominal63_codec.hpp",
+    "current_braking_nominal63.hpp",
+    "current_braking_nominal63_tests.cpp"
+  ],
+  "all93_identity_matches": true,
+  "old62_helper_codec_tests_and_known_fixture_qualification_retained": true,
+  "profile_original62_equal_except_session_new_policy_key": true,
+  "all_original_implementation_model_SI_solver_B_C_stop_headers_unchanged": true,
+  "family_bound": 1080,
+  "codec_payload_bound": 109056,
+  "native63_not_entered": true,
+  "scope": "Static source/profile identity and bounded parser syntax only; native compile/regression/Model/physical results not inferred."
+}

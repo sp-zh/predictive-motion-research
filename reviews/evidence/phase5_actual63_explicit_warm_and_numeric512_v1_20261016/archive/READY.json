@@ -1,0 +1,68 @@
+{
+  "schema": "COMPLETE63_DELL_C_ARCHIVE_READY_V1",
+  "utc": "2026-10-16T20:08:59.465796+00:00",
+  "archive_path": "/home/codextransfer/predictive_motion/transfer/cold-archives/native63-complete-20261016-v2/complete63.tar.gz",
+  "bytes": 2068830601,
+  "sha256": "387b5ac46e9667c75aa670072177b8522529a2300b90ddd6113c174ebeeba2bd",
+  "source_manifest": {
+    "bytes": 659568,
+    "sha256": "bc01159c80f5d6997a3a781d62ca009c4a5fa4a6e0f043e1ab08608ab86c44bb"
+  },
+  "codec_report": {
+    "bytes": 1987863,
+    "sha256": "62cd54af08cb0815bd0fbb1d7be91ca15a507e9286ee35a0d4104c470a52a978"
+  },
+  "payload_count": 3247,
+  "payload_bytes": 2122700033,
+  "members_verified": 3252,
+  "full_member_bytes_verified": 2125367426,
+  "outer_tar_raw_bytes": 2131015680,
+  "full_gzip_crc_singleEOF_no_trailing": true,
+  "native_before_after_inputs_equal": true,
+  "actual_volumes_before": [
+    {
+      "DeviceID": "C:",
+      "FreeSpace": 98074947584,
+      "Size": 488030334976
+    },
+    {
+      "DeviceID": "D:",
+      "FreeSpace": 87908872192,
+      "Size": 512098299904
+    }
+  ],
+  "actual_volumes_after": [
+    {
+      "DeviceID": "C:",
+      "FreeSpace": 95994503168,
+      "Size": 488030334976
+    },
+    {
+      "DeviceID": "D:",
+      "FreeSpace": 87908872192,
+      "Size": 512098299904
+    }
+  ],
+  "wall_seconds": 64.25019562301168,
+  "preserved_prior_failed_archive": {
+    "prior_directory": "/home/codextransfer/predictive_motion/transfer/cold-archives/native63-complete-20261016-v1",
+    "part": "/home/codextransfer/predictive_motion/transfer/cold-archives/native63-complete-20261016-v1/complete63.tar.gz.part",
+    "part_bytes": 2068821595,
+    "part_sha256": "dad36741dfbce7e7e320fa8b9c98fe4b3b812c70b6e6a42726a533b20180b765",
+    "failure": {
+      "error": "FileNotFoundError(2, 'No such file or directory')",
+      "traceback": "Traceback (most recent call last):\n  File \"/home/codextransfer/predictive_motion/transfer/cold-archives/native63-complete-20261016-v1/archive63_complete_producer_v2.py\", line 57, in <module>\n    for name in ['SOURCE_MANIFEST.json','FULL_NATIVE_CODEC_READBACK.json','archive63_complete_producer_v1.py','strict_codec_reader.py']:t.add(P/name,arcname=name,recursive=False)\n                                                                                                                                        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/usr/lib/python3.12/tarfile.py\", line 2244, in add\n    tarinfo = self.gettarinfo(name, arcname)\n              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/usr/lib/python3.12/tarfile.py\", line 2117, in gettarinfo\n    statres = os.lstat(name)\n              ^^^^^^^^^^^^^^\nFileNotFoundError: [Errno 2] No such file or directory: '/home/codextransfer/predictive_motion/transfer/cold-archives/native63-complete-20261016-v1/archive63_complete_producer_v1.py'\n",
+      "utc": "2026-10-16T20:06:26.117200+00:00",
+      "wall_seconds": 52.82477292600379,
+      "partial_preserved": true,
+      "no_retry_or_overwrite": true
+    },
+    "aggregate_archive_cap": 9663676416,
+    "new_part_cap": 7594854821,
+    "qualification": "New finite archival repair after exact self-filename error; no overwrite/reuse of failedv1, no native63 repeat, oldpart remains charged to original9GiB aggregate. Gzip part not certified complete."
+  },
+  "archive_aggregate_current_bytes": 4137652196,
+  "archive_aggregate_cap": 9663676416,
+  "Mac_full_stream_readback": "PENDING",
+  "scope": "Complete stored native63 evidence and recoverable source/profile archive on DellC, source incomplete evidence retained. Same Dell C original+archive are not independent physical-device backups. Mac metadata/selected packet only. No Git/phase acceptance claim."
+}

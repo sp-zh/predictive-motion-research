@@ -1,0 +1,26 @@
+schema: ACTIVE_SESSION_EVIDENCE_MANIFEST_V1
+stage: SYNTHETIC1080_BOUND
+error: ""
+actual_boundary_unchanged: true
+output_bytes: 103761
+output_bytes_semantics: LOGICAL_RAW_CONSUMED_BINARY_EXCLUDES_MANIFEST
+core_data_only_execution_permission: false
+phase5: NOT_ACCEPTED
+phase6: NOT_STARTED
+files:
+  - file: stream.bin
+    role: SYNTHETIC1080_STORAGE_BOUND_NO_MODEL
+    bytes: 103761
+    sha256: d5f5eb441bae7db367d056ec443dc9d3fd53178888c5e08e2296be76fa8879a5
+    created: true
+    hash_valid: true
+    complete: true
+    error: ""
+    codec: RAW_V1
+    raw_bytes: 103761
+    raw_sha256: d5f5eb441bae7db367d056ec443dc9d3fd53178888c5e08e2296be76fa8879a5
+    storage_stream_complete: true
+    raw_hash_valid: true
+    compressor_input_hash_valid: true
+    zlib_allocation_peak: 0
+    raw_scope: RECONSTRUCTIBLE_RAW_PAYLOAD_OR_SOURCEFAILURE_PREFIX

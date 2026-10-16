@@ -1,0 +1,17 @@
+{
+  "prior_directory": "/home/codextransfer/predictive_motion/transfer/cold-archives/native63-complete-20261016-v1",
+  "part": "/home/codextransfer/predictive_motion/transfer/cold-archives/native63-complete-20261016-v1/complete63.tar.gz.part",
+  "part_bytes": 2068821595,
+  "part_sha256": "dad36741dfbce7e7e320fa8b9c98fe4b3b812c70b6e6a42726a533b20180b765",
+  "failure": {
+    "error": "FileNotFoundError(2, 'No such file or directory')",
+    "traceback": "Traceback (most recent call last):\n  File \"/home/codextransfer/predictive_motion/transfer/cold-archives/native63-complete-20261016-v1/archive63_complete_producer_v2.py\", line 57, in <module>\n    for name in ['SOURCE_MANIFEST.json','FULL_NATIVE_CODEC_READBACK.json','archive63_complete_producer_v1.py','strict_codec_reader.py']:t.add(P/name,arcname=name,recursive=False)\n                                                                                                                                        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/usr/lib/python3.12/tarfile.py\", line 2244, in add\n    tarinfo = self.gettarinfo(name, arcname)\n              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/usr/lib/python3.12/tarfile.py\", line 2117, in gettarinfo\n    statres = os.lstat(name)\n              ^^^^^^^^^^^^^^\nFileNotFoundError: [Errno 2] No such file or directory: '/home/codextransfer/predictive_motion/transfer/cold-archives/native63-complete-20261016-v1/archive63_complete_producer_v1.py'\n",
+    "utc": "2026-10-16T20:06:26.117200+00:00",
+    "wall_seconds": 52.82477292600379,
+    "partial_preserved": true,
+    "no_retry_or_overwrite": true
+  },
+  "aggregate_archive_cap": 9663676416,
+  "new_part_cap": 7594854821,
+  "qualification": "New finite archival repair after exact self-filename error; no overwrite/reuse of failedv1, no native63 repeat, oldpart remains charged to original9GiB aggregate. Gzip part not certified complete."
+}

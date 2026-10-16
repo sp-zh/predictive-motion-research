@@ -1,0 +1,26 @@
+schema: ACTIVE_SESSION_EVIDENCE_MANIFEST_V1
+stage: EXPECTED_ALL_ANALYTIC_AND_WARM_REFUSAL
+error: All155 original failures plus badwarm retained; no Model entered
+actual_boundary_unchanged: true
+output_bytes: 15443
+output_bytes_semantics: LOGICAL_RAW_CONSUMED_BINARY_EXCLUDES_MANIFEST
+core_data_only_execution_permission: false
+phase5: NOT_ACCEPTED
+phase6: NOT_STARTED
+files:
+  - file: stop_objective_mode.bin
+    role: STOP_COST_CURRENT_HISTORY_ANALYTIC_AND_EXPLICIT_WARM_NOMINAL_V4
+    bytes: 15443
+    sha256: e187b103d38e9235115c4023c79c4fa64780bd500131b03f70ccb9cc9ffd09fa
+    created: true
+    hash_valid: true
+    complete: false
+    error: finite133 joint or149 progress nominal families exhausted; all analytic and explicit warm-family failures retained
+    codec: RAW_V1
+    raw_bytes: 15443
+    raw_sha256: e187b103d38e9235115c4023c79c4fa64780bd500131b03f70ccb9cc9ffd09fa
+    storage_stream_complete: true
+    raw_hash_valid: true
+    compressor_input_hash_valid: true
+    zlib_allocation_peak: 0
+    raw_scope: RECONSTRUCTIBLE_RAW_PAYLOAD_OR_SOURCEFAILURE_PREFIX

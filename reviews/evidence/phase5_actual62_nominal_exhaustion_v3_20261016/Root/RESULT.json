@@ -1,0 +1,153 @@
+{
+  "schema": "ROOT62_ACTUAL_SELECTED_STOP_PREFIX_AND_FINITE_NOMINAL_EXHAUSTION_REVIEW_V1",
+  "payload_files": 743,
+  "payload_bytes": 70642957,
+  "all_native_selected_files_bound_to_independently_verified_full_archive": 743,
+  "all_binary_codec_streams": 168,
+  "source_complete_codecs": 167,
+  "closed_source_failure_prefixes": 1,
+  "before_after1731_inputs_byte_equal": true,
+  "entry": {
+    "stage": "CURRENT_HISTORY_GENUINE_BRAKING_NOMINAL_FAMILY",
+    "error": "finite132 joint or132plus16 progress nominal families exhausted; all failures retained, no inherited nominal fallback",
+    "boundary_unchanged": 0,
+    "session_termination": 1,
+    "session_error": "",
+    "native_termination": 1,
+    "native_error": "",
+    "wall_seconds": 320.52163418,
+    "physical_step_attempts": 1106,
+    "commits": 53
+  },
+  "task_halves": 106,
+  "task_duration_ms": 212,
+  "active_commands": 32,
+  "braking_commands": 21,
+  "whole_boundaries": 54,
+  "whole_4ms_misses": 54,
+  "last_whole": {
+    "cycle": 53,
+    "trials_entered": 1,
+    "physical_complete": 0,
+    "wall": 0.013599113,
+    "deadline_miss": 1,
+    "last_B_error": "",
+    "fatal_error": "finite132 joint or132plus16 progress nominal families exhausted; all failures retained, no inherited nominal fallback",
+    "trials_total": 89,
+    "forecasts": 176,
+    "steps": 106,
+    "commits": 53,
+    "scope": "Whole current cycle monotonic wall spans every rejected fresh trial and actual C with pertrial evidence/manifest; summary serialization excluded. Diagnostic4ms deadline threshold never shortened to last successful trial."
+  },
+  "all21_completed_brake_cycles_one_trial_no_Berror": true,
+  "stop": {
+    "records": 42,
+    "passed": 0,
+    "failed": 0,
+    "dwell": 0,
+    "required": 50,
+    "all_original_predicates_anchor_resets_recomputed": true,
+    "first": {
+      "global_half": 1065,
+      "time_s": 2.129999999999987,
+      "v": 0.0004805304806301491,
+      "a": 0.01142266826589504,
+      "w": 0.002238379854651317,
+      "alpha": 0.057702944332859,
+      "s": 0.0013111383870357486,
+      "r": 0.022439981579786956,
+      "b": 0.15294175393031864,
+      "below": 0,
+      "hold": 0,
+      "consecutive": 0,
+      "C_drift": 0.0,
+      "s_drift": 0.0
+    },
+    "last": {
+      "global_half": 1106,
+      "time_s": 2.211999999999978,
+      "v": 0.000556527517118633,
+      "a": 0.003466601055282189,
+      "w": 6.482110856734923e-06,
+      "alpha": 0.00027596551181962626,
+      "s": 0.003206298893294599,
+      "r": 0.018184565402328774,
+      "b": -0.246978246060531,
+      "below": 0,
+      "hold": 0,
+      "consecutive": 0,
+      "C_drift": 0.0,
+      "s_drift": 0.0
+    }
+  },
+  "actual_first32": {
+    "all24_receipts_complete": true,
+    "all_actual_nominal_controls_and_records_byte_values_equal_exact_history_pure": true,
+    "replay": {
+      "attempts": 156,
+      "counts_per_channel": [
+        2,
+        4,
+        4,
+        4,
+        2,
+        4,
+        3,
+        133
+      ],
+      "successful_channels": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7
+      ],
+      "every_rejected_reason_location_and_observed_bound_recomputed": true,
+      "scope": "Independent scalar recurrence/family+codec review only; no Model/native/SI/nonlinear/B/C/physical stop acceptance."
+    }
+  },
+  "failure53": {
+    "channel": 7,
+    "r": 0.018184565402328774,
+    "previous_b": -0.246978246060531,
+    "s": 0.003206298893294599,
+    "all155_records_recomputed": {
+      "attempts": 155,
+      "counts_per_channel": [
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        148
+      ],
+      "successful_channels": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        6
+      ],
+      "every_rejected_reason_location_and_observed_bound_recomputed": true,
+      "scope": "Independent scalar recurrence/family+codec review only; no Model/native/SI/nonlinear/B/C/physical stop acceptance."
+    },
+    "rejection_reasons": {
+      "2": 31,
+      "3": 98,
+      "6": 6,
+      "10": 1,
+      "9": 12
+    },
+    "source_complete": false,
+    "terminal_unavailable": true,
+    "no_new_Model_QP_nativeSolver_B_or_C": true
+  },
+  "scope": "Genuine first21 braking commits and preserved next nominal-generator failure. Not successful stopping/full task/realtime/phase acceptance. Source-failure prefix remains incomplete; full archive checks separate. Fresh online functional repair may continue after preserving this cause, no62 retry/extension or offline relabel."
+}

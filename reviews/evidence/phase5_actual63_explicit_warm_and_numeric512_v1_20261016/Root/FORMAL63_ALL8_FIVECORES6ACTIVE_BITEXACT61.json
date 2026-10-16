@@ -1,0 +1,18 @@
+{
+  "schema": "ROOT63V4_ALL_OLD_NUMERIC_CORES_BYTEEXACT61_V1",
+  "root_reader_qualification": "Initial retained formal-only audit omitted m60 module alias in globals; NameError before any report write. Corrected reader alias only, no helper/Model/native/capture repeated.",
+  "eight_stop_cases": [
+    "actual56_48_1",
+    "old52_40_0",
+    "old53_40_1",
+    "old54_43_0",
+    "old55_40_2",
+    "actual58_54_0",
+    "actual58_74_0",
+    "actual60_43_0"
+  ],
+  "all_five_core_files_equal": true,
+  "six_active_entire_core_equal": true,
+  "original_saved_row_primal_1e12_and_stationarity_1e10_gates_verified": true,
+  "scope": "Old fixed QP regression and original merged diagnostics only. Current-history nominal changes future matrices; this does not prove new Model/B/C/physical stopping."
+}

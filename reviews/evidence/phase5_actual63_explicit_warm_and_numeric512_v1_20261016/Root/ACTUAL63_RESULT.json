@@ -1,0 +1,170 @@
+{
+  "schema": "ROOT63_ACTUAL_SELECTED_COMPLETE_CODEC_WARM53_AND_NUMERIC512_FAILURE_REVIEW_V1",
+  "payload_files": 902,
+  "payload_bytes": 92107973,
+  "all_native_selected_files_bound_to_independently_verified_full_archive": 902,
+  "all_binary_codec_streams": 297,
+  "source_complete_codecs": 297,
+  "closed_source_failure_prefixes": 0,
+  "before_after1734_inputs_byte_equal": true,
+  "entry": {
+    "stage": "FRESH_CURRENT_MATRIX_HINT_AND_NATIVE_SOLVER",
+    "error": "current numeric iteration cap512",
+    "boundary_unchanged": 0,
+    "session_termination": 1,
+    "session_error": "",
+    "native_termination": 1,
+    "native_error": "",
+    "wall_seconds": 366.35890854,
+    "physical_step_attempts": 1126,
+    "commits": 63
+  },
+  "task_halves": 126,
+  "task_duration_ms": 252,
+  "active_commands": 32,
+  "braking_commands": 31,
+  "whole_boundaries": 64,
+  "whole_4ms_misses": 64,
+  "last_whole": {
+    "cycle": 63,
+    "trials_entered": 1,
+    "physical_complete": 0,
+    "wall": 4.136044616,
+    "deadline_miss": 1,
+    "last_B_error": "",
+    "fatal_error": "current numeric iteration cap512",
+    "trials_total": 99,
+    "forecasts": 197,
+    "steps": 126,
+    "commits": 63,
+    "scope": "Whole current cycle monotonic wall spans every rejected fresh trial and actual C with pertrial evidence/manifest; summary serialization excluded. Diagnostic4ms deadline threshold never shortened to last successful trial."
+  },
+  "all31_completed_brake_cycles_one_trial_no_Berror": true,
+  "stop": {
+    "records": 62,
+    "passed": 0,
+    "failed": 0,
+    "dwell": 0,
+    "required": 50,
+    "all_original_predicates_recomputed": true,
+    "first": {
+      "global_half": 1065,
+      "time_s": 2.129999999999987,
+      "v": 0.0004805304806301491,
+      "a": 0.01142266826589504,
+      "w": 0.002238379854651317,
+      "alpha": 0.057702944332859,
+      "s": 0.0013111383870357486,
+      "r": 0.022439981579786956,
+      "b": 0.15294175393031864,
+      "below": 0,
+      "hold": 0,
+      "consecutive": 0,
+      "C_drift": 0.0,
+      "s_drift": 0.0
+    },
+    "last": {
+      "global_half": 1126,
+      "time_s": 2.2519999999999736,
+      "v": 0.00042920406504155036,
+      "a": 0.0028654388034389045,
+      "w": 6.482124271290459e-06,
+      "alpha": 0.00011681478437284869,
+      "s": 0.0037460114392991674,
+      "r": 0.009169910594078285,
+      "b": -0.1997164620169134,
+      "below": 0,
+      "hold": 0,
+      "consecutive": 0,
+      "C_drift": 0.0,
+      "s_drift": 0.0
+    }
+  },
+  "first32": {
+    "attempts": 156,
+    "counts_per_channel": [
+      2,
+      4,
+      4,
+      4,
+      2,
+      4,
+      3,
+      133
+    ],
+    "successful_channels": [
+      0,
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7
+    ],
+    "every_rejected_reason_location_and_observed_bound_recomputed": true,
+    "scope": "Independent scalar recurrence/family+codec review only; no Model/native/SI/nonlinear/B/C/physical stop acceptance."
+  },
+  "warm53": {
+    "attempts": 156,
+    "counts_per_channel": [
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      149
+    ],
+    "successful_channels": [
+      0,
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7
+    ],
+    "every_rejected_reason_location_and_observed_bound_recomputed": true,
+    "scope": "Independent scalar recurrence/family+codec review only; no Model/native/SI/nonlinear/B/C/physical stop acceptance.",
+    "previous_candidate_file_sha256": "478a58ca7b5bb2445a9f19c6a8c12bdccb20523250ca59ad37417e366f2114db",
+    "previous_accepted_cycle": 52,
+    "warm_progress_terminal_rate": 1.0000511822943026e-13,
+    "all_original_scalar_constraints_replayed": true
+  },
+  "last63_nominal": {
+    "attempts": 59,
+    "counts_per_channel": [
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      52
+    ],
+    "successful_channels": [
+      0,
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7
+    ],
+    "every_rejected_reason_location_and_observed_bound_recomputed": true,
+    "scope": "Independent scalar recurrence/family+codec review only; no Model/native/SI/nonlinear/B/C/physical stop acceptance."
+  },
+  "last63_hint": {
+    "rank_events": 509,
+    "negative_leaving_events": 226,
+    "exact_two_cycle_eligible": false,
+    "eligible_rows": 0,
+    "no_native_SOLVED_B_or_C_at_failed_current": true
+  },
+  "scope": "Online63 crosses old62 failure at53 with explicit current-history shifted warm family, then fails512 numeric hint at63. Full63 original warm record extracted from independently copied archive, never inferred from final controls. Recorded previous52 candidate was a one-trial committed cycle; no prior execution owner/permission transferred. Scalar and stored-data review does not independently reprove every Model/geometric/nonlinear/B/C gate. No successful stop/task/realtime/phase acceptance; no63 replay/extension."
+}

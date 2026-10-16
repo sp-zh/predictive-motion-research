@@ -1,5 +1,10 @@
 # Project backup
 
+## Complete62/63 stored-evidence copies
+
+[Actual62](../reviews/evidence/phase5_actual62_nominal_exhaustion_v3_20261016/README.md) and [actual63](../reviews/evidence/phase5_actual63_explicit_warm_and_numeric512_v1_20261016/README.md) now have independent physical Mac/Dell archives with full member/inner-codec/outerCRC and fsynced Mac whole-file reopenSHA/CRC checks.62:1,841,047,157B SHA051259984fe17c724aab8fcd633927f5eda2036311b4096c6dd574a59d4da98d;63:2,068,830,601B SHA387b5ac46e9667c75aa670072177b8522529a2300b90ddd6113c174ebeeba2bd.63 failedv1 part2,068,821,595B remains readonly/charged to original9GiB aggregate. Original source-failure62 prefix remains incomplete; backups do not make stopping pass. Frozen source/profile/ELF included, dependency/build caches excluded. Older53–57 gaps and no standalone environment restoration remain. Public small source/report/figure checkpoint requires separately verified remote SHA.
+
+
 GitHub repository: https://github.com/sp-zh/predictive-motion-research
 
 Visibility: **Public**, independently verified on 2026-10-08 after the human explicitly instructed “改回public” in the communication-check chat. Earlier private-backup records retain their historical wording. Credentials and local caches remain excluded.

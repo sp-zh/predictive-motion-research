@@ -1,0 +1,2402 @@
+{
+  "records": [
+    {
+      "kind": "compile",
+      "index": 1,
+      "argv": [
+        "/usr/bin/x86_64-linux-gnu-g++-13",
+        "/home/codextransfer/predictive_motion/results/phase5/session-controlled-stop-explicit-warm-nominal-active32-brake64-dwell25-v1-20261016-attempt63/build-attempt1/unit-1.o",
+        "/home/codextransfer/predictive_motion/results/phase5/session-controlled-stop-explicit-warm-nominal-active32-brake64-dwell25-v1-20261016-attempt63/build-attempt1/unit-2.o",
+        "/home/codextransfer/predictive_motion/results/phase5/session-controlled-stop-explicit-warm-nominal-active32-brake64-dwell25-v1-20261016-attempt63/build-attempt1/unit-3.o",
+        "/home/codextransfer/predictive_motion/results/phase5/session-controlled-stop-explicit-warm-nominal-active32-brake64-dwell25-v1-20261016-attempt63/build-attempt1/unit-4.o",
+        "/home/codextransfer/predictive_motion/results/phase5/session-controlled-stop-explicit-warm-nominal-active32-brake64-dwell25-v1-20261016-attempt63/build-attempt1/unit-5.o",
+        "/home/codextransfer/predictive_motion/results/phase5/session-controlled-stop-explicit-warm-nominal-active32-brake64-dwell25-v1-20261016-attempt63/build-attempt1/unit-6.o",
+        "/home/codextransfer/predictive_motion/results/phase5/session-controlled-stop-explicit-warm-nominal-active32-brake64-dwell25-v1-20261016-attempt63/build-attempt1/unit-7.o",
+        "/home/codextransfer/predictive_motion/results/phase5/session-controlled-stop-explicit-warm-nominal-active32-brake64-dwell25-v1-20261016-attempt63/build-attempt1/unit-9.o",
+        "/home/codextransfer/predictive_motion/results/phase5/session-controlled-stop-explicit-warm-nominal-active32-brake64-dwell25-v1-20261016-attempt63/build-attempt1/unit-8.o",
+        "/home/codextransfer/predictive_motion/results/phase5/session-task-start-a-primaldual-v2-20261010-attempt5/build-attempt1/unit-9.o",
+        "/home/codextransfer/predictive_motion/results/phase5/integrated-first-cycle-v1-20261010/build-attempt1/unit-7.o",
+        "-Wl,--start-group",
+        "/home/codextransfer/predictive_motion/install/predictive_motion_kinematics/lib/librobot_kinematics.a",
+        "/home/codextransfer/predictive_motion/.vendor/osqp-1.0.0-install/lib/libosqpstatic.a",
+        "/home/codextransfer/predictive_motion/results/phase5/repaired-source-configure-only-after-v4-20261009/attempt1/build/inventory-source/input-source/cost-source/affine-source/normalized-source/model-boundary/live-foundation/libpublic_live_affine_v2_foundation.a",
+        "/home/codextransfer/predictive_motion/results/phase5/repaired-source-configure-only-after-v4-20261009/attempt1/build/inventory-source/input-source/cost-source/affine-source/normalized-source/model-boundary/frozen-extension/libpublic_coupled_augmented_extension.a",
+        "/home/codextransfer/predictive_motion/results/phase5/repaired-source-configure-only-after-v4-20261009/attempt1/build/inventory-source/input-source/cost-source/affine-source/normalized-source/model-boundary/frozen-extension/libfrozen_augmented_extension_value.a",
+        "/home/codextransfer/predictive_motion/results/phase5/repaired-source-configure-only-after-v4-20261009/attempt1/build/inventory-source/input-source/cost-source/affine-source/normalized-source/model-boundary/frozen-extension/physical-derivative/libpublic_coupled_derivative_model.a",
+        "/home/codextransfer/predictive_motion/results/phase5/repaired-source-configure-only-after-v4-20261009/attempt1/build/inventory-source/input-source/cost-source/affine-source/normalized-source/model-boundary/frozen-extension/physical-derivative/base-v2/libpublic_coupled_model_v2.a",
+        "-Wl,--end-group",
+        "/home/codextransfer/predictive_motion/.vendor/mujoco-3.3.7/lib/libmujoco.so",
+        "/usr/lib/x86_64-linux-gnu/libcrypto.so",
+        "/usr/lib/x86_64-linux-gnu/libyaml-cpp.so",
+        "/opt/ros/jazzy/lib/x86_64-linux-gnu/libpinocchio_default.so.4.1.0",
+        "/opt/ros/jazzy/lib/x86_64-linux-gnu/libpinocchio_collision.so.4.1.0",
+        "/opt/ros/jazzy/lib/x86_64-linux-gnu/libpinocchio_parsers.so.4.1.0",
+        "/usr/lib/x86_64-linux-gnu/libboost_serialization.so.1.83.0",
+        "/usr/lib/x86_64-linux-gnu/libboost_filesystem.so.1.83.0",
+        "/opt/ros/jazzy/lib/x86_64-linux-gnu/libcoal.so.3.0.3",
+        "-ldl",
+        "-pthread",
+        "-Wl,--disable-new-dtags",
+        "-Wl,-rpath,/home/codextransfer/predictive_motion/.vendor/mujoco-3.3.7/lib:/opt/ros/jazzy/lib/x86_64-linux-gnu:/opt/ros/jazzy/lib:/usr/lib/x86_64-linux-gnu",
+        "-lz",
+        "-Wl,-Map,/home/codextransfer/predictive_motion/results/phase5/session-controlled-stop-explicit-warm-nominal-active32-brake64-dwell25-v1-20261016-attempt63/link-attempt1/active_first_cycle.map",
+        "-o",
+        "/home/codextransfer/predictive_motion/results/phase5/session-controlled-stop-explicit-warm-nominal-active32-brake64-dwell25-v1-20261016-attempt63/link-attempt1/active_first_cycle"
+      ],
+      "stage": "CHILD_EXIT_REAPED",
+      "actual_project_tool_entry": "Popen started; exit retained, compiler/link success only if exit0",
+      "exit": 0,
+      "first_error": null,
+      "applied_limits": {
+        "CPU": {
+          "inherited_soft": -1,
+          "inherited_hard": -1,
+          "applied_soft": 120,
+          "applied_hard": 120
+        },
+        "AS": {
+          "inherited_soft": -1,
+          "inherited_hard": -1,
+          "applied_soft": 2147483648,
+          "applied_hard": 2147483648
+        },
+        "CORE": {
+          "inherited_soft": 0,
+          "inherited_hard": -1,
+          "applied_soft": 0,
+          "applied_hard": 0
+        },
+        "FSIZE": {
+          "inherited_soft": -1,
+          "inherited_hard": -1,
+          "applied_soft": 268435456,
+          "applied_hard": 268435456
+        },
+        "NOFILE": {
+          "inherited_soft": 1024,
+          "inherited_hard": 1048576,
+          "applied_soft": 64,
+          "applied_hard": 64
+        },
+        "NPROC": {
+          "inherited_soft": 63295,
+          "inherited_hard": 63295,
+          "applied_soft": 32,
+          "applied_hard": 32
+        }
+      },
+      "observed_stream_bytes": {
+        "stdout": 0,
+        "stderr": 0
+      },
+      "stop_reason": null,
+      "wall_seconds": 0.3622499019984389
+    },
+    {
+      "kind": "compile",
+      "index": 2,
+      "argv": [
+        "/usr/bin/x86_64-linux-gnu-g++-13",
+        "/home/codextransfer/predictive_motion/results/phase5/session-controlled-stop-explicit-warm-nominal-active32-brake64-dwell25-v1-20261016-attempt63/build-attempt1/unit-12.o",
+        "-Wl,--start-group",
+        "/home/codextransfer/predictive_motion/install/predictive_motion_kinematics/lib/librobot_kinematics.a",
+        "/home/codextransfer/predictive_motion/.vendor/osqp-1.0.0-install/lib/libosqpstatic.a",
+        "/home/codextransfer/predictive_motion/results/phase5/repaired-source-configure-only-after-v4-20261009/attempt1/build/inventory-source/input-source/cost-source/affine-source/normalized-source/model-boundary/live-foundation/libpublic_live_affine_v2_foundation.a",
+        "/home/codextransfer/predictive_motion/results/phase5/repaired-source-configure-only-after-v4-20261009/attempt1/build/inventory-source/input-source/cost-source/affine-source/normalized-source/model-boundary/frozen-extension/libpublic_coupled_augmented_extension.a",
+        "/home/codextransfer/predictive_motion/results/phase5/repaired-source-configure-only-after-v4-20261009/attempt1/build/inventory-source/input-source/cost-source/affine-source/normalized-source/model-boundary/frozen-extension/libfrozen_augmented_extension_value.a",
+        "/home/codextransfer/predictive_motion/results/phase5/repaired-source-configure-only-after-v4-20261009/attempt1/build/inventory-source/input-source/cost-source/affine-source/normalized-source/model-boundary/frozen-extension/physical-derivative/libpublic_coupled_derivative_model.a",
+        "/home/codextransfer/predictive_motion/results/phase5/repaired-source-configure-only-after-v4-20261009/attempt1/build/inventory-source/input-source/cost-source/affine-source/normalized-source/model-boundary/frozen-extension/physical-derivative/base-v2/libpublic_coupled_model_v2.a",
+        "-Wl,--end-group",
+        "/home/codextransfer/predictive_motion/.vendor/mujoco-3.3.7/lib/libmujoco.so",
+        "/usr/lib/x86_64-linux-gnu/libcrypto.so",
+        "/usr/lib/x86_64-linux-gnu/libyaml-cpp.so",
+        "/opt/ros/jazzy/lib/x86_64-linux-gnu/libpinocchio_default.so.4.1.0",
+        "/opt/ros/jazzy/lib/x86_64-linux-gnu/libpinocchio_collision.so.4.1.0",
+        "/opt/ros/jazzy/lib/x86_64-linux-gnu/libpinocchio_parsers.so.4.1.0",
+        "/usr/lib/x86_64-linux-gnu/libboost_serialization.so.1.83.0",
+        "/usr/lib/x86_64-linux-gnu/libboost_filesystem.so.1.83.0",
+        "/opt/ros/jazzy/lib/x86_64-linux-gnu/libcoal.so.3.0.3",
+        "-ldl",
+        "-pthread",
+        "-Wl,--disable-new-dtags",
+        "-Wl,-rpath,/home/codextransfer/predictive_motion/.vendor/mujoco-3.3.7/lib:/opt/ros/jazzy/lib/x86_64-linux-gnu:/opt/ros/jazzy/lib:/usr/lib/x86_64-linux-gnu",
+        "-lz",
+        "-Wl,-Map,/home/codextransfer/predictive_motion/results/phase5/session-controlled-stop-explicit-warm-nominal-active32-brake64-dwell25-v1-20261016-attempt63/link-attempt1/current_numeric_oracle.map",
+        "-o",
+        "/home/codextransfer/predictive_motion/results/phase5/session-controlled-stop-explicit-warm-nominal-active32-brake64-dwell25-v1-20261016-attempt63/link-attempt1/current_numeric_oracle"
+      ],
+      "stage": "CHILD_EXIT_REAPED",
+      "actual_project_tool_entry": "Popen started; exit retained, compiler/link success only if exit0",
+      "exit": 0,
+      "first_error": null,
+      "applied_limits": {
+        "CPU": {
+          "inherited_soft": -1,
+          "inherited_hard": -1,
+          "applied_soft": 120,
+          "applied_hard": 120
+        },
+        "AS": {
+          "inherited_soft": -1,
+          "inherited_hard": -1,
+          "applied_soft": 2147483648,
+          "applied_hard": 2147483648
+        },
+        "CORE": {
+          "inherited_soft": 0,
+          "inherited_hard": -1,
+          "applied_soft": 0,
+          "applied_hard": 0
+        },
+        "FSIZE": {
+          "inherited_soft": -1,
+          "inherited_hard": -1,
+          "applied_soft": 268435456,
+          "applied_hard": 268435456
+        },
+        "NOFILE": {
+          "inherited_soft": 1024,
+          "inherited_hard": 1048576,
+          "applied_soft": 64,
+          "applied_hard": 64
+        },
+        "NPROC": {
+          "inherited_soft": 63295,
+          "inherited_hard": 63295,
+          "applied_soft": 32,
+          "applied_hard": 32
+        }
+      },
+      "observed_stream_bytes": {
+        "stdout": 0,
+        "stderr": 0
+      },
+      "stop_reason": null,
+      "wall_seconds": 0.04560521799430717
+    },
+    {
+      "kind": "compile",
+      "index": 3,
+      "argv": [
+        "/usr/bin/x86_64-linux-gnu-g++-13",
+        "/home/codextransfer/predictive_motion/results/phase5/session-controlled-stop-explicit-warm-nominal-active32-brake64-dwell25-v1-20261016-attempt63/build-attempt1/unit-10.o",
+        "-Wl,--start-group",
+        "/home/codextransfer/predictive_motion/install/predictive_motion_kinematics/lib/librobot_kinematics.a",
+        "/home/codextransfer/predictive_motion/.vendor/osqp-1.0.0-install/lib/libosqpstatic.a",
+        "/home/codextransfer/predictive_motion/results/phase5/repaired-source-configure-only-after-v4-20261009/attempt1/build/inventory-source/input-source/cost-source/affine-source/normalized-source/model-boundary/live-foundation/libpublic_live_affine_v2_foundation.a",
+        "/home/codextransfer/predictive_motion/results/phase5/repaired-source-configure-only-after-v4-20261009/attempt1/build/inventory-source/input-source/cost-source/affine-source/normalized-source/model-boundary/frozen-extension/libpublic_coupled_augmented_extension.a",
+        "/home/codextransfer/predictive_motion/results/phase5/repaired-source-configure-only-after-v4-20261009/attempt1/build/inventory-source/input-source/cost-source/affine-source/normalized-source/model-boundary/frozen-extension/libfrozen_augmented_extension_value.a",
+        "/home/codextransfer/predictive_motion/results/phase5/repaired-source-configure-only-after-v4-20261009/attempt1/build/inventory-source/input-source/cost-source/affine-source/normalized-source/model-boundary/frozen-extension/physical-derivative/libpublic_coupled_derivative_model.a",
+        "/home/codextransfer/predictive_motion/results/phase5/repaired-source-configure-only-after-v4-20261009/attempt1/build/inventory-source/input-source/cost-source/affine-source/normalized-source/model-boundary/frozen-extension/physical-derivative/base-v2/libpublic_coupled_model_v2.a",
+        "-Wl,--end-group",
+        "/home/codextransfer/predictive_motion/.vendor/mujoco-3.3.7/lib/libmujoco.so",
+        "/usr/lib/x86_64-linux-gnu/libcrypto.so",
+        "/usr/lib/x86_64-linux-gnu/libyaml-cpp.so",
+        "/opt/ros/jazzy/lib/x86_64-linux-gnu/libpinocchio_default.so.4.1.0",
+        "/opt/ros/jazzy/lib/x86_64-linux-gnu/libpinocchio_collision.so.4.1.0",
+        "/opt/ros/jazzy/lib/x86_64-linux-gnu/libpinocchio_parsers.so.4.1.0",
+        "/usr/lib/x86_64-linux-gnu/libboost_serialization.so.1.83.0",
+        "/usr/lib/x86_64-linux-gnu/libboost_filesystem.so.1.83.0",
+        "/opt/ros/jazzy/lib/x86_64-linux-gnu/libcoal.so.3.0.3",
+        "-ldl",
+        "-pthread",
+        "-Wl,--disable-new-dtags",
+        "-Wl,-rpath,/home/codextransfer/predictive_motion/.vendor/mujoco-3.3.7/lib:/opt/ros/jazzy/lib/x86_64-linux-gnu:/opt/ros/jazzy/lib:/usr/lib/x86_64-linux-gnu",
+        "-lz",
+        "-Wl,-Map,/home/codextransfer/predictive_motion/results/phase5/session-controlled-stop-explicit-warm-nominal-active32-brake64-dwell25-v1-20261016-attempt63/link-attempt1/cycle_support_tests.map",
+        "-o",
+        "/home/codextransfer/predictive_motion/results/phase5/session-controlled-stop-explicit-warm-nominal-active32-brake64-dwell25-v1-20261016-attempt63/link-attempt1/cycle_support_tests"
+      ],
+      "stage": "CHILD_EXIT_REAPED",
+      "actual_project_tool_entry": "Popen started; exit retained, compiler/link success only if exit0",
+      "exit": 0,
+      "first_error": null,
+      "applied_limits": {
+        "CPU": {
+          "inherited_soft": -1,
+          "inherited_hard": -1,
+          "applied_soft": 120,
+          "applied_hard": 120
+        },
+        "AS": {
+          "inherited_soft": -1,
+          "inherited_hard": -1,
+          "applied_soft": 2147483648,
+          "applied_hard": 2147483648
+        },
+        "CORE": {
+          "inherited_soft": 0,
+          "inherited_hard": -1,
+          "applied_soft": 0,
+          "applied_hard": 0
+        },
+        "FSIZE": {
+          "inherited_soft": -1,
+          "inherited_hard": -1,
+          "applied_soft": 268435456,
+          "applied_hard": 268435456
+        },
+        "NOFILE": {
+          "inherited_soft": 1024,
+          "inherited_hard": 1048576,
+          "applied_soft": 64,
+          "applied_hard": 64
+        },
+        "NPROC": {
+          "inherited_soft": 63295,
+          "inherited_hard": 63295,
+          "applied_soft": 32,
+          "applied_hard": 32
+        }
+      },
+      "observed_stream_bytes": {
+        "stdout": 0,
+        "stderr": 0
+      },
+      "stop_reason": null,
+      "wall_seconds": 0.04270361601084005
+    },
+    {
+      "kind": "compile",
+      "index": 4,
+      "argv": [
+        "/usr/bin/x86_64-linux-gnu-g++-13",
+        "/home/codextransfer/predictive_motion/results/phase5/session-controlled-stop-explicit-warm-nominal-active32-brake64-dwell25-v1-20261016-attempt63/build-attempt1/unit-16.o",
+        "-Wl,--start-group",
+        "/home/codextransfer/predictive_motion/install/predictive_motion_kinematics/lib/librobot_kinematics.a",
+        "/home/codextransfer/predictive_motion/.vendor/osqp-1.0.0-install/lib/libosqpstatic.a",
+        "/home/codextransfer/predictive_motion/results/phase5/repaired-source-configure-only-after-v4-20261009/attempt1/build/inventory-source/input-source/cost-source/affine-source/normalized-source/model-boundary/live-foundation/libpublic_live_affine_v2_foundation.a",
+        "/home/codextransfer/predictive_motion/results/phase5/repaired-source-configure-only-after-v4-20261009/attempt1/build/inventory-source/input-source/cost-source/affine-source/normalized-source/model-boundary/frozen-extension/libpublic_coupled_augmented_extension.a",
+        "/home/codextransfer/predictive_motion/results/phase5/repaired-source-configure-only-after-v4-20261009/attempt1/build/inventory-source/input-source/cost-source/affine-source/normalized-source/model-boundary/frozen-extension/libfrozen_augmented_extension_value.a",
+        "/home/codextransfer/predictive_motion/results/phase5/repaired-source-configure-only-after-v4-20261009/attempt1/build/inventory-source/input-source/cost-source/affine-source/normalized-source/model-boundary/frozen-extension/physical-derivative/libpublic_coupled_derivative_model.a",
+        "/home/codextransfer/predictive_motion/results/phase5/repaired-source-configure-only-after-v4-20261009/attempt1/build/inventory-source/input-source/cost-source/affine-source/normalized-source/model-boundary/frozen-extension/physical-derivative/base-v2/libpublic_coupled_model_v2.a",
+        "-Wl,--end-group",
+        "/home/codextransfer/predictive_motion/.vendor/mujoco-3.3.7/lib/libmujoco.so",
+        "/usr/lib/x86_64-linux-gnu/libcrypto.so",
+        "/usr/lib/x86_64-linux-gnu/libyaml-cpp.so",
+        "/opt/ros/jazzy/lib/x86_64-linux-gnu/libpinocchio_default.so.4.1.0",
+        "/opt/ros/jazzy/lib/x86_64-linux-gnu/libpinocchio_collision.so.4.1.0",
+        "/opt/ros/jazzy/lib/x86_64-linux-gnu/libpinocchio_parsers.so.4.1.0",
+        "/usr/lib/x86_64-linux-gnu/libboost_serialization.so.1.83.0",
+        "/usr/lib/x86_64-linux-gnu/libboost_filesystem.so.1.83.0",
+        "/opt/ros/jazzy/lib/x86_64-linux-gnu/libcoal.so.3.0.3",
+        "-ldl",
+        "-pthread",
+        "-Wl,--disable-new-dtags",
+        "-Wl,-rpath,/home/codextransfer/predictive_motion/.vendor/mujoco-3.3.7/lib:/opt/ros/jazzy/lib/x86_64-linux-gnu:/opt/ros/jazzy/lib:/usr/lib/x86_64-linux-gnu",
+        "-lz",
+        "-Wl,-Map,/home/codextransfer/predictive_motion/results/phase5/session-controlled-stop-explicit-warm-nominal-active32-brake64-dwell25-v1-20261016-attempt63/link-attempt1/fine_timing_tests.map",
+        "-o",
+        "/home/codextransfer/predictive_motion/results/phase5/session-controlled-stop-explicit-warm-nominal-active32-brake64-dwell25-v1-20261016-attempt63/link-attempt1/fine_timing_tests"
+      ],
+      "stage": "CHILD_EXIT_REAPED",
+      "actual_project_tool_entry": "Popen started; exit retained, compiler/link success only if exit0",
+      "exit": 0,
+      "first_error": null,
+      "applied_limits": {
+        "CPU": {
+          "inherited_soft": -1,
+          "inherited_hard": -1,
+          "applied_soft": 120,
+          "applied_hard": 120
+        },
+        "AS": {
+          "inherited_soft": -1,
+          "inherited_hard": -1,
+          "applied_soft": 2147483648,
+          "applied_hard": 2147483648
+        },
+        "CORE": {
+          "inherited_soft": 0,
+          "inherited_hard": -1,
+          "applied_soft": 0,
+          "applied_hard": 0
+        },
+        "FSIZE": {
+          "inherited_soft": -1,
+          "inherited_hard": -1,
+          "applied_soft": 268435456,
+          "applied_hard": 268435456
+        },
+        "NOFILE": {
+          "inherited_soft": 1024,
+          "inherited_hard": 1048576,
+          "applied_soft": 64,
+          "applied_hard": 64
+        },
+        "NPROC": {
+          "inherited_soft": 63295,
+          "inherited_hard": 63295,
+          "applied_soft": 32,
+          "applied_hard": 32
+        }
+      },
+      "observed_stream_bytes": {
+        "stdout": 0,
+        "stderr": 0
+      },
+      "stop_reason": null,
+      "wall_seconds": 0.041410646997974254
+    },
+    {
+      "kind": "compile",
+      "index": 5,
+      "argv": [
+        "/usr/bin/x86_64-linux-gnu-g++-13",
+        "/home/codextransfer/predictive_motion/results/phase5/session-controlled-stop-explicit-warm-nominal-active32-brake64-dwell25-v1-20261016-attempt63/build-attempt1/unit-17.o",
+        "/home/codextransfer/predictive_motion/results/phase5/session-controlled-stop-explicit-warm-nominal-active32-brake64-dwell25-v1-20261016-attempt63/build-attempt1/unit-1.o",
+        "/home/codextransfer/predictive_motion/results/phase5/session-controlled-stop-explicit-warm-nominal-active32-brake64-dwell25-v1-20261016-attempt63/build-attempt1/unit-2.o",
+        "/home/codextransfer/predictive_motion/results/phase5/session-controlled-stop-explicit-warm-nominal-active32-brake64-dwell25-v1-20261016-attempt63/build-attempt1/unit-3.o",
+        "/home/codextransfer/predictive_motion/results/phase5/session-controlled-stop-explicit-warm-nominal-active32-brake64-dwell25-v1-20261016-attempt63/build-attempt1/unit-4.o",
+        "/home/codextransfer/predictive_motion/results/phase5/session-controlled-stop-explicit-warm-nominal-active32-brake64-dwell25-v1-20261016-attempt63/build-attempt1/unit-5.o",
+        "/home/codextransfer/predictive_motion/results/phase5/session-controlled-stop-explicit-warm-nominal-active32-brake64-dwell25-v1-20261016-attempt63/build-attempt1/unit-6.o",
+        "/home/codextransfer/predictive_motion/results/phase5/session-controlled-stop-explicit-warm-nominal-active32-brake64-dwell25-v1-20261016-attempt63/build-attempt1/unit-7.o",
+        "/home/codextransfer/predictive_motion/results/phase5/session-controlled-stop-explicit-warm-nominal-active32-brake64-dwell25-v1-20261016-attempt63/build-attempt1/unit-9.o",
+        "/home/codextransfer/predictive_motion/results/phase5/session-task-start-a-primaldual-v2-20261010-attempt5/build-attempt1/unit-9.o",
+        "/home/codextransfer/predictive_motion/results/phase5/integrated-first-cycle-v1-20261010/build-attempt1/unit-7.o",
+        "-Wl,--start-group",
+        "/home/codextransfer/predictive_motion/install/predictive_motion_kinematics/lib/librobot_kinematics.a",
+        "/home/codextransfer/predictive_motion/.vendor/osqp-1.0.0-install/lib/libosqpstatic.a",
+        "/home/codextransfer/predictive_motion/results/phase5/repaired-source-configure-only-after-v4-20261009/attempt1/build/inventory-source/input-source/cost-source/affine-source/normalized-source/model-boundary/live-foundation/libpublic_live_affine_v2_foundation.a",
+        "/home/codextransfer/predictive_motion/results/phase5/repaired-source-configure-only-after-v4-20261009/attempt1/build/inventory-source/input-source/cost-source/affine-source/normalized-source/model-boundary/frozen-extension/libpublic_coupled_augmented_extension.a",
+        "/home/codextransfer/predictive_motion/results/phase5/repaired-source-configure-only-after-v4-20261009/attempt1/build/inventory-source/input-source/cost-source/affine-source/normalized-source/model-boundary/frozen-extension/libfrozen_augmented_extension_value.a",
+        "/home/codextransfer/predictive_motion/results/phase5/repaired-source-configure-only-after-v4-20261009/attempt1/build/inventory-source/input-source/cost-source/affine-source/normalized-source/model-boundary/frozen-extension/physical-derivative/libpublic_coupled_derivative_model.a",
+        "/home/codextransfer/predictive_motion/results/phase5/repaired-source-configure-only-after-v4-20261009/attempt1/build/inventory-source/input-source/cost-source/affine-source/normalized-source/model-boundary/frozen-extension/physical-derivative/base-v2/libpublic_coupled_model_v2.a",
+        "-Wl,--end-group",
+        "/home/codextransfer/predictive_motion/.vendor/mujoco-3.3.7/lib/libmujoco.so",
+        "/usr/lib/x86_64-linux-gnu/libcrypto.so",
+        "/usr/lib/x86_64-linux-gnu/libyaml-cpp.so",
+        "/opt/ros/jazzy/lib/x86_64-linux-gnu/libpinocchio_default.so.4.1.0",
+        "/opt/ros/jazzy/lib/x86_64-linux-gnu/libpinocchio_collision.so.4.1.0",
+        "/opt/ros/jazzy/lib/x86_64-linux-gnu/libpinocchio_parsers.so.4.1.0",
+        "/usr/lib/x86_64-linux-gnu/libboost_serialization.so.1.83.0",
+        "/usr/lib/x86_64-linux-gnu/libboost_filesystem.so.1.83.0",
+        "/opt/ros/jazzy/lib/x86_64-linux-gnu/libcoal.so.3.0.3",
+        "-ldl",
+        "-pthread",
+        "-Wl,--disable-new-dtags",
+        "-Wl,-rpath,/home/codextransfer/predictive_motion/.vendor/mujoco-3.3.7/lib:/opt/ros/jazzy/lib/x86_64-linux-gnu:/opt/ros/jazzy/lib:/usr/lib/x86_64-linux-gnu",
+        "-lz",
+        "-Wl,-Map,/home/codextransfer/predictive_motion/results/phase5/session-controlled-stop-explicit-warm-nominal-active32-brake64-dwell25-v1-20261016-attempt63/link-attempt1/evidence_buffer_tests.map",
+        "-o",
+        "/home/codextransfer/predictive_motion/results/phase5/session-controlled-stop-explicit-warm-nominal-active32-brake64-dwell25-v1-20261016-attempt63/link-attempt1/evidence_buffer_tests"
+      ],
+      "stage": "CHILD_EXIT_REAPED",
+      "actual_project_tool_entry": "Popen started; exit retained, compiler/link success only if exit0",
+      "exit": 0,
+      "first_error": null,
+      "applied_limits": {
+        "CPU": {
+          "inherited_soft": -1,
+          "inherited_hard": -1,
+          "applied_soft": 120,
+          "applied_hard": 120
+        },
+        "AS": {
+          "inherited_soft": -1,
+          "inherited_hard": -1,
+          "applied_soft": 2147483648,
+          "applied_hard": 2147483648
+        },
+        "CORE": {
+          "inherited_soft": 0,
+          "inherited_hard": -1,
+          "applied_soft": 0,
+          "applied_hard": 0
+        },
+        "FSIZE": {
+          "inherited_soft": -1,
+          "inherited_hard": -1,
+          "applied_soft": 268435456,
+          "applied_hard": 268435456
+        },
+        "NOFILE": {
+          "inherited_soft": 1024,
+          "inherited_hard": 1048576,
+          "applied_soft": 64,
+          "applied_hard": 64
+        },
+        "NPROC": {
+          "inherited_soft": 63295,
+          "inherited_hard": 63295,
+          "applied_soft": 32,
+          "applied_hard": 32
+        }
+      },
+      "observed_stream_bytes": {
+        "stdout": 0,
+        "stderr": 0
+      },
+      "stop_reason": null,
+      "wall_seconds": 0.26005183599772863
+    },
+    {
+      "kind": "compile",
+      "index": 6,
+      "argv": [
+        "/usr/bin/x86_64-linux-gnu-g++-13",
+        "/home/codextransfer/predictive_motion/results/phase5/session-controlled-stop-explicit-warm-nominal-active32-brake64-dwell25-v1-20261016-attempt63/build-attempt1/unit-18.o",
+        "-Wl,--start-group",
+        "/home/codextransfer/predictive_motion/install/predictive_motion_kinematics/lib/librobot_kinematics.a",
+        "/home/codextransfer/predictive_motion/.vendor/osqp-1.0.0-install/lib/libosqpstatic.a",
+        "/home/codextransfer/predictive_motion/results/phase5/repaired-source-configure-only-after-v4-20261009/attempt1/build/inventory-source/input-source/cost-source/affine-source/normalized-source/model-boundary/live-foundation/libpublic_live_affine_v2_foundation.a",
+        "/home/codextransfer/predictive_motion/results/phase5/repaired-source-configure-only-after-v4-20261009/attempt1/build/inventory-source/input-source/cost-source/affine-source/normalized-source/model-boundary/frozen-extension/libpublic_coupled_augmented_extension.a",
+        "/home/codextransfer/predictive_motion/results/phase5/repaired-source-configure-only-after-v4-20261009/attempt1/build/inventory-source/input-source/cost-source/affine-source/normalized-source/model-boundary/frozen-extension/libfrozen_augmented_extension_value.a",
+        "/home/codextransfer/predictive_motion/results/phase5/repaired-source-configure-only-after-v4-20261009/attempt1/build/inventory-source/input-source/cost-source/affine-source/normalized-source/model-boundary/frozen-extension/physical-derivative/libpublic_coupled_derivative_model.a",
+        "/home/codextransfer/predictive_motion/results/phase5/repaired-source-configure-only-after-v4-20261009/attempt1/build/inventory-source/input-source/cost-source/affine-source/normalized-source/model-boundary/frozen-extension/physical-derivative/base-v2/libpublic_coupled_model_v2.a",
+        "-Wl,--end-group",
+        "/home/codextransfer/predictive_motion/.vendor/mujoco-3.3.7/lib/libmujoco.so",
+        "/usr/lib/x86_64-linux-gnu/libcrypto.so",
+        "/usr/lib/x86_64-linux-gnu/libyaml-cpp.so",
+        "/opt/ros/jazzy/lib/x86_64-linux-gnu/libpinocchio_default.so.4.1.0",
+        "/opt/ros/jazzy/lib/x86_64-linux-gnu/libpinocchio_collision.so.4.1.0",
+        "/opt/ros/jazzy/lib/x86_64-linux-gnu/libpinocchio_parsers.so.4.1.0",
+        "/usr/lib/x86_64-linux-gnu/libboost_serialization.so.1.83.0",
+        "/usr/lib/x86_64-linux-gnu/libboost_filesystem.so.1.83.0",
+        "/opt/ros/jazzy/lib/x86_64-linux-gnu/libcoal.so.3.0.3",
+        "-ldl",
+        "-pthread",
+        "-Wl,--disable-new-dtags",
+        "-Wl,-rpath,/home/codextransfer/predictive_motion/.vendor/mujoco-3.3.7/lib:/opt/ros/jazzy/lib/x86_64-linux-gnu:/opt/ros/jazzy/lib:/usr/lib/x86_64-linux-gnu",
+        "-lz",
+        "-Wl,-Map,/home/codextransfer/predictive_motion/results/phase5/session-controlled-stop-explicit-warm-nominal-active32-brake64-dwell25-v1-20261016-attempt63/link-attempt1/current_alpha_trust_tests.map",
+        "-o",
+        "/home/codextransfer/predictive_motion/results/phase5/session-controlled-stop-explicit-warm-nominal-active32-brake64-dwell25-v1-20261016-attempt63/link-attempt1/current_alpha_trust_tests"
+      ],
+      "stage": "CHILD_EXIT_REAPED",
+      "actual_project_tool_entry": "Popen started; exit retained, compiler/link success only if exit0",
+      "exit": 0,
+      "first_error": null,
+      "applied_limits": {
+        "CPU": {
+          "inherited_soft": -1,
+          "inherited_hard": -1,
+          "applied_soft": 120,
+          "applied_hard": 120
+        },
+        "AS": {
+          "inherited_soft": -1,
+          "inherited_hard": -1,
+          "applied_soft": 2147483648,
+          "applied_hard": 2147483648
+        },
+        "CORE": {
+          "inherited_soft": 0,
+          "inherited_hard": -1,
+          "applied_soft": 0,
+          "applied_hard": 0
+        },
+        "FSIZE": {
+          "inherited_soft": -1,
+          "inherited_hard": -1,
+          "applied_soft": 268435456,
+          "applied_hard": 268435456
+        },
+        "NOFILE": {
+          "inherited_soft": 1024,
+          "inherited_hard": 1048576,
+          "applied_soft": 64,
+          "applied_hard": 64
+        },
+        "NPROC": {
+          "inherited_soft": 63295,
+          "inherited_hard": 63295,
+          "applied_soft": 32,
+          "applied_hard": 32
+        }
+      },
+      "observed_stream_bytes": {
+        "stdout": 0,
+        "stderr": 0
+      },
+      "stop_reason": null,
+      "wall_seconds": 0.04711583300377242
+    },
+    {
+      "kind": "compile",
+      "index": 7,
+      "argv": [
+        "/usr/bin/x86_64-linux-gnu-g++-13",
+        "/home/codextransfer/predictive_motion/results/phase5/session-controlled-stop-explicit-warm-nominal-active32-brake64-dwell25-v1-20261016-attempt63/build-attempt1/unit-19.o",
+        "-Wl,--start-group",
+        "/home/codextransfer/predictive_motion/install/predictive_motion_kinematics/lib/librobot_kinematics.a",
+        "/home/codextransfer/predictive_motion/.vendor/osqp-1.0.0-install/lib/libosqpstatic.a",
+        "/home/codextransfer/predictive_motion/results/phase5/repaired-source-configure-only-after-v4-20261009/attempt1/build/inventory-source/input-source/cost-source/affine-source/normalized-source/model-boundary/live-foundation/libpublic_live_affine_v2_foundation.a",
+        "/home/codextransfer/predictive_motion/results/phase5/repaired-source-configure-only-after-v4-20261009/attempt1/build/inventory-source/input-source/cost-source/affine-source/normalized-source/model-boundary/frozen-extension/libpublic_coupled_augmented_extension.a",
+        "/home/codextransfer/predictive_motion/results/phase5/repaired-source-configure-only-after-v4-20261009/attempt1/build/inventory-source/input-source/cost-source/affine-source/normalized-source/model-boundary/frozen-extension/libfrozen_augmented_extension_value.a",
+        "/home/codextransfer/predictive_motion/results/phase5/repaired-source-configure-only-after-v4-20261009/attempt1/build/inventory-source/input-source/cost-source/affine-source/normalized-source/model-boundary/frozen-extension/physical-derivative/libpublic_coupled_derivative_model.a",
+        "/home/codextransfer/predictive_motion/results/phase5/repaired-source-configure-only-after-v4-20261009/attempt1/build/inventory-source/input-source/cost-source/affine-source/normalized-source/model-boundary/frozen-extension/physical-derivative/base-v2/libpublic_coupled_model_v2.a",
+        "-Wl,--end-group",
+        "/home/codextransfer/predictive_motion/.vendor/mujoco-3.3.7/lib/libmujoco.so",
+        "/usr/lib/x86_64-linux-gnu/libcrypto.so",
+        "/usr/lib/x86_64-linux-gnu/libyaml-cpp.so",
+        "/opt/ros/jazzy/lib/x86_64-linux-gnu/libpinocchio_default.so.4.1.0",
+        "/opt/ros/jazzy/lib/x86_64-linux-gnu/libpinocchio_collision.so.4.1.0",
+        "/opt/ros/jazzy/lib/x86_64-linux-gnu/libpinocchio_parsers.so.4.1.0",
+        "/usr/lib/x86_64-linux-gnu/libboost_serialization.so.1.83.0",
+        "/usr/lib/x86_64-linux-gnu/libboost_filesystem.so.1.83.0",
+        "/opt/ros/jazzy/lib/x86_64-linux-gnu/libcoal.so.3.0.3",
+        "-ldl",
+        "-pthread",
+        "-Wl,--disable-new-dtags",
+        "-Wl,-rpath,/home/codextransfer/predictive_motion/.vendor/mujoco-3.3.7/lib:/opt/ros/jazzy/lib/x86_64-linux-gnu:/opt/ros/jazzy/lib:/usr/lib/x86_64-linux-gnu",
+        "-lz",
+        "-Wl,-Map,/home/codextransfer/predictive_motion/results/phase5/session-controlled-stop-explicit-warm-nominal-active32-brake64-dwell25-v1-20261016-attempt63/link-attempt1/fraction_repair_regression.map",
+        "-o",
+        "/home/codextransfer/predictive_motion/results/phase5/session-controlled-stop-explicit-warm-nominal-active32-brake64-dwell25-v1-20261016-attempt63/link-attempt1/fraction_repair_regression"
+      ],
+      "stage": "CHILD_EXIT_REAPED",
+      "actual_project_tool_entry": "Popen started; exit retained, compiler/link success only if exit0",
+      "exit": 0,
+      "first_error": null,
+      "applied_limits": {
+        "CPU": {
+          "inherited_soft": -1,
+          "inherited_hard": -1,
+          "applied_soft": 120,
+          "applied_hard": 120
+        },
+        "AS": {
+          "inherited_soft": -1,
+          "inherited_hard": -1,
+          "applied_soft": 2147483648,
+          "applied_hard": 2147483648
+        },
+        "CORE": {
+          "inherited_soft": 0,
+          "inherited_hard": -1,
+          "applied_soft": 0,
+          "applied_hard": 0
+        },
+        "FSIZE": {
+          "inherited_soft": -1,
+          "inherited_hard": -1,
+          "applied_soft": 268435456,
+          "applied_hard": 268435456
+        },
+        "NOFILE": {
+          "inherited_soft": 1024,
+          "inherited_hard": 1048576,
+          "applied_soft": 64,
+          "applied_hard": 64
+        },
+        "NPROC": {
+          "inherited_soft": 63295,
+          "inherited_hard": 63295,
+          "applied_soft": 32,
+          "applied_hard": 32
+        }
+      },
+      "observed_stream_bytes": {
+        "stdout": 0,
+        "stderr": 0
+      },
+      "stop_reason": null,
+      "wall_seconds": 0.044895425002323464
+    },
+    {
+      "kind": "compile",
+      "index": 8,
+      "argv": [
+        "/usr/bin/x86_64-linux-gnu-g++-13",
+        "/home/codextransfer/predictive_motion/results/phase5/session-controlled-stop-explicit-warm-nominal-active32-brake64-dwell25-v1-20261016-attempt63/build-attempt1/unit-11.o",
+        "-Wl,--start-group",
+        "/home/codextransfer/predictive_motion/install/predictive_motion_kinematics/lib/librobot_kinematics.a",
+        "/home/codextransfer/predictive_motion/.vendor/osqp-1.0.0-install/lib/libosqpstatic.a",
+        "/home/codextransfer/predictive_motion/results/phase5/repaired-source-configure-only-after-v4-20261009/attempt1/build/inventory-source/input-source/cost-source/affine-source/normalized-source/model-boundary/live-foundation/libpublic_live_affine_v2_foundation.a",
+        "/home/codextransfer/predictive_motion/results/phase5/repaired-source-configure-only-after-v4-20261009/attempt1/build/inventory-source/input-source/cost-source/affine-source/normalized-source/model-boundary/frozen-extension/libpublic_coupled_augmented_extension.a",
+        "/home/codextransfer/predictive_motion/results/phase5/repaired-source-configure-only-after-v4-20261009/attempt1/build/inventory-source/input-source/cost-source/affine-source/normalized-source/model-boundary/frozen-extension/libfrozen_augmented_extension_value.a",
+        "/home/codextransfer/predictive_motion/results/phase5/repaired-source-configure-only-after-v4-20261009/attempt1/build/inventory-source/input-source/cost-source/affine-source/normalized-source/model-boundary/frozen-extension/physical-derivative/libpublic_coupled_derivative_model.a",
+        "/home/codextransfer/predictive_motion/results/phase5/repaired-source-configure-only-after-v4-20261009/attempt1/build/inventory-source/input-source/cost-source/affine-source/normalized-source/model-boundary/frozen-extension/physical-derivative/base-v2/libpublic_coupled_model_v2.a",
+        "-Wl,--end-group",
+        "/home/codextransfer/predictive_motion/.vendor/mujoco-3.3.7/lib/libmujoco.so",
+        "/usr/lib/x86_64-linux-gnu/libcrypto.so",
+        "/usr/lib/x86_64-linux-gnu/libyaml-cpp.so",
+        "/opt/ros/jazzy/lib/x86_64-linux-gnu/libpinocchio_default.so.4.1.0",
+        "/opt/ros/jazzy/lib/x86_64-linux-gnu/libpinocchio_collision.so.4.1.0",
+        "/opt/ros/jazzy/lib/x86_64-linux-gnu/libpinocchio_parsers.so.4.1.0",
+        "/usr/lib/x86_64-linux-gnu/libboost_serialization.so.1.83.0",
+        "/usr/lib/x86_64-linux-gnu/libboost_filesystem.so.1.83.0",
+        "/opt/ros/jazzy/lib/x86_64-linux-gnu/libcoal.so.3.0.3",
+        "-ldl",
+        "-pthread",
+        "-Wl,--disable-new-dtags",
+        "-Wl,-rpath,/home/codextransfer/predictive_motion/.vendor/mujoco-3.3.7/lib:/opt/ros/jazzy/lib/x86_64-linux-gnu:/opt/ros/jazzy/lib:/usr/lib/x86_64-linux-gnu",
+        "-lz",
+        "-Wl,-Map,/home/codextransfer/predictive_motion/results/phase5/session-controlled-stop-explicit-warm-nominal-active32-brake64-dwell25-v1-20261016-attempt63/link-attempt1/current_numeric_tests.map",
+        "-o",
+        "/home/codextransfer/predictive_motion/results/phase5/session-controlled-stop-explicit-warm-nominal-active32-brake64-dwell25-v1-20261016-attempt63/link-attempt1/current_numeric_tests"
+      ],
+      "stage": "CHILD_EXIT_REAPED",
+      "actual_project_tool_entry": "Popen started; exit retained, compiler/link success only if exit0",
+      "exit": 0,
+      "first_error": null,
+      "applied_limits": {
+        "CPU": {
+          "inherited_soft": -1,
+          "inherited_hard": -1,
+          "applied_soft": 120,
+          "applied_hard": 120
+        },
+        "AS": {
+          "inherited_soft": -1,
+          "inherited_hard": -1,
+          "applied_soft": 2147483648,
+          "applied_hard": 2147483648
+        },
+        "CORE": {
+          "inherited_soft": 0,
+          "inherited_hard": -1,
+          "applied_soft": 0,
+          "applied_hard": 0
+        },
+        "FSIZE": {
+          "inherited_soft": -1,
+          "inherited_hard": -1,
+          "applied_soft": 268435456,
+          "applied_hard": 268435456
+        },
+        "NOFILE": {
+          "inherited_soft": 1024,
+          "inherited_hard": 1048576,
+          "applied_soft": 64,
+          "applied_hard": 64
+        },
+        "NPROC": {
+          "inherited_soft": 63295,
+          "inherited_hard": 63295,
+          "applied_soft": 32,
+          "applied_hard": 32
+        }
+      },
+      "observed_stream_bytes": {
+        "stdout": 0,
+        "stderr": 0
+      },
+      "stop_reason": null,
+      "wall_seconds": 0.0472161479992792
+    },
+    {
+      "kind": "compile",
+      "index": 9,
+      "argv": [
+        "/usr/bin/x86_64-linux-gnu-g++-13",
+        "/home/codextransfer/predictive_motion/results/phase5/session-controlled-stop-explicit-warm-nominal-active32-brake64-dwell25-v1-20261016-attempt63/build-attempt1/unit-20.o",
+        "-Wl,--start-group",
+        "/home/codextransfer/predictive_motion/install/predictive_motion_kinematics/lib/librobot_kinematics.a",
+        "/home/codextransfer/predictive_motion/.vendor/osqp-1.0.0-install/lib/libosqpstatic.a",
+        "/home/codextransfer/predictive_motion/results/phase5/repaired-source-configure-only-after-v4-20261009/attempt1/build/inventory-source/input-source/cost-source/affine-source/normalized-source/model-boundary/live-foundation/libpublic_live_affine_v2_foundation.a",
+        "/home/codextransfer/predictive_motion/results/phase5/repaired-source-configure-only-after-v4-20261009/attempt1/build/inventory-source/input-source/cost-source/affine-source/normalized-source/model-boundary/frozen-extension/libpublic_coupled_augmented_extension.a",
+        "/home/codextransfer/predictive_motion/results/phase5/repaired-source-configure-only-after-v4-20261009/attempt1/build/inventory-source/input-source/cost-source/affine-source/normalized-source/model-boundary/frozen-extension/libfrozen_augmented_extension_value.a",
+        "/home/codextransfer/predictive_motion/results/phase5/repaired-source-configure-only-after-v4-20261009/attempt1/build/inventory-source/input-source/cost-source/affine-source/normalized-source/model-boundary/frozen-extension/physical-derivative/libpublic_coupled_derivative_model.a",
+        "/home/codextransfer/predictive_motion/results/phase5/repaired-source-configure-only-after-v4-20261009/attempt1/build/inventory-source/input-source/cost-source/affine-source/normalized-source/model-boundary/frozen-extension/physical-derivative/base-v2/libpublic_coupled_model_v2.a",
+        "-Wl,--end-group",
+        "/home/codextransfer/predictive_motion/.vendor/mujoco-3.3.7/lib/libmujoco.so",
+        "/usr/lib/x86_64-linux-gnu/libcrypto.so",
+        "/usr/lib/x86_64-linux-gnu/libyaml-cpp.so",
+        "/opt/ros/jazzy/lib/x86_64-linux-gnu/libpinocchio_default.so.4.1.0",
+        "/opt/ros/jazzy/lib/x86_64-linux-gnu/libpinocchio_collision.so.4.1.0",
+        "/opt/ros/jazzy/lib/x86_64-linux-gnu/libpinocchio_parsers.so.4.1.0",
+        "/usr/lib/x86_64-linux-gnu/libboost_serialization.so.1.83.0",
+        "/usr/lib/x86_64-linux-gnu/libboost_filesystem.so.1.83.0",
+        "/opt/ros/jazzy/lib/x86_64-linux-gnu/libcoal.so.3.0.3",
+        "-ldl",
+        "-pthread",
+        "-Wl,--disable-new-dtags",
+        "-Wl,-rpath,/home/codextransfer/predictive_motion/.vendor/mujoco-3.3.7/lib:/opt/ros/jazzy/lib/x86_64-linux-gnu:/opt/ros/jazzy/lib:/usr/lib/x86_64-linux-gnu",
+        "-lz",
+        "-Wl,-Map,/home/codextransfer/predictive_motion/results/phase5/session-controlled-stop-explicit-warm-nominal-active32-brake64-dwell25-v1-20261016-attempt63/link-attempt1/bounded_current_trials_tests.map",
+        "-o",
+        "/home/codextransfer/predictive_motion/results/phase5/session-controlled-stop-explicit-warm-nominal-active32-brake64-dwell25-v1-20261016-attempt63/link-attempt1/bounded_current_trials_tests"
+      ],
+      "stage": "CHILD_EXIT_REAPED",
+      "actual_project_tool_entry": "Popen started; exit retained, compiler/link success only if exit0",
+      "exit": 0,
+      "first_error": null,
+      "applied_limits": {
+        "CPU": {
+          "inherited_soft": -1,
+          "inherited_hard": -1,
+          "applied_soft": 120,
+          "applied_hard": 120
+        },
+        "AS": {
+          "inherited_soft": -1,
+          "inherited_hard": -1,
+          "applied_soft": 2147483648,
+          "applied_hard": 2147483648
+        },
+        "CORE": {
+          "inherited_soft": 0,
+          "inherited_hard": -1,
+          "applied_soft": 0,
+          "applied_hard": 0
+        },
+        "FSIZE": {
+          "inherited_soft": -1,
+          "inherited_hard": -1,
+          "applied_soft": 268435456,
+          "applied_hard": 268435456
+        },
+        "NOFILE": {
+          "inherited_soft": 1024,
+          "inherited_hard": 1048576,
+          "applied_soft": 64,
+          "applied_hard": 64
+        },
+        "NPROC": {
+          "inherited_soft": 63295,
+          "inherited_hard": 63295,
+          "applied_soft": 32,
+          "applied_hard": 32
+        }
+      },
+      "observed_stream_bytes": {
+        "stdout": 0,
+        "stderr": 0
+      },
+      "stop_reason": null,
+      "wall_seconds": 0.04368340200744569
+    },
+    {
+      "kind": "compile",
+      "index": 10,
+      "argv": [
+        "/usr/bin/x86_64-linux-gnu-g++-13",
+        "/home/codextransfer/predictive_motion/results/phase5/session-controlled-stop-explicit-warm-nominal-active32-brake64-dwell25-v1-20261016-attempt63/build-attempt1/unit-21.o",
+        "-Wl,--start-group",
+        "/home/codextransfer/predictive_motion/install/predictive_motion_kinematics/lib/librobot_kinematics.a",
+        "/home/codextransfer/predictive_motion/.vendor/osqp-1.0.0-install/lib/libosqpstatic.a",
+        "/home/codextransfer/predictive_motion/results/phase5/repaired-source-configure-only-after-v4-20261009/attempt1/build/inventory-source/input-source/cost-source/affine-source/normalized-source/model-boundary/live-foundation/libpublic_live_affine_v2_foundation.a",
+        "/home/codextransfer/predictive_motion/results/phase5/repaired-source-configure-only-after-v4-20261009/attempt1/build/inventory-source/input-source/cost-source/affine-source/normalized-source/model-boundary/frozen-extension/libpublic_coupled_augmented_extension.a",
+        "/home/codextransfer/predictive_motion/results/phase5/repaired-source-configure-only-after-v4-20261009/attempt1/build/inventory-source/input-source/cost-source/affine-source/normalized-source/model-boundary/frozen-extension/libfrozen_augmented_extension_value.a",
+        "/home/codextransfer/predictive_motion/results/phase5/repaired-source-configure-only-after-v4-20261009/attempt1/build/inventory-source/input-source/cost-source/affine-source/normalized-source/model-boundary/frozen-extension/physical-derivative/libpublic_coupled_derivative_model.a",
+        "/home/codextransfer/predictive_motion/results/phase5/repaired-source-configure-only-after-v4-20261009/attempt1/build/inventory-source/input-source/cost-source/affine-source/normalized-source/model-boundary/frozen-extension/physical-derivative/base-v2/libpublic_coupled_model_v2.a",
+        "-Wl,--end-group",
+        "/home/codextransfer/predictive_motion/.vendor/mujoco-3.3.7/lib/libmujoco.so",
+        "/usr/lib/x86_64-linux-gnu/libcrypto.so",
+        "/usr/lib/x86_64-linux-gnu/libyaml-cpp.so",
+        "/opt/ros/jazzy/lib/x86_64-linux-gnu/libpinocchio_default.so.4.1.0",
+        "/opt/ros/jazzy/lib/x86_64-linux-gnu/libpinocchio_collision.so.4.1.0",
+        "/opt/ros/jazzy/lib/x86_64-linux-gnu/libpinocchio_parsers.so.4.1.0",
+        "/usr/lib/x86_64-linux-gnu/libboost_serialization.so.1.83.0",
+        "/usr/lib/x86_64-linux-gnu/libboost_filesystem.so.1.83.0",
+        "/opt/ros/jazzy/lib/x86_64-linux-gnu/libcoal.so.3.0.3",
+        "-ldl",
+        "-pthread",
+        "-Wl,--disable-new-dtags",
+        "-Wl,-rpath,/home/codextransfer/predictive_motion/.vendor/mujoco-3.3.7/lib:/opt/ros/jazzy/lib/x86_64-linux-gnu:/opt/ros/jazzy/lib:/usr/lib/x86_64-linux-gnu",
+        "-lz",
+        "-Wl,-Map,/home/codextransfer/predictive_motion/results/phase5/session-controlled-stop-explicit-warm-nominal-active32-brake64-dwell25-v1-20261016-attempt63/link-attempt1/actual_stop_monitor_tests.map",
+        "-o",
+        "/home/codextransfer/predictive_motion/results/phase5/session-controlled-stop-explicit-warm-nominal-active32-brake64-dwell25-v1-20261016-attempt63/link-attempt1/actual_stop_monitor_tests"
+      ],
+      "stage": "CHILD_EXIT_REAPED",
+      "actual_project_tool_entry": "Popen started; exit retained, compiler/link success only if exit0",
+      "exit": 0,
+      "first_error": null,
+      "applied_limits": {
+        "CPU": {
+          "inherited_soft": -1,
+          "inherited_hard": -1,
+          "applied_soft": 120,
+          "applied_hard": 120
+        },
+        "AS": {
+          "inherited_soft": -1,
+          "inherited_hard": -1,
+          "applied_soft": 2147483648,
+          "applied_hard": 2147483648
+        },
+        "CORE": {
+          "inherited_soft": 0,
+          "inherited_hard": -1,
+          "applied_soft": 0,
+          "applied_hard": 0
+        },
+        "FSIZE": {
+          "inherited_soft": -1,
+          "inherited_hard": -1,
+          "applied_soft": 268435456,
+          "applied_hard": 268435456
+        },
+        "NOFILE": {
+          "inherited_soft": 1024,
+          "inherited_hard": 1048576,
+          "applied_soft": 64,
+          "applied_hard": 64
+        },
+        "NPROC": {
+          "inherited_soft": 63295,
+          "inherited_hard": 63295,
+          "applied_soft": 32,
+          "applied_hard": 32
+        }
+      },
+      "observed_stream_bytes": {
+        "stdout": 0,
+        "stderr": 0
+      },
+      "stop_reason": null,
+      "wall_seconds": 0.04698179099068511
+    },
+    {
+      "kind": "compile",
+      "index": 11,
+      "argv": [
+        "/usr/bin/x86_64-linux-gnu-g++-13",
+        "/home/codextransfer/predictive_motion/results/phase5/session-controlled-stop-explicit-warm-nominal-active32-brake64-dwell25-v1-20261016-attempt63/build-attempt1/unit-22.o",
+        "-Wl,--start-group",
+        "/home/codextransfer/predictive_motion/install/predictive_motion_kinematics/lib/librobot_kinematics.a",
+        "/home/codextransfer/predictive_motion/.vendor/osqp-1.0.0-install/lib/libosqpstatic.a",
+        "/home/codextransfer/predictive_motion/results/phase5/repaired-source-configure-only-after-v4-20261009/attempt1/build/inventory-source/input-source/cost-source/affine-source/normalized-source/model-boundary/live-foundation/libpublic_live_affine_v2_foundation.a",
+        "/home/codextransfer/predictive_motion/results/phase5/repaired-source-configure-only-after-v4-20261009/attempt1/build/inventory-source/input-source/cost-source/affine-source/normalized-source/model-boundary/frozen-extension/libpublic_coupled_augmented_extension.a",
+        "/home/codextransfer/predictive_motion/results/phase5/repaired-source-configure-only-after-v4-20261009/attempt1/build/inventory-source/input-source/cost-source/affine-source/normalized-source/model-boundary/frozen-extension/libfrozen_augmented_extension_value.a",
+        "/home/codextransfer/predictive_motion/results/phase5/repaired-source-configure-only-after-v4-20261009/attempt1/build/inventory-source/input-source/cost-source/affine-source/normalized-source/model-boundary/frozen-extension/physical-derivative/libpublic_coupled_derivative_model.a",
+        "/home/codextransfer/predictive_motion/results/phase5/repaired-source-configure-only-after-v4-20261009/attempt1/build/inventory-source/input-source/cost-source/affine-source/normalized-source/model-boundary/frozen-extension/physical-derivative/base-v2/libpublic_coupled_model_v2.a",
+        "-Wl,--end-group",
+        "/home/codextransfer/predictive_motion/.vendor/mujoco-3.3.7/lib/libmujoco.so",
+        "/usr/lib/x86_64-linux-gnu/libcrypto.so",
+        "/usr/lib/x86_64-linux-gnu/libyaml-cpp.so",
+        "/opt/ros/jazzy/lib/x86_64-linux-gnu/libpinocchio_default.so.4.1.0",
+        "/opt/ros/jazzy/lib/x86_64-linux-gnu/libpinocchio_collision.so.4.1.0",
+        "/opt/ros/jazzy/lib/x86_64-linux-gnu/libpinocchio_parsers.so.4.1.0",
+        "/usr/lib/x86_64-linux-gnu/libboost_serialization.so.1.83.0",
+        "/usr/lib/x86_64-linux-gnu/libboost_filesystem.so.1.83.0",
+        "/opt/ros/jazzy/lib/x86_64-linux-gnu/libcoal.so.3.0.3",
+        "-ldl",
+        "-pthread",
+        "-Wl,--disable-new-dtags",
+        "-Wl,-rpath,/home/codextransfer/predictive_motion/.vendor/mujoco-3.3.7/lib:/opt/ros/jazzy/lib/x86_64-linux-gnu:/opt/ros/jazzy/lib:/usr/lib/x86_64-linux-gnu",
+        "-lz",
+        "-Wl,-Map,/home/codextransfer/predictive_motion/results/phase5/session-controlled-stop-explicit-warm-nominal-active32-brake64-dwell25-v1-20261016-attempt63/link-attempt1/progress_interior_guard_tests.map",
+        "-o",
+        "/home/codextransfer/predictive_motion/results/phase5/session-controlled-stop-explicit-warm-nominal-active32-brake64-dwell25-v1-20261016-attempt63/link-attempt1/progress_interior_guard_tests"
+      ],
+      "stage": "CHILD_EXIT_REAPED",
+      "actual_project_tool_entry": "Popen started; exit retained, compiler/link success only if exit0",
+      "exit": 0,
+      "first_error": null,
+      "applied_limits": {
+        "CPU": {
+          "inherited_soft": -1,
+          "inherited_hard": -1,
+          "applied_soft": 120,
+          "applied_hard": 120
+        },
+        "AS": {
+          "inherited_soft": -1,
+          "inherited_hard": -1,
+          "applied_soft": 2147483648,
+          "applied_hard": 2147483648
+        },
+        "CORE": {
+          "inherited_soft": 0,
+          "inherited_hard": -1,
+          "applied_soft": 0,
+          "applied_hard": 0
+        },
+        "FSIZE": {
+          "inherited_soft": -1,
+          "inherited_hard": -1,
+          "applied_soft": 268435456,
+          "applied_hard": 268435456
+        },
+        "NOFILE": {
+          "inherited_soft": 1024,
+          "inherited_hard": 1048576,
+          "applied_soft": 64,
+          "applied_hard": 64
+        },
+        "NPROC": {
+          "inherited_soft": 63295,
+          "inherited_hard": 63295,
+          "applied_soft": 32,
+          "applied_hard": 32
+        }
+      },
+      "observed_stream_bytes": {
+        "stdout": 0,
+        "stderr": 0
+      },
+      "stop_reason": null,
+      "wall_seconds": 0.04317100200569257
+    },
+    {
+      "kind": "compile",
+      "index": 12,
+      "argv": [
+        "/usr/bin/x86_64-linux-gnu-g++-13",
+        "/home/codextransfer/predictive_motion/results/phase5/session-controlled-stop-explicit-warm-nominal-active32-brake64-dwell25-v1-20261016-attempt63/build-attempt1/unit-23.o",
+        "-Wl,--start-group",
+        "/home/codextransfer/predictive_motion/install/predictive_motion_kinematics/lib/librobot_kinematics.a",
+        "/home/codextransfer/predictive_motion/.vendor/osqp-1.0.0-install/lib/libosqpstatic.a",
+        "/home/codextransfer/predictive_motion/results/phase5/repaired-source-configure-only-after-v4-20261009/attempt1/build/inventory-source/input-source/cost-source/affine-source/normalized-source/model-boundary/live-foundation/libpublic_live_affine_v2_foundation.a",
+        "/home/codextransfer/predictive_motion/results/phase5/repaired-source-configure-only-after-v4-20261009/attempt1/build/inventory-source/input-source/cost-source/affine-source/normalized-source/model-boundary/frozen-extension/libpublic_coupled_augmented_extension.a",
+        "/home/codextransfer/predictive_motion/results/phase5/repaired-source-configure-only-after-v4-20261009/attempt1/build/inventory-source/input-source/cost-source/affine-source/normalized-source/model-boundary/frozen-extension/libfrozen_augmented_extension_value.a",
+        "/home/codextransfer/predictive_motion/results/phase5/repaired-source-configure-only-after-v4-20261009/attempt1/build/inventory-source/input-source/cost-source/affine-source/normalized-source/model-boundary/frozen-extension/physical-derivative/libpublic_coupled_derivative_model.a",
+        "/home/codextransfer/predictive_motion/results/phase5/repaired-source-configure-only-after-v4-20261009/attempt1/build/inventory-source/input-source/cost-source/affine-source/normalized-source/model-boundary/frozen-extension/physical-derivative/base-v2/libpublic_coupled_model_v2.a",
+        "-Wl,--end-group",
+        "/home/codextransfer/predictive_motion/.vendor/mujoco-3.3.7/lib/libmujoco.so",
+        "/usr/lib/x86_64-linux-gnu/libcrypto.so",
+        "/usr/lib/x86_64-linux-gnu/libyaml-cpp.so",
+        "/opt/ros/jazzy/lib/x86_64-linux-gnu/libpinocchio_default.so.4.1.0",
+        "/opt/ros/jazzy/lib/x86_64-linux-gnu/libpinocchio_collision.so.4.1.0",
+        "/opt/ros/jazzy/lib/x86_64-linux-gnu/libpinocchio_parsers.so.4.1.0",
+        "/usr/lib/x86_64-linux-gnu/libboost_serialization.so.1.83.0",
+        "/usr/lib/x86_64-linux-gnu/libboost_filesystem.so.1.83.0",
+        "/opt/ros/jazzy/lib/x86_64-linux-gnu/libcoal.so.3.0.3",
+        "-ldl",
+        "-pthread",
+        "-Wl,--disable-new-dtags",
+        "-Wl,-rpath,/home/codextransfer/predictive_motion/.vendor/mujoco-3.3.7/lib:/opt/ros/jazzy/lib/x86_64-linux-gnu:/opt/ros/jazzy/lib:/usr/lib/x86_64-linux-gnu",
+        "-lz",
+        "-Wl,-Map,/home/codextransfer/predictive_motion/results/phase5/session-controlled-stop-explicit-warm-nominal-active32-brake64-dwell25-v1-20261016-attempt63/link-attempt1/bounded_progress_seed_tests.map",
+        "-o",
+        "/home/codextransfer/predictive_motion/results/phase5/session-controlled-stop-explicit-warm-nominal-active32-brake64-dwell25-v1-20261016-attempt63/link-attempt1/bounded_progress_seed_tests"
+      ],
+      "stage": "CHILD_EXIT_REAPED",
+      "actual_project_tool_entry": "Popen started; exit retained, compiler/link success only if exit0",
+      "exit": 0,
+      "first_error": null,
+      "applied_limits": {
+        "CPU": {
+          "inherited_soft": -1,
+          "inherited_hard": -1,
+          "applied_soft": 120,
+          "applied_hard": 120
+        },
+        "AS": {
+          "inherited_soft": -1,
+          "inherited_hard": -1,
+          "applied_soft": 2147483648,
+          "applied_hard": 2147483648
+        },
+        "CORE": {
+          "inherited_soft": 0,
+          "inherited_hard": -1,
+          "applied_soft": 0,
+          "applied_hard": 0
+        },
+        "FSIZE": {
+          "inherited_soft": -1,
+          "inherited_hard": -1,
+          "applied_soft": 268435456,
+          "applied_hard": 268435456
+        },
+        "NOFILE": {
+          "inherited_soft": 1024,
+          "inherited_hard": 1048576,
+          "applied_soft": 64,
+          "applied_hard": 64
+        },
+        "NPROC": {
+          "inherited_soft": 63295,
+          "inherited_hard": 63295,
+          "applied_soft": 32,
+          "applied_hard": 32
+        }
+      },
+      "observed_stream_bytes": {
+        "stdout": 0,
+        "stderr": 0
+      },
+      "stop_reason": null,
+      "wall_seconds": 0.043237990990746766
+    },
+    {
+      "kind": "compile",
+      "index": 13,
+      "argv": [
+        "/usr/bin/x86_64-linux-gnu-g++-13",
+        "/home/codextransfer/predictive_motion/results/phase5/session-controlled-stop-explicit-warm-nominal-active32-brake64-dwell25-v1-20261016-attempt63/build-attempt1/unit-24.o",
+        "-Wl,--start-group",
+        "/home/codextransfer/predictive_motion/install/predictive_motion_kinematics/lib/librobot_kinematics.a",
+        "/home/codextransfer/predictive_motion/.vendor/osqp-1.0.0-install/lib/libosqpstatic.a",
+        "/home/codextransfer/predictive_motion/results/phase5/repaired-source-configure-only-after-v4-20261009/attempt1/build/inventory-source/input-source/cost-source/affine-source/normalized-source/model-boundary/live-foundation/libpublic_live_affine_v2_foundation.a",
+        "/home/codextransfer/predictive_motion/results/phase5/repaired-source-configure-only-after-v4-20261009/attempt1/build/inventory-source/input-source/cost-source/affine-source/normalized-source/model-boundary/frozen-extension/libpublic_coupled_augmented_extension.a",
+        "/home/codextransfer/predictive_motion/results/phase5/repaired-source-configure-only-after-v4-20261009/attempt1/build/inventory-source/input-source/cost-source/affine-source/normalized-source/model-boundary/frozen-extension/libfrozen_augmented_extension_value.a",
+        "/home/codextransfer/predictive_motion/results/phase5/repaired-source-configure-only-after-v4-20261009/attempt1/build/inventory-source/input-source/cost-source/affine-source/normalized-source/model-boundary/frozen-extension/physical-derivative/libpublic_coupled_derivative_model.a",
+        "/home/codextransfer/predictive_motion/results/phase5/repaired-source-configure-only-after-v4-20261009/attempt1/build/inventory-source/input-source/cost-source/affine-source/normalized-source/model-boundary/frozen-extension/physical-derivative/base-v2/libpublic_coupled_model_v2.a",
+        "-Wl,--end-group",
+        "/home/codextransfer/predictive_motion/.vendor/mujoco-3.3.7/lib/libmujoco.so",
+        "/usr/lib/x86_64-linux-gnu/libcrypto.so",
+        "/usr/lib/x86_64-linux-gnu/libyaml-cpp.so",
+        "/opt/ros/jazzy/lib/x86_64-linux-gnu/libpinocchio_default.so.4.1.0",
+        "/opt/ros/jazzy/lib/x86_64-linux-gnu/libpinocchio_collision.so.4.1.0",
+        "/opt/ros/jazzy/lib/x86_64-linux-gnu/libpinocchio_parsers.so.4.1.0",
+        "/usr/lib/x86_64-linux-gnu/libboost_serialization.so.1.83.0",
+        "/usr/lib/x86_64-linux-gnu/libboost_filesystem.so.1.83.0",
+        "/opt/ros/jazzy/lib/x86_64-linux-gnu/libcoal.so.3.0.3",
+        "-ldl",
+        "-pthread",
+        "-Wl,--disable-new-dtags",
+        "-Wl,-rpath,/home/codextransfer/predictive_motion/.vendor/mujoco-3.3.7/lib:/opt/ros/jazzy/lib/x86_64-linux-gnu:/opt/ros/jazzy/lib:/usr/lib/x86_64-linux-gnu",
+        "-lz",
+        "-Wl,-Map,/home/codextransfer/predictive_motion/results/phase5/session-controlled-stop-explicit-warm-nominal-active32-brake64-dwell25-v1-20261016-attempt63/link-attempt1/working_face_basis_tests.map",
+        "-o",
+        "/home/codextransfer/predictive_motion/results/phase5/session-controlled-stop-explicit-warm-nominal-active32-brake64-dwell25-v1-20261016-attempt63/link-attempt1/working_face_basis_tests"
+      ],
+      "stage": "CHILD_EXIT_REAPED",
+      "actual_project_tool_entry": "Popen started; exit retained, compiler/link success only if exit0",
+      "exit": 0,
+      "first_error": null,
+      "applied_limits": {
+        "CPU": {
+          "inherited_soft": -1,
+          "inherited_hard": -1,
+          "applied_soft": 120,
+          "applied_hard": 120
+        },
+        "AS": {
+          "inherited_soft": -1,
+          "inherited_hard": -1,
+          "applied_soft": 2147483648,
+          "applied_hard": 2147483648
+        },
+        "CORE": {
+          "inherited_soft": 0,
+          "inherited_hard": -1,
+          "applied_soft": 0,
+          "applied_hard": 0
+        },
+        "FSIZE": {
+          "inherited_soft": -1,
+          "inherited_hard": -1,
+          "applied_soft": 268435456,
+          "applied_hard": 268435456
+        },
+        "NOFILE": {
+          "inherited_soft": 1024,
+          "inherited_hard": 1048576,
+          "applied_soft": 64,
+          "applied_hard": 64
+        },
+        "NPROC": {
+          "inherited_soft": 63295,
+          "inherited_hard": 63295,
+          "applied_soft": 32,
+          "applied_hard": 32
+        }
+      },
+      "observed_stream_bytes": {
+        "stdout": 0,
+        "stderr": 0
+      },
+      "stop_reason": null,
+      "wall_seconds": 0.0454295009985799
+    },
+    {
+      "kind": "compile",
+      "index": 14,
+      "argv": [
+        "/usr/bin/x86_64-linux-gnu-g++-13",
+        "/home/codextransfer/predictive_motion/results/phase5/session-controlled-stop-explicit-warm-nominal-active32-brake64-dwell25-v1-20261016-attempt63/build-attempt1/unit-25.o",
+        "/home/codextransfer/predictive_motion/results/phase5/session-controlled-stop-explicit-warm-nominal-active32-brake64-dwell25-v1-20261016-attempt63/build-attempt1/unit-1.o",
+        "/home/codextransfer/predictive_motion/results/phase5/session-controlled-stop-explicit-warm-nominal-active32-brake64-dwell25-v1-20261016-attempt63/build-attempt1/unit-2.o",
+        "/home/codextransfer/predictive_motion/results/phase5/session-controlled-stop-explicit-warm-nominal-active32-brake64-dwell25-v1-20261016-attempt63/build-attempt1/unit-3.o",
+        "/home/codextransfer/predictive_motion/results/phase5/session-controlled-stop-explicit-warm-nominal-active32-brake64-dwell25-v1-20261016-attempt63/build-attempt1/unit-4.o",
+        "/home/codextransfer/predictive_motion/results/phase5/session-controlled-stop-explicit-warm-nominal-active32-brake64-dwell25-v1-20261016-attempt63/build-attempt1/unit-5.o",
+        "/home/codextransfer/predictive_motion/results/phase5/session-controlled-stop-explicit-warm-nominal-active32-brake64-dwell25-v1-20261016-attempt63/build-attempt1/unit-6.o",
+        "/home/codextransfer/predictive_motion/results/phase5/session-controlled-stop-explicit-warm-nominal-active32-brake64-dwell25-v1-20261016-attempt63/build-attempt1/unit-7.o",
+        "/home/codextransfer/predictive_motion/results/phase5/session-controlled-stop-explicit-warm-nominal-active32-brake64-dwell25-v1-20261016-attempt63/build-attempt1/unit-9.o",
+        "/home/codextransfer/predictive_motion/results/phase5/session-task-start-a-primaldual-v2-20261010-attempt5/build-attempt1/unit-9.o",
+        "/home/codextransfer/predictive_motion/results/phase5/integrated-first-cycle-v1-20261010/build-attempt1/unit-7.o",
+        "-Wl,--start-group",
+        "/home/codextransfer/predictive_motion/install/predictive_motion_kinematics/lib/librobot_kinematics.a",
+        "/home/codextransfer/predictive_motion/.vendor/osqp-1.0.0-install/lib/libosqpstatic.a",
+        "/home/codextransfer/predictive_motion/results/phase5/repaired-source-configure-only-after-v4-20261009/attempt1/build/inventory-source/input-source/cost-source/affine-source/normalized-source/model-boundary/live-foundation/libpublic_live_affine_v2_foundation.a",
+        "/home/codextransfer/predictive_motion/results/phase5/repaired-source-configure-only-after-v4-20261009/attempt1/build/inventory-source/input-source/cost-source/affine-source/normalized-source/model-boundary/frozen-extension/libpublic_coupled_augmented_extension.a",
+        "/home/codextransfer/predictive_motion/results/phase5/repaired-source-configure-only-after-v4-20261009/attempt1/build/inventory-source/input-source/cost-source/affine-source/normalized-source/model-boundary/frozen-extension/libfrozen_augmented_extension_value.a",
+        "/home/codextransfer/predictive_motion/results/phase5/repaired-source-configure-only-after-v4-20261009/attempt1/build/inventory-source/input-source/cost-source/affine-source/normalized-source/model-boundary/frozen-extension/physical-derivative/libpublic_coupled_derivative_model.a",
+        "/home/codextransfer/predictive_motion/results/phase5/repaired-source-configure-only-after-v4-20261009/attempt1/build/inventory-source/input-source/cost-source/affine-source/normalized-source/model-boundary/frozen-extension/physical-derivative/base-v2/libpublic_coupled_model_v2.a",
+        "-Wl,--end-group",
+        "/home/codextransfer/predictive_motion/.vendor/mujoco-3.3.7/lib/libmujoco.so",
+        "/usr/lib/x86_64-linux-gnu/libcrypto.so",
+        "/usr/lib/x86_64-linux-gnu/libyaml-cpp.so",
+        "/opt/ros/jazzy/lib/x86_64-linux-gnu/libpinocchio_default.so.4.1.0",
+        "/opt/ros/jazzy/lib/x86_64-linux-gnu/libpinocchio_collision.so.4.1.0",
+        "/opt/ros/jazzy/lib/x86_64-linux-gnu/libpinocchio_parsers.so.4.1.0",
+        "/usr/lib/x86_64-linux-gnu/libboost_serialization.so.1.83.0",
+        "/usr/lib/x86_64-linux-gnu/libboost_filesystem.so.1.83.0",
+        "/opt/ros/jazzy/lib/x86_64-linux-gnu/libcoal.so.3.0.3",
+        "-ldl",
+        "-pthread",
+        "-Wl,--disable-new-dtags",
+        "-Wl,-rpath,/home/codextransfer/predictive_motion/.vendor/mujoco-3.3.7/lib:/opt/ros/jazzy/lib/x86_64-linux-gnu:/opt/ros/jazzy/lib:/usr/lib/x86_64-linux-gnu",
+        "-lz",
+        "-Wl,-Map,/home/codextransfer/predictive_motion/results/phase5/session-controlled-stop-explicit-warm-nominal-active32-brake64-dwell25-v1-20261016-attempt63/link-attempt1/working_face_trace_codec_tests.map",
+        "-o",
+        "/home/codextransfer/predictive_motion/results/phase5/session-controlled-stop-explicit-warm-nominal-active32-brake64-dwell25-v1-20261016-attempt63/link-attempt1/working_face_trace_codec_tests"
+      ],
+      "stage": "CHILD_EXIT_REAPED",
+      "actual_project_tool_entry": "Popen started; exit retained, compiler/link success only if exit0",
+      "exit": 0,
+      "first_error": null,
+      "applied_limits": {
+        "CPU": {
+          "inherited_soft": -1,
+          "inherited_hard": -1,
+          "applied_soft": 120,
+          "applied_hard": 120
+        },
+        "AS": {
+          "inherited_soft": -1,
+          "inherited_hard": -1,
+          "applied_soft": 2147483648,
+          "applied_hard": 2147483648
+        },
+        "CORE": {
+          "inherited_soft": 0,
+          "inherited_hard": -1,
+          "applied_soft": 0,
+          "applied_hard": 0
+        },
+        "FSIZE": {
+          "inherited_soft": -1,
+          "inherited_hard": -1,
+          "applied_soft": 268435456,
+          "applied_hard": 268435456
+        },
+        "NOFILE": {
+          "inherited_soft": 1024,
+          "inherited_hard": 1048576,
+          "applied_soft": 64,
+          "applied_hard": 64
+        },
+        "NPROC": {
+          "inherited_soft": 63295,
+          "inherited_hard": 63295,
+          "applied_soft": 32,
+          "applied_hard": 32
+        }
+      },
+      "observed_stream_bytes": {
+        "stdout": 0,
+        "stderr": 0
+      },
+      "stop_reason": null,
+      "wall_seconds": 0.2696917949942872
+    },
+    {
+      "kind": "compile",
+      "index": 15,
+      "argv": [
+        "/usr/bin/x86_64-linux-gnu-g++-13",
+        "/home/codextransfer/predictive_motion/results/phase5/session-controlled-stop-explicit-warm-nominal-active32-brake64-dwell25-v1-20261016-attempt63/build-attempt1/unit-26.o",
+        "-Wl,--start-group",
+        "/home/codextransfer/predictive_motion/install/predictive_motion_kinematics/lib/librobot_kinematics.a",
+        "/home/codextransfer/predictive_motion/.vendor/osqp-1.0.0-install/lib/libosqpstatic.a",
+        "/home/codextransfer/predictive_motion/results/phase5/repaired-source-configure-only-after-v4-20261009/attempt1/build/inventory-source/input-source/cost-source/affine-source/normalized-source/model-boundary/live-foundation/libpublic_live_affine_v2_foundation.a",
+        "/home/codextransfer/predictive_motion/results/phase5/repaired-source-configure-only-after-v4-20261009/attempt1/build/inventory-source/input-source/cost-source/affine-source/normalized-source/model-boundary/frozen-extension/libpublic_coupled_augmented_extension.a",
+        "/home/codextransfer/predictive_motion/results/phase5/repaired-source-configure-only-after-v4-20261009/attempt1/build/inventory-source/input-source/cost-source/affine-source/normalized-source/model-boundary/frozen-extension/libfrozen_augmented_extension_value.a",
+        "/home/codextransfer/predictive_motion/results/phase5/repaired-source-configure-only-after-v4-20261009/attempt1/build/inventory-source/input-source/cost-source/affine-source/normalized-source/model-boundary/frozen-extension/physical-derivative/libpublic_coupled_derivative_model.a",
+        "/home/codextransfer/predictive_motion/results/phase5/repaired-source-configure-only-after-v4-20261009/attempt1/build/inventory-source/input-source/cost-source/affine-source/normalized-source/model-boundary/frozen-extension/physical-derivative/base-v2/libpublic_coupled_model_v2.a",
+        "-Wl,--end-group",
+        "/home/codextransfer/predictive_motion/.vendor/mujoco-3.3.7/lib/libmujoco.so",
+        "/usr/lib/x86_64-linux-gnu/libcrypto.so",
+        "/usr/lib/x86_64-linux-gnu/libyaml-cpp.so",
+        "/opt/ros/jazzy/lib/x86_64-linux-gnu/libpinocchio_default.so.4.1.0",
+        "/opt/ros/jazzy/lib/x86_64-linux-gnu/libpinocchio_collision.so.4.1.0",
+        "/opt/ros/jazzy/lib/x86_64-linux-gnu/libpinocchio_parsers.so.4.1.0",
+        "/usr/lib/x86_64-linux-gnu/libboost_serialization.so.1.83.0",
+        "/usr/lib/x86_64-linux-gnu/libboost_filesystem.so.1.83.0",
+        "/opt/ros/jazzy/lib/x86_64-linux-gnu/libcoal.so.3.0.3",
+        "-ldl",
+        "-pthread",
+        "-Wl,--disable-new-dtags",
+        "-Wl,-rpath,/home/codextransfer/predictive_motion/.vendor/mujoco-3.3.7/lib:/opt/ros/jazzy/lib/x86_64-linux-gnu:/opt/ros/jazzy/lib:/usr/lib/x86_64-linux-gnu",
+        "-lz",
+        "-Wl,-Map,/home/codextransfer/predictive_motion/results/phase5/session-controlled-stop-explicit-warm-nominal-active32-brake64-dwell25-v1-20261016-attempt63/link-attempt1/bounded_flat_progress_seed_tests.map",
+        "-o",
+        "/home/codextransfer/predictive_motion/results/phase5/session-controlled-stop-explicit-warm-nominal-active32-brake64-dwell25-v1-20261016-attempt63/link-attempt1/bounded_flat_progress_seed_tests"
+      ],
+      "stage": "CHILD_EXIT_REAPED",
+      "actual_project_tool_entry": "Popen started; exit retained, compiler/link success only if exit0",
+      "exit": 0,
+      "first_error": null,
+      "applied_limits": {
+        "CPU": {
+          "inherited_soft": -1,
+          "inherited_hard": -1,
+          "applied_soft": 120,
+          "applied_hard": 120
+        },
+        "AS": {
+          "inherited_soft": -1,
+          "inherited_hard": -1,
+          "applied_soft": 2147483648,
+          "applied_hard": 2147483648
+        },
+        "CORE": {
+          "inherited_soft": 0,
+          "inherited_hard": -1,
+          "applied_soft": 0,
+          "applied_hard": 0
+        },
+        "FSIZE": {
+          "inherited_soft": -1,
+          "inherited_hard": -1,
+          "applied_soft": 268435456,
+          "applied_hard": 268435456
+        },
+        "NOFILE": {
+          "inherited_soft": 1024,
+          "inherited_hard": 1048576,
+          "applied_soft": 64,
+          "applied_hard": 64
+        },
+        "NPROC": {
+          "inherited_soft": 63295,
+          "inherited_hard": 63295,
+          "applied_soft": 32,
+          "applied_hard": 32
+        }
+      },
+      "observed_stream_bytes": {
+        "stdout": 0,
+        "stderr": 0
+      },
+      "stop_reason": null,
+      "wall_seconds": 0.04199713299749419
+    },
+    {
+      "kind": "compile",
+      "index": 16,
+      "argv": [
+        "/usr/bin/x86_64-linux-gnu-g++-13",
+        "/home/codextransfer/predictive_motion/results/phase5/session-controlled-stop-explicit-warm-nominal-active32-brake64-dwell25-v1-20261016-attempt63/build-attempt1/unit-27.o",
+        "/home/codextransfer/predictive_motion/results/phase5/session-controlled-stop-explicit-warm-nominal-active32-brake64-dwell25-v1-20261016-attempt63/build-attempt1/unit-1.o",
+        "/home/codextransfer/predictive_motion/results/phase5/session-controlled-stop-explicit-warm-nominal-active32-brake64-dwell25-v1-20261016-attempt63/build-attempt1/unit-2.o",
+        "/home/codextransfer/predictive_motion/results/phase5/session-controlled-stop-explicit-warm-nominal-active32-brake64-dwell25-v1-20261016-attempt63/build-attempt1/unit-3.o",
+        "/home/codextransfer/predictive_motion/results/phase5/session-controlled-stop-explicit-warm-nominal-active32-brake64-dwell25-v1-20261016-attempt63/build-attempt1/unit-4.o",
+        "/home/codextransfer/predictive_motion/results/phase5/session-controlled-stop-explicit-warm-nominal-active32-brake64-dwell25-v1-20261016-attempt63/build-attempt1/unit-5.o",
+        "/home/codextransfer/predictive_motion/results/phase5/session-controlled-stop-explicit-warm-nominal-active32-brake64-dwell25-v1-20261016-attempt63/build-attempt1/unit-6.o",
+        "/home/codextransfer/predictive_motion/results/phase5/session-controlled-stop-explicit-warm-nominal-active32-brake64-dwell25-v1-20261016-attempt63/build-attempt1/unit-7.o",
+        "/home/codextransfer/predictive_motion/results/phase5/session-controlled-stop-explicit-warm-nominal-active32-brake64-dwell25-v1-20261016-attempt63/build-attempt1/unit-9.o",
+        "/home/codextransfer/predictive_motion/results/phase5/session-task-start-a-primaldual-v2-20261010-attempt5/build-attempt1/unit-9.o",
+        "/home/codextransfer/predictive_motion/results/phase5/integrated-first-cycle-v1-20261010/build-attempt1/unit-7.o",
+        "-Wl,--start-group",
+        "/home/codextransfer/predictive_motion/install/predictive_motion_kinematics/lib/librobot_kinematics.a",
+        "/home/codextransfer/predictive_motion/.vendor/osqp-1.0.0-install/lib/libosqpstatic.a",
+        "/home/codextransfer/predictive_motion/results/phase5/repaired-source-configure-only-after-v4-20261009/attempt1/build/inventory-source/input-source/cost-source/affine-source/normalized-source/model-boundary/live-foundation/libpublic_live_affine_v2_foundation.a",
+        "/home/codextransfer/predictive_motion/results/phase5/repaired-source-configure-only-after-v4-20261009/attempt1/build/inventory-source/input-source/cost-source/affine-source/normalized-source/model-boundary/frozen-extension/libpublic_coupled_augmented_extension.a",
+        "/home/codextransfer/predictive_motion/results/phase5/repaired-source-configure-only-after-v4-20261009/attempt1/build/inventory-source/input-source/cost-source/affine-source/normalized-source/model-boundary/frozen-extension/libfrozen_augmented_extension_value.a",
+        "/home/codextransfer/predictive_motion/results/phase5/repaired-source-configure-only-after-v4-20261009/attempt1/build/inventory-source/input-source/cost-source/affine-source/normalized-source/model-boundary/frozen-extension/physical-derivative/libpublic_coupled_derivative_model.a",
+        "/home/codextransfer/predictive_motion/results/phase5/repaired-source-configure-only-after-v4-20261009/attempt1/build/inventory-source/input-source/cost-source/affine-source/normalized-source/model-boundary/frozen-extension/physical-derivative/base-v2/libpublic_coupled_model_v2.a",
+        "-Wl,--end-group",
+        "/home/codextransfer/predictive_motion/.vendor/mujoco-3.3.7/lib/libmujoco.so",
+        "/usr/lib/x86_64-linux-gnu/libcrypto.so",
+        "/usr/lib/x86_64-linux-gnu/libyaml-cpp.so",
+        "/opt/ros/jazzy/lib/x86_64-linux-gnu/libpinocchio_default.so.4.1.0",
+        "/opt/ros/jazzy/lib/x86_64-linux-gnu/libpinocchio_collision.so.4.1.0",
+        "/opt/ros/jazzy/lib/x86_64-linux-gnu/libpinocchio_parsers.so.4.1.0",
+        "/usr/lib/x86_64-linux-gnu/libboost_serialization.so.1.83.0",
+        "/usr/lib/x86_64-linux-gnu/libboost_filesystem.so.1.83.0",
+        "/opt/ros/jazzy/lib/x86_64-linux-gnu/libcoal.so.3.0.3",
+        "-ldl",
+        "-pthread",
+        "-Wl,--disable-new-dtags",
+        "-Wl,-rpath,/home/codextransfer/predictive_motion/.vendor/mujoco-3.3.7/lib:/opt/ros/jazzy/lib/x86_64-linux-gnu:/opt/ros/jazzy/lib:/usr/lib/x86_64-linux-gnu",
+        "-lz",
+        "-Wl,-Map,/home/codextransfer/predictive_motion/results/phase5/session-controlled-stop-explicit-warm-nominal-active32-brake64-dwell25-v1-20261016-attempt63/link-attempt1/flat_progress_seed_codec_tests.map",
+        "-o",
+        "/home/codextransfer/predictive_motion/results/phase5/session-controlled-stop-explicit-warm-nominal-active32-brake64-dwell25-v1-20261016-attempt63/link-attempt1/flat_progress_seed_codec_tests"
+      ],
+      "stage": "CHILD_EXIT_REAPED",
+      "actual_project_tool_entry": "Popen started; exit retained, compiler/link success only if exit0",
+      "exit": 0,
+      "first_error": null,
+      "applied_limits": {
+        "CPU": {
+          "inherited_soft": -1,
+          "inherited_hard": -1,
+          "applied_soft": 120,
+          "applied_hard": 120
+        },
+        "AS": {
+          "inherited_soft": -1,
+          "inherited_hard": -1,
+          "applied_soft": 2147483648,
+          "applied_hard": 2147483648
+        },
+        "CORE": {
+          "inherited_soft": 0,
+          "inherited_hard": -1,
+          "applied_soft": 0,
+          "applied_hard": 0
+        },
+        "FSIZE": {
+          "inherited_soft": -1,
+          "inherited_hard": -1,
+          "applied_soft": 268435456,
+          "applied_hard": 268435456
+        },
+        "NOFILE": {
+          "inherited_soft": 1024,
+          "inherited_hard": 1048576,
+          "applied_soft": 64,
+          "applied_hard": 64
+        },
+        "NPROC": {
+          "inherited_soft": 63295,
+          "inherited_hard": 63295,
+          "applied_soft": 32,
+          "applied_hard": 32
+        }
+      },
+      "observed_stream_bytes": {
+        "stdout": 0,
+        "stderr": 0
+      },
+      "stop_reason": null,
+      "wall_seconds": 0.24014193999755662
+    },
+    {
+      "kind": "compile",
+      "index": 17,
+      "argv": [
+        "/usr/bin/x86_64-linux-gnu-g++-13",
+        "/home/codextransfer/predictive_motion/results/phase5/session-controlled-stop-explicit-warm-nominal-active32-brake64-dwell25-v1-20261016-attempt63/build-attempt1/unit-28.o",
+        "-Wl,--start-group",
+        "/home/codextransfer/predictive_motion/install/predictive_motion_kinematics/lib/librobot_kinematics.a",
+        "/home/codextransfer/predictive_motion/.vendor/osqp-1.0.0-install/lib/libosqpstatic.a",
+        "/home/codextransfer/predictive_motion/results/phase5/repaired-source-configure-only-after-v4-20261009/attempt1/build/inventory-source/input-source/cost-source/affine-source/normalized-source/model-boundary/live-foundation/libpublic_live_affine_v2_foundation.a",
+        "/home/codextransfer/predictive_motion/results/phase5/repaired-source-configure-only-after-v4-20261009/attempt1/build/inventory-source/input-source/cost-source/affine-source/normalized-source/model-boundary/frozen-extension/libpublic_coupled_augmented_extension.a",
+        "/home/codextransfer/predictive_motion/results/phase5/repaired-source-configure-only-after-v4-20261009/attempt1/build/inventory-source/input-source/cost-source/affine-source/normalized-source/model-boundary/frozen-extension/libfrozen_augmented_extension_value.a",
+        "/home/codextransfer/predictive_motion/results/phase5/repaired-source-configure-only-after-v4-20261009/attempt1/build/inventory-source/input-source/cost-source/affine-source/normalized-source/model-boundary/frozen-extension/physical-derivative/libpublic_coupled_derivative_model.a",
+        "/home/codextransfer/predictive_motion/results/phase5/repaired-source-configure-only-after-v4-20261009/attempt1/build/inventory-source/input-source/cost-source/affine-source/normalized-source/model-boundary/frozen-extension/physical-derivative/base-v2/libpublic_coupled_model_v2.a",
+        "-Wl,--end-group",
+        "/home/codextransfer/predictive_motion/.vendor/mujoco-3.3.7/lib/libmujoco.so",
+        "/usr/lib/x86_64-linux-gnu/libcrypto.so",
+        "/usr/lib/x86_64-linux-gnu/libyaml-cpp.so",
+        "/opt/ros/jazzy/lib/x86_64-linux-gnu/libpinocchio_default.so.4.1.0",
+        "/opt/ros/jazzy/lib/x86_64-linux-gnu/libpinocchio_collision.so.4.1.0",
+        "/opt/ros/jazzy/lib/x86_64-linux-gnu/libpinocchio_parsers.so.4.1.0",
+        "/usr/lib/x86_64-linux-gnu/libboost_serialization.so.1.83.0",
+        "/usr/lib/x86_64-linux-gnu/libboost_filesystem.so.1.83.0",
+        "/opt/ros/jazzy/lib/x86_64-linux-gnu/libcoal.so.3.0.3",
+        "-ldl",
+        "-pthread",
+        "-Wl,--disable-new-dtags",
+        "-Wl,-rpath,/home/codextransfer/predictive_motion/.vendor/mujoco-3.3.7/lib:/opt/ros/jazzy/lib/x86_64-linux-gnu:/opt/ros/jazzy/lib:/usr/lib/x86_64-linux-gnu",
+        "-lz",
+        "-Wl,--wrap=EVP_DigestUpdate",
+        "-Wl,-Map,/home/codextransfer/predictive_motion/results/phase5/session-controlled-stop-explicit-warm-nominal-active32-brake64-dwell25-v1-20261016-attempt63/link-attempt1/lossless_stream_storage_tests.map",
+        "-o",
+        "/home/codextransfer/predictive_motion/results/phase5/session-controlled-stop-explicit-warm-nominal-active32-brake64-dwell25-v1-20261016-attempt63/link-attempt1/lossless_stream_storage_tests"
+      ],
+      "stage": "CHILD_EXIT_REAPED",
+      "actual_project_tool_entry": "Popen started; exit retained, compiler/link success only if exit0",
+      "exit": 0,
+      "first_error": null,
+      "applied_limits": {
+        "CPU": {
+          "inherited_soft": -1,
+          "inherited_hard": -1,
+          "applied_soft": 120,
+          "applied_hard": 120
+        },
+        "AS": {
+          "inherited_soft": -1,
+          "inherited_hard": -1,
+          "applied_soft": 2147483648,
+          "applied_hard": 2147483648
+        },
+        "CORE": {
+          "inherited_soft": 0,
+          "inherited_hard": -1,
+          "applied_soft": 0,
+          "applied_hard": 0
+        },
+        "FSIZE": {
+          "inherited_soft": -1,
+          "inherited_hard": -1,
+          "applied_soft": 268435456,
+          "applied_hard": 268435456
+        },
+        "NOFILE": {
+          "inherited_soft": 1024,
+          "inherited_hard": 1048576,
+          "applied_soft": 64,
+          "applied_hard": 64
+        },
+        "NPROC": {
+          "inherited_soft": 63295,
+          "inherited_hard": 63295,
+          "applied_soft": 32,
+          "applied_hard": 32
+        }
+      },
+      "observed_stream_bytes": {
+        "stdout": 0,
+        "stderr": 0
+      },
+      "stop_reason": null,
+      "wall_seconds": 0.0649535420088796
+    },
+    {
+      "kind": "compile",
+      "index": 18,
+      "argv": [
+        "/usr/bin/x86_64-linux-gnu-g++-13",
+        "/home/codextransfer/predictive_motion/results/phase5/session-controlled-stop-explicit-warm-nominal-active32-brake64-dwell25-v1-20261016-attempt63/build-attempt1/unit-29.o",
+        "/home/codextransfer/predictive_motion/results/phase5/session-controlled-stop-explicit-warm-nominal-active32-brake64-dwell25-v1-20261016-attempt63/build-attempt1/unit-1.o",
+        "/home/codextransfer/predictive_motion/results/phase5/session-controlled-stop-explicit-warm-nominal-active32-brake64-dwell25-v1-20261016-attempt63/build-attempt1/unit-2.o",
+        "/home/codextransfer/predictive_motion/results/phase5/session-controlled-stop-explicit-warm-nominal-active32-brake64-dwell25-v1-20261016-attempt63/build-attempt1/unit-3.o",
+        "/home/codextransfer/predictive_motion/results/phase5/session-controlled-stop-explicit-warm-nominal-active32-brake64-dwell25-v1-20261016-attempt63/build-attempt1/unit-4.o",
+        "/home/codextransfer/predictive_motion/results/phase5/session-controlled-stop-explicit-warm-nominal-active32-brake64-dwell25-v1-20261016-attempt63/build-attempt1/unit-5.o",
+        "/home/codextransfer/predictive_motion/results/phase5/session-controlled-stop-explicit-warm-nominal-active32-brake64-dwell25-v1-20261016-attempt63/build-attempt1/unit-6.o",
+        "/home/codextransfer/predictive_motion/results/phase5/session-controlled-stop-explicit-warm-nominal-active32-brake64-dwell25-v1-20261016-attempt63/build-attempt1/unit-7.o",
+        "/home/codextransfer/predictive_motion/results/phase5/session-controlled-stop-explicit-warm-nominal-active32-brake64-dwell25-v1-20261016-attempt63/build-attempt1/unit-9.o",
+        "/home/codextransfer/predictive_motion/results/phase5/session-task-start-a-primaldual-v2-20261010-attempt5/build-attempt1/unit-9.o",
+        "/home/codextransfer/predictive_motion/results/phase5/integrated-first-cycle-v1-20261010/build-attempt1/unit-7.o",
+        "-Wl,--start-group",
+        "/home/codextransfer/predictive_motion/install/predictive_motion_kinematics/lib/librobot_kinematics.a",
+        "/home/codextransfer/predictive_motion/.vendor/osqp-1.0.0-install/lib/libosqpstatic.a",
+        "/home/codextransfer/predictive_motion/results/phase5/repaired-source-configure-only-after-v4-20261009/attempt1/build/inventory-source/input-source/cost-source/affine-source/normalized-source/model-boundary/live-foundation/libpublic_live_affine_v2_foundation.a",
+        "/home/codextransfer/predictive_motion/results/phase5/repaired-source-configure-only-after-v4-20261009/attempt1/build/inventory-source/input-source/cost-source/affine-source/normalized-source/model-boundary/frozen-extension/libpublic_coupled_augmented_extension.a",
+        "/home/codextransfer/predictive_motion/results/phase5/repaired-source-configure-only-after-v4-20261009/attempt1/build/inventory-source/input-source/cost-source/affine-source/normalized-source/model-boundary/frozen-extension/libfrozen_augmented_extension_value.a",
+        "/home/codextransfer/predictive_motion/results/phase5/repaired-source-configure-only-after-v4-20261009/attempt1/build/inventory-source/input-source/cost-source/affine-source/normalized-source/model-boundary/frozen-extension/physical-derivative/libpublic_coupled_derivative_model.a",
+        "/home/codextransfer/predictive_motion/results/phase5/repaired-source-configure-only-after-v4-20261009/attempt1/build/inventory-source/input-source/cost-source/affine-source/normalized-source/model-boundary/frozen-extension/physical-derivative/base-v2/libpublic_coupled_model_v2.a",
+        "-Wl,--end-group",
+        "/home/codextransfer/predictive_motion/.vendor/mujoco-3.3.7/lib/libmujoco.so",
+        "/usr/lib/x86_64-linux-gnu/libcrypto.so",
+        "/usr/lib/x86_64-linux-gnu/libyaml-cpp.so",
+        "/opt/ros/jazzy/lib/x86_64-linux-gnu/libpinocchio_default.so.4.1.0",
+        "/opt/ros/jazzy/lib/x86_64-linux-gnu/libpinocchio_collision.so.4.1.0",
+        "/opt/ros/jazzy/lib/x86_64-linux-gnu/libpinocchio_parsers.so.4.1.0",
+        "/usr/lib/x86_64-linux-gnu/libboost_serialization.so.1.83.0",
+        "/usr/lib/x86_64-linux-gnu/libboost_filesystem.so.1.83.0",
+        "/opt/ros/jazzy/lib/x86_64-linux-gnu/libcoal.so.3.0.3",
+        "-ldl",
+        "-pthread",
+        "-Wl,--disable-new-dtags",
+        "-Wl,-rpath,/home/codextransfer/predictive_motion/.vendor/mujoco-3.3.7/lib:/opt/ros/jazzy/lib/x86_64-linux-gnu:/opt/ros/jazzy/lib:/usr/lib/x86_64-linux-gnu",
+        "-lz",
+        "-Wl,-Map,/home/codextransfer/predictive_motion/results/phase5/session-controlled-stop-explicit-warm-nominal-active32-brake64-dwell25-v1-20261016-attempt63/link-attempt1/evidence_compression_tests.map",
+        "-o",
+        "/home/codextransfer/predictive_motion/results/phase5/session-controlled-stop-explicit-warm-nominal-active32-brake64-dwell25-v1-20261016-attempt63/link-attempt1/evidence_compression_tests"
+      ],
+      "stage": "CHILD_EXIT_REAPED",
+      "actual_project_tool_entry": "Popen started; exit retained, compiler/link success only if exit0",
+      "exit": 0,
+      "first_error": null,
+      "applied_limits": {
+        "CPU": {
+          "inherited_soft": -1,
+          "inherited_hard": -1,
+          "applied_soft": 120,
+          "applied_hard": 120
+        },
+        "AS": {
+          "inherited_soft": -1,
+          "inherited_hard": -1,
+          "applied_soft": 2147483648,
+          "applied_hard": 2147483648
+        },
+        "CORE": {
+          "inherited_soft": 0,
+          "inherited_hard": -1,
+          "applied_soft": 0,
+          "applied_hard": 0
+        },
+        "FSIZE": {
+          "inherited_soft": -1,
+          "inherited_hard": -1,
+          "applied_soft": 268435456,
+          "applied_hard": 268435456
+        },
+        "NOFILE": {
+          "inherited_soft": 1024,
+          "inherited_hard": 1048576,
+          "applied_soft": 64,
+          "applied_hard": 64
+        },
+        "NPROC": {
+          "inherited_soft": 63295,
+          "inherited_hard": 63295,
+          "applied_soft": 32,
+          "applied_hard": 32
+        }
+      },
+      "observed_stream_bytes": {
+        "stdout": 0,
+        "stderr": 0
+      },
+      "stop_reason": null,
+      "wall_seconds": 0.2583529149997048
+    },
+    {
+      "kind": "compile",
+      "index": 19,
+      "argv": [
+        "/usr/bin/x86_64-linux-gnu-g++-13",
+        "/home/codextransfer/predictive_motion/results/phase5/session-controlled-stop-explicit-warm-nominal-active32-brake64-dwell25-v1-20261016-attempt63/build-attempt1/unit-30.o",
+        "-Wl,-Map,/home/codextransfer/predictive_motion/results/phase5/session-controlled-stop-explicit-warm-nominal-active32-brake64-dwell25-v1-20261016-attempt63/link-attempt1/kkt_refinement_tests.map",
+        "-o",
+        "/home/codextransfer/predictive_motion/results/phase5/session-controlled-stop-explicit-warm-nominal-active32-brake64-dwell25-v1-20261016-attempt63/link-attempt1/kkt_refinement_tests"
+      ],
+      "stage": "CHILD_EXIT_REAPED",
+      "actual_project_tool_entry": "Popen started; exit retained, compiler/link success only if exit0",
+      "exit": 0,
+      "first_error": null,
+      "applied_limits": {
+        "CPU": {
+          "inherited_soft": -1,
+          "inherited_hard": -1,
+          "applied_soft": 120,
+          "applied_hard": 120
+        },
+        "AS": {
+          "inherited_soft": -1,
+          "inherited_hard": -1,
+          "applied_soft": 2147483648,
+          "applied_hard": 2147483648
+        },
+        "CORE": {
+          "inherited_soft": 0,
+          "inherited_hard": -1,
+          "applied_soft": 0,
+          "applied_hard": 0
+        },
+        "FSIZE": {
+          "inherited_soft": -1,
+          "inherited_hard": -1,
+          "applied_soft": 268435456,
+          "applied_hard": 268435456
+        },
+        "NOFILE": {
+          "inherited_soft": 1024,
+          "inherited_hard": 1048576,
+          "applied_soft": 64,
+          "applied_hard": 64
+        },
+        "NPROC": {
+          "inherited_soft": 63295,
+          "inherited_hard": 63295,
+          "applied_soft": 32,
+          "applied_hard": 32
+        }
+      },
+      "observed_stream_bytes": {
+        "stdout": 0,
+        "stderr": 0
+      },
+      "stop_reason": null,
+      "wall_seconds": 0.039187957998365164
+    },
+    {
+      "kind": "compile",
+      "index": 20,
+      "argv": [
+        "/usr/bin/x86_64-linux-gnu-g++-13",
+        "/home/codextransfer/predictive_motion/results/phase5/session-controlled-stop-explicit-warm-nominal-active32-brake64-dwell25-v1-20261016-attempt63/build-attempt1/unit-31.o",
+        "-Wl,--start-group",
+        "/home/codextransfer/predictive_motion/install/predictive_motion_kinematics/lib/librobot_kinematics.a",
+        "/home/codextransfer/predictive_motion/.vendor/osqp-1.0.0-install/lib/libosqpstatic.a",
+        "/home/codextransfer/predictive_motion/results/phase5/repaired-source-configure-only-after-v4-20261009/attempt1/build/inventory-source/input-source/cost-source/affine-source/normalized-source/model-boundary/live-foundation/libpublic_live_affine_v2_foundation.a",
+        "/home/codextransfer/predictive_motion/results/phase5/repaired-source-configure-only-after-v4-20261009/attempt1/build/inventory-source/input-source/cost-source/affine-source/normalized-source/model-boundary/frozen-extension/libpublic_coupled_augmented_extension.a",
+        "/home/codextransfer/predictive_motion/results/phase5/repaired-source-configure-only-after-v4-20261009/attempt1/build/inventory-source/input-source/cost-source/affine-source/normalized-source/model-boundary/frozen-extension/libfrozen_augmented_extension_value.a",
+        "/home/codextransfer/predictive_motion/results/phase5/repaired-source-configure-only-after-v4-20261009/attempt1/build/inventory-source/input-source/cost-source/affine-source/normalized-source/model-boundary/frozen-extension/physical-derivative/libpublic_coupled_derivative_model.a",
+        "/home/codextransfer/predictive_motion/results/phase5/repaired-source-configure-only-after-v4-20261009/attempt1/build/inventory-source/input-source/cost-source/affine-source/normalized-source/model-boundary/frozen-extension/physical-derivative/base-v2/libpublic_coupled_model_v2.a",
+        "-Wl,--end-group",
+        "/home/codextransfer/predictive_motion/.vendor/mujoco-3.3.7/lib/libmujoco.so",
+        "/usr/lib/x86_64-linux-gnu/libcrypto.so",
+        "/usr/lib/x86_64-linux-gnu/libyaml-cpp.so",
+        "/opt/ros/jazzy/lib/x86_64-linux-gnu/libpinocchio_default.so.4.1.0",
+        "/opt/ros/jazzy/lib/x86_64-linux-gnu/libpinocchio_collision.so.4.1.0",
+        "/opt/ros/jazzy/lib/x86_64-linux-gnu/libpinocchio_parsers.so.4.1.0",
+        "/usr/lib/x86_64-linux-gnu/libboost_serialization.so.1.83.0",
+        "/usr/lib/x86_64-linux-gnu/libboost_filesystem.so.1.83.0",
+        "/opt/ros/jazzy/lib/x86_64-linux-gnu/libcoal.so.3.0.3",
+        "-ldl",
+        "-pthread",
+        "-Wl,--disable-new-dtags",
+        "-Wl,-rpath,/home/codextransfer/predictive_motion/.vendor/mujoco-3.3.7/lib:/opt/ros/jazzy/lib/x86_64-linux-gnu:/opt/ros/jazzy/lib:/usr/lib/x86_64-linux-gnu",
+        "-lz",
+        "-Wl,-Map,/home/codextransfer/predictive_motion/results/phase5/session-controlled-stop-explicit-warm-nominal-active32-brake64-dwell25-v1-20261016-attempt63/link-attempt1/bounded_row_progress_seed_tests.map",
+        "-o",
+        "/home/codextransfer/predictive_motion/results/phase5/session-controlled-stop-explicit-warm-nominal-active32-brake64-dwell25-v1-20261016-attempt63/link-attempt1/bounded_row_progress_seed_tests"
+      ],
+      "stage": "CHILD_EXIT_REAPED",
+      "actual_project_tool_entry": "Popen started; exit retained, compiler/link success only if exit0",
+      "exit": 0,
+      "first_error": null,
+      "applied_limits": {
+        "CPU": {
+          "inherited_soft": -1,
+          "inherited_hard": -1,
+          "applied_soft": 120,
+          "applied_hard": 120
+        },
+        "AS": {
+          "inherited_soft": -1,
+          "inherited_hard": -1,
+          "applied_soft": 2147483648,
+          "applied_hard": 2147483648
+        },
+        "CORE": {
+          "inherited_soft": 0,
+          "inherited_hard": -1,
+          "applied_soft": 0,
+          "applied_hard": 0
+        },
+        "FSIZE": {
+          "inherited_soft": -1,
+          "inherited_hard": -1,
+          "applied_soft": 268435456,
+          "applied_hard": 268435456
+        },
+        "NOFILE": {
+          "inherited_soft": 1024,
+          "inherited_hard": 1048576,
+          "applied_soft": 64,
+          "applied_hard": 64
+        },
+        "NPROC": {
+          "inherited_soft": 63295,
+          "inherited_hard": 63295,
+          "applied_soft": 32,
+          "applied_hard": 32
+        }
+      },
+      "observed_stream_bytes": {
+        "stdout": 0,
+        "stderr": 0
+      },
+      "stop_reason": null,
+      "wall_seconds": 0.043804442990222014
+    },
+    {
+      "kind": "compile",
+      "index": 21,
+      "argv": [
+        "/usr/bin/x86_64-linux-gnu-g++-13",
+        "/home/codextransfer/predictive_motion/results/phase5/session-controlled-stop-explicit-warm-nominal-active32-brake64-dwell25-v1-20261016-attempt63/build-attempt1/unit-32.o",
+        "/home/codextransfer/predictive_motion/results/phase5/session-controlled-stop-explicit-warm-nominal-active32-brake64-dwell25-v1-20261016-attempt63/build-attempt1/unit-1.o",
+        "/home/codextransfer/predictive_motion/results/phase5/session-controlled-stop-explicit-warm-nominal-active32-brake64-dwell25-v1-20261016-attempt63/build-attempt1/unit-2.o",
+        "/home/codextransfer/predictive_motion/results/phase5/session-controlled-stop-explicit-warm-nominal-active32-brake64-dwell25-v1-20261016-attempt63/build-attempt1/unit-3.o",
+        "/home/codextransfer/predictive_motion/results/phase5/session-controlled-stop-explicit-warm-nominal-active32-brake64-dwell25-v1-20261016-attempt63/build-attempt1/unit-4.o",
+        "/home/codextransfer/predictive_motion/results/phase5/session-controlled-stop-explicit-warm-nominal-active32-brake64-dwell25-v1-20261016-attempt63/build-attempt1/unit-5.o",
+        "/home/codextransfer/predictive_motion/results/phase5/session-controlled-stop-explicit-warm-nominal-active32-brake64-dwell25-v1-20261016-attempt63/build-attempt1/unit-6.o",
+        "/home/codextransfer/predictive_motion/results/phase5/session-controlled-stop-explicit-warm-nominal-active32-brake64-dwell25-v1-20261016-attempt63/build-attempt1/unit-7.o",
+        "/home/codextransfer/predictive_motion/results/phase5/session-controlled-stop-explicit-warm-nominal-active32-brake64-dwell25-v1-20261016-attempt63/build-attempt1/unit-9.o",
+        "/home/codextransfer/predictive_motion/results/phase5/session-task-start-a-primaldual-v2-20261010-attempt5/build-attempt1/unit-9.o",
+        "/home/codextransfer/predictive_motion/results/phase5/integrated-first-cycle-v1-20261010/build-attempt1/unit-7.o",
+        "-Wl,--start-group",
+        "/home/codextransfer/predictive_motion/install/predictive_motion_kinematics/lib/librobot_kinematics.a",
+        "/home/codextransfer/predictive_motion/.vendor/osqp-1.0.0-install/lib/libosqpstatic.a",
+        "/home/codextransfer/predictive_motion/results/phase5/repaired-source-configure-only-after-v4-20261009/attempt1/build/inventory-source/input-source/cost-source/affine-source/normalized-source/model-boundary/live-foundation/libpublic_live_affine_v2_foundation.a",
+        "/home/codextransfer/predictive_motion/results/phase5/repaired-source-configure-only-after-v4-20261009/attempt1/build/inventory-source/input-source/cost-source/affine-source/normalized-source/model-boundary/frozen-extension/libpublic_coupled_augmented_extension.a",
+        "/home/codextransfer/predictive_motion/results/phase5/repaired-source-configure-only-after-v4-20261009/attempt1/build/inventory-source/input-source/cost-source/affine-source/normalized-source/model-boundary/frozen-extension/libfrozen_augmented_extension_value.a",
+        "/home/codextransfer/predictive_motion/results/phase5/repaired-source-configure-only-after-v4-20261009/attempt1/build/inventory-source/input-source/cost-source/affine-source/normalized-source/model-boundary/frozen-extension/physical-derivative/libpublic_coupled_derivative_model.a",
+        "/home/codextransfer/predictive_motion/results/phase5/repaired-source-configure-only-after-v4-20261009/attempt1/build/inventory-source/input-source/cost-source/affine-source/normalized-source/model-boundary/frozen-extension/physical-derivative/base-v2/libpublic_coupled_model_v2.a",
+        "-Wl,--end-group",
+        "/home/codextransfer/predictive_motion/.vendor/mujoco-3.3.7/lib/libmujoco.so",
+        "/usr/lib/x86_64-linux-gnu/libcrypto.so",
+        "/usr/lib/x86_64-linux-gnu/libyaml-cpp.so",
+        "/opt/ros/jazzy/lib/x86_64-linux-gnu/libpinocchio_default.so.4.1.0",
+        "/opt/ros/jazzy/lib/x86_64-linux-gnu/libpinocchio_collision.so.4.1.0",
+        "/opt/ros/jazzy/lib/x86_64-linux-gnu/libpinocchio_parsers.so.4.1.0",
+        "/usr/lib/x86_64-linux-gnu/libboost_serialization.so.1.83.0",
+        "/usr/lib/x86_64-linux-gnu/libboost_filesystem.so.1.83.0",
+        "/opt/ros/jazzy/lib/x86_64-linux-gnu/libcoal.so.3.0.3",
+        "-ldl",
+        "-pthread",
+        "-Wl,--disable-new-dtags",
+        "-Wl,-rpath,/home/codextransfer/predictive_motion/.vendor/mujoco-3.3.7/lib:/opt/ros/jazzy/lib/x86_64-linux-gnu:/opt/ros/jazzy/lib:/usr/lib/x86_64-linux-gnu",
+        "-lz",
+        "-Wl,-Map,/home/codextransfer/predictive_motion/results/phase5/session-controlled-stop-explicit-warm-nominal-active32-brake64-dwell25-v1-20261016-attempt63/link-attempt1/boundary_retention_codec_tests.map",
+        "-o",
+        "/home/codextransfer/predictive_motion/results/phase5/session-controlled-stop-explicit-warm-nominal-active32-brake64-dwell25-v1-20261016-attempt63/link-attempt1/boundary_retention_codec_tests"
+      ],
+      "stage": "CHILD_EXIT_REAPED",
+      "actual_project_tool_entry": "Popen started; exit retained, compiler/link success only if exit0",
+      "exit": 0,
+      "first_error": null,
+      "applied_limits": {
+        "CPU": {
+          "inherited_soft": -1,
+          "inherited_hard": -1,
+          "applied_soft": 120,
+          "applied_hard": 120
+        },
+        "AS": {
+          "inherited_soft": -1,
+          "inherited_hard": -1,
+          "applied_soft": 2147483648,
+          "applied_hard": 2147483648
+        },
+        "CORE": {
+          "inherited_soft": 0,
+          "inherited_hard": -1,
+          "applied_soft": 0,
+          "applied_hard": 0
+        },
+        "FSIZE": {
+          "inherited_soft": -1,
+          "inherited_hard": -1,
+          "applied_soft": 268435456,
+          "applied_hard": 268435456
+        },
+        "NOFILE": {
+          "inherited_soft": 1024,
+          "inherited_hard": 1048576,
+          "applied_soft": 64,
+          "applied_hard": 64
+        },
+        "NPROC": {
+          "inherited_soft": 63295,
+          "inherited_hard": 63295,
+          "applied_soft": 32,
+          "applied_hard": 32
+        }
+      },
+      "observed_stream_bytes": {
+        "stdout": 0,
+        "stderr": 0
+      },
+      "stop_reason": null,
+      "wall_seconds": 0.25252892400021665
+    },
+    {
+      "kind": "compile",
+      "index": 22,
+      "argv": [
+        "/usr/bin/x86_64-linux-gnu-g++-13",
+        "/home/codextransfer/predictive_motion/results/phase5/session-controlled-stop-explicit-warm-nominal-active32-brake64-dwell25-v1-20261016-attempt63/build-attempt1/unit-33.o",
+        "-Wl,--start-group",
+        "/home/codextransfer/predictive_motion/install/predictive_motion_kinematics/lib/librobot_kinematics.a",
+        "/home/codextransfer/predictive_motion/.vendor/osqp-1.0.0-install/lib/libosqpstatic.a",
+        "/home/codextransfer/predictive_motion/results/phase5/repaired-source-configure-only-after-v4-20261009/attempt1/build/inventory-source/input-source/cost-source/affine-source/normalized-source/model-boundary/live-foundation/libpublic_live_affine_v2_foundation.a",
+        "/home/codextransfer/predictive_motion/results/phase5/repaired-source-configure-only-after-v4-20261009/attempt1/build/inventory-source/input-source/cost-source/affine-source/normalized-source/model-boundary/frozen-extension/libpublic_coupled_augmented_extension.a",
+        "/home/codextransfer/predictive_motion/results/phase5/repaired-source-configure-only-after-v4-20261009/attempt1/build/inventory-source/input-source/cost-source/affine-source/normalized-source/model-boundary/frozen-extension/libfrozen_augmented_extension_value.a",
+        "/home/codextransfer/predictive_motion/results/phase5/repaired-source-configure-only-after-v4-20261009/attempt1/build/inventory-source/input-source/cost-source/affine-source/normalized-source/model-boundary/frozen-extension/physical-derivative/libpublic_coupled_derivative_model.a",
+        "/home/codextransfer/predictive_motion/results/phase5/repaired-source-configure-only-after-v4-20261009/attempt1/build/inventory-source/input-source/cost-source/affine-source/normalized-source/model-boundary/frozen-extension/physical-derivative/base-v2/libpublic_coupled_model_v2.a",
+        "-Wl,--end-group",
+        "/home/codextransfer/predictive_motion/.vendor/mujoco-3.3.7/lib/libmujoco.so",
+        "/usr/lib/x86_64-linux-gnu/libcrypto.so",
+        "/usr/lib/x86_64-linux-gnu/libyaml-cpp.so",
+        "/opt/ros/jazzy/lib/x86_64-linux-gnu/libpinocchio_default.so.4.1.0",
+        "/opt/ros/jazzy/lib/x86_64-linux-gnu/libpinocchio_collision.so.4.1.0",
+        "/opt/ros/jazzy/lib/x86_64-linux-gnu/libpinocchio_parsers.so.4.1.0",
+        "/usr/lib/x86_64-linux-gnu/libboost_serialization.so.1.83.0",
+        "/usr/lib/x86_64-linux-gnu/libboost_filesystem.so.1.83.0",
+        "/opt/ros/jazzy/lib/x86_64-linux-gnu/libcoal.so.3.0.3",
+        "-ldl",
+        "-pthread",
+        "-Wl,--disable-new-dtags",
+        "-Wl,-rpath,/home/codextransfer/predictive_motion/.vendor/mujoco-3.3.7/lib:/opt/ros/jazzy/lib/x86_64-linux-gnu:/opt/ros/jazzy/lib:/usr/lib/x86_64-linux-gnu",
+        "-lz",
+        "-Wl,-Map,/home/codextransfer/predictive_motion/results/phase5/session-controlled-stop-explicit-warm-nominal-active32-brake64-dwell25-v1-20261016-attempt63/link-attempt1/global_interval_seed_tests.map",
+        "-o",
+        "/home/codextransfer/predictive_motion/results/phase5/session-controlled-stop-explicit-warm-nominal-active32-brake64-dwell25-v1-20261016-attempt63/link-attempt1/global_interval_seed_tests"
+      ],
+      "stage": "CHILD_EXIT_REAPED",
+      "actual_project_tool_entry": "Popen started; exit retained, compiler/link success only if exit0",
+      "exit": 0,
+      "first_error": null,
+      "applied_limits": {
+        "CPU": {
+          "inherited_soft": -1,
+          "inherited_hard": -1,
+          "applied_soft": 120,
+          "applied_hard": 120
+        },
+        "AS": {
+          "inherited_soft": -1,
+          "inherited_hard": -1,
+          "applied_soft": 2147483648,
+          "applied_hard": 2147483648
+        },
+        "CORE": {
+          "inherited_soft": 0,
+          "inherited_hard": -1,
+          "applied_soft": 0,
+          "applied_hard": 0
+        },
+        "FSIZE": {
+          "inherited_soft": -1,
+          "inherited_hard": -1,
+          "applied_soft": 268435456,
+          "applied_hard": 268435456
+        },
+        "NOFILE": {
+          "inherited_soft": 1024,
+          "inherited_hard": 1048576,
+          "applied_soft": 64,
+          "applied_hard": 64
+        },
+        "NPROC": {
+          "inherited_soft": 63295,
+          "inherited_hard": 63295,
+          "applied_soft": 32,
+          "applied_hard": 32
+        }
+      },
+      "observed_stream_bytes": {
+        "stdout": 0,
+        "stderr": 0
+      },
+      "stop_reason": null,
+      "wall_seconds": 0.04212075599934906
+    },
+    {
+      "kind": "compile",
+      "index": 23,
+      "argv": [
+        "/usr/bin/x86_64-linux-gnu-g++-13",
+        "/home/codextransfer/predictive_motion/results/phase5/session-controlled-stop-explicit-warm-nominal-active32-brake64-dwell25-v1-20261016-attempt63/build-attempt1/unit-34.o",
+        "/home/codextransfer/predictive_motion/results/phase5/session-controlled-stop-explicit-warm-nominal-active32-brake64-dwell25-v1-20261016-attempt63/build-attempt1/unit-1.o",
+        "/home/codextransfer/predictive_motion/results/phase5/session-controlled-stop-explicit-warm-nominal-active32-brake64-dwell25-v1-20261016-attempt63/build-attempt1/unit-2.o",
+        "/home/codextransfer/predictive_motion/results/phase5/session-controlled-stop-explicit-warm-nominal-active32-brake64-dwell25-v1-20261016-attempt63/build-attempt1/unit-3.o",
+        "/home/codextransfer/predictive_motion/results/phase5/session-controlled-stop-explicit-warm-nominal-active32-brake64-dwell25-v1-20261016-attempt63/build-attempt1/unit-4.o",
+        "/home/codextransfer/predictive_motion/results/phase5/session-controlled-stop-explicit-warm-nominal-active32-brake64-dwell25-v1-20261016-attempt63/build-attempt1/unit-5.o",
+        "/home/codextransfer/predictive_motion/results/phase5/session-controlled-stop-explicit-warm-nominal-active32-brake64-dwell25-v1-20261016-attempt63/build-attempt1/unit-6.o",
+        "/home/codextransfer/predictive_motion/results/phase5/session-controlled-stop-explicit-warm-nominal-active32-brake64-dwell25-v1-20261016-attempt63/build-attempt1/unit-7.o",
+        "/home/codextransfer/predictive_motion/results/phase5/session-controlled-stop-explicit-warm-nominal-active32-brake64-dwell25-v1-20261016-attempt63/build-attempt1/unit-9.o",
+        "/home/codextransfer/predictive_motion/results/phase5/session-task-start-a-primaldual-v2-20261010-attempt5/build-attempt1/unit-9.o",
+        "/home/codextransfer/predictive_motion/results/phase5/integrated-first-cycle-v1-20261010/build-attempt1/unit-7.o",
+        "-Wl,--start-group",
+        "/home/codextransfer/predictive_motion/install/predictive_motion_kinematics/lib/librobot_kinematics.a",
+        "/home/codextransfer/predictive_motion/.vendor/osqp-1.0.0-install/lib/libosqpstatic.a",
+        "/home/codextransfer/predictive_motion/results/phase5/repaired-source-configure-only-after-v4-20261009/attempt1/build/inventory-source/input-source/cost-source/affine-source/normalized-source/model-boundary/live-foundation/libpublic_live_affine_v2_foundation.a",
+        "/home/codextransfer/predictive_motion/results/phase5/repaired-source-configure-only-after-v4-20261009/attempt1/build/inventory-source/input-source/cost-source/affine-source/normalized-source/model-boundary/frozen-extension/libpublic_coupled_augmented_extension.a",
+        "/home/codextransfer/predictive_motion/results/phase5/repaired-source-configure-only-after-v4-20261009/attempt1/build/inventory-source/input-source/cost-source/affine-source/normalized-source/model-boundary/frozen-extension/libfrozen_augmented_extension_value.a",
+        "/home/codextransfer/predictive_motion/results/phase5/repaired-source-configure-only-after-v4-20261009/attempt1/build/inventory-source/input-source/cost-source/affine-source/normalized-source/model-boundary/frozen-extension/physical-derivative/libpublic_coupled_derivative_model.a",
+        "/home/codextransfer/predictive_motion/results/phase5/repaired-source-configure-only-after-v4-20261009/attempt1/build/inventory-source/input-source/cost-source/affine-source/normalized-source/model-boundary/frozen-extension/physical-derivative/base-v2/libpublic_coupled_model_v2.a",
+        "-Wl,--end-group",
+        "/home/codextransfer/predictive_motion/.vendor/mujoco-3.3.7/lib/libmujoco.so",
+        "/usr/lib/x86_64-linux-gnu/libcrypto.so",
+        "/usr/lib/x86_64-linux-gnu/libyaml-cpp.so",
+        "/opt/ros/jazzy/lib/x86_64-linux-gnu/libpinocchio_default.so.4.1.0",
+        "/opt/ros/jazzy/lib/x86_64-linux-gnu/libpinocchio_collision.so.4.1.0",
+        "/opt/ros/jazzy/lib/x86_64-linux-gnu/libpinocchio_parsers.so.4.1.0",
+        "/usr/lib/x86_64-linux-gnu/libboost_serialization.so.1.83.0",
+        "/usr/lib/x86_64-linux-gnu/libboost_filesystem.so.1.83.0",
+        "/opt/ros/jazzy/lib/x86_64-linux-gnu/libcoal.so.3.0.3",
+        "-ldl",
+        "-pthread",
+        "-Wl,--disable-new-dtags",
+        "-Wl,-rpath,/home/codextransfer/predictive_motion/.vendor/mujoco-3.3.7/lib:/opt/ros/jazzy/lib/x86_64-linux-gnu:/opt/ros/jazzy/lib:/usr/lib/x86_64-linux-gnu",
+        "-lz",
+        "-Wl,-Map,/home/codextransfer/predictive_motion/results/phase5/session-controlled-stop-explicit-warm-nominal-active32-brake64-dwell25-v1-20261016-attempt63/link-attempt1/global_interval_codec_tests.map",
+        "-o",
+        "/home/codextransfer/predictive_motion/results/phase5/session-controlled-stop-explicit-warm-nominal-active32-brake64-dwell25-v1-20261016-attempt63/link-attempt1/global_interval_codec_tests"
+      ],
+      "stage": "CHILD_EXIT_REAPED",
+      "actual_project_tool_entry": "Popen started; exit retained, compiler/link success only if exit0",
+      "exit": 0,
+      "first_error": null,
+      "applied_limits": {
+        "CPU": {
+          "inherited_soft": -1,
+          "inherited_hard": -1,
+          "applied_soft": 120,
+          "applied_hard": 120
+        },
+        "AS": {
+          "inherited_soft": -1,
+          "inherited_hard": -1,
+          "applied_soft": 2147483648,
+          "applied_hard": 2147483648
+        },
+        "CORE": {
+          "inherited_soft": 0,
+          "inherited_hard": -1,
+          "applied_soft": 0,
+          "applied_hard": 0
+        },
+        "FSIZE": {
+          "inherited_soft": -1,
+          "inherited_hard": -1,
+          "applied_soft": 268435456,
+          "applied_hard": 268435456
+        },
+        "NOFILE": {
+          "inherited_soft": 1024,
+          "inherited_hard": 1048576,
+          "applied_soft": 64,
+          "applied_hard": 64
+        },
+        "NPROC": {
+          "inherited_soft": 63295,
+          "inherited_hard": 63295,
+          "applied_soft": 32,
+          "applied_hard": 32
+        }
+      },
+      "observed_stream_bytes": {
+        "stdout": 0,
+        "stderr": 0
+      },
+      "stop_reason": null,
+      "wall_seconds": 0.2505934760119999
+    },
+    {
+      "kind": "compile",
+      "index": 24,
+      "argv": [
+        "/usr/bin/x86_64-linux-gnu-g++-13",
+        "/home/codextransfer/predictive_motion/results/phase5/session-controlled-stop-explicit-warm-nominal-active32-brake64-dwell25-v1-20261016-attempt63/build-attempt1/unit-35.o",
+        "/home/codextransfer/predictive_motion/results/phase5/session-controlled-stop-explicit-warm-nominal-active32-brake64-dwell25-v1-20261016-attempt63/build-attempt1/unit-1.o",
+        "/home/codextransfer/predictive_motion/results/phase5/session-controlled-stop-explicit-warm-nominal-active32-brake64-dwell25-v1-20261016-attempt63/build-attempt1/unit-2.o",
+        "/home/codextransfer/predictive_motion/results/phase5/session-controlled-stop-explicit-warm-nominal-active32-brake64-dwell25-v1-20261016-attempt63/build-attempt1/unit-3.o",
+        "/home/codextransfer/predictive_motion/results/phase5/session-controlled-stop-explicit-warm-nominal-active32-brake64-dwell25-v1-20261016-attempt63/build-attempt1/unit-4.o",
+        "/home/codextransfer/predictive_motion/results/phase5/session-controlled-stop-explicit-warm-nominal-active32-brake64-dwell25-v1-20261016-attempt63/build-attempt1/unit-5.o",
+        "/home/codextransfer/predictive_motion/results/phase5/session-controlled-stop-explicit-warm-nominal-active32-brake64-dwell25-v1-20261016-attempt63/build-attempt1/unit-6.o",
+        "/home/codextransfer/predictive_motion/results/phase5/session-controlled-stop-explicit-warm-nominal-active32-brake64-dwell25-v1-20261016-attempt63/build-attempt1/unit-7.o",
+        "/home/codextransfer/predictive_motion/results/phase5/session-controlled-stop-explicit-warm-nominal-active32-brake64-dwell25-v1-20261016-attempt63/build-attempt1/unit-9.o",
+        "/home/codextransfer/predictive_motion/results/phase5/session-task-start-a-primaldual-v2-20261010-attempt5/build-attempt1/unit-9.o",
+        "/home/codextransfer/predictive_motion/results/phase5/integrated-first-cycle-v1-20261010/build-attempt1/unit-7.o",
+        "-Wl,--start-group",
+        "/home/codextransfer/predictive_motion/install/predictive_motion_kinematics/lib/librobot_kinematics.a",
+        "/home/codextransfer/predictive_motion/.vendor/osqp-1.0.0-install/lib/libosqpstatic.a",
+        "/home/codextransfer/predictive_motion/results/phase5/repaired-source-configure-only-after-v4-20261009/attempt1/build/inventory-source/input-source/cost-source/affine-source/normalized-source/model-boundary/live-foundation/libpublic_live_affine_v2_foundation.a",
+        "/home/codextransfer/predictive_motion/results/phase5/repaired-source-configure-only-after-v4-20261009/attempt1/build/inventory-source/input-source/cost-source/affine-source/normalized-source/model-boundary/frozen-extension/libpublic_coupled_augmented_extension.a",
+        "/home/codextransfer/predictive_motion/results/phase5/repaired-source-configure-only-after-v4-20261009/attempt1/build/inventory-source/input-source/cost-source/affine-source/normalized-source/model-boundary/frozen-extension/libfrozen_augmented_extension_value.a",
+        "/home/codextransfer/predictive_motion/results/phase5/repaired-source-configure-only-after-v4-20261009/attempt1/build/inventory-source/input-source/cost-source/affine-source/normalized-source/model-boundary/frozen-extension/physical-derivative/libpublic_coupled_derivative_model.a",
+        "/home/codextransfer/predictive_motion/results/phase5/repaired-source-configure-only-after-v4-20261009/attempt1/build/inventory-source/input-source/cost-source/affine-source/normalized-source/model-boundary/frozen-extension/physical-derivative/base-v2/libpublic_coupled_model_v2.a",
+        "-Wl,--end-group",
+        "/home/codextransfer/predictive_motion/.vendor/mujoco-3.3.7/lib/libmujoco.so",
+        "/usr/lib/x86_64-linux-gnu/libcrypto.so",
+        "/usr/lib/x86_64-linux-gnu/libyaml-cpp.so",
+        "/opt/ros/jazzy/lib/x86_64-linux-gnu/libpinocchio_default.so.4.1.0",
+        "/opt/ros/jazzy/lib/x86_64-linux-gnu/libpinocchio_collision.so.4.1.0",
+        "/opt/ros/jazzy/lib/x86_64-linux-gnu/libpinocchio_parsers.so.4.1.0",
+        "/usr/lib/x86_64-linux-gnu/libboost_serialization.so.1.83.0",
+        "/usr/lib/x86_64-linux-gnu/libboost_filesystem.so.1.83.0",
+        "/opt/ros/jazzy/lib/x86_64-linux-gnu/libcoal.so.3.0.3",
+        "-ldl",
+        "-pthread",
+        "-Wl,--disable-new-dtags",
+        "-Wl,-rpath,/home/codextransfer/predictive_motion/.vendor/mujoco-3.3.7/lib:/opt/ros/jazzy/lib/x86_64-linux-gnu:/opt/ros/jazzy/lib:/usr/lib/x86_64-linux-gnu",
+        "-lz",
+        "-Wl,-Map,/home/codextransfer/predictive_motion/results/phase5/session-controlled-stop-explicit-warm-nominal-active32-brake64-dwell25-v1-20261016-attempt63/link-attempt1/negative_leaving59_tests.map",
+        "-o",
+        "/home/codextransfer/predictive_motion/results/phase5/session-controlled-stop-explicit-warm-nominal-active32-brake64-dwell25-v1-20261016-attempt63/link-attempt1/negative_leaving59_tests"
+      ],
+      "stage": "CHILD_EXIT_REAPED",
+      "actual_project_tool_entry": "Popen started; exit retained, compiler/link success only if exit0",
+      "exit": 0,
+      "first_error": null,
+      "applied_limits": {
+        "CPU": {
+          "inherited_soft": -1,
+          "inherited_hard": -1,
+          "applied_soft": 120,
+          "applied_hard": 120
+        },
+        "AS": {
+          "inherited_soft": -1,
+          "inherited_hard": -1,
+          "applied_soft": 2147483648,
+          "applied_hard": 2147483648
+        },
+        "CORE": {
+          "inherited_soft": 0,
+          "inherited_hard": -1,
+          "applied_soft": 0,
+          "applied_hard": 0
+        },
+        "FSIZE": {
+          "inherited_soft": -1,
+          "inherited_hard": -1,
+          "applied_soft": 268435456,
+          "applied_hard": 268435456
+        },
+        "NOFILE": {
+          "inherited_soft": 1024,
+          "inherited_hard": 1048576,
+          "applied_soft": 64,
+          "applied_hard": 64
+        },
+        "NPROC": {
+          "inherited_soft": 63295,
+          "inherited_hard": 63295,
+          "applied_soft": 32,
+          "applied_hard": 32
+        }
+      },
+      "observed_stream_bytes": {
+        "stdout": 0,
+        "stderr": 0
+      },
+      "stop_reason": null,
+      "wall_seconds": 0.2553403370111482
+    },
+    {
+      "kind": "compile",
+      "index": 25,
+      "argv": [
+        "/usr/bin/x86_64-linux-gnu-g++-13",
+        "/home/codextransfer/predictive_motion/results/phase5/session-controlled-stop-explicit-warm-nominal-active32-brake64-dwell25-v1-20261016-attempt63/build-attempt1/unit-36.o",
+        "/home/codextransfer/predictive_motion/results/phase5/session-controlled-stop-explicit-warm-nominal-active32-brake64-dwell25-v1-20261016-attempt63/build-attempt1/unit-1.o",
+        "/home/codextransfer/predictive_motion/results/phase5/session-controlled-stop-explicit-warm-nominal-active32-brake64-dwell25-v1-20261016-attempt63/build-attempt1/unit-2.o",
+        "/home/codextransfer/predictive_motion/results/phase5/session-controlled-stop-explicit-warm-nominal-active32-brake64-dwell25-v1-20261016-attempt63/build-attempt1/unit-3.o",
+        "/home/codextransfer/predictive_motion/results/phase5/session-controlled-stop-explicit-warm-nominal-active32-brake64-dwell25-v1-20261016-attempt63/build-attempt1/unit-4.o",
+        "/home/codextransfer/predictive_motion/results/phase5/session-controlled-stop-explicit-warm-nominal-active32-brake64-dwell25-v1-20261016-attempt63/build-attempt1/unit-5.o",
+        "/home/codextransfer/predictive_motion/results/phase5/session-controlled-stop-explicit-warm-nominal-active32-brake64-dwell25-v1-20261016-attempt63/build-attempt1/unit-6.o",
+        "/home/codextransfer/predictive_motion/results/phase5/session-controlled-stop-explicit-warm-nominal-active32-brake64-dwell25-v1-20261016-attempt63/build-attempt1/unit-7.o",
+        "/home/codextransfer/predictive_motion/results/phase5/session-controlled-stop-explicit-warm-nominal-active32-brake64-dwell25-v1-20261016-attempt63/build-attempt1/unit-9.o",
+        "/home/codextransfer/predictive_motion/results/phase5/session-task-start-a-primaldual-v2-20261010-attempt5/build-attempt1/unit-9.o",
+        "/home/codextransfer/predictive_motion/results/phase5/integrated-first-cycle-v1-20261010/build-attempt1/unit-7.o",
+        "-Wl,--start-group",
+        "/home/codextransfer/predictive_motion/install/predictive_motion_kinematics/lib/librobot_kinematics.a",
+        "/home/codextransfer/predictive_motion/.vendor/osqp-1.0.0-install/lib/libosqpstatic.a",
+        "/home/codextransfer/predictive_motion/results/phase5/repaired-source-configure-only-after-v4-20261009/attempt1/build/inventory-source/input-source/cost-source/affine-source/normalized-source/model-boundary/live-foundation/libpublic_live_affine_v2_foundation.a",
+        "/home/codextransfer/predictive_motion/results/phase5/repaired-source-configure-only-after-v4-20261009/attempt1/build/inventory-source/input-source/cost-source/affine-source/normalized-source/model-boundary/frozen-extension/libpublic_coupled_augmented_extension.a",
+        "/home/codextransfer/predictive_motion/results/phase5/repaired-source-configure-only-after-v4-20261009/attempt1/build/inventory-source/input-source/cost-source/affine-source/normalized-source/model-boundary/frozen-extension/libfrozen_augmented_extension_value.a",
+        "/home/codextransfer/predictive_motion/results/phase5/repaired-source-configure-only-after-v4-20261009/attempt1/build/inventory-source/input-source/cost-source/affine-source/normalized-source/model-boundary/frozen-extension/physical-derivative/libpublic_coupled_derivative_model.a",
+        "/home/codextransfer/predictive_motion/results/phase5/repaired-source-configure-only-after-v4-20261009/attempt1/build/inventory-source/input-source/cost-source/affine-source/normalized-source/model-boundary/frozen-extension/physical-derivative/base-v2/libpublic_coupled_model_v2.a",
+        "-Wl,--end-group",
+        "/home/codextransfer/predictive_motion/.vendor/mujoco-3.3.7/lib/libmujoco.so",
+        "/usr/lib/x86_64-linux-gnu/libcrypto.so",
+        "/usr/lib/x86_64-linux-gnu/libyaml-cpp.so",
+        "/opt/ros/jazzy/lib/x86_64-linux-gnu/libpinocchio_default.so.4.1.0",
+        "/opt/ros/jazzy/lib/x86_64-linux-gnu/libpinocchio_collision.so.4.1.0",
+        "/opt/ros/jazzy/lib/x86_64-linux-gnu/libpinocchio_parsers.so.4.1.0",
+        "/usr/lib/x86_64-linux-gnu/libboost_serialization.so.1.83.0",
+        "/usr/lib/x86_64-linux-gnu/libboost_filesystem.so.1.83.0",
+        "/opt/ros/jazzy/lib/x86_64-linux-gnu/libcoal.so.3.0.3",
+        "-ldl",
+        "-pthread",
+        "-Wl,--disable-new-dtags",
+        "-Wl,-rpath,/home/codextransfer/predictive_motion/.vendor/mujoco-3.3.7/lib:/opt/ros/jazzy/lib/x86_64-linux-gnu:/opt/ros/jazzy/lib:/usr/lib/x86_64-linux-gnu",
+        "-lz",
+        "-Wl,-Map,/home/codextransfer/predictive_motion/results/phase5/session-controlled-stop-explicit-warm-nominal-active32-brake64-dwell25-v1-20261016-attempt63/link-attempt1/merged_hint_diagnostics60_tests.map",
+        "-o",
+        "/home/codextransfer/predictive_motion/results/phase5/session-controlled-stop-explicit-warm-nominal-active32-brake64-dwell25-v1-20261016-attempt63/link-attempt1/merged_hint_diagnostics60_tests"
+      ],
+      "stage": "CHILD_EXIT_REAPED",
+      "actual_project_tool_entry": "Popen started; exit retained, compiler/link success only if exit0",
+      "exit": 0,
+      "first_error": null,
+      "applied_limits": {
+        "CPU": {
+          "inherited_soft": -1,
+          "inherited_hard": -1,
+          "applied_soft": 120,
+          "applied_hard": 120
+        },
+        "AS": {
+          "inherited_soft": -1,
+          "inherited_hard": -1,
+          "applied_soft": 2147483648,
+          "applied_hard": 2147483648
+        },
+        "CORE": {
+          "inherited_soft": 0,
+          "inherited_hard": -1,
+          "applied_soft": 0,
+          "applied_hard": 0
+        },
+        "FSIZE": {
+          "inherited_soft": -1,
+          "inherited_hard": -1,
+          "applied_soft": 268435456,
+          "applied_hard": 268435456
+        },
+        "NOFILE": {
+          "inherited_soft": 1024,
+          "inherited_hard": 1048576,
+          "applied_soft": 64,
+          "applied_hard": 64
+        },
+        "NPROC": {
+          "inherited_soft": 63295,
+          "inherited_hard": 63295,
+          "applied_soft": 32,
+          "applied_hard": 32
+        }
+      },
+      "observed_stream_bytes": {
+        "stdout": 0,
+        "stderr": 0
+      },
+      "stop_reason": null,
+      "wall_seconds": 0.25113558198791
+    },
+    {
+      "kind": "compile",
+      "index": 26,
+      "argv": [
+        "/usr/bin/x86_64-linux-gnu-g++-13",
+        "/home/codextransfer/predictive_motion/results/phase5/session-controlled-stop-explicit-warm-nominal-active32-brake64-dwell25-v1-20261016-attempt63/build-attempt1/unit-37.o",
+        "/home/codextransfer/predictive_motion/results/phase5/session-controlled-stop-explicit-warm-nominal-active32-brake64-dwell25-v1-20261016-attempt63/build-attempt1/unit-1.o",
+        "/home/codextransfer/predictive_motion/results/phase5/session-controlled-stop-explicit-warm-nominal-active32-brake64-dwell25-v1-20261016-attempt63/build-attempt1/unit-2.o",
+        "/home/codextransfer/predictive_motion/results/phase5/session-controlled-stop-explicit-warm-nominal-active32-brake64-dwell25-v1-20261016-attempt63/build-attempt1/unit-3.o",
+        "/home/codextransfer/predictive_motion/results/phase5/session-controlled-stop-explicit-warm-nominal-active32-brake64-dwell25-v1-20261016-attempt63/build-attempt1/unit-4.o",
+        "/home/codextransfer/predictive_motion/results/phase5/session-controlled-stop-explicit-warm-nominal-active32-brake64-dwell25-v1-20261016-attempt63/build-attempt1/unit-5.o",
+        "/home/codextransfer/predictive_motion/results/phase5/session-controlled-stop-explicit-warm-nominal-active32-brake64-dwell25-v1-20261016-attempt63/build-attempt1/unit-6.o",
+        "/home/codextransfer/predictive_motion/results/phase5/session-controlled-stop-explicit-warm-nominal-active32-brake64-dwell25-v1-20261016-attempt63/build-attempt1/unit-7.o",
+        "/home/codextransfer/predictive_motion/results/phase5/session-controlled-stop-explicit-warm-nominal-active32-brake64-dwell25-v1-20261016-attempt63/build-attempt1/unit-9.o",
+        "/home/codextransfer/predictive_motion/results/phase5/session-task-start-a-primaldual-v2-20261010-attempt5/build-attempt1/unit-9.o",
+        "/home/codextransfer/predictive_motion/results/phase5/integrated-first-cycle-v1-20261010/build-attempt1/unit-7.o",
+        "-Wl,--start-group",
+        "/home/codextransfer/predictive_motion/install/predictive_motion_kinematics/lib/librobot_kinematics.a",
+        "/home/codextransfer/predictive_motion/.vendor/osqp-1.0.0-install/lib/libosqpstatic.a",
+        "/home/codextransfer/predictive_motion/results/phase5/repaired-source-configure-only-after-v4-20261009/attempt1/build/inventory-source/input-source/cost-source/affine-source/normalized-source/model-boundary/live-foundation/libpublic_live_affine_v2_foundation.a",
+        "/home/codextransfer/predictive_motion/results/phase5/repaired-source-configure-only-after-v4-20261009/attempt1/build/inventory-source/input-source/cost-source/affine-source/normalized-source/model-boundary/frozen-extension/libpublic_coupled_augmented_extension.a",
+        "/home/codextransfer/predictive_motion/results/phase5/repaired-source-configure-only-after-v4-20261009/attempt1/build/inventory-source/input-source/cost-source/affine-source/normalized-source/model-boundary/frozen-extension/libfrozen_augmented_extension_value.a",
+        "/home/codextransfer/predictive_motion/results/phase5/repaired-source-configure-only-after-v4-20261009/attempt1/build/inventory-source/input-source/cost-source/affine-source/normalized-source/model-boundary/frozen-extension/physical-derivative/libpublic_coupled_derivative_model.a",
+        "/home/codextransfer/predictive_motion/results/phase5/repaired-source-configure-only-after-v4-20261009/attempt1/build/inventory-source/input-source/cost-source/affine-source/normalized-source/model-boundary/frozen-extension/physical-derivative/base-v2/libpublic_coupled_model_v2.a",
+        "-Wl,--end-group",
+        "/home/codextransfer/predictive_motion/.vendor/mujoco-3.3.7/lib/libmujoco.so",
+        "/usr/lib/x86_64-linux-gnu/libcrypto.so",
+        "/usr/lib/x86_64-linux-gnu/libyaml-cpp.so",
+        "/opt/ros/jazzy/lib/x86_64-linux-gnu/libpinocchio_default.so.4.1.0",
+        "/opt/ros/jazzy/lib/x86_64-linux-gnu/libpinocchio_collision.so.4.1.0",
+        "/opt/ros/jazzy/lib/x86_64-linux-gnu/libpinocchio_parsers.so.4.1.0",
+        "/usr/lib/x86_64-linux-gnu/libboost_serialization.so.1.83.0",
+        "/usr/lib/x86_64-linux-gnu/libboost_filesystem.so.1.83.0",
+        "/opt/ros/jazzy/lib/x86_64-linux-gnu/libcoal.so.3.0.3",
+        "-ldl",
+        "-pthread",
+        "-Wl,--disable-new-dtags",
+        "-Wl,-rpath,/home/codextransfer/predictive_motion/.vendor/mujoco-3.3.7/lib:/opt/ros/jazzy/lib/x86_64-linux-gnu:/opt/ros/jazzy/lib:/usr/lib/x86_64-linux-gnu",
+        "-lz",
+        "-Wl,-Map,/home/codextransfer/predictive_motion/results/phase5/session-controlled-stop-explicit-warm-nominal-active32-brake64-dwell25-v1-20261016-attempt63/link-attempt1/exact_cycle_endpoint61_tests.map",
+        "-o",
+        "/home/codextransfer/predictive_motion/results/phase5/session-controlled-stop-explicit-warm-nominal-active32-brake64-dwell25-v1-20261016-attempt63/link-attempt1/exact_cycle_endpoint61_tests"
+      ],
+      "stage": "CHILD_EXIT_REAPED",
+      "actual_project_tool_entry": "Popen started; exit retained, compiler/link success only if exit0",
+      "exit": 0,
+      "first_error": null,
+      "applied_limits": {
+        "CPU": {
+          "inherited_soft": -1,
+          "inherited_hard": -1,
+          "applied_soft": 120,
+          "applied_hard": 120
+        },
+        "AS": {
+          "inherited_soft": -1,
+          "inherited_hard": -1,
+          "applied_soft": 2147483648,
+          "applied_hard": 2147483648
+        },
+        "CORE": {
+          "inherited_soft": 0,
+          "inherited_hard": -1,
+          "applied_soft": 0,
+          "applied_hard": 0
+        },
+        "FSIZE": {
+          "inherited_soft": -1,
+          "inherited_hard": -1,
+          "applied_soft": 268435456,
+          "applied_hard": 268435456
+        },
+        "NOFILE": {
+          "inherited_soft": 1024,
+          "inherited_hard": 1048576,
+          "applied_soft": 64,
+          "applied_hard": 64
+        },
+        "NPROC": {
+          "inherited_soft": 63295,
+          "inherited_hard": 63295,
+          "applied_soft": 32,
+          "applied_hard": 32
+        }
+      },
+      "observed_stream_bytes": {
+        "stdout": 0,
+        "stderr": 0
+      },
+      "stop_reason": null,
+      "wall_seconds": 0.2397835239971755
+    },
+    {
+      "kind": "compile",
+      "index": 27,
+      "argv": [
+        "/usr/bin/x86_64-linux-gnu-g++-13",
+        "/home/codextransfer/predictive_motion/results/phase5/session-controlled-stop-explicit-warm-nominal-active32-brake64-dwell25-v1-20261016-attempt63/build-attempt1/unit-38.o",
+        "/home/codextransfer/predictive_motion/results/phase5/session-controlled-stop-explicit-warm-nominal-active32-brake64-dwell25-v1-20261016-attempt63/build-attempt1/unit-1.o",
+        "/home/codextransfer/predictive_motion/results/phase5/session-controlled-stop-explicit-warm-nominal-active32-brake64-dwell25-v1-20261016-attempt63/build-attempt1/unit-2.o",
+        "/home/codextransfer/predictive_motion/results/phase5/session-controlled-stop-explicit-warm-nominal-active32-brake64-dwell25-v1-20261016-attempt63/build-attempt1/unit-3.o",
+        "/home/codextransfer/predictive_motion/results/phase5/session-controlled-stop-explicit-warm-nominal-active32-brake64-dwell25-v1-20261016-attempt63/build-attempt1/unit-4.o",
+        "/home/codextransfer/predictive_motion/results/phase5/session-controlled-stop-explicit-warm-nominal-active32-brake64-dwell25-v1-20261016-attempt63/build-attempt1/unit-5.o",
+        "/home/codextransfer/predictive_motion/results/phase5/session-controlled-stop-explicit-warm-nominal-active32-brake64-dwell25-v1-20261016-attempt63/build-attempt1/unit-6.o",
+        "/home/codextransfer/predictive_motion/results/phase5/session-controlled-stop-explicit-warm-nominal-active32-brake64-dwell25-v1-20261016-attempt63/build-attempt1/unit-7.o",
+        "/home/codextransfer/predictive_motion/results/phase5/session-controlled-stop-explicit-warm-nominal-active32-brake64-dwell25-v1-20261016-attempt63/build-attempt1/unit-9.o",
+        "/home/codextransfer/predictive_motion/results/phase5/session-task-start-a-primaldual-v2-20261010-attempt5/build-attempt1/unit-9.o",
+        "/home/codextransfer/predictive_motion/results/phase5/integrated-first-cycle-v1-20261010/build-attempt1/unit-7.o",
+        "-Wl,--start-group",
+        "/home/codextransfer/predictive_motion/install/predictive_motion_kinematics/lib/librobot_kinematics.a",
+        "/home/codextransfer/predictive_motion/.vendor/osqp-1.0.0-install/lib/libosqpstatic.a",
+        "/home/codextransfer/predictive_motion/results/phase5/repaired-source-configure-only-after-v4-20261009/attempt1/build/inventory-source/input-source/cost-source/affine-source/normalized-source/model-boundary/live-foundation/libpublic_live_affine_v2_foundation.a",
+        "/home/codextransfer/predictive_motion/results/phase5/repaired-source-configure-only-after-v4-20261009/attempt1/build/inventory-source/input-source/cost-source/affine-source/normalized-source/model-boundary/frozen-extension/libpublic_coupled_augmented_extension.a",
+        "/home/codextransfer/predictive_motion/results/phase5/repaired-source-configure-only-after-v4-20261009/attempt1/build/inventory-source/input-source/cost-source/affine-source/normalized-source/model-boundary/frozen-extension/libfrozen_augmented_extension_value.a",
+        "/home/codextransfer/predictive_motion/results/phase5/repaired-source-configure-only-after-v4-20261009/attempt1/build/inventory-source/input-source/cost-source/affine-source/normalized-source/model-boundary/frozen-extension/physical-derivative/libpublic_coupled_derivative_model.a",
+        "/home/codextransfer/predictive_motion/results/phase5/repaired-source-configure-only-after-v4-20261009/attempt1/build/inventory-source/input-source/cost-source/affine-source/normalized-source/model-boundary/frozen-extension/physical-derivative/base-v2/libpublic_coupled_model_v2.a",
+        "-Wl,--end-group",
+        "/home/codextransfer/predictive_motion/.vendor/mujoco-3.3.7/lib/libmujoco.so",
+        "/usr/lib/x86_64-linux-gnu/libcrypto.so",
+        "/usr/lib/x86_64-linux-gnu/libyaml-cpp.so",
+        "/opt/ros/jazzy/lib/x86_64-linux-gnu/libpinocchio_default.so.4.1.0",
+        "/opt/ros/jazzy/lib/x86_64-linux-gnu/libpinocchio_collision.so.4.1.0",
+        "/opt/ros/jazzy/lib/x86_64-linux-gnu/libpinocchio_parsers.so.4.1.0",
+        "/usr/lib/x86_64-linux-gnu/libboost_serialization.so.1.83.0",
+        "/usr/lib/x86_64-linux-gnu/libboost_filesystem.so.1.83.0",
+        "/opt/ros/jazzy/lib/x86_64-linux-gnu/libcoal.so.3.0.3",
+        "-ldl",
+        "-pthread",
+        "-Wl,--disable-new-dtags",
+        "-Wl,-rpath,/home/codextransfer/predictive_motion/.vendor/mujoco-3.3.7/lib:/opt/ros/jazzy/lib/x86_64-linux-gnu:/opt/ros/jazzy/lib:/usr/lib/x86_64-linux-gnu",
+        "-lz",
+        "-Wl,-Map,/home/codextransfer/predictive_motion/results/phase5/session-controlled-stop-explicit-warm-nominal-active32-brake64-dwell25-v1-20261016-attempt63/link-attempt1/current_braking_nominal62_tests.map",
+        "-o",
+        "/home/codextransfer/predictive_motion/results/phase5/session-controlled-stop-explicit-warm-nominal-active32-brake64-dwell25-v1-20261016-attempt63/link-attempt1/current_braking_nominal62_tests"
+      ],
+      "stage": "CHILD_EXIT_REAPED",
+      "actual_project_tool_entry": "Popen started; exit retained, compiler/link success only if exit0",
+      "exit": 0,
+      "first_error": null,
+      "applied_limits": {
+        "CPU": {
+          "inherited_soft": -1,
+          "inherited_hard": -1,
+          "applied_soft": 120,
+          "applied_hard": 120
+        },
+        "AS": {
+          "inherited_soft": -1,
+          "inherited_hard": -1,
+          "applied_soft": 2147483648,
+          "applied_hard": 2147483648
+        },
+        "CORE": {
+          "inherited_soft": 0,
+          "inherited_hard": -1,
+          "applied_soft": 0,
+          "applied_hard": 0
+        },
+        "FSIZE": {
+          "inherited_soft": -1,
+          "inherited_hard": -1,
+          "applied_soft": 268435456,
+          "applied_hard": 268435456
+        },
+        "NOFILE": {
+          "inherited_soft": 1024,
+          "inherited_hard": 1048576,
+          "applied_soft": 64,
+          "applied_hard": 64
+        },
+        "NPROC": {
+          "inherited_soft": 63295,
+          "inherited_hard": 63295,
+          "applied_soft": 32,
+          "applied_hard": 32
+        }
+      },
+      "observed_stream_bytes": {
+        "stdout": 0,
+        "stderr": 0
+      },
+      "stop_reason": null,
+      "wall_seconds": 0.23919797499547713
+    },
+    {
+      "kind": "compile",
+      "index": 28,
+      "argv": [
+        "/usr/bin/x86_64-linux-gnu-g++-13",
+        "/home/codextransfer/predictive_motion/results/phase5/session-controlled-stop-explicit-warm-nominal-active32-brake64-dwell25-v1-20261016-attempt63/build-attempt1/unit-39.o",
+        "/home/codextransfer/predictive_motion/results/phase5/session-controlled-stop-explicit-warm-nominal-active32-brake64-dwell25-v1-20261016-attempt63/build-attempt1/unit-1.o",
+        "/home/codextransfer/predictive_motion/results/phase5/session-controlled-stop-explicit-warm-nominal-active32-brake64-dwell25-v1-20261016-attempt63/build-attempt1/unit-2.o",
+        "/home/codextransfer/predictive_motion/results/phase5/session-controlled-stop-explicit-warm-nominal-active32-brake64-dwell25-v1-20261016-attempt63/build-attempt1/unit-3.o",
+        "/home/codextransfer/predictive_motion/results/phase5/session-controlled-stop-explicit-warm-nominal-active32-brake64-dwell25-v1-20261016-attempt63/build-attempt1/unit-4.o",
+        "/home/codextransfer/predictive_motion/results/phase5/session-controlled-stop-explicit-warm-nominal-active32-brake64-dwell25-v1-20261016-attempt63/build-attempt1/unit-5.o",
+        "/home/codextransfer/predictive_motion/results/phase5/session-controlled-stop-explicit-warm-nominal-active32-brake64-dwell25-v1-20261016-attempt63/build-attempt1/unit-6.o",
+        "/home/codextransfer/predictive_motion/results/phase5/session-controlled-stop-explicit-warm-nominal-active32-brake64-dwell25-v1-20261016-attempt63/build-attempt1/unit-7.o",
+        "/home/codextransfer/predictive_motion/results/phase5/session-controlled-stop-explicit-warm-nominal-active32-brake64-dwell25-v1-20261016-attempt63/build-attempt1/unit-9.o",
+        "/home/codextransfer/predictive_motion/results/phase5/session-task-start-a-primaldual-v2-20261010-attempt5/build-attempt1/unit-9.o",
+        "/home/codextransfer/predictive_motion/results/phase5/integrated-first-cycle-v1-20261010/build-attempt1/unit-7.o",
+        "-Wl,--start-group",
+        "/home/codextransfer/predictive_motion/install/predictive_motion_kinematics/lib/librobot_kinematics.a",
+        "/home/codextransfer/predictive_motion/.vendor/osqp-1.0.0-install/lib/libosqpstatic.a",
+        "/home/codextransfer/predictive_motion/results/phase5/repaired-source-configure-only-after-v4-20261009/attempt1/build/inventory-source/input-source/cost-source/affine-source/normalized-source/model-boundary/live-foundation/libpublic_live_affine_v2_foundation.a",
+        "/home/codextransfer/predictive_motion/results/phase5/repaired-source-configure-only-after-v4-20261009/attempt1/build/inventory-source/input-source/cost-source/affine-source/normalized-source/model-boundary/frozen-extension/libpublic_coupled_augmented_extension.a",
+        "/home/codextransfer/predictive_motion/results/phase5/repaired-source-configure-only-after-v4-20261009/attempt1/build/inventory-source/input-source/cost-source/affine-source/normalized-source/model-boundary/frozen-extension/libfrozen_augmented_extension_value.a",
+        "/home/codextransfer/predictive_motion/results/phase5/repaired-source-configure-only-after-v4-20261009/attempt1/build/inventory-source/input-source/cost-source/affine-source/normalized-source/model-boundary/frozen-extension/physical-derivative/libpublic_coupled_derivative_model.a",
+        "/home/codextransfer/predictive_motion/results/phase5/repaired-source-configure-only-after-v4-20261009/attempt1/build/inventory-source/input-source/cost-source/affine-source/normalized-source/model-boundary/frozen-extension/physical-derivative/base-v2/libpublic_coupled_model_v2.a",
+        "-Wl,--end-group",
+        "/home/codextransfer/predictive_motion/.vendor/mujoco-3.3.7/lib/libmujoco.so",
+        "/usr/lib/x86_64-linux-gnu/libcrypto.so",
+        "/usr/lib/x86_64-linux-gnu/libyaml-cpp.so",
+        "/opt/ros/jazzy/lib/x86_64-linux-gnu/libpinocchio_default.so.4.1.0",
+        "/opt/ros/jazzy/lib/x86_64-linux-gnu/libpinocchio_collision.so.4.1.0",
+        "/opt/ros/jazzy/lib/x86_64-linux-gnu/libpinocchio_parsers.so.4.1.0",
+        "/usr/lib/x86_64-linux-gnu/libboost_serialization.so.1.83.0",
+        "/usr/lib/x86_64-linux-gnu/libboost_filesystem.so.1.83.0",
+        "/opt/ros/jazzy/lib/x86_64-linux-gnu/libcoal.so.3.0.3",
+        "-ldl",
+        "-pthread",
+        "-Wl,--disable-new-dtags",
+        "-Wl,-rpath,/home/codextransfer/predictive_motion/.vendor/mujoco-3.3.7/lib:/opt/ros/jazzy/lib/x86_64-linux-gnu:/opt/ros/jazzy/lib:/usr/lib/x86_64-linux-gnu",
+        "-lz",
+        "-Wl,-Map,/home/codextransfer/predictive_motion/results/phase5/session-controlled-stop-explicit-warm-nominal-active32-brake64-dwell25-v1-20261016-attempt63/link-attempt1/current_braking_nominal63_tests.map",
+        "-o",
+        "/home/codextransfer/predictive_motion/results/phase5/session-controlled-stop-explicit-warm-nominal-active32-brake64-dwell25-v1-20261016-attempt63/link-attempt1/current_braking_nominal63_tests"
+      ],
+      "stage": "CHILD_EXIT_REAPED",
+      "actual_project_tool_entry": "Popen started; exit retained, compiler/link success only if exit0",
+      "exit": 0,
+      "first_error": null,
+      "applied_limits": {
+        "CPU": {
+          "inherited_soft": -1,
+          "inherited_hard": -1,
+          "applied_soft": 120,
+          "applied_hard": 120
+        },
+        "AS": {
+          "inherited_soft": -1,
+          "inherited_hard": -1,
+          "applied_soft": 2147483648,
+          "applied_hard": 2147483648
+        },
+        "CORE": {
+          "inherited_soft": 0,
+          "inherited_hard": -1,
+          "applied_soft": 0,
+          "applied_hard": 0
+        },
+        "FSIZE": {
+          "inherited_soft": -1,
+          "inherited_hard": -1,
+          "applied_soft": 268435456,
+          "applied_hard": 268435456
+        },
+        "NOFILE": {
+          "inherited_soft": 1024,
+          "inherited_hard": 1048576,
+          "applied_soft": 64,
+          "applied_hard": 64
+        },
+        "NPROC": {
+          "inherited_soft": 63295,
+          "inherited_hard": 63295,
+          "applied_soft": 32,
+          "applied_hard": 32
+        }
+      },
+      "observed_stream_bytes": {
+        "stdout": 0,
+        "stderr": 0
+      },
+      "stop_reason": null,
+      "wall_seconds": 0.2394628659967566
+    }
+  ],
+  "complete": true,
+  "runtime_invocations": 0,
+  "phase5": "NOT_ACCEPTED",
+  "phase6": "NOT_STARTED"
+}

@@ -1,5 +1,10 @@
 # Project showcase
 
+## Actual62/63 braking diagnostics, incomplete stop
+
+[Actual62 figure](../figures/phase5_stop62_actual_braking_20261016.png) shows all42 failed stop observations before finite-family exhaustion. [Actual63 figure](../figures/phase5_stop63_actual_braking_20261016.png) shows all62 failed observations after explicit warm-family repair and before numeric512 failure. Both use original thresholds and show dwell0/50; no omitted failures or extrapolated motion. CSV/SVG/JSON provenance accompany each PNG. [Source/results and scope](../reviews/evidence/phase5_actual63_explicit_warm_and_numeric512_v1_20261016/README.md). These are development diagnostics, not successful full-task videos or research acceptance.
+
+
 Actual project renders, diagnostic figures and downloadable CAD artifacts.
 Phase 0–4 component gates have passed; Phase 5 awaits independent acceptance.
 These assets illustrate the stated scope and do not establish final research

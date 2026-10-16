@@ -1,0 +1,27 @@
+{
+  "schema": "ROOT63_READONLY_READER_ASSUMPTIONS_RETAINED_V1",
+  "failures": [
+    {
+      "script": "root63_extract_actual53_v1.py",
+      "error": "missing local actual53 parent before O_EXCL write; manifest bytes reserved to shared ledger, no file created",
+      "repair": "Fresh reader v2 creates parent; no charge refund, no native/capture/archive repeat"
+    },
+    {
+      "script": "root63_actual_review_v1.py",
+      "error": "MergedV3 exact field is opt-in availability/configuration1, not occurrence; indices count is0",
+      "repair": "Correct to exact1 and empty indices"
+    },
+    {
+      "script": "root63_actual_review_v2.py",
+      "error": "candidate.bin exists as failed placeholder, not absent",
+      "repair": "Decode actual current63 error, executionPermission0, attempts1/wrappers0, native_rawstatus0 and empty x; no nativeSOLVED/B/C"
+    },
+    {
+      "script": "root63_source_and_newpure_review_v1.py",
+      "error": "new profile replaces old strategy key, so diff includes both old and new keys plus session",
+      "repair": "Verify exact three changed keys and intended bounded strategy fields"
+    }
+  ],
+  "no_source_native_or_capture_repeated": true,
+  "scope": "Reader defects preserved; successful v3/v2 reports are authoritative."
+}

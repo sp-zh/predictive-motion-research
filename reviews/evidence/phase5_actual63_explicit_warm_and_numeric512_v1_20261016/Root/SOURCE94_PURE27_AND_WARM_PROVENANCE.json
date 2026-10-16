@@ -1,0 +1,96 @@
+{
+  "schema": "ROOT63_FROZEN94_SOURCE_PROFILE_PURE27_AND_WARM_PROVENANCE_REVIEW_V1",
+  "all93_manifest_payloads_verified": true,
+  "total_source_files": 94,
+  "changed_old_files": [
+    "README.md",
+    "active_first_cycle.cpp"
+  ],
+  "unchanged_old_payloads": 88,
+  "added_files": [
+    "braking_nominal63_codec.hpp",
+    "current_braking_nominal63.hpp",
+    "current_braking_nominal63_tests.cpp"
+  ],
+  "profile_changed_keys": [
+    "current_braking_nominal62",
+    "session_id",
+    "current_braking_nominal63"
+  ],
+  "all_numeric_QP_original_SI_cost_initializer_nonlinear_geometric_history_B_C_stop_sources_byteexact62": true,
+  "record_bytes": 96,
+  "maximum_attempts": 1080,
+  "maximum_payload": 109056,
+  "hard_file_cap": 131072,
+  "all144_stop_files_max": 18874368,
+  "whole_numeric_upper": 1799688432,
+  "conservative_hint_peak": 744960,
+  "pure_payloads_SHA_verified": 173,
+  "all27_pure_exit0_declared_no_Model_native": true,
+  "pure_input_before_after_equal": true,
+  "warm_literal_all160_doubles_equal_actual63_previous52_accepted_candidate_overlap_shift": true,
+  "history_fields_equal_exact_actual62_failure53": true,
+  "new_pure_cases": [
+    {
+      "case": "saved62-current53-explicit-warm",
+      "replay": {
+        "attempts": 156,
+        "counts_per_channel": [
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          149
+        ],
+        "successful_channels": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7
+        ],
+        "every_rejected_reason_location_and_observed_bound_recomputed": true,
+        "scope": "Independent scalar recurrence/family+codec review only; no Model/native/SI/nonlinear/B/C/physical stop acceptance."
+      },
+      "source_complete": true
+    },
+    {
+      "case": "saved62-current53-explicit-warm-refused",
+      "replay": {
+        "attempts": 156,
+        "counts_per_channel": [
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          149
+        ],
+        "successful_channels": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5,
+          6
+        ],
+        "every_rejected_reason_location_and_observed_bound_recomputed": true,
+        "scope": "Independent scalar recurrence/family+codec review only; no Model/native/SI/nonlinear/B/C/physical stop acceptance."
+      },
+      "source_complete": false
+    }
+  ],
+  "trial1_no_rebuild": true,
+  "synthetic_max1080": true,
+  "old62_perturbed74_fixture_preserved_and_qualified": true,
+  "scope": "Frozen-source and saved scalar/helper review. Warm original1/.5,20/5 limits do not inherit analytic .999 planning margins; old analytic margins unchanged. No owner/token/permission transfer. Not full physical stop/task/realtime/phase proof. Original63 numeric512 failure remains."
+}
