@@ -1,0 +1,101 @@
+{
+  "original_source58_packet_READY_sha256": "80afd6ecffd138417a78ea1fab50ccc19663e7f8e2d88c04132c4dfbe52cb7ba",
+  "context": "cycle-74/trial-0",
+  "rows": 7391,
+  "actual_mask_scope": "Mask was not independently serialized by58. Source initializes allzero, only full144 basis-reduction branch marks rows, and saved trace has0basis events. Therefore allzero mask is a source-derived inference, not a measured old byte dump. Pure replay may instrument it separately.",
+  "mask_inference": "allzero",
+  "original_nominal_and_D_preserved_separately": true,
+  "input_pins": {
+    "/private/tmp/phase5_controlled_stop_global_interval_terminal58_v1_20261016/READY.json": {
+      "bytes": 242135,
+      "sha256": "80afd6ecffd138417a78ea1fab50ccc19663e7f8e2d88c04132c4dfbe52cb7ba"
+    },
+    "/private/tmp/phase5_controlled_stop_global_interval_terminal58_v1_20261016/actual-dell/session-controlled-stop-global-interval-active32-brake64-dwell25-v1-20261016-attempt58/run-attempt1/artifacts/cycle-74/trial-0/qp_equality_reduction.bin": {
+      "bytes": 7701883,
+      "sha256": "275b6b15ce83a5e2d861e27b508c4837b7cce5b8c004109b4f70590c1efc3211"
+    },
+    "/private/tmp/phase5_controlled_stop_global_interval_terminal58_v1_20261016/actual-dell/session-controlled-stop-global-interval-active32-brake64-dwell25-v1-20261016-attempt58/run-attempt1/artifacts/cycle-74/trial-0/MANIFEST.yaml": {
+      "bytes": 10366,
+      "sha256": "f2af9a0ab95f54e4db610a74ea4660977b0bd1d1592f8bad4732d69c52f98466"
+    },
+    "/private/tmp/phase5_controlled_stop_global_interval_terminal58_v1_20261016/actual-dell/session-controlled-stop-global-interval-active32-brake64-dwell25-v1-20261016-attempt58/run-attempt1/artifacts/cycle-74/trial-0/hint_boundary_events.bin": {
+      "bytes": 1741,
+      "sha256": "572b0ff4600dc686422dedb568965c25d2774a60ec707f1db563d81f8c0011a4"
+    },
+    "/private/tmp/phase5_controlled_stop_global_interval_terminal58_v1_20261016/actual-dell/session-controlled-stop-global-interval-active32-brake64-dwell25-v1-20261016-attempt58/run-attempt1/artifacts/cycle-74/trial-0/hint_kkt_rank_events.bin": {
+      "bytes": 2756,
+      "sha256": "a8ac62a1daabfa84ef3c02119b3cbb8205836324a888af517f6aad90e7befc1d"
+    },
+    "/private/tmp/phase5_controlled_stop_global_interval_terminal58_v1_20261016/actual-dell/session-controlled-stop-global-interval-active32-brake64-dwell25-v1-20261016-attempt58/run-attempt1/artifacts/cycle-74/trial-0/working_face_basis_trace.bin": {
+      "bytes": 14598,
+      "sha256": "d245c74505fd314c7993df6ed3d04bf26d3ce0715cfb3f567d443a49c1b332fa"
+    },
+    "/private/tmp/phase5_controlled_stop_global_interval_terminal58_v1_20261016/actual-dell/session-controlled-stop-global-interval-active32-brake64-dwell25-v1-20261016-attempt58/run-attempt1/artifacts/cycle-74/trial-0/numeric_feasible_initializer.bin": {
+      "bytes": 2740,
+      "sha256": "625b9c0a9a934e49ddcc99b2e942ab09516f1092bb875015a1acf30d0b22376a"
+    }
+  },
+  "codec_receipts": {
+    "/private/tmp/phase5_controlled_stop_global_interval_terminal58_v1_20261016/actual-dell/session-controlled-stop-global-interval-active32-brake64-dwell25-v1-20261016-attempt58/run-attempt1/artifacts/cycle-74/trial-0/qp_equality_reduction.bin": {
+      "file": "/private/tmp/phase5_controlled_stop_global_interval_terminal58_v1_20261016/actual-dell/session-controlled-stop-global-interval-active32-brake64-dwell25-v1-20261016-attempt58/run-attempt1/artifacts/cycle-74/trial-0/qp_equality_reduction.bin",
+      "codec": "GZIP_DEFLATE_V1",
+      "stored_bytes": 7701883,
+      "stored_sha256": "275b6b15ce83a5e2d861e27b508c4837b7cce5b8c004109b4f70590c1efc3211",
+      "raw_bytes": 20023084,
+      "raw_sha256": "09f0aef2c3a4716012aea458c19ca31db72db8de5d50aaf731c87bf6c5b7c622",
+      "source_complete": true,
+      "closed_raw_prefix_valid": true,
+      "scope": "source complete is separate from successful gzip prefix reconstruction; no Model/native/mathematical acceptance",
+      "math_available": true
+    },
+    "/private/tmp/phase5_controlled_stop_global_interval_terminal58_v1_20261016/actual-dell/session-controlled-stop-global-interval-active32-brake64-dwell25-v1-20261016-attempt58/run-attempt1/artifacts/cycle-74/trial-0/hint_boundary_events.bin": {
+      "file": "/private/tmp/phase5_controlled_stop_global_interval_terminal58_v1_20261016/actual-dell/session-controlled-stop-global-interval-active32-brake64-dwell25-v1-20261016-attempt58/run-attempt1/artifacts/cycle-74/trial-0/hint_boundary_events.bin",
+      "codec": "GZIP_DEFLATE_V1",
+      "stored_bytes": 1741,
+      "stored_sha256": "572b0ff4600dc686422dedb568965c25d2774a60ec707f1db563d81f8c0011a4",
+      "raw_bytes": 6360,
+      "raw_sha256": "fe8f52d140376f640eee80583e3661d9e4fa2ddf1138daa46049066811153d1d",
+      "source_complete": true,
+      "closed_raw_prefix_valid": true,
+      "scope": "source complete is separate from successful gzip prefix reconstruction; no Model/native/mathematical acceptance",
+      "math_available": true
+    },
+    "/private/tmp/phase5_controlled_stop_global_interval_terminal58_v1_20261016/actual-dell/session-controlled-stop-global-interval-active32-brake64-dwell25-v1-20261016-attempt58/run-attempt1/artifacts/cycle-74/trial-0/hint_kkt_rank_events.bin": {
+      "file": "/private/tmp/phase5_controlled_stop_global_interval_terminal58_v1_20261016/actual-dell/session-controlled-stop-global-interval-active32-brake64-dwell25-v1-20261016-attempt58/run-attempt1/artifacts/cycle-74/trial-0/hint_kkt_rank_events.bin",
+      "codec": "GZIP_DEFLATE_V1",
+      "stored_bytes": 2756,
+      "stored_sha256": "a8ac62a1daabfa84ef3c02119b3cbb8205836324a888af517f6aad90e7befc1d",
+      "raw_bytes": 16645,
+      "raw_sha256": "f374cda31442a26d50582c80c1a8ad8bc6f70bd162736f75aa08ce93398ddf47",
+      "source_complete": true,
+      "closed_raw_prefix_valid": true,
+      "scope": "source complete is separate from successful gzip prefix reconstruction; no Model/native/mathematical acceptance",
+      "math_available": true
+    },
+    "/private/tmp/phase5_controlled_stop_global_interval_terminal58_v1_20261016/actual-dell/session-controlled-stop-global-interval-active32-brake64-dwell25-v1-20261016-attempt58/run-attempt1/artifacts/cycle-74/trial-0/working_face_basis_trace.bin": {
+      "file": "/private/tmp/phase5_controlled_stop_global_interval_terminal58_v1_20261016/actual-dell/session-controlled-stop-global-interval-active32-brake64-dwell25-v1-20261016-attempt58/run-attempt1/artifacts/cycle-74/trial-0/working_face_basis_trace.bin",
+      "codec": "GZIP_DEFLATE_V1",
+      "stored_bytes": 14598,
+      "stored_sha256": "d245c74505fd314c7993df6ed3d04bf26d3ce0715cfb3f567d443a49c1b332fa",
+      "raw_bytes": 112093,
+      "raw_sha256": "9b4132ca0f409aafebb16039f174d9d82da5409b3c095c105e1dc252abbf767c",
+      "source_complete": true,
+      "closed_raw_prefix_valid": true,
+      "scope": "source complete is separate from successful gzip prefix reconstruction; no Model/native/mathematical acceptance",
+      "math_available": true
+    },
+    "/private/tmp/phase5_controlled_stop_global_interval_terminal58_v1_20261016/actual-dell/session-controlled-stop-global-interval-active32-brake64-dwell25-v1-20261016-attempt58/run-attempt1/artifacts/cycle-74/trial-0/numeric_feasible_initializer.bin": {
+      "file": "/private/tmp/phase5_controlled_stop_global_interval_terminal58_v1_20261016/actual-dell/session-controlled-stop-global-interval-active32-brake64-dwell25-v1-20261016-attempt58/run-attempt1/artifacts/cycle-74/trial-0/numeric_feasible_initializer.bin",
+      "codec": "GZIP_DEFLATE_V1",
+      "stored_bytes": 2740,
+      "stored_sha256": "625b9c0a9a934e49ddcc99b2e942ab09516f1092bb875015a1acf30d0b22376a",
+      "raw_bytes": 4660,
+      "raw_sha256": "af52e3679c13734ad71d16b159f294c98c81ef5f24c286e0b40c853a8ebd000c",
+      "source_complete": true,
+      "closed_raw_prefix_valid": true,
+      "scope": "source complete is separate from successful gzip prefix reconstruction; no Model/native/mathematical acceptance",
+      "math_available": true
+    }
+  },
+  "scope": "Additional unchanged saved evidence only; no native replay or acceptance."
+}

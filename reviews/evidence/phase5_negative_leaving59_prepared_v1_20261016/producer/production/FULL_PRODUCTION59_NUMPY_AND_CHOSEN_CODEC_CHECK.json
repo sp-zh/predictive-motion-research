@@ -1,0 +1,1438 @@
+{
+  "schema": "SOURCE59_PRODUCTION7SAVED6ACTIVE_EXPLICIT_NEW_CODEC_FULL_V1",
+  "cases": [
+    {
+      "case": "actual56_48_1",
+      "fixture_sha256": "069b99b19abe78a22a7845e65a94774ef66958e6f9a2ad573001061e77ea7b66",
+      "current_rows": 7346,
+      "events": 272,
+      "finalxy_sha256": "c95d5eb184d85c4197785cf39cbb236155ad67cd5a8ef9471d05abbfe16b706c",
+      "final_violation_numpy": 7.892939773990193e-13,
+      "final_stationarity_numpy": 1.1102230246251565e-16,
+      "endpoints": 15812,
+      "boundary_count": 11290,
+      "chosen_leaving": {
+        "cycle": 0,
+        "trial": 0,
+        "hint_available": 1,
+        "requested_stop": 1,
+        "policy_activated": 1,
+        "scope": "Data-only numerical optimizer leaving diagnostics. Stop repair chooses smallest CURRENT SCALED SOLVER A ROW index among multipliers strictly below original -1e-12. Current row is not original14756SI index; internal planning rows need separate provenance maps. Original worst_row=-1 for this branch and true global minimum multiplier remain in old current_numeric_hint events, with no changed meaning. New selected multiplier may differ from true global minimum. Position refers to ordered working set before erase; actual decision is after original direction infinity<=1e-12, KKT rank/LLT/residual/refinement gates. Up to512 records, no retry/reset. Old active repair=false loop and outputs unchanged. Original current H/g/A/l/u, original bounds/tolerances/512/10s/full-row/nativeSOLVED/SI/nonlinear/geometric/B/history/two2ms/C/stop remain; no clipping/projection/perturbation, no nonnegative-dual/fullQP/physical or phase proof from this record. Scalar records alone are not an independent reconstruction of every working set; saved input replay and final original gates remain required.",
+        "events": [
+          {
+            "iteration": 254,
+            "row": 6954,
+            "side": 1,
+            "position": 103,
+            "selected_multiplier": -7.101605638465228e-05,
+            "minimum_multiplier": -0.02069994362377449
+          },
+          {
+            "iteration": 257,
+            "row": 6994,
+            "side": 1,
+            "position": 64,
+            "selected_multiplier": -0.0015940705620986519,
+            "minimum_multiplier": -0.020699940897693864
+          },
+          {
+            "iteration": 259,
+            "row": 7004,
+            "side": 1,
+            "position": 68,
+            "selected_multiplier": -0.004313957799983947,
+            "minimum_multiplier": -0.02069995020491615
+          },
+          {
+            "iteration": 261,
+            "row": 7007,
+            "side": -1,
+            "position": 62,
+            "selected_multiplier": -0.004559535431059999,
+            "minimum_multiplier": -0.020699730442292383
+          },
+          {
+            "iteration": 263,
+            "row": 7023,
+            "side": 1,
+            "position": 65,
+            "selected_multiplier": -0.02069964786128888,
+            "minimum_multiplier": -0.02069964786128888
+          },
+          {
+            "iteration": 265,
+            "row": 7030,
+            "side": 1,
+            "position": 70,
+            "selected_multiplier": -0.009068113565976815,
+            "minimum_multiplier": -0.009068113565976815
+          },
+          {
+            "iteration": 267,
+            "row": 7036,
+            "side": -1,
+            "position": 103,
+            "selected_multiplier": -1.73893550614556e-05,
+            "minimum_multiplier": -1.73893550614556e-05
+          },
+          {
+            "iteration": 269,
+            "row": 7046,
+            "side": -1,
+            "position": 96,
+            "selected_multiplier": -1.005543564676881e-06,
+            "minimum_multiplier": -1.005543564676881e-06
+          }
+        ],
+        "counterpart_event_rows_checked": true,
+        "row_coordinates": "CURRENT_SCALED_SOLVER_A_NOT_ORIGINAL14756SI",
+        "scalar_proof_scope": "Chosen/global-min fields only. Independent replay is needed to reconstruct every working-set eligible multiplier."
+      },
+      "new_codec_receipt": {
+        "file": "/private/tmp/phase5_negative_leaving59_source_v1_20261016/production_math_pure_v1/readback/stop_actual56_48_1.leaving/hint_negative_leaving_events.bin",
+        "codec": "RAW_V1",
+        "stored_bytes": 1647,
+        "stored_sha256": "ec8f65ff620656a276ad3fdfe7f329ff9b67f2df077513ce1b86295a0e755eba",
+        "raw_bytes": 1647,
+        "raw_sha256": "ec8f65ff620656a276ad3fdfe7f329ff9b67f2df077513ce1b86295a0e755eba",
+        "source_complete": true,
+        "closed_raw_prefix_valid": true,
+        "scope": "source complete is separate from successful gzip prefix reconstruction; no Model/native/mathematical acceptance"
+      },
+      "bit_comparison_to_private_v2_prototype": {
+        ".finalxy.bin": true,
+        ".states.bin": true,
+        ".boundary48.bin": true,
+        ".retained64.bin": true,
+        ".refinement120.bin": true
+      }
+    },
+    {
+      "case": "old52_40_0",
+      "fixture_sha256": "63adf752672de67a3842b39091157b476d3066a6e48de25dbe4bcc4da2514856",
+      "current_rows": 7349,
+      "events": 216,
+      "finalxy_sha256": "1bcfb0ac9db757fa9b3cb84dad17bd6f2602980a112a523ea9a82314671f7bbc",
+      "final_violation_numpy": 8.834192058437829e-13,
+      "final_stationarity_numpy": 2.498001805406602e-16,
+      "endpoints": 3290,
+      "boundary_count": 67,
+      "chosen_leaving": {
+        "cycle": 0,
+        "trial": 0,
+        "hint_available": 1,
+        "requested_stop": 1,
+        "policy_activated": 1,
+        "scope": "Data-only numerical optimizer leaving diagnostics. Stop repair chooses smallest CURRENT SCALED SOLVER A ROW index among multipliers strictly below original -1e-12. Current row is not original14756SI index; internal planning rows need separate provenance maps. Original worst_row=-1 for this branch and true global minimum multiplier remain in old current_numeric_hint events, with no changed meaning. New selected multiplier may differ from true global minimum. Position refers to ordered working set before erase; actual decision is after original direction infinity<=1e-12, KKT rank/LLT/residual/refinement gates. Up to512 records, no retry/reset. Old active repair=false loop and outputs unchanged. Original current H/g/A/l/u, original bounds/tolerances/512/10s/full-row/nativeSOLVED/SI/nonlinear/geometric/B/history/two2ms/C/stop remain; no clipping/projection/perturbation, no nonnegative-dual/fullQP/physical or phase proof from this record. Scalar records alone are not an independent reconstruction of every working set; saved input replay and final original gates remain required.",
+        "events": [
+          {
+            "iteration": 191,
+            "row": 6936,
+            "side": 1,
+            "position": 97,
+            "selected_multiplier": -0.016361675712312618,
+            "minimum_multiplier": -0.4675007718114794
+          },
+          {
+            "iteration": 193,
+            "row": 6987,
+            "side": -1,
+            "position": 91,
+            "selected_multiplier": -0.000278682316921966,
+            "minimum_multiplier": -0.46750052741025755
+          },
+          {
+            "iteration": 195,
+            "row": 7011,
+            "side": 1,
+            "position": 68,
+            "selected_multiplier": -0.010347835551519004,
+            "minimum_multiplier": -0.4675005279364376
+          },
+          {
+            "iteration": 197,
+            "row": 7018,
+            "side": 1,
+            "position": 67,
+            "selected_multiplier": -0.003730279071415749,
+            "minimum_multiplier": -0.4675025422767042
+          },
+          {
+            "iteration": 199,
+            "row": 7021,
+            "side": 1,
+            "position": 69,
+            "selected_multiplier": -0.02161186927455002,
+            "minimum_multiplier": -0.46750294703838896
+          },
+          {
+            "iteration": 201,
+            "row": 7024,
+            "side": -1,
+            "position": 60,
+            "selected_multiplier": -0.02506984864406629,
+            "minimum_multiplier": -0.46750288970477955
+          },
+          {
+            "iteration": 203,
+            "row": 7031,
+            "side": -1,
+            "position": 63,
+            "selected_multiplier": -0.008347033614688191,
+            "minimum_multiplier": -0.4675032888527639
+          },
+          {
+            "iteration": 205,
+            "row": 7033,
+            "side": 1,
+            "position": 69,
+            "selected_multiplier": -0.08689306574610213,
+            "minimum_multiplier": -0.4675034582004531
+          },
+          {
+            "iteration": 207,
+            "row": 7053,
+            "side": -1,
+            "position": 121,
+            "selected_multiplier": -0.006800405140255208,
+            "minimum_multiplier": -0.46750533833621927
+          },
+          {
+            "iteration": 209,
+            "row": 7056,
+            "side": -1,
+            "position": 116,
+            "selected_multiplier": -0.05024913875261517,
+            "minimum_multiplier": -0.46750719033677846
+          },
+          {
+            "iteration": 211,
+            "row": 7028,
+            "side": 1,
+            "position": 60,
+            "selected_multiplier": -0.005338332331839973,
+            "minimum_multiplier": -0.4675069289341544
+          },
+          {
+            "iteration": 213,
+            "row": 7298,
+            "side": -1,
+            "position": 6,
+            "selected_multiplier": -0.46750663147889765,
+            "minimum_multiplier": -0.46750663147889765
+          }
+        ],
+        "counterpart_event_rows_checked": true,
+        "row_coordinates": "CURRENT_SCALED_SOLVER_A_NOT_ORIGINAL14756SI",
+        "scalar_proof_scope": "Chosen/global-min fields only. Independent replay is needed to reconstruct every working-set eligible multiplier."
+      },
+      "new_codec_receipt": {
+        "file": "/private/tmp/phase5_negative_leaving59_source_v1_20261016/production_math_pure_v1/readback/stop_old52_40_0.leaving/hint_negative_leaving_events.bin",
+        "codec": "RAW_V1",
+        "stored_bytes": 1839,
+        "stored_sha256": "9edb26253a9c11e2b35952250e684f677681c6979f1ed9166889deaf5f5795d0",
+        "raw_bytes": 1839,
+        "raw_sha256": "9edb26253a9c11e2b35952250e684f677681c6979f1ed9166889deaf5f5795d0",
+        "source_complete": true,
+        "closed_raw_prefix_valid": true,
+        "scope": "source complete is separate from successful gzip prefix reconstruction; no Model/native/mathematical acceptance"
+      },
+      "bit_comparison_to_private_v2_prototype": {
+        ".finalxy.bin": true,
+        ".states.bin": true,
+        ".boundary48.bin": true,
+        ".retained64.bin": true,
+        ".refinement120.bin": true
+      }
+    },
+    {
+      "case": "old53_40_1",
+      "fixture_sha256": "548579a0aa48ab67cc2eb2e73ed38b0da1765d23e4b1dd59ceb9a9e23882b190",
+      "current_rows": 7349,
+      "events": 201,
+      "finalxy_sha256": "e402569e121042730a52a1211694425ecc0c89ab9b39eb29376c57af759853d6",
+      "final_violation_numpy": 8.286748023889068e-13,
+      "final_stationarity_numpy": 3.3306690738754696e-16,
+      "endpoints": 1638,
+      "boundary_count": 959,
+      "chosen_leaving": {
+        "cycle": 0,
+        "trial": 0,
+        "hint_available": 1,
+        "requested_stop": 1,
+        "policy_activated": 1,
+        "scope": "Data-only numerical optimizer leaving diagnostics. Stop repair chooses smallest CURRENT SCALED SOLVER A ROW index among multipliers strictly below original -1e-12. Current row is not original14756SI index; internal planning rows need separate provenance maps. Original worst_row=-1 for this branch and true global minimum multiplier remain in old current_numeric_hint events, with no changed meaning. New selected multiplier may differ from true global minimum. Position refers to ordered working set before erase; actual decision is after original direction infinity<=1e-12, KKT rank/LLT/residual/refinement gates. Up to512 records, no retry/reset. Old active repair=false loop and outputs unchanged. Original current H/g/A/l/u, original bounds/tolerances/512/10s/full-row/nativeSOLVED/SI/nonlinear/geometric/B/history/two2ms/C/stop remain; no clipping/projection/perturbation, no nonnegative-dual/fullQP/physical or phase proof from this record. Scalar records alone are not an independent reconstruction of every working set; saved input replay and final original gates remain required.",
+        "events": [
+          {
+            "iteration": 174,
+            "row": 6936,
+            "side": 1,
+            "position": 92,
+            "selected_multiplier": -0.015955195789774383,
+            "minimum_multiplier": -0.13013476302297122
+          },
+          {
+            "iteration": 176,
+            "row": 6974,
+            "side": 1,
+            "position": 115,
+            "selected_multiplier": -1.3198519746401665e-05,
+            "minimum_multiplier": -0.13013336128288858
+          },
+          {
+            "iteration": 178,
+            "row": 7009,
+            "side": -1,
+            "position": 130,
+            "selected_multiplier": -3.6077819127039293e-06,
+            "minimum_multiplier": -0.13013628775499136
+          },
+          {
+            "iteration": 180,
+            "row": 7011,
+            "side": 1,
+            "position": 76,
+            "selected_multiplier": -0.007213005906746311,
+            "minimum_multiplier": -0.1301362131889514
+          },
+          {
+            "iteration": 182,
+            "row": 7018,
+            "side": 1,
+            "position": 72,
+            "selected_multiplier": -0.0017152682436072167,
+            "minimum_multiplier": -0.13015384935831092
+          },
+          {
+            "iteration": 184,
+            "row": 7021,
+            "side": 1,
+            "position": 71,
+            "selected_multiplier": -0.01764948412775674,
+            "minimum_multiplier": -0.13015765336386995
+          },
+          {
+            "iteration": 186,
+            "row": 7024,
+            "side": -1,
+            "position": 68,
+            "selected_multiplier": -0.019821605190779995,
+            "minimum_multiplier": -0.13015711659411885
+          },
+          {
+            "iteration": 188,
+            "row": 7031,
+            "side": -1,
+            "position": 70,
+            "selected_multiplier": -0.00565716450630246,
+            "minimum_multiplier": -0.1301607842110837
+          },
+          {
+            "iteration": 190,
+            "row": 7033,
+            "side": 1,
+            "position": 74,
+            "selected_multiplier": -0.08423559236085608,
+            "minimum_multiplier": -0.13016257298136244
+          },
+          {
+            "iteration": 192,
+            "row": 7053,
+            "side": -1,
+            "position": 122,
+            "selected_multiplier": -0.0006388680241957033,
+            "minimum_multiplier": -0.13018406227021329
+          },
+          {
+            "iteration": 194,
+            "row": 7056,
+            "side": -1,
+            "position": 113,
+            "selected_multiplier": -0.03607812516575855,
+            "minimum_multiplier": -0.1302029640263982
+          },
+          {
+            "iteration": 196,
+            "row": 7028,
+            "side": 1,
+            "position": 68,
+            "selected_multiplier": -0.0017994078917042018,
+            "minimum_multiplier": -0.13020030906208466
+          },
+          {
+            "iteration": 198,
+            "row": 7283,
+            "side": -1,
+            "position": 7,
+            "selected_multiplier": -0.13019693748357822,
+            "minimum_multiplier": -0.13019693748357822
+          }
+        ],
+        "counterpart_event_rows_checked": true,
+        "row_coordinates": "CURRENT_SCALED_SOLVER_A_NOT_ORIGINAL14756SI",
+        "scalar_proof_scope": "Chosen/global-min fields only. Independent replay is needed to reconstruct every working-set eligible multiplier."
+      },
+      "new_codec_receipt": {
+        "file": "/private/tmp/phase5_negative_leaving59_source_v1_20261016/production_math_pure_v1/readback/stop_old53_40_1.leaving/hint_negative_leaving_events.bin",
+        "codec": "RAW_V1",
+        "stored_bytes": 1887,
+        "stored_sha256": "36614482fe1aa8b9bbc308cdb03f87b63dc6c39e351e0e8aadd3ef54f6a74ed1",
+        "raw_bytes": 1887,
+        "raw_sha256": "36614482fe1aa8b9bbc308cdb03f87b63dc6c39e351e0e8aadd3ef54f6a74ed1",
+        "source_complete": true,
+        "closed_raw_prefix_valid": true,
+        "scope": "source complete is separate from successful gzip prefix reconstruction; no Model/native/mathematical acceptance"
+      },
+      "bit_comparison_to_private_v2_prototype": {
+        ".finalxy.bin": true,
+        ".states.bin": true,
+        ".boundary48.bin": true,
+        ".retained64.bin": true,
+        ".refinement120.bin": true
+      }
+    },
+    {
+      "case": "old54_43_0",
+      "fixture_sha256": "1c7920a7d9f697fce28aea0fad3ea4c10fd34c17248853ea46c9296783680aa2",
+      "current_rows": 7344,
+      "events": 196,
+      "finalxy_sha256": "cdca53730b51c67f547ed5bc6489fc43b3d6a5477af0842c828153ecb77241be",
+      "final_violation_numpy": 4.604524227180828e-13,
+      "final_stationarity_numpy": 2.237793284010081e-16,
+      "endpoints": 1443,
+      "boundary_count": 6,
+      "chosen_leaving": {
+        "cycle": 0,
+        "trial": 0,
+        "hint_available": 1,
+        "requested_stop": 1,
+        "policy_activated": 1,
+        "scope": "Data-only numerical optimizer leaving diagnostics. Stop repair chooses smallest CURRENT SCALED SOLVER A ROW index among multipliers strictly below original -1e-12. Current row is not original14756SI index; internal planning rows need separate provenance maps. Original worst_row=-1 for this branch and true global minimum multiplier remain in old current_numeric_hint events, with no changed meaning. New selected multiplier may differ from true global minimum. Position refers to ordered working set before erase; actual decision is after original direction infinity<=1e-12, KKT rank/LLT/residual/refinement gates. Up to512 records, no retry/reset. Old active repair=false loop and outputs unchanged. Original current H/g/A/l/u, original bounds/tolerances/512/10s/full-row/nativeSOLVED/SI/nonlinear/geometric/B/history/two2ms/C/stop remain; no clipping/projection/perturbation, no nonnegative-dual/fullQP/physical or phase proof from this record. Scalar records alone are not an independent reconstruction of every working set; saved input replay and final original gates remain required.",
+        "events": [
+          {
+            "iteration": 168,
+            "row": 6931,
+            "side": 1,
+            "position": 89,
+            "selected_multiplier": -0.010427309558245102,
+            "minimum_multiplier": -0.05753730985438937
+          },
+          {
+            "iteration": 170,
+            "row": 6999,
+            "side": 1,
+            "position": 74,
+            "selected_multiplier": -0.007297284754320024,
+            "minimum_multiplier": -0.05753728227007721
+          },
+          {
+            "iteration": 172,
+            "row": 7006,
+            "side": 1,
+            "position": 64,
+            "selected_multiplier": -0.0017961831009557089,
+            "minimum_multiplier": -0.05753745709067126
+          },
+          {
+            "iteration": 174,
+            "row": 7012,
+            "side": -1,
+            "position": 59,
+            "selected_multiplier": -0.019181052373783185,
+            "minimum_multiplier": -0.05753765213838523
+          },
+          {
+            "iteration": 176,
+            "row": 7016,
+            "side": 1,
+            "position": 61,
+            "selected_multiplier": -0.0063514881599829875,
+            "minimum_multiplier": -0.05753724826851882
+          },
+          {
+            "iteration": 178,
+            "row": 7022,
+            "side": 1,
+            "position": 103,
+            "selected_multiplier": -0.006732975178415101,
+            "minimum_multiplier": -0.05753642926172308
+          },
+          {
+            "iteration": 180,
+            "row": 7028,
+            "side": 1,
+            "position": 66,
+            "selected_multiplier": -0.05753641774578547,
+            "minimum_multiplier": -0.05753641774578547
+          },
+          {
+            "iteration": 182,
+            "row": 7029,
+            "side": -1,
+            "position": 117,
+            "selected_multiplier": -0.003957824787707721,
+            "minimum_multiplier": -0.04320839781167276
+          },
+          {
+            "iteration": 184,
+            "row": 7041,
+            "side": -1,
+            "position": 114,
+            "selected_multiplier": -0.0012999976500436229,
+            "minimum_multiplier": -0.04320877911711273
+          },
+          {
+            "iteration": 187,
+            "row": 7047,
+            "side": 1,
+            "position": 106,
+            "selected_multiplier": -0.04320915347875275,
+            "minimum_multiplier": -0.04320915347875275
+          },
+          {
+            "iteration": 189,
+            "row": 7019,
+            "side": -1,
+            "position": 57,
+            "selected_multiplier": -0.0029914901521952905,
+            "minimum_multiplier": -0.011955913713044575
+          },
+          {
+            "iteration": 191,
+            "row": 7051,
+            "side": -1,
+            "position": 110,
+            "selected_multiplier": -0.009711797476948586,
+            "minimum_multiplier": -0.011960141011548048
+          },
+          {
+            "iteration": 193,
+            "row": 7343,
+            "side": -1,
+            "position": 3,
+            "selected_multiplier": -0.011956537659505002,
+            "minimum_multiplier": -0.011956537659505002
+          }
+        ],
+        "counterpart_event_rows_checked": true,
+        "row_coordinates": "CURRENT_SCALED_SOLVER_A_NOT_ORIGINAL14756SI",
+        "scalar_proof_scope": "Chosen/global-min fields only. Independent replay is needed to reconstruct every working-set eligible multiplier."
+      },
+      "new_codec_receipt": {
+        "file": "/private/tmp/phase5_negative_leaving59_source_v1_20261016/production_math_pure_v1/readback/stop_old54_43_0.leaving/hint_negative_leaving_events.bin",
+        "codec": "RAW_V1",
+        "stored_bytes": 1887,
+        "stored_sha256": "34d51de1d94213b6ff89f78bdb46814e0d5acf341e2f5f689562563febbba51c",
+        "raw_bytes": 1887,
+        "raw_sha256": "34d51de1d94213b6ff89f78bdb46814e0d5acf341e2f5f689562563febbba51c",
+        "source_complete": true,
+        "closed_raw_prefix_valid": true,
+        "scope": "source complete is separate from successful gzip prefix reconstruction; no Model/native/mathematical acceptance"
+      },
+      "bit_comparison_to_private_v2_prototype": {
+        ".finalxy.bin": true,
+        ".states.bin": true,
+        ".boundary48.bin": true,
+        ".retained64.bin": true,
+        ".refinement120.bin": true
+      }
+    },
+    {
+      "case": "old55_40_2",
+      "fixture_sha256": "e8e8c1140e56a0ae2dd494c122eab5f21b4eacd477c67cb03e22b86b1e899f74",
+      "current_rows": 7349,
+      "events": 162,
+      "finalxy_sha256": "185529ae34efacc5a6c684b161fb580fd479532d8d7543170aa98ccc16026a0c",
+      "final_violation_numpy": 7.868063839344686e-13,
+      "final_stationarity_numpy": 2.220446049250313e-16,
+      "endpoints": 0,
+      "boundary_count": 8,
+      "chosen_leaving": {
+        "cycle": 0,
+        "trial": 0,
+        "hint_available": 1,
+        "requested_stop": 1,
+        "policy_activated": 1,
+        "scope": "Data-only numerical optimizer leaving diagnostics. Stop repair chooses smallest CURRENT SCALED SOLVER A ROW index among multipliers strictly below original -1e-12. Current row is not original14756SI index; internal planning rows need separate provenance maps. Original worst_row=-1 for this branch and true global minimum multiplier remain in old current_numeric_hint events, with no changed meaning. New selected multiplier may differ from true global minimum. Position refers to ordered working set before erase; actual decision is after original direction infinity<=1e-12, KKT rank/LLT/residual/refinement gates. Up to512 records, no retry/reset. Old active repair=false loop and outputs unchanged. Original current H/g/A/l/u, original bounds/tolerances/512/10s/full-row/nativeSOLVED/SI/nonlinear/geometric/B/history/two2ms/C/stop remain; no clipping/projection/perturbation, no nonnegative-dual/fullQP/physical or phase proof from this record. Scalar records alone are not an independent reconstruction of every working set; saved input replay and final original gates remain required.",
+        "events": [
+          {
+            "iteration": 135,
+            "row": 6929,
+            "side": 1,
+            "position": 106,
+            "selected_multiplier": -0.015777311810575907,
+            "minimum_multiplier": -0.0840745767213843
+          },
+          {
+            "iteration": 137,
+            "row": 6936,
+            "side": 1,
+            "position": 92,
+            "selected_multiplier": -0.01592981982974023,
+            "minimum_multiplier": -0.08407457657953792
+          },
+          {
+            "iteration": 139,
+            "row": 6974,
+            "side": 1,
+            "position": 114,
+            "selected_multiplier": -1.2522203425222034e-07,
+            "minimum_multiplier": -0.08407457643937298
+          },
+          {
+            "iteration": 141,
+            "row": 7009,
+            "side": -1,
+            "position": 129,
+            "selected_multiplier": -1.4129722519828747e-07,
+            "minimum_multiplier": -0.0840745765076661
+          },
+          {
+            "iteration": 143,
+            "row": 7011,
+            "side": 1,
+            "position": 76,
+            "selected_multiplier": -0.007017133161146671,
+            "minimum_multiplier": -0.08407457649693817
+          },
+          {
+            "iteration": 145,
+            "row": 7018,
+            "side": 1,
+            "position": 72,
+            "selected_multiplier": -0.001589342346480894,
+            "minimum_multiplier": -0.08407457721311508
+          },
+          {
+            "iteration": 147,
+            "row": 7021,
+            "side": 1,
+            "position": 71,
+            "selected_multiplier": -0.01739140961614235,
+            "minimum_multiplier": -0.08407457737556266
+          },
+          {
+            "iteration": 149,
+            "row": 7024,
+            "side": -1,
+            "position": 68,
+            "selected_multiplier": -0.01949450750616282,
+            "minimum_multiplier": -0.08407457396665467
+          },
+          {
+            "iteration": 151,
+            "row": 7031,
+            "side": -1,
+            "position": 70,
+            "selected_multiplier": -0.005490351479024752,
+            "minimum_multiplier": -0.08407456530220996
+          },
+          {
+            "iteration": 153,
+            "row": 7033,
+            "side": 1,
+            "position": 74,
+            "selected_multiplier": -0.08407456121616473,
+            "minimum_multiplier": -0.08407456121616473
+          },
+          {
+            "iteration": 155,
+            "row": 7053,
+            "side": -1,
+            "position": 121,
+            "selected_multiplier": -0.00025382347339798165,
+            "minimum_multiplier": -0.035163373550384666
+          },
+          {
+            "iteration": 157,
+            "row": 7056,
+            "side": -1,
+            "position": 112,
+            "selected_multiplier": -0.035163372515362785,
+            "minimum_multiplier": -0.035163372515362785
+          },
+          {
+            "iteration": 159,
+            "row": 7028,
+            "side": 1,
+            "position": 68,
+            "selected_multiplier": -0.0015782812746520905,
+            "minimum_multiplier": -0.0015782812746520905
+          }
+        ],
+        "counterpart_event_rows_checked": true,
+        "row_coordinates": "CURRENT_SCALED_SOLVER_A_NOT_ORIGINAL14756SI",
+        "scalar_proof_scope": "Chosen/global-min fields only. Independent replay is needed to reconstruct every working-set eligible multiplier."
+      },
+      "new_codec_receipt": {
+        "file": "/private/tmp/phase5_negative_leaving59_source_v1_20261016/production_math_pure_v1/readback/stop_old55_40_2.leaving/hint_negative_leaving_events.bin",
+        "codec": "RAW_V1",
+        "stored_bytes": 1887,
+        "stored_sha256": "732229bdae7326f5e8e02b7ce7b3d350ed7061e9266d2f0519c4a3a3bcb3f618",
+        "raw_bytes": 1887,
+        "raw_sha256": "732229bdae7326f5e8e02b7ce7b3d350ed7061e9266d2f0519c4a3a3bcb3f618",
+        "source_complete": true,
+        "closed_raw_prefix_valid": true,
+        "scope": "source complete is separate from successful gzip prefix reconstruction; no Model/native/mathematical acceptance"
+      },
+      "bit_comparison_to_private_v2_prototype": {
+        ".finalxy.bin": true,
+        ".states.bin": true,
+        ".boundary48.bin": true,
+        ".retained64.bin": true,
+        ".refinement120.bin": true
+      }
+    },
+    {
+      "case": "actual58_54_0",
+      "fixture_sha256": "fcc6ccbf3c01f4a27355f82f945727e1434930a073015d65ae4b0125b5992683",
+      "current_rows": 7359,
+      "events": 167,
+      "finalxy_sha256": "00407978b40bb36ebd9df65f3cd3ad8dc983c2f185975c58c56b429c244d6047",
+      "final_violation_numpy": 3.504748574689742e-13,
+      "final_stationarity_numpy": 1.1449174941446927e-16,
+      "endpoints": 0,
+      "boundary_count": 72,
+      "chosen_leaving": {
+        "cycle": 54,
+        "trial": 0,
+        "hint_available": 1,
+        "requested_stop": 1,
+        "policy_activated": 1,
+        "scope": "Data-only numerical optimizer leaving diagnostics. Stop repair chooses smallest CURRENT SCALED SOLVER A ROW index among multipliers strictly below original -1e-12. Current row is not original14756SI index; internal planning rows need separate provenance maps. Original worst_row=-1 for this branch and true global minimum multiplier remain in old current_numeric_hint events, with no changed meaning. New selected multiplier may differ from true global minimum. Position refers to ordered working set before erase; actual decision is after original direction infinity<=1e-12, KKT rank/LLT/residual/refinement gates. Up to512 records, no retry/reset. Old active repair=false loop and outputs unchanged. Original current H/g/A/l/u, original bounds/tolerances/512/10s/full-row/nativeSOLVED/SI/nonlinear/geometric/B/history/two2ms/C/stop remain; no clipping/projection/perturbation, no nonnegative-dual/fullQP/physical or phase proof from this record. Scalar records alone are not an independent reconstruction of every working set; saved input replay and final original gates remain required.",
+        "events": [
+          {
+            "iteration": 106,
+            "row": 7000,
+            "side": 1,
+            "position": 71,
+            "selected_multiplier": -9.853552303032088e-06,
+            "minimum_multiplier": -0.09840136272408591
+          },
+          {
+            "iteration": 108,
+            "row": 7010,
+            "side": 1,
+            "position": 71,
+            "selected_multiplier": -0.0019039076441045683,
+            "minimum_multiplier": -0.09840275553950081
+          },
+          {
+            "iteration": 110,
+            "row": 7013,
+            "side": -1,
+            "position": 67,
+            "selected_multiplier": -0.0012535548944616892,
+            "minimum_multiplier": -0.0983811670001144
+          },
+          {
+            "iteration": 112,
+            "row": 7022,
+            "side": 1,
+            "position": 73,
+            "selected_multiplier": -0.010839001896794537,
+            "minimum_multiplier": -0.09839656169455997
+          },
+          {
+            "iteration": 114,
+            "row": 7029,
+            "side": 1,
+            "position": 69,
+            "selected_multiplier": -0.002950873112050106,
+            "minimum_multiplier": -0.09867017398178164
+          },
+          {
+            "iteration": 116,
+            "row": 7052,
+            "side": -1,
+            "position": 96,
+            "selected_multiplier": -0.0002863765962032002,
+            "minimum_multiplier": -0.09872812960951349
+          },
+          {
+            "iteration": 118,
+            "row": 7064,
+            "side": -1,
+            "position": 96,
+            "selected_multiplier": -0.0023337010712562653,
+            "minimum_multiplier": -0.09872965588962014
+          },
+          {
+            "iteration": 120,
+            "row": 7214,
+            "side": -1,
+            "position": 24,
+            "selected_multiplier": -0.042179202003363385,
+            "minimum_multiplier": -0.09883734058427374
+          },
+          {
+            "iteration": 121,
+            "row": 7213,
+            "side": -1,
+            "position": 23,
+            "selected_multiplier": -0.044399160003540404,
+            "minimum_multiplier": -0.09883734058427374
+          },
+          {
+            "iteration": 122,
+            "row": 7212,
+            "side": -1,
+            "position": 5,
+            "selected_multiplier": -0.0468657800037371,
+            "minimum_multiplier": -0.09883734058427374
+          },
+          {
+            "iteration": 123,
+            "row": 7211,
+            "side": -1,
+            "position": 21,
+            "selected_multiplier": -0.04962259059219222,
+            "minimum_multiplier": -0.09883734058427374
+          },
+          {
+            "iteration": 124,
+            "row": 7210,
+            "side": -1,
+            "position": 20,
+            "selected_multiplier": -0.05272400250420424,
+            "minimum_multiplier": -0.09883734058427374
+          },
+          {
+            "iteration": 125,
+            "row": 7209,
+            "side": -1,
+            "position": 19,
+            "selected_multiplier": -0.05623893600448453,
+            "minimum_multiplier": -0.09883734058427374
+          },
+          {
+            "iteration": 126,
+            "row": 7208,
+            "side": -1,
+            "position": 18,
+            "selected_multiplier": -0.060256002861947704,
+            "minimum_multiplier": -0.09883734058427374
+          },
+          {
+            "iteration": 127,
+            "row": 7207,
+            "side": -1,
+            "position": 17,
+            "selected_multiplier": -0.06489108000517443,
+            "minimum_multiplier": -0.09883734058427374
+          },
+          {
+            "iteration": 128,
+            "row": 7206,
+            "side": -1,
+            "position": 16,
+            "selected_multiplier": -0.07029867000560565,
+            "minimum_multiplier": -0.09883734058427374
+          },
+          {
+            "iteration": 129,
+            "row": 7205,
+            "side": -1,
+            "position": 15,
+            "selected_multiplier": -0.07668945818793345,
+            "minimum_multiplier": -0.09883734058427374
+          },
+          {
+            "iteration": 130,
+            "row": 7204,
+            "side": -1,
+            "position": 14,
+            "selected_multiplier": -0.08435840400672678,
+            "minimum_multiplier": -0.09883734058427374
+          },
+          {
+            "iteration": 131,
+            "row": 7203,
+            "side": -1,
+            "position": 13,
+            "selected_multiplier": -0.0937315600074742,
+            "minimum_multiplier": -0.09883734058427374
+          },
+          {
+            "iteration": 132,
+            "row": 7202,
+            "side": -1,
+            "position": 12,
+            "selected_multiplier": -0.10544800500840848,
+            "minimum_multiplier": -0.10544800500840848
+          },
+          {
+            "iteration": 133,
+            "row": 7201,
+            "side": -1,
+            "position": 11,
+            "selected_multiplier": -0.12051200572389541,
+            "minimum_multiplier": -0.12051200572389541
+          },
+          {
+            "iteration": 134,
+            "row": 7200,
+            "side": -1,
+            "position": 10,
+            "selected_multiplier": -0.1405973400112113,
+            "minimum_multiplier": -0.1405973400112113
+          },
+          {
+            "iteration": 135,
+            "row": 7199,
+            "side": -1,
+            "position": 9,
+            "selected_multiplier": -0.16871680801345357,
+            "minimum_multiplier": -0.16871680801345357
+          },
+          {
+            "iteration": 136,
+            "row": 7198,
+            "side": -1,
+            "position": 8,
+            "selected_multiplier": -0.21089601001681696,
+            "minimum_multiplier": -0.21089601001681696
+          },
+          {
+            "iteration": 137,
+            "row": 7197,
+            "side": -1,
+            "position": 7,
+            "selected_multiplier": -0.2811946800224226,
+            "minimum_multiplier": -0.2811946800224226
+          },
+          {
+            "iteration": 138,
+            "row": 7196,
+            "side": -1,
+            "position": 6,
+            "selected_multiplier": -0.4217920200336339,
+            "minimum_multiplier": -0.4217920200336339
+          },
+          {
+            "iteration": 139,
+            "row": 7195,
+            "side": -1,
+            "position": 5,
+            "selected_multiplier": -0.8435840400672678,
+            "minimum_multiplier": -0.8435840400672678
+          },
+          {
+            "iteration": 141,
+            "row": 7215,
+            "side": -1,
+            "position": 5,
+            "selected_multiplier": -0.0028158885561100897,
+            "minimum_multiplier": -0.09883734058425439
+          },
+          {
+            "iteration": 143,
+            "row": 7358,
+            "side": -1,
+            "position": 2,
+            "selected_multiplier": -0.09883734058432503,
+            "minimum_multiplier": -0.09883734058432503
+          }
+        ],
+        "counterpart_event_rows_checked": true,
+        "row_coordinates": "CURRENT_SCALED_SOLVER_A_NOT_ORIGINAL14756SI",
+        "scalar_proof_scope": "Chosen/global-min fields only. Independent replay is needed to reconstruct every working-set eligible multiplier."
+      },
+      "new_codec_receipt": {
+        "file": "/private/tmp/phase5_negative_leaving59_source_v1_20261016/production_math_pure_v1/readback/stop_actual58_54_0.leaving/hint_negative_leaving_events.bin",
+        "codec": "RAW_V1",
+        "stored_bytes": 2655,
+        "stored_sha256": "a263ea1649f8253b20ab26359cc8c71bf4e1e735409566083e67742a4a868aa4",
+        "raw_bytes": 2655,
+        "raw_sha256": "a263ea1649f8253b20ab26359cc8c71bf4e1e735409566083e67742a4a868aa4",
+        "source_complete": true,
+        "closed_raw_prefix_valid": true,
+        "scope": "source complete is separate from successful gzip prefix reconstruction; no Model/native/mathematical acceptance"
+      },
+      "bit_comparison_to_private_v2_prototype": null
+    },
+    {
+      "case": "actual58_74_0",
+      "fixture_sha256": "ba0de80aaba82efd4cbac257bf89017a10494b322303a47dbffec04f03fdd5be",
+      "current_rows": 7391,
+      "events": 171,
+      "finalxy_sha256": "57c61abe945cf2ee5093bc89a6ea6d4967665fdd6586973299b3a536bc77e95f",
+      "final_violation_numpy": 2.8314156574893445e-14,
+      "final_stationarity_numpy": 3.968179951296946e-17,
+      "endpoints": 0,
+      "boundary_count": 123,
+      "chosen_leaving": {
+        "cycle": 74,
+        "trial": 0,
+        "hint_available": 1,
+        "requested_stop": 1,
+        "policy_activated": 1,
+        "scope": "Data-only numerical optimizer leaving diagnostics. Stop repair chooses smallest CURRENT SCALED SOLVER A ROW index among multipliers strictly below original -1e-12. Current row is not original14756SI index; internal planning rows need separate provenance maps. Original worst_row=-1 for this branch and true global minimum multiplier remain in old current_numeric_hint events, with no changed meaning. New selected multiplier may differ from true global minimum. Position refers to ordered working set before erase; actual decision is after original direction infinity<=1e-12, KKT rank/LLT/residual/refinement gates. Up to512 records, no retry/reset. Old active repair=false loop and outputs unchanged. Original current H/g/A/l/u, original bounds/tolerances/512/10s/full-row/nativeSOLVED/SI/nonlinear/geometric/B/history/two2ms/C/stop remain; no clipping/projection/perturbation, no nonnegative-dual/fullQP/physical or phase proof from this record. Scalar records alone are not an independent reconstruction of every working set; saved input replay and final original gates remain required.",
+        "events": [
+          {
+            "iteration": 90,
+            "row": 7166,
+            "side": -1,
+            "position": 3,
+            "selected_multiplier": -7.495017375228869e-05,
+            "minimum_multiplier": -0.10231659766444176
+          },
+          {
+            "iteration": 91,
+            "row": 7186,
+            "side": -1,
+            "position": 23,
+            "selected_multiplier": -0.012154806062444791,
+            "minimum_multiplier": -0.10231659766444176
+          },
+          {
+            "iteration": 92,
+            "row": 7185,
+            "side": -1,
+            "position": 5,
+            "selected_multiplier": -0.015193507578055989,
+            "minimum_multiplier": -0.10231659766444176
+          },
+          {
+            "iteration": 93,
+            "row": 7184,
+            "side": -1,
+            "position": 21,
+            "selected_multiplier": -0.02025801010407466,
+            "minimum_multiplier": -0.10231659766444176
+          },
+          {
+            "iteration": 94,
+            "row": 7167,
+            "side": -1,
+            "position": 10,
+            "selected_multiplier": -0.014165127803139744,
+            "minimum_multiplier": -0.10231659766444176
+          },
+          {
+            "iteration": 95,
+            "row": 7165,
+            "side": -1,
+            "position": 11,
+            "selected_multiplier": -0.012950973991442053,
+            "minimum_multiplier": -0.10231659766444176
+          },
+          {
+            "iteration": 96,
+            "row": 7183,
+            "side": -1,
+            "position": 18,
+            "selected_multiplier": -0.03006564647645066,
+            "minimum_multiplier": -0.10231659766444176
+          },
+          {
+            "iteration": 97,
+            "row": 7168,
+            "side": -1,
+            "position": 3,
+            "selected_multiplier": -0.018886837070852994,
+            "minimum_multiplier": -0.10231659766444176
+          },
+          {
+            "iteration": 98,
+            "row": 7164,
+            "side": -1,
+            "position": 14,
+            "selected_multiplier": -0.015109469656682393,
+            "minimum_multiplier": -0.10231659766444176
+          },
+          {
+            "iteration": 99,
+            "row": 7169,
+            "side": -1,
+            "position": 9,
+            "selected_multiplier": -0.028330255606279494,
+            "minimum_multiplier": -0.10231659766444176
+          },
+          {
+            "iteration": 100,
+            "row": 7163,
+            "side": -1,
+            "position": 12,
+            "selected_multiplier": -0.012127549151347138,
+            "minimum_multiplier": -0.10231659766444176
+          },
+          {
+            "iteration": 101,
+            "row": 7182,
+            "side": -1,
+            "position": 13,
+            "selected_multiplier": -0.05820308087493336,
+            "minimum_multiplier": -0.10231659766444176
+          },
+          {
+            "iteration": 102,
+            "row": 7170,
+            "side": -1,
+            "position": 9,
+            "selected_multiplier": -0.056660511212559,
+            "minimum_multiplier": -0.10231659766444176
+          },
+          {
+            "iteration": 104,
+            "row": 7171,
+            "side": -1,
+            "position": 9,
+            "selected_multiplier": -0.005703651233482255,
+            "minimum_multiplier": -0.10231659766443692
+          },
+          {
+            "iteration": 106,
+            "row": 7181,
+            "side": -1,
+            "position": 10,
+            "selected_multiplier": -0.022514304137498775,
+            "minimum_multiplier": -0.10231659766443692
+          },
+          {
+            "iteration": 108,
+            "row": 7176,
+            "side": -1,
+            "position": 75,
+            "selected_multiplier": -0.0027016752185259987,
+            "minimum_multiplier": -0.10231659766443692
+          },
+          {
+            "iteration": 118,
+            "row": 7186,
+            "side": -1,
+            "position": 76,
+            "selected_multiplier": -0.011257152068749821,
+            "minimum_multiplier": -0.10231659766443692
+          },
+          {
+            "iteration": 119,
+            "row": 7210,
+            "side": -1,
+            "position": 10,
+            "selected_multiplier": -0.010009279182278332,
+            "minimum_multiplier": -0.10231659766443692
+          },
+          {
+            "iteration": 120,
+            "row": 7211,
+            "side": -1,
+            "position": 14,
+            "selected_multiplier": -0.010676564461096888,
+            "minimum_multiplier": -0.10231659766443692
+          },
+          {
+            "iteration": 121,
+            "row": 7212,
+            "side": -1,
+            "position": 15,
+            "selected_multiplier": -0.011439176208318094,
+            "minimum_multiplier": -0.10231659766443692
+          },
+          {
+            "iteration": 122,
+            "row": 7213,
+            "side": -1,
+            "position": 15,
+            "selected_multiplier": -0.012319112839727179,
+            "minimum_multiplier": -0.10231659766443692
+          },
+          {
+            "iteration": 123,
+            "row": 7214,
+            "side": -1,
+            "position": 15,
+            "selected_multiplier": -0.013345705576371108,
+            "minimum_multiplier": -0.10231659766443692
+          },
+          {
+            "iteration": 124,
+            "row": 7215,
+            "side": -1,
+            "position": 15,
+            "selected_multiplier": -0.014558951537859393,
+            "minimum_multiplier": -0.10231659766443692
+          },
+          {
+            "iteration": 125,
+            "row": 7216,
+            "side": -1,
+            "position": 15,
+            "selected_multiplier": -0.01601484669164533,
+            "minimum_multiplier": -0.10231659766443692
+          },
+          {
+            "iteration": 126,
+            "row": 7217,
+            "side": -1,
+            "position": 18,
+            "selected_multiplier": -0.017794274101828145,
+            "minimum_multiplier": -0.10231659766443692
+          },
+          {
+            "iteration": 127,
+            "row": 7218,
+            "side": -1,
+            "position": 18,
+            "selected_multiplier": -0.020018558364556665,
+            "minimum_multiplier": -0.10231659766443692
+          },
+          {
+            "iteration": 128,
+            "row": 7219,
+            "side": -1,
+            "position": 18,
+            "selected_multiplier": -0.02287835241663619,
+            "minimum_multiplier": -0.10231659766443692
+          },
+          {
+            "iteration": 129,
+            "row": 7220,
+            "side": -1,
+            "position": 18,
+            "selected_multiplier": -0.02669141115274222,
+            "minimum_multiplier": -0.10231659766443692
+          },
+          {
+            "iteration": 130,
+            "row": 7221,
+            "side": -1,
+            "position": 18,
+            "selected_multiplier": -0.032029693383290654,
+            "minimum_multiplier": -0.10231659766443692
+          },
+          {
+            "iteration": 131,
+            "row": 7222,
+            "side": -1,
+            "position": 18,
+            "selected_multiplier": -0.04003711672911334,
+            "minimum_multiplier": -0.10231659766443692
+          },
+          {
+            "iteration": 132,
+            "row": 7223,
+            "side": -1,
+            "position": 10,
+            "selected_multiplier": -0.053382822305484454,
+            "minimum_multiplier": -0.10231659766443692
+          },
+          {
+            "iteration": 133,
+            "row": 7224,
+            "side": -1,
+            "position": 17,
+            "selected_multiplier": -0.08007423345822663,
+            "minimum_multiplier": -0.10231659766443692
+          },
+          {
+            "iteration": 134,
+            "row": 7225,
+            "side": -1,
+            "position": 17,
+            "selected_multiplier": -0.16014846691645301,
+            "minimum_multiplier": -0.16014846691645301
+          },
+          {
+            "iteration": 140,
+            "row": 7226,
+            "side": -1,
+            "position": 17,
+            "selected_multiplier": -0.008268530229822867,
+            "minimum_multiplier": -0.10231659766443209
+          },
+          {
+            "iteration": 141,
+            "row": 7227,
+            "side": -1,
+            "position": 13,
+            "selected_multiplier": -0.0124027953447343,
+            "minimum_multiplier": -0.10231659766443209
+          },
+          {
+            "iteration": 142,
+            "row": 7270,
+            "side": -1,
+            "position": 11,
+            "selected_multiplier": -0.02479226595744478,
+            "minimum_multiplier": -0.10231659766443209
+          },
+          {
+            "iteration": 143,
+            "row": 7271,
+            "side": -1,
+            "position": 12,
+            "selected_multiplier": -0.02975071914893361,
+            "minimum_multiplier": -0.10231659766443209
+          },
+          {
+            "iteration": 144,
+            "row": 7228,
+            "side": -1,
+            "position": 10,
+            "selected_multiplier": -0.03045962985500211,
+            "minimum_multiplier": -0.10231659766443209
+          },
+          {
+            "iteration": 145,
+            "row": 7269,
+            "side": -1,
+            "position": 57,
+            "selected_multiplier": -0.047400517457814664,
+            "minimum_multiplier": -0.10231659766443209
+          },
+          {
+            "iteration": 146,
+            "row": 7272,
+            "side": -1,
+            "position": 10,
+            "selected_multiplier": -0.03555038809336085,
+            "minimum_multiplier": -0.10231659766443209
+          },
+          {
+            "iteration": 147,
+            "row": 7273,
+            "side": -1,
+            "position": 56,
+            "selected_multiplier": -0.04740051745781446,
+            "minimum_multiplier": -0.10231659766443209
+          },
+          {
+            "iteration": 148,
+            "row": 7274,
+            "side": -1,
+            "position": 56,
+            "selected_multiplier": -0.07110077618672171,
+            "minimum_multiplier": -0.10231659766443209
+          },
+          {
+            "iteration": 149,
+            "row": 7275,
+            "side": -1,
+            "position": 56,
+            "selected_multiplier": -0.14220155237344342,
+            "minimum_multiplier": -0.14220155237344342
+          },
+          {
+            "iteration": 151,
+            "row": 7268,
+            "side": -1,
+            "position": 55,
+            "selected_multiplier": -0.008447597504918346,
+            "minimum_multiplier": -0.10231659766444333
+          },
+          {
+            "iteration": 158,
+            "row": 7390,
+            "side": -1,
+            "position": 1,
+            "selected_multiplier": -0.10231659766443692,
+            "minimum_multiplier": -0.10231659766443692
+          },
+          {
+            "iteration": 160,
+            "row": 7302,
+            "side": -1,
+            "position": 67,
+            "selected_multiplier": -0.08312107800110535,
+            "minimum_multiplier": -0.08312107800110535
+          },
+          {
+            "iteration": 162,
+            "row": 7247,
+            "side": -1,
+            "position": 61,
+            "selected_multiplier": -7.92268684230347,
+            "minimum_multiplier": -7.92268684230347
+          },
+          {
+            "iteration": 164,
+            "row": 7248,
+            "side": -1,
+            "position": 67,
+            "selected_multiplier": -7.56097291049677,
+            "minimum_multiplier": -7.56097291049677
+          },
+          {
+            "iteration": 166,
+            "row": 7303,
+            "side": -1,
+            "position": 66,
+            "selected_multiplier": -0.07909727334327987,
+            "minimum_multiplier": -0.07909727334327987
+          },
+          {
+            "iteration": 168,
+            "row": 7304,
+            "side": -1,
+            "position": 67,
+            "selected_multiplier": -0.035558295613830324,
+            "minimum_multiplier": -0.035558295613830324
+          }
+        ],
+        "counterpart_event_rows_checked": true,
+        "row_coordinates": "CURRENT_SCALED_SOLVER_A_NOT_ORIGINAL14756SI",
+        "scalar_proof_scope": "Chosen/global-min fields only. Independent replay is needed to reconstruct every working-set eligible multiplier."
+      },
+      "new_codec_receipt": {
+        "file": "/private/tmp/phase5_negative_leaving59_source_v1_20261016/production_math_pure_v1/readback/stop_actual58_74_0.leaving/hint_negative_leaving_events.bin",
+        "codec": "RAW_V1",
+        "stored_bytes": 3663,
+        "stored_sha256": "e2254ab4fcb385b6ca71e6fc82f2dd593e6642b5cbcc9fb14ceee9b16a886120",
+        "raw_bytes": 3663,
+        "raw_sha256": "e2254ab4fcb385b6ca71e6fc82f2dd593e6642b5cbcc9fb14ceee9b16a886120",
+        "source_complete": true,
+        "closed_raw_prefix_valid": true,
+        "scope": "source complete is separate from successful gzip prefix reconstruction; no Model/native/mathematical acceptance"
+      },
+      "bit_comparison_to_private_v2_prototype": {
+        ".finalxy.bin": true,
+        ".states.bin": true,
+        ".boundary48.bin": true,
+        ".retained64.bin": true,
+        ".refinement120.bin": true
+      }
+    }
+  ],
+  "activefalse": [
+    {
+      "case": "active_ACTIVE_constrained.core.bin",
+      "bytes": 368,
+      "sha256": "663e0eb9d3acf8d25d10c4b057c96fb6252f489788d838cd6aa6f049d5b5ab53",
+      "entire_record_bitexact_old58": true
+    },
+    {
+      "case": "active_ACTIVE_interior.core.bin",
+      "bytes": 224,
+      "sha256": "566c59ecc2e4f8e904507c445280e836b21678f81a157c5e7d166e36026244cf",
+      "entire_record_bitexact_old58": true
+    },
+    {
+      "case": "active_ACTIVE_zero.core.bin",
+      "bytes": 168,
+      "sha256": "42a7dc2d496f01e39d8802d08f807fc420de4aa8b728574e587639f5d0cd8a1f",
+      "entire_record_bitexact_old58": true
+    },
+    {
+      "case": "active_old52_40_0.core.bin",
+      "bytes": 106549,
+      "sha256": "94fe6594c31d658ec0f06f0e065ad68f0f342224fba3379c5a5f45c5636add06",
+      "entire_record_bitexact_old58": true
+    },
+    {
+      "case": "active_old53_40_1.core.bin",
+      "bytes": 114161,
+      "sha256": "27918eba358f1d45b2b390594d9d1f995dd138d06d3a47c10e59a8f01ffc05ca",
+      "entire_record_bitexact_old58": true
+    },
+    {
+      "case": "active_old54_43_0.core.bin",
+      "bytes": 76605,
+      "sha256": "e7ded4d23feb83699bfde5710e6be987348416c8323ef006c0ff0de427efe9ac",
+      "entire_record_bitexact_old58": true
+    }
+  ],
+  "input_before_after_equal": true,
+  "row_scope": "Current scaled solver A IDs, never original14756SI IDs. Scalar chosen data not a complete independent eligibility roster.",
+  "scope": "All seven original saved current H/g/A/l/u numerical gates, old endpoint/boundary domain and new full chosen-codec SHA/EOF/counterpart fields verified; six activefalse full bytes match58. No Model/nativeOSQP/B/C/physical/stop/task/phase acceptance."
+}

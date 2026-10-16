@@ -4,6 +4,8 @@ Updated 2026-10-16, America/Toronto. **Resumed by direct human “继续推进�
 
 ## Actual58 result on 2026-10-16
 
+[Prepared59 source and independent regression](../reviews/evidence/phase5_negative_leaving59_prepared_v1_20261016/README.md) preserve the failed four-promotion prototype and a separate stop-only smallest-current-row negative-multiplier leaving rule.35compile/24link/23pure, seven saved stop gates and six byte-identical activefalse cores pass. Root binds actual74's full initialized fixture, reproduces old512-event failure and checks the new171-event hint against unchanged full-row numerical gates. Chosen/global-min diagnostics are separate; original limits remain. This preparation is not a59 native entry or stopping/task result.
+
 [Actual58 source, independent review and two-device archive](../reviews/evidence/phase5_initializer58_v6_unit_v1_20261016/README.md) record74 commands/148 simulated2ms task halves/296ms,32active42braking,152trials303forecasts. All84 stop predicates fail, dwell0/50; all75 whole boundaries miss4ms.1720 before/after inputs and session/native termination checks pass. The original54/0 initializer blockage is crossed with exact saved-input and pure-result byte bindings; the run naturally ends at74/0 numeric iteration cap512. Root independently checks865 selected payloads/221 codecs and all stop records. All4405 complete58 archive members and3496 native codecs are independently read back, with persisted full archive copies verified on Mac and Dell. This is stored-evidence recoverability, not full environment restoration or acceptance; older53–57 replication gaps remain. Stop-only leaving-policy59 development continues under fresh finite checks. No59 native entry is implied here.
 
 ## Actual57 result on 2026-10-16

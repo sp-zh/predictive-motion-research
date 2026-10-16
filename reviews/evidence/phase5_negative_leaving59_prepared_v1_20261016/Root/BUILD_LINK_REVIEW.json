@@ -1,0 +1,21 @@
+{
+  "schema": "ROOT59_ORIGINAL_SSH_BUILD_LINK_RESULTS_READBACK_V1",
+  "stages": [
+    {
+      "stage": "build-attempt1",
+      "commands": 35,
+      "complete": true,
+      "before_after_bytes_equal": true,
+      "runtime_invocations": 0
+    },
+    {
+      "stage": "link-attempt1",
+      "commands": 24,
+      "complete": true,
+      "before_after_bytes_equal": true,
+      "runtime_invocations": 0
+    }
+  ],
+  "retained_reader_failure": "Initial checker used exit_code but actual original records use exit. Six reports had already been independently received and precharged; corrected review reads those exact saved files without refetch, overwrites or source/build/native rerun.",
+  "scope": "Compile/link and input identities only; no new native motion or phase acceptance."
+}

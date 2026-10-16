@@ -1,0 +1,66 @@
+{
+  "schema": "ROOT59_COMPLETE_NEW_CODEC_AND_23_PURE_REVIEW_V1",
+  "producer_payload_hashes_verified": 77,
+  "pure_tests_passed": 23,
+  "all_pure_no_model_or_native": true,
+  "before_after_pure_inputs_byte_equal": true,
+  "new_codec_cases": [
+    {
+      "case": "maximum",
+      "count": 512,
+      "raw_bytes": 25839,
+      "raw_sha256": "1f529e0225c6c668be0791bb683f9a665e91fe8a0adf5c11020dca7499b08fb7",
+      "all_records_exact": true,
+      "codec": {
+        "file": "/private/tmp/phase5_negative_leaving59_source_v1_20261016/pure_suite59_readback_v1/negative-leaving-codec-tests/maximum/hint_negative_leaving_events.bin",
+        "codec": "RAW_V1",
+        "stored_bytes": 25839,
+        "stored_sha256": "1f529e0225c6c668be0791bb683f9a665e91fe8a0adf5c11020dca7499b08fb7",
+        "raw_bytes": 25839,
+        "raw_sha256": "1f529e0225c6c668be0791bb683f9a665e91fe8a0adf5c11020dca7499b08fb7",
+        "source_complete": true,
+        "closed_raw_prefix_valid": true,
+        "scope": "source complete is separate from successful gzip prefix reconstruction; no Model/native/mathematical acceptance"
+      }
+    },
+    {
+      "case": "unavailable",
+      "count": 0,
+      "raw_bytes": 1263,
+      "raw_sha256": "59b5f89b515354fb2bed333536a72b9d54a80c8d7f7e7880c4a74411677b3f9a",
+      "all_records_exact": true,
+      "codec": {
+        "file": "/private/tmp/phase5_negative_leaving59_source_v1_20261016/pure_suite59_readback_v1/negative-leaving-codec-tests/unavailable/hint_negative_leaving_events.bin",
+        "codec": "RAW_V1",
+        "stored_bytes": 1263,
+        "stored_sha256": "59b5f89b515354fb2bed333536a72b9d54a80c8d7f7e7880c4a74411677b3f9a",
+        "raw_bytes": 1263,
+        "raw_sha256": "59b5f89b515354fb2bed333536a72b9d54a80c8d7f7e7880c4a74411677b3f9a",
+        "source_complete": true,
+        "closed_raw_prefix_valid": true,
+        "scope": "source complete is separate from successful gzip prefix reconstruction; no Model/native/mathematical acceptance"
+      }
+    },
+    {
+      "case": "active",
+      "count": 0,
+      "raw_bytes": 1263,
+      "raw_sha256": "9bc916939441787841f7f7a21b52a34d77624c0c9635f811df201f56c5bb3b7a",
+      "all_records_exact": true,
+      "codec": {
+        "file": "/private/tmp/phase5_negative_leaving59_source_v1_20261016/pure_suite59_readback_v1/negative-leaving-codec-tests/active/hint_negative_leaving_events.bin",
+        "codec": "RAW_V1",
+        "stored_bytes": 1263,
+        "stored_sha256": "9bc916939441787841f7f7a21b52a34d77624c0c9635f811df201f56c5bb3b7a",
+        "raw_bytes": 1263,
+        "raw_sha256": "9bc916939441787841f7f7a21b52a34d77624c0c9635f811df201f56c5bb3b7a",
+        "source_complete": true,
+        "closed_raw_prefix_valid": true,
+        "scope": "source complete is separate from successful gzip prefix reconstruction; no Model/native/mathematical acceptance"
+      }
+    }
+  ],
+  "actual74_original_nominal_and_D_separate_files_exact": true,
+  "reader_failure_qualification": "First nominal/D reader assumed length-prefixed vectors; these two explicit files are raw144 doubles. Assertion failed before report writes. Corrected fixed1152-byte format; saved-data audit only, no replay or native rerun.",
+  "scope": "All512 synthetic chosen/minimum records fully decoded, plus unavailable and active-no-policy records. These scalar records are not independent eligible-working-set replay or a convergence proof. No new simulation or phase acceptance."
+}

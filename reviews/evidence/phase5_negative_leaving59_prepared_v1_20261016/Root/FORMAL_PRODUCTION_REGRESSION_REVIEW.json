@@ -1,0 +1,175 @@
+{
+  "schema": "ROOT59_FROZEN_PRODUCTION_SEVEN_STOP_SIX_ACTIVE_AND_CHOSEN_CODEC_REVIEW_V1",
+  "payload_hashes_verified": 104,
+  "all17_production_driver_commands_exit0": true,
+  "before_after_inputs_equal_report": true,
+  "seven_stop": [
+    {
+      "case": "actual56_48_1",
+      "fixture_sha256": "069b99b19abe78a22a7845e65a94774ef66958e6f9a2ad573001061e77ea7b66",
+      "events": 272,
+      "full_rows": 7346,
+      "final_primal_numpy": 7.892939773990193e-13,
+      "final_stationarity_numpy": 1.1102230246251565e-16,
+      "chosen_records": 8,
+      "chosen_globalmin_bound_to_old_event": true,
+      "boundary_count": 11290,
+      "endpoint_count": 15812,
+      "old58_byte_comparison": {
+        "finalxy.bin": false,
+        "states.bin": false,
+        "boundary48.bin": true,
+        "retained64.bin": false,
+        "refinement120.bin": false
+      },
+      "finalxy_sha256": "c95d5eb184d85c4197785cf39cbb236155ad67cd5a8ef9471d05abbfe16b706c"
+    },
+    {
+      "case": "old52_40_0",
+      "fixture_sha256": "63adf752672de67a3842b39091157b476d3066a6e48de25dbe4bcc4da2514856",
+      "events": 216,
+      "full_rows": 7349,
+      "final_primal_numpy": 8.834192058437829e-13,
+      "final_stationarity_numpy": 2.498001805406602e-16,
+      "chosen_records": 12,
+      "chosen_globalmin_bound_to_old_event": true,
+      "boundary_count": 67,
+      "endpoint_count": 3290,
+      "old58_byte_comparison": {
+        "finalxy.bin": false,
+        "states.bin": false,
+        "boundary48.bin": true,
+        "retained64.bin": false,
+        "refinement120.bin": false
+      },
+      "finalxy_sha256": "1bcfb0ac9db757fa9b3cb84dad17bd6f2602980a112a523ea9a82314671f7bbc"
+    },
+    {
+      "case": "old53_40_1",
+      "fixture_sha256": "548579a0aa48ab67cc2eb2e73ed38b0da1765d23e4b1dd59ceb9a9e23882b190",
+      "events": 201,
+      "full_rows": 7349,
+      "final_primal_numpy": 8.286748023889068e-13,
+      "final_stationarity_numpy": 3.3306690738754696e-16,
+      "chosen_records": 13,
+      "chosen_globalmin_bound_to_old_event": true,
+      "boundary_count": 959,
+      "endpoint_count": 1638,
+      "old58_byte_comparison": {
+        "finalxy.bin": false,
+        "states.bin": false,
+        "boundary48.bin": false,
+        "retained64.bin": false,
+        "refinement120.bin": false
+      },
+      "finalxy_sha256": "e402569e121042730a52a1211694425ecc0c89ab9b39eb29376c57af759853d6"
+    },
+    {
+      "case": "old54_43_0",
+      "fixture_sha256": "1c7920a7d9f697fce28aea0fad3ea4c10fd34c17248853ea46c9296783680aa2",
+      "events": 196,
+      "full_rows": 7344,
+      "final_primal_numpy": 4.604524227180828e-13,
+      "final_stationarity_numpy": 2.237793284010081e-16,
+      "chosen_records": 13,
+      "chosen_globalmin_bound_to_old_event": true,
+      "boundary_count": 6,
+      "endpoint_count": 1443,
+      "old58_byte_comparison": {
+        "finalxy.bin": false,
+        "states.bin": false,
+        "boundary48.bin": true,
+        "retained64.bin": false,
+        "refinement120.bin": false
+      },
+      "finalxy_sha256": "cdca53730b51c67f547ed5bc6489fc43b3d6a5477af0842c828153ecb77241be"
+    },
+    {
+      "case": "old55_40_2",
+      "fixture_sha256": "e8e8c1140e56a0ae2dd494c122eab5f21b4eacd477c67cb03e22b86b1e899f74",
+      "events": 162,
+      "full_rows": 7349,
+      "final_primal_numpy": 7.868063839344686e-13,
+      "final_stationarity_numpy": 2.220446049250313e-16,
+      "chosen_records": 13,
+      "chosen_globalmin_bound_to_old_event": true,
+      "boundary_count": 8,
+      "endpoint_count": 0,
+      "old58_byte_comparison": {
+        "finalxy.bin": false,
+        "states.bin": false,
+        "boundary48.bin": true,
+        "retained64.bin": true,
+        "refinement120.bin": false
+      },
+      "finalxy_sha256": "185529ae34efacc5a6c684b161fb580fd479532d8d7543170aa98ccc16026a0c"
+    },
+    {
+      "case": "actual58_54_0",
+      "fixture_sha256": "fcc6ccbf3c01f4a27355f82f945727e1434930a073015d65ae4b0125b5992683",
+      "events": 167,
+      "full_rows": 7359,
+      "final_primal_numpy": 3.504748574689742e-13,
+      "final_stationarity_numpy": 1.1449174941446927e-16,
+      "chosen_records": 29,
+      "chosen_globalmin_bound_to_old_event": true,
+      "boundary_count": 72,
+      "endpoint_count": 0,
+      "old58_byte_comparison": {},
+      "finalxy_sha256": "00407978b40bb36ebd9df65f3cd3ad8dc983c2f185975c58c56b429c244d6047"
+    },
+    {
+      "case": "actual58_74_0",
+      "fixture_sha256": "ba0de80aaba82efd4cbac257bf89017a10494b322303a47dbffec04f03fdd5be",
+      "events": 171,
+      "full_rows": 7391,
+      "final_primal_numpy": 2.8314156574893445e-14,
+      "final_stationarity_numpy": 3.968179951296946e-17,
+      "chosen_records": 50,
+      "chosen_globalmin_bound_to_old_event": true,
+      "boundary_count": 123,
+      "endpoint_count": 0,
+      "old58_byte_comparison": {},
+      "finalxy_sha256": "57c61abe945cf2ee5093bc89a6ea6d4967665fdd6586973299b3a536bc77e95f"
+    }
+  ],
+  "six_activefalse": [
+    {
+      "case": "old52_40_0",
+      "bytes": 106549,
+      "sha256": "94fe6594c31d658ec0f06f0e065ad68f0f342224fba3379c5a5f45c5636add06",
+      "entire_core_byte_equal_old58": true
+    },
+    {
+      "case": "old53_40_1",
+      "bytes": 114161,
+      "sha256": "27918eba358f1d45b2b390594d9d1f995dd138d06d3a47c10e59a8f01ffc05ca",
+      "entire_core_byte_equal_old58": true
+    },
+    {
+      "case": "old54_43_0",
+      "bytes": 76605,
+      "sha256": "e7ded4d23feb83699bfde5710e6be987348416c8323ef006c0ff0de427efe9ac",
+      "entire_core_byte_equal_old58": true
+    },
+    {
+      "case": "ACTIVE_constrained",
+      "bytes": 368,
+      "sha256": "663e0eb9d3acf8d25d10c4b057c96fb6252f489788d838cd6aa6f049d5b5ab53",
+      "entire_core_byte_equal_old58": true
+    },
+    {
+      "case": "ACTIVE_interior",
+      "bytes": 224,
+      "sha256": "566c59ecc2e4f8e904507c445280e836b21678f81a157c5e7d166e36026244cf",
+      "entire_core_byte_equal_old58": true
+    },
+    {
+      "case": "ACTIVE_zero",
+      "bytes": 168,
+      "sha256": "42a7dc2d496f01e39d8802d08f807fc420de4aa8b728574e587639f5d0cd8a1f",
+      "entire_core_byte_equal_old58": true
+    }
+  ],
+  "scope": "Saved numerical optimization only; independently checked full row primal/stationarity, event domains, boundary/endpoint prefixes and new chosen/global-min fields. Scalar chosen records do not reconstruct all eligible sets; no new nativeOSQP/Model/B/C/task/stop/phase acceptance. Old stop byte differences are explicit; activefalse entire old core identical."
+}

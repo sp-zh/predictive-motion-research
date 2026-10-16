@@ -1,0 +1,9 @@
+# Fresh59 stop-only smallest-current-row negative-multiplier leaving
+
+Actual58 crossed the previous initializer blockage, then retained a genuine current74/trial0 original512-iteration refusal. A new saved-data prototype selects the smallest current scaled solver A row among multipliers strictly below original -1e-12 when the original direction infinity norm is <=1e-12. The original true global minimum statistic remains unchanged; chosen multiplier/row/side/ordered position are separate measured diagnostics. Current A row is not an original14756SI index, especially for internal planning guards.
+
+No new endpoint waiver, rank/tolerance/direction threshold, row removal from the QP, clipping, perturbation or state/candidate projection. Active repair=false retains the original loop. Original H/g/A/l/u, V6 initializer, native/SI/nonlinear/geometric/B/history/two2ms/C/physical-stop/fulltask gates remain. Stop trajectories and floating outputs may differ from58; all original gates and exact comparisons are reported, not silently called byte-equivalent. The old58 source/failure and unsuccessful four-promotion prototype are immutable.
+
+At most512 six-field leaving records. Conservative numeric inventory741008+512*6+128=744208<unchanged745000 precharge; original1.8B/global176/trials/outer512/10s/resource caps stay fixed. New separate codec <=28672B and original32MiB raw/stored terminal proof retain every record, no reset/retry or silent truncation. Old working-faceV2, initializerV3/V4 and old event semantics remain unchanged. The new codec records chosen data without proving all working-set algebra by itself.
+
+Pure hints, synthetic codec success and archive/Git success are not a physical-stop or research certificate. Phase5 NOT_ACCEPTED; Phase6 NOT_STARTED. No hardware/formal heldout/main/scorer authorization.

@@ -1,0 +1,32 @@
+{
+  "schema": "ROOT59_SAVED74_BINDING_BASELINE_REPRODUCTION_AND_PURE_V2_GATE_REVIEW_V1",
+  "actual74_QP_initializer_seed_all6_fields_bitexact": true,
+  "fixture_sha256": "ba0de80aaba82efd4cbac257bf89017a10494b322303a47dbffec04f03fdd5be",
+  "original_nominal_and_scale_separate": true,
+  "actual74_native_wrapper_attempts": 0,
+  "baseline_actual512events_and_partialxy_bitexact": true,
+  "pure_v2_events": 171,
+  "pure_v2_full_current_rows": 7391,
+  "finalxy_sha256": "57c61abe945cf2ee5093bc89a6ea6d4967665fdd6586973299b3a536bc77e95f",
+  "primal_numpy": 2.8314156574893445e-14,
+  "stationarity_numpy": 3.968179951296946e-17,
+  "all_events_finite_rank_residual_original_gate": true,
+  "source_manifest_files_verified": 82,
+  "source_plus_manifest_files": 83,
+  "changed_files": [
+    "README.md",
+    "active_first_cycle.cpp",
+    "current_numeric_guess.hpp",
+    "negative_leaving59.hpp",
+    "negative_leaving59_tests.cpp",
+    "negative_leaving_codec59.hpp"
+  ],
+  "profile_changed_keys": [
+    "session_id",
+    "negative_multiplier_leaving"
+  ],
+  "stop_inventory": 744208,
+  "unchanged_stop_reservation": 745000,
+  "codec_bound": 28672,
+  "scope": "Pure saved input only. Stop working-face leaving selection changes optimizer paths and low bits on old successes; do not claim stop byte compatibility. Activefalse unchanged by source; formal runtime regressions reviewed separately. No Model/nativeOSQP/B/C/actual stop/task/phase acceptance. Original budget/threshold/math/physical gates unchanged; smallest-row leaving alone is not a full anti-cycling proof."
+}

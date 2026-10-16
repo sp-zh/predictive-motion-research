@@ -1,0 +1,12 @@
+{
+  "schema": "PURE59_V2_ORIGINAL_FULL_ROW_AND_STATIONARITY_CHECK_V1",
+  "fixture_sha256": "ba0de80aaba82efd4cbac257bf89017a10494b322303a47dbffec04f03fdd5be",
+  "full_current_rows": 7391,
+  "events": 171,
+  "finalxy_sha256": "57c61abe945cf2ee5093bc89a6ea6d4967665fdd6586973299b3a536bc77e95f",
+  "final_violation_numpy": 2.8314156574893445e-14,
+  "final_stationarity_numpy": 3.968179951296946e-17,
+  "all_events_finite_and_bounded": true,
+  "preserved_tool_only_failure": "First inline NumPy checker had IndentationError before any writes/reads; no replay repeated; corrected this standalone script.",
+  "scope": "Saved numerical hint only, no Model/nativeOSQP/B/C/actual state/physical/task/phase acceptance."
+}
