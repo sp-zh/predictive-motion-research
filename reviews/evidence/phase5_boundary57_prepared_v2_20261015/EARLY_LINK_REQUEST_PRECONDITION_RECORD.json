@@ -1,0 +1,7 @@
+{
+  "schema": "SOURCE57_V2_LINK_PLAN_PRECONDITION_MISS_V1",
+  "operation": "link plan preparation requested while final compile unit32 still running",
+  "outcome": "BUILD_RESULT.json absent so plan preparation returned error. Link driver plan load also returned file-not-found before output directory creation. No link/native tool entered and no plan, link output or source mutation occurred. Compile subsequently completed32PASS; fresh link plan then created and21targets completed.",
+  "source_unchanged": true,
+  "native57_not_entered": true
+}

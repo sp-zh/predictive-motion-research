@@ -1,0 +1,96 @@
+{
+  "schema": "PRODUCTION57_V2_EXACT_RECORDS_AND_ORIGINAL_FINAL_GATES_V1",
+  "cases": [
+    {
+      "case": "actual56_48_1",
+      "fixture_sha256": "069b99b19abe78a22a7845e65a94774ef66958e6f9a2ad573001061e77ea7b66",
+      "finalxy_sha256": "8e29c022b367b5383fd2bad653df1149b564e9ea283992c68c50d11f2117f1c0",
+      "max_final_violation_numpy": 7.892939773990193e-13,
+      "final_stationarity_numpy": 1.1102230246251565e-16,
+      "boundary_count": 11290,
+      "endpoints_count": 15812,
+      "all_boundary_endpoint_records_checked": true
+    },
+    {
+      "case": "old52_40_0",
+      "fixture_sha256": "63adf752672de67a3842b39091157b476d3066a6e48de25dbe4bcc4da2514856",
+      "finalxy_sha256": "34447bbb8e391cffa36c0c408c196dd55672486074e5a917aa41467dffd79d52",
+      "max_final_violation_numpy": 8.834192058437829e-13,
+      "final_stationarity_numpy": 2.498001805406602e-16,
+      "boundary_count": 67,
+      "endpoints_count": 3279,
+      "all_boundary_endpoint_records_checked": true
+    },
+    {
+      "case": "old53_40_1",
+      "fixture_sha256": "548579a0aa48ab67cc2eb2e73ed38b0da1765d23e4b1dd59ceb9a9e23882b190",
+      "finalxy_sha256": "b1a1fe54d5f10d8a33d3575d72e2e82fba8aeb8128d903c43501972e50a56c1f",
+      "max_final_violation_numpy": 8.286678634950029e-13,
+      "final_stationarity_numpy": 3.608224830031759e-16,
+      "boundary_count": 960,
+      "endpoints_count": 1950,
+      "all_boundary_endpoint_records_checked": true
+    },
+    {
+      "case": "old54_43_0",
+      "fixture_sha256": "1c7920a7d9f697fce28aea0fad3ea4c10fd34c17248853ea46c9296783680aa2",
+      "finalxy_sha256": "70e034c562eda9f837d6cb63133859ac5aa9b83f9529c4e854bb8dd2d9554f77",
+      "max_final_violation_numpy": 4.604524227180828e-13,
+      "final_stationarity_numpy": 2.2898349882893854e-16,
+      "boundary_count": 6,
+      "endpoints_count": 1443,
+      "all_boundary_endpoint_records_checked": true
+    },
+    {
+      "case": "old55_40_2",
+      "fixture_sha256": "e8e8c1140e56a0ae2dd494c122eab5f21b4eacd477c67cb03e22b86b1e899f74",
+      "finalxy_sha256": "1d0318392194cca0b4be2b7e70acbf8a14c4ba7509fa96efe7270844c8d10169",
+      "max_final_violation_numpy": 7.868063839344686e-13,
+      "final_stationarity_numpy": 2.220446049250313e-16,
+      "boundary_count": 8,
+      "endpoints_count": 0,
+      "all_boundary_endpoint_records_checked": true
+    }
+  ],
+  "activefalse": [
+    {
+      "case": "old_active_ACTIVE_constrained.core.bin",
+      "bytes": 368,
+      "complete_serialized_record_sha256": "663e0eb9d3acf8d25d10c4b057c96fb6252f489788d838cd6aa6f049d5b5ab53",
+      "complete_serialized_records_bitexact": true
+    },
+    {
+      "case": "old_active_ACTIVE_interior.core.bin",
+      "bytes": 224,
+      "complete_serialized_record_sha256": "566c59ecc2e4f8e904507c445280e836b21678f81a157c5e7d166e36026244cf",
+      "complete_serialized_records_bitexact": true
+    },
+    {
+      "case": "old_active_ACTIVE_zero.core.bin",
+      "bytes": 168,
+      "complete_serialized_record_sha256": "42a7dc2d496f01e39d8802d08f807fc420de4aa8b728574e587639f5d0cd8a1f",
+      "complete_serialized_records_bitexact": true
+    },
+    {
+      "case": "old_active_old52_40_0.core.bin",
+      "bytes": 106549,
+      "complete_serialized_record_sha256": "94fe6594c31d658ec0f06f0e065ad68f0f342224fba3379c5a5f45c5636add06",
+      "complete_serialized_records_bitexact": true
+    },
+    {
+      "case": "old_active_old53_40_1.core.bin",
+      "bytes": 114161,
+      "complete_serialized_record_sha256": "27918eba358f1d45b2b390594d9d1f995dd138d06d3a47c10e59a8f01ffc05ca",
+      "complete_serialized_records_bitexact": true
+    },
+    {
+      "case": "old_active_old54_43_0.core.bin",
+      "bytes": 76605,
+      "complete_serialized_record_sha256": "e7ded4d23feb83699bfde5710e6be987348416c8323ef006c0ff0de427efe9ac",
+      "complete_serialized_records_bitexact": true
+    }
+  ],
+  "actual56_partialxy_and_4096prefix_bitexact": true,
+  "new12288complete_result_allrecords_bitexact_65536_probe": true,
+  "scope": "Complete saved numerical arrays only. No Model/nativeOSQP/B/C/physical step/task/phase success."
+}

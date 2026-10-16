@@ -1,0 +1,21 @@
+{
+  "schema": "FRESH57_MAC_SPACE_PREENTRY_FAILURE_RETAINED_V1",
+  "utc_of_readonly_recheck": "2026-10-16T02:52:14.361848+00:00",
+  "Mac_free_bytes_now": 35409805312,
+  "Mac_required_bytes": 35433480192,
+  "Mac_free_volatile_not_stable_clearance": true,
+  "actual_initial_deficit_recorded_bytes": 5599232,
+  "remote_status": {
+    "native_once_marker_exists": false,
+    "native_run_directory_exists": false,
+    "preentry_resource_check_exists": true
+  },
+  "preentry_remote_pass": "PREENTRY57_V2.stdout",
+  "preentry_remote_stderr": "PREENTRY57_V2.stderr",
+  "final_resource_summary_not_generated": true,
+  "cleanup_status": "Root coordinates its own generated non-evidence pycache. No Dell cleanup after notification. No new human approval asserted.",
+  "single_own_fixture_hardlink_record": "VERIFIED_IDENTICAL_OWNED_FIXTURE_HARDLINK_DEDUP.json",
+  "all_failure_paths_bytes_SHA_modes_preserved": true,
+  "native57_entered": false,
+  "runtime_source_profile_gates_not_relaxed": true
+}

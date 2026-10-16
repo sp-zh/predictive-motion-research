@@ -1,0 +1,45 @@
+{
+  "schema": "BOUNDARY12288_FULL_V1_FIELDS_CODEC_AND_PREAPPEND_NEGATIVE_V1",
+  "cases": [
+    {
+      "case": "maximum",
+      "present": 1,
+      "count": 12288,
+      "raw_bytes": 590280,
+      "codec": {
+        "file": "/private/tmp/phase5_boundary_retention57_source_v2_20261015/pure_suite57_readback_v1/boundary-codec-tests/maximum/hint_boundary_events.bin",
+        "codec": "GZIP_DEFLATE_V1",
+        "stored_bytes": 33985,
+        "stored_sha256": "47ea896edd3bb933c655d63a730c46898c4f7485e2021001cdddcb01daf21ddd",
+        "raw_bytes": 590280,
+        "raw_sha256": "8a0c416ff95746128316eb062dcbae529d0ddf8be01c582d5c6ce023b7120cbe",
+        "source_complete": true,
+        "closed_raw_prefix_valid": true,
+        "scope": "source complete is separate from successful gzip prefix reconstruction; no Model/native/mathematical acceptance"
+      },
+      "all_full_ordered_fields_exact": true,
+      "fullEOF": true
+    },
+    {
+      "case": "unavailable",
+      "present": 0,
+      "count": 0,
+      "raw_bytes": 448,
+      "codec": {
+        "file": "/private/tmp/phase5_boundary_retention57_source_v2_20261015/pure_suite57_readback_v1/boundary-codec-tests/unavailable/hint_boundary_events.bin",
+        "codec": "GZIP_DEFLATE_V1",
+        "stored_bytes": 342,
+        "stored_sha256": "820f72b8323a829661fc69f95882bc545acf03a96cc467439c4c2eeb73a4b540",
+        "raw_bytes": 448,
+        "raw_sha256": "587b3ddcd3da8349a0164bef16c5be05cd373b061bb798ba3fef63a11748b5ae",
+        "source_complete": true,
+        "closed_raw_prefix_valid": true,
+        "scope": "source complete is separate from successful gzip prefix reconstruction; no Model/native/mathematical acceptance"
+      },
+      "all_full_ordered_fields_exact": true,
+      "fullEOF": true
+    }
+  ],
+  "producer_negative_and_tail_test_stdout": "PASS full12288, refused12289 preappend, unchangedactive1024, sameV1codec full EOF validated externally, unavailable/prewrite malformed refusal; rawboundarymax=593920 terminalraw=21667656 terminalstored=29312794 <32MiB; noModel/native/task\n",
+  "twenty_pure_complete": true
+}

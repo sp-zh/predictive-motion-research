@@ -1,0 +1,15 @@
+{
+  "schema": "SOURCE57_V1_ACTIVEONLY_ERROR_COMPATIBILITY_FAILURE_V1",
+  "retained_source": "/private/tmp/phase5_boundary_retention57_source_v1_20261015/src-final-v1",
+  "retained_remote": "/home/codextransfer/predictive_motion/results/phase5/session-controlled-stop-boundary12288-active32-brake64-dwell25-v1-20261015-attempt57",
+  "compile_units_passed": 32,
+  "pure_math_attempt1_final_assert": "activefalse exact record regression",
+  "case": "old53_current40_trial1 activefalse",
+  "old_error": "finite current near-boundary diagnostic cap (stop4096,active1024)",
+  "v1_error": "finite current near-boundary diagnostic cap (stop12288,active1024)",
+  "complete_flag_same": true,
+  "all_bytes_after_error_string_bitexact": true,
+  "other5_activefalse_case_complete_serialized_records_bitexact": true,
+  "native57_v1_entered": false,
+  "action": "Fresh immutable v2 preserves the full original activefalse refusal string; stoptrue has new12288. No comparator normalization. All v1 files/results retained; final v1 RESULT.json absent due assertion, never claim v1 fullPASS/inputafter."
+}

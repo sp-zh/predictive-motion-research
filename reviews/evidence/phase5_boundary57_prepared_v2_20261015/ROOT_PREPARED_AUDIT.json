@@ -1,0 +1,22 @@
+{
+  "schema": "ROOT57_PREPARED_SOURCE_CODEC_AUDIT_V1",
+  "source_files_all_runtime_pin_size_sha_verified": 76,
+  "source_manifest_entries_verified": 75,
+  "profile_sha256": "b912e09b4bbf09324d1e6d58be2986ff20b0a78924943e37ae4790c2429ba119",
+  "maximum_and_unavailable_codec": [
+    {
+      "case": "maximum",
+      "records": 12288,
+      "raw_bytes": 590280,
+      "CRC_singleEOF_rawSHA_pass": true
+    },
+    {
+      "case": "unavailable",
+      "records": 0,
+      "raw_bytes": 448,
+      "CRC_singleEOF_rawSHA_pass": true
+    }
+  ],
+  "status": "PREPARED_NOT_NATIVE_ENTERED",
+  "scope": "Source/codec saved-data checks only; no actual57 B/C/stop/runtime success. Pending Mac33GiB check and human cache-cleanup reply; no original evidence removed."
+}

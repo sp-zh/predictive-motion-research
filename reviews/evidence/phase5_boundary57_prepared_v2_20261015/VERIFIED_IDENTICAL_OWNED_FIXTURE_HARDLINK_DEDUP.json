@@ -1,0 +1,47 @@
+{
+  "schema": "VERIFIED_IDENTICAL_LOCAL_PURE_FIXTURE_STORAGE_DEDUP_V1",
+  "before": [
+    {
+      "path": "/private/tmp/phase5_boundary_retention57_source_v2_20261015/production_math_pure_v1/old52_40_0.fixture",
+      "bytes": 8751888,
+      "sha256": "63adf752672de67a3842b39091157b476d3066a6e48de25dbe4bcc4da2514856",
+      "mode": 384,
+      "device": 16777230,
+      "inode": 53949792,
+      "links": 1
+    },
+    {
+      "path": "/private/tmp/phase5_boundary_retention57_source_v1_20261015/production_math_pure_v1/old52_40_0.fixture",
+      "bytes": 8751888,
+      "sha256": "63adf752672de67a3842b39091157b476d3066a6e48de25dbe4bcc4da2514856",
+      "mode": 384,
+      "device": 16777230,
+      "inode": 53945803,
+      "links": 1
+    }
+  ],
+  "after": [
+    {
+      "path": "/private/tmp/phase5_boundary_retention57_source_v2_20261015/production_math_pure_v1/old52_40_0.fixture",
+      "bytes": 8751888,
+      "sha256": "63adf752672de67a3842b39091157b476d3066a6e48de25dbe4bcc4da2514856",
+      "mode": 384,
+      "device": 16777230,
+      "inode": 53949792,
+      "links": 2
+    },
+    {
+      "path": "/private/tmp/phase5_boundary_retention57_source_v1_20261015/production_math_pure_v1/old52_40_0.fixture",
+      "bytes": 8751888,
+      "sha256": "63adf752672de67a3842b39091157b476d3066a6e48de25dbe4bcc4da2514856",
+      "mode": 384,
+      "device": 16777230,
+      "inode": 53949792,
+      "links": 2
+    }
+  ],
+  "Mac_free_before": 35418624000,
+  "Mac_free_after": 35427356672,
+  "all_original_paths_bytes_SHA_modes_preserved": true,
+  "scope": "Only the same generated pure fixture was stored twice in own temporary preparation versions. Atomically replace one bit-identical local copy with a hard link to the other. All failure paths and data remain present; no source, native inputs/output, raw evidence, transport, cache dependencies, canonical repo or remote files changed. Derived fixtures are never edited in place."
+}
