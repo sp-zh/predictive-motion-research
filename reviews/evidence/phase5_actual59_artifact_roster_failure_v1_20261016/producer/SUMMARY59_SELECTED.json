@@ -1,0 +1,167 @@
+{
+  "schema": "PRODUCER59_SELECTED_TERMINAL_LAST_CURRENT_STOP_REVIEW_V1",
+  "entry": {
+    "stage": "COMPLETE_REOBSERVED_DYNAMIC_TRANSACTION_DIAGNOSTIC",
+    "error": "bounded fixed artifact names",
+    "boundary_unchanged": 0,
+    "session_termination": 1,
+    "session_error": "",
+    "native_termination": 1,
+    "native_error": "",
+    "wall_seconds": 16.451755091,
+    "physical_step_attempts": 1002,
+    "commits": 1
+  },
+  "whole_cycles": [
+    {
+      "cycle": 0,
+      "trials_entered": 1,
+      "physical_complete": 1,
+      "wall": 4.701052433,
+      "deadline_miss": 1,
+      "last_B_error": "",
+      "fatal_error": "bounded fixed artifact names",
+      "trials_total": 1,
+      "forecasts": 2,
+      "steps": 2,
+      "commits": 1,
+      "scope": "Whole current cycle monotonic wall spans every rejected fresh trial and actual C with pertrial evidence/manifest; summary serialization excluded. Diagnostic4ms deadline threshold never shortened to last successful trial."
+    }
+  ],
+  "stop": {
+    "passed": 0,
+    "failed": 0,
+    "consecutive": 0,
+    "required_halves": 50,
+    "maximum_halves": 178,
+    "scope": "Prospective component: actual measuredv<=1e-4rad/s,a<=1e-3rad/s2 plus acceptedw/alpha/r/b and C/s drift bounds for50actual2ms halves=100ms. All original B/C/geometry/task/jerk gates retained. No exactzero/fulltask/phaseacceptance; all failedpartialpoints retained."
+  },
+  "stop_records": [],
+  "braking_actual_trend_by_cycle": [],
+  "trace_contexts": [
+    {
+      "cycle": 0,
+      "trial": 0,
+      "available": 0,
+      "basis": 0,
+      "refinement_count": 0,
+      "refinement_records": [],
+      "refinements_accepted": 0,
+      "endpoints": 0,
+      "full_ordered_event64_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    }
+  ],
+  "initializer_V4_contexts": [
+    {
+      "cycle": 0,
+      "trial": 0,
+      "attempted": 0,
+      "complete": 0,
+      "combined_changed": 0,
+      "row_changed": 0,
+      "retry_available": 0,
+      "retry_complete": 0,
+      "uniform_changed": 0,
+      "corrector_scope_entered": 0,
+      "error": "",
+      "baseline_error": "",
+      "baseline_rows_written": 0,
+      "baseline_violation": 0.0,
+      "epsilon": 0.0,
+      "initial_violation": 0.0,
+      "interval_lower": 0.0,
+      "interval_upper": 1e-06,
+      "retry_error": "",
+      "seed": [],
+      "row_bounds_written": 0,
+      "attempts": [],
+      "corrections": [],
+      "legacy_summary_available": 0,
+      "legacy_complete": 0,
+      "legacy_retry_available": 0,
+      "legacy_seed_available": 0,
+      "legacy_corrections_count": 0,
+      "legacy_rows_written": 0,
+      "legacy_initial_violation": 0.0,
+      "legacy_interval_lower": 0.0,
+      "legacy_interval_upper": 0.0,
+      "legacy_error": "",
+      "global_scope_eligible": 0,
+      "global_scope_entered": 0,
+      "global_scan_attempts": 0,
+      "global_scans": [],
+      "scope": "V4 data-only optimizer starting guess. Base header/corrections preserve V3 structure. Run unchanged V5 first; all V5 successes and other errors remain unchanged. Only its no-interior refusal with remaining shared8 corrections enters full-current-uniform-upper search. Legacy full row table is released before new allocations and unavailable here; only its scalar refusal metadata and full correction prefix are retained. Original actual57 V3 table remains immutable. Last result retains measured V5 refusal summary and applied prefix, global scan attempts versus available prefix, selected versus no-selected rows, and failed/unapplied proposals. Each computed binary80 upper/epsilon is saved exactly as binary64 high+residual; no assumption about Mac longdouble. Scans record limiting current row value/travel/lo/hi or original1e-6 source cap. Useful travel is bounded by max(0,min(original1e-6,allcurrentrowupper)); nonzero travel never zeroed. Strict original deficit1e-10, allrow1e-12, total legacy+new8 corrections, free18beta/nonbeta bits and step/total physicalDdelta1e-6 remain. Original uniform helper3choices unchanged, precharge250K/inventory246770, codec1MiB. Global ray guard is floating numerical search, not a wholepolytope/physical proof or state/candidate projection. Native/fullSI/nonlinear/geometric/B/history/two2ms/C/stop/task/phase gates remain unchanged.",
+      "legacy_full_rowtable_scope": "ORIGINAL_V5_RESULT_IN_RETRY",
+      "context_path": "cycle-0/trial-0/numeric_feasible_initializer.bin",
+      "bounds_shape": [
+        0,
+        0
+      ]
+    }
+  ],
+  "negative_leaving_contexts": [
+    {
+      "cycle": 0,
+      "trial": 0,
+      "hint_available": 1,
+      "requested_stop": 0,
+      "policy_activated": 0,
+      "scope": "Data-only numerical optimizer leaving diagnostics. Stop repair chooses smallest CURRENT SCALED SOLVER A ROW index among multipliers strictly below original -1e-12. Current row is not original14756SI index; internal planning rows need separate provenance maps. Original worst_row=-1 for this branch and true global minimum multiplier remain in old current_numeric_hint events, with no changed meaning. New selected multiplier may differ from true global minimum. Position refers to ordered working set before erase; actual decision is after original direction infinity<=1e-12, KKT rank/LLT/residual/refinement gates. Up to512 records, no retry/reset. Old active repair=false loop and outputs unchanged. Original current H/g/A/l/u, original bounds/tolerances/512/10s/full-row/nativeSOLVED/SI/nonlinear/geometric/B/history/two2ms/C/stop remain; no clipping/projection/perturbation, no nonnegative-dual/fullQP/physical or phase proof from this record. Scalar records alone are not an independent reconstruction of every working set; saved input replay and final original gates remain required.",
+      "events": [],
+      "counterpart_event_rows_checked": true,
+      "row_coordinates": "CURRENT_SCALED_SOLVER_A_NOT_ORIGINAL14756SI",
+      "scalar_proof_scope": "Chosen/global-min fields only. Independent replay is needed to reconstruct every working-set eligible multiplier.",
+      "context_path": "cycle-0/trial-0/hint_negative_leaving_events.bin"
+    }
+  ],
+  "selected_context_endpoint_events": 0,
+  "selected_codec_binary_files": 36,
+  "selected_complete_codec_files": 36,
+  "selected_stored_binary_bytes": 20801501,
+  "selected_raw_binary_bytes": 56122442,
+  "source_input_pins": {
+    "actual-dell/session-controlled-stop-smallest-current-negative-row-active32-brake64-dwell25-v1-20261016-attempt59/run-attempt1/artifacts/entry_completion.bin": {
+      "path": "actual-dell/session-controlled-stop-smallest-current-negative-row-active32-brake64-dwell25-v1-20261016-attempt59/run-attempt1/artifacts/entry_completion.bin",
+      "bytes": 182,
+      "sha256": "dfd77080ff1934246e0a0d99722836e84cdaa63fc777c7c78e5099f342ed5695"
+    },
+    "actual-dell/session-controlled-stop-smallest-current-negative-row-active32-brake64-dwell25-v1-20261016-attempt59/run-attempt1/artifacts/cycle-0/whole_current_cycle.bin": {
+      "path": "actual-dell/session-controlled-stop-smallest-current-negative-row-active32-brake64-dwell25-v1-20261016-attempt59/run-attempt1/artifacts/cycle-0/whole_current_cycle.bin",
+      "bytes": 323,
+      "sha256": "ee831c667146f9d51ee17c1035ac4d8b4fff4cc908416350e93c5970894bc230"
+    },
+    "actual-dell/session-controlled-stop-smallest-current-negative-row-active32-brake64-dwell25-v1-20261016-attempt59/run-attempt1/artifacts/actual_stop_dwell.bin": {
+      "path": "actual-dell/session-controlled-stop-smallest-current-negative-row-active32-brake64-dwell25-v1-20261016-attempt59/run-attempt1/artifacts/actual_stop_dwell.bin",
+      "bytes": 357,
+      "sha256": "0d579b01afcffba82f2d177cbb2f89226e30c84d733c7533484957021ed8b163"
+    },
+    "actual-dell/session-controlled-stop-smallest-current-negative-row-active32-brake64-dwell25-v1-20261016-attempt59/run-attempt1/artifacts/cycle-0/trial-0/working_face_basis_trace.bin": {
+      "path": "actual-dell/session-controlled-stop-smallest-current-negative-row-active32-brake64-dwell25-v1-20261016-attempt59/run-attempt1/artifacts/cycle-0/trial-0/working_face_basis_trace.bin",
+      "bytes": 903,
+      "sha256": "76906c27d31a056e4169d53a39e7f7fa04ac6c3b1e52e34389bcb95d7e6a4cbb"
+    },
+    "actual-dell/session-controlled-stop-smallest-current-negative-row-active32-brake64-dwell25-v1-20261016-attempt59/run-attempt1/artifacts/cycle-0/trial-0/qp_equality_reduction.bin": {
+      "path": "actual-dell/session-controlled-stop-smallest-current-negative-row-active32-brake64-dwell25-v1-20261016-attempt59/run-attempt1/artifacts/cycle-0/trial-0/qp_equality_reduction.bin",
+      "bytes": 7593746,
+      "sha256": "ebaba36c175d2415dff261c3fadd41b6d66ac22c1ac8f08073b82cd0c411039b"
+    },
+    "actual-dell/session-controlled-stop-smallest-current-negative-row-active32-brake64-dwell25-v1-20261016-attempt59/run-attempt1/artifacts/cycle-0/trial-0/numeric_feasible_initializer.bin": {
+      "path": "actual-dell/session-controlled-stop-smallest-current-negative-row-active32-brake64-dwell25-v1-20261016-attempt59/run-attempt1/artifacts/cycle-0/trial-0/numeric_feasible_initializer.bin",
+      "bytes": 961,
+      "sha256": "7f779ad0abadd4337dd269ab8ccee2b97d2bc05f2928110752788e04990752fd"
+    },
+    "actual-dell/session-controlled-stop-smallest-current-negative-row-active32-brake64-dwell25-v1-20261016-attempt59/run-attempt1/artifacts/cycle-0/trial-0/current_numeric_hint.bin": {
+      "path": "actual-dell/session-controlled-stop-smallest-current-negative-row-active32-brake64-dwell25-v1-20261016-attempt59/run-attempt1/artifacts/cycle-0/trial-0/current_numeric_hint.bin",
+      "bytes": 6608,
+      "sha256": "1373f324b924979a1f9713737a569fc5c24b5471f4002a459bd855ffd4dab250"
+    },
+    "actual-dell/session-controlled-stop-smallest-current-negative-row-active32-brake64-dwell25-v1-20261016-attempt59/run-attempt1/artifacts/cycle-0/trial-0/hint_negative_leaving_events.bin": {
+      "path": "actual-dell/session-controlled-stop-smallest-current-negative-row-active32-brake64-dwell25-v1-20261016-attempt59/run-attempt1/artifacts/cycle-0/trial-0/hint_negative_leaving_events.bin",
+      "bytes": 769,
+      "sha256": "af3f7cdbf15985645fb5f248e23a14f762baa00b46ddfd0499c05026b99d922d"
+    }
+  },
+  "phase5": "NOT_ACCEPTED",
+  "phase6": "NOT_STARTED",
+  "scope": "Only selected producer saved-data parsing: last-current full matrices/diagnostics, all completed commits/whole-cycle records and terminal stop. Uncopied earlier full trial data remain Dell only, no whole native codec/trace-event total assertion; original physical stop thresholds independently recomputed, original full endpoint scalar checks and full stored/raw SHA/CRC/EOF for source-complete files. Root full matrices/SI/B/C acceptance review separate; process or archive completion does not prove stop/full task/4ms success."
+}

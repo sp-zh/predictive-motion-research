@@ -1,5 +1,7 @@
 # Prepared59: stop-only current-row negative-multiplier leaving
 
+Subsequent [actual59](../phase5_actual59_artifact_roster_failure_v1_20261016/README.md) entered once and failed on the25th output after1C/2 task halves. The preparation below remains a saved-input result; its single-codec tests missed the full per-trial24-file integration limit.
+
 This is a completed source and saved-input regression unit, **not a native59
 entry or motion result**. The continuous development package remains active;
 fresh bounded execution uses the existing startup/input/resource rules without

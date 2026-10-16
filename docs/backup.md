@@ -73,6 +73,8 @@ when the connection is restored. Never overwrite accepted historical evidence.
 
 ## Presentation assets
 
+The later [actual59 failure/archive checkpoint](../reviews/evidence/phase5_actual59_artifact_roster_failure_v1_20261016/README.md) verifies the32,501,100-byte archive SHA256cecc09b2fdcfe972f6a2d833a4e177f42d74414a550d990f06f8b830a7065bd8 on Mac and Dell. All562 members/36 native codecs and the persisted Mac SHA/CRC pass. The post-C25th-output refusal, absent cycle timing and original24 complete outputs remain explicit; recoverable failed evidence does not become a successful trial. Only small recovery records are in Git, with older replication gaps unchanged.
+
 Actual58's [archive checkpoint](../reviews/evidence/phase5_initializer58_v6_unit_v1_20261016/README.md) records a3,225,158,075-byte complete stored-evidence archive, SHA25612408b223543570a2e92fe912bddb5525d49645bec71c38631f4b069e8ff0fb5, on independent Mac and Dell physical files. Root verifies all4405 members,3496 native codecs and the persisted Mac whole-file SHA/CRC. Frozen source/profile/active ELF are included; dependency/build caches are excluded. This closes58 stored-evidence replication only, not standalone environment restoration, older53–57 gaps or any acceptance gate. The raw archive is Git-ignored; Git contains the small source/review/figure checkpoint.
 
 The user requests demonstrable images and permits project 3D model uploads.
