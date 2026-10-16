@@ -1,0 +1,19 @@
+{
+  "schema": "ROOT64_BUILD40_LINK29_ALL_EXIT0_BEFORE_AFTER_EQUAL_V1",
+  "results": [
+    {
+      "stage": "build-attempt1",
+      "units": 40,
+      "all_exit0": true,
+      "input_identities_unchanged": 100
+    },
+    {
+      "stage": "link-attempt1",
+      "units": 29,
+      "all_exit0": true,
+      "input_identities_unchanged": 136
+    }
+  ],
+  "runtime_invocations": 0,
+  "scope": "Compiler/link review; no physical/native64 stopping implication."
+}

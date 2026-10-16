@@ -1,0 +1,74 @@
+schema: ACTIVE_SESSION_EVIDENCE_MANIFEST_V1
+stage: SAVED_NUMERICAL_MERGED_DIAGNOSTICS_ONLY
+error: ""
+actual_boundary_unchanged: true
+output_bytes: 7097
+output_bytes_semantics: LOGICAL_RAW_CONSUMED_BINARY_EXCLUDES_MANIFEST
+core_data_only_execution_permission: false
+phase5: NOT_ACCEPTED
+phase6: NOT_STARTED
+files:
+  - file: hint_kkt_rank_events.bin
+    role: STOP_KKT_EXACT_CYCLE_AND_ZERO_SLACK_FULL_ENDPOINT_ORIGINAL_DOMAIN_V4
+    bytes: 2282
+    sha256: f1aed4e1555c1c3b0aeb362e693520290b1d0616196989676ff68e4d07401163
+    created: true
+    hash_valid: true
+    complete: true
+    error: ""
+    codec: RAW_V1
+    raw_bytes: 2282
+    raw_sha256: f1aed4e1555c1c3b0aeb362e693520290b1d0616196989676ff68e4d07401163
+    storage_stream_complete: true
+    raw_hash_valid: true
+    compressor_input_hash_valid: true
+    zlib_allocation_peak: 0
+    raw_scope: RECONSTRUCTIBLE_RAW_PAYLOAD_OR_SOURCEFAILURE_PREFIX
+  - file: legacy_merged_v2.bin
+    role: CONSISTENT_SINGULAR_ACTIVE_FACE_KKT_AND_STOP_SELECTED_LEAVING_DIAGNOSTICS_V2
+    bytes: 2171
+    sha256: dea725de164377b04caba45aba660c8e9d23b95060fa304d68d21fa37c174871
+    created: true
+    hash_valid: true
+    complete: true
+    error: ""
+    codec: RAW_V1
+    raw_bytes: 2171
+    raw_sha256: dea725de164377b04caba45aba660c8e9d23b95060fa304d68d21fa37c174871
+    storage_stream_complete: true
+    raw_hash_valid: true
+    compressor_input_hash_valid: true
+    zlib_allocation_peak: 0
+    raw_scope: RECONSTRUCTIBLE_RAW_PAYLOAD_OR_SOURCEFAILURE_PREFIX
+  - file: legacy_chosen_v1.bin
+    role: STOP_ONLY_SMALLEST_CURRENT_ROW_NEGATIVE_MULTIPLIER_LEAVING_DIAGNOSTICS_V1
+    bytes: 2127
+    sha256: aa6749986f113082a2d2243ce3c8395b5d44277097ebf54f2012bf735a2bdd11
+    created: true
+    hash_valid: true
+    complete: true
+    error: ""
+    codec: RAW_V1
+    raw_bytes: 2127
+    raw_sha256: aa6749986f113082a2d2243ce3c8395b5d44277097ebf54f2012bf735a2bdd11
+    storage_stream_complete: true
+    raw_hash_valid: true
+    compressor_input_hash_valid: true
+    zlib_allocation_peak: 0
+    raw_scope: RECONSTRUCTIBLE_RAW_PAYLOAD_OR_SOURCEFAILURE_PREFIX
+  - file: legacy_rank_v1.bin
+    role: CONSISTENT_SINGULAR_ACTIVE_FACE_KKT_ORIGINAL_RESIDUALS_V1
+    bytes: 517
+    sha256: eb5d9771bcf8ec04ee03e1c5b1ac24f23813931b3a3a10659d6c24d805432bcf
+    created: true
+    hash_valid: true
+    complete: true
+    error: ""
+    codec: RAW_V1
+    raw_bytes: 517
+    raw_sha256: eb5d9771bcf8ec04ee03e1c5b1ac24f23813931b3a3a10659d6c24d805432bcf
+    storage_stream_complete: true
+    raw_hash_valid: true
+    compressor_input_hash_valid: true
+    zlib_allocation_peak: 0
+    raw_scope: RECONSTRUCTIBLE_RAW_PAYLOAD_OR_SOURCEFAILURE_PREFIX

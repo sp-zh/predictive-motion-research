@@ -1,0 +1,70 @@
+{
+  "schema": "ROOT64_PURE28_ALL_HASHES_AND_ORIGINAL_NOMINAL_CORES_REVIEW_V1",
+  "payloads": 175,
+  "all28_exit0_declared_no_Model_native": true,
+  "pure_input_before_after_equal": true,
+  "all_inherited_nominal_binary_streams_byteexact63": 12,
+  "new_warm_success_failure_records_recomputed": [
+    {
+      "case": "saved62-current53-explicit-warm",
+      "replay": {
+        "attempts": 156,
+        "counts_per_channel": [
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          149
+        ],
+        "successful_channels": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7
+        ],
+        "every_rejected_reason_location_and_observed_bound_recomputed": true,
+        "scope": "Independent scalar recurrence/family+codec review only; no Model/native/SI/nonlinear/B/C/physical stop acceptance."
+      },
+      "source_complete": true
+    },
+    {
+      "case": "saved62-current53-explicit-warm-refused",
+      "replay": {
+        "attempts": 156,
+        "counts_per_channel": [
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          149
+        ],
+        "successful_channels": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5,
+          6
+        ],
+        "every_rejected_reason_location_and_observed_bound_recomputed": true,
+        "scope": "Independent scalar recurrence/family+codec review only; no Model/native/SI/nonlinear/B/C/physical stop acceptance."
+      },
+      "source_complete": false
+    }
+  ],
+  "trial1_preserved": true,
+  "max1080": true,
+  "new_roundoff_command_counterexamples_stdout": "PASS original-domain zero-slack/nonzero travel/trueoutside/positive-slack/activefalse/refusal, first7 current-history nominal-containing oldguard-intersection/platformzeroexclusion/strictcandidate refusal, explicit numeric optin/codec count. NoModel/native/SI/B/C/physicalstop acceptance.\n",
+  "scope": "Pure helper/source tests. Old analytic/warm family and saved scalar failures preserved; new opt-in boundary/domain/trueoutside/positive-slack/activefalse/firstguard/strict refusal tested. Formal all8 numerical default and new10 policy matrices separately audited. No physical stop or native64 entry implication."
+}

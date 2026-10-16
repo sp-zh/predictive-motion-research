@@ -1,0 +1,19 @@
+{
+  "all96_source_identities": true,
+  "old_payloads_unchanged": 89,
+  "changed": [
+    "README.md",
+    "active_first_cycle.cpp",
+    "current_numeric_guess.hpp",
+    "integrated_horizon_qp.cpp"
+  ],
+  "added": [
+    "roundoff_command64.hpp",
+    "roundoff_command64_tests.cpp",
+    "roundoff_merged64_codec.hpp"
+  ],
+  "all_original63_profile_fields_equal_except_session_and_two_explicit_policies_newcodec_role": true,
+  "source64_native_NOT_ENTERED": true,
+  "original_math_model_cost_SI_B_C_stop_and_physical_modules_unchanged": true,
+  "scope": "Four modified sourcefiles include integrated extra planning bounds and optin numerical helper, never original SI/cost/physical criteria. No compiled/actual result inferred."
+}

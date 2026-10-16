@@ -1,0 +1,34 @@
+{
+  "schema": "FRESH64_ROUNDOFF_COMMAND_ONLINE_PREENTRY_V1",
+  "utc": "2026-10-16T20:32:49.523772+00:00",
+  "writer": "01a114d9-3a3a-7071-b94f-624581000992",
+  "all_identities_stable": true,
+  "runtime_distinct_input_count": 1737,
+  "actual_CIM_volumes": [
+    {
+      "DeviceID": "C:",
+      "FreeSpace": 95528284160,
+      "Size": 488030334976
+    },
+    {
+      "DeviceID": "D:",
+      "FreeSpace": 87908872192,
+      "Size": 512098299904
+    }
+  ],
+  "native_processes": [],
+  "profile_original63_equal_except_session_two_policies_and_newcodec_role": true,
+  "pure28_before_after_equal": true,
+  "formal18_before_after_equal": true,
+  "profile_sha256": "3a2df28794d896824432056ef05c75b4ef52ed2e0ef6b2f889e9276b950246ae",
+  "ELF_sha256": "b33e002381f253e53e92cabca890bc06fa20eb05c44b103ed33bcf966680af44",
+  "runtime_plan_actual_sha256": "b65fbae53b81c10841a3a622577fca09aabc98def26ae9a22e78e292eaeb5a37",
+  "driver_sha256": "3a511b3f2c8aa43a5501e949598de40518e7041581bab053da1508e725028446",
+  "storage_layout_sha256": "ed4ca5824e2a2c8cf0470727f04b998c0353cf482db4403881f745da6513c95a",
+  "capture_sha256": "c50b1c711db1f70453346522f7a69428afc19af99dd3eee004d6e2d8cc1f70fc",
+  "native64_not_entered": true,
+  "execution_mode": "ONLINE_ACTIVE_DEVELOPMENT_NO_OFFLINE_SUPERVISOR_QUEUE",
+  "prior63_complete_failure_evidence_retained": true,
+  "Mac_free_bytes": 197371265024,
+  "Mac_min33GiB_pass": true
+}

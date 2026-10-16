@@ -1,0 +1,28 @@
+{
+  "source97_all96_identity_entries_verified": true,
+  "source_manifest_SHA256": "2b3df229b4ca8f1ab30c1fcbc48ecd5aa0ed6f59aad66d7ff6614b7da644e0d8",
+  "changed_old_payloads": [
+    "README.md",
+    "active_first_cycle.cpp",
+    "current_numeric_guess.hpp",
+    "integrated_horizon_qp.cpp"
+  ],
+  "unchanged_old_payloads": 89,
+  "new_files": [
+    "roundoff_command64.hpp",
+    "roundoff_command64_tests.cpp",
+    "roundoff_merged64_codec.hpp"
+  ],
+  "profile_changed_keys": [
+    "session_id",
+    "roundoff_endpoint64",
+    "negative_multiplier_leaving",
+    "first_command_contraction64"
+  ],
+  "original512_10s_16384_1e12_domain_1e10stationarity_preserved": true,
+  "extra_scalar_inventory": 16,
+  "conservative_inventory": 744976,
+  "no_new_matrix_or_control_bank": true,
+  "max_merged_payload": 46232,
+  "scope": "Static first-read snapshot before final compilation/regression. Only existing first7 extraalpha bounds restricted, original SI/cost/physical/stop unchanged; saved newbound fixture independently reviewed. Native64 not entered."
+}

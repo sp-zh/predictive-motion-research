@@ -1,0 +1,7 @@
+{
+  "source": "root64_first7_matrix_review_v1.py",
+  "failure": "All arithmetic assertions passed; json serialization then rejected numpy.bool_. No report write.",
+  "correction": "Reader v2 converts NumPy scalars through item(); same saved immutable bytes, no native/capture replay.",
+  "producer_label_qualification": "PURE28_FORMAL18 checker inherited pure27_pass/console27 labels but actual source asserts28/results contain28; all175payload SHA and Root independent28 review verify actual count.",
+  "scope": "Retain all errors, do not promote labels or synthetic checks to physical stop."
+}

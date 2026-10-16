@@ -1,0 +1,77 @@
+{
+  "files": [
+    {
+      "path": "reviews/evidence/phase5_roundoff_command64_prepared_v1_20261016/Root/ACTUAL64_ENTRY_AND_RUNNING_REVIEW.json",
+      "bytes": 3650,
+      "sha256": "3001d56fd4746cbaa7ca8f3b57b2eacd48081f9000c842183f13afcbedbfb9be",
+      "source": "/private/tmp/root64_saved63_cause_review_v1_20261016/ACTUAL64_ENTRY_AND_RUNNING_REVIEW.json"
+    },
+    {
+      "path": "reviews/evidence/phase5_roundoff_command64_prepared_v1_20261016/Root/ACTUAL64_ENTRY_CONSUMED64.json",
+      "bytes": 1274,
+      "sha256": "92394ebbab68092c775d0e6d087cd98d2da8d6eb530f5830f91cb86d34ff583c",
+      "source": "/private/tmp/root64_saved63_cause_review_v1_20261016/ACTUAL64_ENTRY_CONSUMED64.json"
+    },
+    {
+      "path": "reviews/evidence/phase5_roundoff_command64_prepared_v1_20261016/Root/ACTUAL64_active_run_plan.json",
+      "bytes": 534064,
+      "sha256": "b65fbae53b81c10841a3a622577fca09aabc98def26ae9a22e78e292eaeb5a37",
+      "source": "/private/tmp/root64_saved63_cause_review_v1_20261016/ACTUAL64_active_run_plan.json"
+    },
+    {
+      "path": "reviews/evidence/phase5_roundoff_command64_prepared_v1_20261016/Root/ACTUAL64_run-attempt1_BEFORE_INPUT_IDENTITIES.json",
+      "bytes": 539762,
+      "sha256": "089ff5c4edfee4d447f931cfb35ba078070e144f23f0aeb9187e42ac7d23b7b8",
+      "source": "/private/tmp/root64_saved63_cause_review_v1_20261016/ACTUAL64_run-attempt1_BEFORE_INPUT_IDENTITIES.json"
+    },
+    {
+      "path": "reviews/evidence/phase5_roundoff_command64_prepared_v1_20261016/Root/ACTUAL64_PLAN_SERIALIZATION_AND1737_STARTUP_REVIEW.json",
+      "bytes": 651,
+      "sha256": "f666745f24656b01d8525de2f3303bc4b9899520c96832c56300ba2451f56cad",
+      "source": "/private/tmp/root64_saved63_cause_review_v1_20261016/ACTUAL64_PLAN_SERIALIZATION_AND1737_STARTUP_REVIEW.json"
+    },
+    {
+      "path": "reviews/evidence/phase5_roundoff_command64_prepared_v1_20261016/producer/PREPARED_active_run_plan_with_LF.json",
+      "bytes": 534065,
+      "sha256": "9201fdbbb09a52705a3ebf01e484c86fd9593217c98686cef130bfd5db8197dd",
+      "source": "/private/tmp/phase5_roundoff_command64_source_v1_20261016/active_run_plan.json"
+    },
+    {
+      "path": "reviews/evidence/phase5_roundoff_command64_prepared_v1_20261016/producer/ENTRY64_WRAPPER_SOURCE_V1.py",
+      "bytes": 2447,
+      "sha256": "53a820786af7a9db56e3f2515665a796b4464fc0051f021f8fa7c0c6d7ff8238",
+      "source": "/private/tmp/phase5_roundoff_command64_source_v1_20261016/ENTRY64_WRAPPER_SOURCE_V1.py"
+    },
+    {
+      "path": "reviews/evidence/phase5_roundoff_command64_prepared_v1_20261016/producer/PREENTRY64_REMOTE_SOURCE_V1.py",
+      "bytes": 4504,
+      "sha256": "76bf81a4692ef6f6747cf53c8054ba3982a36dedd471f0c1d8babab1e0df2211",
+      "source": "/private/tmp/phase5_roundoff_command64_source_v1_20261016/PREENTRY64_REMOTE_SOURCE_V1.py"
+    },
+    {
+      "path": "reviews/evidence/phase5_roundoff_command64_prepared_v1_20261016/producer/FINAL_PREENTRY64_V1.json",
+      "bytes": 1406,
+      "sha256": "ed7399447fe1af9341ee2a7e15cfa1577c7100369996a0d6a6f0cdbb7396577c",
+      "source": "/private/tmp/phase5_roundoff_command64_source_v1_20261016/FINAL_PREENTRY64_V1.json"
+    },
+    {
+      "path": "reviews/evidence/phase5_roundoff_command64_prepared_v1_20261016/producer/STORAGE_LAYOUT64_FINAL_V1.json",
+      "bytes": 4235,
+      "sha256": "ed4ca5824e2a2c8cf0470727f04b998c0353cf482db4403881f745da6513c95a",
+      "source": "/private/tmp/phase5_roundoff_command64_source_v1_20261016/STORAGE_LAYOUT64_FINAL_V1.json"
+    },
+    {
+      "path": "reviews/evidence/phase5_roundoff_command64_prepared_v1_20261016/producer/capture_terminal64.py",
+      "bytes": 7416,
+      "sha256": "c50b1c711db1f70453346522f7a69428afc19af99dd3eee004d6e2d8cc1f70fc",
+      "source": "/private/tmp/phase5_roundoff_command64_source_v1_20261016/capture_terminal64.py"
+    },
+    {
+      "path": "reviews/evidence/phase5_roundoff_command64_prepared_v1_20261016/Root/root64_actual_entry_readback_v1.py",
+      "bytes": 4348,
+      "sha256": "8614586fc2a94e367d7c2bc802f77824a3d349352735d29d599df66447dfb034",
+      "source": "/private/tmp/root64_actual_entry_readback_v1.py"
+    }
+  ],
+  "scope": "Once actual64 entry and running/startup snapshot, not result/stop acceptance. Prepared file includes one final LF, actual remote JSON omits LF; every object/record exact."
+}

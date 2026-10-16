@@ -1,0 +1,19 @@
+from pathlib import Path
+import sys,os,json,struct,ast,hashlib,math
+import numpy as np
+sys.path.insert(0,'/private/tmp');from bounded_derived_bytes53_v1 import bounded_write
+import root63_nominal_reader_v4 as n
+strict=n.strict
+T=ast.parse(Path('/private/tmp/root58_selected_audit_v1.py').read_text());exec(compile(ast.Module(body=[x for x in T.body if isinstance(x,ast.ClassDef)and x.name=='R'],type_ignores=[]),'<reader>','exec'))
+T=ast.parse(Path('/private/tmp/root59_production_review_v1.py').read_text());exec(compile(ast.Module(body=[x for x in T.body if isinstance(x,ast.FunctionDef)and x.name=='fixture'],type_ignores=[]),'<fixture>','exec'))
+O=Path('/private/tmp/root64_saved63_cause_review_v1_20261016');os.environ['P5_DERIVED53_ROOT']=str(O);P=Path('/private/tmp/phase5_roundoff_command64_source_v1_20261016');A=next(Path('/private/tmp/phase5_controlled_stop_explicit_warm_nominal_terminal63_v1_20261016').glob('actual-dell/*/run-attempt1/artifacts/cycle-63/trial-0'));mode=n.parse(A/'stop_objective_mode.bin')
+r=R(A/'planning_guard.bin','EXPLICIT_CURRENT_DERIVED_ALPHA_PROGRESS_JERK_AND_NUMERICAL_TAIL_V5');guard,strictguard,pg,ps,previousb,target=r.take('<6d');base=r.u();columns=list(r.take('<'+str(r.u())+'Q'));scale=r.vec();r.text();center=r.vec();r.u();r.take('<'+str(r.u())+'Q');r.mat();margin=r.d();r.text();r.end();assert base==6940 and len(columns)==len(scale)==160 and np.array_equal(center,mode['controls'].reshape(160))
+old,_=fixture(Path('/private/tmp/phase5_saved63_roundoff_endpoint_probe_v1_20261016/fixture.bin'));new,b=fixture(P/'targeted_newpolicies_v1/actual63_first7_contraction.bin');H,g,AA,lo,hi,seed=old;HH,gg,AAA,ll,uu,ss=new
+for a,b0 in[(H,HH),(g,gg),(AA,AAA),(seed,ss)]:assert np.array_equal(a,b0)
+assert set(np.flatnonzero((ll!=lo)|(uu!=hi)))==set(range(base,base+7));rows=[]
+for j in range(7):
+ w=mode['w'][j];nom=center[j];beforelo=max(-1.,nom-guard);beforehi=min(1.,nom+guard);wn=w+.004*nom;sb=max(.5*abs(w),abs(wn),.5e-6);tb=math.nextafter(max(.75*abs(w),abs(wn),.75e-6)*(1+16*np.finfo(float).eps),math.inf);l=max(beforelo,math.nextafter((-sb-w)/.004,-math.inf));u=min(beforehi,math.nextafter((sb-w)/.004,math.inf));l=min(l,nom);u=max(u,nom);row=base+j;m=scale[j];assert beforelo<=l<=nom<=u<=beforehi and beforelo*m==lo[row]and beforehi*m==hi[row]and l*m==ll[row]and u*m==uu[row]and not(l<=0<=u)and math.nextafter(abs(wn),math.inf)<=tb
+ assert abs(w)>.000001 and max(abs(w+.004*l),abs(w+.004*u))<=abs(w)*(1+1e-12)
+ rows.append(dict(joint=j,current_w=w,nominal=nom,nominal_next_w=wn,old_lo=beforelo,old_hi=beforehi,new_lo=l,new_hi=u,solver_bound=sb,strict_bound=tb,multiplier=m,old_zero_allowed=beforelo<=0<=beforehi,new_zero_allowed=False))
+report=dict(schema='ROOT64_INDEPENDENT_SAVED63_FIRST7_PLANNING_BOUND_MATRIX_REVIEW_V1',fixture_sha256=hashlib.sha256(b).hexdigest(),old_fixture_bound_to_full_actual63=True,full_H_g_A_seed_byteexact_actual63=True,only7_existing_scaled_lower_upper_rows_changed=list(range(base,base+7)),all140_original_alpha_and20progress_guard_columns_preserved=True,all7_bounds_recomputed_from_actual_current_w_nominal_guard_and_row_scale=True,oldguard_never_expanded_and_nominal_always_included=True,zero_alpha_excluded_for_all7_current63_joint_components=True,rows=rows,scope='Saved fixed-matrix restriction only, no source63 rerun or native64. This extra planning subset preserves original SI/cost/safety; max includes nominal next velocity so jerk reversal may allow noncontracting steps. Successful numeric replay/new native B/C/two2ms and physical stop remain separately required. Does not establish general convergence or task acceptance.')
+bounded_write(O/'FIRST7_SAVED63_MATRIX_REVIEW.json',json.dumps(report,indent=2)+'\n');print(json.dumps({'only7_bounds_changed':True,'all7_recomputed':True,'zero_alpha_excluded7':True,'fixture_SHA':report['fixture_sha256']}))

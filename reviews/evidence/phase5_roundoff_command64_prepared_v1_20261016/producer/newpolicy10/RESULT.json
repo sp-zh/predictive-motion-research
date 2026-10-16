@@ -1,0 +1,115 @@
+{
+  "records": [
+    {
+      "label": "compile",
+      "exit": 0,
+      "wall_s": 9.81260248000035,
+      "CPU": 90,
+      "AS": 2147483648,
+      "FSIZE": 33554432,
+      "wallcap": 100
+    },
+    {
+      "label": "link",
+      "exit": 0,
+      "wall_s": 0.266206879998208,
+      "CPU": 30,
+      "AS": 2147483648,
+      "FSIZE": 33554432,
+      "wallcap": 40
+    },
+    {
+      "label": "actual56_48_1",
+      "exit": 0,
+      "wall_s": 0.8694241729972418,
+      "CPU": 25,
+      "AS": 536870912,
+      "FSIZE": 16777216,
+      "wallcap": 30
+    },
+    {
+      "label": "old52_40_0",
+      "exit": 0,
+      "wall_s": 0.6681232049886603,
+      "CPU": 25,
+      "AS": 536870912,
+      "FSIZE": 16777216,
+      "wallcap": 30
+    },
+    {
+      "label": "old53_40_1",
+      "exit": 0,
+      "wall_s": 0.7183375310123665,
+      "CPU": 25,
+      "AS": 536870912,
+      "FSIZE": 16777216,
+      "wallcap": 30
+    },
+    {
+      "label": "old54_43_0",
+      "exit": 0,
+      "wall_s": 0.7679888519924134,
+      "CPU": 25,
+      "AS": 536870912,
+      "FSIZE": 16777216,
+      "wallcap": 30
+    },
+    {
+      "label": "old55_40_2",
+      "exit": 0,
+      "wall_s": 0.718857139989268,
+      "CPU": 25,
+      "AS": 536870912,
+      "FSIZE": 16777216,
+      "wallcap": 30
+    },
+    {
+      "label": "actual58_54_0",
+      "exit": 0,
+      "wall_s": 0.36814723401039373,
+      "CPU": 25,
+      "AS": 536870912,
+      "FSIZE": 16777216,
+      "wallcap": 30
+    },
+    {
+      "label": "actual58_74_0",
+      "exit": 0,
+      "wall_s": 0.31636594799056184,
+      "CPU": 25,
+      "AS": 536870912,
+      "FSIZE": 16777216,
+      "wallcap": 30
+    },
+    {
+      "label": "actual60_43_0",
+      "exit": 0,
+      "wall_s": 0.6686317510029767,
+      "CPU": 25,
+      "AS": 536870912,
+      "FSIZE": 16777216,
+      "wallcap": 30
+    },
+    {
+      "label": "actual63_originalbounds",
+      "exit": 0,
+      "wall_s": 0.42143895200570114,
+      "CPU": 25,
+      "AS": 536870912,
+      "FSIZE": 16777216,
+      "wallcap": 30
+    },
+    {
+      "label": "actual63_first7_contraction",
+      "exit": 0,
+      "wall_s": 0.41956005299289245,
+      "CPU": 25,
+      "AS": 536870912,
+      "FSIZE": 16777216,
+      "wallcap": 30
+    }
+  ],
+  "input_before_after_equal": true,
+  "all10_true_numerical_complete": true,
+  "scope": "Ten saved pure numerical newpolicy cases incl actual63 oldbounds numericalfix alone and actual63 new7bounds combined. Original512/10s/16384/1e-12 unchanged; no Model/nativeOSQP/B/C/physical-stop/native64/phase acceptance."
+}

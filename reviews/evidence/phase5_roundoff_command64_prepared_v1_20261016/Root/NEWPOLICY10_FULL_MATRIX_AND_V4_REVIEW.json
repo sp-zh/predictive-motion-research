@@ -1,0 +1,132 @@
+{
+  "schema": "ROOT64_NEW_OPTIN10_SAVED_QP_AND_FULL_V4_CODEC_REVIEW_V1",
+  "payloads_SHA_verified": 140,
+  "all12_compile_link_replay_commands_exit0": true,
+  "all10_pure_complete_under_original512_10s": true,
+  "input_before_after_equal_producer_report": true,
+  "cases": [
+    {
+      "case": "actual56_48_1",
+      "fixture_sha256": "069b99b19abe78a22a7845e65a94774ef66958e6f9a2ad573001061e77ea7b66",
+      "primal_numpy": 7.892939773990193e-13,
+      "stationarity_numpy": 1.1796119636642288e-16,
+      "roundoff_new_admissions": 8266,
+      "all_endpoint_records": 8266,
+      "ranks": 126,
+      "negative_leaving": 44,
+      "stdout": "complete=1 error=\"\" events=204 rank_events=126 retained=8266 boundary_events=1878 primal_violation=7.892939773990193e-13 stationarity=2.7755575615628914e-17"
+    },
+    {
+      "case": "old52_40_0",
+      "fixture_sha256": "63adf752672de67a3842b39091157b476d3066a6e48de25dbe4bcc4da2514856",
+      "primal_numpy": 8.834192058437829e-13,
+      "stationarity_numpy": 2.220446049250313e-16,
+      "roundoff_new_admissions": 657,
+      "all_endpoint_records": 657,
+      "ranks": 0,
+      "negative_leaving": 11,
+      "stdout": "complete=1 error=\"\" events=157 rank_events=0 retained=657 boundary_events=1 primal_violation=8.8341920584378286e-13 stationarity=1.6653345369377348e-16"
+    },
+    {
+      "case": "old53_40_1",
+      "fixture_sha256": "548579a0aa48ab67cc2eb2e73ed38b0da1765d23e4b1dd59ceb9a9e23882b190",
+      "primal_numpy": 8.286748023889068e-13,
+      "stationarity_numpy": 3.608224830031759e-16,
+      "roundoff_new_admissions": 1083,
+      "all_endpoint_records": 1083,
+      "ranks": 0,
+      "negative_leaving": 13,
+      "stdout": "complete=1 error=\"\" events=162 rank_events=0 retained=1083 boundary_events=211 primal_violation=8.2867480238890678e-13 stationarity=1.1102230246251565e-16"
+    },
+    {
+      "case": "old54_43_0",
+      "fixture_sha256": "1c7920a7d9f697fce28aea0fad3ea4c10fd34c17248853ea46c9296783680aa2",
+      "primal_numpy": 4.604524227180828e-13,
+      "stationarity_numpy": 2.220446049250313e-16,
+      "roundoff_new_admissions": 300,
+      "all_endpoint_records": 300,
+      "ranks": 0,
+      "negative_leaving": 18,
+      "stdout": "complete=1 error=\"\" events=167 rank_events=0 retained=300 boundary_events=7 primal_violation=4.6045242271808284e-13 stationarity=1.1102230246251565e-16"
+    },
+    {
+      "case": "old55_40_2",
+      "fixture_sha256": "e8e8c1140e56a0ae2dd494c122eab5f21b4eacd477c67cb03e22b86b1e899f74",
+      "primal_numpy": 7.868063839344686e-13,
+      "stationarity_numpy": 2.220446049250313e-16,
+      "roundoff_new_admissions": 0,
+      "all_endpoint_records": 0,
+      "ranks": 0,
+      "negative_leaving": 13,
+      "stdout": "complete=1 error=\"\" events=162 rank_events=0 retained=0 boundary_events=8 primal_violation=7.8680638393446856e-13 stationarity=3.3306690738754696e-16"
+    },
+    {
+      "case": "actual58_54_0",
+      "fixture_sha256": "fcc6ccbf3c01f4a27355f82f945727e1434930a073015d65ae4b0125b5992683",
+      "primal_numpy": 3.504609796811664e-13,
+      "stationarity_numpy": 1.126486057212439e-16,
+      "roundoff_new_admissions": 718,
+      "all_endpoint_records": 718,
+      "ranks": 0,
+      "negative_leaving": 13,
+      "stdout": "complete=1 error=\"\" events=114 rank_events=0 retained=718 boundary_events=2 primal_violation=3.5046097968116641e-13 stationarity=2.7755575615628914e-17"
+    },
+    {
+      "case": "actual58_74_0",
+      "fixture_sha256": "ba0de80aaba82efd4cbac257bf89017a10494b322303a47dbffec04f03fdd5be",
+      "primal_numpy": 2.8314156574893445e-14,
+      "stationarity_numpy": 3.968179951296946e-17,
+      "roundoff_new_admissions": 935,
+      "all_endpoint_records": 935,
+      "ranks": 0,
+      "negative_leaving": 28,
+      "stdout": "complete=1 error=\"\" events=113 rank_events=0 retained=935 boundary_events=3 primal_violation=2.8314156574893445e-14 stationarity=2.7755575615628914e-17"
+    },
+    {
+      "case": "actual60_43_0",
+      "fixture_sha256": "e8b14e198bafc29885419f2a42d54681d172b4ba1bd7f80aeca79f1044e43254",
+      "primal_numpy": 5.464270529109694e-13,
+      "stationarity_numpy": 2.7755575615628914e-16,
+      "roundoff_new_admissions": 2199,
+      "all_endpoint_records": 2199,
+      "ranks": 0,
+      "negative_leaving": 16,
+      "stdout": "complete=1 error=\"\" events=163 rank_events=0 retained=2199 boundary_events=3 primal_violation=5.4642705291096938e-13 stationarity=1.1102230246251565e-16"
+    },
+    {
+      "case": "actual63_originalbounds",
+      "fixture_sha256": "3896170ffeb2dfc5da7caa312535f7f54867dbbd6f9cfdf29e00ae3d3d9b4667",
+      "primal_numpy": 8.673617379884035e-18,
+      "stationarity_numpy": 1.6696713456276768e-16,
+      "roundoff_new_admissions": 1488,
+      "all_endpoint_records": 1488,
+      "ranks": 0,
+      "negative_leaving": 65,
+      "stdout": "complete=1 error=\"\" events=170 rank_events=0 retained=1488 boundary_events=3 primal_violation=8.6736173798840355e-18 stationarity=3.4694469519536142e-18"
+    },
+    {
+      "case": "actual63_first7_contraction",
+      "fixture_sha256": "e3fba207aec9cf31ac32f82a59d764611a132f6ec92ed31cebc0ea78db4061c8",
+      "primal_numpy": 8.673617379884035e-18,
+      "stationarity_numpy": 1.111307226797642e-16,
+      "roundoff_new_admissions": 1561,
+      "all_endpoint_records": 1561,
+      "ranks": 0,
+      "negative_leaving": 65,
+      "stdout": "complete=1 error=\"\" events=171 rank_events=0 retained=1561 boundary_events=3 primal_violation=8.6736173798840355e-18 stationarity=6.9388939039072284e-18"
+    }
+  ],
+  "all_full_V4_codec_SHA_CRC_and_legacy_rank_chosen_values_equal": true,
+  "all_endpoint_records_against_original_row_domain_recomputed": true,
+  "new_first7_original_reconstructed_next_w": [
+    3.24106213564523e-06,
+    -3.2410621191665768e-06,
+    3.241035161339358e-06,
+    3.241062135340504e-06,
+    -3.2410620808787334e-06,
+    3.24106213378043e-06,
+    1.0042425641442388e-06
+  ],
+  "all7_new_strict_bounds_pass": true,
+  "scope": "Independent saved-QP primal/stationarity/codec/endpoint-domain certificate. Two actual63 fixtures separately bound to original matrix and first7-only restriction. Reconstructed seventh nextw remains above1e-6, and no physical state simulation/nativeOSQP/B/C/stop success follows. Full endpoint directions not serialized; no independent every-step fullvector reconstruction. Old default/active core compatibility separately checked."
+}

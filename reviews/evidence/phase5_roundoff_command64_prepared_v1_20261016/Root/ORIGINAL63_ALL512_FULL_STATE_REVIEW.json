@@ -1,0 +1,15 @@
+{
+  "schema": "ROOT64_ORIGINAL_ACTUAL63_512_PRIMAL_FACES_MASK_DIAGNOSTIC_REVIEW_V1",
+  "actual_hint_SHA256": "cf20b148df402b3d2222a541e9008c2b0ef7d167c9b411faa3bf6fa5a47f59ba",
+  "instrumented_final_x_y_and_all512_events_byteexact_actual_failure": true,
+  "all512_snapshots_fully_decoded": true,
+  "snapshot_bytes": 1063104,
+  "unique_primal_bitpatterns": 42,
+  "mask_epochs": [
+    0
+  ],
+  "exact_ordered_state_repeats": 0,
+  "exact_unordered_state_repeats": 0,
+  "old_two_step_cycle_qualification_not_generalized": true,
+  "scope": "Saved-only instrumentation reproduces the original failure exactly, with no repeated full state. Does not support arbitrary longer-cycle masking. No Model/native64/physical stopping proof; old failure retained."
+}

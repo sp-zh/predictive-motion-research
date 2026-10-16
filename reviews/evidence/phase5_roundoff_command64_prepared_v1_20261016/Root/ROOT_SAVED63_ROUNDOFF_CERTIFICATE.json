@@ -1,0 +1,19 @@
+{
+  "schema": "ROOT64_SAVED_ACTUAL63_ROUNDOFF_CAUSE_AND_ORIGINAL_DOMAIN_REVIEW_V1",
+  "fixture_whole_SHA256": "3896170ffeb2dfc5da7caa312535f7f54867dbbd6f9cfdf29e00ae3d3d9b4667",
+  "all_six_original_scaled_matrix_vectors_and_initializer_seed_byteexact_actual63": true,
+  "rows": 7364,
+  "controls": 144,
+  "fresh_pure_iterations": 170,
+  "original_actual63_numeric512_failure_preserved": true,
+  "final_original_primal_violation_numpy": 8.673617379884035e-18,
+  "final_original_stationarity_numpy": 1.6696713456276768e-16,
+  "retained_endpoint_records": 1488,
+  "all_stored_row_bounds_bitexact_actual_matrix": true,
+  "every_record_nonzero_travel_rawslack_nonpositive": true,
+  "every_stored_fullendpoint_inside_original1e12_domain": true,
+  "worst_endpoint_violation": 1.734723475976807e-18,
+  "minimum_raw_slack": -3.469446951953614e-18,
+  "no_native64_entry": true,
+  "scope": "Independent fixed-saved-data numerical certificate/arithmetic review. Endpoint stored full values are checked against original row domain but are not independently reconstructed from every intermediate full direction; those states are not fully serialized. Original actual63 allmember/codec provenance independently checked. No new Model/nativeOSQP/SI/nonlinear/B/C/physical stop or generic convergence proof. Old512 cap, oldfailure and original1e-12/1e-10 unchanged."
+}

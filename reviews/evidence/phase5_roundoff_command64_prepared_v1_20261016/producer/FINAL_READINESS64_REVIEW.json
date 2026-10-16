@@ -1,0 +1,26 @@
+{
+  "schema": "FRESH64_FINAL_FINITE_SOURCE_REGRESSION_READINESS_V1",
+  "source97files_payload96_sha_verified": true,
+  "compile_units_passed": 40,
+  "link_units_passed": 29,
+  "pure_tests_passed": 28,
+  "pure_input_before_after_equal": true,
+  "oldformal18_passed_core46_byteexact63_61": true,
+  "newpolicy_saved_cases": 10,
+  "newpolicy_true_numerical_completeness_and_original_gates": true,
+  "reports": {
+    "SOURCE64_IDENTITY_AND_PROFILE_DIFF_CHECK.json": "f9a0d3bf5d2861e8110526f351749a1b11f496c5cb9f3b3c80aefb943758de56",
+    "PURE28_FORMAL18_OLD_PATH_READBACK_CHECK.json": "78d1cf7d78d64a07a7c0f93dc23c783adb0ad297fadb28cbad72f7b48530393f",
+    "NEWPOLICY10_FULL_CODEC_ENDPOINTS_AND_TWO_ACTUAL63_CERTIFICATES.json": "4871834ad7e092714cec1d097c12e6b8e4f126cc412bf5db053225b1c9fff5ac",
+    "STORAGE_LAYOUT64_V1.json": "ed4ca5824e2a2c8cf0470727f04b998c0353cf482db4403881f745da6513c95a"
+  },
+  "old_checker_label_qualification": "Reused compatibility checker field pure27_pass and console27 are historical labels; it actually asserts RESULT rows length28/all exit0. This final readiness states28 and points to immutable actual RESULT. No tests/source/runtime repeated.",
+  "runtime_inputs": 1737,
+  "profile_sha256": "3a2df28794d896824432056ef05c75b4ef52ed2e0ef6b2f889e9276b950246ae",
+  "ELF_sha256": "b33e002381f253e53e92cabca890bc06fa20eb05c44b103ed33bcf966680af44",
+  "no_old63_reentry_or_extension": true,
+  "native64_NOT_ENTERED": true,
+  "phase5": "NOT_ACCEPTED",
+  "phase6": "NOT_STARTED",
+  "scope": "Readiness only; no native current64/model/B/C/actual stop/4ms/task/phase success inferred."
+}

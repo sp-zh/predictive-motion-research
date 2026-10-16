@@ -1,0 +1,1114 @@
+{
+  "schema": "SOURCE62_UNCHANGED_CORE8SAVED6ACTIVE_COMPAT_V1",
+  "records": [
+    {
+      "label": "compile",
+      "exit": 0,
+      "wall_s": 9.302549796004314,
+      "argv": [
+        "/usr/bin/x86_64-linux-gnu-g++-13",
+        "-I",
+        "/home/codextransfer/predictive_motion/results/phase5/session-controlled-stop-roundoff-command-contraction-active32-brake64-dwell25-v1-20261016-attempt64/src",
+        "-std=c++17",
+        "-O2",
+        "-DNDEBUG",
+        "-fno-fast-math",
+        "-ffp-contract=off",
+        "-Wall",
+        "-Wextra",
+        "-Wpedantic",
+        "-DBOOST_FUSION_INVOKE_MAX_ARITY=12",
+        "-DBOOST_MPL_CFG_NO_PREPROCESSED_HEADERS",
+        "-DBOOST_MPL_LIMIT_LIST_SIZE=30",
+        "-DBOOST_MPL_LIMIT_VECTOR_SIZE=30",
+        "-DCOAL_HAS_OCTOMAP",
+        "-DCOAL_HAVE_OCTOMAP",
+        "-DOCTOMAP_MAJOR_VERSION=1",
+        "-DOCTOMAP_MINOR_VERSION=9",
+        "-DOCTOMAP_PATCH_VERSION=7",
+        "-DPINOCCHIO_ENABLE_TEMPLATE_INSTANTIATION",
+        "-DPINOCCHIO_URDFDOM_HEADERS_MAJOR_VERSION=1",
+        "-DPINOCCHIO_URDFDOM_HEADERS_MINOR_VERSION=1",
+        "-DPINOCCHIO_URDFDOM_HEADERS_PATCH_VERSION=2",
+        "-DPINOCCHIO_WITH_COLLISION",
+        "-DPINOCCHIO_WITH_HPP_FCL",
+        "-DPINOCCHIO_WITH_URDFDOM",
+        "-I",
+        "/home/codextransfer/predictive_motion/results/phase5/integrated-first-cycle-v1-20261010/source-version1/source",
+        "-I",
+        "/home/codextransfer/predictive_motion/results/phase5/integrated-first-cycle-v1-20261010/source-version1/source/core",
+        "-I",
+        "/home/codextransfer/predictive_motion/results/phase5/integrated-first-cycle-v1-20261010/source-version1/source/include",
+        "-I",
+        "/home/codextransfer/predictive_motion/install/predictive_motion_kinematics/include",
+        "-I",
+        "/home/codextransfer/predictive_motion/.vendor/mujoco-3.3.7/include",
+        "-I",
+        "/home/codextransfer/predictive_motion/.vendor/osqp-1.0.0-install/include/osqp",
+        "-I",
+        "/home/codextransfer/predictive_motion/.vendor/osqp-1.0.0-install/include/qdldl",
+        "-I",
+        "/home/codextransfer/predictive_motion/results/phase5/repaired-source-configure-freeze-after-v4-20261009/source-version1/source/tools/phase5_public_live_affine_v2",
+        "-I",
+        "/home/codextransfer/predictive_motion/results/phase5/repaired-source-configure-freeze-after-v4-20261009/source-version1/source/tools/phase5_public_live_affine_v2/model_boundary",
+        "-I",
+        "/home/codextransfer/predictive_motion/results/phase5/repaired-source-configure-freeze-after-v4-20261009/source-version1/source/tools/phase5_public_live_affine_v2/normalization",
+        "-I",
+        "/home/codextransfer/predictive_motion/results/phase5/repaired-source-configure-freeze-after-v4-20261009/source-version1/source/tools/phase5_public_live_affine_v2/affine",
+        "-I",
+        "/home/codextransfer/predictive_motion/results/phase5/repaired-source-configure-freeze-after-v4-20261009/source-version1/source/tools/phase5_public_coupled_augmented_extension_cpp",
+        "-I",
+        "/home/codextransfer/predictive_motion/results/phase5/repaired-source-configure-freeze-after-v4-20261009/source-version1/source/tools/phase5_public_coupled_augmented_cpp",
+        "-I",
+        "/home/codextransfer/predictive_motion/results/phase5/repaired-source-configure-freeze-after-v4-20261009/source-version1/source/tools/phase5_public_coupled_derivative_cpp",
+        "-I",
+        "/home/codextransfer/predictive_motion/results/phase5/repaired-source-configure-freeze-after-v4-20261009/source-version1/source/tools/phase5_public_coupled_cpp_v2",
+        "-isystem",
+        "/usr/include/eigen3",
+        "-isystem",
+        "/opt/ros/jazzy/include",
+        "-isystem",
+        "/opt/ros/jazzy/include/pinocchio/deprecated",
+        "-isystem",
+        "/opt/ros/jazzy/include/urdfdom",
+        "-isystem",
+        "/opt/ros/jazzy/include/urdfdom_headers",
+        "-I",
+        "/home/codextransfer/predictive_motion/tools/phase4_adapters",
+        "-MMD",
+        "-MF",
+        "/home/codextransfer/predictive_motion/results/phase5/session-controlled-stop-roundoff-command-contraction-active32-brake64-dwell25-v1-20261016-attempt64/pure-math-attempt1/replay.d",
+        "-c",
+        "/home/codextransfer/predictive_motion/results/phase5/session-controlled-stop-roundoff-command-contraction-active32-brake64-dwell25-v1-20261016-attempt64/pure-math-attempt1/replay.cpp",
+        "-o",
+        "/home/codextransfer/predictive_motion/results/phase5/session-controlled-stop-roundoff-command-contraction-active32-brake64-dwell25-v1-20261016-attempt64/pure-math-attempt1/replay.o"
+      ],
+      "CPU": 90,
+      "AS": 2147483648,
+      "FSIZE": 33554432,
+      "wallcap": 100
+    },
+    {
+      "label": "link",
+      "exit": 0,
+      "wall_s": 0.2666189379960997,
+      "argv": [
+        "/usr/bin/x86_64-linux-gnu-g++-13",
+        "/home/codextransfer/predictive_motion/results/phase5/session-controlled-stop-roundoff-command-contraction-active32-brake64-dwell25-v1-20261016-attempt64/pure-math-attempt1/replay.o",
+        "/home/codextransfer/predictive_motion/results/phase5/session-controlled-stop-roundoff-command-contraction-active32-brake64-dwell25-v1-20261016-attempt64/build-attempt1/unit-1.o",
+        "/home/codextransfer/predictive_motion/results/phase5/session-controlled-stop-roundoff-command-contraction-active32-brake64-dwell25-v1-20261016-attempt64/build-attempt1/unit-2.o",
+        "/home/codextransfer/predictive_motion/results/phase5/session-controlled-stop-roundoff-command-contraction-active32-brake64-dwell25-v1-20261016-attempt64/build-attempt1/unit-3.o",
+        "/home/codextransfer/predictive_motion/results/phase5/session-controlled-stop-roundoff-command-contraction-active32-brake64-dwell25-v1-20261016-attempt64/build-attempt1/unit-4.o",
+        "/home/codextransfer/predictive_motion/results/phase5/session-controlled-stop-roundoff-command-contraction-active32-brake64-dwell25-v1-20261016-attempt64/build-attempt1/unit-5.o",
+        "/home/codextransfer/predictive_motion/results/phase5/session-controlled-stop-roundoff-command-contraction-active32-brake64-dwell25-v1-20261016-attempt64/build-attempt1/unit-6.o",
+        "/home/codextransfer/predictive_motion/results/phase5/session-controlled-stop-roundoff-command-contraction-active32-brake64-dwell25-v1-20261016-attempt64/build-attempt1/unit-7.o",
+        "/home/codextransfer/predictive_motion/results/phase5/session-controlled-stop-roundoff-command-contraction-active32-brake64-dwell25-v1-20261016-attempt64/build-attempt1/unit-9.o",
+        "/home/codextransfer/predictive_motion/results/phase5/session-task-start-a-primaldual-v2-20261010-attempt5/build-attempt1/unit-9.o",
+        "/home/codextransfer/predictive_motion/results/phase5/integrated-first-cycle-v1-20261010/build-attempt1/unit-7.o",
+        "-Wl,--start-group",
+        "/home/codextransfer/predictive_motion/install/predictive_motion_kinematics/lib/librobot_kinematics.a",
+        "/home/codextransfer/predictive_motion/.vendor/osqp-1.0.0-install/lib/libosqpstatic.a",
+        "/home/codextransfer/predictive_motion/results/phase5/repaired-source-configure-only-after-v4-20261009/attempt1/build/inventory-source/input-source/cost-source/affine-source/normalized-source/model-boundary/live-foundation/libpublic_live_affine_v2_foundation.a",
+        "/home/codextransfer/predictive_motion/results/phase5/repaired-source-configure-only-after-v4-20261009/attempt1/build/inventory-source/input-source/cost-source/affine-source/normalized-source/model-boundary/frozen-extension/libpublic_coupled_augmented_extension.a",
+        "/home/codextransfer/predictive_motion/results/phase5/repaired-source-configure-only-after-v4-20261009/attempt1/build/inventory-source/input-source/cost-source/affine-source/normalized-source/model-boundary/frozen-extension/libfrozen_augmented_extension_value.a",
+        "/home/codextransfer/predictive_motion/results/phase5/repaired-source-configure-only-after-v4-20261009/attempt1/build/inventory-source/input-source/cost-source/affine-source/normalized-source/model-boundary/frozen-extension/physical-derivative/libpublic_coupled_derivative_model.a",
+        "/home/codextransfer/predictive_motion/results/phase5/repaired-source-configure-only-after-v4-20261009/attempt1/build/inventory-source/input-source/cost-source/affine-source/normalized-source/model-boundary/frozen-extension/physical-derivative/base-v2/libpublic_coupled_model_v2.a",
+        "-Wl,--end-group",
+        "/home/codextransfer/predictive_motion/.vendor/mujoco-3.3.7/lib/libmujoco.so",
+        "/usr/lib/x86_64-linux-gnu/libcrypto.so",
+        "/usr/lib/x86_64-linux-gnu/libyaml-cpp.so",
+        "/opt/ros/jazzy/lib/x86_64-linux-gnu/libpinocchio_default.so.4.1.0",
+        "/opt/ros/jazzy/lib/x86_64-linux-gnu/libpinocchio_collision.so.4.1.0",
+        "/opt/ros/jazzy/lib/x86_64-linux-gnu/libpinocchio_parsers.so.4.1.0",
+        "/usr/lib/x86_64-linux-gnu/libboost_serialization.so.1.83.0",
+        "/usr/lib/x86_64-linux-gnu/libboost_filesystem.so.1.83.0",
+        "/opt/ros/jazzy/lib/x86_64-linux-gnu/libcoal.so.3.0.3",
+        "-ldl",
+        "-pthread",
+        "-Wl,--disable-new-dtags",
+        "-Wl,-rpath,/home/codextransfer/predictive_motion/.vendor/mujoco-3.3.7/lib:/opt/ros/jazzy/lib/x86_64-linux-gnu:/opt/ros/jazzy/lib:/usr/lib/x86_64-linux-gnu",
+        "-lz",
+        "-Wl,-Map,/home/codextransfer/predictive_motion/results/phase5/session-controlled-stop-roundoff-command-contraction-active32-brake64-dwell25-v1-20261016-attempt64/pure-math-attempt1/replay.map",
+        "-o",
+        "/home/codextransfer/predictive_motion/results/phase5/session-controlled-stop-roundoff-command-contraction-active32-brake64-dwell25-v1-20261016-attempt64/pure-math-attempt1/replay"
+      ],
+      "CPU": 90,
+      "AS": 2147483648,
+      "FSIZE": 33554432,
+      "wallcap": 100
+    },
+    {
+      "label": "active_compile",
+      "exit": 0,
+      "wall_s": 5.037271986991982,
+      "argv": [
+        "/usr/bin/x86_64-linux-gnu-g++-13",
+        "-I",
+        "/home/codextransfer/predictive_motion/results/phase5/session-controlled-stop-roundoff-command-contraction-active32-brake64-dwell25-v1-20261016-attempt64/src",
+        "-std=c++17",
+        "-O2",
+        "-DNDEBUG",
+        "-fno-fast-math",
+        "-ffp-contract=off",
+        "-Wall",
+        "-Wextra",
+        "-Wpedantic",
+        "-DBOOST_FUSION_INVOKE_MAX_ARITY=12",
+        "-DBOOST_MPL_CFG_NO_PREPROCESSED_HEADERS",
+        "-DBOOST_MPL_LIMIT_LIST_SIZE=30",
+        "-DBOOST_MPL_LIMIT_VECTOR_SIZE=30",
+        "-DCOAL_HAS_OCTOMAP",
+        "-DCOAL_HAVE_OCTOMAP",
+        "-DOCTOMAP_MAJOR_VERSION=1",
+        "-DOCTOMAP_MINOR_VERSION=9",
+        "-DOCTOMAP_PATCH_VERSION=7",
+        "-DPINOCCHIO_ENABLE_TEMPLATE_INSTANTIATION",
+        "-DPINOCCHIO_URDFDOM_HEADERS_MAJOR_VERSION=1",
+        "-DPINOCCHIO_URDFDOM_HEADERS_MINOR_VERSION=1",
+        "-DPINOCCHIO_URDFDOM_HEADERS_PATCH_VERSION=2",
+        "-DPINOCCHIO_WITH_COLLISION",
+        "-DPINOCCHIO_WITH_HPP_FCL",
+        "-DPINOCCHIO_WITH_URDFDOM",
+        "-I",
+        "/home/codextransfer/predictive_motion/results/phase5/integrated-first-cycle-v1-20261010/source-version1/source",
+        "-I",
+        "/home/codextransfer/predictive_motion/results/phase5/integrated-first-cycle-v1-20261010/source-version1/source/core",
+        "-I",
+        "/home/codextransfer/predictive_motion/results/phase5/integrated-first-cycle-v1-20261010/source-version1/source/include",
+        "-I",
+        "/home/codextransfer/predictive_motion/install/predictive_motion_kinematics/include",
+        "-I",
+        "/home/codextransfer/predictive_motion/.vendor/mujoco-3.3.7/include",
+        "-I",
+        "/home/codextransfer/predictive_motion/.vendor/osqp-1.0.0-install/include/osqp",
+        "-I",
+        "/home/codextransfer/predictive_motion/.vendor/osqp-1.0.0-install/include/qdldl",
+        "-I",
+        "/home/codextransfer/predictive_motion/results/phase5/repaired-source-configure-freeze-after-v4-20261009/source-version1/source/tools/phase5_public_live_affine_v2",
+        "-I",
+        "/home/codextransfer/predictive_motion/results/phase5/repaired-source-configure-freeze-after-v4-20261009/source-version1/source/tools/phase5_public_live_affine_v2/model_boundary",
+        "-I",
+        "/home/codextransfer/predictive_motion/results/phase5/repaired-source-configure-freeze-after-v4-20261009/source-version1/source/tools/phase5_public_live_affine_v2/normalization",
+        "-I",
+        "/home/codextransfer/predictive_motion/results/phase5/repaired-source-configure-freeze-after-v4-20261009/source-version1/source/tools/phase5_public_live_affine_v2/affine",
+        "-I",
+        "/home/codextransfer/predictive_motion/results/phase5/repaired-source-configure-freeze-after-v4-20261009/source-version1/source/tools/phase5_public_coupled_augmented_extension_cpp",
+        "-I",
+        "/home/codextransfer/predictive_motion/results/phase5/repaired-source-configure-freeze-after-v4-20261009/source-version1/source/tools/phase5_public_coupled_augmented_cpp",
+        "-I",
+        "/home/codextransfer/predictive_motion/results/phase5/repaired-source-configure-freeze-after-v4-20261009/source-version1/source/tools/phase5_public_coupled_derivative_cpp",
+        "-I",
+        "/home/codextransfer/predictive_motion/results/phase5/repaired-source-configure-freeze-after-v4-20261009/source-version1/source/tools/phase5_public_coupled_cpp_v2",
+        "-isystem",
+        "/usr/include/eigen3",
+        "-isystem",
+        "/opt/ros/jazzy/include",
+        "-isystem",
+        "/opt/ros/jazzy/include/pinocchio/deprecated",
+        "-isystem",
+        "/opt/ros/jazzy/include/urdfdom",
+        "-isystem",
+        "/opt/ros/jazzy/include/urdfdom_headers",
+        "-I",
+        "/home/codextransfer/predictive_motion/tools/phase4_adapters",
+        "-MMD",
+        "-MF",
+        "/home/codextransfer/predictive_motion/results/phase5/session-controlled-stop-roundoff-command-contraction-active32-brake64-dwell25-v1-20261016-attempt64/pure-math-attempt1/active.d",
+        "-c",
+        "/home/codextransfer/predictive_motion/results/phase5/session-controlled-stop-roundoff-command-contraction-active32-brake64-dwell25-v1-20261016-attempt64/pure-math-attempt1/active.cpp",
+        "-o",
+        "/home/codextransfer/predictive_motion/results/phase5/session-controlled-stop-roundoff-command-contraction-active32-brake64-dwell25-v1-20261016-attempt64/pure-math-attempt1/active.o"
+      ],
+      "CPU": 90,
+      "AS": 2147483648,
+      "FSIZE": 33554432,
+      "wallcap": 100
+    },
+    {
+      "label": "active_link",
+      "exit": 0,
+      "wall_s": 0.2665728930005571,
+      "argv": [
+        "/usr/bin/x86_64-linux-gnu-g++-13",
+        "/home/codextransfer/predictive_motion/results/phase5/session-controlled-stop-roundoff-command-contraction-active32-brake64-dwell25-v1-20261016-attempt64/pure-math-attempt1/active.o",
+        "/home/codextransfer/predictive_motion/results/phase5/session-controlled-stop-roundoff-command-contraction-active32-brake64-dwell25-v1-20261016-attempt64/build-attempt1/unit-1.o",
+        "/home/codextransfer/predictive_motion/results/phase5/session-controlled-stop-roundoff-command-contraction-active32-brake64-dwell25-v1-20261016-attempt64/build-attempt1/unit-2.o",
+        "/home/codextransfer/predictive_motion/results/phase5/session-controlled-stop-roundoff-command-contraction-active32-brake64-dwell25-v1-20261016-attempt64/build-attempt1/unit-3.o",
+        "/home/codextransfer/predictive_motion/results/phase5/session-controlled-stop-roundoff-command-contraction-active32-brake64-dwell25-v1-20261016-attempt64/build-attempt1/unit-4.o",
+        "/home/codextransfer/predictive_motion/results/phase5/session-controlled-stop-roundoff-command-contraction-active32-brake64-dwell25-v1-20261016-attempt64/build-attempt1/unit-5.o",
+        "/home/codextransfer/predictive_motion/results/phase5/session-controlled-stop-roundoff-command-contraction-active32-brake64-dwell25-v1-20261016-attempt64/build-attempt1/unit-6.o",
+        "/home/codextransfer/predictive_motion/results/phase5/session-controlled-stop-roundoff-command-contraction-active32-brake64-dwell25-v1-20261016-attempt64/build-attempt1/unit-7.o",
+        "/home/codextransfer/predictive_motion/results/phase5/session-controlled-stop-roundoff-command-contraction-active32-brake64-dwell25-v1-20261016-attempt64/build-attempt1/unit-9.o",
+        "/home/codextransfer/predictive_motion/results/phase5/session-task-start-a-primaldual-v2-20261010-attempt5/build-attempt1/unit-9.o",
+        "/home/codextransfer/predictive_motion/results/phase5/integrated-first-cycle-v1-20261010/build-attempt1/unit-7.o",
+        "-Wl,--start-group",
+        "/home/codextransfer/predictive_motion/install/predictive_motion_kinematics/lib/librobot_kinematics.a",
+        "/home/codextransfer/predictive_motion/.vendor/osqp-1.0.0-install/lib/libosqpstatic.a",
+        "/home/codextransfer/predictive_motion/results/phase5/repaired-source-configure-only-after-v4-20261009/attempt1/build/inventory-source/input-source/cost-source/affine-source/normalized-source/model-boundary/live-foundation/libpublic_live_affine_v2_foundation.a",
+        "/home/codextransfer/predictive_motion/results/phase5/repaired-source-configure-only-after-v4-20261009/attempt1/build/inventory-source/input-source/cost-source/affine-source/normalized-source/model-boundary/frozen-extension/libpublic_coupled_augmented_extension.a",
+        "/home/codextransfer/predictive_motion/results/phase5/repaired-source-configure-only-after-v4-20261009/attempt1/build/inventory-source/input-source/cost-source/affine-source/normalized-source/model-boundary/frozen-extension/libfrozen_augmented_extension_value.a",
+        "/home/codextransfer/predictive_motion/results/phase5/repaired-source-configure-only-after-v4-20261009/attempt1/build/inventory-source/input-source/cost-source/affine-source/normalized-source/model-boundary/frozen-extension/physical-derivative/libpublic_coupled_derivative_model.a",
+        "/home/codextransfer/predictive_motion/results/phase5/repaired-source-configure-only-after-v4-20261009/attempt1/build/inventory-source/input-source/cost-source/affine-source/normalized-source/model-boundary/frozen-extension/physical-derivative/base-v2/libpublic_coupled_model_v2.a",
+        "-Wl,--end-group",
+        "/home/codextransfer/predictive_motion/.vendor/mujoco-3.3.7/lib/libmujoco.so",
+        "/usr/lib/x86_64-linux-gnu/libcrypto.so",
+        "/usr/lib/x86_64-linux-gnu/libyaml-cpp.so",
+        "/opt/ros/jazzy/lib/x86_64-linux-gnu/libpinocchio_default.so.4.1.0",
+        "/opt/ros/jazzy/lib/x86_64-linux-gnu/libpinocchio_collision.so.4.1.0",
+        "/opt/ros/jazzy/lib/x86_64-linux-gnu/libpinocchio_parsers.so.4.1.0",
+        "/usr/lib/x86_64-linux-gnu/libboost_serialization.so.1.83.0",
+        "/usr/lib/x86_64-linux-gnu/libboost_filesystem.so.1.83.0",
+        "/opt/ros/jazzy/lib/x86_64-linux-gnu/libcoal.so.3.0.3",
+        "-ldl",
+        "-pthread",
+        "-Wl,--disable-new-dtags",
+        "-Wl,-rpath,/home/codextransfer/predictive_motion/.vendor/mujoco-3.3.7/lib:/opt/ros/jazzy/lib/x86_64-linux-gnu:/opt/ros/jazzy/lib:/usr/lib/x86_64-linux-gnu",
+        "-lz",
+        "-Wl,-Map,/home/codextransfer/predictive_motion/results/phase5/session-controlled-stop-roundoff-command-contraction-active32-brake64-dwell25-v1-20261016-attempt64/pure-math-attempt1/active.map",
+        "-o",
+        "/home/codextransfer/predictive_motion/results/phase5/session-controlled-stop-roundoff-command-contraction-active32-brake64-dwell25-v1-20261016-attempt64/pure-math-attempt1/active"
+      ],
+      "CPU": 90,
+      "AS": 2147483648,
+      "FSIZE": 33554432,
+      "wallcap": 100
+    },
+    {
+      "label": "stop_actual56_48_1",
+      "exit": 0,
+      "wall_s": 1.1721981659939047,
+      "argv": [
+        "/home/codextransfer/predictive_motion/results/phase5/session-controlled-stop-roundoff-command-contraction-active32-brake64-dwell25-v1-20261016-attempt64/pure-math-attempt1/replay",
+        "/home/codextransfer/predictive_motion/results/phase5/session-controlled-stop-global-interval-active32-brake64-dwell25-v1-20261016-attempt58/pure-math-attempt1/actual56_48_1.fixture",
+        "/home/codextransfer/predictive_motion/results/phase5/session-controlled-stop-roundoff-command-contraction-active32-brake64-dwell25-v1-20261016-attempt64/pure-math-attempt1/stop_actual56_48_1",
+        "0",
+        "0"
+      ],
+      "CPU": 25,
+      "AS": 536870912,
+      "FSIZE": 16777216,
+      "wallcap": 30
+    },
+    {
+      "label": "stop_old52_40_0",
+      "exit": 0,
+      "wall_s": 1.020382126007462,
+      "argv": [
+        "/home/codextransfer/predictive_motion/results/phase5/session-controlled-stop-roundoff-command-contraction-active32-brake64-dwell25-v1-20261016-attempt64/pure-math-attempt1/replay",
+        "/home/codextransfer/predictive_motion/results/phase5/session-controlled-stop-global-interval-active32-brake64-dwell25-v1-20261016-attempt58/pure-math-attempt1/old52_40_0.fixture",
+        "/home/codextransfer/predictive_motion/results/phase5/session-controlled-stop-roundoff-command-contraction-active32-brake64-dwell25-v1-20261016-attempt64/pure-math-attempt1/stop_old52_40_0",
+        "0",
+        "0"
+      ],
+      "CPU": 25,
+      "AS": 536870912,
+      "FSIZE": 16777216,
+      "wallcap": 30
+    },
+    {
+      "label": "active_old52_40_0",
+      "exit": 0,
+      "wall_s": 0.5176812709978549,
+      "argv": [
+        "/home/codextransfer/predictive_motion/results/phase5/session-controlled-stop-roundoff-command-contraction-active32-brake64-dwell25-v1-20261016-attempt64/pure-math-attempt1/active",
+        "/home/codextransfer/predictive_motion/results/phase5/session-controlled-stop-global-interval-active32-brake64-dwell25-v1-20261016-attempt58/pure-math-attempt1/old52_40_0.fixture",
+        "/home/codextransfer/predictive_motion/results/phase5/session-controlled-stop-roundoff-command-contraction-active32-brake64-dwell25-v1-20261016-attempt64/pure-math-attempt1/active_old52_40_0"
+      ],
+      "CPU": 25,
+      "AS": 536870912,
+      "FSIZE": 16777216,
+      "wallcap": 30
+    },
+    {
+      "label": "stop_old53_40_1",
+      "exit": 0,
+      "wall_s": 0.9196781749924412,
+      "argv": [
+        "/home/codextransfer/predictive_motion/results/phase5/session-controlled-stop-roundoff-command-contraction-active32-brake64-dwell25-v1-20261016-attempt64/pure-math-attempt1/replay",
+        "/home/codextransfer/predictive_motion/results/phase5/session-controlled-stop-global-interval-active32-brake64-dwell25-v1-20261016-attempt58/pure-math-attempt1/old53_40_1.fixture",
+        "/home/codextransfer/predictive_motion/results/phase5/session-controlled-stop-roundoff-command-contraction-active32-brake64-dwell25-v1-20261016-attempt64/pure-math-attempt1/stop_old53_40_1",
+        "0",
+        "0"
+      ],
+      "CPU": 25,
+      "AS": 536870912,
+      "FSIZE": 16777216,
+      "wallcap": 30
+    },
+    {
+      "label": "active_old53_40_1",
+      "exit": 0,
+      "wall_s": 0.11581334100628737,
+      "argv": [
+        "/home/codextransfer/predictive_motion/results/phase5/session-controlled-stop-roundoff-command-contraction-active32-brake64-dwell25-v1-20261016-attempt64/pure-math-attempt1/active",
+        "/home/codextransfer/predictive_motion/results/phase5/session-controlled-stop-global-interval-active32-brake64-dwell25-v1-20261016-attempt58/pure-math-attempt1/old53_40_1.fixture",
+        "/home/codextransfer/predictive_motion/results/phase5/session-controlled-stop-roundoff-command-contraction-active32-brake64-dwell25-v1-20261016-attempt64/pure-math-attempt1/active_old53_40_1"
+      ],
+      "CPU": 25,
+      "AS": 536870912,
+      "FSIZE": 16777216,
+      "wallcap": 30
+    },
+    {
+      "label": "stop_old54_43_0",
+      "exit": 0,
+      "wall_s": 0.8736019689968089,
+      "argv": [
+        "/home/codextransfer/predictive_motion/results/phase5/session-controlled-stop-roundoff-command-contraction-active32-brake64-dwell25-v1-20261016-attempt64/pure-math-attempt1/replay",
+        "/home/codextransfer/predictive_motion/results/phase5/session-controlled-stop-global-interval-active32-brake64-dwell25-v1-20261016-attempt58/pure-math-attempt1/old54_43_0.fixture",
+        "/home/codextransfer/predictive_motion/results/phase5/session-controlled-stop-roundoff-command-contraction-active32-brake64-dwell25-v1-20261016-attempt64/pure-math-attempt1/stop_old54_43_0",
+        "0",
+        "0"
+      ],
+      "CPU": 25,
+      "AS": 536870912,
+      "FSIZE": 16777216,
+      "wallcap": 30
+    },
+    {
+      "label": "active_old54_43_0",
+      "exit": 0,
+      "wall_s": 0.5216708420048235,
+      "argv": [
+        "/home/codextransfer/predictive_motion/results/phase5/session-controlled-stop-roundoff-command-contraction-active32-brake64-dwell25-v1-20261016-attempt64/pure-math-attempt1/active",
+        "/home/codextransfer/predictive_motion/results/phase5/session-controlled-stop-global-interval-active32-brake64-dwell25-v1-20261016-attempt58/pure-math-attempt1/old54_43_0.fixture",
+        "/home/codextransfer/predictive_motion/results/phase5/session-controlled-stop-roundoff-command-contraction-active32-brake64-dwell25-v1-20261016-attempt64/pure-math-attempt1/active_old54_43_0"
+      ],
+      "CPU": 25,
+      "AS": 536870912,
+      "FSIZE": 16777216,
+      "wallcap": 30
+    },
+    {
+      "label": "stop_old55_40_2",
+      "exit": 0,
+      "wall_s": 0.7203149150009267,
+      "argv": [
+        "/home/codextransfer/predictive_motion/results/phase5/session-controlled-stop-roundoff-command-contraction-active32-brake64-dwell25-v1-20261016-attempt64/pure-math-attempt1/replay",
+        "/home/codextransfer/predictive_motion/results/phase5/session-controlled-stop-global-interval-active32-brake64-dwell25-v1-20261016-attempt58/pure-math-attempt1/old55_40_2.fixture",
+        "/home/codextransfer/predictive_motion/results/phase5/session-controlled-stop-roundoff-command-contraction-active32-brake64-dwell25-v1-20261016-attempt64/pure-math-attempt1/stop_old55_40_2",
+        "0",
+        "0"
+      ],
+      "CPU": 25,
+      "AS": 536870912,
+      "FSIZE": 16777216,
+      "wallcap": 30
+    },
+    {
+      "label": "active_ACTIVE_constrained",
+      "exit": 0,
+      "wall_s": 0.006435403003706597,
+      "argv": [
+        "/home/codextransfer/predictive_motion/results/phase5/session-controlled-stop-roundoff-command-contraction-active32-brake64-dwell25-v1-20261016-attempt64/pure-math-attempt1/active",
+        "/home/codextransfer/predictive_motion/results/phase5/session-controlled-stop-global-interval-active32-brake64-dwell25-v1-20261016-attempt58/pure-math-attempt1/ACTIVE_constrained.fixture",
+        "/home/codextransfer/predictive_motion/results/phase5/session-controlled-stop-roundoff-command-contraction-active32-brake64-dwell25-v1-20261016-attempt64/pure-math-attempt1/active_ACTIVE_constrained"
+      ],
+      "CPU": 25,
+      "AS": 536870912,
+      "FSIZE": 16777216,
+      "wallcap": 30
+    },
+    {
+      "label": "active_ACTIVE_interior",
+      "exit": 0,
+      "wall_s": 0.005286093000904657,
+      "argv": [
+        "/home/codextransfer/predictive_motion/results/phase5/session-controlled-stop-roundoff-command-contraction-active32-brake64-dwell25-v1-20261016-attempt64/pure-math-attempt1/active",
+        "/home/codextransfer/predictive_motion/results/phase5/session-controlled-stop-global-interval-active32-brake64-dwell25-v1-20261016-attempt58/pure-math-attempt1/ACTIVE_interior.fixture",
+        "/home/codextransfer/predictive_motion/results/phase5/session-controlled-stop-roundoff-command-contraction-active32-brake64-dwell25-v1-20261016-attempt64/pure-math-attempt1/active_ACTIVE_interior"
+      ],
+      "CPU": 25,
+      "AS": 536870912,
+      "FSIZE": 16777216,
+      "wallcap": 30
+    },
+    {
+      "label": "active_ACTIVE_zero",
+      "exit": 0,
+      "wall_s": 0.008845219999784604,
+      "argv": [
+        "/home/codextransfer/predictive_motion/results/phase5/session-controlled-stop-roundoff-command-contraction-active32-brake64-dwell25-v1-20261016-attempt64/pure-math-attempt1/active",
+        "/home/codextransfer/predictive_motion/results/phase5/session-controlled-stop-global-interval-active32-brake64-dwell25-v1-20261016-attempt58/pure-math-attempt1/ACTIVE_zero.fixture",
+        "/home/codextransfer/predictive_motion/results/phase5/session-controlled-stop-roundoff-command-contraction-active32-brake64-dwell25-v1-20261016-attempt64/pure-math-attempt1/active_ACTIVE_zero"
+      ],
+      "CPU": 25,
+      "AS": 536870912,
+      "FSIZE": 16777216,
+      "wallcap": 30
+    },
+    {
+      "label": "stop_actual58_54_0",
+      "exit": 0,
+      "wall_s": 0.6687483169953339,
+      "argv": [
+        "/home/codextransfer/predictive_motion/results/phase5/session-controlled-stop-roundoff-command-contraction-active32-brake64-dwell25-v1-20261016-attempt64/pure-math-attempt1/replay",
+        "/home/codextransfer/predictive_motion/results/phase5/session-controlled-stop-merged-hint-diag-active32-brake64-dwell25-v2-20261016-attempt60/pure-math-attempt1/actual58_54_0.initialized.fixture",
+        "/home/codextransfer/predictive_motion/results/phase5/session-controlled-stop-roundoff-command-contraction-active32-brake64-dwell25-v1-20261016-attempt64/pure-math-attempt1/stop_actual58_54_0",
+        "54",
+        "0"
+      ],
+      "CPU": 25,
+      "AS": 536870912,
+      "FSIZE": 16777216,
+      "wallcap": 30
+    },
+    {
+      "label": "stop_actual58_74_0",
+      "exit": 0,
+      "wall_s": 0.5728533329966012,
+      "argv": [
+        "/home/codextransfer/predictive_motion/results/phase5/session-controlled-stop-roundoff-command-contraction-active32-brake64-dwell25-v1-20261016-attempt64/pure-math-attempt1/replay",
+        "/home/codextransfer/predictive_motion/results/phase5/pure-negative-two-cycle59-saved58-current74trial0-v1-20261016/actual58_current74_trial0.initialized.fixture",
+        "/home/codextransfer/predictive_motion/results/phase5/session-controlled-stop-roundoff-command-contraction-active32-brake64-dwell25-v1-20261016-attempt64/pure-math-attempt1/stop_actual58_74_0",
+        "74",
+        "0"
+      ],
+      "CPU": 25,
+      "AS": 536870912,
+      "FSIZE": 16777216,
+      "wallcap": 30
+    },
+    {
+      "label": "stop_actual60_43_0",
+      "exit": 0,
+      "wall_s": 1.5207779040065361,
+      "argv": [
+        "/home/codextransfer/predictive_motion/results/phase5/session-controlled-stop-roundoff-command-contraction-active32-brake64-dwell25-v1-20261016-attempt64/pure-math-attempt1/replay",
+        "/home/codextransfer/predictive_motion/results/phase5/pure-nonnegative-dual61-saved60-current43trial0-v1-20261016/actual60_current43_trial0.initialized.fixture",
+        "/home/codextransfer/predictive_motion/results/phase5/session-controlled-stop-roundoff-command-contraction-active32-brake64-dwell25-v1-20261016-attempt64/pure-math-attempt1/stop_actual60_43_0",
+        "43",
+        "0"
+      ],
+      "CPU": 25,
+      "AS": 536870912,
+      "FSIZE": 16777216,
+      "wallcap": 30
+    }
+  ],
+  "input_pins": {
+    "/home/codextransfer/predictive_motion/results/phase5/integrated-first-cycle-v1-20261010/build-attempt1/unit-7.o": {
+      "bytes": 293608,
+      "sha256": "313710e7ef8834c83739a9d1b3cdd121b7c49a3db63dc07978762f86af6a103f"
+    },
+    "/home/codextransfer/predictive_motion/results/phase5/pure-negative-two-cycle59-saved58-current74trial0-v1-20261016/actual58_current74_trial0.initialized.fixture": {
+      "bytes": 8800944,
+      "sha256": "ba0de80aaba82efd4cbac257bf89017a10494b322303a47dbffec04f03fdd5be"
+    },
+    "/home/codextransfer/predictive_motion/results/phase5/pure-nonnegative-dual61-saved60-current43trial0-v1-20261016/actual60_current43_trial0.initialized.fixture": {
+      "bytes": 8746048,
+      "sha256": "e8b14e198bafc29885419f2a42d54681d172b4ba1bd7f80aeca79f1044e43254"
+    },
+    "/home/codextransfer/predictive_motion/results/phase5/session-controlled-stop-global-interval-active32-brake64-dwell25-v1-20261016-attempt58/pure-math-attempt1/ACTIVE_constrained.fixture": {
+      "bytes": 304,
+      "sha256": "46b93423291ea9b598aa74768748d4379ecf029a91116dcbf564688f46745a7a"
+    },
+    "/home/codextransfer/predictive_motion/results/phase5/session-controlled-stop-global-interval-active32-brake64-dwell25-v1-20261016-attempt58/pure-math-attempt1/ACTIVE_interior.fixture": {
+      "bytes": 304,
+      "sha256": "0491f7bd5d1ee150855b6a7030cb21a77e3890c34c9315a7c399feb87792faed"
+    },
+    "/home/codextransfer/predictive_motion/results/phase5/session-controlled-stop-global-interval-active32-brake64-dwell25-v1-20261016-attempt58/pure-math-attempt1/ACTIVE_zero.fixture": {
+      "bytes": 304,
+      "sha256": "460ea8f8b1694dbf764630431741631db3a85726d93eaaefa3f5f8a68911c7a4"
+    },
+    "/home/codextransfer/predictive_motion/results/phase5/session-controlled-stop-global-interval-active32-brake64-dwell25-v1-20261016-attempt58/pure-math-attempt1/actual56_48_1.fixture": {
+      "bytes": 8748384,
+      "sha256": "069b99b19abe78a22a7845e65a94774ef66958e6f9a2ad573001061e77ea7b66"
+    },
+    "/home/codextransfer/predictive_motion/results/phase5/session-controlled-stop-global-interval-active32-brake64-dwell25-v1-20261016-attempt58/pure-math-attempt1/old52_40_0.fixture": {
+      "bytes": 8751888,
+      "sha256": "63adf752672de67a3842b39091157b476d3066a6e48de25dbe4bcc4da2514856"
+    },
+    "/home/codextransfer/predictive_motion/results/phase5/session-controlled-stop-global-interval-active32-brake64-dwell25-v1-20261016-attempt58/pure-math-attempt1/old53_40_1.fixture": {
+      "bytes": 8751888,
+      "sha256": "548579a0aa48ab67cc2eb2e73ed38b0da1765d23e4b1dd59ceb9a9e23882b190"
+    },
+    "/home/codextransfer/predictive_motion/results/phase5/session-controlled-stop-global-interval-active32-brake64-dwell25-v1-20261016-attempt58/pure-math-attempt1/old54_43_0.fixture": {
+      "bytes": 8746048,
+      "sha256": "1c7920a7d9f697fce28aea0fad3ea4c10fd34c17248853ea46c9296783680aa2"
+    },
+    "/home/codextransfer/predictive_motion/results/phase5/session-controlled-stop-global-interval-active32-brake64-dwell25-v1-20261016-attempt58/pure-math-attempt1/old55_40_2.fixture": {
+      "bytes": 8751888,
+      "sha256": "e8e8c1140e56a0ae2dd494c122eab5f21b4eacd477c67cb03e22b86b1e899f74"
+    },
+    "/home/codextransfer/predictive_motion/results/phase5/session-controlled-stop-merged-hint-diag-active32-brake64-dwell25-v2-20261016-attempt60/pure-math-attempt1/actual58_54_0.initialized.fixture": {
+      "bytes": 8763568,
+      "sha256": "fcc6ccbf3c01f4a27355f82f945727e1434930a073015d65ae4b0125b5992683"
+    },
+    "/home/codextransfer/predictive_motion/results/phase5/session-controlled-stop-roundoff-command-contraction-active32-brake64-dwell25-v1-20261016-attempt64/build-attempt1/unit-1.o": {
+      "bytes": 229040,
+      "sha256": "73a2c2e2d5dd45a4eb9cc1c198d09521f980682170b21ec102906e51329e2f6e"
+    },
+    "/home/codextransfer/predictive_motion/results/phase5/session-controlled-stop-roundoff-command-contraction-active32-brake64-dwell25-v1-20261016-attempt64/build-attempt1/unit-10.o": {
+      "bytes": 61144,
+      "sha256": "901f5612efb4f6bd965dc4cad396768af8baa4f0440403d356a454c02cfdd8ab"
+    },
+    "/home/codextransfer/predictive_motion/results/phase5/session-controlled-stop-roundoff-command-contraction-active32-brake64-dwell25-v1-20261016-attempt64/build-attempt1/unit-11.o": {
+      "bytes": 232640,
+      "sha256": "5c602e9bfd9c12c137aa25cc8303428676d50af4b3a4495449b83c5a3f3c0fac"
+    },
+    "/home/codextransfer/predictive_motion/results/phase5/session-controlled-stop-roundoff-command-contraction-active32-brake64-dwell25-v1-20261016-attempt64/build-attempt1/unit-12.o": {
+      "bytes": 220176,
+      "sha256": "cf0d76233097c0405065ae0ca4839d60c7ef11ad9c26c71ebf635834ea8dba75"
+    },
+    "/home/codextransfer/predictive_motion/results/phase5/session-controlled-stop-roundoff-command-contraction-active32-brake64-dwell25-v1-20261016-attempt64/build-attempt1/unit-16.o": {
+      "bytes": 7784,
+      "sha256": "1d5c887772a320038d0d18a3499a64df41cedaf08dbbcda63067bbba28c6e681"
+    },
+    "/home/codextransfer/predictive_motion/results/phase5/session-controlled-stop-roundoff-command-contraction-active32-brake64-dwell25-v1-20261016-attempt64/build-attempt1/unit-17.o": {
+      "bytes": 170904,
+      "sha256": "f50572962dbc462e99cb3a1e717e0b1951f6180ba79fd9fc03a732c5123b722b"
+    },
+    "/home/codextransfer/predictive_motion/results/phase5/session-controlled-stop-roundoff-command-contraction-active32-brake64-dwell25-v1-20261016-attempt64/build-attempt1/unit-18.o": {
+      "bytes": 60680,
+      "sha256": "b8168b0b7c3aac5356dc823095dd229a1b65eb8d37a5bcf690ff2486fce7fa91"
+    },
+    "/home/codextransfer/predictive_motion/results/phase5/session-controlled-stop-roundoff-command-contraction-active32-brake64-dwell25-v1-20261016-attempt64/build-attempt1/unit-19.o": {
+      "bytes": 228688,
+      "sha256": "70ed75cec28b4a9e941ab670d6d1ed995714f30075377693086ab3e6495297e6"
+    },
+    "/home/codextransfer/predictive_motion/results/phase5/session-controlled-stop-roundoff-command-contraction-active32-brake64-dwell25-v1-20261016-attempt64/build-attempt1/unit-2.o": {
+      "bytes": 89928,
+      "sha256": "73cb3304f9ec895477e7f917cef75b6c751a3b55e4d16737de5fb440b98acec7"
+    },
+    "/home/codextransfer/predictive_motion/results/phase5/session-controlled-stop-roundoff-command-contraction-active32-brake64-dwell25-v1-20261016-attempt64/build-attempt1/unit-20.o": {
+      "bytes": 31936,
+      "sha256": "83442fea1b59e95923fd15241374d00eb30e19e97d8db1858f75051cd01e23ac"
+    },
+    "/home/codextransfer/predictive_motion/results/phase5/session-controlled-stop-roundoff-command-contraction-active32-brake64-dwell25-v1-20261016-attempt64/build-attempt1/unit-21.o": {
+      "bytes": 45480,
+      "sha256": "e36e775bb9bc39b59fa411be7bf93657f137fdc05cff84b887ea6c90c2e1d2fa"
+    },
+    "/home/codextransfer/predictive_motion/results/phase5/session-controlled-stop-roundoff-command-contraction-active32-brake64-dwell25-v1-20261016-attempt64/build-attempt1/unit-22.o": {
+      "bytes": 44712,
+      "sha256": "26aefb38d4be25607f0a3077db05cd032369c2fd3e8ee257ad9ea96ec9dd6d83"
+    },
+    "/home/codextransfer/predictive_motion/results/phase5/session-controlled-stop-roundoff-command-contraction-active32-brake64-dwell25-v1-20261016-attempt64/build-attempt1/unit-23.o": {
+      "bytes": 37776,
+      "sha256": "c8d0151c93422070142d0899650514d579337909b13852f9c2b468acac2dd36b"
+    },
+    "/home/codextransfer/predictive_motion/results/phase5/session-controlled-stop-roundoff-command-contraction-active32-brake64-dwell25-v1-20261016-attempt64/build-attempt1/unit-24.o": {
+      "bytes": 97424,
+      "sha256": "b441764ba804d47adbbbd6196de04d14296319ff411be96c259b53919b9f0de1"
+    },
+    "/home/codextransfer/predictive_motion/results/phase5/session-controlled-stop-roundoff-command-contraction-active32-brake64-dwell25-v1-20261016-attempt64/build-attempt1/unit-25.o": {
+      "bytes": 165984,
+      "sha256": "d47620dfd54f20e37eebe367a6a4cd1342bd53fda2c8dc80d93da2463f7baf94"
+    },
+    "/home/codextransfer/predictive_motion/results/phase5/session-controlled-stop-roundoff-command-contraction-active32-brake64-dwell25-v1-20261016-attempt64/build-attempt1/unit-26.o": {
+      "bytes": 64784,
+      "sha256": "af6f3d65f1f861df8ed87841772328f128966d8ced533311b6dd079c362cf311"
+    },
+    "/home/codextransfer/predictive_motion/results/phase5/session-controlled-stop-roundoff-command-contraction-active32-brake64-dwell25-v1-20261016-attempt64/build-attempt1/unit-27.o": {
+      "bytes": 133960,
+      "sha256": "99b413a8c27137f004f04c672621648f5389a18c0a7d5ab22b388f28ca48c614"
+    },
+    "/home/codextransfer/predictive_motion/results/phase5/session-controlled-stop-roundoff-command-contraction-active32-brake64-dwell25-v1-20261016-attempt64/build-attempt1/unit-28.o": {
+      "bytes": 52296,
+      "sha256": "0ca12eb174f357ddc90f597ac12a751c105bccd4d897e83b5402271cee0b347e"
+    },
+    "/home/codextransfer/predictive_motion/results/phase5/session-controlled-stop-roundoff-command-contraction-active32-brake64-dwell25-v1-20261016-attempt64/build-attempt1/unit-29.o": {
+      "bytes": 198144,
+      "sha256": "6dd15ef94aad3bd1c8bf25cf454ccbd724d5a7ef6f1b89f0d7fffa8fa063b936"
+    },
+    "/home/codextransfer/predictive_motion/results/phase5/session-controlled-stop-roundoff-command-contraction-active32-brake64-dwell25-v1-20261016-attempt64/build-attempt1/unit-3.o": {
+      "bytes": 149416,
+      "sha256": "1c31f244782b9f8b01fbace7deb33220a018f62bb8631f250d2d5c9aad6df851"
+    },
+    "/home/codextransfer/predictive_motion/results/phase5/session-controlled-stop-roundoff-command-contraction-active32-brake64-dwell25-v1-20261016-attempt64/build-attempt1/unit-30.o": {
+      "bytes": 90640,
+      "sha256": "26caf874c56c89ba676ba88bec2eb4b92a1ed5ce6b198c0454dcf73f5a638056"
+    },
+    "/home/codextransfer/predictive_motion/results/phase5/session-controlled-stop-roundoff-command-contraction-active32-brake64-dwell25-v1-20261016-attempt64/build-attempt1/unit-31.o": {
+      "bytes": 75008,
+      "sha256": "a7e59537dc8b586b38c51261a73995d8502409c80e950b1d03d23d8e348b1c57"
+    },
+    "/home/codextransfer/predictive_motion/results/phase5/session-controlled-stop-roundoff-command-contraction-active32-brake64-dwell25-v1-20261016-attempt64/build-attempt1/unit-32.o": {
+      "bytes": 42464,
+      "sha256": "d6a764e8632de2a46cc9e239b58a32004866c2120e15bc587fa6b1f97afb7600"
+    },
+    "/home/codextransfer/predictive_motion/results/phase5/session-controlled-stop-roundoff-command-contraction-active32-brake64-dwell25-v1-20261016-attempt64/build-attempt1/unit-33.o": {
+      "bytes": 109200,
+      "sha256": "800826d5ab59f4afda84e047c413f1b1e3c85d6dd19f1b13926959218e9fff18"
+    },
+    "/home/codextransfer/predictive_motion/results/phase5/session-controlled-stop-roundoff-command-contraction-active32-brake64-dwell25-v1-20261016-attempt64/build-attempt1/unit-34.o": {
+      "bytes": 161688,
+      "sha256": "ccbd1c4939abe270c9c2d68ef54fa51e5e04a4fd3bec944e9d4c00fac2ae502c"
+    },
+    "/home/codextransfer/predictive_motion/results/phase5/session-controlled-stop-roundoff-command-contraction-active32-brake64-dwell25-v1-20261016-attempt64/build-attempt1/unit-35.o": {
+      "bytes": 61048,
+      "sha256": "bdd3103a66e6f6fd842322713791c1935feebd00b412e6414c4f83799ddb7ed0"
+    },
+    "/home/codextransfer/predictive_motion/results/phase5/session-controlled-stop-roundoff-command-contraction-active32-brake64-dwell25-v1-20261016-attempt64/build-attempt1/unit-36.o": {
+      "bytes": 75008,
+      "sha256": "eb1d7ee2856645308814b4919547973ad4afa597d10a83e83c4bb14e2b7e92cf"
+    },
+    "/home/codextransfer/predictive_motion/results/phase5/session-controlled-stop-roundoff-command-contraction-active32-brake64-dwell25-v1-20261016-attempt64/build-attempt1/unit-37.o": {
+      "bytes": 99336,
+      "sha256": "fd5d0b9d337b68ecf9905b976b9473af5ac9bb45d1d2f657eb521fcd0620de83"
+    },
+    "/home/codextransfer/predictive_motion/results/phase5/session-controlled-stop-roundoff-command-contraction-active32-brake64-dwell25-v1-20261016-attempt64/build-attempt1/unit-38.o": {
+      "bytes": 108824,
+      "sha256": "185bcfe4eeb88cf459134fb72f97135352979ad9ac23b23959182b7d1d15afa3"
+    },
+    "/home/codextransfer/predictive_motion/results/phase5/session-controlled-stop-roundoff-command-contraction-active32-brake64-dwell25-v1-20261016-attempt64/build-attempt1/unit-39.o": {
+      "bytes": 99176,
+      "sha256": "83e61702e1e8f6b6aba50d11760db49693c66fd7a1a1c202c627a0aa97be41c1"
+    },
+    "/home/codextransfer/predictive_motion/results/phase5/session-controlled-stop-roundoff-command-contraction-active32-brake64-dwell25-v1-20261016-attempt64/build-attempt1/unit-4.o": {
+      "bytes": 806608,
+      "sha256": "4857fb2b485aece53c7c6c5d26fa61ce2b15531c55cdcf5dbbeee2c55f23985f"
+    },
+    "/home/codextransfer/predictive_motion/results/phase5/session-controlled-stop-roundoff-command-contraction-active32-brake64-dwell25-v1-20261016-attempt64/build-attempt1/unit-40.o": {
+      "bytes": 238808,
+      "sha256": "4b098cf95a1b9d0c61d0835c2a7cccc1ca3813f1a9e5cb588fb7b28b46b94d2f"
+    },
+    "/home/codextransfer/predictive_motion/results/phase5/session-controlled-stop-roundoff-command-contraction-active32-brake64-dwell25-v1-20261016-attempt64/build-attempt1/unit-5.o": {
+      "bytes": 889288,
+      "sha256": "3973189fed5e089f9c2544f407b89300aa8820e594cd9b8bec15ca4dd660ed6f"
+    },
+    "/home/codextransfer/predictive_motion/results/phase5/session-controlled-stop-roundoff-command-contraction-active32-brake64-dwell25-v1-20261016-attempt64/build-attempt1/unit-6.o": {
+      "bytes": 15128,
+      "sha256": "449a550837f97427593febf02436de6d5c8abc0505ac28f292bfde9a983a5435"
+    },
+    "/home/codextransfer/predictive_motion/results/phase5/session-controlled-stop-roundoff-command-contraction-active32-brake64-dwell25-v1-20261016-attempt64/build-attempt1/unit-7.o": {
+      "bytes": 139768,
+      "sha256": "006a4a48431d7dc5ac4f9459288ce1d5280d9b8428cebf0ea6f03a1a698dffcd"
+    },
+    "/home/codextransfer/predictive_motion/results/phase5/session-controlled-stop-roundoff-command-contraction-active32-brake64-dwell25-v1-20261016-attempt64/build-attempt1/unit-8.o": {
+      "bytes": 876256,
+      "sha256": "edd2ef6a8929ccbdb5e499c8d9d495969d9dafec2fe877746014fcbd87823c2d"
+    },
+    "/home/codextransfer/predictive_motion/results/phase5/session-controlled-stop-roundoff-command-contraction-active32-brake64-dwell25-v1-20261016-attempt64/build-attempt1/unit-9.o": {
+      "bytes": 218128,
+      "sha256": "1a007f67742980bfddaf952bad8ea0e8006a1e6238f9a3429889a15a0a0da261"
+    },
+    "/home/codextransfer/predictive_motion/results/phase5/session-controlled-stop-roundoff-command-contraction-active32-brake64-dwell25-v1-20261016-attempt64/pure-math-attempt1/active.cpp": {
+      "bytes": 1957,
+      "sha256": "67974dd55a6888d93e01542de4b44104d8f256dee14ef2e101afacd8a1b30249"
+    },
+    "/home/codextransfer/predictive_motion/results/phase5/session-controlled-stop-roundoff-command-contraction-active32-brake64-dwell25-v1-20261016-attempt64/pure-math-attempt1/compile_link.json": {
+      "bytes": 125808,
+      "sha256": "9d5ad524eb062148cfbb64db6a9f6345d9aad80cc55bf23aabc9701b20e6d830"
+    },
+    "/home/codextransfer/predictive_motion/results/phase5/session-controlled-stop-roundoff-command-contraction-active32-brake64-dwell25-v1-20261016-attempt64/pure-math-attempt1/fixtures.json": {
+      "bytes": 2193,
+      "sha256": "07f2960844fecd2c8a1bfb3030e7724782689d4d642e904f946584174811c912"
+    },
+    "/home/codextransfer/predictive_motion/results/phase5/session-controlled-stop-roundoff-command-contraction-active32-brake64-dwell25-v1-20261016-attempt64/pure-math-attempt1/replay.cpp": {
+      "bytes": 5688,
+      "sha256": "2a30d4fcc3239be720fed67f0504ede71118ae5b7091b19b71d8e6fc1d7988e2"
+    },
+    "/home/codextransfer/predictive_motion/results/phase5/session-controlled-stop-roundoff-command-contraction-active32-brake64-dwell25-v1-20261016-attempt64/pure-math-attempt1/runner.py": {
+      "bytes": 3050,
+      "sha256": "2622f6dcc6e23534fa6bd02203ad116649e5b7546e8db217fdbc70f75b3e0599"
+    },
+    "/home/codextransfer/predictive_motion/results/phase5/session-controlled-stop-roundoff-command-contraction-active32-brake64-dwell25-v1-20261016-attempt64/src/README.md": {
+      "bytes": 4816,
+      "sha256": "0823349a83b8145f3703be06d372d523efa7729af0f713efa1c14a1685d5f3c5"
+    },
+    "/home/codextransfer/predictive_motion/results/phase5/session-controlled-stop-roundoff-command-contraction-active32-brake64-dwell25-v1-20261016-attempt64/src/SOURCE_IDENTITIES.json": {
+      "bytes": 14306,
+      "sha256": "2b3df229b4ca8f1ab30c1fcbc48ecd5aa0ed6f59aad66d7ff6614b7da644e0d8"
+    },
+    "/home/codextransfer/predictive_motion/results/phase5/session-controlled-stop-roundoff-command-contraction-active32-brake64-dwell25-v1-20261016-attempt64/src/active_first_cycle.cpp": {
+      "bytes": 56477,
+      "sha256": "b892be6a3eb5b49e3d76c04ec5033cbb470d9b027ac13461c03afeb693974954"
+    },
+    "/home/codextransfer/predictive_motion/results/phase5/session-controlled-stop-roundoff-command-contraction-active32-brake64-dwell25-v1-20261016-attempt64/src/actual_stop_monitor.hpp": {
+      "bytes": 3580,
+      "sha256": "beaf7d76164638ebe035c9961a9f6a940becac7a62395444c55e301c006d0a4c"
+    },
+    "/home/codextransfer/predictive_motion/results/phase5/session-controlled-stop-roundoff-command-contraction-active32-brake64-dwell25-v1-20261016-attempt64/src/actual_stop_monitor_tests.cpp": {
+      "bytes": 3830,
+      "sha256": "cd56b9dc8dff809d10eb8ada519d37c551b9347c64d0c6500d05683fb3e9b5af"
+    },
+    "/home/codextransfer/predictive_motion/results/phase5/session-controlled-stop-roundoff-command-contraction-active32-brake64-dwell25-v1-20261016-attempt64/src/actual_task_metrics.hpp": {
+      "bytes": 1883,
+      "sha256": "83bb0f21e0bfa830b4d8f7e356f9f7c2ce916c49d540c948588d5e460e07d900"
+    },
+    "/home/codextransfer/predictive_motion/results/phase5/session-controlled-stop-roundoff-command-contraction-active32-brake64-dwell25-v1-20261016-attempt64/src/actual_task_metrics_tests.cpp": {
+      "bytes": 1359,
+      "sha256": "00bea8673e19abc62233e5933722eae94c35b7540d4f3d2c5e609dc2a83b374c"
+    },
+    "/home/codextransfer/predictive_motion/results/phase5/session-controlled-stop-roundoff-command-contraction-active32-brake64-dwell25-v1-20261016-attempt64/src/affine_assembly.cpp": {
+      "bytes": 28981,
+      "sha256": "d478eda1f0fe97bfc41851515f4baa3e485fd4a57968a62dcb6233ae1157bbd5"
+    },
+    "/home/codextransfer/predictive_motion/results/phase5/session-controlled-stop-roundoff-command-contraction-active32-brake64-dwell25-v1-20261016-attempt64/src/affine_assembly.hpp": {
+      "bytes": 6026,
+      "sha256": "6faee2961242052c7655da41e8988dd0844f14c3cfa885672aa7c03eaa1dcb57"
+    },
+    "/home/codextransfer/predictive_motion/results/phase5/session-controlled-stop-roundoff-command-contraction-active32-brake64-dwell25-v1-20261016-attempt64/src/boundary_retention_codec_tests.cpp": {
+      "bytes": 3137,
+      "sha256": "52bd351c91922c6fe6c5ad2f6ba1371a44c553e0aea005f75552cf5ca5368098"
+    },
+    "/home/codextransfer/predictive_motion/results/phase5/session-controlled-stop-roundoff-command-contraction-active32-brake64-dwell25-v1-20261016-attempt64/src/boundary_retention_limits57.hpp": {
+      "bytes": 3043,
+      "sha256": "1165b30678843fc54dfcf3f87804f4f945a452b5005075a4d4ad32970251fb72"
+    },
+    "/home/codextransfer/predictive_motion/results/phase5/session-controlled-stop-roundoff-command-contraction-active32-brake64-dwell25-v1-20261016-attempt64/src/bounded_current_trials.hpp": {
+      "bytes": 2347,
+      "sha256": "4d7663f1dbc75bd125ca5319817f6b2b363222310ce337f06f0a468e1cd8ef61"
+    },
+    "/home/codextransfer/predictive_motion/results/phase5/session-controlled-stop-roundoff-command-contraction-active32-brake64-dwell25-v1-20261016-attempt64/src/bounded_current_trials_tests.cpp": {
+      "bytes": 1724,
+      "sha256": "dc8ce680a0c19249c3462003f23f80e2f4dba5a58a7a921de851bff5074fb23b"
+    },
+    "/home/codextransfer/predictive_motion/results/phase5/session-controlled-stop-roundoff-command-contraction-active32-brake64-dwell25-v1-20261016-attempt64/src/bounded_flat_progress_seed_tests.cpp": {
+      "bytes": 6001,
+      "sha256": "dcf9081d258d88f64f10935df307f3f4b619d6677986ecac7e62ddc872faeb65"
+    },
+    "/home/codextransfer/predictive_motion/results/phase5/session-controlled-stop-roundoff-command-contraction-active32-brake64-dwell25-v1-20261016-attempt64/src/bounded_flat_progress_seed_v4.hpp": {
+      "bytes": 4855,
+      "sha256": "0365f8fc9035c0be9f778adc92702339aa1bd297caadb82836a5a53e388f8fd4"
+    },
+    "/home/codextransfer/predictive_motion/results/phase5/session-controlled-stop-roundoff-command-contraction-active32-brake64-dwell25-v1-20261016-attempt64/src/bounded_global_interval_seed_v6.hpp": {
+      "bytes": 10754,
+      "sha256": "a4f239ab1f31a3a3ca9f56e73feec8dfd52d2f12695165a296f1126322c47a6a"
+    },
+    "/home/codextransfer/predictive_motion/results/phase5/session-controlled-stop-roundoff-command-contraction-active32-brake64-dwell25-v1-20261016-attempt64/src/bounded_progress_seed.hpp": {
+      "bytes": 4309,
+      "sha256": "6dc1d317db9504ec248dda3f04ef2917bd4850de027c032575eff5d0f39c4ff0"
+    },
+    "/home/codextransfer/predictive_motion/results/phase5/session-controlled-stop-roundoff-command-contraction-active32-brake64-dwell25-v1-20261016-attempt64/src/bounded_progress_seed_tests.cpp": {
+      "bytes": 2670,
+      "sha256": "78d76a69ced03c25e90242203e3ef5d61a858ada18d8fd1ee854d76b53f965d3"
+    },
+    "/home/codextransfer/predictive_motion/results/phase5/session-controlled-stop-roundoff-command-contraction-active32-brake64-dwell25-v1-20261016-attempt64/src/bounded_row_progress_seed_tests.cpp": {
+      "bytes": 7690,
+      "sha256": "0be38cd032a886767830f2cb3249fb1d929f188ea50fd6c436b2ffee08d561bd"
+    },
+    "/home/codextransfer/predictive_motion/results/phase5/session-controlled-stop-roundoff-command-contraction-active32-brake64-dwell25-v1-20261016-attempt64/src/bounded_row_progress_seed_v5.hpp": {
+      "bytes": 7364,
+      "sha256": "15d83707fac469d2f4ff404a12c9d46dc994acd57d56c0ad49f3de45f435238d"
+    },
+    "/home/codextransfer/predictive_motion/results/phase5/session-controlled-stop-roundoff-command-contraction-active32-brake64-dwell25-v1-20261016-attempt64/src/box_screen_tests.cpp": {
+      "bytes": 2954,
+      "sha256": "d922876babec2867dd1293bcee259ac12e4b2a6af5a30dd551209e097c0abaf8"
+    },
+    "/home/codextransfer/predictive_motion/results/phase5/session-controlled-stop-roundoff-command-contraction-active32-brake64-dwell25-v1-20261016-attempt64/src/braking_nominal62_codec.hpp": {
+      "bytes": 4779,
+      "sha256": "186a7698b9e4fbc4b9452253aff93a1a3b48c601ba8763ee2115d902f6f7d8f3"
+    },
+    "/home/codextransfer/predictive_motion/results/phase5/session-controlled-stop-roundoff-command-contraction-active32-brake64-dwell25-v1-20261016-attempt64/src/braking_nominal63_codec.hpp": {
+      "bytes": 4938,
+      "sha256": "7c7aa4d4646f2fc0a3afff8670e1546e912d9442163a4b22a44a8613f4523e8f"
+    },
+    "/home/codextransfer/predictive_motion/results/phase5/session-controlled-stop-roundoff-command-contraction-active32-brake64-dwell25-v1-20261016-attempt64/src/candidate_validation.cpp": {
+      "bytes": 10659,
+      "sha256": "aa76869432f465e45c48acf777913eea5972414a145eedbf02645035773f63e9"
+    },
+    "/home/codextransfer/predictive_motion/results/phase5/session-controlled-stop-roundoff-command-contraction-active32-brake64-dwell25-v1-20261016-attempt64/src/candidate_validation.hpp": {
+      "bytes": 1526,
+      "sha256": "d816bedb47cff25c49a0d5577a9fa805771816caa1dc406d4772c1ee843fe4fa"
+    },
+    "/home/codextransfer/predictive_motion/results/phase5/session-controlled-stop-roundoff-command-contraction-active32-brake64-dwell25-v1-20261016-attempt64/src/counted_geometry.hpp": {
+      "bytes": 7359,
+      "sha256": "aede8b1a2b4f5a17e00c7fd477a3db0e9264eab2539c7aa20eb97f62959d9401"
+    },
+    "/home/codextransfer/predictive_motion/results/phase5/session-controlled-stop-roundoff-command-contraction-active32-brake64-dwell25-v1-20261016-attempt64/src/current_alpha_trust.hpp": {
+      "bytes": 4084,
+      "sha256": "e22e52d912cce18c61aaba4a907a92117853d047020a5bc0a614cb663fd83e78"
+    },
+    "/home/codextransfer/predictive_motion/results/phase5/session-controlled-stop-roundoff-command-contraction-active32-brake64-dwell25-v1-20261016-attempt64/src/current_alpha_trust_tests.cpp": {
+      "bytes": 2903,
+      "sha256": "adb42a13804dd8ccfd6fc665cdd37aab5a33ab990ca5ac5ae1ac31450ea9a04d"
+    },
+    "/home/codextransfer/predictive_motion/results/phase5/session-controlled-stop-roundoff-command-contraction-active32-brake64-dwell25-v1-20261016-attempt64/src/current_braking_nominal62.hpp": {
+      "bytes": 9401,
+      "sha256": "00d0e83bf68cdaf2251701a0c7b422e93629d97bcae0e398c6404775d304e5a7"
+    },
+    "/home/codextransfer/predictive_motion/results/phase5/session-controlled-stop-roundoff-command-contraction-active32-brake64-dwell25-v1-20261016-attempt64/src/current_braking_nominal62_tests.cpp": {
+      "bytes": 9306,
+      "sha256": "e738285cc7c7cbe729acb4f3a19ec866f3016036458c2319319a74c430d06134"
+    },
+    "/home/codextransfer/predictive_motion/results/phase5/session-controlled-stop-roundoff-command-contraction-active32-brake64-dwell25-v1-20261016-attempt64/src/current_braking_nominal63.hpp": {
+      "bytes": 10721,
+      "sha256": "76e157bad87f66e24e760908a2d05613e8a2eab073689fffe4cde359c96e95e0"
+    },
+    "/home/codextransfer/predictive_motion/results/phase5/session-controlled-stop-roundoff-command-contraction-active32-brake64-dwell25-v1-20261016-attempt64/src/current_braking_nominal63_tests.cpp": {
+      "bytes": 9233,
+      "sha256": "13c2a14385d031882b8db7ad48e35eb7be9bc7292a48793070211fc90134b375"
+    },
+    "/home/codextransfer/predictive_motion/results/phase5/session-controlled-stop-roundoff-command-contraction-active32-brake64-dwell25-v1-20261016-attempt64/src/current_numeric_guess.hpp": {
+      "bytes": 14409,
+      "sha256": "c61a9845c4d805a2a39539cee4c8882e6db679ae81b4b25ea87cff15ece87fd3"
+    },
+    "/home/codextransfer/predictive_motion/results/phase5/session-controlled-stop-roundoff-command-contraction-active32-brake64-dwell25-v1-20261016-attempt64/src/current_numeric_guess_before_endpoint_capacity48.hpp": {
+      "bytes": 9313,
+      "sha256": "60b45d2dcb7b7539d8b8120fe3d0a96c3c6a27b3f79c6f3fc246561876b1c450"
+    },
+    "/home/codextransfer/predictive_motion/results/phase5/session-controlled-stop-roundoff-command-contraction-active32-brake64-dwell25-v1-20261016-attempt64/src/current_numeric_guess_before_fraction_repair39.hpp": {
+      "bytes": 4718,
+      "sha256": "bb935c5cbc1c3a09717142947d285b8f2009fe8ae8e47d433703dc815a322972"
+    },
+    "/home/codextransfer/predictive_motion/results/phase5/session-controlled-stop-roundoff-command-contraction-active32-brake64-dwell25-v1-20261016-attempt64/src/current_numeric_guess_before_rank_repair43.hpp": {
+      "bytes": 5930,
+      "sha256": "6347f1499b3ef91ceaea247035664bb52e1e3cd09cfdf168380861610e502999"
+    },
+    "/home/codextransfer/predictive_motion/results/phase5/session-controlled-stop-roundoff-command-contraction-active32-brake64-dwell25-v1-20261016-attempt64/src/current_numeric_guess_before_working_basis_repair47.hpp": {
+      "bytes": 7368,
+      "sha256": "f3009331a4da83edc27faaefbf3c9a3af8ad4cdaaa4cd578843d60bd31fabfa6"
+    },
+    "/home/codextransfer/predictive_motion/results/phase5/session-controlled-stop-roundoff-command-contraction-active32-brake64-dwell25-v1-20261016-attempt64/src/current_numeric_oracle.cpp": {
+      "bytes": 1845,
+      "sha256": "43e2f0fc6cab95382ff9741669f82d21d43670db633088c6141106bf40a95cac"
+    },
+    "/home/codextransfer/predictive_motion/results/phase5/session-controlled-stop-roundoff-command-contraction-active32-brake64-dwell25-v1-20261016-attempt64/src/current_numeric_tests.cpp": {
+      "bytes": 3100,
+      "sha256": "f915a7eec36722e45268d443af9bee310fdb1e9a3720c9250b8dca1d0993abf9"
+    },
+    "/home/codextransfer/predictive_motion/results/phase5/session-controlled-stop-roundoff-command-contraction-active32-brake64-dwell25-v1-20261016-attempt64/src/cycle_support.hpp": {
+      "bytes": 7265,
+      "sha256": "f73f3726bc9bfafd2a0a1102b0f679b1144e23cc0fce60fe2ec1c588bd623991"
+    },
+    "/home/codextransfer/predictive_motion/results/phase5/session-controlled-stop-roundoff-command-contraction-active32-brake64-dwell25-v1-20261016-attempt64/src/cycle_support_tests.cpp": {
+      "bytes": 7461,
+      "sha256": "fd5e44a1cf39785555b2eef4e9d46e1ef26435ce8976a7660ce3a06a3dbad5a5"
+    },
+    "/home/codextransfer/predictive_motion/results/phase5/session-controlled-stop-roundoff-command-contraction-active32-brake64-dwell25-v1-20261016-attempt64/src/evidence_buffer_tests.cpp": {
+      "bytes": 6554,
+      "sha256": "a3dcddee70a0ad8c5b71ee3ee51b26a762f5b07feb87bcb47fcf8407e124bee7"
+    },
+    "/home/codextransfer/predictive_motion/results/phase5/session-controlled-stop-roundoff-command-contraction-active32-brake64-dwell25-v1-20261016-attempt64/src/evidence_compression_tests.cpp": {
+      "bytes": 7645,
+      "sha256": "cbc733b9990d09e4da624ae520a40ff705545c8d49993086a797116617917aea"
+    },
+    "/home/codextransfer/predictive_motion/results/phase5/session-controlled-stop-roundoff-command-contraction-active32-brake64-dwell25-v1-20261016-attempt64/src/exact_cycle_endpoint61.hpp": {
+      "bytes": 3543,
+      "sha256": "400a0fbd0ccf9521300673408ad547816dd7d4af40e8e3f6647adf8f0b964f37"
+    },
+    "/home/codextransfer/predictive_motion/results/phase5/session-controlled-stop-roundoff-command-contraction-active32-brake64-dwell25-v1-20261016-attempt64/src/exact_cycle_endpoint61_tests.cpp": {
+      "bytes": 6899,
+      "sha256": "1ba4453d22aa1c3102e2b2aed12ec42e97e8265cd73a95337cc11933db9221bf"
+    },
+    "/home/codextransfer/predictive_motion/results/phase5/session-controlled-stop-roundoff-command-contraction-active32-brake64-dwell25-v1-20261016-attempt64/src/fine_timing.hpp": {
+      "bytes": 1160,
+      "sha256": "17e519005d4740fdf78b85029ece68cf70f75f9f111fc2130061d45acece7f07"
+    },
+    "/home/codextransfer/predictive_motion/results/phase5/session-controlled-stop-roundoff-command-contraction-active32-brake64-dwell25-v1-20261016-attempt64/src/fine_timing_tests.cpp": {
+      "bytes": 1251,
+      "sha256": "fc29f2387722763c6601aef677dabfc1685d958093fa799a34452c33aa1c482f"
+    },
+    "/home/codextransfer/predictive_motion/results/phase5/session-controlled-stop-roundoff-command-contraction-active32-brake64-dwell25-v1-20261016-attempt64/src/flat_progress_seed_codec.hpp": {
+      "bytes": 7863,
+      "sha256": "8cd4ea7557e0b6a08595a8f7d64dfeff45f9fdf2a595277d2f2d13df023f4951"
+    },
+    "/home/codextransfer/predictive_motion/results/phase5/session-controlled-stop-roundoff-command-contraction-active32-brake64-dwell25-v1-20261016-attempt64/src/flat_progress_seed_codec_tests.cpp": {
+      "bytes": 7506,
+      "sha256": "f4e196dba28f8c411e66897a62840855cd95a168e1a9138cdec2c628c60e8461"
+    },
+    "/home/codextransfer/predictive_motion/results/phase5/session-controlled-stop-roundoff-command-contraction-active32-brake64-dwell25-v1-20261016-attempt64/src/fraction_repair_regression.cpp": {
+      "bytes": 2199,
+      "sha256": "6377f1275266aa159c740acc95cf559a475bc447dbf1eeadcead115d3bb13a5e"
+    },
+    "/home/codextransfer/predictive_motion/results/phase5/session-controlled-stop-roundoff-command-contraction-active32-brake64-dwell25-v1-20261016-attempt64/src/global_interval_codec_tests.cpp": {
+      "bytes": 4078,
+      "sha256": "fcddfd8078ca39f0a3284a54f26080f1ed0c17f3bc87d55c9d95b8bc470cad96"
+    },
+    "/home/codextransfer/predictive_motion/results/phase5/session-controlled-stop-roundoff-command-contraction-active32-brake64-dwell25-v1-20261016-attempt64/src/global_interval_progress_seed_codec.hpp": {
+      "bytes": 13513,
+      "sha256": "170e2047f6c375c2612983a67df308a682cdf7e8f88a5fa487f7e0b91b775c6d"
+    },
+    "/home/codextransfer/predictive_motion/results/phase5/session-controlled-stop-roundoff-command-contraction-active32-brake64-dwell25-v1-20261016-attempt64/src/global_interval_seed_tests.cpp": {
+      "bytes": 7641,
+      "sha256": "96973a77ef05fa95927cc9ebb685ed44b330ecd58fdbda7cb64fe8c1c8ae7f67"
+    },
+    "/home/codextransfer/predictive_motion/results/phase5/session-controlled-stop-roundoff-command-contraction-active32-brake64-dwell25-v1-20261016-attempt64/src/hint_boundary_event_codec.hpp": {
+      "bytes": 1694,
+      "sha256": "9d121462d0328495e1d8505f596162dd807f0b7e726b701dd0c51ade50c2eaa9"
+    },
+    "/home/codextransfer/predictive_motion/results/phase5/session-controlled-stop-roundoff-command-contraction-active32-brake64-dwell25-v1-20261016-attempt64/src/integrated_horizon_qp.cpp": {
+      "bytes": 162807,
+      "sha256": "41191679d5b0f1495d605169c8e3436909f51b131197e6c625ba8e52aa563f1a"
+    },
+    "/home/codextransfer/predictive_motion/results/phase5/session-controlled-stop-roundoff-command-contraction-active32-brake64-dwell25-v1-20261016-attempt64/src/integrated_horizon_qp.hpp": {
+      "bytes": 13302,
+      "sha256": "a85da325895d2a4e55d455bf9e1f83b2655c9d5b33dc613e3e4591a93ff4a744"
+    },
+    "/home/codextransfer/predictive_motion/results/phase5/session-controlled-stop-roundoff-command-contraction-active32-brake64-dwell25-v1-20261016-attempt64/src/invariant_tests.cpp": {
+      "bytes": 4721,
+      "sha256": "f5a859d4cf9d79a5ae1b533b8dd62776f2bba6599dfdf691a2915ef3296a33f9"
+    },
+    "/home/codextransfer/predictive_motion/results/phase5/session-controlled-stop-roundoff-command-contraction-active32-brake64-dwell25-v1-20261016-attempt64/src/kkt_refinement_tests.cpp": {
+      "bytes": 2090,
+      "sha256": "297654dc72a914ff6705a7c1a4eef49efa5d821eb1b4df4519c09f547bbf5334"
+    },
+    "/home/codextransfer/predictive_motion/results/phase5/session-controlled-stop-roundoff-command-contraction-active32-brake64-dwell25-v1-20261016-attempt64/src/latest_numeric_context.hpp": {
+      "bytes": 500,
+      "sha256": "717bb483f24e9fdc09cb835c43a96b4b8c28c03007ed384be6436398cb262b48"
+    },
+    "/home/codextransfer/predictive_motion/results/phase5/session-controlled-stop-roundoff-command-contraction-active32-brake64-dwell25-v1-20261016-attempt64/src/linear_box_screen.hpp": {
+      "bytes": 3916,
+      "sha256": "b649eff43293a3078b7b46a0166fa0f8a2ac59f3a8496c8c73a98c275fed96d1"
+    },
+    "/home/codextransfer/predictive_motion/results/phase5/session-controlled-stop-roundoff-command-contraction-active32-brake64-dwell25-v1-20261016-attempt64/src/lossless_evidence.cpp": {
+      "bytes": 21906,
+      "sha256": "a75d258b34592ba6e9dbad93ea82a967cf14bd9e66f2469a6293dffe1a2bd09b"
+    },
+    "/home/codextransfer/predictive_motion/results/phase5/session-controlled-stop-roundoff-command-contraction-active32-brake64-dwell25-v1-20261016-attempt64/src/lossless_evidence.hpp": {
+      "bytes": 2890,
+      "sha256": "b5c2b722e55bfddfefeac3a3c7086064b0bd57a167409c0e775c42b12135e176"
+    },
+    "/home/codextransfer/predictive_motion/results/phase5/session-controlled-stop-roundoff-command-contraction-active32-brake64-dwell25-v1-20261016-attempt64/src/lossless_stream_storage_tests.cpp": {
+      "bytes": 6650,
+      "sha256": "597ca1e80987424674b98695c1f212c23179eb1a54cb32a2928a82b1b35097b5"
+    },
+    "/home/codextransfer/predictive_motion/results/phase5/session-controlled-stop-roundoff-command-contraction-active32-brake64-dwell25-v1-20261016-attempt64/src/lossless_stream_storage_v4.hpp": {
+      "bytes": 5712,
+      "sha256": "0eae3792c82b6c95c16470759652ddf0f1a3fde05ecfa76949599e523720bd93"
+    },
+    "/home/codextransfer/predictive_motion/results/phase5/session-controlled-stop-roundoff-command-contraction-active32-brake64-dwell25-v1-20261016-attempt64/src/merged_cycle_diagnostics61.hpp": {
+      "bytes": 4769,
+      "sha256": "04682064d91463a8b39b437cf1ba36540059911640d949f657c646b56dc3f4da"
+    },
+    "/home/codextransfer/predictive_motion/results/phase5/session-controlled-stop-roundoff-command-contraction-active32-brake64-dwell25-v1-20261016-attempt64/src/merged_hint_diagnostics60.hpp": {
+      "bytes": 3669,
+      "sha256": "df403ddd881c80ea5ee186dcdd760c6e14b99190316d5d148fa30efa557f92a9"
+    },
+    "/home/codextransfer/predictive_motion/results/phase5/session-controlled-stop-roundoff-command-contraction-active32-brake64-dwell25-v1-20261016-attempt64/src/merged_hint_diagnostics60_tests.cpp": {
+      "bytes": 4504,
+      "sha256": "ce1edfcdc54e3ff74b126a7099c485caf8fbdab85d0c264233d22e6d5b2a506b"
+    },
+    "/home/codextransfer/predictive_motion/results/phase5/session-controlled-stop-roundoff-command-contraction-active32-brake64-dwell25-v1-20261016-attempt64/src/model_boundary.cpp": {
+      "bytes": 21644,
+      "sha256": "05d68f4a05ec1d9c0c1c57695a3209758037e736de90c7be5a791e27e3902d98"
+    },
+    "/home/codextransfer/predictive_motion/results/phase5/session-controlled-stop-roundoff-command-contraction-active32-brake64-dwell25-v1-20261016-attempt64/src/model_boundary.hpp": {
+      "bytes": 4554,
+      "sha256": "b7d3849502e5c5a53618532b6892e264833adc8d78bd45c850da9c1d9533131d"
+    },
+    "/home/codextransfer/predictive_motion/results/phase5/session-controlled-stop-roundoff-command-contraction-active32-brake64-dwell25-v1-20261016-attempt64/src/negative_leaving59.hpp": {
+      "bytes": 1716,
+      "sha256": "b6c0342d3538e49d2a6bf9f2a73ded8eadc48db59a541e1d8566b8ca0bb10eb4"
+    },
+    "/home/codextransfer/predictive_motion/results/phase5/session-controlled-stop-roundoff-command-contraction-active32-brake64-dwell25-v1-20261016-attempt64/src/negative_leaving59_tests.cpp": {
+      "bytes": 4196,
+      "sha256": "e8fd6b317bba6141941bdfc9b1011e7ed3ed987b505a04af9a8e294da258442c"
+    },
+    "/home/codextransfer/predictive_motion/results/phase5/session-controlled-stop-roundoff-command-contraction-active32-brake64-dwell25-v1-20261016-attempt64/src/negative_leaving_codec59.hpp": {
+      "bytes": 4138,
+      "sha256": "bade3173dd42108713c7aa8bcf935bf22699a98d948b56fff87de5eda5d9b7f5"
+    },
+    "/home/codextransfer/predictive_motion/results/phase5/session-controlled-stop-roundoff-command-contraction-active32-brake64-dwell25-v1-20261016-attempt64/src/nominal_geometry_provider.hpp": {
+      "bytes": 3544,
+      "sha256": "7269a27ae1cdf5d623b726a52092adb074df8c6e032bcc1cd2c4845acafaf498"
+    },
+    "/home/codextransfer/predictive_motion/results/phase5/session-controlled-stop-roundoff-command-contraction-active32-brake64-dwell25-v1-20261016-attempt64/src/nominal_geometry_selection.hpp": {
+      "bytes": 2524,
+      "sha256": "6a41cc80feca43509d234c5aaf70e9a4c4de77abfa9b8eabfec6b6541b7711fa"
+    },
+    "/home/codextransfer/predictive_motion/results/phase5/session-controlled-stop-roundoff-command-contraction-active32-brake64-dwell25-v1-20261016-attempt64/src/normalization.cpp": {
+      "bytes": 23976,
+      "sha256": "a0cd0c9cdb505f922f1744f24cf115057b6ba9f3a9bc1b3ed0c9bdb82d358ed5"
+    },
+    "/home/codextransfer/predictive_motion/results/phase5/session-controlled-stop-roundoff-command-contraction-active32-brake64-dwell25-v1-20261016-attempt64/src/normalization.hpp": {
+      "bytes": 4288,
+      "sha256": "9456be5c205f23d2aa2210eac02286d030204a446af003ee85362b971ccb43d8"
+    },
+    "/home/codextransfer/predictive_motion/results/phase5/session-controlled-stop-roundoff-command-contraction-active32-brake64-dwell25-v1-20261016-attempt64/src/observer_tests.cpp": {
+      "bytes": 3834,
+      "sha256": "18bef19661326132aac7396998b07395acd20e83c69b70b520fea855915b5e83"
+    },
+    "/home/codextransfer/predictive_motion/results/phase5/session-controlled-stop-roundoff-command-contraction-active32-brake64-dwell25-v1-20261016-attempt64/src/owner_binding.hpp": {
+      "bytes": 745,
+      "sha256": "26a058244f7ef8f6d9353857637270623e18e706a061bccc3be4cffb66a54354"
+    },
+    "/home/codextransfer/predictive_motion/results/phase5/session-controlled-stop-roundoff-command-contraction-active32-brake64-dwell25-v1-20261016-attempt64/src/owner_binding_tests.cpp": {
+      "bytes": 832,
+      "sha256": "891c6b39bf5a9d23c581f6c25a60876cc336c0f299d79239c06cdd04ac447fd4"
+    },
+    "/home/codextransfer/predictive_motion/results/phase5/session-controlled-stop-roundoff-command-contraction-active32-brake64-dwell25-v1-20261016-attempt64/src/progress_interior_guard.hpp": {
+      "bytes": 4089,
+      "sha256": "03fde0d535b571890b166fef3cf08a91dfa4c848fddeb17105562f40980eab73"
+    },
+    "/home/codextransfer/predictive_motion/results/phase5/session-controlled-stop-roundoff-command-contraction-active32-brake64-dwell25-v1-20261016-attempt64/src/progress_interior_guard_tests.cpp": {
+      "bytes": 2560,
+      "sha256": "7ea392de6be2289fa86d0524c55827e20bc7e6e0c2f419a886051c6c67cc47b7"
+    },
+    "/home/codextransfer/predictive_motion/results/phase5/session-controlled-stop-roundoff-command-contraction-active32-brake64-dwell25-v1-20261016-attempt64/src/roundoff_command64.hpp": {
+      "bytes": 3032,
+      "sha256": "c0c0a9eee1b12a6faa8ba6e76b828b35eb0a1ada9793b4d6bff4585a526220b3"
+    },
+    "/home/codextransfer/predictive_motion/results/phase5/session-controlled-stop-roundoff-command-contraction-active32-brake64-dwell25-v1-20261016-attempt64/src/roundoff_command64_tests.cpp": {
+      "bytes": 2864,
+      "sha256": "59095638206c9cabfcfbafda4aea705e40374d497d5c4a118cf01f86f59dd1ef"
+    },
+    "/home/codextransfer/predictive_motion/results/phase5/session-controlled-stop-roundoff-command-contraction-active32-brake64-dwell25-v1-20261016-attempt64/src/roundoff_merged64_codec.hpp": {
+      "bytes": 5173,
+      "sha256": "477fbebe7ce3218e00963189de8cee12dbb2fa5adb73531779b61571300f749a"
+    },
+    "/home/codextransfer/predictive_motion/results/phase5/session-controlled-stop-roundoff-command-contraction-active32-brake64-dwell25-v1-20261016-attempt64/src/runtime_observer.cpp": {
+      "bytes": 37768,
+      "sha256": "3370439af398e3f6c425750712ff4df9acf2f0166d072fc9b35cecca2761bd72"
+    },
+    "/home/codextransfer/predictive_motion/results/phase5/session-controlled-stop-roundoff-command-contraction-active32-brake64-dwell25-v1-20261016-attempt64/src/runtime_observer.hpp": {
+      "bytes": 9121,
+      "sha256": "b6f9098a00ccecfc6104a655d3e6897cb35ffb030c96dab252dfdcfacab0d278"
+    },
+    "/home/codextransfer/predictive_motion/results/phase5/session-controlled-stop-roundoff-command-contraction-active32-brake64-dwell25-v1-20261016-attempt64/src/session_primitives.hpp": {
+      "bytes": 2259,
+      "sha256": "0b76bc232ed81dc9b4831617ae1690cfc287def914b8bca5f05ce6e6e25b6080"
+    },
+    "/home/codextransfer/predictive_motion/results/phase5/session-controlled-stop-roundoff-command-contraction-active32-brake64-dwell25-v1-20261016-attempt64/src/solver_forensics.cpp": {
+      "bytes": 26514,
+      "sha256": "664c1d480e23c1ddef4f45a57165cba871213740329f8693c897d7c07ee7af27"
+    },
+    "/home/codextransfer/predictive_motion/results/phase5/session-controlled-stop-roundoff-command-contraction-active32-brake64-dwell25-v1-20261016-attempt64/src/solver_forensics.hpp": {
+      "bytes": 860,
+      "sha256": "02b3a3d33ea64a351b228b96b2e0590b7a79fb4e9b87da78dc28c59465aca3bb"
+    },
+    "/home/codextransfer/predictive_motion/results/phase5/session-controlled-stop-roundoff-command-contraction-active32-brake64-dwell25-v1-20261016-attempt64/src/stop_objective_factors.hpp": {
+      "bytes": 601,
+      "sha256": "08506d74ccb15a684b4ba0e68c935340085fd56d15df7cd12689cc7fc0acb544"
+    },
+    "/home/codextransfer/predictive_motion/results/phase5/session-controlled-stop-roundoff-command-contraction-active32-brake64-dwell25-v1-20261016-attempt64/src/stop_tail_byte_bound.hpp": {
+      "bytes": 1435,
+      "sha256": "2233d0e8441726c50ea97b8dcc0108b49e8c3e11d00b8add122ee34d3b6c05a9"
+    },
+    "/home/codextransfer/predictive_motion/results/phase5/session-controlled-stop-roundoff-command-contraction-active32-brake64-dwell25-v1-20261016-attempt64/src/task_local_provider.cpp": {
+      "bytes": 1839,
+      "sha256": "051b424236979f9fe7ea4cb96564f54969025c997bfba2c61d347a23f7fbae4c"
+    },
+    "/home/codextransfer/predictive_motion/results/phase5/session-controlled-stop-roundoff-command-contraction-active32-brake64-dwell25-v1-20261016-attempt64/src/task_local_provider.hpp": {
+      "bytes": 640,
+      "sha256": "1819e2f626fb0ff65ad7e7e8de0b0b52f625e6bf435b073d7cca55722d76f093"
+    },
+    "/home/codextransfer/predictive_motion/results/phase5/session-controlled-stop-roundoff-command-contraction-active32-brake64-dwell25-v1-20261016-attempt64/src/working_face_basis.hpp": {
+      "bytes": 5342,
+      "sha256": "25e1e2b5d21780331838d45e40857e28e67a2231f39bf8ab1d97aa90721b818c"
+    },
+    "/home/codextransfer/predictive_motion/results/phase5/session-controlled-stop-roundoff-command-contraction-active32-brake64-dwell25-v1-20261016-attempt64/src/working_face_basis_tests.cpp": {
+      "bytes": 2175,
+      "sha256": "ce0226e8d6d2c6514eb9f0a8f7bb84580c8d588a407ddd1882c2e2db74364e22"
+    },
+    "/home/codextransfer/predictive_motion/results/phase5/session-controlled-stop-roundoff-command-contraction-active32-brake64-dwell25-v1-20261016-attempt64/src/working_face_trace_codec.hpp": {
+      "bytes": 8156,
+      "sha256": "4788658a90d0a091ec87b611b245dd9077cc1893f8c5c531eb677f17ecf8d731"
+    },
+    "/home/codextransfer/predictive_motion/results/phase5/session-controlled-stop-roundoff-command-contraction-active32-brake64-dwell25-v1-20261016-attempt64/src/working_face_trace_codec_tests.cpp": {
+      "bytes": 5885,
+      "sha256": "bc8d6849964ff551fe395958879288f12f40024dbd9b874d90c2ced37da27fd2"
+    },
+    "/home/codextransfer/predictive_motion/results/phase5/session-task-start-a-primaldual-v2-20261010-attempt5/build-attempt1/unit-9.o": {
+      "bytes": 211776,
+      "sha256": "6b892be6fa011db86b17a994d81b8bf12d3e2bddb248f88fe85506bdf082b565"
+    },
+    "/usr/include/zconf.h": {
+      "bytes": 16646,
+      "sha256": "1800d30368be262886ccaa0b4e0a82240f4b7cd65704f480c988f1ccbf74e14e"
+    },
+    "/usr/include/zlib.h": {
+      "bytes": 96778,
+      "sha256": "6f1c7ebe0ac0f0794852b770c20efae041a451f833c91f60f837b599ea81679e"
+    },
+    "/usr/lib/x86_64-linux-gnu/libz.so.1.3": {
+      "bytes": 113000,
+      "sha256": "86200da370f20476a2507e9097a789b5ef97269b4ca8d5e164ad82dab9d99892"
+    }
+  },
+  "input_before_after_equal": true,
+  "activefalse_six_complete_records_bitexact": true,
+  "scope": "Eight initialized saved full current numerical cases plus six activefalse records, explicit merged V3 rank/chosen/eligibility-index codec; no Model/nativeOSQP/B/C/physical/stop/task/phase acceptance."
+}

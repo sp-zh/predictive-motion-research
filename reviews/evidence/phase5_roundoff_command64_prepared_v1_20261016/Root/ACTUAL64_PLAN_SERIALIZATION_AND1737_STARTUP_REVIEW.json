@@ -1,0 +1,9 @@
+{
+  "schema": "ROOT64_ACTUAL_PLAN_BYTE_SERIALIZATION_QUALIFICATION_AND_STARTUP1737_V1",
+  "prepared_plan_SHA256": "9201fdbbb09a52705a3ebf01e484c86fd9593217c98686cef130bfd5db8197dd",
+  "actual_plan_SHA256": "b65fbae53b81c10841a3a622577fca09aabc98def26ae9a22e78e292eaeb5a37",
+  "all_decoded_JSON_objects_exact_equal": true,
+  "all1737_input_records_argv_env_rosters_exact_equal": true,
+  "all1737_actual_BEFORE_receipts_match_every_declared_field": true,
+  "scope": "Byte serialization differs only; actual/prepare decoded plan exactly equal. Both versions retained. No source/profile/ELF/runtime boundary change, no native64 restart or extra entry."
+}
