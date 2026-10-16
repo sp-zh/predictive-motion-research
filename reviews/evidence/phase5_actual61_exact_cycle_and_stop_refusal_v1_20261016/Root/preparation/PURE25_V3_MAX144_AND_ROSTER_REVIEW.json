@@ -1,0 +1,47 @@
+{
+  "schema": "ROOT61_PURE25_COMPLETE_V3_MAX144_AND24_SLOTS_V1",
+  "payload_hashes_verified": 145,
+  "all25_exit0_no_model_native": true,
+  "pure_before_after_bytes_equal": true,
+  "cases": [
+    {
+      "case": "maximum",
+      "rank_count": 512,
+      "chosen_count": 512,
+      "eligibility_count": 144,
+      "raw_bytes": 43625
+    },
+    {
+      "case": "not-entered",
+      "rank_count": 0,
+      "chosen_count": 0,
+      "eligibility_count": 0,
+      "raw_bytes": 1513
+    },
+    {
+      "case": "unavailable",
+      "rank_count": 0,
+      "chosen_count": 0,
+      "eligibility_count": 0,
+      "raw_bytes": 1513
+    },
+    {
+      "case": "active",
+      "rank_count": 0,
+      "chosen_count": 0,
+      "eligibility_count": 0,
+      "raw_bytes": 1513
+    },
+    {
+      "case": "full-successful-24-roster",
+      "rank_count": 512,
+      "chosen_count": 512,
+      "eligibility_count": 144,
+      "raw_bytes": 43625
+    }
+  ],
+  "all24_receipts_full_SHA_CRC_EOF": true,
+  "expected25th_file_absent": true,
+  "retained_reader_qualification": "First glob found older V2 maximum test files as well as newV3, so unique-match assertion failed before output writes. Corrected to explicit exact-cycle-codec-tests; no replay, capture or native retry.",
+  "scope": "Synthetic output/eligibility unit tests, not controller/physical/phase acceptance. Max scalar indices do not store full comparison snapshots."
+}

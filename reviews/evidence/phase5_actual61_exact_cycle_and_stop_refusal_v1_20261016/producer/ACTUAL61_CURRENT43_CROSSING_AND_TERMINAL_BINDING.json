@@ -1,0 +1,55 @@
+{
+  "schema": "ACTUAL61_ORIGINAL60FAIL43_BITEXACT_INPUTS_AND_FORMAL_OUTPUT_BINDING_V1",
+  "context": "actual61/cycle43/trial0",
+  "six_initialized_fields_fixture_sha256": "e8b14e198bafc29885419f2a42d54681d172b4ba1bd7f80aeca79f1044e43254",
+  "six_fields_equal_original_actual60_fail43": true,
+  "original_scale_D144_and_original_nominal_scaled_seed144_byteexact_actual60": true,
+  "actual_hint_complete": true,
+  "hint_finalxy_sha256": "31e7612c6c9fc52cb714ae52225d8d38634547bfb8989bfe3dc42bebf9ceab97",
+  "all284_outer_events_and_finalxy_byteexact_production61_formal_replay": true,
+  "events": 284,
+  "current_fullrow_violation": 5.464270529109694e-13,
+  "current_full_stationarity": 2.3592239273284576e-16,
+  "runtime1728_before_after_equal": true,
+  "supervisor_exit": {
+    "driver_exit_code": 1,
+    "stop_reason": null,
+    "elapsed_wall_seconds": 669.5075288080006,
+    "signal": null,
+    "scope": "Driver completion only; actual results require content review",
+    "program_attempts": 1,
+    "automatic_retries": 0,
+    "remote_backup_complete": false
+  },
+  "manualwait": {
+    "automatic_retries": 0,
+    "next_experiment_started": false,
+    "direct_human_resume_required": true,
+    "phase5": "NOT_ACCEPTED",
+    "phase6": "NOT_STARTED",
+    "scope": "Finite offline61 ended; preserve result/necessary cleanup only. Network restoration does not resume62."
+  },
+  "input_pins": {
+    "/private/tmp/phase5_controlled_stop_exact_cycle_terminal61_v1_20261016/READY.json": {
+      "bytes": 290942,
+      "sha256": "fb3315bc4aaf38d9017e8f19df46ed6baa6a9399eda212ee29eebd69548a7d73"
+    },
+    "/private/tmp/phase5_controlled_stop_exact_cycle_terminal61_v1_20261016/actual-dell/session-controlled-stop-exact-cycle-endpoint-active32-brake64-dwell25-v1-20261016-attempt61/run-attempt1/artifacts/cycle-43/trial-0/qp_equality_reduction.bin": {
+      "bytes": 7719871,
+      "sha256": "42ecf20a2f004a2cfb6c41df9040d153ce8669ec6d7501b26a24a2ce1f7f0a3b"
+    },
+    "/private/tmp/phase5_controlled_stop_exact_cycle_terminal61_v1_20261016/actual-dell/session-controlled-stop-exact-cycle-endpoint-active32-brake64-dwell25-v1-20261016-attempt61/run-attempt1/artifacts/cycle-43/trial-0/MANIFEST.yaml": {
+      "bytes": 12770,
+      "sha256": "667e4d0e8a9349a5a13da0103ca5e9d7e3e256b83fe328a83e965566dc1e897c"
+    },
+    "/private/tmp/phase5_controlled_stop_exact_cycle_terminal61_v1_20261016/actual-dell/session-controlled-stop-exact-cycle-endpoint-active32-brake64-dwell25-v1-20261016-attempt61/run-attempt1/artifacts/cycle-43/trial-0/numeric_feasible_initializer.bin": {
+      "bytes": 82126,
+      "sha256": "432f3d58b2d710319316a02209087dbc6410a1d216352cb088cd1614d4367044"
+    },
+    "/private/tmp/phase5_controlled_stop_exact_cycle_terminal61_v1_20261016/actual-dell/session-controlled-stop-exact-cycle-endpoint-active32-brake64-dwell25-v1-20261016-attempt61/run-attempt1/artifacts/cycle-43/trial-0/current_numeric_hint.bin": {
+      "bytes": 7329,
+      "sha256": "285258424c24e9dc98718be78bde95a6ce1d6d59084ca1b1e8fc0cd25725e07a"
+    }
+  },
+  "scope": "Actual run crosses original60fail43 with same initialized current QP+original nominal/D and literal production pure output. This is current scaled numerical evidence and runtime identity/terminal proof only, no independent original-SI/nonlinear/geometric/B/C/stop/task/phase acceptance."
+}

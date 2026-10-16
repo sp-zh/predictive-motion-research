@@ -1,0 +1,20 @@
+{
+  "schema": "FRESH61_LOCAL_SUPERVISOR_POPENCLOSE_LAUNCH_V1",
+  "utc": "2026-10-16T06:38:28.316214+00:00",
+  "supervisor_pid": 12433,
+  "supervisor_ppid_initial": 12432,
+  "supervisor_pgid": 12433,
+  "supervisor_sid": 12433,
+  "supervisor_start_ticks": 1846956,
+  "launcher_pid": 12432,
+  "launcher_sid": 12432,
+  "new_session": true,
+  "stdin": "DEVNULL",
+  "stdout": "local regular file",
+  "stderr": "local regular file",
+  "close_fds": true,
+  "ssh_detach_survival": "NOT_YET_OBSERVED",
+  "program_attempts": 1,
+  "automatic_retries": 0,
+  "post_batch": "MANUAL_WAIT_DIRECT_HUMAN_RESUME"
+}

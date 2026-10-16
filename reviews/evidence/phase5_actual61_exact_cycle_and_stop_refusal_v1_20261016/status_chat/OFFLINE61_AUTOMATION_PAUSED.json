@@ -1,0 +1,15 @@
+{
+  "observed_utc": "2026-10-16T06:42:24.139184+00:00",
+  "automation_id": "automation",
+  "status": "PAUSED",
+  "rrule": "FREQ=DAILY;BYHOUR=2;BYMINUTE=0;BYSECOND=0",
+  "target_thread_id": "01a10a40-558c-71a3-b343-6ff4c2709b36",
+  "reason": "single finite offline61 actually launched; pause future heartbeat without stopping existing local batch; manual human resume required after termination",
+  "launch_report_source": "Mac Root chat01a12eb1-3b98-7b61-8a81-9b2f4e7c5c32",
+  "offline61_start_utc": "2026-10-16T06:38:28Z",
+  "supervisor_pid": 12433,
+  "driver_pid": 12434,
+  "native_pid": 12435,
+  "post_batch": "MANUAL_WAIT_AFTER_61.json; no62 automatic entry",
+  "development_resumed_by_this_action": false
+}

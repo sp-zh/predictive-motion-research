@@ -1,0 +1,41 @@
+{
+  "observed_utc": "2026-10-16T07:00:46.355459+00:00",
+  "pids_exist": {
+    "12433": false,
+    "12434": false,
+    "12435": false
+  },
+  "files": {
+    "EXIT.json": {
+      "bytes": 276,
+      "sha256": "763653eda192f7b447bee3e3f8ca586145bac0e3c6d1a2d44a6e0401451c8595"
+    },
+    "MANUAL_WAIT_AFTER_61.json": {
+      "bytes": 277,
+      "sha256": "e17998f0e3742a8d985970fa288f85c663da00590ea8cee0169b79c00963ea8d"
+    },
+    "READY.json": {
+      "bytes": 746952,
+      "sha256": "2e4a37a6510a9601b6d9f6b96ef6d093cfb2070cfdfa7df995a7488f70fe9c46"
+    }
+  },
+  "EXIT.json": {
+    "driver_exit_code": 1,
+    "stop_reason": null,
+    "elapsed_wall_seconds": 669.5075288080006,
+    "signal": null,
+    "scope": "Driver completion only; actual results require content review",
+    "program_attempts": 1,
+    "automatic_retries": 0,
+    "remote_backup_complete": false
+  },
+  "MANUAL_WAIT_AFTER_61.json": {
+    "automatic_retries": 0,
+    "next_experiment_started": false,
+    "direct_human_resume_required": true,
+    "phase5": "NOT_ACCEPTED",
+    "phase6": "NOT_STARTED",
+    "scope": "Finite offline61 ended; preserve result/necessary cleanup only. Network restoration does not resume62."
+  },
+  "scope": "Original fixed-hostkey SSH read-only terminal/hash check. Three known owned PIDs absent; selected packet EXIT/manualwait/READY exact remote bytes. No process signal, source mutation or retry. PID absence alone is not an all-process proof."
+}

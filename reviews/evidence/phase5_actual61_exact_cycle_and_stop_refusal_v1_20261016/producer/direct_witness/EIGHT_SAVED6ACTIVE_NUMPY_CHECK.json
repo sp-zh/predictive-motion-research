@@ -1,0 +1,155 @@
+{
+  "schema": "PURE61_V3_INDEPENDENT_EIGHT_SAVED6ACTIVE_NUMPY",
+  "cases": [
+    {
+      "case": "actual56_48_1",
+      "fixture_sha256": "069b99b19abe78a22a7845e65a94774ef66958e6f9a2ad573001061e77ea7b66",
+      "rows": 7346,
+      "events": 272,
+      "primal_violation": 7.892939773990193e-13,
+      "full_stationarity": 1.1102230246251565e-16,
+      "core_arrays_unchanged60": {
+        ".finalxy.bin": true,
+        ".states.bin": true,
+        ".boundary48.bin": true,
+        ".retained64.bin": true,
+        ".refinement120.bin": true
+      },
+      "all_endpoint_records_original_domain": true,
+      "endpoints": 15812,
+      "boundaries": 11290
+    },
+    {
+      "case": "old52_40_0",
+      "fixture_sha256": "63adf752672de67a3842b39091157b476d3066a6e48de25dbe4bcc4da2514856",
+      "rows": 7349,
+      "events": 216,
+      "primal_violation": 8.834192058437829e-13,
+      "full_stationarity": 2.498001805406602e-16,
+      "core_arrays_unchanged60": {
+        ".finalxy.bin": true,
+        ".states.bin": true,
+        ".boundary48.bin": true,
+        ".retained64.bin": true,
+        ".refinement120.bin": true
+      },
+      "all_endpoint_records_original_domain": true,
+      "endpoints": 3290,
+      "boundaries": 67
+    },
+    {
+      "case": "old53_40_1",
+      "fixture_sha256": "548579a0aa48ab67cc2eb2e73ed38b0da1765d23e4b1dd59ceb9a9e23882b190",
+      "rows": 7349,
+      "events": 201,
+      "primal_violation": 8.286748023889068e-13,
+      "full_stationarity": 3.3306690738754696e-16,
+      "core_arrays_unchanged60": {
+        ".finalxy.bin": true,
+        ".states.bin": true,
+        ".boundary48.bin": true,
+        ".retained64.bin": true,
+        ".refinement120.bin": true
+      },
+      "all_endpoint_records_original_domain": true,
+      "endpoints": 1638,
+      "boundaries": 959
+    },
+    {
+      "case": "old54_43_0",
+      "fixture_sha256": "1c7920a7d9f697fce28aea0fad3ea4c10fd34c17248853ea46c9296783680aa2",
+      "rows": 7344,
+      "events": 196,
+      "primal_violation": 4.604524227180828e-13,
+      "full_stationarity": 2.237793284010081e-16,
+      "core_arrays_unchanged60": {
+        ".finalxy.bin": true,
+        ".states.bin": true,
+        ".boundary48.bin": true,
+        ".retained64.bin": true,
+        ".refinement120.bin": true
+      },
+      "all_endpoint_records_original_domain": true,
+      "endpoints": 1443,
+      "boundaries": 6
+    },
+    {
+      "case": "old55_40_2",
+      "fixture_sha256": "e8e8c1140e56a0ae2dd494c122eab5f21b4eacd477c67cb03e22b86b1e899f74",
+      "rows": 7349,
+      "events": 162,
+      "primal_violation": 7.868063839344686e-13,
+      "full_stationarity": 2.220446049250313e-16,
+      "core_arrays_unchanged60": {
+        ".finalxy.bin": true,
+        ".states.bin": true,
+        ".boundary48.bin": true,
+        ".retained64.bin": true,
+        ".refinement120.bin": true
+      },
+      "all_endpoint_records_original_domain": true,
+      "endpoints": 0,
+      "boundaries": 8
+    },
+    {
+      "case": "actual58_54_0",
+      "fixture_sha256": "fcc6ccbf3c01f4a27355f82f945727e1434930a073015d65ae4b0125b5992683",
+      "rows": 7359,
+      "events": 167,
+      "primal_violation": 3.504748574689742e-13,
+      "full_stationarity": 1.1449174941446927e-16,
+      "core_arrays_unchanged60": {
+        ".finalxy.bin": true,
+        ".states.bin": true,
+        ".boundary48.bin": true,
+        ".retained64.bin": true,
+        ".refinement120.bin": true
+      },
+      "all_endpoint_records_original_domain": true,
+      "endpoints": 0,
+      "boundaries": 72
+    },
+    {
+      "case": "actual58_74_0",
+      "fixture_sha256": "ba0de80aaba82efd4cbac257bf89017a10494b322303a47dbffec04f03fdd5be",
+      "rows": 7391,
+      "events": 171,
+      "primal_violation": 2.8314156574893445e-14,
+      "full_stationarity": 3.968179951296946e-17,
+      "core_arrays_unchanged60": {
+        ".finalxy.bin": true,
+        ".states.bin": true,
+        ".boundary48.bin": true,
+        ".retained64.bin": true,
+        ".refinement120.bin": true
+      },
+      "all_endpoint_records_original_domain": true,
+      "endpoints": 0,
+      "boundaries": 123
+    },
+    {
+      "case": "actual60_43_0",
+      "fixture_sha256": "e8b14e198bafc29885419f2a42d54681d172b4ba1bd7f80aeca79f1044e43254",
+      "rows": 7344,
+      "events": 284,
+      "primal_violation": 5.464270529109694e-13,
+      "full_stationarity": 2.3592239273284576e-16,
+      "core_arrays_unchanged60": {},
+      "all_endpoint_records_original_domain": true,
+      "endpoints": 3397,
+      "boundaries": 943
+    }
+  ],
+  "active_six_entire_core_exact60": [
+    "active_ACTIVE_constrained.core.bin",
+    "active_ACTIVE_interior.core.bin",
+    "active_ACTIVE_zero.core.bin",
+    "active_old52_40_0.core.bin",
+    "active_old53_40_1.core.bin",
+    "active_old54_43_0.core.bin"
+  ],
+  "all8_numeric_gates_pass": true,
+  "all7_legacy_arrays_byteexact60": true,
+  "baseline512_xy_faces_exact_actual60": true,
+  "scope": "Pure initialized current scaled QP only, fullsavedraw endpoint/boundary originaldomain and independent NumPy finalallrow/stationarity. No native/SI/nonlinear/geometric/B/C/physics/stop/task/phase acceptance."
+}

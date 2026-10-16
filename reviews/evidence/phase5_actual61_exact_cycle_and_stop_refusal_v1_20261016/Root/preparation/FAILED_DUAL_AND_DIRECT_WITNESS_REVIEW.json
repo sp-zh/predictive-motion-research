@@ -1,0 +1,53 @@
+{
+  "schema": "ROOT61_FAILED_DUAL_AND_EXACT_BASELINE_DIRECT_ENDPOINT_WITNESS_REVIEW_V1",
+  "NNLS": {
+    "certificate_sha256": "4aaf5a726dfa1830738b28681c18863fd18614b37e63ed5adc8a63600d9523ba",
+    "primal_unchanged": true,
+    "lambda_min": 0.0,
+    "original_fullrow_violation": 5.464270529109694e-13,
+    "original_fullstationarity": 0.020461411420954992,
+    "certificate_rejected": true,
+    "no_nonexistence_claim": true
+  },
+  "v3_payload_hashes_verified": 98,
+  "baseline512events_partialxy_finalfaces_byte_equal_actual60": true,
+  "witness220_old": {
+    "iteration": "220",
+    "row": "7250",
+    "active": "0",
+    "mask": "0",
+    "start": "-0.024464414244776304",
+    "lower": "-0.024464414244776304",
+    "upper": "0.17553558475522371",
+    "travel": "-6.4387764399601293e-16",
+    "slack": "0",
+    "rawfraction": "0",
+    "fullpoint": "-0.024464414244776949",
+    "row_full_violation": "6.4531713306337224e-16",
+    "full_allrow_violation": "5.4642705291096938e-13",
+    "endpoint_domain": "1",
+    "guard_eligible": "0",
+    "direction_inf": "1.2031449962387782e-12"
+  },
+  "witness220_new": {
+    "iteration": "220",
+    "row": "7250",
+    "active": "0",
+    "mask": "1",
+    "start": "-0.024464414244776304",
+    "lower": "-0.024464414244776304",
+    "upper": "0.17553558475522371",
+    "travel": "-6.4387764399601293e-16",
+    "slack": "0",
+    "rawfraction": "0",
+    "fullpoint": "-0.024464414244776949",
+    "row_full_violation": "6.4531713306337224e-16",
+    "full_allrow_violation": "5.4642705291096938e-13",
+    "endpoint_domain": "1",
+    "guard_eligible": "1",
+    "direction_inf": "1.2031449962387782e-12"
+  },
+  "old_blocker7250_new_blocker7251_fraction_still0": true,
+  "retained_reader_failure": "First inline checker used system Python without NumPy and failed before evidence reads/writes. This standalone checker uses bundled NumPy; no controller/probe/capture was repeated.",
+  "scope": "Direct source instrument witness scalar arithmetic and exact unchanged baseline checked. Full before/after snapshots are not serialized by native V3 indices; source/targeted tests support trigger. Original endpoint1e-12 gate unchanged; no Model/OSQP/B/C/physical/stop/phase acceptance."
+}

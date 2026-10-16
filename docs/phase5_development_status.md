@@ -1,6 +1,12 @@
 # Phase 5 development status
 
-Updated 2026-10-16, America/Toronto. **Resumed by direct human “继续推进项目”.** Continue from independently reviewed offline52 and verified connection checkpoint196bf49, preserving the completed manual wait and all failures. Fresh bounded diagnostic-retention repair and actual stop/task checks are authorized within the continuous functional work package; no consumed run is reused. Phase5 NOT_ACCEPTED; Phase6 NOT_STARTED.
+Updated 2026-10-16, America/Toronto. **MANUALWAIT after finite offline61.** Phase5 NOT_ACCEPTED; Phase6 NOT_STARTED. Direct human continue in status chat is required for further development or62; only result preservation, necessary review and recoverable backup continue. Daily02:00 Toronto heartbeat is PAUSED. Earlier resumption/preparation paragraphs below are retained historical snapshots, superseded by the latest terminal record.
+
+## Actual61 terminal result and verified two-device archive
+
+[Source, independent reviews and backup identities](../reviews/evidence/phase5_actual61_exact_cycle_and_stop_refusal_v1_20261016/README.md): one offline invocation completes96C/192 actual simulated2ms task halves/384ms,32active64brake,173trials346forecasts. Original64-brake boundary refuses because stop thresholds are not reached:128 observations allfalse,dwell0/50; no hold25 entered.96 whole records all miss4ms. Last physical_complete1 precedes post-loop refusal and does not prove successful stopping.
+
+Root checks1019 selected payloads/316 codecs,1728 before/after identities and every stop observation. Actual43/0 bitexact inputs match original60 failure;284 hint events/finalxy match formal replay.37compile/26link/25pure,8stop/6active preparation tests pass unchanged original gates. Rejected NNLS stationarity .0204614 remains recorded. Complete61 archive:5045members/4028 native codecs, persisted Mac/Dell full SHA/CRC/readback verified. Full evidence recovery is separate from environment restoration, task/realtime/phase acceptance; older53–57 replication gaps remain.
 
 ## Actual60 result and retained58–59 history on 2026-10-16
 

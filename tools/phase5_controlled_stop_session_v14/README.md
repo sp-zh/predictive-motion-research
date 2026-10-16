@@ -1,0 +1,9 @@
+# Fresh61 exact repeated working-face endpoint eligibility
+
+Actual60 numerical hint cycles at current43 between127-face negative leaving row7250 and126-face zero fraction reentry. A fresh source-pinned baseline reproduces all512 events/partialxy/ordered finalfaces exactly. Pure61v1 auxiliary NNLS yields stationarity0.02046 and FAILS its original1e-10 gate; retain it as negative evidence. Pure61v3 direct instrumentation shows fullpoint row7250 error6.45e-16 and allcurrent7344rows5.46e-13, within unchanged1e-12; old mask0 prevents existing endpoint guard while no full144-basis branch is entered.
+
+Fresh61 gives only exact repeated negative leaving rows eligibility for the existing per-step endpointWithinExistingNumericDomain check. It compares every primal double bit, full ordered row/side faces and unchanged monotone mask generation, same row/side and iteration+2; at most n<=144 unique additions. No unconditional ignore, primal/control projection, altered matrices/bounds/thresholds or increased512/10s. Both old basis0->1 and new eligibility mask changes advance generation; existing1 never consumes another qualification.
+
+Additional pendingx144+faces288+existing-leaving-index144+scalar/vector metadata128=704 numeric slots, total744912<unchanged745000/global1.8B; no extra m-mask/matrix or per-event full snapshot. V3 merges original512rank/512chosen plus144indices into existing hint_kkt_rank_events.bin (<46208B), unchanged24 slots and32MiB raw/stored tail. Indices cannot independently certify every comparison snapshot; pure instrument and saved input replay bind this narrowly scoped heuristic. Original final allrow1e-12/stationarity1e-10/nativeSOLVED/SI/nonlinear/geometric/B/history/two2ms/C/stop remain.
+
+Pure prototypes are diagnostics, not production/native physics. Preserve old source/attempts, all failures, old cap4, NNLSfalse. Phase5 NOT_ACCEPTED; Phase6 NOT_STARTED; no hardware/formal heldout/main/scorer authorization.

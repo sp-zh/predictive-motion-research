@@ -1,0 +1,30 @@
+{
+  "schema": "ROOT61_ACTUAL43_ORIGINAL_FAILED_QP_AND_FORMAL_OUTPUT_BITEXACT_V1",
+  "initialized_fixture_sha256": "e8b14e198bafc29885419f2a42d54681d172b4ba1bd7f80aeca79f1044e43254",
+  "D_and_original_nominal_bitexact": true,
+  "finalxy_sha256": "31e7612c6c9fc52cb714ae52225d8d38634547bfb8989bfe3dc42bebf9ceab97",
+  "events": 284,
+  "all_events_and_finalxy_bitexact_formal": true,
+  "primal_numpy": 5.464270529109694e-13,
+  "stationarity_numpy": 2.3592239273284576e-16,
+  "native_wrapper_attempts": 1,
+  "native_solve_attempts": 1,
+  "merged_eligibility_indices": [
+    24,
+    26,
+    28,
+    30,
+    32,
+    34
+  ],
+  "eligible_rows": [
+    7250,
+    7251,
+    7252,
+    7253,
+    7254,
+    7277
+  ],
+  "current43_trials": 2,
+  "scope": "Trial43/0 repaired numerical hint and native entry; actual C for current43 belongs to the full two-trial transaction. Source/pure witness establishes exact cycle policy; native scalar indices do not reconstruct all optimizer states. Not independent full SI/nonlinear/geometric/B/C acceptance."
+}

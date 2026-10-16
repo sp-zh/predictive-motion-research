@@ -6,6 +6,14 @@ These assets illustrate the stated scope and do not establish final research
 performance or physical hardware safety.
 
 
+## Actual61 complete declared braking prefix, stopping still fails
+
+![Every actual61 braking observation](../figures/phase5_stop61_actual_braking_20261016.png)
+
+[SVG](../figures/phase5_stop61_actual_braking_20261016.svg), [all128 observations CSV](../figures/phase5_stop61_actual_braking_20261016.csv), [provenance](../figures/phase5_stop61_actual_braking_20261016.json), [independent review and archive scope](../reviews/evidence/phase5_actual61_exact_cycle_and_stop_refusal_v1_20261016/README.md).
+
+All128 points are shown. Actual61 completes96 commands/192 simulated2ms task halves/384ms with64 braking commands, but actual velocity/acceleration and accepted history still exceed the original simultaneous stop limits: dwell0/50. All96 whole boundaries miss4ms. This is retained failure evidence, without a successful full-task video or research ranking. Phase5 remains NOT_ACCEPTED. Full61 stored-evidence archive copies are independently verified on Mac and Dell. The finite offline batch has ended manualwait; no automatic62.
+
 ## Actual60 braking prefix and new numerical refusal
 
 ![Every actual60 braking observation](../figures/phase5_stop60_actual_braking_20261016.png)

@@ -1,0 +1,36 @@
+{
+  "schema": "ROOT61_V2_SAVED43_PROBE_ORIGINAL_FULLROW_NUMPY_AND_PREFIX_REVIEW_V1",
+  "payload_hashes_verified": 12,
+  "two_commands_exit0": true,
+  "fixture_sha256": "e8b14e198bafc29885419f2a42d54681d172b4ba1bd7f80aeca79f1044e43254",
+  "same_source60_failure_fixture": true,
+  "full_rows": 7344,
+  "events": 284,
+  "finalxy_sha256": "31e7612c6c9fc52cb714ae52225d8d38634547bfb8989bfe3dc42bebf9ceab97",
+  "final_primal_numpy": 5.464270529109694e-13,
+  "full_stationarity_numpy": 2.3592239273284576e-16,
+  "final_face_dual_min": -0.0,
+  "nonface_dual_exact_zero": true,
+  "first220events_byte_equal_actual60": true,
+  "endpoints": 3397,
+  "all_recorded_endpoint_numeric_domain_recomputed": true,
+  "boundaries": 943,
+  "eligibility_rows": [
+    7250,
+    7251,
+    7252,
+    7253,
+    7254,
+    7277
+  ],
+  "eligibility_iterations": [
+    219,
+    223,
+    227,
+    231,
+    235,
+    239
+  ],
+  "eligibility_log_same_full_bits_faces_mask_reported": true,
+  "scope": "Pure saved numerical hint only. Eligibility stderr is source-reported and does not independently prove every snapshot comparison; direct witness/targeted tests required. No production/nativeOSQP/Model/B/C/physical stopping/task/phase result. Earlier failedNNLS candidate is not used here; failure to find a dual certificate is not a proof none exists."
+}

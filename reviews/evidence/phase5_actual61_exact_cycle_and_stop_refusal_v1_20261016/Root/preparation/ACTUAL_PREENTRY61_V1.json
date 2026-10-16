@@ -1,0 +1,33 @@
+{
+  "schema": "FRESH61_PREENTRY_ACTUAL_RESOURCES_IMMUTABLE_INPUTS_V1",
+  "utc": "2026-10-16T06:36:46.579710+00:00",
+  "actual_CIM_volumes": [
+    {
+      "DeviceID": "C:",
+      "FreeSpace": 110902542336,
+      "Size": 488030334976
+    },
+    {
+      "DeviceID": "D:",
+      "FreeSpace": 87908872192,
+      "Size": 512098299904
+    }
+  ],
+  "C_D_80GiBeach": true,
+  "WSL_statvfs_used_as_CIM": false,
+  "runtime_distinct_input_count": 1728,
+  "all_identities_stable": true,
+  "pure25_before_after_stable": true,
+  "formal8saved6active18commands_stable": true,
+  "all_model_configuration_limits_fields_unchanged60_except_new_session_codec_policy": true,
+  "native_processes": [],
+  "profile_sha256": "e1b480a33dd573a24629bbf801a809674e8d80fb8f5805bca886ef28d92415c9",
+  "ELF_sha256": "9e3b1dcd1f26059c68ae63da37fea7df22b67bc2ec52cf528a24f4991672c0e5",
+  "runtime_plan_actual_sha256": "af777f51efc4b9f7b156edcf24b448e53ef693849c3738b17020b89d09264a7a",
+  "storage_layout_sha256": "0ea023c6b21c1f59af7da8f6db932c6d2c138b337c91cece1a105d0c0d53c6d8",
+  "capture_sha256": "e787208593b4d2c2fc121c50f04135a08c0dce1669def1948a975fdf01d674a1",
+  "supervisor_sha256": "b0a4b413125a6e310d5511a35d10e6c16041886f051ba524ed36cc3eb94e22f2",
+  "driver_sha256": "3a511b3f2c8aa43a5501e949598de40518e7041581bab053da1508e725028446",
+  "native_not_entered": true,
+  "future_batch_terminal": "MANUAL_WAIT_AFTER_61_DIRECT_HUMAN_RESUME_ONLY"
+}

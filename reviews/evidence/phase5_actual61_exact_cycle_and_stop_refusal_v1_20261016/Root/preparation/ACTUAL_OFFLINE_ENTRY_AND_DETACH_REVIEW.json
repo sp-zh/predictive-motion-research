@@ -1,0 +1,84 @@
+{
+  "schema": "ROOT61_ACTUAL_SINGLE_FINITE_OFFLINE_ENTRY_FROZEN_SOURCE_AND_DETACH_REVIEW_V1",
+  "entry": {
+    "schema": "FRESH61_SINGLE_USE_DETACHED_LOCAL_ENTRY_V1",
+    "utc": "2026-10-16T06:38:28.264524+00:00",
+    "launcher_pid": 12432,
+    "launcher_sid": 12432,
+    "runtime_distinct_inputs": 1728,
+    "runtime_plan_sha256": "af777f51efc4b9f7b156edcf24b448e53ef693849c3738b17020b89d09264a7a",
+    "profile_sha256": "e1b480a33dd573a24629bbf801a809674e8d80fb8f5805bca886ef28d92415c9",
+    "ELF_sha256": "9e3b1dcd1f26059c68ae63da37fea7df22b67bc2ec52cf528a24f4991672c0e5",
+    "supervisor_sha256": "b0a4b413125a6e310d5511a35d10e6c16041886f051ba524ed36cc3eb94e22f2",
+    "preentry_file": "/home/codextransfer/predictive_motion/results/phase5/session-controlled-stop-exact-cycle-endpoint-active32-brake64-dwell25-v1-20261016-attempt61/PREENTRY61_V1.json",
+    "preentry_sha256": "75a0f6a40d6ec48d8600f824cd04134b4293403b1767499a84010b5361724b7b",
+    "preentry_age_seconds": 101.683554,
+    "entry_attempts": 1,
+    "retries": 0,
+    "scope": "One fresh61 finite local development batch after37compile26link25pure/8saved6active/originalgates/actualCIM/allpins stable. No consumed run replay/expanded caps/model modification/hardware/formalholdout/main/scorer/phase release. Terminal MANUAL_WAIT_AFTER_61 requires directhuman resume; network/automatic messages do not resume."
+  },
+  "source88_bytes_match_actual_runtime_pins": true,
+  "runtime1728_input_records_bound": true,
+  "actual_and_prepared_parsed_plan_objects_equal": true,
+  "supervisor_label_adaptation_only": true,
+  "declared_outer_wall_s": 3600,
+  "final_inventory_deadline_from_start_s": 4800,
+  "owned_cleanup_waits_s": [
+    7,
+    5
+  ],
+  "aggregate_output_cap": 6845104128,
+  "aux_metadata_cap": 16777216,
+  "driver_native_limits_unchanged": true,
+  "recorded_after_original_SSH_exit_detach_verified": true,
+  "observed_utc": "2026-10-16T06:46:08.266956+00:00",
+  "current_processes": [
+    {
+      "pid": 12433,
+      "ppid": 1,
+      "pgrp": 12433,
+      "sid": 12433,
+      "startticks": 1846956,
+      "comm": "python3",
+      "fd0_1_2": {
+        "0": "/dev/null",
+        "1": "/home/codextransfer/predictive_motion/results/phase5/session-controlled-stop-exact-cycle-endpoint-active32-brake64-dwell25-v1-20261016-attempt61/offline61-supervisor.stdout",
+        "2": "/home/codextransfer/predictive_motion/results/phase5/session-controlled-stop-exact-cycle-endpoint-active32-brake64-dwell25-v1-20261016-attempt61/offline61-supervisor.stderr"
+      }
+    },
+    {
+      "pid": 12434,
+      "ppid": 12433,
+      "pgrp": 12434,
+      "sid": 12434,
+      "startticks": 1846959,
+      "comm": "python3.12",
+      "fd0_1_2": {
+        "0": "/dev/null",
+        "1": "/home/codextransfer/predictive_motion/results/phase5/session-controlled-stop-exact-cycle-endpoint-active32-brake64-dwell25-v1-20261016-attempt61/offline61-status/driver.stdout",
+        "2": "/home/codextransfer/predictive_motion/results/phase5/session-controlled-stop-exact-cycle-endpoint-active32-brake64-dwell25-v1-20261016-attempt61/offline61-status/driver.stderr"
+      }
+    },
+    {
+      "pid": 12435,
+      "ppid": 12434,
+      "pgrp": 12435,
+      "sid": 12435,
+      "startticks": 1846983,
+      "comm": "active_first_cy",
+      "fd0_1_2": {
+        "0": "/dev/null",
+        "1": "pipe:[72775]",
+        "2": "pipe:[72776]"
+      }
+    },
+    {
+      "pid": 12432,
+      "exists": false
+    }
+  ],
+  "manualwait_present": false,
+  "exit": null,
+  "ready_present": false,
+  "scope": "One actual offline61 only; no retry or next62. Entry/source/session proof and normal detached survival only, forced-cleanup branch reviewed but not exercised. Original runtime mathematical/physical gates remain. Result is pending until terminal/EXIT read; if manualwait exists only save/review/backup, never develop or start another run without direct human resume."
+}

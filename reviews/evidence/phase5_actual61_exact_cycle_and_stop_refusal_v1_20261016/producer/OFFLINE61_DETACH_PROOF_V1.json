@@ -1,0 +1,89 @@
+{
+  "schema": "FRESH61_SEPARATE_SSH_DETACH_NATIVE_ENTRY_PROOF_V1",
+  "utc": "2026-10-16T06:38:49.439004+00:00",
+  "launcher": {
+    "schema": "FRESH61_LOCAL_SUPERVISOR_POPENCLOSE_LAUNCH_V1",
+    "utc": "2026-10-16T06:38:28.316214+00:00",
+    "supervisor_pid": 12433,
+    "supervisor_ppid_initial": 12432,
+    "supervisor_pgid": 12433,
+    "supervisor_sid": 12433,
+    "supervisor_start_ticks": 1846956,
+    "launcher_pid": 12432,
+    "launcher_sid": 12432,
+    "new_session": true,
+    "stdin": "DEVNULL",
+    "stdout": "local regular file",
+    "stderr": "local regular file",
+    "close_fds": true,
+    "ssh_detach_survival": "NOT_YET_OBSERVED",
+    "program_attempts": 1,
+    "automatic_retries": 0,
+    "post_batch": "MANUAL_WAIT_DIRECT_HUMAN_RESUME"
+  },
+  "STARTED": {
+    "supervisor_pid": 12433,
+    "supervisor_sid": 12433,
+    "supervisor_pgid": 12433,
+    "driver_pgid": 12434,
+    "started_utc_epoch": 1792132708.3465898,
+    "driver_pid": 12434,
+    "driver_sha256": "3a511b3f2c8aa43a5501e949598de40518e7041581bab053da1508e725028446",
+    "plan_sha256": "af777f51efc4b9f7b156edcf24b448e53ef693849c3738b17020b89d09264a7a",
+    "output_directory": "/home/codextransfer/predictive_motion/results/phase5/session-controlled-stop-exact-cycle-endpoint-active32-brake64-dwell25-v1-20261016-attempt61/run-attempt1",
+    "maximum_wall_seconds": 3600,
+    "maximum_output_bytes": 6845104128,
+    "minimum_free_bytes": 10737418240,
+    "program_attempts": 1,
+    "automatic_retries": 0
+  },
+  "supervisor_proc": {
+    "pid": 12433,
+    "ppid": 1,
+    "pgrp": 12433,
+    "sid": 12433,
+    "start_ticks": 1846956,
+    "state": "S",
+    "comm": "python3",
+    "fds": {
+      "0": "/dev/null",
+      "1": "/home/codextransfer/predictive_motion/results/phase5/session-controlled-stop-exact-cycle-endpoint-active32-brake64-dwell25-v1-20261016-attempt61/offline61-supervisor.stdout",
+      "2": "/home/codextransfer/predictive_motion/results/phase5/session-controlled-stop-exact-cycle-endpoint-active32-brake64-dwell25-v1-20261016-attempt61/offline61-supervisor.stderr"
+    }
+  },
+  "driver_proc": {
+    "pid": 12434,
+    "ppid": 12433,
+    "pgrp": 12434,
+    "sid": 12434,
+    "start_ticks": 1846959,
+    "state": "S",
+    "comm": "python3.12",
+    "fds": {
+      "0": "/dev/null",
+      "1": "/home/codextransfer/predictive_motion/results/phase5/session-controlled-stop-exact-cycle-endpoint-active32-brake64-dwell25-v1-20261016-attempt61/offline61-status/driver.stdout",
+      "2": "/home/codextransfer/predictive_motion/results/phase5/session-controlled-stop-exact-cycle-endpoint-active32-brake64-dwell25-v1-20261016-attempt61/offline61-status/driver.stderr"
+    }
+  },
+  "native_proc": {
+    "pid": 12435,
+    "ppid": 12434,
+    "pgrp": 12435,
+    "sid": 12435,
+    "start_ticks": 1846983,
+    "state": "R",
+    "comm": "active_first_cy",
+    "fds": {
+      "0": "/dev/null",
+      "1": "pipe:[72775]",
+      "2": "pipe:[72776]"
+    }
+  },
+  "original_launcher_absent": true,
+  "same_supervisor_pid_startticks_after_original_SSH_exit": true,
+  "supervisor_driver_native_distinct_new_sessions": true,
+  "no_SSH_standard_fds_in_supervisor_driver": true,
+  "native_entry_count": 1,
+  "native_result": "PENDING_NOT_ACCEPTED",
+  "post_batch": "MANUAL_WAIT_AFTER_61_DIRECT_HUMAN_RESUME_ONLY"
+}

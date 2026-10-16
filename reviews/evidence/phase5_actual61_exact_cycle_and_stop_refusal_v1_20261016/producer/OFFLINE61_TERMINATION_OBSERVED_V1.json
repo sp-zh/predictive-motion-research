@@ -1,0 +1,32 @@
+{
+  "schema": "ACTUAL61_OWNED_ALLPROCESS_TERMINATION_OBSERVED_V1",
+  "utc": "2026-10-16T06:55:13.918161+00:00",
+  "original_owned_processes": [
+    {
+      "role": "supervisor_proc",
+      "original_pid": 12433,
+      "original_start_ticks": 1846956,
+      "now": null,
+      "same_process_running": false
+    },
+    {
+      "role": "driver_proc",
+      "original_pid": 12434,
+      "original_start_ticks": 1846959,
+      "now": null,
+      "same_process_running": false
+    },
+    {
+      "role": "native_proc",
+      "original_pid": 12435,
+      "original_start_ticks": 1846983,
+      "now": null,
+      "same_process_running": false
+    }
+  ],
+  "any_native_active": [],
+  "supervisor_EXIT_manualwait_READY_all_present": true,
+  "direct_human_resume_required": true,
+  "next_experiment_started": false,
+  "scope": "Post-archive read-only process-state check. This separate receipt was created after archive61 and is not claimed inside its frozen member inventory. No signal, restart or subsequent native work."
+}

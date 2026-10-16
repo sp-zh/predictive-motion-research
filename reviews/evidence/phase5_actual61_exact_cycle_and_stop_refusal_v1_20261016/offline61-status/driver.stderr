@@ -1,0 +1,5 @@
+Traceback (most recent call last):
+  File "/home/codextransfer/predictive_motion/results/phase5/session-controlled-stop-exact-cycle-endpoint-active32-brake64-dwell25-v1-20261016-attempt61/active_run_driver.py", line 107, in <module>
+    if result['exit']!=0 or result.get('stop_reason') is not None or result['first_error'] is not None:raise RuntimeError('First controlled active native refusal; no retry within attempt')
+                                                                                                       ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+RuntimeError: First controlled active native refusal; no retry within attempt

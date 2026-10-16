@@ -1,0 +1,18 @@
+{
+  "schema": "PURE61_V2_INDEPENDENT_ORIGINAL_CURRENT_ROW_NUMPY_CHECK",
+  "fixture_sha256": "e8b14e198bafc29885419f2a42d54681d172b4ba1bd7f80aeca79f1044e43254",
+  "rows": 7344,
+  "events": 284,
+  "finalxy_sha256": "31e7612c6c9fc52cb714ae52225d8d38634547bfb8989bfe3dc42bebf9ceab97",
+  "final_primal_violation": 5.464270529109694e-13,
+  "full_stationarity": 2.3592239273284576e-16,
+  "final_face_dual_min": -0.0,
+  "nonface_dual_exact_zero": true,
+  "first220_events_exact_unchanged_actual60": true,
+  "endpoints": 3397,
+  "all_recorded_endpoints_existing_1e12_domain": true,
+  "boundaries": 943,
+  "failed_dual_probe_stationarity": 0.020461411420954992,
+  "failed_dual_probe_certificate_rejected": true,
+  "scope": "Independent saved current scaled H/g/A/l/u and event/endpoint/boundary checks only. No original-SI/nativeOSQP/nonlinear/geometric/B/C/physics/stop/task acceptance claimed. No generic convergence proof."
+}

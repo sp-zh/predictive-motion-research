@@ -17,6 +17,14 @@ Mac/Dell locations with their original hashes. This Git repository alone cannot
 restore the complete experimental dataset. Review links into excluded evidence
 require those local archives.
 
+## 2026-10-16 actual61 terminal backup
+
+[Actual61 checkpoint](../reviews/evidence/phase5_actual61_exact_cycle_and_stop_refusal_v1_20261016/README.md) includes frozen88-file v14 source/profile,37compile/26link/25pure and8stop/6active reviews, rejected NNLS certificate, actual384ms/128-observation stop-failure records, complete diagnostic PNG/SVG/CSV/provenance and offline termination/manualwait receipts. Existing source/failures remain. The earlierac121c3 backup was verified02:27 Toronto; the new61 result is a later unit.
+
+Complete61 archive is3,627,990,572B, SHA-256 `f06f0e976963bebaeee86a612d0ecae435f128b9599041a6cc854e2d4686bcf8`. Root verifies all5045members/4028 native codecs and9,744,956,831 raw codec bytes, with a full persisted Mac reopen SHA/CRC and original Dell source/hash identity. Two physical stored-evidence archive files are verified. Frozen source/profile/active ELF are included; dependency/build caches are excluded. This is not standalone environment restoration or acceptance, and older53–57 replication gaps remain. [Mac/Dell proof](../reviews/evidence/phase5_actual61_exact_cycle_and_stop_refusal_v1_20261016/archive/MAC_ARCHIVE_READY.json).
+
+Public Git carries small project source/reviews/diagnostic figures and a60,944B rejected numerical certificate; large raw evidence and ELFs remain excluded. Public commit/push verification is a separate final action. Offline61 is now manualwait; review/preservation/backup do not authorize further development or62. The existing daily02:00 heartbeat is paused.
+
 ## 2026-10-15 recoverable progress checkpoint
 
 The [53–54/55 source checkpoint](../reviews/evidence/phase5_stop53_54_and_refinement55_v1_20261015/README.md) includes exact versioned v8 source/profile, independent saved-data reports and actual54 PNG/SVG/CSV with provenance. It preserves failures and the direct-human resumption.At source checkpoint0ef35f8,55 was prepared but unconsumed after an SSH banner timeout. This checkpoint can be publicly committed/pushed under the existing authorization while communication is restored; it does not gate the next actual entry.
