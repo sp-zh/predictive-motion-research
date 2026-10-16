@@ -1,0 +1,48 @@
+{
+  "schema": "ROOT57_CURRENT54_INITIALIZER_V3_FULL_UNIFORM_INTERVAL_AUDIT_V1",
+  "header_cycle_trial_attempt_complete_changed_rowchanged_retryavailable_retrycomplete_uniformchanged_scopeentered": [
+    54,
+    0,
+    1,
+    0,
+    0,
+    0,
+    1,
+    0,
+    0,
+    1
+  ],
+  "error": "bounded initializer ray has no interior; wholepolytope unknown",
+  "baseline_error": "bounded initializer ray has no interior; wholepolytope unknown",
+  "retry_error": "bounded initializer ray has no interior; wholepolytope unknown",
+  "baseline_rows_written": 7359,
+  "retry_rows_written": 7359,
+  "baseline_violation": 3.5710299300939496e-11,
+  "uniform_epsilon": 0.0,
+  "saved_lower": 6.573920322262719e-11,
+  "saved_upper": 7.066559503884786e-12,
+  "lower_decisive_row": {
+    "index": 7358,
+    "base_travel_encodedLower_encodedUpper": [
+      -0.01718580018919551,
+      0.5280000000000001,
+      6.573920322262719e-11,
+      0.3787878769634664
+    ]
+  },
+  "upper_decisive_row": {
+    "index": 7075,
+    "base_travel_encodedLower_encodedUpper": [
+      -0.03888834680810079,
+      0.1693042352209457,
+      -0.03999200000474645,
+      7.066559503884786e-12
+    ]
+  },
+  "uniform_attempts": 0,
+  "differential_corrections": 0,
+  "seed_size": 144,
+  "seed_raw_sha256": "8527cfcb933b77a09d36fb6a83ea001f7405c0c14d9047f0ac4c68a2cbb8e33f",
+  "source_raw_sha256": "dd5a2f23e0405766f6840d5590d34064c3880a875683aa5bfc1c4c94ad236a26",
+  "scope": "Every measured V3 row interval and full EOF decoded; extrema exactly reproduce saved interval. Bounds were producer binary80 rounded to double; this audit does not claim independent binary80 interval arithmetic or whole-polytope infeasibility. Baseline lower exceeds actual useful upper but is below nominal1e-6 cap; candidate eligibility repair needs separate exact fixture regression."
+}

@@ -6,6 +6,14 @@ These assets illustrate the stated scope and do not establish final research
 performance or physical hardware safety.
 
 
+## Actual57 braking prefix and crossed diagnostic limit
+
+![Every actual57 braking observation](../figures/phase5_stop57_actual_braking_20261016.png)
+
+[SVG](../figures/phase5_stop57_actual_braking_20261016.svg), [all44 observations CSV](../figures/phase5_stop57_actual_braking_20261016.csv), [source/output hashes](../figures/phase5_stop57_actual_braking_20261016.json), [independent review and limits](../reviews/evidence/phase5_actual57_and_initializer54_v1_20261016/README.md).
+
+Actual57 completes54 commands/108 simulated2ms task halves/216ms and crosses the old48/1 diagnostic limit with11290 lossless records. It ends at54/0 on initializer-ray interval conflict. All44 stop predicates fail, dwell0/50 and all55 whole-boundary4ms deadlines miss. Progress rate first rises then falls while actual velocity is still increasing in this observed prefix; no complete braking trajectory is observed. Every point is shown with original thresholds. This is a partial-run diagnostic, not a successful task video, research ranking, realtime result or Phase5 acceptance. Complete new raw-evidence cross-device backup remains incomplete.
+
 ## Actual54 braking diagnostic and prepared55 repair
 
 ![All actual54 braking observations](../figures/phase5_stop54_actual_braking_20261015.png)

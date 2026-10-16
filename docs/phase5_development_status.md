@@ -1,6 +1,12 @@
 # Phase 5 development status
 
-Updated 2026-10-15, America/Toronto. **Resumed by direct human “继续推进项目”.** Continue from independently reviewed offline52 and verified connection checkpoint196bf49, preserving the completed manual wait and all failures. Fresh bounded diagnostic-retention repair and actual stop/task checks are authorized within the continuous functional work package; no consumed run is reused. Phase5 NOT_ACCEPTED; Phase6 NOT_STARTED.
+Updated 2026-10-16, America/Toronto. **Resumed by direct human “继续推进项目”.** Continue from independently reviewed offline52 and verified connection checkpoint196bf49, preserving the completed manual wait and all failures. Fresh bounded diagnostic-retention repair and actual stop/task checks are authorized within the continuous functional work package; no consumed run is reused. Phase5 NOT_ACCEPTED; Phase6 NOT_STARTED.
+
+## Actual57 result on 2026-10-16
+
+[Actual57 and independent review](../reviews/evidence/phase5_actual57_and_initializer54_v1_20261016/README.md) record54 committed commands/108 actual2ms task halves/216ms,32active22braking cycles,116trials231forecasts. All44 braking observations fail stop predicates; dwell0/50 and all55 whole-boundary deadlines miss4ms. Session/native termination checks and1716 before/after identities pass. Root verifies731 selected payload hashes and181 complete binary codecs, independently decoding counts and recomputing every stop predicate/anchor drift.
+
+The actual48/1 transaction crosses failed56:11290 boundary records fit12288, its first4096 records match failed56 exactly and its completed hint x/y matches the saved56-input prototype. Actual57 then naturally refuses at54/0 before a hint/native candidate, after the fresh nominal Model call: initializer uniform lower6.5739e-11 exceeds upper7.0666e-12. Full V3 has7359 measured row bounds and zero corrections. This is a seed/ray refusal, not whole-polytope infeasibility. Exact-fixture58 repair preparation continues within the original functional work package. Original57 is consumed; all standards and failures remain. Full new experimental-data cross-device backup is incomplete; phase statuses are unchanged.
 
 ## Online continuation on 2026-10-15
 
