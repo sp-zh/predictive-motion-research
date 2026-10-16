@@ -112,7 +112,28 @@ Original native source/profile/ELF, CPU2400s, AS4GiB, FSIZE256MiB, wall3000s,
 10s, logical12GiB/stored6GiB/tail32MiB and every mathematics/SI/nonlinear/
 geometry/B/history/two2ms/C/stop criterion remain unchanged.
 
-This checkpoint records storage and preparation, not an actual57 result.
+At storage checkpoint8b9f54e, no actual57 entry had been recorded. The subsequent
+[fresh V4 preentry](entry57/FINAL_PREENTRY57_STORAGE_V4.json) verifies Mac free
+32,631,242,752 bytes against the new12GiB mode, actual C/D resources,1716 input
+identities and20 pure tests. [Once-entry/progress](entry57/NATIVE57_ENTRY_AND_PROGRESS_STORAGE_V4.json)
+records2026-10-15 at23:53 Toronto, driver5260 and native child5261. The original
+argv/profile/ELF and all native bounds remain unchanged. Driver event `kind=compile`
+is inherited generic metadata; the pinned argv runs the native controller,
+not another compilation. A cycle6 directory was observed at this snapshot;
+it is not an independently verified commit count, stopping result or terminal
+outcome. [Exact mode/entry helper sources and hashes](entry57/FILES.json) are
+retained. The single bounded session continues; no new historical migrations
+or cold archive I/O runs concurrently.
+
+Root's initial byte-SHA comparison used the local serialized plan template and
+failed against the driver's remote-plan identity. Both forms remain retained.
+The [exact remote bytes](entry57/ACTIVE_RUN_PLAN57_REMOTE_EXACT.json) independently
+match driver SHA `df8f9255194eda499a47292211016b7ed142774291de2399a3d2f7091d2e643a`.
+Complete parsed JSON objects are equal to the local template; only serialization
+differs. The [qualification](entry57/PLAN57_SERIALIZATION_QUALIFICATION.json)
+preserves that checker failure without modifying either plan or any input.
+
+This is entry evidence, not actual57 task/stop acceptance.
 Full new experimental-evidence backup remains **INCOMPLETE**; a Dell-only full
 result and Mac selected packet are not a complete independent two-device backup.
 Phase5 **NOT_ACCEPTED**; Phase6 **NOT_STARTED**.

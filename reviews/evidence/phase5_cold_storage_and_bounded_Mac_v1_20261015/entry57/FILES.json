@@ -1,0 +1,65 @@
+{
+  "files": [
+    {
+      "name": "FINAL_PREENTRY57_STORAGE_V4.json",
+      "bytes": 3144,
+      "sha256": "210ee085a6808b95fa9c7daf42775e67ec88b189c607a830e03ff1761fb5f9ff"
+    },
+    {
+      "name": "PREENTRY57_STORAGE_V4.stdout",
+      "bytes": 1498,
+      "sha256": "019aa801d474b9ed26775666eee56e2793b2396e09f8084a796a1fdc5c24f2bb"
+    },
+    {
+      "name": "PREENTRY57_STORAGE_V4.stderr",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "name": "NATIVE57_ENTRY_AND_PROGRESS_STORAGE_V4.json",
+      "bytes": 1877,
+      "sha256": "809066e98a882424a7298db3f7662daef986e0ab08ea3891ac70ded8f8f75342"
+    },
+    {
+      "name": "ENTRY57_STORAGE_WRAPPER_V4.py",
+      "bytes": 2229,
+      "sha256": "440a7ee86af5347cb054c522da6ad67df554b0113478bcafe91a263b96644121"
+    },
+    {
+      "name": "preentry57_storage_v4.py",
+      "bytes": 6211,
+      "sha256": "b117afa05cc21bf1f89a283783802f52cbe716af212087b883676808dd1590c7"
+    },
+    {
+      "name": "preentry57_v3.py",
+      "bytes": 4048,
+      "sha256": "962d16b8dbb601ddb5b613279e8efd8b78a1ff8ab3e0c20d5a675b58c7f00080"
+    },
+    {
+      "name": "capture_terminal57.py",
+      "bytes": 7257,
+      "sha256": "8579b229e162c6a2ca7d030717cbfaf2d093072860c5c94468c7b759dabe6738"
+    },
+    {
+      "name": "active_run_plan.json",
+      "bytes": 519809,
+      "sha256": "9137f77f1567d16957b769444074d630feb2e32525629f9d521c25904612f3bf"
+    },
+    {
+      "name": "active_run_driver.py",
+      "bytes": 7636,
+      "sha256": "3a511b3f2c8aa43a5501e949598de40518e7041581bab053da1508e725028446"
+    },
+    {
+      "name": "ACTIVE_RUN_PLAN57_REMOTE_EXACT.json",
+      "bytes": 519808,
+      "sha256": "df8f9255194eda499a47292211016b7ed142774291de2399a3d2f7091d2e643a"
+    },
+    {
+      "name": "PLAN57_SERIALIZATION_QUALIFICATION.json",
+      "bytes": 759,
+      "sha256": "95d2e8ae9bd3ed3c6c733e192cba49d57daa6f318c5cfb7cb74eb17a0d26ce3a"
+    }
+  ],
+  "scope": "Exact fresh storage V4 once-entry evidence/helper source. CHILD_STARTED kind compile is generic inherited driver metadata; actual pinned argv is the native controller. Cycle6 directory is only an early progress observation, not a committed-C/stop result. active_run_plan.json is the Mac local serialized template; ACTIVE_RUN_PLAN57_REMOTE_EXACT.json is actual driver-bound remote bytes. Both complete parsed objects are independently equal; see retained initial SHA-assertion qualification."
+}

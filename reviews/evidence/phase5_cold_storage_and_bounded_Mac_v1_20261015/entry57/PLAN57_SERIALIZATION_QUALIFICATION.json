@@ -1,0 +1,9 @@
+{
+  "schema": "ROOT57_LOCAL_TEMPLATE_REMOTE_EXECUTED_PLAN_BYTES_QUALIFICATION_V1",
+  "initial_assertion_failure": "Root initially compared local template serialized SHA directly with runtime driver exact remote-plan SHA. Assertion failed; both original forms retained, no source edit.",
+  "local_template_sha256": "9137f77f1567d16957b769444074d630feb2e32525629f9d521c25904612f3bf",
+  "remote_exact_sha256": "df8f9255194eda499a47292211016b7ed142774291de2399a3d2f7091d2e643a",
+  "complete_parsed_JSON_objects_equal": true,
+  "remote_plan_sha_matches_actual_driver_first_event": true,
+  "scope": "Formatting difference is allowed only after full parsed-object equality. Original native argv/model/source/profile/ELF/budgets not changed by this qualification."
+}

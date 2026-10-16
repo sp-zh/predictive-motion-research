@@ -1,0 +1,45 @@
+{
+  "entry": {
+    "schema": "FRESH57_SINGLE_CONSUMED_ENTRY_STORAGE_LAYOUT_V4",
+    "utc": "2026-10-16T03:53:05.741579+00:00",
+    "driver_pid": 5260,
+    "argv": [
+      "/home/codextransfer/predictive_motion/results/phase5/session-controlled-stop-boundary12288-active32-brake64-dwell25-v2-20261015-attempt57/link-attempt1/active_first_cycle",
+      "/home/codextransfer/predictive_motion/results/phase5/session-controlled-stop-boundary12288-active32-brake64-dwell25-v2-20261015-attempt57/profile-version1/active_input.json",
+      "b912e09b4bbf09324d1e6d58be2986ff20b0a78924943e37ae4790c2429ba119",
+      "e10460c554026135c6213ea4ca24d59c4de2dbc83d391f32ca8c3d881fbfdd75",
+      "/home/codextransfer/predictive_motion/results/phase5/session-controlled-stop-boundary12288-active32-brake64-dwell25-v2-20261015-attempt57/run-attempt1/artifacts"
+    ],
+    "native_invocation_count_cap": 1,
+    "storage_layout_plan_sha256": "90f8d891321b0640d811d876280cdbc8da6b86360db65b4a99152a447231e2fb",
+    "Mac_bounded_review_new_minimum12GiB": 12884901888,
+    "old33_mode_failures_preserved_not_claimed_pass": true,
+    "previous55_56_and_failed57v1_preserved": true
+  },
+  "events": [
+    {
+      "stage": "FIRST_BUILD_CLAIM_INPUTS_NOT_YET_CHECKED",
+      "batch_elapsed_seconds": 0.00029875000109313987,
+      "plan_sha256": "df8f9255194eda499a47292211016b7ed142774291de2399a3d2f7091d2e643a"
+    },
+    {
+      "stage": "EXACT_BEFORE_INPUTS_AND_READONLY_ROSTERS_VERIFIED",
+      "batch_elapsed_seconds": 0.18923813900073583
+    },
+    {
+      "stage": "BEFORE_POPEN",
+      "batch_elapsed_seconds": 0.18937769100011792,
+      "kind": "compile",
+      "index": 1
+    },
+    {
+      "stage": "CHILD_STARTED",
+      "batch_elapsed_seconds": 0.1915247270007967,
+      "kind": "compile",
+      "index": 1,
+      "pid": 5261
+    }
+  ],
+  "last_cycle_seen": 6,
+  "terminal_present": false
+}
