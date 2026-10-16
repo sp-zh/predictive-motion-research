@@ -1,0 +1,16 @@
+{
+  "schema": "MAC_FULL_STREAM_READBACK_OF_DELL_C_COLD52_V1",
+  "remote_archive": "/home/codextransfer/predictive_motion/transfer/cold-archives/mac-origin52-transport-20261015-v1/transport.tar.gz",
+  "bytes": 1774846596,
+  "sha256": "f4e573271085a79fba7ffff54257fd4822e74d85f92b7a69e3535bbd5d9ba0ef",
+  "full_outer_crc_single_eof_no_trailing": true,
+  "raw_tar_bytes": 1799024640,
+  "Mac_second_archive_file_created": false,
+  "remote_fd_proof": {
+    "source_size": 1774846596,
+    "mode": 292,
+    "source_fd_identity_stable": true
+  },
+  "wall_s": 18.620942458044738,
+  "scope": "Independent entire Dell archive byte readback over pinned-hostkey SSH, discarded after hash/CRC validation. No Mac source removed and no native57 entered. Does not make C/D independent devices."
+}

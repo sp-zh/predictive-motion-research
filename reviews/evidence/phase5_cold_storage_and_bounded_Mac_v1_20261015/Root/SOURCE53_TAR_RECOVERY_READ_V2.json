@@ -1,0 +1,10 @@
+{
+  "scope": "Independent Mac source tar full recovery-read before Dell migration. Complete exact payload set matches separately pinned posttransport Mac READY. No inside READY is expected.",
+  "payload_members": 2535,
+  "payload_bytes": 1856020689,
+  "READY_inside_tar": false,
+  "READY_sidecar_required": true,
+  "external_ready_sha256": "09525ba487ff65bd74f1ac3681ec2713a9814fe674ab2502bb3a443d380e6abf",
+  "archive_sha256": "95b0c326db25feb290e586fc29d2921f7acbdaf12d04630b8a70d96faadd5fc2",
+  "initial_audit_failure_qualification": "First audit incorrectly required one READY member; actual2535 payload-only transport has no READY inside. Preserve first assertion failure; no payload mismatch found."
+}

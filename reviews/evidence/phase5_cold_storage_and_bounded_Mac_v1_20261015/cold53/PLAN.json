@@ -1,0 +1,27 @@
+{
+  "schema": "AUTHORIZED_MAC53_COLD_OUTER_TO_DELL_C_PLAN_V1",
+  "authorization_source": "Status chat human01a142bc-35b7-7052-9899-9edf5074d7a4 verified by Root",
+  "source_archive": "/private/tmp/phase5_stop53_transport_external_v1_20261015/transport.tar.gz",
+  "source_bytes": 1802787877,
+  "source_sha256": "95b0c326db25feb290e586fc29d2921f7acbdaf12d04630b8a70d96faadd5fc2",
+  "source_stat_mtime_ns": 1792098948388380412,
+  "source_ready_sha256": "09525ba487ff65bd74f1ac3681ec2713a9814fe674ab2502bb3a443d380e6abf",
+  "remote": "/home/codextransfer/predictive_motion/transfer/cold-archives/mac-origin53-transport-20261015-v1",
+  "minimum_actual_C_free_bytes": 85899345920,
+  "outer_tar_has_internal_READY": false,
+  "outer_tar_payloads": 2535,
+  "logical_payload_bytes": 1856020689,
+  "caps": {
+    "CPU_s": 300,
+    "AS_bytes": 805306368,
+    "FSIZE_bytes": 2147483648,
+    "copy_wall_s": 1200,
+    "verification_wall_s": 600,
+    "metadata_bytes": 67108864,
+    "manifest_directories": 512,
+    "tar_members_max": 3000,
+    "outer_raw_tar_bytes": 3221225472,
+    "inner_raw_file_bytes": 134217728
+  },
+  "scope": "Only one cold outer archive, actual C VHDX. No native57 concurrent entry, no D writes, no Windows ACL/UAC changes, no Mac deletion until Root independent proof. Mac expanded packet and original native evidence remain."
+}

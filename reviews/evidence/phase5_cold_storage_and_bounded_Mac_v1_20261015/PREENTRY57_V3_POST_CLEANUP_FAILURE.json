@@ -1,0 +1,51 @@
+{
+  "schema": "FRESH57_POST_AUTHORIZED_CACHE_CLEANUP_PREENTRY_V3_FAILED_V1",
+  "utc_post_failure_readback": "2026-10-16T03:24:11.119191+00:00",
+  "preentry_outcome": "Failed Mac >=33GiB assertion after remote C/D80GiB,1716pins,20pure/noactive succeeded. No entry wrapper dispatched.",
+  "exact_free_at_assertion": "not retained by original script; assertion proves below35433480192, do not substitute later observation",
+  "Mac_free_bytes_post_failure": 35424923648,
+  "Mac_required_bytes": 35433480192,
+  "remote_preentry_pass": {
+    "schema": "FRESH57_PREENTRY_RESOURCES_ALLINPUTS_V1",
+    "utc": "2026-10-16T03:23:38.282990+00:00",
+    "actual_CIM_volumes": [
+      {
+        "DeviceID": "C:",
+        "FreeSpace": 132855382016,
+        "Size": 488030334976
+      },
+      {
+        "DeviceID": "D:",
+        "FreeSpace": 87908872192,
+        "Size": 512098299904
+      }
+    ],
+    "C_D_80GiBeach": true,
+    "WSL_statvfs_used": false,
+    "all_distinct_inputs": 1716,
+    "identities_stable": true,
+    "pure20stable_pass": true,
+    "max_V2_codec_bytes": 3507749,
+    "longdouble_digits_measured": 64,
+    "existing_native_processes": [],
+    "argv": [
+      "/home/codextransfer/predictive_motion/results/phase5/session-controlled-stop-boundary12288-active32-brake64-dwell25-v2-20261015-attempt57/link-attempt1/active_first_cycle",
+      "/home/codextransfer/predictive_motion/results/phase5/session-controlled-stop-boundary12288-active32-brake64-dwell25-v2-20261015-attempt57/profile-version1/active_input.json",
+      "b912e09b4bbf09324d1e6d58be2986ff20b0a78924943e37ae4790c2429ba119",
+      "e10460c554026135c6213ea4ca24d59c4de2dbc83d391f32ca8c3d881fbfdd75",
+      "/home/codextransfer/predictive_motion/results/phase5/session-controlled-stop-boundary12288-active32-brake64-dwell25-v2-20261015-attempt57/run-attempt1/artifacts"
+    ],
+    "native_not_yet_entered": true
+  },
+  "native_status": {
+    "entry57_exists": false,
+    "run57_exists": false
+  },
+  "original_failure_stdout": "PREENTRY57_V3.stdout",
+  "original_failure_stderr": "PREENTRY57_V3.stderr",
+  "root_authorized_cleanup_evidence": "/private/tmp/root57_authorized_cache_cleanup_v1_20261015",
+  "no_additional_cleanup_or_dedup": true,
+  "no_repeated_entry_retry": true,
+  "phase5": "NOT_ACCEPTED",
+  "phase6": "NOT_STARTED"
+}

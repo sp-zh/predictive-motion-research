@@ -23,7 +23,37 @@ The [53–54/55 source checkpoint](../reviews/evidence/phase5_stop53_54_and_refi
 
 [Storage identities](../reviews/evidence/phase5_stop53_54_and_refinement55_v1_20261015/STORAGE_CHECKPOINT.json) explicitly mark the new full-evidence backup INCOMPLETE.53 has a complete Mac packet and verified outer transport hash;54 has a verified selected Mac packet, with remaining raw data on Dell. New comprehensive Mac/Dell archive member readback is pending the original connection. Do not describe Git or the selected54 packet as a complete experimental-data backup. The older52 complete backup remains valid and unchanged.
 
-The subsequent [original-channel/AC-power recovery and55 entry record](../reviews/evidence/connection_power_recovery55_20261015/README.md) preserves13 maintenance payloads, both2MiB SHA manifests, power before/after, Root qualifications and fresh55 startup evidence. The human UAC completed; AC four-setting values are0 and DC/battery policy is unchanged. Native55 is running after fresh resource/1711-input checks; no result or full experimental evidence backup is implied. This small recovery checkpoint is independent of the running experiment and does not gate it.
+The subsequent [original-channel/AC-power recovery and55 entry record](../reviews/evidence/connection_power_recovery55_20261015/README.md) preserves13 maintenance payloads, both2MiB SHA manifests, power before/after, Root qualifications and fresh55 startup evidence. The human UAC completed; AC four-setting values are0 and DC/battery policy is unchanged. At checkpointfc1eb89, native55 had entered after fresh resource/1711-input checks. Its later failure and actual56 result are recorded in the [55–56 checkpoint](../reviews/evidence/phase5_stop55_56_initializer_v1_20261015/README.md). [Prepared57](../reviews/evidence/phase5_boundary57_prepared_v2_20261015/README.md) passes targeted tests but has no native entry at checkpointdb83630; the original Mac33GiB resource check failed. These source/review backups do not establish a full raw-evidence archive or phase acceptance.
+
+## Dell cold storage and Mac capacity
+
+On2026-10-15 the human explicitly authorized storing suitable large files on Dell
+when Mac space is insufficient, provided this does not materially disturb the
+run. Root verified the direct user message
+`01a142bc-35b7-7052-9899-9edf5074d7a4` in status chat
+`01a10a40-558c-71a3-b343-6ff4c2709b36`.
+
+Keep runtime hot data on the original Dell WSL ext4 filesystem. Large raw
+results and cold archives may stay on Dell; Mac keeps source/Git, small review
+packets, manifests, figures and necessary samples. Avoid streaming high-frequency
+runtime logs over SSH or through DrvFS. Perform large migrations outside active
+experimental I/O. Until an explicit revised peak-space plan is documented, retain
+the original Mac33GiB and actual Dell C/D80GiB startup requirements.
+
+Check actual Windows physical-volume capacity, including the C volume hosting
+the WSL VHDX; WSL's virtual ext4 free space is not physical C-volume availability.
+Before removing a Mac archive copy, make a fresh Dell copy, verify whole SHA256,
+gzip CRC/single EOF and all tar-member size/hash identities against the immutable
+READY manifest, verify restore readability, then atomically finalize read-only
+storage and a READY record. Retain copy/verification failures. Do not remove an
+unverified unique evidence file. Record exact retained paths, hashes and which
+copies were actually read back. C and D on the same Dell are not independent
+hardware backups; removing one duplicate archive does not establish that all new
+experimental evidence is fully backed up.
+
+The [verified cold moves and explicit bounded-Mac plan](../reviews/evidence/phase5_cold_storage_and_bounded_Mac_v1_20261015/README.md) document the revised workload for fresh57. Two historical shipping duplicates (52 and53,3,577,634,473 bytes total) were copied to Dell C, fully verified and independently streamed back before their Mac shipping copies were removed. All Mac expanded52/53 payloads and the original final52 Mac/Dell archives remain. An unrelated contemporaneous free-space decline remains unexplained; process/swap cause is not established. Old33GiB resource failures remain retained.
+
+In the new named mode, full native results and full cold archives remain on Dell. Mac selected extraction is capped at272MiB, its single transport at512MiB, shared derived/ledger files at1GiB and the small Git/report/temp pool at1GiB: total below3GiB. Keeping8GiB reserve and rounding upward gives12GiB minimum Mac free space for this mode. Bind the mode/collector hashes at fresh preentry; failed partials cannot reset or enlarge the capture budget. Oversized review data stay on Dell and Mac review is incomplete. Original33GiB remains the old full-mirror mode, not a check claimed to have passed. Actual Dell C/D80GiB and every native/process/numerical/physical/stop bound remain unchanged. Dell-only full results are not independent two-device backups; complete new experimental-data backup remains incomplete.
 
 ## Required checkpoints
 
