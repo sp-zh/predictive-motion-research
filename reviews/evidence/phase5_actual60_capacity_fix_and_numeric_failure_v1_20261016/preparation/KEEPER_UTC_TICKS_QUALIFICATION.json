@@ -1,0 +1,16 @@
+{
+  "schema": "ROOT60_KEEPER_ORIGINAL_UTC_TICKS_NARROW_READONLY_QUALIFICATION_V1",
+  "actual": {
+    "Id": 29304,
+    "Name": "wsl",
+    "ActualUtc": "2026-10-16T01:29:44.8524424Z",
+    "ActualUtcTicks": "639277109848524424",
+    "ExpectedUtcTicks": "639277109848524424",
+    "UtcTicksEqual": true,
+    "LegacyCastKind": "Local",
+    "LegacyCastTicks": "639277397848524424",
+    "LegacyCastComparedToUtc": false,
+    "ReadOnly": true
+  },
+  "scope": "Exact original keeper identity retained. Legacy [datetime] cast parses UTC text to Local kind/ticks, causing comparison against UTC DateTime to be false; explicit DateTimeOffset.UtcDateTime ticks compare equal. Earlier false convenience flag preserved. No restart, configuration change or broad system investigation."
+}

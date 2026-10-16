@@ -2,7 +2,9 @@
 
 Updated 2026-10-16, America/Toronto. **Resumed by direct human “继续推进项目”.** Continue from independently reviewed offline52 and verified connection checkpoint196bf49, preserving the completed manual wait and all failures. Fresh bounded diagnostic-retention repair and actual stop/task checks are authorized within the continuous functional work package; no consumed run is reused. Phase5 NOT_ACCEPTED; Phase6 NOT_STARTED.
 
-## Actual58–59 results on 2026-10-16
+## Actual60 result and retained58–59 history on 2026-10-16
+
+[Actual60 independent result and two-device archive](../reviews/evidence/phase5_actual60_capacity_fix_and_numeric_failure_v1_20261016/README.md) record43C/86 actual2ms task halves/172ms,32active11braking,92trials183forecasts. Current43/0 exhausts512 iterations on a new7344-row matrix;22 stop predicates all fail/dwell0/50 and all44 whole boundaries miss4ms. Root verifies682 payloads/138 codecs,1725 before/after identities and every stop record. Actual0/0 retains24 complete outputs including final cycle timing, crossing59's integration failure. All2870 full-archive members/2112 native codecs and the persisted Mac whole SHA/CRC are independently verified on Mac/Dell. This is stored-evidence recoverability, not environment restoration or acceptance; older replication gaps remain. New61 saved-input cause work is not a native/offline entry, and60 remains consumed.
 
 [Prepared60 v2](../reviews/evidence/phase5_merged_diagnostics60_prepared_v2_20261016/README.md) completes36compile/25link/24pure and formal7stop/6active replays. It merges every rank/chosen field into one explicit V2 file, retaining24 directory slots, the old reader and all native/numerical/physical/stop caps. A sealed58-derived full24-name pure output-chain test includes final cycle timing and still refuses25th output; it is synthetic, not Model/C execution. All prior59 saved core bytes and six active cores match, while same-Result legacy/merged fields match completely. The original v1 unit36 test-generation compiler failure is retained; v2 changes only two malformed test string literals. No60 actual outcome is established here.
 

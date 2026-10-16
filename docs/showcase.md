@@ -6,6 +6,14 @@ These assets illustrate the stated scope and do not establish final research
 performance or physical hardware safety.
 
 
+## Actual60 braking prefix and new numerical refusal
+
+![Every actual60 braking observation](../figures/phase5_stop60_actual_braking_20261016.png)
+
+[SVG](../figures/phase5_stop60_actual_braking_20261016.svg), [all22 observations CSV](../figures/phase5_stop60_actual_braking_20261016.csv), [provenance](../figures/phase5_stop60_actual_braking_20261016.json), [independent review and backup scope](../reviews/evidence/phase5_actual60_capacity_fix_and_numeric_failure_v1_20261016/README.md).
+
+Actual60 completes43 commands/86 actual2ms task halves/172ms, then reaches512 numeric iterations at a new current43/0 state. The old59 file-count error is crossed, but all22 stop predicates fail/dwell0/50 and all44 whole4ms deadlines miss. Every observed braking point is shown; actual velocity and progress rate remain above stop limits. This shorter prefix is not a performance improvement over58 or a successful task video. Complete60 stored-evidence archive copies are independently verified on Mac and Dell; phase acceptance remains unmet.
+
 ## Actual59 output refusal and pure60 integration repair
 
 ![Actual59 and pure60 output slots](../figures/phase5_output_roster59_60_20261016.png)

@@ -1,0 +1,143 @@
+{
+  "schema": "ACTUAL60_REAL_CAPACITY_REPAIR_RETAINED_FAILURE_AND_TWO_DEVICE_ARCHIVE_CHECKPOINT_V1",
+  "files": [
+    {
+      "path": "reviews/evidence/phase5_actual60_capacity_fix_and_numeric_failure_v1_20261016/PROJECT_STATE_BEFORE60_TERMINATION.json",
+      "bytes": 5425,
+      "sha256": "14d8dd1b72797f8e3be743464912d64b2a3a4b2391f2d1000b3c8cdc1fdc32db",
+      "source": "/Users/uot/Documents/ChatGPT/ros/PROJECT_PAUSED.json"
+    },
+    {
+      "path": "reviews/evidence/phase5_actual60_capacity_fix_and_numeric_failure_v1_20261016/Root/RESULT.json",
+      "bytes": 4349,
+      "sha256": "afb6d8eceb2b3c0599e51443fbcc9068f0e0705c99219dcdbf29849e1e980ee6",
+      "source": "/private/tmp/root60_actual_review_v1_20261016/RESULT.json"
+    },
+    {
+      "path": "reviews/evidence/phase5_actual60_capacity_fix_and_numeric_failure_v1_20261016/Root/STOP_ROWS.json",
+      "bytes": 8373,
+      "sha256": "f2506d191f1c423f83e3f08293f75a909582acae1e4d8257928f69ca54075e80",
+      "source": "/private/tmp/root60_actual_review_v1_20261016/STOP_ROWS.json"
+    },
+    {
+      "path": "reviews/evidence/phase5_actual60_capacity_fix_and_numeric_failure_v1_20261016/Root/WHOLE_CYCLES.json",
+      "bytes": 23196,
+      "sha256": "049e1ecb52f8e8002e2567ff029f985fd8b44b5f8e1d5a6cad99b8b728d7836f",
+      "source": "/private/tmp/root60_actual_review_v1_20261016/WHOLE_CYCLES.json"
+    },
+    {
+      "path": "reviews/evidence/phase5_actual60_capacity_fix_and_numeric_failure_v1_20261016/Root/CODEC_RECEIPTS.json",
+      "bytes": 96748,
+      "sha256": "eb1c6db56234ecec99a94355f545c00df76772b0bf1d74ae0c719b1ffebd8f08",
+      "source": "/private/tmp/root60_actual_review_v1_20261016/CODEC_RECEIPTS.json"
+    },
+    {
+      "path": "reviews/evidence/phase5_actual60_capacity_fix_and_numeric_failure_v1_20261016/Root/FIRST_C0_CAPACITY_CROSSING.json",
+      "bytes": 582,
+      "sha256": "9df43af09dbaeb74a10e2366a35cf0d28e885da01a1029946fcf9190a4752872",
+      "source": "/private/tmp/root60_actual_review_v1_20261016/FIRST_C0_CAPACITY_CROSSING.json"
+    },
+    {
+      "path": "reviews/evidence/phase5_actual60_capacity_fix_and_numeric_failure_v1_20261016/Root/FAIL43_MATRIX_BINDING.json",
+      "bytes": 1587,
+      "sha256": "b487c56c549b7562afdfffa4d0522a0f61b99008523ad049c6ecc5fe6d403cf1",
+      "source": "/private/tmp/root60_actual_review_v1_20261016/FAIL43_MATRIX_BINDING.json"
+    },
+    {
+      "path": "reviews/evidence/phase5_actual60_capacity_fix_and_numeric_failure_v1_20261016/archive/FULL_ARCHIVE_MAC_READBACK_AND_COPY.json",
+      "bytes": 1616,
+      "sha256": "7fba8737fdc143afec382827e912dc427ba4c83bb33d767b9c407ee8c04b6818",
+      "source": "/private/tmp/root60_actual_review_v1_20261016/FULL_ARCHIVE_MAC_READBACK_AND_COPY.json"
+    },
+    {
+      "path": "reviews/evidence/phase5_actual60_capacity_fix_and_numeric_failure_v1_20261016/archive/POST_NATIVE_MAC_BACKUP_PLAN.json",
+      "bytes": 863,
+      "sha256": "98a4fc9a3dc6d67dea49d9bd7912fff3320d916363671c6cd8645f46f7c63d27",
+      "source": "/private/tmp/root60_actual_review_v1_20261016/POST_NATIVE_MAC_BACKUP_PLAN.json"
+    },
+    {
+      "path": "reviews/evidence/phase5_actual60_capacity_fix_and_numeric_failure_v1_20261016/archive/MAC_ARCHIVE_READY.json",
+      "bytes": 1251,
+      "sha256": "db739fe418902a184f0f030ea32c099f28d5f41861f823d7935ccd2a4af843ff",
+      "source": "/private/tmp/root60_actual_review_v1_20261016/MAC_ARCHIVE_READY.json"
+    },
+    {
+      "path": "reviews/evidence/phase5_actual60_capacity_fix_and_numeric_failure_v1_20261016/archive/DELL_READY.json",
+      "bytes": 1648,
+      "sha256": "3134c1f2f2aca63f3fe8a94f3a1d000bbca5a78b698a3bd6f5625d8c15a6aff5",
+      "source": "/private/tmp/root60_actual_review_v1_20261016/archive_metadata/READY.json"
+    },
+    {
+      "path": "reviews/evidence/phase5_actual60_capacity_fix_and_numeric_failure_v1_20261016/archive/METADATA_RECEIPT.json",
+      "bytes": 998,
+      "sha256": "a3c7c9952aba776e83bcf35c9e76408af22c436dee43c0a34362488f72290c42",
+      "source": "/private/tmp/root60_actual_review_v1_20261016/archive_metadata/METADATA_RECEIPT.json"
+    },
+    {
+      "path": "reviews/evidence/phase5_actual60_capacity_fix_and_numeric_failure_v1_20261016/Root/ROOT_ACTUAL_AUDITOR.py",
+      "bytes": 9924,
+      "sha256": "973d7a14c413bdf1aaf40a90e2ba47ebcf92753d0f6220ac8ddd5f63b916688b",
+      "source": "/private/tmp/root60_actual_review_v1.py"
+    },
+    {
+      "path": "reviews/evidence/phase5_actual60_capacity_fix_and_numeric_failure_v1_20261016/archive/ROOT_FULL_ARCHIVE_AUDITOR.py",
+      "bytes": 12782,
+      "sha256": "4561ca1dd60fc779552d536f6cd56650195a32e71d565137b311638122f3062c",
+      "source": "/private/tmp/root60_full_archive_mac_copy_v1.py"
+    },
+    {
+      "path": "figures/phase5_stop60_actual_braking_20261016.png",
+      "bytes": 149674,
+      "sha256": "e43f61b770b8352c492dd2d21cf6c0c193e3a2b8eea324421d6db1ee3a3715c8",
+      "source": "/private/tmp/root60_actual_review_v1_20261016/actual60_braking.png"
+    },
+    {
+      "path": "figures/phase5_stop60_actual_braking_20261016.svg",
+      "bytes": 121635,
+      "sha256": "81e075baf2983b1b62fa56714aec0434ad0f82cc792e665322482449fd4fbd3e",
+      "source": "/private/tmp/root60_actual_review_v1_20261016/actual60_braking.svg"
+    },
+    {
+      "path": "figures/phase5_stop60_actual_braking_20261016.csv",
+      "bytes": 3446,
+      "sha256": "21e5091c99dc7aaffe6b29f2584fb087588de8577f9a8bcc50c09487395397eb",
+      "source": "/private/tmp/root60_actual_review_v1_20261016/actual60_braking.csv"
+    },
+    {
+      "path": "figures/phase5_stop60_actual_braking_20261016.json",
+      "bytes": 1578,
+      "sha256": "de38f435e716217a035a68e5a1841c49a82c92c5bc95698cf04dda9a6c3ff9e0",
+      "source": "/private/tmp/root60_actual_review_v1_20261016/actual60_braking.json"
+    },
+    {
+      "path": "reviews/evidence/phase5_actual60_capacity_fix_and_numeric_failure_v1_20261016/preparation/LIVE_POWER_PARENT_RAW_READBACK.json",
+      "bytes": 3072,
+      "sha256": "5f6ed386cfdee2d5c21ae60a8f7b54cd13afa4eeb8194649391fb725177bb049",
+      "source": "/private/tmp/root60_merged_review_v1_20261016/LIVE_POWER_PARENT_RAW_READBACK.json"
+    },
+    {
+      "path": "reviews/evidence/phase5_actual60_capacity_fix_and_numeric_failure_v1_20261016/preparation/LIVE_POWER_AND_PARENT_REVIEW_V2.json",
+      "bytes": 2686,
+      "sha256": "ae6f9bebef34198ab007ba3834b48b6ec705378328d7a10d505262755afbddf8",
+      "source": "/private/tmp/root60_merged_review_v1_20261016/LIVE_POWER_AND_PARENT_REVIEW_V2.json"
+    },
+    {
+      "path": "reviews/evidence/phase5_actual60_capacity_fix_and_numeric_failure_v1_20261016/preparation/KEEPER_UTC_TICKS_QUALIFICATION.json",
+      "bytes": 771,
+      "sha256": "67179f1aabdc3d95df937c330778f226b5937a2e125cef5c220704085f0e7b2a",
+      "source": "/private/tmp/root60_merged_review_v1_20261016/KEEPER_UTC_TICKS_QUALIFICATION.json"
+    },
+    {
+      "path": "reviews/evidence/phase5_actual60_capacity_fix_and_numeric_failure_v1_20261016/preparation/READONLY_POWER_PARENT_AUDITOR.py",
+      "bytes": 6685,
+      "sha256": "a870808e076af1f2f95a0cce359a356f9f528641b55c30dd2cfc9ff07d88ee00",
+      "source": "/private/tmp/root60_live_connection_power_and_parent_v1.py"
+    },
+    {
+      "path": "reviews/evidence/phase5_actual60_capacity_fix_and_numeric_failure_v1_20261016/preparation/STATUS_CHAT_PREPARATION_RECEIPT.json",
+      "bytes": 1622,
+      "sha256": "837595dc121f233e433ba5af4877fb163c7d7c05cdb50d7175312e24c1ebcea9",
+      "source": "/private/tmp/status_offline_prep_20261016/PREPARATION_CHECKPOINT.json"
+    }
+  ]
+}

@@ -1,0 +1,93 @@
+{
+  "schema": "ROOT60_LIVE_POWER_ORIGINAL_KEEPER_FIELDS_AND_EXPIRED_PROCESS_SNAPSHOT_V2",
+  "utc": "2026-10-16T06:03:15.421385+00:00",
+  "windows": {
+    "Utc": "2026-10-16T06:03:18.1169874Z",
+    "ActiveScheme": "381b4222-f694-41f0-9685-ff5bb260df2e",
+    "Settings": [
+      {
+        "Name": "StandbyIdle",
+        "AC": 0,
+        "DC": 3600
+      },
+      {
+        "Name": "HibernateIdle",
+        "AC": 0,
+        "DC": 2147483647
+      },
+      {
+        "Name": "LidAction",
+        "AC": 0,
+        "DC": 1
+      },
+      {
+        "Name": "UnattendedSleep",
+        "AC": 0,
+        "DC": 120
+      }
+    ],
+    "ACLineStatus": 1,
+    "BatteryFlag": 1,
+    "BatteryLifePercent": 94,
+    "Keeper": {
+      "Id": 29304,
+      "Name": "wsl",
+      "StartTimeUtc": "2026-10-16T01:29:44.8524424Z",
+      "IdentityMatches": false
+    },
+    "Listeners": [
+      {
+        "LocalAddress": "169.254.118.3",
+        "LocalPort": 2222,
+        "OwningProcess": 5504
+      }
+    ],
+    "AllOperationsReadOnly": true
+  },
+  "all_four_AC_zero_and_DC_equal_original": true,
+  "AC_power_online": true,
+  "Root_exact_PID_name_UTC_start_identity_matches_original": true,
+  "raw_Windows_convenience_IdentityMatches_flag_false_preserved": true,
+  "reader_qualification": "Initial combined assertion failed on Windows convenience IdentityMatches boolean. Exact original PID/name/UTC start string is identical and independently compared on Mac; preserve false flag and do not infer keeper replacement. Exact reason for the convenience comparison false was not investigated. No remote query or system change repeated.",
+  "processes": [
+    {
+      "pid": 10448,
+      "exists": false
+    },
+    {
+      "pid": 10449,
+      "exists": false
+    },
+    {
+      "pid": 10447,
+      "exists": false
+    },
+    {
+      "pid": 415,
+      "comm": "sleep",
+      "state": "S",
+      "ppid": 413,
+      "pgrp": 415,
+      "session": 415,
+      "tty_nr": 34818,
+      "starttime_ticks": 403,
+      "SIGHUP_ignored": false,
+      "SIGHUP_caught": false
+    },
+    {
+      "pid": 589,
+      "comm": "sleep",
+      "state": "S",
+      "ppid": 584,
+      "pgrp": 589,
+      "session": 589,
+      "tty_nr": 34816,
+      "starttime_ticks": 52795,
+      "SIGHUP_ignored": false,
+      "SIGHUP_caught": false
+    }
+  ],
+  "current10448_10449_processes_absent": true,
+  "SSH_detached_supervisor_proven": false,
+  "scope": "Read-only power/keeper snapshot. Online60 processes already absent at this observation; confirm terminal result from original run, never restart. Prior SSH-attached driver state cannot prove reliable detached offline supervision. No settings modified or new offline/native task dispatched."
+}

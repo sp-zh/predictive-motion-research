@@ -1,0 +1,24 @@
+{
+  "observed_utc": "2026-10-16T06:03:41.919786+00:00",
+  "project_state": "RESUMED_BY_DIRECT_HUMAN; offline52 wait historical; no later manualwait observed",
+  "unique_mac_git_owner": "01a12eb1-3b98-7b61-8a81-9b2f4e7c5c32",
+  "unique_dell_writer": "01a114d9-3a3a-7071-b94f-624581000992",
+  "public_checkpoint": "d6c939304be3628052bf2fa2b291b1d66656f115",
+  "remote_master": "d6c939304be3628052bf2fa2b291b1d66656f115",
+  "checkpoint_scope": "Prepared60v2 source/regression plus once60 entry; running actual60 outcome/fullarchive pending",
+  "online60_process_snapshot": {
+    "driver": 10448,
+    "native": 10449,
+    "native_parent": 10448,
+    "driver_parent_sshd": 10447
+  },
+  "offline_new_batch": "NOT_STARTED: Root reports no ready new local offline task yet; only checkpoint currently.",
+  "next_offline_post_state": "MANUALWAIT; direct human in status chat required",
+  "power_live_check": "Root confirmed PowerReadAC/DC and GetSystemPowerStatus06:03:18Z: AC all0, originalDC unchanged, ACLineStatus1; keeper29304/startUTC2026-10-16T01:29:44.8524424Z direct fields match. Convenience IdentityMatches false retained, direct field match PASS.",
+  "automation_current": "ACTIVE daily02:00; pause when next offline batch end is recorded",
+  "online60_latest": "At Root06:03:18Z snapshot driver10448/native10449/parent10447 absent; writer checking natural termination; do not call running or restart.",
+  "root_live_power_evidence": [
+    "/private/tmp/root60_merged_review_v1_20261016/LIVE_POWER_PARENT_RAW_READBACK.json",
+    "/private/tmp/root60_merged_review_v1_20261016/LIVE_POWER_AND_PARENT_REVIEW_V2.json"
+  ]
+}

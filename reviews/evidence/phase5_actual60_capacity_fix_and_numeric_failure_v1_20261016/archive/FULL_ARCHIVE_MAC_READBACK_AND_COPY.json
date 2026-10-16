@@ -1,0 +1,31 @@
+{
+  "schema": "ROOT60_COMPLETE_STORED_EVIDENCE_ARCHIVE_FULL_MAC_RESTORATION_AND_DISK_COPY_V1",
+  "Dell_archive": "/home/codextransfer/predictive_motion/transfer/cold-archives/native60-complete-20261016-v2/complete60.tar.gz",
+  "Mac_archive": "/Users/uot/Documents/ChatGPT/ros/transfer/cold-backups/native60-complete-20261016-v2/complete60.tar.gz",
+  "archive_bytes": 1933348287,
+  "archive_sha256": "c50a288a6eb44a23ce25f2b2e98865267df4c62c7bfeb7fa93aa56a429d079b1",
+  "all_members_SHA_size_restoration_verified": true,
+  "members": 2870,
+  "payload_members": 2866,
+  "total_member_bytes": 1991562259,
+  "native_complete_codecs": 2112,
+  "native_raw_bytes": 5133103002,
+  "outer_tar_raw_bytes": 1996544000,
+  "full_outer_and_inner_CRC_singleEOF": true,
+  "Mac_persisted_whole_file_reopened_SHA_and_CRC_verified": true,
+  "source_files_included": 85,
+  "profile_and_active_ELF_included": true,
+  "dependency_build_caches_excluded": true,
+  "remote_fd_identity": {
+    "fd_identity_stable": true,
+    "bytes": 1933348287,
+    "mode": 292
+  },
+  "Mac_free_before": 206679306240,
+  "Mac_free_after": 204729163776,
+  "postrun_archive_cap": 4294967296,
+  "metadata_cap": 16777216,
+  "minimum33GiB_before_after_passed": true,
+  "wall_seconds": 21.680784249911085,
+  "scope": "Two independent physical Mac/Dell archive copies of complete60 stored evidence and frozen source/profile/active ELF. Not standalone environment restoration or mathematics/task/stop/phase acceptance.60 retains its current43 numeric512 failure and actual output-count repair; older replication gaps remain. Original run/capture limits untouched."
+}

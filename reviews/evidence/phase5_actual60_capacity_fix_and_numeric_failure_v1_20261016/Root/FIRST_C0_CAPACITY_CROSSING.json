@@ -1,0 +1,17 @@
+{
+  "schema": "ROOT60_ACTUAL_FIRST_CROSSED59_FILE_COUNT_FAILURE_V1",
+  "trial0_complete_binary_receipts": 24,
+  "final_cycle_timing_present_complete": true,
+  "new_merged_role_correct": true,
+  "standalone25th_diagnostic_absent": true,
+  "cycle_timing_decoded": {
+    "cycle": 0,
+    "complete": 1,
+    "wall": 4.619079581,
+    "deadline_miss": 1,
+    "commits": 1,
+    "forecasts": 2,
+    "task_steps": 2
+  },
+  "scope": "Actual first transaction saved output chain, not only synthetic. Original24 cap unchanged; cycle timing still misses4ms. No stopping/task/phase acceptance."
+}
