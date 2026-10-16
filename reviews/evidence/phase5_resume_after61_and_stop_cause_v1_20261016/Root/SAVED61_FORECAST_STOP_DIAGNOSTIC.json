@@ -1,0 +1,199 @@
+{
+  "schema": "ROOT62_EXISTING61_CANDIDATE_FORECAST_STOP_DIAGNOSTIC_V1",
+  "reader_qualification": "Initial saved-value decoder incorrectly required an optional observedMetadata field. Source serializes it conditionally; corrected reader follows presence flag. No native/Model/capture repeated.",
+  "cases": [
+    {
+      "case": "32/1",
+      "source_sha256": "061549b802acd4dcb2f9749186d83dcd6373af5311e60b525573b268736d1196",
+      "controls": 20,
+      "predicted_halves": 400,
+      "first_simultaneous_predicted_below_s": null,
+      "simultaneous_predicted_below_count": 0,
+      "at4ms": {
+        "elapsed": 0.004,
+        "v": 0.000500592750058324,
+        "a": 0.009811085905091992,
+        "w": 0.002527014006838596,
+        "alpha": 0.0352659659363408,
+        "r": 0.022745865087647598,
+        "b": 0.15294175393032047,
+        "below": false
+      },
+      "at64brake_window256ms": {
+        "elapsed": 0.256,
+        "v": 0.006776306457048655,
+        "a": 0.02409870966026172,
+        "w": 0.009191684806794479,
+        "alpha": 0.018914700281967966,
+        "r": 0.015253162572877933,
+        "b": 0.0897117775332951,
+        "below": false
+      },
+      "at800ms": {
+        "elapsed": 0.8,
+        "v": 0.0011494876449981498,
+        "a": 0.005961590142170557,
+        "w": 1.4257258568184383e-17,
+        "alpha": 0.0,
+        "r": 9.99740248268724e-14,
+        "b": 0.0,
+        "below": false
+      },
+      "first_actual_two_halves_model_errors": [
+        {
+          "q_error_inf": 0.0,
+          "v_error_inf": 1.437652080715779e-16
+        },
+        {
+          "q_error_inf": 0.0,
+          "v_error_inf": 1.5558301175166989e-16
+        }
+      ]
+    },
+    {
+      "case": "43/1",
+      "source_sha256": "5a8a5ff1376f0d74c810cb8c73dbeab9c4fc9cf623e373af2c7ad4398962872e",
+      "controls": 20,
+      "predicted_halves": 400,
+      "first_simultaneous_predicted_below_s": null,
+      "simultaneous_predicted_below_count": 0,
+      "at4ms": {
+        "elapsed": 0.004,
+        "v": 0.0010941622137440913,
+        "a": 0.013914124791502397,
+        "w": 0.0037703163307396307,
+        "alpha": 0.022304188209134743,
+        "r": 0.02419635826047901,
+        "b": 0.06701424607432298,
+        "below": false
+      },
+      "at64brake_window256ms": {
+        "elapsed": 0.256,
+        "v": 0.00506576209731509,
+        "a": 0.01898211354782269,
+        "w": 0.005246516086903604,
+        "alpha": 0.03011538148132477,
+        "r": 0.00047616985771708705,
+        "b": 0.014880276803628474,
+        "below": false
+      },
+      "at800ms": {
+        "elapsed": 0.8,
+        "v": 0.0005934767535558389,
+        "a": 0.003085229141287218,
+        "w": 3.025601687592361e-18,
+        "alpha": 0.0,
+        "r": 9.999556293281119e-14,
+        "b": 0.0,
+        "below": false
+      },
+      "first_actual_two_halves_model_errors": [
+        {
+          "q_error_inf": 0.0,
+          "v_error_inf": 1.981921571303502e-16
+        },
+        {
+          "q_error_inf": 0.0,
+          "v_error_inf": 2.422107653332617e-16
+        }
+      ]
+    },
+    {
+      "case": "74/0",
+      "source_sha256": "408e24323bc3617486b9a5947129755a9df5bb850d705f03377a083b4febf53a",
+      "controls": 20,
+      "predicted_halves": 400,
+      "first_simultaneous_predicted_below_s": null,
+      "simultaneous_predicted_below_count": 0,
+      "at4ms": {
+        "elapsed": 0.004,
+        "v": 0.0026106756150022117,
+        "a": 0.007569933877853976,
+        "w": 0.0036247285382301794,
+        "alpha": 0.0436320360599542,
+        "r": 0.0017792876488002627,
+        "b": 0.10951542383675249,
+        "below": false
+      },
+      "at64brake_window256ms": {
+        "elapsed": 0.256,
+        "v": 0.0010287977434096656,
+        "a": 0.005322160869912539,
+        "w": 1.5713737473166858e-05,
+        "alpha": 0.00034121698267059505,
+        "r": 1.0000000452613646e-09,
+        "b": 2.0055418533172227e-15,
+        "below": false
+      },
+      "at800ms": {
+        "elapsed": 0.8,
+        "v": 0.00015279923718628522,
+        "a": 0.00040667505640901527,
+        "w": 5.593593825430586e-19,
+        "alpha": 0.0,
+        "r": 9.999974762937128e-14,
+        "b": 0.0,
+        "below": false
+      },
+      "first_actual_two_halves_model_errors": [
+        {
+          "q_error_inf": 0.0,
+          "v_error_inf": 9.8879238130678e-17
+        },
+        {
+          "q_error_inf": 0.0,
+          "v_error_inf": 2.671474153004283e-16
+        }
+      ]
+    },
+    {
+      "case": "95/0",
+      "source_sha256": "fe4ce4df5b2f73ec2ba72cf76bafcaf04c3cdeea40f62cd538b6b498863a1faf",
+      "controls": 20,
+      "predicted_halves": 400,
+      "first_simultaneous_predicted_below_s": null,
+      "simultaneous_predicted_below_count": 0,
+      "at4ms": {
+        "elapsed": 0.004,
+        "v": 0.0023197021502149432,
+        "a": 0.01587348703783228,
+        "w": 0.00024400072393069677,
+        "alpha": 0.02576860266237034,
+        "r": 1.0000000002548923e-09,
+        "b": 5.887033955593021e-17,
+        "below": false
+      },
+      "at64brake_window256ms": {
+        "elapsed": 0.256,
+        "v": 0.0006655626332656772,
+        "a": 0.0032872537563224166,
+        "w": 3.600305893374388e-05,
+        "alpha": 5.9581230709469626e-05,
+        "r": 9.999999999877597e-10,
+        "b": 7.989802058480986e-19,
+        "below": false
+      },
+      "at800ms": {
+        "elapsed": 0.8,
+        "v": 0.0001229128183504465,
+        "a": 0.0003275477342024887,
+        "w": 4.851579728746018e-20,
+        "alpha": 0.0,
+        "r": 9.999999999997898e-14,
+        "b": 0.0,
+        "below": false
+      },
+      "first_actual_two_halves_model_errors": [
+        {
+          "q_error_inf": 0.0,
+          "v_error_inf": 2.693158196453993e-16
+        },
+        {
+          "q_error_inf": 0.0,
+          "v_error_inf": 1.6783449630075609e-16
+        }
+      ]
+    }
+  ],
+  "scope": "Decode genuine saved61 value-only forecasts and compare first actual2ms halves; no Model/plant invocation or new experiment. Full400 horizon is the saved forecast of a fixed candidate, not the later receding actual trajectory. Predicted simultaneous thresholds omit actual hold-anchor dwell and are not stop acceptance. Original stop sample applies accepted command w to both physical halves, while model substeps report integrated w; this difference is explicit."
+}

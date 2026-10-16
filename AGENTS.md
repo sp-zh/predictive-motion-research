@@ -1,3 +1,9 @@
+# Latest human instruction: ongoing three-chat coordination authorized (2026-10-16)
+
+Root independently verified direct human message `01a14612-3762-7902-af82-63e087a194b8`, turn `01a14612-34f3-7201-a2fe-fb6d51398929` in status chat `01a10a40-558c-71a3-b343-6ff4c2709b36`: “这类之后都自动授权 ‘授权本状态聊天、主审查和原 Dell 工作聊天，在本项目范围内互发任务、进度及结果回执’”. This is continuing human authorization for same-project task dispatches, progress and result receipts between the status chat, sole Mac Root `01a12eb1-3b98-7b61-8a81-9b2f4e7c5c32` and original sole Dell writer `01a114d9-3a3a-7071-b94f-624581000992` only. Do not repeatedly ask for this same sending authorization. Prior notification refusals and pending history remain preserved; no need to resend old refused notifications. A new concrete platform refusal still stops that specific operation and must not be bypassed.
+
+The post61 dispatch wait below is historical and has now been released by this new explicit sending grant. Actual project resumption, unchanged mathematics/physical/stop/resource/phase boundaries and the next finite-offline-batch manualwait rule remain unchanged. Root has successfully dispatched the new stopping-repair package to the existing sole writer; no62 is claimed entered until actual fresh entry evidence exists.
+
 # Latest human instruction: project resumed after offline61 (2026-10-16)
 
 Root independently verified direct human “继续” in status chat `01a10a40-558c-71a3-b343-6ff4c2709b36`, user message `01a1453d-65e4-7270-9531-272a56d2a5fd`, turn `01a1453d-6391-7b53-8856-a65fb73f3796`. Resume the same functional package from actual61 and verified public checkpoint `1f587bbcc065488d5a0a2b5931d775630b5014f3`. Preserve manualwait61, consumed61, the original64-brake stop refusal, all128 failed stop observations/dwell0/50, and every earlier failure. Do not replay or extend61.

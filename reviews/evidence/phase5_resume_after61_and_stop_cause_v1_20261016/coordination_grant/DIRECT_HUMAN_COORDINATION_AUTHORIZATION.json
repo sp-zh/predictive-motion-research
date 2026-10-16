@@ -1,0 +1,20 @@
+{
+  "schema": "DIRECT_HUMAN_PERSISTENT_THREE_CHAT_COORDINATION_AUTHORIZATION_V1",
+  "verified_utc": "2026-10-16T18:57:54.150974+00:00",
+  "source_chat": "01a10a40-558c-71a3-b343-6ff4c2709b36",
+  "source_turn": "01a14612-34f3-7201-a2fe-fb6d51398929",
+  "source_user_message": "01a14612-3762-7902-af82-63e087a194b8",
+  "exact_text": "这类之后都自动授权 “授权本状态聊天、主审查和原 Dell 工作聊天，在本项目范围内互发任务、进度及结果回执",
+  "verified_by": "Root independently read exact direct userMessage via read_thread, not only delegation",
+  "authorized_chats": [
+    "01a10a40-558c-71a3-b343-6ff4c2709b36",
+    "01a12eb1-3b98-7b61-8a81-9b2f4e7c5c32",
+    "01a114d9-3a3a-7071-b94f-624581000992"
+  ],
+  "scope": "Ongoing same-project tasks, progress and result receipts between these three existing chats only. No new recipients/projects, hardware, holdout/main/scorer, acceptance or expansion of experimental bounds.",
+  "previous_refusals_preserved": true,
+  "old_refused_notifications_resent": false,
+  "new_stopping_repair_dispatch_tool_success": true,
+  "sole_Dell_writer": "01a114d9-3a3a-7071-b94f-624581000992",
+  "native62_entered_by_Root": false
+}

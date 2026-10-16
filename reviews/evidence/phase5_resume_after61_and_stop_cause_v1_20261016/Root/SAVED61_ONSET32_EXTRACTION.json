@@ -1,0 +1,68 @@
+{
+  "schema": "ROOT62_BOUNDED_SAVED61_ONSET32_EXTRACTION_V1",
+  "source_archive_sha256": "f06f0e976963bebaeee86a612d0ecae435f128b9599041a6cc854e2d4686bcf8",
+  "previous_full_archive_and_Mac_disk_readback_retained": true,
+  "selected_member_SHA_size_and_complete_codecs_verified": true,
+  "reader_qualification": "First small extraction omitted per-directory MANIFEST required by canonical codec reader; failed after one SHA-verified saved binary was written. v2 includes original MANIFEST, validates and reuses exact existing bytes without deletion/refund. No native/Model/capture rerun.",
+  "files": [
+    {
+      "archive_member": "native61/run-attempt1/artifacts/cycle-32/trial-0/MANIFEST.yaml",
+      "local": "/private/tmp/root62_stop_cause_review_v1_20261016/saved61_onset32/MANIFEST.yaml",
+      "bytes": 12761,
+      "sha256": "6517446615c157d54a6399625bc2679590cbf31fb4785cbac38bf1ec8ba07d6b"
+    },
+    {
+      "archive_member": "native61/run-attempt1/artifacts/cycle-32/trial-0/candidate_value.bin",
+      "local": "/private/tmp/root62_stop_cause_review_v1_20261016/saved61_onset32/candidate_value.bin",
+      "bytes": 134229,
+      "sha256": "dad0f771d21271cbfd2276029bb7509878f308e244661f7d0c3ec6954b4d5e78",
+      "codec": {
+        "file": "/private/tmp/root62_stop_cause_review_v1_20261016/saved61_onset32/candidate_value.bin",
+        "codec": "GZIP_DEFLATE_V1",
+        "stored_bytes": 134229,
+        "stored_sha256": "dad0f771d21271cbfd2276029bb7509878f308e244661f7d0c3ec6954b4d5e78",
+        "raw_bytes": 247890,
+        "raw_sha256": "5d7b044d04911a3b87eda5f834727c9d4eadf171808f938c349807844e3ed663",
+        "source_complete": true,
+        "closed_raw_prefix_valid": true,
+        "scope": "source complete is separate from successful gzip prefix reconstruction; no Model/native/mathematical acceptance"
+      }
+    },
+    {
+      "archive_member": "native61/run-attempt1/artifacts/cycle-32/trial-0/observation_before.bin",
+      "local": "/private/tmp/root62_stop_cause_review_v1_20261016/saved61_onset32/observation_before.bin",
+      "bytes": 735,
+      "sha256": "4681af4863c33cfbb086f184ab9e304bee4358c66bc63ce712df4a0a3ae2587c",
+      "codec": {
+        "file": "/private/tmp/root62_stop_cause_review_v1_20261016/saved61_onset32/observation_before.bin",
+        "codec": "GZIP_DEFLATE_V1",
+        "stored_bytes": 735,
+        "stored_sha256": "4681af4863c33cfbb086f184ab9e304bee4358c66bc63ce712df4a0a3ae2587c",
+        "raw_bytes": 2743,
+        "raw_sha256": "824ff1cabacd0689dad15450e25f512999dea69e02fd2f65a2194bb130b82488",
+        "source_complete": true,
+        "closed_raw_prefix_valid": true,
+        "scope": "source complete is separate from successful gzip prefix reconstruction; no Model/native/mathematical acceptance"
+      }
+    },
+    {
+      "archive_member": "native61/run-attempt1/artifacts/cycle-32/trial-0/planning_guard.bin",
+      "local": "/private/tmp/root62_stop_cause_review_v1_20261016/saved61_onset32/planning_guard.bin",
+      "bytes": 65170,
+      "sha256": "3ff8074a2c4702e877973d8367165f3950fd1a1c4a459d574fd4a1dbebb2d60e",
+      "codec": {
+        "file": "/private/tmp/root62_stop_cause_review_v1_20261016/saved61_onset32/planning_guard.bin",
+        "codec": "GZIP_DEFLATE_V1",
+        "stored_bytes": 65170,
+        "stored_sha256": "3ff8074a2c4702e877973d8367165f3950fd1a1c4a459d574fd4a1dbebb2d60e",
+        "raw_bytes": 116855,
+        "raw_sha256": "48a7a12baf3e49d4a192b7f9c44d03e9eb9697f7efae159319cd967ecb557731",
+        "source_complete": true,
+        "closed_raw_prefix_valid": true,
+        "scope": "source complete is separate from successful gzip prefix reconstruction; no Model/native/mathematical acceptance"
+      }
+    }
+  ],
+  "wall_seconds": 1.3198220001067966,
+  "scope": "Small immutable existing61 saved-data extraction only. No replay, Model/native invocation or source mutation. This partial read does not repeat the already completed whole outer-CRC proof."
+}

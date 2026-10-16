@@ -1,0 +1,39 @@
+{
+  "schema": "SAVED61_BRAKING_CAUSE_STATIC_FIGURE_V1",
+  "source_pins": [
+    {
+      "path": "/private/tmp/root62_stop_cause_review_v1_20261016/SAVED61_FIRST_CONTROL_DIRECTION_RESTRICTION.json",
+      "bytes": 11490,
+      "sha256": "fffdffe620e95014ce5c9379a5f378d7d357d5ab83564949d3c747126e04950a"
+    },
+    {
+      "path": "/private/tmp/root62_stop_cause_review_v1_20261016/SAVED61_FORECAST_STOP_DIAGNOSTIC.json",
+      "bytes": 6334,
+      "sha256": "c050b5be71940e8f3eec197c947e4b9f3943bf2db73453bd7be1bc9b91a4969d"
+    }
+  ],
+  "interval_case": "cycle-43/trial-1",
+  "sign_convention": "alpha multiplied by sign(current accepted w); positive means instantaneous growth of |w|",
+  "selection": "All7 joints of actual61 accepted43/1. Four predefined accepted current forecasts32/1,43/1,74/0,95/0; no extrapolation or omitted case in this reviewed set. Not all actual61 forecasts.",
+  "scope": "Recorded development diagnostics only. New braking repair not verified by this image. No Model/plant/native calls.",
+  "renderer": {
+    "sha256": "feb43bb68e53e501363f807f53b54e2d3d925c1d6b2698679906cabda964dca5",
+    "matplotlib": "3.10.3",
+    "font": "DejaVu Sans",
+    "dpi": 180
+  },
+  "outputs": {
+    "csv": {
+      "bytes": 928,
+      "sha256": "aa37eabe60ea4ebf3e72e7dc9d6bd80ffe998b34c74ca71183e49fc093d741f7"
+    },
+    "png": {
+      "bytes": 161777,
+      "sha256": "7b2b0d6066dfde9877b661a4c2a0734f81532e8ef5f9a51b6b990a4810b0b66d"
+    },
+    "svg": {
+      "bytes": 98021,
+      "sha256": "c1f399c3f0ce4bb4905c07d698392b4273524d214ca6d752d260c5bb5d24fa41"
+    }
+  }
+}

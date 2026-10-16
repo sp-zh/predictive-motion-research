@@ -6,6 +6,14 @@ These assets illustrate the stated scope and do not establish final research
 performance or physical hardware safety.
 
 
+## Saved61 braking restriction and forecast response
+
+![Original61 braking restriction and saved fixed-candidate response](../figures/phase5_braking_restriction61_20261016.png)
+
+[SVG](../figures/phase5_braking_restriction61_20261016.svg), [all plotted data](../figures/phase5_braking_restriction61_20261016.csv), [source hashes and selection](../figures/phase5_braking_restriction61_20261016.json), [independent review](../reviews/evidence/phase5_resume_after61_and_stop_cause_v1_20261016/README.md).
+
+Left: actual61 accepted43/1's extra nominal-centered alpha subset forces joints2/3/4/6 to increase command speed. Right: four declared saved current candidates predict physical speed above its original limit even800ms later, despite near-zero terminal command speed. These fixed forecasts are not the later actual trajectory or a new simulation. Every joint and all four cases in the reviewed set are shown; no repair/stop/task/phase success or research ranking is implied.
+
 ## Actual61 complete declared braking prefix, stopping still fails
 
 ![Every actual61 braking observation](../figures/phase5_stop61_actual_braking_20261016.png)
