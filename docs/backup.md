@@ -1,5 +1,9 @@
 # Project backup
 
+## Human pause preservation after64
+
+[Pause checkpoint](../reviews/evidence/phase5_human_pause_after64_v1_20261016/README.md) preserves direct instruction, no-worker readback, prior state and already-created draft code/positive-failed local fixtures. Persistent Mac recovery tar8,621,391B SHAbdafc181c9e49c884cb1197e7178471427d9e4a0b47fcc28cb978381ee447cdb has108member SHA checks and whole-file CRC/SHA readback. Existing raw/failed evidence and complete64 Mac/Dell archives remain. New tests/producer integration/controller65 are stopped, not completed by the pause backup. Only a new direct human resume in the status chat releases this pause.
+
 ## Complete64 stored-evidence archive
 
 [Actual64](../reviews/evidence/phase5_actual64_braking_and_boundary87_v1_20261016/README.md):2,569,331,409B SHAd971983771de8a58b3fa721c9469ac4328c1aa9bf0e9ce14702f8806a24d0895,4076 members/2939 complete codecs, actual persisted Mac reopenSHA/CRC plus independent Dell original archive. Mac READYf526c265c3672831f18253a081c1be8b2a8a90b500469cb32f26c0fb2a1396b4. Single4GiB/metadata16MiB/Mac33GiB/C80GiB floors hold, no failure/reset. Original codec completion is distinct from failed near-boundary hint and physical stop; older gaps/no standalone environment restoration remain. Current C/D and future worst-case run+backup headroom must be checked before another native entry; no old evidence cleanup is implied.

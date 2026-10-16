@@ -1,5 +1,7 @@
 # Predictive Redundancy-Aware Motion Control
 
+**Project paused by direct human instruction on2026-10-16.** New development/builds/probes/experiments are stopped; only necessary evidence and recoverable-backup finishing continue. [Pause record](reviews/evidence/phase5_human_pause_after64_v1_20261016/README.md). Actual64 results below remain retained failures; no65 run. Resume requires a new direct human instruction in the status chat.
+
 A research project investigating finite-horizon posture selection and online path retiming for 7-DoF inspection manipulators. The intended contribution is preventive constraint handling coupled to path progress, evaluated against strong reactive baselines.
 
 **Development status: Phase0–4 component gates passed with retained failures; Phase5 is NOT_ACCEPTED and Phase6 is NOT_STARTED.** Genuine forecasts, nonlinear/geometric checks and guarded commands with two actual simulated2ms substeps are under development.

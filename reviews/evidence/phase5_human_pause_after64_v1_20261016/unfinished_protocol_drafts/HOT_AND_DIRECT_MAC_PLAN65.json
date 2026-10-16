@@ -1,0 +1,66 @@
+{
+  "schema": "FRESH65_NONDELETING_HOT3G_AND_POSTNATIVE_DIRECT_MAC_PROTOCOL_PLAN_V1",
+  "native65_NOT_ENTERED": true,
+  "old_data_deletion": false,
+  "original_global_caps_unchanged": {
+    "stored": 6442450944,
+    "logical_raw": 12884901888,
+    "tail": 33554432,
+    "nativeCPU": 2400,
+    "AS": 4294967296,
+    "nativeWall": 3000,
+    "trials": 176,
+    "forecasts": 352,
+    "commits": 121,
+    "taskhalves": 242,
+    "numeric": 1800000000,
+    "hint_iterations": 512,
+    "hint_wall": 10,
+    "hint_inventory": 745000,
+    "boundary_records": 12288,
+    "endpoints": 16384,
+    "artifact_slots": 24
+  },
+  "additional_unit_physical_hot": {
+    "cap": 3221225472,
+    "scope": "Same producer stored-byte and manifest accounting, includes original32MiB terminal reserve, extra prewrite ceiling only; original6GiB max remains separately enforced. No refund/reset/newID continuation after evidence IO cap. Old source/default path unchanged.",
+    "normal_before_finalization_cap": 3187671040
+  },
+  "fresh_storage_requirements": {
+    "C_reserve": 85899345920,
+    "prebuild_extra_build": 536870912,
+    "prebuild_extra_metadata": 134217728,
+    "prebuild_C_min": 89791660032,
+    "preentry_C_min": "fresh observed stock already allocated + untouched80GiB + newhot3GiB + remaining declared metadata; no doublecount built stock",
+    "D_min": 85899345920,
+    "Mac_native_min": 44023414784,
+    "Mac_stream_min": 39745224704,
+    "Mac_after_stream_reserve": 35433480192
+  },
+  "postnative_stream": {
+    "source_payload_cap": 3758096384,
+    "archive_aggregate_part_or_final_cap": 4294967296,
+    "all_metadata_cap": 16777216,
+    "per_source_file_cap": 268435456,
+    "max_members": 40000,
+    "max_path_utf8_bytes": 512,
+    "CPU": 600,
+    "AS": 805306368,
+    "wall": 1200,
+    "tar_raw_bound": 8858370048,
+    "producer_has_no_Dell_tar_file": true,
+    "source_digests_and_all_inner_codecs_checked_before_stream": true,
+    "prepare_metadata_consumed_once_stream_token": true,
+    "producer_stdout": "Only bounded gzip tar bytes, counted and SHA while unbuffered os.write; successbyteSHA on small stderr and STREAM_READY.json after complete EOF.",
+    "consumer": "Root one capped Mac.part + byteSHA/complete tar expected member set/each content SHA/full inner codec stored+rawSHA CRC singleEOF, outerCRC; producerSHA match; fsync/read-only atomic rename then reopened physical Mac SHA+CRC before independent MacREADY.",
+    "failure": "Macpart retained and charged to same4GiB, no automatic retry/reset/refund; all Dell native original/failure files remain immutable.",
+    "copy_scope": "Dell complete original native files+metadata and Mac complete recoverable archive on two physical devices; no Dell secondtar or complete standalone environment claim."
+  },
+  "protocol_test": {
+    "purpose": "Separate small fixed development fixture, never actual65 backup or Model run",
+    "aggregate_Mac_test_files_cap": 16777216,
+    "source_fixture_cap": 8388608,
+    "at_most_two_fresh_test_streams": "one success persistence/reopen and one intentional pipe failure, shared16MiB testcap, exact originals preserved",
+    "native_gate": "New65 entry only after frozen sources/targeted regression/hot and stream end-to-end finite evidence; no new human microedit gate."
+  }
+}

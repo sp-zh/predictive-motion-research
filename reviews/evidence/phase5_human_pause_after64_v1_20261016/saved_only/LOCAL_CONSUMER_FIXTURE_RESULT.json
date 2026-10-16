@@ -1,0 +1,27 @@
+{
+  "schema": "ROOT65_MAC_CONSUMER_REAL_CODEC_AND_UNKNOWN_CRC_COUNTEREXAMPLE_TESTS_V1",
+  "producer": "Local owned synthetic fixture producer; not the real Dell implementation/integration test",
+  "source_complete_and_source_failure_prefix_canonical_reader_verified": true,
+  "tests": [
+    {
+      "case": "mixed_complete_closedprefix_UNKNOWN",
+      "success": true,
+      "counts": {
+        "source_complete": 1,
+        "closed_source_failure_prefix": 1,
+        "unknown_stored_only": 1
+      },
+      "stored_unknown_bytes_restored_exact": true,
+      "Mac_READY_sha256": "a263d14fd634883b3deeeb53f5bd9b480cab2cc534973af37b5c0aae1cc40ad7"
+    },
+    {
+      "case": "badCRC_falsely_claimed_valid",
+      "correctly_rejected": true,
+      "error": "ValueError('inner CRC/EOF/raw SHA mismatch')",
+      "partial_preserved": true,
+      "no_READY": true,
+      "no_retry": true
+    }
+  ],
+  "scope": "Two distinct bounded fixture IDs, no actual65/Model/native/hardware execution. All stored member/known inner rawSHA/CRC and actual Mac whole-file reopen tested; UNKNOWN has stored-byte recovery only. Every failure retained and no retry/refund. Real fixed-hostkey SSH producer stream end-to-end still required."
+}
