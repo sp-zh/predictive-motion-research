@@ -1,0 +1,15 @@
+from pathlib import Path
+import json,subprocess,resource,os,time,hashlib
+B=Path('/home/codextransfer/predictive_motion');owner=json.loads((B/'PHASE5_WRITER_STATE_20261007.json').read_text());assert owner['owner_thread_id']=='01a114d9-3a3a-7071-b94f-624581000992'and owner['state']=='ACTIVE_SINGLE_WRITER'
+v=subprocess.run(['/mnt/c/Windows/System32/WindowsPowerShell/v1.0/powershell.exe','-NoProfile','-NonInteractive','-Command','Get-CimInstance Win32_LogicalDisk | Select-Object DeviceID,FreeSpace,Size | ConvertTo-Json -Compress'],stdin=subprocess.DEVNULL,capture_output=True,timeout=15);assert v.returncode==0;vol=json.loads(v.stdout.decode('utf-8-sig'));free={x['DeviceID']:int(x['FreeSpace'])for x in vol};assert free['C:']>=80*1024**3+3*1024**3+128*1024**2+16*1024**2 and free['D:']>=80*1024**3+512*1024**2+128*1024**2,free
+P=Path('/mnt/d/CodexTransfer/phase5-build65-20261016');assert P.parent.resolve()==P.parent and not P.exists();P.mkdir();Q=P/'drvfs-qualification1';Q.mkdir();T=Q/'scratch';T.mkdir();source=Q/'constant_no_model.cpp';source.write_text('int main(){return 0;}\n');source.chmod(0o600);elf=Q/'constant_no_model';env={'PATH':'/usr/bin:/bin','LANG':'C','LC_ALL':'C','TZ':'UTC','TMPDIR':str(T),'TMP':str(T),'TEMP':str(T)}
+def limits():
+ for k,n in [(resource.RLIMIT_CPU,5),(resource.RLIMIT_AS,256*1024**2),(resource.RLIMIT_FSIZE,1024**2),(resource.RLIMIT_CORE,0),(resource.RLIMIT_NOFILE,32)]:resource.setrlimit(k,(n,n))
+argv=['/usr/bin/g++','-pipe','-fno-use-linker-plugin','-Wl,--build-id=none',str(source),'-o',str(elf)];r=subprocess.run(argv,cwd=Q,env=env,stdin=subprocess.DEVNULL,capture_output=True,timeout=10,preexec_fn=limits);assert len(r.stdout)+len(r.stderr)<=65536
+run=None
+if r.returncode==0:
+ elf.chmod(0o700);run=subprocess.run([str(elf)],cwd=Q,env=env,stdin=subprocess.DEVNULL,capture_output=True,timeout=3,preexec_fn=limits)
+stock=[{'path':str(q.relative_to(P)),'bytes':q.stat().st_size,'mode':oct(q.stat().st_mode&0o7777),'sha256':hashlib.sha256(q.read_bytes()).hexdigest()}for q in P.rglob('*')if q.is_file()];assert sum(x['bytes']for x in stock)<16*1024**2
+out={'schema':'FRESH_D_DRVFS_BUILD65_QUALIFICATION_ONLY_V1','CIM':vol,'build_root':str(P),'new_qualification_cap':16*1024**2,'build512MiB_total_includes_qualification':True,'all_declared_scratch_TMPDIR_TMP_TEMP':str(T),'argv':argv,'compile_exit':r.returncode,'compile_stderr':r.stderr.decode()[-65536:],'constant_no_model_execution_exit':None if run is None else run.returncode,'scratch_remaining_files':len(list(T.rglob('*'))),'stock':stock,'native65_or_Model_entry':False,'old_evidence_modified_or_deleted':False,'scope':'Only new D scoped constant empty-main executable compile/launch and mode observed. Does not qualify controller source, native65 runtime, whole future build stock prewrite plan, stop or Phase5.'};b=(json.dumps(out,indent=2)+'\n').encode();assert len(b)<65536
+with(Q/'QUALIFICATION.json').open('xb')as f:f.write(b);f.flush();os.fsync(f.fileno())
+print(json.dumps(out));assert r.returncode==0 and run.returncode==0 and not list(T.rglob('*'))

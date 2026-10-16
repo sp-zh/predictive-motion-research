@@ -1,0 +1,1120 @@
+{
+  "files": [
+    {
+      "path": "tools/phase5_controlled_stop_session_v18/README.md",
+      "bytes": 4816,
+      "sha256": "0823349a83b8145f3703be06d372d523efa7729af0f713efa1c14a1685d5f3c5",
+      "source": "/private/tmp/root65_prepared_review_v1_20261016/actual-prepared-readback/src/README.md"
+    },
+    {
+      "path": "tools/phase5_controlled_stop_session_v18/active_first_cycle.cpp",
+      "bytes": 57831,
+      "sha256": "c115920977603777aa7bd2834ec2865640ac862ec23702b734e3806603df2fd9",
+      "source": "/private/tmp/root65_prepared_review_v1_20261016/actual-prepared-readback/src/active_first_cycle.cpp"
+    },
+    {
+      "path": "tools/phase5_controlled_stop_session_v18/actual_stop_monitor.hpp",
+      "bytes": 3580,
+      "sha256": "beaf7d76164638ebe035c9961a9f6a940becac7a62395444c55e301c006d0a4c",
+      "source": "/private/tmp/root65_prepared_review_v1_20261016/actual-prepared-readback/src/actual_stop_monitor.hpp"
+    },
+    {
+      "path": "tools/phase5_controlled_stop_session_v18/actual_stop_monitor_tests.cpp",
+      "bytes": 3830,
+      "sha256": "cd56b9dc8dff809d10eb8ada519d37c551b9347c64d0c6500d05683fb3e9b5af",
+      "source": "/private/tmp/root65_prepared_review_v1_20261016/actual-prepared-readback/src/actual_stop_monitor_tests.cpp"
+    },
+    {
+      "path": "tools/phase5_controlled_stop_session_v18/actual_task_metrics.hpp",
+      "bytes": 1883,
+      "sha256": "83bb0f21e0bfa830b4d8f7e356f9f7c2ce916c49d540c948588d5e460e07d900",
+      "source": "/private/tmp/root65_prepared_review_v1_20261016/actual-prepared-readback/src/actual_task_metrics.hpp"
+    },
+    {
+      "path": "tools/phase5_controlled_stop_session_v18/actual_task_metrics_tests.cpp",
+      "bytes": 1359,
+      "sha256": "00bea8673e19abc62233e5933722eae94c35b7540d4f3d2c5e609dc2a83b374c",
+      "source": "/private/tmp/root65_prepared_review_v1_20261016/actual-prepared-readback/src/actual_task_metrics_tests.cpp"
+    },
+    {
+      "path": "tools/phase5_controlled_stop_session_v18/affine_assembly.cpp",
+      "bytes": 28981,
+      "sha256": "d478eda1f0fe97bfc41851515f4baa3e485fd4a57968a62dcb6233ae1157bbd5",
+      "source": "/private/tmp/root65_prepared_review_v1_20261016/actual-prepared-readback/src/affine_assembly.cpp"
+    },
+    {
+      "path": "tools/phase5_controlled_stop_session_v18/affine_assembly.hpp",
+      "bytes": 6026,
+      "sha256": "6faee2961242052c7655da41e8988dd0844f14c3cfa885672aa7c03eaa1dcb57",
+      "source": "/private/tmp/root65_prepared_review_v1_20261016/actual-prepared-readback/src/affine_assembly.hpp"
+    },
+    {
+      "path": "tools/phase5_controlled_stop_session_v18/boundary_retention_codec_tests.cpp",
+      "bytes": 3137,
+      "sha256": "52bd351c91922c6fe6c5ad2f6ba1371a44c553e0aea005f75552cf5ca5368098",
+      "source": "/private/tmp/root65_prepared_review_v1_20261016/actual-prepared-readback/src/boundary_retention_codec_tests.cpp"
+    },
+    {
+      "path": "tools/phase5_controlled_stop_session_v18/boundary_retention_limits57.hpp",
+      "bytes": 3043,
+      "sha256": "1165b30678843fc54dfcf3f87804f4f945a452b5005075a4d4ad32970251fb72",
+      "source": "/private/tmp/root65_prepared_review_v1_20261016/actual-prepared-readback/src/boundary_retention_limits57.hpp"
+    },
+    {
+      "path": "tools/phase5_controlled_stop_session_v18/bounded_current_trials.hpp",
+      "bytes": 2347,
+      "sha256": "4d7663f1dbc75bd125ca5319817f6b2b363222310ce337f06f0a468e1cd8ef61",
+      "source": "/private/tmp/root65_prepared_review_v1_20261016/actual-prepared-readback/src/bounded_current_trials.hpp"
+    },
+    {
+      "path": "tools/phase5_controlled_stop_session_v18/bounded_current_trials_tests.cpp",
+      "bytes": 1724,
+      "sha256": "dc8ce680a0c19249c3462003f23f80e2f4dba5a58a7a921de851bff5074fb23b",
+      "source": "/private/tmp/root65_prepared_review_v1_20261016/actual-prepared-readback/src/bounded_current_trials_tests.cpp"
+    },
+    {
+      "path": "tools/phase5_controlled_stop_session_v18/bounded_flat_progress_seed_tests.cpp",
+      "bytes": 6001,
+      "sha256": "dcf9081d258d88f64f10935df307f3f4b619d6677986ecac7e62ddc872faeb65",
+      "source": "/private/tmp/root65_prepared_review_v1_20261016/actual-prepared-readback/src/bounded_flat_progress_seed_tests.cpp"
+    },
+    {
+      "path": "tools/phase5_controlled_stop_session_v18/bounded_flat_progress_seed_v4.hpp",
+      "bytes": 4855,
+      "sha256": "0365f8fc9035c0be9f778adc92702339aa1bd297caadb82836a5a53e388f8fd4",
+      "source": "/private/tmp/root65_prepared_review_v1_20261016/actual-prepared-readback/src/bounded_flat_progress_seed_v4.hpp"
+    },
+    {
+      "path": "tools/phase5_controlled_stop_session_v18/bounded_global_interval_seed_v6.hpp",
+      "bytes": 10754,
+      "sha256": "a4f239ab1f31a3a3ca9f56e73feec8dfd52d2f12695165a296f1126322c47a6a",
+      "source": "/private/tmp/root65_prepared_review_v1_20261016/actual-prepared-readback/src/bounded_global_interval_seed_v6.hpp"
+    },
+    {
+      "path": "tools/phase5_controlled_stop_session_v18/bounded_progress_seed.hpp",
+      "bytes": 4309,
+      "sha256": "6dc1d317db9504ec248dda3f04ef2917bd4850de027c032575eff5d0f39c4ff0",
+      "source": "/private/tmp/root65_prepared_review_v1_20261016/actual-prepared-readback/src/bounded_progress_seed.hpp"
+    },
+    {
+      "path": "tools/phase5_controlled_stop_session_v18/bounded_progress_seed_tests.cpp",
+      "bytes": 2670,
+      "sha256": "78d76a69ced03c25e90242203e3ef5d61a858ada18d8fd1ee854d76b53f965d3",
+      "source": "/private/tmp/root65_prepared_review_v1_20261016/actual-prepared-readback/src/bounded_progress_seed_tests.cpp"
+    },
+    {
+      "path": "tools/phase5_controlled_stop_session_v18/bounded_row_progress_seed_tests.cpp",
+      "bytes": 7690,
+      "sha256": "0be38cd032a886767830f2cb3249fb1d929f188ea50fd6c436b2ffee08d561bd",
+      "source": "/private/tmp/root65_prepared_review_v1_20261016/actual-prepared-readback/src/bounded_row_progress_seed_tests.cpp"
+    },
+    {
+      "path": "tools/phase5_controlled_stop_session_v18/bounded_row_progress_seed_v5.hpp",
+      "bytes": 7364,
+      "sha256": "15d83707fac469d2f4ff404a12c9d46dc994acd57d56c0ad49f3de45f435238d",
+      "source": "/private/tmp/root65_prepared_review_v1_20261016/actual-prepared-readback/src/bounded_row_progress_seed_v5.hpp"
+    },
+    {
+      "path": "tools/phase5_controlled_stop_session_v18/box_screen_tests.cpp",
+      "bytes": 2954,
+      "sha256": "d922876babec2867dd1293bcee259ac12e4b2a6af5a30dd551209e097c0abaf8",
+      "source": "/private/tmp/root65_prepared_review_v1_20261016/actual-prepared-readback/src/box_screen_tests.cpp"
+    },
+    {
+      "path": "tools/phase5_controlled_stop_session_v18/braking_nominal62_codec.hpp",
+      "bytes": 4779,
+      "sha256": "186a7698b9e4fbc4b9452253aff93a1a3b48c601ba8763ee2115d902f6f7d8f3",
+      "source": "/private/tmp/root65_prepared_review_v1_20261016/actual-prepared-readback/src/braking_nominal62_codec.hpp"
+    },
+    {
+      "path": "tools/phase5_controlled_stop_session_v18/braking_nominal63_codec.hpp",
+      "bytes": 4938,
+      "sha256": "7c7aa4d4646f2fc0a3afff8670e1546e912d9442163a4b22a44a8613f4523e8f",
+      "source": "/private/tmp/root65_prepared_review_v1_20261016/actual-prepared-readback/src/braking_nominal63_codec.hpp"
+    },
+    {
+      "path": "tools/phase5_controlled_stop_session_v18/candidate_validation.cpp",
+      "bytes": 10659,
+      "sha256": "aa76869432f465e45c48acf777913eea5972414a145eedbf02645035773f63e9",
+      "source": "/private/tmp/root65_prepared_review_v1_20261016/actual-prepared-readback/src/candidate_validation.cpp"
+    },
+    {
+      "path": "tools/phase5_controlled_stop_session_v18/candidate_validation.hpp",
+      "bytes": 1526,
+      "sha256": "d816bedb47cff25c49a0d5577a9fa805771816caa1dc406d4772c1ee843fe4fa",
+      "source": "/private/tmp/root65_prepared_review_v1_20261016/actual-prepared-readback/src/candidate_validation.hpp"
+    },
+    {
+      "path": "tools/phase5_controlled_stop_session_v18/counted_geometry.hpp",
+      "bytes": 7359,
+      "sha256": "aede8b1a2b4f5a17e00c7fd477a3db0e9264eab2539c7aa20eb97f62959d9401",
+      "source": "/private/tmp/root65_prepared_review_v1_20261016/actual-prepared-readback/src/counted_geometry.hpp"
+    },
+    {
+      "path": "tools/phase5_controlled_stop_session_v18/current_alpha_trust.hpp",
+      "bytes": 4084,
+      "sha256": "e22e52d912cce18c61aaba4a907a92117853d047020a5bc0a614cb663fd83e78",
+      "source": "/private/tmp/root65_prepared_review_v1_20261016/actual-prepared-readback/src/current_alpha_trust.hpp"
+    },
+    {
+      "path": "tools/phase5_controlled_stop_session_v18/current_alpha_trust_tests.cpp",
+      "bytes": 2903,
+      "sha256": "adb42a13804dd8ccfd6fc665cdd37aab5a33ab990ca5ac5ae1ac31450ea9a04d",
+      "source": "/private/tmp/root65_prepared_review_v1_20261016/actual-prepared-readback/src/current_alpha_trust_tests.cpp"
+    },
+    {
+      "path": "tools/phase5_controlled_stop_session_v18/current_braking_nominal62.hpp",
+      "bytes": 9401,
+      "sha256": "00d0e83bf68cdaf2251701a0c7b422e93629d97bcae0e398c6404775d304e5a7",
+      "source": "/private/tmp/root65_prepared_review_v1_20261016/actual-prepared-readback/src/current_braking_nominal62.hpp"
+    },
+    {
+      "path": "tools/phase5_controlled_stop_session_v18/current_braking_nominal62_tests.cpp",
+      "bytes": 9306,
+      "sha256": "e738285cc7c7cbe729acb4f3a19ec866f3016036458c2319319a74c430d06134",
+      "source": "/private/tmp/root65_prepared_review_v1_20261016/actual-prepared-readback/src/current_braking_nominal62_tests.cpp"
+    },
+    {
+      "path": "tools/phase5_controlled_stop_session_v18/current_braking_nominal63.hpp",
+      "bytes": 10721,
+      "sha256": "76e157bad87f66e24e760908a2d05613e8a2eab073689fffe4cde359c96e95e0",
+      "source": "/private/tmp/root65_prepared_review_v1_20261016/actual-prepared-readback/src/current_braking_nominal63.hpp"
+    },
+    {
+      "path": "tools/phase5_controlled_stop_session_v18/current_braking_nominal63_tests.cpp",
+      "bytes": 9233,
+      "sha256": "13c2a14385d031882b8db7ad48e35eb7be9bc7292a48793070211fc90134b375",
+      "source": "/private/tmp/root65_prepared_review_v1_20261016/actual-prepared-readback/src/current_braking_nominal63_tests.cpp"
+    },
+    {
+      "path": "tools/phase5_controlled_stop_session_v18/current_numeric_guess.hpp",
+      "bytes": 14409,
+      "sha256": "c61a9845c4d805a2a39539cee4c8882e6db679ae81b4b25ea87cff15ece87fd3",
+      "source": "/private/tmp/root65_prepared_review_v1_20261016/actual-prepared-readback/src/current_numeric_guess.hpp"
+    },
+    {
+      "path": "tools/phase5_controlled_stop_session_v18/current_numeric_guess_before_endpoint_capacity48.hpp",
+      "bytes": 9313,
+      "sha256": "60b45d2dcb7b7539d8b8120fe3d0a96c3c6a27b3f79c6f3fc246561876b1c450",
+      "source": "/private/tmp/root65_prepared_review_v1_20261016/actual-prepared-readback/src/current_numeric_guess_before_endpoint_capacity48.hpp"
+    },
+    {
+      "path": "tools/phase5_controlled_stop_session_v18/current_numeric_guess_before_fraction_repair39.hpp",
+      "bytes": 4718,
+      "sha256": "bb935c5cbc1c3a09717142947d285b8f2009fe8ae8e47d433703dc815a322972",
+      "source": "/private/tmp/root65_prepared_review_v1_20261016/actual-prepared-readback/src/current_numeric_guess_before_fraction_repair39.hpp"
+    },
+    {
+      "path": "tools/phase5_controlled_stop_session_v18/current_numeric_guess_before_rank_repair43.hpp",
+      "bytes": 5930,
+      "sha256": "6347f1499b3ef91ceaea247035664bb52e1e3cd09cfdf168380861610e502999",
+      "source": "/private/tmp/root65_prepared_review_v1_20261016/actual-prepared-readback/src/current_numeric_guess_before_rank_repair43.hpp"
+    },
+    {
+      "path": "tools/phase5_controlled_stop_session_v18/current_numeric_guess_before_working_basis_repair47.hpp",
+      "bytes": 7368,
+      "sha256": "f3009331a4da83edc27faaefbf3c9a3af8ad4cdaaa4cd578843d60bd31fabfa6",
+      "source": "/private/tmp/root65_prepared_review_v1_20261016/actual-prepared-readback/src/current_numeric_guess_before_working_basis_repair47.hpp"
+    },
+    {
+      "path": "tools/phase5_controlled_stop_session_v18/current_numeric_oracle.cpp",
+      "bytes": 1845,
+      "sha256": "43e2f0fc6cab95382ff9741669f82d21d43670db633088c6141106bf40a95cac",
+      "source": "/private/tmp/root65_prepared_review_v1_20261016/actual-prepared-readback/src/current_numeric_oracle.cpp"
+    },
+    {
+      "path": "tools/phase5_controlled_stop_session_v18/current_numeric_tests.cpp",
+      "bytes": 3100,
+      "sha256": "f915a7eec36722e45268d443af9bee310fdb1e9a3720c9250b8dca1d0993abf9",
+      "source": "/private/tmp/root65_prepared_review_v1_20261016/actual-prepared-readback/src/current_numeric_tests.cpp"
+    },
+    {
+      "path": "tools/phase5_controlled_stop_session_v18/cycle_support.hpp",
+      "bytes": 7265,
+      "sha256": "f73f3726bc9bfafd2a0a1102b0f679b1144e23cc0fce60fe2ec1c588bd623991",
+      "source": "/private/tmp/root65_prepared_review_v1_20261016/actual-prepared-readback/src/cycle_support.hpp"
+    },
+    {
+      "path": "tools/phase5_controlled_stop_session_v18/cycle_support_tests.cpp",
+      "bytes": 7461,
+      "sha256": "fd5e44a1cf39785555b2eef4e9d46e1ef26435ce8976a7660ce3a06a3dbad5a5",
+      "source": "/private/tmp/root65_prepared_review_v1_20261016/actual-prepared-readback/src/cycle_support_tests.cpp"
+    },
+    {
+      "path": "tools/phase5_controlled_stop_session_v18/evidence_buffer_tests.cpp",
+      "bytes": 6554,
+      "sha256": "a3dcddee70a0ad8c5b71ee3ee51b26a762f5b07feb87bcb47fcf8407e124bee7",
+      "source": "/private/tmp/root65_prepared_review_v1_20261016/actual-prepared-readback/src/evidence_buffer_tests.cpp"
+    },
+    {
+      "path": "tools/phase5_controlled_stop_session_v18/evidence_compression_tests.cpp",
+      "bytes": 7645,
+      "sha256": "cbc733b9990d09e4da624ae520a40ff705545c8d49993086a797116617917aea",
+      "source": "/private/tmp/root65_prepared_review_v1_20261016/actual-prepared-readback/src/evidence_compression_tests.cpp"
+    },
+    {
+      "path": "tools/phase5_controlled_stop_session_v18/exact_cycle_endpoint61.hpp",
+      "bytes": 3543,
+      "sha256": "400a0fbd0ccf9521300673408ad547816dd7d4af40e8e3f6647adf8f0b964f37",
+      "source": "/private/tmp/root65_prepared_review_v1_20261016/actual-prepared-readback/src/exact_cycle_endpoint61.hpp"
+    },
+    {
+      "path": "tools/phase5_controlled_stop_session_v18/exact_cycle_endpoint61_tests.cpp",
+      "bytes": 6899,
+      "sha256": "1ba4453d22aa1c3102e2b2aed12ec42e97e8265cd73a95337cc11933db9221bf",
+      "source": "/private/tmp/root65_prepared_review_v1_20261016/actual-prepared-readback/src/exact_cycle_endpoint61_tests.cpp"
+    },
+    {
+      "path": "tools/phase5_controlled_stop_session_v18/fine_timing.hpp",
+      "bytes": 1160,
+      "sha256": "17e519005d4740fdf78b85029ece68cf70f75f9f111fc2130061d45acece7f07",
+      "source": "/private/tmp/root65_prepared_review_v1_20261016/actual-prepared-readback/src/fine_timing.hpp"
+    },
+    {
+      "path": "tools/phase5_controlled_stop_session_v18/fine_timing_tests.cpp",
+      "bytes": 1251,
+      "sha256": "fc29f2387722763c6601aef677dabfc1685d958093fa799a34452c33aa1c482f",
+      "source": "/private/tmp/root65_prepared_review_v1_20261016/actual-prepared-readback/src/fine_timing_tests.cpp"
+    },
+    {
+      "path": "tools/phase5_controlled_stop_session_v18/flat_progress_seed_codec.hpp",
+      "bytes": 7863,
+      "sha256": "8cd4ea7557e0b6a08595a8f7d64dfeff45f9fdf2a595277d2f2d13df023f4951",
+      "source": "/private/tmp/root65_prepared_review_v1_20261016/actual-prepared-readback/src/flat_progress_seed_codec.hpp"
+    },
+    {
+      "path": "tools/phase5_controlled_stop_session_v18/flat_progress_seed_codec_tests.cpp",
+      "bytes": 7506,
+      "sha256": "f4e196dba28f8c411e66897a62840855cd95a168e1a9138cdec2c628c60e8461",
+      "source": "/private/tmp/root65_prepared_review_v1_20261016/actual-prepared-readback/src/flat_progress_seed_codec_tests.cpp"
+    },
+    {
+      "path": "tools/phase5_controlled_stop_session_v18/fraction_repair_regression.cpp",
+      "bytes": 2199,
+      "sha256": "6377f1275266aa159c740acc95cf559a475bc447dbf1eeadcead115d3bb13a5e",
+      "source": "/private/tmp/root65_prepared_review_v1_20261016/actual-prepared-readback/src/fraction_repair_regression.cpp"
+    },
+    {
+      "path": "tools/phase5_controlled_stop_session_v18/global_interval_codec_tests.cpp",
+      "bytes": 4078,
+      "sha256": "fcddfd8078ca39f0a3284a54f26080f1ed0c17f3bc87d55c9d95b8bc470cad96",
+      "source": "/private/tmp/root65_prepared_review_v1_20261016/actual-prepared-readback/src/global_interval_codec_tests.cpp"
+    },
+    {
+      "path": "tools/phase5_controlled_stop_session_v18/global_interval_progress_seed_codec.hpp",
+      "bytes": 13513,
+      "sha256": "170e2047f6c375c2612983a67df308a682cdf7e8f88a5fa487f7e0b91b775c6d",
+      "source": "/private/tmp/root65_prepared_review_v1_20261016/actual-prepared-readback/src/global_interval_progress_seed_codec.hpp"
+    },
+    {
+      "path": "tools/phase5_controlled_stop_session_v18/global_interval_seed_tests.cpp",
+      "bytes": 7641,
+      "sha256": "96973a77ef05fa95927cc9ebb685ed44b330ecd58fdbda7cb64fe8c1c8ae7f67",
+      "source": "/private/tmp/root65_prepared_review_v1_20261016/actual-prepared-readback/src/global_interval_seed_tests.cpp"
+    },
+    {
+      "path": "tools/phase5_controlled_stop_session_v18/hint_boundary_event_codec.hpp",
+      "bytes": 1694,
+      "sha256": "9d121462d0328495e1d8505f596162dd807f0b7e726b701dd0c51ade50c2eaa9",
+      "source": "/private/tmp/root65_prepared_review_v1_20261016/actual-prepared-readback/src/hint_boundary_event_codec.hpp"
+    },
+    {
+      "path": "tools/phase5_controlled_stop_session_v18/integrated_horizon_qp.cpp",
+      "bytes": 163353,
+      "sha256": "2ac2fd3725c691b518253df9b64ae6fca15138ac94a59babbe53d6fc2d362060",
+      "source": "/private/tmp/root65_prepared_review_v1_20261016/actual-prepared-readback/src/integrated_horizon_qp.cpp"
+    },
+    {
+      "path": "tools/phase5_controlled_stop_session_v18/integrated_horizon_qp.hpp",
+      "bytes": 13332,
+      "sha256": "eee2ade31b2c7e73c96226e1c52d8d29e343931c0d2a6ccfd4a2c3943dc9a4a3",
+      "source": "/private/tmp/root65_prepared_review_v1_20261016/actual-prepared-readback/src/integrated_horizon_qp.hpp"
+    },
+    {
+      "path": "tools/phase5_controlled_stop_session_v18/invariant_tests.cpp",
+      "bytes": 4721,
+      "sha256": "f5a859d4cf9d79a5ae1b533b8dd62776f2bba6599dfdf691a2915ef3296a33f9",
+      "source": "/private/tmp/root65_prepared_review_v1_20261016/actual-prepared-readback/src/invariant_tests.cpp"
+    },
+    {
+      "path": "tools/phase5_controlled_stop_session_v18/kkt_refinement_tests.cpp",
+      "bytes": 2090,
+      "sha256": "297654dc72a914ff6705a7c1a4eef49efa5d821eb1b4df4519c09f547bbf5334",
+      "source": "/private/tmp/root65_prepared_review_v1_20261016/actual-prepared-readback/src/kkt_refinement_tests.cpp"
+    },
+    {
+      "path": "tools/phase5_controlled_stop_session_v18/latest_numeric_context.hpp",
+      "bytes": 500,
+      "sha256": "717bb483f24e9fdc09cb835c43a96b4b8c28c03007ed384be6436398cb262b48",
+      "source": "/private/tmp/root65_prepared_review_v1_20261016/actual-prepared-readback/src/latest_numeric_context.hpp"
+    },
+    {
+      "path": "tools/phase5_controlled_stop_session_v18/linear_box_screen.hpp",
+      "bytes": 3916,
+      "sha256": "b649eff43293a3078b7b46a0166fa0f8a2ac59f3a8496c8c73a98c275fed96d1",
+      "source": "/private/tmp/root65_prepared_review_v1_20261016/actual-prepared-readback/src/linear_box_screen.hpp"
+    },
+    {
+      "path": "tools/phase5_controlled_stop_session_v18/lossless_evidence.cpp",
+      "bytes": 21906,
+      "sha256": "a75d258b34592ba6e9dbad93ea82a967cf14bd9e66f2469a6293dffe1a2bd09b",
+      "source": "/private/tmp/root65_prepared_review_v1_20261016/actual-prepared-readback/src/lossless_evidence.cpp"
+    },
+    {
+      "path": "tools/phase5_controlled_stop_session_v18/lossless_evidence.hpp",
+      "bytes": 2890,
+      "sha256": "b5c2b722e55bfddfefeac3a3c7086064b0bd57a167409c0e775c42b12135e176",
+      "source": "/private/tmp/root65_prepared_review_v1_20261016/actual-prepared-readback/src/lossless_evidence.hpp"
+    },
+    {
+      "path": "tools/phase5_controlled_stop_session_v18/lossless_stream_storage_tests.cpp",
+      "bytes": 6650,
+      "sha256": "597ca1e80987424674b98695c1f212c23179eb1a54cb32a2928a82b1b35097b5",
+      "source": "/private/tmp/root65_prepared_review_v1_20261016/actual-prepared-readback/src/lossless_stream_storage_tests.cpp"
+    },
+    {
+      "path": "tools/phase5_controlled_stop_session_v18/lossless_stream_storage_v4.hpp",
+      "bytes": 6103,
+      "sha256": "152058dc1c6b17a14d4a8f070997433ed113e4a9a2bd82d2953d1a395f838365",
+      "source": "/private/tmp/root65_prepared_review_v1_20261016/actual-prepared-readback/src/lossless_stream_storage_v4.hpp"
+    },
+    {
+      "path": "tools/phase5_controlled_stop_session_v18/merged_cycle_diagnostics61.hpp",
+      "bytes": 4769,
+      "sha256": "04682064d91463a8b39b437cf1ba36540059911640d949f657c646b56dc3f4da",
+      "source": "/private/tmp/root65_prepared_review_v1_20261016/actual-prepared-readback/src/merged_cycle_diagnostics61.hpp"
+    },
+    {
+      "path": "tools/phase5_controlled_stop_session_v18/merged_hint_diagnostics60.hpp",
+      "bytes": 3669,
+      "sha256": "df403ddd881c80ea5ee186dcdd760c6e14b99190316d5d148fa30efa557f92a9",
+      "source": "/private/tmp/root65_prepared_review_v1_20261016/actual-prepared-readback/src/merged_hint_diagnostics60.hpp"
+    },
+    {
+      "path": "tools/phase5_controlled_stop_session_v18/merged_hint_diagnostics60_tests.cpp",
+      "bytes": 4504,
+      "sha256": "ce1edfcdc54e3ff74b126a7099c485caf8fbdab85d0c264233d22e6d5b2a506b",
+      "source": "/private/tmp/root65_prepared_review_v1_20261016/actual-prepared-readback/src/merged_hint_diagnostics60_tests.cpp"
+    },
+    {
+      "path": "tools/phase5_controlled_stop_session_v18/model_boundary.cpp",
+      "bytes": 21644,
+      "sha256": "05d68f4a05ec1d9c0c1c57695a3209758037e736de90c7be5a791e27e3902d98",
+      "source": "/private/tmp/root65_prepared_review_v1_20261016/actual-prepared-readback/src/model_boundary.cpp"
+    },
+    {
+      "path": "tools/phase5_controlled_stop_session_v18/model_boundary.hpp",
+      "bytes": 4554,
+      "sha256": "b7d3849502e5c5a53618532b6892e264833adc8d78bd45c850da9c1d9533131d",
+      "source": "/private/tmp/root65_prepared_review_v1_20261016/actual-prepared-readback/src/model_boundary.hpp"
+    },
+    {
+      "path": "tools/phase5_controlled_stop_session_v18/negative_leaving59.hpp",
+      "bytes": 1716,
+      "sha256": "b6c0342d3538e49d2a6bf9f2a73ded8eadc48db59a541e1d8566b8ca0bb10eb4",
+      "source": "/private/tmp/root65_prepared_review_v1_20261016/actual-prepared-readback/src/negative_leaving59.hpp"
+    },
+    {
+      "path": "tools/phase5_controlled_stop_session_v18/negative_leaving59_tests.cpp",
+      "bytes": 4196,
+      "sha256": "e8fd6b317bba6141941bdfc9b1011e7ed3ed987b505a04af9a8e294da258442c",
+      "source": "/private/tmp/root65_prepared_review_v1_20261016/actual-prepared-readback/src/negative_leaving59_tests.cpp"
+    },
+    {
+      "path": "tools/phase5_controlled_stop_session_v18/negative_leaving_codec59.hpp",
+      "bytes": 4138,
+      "sha256": "bade3173dd42108713c7aa8bcf935bf22699a98d948b56fff87de5eda5d9b7f5",
+      "source": "/private/tmp/root65_prepared_review_v1_20261016/actual-prepared-readback/src/negative_leaving_codec59.hpp"
+    },
+    {
+      "path": "tools/phase5_controlled_stop_session_v18/nominal_geometry_provider.hpp",
+      "bytes": 3544,
+      "sha256": "7269a27ae1cdf5d623b726a52092adb074df8c6e032bcc1cd2c4845acafaf498",
+      "source": "/private/tmp/root65_prepared_review_v1_20261016/actual-prepared-readback/src/nominal_geometry_provider.hpp"
+    },
+    {
+      "path": "tools/phase5_controlled_stop_session_v18/nominal_geometry_selection.hpp",
+      "bytes": 2524,
+      "sha256": "6a41cc80feca43509d234c5aaf70e9a4c4de77abfa9b8eabfec6b6541b7711fa",
+      "source": "/private/tmp/root65_prepared_review_v1_20261016/actual-prepared-readback/src/nominal_geometry_selection.hpp"
+    },
+    {
+      "path": "tools/phase5_controlled_stop_session_v18/normalization.cpp",
+      "bytes": 23976,
+      "sha256": "a0cd0c9cdb505f922f1744f24cf115057b6ba9f3a9bc1b3ed0c9bdb82d358ed5",
+      "source": "/private/tmp/root65_prepared_review_v1_20261016/actual-prepared-readback/src/normalization.cpp"
+    },
+    {
+      "path": "tools/phase5_controlled_stop_session_v18/normalization.hpp",
+      "bytes": 4288,
+      "sha256": "9456be5c205f23d2aa2210eac02286d030204a446af003ee85362b971ccb43d8",
+      "source": "/private/tmp/root65_prepared_review_v1_20261016/actual-prepared-readback/src/normalization.hpp"
+    },
+    {
+      "path": "tools/phase5_controlled_stop_session_v18/observer_tests.cpp",
+      "bytes": 3834,
+      "sha256": "18bef19661326132aac7396998b07395acd20e83c69b70b520fea855915b5e83",
+      "source": "/private/tmp/root65_prepared_review_v1_20261016/actual-prepared-readback/src/observer_tests.cpp"
+    },
+    {
+      "path": "tools/phase5_controlled_stop_session_v18/owner_binding.hpp",
+      "bytes": 745,
+      "sha256": "26a058244f7ef8f6d9353857637270623e18e706a061bccc3be4cffb66a54354",
+      "source": "/private/tmp/root65_prepared_review_v1_20261016/actual-prepared-readback/src/owner_binding.hpp"
+    },
+    {
+      "path": "tools/phase5_controlled_stop_session_v18/owner_binding_tests.cpp",
+      "bytes": 832,
+      "sha256": "891c6b39bf5a9d23c581f6c25a60876cc336c0f299d79239c06cdd04ac447fd4",
+      "source": "/private/tmp/root65_prepared_review_v1_20261016/actual-prepared-readback/src/owner_binding_tests.cpp"
+    },
+    {
+      "path": "tools/phase5_controlled_stop_session_v18/physical_braking65_tests.cpp",
+      "bytes": 14215,
+      "sha256": "3f4472573e33567b84662c68d7ab2f3623f3fbafeb343ad46a5cc38e9428caf1",
+      "source": "/private/tmp/root65_prepared_review_v1_20261016/actual-prepared-readback/src/physical_braking65_tests.cpp"
+    },
+    {
+      "path": "tools/phase5_controlled_stop_session_v18/physical_braking_codec65.hpp",
+      "bytes": 4156,
+      "sha256": "5d068849078e2d6d3637ab02964f9515ab8d749bdf4205ca23cc9ec93a0dbdb8",
+      "source": "/private/tmp/root65_prepared_review_v1_20261016/actual-prepared-readback/src/physical_braking_codec65.hpp"
+    },
+    {
+      "path": "tools/phase5_controlled_stop_session_v18/physical_braking_nominal65.hpp",
+      "bytes": 8665,
+      "sha256": "8743d5db8a982b337941c5094903f48b8a19399557ef02029b6035c47c2fe929",
+      "source": "/private/tmp/root65_prepared_review_v1_20261016/actual-prepared-readback/src/physical_braking_nominal65.hpp"
+    },
+    {
+      "path": "tools/phase5_controlled_stop_session_v18/progress_interior_guard.hpp",
+      "bytes": 4089,
+      "sha256": "03fde0d535b571890b166fef3cf08a91dfa4c848fddeb17105562f40980eab73",
+      "source": "/private/tmp/root65_prepared_review_v1_20261016/actual-prepared-readback/src/progress_interior_guard.hpp"
+    },
+    {
+      "path": "tools/phase5_controlled_stop_session_v18/progress_interior_guard_tests.cpp",
+      "bytes": 2560,
+      "sha256": "7ea392de6be2289fa86d0524c55827e20bc7e6e0c2f419a886051c6c67cc47b7",
+      "source": "/private/tmp/root65_prepared_review_v1_20261016/actual-prepared-readback/src/progress_interior_guard_tests.cpp"
+    },
+    {
+      "path": "tools/phase5_controlled_stop_session_v18/roundoff_command64.hpp",
+      "bytes": 3032,
+      "sha256": "c0c0a9eee1b12a6faa8ba6e76b828b35eb0a1ada9793b4d6bff4585a526220b3",
+      "source": "/private/tmp/root65_prepared_review_v1_20261016/actual-prepared-readback/src/roundoff_command64.hpp"
+    },
+    {
+      "path": "tools/phase5_controlled_stop_session_v18/roundoff_command64_tests.cpp",
+      "bytes": 2864,
+      "sha256": "59095638206c9cabfcfbafda4aea705e40374d497d5c4a118cf01f86f59dd1ef",
+      "source": "/private/tmp/root65_prepared_review_v1_20261016/actual-prepared-readback/src/roundoff_command64_tests.cpp"
+    },
+    {
+      "path": "tools/phase5_controlled_stop_session_v18/roundoff_merged64_codec.hpp",
+      "bytes": 5173,
+      "sha256": "477fbebe7ce3218e00963189de8cee12dbb2fa5adb73531779b61571300f749a",
+      "source": "/private/tmp/root65_prepared_review_v1_20261016/actual-prepared-readback/src/roundoff_merged64_codec.hpp"
+    },
+    {
+      "path": "tools/phase5_controlled_stop_session_v18/runtime_observer.cpp",
+      "bytes": 37768,
+      "sha256": "3370439af398e3f6c425750712ff4df9acf2f0166d072fc9b35cecca2761bd72",
+      "source": "/private/tmp/root65_prepared_review_v1_20261016/actual-prepared-readback/src/runtime_observer.cpp"
+    },
+    {
+      "path": "tools/phase5_controlled_stop_session_v18/runtime_observer.hpp",
+      "bytes": 9121,
+      "sha256": "b6f9098a00ccecfc6104a655d3e6897cb35ffb030c96dab252dfdcfacab0d278",
+      "source": "/private/tmp/root65_prepared_review_v1_20261016/actual-prepared-readback/src/runtime_observer.hpp"
+    },
+    {
+      "path": "tools/phase5_controlled_stop_session_v18/session_primitives.hpp",
+      "bytes": 2259,
+      "sha256": "0b76bc232ed81dc9b4831617ae1690cfc287def914b8bca5f05ce6e6e25b6080",
+      "source": "/private/tmp/root65_prepared_review_v1_20261016/actual-prepared-readback/src/session_primitives.hpp"
+    },
+    {
+      "path": "tools/phase5_controlled_stop_session_v18/solver_forensics.cpp",
+      "bytes": 26514,
+      "sha256": "664c1d480e23c1ddef4f45a57165cba871213740329f8693c897d7c07ee7af27",
+      "source": "/private/tmp/root65_prepared_review_v1_20261016/actual-prepared-readback/src/solver_forensics.cpp"
+    },
+    {
+      "path": "tools/phase5_controlled_stop_session_v18/solver_forensics.hpp",
+      "bytes": 860,
+      "sha256": "02b3a3d33ea64a351b228b96b2e0590b7a79fb4e9b87da78dc28c59465aca3bb",
+      "source": "/private/tmp/root65_prepared_review_v1_20261016/actual-prepared-readback/src/solver_forensics.hpp"
+    },
+    {
+      "path": "tools/phase5_controlled_stop_session_v18/stop_objective_factors.hpp",
+      "bytes": 601,
+      "sha256": "08506d74ccb15a684b4ba0e68c935340085fd56d15df7cd12689cc7fc0acb544",
+      "source": "/private/tmp/root65_prepared_review_v1_20261016/actual-prepared-readback/src/stop_objective_factors.hpp"
+    },
+    {
+      "path": "tools/phase5_controlled_stop_session_v18/stop_tail_byte_bound.hpp",
+      "bytes": 1435,
+      "sha256": "2233d0e8441726c50ea97b8dcc0108b49e8c3e11d00b8add122ee34d3b6c05a9",
+      "source": "/private/tmp/root65_prepared_review_v1_20261016/actual-prepared-readback/src/stop_tail_byte_bound.hpp"
+    },
+    {
+      "path": "tools/phase5_controlled_stop_session_v18/task_local_provider.cpp",
+      "bytes": 1839,
+      "sha256": "051b424236979f9fe7ea4cb96564f54969025c997bfba2c61d347a23f7fbae4c",
+      "source": "/private/tmp/root65_prepared_review_v1_20261016/actual-prepared-readback/src/task_local_provider.cpp"
+    },
+    {
+      "path": "tools/phase5_controlled_stop_session_v18/task_local_provider.hpp",
+      "bytes": 640,
+      "sha256": "1819e2f626fb0ff65ad7e7e8de0b0b52f625e6bf435b073d7cca55722d76f093",
+      "source": "/private/tmp/root65_prepared_review_v1_20261016/actual-prepared-readback/src/task_local_provider.hpp"
+    },
+    {
+      "path": "tools/phase5_controlled_stop_session_v18/working_face_basis.hpp",
+      "bytes": 5342,
+      "sha256": "25e1e2b5d21780331838d45e40857e28e67a2231f39bf8ab1d97aa90721b818c",
+      "source": "/private/tmp/root65_prepared_review_v1_20261016/actual-prepared-readback/src/working_face_basis.hpp"
+    },
+    {
+      "path": "tools/phase5_controlled_stop_session_v18/working_face_basis_tests.cpp",
+      "bytes": 2175,
+      "sha256": "ce0226e8d6d2c6514eb9f0a8f7bb84580c8d588a407ddd1882c2e2db74364e22",
+      "source": "/private/tmp/root65_prepared_review_v1_20261016/actual-prepared-readback/src/working_face_basis_tests.cpp"
+    },
+    {
+      "path": "tools/phase5_controlled_stop_session_v18/working_face_trace_codec.hpp",
+      "bytes": 8156,
+      "sha256": "4788658a90d0a091ec87b611b245dd9077cc1893f8c5c531eb677f17ecf8d731",
+      "source": "/private/tmp/root65_prepared_review_v1_20261016/actual-prepared-readback/src/working_face_trace_codec.hpp"
+    },
+    {
+      "path": "tools/phase5_controlled_stop_session_v18/working_face_trace_codec_tests.cpp",
+      "bytes": 5885,
+      "sha256": "bc8d6849964ff551fe395958879288f12f40024dbd9b874d90c2ced37da27fd2",
+      "source": "/private/tmp/root65_prepared_review_v1_20261016/actual-prepared-readback/src/working_face_trace_codec_tests.cpp"
+    },
+    {
+      "path": "reviews/evidence/phase5_physical_braking65_prepared_v1_20261016/runtime-v2/active_run_plan65_v2.json",
+      "bytes": 534884,
+      "sha256": "4526d9354b061afea08344551e95124b284cadf995a853caced7232e5ca916bb",
+      "source": "/private/tmp/root65_prepared_review_v1_20261016/actual-prepared-v2-readback/active_run_plan65_v2.json"
+    },
+    {
+      "path": "reviews/evidence/phase5_physical_braking65_prepared_v1_20261016/runtime-v2/PREENTRY65_REMOTE_V2.py",
+      "bytes": 6062,
+      "sha256": "d816c7521df11173f2a4a188987a82f1c0493966c5dbfcdaf45260eb9d182ba1",
+      "source": "/private/tmp/root65_prepared_review_v1_20261016/actual-prepared-v2-readback/PREENTRY65_REMOTE_V2.py"
+    },
+    {
+      "path": "reviews/evidence/phase5_physical_braking65_prepared_v1_20261016/runtime-v2/active_run_driver65_v2.py",
+      "bytes": 8550,
+      "sha256": "db97ea501690be64336c77071f1092393bc24a83dbf016899afca8e77010861d",
+      "source": "/private/tmp/root65_prepared_review_v1_20261016/actual-prepared-v2-readback/active_run_driver65_v2.py"
+    },
+    {
+      "path": "reviews/evidence/phase5_physical_braking65_prepared_v1_20261016/runtime-v2/memfd_build_driver_v2.py",
+      "bytes": 8693,
+      "sha256": "1d943f0afa487010d808bac634c9b3e6507704515aefc177a8e8260a6a2df098",
+      "source": "/private/tmp/root65_prepared_review_v1_20261016/actual-prepared-v2-readback/memfd_build_driver_v2.py"
+    },
+    {
+      "path": "reviews/evidence/phase5_physical_braking65_prepared_v1_20261016/runtime-v2/STORAGE_LAYOUT65_V2.json",
+      "bytes": 3000,
+      "sha256": "c4c97641d4488d89b48fbd72ccfbb1177a8c726640ac733bdccba3447b621076",
+      "source": "/private/tmp/root65_prepared_review_v1_20261016/actual-prepared-v2-readback/STORAGE_LAYOUT65_V2.json"
+    },
+    {
+      "path": "reviews/evidence/phase5_physical_braking65_prepared_v1_20261016/runtime-v2/once_entry65_v2.py",
+      "bytes": 2190,
+      "sha256": "938c288677cb97a0951b18ff1e4955973cdb6328b9ed248fe3f824d3588c4517",
+      "source": "/private/tmp/root65_prepared_review_v1_20261016/actual-prepared-v2-readback/once_entry65_v2.py"
+    },
+    {
+      "path": "reviews/evidence/phase5_physical_braking65_prepared_v1_20261016/runtime-v2/TARGETED_BUILD_PLAN65_V1.json",
+      "bytes": 169827,
+      "sha256": "dcbfbbe23484ab54ddf2b2115f51509d0317c1a1d07dca99fa3e0356408838cb",
+      "source": "/private/tmp/root65_prepared_review_v1_20261016/actual-prepared-v2-readback/TARGETED_BUILD_PLAN65_V1.json"
+    },
+    {
+      "path": "reviews/evidence/phase5_physical_braking65_prepared_v1_20261016/runtime-v2/direct_mac_archive_producer65_v5.py",
+      "bytes": 14091,
+      "sha256": "d8c02982c6df8dbf6615f8f64fecadcf5902b4ffaf49227fda973f49597a34ba",
+      "source": "/private/tmp/root65_prepared_review_v1_20261016/actual-prepared-v2-readback/direct_mac_archive_producer65_v5.py"
+    },
+    {
+      "path": "tools/cold_stream_backup_v1/direct_mac_archive_producer65_v5.py",
+      "bytes": 14091,
+      "sha256": "d8c02982c6df8dbf6615f8f64fecadcf5902b4ffaf49227fda973f49597a34ba",
+      "source": "/private/tmp/root65_prepared_review_v1_20261016/actual-prepared-v2-readback/direct_mac_archive_producer65_v5.py"
+    },
+    {
+      "path": "reviews/evidence/phase5_physical_braking65_prepared_v1_20261016/profile-version1/active_input.json",
+      "bytes": 331290,
+      "sha256": "003e4f44801dc1ab84830d9ae951b9204d85fa888caa2508a0a96c113adafbff",
+      "source": "/private/tmp/root65_prepared_review_v1_20261016/actual-prepared-readback/profile-version1/active_input.json"
+    },
+    {
+      "path": "reviews/evidence/phase5_physical_braking65_prepared_v1_20261016/SOURCE_IDENTITIES65_DRAFT4.json",
+      "bytes": 29803,
+      "sha256": "b6bbb6cc04cd089463b9c1be507f4bb1cfa347eee80b99a3c9c93f311f209608",
+      "source": "/private/tmp/root65_prepared_review_v1_20261016/actual-prepared-readback/SOURCE_IDENTITIES65_DRAFT4.json"
+    },
+    {
+      "path": "reviews/evidence/phase5_physical_braking65_prepared_v1_20261016/RUNTIME_LEGACY_KEYS_QUALIFICATION65_V1.json",
+      "bytes": 1199,
+      "sha256": "5068738163658f17b81002499abb51af61d51fa35ba115e67e7cc01397f3f6f3",
+      "source": "/private/tmp/root65_prepared_review_v1_20261016/actual-prepared-readback/RUNTIME_LEGACY_KEYS_QUALIFICATION65_V1.json"
+    },
+    {
+      "path": "reviews/evidence/phase5_physical_braking65_prepared_v1_20261016/Root/LIVE_CONNECTION_RESOURCES_REVIEW.json",
+      "bytes": 2085,
+      "sha256": "595e98e5406f3717782e7efea9217a2322d1ef32f479390a639b2b4bd815c2f1",
+      "source": "/private/tmp/root65_prepared_review_v1_20261016/LIVE_CONNECTION_RESOURCES_REVIEW.json"
+    },
+    {
+      "path": "reviews/evidence/phase5_physical_braking65_prepared_v1_20261016/Root/ACTUAL_PREPARED_ORIGINAL_SSH_READBACK.json",
+      "bytes": 17961,
+      "sha256": "171ace8f01f64a759f1eddf53c41bb5727e1fe9487db46c0d47c00ad5700a59a",
+      "source": "/private/tmp/root65_prepared_review_v1_20261016/ACTUAL_PREPARED_ORIGINAL_SSH_READBACK.json"
+    },
+    {
+      "path": "reviews/evidence/phase5_physical_braking65_prepared_v1_20261016/Root/ACTUAL_V2_PREPARED_ORIGINAL_SSH_READBACK.json",
+      "bytes": 1123,
+      "sha256": "9db5fcf3ded8ba9ae1a96c9c24d99396156482a1ce50a118a366c4a6ad2d1a8a",
+      "source": "/private/tmp/root65_prepared_review_v1_20261016/ACTUAL_V2_PREPARED_ORIGINAL_SSH_READBACK.json"
+    },
+    {
+      "path": "reviews/evidence/phase5_physical_braking65_prepared_v1_20261016/Root/PROFILE_AND_SOURCE_SCOPE_REVIEW.json",
+      "bytes": 938,
+      "sha256": "ef56dbf2862f78eaee35c6c405ddc793d09d1fabd31b7662d10f714fe00f782f",
+      "source": "/private/tmp/root65_prepared_review_v1_20261016/PROFILE_AND_SOURCE_SCOPE_REVIEW.json"
+    },
+    {
+      "path": "reviews/evidence/phase5_physical_braking65_prepared_v1_20261016/Root/READBACK_ROSTER_ASSUMPTION_FAILURE.json",
+      "bytes": 219,
+      "sha256": "3e6ce77cfb721b6cb85e8088fc841d7d7aa3e764b0b4bb664f184d4cd2960d98",
+      "source": "/private/tmp/root65_prepared_review_v1_20261016/READBACK_ROSTER_ASSUMPTION_FAILURE.json"
+    },
+    {
+      "path": "reviews/evidence/phase5_physical_braking65_prepared_v1_20261016/Root/ORIGINAL_SSH_PURE_READBACK_RECEIPT.json",
+      "bytes": 2268,
+      "sha256": "e084fa2de7146cc2253e5f7de6f97889a8b0a3c789d75d8fe7f578b447473ace",
+      "source": "/private/tmp/root65_codec_independent_review_v1_20261016/ORIGINAL_SSH_PURE_READBACK_RECEIPT.json"
+    },
+    {
+      "path": "reviews/evidence/phase5_physical_braking65_prepared_v1_20261016/Root/SAVED87_READER_FAILURE_V1.json",
+      "bytes": 216,
+      "sha256": "e4c5c296cf0e5d41024fd09dcef3431885c6408cde1ee436a876fc188a6256c9",
+      "source": "/private/tmp/root65_codec_independent_review_v1_20261016/SAVED87_READER_FAILURE_V1.json"
+    },
+    {
+      "path": "reviews/evidence/phase5_physical_braking65_prepared_v1_20261016/Root/REAL_CPP_CODEC_AND_SCALAR_REVIEW.json",
+      "bytes": 2030,
+      "sha256": "d9f446d2f0de3e743479823259c1427356981f569a48e1dce6a9fc90838e22b3",
+      "source": "/private/tmp/root65_codec_independent_review_v1_20261016/REAL_CPP_CODEC_AND_SCALAR_REVIEW.json"
+    },
+    {
+      "path": "reviews/evidence/phase5_physical_braking65_prepared_v1_20261016/Root/READER_FAILURE_V1.json",
+      "bytes": 277,
+      "sha256": "2a21689392c9c749b396da8ce99f2bc13ce046e79ff78cbd03c7b4599b5bd764",
+      "source": "/private/tmp/root65_codec_independent_review_v1_20261016/READER_FAILURE_V1.json"
+    },
+    {
+      "path": "reviews/evidence/phase5_physical_braking65_prepared_v1_20261016/Root/CORRECT_OFFSET_SAVED87_NUMERIC_CERTIFICATE.json",
+      "bytes": 1296,
+      "sha256": "702ae3ddba589b3e9dba65de7f2629a731282b4f70538c3bc65639a22c07adc9",
+      "source": "/private/tmp/root65_codec_independent_review_v1_20261016/CORRECT_OFFSET_SAVED87_NUMERIC_CERTIFICATE.json"
+    },
+    {
+      "path": "reviews/evidence/phase5_physical_braking65_prepared_v1_20261016/Root/STATIC_SOURCE_AND_RESOURCE_REVIEW.json",
+      "bytes": 1352,
+      "sha256": "674fc850c0a6a59fb2e34f9293ffa9492a6e8b84d91d93af73a932876a4acf75",
+      "source": "/private/tmp/root65_codec_independent_review_v1_20261016/STATIC_SOURCE_AND_RESOURCE_REVIEW.json"
+    },
+    {
+      "path": "reviews/evidence/phase5_physical_braking65_prepared_v1_20261016/Root/CORRECT_OFFSET_SAVED87_NUMERIC_CERTIFICATE_V2.json",
+      "bytes": 1391,
+      "sha256": "9f698b67e865b2c9b594bc20846ee9ec76f8647732ac1d5c938341acfc391a1e",
+      "source": "/private/tmp/root65_codec_independent_review_v1_20261016/CORRECT_OFFSET_SAVED87_NUMERIC_CERTIFICATE_V2.json"
+    },
+    {
+      "path": "reviews/evidence/phase5_physical_braking65_prepared_v1_20261016/Root/FIRST_PROGRESS_OFFSET_FORMULA_REVIEW.json",
+      "bytes": 1653,
+      "sha256": "60fedfa85d22facff55c19c1e353582eeb1d182fcf05130d3b5d22bc1ff032f1",
+      "source": "/private/tmp/root65_codec_independent_review_v1_20261016/FIRST_PROGRESS_OFFSET_FORMULA_REVIEW.json"
+    },
+    {
+      "path": "reviews/evidence/phase5_physical_braking65_prepared_v1_20261016/Root/DEFAULT_OLD63_BYTECOMPATIBILITY.json",
+      "bytes": 962,
+      "sha256": "ec2ad28f0e7b732b49925a14c2776e7cf1a74268512346e4ba97b337af4a0c6d",
+      "source": "/private/tmp/root65_codec_independent_review_v1_20261016/DEFAULT_OLD63_BYTECOMPATIBILITY.json"
+    },
+    {
+      "path": "reviews/evidence/phase5_physical_braking65_prepared_v1_20261016/Root/CORRECT_BAND_ORIGINAL_SSH_READBACK.json",
+      "bytes": 2578,
+      "sha256": "c69ba6fdb5c4a8f565a17ff64b11dc12be0d9d7d67f63b06c9d96fb72f02ebe6",
+      "source": "/private/tmp/root65_codec_independent_review_v1_20261016/CORRECT_BAND_ORIGINAL_SSH_READBACK.json"
+    },
+    {
+      "path": "reviews/evidence/phase5_physical_braking65_prepared_v1_20261016/Root/SAVED87_READER_FAILURE_V2.json",
+      "bytes": 206,
+      "sha256": "1ed26dbabe0435f19ab88b1d7742b82f419f06f81eca867de58e6d0bfb4a91ad",
+      "source": "/private/tmp/root65_codec_independent_review_v1_20261016/SAVED87_READER_FAILURE_V2.json"
+    },
+    {
+      "path": "reviews/evidence/phase5_physical_braking65_prepared_v1_20261016/Root/reader.py",
+      "bytes": 6042,
+      "sha256": "ac71854b3bab7bd8ef186b0818d4c32c7a0fbfc153feabf6dccfe6b6536c9167",
+      "source": "/private/tmp/root65_codec_independent_review_v1_20261016/reader.py"
+    },
+    {
+      "path": "reviews/evidence/phase5_physical_braking65_prepared_v1_20261016/Root/run_real_codec_review_v2.py",
+      "bytes": 3093,
+      "sha256": "b97c149d47a6a00998eb4cbfcd2dccac9bb33afe89d13419186adf7424327e5c",
+      "source": "/private/tmp/root65_codec_independent_review_v1_20261016/run_real_codec_review_v2.py"
+    },
+    {
+      "path": "reviews/evidence/phase5_physical_braking65_prepared_v1_20261016/Root/run_correct_saved87_review_v1.py",
+      "bytes": 4232,
+      "sha256": "5f02c38ae3464c56a548ad712d78ec190c86f96c106f51eac4b80de843e143d2",
+      "source": "/private/tmp/root65_codec_independent_review_v1_20261016/run_correct_saved87_review_v1.py"
+    },
+    {
+      "path": "reviews/evidence/phase5_physical_braking65_prepared_v1_20261016/Root/run_correct_saved87_review_v2.py",
+      "bytes": 4254,
+      "sha256": "8e340a0300a15fcf295801179bbb53bf5b5a9afe4555cb8949dddaab51fc329d",
+      "source": "/private/tmp/root65_codec_independent_review_v1_20261016/run_correct_saved87_review_v2.py"
+    },
+    {
+      "path": "reviews/evidence/phase5_physical_braking65_prepared_v1_20261016/Root/run_correct_saved87_review_v3.py",
+      "bytes": 4260,
+      "sha256": "f39e84c11ab3ff8fabf25ef0863b60bfbffa8f6e4441e6703082a6125c536f9c",
+      "source": "/private/tmp/root65_codec_independent_review_v1_20261016/run_correct_saved87_review_v3.py"
+    },
+    {
+      "path": "reviews/evidence/phase5_physical_braking65_prepared_v1_20261016/Root/run_correct_saved87_review_v4.py",
+      "bytes": 4403,
+      "sha256": "54d27f23887fe56b30062928767311382db3102e4bf3d6867de68db1cf735b0b",
+      "source": "/private/tmp/root65_codec_independent_review_v1_20261016/run_correct_saved87_review_v4.py"
+    },
+    {
+      "path": "reviews/evidence/phase5_physical_braking65_prepared_v1_20261016/build/BUILD_RESULT.json",
+      "bytes": 161164,
+      "sha256": "3394a3eed5d465124ead4e5d31fe2e5f9c1d3b3fc67e0fb1e55729e044fca6ff",
+      "source": "/private/tmp/root65_codec_independent_review_v1_20261016/actual-pure-readback/targeted-build-attempt1/BUILD_RESULT.json"
+    },
+    {
+      "path": "reviews/evidence/phase5_physical_braking65_prepared_v1_20261016/producer/LANDLOCK_QUALIFICATION_RESULT.json",
+      "bytes": 1430,
+      "sha256": "b6fa2e88d7a49c2de5e9abcf2898288af836687d11a371bdb8904175b1257977",
+      "source": "/private/tmp/phase5_physical_braking65_source_v1_20261016/LANDLOCK_QUALIFICATION_RESULT.json"
+    },
+    {
+      "path": "reviews/evidence/phase5_physical_braking65_prepared_v1_20261016/producer/STAGE_BUILD_RESULT.json",
+      "bytes": 636,
+      "sha256": "579c29a33a2cc3c1be5d518b79cf932c59c5045d60158f8d351645dd477eda6b",
+      "source": "/private/tmp/phase5_physical_braking65_source_v1_20261016/STAGE_BUILD_RESULT.json"
+    },
+    {
+      "path": "reviews/evidence/phase5_physical_braking65_prepared_v1_20261016/producer/LANDLOCK_MEMFD_DIRECTLD_QUALIFICATION_RESULT.json",
+      "bytes": 4112,
+      "sha256": "50555d778790fbeb3ff7568078b6930a7069c7ebdb5b28d73ae30ca9106cbef7",
+      "source": "/private/tmp/phase5_physical_braking65_source_v1_20261016/LANDLOCK_MEMFD_DIRECTLD_QUALIFICATION_RESULT.json"
+    },
+    {
+      "path": "reviews/evidence/phase5_physical_braking65_prepared_v1_20261016/producer/STAGE_ONCE_WRAPPER_RESULT_V1.json",
+      "bytes": 209,
+      "sha256": "444cf6acc0f81c3fc099a252ec0b6d964c57bf39e6202cabfb25af75fd5b686c",
+      "source": "/private/tmp/phase5_physical_braking65_source_v1_20261016/STAGE_ONCE_WRAPPER_RESULT_V1.json"
+    },
+    {
+      "path": "reviews/evidence/phase5_physical_braking65_prepared_v1_20261016/producer/LANDLOCK_MEMFD_QUALIFICATION_RESULT.json",
+      "bytes": 449,
+      "sha256": "a8d1b6b050035ddc1b863f0135bd45ba0b693006bb921e0d2992b552ca95879a",
+      "source": "/private/tmp/phase5_physical_braking65_source_v1_20261016/LANDLOCK_MEMFD_QUALIFICATION_RESULT.json"
+    },
+    {
+      "path": "reviews/evidence/phase5_physical_braking65_prepared_v1_20261016/producer/D_DRVFS_QUALIFICATION_RESULT.json",
+      "bytes": 391,
+      "sha256": "6bc5e462afbae4b7a81ec58499ca2dfd4fb808c1bcbe06fd6a1be45415de39a2",
+      "source": "/private/tmp/phase5_physical_braking65_source_v1_20261016/D_DRVFS_QUALIFICATION_RESULT.json"
+    },
+    {
+      "path": "reviews/evidence/phase5_physical_braking65_prepared_v1_20261016/producer/LANDLOCK_MEMFD_QUALIFICATION_RESULT_V2.json",
+      "bytes": 2688,
+      "sha256": "66f59c8975239ba968d6d97eba4adc90427626b2e14388d96a9d4c5a5c9225ac",
+      "source": "/private/tmp/phase5_physical_braking65_source_v1_20261016/LANDLOCK_MEMFD_QUALIFICATION_RESULT_V2.json"
+    },
+    {
+      "path": "reviews/evidence/phase5_physical_braking65_prepared_v1_20261016/producer/CORRECT_PROGRESS_SAVED87_PROBE_RESULT.json",
+      "bytes": 682,
+      "sha256": "7ad9a0e2d027b7241d3b2939b559a8588482d494d9667edeb77769a3f2695a82",
+      "source": "/private/tmp/phase5_physical_braking65_source_v1_20261016/CORRECT_PROGRESS_SAVED87_PROBE_RESULT.json"
+    },
+    {
+      "path": "reviews/evidence/phase5_physical_braking65_prepared_v1_20261016/producer/D_DRVFS_QUALIFICATION_RESULT_V2.json",
+      "bytes": 1988,
+      "sha256": "00427b0a195ee5c269b182b6fe914c49e40ca5021ceb1d66bb03f6292c8294d4",
+      "source": "/private/tmp/phase5_physical_braking65_source_v1_20261016/D_DRVFS_QUALIFICATION_RESULT_V2.json"
+    },
+    {
+      "path": "reviews/evidence/phase5_physical_braking65_prepared_v1_20261016/producer/PURE_TARGETED_RESULT_V1.json",
+      "bytes": 5086,
+      "sha256": "e5747a42855837499b77ab43bf5e840c0b1bb1832a9dcc521cc941946e7ee9ef",
+      "source": "/private/tmp/phase5_physical_braking65_source_v1_20261016/PURE_TARGETED_RESULT_V1.json"
+    },
+    {
+      "path": "reviews/evidence/phase5_physical_braking65_prepared_v1_20261016/producer/PROFILE_DRIVER_PREPARATION_RESULT_V1.json",
+      "bytes": 708,
+      "sha256": "0c38bc160a227a5dda030b8fc9fe430715a77be4e22293621b4550e1257ddde3",
+      "source": "/private/tmp/phase5_physical_braking65_source_v1_20261016/PROFILE_DRIVER_PREPARATION_RESULT_V1.json"
+    },
+    {
+      "path": "reviews/evidence/phase5_physical_braking65_prepared_v1_20261016/producer/VERSION_DRIVER_LAYOUT_RESULT_V2.json",
+      "bytes": 583,
+      "sha256": "d4fe7d3ee048f29032c0634ecb60c3d43c2b333f0d16be1fd6af906abb3a6546",
+      "source": "/private/tmp/phase5_physical_braking65_source_v1_20261016/VERSION_DRIVER_LAYOUT_RESULT_V2.json"
+    },
+    {
+      "path": "reviews/evidence/phase5_physical_braking65_prepared_v1_20261016/preserved-preparation/NONBINDING_OLDLOWER_TEST_QUALIFICATION.json",
+      "bytes": 1060,
+      "sha256": "fbabbf27037b617e005d9f3e5a2eab2ea3376a26290c3d43f99defc0d90d23b6",
+      "source": "/private/tmp/phase5_physical_braking65_source_v1_20261016/NONBINDING_OLDLOWER_TEST_QUALIFICATION.json"
+    },
+    {
+      "path": "reviews/evidence/phase5_physical_braking65_prepared_v1_20261016/preserved-preparation/D_DRVFS_QUALIFICATION_REMOTE.py",
+      "bytes": 3059,
+      "sha256": "c22a15265aae75a1f1ae8ad34967965c3cc1d68ef19bc5a9685fd98a876dfed4",
+      "source": "/private/tmp/phase5_physical_braking65_source_v1_20261016/D_DRVFS_QUALIFICATION_REMOTE.py"
+    },
+    {
+      "path": "reviews/evidence/phase5_physical_braking65_prepared_v1_20261016/preserved-preparation/D_DRVFS_QUALIFICATION_REMOTE_V2.py",
+      "bytes": 3226,
+      "sha256": "900d7488bd3116612289b1578cc2adf4e215f282fd6e67885da0a1408aa79b0c",
+      "source": "/private/tmp/phase5_physical_braking65_source_v1_20261016/D_DRVFS_QUALIFICATION_REMOTE_V2.py"
+    },
+    {
+      "path": "reviews/evidence/phase5_physical_braking65_prepared_v1_20261016/preserved-preparation/LANDLOCK_QUALIFICATION_REMOTE.py",
+      "bytes": 3654,
+      "sha256": "4735a39f939ddf45e3f926ac1bb63d7db66f6f382e7cf02455dcd5bcfd4c5236",
+      "source": "/private/tmp/phase5_physical_braking65_source_v1_20261016/LANDLOCK_QUALIFICATION_REMOTE.py"
+    },
+    {
+      "path": "reviews/evidence/phase5_physical_braking65_prepared_v1_20261016/preserved-preparation/LANDLOCK_MEMFD_QUALIFICATION_REMOTE.py",
+      "bytes": 4182,
+      "sha256": "1d81f03c88b7e5d4bc78cb06320ea62c4b28a7f5d8c368aa57a6222c1c4b21c9",
+      "source": "/private/tmp/phase5_physical_braking65_source_v1_20261016/LANDLOCK_MEMFD_QUALIFICATION_REMOTE.py"
+    },
+    {
+      "path": "reviews/evidence/phase5_physical_braking65_prepared_v1_20261016/preserved-preparation/LANDLOCK_MEMFD_QUALIFICATION_REMOTE_V2.py",
+      "bytes": 4255,
+      "sha256": "df666bebe39bdd6a227a9a310b5042a7229014c376b253610580596b48eae313",
+      "source": "/private/tmp/phase5_physical_braking65_source_v1_20261016/LANDLOCK_MEMFD_QUALIFICATION_REMOTE_V2.py"
+    },
+    {
+      "path": "reviews/evidence/phase5_physical_braking65_prepared_v1_20261016/preserved-preparation/LANDLOCK_MEMFD_DIRECTLD_QUALIFICATION_REMOTE.py",
+      "bytes": 4711,
+      "sha256": "c93a295ac6458e317c451bbc4efffa2c3f912a06d0f1d7f7a233f76a587c91df",
+      "source": "/private/tmp/phase5_physical_braking65_source_v1_20261016/LANDLOCK_MEMFD_DIRECTLD_QUALIFICATION_REMOTE.py"
+    },
+    {
+      "path": "reviews/evidence/phase5_physical_braking65_prepared_v1_20261016/preserved-preparation/memfd_targeted_build65_driver_v1.py",
+      "bytes": 8689,
+      "sha256": "bd2a99252945a5ce8b8d4adc9ea7b2ecdf1ddc0be526aa3240e10cd5fb423f88",
+      "source": "/private/tmp/phase5_physical_braking65_source_v1_20261016/memfd_targeted_build65_driver_v1.py"
+    },
+    {
+      "path": "reviews/evidence/phase5_physical_braking65_prepared_v1_20261016/preserved-preparation/active_run_driver65_v1.py",
+      "bytes": 8444,
+      "sha256": "dfe577371e3c1603a71e6ab6e9235515d764bc461ccbc7f00df25ee52c48404f",
+      "source": "/private/tmp/phase5_physical_braking65_source_v1_20261016/active_run_driver65_v1.py"
+    },
+    {
+      "path": "reviews/evidence/phase5_physical_braking65_prepared_v1_20261016/preserved-preparation/PREENTRY65_REMOTE_V1.py",
+      "bytes": 6047,
+      "sha256": "35ac365def3ee14fd93634ae5f438f1dfe2c782a1896eb102c2e796315a04ed3",
+      "source": "/private/tmp/phase5_physical_braking65_source_v1_20261016/PREENTRY65_REMOTE_V1.py"
+    },
+    {
+      "path": "reviews/evidence/phase5_physical_braking65_prepared_v1_20261016/preserved-preparation/once_entry65_v1.py",
+      "bytes": 2170,
+      "sha256": "a8cdc7123e10dbe5922b5b5c461e8b3c8c53137131bc8d09e758bab4cafd3573",
+      "source": "/private/tmp/phase5_physical_braking65_source_v1_20261016/once_entry65_v1.py"
+    },
+    {
+      "path": "reviews/evidence/phase5_physical_braking65_prepared_v1_20261016/preserved-preparation/STORAGE_LAYOUT65_V1.json",
+      "bytes": 2426,
+      "sha256": "c3fcc85bc502c86bc8b3711105ea666f68c5bb03c68b700fe8da040ff462fb6d",
+      "source": "/private/tmp/phase5_physical_braking65_source_v1_20261016/STORAGE_LAYOUT65_V1.json"
+    },
+    {
+      "path": "transfer/cold-backups/prepared65-saved-evidence-20261016-v1/active_first_cycle_ELF",
+      "bytes": 20103800,
+      "sha256": "b1fd5465b82f5c2f368ebdd482498aaf03798be6cc96f948ae95990c0b1d0482",
+      "source": "/private/tmp/root65_prepared_review_v1_20261016/active_first_cycle_ELF"
+    },
+    {
+      "path": "transfer/cold-backups/prepared65-saved-evidence-20261016-v1/correct-band/PLAN.json",
+      "bytes": 533273,
+      "sha256": "cfb2fd440b9bf6154a6467b12f4cf967b6629fa2eb594d09034923df4afca4b8",
+      "source": "/private/tmp/root65_codec_independent_review_v1_20261016/correct-band-readback/PLAN.json"
+    },
+    {
+      "path": "transfer/cold-backups/prepared65-saved-evidence-20261016-v1/correct-band/PROBE_ENTRY_CONSUMED.json",
+      "bytes": 189,
+      "sha256": "537b37a9d5234f884cf0d0deb3300047e7b9b3f50f8fc995c093a8c8bc265110",
+      "source": "/private/tmp/root65_codec_independent_review_v1_20261016/correct-band-readback/PROBE_ENTRY_CONSUMED.json"
+    },
+    {
+      "path": "transfer/cold-backups/prepared65-saved-evidence-20261016-v1/correct-band/RESULT.json",
+      "bytes": 623,
+      "sha256": "a2646e741ec1354981803b6316919196f8cdcfa9614a35b1800373f4a5061051",
+      "source": "/private/tmp/root65_codec_independent_review_v1_20261016/correct-band-readback/RESULT.json"
+    },
+    {
+      "path": "transfer/cold-backups/prepared65-saved-evidence-20261016-v1/correct-band/SOURCE.json",
+      "bytes": 2322,
+      "sha256": "bf844b4494f41417bf9c8dcfa03ff761354ed341d89e8ed88a16cf4d6296bb00",
+      "source": "/private/tmp/root65_codec_independent_review_v1_20261016/correct-band-readback/SOURCE.json"
+    },
+    {
+      "path": "transfer/cold-backups/prepared65-saved-evidence-20261016-v1/correct-band/case.boundary48.bin",
+      "bytes": 96,
+      "sha256": "8adbbe7e7b3507b1e371baf554d7f6d2c5078e5b4f6936bd90ae9522598b1657",
+      "source": "/private/tmp/root65_codec_independent_review_v1_20261016/correct-band-readback/case.boundary48.bin"
+    },
+    {
+      "path": "transfer/cold-backups/prepared65-saved-evidence-20261016-v1/correct-band/case.finalxy.bin",
+      "bytes": 60288,
+      "sha256": "641781e5ad075566b44826f21b0125ba041cc825b193c601142c10500e1b0033",
+      "source": "/private/tmp/root65_codec_independent_review_v1_20261016/correct-band-readback/case.finalxy.bin"
+    },
+    {
+      "path": "transfer/cold-backups/prepared65-saved-evidence-20261016-v1/correct-band/case.full72.bin",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "source": "/private/tmp/root65_codec_independent_review_v1_20261016/correct-band-readback/case.full72.bin"
+    },
+    {
+      "path": "transfer/cold-backups/prepared65-saved-evidence-20261016-v1/correct-band/case.leaving/MANIFEST.yaml",
+      "bytes": 2661,
+      "sha256": "6c815babf2038066544bc3e56f7e964176391399dc896775482e9024aea09117",
+      "source": "/private/tmp/root65_codec_independent_review_v1_20261016/correct-band-readback/case.leaving/MANIFEST.yaml"
+    },
+    {
+      "path": "transfer/cold-backups/prepared65-saved-evidence-20261016-v1/correct-band/case.leaving/hint_kkt_rank_events.bin",
+      "bytes": 4170,
+      "sha256": "fc916d7a468aafcff99dc021b69726c4d8d73f022b46ed073673f2caabed3e90",
+      "source": "/private/tmp/root65_codec_independent_review_v1_20261016/correct-band-readback/case.leaving/hint_kkt_rank_events.bin"
+    },
+    {
+      "path": "transfer/cold-backups/prepared65-saved-evidence-20261016-v1/correct-band/case.leaving/legacy_chosen_v1.bin",
+      "bytes": 1935,
+      "sha256": "fe778be0d597a0d1bbe45c5ac9838fe9b1ce5bb40b5020d35c559dc04f99a154",
+      "source": "/private/tmp/root65_codec_independent_review_v1_20261016/correct-band-readback/case.leaving/legacy_chosen_v1.bin"
+    },
+    {
+      "path": "transfer/cold-backups/prepared65-saved-evidence-20261016-v1/correct-band/case.leaving/legacy_merged_v2.bin",
+      "bytes": 4059,
+      "sha256": "666e06f9910feb7f24a91cbd4958fa6d27855faa1507e9757a7830a83e3fca4e",
+      "source": "/private/tmp/root65_codec_independent_review_v1_20261016/correct-band-readback/case.leaving/legacy_merged_v2.bin"
+    },
+    {
+      "path": "transfer/cold-backups/prepared65-saved-evidence-20261016-v1/correct-band/case.leaving/legacy_rank_v1.bin",
+      "bytes": 2597,
+      "sha256": "0520e682485b37c61aa91fb521a8ab97c4dd40019cb09bb54f6c3311bb9292ac",
+      "source": "/private/tmp/root65_codec_independent_review_v1_20261016/correct-band-readback/case.leaving/legacy_rank_v1.bin"
+    },
+    {
+      "path": "transfer/cold-backups/prepared65-saved-evidence-20261016-v1/correct-band/case.refinement120.bin",
+      "bytes": 18968,
+      "sha256": "d800ce56df0d295c3758a72c22d1941a41382613eece5746ec690b51b7a6cff9",
+      "source": "/private/tmp/root65_codec_independent_review_v1_20261016/correct-band-readback/case.refinement120.bin"
+    },
+    {
+      "path": "transfer/cold-backups/prepared65-saved-evidence-20261016-v1/correct-band/case.retained64.bin",
+      "bytes": 21120,
+      "sha256": "b3c0a3cad40ca2ab2e243fd2780db3d6b46db203ee1ec4df93b34443316440aa",
+      "source": "/private/tmp/root65_codec_independent_review_v1_20261016/correct-band-readback/case.retained64.bin"
+    },
+    {
+      "path": "transfer/cold-backups/prepared65-saved-evidence-20261016-v1/correct-band/case.states.bin",
+      "bytes": 3976,
+      "sha256": "e799b63771373ba78718755f1b002d8c5a73535e1e4eff9c29a84caf2672246e",
+      "source": "/private/tmp/root65_codec_independent_review_v1_20261016/correct-band-readback/case.states.bin"
+    },
+    {
+      "path": "transfer/cold-backups/prepared65-saved-evidence-20261016-v1/correct-band/fixture.bin",
+      "bytes": 8799776,
+      "sha256": "48640b59c0829113c9bc0af3bf89e2dd6c78932f468208f46d9872f314f4c7c5",
+      "source": "/private/tmp/root65_codec_independent_review_v1_20261016/correct-band-readback/fixture.bin"
+    },
+    {
+      "path": "transfer/cold-backups/prepared65-saved-evidence-20261016-v1/actual-cpp-codecs/max1080/MANIFEST.yaml",
+      "bytes": 854,
+      "sha256": "068806cbc828662fdf99028d75db32199ba8378beb5800417137d71544bb8479",
+      "source": "/private/tmp/root65_codec_independent_review_v1_20261016/actual-pure-readback/pure-tests-attempt1/physical65/max1080/MANIFEST.yaml"
+    },
+    {
+      "path": "transfer/cold-backups/prepared65-saved-evidence-20261016-v1/actual-cpp-codecs/max1080/all.bin",
+      "bytes": 3747,
+      "sha256": "19fe0d3d5cc0941c447f11f314f38e6f6848c754bcdc9fae31b0d24a8b31123b",
+      "source": "/private/tmp/root65_codec_independent_review_v1_20261016/actual-pure-readback/pure-tests-attempt1/physical65/max1080/all.bin"
+    },
+    {
+      "path": "transfer/cold-backups/prepared65-saved-evidence-20261016-v1/actual-cpp-codecs/no-rebuild-32/MANIFEST.yaml",
+      "bytes": 887,
+      "sha256": "b5ac6758429deba5e8b1304caec8f4f883f463d98016a336b590a3404d93ac3b",
+      "source": "/private/tmp/root65_codec_independent_review_v1_20261016/actual-pure-readback/pure-tests-attempt1/physical65/no-rebuild-32/MANIFEST.yaml"
+    },
+    {
+      "path": "transfer/cold-backups/prepared65-saved-evidence-20261016-v1/actual-cpp-codecs/no-rebuild-32/stop_objective_mode.bin",
+      "bytes": 2177,
+      "sha256": "291641d3fd78232be383250ee2225a8043f1ef3ba763e32d730648bb2e037476",
+      "source": "/private/tmp/root65_codec_independent_review_v1_20261016/actual-pure-readback/pure-tests-attempt1/physical65/no-rebuild-32/stop_objective_mode.bin"
+    },
+    {
+      "path": "transfer/cold-backups/prepared65-saved-evidence-20261016-v1/actual-cpp-codecs/no-rebuild-87/MANIFEST.yaml",
+      "bytes": 887,
+      "sha256": "c9d9b7a2f8f3ba3643aeb93b264885af7daff9c0570a91b5382af9d1fd0a0805",
+      "source": "/private/tmp/root65_codec_independent_review_v1_20261016/actual-pure-readback/pure-tests-attempt1/physical65/no-rebuild-87/MANIFEST.yaml"
+    },
+    {
+      "path": "transfer/cold-backups/prepared65-saved-evidence-20261016-v1/actual-cpp-codecs/no-rebuild-87/stop_objective_mode.bin",
+      "bytes": 1666,
+      "sha256": "b5e30d71c9fb739d488e2416faa3a71089b81807fc9f169401e3b6c3b5f9f774",
+      "source": "/private/tmp/root65_codec_independent_review_v1_20261016/actual-pure-readback/pure-tests-attempt1/physical65/no-rebuild-87/stop_objective_mode.bin"
+    },
+    {
+      "path": "transfer/cold-backups/prepared65-saved-evidence-20261016-v1/actual-cpp-codecs/saved64-current32/MANIFEST.yaml",
+      "bytes": 958,
+      "sha256": "9fe7a46682ecc57c7187fac948e1099e44eb2f240b646bd2f52292d2a19f1e01",
+      "source": "/private/tmp/root65_codec_independent_review_v1_20261016/actual-pure-readback/pure-tests-attempt1/physical65/saved64-current32/MANIFEST.yaml"
+    },
+    {
+      "path": "transfer/cold-backups/prepared65-saved-evidence-20261016-v1/actual-cpp-codecs/saved64-current32/stop_objective_mode.bin",
+      "bytes": 43068,
+      "sha256": "7e64ac5a028ab9f7d294fa838c4815f83280f04390ee9f810bc5c4a9187f45d6",
+      "source": "/private/tmp/root65_codec_independent_review_v1_20261016/actual-pure-readback/pure-tests-attempt1/physical65/saved64-current32/stop_objective_mode.bin"
+    },
+    {
+      "path": "transfer/cold-backups/prepared65-saved-evidence-20261016-v1/actual-cpp-codecs/saved64-current87/MANIFEST.yaml",
+      "bytes": 958,
+      "sha256": "c65a5a222d0352cc99dcae56b0455c01d8eac9590ad0b34347bab100a97521db",
+      "source": "/private/tmp/root65_codec_independent_review_v1_20261016/actual-pure-readback/pure-tests-attempt1/physical65/saved64-current87/MANIFEST.yaml"
+    },
+    {
+      "path": "transfer/cold-backups/prepared65-saved-evidence-20261016-v1/actual-cpp-codecs/saved64-current87/stop_objective_mode.bin",
+      "bytes": 22813,
+      "sha256": "6e60e175c3d5c6c99a12abf124002892f36408e94457eac39fe2e07d2599b6ca",
+      "source": "/private/tmp/root65_codec_independent_review_v1_20261016/actual-pure-readback/pure-tests-attempt1/physical65/saved64-current87/stop_objective_mode.bin"
+    },
+    {
+      "path": "reviews/evidence/phase5_physical_braking65_prepared_v1_20261016/STORAGE_CHECKPOINT.json",
+      "bytes": 7850,
+      "sha256": "00341cd26cdfdf7a7c4f04d853bf3e275aa4c67f01037f7d1442cca3f76bc44d",
+      "source": "/private/tmp/root65_prepared_review_v1_20261016/STORAGE_CHECKPOINT.json"
+    }
+  ]
+}

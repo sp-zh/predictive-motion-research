@@ -1,0 +1,4 @@
+{
+  "error": "NumPy bool in report is not JSON serializable; all arithmetic assertions passed before output",
+  "repair": "convert the single comparison to builtin bool; preserved v2; no C++/Model rerun"
+}

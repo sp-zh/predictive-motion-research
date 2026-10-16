@@ -1,0 +1,5 @@
+{
+  "exit": 1,
+  "stdout": "",
+  "stderr": "Traceback (most recent call last):\n  File \"<stdin>\", line 5, in <module>\n  File \"/usr/lib/python3.12/pathlib.py\", line 1329, in chmod\n    os.chmod(self, mode, follow_symlinks=follow_symlinks)\nPermissionError: [Errno 1] Operation not permitted: '/mnt/d/CodexTransfer/phase5-build65-20261016/drvfs-qualification1/constant_no_model.cpp'\n"
+}

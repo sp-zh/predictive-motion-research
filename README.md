@@ -2,6 +2,8 @@
 
 **Resumed by new direct human instruction on2026-10-16 after the actual64 pause.** [Resume evidence](reviews/evidence/phase5_resume_after64_v1_20261016/DIRECT_HUMAN_RESUME.json) preserves the [pause history](reviews/evidence/phase5_human_pause_after64_v1_20261016/README.md). Physical-aware stopping/progress-floor and bounded direct-stream backup work continue; source drafts/pure checks are not actual stop or phase acceptance. No65 run is inferred from resumption.
 
+[Prepared65 source/build and independent saved-data qualification](reviews/evidence/phase5_physical_braking65_prepared_v1_20261016/README.md) is complete; native65 has not entered at this checkpoint. Physical stopping and phase acceptance remain unproven.
+
 A research project investigating finite-horizon posture selection and online path retiming for 7-DoF inspection manipulators. The intended contribution is preventive constraint handling coupled to path progress, evaluated against strong reactive baselines.
 
 **Development status: Phase0–4 component gates passed with retained failures; Phase5 is NOT_ACCEPTED and Phase6 is NOT_STARTED.** Genuine forecasts, nonlinear/geometric checks and guarded commands with two actual simulated2ms substeps are under development.

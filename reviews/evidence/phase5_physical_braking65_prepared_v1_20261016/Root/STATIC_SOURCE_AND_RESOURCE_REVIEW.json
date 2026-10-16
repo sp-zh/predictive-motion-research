@@ -1,0 +1,23 @@
+{
+  "schema": "ROOT65_STATIC_PREBUILD_CAUSE_REVIEW_V1",
+  "utc": "2026-10-16T23:20:26.505197+00:00",
+  "source_draft4": "/private/tmp/phase5_physical_braking65_source_v1_20261016/src-draft4",
+  "physical_target": "same-session const baseline C0-q0; q_current+offset-.02*v_current; no actual/history mutation",
+  "first_progress_row_corrected": "(b0-offset7)/h >= (floor-r)/h^2-offset7/h; previous_b remains only in original jerk bounds",
+  "first_progress_offset7_zero_explicitly_required": true,
+  "source_delta_scope": [
+    "all132 doublehat joint families and minimum first-step error selection",
+    "progress nominal2e-7 with first-step planning floor1e-7 and strict .75e-7",
+    "same original terminal numerical1e-13 and all SI/B/C/stop gates",
+    "additional physical-hot3GiB shares original6GiB stored charge and32MiB tail"
+  ],
+  "retained_inventory": 744994,
+  "inventory_original_cap": 745000,
+  "codec_attempt_bytes": 112,
+  "codec_payload_bound": 126336,
+  "codec_original_file_cap": 131072,
+  "old_drafts_and_wrong_nonzero_history_formula_preserved": true,
+  "parser_status": "AST-only; actual C++ saved-record qualification still pending",
+  "no_root_Dell_source_or_native_writes": true,
+  "scope": "source/row/lifetime arithmetic review only; actual build result independently pending readback; not physical stop/phase acceptance"
+}

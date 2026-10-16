@@ -1,5 +1,7 @@
 # Project showcase
 
+Prepared65 has source/build/saved-data qualification only: [receipt](../reviews/evidence/phase5_physical_braking65_prepared_v1_20261016/README.md). No new motion recording or successful stopping result is claimed; actual64 diagnostics remain the latest actual result at this checkpoint.
+
 ## Actual64 braking: command/progress pass, physical stop incomplete
 
 [Actual64 full110-observation figure](../figures/phase5_stop64_actual_braking_20261016.png), with CSV/SVG/JSON provenance. All original thresholds are shown: commandw/alpha and progressr/b eventually fall below; physicalv/a stay above, dwell0/50. The run naturally terminates at current87 near-boundary cap12288 after87C/55brake; this is not a successful full task or accepted stop video. [Independent result/scope](../reviews/evidence/phase5_actual64_braking_and_boundary87_v1_20261016/README.md).

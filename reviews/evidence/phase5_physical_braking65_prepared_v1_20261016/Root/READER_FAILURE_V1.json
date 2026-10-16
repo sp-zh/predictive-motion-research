@@ -1,0 +1,5 @@
+{
+  "error": "NameError struct undefined in Root AST-extracted snapshot helper",
+  "scope": "saved-byte reader missing import before nominal replay; no source/Model/native mutation",
+  "repair": "fresh reader driver imports struct; retain failure; do not rerun C++ fixtures"
+}

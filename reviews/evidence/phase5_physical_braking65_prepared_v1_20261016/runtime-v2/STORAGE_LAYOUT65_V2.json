@@ -1,0 +1,73 @@
+{
+  "schema": "FINITE65_C_HOT3G_D_BUILD512_DIRECT_MAC_LAYOUT_V2",
+  "C": {
+    "minimum_free_before_preparation": 89296732160,
+    "minimum_free_native_entry_after_source_ELF_already_allocated": 89254789120,
+    "reserve": 85899345920,
+    "additional_physical_hot_binary_manifest": 3221225472,
+    "source_preparation": 16777216,
+    "ELF_recovery_copy": 25165824,
+    "external_metadata_journals_and_capture": 134217728,
+    "external_partition_MiB": {
+      "parent_JSON_prewrite": 64,
+      "native_original_journal": 16,
+      "parent_capture": 2,
+      "ELF": 24,
+      "other_metadata_failure_and_profiles_reserve": 22
+    }
+  },
+  "D": {
+    "build_root": "/mnt/d/CodexTransfer/phase5-build65-20261016",
+    "build_total": 536870912,
+    "entry_minimum_free_with_existing_build_stock_allocated": 86033563648,
+    "reserve": 85899345920,
+    "no_original_evidence_deletion": true
+  },
+  "original_native_limits": {
+    "stored_binary_manifest": 6442450944,
+    "raw_binary": 12884901888,
+    "single_reserved_tail_in_both_caps": 33554432,
+    "native_CPU": 2400,
+    "native_AS": 4294967296,
+    "native_FSIZE": 268435456,
+    "native_wall": 3000,
+    "driver_wall": 3060,
+    "hint_iterations": 512,
+    "hint_wall": 10,
+    "endpoint": 16384,
+    "boundary": 12288,
+    "logical_inventory": 745000,
+    "prospective_inventory_upper": 744994,
+    "numeric_cumulative": 1800000000,
+    "artifact_slots": 24,
+    "trials": 176,
+    "forecasts": 352,
+    "commits": 121,
+    "task_halves": 242,
+    "global_journal_bytes_unchanged": 134217728
+  },
+  "Mac": {
+    "native_entry_minimum_free": 44023414784,
+    "stream_before_minimum_free": 39745224704,
+    "post_stream_reserve": 35433480192,
+    "single_archive_aggregate_includes_retained_failed_part": 4294967296,
+    "source_payload": 3758096384,
+    "outer_tar_raw": 4563402752,
+    "archive_metadata": 16777216,
+    "no_retry_refund_reset": true
+  },
+  "backup_route": "Postnative only direct producer stdout to Mac tested consumer. Dell original frozen source/evidence remains; no Dell tar stock; Mac fsync/member+codec/readback/SHA/CRC/EOF/readonlyrename/READY required. Not standalone environment restore or stopping/phase acceptance.",
+  "qualified_tests": "RealSSH positive stored/CRC/UNKNOWN preservation; falselycomplete badCRC prepare rejection; real pipebroken/part retained; metadata4 member tamper prelaunch rejection. Checkpoint e5aa7557e78f30147509abe6dea2fd4b3f2e2cd6.",
+  "native65_entered": false,
+  "journal_proof": {
+    "per_DurableWarmupJournal_file_original_bound": 12582912,
+    "original_shared_global_journal_cap_unchanged": 134217728,
+    "warmup_halves": 1000,
+    "task_halves_maximum": 242,
+    "callbacks_per_half_maximum": 3,
+    "each_line_maximum_bytes": 4096,
+    "maximum_bytes": 15261696,
+    "structural_reservation": 16777216,
+    "scope": "16MiB structure bound is a tighter prospective physical stock reservation, not a change to original global128MiB journal ledger or individual12MiB checks."
+  }
+}

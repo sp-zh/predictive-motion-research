@@ -1,0 +1,29 @@
+{
+  "cases": [
+    {
+      "case": "saved62-current53-explicit-warm-refused",
+      "raw_bytes": 15443,
+      "raw_sha256": "e187b103d38e9235115c4023c79c4fa64780bd500131b03f70ccb9cc9ffd09fa",
+      "byteexact_to_original63": true,
+      "source_complete": false,
+      "closed_raw_prefix_valid": true
+    },
+    {
+      "case": "trial1-no-rebuild",
+      "raw_bytes": 3366,
+      "raw_sha256": "346d40662a76b166d264e844787105b2eaaf9785f225ff86b691c324addfb94d",
+      "byteexact_to_original63": true,
+      "source_complete": true,
+      "closed_raw_prefix_valid": true
+    },
+    {
+      "case": "saved62-current53-explicit-warm",
+      "raw_bytes": 18330,
+      "raw_sha256": "67b1af644b92057c86d7618480836d20b567b032fb8035997b52b90708b4f989",
+      "byteexact_to_original63": true,
+      "source_complete": true,
+      "closed_raw_prefix_valid": true
+    }
+  ],
+  "scope": "unchanged default warm/failedprefix/no-rebuild semantics; not new65 physical stop"
+}

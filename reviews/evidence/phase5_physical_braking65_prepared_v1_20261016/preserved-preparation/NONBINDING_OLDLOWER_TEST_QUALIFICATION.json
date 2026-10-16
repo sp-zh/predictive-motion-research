@@ -1,0 +1,9 @@
+{
+  "scope": "Qualification correction only, not source replacement or repeated consumed build/test",
+  "file": "src-draft4/physical_braking65_tests.cpp",
+  "observation": "The +/-previousb scalar test uses -4.999-previous/h as an arbitrary nonbinding old_lower. Actual production jerk interval lower is -4.999+previous/h for offset7=0. Both synthetic old_lower alternatives are strictly below new floor lower in these cases, so the corrected offset-only function and wrong-duplicate-history counterexamples remain valid, but this test does not exactly reproduce the original history-dependent jerk interval.",
+  "independent_true_history_interval_review": "/private/tmp/root65_codec_independent_review_v1_20261016/FIRST_PROGRESS_OFFSET_FORMULA_REVIEW.json",
+  "production_and_fresh_saved87_fixture": "Production lower uses original shift=-previous/h then -guard-shift. Correct saved87 fixture uses original recorded lower unchanged except max with offset-only floor.",
+  "all_old_failed_drafts_retained": true,
+  "controller_rebuild_or_native_entry": false
+}

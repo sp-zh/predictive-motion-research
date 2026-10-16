@@ -1,0 +1,71 @@
+{
+  "schema": "ROOT65_REAL_CPP_V5_CODEC_AND_LITERAL_SCALAR_REVIEW_V1",
+  "cases": [
+    {
+      "records_replayed": 1057,
+      "valid_counts": [
+        107,
+        81,
+        81,
+        81,
+        111,
+        81,
+        93,
+        1
+      ],
+      "independent_2x2_error_inf": 2.220446049250313e-16,
+      "source_complete": true,
+      "terminal": true,
+      "scope": "literal scalar/provenance/family arithmetic only; no Model/SI/B/C/actual stop acceptance",
+      "cycle": 32,
+      "history_bitexact_to_original_actual64": true,
+      "selected": [
+        111,
+        3,
+        3,
+        3,
+        99,
+        3,
+        90,
+        132
+      ],
+      "no_rebuild_case_keeps_prior_table": true
+    },
+    {
+      "records_replayed": 925,
+      "valid_counts": [
+        120,
+        120,
+        120,
+        120,
+        120,
+        120,
+        120,
+        1
+      ],
+      "independent_2x2_error_inf": 1.3877787807814457e-17,
+      "source_complete": true,
+      "terminal": true,
+      "scope": "literal scalar/provenance/family arithmetic only; no Model/SI/B/C/actual stop acceptance",
+      "cycle": 87,
+      "history_bitexact_to_original_actual64": true,
+      "selected": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "no_rebuild_case_keeps_prior_table": true
+    }
+  ],
+  "max1080_storage_records_exact112bytes": true,
+  "max1080_raw_bytes": 121043,
+  "all_codecs_verified_against_original_manifests": true,
+  "no_new_Model_native65_or_SI_B_C_run": true,
+  "nonzero_history_formula_qualification": "Root exact original oldlower uses +previous/h; C++ helper test arbitrary oldlower uses -previous/h, both nonbinding for its two cases, so it proves function behavior but not original shift replication. Separate Root counterexamples bind correct actual row algebra.",
+  "scope": "Independent actual C++ codec/stored and family scalar/provenance checks on saved actual64 histories. No current65 controller/physical-stop or phase acceptance."
+}

@@ -1,0 +1,40 @@
+{
+  "schema": "FIRST_PROGRESS_GUARD_DUPLICATED_HISTORY_REVIEW_V1",
+  "row_algebra": "row=(b0-offset7)/h; old jerk bounds include -shift, where shift=offset7/h-previous_b/h. New r+h*b0>=floor bound is (floor-r)/h^2-offset7/h, without previous_b subtraction.",
+  "counterexamples": [
+    {
+      "r": 1e-09,
+      "previous_b": 0.001,
+      "matrix_row_value": "b0/h when offset7=0",
+      "old_guard_lower": -4.749,
+      "wrong_lower": -0.24381250000000002,
+      "corrected_lower": 0.006187499999999999,
+      "r_next_at_wrong_new_lower": -3.900000000000001e-06,
+      "r_next_at_correct_new_lower": 1e-07
+    },
+    {
+      "r": 1e-09,
+      "previous_b": -0.001,
+      "matrix_row_value": "b0/h when offset7=0",
+      "old_guard_lower": -5.249,
+      "wrong_lower": 0.25618749999999996,
+      "corrected_lower": 0.006187499999999999,
+      "r_next_at_wrong_new_lower": 4.099999999999999e-06,
+      "r_next_at_correct_new_lower": 1e-07
+    },
+    {
+      "r": 1e-09,
+      "previous_b": 0.0,
+      "matrix_row_value": "b0/h when offset7=0",
+      "old_guard_lower": -4.999,
+      "wrong_lower": 0.006187499999999999,
+      "corrected_lower": 0.006187499999999999,
+      "r_next_at_wrong_new_lower": 1e-07,
+      "r_next_at_correct_new_lower": 1e-07
+    }
+  ],
+  "old_saved87_qualification": "Its numerical certificate and observed first r remain valid for its exact nearzero-history input; it did not qualify the generic nonzero-history formula. Preserve all original fixture/report/outputs.",
+  "original_SI_strict_B_C_gates_unchanged": true,
+  "caught_before_controller65_build_or_native": true,
+  "no_Model_native_or_old_evidence_mutation": true
+}

@@ -1,0 +1,30 @@
+from pathlib import Path
+import sys,json,os,hashlib,subprocess,datetime
+x=json.load(sys.stdin);P=Path('/home/codextransfer/predictive_motion/results/phase5/session-controlled-stop-physical-braking-first-progress-direct-mac-v1-20261016-attempt65');D=Path('/mnt/d/CodexTransfer/phase5-build65-20261016');assert not(P/'ENTRY_CONSUMED65.json').exists()and not(P/'run-attempt1').exists();name=x['record_name'];assert name.startswith('PREENTRY65_')and name.endswith('.json')and '/'not in name and not(P/name).exists()
+owner=json.loads(Path('/home/codextransfer/predictive_motion/PHASE5_WRITER_STATE_20261007.json').read_text());assert owner['owner_thread_id']=='01a114d9-3a3a-7071-b94f-624581000992'and owner['state']=='ACTIVE_SINGLE_WRITER'
+def sha(p):
+ p=Path(p);h=hashlib.sha256();n=0;st=p.stat()
+ with p.open('rb')as f:
+  while b:=f.read(65536):h.update(b);n+=len(b)
+ assert n==st.st_size and(st.st_ino,st.st_size,st.st_mtime_ns)==(p.stat().st_ino,p.stat().st_size,p.stat().st_mtime_ns)
+ return h.hexdigest()
+plan=json.loads((P/'active_run_plan.json').read_text());assert len(plan['input_files'])==len({v['requested_path']for v in plan['input_files']})==1743
+for e in plan['input_files']:
+ q=Path(e['requested_path']);assert q.stat().st_size==e['bytes']and sha(q)==e['sha256'];assert str(q.resolve())==e['resolved_path']and q.stat().st_mode&0o7777==e['mode']
+profile=json.loads((P/'profile-version1/active_input.json').read_text());assert profile['schema']=='CONTROLLED_STOP_PHYSICAL_DOUBLEHAT_FIRST_PROGRESS_BAND_DIRECT_MAC_V5';assert profile['physical_braking65']=={'codec':'STOP_COST_SAME_BOUNDARY_PHYSICAL_DOUBLEHAT_AND_FIRST_PROGRESS_BAND_V5','T_seconds':.02,'nominal_progress_target':2e-7,'first_progress_floor':1e-7,'strict_first_progress_floor':.75e-7};assert profile['evidence_storage']['stored_binary_manifest_bytes']==6*1024**3 and profile['evidence_storage']['additional_physical_hot_bytes']==3*1024**3 and profile['evidence_storage']['tail_bytes']==32*1024**2
+old=json.loads(Path('/home/codextransfer/predictive_motion/results/phase5/session-controlled-stop-roundoff-command-contraction-active32-brake64-dwell25-v1-20261016-attempt64/profile-version1/active_input.json').read_text());old['schema']=profile['schema'];old['session_id']=profile['session_id'];old['evidence_storage']['additional_physical_hot_bytes']=3*1024**3;old['physical_braking65']=profile['physical_braking65'];assert old==profile,'no original model/math/stop/limits/solver changes'
+build=json.loads((D/'targeted-build-attempt1/BUILD_RESULT.json').read_text());assert build['complete']and len(build['records'])==28 and all(v['exit']==0 and v['error']is None for v in build['records'])and build['zero_disk_scratch'];pure=json.loads((D/'pure-tests-attempt1/RESULT.json').read_text());assert pure['complete']and pure['inputs_before_after_equal']and len(pure['rows'])==9 and all(v['exit']==0 for v in pure['rows']);assert (D/'pure-tests-attempt1/INPUTS_BEFORE.json').read_bytes()==(D/'pure-tests-attempt1/INPUTS_AFTER.json').read_bytes();probe=json.loads((D/'correct-progress-offset-saved87-probe1/RESULT.json').read_text());assert probe['exit']==0 and probe['inputs_before_after_equal']and 'complete=1'in probe['stdout']
+stock=[q for q in D.rglob('*')if q.is_file()];assert len(stock)<20000 and sum(q.stat().st_size for q in stock)<=512*1024**2;assert not list((D/'scratch-never-writable').rglob('*'));ledger=json.loads((D/'targeted-build-attempt1/LEDGER.json').read_text());assert ledger['compile_charged']<=60*1024**2 and ledger['link_charged']<=240*1024**2 and ledger['child_disk_scratch_hard_cap']==0
+active=[]
+for q in Path('/proc').iterdir():
+ if q.name.isdigit():
+  try:
+   argv=(q/'cmdline').read_bytes().split(b'\0');first=Path(argv[0].decode(errors='replace')).name if argv and argv[0]else''
+   if first.startswith('active_first_cy'):active.append(q.name)
+  except OSError:pass
+assert not active
+vol=subprocess.run(['/mnt/c/Windows/System32/WindowsPowerShell/v1.0/powershell.exe','-NoProfile','-NonInteractive','-Command','Get-CimInstance Win32_LogicalDisk | Select-Object DeviceID,FreeSpace,Size | ConvertTo-Json -Compress'],stdin=subprocess.DEVNULL,capture_output=True,timeout=15);assert vol.returncode==0;v=json.loads(vol.stdout.decode('utf-8-sig'));free={r['DeviceID']:int(r['FreeSpace'])for r in v};assert free['C:']>=80*1024**3+3*1024**3+128*1024**2 and free['D:']>=80*1024**3+128*1024**2
+mac=x['Mac_readiness'];age=(datetime.datetime.now(datetime.timezone.utc)-datetime.datetime.fromisoformat(mac['utc'])).total_seconds();assert 0<=age<=180 and mac['free_bytes']>=41*1024**3 and mac['real_stream_protocol_checkpoint']=='e5aa7557e78f30147509abe6dea2fd4b3f2e2cd6'and mac['source_and_scalar_independent_review_pass']and mac['correct_saved87_production_bits_certificate_pass'];assert plan['compile_argv'][0][2]==sha(P/'profile-version1/active_input.json')and plan['compile_argv'][0][3]==sha(P/'link-attempt1/active_first_cycle')==sha(D/'targeted-build-attempt1/active_first_cycle')
+result={'schema':'FRESH65_PHYSICAL_BRAKING_FIRST_PROGRESS_SINGLE_USE_PREENTRY_V1','utc':datetime.datetime.now(datetime.timezone.utc).isoformat(),'writer':owner['owner_thread_id'],'runtime_input_count':1743,'all_runtime_inputs_stable':True,'profile_sha256':plan['compile_argv'][0][2],'ELF_sha256':plan['compile_argv'][0][3],'runtime_plan_sha256':sha(P/'active_run_plan.json'),'driver_sha256':sha(P/'active_run_driver.py'),'layout_sha256':sha(P/'STORAGE_LAYOUT65_V1.json'),'entry_wrapper_sha256':sha(P/'once_entry65_v1.py'),'actual_volumes':v,'D_build_stock':sum(q.stat().st_size for q in stock),'build28_pure9_correct_saved_probe_pass':True,'Mac_readiness':mac,'active_native_processes':active,'native65_not_entered':True,'execution_mode':'ONLINE_NO_OFFLINE_SUPERVISOR_QUEUE','scope':'Source/profile/space and targeted-regression entry qualification only, no actual65 Model/stop/phase acceptance. Original limits and all failures retained.'}
+with(P/name).open('x')as f:json.dump(result,f,indent=2);f.flush();os.fsync(f.fileno())
+(P/name).chmod(0o444);print(json.dumps(result))

@@ -1,0 +1,16 @@
+{
+  "schema": "NATIVE65_RUNTIME_LEGACY_LABEL_QUALIFICATION_V1",
+  "runtime_mode": "ONE_SHOT_NATIVE_CONTROLLER_DEVELOPMENT_RUN",
+  "inherited_comment_known_inaccurate": "The retained first comment saying compile driver does not execute project binaries is a legacy comment, contradicted by the explicit single native controller argv. This scope corrects its interpretation.",
+  "legacy_keys": [
+    "compile_argv",
+    "compile",
+    "BUILD_RESULT.json",
+    "BUILD_FAILURE.json"
+  ],
+  "actual_meaning": "compile_argv has exactly one native active_first_cycle ELF with pinned profile/SHA/output. BUILD_RESULT means parent reaped one native attempt without driver error only; it does not mean compilation, Model/solver success, physical stopping, task completion or Phase5 acceptance.",
+  "native_project_entry_dispatches": "actual single child dispatch count retained",
+  "controller_success_requires_actual_evidence": "full original Model/OSQP/SI/strict literal200/B400/two2ms/C/actual stop record and dwell50, termination plus backup evidence",
+  "driver_bytes_kept_unchanged_for_current_plan_identity": true,
+  "native65_entry_or_probe2": "Neither invoked; probe2 never generated or allocated"
+}
