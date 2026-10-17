@@ -1,5 +1,7 @@
 # Project showcase
 
+Latest actual result: [attempt66 all38 observations](../figures/phase5_stop66_actual_braking_20261016.png),51 commands/102task halves and dwell0/50. Physical speed meets its threshold only in the final two observations; acceleration and all remaining stop rates still fail. [Exact result and full backup](../reviews/evidence/phase5_actual66_literal_jerk_failure_v1_20261016/README.md). This is a retained-failure diagnostic, not a successful stop/task video. Older latest-result statements below are historical.
+
 Latest saved numerical diagnostic: [all seven contraction margins](../figures/phase5_saved65_contraction_repair_20261016.png), with [source/review/provenance](../reviews/evidence/phase5_contraction_interior66_prepared_v1_20261016/README.md). It preserves the original65 joint5 refusal and the repaired saved native-QP result. No actual66 motion, successful stop or full-task video is claimed.
 
 Latest actual result: [attempt65 retained failure and all36 braking observations](../reviews/evidence/phase5_actual65_strict_contraction_failure_v1_20261016/README.md),50 commands/100 task2ms halves, dwell0/50. [Actual diagnostic image](../figures/phase5_stop65_actual_braking_20261016.png); no full-task or successful-stop clip is claimed. Older preparation/running statements below are historical.

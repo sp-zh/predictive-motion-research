@@ -1,0 +1,3158 @@
+{
+  "schema": "ACTUAL66_RESULT_INDEPENDENT_REVIEW_AND_COMPLETE_BACKUP_V1",
+  "utc": "2026-10-17T01:09:28.086023+00:00",
+  "full_independent_result": {
+    "schema": "ROOT66_FULL_ARCHIVE_BOUND_TERMINAL_AND_SAVED_ARITHMETIC_REVIEW_V1",
+    "reader_V3_failure_preserved": "All scalar/stop/whole/B/nominal checks completed, but an older imported reader changed P5_DERIVED53_ROOT and the prewrite guard refused serialization. No result bytes written or budget refunded; V4 sets the intended Root output directory before final write.",
+    "reader_V2_failure_preserved": "V2 completed stop/whole and B400/C2 checks, then failed while compiling AST adapter lacking source locations. V3 adds AST locations and reuses frozen B report without rerunning that arithmetic. Legacy B outer label is not published; inner samples are32 and50.",
+    "reader_V1_failure_preserved": "Old reference R uses nums/u/d rather than take/arr. V1 failed on method lookup before interpreting whole/stop data; V2 adds bounded wire aliases only, no source/solver/Model changes.",
+    "archive": {
+      "archive_sha256": "f1b179d4271dc99a8a3f1dd5a1c056afd2f98db785db642bde1de04640056498",
+      "archive_bytes": 1822543482,
+      "outer_full_reopened_SHA_CRC_single_gzip_EOF_again_verified": true,
+      "cached_members": 211,
+      "cached_stored_bytes": 13136687,
+      "maximum_in_memory_stored_bytes": 67108864,
+      "new_extracted_native_files": 0,
+      "samples": [
+        [
+          32,
+          "native66/run-attempt1/artifacts/cycle-32/trial-0"
+        ],
+        [
+          50,
+          "native66/run-attempt1/artifacts/cycle-50/trial-0"
+        ]
+      ]
+    },
+    "entry": {
+      "stage": "FRESH_CURRENT_MATRIX_HINT_AND_NATIVE_SOLVER",
+      "error": "rounded candidate command derivative bound",
+      "boundary_unchanged": 0,
+      "session_termination": 1,
+      "session_error": "",
+      "native_termination": 1,
+      "native_error": "",
+      "wall_seconds": 323.517703383,
+      "physical_step_attempts": 1102,
+      "commits": 51
+    },
+    "whole_cycles": [
+      {
+        "cycle": 0,
+        "trials_entered": 1,
+        "physical_complete": 1,
+        "wall": 4.586496736,
+        "deadline_miss": 1,
+        "last_B_error": "",
+        "fatal_error": "",
+        "trials_total": 1,
+        "forecasts": 2,
+        "steps": 2,
+        "commits": 1,
+        "scope": "Whole current cycle monotonic wall spans every rejected fresh trial and actual C with pertrial evidence/manifest; summary serialization excluded. Diagnostic4ms deadline threshold never shortened to last successful trial."
+      },
+      {
+        "cycle": 1,
+        "trials_entered": 1,
+        "physical_complete": 1,
+        "wall": 3.765267328,
+        "deadline_miss": 1,
+        "last_B_error": "",
+        "fatal_error": "",
+        "trials_total": 2,
+        "forecasts": 4,
+        "steps": 4,
+        "commits": 2,
+        "scope": "Whole current cycle monotonic wall spans every rejected fresh trial and actual C with pertrial evidence/manifest; summary serialization excluded. Diagnostic4ms deadline threshold never shortened to last successful trial."
+      },
+      {
+        "cycle": 2,
+        "trials_entered": 1,
+        "physical_complete": 1,
+        "wall": 3.850939675,
+        "deadline_miss": 1,
+        "last_B_error": "",
+        "fatal_error": "",
+        "trials_total": 3,
+        "forecasts": 6,
+        "steps": 6,
+        "commits": 3,
+        "scope": "Whole current cycle monotonic wall spans every rejected fresh trial and actual C with pertrial evidence/manifest; summary serialization excluded. Diagnostic4ms deadline threshold never shortened to last successful trial."
+      },
+      {
+        "cycle": 3,
+        "trials_entered": 1,
+        "physical_complete": 1,
+        "wall": 3.772495923,
+        "deadline_miss": 1,
+        "last_B_error": "",
+        "fatal_error": "",
+        "trials_total": 4,
+        "forecasts": 8,
+        "steps": 8,
+        "commits": 4,
+        "scope": "Whole current cycle monotonic wall spans every rejected fresh trial and actual C with pertrial evidence/manifest; summary serialization excluded. Diagnostic4ms deadline threshold never shortened to last successful trial."
+      },
+      {
+        "cycle": 4,
+        "trials_entered": 1,
+        "physical_complete": 1,
+        "wall": 3.736817231,
+        "deadline_miss": 1,
+        "last_B_error": "",
+        "fatal_error": "",
+        "trials_total": 5,
+        "forecasts": 10,
+        "steps": 10,
+        "commits": 5,
+        "scope": "Whole current cycle monotonic wall spans every rejected fresh trial and actual C with pertrial evidence/manifest; summary serialization excluded. Diagnostic4ms deadline threshold never shortened to last successful trial."
+      },
+      {
+        "cycle": 5,
+        "trials_entered": 3,
+        "physical_complete": 1,
+        "wall": 10.620996578,
+        "deadline_miss": 1,
+        "last_B_error": "original value-affine1e-6/jointtrust.002",
+        "fatal_error": "",
+        "trials_total": 8,
+        "forecasts": 16,
+        "steps": 12,
+        "commits": 6,
+        "scope": "Whole current cycle monotonic wall spans every rejected fresh trial and actual C with pertrial evidence/manifest; summary serialization excluded. Diagnostic4ms deadline threshold never shortened to last successful trial."
+      },
+      {
+        "cycle": 6,
+        "trials_entered": 2,
+        "physical_complete": 1,
+        "wall": 7.131124226,
+        "deadline_miss": 1,
+        "last_B_error": "original value-affine1e-6/jointtrust.002",
+        "fatal_error": "",
+        "trials_total": 10,
+        "forecasts": 20,
+        "steps": 14,
+        "commits": 7,
+        "scope": "Whole current cycle monotonic wall spans every rejected fresh trial and actual C with pertrial evidence/manifest; summary serialization excluded. Diagnostic4ms deadline threshold never shortened to last successful trial."
+      },
+      {
+        "cycle": 7,
+        "trials_entered": 2,
+        "physical_complete": 1,
+        "wall": 7.553670697,
+        "deadline_miss": 1,
+        "last_B_error": "original value-affine1e-6/jointtrust.002",
+        "fatal_error": "",
+        "trials_total": 12,
+        "forecasts": 24,
+        "steps": 16,
+        "commits": 8,
+        "scope": "Whole current cycle monotonic wall spans every rejected fresh trial and actual C with pertrial evidence/manifest; summary serialization excluded. Diagnostic4ms deadline threshold never shortened to last successful trial."
+      },
+      {
+        "cycle": 8,
+        "trials_entered": 2,
+        "physical_complete": 1,
+        "wall": 8.601503527,
+        "deadline_miss": 1,
+        "last_B_error": "original value-affine1e-6/jointtrust.002",
+        "fatal_error": "",
+        "trials_total": 14,
+        "forecasts": 28,
+        "steps": 18,
+        "commits": 9,
+        "scope": "Whole current cycle monotonic wall spans every rejected fresh trial and actual C with pertrial evidence/manifest; summary serialization excluded. Diagnostic4ms deadline threshold never shortened to last successful trial."
+      },
+      {
+        "cycle": 9,
+        "trials_entered": 2,
+        "physical_complete": 1,
+        "wall": 8.765577219,
+        "deadline_miss": 1,
+        "last_B_error": "original value-affine1e-6/jointtrust.002",
+        "fatal_error": "",
+        "trials_total": 16,
+        "forecasts": 32,
+        "steps": 20,
+        "commits": 10,
+        "scope": "Whole current cycle monotonic wall spans every rejected fresh trial and actual C with pertrial evidence/manifest; summary serialization excluded. Diagnostic4ms deadline threshold never shortened to last successful trial."
+      },
+      {
+        "cycle": 10,
+        "trials_entered": 2,
+        "physical_complete": 1,
+        "wall": 7.068658884,
+        "deadline_miss": 1,
+        "last_B_error": "original value-affine1e-6/jointtrust.002",
+        "fatal_error": "",
+        "trials_total": 18,
+        "forecasts": 36,
+        "steps": 22,
+        "commits": 11,
+        "scope": "Whole current cycle monotonic wall spans every rejected fresh trial and actual C with pertrial evidence/manifest; summary serialization excluded. Diagnostic4ms deadline threshold never shortened to last successful trial."
+      },
+      {
+        "cycle": 11,
+        "trials_entered": 2,
+        "physical_complete": 1,
+        "wall": 7.048977247,
+        "deadline_miss": 1,
+        "last_B_error": "original value-affine1e-6/jointtrust.002",
+        "fatal_error": "",
+        "trials_total": 20,
+        "forecasts": 40,
+        "steps": 24,
+        "commits": 12,
+        "scope": "Whole current cycle monotonic wall spans every rejected fresh trial and actual C with pertrial evidence/manifest; summary serialization excluded. Diagnostic4ms deadline threshold never shortened to last successful trial."
+      },
+      {
+        "cycle": 12,
+        "trials_entered": 3,
+        "physical_complete": 1,
+        "wall": 10.391310279,
+        "deadline_miss": 1,
+        "last_B_error": "original value-affine1e-6/jointtrust.002",
+        "fatal_error": "",
+        "trials_total": 23,
+        "forecasts": 46,
+        "steps": 26,
+        "commits": 13,
+        "scope": "Whole current cycle monotonic wall spans every rejected fresh trial and actual C with pertrial evidence/manifest; summary serialization excluded. Diagnostic4ms deadline threshold never shortened to last successful trial."
+      },
+      {
+        "cycle": 13,
+        "trials_entered": 3,
+        "physical_complete": 1,
+        "wall": 10.267104078,
+        "deadline_miss": 1,
+        "last_B_error": "original value-affine1e-6/jointtrust.002",
+        "fatal_error": "",
+        "trials_total": 26,
+        "forecasts": 52,
+        "steps": 28,
+        "commits": 14,
+        "scope": "Whole current cycle monotonic wall spans every rejected fresh trial and actual C with pertrial evidence/manifest; summary serialization excluded. Diagnostic4ms deadline threshold never shortened to last successful trial."
+      },
+      {
+        "cycle": 14,
+        "trials_entered": 3,
+        "physical_complete": 1,
+        "wall": 10.265010324,
+        "deadline_miss": 1,
+        "last_B_error": "original value-affine1e-6/jointtrust.002",
+        "fatal_error": "",
+        "trials_total": 29,
+        "forecasts": 58,
+        "steps": 30,
+        "commits": 15,
+        "scope": "Whole current cycle monotonic wall spans every rejected fresh trial and actual C with pertrial evidence/manifest; summary serialization excluded. Diagnostic4ms deadline threshold never shortened to last successful trial."
+      },
+      {
+        "cycle": 15,
+        "trials_entered": 2,
+        "physical_complete": 1,
+        "wall": 6.827937016,
+        "deadline_miss": 1,
+        "last_B_error": "original value-affine1e-6/jointtrust.002",
+        "fatal_error": "",
+        "trials_total": 31,
+        "forecasts": 62,
+        "steps": 32,
+        "commits": 16,
+        "scope": "Whole current cycle monotonic wall spans every rejected fresh trial and actual C with pertrial evidence/manifest; summary serialization excluded. Diagnostic4ms deadline threshold never shortened to last successful trial."
+      },
+      {
+        "cycle": 16,
+        "trials_entered": 2,
+        "physical_complete": 1,
+        "wall": 6.786189097,
+        "deadline_miss": 1,
+        "last_B_error": "original value-affine1e-6/jointtrust.002",
+        "fatal_error": "",
+        "trials_total": 33,
+        "forecasts": 66,
+        "steps": 34,
+        "commits": 17,
+        "scope": "Whole current cycle monotonic wall spans every rejected fresh trial and actual C with pertrial evidence/manifest; summary serialization excluded. Diagnostic4ms deadline threshold never shortened to last successful trial."
+      },
+      {
+        "cycle": 17,
+        "trials_entered": 3,
+        "physical_complete": 1,
+        "wall": 10.172488424,
+        "deadline_miss": 1,
+        "last_B_error": "original value-affine1e-6/jointtrust.002",
+        "fatal_error": "",
+        "trials_total": 36,
+        "forecasts": 72,
+        "steps": 36,
+        "commits": 18,
+        "scope": "Whole current cycle monotonic wall spans every rejected fresh trial and actual C with pertrial evidence/manifest; summary serialization excluded. Diagnostic4ms deadline threshold never shortened to last successful trial."
+      },
+      {
+        "cycle": 18,
+        "trials_entered": 2,
+        "physical_complete": 1,
+        "wall": 7.025980057,
+        "deadline_miss": 1,
+        "last_B_error": "original value-affine1e-6/jointtrust.002",
+        "fatal_error": "",
+        "trials_total": 38,
+        "forecasts": 76,
+        "steps": 38,
+        "commits": 19,
+        "scope": "Whole current cycle monotonic wall spans every rejected fresh trial and actual C with pertrial evidence/manifest; summary serialization excluded. Diagnostic4ms deadline threshold never shortened to last successful trial."
+      },
+      {
+        "cycle": 19,
+        "trials_entered": 3,
+        "physical_complete": 1,
+        "wall": 10.045310799,
+        "deadline_miss": 1,
+        "last_B_error": "original value-affine1e-6/jointtrust.002",
+        "fatal_error": "",
+        "trials_total": 41,
+        "forecasts": 82,
+        "steps": 40,
+        "commits": 20,
+        "scope": "Whole current cycle monotonic wall spans every rejected fresh trial and actual C with pertrial evidence/manifest; summary serialization excluded. Diagnostic4ms deadline threshold never shortened to last successful trial."
+      },
+      {
+        "cycle": 20,
+        "trials_entered": 3,
+        "physical_complete": 1,
+        "wall": 9.987818563,
+        "deadline_miss": 1,
+        "last_B_error": "original value-affine1e-6/jointtrust.002",
+        "fatal_error": "",
+        "trials_total": 44,
+        "forecasts": 88,
+        "steps": 42,
+        "commits": 21,
+        "scope": "Whole current cycle monotonic wall spans every rejected fresh trial and actual C with pertrial evidence/manifest; summary serialization excluded. Diagnostic4ms deadline threshold never shortened to last successful trial."
+      },
+      {
+        "cycle": 21,
+        "trials_entered": 2,
+        "physical_complete": 1,
+        "wall": 6.817154836,
+        "deadline_miss": 1,
+        "last_B_error": "original value-affine1e-6/jointtrust.002",
+        "fatal_error": "",
+        "trials_total": 46,
+        "forecasts": 92,
+        "steps": 44,
+        "commits": 22,
+        "scope": "Whole current cycle monotonic wall spans every rejected fresh trial and actual C with pertrial evidence/manifest; summary serialization excluded. Diagnostic4ms deadline threshold never shortened to last successful trial."
+      },
+      {
+        "cycle": 22,
+        "trials_entered": 3,
+        "physical_complete": 1,
+        "wall": 10.011282402,
+        "deadline_miss": 1,
+        "last_B_error": "original value-affine1e-6/jointtrust.002",
+        "fatal_error": "",
+        "trials_total": 49,
+        "forecasts": 98,
+        "steps": 46,
+        "commits": 23,
+        "scope": "Whole current cycle monotonic wall spans every rejected fresh trial and actual C with pertrial evidence/manifest; summary serialization excluded. Diagnostic4ms deadline threshold never shortened to last successful trial."
+      },
+      {
+        "cycle": 23,
+        "trials_entered": 2,
+        "physical_complete": 1,
+        "wall": 6.714712763,
+        "deadline_miss": 1,
+        "last_B_error": "original value-affine1e-6/jointtrust.002",
+        "fatal_error": "",
+        "trials_total": 51,
+        "forecasts": 102,
+        "steps": 48,
+        "commits": 24,
+        "scope": "Whole current cycle monotonic wall spans every rejected fresh trial and actual C with pertrial evidence/manifest; summary serialization excluded. Diagnostic4ms deadline threshold never shortened to last successful trial."
+      },
+      {
+        "cycle": 24,
+        "trials_entered": 2,
+        "physical_complete": 1,
+        "wall": 6.693317085,
+        "deadline_miss": 1,
+        "last_B_error": "original value-affine1e-6/jointtrust.002",
+        "fatal_error": "",
+        "trials_total": 53,
+        "forecasts": 106,
+        "steps": 50,
+        "commits": 25,
+        "scope": "Whole current cycle monotonic wall spans every rejected fresh trial and actual C with pertrial evidence/manifest; summary serialization excluded. Diagnostic4ms deadline threshold never shortened to last successful trial."
+      },
+      {
+        "cycle": 25,
+        "trials_entered": 2,
+        "physical_complete": 1,
+        "wall": 6.745125885,
+        "deadline_miss": 1,
+        "last_B_error": "original value-affine1e-6/jointtrust.002",
+        "fatal_error": "",
+        "trials_total": 55,
+        "forecasts": 110,
+        "steps": 52,
+        "commits": 26,
+        "scope": "Whole current cycle monotonic wall spans every rejected fresh trial and actual C with pertrial evidence/manifest; summary serialization excluded. Diagnostic4ms deadline threshold never shortened to last successful trial."
+      },
+      {
+        "cycle": 26,
+        "trials_entered": 2,
+        "physical_complete": 1,
+        "wall": 6.613270936,
+        "deadline_miss": 1,
+        "last_B_error": "original value-affine1e-6/jointtrust.002",
+        "fatal_error": "",
+        "trials_total": 57,
+        "forecasts": 114,
+        "steps": 54,
+        "commits": 27,
+        "scope": "Whole current cycle monotonic wall spans every rejected fresh trial and actual C with pertrial evidence/manifest; summary serialization excluded. Diagnostic4ms deadline threshold never shortened to last successful trial."
+      },
+      {
+        "cycle": 27,
+        "trials_entered": 2,
+        "physical_complete": 1,
+        "wall": 6.590126506,
+        "deadline_miss": 1,
+        "last_B_error": "original value-affine1e-6/jointtrust.002",
+        "fatal_error": "",
+        "trials_total": 59,
+        "forecasts": 118,
+        "steps": 56,
+        "commits": 28,
+        "scope": "Whole current cycle monotonic wall spans every rejected fresh trial and actual C with pertrial evidence/manifest; summary serialization excluded. Diagnostic4ms deadline threshold never shortened to last successful trial."
+      },
+      {
+        "cycle": 28,
+        "trials_entered": 2,
+        "physical_complete": 1,
+        "wall": 6.554307191,
+        "deadline_miss": 1,
+        "last_B_error": "original value-affine1e-6/jointtrust.002",
+        "fatal_error": "",
+        "trials_total": 61,
+        "forecasts": 122,
+        "steps": 58,
+        "commits": 29,
+        "scope": "Whole current cycle monotonic wall spans every rejected fresh trial and actual C with pertrial evidence/manifest; summary serialization excluded. Diagnostic4ms deadline threshold never shortened to last successful trial."
+      },
+      {
+        "cycle": 29,
+        "trials_entered": 2,
+        "physical_complete": 1,
+        "wall": 6.513644007,
+        "deadline_miss": 1,
+        "last_B_error": "original value-affine1e-6/jointtrust.002",
+        "fatal_error": "",
+        "trials_total": 63,
+        "forecasts": 126,
+        "steps": 60,
+        "commits": 30,
+        "scope": "Whole current cycle monotonic wall spans every rejected fresh trial and actual C with pertrial evidence/manifest; summary serialization excluded. Diagnostic4ms deadline threshold never shortened to last successful trial."
+      },
+      {
+        "cycle": 30,
+        "trials_entered": 2,
+        "physical_complete": 1,
+        "wall": 6.487049158,
+        "deadline_miss": 1,
+        "last_B_error": "original value-affine1e-6/jointtrust.002",
+        "fatal_error": "",
+        "trials_total": 65,
+        "forecasts": 130,
+        "steps": 62,
+        "commits": 31,
+        "scope": "Whole current cycle monotonic wall spans every rejected fresh trial and actual C with pertrial evidence/manifest; summary serialization excluded. Diagnostic4ms deadline threshold never shortened to last successful trial."
+      },
+      {
+        "cycle": 31,
+        "trials_entered": 2,
+        "physical_complete": 1,
+        "wall": 6.461774303,
+        "deadline_miss": 1,
+        "last_B_error": "original value-affine1e-6/jointtrust.002",
+        "fatal_error": "",
+        "trials_total": 67,
+        "forecasts": 134,
+        "steps": 64,
+        "commits": 32,
+        "scope": "Whole current cycle monotonic wall spans every rejected fresh trial and actual C with pertrial evidence/manifest; summary serialization excluded. Diagnostic4ms deadline threshold never shortened to last successful trial."
+      },
+      {
+        "cycle": 32,
+        "trials_entered": 1,
+        "physical_complete": 1,
+        "wall": 3.722396445,
+        "deadline_miss": 1,
+        "last_B_error": "",
+        "fatal_error": "",
+        "trials_total": 68,
+        "forecasts": 136,
+        "steps": 66,
+        "commits": 33,
+        "scope": "Whole current cycle monotonic wall spans every rejected fresh trial and actual C with pertrial evidence/manifest; summary serialization excluded. Diagnostic4ms deadline threshold never shortened to last successful trial."
+      },
+      {
+        "cycle": 33,
+        "trials_entered": 1,
+        "physical_complete": 1,
+        "wall": 3.737224612,
+        "deadline_miss": 1,
+        "last_B_error": "",
+        "fatal_error": "",
+        "trials_total": 69,
+        "forecasts": 138,
+        "steps": 68,
+        "commits": 34,
+        "scope": "Whole current cycle monotonic wall spans every rejected fresh trial and actual C with pertrial evidence/manifest; summary serialization excluded. Diagnostic4ms deadline threshold never shortened to last successful trial."
+      },
+      {
+        "cycle": 34,
+        "trials_entered": 1,
+        "physical_complete": 1,
+        "wall": 3.807812396,
+        "deadline_miss": 1,
+        "last_B_error": "",
+        "fatal_error": "",
+        "trials_total": 70,
+        "forecasts": 140,
+        "steps": 70,
+        "commits": 35,
+        "scope": "Whole current cycle monotonic wall spans every rejected fresh trial and actual C with pertrial evidence/manifest; summary serialization excluded. Diagnostic4ms deadline threshold never shortened to last successful trial."
+      },
+      {
+        "cycle": 35,
+        "trials_entered": 1,
+        "physical_complete": 1,
+        "wall": 3.878427271,
+        "deadline_miss": 1,
+        "last_B_error": "",
+        "fatal_error": "",
+        "trials_total": 71,
+        "forecasts": 142,
+        "steps": 72,
+        "commits": 36,
+        "scope": "Whole current cycle monotonic wall spans every rejected fresh trial and actual C with pertrial evidence/manifest; summary serialization excluded. Diagnostic4ms deadline threshold never shortened to last successful trial."
+      },
+      {
+        "cycle": 36,
+        "trials_entered": 1,
+        "physical_complete": 1,
+        "wall": 3.815372528,
+        "deadline_miss": 1,
+        "last_B_error": "",
+        "fatal_error": "",
+        "trials_total": 72,
+        "forecasts": 144,
+        "steps": 74,
+        "commits": 37,
+        "scope": "Whole current cycle monotonic wall spans every rejected fresh trial and actual C with pertrial evidence/manifest; summary serialization excluded. Diagnostic4ms deadline threshold never shortened to last successful trial."
+      },
+      {
+        "cycle": 37,
+        "trials_entered": 1,
+        "physical_complete": 1,
+        "wall": 3.89775921,
+        "deadline_miss": 1,
+        "last_B_error": "",
+        "fatal_error": "",
+        "trials_total": 73,
+        "forecasts": 146,
+        "steps": 76,
+        "commits": 38,
+        "scope": "Whole current cycle monotonic wall spans every rejected fresh trial and actual C with pertrial evidence/manifest; summary serialization excluded. Diagnostic4ms deadline threshold never shortened to last successful trial."
+      },
+      {
+        "cycle": 38,
+        "trials_entered": 1,
+        "physical_complete": 1,
+        "wall": 3.92167047,
+        "deadline_miss": 1,
+        "last_B_error": "",
+        "fatal_error": "",
+        "trials_total": 74,
+        "forecasts": 148,
+        "steps": 78,
+        "commits": 39,
+        "scope": "Whole current cycle monotonic wall spans every rejected fresh trial and actual C with pertrial evidence/manifest; summary serialization excluded. Diagnostic4ms deadline threshold never shortened to last successful trial."
+      },
+      {
+        "cycle": 39,
+        "trials_entered": 1,
+        "physical_complete": 1,
+        "wall": 3.933552261,
+        "deadline_miss": 1,
+        "last_B_error": "",
+        "fatal_error": "",
+        "trials_total": 75,
+        "forecasts": 150,
+        "steps": 80,
+        "commits": 40,
+        "scope": "Whole current cycle monotonic wall spans every rejected fresh trial and actual C with pertrial evidence/manifest; summary serialization excluded. Diagnostic4ms deadline threshold never shortened to last successful trial."
+      },
+      {
+        "cycle": 40,
+        "trials_entered": 1,
+        "physical_complete": 1,
+        "wall": 3.920398834,
+        "deadline_miss": 1,
+        "last_B_error": "",
+        "fatal_error": "",
+        "trials_total": 76,
+        "forecasts": 152,
+        "steps": 82,
+        "commits": 41,
+        "scope": "Whole current cycle monotonic wall spans every rejected fresh trial and actual C with pertrial evidence/manifest; summary serialization excluded. Diagnostic4ms deadline threshold never shortened to last successful trial."
+      },
+      {
+        "cycle": 41,
+        "trials_entered": 1,
+        "physical_complete": 1,
+        "wall": 3.927891491,
+        "deadline_miss": 1,
+        "last_B_error": "",
+        "fatal_error": "",
+        "trials_total": 77,
+        "forecasts": 154,
+        "steps": 84,
+        "commits": 42,
+        "scope": "Whole current cycle monotonic wall spans every rejected fresh trial and actual C with pertrial evidence/manifest; summary serialization excluded. Diagnostic4ms deadline threshold never shortened to last successful trial."
+      },
+      {
+        "cycle": 42,
+        "trials_entered": 1,
+        "physical_complete": 1,
+        "wall": 3.824212241,
+        "deadline_miss": 1,
+        "last_B_error": "",
+        "fatal_error": "",
+        "trials_total": 78,
+        "forecasts": 156,
+        "steps": 86,
+        "commits": 43,
+        "scope": "Whole current cycle monotonic wall spans every rejected fresh trial and actual C with pertrial evidence/manifest; summary serialization excluded. Diagnostic4ms deadline threshold never shortened to last successful trial."
+      },
+      {
+        "cycle": 43,
+        "trials_entered": 1,
+        "physical_complete": 1,
+        "wall": 4.245142542,
+        "deadline_miss": 1,
+        "last_B_error": "",
+        "fatal_error": "",
+        "trials_total": 79,
+        "forecasts": 158,
+        "steps": 88,
+        "commits": 44,
+        "scope": "Whole current cycle monotonic wall spans every rejected fresh trial and actual C with pertrial evidence/manifest; summary serialization excluded. Diagnostic4ms deadline threshold never shortened to last successful trial."
+      },
+      {
+        "cycle": 44,
+        "trials_entered": 1,
+        "physical_complete": 1,
+        "wall": 3.88872519,
+        "deadline_miss": 1,
+        "last_B_error": "",
+        "fatal_error": "",
+        "trials_total": 80,
+        "forecasts": 160,
+        "steps": 90,
+        "commits": 45,
+        "scope": "Whole current cycle monotonic wall spans every rejected fresh trial and actual C with pertrial evidence/manifest; summary serialization excluded. Diagnostic4ms deadline threshold never shortened to last successful trial."
+      },
+      {
+        "cycle": 45,
+        "trials_entered": 1,
+        "physical_complete": 1,
+        "wall": 3.929443511,
+        "deadline_miss": 1,
+        "last_B_error": "",
+        "fatal_error": "",
+        "trials_total": 81,
+        "forecasts": 162,
+        "steps": 92,
+        "commits": 46,
+        "scope": "Whole current cycle monotonic wall spans every rejected fresh trial and actual C with pertrial evidence/manifest; summary serialization excluded. Diagnostic4ms deadline threshold never shortened to last successful trial."
+      },
+      {
+        "cycle": 46,
+        "trials_entered": 1,
+        "physical_complete": 1,
+        "wall": 3.968752585,
+        "deadline_miss": 1,
+        "last_B_error": "",
+        "fatal_error": "",
+        "trials_total": 82,
+        "forecasts": 164,
+        "steps": 94,
+        "commits": 47,
+        "scope": "Whole current cycle monotonic wall spans every rejected fresh trial and actual C with pertrial evidence/manifest; summary serialization excluded. Diagnostic4ms deadline threshold never shortened to last successful trial."
+      },
+      {
+        "cycle": 47,
+        "trials_entered": 1,
+        "physical_complete": 1,
+        "wall": 3.935571213,
+        "deadline_miss": 1,
+        "last_B_error": "",
+        "fatal_error": "",
+        "trials_total": 83,
+        "forecasts": 166,
+        "steps": 96,
+        "commits": 48,
+        "scope": "Whole current cycle monotonic wall spans every rejected fresh trial and actual C with pertrial evidence/manifest; summary serialization excluded. Diagnostic4ms deadline threshold never shortened to last successful trial."
+      },
+      {
+        "cycle": 48,
+        "trials_entered": 1,
+        "physical_complete": 1,
+        "wall": 3.970877357,
+        "deadline_miss": 1,
+        "last_B_error": "",
+        "fatal_error": "",
+        "trials_total": 84,
+        "forecasts": 168,
+        "steps": 98,
+        "commits": 49,
+        "scope": "Whole current cycle monotonic wall spans every rejected fresh trial and actual C with pertrial evidence/manifest; summary serialization excluded. Diagnostic4ms deadline threshold never shortened to last successful trial."
+      },
+      {
+        "cycle": 49,
+        "trials_entered": 1,
+        "physical_complete": 1,
+        "wall": 3.813024375,
+        "deadline_miss": 1,
+        "last_B_error": "",
+        "fatal_error": "",
+        "trials_total": 85,
+        "forecasts": 170,
+        "steps": 100,
+        "commits": 50,
+        "scope": "Whole current cycle monotonic wall spans every rejected fresh trial and actual C with pertrial evidence/manifest; summary serialization excluded. Diagnostic4ms deadline threshold never shortened to last successful trial."
+      },
+      {
+        "cycle": 50,
+        "trials_entered": 1,
+        "physical_complete": 1,
+        "wall": 3.748750878,
+        "deadline_miss": 1,
+        "last_B_error": "",
+        "fatal_error": "",
+        "trials_total": 86,
+        "forecasts": 172,
+        "steps": 102,
+        "commits": 51,
+        "scope": "Whole current cycle monotonic wall spans every rejected fresh trial and actual C with pertrial evidence/manifest; summary serialization excluded. Diagnostic4ms deadline threshold never shortened to last successful trial."
+      },
+      {
+        "cycle": 51,
+        "trials_entered": 1,
+        "physical_complete": 0,
+        "wall": 3.178033352,
+        "deadline_miss": 1,
+        "last_B_error": "",
+        "fatal_error": "rounded candidate command derivative bound",
+        "trials_total": 87,
+        "forecasts": 173,
+        "steps": 102,
+        "commits": 51,
+        "scope": "Whole current cycle monotonic wall spans every rejected fresh trial and actual C with pertrial evidence/manifest; summary serialization excluded. Diagnostic4ms deadline threshold never shortened to last successful trial."
+      }
+    ],
+    "stop_records": [
+      {
+        "global_half": 1065,
+        "time_s": 2.129999999999987,
+        "v": 0.0004802180723748438,
+        "a": 0.01126646413824239,
+        "w": 0.002216120083630107,
+        "alpha": 0.07093705257015155,
+        "s": 0.0013111383870357486,
+        "r": 0.022439981579786956,
+        "b": 0.15294175393031856,
+        "below": false,
+        "guards": true,
+        "hold_anchor": "N/A_NOT_ESTABLISHED",
+        "consecutive": 0,
+        "C_drift": 0.0,
+        "s_drift": 0.0
+      },
+      {
+        "global_half": 1066,
+        "time_s": 2.131999999999987,
+        "v": 0.0004975978038120463,
+        "a": 0.009391649908343538,
+        "w": 0.002216120083630107,
+        "alpha": 0.07093705257015155,
+        "s": 0.0013563242337031834,
+        "r": 0.02274586508764759,
+        "b": 0.15294175393031856,
+        "below": false,
+        "guards": true,
+        "hold_anchor": "N/A_NOT_ESTABLISHED",
+        "consecutive": 0,
+        "C_drift": 0.0,
+        "s_drift": 0.0
+      },
+      {
+        "global_half": 1067,
+        "time_s": 2.1339999999999866,
+        "v": 0.0005176437676137446,
+        "a": 0.010594775833780412,
+        "w": 0.0017711163394509926,
+        "alpha": 0.14004033435775992,
+        "s": 0.001402081855386338,
+        "r": 0.023011756595507,
+        "b": 0.13294575392970445,
+        "below": false,
+        "guards": true,
+        "hold_anchor": "N/A_NOT_ESTABLISHED",
+        "consecutive": 0,
+        "C_drift": 0.0,
+        "s_drift": 0.0
+      },
+      {
+        "global_half": 1068,
+        "time_s": 2.1359999999999864,
+        "v": 0.0005330365243649349,
+        "a": 0.00882119342373401,
+        "w": 0.0017711163394509926,
+        "alpha": 0.14004033435775992,
+        "s": 0.0014483712600852113,
+        "r": 0.02327764810336641,
+        "b": 0.13294575392970445,
+        "below": false,
+        "guards": true,
+        "hold_anchor": "N/A_NOT_ESTABLISHED",
+        "consecutive": 0,
+        "C_drift": 0.0,
+        "s_drift": 0.0
+      },
+      {
+        "global_half": 1069,
+        "time_s": 2.137999999999986,
+        "v": 0.0005486511350718047,
+        "a": 0.009082237422325227,
+        "w": 0.0011462856203793682,
+        "alpha": 0.15674409075729523,
+        "s": 0.0014951524557998033,
+        "r": 0.023503547611225653,
+        "b": 0.11294975392962178,
+        "below": false,
+        "guards": true,
+        "hold_anchor": "N/A_NOT_ESTABLISHED",
+        "consecutive": 0,
+        "C_drift": 0.0,
+        "s_drift": 0.0
+      },
+      {
+        "global_half": 1070,
+        "time_s": 2.139999999999986,
+        "v": 0.0005605673991823903,
+        "a": 0.007478451974447776,
+        "w": 0.0011462856203793682,
+        "alpha": 0.15674409075729523,
+        "s": 0.001542385450530114,
+        "r": 0.0237294471190849,
+        "b": 0.11294975392962178,
+        "below": false,
+        "guards": true,
+        "hold_anchor": "N/A_NOT_ESTABLISHED",
+        "consecutive": 0,
+        "C_drift": 0.0,
+        "s_drift": 0.0
+      },
+      {
+        "global_half": 1071,
+        "time_s": 2.1419999999999857,
+        "v": 0.0005742959780548512,
+        "a": 0.006864289436230497,
+        "w": 0.000668510962407842,
+        "alpha": 0.16292536338084931,
+        "s": 0.001590030252276143,
+        "r": 0.023915354626944094,
+        "b": 0.0929537539295981,
+        "below": false,
+        "guards": true,
+        "hold_anchor": "N/A_NOT_ESTABLISHED",
+        "consecutive": 0,
+        "C_drift": 0.0,
+        "s_drift": 0.0
+      },
+      {
+        "global_half": 1072,
+        "time_s": 2.1439999999999855,
+        "v": 0.0005853509297188542,
+        "a": 0.005527475832001476,
+        "w": 0.000668510962407842,
+        "alpha": 0.16292536338084931,
+        "s": 0.0016380468690378905,
+        "r": 0.024101262134803292,
+        "b": 0.0929537539295981,
+        "below": false,
+        "guards": true,
+        "hold_anchor": "N/A_NOT_ESTABLISHED",
+        "consecutive": 0,
+        "C_drift": 0.0,
+        "s_drift": 0.0
+      },
+      {
+        "global_half": 1073,
+        "time_s": 2.1459999999999853,
+        "v": 0.000593892735837834,
+        "a": 0.004270903059489883,
+        "w": 0.0009411419207645912,
+        "alpha": 0.13946701294240504,
+        "s": 0.001686395308815357,
+        "r": 0.02424717764266318,
+        "b": 0.07295775392994436,
+        "below": false,
+        "guards": true,
+        "hold_anchor": "N/A_NOT_ESTABLISHED",
+        "consecutive": 0,
+        "C_drift": 0.0,
+        "s_drift": 0.0
+      },
+      {
+        "global_half": 1074,
+        "time_s": 2.147999999999985,
+        "v": 0.0006004056582547462,
+        "a": 0.0034682229336011733,
+        "w": 0.0009411419207645912,
+        "alpha": 0.13946701294240504,
+        "s": 0.0017350355796085432,
+        "r": 0.02439309315052307,
+        "b": 0.07295775392994436,
+        "below": false,
+        "guards": true,
+        "hold_anchor": "N/A_NOT_ESTABLISHED",
+        "consecutive": 0,
+        "C_drift": 0.0,
+        "s_drift": 0.0
+      },
+      {
+        "global_half": 1075,
+        "time_s": 2.149999999999985,
+        "v": 0.0006034806404085298,
+        "a": 0.0054943753506825135,
+        "w": 0.0011744400911081,
+        "alpha": 0.11858351617301201,
+        "s": 0.0017839276894174487,
+        "r": 0.024499016658382576,
+        "b": 0.05296175392975257,
+        "below": false,
+        "guards": true,
+        "hold_anchor": "N/A_NOT_ESTABLISHED",
+        "consecutive": 0,
+        "C_drift": 0.0,
+        "s_drift": 0.0
+      },
+      {
+        "global_half": 1076,
+        "time_s": 2.1519999999999846,
+        "v": 0.0006052222701444957,
+        "a": 0.005043804760487673,
+        "w": 0.0011744400911081,
+        "alpha": 0.11858351617301201,
+        "s": 0.0018330316462420735,
+        "r": 0.02460494016624208,
+        "b": 0.05296175392975257,
+        "below": false,
+        "guards": true,
+        "hold_anchor": "N/A_NOT_ESTABLISHED",
+        "consecutive": 0,
+        "C_drift": 0.0,
+        "s_drift": 0.0
+      },
+      {
+        "global_half": 1077,
+        "time_s": 2.1539999999999844,
+        "v": 0.0006028794974609657,
+        "a": 0.0071882378306345395,
+        "w": 0.001476794043228753,
+        "alpha": 0.10001338310054284,
+        "s": 0.00188230745808242,
+        "r": 0.024670871674104543,
+        "b": 0.03296575393123063,
+        "below": false,
+        "guards": true,
+        "hold_anchor": "N/A_NOT_ESTABLISHED",
+        "consecutive": 0,
+        "C_drift": 0.0,
+        "s_drift": 0.0
+      },
+      {
+        "global_half": 1078,
+        "time_s": 2.155999999999984,
+        "v": 0.0005999072647204089,
+        "a": 0.006443000917430512,
+        "w": 0.001476794043228753,
+        "alpha": 0.10001338310054284,
+        "s": 0.0019317151329384917,
+        "r": 0.024736803181967006,
+        "b": 0.03296575393123063,
+        "below": false,
+        "guards": true,
+        "hold_anchor": "N/A_NOT_ESTABLISHED",
+        "consecutive": 0,
+        "C_drift": 0.0,
+        "s_drift": 0.0
+      },
+      {
+        "global_half": 1079,
+        "time_s": 2.157999999999984,
+        "v": 0.0005924191640302884,
+        "a": 0.008647980043433723,
+        "w": 0.0017229524473402445,
+        "alpha": 0.0835212279533997,
+        "s": 0.001981214678810289,
+        "r": 0.024762742689830485,
+        "b": 0.012969753931739613,
+        "below": false,
+        "guards": true,
+        "hold_anchor": "N/A_NOT_ESTABLISHED",
+        "consecutive": 0,
+        "C_drift": 0.0,
+        "s_drift": 0.0
+      },
+      {
+        "global_half": 1080,
+        "time_s": 2.1599999999999837,
+        "v": 0.0005849845358197347,
+        "a": 0.007639861443022586,
+        "w": 0.0017229524473402445,
+        "alpha": 0.0835212279533997,
+        "s": 0.0020307661036978136,
+        "r": 0.024788682197693965,
+        "b": 0.012969753931739613,
+        "below": false,
+        "guards": true,
+        "hold_anchor": "N/A_NOT_ESTABLISHED",
+        "consecutive": 0,
+        "C_drift": 0.0,
+        "s_drift": 0.0
+      },
+      {
+        "global_half": 1081,
+        "time_s": 2.1619999999999835,
+        "v": 0.0005727683853187227,
+        "a": 0.010364954197038994,
+        "w": 0.0019194131060224309,
+        "alpha": 0.06889519149677029,
+        "s": 0.0020803294156010645,
+        "r": 0.02477462970555713,
+        "b": -0.0070262460684175215,
+        "below": false,
+        "guards": true,
+        "hold_anchor": "N/A_NOT_ESTABLISHED",
+        "consecutive": 0,
+        "C_drift": 0.0,
+        "s_drift": 0.0
+      },
+      {
+        "global_half": 1082,
+        "time_s": 2.1639999999999833,
+        "v": 0.0005612480898760862,
+        "a": 0.009552279943974841,
+        "w": 0.0019194131060224309,
+        "alpha": 0.06889519149677029,
+        "s": 0.002129864622520042,
+        "r": 0.024760577213420294,
+        "b": -0.0070262460684175215,
+        "below": false,
+        "guards": true,
+        "hold_anchor": "N/A_NOT_ESTABLISHED",
+        "consecutive": 0,
+        "C_drift": 0.0,
+        "s_drift": 0.0
+      },
+      {
+        "global_half": 1083,
+        "time_s": 2.165999999999983,
+        "v": 0.0005447753045167073,
+        "a": 0.012311871485943345,
+        "w": 0.0020720068175159785,
+        "alpha": 0.06231381911075802,
+        "s": 0.002179331732454746,
+        "r": 0.02470653272128346,
+        "b": -0.027022246068417532,
+        "below": false,
+        "guards": true,
+        "hold_anchor": "N/A_NOT_ESTABLISHED",
+        "consecutive": 0,
+        "C_drift": 0.0,
+        "s_drift": 0.0
+      },
+      {
+        "global_half": 1084,
+        "time_s": 2.167999999999983,
+        "v": 0.0005295961718455163,
+        "a": 0.01124023408810275,
+        "w": 0.0020720068175159785,
+        "alpha": 0.06231381911075802,
+        "s": 0.0022286907534051757,
+        "r": 0.024652488229146625,
+        "b": -0.027022246068417532,
+        "below": false,
+        "guards": true,
+        "hold_anchor": "N/A_NOT_ESTABLISHED",
+        "consecutive": 0,
+        "C_drift": 0.0,
+        "s_drift": 0.0
+      },
+      {
+        "global_half": 1085,
+        "time_s": 2.1699999999999826,
+        "v": 0.0005093815060844682,
+        "a": 0.013958576021181874,
+        "w": 0.0021859649189353556,
+        "alpha": 0.10149122121927272,
+        "s": 0.002277901693371333,
+        "r": 0.02455845173701079,
+        "b": -0.04701824606791783,
+        "below": false,
+        "guards": true,
+        "hold_anchor": "N/A_NOT_ESTABLISHED",
+        "consecutive": 0,
+        "C_drift": 0.0,
+        "s_drift": 0.0
+      },
+      {
+        "global_half": 1086,
+        "time_s": 2.1719999999999824,
+        "v": 0.0004910079885395609,
+        "a": 0.012656855277727433,
+        "w": 0.0021859649189353556,
+        "alpha": 0.10149122121927272,
+        "s": 0.002326924560353219,
+        "r": 0.024464415244874953,
+        "b": -0.04701824606791783,
+        "below": false,
+        "guards": true,
+        "hold_anchor": "N/A_NOT_ESTABLISHED",
+        "consecutive": 0,
+        "C_drift": 0.0,
+        "s_drift": 0.0
+      },
+      {
+        "global_half": 1087,
+        "time_s": 2.173999999999982,
+        "v": 0.000467620423491998,
+        "a": 0.01530323325030133,
+        "w": 0.002265980014456455,
+        "alpha": 0.08575493367682287,
+        "s": 0.0023757193623508374,
+        "r": 0.024330386752743495,
+        "b": -0.0670142460657298,
+        "below": false,
+        "guards": true,
+        "hold_anchor": "N/A_NOT_ESTABLISHED",
+        "consecutive": 0,
+        "C_drift": 0.0,
+        "s_drift": 0.0
+      },
+      {
+        "global_half": 1088,
+        "time_s": 2.175999999999982,
+        "v": 0.0004465591288344003,
+        "a": 0.013801330915425621,
+        "w": 0.002265980014456455,
+        "alpha": 0.08575493367682287,
+        "s": 0.0024242461073641927,
+        "r": 0.024196358260612033,
+        "b": -0.0670142460657298,
+        "below": false,
+        "guards": true,
+        "hold_anchor": "N/A_NOT_ESTABLISHED",
+        "consecutive": 0,
+        "C_drift": 0.0,
+        "s_drift": 0.0
+      },
+      {
+        "global_half": 1089,
+        "time_s": 2.1779999999999817,
+        "v": 0.00042060304704460364,
+        "a": 0.016353605155894103,
+        "w": 0.0023162605394047723,
+        "alpha": 0.10068415845602496,
+        "s": 0.002472464803393279,
+        "r": 0.024022337768474362,
+        "b": -0.0870102460688354,
+        "below": false,
+        "guards": true,
+        "hold_anchor": "N/A_NOT_ESTABLISHED",
+        "consecutive": 0,
+        "C_drift": 0.0,
+        "s_drift": 0.0
+      },
+      {
+        "global_half": 1090,
+        "time_s": 2.1799999999999815,
+        "v": 0.00039738450237444475,
+        "a": 0.014681250475408051,
+        "w": 0.0023162605394047723,
+        "alpha": 0.10068415845602496,
+        "s": 0.0025203354584380903,
+        "r": 0.02384831727633669,
+        "b": -0.0870102460688354,
+        "below": false,
+        "guards": true,
+        "hold_anchor": "N/A_NOT_ESTABLISHED",
+        "consecutive": 0,
+        "C_drift": 0.0,
+        "s_drift": 0.0
+      },
+      {
+        "global_half": 1091,
+        "time_s": 2.1819999999999813,
+        "v": 0.0003694652664750259,
+        "a": 0.016777118045352035,
+        "w": 0.002263858326531408,
+        "alpha": 0.1390427801897701,
+        "s": 0.0025678180804986246,
+        "r": 0.023634304784197847,
+        "b": -0.10700624606942093,
+        "below": false,
+        "guards": true,
+        "hold_anchor": "N/A_NOT_ESTABLISHED",
+        "consecutive": 0,
+        "C_drift": 0.0,
+        "s_drift": 0.0
+      },
+      {
+        "global_half": 1092,
+        "time_s": 2.183999999999981,
+        "v": 0.00034461508788053916,
+        "a": 0.015003301821750826,
+        "w": 0.002263858326531408,
+        "alpha": 0.1390427801897701,
+        "s": 0.002614872677574882,
+        "r": 0.023420292292059008,
+        "b": -0.10700624606942093,
+        "below": false,
+        "guards": true,
+        "hold_anchor": "N/A_NOT_ESTABLISHED",
+        "consecutive": 0,
+        "C_drift": 0.0,
+        "s_drift": 0.0
+      },
+      {
+        "global_half": 1093,
+        "time_s": 2.185999999999981,
+        "v": 0.0003152506761362083,
+        "a": 0.01629618082360248,
+        "w": 0.002307395552175129,
+        "alpha": 0.11842571661975093,
+        "s": 0.0026614592576668615,
+        "r": 0.023166287799920755,
+        "b": -0.12700224606912602,
+        "below": false,
+        "guards": true,
+        "hold_anchor": "N/A_NOT_ESTABLISHED",
+        "consecutive": 0,
+        "C_drift": 0.0,
+        "s_drift": 0.0
+      },
+      {
+        "global_half": 1094,
+        "time_s": 2.1879999999999806,
+        "v": 0.00028922154609836763,
+        "a": 0.014524227271409968,
+        "w": 0.002307395552175129,
+        "alpha": 0.11842571661975093,
+        "s": 0.0027075378287745653,
+        "r": 0.022912283307782503,
+        "b": -0.12700224606912602,
+        "below": false,
+        "guards": true,
+        "hold_anchor": "N/A_NOT_ESTABLISHED",
+        "consecutive": 0,
+        "C_drift": 0.0,
+        "s_drift": 0.0
+      },
+      {
+        "global_half": 1095,
+        "time_s": 2.1899999999999804,
+        "v": 0.0002588759049985018,
+        "a": 0.015172820549932915,
+        "w": 0.0023271057106672858,
+        "alpha": 0.13183073709422174,
+        "s": 0.002753068398897994,
+        "r": 0.02261828681564616,
+        "b": -0.14699824606817247,
+        "below": false,
+        "guards": true,
+        "hold_anchor": "N/A_NOT_ESTABLISHED",
+        "consecutive": 0,
+        "C_drift": 0.0,
+        "s_drift": 0.0
+      },
+      {
+        "global_half": 1096,
+        "time_s": 2.19199999999998,
+        "v": 0.00023207354519403937,
+        "a": 0.013401179902231216,
+        "w": 0.0023271057106672858,
+        "alpha": 0.13183073709422174,
+        "s": 0.00279801097603715,
+        "r": 0.022324290323509813,
+        "b": -0.14699824606817247,
+        "below": false,
+        "guards": true,
+        "hold_anchor": "N/A_NOT_ESTABLISHED",
+        "consecutive": 0,
+        "C_drift": 0.0,
+        "s_drift": 0.0
+      },
+      {
+        "global_half": 1097,
+        "time_s": 2.19399999999998,
+        "v": 0.00020116433818386127,
+        "a": 0.015454603505089048,
+        "w": 0.002326110543721399,
+        "alpha": 0.1502399379186522,
+        "s": 0.00284232556819203,
+        "r": 0.021990301831370292,
+        "b": -0.1669942460697598,
+        "below": false,
+        "guards": true,
+        "hold_anchor": "N/A_NOT_ESTABLISHED",
+        "consecutive": 0,
+        "C_drift": 0.0,
+        "s_drift": 0.0
+      },
+      {
+        "global_half": 1098,
+        "time_s": 2.1959999999999797,
+        "v": 0.00017395354851840663,
+        "a": 0.01360539483272732,
+        "w": 0.002326110543721399,
+        "alpha": 0.1502399379186522,
+        "s": 0.002885972183362631,
+        "r": 0.021656313339230772,
+        "b": -0.1669942460697598,
+        "below": false,
+        "guards": true,
+        "hold_anchor": "N/A_NOT_ESTABLISHED",
+        "consecutive": 0,
+        "C_drift": 0.0,
+        "s_drift": 0.0
+      },
+      {
+        "global_half": 1099,
+        "time_s": 2.1979999999999795,
+        "v": 0.00014326465831167006,
+        "a": 0.015344445103368286,
+        "w": 0.0023080528085412124,
+        "alpha": 0.12819112775004976,
+        "s": 0.002928910829548954,
+        "r": 0.021282332847092283,
+        "b": -0.18699024606924375,
+        "below": false,
+        "guards": true,
+        "hold_anchor": "N/A_NOT_ESTABLISHED",
+        "consecutive": 0,
+        "C_drift": 0.0,
+        "s_drift": 0.0
+      },
+      {
+        "global_half": 1100,
+        "time_s": 2.1999999999999793,
+        "v": 0.00011632830682871471,
+        "a": 0.013468175741477672,
+        "w": 0.0023080528085412124,
+        "alpha": 0.12819112775004976,
+        "s": 0.0029711015147510004,
+        "r": 0.020908352354953797,
+        "b": -0.18699024606924375,
+        "below": false,
+        "guards": true,
+        "hold_anchor": "N/A_NOT_ESTABLISHED",
+        "consecutive": 0,
+        "C_drift": 0.0,
+        "s_drift": 0.0
+      },
+      {
+        "global_half": 1101,
+        "time_s": 2.201999999999979,
+        "v": 8.728459206632075e-05,
+        "a": 0.014521857381196983,
+        "w": 0.002289860384935728,
+        "alpha": 0.10859275917014165,
+        "s": 0.0030125042469687693,
+        "r": 0.020494379862815056,
+        "b": -0.2069862460693715,
+        "below": false,
+        "guards": true,
+        "hold_anchor": "N/A_NOT_ESTABLISHED",
+        "consecutive": 0,
+        "C_drift": 0.0,
+        "s_drift": 0.0
+      },
+      {
+        "global_half": 1102,
+        "time_s": 2.203999999999979,
+        "v": 9.493361095828031e-05,
+        "a": 0.01271112871158455,
+        "w": 0.002289860384935728,
+        "alpha": 0.10859275917014165,
+        "s": 0.0030530790342022606,
+        "r": 0.02008040737067631,
+        "b": -0.2069862460693715,
+        "below": false,
+        "guards": true,
+        "hold_anchor": "N/A_NOT_ESTABLISHED",
+        "consecutive": 0,
+        "C_drift": 0.0,
+        "s_drift": 0.0
+      }
+    ],
+    "stop_per_metric_failures": {
+      "v": 36,
+      "a": 38,
+      "w": 38,
+      "alpha": 38,
+      "r": 38,
+      "b": 38
+    },
+    "stop_required50_achieved": false,
+    "structural_failed0_is_not_stop_success": true,
+    "hold_false_has_no_anchor_not_drift_fail": true,
+    "all1745_before_after_identical": true,
+    "failed51_before_matches_last50_actual_after": true,
+    "B400_C2_samples": [
+      {
+        "cycle": 32,
+        "all400_B_original_full30_affine_jointtrust_physical_jerk_geometry_sigma_intervals_recomputed": true,
+        "max30_affine_error": 2.669991611040334e-10,
+        "jointtrust": 9.193542776042563e-05,
+        "all400_geometry_sigma_interval_roundoff": 0.0,
+        "all400_acceleration_jerk_record_error": [
+          0.0,
+          0.0
+        ],
+        "actual_native_substeps": 2,
+        "actual_value_qv_error": 2.2654404394084615e-16,
+        "actual_geometry_sigma_interval_roundoff": 0.0,
+        "no_clip_or_force_clip": true,
+        "scope": "Independent saved arithmetic and private recorded guard/real-native2half contract, not every FCL distance query or physics engine re-execution. Full sourcecomplete SHA/CRC and archive binding separately verified. No actual stop/fulltask/realtime/phase proof."
+      },
+      {
+        "cycle": 50,
+        "all400_B_original_full30_affine_jointtrust_physical_jerk_geometry_sigma_intervals_recomputed": true,
+        "max30_affine_error": 2.2575857104426868e-11,
+        "jointtrust": 6.144503842908655e-05,
+        "all400_geometry_sigma_interval_roundoff": 0.0,
+        "all400_acceleration_jerk_record_error": [
+          0.0,
+          0.0
+        ],
+        "actual_native_substeps": 2,
+        "actual_value_qv_error": 1.644870220932071e-16,
+        "actual_geometry_sigma_interval_roundoff": 0.0,
+        "no_clip_or_force_clip": true,
+        "scope": "Independent saved arithmetic and private recorded guard/real-native2half contract, not every FCL distance query or physics engine re-execution. Full sourcecomplete SHA/CRC and archive binding separately verified. No actual stop/fulltask/realtime/phase proof."
+      }
+    ],
+    "all20_nominal_replays": [
+      {
+        "cycle": 32,
+        "records_replayed": 1057,
+        "valid_counts": [
+          107,
+          81,
+          81,
+          81,
+          111,
+          81,
+          93,
+          1
+        ],
+        "independent_2x2_error_inf": 2.220446049250313e-16,
+        "source_complete": true,
+        "terminal": true,
+        "scope": "literal scalar/provenance/family arithmetic only; no Model/SI/B/C/actual stop acceptance"
+      },
+      {
+        "cycle": 33,
+        "records_replayed": 1057,
+        "valid_counts": [
+          105,
+          100,
+          100,
+          100,
+          104,
+          100,
+          104,
+          1
+        ],
+        "independent_2x2_error_inf": 3.3306690738754696e-16,
+        "source_complete": true,
+        "terminal": true,
+        "scope": "literal scalar/provenance/family arithmetic only; no Model/SI/B/C/actual stop acceptance"
+      },
+      {
+        "cycle": 34,
+        "records_replayed": 1057,
+        "valid_counts": [
+          103,
+          88,
+          88,
+          88,
+          81,
+          88,
+          83,
+          1
+        ],
+        "independent_2x2_error_inf": 5.551115123125783e-16,
+        "source_complete": true,
+        "terminal": true,
+        "scope": "literal scalar/provenance/family arithmetic only; no Model/SI/B/C/actual stop acceptance"
+      },
+      {
+        "cycle": 35,
+        "records_replayed": 1045,
+        "valid_counts": [
+          103,
+          79,
+          79,
+          79,
+          80,
+          79,
+          75,
+          1
+        ],
+        "independent_2x2_error_inf": 4.440892098500626e-16,
+        "source_complete": true,
+        "terminal": true,
+        "scope": "literal scalar/provenance/family arithmetic only; no Model/SI/B/C/actual stop acceptance"
+      },
+      {
+        "cycle": 36,
+        "records_replayed": 1023,
+        "valid_counts": [
+          101,
+          74,
+          77,
+          75,
+          81,
+          75,
+          71,
+          1
+        ],
+        "independent_2x2_error_inf": 1.3322676295501878e-15,
+        "source_complete": true,
+        "terminal": true,
+        "scope": "literal scalar/provenance/family arithmetic only; no Model/SI/B/C/actual stop acceptance"
+      },
+      {
+        "cycle": 37,
+        "records_replayed": 1001,
+        "valid_counts": [
+          101,
+          74,
+          74,
+          74,
+          85,
+          74,
+          71,
+          1
+        ],
+        "independent_2x2_error_inf": 8.881784197001252e-16,
+        "source_complete": true,
+        "terminal": true,
+        "scope": "literal scalar/provenance/family arithmetic only; no Model/SI/B/C/actual stop acceptance"
+      },
+      {
+        "cycle": 38,
+        "records_replayed": 979,
+        "valid_counts": [
+          102,
+          74,
+          74,
+          74,
+          86,
+          74,
+          72,
+          1
+        ],
+        "independent_2x2_error_inf": 4.440892098500626e-16,
+        "source_complete": true,
+        "terminal": true,
+        "scope": "literal scalar/provenance/family arithmetic only; no Model/SI/B/C/actual stop acceptance"
+      },
+      {
+        "cycle": 39,
+        "records_replayed": 968,
+        "valid_counts": [
+          103,
+          74,
+          74,
+          74,
+          88,
+          74,
+          74,
+          1
+        ],
+        "independent_2x2_error_inf": 6.661338147750939e-16,
+        "source_complete": true,
+        "terminal": true,
+        "scope": "literal scalar/provenance/family arithmetic only; no Model/SI/B/C/actual stop acceptance"
+      },
+      {
+        "cycle": 40,
+        "records_replayed": 946,
+        "valid_counts": [
+          105,
+          74,
+          74,
+          74,
+          88,
+          74,
+          78,
+          1
+        ],
+        "independent_2x2_error_inf": 4.440892098500626e-16,
+        "source_complete": true,
+        "terminal": true,
+        "scope": "literal scalar/provenance/family arithmetic only; no Model/SI/B/C/actual stop acceptance"
+      },
+      {
+        "cycle": 41,
+        "records_replayed": 934,
+        "valid_counts": [
+          106,
+          77,
+          78,
+          77,
+          90,
+          77,
+          81,
+          1
+        ],
+        "independent_2x2_error_inf": 4.440892098500626e-16,
+        "source_complete": true,
+        "terminal": true,
+        "scope": "literal scalar/provenance/family arithmetic only; no Model/SI/B/C/actual stop acceptance"
+      },
+      {
+        "cycle": 42,
+        "records_replayed": 934,
+        "valid_counts": [
+          106,
+          80,
+          80,
+          80,
+          92,
+          80,
+          82,
+          1
+        ],
+        "independent_2x2_error_inf": 3.3306690738754696e-16,
+        "source_complete": true,
+        "terminal": true,
+        "scope": "literal scalar/provenance/family arithmetic only; no Model/SI/B/C/actual stop acceptance"
+      },
+      {
+        "cycle": 43,
+        "records_replayed": 945,
+        "valid_counts": [
+          85,
+          82,
+          82,
+          82,
+          92,
+          82,
+          83,
+          1
+        ],
+        "independent_2x2_error_inf": 3.3306690738754696e-16,
+        "source_complete": true,
+        "terminal": true,
+        "scope": "literal scalar/provenance/family arithmetic only; no Model/SI/B/C/actual stop acceptance"
+      },
+      {
+        "cycle": 44,
+        "records_replayed": 945,
+        "valid_counts": [
+          83,
+          83,
+          83,
+          83,
+          104,
+          83,
+          84,
+          1
+        ],
+        "independent_2x2_error_inf": 2.220446049250313e-16,
+        "source_complete": true,
+        "terminal": true,
+        "scope": "literal scalar/provenance/family arithmetic only; no Model/SI/B/C/actual stop acceptance"
+      },
+      {
+        "cycle": 45,
+        "records_replayed": 956,
+        "valid_counts": [
+          113,
+          84,
+          84,
+          84,
+          92,
+          84,
+          84,
+          1
+        ],
+        "independent_2x2_error_inf": 3.3306690738754696e-16,
+        "source_complete": true,
+        "terminal": true,
+        "scope": "literal scalar/provenance/family arithmetic only; no Model/SI/B/C/actual stop acceptance"
+      },
+      {
+        "cycle": 46,
+        "records_replayed": 956,
+        "valid_counts": [
+          104,
+          84,
+          84,
+          84,
+          78,
+          84,
+          101,
+          1
+        ],
+        "independent_2x2_error_inf": 6.661338147750939e-16,
+        "source_complete": true,
+        "terminal": true,
+        "scope": "literal scalar/provenance/family arithmetic only; no Model/SI/B/C/actual stop acceptance"
+      },
+      {
+        "cycle": 47,
+        "records_replayed": 967,
+        "valid_counts": [
+          118,
+          84,
+          84,
+          84,
+          78,
+          84,
+          90,
+          1
+        ],
+        "independent_2x2_error_inf": 3.3306690738754696e-16,
+        "source_complete": true,
+        "terminal": true,
+        "scope": "literal scalar/provenance/family arithmetic only; no Model/SI/B/C/actual stop acceptance"
+      },
+      {
+        "cycle": 48,
+        "records_replayed": 978,
+        "valid_counts": [
+          120,
+          84,
+          84,
+          84,
+          79,
+          84,
+          85,
+          1
+        ],
+        "independent_2x2_error_inf": 6.661338147750939e-16,
+        "source_complete": true,
+        "terminal": true,
+        "scope": "literal scalar/provenance/family arithmetic only; no Model/SI/B/C/actual stop acceptance"
+      },
+      {
+        "cycle": 49,
+        "records_replayed": 978,
+        "valid_counts": [
+          120,
+          84,
+          84,
+          84,
+          77,
+          84,
+          77,
+          1
+        ],
+        "independent_2x2_error_inf": 4.440892098500626e-16,
+        "source_complete": true,
+        "terminal": true,
+        "scope": "literal scalar/provenance/family arithmetic only; no Model/SI/B/C/actual stop acceptance"
+      },
+      {
+        "cycle": 50,
+        "records_replayed": 989,
+        "valid_counts": [
+          120,
+          91,
+          102,
+          102,
+          82,
+          102,
+          76,
+          1
+        ],
+        "independent_2x2_error_inf": 4.440892098500626e-16,
+        "source_complete": true,
+        "terminal": true,
+        "scope": "literal scalar/provenance/family arithmetic only; no Model/SI/B/C/actual stop acceptance"
+      },
+      {
+        "cycle": 51,
+        "records_replayed": 1000,
+        "valid_counts": [
+          117,
+          91,
+          90,
+          90,
+          108,
+          90,
+          76,
+          1
+        ],
+        "independent_2x2_error_inf": 4.440892098500626e-16,
+        "source_complete": true,
+        "terminal": true,
+        "scope": "literal scalar/provenance/family arithmetic only; no Model/SI/B/C/actual stop acceptance"
+      }
+    ],
+    "all20_nominal_record_total": 19715,
+    "verified_selected_codec_reads": {
+      "native66/run-attempt1/artifacts/entry_completion.bin": {
+        "stored_bytes": 182,
+        "stored_sha256": "6be5b2223da714b934917f455ea58ff27b1b2b779fad23f4538f71a16f3a038d",
+        "raw_bytes": 247,
+        "raw_sha256": "e0a09254444572a17450b397d2805ce396f3f7bbec0c2217add47b33906778ba",
+        "source_complete": true
+      },
+      "native66/run-attempt1/artifacts/cycle-0/whole_current_cycle.bin": {
+        "stored_bytes": 300,
+        "stored_sha256": "f50cf2469e8b0452179e410866fffb80bffe1e2c0d823ba0f33bc98e94ef45d9",
+        "raw_bytes": 419,
+        "raw_sha256": "4ea42acc31c841aae4918adb9f77352fe1917a303fe38a42be22c85a8f3e7bd8",
+        "source_complete": true
+      },
+      "native66/run-attempt1/artifacts/cycle-1/whole_current_cycle.bin": {
+        "stored_bytes": 300,
+        "stored_sha256": "4a0e78ca898882814115a678d8e16ef71cc23e8eb59eb403c238c933614e7f89",
+        "raw_bytes": 419,
+        "raw_sha256": "fca7fbc34d918129eca226198ec8e5582600eba3e186089ea95ae0d1e0fc0caa",
+        "source_complete": true
+      },
+      "native66/run-attempt1/artifacts/cycle-2/whole_current_cycle.bin": {
+        "stored_bytes": 305,
+        "stored_sha256": "43643f5e25e4c06ee28b0a7843a71d8a879e5faa647d804d4eb92a37af648f06",
+        "raw_bytes": 419,
+        "raw_sha256": "cf3f57936b3e860d62254aa14e986ba3fce2238124104a62c2314d0969afc0e2",
+        "source_complete": true
+      },
+      "native66/run-attempt1/artifacts/cycle-3/whole_current_cycle.bin": {
+        "stored_bytes": 303,
+        "stored_sha256": "a734cfa6e063ecdd01b5da634d9473e3c34c4ca0cf92cd9b163f3aeeacfcc603",
+        "raw_bytes": 419,
+        "raw_sha256": "de84915686e0a9543587f6e9926964f9e54781c8214cfeb6cf4cf2db2515043b",
+        "source_complete": true
+      },
+      "native66/run-attempt1/artifacts/cycle-4/whole_current_cycle.bin": {
+        "stored_bytes": 303,
+        "stored_sha256": "cf2c00444fc661392e9c646c774895f3e101962c1ae2eeccc8de2431e2db4ca6",
+        "raw_bytes": 419,
+        "raw_sha256": "0cbbce9c25cbf2eba001d101bd171dcb41b43dadc4e574af54e7b7782a253fa5",
+        "source_complete": true
+      },
+      "native66/run-attempt1/artifacts/cycle-5/whole_current_cycle.bin": {
+        "stored_bytes": 340,
+        "stored_sha256": "efc12222bda4b190cebee26d77d3b0a6dd12df05594ba66b6b761828d1ebe462",
+        "raw_bytes": 459,
+        "raw_sha256": "f9915449e69f466469cf48c28b2464a449ce93f356dfe4ecbe4f5e6ed943b270",
+        "source_complete": true
+      },
+      "native66/run-attempt1/artifacts/cycle-6/whole_current_cycle.bin": {
+        "stored_bytes": 340,
+        "stored_sha256": "124bdfcc1bc78eca1c790f1671bfe5537b239f434bae389b0cc88b84431e5b7f",
+        "raw_bytes": 459,
+        "raw_sha256": "980f688f2f20dbdd8239f7f3a7ffa22738f7c12b3c69f81e36416346e9d229e6",
+        "source_complete": true
+      },
+      "native66/run-attempt1/artifacts/cycle-7/whole_current_cycle.bin": {
+        "stored_bytes": 337,
+        "stored_sha256": "74558f4b4023c0930841118305d82784429dbac5b5c1bc50e756d90feacd9207",
+        "raw_bytes": 459,
+        "raw_sha256": "f4a1a3b9a942f2210245857fb46b1edd3092a76fbb64f8d64043e1739656df2e",
+        "source_complete": true
+      },
+      "native66/run-attempt1/artifacts/cycle-8/whole_current_cycle.bin": {
+        "stored_bytes": 339,
+        "stored_sha256": "cf43f64cc4cbd3398bd8ffdce27c5a05fe525e6dc615f43099856c3b50ceab75",
+        "raw_bytes": 459,
+        "raw_sha256": "68588ee309ce16977d3e81d56322c68957cec8eef3c5848222980ba7b8552220",
+        "source_complete": true
+      },
+      "native66/run-attempt1/artifacts/cycle-9/whole_current_cycle.bin": {
+        "stored_bytes": 340,
+        "stored_sha256": "f3a6cd4705a2bd8ce5975812b8953288f722101361b6d28856f9f60c74f52a35",
+        "raw_bytes": 459,
+        "raw_sha256": "133613acff62c6779b3d9de2918066978a7b35ec0078506f51e6d0d7685e8903",
+        "source_complete": true
+      },
+      "native66/run-attempt1/artifacts/cycle-10/whole_current_cycle.bin": {
+        "stored_bytes": 340,
+        "stored_sha256": "9e7ab78f6177d9e51eceaeb0313fe12412dc1f3aa8c278018ce0e70c39939783",
+        "raw_bytes": 459,
+        "raw_sha256": "013ff010db0f50f5c7640521216f458561acbed2e969de2668d6fc92b7488005",
+        "source_complete": true
+      },
+      "native66/run-attempt1/artifacts/cycle-11/whole_current_cycle.bin": {
+        "stored_bytes": 335,
+        "stored_sha256": "8b8ffac69303d772c6a7fe4c0aeaa5d7b297198c131e0574c9cdb361f8f2e361",
+        "raw_bytes": 459,
+        "raw_sha256": "d0b708bf87c0a73f7ae94f6e481b19d85719d43f9bd367a9d7df887646268b10",
+        "source_complete": true
+      },
+      "native66/run-attempt1/artifacts/cycle-12/whole_current_cycle.bin": {
+        "stored_bytes": 341,
+        "stored_sha256": "790ff165893da49109ec804c3b8ce3c7cd2c3f8da34cb135f9fae11f0ea12d2c",
+        "raw_bytes": 459,
+        "raw_sha256": "6e90fcde68fffecfa49a6bffafd077c30028b5632389af62d60b4517b032190a",
+        "source_complete": true
+      },
+      "native66/run-attempt1/artifacts/cycle-13/whole_current_cycle.bin": {
+        "stored_bytes": 343,
+        "stored_sha256": "0c8b9f743156a1c73d5d033a9b2716f957e4fa51e3ff9d39776840e9d1a6227d",
+        "raw_bytes": 459,
+        "raw_sha256": "88beb5f6aeb093e061981302df607e13efe218057d1c16c5e058ac4d559c1907",
+        "source_complete": true
+      },
+      "native66/run-attempt1/artifacts/cycle-14/whole_current_cycle.bin": {
+        "stored_bytes": 339,
+        "stored_sha256": "57c0a8a794680ffcc4439dc0fb2531afb521ec3cfbbfcaa121fd745d39acb4b7",
+        "raw_bytes": 459,
+        "raw_sha256": "fdcd31b5ee4948141d1de7a492d5ffcbdad55df32e70e608114ec5f79b5ab130",
+        "source_complete": true
+      },
+      "native66/run-attempt1/artifacts/cycle-15/whole_current_cycle.bin": {
+        "stored_bytes": 340,
+        "stored_sha256": "4388dba5a95d7c4a5a22704beb5d30d8f48f74f341041bc86300081b83b0b4c5",
+        "raw_bytes": 459,
+        "raw_sha256": "7b6e942b411a88314b0293071e72da6991f83c8c713a108c336a55c60b365128",
+        "source_complete": true
+      },
+      "native66/run-attempt1/artifacts/cycle-16/whole_current_cycle.bin": {
+        "stored_bytes": 338,
+        "stored_sha256": "11f80715ad7cfd1f0f6890809a51814b29c529f4322d0d94838d3af13d781336",
+        "raw_bytes": 459,
+        "raw_sha256": "ada71ae4e3c9142581b2436035f5bbb177621e9a19b1be59e68d786f1111885b",
+        "source_complete": true
+      },
+      "native66/run-attempt1/artifacts/cycle-17/whole_current_cycle.bin": {
+        "stored_bytes": 336,
+        "stored_sha256": "9613e354cb5cd5d15de1cc1914cfbc3130ac0a5c1abcce85af4e5012cbd04340",
+        "raw_bytes": 459,
+        "raw_sha256": "5f46b76ded5fc6771dbc667baa25d08efac10d1ebfb82bf1d3eee8f16638ab9a",
+        "source_complete": true
+      },
+      "native66/run-attempt1/artifacts/cycle-18/whole_current_cycle.bin": {
+        "stored_bytes": 339,
+        "stored_sha256": "d673fcf6200c5def3652863a71eaf80cfbf51f25ae8795a68a8f92f296d2f730",
+        "raw_bytes": 459,
+        "raw_sha256": "f2130545efb8c785441dd490d0ec1a06842bdb53f72e9951d363db7490beafa5",
+        "source_complete": true
+      },
+      "native66/run-attempt1/artifacts/cycle-19/whole_current_cycle.bin": {
+        "stored_bytes": 341,
+        "stored_sha256": "de4e71ac005c31d3bcc8c806ca36f05e04c6dad3ccedb84c66c8def0eb8bd794",
+        "raw_bytes": 459,
+        "raw_sha256": "23411f50319df7d7f2dde3e59b9766648c2e33083a6799af0a5d0106ef49ef0d",
+        "source_complete": true
+      },
+      "native66/run-attempt1/artifacts/cycle-20/whole_current_cycle.bin": {
+        "stored_bytes": 342,
+        "stored_sha256": "61672b0c9a9f36d7fc7b1b987b44336419bb25e27963c63c4a47787a6ef0c9e4",
+        "raw_bytes": 459,
+        "raw_sha256": "3c6db589eb0c326295648b8ad4955faedc8e49e424bc5824a55effff42786b43",
+        "source_complete": true
+      },
+      "native66/run-attempt1/artifacts/cycle-21/whole_current_cycle.bin": {
+        "stored_bytes": 340,
+        "stored_sha256": "daa989cc32e38ad15024301fcee99dc4957d40b1026e5573c0bcea490b87aa8d",
+        "raw_bytes": 459,
+        "raw_sha256": "825a4c48f77ee0373c76e9a9f5ea646511ff35bb4dc82b8ec66edd8c81d61682",
+        "source_complete": true
+      },
+      "native66/run-attempt1/artifacts/cycle-22/whole_current_cycle.bin": {
+        "stored_bytes": 341,
+        "stored_sha256": "2f54fad53748c956ac27df22379ee439a18112ac58159b27355630f1c0a69a02",
+        "raw_bytes": 459,
+        "raw_sha256": "2f346f42d5f774e9d309f8d454952ceccf4acb050b376cde28fe773c38e39430",
+        "source_complete": true
+      },
+      "native66/run-attempt1/artifacts/cycle-23/whole_current_cycle.bin": {
+        "stored_bytes": 338,
+        "stored_sha256": "023b1769095cbd463de1fdaa11cdf979f1af64976436289f1526fd30b590e71e",
+        "raw_bytes": 459,
+        "raw_sha256": "ef89b9ba3f769ca3c11405c53a1d8930200e37c20c8e22b331bc9cd39c2a290c",
+        "source_complete": true
+      },
+      "native66/run-attempt1/artifacts/cycle-24/whole_current_cycle.bin": {
+        "stored_bytes": 339,
+        "stored_sha256": "2551cc814873a72ebcf716d0685c560e43aee11182eed86c661f1d23a00df44c",
+        "raw_bytes": 459,
+        "raw_sha256": "73e9aaa90ed597bd4e356f952d1a485255028fcd7feaf291aef8a94272e9844b",
+        "source_complete": true
+      },
+      "native66/run-attempt1/artifacts/cycle-25/whole_current_cycle.bin": {
+        "stored_bytes": 339,
+        "stored_sha256": "cd4c197e7c864cd17281a110213bd2417f13d8c43cc9891b099f73ea3781208c",
+        "raw_bytes": 459,
+        "raw_sha256": "b684497e20c7999e62fe6d6f23f97821810d96e82396e86e62e0287329665616",
+        "source_complete": true
+      },
+      "native66/run-attempt1/artifacts/cycle-26/whole_current_cycle.bin": {
+        "stored_bytes": 335,
+        "stored_sha256": "8b24f3b4ebd0661efc32a7a218c11d010d3c10464539b3a77a7b2fc07700ce7a",
+        "raw_bytes": 459,
+        "raw_sha256": "22478edf745ffe9789c824fd26680de55894f08e888580c6643b549719efb8cc",
+        "source_complete": true
+      },
+      "native66/run-attempt1/artifacts/cycle-27/whole_current_cycle.bin": {
+        "stored_bytes": 334,
+        "stored_sha256": "11673508b0222ef6ce5b0eb8362e6b2b61fde98aa3bd76a5852b01d8a7457c12",
+        "raw_bytes": 459,
+        "raw_sha256": "fe29ea4af6d63039b666b72164821dc913b55356a6256208da098a29e8f28a24",
+        "source_complete": true
+      },
+      "native66/run-attempt1/artifacts/cycle-28/whole_current_cycle.bin": {
+        "stored_bytes": 336,
+        "stored_sha256": "7e82b7849ce35b5deaba6f320e94405b8677755522c12530a1fb447007dd799b",
+        "raw_bytes": 459,
+        "raw_sha256": "83531c0dce8ea4a648de7df8fb17a4fe081c794e3a51b6e7beb05e6c96c31557",
+        "source_complete": true
+      },
+      "native66/run-attempt1/artifacts/cycle-29/whole_current_cycle.bin": {
+        "stored_bytes": 341,
+        "stored_sha256": "c3d6335a12767566b0fdbcd1e0c1a361e8d2adfbf897f874e10a1afd8ea3345a",
+        "raw_bytes": 459,
+        "raw_sha256": "578141a6abf6664cd85f081967bed38d6db72be8195f81abce60aebdc23cf530",
+        "source_complete": true
+      },
+      "native66/run-attempt1/artifacts/cycle-30/whole_current_cycle.bin": {
+        "stored_bytes": 342,
+        "stored_sha256": "d6a8ce7bb170b6de1b704610988f74fe47ba842f3c2affe2d454ef4a35334d64",
+        "raw_bytes": 459,
+        "raw_sha256": "f2a0327462e7d748a94b5fe03088df24e5e42325a8955b0b22511c10cb9a371c",
+        "source_complete": true
+      },
+      "native66/run-attempt1/artifacts/cycle-31/whole_current_cycle.bin": {
+        "stored_bytes": 340,
+        "stored_sha256": "2bdc369aeb4f7e249bcd0c19c6ba2e4483332f7d6d741490024183fc1f7bcb6c",
+        "raw_bytes": 459,
+        "raw_sha256": "024e001a862e16981e927812f9738bce05d115a9c34791627f3522384e87b23f",
+        "source_complete": true
+      },
+      "native66/run-attempt1/artifacts/cycle-32/whole_current_cycle.bin": {
+        "stored_bytes": 304,
+        "stored_sha256": "28cc71f6b341fe5f7871cb3f4aa27aee01a6ba5279cee333658fa9e0e0b086e3",
+        "raw_bytes": 419,
+        "raw_sha256": "b12952d5a8d63af8028d1a104c20e6d0bfb0554f5f5daffaef41766f4fbe300e",
+        "source_complete": true
+      },
+      "native66/run-attempt1/artifacts/cycle-33/whole_current_cycle.bin": {
+        "stored_bytes": 305,
+        "stored_sha256": "58455a5b4efcbb25de7280581a0cec2a5802d9a013f56bfbcb7f4b33648e6dbd",
+        "raw_bytes": 419,
+        "raw_sha256": "5f1e471de16575822590f6cade6cb277587a36936ba7952029a58eb1dd921706",
+        "source_complete": true
+      },
+      "native66/run-attempt1/artifacts/cycle-34/whole_current_cycle.bin": {
+        "stored_bytes": 303,
+        "stored_sha256": "93a526767de6fdc08fd20e5064d29fd0676c4e62b1b55ddd6f05217b26127c6a",
+        "raw_bytes": 419,
+        "raw_sha256": "02cb6941bcd711aa9a104f6d08b73021aa2afbe829c41211f2c38b5c962dd60f",
+        "source_complete": true
+      },
+      "native66/run-attempt1/artifacts/cycle-35/whole_current_cycle.bin": {
+        "stored_bytes": 305,
+        "stored_sha256": "ec6d81eb2e71535fbf3ea38425b45015c3b148982fb867300c169bc67c8a724f",
+        "raw_bytes": 419,
+        "raw_sha256": "bd505633fe21b88a537c5e1c476bc29b4b8b1fcb70d98d0ded301865e490eeca",
+        "source_complete": true
+      },
+      "native66/run-attempt1/artifacts/cycle-36/whole_current_cycle.bin": {
+        "stored_bytes": 305,
+        "stored_sha256": "1ac7394ed1c7322553dee6ef3e6ec9b4fbf5304e9d80017d15f7a1d2b476083e",
+        "raw_bytes": 419,
+        "raw_sha256": "6ffc0046783ddd7132e173cb96b0c8778bb124b3dbe15b1118336c286f625974",
+        "source_complete": true
+      },
+      "native66/run-attempt1/artifacts/cycle-37/whole_current_cycle.bin": {
+        "stored_bytes": 302,
+        "stored_sha256": "2fefe54f6ab167e2b442e51606c30397d69efbdf79e17d7a0d9b08bf37bcc448",
+        "raw_bytes": 419,
+        "raw_sha256": "f47c9c6ce42f3cd8f529af3041ca132b6fc3aebcdf46826b1ea3eb7c5a065195",
+        "source_complete": true
+      },
+      "native66/run-attempt1/artifacts/cycle-38/whole_current_cycle.bin": {
+        "stored_bytes": 305,
+        "stored_sha256": "394e2736a526c19aafdd50b8da89f2639b2e7e0dc26a920d527e3885c82aebe3",
+        "raw_bytes": 419,
+        "raw_sha256": "761ba925b6b107fd5b675f50a5c66f156f1993d1735eb24969b7d66ead1b2738",
+        "source_complete": true
+      },
+      "native66/run-attempt1/artifacts/cycle-39/whole_current_cycle.bin": {
+        "stored_bytes": 306,
+        "stored_sha256": "2f347e680028b8eaccbcc8eeed9c2c9b3d7ac3739b9e4249c876bc33ae291d31",
+        "raw_bytes": 419,
+        "raw_sha256": "f676b33e92f74d53d4f68cebc4ac25baf300cb8d4a79417a5b7523ff5eb812a3",
+        "source_complete": true
+      },
+      "native66/run-attempt1/artifacts/cycle-40/whole_current_cycle.bin": {
+        "stored_bytes": 304,
+        "stored_sha256": "2e68f143f69e1de99419994213dd8afedd3d762aa29cea6d1b8bc8461ac72f9f",
+        "raw_bytes": 419,
+        "raw_sha256": "7f2508b571522d61418932c480d392f811f5da7be1c7de2e5a08e5f13b5bc24b",
+        "source_complete": true
+      },
+      "native66/run-attempt1/artifacts/cycle-41/whole_current_cycle.bin": {
+        "stored_bytes": 303,
+        "stored_sha256": "3617f83e175f509ca957fac5d35e1611e771906f03c8c10ca545dd78ef6e3c35",
+        "raw_bytes": 419,
+        "raw_sha256": "3809c8d304928e7981bbf74c2a0cc54d9f33c0bc704baa95306e652d2d1ee9dc",
+        "source_complete": true
+      },
+      "native66/run-attempt1/artifacts/cycle-42/whole_current_cycle.bin": {
+        "stored_bytes": 305,
+        "stored_sha256": "22ff6644641b7889dc59af82ed5e552f3f4b882ce80880b4d6544df723358abf",
+        "raw_bytes": 419,
+        "raw_sha256": "692c570c8365b854e8d0d6df552059328949e08ab5b4d646bb67f7a04e8639c7",
+        "source_complete": true
+      },
+      "native66/run-attempt1/artifacts/cycle-43/whole_current_cycle.bin": {
+        "stored_bytes": 305,
+        "stored_sha256": "cfe0e73df25cf5fe691cfbc61553aad07210a6d3b040113011c69dc63d70a50b",
+        "raw_bytes": 419,
+        "raw_sha256": "96e65e38dab23e2191f7078f4158f1849ca20a03761a504037d10c446c0a1a85",
+        "source_complete": true
+      },
+      "native66/run-attempt1/artifacts/cycle-44/whole_current_cycle.bin": {
+        "stored_bytes": 305,
+        "stored_sha256": "c23092d6c328c0b2a316bbb2c31ba19ca4c401b8e95adb9620722df3f5156e84",
+        "raw_bytes": 419,
+        "raw_sha256": "2e7d5b4b0553bdcc012254878b52535927f3b4aaa7f6889885aba2f9ca0bb5f3",
+        "source_complete": true
+      },
+      "native66/run-attempt1/artifacts/cycle-45/whole_current_cycle.bin": {
+        "stored_bytes": 306,
+        "stored_sha256": "59d4638129cd175c9c668ac93ecc537e460315dad25925979b91678b57d66d87",
+        "raw_bytes": 419,
+        "raw_sha256": "e16121f98db9a733610837fb3330d70403cc869b6832e493eba9a97c807d0ccd",
+        "source_complete": true
+      },
+      "native66/run-attempt1/artifacts/cycle-46/whole_current_cycle.bin": {
+        "stored_bytes": 305,
+        "stored_sha256": "33faf42e9a67575faa7743452f5e898748319b5ae090e0b30ec786af778467db",
+        "raw_bytes": 419,
+        "raw_sha256": "220cc7fc748ec0a32e62e4fe181c173c0a12f7df16e74f1e47b8b77ef56d1819",
+        "source_complete": true
+      },
+      "native66/run-attempt1/artifacts/cycle-47/whole_current_cycle.bin": {
+        "stored_bytes": 306,
+        "stored_sha256": "e19f02d553a985024e0460d974575ca3cbbb9d5a707df5e32e6a25476f0201fe",
+        "raw_bytes": 419,
+        "raw_sha256": "a613abb8df9767a80a13a632c3b28c7161c7f2028e086006a387b173175efbb0",
+        "source_complete": true
+      },
+      "native66/run-attempt1/artifacts/cycle-48/whole_current_cycle.bin": {
+        "stored_bytes": 304,
+        "stored_sha256": "0242747b0788058fd2d1d198eb6e3dc42d0dd9a287e793bb9ae52fc3ec76d8d5",
+        "raw_bytes": 419,
+        "raw_sha256": "47c187d10da8749f4482ee566447bad0716d6d32b897729ae22877a3a80dbf02",
+        "source_complete": true
+      },
+      "native66/run-attempt1/artifacts/cycle-49/whole_current_cycle.bin": {
+        "stored_bytes": 306,
+        "stored_sha256": "a519da10e2824e1d2b966354ec779b86ce6a2c33103b9564fcb99887583ec43c",
+        "raw_bytes": 419,
+        "raw_sha256": "53ebf2313afd080646f09086b2dd9ed108de438e8c47a53f4654573154412aa6",
+        "source_complete": true
+      },
+      "native66/run-attempt1/artifacts/cycle-50/whole_current_cycle.bin": {
+        "stored_bytes": 306,
+        "stored_sha256": "c3f4c5ba1875ff3bd6bac9a81d81bef9457dcbd8e743c146ef94d3489fcdbf1c",
+        "raw_bytes": 419,
+        "raw_sha256": "07f8dab6b20c57c8c10b0767d346f3658fbb2bfdfd1f00d5bd937a5a2d9d5f1b",
+        "source_complete": true
+      },
+      "native66/run-attempt1/artifacts/cycle-51/whole_current_cycle.bin": {
+        "stored_bytes": 332,
+        "stored_sha256": "3cd716c60f191c12a5a1182c77e1b4b9c492a7014c5eb2cadbfcda2ebf30d8d4",
+        "raw_bytes": 461,
+        "raw_sha256": "be4c74ad2cc512dc24b1ec2dbbd9f004bb16eb35e6a05b741cd95aead58c0969",
+        "source_complete": true
+      },
+      "native66/run-attempt1/artifacts/actual_stop_dwell.bin": {
+        "stored_bytes": 8802,
+        "stored_sha256": "e6d6a0e8696a8e140dbdd13f5892cb1e9c5e5595db2cbc4b1bd664e1982a11ab",
+        "raw_bytes": 14463,
+        "raw_sha256": "30b877d952ed2f62828640c75c940d3bf214d1cbfc648555aff44c5809632557",
+        "source_complete": true
+      },
+      "native66/run-attempt1/artifacts/cycle-51/trial-0/observation_before.bin": {
+        "stored_bytes": 756,
+        "stored_sha256": "687286af824935e7c90405084ea86d5016a173eb8d43ee038c553a73757110d5",
+        "raw_bytes": 2752,
+        "raw_sha256": "442ecc925ee71fbb711df8730c0841def2442ed2dfbf12fc5024159d9c85d317",
+        "source_complete": true
+      },
+      "native66/run-attempt1/artifacts/cycle-50/trial-0/observation_after.bin": {
+        "stored_bytes": 756,
+        "stored_sha256": "b39ad431bd34a2279b426d167da4f29c7fd6d15f527612aacc46b5de1e8aaafa",
+        "raw_bytes": 2752,
+        "raw_sha256": "7056b2546f5fe29dcda43b7e67010a91c3be3b9a73897dfdd5b74d034b6cfc81",
+        "source_complete": true
+      },
+      "native66/run-attempt1/artifacts/cycle-0/trial-0/observation_before.bin": {
+        "stored_bytes": 594,
+        "stored_sha256": "da36ab4388a53af6301ff88e0bf40b965b6c7acf793c30f718f4d0e7c3baffb2",
+        "raw_bytes": 2732,
+        "raw_sha256": "4fb4e2eea2a897f01d5d2c871b65d2e7f8198abeaeefe747183bd0c0817919d8",
+        "source_complete": true
+      },
+      "native66/run-attempt1/artifacts/cycle-32/trial-0/stop_objective_mode.bin": {
+        "stored_bytes": 43129,
+        "stored_sha256": "03af804bee34f1963867e35f4cc4d458e3da9c0d1e4573b95fd96d2c711cb81e",
+        "raw_bytes": 122056,
+        "raw_sha256": "4046dd69f635362a86d6aa03884ac25fffc993a7e668778ab174a25a6c28b450",
+        "source_complete": true
+      },
+      "native66/run-attempt1/artifacts/cycle-32/trial-0/observation_before.bin": {
+        "stored_bytes": 731,
+        "stored_sha256": "30791ffeb8829800d49130119cd262d6ff237a2415376c818c2077ac766ad2b4",
+        "raw_bytes": 2752,
+        "raw_sha256": "fe805d3ffc7f23cc3054547c4e7c5633743e13190d95b8862edecee8903d2f8f",
+        "source_complete": true
+      },
+      "native66/run-attempt1/artifacts/cycle-31/trial-1/observation_after.bin": {
+        "stored_bytes": 732,
+        "stored_sha256": "10c1e7184ba3888a8063348d4efe29acfa07d0b8434bbb58f493e7f50895f842",
+        "raw_bytes": 2752,
+        "raw_sha256": "5521f061e49b7c572d5f725377f6d4a6e270f523e0a51ae90b567a754285a941",
+        "source_complete": true
+      },
+      "native66/run-attempt1/artifacts/cycle-31/trial-1/candidate.bin": {
+        "stored_bytes": 4035,
+        "stored_sha256": "b29265656a2fc5d8b6acd79b4cae5f706ab9887a6f8bdff090a18abe8dc8a289",
+        "raw_bytes": 122315,
+        "raw_sha256": "b4d5876ec39182f0dcf16f7df9fc3a07bc031b2b2af3141bdd13b70989e2bed0",
+        "source_complete": true
+      },
+      "native66/run-attempt1/artifacts/cycle-33/trial-0/stop_objective_mode.bin": {
+        "stored_bytes": 44421,
+        "stored_sha256": "4805cf546e195e0a41c72229a123da53349b897bbd8f14b9738e766df2f587c7",
+        "raw_bytes": 122056,
+        "raw_sha256": "de45b68f046af8104f07bac19cda488ac8a1bea2b4167bb9f0a240f3bea1d609",
+        "source_complete": true
+      },
+      "native66/run-attempt1/artifacts/cycle-33/trial-0/observation_before.bin": {
+        "stored_bytes": 755,
+        "stored_sha256": "b981405c39d6add9aeb17ee7df09fd2cea6ed18a38be9ebacecfba3cfa54d765",
+        "raw_bytes": 2752,
+        "raw_sha256": "184fd0ea3eec4c6461221330713c82da2ec575afcf4050fa47c5ac7ac49ad8fb",
+        "source_complete": true
+      },
+      "native66/run-attempt1/artifacts/cycle-32/trial-0/observation_after.bin": {
+        "stored_bytes": 756,
+        "stored_sha256": "b28983ccaebc525b53e7c2c413a10a702bfbfa5086b9a485542a3190b332b5d6",
+        "raw_bytes": 2752,
+        "raw_sha256": "a99af7bbd1f62023b54d5284e40754cf5715e5217025a2778020793ca3958afa",
+        "source_complete": true
+      },
+      "native66/run-attempt1/artifacts/cycle-32/trial-0/candidate.bin": {
+        "stored_bytes": 3682,
+        "stored_sha256": "5860c1d985a0b347aa6bcc1f157987628b6d0c190d8f7cbca9df0685ad41ca83",
+        "raw_bytes": 122316,
+        "raw_sha256": "6ccd7597e1806b6eec53b49009a50a93a904355a7ca9fecb17c1d397ee320b18",
+        "source_complete": true
+      },
+      "native66/run-attempt1/artifacts/cycle-34/trial-0/stop_objective_mode.bin": {
+        "stored_bytes": 43615,
+        "stored_sha256": "061dffa479985daff79e8da5f10170b10ea18b717281707d52327195e62ef64c",
+        "raw_bytes": 122056,
+        "raw_sha256": "60dfea0920bb5a7814bba2e977ee2211d550cfe92b4fbccaf68390c5c53a3452",
+        "source_complete": true
+      },
+      "native66/run-attempt1/artifacts/cycle-34/trial-0/observation_before.bin": {
+        "stored_bytes": 756,
+        "stored_sha256": "e5ad555a60d17c8bfe7f8a31485765a8832e07e1f5e9fcbbcbce0daa81ab3f76",
+        "raw_bytes": 2752,
+        "raw_sha256": "7a8ba879db927ed59a4a2d7bd95ade4a344bad77d0069ead4be6e3287cf33117",
+        "source_complete": true
+      },
+      "native66/run-attempt1/artifacts/cycle-33/trial-0/observation_after.bin": {
+        "stored_bytes": 756,
+        "stored_sha256": "a4cf5f50fa380c61a6964607c0536a5ef65511f8dcd75de257e158920903068b",
+        "raw_bytes": 2752,
+        "raw_sha256": "aa73a43250d2f54abc9235155a2ba82854a605f51433ef20e037554cdcf522f3",
+        "source_complete": true
+      },
+      "native66/run-attempt1/artifacts/cycle-33/trial-0/candidate.bin": {
+        "stored_bytes": 3447,
+        "stored_sha256": "9bd004f76b0cdc0f722e2abea9e7a756ef8a230df3416c2808e842282d1a4ae0",
+        "raw_bytes": 122316,
+        "raw_sha256": "b8009b37cba7bde6a5fc32ae164b396a544f7772a114a824ccb3b4e5761c7503",
+        "source_complete": true
+      },
+      "native66/run-attempt1/artifacts/cycle-35/trial-0/stop_objective_mode.bin": {
+        "stored_bytes": 42349,
+        "stored_sha256": "8940fb47ef45fa9229b52f331c3070b5a30eeb35f515ee7637e9d56c13b9ba08",
+        "raw_bytes": 120712,
+        "raw_sha256": "f2be4985ff6c954bf32c8cecd74c8d6d791b56bedabfe55a396b038d50e5dba0",
+        "source_complete": true
+      },
+      "native66/run-attempt1/artifacts/cycle-35/trial-0/observation_before.bin": {
+        "stored_bytes": 755,
+        "stored_sha256": "21d940a42513c69cdddda1e0b4e2cebb37b9a111d5ee1b2d369cd9eda40d7354",
+        "raw_bytes": 2752,
+        "raw_sha256": "8eb629c88545b45a35d78fab021ae4fb3e0d8e69a52c3018b44fff5c3ae3c2f9",
+        "source_complete": true
+      },
+      "native66/run-attempt1/artifacts/cycle-34/trial-0/observation_after.bin": {
+        "stored_bytes": 754,
+        "stored_sha256": "cfd45dd3ca5e848b83f6c54a3ee5fc15859d3b84eaf85b6a8779f5e2234c8819",
+        "raw_bytes": 2752,
+        "raw_sha256": "7a2ea2e2b9cda783b410f1a510e2f68ff36a30a1e373d6fe278f2d3e212d3c73",
+        "source_complete": true
+      },
+      "native66/run-attempt1/artifacts/cycle-34/trial-0/candidate.bin": {
+        "stored_bytes": 3628,
+        "stored_sha256": "4b23f740b80f2a05efab7c00506777eed745c59a0ea1e163b905a0992706d5a3",
+        "raw_bytes": 122316,
+        "raw_sha256": "87e6ed197d980db4f24177f68767b721d44c3cbd2d5c099aeda907474a9e3b61",
+        "source_complete": true
+      },
+      "native66/run-attempt1/artifacts/cycle-36/trial-0/stop_objective_mode.bin": {
+        "stored_bytes": 41880,
+        "stored_sha256": "2e4d7bd898ba7713b61818b7031c5e2c8b2541dd557b38372e7321c76b2c5abf",
+        "raw_bytes": 118248,
+        "raw_sha256": "a7dc6fc3802cabef79dabb26d5781523134b5a7353d28f624b24f2dc9aa98227",
+        "source_complete": true
+      },
+      "native66/run-attempt1/artifacts/cycle-36/trial-0/observation_before.bin": {
+        "stored_bytes": 754,
+        "stored_sha256": "dcb5e34e0542cc89e307caf336d9f0ae4cd826c536eed626f33aa7e41eac6762",
+        "raw_bytes": 2752,
+        "raw_sha256": "c1d323ed8a5199ec3908b94563fe2d48f048bc00524fed52cc5f3b27c59d4e3c",
+        "source_complete": true
+      },
+      "native66/run-attempt1/artifacts/cycle-35/trial-0/observation_after.bin": {
+        "stored_bytes": 754,
+        "stored_sha256": "4afea0624ecd007722d09773ab223a98ac8beccd1116d4b69c67a21ca71ff5f9",
+        "raw_bytes": 2752,
+        "raw_sha256": "7e80ff8f30ebc3a42b7f6dbe1ed39bdfd9166bb9acf1771c6f62ffcdb897e4c0",
+        "source_complete": true
+      },
+      "native66/run-attempt1/artifacts/cycle-35/trial-0/candidate.bin": {
+        "stored_bytes": 3641,
+        "stored_sha256": "247afed1546b8236adfb62e2a18ad216eeffaa86fe5a85bcf9a0756fd5281a60",
+        "raw_bytes": 122316,
+        "raw_sha256": "ddf5a383a278163ce14ab500cc334196d5944bc786b4d8b83027a882246863af",
+        "source_complete": true
+      },
+      "native66/run-attempt1/artifacts/cycle-37/trial-0/stop_objective_mode.bin": {
+        "stored_bytes": 41275,
+        "stored_sha256": "49cdbd2f25d187f67499328f7e7f13b5efb71fc9ee9efe8752cc65b010925717",
+        "raw_bytes": 115784,
+        "raw_sha256": "e635ddaeb7e8cc2118f967fe509a3e68c49a3232bb805b98a590c99cee302941",
+        "source_complete": true
+      },
+      "native66/run-attempt1/artifacts/cycle-37/trial-0/observation_before.bin": {
+        "stored_bytes": 757,
+        "stored_sha256": "c12033748638e3af848874c2e3f1ec3d13aa258cfd36d7ccb74ea4b7d8a0b64b",
+        "raw_bytes": 2752,
+        "raw_sha256": "2fa932466090609f7918e0850a8215765c8cec3154b80eb7882705d973a97c5f",
+        "source_complete": true
+      },
+      "native66/run-attempt1/artifacts/cycle-36/trial-0/observation_after.bin": {
+        "stored_bytes": 756,
+        "stored_sha256": "0361b3664f1215e630f26d5832da764b9aa4d7b0881653a3f44846a05b937dac",
+        "raw_bytes": 2752,
+        "raw_sha256": "94e96c41b3555e11b7ce0a39f7ee8e6c89a36d2ca50329482dfaecf7f2534b68",
+        "source_complete": true
+      },
+      "native66/run-attempt1/artifacts/cycle-36/trial-0/candidate.bin": {
+        "stored_bytes": 4160,
+        "stored_sha256": "f90f78b6800180f30dcdaf3dd0d7bd86b75dadeed91152eb490c4d2b0b646ea0",
+        "raw_bytes": 122316,
+        "raw_sha256": "a34c1426026d418b54e5ddb3a431792492d4f117adda985a60ffad669ca737c3",
+        "source_complete": true
+      },
+      "native66/run-attempt1/artifacts/cycle-38/trial-0/stop_objective_mode.bin": {
+        "stored_bytes": 41070,
+        "stored_sha256": "83460c5af96de79ba39b0c24bfbccfea6ac64b04b40a43b36ce25669592cf455",
+        "raw_bytes": 113320,
+        "raw_sha256": "076a782d22b807751e0b2e68b3594b47920cfca0a3ef4d616bba90ffbe29731d",
+        "source_complete": true
+      },
+      "native66/run-attempt1/artifacts/cycle-38/trial-0/observation_before.bin": {
+        "stored_bytes": 757,
+        "stored_sha256": "02fc8b664717540d5366008d3189c6c150a7c148670a4864e0dbb7d9df0378a4",
+        "raw_bytes": 2752,
+        "raw_sha256": "aa98735a73aaec20a839b3b5e10b703870c9b60e929491f81545fb91deff2866",
+        "source_complete": true
+      },
+      "native66/run-attempt1/artifacts/cycle-37/trial-0/observation_after.bin": {
+        "stored_bytes": 758,
+        "stored_sha256": "0632da514463edc98a65389f2ef6e16a1e89a10843ea87d3901f5a8fe5860fc4",
+        "raw_bytes": 2752,
+        "raw_sha256": "922c0365a3bd3e7e0477dc72143eae2a6a348a243d4d3a0c80678129aee79f51",
+        "source_complete": true
+      },
+      "native66/run-attempt1/artifacts/cycle-37/trial-0/candidate.bin": {
+        "stored_bytes": 4175,
+        "stored_sha256": "15b1f501ee267f6cd13505c420e91f9bffb2d8e16784381ce6c4ef15b604b4b6",
+        "raw_bytes": 122316,
+        "raw_sha256": "3e4d84b7ade1d1693f32e2c2b92f0ab58c7bd511eed92720c2bad33ef08a2cac",
+        "source_complete": true
+      },
+      "native66/run-attempt1/artifacts/cycle-39/trial-0/stop_objective_mode.bin": {
+        "stored_bytes": 41111,
+        "stored_sha256": "c3c727a894e557718f3b189b920a201021e4c264ffe038281463ccfb8874bb25",
+        "raw_bytes": 112088,
+        "raw_sha256": "4b05056d852fc03bfe021a84502dd13082aedbaede90ae97ff65c16a3d45fff2",
+        "source_complete": true
+      },
+      "native66/run-attempt1/artifacts/cycle-39/trial-0/observation_before.bin": {
+        "stored_bytes": 757,
+        "stored_sha256": "359ab203ae1aa917c82867459d863d5f189401be85dce013bb1d8db696321983",
+        "raw_bytes": 2752,
+        "raw_sha256": "278b70b1301dad730f5ceef89cdbdec43c36a52e13f971c98f4008edd1073448",
+        "source_complete": true
+      },
+      "native66/run-attempt1/artifacts/cycle-38/trial-0/observation_after.bin": {
+        "stored_bytes": 757,
+        "stored_sha256": "cc9dc03097b1fb6f2630fb8d1ecdf8c8af65f136759500fe977c9ddecf69b2b5",
+        "raw_bytes": 2752,
+        "raw_sha256": "bb0da2fd0f3cf793cf07d63b885c191b62ebd7832cc606d1ac5d850804b201a7",
+        "source_complete": true
+      },
+      "native66/run-attempt1/artifacts/cycle-38/trial-0/candidate.bin": {
+        "stored_bytes": 4149,
+        "stored_sha256": "b84d8fad2fd0aeab4d7ab59403b62e1317a5c72c752f3db2c39071feb375f99d",
+        "raw_bytes": 122316,
+        "raw_sha256": "b45e8d7406b3b28ad370d7af39431604bd01e7d4f8cc468ee69d7f0300547d4d",
+        "source_complete": true
+      },
+      "native66/run-attempt1/artifacts/cycle-40/trial-0/stop_objective_mode.bin": {
+        "stored_bytes": 40867,
+        "stored_sha256": "235ff17e64dfef44d3d76ef724462b5c66dc7336211532acc327cb9df5f1160c",
+        "raw_bytes": 109624,
+        "raw_sha256": "aa4833730abc5a90bef437deca99803b3121e22c3d8be3aa01bcff0badedbd43",
+        "source_complete": true
+      },
+      "native66/run-attempt1/artifacts/cycle-40/trial-0/observation_before.bin": {
+        "stored_bytes": 755,
+        "stored_sha256": "103bbe555789fa6e2e4a9a11b9a1a30261d999cb4b10d3aa3da37ce077c9bcc9",
+        "raw_bytes": 2752,
+        "raw_sha256": "a866243df8a7a09ec49469c0c4c08c6ba62427bd91b5e7da71fe0c4a865fbb47",
+        "source_complete": true
+      },
+      "native66/run-attempt1/artifacts/cycle-39/trial-0/observation_after.bin": {
+        "stored_bytes": 755,
+        "stored_sha256": "e0fee86f53a33de43eb2b270ba960dd6d319b0eff28fce9292e329bde8062bcd",
+        "raw_bytes": 2752,
+        "raw_sha256": "415b4df01afac8dca53b42cb9afb421a7a14b7b341a982fab319fde027a1cb89",
+        "source_complete": true
+      },
+      "native66/run-attempt1/artifacts/cycle-39/trial-0/candidate.bin": {
+        "stored_bytes": 4173,
+        "stored_sha256": "63aab369bc73e42321e38eec74f7b440a499698f8b19afb633aac1478bd654d3",
+        "raw_bytes": 122316,
+        "raw_sha256": "cf9e57a60a809b0a98251add9d92065d913e0664067fc62a749a6678750fd4f3",
+        "source_complete": true
+      },
+      "native66/run-attempt1/artifacts/cycle-41/trial-0/stop_objective_mode.bin": {
+        "stored_bytes": 40896,
+        "stored_sha256": "c2dcfb0285aa8531f4c8bbde952f63433d3248e7bb11eb4456f67aae397a9f90",
+        "raw_bytes": 108280,
+        "raw_sha256": "667e7f5d4923dd0f9f7dc5d0f2425881a2a3fda2d674dda2076741d3d60518c2",
+        "source_complete": true
+      },
+      "native66/run-attempt1/artifacts/cycle-41/trial-0/observation_before.bin": {
+        "stored_bytes": 755,
+        "stored_sha256": "e1c5ad06049d8b08c321fdd22a0f71da8a326a6b9b2f1c6d5fb2f8318ff36d88",
+        "raw_bytes": 2752,
+        "raw_sha256": "249df0a3028564616a9a16607e0efcbac2c66de8e8cd80732c8fbacd9e2991c8",
+        "source_complete": true
+      },
+      "native66/run-attempt1/artifacts/cycle-40/trial-0/observation_after.bin": {
+        "stored_bytes": 755,
+        "stored_sha256": "db20c8ac7d9553c7bcf69dd0cfb657f917e5172b85a5c8a62be25e4c0090d067",
+        "raw_bytes": 2752,
+        "raw_sha256": "b61b8952d277a52d708000754b986f79451e4a4f340477662815284d8c207f48",
+        "source_complete": true
+      },
+      "native66/run-attempt1/artifacts/cycle-40/trial-0/candidate.bin": {
+        "stored_bytes": 4165,
+        "stored_sha256": "3747ce361c903d57de68003106d7fc37493a6d45fafad85a5305bf1841fca1d3",
+        "raw_bytes": 122316,
+        "raw_sha256": "350511992d8f9fa6cfc964aaf029027b59ee459a1fb3358b2cb12b399067b2d6",
+        "source_complete": true
+      },
+      "native66/run-attempt1/artifacts/cycle-42/trial-0/stop_objective_mode.bin": {
+        "stored_bytes": 40972,
+        "stored_sha256": "379e275ecbe132520054179b901c010b240d8a7887762c9545f4eb5a4226a1c7",
+        "raw_bytes": 108280,
+        "raw_sha256": "e4f86e7ed9538d30654fd02f2d0e4e4ea049dfb93cfd55760dd70d5edad8fe82",
+        "source_complete": true
+      },
+      "native66/run-attempt1/artifacts/cycle-42/trial-0/observation_before.bin": {
+        "stored_bytes": 754,
+        "stored_sha256": "fb6e8159e4052b987b524730057c530462b58da7d9c05651362afb7a54c0de3b",
+        "raw_bytes": 2752,
+        "raw_sha256": "17c64c071b65599581ad31732f1e0c7d58715667f6365b655a7069f3fa4105f7",
+        "source_complete": true
+      },
+      "native66/run-attempt1/artifacts/cycle-41/trial-0/observation_after.bin": {
+        "stored_bytes": 754,
+        "stored_sha256": "0cdf9f0c178d351fc4f956a696d5a66e268508610a62aaf8712c33f02bd05ffd",
+        "raw_bytes": 2752,
+        "raw_sha256": "43f4d77dcc83f058f756084bcafffddc6cddf54f487f36672192c3e752c30381",
+        "source_complete": true
+      },
+      "native66/run-attempt1/artifacts/cycle-41/trial-0/candidate.bin": {
+        "stored_bytes": 4164,
+        "stored_sha256": "fe2c38a22c9cdff19b59db1a6cf60461cdff7659d91bdbab013b1d00fa1ec1ca",
+        "raw_bytes": 122316,
+        "raw_sha256": "0e637aa148166a8cc42fd237551e48620de2e0e5530e6c415869cd9ff6f7c844",
+        "source_complete": true
+      },
+      "native66/run-attempt1/artifacts/cycle-43/trial-0/stop_objective_mode.bin": {
+        "stored_bytes": 41150,
+        "stored_sha256": "7ae82a789e068ef4bc31c1d4cb70cffcacf469635e6990bd0f80be78adfcea29",
+        "raw_bytes": 109512,
+        "raw_sha256": "db41226d1cbd408f69f831263882b9551f116d040b658baef0b4126f628b6bef",
+        "source_complete": true
+      },
+      "native66/run-attempt1/artifacts/cycle-43/trial-0/observation_before.bin": {
+        "stored_bytes": 756,
+        "stored_sha256": "156bae38719dd3286eb9c55c7eee611ec2267c1e358082c395a9929f49d0a4d3",
+        "raw_bytes": 2752,
+        "raw_sha256": "2df977cedc156c575190485dc69785cf194bc8bbdb3f70310e15c153938f3804",
+        "source_complete": true
+      },
+      "native66/run-attempt1/artifacts/cycle-42/trial-0/observation_after.bin": {
+        "stored_bytes": 758,
+        "stored_sha256": "aeca2e56bc0d43470f8f45253fccd377fbc756b43d524fb0db7d6182f4be8247",
+        "raw_bytes": 2752,
+        "raw_sha256": "22f075d3d69e09a9f360b85b5558de670f30f3783246849ebbbd7de45817a1d1",
+        "source_complete": true
+      },
+      "native66/run-attempt1/artifacts/cycle-42/trial-0/candidate.bin": {
+        "stored_bytes": 4159,
+        "stored_sha256": "87cee27981c8dd16cac8587265203e3ad84a443fabfc2893c6fb1beef3bcde34",
+        "raw_bytes": 122316,
+        "raw_sha256": "c41292c68e27c4cc82334f5e6f929c23b61cf4fe17491f73d20a5f0d741b05b3",
+        "source_complete": true
+      },
+      "native66/run-attempt1/artifacts/cycle-44/trial-0/stop_objective_mode.bin": {
+        "stored_bytes": 41303,
+        "stored_sha256": "0ec2dd284b1fa6b1e43e22959839f94075ee678936aefe2c89ba0aebec80d57a",
+        "raw_bytes": 109512,
+        "raw_sha256": "13c12096cb8a9c9ce7e200237a77b4988921ba0d00c98689af60c303e27c815b",
+        "source_complete": true
+      },
+      "native66/run-attempt1/artifacts/cycle-44/trial-0/observation_before.bin": {
+        "stored_bytes": 756,
+        "stored_sha256": "dac0437b23ced40672cd47d90a48ac225ae9a5d838e6a63c77b4da9bc193de15",
+        "raw_bytes": 2752,
+        "raw_sha256": "6e38343b7b7d5d6b95eda581d03777971637475a233db3cdf40b7a744f429f88",
+        "source_complete": true
+      },
+      "native66/run-attempt1/artifacts/cycle-43/trial-0/observation_after.bin": {
+        "stored_bytes": 756,
+        "stored_sha256": "fad7faecb96d86a223bdfa66ae2bdc85c67fd5a3993b9151ab9f4ba72bd2950c",
+        "raw_bytes": 2752,
+        "raw_sha256": "b88c84dcb6b3f45d92bb6da79c5bcbddda67497fe77bb7e21280fa7aa7826b8d",
+        "source_complete": true
+      },
+      "native66/run-attempt1/artifacts/cycle-43/trial-0/candidate.bin": {
+        "stored_bytes": 4182,
+        "stored_sha256": "c95c120d3c7a022a14e2c74598455ed6c3e7bc3b1fab965794281babe309a592",
+        "raw_bytes": 122316,
+        "raw_sha256": "a6351285b648a229367fbaf41e19465c6d5062f40b2ce8062f16af1e58b84bc6",
+        "source_complete": true
+      },
+      "native66/run-attempt1/artifacts/cycle-45/trial-0/stop_objective_mode.bin": {
+        "stored_bytes": 41830,
+        "stored_sha256": "60ad51d10855a6204424ba52676b05f767d074ab63acd3541be995c5c4370e25",
+        "raw_bytes": 110744,
+        "raw_sha256": "d417c6a8ed3398e08e8d60dc7b3a0ee9e122fbcf79008521d08d81f9e8702a94",
+        "source_complete": true
+      },
+      "native66/run-attempt1/artifacts/cycle-45/trial-0/observation_before.bin": {
+        "stored_bytes": 757,
+        "stored_sha256": "3de0543353a5f73c1f5045f11f84b9c51ed4beaa400e0c2d48766429ad0ccc72",
+        "raw_bytes": 2752,
+        "raw_sha256": "6d659ed71b5c121c754708015c31e64ce1b7a2bf2e82fd3873afa2bbe45423dd",
+        "source_complete": true
+      },
+      "native66/run-attempt1/artifacts/cycle-44/trial-0/observation_after.bin": {
+        "stored_bytes": 757,
+        "stored_sha256": "367854baac5038bb296c8c0fdf0e64d9e010b73430ed1f50932f345c3afdd4db",
+        "raw_bytes": 2752,
+        "raw_sha256": "cd382c2746aaf4d9446c97264a95e2cf95429c492916170b4fd8c3abeac8c7f9",
+        "source_complete": true
+      },
+      "native66/run-attempt1/artifacts/cycle-44/trial-0/candidate.bin": {
+        "stored_bytes": 4164,
+        "stored_sha256": "fdd4b3dc1305194c78f531f8b4974692fa0cdc62c815f9d5a6397f3947060c4a",
+        "raw_bytes": 122316,
+        "raw_sha256": "24d5e80c1b843b19060e7fce67c77b4f43dc5fcdc91f8e3885aaf0ba9441d47a",
+        "source_complete": true
+      },
+      "native66/run-attempt1/artifacts/cycle-46/trial-0/stop_objective_mode.bin": {
+        "stored_bytes": 41753,
+        "stored_sha256": "53c034584f8eb35a6225f12f290905f2625bd932243945dc081e3a3eca1a4157",
+        "raw_bytes": 110744,
+        "raw_sha256": "cb90ab9e88f31788ac4a8cdb829088b2dbf4e4c1fd58540ed4d7a1ef82686c6e",
+        "source_complete": true
+      },
+      "native66/run-attempt1/artifacts/cycle-46/trial-0/observation_before.bin": {
+        "stored_bytes": 758,
+        "stored_sha256": "b8c3a6ec742fc85be1e8b5ce3730921d11c796ca95937291a8e853dfe21a6fe0",
+        "raw_bytes": 2752,
+        "raw_sha256": "40237bb92fe8d11553ea59877e0a107972916888396fbf43fc8b10da637c7544",
+        "source_complete": true
+      },
+      "native66/run-attempt1/artifacts/cycle-45/trial-0/observation_after.bin": {
+        "stored_bytes": 758,
+        "stored_sha256": "eb1bf5d8e09276f4d9cccb848896404cda587b81a474ff9547b8a97cfeb36a7d",
+        "raw_bytes": 2752,
+        "raw_sha256": "3be33c918dc8aca78368ec8f2c88bbcb1ecad1f95b1a434d620add29334fe0db",
+        "source_complete": true
+      },
+      "native66/run-attempt1/artifacts/cycle-45/trial-0/candidate.bin": {
+        "stored_bytes": 4165,
+        "stored_sha256": "6c04281c975b255cca857d8248f2a367289daccd974d69e8fc4e1c14116045c5",
+        "raw_bytes": 122316,
+        "raw_sha256": "5953f167185e58df9fe1a8abe881f65663a43b2814b9e5cad3c8ab4833785605",
+        "source_complete": true
+      },
+      "native66/run-attempt1/artifacts/cycle-47/trial-0/stop_objective_mode.bin": {
+        "stored_bytes": 41572,
+        "stored_sha256": "cf5ef5ad502202cc627240af704c0d62fc072abfefe79a32c6ea95bcc14c58f6",
+        "raw_bytes": 111976,
+        "raw_sha256": "2648b3ad2e2857a8f0bcc9cef46f28c1b9e64c368182c163b6a8198ab8cb3f76",
+        "source_complete": true
+      },
+      "native66/run-attempt1/artifacts/cycle-47/trial-0/observation_before.bin": {
+        "stored_bytes": 756,
+        "stored_sha256": "720cc9180486b889e9497b3f701081c34951bfd87a1733b6dca5e0a8a1798d21",
+        "raw_bytes": 2752,
+        "raw_sha256": "9c7d0af3efdebdf67dd7e538156a4d72aa1fa7933ad851618759aeab3fe0458e",
+        "source_complete": true
+      },
+      "native66/run-attempt1/artifacts/cycle-46/trial-0/observation_after.bin": {
+        "stored_bytes": 756,
+        "stored_sha256": "3f44a3266ed00cbc3b1b5abf00c00d3f1f6ecdcd6f88a86aeea886371e666510",
+        "raw_bytes": 2752,
+        "raw_sha256": "c16481c24d70b372cb45e665eefe49b4005b22b2732f59ea835128c8f143dc82",
+        "source_complete": true
+      },
+      "native66/run-attempt1/artifacts/cycle-46/trial-0/candidate.bin": {
+        "stored_bytes": 4157,
+        "stored_sha256": "110b39822cbd4289d761d6ae380b4c21152689410ae7df192bb3f7bdfdbb95dd",
+        "raw_bytes": 122316,
+        "raw_sha256": "16b8b863ce6e5e1bbe73393a71adf288e9efecb5d97667b97199eb5fde0a0ed8",
+        "source_complete": true
+      },
+      "native66/run-attempt1/artifacts/cycle-48/trial-0/stop_objective_mode.bin": {
+        "stored_bytes": 41702,
+        "stored_sha256": "5ceb7f81411daccfb51e943a9b14387b2578ebdcfd3a4115a6160d2d8c68a97b",
+        "raw_bytes": 113208,
+        "raw_sha256": "bf3435de7718e43d464ff9aa17c4ce871873c371a44b4ae269a7f869ff0eb001",
+        "source_complete": true
+      },
+      "native66/run-attempt1/artifacts/cycle-48/trial-0/observation_before.bin": {
+        "stored_bytes": 756,
+        "stored_sha256": "4d3554a0190751a5de68900ede1a03cf77067949b4851be4cdd0e34c84c4b047",
+        "raw_bytes": 2752,
+        "raw_sha256": "e1668d62fd7f3ac740e7a05cd3bbdc65fe6faa99599edebfd3907c55c758e1a7",
+        "source_complete": true
+      },
+      "native66/run-attempt1/artifacts/cycle-47/trial-0/observation_after.bin": {
+        "stored_bytes": 757,
+        "stored_sha256": "0e1a8acccc62e66d63d585777ff58abf525f1cdbf2b416f2e7b52628b1ebfe66",
+        "raw_bytes": 2752,
+        "raw_sha256": "1190e632912e29315e0a8ac7d137d57e5fcc17c881d47cd7a4039f29c9e76ca5",
+        "source_complete": true
+      },
+      "native66/run-attempt1/artifacts/cycle-47/trial-0/candidate.bin": {
+        "stored_bytes": 4165,
+        "stored_sha256": "ac62e421b855443f93721aa6c377a4ee81ad87f3070591cf194244e0eb3f6fce",
+        "raw_bytes": 122316,
+        "raw_sha256": "21ffb51a9892d5f94e1630c3b861970df65fe4d6235f7c5e9e0799d1ca8e2a98",
+        "source_complete": true
+      },
+      "native66/run-attempt1/artifacts/cycle-49/trial-0/stop_objective_mode.bin": {
+        "stored_bytes": 40990,
+        "stored_sha256": "878d21d2814ace83c1299514674e84142fde849dc677b502a0b04892634c6265",
+        "raw_bytes": 113208,
+        "raw_sha256": "a7d8b30740013c5522977b80ee14092013c6c038d17813303840c6f8619ebfae",
+        "source_complete": true
+      },
+      "native66/run-attempt1/artifacts/cycle-49/trial-0/observation_before.bin": {
+        "stored_bytes": 756,
+        "stored_sha256": "d4c1037660b2c2e6fa85b9176247edb6c3481e21974b14c2cf4fe322fed26c0f",
+        "raw_bytes": 2752,
+        "raw_sha256": "6885bb50ce3106351fa2e196e03825cbeba4f1113c3526c7180fdb16fbe78feb",
+        "source_complete": true
+      },
+      "native66/run-attempt1/artifacts/cycle-48/trial-0/observation_after.bin": {
+        "stored_bytes": 756,
+        "stored_sha256": "6be10e6068dea60f417d1901be117c0c95f101d39f221eac082e3d86c6928d0a",
+        "raw_bytes": 2752,
+        "raw_sha256": "9b77e2a6da04a7e688352b1ea10e9d438ea76a8ac95381db98c48e8cfff73e70",
+        "source_complete": true
+      },
+      "native66/run-attempt1/artifacts/cycle-48/trial-0/candidate.bin": {
+        "stored_bytes": 4184,
+        "stored_sha256": "40477f2d0c7821a5a14f6cea17406817cfd35877410c6f7c3e372996da541add",
+        "raw_bytes": 122316,
+        "raw_sha256": "05532d0c9c2483fc33bbdb8a0956398c834a7be937c094f48952ad163b4f7c00",
+        "source_complete": true
+      },
+      "native66/run-attempt1/artifacts/cycle-50/trial-0/stop_objective_mode.bin": {
+        "stored_bytes": 42845,
+        "stored_sha256": "db08ad4e52d9cdb1a73280759174968857530e2ef94176de548d88a819ca7a4f",
+        "raw_bytes": 114440,
+        "raw_sha256": "ac6273a52a6a834fb1b69969f2af820cdd8d44f3ad5ea5aa3f4449af47fc2bac",
+        "source_complete": true
+      },
+      "native66/run-attempt1/artifacts/cycle-50/trial-0/observation_before.bin": {
+        "stored_bytes": 752,
+        "stored_sha256": "ec595fbea03e86ff72d512ef066e3a2b1650d21d92bf499b3c201f4616d254cd",
+        "raw_bytes": 2752,
+        "raw_sha256": "94219802ac503720c52c6791f2fedbf3080dffb5afb499a61edaa8718c9ad182",
+        "source_complete": true
+      },
+      "native66/run-attempt1/artifacts/cycle-49/trial-0/observation_after.bin": {
+        "stored_bytes": 752,
+        "stored_sha256": "b1b0d3844e876d0ce03693ac9858490d3f5fc12d803843df3c6ccd5da8417057",
+        "raw_bytes": 2752,
+        "raw_sha256": "0906e3921299fc31cc086f3111bf7fcf9a229ebffdfadb9641f7132314c10f90",
+        "source_complete": true
+      },
+      "native66/run-attempt1/artifacts/cycle-49/trial-0/candidate.bin": {
+        "stored_bytes": 4146,
+        "stored_sha256": "efe651c2391d9748054aba5f878bb438b17494d7a039b3ad566b7729c12cf9b8",
+        "raw_bytes": 122316,
+        "raw_sha256": "295f8d70c9837e35fbd82313d804130b128e557858c2375d044f9bbb2144edb2",
+        "source_complete": true
+      },
+      "native66/run-attempt1/artifacts/cycle-51/trial-0/stop_objective_mode.bin": {
+        "stored_bytes": 42893,
+        "stored_sha256": "859e027a7fcb9bae7e90cbf9162d2e29a20e70e8cccc4b55cd26ab91139954f7",
+        "raw_bytes": 115672,
+        "raw_sha256": "e2697545dd63977d5c57cd2eabb40fb1406db266a28ee1c3218eb9903870fb35",
+        "source_complete": true
+      },
+      "native66/run-attempt1/artifacts/cycle-50/trial-0/candidate.bin": {
+        "stored_bytes": 4170,
+        "stored_sha256": "4ebbb8cb0c0d19a05dc93fce0dba068467e4ac2379bdaf346b3370eaec475495",
+        "raw_bytes": 122316,
+        "raw_sha256": "536b6477372df510350f5122bcf453d350a310d2a510e71aa426af6ee8b01167",
+        "source_complete": true
+      }
+    },
+    "scope": "Independent complete stored-byte recovery and saved original arithmetic only. Samples do not rerun every FCL/Model query; all failures retained. No successful stop, fulltask, real time, hardware or phase acceptance."
+  },
+  "failed51_original_literal_cause": {
+    "schema": "ROOT66_FAILED51_EXACT_ORIGINAL_LITERAL_DERIVATIVE_CAUSE_V1",
+    "current_scaled_rows": 7338,
+    "original_SI_rows": 14756,
+    "candidate_flags": [
+      0,
+      1,
+      1,
+      0,
+      1,
+      0,
+      1,
+      7058
+    ],
+    "candidate_data_only_first_preview": 1,
+    "candidate_tail_forward_absent": true,
+    "preview_joint2_command_jerk": -20.000000000010623,
+    "reader_V1_assumption_failure_preserved": "Old65 failed before preview;66 strictliteral occurs after data-only preview construction. V1 expectedall3absent and failed; V2 fully decodes preview, no native/Model rerun.",
+    "recorded_native_first144_exact_free_p_Z_D_x": true,
+    "eliminated_tail_numpy_vs_Eigen_reconstruction_absmax": 4.336808689942018e-18,
+    "reader_V2_assumption_failure_preserved": "V2 incorrectly expected all160 bitexact across Eigen/NumPy dot accumulation. First144 free controls are exact; authoritative recorded160 controls retained and independently checked against original SI/E/literal gates.",
+    "all_three_saved_controls": {
+      "genuine_nominal": {
+        "literal_derivative_failures": [],
+        "full_original_SI_max_violation": 1.9999999999881224e-07,
+        "original_SI_worst_row": 4354,
+        "original_SI_worst_label": [
+          "terminal/progress_r",
+          "1/s"
+        ],
+        "full200_history_failures": []
+      },
+      "hint": {
+        "literal_derivative_failures": [],
+        "full_original_SI_max_violation": 9.999986949615902e-14,
+        "original_SI_worst_row": 4354,
+        "original_SI_worst_label": [
+          "terminal/progress_r",
+          "1/s"
+        ],
+        "full200_history_failures": []
+      },
+      "native": {
+        "literal_derivative_failures": [
+          {
+            "tick": 1,
+            "cell0": 0,
+            "step0": 0,
+            "joint0": 1,
+            "field": "jerk",
+            "value": -20.000000000010623,
+            "bound": 20.0,
+            "positive_excess": 1.0622613899613498e-11,
+            "ULPs": 2990.0,
+            "before_w": 0.002289860384935728,
+            "previous_accepted_alpha": -0.004548105901371058,
+            "raw_alpha": -0.08454810590141354,
+            "rounded_implied_alpha": -0.08454810590141355,
+            "next_w": 0.001951667961330074
+          }
+        ],
+        "full_original_SI_max_violation": 1.0619061185934697e-11,
+        "original_SI_worst_row": 3,
+        "original_SI_worst_label": [
+          "feedback_jerk/0/1",
+          "rad/s^3"
+        ],
+        "full200_history_failures": [
+          1
+        ]
+      }
+    },
+    "hint_events": 133,
+    "native_joint2_alpha_minus_hint": -4.247990847972005e-14,
+    "strict_first7_gaps": [
+      -4.3206795064321596e-06,
+      -6.308026726570184e-07,
+      -9.852230511625992e-05,
+      -9.611759336557082e-05,
+      -4.320678862263102e-06,
+      -9.960050027755163e-05,
+      -4.320679025916806e-06
+    ],
+    "V8_all7x9_policy_records_exact": true,
+    "native_or_Model_calls_in_audit": 0,
+    "scope": "Exact retained binary64 arithmetic only. Native moves across original20jerk active bound; original SI1e-7 can pass while unchanged strict literal gate correctly refuses. Does not establish QP infeasibility, actual physical stopping or acceptance."
+  },
+  "first32_last50_original_SI_cost": {
+    "schema": "ROOT66_SELECTED_ORIGINAL_SI_COST_FACTOR_REVIEW_V1",
+    "samples": [
+      {
+        "schema": "ROOT66_SELECTED_FULL_ORIGINAL_SI_AND_COST_FACTOR_REVIEW_V1",
+        "current": 32,
+        "trial": 0,
+        "native_raw_status": 1,
+        "native_attempts": 1,
+        "data_only_execution_permission": false,
+        "all_original_rows": 14756,
+        "controls": 160,
+        "full_original_SI_violation_numpy": 9.999986949615902e-14,
+        "factor_rows": 909,
+        "full_sparse_factor_entries_exact": true,
+        "H_factor_error_inf": 8.881784197001252e-16,
+        "g_factor_error_inf": 2.220446049250313e-16,
+        "constant_factor_error": 1.6653345369377348e-16,
+        "source_complete_SHA_CRC_singleEOF_before_decode": true,
+        "scope": "Saved actual66 selected current32 reaches native SOLVED, full original SI and original cost-factor consistency; data-only core permission stays false. Independent B400/C2 arithmetic is separately verified. Not stopping/task/realtime/phase acceptance."
+      },
+      {
+        "schema": "ROOT66_SELECTED_FULL_ORIGINAL_SI_AND_COST_FACTOR_REVIEW_V1",
+        "current": 50,
+        "trial": 0,
+        "native_raw_status": 1,
+        "native_attempts": 1,
+        "data_only_execution_permission": false,
+        "all_original_rows": 14756,
+        "controls": 160,
+        "full_original_SI_violation_numpy": 9.999986949615902e-14,
+        "factor_rows": 909,
+        "full_sparse_factor_entries_exact": true,
+        "H_factor_error_inf": 8.881784197001252e-16,
+        "g_factor_error_inf": 2.220446049250313e-16,
+        "constant_factor_error": 2.220446049250313e-16,
+        "source_complete_SHA_CRC_singleEOF_before_decode": true,
+        "scope": "Saved actual66 selected current50 reaches native SOLVED, full original SI and original cost-factor consistency; data-only core permission stays false. Independent B400/C2 arithmetic is separately verified. Not stopping/task/realtime/phase acceptance."
+      }
+    ],
+    "archive_binding": {
+      "archive_sha256": "f1b179d4271dc99a8a3f1dd5a1c056afd2f98db785db642bde1de04640056498",
+      "archive_bytes": 1822543482,
+      "outer_full_reopened_SHA_CRC_single_gzip_EOF_again_verified": true,
+      "cached_members": 219,
+      "cached_stored_bytes": 43869604,
+      "maximum_in_memory_stored_bytes": 67108864,
+      "new_extracted_native_files": 0,
+      "samples": [
+        [
+          32,
+          "native66/run-attempt1/artifacts/cycle-32/trial-0"
+        ],
+        [
+          50,
+          "native66/run-attempt1/artifacts/cycle-50/trial-0"
+        ]
+      ]
+    },
+    "source_auditor_SHA256": "db2c996c8fe2707a83be51d6f59b0aed86b7b4a15fe538ac6be6f22243b01588",
+    "new_Model_or_solver_calls": 0,
+    "scope": "First32 and last50 original14756 SI and909row cost factor consistency; all failures retained. Does not establish stop/fulltask/realtime/phase acceptance."
+  },
+  "complete_Mac_archive_persisted_readback": {
+    "schema": "MAC_DIRECT_STREAM_STORED_EVIDENCE_READBACK_V1",
+    "archive": "/Users/uot/Documents/ChatGPT/ros/transfer/cold-backups/native66-complete-direct-mac-20261016-v1/complete.tar.gz",
+    "bytes": 1822543482,
+    "sha256": "f1b179d4271dc99a8a3f1dd5a1c056afd2f98db785db642bde1de04640056498",
+    "outer_tar_raw_bytes": 1864693760,
+    "members": 2357,
+    "payload_members": 2353,
+    "codec_counts": {
+      "source_complete": 2039,
+      "closed_source_failure_prefix": 0,
+      "unknown_stored_only": 0,
+      "opaque_raw_only": 0
+    },
+    "certified_inner_raw_bytes": 4848488508,
+    "every_stored_member_SHA_size_verified": true,
+    "certified_inner_raw_SHA_CRC_singleEOF_verified": true,
+    "UNKNOWN_inner_raw_CRC_explicitly_unverified": 0,
+    "Mac_persisted_full_file_reopened_SHA_CRC_verified": true,
+    "Dell_source_preserved": "/home/codextransfer/predictive_motion/results/phase5/session-controlled-stop-first-command-interior-direct-mac-v1-20261016-attempt66",
+    "independent_devices_format": "Dell original frozen files and Mac complete tar; no Dell second tar file",
+    "producer_sent_receipt": {
+      "schema": "POSTNATIVE66_DIRECT_MAC_PRODUCER_STREAM_SENT_V1",
+      "complete": true,
+      "utc": "2026-10-17T00:56:20.458922+00:00",
+      "purpose": "NATIVE_FINITE66",
+      "bytes": 1822543482,
+      "sha256": "f1b179d4271dc99a8a3f1dd5a1c056afd2f98db785db642bde1de04640056498",
+      "outer_tar_raw_bytes": 1864693760,
+      "attempted_bytes_charged": 1822543482,
+      "prepared_sha256": "ddf50b64efa6fb2f779694dc19c3a4dbc0b115f16efa5f2572d548109413b06e",
+      "source_manifest_sha256": "56b2824c40dac319e2eb1769bdefaa52abca17a41825cce07d8e1728730e1061",
+      "source_payload_count": 2353,
+      "tar_members": 2357,
+      "source_before_after_stable": true,
+      "no_Dell_tar_file": true,
+      "actual_volumes_after": [
+        {
+          "DeviceID": "C:",
+          "FreeSpace": 89842827264,
+          "Size": 488030334976
+        },
+        {
+          "DeviceID": "D:",
+          "FreeSpace": 87713984512,
+          "Size": 512098299904
+        }
+      ],
+      "wall_seconds": 38.58259295500466,
+      "Mac_persisted_reopen_readback": "PENDING",
+      "scope": "Complete bounded stream emitted once only. Producer READY does not prove Mac persistence/independent member+codec/reopen verification or phase/stop acceptance."
+    },
+    "Mac_free_before": 189198979072,
+    "Mac_free_after": 187355623424,
+    "wall_seconds": 41.30193775007501,
+    "scope": "Complete stored-byte recovery only. Closed source-failure/UNKNOWN bytes retain original qualification. Not standalone environment, mathematical/physical stop, realtime, task or phase acceptance."
+  },
+  "Mac_READY": {
+    "schema": "MAC_DIRECT_STREAM_PERSISTED_ARCHIVE_READY_V1",
+    "archive": "/Users/uot/Documents/ChatGPT/ros/transfer/cold-backups/native66-complete-direct-mac-20261016-v1/complete.tar.gz",
+    "bytes": 1822543482,
+    "sha256": "f1b179d4271dc99a8a3f1dd5a1c056afd2f98db785db642bde1de04640056498",
+    "members": 2357,
+    "codec_counts": {
+      "source_complete": 2039,
+      "closed_source_failure_prefix": 0,
+      "unknown_stored_only": 0,
+      "opaque_raw_only": 0
+    },
+    "producer_sent_is_not_Mac_readback": true,
+    "persisted_readback_passed": true,
+    "no_Dell_duplicate_archive_stock": true,
+    "full_readback_sha256": "de5adaf00b58276bfb4fb43401cfa23897ccb7e1905faeec24007dd5b98ea1ed",
+    "scope": "Complete stored-byte recovery only. Closed source-failure/UNKNOWN bytes retain original qualification. Not standalone environment, mathematical/physical stop, realtime, task or phase acceptance."
+  },
+  "original_Dell_source_independent_full_readback": {
+    "schema": "ORIGINAL_WRITER_SSH66_POSTARCHIVE_COMPLETE_SOURCE_READBACK_V1",
+    "sent": {
+      "schema": "POSTNATIVE66_DIRECT_MAC_PRODUCER_STREAM_SENT_V1",
+      "complete": true,
+      "utc": "2026-10-17T00:56:20.458922+00:00",
+      "purpose": "NATIVE_FINITE66",
+      "bytes": 1822543482,
+      "sha256": "f1b179d4271dc99a8a3f1dd5a1c056afd2f98db785db642bde1de04640056498",
+      "outer_tar_raw_bytes": 1864693760,
+      "attempted_bytes_charged": 1822543482,
+      "prepared_sha256": "ddf50b64efa6fb2f779694dc19c3a4dbc0b115f16efa5f2572d548109413b06e",
+      "source_manifest_sha256": "56b2824c40dac319e2eb1769bdefaa52abca17a41825cce07d8e1728730e1061",
+      "source_payload_count": 2353,
+      "tar_members": 2357,
+      "source_before_after_stable": true,
+      "no_Dell_tar_file": true,
+      "actual_volumes_after": [
+        {
+          "DeviceID": "C:",
+          "FreeSpace": 89842827264,
+          "Size": 488030334976
+        },
+        {
+          "DeviceID": "D:",
+          "FreeSpace": 87713984512,
+          "Size": 512098299904
+        }
+      ],
+      "wall_seconds": 38.58259295500466,
+      "Mac_persisted_reopen_readback": "PENDING",
+      "scope": "Complete bounded stream emitted once only. Producer READY does not prove Mac persistence/independent member+codec/reopen verification or phase/stop acceptance."
+    },
+    "consumed": {
+      "schema": "POSTNATIVE66_DIRECT_MAC_SINGLE_USE_STREAM_CONSUMED_V1",
+      "utc": "2026-10-17T00:55:42.204299+00:00",
+      "purpose": "NATIVE_FINITE66",
+      "prepared_sha256": "ddf50b64efa6fb2f779694dc19c3a4dbc0b115f16efa5f2572d548109413b06e",
+      "archive_aggregate_cap": 4294967296,
+      "automatic_retries": 0,
+      "failed_Mac_partial_must_stay_charged": true
+    },
+    "prepared_sha256": "ddf50b64efa6fb2f779694dc19c3a4dbc0b115f16efa5f2572d548109413b06e",
+    "source_manifest": {
+      "bytes": 479952,
+      "sha256": "56b2824c40dac319e2eb1769bdefaa52abca17a41825cce07d8e1728730e1061"
+    },
+    "all_source_payload_current_SHA_size_independently_rechecked": true,
+    "source_payload_count": 2353,
+    "source_payload_bytes": 1858500269,
+    "source_modes": [
+      256,
+      292,
+      365
+    ],
+    "all1745before_after_byteequal": true,
+    "driver_and_native_gone": true,
+    "volumes": [
+      {
+        "DeviceID": "C:",
+        "FreeSpace": 89842110464,
+        "Size": 488030334976
+      },
+      {
+        "DeviceID": "D:",
+        "FreeSpace": 87713984512,
+        "Size": 512098299904
+      }
+    ],
+    "wall_seconds": 1.4943171619961504,
+    "no_native_reentry_or_Dell_tar_created": true
+  },
+  "auditor_source_bundle": {
+    "file": "AUDITOR_SOURCES_AND_RETAINED_FAILURE_VARIANTS.tar.gz",
+    "bytes": 13045,
+    "sha256": "14f8284447cc3e4b2b6e50b14cc9802be282cb50964508666b25e3d059fc6ad3",
+    "files": [
+      {
+        "name": "archive_view66_v1.py",
+        "bytes": 4358,
+        "sha256": "763addd14753661aa20d7cc073624ff0166c51d705a6c3399ac504f03106f9e6"
+      },
+      {
+        "name": "archive_view66_v2.py",
+        "bytes": 4420,
+        "sha256": "f9143ddb3abffdaf69840e49662d101ca180b9c12654ff3c8704766467173c12"
+      },
+      {
+        "name": "archive_view66_v3.py",
+        "bytes": 4512,
+        "sha256": "4a298b87c0fa734a43d35eba50b9aedff608d8cf1cbd49bcb35a3d2aa5b54215"
+      },
+      {
+        "name": "audit_actual66_full_archive_v1.py",
+        "bytes": 8760,
+        "sha256": "b02640b881e2fdb97e678c161d6a48608354a89364b571ac71cc050af078d852"
+      },
+      {
+        "name": "audit_actual66_full_archive_v2.py",
+        "bytes": 9146,
+        "sha256": "b1ac27ddc398c467da2297f9d3583b313d9dfe4f9088e9f424736ea68d682ece"
+      },
+      {
+        "name": "audit_actual66_full_archive_v3.py",
+        "bytes": 8622,
+        "sha256": "8097856f939c253d0468ea4744dc2b7ba3a3f3cb4fea7c2dcd85b30c82078084"
+      },
+      {
+        "name": "audit_actual66_full_archive_v4.py",
+        "bytes": 8953,
+        "sha256": "870ebe87f2d094405da687f86899ab325597c9f203f56bc98e08d97a5f4b3968"
+      },
+      {
+        "name": "audit_actual66_selected_original_SI_cost_v1.py",
+        "bytes": 2166,
+        "sha256": "ba73a8fb5c36a69e921c6625815bc5b77b7e819d919636efc198a422367951b3"
+      },
+      {
+        "name": "audit_failed51_exact_literal_v1.py",
+        "bytes": 5322,
+        "sha256": "986ee2238e5cb6b59b7b9c83615f4ebf10bcbe88362f99c5f164d2516c54be03"
+      },
+      {
+        "name": "audit_failed51_exact_literal_v2.py",
+        "bytes": 5762,
+        "sha256": "5b20fc0265b779b794c789c513fb317adfef9b5ce7f1f63fedcbd7671bb319e3"
+      },
+      {
+        "name": "audit_failed51_exact_literal_v3.py",
+        "bytes": 6248,
+        "sha256": "0b478dbebfc9034a7bd366d624ba6d65e49e7a13f857669983e663156eef70c6"
+      },
+      {
+        "name": "render_phase5_stop66_diagnostic_v1.py",
+        "bytes": 6432,
+        "sha256": "1d93ca64f7e19421d5a457e0c518b0cb938248d0d698477830280be638a3020d"
+      },
+      {
+        "name": "run_full_archive_stream66_v1.py",
+        "bytes": 1933,
+        "sha256": "46b408522042ab4224f1346902f23ec6e98933fd7d5b4f8dd11a0929ee09aa86"
+      }
+    ],
+    "scope": "All new Root Python source variants including failed reader assumptions; dependencies and full native data separately identified, not standalone environment."
+  },
+  "figure": {
+    "PNG_visually_inspected": true,
+    "all38_observations_included": true,
+    "physical_v_meets_only_last2": true,
+    "no_hold_anchor_drift_NA": true
+  },
+  "acceptance": {
+    "Phase5": "NOT_ACCEPTED",
+    "Phase6": "NOT_STARTED",
+    "hardware_heldout_main_scorer": "NOT_AUTHORIZED"
+  }
+}
