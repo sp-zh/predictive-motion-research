@@ -1,5 +1,7 @@
 # Bounded direct-to-Mac evidence archive
 
+The actual65 archive subsequently passes the complete original-Dell-to-persisted-Mac flow at1,801,803,696 stored bytes,2338 members and2014 certified source-complete codecs. [Actual recovery and its limits](../../reviews/evidence/phase5_actual65_strict_contraction_failure_v1_20261016/README.md). ProducerV5 only adds a whitelisted V2 runtime-plan filename binding; stream, TEST and metadata behavior remain the qualified V4 behavior. This observed-size recovery does not establish worst-case4GiB capacity, environment restoration or controller/phase acceptance.
+
 After the independently verified direct human resume, the original Dell writer and Mac Root qualified the stream on small owned fixtures through the original fixed-hostkey SSH channel. [Results and limits](../../reviews/evidence/phase5_direct_mac_stream65_protocol_qualified_v1_20261016/README.md).
 
 The producer preserves the original files on Dell and sends one gzip tar stream without a second Dell archive. Deploy its exact source with the pinned `tools/cold_storage_verification_v1/strict_codec_reader.py` and a scoped `STREAM_CONFIG.json`. Its `prepare` command records stored-byte identities and separate complete, closed-failure-prefix, UNKNOWN and opaque-raw qualifications. Its `stream` command consumes a single-use marker before output; a failed part stays charged and cannot be retried under that marker.

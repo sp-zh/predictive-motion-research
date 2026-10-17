@@ -1,0 +1,31 @@
+{
+  "schema": "POSTNATIVE65_DIRECT_MAC_PRODUCER_STREAM_SENT_V1",
+  "complete": true,
+  "utc": "2026-10-16T23:46:52.971795+00:00",
+  "purpose": "NATIVE_FINITE65",
+  "bytes": 1801803696,
+  "sha256": "3ab9e379944389ce50233a7de6ef0fd2bbbcc9fea5708c26e1cc459b024aaaf5",
+  "outer_tar_raw_bytes": 1844264960,
+  "attempted_bytes_charged": 1801803696,
+  "prepared_sha256": "b0d58dbf0834a7a965bbf52144206ab554e7c9a7db0ddc221a40a234d7934847",
+  "source_manifest_sha256": "c8c9ee43feb6e7a573d80f493773863953f1bf6e23f408ec22c1fed67d586f76",
+  "source_payload_count": 2334,
+  "tar_members": 2338,
+  "source_before_after_stable": true,
+  "no_Dell_tar_file": true,
+  "actual_volumes_after": [
+    {
+      "DeviceID": "C:",
+      "FreeSpace": 87498338304,
+      "Size": 488030334976
+    },
+    {
+      "DeviceID": "D:",
+      "FreeSpace": 87771865088,
+      "Size": 512098299904
+    }
+  ],
+  "wall_seconds": 39.808911889995215,
+  "Mac_persisted_reopen_readback": "PENDING",
+  "scope": "Complete bounded stream emitted once only. Producer READY does not prove Mac persistence/independent member+codec/reopen verification or phase/stop acceptance."
+}

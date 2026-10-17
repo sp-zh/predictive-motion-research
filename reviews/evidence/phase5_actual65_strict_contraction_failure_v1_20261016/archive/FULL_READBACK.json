@@ -1,0 +1,57 @@
+{
+  "schema": "MAC_DIRECT_STREAM_STORED_EVIDENCE_READBACK_V1",
+  "archive": "/Users/uot/Documents/ChatGPT/ros/transfer/cold-backups/native65-complete-direct-mac-20261016-v1/complete.tar.gz",
+  "bytes": 1801803696,
+  "sha256": "3ab9e379944389ce50233a7de6ef0fd2bbbcc9fea5708c26e1cc459b024aaaf5",
+  "outer_tar_raw_bytes": 1844264960,
+  "members": 2338,
+  "payload_members": 2334,
+  "codec_counts": {
+    "source_complete": 2014,
+    "closed_source_failure_prefix": 0,
+    "unknown_stored_only": 0,
+    "opaque_raw_only": 0
+  },
+  "certified_inner_raw_bytes": 4791759950,
+  "every_stored_member_SHA_size_verified": true,
+  "certified_inner_raw_SHA_CRC_singleEOF_verified": true,
+  "UNKNOWN_inner_raw_CRC_explicitly_unverified": 0,
+  "Mac_persisted_full_file_reopened_SHA_CRC_verified": true,
+  "Dell_source_preserved": "/home/codextransfer/predictive_motion/results/phase5/session-controlled-stop-physical-braking-first-progress-direct-mac-v1-20261016-attempt65",
+  "independent_devices_format": "Dell original frozen files and Mac complete tar; no Dell second tar file",
+  "producer_sent_receipt": {
+    "schema": "POSTNATIVE65_DIRECT_MAC_PRODUCER_STREAM_SENT_V1",
+    "complete": true,
+    "utc": "2026-10-16T23:46:52.971795+00:00",
+    "purpose": "NATIVE_FINITE65",
+    "bytes": 1801803696,
+    "sha256": "3ab9e379944389ce50233a7de6ef0fd2bbbcc9fea5708c26e1cc459b024aaaf5",
+    "outer_tar_raw_bytes": 1844264960,
+    "attempted_bytes_charged": 1801803696,
+    "prepared_sha256": "b0d58dbf0834a7a965bbf52144206ab554e7c9a7db0ddc221a40a234d7934847",
+    "source_manifest_sha256": "c8c9ee43feb6e7a573d80f493773863953f1bf6e23f408ec22c1fed67d586f76",
+    "source_payload_count": 2334,
+    "tar_members": 2338,
+    "source_before_after_stable": true,
+    "no_Dell_tar_file": true,
+    "actual_volumes_after": [
+      {
+        "DeviceID": "C:",
+        "FreeSpace": 87498338304,
+        "Size": 488030334976
+      },
+      {
+        "DeviceID": "D:",
+        "FreeSpace": 87771865088,
+        "Size": 512098299904
+      }
+    ],
+    "wall_seconds": 39.808911889995215,
+    "Mac_persisted_reopen_readback": "PENDING",
+    "scope": "Complete bounded stream emitted once only. Producer READY does not prove Mac persistence/independent member+codec/reopen verification or phase/stop acceptance."
+  },
+  "Mac_free_before": 192228765696,
+  "Mac_free_after": 190413352960,
+  "wall_seconds": 42.33419879106805,
+  "scope": "Complete stored-byte recovery only. Closed source-failure/UNKNOWN bytes retain original qualification. Not standalone environment, mathematical/physical stop, realtime, task or phase acceptance."
+}

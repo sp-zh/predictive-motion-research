@@ -1,5 +1,7 @@
 # Predictive Redundancy-Aware Motion Control
 
+**Actual65 completed with a retained failure:50 commands,100 real simulated2ms task halves; stopping not achieved.** [Result, independent review, diagnostic plot and complete verified backup](reviews/evidence/phase5_actual65_strict_contraction_failure_v1_20261016/README.md). The next command was rejected at an unchanged strict planning gate; no66 has started. Phase5 remains NOT_ACCEPTED.
+
 **Actual65 entered once2026-10-16T23:34:05Z.** [Independent startup proof](reviews/evidence/phase5_actual65_entry_v1_20261016/README.md) verifies the running native process,1743 input receipts and real warmup returns. Results, physical stopping and phase acceptance remain pending.
 
 **Resumed by new direct human instruction on2026-10-16 after the actual64 pause.** [Resume evidence](reviews/evidence/phase5_resume_after64_v1_20261016/DIRECT_HUMAN_RESUME.json) preserves the [pause history](reviews/evidence/phase5_human_pause_after64_v1_20261016/README.md). Physical-aware stopping/progress-floor and bounded direct-stream backup work continue; source drafts/pure checks are not actual stop or phase acceptance. No65 run is inferred from resumption.

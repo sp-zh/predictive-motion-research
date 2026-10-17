@@ -1,0 +1,137 @@
+{
+  "schema": "ROOT65_FAILED50_NATIVE_PERTURBATION_EXACT_GUARD_REVIEW_V1",
+  "sourcecomplete_archive_bound_before_decode": true,
+  "native_Solved_raw1_enum0_iterations1": true,
+  "original_SI14756_reported_max": 9.999640004920707e-14,
+  "candidate_preview_tail_request_absent": true,
+  "all_first7_guard_bounds_rederived_from_new_nominal_and_history": true,
+  "hint_last_seed_bitexact": true,
+  "current_scaled_rows": 7337,
+  "raw_native_flags": [
+    1,
+    1,
+    1,
+    1,
+    1
+  ],
+  "rows": [
+    {
+      "joint0": 0,
+      "w": -2.1950579035579133e-09,
+      "nominal_alpha": -0.010857577124824457,
+      "native_alpha": -0.0097772230848066,
+      "strict_bound": 4.3432503557201545e-05,
+      "lower": -0.010857577124824458,
+      "upper": -0.009777223084548184,
+      "native_next_w": -3.911108739712996e-05,
+      "native_strict_gap": -4.321416160071581e-06,
+      "hint_alpha": -0.009777223084548186,
+      "native_minus_hint_alpha": -2.5841481732236105e-13,
+      "hint_strict_gap": -4.321416161105239e-06,
+      "native_gap_ULPs": -637728463526665.0
+    },
+    {
+      "joint0": 1,
+      "w": 0.0023080071500288625,
+      "nominal_alpha": -0.00346785927560802,
+      "native_alpha": -0.004548213315835115,
+      "strict_bound": 0.0022941357129264393,
+      "lower": -0.004548213315884292,
+      "upper": -0.0034678592756079685,
+      "native_next_w": 0.002289814296765522,
+      "native_strict_gap": -4.321416160916764e-06,
+      "hint_alpha": -0.004548213315884292,
+      "native_minus_hint_alpha": 4.9177675820466504e-14,
+      "hint_strict_gap": -4.321416161113655e-06,
+      "native_gap_ULPs": -9964507244553.0
+    },
+    {
+      "joint0": 2,
+      "w": -0.002131347159369387,
+      "nominal_alpha": 0.10490974949016538,
+      "native_alpha": 0.10599010353063439,
+      "strict_bound": 0.0017117081614087318,
+      "lower": 0.10490974949016538,
+      "upper": 0.10599010353044165,
+      "native_next_w": -0.0017073867452468494,
+      "native_strict_gap": -4.321416161882138e-06,
+      "hint_alpha": 0.10599010353044165,
+      "native_minus_hint_alpha": 1.9273471707492718e-13,
+      "hint_strict_gap": -4.321416161111053e-06,
+      "native_gap_ULPs": -19929014493558.0
+    },
+    {
+      "joint0": 3,
+      "w": -0.002144054903957155,
+      "nominal_alpha": 0.10505557794757939,
+      "native_alpha": 0.10613593198767422,
+      "strict_bound": 0.0017238325921668438,
+      "lower": 0.10505557794757937,
+      "upper": 0.10613593198785566,
+      "native_next_w": -0.001719511176006458,
+      "native_strict_gap": -4.321416160385505e-06,
+      "hint_alpha": 0.10613593198785565,
+      "native_minus_hint_alpha": -1.814243200115584e-13,
+      "hint_strict_gap": -4.321416161111053e-06,
+      "native_gap_ULPs": -19929014486656.0
+    },
+    {
+      "joint0": 4,
+      "w": -0.0009720758727266975,
+      "nominal_alpha": 0.0023084839272165167,
+      "native_alpha": 0.002308483927128721,
+      "strict_bound": 0.000962841937017835,
+      "lower": 0.0023084839272165146,
+      "upper": 0.0033888379674927895,
+      "native_next_w": -0.0009628419370181826,
+      "native_strict_gap": 3.4770363671610127e-16,
+      "hint_alpha": 0.002308483927216515,
+      "native_minus_hint_alpha": -8.779392143831721e-14,
+      "hint_strict_gap": -3.469446951953614e-18,
+      "native_gap_ULPs": 3207.0
+    },
+    {
+      "joint0": 5,
+      "w": -0.0021379636807058616,
+      "nominal_alpha": 0.1053545799536956,
+      "native_alpha": 0.10643493399385184,
+      "strict_bound": 0.0017165453608910853,
+      "lower": 0.1053545799536956,
+      "upper": 0.10643493399397187,
+      "native_next_w": -0.0017122239447304542,
+      "native_strict_gap": -4.321416160630968e-06,
+      "hint_alpha": 0.10643493399397186,
+      "native_minus_hint_alpha": -1.2001510896197942e-13,
+      "hint_strict_gap": -4.321416161111053e-06,
+      "native_gap_ULPs": -19929014487788.0
+    },
+    {
+      "joint0": 6,
+      "w": 7.079786060106615e-05,
+      "nominal_alpha": -0.1096709943287932,
+      "native_alpha": -0.10859064028859411,
+      "strict_bound": 0.000367886116714108,
+      "lower": -0.10967099432879321,
+      "upper": -0.10859064028851692,
+      "native_next_w": -0.00036356470055331027,
+      "native_strict_gap": -4.3214161607976645e-06,
+      "hint_alpha": -0.10859064028851693,
+      "native_minus_hint_alpha": -7.71743779992562e-14,
+      "hint_strict_gap": -4.321416161106337e-06,
+      "native_gap_ULPs": -79716057954227.0
+    }
+  ],
+  "independent_scaled_residuals": {
+    "hint": {
+      "primal": 2.168404344971009e-17,
+      "stationarity": 3.400058012914542e-16
+    },
+    "native": {
+      "primal": 4.624009508624738e-13,
+      "stationarity": 3.085171007555232e-13
+    }
+  },
+  "failed_joint0": 4,
+  "cause": "Hint satisfies all seven existing strict-first-command checks. One native iteration moves joint5 alpha negatively by ~8.78e-14; its nextw exceeds the unchanged outward strict bound by ~3.48e-16 (3207ULPs). Existing gate correctly refuses before forward/B/C; no clipping, tolerance relaxation, solver/Model rerun or new66.",
+  "scope": "Exact retained binary64 reconstruction and matrix residuals, not a new solver experiment or physical stop/full-task/phase acceptance."
+}

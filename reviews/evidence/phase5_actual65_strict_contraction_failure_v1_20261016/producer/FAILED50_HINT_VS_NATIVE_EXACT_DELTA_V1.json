@@ -1,0 +1,171 @@
+{
+  "schema": "ACTUAL65_FAILED50_HINT_VS_NATIVE_EXACT_FIRST7_DELTA_V1",
+  "source_rawsha": {
+    "qp": "15a60eed961eda754b656bbd7dc110faca8e35d68f6fb0265a301e1805fb1f7f",
+    "hint": "2c71fb2b4846513cdbfa999dd0a0126930d57331283aab5229dabd26bacc83f0"
+  },
+  "flags": [
+    1,
+    1,
+    1,
+    1,
+    1
+  ],
+  "raw_native_status": 1,
+  "hint_events": 142,
+  "current_744994_inventory_and_7390matrices_not_changed": true,
+  "current_row_count": 7337,
+  "hint_bitexact_last_native_seed": true,
+  "all_first7_native_original_alpha_bitexact_candidate": true,
+  "rows": [
+    {
+      "joint0": 0,
+      "D": 5.755119482813351,
+      "hint_solver_y": -0.0016988740396695738,
+      "native_solver_y": -0.0016988740397144756,
+      "hint_original_alpha": -0.009777223084548186,
+      "native_original_alpha": -0.0097772230848066,
+      "native_minus_hint_alpha": -2.5841481732236105e-13,
+      "hint_next_w": -3.91110873960963e-05,
+      "native_next_w": -3.911108739712996e-05,
+      "hint_strict_signed_gap": -4.321416161105239e-06,
+      "native_strict_signed_gap": -4.321416160071581e-06,
+      "hint_strict_pass": true,
+      "native_strict_pass": true,
+      "hint_alpha_interval_violation": 0.0,
+      "native_alpha_interval_violation": 0.0
+    },
+    {
+      "joint0": 1,
+      "D": 5.8267223291344425,
+      "hint_solver_y": -0.0007805783524542739,
+      "native_solver_y": -0.0007805783524458338,
+      "hint_original_alpha": -0.004548213315884292,
+      "native_original_alpha": -0.004548213315835115,
+      "native_minus_hint_alpha": 4.9177675820466504e-14,
+      "hint_next_w": 0.0022898142967653252,
+      "native_next_w": 0.002289814296765522,
+      "hint_strict_signed_gap": -4.321416161113655e-06,
+      "native_strict_signed_gap": -4.321416160916764e-06,
+      "hint_strict_pass": true,
+      "native_strict_pass": true,
+      "hint_alpha_interval_violation": 0.0,
+      "native_alpha_interval_violation": 0.0
+    },
+    {
+      "joint0": 2,
+      "D": 5.758732566234984,
+      "hint_solver_y": 0.01840510951175098,
+      "native_solver_y": 0.01840510951178445,
+      "hint_original_alpha": 0.10599010353044165,
+      "native_original_alpha": 0.10599010353063439,
+      "native_minus_hint_alpha": 1.9273471707492718e-13,
+      "hint_next_w": -0.0017073867452476205,
+      "native_next_w": -0.0017073867452468494,
+      "hint_strict_signed_gap": -4.321416161111053e-06,
+      "native_strict_signed_gap": -4.321416161882138e-06,
+      "hint_strict_pass": true,
+      "native_strict_pass": true,
+      "hint_alpha_interval_violation": 0.0,
+      "native_alpha_interval_violation": 1.9273471707492718e-13
+    },
+    {
+      "joint0": 3,
+      "D": 5.774260425775872,
+      "hint_solver_y": 0.018380870304025895,
+      "native_solver_y": 0.018380870303994476,
+      "hint_original_alpha": 0.10613593198785565,
+      "native_original_alpha": 0.10613593198767422,
+      "native_minus_hint_alpha": -1.814243200115584e-13,
+      "hint_next_w": -0.0017195111760057325,
+      "native_next_w": -0.001719511176006458,
+      "hint_strict_signed_gap": -4.321416161111053e-06,
+      "native_strict_signed_gap": -4.321416160385505e-06,
+      "hint_strict_pass": true,
+      "native_strict_pass": true,
+      "hint_alpha_interval_violation": 0.0,
+      "native_alpha_interval_violation": 0.0
+    },
+    {
+      "joint0": 4,
+      "D": 5.760155419067749,
+      "hint_solver_y": 0.0004007676458823972,
+      "native_solver_y": 0.00040076764586715566,
+      "hint_original_alpha": 0.002308483927216515,
+      "native_original_alpha": 0.002308483927128721,
+      "native_minus_hint_alpha": -8.779392143831721e-14,
+      "hint_next_w": -0.0009628419370178315,
+      "native_next_w": -0.0009628419370181826,
+      "hint_strict_signed_gap": -3.469446951953614e-18,
+      "native_strict_signed_gap": 3.4770363671610127e-16,
+      "hint_strict_pass": true,
+      "native_strict_pass": false,
+      "hint_alpha_interval_violation": 0.0,
+      "native_alpha_interval_violation": 8.779348775744822e-14
+    },
+    {
+      "joint0": 5,
+      "D": 5.763576560109279,
+      "hint_solver_y": 0.018466820538244715,
+      "native_solver_y": 0.01846682053822389,
+      "hint_original_alpha": 0.10643493399397186,
+      "native_original_alpha": 0.10643493399385184,
+      "native_minus_hint_alpha": -1.2001510896197942e-13,
+      "hint_next_w": -0.001712223944729974,
+      "native_next_w": -0.0017122239447304542,
+      "hint_strict_signed_gap": -4.321416161111053e-06,
+      "native_strict_signed_gap": -4.321416160630968e-06,
+      "hint_strict_pass": true,
+      "native_strict_pass": true,
+      "hint_alpha_interval_violation": 0.0,
+      "native_alpha_interval_violation": 0.0
+    },
+    {
+      "joint0": 6,
+      "D": 5.758877749996165,
+      "hint_solver_y": -0.01885621556883878,
+      "native_solver_y": -0.018856215568852183,
+      "hint_original_alpha": -0.10859064028851693,
+      "native_original_alpha": -0.10859064028859411,
+      "native_minus_hint_alpha": -7.71743779992562e-14,
+      "hint_next_w": -0.0003635647005530016,
+      "native_next_w": -0.00036356470055331027,
+      "hint_strict_signed_gap": -4.321416161106337e-06,
+      "native_strict_signed_gap": -4.3214161607976645e-06,
+      "hint_strict_pass": true,
+      "native_strict_pass": true,
+      "hint_alpha_interval_violation": 0.0,
+      "native_alpha_interval_violation": 0.0
+    }
+  ],
+  "independent_scaled_residuals": {
+    "hint": {
+      "primal": 2.168404344971009e-17,
+      "stationarity": 3.400058012914542e-16,
+      "first7_additional_rows_values": [
+        -0.0016988740396695738,
+        -0.0007805783524542739,
+        0.01840510951175098,
+        0.018380870304025895,
+        0.00040076764588239716,
+        0.018466820538244715,
+        -0.01885621556883878
+      ]
+    },
+    "native": {
+      "primal": 4.624009508624738e-13,
+      "stationarity": 3.085171007555232e-13,
+      "first7_additional_rows_values": [
+        -0.0016988740397144756,
+        -0.0007805783524458338,
+        0.01840510951178445,
+        0.018380870303994476,
+        0.0004007676458671556,
+        0.01846682053822389,
+        -0.018856215568852183
+      ]
+    }
+  },
+  "cause_observed": "Hint first7 all pass strict contraction; one native iteration perturbs joint5 original alpha by a tiny negative amount beyond nominal-dominant lower. Strict original gate correctly refuses; no candidate clip or posthoc passing claim.",
+  "scope": "Saved-data binary64 reconstruction/residual checks only; no native/OSQP/Model rerun or changed acceptance. No original SI/B/C/stop/phase acceptance implied."
+}

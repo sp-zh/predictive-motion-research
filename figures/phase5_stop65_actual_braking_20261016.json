@@ -1,0 +1,49 @@
+{
+  "schema": "ACTUAL_STOP65_STATIC_FIGURE_V1",
+  "source_stored_sha256": "97913834a9dcae7b72b732e3fe9b46e9f16d2bd381bb93fb4b47e6e5a80da7d9",
+  "source_raw_sha256": "80bb210418ea417a0e6472b4e09ce733e74a96606569f71ae55f7511afdb1830",
+  "source_role": "ACTUAL_PHYSICAL_V_A_ACCEPTED_HISTORY_STOP_DWELL_V2",
+  "source_packet": "native65-complete-direct-mac-20261016-v1",
+  "records": 36,
+  "original_thresholds": [
+    0.0001,
+    0.001,
+    1e-06,
+    0.0001,
+    1e-06,
+    0.0001,
+    1e-06,
+    1e-06
+  ],
+  "stop_dwell": 0,
+  "required_dwell": 50,
+  "renderer": {
+    "script_sha256": "e10885308bfb670324a3a9b9c4b190f6d904543ee949bc49e740e2a85a138960",
+    "matplotlib": "3.10.3",
+    "font": "DejaVu Sans",
+    "dpi": 180,
+    "figure_inches": [
+      13,
+      4.8
+    ]
+  },
+  "selection": "Every actual braking observation in attempt65, with no omitted failures or extrapolation",
+  "scope": "Prospective component: actual measuredv<=1e-4rad/s,a<=1e-3rad/s2 plus acceptedw/alpha/r/b and C/s drift bounds for50actual2ms halves=100ms. All original B/C/geometry/task/jerk gates retained. No exactzero/fulltask/phaseacceptance; all failedpartialpoints retained.",
+  "outputs": {
+    "csv": {
+      "bytes": 5534,
+      "sha256": "35f9fb2aa8e223490929900c45a32e8efd1a5d0413db5c1b52d7cf1c92e535b9"
+    },
+    "png": {
+      "bytes": 167688,
+      "sha256": "67da7962af2cc5708270c85d472346c26fafed207113277cfc049ba9a9002d91"
+    },
+    "svg": {
+      "bytes": 139984,
+      "sha256": "a684aacdf22302de06ea6b91063ade4b11869b93c0956287370f8d39d9791f6c"
+    }
+  },
+  "archive_sha256": "3ab9e379944389ce50233a7de6ef0fd2bbbcc9fea5708c26e1cc459b024aaaf5",
+  "structural_error_flag_is_not_threshold_failure_counter": true,
+  "hold_drift_status": "N/A - all below-threshold predicates false, no anchor"
+}

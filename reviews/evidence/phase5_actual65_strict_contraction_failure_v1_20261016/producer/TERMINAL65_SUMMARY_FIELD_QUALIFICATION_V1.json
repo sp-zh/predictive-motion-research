@@ -1,0 +1,35 @@
+{
+  "schema": "ACTUAL65_SUMMARY_FIELD_QUALIFICATION_V1",
+  "immutable_SOURCE_and_verified_archive_unchanged": true,
+  "scope": "Terminology correction for immutable derived summary field names; original monitor bytes and all counts retained.",
+  "monitor_failed_flag": {
+    "value": 0,
+    "meaning": "No structural monitor error flag; not a stopping success. passed=0 and consecutive=0/50."
+  },
+  "hold_false_count": {
+    "value": 36,
+    "old_summary_field": "stop.per_metric_failures.hold",
+    "meaning": "Count of stored hold_drift_pass=false. All36 below_thresholds=false so a hold anchor was unavailable; these are not36 measured drift-limit exceedances."
+  },
+  "raw_zero_drift_fields": "When below=false, C_drift/s_drift zeros are unavailable monitor anchors, not independently measured zero drift. Mark N/A in figures.",
+  "numeric_threshold_failures": {
+    "v": 36,
+    "a": 36,
+    "w": 36,
+    "alpha": 36,
+    "r": 36,
+    "b": 36
+  },
+  "complete_actual_guard_flags": {
+    "passed": 36,
+    "failed": 0
+  },
+  "completed_actual_task_physical_simulation": {
+    "commands": 50,
+    "halves": 100,
+    "simulated_seconds": 0.2,
+    "warmup_halves_separate": 1000,
+    "hardware": false
+  },
+  "no66_started": true
+}
