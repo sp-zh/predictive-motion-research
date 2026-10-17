@@ -1,5 +1,7 @@
 # Project showcase
 
+Latest saved numerical diagnostic: [all seven contraction margins](../figures/phase5_saved65_contraction_repair_20261016.png), with [source/review/provenance](../reviews/evidence/phase5_contraction_interior66_prepared_v1_20261016/README.md). It preserves the original65 joint5 refusal and the repaired saved native-QP result. No actual66 motion, successful stop or full-task video is claimed.
+
 Latest actual result: [attempt65 retained failure and all36 braking observations](../reviews/evidence/phase5_actual65_strict_contraction_failure_v1_20261016/README.md),50 commands/100 task2ms halves, dwell0/50. [Actual diagnostic image](../figures/phase5_stop65_actual_braking_20261016.png); no full-task or successful-stop clip is claimed. Older preparation/running statements below are historical.
 
 Prepared65 has source/build/saved-data qualification only: [receipt](../reviews/evidence/phase5_physical_braking65_prepared_v1_20261016/README.md). No new motion recording or successful stopping result is claimed; actual64 diagnostics remain the latest actual result at this checkpoint.

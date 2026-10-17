@@ -1,0 +1,81 @@
+{
+  "schema": "SAVED65_INWARD_ANALYSIS1_FULL_ORIGINAL_SI_AND_STRICT_LITERAL_HISTORY_V1",
+  "baseline_native_primal_dual_bitexact_recorded65": true,
+  "full_original_SI_rows": 14756,
+  "max_original_SI_violation": 9.999986949615902e-14,
+  "original_14756_H_g_A_l_u_and_909_factor_untouched": true,
+  "scaled_matrix_rows": 7337,
+  "only_extra_solver_bound_rows_changed": [
+    6913,
+    6914,
+    6915,
+    6916,
+    6917,
+    6918,
+    6919
+  ],
+  "literal_macro_steps": 200,
+  "literal_half_progress_checks": 400,
+  "history_failures": [],
+  "strict_old_alpha_guard_failures": [],
+  "strict_old_contraction_first7": [
+    {
+      "joint0": 0,
+      "returned_alpha": -0.009777407248401829,
+      "strict_signed_gap": -4.320679505690667e-06
+    },
+    {
+      "joint0": 1,
+      "returned_alpha": -0.004548026860789768,
+      "strict_signed_gap": -4.320670340735543e-06
+    },
+    {
+      "joint0": 2,
+      "returned_alpha": 0.10598991925114881,
+      "strict_signed_gap": -4.320679043939716e-06
+    },
+    {
+      "joint0": 3,
+      "returned_alpha": 0.10613574721142424,
+      "strict_signed_gap": -4.320677055385429e-06
+    },
+    {
+      "joint0": 4,
+      "returned_alpha": 0.0023086682521311157,
+      "strict_signed_gap": -7.37299661861951e-10
+    },
+    {
+      "joint0": 5,
+      "returned_alpha": 0.10643474955958451,
+      "strict_signed_gap": -4.320678423561618e-06
+    },
+    {
+      "joint0": 6,
+      "returned_alpha": -0.10859082457269673,
+      "strict_signed_gap": -4.320679024387159e-06
+    }
+  ],
+  "strict_old_progress_jerk_max": 4.999000000580497,
+  "first_progress_rate": 0.020080407370541484,
+  "minimum_400_half_progress": 9.999637245433259e-14,
+  "terminal_recursive_r": 9.999637245433259e-14,
+  "terminal_command_w_max": 3.535303763602636e-19,
+  "last8_controls_exact_zero": true,
+  "original_E_max_residual": 9.999986949615902e-14,
+  "existing_biased1e13_planning_E_max_residual": 1.3552527156068805e-19,
+  "residuals": {
+    "new_hint": {
+      "scaled_primal": 4.9439619065339e-17,
+      "scaled_stationarity": 2.229119666630197e-16
+    },
+    "native_returned": {
+      "scaled_primal": 4.393412716963141e-13,
+      "scaled_stationarity": 2.8532731732866523e-13
+    }
+  },
+  "native_OSQP_saved_calls": 2,
+  "Model_or_controller66_calls": 0,
+  "B400_actual_physics_privateC_stop": "NOT_RUN",
+  "no_threshold_or_tolerance_relaxation": true,
+  "scope": "Saved real65 data targeted numerical regression only. New native return, never hint substituted, passes untouched fullSI and strict command/progress gates. Does not establish B/C/physical stopping or phase acceptance."
+}

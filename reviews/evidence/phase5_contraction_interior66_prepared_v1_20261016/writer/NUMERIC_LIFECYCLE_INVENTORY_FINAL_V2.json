@@ -1,0 +1,47 @@
+{
+  "schema": "INTERIOR66_PHASE_SEPARATED_NUMERIC_INVENTORY_V1",
+  "old_upper_unchanged": 744994,
+  "new_persistent_Input_flags": 2,
+  "during_hint_peak_upper": 744996,
+  "outside_hint_new_temporary_slots_conservative": 64,
+  "one_old_144square_KKT_matrix_absent_outside_derive": 20736,
+  "outside_hint_upper": 724324,
+  "original_precharge": 745000,
+  "new_matrices_banks_in_controller": 0,
+  "old_retained_diagnostics_allowance48_unchanged": true,
+  "no_reuse_of_42_vs_48_difference": true,
+  "phase_order": [
+    "helper assembly ends before initializer/hint",
+    "derive creates local K and LU; no helper/codec frame live",
+    "derive returns Result with no K/LU; codec recomputes only one joint sequentially"
+  ],
+  "global_original_numeric_cap": 1800000000,
+  "whole_numeric_upper_with_baseline10": 1799688442,
+  "ledger_precharges_unchanged": true,
+  "helper_temporary_64_slot_breakdown": {
+    "callee_parameters": 6,
+    "Row_local": 9,
+    "width_midpoint": 2,
+    "optional_return_copy_or_caller_Row": 18,
+    "original_FirstBounds_recomputed": 5,
+    "codec_initializer_list9": 9,
+    "scalar_indexes_and_predicates_allowance": 15
+  },
+  "absent_K_term_source_binding": {
+    "working_face_basis_hpp_SHA256": "25e1e2b5d21780331838d45e40857e28e67a2231f39bf8ab1d97aa90721b818c",
+    "original_working_matrix_term": 248832,
+    "one_matrix_term_used_for_nonoverlap_only": 20736,
+    "derive_source": "current_numeric_guess.hpp local K in loop, Result no retained K",
+    "before_and_after_exact_source_SHA256": "c61a9845c4d805a2a39539cee4c8882e6db679ae81b4b25ea87cff15ece87fd3"
+  },
+  "V8_ledger_coverage": {
+    "new_numeric_fields": 71,
+    "new_numeric_raw_bytes": 568,
+    "new_scope_utf8_bytes": 703,
+    "max_stop_trials": 144,
+    "max_extra_raw_bytes": 183024,
+    "per_write_original_ledger_and_binary_byte_checks_unchanged": true,
+    "new_file_slots": 0,
+    "stored_bytes_still_charged_actual_compressor_outputs": true
+  }
+}

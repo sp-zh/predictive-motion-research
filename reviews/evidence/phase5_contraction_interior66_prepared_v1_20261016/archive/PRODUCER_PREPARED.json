@@ -1,0 +1,50 @@
+{
+  "schema": "POSTNATIVE66_DIRECT_MAC_PREPARED_V1",
+  "utc": "2026-10-17T00:39:44.321547+00:00",
+  "purpose": "PROTOCOL_TEST_ONLY",
+  "payload_count": 8,
+  "payload_bytes": 249159,
+  "native_source": "/home/codextransfer/predictive_motion/results/phase5/protocol66-single-test1-20261016",
+  "prefix": "native66_single_test_only/",
+  "source_manifest": {
+    "bytes": 2020,
+    "sha256": "a08e21dfe6c07ee6560094e77260c46ab8cbb3aebb53278c25d61156b99eda5e"
+  },
+  "codec_report": {
+    "bytes": 2745,
+    "sha256": "24ab8bcf54d686250c728031acf48b736bc267820f8c93c5b570919838a4d338"
+  },
+  "metadata_members": {
+    "SOURCE_MANIFEST.json": {
+      "bytes": 2020,
+      "sha256": "a08e21dfe6c07ee6560094e77260c46ab8cbb3aebb53278c25d61156b99eda5e"
+    },
+    "FULL_NATIVE_CODEC_READBACK.json": {
+      "bytes": 2745,
+      "sha256": "24ab8bcf54d686250c728031acf48b736bc267820f8c93c5b570919838a4d338"
+    },
+    "direct_mac_archive_producer66_v6.py": {
+      "bytes": 14041,
+      "sha256": "80225cc8efe0be8b852e2af66c188512980073aa77321099c06423058246e115"
+    },
+    "strict_codec_reader.py": {
+      "bytes": 7289,
+      "sha256": "c32178a23e5254f44ee21a62be655af3236c708c02bb061564c3d8b0b8cb468a"
+    }
+  },
+  "limits": {
+    "archive_bytes": 1048576,
+    "payload_bytes": 1048576,
+    "metadata_bytes": 1048576,
+    "tar_raw_bytes": 4563402752
+  },
+  "config_identity": {
+    "bytes": 319,
+    "sha256": "fa7bdd849351969ee1f817a3546d5f8755edb4122f3cabd207d86928f3a960cc"
+  },
+  "source_manifest_sha256": "a08e21dfe6c07ee6560094e77260c46ab8cbb3aebb53278c25d61156b99eda5e",
+  "archive_aggregate_cap": 1048576,
+  "no_Dell_tar_file": true,
+  "actual_volumes": [],
+  "scope": "Preparation and original-source codec readback only; no Mac stream/backup completion yet."
+}

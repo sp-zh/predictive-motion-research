@@ -1,0 +1,17 @@
+# Prepared66: inward first-command planning and preserved native65 failure
+
+The original65 current50 saved QP shows a genuine native rounding failure: the hint passes the unchanged strict contraction bound, while one native iteration moves joint5 alpha by about−8.78e−14 and produces a positive strict margin3.477e−16. The new policy changes only seven extra solver intervals and their starting coordinates. Original H/g/A/p/Z, solver tolerances, strictFirst, SI/nonlinear/geometric/B/history/two2ms/C/stop criteria and all original resource/counter limits remain.
+
+Two saved-QP native calls reproduce the old failure and pass all seven strict checks after inward planning. Root independently reconstructs all7337 scaled rows, native x/y and original14756 SI/140 alpha/200 command/400 positive-progress-half checks. The original native result is retained; no clipping or hint-for-native substitution occurs. This is saved arithmetic, not a Model, actual B400/C or physical-stop result.
+
+The main integration batch completed10 compiles/2 links with250 byte-identical before/after inputs. Its first pure test failed because it incorrectly demanded a7337-row ray diagnostic table from the initializer's already-feasible shortcut. That exact source/result is preserved. A separately compiled V3 test passes75 scalar/boundary cases, all7337 explicit row checks,126 unchanged non-beta coordinates and the original134-event bounded hint. The main binary/input set was not modified or relabeled.
+
+[Source overlay V19](../../../tools/phase5_controlled_stop_session_v19/README.md) restores the exact101-file845774-byte main source from five overrides and96 immutable V18 files. Its main ELF20108008B SHA `ad722b0adc8e736d82f2dc138131632452e5c334c5aba7c237ac3f2549d141a6` is independently persisted/reopened on Mac and retained on Dell. This is not standalone dependency-environment restoration.
+
+A fresh real-SSH protocol fixture using the minimally versioned single-root producer/consumer persisted260435B, SHA `502b03e5e56936809a7348f9433a611c2baed5f6867e18e5d013760078416a74`. Root reopens all12 stored members and certified inner CRC/EOF/SHA; complete, closed failure prefix, UNKNOWN and opaque each remain distinct. No previous producer is reconsumed. Two-root drafts remain private/unfinished and are excluded from66.
+
+[Diagnostic figure](../../../figures/phase5_saved65_contraction_repair_20261016.png) shows all seven original/native strict margins including the original refusal. Its V2 layout was visually inspected; PNG/SVG/CSV/JSON provenance are retained. It is saved-QP evidence, not a successful task or stop demonstration.
+
+Windows C space later recovered without project cleanup; its cause is UNKNOWN. Runtime keeps original single-C3GiB hot plus128MiB external metadata with80GiB reserves on each Dell volume. Original6GiB stored/12GiB logical/32MiB tail/745000 supplementary numerical slots/1.8B cumulative remain; new lifecycle upper744996 during hint,724324 outside hint. No credit is taken for42 versus48 diagnostics. The approved pyc scan found0 files and removed0 bytes; original SSH and AC idle-sleep checks pass. Dell battery standby remains3600s; long-term/lid-close stability is unproven.
+
+At this checkpoint66 has not entered. Fresh1745-input startup verification, current resources/ownership/connection and the single-use entry receipt remain necessary. Project remains resumed under the verified direct human instruction; Phase5 NOT_ACCEPTED, Phase6 NOT_STARTED. No hardware/heldout/main/scorer/research acceptance.

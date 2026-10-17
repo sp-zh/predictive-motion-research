@@ -1,0 +1,203 @@
+{
+  "schema": "ROOT66_INDEPENDENT_SAVED65_INTERIOR_QP_AUDIT_V1",
+  "fixture_sha256": "47b962237ca3084ed06e0528f5b5d3abdd741d2992cbf932bf8edd3bdae9c902",
+  "matrix_rows": 7337,
+  "variables": 144,
+  "only_changed_rows": [
+    {
+      "row": 6913,
+      "scaled_inset": 3.2e-08,
+      "blend": 0.0006818647094722092
+    },
+    {
+      "row": 6914,
+      "scaled_inset": 3.2e-08,
+      "blend": 0.0006903481917265278
+    },
+    {
+      "row": 6915,
+      "scaled_inset": 3.2e-08,
+      "blend": 0.0006822927864365446
+    },
+    {
+      "row": 6916,
+      "scaled_inset": 3.2e-08,
+      "blend": 0.0006841325222519594
+    },
+    {
+      "row": 6917,
+      "scaled_inset": 3.2e-08,
+      "blend": 0.0006824613655835684
+    },
+    {
+      "row": 6918,
+      "scaled_inset": 3.2e-08,
+      "blend": 0.0006828667012763052
+    },
+    {
+      "row": 6919,
+      "scaled_inset": 3.2e-08,
+      "blend": 0.0006823099877619703
+    }
+  ],
+  "all_rows_seed_violation": 0.0,
+  "outputs": {
+    "baseline": {
+      "bytes": 59864,
+      "sha256": "db6ac82661815b06cce200581b87f4016768c5ba6e14bb75b4a0f812b0fcd48f",
+      "scaled_primal": 4.624009508624738e-13,
+      "scaled_stationarity": 3.085171007555232e-13,
+      "strict_failures": 1,
+      "strict": [
+        {
+          "joint0": 0,
+          "alpha": -0.0097772230848066,
+          "gap": -4.321416160071581e-06,
+          "passed": true
+        },
+        {
+          "joint0": 1,
+          "alpha": -0.004548213315835115,
+          "gap": -4.321416160916764e-06,
+          "passed": true
+        },
+        {
+          "joint0": 2,
+          "alpha": 0.10599010353063439,
+          "gap": -4.321416161882138e-06,
+          "passed": true
+        },
+        {
+          "joint0": 3,
+          "alpha": 0.10613593198767422,
+          "gap": -4.321416160385505e-06,
+          "passed": true
+        },
+        {
+          "joint0": 4,
+          "alpha": 0.002308483927128721,
+          "gap": 3.4770363671610127e-16,
+          "passed": false
+        },
+        {
+          "joint0": 5,
+          "alpha": 0.10643493399385184,
+          "gap": -4.321416160630968e-06,
+          "passed": true
+        },
+        {
+          "joint0": 6,
+          "alpha": -0.10859064028859411,
+          "gap": -4.3214161607976645e-06,
+          "passed": true
+        }
+      ]
+    },
+    "inward": {
+      "bytes": 59864,
+      "sha256": "1ba3ac6df40be9565d8faaa59233742a29fa7b6e3f55dd9541f2383d6e6ef075",
+      "scaled_primal": 4.393412716963141e-13,
+      "scaled_stationarity": 2.8532731732866523e-13,
+      "strict_failures": 0,
+      "strict": [
+        {
+          "joint0": 0,
+          "alpha": -0.009777407248401829,
+          "gap": -4.320679505690667e-06,
+          "passed": true
+        },
+        {
+          "joint0": 1,
+          "alpha": -0.004548026860789768,
+          "gap": -4.320670340735543e-06,
+          "passed": true
+        },
+        {
+          "joint0": 2,
+          "alpha": 0.10598991925114881,
+          "gap": -4.320679043939716e-06,
+          "passed": true
+        },
+        {
+          "joint0": 3,
+          "alpha": 0.10613574721142424,
+          "gap": -4.320677055385429e-06,
+          "passed": true
+        },
+        {
+          "joint0": 4,
+          "alpha": 0.0023086682521311157,
+          "gap": -7.37299661861951e-10,
+          "passed": true
+        },
+        {
+          "joint0": 5,
+          "alpha": 0.10643474955958451,
+          "gap": -4.320678423561618e-06,
+          "passed": true
+        },
+        {
+          "joint0": 6,
+          "alpha": -0.10859082457269673,
+          "gap": -4.320679024387159e-06,
+          "passed": true
+        }
+      ]
+    },
+    "hint": {
+      "bytes": 59864,
+      "sha256": "00485eb77d26b196f1b458b0987eb639c64fb77d11b4a11d7e9248d76237b16f",
+      "scaled_primal": 4.9439619065339e-17,
+      "scaled_stationarity": 2.229119666630197e-16,
+      "strict_failures": 0,
+      "strict": [
+        {
+          "joint0": 0,
+          "alpha": -0.009777407248371638,
+          "gap": -4.3206795058114335e-06,
+          "passed": true
+        },
+        {
+          "joint0": 1,
+          "alpha": -0.0045480268607697594,
+          "gap": -4.320670340655312e-06,
+          "passed": true
+        },
+        {
+          "joint0": 2,
+          "alpha": 0.10598991925099953,
+          "gap": -4.320679043342754e-06,
+          "passed": true
+        },
+        {
+          "joint0": 3,
+          "alpha": 0.10613574721152202,
+          "gap": -4.320677055776609e-06,
+          "passed": true
+        },
+        {
+          "joint0": 4,
+          "alpha": 0.002308668252189925,
+          "gap": -7.372998971338224e-10,
+          "passed": true
+        },
+        {
+          "joint0": 5,
+          "alpha": 0.10643474955952194,
+          "gap": -4.320678423311384e-06,
+          "passed": true
+        },
+        {
+          "joint0": 6,
+          "alpha": -0.10859082457260495,
+          "gap": -4.32067902475427e-06,
+          "passed": true
+        }
+      ]
+    }
+  },
+  "original_strict_source_sha256": "c0c0a9eee1b12a6faa8ba6e76b828b35eb0a1ada9793b4d6bff4585a526220b3",
+  "native_calls_in_this_audit": 0,
+  "Model_or_controller_calls": 0,
+  "scope": "Independent saved-byte arithmetic only. No physical B/commit/C/stop claim."
+}

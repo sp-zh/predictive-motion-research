@@ -1,0 +1,20 @@
+{
+  "schema": "POSTNATIVE66_DIRECT_MAC_PRODUCER_STREAM_SENT_V1",
+  "complete": true,
+  "utc": "2026-10-17T00:40:10.309473+00:00",
+  "purpose": "PROTOCOL_TEST_ONLY",
+  "bytes": 260435,
+  "sha256": "502b03e5e56936809a7348f9433a611c2baed5f6867e18e5d013760078416a74",
+  "outer_tar_raw_bytes": 307200,
+  "attempted_bytes_charged": 260435,
+  "prepared_sha256": "ccbcf717f56f217bc0069a6bb8e72bb90ff81bfa5a33f486a8e9c60de80bb10e",
+  "source_manifest_sha256": "a08e21dfe6c07ee6560094e77260c46ab8cbb3aebb53278c25d61156b99eda5e",
+  "source_payload_count": 8,
+  "tar_members": 12,
+  "source_before_after_stable": true,
+  "no_Dell_tar_file": true,
+  "actual_volumes_after": [],
+  "wall_seconds": 0.027983768013655208,
+  "Mac_persisted_reopen_readback": "PENDING",
+  "scope": "Complete bounded stream emitted once only. Producer READY does not prove Mac persistence/independent member+codec/reopen verification or phase/stop acceptance."
+}

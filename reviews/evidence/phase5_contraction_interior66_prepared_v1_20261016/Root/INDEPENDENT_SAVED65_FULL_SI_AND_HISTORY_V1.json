@@ -1,0 +1,34 @@
+{
+  "schema": "ROOT66_INDEPENDENT_SAVED65_ORIGINAL_SI_AND_HISTORY_V1",
+  "outputs": {
+    "baseline": {
+      "bitexact_all_recorded_native_primal_dual": true
+    },
+    "inward": {
+      "original_SI_rows": 14756,
+      "max_original_SI_violation": 9.999986949615902e-14,
+      "original_strict_alpha_rows": 140,
+      "original_strict7_gaps": [
+        -4.320679505690667e-06,
+        -4.320670340735543e-06,
+        -4.320679043939716e-06,
+        -4.320677055385429e-06,
+        -7.37299661861951e-10,
+        -4.320678423561618e-06,
+        -4.320679024387159e-06
+      ],
+      "literal_macro_steps": 200,
+      "progress_halves": 400,
+      "history_failures": [],
+      "minimum_half_progress": 9.999637245433259e-14,
+      "strict_progress_jerk_max": 4.999000000580497,
+      "first_progress_rate": 0.020080407370541484,
+      "terminal_r": 9.999637245433259e-14,
+      "exact_last8_zero": true,
+      "original_E_residual": 9.999986949615902e-14
+    }
+  },
+  "source_complete_original65_inputs_verified_by_frozen_archive_reader": true,
+  "audit_native_Model_or_controller_calls": 0,
+  "scope": "Saved-byte originalSI and strict200/400 arithmetic only; not nonlinear B400, physicaltwo2ms, privateC, stopping, real time or phase acceptance."
+}

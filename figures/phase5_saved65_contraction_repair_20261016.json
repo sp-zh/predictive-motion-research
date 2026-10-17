@@ -1,0 +1,8 @@
+{
+  "schema": "SAVED65_INWARD_REPAIR_DIAGNOSTIC_FIGURE_V1",
+  "source_audit": "/private/tmp/root66_resource_review_v1_20261016/INDEPENDENT_SAVED65_INTERIOR_QP_AUDIT_V2.json",
+  "source_sha256": "da7bfd6ff7478415455627ead264ec6bd58e3901e5f002451e73d2500a064225",
+  "selection": "All7 joint observations from preserved original65 current50 saved native regression; no cherry-picked successful trajectory. Both original failure and new returned native result shown.",
+  "scale": "symlog with linear1e-16; negative passes, positive refuses",
+  "scope": "Saved-data numerical diagnostic only; not Model/controller66 or physical stop/real-time/task/phase acceptance."
+}

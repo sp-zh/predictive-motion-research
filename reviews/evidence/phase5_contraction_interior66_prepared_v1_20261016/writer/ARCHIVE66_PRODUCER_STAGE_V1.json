@@ -1,0 +1,17 @@
+{
+  "exit": 0,
+  "stdout": "{\"meta\": \"/home/codextransfer/predictive_motion/transfer/cold-archives/native66-direct-mac-20261016-v1\", \"files\": {\"strict_codec_reader.py\": {\"bytes\": 7289, \"sha256\": \"c32178a23e5254f44ee21a62be655af3236c708c02bb061564c3d8b0b8cb468a\"}, \"direct_mac_archive_producer66_v6.py\": {\"bytes\": 14041, \"sha256\": \"80225cc8efe0be8b852e2af66c188512980073aa77321099c06423058246e115\"}, \"STREAM_CONFIG.json\": {\"bytes\": 585, \"sha256\": \"0353f6ee73ed65fd885065b99d3d14bd8947c550acce19ecf589c35b533766ef\"}}, \"producer_prepare_stream_Model_calls\": 0}\n",
+  "stderr": "",
+  "config": {
+    "source": "/home/codextransfer/predictive_motion/results/phase5/session-controlled-stop-first-command-interior-direct-mac-v1-20261016-attempt66",
+    "purpose": "NATIVE_FINITE66",
+    "archive_prefix": "native66",
+    "source_payload_cap": 3758096384,
+    "archive_aggregate_cap": 4294967296,
+    "metadata_cap": 16777216,
+    "native_input_count": 1745,
+    "native_profile_sha256": "deae005ff73b2cf17a3627fd5e7c5dd7a8bb7fda363443eb1798cf2e460c6511",
+    "native_ELF_sha256": "ad722b0adc8e736d82f2dc138131632452e5c334c5aba7c237ac3f2549d141a6",
+    "runtime_plan_file": "active_run_plan66_v1.json"
+  }
+}

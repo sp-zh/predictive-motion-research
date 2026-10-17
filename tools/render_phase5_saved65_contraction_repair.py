@@ -1,0 +1,19 @@
+from pathlib import Path
+import sys,os,json,io,csv,hashlib
+import matplotlib
+matplotlib.use('Agg')
+import matplotlib.pyplot as plt
+sys.path.insert(0,'/private/tmp');from bounded_derived_bytes53_v1 import bounded_write_bytes,bounded_write
+R=Path('/private/tmp/root66_resource_review_v1_20261016');os.environ['P5_DERIVED53_ROOT']=str(R)
+a=json.loads((R/'INDEPENDENT_SAVED65_INTERIOR_QP_AUDIT_V2.json').read_text());old=a['outputs']['baseline']['strict'];new=a['outputs']['inward']['strict'];assert len(old)==len(new)==7
+plt.rcParams.update({'font.family':'DejaVu Sans','font.size':11,'svg.fonttype':'none'})
+fig,ax=plt.subplots(1,2,figsize=(11,4.7),gridspec_kw={'width_ratios':[1.6,1]});fig.patch.set_facecolor('#f7f9fc')
+for x in ax:x.set_facecolor('white');x.axhline(0,color='#536174',lw=1);x.spines[['top','right']].set_visible(False);x.grid(axis='y',alpha=.18);x.set_ylim(-1e-4,1e-12)
+xs=list(range(1,8));ax[0].plot(xs,[x['gap']for x in old],'o',ms=8,color='#bf554c',label='Original native return');ax[0].plot(xs,[x['gap']for x in new],'x',ms=9,mew=2,color='#087f8c',label='Inward-plan native return');ax[0].set_yscale('symlog',linthresh=1e-16);ax[0].set_xticks(xs);ax[0].set_xlabel('Joint');ax[0].set_ylabel('Signed margin to original strict bound');ax[0].set_title('All seven unchanged checks');ax[0].legend(loc='center left',frameon=False,fontsize=9);ax[0].annotate('Original joint 5 refuses',xy=(5,old[4]['gap']),xytext=(2.5,2e-14),arrowprops={'arrowstyle':'->','color':'#bf554c'},color='#9a3f37',fontsize=10)
+vals=[old[4]['gap'],new[4]['gap']];ax[1].scatter([0,1],vals,s=95,c=['#bf554c','#087f8c'],zorder=3);ax[1].set_yscale('symlog',linthresh=1e-16);ax[1].set_xlim(-.5,1.5);ax[1].set_xticks([0,1],['Original','Inward plan']);ax[1].set_title('Joint 5: saved current50');ax[1].text(0,1e-14,f"+{vals[0]:.3g}\nrefuse",ha='center',color='#9a3f37',fontsize=10);ax[1].annotate(f"{vals[1]:.3g}\npass",xy=(1,vals[1]),xytext=(1,-2e-7),ha='center',arrowprops={'arrowstyle':'->','color':'#087f8c'},color='#087f8c',fontsize=10)
+fig.suptitle('Saved QP regression: first-command contraction repair',fontsize=16,x=.5,y=.98);fig.text(.5,.89,'Margin = nextafter(|w + 0.004 alpha|, +infinity) - original strict bound; positive refuses',ha='center',fontsize=10,color='#465469');fig.text(.5,.035,'Saved native QP only. No Model/controller66, physical stop, real-time or phase acceptance.',ha='center',fontsize=10,color='#465469');fig.subplots_adjust(left=.09,right=.97,bottom=.19,top=.78,wspace=.35)
+for suffix in ['png','svg']:
+ out=io.BytesIO();fig.savefig(out,format=suffix,dpi=180,facecolor=fig.get_facecolor(),metadata={'Date':None}if suffix=='svg'else{});bounded_write_bytes(R/('saved65_interior_repair_v2.'+suffix),out.getvalue())
+plt.close(fig);out=io.StringIO();wr=csv.writer(out,lineterminator='\n');wr.writerow(['joint','original_native_gap','inward_native_gap','original_pass','inward_pass'])
+for i,(x,y)in enumerate(zip(old,new)):wr.writerow([i+1,format(x['gap'],'.17g'),format(y['gap'],'.17g'),x['passed'],y['passed']])
+bounded_write(R/'saved65_interior_repair_v2.csv',out.getvalue());provenance={'schema':'SAVED65_INWARD_REPAIR_DIAGNOSTIC_FIGURE_V1','source_audit':str(R/'INDEPENDENT_SAVED65_INTERIOR_QP_AUDIT_V2.json'),'source_sha256':hashlib.sha256((R/'INDEPENDENT_SAVED65_INTERIOR_QP_AUDIT_V2.json').read_bytes()).hexdigest(),'selection':'All7 joint observations from preserved original65 current50 saved native regression; no cherry-picked successful trajectory. Both original failure and new returned native result shown.','scale':'symlog with linear1e-16; negative passes, positive refuses','scope':'Saved-data numerical diagnostic only; not Model/controller66 or physical stop/real-time/task/phase acceptance.'};bounded_write(R/'saved65_interior_repair_v2.json',json.dumps(provenance,indent=2)+'\n');print({'status':'rendered_not_yet_visual_inspected','files':['png','svg','csv','json']})

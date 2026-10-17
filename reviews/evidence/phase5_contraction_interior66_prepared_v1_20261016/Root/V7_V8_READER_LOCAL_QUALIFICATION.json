@@ -1,0 +1,27 @@
+{
+  "schema": "ROOT66_V7_V8_GUARD_READER_LOCAL_QUALIFICATION_V1",
+  "old_original65_source_complete_receipt": {
+    "file": "/private/tmp/root65_actual_review_v1_20261016/selected/native65/run-attempt1/artifacts/cycle-50/trial-0/planning_guard.bin",
+    "codec": "GZIP_DEFLATE_V1",
+    "stored_bytes": 65694,
+    "stored_sha256": "ff4fc703c119691a490fdae4c348dd4c3fbdfdf5d92cbff91b43058fb7c89d05",
+    "raw_bytes": 117997,
+    "raw_sha256": "03877befcb80b5177e1aedcfa4b785174bc26c34979fe6c6a5fccf9717ad10c7",
+    "source_complete": true,
+    "closed_raw_prefix_valid": true,
+    "scope": "source complete is separate from successful gzip prefix reconstruction; no Model/native/mathematical acceptance"
+  },
+  "original_V7_pass": true,
+  "synthetic_V8_sha256": "8c4ea86768399ae3dea087dc41eff13de8210447c83e0f6e6a3750403481d3e8",
+  "synthetic_V8_bytes": 118715,
+  "recomputed_exact_inner_rows": 7,
+  "negative_cases_rejected": [
+    "missing required variable scales",
+    "trailing bytes",
+    "truncated V8 fields",
+    "tampered optimizer seed_y"
+  ],
+  "new_solver_Model_controller_calls": 0,
+  "actual66_V8_controller_file": "NOT_YET_AVAILABLE",
+  "scope": "Canonical original65 input plus explicit synthetic V8 field encoding only. New guard parser checks recorded inward bounds/affine seeds against original policy; not production codec emitted by actual66 or physical-stop acceptance."
+}
