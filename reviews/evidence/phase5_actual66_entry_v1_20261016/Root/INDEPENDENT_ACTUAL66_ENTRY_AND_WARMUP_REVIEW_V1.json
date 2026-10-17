@@ -1,0 +1,101 @@
+{
+  "schema": "ROOT66_INDEPENDENT_ACTUAL_ENTRY_AND_WARMUP_REVIEW_V1",
+  "entry_readback": {
+    "utc": "2026-10-17T00:49:02.744941+00:00",
+    "entry": {
+      "schema": "FRESH66_PHYSICAL_BRAKING_FIRST_PROGRESS_SINGLE_USE_NATIVE_ENTRY_V1",
+      "utc": "2026-10-17T00:47:58.529964+00:00",
+      "driver_pid": 27399,
+      "preentry_sha256": "a84f5f7b0987bbeb49da244d65cfdd5ce6635ebe5c3a6c1f5fa05b62675c6bd2",
+      "preentry_age_seconds": 3.240077,
+      "runtime_plan_sha256": "dde59c9bf41d470251f6e37a639ddca1f143dde49350a1fcb1fc74abd452145d",
+      "profile_sha256": "deae005ff73b2cf17a3627fd5e7c5dd7a8bb7fda363443eb1798cf2e460c6511",
+      "ELF_sha256": "ad722b0adc8e736d82f2dc138131632452e5c334c5aba7c237ac3f2549d141a6",
+      "runtime_input_count": 1745,
+      "native_attempts": 1,
+      "automatic_retries": 0,
+      "execution_mode": "ONLINE_NO_OFFLINE_SUPERVISOR_QUEUE",
+      "all65_and_prior_failures_retained": true,
+      "scope": "Actual fresh66 only; original math/physical/SI/nonlinear/geometry/B/history/two2ms/C/stop/global counters remain; stricter physicalhot3G shares originalspent/tail. Entry is not completion/acceptance."
+    },
+    "startup_input_count": 1745,
+    "startup_before_SHA": "943ead308dee09b9389daf4046740413e02f4462248fd30a826f18138b85282f",
+    "plan_inputs_equal_startup": true,
+    "processes": [
+      {
+        "pid": 27399,
+        "argv": [
+          "/usr/bin/python3",
+          "-I",
+          "-S",
+          "-B",
+          "/home/codextransfer/predictive_motion/results/phase5/session-controlled-stop-first-command-interior-direct-mac-v1-20261016-attempt66/active_run_driver66_v1.py",
+          "/home/codextransfer/predictive_motion/results/phase5/session-controlled-stop-first-command-interior-direct-mac-v1-20261016-attempt66/active_run_plan66_v1.json"
+        ],
+        "stat": "27399 (python3) S 27398 27399 27399 0 -1 4194304 29306 0 1 0 19 9 0 0 20 0 1 0 8383975 50139136 9899 18446744073709551615 4325376 7352253 140726625855424 0 0 0 0 16781312 16386 1 0 0 17 10 0 0 0 0 0 10653128 12216448 563347456 140726625860754 140726625861098 140726625861098 140726625861607 0\n",
+        "parsed_state": "S",
+        "parsed_ppid": 27398,
+        "parsed_pgid": 27399,
+        "parsed_sid": 27399,
+        "parsed_startticks": 8383975
+      },
+      {
+        "pid": 27400,
+        "argv": [
+          "/home/codextransfer/predictive_motion/results/phase5/session-controlled-stop-first-command-interior-direct-mac-v1-20261016-attempt66/link-attempt1/active_first_cycle",
+          "/home/codextransfer/predictive_motion/results/phase5/session-controlled-stop-first-command-interior-direct-mac-v1-20261016-attempt66/profile-version1/active_input.json",
+          "deae005ff73b2cf17a3627fd5e7c5dd7a8bb7fda363443eb1798cf2e460c6511",
+          "ad722b0adc8e736d82f2dc138131632452e5c334c5aba7c237ac3f2549d141a6",
+          "/home/codextransfer/predictive_motion/results/phase5/session-controlled-stop-first-command-interior-direct-mac-v1-20261016-attempt66/run-attempt1/artifacts"
+        ],
+        "stat": "27400 (active_first_cy) R 27399 27400 27400 0 -1 4194304 287366 0 0 0 5056 80 0 0 20 0 1 0 8384014 592900096 130403 18446744073709551615 107328937279488 107328939164101 140726027108960 0 0 0 0 0 0 0 0 0 17 8 0 0 0 0 0 107328939486072 107328939495728 107329935511552 140726027111612 140726027112232 140726027112232 140726027112274 0\n",
+        "parsed_state": "R",
+        "parsed_ppid": 27399,
+        "parsed_pgid": 27400,
+        "parsed_sid": 27400,
+        "parsed_startticks": 8384014
+      }
+    ],
+    "top_artifact_names": [
+      "actual_step_journal.csv",
+      "actual_warmup.bin",
+      "cycle-0",
+      "cycle-1",
+      "cycle-2",
+      "cycle-3",
+      "cycle-4",
+      "cycle-5",
+      "cycle-6",
+      "cycle-7",
+      "cycle-8",
+      "journal_receipt.bin",
+      "model_open.bin",
+      "observation_before.bin"
+    ],
+    "whole_cycle_files": 8,
+    "expected_native_argv": [
+      "/home/codextransfer/predictive_motion/results/phase5/session-controlled-stop-first-command-interior-direct-mac-v1-20261016-attempt66/link-attempt1/active_first_cycle",
+      "/home/codextransfer/predictive_motion/results/phase5/session-controlled-stop-first-command-interior-direct-mac-v1-20261016-attempt66/profile-version1/active_input.json",
+      "deae005ff73b2cf17a3627fd5e7c5dd7a8bb7fda363443eb1798cf2e460c6511",
+      "ad722b0adc8e736d82f2dc138131632452e5c334c5aba7c237ac3f2549d141a6",
+      "/home/codextransfer/predictive_motion/results/phase5/session-controlled-stop-first-command-interior-direct-mac-v1-20261016-attempt66/run-attempt1/artifacts"
+    ]
+  },
+  "warmup_journal": {
+    "schema": "ROOT66_LIVE_ACTUAL_MODEL_WARMUP_RETURN_JOURNAL_V1",
+    "utc": "2026-10-17T00:50:04.142450+00:00",
+    "journal": "/home/codextransfer/predictive_motion/results/phase5/session-controlled-stop-first-command-interior-direct-mac-v1-20261016-attempt66/run-attempt1/artifacts/actual_step_journal.csv",
+    "bytes": 1813021,
+    "sha256": "eea9da2c74e5b8e20776e7e0df04e8926c9ab278117fcce5c9fb03ac16927313",
+    "rows": 3000,
+    "native_returned_steps": 1000,
+    "complete_actual_observation_geometry_steps": 1000,
+    "last_warmup_time_s": 2.0000000000000013,
+    "journal_before_after_stat_stable": true,
+    "task_commits_or_task_stop_not_counted_from_warmup": true,
+    "scope": "Actual warmup returned1000 physical2ms steps under current native process; stored journal observed while run continues, complete full evidence archive remains pending. Not task stopping or acceptance."
+  },
+  "all1745_startup_identities_exactly_match_frozen_plan": true,
+  "actual_native_argv_ELF_profile_and_process_identity_match": true,
+  "physical_stop_or_task_or_phase_acceptance": false
+}

@@ -1,0 +1,55 @@
+{
+  "schema": "FRESH66_FIRST_COMMAND_INTERIOR_SINGLE_USE_PREENTRY_V1",
+  "utc": "2026-10-17T00:47:55.288695+00:00",
+  "writer": "01a114d9-3a3a-7071-b94f-624581000992",
+  "runtime_input_count": 1745,
+  "all_runtime_inputs_stable": true,
+  "profile_sha256": "deae005ff73b2cf17a3627fd5e7c5dd7a8bb7fda363443eb1798cf2e460c6511",
+  "ELF_sha256": "ad722b0adc8e736d82f2dc138131632452e5c334c5aba7c237ac3f2549d141a6",
+  "runtime_plan_sha256": "dde59c9bf41d470251f6e37a639ddca1f143dde49350a1fcb1fc74abd452145d",
+  "driver_sha256": "15a49ee47f8c9f0355d075bfa42d07e22c4d0522f0b5931f06385299222970ab",
+  "layout_sha256": "1399b74de27842e13b6d1b4c90e0eee8f2b1f634c8a71e1403281c004f958b91",
+  "entry_wrapper_sha256": "1b23e18574408ce0165e84fe04448be1cd433bb716ca2f841d9dfa39f0f5c954",
+  "actual_volumes": [
+    {
+      "DeviceID": "C:",
+      "FreeSpace": 91783254016,
+      "Size": 488030334976
+    },
+    {
+      "DeviceID": "D:",
+      "FreeSpace": 87713984512,
+      "Size": 512098299904
+    }
+  ],
+  "D_build_stocks": [
+    {
+      "root": "/mnt/d/CodexTransfer/phase5-numeric-integration66-20261016-attempt1",
+      "bytes": 25741094,
+      "precharged": 100663296,
+      "compile_link_records": 12
+    },
+    {
+      "root": "/mnt/d/CodexTransfer/phase5-numeric-integration66-regression2-20261016",
+      "bytes": 928965,
+      "precharged": 33554432,
+      "compile_link_records": 2
+    }
+  ],
+  "V6_initializer_and_pure_regression_pass": true,
+  "old_bad_test_assertion_failure_preserved": true,
+  "Mac_readiness": {
+    "utc": "2026-10-17T00:47:23.610731+00:00",
+    "free_bytes": 189224034304,
+    "source_and_saved_scalar_independent_review_pass": true,
+    "real66_single_protocol_persisted_readback_pass": true,
+    "prepared_source_checkpoint": "886f2e825a3aa31d16277133ecd4c476e076a0ab",
+    "remote_master_independently_verified": true,
+    "ELF_persistent_Mac_SHA_verified": "ad722b0adc8e736d82f2dc138131632452e5c334c5aba7c237ac3f2549d141a6",
+    "scope": "Fresh bounded ONLINE66 readiness only; no accepted physical stop/full task/phase. Source/model/history/math/resource limits retained."
+  },
+  "active_native_processes": [],
+  "native66_not_entered": true,
+  "execution_mode": "ONLINE_NO_OFFLINE_SUPERVISOR_QUEUE",
+  "scope": "Fresh66 finite current maths/physical/stop limits unchanged. Entry qualification is not Model/fulltask/stop/phase acceptance; no old65 replay."
+}
