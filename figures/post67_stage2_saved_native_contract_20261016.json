@@ -1,0 +1,66 @@
+{
+  "schema": "POST67_TWO_FIXED_AFFINE_NATIVE_CANDIDATES_FIGURE_V1",
+  "native_stage1_review_SHA": "f7e09a38e46e0e18941b17cb746b0b23e4e86ebbfdf4ba401dd72dfc514adfca",
+  "stage2_vectors_capsule_SHA": "921622c93576b3aebdb27634b9182072ef4cc7c0b877f3897539b27721a43fb2",
+  "original_thresholds": {
+    "w": 1e-06,
+    "alpha": 0.0001
+  },
+  "every_point_in_two_declared_candidates_shown": true,
+  "records": [
+    {
+      "candidate": "Stage1: nominal center only",
+      "planned_command": 1,
+      "command_w_inf_rad_s": 4.320562087931237e-06,
+      "implied_alpha_inf_rad_s2": 0.0015499890168928028,
+      "w_limit": 1e-06,
+      "alpha_limit": 0.0001,
+      "both_command_thresholds_met": 0
+    },
+    {
+      "candidate": "Stage1: nominal center only",
+      "planned_command": 2,
+      "command_w_inf_rad_s": 5.047672175280003e-06,
+      "implied_alpha_inf_rad_s2": 0.0010803269771009272,
+      "w_limit": 1e-06,
+      "alpha_limit": 0.0001,
+      "both_command_thresholds_met": 0
+    },
+    {
+      "candidate": "Stage2: explicit 14-row prefix contract",
+      "planned_command": 1,
+      "command_w_inf_rad_s": 2.492633441132223e-07,
+      "implied_alpha_inf_rad_s2": 0.002567815993993643,
+      "w_limit": 1e-06,
+      "alpha_limit": 0.0001,
+      "both_command_thresholds_met": 0
+    },
+    {
+      "candidate": "Stage2: explicit 14-row prefix contract",
+      "planned_command": 2,
+      "command_w_inf_rad_s": 3.485249291547167e-07,
+      "implied_alpha_inf_rad_s2": 2.4815396260373593e-05,
+      "w_limit": 1e-06,
+      "alpha_limit": 0.0001,
+      "both_command_thresholds_met": 1
+    }
+  ],
+  "renderer_source": "import matplotlib\nmatplotlib.use('Agg')\nimport matplotlib.pyplot as plt\nimport io,csv\nold_review=json.loads((R/'reviews/evidence/post67_command_history_finite_unit_v1_20261016/ROOT_ACTUAL_NATIVE_REVIEW.json').read_text())\nold_points=next(p['first_two_commands']for p in old_review['reports']if p['case']==95)\nnew_points=reports[0]['first_two_commands'];fig,axes=plt.subplots(1,2,figsize=(11,4.9))\nseries=[('Stage1: nominal center only',old_points,'#b86b24','s'),('Stage2: explicit 14-row prefix contract',new_points,'#2769a5','o')]\nrows=[]\nfor label,points,color,marker in series:\n for ax,key,threshold in zip(axes,['w_inf','alpha_inf'],[1e-6,1e-4]):\n  ax.plot([1,2],[p[key]/threshold for p in points],color=color,marker=marker,linewidth=1.8,markersize=6,label=label)\n for p in points:rows.append({'candidate':label,'planned_command':p['command0']+1,'command_w_inf_rad_s':p['w_inf'],'implied_alpha_inf_rad_s2':p['alpha_inf'],'w_limit':1e-6,'alpha_limit':1e-4,'both_command_thresholds_met':int(p['w_below_stop']and p['alpha_below_stop'])})\nfor ax,title in zip(axes,['Accepted-command velocity / original 1e-6 rad/s limit','Implied command acceleration / original 1e-4 rad/s\u00b2 limit']):\n ax.axhline(1,color='#444',linestyle='--',linewidth=1);ax.set_yscale('symlog',linthresh=1);ax.set_ylim(bottom=0);ax.set_xticks([1,2]);ax.set_xlabel('Planned 4 ms command index (saved arithmetic)');ax.set_title(title,fontsize=10,loc='left');ax.grid(axis='y',alpha=.2);ax.spines[['top','right']].set_visible(False)\naxes[0].set_ylabel('Magnitude / original threshold (linear 0\u20131; log above 1)')\nfig.suptitle('Saved current95: command/history from actual native QP returns',x=.07,ha='left',fontsize=13)\nfig.legend(*axes[0].get_legend_handles_labels(),loc='upper left',bbox_to_anchor=(.06,.91),frameon=False,fontsize=9)\nfig.text(.07,.045,'All two-command points from both saved candidates. Stage1 still fails after command2; Stage2 meets both command thresholds there.\\nFixed ORIGINAL saved affine context; four cumulative native QP calls, zero Model/controller calls. No plot-generated solver run.\\nRecorded current progress is a saved input only: NOT online-integrated. No new nonlinear B400, physical C/stop, dwell50, task or phase acceptance.',fontsize=8)\nfig.subplots_adjust(left=.08,right=.985,top=.69,bottom=.25,wspace=.30)\nFIG={}\nfor ext in ['png','svg']:\n buf=io.BytesIO();fig.savefig(buf,format=ext,dpi=180,facecolor='white');FIG[ext]=buf.getvalue()\nplt.close(fig);buf=io.StringIO();cw=csv.DictWriter(buf,fieldnames=list(rows[0]));cw.writeheader();cw.writerows(rows);FIG['csv']=buf.getvalue().encode()\nprov={'schema':'POST67_TWO_FIXED_AFFINE_NATIVE_CANDIDATES_FIGURE_V1','native_stage1_review_SHA':hashlib.sha256((R/'reviews/evidence/post67_command_history_finite_unit_v1_20261016/ROOT_ACTUAL_NATIVE_REVIEW.json').read_bytes()).hexdigest(),'stage2_vectors_capsule_SHA':RESULT['source_and_vectors_capsule_SHA256'],'original_thresholds':{'w':1e-6,'alpha':1e-4},'every_point_in_two_declared_candidates_shown':True,'records':rows,'renderer_source':RENDER_SOURCE,'renderer_sha256':hashlib.sha256(RENDER_SOURCE.encode()).hexdigest(),'matplotlib':matplotlib.__version__,'scope':RESULT['scope'],'outputs':{k:{'bytes':len(v),'sha256':hashlib.sha256(v).hexdigest()}for k,v in FIG.items()}}\nFIG['json']=(json.dumps(prov,indent=2)+'\\n').encode()\nassert sum(map(len,FIG.values()))<=1024**2\n",
+  "renderer_sha256": "3666a160a3d68415ff0897bcae0a82c8103ac58af1d5fd83558bce2a3136f8d7",
+  "matplotlib": "3.10.3",
+  "scope": "Only fixed original saved-affine command/history contract after two commands. Current recorded progress is legal saved input only, circular for same-cycle online nominal; not integrated/released. No genuine Model, nonlinear B400, physical C/stop, dwell50, task/realtime/hardware/phase acceptance. All stage1 negatives and two stage2 startup failures retained.",
+  "outputs": {
+    "png": {
+      "bytes": 133918,
+      "sha256": "ed7e692bb0ce8fc02d36a93c1091bf58d5e0864bc0ac56b04399866478325d26"
+    },
+    "svg": {
+      "bytes": 93307,
+      "sha256": "f5f226a49aa898ee1421931632111b2edac0cdb880c66febfc9e755ed32d987b"
+    },
+    "csv": {
+      "bytes": 504,
+      "sha256": "d1d1f0974047102687a1a31969daa6ffb96119f556ee7cd7991fe620eee0c733"
+    }
+  }
+}
