@@ -1,0 +1,369 @@
+{
+  "schema": "CAUSAL_V21_FINAL_WRITER_PACKET_V1",
+  "utc": "2026-10-17T05:08:07.815056+00:00",
+  "functional_stage_closed": true,
+  "original_absolute_deadline_epoch": 1792213838.351211,
+  "all_actual_calls_finished_before_deadline": true,
+  "counts": {
+    "compiler": 4,
+    "linker": 2,
+    "pure_executable": 1,
+    "saved_native_QP": 0,
+    "Model": 0,
+    "controller68": 0
+  },
+  "state": "CORE_COMPILED_AND_CAUSAL_HELPER_PURE_PASS_MAIN_BUILD_FAILED_NOT_RELEASED",
+  "source104_capsule": {
+    "path": "/private/tmp/post67_causal_integration_unit_v1_20261017/EFFECTIVE_SOURCE104_CAPSULE.json",
+    "sha256": "a7a6d0ea1a9dbb079e88ee37b83f748ab9f665b499e3ebafed8e56c74f388683"
+  },
+  "all_D_input_final_checks": [
+    {
+      "plan": "BUILD_PLAN.json",
+      "pinned_input_count": 1973,
+      "all_final_SHA_and_bytes_equal": true
+    },
+    {
+      "plan": "BUILD_PLAN_CONTINUATION.json",
+      "pinned_input_count": 1975,
+      "all_final_SHA_and_bytes_equal": true
+    },
+    {
+      "plan": "BUILD_PLAN_PURE_FINAL.json",
+      "pinned_input_count": 1976,
+      "all_final_SHA_and_bytes_equal": true
+    },
+    {
+      "plan": "BUILD_PLAN_LINK_FINAL.json",
+      "pinned_input_count": 1976,
+      "all_final_SHA_and_bytes_equal": true
+    }
+  ],
+  "D_final_stocks": {
+    "build96": {
+      "bytes": 27631379,
+      "files": 168,
+      "cap": 100663296
+    },
+    "pure16": {
+      "bytes": 63947,
+      "files": 18,
+      "cap": 16777216
+    }
+  },
+  "D_aggregate_bytes": 27695326,
+  "D_aggregate_cap": 117440512,
+  "C_free": 86323347456,
+  "D_free": 215678775296,
+  "owned_compile_pure_native_processes_remaining": [],
+  "exact_actual_build_entries": [
+    {
+      "attempt": 1,
+      "complete": false,
+      "records": [
+        {
+          "kind": "compile",
+          "index": 1,
+          "exit": 0,
+          "error": null,
+          "outputs": [
+            {
+              "path": "/mnt/d/CodexTransfer/post67-causal-integration-v1-20261017/build96/targeted-build-attempt1/core.o",
+              "bytes": 824192,
+              "sha256": "90362c95045dfa134a2204e41cad044a16e704bc07c805c5f425c8f1b44f8a61",
+              "source": "anonymous memfd bounded by inherited RLIMIT_FSIZE and parent same precharge"
+            },
+            {
+              "path": "/mnt/d/CodexTransfer/post67-causal-integration-v1-20261017/build96/targeted-build-attempt1/core.d",
+              "bytes": 4126,
+              "sha256": "a9458973f9d4b21c3492e252c4d3de5754072f3283e8a8f2e07c5ebef6edd917",
+              "source": "anonymous memfd bounded by inherited RLIMIT_FSIZE and parent same precharge"
+            }
+          ]
+        },
+        {
+          "kind": "compile",
+          "index": 2,
+          "exit": 1,
+          "error": null,
+          "outputs": [
+            {
+              "path": "/mnt/d/CodexTransfer/post67-causal-integration-v1-20261017/build96/targeted-build-attempt1/main.o.failed-prefix",
+              "bytes": 632,
+              "sha256": "e31eb2dfa23e9e03fe1927764a041e0897e6112cc9fbe61a689fcb543f8b2069",
+              "source": "anonymous memfd bounded by inherited RLIMIT_FSIZE and parent same precharge"
+            },
+            {
+              "path": "/mnt/d/CodexTransfer/post67-causal-integration-v1-20261017/build96/targeted-build-attempt1/main.d.failed-prefix",
+              "bytes": 0,
+              "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+              "source": "anonymous memfd bounded by inherited RLIMIT_FSIZE and parent same precharge"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "attempt": 2,
+      "complete": false,
+      "records": [
+        {
+          "kind": "compile",
+          "index": 1,
+          "exit": 1,
+          "error": null,
+          "outputs": [
+            {
+              "path": "/mnt/d/CodexTransfer/post67-causal-integration-v1-20261017/build96/targeted-build-attempt2/main.o.failed-prefix",
+              "bytes": 632,
+              "sha256": "e31eb2dfa23e9e03fe1927764a041e0897e6112cc9fbe61a689fcb543f8b2069",
+              "source": "anonymous memfd bounded by inherited RLIMIT_FSIZE and parent same precharge"
+            },
+            {
+              "path": "/mnt/d/CodexTransfer/post67-causal-integration-v1-20261017/build96/targeted-build-attempt2/main.d.failed-prefix",
+              "bytes": 0,
+              "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+              "source": "anonymous memfd bounded by inherited RLIMIT_FSIZE and parent same precharge"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "attempt": 3,
+      "complete": false,
+      "records": [
+        {
+          "kind": "compile",
+          "index": 1,
+          "exit": 0,
+          "error": null,
+          "outputs": [
+            {
+              "path": "/mnt/d/CodexTransfer/post67-causal-integration-v1-20261017/build96/targeted-build-attempt3/pure.o",
+              "bytes": 152472,
+              "sha256": "fbfef408c2632a681ed34f7167cddbba0b33de440ec06d9ceb420bd6619ad852",
+              "source": "anonymous memfd bounded by inherited RLIMIT_FSIZE and parent same precharge"
+            },
+            {
+              "path": "/mnt/d/CodexTransfer/post67-causal-integration-v1-20261017/build96/targeted-build-attempt3/pure.d",
+              "bytes": 6601,
+              "sha256": "dcf3ecbac12883f3a36f61a82294fa6145fdc735f2dcdf06eac5d12292a6551a",
+              "source": "anonymous memfd bounded by inherited RLIMIT_FSIZE and parent same precharge"
+            }
+          ]
+        },
+        {
+          "kind": "link",
+          "index": 1,
+          "exit": 1,
+          "error": null,
+          "outputs": [
+            {
+              "path": "/mnt/d/CodexTransfer/post67-causal-integration-v1-20261017/build96/targeted-build-attempt3/causal68_pure_tests.failed-prefix",
+              "bytes": 228061,
+              "sha256": "f493ac97d1dee6c9738d17492dde6cbf0d19e1f4880a459b792400901ea6253f",
+              "source": "anonymous memfd bounded by inherited RLIMIT_FSIZE and parent same precharge"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "attempt": 4,
+      "complete": true,
+      "records": [
+        {
+          "kind": "link",
+          "index": 1,
+          "exit": 0,
+          "error": null,
+          "outputs": [
+            {
+              "path": "/mnt/d/CodexTransfer/post67-causal-integration-v1-20261017/build96/targeted-build-attempt4/causal68_pure_tests",
+              "bytes": 19868968,
+              "sha256": "2672a61bb41133f841666a228016ef0998cb4dc4c9937d31ff629ee9f14e266c",
+              "source": "anonymous memfd bounded by inherited RLIMIT_FSIZE and parent same precharge"
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "actual_pure": {
+    "schema": "SAVED66_JERK_INTERIOR_ACTUAL_HINT_NATIVE_REGRESSION_ANALYSIS3_V1",
+    "argv": [
+      "/mnt/d/CodexTransfer/post67-causal-integration-v1-20261017/build96/targeted-build-attempt4/causal68_pure_tests",
+      "/mnt/d/CodexTransfer/post67-causal-integration-v1-20261017/pure16/actual-entry-after-input-binding-repair/actual-pure-output",
+      "/mnt/d/CodexTransfer/post67-command-history-v1-20261016/saved64/fixture32.bin",
+      "/mnt/d/CodexTransfer/post67-command-history-v1-20261016/saved64/fixture95.bin"
+    ],
+    "exit": 0,
+    "failure": null,
+    "wall": 0.3771410229965113,
+    "before": [
+      {
+        "path": "/mnt/d/CodexTransfer/post67-causal-integration-v1-20261017/build96/targeted-build-attempt4/causal68_pure_tests",
+        "bytes": 19868968,
+        "sha256": "2672a61bb41133f841666a228016ef0998cb4dc4c9937d31ff629ee9f14e266c"
+      },
+      {
+        "path": "/mnt/d/CodexTransfer/post67-causal-integration-v1-20261017/build96/source/causal68_pure_tests.cpp",
+        "bytes": 7526,
+        "sha256": "cf1292ec5057c2c2b0e5c0dd13fb508458f36349f177a844ac78ed90384ac6a7"
+      },
+      {
+        "path": "/mnt/d/CodexTransfer/post67-causal-integration-v1-20261017/build96/source/causal_braking68.hpp",
+        "bytes": 5845,
+        "sha256": "fcb2a5c8f3c31c8f54e01f327da4b83d373b98390a7e19604428a565075a496b"
+      },
+      {
+        "path": "/mnt/d/CodexTransfer/post67-causal-integration-v1-20261017/build96/source/causal_braking_codec68.hpp",
+        "bytes": 3661,
+        "sha256": "69ed78045327452fa5a93f8c207cf7821ecf3fc08d7096f2c611586fccac38f7"
+      },
+      {
+        "path": "/mnt/d/CodexTransfer/post67-command-history-v1-20261016/saved64/fixture32.bin",
+        "bytes": 10059384,
+        "sha256": "b73558847e804543b150a475e1d073deeb8eefa3f13d84e008f32d2805d7a0a6"
+      },
+      {
+        "path": "/mnt/d/CodexTransfer/post67-command-history-v1-20261016/saved64/fixture95.bin",
+        "bytes": 10099368,
+        "sha256": "5b2abf90a13b6e5500ec8f02230ee726bf110f30e82ee04e79f4502d53928f01"
+      }
+    ],
+    "after": [
+      {
+        "path": "/mnt/d/CodexTransfer/post67-causal-integration-v1-20261017/build96/targeted-build-attempt4/causal68_pure_tests",
+        "bytes": 19868968,
+        "sha256": "2672a61bb41133f841666a228016ef0998cb4dc4c9937d31ff629ee9f14e266c"
+      },
+      {
+        "path": "/mnt/d/CodexTransfer/post67-causal-integration-v1-20261017/build96/source/causal68_pure_tests.cpp",
+        "bytes": 7526,
+        "sha256": "cf1292ec5057c2c2b0e5c0dd13fb508458f36349f177a844ac78ed90384ac6a7"
+      },
+      {
+        "path": "/mnt/d/CodexTransfer/post67-causal-integration-v1-20261017/build96/source/causal_braking68.hpp",
+        "bytes": 5845,
+        "sha256": "fcb2a5c8f3c31c8f54e01f327da4b83d373b98390a7e19604428a565075a496b"
+      },
+      {
+        "path": "/mnt/d/CodexTransfer/post67-causal-integration-v1-20261017/build96/source/causal_braking_codec68.hpp",
+        "bytes": 3661,
+        "sha256": "69ed78045327452fa5a93f8c207cf7821ecf3fc08d7096f2c611586fccac38f7"
+      },
+      {
+        "path": "/mnt/d/CodexTransfer/post67-command-history-v1-20261016/saved64/fixture32.bin",
+        "bytes": 10059384,
+        "sha256": "b73558847e804543b150a475e1d073deeb8eefa3f13d84e008f32d2805d7a0a6"
+      },
+      {
+        "path": "/mnt/d/CodexTransfer/post67-command-history-v1-20261016/saved64/fixture95.bin",
+        "bytes": 10099368,
+        "sha256": "5b2abf90a13b6e5500ec8f02230ee726bf110f30e82ee04e79f4502d53928f01"
+      }
+    ],
+    "inputs_before_after_equal": true,
+    "stdout": "case=32,eligible=0,original_attempts=1057,causal_attempts=1057,progress_bitexact=1,retry1_2_bitexact=1\ncase=95,eligible=1,original_attempts=925,causal_attempts=8,progress_bitexact=1,retry1_2_bitexact=1\nPASS pure original32/95 causal-prefix/progress/retry/dynamic14/empty/native-return-refusal/codec/inventory; zeroQP zeroModel zeroController\n",
+    "stderr": "",
+    "outputs": [
+      {
+        "path": "/mnt/d/CodexTransfer/post67-causal-integration-v1-20261017/pure16/actual-entry-after-input-binding-repair/BEFORE_CHILD.json",
+        "bytes": 1938,
+        "sha256": "48dc76a6b2262fdb31b2641f503da202e3fe97056fdc301c47e93d0303d5a922"
+      },
+      {
+        "path": "/mnt/d/CodexTransfer/post67-causal-integration-v1-20261017/pure16/actual-entry-after-input-binding-repair/regression.stderr",
+        "bytes": 0,
+        "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+      },
+      {
+        "path": "/mnt/d/CodexTransfer/post67-causal-integration-v1-20261017/pure16/actual-entry-after-input-binding-repair/regression.stdout",
+        "bytes": 342,
+        "sha256": "bb0a9a33e4932ae87dbda8da0e87cc961b257d258f409c08f533f5c7654ee03d"
+      }
+    ],
+    "no_Model_or_controller68": true,
+    "saved_native_QP_calls": 0,
+    "actual_pure_entries": 1,
+    "original_inputs_unmodified": true
+  },
+  "numeric_lifetime_proof": {
+    "schema": "CAUSAL_V21_ACTUAL_SOURCE_LIFETIME_PROOF_V2",
+    "prospective_proof_preserved": "PROSPECTIVE_NUMERIC_LIFETIME_PROOF.json",
+    "correction": "256 is relative extra outside-hint scratch ceiling, NOT total nominal helper scratch; nonelided worst-case original/new nominal scratch covered by original2048 per build.",
+    "old_full_nominal_objects": {
+      "next20x8": 160,
+      "target7_in_build_and_codec": 14,
+      "Diagnostics42_caller_callee_and_return_copy": 126,
+      "family20_base_shape_output_and_nonelided_output": 80,
+      "doublehat_base_a_b_and_candidate_return": 80,
+      "Check8_copies3": 24,
+      "Attempt13_argument_and_emit_copy": 26,
+      "loop_score_rate_state_scratch_ceiling": 128
+    },
+    "old_full_nominal_total_upper": 638,
+    "new_eligible_nominal_objects": {
+      "new160_array": 0,
+      "Diagnostics42_caller_callee_build_and_return_copies4": 168,
+      "joint_prefix20": 20,
+      "family_progress_base_shape_output_and_copy4x20": 80,
+      "Check8_copies3": 24,
+      "Attempt13_copies2": 26,
+      "sequential_scalar_extra_ceiling": 128
+    },
+    "new_eligible_nominal_total_upper": 446,
+    "nominal_reservation": 2048,
+    "extra_outside_hint_objects": {
+      "shared_predicate_temporaries": 24,
+      "sequential_joint_prefix20_Check8_Argument13_and_scratch": 64,
+      "one_intersection_FirstBounds_contract_prepare_and_scalars": 64,
+      "native_returned_contract_temporaries": 16,
+      "codec_flags": 2
+    },
+    "relative_extra_reserved": 256,
+    "new_stores_alive_at_hint": 0,
+    "hint_inventory": 744998,
+    "hint_cap": 745000,
+    "outside_inventory_upper": 724582,
+    "trial_precharge": 256,
+    "maximum_trials": 176,
+    "whole_numeric_upper": 1799733498,
+    "whole_cap": 1800000000,
+    "diagnostic_scalar_slots": 44,
+    "diagnostic_cap": 48,
+    "actual_new_V6_scope_UTF8": 504,
+    "header_upper": 4048,
+    "header_cap": 4096,
+    "codec_file_cap": 131072,
+    "codec_slots": 24,
+    "Inputs_new_fields": 0,
+    "new_banks": 0,
+    "acceleration_design": "No trustworthy shared a field; eligibility omits a explicitly; original physical a<=.001 and dwell50 remain mandatory.",
+    "isolated_pure_baseline": "Saved67 state/history/warm/recorded retry vectors32/95 are real. Old-family comparison uses declared valid zero-offset baseline; not complete actual67 nominal replay.",
+    "proof_draft_failure_retained": "An in-memory tally assertion first used638 as738; no file emitted. This actual proof calculates sums from per-object dictionaries instead of hand subtotal."
+  },
+  "data_capsule": {
+    "path": "/private/tmp/post67_causal_integration_unit_v1_20261017/FINAL_DELL_SOURCE_BUILD_PURE_CAPSULE.json",
+    "bytes": 9215391,
+    "sha256": "cecca81e792359b1f6835f5021fed3efff6445c5938141ebe285c88075c1a2cd"
+  },
+  "limitations": [
+    "Main failed O2 and O0 under inherited1GiB compile AS. Root independently verified old successful67 compiler had2GiB AS/CPU120, while this smaller reused saved-study driver was1GiB/CPU90. This configured virtual limit mismatch is confirmed; actual peak memory and physical RAM insufficiency are UNKNOWN. No fifthcompile or AS expansion in this unit.",
+    "Core compiled O2 and pure compiled O2. Firstpure link missed Evidence dependency symbols, second exact-frozen originalmain dependency closure replaced main.o with successfulpure.o; true2links retained. No full new controller ELF.",
+    "The first pure orchestration failed before child on stale oldpath input binding; reservation and error retained. Exactly one actual pure executable later ran and passed; no rerun after process entry.",
+    "Pure uses actual67 state/history/currentwarm/recorded retry32/95 but an isolated explicitly declared valid zero-offset baseline for oldfamily comparison. Progress bitexact and sharedsource wiring proved; no claim of complete actual67 original nominal replay.",
+    "Eligibility explicitly does not check unavailable trustworthy shared actual acceleration. Original physicala<=.001/dwell50 unchanged. No copied Inputs flags/banks.",
+    "V6 codec marks joint summary133=N/A doublehat, attemptfamily0 denotes causal scalarprefix. V10planningguard first7 inward proof uses actual intersected bounds; actual14scaledbounds remain in original reduction fields. OldV5/source unchanged.",
+    "No genuine Model forecast/geometry B400/physical C/stop/whole-task/realtime/phase acceptance. Phase5 NOT_ACCEPTED/Phase6 NOT_STARTED; 68 not released.",
+    "Live D free space increased relative initial snapshot; writer performed no deletion/cleanup/WSL setting change. C remains below originalsame-volume controller entry gate; no runtime release inferred."
+  ],
+  "Mac_stock_before_packet": {
+    "records": 52,
+    "charged": 13487410,
+    "cap": 100663296
+  },
+  "next": "Root independent source/codec/build/pure review and same-scope public checkpoint backup/remoteSHA. FullMain compile recovery needs a separately bounded future scope restoring proven originalcompiler envelope, not another current compile."
+}

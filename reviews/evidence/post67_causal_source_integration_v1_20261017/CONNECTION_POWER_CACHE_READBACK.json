@@ -1,0 +1,34 @@
+{
+  "schema": "ROOT_LIVE_CONNECTION_POWER_AND_NARROW_CACHE_READBACK_V1",
+  "readback_utc_window": "2026-10-17T04:55Z..04:57Z",
+  "original_fixed_key_ssh_actual_command_exit": 0,
+  "sshd_service": "codextransfer-sshd active; generic ssh unit inactive",
+  "Mac_AC": {
+    "sleep_minutes": 0,
+    "displaysleep_minutes": 0,
+    "PreventUserIdleSystemSleep": 1,
+    "PreventSystemSleep": 0
+  },
+  "Dell_powercfg": {
+    "AC_STANDBYIDLE_seconds": 0,
+    "AC_HIBERNATEIDLE_seconds": 0,
+    "DC_STANDBYIDLE_seconds": 3600,
+    "DC_HIBERNATEIDLE_raw": "0x7fffffff"
+  },
+  "settings_changed": false,
+  "long_term_lid_or_link_stability_proved": false,
+  "cache_authorization_scope": "/private/tmp/root54_matplotlib_deps_v1_20261015/**/__pycache__/*.pyc only",
+  "matching_cache_files": 0,
+  "deleted_files": 0,
+  "deleted_bytes": 0,
+  "other_cleanup": false,
+  "live_storage_bytes": {
+    "C_available": 86325125120,
+    "D_available": 87565176832,
+    "per_volume_source_unit_reserve": 85899345920,
+    "controller_C_minimum": 89254789120,
+    "controller_C_shortfall": 2929664000
+  },
+  "controller68_entry_released": false,
+  "old55_consumed": "Do not replay; current actual is67. Connection/power/cache readback does not reset any old ID/counter/manualwait or prove stopping."
+}

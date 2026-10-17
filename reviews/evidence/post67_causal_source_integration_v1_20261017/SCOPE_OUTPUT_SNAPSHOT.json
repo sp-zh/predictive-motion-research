@@ -1,0 +1,539 @@
+{
+  "schema": "CLOSED_FUNCTIONAL_UNIT_ALLOCATION_SNAPSHOT_V1",
+  "cap_bytes": 100663296,
+  "record_cap": 96,
+  "charged_before_this_snapshot": 47126493,
+  "records_before_this_snapshot": 59,
+  "functional_counts": {
+    "compile": 4,
+    "link": 2,
+    "pure": 1,
+    "new_QP": 0,
+    "Model": 0,
+    "controller68": 0
+  },
+  "functional_stage_closed": true,
+  "new_functional_work_after_deadline": false,
+  "remaining_writes": "Only necessary evidence preservation and Git remote receipt; no new source/test under this scope.",
+  "old_closed_ledgers_unchanged": true,
+  "archive_charged_once_under_part_path_then_same_inode_atomic_rename": true,
+  "all_outputs": [
+    {
+      "path": "/private/tmp/post67_causal_integration_unit_v1_20261017/LEDGER.json",
+      "category": "control",
+      "charged_bytes": 262144
+    },
+    {
+      "path": "/private/tmp/post67_causal_integration_unit_v1_20261017/LEDGER.next",
+      "category": "control",
+      "charged_bytes": 262144
+    },
+    {
+      "path": "/private/tmp/post67_causal_integration_unit_v1_20261017/LOCK",
+      "category": "control",
+      "charged_bytes": 0
+    },
+    {
+      "path": "/private/tmp/post67_causal_integration_unit_v1_20261017/ALLOCATION.json",
+      "category": "bootstrap",
+      "charged_bytes": 2252,
+      "actual_bytes": 2252,
+      "sha256": "2d1e1fc77342d82214115e0b941ac6decd7cdb950c704c51024f14e43b394817",
+      "precharged": true
+    },
+    {
+      "path": "/private/tmp/post67_causal_integration_unit_v1_20261017/bounded_output.py",
+      "category": "bootstrap",
+      "charged_bytes": 3054,
+      "actual_bytes": 3054,
+      "sha256": "3ac54602d15f66dfd5d9eac7457d3eb268c595334e083cbfe6fdb6e939cfa4f8",
+      "precharged": true
+    },
+    {
+      "path": "/private/tmp/post67_causal_integration_unit_v1_20261017/ROOT_BEFORE_SOURCE_REVIEW.json",
+      "category": "preparation",
+      "charged_bytes": 4077,
+      "actual_bytes": 4077,
+      "sha256": "48899378b48f597d0b95b886188c2cb93f205d5cc53cbe6f41978e6bd73fc999",
+      "precharged": true,
+      "failed_charge_retained": true
+    },
+    {
+      "path": "/private/tmp/post67_causal_integration_unit_v1_20261017/PROSPECTIVE_NUMERIC_LIFETIME_PROOF.json",
+      "category": "preparation",
+      "charged_bytes": 2933,
+      "actual_bytes": 2933,
+      "sha256": "70044d67d0bde4069a9aa2ae24014705f7a9f6ad1cf3c67c652746f5277ad8cc",
+      "precharged": true,
+      "failed_charge_retained": true
+    },
+    {
+      "path": "/private/tmp/post67_causal_integration_unit_v1_20261017/ROOT_CONNECTION_POWER_CACHE_READBACK.json",
+      "category": "preparation",
+      "charged_bytes": 1273,
+      "actual_bytes": 1273,
+      "sha256": "4168398679e1fefd7289f9f85da5b106804014189dc1c4fa084ce3fee2ac2d1a",
+      "precharged": true,
+      "failed_charge_retained": true
+    },
+    {
+      "path": "/private/tmp/post67_causal_integration_unit_v1_20261017/source/causal_braking68.hpp",
+      "category": "preparation",
+      "charged_bytes": 5279,
+      "actual_bytes": 5279,
+      "sha256": "87924ddc6e9dad0a99e04138cc0b5c4c8d048e02cbad6a5cd854e6b81ffe4e92",
+      "precharged": true,
+      "failed_charge_retained": true
+    },
+    {
+      "path": "/private/tmp/post67_causal_integration_unit_v1_20261017/source/causal_braking_codec68.hpp",
+      "category": "preparation",
+      "charged_bytes": 3611,
+      "actual_bytes": 3611,
+      "sha256": "bbcbf5c3f2e2e31fa8dc7ca67955472d490c1ce647a0570ef51031712d91c563",
+      "precharged": true,
+      "failed_charge_retained": true
+    },
+    {
+      "path": "/private/tmp/post67_causal_integration_unit_v1_20261017/source/active_first_cycle.cpp",
+      "category": "preparation",
+      "charged_bytes": 66650,
+      "actual_bytes": 66650,
+      "sha256": "6c2146b1e8fd3eb86724210c1e2cdbc77e59704f3b18c78d56247edb4446103b",
+      "precharged": true,
+      "failed_charge_retained": true
+    },
+    {
+      "path": "/private/tmp/post67_causal_integration_unit_v1_20261017/source/integrated_horizon_qp.cpp",
+      "category": "preparation",
+      "charged_bytes": 166672,
+      "actual_bytes": 166672,
+      "sha256": "df43966383814f7e365ff611ad8611339c3bb183007260c7efa01320ad5e3c10",
+      "precharged": true,
+      "failed_charge_retained": true
+    },
+    {
+      "path": "/private/tmp/post67_causal_integration_unit_v1_20261017/source_v2/causal_braking68.hpp",
+      "category": "preparation",
+      "charged_bytes": 5612,
+      "actual_bytes": 5612,
+      "sha256": "473122697a2f42afceaf7a128001f564ee5ffb58b5d1e8d2342377eda1363db6",
+      "precharged": true,
+      "failed_charge_retained": true
+    },
+    {
+      "path": "/private/tmp/post67_causal_integration_unit_v1_20261017/causal68_pure_tests.cpp",
+      "category": "preparation",
+      "charged_bytes": 7526,
+      "actual_bytes": 7526,
+      "sha256": "cf1292ec5057c2c2b0e5c0dd13fb508458f36349f177a844ac78ed90384ac6a7",
+      "precharged": true,
+      "failed_charge_retained": true
+    },
+    {
+      "path": "/private/tmp/post67_causal_integration_unit_v1_20261017/source_v3/causal_braking68.hpp",
+      "category": "preparation",
+      "charged_bytes": 5845,
+      "actual_bytes": 5845,
+      "sha256": "fcb2a5c8f3c31c8f54e01f327da4b83d373b98390a7e19604428a565075a496b",
+      "precharged": true,
+      "failed_charge_retained": true
+    },
+    {
+      "path": "/private/tmp/post67_causal_integration_unit_v1_20261017/source_v3/causal_braking_codec68.hpp",
+      "category": "preparation",
+      "charged_bytes": 3661,
+      "actual_bytes": 3661,
+      "sha256": "69ed78045327452fa5a93f8c207cf7821ecf3fc08d7096f2c611586fccac38f7",
+      "precharged": true,
+      "failed_charge_retained": true
+    },
+    {
+      "path": "/private/tmp/post67_causal_integration_unit_v1_20261017/source_v3/active_first_cycle.cpp",
+      "category": "preparation",
+      "charged_bytes": 67505,
+      "actual_bytes": 67505,
+      "sha256": "5405ea269875a0c2fd381ba65bbdc8aa29760a970d726ff7c585397ca7e76776",
+      "precharged": true,
+      "failed_charge_retained": true
+    },
+    {
+      "path": "/private/tmp/post67_causal_integration_unit_v1_20261017/stage_build_v21.py",
+      "category": "preparation",
+      "charged_bytes": 5981,
+      "actual_bytes": 5981,
+      "sha256": "3abd7d228a45083b779e86fcbef98b775d549d657248446b30e3a01ebf7aabf7",
+      "precharged": true,
+      "failed_charge_retained": true
+    },
+    {
+      "path": "/private/tmp/post67_causal_integration_unit_v1_20261017/PINNED_OLD_BUILD_PLAN.json",
+      "category": "preparation",
+      "charged_bytes": 606125,
+      "actual_bytes": 606125,
+      "sha256": "b322ff9e39e20257652833217c212cfa61a3e92b3638e785f2fc803c99a509c3",
+      "precharged": true,
+      "failed_charge_retained": true
+    },
+    {
+      "path": "/private/tmp/post67_causal_integration_unit_v1_20261017/EFFECTIVE_SOURCE104_CAPSULE.json",
+      "category": "preparation",
+      "charged_bytes": 1180448,
+      "actual_bytes": 1180448,
+      "sha256": "a7a6d0ea1a9dbb079e88ee37b83f748ab9f665b499e3ebafed8e56c74f388683",
+      "precharged": true,
+      "failed_charge_retained": true
+    },
+    {
+      "path": "/private/tmp/post67_causal_integration_unit_v1_20261017/build_driver_v21.py",
+      "category": "preparation",
+      "charged_bytes": 8630,
+      "actual_bytes": 8630,
+      "sha256": "c789ce8621cfbf9950011045b4e8ef0c6a04434c7bb20db36c767a5f0c28d98a",
+      "precharged": true,
+      "failed_charge_retained": true
+    },
+    {
+      "path": "/private/tmp/post67_causal_integration_unit_v1_20261017/STAGING_RESPONSE.json",
+      "category": "preparation",
+      "charged_bytes": 305,
+      "actual_bytes": 305,
+      "sha256": "f7684b754485f0b93c4dd9b2ec99e7e2a925d13876901a0e3cefbace5e7fdfdc",
+      "precharged": true,
+      "failed_charge_retained": true
+    },
+    {
+      "path": "/private/tmp/post67_causal_integration_unit_v1_20261017/ROOT_104_SOURCE_BOUNDARY_REVIEW.json",
+      "category": "preparation",
+      "charged_bytes": 817,
+      "actual_bytes": 817,
+      "sha256": "3c64a8fbeda6bc6411e03374d7f86c427128efa9ba19e8dae469cc292cd85e1a",
+      "precharged": true,
+      "failed_charge_retained": true
+    },
+    {
+      "path": "/Users/uot/Documents/ChatGPT/ros/tools/phase5_controlled_stop_session_v21/active_first_cycle.cpp",
+      "category": "preparation",
+      "charged_bytes": 67505,
+      "actual_bytes": 67505,
+      "sha256": "5405ea269875a0c2fd381ba65bbdc8aa29760a970d726ff7c585397ca7e76776",
+      "precharged": true,
+      "failed_charge_retained": true
+    },
+    {
+      "path": "/Users/uot/Documents/ChatGPT/ros/tools/phase5_controlled_stop_session_v21/integrated_horizon_qp.cpp",
+      "category": "preparation",
+      "charged_bytes": 166672,
+      "actual_bytes": 166672,
+      "sha256": "df43966383814f7e365ff611ad8611339c3bb183007260c7efa01320ad5e3c10",
+      "precharged": true,
+      "failed_charge_retained": true
+    },
+    {
+      "path": "/Users/uot/Documents/ChatGPT/ros/tools/phase5_controlled_stop_session_v21/causal_braking68.hpp",
+      "category": "preparation",
+      "charged_bytes": 5845,
+      "actual_bytes": 5845,
+      "sha256": "fcb2a5c8f3c31c8f54e01f327da4b83d373b98390a7e19604428a565075a496b",
+      "precharged": true,
+      "failed_charge_retained": true
+    },
+    {
+      "path": "/Users/uot/Documents/ChatGPT/ros/tools/phase5_controlled_stop_session_v21/causal_braking_codec68.hpp",
+      "category": "preparation",
+      "charged_bytes": 3661,
+      "actual_bytes": 3661,
+      "sha256": "69ed78045327452fa5a93f8c207cf7821ecf3fc08d7096f2c611586fccac38f7",
+      "precharged": true,
+      "failed_charge_retained": true
+    },
+    {
+      "path": "/Users/uot/Documents/ChatGPT/ros/tools/phase5_controlled_stop_session_v21/EFFECTIVE_SOURCE104_CAPSULE.json",
+      "category": "preparation",
+      "charged_bytes": 1180448,
+      "actual_bytes": 1180448,
+      "sha256": "a7a6d0ea1a9dbb079e88ee37b83f748ab9f665b499e3ebafed8e56c74f388683",
+      "precharged": true,
+      "failed_charge_retained": true
+    },
+    {
+      "path": "/private/tmp/post67_causal_integration_unit_v1_20261017/build_driver_continuation_v21.py",
+      "category": "preparation",
+      "charged_bytes": 8638,
+      "actual_bytes": 8638,
+      "sha256": "69fd232fd8521f645bf85b78e38eafa1055d6d8bcca971415ec725262ad832fe",
+      "precharged": true,
+      "failed_charge_retained": true
+    },
+    {
+      "path": "/private/tmp/post67_causal_integration_unit_v1_20261017/CONTINUATION_STAGING_RESPONSE.json",
+      "category": "preparation",
+      "charged_bytes": 638,
+      "actual_bytes": 638,
+      "sha256": "ea4471f4cef59627fb7e01ff05ce9bc70fea31bb0b92df1fd322c238c88a3c4e",
+      "precharged": true,
+      "failed_charge_retained": true
+    },
+    {
+      "path": "/Users/uot/Documents/ChatGPT/ros/tools/phase5_controlled_stop_session_v21/materialize_source.py",
+      "category": "preparation",
+      "charged_bytes": 1827,
+      "actual_bytes": 1827,
+      "sha256": "7806d08a9b9a5a16ae0776c54a938e0c0d5e8d2d2989f5c33217bd2f56ac28c3",
+      "precharged": true,
+      "failed_charge_retained": true
+    },
+    {
+      "path": "/Users/uot/Documents/ChatGPT/ros/tools/phase5_controlled_stop_session_v21/causal68_pure_tests.cpp",
+      "category": "preparation",
+      "charged_bytes": 7526,
+      "actual_bytes": 7526,
+      "sha256": "cf1292ec5057c2c2b0e5c0dd13fb508458f36349f177a844ac78ed90384ac6a7",
+      "precharged": true,
+      "failed_charge_retained": true
+    },
+    {
+      "path": "/private/tmp/post67_causal_integration_unit_v1_20261017/build_driver_pure_final_v21.py",
+      "category": "preparation",
+      "charged_bytes": 8639,
+      "actual_bytes": 8639,
+      "sha256": "51ecc2ed24cbf0e5ec7e88f9be52543fbaade2771ca6bcc24c585f9878e6d6a4",
+      "precharged": true,
+      "failed_charge_retained": true
+    },
+    {
+      "path": "/private/tmp/post67_causal_integration_unit_v1_20261017/FINAL_PURE_STAGING_RESPONSE.json",
+      "category": "preparation",
+      "charged_bytes": 244,
+      "actual_bytes": 244,
+      "sha256": "3e158bbdefe2919410a677c164e3213822bae4aaeb538c17690333f41c52ad4a",
+      "precharged": true,
+      "failed_charge_retained": true
+    },
+    {
+      "path": "/private/tmp/post67_causal_integration_unit_v1_20261017/build_driver_link_final_v21.py",
+      "category": "preparation",
+      "charged_bytes": 8644,
+      "actual_bytes": 8644,
+      "sha256": "5fbd32a9fbc59442a710c1ce448cea3e08fe80874c05b6a0a90b10320384a946",
+      "precharged": true,
+      "failed_charge_retained": true
+    },
+    {
+      "path": "/private/tmp/post67_causal_integration_unit_v1_20261017/FINAL_LINK_STAGING_RESPONSE.json",
+      "category": "preparation",
+      "charged_bytes": 311,
+      "actual_bytes": 311,
+      "sha256": "2b6cb9274a84422a0c0bc197f49b76e1e61cd8439ef62b396b5192d002fc8609",
+      "precharged": true,
+      "failed_charge_retained": true
+    },
+    {
+      "path": "/private/tmp/post67_causal_integration_unit_v1_20261017/ACTUAL_SOURCE_NUMERIC_LIFETIME_PROOF_V2.json",
+      "category": "preparation",
+      "charged_bytes": 2454,
+      "actual_bytes": 2454,
+      "sha256": "81e238253d93bf8186abb380a0244b09c30fd8498a13694041b6ae7c0326b281",
+      "precharged": true,
+      "failed_charge_retained": true
+    },
+    {
+      "path": "/private/tmp/post67_causal_integration_unit_v1_20261017/ROOT_BUILD_FAILURE_AND_BASELINE_READBACK.json",
+      "category": "preparation",
+      "charged_bytes": 43812,
+      "actual_bytes": 43812,
+      "sha256": "c23a67d4272bbcd56ffe03022626daeb3330ff28ee76ec80d3aceb21523bca67",
+      "precharged": true,
+      "failed_charge_retained": true
+    },
+    {
+      "path": "/private/tmp/post67_causal_integration_unit_v1_20261017/PURE_REMOTE_DRIVER_V1.py",
+      "category": "preparation",
+      "charged_bytes": 4494,
+      "actual_bytes": 4494,
+      "sha256": "9f2e31c0502d5cf7cb744100774b812baf4b3c9cf3a8691d1ba657d29deedfe7",
+      "precharged": true,
+      "failed_charge_retained": true
+    },
+    {
+      "path": "/private/tmp/post67_causal_integration_unit_v1_20261017/ACTUAL_PURE_RESPONSE.json",
+      "category": "final",
+      "charged_bytes": 532,
+      "actual_bytes": 532,
+      "sha256": "4470adaa3bd883c3d98b56f1476e094914362f961dd2f23fd73f59cfa78bd851",
+      "precharged": true,
+      "failed_charge_retained": true
+    },
+    {
+      "path": "/private/tmp/post67_causal_integration_unit_v1_20261017/PURE_REMOTE_DRIVER_V2.py",
+      "category": "preparation",
+      "charged_bytes": 4343,
+      "actual_bytes": 4343,
+      "sha256": "44cdd716b334c11910ac95ce00c7c4616ec9c4ffd65266a64a9ed80eea496cbb",
+      "precharged": true,
+      "failed_charge_retained": true
+    },
+    {
+      "path": "/private/tmp/post67_causal_integration_unit_v1_20261017/ACTUAL_PURE_RESPONSE_V2.json",
+      "category": "final",
+      "charged_bytes": 4466,
+      "actual_bytes": 4466,
+      "sha256": "7abee047c197bbd378fa1b1e4a12236011c21b0624a768832b5de7dec3173805",
+      "precharged": true,
+      "failed_charge_retained": true
+    },
+    {
+      "path": "/private/tmp/post67_causal_integration_unit_v1_20261017/ROOT_COMPILER_FAILURE_CAUSE_REVIEW.json",
+      "category": "preparation",
+      "charged_bytes": 2280,
+      "actual_bytes": 2280,
+      "sha256": "b5e097617e698badd1b71a2fd54cfb59d462878df7e69f62ee6f1f6d9279c2aa",
+      "precharged": true,
+      "failed_charge_retained": true
+    },
+    {
+      "path": "/private/tmp/post67_causal_integration_unit_v1_20261017/FINAL_DELL_SOURCE_BUILD_PURE_CAPSULE.json",
+      "category": "final",
+      "charged_bytes": 9215391,
+      "actual_bytes": 9215391,
+      "sha256": "cecca81e792359b1f6835f5021fed3efff6445c5938141ebe285c88075c1a2cd",
+      "precharged": true,
+      "failed_charge_retained": true
+    },
+    {
+      "path": "/private/tmp/post67_causal_integration_unit_v1_20261017/ROOT_SOURCE_AND_PURE_REVIEW.json",
+      "category": "preparation",
+      "charged_bytes": 10812,
+      "actual_bytes": 10812,
+      "sha256": "1b8b2a4dcaf1f3cd6d781dc712b739fd6475dec27a2a3a0c2468d2971860d912",
+      "precharged": true,
+      "failed_charge_retained": true
+    },
+    {
+      "path": "/Users/uot/Documents/ChatGPT/ros/reviews/evidence/post67_causal_source_integration_v1_20261017/ALLOCATION.json",
+      "category": "preparation",
+      "charged_bytes": 2252,
+      "actual_bytes": 2252,
+      "sha256": "2d1e1fc77342d82214115e0b941ac6decd7cdb950c704c51024f14e43b394817",
+      "precharged": true,
+      "failed_charge_retained": true
+    },
+    {
+      "path": "/Users/uot/Documents/ChatGPT/ros/reviews/evidence/post67_causal_source_integration_v1_20261017/ROOT_REVIEW.json",
+      "category": "preparation",
+      "charged_bytes": 10812,
+      "actual_bytes": 10812,
+      "sha256": "1b8b2a4dcaf1f3cd6d781dc712b739fd6475dec27a2a3a0c2468d2971860d912",
+      "precharged": true,
+      "failed_charge_retained": true
+    },
+    {
+      "path": "/Users/uot/Documents/ChatGPT/ros/reviews/evidence/post67_causal_source_integration_v1_20261017/BUILD_FAILURE_AND_BASELINE_READBACK.json",
+      "category": "preparation",
+      "charged_bytes": 43812,
+      "actual_bytes": 43812,
+      "sha256": "c23a67d4272bbcd56ffe03022626daeb3330ff28ee76ec80d3aceb21523bca67",
+      "precharged": true,
+      "failed_charge_retained": true
+    },
+    {
+      "path": "/Users/uot/Documents/ChatGPT/ros/reviews/evidence/post67_causal_source_integration_v1_20261017/COMPILER_FAILURE_CAUSE_REVIEW.json",
+      "category": "preparation",
+      "charged_bytes": 2280,
+      "actual_bytes": 2280,
+      "sha256": "b5e097617e698badd1b71a2fd54cfb59d462878df7e69f62ee6f1f6d9279c2aa",
+      "precharged": true,
+      "failed_charge_retained": true
+    },
+    {
+      "path": "/Users/uot/Documents/ChatGPT/ros/reviews/evidence/post67_causal_source_integration_v1_20261017/ACTUAL_NUMERIC_LIFETIME_PROOF.json",
+      "category": "preparation",
+      "charged_bytes": 2454,
+      "actual_bytes": 2454,
+      "sha256": "81e238253d93bf8186abb380a0244b09c30fd8498a13694041b6ae7c0326b281",
+      "precharged": true,
+      "failed_charge_retained": true
+    },
+    {
+      "path": "/Users/uot/Documents/ChatGPT/ros/reviews/evidence/post67_causal_source_integration_v1_20261017/CONNECTION_POWER_CACHE_READBACK.json",
+      "category": "preparation",
+      "charged_bytes": 1273,
+      "actual_bytes": 1273,
+      "sha256": "4168398679e1fefd7289f9f85da5b106804014189dc1c4fa084ce3fee2ac2d1a",
+      "precharged": true,
+      "failed_charge_retained": true
+    },
+    {
+      "path": "/Users/uot/Documents/ChatGPT/ros/tools/phase5_controlled_stop_session_v21/README.md",
+      "category": "preparation",
+      "charged_bytes": 2801,
+      "actual_bytes": 2801,
+      "sha256": "8ebfc0d244cdbefb6142aa36cd0da948721d92c22a2c0b3ef01bc88c2f31d0b4",
+      "precharged": true,
+      "failed_charge_retained": true
+    },
+    {
+      "path": "/private/tmp/post67_causal_integration_unit_v1_20261017/FINAL_WRITER_PACKET.json",
+      "category": "final",
+      "charged_bytes": 16737,
+      "actual_bytes": 16737,
+      "sha256": "4ed3707a9edfed3835cc01623e67207e0ceed36fba5e37dfa3615637fb301a7b",
+      "precharged": true,
+      "failed_charge_retained": true
+    },
+    {
+      "path": "/Users/uot/Documents/ChatGPT/ros/transfer/cold-backups/post67-causal-source-unit-v1-20261017/complete_source_build_pure.tar.gz.part",
+      "category": "final",
+      "charged_bytes": 33554432,
+      "actual_bytes": 6398546,
+      "sha256": "141bfbee386c4ee238c613a7b2cfe6d7867eb37becd05dd462b40ec217da7943",
+      "precharged": true,
+      "failed_charge_retained": true
+    },
+    {
+      "path": "/Users/uot/Documents/ChatGPT/ros/transfer/cold-backups/post67-causal-source-unit-v1-20261017/READY.json",
+      "category": "final",
+      "charged_bytes": 1281,
+      "actual_bytes": 1281,
+      "sha256": "321fae04f7217bb35a674bb70c1f1f402981f009cfcd2706ebbb42a86ba5c657",
+      "precharged": true,
+      "failed_charge_retained": true
+    },
+    {
+      "path": "/Users/uot/Documents/ChatGPT/ros/reviews/evidence/post67_causal_source_integration_v1_20261017/ROOT_RECOVERY_READBACK.json",
+      "category": "final",
+      "charged_bytes": 1521,
+      "actual_bytes": 1521,
+      "sha256": "75c3f3d289a359d16281cd7ceb75ea3012f356e04c745857e5a4c6cdeb37c90e",
+      "precharged": true,
+      "failed_charge_retained": true
+    },
+    {
+      "path": "/Users/uot/Documents/ChatGPT/ros/reviews/evidence/post67_causal_source_integration_v1_20261017/FINAL_WRITER_PACKET.json",
+      "category": "final",
+      "charged_bytes": 16737,
+      "actual_bytes": 16737,
+      "sha256": "4ed3707a9edfed3835cc01623e67207e0ceed36fba5e37dfa3615637fb301a7b",
+      "precharged": true,
+      "failed_charge_retained": true
+    },
+    {
+      "path": "/Users/uot/Documents/ChatGPT/ros/reviews/evidence/post67_causal_source_integration_v1_20261017/ACTUAL_BUILD_AND_PURE_DRIVERS.json",
+      "category": "final",
+      "charged_bytes": 44827,
+      "actual_bytes": 44827,
+      "sha256": "7b139d3295a3b10dc0ed180560b2c3d8e9568098a324c74f5485609567489ce8",
+      "precharged": true,
+      "failed_charge_retained": true
+    },
+    {
+      "path": "/Users/uot/Documents/ChatGPT/ros/reviews/evidence/post67_causal_source_integration_v1_20261017/README.md",
+      "category": "final",
+      "charged_bytes": 3548,
+      "actual_bytes": 3548,
+      "sha256": "5b6df01efa30087f82724fe2c0e276426fc6b293d12e9fe336ccb6d67a1208af",
+      "precharged": true,
+      "failed_charge_retained": true
+    }
+  ]
+}

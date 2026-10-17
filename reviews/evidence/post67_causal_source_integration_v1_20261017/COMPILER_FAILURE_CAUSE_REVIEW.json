@@ -1,0 +1,39 @@
+{
+  "schema": "ROOT_COMPILER_ADDRESS_SPACE_FAILURE_CAUSE_REVIEW_V1",
+  "confirmed": {
+    "old_success_Main_AS_bytes": 2147483648,
+    "new_failed_Main_AS_bytes": 1073741824,
+    "old_success_Main_CPU_seconds": 120,
+    "new_failed_Main_CPU_seconds": 90,
+    "compiler_path": "/usr/bin/x86_64-linux-gnu-g++-13",
+    "same_O2_compiler_argument_sequence_except_overlay_and_output_targets": true,
+    "Main_O2_O0_both_error": "virtual memory exhausted: Cannot allocate memory",
+    "error_source_allocation_location": "UNKNOWN: diagnostic has no allocation line",
+    "physical_RAM_exhaustion_proved": false,
+    "runtime_controller_memory_exhaustion_proved": false,
+    "new_source_at_old_2GiB_compilation_result": "NOT_RUN"
+  },
+  "flags_review": [
+    {
+      "receipt": "/mnt/d/CodexTransfer/post67-causal-integration-v1-20261017/build96/targeted-build-attempt1/compile-2-RESULT.json",
+      "normalized_argv_diff": [],
+      "exit": 1
+    },
+    {
+      "receipt": "/mnt/d/CodexTransfer/post67-causal-integration-v1-20261017/build96/targeted-build-attempt2/compile-1-RESULT.json",
+      "normalized_argv_diff": [
+        "--- \n",
+        "+++ \n",
+        "@@ -6,3 +6,3 @@\n",
+        " -std=c++17",
+        "--O2",
+        "+-O0",
+        " -DNDEBUG"
+      ],
+      "exit": 1
+    }
+  ],
+  "inference": "The new build envelope was halved relative to the actual last successful full-Main envelope. This is a concrete configuration mismatch. Existing data do not isolate how much compiler cost the extra template/header code adds. New helpers instantiate existing original full-family fallback and new independent-progress templates, but no preprocessed-size/peak sampling is available. Lowering O2 to O0 did not cure the1GiB refusal.",
+  "remedy_proposal": "After this closed failed unit is backed up, review a distinct finite build-configuration correction restoring the previously successful2GiB/120s envelope; freeze identical104 source and original compiler/dependencies/floating flags, at most one Main compile+one full-controller link, no new pure/QP/Model/controller entry. This is a proposal, not entry release and not a reset of this spent compile4/link2 scope.",
+  "retained_failure_packet_sha256": "c23a67d4272bbcd56ffe03022626daeb3330ff28ee76ec80d3aceb21523bca67"
+}

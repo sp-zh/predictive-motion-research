@@ -1,0 +1,199 @@
+{
+  "schema": "ROOT_CAUSAL_V21_INDEPENDENT_SOURCE_AND_PURE_REVIEW_V1",
+  "scope": "SOURCE_INTEGRATION_CANDIDATE_NOT_RELEASED_MAIN_COMPILE_FAILED",
+  "utc": "2026-10-17T05:07:20.295193+00:00",
+  "pure_receipt": {
+    "schema": "SAVED66_JERK_INTERIOR_ACTUAL_HINT_NATIVE_REGRESSION_ANALYSIS3_V1",
+    "argv": [
+      "/mnt/d/CodexTransfer/post67-causal-integration-v1-20261017/build96/targeted-build-attempt4/causal68_pure_tests",
+      "/mnt/d/CodexTransfer/post67-causal-integration-v1-20261017/pure16/actual-entry-after-input-binding-repair/actual-pure-output",
+      "/mnt/d/CodexTransfer/post67-command-history-v1-20261016/saved64/fixture32.bin",
+      "/mnt/d/CodexTransfer/post67-command-history-v1-20261016/saved64/fixture95.bin"
+    ],
+    "exit": 0,
+    "failure": null,
+    "wall": 0.3771410229965113,
+    "before": [
+      {
+        "path": "/mnt/d/CodexTransfer/post67-causal-integration-v1-20261017/build96/targeted-build-attempt4/causal68_pure_tests",
+        "bytes": 19868968,
+        "sha256": "2672a61bb41133f841666a228016ef0998cb4dc4c9937d31ff629ee9f14e266c"
+      },
+      {
+        "path": "/mnt/d/CodexTransfer/post67-causal-integration-v1-20261017/build96/source/causal68_pure_tests.cpp",
+        "bytes": 7526,
+        "sha256": "cf1292ec5057c2c2b0e5c0dd13fb508458f36349f177a844ac78ed90384ac6a7"
+      },
+      {
+        "path": "/mnt/d/CodexTransfer/post67-causal-integration-v1-20261017/build96/source/causal_braking68.hpp",
+        "bytes": 5845,
+        "sha256": "fcb2a5c8f3c31c8f54e01f327da4b83d373b98390a7e19604428a565075a496b"
+      },
+      {
+        "path": "/mnt/d/CodexTransfer/post67-causal-integration-v1-20261017/build96/source/causal_braking_codec68.hpp",
+        "bytes": 3661,
+        "sha256": "69ed78045327452fa5a93f8c207cf7821ecf3fc08d7096f2c611586fccac38f7"
+      },
+      {
+        "path": "/mnt/d/CodexTransfer/post67-command-history-v1-20261016/saved64/fixture32.bin",
+        "bytes": 10059384,
+        "sha256": "b73558847e804543b150a475e1d073deeb8eefa3f13d84e008f32d2805d7a0a6"
+      },
+      {
+        "path": "/mnt/d/CodexTransfer/post67-command-history-v1-20261016/saved64/fixture95.bin",
+        "bytes": 10099368,
+        "sha256": "5b2abf90a13b6e5500ec8f02230ee726bf110f30e82ee04e79f4502d53928f01"
+      }
+    ],
+    "after": [
+      {
+        "path": "/mnt/d/CodexTransfer/post67-causal-integration-v1-20261017/build96/targeted-build-attempt4/causal68_pure_tests",
+        "bytes": 19868968,
+        "sha256": "2672a61bb41133f841666a228016ef0998cb4dc4c9937d31ff629ee9f14e266c"
+      },
+      {
+        "path": "/mnt/d/CodexTransfer/post67-causal-integration-v1-20261017/build96/source/causal68_pure_tests.cpp",
+        "bytes": 7526,
+        "sha256": "cf1292ec5057c2c2b0e5c0dd13fb508458f36349f177a844ac78ed90384ac6a7"
+      },
+      {
+        "path": "/mnt/d/CodexTransfer/post67-causal-integration-v1-20261017/build96/source/causal_braking68.hpp",
+        "bytes": 5845,
+        "sha256": "fcb2a5c8f3c31c8f54e01f327da4b83d373b98390a7e19604428a565075a496b"
+      },
+      {
+        "path": "/mnt/d/CodexTransfer/post67-causal-integration-v1-20261017/build96/source/causal_braking_codec68.hpp",
+        "bytes": 3661,
+        "sha256": "69ed78045327452fa5a93f8c207cf7821ecf3fc08d7096f2c611586fccac38f7"
+      },
+      {
+        "path": "/mnt/d/CodexTransfer/post67-command-history-v1-20261016/saved64/fixture32.bin",
+        "bytes": 10059384,
+        "sha256": "b73558847e804543b150a475e1d073deeb8eefa3f13d84e008f32d2805d7a0a6"
+      },
+      {
+        "path": "/mnt/d/CodexTransfer/post67-command-history-v1-20261016/saved64/fixture95.bin",
+        "bytes": 10099368,
+        "sha256": "5b2abf90a13b6e5500ec8f02230ee726bf110f30e82ee04e79f4502d53928f01"
+      }
+    ],
+    "inputs_before_after_equal": true,
+    "stdout": "case=32,eligible=0,original_attempts=1057,causal_attempts=1057,progress_bitexact=1,retry1_2_bitexact=1\ncase=95,eligible=1,original_attempts=925,causal_attempts=8,progress_bitexact=1,retry1_2_bitexact=1\nPASS pure original32/95 causal-prefix/progress/retry/dynamic14/empty/native-return-refusal/codec/inventory; zeroQP zeroModel zeroController\n",
+    "stderr": "",
+    "outputs": [
+      {
+        "path": "/mnt/d/CodexTransfer/post67-causal-integration-v1-20261017/pure16/actual-entry-after-input-binding-repair/BEFORE_CHILD.json",
+        "bytes": 1938,
+        "sha256": "48dc76a6b2262fdb31b2641f503da202e3fe97056fdc301c47e93d0303d5a922"
+      },
+      {
+        "path": "/mnt/d/CodexTransfer/post67-causal-integration-v1-20261017/pure16/actual-entry-after-input-binding-repair/regression.stderr",
+        "bytes": 0,
+        "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+      },
+      {
+        "path": "/mnt/d/CodexTransfer/post67-causal-integration-v1-20261017/pure16/actual-entry-after-input-binding-repair/regression.stdout",
+        "bytes": 342,
+        "sha256": "bb0a9a33e4932ae87dbda8da0e87cc961b257d258f409c08f533f5c7654ee03d"
+      }
+    ],
+    "no_Model_or_controller68": true,
+    "saved_native_QP_calls": 0,
+    "actual_pure_entries": 1,
+    "original_inputs_unmodified": true
+  },
+  "new_native_QP_calls": 0,
+  "Model_calls": 0,
+  "controller68_entries": 0,
+  "source_boundary": {
+    "schema": "ROOT_V21_104_SOURCE_BOUNDARY_READBACK_V1",
+    "all104_source_lengths_and_sha_verified": true,
+    "old102_immutable_source_readback": "tools/phase5_controlled_stop_session_v20/materialize_source.py source_files() read-only full hash verification",
+    "old102_count": 102,
+    "unchanged_original_files": 100,
+    "changed_runtime_files": [
+      "active_first_cycle.cpp",
+      "integrated_horizon_qp.cpp"
+    ],
+    "added_runtime_files": [
+      "causal_braking68.hpp",
+      "causal_braking_codec68.hpp"
+    ],
+    "Inputs_header_byteexact_unchanged": true,
+    "no_new_Inputs_flags": true,
+    "no_saved_recorded_candidate_token_in_production_header": true,
+    "source_only_scope": "Does not establish compiled identity, meaningful pure success, Model/B/C or stopping. Actual compile/link/pure receipts reviewed separately."
+  },
+  "numeric_lifetimes_review": {
+    "per_object_totals_recalculated": true,
+    "old_full_nominal_scratch_ceiling": 638,
+    "new_nominal_scratch_ceiling": 446,
+    "both_below_unchanged2048_nominal_precharge": true,
+    "extra_outside_hint_scalar_tally": 170,
+    "extra_reserved_per_trial": 256,
+    "whole_upper": 1799733498,
+    "hint_unchanged": 744998,
+    "no_new_Inputs_fields_or_banks": true,
+    "proof_is_source_level": "No new controller runtime sampled; complete Main compilation still failed."
+  },
+  "independent_code_review": [
+    "Shared current actual/history predicate; explicit absence of trusted acceleration condition; original acceptance preserved",
+    "Trial0 joint-only prefix before genuine forecast; original channel7 family operation order and warm fallback retained",
+    "Trial1/2 regenerate=false preserves recorded previous-trial real candidates; Core eligibility independent of nominal shape",
+    "Core dynamic base+7*k+j k0/k1 only; positive scales and exact zero free-coordinate offset required; empty interval refuses",
+    "Original first7 inward applies after new first contract; second7 uses same inward preparation; original140 jerk inward unchanged",
+    "Actual reconstructed native U must pass new two-command contract before forward request; no clipping",
+    "V6 eligible/applied flags distinguish summary133=N/A and synthetic family0 original-prefix checks; V5 retained",
+    "V10 identifies additional14 and points to actual matrices in existing reduction record; no new outputfile",
+    "Actual pure links production Core but does not call QP/Model/controller entry; only one pure execution"
+  ],
+  "pure_coverage_limit": "Real actual67 states, histories, original warm and recorded retry vectors32/95 are used. Baseline offset is explicitly isolated zero reference; not full actual67 baseline/nominal replay. Dynamic14 helper tests do not execute full Core assembly or genuine forecast. Physical acceleration, B400, two2ms commits and50dwell are NOT_RUN here.",
+  "Main_failure_cause": {
+    "schema": "ROOT_COMPILER_ADDRESS_SPACE_FAILURE_CAUSE_REVIEW_V1",
+    "confirmed": {
+      "old_success_Main_AS_bytes": 2147483648,
+      "new_failed_Main_AS_bytes": 1073741824,
+      "old_success_Main_CPU_seconds": 120,
+      "new_failed_Main_CPU_seconds": 90,
+      "compiler_path": "/usr/bin/x86_64-linux-gnu-g++-13",
+      "same_O2_compiler_argument_sequence_except_overlay_and_output_targets": true,
+      "Main_O2_O0_both_error": "virtual memory exhausted: Cannot allocate memory",
+      "error_source_allocation_location": "UNKNOWN: diagnostic has no allocation line",
+      "physical_RAM_exhaustion_proved": false,
+      "runtime_controller_memory_exhaustion_proved": false,
+      "new_source_at_old_2GiB_compilation_result": "NOT_RUN"
+    },
+    "flags_review": [
+      {
+        "receipt": "/mnt/d/CodexTransfer/post67-causal-integration-v1-20261017/build96/targeted-build-attempt1/compile-2-RESULT.json",
+        "normalized_argv_diff": [],
+        "exit": 1
+      },
+      {
+        "receipt": "/mnt/d/CodexTransfer/post67-causal-integration-v1-20261017/build96/targeted-build-attempt2/compile-1-RESULT.json",
+        "normalized_argv_diff": [
+          "--- \n",
+          "+++ \n",
+          "@@ -6,3 +6,3 @@\n",
+          " -std=c++17",
+          "--O2",
+          "+-O0",
+          " -DNDEBUG"
+        ],
+        "exit": 1
+      }
+    ],
+    "inference": "The new build envelope was halved relative to the actual last successful full-Main envelope. This is a concrete configuration mismatch. Existing data do not isolate how much compiler cost the extra template/header code adds. New helpers instantiate existing original full-family fallback and new independent-progress templates, but no preprocessed-size/peak sampling is available. Lowering O2 to O0 did not cure the1GiB refusal.",
+    "remedy_proposal": "After this closed failed unit is backed up, review a distinct finite build-configuration correction restoring the previously successful2GiB/120s envelope; freeze identical104 source and original compiler/dependencies/floating flags, at most one Main compile+one full-controller link, no new pure/QP/Model/controller entry. This is a proposal, not entry release and not a reset of this spent compile4/link2 scope.",
+    "retained_failure_packet_sha256": "c23a67d4272bbcd56ffe03022626daeb3330ff28ee76ec80d3aceb21523bca67"
+  },
+  "remaining_unvalidated": [
+    "Main full compilation and controller link",
+    "genuine current Model/geometry/QP with new nominal and independent progress",
+    "actual native contraction under new genuine matrices",
+    "B400/C/physical stopping and50dwell",
+    "C storage readiness"
+  ],
+  "phase5": "NOT_ACCEPTED",
+  "phase6": "NOT_STARTED"
+}

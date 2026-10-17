@@ -1,0 +1,17 @@
+# Causal-prefix source unit: helper PASS, Main build FAILED
+
+This independent finite unit is closed at four compiles, two links and one pure execution. No new saved-native QP, Model or controller68 ran. **The full v21 controller is NOT_RELEASED.** Actual67 remains the last controller experiment; Phase5 NOT_ACCEPTED, Phase6 NOT_STARTED.
+
+[Source candidate](../../../tools/phase5_controlled_stop_session_v21/README.md) connects current actual/history joint prefix before genuine forecast, keeps independent original progress and real-candidate retry paths, and intersects dynamic first14 existing guard rows. Root verifies104 source hashes:100 old files unchanged, Main/Core modified, two new headers, Inputs.hpp byte-identical.
+
+The closed build results are Core O2 PASS, Main O2 address-space refusal, Main O0 same refusal, pure O2 PASS. The first pure link lacked Evidence symbols; the second used the retained dependency closure and passed. A pure supervisor input path failed before spawning any executable; correction consumed the sole actual pure entry. All failures and partial objects remain.
+
+The production-helper pure run passes real32/95 state/history/warm/retry cases, early original path, bit-exact independent progress, retry1/2 preservation, dynamic14/empty intersection and returned-contract refusal checks. It uses a disclosed isolated zero-offset baseline, not full actual67 nominal replay. It does not run full Core assembly, Model/B400/C, physical stopping or50dwell.
+
+Root read the actual successful67 Main build driver:2GiB RLIMIT_AS/CPU120. This unit inherited1GiB/CPU90 from the saved-study driver. O2 arguments match after normalizing source and output paths; the second attempt only changes O2 to O0. Both logs say virtual memory exhausted, without an allocation source line. Actual RSS/virtual peaks and incremental template/header cost are UNKNOWN. Physical RAM shortage and controller runtime memory failure are unproved. A later concrete build-configuration correction must preserve this spent scope and all source/failed evidence.
+
+[Root review](ROOT_REVIEW.json), [compiler cause](COMPILER_FAILURE_CAUSE_REVIEW.json), [actual argv and failures](BUILD_FAILURE_AND_BASELINE_READBACK.json), [writer final packet](FINAL_WRITER_PACKET.json), [actual build/pure drivers](ACTUAL_BUILD_AND_PURE_DRIVERS.json), [numeric proof](ACTUAL_NUMERIC_LIFETIME_PROOF.json), [scope](ALLOCATION.json), [connection/power/cache checks](CONNECTION_POWER_CACHE_READBACK.json).
+
+Recoverable backup: all186 original D files, including successful Core/pure objects, pure ELF, every failed prefix, source, logs, dependency lists, input checks and pure output are retained in an immutable187-member Mac archive. Stored6,398,546B; logical27,695,326B; SHA256 `141bfbee386c4ee238c613a7b2cfe6d7867eb37becd05dd462b40ec217da7943`. Root reopened the complete archive and every member, fsynced/read-only/atomically renamed it, then independently rehashed all186 original Dell files over fixed-key SSH. [Recovery receipt](ROOT_RECOVERY_READBACK.json). Original fixtures32/95 remain in earlier independently verified saved-stage archives; no standalone dependency-environment restoration is claimed.
+
+Latest C free86,323,347,456B remains below the original89,254,789,120B controller gate. D free changed externally from87,565,176,832B to215,678,775,296B; neither Root nor writer deleted files or changed WSL/storage settings. The cause and volume identity need confirmation before later use. No layout or entry-gate change follows from that observation.
