@@ -1,0 +1,488 @@
+{
+  "schema": "RESTORED_ORIGINAL_BUILD_ENVELOPE_FINAL_WRITER_PACKET_V1",
+  "utc": "2026-10-17T05:15:25.249512+00:00",
+  "functional_stage_closed": true,
+  "start_utc": "2026-10-17T05:11:45.526117Z",
+  "absolute_deadline_epoch": 1792214205.526117,
+  "all_compile_link_and_static_checks_completed_before_deadline": true,
+  "counts": {
+    "Main_O2_compile": 1,
+    "complete_controller_link": 1,
+    "pure": 0,
+    "saved_native_QP": 0,
+    "Model": 0,
+    "controller_entry": 0
+  },
+  "same_original104_source_unchanged": true,
+  "original_Core_sha256": "90362c95045dfa134a2204e41cad044a16e704bc07c805c5f425c8f1b44f8a61",
+  "compile_envelope": {
+    "AS": 2147483648,
+    "CPU": 120,
+    "wall": 150,
+    "optimization": "O2",
+    "float_flags": [
+      "-fno-fast-math",
+      "-ffp-contract=off"
+    ]
+  },
+  "link_wall": 30,
+  "result_entries": [
+    {
+      "kind": "compile",
+      "index": 1,
+      "argv": [
+        "/usr/bin/x86_64-linux-gnu-g++-13",
+        "-pipe",
+        "-fno-use-linker-plugin",
+        "-I",
+        "/mnt/d/CodexTransfer/post67-causal-integration-v1-20261017/build96/source",
+        "-std=c++17",
+        "-O2",
+        "-DNDEBUG",
+        "-fno-fast-math",
+        "-ffp-contract=off",
+        "-Wall",
+        "-Wextra",
+        "-Wpedantic",
+        "-DBOOST_FUSION_INVOKE_MAX_ARITY=12",
+        "-DBOOST_MPL_CFG_NO_PREPROCESSED_HEADERS",
+        "-DBOOST_MPL_LIMIT_LIST_SIZE=30",
+        "-DBOOST_MPL_LIMIT_VECTOR_SIZE=30",
+        "-DCOAL_HAS_OCTOMAP",
+        "-DCOAL_HAVE_OCTOMAP",
+        "-DOCTOMAP_MAJOR_VERSION=1",
+        "-DOCTOMAP_MINOR_VERSION=9",
+        "-DOCTOMAP_PATCH_VERSION=7",
+        "-DPINOCCHIO_ENABLE_TEMPLATE_INSTANTIATION",
+        "-DPINOCCHIO_URDFDOM_HEADERS_MAJOR_VERSION=1",
+        "-DPINOCCHIO_URDFDOM_HEADERS_MINOR_VERSION=1",
+        "-DPINOCCHIO_URDFDOM_HEADERS_PATCH_VERSION=2",
+        "-DPINOCCHIO_WITH_COLLISION",
+        "-DPINOCCHIO_WITH_HPP_FCL",
+        "-DPINOCCHIO_WITH_URDFDOM",
+        "-I",
+        "/home/codextransfer/predictive_motion/results/phase5/integrated-first-cycle-v1-20261010/source-version1/source",
+        "-I",
+        "/home/codextransfer/predictive_motion/results/phase5/integrated-first-cycle-v1-20261010/source-version1/source/core",
+        "-I",
+        "/home/codextransfer/predictive_motion/results/phase5/integrated-first-cycle-v1-20261010/source-version1/source/include",
+        "-I",
+        "/home/codextransfer/predictive_motion/install/predictive_motion_kinematics/include",
+        "-I",
+        "/home/codextransfer/predictive_motion/.vendor/mujoco-3.3.7/include",
+        "-I",
+        "/home/codextransfer/predictive_motion/.vendor/osqp-1.0.0-install/include/osqp",
+        "-I",
+        "/home/codextransfer/predictive_motion/.vendor/osqp-1.0.0-install/include/qdldl",
+        "-I",
+        "/home/codextransfer/predictive_motion/results/phase5/repaired-source-configure-freeze-after-v4-20261009/source-version1/source/tools/phase5_public_live_affine_v2",
+        "-I",
+        "/home/codextransfer/predictive_motion/results/phase5/repaired-source-configure-freeze-after-v4-20261009/source-version1/source/tools/phase5_public_live_affine_v2/model_boundary",
+        "-I",
+        "/home/codextransfer/predictive_motion/results/phase5/repaired-source-configure-freeze-after-v4-20261009/source-version1/source/tools/phase5_public_live_affine_v2/normalization",
+        "-I",
+        "/home/codextransfer/predictive_motion/results/phase5/repaired-source-configure-freeze-after-v4-20261009/source-version1/source/tools/phase5_public_live_affine_v2/affine",
+        "-I",
+        "/home/codextransfer/predictive_motion/results/phase5/repaired-source-configure-freeze-after-v4-20261009/source-version1/source/tools/phase5_public_coupled_augmented_extension_cpp",
+        "-I",
+        "/home/codextransfer/predictive_motion/results/phase5/repaired-source-configure-freeze-after-v4-20261009/source-version1/source/tools/phase5_public_coupled_augmented_cpp",
+        "-I",
+        "/home/codextransfer/predictive_motion/results/phase5/repaired-source-configure-freeze-after-v4-20261009/source-version1/source/tools/phase5_public_coupled_derivative_cpp",
+        "-I",
+        "/home/codextransfer/predictive_motion/results/phase5/repaired-source-configure-freeze-after-v4-20261009/source-version1/source/tools/phase5_public_coupled_cpp_v2",
+        "-isystem",
+        "/usr/include/eigen3",
+        "-isystem",
+        "/opt/ros/jazzy/include",
+        "-isystem",
+        "/opt/ros/jazzy/include/pinocchio/deprecated",
+        "-isystem",
+        "/opt/ros/jazzy/include/urdfdom",
+        "-isystem",
+        "/opt/ros/jazzy/include/urdfdom_headers",
+        "-I",
+        "/home/codextransfer/predictive_motion/tools/phase4_adapters",
+        "-MMD",
+        "-MF",
+        "/proc/self/fd/4",
+        "-c",
+        "/mnt/d/CodexTransfer/post67-causal-integration-v1-20261017/build96/source/active_first_cycle.cpp",
+        "-o",
+        "/proc/self/fd/3"
+      ],
+      "target_precharged_cap": 4194304,
+      "per_target_persist_caps": [
+        4194304,
+        65536
+      ],
+      "anonymous_memfd_AS_bound_common_FSIZE": 4194304,
+      "targets": [
+        "/mnt/d/CodexTransfer/post67-build-envelope-repair-v1-20261017/targeted-build-attempt1/main.o",
+        "/mnt/d/CodexTransfer/post67-build-envelope-repair-v1-20261017/targeted-build-attempt1/main.d"
+      ],
+      "child_disk_write_create_remove_rename_truncate_allowed": false,
+      "memfd_only_outputs": true,
+      "stage": "CHILD_EXIT_REAPED",
+      "exit": 0,
+      "error": null,
+      "wall_seconds": 18.0082081760047,
+      "captured_bytes": {
+        "stdout": 0,
+        "stderr": 25300
+      },
+      "outputs": [
+        {
+          "path": "/mnt/d/CodexTransfer/post67-build-envelope-repair-v1-20261017/targeted-build-attempt1/main.o",
+          "bytes": 911312,
+          "sha256": "f1eec64fb2286963612d88d696cff794ded7e9d8ed9eb5e9dfbfdfb8ddaf84e2",
+          "source": "anonymous memfd bounded by inherited RLIMIT_FSIZE and parent same precharge"
+        },
+        {
+          "path": "/mnt/d/CodexTransfer/post67-build-envelope-repair-v1-20261017/targeted-build-attempt1/main.d",
+          "bytes": 7654,
+          "sha256": "3fc56b299258bce5d54532c0f3d2a2361fca368125549f25f007c2a6bfee29ee",
+          "source": "anonymous memfd bounded by inherited RLIMIT_FSIZE and parent same precharge"
+        }
+      ]
+    },
+    {
+      "kind": "link",
+      "index": 1,
+      "argv": [
+        "/usr/bin/ld",
+        "--build-id",
+        "--eh-frame-hdr",
+        "-m",
+        "elf_x86_64",
+        "--hash-style=gnu",
+        "--as-needed",
+        "-dynamic-linker",
+        "/lib64/ld-linux-x86-64.so.2",
+        "-pie",
+        "-z",
+        "now",
+        "-z",
+        "relro",
+        "-o",
+        "/proc/self/fd/3",
+        "/usr/lib/gcc/x86_64-linux-gnu/13/../../../x86_64-linux-gnu/Scrt1.o",
+        "/usr/lib/gcc/x86_64-linux-gnu/13/../../../x86_64-linux-gnu/crti.o",
+        "/usr/lib/gcc/x86_64-linux-gnu/13/crtbeginS.o",
+        "-L/usr/lib/gcc/x86_64-linux-gnu/13",
+        "-L/usr/lib/gcc/x86_64-linux-gnu/13/../../../x86_64-linux-gnu",
+        "-L/usr/lib/gcc/x86_64-linux-gnu/13/../../../../lib",
+        "-L/lib/x86_64-linux-gnu",
+        "-L/lib/../lib",
+        "-L/usr/lib/x86_64-linux-gnu",
+        "-L/usr/lib/../lib",
+        "-L/usr/lib/gcc/x86_64-linux-gnu/13/../../..",
+        "/mnt/d/CodexTransfer/phase5-joint-jerk-integration67-20261016-attempt1/targeted-build-attempt1/unit-1.o",
+        "/mnt/d/CodexTransfer/phase5-joint-jerk-integration67-20261016-attempt1/targeted-build-attempt1/unit-2.o",
+        "/mnt/d/CodexTransfer/phase5-joint-jerk-integration67-20261016-attempt1/targeted-build-attempt1/unit-3.o",
+        "/mnt/d/CodexTransfer/post67-causal-integration-v1-20261017/build96/targeted-build-attempt1/core.o",
+        "/mnt/d/CodexTransfer/phase5-joint-jerk-integration67-20261016-attempt1/targeted-build-attempt1/unit-5.o",
+        "/mnt/d/CodexTransfer/phase5-joint-jerk-integration67-20261016-attempt1/targeted-build-attempt1/unit-6.o",
+        "/mnt/d/CodexTransfer/phase5-joint-jerk-integration67-20261016-attempt1/targeted-build-attempt1/unit-7.o",
+        "/mnt/d/CodexTransfer/phase5-joint-jerk-integration67-20261016-attempt1/targeted-build-attempt1/unit-9.o",
+        "/mnt/d/CodexTransfer/post67-build-envelope-repair-v1-20261017/targeted-build-attempt1/main.o",
+        "/home/codextransfer/predictive_motion/results/phase5/session-task-start-a-primaldual-v2-20261010-attempt5/build-attempt1/unit-9.o",
+        "/home/codextransfer/predictive_motion/results/phase5/integrated-first-cycle-v1-20261010/build-attempt1/unit-7.o",
+        "--start-group",
+        "/home/codextransfer/predictive_motion/install/predictive_motion_kinematics/lib/librobot_kinematics.a",
+        "/home/codextransfer/predictive_motion/.vendor/osqp-1.0.0-install/lib/libosqpstatic.a",
+        "/home/codextransfer/predictive_motion/results/phase5/repaired-source-configure-only-after-v4-20261009/attempt1/build/inventory-source/input-source/cost-source/affine-source/normalized-source/model-boundary/live-foundation/libpublic_live_affine_v2_foundation.a",
+        "/home/codextransfer/predictive_motion/results/phase5/repaired-source-configure-only-after-v4-20261009/attempt1/build/inventory-source/input-source/cost-source/affine-source/normalized-source/model-boundary/frozen-extension/libpublic_coupled_augmented_extension.a",
+        "/home/codextransfer/predictive_motion/results/phase5/repaired-source-configure-only-after-v4-20261009/attempt1/build/inventory-source/input-source/cost-source/affine-source/normalized-source/model-boundary/frozen-extension/libfrozen_augmented_extension_value.a",
+        "/home/codextransfer/predictive_motion/results/phase5/repaired-source-configure-only-after-v4-20261009/attempt1/build/inventory-source/input-source/cost-source/affine-source/normalized-source/model-boundary/frozen-extension/physical-derivative/libpublic_coupled_derivative_model.a",
+        "/home/codextransfer/predictive_motion/results/phase5/repaired-source-configure-only-after-v4-20261009/attempt1/build/inventory-source/input-source/cost-source/affine-source/normalized-source/model-boundary/frozen-extension/physical-derivative/base-v2/libpublic_coupled_model_v2.a",
+        "--end-group",
+        "/home/codextransfer/predictive_motion/.vendor/mujoco-3.3.7/lib/libmujoco.so",
+        "/usr/lib/x86_64-linux-gnu/libcrypto.so",
+        "/usr/lib/x86_64-linux-gnu/libyaml-cpp.so",
+        "/opt/ros/jazzy/lib/x86_64-linux-gnu/libpinocchio_default.so.4.1.0",
+        "/opt/ros/jazzy/lib/x86_64-linux-gnu/libpinocchio_collision.so.4.1.0",
+        "/opt/ros/jazzy/lib/x86_64-linux-gnu/libpinocchio_parsers.so.4.1.0",
+        "/usr/lib/x86_64-linux-gnu/libboost_serialization.so.1.83.0",
+        "/usr/lib/x86_64-linux-gnu/libboost_filesystem.so.1.83.0",
+        "/opt/ros/jazzy/lib/x86_64-linux-gnu/libcoal.so.3.0.3",
+        "-ldl",
+        "--disable-new-dtags",
+        "-rpath",
+        "/home/codextransfer/predictive_motion/.vendor/mujoco-3.3.7/lib:/opt/ros/jazzy/lib/x86_64-linux-gnu:/opt/ros/jazzy/lib:/usr/lib/x86_64-linux-gnu",
+        "-lz",
+        "-lstdc++",
+        "-lm",
+        "-lgcc_s",
+        "-lgcc",
+        "-lpthread",
+        "-lc",
+        "-lgcc_s",
+        "-lgcc",
+        "/usr/lib/gcc/x86_64-linux-gnu/13/crtendS.o",
+        "/usr/lib/gcc/x86_64-linux-gnu/13/../../../x86_64-linux-gnu/crtn.o"
+      ],
+      "target_precharged_cap": 25165824,
+      "per_target_persist_caps": [
+        25165824
+      ],
+      "anonymous_memfd_AS_bound_common_FSIZE": 25165824,
+      "targets": [
+        "/mnt/d/CodexTransfer/post67-build-envelope-repair-v1-20261017/targeted-build-attempt1/active_first_cycle"
+      ],
+      "child_disk_write_create_remove_rename_truncate_allowed": false,
+      "memfd_only_outputs": true,
+      "stage": "CHILD_EXIT_REAPED",
+      "exit": 0,
+      "error": null,
+      "wall_seconds": 1.5471500279963948,
+      "captured_bytes": {
+        "stdout": 0,
+        "stderr": 0
+      },
+      "outputs": [
+        {
+          "path": "/mnt/d/CodexTransfer/post67-build-envelope-repair-v1-20261017/targeted-build-attempt1/active_first_cycle",
+          "bytes": 20122040,
+          "sha256": "6d03b665720330743f0b9a7eebcf2b2c44de04cdf4eb0ce4878a3b02c3813e0a",
+          "source": "anonymous memfd bounded by inherited RLIMIT_FSIZE and parent same precharge"
+        }
+      ]
+    }
+  ],
+  "all1977inputs_before_after_equal": true,
+  "new_files": [
+    {
+      "path": "/mnt/d/CodexTransfer/post67-build-envelope-repair-v1-20261017/BUILD_PLAN.json",
+      "bytes": 607016,
+      "sha256": "a7ab76ce61f28f33857a47119b6b8afc32e93273526620d3f229378eedeaf022"
+    },
+    {
+      "path": "/mnt/d/CodexTransfer/post67-build-envelope-repair-v1-20261017/build_driver_v1.py",
+      "bytes": 8795,
+      "sha256": "8cbdee6aff0b76adfea39c286a0bed1316b8c0167fba6a6d345677523be07182"
+    },
+    {
+      "path": "/mnt/d/CodexTransfer/post67-build-envelope-repair-v1-20261017/targeted-build-attempt1/AFTER_INPUT_IDENTITIES.json",
+      "bytes": 574302,
+      "sha256": "96db439853f031e4d5fbfcba620afad15d4d696c350c99b7602d2ce0e836558c"
+    },
+    {
+      "path": "/mnt/d/CodexTransfer/post67-build-envelope-repair-v1-20261017/targeted-build-attempt1/BATCH_PREFIX.json",
+      "bytes": 11653,
+      "sha256": "72dcf9f88825ecf79f2fce75ad51f04b6e052ca1e7724726692ce1a2e35a5109"
+    },
+    {
+      "path": "/mnt/d/CodexTransfer/post67-build-envelope-repair-v1-20261017/targeted-build-attempt1/BEFORE_INPUT_IDENTITIES.json",
+      "bytes": 574302,
+      "sha256": "96db439853f031e4d5fbfcba620afad15d4d696c350c99b7602d2ce0e836558c"
+    },
+    {
+      "path": "/mnt/d/CodexTransfer/post67-build-envelope-repair-v1-20261017/targeted-build-attempt1/BUILD_RESULT.json",
+      "bytes": 12916,
+      "sha256": "efdb5e00235cbc244be6103f5159029c4a5e8f4262a1738853e24e2e5c942568"
+    },
+    {
+      "path": "/mnt/d/CodexTransfer/post67-build-envelope-repair-v1-20261017/targeted-build-attempt1/LEDGER.json",
+      "bytes": 979,
+      "sha256": "47150d6dd3a06a8520c2e613935fb8d350727a7269c5ec5f2752b2fe2d347d23"
+    },
+    {
+      "path": "/mnt/d/CodexTransfer/post67-build-envelope-repair-v1-20261017/targeted-build-attempt1/active_first_cycle",
+      "bytes": 20122040,
+      "sha256": "6d03b665720330743f0b9a7eebcf2b2c44de04cdf4eb0ce4878a3b02c3813e0a"
+    },
+    {
+      "path": "/mnt/d/CodexTransfer/post67-build-envelope-repair-v1-20261017/targeted-build-attempt1/compile-1-PREFIX.json",
+      "bytes": 4289,
+      "sha256": "00cc7566b536ee9cc0ef6cbeaf57309a348e40ceb0b15803bc2d3409a6c754e8"
+    },
+    {
+      "path": "/mnt/d/CodexTransfer/post67-build-envelope-repair-v1-20261017/targeted-build-attempt1/compile-1-RESULT.json",
+      "bytes": 5089,
+      "sha256": "4851775292f8c15179ae6df6440b8c398c3a57e52e933c67bbcd1f89cbf02428"
+    },
+    {
+      "path": "/mnt/d/CodexTransfer/post67-build-envelope-repair-v1-20261017/targeted-build-attempt1/compile-1.stderr",
+      "bytes": 25300,
+      "sha256": "2f366be688cca6e506019bea7166530ac0ea402d5ac8f73ced67a22b5f2f566f"
+    },
+    {
+      "path": "/mnt/d/CodexTransfer/post67-build-envelope-repair-v1-20261017/targeted-build-attempt1/compile-1.stdout",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "/mnt/d/CodexTransfer/post67-build-envelope-repair-v1-20261017/targeted-build-attempt1/link-1-EXACT_LD_AND_CRT_INPUTS_AFTER.json",
+      "bytes": 12136,
+      "sha256": "86bc944579bfdc94a016ae2923dbf5a0a49e133425aa738bf2e6fbac4d9b41b9"
+    },
+    {
+      "path": "/mnt/d/CodexTransfer/post67-build-envelope-repair-v1-20261017/targeted-build-attempt1/link-1-EXACT_LD_AND_CRT_INPUTS_BEFORE.json",
+      "bytes": 32701,
+      "sha256": "6999f8875eef011aa67dd9d12674644e0f44c0e9d85c7214d4ba9965fb41103d"
+    },
+    {
+      "path": "/mnt/d/CodexTransfer/post67-build-envelope-repair-v1-20261017/targeted-build-attempt1/link-1-PREFIX.json",
+      "bytes": 5145,
+      "sha256": "c42b31410ac49e6ca56e050a741426b8445735e080565ab7c377d3d010ca50c6"
+    },
+    {
+      "path": "/mnt/d/CodexTransfer/post67-build-envelope-repair-v1-20261017/targeted-build-attempt1/link-1-RESULT.json",
+      "bytes": 5635,
+      "sha256": "2637c1805b042acd928248b825b83bd1bf2b5ab2598e97f139db4212edec5a87"
+    },
+    {
+      "path": "/mnt/d/CodexTransfer/post67-build-envelope-repair-v1-20261017/targeted-build-attempt1/link-1.stderr",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "/mnt/d/CodexTransfer/post67-build-envelope-repair-v1-20261017/targeted-build-attempt1/link-1.stdout",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "/mnt/d/CodexTransfer/post67-build-envelope-repair-v1-20261017/targeted-build-attempt1/main.d",
+      "bytes": 7654,
+      "sha256": "3fc56b299258bce5d54532c0f3d2a2361fca368125549f25f007c2a6bfee29ee"
+    },
+    {
+      "path": "/mnt/d/CodexTransfer/post67-build-envelope-repair-v1-20261017/targeted-build-attempt1/main.o",
+      "bytes": 911312,
+      "sha256": "f1eec64fb2286963612d88d696cff794ded7e9d8ed9eb5e9dfbfdfb8ddaf84e2"
+    }
+  ],
+  "new_scope_actual_stock": 22921264,
+  "new_scope_cap": 41943040,
+  "free": {
+    "/mnt/c": 86330740736,
+    "/mnt/d": 215655809024
+  },
+  "no_remaining_compile_link_or_main_processes": true,
+  "static_header_and_dependencies": {
+    "readelf_header": "ELF Header:\n  Magic:   7f 45 4c 46 02 01 01 03 00 00 00 00 00 00 00 00 \n  Class:                             ELF64\n  Data:                              2's complement, little endian\n  Version:                           1 (current)\n  OS/ABI:                            UNIX - GNU\n  ABI Version:                       0\n  Type:                              DYN (Position-Independent Executable file)\n  Machine:                           Advanced Micro Devices X86-64\n  Version:                           0x1\n  Entry point address:               0x37590\n  Start of program headers:          64 (bytes into file)\n  Start of section headers:          20119352 (bytes into file)\n  Flags:                             0x0\n  Size of this header:               64 (bytes)\n  Size of program headers:           56 (bytes)\n  Number of program headers:         14\n  Size of section headers:           64 (bytes)\n  Number of section headers:         42\n  Section header string table index: 41\n",
+    "readelf_dynamic": "\nDynamic section at offset 0x22a588 contains 38 entries:\n  Tag        Type                         Name/Value\n 0x0000000000000001 (NEEDED)             Shared library: [libmujoco.so.3.3.7]\n 0x0000000000000001 (NEEDED)             Shared library: [libcrypto.so.3]\n 0x0000000000000001 (NEEDED)             Shared library: [libyaml-cpp.so.0.8]\n 0x0000000000000001 (NEEDED)             Shared library: [libpinocchio_default.so.4.1.0]\n 0x0000000000000001 (NEEDED)             Shared library: [libpinocchio_parsers.so.4.1.0]\n 0x0000000000000001 (NEEDED)             Shared library: [libcoal.so.3.0.3]\n 0x0000000000000001 (NEEDED)             Shared library: [libz.so.1]\n 0x0000000000000001 (NEEDED)             Shared library: [libstdc++.so.6]\n 0x0000000000000001 (NEEDED)             Shared library: [libm.so.6]\n 0x0000000000000001 (NEEDED)             Shared library: [libgcc_s.so.1]\n 0x0000000000000001 (NEEDED)             Shared library: [libc.so.6]\n 0x000000000000000f (RPATH)              Library rpath: [/home/codextransfer/predictive_motion/.vendor/mujoco-3.3.7/lib:/opt/ros/jazzy/lib/x86_64-linux-gnu:/opt/ros/jazzy/lib:/usr/lib/x86_64-linux-gnu]\n 0x000000000000000c (INIT)               0xc000\n 0x000000000000000d (FINI)               0x1da138\n 0x0000000000000019 (INIT_ARRAY)         0x228b78\n 0x000000000000001b (INIT_ARRAYSZ)       32 (bytes)\n 0x000000000000001a (FINI_ARRAY)         0x228b98\n 0x000000000000001c (FINI_ARRAYSZ)       8 (bytes)\n 0x000000006ffffef5 (GNU_HASH)           0x3e8\n 0x0000000000000005 (STRTAB)             0x2600\n 0x0000000000000006 (SYMTAB)             0x698\n 0x000000000000000a (STRSZ)              15776 (bytes)\n 0x000000000000000b (SYMENT)             24 (bytes)\n 0x0000000000000015 (DEBUG)              0x0\n 0x0000000000000003 (PLTGOT)             0x22a828\n 0x0000000000000002 (PLTRELSZ)           5352 (bytes)\n 0x0000000000000014 (PLTREL)             RELA\n 0x0000000000000017 (JMPREL)             0xa268\n 0x0000000000000007 (RELA)               0x6890\n 0x0000000000000008 (RELASZ)             14808 (bytes)\n 0x0000000000000009 (RELAENT)            24 (bytes)\n 0x0000000000000018 (BIND_NOW)           \n 0x000000006ffffffb (FLAGS_1)            Flags: NOW PIE\n 0x000000006ffffffe (VERNEED)            0x6640\n 0x000000006fffffff (VERNEEDNUM)         6\n 0x000000006ffffff0 (VERSYM)             0x63a0\n 0x000000006ffffff9 (RELACOUNT)          398\n 0x0000000000000000 (NULL)               0x0\n",
+    "needed": [
+      "libmujoco.so.3.3.7",
+      "libcrypto.so.3",
+      "libyaml-cpp.so.0.8",
+      "libpinocchio_default.so.4.1.0",
+      "libpinocchio_parsers.so.4.1.0",
+      "libcoal.so.3.0.3",
+      "libz.so.1",
+      "libstdc++.so.6",
+      "libm.so.6",
+      "libgcc_s.so.1",
+      "libc.so.6"
+    ],
+    "rpath": [
+      "/home/codextransfer/predictive_motion/.vendor/mujoco-3.3.7/lib:/opt/ros/jazzy/lib/x86_64-linux-gnu:/opt/ros/jazzy/lib:/usr/lib/x86_64-linux-gnu"
+    ],
+    "executable_invocations": 0,
+    "static_dependencies_pinned_by_basename": {
+      "libmujoco.so.3.3.7": [
+        {
+          "path": "/home/codextransfer/predictive_motion/.vendor/mujoco-3.3.7/lib/libmujoco.so",
+          "resolved_path": "/home/codextransfer/predictive_motion/.vendor/mujoco-3.3.7/lib/libmujoco.so.3.3.7",
+          "bytes": 5075256,
+          "sha256": "23841520ecf60ad648405674a757f260949f7cf6b44deb284398b9851b3f061d"
+        },
+        {
+          "path": "/home/codextransfer/predictive_motion/.vendor/mujoco-3.3.7/lib/libmujoco.so.3.3.7",
+          "resolved_path": "/home/codextransfer/predictive_motion/.vendor/mujoco-3.3.7/lib/libmujoco.so.3.3.7",
+          "bytes": 5075256,
+          "sha256": "23841520ecf60ad648405674a757f260949f7cf6b44deb284398b9851b3f061d"
+        }
+      ],
+      "libcrypto.so.3": [
+        {
+          "path": "/usr/lib/x86_64-linux-gnu/libcrypto.so",
+          "resolved_path": "/usr/lib/x86_64-linux-gnu/libcrypto.so.3",
+          "bytes": 5309400,
+          "sha256": "6866ed711dab8927e1bf82bf1cd30e828bdfc34f3cc1e83b1c9eb01ce6c37d9a"
+        },
+        {
+          "path": "/usr/lib/x86_64-linux-gnu/libcrypto.so.3",
+          "resolved_path": "/usr/lib/x86_64-linux-gnu/libcrypto.so.3",
+          "bytes": 5309400,
+          "sha256": "6866ed711dab8927e1bf82bf1cd30e828bdfc34f3cc1e83b1c9eb01ce6c37d9a"
+        }
+      ],
+      "libyaml-cpp.so.0.8": [],
+      "libpinocchio_default.so.4.1.0": [
+        {
+          "path": "/opt/ros/jazzy/lib/x86_64-linux-gnu/libpinocchio_default.so.4.1.0",
+          "resolved_path": "/opt/ros/jazzy/lib/x86_64-linux-gnu/libpinocchio_default.so.4.1.0",
+          "bytes": 5520208,
+          "sha256": "74ba8a3355cb0b3a1a93d3f985e9e772d055fc3c96d22bac1575ed641773ed7e"
+        }
+      ],
+      "libpinocchio_parsers.so.4.1.0": [
+        {
+          "path": "/opt/ros/jazzy/lib/x86_64-linux-gnu/libpinocchio_parsers.so.4.1.0",
+          "resolved_path": "/opt/ros/jazzy/lib/x86_64-linux-gnu/libpinocchio_parsers.so.4.1.0",
+          "bytes": 786072,
+          "sha256": "2215f45357dd0368f16e4b6590d5814f107467abe605e7727dcec5ce37b99fbc"
+        }
+      ],
+      "libcoal.so.3.0.3": [
+        {
+          "path": "/opt/ros/jazzy/lib/x86_64-linux-gnu/libcoal.so.3.0.3",
+          "resolved_path": "/opt/ros/jazzy/lib/x86_64-linux-gnu/libcoal.so.3.0.3",
+          "bytes": 5393160,
+          "sha256": "ece35aac64696a666159e711a2480f797261fc7e6fc39e3797719a3e01b8721a"
+        }
+      ],
+      "libz.so.1": [],
+      "libstdc++.so.6": [],
+      "libm.so.6": [
+        {
+          "path": "/usr/lib/x86_64-linux-gnu/libm.so.6",
+          "resolved_path": "/usr/lib/x86_64-linux-gnu/libm.so.6",
+          "bytes": 952616,
+          "sha256": "fce00b6f25f459cf4ae0b7fae4257909a1a8a86f9149e7c029a5d617baf1ccd0"
+        }
+      ],
+      "libgcc_s.so.1": [
+        {
+          "path": "/usr/lib/x86_64-linux-gnu/libgcc_s.so.1",
+          "resolved_path": "/usr/lib/x86_64-linux-gnu/libgcc_s.so.1",
+          "bytes": 183024,
+          "sha256": "d93224d2b0dab4247598be683adca02f5cf00586f99c187579cd7e92058fb7cb"
+        }
+      ],
+      "libc.so.6": [
+        {
+          "path": "/usr/lib/x86_64-linux-gnu/libc.so.6",
+          "resolved_path": "/usr/lib/x86_64-linux-gnu/libc.so.6",
+          "bytes": 2129424,
+          "sha256": "3a15d66867d83762c7f2f1e37359cb8f6c5743edb369c65285cb0b1c4f7498bf"
+        }
+      ]
+    }
+  },
+  "full_static_resolved_dependency_readback": {
+    "exit": 0,
+    "stdout": "{\"epoch\": 1792214087.8799465, \"direct_DT_NEEDED_static_readback\": [{\"SONAME\": \"libmujoco.so.3.3.7\", \"path\": \"/home/codextransfer/predictive_motion/.vendor/mujoco-3.3.7/lib/libmujoco.so.3.3.7\", \"resolved\": \"/home/codextransfer/predictive_motion/.vendor/mujoco-3.3.7/lib/libmujoco.so.3.3.7\", \"bytes\": 5075256, \"sha256\": \"23841520ecf60ad648405674a757f260949f7cf6b44deb284398b9851b3f061d\", \"original_before_after_pins\": [{\"path\": \"/home/codextransfer/predictive_motion/.vendor/mujoco-3.3.7/lib/libmujoco.so\", \"resolved_path\": \"/home/codextransfer/predictive_motion/.vendor/mujoco-3.3.7/lib/libmujoco.so.3.3.7\", \"bytes\": 5075256, \"sha256\": \"23841520ecf60ad648405674a757f260949f7cf6b44deb284398b9851b3f061d\"}, {\"path\": \"/home/codextransfer/predictive_motion/.vendor/mujoco-3.3.7/lib/libmujoco.so.3.3.7\", \"resolved_path\": \"/home/codextransfer/predictive_motion/.vendor/mujoco-3.3.7/lib/libmujoco.so.3.3.7\", \"bytes\": 5075256, \"sha256\": \"23841520ecf60ad648405674a757f260949f7cf6b44deb284398b9851b3f061d\"}, {\"path\": \"/home/codextransfer/predictive_motion/.vendor/mujoco-3.3.7/lib/libmujoco.so\", \"resolved_path\": \"/home/codextransfer/predictive_motion/.vendor/mujoco-3.3.7/lib/libmujoco.so.3.3.7\", \"bytes\": 5075256, \"sha256\": \"23841520ecf60ad648405674a757f260949f7cf6b44deb284398b9851b3f061d\"}]}, {\"SONAME\": \"libcrypto.so.3\", \"path\": \"/usr/lib/x86_64-linux-gnu/libcrypto.so.3\", \"resolved\": \"/usr/lib/x86_64-linux-gnu/libcrypto.so.3\", \"bytes\": 5309400, \"sha256\": \"6866ed711dab8927e1bf82bf1cd30e828bdfc34f3cc1e83b1c9eb01ce6c37d9a\", \"original_before_after_pins\": [{\"path\": \"/usr/lib/x86_64-linux-gnu/libcrypto.so\", \"resolved_path\": \"/usr/lib/x86_64-linux-gnu/libcrypto.so.3\", \"bytes\": 5309400, \"sha256\": \"6866ed711dab8927e1bf82bf1cd30e828bdfc34f3cc1e83b1c9eb01ce6c37d9a\"}, {\"path\": \"/usr/lib/x86_64-linux-gnu/libcrypto.so.3\", \"resolved_path\": \"/usr/lib/x86_64-linux-gnu/libcrypto.so.3\", \"bytes\": 5309400, \"sha256\": \"6866ed711dab8927e1bf82bf1cd30e828bdfc34f3cc1e83b1c9eb01ce6c37d9a\"}, {\"path\": \"/usr/lib/x86_64-linux-gnu/libcrypto.so\", \"resolved_path\": \"/usr/lib/x86_64-linux-gnu/libcrypto.so.3\", \"bytes\": 5309400, \"sha256\": \"6866ed711dab8927e1bf82bf1cd30e828bdfc34f3cc1e83b1c9eb01ce6c37d9a\"}]}, {\"SONAME\": \"libyaml-cpp.so.0.8\", \"path\": \"/usr/lib/x86_64-linux-gnu/libyaml-cpp.so.0.8\", \"resolved\": \"/usr/lib/x86_64-linux-gnu/libyaml-cpp.so.0.8.0\", \"bytes\": 293688, \"sha256\": \"55749fdb0a78969cf15c67c326f9a506e67cace47aa8520c2ae137b9e6189e3b\", \"original_before_after_pins\": [{\"path\": \"/usr/lib/x86_64-linux-gnu/libyaml-cpp.so\", \"resolved_path\": \"/usr/lib/x86_64-linux-gnu/libyaml-cpp.so.0.8.0\", \"bytes\": 293688, \"sha256\": \"55749fdb0a78969cf15c67c326f9a506e67cace47aa8520c2ae137b9e6189e3b\"}, {\"path\": \"/usr/lib/x86_64-linux-gnu/libyaml-cpp.so.0.8.0\", \"resolved_path\": \"/usr/lib/x86_64-linux-gnu/libyaml-cpp.so.0.8.0\", \"bytes\": 293688, \"sha256\": \"55749fdb0a78969cf15c67c326f9a506e67cace47aa8520c2ae137b9e6189e3b\"}, {\"path\": \"/usr/lib/x86_64-linux-gnu/libyaml-cpp.so\", \"resolved_path\": \"/usr/lib/x86_64-linux-gnu/libyaml-cpp.so.0.8.0\", \"bytes\": 293688, \"sha256\": \"55749fdb0a78969cf15c67c326f9a506e67cace47aa8520c2ae137b9e6189e3b\"}]}, {\"SONAME\": \"libpinocchio_default.so.4.1.0\", \"path\": \"/opt/ros/jazzy/lib/x86_64-linux-gnu/libpinocchio_default.so.4.1.0\", \"resolved\": \"/opt/ros/jazzy/lib/x86_64-linux-gnu/libpinocchio_default.so.4.1.0\", \"bytes\": 5520208, \"sha256\": \"74ba8a3355cb0b3a1a93d3f985e9e772d055fc3c96d22bac1575ed641773ed7e\", \"original_before_after_pins\": [{\"path\": \"/opt/ros/jazzy/lib/x86_64-linux-gnu/libpinocchio_default.so.4.1.0\", \"resolved_path\": \"/opt/ros/jazzy/lib/x86_64-linux-gnu/libpinocchio_default.so.4.1.0\", \"bytes\": 5520208, \"sha256\": \"74ba8a3355cb0b3a1a93d3f985e9e772d055fc3c96d22bac1575ed641773ed7e\"}, {\"path\": \"/opt/ros/jazzy/lib/x86_64-linux-gnu/libpinocchio_default.so.4.1.0\", \"resolved_path\": \"/opt/ros/jazzy/lib/x86_64-linux-gnu/libpinocchio_default.so.4.1.0\", \"bytes\": 5520208, \"sha256\": \"74ba8a3355cb0b3a1a93d3f985e9e772d055fc3c96d22bac1575ed641773ed7e\"}]}, {\"SONAME\": \"libpinocchio_parsers.so.4.1.0\", \"path\": \"/opt/ros/jazzy/lib/x86_64-linux-gnu/libpinocchio_parsers.so.4.1.0\", \"resolved\": \"/opt/ros/jazzy/lib/x86_64-linux-gnu/libpinocchio_parsers.so.4.1.0\", \"bytes\": 786072, \"sha256\": \"2215f45357dd0368f16e4b6590d5814f107467abe605e7727dcec5ce37b99fbc\", \"original_before_after_pins\": [{\"path\": \"/opt/ros/jazzy/lib/x86_64-linux-gnu/libpinocchio_parsers.so.4.1.0\", \"resolved_path\": \"/opt/ros/jazzy/lib/x86_64-linux-gnu/libpinocchio_parsers.so.4.1.0\", \"bytes\": 786072, \"sha256\": \"2215f45357dd0368f16e4b6590d5814f107467abe605e7727dcec5ce37b99fbc\"}, {\"path\": \"/opt/ros/jazzy/lib/x86_64-linux-gnu/libpinocchio_parsers.so.4.1.0\", \"resolved_path\": \"/opt/ros/jazzy/lib/x86_64-linux-gnu/libpinocchio_parsers.so.4.1.0\", \"bytes\": 786072, \"sha256\": \"2215f45357dd0368f16e4b6590d5814f107467abe605e7727dcec5ce37b99fbc\"}]}, {\"SONAME\": \"libcoal.so.3.0.3\", \"path\": \"/opt/ros/jazzy/lib/x86_64-linux-gnu/libcoal.so.3.0.3\", \"resolved\": \"/opt/ros/jazzy/lib/x86_64-linux-gnu/libcoal.so.3.0.3\", \"bytes\": 5393160, \"sha256\": \"ece35aac64696a666159e711a2480f797261fc7e6fc39e3797719a3e01b8721a\", \"original_before_after_pins\": [{\"path\": \"/opt/ros/jazzy/lib/x86_64-linux-gnu/libcoal.so.3.0.3\", \"resolved_path\": \"/opt/ros/jazzy/lib/x86_64-linux-gnu/libcoal.so.3.0.3\", \"bytes\": 5393160, \"sha256\": \"ece35aac64696a666159e711a2480f797261fc7e6fc39e3797719a3e01b8721a\"}, {\"path\": \"/opt/ros/jazzy/lib/x86_64-linux-gnu/libcoal.so.3.0.3\", \"resolved_path\": \"/opt/ros/jazzy/lib/x86_64-linux-gnu/libcoal.so.3.0.3\", \"bytes\": 5393160, \"sha256\": \"ece35aac64696a666159e711a2480f797261fc7e6fc39e3797719a3e01b8721a\"}]}, {\"SONAME\": \"libz.so.1\", \"path\": \"/usr/lib/x86_64-linux-gnu/libz.so.1\", \"resolved\": \"/usr/lib/x86_64-linux-gnu/libz.so.1.3\", \"bytes\": 113000, \"sha256\": \"86200da370f20476a2507e9097a789b5ef97269b4ca8d5e164ad82dab9d99892\", \"original_before_after_pins\": [{\"path\": \"/usr/lib/x86_64-linux-gnu/libz.so.1.3\", \"resolved_path\": \"/usr/lib/x86_64-linux-gnu/libz.so.1.3\", \"bytes\": 113000, \"sha256\": \"86200da370f20476a2507e9097a789b5ef97269b4ca8d5e164ad82dab9d99892\"}]}, {\"SONAME\": \"libstdc++.so.6\", \"path\": \"/usr/lib/x86_64-linux-gnu/libstdc++.so.6\", \"resolved\": \"/usr/lib/x86_64-linux-gnu/libstdc++.so.6.0.33\", \"bytes\": 2592224, \"sha256\": \"1fd75fe70354a416d75aef22bcae68c47bd25d20e2d0568c30b1a9838cf62f11\", \"original_before_after_pins\": [{\"path\": \"/usr/lib/x86_64-linux-gnu/libstdc++.so.6.0.33\", \"resolved_path\": \"/usr/lib/x86_64-linux-gnu/libstdc++.so.6.0.33\", \"bytes\": 2592224, \"sha256\": \"1fd75fe70354a416d75aef22bcae68c47bd25d20e2d0568c30b1a9838cf62f11\"}]}, {\"SONAME\": \"libm.so.6\", \"path\": \"/usr/lib/x86_64-linux-gnu/libm.so.6\", \"resolved\": \"/usr/lib/x86_64-linux-gnu/libm.so.6\", \"bytes\": 952616, \"sha256\": \"fce00b6f25f459cf4ae0b7fae4257909a1a8a86f9149e7c029a5d617baf1ccd0\", \"original_before_after_pins\": [{\"path\": \"/usr/lib/x86_64-linux-gnu/libm.so.6\", \"resolved_path\": \"/usr/lib/x86_64-linux-gnu/libm.so.6\", \"bytes\": 952616, \"sha256\": \"fce00b6f25f459cf4ae0b7fae4257909a1a8a86f9149e7c029a5d617baf1ccd0\"}]}, {\"SONAME\": \"libgcc_s.so.1\", \"path\": \"/usr/lib/x86_64-linux-gnu/libgcc_s.so.1\", \"resolved\": \"/usr/lib/x86_64-linux-gnu/libgcc_s.so.1\", \"bytes\": 183024, \"sha256\": \"d93224d2b0dab4247598be683adca02f5cf00586f99c187579cd7e92058fb7cb\", \"original_before_after_pins\": [{\"path\": \"/usr/lib/x86_64-linux-gnu/libgcc_s.so.1\", \"resolved_path\": \"/usr/lib/x86_64-linux-gnu/libgcc_s.so.1\", \"bytes\": 183024, \"sha256\": \"d93224d2b0dab4247598be683adca02f5cf00586f99c187579cd7e92058fb7cb\"}]}, {\"SONAME\": \"libc.so.6\", \"path\": \"/usr/lib/x86_64-linux-gnu/libc.so.6\", \"resolved\": \"/usr/lib/x86_64-linux-gnu/libc.so.6\", \"bytes\": 2129424, \"sha256\": \"3a15d66867d83762c7f2f1e37359cb8f6c5743edb369c65285cb0b1c4f7498bf\", \"original_before_after_pins\": [{\"path\": \"/usr/lib/x86_64-linux-gnu/libc.so.6\", \"resolved_path\": \"/usr/lib/x86_64-linux-gnu/libc.so.6\", \"bytes\": 2129424, \"sha256\": \"3a15d66867d83762c7f2f1e37359cb8f6c5743edb369c65285cb0b1c4f7498bf\"}]}], \"all_resolved_and_original_input_SHA_pinned\": true, \"runtime_loader_or_main_execution\": false, \"scope\": \"Direct dependencies static-only; not a new standalone environment restoration or runtime qualification.\"}\n",
+    "stderr": ""
+  },
+  "volume_exact_UTF8_preentry": {
+    "exit": 0,
+    "stdout": "{\"Windows\": [{\"DriveLetter\": \"C\", \"FileSystemLabel\": \"OS\", \"Size\": 488030334976, \"SizeRemaining\": 86330961920, \"FileSystem\": \"NTFS\"}, {\"DriveLetter\": \"D\", \"FileSystemLabel\": \"\\u65b0\\u52a0\\u5377\", \"Size\": 512098299904, \"SizeRemaining\": 215678775296, \"FileSystem\": \"NTFS\"}], \"statvfs\": {\"C\": {\"path\": \"/mnt/c\", \"size\": 488030334976, \"free\": 86330961920}, \"D\": {\"path\": \"/mnt/d\", \"size\": 512098299904, \"free\": 215678775296}}, \"findmnt\": {\"filesystems\": [{\"target\": \"/mnt/d\", \"source\": \"D:\\\\\", \"fstype\": \"9p\", \"options\": \"rw,noatime,aname=drvfs;path=D:\\\\;uid=1000;gid=1000;symlinkroot=/mnt/,cache=0x5,access=client,msize=65536,trans=fd,rfd=6,wfd=6\"}]}, \"exact_Windows_df_identity\": true, \"D_space_change_cause\": \"UNKNOWN\", \"configuration_changes\": 0}\n",
+    "stderr": ""
+  },
+  "Mac_small_raw_capsule": {
+    "path": "/private/tmp/post67_build_envelope_repair_v1_20261017/ACTUAL_BUILD_STATIC_CAPSULE.json",
+    "bytes": 2532304,
+    "sha256": "33ccc994369f2ac660347e56457561739c4ee811e9a9ccf1e366c7826b765885"
+  },
+  "limits_and_unknowns": [
+    "The prior1GiB/CPU90 source-unit Main O2/O0 failures remain immutable under2af62a8; this new unit restored proven original successful2GiB/CPU120 envelope without source edits. This confirms successful build under repaired configuration, not physical RAM insufficiency or measured runtime resource/performance.",
+    "Compile per-target persisted4MiBobject/64KiBdep, link24MiBELF, meta8MiB/scripts1MiB/reserve3080192 total40MiB; no child disk writes, anonymous memfd commonRLIMIT_FSIZE4MiB and per-target parent prewrite caps. AS bounds anonymous temporary memory.",
+    "Static readelf and11 direct DT_NEEDED resolved paths/SHA match original before/after pinnedinputs/exactldCRT. No ldd, loader/main execution, new pure/QP/Model/B/C/physicalstop.",
+    "C remains below original83.125GiB controller gate. D free increase causeUNKNOWN; both current80GiB build reserves verified, writer made no cleanup/system changes.",
+    "New fullELF not executed or released for68 by this build. Phase5 NOT_ACCEPTED/Phase6 NOT_STARTED.",
+    "Root soleGit integrator should make exactly one complete new-D-scope recovery archive including actualMainobject/ELF/all metadata; no uncharged bareELF second Mac copy."
+  ],
+  "backup": "Local small evidence persisted. Full archive/publiccheckpoint/remoteSHA pending soleRoot."
+}

@@ -1,0 +1,38 @@
+{
+  "df": "Filesystem        1B-blocks         Used    Available Use% Mounted on\nC:\\            488030334976 401699373056  86330961920  83% /mnt/c\nD:\\            512098299904 296419524608 215678775296  58% /mnt/d\n",
+  "mounts": {
+    "filesystems": [
+      {
+        "source": "D:\\",
+        "fstype": "9p",
+        "target": "/mnt/d",
+        "options": "rw,noatime,aname=drvfs;path=D:\\;uid=1000;gid=1000;symlinkroot=/mnt/,cache=0x5,access=client,msize=65536,trans=fd,rfd=6,wfd=6"
+      }
+    ]
+  },
+  "Windows_volumes": [
+    {
+      "DriveLetter": "C",
+      "FileSystemLabel": "OS",
+      "FileSystem": "NTFS",
+      "Size": 488030334976,
+      "SizeRemaining": 86330961920
+    },
+    {
+      "DriveLetter": "D",
+      "FileSystemLabel": "新加卷",
+      "FileSystem": "NTFS",
+      "Size": 512098299904,
+      "SizeRemaining": 215678775296
+    }
+  ],
+  "schema": "ROOT_BUILD_REPAIR_CURRENT_VOLUME_IDENTITY_READBACK_V1",
+  "utc": "2026-10-17T05:12:24.471182+00:00",
+  "WSL_Windows_size_and_free_exact_match": true,
+  "D_matches_original_driveletter_and_size": true,
+  "D_previous_label_unrecorded": "Current label recorded; historical label equality not proved",
+  "D_free_change_cause": "UNKNOWN; no Root/writer deletion/system change",
+  "C_controller_entry_gate_met": false,
+  "source_build_per_volume80GiB_met": true,
+  "no_settings_changed": true
+}

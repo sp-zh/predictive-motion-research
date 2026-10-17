@@ -1,0 +1,57 @@
+{
+  "schema": "POST67_BUILD_ENVELOPE_CONFIGURATION_REPAIR_V1",
+  "basis": "Existing verified continuous direct-human work package; status-chat reviewed new configuration repair after2af62a8 source-unit closure. No old scope reset/phase or experiment release.",
+  "previous_checkpoint": "2af62a896c6112253635572d80123c769778930c",
+  "start_utc": "2026-10-17T05:11:45.526117+00:00",
+  "deadline_epoch": 1792214205.526117,
+  "wall_seconds": 300,
+  "cap_bytes": 33554432,
+  "record_cap": 32,
+  "reserve_final_records": 12,
+  "control_files_reservation": {
+    "LEDGER.json": 262144,
+    "LEDGER.next": 262144,
+    "LOCK": 0,
+    "records": 3
+  },
+  "all_Mac_outputs": "All Root+writer source/config/driver/metadata/log/failure/review and complete recovery archive; no hidden bareELF/temp copy or refunds.",
+  "closed_ledgers": [
+    {
+      "path": "/private/tmp/phase5_stop53_combined_derived_budget_v1_20261015/LEDGER.json",
+      "sha256": "94dfdbefb227627e30efb8f35ad946712856ca352462cbf1e48ae39405a876f9"
+    },
+    {
+      "path": "/private/tmp/post67_command_history_unit_v1_20261016/LEDGER.json",
+      "sha256": "60cdc12fc4801cc58cfbd213b9d5383e8a234252dbfb7804d58b551ea2e55067"
+    },
+    {
+      "path": "/private/tmp/post67_causal_integration_unit_v1_20261017/LEDGER.json",
+      "sha256": "3f3ff24639dbbfc9c650a2967bc677ee33b2274369cbd8e9b734b07e1a0612a7"
+    }
+  ],
+  "cumulative_cap_bytes": 1325400064,
+  "cumulative_record_cap": 10256,
+  "limits": {
+    "Main_O2_compile_entries": 1,
+    "compile_AS_bytes": 2147483648,
+    "compile_CPU_seconds": 120,
+    "compile_wall_seconds": 150,
+    "complete_controller_link_entries": 1,
+    "link_wall_seconds": 30,
+    "pure_QP_Model_controller_execution_entries": 0
+  },
+  "source": "Identical104 frozen source and g++13/O2/fno-fast-math/ffp-contractoff; Core90362c95045dfa134a2204e41cad044a16e704bc07c805c5f425c8f1b44f8a61 and unchanged objects pinned before/after. No functional source edits.",
+  "Dell_D": {
+    "cap_bytes": 41943040,
+    "object_bytes": 4194304,
+    "dep_bytes": 65536,
+    "ELF_bytes": 25165824,
+    "metadata_bytes": 8388608,
+    "scripts_bytes": 1048576,
+    "remaining_reserved_bytes": 3080192,
+    "per_volume_reserve_bytes": 85899345920
+  },
+  "volume_gate": "Verify C/D actual paths/drive labels/size and findmnt/WindowsGetVolume/df identity before child; D free-change causeUNKNOWN. Original C89254789120 controller gate not waived.",
+  "no_automatic_restart_retry_or_expansion": true,
+  "scope": "Full build and static ELF checks only; never execute main, Model/B/C/physicalstop unvalidated."
+}

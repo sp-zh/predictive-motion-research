@@ -1,0 +1,209 @@
+{
+  "schema": "CLOSED_BUILD_REPAIR_OUTPUT_SNAPSHOT_V1",
+  "cap_bytes": 33554432,
+  "record_cap": 32,
+  "charged_before_snapshot": 20016649,
+  "records_before_snapshot": 23,
+  "functional_counts": {
+    "compile": 1,
+    "link": 1,
+    "pure_QP_Model_controller": 0
+  },
+  "functional_closed": true,
+  "remaining_writes": "Necessary preservation/remoteSHA receipt only, no new functional work",
+  "outputs": [
+    {
+      "path": "/private/tmp/post67_build_envelope_repair_v1_20261017/LEDGER.json",
+      "category": "control",
+      "charged_bytes": 262144
+    },
+    {
+      "path": "/private/tmp/post67_build_envelope_repair_v1_20261017/LEDGER.next",
+      "category": "control",
+      "charged_bytes": 262144
+    },
+    {
+      "path": "/private/tmp/post67_build_envelope_repair_v1_20261017/LOCK",
+      "category": "control",
+      "charged_bytes": 0
+    },
+    {
+      "path": "/private/tmp/post67_build_envelope_repair_v1_20261017/ALLOCATION.json",
+      "category": "bootstrap",
+      "charged_bytes": 2580,
+      "actual_bytes": 2580,
+      "sha256": "79df01dbaf47daaee981a360fece52da47d8b1e765575b4a3862b728ccf6ee04",
+      "precharged": true
+    },
+    {
+      "path": "/private/tmp/post67_build_envelope_repair_v1_20261017/bounded_output.py",
+      "category": "bootstrap",
+      "charged_bytes": 3284,
+      "actual_bytes": 3284,
+      "sha256": "f4c7c279f39354fefb45d0527f9f501d0caccf2b61507ef3603835a242a8b79a",
+      "precharged": true
+    },
+    {
+      "path": "/private/tmp/post67_build_envelope_repair_v1_20261017/BOOTSTRAP_ARITHMETIC_FAILURE_RETAINED.json",
+      "category": "preparation",
+      "charged_bytes": 321,
+      "actual_bytes": 321,
+      "sha256": "affd24682bf7a89143fb6b8bc52df60b641a68ec1987d868630de1ec6b9e3fb4",
+      "precharged": true,
+      "failed_charge_retained": true
+    },
+    {
+      "path": "/private/tmp/post67_build_envelope_repair_v1_20261017/ROOT_VOLUME_IDENTITY_READBACK.json",
+      "category": "preparation",
+      "charged_bytes": 1367,
+      "actual_bytes": 1367,
+      "sha256": "c942b371073b2a219c26ee7e096ff329794207206e2f60a717f32647fb98ef53",
+      "precharged": true,
+      "failed_charge_retained": true
+    },
+    {
+      "path": "/private/tmp/post67_build_envelope_repair_v1_20261017/VOLUME_PREENTRY_READBACK.json",
+      "category": "preparation",
+      "charged_bytes": 886,
+      "actual_bytes": 886,
+      "sha256": "b380335521da910272cb87c80c8a46cf9e48a613a9ed25a47897c4d1ad9b75b3",
+      "precharged": true,
+      "failed_charge_retained": true
+    },
+    {
+      "path": "/private/tmp/post67_build_envelope_repair_v1_20261017/build_driver_v1.py",
+      "category": "preparation",
+      "charged_bytes": 8795,
+      "actual_bytes": 8795,
+      "sha256": "8cbdee6aff0b76adfea39c286a0bed1316b8c0167fba6a6d345677523be07182",
+      "precharged": true,
+      "failed_charge_retained": true
+    },
+    {
+      "path": "/private/tmp/post67_build_envelope_repair_v1_20261017/STAGING_RESPONSE.json",
+      "category": "preparation",
+      "charged_bytes": 323,
+      "actual_bytes": 323,
+      "sha256": "7ade0ebc289299ca34b79e659b313cfcb9c5f931283393fd3d3db7c19279d0b6",
+      "precharged": true,
+      "failed_charge_retained": true
+    },
+    {
+      "path": "/private/tmp/post67_build_envelope_repair_v1_20261017/ACTUAL_BUILD_STATIC_CAPSULE.json",
+      "category": "final",
+      "charged_bytes": 2532304,
+      "actual_bytes": 2532304,
+      "sha256": "33ccc994369f2ac660347e56457561739c4ee811e9a9ccf1e366c7826b765885",
+      "precharged": true,
+      "failed_charge_retained": true
+    },
+    {
+      "path": "/private/tmp/post67_build_envelope_repair_v1_20261017/STATIC_DEPENDENCY_READBACK.json",
+      "category": "final",
+      "charged_bytes": 8671,
+      "actual_bytes": 8671,
+      "sha256": "13e858b4cc8959f404b18032593487af66e7ea1b6b3192a1718609a9e8320bf2",
+      "precharged": true,
+      "failed_charge_retained": true
+    },
+    {
+      "path": "/private/tmp/post67_build_envelope_repair_v1_20261017/FINAL_WRITER_PACKET.json",
+      "category": "final",
+      "charged_bytes": 36173,
+      "actual_bytes": 36173,
+      "sha256": "abd26bbdb03957792cd583cb7dd72702921d75239c43c0fe05518f7d5fae8f37",
+      "precharged": true,
+      "failed_charge_retained": true
+    },
+    {
+      "path": "/Users/uot/Documents/ChatGPT/ros/transfer/cold-backups/post67-build-envelope-repair-v1-20261017/complete_config_repair.tar.gz.part",
+      "category": "final",
+      "charged_bytes": 16777216,
+      "actual_bytes": 5304023,
+      "sha256": "ac7cf50391f0e96d61b3b3d2f03aa88bd342e627417bb520c8a1c233b39614c0",
+      "precharged": true,
+      "failed_charge_retained": true
+    },
+    {
+      "path": "/Users/uot/Documents/ChatGPT/ros/transfer/cold-backups/post67-build-envelope-repair-v1-20261017/READY.json",
+      "category": "final",
+      "charged_bytes": 1494,
+      "actual_bytes": 1494,
+      "sha256": "7eae5ac3c46d887ee042e1bbc031b996489fcc9ac662fcc2ae58c11bb904d0c5",
+      "precharged": true,
+      "failed_charge_retained": true
+    },
+    {
+      "path": "/private/tmp/post67_build_envelope_repair_v1_20261017/ROOT_BUILD_REPAIR_REVIEW.json",
+      "category": "final",
+      "charged_bytes": 33119,
+      "actual_bytes": 33119,
+      "sha256": "f5657543508c7671c33397b87328d42d408417ca092d552c23920370bb6f09ab",
+      "precharged": true,
+      "failed_charge_retained": true
+    },
+    {
+      "path": "/Users/uot/Documents/ChatGPT/ros/reviews/evidence/post67_build_envelope_repair_v1_20261017/ROOT_REVIEW.json",
+      "category": "final",
+      "charged_bytes": 33119,
+      "actual_bytes": 33119,
+      "sha256": "f5657543508c7671c33397b87328d42d408417ca092d552c23920370bb6f09ab",
+      "precharged": true,
+      "failed_charge_retained": true
+    },
+    {
+      "path": "/Users/uot/Documents/ChatGPT/ros/reviews/evidence/post67_build_envelope_repair_v1_20261017/ALLOCATION.json",
+      "category": "final",
+      "charged_bytes": 2580,
+      "actual_bytes": 2580,
+      "sha256": "79df01dbaf47daaee981a360fece52da47d8b1e765575b4a3862b728ccf6ee04",
+      "precharged": true,
+      "failed_charge_retained": true
+    },
+    {
+      "path": "/Users/uot/Documents/ChatGPT/ros/reviews/evidence/post67_build_envelope_repair_v1_20261017/WRITER_FINAL_PACKET.json",
+      "category": "final",
+      "charged_bytes": 36173,
+      "actual_bytes": 36173,
+      "sha256": "abd26bbdb03957792cd583cb7dd72702921d75239c43c0fe05518f7d5fae8f37",
+      "precharged": true,
+      "failed_charge_retained": true
+    },
+    {
+      "path": "/Users/uot/Documents/ChatGPT/ros/reviews/evidence/post67_build_envelope_repair_v1_20261017/VOLUME_IDENTITY_READBACK.json",
+      "category": "final",
+      "charged_bytes": 1367,
+      "actual_bytes": 1367,
+      "sha256": "c942b371073b2a219c26ee7e096ff329794207206e2f60a717f32647fb98ef53",
+      "precharged": true,
+      "failed_charge_retained": true
+    },
+    {
+      "path": "/Users/uot/Documents/ChatGPT/ros/reviews/evidence/post67_build_envelope_repair_v1_20261017/ACTUAL_BUILD_DRIVER.py",
+      "category": "final",
+      "charged_bytes": 8795,
+      "actual_bytes": 8795,
+      "sha256": "8cbdee6aff0b76adfea39c286a0bed1316b8c0167fba6a6d345677523be07182",
+      "precharged": true,
+      "failed_charge_retained": true
+    },
+    {
+      "path": "/Users/uot/Documents/ChatGPT/ros/reviews/evidence/post67_build_envelope_repair_v1_20261017/BOOTSTRAP_FAILURE_RETAINED.json",
+      "category": "final",
+      "charged_bytes": 321,
+      "actual_bytes": 321,
+      "sha256": "affd24682bf7a89143fb6b8bc52df60b641a68ec1987d868630de1ec6b9e3fb4",
+      "precharged": true,
+      "failed_charge_retained": true
+    },
+    {
+      "path": "/Users/uot/Documents/ChatGPT/ros/reviews/evidence/post67_build_envelope_repair_v1_20261017/README.md",
+      "category": "final",
+      "charged_bytes": 3473,
+      "actual_bytes": 3473,
+      "sha256": "b4521dd3da60d7b3cb630fd51fa3a7f35f811f64d682c7c10b50faf31acf3c31",
+      "precharged": true,
+      "failed_charge_retained": true
+    }
+  ]
+}
