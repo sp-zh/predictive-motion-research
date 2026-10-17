@@ -1,0 +1,96 @@
+{
+  "schema": "POST67_TECHNICAL_ALLOCATION_AND_BOOTSTRAP_REVIEW_V1",
+  "allocation": {
+    "schema": "POST67_COMMAND_HISTORY_FINITE_UNIT_ALLOCATION_V1",
+    "scope": "Fresh post67 genuine jerk-aware command/history source and saved two-context study only; no Model/controller/native68",
+    "authorization_basis": "Existing verified direct human continuous functional-work-package resume01a146eb; status-chat technical scope review releases temporary read-only constraint. Not new human permission, phase or hardware acceptance.",
+    "old_ledger": {
+      "path": "/private/tmp/phase5_stop53_combined_derived_budget_v1_20261015/LEDGER.json",
+      "sha256": "94dfdbefb227627e30efb8f35ad946712856ca352462cbf1e48ae39405a876f9",
+      "cap_bytes": 1056964608,
+      "charged_bytes": 1008263980,
+      "record_cap": 10000,
+      "spent_records": 10000,
+      "closed_immutable_no_refund": true
+    },
+    "new_all_Mac_output_cap_bytes": 134217728,
+    "new_all_Mac_output_records": 128,
+    "includes": "All Root+writer source/failures/reviews/ELF/plots/metadata files; control metadata reserved below, no side routes",
+    "control_metadata_reservation": {
+      "LEDGER.json": 262144,
+      "LEDGER.next": 262144,
+      "LOCK": 0,
+      "records": 3,
+      "note": "Standing control-file paths reserved and counted in128/128MiB. At most2*256KiB concurrently; pending failure retained and blocks further writes."
+    },
+    "combined_upper_cap_bytes": 1191182336,
+    "combined_upper_record_cap": 10128,
+    "minimum_records_reserved_for_archive_final": 24,
+    "Dell_D": {
+      "saved_scope_cap_bytes": 67108864,
+      "build_scope_cap_bytes": 100663296,
+      "aggregate_cap_bytes": 167772160,
+      "reserve_per_volume_bytes": 85899345920
+    },
+    "execution_stage": {
+      "start_utc": "2026-10-17T02:01:37.376320+00:00",
+      "deadline_epoch": 1792203097.37632,
+      "maximum_wall_seconds": 600,
+      "saved_contexts_maximum": 2,
+      "saved_native_QP_calls_maximum": 4,
+      "Model_calls": 0,
+      "controller_calls": 0,
+      "true_recorded_hint_baseline_required": true,
+      "no_automatic_scope_restart": true
+    },
+    "preserve": "Old67/64 brake windows and all earlier failures consumed/immutable. Original alpha/jerk/SI/history/terminal/B/C/physical/stop/native tolerance/counters unchanged. No cleanup, WSL stop/compact or private-file deletion.",
+    "later_native68": "Not released by this allocation; needs original source/physical/storage/one-shot readiness and proper archive resources.",
+    "roles": {
+      "Mac_Root": "01a12eb1-3b98-7b61-8a81-9b2f4e7c5c32",
+      "unique_Dell_writer": "01a114d9-3a3a-7071-b94f-624581000992",
+      "status_chat": "01a10a40-558c-71a3-b343-6ff4c2709b36"
+    }
+  },
+  "writer_helper_source": "\"\"\"Shared post67 finite-allocation writer. Old53 ledger never changes.\nAll new Mac files, including control metadata, are counted/precharged. Two\nstanding256KiB ledger paths and zero-byte lock are charged from bootstrap;\nfailed pending metadata is retained and blocks later updates. No refund/reset.\n\"\"\"\nfrom pathlib import Path\nimport json,os,fcntl,hashlib,datetime\nBASE=Path('/private/tmp/post67_command_history_unit_v1_20261016')\nOLD=Path('/private/tmp/phase5_stop53_combined_derived_budget_v1_20261015/LEDGER.json')\nOLD_SHA='94dfdbefb227627e30efb8f35ad946712856ca352462cbf1e48ae39405a876f9'\nREPO=Path('/Users/uot/Documents/ChatGPT/ros')\nCAP=134217728;COUNT=128;META=262144\n\ndef put(path,data,*,category='preparation',reserve_bytes=None):\n path=Path(path);data=bytes(data);assert category in ['preparation','final']\n assert path.is_absolute()and len(str(path).encode())<=768 and not path.exists()and not path.is_symlink()\n assert(BASE in path.parents or REPO in path.parents)and not any(n in path.parts for n in ['.git','.aws','.codex','.agents'])\n assert path not in [BASE/'LEDGER.json',BASE/'LEDGER.next',BASE/'LOCK',BASE/'bounded_output.py',BASE/'ALLOCATION.json']\n path.parent.mkdir(parents=True,exist_ok=True);assert path.parent.resolve()==path.parent\n charged=len(data)if reserve_bytes is None else int(reserve_bytes);assert charged>=len(data)\n assert hashlib.sha256(OLD.read_bytes()).hexdigest()==OLD_SHA,'old closed ledger changed'\n with(BASE/'LOCK').open('r+b')as lock:\n  fcntl.flock(lock,fcntl.LOCK_EX);j=json.loads((BASE/'LEDGER.json').read_text());assert j['cap']==CAP and j['record_cap']==COUNT\n  assert len(j['outputs'])<(COUNT if category=='final'else COUNT-24),'preserve24 final/archive output records'\n  assert charged<=CAP-j['charged'],'finite shared Mac byte allocation'\n  if category=='preparation':assert datetime.datetime.now(datetime.timezone.utc).timestamp()<=j['execution_deadline_epoch'],'600s current saved-stage wall ended; preservation/final only'\n  j['charged']+=charged;j['outputs'].append({'path':str(path),'category':category,'charged_bytes':charged,'actual_bytes':len(data),'sha256':hashlib.sha256(data).hexdigest(),'precharged':True,'failed_charge_retained':True})\n  b=(json.dumps(j,indent=2)+'\\n').encode();assert len(b)<=META and not(BASE/'LEDGER.next').exists(),'bounded/fresh metadata; orphan pending is retained'\n  fd=os.open(BASE/'LEDGER.next',os.O_WRONLY|os.O_CREAT|os.O_EXCL|os.O_NOFOLLOW,0o600)\n  with os.fdopen(fd,'wb')as f:f.write(b);f.flush();os.fsync(f.fileno())\n  os.replace(BASE/'LEDGER.next',BASE/'LEDGER.json')\n  fd=os.open(path,os.O_WRONLY|os.O_CREAT|os.O_EXCL|os.O_NOFOLLOW,0o600)\n  with os.fdopen(fd,'wb')as f:f.write(data);f.flush();os.fsync(f.fileno())\n return {'path':str(path),'actual_bytes':len(data),'charged_bytes':charged,'sha256':hashlib.sha256(data).hexdigest()}\n",
+  "actual_old_ledger_SHA256": "94dfdbefb227627e30efb8f35ad946712856ca352462cbf1e48ae39405a876f9",
+  "new_initial_five_reserved_records": [
+    {
+      "path": "/private/tmp/post67_command_history_unit_v1_20261016/LEDGER.json",
+      "category": "standing_control_metadata",
+      "charged_bytes": 262144,
+      "maximum_live_bytes": 262144,
+      "precharged": true
+    },
+    {
+      "path": "/private/tmp/post67_command_history_unit_v1_20261016/LEDGER.next",
+      "category": "standing_control_metadata",
+      "charged_bytes": 262144,
+      "maximum_live_bytes": 262144,
+      "precharged": true
+    },
+    {
+      "path": "/private/tmp/post67_command_history_unit_v1_20261016/LOCK",
+      "category": "standing_control_metadata",
+      "charged_bytes": 0,
+      "maximum_live_bytes": 0,
+      "precharged": true
+    },
+    {
+      "path": "/private/tmp/post67_command_history_unit_v1_20261016/bounded_output.py",
+      "category": "bootstrap",
+      "charged_bytes": 2831,
+      "actual_bytes": 2831,
+      "sha256": "6cbfdbafd1d97fad534a738b7fb2754911970b7d6e9b814372925e4cfd666154",
+      "precharged": true
+    },
+    {
+      "path": "/private/tmp/post67_command_history_unit_v1_20261016/ALLOCATION.json",
+      "category": "bootstrap",
+      "charged_bytes": 2544,
+      "actual_bytes": 2544,
+      "sha256": "0e7531f56d1b2a1252b700c0c00b510aa91a875b301d429761bcf154182bf47f",
+      "precharged": true
+    }
+  ],
+  "review_scope": "New post67 finite functional unit within existing direct human continuous-development authorization and status-chat technical scope review. Not new human permission, native68, Model/B/C or phase acceptance. All actual new Mac files incl control metadata counted; old spent ledger preserved."
+}

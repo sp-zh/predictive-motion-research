@@ -1,0 +1,28 @@
+{
+  "schema": "POST67_TWO_CONTEXT_SAVED_PREFIX_CONSTRAINT_FIGURE_V1",
+  "source_precheck_sha256": "a20047123b5a01a18e909ff45a8a395ee8661aa2f8fc95bdc481a4d8e55f4c9e",
+  "actual67_report_sha256": "eb28682c0f54785dbca068b2d9c40b8fe0e37606e36b3209f1ad5aae461abb95",
+  "renderer_sha256": "ab82bf17f730aeef3305b287706ef89f813f8f9ea34dc93ebcb6e1806edef789",
+  "renderer_source": "from pathlib import Path\nimport json,hashlib,io,csv,importlib.util\nimport matplotlib\nmatplotlib.use('Agg')\nimport matplotlib.pyplot as plt\nROOT=Path('/Users/uot/Documents/ChatGPT/ros');B=Path('/private/tmp/post67_command_history_unit_v1_20261016');old=json.loads((ROOT/'reviews/evidence/phase5_actual67_brake_window_failure_v1_20261016/RESULT_AND_BACKUP.json').read_text());new=json.loads((B/'ROOT_TWO_SAVED_PREFIX_DIAGNOSTIC_V1.json').read_text());fig,axes=plt.subplots(1,2,figsize=(12,5.8));rows=[]\nfor ax,c in zip(axes,new['contexts']):\n k=c['cycle'];extra=next(x['seven_first_interiors']for x in old['sampled_actual_V9']if x['cycle']==k)\n for j,(x,e)in enumerate(zip(c['scalar_joint_prefixes'],extra)):\n  lo=max(-1.,x['previous_alpha']-.08,-.08);hi=min(1.,x['previous_alpha']+.08,.08);target=x['analytic_a0'];y=j+1\n  ax.plot([lo,hi],[y+.12,y+.12],color='#2c72a6',linewidth=6,solid_capstyle='butt',label='Original scalar alpha / two jerk limits'if j==0 else None)\n  ax.plot([e['lower'],e['upper']],[y-.12,y-.12],color='#c67823',linewidth=6,solid_capstyle='butt',label='Actual67 extra first-alpha interval'if j==0 else None)\n  ax.scatter([target],[y],marker='x',s=45,linewidth=1.5,color='#8a2878',zorder=4,label='Analytic alpha for next w = 0'if j==0 else None)\n  rows.append(dict(cycle=k,joint=y,original_scalar_lower=lo,original_scalar_upper=hi,old_extra_lower=e['lower'],old_extra_upper=e['upper'],analytic_first_alpha=target,original_scalar_two_tick_pass=x['scalar_two_tick_zero_feasible']))\n ax.axvline(0,color='#888',linewidth=.7);ax.invert_yaxis();ax.set_yticks(range(1,8));ax.set_ylabel('Joint');ax.set_xlabel('First accepted-command acceleration (rad/s\u00b2)');ax.grid(axis='x',alpha=.2);ax.spines[['top','right']].set_visible(False);ax.set_title(f'Saved current{k}: '+('early two-tick stop fails jerk'if k==32 else 'late extra-subset restriction (zoom)'),loc='left',fontsize=10)\n if k==95:ax.set_xlim(-.004,.003)\nfig.suptitle('Post67 saved-data check: original bounds and extra planning intervals',x=.07,ha='left',fontsize=14);handles,labels=axes[0].get_legend_handles_labels();fig.legend(handles,labels,loc='upper left',bbox_to_anchor=(.06,.90),frameon=False,ncol=1,fontsize=9)\nfig.text(.07,.04,'Analytic candidate only: first alpha = -w / 4 ms, next alpha = 0; no Model, QP or controller call.\\nEarly32 violates original jerk20. Late95 passes stored14756 affine SI and200history; this does not certify a new nonlinear forecast or physical stop.\\nRight panel is zoomed: blue intervals extend beyond its axes; full bounds are in CSV. Native67 remains NOT_ACCEPTED.',fontsize=8.3);fig.subplots_adjust(left=.07,right=.985,top=.69,bottom=.24,wspace=.25)\nfiles={}\nfor ext in ['png','svg']:\n b=io.BytesIO();fig.savefig(b,format=ext,dpi=180,facecolor='white');files[ext]=b.getvalue()\nplt.close(fig);buf=io.StringIO();cw=csv.DictWriter(buf,fieldnames=list(rows[0]));cw.writeheader();cw.writerows(rows);files['csv']=buf.getvalue().encode();prov={'schema':'POST67_TWO_CONTEXT_SAVED_PREFIX_CONSTRAINT_FIGURE_V1','source_precheck_sha256':hashlib.sha256((B/'ROOT_TWO_SAVED_PREFIX_DIAGNOSTIC_V1.json').read_bytes()).hexdigest(),'actual67_report_sha256':hashlib.sha256((ROOT/'reviews/evidence/phase5_actual67_brake_window_failure_v1_20261016/RESULT_AND_BACKUP.json').read_bytes()).hexdigest(),'renderer_sha256':hashlib.sha256(Path(__file__).read_bytes()).hexdigest(),'renderer_source':Path(__file__).read_text(),'right_panel_zoom':[-.004,.003],'blue_intervals_extend_beyond_right_axes':True,'matplotlib':matplotlib.__version__,'scope':'Original scalar first/second jerk/alpha and actual extra first-alpha planning intervals only. No new native, Model, nonlinear B, physical C/stop or phase acceptance.','outputs':{k:{'bytes':len(v),'sha256':hashlib.sha256(v).hexdigest()}for k,v in files.items()}};files['json']=(json.dumps(prov,indent=2)+'\\n').encode();assert sum(map(len,files.values()))<=2*1024**2\nsp=importlib.util.spec_from_file_location('p67',B/'bounded_output.py');w=importlib.util.module_from_spec(sp);sp.loader.exec_module(w)\nfor ext,data in files.items():w.put(ROOT/('figures/post67_saved_prefix_constraints_v2_20261016.'+ext),data)\nprint(json.dumps({'output_prefix':'figures/post67_saved_prefix_constraints_v2_20261016','files':{k:len(v)for k,v in files.items()},'new_QP_Model_controller_calls':0}))\n",
+  "right_panel_zoom": [
+    -0.004,
+    0.003
+  ],
+  "blue_intervals_extend_beyond_right_axes": true,
+  "matplotlib": "3.10.3",
+  "scope": "Original scalar first/second jerk/alpha and actual extra first-alpha planning intervals only. No new native, Model, nonlinear B, physical C/stop or phase acceptance.",
+  "outputs": {
+    "png": {
+      "bytes": 120985,
+      "sha256": "b6263baf85dbb11c4c5d92e37dd824dae04e383c5e577d2c7f418ebd413a869d"
+    },
+    "svg": {
+      "bytes": 108973,
+      "sha256": "945909207e366607638441d6972dcc2f92ad154ccb3ca49afa43906d48fd6381"
+    },
+    "csv": {
+      "bytes": 1566,
+      "sha256": "f1a703ac3328ec4f7dccb428b5587de464b31fb6db1f64c3c74dee05515aaa36"
+    }
+  }
+}

@@ -1,0 +1,204 @@
+{
+  "schema": "ROOT_POST67_TWO_SAVED_PREFIX_DIAGNOSTIC_V1",
+  "contexts": [
+    {
+      "cycle": 32,
+      "scalar_joint_prefixes": [
+        {
+          "joint0": 0,
+          "w": 0.000505324864443074,
+          "previous_alpha": 0.00978721448688796,
+          "analytic_a0": -0.1263312161107685,
+          "analytic_a1": 0.0,
+          "first_jerk": -34.02960764941412,
+          "second_jerk": 31.582804027692124,
+          "scalar_two_tick_zero_feasible": false
+        },
+        {
+          "joint0": 1,
+          "w": -0.002385950143093232,
+          "previous_alpha": -0.03641847209714022,
+          "analytic_a0": 0.596487535773308,
+          "analytic_a1": 0.0,
+          "first_jerk": 158.22650196761205,
+          "second_jerk": -149.12188394332702,
+          "scalar_two_tick_zero_feasible": false
+        },
+        {
+          "joint0": 2,
+          "w": 0.002382355733794031,
+          "previous_alpha": 0.03611035981606117,
+          "analytic_a0": -0.5955889334485077,
+          "analytic_a1": 0.0,
+          "first_jerk": -157.9248233161422,
+          "second_jerk": 148.89723336212694,
+          "scalar_two_tick_zero_feasible": false
+        },
+        {
+          "joint0": 3,
+          "w": 0.0023859501430932325,
+          "previous_alpha": 0.03641847209714022,
+          "analytic_a0": -0.5964875357733082,
+          "analytic_a1": 0.0,
+          "first_jerk": -158.22650196761208,
+          "second_jerk": 149.12188394332705,
+          "scalar_two_tick_zero_feasible": false
+        },
+        {
+          "joint0": 4,
+          "w": -0.0007928995234220859,
+          "previous_alpha": 0.0109915348176985,
+          "analytic_a0": 0.19822488085552145,
+          "analytic_a1": 0.0,
+          "first_jerk": 46.80833650945574,
+          "second_jerk": -49.55622021388036,
+          "scalar_two_tick_zero_feasible": false
+        },
+        {
+          "joint0": 5,
+          "w": 0.002385950143093232,
+          "previous_alpha": 0.03641847209714011,
+          "analytic_a0": -0.596487535773308,
+          "analytic_a1": 0.0,
+          "first_jerk": -158.22650196761202,
+          "second_jerk": 149.12188394332702,
+          "scalar_two_tick_zero_feasible": false
+        },
+        {
+          "joint0": 6,
+          "w": -0.0015854325280717282,
+          "previous_alpha": -0.008943494815387257,
+          "analytic_a0": 0.396358132017932,
+          "analytic_a1": 0.0,
+          "first_jerk": 101.32540670832982,
+          "second_jerk": -99.089533004483,
+          "scalar_two_tick_zero_feasible": false
+        }
+      ],
+      "all_scalar_two_tick_zero": false,
+      "original14756_SI_max": 138.2265019676121,
+      "original_worst_row": 7,
+      "original_worst_label": [
+        "feedback_jerk/0/3",
+        "rad/s^3"
+      ],
+      "rounded_original200_history_failures": [
+        1,
+        2
+      ],
+      "progress_controls_preserved_bitexact": true,
+      "scope": "Saved analytic candidate only, not executed. Full joint zero-tail with actual native progress; original stored affine SI can refute but cannot prove new nonlinear Model/B/physical validity. Original extra nominal-centered alpha trust not silently removed."
+    },
+    {
+      "cycle": 95,
+      "scalar_joint_prefixes": [
+        {
+          "joint0": 0,
+          "w": 4.992633441130413e-07,
+          "previous_alpha": -3.0810823456375175e-17,
+          "analytic_a0": -0.0001248158360282603,
+          "analytic_a1": 0.0,
+          "first_jerk": -0.031203959007057372,
+          "second_jerk": 0.031203959007065078,
+          "scalar_two_tick_zero_feasible": true
+        },
+        {
+          "joint0": 1,
+          "w": 1.0520518155502448e-05,
+          "previous_alpha": 0.0014355377123645883,
+          "analytic_a0": -0.002630129538875612,
+          "analytic_a1": 0.0,
+          "first_jerk": -1.01641681281005,
+          "second_jerk": 0.657532384718903,
+          "scalar_two_tick_zero_feasible": true
+        },
+        {
+          "joint0": 2,
+          "w": 4.9926288166594e-07,
+          "previous_alpha": -1.1024663204106753e-16,
+          "analytic_a0": -0.000124815720416485,
+          "analytic_a1": 0.0,
+          "first_jerk": -0.03120393010409369,
+          "second_jerk": 0.03120393010412125,
+          "scalar_two_tick_zero_feasible": true
+        },
+        {
+          "joint0": 3,
+          "w": 1.4542067452299284e-06,
+          "previous_alpha": 0.0008113554477070212,
+          "analytic_a0": -0.0003635516863074821,
+          "analytic_a1": 0.0,
+          "first_jerk": -0.2937267835036258,
+          "second_jerk": 0.09088792157687052,
+          "scalar_two_tick_zero_feasible": true
+        },
+        {
+          "joint0": 4,
+          "w": -4.992626997286329e-07,
+          "previous_alpha": -5.370718281184298e-17,
+          "analytic_a0": 0.00012481567493215822,
+          "analytic_a1": 0.0,
+          "first_jerk": 0.03120391873305298,
+          "second_jerk": -0.031203918733039553,
+          "scalar_two_tick_zero_feasible": true
+        },
+        {
+          "joint0": 5,
+          "w": 4.992622618300827e-07,
+          "previous_alpha": -1.2123159057577174e-17,
+          "analytic_a0": -0.00012481556545752067,
+          "analytic_a1": 0.0,
+          "first_jerk": -0.031203891364377137,
+          "second_jerk": 0.031203891364380166,
+          "scalar_two_tick_zero_feasible": true
+        },
+        {
+          "joint0": 6,
+          "w": -4.992628636476208e-07,
+          "previous_alpha": -1.122318655111948e-17,
+          "analytic_a0": 0.00012481571591190521,
+          "analytic_a1": 0.0,
+          "first_jerk": 0.03120392897797911,
+          "second_jerk": -0.031203928977976303,
+          "scalar_two_tick_zero_feasible": true
+        }
+      ],
+      "all_scalar_two_tick_zero": true,
+      "original14756_SI_max": 9.999999999217246e-14,
+      "original_worst_row": 4354,
+      "original_worst_label": [
+        "terminal/progress_r",
+        "1/s"
+      ],
+      "rounded_original200_history_failures": [],
+      "progress_controls_preserved_bitexact": true,
+      "scope": "Saved analytic candidate only, not executed. Full joint zero-tail with actual native progress; original stored affine SI can refute but cannot prove new nonlinear Model/B/physical validity. Original extra nominal-centered alpha trust not silently removed."
+    }
+  ],
+  "archive_binding": {
+    "archive_sha256": "ca925ce77c1290345d3d3ce4f2b0063cc8811e7053f8b0ef3351e62c82466534",
+    "archive_bytes": 2740890019,
+    "outer_full_reopened_SHA_CRC_single_gzip_EOF_again_verified": true,
+    "cached_members": 443,
+    "cached_stored_bytes": 47306105,
+    "maximum_in_memory_stored_bytes": 67108864,
+    "new_extracted_native_files": 0,
+    "samples": [
+      [
+        32,
+        "native67/run-attempt1/artifacts/cycle-32/trial-0"
+      ],
+      [
+        95,
+        "native67/run-attempt1/artifacts/cycle-95/trial-0"
+      ]
+    ]
+  },
+  "source_SHA256": "a44a868d542400805d084bf7bb01ff39bf32c04945ae3b07c8d2175c60cb282e",
+  "new_native_QP_calls": 0,
+  "new_Model_calls": 0,
+  "new_controller_calls": 0,
+  "purpose": "Refute unconditional two-tick-zero assumption at early32; determine whether late95 scalar opportunity survives original stored affine SI. No real/native result is clipped.",
+  "auditor_source": "from pathlib import Path\nimport json,sys,math,hashlib,signal,struct\nimport numpy as np\nBASE=Path('/private/tmp/post67_command_history_unit_v1_20261016');ROOT=Path('/Users/uot/Documents/ChatGPT/ros');report=json.loads((ROOT/'reviews/evidence/phase5_actual67_brake_window_failure_v1_20261016/RESULT_AND_BACKUP.json').read_text());exec(compile(report['sources']['view'],'<bounded-sealed67-view>','exec'),globals());view=ArchiveView(BASE)\nsys.path.insert(0,'/private/tmp/root_independent_controlled_stop52_review_20261012');from compressed_evidence50_v5 import EvidenceReadSet,load_math_definitions\nrs=EvidenceReadSet('tools/cold_storage_verification_v1/strict_codec_reader.py');ref=Path('/private/tmp/root_independent_controlled_stop52_review_20261012/reference_source');n=load_math_definitions(rs,ref/'audit_geometry_qp_actual.py',ref/'audit_actual39.py');mesh=[1,1,2,2,3,3,4,4,5,5,6,6,8,10,12,16,20,24,28,40]\nsignal.signal(signal.SIGALRM,lambda *_:(_ for _ in()).throw(TimeoutError('120s saved prefix analysis')));signal.alarm(120)\nout=[]\nfor cycle,base in view.samples:\n before=n['snapshot'](view.raw(base+'/observation_before.bin'));q=n['inline_full'](view.raw(base+'/inline_qp.bin'));raw=view.raw(base+'/candidate.bin');at=0\n for _ in range(3):length=struct.unpack_from('<Q',raw,at)[0];at+=8+length\n at+=8*8;count=struct.unpack_from('<Q',raw,at)[0];at+=8;assert count==160;U=np.frombuffer(raw,dtype='<f8',count=160,offset=at).copy();original_U=U.copy();w=before['x'][21:28];alpha=before['alpha'];joints=[]\n for j in range(7):\n  a0=-float(w[j])/.004;jerk0=(a0-float(alpha[j]))/.004;jerk1=-a0/.004\n  joints.append(dict(joint0=j,w=float(w[j]),previous_alpha=float(alpha[j]),analytic_a0=a0,analytic_a1=0.,first_jerk=jerk0,second_jerk=jerk1,scalar_two_tick_zero_feasible=abs(a0)<=1 and abs(jerk0)<=20 and abs(jerk1)<=20))\n  U[j::8]=0.;U[j]=a0\n values=q['A']@U;viol=np.maximum(np.maximum(q['l']-values,values-q['u']),0.);worst=int(np.argmax(viol));history=n['rounded_history'](before['x'],before['alpha'],before['b'],U,mesh,q['labels'],q['l'],q['u'])\n out.append(dict(cycle=cycle,scalar_joint_prefixes=joints,all_scalar_two_tick_zero=all(j['scalar_two_tick_zero_feasible']for j in joints),original14756_SI_max=float(np.max(viol)),original_worst_row=worst,original_worst_label=q['labels'][worst],rounded_original200_history_failures=history['failures'],progress_controls_preserved_bitexact=bool(np.array_equal(U[7::8],original_U[7::8])),scope='Saved analytic candidate only, not executed. Full joint zero-tail with actual native progress; original stored affine SI can refute but cannot prove new nonlinear Model/B/physical validity. Original extra nominal-centered alpha trust not silently removed.'))\nresult={'schema':'ROOT_POST67_TWO_SAVED_PREFIX_DIAGNOSTIC_V1','contexts':out,'archive_binding':view.binding,'source_SHA256':hashlib.sha256(Path(__file__).read_bytes()).hexdigest(),'new_native_QP_calls':0,'new_Model_calls':0,'new_controller_calls':0,'purpose':'Refute unconditional two-tick-zero assumption at early32; determine whether late95 scalar opportunity survives original stored affine SI. No real/native result is clipped.'}\nimport importlib.util\nsp=importlib.util.spec_from_file_location('post67budget',BASE/'bounded_output.py');b=importlib.util.module_from_spec(sp);sp.loader.exec_module(b);b.put(BASE/'ROOT_TWO_SAVED_PREFIX_DIAGNOSTIC_V1.json',(json.dumps(result,indent=2)+'\\n').encode());print(json.dumps({'contexts':out,'new_QP_Model_controller':0}))\n",
+  "additional_scope_note": "This is a refuted early32 control construction and a late95 saved original-linear-SI opportunity only. No Model or optimizer call, no executed plant/control change. Genuine new nominal and added planning rows need separate implementation and strict future validation."
+}

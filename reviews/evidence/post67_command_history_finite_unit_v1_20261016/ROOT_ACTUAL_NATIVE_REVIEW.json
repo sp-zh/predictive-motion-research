@@ -1,0 +1,69 @@
+{
+  "schema": "ROOT_POST67_ACTUAL_SAVED_NATIVE_INDEPENDENT_REVIEW_V1",
+  "reports": [
+    {
+      "case": 32,
+      "baseline144x_dynamic_y_160U_bitexact": true,
+      "scaled_rows": 7357
+    },
+    {
+      "case": 95,
+      "baseline144x_dynamic_y_160U_bitexact": true,
+      "scaled_rows": 7391,
+      "original14756_SI_max": 1.0000000001864224e-13,
+      "changed_extra_alpha_row_count": 135,
+      "allowed_extra_alpha_row_set_size": 140,
+      "all_changed_rows_inside_declared140": true,
+      "base_140jointjerk_20progress_264floors_unchanged": true,
+      "native_residuals": {
+        "hint": {
+          "scaled_primal": 2.056701875051848e-19,
+          "scaled_stationarity": 9.75781955236954e-19
+        },
+        "native": {
+          "scaled_primal": 1.0135121908394495e-15,
+          "scaled_stationarity": 4.2113122884768206e-16
+        }
+      },
+      "original200history_failures": [],
+      "strict_first7_gaps": [
+        -2.50736655886878e-07,
+        -3.569826528695629e-06,
+        -2.5073711833389516e-07,
+        -3.6429079204448734e-07,
+        -2.507373002716876e-07,
+        -2.507377381699946e-07,
+        -2.507371363524052e-07
+      ],
+      "strict140alpha_pass": true,
+      "exact_last8zero": true,
+      "recorded_current_progress_saved_only": true,
+      "first_two_commands": [
+        {
+          "command0": 0,
+          "w_inf": 4.320562087931237e-06,
+          "alpha_inf": 0.0015499890168928028,
+          "jerk_inf": 0.7463816823143478,
+          "w_below_stop": false,
+          "alpha_below_stop": false
+        },
+        {
+          "command0": 1,
+          "w_inf": 5.047672175280003e-06,
+          "alpha_inf": 0.0010803269771009272,
+          "jerk_inf": 0.3155718991721254,
+          "w_below_stop": false,
+          "alpha_below_stop": false
+        }
+      ],
+      "stopping_still_false": true
+    }
+  ],
+  "actual_saved_QP_calls": 3,
+  "Root_new_native_or_Model_calls": 0,
+  "source_and_vectors_capsule_SHA256": "bd86c71b58452b26f53d62a4fc722178caf07e565d341840932035e5ca88968a",
+  "phase_deadline_preserved": true,
+  "retained_v1_reader_failure": "V1 incorrectly required every allowed140 extra-alpha row to change. Some first-command rows remain identical because the fixed5e-7 floor dominates both centers. V2 checks changed indices are a subset and every other row remains unchanged; records the actual count. No experiment/solver/data rerun or edit.",
+  "source": "from pathlib import Path\nimport json,base64,hashlib,struct,math,sys,importlib.util,numpy as np\nB=Path('/private/tmp/post67_command_history_unit_v1_20261016');R=Path('/Users/uot/Documents/ChatGPT/ros');caps=json.loads((B/'DELL_FINAL_SAVED_RESULTS_CAPSULE_V1.json').read_text());files={}\nfor e in caps['files']:\n b=base64.b64decode(e['base64'],validate=True);assert len(b)==e['bytes']and hashlib.sha256(b).hexdigest()==e['sha256'];files[e['path']]=b\nsys.path.insert(0,'/private/tmp/root_independent_controlled_stop52_review_20261012');from compressed_evidence50_v5 import EvidenceReadSet,load_math_definitions\nrs=EvidenceReadSet('tools/cold_storage_verification_v1/strict_codec_reader.py');ref=Path('/private/tmp/root_independent_controlled_stop52_review_20261012/reference_source');n=load_math_definitions(rs,ref/'audit_geometry_qp_actual.py',ref/'audit_actual39.py')\ndef pair(raw):\n at=0;out=[]\n for _ in range(2):\n  count=struct.unpack_from('<Q',raw,at)[0];at+=8;assert count<=20000 and at+count*8<=len(raw);out.append(np.frombuffer(raw,dtype='<f8',count=count,offset=at).copy());at+=count*8\n assert at==len(raw);return out\n\ndef candidate_side(path):\n b=path.read_bytes();at=0;out=[]\n for _ in range(9):\n  count=struct.unpack_from('<Q',b,at)[0];at+=8;assert count<=20000 and at+count*8<=len(b);out.append(np.frombuffer(b,dtype='<f8',count=count,offset=at).copy());at+=count*8\n assert at==len(b);return out\nreports=[];mesh=[1,1,2,2,3,3,4,4,5,5,6,6,8,10,12,16,20,24,28,40]\nfor c in [32,95]:\n P=B/('context'+str(c));raw=lambda name:rs.reader.verify_artifact(P/name,True,True)[0];red=n['reduction'](raw('qp_equality_reduction.bin'));q=n['inline_full'](raw('inline_qp.bin'));obs=n['snapshot'](raw('observation_before.bin'));old=n['candidate'](raw('candidate.bin'));remote=f'/mnt/d/CodexTransfer/post67-command-history-v1-20261016/saved64/regression{c}-attempt1/'\n x,y=pair(files[remote+'case.baseline.native.bin']);U,empty=pair(files[remote+'case.baseline.U.bin']);assert len(empty)==0 and x.tobytes()==red['rawx'].tobytes()and y.tobytes()==red['rawy'].tobytes()and U.tobytes()==old['U'].tobytes()\n o={'case':c,'baseline144x_dynamic_y_160U_bitexact':True,'scaled_rows':len(y)}\n if c==95:\n  x,y=pair(files[remote+'case.inward.native.bin']);U,empty=pair(files[remote+'case.inward.U.bin']);hx,hy=pair(files[remote+'case.new.hint.bin']);lo,hi,seed,center,strict,firstL,firstU,actuala,eligible=candidate_side(B/'candidate95.bin');assert eligible[0]==1 and len(empty)==0 and np.array_equal(center[7::8],old['U'][7::8]);assert np.array_equal(center[:7],-obs['x'][21:28]/.004)and np.array_equal(center.reshape(20,8)[1:,:7],np.zeros((19,7)))\n  base=len(lo)-424;changed=np.flatnonzero((lo!=red['ls'])|(hi!=red['us']));assert 0<len(changed)<=140 and np.all((changed>=base)&(changed<base+140))\n  residuals={}\n  for name,xx,yy in [('hint',hx,hy),('native',x,y)]:\n   ax=red['As']@xx;pr=max(0.,float(np.max(lo-ax)),float(np.max(ax-hi)));dual=float(np.max(abs(red['Hs']@xx+red['gs']+red['As'].T@yy)));assert pr<=1e-7 and dual<=1e-7;residuals[name]={'scaled_primal':pr,'scaled_stationarity':dual}\n  recon=red['p']+red['Z']@(red['D']*x);assert np.array_equal(U[:144],recon[:144])and np.max(abs(U-recon))<1e-12\n  ax=q['A']@U;violation=max(0.,float(np.max(q['l']-ax)),float(np.max(ax-q['u'])));assert len(ax)==14756 and violation<=1e-7\n  history=n['rounded_history'](obs['x'],obs['alpha'],obs['b'],U,mesh,q['labels'],q['l'],q['u']);assert history['cycles']==200 and not history['failures']\n  firstgaps=[]\n  for j in range(7):\n   bound=max(.75*abs(float(obs['x'][21+j])),abs(float(obs['x'][21+j])+.004*float(center[j])),.75e-6);bound=math.nextafter(bound*(1+16*np.finfo(float).eps),math.inf);gap=math.nextafter(abs(float(obs['x'][21+j])+.004*float(U[j])),math.inf)-bound;assert gap<=0;firstgaps.append(gap)\n  assert np.max(abs((U-center).reshape(20,8)[:,:7]))<=strict[0]and np.array_equal(U[-8:],np.zeros(8))\n  ww=obs['x'][21:28].copy();prior=obs['alpha'].copy();prefix=[]\n  for k in [0,1]:\n   neww=np.array([float(ww[j])+.004*float(U[8*k+j])for j in range(7)]);ia=(neww-ww)/.004;jj=(ia-prior)/.004;prefix.append({'command0':k,'w_inf':float(np.max(abs(neww))),'alpha_inf':float(np.max(abs(ia))),'jerk_inf':float(np.max(abs(jj))),'w_below_stop':bool(np.max(abs(neww))<=1e-6),'alpha_below_stop':bool(np.max(abs(ia))<=1e-4)});ww,prior=neww,ia\n  assert prefix[-1]['w_inf']==5.047672175280003e-6 and not prefix[-1]['w_below_stop']\n  o.update(original14756_SI_max=violation,changed_extra_alpha_row_count=len(changed),allowed_extra_alpha_row_set_size=140,all_changed_rows_inside_declared140=True,base_140jointjerk_20progress_264floors_unchanged=True,native_residuals=residuals,original200history_failures=history['failures'],strict_first7_gaps=firstgaps,strict140alpha_pass=True,exact_last8zero=True,recorded_current_progress_saved_only=True,first_two_commands=prefix,stopping_still_false=True)\n reports.append(o)\nwriter=json.loads((B/'FINAL_WRITER_PACKET_V1.json').read_text());assert writer['native_saved_calls']==3 and writer['Model_calls']==writer['controller68_calls']==0 and writer['all_new_calls_completed_before_deadline']\nresult={'schema':'ROOT_POST67_ACTUAL_SAVED_NATIVE_INDEPENDENT_REVIEW_V1','reports':reports,'actual_saved_QP_calls':3,'Root_new_native_or_Model_calls':0,'source_and_vectors_capsule_SHA256':hashlib.sha256((B/'DELL_FINAL_SAVED_RESULTS_CAPSULE_V1.json').read_bytes()).hexdigest(),'phase_deadline_preserved':True,'retained_v1_reader_failure':'V1 incorrectly required every allowed140 extra-alpha row to change. Some first-command rows remain identical because the fixed5e-7 floor dominates both centers. V2 checks changed indices are a subset and every other row remains unchanged; records the actual count. No experiment/solver/data rerun or edit.','source':Path(__file__).read_text(),'scope':'Data-only prototype of changed extra planning center in fixed ORIGINAL saved affine problem. No genuine forecast regenerated, no B400/nonlinear/physical C/stop or online implementation acceptance. Current recorded native progress is legal saved input only, not an available same-cycle online nominal input. Late actual returned candidate still fails original stop velocity after two commands; early refusal retained.'}\nsp=importlib.util.spec_from_file_location('p67',B/'bounded_output.py');b=importlib.util.module_from_spec(sp);sp.loader.exec_module(b);b.put(R/'reviews/evidence/post67_command_history_finite_unit_v1_20261016/ROOT_ACTUAL_NATIVE_REVIEW.json',(json.dumps(result,indent=2)+'\\n').encode(),category='final');print(json.dumps({'reports':reports,'actual_calls':3,'Root_new_calls':0}))\n",
+  "scope": "Data-only prototype of changed extra planning center in fixed ORIGINAL saved affine problem. No genuine forecast regenerated, no B400/nonlinear/physical C/stop or online implementation acceptance. Current recorded native progress is legal saved input only, not an available same-cycle online nominal input. Late actual returned candidate still fails original stop velocity after two commands; early refusal retained."
+}
