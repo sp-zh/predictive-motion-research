@@ -1,0 +1,79 @@
+{
+  "schema": "ROOT67_FINAL_ORIGINAL_SSH_SOURCE_AND_SENT_INDEPENDENT_READBACK_V1",
+  "utc": "2026-10-17T01:51:17.279471+00:00",
+  "payload_files_rehashed": 3594,
+  "source_payload_bytes": 2787036839,
+  "every_original_stored_SHA_size_readonly_verified": true,
+  "all1746_fresh_runtime_input_SHA_size_mode_resolved_unchanged": true,
+  "before_after_SHA256": "656e213a3b8ccd8cb2d5e0abec28894d5486fde9a558b2bf8625330e7628ba01",
+  "prepared_sha256": "df2515c0875f9c7d8cc13a1937c71b0a376bd01f1a44639ec9a420b40714c4dc",
+  "source_manifest_sha256": "1c4291d8cfa581bb9ee37a16e1b7f360f8c061aa9e3e8e5a50fa373e65518a32",
+  "config_sha256": "df58fbf658bb42038e584fdcb85e2170e5cd27f005faf13ec619b0e2c969d82c",
+  "producer_sent": {
+    "schema": "POSTNATIVE67_DIRECT_MAC_PRODUCER_STREAM_SENT_V1",
+    "complete": true,
+    "utc": "2026-10-17T01:46:56.014576+00:00",
+    "purpose": "NATIVE_FINITE67",
+    "bytes": 2740890019,
+    "sha256": "ca925ce77c1290345d3d3ce4f2b0063cc8811e7053f8b0ef3351e62c82466534",
+    "outer_tar_raw_bytes": 2796574720,
+    "attempted_bytes_charged": 2740890019,
+    "prepared_sha256": "df2515c0875f9c7d8cc13a1937c71b0a376bd01f1a44639ec9a420b40714c4dc",
+    "source_manifest_sha256": "1c4291d8cfa581bb9ee37a16e1b7f360f8c061aa9e3e8e5a50fa373e65518a32",
+    "source_payload_count": 3594,
+    "tar_members": 3598,
+    "source_before_after_stable": true,
+    "no_Dell_tar_file": true,
+    "actual_volumes_after": [
+      {
+        "DeviceID": "C:",
+        "FreeSpace": 86882615296,
+        "Size": 488030334976
+      },
+      {
+        "DeviceID": "D:",
+        "FreeSpace": 87631679488,
+        "Size": 512098299904
+      }
+    ],
+    "wall_seconds": 61.41102482000133,
+    "Mac_persisted_reopen_readback": "PENDING",
+    "scope": "Complete bounded stream emitted once only. Producer READY does not prove Mac persistence/independent member+codec/reopen verification or phase/stop acceptance."
+  },
+  "stream_consumed": {
+    "schema": "POSTNATIVE67_DIRECT_MAC_SINGLE_USE_STREAM_CONSUMED_V1",
+    "utc": "2026-10-17T01:45:54.923296+00:00",
+    "purpose": "NATIVE_FINITE67",
+    "prepared_sha256": "df2515c0875f9c7d8cc13a1937c71b0a376bd01f1a44639ec9a420b40714c4dc",
+    "archive_aggregate_cap": 4294967296,
+    "automatic_retries": 0,
+    "failed_Mac_partial_must_stay_charged": true
+  },
+  "original_driver_and_native_gone": true,
+  "active_project_native": [],
+  "owner": "01a114d9-3a3a-7071-b94f-624581000992",
+  "new_native_Model_or_solver_calls": 0,
+  "scope": "Actual67 stored-byte recovery plus unchanged1746 runtime inputs only. No stopping/task/realtime/phase or standalone environment acceptance; old53-57 gaps remain.",
+  "Mac_READY": {
+    "schema": "MAC_DIRECT_STREAM_PERSISTED_ARCHIVE_READY_V1",
+    "archive": "/Users/uot/Documents/ChatGPT/ros/transfer/cold-backups/native67-complete-direct-mac-20261016-v1/complete.tar.gz",
+    "bytes": 2740890019,
+    "sha256": "ca925ce77c1290345d3d3ce4f2b0063cc8811e7053f8b0ef3351e62c82466534",
+    "members": 3598,
+    "codec_counts": {
+      "source_complete": 3146,
+      "closed_source_failure_prefix": 0,
+      "unknown_stored_only": 0,
+      "opaque_raw_only": 0
+    },
+    "producer_sent_is_not_Mac_readback": true,
+    "persisted_readback_passed": true,
+    "no_Dell_duplicate_archive_stock": true,
+    "full_readback_sha256": "20ab43e520ecdabb5ac944b6899f76020c3e8a867bcd77a4c91a52f1c6c09851",
+    "scope": "Complete stored-byte recovery only. Closed source-failure/UNKNOWN bytes retain original qualification. Not standalone environment, mathematical/physical stop, realtime, task or phase acceptance."
+  },
+  "readback_source_code": "from pathlib import Path\nimport json,hashlib,datetime,os\nP=Path('/home/codextransfer/predictive_motion/results/phase5/session-controlled-stop-first-command-joint-jerk-interior-direct-mac-v1-20261016-attempt67');M=Path('/home/codextransfer/predictive_motion/transfer/cold-archives/native67-direct-mac-20261016-v1')\ndef sha(q):\n s=q.stat();h=hashlib.sha256();n=0\n with q.open('rb')as f:\n  while b:=f.read(1024**2):n+=len(b);h.update(b)\n t=q.stat();assert(s.st_ino,s.st_size,s.st_mtime_ns)==(t.st_ino,t.st_size,t.st_mtime_ns)and n==s.st_size\n return h.hexdigest()\nmanifest=json.loads((M/'SOURCE_MANIFEST.json').read_text());assert manifest['payload_count']==len(manifest['files'])==3594;total=0\nfor row in manifest['files']:\n rel=Path(row['path']).relative_to('native67');q=P/rel;assert q.is_file()and not q.is_symlink()and q.stat().st_mode&0o222==0 and q.stat().st_size==row['bytes']and sha(q)==row['sha256'];total+=q.stat().st_size\nassert total==manifest['payload_bytes']==2787036839\nsent=json.loads((M/'STREAM_SENT.json').read_text());consumed=json.loads((M/'STREAM_CONSUMED.json').read_text());assert sent['complete']and sent['source_before_after_stable']and sent['bytes']==2740890019 and sent['sha256']=='ca925ce77c1290345d3d3ce4f2b0063cc8811e7053f8b0ef3351e62c82466534'and consumed['automatic_retries']==0\nbefore=(P/'run-attempt1/BEFORE_INPUT_IDENTITIES.json').read_bytes();after=(P/'run-attempt1/AFTER_INPUT_IDENTITIES.json').read_bytes();assert before==after and len(json.loads(before))==1746\nfor e in json.loads(before):\n q=Path(e['requested_path']);assert q.stat().st_size==e['bytes']and sha(q)==e['sha256']and str(q.resolve())==e['resolved_path']and q.stat().st_mode&0o7777==e['mode']\nactive=[]\nfor d in Path('/proc').iterdir():\n if not d.name.isdigit():continue\n try:\n  a=(d/'cmdline').read_bytes().split(b'\\0');first=Path(a[0].decode(errors='replace')).name if a and a[0]else''\n  if first.startswith('active_first_cy'):active.append(int(d.name))\n except OSError:pass\nassert not active and not Path('/proc/29129').exists()and not Path('/proc/29130').exists()\nowner=json.loads(Path('/home/codextransfer/predictive_motion/PHASE5_WRITER_STATE_20261007.json').read_text());assert owner['owner_thread_id']=='01a114d9-3a3a-7071-b94f-624581000992'\nprint(json.dumps({'schema':'ROOT67_FINAL_ORIGINAL_SSH_SOURCE_AND_SENT_INDEPENDENT_READBACK_V1','utc':datetime.datetime.now(datetime.timezone.utc).isoformat(),'payload_files_rehashed':3594,'source_payload_bytes':total,'every_original_stored_SHA_size_readonly_verified':True,'all1746_fresh_runtime_input_SHA_size_mode_resolved_unchanged':True,'before_after_SHA256':hashlib.sha256(before).hexdigest(),'prepared_sha256':sha(M/'STREAM_PREPARED.json'),'source_manifest_sha256':sha(M/'SOURCE_MANIFEST.json'),'config_sha256':sha(M/'STREAM_CONFIG.json'),'producer_sent':sent,'stream_consumed':consumed,'original_driver_and_native_gone':True,'active_project_native':active,'owner':owner['owner_thread_id'],'new_native_Model_or_solver_calls':0,'scope':'Actual67 stored-byte recovery plus unchanged1746 runtime inputs only. No stopping/task/realtime/phase or standalone environment acceptance; old53-57 gaps remain.'}))",
+  "figure_visual_inspection": "Root viewed entire actual128-observation PNG: legible/all128 samples/thresholds/dwell0/50/hold N/A/no clipping",
+  "source_checkpoint": "c76b081d9e5945a9e4cf055b64c6fd348aad7668",
+  "writer_final_archive_packets": {}
+}

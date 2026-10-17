@@ -1,0 +1,41 @@
+{
+  "schema": "ACTUAL_STOP67_STATIC_FIGURE_V1",
+  "source_role": "ACTUAL_PHYSICAL_V_A_ACCEPTED_HISTORY_STOP_DWELL_V2",
+  "source_stored_sha256": "e27286a184f15af0cfe7331d4d59eaaebcf7783844d34c99e20a149169893f8e",
+  "source_raw_sha256": "11cc8109584ceb15c6f52e3375e466ce7e8b861d250f5a07b95431002332dff3",
+  "archive_sha256": "ca925ce77c1290345d3d3ce4f2b0063cc8811e7053f8b0ef3351e62c82466534",
+  "records": 128,
+  "original_thresholds": [
+    0.0001,
+    0.001,
+    1e-06,
+    0.0001,
+    1e-06,
+    0.0001,
+    1e-06,
+    1e-06
+  ],
+  "stop_dwell": 0,
+  "required_dwell": 50,
+  "renderer_code": "import io,csv\nimport matplotlib\nmatplotlib.use('Agg')\nimport matplotlib.pyplot as plt\nrows=RESULT['stop_records'];assert rows\nlimits=RESULT['stop_limits'];times=[(r['time_s']-rows[0]['time_s'])*1000 for r in rows]\nmetrics=['v','a','w','alpha','r','b'];field_names=['global_half','simulation_time_s','actual_v_inf_rad_s','actual_a_inf_rad_s2','accepted_w_inf_rad_s','accepted_alpha_inf_rad_s2','progress_r_s_inv','progress_abs_b_s_inv2','all_thresholds_met','original_guards','consecutive_dwell','hold_anchor_exists','C_drift_rad','s_drift']\nbuf=io.StringIO();cw=csv.writer(buf);cw.writerow(field_names)\nfor r in rows:cw.writerow([r['global_half'],r['time_s'],r['v'],r['a'],r['w'],r['alpha'],r['r'],abs(r['b']),int(r['below']),int(r['guards']),r['consecutive'],int(r['hold_anchor']),r['C_drift'],r['s_drift']])\nplt.rcParams.update({'font.family':'DejaVu Sans','font.size':10,'axes.spines.top':False,'axes.spines.right':False})\nfig,axes=plt.subplots(1,3,figsize=(13,4.9),sharex=True)\nlabels=[['Actual v / 1e-4 rad/s','Actual a / 1e-3 rad/s\u00b2'],['Accepted w / 1e-6 rad/s','Accepted alpha / 1e-4 rad/s\u00b2'],['Progress r / 1e-6 s\u207b\u00b9','Absolute b / 1e-4 s\u207b\u00b2']]\nfor panel,ax in enumerate(axes):\n for j,(color,marker)in enumerate([('#2463A6','o'),('#C46B20','s')]):\n  k=panel*2+j;ax.plot(times,[abs(r[metrics[k]])/limits[k]for r in rows],color=color,marker=marker,markersize=3,markevery=max(1,len(rows)//24),linewidth=1.5,label=labels[panel][j])\n ax.axhline(1,color='#454545',linestyle='--',linewidth=1);ax.set_yscale('symlog',linthresh=1);ax.set_ylim(bottom=0);ax.set_title(['Measured physical state','Accepted command history','Accepted progress history'][panel],loc='left',fontsize=11,y=1.25);ax.set_xlabel('Time after first braking observation (ms)');ax.grid(axis='y',alpha=.2);ax.legend(loc='lower left',bbox_to_anchor=(0,1.01),fontsize=8,frameon=False)\naxes[0].set_ylabel('Magnitude / original stop threshold (linear 0\u20131; log above 1)')\ncommits=RESULT['entry']['commits'];dwell=RESULT['stop_dwell'];required=RESULT['stop_required'];reason=RESULT['entry']['error'];below=sum(r['below']for r in rows);hold=any(r['hold_anchor']for r in rows)\nfig.suptitle('Attempt 67: actual braking observations in native simulation',x=.06,ha='left',fontsize=16)\nfig.text(.06,.87,f'{commits} committed commands \u00b7 {commits*2} task half-steps \u00d7 2 ms \u00b7 {len(rows)} braking observations',fontsize=10)\nfooter=f'Dashed line = original stop threshold. Dwell {dwell}/{required}; {below}/{len(rows)} observations meet all six thresholds.\\\\n'\nfooter+=('Hold anchor established; encoded drift shown in CSV.' if hold else 'Hold drift is N/A: no anchor formed.')+' Final result: '+(reason or 'native returned without error')+'\\\\n'\nfooter+='Offline native simulation \u00b7 Development diagnostic \u00b7 Phase5 NOT_ACCEPTED'\nfooter=footer.replace('\\\\n','\\n')\nfig.text(.06,.045,footer,fontsize=8.5);fig.subplots_adjust(left=.07,right=.985,top=.69,bottom=.23,wspace=.32)\nFIGURES={'csv':buf.getvalue().encode()}\nfor extension in ['png','svg']:\n b=io.BytesIO();fig.savefig(b,format=extension,dpi=180,facecolor='white');FIGURES[extension]=b.getvalue()\nplt.close(fig)\nraw=view.raw(view.A+'actual_stop_dwell.bin')\nprov={'schema':'ACTUAL_STOP67_STATIC_FIGURE_V1','source_role':'ACTUAL_PHYSICAL_V_A_ACCEPTED_HISTORY_STOP_DWELL_V2','source_stored_sha256':view.read_receipts[view.A+'actual_stop_dwell.bin']['stored_sha256'],'source_raw_sha256':hashlib.sha256(raw).hexdigest(),'archive_sha256':view.binding['archive_sha256'],'records':len(rows),'original_thresholds':limits,'stop_dwell':dwell,'required_dwell':required,'renderer_code':RENDER_SOURCE,'renderer_sha256':hashlib.sha256(RENDER_SOURCE.encode()).hexdigest(),'matplotlib':matplotlib.__version__,'selection':'Every actual braking observation in attempt67, no omission/extrapolation','hold_drift_status':'ACTUAL_ANCHOR_RECORDS_PRESENT'if hold else 'N/A_NO_ANCHOR','structural_error_flag_is_not_threshold_failure_counter':True,'scope':RESULT['scope'],'outputs':{k:{'bytes':len(v),'sha256':hashlib.sha256(v).hexdigest()}for k,v in FIGURES.items()}}\nFIGURES['json']=(json.dumps(prov,indent=2)+'\\n').encode()\nassert sum(map(len,FIGURES.values()))<=2*1024**2\n",
+  "renderer_sha256": "c583493d2415f47f855212b46590c012a0058be57e40ad4f3dc849bdc6df0184",
+  "matplotlib": "3.10.3",
+  "selection": "Every actual braking observation in attempt67, no omission/extrapolation",
+  "hold_drift_status": "N/A_NO_ANCHOR",
+  "structural_error_flag_is_not_threshold_failure_counter": true,
+  "scope": "All stop records/whole boundaries and trial0 nominal family replay; independent original B400/C2/SI/cost and true V9 at declared first/last samples. Saved arithmetic does not rerun all FCL/Model queries or establish task, real time, hardware or phase acceptance. All failures preserved.",
+  "outputs": {
+    "csv": {
+      "bytes": 21729,
+      "sha256": "3bd8a23195355e330bafe5e5cd3169220761bb2b8d3b4cc13421a0ec68103875"
+    },
+    "png": {
+      "bytes": 207514,
+      "sha256": "03ecb7d6ff50d0b98f1e1434ee4a7d70c24c805271f445c311c56367b5ce40ea"
+    },
+    "svg": {
+      "bytes": 145654,
+      "sha256": "a0b564a4a28657be30f1ae4c218c572ca6032336bd2d80d4d164e9e513e5e0fb"
+    }
+  }
+}
