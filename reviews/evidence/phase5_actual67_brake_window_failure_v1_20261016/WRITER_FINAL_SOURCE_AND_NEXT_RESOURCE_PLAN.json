@@ -1,0 +1,240 @@
+{
+  "schema": "ACTUAL67_FINAL_TWO_DEVICE_ARCHIVE_SOURCE_READBACK_CAUSE_AND_RESOURCE_PACKET_V1",
+  "original_SSH": {
+    "schema": "ORIGINAL_SSH67_FINAL_FULL_SOURCE_ARCHIVE_READBACK_AND_RESOURCES_V1",
+    "sent": {
+      "schema": "POSTNATIVE67_DIRECT_MAC_PRODUCER_STREAM_SENT_V1",
+      "complete": true,
+      "utc": "2026-10-17T01:46:56.014576+00:00",
+      "purpose": "NATIVE_FINITE67",
+      "bytes": 2740890019,
+      "sha256": "ca925ce77c1290345d3d3ce4f2b0063cc8811e7053f8b0ef3351e62c82466534",
+      "outer_tar_raw_bytes": 2796574720,
+      "attempted_bytes_charged": 2740890019,
+      "prepared_sha256": "df2515c0875f9c7d8cc13a1937c71b0a376bd01f1a44639ec9a420b40714c4dc",
+      "source_manifest_sha256": "1c4291d8cfa581bb9ee37a16e1b7f360f8c061aa9e3e8e5a50fa373e65518a32",
+      "source_payload_count": 3594,
+      "tar_members": 3598,
+      "source_before_after_stable": true,
+      "no_Dell_tar_file": true,
+      "actual_volumes_after": [
+        {
+          "DeviceID": "C:",
+          "FreeSpace": 86882615296,
+          "Size": 488030334976
+        },
+        {
+          "DeviceID": "D:",
+          "FreeSpace": 87631679488,
+          "Size": 512098299904
+        }
+      ],
+      "wall_seconds": 61.41102482000133,
+      "Mac_persisted_reopen_readback": "PENDING",
+      "scope": "Complete bounded stream emitted once only. Producer READY does not prove Mac persistence/independent member+codec/reopen verification or phase/stop acceptance."
+    },
+    "consumed": {
+      "schema": "POSTNATIVE67_DIRECT_MAC_SINGLE_USE_STREAM_CONSUMED_V1",
+      "utc": "2026-10-17T01:45:54.923296+00:00",
+      "purpose": "NATIVE_FINITE67",
+      "prepared_sha256": "df2515c0875f9c7d8cc13a1937c71b0a376bd01f1a44639ec9a420b40714c4dc",
+      "archive_aggregate_cap": 4294967296,
+      "automatic_retries": 0,
+      "failed_Mac_partial_must_stay_charged": true
+    },
+    "prepared_sha256": "df2515c0875f9c7d8cc13a1937c71b0a376bd01f1a44639ec9a420b40714c4dc",
+    "source_manifest": {
+      "bytes": 734748,
+      "sha256": "1c4291d8cfa581bb9ee37a16e1b7f360f8c061aa9e3e8e5a50fa373e65518a32"
+    },
+    "all3594_current_source_SHA_size_verified": true,
+    "payload_bytes": 2787036839,
+    "source_modes": [
+      256,
+      292,
+      365
+    ],
+    "all1746before_after_byteequal": true,
+    "before_after_SHA256": "656e213a3b8ccd8cb2d5e0abec28894d5486fde9a558b2bf8625330e7628ba01",
+    "original_driver_native_gone": true,
+    "any_current_active_native": [],
+    "volumes": [
+      {
+        "DeviceID": "C:",
+        "FreeSpace": 86883475456,
+        "Size": 488030334976
+      },
+      {
+        "DeviceID": "D:",
+        "FreeSpace": 87631679488,
+        "Size": 512098299904
+      }
+    ],
+    "wall_seconds": 2.1606652069895063,
+    "resource_snapshot": {
+      "original_each80GiB_reserve_retained": true,
+      "next_same_C_layout_entry_shortfall_bytes": 2371313664,
+      "next_same_C_layout_preparation_shortfall_bytes": 2413256704,
+      "combined_C_D_headroom_after80GiB_each": 2716463104,
+      "original_additional_physical_hot_total": 3221225472
+    },
+    "no_prior_source_deletion_or_new_Model": true
+  },
+  "saved_last95_first_step_diagnosis": {
+    "schema": "SAVED67_LAST95_FIRST_STEP_NOMINAL_PROTECTION_DIAG_V1",
+    "case": "cycle95/trial0",
+    "guard_role": "EXPLICIT_ORIGINAL_STRICT_FIRST_COMMAND_AND_SCALED_JOINT_JERK_INTERIOR_V9",
+    "candidate_reason": "CANDIDATE_FORWARD_REQUIRED_NO_EXECUTION_PERMISSION",
+    "native_flags": [
+      0,
+      1,
+      1,
+      0,
+      1,
+      0,
+      1
+    ],
+    "rows": [
+      {
+        "joint0": 0,
+        "w_before": 4.992633441130413e-07,
+        "nominal_alpha": -0.00010358927769210285,
+        "nominal_next_w": 8.490623334462984e-08,
+        "solver_rate_bound": 5e-07,
+        "strict_rate_bound": 7.500000000000028e-07,
+        "old_contraction_lower": -0.0002498158360282603,
+        "old_contraction_upper": 1.8416397173968164e-07,
+        "native_alpha": 1.9242691983591886e-18,
+        "previous_accepted_alpha": -3.0810823456375175e-17,
+        "actual_next_w": 4.99263344113049e-07,
+        "native_abs_contraction_ratio": 1.0000000000000155,
+        "nominal_protection_dominates_solver_half_w": false,
+        "analytical_zero_nextw_alpha_not_executed": -0.0001248158360282603,
+        "analytical_first_jerk_not_executed": -0.031203959007057372,
+        "scalar_only_zero_nextw_within_original_alpha1_jerk20": true
+      },
+      {
+        "joint0": 1,
+        "w_before": 1.0520518155502448e-05,
+        "nominal_alpha": 0.0007971900135295187,
+        "nominal_next_w": 1.3709278209620523e-05,
+        "solver_rate_bound": 1.3709278209620523e-05,
+        "strict_rate_bound": 1.3709278209620574e-05,
+        "old_contraction_lower": -0.00028316402704428123,
+        "old_contraction_upper": 0.0007971900135295188,
+        "native_alpha": -0.000282977571927223,
+        "previous_accepted_alpha": 0.0014355377123645883,
+        "actual_next_w": 9.388607867793556e-06,
+        "native_abs_contraction_ratio": 0.8924092643557789,
+        "nominal_protection_dominates_solver_half_w": true,
+        "analytical_zero_nextw_alpha_not_executed": -0.002630129538875612,
+        "analytical_first_jerk_not_executed": -1.01641681281005,
+        "scalar_only_zero_nextw_within_original_alpha1_jerk20": true
+      },
+      {
+        "joint0": 2,
+        "w_before": 4.9926288166594e-07,
+        "nominal_alpha": -8.65708901976829e-05,
+        "nominal_next_w": 1.5297932087520845e-07,
+        "solver_rate_bound": 5e-07,
+        "strict_rate_bound": 7.500000000000028e-07,
+        "old_contraction_lower": -0.00024981572041648506,
+        "old_contraction_upper": 1.8427958351499185e-07,
+        "native_alpha": 5.271753486139519e-17,
+        "previous_accepted_alpha": -1.1024663204106753e-16,
+        "actual_next_w": 4.992628816661509e-07,
+        "native_abs_contraction_ratio": 1.0000000000004226,
+        "nominal_protection_dominates_solver_half_w": false,
+        "analytical_zero_nextw_alpha_not_executed": -0.000124815720416485,
+        "analytical_first_jerk_not_executed": -0.03120393010409369,
+        "scalar_only_zero_nextw_within_original_alpha1_jerk20": true
+      },
+      {
+        "joint0": 3,
+        "w_before": 1.4542067452299284e-06,
+        "nominal_alpha": -0.0021200476461137076,
+        "nominal_next_w": -7.025983839224902e-06,
+        "solver_rate_bound": 7.025983839224902e-06,
+        "strict_rate_bound": 7.0259838392249276e-06,
+        "old_contraction_lower": -0.002120047646113708,
+        "old_contraction_upper": -0.0010396936055399077,
+        "native_alpha": -0.0010398783819760137,
+        "previous_accepted_alpha": 0.0008113554477070212,
+        "actual_next_w": -2.705306782674126e-06,
+        "native_abs_contraction_ratio": 1.8603316148464042,
+        "nominal_protection_dominates_solver_half_w": true,
+        "analytical_zero_nextw_alpha_not_executed": -0.0003635516863074821,
+        "analytical_first_jerk_not_executed": -0.2937267835036258,
+        "scalar_only_zero_nextw_within_original_alpha1_jerk20": true
+      },
+      {
+        "joint0": 4,
+        "w_before": -4.992626997286329e-07,
+        "nominal_alpha": 9.277370947757062e-05,
+        "nominal_next_w": -1.2816786181835044e-07,
+        "solver_rate_bound": 5e-07,
+        "strict_rate_bound": 7.500000000000028e-07,
+        "old_contraction_lower": -1.8432506784176513e-07,
+        "old_contraction_upper": 0.00024981567493215825,
+        "native_alpha": 7.616057482420338e-17,
+        "previous_accepted_alpha": -5.370718281184298e-17,
+        "actual_next_w": -4.992626997283283e-07,
+        "native_abs_contraction_ratio": 0.9999999999993898,
+        "nominal_protection_dominates_solver_half_w": false,
+        "analytical_zero_nextw_alpha_not_executed": 0.00012481567493215822,
+        "analytical_first_jerk_not_executed": 0.03120391873305298,
+        "scalar_only_zero_nextw_within_original_alpha1_jerk20": true
+      },
+      {
+        "joint0": 5,
+        "w_before": 4.992622618300827e-07,
+        "nominal_alpha": -8.953718915587366e-05,
+        "nominal_next_w": 1.4111350520658803e-07,
+        "solver_rate_bound": 5e-07,
+        "strict_rate_bound": 7.500000000000028e-07,
+        "old_contraction_lower": -0.0002498155654575207,
+        "old_contraction_upper": 1.8443454247932245e-07,
+        "native_alpha": 2.4566772353515033e-18,
+        "previous_accepted_alpha": -1.2123159057577174e-17,
+        "actual_next_w": 4.992622618300925e-07,
+        "native_abs_contraction_ratio": 1.0000000000000198,
+        "nominal_protection_dominates_solver_half_w": false,
+        "analytical_zero_nextw_alpha_not_executed": -0.00012481556545752067,
+        "analytical_first_jerk_not_executed": -0.031203891364377137,
+        "scalar_only_zero_nextw_within_original_alpha1_jerk20": true
+      },
+      {
+        "joint0": 6,
+        "w_before": -4.992628636476208e-07,
+        "nominal_alpha": 9.911558041768663e-05,
+        "nominal_next_w": -1.0280054197687431e-07,
+        "solver_rate_bound": 5e-07,
+        "strict_rate_bound": 7.500000000000028e-07,
+        "old_contraction_lower": -1.8428408809478297e-07,
+        "old_contraction_upper": 0.00024981571591190524,
+        "native_alpha": -3.342621539133545e-18,
+        "previous_accepted_alpha": -1.122318655111948e-17,
+        "actual_next_w": -4.992628636476342e-07,
+        "native_abs_contraction_ratio": 1.0000000000000266,
+        "nominal_protection_dominates_solver_half_w": false,
+        "analytical_zero_nextw_alpha_not_executed": 0.00012481571591190521,
+        "analytical_first_jerk_not_executed": 0.03120392897797911,
+        "scalar_only_zero_nextw_within_original_alpha1_jerk20": true
+      }
+    ],
+    "old_actual_inputs_unchanged": true,
+    "no_new_QP_Model_or_native68_call": true,
+    "scope": "Sourcecomplete known prefixes only; analytical scalar4ms history feasibility is NOT full originalQP/nonlinearB/physicalstop or proposed direct control. No clip/change original20/thresholds."
+  },
+  "next_functional_work_and_resources": {
+    "scope": "Saved-data design and resource qualification only; no68 or newModel in this bounded unit",
+    "current_stop_failure": "Physicalv/a and progressr/b meet last thresholds, virtualcommandw/alpha do not; keep original thresholds and all128 failed conjunctions",
+    "evidence_based_nominal_issue": "Last95 joint1 and3 nominal_next_w dominates solver_half_w bound. Actual contraction ratios .8924 and1.8603 respectively; first7 nominal-centered alpha trust can exclude scalar-zero-nextw alpha despite scalar originalalpha1/jerk20 feasibility. This is not full-QP/physical feasibility proof.",
+    "next_mathematical_candidate": "Design a genuine jerk-aware stopping nominal/prefix and compatible planning subset, preserving full original model/SI/strict200/B400/two2ms/C/stop. Do not clip real commands or replay/extend67. Must test saved data then fresh finite reviewed source/protocol.",
+    "resource_boundary": "Original80GiB per Dell volume and original caps retained; current same-C next entry/prep deficits explicitly computed. Evaluate resource design/extra verified storage without deleting old evidence or silently lowering standards. No claim that deleting guest ext4 tar returns Windows free space.",
+    "derived_budget_boundary": "Original10000-record/1GiB cumulative ledger unchanged; preserve remaining records for final publicbackup, no further raw banks/Model/automatic next entry."
+  },
+  "all_prior_failures_and_source67_immutable": true,
+  "phase5": "NOT_ACCEPTED",
+  "phase6": "NOT_STARTED"
+}
