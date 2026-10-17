@@ -1,0 +1,11 @@
+# Original joint-jerk planning interior67
+
+Only the existing140 joint `feedback_jerk/*` rows with units `rad/s^3` move inward in the numerical scaled solver bounds. The original14756 SI bounds, H/g/A/F/E, unscaled reduction bounds,20 progress-jerk rows, native tolerances and all strict20/200/B400/two2ms/C/stop checks remain. Actual solver bounds and old/new row identities are explicitly recorded in V9. No control or returned solver value is clipped; this is a smaller planning subset with no universal success or original-QP optimum claim.
+
+The exact102-file854661-byte main source is reconstructed from four overrides and pinned immutable V18/V19 files. `python3 materialize_source.py --check` reads and hashes every source without materializing a Mac copy. Supplying a fresh absolute directory instead restores the exact flat source; this utility neither builds nor runs a Model/controller.
+
+Saved actual66 current51 regression reproduces baseline144x/7338y/160U bit-for-bit when initialized with the real recorded hint. A prior attempt incorrectly initialized native from its returned x/y; that failed experiment remains preserved. The corrected finite regression has two native calls, then the real tightened native return passes original14756 SI, original strict7/140alpha,200 command-history and400 positive progress checks. Maximum rounded command jerk is19.99995338623146 against unchanged20. This does not establish a physical stop or full task.
+
+Integration completes10compile/2link with1858 before/after input identities unchanged. The actual shared helper's finite pure regression verifies140 selected joint rows,20 progress rows unchanged, all7338 bounds byte-for-byte, defaultfalse compatibility, original V6/non-beta preservation and141 hint events; missing-row input refuses before any native call. Runtime102 source and separately compiled test are distinguished. The main binary SHA is24f528f945a8ba8a154a9eee9494bce682d787368d8b78d8b5ca889e26cdbd90.
+
+[Actual66 retained failure and complete backup](../../reviews/evidence/phase5_actual66_literal_jerk_failure_v1_20261016/README.md) remain the latest actual result. Controller67 has not entered at this source checkpoint; fresh runtime/resource/ownership and single-use startup qualification remain. Phase5 NOT_ACCEPTED; Phase6 NOT_STARTED; no hardware/heldout/main/scorer authorization.

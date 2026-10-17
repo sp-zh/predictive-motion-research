@@ -1,0 +1,627 @@
+{
+  "schema": "PHASE5_V20_EFFECTIVE_SOURCE_OVERLAY_V1",
+  "file_count": 102,
+  "total_bytes": 854661,
+  "files": [
+    {
+      "name": "README.md",
+      "storage": "BASE_V18",
+      "bytes": 4816,
+      "sha256": "0823349a83b8145f3703be06d372d523efa7729af0f713efa1c14a1685d5f3c5"
+    },
+    {
+      "name": "active_first_cycle.cpp",
+      "storage": "V20_OVERLAY",
+      "bytes": 66487,
+      "sha256": "444501136f7c91052a5cc6fb8c41689eecf3396dadb82be1249e6a1fe9619c3e"
+    },
+    {
+      "name": "actual_stop_monitor.hpp",
+      "storage": "BASE_V18",
+      "bytes": 3580,
+      "sha256": "beaf7d76164638ebe035c9961a9f6a940becac7a62395444c55e301c006d0a4c"
+    },
+    {
+      "name": "actual_stop_monitor_tests.cpp",
+      "storage": "BASE_V18",
+      "bytes": 3830,
+      "sha256": "cd56b9dc8dff809d10eb8ada519d37c551b9347c64d0c6500d05683fb3e9b5af"
+    },
+    {
+      "name": "actual_task_metrics.hpp",
+      "storage": "BASE_V18",
+      "bytes": 1883,
+      "sha256": "83bb0f21e0bfa830b4d8f7e356f9f7c2ce916c49d540c948588d5e460e07d900"
+    },
+    {
+      "name": "actual_task_metrics_tests.cpp",
+      "storage": "BASE_V18",
+      "bytes": 1359,
+      "sha256": "00bea8673e19abc62233e5933722eae94c35b7540d4f3d2c5e609dc2a83b374c"
+    },
+    {
+      "name": "affine_assembly.cpp",
+      "storage": "BASE_V18",
+      "bytes": 28981,
+      "sha256": "d478eda1f0fe97bfc41851515f4baa3e485fd4a57968a62dcb6233ae1157bbd5"
+    },
+    {
+      "name": "affine_assembly.hpp",
+      "storage": "BASE_V18",
+      "bytes": 6026,
+      "sha256": "6faee2961242052c7655da41e8988dd0844f14c3cfa885672aa7c03eaa1dcb57"
+    },
+    {
+      "name": "boundary_retention_codec_tests.cpp",
+      "storage": "BASE_V18",
+      "bytes": 3137,
+      "sha256": "52bd351c91922c6fe6c5ad2f6ba1371a44c553e0aea005f75552cf5ca5368098"
+    },
+    {
+      "name": "boundary_retention_limits57.hpp",
+      "storage": "BASE_V18",
+      "bytes": 3043,
+      "sha256": "1165b30678843fc54dfcf3f87804f4f945a452b5005075a4d4ad32970251fb72"
+    },
+    {
+      "name": "bounded_current_trials.hpp",
+      "storage": "BASE_V18",
+      "bytes": 2347,
+      "sha256": "4d7663f1dbc75bd125ca5319817f6b2b363222310ce337f06f0a468e1cd8ef61"
+    },
+    {
+      "name": "bounded_current_trials_tests.cpp",
+      "storage": "BASE_V18",
+      "bytes": 1724,
+      "sha256": "dc8ce680a0c19249c3462003f23f80e2f4dba5a58a7a921de851bff5074fb23b"
+    },
+    {
+      "name": "bounded_flat_progress_seed_tests.cpp",
+      "storage": "BASE_V18",
+      "bytes": 6001,
+      "sha256": "dcf9081d258d88f64f10935df307f3f4b619d6677986ecac7e62ddc872faeb65"
+    },
+    {
+      "name": "bounded_flat_progress_seed_v4.hpp",
+      "storage": "BASE_V18",
+      "bytes": 4855,
+      "sha256": "0365f8fc9035c0be9f778adc92702339aa1bd297caadb82836a5a53e388f8fd4"
+    },
+    {
+      "name": "bounded_global_interval_seed_v6.hpp",
+      "storage": "BASE_V18",
+      "bytes": 10754,
+      "sha256": "a4f239ab1f31a3a3ca9f56e73feec8dfd52d2f12695165a296f1126322c47a6a"
+    },
+    {
+      "name": "bounded_progress_seed.hpp",
+      "storage": "BASE_V18",
+      "bytes": 4309,
+      "sha256": "6dc1d317db9504ec248dda3f04ef2917bd4850de027c032575eff5d0f39c4ff0"
+    },
+    {
+      "name": "bounded_progress_seed_tests.cpp",
+      "storage": "BASE_V18",
+      "bytes": 2670,
+      "sha256": "78d76a69ced03c25e90242203e3ef5d61a858ada18d8fd1ee854d76b53f965d3"
+    },
+    {
+      "name": "bounded_row_progress_seed_tests.cpp",
+      "storage": "BASE_V18",
+      "bytes": 7690,
+      "sha256": "0be38cd032a886767830f2cb3249fb1d929f188ea50fd6c436b2ffee08d561bd"
+    },
+    {
+      "name": "bounded_row_progress_seed_v5.hpp",
+      "storage": "BASE_V18",
+      "bytes": 7364,
+      "sha256": "15d83707fac469d2f4ff404a12c9d46dc994acd57d56c0ad49f3de45f435238d"
+    },
+    {
+      "name": "box_screen_tests.cpp",
+      "storage": "BASE_V18",
+      "bytes": 2954,
+      "sha256": "d922876babec2867dd1293bcee259ac12e4b2a6af5a30dd551209e097c0abaf8"
+    },
+    {
+      "name": "braking_nominal62_codec.hpp",
+      "storage": "BASE_V18",
+      "bytes": 4779,
+      "sha256": "186a7698b9e4fbc4b9452253aff93a1a3b48c601ba8763ee2115d902f6f7d8f3"
+    },
+    {
+      "name": "braking_nominal63_codec.hpp",
+      "storage": "BASE_V18",
+      "bytes": 4938,
+      "sha256": "7c7aa4d4646f2fc0a3afff8670e1546e912d9442163a4b22a44a8613f4523e8f"
+    },
+    {
+      "name": "candidate_validation.cpp",
+      "storage": "BASE_V18",
+      "bytes": 10659,
+      "sha256": "aa76869432f465e45c48acf777913eea5972414a145eedbf02645035773f63e9"
+    },
+    {
+      "name": "candidate_validation.hpp",
+      "storage": "BASE_V18",
+      "bytes": 1526,
+      "sha256": "d816bedb47cff25c49a0d5577a9fa805771816caa1dc406d4772c1ee843fe4fa"
+    },
+    {
+      "name": "contract_interior66_tests.cpp",
+      "storage": "BASE_V19",
+      "bytes": 5106,
+      "sha256": "9b8c0d8dd78b75a6e8c2a015e74b4e420c3a2538a4383721d2e59205249c350a"
+    },
+    {
+      "name": "contract_interior66_v1.hpp",
+      "storage": "BASE_V19",
+      "bytes": 2167,
+      "sha256": "195995043554df7c3876756630433a94dabdc69c027e8e1880eaaec2906287d9"
+    },
+    {
+      "name": "counted_geometry.hpp",
+      "storage": "BASE_V18",
+      "bytes": 7359,
+      "sha256": "aede8b1a2b4f5a17e00c7fd477a3db0e9264eab2539c7aa20eb97f62959d9401"
+    },
+    {
+      "name": "current_alpha_trust.hpp",
+      "storage": "BASE_V18",
+      "bytes": 4084,
+      "sha256": "e22e52d912cce18c61aaba4a907a92117853d047020a5bc0a614cb663fd83e78"
+    },
+    {
+      "name": "current_alpha_trust_tests.cpp",
+      "storage": "BASE_V18",
+      "bytes": 2903,
+      "sha256": "adb42a13804dd8ccfd6fc665cdd37aab5a33ab990ca5ac5ae1ac31450ea9a04d"
+    },
+    {
+      "name": "current_braking_nominal62.hpp",
+      "storage": "BASE_V18",
+      "bytes": 9401,
+      "sha256": "00d0e83bf68cdaf2251701a0c7b422e93629d97bcae0e398c6404775d304e5a7"
+    },
+    {
+      "name": "current_braking_nominal62_tests.cpp",
+      "storage": "BASE_V18",
+      "bytes": 9306,
+      "sha256": "e738285cc7c7cbe729acb4f3a19ec866f3016036458c2319319a74c430d06134"
+    },
+    {
+      "name": "current_braking_nominal63.hpp",
+      "storage": "BASE_V18",
+      "bytes": 10721,
+      "sha256": "76e157bad87f66e24e760908a2d05613e8a2eab073689fffe4cde359c96e95e0"
+    },
+    {
+      "name": "current_braking_nominal63_tests.cpp",
+      "storage": "BASE_V18",
+      "bytes": 9233,
+      "sha256": "13c2a14385d031882b8db7ad48e35eb7be9bc7292a48793070211fc90134b375"
+    },
+    {
+      "name": "current_numeric_guess.hpp",
+      "storage": "BASE_V18",
+      "bytes": 14409,
+      "sha256": "c61a9845c4d805a2a39539cee4c8882e6db679ae81b4b25ea87cff15ece87fd3"
+    },
+    {
+      "name": "current_numeric_guess_before_endpoint_capacity48.hpp",
+      "storage": "BASE_V18",
+      "bytes": 9313,
+      "sha256": "60b45d2dcb7b7539d8b8120fe3d0a96c3c6a27b3f79c6f3fc246561876b1c450"
+    },
+    {
+      "name": "current_numeric_guess_before_fraction_repair39.hpp",
+      "storage": "BASE_V18",
+      "bytes": 4718,
+      "sha256": "bb935c5cbc1c3a09717142947d285b8f2009fe8ae8e47d433703dc815a322972"
+    },
+    {
+      "name": "current_numeric_guess_before_rank_repair43.hpp",
+      "storage": "BASE_V18",
+      "bytes": 5930,
+      "sha256": "6347f1499b3ef91ceaea247035664bb52e1e3cd09cfdf168380861610e502999"
+    },
+    {
+      "name": "current_numeric_guess_before_working_basis_repair47.hpp",
+      "storage": "BASE_V18",
+      "bytes": 7368,
+      "sha256": "f3009331a4da83edc27faaefbf3c9a3af8ad4cdaaa4cd578843d60bd31fabfa6"
+    },
+    {
+      "name": "current_numeric_oracle.cpp",
+      "storage": "BASE_V18",
+      "bytes": 1845,
+      "sha256": "43e2f0fc6cab95382ff9741669f82d21d43670db633088c6141106bf40a95cac"
+    },
+    {
+      "name": "current_numeric_tests.cpp",
+      "storage": "BASE_V18",
+      "bytes": 3100,
+      "sha256": "f915a7eec36722e45268d443af9bee310fdb1e9a3720c9250b8dca1d0993abf9"
+    },
+    {
+      "name": "cycle_support.hpp",
+      "storage": "BASE_V18",
+      "bytes": 7265,
+      "sha256": "f73f3726bc9bfafd2a0a1102b0f679b1144e23cc0fce60fe2ec1c588bd623991"
+    },
+    {
+      "name": "cycle_support_tests.cpp",
+      "storage": "BASE_V18",
+      "bytes": 7461,
+      "sha256": "fd5e44a1cf39785555b2eef4e9d46e1ef26435ce8976a7660ce3a06a3dbad5a5"
+    },
+    {
+      "name": "evidence_buffer_tests.cpp",
+      "storage": "BASE_V18",
+      "bytes": 6554,
+      "sha256": "a3dcddee70a0ad8c5b71ee3ee51b26a762f5b07feb87bcb47fcf8407e124bee7"
+    },
+    {
+      "name": "evidence_compression_tests.cpp",
+      "storage": "BASE_V18",
+      "bytes": 7645,
+      "sha256": "cbc733b9990d09e4da624ae520a40ff705545c8d49993086a797116617917aea"
+    },
+    {
+      "name": "exact_cycle_endpoint61.hpp",
+      "storage": "BASE_V18",
+      "bytes": 3543,
+      "sha256": "400a0fbd0ccf9521300673408ad547816dd7d4af40e8e3f6647adf8f0b964f37"
+    },
+    {
+      "name": "exact_cycle_endpoint61_tests.cpp",
+      "storage": "BASE_V18",
+      "bytes": 6899,
+      "sha256": "1ba4453d22aa1c3102e2b2aed12ec42e97e8265cd73a95337cc11933db9221bf"
+    },
+    {
+      "name": "fine_timing.hpp",
+      "storage": "BASE_V18",
+      "bytes": 1160,
+      "sha256": "17e519005d4740fdf78b85029ece68cf70f75f9f111fc2130061d45acece7f07"
+    },
+    {
+      "name": "fine_timing_tests.cpp",
+      "storage": "BASE_V18",
+      "bytes": 1251,
+      "sha256": "fc29f2387722763c6601aef677dabfc1685d958093fa799a34452c33aa1c482f"
+    },
+    {
+      "name": "flat_progress_seed_codec.hpp",
+      "storage": "BASE_V18",
+      "bytes": 7863,
+      "sha256": "8cd4ea7557e0b6a08595a8f7d64dfeff45f9fdf2a595277d2f2d13df023f4951"
+    },
+    {
+      "name": "flat_progress_seed_codec_tests.cpp",
+      "storage": "BASE_V18",
+      "bytes": 7506,
+      "sha256": "f4e196dba28f8c411e66897a62840855cd95a168e1a9138cdec2c628c60e8461"
+    },
+    {
+      "name": "fraction_repair_regression.cpp",
+      "storage": "BASE_V18",
+      "bytes": 2199,
+      "sha256": "6377f1275266aa159c740acc95cf559a475bc447dbf1eeadcead115d3bb13a5e"
+    },
+    {
+      "name": "global_interval_codec_tests.cpp",
+      "storage": "BASE_V18",
+      "bytes": 4078,
+      "sha256": "fcddfd8078ca39f0a3284a54f26080f1ed0c17f3bc87d55c9d95b8bc470cad96"
+    },
+    {
+      "name": "global_interval_progress_seed_codec.hpp",
+      "storage": "BASE_V18",
+      "bytes": 13513,
+      "sha256": "170e2047f6c375c2612983a67df308a682cdf7e8f88a5fa487f7e0b91b775c6d"
+    },
+    {
+      "name": "global_interval_seed_tests.cpp",
+      "storage": "BASE_V18",
+      "bytes": 7641,
+      "sha256": "96973a77ef05fa95927cc9ebb685ed44b330ecd58fdbda7cb64fe8c1c8ae7f67"
+    },
+    {
+      "name": "hint_boundary_event_codec.hpp",
+      "storage": "BASE_V18",
+      "bytes": 1694,
+      "sha256": "9d121462d0328495e1d8505f596162dd807f0b7e726b701dd0c51ade50c2eaa9"
+    },
+    {
+      "name": "integrated_horizon_qp.cpp",
+      "storage": "V20_OVERLAY",
+      "bytes": 165224,
+      "sha256": "14ac0d184f99c7bd7fac2e5d0b8b4ef4bad36d561503835acfb3387752ee6615"
+    },
+    {
+      "name": "integrated_horizon_qp.hpp",
+      "storage": "V20_OVERLAY",
+      "bytes": 13401,
+      "sha256": "498be40189b8d269bfc0b9f78f407f2ea2bf248e95d30557ef7b4b05ea973506"
+    },
+    {
+      "name": "invariant_tests.cpp",
+      "storage": "BASE_V18",
+      "bytes": 4721,
+      "sha256": "f5a859d4cf9d79a5ae1b533b8dd62776f2bba6599dfdf691a2915ef3296a33f9"
+    },
+    {
+      "name": "jerk_interior67_v1.hpp",
+      "storage": "V20_OVERLAY",
+      "bytes": 2031,
+      "sha256": "625ed20270b0b689f0d69a8f13d322fd3e41df30f7a32c9ed48a9dacc3af8964"
+    },
+    {
+      "name": "kkt_refinement_tests.cpp",
+      "storage": "BASE_V18",
+      "bytes": 2090,
+      "sha256": "297654dc72a914ff6705a7c1a4eef49efa5d821eb1b4df4519c09f547bbf5334"
+    },
+    {
+      "name": "latest_numeric_context.hpp",
+      "storage": "BASE_V18",
+      "bytes": 500,
+      "sha256": "717bb483f24e9fdc09cb835c43a96b4b8c28c03007ed384be6436398cb262b48"
+    },
+    {
+      "name": "linear_box_screen.hpp",
+      "storage": "BASE_V18",
+      "bytes": 3916,
+      "sha256": "b649eff43293a3078b7b46a0166fa0f8a2ac59f3a8496c8c73a98c275fed96d1"
+    },
+    {
+      "name": "lossless_evidence.cpp",
+      "storage": "BASE_V18",
+      "bytes": 21906,
+      "sha256": "a75d258b34592ba6e9dbad93ea82a967cf14bd9e66f2469a6293dffe1a2bd09b"
+    },
+    {
+      "name": "lossless_evidence.hpp",
+      "storage": "BASE_V18",
+      "bytes": 2890,
+      "sha256": "b5c2b722e55bfddfefeac3a3c7086064b0bd57a167409c0e775c42b12135e176"
+    },
+    {
+      "name": "lossless_stream_storage_tests.cpp",
+      "storage": "BASE_V18",
+      "bytes": 6650,
+      "sha256": "597ca1e80987424674b98695c1f212c23179eb1a54cb32a2928a82b1b35097b5"
+    },
+    {
+      "name": "lossless_stream_storage_v4.hpp",
+      "storage": "BASE_V18",
+      "bytes": 6103,
+      "sha256": "152058dc1c6b17a14d4a8f070997433ed113e4a9a2bd82d2953d1a395f838365"
+    },
+    {
+      "name": "merged_cycle_diagnostics61.hpp",
+      "storage": "BASE_V18",
+      "bytes": 4769,
+      "sha256": "04682064d91463a8b39b437cf1ba36540059911640d949f657c646b56dc3f4da"
+    },
+    {
+      "name": "merged_hint_diagnostics60.hpp",
+      "storage": "BASE_V18",
+      "bytes": 3669,
+      "sha256": "df403ddd881c80ea5ee186dcdd760c6e14b99190316d5d148fa30efa557f92a9"
+    },
+    {
+      "name": "merged_hint_diagnostics60_tests.cpp",
+      "storage": "BASE_V18",
+      "bytes": 4504,
+      "sha256": "ce1edfcdc54e3ff74b126a7099c485caf8fbdab85d0c264233d22e6d5b2a506b"
+    },
+    {
+      "name": "model_boundary.cpp",
+      "storage": "BASE_V18",
+      "bytes": 21644,
+      "sha256": "05d68f4a05ec1d9c0c1c57695a3209758037e736de90c7be5a791e27e3902d98"
+    },
+    {
+      "name": "model_boundary.hpp",
+      "storage": "BASE_V18",
+      "bytes": 4554,
+      "sha256": "b7d3849502e5c5a53618532b6892e264833adc8d78bd45c850da9c1d9533131d"
+    },
+    {
+      "name": "negative_leaving59.hpp",
+      "storage": "BASE_V18",
+      "bytes": 1716,
+      "sha256": "b6c0342d3538e49d2a6bf9f2a73ded8eadc48db59a541e1d8566b8ca0bb10eb4"
+    },
+    {
+      "name": "negative_leaving59_tests.cpp",
+      "storage": "BASE_V18",
+      "bytes": 4196,
+      "sha256": "e8fd6b317bba6141941bdfc9b1011e7ed3ed987b505a04af9a8e294da258442c"
+    },
+    {
+      "name": "negative_leaving_codec59.hpp",
+      "storage": "BASE_V18",
+      "bytes": 4138,
+      "sha256": "bade3173dd42108713c7aa8bcf935bf22699a98d948b56fff87de5eda5d9b7f5"
+    },
+    {
+      "name": "nominal_geometry_provider.hpp",
+      "storage": "BASE_V18",
+      "bytes": 3544,
+      "sha256": "7269a27ae1cdf5d623b726a52092adb074df8c6e032bcc1cd2c4845acafaf498"
+    },
+    {
+      "name": "nominal_geometry_selection.hpp",
+      "storage": "BASE_V18",
+      "bytes": 2524,
+      "sha256": "6a41cc80feca43509d234c5aaf70e9a4c4de77abfa9b8eabfec6b6541b7711fa"
+    },
+    {
+      "name": "normalization.cpp",
+      "storage": "BASE_V18",
+      "bytes": 23976,
+      "sha256": "a0cd0c9cdb505f922f1744f24cf115057b6ba9f3a9bc1b3ed0c9bdb82d358ed5"
+    },
+    {
+      "name": "normalization.hpp",
+      "storage": "BASE_V18",
+      "bytes": 4288,
+      "sha256": "9456be5c205f23d2aa2210eac02286d030204a446af003ee85362b971ccb43d8"
+    },
+    {
+      "name": "observer_tests.cpp",
+      "storage": "BASE_V18",
+      "bytes": 3834,
+      "sha256": "18bef19661326132aac7396998b07395acd20e83c69b70b520fea855915b5e83"
+    },
+    {
+      "name": "owner_binding.hpp",
+      "storage": "BASE_V18",
+      "bytes": 745,
+      "sha256": "26a058244f7ef8f6d9353857637270623e18e706a061bccc3be4cffb66a54354"
+    },
+    {
+      "name": "owner_binding_tests.cpp",
+      "storage": "BASE_V18",
+      "bytes": 832,
+      "sha256": "891c6b39bf5a9d23c581f6c25a60876cc336c0f299d79239c06cdd04ac447fd4"
+    },
+    {
+      "name": "physical_braking65_tests.cpp",
+      "storage": "BASE_V18",
+      "bytes": 14215,
+      "sha256": "3f4472573e33567b84662c68d7ab2f3623f3fbafeb343ad46a5cc38e9428caf1"
+    },
+    {
+      "name": "physical_braking_codec65.hpp",
+      "storage": "BASE_V18",
+      "bytes": 4156,
+      "sha256": "5d068849078e2d6d3637ab02964f9515ab8d749bdf4205ca23cc9ec93a0dbdb8"
+    },
+    {
+      "name": "physical_braking_nominal65.hpp",
+      "storage": "BASE_V18",
+      "bytes": 8665,
+      "sha256": "8743d5db8a982b337941c5094903f48b8a19399557ef02029b6035c47c2fe929"
+    },
+    {
+      "name": "progress_interior_guard.hpp",
+      "storage": "BASE_V18",
+      "bytes": 4089,
+      "sha256": "03fde0d535b571890b166fef3cf08a91dfa4c848fddeb17105562f40980eab73"
+    },
+    {
+      "name": "progress_interior_guard_tests.cpp",
+      "storage": "BASE_V18",
+      "bytes": 2560,
+      "sha256": "7ea392de6be2289fa86d0524c55827e20bc7e6e0c2f419a886051c6c67cc47b7"
+    },
+    {
+      "name": "roundoff_command64.hpp",
+      "storage": "BASE_V18",
+      "bytes": 3032,
+      "sha256": "c0c0a9eee1b12a6faa8ba6e76b828b35eb0a1ada9793b4d6bff4585a526220b3"
+    },
+    {
+      "name": "roundoff_command64_tests.cpp",
+      "storage": "BASE_V18",
+      "bytes": 2864,
+      "sha256": "59095638206c9cabfcfbafda4aea705e40374d497d5c4a118cf01f86f59dd1ef"
+    },
+    {
+      "name": "roundoff_merged64_codec.hpp",
+      "storage": "BASE_V18",
+      "bytes": 5173,
+      "sha256": "477fbebe7ce3218e00963189de8cee12dbb2fa5adb73531779b61571300f749a"
+    },
+    {
+      "name": "runtime_observer.cpp",
+      "storage": "BASE_V18",
+      "bytes": 37768,
+      "sha256": "3370439af398e3f6c425750712ff4df9acf2f0166d072fc9b35cecca2761bd72"
+    },
+    {
+      "name": "runtime_observer.hpp",
+      "storage": "BASE_V18",
+      "bytes": 9121,
+      "sha256": "b6f9098a00ccecfc6104a655d3e6897cb35ffb030c96dab252dfdcfacab0d278"
+    },
+    {
+      "name": "session_primitives.hpp",
+      "storage": "BASE_V18",
+      "bytes": 2259,
+      "sha256": "0b76bc232ed81dc9b4831617ae1690cfc287def914b8bca5f05ce6e6e25b6080"
+    },
+    {
+      "name": "solver_forensics.cpp",
+      "storage": "BASE_V18",
+      "bytes": 26514,
+      "sha256": "664c1d480e23c1ddef4f45a57165cba871213740329f8693c897d7c07ee7af27"
+    },
+    {
+      "name": "solver_forensics.hpp",
+      "storage": "BASE_V18",
+      "bytes": 860,
+      "sha256": "02b3a3d33ea64a351b228b96b2e0590b7a79fb4e9b87da78dc28c59465aca3bb"
+    },
+    {
+      "name": "stop_objective_factors.hpp",
+      "storage": "BASE_V18",
+      "bytes": 601,
+      "sha256": "08506d74ccb15a684b4ba0e68c935340085fd56d15df7cd12689cc7fc0acb544"
+    },
+    {
+      "name": "stop_tail_byte_bound.hpp",
+      "storage": "BASE_V18",
+      "bytes": 1435,
+      "sha256": "2233d0e8441726c50ea97b8dcc0108b49e8c3e11d00b8add122ee34d3b6c05a9"
+    },
+    {
+      "name": "task_local_provider.cpp",
+      "storage": "BASE_V18",
+      "bytes": 1839,
+      "sha256": "051b424236979f9fe7ea4cb96564f54969025c997bfba2c61d347a23f7fbae4c"
+    },
+    {
+      "name": "task_local_provider.hpp",
+      "storage": "BASE_V18",
+      "bytes": 640,
+      "sha256": "1819e2f626fb0ff65ad7e7e8de0b0b52f625e6bf435b073d7cca55722d76f093"
+    },
+    {
+      "name": "working_face_basis.hpp",
+      "storage": "BASE_V18",
+      "bytes": 5342,
+      "sha256": "25e1e2b5d21780331838d45e40857e28e67a2231f39bf8ab1d97aa90721b818c"
+    },
+    {
+      "name": "working_face_basis_tests.cpp",
+      "storage": "BASE_V18",
+      "bytes": 2175,
+      "sha256": "ce0226e8d6d2c6514eb9f0a8f7bb84580c8d588a407ddd1882c2e2db74364e22"
+    },
+    {
+      "name": "working_face_trace_codec.hpp",
+      "storage": "BASE_V18",
+      "bytes": 8156,
+      "sha256": "4788658a90d0a091ec87b611b245dd9077cc1893f8c5c531eb677f17ecf8d731"
+    },
+    {
+      "name": "working_face_trace_codec_tests.cpp",
+      "storage": "BASE_V18",
+      "bytes": 5885,
+      "sha256": "bc8d6849964ff551fe395958879288f12f40024dbd9b874d90c2ced37da27fd2"
+    }
+  ],
+  "compiled_main_ELF": {
+    "path": "/mnt/d/CodexTransfer/phase5-joint-jerk-integration67-20261016-attempt1/targeted-build-attempt1/active_first_cycle",
+    "bytes": 20112696,
+    "sha256": "24f528f945a8ba8a154a9eee9494bce682d787368d8b78d8b5ca889e26cdbd90"
+  },
+  "compiled_before_after_1858_SHA": "ba0f40eacc21b7b42b2086f68c732b72b26524e84c264f5aec49eced9b94d692",
+  "original_strict_source_retained_from_immutable_base": true,
+  "scope": "Original140 joint-feedback jerk numerical planning subset only; no controller67 or physical-stop acceptance at this source checkpoint."
+}
